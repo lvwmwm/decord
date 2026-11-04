@@ -5,13 +5,27 @@
 // Module 8431
 import _mod8428 from "module_8428" /* 8428 */;
 
-let obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
-obj[45056] = {
-  name: "MPFVersion",
-  description(value) {
+
+export default {
+  isAvifFile(getUint32) {
+    if (getUint32) {
+      try {
+        const obj = _mod8428;
+        let parseBoxResult = obj.parseBox(getUint32, 0);
+        const tmp4 = parseBoxResult;
+        if (tmp4) {
+          parseBoxResult = "avif" === parseBoxResult.majorBrand;
+        }
+        return parseBoxResult;
+      } catch (err) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  },
+  findAvifOffsets(byteLength) {
     const obj = _mod8428;
-    return obj.getStringValue(value);
+    return obj.findOffsets(byteLength);
   }
 };
-
-export default obj;

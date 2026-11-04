@@ -1,13 +1,13 @@
-// Module ID: 12891
-// Function ID: 12892
+// Module ID: 12972
+// Function ID: 12973
 // Name: ConjureClarificationServerSheet
-// Dependencies: [32, 19, 17, 21, 5141, 575, 7486, 7441, 7339, 1113, 3995, 5747, 7186, 7101, 7083, 5381, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 7502, 7457, 7355, 1113, 3995, 5761, 7201, 7116, 7098, 5382, 2]
 // Exports: default
 
-// Module 12891 (ConjureClarificationServerSheet)
+// Module 12972 (ConjureClarificationServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -78,7 +78,7 @@ export default function ConjureClarificationServerSheet(onPick) {
   const tmp5 = closure_7;
   if (0 === memo.length) {
     const obj4 = { style: tmp.empty, children: closure_6(Text, obj5) };
-    obj5 = { variant: "text-md/normal", color: "text-muted", children: intl3.string(require("intl").t.V6nAfF) };
+    obj5 = { variant: "body-md/normal", color: "text-muted", children: intl3.string(require("intl").t.V6nAfF) };
     Text = tmp6(tmp7[11]).Text;
     intl3 = tmp6(tmp7[9]).intl;
     tmp8Result = tmp8(tmp9, obj4);

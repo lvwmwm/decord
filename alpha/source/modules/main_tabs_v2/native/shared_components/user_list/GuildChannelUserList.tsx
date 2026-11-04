@@ -1,18 +1,18 @@
-// Module ID: 11758
-// Function ID: 11759
+// Module ID: 11813
+// Function ID: 11814
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7570, 4990, 5053, 5012, 5044, 1385, 1072, 21, 9263, 7021, 550, 7575, 7446, 504, 7338, 5078, 11759, 9159, 6161, 5195, 1113, 8874, 575, 7339, 10863, 2]
+// Dependencies: [32, 19, 17, 7586, 4990, 5053, 5012, 5044, 1385, 1072, 21, 9280, 7036, 550, 7591, 7462, 504, 7354, 5078, 11814, 9176, 6176, 5195, 1113, 8891, 575, 7355, 10911, 2]
 
-// Module 11758 (GuildChannelUserList)
+// Module 11813 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5078 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7570 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 7586 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildStore from "GuildStore" /* 5012 */;

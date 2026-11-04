@@ -1,19 +1,19 @@
-// Module ID: 18638
-// Function ID: 18639
+// Module ID: 18739
+// Function ID: 18740
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1072, 4987, 14105, 21, 5141, 575, 1252, 11125, 5747, 1113, 5754, 14106, 7106, 7180, 17620, 7693, 4974, 2]
+// Dependencies: [32, 19, 17, 1072, 4987, 14191, 21, 5141, 575, 1252, 11173, 5761, 1113, 5768, 14192, 7121, 7195, 17710, 7709, 4974, 2]
 // Exports: default
 
-// Module 18638 (NotificationCenterPermissionNudge)
+// Module 18739 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17620 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17710 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14105 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14191 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -58,16 +58,16 @@ function NotificationCenterBannerImpl(onDismiss) {
   let obj = { style: tmp.container, children: items };
   let obj2 = { style: tmp.iconContainer, children: closure_14(BellSlashIcon, obj3) };
   obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-  BellSlashIcon = onDismiss(11125).BellSlashIcon;
+  BellSlashIcon = onDismiss(11173).BellSlashIcon;
   items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items1 };
-  const obj5 = { variant: "text-md/semibold", color: "text-default", children: intl.string(onDismiss(1113).t.G6YBna) };
-  const Text = onDismiss(5747).Text;
+  const obj5 = { variant: "body-md/semibold", color: "text-default", children: intl.string(onDismiss(1113).t.G6YBna) };
+  const Text = onDismiss(5761).Text;
   intl = onDismiss(1113).intl;
   items1 = [closure_14(Text, obj5), , ];
-  const obj6 = { variant: "text-md/medium", color: "text-muted", style: obj7, children: intl2.string(onDismiss(1113).t["9CoPDE"]) };
+  const obj6 = { variant: "body-md/medium", color: "text-muted", style: obj7, children: intl2.string(onDismiss(1113).t["9CoPDE"]) };
   obj7 = { marginTop: nativeDefault.space.PX_4 };
-  const Text2 = onDismiss(5747).Text;
+  const Text2 = onDismiss(5761).Text;
   intl2 = onDismiss(1113).intl;
   items1[1] = closure_14(Text2, obj6);
   const obj8 = { style: tmp.ctaButton, children: closure_14(Button, obj9) };
@@ -83,7 +83,7 @@ function NotificationCenterBannerImpl(onDismiss) {
       obj2.track(constants.CONTEXTUAL_REMINDER_ACTION, obj3);
     }
   };
-  Button = onDismiss(5754).Button;
+  Button = onDismiss(5768).Button;
   intl3 = onDismiss(1113).intl;
   items1[2] = closure_14(View, obj8);
   items[1] = closure_15(View, obj4);
@@ -97,9 +97,9 @@ function NotificationCenterBannerImpl(onDismiss) {
     hitSlop: 8,
     accessibilityRole: "button",
     accessibilityLabel: intl4.string(onDismiss(1113).t.WAI6xu),
-    children: closure_14(onDismiss(7180).XSmallIcon, { size: "sm", color: "icon-strong" })
+    children: closure_14(onDismiss(7195).XSmallIcon, { size: "sm", color: "icon-strong" })
   };
-  const PressableHighlight = onDismiss(7106).PressableHighlight;
+  const PressableHighlight = onDismiss(7121).PressableHighlight;
   intl4 = onDismiss(1113).intl;
   items[2] = closure_14(PressableHighlight, obj10);
   return closure_15(View, obj);

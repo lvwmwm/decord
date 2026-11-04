@@ -1,23 +1,23 @@
-// Module ID: 13453
-// Function ID: 13454
+// Module ID: 13537
+// Function ID: 13538
 // Name: AutomatedUnderageAppealActionSheet
-// Dependencies: [19, 17, 8118, 8094, 21, 5141, 575, 1113, 504, 1627, 13452, 8079, 6849, 5381, 5395, 5398, 5747, 7186, 7101, 5829, 5754, 13450, 2]
+// Dependencies: [19, 17, 8134, 8110, 21, 5141, 575, 1113, 504, 1627, 13536, 8095, 6864, 5382, 5396, 5400, 5761, 7201, 7116, 5843, 5768, 13534, 2]
 // Exports: default
 
-// Module 13453 (AutomatedUnderageAppealActionSheet)
+// Module 13537 (AutomatedUnderageAppealActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
-import SafetyHubActionCreators from "SafetyHubActionCreators" /* 13450 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13452 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
+import SafetyHubActionCreators from "SafetyHubActionCreators" /* 13534 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 13536 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8118 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8094 */;
+import SafetyHubStore from "SafetyHubStore" /* 8134 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8110 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -132,21 +132,21 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
     }
   }, items4);
   let obj3 = { scrollable: true, startHeight: sum1 + classificationId(575).space.PX_32, children: closure_8(BottomSheetScrollView, obj4) };
-  const BottomSheet = onClose(5395).BottomSheet;
+  const BottomSheet = onClose(5396).BottomSheet;
   const sum = 425 + bottom;
   sum1 = sum + classificationId(575).space.PX_16;
   obj4 = { style: tmp.container, children: closure_9(callback, obj5) };
   obj5 = { style: obj6, children: items6 };
   obj6 = { paddingBottom: bottom };
-  BottomSheetScrollView = onClose(5398).BottomSheetScrollView;
+  BottomSheetScrollView = onClose(5400).BottomSheetScrollView;
   const merged = Object.assign(tmp.content);
   const obj7 = { style: tmp.header, children: items5 };
   const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(onClose(1113).t["9SDLnj"]) };
-  const Text = onClose(5747).Text;
+  const Text = onClose(5761).Text;
   intl = onClose(1113).intl;
   items5 = [closure_8(Text, obj8), ];
-  const obj9 = { variant: "heading-md/medium", color: "text-default", children: intl2.string(onClose(1113).t["yvx//1"]) };
-  const Text2 = onClose(5747).Text;
+  const obj9 = { variant: "heading-sm/medium", color: "text-default", children: intl2.string(onClose(1113).t["yvx//1"]) };
+  const Text2 = onClose(5761).Text;
   intl2 = onClose(1113).intl;
   items5[1] = closure_8(Text2, obj9);
   items6 = [closure_9(callback, obj7), , , ];
@@ -162,15 +162,15 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
       const obj = { label: title, subLabel: description, icon: metroImportAll(View, obj2) };
       obj2 = { style: number.number, children: metroImportAll(Text_Text.Text, obj3) };
       const TableRow = TableRow2.TableRow;
-      obj3 = { variant: "heading-md/semibold", color: "text-brand", children: index + 1 };
+      obj3 = { variant: "heading-sm/semibold", color: "text-brand", children: index + 1 };
       return metroImportAll(TableRow, obj, index);
     })
   };
-  TableRowGroup = onClose(7186).TableRowGroup;
+  TableRowGroup = onClose(7201).TableRowGroup;
   items6[1] = closure_8(callback, obj10);
   const obj12 = { style: tmp.moreInfo, children: closure_8(TableRowGroup2, obj13) };
   obj13 = { title: intl3.string(onClose(1113).t.WPwp1b), hasIcons: false, children: closure_8(TableRow, obj14) };
-  TableRowGroup2 = onClose(7186).TableRowGroup;
+  TableRowGroup2 = onClose(7201).TableRowGroup;
   intl3 = onClose(1113).intl;
   obj14 = {
     label: intl4.string(onClose(1113).t.N9WJMM),
@@ -183,7 +183,7 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
     start: true,
     end: true
   };
-  TableRow = onClose(7101).TableRow;
+  TableRow = onClose(7116).TableRow;
   intl4 = onClose(1113).intl;
   intl5 = onClose(1113).intl;
   items6[2] = closure_8(callback, obj12);
@@ -197,11 +197,11 @@ export default function AutomatedUnderageAppealActionSheet(onClose) {
     disabled: stateFromStores1,
     text: intl6.string(onClose(1113).t["54b8V0"])
   };
-  const Button = onClose(5754).Button;
+  const Button = onClose(5768).Button;
   intl6 = onClose(1113).intl;
   items7 = [closure_8(Button, obj16), ];
-  const obj17 = { variant: "heading-sm/medium", color: "text-subtle", style: tmp.learnMore, children: intl7.format(onClose(1113).t.ZbWsOF, obj18) };
-  const Text3 = onClose(5747).Text;
+  const obj17 = { variant: "heading-xs/medium", color: "text-subtle", style: tmp.learnMore, children: intl7.format(onClose(1113).t.ZbWsOF, obj18) };
+  const Text3 = onClose(5761).Text;
   intl7 = onClose(1113).intl;
   obj18 = { learnMoreLink: constants.LEARN_MORE_UU_APPEAL_LINK };
   items7[1] = closure_8(Text3, obj17);

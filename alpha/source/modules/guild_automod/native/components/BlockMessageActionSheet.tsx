@@ -1,14 +1,14 @@
-// Module ID: 19854
-// Function ID: 19855
+// Module ID: 19970
+// Function ID: 19971
 // Name: BlockMessageActionSheet
-// Dependencies: [32, 19, 13428, 21, 19832, 5381, 7486, 7441, 5747, 1113, 7373, 5754, 9120, 2]
+// Dependencies: [32, 19, 13512, 21, 19948, 5382, 7502, 7457, 5761, 1113, 7389, 5768, 9137, 2]
 // Exports: default
 
-// Module 19854 (BlockMessageActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+// Module 19970 (BlockMessageActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 13428 */;
+import Constants from "Constants" /* 13512 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -62,9 +62,9 @@ export default function BlockMessageActionSheet(triggerType) {
     const obj2 = { keyboardShouldPersistTaps: "handled", header: closure_7(require("BottomSheetTitleHeader").BottomSheetTitleHeader, obj3), children: items };
     const ActionSheet = tmp5(tmp6[6]).ActionSheet;
     obj3 = { title: actionInfo.headerText };
-    const obj4 = { variant: "text-md/normal", color: "text-default", children: actionInfo.descriptionText };
+    const obj4 = { variant: "body-md/normal", color: "text-default", children: actionInfo.descriptionText };
     items = [closure_7(require("Text/Text").Text, obj4), , , ];
-    const obj5 = { variant: "text-md/normal", color: "text-default", children: intl2.string(require("intl").t.Oa9oWJ) };
+    const obj5 = { variant: "body-md/normal", color: "text-default", children: intl2.string(require("intl").t.Oa9oWJ) };
     const Text = tmp5(tmp6[8]).Text;
     intl2 = tmp5(tmp6[9]).intl;
     items[1] = closure_7(Text, obj5);

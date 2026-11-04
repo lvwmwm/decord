@@ -1,11 +1,11 @@
-// Module ID: 13120
-// Function ID: 13121
+// Module ID: 13203
+// Function ID: 13204
 // Name: useConjureServerProjects
-// Dependencies: [6964, 13121, 504, 2]
+// Dependencies: [6979, 13204, 504, 2]
 // Exports: conjureProjectPointsAtGuild, default
 
-// Module 13120 (useConjureServerProjects)
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+// Module 13203 (useConjureServerProjects)
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

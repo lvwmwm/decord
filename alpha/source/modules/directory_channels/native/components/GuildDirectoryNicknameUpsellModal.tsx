@@ -1,21 +1,21 @@
-// Module ID: 14369
-// Function ID: 14370
+// Module ID: 14449
+// Function ID: 14450
 // Name: GuildDirectoryNicknameUpsellModal
-// Dependencies: [5, 32, 19, 17, 5012, 14359, 21, 5141, 5709, 575, 504, 5730, 7409, 6566, 7083, 5747, 1113, 7207, 1187, 5754, 14360, 14368, 7124, 7290, 5735, 2]
+// Dependencies: [5, 32, 19, 17, 5012, 14439, 21, 5141, 5722, 575, 504, 5743, 7425, 6581, 7098, 5761, 1113, 7222, 1187, 5768, 14440, 14448, 7139, 7306, 5749, 2]
 // Exports: default
 
-// Module 14369 (GuildDirectoryNicknameUpsellModal)
+// Module 14449 (GuildDirectoryNicknameUpsellModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
-import reactDefault from "react" /* 5735 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import Constants from "Constants" /* 14359 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
+import reactDefault from "react" /* 5749 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import Constants from "Constants" /* 14439 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let obj4;
 let obj5;
 let tmp5;
 let unpackModuleId;
-const FreeFormInputGroupDefault = tmp5(7207);
+const FreeFormInputGroupDefault = tmp5(7222);
 function GuildDirectoryNicknameUpsell(arg0) {
   let Button;
   let _undefined;
@@ -168,8 +168,8 @@ function GuildDirectoryNicknameUpsell(arg0) {
     name = stateFromStores.name;
   }
   items3 = [tmp13(Text, obj7), ];
-  const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl6.t.b3L8yx) };
-  const Text2 = tmp2(5747).Text;
+  const obj8 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl6.t.b3L8yx) };
+  const Text2 = tmp2(5761).Text;
   intl2 = tmp2(1113).intl;
   items3[1] = closure_10(Text2, obj8);
   items2[1] = closure_11(closure_6, obj6);
@@ -218,7 +218,7 @@ function GuildDirectoryNicknameUpsell(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   intl5 = tmp2(1113).intl;
   items2[4] = closure_10(closure_6, obj12);
   return closure_11(tmp12, obj3);

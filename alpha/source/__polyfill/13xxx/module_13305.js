@@ -1,17 +1,29 @@
 // Module ID: 13305
 // Function ID: 13306
-// Dependencies: []
-// Exports: getSDKSource, isBrowserBundle
+// Dependencies: [13300]
+// Exports: hasTracingEnabled
 
 // Module 13305
+import _mod13300 from "module_13300" /* 13300 */;
 
-export function getSDKSource() {
-  return "npm";
-}
-export function isBrowserBundle() {
-  let prop = typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined";
-  if (typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined") {
-    prop = globalThis.__SENTRY_BROWSER_BUNDLE__;
+
+export function hasTracingEnabled(tracesSampler) {
+  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
+    if (!globalThis.__SENTRY_TRACING__) {
+      return false;
+    }
   }
-  return prop;
+  let tmp = tracesSampler;
+  const obj = _mod13300;
+  const client = obj.getClient();
+  if (!tracesSampler) {
+    tmp = client && client.getOptions();
+    client && client.getOptions();
+  }
+  let tmp3 = tmp;
+  if (tmp3) {
+    const enableTracing = tmp.enableTracing || "tracesSampleRate" in tmp || "tracesSampler" in tmp;
+    tmp3 = enableTracing;
+  }
+  return tmp3;
 }

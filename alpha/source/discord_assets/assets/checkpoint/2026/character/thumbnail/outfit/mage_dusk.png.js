@@ -1,8 +1,8 @@
-// Module ID: 6406
-// Function ID: 6407
+// Module ID: 6421
+// Function ID: 6422
 // Dependencies: [2]
 
-// Module 6406
+// Module 6421
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/mage_dusk.png.js");

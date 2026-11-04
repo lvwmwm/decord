@@ -1,21 +1,21 @@
-// Module ID: 11993
-// Function ID: 11994
+// Module ID: 12052
+// Function ID: 12053
 // Name: FocusedControls
-// Dependencies: [19, 17, 1072, 21, 5141, 1187, 1652, 11994, 5377, 7412, 1493, 8155, 11995, 12000, 11838, 5397, 7446, 7471, 11926, 12003, 1252, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 1187, 1652, 12053, 5378, 7428, 1493, 8171, 12054, 12059, 11897, 5398, 7462, 7487, 11985, 12062, 1252, 2]
 
-// Module 11993 (FocusedControls)
+// Module 12052 (FocusedControls)
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5397 */;
-import inlineStyles from "inlineStyles" /* 8155 */;
-import RevealProvider from "RevealProvider" /* 11838 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11994 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 11995 */;
-import GlobalStatusIndicator from "GlobalStatusIndicator" /* 12000 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5398 */;
+import inlineStyles from "inlineStyles" /* 8171 */;
+import RevealProvider from "RevealProvider" /* 11897 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 12053 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 12054 */;
+import GlobalStatusIndicator from "GlobalStatusIndicator" /* 12059 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -96,7 +96,7 @@ function FocusedControlsHeader(arg0) {
   const View = _modDef1652.View;
   rect = { top: !tmp9, left: isTouchingLeftScreenEdge, right: true, children: metroImportDefault(hasOwnProperty, obj3) };
   obj3 = { style: tmp.headerContainer, children: header };
-  SafeAreaPaddingView = tmp2(7412).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(7428).SafeAreaPaddingView;
   return metroImportDefault(View, obj2);
 }
 function FocusedControlsHeaderGradient() {
@@ -174,7 +174,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   const globalStatusIndicatorState = obj.useGlobalStatusIndicatorState();
   const obj2 = GlobalStatusIndicator;
   const globalStatusIndicatorHeightSharedValue = obj2.useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState);
-  const tmp6 = analyticsLocations(11994)();
+  const tmp6 = analyticsLocations(12053)();
   let reveal = react.useContext(RevealProvider.RevealContext).reveal;
   const obj3 = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
@@ -244,9 +244,9 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   FocusedControlsTsx5.__workletHash = 13660104452358;
   FocusedControlsTsx5.__initData = tmp16;
   const animatedStyle = useAnimatedStyle(FocusedControlsTsx5);
-  const tmp5Result = analyticsLocations(7446);
-  analyticsLocations = tmp5Result(tmp5(7471).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  dependencyMap = tmp5(11926)();
+  const tmp5Result = analyticsLocations(7462);
+  analyticsLocations = tmp5Result(tmp5(7487).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  dependencyMap = tmp5(11985)();
   const View = tmp5(1652).View;
   const tmp23 = closure_8;
   if (containerStyle == null) {
@@ -294,7 +294,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
         reveal,
         children
       };
-      tmp28Result = tmp28(tmp5(12003), obj5);
+      tmp28Result = tmp28(tmp5(12062), obj5);
     }
   }
   items7[2] = tmp28Result;

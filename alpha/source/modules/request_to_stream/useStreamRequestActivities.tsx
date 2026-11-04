@@ -1,16 +1,16 @@
-// Module ID: 15005
-// Function ID: 15006
+// Module ID: 15085
+// Function ID: 15086
 // Name: useStreamRequestActivities
-// Dependencies: [19, 502, 5881, 6690, 9870, 9420, 504, 2]
+// Dependencies: [19, 502, 5895, 6705, 9888, 9437, 504, 2]
 // Exports: default, getStreamRequestActivities
 
-// Module 15005 (useStreamRequestActivities)
-import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9420 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9870 */;
+// Module 15085 (useStreamRequestActivities)
+import isPlayingGameActivityDefault from "isPlayingGameActivity" /* 9437 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9888 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6690 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6705 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

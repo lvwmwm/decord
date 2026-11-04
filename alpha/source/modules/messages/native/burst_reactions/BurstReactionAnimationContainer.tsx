@@ -1,10 +1,10 @@
-// Module ID: 19165
-// Function ID: 19166
+// Module ID: 19268
+// Function ID: 19269
 // Name: BurstReactionAnimationContainer
-// Dependencies: [32, 19, 17, 4987, 21, 5141, 575, 5099, 5383, 5384, 572, 1652, 5377, 1705, 10650, 4974, 1187, 5739, 5747, 1113, 5207, 2]
+// Dependencies: [32, 19, 17, 4987, 21, 5141, 575, 5099, 5384, 5385, 572, 1652, 5378, 1705, 10698, 4974, 1187, 5753, 5761, 1113, 5207, 2]
 // Exports: default
 
-// Module 19165 (BurstReactionAnimationContainer)
+// Module 19268 (BurstReactionAnimationContainer)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
@@ -195,7 +195,7 @@ function BurstReactionAnimationContainerInner() {
           let tmp6Result = visibleContent === tmp2(tmp3[15]).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
           if (tmp6Result) {
             const obj8 = { children: items2 };
-            const obj9 = { style: markAsDismissed.dismissTextContainer, variant: "text-sm/medium", children: intl.string(closure_0(closure_2[19]).t.QpPMih) };
+            const obj9 = { style: markAsDismissed.dismissTextContainer, variant: "body-sm/medium", children: intl.string(closure_0(closure_2[19]).t.QpPMih) };
             const Text = tmp2(tmp3[18]).Text;
             intl = tmp2(tmp3[19]).intl;
             items2 = [tmp(Text, obj9), ];
@@ -208,7 +208,7 @@ function BurstReactionAnimationContainerInner() {
         }
     };
     items2 = [];
-    const tmp19 = first(10650);
+    const tmp19 = first(10698);
     items2[0] = tmp6(4974).DismissibleContent.SUPER_REACTIONS_MOBILE_FULLSCREEN_TAP_TO_DISMISS;
     tmp16 = closure_8(tmp19, obj);
   }

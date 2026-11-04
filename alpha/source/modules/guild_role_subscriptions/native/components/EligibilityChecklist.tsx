@@ -1,10 +1,10 @@
-// Module ID: 20036
-// Function ID: 20037
+// Module ID: 20152
+// Function ID: 20153
 // Name: EligibilityChecklist
-// Dependencies: [19, 17, 21, 5141, 7460, 575, 7218, 5747, 5754, 17351, 2]
+// Dependencies: [19, 17, 21, 5141, 7476, 575, 7233, 5761, 5768, 17442, 2]
 // Exports: default
 
-// Module 20036 (EligibilityChecklist)
+// Module 20152 (EligibilityChecklist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
@@ -31,14 +31,14 @@ function EligibilityChecklistRow(item) {
   const tmp3 = metroRequire;
   if (item.checked) {
     const obj2 = { style: tmp.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleCheckIcon = tmp6(7460).CircleCheckIcon;
+    const CircleCheckIcon = tmp6(7476).CircleCheckIcon;
     tmp5Result = tmp5(CircleCheckIcon, obj2);
     tmp10 = tmp6;
     tmp12 = importDefault;
     tmp13 = tmp5;
   } else {
     const obj3 = { style: tmp.rowStatusIcon, size: "custom", color: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp6(7218).CircleXIcon;
+    const CircleXIcon = tmp6(7233).CircleXIcon;
     tmp5Result = tmp5(CircleXIcon, obj3);
     tmp10 = tmp6;
     tmp12 = importDefault;
@@ -50,13 +50,13 @@ function EligibilityChecklistRow(item) {
   const tmp15 = item.checked && tmp.eligibleRow;
   items1[1] = tmp15;
   items2 = [, , ];
-  const obj5 = { style: tmp.rowLabel, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel };
-  items2[0] = tmp13(tmp10(5747).Text, obj5);
-  const obj6 = { variant: "text-sm/normal", color: "interactive-text-default", children: item.description };
-  items2[1] = tmp13(tmp10(5747).Text, obj6);
+  const obj5 = { style: tmp.rowLabel, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: item.checked ? item.checkedLabel : item.uncheckedLabel };
+  items2[0] = tmp13(tmp10(5761).Text, obj5);
+  const obj6 = { variant: "body-sm/normal", color: "interactive-text-default", children: item.description };
+  items2[1] = tmp13(tmp10(5761).Text, obj6);
   let tmp13Result = null != item.actionHandler && null != item.actionLabel;
   if (tmp13Result) {
-    const obj7 = { style: tmp.actionButtonWrapper, children: tmp13(tmp10(5754).Button, obj9) };
+    const obj7 = { style: tmp.actionButtonWrapper, children: tmp13(tmp10(5768).Button, obj9) };
     obj9 = { text: null, onPress: null, grow: true };
     ({ actionLabel: obj8.text, actionHandler: obj8.onPress } = item);
     tmp13Result = tmp13(tmp4, obj7);
@@ -70,7 +70,7 @@ function EligibilityChecklistRow(item) {
     tmp13Result2 = tmp13(tmp4, obj17);
   } else {
     obj17.style = tmp.divider;
-    tmp13Result2 = tmp13(tmp12(17351), obj17);
+    tmp13Result2 = tmp13(tmp12(17442), obj17);
   }
   children[1] = tmp13Result2;
   return hasOwnProperty(tmp3, { children });

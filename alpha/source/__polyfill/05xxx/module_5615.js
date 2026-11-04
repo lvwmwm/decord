@@ -3,7 +3,7 @@
 // Dependencies: [5616]
 
 // Module 5615
-import BottomSheetRefreshControlAndroidDefault from "BottomSheetRefreshControlAndroid" /* 5616 */;
+import _modDef5616 from "module_5616" /* 5616 */;
 
 
-export default BottomSheetRefreshControlAndroidDefault;
+export default _modDef5616;

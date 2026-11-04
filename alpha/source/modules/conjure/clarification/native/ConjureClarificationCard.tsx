@@ -1,14 +1,14 @@
-// Module ID: 12894
-// Function ID: 12895
+// Module ID: 12975
+// Function ID: 12976
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1113, 3995, 12895, 12896, 12723, 7208, 12272, 5747, 8152, 7180, 12897, 7186, 7100, 7103, 12890, 5754, 12901, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1113, 3995, 12976, 12977, 12804, 7223, 12333, 5761, 8168, 7195, 12978, 7201, 7115, 7118, 12971, 5768, 12982, 2]
 // Exports: default
 
-// Module 12894 (ConjureClarificationCard)
+// Module 12975 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureClarification from "ConjureClarification" /* 12723 */;
-import ConjureImageOptions from "ConjureImageOptions" /* 12895 */;
+import ConjureClarification from "ConjureClarification" /* 12804 */;
+import ConjureImageOptions from "ConjureImageOptions" /* 12976 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -60,8 +60,8 @@ export default function ConjureClarificationCard(projectId) {
   let intl4;
   let intl5;
   let intl6;
-  let items6;
   let items7;
+  let items8;
   let obj17;
   let obj21;
   let obj25;
@@ -76,16 +76,16 @@ export default function ConjureClarificationCard(projectId) {
   let submitText;
   let tmp10;
   let tmp12;
-  let tmp20Result15;
+  let tmp20Result17;
   let tmp4;
-  let tmp52;
-  let tmp55Result;
+  let tmp55;
+  let tmp58Result;
   let tmp6;
-  let tmp61Result10;
-  let tmp68;
-  let tmp69;
+  let tmp64Result10;
+  let tmp71;
+  let tmp72;
   let tmp8;
-  const f103020 = () => {
+  const f103753 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -117,8 +117,10 @@ export default function ConjureClarificationCard(projectId) {
   let c19;
   let callback;
   let callback1;
-  let c22;
+  let callback2;
   let c23;
+  let c24;
+  let result1;
   let tmp = c8();
   react = tmp;
   let obj = react;
@@ -128,8 +130,8 @@ export default function ConjureClarificationCard(projectId) {
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f103020), 2);
-  const tmp9 = _slicedToArray(react.useState(f103020), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f103753), 2);
+  const tmp9 = _slicedToArray(react.useState(f103753), 2);
   [tmp12, c10] = _slicedToArray(react.useState({}), 2);
   const tmp11 = _slicedToArray(react.useState({}), 2);
   [first1, closure_12] = react.useState({});
@@ -138,53 +140,57 @@ export default function ConjureClarificationCard(projectId) {
   let tmp16 = null == onSubmit;
   const disabled = tmp16;
   const bound = Math.min(tmp15[0], length - 1);
-  let tmp18 = clarification.questions[bound];
   let id = tmp18;
   let closure_17 = tmp19;
-  const tmp20 = projectId;
   let obj2 = projectId(onSubmit[8]);
-  const isImageQuestionResult = obj2.isImageQuestion(tmp18);
+  const isImageQuestionResult = obj2.isImageQuestion(clarification.questions[bound]);
   let c18 = isImageQuestionResult;
-  if (true === tmp18.multi_select) {
+  if (true === clarification.questions[bound].multi_select) {
     let intl = tmp20(tmp21[6]).intl;
     stringResult = intl.string(clarification(tmp21[7]).tE8qbz);
   } else {
-    const tmp20Result = tmp20(onSubmit[8]);
+    const tmp20Result = projectId(onSubmit[8]);
     stringResult = tmp20Result.uploadHint(tmp18);
   }
-  if (true === tmp18.multi_select) {
+  if (true === clarification.questions[bound].multi_select) {
     let tmp26 = tmp8[tmp18.id];
     if (tmp26 == null) {
       tmp26 = c9;
     }
     answeredOptionIdsResult = tmp26;
   } else {
-    const tmp20Result9 = tmp20(onSubmit[8]);
-    answeredOptionIdsResult = tmp20Result9.answeredOptionIds(first[tmp18.id]);
+    const tmp20Result10 = projectId(onSubmit[8]);
+    answeredOptionIdsResult = tmp20Result10.answeredOptionIds(first[tmp18.id]);
   }
   c19 = answeredOptionIdsResult;
-  const tmp20Result10 = tmp20(onSubmit[9]);
-  const conjureOwnImages = tmp20Result10.useConjureOwnImages(projectId, first, tmp4);
-  let items = [first, clarification, bound, first1, onSubmit, projectId, tmp18.id];
+  const tmp20Result11 = projectId(onSubmit[9]);
+  const conjureOwnImages = tmp20Result11.useConjureOwnImages(projectId, first, tmp4);
+  let items = [clarification, bound, first1, onSubmit, projectId];
   callback = obj.useCallback((arg0) => {
     if (null != onSubmit) {
-      const obj = {};
-      const merged = Object.assign(first);
-      obj[id.id] = arg0;
-      closure_6(obj);
-      const obj3 = ConjureClarification;
-      const result = obj3.followingClarificationStep(clarification, obj, bound);
-      const tmp18 = require;
+      const obj = ConjureClarification;
+      const result = obj.followingClarificationStep(clarification, arg0, bound);
+      const tmp3 = require;
       if (null == result) {
-        const tmp18Result = tmp18(12723);
-        const result1 = tmp18Result.submitClarificationAnswers(projectId, tmp20, obj, first1, tmp);
+        const tmp3Result = tmp3(12804);
+        result1 = tmp3Result.submitClarificationAnswers(projectId, tmp5, arg0, first1, tmp);
       } else {
         closure_13(result);
       }
     }
   }, items);
-  let items1 = [tmp19, isImageQuestionResult, tmp18, callback];
+  let items1 = [callback, first, onSubmit, clarification.questions[bound].id];
   callback1 = obj.useCallback((arg0) => {
+    if (null != onSubmit) {
+      const obj = {};
+      const merged = Object.assign(first);
+      obj[id.id] = arg0;
+      closure_6(obj);
+      callback(obj);
+    }
+  }, items1);
+  let items2 = [true === clarification.questions[bound].multi_select, isImageQuestionResult, clarification.questions[bound], callback1];
+  callback2 = obj.useCallback((arg0) => {
     let user;
     id = arg0;
     const tmp = closure_17;
@@ -222,13 +228,13 @@ export default function ConjureClarificationCard(projectId) {
           return obj;
         });
       } else {
-        callback(obj);
+        callback1(obj);
       }
     }
-  }, items1);
-  let items2 = [tmp18.id, callback];
-  const items3 = [tmp16, bound];
-  const callback2 = obj.useCallback(() => {
+  }, items2);
+  const items3 = [clarification.questions[bound].id, callback1];
+  const items4 = [tmp16, bound];
+  const callback3 = obj.useCallback(() => {
     _undefined((arg0) => {
       const obj = {};
       const merged = Object.assign(arg0);
@@ -236,36 +242,36 @@ export default function ConjureClarificationCard(projectId) {
       return obj;
     });
     let obj = ConjureImageOptions;
-    callback(obj.noImageAnswer());
-  }, items2);
+    callback1(obj.noImageAnswer());
+  }, items3);
   let str = tmp6[tmp18.id];
-  const callback3 = obj.useCallback(() => {
+  const callback4 = obj.useCallback(() => {
     const tmp = disabled || 0 === bound;
     if (!tmp) {
       closure_13(bound - 1);
     }
-  }, items3);
+  }, items4);
   if (str == null) {
     str = "";
   }
   let multiSelectAnswerResult = null;
-  if (true === tmp18.multi_select) {
-    const tmp20Result11 = tmp20(onSubmit[10]);
-    multiSelectAnswerResult = tmp20Result11.multiSelectAnswer(tmp18, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp18));
+  if (true === clarification.questions[bound].multi_select) {
+    const tmp20Result12 = projectId(onSubmit[10]);
+    multiSelectAnswerResult = tmp20Result12.multiSelectAnswer(tmp18, answeredOptionIdsResult, str, conjureOwnImages.multiPartFor(tmp18));
   }
   let entityAnswerResult = null;
-  if (null != tmp18.input) {
+  if (null != clarification.questions[bound].input) {
     const input = tmp18.input;
-    let tmp38 = tmp10[tmp18.id];
-    const entityAnswer = tmp20(onSubmit[10]).entityAnswer;
-    const tmp20Result12 = tmp20(onSubmit[10]);
-    if (tmp38 == null) {
-      tmp38 = c10;
+    let tmp39 = tmp10[tmp18.id];
+    const entityAnswer = projectId(onSubmit[10]).entityAnswer;
+    const tmp20Result13 = projectId(onSubmit[10]);
+    if (tmp39 == null) {
+      tmp39 = c10;
     }
-    entityAnswerResult = entityAnswer(input, tmp38, str, tmp12[tmp18.id]);
+    entityAnswerResult = entityAnswer(input, tmp39, str, tmp12[tmp18.id]);
   }
-  const items4 = [tmp18.id];
-  const callback4 = obj.useCallback((arg0, arg1) => {
+  const items5 = [clarification.questions[bound].id];
+  const callback5 = obj.useCallback((arg0, arg1) => {
     let user;
     let closure_0 = arg0;
     let closure_1 = arg1;
@@ -281,49 +287,54 @@ export default function ConjureClarificationCard(projectId) {
       obj[user.id] = closure_1;
       return obj;
     });
-  }, items4);
+  }, items5);
   let uploadNoteAnswerResult = multiSelectAnswerResult;
-  const clarificationDraftAnswer = tmp20(tmp21[10]).clarificationDraftAnswer;
-  tmp20(onSubmit[10]);
+  const clarificationDraftAnswer = projectId(onSubmit[10]).clarificationDraftAnswer;
+  projectId(onSubmit[10]);
   if (multiSelectAnswerResult == null) {
-    const tmp20Result14 = tmp20(onSubmit[10]);
-    uploadNoteAnswerResult = tmp20Result14.uploadNoteAnswer(tmp18, first[tmp18.id], str);
+    const tmp20Result15 = projectId(onSubmit[10]);
+    uploadNoteAnswerResult = tmp20Result15.uploadNoteAnswer(tmp18, first[tmp18.id], str);
   }
   let result = clarificationDraftAnswer(entityAnswerResult, uploadNoteAnswerResult, str);
-  c22 = result;
-  const items5 = [result, callback];
-  let tmp48 = result;
-  const callback5 = obj.useCallback(() => {
-    if (null != c22) {
-      callback(tmp);
+  c23 = result;
+  const items6 = [result, callback1];
+  let tmp49 = result;
+  const callback6 = obj.useCallback(() => {
+    if (null != c23) {
+      callback1(tmp);
     }
-  }, items5);
+  }, items6);
   if (result == null) {
-    let tmp49 = null;
+    let tmp50 = null;
     if (null == entityAnswerResult) {
-      tmp49 = null;
+      tmp50 = null;
       if (null == multiSelectAnswerResult) {
-        let tmp50 = first[tmp18.id];
-        if (tmp50 == null) {
-          tmp50 = null;
+        let tmp51 = first[tmp18.id];
+        if (tmp51 == null) {
+          tmp51 = null;
         }
-        tmp49 = tmp50;
+        tmp50 = tmp51;
       }
     }
-    tmp48 = tmp49;
+    tmp49 = tmp50;
   }
-  c23 = tmp48;
-  let tmp51;
+  c24 = tmp49;
+  result1 = null;
+  if (null == tmp49) {
+    const tmp20Result16 = projectId(onSubmit[10]);
+    result1 = tmp20Result16.skippedClarificationAnswers(clarification, first, bound);
+  }
+  let tmp54;
   if (0 === bound) {
     if (!tmp16) {
-      tmp51 = onBack;
+      tmp54 = onBack;
     }
   }
   if (!isImageQuestionResult) {
     let obj3 = {
       size: "md",
-      placeholder: tmp20Result15.clarificationDraftPlaceholder(tmp18),
-      accessibilityLabel: intl2.formatToPlainString(clarification(tmp21[7])["4JeYPB"], obj4),
+      placeholder: tmp20Result17.clarificationDraftPlaceholder(clarification.questions[bound]),
+      accessibilityLabel: intl2.formatToPlainString(clarification(onSubmit[7])["4JeYPB"], obj4),
       value: str,
       onChange(arg0) {
           let closure_0 = arg0;
@@ -334,7 +345,7 @@ export default function ConjureClarificationCard(projectId) {
             return obj;
           });
         },
-      onSubmitEditing: callback5,
+      onSubmitEditing: callback6,
       onFocus() {
           let tmpResult;
           if (_slicedToArray != null) {
@@ -352,49 +363,49 @@ export default function ConjureClarificationCard(projectId) {
       returnKeyType: "send"
     };
     const TextInput = tmp20(tmp21[11]).TextInput;
-    tmp20Result15 = tmp20(onSubmit[10]);
+    tmp20Result17 = projectId(onSubmit[10]);
     intl2 = tmp20(tmp21[6]).intl;
-    obj4 = { question: tmp18.question };
-    tmp52 = closure_6(TextInput, obj3);
+    obj4 = { question: clarification.questions[bound].question };
+    tmp55 = closure_6(TextInput, obj3);
   } else {
-    tmp52 = null;
+    tmp55 = null;
   }
   let obj5 = { style: tmp.card, holdsKeyboard: true, children: null };
-  let obj6 = { style: tmp.footer, children: items7 };
-  let tmp59 = null;
-  const obj7 = { style: tmp.customField, children: items6 };
-  const tmp57 = clarification(onSubmit[12]);
+  let obj6 = { style: tmp.footer, children: items8 };
+  let tmp62 = null;
+  const obj7 = { style: tmp.customField, children: items7 };
+  const tmp60 = clarification(onSubmit[12]);
   if (clarification.questions.length > 1) {
-    const obj8 = { variant: "text-xs/semibold", color: "text-muted", children: intl3.formatToPlainString(clarification(onSubmit[7]).yzYUjq, obj9) };
+    const obj8 = { variant: "body-xs/semibold", color: "text-muted", children: intl3.formatToPlainString(clarification(onSubmit[7]).yzYUjq, obj9) };
     let Text = tmp20(tmp21[13]).Text;
     intl3 = tmp20(tmp21[6]).intl;
     obj9 = { index: bound + 1, total: clarification.questions.length };
-    tmp59 = closure_6(Text, obj8);
+    tmp62 = closure_6(Text, obj8);
   }
-  items6 = [tmp59, ];
-  const obj10 = { variant: "text-md/semibold", color: "text-default", accessibilityRole: "header", children: tmp18.question };
-  items6[1] = closure_6(tmp20(onSubmit[13]).Text, obj10);
-  items7 = [c7(first, obj7), ];
-  let tmp61Result = null;
+  items7 = [tmp62, ];
+  const obj10 = { variant: "body-md/semibold", color: "text-default", accessibilityRole: "header", children: clarification.questions[bound].question };
+  items7[1] = closure_6(projectId(onSubmit[13]).Text, obj10);
+  items8 = [c7(first, obj7), ];
+  let tmp64Result = null;
   if (null != onDismiss) {
-    const obj11 = { variant: "tertiary", size: "sm", icon: closure_6(tmp20(onSubmit[15]).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl4.string(clarification(onSubmit[7]).qVXlk0) };
+    const obj11 = { variant: "tertiary", size: "sm", icon: closure_6(projectId(onSubmit[15]).XSmallIcon, { size: "sm" }), onPress: onDismiss, accessibilityLabel: intl4.string(clarification(onSubmit[7]).qVXlk0) };
     const IconButton = tmp20(tmp21[14]).IconButton;
     intl4 = tmp20(tmp21[6]).intl;
-    tmp61Result = tmp61(IconButton, obj11);
+    tmp64Result = tmp64(IconButton, obj11);
   }
-  items7[1] = tmp61Result;
-  const items8 = [c7(first, obj6), , , , , , , , ];
-  let tmp61Result9 = null;
+  items8[1] = tmp64Result;
+  const items9 = [c7(first, obj6), , , , , , , , ];
+  let tmp64Result9 = null;
   if (null != stringResult) {
-    const obj12 = { variant: "text-xs/normal", color: "text-muted", children: stringResult };
-    tmp61Result9 = tmp61(tmp20(tmp21[13]).Text, obj12);
+    const obj12 = { variant: "body-xs/normal", color: "text-muted", children: stringResult };
+    tmp64Result9 = tmp64(tmp20(tmp21[13]).Text, obj12);
   }
-  items8[1] = tmp61Result9;
+  items9[1] = tmp64Result9;
   if (isImageQuestionResult) {
-    const obj13 = { projectId, question: tmp18, selectedIds: answeredOptionIdsResult, disabled: tmp16, onPick: callback1, own: conjureOwnImages.controlsFor(tmp18, tmp16) };
-    const tmp56Result = clarification(onSubmit[16]);
-    tmp61Result10 = tmp61(tmp56Result, obj13);
-  } else if (true === tmp18.multi_select) {
+    const obj13 = { projectId, question: clarification.questions[bound], selectedIds: answeredOptionIdsResult, disabled: tmp16, onPick: callback2, own: conjureOwnImages.controlsFor(clarification.questions[bound], tmp16) };
+    const tmp59Result = clarification(onSubmit[16]);
+    tmp64Result10 = tmp64(tmp59Result, obj13);
+  } else if (true === clarification.questions[bound].multi_select) {
     const obj14 = {
       hasIcons: false,
       children: options.map((label) => {
@@ -407,7 +418,7 @@ export default function ConjureClarificationCard(projectId) {
             checked: _undefined5.includes(label.id),
             disabled,
             onPress() {
-              return callback1(label);
+              return callback2(label);
             }
           };
           const TableCheckboxRow = projectId(onSubmit[18]).TableCheckboxRow;
@@ -433,10 +444,10 @@ export default function ConjureClarificationCard(projectId) {
     };
     options = tmp18.options;
     const TableRowGroup = tmp20(tmp21[17]).TableRowGroup;
-    tmp61Result10 = tmp61(TableRowGroup, obj14);
+    tmp64Result10 = tmp64(TableRowGroup, obj14);
   } else {
     const options1 = tmp18.options;
-    tmp61Result10 = options1.map((answer) => {
+    tmp64Result10 = options1.map((answer) => {
       let AQbxhf;
       let formatToPlainString;
       let intl2;
@@ -447,7 +458,7 @@ export default function ConjureClarificationCard(projectId) {
       let closure_0 = answer;
       const obj = {
         onPress() {
-          return callback1(answer);
+          return callback2(answer);
         },
         disabled,
         accessibilityLabel: formatToPlainString(AQbxhf, obj2),
@@ -466,12 +477,12 @@ export default function ConjureClarificationCard(projectId) {
       const obj3 = { style: optionHeader.optionHeader, children: items };
       items = [, ];
       obj2 = { answer: answer.label };
-      const obj4 = { variant: "text-sm/semibold", color: "text-default", children: answer.label };
+      const obj4 = { variant: "body-sm/semibold", color: "text-default", children: answer.label };
       items[0] = closure_6(projectId(onSubmit[13]).Text, obj4);
       let tmp8Result = null;
       const tmp7 = first;
       if (true === answer.recommended) {
-        const obj5 = { variant: "text-xs/semibold", color: "text-muted", children: intl2.string(tmp5(onSubmit[7]).zku6r1) };
+        const obj5 = { variant: "body-xs/semibold", color: "text-muted", children: intl2.string(tmp5(onSubmit[7]).zku6r1) };
         const Text = tmp2(tmp3[13]).Text;
         intl2 = tmp2(tmp3[6]).intl;
         tmp8Result = tmp8(Text, obj5);
@@ -482,7 +493,7 @@ export default function ConjureClarificationCard(projectId) {
       if (null != answer.detail) {
         tmp8Result2 = null;
         if ("" !== answer.detail) {
-          const obj6 = { variant: "text-xs/normal", color: "text-muted", children: answer.detail };
+          const obj6 = { variant: "body-xs/normal", color: "text-muted", children: answer.detail };
           tmp8Result2 = tmp8(tmp2(tmp3[13]).Text, obj6);
         }
       }
@@ -490,32 +501,32 @@ export default function ConjureClarificationCard(projectId) {
       return _undefined(Card, obj, answer.id);
     });
   }
-  items8[2] = tmp61Result10;
-  let tmp61Result11 = null;
-  if (null != tmp18.input) {
-    const obj15 = { projectId, question: tmp18, value: tmp68, disabled: tmp16, onChange: callback4, fallback: tmp69 };
-    tmp68 = tmp10[tmp18.id];
-    const tmp56Result3 = clarification(onSubmit[20]);
-    if (tmp68 == null) {
-      tmp68 = c10;
+  items9[2] = tmp64Result10;
+  let tmp64Result11 = null;
+  if (null != clarification.questions[bound].input) {
+    const obj15 = { projectId, question: clarification.questions[bound], value: tmp71, disabled: tmp16, onChange: callback5, fallback: tmp72 };
+    tmp71 = tmp10[tmp18.id];
+    const tmp59Result4 = clarification(onSubmit[20]);
+    if (tmp71 == null) {
+      tmp71 = c10;
     }
-    tmp69 = null;
-    if (false === tmp18.allow_custom) {
-      tmp69 = tmp52;
+    tmp72 = null;
+    if (false === clarification.questions[bound].allow_custom) {
+      tmp72 = tmp55;
     }
-    tmp61Result11 = tmp61(tmp56Result3, obj15);
+    tmp64Result11 = tmp64(tmp59Result4, obj15);
   }
-  items8[3] = tmp61Result11;
-  let tmp70 = null;
-  if (true === tmp18.link) {
-    let arr12 = tmp10[tmp18.id];
-    if (arr12 == null) {
-      arr12 = c10;
+  items9[3] = tmp64Result11;
+  let tmp73 = null;
+  if (true === clarification.questions[bound].link) {
+    let arr13 = tmp10[tmp18.id];
+    if (arr13 == null) {
+      arr13 = c10;
     }
-    tmp70 = null;
-    if (arr12.length > 0) {
-      let tmp61Result12;
-      if (null == first1[tmp18.id]) {
+    tmp73 = null;
+    if (arr13.length > 0) {
+      let tmp64Result12;
+      if (null == first1[clarification.questions[bound].id]) {
         const obj16 = { style: tmp.linkConfigure, children: closure_6(Button, obj17) };
         obj17 = {
           variant: "tertiary",
@@ -533,10 +544,10 @@ export default function ConjureClarificationCard(projectId) {
         };
         Button = tmp20(tmp21[21]).Button;
         intl5 = tmp20(tmp21[6]).intl;
-        tmp61Result12 = tmp61(tmp58, obj16);
+        tmp64Result12 = tmp64(tmp61, obj16);
       } else {
         let str2 = first1[tmp18.id];
-        const tmp56Result4 = clarification(onSubmit[22]);
+        const tmp59Result5 = clarification(onSubmit[22]);
         if (str2 == null) {
           str2 = "auto";
         }
@@ -553,56 +564,58 @@ export default function ConjureClarificationCard(projectId) {
                   });
                 }
         };
-        tmp61Result12 = tmp61(tmp56Result4, obj18);
+        tmp64Result12 = tmp64(tmp59Result5, obj18);
       }
-      tmp70 = tmp61Result12;
+      tmp73 = tmp64Result12;
     }
   }
-  items8[4] = tmp70;
-  let tmp61Result13 = null;
-  if (null != tmp18.note) {
-    const obj19 = { variant: "text-xs/normal", color: "text-muted", children: tmp18.note };
-    tmp61Result13 = tmp61(tmp20(tmp21[13]).Text, obj19);
+  items9[4] = tmp73;
+  let tmp64Result13 = null;
+  if (null != clarification.questions[bound].note) {
+    const obj19 = { variant: "body-xs/normal", color: "text-muted", children: clarification.questions[bound].note };
+    tmp64Result13 = tmp64(tmp20(tmp21[13]).Text, obj19);
   }
-  items8[5] = tmp61Result13;
-  let tmp74 = null;
-  if (false !== tmp18.allow_custom) {
-    tmp74 = tmp52;
+  items9[5] = tmp64Result13;
+  let tmp77 = null;
+  if (false !== clarification.questions[bound].allow_custom) {
+    tmp77 = tmp55;
   }
-  items8[6] = tmp74;
-  let tmp61Result14 = null;
-  if (true === tmp18.upload) {
+  items9[6] = tmp77;
+  let tmp64Result14 = null;
+  if (true === clarification.questions[bound].upload) {
     const obj20 = { style: tmp.noImage, children: closure_6(Button2, obj21) };
-    obj21 = { variant: "tertiary", size: "sm", text: intl6.string(clarification(onSubmit[7]).zxSq2q), disabled: tmp16, onPress: callback2 };
+    obj21 = { variant: "tertiary", size: "sm", text: intl6.string(clarification(onSubmit[7]).zxSq2q), disabled: tmp16, onPress: callback3 };
     Button2 = tmp20(tmp21[21]).Button;
     intl6 = tmp20(tmp21[6]).intl;
-    tmp61Result14 = tmp61(tmp58, obj20);
+    tmp64Result14 = tmp64(tmp61, obj20);
   }
-  items8[7] = tmp61Result14;
+  items9[7] = tmp64Result14;
   if (clarification.questions.length <= 1) {
-    if (true !== tmp18.multi_select) {
+    if (true !== clarification.questions[bound].multi_select) {
       if (!isImageQuestionResult) {
-        if (null == tmp18.input) {
+        if (null == clarification.questions[bound].input) {
           if (null == onBack) {
-            tmp55Result = null;
-            tmp20(onSubmit[10]);
+            if (true !== clarification.questions[bound].optional) {
+              tmp58Result = null;
+              projectId(onSubmit[10]);
+            }
+            items9[8] = tmp58Result;
+            obj5.children = items9;
+            return c7(tmp60, obj5);
           }
-          items8[8] = tmp55Result;
-          obj5.children = items8;
-          return c7(tmp57, obj5);
         }
       }
     }
   }
   const obj22 = { style: tmp.actions, children: null };
   if (bound <= 0) {
-    let tmp61Result16 = null;
-    const items9 = [tmp61Result16, ];
-    let tmp61Result15 = null;
+    let tmp64Result16 = null;
+    const items10 = [tmp64Result16, ];
+    let tmp64Result15 = null;
     if (!hideSubmit) {
       const Button4 = tmp20(tmp21[21]).Button;
       if (!tmp16) {
-        tmp16 = null == tmp48;
+        tmp16 = null == tmp49 && null == result1;
       }
       const obj23 = {
         variant: "primary",
@@ -610,8 +623,11 @@ export default function ConjureClarificationCard(projectId) {
         disabled: tmp16,
         text: stringResult1,
         onPress() {
-              if (null != c23) {
-                callback(tmp);
+              if (null != c24) {
+                callback1(tmp);
+              } else if (null != result1) {
+                closure_6(result1);
+                callback(result1);
               }
             }
       };
@@ -623,23 +639,25 @@ export default function ConjureClarificationCard(projectId) {
         stringResult1 = submitText;
       } else {
         const intl8 = tmp20(tmp21[6]).intl;
-        stringResult1 = intl8.string(tmp56(tmp21[7]).w1nRmT);
+        const string = intl8.string;
+        const tmp59Result6 = clarification(onSubmit[7]);
+        stringResult1 = string(tmp53 ? tmp59Result6.ZcrbKz : tmp59Result6.w1nRmT);
       }
-      tmp61Result15 = tmp61(Button4, obj23);
+      tmp64Result15 = tmp64(Button4, obj23);
     }
-    items9[1] = tmp61Result15;
-    obj22.children = items9;
-    tmp55Result = tmp55(tmp58, obj22);
+    items10[1] = tmp64Result15;
+    obj22.children = items10;
+    tmp58Result = tmp58(tmp61, obj22);
   }
   const obj24 = { style: tmp.backAction, children: closure_6(Button3, obj25) };
   Button3 = tmp20(tmp21[21]).Button;
   if (backText == null) {
     const intl7 = tmp20(tmp21[6]).intl;
-    backText = intl7.string(tmp56(tmp21[7]).Pk5lfA);
+    backText = intl7.string(tmp59(tmp21[7]).Pk5lfA);
   }
-  obj25 = { variant: "tertiary", size: "sm", text: backText, onPress: tmp51 };
-  if (tmp51 == null) {
-    tmp51 = callback3;
+  obj25 = { variant: "tertiary", size: "sm", text: backText, onPress: tmp54 };
+  if (tmp54 == null) {
+    tmp54 = callback4;
   }
-  tmp61Result16 = tmp61(tmp58, obj24);
+  tmp64Result16 = tmp64(tmp61, obj24);
 };

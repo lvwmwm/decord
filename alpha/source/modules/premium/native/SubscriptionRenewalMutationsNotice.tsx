@@ -1,17 +1,17 @@
-// Module ID: 15418
-// Function ID: 15419
+// Module ID: 15505
+// Function ID: 15506
 // Name: SubscriptionRenewalMutationsNotice
-// Dependencies: [19, 17, 2173, 21, 5141, 575, 6898, 1187, 1113, 2176, 2]
+// Dependencies: [19, 17, 2173, 21, 5141, 575, 6913, 1187, 1113, 2176, 2]
 // Exports: default
 
-// Module 15418 (SubscriptionRenewalMutationsNotice)
+// Module 15505 (SubscriptionRenewalMutationsNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2173 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

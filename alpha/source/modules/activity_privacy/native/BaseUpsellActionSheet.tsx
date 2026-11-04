@@ -1,15 +1,15 @@
-// Module ID: 16900
-// Function ID: 16901
+// Module ID: 16992
+// Function ID: 16993
 // Name: BaseUpsellActionSheet
-// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 7083, 16898, 1113, 5747, 14325, 14049, 5381, 5832, 5395, 5754, 2]
+// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 7098, 16990, 1113, 5761, 14412, 14135, 5382, 5846, 5396, 5768, 2]
 // Exports: default
 
-// Module 16900 (BaseUpsellActionSheet)
+// Module 16992 (BaseUpsellActionSheet)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import GuildIconDefault from "GuildIcon" /* 7083 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16898 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import GuildIconDefault from "GuildIcon" /* 7098 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 16990 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -36,7 +36,7 @@ function StoreGuildIcon(guildId) {
   const items = [GuildStore];
   const obj = guildId(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  const obj2 = { guild: stateFromStores, size: guildId(7083).GuildIconSizes.XSMALL };
+  const obj2 = { guild: stateFromStores, size: guildId(7098).GuildIconSizes.XSMALL };
   const tmp2 = GuildIconDefault;
   return closure_7(tmp2, obj2);
 }
@@ -101,7 +101,7 @@ function GuildCard(guildIds) {
     }
     return str;
   }), items3);
-  const obj4 = { variant: "text-md/semibold", color: "text-strong", children: intl3.format(guildIds(substr[9]).t["0fkj8J"], obj5) };
+  const obj4 = { variant: "body-md/semibold", color: "text-strong", children: intl3.format(guildIds(substr[9]).t["0fkj8J"], obj5) };
   const tmp10 = null != onPress ? closure_4 : closure_5;
   const Text = tmp2(tmp3[10]).Text;
   intl3 = tmp2(tmp3[9]).intl;
@@ -113,8 +113,8 @@ function GuildCard(guildIds) {
   if (direction === guildIds(substr[8]).ChangeDirection.RESTRICTING) {
     str2 = "text-feedback-positive";
   }
-  items5 = [closure_7(Text2, { variant: "text-sm/medium", color: str2, children: stringResult }), ];
-  const obj7 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: tmp.guildSummary, children: format(tmp7 ? t["8ZLbvR"] : t["+NoTYm"], { guildName: str }) };
+  items5 = [closure_7(Text2, { variant: "body-sm/medium", color: str2, children: stringResult }), ];
+  const obj7 = { variant: "body-sm/medium", color: "text-muted", lineClamp: 1, style: tmp.guildSummary, children: format(tmp7 ? t["8ZLbvR"] : t["+NoTYm"], { guildName: str }) };
   const Text3 = tmp2(tmp3[10]).Text;
   const intl4 = tmp2(tmp3[9]).intl;
   format = intl4.format;
@@ -189,16 +189,16 @@ export default function BaseUpsellActionSheet(toastContent) {
   }, []);
   let obj = { startExpanded: true, children: closure_8(closure_5, obj2) };
   obj2 = { style: tmp.container, children: items1 };
-  const BottomSheet = toastContent(5395).BottomSheet;
+  const BottomSheet = toastContent(5396).BottomSheet;
   let obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "text-strong", children: title };
-  items1 = [closure_7(toastContent(5747).Text, obj3), , , ];
-  const obj4 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: subtitle };
-  items1[1] = closure_7(toastContent(5747).Text, obj4);
+  items1 = [closure_7(toastContent(5761).Text, obj3), , , ];
+  const obj4 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: subtitle };
+  items1[1] = closure_7(toastContent(5761).Text, obj4);
   items1[2] = closure_7(GuildCard, { guildIds: affectedGuildIds, direction, onPress: onCardPress });
   const obj5 = { style: tmp.buttonsContainer, children: items2 };
-  items2 = [closure_7(toastContent(5754).Button, { variant: "primary", size: "md", text: confirmText, onPress: callback }), ];
+  items2 = [closure_7(toastContent(5768).Button, { variant: "primary", size: "md", text: confirmText, onPress: callback }), ];
   const obj6 = { variant: "secondary", size: "md", text: intl.string(toastContent(1113).t.X1rGEm), onPress: callback1 };
-  const Button = toastContent(5754).Button;
+  const Button = toastContent(5768).Button;
   intl = toastContent(1113).intl;
   items2[1] = closure_7(Button, obj6);
   items1[3] = closure_8(closure_5, obj5);

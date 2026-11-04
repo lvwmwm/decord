@@ -1,8 +1,8 @@
-// Module ID: 6371
-// Function ID: 6372
+// Module ID: 6386
+// Function ID: 6387
 // Dependencies: [2]
 
-// Module 6371
+// Module 6386
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/goth_siren.png.js");

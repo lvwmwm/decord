@@ -1,20 +1,30 @@
 // Module ID: 13277
 // Function ID: 13278
-// Dependencies: []
-// Exports: severityLevelFromString
+// Dependencies: [13271, 13274]
+// Exports: addGlobalUnhandledRejectionInstrumentationHandler
 
 // Module 13277
+import _mod13271 from "module_13271" /* 13271 */;
+import _mod13274 from "module_13274" /* 13274 */;
 
-export function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
+function instrumentUnhandledRejection() {
+  onunhandledrejection = _mod13274.GLOBAL_OBJ.onunhandledrejection;
+  _mod13274.GLOBAL_OBJ.onunhandledrejection = function(arg0) {
+    const obj = _mod13271;
+    obj.triggerHandlers("unhandledrejection", arg0);
+    let applyResult = !onunhandledrejection;
+    if (onunhandledrejection) {
+      applyResult = onunhandledrejection(...arguments);
     }
-    str = str2;
-  }
-  return str;
+    return applyResult;
+  };
+  _mod13274.GLOBAL_OBJ.onunhandledrejection.__SENTRY_INSTRUMENTED__ = true;
 }
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];
+let onunhandledrejection = null;
+
+export function addGlobalUnhandledRejectionInstrumentationHandler(arg0) {
+  const obj = _mod13271;
+  obj.addHandler("unhandledrejection", arg0);
+  const obj2 = _mod13271;
+  obj2.maybeInstrument("unhandledrejection", instrumentUnhandledRejection);
+}

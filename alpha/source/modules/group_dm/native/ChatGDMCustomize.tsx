@@ -1,9 +1,9 @@
-// Module ID: 10275
-// Function ID: 10276
+// Module ID: 10323
+// Function ID: 10324
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 4990, 1072, 21, 5141, 575, 5730, 504, 5772, 5735, 1411, 10276, 7609, 1113, 5832, 10277, 7106, 5747, 7208, 5754, 10279, 2]
+// Dependencies: [5, 32, 19, 17, 4990, 1072, 21, 5141, 575, 5743, 504, 5786, 5749, 1411, 10324, 7625, 1113, 5846, 10325, 7121, 5761, 7223, 5768, 10327, 2]
 
-// Module 10275 (ChatGDMCustomize)
+// Module 10323 (ChatGDMCustomize)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -347,7 +347,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
     if (tmp21) {
       let obj8 = { onPress: memo.clear, accessibilityRole: "button", children: tmp47(Text, obj9) };
       const PressableOpacity = tmp4(tmp3[19]).PressableOpacity;
-      obj9 = { style: tmp.iconClear, variant: "text-sm/semibold", color: "text-link", children: intl.string(tmp4(tmp3[16]).t["uY+Nk/"]) };
+      obj9 = { style: tmp.iconClear, variant: "body-sm/semibold", color: "text-link", children: intl.string(tmp4(tmp3[16]).t["uY+Nk/"]) };
       Text = tmp4(tmp3[20]).Text;
       intl = tmp4(tmp3[16]).intl;
       tmp47Result = tmp47(PressableOpacity, obj8);
@@ -375,7 +375,7 @@ const memoResult = react.memo(function ChatGDMCustomize(channelId) {
     let tmp45Result = null;
     if (null != first2) {
       const obj13 = { style: tmp.rateLimitedContainer, children: items6 };
-      const obj14 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl4.string(tmp4(tmp3[16]).t.Whhv4w) };
+      const obj14 = { variant: "body-sm/semibold", color: "text-feedback-critical", children: intl4.string(tmp4(tmp3[16]).t.Whhv4w) };
       const Text2 = tmp4(tmp3[20]).Text;
       intl4 = tmp4(tmp3[16]).intl;
       items6 = [tmp47(Text2, obj14), ];

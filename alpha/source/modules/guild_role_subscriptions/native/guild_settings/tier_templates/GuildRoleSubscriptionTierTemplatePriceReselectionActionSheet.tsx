@@ -1,10 +1,10 @@
-// Module ID: 20154
-// Function ID: 20155
+// Module ID: 20270
+// Function ID: 20271
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1083, 21, 5141, 575, 5395, 5398, 5747, 1113, 1187, 7537, 7184, 7187, 17363, 6887, 5754, 5381, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5141, 575, 5396, 5400, 5761, 1113, 1187, 7553, 7199, 7202, 17454, 6902, 5768, 5382, 2]
 // Exports: default
 
-// Module 20154 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 20270 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -63,7 +63,7 @@ export default function GuildRoleSubscriptionTierTemplatePriceReselectionActionS
   intl = selectedTemplate(newPricesToPick[10]).intl;
   obj5 = { tierName: selectedTemplate.listings[0].name };
   items = [closure_7(Text, obj4), closure_7(selectedTemplate(newPricesToPick[11]).Spacer, { size: 12 }), , , , , ];
-  const obj6 = { variant: "text-sm/normal", color: "text-default", children: format(v5i7Uhb, obj7) };
+  const obj6 = { variant: "body-sm/normal", color: "text-default", children: format(v5i7Uhb, obj7) };
   const Text2 = selectedTemplate(newPricesToPick[9]).Text;
   const intl2 = selectedTemplate(newPricesToPick[10]).intl;
   format = intl2.format;

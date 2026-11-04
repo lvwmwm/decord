@@ -1,16 +1,16 @@
-// Module ID: 7118
-// Function ID: 7119
+// Module ID: 7133
+// Function ID: 7134
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 7119, 5754, 5175, 7121, 6864, 7331, 2123, 7334, 7369, 7253, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 7134, 5768, 5175, 7136, 6879, 7347, 2123, 7350, 7385, 7273, 2]
 // Exports: default
 
-// Module 7118 (IdentityVerificationField)
+// Module 7133 (IdentityVerificationField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7119 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7134 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -22,8 +22,8 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const MobilePhoneIcon = tmp(7253);
-const EnvelopeIcon = tmp(7369);
+const MobilePhoneIcon = tmp(7273);
+const EnvelopeIcon = tmp(7385);
 function BaseIdentityVerificationField(icon) {
   let Button;
   let intl;
@@ -45,7 +45,7 @@ function BaseIdentityVerificationField(icon) {
     tmp4 = React3(icon, obj2);
   }
   items = [tmp4, , ];
-  const obj3 = { style: tmp.label, variant: "text-md/medium", color: "mobile-text-heading-primary", children: label };
+  const obj3 = { style: tmp.label, variant: "body-md/medium", color: "mobile-text-heading-primary", children: label };
   items[1] = React3(Text_Text.Text, obj3);
   if (passesVerification) {
     const obj4 = { style: tmp.verifiedContainer, accessible: true, accessibilityLabel: intl2.string(intl4.t.g62IJl), children: React3(CheckmarkLargeIcon.CheckmarkLargeIcon, { color: "status-positive" }) };
@@ -54,7 +54,7 @@ function BaseIdentityVerificationField(icon) {
   } else {
     obj5 = { style: tmp.ctaButton, children: React3(Button, obj6) };
     obj6 = { variant: "primary", size: "sm", grow: true, text: intl.string(intl4.t["13ofGu"]), onPress };
-    Button = tmp7(5754).Button;
+    Button = tmp7(5768).Button;
     intl = tmp7(1113).intl;
   }
   items[2] = React3(View, obj5);

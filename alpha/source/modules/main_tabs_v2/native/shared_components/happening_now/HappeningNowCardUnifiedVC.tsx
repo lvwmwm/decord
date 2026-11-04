@@ -1,18 +1,18 @@
-// Module ID: 18276
-// Function ID: 18277
+// Module ID: 18373
+// Function ID: 18374
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 4989, 6834, 5083, 21, 18277, 18289, 18290, 563, 18267, 2]
+// Dependencies: [19, 4989, 6849, 5083, 21, 18374, 18386, 18387, 563, 18364, 2]
 // Exports: default, useCallActivityData
 
-// Module 18276 (HappeningNowCardUnifiedVC)
+// Module 18373 (HappeningNowCardUnifiedVC)
 import Fragment from "Fragment" /* 21 */;
-import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 18267 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 18277 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 18289 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 18290 */;
+import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 18364 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 18374 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 18386 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 18387 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import size from "module_2" /* 2 */;
 

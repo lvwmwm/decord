@@ -1,17 +1,17 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 13889
+// Function ID: 13890
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 5142, 13571, 6186, 21, 5141, 575, 1377, 504, 6557, 13593, 13594, 1113, 3187, 3219, 13804, 13579, 13777, 13806, 13779, 13791, 13792, 13793, 1411, 1342, 13807, 7420, 2]
+// Dependencies: [32, 19, 17, 5142, 13656, 6201, 21, 5141, 575, 1377, 504, 6572, 13680, 13681, 1113, 3187, 3219, 13890, 13665, 13863, 13892, 13865, 13877, 13878, 13879, 1411, 1342, 13893, 7436, 2]
 // Exports: default
 
-// Module 13803 (CheckpointEmojiStatsScreen)
+// Module 13889 (CheckpointEmojiStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import CheckpointStore from "CheckpointStore" /* 13571 */;
-import CheckpointConstants from "CheckpointConstants" /* 6186 */;
+import CheckpointStore from "CheckpointStore" /* 13656 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
@@ -134,7 +134,7 @@ export default function CheckpointEmojiStatsScreen() {
   }
   [emoji, _slicedToArray] = react.useState(tmp12 ? closure_11 : emojis[0]);
   const tmp16 = require("useCheckpointSound");
-  react = tmp16(require("module_13594"));
+  react = tmp16(require("module_13681"));
   let intl = tmp2(tmp3[14]).intl;
   const string = intl.string;
   if (tmp12) {
@@ -170,7 +170,7 @@ export default function CheckpointEmojiStatsScreen() {
   items6 = [, ];
   const obj10 = { size: "xs", color };
   items6[0] = closure_9(EmojiSlightlySmilingFaceIcon, obj10);
-  const obj11 = { isStepHeading: true, variant: "heading-md/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const obj11 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp15Result3 = require("CheckpointText");
   items6[1] = closure_9(tmp15Result3, obj11);
   items7 = [closure_10(View, obj9), , , , ];

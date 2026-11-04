@@ -1,12 +1,12 @@
-// Module ID: 13910
-// Function ID: 13911
+// Module ID: 13996
+// Function ID: 13997
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 5141, 1357, 5747, 2]
+// Dependencies: [19, 21, 5141, 1357, 5761, 2]
 // Exports: default
 
-// Module 13910 (ForumPostTitle)
+// Module 13996 (ForumPostTitle)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -38,5 +38,5 @@ export default function ForumPostTitle(arg0) {
   if (hasUnreads) {
     str = "mobile-text-heading-primary";
   }
-  return jsx(Text_Text.Text, { variant: "text-md/semibold", color: str, lineClamp, ellipsizeMode, style: tmp.title, onTextLayout, children: title });
+  return jsx(Text_Text.Text, { variant: "body-md/semibold", color: str, lineClamp, ellipsizeMode, style: tmp.title, onTextLayout, children: title });
 };

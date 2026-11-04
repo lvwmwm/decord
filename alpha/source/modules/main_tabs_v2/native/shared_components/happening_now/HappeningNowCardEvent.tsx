@@ -1,20 +1,20 @@
-// Module ID: 18291
-// Function ID: 18292
+// Module ID: 18388
+// Function ID: 18389
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2191, 1385, 17430, 1072, 21, 5141, 575, 1187, 9637, 504, 7606, 9097, 9093, 1252, 9090, 1411, 9334, 17431, 8785, 5747, 2024, 5837, 1113, 2]
+// Dependencies: [19, 17, 2191, 1385, 17521, 1072, 21, 5141, 575, 1187, 9656, 504, 7622, 9114, 9110, 1252, 9107, 1411, 9351, 17522, 8802, 5761, 2024, 5851, 1113, 2]
 
-// Module 18291 (HappeningNowCardEvent)
+// Module 18388 (HappeningNowCardEvent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9090 */;
-import ClipView from "ClipView" /* 9637 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9107 */;
+import ClipView from "ClipView" /* 9656 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import UserStore from "UserStore" /* 1385 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17430 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17521 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -169,7 +169,7 @@ const memoResult = react.memo(function HappeningNowCardEvent(event) {
   items7[0] = closure_11(event(creator_id[20]).GroupIcon, obj9);
   let tmp23Result4 = tmp10 > 0;
   if (tmp23Result4) {
-    const obj10 = { color: "mobile-text-heading-primary", variant: "text-xs/semibold", children: tmp26Result.humanizeValue(tmp10, stateFromStores) };
+    const obj10 = { color: "mobile-text-heading-primary", variant: "body-xs/semibold", children: tmp26Result.humanizeValue(tmp10, stateFromStores) };
     const Text = tmp26(tmp19[21]).Text;
     tmp26Result = event(creator_id[22]);
     tmp23Result4 = tmp23(Text, obj10);
@@ -202,7 +202,7 @@ const memoResult = react.memo(function HappeningNowCardEvent(event) {
   const obj15 = { color: str2, variant: str3, children: startDateTimeString };
   str3 = undefined;
   if (isLive) {
-    str3 = "text-xs/semibold";
+    str3 = "body-xs/semibold";
   }
   if (isLive) {
     const intl = tmp26(tmp19[24]).intl;

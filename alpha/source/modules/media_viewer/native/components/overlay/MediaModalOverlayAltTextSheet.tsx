@@ -1,15 +1,15 @@
-// Module ID: 11703
-// Function ID: 11704
+// Module ID: 11758
+// Function ID: 11759
 // Name: MediaModalOverlayAltTextSheet
-// Dependencies: [19, 21, 5141, 575, 11704, 8897, 5395, 7441, 1113, 5747, 2]
+// Dependencies: [19, 21, 5141, 575, 11759, 8914, 5396, 7457, 1113, 5761, 2]
 // Exports: default
 
-// Module 11703 (MediaModalOverlayAltTextSheet)
+// Module 11758 (MediaModalOverlayAltTextSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8897 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11704 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8914 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11759 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -32,9 +32,9 @@ export default function MediaViewerAltTextSheet(description) {
   if (!obj2.useIsScreenLandscape()) {
     num = messagePreviewCollapsedheight + 20 + 50;
   }
-  const BottomSheet = tmp2(5395).BottomSheet;
+  const BottomSheet = tmp2(5396).BottomSheet;
   ({ title: intl.string(intl2.t.J3IOO1) });
-  const BottomSheetTitleHeader = tmp2(7441).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = tmp2(7457).BottomSheetTitleHeader;
   intl = tmp2(1113).intl;
   const items = [tmp.container, { minHeight: num }];
   return <BottomSheet header={null} contentStyles={items}>{null}</BottomSheet>;

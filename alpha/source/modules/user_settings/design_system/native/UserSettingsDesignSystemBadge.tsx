@@ -1,19 +1,19 @@
-// Module ID: 17955
-// Function ID: 17956
+// Module ID: 18051
+// Function ID: 18052
 // Name: UserSettingsDesignSystemBadge
-// Dependencies: [32, 19, 17, 21, 5141, 575, 8791, 9698, 11607, 11609, 11611, 11613, 10193, 6147, 5747, 7426, 7184, 7187, 7208, 7489, 7103, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 8808, 9716, 11658, 11660, 11662, 11664, 10241, 6162, 5761, 7442, 7199, 7202, 7223, 7505, 7118, 1187, 2]
 // Exports: default
 
-// Module 17955 (UserSettingsDesignSystemBadge)
+// Module 18051 (UserSettingsDesignSystemBadge)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import Badge_Badge from "Badge/Badge" /* 7426 */;
-import TableSwitchRow from "TableSwitchRow" /* 7489 */;
-import StarIcon3 from "StarIcon" /* 10193 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11611 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import Badge_Badge from "Badge/Badge" /* 7442 */;
+import TableSwitchRow from "TableSwitchRow" /* 7505 */;
+import StarIcon3 from "StarIcon" /* 10241 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11662 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -52,7 +52,7 @@ function Playground() {
   [first3, tmp12] = react.useState(false);
   let obj = { spacing: nativeDefault.space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/semibold", children: "Playground" }), , , , , ];
+  items = [metroImportDefault(Text_Text.Heading, { variant: "body-lg/semibold", children: "Playground" }), , , , , ];
   let tmp19 = first1;
   const obj2 = { style: tmp.preview, children: metroImportDefault(Badge, obj4) };
   Badge = Badge_Badge.Badge;
@@ -71,19 +71,19 @@ function Playground() {
   if (first3) {
     let StarIcon;
     if ("premium" === first) {
-      StarIcon = tmp14(8791).LockIcon;
+      StarIcon = tmp14(8808).LockIcon;
     } else if ("inverted" === first) {
-      StarIcon = tmp14(9698).TagIcon;
+      StarIcon = tmp14(9716).TagIcon;
     } else if ("rarity-common" === first) {
-      StarIcon = tmp14(11607).ExperimentalCommonIcon;
+      StarIcon = tmp14(11658).ExperimentalCommonIcon;
     } else if ("rarity-rare" === first) {
-      StarIcon = tmp14(11609).ExperimentalRareIcon;
+      StarIcon = tmp14(11660).ExperimentalRareIcon;
     } else if ("rarity-epic" === first) {
-      StarIcon = tmp14(11611).ExperimentalEpicIcon;
+      StarIcon = tmp14(11662).ExperimentalEpicIcon;
     } else if ("rarity-mythic" === first) {
-      StarIcon = tmp14(11613).ExperimentalMythicIcon;
+      StarIcon = tmp14(11664).ExperimentalMythicIcon;
     } else {
-      StarIcon = tmp14(10193).StarIcon;
+      StarIcon = tmp14(10241).StarIcon;
     }
     tmp20 = StarIcon;
   }
@@ -98,7 +98,7 @@ function Playground() {
       return closure_1_7(require("TableRadioRow").TableRadioRow, obj, label);
     })
   };
-  const TableRadioGroup = tmp14(7184).TableRadioGroup;
+  const TableRadioGroup = tmp14(7199).TableRadioGroup;
   items[2] = metroImportDefault(TableRadioGroup, obj5);
   const obj6 = {
     title: "Type",
@@ -110,12 +110,12 @@ function Playground() {
       return closure_1_7(require("TableRadioRow").TableRadioRow, obj, label.value);
     })
   };
-  const TableRadioGroup2 = tmp14(7184).TableRadioGroup;
+  const TableRadioGroup2 = tmp14(7199).TableRadioGroup;
   items[3] = metroImportDefault(TableRadioGroup2, obj6);
   let tmp16Result = null;
   if ("custom" === first1) {
     const obj7 = { label: "Custom text", value: first2, onChange: tmp9 };
-    tmp16Result = tmp16(tmp14(7208).TextInput, obj7);
+    tmp16Result = tmp16(tmp14(7223).TextInput, obj7);
   }
   items[4] = tmp16Result;
   items[5] = metroImportDefault(TableSwitchRow.TableSwitchRow, { label: "Leading icon", value: first3, onValueChange: tmp12, start: true, end: true });
@@ -131,8 +131,8 @@ function VariantMatrix() {
   obj2 = { spacing: nativeDefault.space.PX_16, children: items };
   Stack = require("Stack/Stack").Stack;
   items = [
-    closure_7(require("Text/Text").Heading, { variant: "text-lg/semibold", children: "Variants" }),
-    closure_7(require("Text/Text").Text, { variant: "text-sm/normal", color: "text-subtle", children: "Every variant with built-in types, custom text, and a leading icon. With no variant, a badge uses the grey default." }),
+    closure_7(require("Text/Text").Heading, { variant: "body-lg/semibold", children: "Variants" }),
+    closure_7(require("Text/Text").Text, { variant: "body-sm/normal", color: "text-subtle", children: "Every variant with built-in types, custom text, and a leading icon. With no variant, a badge uses the grey default." }),
     closure_10.map((variant) => {
       let StarIcon;
       let StarIcon2;
@@ -140,7 +140,7 @@ function VariantMatrix() {
       const obj = { spacing: nativeDefault.space.PX_8, children: items };
       const Stack = Stack_Stack.Stack;
       items = [, ];
-      const obj2 = { variant: "text-sm/medium", children: variant };
+      const obj2 = { variant: "body-sm/medium", children: variant };
       items[0] = metroImportDefault(Text_Text.Text, obj2);
       const obj3 = { style: badgeRow.badgeRow, children: items1 };
       items1 = [, , , , ];
@@ -154,37 +154,37 @@ function VariantMatrix() {
       const Badge = Badge_Badge.Badge;
       const tmp5 = metroRequire;
       if ("premium" === variant) {
-        StarIcon = tmp2(8791).LockIcon;
+        StarIcon = tmp2(8808).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon = tmp2(9698).TagIcon;
+        StarIcon = tmp2(9716).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon = tmp2(11607).ExperimentalCommonIcon;
+        StarIcon = tmp2(11658).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon = tmp2(11609).ExperimentalRareIcon;
+        StarIcon = tmp2(11660).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon = tmp2(11611).ExperimentalEpicIcon;
+        StarIcon = tmp2(11662).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon = tmp2(11613).ExperimentalMythicIcon;
+        StarIcon = tmp2(11664).ExperimentalMythicIcon;
       } else {
-        StarIcon = tmp2(10193).StarIcon;
+        StarIcon = tmp2(10241).StarIcon;
       }
       items1[3] = metroImportDefault(Badge, obj7);
       const obj8 = { type: { text: "Custom" }, variant, icon: StarIcon2 };
-      const Badge2 = tmp2(7426).Badge;
+      const Badge2 = tmp2(7442).Badge;
       if ("premium" === variant) {
-        StarIcon2 = tmp2(8791).LockIcon;
+        StarIcon2 = tmp2(8808).LockIcon;
       } else if ("inverted" === variant) {
-        StarIcon2 = tmp2(9698).TagIcon;
+        StarIcon2 = tmp2(9716).TagIcon;
       } else if ("rarity-common" === variant) {
-        StarIcon2 = tmp2(11607).ExperimentalCommonIcon;
+        StarIcon2 = tmp2(11658).ExperimentalCommonIcon;
       } else if ("rarity-rare" === variant) {
-        StarIcon2 = tmp2(11609).ExperimentalRareIcon;
+        StarIcon2 = tmp2(11660).ExperimentalRareIcon;
       } else if ("rarity-epic" === variant) {
-        StarIcon2 = tmp2(11611).ExperimentalEpicIcon;
+        StarIcon2 = tmp2(11662).ExperimentalEpicIcon;
       } else if ("rarity-mythic" === variant) {
-        StarIcon2 = tmp2(11613).ExperimentalMythicIcon;
+        StarIcon2 = tmp2(11664).ExperimentalMythicIcon;
       } else {
-        StarIcon2 = tmp2(10193).StarIcon;
+        StarIcon2 = tmp2(10241).StarIcon;
       }
       items1[4] = metroImportDefault(Badge2, obj8);
       items[1] = metroImportAll(tmp5, obj3);
@@ -207,7 +207,7 @@ function Truncation() {
   const Card = Card_Card.Card;
   obj2 = { spacing: nativeDefault.space.PX_12, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/semibold", children: "Long text" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Labels stay on one line and truncate with an ellipsis when space runs out. The icon never shrinks." }), , , ];
+  items = [metroImportDefault(Text_Text.Heading, { variant: "body-lg/semibold", children: "Long text" }), metroImportDefault(Text_Text.Text, { variant: "body-sm/normal", color: "text-subtle", children: "Labels stay on one line and truncate with an ellipsis when space runs out. The icon never shrinks." }), , , ];
   const obj3 = { style: tmp.narrow, children: metroImportDefault(Badge_Badge.Badge, obj4) };
   obj4 = { type: obj5 };
   obj5 = { text };
@@ -231,7 +231,7 @@ function ComparisonRow(arg0) {
   const obj = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_12, children: items };
   const Stack = Stack_Stack.Stack;
   items = [, , ];
-  const obj2 = { variant: "text-sm/normal", style: tmp.comparisonLabel, children: label };
+  const obj2 = { variant: "body-sm/normal", style: tmp.comparisonLabel, children: label };
   items[0] = metroImportDefault(Text_Text.Text, obj2);
   const obj3 = { style: tmp.comparisonCell, children: legacy };
   items[1] = metroImportDefault(metroRequire, obj3);
@@ -248,15 +248,15 @@ function LegacyComparison() {
   const Card = Card_Card.Card;
   obj2 = { spacing: nativeDefault.space.PX_12, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/semibold", children: "Legacy vs. Mana" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Legacy defaults on the left, the closest Mana Badge on the right. A bare type renders the grey default, so brand needs an explicit variant." }), , , , , , ];
+  items = [metroImportDefault(Text_Text.Heading, { variant: "body-lg/semibold", children: "Legacy vs. Mana" }), metroImportDefault(Text_Text.Text, { variant: "body-sm/normal", color: "text-subtle", children: "Legacy defaults on the left, the closest Mana Badge on the right. A bare type renders the grey default, so brand needs an explicit variant." }), , , , , , ];
   const obj3 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_12, children: items1 };
   const Stack2 = Stack_Stack.Stack;
   items1 = [, , ];
   const obj4 = { style: tmp.comparisonLabel };
   items1[0] = metroImportDefault(metroRequire, obj4);
-  const obj5 = { style: tmp.comparisonCell, children: metroImportDefault(Text_Text.Text, { variant: "text-xs/semibold", color: "text-subtle", children: "Legacy" }) };
+  const obj5 = { style: tmp.comparisonCell, children: metroImportDefault(Text_Text.Text, { variant: "body-xs/semibold", color: "text-subtle", children: "Legacy" }) };
   items1[1] = metroImportDefault(metroRequire, obj5);
-  const obj6 = { style: tmp.comparisonCell, children: metroImportDefault(Text_Text.Text, { variant: "text-xs/semibold", color: "text-subtle", children: "Mana" }) };
+  const obj6 = { style: tmp.comparisonCell, children: metroImportDefault(Text_Text.Text, { variant: "body-xs/semibold", color: "text-subtle", children: "Mana" }) };
   items1[2] = metroImportDefault(metroRequire, obj6);
   items[2] = metroImportAll(Stack2, obj3);
   const obj7 = { label: "TextBadge vs. default", legacy: metroImportDefault(native.TextBadge, { text: "New" }), mana: metroImportDefault(Badge_Badge.Badge, { type: { text: "New" } }) };
@@ -278,7 +278,7 @@ function LayoutCase(arg0) {
   const obj = { spacing: nativeDefault.space.PX_4, children: items };
   const tmp = closure_9();
   const Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Text, { variant: "text-xs/semibold", color: "text-subtle", children: title }), ];
+  items = [metroImportDefault(Text_Text.Text, { variant: "body-xs/semibold", color: "text-subtle", children: title }), ];
   const obj2 = { style: tmp.layoutCase, children };
   items[1] = metroImportDefault(metroRequire, obj2);
   return metroImportAll(Stack, obj);
@@ -302,25 +302,25 @@ function ParentLayouts() {
   const Card = Card_Card.Card;
   obj2 = { spacing: nativeDefault.space.PX_12, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Heading, { variant: "text-lg/semibold", children: "Parent layouts" }), metroImportDefault(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: "Legacy and Mana badges in the same parents. Both follow the parent's alignment; use parent/container layout to position Mana badges." }), , , , , ];
+  items = [metroImportDefault(Text_Text.Heading, { variant: "body-lg/semibold", children: "Parent layouts" }), metroImportDefault(Text_Text.Text, { variant: "body-sm/normal", color: "text-subtle", children: "Legacy and Mana badges in the same parents. Both follow the parent's alignment; use parent/container layout to position Mana badges." }), , , , , ];
   const obj3 = { title: "Row next to text (TextBadge, then Mana)", children: items2 };
   const obj4 = { style: tmp.inlineRow, children: items1 };
-  items1 = [metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", children: "Channel name" }), ];
+  items1 = [metroImportDefault(Text_Text.Text, { variant: "body-md/semibold", children: "Channel name" }), ];
   const obj5 = { text: "New", style: tmp.inlineBadge };
   items1[1] = metroImportDefault(native.TextBadge, obj5);
   items2 = [metroImportAll(metroRequire, obj4), ];
   const obj6 = { style: tmp.inlineRow, children: items3 };
-  items3 = [metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", children: "Channel name" }), ];
+  items3 = [metroImportDefault(Text_Text.Text, { variant: "body-md/semibold", children: "Channel name" }), ];
   const obj7 = { style: tmp.inlineBadge, children: metroImportDefault(Badge_Badge.Badge, { type: { text: "New" } }) };
   items3[1] = metroImportDefault(metroRequire, obj7);
   items2[1] = metroImportAll(metroRequire, obj6);
   items[2] = metroImportAll(LayoutCase, obj3);
   const obj8 = { title: "Row next to text (BetaTag, then Mana brand)", children: items5 };
   const obj9 = { style: tmp.inlineRow, children: items4 };
-  items4 = [metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", children: "Feature name" }), metroImportDefault(native.BetaTag, {})];
+  items4 = [metroImportDefault(Text_Text.Text, { variant: "body-md/semibold", children: "Feature name" }), metroImportDefault(native.BetaTag, {})];
   items5 = [metroImportAll(metroRequire, obj9), ];
   const obj10 = { style: tmp.inlineRow, children: items6 };
-  items6 = [metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", children: "Feature name" }), ];
+  items6 = [metroImportDefault(Text_Text.Text, { variant: "body-md/semibold", children: "Feature name" }), ];
   const obj11 = { style: tmp.inlineBadge, children: metroImportDefault(Badge_Badge.Badge, { type: "beta", variant: "primary" }) };
   items6[1] = metroImportDefault(metroRequire, obj11);
   items5[1] = metroImportAll(metroRequire, obj10);
@@ -337,10 +337,10 @@ function ParentLayouts() {
   items[5] = metroImportAll(LayoutCase, obj13);
   const obj16 = { title: "Trailing edge of a list row (TextBadge, then Mana)", children: items10 };
   const obj17 = { style: tmp.trailingRow, children: items9 };
-  items9 = [metroImportDefault(Text_Text.Text, { variant: "text-md/normal", children: "Notifications" }), metroImportDefault(native.TextBadge, { text: "New" })];
+  items9 = [metroImportDefault(Text_Text.Text, { variant: "body-md/normal", children: "Notifications" }), metroImportDefault(native.TextBadge, { text: "New" })];
   items10 = [metroImportAll(metroRequire, obj17), ];
   const obj18 = { style: tmp.trailingRow, children: items11 };
-  items11 = [metroImportDefault(Text_Text.Text, { variant: "text-md/normal", children: "Notifications" }), metroImportDefault(Badge_Badge.Badge, { type: { text: "New" } })];
+  items11 = [metroImportDefault(Text_Text.Text, { variant: "body-md/normal", children: "Notifications" }), metroImportDefault(Badge_Badge.Badge, { type: { text: "New" } })];
   items10[1] = metroImportAll(metroRequire, obj18);
   items[6] = metroImportAll(LayoutCase, obj16);
   return metroImportDefault(Card, obj);
@@ -367,6 +367,6 @@ export default function UserSettingsDesignSystemBadge() {
   const obj = { contentContainerStyle: closure_9().container, children: metroImportAll(Stack, obj2) };
   obj2 = { spacing: nativeDefault.space.PX_24, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Text, { variant: "text-md/normal", color: "text-subtle", children: "Badges label feature status, like New or Beta. They are not for counts or notifications." }), metroImportDefault(Playground, {}), metroImportDefault(VariantMatrix, {}), metroImportDefault(Truncation, {}), metroImportDefault(LegacyComparison, {}), metroImportDefault(ParentLayouts, {})];
+  items = [metroImportDefault(Text_Text.Text, { variant: "body-md/normal", color: "text-subtle", children: "Badges label feature status, like New or Beta. They are not for counts or notifications." }), metroImportDefault(Playground, {}), metroImportDefault(VariantMatrix, {}), metroImportDefault(Truncation, {}), metroImportDefault(LegacyComparison, {}), metroImportDefault(ParentLayouts, {})];
   return metroImportDefault(hasOwnProperty, obj);
 };

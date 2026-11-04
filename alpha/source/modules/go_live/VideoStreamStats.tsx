@@ -1,12 +1,12 @@
-// Module ID: 8013
-// Function ID: 8014
+// Module ID: 8029
+// Function ID: 8030
 // Name: VideoStreamStats
-// Dependencies: [6063, 1072, 4985, 5892, 2]
+// Dependencies: [6078, 1072, 4985, 5906, 2]
 
-// Module 8013 (VideoStreamStats)
+// Module 8029 (VideoStreamStats)
 import Constants from "Constants" /* 1072 */;
-import TimeUtils from "TimeUtils" /* 5892 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6063 */;
+import TimeUtils from "TimeUtils" /* 5906 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6078 */;
 import size from "module_2" /* 2 */;
 
 const StreamLayouts = Constants.StreamLayouts;

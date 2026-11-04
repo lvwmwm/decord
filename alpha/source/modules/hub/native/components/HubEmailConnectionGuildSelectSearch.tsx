@@ -1,21 +1,21 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14566
+// Function ID: 14567
 // Name: HubEmailConnectionGuildSelectSearch
-// Dependencies: [5, 32, 19, 17, 14460, 21, 5141, 575, 5837, 14487, 5747, 1113, 1499, 7019, 1627, 14473, 6566, 7124, 7681, 7414, 1187, 14482, 2]
+// Dependencies: [5, 32, 19, 17, 14540, 21, 5141, 575, 5851, 14567, 5761, 1113, 1499, 7034, 1627, 14553, 6581, 7139, 7697, 7430, 1187, 14562, 2]
 // Exports: default
 
-// Module 14486 (HubEmailConnectionGuildSelectSearch)
+// Module 14566 (HubEmailConnectionGuildSelectSearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useNavigation from "useNavigation" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import fuzzysearchDefault from "fuzzysearch" /* 7019 */;
-import HubConstants from "HubConstants" /* 14460 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14487 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import fuzzysearchDefault from "fuzzysearch" /* 7034 */;
+import HubConstants from "HubConstants" /* 14540 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14567 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -33,9 +33,9 @@ let obj2;
 let obj3;
 let tmp2;
 let tmp9;
-const NavigatorHeader = tmp2(7124);
-const defaultMVCPConfig = tmp2(7414);
-const SearchBarNavDefault = tmp9(7681);
+const NavigatorHeader = tmp2(7139);
+const defaultMVCPConfig = tmp2(7430);
+const SearchBarNavDefault = tmp9(7697);
 function EmptyState() {
   let intl;
   let items;
@@ -44,7 +44,7 @@ function EmptyState() {
   const obj2 = { style: tmp.emptyStateImage, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items = [metroImportAll(tmp2, obj2), ];
-  const obj3 = { style: tmp.emptyStateTitle, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["6HXiuE"]) };
+  const obj3 = { style: tmp.emptyStateTitle, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl2.t["6HXiuE"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = metroImportAll(Text, obj3);

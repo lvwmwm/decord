@@ -1,10 +1,10 @@
-// Module ID: 13561
-// Function ID: 13562
+// Module ID: 13645
+// Function ID: 13646
 // Name: PileOverflow
-// Dependencies: [19, 17, 2191, 21, 5141, 575, 563, 5747, 2024, 2]
+// Dependencies: [19, 17, 2191, 21, 5141, 575, 563, 5761, 2024, 2]
 // Exports: PileOverflow
 
-// Module 13561 (PileOverflow)
+// Module 13645 (PileOverflow)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -23,7 +23,7 @@ const View = react_native.View;
 let obj = { container: obj2 };
 obj2 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, flexShrink: 0 };
 let closure_6 = createStyles.createStyles(obj);
-let items = [[64, "text-lg/semibold"], [48, "text-md/semibold"], [40, "text-md/semibold"], [30, "text-sm/semibold"], [24, "text-xs/semibold"], [16, "text-xxs/semibold"]];
+let items = [[64, "body-lg/semibold"], [48, "body-md/semibold"], [40, "body-md/semibold"], [30, "body-sm/semibold"], [24, "body-xs/semibold"], [16, "footnote/semibold"]];
 const map = new Map(items);
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/Pile/native/PileOverflow.native.tsx");
@@ -52,11 +52,11 @@ export function PileOverflow(size) {
   }
   items1[1] = obj2;
   const obj3 = { style: items1, children: tmp6(Text, obj4) };
-  Text = tmp(5747).Text;
+  Text = tmp(5761).Text;
   let str = map.get(size);
   tmp6 = React3;
   if (str == null) {
-    str = "text-md/semibold";
+    str = "body-md/semibold";
   }
   obj4 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: str, children: items2 };
   items2 = ["+"];

@@ -1,14 +1,14 @@
-// Module ID: 18322
-// Function ID: 18323
+// Module ID: 18419
+// Function ID: 18420
 // Name: VoiceChannelUserLimit
-// Dependencies: [19, 17, 21, 5141, 575, 1187, 15345, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1187, 15432, 5761, 2]
 
-// Module 18322 (VoiceChannelUserLimit)
+// Module 18419 (VoiceChannelUserLimit)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15345 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15432 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -53,7 +53,7 @@ const memoResult = react.memo(function VoiceChannelUserLimit(videoLimit) {
     tmp3 = React3(Icon, obj3);
   }
   items = [tmp3, ];
-  const obj4 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: str.padStart(2, "0") };
+  const obj4 = { variant: "body-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: str.padStart(2, "0") };
   const Text = Text_Text.Text;
   str = users.toString();
   items[1] = React3(Text, obj4);
@@ -61,7 +61,7 @@ const memoResult = react.memo(function VoiceChannelUserLimit(videoLimit) {
   const obj5 = { style: rect.mid };
   items1[1] = React3(View, obj5);
   const obj6 = { style: rect.right, children: React3(Text2, obj7) };
-  obj7 = { variant: "text-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: str1.padStart(2, "0") };
+  obj7 = { variant: "body-xs/medium", lineClamp: 1, color: "voice-channel-user-limit-text", children: str1.padStart(2, "0") };
   Text2 = Text_Text.Text;
   str1 = total.toString();
   items1[2] = React3(View, obj6);

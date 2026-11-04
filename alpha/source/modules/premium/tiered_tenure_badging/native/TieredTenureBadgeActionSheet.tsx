@@ -1,20 +1,20 @@
-// Module ID: 11556
-// Function ID: 11557
+// Module ID: 11606
+// Function ID: 11607
 // Name: TieredTenureBadgeActionSheet
-// Dependencies: [19, 17, 1385, 1387, 1072, 21, 5141, 575, 11557, 7905, 11582, 5837, 5747, 1113, 11583, 504, 2112, 6148, 1260, 1627, 7687, 5381, 8874, 10161, 10420, 5395, 5398, 2]
+// Dependencies: [19, 17, 1385, 1387, 1072, 21, 5141, 575, 11607, 7921, 11632, 5851, 5761, 1113, 11633, 504, 2112, 6163, 1260, 1627, 7703, 5382, 8891, 10209, 10468, 5396, 5400, 2]
 // Exports: default
 
-// Module 11556 (TieredTenureBadgeActionSheet)
+// Module 11606 (TieredTenureBadgeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7905 */;
-import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8874 */;
-import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11557 */;
-import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11582 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7921 */;
+import showUserProfileActionSheet from "showUserProfileActionSheet" /* 8891 */;
+import useMobileTenureBadgeImages from "useMobileTenureBadgeImages" /* 11607 */;
+import useTenureBadgeRequirementString from "useTenureBadgeRequirementString" /* 11632 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -70,19 +70,19 @@ function TieredTenureBadgeItem(arg0) {
     items[1] = usersBadgeContainer;
     const obj3 = { resizeMode: "contain", source: small };
     items1 = [authStore(FastImageDefault, obj3), , , ];
-    const obj4 = { style: tmp.badgeName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(tieredTenureBadgeData.nameUnformatted) };
-    const Text = tmp2(5747).Text;
+    const obj4 = { style: tmp.badgeName, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(tieredTenureBadgeData.nameUnformatted) };
+    const Text = tmp2(5761).Text;
     intl = tmp2(1113).intl;
     items1[1] = authStore(Text, obj4);
-    const obj5 = { style: tmp.badgeRequirement, variant: "text-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
+    const obj5 = { style: tmp.badgeRequirement, variant: "body-xs/normal", color: "mobile-text-heading-primary", children: tmp7 };
     items1[2] = authStore(Text_Text.Text, obj5);
     const tmp11 = authStore;
     if (isUsersBadge) {
       isUsersBadge = null != premiumSince;
     }
     if (isUsersBadge) {
-      const obj6 = { style: tmp.badgePremiumSince, variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj7) };
-      const Text2 = tmp2(5747).Text;
+      const obj6 = { style: tmp.badgePremiumSince, variant: "body-xs/normal", color: "text-muted", children: formatToPlainString(Hu4jfi, obj7) };
+      const Text2 = tmp2(5761).Text;
       const intl2 = tmp2(1113).intl;
       formatToPlainString = intl2.formatToPlainString;
       const _Date = Date;
@@ -214,7 +214,7 @@ export default function TieredTenureBadgeActionSheet(userId) {
     stringResult = string(t.RtGeFS);
   }
   items3 = [closure_10(Text, obj8), ];
-  const obj9 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle, children: stringResult1 };
+  const obj9 = { variant: "body-md/medium", color: "text-default", style: tmp.subtitle, children: stringResult1 };
   const Text2 = tmp2(tmp3[12]).Text;
   const intl2 = tmp2(tmp3[13]).intl;
   if (isPremiumResult) {

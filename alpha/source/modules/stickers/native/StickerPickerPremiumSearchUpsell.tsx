@@ -1,10 +1,10 @@
-// Module ID: 10431
-// Function ID: 10432
+// Module ID: 10479
+// Function ID: 10480
 // Name: StickerPickerPremiumSearchUpsell
-// Dependencies: [19, 1072, 1387, 21, 5141, 575, 7446, 9917, 10104, 5200, 10161, 1252, 2176, 10162, 1113, 9656, 2]
+// Dependencies: [19, 1072, 1387, 21, 5141, 575, 7462, 9935, 10152, 5200, 10209, 1252, 2176, 10210, 1113, 9675, 2]
 // Exports: default
 
-// Module 10431 (StickerPickerPremiumSearchUpsell)
+// Module 10479 (StickerPickerPremiumSearchUpsell)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

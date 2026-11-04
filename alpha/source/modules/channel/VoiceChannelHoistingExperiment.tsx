@@ -1,12 +1,12 @@
-// Module ID: 19584
-// Function ID: 19585
+// Module ID: 19688
+// Function ID: 19689
 // Name: VoiceChannelHoistingExperiment
-// Dependencies: [5362, 5359, 2]
+// Dependencies: [5363, 5360, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 19584 (VoiceChannelHoistingExperiment)
-import ExperimentConstants from "ExperimentConstants" /* 5362 */;
-import createExperiment from "module_5359" /* 5359 */;
+// Module 19688 (VoiceChannelHoistingExperiment)
+import ExperimentConstants from "ExperimentConstants" /* 5363 */;
+import createExperiment from "module_5360" /* 5360 */;
 import size from "module_2" /* 2 */;
 
 let items;

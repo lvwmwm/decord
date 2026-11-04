@@ -1,17 +1,17 @@
-// Module ID: 19666
-// Function ID: 19667
+// Module ID: 19771
+// Function ID: 19772
 // Name: InteractionIframeModal
-// Dependencies: [32, 19, 17, 1362, 21, 5141, 575, 19654, 11936, 5730, 9027, 19667, 6142, 7106, 1113, 10898, 5747, 9330, 19259, 6968, 5832, 11977, 2]
+// Dependencies: [32, 19, 17, 1362, 21, 5141, 575, 19759, 11995, 5743, 9044, 19772, 6157, 7121, 1113, 10946, 5761, 9347, 19363, 6983, 5846, 12036, 2]
 // Exports: default
 
-// Module 19666 (InteractionIframeModal)
+// Module 19771 (InteractionIframeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import makeIframeIdDefault from "makeIframeId" /* 11936 */;
-import closeIFrameModalDefault from "closeIFrameModal" /* 19667 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import makeIframeIdDefault from "makeIframeId" /* 11995 */;
+import closeIFrameModalDefault from "closeIFrameModal" /* 19772 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -86,7 +86,7 @@ export default function InteractionIframeModal(application) {
   const obj6 = { style: tmp.headerTitleContainer, children: items4 };
   items4 = [, ];
   const obj5 = { style: tmp.headerCenterContainer, children: items5 };
-  const obj7 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: application.name };
+  const obj7 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", children: application.name };
   items4[0] = closure_7(id2(onDisallowedNavigation[16]).Text, obj7);
   const bot = application.bot;
   const obj8 = { type: BotTagTypes.BOT, verified, style: tmp.botTag };
@@ -96,7 +96,7 @@ export default function InteractionIframeModal(application) {
     verified = bot.verified;
   }
   items4[1] = closure_7(tmp15, obj8);
-  items5 = [closure_8(View, obj6), closure_7(id2(tmp3[16]).Text, { variant: "text-xs/medium", color: "interactive-text-default", children: title })];
+  items5 = [closure_8(View, obj6), closure_7(id2(tmp3[16]).Text, { variant: "body-xs/medium", color: "interactive-text-default", children: title })];
   items3[1] = closure_8(View, obj5);
   const obj9 = { style: tmp.spacerView };
   items3[2] = closure_7(View, obj9);

@@ -1,71 +1,103 @@
 // Module ID: 5257
 // Function ID: 5258
-// Dependencies: [32, 19, 5239, 5252, 5247]
-// Exports: useRiveColor
+// Dependencies: [32, 19, 5252]
+// Exports: useRiveTrigger
 
 // Module 5257
-import react from "react" /* 19 */;
-import react2 from "react" /* 5239 */;
-import _mod5252 from "module_5252" /* 5252 */;
+import react2 from "react" /* 5252 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
+import react from "react" /* 19 */;
 
-let tmp;
-const RiveColor2 = tmp(5247);
-react.useCallback;
-const f34502 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
+let c3;
+let closure_4;
+let hasOwnProperty;
+let metroRequire;
+({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
 
-export function useRiveColor(FillColor, instance) {
-  let closure_0;
-  let tmp10;
-  let tmp5;
-  let tmp6;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(8);
-  const obj2 = _mod5252;
-  const tmp4 = _slicedToArray(obj2.useRiveProperty(instance, FillColor, f34502), 3);
-  [tmp5, tmp6] = tmp4;
-  require = tmp6;
-  if (cResult[0] !== tmp5) {
-    let fromIntResult;
-    if (undefined !== tmp5) {
-      let RiveColor = RiveColor2.RiveColor;
-      fromIntResult = RiveColor.fromInt(tmp5);
+export function useRiveTrigger(stateChange, instance, arg2) {
+  let first;
+  let items4;
+  let closure_0 = stateChange;
+  let closure_1 = instance;
+  let obj = arg2;
+  if (arg2 == null) {
+    obj = {};
+  }
+  const onTrigger = obj.onTrigger;
+  let tmp = hasOwnProperty(undefined);
+  let closure_2 = tmp;
+  const tmp2 = hasOwnProperty(false);
+  let c3 = tmp2;
+  const tmp3 = hasOwnProperty(onTrigger);
+  let closure_4 = tmp3;
+  tmp3.current = onTrigger;
+  const items = [instance, stateChange];
+  const obj2 = react2;
+  const disposableMemo = obj2.useDisposableMemo(() => {
+    if (closure_1) {
+      return closure_1.triggerProperty(closure_0);
     }
-    cResult[0] = tmp5;
-    cResult[1] = fromIntResult;
-    tmp8 = fromIntResult;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== tmp6) {
-    const fn = function p(str) {
-      let fromHexStringResult = str;
-      if (typeof str === "string") {
-        const RiveColor = RiveColor2.RiveColor;
-        fromHexStringResult = RiveColor.fromHexString(str);
-      }
-      tmp6(fromHexStringResult.toInt());
-    };
-    cResult[2] = tmp6;
-    cResult[3] = fn;
-    tmp10 = fn;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === tmp4[2]) {
-    if (cResult[5] === tmp10) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      return tmp11;
+  }, (dispose) => {
+    let disposeResult;
+    if (dispose != null) {
+      disposeResult = dispose.dispose();
     }
+    return disposeResult;
+  }, items, tmp);
+  if (tmp.current) {
+    tmp2.current = true;
   }
-  const obj3 = { value: tmp8, setValue: tmp10, error: tmp4[2] };
-  cResult[4] = tmp4[2];
-  cResult[5] = tmp10;
-  cResult[6] = tmp8;
-  cResult[7] = obj3;
-  tmp11 = obj3;
+  [first, metroRequire] = metroRequire(null);
+  const items1 = [stateChange, instance];
+  React3(() => {
+    closure_6(null);
+  }, items1);
+  const items2 = [instance, disposableMemo, stateChange];
+  React3(function() {
+    const tmp = closure_1 && !disposableMemo;
+    if (tmp) {
+      const _Error = Error;
+      const _HermesInternal = HermesInternal;
+      const self = this;
+      const self2 = this;
+      const error = new Error("Property \"" + closure_0 + "\" not found in the ViewModel instance");
+      closure_6(error);
+    }
+  }, items2);
+  const items3 = [disposableMemo];
+  React3(() => {
+    if (disposableMemo) {
+      closure_0 = obj.addListener(() => {
+        const current = ref.current;
+        if (current != null) {
+          current();
+        }
+      });
+      return () => {
+        try {
+          closure_0();
+        } catch (err) {
+        }
+      };
+    }
+  }, items3);
+  const obj3 = {
+    trigger: _false(() => {
+      if (ref.current) {
+        const current = ref.current;
+        current.trigger();
+      } else {
+        const _console = console;
+        const _HermesInternal = HermesInternal;
+        if (ref2.current) {
+          warn(concat(closure_0, "') called after dispose. The property has been cleaned up \u2014 this is likely a stale closure from an async callback that fired after unmount."));
+        } else {
+          warn(concat(closure_0, "') called but the property is not available yet. The viewModelInstance may still be loading."));
+        }
+      }
+    }, items4),
+    error: first
+  };
+  items4 = [stateChange];
+  return obj3;
 }

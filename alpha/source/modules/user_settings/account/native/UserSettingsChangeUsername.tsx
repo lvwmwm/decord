@@ -1,14 +1,14 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16840
+// Function ID: 16841
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5141, 575, 6676, 16749, 5747, 1113, 1499, 504, 2176, 16750, 7282, 7273, 1282, 1500, 9943, 7208, 7288, 7230, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5141, 575, 6691, 16841, 5761, 1113, 1499, 504, 2176, 16842, 7298, 7289, 1282, 1500, 9961, 7223, 7304, 7250, 2]
 // Exports: default
 
-// Module 16748 (UserSettingsChangeUsername)
+// Module 16840 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -32,27 +32,27 @@ function UsernameStatusMessage(showHint) {
   let P2;
   showHint = showHint.showHint;
   const usernameStatus = showHint.usernameStatus;
-  const str = showHint(6676);
+  const str = showHint(6691);
   const match = str.match(usernameStatus);
-  let obj = { type: showHint(16749).NameValidationState.ERROR, message: P.select() };
+  let obj = { type: showHint(16841).NameValidationState.ERROR, message: P.select() };
   const _with = match.with;
-  P = showHint(6676).P;
+  P = showHint(6691).P;
   const _withResult = _with(obj, (children) => {
-    const obj = { variant: "text-xs/medium", color: "text-feedback-critical", children };
+    const obj = { variant: "body-xs/medium", color: "text-feedback-critical", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   const _with2 = _withResult.with;
-  const obj2 = { type: showHint(16749).NameValidationState.AVAILABLE, message: P2.select() };
-  P2 = showHint(6676).P;
+  const obj2 = { type: showHint(16841).NameValidationState.AVAILABLE, message: P2.select() };
+  P2 = showHint(6691).P;
   const _with2Result = _with2(obj2, (children) => {
-    const obj = { variant: "text-xs/medium", color: "text-feedback-positive", children };
+    const obj = { variant: "body-xs/medium", color: "text-feedback-positive", children };
     return closure_1_11(showHint(dependencyMap[11]).Text, obj);
   });
   return _with2Result.otherwise(() => {
     let intl;
     let tmp = null;
     if (showHint) {
-      const obj = { variant: "text-xs/medium", color: "text-default", children: intl.string(intl3.t.z7c4bP) };
+      const obj = { variant: "body-xs/medium", color: "text-default", children: intl.string(intl3.t.z7c4bP) };
       const Text = Text_Text.Text;
       intl = intl3.intl;
       tmp = unpackModuleId(Text, obj);

@@ -1,15 +1,15 @@
-// Module ID: 10012
-// Function ID: 10013
+// Module ID: 10060
+// Function ID: 10061
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 5775, 21, 5141, 575, 1652, 5377, 2]
+// Dependencies: [19, 17, 5789, 21, 5141, 575, 1652, 5378, 2]
 // Exports: default
 
-// Module 10012 (ConversationPreviewSkeleton)
+// Module 10060 (ConversationPreviewSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import ConversationConstants from "ConversationConstants" /* 5775 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import ConversationConstants from "ConversationConstants" /* 5789 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

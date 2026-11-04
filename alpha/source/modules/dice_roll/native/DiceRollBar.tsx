@@ -1,15 +1,15 @@
-// Module ID: 14073
-// Function ID: 14074
+// Module ID: 14159
+// Function ID: 14160
 // Name: DiceRollBar
-// Dependencies: [19, 17, 5142, 13855, 21, 5141, 575, 504, 1652, 5377, 1187, 14074, 9657, 5747, 2]
+// Dependencies: [19, 17, 5142, 13941, 21, 5141, 575, 504, 1652, 5378, 1187, 14160, 9676, 5761, 2]
 // Exports: default
 
-// Module 14073 (DiceRollBar)
+// Module 14159 (DiceRollBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import DiceRollStore from "DiceRollStore" /* 13855 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import DiceRollStore from "DiceRollStore" /* 13941 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -165,7 +165,7 @@ export default function DiceRollBar(channelId) {
     const obj7 = { style: tmp24, children: closure_7(stateFromStores(sharedValue1[12]).DiceIcon, { size: "md" }) };
     const View2 = sharedValue(tmp4[8]).View;
     items8 = [closure_7(View2, obj7), ];
-    const obj8 = { variant: "text-sm/normal", color: "text-default", children: barText };
+    const obj8 = { variant: "body-sm/normal", color: "text-default", children: barText };
     items8[1] = closure_7(stateFromStores(sharedValue1[13]).Text, obj8);
     return closure_7(View, obj5);
   }

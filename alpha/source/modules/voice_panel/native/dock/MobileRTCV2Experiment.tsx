@@ -1,10 +1,10 @@
-// Module ID: 14352
-// Function ID: 14353
+// Module ID: 14432
+// Function ID: 14433
 // Name: MobileRTCV2Experiment
 // Dependencies: [1449, 2]
 // Exports: useIsMobileRTCV2Enabled
 
-// Module 14352 (MobileRTCV2Experiment)
+// Module 14432 (MobileRTCV2Experiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

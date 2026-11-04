@@ -1,19 +1,19 @@
-// Module ID: 19905
-// Function ID: 19906
+// Module ID: 20021
+// Function ID: 20022
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 5352, 1072, 21, 5141, 575, 504, 5356, 14225, 14195, 5207, 5710, 6147, 14228, 5747, 1113, 5754, 18423, 2]
+// Dependencies: [19, 17, 5353, 1072, 21, 5141, 575, 504, 5357, 14311, 14281, 5207, 5723, 6162, 14314, 5761, 1113, 5768, 18517, 2]
 // Exports: default
 
-// Module 19905 (GuildSettingsServerTagUpsellCard)
+// Module 20021 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Powerups from "Powerups" /* 5356 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14195 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14225 */;
+import Powerups from "Powerups" /* 5357 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14281 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14311 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5352 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5353 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -82,29 +82,29 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   const obj6 = { style: tmp.backgroundLayer, colors: colors2, start, end, pointerEvents: "none" };
   items4[2] = closure_7(LinearGradientDefault, obj6);
   const obj7 = { spacing: nativeDefault.space.PX_16, children: items5 };
-  const Stack = guildId(6147).Stack;
+  const Stack = guildId(6162).Stack;
   const obj8 = { style: tmp.imageContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp8Result };
   tmp8Result = null != tmp6;
   if (tmp8Result) {
     const obj9 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp8Result = tmp8(tmp5(14228), obj9);
+    tmp8Result = tmp8(tmp5(14314), obj9);
   }
   items5 = [closure_7(closure_4, obj8), , ];
   const obj10 = { spacing: nativeDefault.space.PX_8, style: tmp.textBlock, children: items6 };
-  const Stack2 = tmp2(6147).Stack;
+  const Stack2 = tmp2(6162).Stack;
   const obj11 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText, children: intl.string(tmp2(1113).t["2QmKZ2"]) };
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
   items6 = [closure_7(Text, obj11), ];
-  const obj12 = { variant: "text-sm/medium", color: "text-subtle", style: items7, children: intl2.string(tmp2(1113).t.Tg0fDm) };
+  const obj12 = { variant: "body-sm/medium", color: "text-subtle", style: items7, children: intl2.string(tmp2(1113).t.Tg0fDm) };
   items7 = [, ];
   ({ centerText: arr8[0], body: arr8[1] } = tmp);
-  const Text2 = tmp2(5747).Text;
+  const Text2 = tmp2(5761).Text;
   intl2 = tmp2(1113).intl;
   items6[1] = closure_7(Text2, obj12);
   items5[1] = closure_8(Stack2, obj10);
-  const obj13 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1113).t.kMRDWs), icon: closure_7(tmp2(18423).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
-  const Button = tmp2(5754).Button;
+  const obj13 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1113).t.kMRDWs), icon: closure_7(tmp2(18517).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
+  const Button = tmp2(5768).Button;
   intl3 = tmp2(1113).intl;
   items5[2] = closure_7(Button, obj13);
   items4[3] = closure_8(Stack, obj7);

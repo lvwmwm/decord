@@ -1,21 +1,21 @@
-// Module ID: 18388
-// Function ID: 18389
+// Module ID: 18482
+// Function ID: 18483
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 6833, 4995, 6834, 4990, 5073, 5887, 18389, 4996, 1083, 18390, 504, 9218, 18391, 6885, 6879, 2]
+// Dependencies: [19, 6848, 4995, 6849, 4990, 5073, 5901, 18483, 4996, 1083, 18484, 504, 9235, 18485, 6900, 6894, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 18388 (useGuildHasLiveChannelNotice)
+// Module 18482 (useGuildHasLiveChannelNotice)
 import Constants from "Constants" /* 1083 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6879 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6894 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6833 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6848 */;
 import StageInstanceStore from "StageInstanceStore" /* 4995 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5887 */;
-import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 18389 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5901 */;
+import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 18483 */;
 import size from "module_2" /* 2 */;
 
 let closure_11 = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;

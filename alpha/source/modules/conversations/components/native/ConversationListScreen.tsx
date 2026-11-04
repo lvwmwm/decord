@@ -1,22 +1,22 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10058
+// Function ID: 10059
 // Name: ConversationListScreen
-// Dependencies: [5, 32, 19, 17, 7891, 5775, 21, 5141, 575, 10011, 5747, 1113, 1502, 1627, 9979, 504, 11, 9980, 9983, 7414, 2]
+// Dependencies: [5, 32, 19, 17, 7907, 5789, 21, 5141, 575, 10059, 5761, 1113, 1502, 1627, 10027, 504, 11, 10028, 10031, 7430, 2]
 // Exports: default
 
-// Module 10010 (ConversationListScreen)
+// Module 10058 (ConversationListScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9983 */;
-import ConversationListItemDefault from "ConversationListItem" /* 10011 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10031 */;
+import ConversationListItemDefault from "ConversationListItem" /* 10059 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7891 */;
-import ConversationConstants from "ConversationConstants" /* 5775 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7907 */;
+import ConversationConstants from "ConversationConstants" /* 5789 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ obj2 = { paddingVertical: nativeDefault.space.PX_24, paddingHorizontal: nativeDe
 let closure_15 = createStyles.createStyles(obj);
 const ListEmptyComponent = react.memo(function EmptyComponent() {
   let intl;
-  ({ variant: "text-md/normal", color: "text-muted", children: intl.string(intl2.t.LJuFRG) });
+  ({ variant: "body-md/normal", color: "text-muted", children: intl.string(intl2.t.LJuFRG) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <metroImportDefault style={closure_15().empty}>{null}</metroImportDefault>;
@@ -80,7 +80,7 @@ export default function ConversationListScreen() {
   const bottom = guildId(1627)().bottom;
   let tmp3 = closure_14(bottom);
   dependencyMap = tmp3;
-  let obj2 = channelId(9979);
+  let obj2 = channelId(10027);
   const conversationBackoffRef = obj2.useConversationBackoffRef();
   let obj3 = react;
   const tmp5 = first(react.useState(false), 2);
@@ -260,7 +260,7 @@ export default function ConversationListScreen() {
   }, items9);
   obj8 = { data: memo, renderItem, keyExtractor, contentContainerStyle: tmp3.content, scrollIndicatorInsets: { bottom }, onEndReached: tmp16, ListEmptyComponent, ListFooterComponent: memo1, onViewableItemsChanged: callback1, viewabilityConfig };
   tmp16 = undefined;
-  FlashList = tmp(7414).FlashList;
+  FlashList = tmp(7430).FlashList;
   const tmp15 = memo;
   if (stateFromStores) {
     tmp16 = callback;

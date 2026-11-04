@@ -1,28 +1,28 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17973
+// Function ID: 17974
 // Name: InappropriateConversationModal
-// Dependencies: [32, 19, 17, 1385, 11393, 21, 5141, 575, 504, 5195, 1499, 7191, 5747, 1113, 5754, 11406, 17878, 11412, 17879, 7124, 11436, 6864, 11407, 7290, 2]
+// Dependencies: [32, 19, 17, 1385, 11443, 21, 5141, 575, 504, 5195, 1499, 7206, 5761, 1113, 5768, 11456, 17974, 11462, 17975, 7139, 11486, 6879, 11457, 7306, 2]
 // Exports: default
 
-// Module 17877 (InappropriateConversationModal)
+// Module 17973 (InappropriateConversationModal)
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1499 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 7191 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11406 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11407 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11412 */;
-import TakeActionScreenDefault from "TakeActionScreen" /* 17878 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 7206 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11456 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11457 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11462 */;
+import TakeActionScreenDefault from "TakeActionScreen" /* 17974 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 11393 */;
+import Constants from "Constants" /* 11443 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ function IntroScreen(arg0) {
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items2 = [closure_13(Text, obj6), ];
-  const obj7 = { variant: "text-md/medium", style: tmp.takeoverDescription, children: intl2.format(intl5.t.q2QrTY, { username: name }) };
+  const obj7 = { variant: "body-md/medium", style: tmp.takeoverDescription, children: intl2.format(intl5.t.q2QrTY, { username: name }) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items2[1] = closure_13(Text2, obj7);
@@ -120,7 +120,7 @@ function TakeActionScreen(arg0) {
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [map1(Text, obj3), ];
-  const obj4 = { variant: "text-md/medium", style: tmp.takeoverDescription, children: intl2.string(intl5.t.S0XtKF) };
+  const obj4 = { variant: "body-md/medium", style: tmp.takeoverDescription, children: intl2.string(intl5.t.S0XtKF) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items[1] = map1(Text2, obj4);
@@ -140,7 +140,7 @@ function SafetyTipsScreen() {
     showHeader: true,
     description: intl.string(intl5.t.DJMZX6),
     safetyTips: arr.map((children, index) => {
-      const obj = { variant: "text-sm/medium", children };
+      const obj = { variant: "body-sm/medium", children };
       return closure_1_13(Text_Text.Text, obj, index);
     })
   };
@@ -160,14 +160,14 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = closure_15();
   const obj = { style: tmp.container, children: items };
-  items = [closure_13(trackAnalyticsEvent(17879).SafetyChatSpotIllustration, {}), , ];
+  items = [closure_13(trackAnalyticsEvent(17975).SafetyChatSpotIllustration, {}), , ];
   const obj2 = { style: tmp.warningText, children: items1 };
   const obj3 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: intl.string(trackAnalyticsEvent(1113).t.NUMAsF) };
-  const Text = trackAnalyticsEvent(5747).Text;
+  const Text = trackAnalyticsEvent(5761).Text;
   intl = trackAnalyticsEvent(1113).intl;
   items1 = [closure_13(Text, obj3), ];
-  const obj4 = { variant: "text-md/medium", style: tmp.takeoverDescription, children: intl2.string(trackAnalyticsEvent(1113).t.uicS5l) };
-  const Text2 = trackAnalyticsEvent(5747).Text;
+  const obj4 = { variant: "body-md/medium", style: tmp.takeoverDescription, children: intl2.string(trackAnalyticsEvent(1113).t.uicS5l) };
+  const Text2 = trackAnalyticsEvent(5761).Text;
   intl2 = trackAnalyticsEvent(1113).intl;
   items1[1] = closure_13(Text2, obj4);
   items[1] = closure_14(closure_7, obj2);
@@ -182,7 +182,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
       trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_CTL_SMS);
     }
   };
-  const Button = trackAnalyticsEvent(5754).Button;
+  const Button = trackAnalyticsEvent(5768).Button;
   intl3 = trackAnalyticsEvent(1113).intl;
   items2 = [closure_13(Button, obj6), ];
   const obj7 = {
@@ -195,7 +195,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
       trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_CTL_WEB);
     }
   };
-  const Button2 = trackAnalyticsEvent(5754).Button;
+  const Button2 = trackAnalyticsEvent(5768).Button;
   intl4 = trackAnalyticsEvent(1113).intl;
   items2[1] = closure_13(Button2, obj7);
   items[2] = closure_14(closure_7, obj5);

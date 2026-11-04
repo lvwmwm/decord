@@ -1,10 +1,10 @@
-// Module ID: 12120
-// Function ID: 12121
+// Module ID: 12179
+// Function ID: 12180
 // Name: GameConsoleAlertUtils
-// Dependencies: [2, 12121]
+// Dependencies: [2, 12180]
 
-// Module 12120 (GameConsoleAlertUtils)
-import game_console_GameConsoleAlertUtils from "game_console/GameConsoleAlertUtils" /* 12121 */;
+// Module 12179 (GameConsoleAlertUtils)
+import game_console_GameConsoleAlertUtils from "game_console/GameConsoleAlertUtils" /* 12180 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_console/GameConsoleAlertUtils.tsx");

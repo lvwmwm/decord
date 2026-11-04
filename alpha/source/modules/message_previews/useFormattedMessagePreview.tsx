@@ -1,17 +1,17 @@
-// Module ID: 11154
-// Function ID: 11155
+// Module ID: 11202
+// Function ID: 11203
 // Name: useFormattedMessagePreview
-// Dependencies: [502, 5083, 1385, 1072, 1088, 504, 8562, 6558, 1113, 6171, 5770, 12, 8567, 8662, 2]
+// Dependencies: [502, 5083, 1385, 1072, 1088, 504, 8579, 6573, 1113, 6186, 5784, 12, 8584, 8679, 2]
 // Exports: isMessageContentPreviewable, useFormattedMessagePreview
 
-// Module 11154 (useFormattedMessagePreview)
+// Module 11202 (useFormattedMessagePreview)
 import Constants from "Constants" /* 1072 */;
 import MessageTypes from "MessageTypes" /* 1088 */;
 import intl30 from "intl" /* 1113 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5770 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 6558 */;
-import useIsCallActiveDefault from "useIsCallActive" /* 8562 */;
-import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8567 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5784 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 6573 */;
+import useIsCallActiveDefault from "useIsCallActive" /* 8579 */;
+import SystemMessageUtilsDefault from "SystemMessageUtils" /* 8584 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -407,7 +407,7 @@ function formatMessagePreview(type, isBlocked) {
               } else if (type.type === tmp4(1088).MessageTypes.VOICE_SESSION) {
                 const obj57 = { type: "text", text: tmp4Result.getVoiceSessionMessageContent(type) };
                 tmp21 = obj57;
-                tmp4Result = tmp4(8662);
+                tmp4Result = tmp4(8679);
               }
             }
           }
@@ -476,12 +476,12 @@ export function useFormattedMessagePreview(message, channel) {
     }
     return user;
   });
-  const tmpResult3 = tmp(6558);
+  const tmpResult3 = tmp(6573);
   const nick2 = tmpResult3.useNullableUserAuthor(stateFromStores1, channel).nick;
   const obj3 = { message, channel, currentUserId: stateFromStores, authorNick: stringResult, actorNick: nick1, otherUser: stateFromStores1, otherUserNick: nick2, isBlocked, isIgnored, isCallActive: tmp4 };
   nick1 = undefined;
   const tmp8 = formatMessagePreview;
-  const tmpResult4 = tmp(6558);
+  const tmpResult4 = tmp(6573);
   if (null != message.actor) {
     nick1 = tmpResult4.useNullableUserAuthor(message.actor, channel).nick;
   }

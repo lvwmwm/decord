@@ -1,52 +1,74 @@
-// Module ID: 15316
-// Function ID: 15317
+// Module ID: 15403
+// Function ID: 15404
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5141, 575, 5747, 1113, 8303, 7109, 15317, 5829, 2]
+// Dependencies: [17, 21, 5141, 575, 5761, 1113, 8502, 15404, 5843, 2]
 // Exports: default
 
-// Module 15316 (InAppReportsExternalLinkElement)
+// Module 15403 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LinkingDefault from "Linking" /* 5829 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 8502 */;
+import LinkExternalMediumIcon2 from "LinkExternalMediumIcon" /* 15404 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
-import size from "module_2" /* 2 */;
+import createStyles_mod from "createStyles" /* 5141 */;
+import size_mod from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
+let obj3;
+let size;
 function ExternalLinkItem(data) {
-  let TableRowIcon;
+  let LinkExternalMediumIcon;
+  let is_localized;
+  let link_description;
+  let link_text;
   let obj2;
+  let obj3;
+  let tmp3Result;
   data = data.data;
-  const url = data.url;
-  let tmp3 = null;
-  if (data.is_localized) {
+  ({ url: require, link_description } = data);
+  ({ link_text, is_localized } = data);
+  const tmp = closure_6();
+  let tmp3Result2 = null;
+  if (is_localized) {
     let obj = {
-      label: tmp,
-      subLabel: tmp2,
-      trailing: closure_4(TableRowIcon, obj2),
+      label: link_text,
+      trailing: closure_4(View, obj2),
       onPress: function onLinkPress() {
           const obj = LinkingDefault;
-          obj.openURL(url);
+          obj.openURL(require);
         },
-      arrow: false,
-      accessibilityRole: "link"
+      accessibilityRole: "link",
+      children: tmp3Result
     };
-    const RowButton = url(8303).RowButton;
-    obj2 = { IconComponent: url(15317).LinkExternalMediumIcon };
-    TableRowIcon = url(7109).TableRowIcon;
-    tmp3 = closure_4(RowButton, obj);
+    obj2 = { style: tmp.linkIcon, children: closure_4(LinkExternalMediumIcon, obj3) };
+    obj3 = { size: "sm", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
+    const tmp6 = InAppReportsOptionRowDefault;
+    LinkExternalMediumIcon = LinkExternalMediumIcon2.LinkExternalMediumIcon;
+    tmp3Result = null != link_description;
+    const tmp8 = require;
+    if (tmp3Result) {
+      const obj4 = { style: tmp.linkDescription, variant: "body-xs/medium", color: "text-subtle", children: link_description };
+      tmp3Result = tmp3(tmp8(5761).Text, obj4);
+    }
+    tmp3Result2 = tmp3(tmp6, obj);
   }
-  return tmp3;
+  return tmp3Result2;
 }
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let obj = { linksContainer: obj2 };
+let createStyles = createStyles_mod;
+let obj = { linksContainer: obj2, linkIcon: size, linkDescription: obj3 };
 obj2 = { flex: 1, alignSelf: "stretch", paddingHorizontal: 16, gap: nativeDefault.space.PX_8 };
-let closure_6 = createStyles.createStyles(obj);
+createStyles = createStyles.createStyles;
+size = { width: nativeDefault.space.PX_24, height: nativeDefault.space.PX_24, alignItems: "center", justifyContent: "center" };
+obj3 = { marginTop: nativeDefault.space.PX_4 };
+let closure_6 = createStyles(obj);
+size = size_mod;
 const result = size.fileFinishedImporting("modules/in_app_reports/native/components/InAppReportsExternalLinkElement.tsx");
 
 export default function ExternalLinksElement(elements) {

@@ -1,13 +1,13 @@
-// Module ID: 15301
-// Function ID: 15302
+// Module ID: 15388
+// Function ID: 15389
 // Name: InAppReportsChannelPreview
-// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 5138, 5747, 1113, 7083, 2]
+// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 5138, 5761, 1113, 7098, 2]
 // Exports: default
 
-// Module 15301 (InAppReportsChannelPreview)
+// Module 15388 (InAppReportsChannelPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildIconDefault from "GuildIcon" /* 7083 */;
+import GuildIconDefault from "GuildIcon" /* 7098 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
@@ -43,9 +43,9 @@ export default function ChannelPreview(stageInstance) {
     if (null != stageInstance) {
       const obj2 = { style: tmp.container, children: items1 };
       const tmp2Result = stageInstance(5138);
-      const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/semibold", children: intl.string(stageInstance(1113).t.InbJ8x) };
+      const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "body-xs/semibold", children: intl.string(stageInstance(1113).t.InbJ8x) };
       const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-      const Text = tmp2(5747).Text;
+      const Text = tmp2(5761).Text;
       intl = tmp2(1113).intl;
       items1 = [closure_5(Text, obj3), ];
       const obj4 = { style: items2, children: items4 };
@@ -53,14 +53,14 @@ export default function ChannelPreview(stageInstance) {
       const obj5 = { borderColor: hexWithOpacityResult };
       items2[1] = obj5;
       const obj6 = { style: tmp.guildInfo, children: items3 };
-      const obj7 = { guild: stateFromStores, size: stageInstance(7083).GuildIconSizes.XXSMALL, selected: false };
+      const obj7 = { guild: stateFromStores, size: stageInstance(7098).GuildIconSizes.XXSMALL, selected: false };
       const tmp10 = GuildIconDefault;
       items3 = [closure_5(tmp10, obj7), ];
-      const obj8 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-      items3[1] = closure_5(stageInstance(5747).Text, obj8);
+      const obj8 = { style: tmp.guildName, variant: "body-sm/medium", color: "text-default", children: stateFromStores.name };
+      items3[1] = closure_5(stageInstance(5761).Text, obj8);
       items4 = [closure_6(View, obj6), ];
-      const obj9 = { style: tmp.topic, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stageInstance.topic };
-      items4[1] = closure_5(stageInstance(5747).Text, obj9);
+      const obj9 = { style: tmp.topic, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: stageInstance.topic };
+      items4[1] = closure_5(stageInstance(5761).Text, obj9);
       items1[1] = closure_6(View, obj4);
       return closure_6(View, obj2);
     }

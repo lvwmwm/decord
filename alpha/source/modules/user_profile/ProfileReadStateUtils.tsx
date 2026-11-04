@@ -1,11 +1,11 @@
-// Module ID: 7907
-// Function ID: 7908
+// Module ID: 7923
+// Function ID: 7924
 // Name: ProfileReadStateUtils
-// Dependencies: [7908, 2]
+// Dependencies: [7924, 2]
 // Exports: getWishlistUpdatedAtTimestamp, hasWishlistBeenUpdatedSinceAcked, isWishlistItemNew, mergeProfileReadState, parseProfileReadState, shouldAckWishlist
 
-// Module 7907 (ProfileReadStateUtils)
-import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7908 */;
+// Module 7923 (ProfileReadStateUtils)
+import ProfileReadStateSection from "ProfileReadStateSection" /* 7924 */;
 import size from "module_2" /* 2 */;
 
 function parseTimestamp(arg0) {
@@ -22,27 +22,26 @@ function parseTimestamp(arg0) {
     return tmp3;
   }
 }
-const ProfileReadStateSection = ProfileReadStateConstants.ProfileReadStateSection;
 const result = size.fileFinishedImporting("modules/user_profile/ProfileReadStateUtils.tsx");
 
 export function parseProfileReadState(body) {
   if (null != body) {
     const obj = {};
     const _Object = Object;
-    const values = Object.values(ProfileReadStateSection);
+    const values = Object.values(ProfileReadStateSection.ProfileReadStateSection);
     const iter = values[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tmp10 = body.sections[nextResult];
+      let tmp11 = body.sections[nextResult];
       let acked_at;
-      let tmp8 = nextResult;
-      let tmp9 = parseTimestamp;
-      if (tmp10 != null) {
-        acked_at = tmp10.acked_at;
+      let tmp9 = nextResult;
+      let tmp10 = parseTimestamp;
+      if (tmp11 != null) {
+        acked_at = tmp11.acked_at;
       }
-      let tmp9Result = tmp9(acked_at);
-      if (null != tmp9Result) {
-        obj[tmp8] = tmp13;
+      let tmp10Result = tmp10(acked_at);
+      if (null != tmp10Result) {
+        obj[tmp9] = tmp14;
       }
       continue;
     }
@@ -110,18 +109,18 @@ export function mergeProfileReadState(profileReadState, ackedAt) {
       const obj = {};
       const merged = Object.assign(profileReadState);
       const _Object = Object;
-      const values = Object.values(ProfileReadStateSection);
-      for (const item10018 of values) {
-        let tmp10 = item10018;
-        let tmp11 = tmp[item10018];
-        let tmp12 = tmp11;
-        let tmp13 = null != tmp11;
-        if (tmp13) {
-          let num = obj[tmp10] ?? 0;
-          tmp13 = tmp12 > num;
+      const values = Object.values(ProfileReadStateSection.ProfileReadStateSection);
+      for (const item10007 of values) {
+        let tmp3 = item10007;
+        let tmp4 = tmp[item10007];
+        let tmp5 = tmp4;
+        let tmp6 = null != tmp4;
+        if (tmp6) {
+          let num = obj[tmp3] ?? 0;
+          tmp6 = tmp5 > num;
         }
-        if (tmp13) {
-          obj[tmp10] = tmp12;
+        if (tmp6) {
+          obj[tmp3] = tmp5;
         }
         continue;
       }
@@ -137,10 +136,11 @@ export function shouldAckWishlist(wishlistSettings, profileReadState) {
   if (null == profileReadState) {
     return false;
   } else {
-    let tmp8 = null == tmp10;
+    const tmp11 = profileReadState[ProfileReadStateSection.ProfileReadStateSection.WISHLIST];
+    let tmp8 = null == tmp11;
     if (!tmp8) {
       let flag = false;
-      if (null != profileReadState[ProfileReadStateSection.WISHLIST]) {
+      if (null != tmp11) {
         let updated_at;
         if (wishlistSettings != null) {
           updated_at = wishlistSettings.updated_at;
@@ -156,7 +156,7 @@ export function shouldAckWishlist(wishlistSettings, profileReadState) {
           }
           tmp3 = tmp6;
         }
-        flag = null != tmp3 && tmp3 > profileReadState[ProfileReadStateSection.WISHLIST];
+        flag = null != tmp3 && tmp3 > tmp11;
       }
       tmp8 = flag;
     }

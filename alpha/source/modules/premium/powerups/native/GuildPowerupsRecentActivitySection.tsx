@@ -1,19 +1,19 @@
-// Module ID: 14284
-// Function ID: 14285
+// Module ID: 14370
+// Function ID: 14371
 // Name: GuildPowerupsRecentActivitySection
-// Dependencies: [17, 5142, 21, 5141, 575, 14285, 4963, 504, 8543, 10051, 14287, 14289, 1187, 5747, 14291, 1113, 2]
+// Dependencies: [17, 5142, 21, 5141, 575, 14371, 4963, 504, 8560, 10099, 14373, 14375, 1187, 5761, 14377, 1113, 2]
 // Exports: default
 
-// Module 14284 (GuildPowerupsRecentActivitySection)
+// Module 14370 (GuildPowerupsRecentActivitySection)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import DateUtils from "DateUtils" /* 4963 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8543 */;
-import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 14285 */;
-import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 14291 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8560 */;
+import useMaybeGetSortedBoosts from "useMaybeGetSortedBoosts" /* 14371 */;
+import getBoostRowMessageTextDefault from "getBoostRowMessageText" /* 14377 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -58,11 +58,11 @@ function GuildPowerupsRecentActivityRow(row) {
     const tmp2Result2 = enhanced_role_colors_EnhancedRoleColorUtils;
     const isRoleStyleAndRoleColorsEligibleForERC = tmp2Result2.useIsRoleStyleAndRoleColorsEligibleForERC(boost.guildId, boost.userId, stateFromStores, processColorStringsArray);
     if ("gave" === phase) {
-      BoostGemSlashIcon = tmp2(10051).BoostGemIcon;
+      BoostGemSlashIcon = tmp2(10099).BoostGemIcon;
     } else if ("expiring" === phase) {
-      BoostGemSlashIcon = tmp2(14287).BoostTier1Icon;
+      BoostGemSlashIcon = tmp2(14373).BoostTier1Icon;
     } else {
-      BoostGemSlashIcon = tmp2(14289).BoostGemSlashIcon;
+      BoostGemSlashIcon = tmp2(14375).BoostGemSlashIcon;
     }
     const obj4 = { style: tmp.boostRowContainer, children: items1 };
     if ("gave" === phase) {
@@ -79,20 +79,20 @@ function GuildPowerupsRecentActivityRow(row) {
       tmp19Result = tmp19(tmp2(1187).RoleDot, obj8);
     }
     items2 = [tmp19Result, , , ];
-    const obj9 = { variant: "text-md/medium", color: "interactive-text-active", lineClamp: 1, style: items3, gradientColors: tmp23, children: username };
+    const obj9 = { variant: "body-md/medium", color: "interactive-text-active", lineClamp: 1, style: items3, gradientColors: tmp23, children: username };
     items3 = [tmp.username, {}];
     tmp23 = undefined;
-    const Text = tmp2(5747).Text;
+    const Text = tmp2(5761).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp23 = processColorStringsArray;
     }
     items2[1] = hasOwnProperty(Text, obj9);
-    items2[2] = hasOwnProperty(Text_Text.Text, { variant: "text-md/medium", color: "interactive-text-active", children: " " });
-    const obj10 = { variant: "text-md/medium", lineClamp: 1, style: tmp.messageText, children: getBoostRowMessageTextDefault(row) };
-    const Text2 = tmp2(5747).Text;
+    items2[2] = hasOwnProperty(Text_Text.Text, { variant: "body-md/medium", color: "interactive-text-active", children: " " });
+    const obj10 = { variant: "body-md/medium", lineClamp: 1, style: tmp.messageText, children: getBoostRowMessageTextDefault(row) };
+    const Text2 = tmp2(5761).Text;
     items2[3] = hasOwnProperty(Text2, obj10);
     items1[1] = metroRequire(View, obj7);
-    const obj11 = { variant: "text-xs/medium", color: "text-subtle", style: tmp.timestamp, children: calendarFormatResult };
+    const obj11 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.timestamp, children: calendarFormatResult };
     items1[2] = hasOwnProperty(Text_Text.Text, obj11);
     return metroRequire(View, obj4);
   }

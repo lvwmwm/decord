@@ -1,26 +1,26 @@
-// Module ID: 14474
-// Function ID: 14475
+// Module ID: 14554
+// Function ID: 14555
 // Name: InkQuillSpotIllustration
-// Dependencies: [19, 21, 14475, 14476, 14477, 7195, 5837, 2]
+// Dependencies: [19, 21, 14555, 14556, 14557, 7210, 5851, 2]
 // Exports: InkQuillSpotIllustration
 
-// Module 14474 (InkQuillSpotIllustration)
+// Module 14554 (InkQuillSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7195 */;
-import _modDef14475 from "module_14475" /* 14475 */;
-import _modDef14476 from "module_14476" /* 14476 */;
-import _modDef14477 from "module_14477" /* 14477 */;
+import react_native from "react-native" /* 7210 */;
+import _modDef14555 from "module_14555" /* 14555 */;
+import _modDef14556 from "module_14556" /* 14556 */;
+import _modDef14557 from "module_14557" /* 14557 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14475 };
+let obj2 = { uri: _modDef14555 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14476 };
+let obj3 = { uri: _modDef14556 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14477 };
-({ uri: _modDef14477 });
+obj[3] = { uri: _modDef14557 };
+({ uri: _modDef14557 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/InkQuillSpotIllustration.native.tsx");
 

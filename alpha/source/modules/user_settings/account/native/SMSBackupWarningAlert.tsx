@@ -1,12 +1,12 @@
-// Module ID: 7365
-// Function ID: 7366
+// Module ID: 7381
+// Function ID: 7382
 // Name: SMSBackupWarningAlert
-// Dependencies: [19, 21, 5141, 6150, 1113, 6079, 5747, 2]
+// Dependencies: [19, 21, 5141, 6165, 1113, 6094, 5761, 2]
 // Exports: default
 
-// Module 7365 (SMSBackupWarningAlert)
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
-import AlertDefault from "Alert" /* 6150 */;
+// Module 7381 (SMSBackupWarningAlert)
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
+import AlertDefault from "Alert" /* 6165 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -44,11 +44,11 @@ export default function SMSBackupWarningAlert(onConfirm) {
   intl = onConfirm(1113).intl;
   intl2 = onConfirm(1113).intl;
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(onConfirm(1113).t.Ed4XQB) };
-  const Text = onConfirm(5747).Text;
+  const Text = onConfirm(5761).Text;
   intl3 = onConfirm(1113).intl;
   items = [closure_3(Text, obj2), ];
-  const obj3 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: intl4.string(onConfirm(1113).t.EDU2Eg) };
-  const Text2 = onConfirm(5747).Text;
+  const obj3 = { style: tmp.body, variant: "body-sm/medium", color: "text-default", children: intl4.string(onConfirm(1113).t.EDU2Eg) };
+  const Text2 = onConfirm(5761).Text;
   intl4 = onConfirm(1113).intl;
   items[1] = closure_3(Text2, obj3);
   return closure_4(tmp2, obj);

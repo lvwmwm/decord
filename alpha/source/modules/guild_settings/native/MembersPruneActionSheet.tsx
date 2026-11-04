@@ -1,17 +1,17 @@
-// Module ID: 18814
-// Function ID: 18815
+// Module ID: 18915
+// Function ID: 18916
 // Name: MembersPruneActionSheet
-// Dependencies: [32, 19, 18815, 5012, 5073, 1385, 21, 572, 18816, 7486, 7441, 1113, 7184, 7187, 5747, 5754, 5381, 504, 7563, 2]
+// Dependencies: [32, 19, 18916, 5012, 5073, 1385, 21, 572, 18917, 7502, 7457, 1113, 7199, 7202, 5761, 5768, 5382, 504, 7579, 2]
 // Exports: default
 
-// Module 18814 (MembersPruneActionSheet)
+// Module 18915 (MembersPruneActionSheet)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7563 */;
-import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 18816 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7579 */;
+import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 18917 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PrunePreviewStore from "PrunePreviewStore" /* 18815 */;
+import PrunePreviewStore from "PrunePreviewStore" /* 18916 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -106,7 +106,7 @@ function MembersPruneActionSheetContent(guild) {
   if (num == null) {
     num = -1;
   }
-  const obj6 = { variant: "text-sm/medium", children: format(tmp10, { members: num, days }) };
+  const obj6 = { variant: "body-sm/medium", children: format(tmp10, { members: num, days }) };
   items3[1] = closure_11(Text, obj6);
   const obj7 = {
     variant: "destructive",

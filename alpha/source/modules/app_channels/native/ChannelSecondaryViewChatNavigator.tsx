@@ -1,19 +1,19 @@
-// Module ID: 19110
-// Function ID: 19111
+// Module ID: 19213
+// Function ID: 19214
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 9987, 5141, 575, 9943, 1377, 11140, 11351, 12497, 5317, 7290, 14703, 9955, 5207, 2]
+// Dependencies: [19, 21, 10035, 5141, 575, 9961, 1377, 11188, 11401, 12578, 5318, 7306, 14783, 9973, 5207, 2]
 // Exports: default
 
-// Module 19110 (ChannelSecondaryViewChatNavigator)
+// Module 19213 (ChannelSecondaryViewChatNavigator)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import HeaderShared from "HeaderShared" /* 9943 */;
-import ChannelContainer2 from "ChannelContainer" /* 11140 */;
-import ChatViewDefault from "ChatView" /* 11351 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12497 */;
+import HeaderShared from "HeaderShared" /* 9961 */;
+import ChannelContainer2 from "ChannelContainer" /* 11188 */;
+import ChatViewDefault from "ChatView" /* 11401 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12578 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9987 */;
+import NativeStackView from "NativeStackView" /* 10035 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -61,8 +61,8 @@ export default function ChannelSecondaryViewChatNavigator(navigation) {
   const params = navigation.route.params;
   const tmp = closure_7();
   dependencyMap = tmp;
-  const tmp2 = params(5317)();
-  let obj = navigation(7290);
+  const tmp2 = params(5318)();
+  let obj = navigation(7306);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const channelId = params.channelId;
   const items = [channelId, tmp, navigation, accessibilityNativeStackOptions];

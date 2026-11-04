@@ -1,26 +1,26 @@
-// Module ID: 13543
-// Function ID: 13544
+// Module ID: 13627
+// Function ID: 13628
 // Name: ForwardPreview
-// Dependencies: [19, 17, 21, 5141, 575, 5376, 8834, 8501, 10016, 13544, 6207, 12, 13545, 1113, 12939, 9510, 8783, 10665, 5837, 1492, 9637, 5747, 13547, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5377, 8851, 8518, 10064, 13628, 6222, 12, 13629, 1113, 13021, 9528, 8800, 10713, 5851, 1492, 9656, 5761, 13631, 2]
 // Exports: ForwardPreview
 
-// Module 13543 (ForwardPreview)
+// Module 13627 (ForwardPreview)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1492 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6207 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8834 */;
-import CirclePlayIcon from "CirclePlayIcon" /* 9510 */;
-import ClipView from "ClipView" /* 9637 */;
-import ChatItemDefault from "ChatItem" /* 10016 */;
-import ForwardPreviewUtils from "ForwardPreviewUtils" /* 13544 */;
-import MosaicMediaType from "MosaicMediaType" /* 13545 */;
-import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 13547 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6222 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8851 */;
+import CirclePlayIcon from "CirclePlayIcon" /* 9528 */;
+import ClipView from "ClipView" /* 9656 */;
+import ChatItemDefault from "ChatItem" /* 10064 */;
+import ForwardPreviewUtils from "ForwardPreviewUtils" /* 13628 */;
+import MosaicMediaType from "MosaicMediaType" /* 13629 */;
+import CheckpointForwardPreviewDefault from "CheckpointForwardPreview" /* 13631 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -149,7 +149,7 @@ export function ForwardPreview(message) {
         const intl4 = tmp2(1113).intl;
         const obj3 = { image_count: num, video_count: num2 };
         formatToPlainStringResult = intl4.formatToPlainString(tmp2(1113).t.Lr0Top, obj3);
-        AttachmentIcon = tmp2(12939).ImagesIcon;
+        AttachmentIcon = tmp2(13021).ImagesIcon;
       }
       if (num2 > 0) {
         if (attachments.length === num2) {
@@ -205,16 +205,16 @@ export function ForwardPreview(message) {
       const intl3 = tmp2(1113).intl;
       const obj12 = { count: num2 };
       formatToPlainStringResult = intl3.formatToPlainString(tmp2(1113).t.SJ6pPX, obj12);
-      AttachmentIcon = tmp2(9510).CirclePlayIcon;
+      AttachmentIcon = tmp2(9528).CirclePlayIcon;
     } else if (num > 0) {
       let ImagesIcon;
       const intl2 = tmp2(1113).intl;
       const obj13 = { count: num };
       const formatToPlainStringResult1 = intl2.formatToPlainString(intl5.t.h4pFfU, obj13);
       if (1 === num) {
-        ImagesIcon = tmp2(8783).ImageIcon;
+        ImagesIcon = tmp2(8800).ImageIcon;
       } else {
-        ImagesIcon = tmp2(12939).ImagesIcon;
+        ImagesIcon = tmp2(13021).ImagesIcon;
       }
       AttachmentIcon = ImagesIcon;
       formatToPlainStringResult = formatToPlainStringResult1;
@@ -222,7 +222,7 @@ export function ForwardPreview(message) {
       const intl = tmp2(1113).intl;
       const obj14 = { count: attachments.length };
       formatToPlainStringResult = intl.formatToPlainString(tmp2(1113).t["89ihS8"], obj14);
-      AttachmentIcon = tmp2(10665).AttachmentIcon;
+      AttachmentIcon = tmp2(10713).AttachmentIcon;
     }
   } else {
     tmp6 = null;
@@ -238,7 +238,7 @@ export function ForwardPreview(message) {
       items2 = [size3];
       const obj16 = { style: tmp.attachmentPreviewOverflow, children: items3 };
       items3 = [hasOwnProperty(ClipViewDefault, obj17), ];
-      const obj18 = { style: tmp.overflowCount, variant: "text-xs/semibold", color: "text-default", children: items4 };
+      const obj18 = { style: tmp.overflowCount, variant: "body-xs/semibold", color: "text-default", children: items4 };
       items4 = ["+", attachments.length - 1];
       items3[1] = metroRequire(Text_Text.Text, obj18);
       tmp33 = metroRequire(View, obj16);
@@ -251,8 +251,8 @@ export function ForwardPreview(message) {
   let tmp36Result = null != checkpointDataFromMessage;
   const obj22 = { style: tmp.contentWrapper, children: items6 };
   if (tmp36Result) {
-    const obj23 = { variant: "text-md/medium", children: tmp2Result2.getCheckpointLabel(checkpointDataFromMessage) };
-    const Text = tmp2(5747).Text;
+    const obj23 = { variant: "body-md/medium", children: tmp2Result2.getCheckpointLabel(checkpointDataFromMessage) };
+    const Text = tmp2(5761).Text;
     tmp2Result2 = checkpoint_CheckpointMessageComponentUtils;
     tmp36Result = tmp36(Text, obj23);
   }
@@ -278,10 +278,10 @@ export function ForwardPreview(message) {
     items7 = [tmp36Result6, ];
     let tmp36Result7 = null != tmp8;
     if (tmp36Result7) {
-      let str3 = "text-md/medium";
-      const Text2 = tmp2(5747).Text;
+      let str3 = "body-md/medium";
+      const Text2 = tmp2(5761).Text;
       if (hasContent) {
-        str3 = "text-sm/medium";
+        str3 = "body-sm/medium";
       }
       const obj27 = { variant: str3, color: "text-muted", children: tmp8 };
       tmp36Result7 = tmp36(Text2, obj27);

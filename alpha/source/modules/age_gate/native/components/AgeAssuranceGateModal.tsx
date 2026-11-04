@@ -1,22 +1,22 @@
-// Module ID: 19549
-// Function ID: 19550
+// Module ID: 19653
+// Function ID: 19654
 // Name: AgeAssuranceGateModal
-// Dependencies: [19, 4990, 1097, 19550, 21, 19551, 7124, 1260, 19552, 11355, 504, 5772, 6846, 6859, 7290, 1113, 2]
+// Dependencies: [19, 4990, 1097, 19654, 21, 19655, 7139, 1260, 19656, 11405, 504, 5786, 6861, 6874, 7306, 1113, 2]
 // Exports: default
 
-// Module 19549 (AgeAssuranceGateModal)
+// Module 19653 (AgeAssuranceGateModal)
 import Fragment from "Fragment" /* 21 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6859 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19550 */;
-import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 19551 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6874 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19654 */;
+import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 19655 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 const discord_common_AnalyticsUtils = tmp(1260);
-const NavigatorHeader = tmp(7124);
+const NavigatorHeader = tmp(7139);
 let react = react_mod;
 const AgeGateSource = AgeGateConstants.AgeGateSource;
 let closure_6 = ExistingUserAgeGateConstants.ExistingUserAgeGateScreens;
@@ -24,7 +24,7 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/age_gate/native/components/AgeAssuranceGateModal.tsx");
 
 export default function AgeAssuranceGateModal(source) {
-  let Pawtect;
+  let AgeVerify;
   let closure_3;
   let intl;
   let items3;
@@ -72,7 +72,7 @@ export default function AgeAssuranceGateModal(source) {
         };
       }
       let obj2 = {};
-      const Pawtect = closure_6.Pawtect;
+      const AgeVerify = closure_6.AgeVerify;
       const obj3 = {
         fullscreen: true,
         headerLeft: tmpResult.getHeaderBackButton(fn),
@@ -83,7 +83,7 @@ export default function AgeAssuranceGateModal(source) {
           return closure_2_7(stateFromStores(closure_2_2[8]), obj);
         }
       };
-      obj2[Pawtect] = obj3;
+      obj2[AgeVerify] = obj3;
       tmpResult = NavigatorHeader;
       const NSFWVoiceChannel = closure_6.NSFWVoiceChannel;
       const obj4 = {
@@ -115,16 +115,16 @@ export default function AgeAssuranceGateModal(source) {
       obj2[NSFWVoiceChannel] = obj4;
       return obj2;
     }, items3),
-    initialRouteName: Pawtect,
+    initialRouteName: AgeVerify,
     headerBackTitle: intl.string(tmp(tmp2[15]).t["13/7kX"])
   };
   items3 = [source, tmp4, tmp6];
   const Navigator = tmp(tmp2[14]).Navigator;
   const tmp8 = jsx;
   if (null != tmp4) {
-    Pawtect = closure_6.NSFWVoiceChannel;
+    AgeVerify = closure_6.NSFWVoiceChannel;
   } else {
-    Pawtect = closure_6.Pawtect;
+    AgeVerify = closure_6.AgeVerify;
   }
   intl = tmp(tmp2[15]).intl;
   return tmp8(Navigator, obj2);

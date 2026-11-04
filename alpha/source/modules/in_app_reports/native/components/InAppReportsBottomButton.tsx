@@ -1,16 +1,16 @@
-// Module ID: 15319
-// Function ID: 15320
+// Module ID: 15406
+// Function ID: 15407
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1083, 21, 5141, 575, 1113, 2801, 5747, 5754, 1187, 2]
+// Dependencies: [19, 17, 1083, 21, 5141, 575, 1113, 2801, 5761, 5768, 1187, 2]
 // Exports: default
 
-// Module 15319 (InAppReportsBottomButton)
+// Module 15406 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef2801 from "module_2801" /* 2801 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -87,8 +87,8 @@ export default function InAppReportsBottomButton(button) {
     let tmp12Result = null;
     const obj3 = { style: tmp.paddingHorizontal, children: items1 };
     if (null != tmp3) {
-      const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-      tmp12Result = tmp12(tmp15(5747).Text, obj4);
+      const obj4 = { style: tmp.descriptionText, variant: "body-xs/medium", color: "text-default", children: tmp3 };
+      tmp12Result = tmp12(tmp15(5761).Text, obj4);
     }
     items1 = [tmp12Result, , ];
     const obj5 = {

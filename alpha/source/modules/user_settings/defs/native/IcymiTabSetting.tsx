@@ -1,16 +1,16 @@
-// Module ID: 17673
-// Function ID: 17674
+// Module ID: 17769
+// Function ID: 17770
 // Name: IcymiTabSetting
-// Dependencies: [8556, 8688, 9049, 9048, 17674, 11677, 1113, 2]
+// Dependencies: [8573, 8705, 9066, 9065, 17770, 11728, 1113, 2]
 
-// Module 17673 (IcymiTabSetting)
+// Module 17769 (IcymiTabSetting)
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import useLabFeatureDefault from "useLabFeature" /* 8688 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9048 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 9049 */;
-import LabFeatureActions from "LabFeatureActions" /* 17674 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import useLabFeatureDefault from "useLabFeature" /* 8705 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 9066 */;
+import LabFeatureActions from "LabFeatureActions" /* 17770 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -38,9 +38,8 @@ let obj = {
     const obj2 = LabFeatureActions;
     obj2.toggleLabFeature(ICYMIExperiment.ICYMI_LAB_FEATURE, obj);
   },
-  usePredicate: function useICYMIPredicate() {
-    const ICYMIStaffOnlyExperiment = ICYMIExperiment.ICYMIStaffOnlyExperiment;
-    return ICYMIStaffOnlyExperiment.useConfig({ location: "settings" }).enabled;
+  usePredicate: function useLegacyICYMITabSettingVisible() {
+    return false;
   }
 };
 const toggle = SettingBuilders.createToggle(obj);

@@ -1,16 +1,16 @@
-// Module ID: 14403
-// Function ID: 14404
+// Module ID: 14483
+// Function ID: 14484
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1385, 1072, 21, 5141, 575, 504, 5837, 14404, 5747, 1113, 5754, 1252, 5195, 9059, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5141, 575, 504, 5851, 14484, 5761, 1113, 5768, 1252, 5195, 9076, 2]
 // Exports: default
 
-// Module 14403 (ContactSyncInviteFriends)
+// Module 14483 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14404 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14484 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
@@ -30,7 +30,7 @@ let obj2;
 let tmp;
 let tmp5;
 const UserUtilsDefault = tmp(5195);
-const showShareActionSheet = tmp5(9059);
+const showShareActionSheet = tmp5(9076);
 const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
@@ -62,7 +62,7 @@ export default function ContactSyncInviteFriends() {
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items1[1] = closure_7(Text, obj5);
-  const obj6 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t["fXtCJ+"]) };
+  const obj6 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(require("intl").t["fXtCJ+"]) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items1[2] = closure_7(Text2, obj6);

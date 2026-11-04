@@ -1,10 +1,10 @@
-// Module ID: 8067
-// Function ID: 8068
+// Module ID: 8083
+// Function ID: 8084
 // Name: useStateChannelIsLive
 // Dependencies: [4995, 504, 2]
 // Exports: default
 
-// Module 8067 (useStateChannelIsLive)
+// Module 8083 (useStateChannelIsLive)
 import StageInstanceStore from "StageInstanceStore" /* 4995 */;
 import size from "module_2" /* 2 */;
 

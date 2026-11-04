@@ -1,14 +1,14 @@
-// Module ID: 12501
-// Function ID: 12502
+// Module ID: 12582
+// Function ID: 12583
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 9895, 4990, 4987, 5171, 4974, 504, 12502, 12507, 7693, 2]
+// Dependencies: [32, 9913, 4990, 4987, 5171, 4974, 504, 12583, 12588, 7709, 2]
 // Exports: default
 
-// Module 12501 (useAppLauncherOnboardingContent)
+// Module 12582 (useAppLauncherOnboardingContent)
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12507 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9895 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 9913 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ export default function useAppLauncherOnboardingContent(channelId) {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
     }
   }
-  const tmpResult = tmp(7693);
+  const tmpResult = tmp(7709);
   let obj3 = { groupName: constants.APP_LAUNCHER_ONBOARDING };
   const tmp7 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items, obj3), 2);
   let obj4 = { visibleContent: tmp7[0], markAsDismissed: tmp7[1] };

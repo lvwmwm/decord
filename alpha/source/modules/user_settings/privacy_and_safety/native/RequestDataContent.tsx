@@ -1,13 +1,13 @@
-// Module ID: 16909
-// Function ID: 16910
+// Module ID: 17001
+// Function ID: 17002
 // Name: RequestDataContent
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 1499, 1113, 7100, 5747, 2190, 7186, 5754, 6078, 16910, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 1499, 1113, 7115, 5761, 2190, 7201, 5768, 6093, 17002, 2]
 
-// Module 16909 (RequestDataContent)
+// Module 17001 (RequestDataContent)
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
-import DataHarvestActionCreators from "DataHarvestActionCreators" /* 16910 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
+import DataHarvestActionCreators from "DataHarvestActionCreators" /* 17002 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -112,7 +112,7 @@ const memoResult = react.memo(function RequestDataContent() {
   const Text = require("Text/Text").Text;
   intl8 = require("intl").intl;
   items = [closure_8(Text, obj12), ];
-  const obj13 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: format(vtRhDA, obj14) };
+  const obj13 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: format(vtRhDA, obj14) };
   const Text2 = require("Text/Text").Text;
   const intl9 = require("intl").intl;
   format = intl9.format;

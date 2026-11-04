@@ -1,15 +1,15 @@
-// Module ID: 12292
-// Function ID: 12293
+// Module ID: 12355
+// Function ID: 12356
 // Name: SelectComponentActionSheet
-// Dependencies: [19, 17, 4990, 5044, 5396, 21, 5141, 575, 7441, 1113, 5754, 9190, 5209, 7101, 7115, 9331, 5730, 5150, 1627, 1493, 5709, 504, 5381, 5395, 7414, 2]
+// Dependencies: [19, 17, 4990, 5044, 5397, 21, 5141, 575, 7457, 1113, 5768, 9207, 5208, 7116, 7130, 9348, 5743, 5150, 1627, 1493, 5722, 504, 5382, 5396, 7430, 2]
 // Exports: default
 
-// Module 12292 (SelectComponentActionSheet)
+// Module 12355 (SelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import react_native2 from "react-native" /* 5209 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
+import react_native2 from "react-native" /* 5208 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
@@ -63,7 +63,7 @@ function SelectionHeader(renderIcon) {
     return mapped;
   }, items);
   let label;
-  const BottomSheetTitleHeader = renderIcon(7441).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = renderIcon(7457).BottomSheetTitleHeader;
   const tmp3 = closure_10;
   const tmp4 = closure_9;
   if (labelComponent != null) {
@@ -88,7 +88,7 @@ function SelectionHeader(renderIcon) {
   tmp5Result = undefined;
   if (tmp2) {
     let str = "primary";
-    const Button = tmp6(5754).Button;
+    const Button = tmp6(5768).Button;
     if (selectButtonDisabled) {
       str = "secondary";
     }
@@ -128,7 +128,7 @@ function SelectionHeader(renderIcon) {
             }
       };
       tmp5Result3 = undefined;
-      const tmp13 = selectedOptions(9190);
+      const tmp13 = selectedOptions(9207);
       if (tmp2) {
         if (0 !== memo.length) {
           tmp5Result3 = tmp5(onQueryChange, {});
@@ -203,7 +203,7 @@ function SelectionOptionItem(item) {
     trailing: tmp13(tmp14, obj3)
   };
   result = undefined;
-  const TableRow = tmp2(7101).TableRow;
+  const TableRow = tmp2(7116).TableRow;
   if (itemAccessibilityLabel != null) {
     result = itemAccessibilityLabel(item);
   }
@@ -226,7 +226,7 @@ function SelectionOptionItem(item) {
   }
   items1 = [renderOptionSuffixResult, ];
   if (clearable) {
-    const FormCheckbox = tmp2(7115).FormCheckbox;
+    const FormCheckbox = tmp2(7130).FormCheckbox;
     if (!selected) {
       selected = false;
     }
@@ -235,7 +235,7 @@ function SelectionOptionItem(item) {
   } else {
     tmp8Result2 = null;
     if (true === selected) {
-      tmp8Result2 = tmp8(tmp2(9331).CheckmarkSmallBoldIcon, { color: "text-brand" });
+      tmp8Result2 = tmp8(tmp2(9348).CheckmarkSmallBoldIcon, { color: "text-brand" });
     }
   }
   items1[1] = tmp8Result2;

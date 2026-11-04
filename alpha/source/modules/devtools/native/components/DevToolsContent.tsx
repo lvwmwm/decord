@@ -1,23 +1,23 @@
-// Module ID: 17900
-// Function ID: 17901
+// Module ID: 17996
+// Function ID: 17997
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 11499, 5361, 1246, 21, 5141, 575, 504, 13328, 17901, 5747, 7106, 5383, 13180, 13182, 1499, 1627, 7186, 7101, 5832, 16579, 2]
+// Dependencies: [32, 19, 17, 11549, 5362, 1246, 21, 5141, 575, 504, 13411, 17997, 5761, 7121, 5384, 13263, 13265, 1499, 1627, 7201, 7116, 5846, 16670, 2]
 
-// Module 17900 (DevToolsContent)
+// Module 17996 (DevToolsContent)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13180 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13182 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 16579 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 17901 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13263 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13265 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 16670 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 17997 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11499 */;
-import ExperimentStore from "ExperimentStore" /* 5361 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11549 */;
+import ExperimentStore from "ExperimentStore" /* 5362 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -80,7 +80,7 @@ function DevToolsContentSortButtons(arg0) {
     children: closure_10(ArrowSmallDownIcon.ArrowSmallDownIcon, {})
   };
   items2 = [tmp.button, ];
-  const PressableOpacity2 = tmp5(7106).PressableOpacity;
+  const PressableOpacity2 = tmp5(7121).PressableOpacity;
   if (end) {
     end = tmp.disabledButton;
   }
@@ -103,10 +103,10 @@ const memoResult = react.memo(function DevToolsContentSubLabel(arg0) {
   let label;
   let value;
   ({ label, value } = arg0);
-  const obj = { variant: "text-xs/medium", color: "text-subtle", children: items };
+  const obj = { variant: "body-xs/medium", color: "text-subtle", children: items };
   items = [label, ];
   const Text = Text_Text.Text;
-  items[1] = authStore(Text_Text.Text, { variant: "text-xs/semibold", children: value });
+  items[1] = authStore(Text_Text.Text, { variant: "body-xs/semibold", children: value });
   return unpackModuleId(Text, obj);
 });
 const memoResult1 = react.memo(function DevToolsContent(arg0) {

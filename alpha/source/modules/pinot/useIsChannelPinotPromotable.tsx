@@ -1,13 +1,13 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11508
+// Function ID: 11509
 // Name: useIsChannelPinotPromotable
-// Dependencies: [4994, 4990, 5047, 5012, 1072, 9183, 504, 9181, 2]
+// Dependencies: [4994, 4990, 5047, 5012, 1072, 9200, 504, 9198, 2]
 // Exports: useIsChannelPinotPromotable, usePinotPromotableChannelId
 
-// Module 11458 (useIsChannelPinotPromotable)
+// Module 11508 (useIsChannelPinotPromotable)
 import Constants from "Constants" /* 1072 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
-import PinotEligibility from "PinotEligibility" /* 9181 */;
+import PinotEligibility from "PinotEligibility" /* 9198 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;

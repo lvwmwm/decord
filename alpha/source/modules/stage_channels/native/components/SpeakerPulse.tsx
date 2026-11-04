@@ -1,14 +1,14 @@
-// Module ID: 16142
-// Function ID: 16143
+// Module ID: 16231
+// Function ID: 16232
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 5142, 21, 5141, 575, 504, 1652, 5377, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 504, 1652, 5378, 2]
 // Exports: default
 
-// Module 16142 (SpeakerPulse)
+// Module 16231 (SpeakerPulse)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
+import timing_timing from "timing/timing" /* 5378 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;

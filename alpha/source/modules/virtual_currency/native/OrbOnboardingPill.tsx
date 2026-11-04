@@ -1,14 +1,14 @@
-// Module ID: 17851
-// Function ID: 17852
+// Module ID: 17947
+// Function ID: 17948
 // Name: OrbOnboardingPill
-// Dependencies: [19, 17, 21, 9660, 5747, 1113, 5141, 575, 2]
+// Dependencies: [19, 17, 21, 9679, 5761, 1113, 5141, 575, 2]
 
-// Module 17851 (OrbOnboardingPill)
+// Module 17947 (OrbOnboardingPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import OrbsIcon from "OrbsIcon" /* 9660 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import OrbsIcon from "OrbsIcon" /* 9679 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -23,7 +23,7 @@ class OrbOnboardingPill {
     let items;
     const obj = { style: closure_5().container, children: items };
     items = [_false(OrbsIcon.OrbsIcon, { size: "sm" }), ];
-    const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: intl.string(intl2.t["9JpRfC"]) };
+    const obj2 = { variant: "body-sm/semibold", color: "redesign-button-tertiary-text", children: intl.string(intl2.t["9JpRfC"]) };
     const Text = Text_Text.Text;
     intl = intl2.intl;
     items[1] = _false(Text, obj2);

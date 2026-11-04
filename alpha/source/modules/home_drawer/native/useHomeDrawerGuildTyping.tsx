@@ -1,16 +1,16 @@
-// Module ID: 18540
-// Function ID: 18541
+// Module ID: 18635
+// Function ID: 18636
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [5075, 4994, 4990, 13860, 558, 18537, 18538, 504, 11, 2]
+// Dependencies: [5075, 4994, 4990, 13946, 558, 18632, 18633, 504, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 18540 (useHomeDrawerGuildTyping)
+// Module 18635 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5075 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import TypingStore from "TypingStore" /* 13860 */;
+import TypingStore from "TypingStore" /* 13946 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
-// Module ID: 15918
-// Function ID: 15919
+// Module ID: 16006
+// Function ID: 16007
 // Name: GuildBadgeMoneyBag
-// Dependencies: [19, 21, 15888, 8155, 2]
+// Dependencies: [19, 21, 15976, 8171, 2]
 // Exports: GuildBadgeMoneyBag
 
-// Module 15918 (GuildBadgeMoneyBag)
-import inlineStyles from "inlineStyles" /* 8155 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15888 */;
+// Module 16006 (GuildBadgeMoneyBag)
+import inlineStyles from "inlineStyles" /* 8171 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15976 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

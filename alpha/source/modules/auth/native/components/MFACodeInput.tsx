@@ -1,13 +1,13 @@
-// Module ID: 16809
-// Function ID: 16810
+// Module ID: 16901
+// Function ID: 16902
 // Name: MFACodeInput
-// Dependencies: [32, 19, 17, 502, 1072, 21, 5141, 575, 5148, 7478, 5716, 6860, 7207, 1113, 5747, 2]
+// Dependencies: [32, 19, 17, 502, 1072, 21, 5141, 575, 5148, 7494, 5729, 6875, 7222, 1113, 5761, 2]
 // Exports: default
 
-// Module 16809 (MFACodeInput)
+// Module 16901 (MFACodeInput)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -162,7 +162,7 @@ export default function MFACodeInput(appState) {
   } else {
     tmp17Result = null;
     if (null != error) {
-      const obj5 = { style: tmp.error, variant: "text-md/medium", children: error };
+      const obj5 = { style: tmp.error, variant: "body-md/medium", children: error };
       tmp17Result = tmp17(tmp2(tmp3[14]).Text, obj5);
     }
   }

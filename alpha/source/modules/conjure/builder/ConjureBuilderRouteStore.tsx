@@ -1,13 +1,13 @@
-// Module ID: 7513
-// Function ID: 7514
+// Module ID: 7529
+// Function ID: 7530
 // Name: ConjureBuilderRouteStore
-// Dependencies: [4997, 504, 7514, 572, 2]
+// Dependencies: [4997, 504, 7530, 572, 2]
 
-// Module 7513 (ConjureBuilderRouteStore)
+// Module 7529 (ConjureBuilderRouteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
-import conjureGuildReturnsToProjectDefault from "conjureGuildReturnsToProject" /* 7514 */;
+import conjureGuildReturnsToProjectDefault from "conjureGuildReturnsToProject" /* 7530 */;
 import size from "module_2" /* 2 */;
 
 let _null, closure_5;

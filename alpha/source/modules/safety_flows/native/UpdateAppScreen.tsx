@@ -1,15 +1,15 @@
-// Module ID: 20244
-// Function ID: 20245
+// Module ID: 20360
+// Function ID: 20361
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 5141, 575, 5747, 1113, 2963, 5754, 2]
+// Dependencies: [17, 21, 5141, 575, 5761, 1113, 2963, 5768, 2]
 // Exports: default
 
-// Module 20244 (UpdateAppScreen)
+// Module 20360 (UpdateAppScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2963 from "module_2963" /* 2963 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -46,7 +46,7 @@ export default function UpdateAppScreen() {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [hasOwnProperty(Text, obj2), , ];
-  const obj3 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(_modDef2963.VBZJJg) };
+  const obj3 = { variant: "body-md/normal", color: "text-muted", children: intl2.string(_modDef2963.VBZJJg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = hasOwnProperty(Text2, obj3);

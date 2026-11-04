@@ -1,17 +1,17 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12319
+// Function ID: 12320
 // Name: ConjureProjectIcon
-// Dependencies: [19, 17, 21, 5141, 575, 11480, 5837, 1411, 11477, 5719, 671, 12259, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 11530, 5851, 1411, 11527, 5732, 671, 12320, 2]
 // Exports: ConjureNewProjectIcon, default
 
-// Module 12258 (ConjureProjectIcon)
+// Module 12319 (ConjureProjectIcon)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import useToken from "useToken" /* 5719 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import useConjureProjectIcon from "useConjureProjectIcon" /* 11480 */;
-import MagicWandIcon2 from "MagicWandIcon" /* 12259 */;
+import useToken from "useToken" /* 5732 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import useConjureProjectIcon from "useConjureProjectIcon" /* 11530 */;
+import MagicWandIcon2 from "MagicWandIcon" /* 12320 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -63,7 +63,7 @@ export default function ConjureProjectIcon(project) {
     const obj5 = { applicationId: null, name: null, size: closure_7[project.size] };
     ({ application_id: obj2.applicationId, name: obj2.name } = project);
     tmp9 = hasOwnProperty;
-    tmp10 = hasOwnProperty(tmp2(11477), obj5);
+    tmp10 = hasOwnProperty(tmp2(11527), obj5);
   }
   items = [tmp10, ];
   const obj8 = { style: tmp5.border, pointerEvents: "none" };

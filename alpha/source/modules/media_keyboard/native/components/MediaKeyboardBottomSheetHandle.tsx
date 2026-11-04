@@ -1,17 +1,17 @@
-// Module ID: 10668
-// Function ID: 10669
+// Module ID: 10716
+// Function ID: 10717
 // Name: MediaKeyboardBottomSheetHandle
-// Dependencies: [19, 21, 8965, 1113, 9120, 2]
+// Dependencies: [19, 21, 8982, 1113, 9137, 2]
 
-// Module 10668 (MediaKeyboardBottomSheetHandle)
+// Module 10716 (MediaKeyboardBottomSheetHandle)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 8965 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8982 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const native = tmp(9120);
+const native = tmp(9137);
 const jsx = Fragment.jsx;
 const memoResult = react.memo(function MediaKeyboardBottomSheetHandle(onPress) {
   let stringResult;

@@ -1,20 +1,20 @@
-// Module ID: 19801
-// Function ID: 19802
+// Module ID: 19917
+// Function ID: 19918
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 5012, 9203, 1072, 21, 18350, 9202, 1260, 1113, 7124, 19802, 19812, 19820, 19821, 19840, 19859, 19864, 19879, 19880, 19892, 19904, 19906, 19087, 19096, 19914, 19918, 19919, 19098, 18351, 19920, 19921, 19941, 19962, 19966, 19969, 19972, 13399, 13413, 13417, 19973, 19978, 19979, 20001, 20023, 20089, 20090, 20104, 20141, 20144, 20145, 20148, 20156, 20157, 1627, 5735, 504, 7290, 2]
+// Dependencies: [32, 19, 5012, 9220, 1072, 21, 18444, 9219, 1260, 1113, 7139, 19918, 19928, 19936, 19937, 19956, 19975, 19980, 19995, 19996, 20008, 20020, 20022, 19190, 19199, 20030, 20034, 20035, 19201, 18445, 20036, 20037, 20057, 20078, 20082, 20085, 20088, 13483, 13497, 13501, 20089, 20094, 20095, 20117, 20139, 20205, 20206, 20220, 20257, 20260, 20261, 20264, 20272, 20273, 1627, 5749, 504, 7306, 2]
 // Exports: default
 
-// Module 19801 (GuildSettingsModal)
+// Module 19917 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
 import intl42 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18350 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 18444 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9203 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9220 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

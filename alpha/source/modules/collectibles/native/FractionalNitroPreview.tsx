@@ -1,20 +1,20 @@
-// Module ID: 15177
-// Function ID: 15178
+// Module ID: 15257
+// Function ID: 15258
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1072, 1387, 21, 5141, 575, 1113, 5202, 2176, 5710, 5837, 15178, 15179, 7423, 5747, 2]
+// Dependencies: [19, 17, 1072, 1387, 21, 5141, 575, 1113, 5202, 2176, 5723, 5851, 15258, 15259, 7439, 5761, 2]
 // Exports: FractionalNitroPreview
 
-// Module 15177 (FractionalNitroPreview)
+// Module 15257 (FractionalNitroPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7423 */;
-import _modDef15178 from "module_15178" /* 15178 */;
-import NitroIconDefault from "NitroIcon" /* 15179 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7439 */;
+import _modDef15258 from "module_15258" /* 15258 */;
+import NitroIconDefault from "NitroIcon" /* 15259 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -75,7 +75,7 @@ export function FractionalNitroPreview() {
   const obj5 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
   items1[0] = closure_6(LinearGradientDefault, obj5);
   const obj6 = { source: obj7, style: tmp.headerImage };
-  obj7 = { uri: _modDef15178 };
+  obj7 = { uri: _modDef15258 };
   const tmp3 = FastImageDefault;
   items1[1] = closure_6(tmp3, obj6);
   const obj8 = { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) };
@@ -88,7 +88,7 @@ export function FractionalNitroPreview() {
       const obj2 = { color: nativeDefault.colors.WHITE };
       const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
       items = [metroRequire(CheckmarkSmallIcon, obj2), ];
-      const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children };
+      const obj3 = { variant: "body-sm/medium", color: "text-overlay-light", children };
       items[1] = metroRequire(Text_Text.Text, obj3);
       return metroImportDefault(View, obj, index);
     })

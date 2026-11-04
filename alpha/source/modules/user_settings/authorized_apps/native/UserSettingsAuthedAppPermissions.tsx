@@ -1,13 +1,13 @@
-// Module ID: 17005
-// Function ID: 17006
+// Module ID: 17097
+// Function ID: 17098
 // Name: UserSettingsAuthedAppPermissions
-// Dependencies: [19, 17, 21, 5141, 9875, 9034, 1113, 5747, 7460, 575, 9877, 16999, 2]
+// Dependencies: [19, 17, 21, 5141, 9893, 9051, 1113, 5761, 7476, 575, 9895, 17091, 2]
 // Exports: default
 
-// Module 17005 (UserSettingsAuthedAppPermissions)
-import Text_Text from "Text/Text" /* 5747 */;
-import disclosures from "disclosures" /* 9877 */;
-import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 16999 */;
+// Module 17097 (UserSettingsAuthedAppPermissions)
+import Text_Text from "Text/Text" /* 5761 */;
+import disclosures from "disclosures" /* 9895 */;
+import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 17091 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -49,9 +49,9 @@ export default function UserSettingsAuthedAppPermissions(oauth2Token) {
       }
       continue;
     }
-    let obj2 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: _undefined.name };
+    let obj2 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", children: _undefined.name };
     const children = [closure_1_5(items(_undefined2[7]).Text, obj2), , , ];
-    let obj3 = { variant: "heading-sm/semibold", color: "text-default", children: intl2.string(items(_undefined2[6]).t.xrmhRX) };
+    let obj3 = { variant: "heading-xs/semibold", color: "text-default", children: intl2.string(items(_undefined2[6]).t.xrmhRX) };
     const Text = items(_undefined2[7]).Text;
     intl2 = items(_undefined2[6]).intl;
     children[1] = closure_1_5(Text, obj3);
@@ -60,7 +60,7 @@ export default function UserSettingsAuthedAppPermissions(oauth2Token) {
       const obj2 = { style: items.permissionIcon, size: "xs", color: c1(c2[9]).colors.STATUS_POSITIVE };
       const CircleCheckIcon = items(c2[8]).CircleCheckIcon;
       items = [closure_2_5(CircleCheckIcon, obj2), ];
-      const obj3 = { style: items.permissionText, variant: "text-sm/normal", color: "text-default", children };
+      const obj3 = { style: items.permissionText, variant: "body-sm/normal", color: "text-default", children };
       items[1] = closure_2_5(items(c2[7]).Text, obj3);
       return closure_2_6(closure_2_4, obj, index);
     });
@@ -77,7 +77,7 @@ export default function UserSettingsAuthedAppPermissions(oauth2Token) {
           const obj2 = { style: items.permissionContainer, children: items };
           const obj3 = { style: items.permissionIcon, disclosure };
           items = [hasOwnProperty(UserSettingsAuthedApps.DisclosureIcon, obj3), ];
-          const obj4 = { style: items.permissionText, variant: "text-sm/normal", children: textForDisclosure };
+          const obj4 = { style: items.permissionText, variant: "body-sm/normal", children: textForDisclosure };
           items[1] = hasOwnProperty(Text_Text.Text, obj4);
           tmp4 = metroRequire(React3, obj2, index + items.length);
         }

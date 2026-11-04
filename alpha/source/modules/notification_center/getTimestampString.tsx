@@ -1,10 +1,10 @@
-// Module ID: 6196
-// Function ID: 6197
+// Module ID: 6211
+// Function ID: 6212
 // Name: getTimestampString
 // Dependencies: [1113, 2171, 2]
 // Exports: default, getAbbreviatedFormatter, getFullFormatter
 
-// Module 6196 (getTimestampString)
+// Module 6211 (getTimestampString)
 import intl8 from "intl" /* 1113 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import size from "module_2" /* 2 */;

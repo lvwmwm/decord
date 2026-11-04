@@ -1,20 +1,20 @@
-// Module ID: 14825
-// Function ID: 14826
+// Module ID: 14905
+// Function ID: 14906
 // Name: QuestRewardCodeClaimBottomSheet
-// Dependencies: [19, 17, 7970, 6901, 21, 5141, 575, 1627, 504, 14826, 5832, 1113, 5381, 9832, 7478, 5851, 14827, 5395, 7441, 5747, 5874, 7186, 7101, 5754, 14830, 2]
+// Dependencies: [19, 17, 7986, 6916, 21, 5141, 575, 1627, 504, 14906, 5846, 1113, 5382, 9850, 7494, 5865, 14907, 5396, 7457, 5761, 5888, 7201, 7116, 5768, 14910, 2]
 // Exports: default
 
-// Module 14825 (QuestRewardCodeClaimBottomSheet)
+// Module 14905 (QuestRewardCodeClaimBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9832 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9850 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 7970 */;
+import QuestStore from "QuestStore" /* 7986 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -167,7 +167,7 @@ function QuestRewardCodeClaimBottomSheet(quest) {
   const obj8 = { style: tmp3.wrapper, children: null };
   let tmp16Result = null != rewardCode && null != rewardCodeRedemptionInstructions;
   if (tmp16Result) {
-    const obj9 = { style: tmp3.redemptionInstructions, variant: "text-md/normal", color: "text-default", children: tmpResult.parse(rewardCodeRedemptionInstructions, true, { allowLinks: true }) };
+    const obj9 = { style: tmp3.redemptionInstructions, variant: "body-md/normal", color: "text-default", children: tmpResult.parse(rewardCodeRedemptionInstructions, true, { allowLinks: true }) };
     const Text = tmp4(tmp2[19]).Text;
     tmpResult = tmp(hasError[20]);
     tmp16Result = tmp16(Text, obj9);

@@ -1,14 +1,14 @@
-// Module ID: 17249
-// Function ID: 17250
+// Module ID: 17341
+// Function ID: 17342
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 5141, 5163, 5376, 5710, 5837, 17250, 17251, 2]
+// Dependencies: [19, 17, 21, 5141, 5163, 5377, 5723, 5851, 17342, 17343, 2]
 // Exports: default
 
-// Module 17249 (QuestModalContentCloudBackground)
+// Module 17341 (QuestModalContentCloudBackground)
 import themes from "themes" /* 5163 */;
-import useTheme from "useTheme" /* 5376 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import useTheme from "useTheme" /* 5377 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,11 +30,11 @@ let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { height: 380, zIndex: 1 };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   const obj2 = { wrapper: obj, cloudsImage: obj3, cloudsImageLight: obj5, gradient: obj6, solidBackground: obj7 };
-  const tmp3 = arg0 ? { top: "Array" } : { bottom: "Array" };
+  const tmp3 = arg0 ? { top: "r" } : { bottom: "r" };
   const merged1 = Object.assign(tmp3);
   obj3 = { width: "100%" };
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const tmp6 = arg0 ? { top: "Array" } : { bottom: "Array" };
+  const tmp6 = arg0 ? { top: "r" } : { bottom: "r" };
   const merged3 = Object.assign(tmp6);
   if (arg0) {
     obj4 = {};
@@ -92,7 +92,7 @@ export default function QuestModalContentCloudBackground(align) {
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 17250 : 17251), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 17342 : 17343), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

@@ -1,17 +1,17 @@
-// Module ID: 14757
-// Function ID: 14758
+// Module ID: 14837
+// Function ID: 14838
 // Name: XboxLinkSuccess
-// Dependencies: [32, 19, 17, 9855, 9869, 21, 5141, 575, 9862, 1377, 1499, 5837, 14758, 5747, 1113, 12182, 14759, 1187, 12131, 7412, 5754, 2]
+// Dependencies: [32, 19, 17, 9873, 9887, 21, 5141, 575, 9880, 1377, 1499, 5851, 14838, 5761, 1113, 12241, 14839, 1187, 12190, 7428, 5768, 2]
 // Exports: default
 
-// Module 14757 (XboxLinkSuccess)
+// Module 14837 (XboxLinkSuccess)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9855 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9873 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9869 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9887 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -96,7 +96,7 @@ export default function XboxLinkDiscordSuccess() {
   const Text = first(navigation[13]).Text;
   intl = first(navigation[14]).intl;
   items2[1] = closure_12(Text, obj6);
-  const obj7 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(first(navigation[14]).t.m3mBYE) };
+  const obj7 = { variant: "body-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(first(navigation[14]).t.m3mBYE) };
   const Text2 = first(navigation[13]).Text;
   intl2 = first(navigation[14]).intl;
   items2[2] = closure_12(Text2, obj7);
@@ -105,7 +105,7 @@ export default function XboxLinkDiscordSuccess() {
   obj10 = { source: require("AssetRegistry"), style: tmp.appLogo };
   tmp17 = require("FastImage");
   items3 = [closure_12(closure_5, obj9), , ];
-  const obj11 = { style: tmp.getAppTitle, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: stringResult };
+  const obj11 = { style: tmp.getAppTitle, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: stringResult };
   const Text3 = first(navigation[13]).Text;
   const intl3 = first(navigation[14]).intl;
   const string = intl3.string;

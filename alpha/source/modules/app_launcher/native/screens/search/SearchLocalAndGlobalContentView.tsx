@@ -1,22 +1,22 @@
-// Module ID: 12569
-// Function ID: 12570
+// Module ID: 12650
+// Function ID: 12651
 // Name: SearchLocalAndGlobalContentView
-// Dependencies: [32, 19, 17, 9894, 12531, 1498, 21, 5141, 575, 12515, 12520, 12570, 11639, 1113, 7101, 9893, 12518, 1627, 7338, 9089, 12530, 5803, 7824, 12573, 12574, 5150, 12555, 12546, 12567, 5747, 12575, 9120, 12576, 2]
+// Dependencies: [32, 19, 17, 9912, 12612, 1498, 21, 5141, 575, 12596, 12601, 12651, 11690, 1113, 7116, 9911, 12599, 1627, 7354, 9106, 12611, 5817, 7840, 12654, 12655, 5150, 12636, 12627, 12648, 5761, 12656, 9137, 12657, 2]
 // Exports: SearchLocalAndGlobalContentView
 
-// Module 12569 (SearchLocalAndGlobalContentView)
+// Module 12650 (SearchLocalAndGlobalContentView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5803 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7824 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9894 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11639 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12515 */;
-import react2 from "react" /* 12518 */;
-import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12531 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5817 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7840 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9912 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11690 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12596 */;
+import react2 from "react" /* 12599 */;
+import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12612 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
@@ -69,15 +69,15 @@ function CommandRow(arg0) {
   let onPressSend;
   let tmp = hasOptions;
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  obj = hasOptions(12515);
+  obj = hasOptions(12596);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     const obj2 = { iconSource: appLauncherIconSource };
-    tmp4 = closure_10(onPressSend(12520), obj2);
+    tmp4 = closure_10(onPressSend(12601), obj2);
   }
-  const tmpResult = tmp(12570);
-  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(11639).AppLauncherSectionName.SEARCH };
+  const tmpResult = tmp(12651);
+  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(11690).AppLauncherSectionName.SEARCH };
   const commandRowSend = tmpResult.useCommandRowSend(obj3);
   hasOptions = commandRowSend.hasOptions;
   onPressSend = commandRowSend.onPressSend;
@@ -100,9 +100,9 @@ function CommandRow(arg0) {
       onPressSend();
     }
   }, items1);
-  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12570), { hasOptions, sending, onPressSend }) };
-  const TableRow = tmp(7101).TableRow;
-  tmpResult2 = tmp(9893);
+  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12651), { hasOptions, sending, onPressSend }) };
+  const TableRow = tmp(7116).TableRow;
+  tmpResult2 = tmp(9911);
   return closure_10(TableRow, obj4);
 }
 function PlaceholderCommandRow(isFirstRow) {
@@ -449,7 +449,7 @@ export function SearchLocalAndGlobalContentView(context) {
   const tmp2Result = onScroll(tmp3[28]);
   if (0 !== memo.length) {
     let obj3 = { style: tmp.commandsHeaderContainer, children: items11 };
-    let obj4 = { accessibilityRole: "header", variant: "text-md/medium", color: "text-default", style: tmp.sectionHeader, children: intl4.string(tmp10(tmp3[13]).t["0hKkS+"]) };
+    let obj4 = { accessibilityRole: "header", variant: "body-md/medium", color: "text-default", style: tmp.sectionHeader, children: intl4.string(tmp10(tmp3[13]).t["0hKkS+"]) };
     const Text3 = tmp10(tmp3[29]).Text;
     intl4 = tmp10(tmp3[13]).intl;
     items11 = [applicationResults(Text3, obj4), ];
@@ -476,7 +476,7 @@ export function SearchLocalAndGlobalContentView(context) {
       } else {
         string2Result = string2(t2.xal319);
       }
-      obj6 = { color: "text-brand", variant: "text-md/semibold", children: string2Result };
+      obj6 = { color: "text-brand", variant: "body-md/semibold", children: string2Result };
       tmp33Result = tmp33(AnimatedPressableHighlight, obj5);
     }
     const obj7 = { children: items12 };
@@ -498,7 +498,7 @@ export function SearchLocalAndGlobalContentView(context) {
   items13[1] = tmp33Result4;
   let tmp33Result5 = null;
   if (0 !== memo1.length) {
-    const obj10 = { accessibilityRole: "header", variant: "text-md/medium", color: "text-default", style: tmp.sectionHeader, children: intl3.string(context(tmp3[13]).t.PHjkRE) };
+    const obj10 = { accessibilityRole: "header", variant: "body-md/medium", color: "text-default", style: tmp.sectionHeader, children: intl3.string(context(tmp3[13]).t.PHjkRE) };
     const Text2 = tmp10(tmp3[29]).Text;
     intl3 = tmp10(tmp3[13]).intl;
     tmp33Result5 = tmp33(Text2, obj10);

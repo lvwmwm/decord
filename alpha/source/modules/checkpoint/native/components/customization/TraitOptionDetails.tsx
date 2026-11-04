@@ -1,15 +1,15 @@
-// Module ID: 13825
-// Function ID: 13826
+// Module ID: 13911
+// Function ID: 13912
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5141, 575, 6233, 1113, 3219, 5747, 10036, 7471, 6554, 13826, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6248, 1113, 3219, 5761, 10084, 7487, 6569, 13912, 2]
 // Exports: default
 
-// Module 13825 (TraitOptionDetails)
+// Module 13911 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3219 from "module_3219" /* 3219 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import RarityBadgeDefault from "RarityBadge" /* 13826 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import RarityBadgeDefault from "RarityBadge" /* 13912 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -35,15 +35,16 @@ function AssetDescription(asset) {
       let obj = {
         subscribeHook(children, arg1) {
               let obj = {
-                variant: "text-md/medium",
+                variant: "body-md/medium",
                 color: "text-subtle",
                 style: subscribeLink.subscribeLink,
                 onPress() {
                   let items;
                   const obj = { analyticsLocations: items };
-                  items = [];
+                  items = [, ];
                   const tmp = closure_1_1(closure_1_2[9]);
                   items[0] = closure_1_1(closure_1_2[10]).CHECKPOINT;
+                  items[1] = closure_1_1(closure_1_2[10]).CHECKPOINT_TRAIT;
                   return tmp(obj);
                 },
                 accessibilityRole: "link",
@@ -55,11 +56,11 @@ function AssetDescription(asset) {
       formatResult = intl.format(_modDef3219["3Wq/bk"], obj);
     } else {
       const tmp2Result = require("CheckpointCustomizationUtils");
-      formatResult = tmp2Result.getAssetDescription(asset);
+      formatResult = tmp2Result.getPlaintextAssetDescription(asset);
     }
     tmp = formatResult;
   }
-  const obj2 = { variant: "text-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp, children: tmp };
+  const obj2 = { variant: "body-md/medium", color: "text-subtle", accessibilityElementsHidden: null == tmp, children: tmp };
   return closure_4(require("Text/Text").Text, obj2);
 }
 const View = react_native.View;
@@ -77,7 +78,7 @@ export default function TraitOptionDetails(arg0) {
   ({ asset, descriptionVisibility } = arg0);
   const tmp = closure_7();
   const obj = { style: tmp.titleRow, children: items };
-  const obj2 = { variant: "text-lg/medium", color: "text-default", style: tmp.title, children: asset.getName() };
+  const obj2 = { variant: "body-lg/medium", color: "text-default", style: tmp.title, children: asset.getName() };
   const Text = Text_Text.Text;
   items = [React3(Text, obj2), ];
   let tmp7Result = tmp3;

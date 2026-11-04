@@ -1,15 +1,15 @@
-// Module ID: 18941
-// Function ID: 18942
+// Module ID: 19044
+// Function ID: 19045
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2191, 9958, 21, 5141, 14038, 7103, 5747, 1113, 2]
+// Dependencies: [19, 2191, 9976, 21, 5141, 14124, 7118, 5761, 1113, 2]
 // Exports: default
 
-// Module 18941 (SearchHistoricalIndexingHeader)
+// Module 19044 (SearchHistoricalIndexingHeader)
 import Fragment from "Fragment" /* 21 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 14038 */;
+import TrackingDefault from "Tracking" /* 14124 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -46,13 +46,13 @@ export default function HistoricalIndexingHeader(searchContext) {
     return headerMessages;
   }, items1);
   const effect = react.useEffect(() => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = TrackingDefault;
     const obj2 = { searchContext, isHistoricalIndexing: true, documentsIndexed };
     obj.trackSearchIndexing(obj2);
   }, items2);
   const items3 = [tmp.header, memo1];
   const Card = searchContext(tab[6]).Card;
-  let obj2 = { variant: "heading-sm/medium", color: "interactive-text-default", children: intl.format(searchContext(tab[8]).t["4Y3O+O"], { count: memo }) };
+  let obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", children: intl.format(searchContext(tab[8]).t["4Y3O+O"], { count: memo }) };
   const Text = searchContext(tab[7]).Text;
   intl = searchContext(tab[8]).intl;
   return <Card variant="primary" border="subtle" style={items3}>{null}</Card>;

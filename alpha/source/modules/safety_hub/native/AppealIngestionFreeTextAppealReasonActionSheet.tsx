@@ -1,15 +1,15 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13561
+// Function ID: 13562
 // Name: AppealIngestionFreeTextAppealReasonActionSheet
-// Dependencies: [32, 19, 17, 8118, 21, 5141, 575, 504, 1113, 5395, 6147, 7106, 7180, 13455, 7373, 5747, 5754, 2]
+// Dependencies: [32, 19, 17, 8134, 21, 5141, 575, 504, 1113, 5396, 6162, 7121, 7195, 13539, 7389, 5761, 5768, 2]
 // Exports: default
 
-// Module 13477 (AppealIngestionFreeTextAppealReasonActionSheet)
+// Module 13561 (AppealIngestionFreeTextAppealReasonActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8118 */;
+import SafetyHubStore from "SafetyHubStore" /* 8134 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ export default function AppealIngestionFreeTextAppealReasonActionSheet(onSave) {
   items1[2] = closure_6(TextArea, obj5);
   const obj6 = { style: tmp.separator };
   items1[3] = closure_6(View, obj6);
-  const obj7 = { variant: "text-xs/medium", color: "text-default", style: tmp.footerText, children: intl5.string(onSave(value[8]).t.xfNY3L) };
+  const obj7 = { variant: "body-xs/medium", color: "text-default", style: tmp.footerText, children: intl5.string(onSave(value[8]).t.xfNY3L) };
   const Text = tmp2(tmp3[15]).Text;
   intl5 = tmp2(tmp3[8]).intl;
   items1[4] = closure_6(Text, obj7);

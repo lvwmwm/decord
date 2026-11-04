@@ -1,13 +1,13 @@
-// Module ID: 10409
-// Function ID: 10410
+// Module ID: 10457
+// Function ID: 10458
 // Name: StickerPackBanner
-// Dependencies: [19, 17, 21, 6680, 5837, 2]
+// Dependencies: [19, 17, 21, 6695, 5851, 2]
 // Exports: default
 
-// Module 10409 (StickerPackBanner)
+// Module 10457 (StickerPackBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import StickersUtils from "StickersUtils" /* 6680 */;
+import StickersUtils from "StickersUtils" /* 6695 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

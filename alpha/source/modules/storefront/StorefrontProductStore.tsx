@@ -1,9 +1,9 @@
-// Module ID: 8915
-// Function ID: 8916
+// Module ID: 8932
+// Function ID: 8933
 // Name: StorefrontProductStore
 // Dependencies: [504, 572, 2]
 
-// Module 8915 (StorefrontProductStore)
+// Module 8932 (StorefrontProductStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

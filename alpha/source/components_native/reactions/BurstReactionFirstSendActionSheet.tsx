@@ -1,7 +1,7 @@
 // Module ID: 5140
 // Function ID: 5141
 // Name: BurstReactionFirstSendActionSheet
-// Dependencies: [19, 17, 21, 5141, 575, 5381, 5394, 1113, 5395, 5099, 5737, 5738, 1187, 5747, 5754, 5171, 4974, 5140, 2123, 572, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5382, 5395, 1113, 5396, 5099, 5751, 5752, 1187, 5761, 5768, 5171, 4974, 5140, 2123, 572, 2]
 // Exports: default, openBurstReactionFirstSendActionSheet
 
 // Module 5140 (BurstReactionFirstSendActionSheet)
@@ -13,13 +13,13 @@ import asyncRequire from "asyncRequire" /* 2123 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import burst_reactions_BurstReactionEffectUtils from "burst_reactions/BurstReactionEffectUtils" /* 5099 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import getDeviceSpecificString from "getDeviceSpecificString" /* 5394 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 5737 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5738 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import getDeviceSpecificString from "getDeviceSpecificString" /* 5395 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import BurstReactionAnimationPreviewDefault from "BurstReactionAnimationPreview" /* 5751 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5752 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -82,7 +82,7 @@ export default function BurstReactionFirstSendActionSheet(arg0) {
   items[1] = React3(Text, obj9);
   items1 = [hasOwnProperty(_false, obj7), , ];
   const obj10 = { style: tmp.body, children: React3(Text_Text.Text, obj11) };
-  obj11 = { style: tmp.textContainer, variant: "text-md/normal", children: deviceSpecificString };
+  obj11 = { style: tmp.textContainer, variant: "body-md/normal", children: deviceSpecificString };
   items1[1] = React3(_false, obj10);
   const obj12 = { text: intl2.string(intl3.t["+IrDzN"]), onPress: onDismiss };
   const Button = components_Button_Button.Button;

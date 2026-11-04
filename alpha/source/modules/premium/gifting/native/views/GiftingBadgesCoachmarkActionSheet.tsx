@@ -1,25 +1,25 @@
-// Module ID: 19196
-// Function ID: 19197
+// Module ID: 19299
+// Function ID: 19300
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8887, 4987, 21, 5141, 575, 10746, 5381, 5322, 5395, 10749, 5747, 1113, 2763, 5754, 10688, 7471, 5837, 19197, 13501, 504, 8879, 2]
+// Dependencies: [19, 17, 8904, 4987, 21, 5141, 575, 10794, 5382, 5323, 5396, 10797, 5761, 1113, 2763, 5768, 10736, 7487, 5851, 19300, 13585, 504, 8896, 2]
 // Exports: default
 
-// Module 19196 (GiftingBadgesCoachmarkActionSheet)
+// Module 19299 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2763 from "module_2763" /* 2763 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import BadgeId from "BadgeId" /* 8879 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10688 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10749 */;
-import _modDef19197 from "module_19197" /* 19197 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import BadgeId from "BadgeId" /* 8896 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10736 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10797 */;
+import _modDef19300 from "module_19300" /* 19300 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8887 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   ({ currentTier, giftCount } = markAsDismissed);
   const variant = markAsDismissed.variant;
   const tmp = closure_9();
-  let obj = markAsDismissed(10746);
+  let obj = markAsDismissed(10794);
   const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(currentTier);
   const items = [markAsDismissed];
   const items1 = [markAsDismissed];
@@ -68,7 +68,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   const obj4 = { style: tmp.graphicContainer, children: tmp7Result };
   tmp7Result = null != giftingBadgeTierIconUrl;
   obj3 = { style: tmp.container, children: items2 };
-  const BottomSheet = markAsDismissed(5395).BottomSheet;
+  const BottomSheet = markAsDismissed(5396).BottomSheet;
   if (tmp7Result) {
     const obj5 = { icon: giftingBadgeTierIconUrl, size: 120 };
     tmp7Result = tmp7(GiftingBadgeIconDefault, obj5);
@@ -76,7 +76,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   items2 = [closure_7(View, obj4), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };
   const obj7 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-strong", children: format(prop, { tierName: str }) };
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   const intl = tmp2(1113).intl;
   format = intl.format;
   str = currentTier.name;
@@ -85,8 +85,8 @@ function HasBadgeCoachmark(markAsDismissed) {
     str = "";
   }
   items3 = [closure_7(Text, obj7), ];
-  const obj8 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  const Text2 = tmp2(5747).Text;
+  const obj8 = { style: tmp.text, variant: "body-sm/medium", color: "text-default", children: stringResult };
+  const Text2 = tmp2(5761).Text;
   if ("noCount" === variant) {
     const intl3 = tmp2(1113).intl;
     stringResult = intl3.string(tmp12(2763)["0N8fCf"]);
@@ -104,7 +104,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   items2[1] = closure_8(View, obj6);
   const obj10 = { style: tmp.footer, children: closure_7(Button, obj11) };
   obj11 = { grow: true, text: intl4.string(markAsDismissed(1113).t.RzWDqY), onPress: callback };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   intl4 = tmp2(1113).intl;
   items2[2] = closure_7(View, obj10);
   return closure_7(BottomSheet, obj2);
@@ -145,27 +145,27 @@ function NewBadgeCoachmark(markAsDismissed) {
   let obj = { startExpanded: true, onDismiss: callback1, children: closure_8(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
   const obj3 = { style: tmp.graphicContainer, children: closure_7(tmp4, obj4) };
-  const BottomSheet = markAsDismissed(5395).BottomSheet;
+  const BottomSheet = markAsDismissed(5396).BottomSheet;
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef19197 };
+  obj5 = { uri: _modDef19300 };
   tmp4 = FastImageDefault;
   items2 = [closure_7(View, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };
   const obj7 = { style: tmp.text, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef2763.Q2RQka) };
-  const Text = markAsDismissed(5747).Text;
+  const Text = markAsDismissed(5761).Text;
   intl = markAsDismissed(1113).intl;
   items3 = [closure_7(Text, obj7), ];
-  const obj8 = { style: tmp.text, variant: "text-sm/medium", color: "text-muted", children: intl2.string(_modDef2763["3EQnkg"]) };
-  const Text2 = markAsDismissed(5747).Text;
+  const obj8 = { style: tmp.text, variant: "body-sm/medium", color: "text-muted", children: intl2.string(_modDef2763["3EQnkg"]) };
+  const Text2 = markAsDismissed(5761).Text;
   intl2 = markAsDismissed(1113).intl;
   items3[1] = closure_7(Text2, obj8);
   items2[1] = closure_8(View, obj6);
   const obj9 = { style: tmp.footer, children: closure_7(Button, obj10) };
   obj10 = { grow: true, text: intl3.string(_modDef2763.DZnomS), icon: closure_7(GiftIcon, obj11), onPress: callback };
-  Button = markAsDismissed(5754).Button;
+  Button = markAsDismissed(5768).Button;
   intl3 = markAsDismissed(1113).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(13501).GiftIcon;
+  GiftIcon = markAsDismissed(13585).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 }

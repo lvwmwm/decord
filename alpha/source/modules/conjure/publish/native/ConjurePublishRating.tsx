@@ -1,19 +1,19 @@
-// Module ID: 12909
-// Function ID: 12910
+// Module ID: 12990
+// Function ID: 12991
 // Name: ConjurePublishRating
-// Dependencies: [32, 19, 17, 5142, 21, 5141, 575, 1652, 5377, 5757, 5758, 10193, 10191, 7106, 12910, 504, 12384, 5747, 5381, 12911, 2123, 12911, 1113, 3995, 2]
+// Dependencies: [32, 19, 17, 5142, 21, 5141, 575, 1652, 5378, 5771, 5772, 10241, 10239, 7121, 12991, 504, 12449, 5761, 5382, 12992, 2123, 12992, 1113, 3995, 2]
 // Exports: default
 
-// Module 12909 (ConjurePublishRating)
+// Module 12990 (ConjurePublishRating)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import springPresets from "springPresets" /* 5758 */;
-import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12911 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import springPresets from "springPresets" /* 5772 */;
+import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12992 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -86,13 +86,13 @@ function Star(rating) {
   ConjurePublishRatingTsx1.__initData = tmp7;
   const animatedStyle = obj2.useAnimatedStyle(ConjurePublishRatingTsx1);
   if (tmp2) {
-    StarOutlineIcon = tmp3(10193).StarIcon;
+    StarOutlineIcon = tmp3(10241).StarIcon;
   } else {
-    StarOutlineIcon = tmp3(10191).StarOutlineIcon;
+    StarOutlineIcon = tmp3(10239).StarOutlineIcon;
   }
   const obj3 = { style: tmp.star, accessibilityRole: "button", accessibilityLabel: tmp3Result.conjurePublishRatingOptionLabel(rating), disabled: null != picked, hitSlop: reducedMotion(575).space.PX_8, onPress, children: closure_7(View, obj4) };
-  const PressableOpacity = tmp3(7106).PressableOpacity;
-  tmp3Result = rating(12910);
+  const PressableOpacity = tmp3(7121).PressableOpacity;
+  tmp3Result = rating(12991);
   obj4 = { style: animatedStyle, children: closure_7(StarOutlineIcon, obj5) };
   View = reducedMotion(1652).View;
   const colors = reducedMotion(575).colors;
@@ -118,6 +118,7 @@ export default function ConjurePublishRating(arg0) {
   let intl;
   let items2;
   let items3;
+  let placement;
   let projectId;
   let prop;
   let status;
@@ -128,12 +129,12 @@ export default function ConjurePublishRating(arg0) {
   let stateFromStores;
   let first;
   react = undefined;
-  ({ projectId, turnId, cta, status } = arg0);
+  ({ projectId, turnId, cta, status, placement } = arg0);
   let tmp = closure_9();
   let tmp2 = rating;
   let tmp3 = stateFromStores;
   let obj = rating(stateFromStores[14]);
-  const conjurePublishRating = obj.useConjurePublishRating({ projectId, turnId, cta, status });
+  const conjurePublishRating = obj.useConjurePublishRating({ projectId, turnId, cta, status, placement });
   rating = conjurePublishRating.rating;
   const rate = conjurePublishRating.rate;
   const items = [AccessibilityStore];
@@ -161,7 +162,7 @@ export default function ConjurePublishRating(arg0) {
       const obj4 = { size: "xs", color: rate(tmp3[6]).colors.ICON_BRAND };
       const SparklesIcon = tmp2(tmp3[16]).SparklesIcon;
       items2 = [closure_7(SparklesIcon, obj4), ];
-      const obj5 = { variant: "text-xs/medium", color: "text-muted", children: tmp2Result.conjurePublishRatingThanks(rating) };
+      const obj5 = { variant: "body-xs/medium", color: "text-muted", children: tmp2Result.conjurePublishRatingThanks(rating) };
       const Text2 = tmp2(tmp3[17]).Text;
       tmp2Result = tmp2(tmp3[14]);
       items2[1] = closure_7(Text2, obj5);
@@ -170,7 +171,7 @@ export default function ConjurePublishRating(arg0) {
     return tmp9(View, obj6);
   }
   obj6 = { style: tmp.row, children: items3 };
-  const obj7 = { variant: "text-xs/medium", color: "text-muted", children: intl.string(rate(tmp3[23]).mTV326) };
+  const obj7 = { variant: "body-xs/medium", color: "text-muted", children: intl.string(rate(tmp3[23]).mTV326) };
   const Text = tmp2(tmp3[17]).Text;
   intl = tmp2(tmp3[22]).intl;
   items3 = [closure_7(Text, obj7), ];
@@ -190,7 +191,7 @@ export default function ConjurePublishRating(arg0) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { rating: tmp2 };
-            const tmp7 = asyncRequire(12911, dependencyMap.paths);
+            const tmp7 = asyncRequire(12992, dependencyMap.paths);
             openLazy(tmp7, ConjureRatingFeedbackSheet.CONJURE_RATING_FEEDBACK_SHEET_KEY, obj);
           }
         }

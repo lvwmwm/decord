@@ -1,21 +1,20 @@
-// Module ID: 9943
-// Function ID: 9944
+// Module ID: 9961
+// Function ID: 9962
 // Name: HeaderShared
-// Dependencies: [19, 17, 9944, 21, 5141, 575, 5747, 5719, 7125, 7131, 9945, 1377, 9950, 1627, 1500, 9952, 5732, 558, 9955, 14703, 7106, 1187, 2]
+// Dependencies: [19, 17, 9962, 21, 5141, 575, 5732, 7140, 5761, 7121, 1377, 9963, 9968, 1627, 1500, 9970, 5745, 558, 9973, 14783, 1187, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9943 (HeaderShared)
+// Module 9961 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import useToken2 from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import _mod7131 from "module_7131" /* 7131 */;
-import react_native from "react-native" /* 9944 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9950 */;
-import ChannelActionsDefault from "ChannelActions" /* 9955 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14703 */;
+import PlatformUtils from "PlatformUtils" /* 1377 */;
+import useToken2 from "useToken" /* 5732 */;
+import Pressables from "Pressables" /* 7121 */;
+import react_native from "react-native" /* 9962 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9968 */;
+import ChannelActionsDefault from "ChannelActions" /* 9973 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 14783 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -33,6 +32,8 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
+let tmp2;
+const Text_Text = tmp2(5761);
 class GenericHeaderTitle {
   constructor(subtitleColor) {
     let children;
@@ -77,7 +78,7 @@ class GenericHeaderTitle {
     }
     const tmp6 = closure_8();
     closure_5 = tmp6;
-    const tmp7 = tmp5(7125)("os-drawn");
+    const tmp7 = tmp5(7140)("os-drawn");
     if (null == subtitle) {
       let renderTitleContainerResult;
       if (null == tmp7) {
@@ -90,7 +91,7 @@ class GenericHeaderTitle {
     const tmp8 = closure_7;
     const tmp9 = variant;
     if (null != subtitle) {
-      let obj = { lineClamp: 1, variant: "text-xs/medium", color: str, style: tmp6.subtitleText, maxFontSizeMultiplier, children: subtitle };
+      let obj = { lineClamp: 1, variant: "body-xs/medium", color: str, style: tmp6.subtitleText, maxFontSizeMultiplier, children: subtitle };
       tmp10 = closure_6(Text_Text.Text, obj);
     }
     items[1] = tmp10;
@@ -103,24 +104,64 @@ function renderGenericTitle(children) {
   return metroRequire(GenericHeaderTitle, obj);
 }
 class HeaderTextButton {
-  constructor(labelStyle) {
+  constructor(arg0) {
+    let accessibilityLabel;
+    let closure_129_0;
+    let disabled;
     let items;
-    labelStyle = labelStyle.labelStyle;
-    const merged = Object.assign(labelStyle, Object.assign({ labelStyle: 0 }));
+    let label;
+    let labelStyle;
+    let obj2;
+    let style;
+    let testID;
+    let tmp6;
+    ({ label, onPress: closure_129_0, disabled, accessibilityLabel } = arg0);
+    ({ labelStyle, testID, style } = arg0);
+    const tmp = closure_8();
+    const PressableHighlight = Pressables.PressableHighlight;
+    if (accessibilityLabel == null) {
+      accessibilityLabel = label;
+    }
     const obj = {
-      labelStyle: items,
-      displayMode: "default",
-      backImage() {
-        return null;
+      accessibilityRole: "button",
+      accessibilityLabel,
+      accessibilityState: obj2,
+      disabled,
+      testID,
+      onPress: function handlePress() {
+        if (null != closure_1_0) {
+          const _requestAnimationFrame = requestAnimationFrame;
+          const animationFrame = requestAnimationFrame(() => closure_1_0());
+        }
       },
-      truncatedLabel: merged.label,
-      accessibilityLabel: merged.label
+      hitSlop: tmp6,
+      androidRippleConfig: { borderless: false, foreground: true },
+      style: items,
+      children: metroRequire(Text_Text.Text, { variant: "body-md/semibold", color: "text-brand", lineClamp: 1, maxFontSizeMultiplier: 1, style: labelStyle, children: label })
     };
-    items = [closure_8().backButtonLabel, labelStyle];
-    closure_8();
-    const HeaderBackButton = _mod7131.HeaderBackButton;
-    const merged1 = Object.assign(merged);
-    return metroRequire(HeaderBackButton, obj);
+    obj2 = undefined;
+    if (true === disabled) {
+      obj2 = { disabled: true };
+    }
+    tmp6 = undefined;
+    const tmp3Result = PlatformUtils;
+    if (tmp3Result.isAndroid()) {
+      tmp6 = rect;
+    }
+    items = [tmp.headerTextButton, , , ];
+    let prop = null;
+    const tmp3Result2 = PlatformUtils;
+    if (tmp3Result2.isAndroid()) {
+      prop = tmp.headerTextButtonAndroid;
+    }
+    items[1] = prop;
+    let prop1 = null;
+    if (true === disabled) {
+      prop1 = tmp.headerTextButtonDisabled;
+    }
+    items[2] = prop1;
+    items[3] = style;
+    return metroRequire(PressableHighlight, obj);
   }
 }
 function HeaderChannelActions(arg0) {
@@ -136,14 +177,14 @@ function HeaderChannelActions(arg0) {
 const MIN_HEADER_HEIGHT = react_native.MIN_HEADER_HEIGHT;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { headerRightContainer: { marginRight: 16 }, headerWrapper: obj2, actionButtonPressable: { padding: 8, zIndex: 100, width: 40, height: 40, borderRadius: 20 }, actionButtonIcon: obj3, headerText: { textAlign: "center", fontSize: 18 }, subtitleText: { textAlign: "center" }, backButtonLabel: obj4, titleContainer: obj5 };
+let obj = { headerRightContainer: { marginRight: 16 }, headerWrapper: obj2, actionButtonPressable: { padding: 8, zIndex: 100, width: 40, height: 40, borderRadius: 20 }, actionButtonIcon: obj3, headerText: { textAlign: "center", fontSize: 18 }, subtitleText: { textAlign: "center" }, headerTextButton: obj4, headerTextButtonAndroid: { marginVertical: 3, marginHorizontal: 3 }, headerTextButtonDisabled: { opacity: 0.5 }, titleContainer: obj5 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "row", alignItems: "center", flexShrink: 0, flexGrow: 1, borderColor: nativeDefault.colors.MOBILE_HEADER_BORDER, borderBottomWidth: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.MOBILE_HEADER_ICON_DEFAULT };
-obj4 = { color: nativeDefault.colors.TEXT_BRAND };
-let merged = Object.assign(Text_Text.TextStyleSheet["text-md/semibold"]);
+obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "center", flexShrink: 0, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.md, overflow: "hidden" };
 obj5 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 const metroImportAll = createStyles(obj);
+const rect = { top: nativeDefault.space.PX_16, right: nativeDefault.space.PX_16, bottom: nativeDefault.space.PX_16, left: nativeDefault.space.PX_16 };
 const memoResult = react.memo(function HeaderInner(route) {
   let back;
   let headerRight;
@@ -171,7 +212,7 @@ const memoResult = react.memo(function HeaderInner(route) {
   if (undefined === fn) {
     fn = (arg0) => {
       const obj = { navigation };
-      const PressableNavigatorBackIcon = navigation(dependencyMap[10]).PressableNavigatorBackIcon;
+      const PressableNavigatorBackIcon = navigation(dependencyMap[11]).PressableNavigatorBackIcon;
       const merged = Object.assign(arg0);
       const merged1 = Object.assign(c1);
       return closure_2_6(PressableNavigatorBackIcon, obj);
@@ -196,7 +237,7 @@ const memoResult = react.memo(function HeaderInner(route) {
   } else {
     tmp6 = headerTitle;
   }
-  const tmp7 = tmp2(num[8])("custom-drawn");
+  const tmp7 = tmp2(num[7])("custom-drawn");
   const layoutEffect = obj3.useLayoutEffect(() => {
     const obj = style(num[16]);
     return obj.DeprecatedLayoutAnimation({ duration: 0 });
@@ -245,6 +286,7 @@ const memoResult = react.memo(function HeaderInner(route) {
   }
   return tmpResultResult;
 });
+const map1 = memoResult;
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/HeaderShared.tsx");
 
 export { GenericHeaderTitle };
@@ -261,14 +303,14 @@ export function getRenderHeaderTextButton(intl, onPress) {
 export function renderHeader(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
-  return metroRequire(memoResult, obj);
+  return metroRequire(map1, obj);
 }
 export function getRenderBackImage(navigation, arg1) {
   let closure_0 = navigation;
   let closure_1 = arg1;
   return (arg0) => {
     const obj = { navigation };
-    const PressableNavigatorBackIcon = navigation(dependencyMap[10]).PressableNavigatorBackIcon;
+    const PressableNavigatorBackIcon = navigation(dependencyMap[11]).PressableNavigatorBackIcon;
     const merged = Object.assign(arg0);
     const merged1 = Object.assign(c1);
     return closure_2_6(PressableNavigatorBackIcon, obj);
@@ -296,7 +338,7 @@ export function getDefaultStackHeaderProps(navigation) {
   return {
     headerLeft: (arg0) => {
       const obj = { navigation };
-      const PressableNavigatorBackIcon = navigation(dependencyMap[10]).PressableNavigatorBackIcon;
+      const PressableNavigatorBackIcon = navigation(dependencyMap[11]).PressableNavigatorBackIcon;
       const merged = Object.assign(arg0);
       const merged1 = Object.assign(c1);
       return closure_2_6(PressableNavigatorBackIcon, obj);
@@ -314,7 +356,7 @@ export function getDefaultChannelStackHeaderProps(navigation, route) {
   let obj = {
     headerLeft: (arg0) => {
       const obj = { navigation };
-      const PressableNavigatorBackIcon = navigation(dependencyMap[10]).PressableNavigatorBackIcon;
+      const PressableNavigatorBackIcon = navigation(dependencyMap[11]).PressableNavigatorBackIcon;
       const merged = Object.assign(arg0);
       const merged1 = Object.assign(c1);
       return closure_2_6(PressableNavigatorBackIcon, obj);

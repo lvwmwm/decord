@@ -1,16 +1,16 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11982
+// Function ID: 11983
 // Name: AnimatedEffectEmoji
-// Dependencies: [19, 17, 5142, 21, 1089, 5141, 575, 5837, 1187, 504, 1652, 5377, 7654, 2]
+// Dependencies: [19, 17, 5142, 21, 1089, 5141, 575, 5851, 1187, 504, 1652, 5378, 7670, 2]
 // Exports: default
 
-// Module 11923 (AnimatedEffectEmoji)
+// Module 11982 (AnimatedEffectEmoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import native from "native" /* 1187 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -93,7 +93,7 @@ export default function AnimatedEffectEmoji(userId) {
     };
   }, items1);
   const tmp6 = onComplete(1652);
-  const items2 = [closure_11, onComplete(1652).withSequence, onComplete(5377).withTiming, -120, onComplete(1652).withDelay, stateFromStores, onComplete(1187).STANDARD_EASING];
+  const items2 = [closure_11, onComplete(1652).withSequence, onComplete(5378).withTiming, -120, onComplete(1652).withDelay, stateFromStores, onComplete(1187).STANDARD_EASING];
   let c0;
   let c1;
   let c2;
@@ -140,7 +140,7 @@ export default function AnimatedEffectEmoji(userId) {
     items4[3] = hasNotch;
     const obj3 = { style: tmp.voiceChannelEffectEmoji, children: null };
     ({ url: tmp2Result2.getEffectUrl(emoji), surrogates: emoji.name });
-    tmp2Result2 = tmp2(7654);
+    tmp2Result2 = tmp2(7670);
     tmp16Result = tmp16(View, obj2);
   }
   return tmp16Result;

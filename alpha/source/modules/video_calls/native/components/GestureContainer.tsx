@@ -1,10 +1,10 @@
-// Module ID: 12143
-// Function ID: 12144
+// Module ID: 12202
+// Function ID: 12203
 // Name: GestureContainer
-// Dependencies: [19, 17, 11133, 11837, 21, 5141, 575, 1493, 1652, 5426, 1705, 6864, 5377, 1187, 2]
+// Dependencies: [19, 17, 11181, 11896, 21, 5141, 575, 1493, 1652, 5428, 1705, 6879, 5378, 1187, 2]
 // Exports: default
 
-// Module 12143 (GestureContainer)
+// Module 12202 (GestureContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,11 +12,11 @@ import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
-import ChannelCallStore from "ChannelCallStore" /* 11133 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
+import ChannelCallStore from "ChannelCallStore" /* 11181 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 11837 */;
+import Constants from "Constants" /* 11896 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp3;
-const ModalActionCreatorsDefault = tmp3(6864);
+const ModalActionCreatorsDefault = tmp3(6879);
 const View = react_native.View;
 const useChannelCallStore = ChannelCallStore.useChannelCallStore;
 ({ PAN_GESTURE_FAIL_OFFSET_Y: hasOwnProperty, SWIPE_TO_CHAT_ACTIVE_OFFSET: metroRequire } = Constants);
@@ -138,6 +138,6 @@ export default function GestureContainer(children) {
   GestureContainerTsx3.__initData = tmp20;
   const animatedStyle = useAnimatedStyle(GestureContainerTsx3);
   const obj3 = { gesture: failOffsetXResult, children: null };
-  const GestureDetector = tmp5(5426).GestureDetector;
+  const GestureDetector = tmp5(5428).GestureDetector;
   return <View style={tmp.background}>{null}</View>;
 };

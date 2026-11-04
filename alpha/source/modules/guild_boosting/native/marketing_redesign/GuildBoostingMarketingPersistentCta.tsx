@@ -1,20 +1,20 @@
-// Module ID: 7707
-// Function ID: 7708
+// Module ID: 7723
+// Function ID: 7724
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 5142, 1072, 21, 5141, 575, 563, 1652, 5757, 5710, 7083, 5747, 7708, 2]
+// Dependencies: [19, 17, 5142, 1072, 21, 5141, 575, 563, 1652, 5771, 5723, 7098, 5761, 7724, 2]
 // Exports: default
 
-// Module 7707 (GuildBoostingMarketingPersistentCta)
+// Module 7723 (GuildBoostingMarketingPersistentCta)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 7708 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 7724 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -123,7 +123,7 @@ export default function GuildBoostingMarketingPersistentCta(guild) {
   const obj6 = { style: tmp.guildIcon, textStyle: tmp.guildIconText, guild, size: GuildIcon.GuildIconSizes.LARGE };
   const tmp14 = GuildIconDefault;
   items5 = [metroRequire(tmp14, obj6), ];
-  const obj7 = { style: tmp.guildName, variant: "text-md/semibold", lineClamp: 1, children: guild.name };
+  const obj7 = { style: tmp.guildName, variant: "body-md/semibold", lineClamp: 1, children: guild.name };
   items5[1] = metroRequire(Text_Text.Text, obj7);
   items6 = [metroImportDefault(View, obj5), ];
   const obj8 = { style: tmp.buttonContainer, children: metroRequire(GuildBoostingSubscribeButtonDefault, obj9) };

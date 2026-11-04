@@ -1,16 +1,16 @@
-// Module ID: 9820
-// Function ID: 9821
+// Module ID: 9838
+// Function ID: 9839
 // Name: VirtualCurrencyUtils
-// Dependencies: [1072, 1074, 4987, 1387, 7531, 5171, 4974, 2]
+// Dependencies: [1072, 1074, 4987, 1387, 7547, 5171, 4974, 2]
 // Exports: dismissOrbsOnboardingExperience, get1PShopApplicationIdForSKU
 
-// Module 9820 (VirtualCurrencyUtils)
+// Module 9838 (VirtualCurrencyUtils)
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7531 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7547 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import size from "module_2" /* 2 */;
 

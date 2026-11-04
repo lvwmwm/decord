@@ -1,21 +1,21 @@
-// Module ID: 19145
-// Function ID: 19146
+// Module ID: 19248
+// Function ID: 19249
 // Name: RestrictedMessagePreviewList
-// Dependencies: [19, 17, 6181, 21, 5141, 19146, 575, 8777, 5747, 1113, 5855, 4963, 7446, 504, 8874, 8501, 19147, 10016, 7106, 19148, 2]
+// Dependencies: [19, 17, 6196, 21, 5141, 19249, 575, 8794, 5761, 1113, 5869, 4963, 7462, 504, 8891, 8518, 19250, 10064, 7121, 19251, 2]
 // Exports: default
 
-// Module 19145 (RestrictedMessagePreviewList)
+// Module 19248 (RestrictedMessagePreviewList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import DateUtils from "DateUtils" /* 4963 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 8777 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 19146 */;
-import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 19148 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 8794 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 19249 */;
+import RestrictedBlockedMessageGroupDefault from "RestrictedBlockedMessageGroup" /* 19251 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ function HiddenMedia(count) {
       let items;
       const obj = { style: mediaPlaceholderCard.mediaPlaceholderCard, children: items };
       items = [metroRequire(ImageWarningIcon.ImageWarningIcon, { size: "lg", color: "text-muted" }), ];
-      const obj2 = { variant: "text-sm/medium", color: "text-muted", children: intl.string(intl2.t.B2xSxL) };
+      const obj2 = { variant: "body-sm/medium", color: "text-muted", children: intl.string(intl2.t.B2xSxL) };
       const Text = Text_Text.Text;
       intl = intl2.intl;
       items[1] = metroRequire(Text, obj2);
@@ -57,7 +57,7 @@ function HiddenMedia(count) {
   ];
   let obj2 = { style: tmp.mediaHiddenRow, children: items1 };
   items1 = [closure_6(require("CircleInformationIcon").CircleInformationIcon, { size: "sm", color: "text-muted" }), ];
-  const obj3 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(require("intl").t["VGf+K3"]) };
+  const obj3 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(require("intl").t["VGf+K3"]) };
   let Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items1[1] = closure_6(Text, obj3);
@@ -209,7 +209,7 @@ export default function RestrictedMessagePreviewList(channelId) {
         const obj2 = { style: closure_1.dateDivider, children: items };
         const obj3 = { style: closure_1.dividerLine };
         items = [metroRequire(View, obj3), , ];
-        const obj4 = { variant: "text-xs/semibold", color: "text-muted", children: obj5.dateFormat(message.timestamp, "LL") };
+        const obj4 = { variant: "body-xs/semibold", color: "text-muted", children: obj5.dateFormat(message.timestamp, "LL") };
         const Text = Text_Text.Text;
         obj5 = DateUtils;
         items[1] = metroRequire(Text, obj4);

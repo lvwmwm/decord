@@ -1,29 +1,30 @@
-// Module ID: 13812
-// Function ID: 13813
+// Module ID: 13898
+// Function ID: 13899
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5142, 1385, 13571, 6186, 21, 1357, 5141, 575, 1411, 504, 13813, 13814, 1493, 5195, 6555, 13777, 5282, 13779, 1113, 3219, 3187, 5835, 13798, 8767, 13782, 12109, 13815, 13572, 5831, 1187, 10688, 7471, 13501, 5849, 2]
+// Dependencies: [5, 32, 19, 17, 5142, 1385, 13656, 6201, 21, 1357, 5141, 575, 1411, 504, 13899, 13900, 1493, 5195, 6570, 13863, 5283, 13865, 1113, 3219, 3187, 5849, 13884, 8784, 13868, 12168, 13901, 13658, 5845, 1187, 13654, 10736, 7487, 13585, 5863, 2]
 // Exports: default
 
-// Module 13812 (CheckpointFriendsStatsScreen)
+// Module 13898 (CheckpointFriendsStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef3187 from "module_3187" /* 3187 */;
-import FriendsIcon from "FriendsIcon" /* 5835 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import ChatIcon from "ChatIcon" /* 8767 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10688 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12109 */;
-import CheckpointTextDefault from "CheckpointText" /* 13779 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13782 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13798 */;
+import FriendsIcon from "FriendsIcon" /* 5849 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import ChatIcon from "ChatIcon" /* 8784 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10736 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12168 */;
+import Tracking from "Tracking" /* 13654 */;
+import CheckpointTextDefault from "CheckpointText" /* 13865 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13868 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13884 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import UserStore from "UserStore" /* 1385 */;
-import CheckpointStore from "CheckpointStore" /* 13571 */;
-import CheckpointConstants from "CheckpointConstants" /* 6186 */;
+import CheckpointStore from "CheckpointStore" /* 13656 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -62,7 +63,7 @@ function FriendsHeader(title) {
   const obj2 = { style: tmp.heading, children: items1 };
   const obj4 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
   items[0] = map1(FriendsIcon.FriendsIcon, obj4);
-  const obj5 = { isStepHeading: true, variant: "heading-md/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const obj5 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp2 = CheckpointTextDefault;
   const intl = intl6.intl;
   stringResult = intl.string(_modDef3187.ZQakPR);
@@ -219,7 +220,7 @@ function SidekickMessageInput(user) {
   [tmp7, c4] = _slicedToArray(react.useState(false), 2);
   let tmp10 = null != value;
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = value(13815)(user.id);
+  const tmp9 = value(13901)(user.id);
   if (tmp10) {
     tmp10 = value.length > 0;
   }
@@ -254,16 +255,19 @@ function SidekickMessageInput(user) {
     let obj5 = {
       onPress: function handleGift() {
           let items;
-          obj = { recipientUserId: user.id, analyticsLocations: items };
+          obj = Tracking;
+          const result = obj.trackCheckpoint2026GiftCtaClicked(user.id);
+          const obj2 = { recipientUserId: user.id, analyticsLocations: items };
           const openGiftModal = utils_openGiftModal.openGiftModal;
-          items = [];
+          items = [, ];
           utils_openGiftModal;
           items[0] = AnalyticsLocationDefault.CHECKPOINT;
-          openGiftModal(obj);
+          items[1] = AnalyticsLocationDefault.CHECKPOINT_SIDEKICK;
+          openGiftModal(obj2);
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp15(1113).t.Ve9Ge6),
-      children: tmp14(tmp15(13501).GiftIcon, obj6)
+      children: tmp14(tmp15(13585).GiftIcon, obj6)
     };
     intl2 = tmp15(1113).intl;
     obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
@@ -277,7 +281,7 @@ function SidekickMessageInput(user) {
       accessibilityRole: "button",
       accessibilityLabel: intl3.string(user(1113).t.oeb1vg),
       accessibilityState: obj8,
-      children: closure_13(user(5849).SendMessageIcon, obj9)
+      children: closure_13(user(5863).SendMessageIcon, obj9)
     };
     disabled = undefined;
     const tmp19 = obj;

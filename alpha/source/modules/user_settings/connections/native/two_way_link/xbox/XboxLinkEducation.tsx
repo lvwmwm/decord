@@ -1,20 +1,20 @@
-// Module ID: 14760
-// Function ID: 14761
+// Module ID: 14840
+// Function ID: 14841
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1072, 21, 5141, 9862, 2190, 14761, 5837, 5747, 1113, 7412, 5754, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 9880, 2190, 14841, 5851, 5761, 1113, 7428, 5768, 2]
 // Exports: default
 
-// Module 14760 (XboxLinkEducation)
+// Module 14840 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9862 */;
-import _modDef14761 from "module_14761" /* 14761 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9880 */;
+import _modDef14841 from "module_14841" /* 14841 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -46,7 +46,7 @@ export default function XboxLinkEducation(onClose) {
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14761 };
+    const obj = { uri: _modDef14841 };
     return obj;
   }, []);
   items = [, , ];
@@ -56,7 +56,7 @@ export default function XboxLinkEducation(onClose) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = metroRequire(Text, obj6);
-  const obj7 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL }) };
+  const obj7 = { variant: "body-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: intl2.format(intl4.t.yhozpz, { helpdeskArticleUrl: articleURL }) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = metroRequire(Text2, obj7);

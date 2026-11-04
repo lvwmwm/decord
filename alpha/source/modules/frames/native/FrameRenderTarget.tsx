@@ -1,11 +1,11 @@
-// Module ID: 12386
-// Function ID: 12387
+// Module ID: 12451
+// Function ID: 12452
 // Name: FrameRenderTarget
-// Dependencies: [19, 17, 21, 5141, 12387, 12388, 8103, 2]
+// Dependencies: [19, 17, 21, 5141, 12452, 12453, 8119, 2]
 // Exports: default
 
-// Module 12386 (FrameRenderTarget)
-import FramePoolManagerDefault from "FramePoolManager" /* 12388 */;
+// Module 12451 (FrameRenderTarget)
+import FramePoolManagerDefault from "FramePoolManager" /* 12453 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -45,14 +45,14 @@ export default function FrameRenderTarget(frameId) {
   const landscapeSafeAreasConfig = presentation.landscapeSafeAreasConfig;
   const items = [layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig];
   const memo = react.useMemo(() => ({ layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig }), items);
-  const tmp4 = webViewKey(12387)(frameId, level, memo);
+  const tmp4 = webViewKey(12452)(frameId, level, memo);
   webViewKey = tmp4.webViewKey;
   const temporaryParentNodeTag = tmp4.temporaryParentNodeTag;
   if (null == webViewKey) {
     return null;
   } else {
     const obj2 = { webViewKey, temporaryParentNodeTag, style: tmp.target };
-    const tmp13 = closure_6(frameId(8103).WebViewTarget, obj2);
+    const tmp13 = closure_6(frameId(8119).WebViewTarget, obj2);
     let tmp6Result = tmp13;
     if (spinnerWhileLoading) {
       let obj = { style: tmp.target, children: items1 };

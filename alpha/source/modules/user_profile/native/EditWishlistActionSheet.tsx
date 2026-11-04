@@ -1,26 +1,26 @@
-// Module ID: 15139
-// Function ID: 15140
+// Module ID: 15219
+// Function ID: 15220
 // Name: EditWishlistActionSheet
-// Dependencies: [32, 19, 17, 5142, 9599, 9600, 1385, 7896, 8878, 5396, 21, 5141, 575, 1652, 5377, 504, 1627, 7446, 7471, 14958, 15118, 15046, 9606, 8886, 11550, 1113, 5398, 7186, 7489, 14583, 8152, 5858, 2]
+// Dependencies: [32, 19, 17, 5142, 9618, 9619, 1385, 7912, 8895, 5397, 21, 5141, 575, 1652, 5378, 504, 1627, 7462, 7487, 15038, 15198, 15126, 9625, 8903, 11600, 1113, 5400, 7201, 7505, 14663, 8168, 5872, 2]
 // Exports: default
 
-// Module 15139 (EditWishlistActionSheet)
+// Module 15219 (EditWishlistActionSheet)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
-import Constants from "Constants" /* 8878 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8886 */;
-import WishlistRecord from "WishlistRecord" /* 9600 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9606 */;
-import WishlistVisibility2 from "WishlistVisibility" /* 15118 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
+import Constants from "Constants" /* 8895 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8903 */;
+import WishlistRecord from "WishlistRecord" /* 9619 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9625 */;
+import WishlistVisibility2 from "WishlistVisibility" /* 15198 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import WishlistStore from "WishlistStore" /* 9599 */;
+import WishlistStore from "WishlistStore" /* 9618 */;
 import UserStore from "UserStore" /* 1385 */;
-import UserProfileStore from "UserProfileStore" /* 7896 */;
+import UserProfileStore from "UserProfileStore" /* 7912 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -113,14 +113,14 @@ export default function EditWishlistActionSheet(wishlistId) {
   _slicedToArray = obj.useStateFromStores(items, () => stateFromStores2.useReducedMotion);
   const tmp4 = analyticsContext;
   const bottom = analyticsContext(1627)().bottom;
-  let tmp5 = analyticsContext(7446);
+  let tmp5 = analyticsContext(7462);
   if (analyticsLocations1 == null) {
     analyticsLocations1 = [];
   }
-  analyticsLocations = tmp5(analyticsLocations1, tmp4(7471).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
+  analyticsLocations = tmp5(analyticsLocations1, tmp4(7487).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c5, rowWidth } = tmp4(14958)(obj2));
-  const tmp6 = tmp4(14958)(obj2);
+  ({ cardWidth: c5, rowWidth } = tmp4(15038)(obj2));
+  const tmp6 = tmp4(15038)(obj2);
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };
     tmp7 = obj3;
@@ -196,16 +196,16 @@ export default function EditWishlistActionSheet(wishlistId) {
     const result = obj.removeSkuFromWishlist(wishlistId, skuId, analyticsLocations);
   }, items7);
   let obj4 = { scrollable: true, startExpanded: true, title: intl.string(tmp2(1113).t["OEgx/4"]), children: null };
-  const tmp4Result = tmp4(11550);
+  const tmp4Result = tmp4(11600);
   intl = tmp2(1113).intl;
   let obj5 = { contentContainerStyle: { paddingBottom: bottom }, children: null };
   let obj6 = { style: tmp.container, children: null };
   const obj8 = { style: tmp.toggleRow, children: closure_14(TableRowGroup, obj9) };
-  const BottomSheetScrollView = tmp2(5398).BottomSheetScrollView;
+  const BottomSheetScrollView = tmp2(5400).BottomSheetScrollView;
   obj9 = { hasIcons: false, children: closure_14(TableSwitchRow, obj10) };
-  TableRowGroup = tmp2(7186).TableRowGroup;
+  TableRowGroup = tmp2(7201).TableRowGroup;
   obj10 = { label: intl2.string(tmp2(1113).t.b2nFyA), subLabel: intl3.string(tmp2(1113).t.dw58pE), value, onValueChange: callback };
-  TableSwitchRow = tmp2(7489).TableSwitchRow;
+  TableSwitchRow = tmp2(7505).TableSwitchRow;
   intl2 = tmp2(1113).intl;
   intl3 = tmp2(1113).intl;
   const items8 = [closure_14(stateFromStores, obj8), ];

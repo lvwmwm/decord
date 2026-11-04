@@ -1,13 +1,13 @@
-// Module ID: 19554
-// Function ID: 19555
+// Module ID: 19658
+// Function ID: 19659
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 4984, 1097, 19550, 1072, 21, 5141, 1499, 504, 1252, 1113, 2190, 38, 18148, 6864, 2171, 18170, 7412, 5747, 19555, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 4984, 1097, 19654, 1072, 21, 5141, 1499, 504, 1252, 1113, 2190, 38, 18245, 6879, 2171, 18267, 7428, 5761, 19659, 5768, 2]
 // Exports: default
 
-// Module 19554 (ExistingUserAgeGate)
+// Module 19658 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19550 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19654 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -309,7 +309,7 @@ export default function ExistingUserAgeGate(source) {
       const SafeAreaPaddingView = tmp2(tmp3[20]).SafeAreaPaddingView;
       let obj5 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult1 };
       items3 = [closure_13(tmp2(tmp3[21]).Heading, obj5), , , ];
-      let obj7 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: stringResult };
+      let obj7 = { style: tmp.body, variant: "body-md/medium", color: "interactive-text-default", children: stringResult };
       items3[1] = closure_13(tmp2(tmp3[21]).Text, obj7);
       const obj8 = { style: tmp.inputGroup, ref, label: intl5.string(tmp2(tmp3[13]).t.xNpFJ6), date, onChangeDate: tmp9, error: stringResult2 };
       const tmp22Result = tmp22(tmp3[22]);

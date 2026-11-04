@@ -1,12 +1,12 @@
-// Module ID: 11295
-// Function ID: 11296
+// Module ID: 11345
+// Function ID: 11346
 // Name: ForLaterMessageCard
-// Dependencies: [5, 19, 17, 5073, 1072, 21, 5141, 575, 7103, 7212, 5747, 1113, 8152, 5859, 11296, 11300, 6864, 1252, 10322, 2171, 11301, 11302, 504, 11311, 11313, 11314, 2]
+// Dependencies: [5, 19, 17, 5073, 1072, 21, 5141, 575, 7118, 7227, 5761, 1113, 8168, 5873, 11346, 11350, 6879, 1252, 10370, 2171, 11351, 11352, 504, 11361, 11363, 11364, 2]
 
-// Module 11295 (ForLaterMessageCard)
+// Module 11345 (ForLaterMessageCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SavedMessageHelpers from "SavedMessageHelpers" /* 11296 */;
+import SavedMessageHelpers from "SavedMessageHelpers" /* 11346 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let obj2;
 let tmp6;
 let unpackModuleId;
-const AssetRegistryDefault = tmp6(5859);
+const AssetRegistryDefault = tmp6(5873);
 class ForLaterDeletedMessageCard {
   constructor(savedMessage) {
     let IconButton;
@@ -38,12 +38,12 @@ class ForLaterDeletedMessageCard {
     let obj = { variant: "primary", border: "subtle", shadow: "none", style: items, children: items1 };
     items = [, ];
     ({ card: arr[0], deletedCard: arr[1] } = tmp);
-    const Card = savedMessage(7103).Card;
+    const Card = savedMessage(7118).Card;
     const obj2 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const CircleErrorIcon = savedMessage(7212).CircleErrorIcon;
+    const CircleErrorIcon = savedMessage(7227).CircleErrorIcon;
     items1 = [closure_10(CircleErrorIcon, obj2), , ];
-    const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.deletedText, children: stringResult };
-    const Text = savedMessage(5747).Text;
+    const obj3 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.deletedText, children: stringResult };
+    const Text = savedMessage(5761).Text;
     const tmp2 = closure_11;
     if (null != savedMessage.saveData.dueAt) {
       const intl2 = tmp3(1113).intl;
@@ -64,7 +64,7 @@ class ForLaterDeletedMessageCard {
         return obj.removeSavedMessage(savedMessage.saveData);
       }
     };
-    IconButton = tmp3(8152).IconButton;
+    IconButton = tmp3(8168).IconButton;
     intl3 = tmp3(1113).intl;
     items1[2] = closure_10(View, obj4);
     return tmp2(Card, obj);

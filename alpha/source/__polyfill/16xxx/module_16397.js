@@ -1,20 +1,7 @@
 // Module ID: 16397
 // Function ID: 16398
 // Dependencies: []
-// Exports: default
 
 // Module 16397
 
-export default () => (arg0) => {
-  let closure_0 = arg0;
-  let obj = {
-    features: {
-      apiResponse(request, response, tmp4Result) {
-        const obj = { request, response, duration: tmp4Result };
-        const tmp = response && response.status && typeof response.status === "number" && response.status >= 200 && response.status <= 299;
-        closure_0.send("api.response", obj, !tmp);
-      }
-    }
-  };
-  return obj;
-};
+export default (arg0, value) => ({ enumerable: !(1 & arg0), configurable: !(2 & arg0), writable: !(4 & arg0), value });

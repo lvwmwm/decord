@@ -1,19 +1,19 @@
-// Module ID: 11943
-// Function ID: 11944
+// Module ID: 12002
+// Function ID: 12003
 // Name: PostMessageTransport
-// Dependencies: [5, 32, 4989, 6966, 6570, 1072, 6967, 1089, 11944, 568, 1108, 1252, 5062, 9461, 6968, 11945, 11015, 6969, 9457, 2123, 11947, 11948, 2]
+// Dependencies: [5, 32, 4989, 6981, 6585, 1072, 6982, 1089, 12003, 568, 1108, 1252, 5062, 9479, 6983, 12004, 11064, 6984, 9475, 2123, 12006, 12007, 2]
 
-// Module 11943 (PostMessageTransport)
+// Module 12002 (PostMessageTransport)
 import _mod568 from "module_568" /* 568 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import Constants2 from "Constants" /* 6570 */;
-import FramesConstants from "FramesConstants" /* 6967 */;
-import RPCErrorDefault from "RPCError" /* 9461 */;
-import RPCOpcodesDefault from "RPCOpcodes" /* 11944 */;
+import Constants2 from "Constants" /* 6585 */;
+import FramesConstants from "FramesConstants" /* 6982 */;
+import RPCErrorDefault from "RPCError" /* 9479 */;
+import RPCOpcodesDefault from "RPCOpcodes" /* 12003 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import FramesStore from "FramesStore" /* 6966 */;
+import FramesStore from "FramesStore" /* 6981 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

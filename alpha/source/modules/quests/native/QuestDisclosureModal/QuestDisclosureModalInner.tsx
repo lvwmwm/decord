@@ -1,13 +1,13 @@
-// Module ID: 17233
-// Function ID: 17234
+// Module ID: 17325
+// Function ID: 17326
 // Name: QuestDisclosureModalInner
-// Dependencies: [17, 1072, 21, 5141, 575, 4966, 9890, 1113, 9178, 12261, 9859, 17234, 5747, 9837, 7103, 2190, 5754, 2]
+// Dependencies: [17, 1072, 21, 5141, 575, 4966, 9908, 1113, 9195, 12322, 9877, 17326, 5761, 9855, 7118, 2190, 5768, 2]
 // Exports: default
 
-// Module 17233 (QuestDisclosureModalInner)
+// Module 17325 (QuestDisclosureModalInner)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -79,7 +79,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
     const intl = tmp2(1113).intl;
     obj.text = intl.string(require("intl").t.xQSdPv);
     items1 = [obj, , ];
-    let obj2 = { icon: closure_6(tmp2(12261).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1113).t.mYt7hQ) };
+    let obj2 = { icon: closure_6(tmp2(12322).UserIcon, { size: "xs" }), text: intl2.string(tmp2(1113).t.mYt7hQ) };
     intl2 = tmp2(1113).intl;
     items1[1] = obj2;
     const obj3 = { icon: closure_6(require("GameControllerIcon").GameControllerIcon, { size: "xs" }), text: intl3.string(require("intl").t.XAsWxQ) };
@@ -91,8 +91,8 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   items2 = [, , , , ];
   const obj5 = { style: tmp.illustration, children: tmp6(require("WumpusCouchSpotIllustration").WumpusCouchSpotIllustration, {}) };
   items2[0] = tmp6(closure_4, obj5);
-  const obj6 = { variant: "text-md/normal", color: "mobile-text-heading-primary", children: tmp2Result.getDisclosureText({ adCreativeType, gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest }) };
-  const Text = tmp2(5747).Text;
+  const obj6 = { variant: "body-md/normal", color: "mobile-text-heading-primary", children: tmp2Result.getDisclosureText({ adCreativeType, gamePublisher, gameTitle, isTargetedDisclosure, isContextualDisclosure: setting, cosponsorName, isVideoQuest }) };
+  const Text = tmp2(5761).Text;
   tmp2Result = require("QuestCopyUtils");
   items2[1] = tmp6(Text, obj6);
   const tmp7 = closure_7;
@@ -114,17 +114,17 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
             lastTargetItem = closure_0.lastTargetItem;
           }
           items1[1] = lastTargetItem;
-          const obj2 = { style: items1, children: metroRequire(Text_Text.Text, { variant: "text-md/semibold", children: text }) };
+          const obj2 = { style: items1, children: metroRequire(Text_Text.Text, { variant: "body-md/semibold", children: text }) };
           items[1] = metroRequire(React3, obj2);
           return tmp(React3, obj, index);
         })
     };
-    const Card = tmp2(7103).Card;
+    const Card = tmp2(7118).Card;
     isTargetedDisclosure = tmp6(Card, obj7);
   }
   items2[2] = isTargetedDisclosure;
-  const obj8 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: format(tzq9Wa, obj9) };
-  const Text2 = tmp2(5747).Text;
+  const obj8 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: format(tzq9Wa, obj9) };
+  const Text2 = tmp2(5761).Text;
   const intl5 = tmp2(1113).intl;
   format = intl5.format;
   obj9 = { privacySettingsUrl: obj11.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
@@ -133,7 +133,7 @@ export default function QuestDisclosureModalInner(isTargetedDisclosure) {
   items2[3] = tmp6(Text2, obj8);
   const obj10 = { style: tmp.closeButton, children: tmp6(Button, obj12) };
   obj12 = { variant: "primary", grow: true, size: "lg", text: intl6.string(require("intl").t.cpT0Cq), onPress: onClose };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   intl6 = tmp2(1113).intl;
   items2[4] = tmp6(tmp9, obj10);
   return tmp7(tmp8, obj4);

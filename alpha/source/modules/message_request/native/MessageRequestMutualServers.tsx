@@ -1,12 +1,12 @@
-// Module ID: 19126
-// Function ID: 19127
+// Module ID: 19229
+// Function ID: 19230
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 5141, 7083, 19127, 1113, 14325, 5747, 7106, 2]
+// Dependencies: [19, 17, 21, 5141, 7098, 19230, 1113, 14412, 5761, 7121, 2]
 // Exports: default
 
-// Module 19126 (MessageRequestMutualServers)
+// Module 19229 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
-import GuildIconDefault from "GuildIcon" /* 7083 */;
+import GuildIconDefault from "GuildIcon" /* 7098 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -31,15 +31,15 @@ export default function MessageRequestMutualServers(textVariant) {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(7083).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(7098).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
-    str = "text-xs/medium";
+    str = "body-xs/medium";
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  let obj = iconSize(19127);
+  let obj = iconSize(19230);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -64,13 +64,13 @@ export default function MessageRequestMutualServers(textVariant) {
           return React3(GuildIconDefault, obj, guild.id);
         })
     };
-    const GuildIconPile = tmp4(14325).GuildIconPile;
+    const GuildIconPile = tmp4(14412).GuildIconPile;
     tmp9 = closure_4(GuildIconPile, obj4);
   }
   items1 = [tmp9, ];
   const obj5 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: combined };
   combined = formatResult;
-  const Text = tmp4(5747).Text;
+  const Text = tmp4(5761).Text;
   if (null != suffix) {
     const _HermesInternal = HermesInternal;
     combined = "" + formatResult + " \u00B7 " + suffix;
@@ -82,7 +82,7 @@ export default function MessageRequestMutualServers(textVariant) {
     tmp11Result = tmp7Result;
     if (mutualGuildsForMessageRequests.length > 0) {
       const obj6 = { accessibilityRole: "button", onPress, children: tmp7Result };
-      tmp11Result = tmp11(tmp4(7106).PressableOpacity, obj6);
+      tmp11Result = tmp11(tmp4(7121).PressableOpacity, obj6);
     }
   }
   return tmp11Result;

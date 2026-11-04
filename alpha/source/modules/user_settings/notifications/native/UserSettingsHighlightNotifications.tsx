@@ -1,19 +1,19 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 17757
+// Function ID: 17758
 // Name: UserSettingsHighlightNotifications
-// Dependencies: [19, 5012, 6892, 6895, 1072, 21, 7408, 7403, 504, 7083, 7489, 8301, 2]
+// Dependencies: [19, 5012, 6907, 6910, 1072, 21, 7424, 7419, 504, 7098, 7505, 8317, 2]
 // Exports: default
 
-// Module 17661 (UserSettingsHighlightNotifications)
+// Module 17757 (UserSettingsHighlightNotifications)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import GuildIconDefault from "GuildIcon" /* 7083 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7403 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7408 */;
+import GuildIconDefault from "GuildIcon" /* 7098 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7419 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7424 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import SortedGuildStore from "SortedGuildStore" /* 6892 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import SortedGuildStore from "SortedGuildStore" /* 6907 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import size from "module_2" /* 2 */;
 
 function Row(guildId) {
@@ -54,7 +54,7 @@ function Row(guildId) {
     }
     const tmp7 = !muted;
     jsx(GuildIconDefault, { guild });
-    return jsx(tmp2(7489).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
+    return jsx(tmp2(7505).TableSwitchRow, { label: name, icon: jsx(GuildIconDefault, { guild }), value: tmp7, onValueChange: callback, start: isStart, end: isEnd });
   }
 }
 const HighlightSettings = Constants.HighlightSettings;
@@ -71,7 +71,7 @@ export default function UserSettingsHighlightNotifications() {
   [][0] = stateFromStoresArray;
   let tmp4 = null;
   if (0 !== stateFromStoresArray.length) {
-    tmp4 = jsx(tmp(8301).Form, { children: tmp3 });
+    tmp4 = jsx(tmp(8317).Form, { children: tmp3 });
   }
   return tmp4;
 };

@@ -1,16 +1,16 @@
-// Module ID: 15302
-// Function ID: 15303
+// Module ID: 15389
+// Function ID: 15390
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 5141, 575, 5138, 5747, 1113, 7083, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5138, 5761, 1113, 7098, 2]
 // Exports: default
 
-// Module 15302 (InAppReportsGuildPreviewElement)
+// Module 15389 (InAppReportsGuildPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -51,7 +51,7 @@ export default function GuildPreview(guild) {
   const obj5 = { size: GuildIcon.GuildIconSizes.LARGE, guild };
   const tmp3 = GuildIconDefault;
   items2 = [React3(tmp3, obj5), ];
-  const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name };
+  const obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.guildInfo, children: guild.name };
   items2[1] = React3(Text_Text.Text, obj6);
   items[1] = hasOwnProperty(View, obj4);
   return hasOwnProperty(View, obj2);

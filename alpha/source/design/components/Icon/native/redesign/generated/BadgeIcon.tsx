@@ -1,14 +1,14 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12306
+// Function ID: 12307
 // Name: BadgeIcon
-// Dependencies: [19, 21, 575, 5836, 12246, 2]
+// Dependencies: [19, 21, 575, 5850, 12307, 2]
 // Exports: BadgeIcon
 
-// Module 12245 (BadgeIcon)
+// Module 12306 (BadgeIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 12246 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 12307 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

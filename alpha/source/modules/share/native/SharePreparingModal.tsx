@@ -1,18 +1,18 @@
-// Module ID: 9065
-// Function ID: 9066
+// Module ID: 9082
+// Function ID: 9083
 // Name: SharePreparingModal
-// Dependencies: [19, 17, 21, 5141, 575, 5721, 9066, 9067, 1113, 7180, 7080, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5734, 9083, 9084, 1113, 7195, 7095, 5761, 2]
 // Exports: default
 
-// Module 9065 (SharePreparingModal)
+// Module 9082 (SharePreparingModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Backdrop from "Backdrop" /* 5721 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7080 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 9066 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9067 */;
+import Backdrop from "Backdrop" /* 5734 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7095 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import MediaModalOverlayHeaderWrapper2 from "MediaModalOverlayHeaderWrapper" /* 9083 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9084 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -58,7 +58,7 @@ export default function SharePreparingModal(onCancel) {
   intl = intl3.intl;
   items1[1] = hasOwnProperty(React3, obj2);
   items1[2] = hasOwnProperty(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
-  const obj5 = { variant: "text-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
+  const obj5 = { variant: "body-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.DwTQE5) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   items1[3] = hasOwnProperty(Text, obj5);

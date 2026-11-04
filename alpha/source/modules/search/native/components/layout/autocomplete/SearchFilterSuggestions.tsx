@@ -1,16 +1,16 @@
-// Module ID: 18847
-// Function ID: 18848
+// Module ID: 18950
+// Function ID: 18951
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 19, 17, 9957, 21, 5141, 575, 18848, 7101, 5747, 1652, 5757, 5758, 5207, 1705, 18842, 18851, 14017, 2]
+// Dependencies: [32, 19, 17, 9975, 21, 5141, 575, 18951, 7116, 5761, 1652, 5771, 5772, 5207, 1705, 18945, 18954, 14103, 2]
 
-// Module 18847 (SearchFilterSuggestions)
+// Module 18950 (SearchFilterSuggestions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5207 */;
-import TrackingConstants from "TrackingConstants" /* 9957 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14017 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 18848 */;
+import TrackingConstants from "TrackingConstants" /* 9975 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14103 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 18951 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap, set, token;
 
 let obj2;
-const f115089 = (text) => text.text;
+const f115878 = (text) => text.text;
 function SearchFilterPrefixRow(text) {
   text = text.text;
   const require = text;
@@ -50,7 +50,7 @@ function SearchFilterPrefixRow(text) {
   return <TableRow icon={memo} onPress={callback} label={null} subLabel={memo1} />;
 }
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f115089);
+  const mapped = arr.map(f115878);
   return mapped.join(" ");
 }
 function AnimatedEnterExitContainer(state) {
@@ -73,9 +73,9 @@ function AnimatedEnterExitContainer(state) {
   const tmp3 = state(1652);
   let items = [closure_12, , , , , , , , ];
   const useAnimatedStyle = tmp3.useAnimatedStyle;
-  items[1] = state(5757).withSpring;
+  items[1] = state(5771).withSpring;
   items[2] = sharedValue;
-  items[3] = state(5758).springStandard;
+  items[3] = state(5772).springStandard;
   items[4] = closure_11;
   items[5] = state;
   items[6] = state(5207).TransitionStates;
@@ -183,12 +183,12 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
   let tmp = memo();
   dependencyMap = tmp;
   let tmp2 = searchContext;
-  let obj = searchContext(18842);
+  let obj = searchContext(18945);
   const searchSuggestionsContext = obj.useSearchSuggestionsContext();
   const suggestionsRef = searchSuggestionsContext.suggestionsRef;
   const suggestionsMounted = searchSuggestionsContext.suggestionsMounted;
   const dismissed = searchSuggestionsContext.dismissed;
-  let obj2 = searchContext(18851);
+  let obj2 = searchContext(18954);
   const validFilterTokens = obj2.useValidFilterTokens(searchContext);
   const tmp6 = suggestionsRef(suggestionsMounted.useState([]), 2);
   const first = tmp6[0];
@@ -222,10 +222,10 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
               }
             });
             closure_7((arr) => {
-              const mapped = arr.map(f115089);
+              const mapped = arr.map(f115878);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f115089);
+              const mapped1 = closure_1.map(f115878);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }

@@ -1,19 +1,19 @@
-// Module ID: 18422
-// Function ID: 18423
+// Module ID: 18516
+// Function ID: 18517
 // Name: GuildPowerupsChannelRow
-// Dependencies: [19, 17, 11186, 21, 14202, 7212, 575, 1187, 5141, 18375, 18212, 5736, 14198, 14215, 14068, 14186, 7471, 5734, 1113, 2699, 18423, 13970, 2]
+// Dependencies: [19, 17, 11236, 21, 14288, 7227, 575, 1187, 5141, 18469, 18309, 5750, 14284, 14301, 14154, 14272, 7487, 5748, 1113, 2699, 18517, 14056, 2]
 // Exports: default
 
-// Module 18422 (GuildPowerupsChannelRow)
+// Module 18516 (GuildPowerupsChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14186 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14202 */;
-import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 18212 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 18375 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14272 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14288 */;
+import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 18309 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 18469 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp;
-const LayerContext = tmp(5736);
+const LayerContext = tmp(5750);
 function GuildPowerupsChannelRowIndicator(indicator) {
   indicator = indicator.indicator;
   if (null == indicator) {
@@ -32,7 +32,7 @@ function GuildPowerupsChannelRowIndicator(indicator) {
     const type = indicator.type;
     if (GuildPowerupsNotification.GuildPowerupNotificationIndicatorType.WARNING === type) {
       const obj2 = { color: nativeDefault.colors.STATUS_WARNING, size: "sm" };
-      const CircleErrorIcon = tmp4(7212).CircleErrorIcon;
+      const CircleErrorIcon = tmp4(7227).CircleErrorIcon;
       return hasOwnProperty(CircleErrorIcon, obj2);
     } else if (GuildPowerupsNotification.GuildPowerupNotificationIndicatorType.UNREAD === type) {
       const obj = { value: indicator.count, isMentionLowImportance: true };
@@ -90,9 +90,9 @@ export default function GuildPowerupsChannelRow(guildId) {
   let obj = react;
   const tmp = closure_8();
   const ref = react.useRef(null);
-  const tmp5 = dismissNewBadgeIfShown(14198)(guildId);
+  const tmp5 = dismissNewBadgeIfShown(14284)(guildId);
   let indicator;
-  const tmp6 = dismissNewBadgeIfShown(14215);
+  const tmp6 = dismissNewBadgeIfShown(14301);
   if (tmp5 != null) {
     indicator = tmp5.indicator;
   }
@@ -111,7 +111,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   if (tmp5 != null) {
     showUnread = tmp5.showUnread;
   }
-  const ChannelModes = guildId(14068).ChannelModes;
+  const ChannelModes = guildId(14154).ChannelModes;
   if (true === showUnread) {
     DEFAULT = ChannelModes.UNREAD_IMPORTANT;
     tmp14 = tmp13;
@@ -129,7 +129,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   const obj3 = { targetRef: ref, guildId, popout: popout1 };
   popout1 = undefined;
   const obj2 = { ref, collapsable: false, children: items1 };
-  const LayerScope = tmp14(5734).LayerScope;
+  const LayerScope = tmp14(5748).LayerScope;
   const tmp17 = closure_6;
   const tmp18 = View;
   const tmp19 = GuildPowerupsCoachmark;
@@ -138,15 +138,15 @@ export default function GuildPowerupsChannelRow(guildId) {
   }
   items1 = [closure_5(tmp19, obj3), ];
   const obj4 = { onPress: callback, style: tmp.container, accessible: true, mode: DEFAULT, unread: true === showUnread, accessibilityLabel: intl.string(dismissNewBadgeIfShown(2699).yv3DJJ), accessibilityState: { selected: false }, name: closure_5(BaseChannelName, obj5), icon: closure_5(BaseChannelIcon, obj6), channelInfo: tmp16Result };
-  const tmp3Result = dismissNewBadgeIfShown(14068);
+  const tmp3Result = dismissNewBadgeIfShown(14154);
   intl = tmp14(1113).intl;
   obj5 = { name: intl2.string(dismissNewBadgeIfShown(2699).yv3DJJ), mode: DEFAULT };
-  BaseChannelName = tmp14(14068).BaseChannelName;
+  BaseChannelName = tmp14(14154).BaseChannelName;
   intl2 = tmp14(1113).intl;
-  obj6 = { mode: DEFAULT, IconComponent: tmp14(18423).BoostTier2Icon };
-  BaseChannelIcon = tmp14(14068).BaseChannelIcon;
+  obj6 = { mode: DEFAULT, IconComponent: tmp14(18517).BoostTier2Icon };
+  BaseChannelIcon = tmp14(14154).BaseChannelIcon;
   if (showNewBadgeOnRow) {
-    tmp16Result = tmp16(tmp14(13970).NewBadge, {});
+    tmp16Result = tmp16(tmp14(14056).NewBadge, {});
   } else {
     let indicator1;
     const tmp22 = GuildPowerupsChannelRowIndicator;

@@ -1,19 +1,19 @@
-// Module ID: 15483
-// Function ID: 15484
+// Module ID: 15570
+// Function ID: 15571
 // Name: RewardGrantNotice
-// Dependencies: [19, 17, 15462, 21, 5141, 575, 15464, 14632, 5747, 1113, 7423, 2]
+// Dependencies: [19, 17, 15549, 21, 5141, 575, 15551, 14712, 5761, 1113, 7439, 2]
 // Exports: default
 
-// Module 15483 (RewardGrantNotice)
+// Module 15570 (RewardGrantNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7423 */;
-import BalanceWidgetPill from "BalanceWidgetPill" /* 14632 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15464 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7439 */;
+import BalanceWidgetPill from "BalanceWidgetPill" /* 14712 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15551 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 15462 */;
+import Constants from "Constants" /* 15549 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ function OrbsGrantNotice(nRewardsGranted) {
   items = [, ];
   const obj2 = { initialRenderedBalance: 0, balance: nRewardsGranted * hasOwnProperty, style: tmp.balancePillOverride };
   items[0] = metroRequire(BalanceWidgetPill.BalanceWidgetPill, obj2);
-  const obj3 = { variant: "text-sm/medium", color: "text-strong", children: items1 };
+  const obj3 = { variant: "body-sm/medium", color: "text-strong", children: items1 };
   const Text = Text_Text.Text;
   const intl = intl3.intl;
   items1 = [" ", intl.string(intl3.t.UhguER)];
@@ -53,7 +53,7 @@ function DiscountGrantNotice(nRewardsGranted) {
   const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, size: "xs" };
   const CheckmarkSmallIcon = CheckmarkSmallIcon2.CheckmarkSmallIcon;
   items = [metroRequire(CheckmarkSmallIcon, obj3), ];
-  const obj4 = { variant: "text-sm/medium", color: "text-strong", children: intl2.format(intl3.t["P//01n"], obj5) };
+  const obj4 = { variant: "body-sm/medium", color: "text-strong", children: intl2.format(intl3.t["P//01n"], obj5) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj5 = { discountPercent, duration: nRewardsGranted };
@@ -84,7 +84,7 @@ export default function RewardGrantNotice(arg0) {
       tmp4 = metroRequire(OrbsGrantNotice, obj2);
     } else {
       tmp4 = null;
-      if (referralRewardType === tmp2(15464).ReferralRewardType.DISCOUNT) {
+      if (referralRewardType === tmp2(15551).ReferralRewardType.DISCOUNT) {
         const obj = { nRewardsGranted };
         tmp4 = metroRequire(DiscountGrantNotice, obj);
       }

@@ -1,23 +1,23 @@
-// Module ID: 18874
-// Function ID: 18875
+// Module ID: 18977
+// Function ID: 18978
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5142, 5881, 5083, 1072, 21, 5141, 575, 5747, 5195, 10875, 504, 9330, 1187, 9188, 15530, 18860, 2]
+// Dependencies: [5, 32, 19, 17, 5142, 5895, 5083, 1072, 21, 5141, 575, 5761, 5195, 10923, 504, 9347, 1187, 9205, 15617, 18963, 2]
 
-// Module 18874 (DMRow)
+// Module 18977 (DMRow)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import UserUtils from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9188 */;
-import BotTagDefault from "BotTag" /* 9330 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10875 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15530 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9205 */;
+import BotTagDefault from "BotTag" /* 9347 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10923 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15617 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -44,7 +44,7 @@ function FriendPresence(user) {
   ({ type, animate, guildId } = user);
   const tmp = closure_15();
   if (type === constants2.PENDING_INCOMING) {
-    const obj2 = { lineClamp: 1, variant: "text-sm/medium", color: "text-default", children: obj3.getUserTag(user) };
+    const obj2 = { lineClamp: 1, variant: "body-sm/medium", color: "text-default", children: obj3.getUserTag(user) };
     const Text = Text_Text.Text;
     obj3 = UserUtils;
     tmp5 = map1(Text, obj2);
@@ -191,7 +191,7 @@ const memoResult = react.memo(function DMRow(user) {
     let obj8;
     const obj = { style: title.title, children: items };
     items = [, , , ];
-    const obj2 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: name };
+    const obj2 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: name };
     items[0] = map1(Text_Text.Text, obj2);
     let bot = user.bot;
     const tmp = authStore3;
@@ -241,7 +241,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (null != userTag) {
       let tmp6;
       if (!user.isProvisional) {
-        const obj2 = { variant: "text-sm/medium", color: "text-muted", children: userTag };
+        const obj2 = { variant: "body-sm/medium", color: "text-muted", children: userTag };
         tmp6 = map1(Text_Text.Text, obj2);
       }
       return tmp6;

@@ -1,10 +1,10 @@
-// Module ID: 18047
-// Function ID: 18048
+// Module ID: 18144
+// Function ID: 18145
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1072, 21, 1196, 2236, 4966, 7489, 1113, 5141, 575, 7186, 2190, 2]
+// Dependencies: [19, 17, 1072, 21, 1196, 2236, 4966, 7505, 1113, 5141, 575, 7201, 2190, 2]
 // Exports: default
 
-// Module 18047 (ManageSponsoredContentScreen)
+// Module 18144 (ManageSponsoredContentScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
 import _modDef2236 from "module_2236" /* 2236 */;
 import UserSettings from "UserSettings" /* 4966 */;
-import TableRowGroup3 from "TableRowGroup" /* 7186 */;
+import TableRowGroup3 from "TableRowGroup" /* 7201 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -50,7 +50,7 @@ function AdTopicRow(adTopic) {
       AdTopicOptOuts2.updateSetting(items);
     }
   };
-  const TableSwitchRow = adTopic(7489).TableSwitchRow;
+  const TableSwitchRow = adTopic(7505).TableSwitchRow;
   intl = adTopic(1113).intl;
   const intl2 = adTopic(1113).intl;
   string = intl2.string;

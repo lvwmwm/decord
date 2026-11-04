@@ -1,9 +1,9 @@
-// Module ID: 15785
-// Function ID: 15786
+// Module ID: 15873
+// Function ID: 15874
 // Name: PermissionSpeakStore
 // Dependencies: [4990, 5012, 510, 504, 572, 2]
 
-// Module 15785 (PermissionSpeakStore)
+// Module 15873 (PermissionSpeakStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

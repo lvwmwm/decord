@@ -1,21 +1,21 @@
-// Module ID: 14687
-// Function ID: 14688
+// Module ID: 14767
+// Function ID: 14768
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 6967, 5795, 12340, 7544, 14688, 14689, 11064, 14528, 14690, 8874, 14693, 1113, 12355, 12021, 3995, 11418, 5855, 10214, 2]
+// Dependencies: [19, 6982, 5809, 12405, 7560, 14768, 14769, 11113, 14608, 14770, 8891, 14773, 1113, 12420, 12080, 3995, 11468, 5869, 10262, 2]
 // Exports: default
 
-// Module 14687 (useAppChannelOverflowMenuItems)
+// Module 14767 (useAppChannelOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5795 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5855 */;
-import FramesConstants from "FramesConstants" /* 6967 */;
-import FlagIcon from "FlagIcon" /* 10214 */;
-import restartFrames from "restartFrames" /* 11064 */;
-import ShieldIcon from "ShieldIcon" /* 11418 */;
-import DoorExitIcon from "DoorExitIcon" /* 12021 */;
-import RefreshIcon from "RefreshIcon" /* 12355 */;
-import closeFrameDefault from "closeFrame" /* 14528 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5809 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5869 */;
+import FramesConstants from "FramesConstants" /* 6982 */;
+import FlagIcon from "FlagIcon" /* 10262 */;
+import restartFrames from "restartFrames" /* 11113 */;
+import ShieldIcon from "ShieldIcon" /* 11468 */;
+import DoorExitIcon from "DoorExitIcon" /* 12080 */;
+import RefreshIcon from "RefreshIcon" /* 12420 */;
+import closeFrameDefault from "closeFrame" /* 14608 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ function useAppChannelAppActions(channel) {
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
     return obj;
   }, items);
-  const tmp5 = application_id(12340)(application_id, memo);
+  const tmp5 = application_id(12405)(application_id, memo);
   dependencyMap = tmp5;
   const obj2 = require("useAppChannelApplication");
   const appChannelApplication = obj2.useAppChannelApplication(channel);
@@ -46,9 +46,9 @@ function useAppChannelAppActions(channel) {
   if (appChannelApplication != null) {
     bot = appChannelApplication.bot;
   }
-  const tmp8 = application_id(14688)(application_id);
+  const tmp8 = application_id(14768)(application_id);
   let closure_4 = tmp8;
-  const tmp9 = application_id(14689)(application_id).length > 0;
+  const tmp9 = application_id(14769)(application_id).length > 0;
   let closure_5 = tmp9;
   const items1 = [application_id, bot, channel, tmp8, tmp5, tmp9];
   return obj.useMemo(() => {

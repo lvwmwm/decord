@@ -1,16 +1,16 @@
-// Module ID: 15257
-// Function ID: 15258
+// Module ID: 15340
+// Function ID: 15341
 // Name: FriendInvite
-// Dependencies: [17, 5083, 8003, 8518, 1113, 5195, 1411, 2]
+// Dependencies: [17, 5083, 8019, 8535, 1113, 5195, 1411, 2]
 // Exports: createFriendInvite
 
-// Module 15257 (FriendInvite)
+// Module 15340 (FriendInvite)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import Constants from "Constants" /* 8003 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8518 */;
+import Constants from "Constants" /* 8019 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8535 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import size from "module_2" /* 2 */;
 

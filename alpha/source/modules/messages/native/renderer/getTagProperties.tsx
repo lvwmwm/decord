@@ -1,15 +1,15 @@
-// Module ID: 8625
-// Function ID: 8626
+// Module ID: 8642
+// Function ID: 8643
 // Name: getTagProperties
-// Dependencies: [17, 5146, 8626, 1113, 8628, 8630, 2]
+// Dependencies: [17, 5146, 8643, 1113, 8645, 8647, 2]
 // Exports: default
 
-// Module 8625 (getTagProperties)
+// Module 8642 (getTagProperties)
 import react_native from "react-native" /* 17 */;
 import intl7 from "intl" /* 1113 */;
 import MessageConstants from "MessageConstants" /* 5146 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8626 */;
-import isCrosspostDefault from "isCrosspost" /* 8628 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8643 */;
+import isCrosspostDefault from "isCrosspost" /* 8645 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -49,7 +49,7 @@ export default function getTagProperties(arg0) {
           let uri;
           const stringResult1 = intl.string(intl7.t["9RNkeF"]);
           if (isVerifiedBotResult) {
-            uri = Image.resolveAssetSource(tmp4(8630)).uri;
+            uri = Image.resolveAssetSource(tmp4(8647)).uri;
           }
           flag = isVerifiedBotResult;
           stringResult = stringResult1;
@@ -97,7 +97,7 @@ export default function getTagProperties(arg0) {
       const intl6 = tmp2(1113).intl;
       stringResult3 = intl6.string(tmp2(1113).t.fyE8sH);
     }
-    const obj2 = { tagText: stringResult, tagAccessibilityLabel: tmp12, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "disabled", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult3, opTagTextColor: null, opTagBackgroundColor: null };
+    const obj2 = { tagText: stringResult, tagAccessibilityLabel: tmp12, tagVerified: flag, tagTextColor: "Boolean", tagBackgroundColor: "diversity", tagType: SYSTEM_DM_TAG_SYSTEM_TYPE, tagIconUrl: tmp5, opTagText: stringResult3, opTagTextColor: "<string:1895825410>", opTagBackgroundColor: "ne" };
     ({ opTagTextColor: obj3.opTagTextColor, opTagBackgroundColor: obj3.opTagBackgroundColor } = colors);
     return obj2;
   }

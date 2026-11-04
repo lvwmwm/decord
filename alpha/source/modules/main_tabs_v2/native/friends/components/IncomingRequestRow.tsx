@@ -1,17 +1,17 @@
-// Module ID: 19001
-// Function ID: 19002
+// Module ID: 19104
+// Function ID: 19105
 // Name: IncomingRequestRow
-// Dependencies: [19, 5142, 2167, 10857, 1072, 21, 1652, 563, 1113, 5195, 18245, 14334, 10868, 18668, 19002, 2]
+// Dependencies: [19, 5142, 2167, 10905, 1072, 21, 1652, 563, 1113, 5195, 18342, 14414, 10916, 18769, 19105, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 19001 (IncomingRequestRow)
+// Module 19104 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import UserRowConstants from "UserRowConstants" /* 10857 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14334 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18245 */;
+import UserRowConstants from "UserRowConstants" /* 10905 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14414 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18342 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
@@ -93,7 +93,7 @@ function IncomingRequestRow(user) {
   const memo1 = onAcceptIncomingRequest.useMemo(() => {
     let str;
     if (null != stateFromStores1) {
-      str = jsx(ApplicationIconAndNameDefault, { application: stateFromStores1, textVariant: "text-xs/medium", iconSize: 12 }, tmp.id);
+      str = jsx(ApplicationIconAndNameDefault, { application: stateFromStores1, textVariant: "body-xs/medium", iconSize: 12 }, tmp.id);
     } else {
       str = "";
       if (null == applicationId) {
@@ -120,7 +120,7 @@ function IncomingGameFriendRequestRow(arg0) {
   const intl2 = application(1113).intl;
   const obj3 = {
     applicationNameHook() {
-      return jsx(ApplicationIconAndNameDefault, { application, textVariant: "text-xs/medium", iconSize: 12 }, application.id);
+      return jsx(ApplicationIconAndNameDefault, { application, textVariant: "body-xs/medium", iconSize: 12 }, application.id);
     }
   };
   const intl3 = application(1113).intl;

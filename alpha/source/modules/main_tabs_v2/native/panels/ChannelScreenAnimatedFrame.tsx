@@ -1,16 +1,16 @@
-// Module ID: 18203
-// Function ID: 18204
+// Module ID: 18300
+// Function ID: 18301
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 21, 5141, 575, 1652, 5377, 1187, 18201, 9952, 7412, 2]
+// Dependencies: [19, 21, 5141, 575, 1652, 5378, 1187, 18298, 9970, 7428, 2]
 // Exports: default
 
-// Module 18203 (ChannelScreenAnimatedFrame)
+// Module 18300 (ChannelScreenAnimatedFrame)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import PanelsConfig from "PanelsConfig" /* 18201 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import PanelsConfig from "PanelsConfig" /* 18298 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let num, obj1;
 
 let obj2;
 let tmp2;
-const ClientThemesOverrides = tmp2(9952);
+const ClientThemesOverrides = tmp2(9970);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
 let obj = { container: obj2, splitDivider: { borderLeftColor: nativeDefault.colors.APP_FRAME_BORDER, borderLeftWidth: nativeDefault.modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH } };

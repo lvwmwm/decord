@@ -1,8 +1,8 @@
-// Module ID: 6491
-// Function ID: 6492
+// Module ID: 6506
+// Function ID: 6507
 // Dependencies: [2]
 
-// Module 6491
+// Module 6506
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/hat/traffic_cone.png.js");

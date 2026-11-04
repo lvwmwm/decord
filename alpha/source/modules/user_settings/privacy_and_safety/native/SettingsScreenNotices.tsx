@@ -1,20 +1,20 @@
-// Module ID: 16860
-// Function ID: 16861
+// Module ID: 16952
+// Function ID: 16953
 // Name: SettingsScreenNotices
-// Dependencies: [19, 17, 1385, 21, 5141, 575, 8496, 16861, 16862, 5813, 6851, 6846, 16869, 16870, 2]
+// Dependencies: [19, 17, 1385, 21, 5141, 575, 8513, 16953, 16954, 5827, 6866, 6861, 16961, 16962, 2]
 // Exports: default
 
-// Module 16860 (SettingsScreenNotices)
+// Module 16952 (SettingsScreenNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5813 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6851 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8496 */;
-import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 16861 */;
-import AgeNoticeSettingsNoticesLazy from "AgeNoticeSettingsNoticesLazy" /* 16862 */;
-import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 16869 */;
-import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 16870 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5827 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6866 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8513 */;
+import FamilyCenterSettingsNoticeDefault from "FamilyCenterSettingsNotice" /* 16953 */;
+import AgeNoticeSettingsNoticesLazy from "AgeNoticeSettingsNoticesLazy" /* 16954 */;
+import AgeConfirmationNoticeDefault from "AgeConfirmationNotice" /* 16961 */;
+import SensitiveContentFiltersNotices from "SensitiveContentFiltersNotices" /* 16962 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -24,7 +24,7 @@ let items;
 let items1;
 let items2;
 let tmp;
-const AgeVerificationUtils = tmp(6846);
+const AgeVerificationUtils = tmp(6861);
 function predicate() {
   const obj = RegionalFeatureConfigUtils;
   let isFeatureAgeGatedResult = obj.isFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);

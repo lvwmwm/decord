@@ -1,12 +1,12 @@
-// Module ID: 11281
-// Function ID: 11282
+// Module ID: 11331
+// Function ID: 11332
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 5141, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 5761, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 11281 (ActionSheetIconHeader)
+// Module 11331 (ActionSheetIconHeader)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -30,11 +30,11 @@ export function ActionSheetIconHeader(subtitle) {
   const obj = { style: tmp.container, children: items };
   items = [_false(View, { children: icon }), ];
   const obj2 = { style: tmp.titles, children: items1 };
-  items1 = [_false(Text_Text.Text, { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
+  items1 = [_false(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", lineClamp: 2, children: title }), ];
   let tmp4Result = null;
   const tmp4 = _false;
   if (null != subtitle) {
-    const obj3 = { variant: "text-xs/medium", color: "text-default", children: subtitle };
+    const obj3 = { variant: "body-xs/medium", color: "text-default", children: subtitle };
     tmp4Result = tmp4(Text_Text.Text, obj3);
   }
   items1[1] = tmp4Result;

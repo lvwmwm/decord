@@ -1,13 +1,13 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 12967
+// Function ID: 12968
 // Name: ConjureScopeSwitchCard
-// Dependencies: [19, 21, 12887, 12888, 2]
+// Dependencies: [19, 21, 12968, 12969, 2]
 // Exports: default
 
-// Module 12886 (ConjureScopeSwitchCard)
+// Module 12967 (ConjureScopeSwitchCard)
 import Fragment from "Fragment" /* 21 */;
-import useConjureScopeCards from "useConjureScopeCards" /* 12887 */;
-import ConjureScopeCardViewDefault from "ConjureScopeCardView" /* 12888 */;
+import useConjureScopeCards from "useConjureScopeCards" /* 12968 */;
+import ConjureScopeCardViewDefault from "ConjureScopeCardView" /* 12969 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

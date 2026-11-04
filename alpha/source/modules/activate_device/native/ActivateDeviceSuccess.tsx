@@ -1,17 +1,17 @@
-// Module ID: 15856
-// Function ID: 15857
+// Module ID: 15944
+// Function ID: 15945
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 5141, 1113, 9875, 5837, 1411, 15855, 5747, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 1113, 9893, 5851, 1411, 15943, 5761, 5768, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 15856 (ActivateDeviceSuccess)
+// Module 15944 (ActivateDeviceSuccess)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import scopes2 from "scopes" /* 9875 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15855 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import scopes2 from "scopes" /* 9893 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15943 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -67,15 +67,15 @@ export function ActivateDeviceSuccess(onComplete) {
   let tmp18Result = null;
   const tmp15 = View;
   if (null != stringResult) {
-    const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: stringResult };
-    const Text2 = tmp19(5747).Text;
+    const obj5 = { variant: "body-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: stringResult };
+    const Text2 = tmp19(5761).Text;
     tmp18Result = tmp18(Text2, obj5);
   }
   const obj6 = { children: items };
   items1[1] = tmp18Result;
   items[1] = hasOwnProperty(tmp15, obj3);
   const obj7 = { size: "lg", text: intl4.string(intl5.t.cpT0Cq), onPress: onComplete, grow: true };
-  const Button = tmp19(5754).Button;
+  const Button = tmp19(5768).Button;
   intl4 = tmp19(1113).intl;
   items[2] = React3(Button, obj7);
   return hasOwnProperty(tmp8, obj6);

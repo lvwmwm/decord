@@ -1,18 +1,18 @@
-// Module ID: 9092
-// Function ID: 9093
+// Module ID: 9109
+// Function ID: 9110
 // Name: GuildScheduledEventDetailsActionSheet
-// Dependencies: [32, 19, 17, 5012, 6975, 4996, 21, 5141, 575, 1113, 7446, 7471, 504, 9093, 9106, 9107, 9094, 1627, 9108, 9109, 9342, 5395, 5398, 9344, 9345, 2]
+// Dependencies: [32, 19, 17, 5012, 6990, 4996, 21, 5141, 575, 1113, 7462, 7487, 504, 9110, 9123, 9124, 9111, 1627, 9125, 9126, 9359, 5396, 5400, 9361, 9362, 2]
 // Exports: default
 
-// Module 9092 (GuildScheduledEventDetailsActionSheet)
+// Module 9109 (GuildScheduledEventDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9094 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9111 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6975 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6990 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -55,7 +55,7 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
   let tmp23;
   let tmp36Result2;
   let tmp8;
-  const f93987 = () => {
+  const f94365 = () => {
     let id;
     const getGuildEventUsers = GuildScheduledEventManagerDefault.getGuildEventUsers;
     GuildScheduledEventManagerDefault;
@@ -140,9 +140,9 @@ export default function GuildScheduledEventDetailsActionSheet(eventId) {
     }
     return tmp5;
   }, items3);
-  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f93987), 2);
+  [c5, tmp19] = tmp5(tmp2(tmp3[15])(f94365), 2);
   ({ loading, error } = tmp19);
-  tmp5(tmp2(tmp3[15])(f93987), 2);
+  tmp5(tmp2(tmp3[15])(f94365), 2);
   [tmp21, c6] = tmp5(obj.useState(0), 2);
   tmp5(obj.useState(0), 2);
   [tmp23, c7] = tmp5(obj.useState(0), 2);

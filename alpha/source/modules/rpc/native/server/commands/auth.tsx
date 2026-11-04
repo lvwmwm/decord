@@ -1,12 +1,12 @@
-// Module ID: 16503
-// Function ID: 16504
+// Module ID: 16595
+// Function ID: 16596
 // Name: auth
-// Dependencies: [2167, 1072, 9461, 2153, 1108, 16504, 2]
+// Dependencies: [2167, 1072, 9479, 2153, 1108, 16596, 2]
 
-// Module 16503 (auth)
+// Module 16595 (auth)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2153 */;
-import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 16504 */;
+import AuthCommandsFactoryDefault from "AuthCommandsFactory" /* 16596 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

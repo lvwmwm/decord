@@ -1,9 +1,9 @@
-// Module ID: 5790
-// Function ID: 5791
+// Module ID: 5804
+// Function ID: 5805
 // Name: ContentRatingRobloxRating
 // Dependencies: [2]
 
-// Module 5790 (ContentRatingRobloxRating)
+// Module 5804 (ContentRatingRobloxRating)
 import size from "module_2" /* 2 */;
 
 const obj = { ALL: new Set([1, 2, 3, 4, 5, 6, 7]), IS_ADULT_ONLY: new Set([]) };

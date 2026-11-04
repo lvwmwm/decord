@@ -1,45 +1,45 @@
-// Module ID: 11701
-// Function ID: 11702
+// Module ID: 11756
+// Function ID: 11757
 // Name: MessagesRenderer
-// Dependencies: [5, 32, 19, 10026, 5053, 5073, 6962, 7016, 8502, 1072, 21, 9, 11702, 10025, 11691, 10023, 8501, 10238, 11683, 12, 11, 11705, 9814, 10242, 10237, 11707, 7760, 11708, 11709, 11710, 13845, 5372, 1242, 10240, 13466, 13851, 11690, 558, 5872, 8002, 13852, 13463, 10317, 1377, 1625, 6904, 13853, 2]
+// Dependencies: [5, 32, 19, 10074, 5053, 5073, 6977, 8519, 1072, 21, 9, 11757, 10073, 11742, 10071, 8518, 10286, 11734, 12, 11, 11760, 9832, 10290, 10285, 11762, 7776, 11763, 11764, 11765, 13931, 5373, 1242, 10288, 13550, 13937, 11741, 558, 5886, 8018, 11748, 13938, 13547, 10365, 1377, 1625, 6919, 13939, 2]
 
-// Module 11701 (MessagesRenderer)
+// Module 11756 (MessagesRenderer)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import flow_Client from "flow/Client" /* 5372 */;
-import CodedLink from "CodedLink" /* 5872 */;
-import QuestTypes from "QuestTypes" /* 6904 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7760 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8002 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8502 */;
-import QuestActionCreators from "QuestActionCreators" /* 9814 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10025 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10026 */;
-import computeScrollData from "computeScrollData" /* 10237 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 10238 */;
-import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 10240 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10242 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10317 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11702 */;
-import MessagesHandlers from "MessagesHandlers" /* 11710 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13466 */;
-import NavigationTTIDefinition from "NavigationTTIDefinition" /* 13851 */;
-import MessagesUtilsDefault from "MessagesUtils" /* 13852 */;
+import flow_Client from "flow/Client" /* 5373 */;
+import CodedLink from "CodedLink" /* 5886 */;
+import QuestTypes from "QuestTypes" /* 6919 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8018 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8519 */;
+import QuestActionCreators from "QuestActionCreators" /* 9832 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10073 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10074 */;
+import computeScrollData from "computeScrollData" /* 10285 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 10286 */;
+import ChatChangesetUpdateTracker from "ChatChangesetUpdateTracker" /* 10288 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10290 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10365 */;
+import useSocialLayerStorefrontEmbedData from "useSocialLayerStorefrontEmbedData" /* 11748 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 11757 */;
+import MessagesHandlers from "MessagesHandlers" /* 11765 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13550 */;
+import NavigationTTIDefinition from "NavigationTTIDefinition" /* 13937 */;
+import MessagesUtilsDefault from "MessagesUtils" /* 13938 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
-import SKUStore from "SKUStore" /* 7016 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
-let _undefined, _undefined2, author, c1, closure_2, closure_25, closure_5, constants, dependencyMap, firstIgnoredScrollEventTimestampRef, invites, onMediaPlayFinishedAnalytics, onTapShowAltText, set, shouldForceRender, startOrCancelChannelLatestMessagesLoad;
+let _undefined, _undefined2, author, c1, closure_2, closure_25, closure_5, dependencyMap, firstIgnoredScrollEventTimestampRef, invites, onMediaPlayFinishedAnalytics, onTapShowAltText, set, shouldForceRender, startOrCancelChannelLatestMessagesLoad;
 
 let closure_12;
 let closure_14;
@@ -47,9 +47,9 @@ let closure_15;
 let closure_16;
 let closure_17;
 let closure_18;
-let closure_19;
 let map1;
 let tmp;
+let unpackModuleId;
 const KeyboardTypes = tmp(1625);
 function handleTapShowAltText(description) {
   openMediaModalOverlayAltTextSheetDefault({ description: description.nativeEvent.description });
@@ -80,8 +80,8 @@ let react = react_mod;
 let closure_6 = useChatBottomManagerUIStore.updateShouldShowJumpToPresentButton;
 let closure_7 = GuildMemberStore.getUserCommunicationDisabledVersion;
 const Changeset = RowGeneratorConstants.Changeset;
-({ ActivityActionTypes: closure_12, MAX_MESSAGES_PER_CHANNEL: map1, MessageFlags: closure_14, MessageTypes: closure_15, Permissions: closure_16 } = Constants);
-({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = Fragment);
+({ ActivityActionTypes: unpackModuleId, MAX_MESSAGES_PER_CHANNEL: closure_12, MessageFlags: map1, MessageTypes: closure_14, Permissions: closure_15 } = Constants);
+({ jsx: closure_16, Fragment: closure_17, jsxs: closure_18 } = Fragment);
 class MessagesRenderer {
   constructor(ref) {
     let _undefined3;
@@ -109,7 +109,7 @@ class MessagesRenderer {
     let loadMoreBefore;
     let scrollToTopMessage;
     let updateNativeRows;
-    const f99803 = (id) => id.id;
+    const f100462 = (id) => id.id;
     ref = ref.ref;
     const merged = Object.assign(ref, Object.assign({ ref: 0 }));
     dependencyMap = undefined;
@@ -118,10 +118,10 @@ class MessagesRenderer {
     react = undefined;
     c15 = undefined;
     c18 = undefined;
-    c19 = undefined;
     onTapShowAltText = undefined;
     onMediaPlayFinishedAnalytics = undefined;
     isLoadingAtTop = undefined;
+    c22 = undefined;
     c23 = undefined;
     c24 = undefined;
     c25 = undefined;
@@ -132,14 +132,14 @@ class MessagesRenderer {
     c35 = undefined;
     c36 = undefined;
     ref = undefined;
-    function handleVisibleMessagesChange(arg0) {
+    function handleVisibleMessagesChange(ChatTTITracker) {
       let firstVisibleMessagePercentVisible;
       let firstVisibleMessageRowIndex;
       let lastVisibleMessagePercentVisible;
       let lastVisibleMessageRowIndex;
       let source;
-      ({ firstVisibleMessageRowIndex, lastVisibleMessageRowIndex } = arg0);
-      ({ firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source } = arg0);
+      ({ firstVisibleMessageRowIndex, lastVisibleMessageRowIndex } = ChatTTITracker);
+      ({ firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, source } = ChatTTITracker);
       closure_28(firstVisibleMessageRowIndex, lastVisibleMessageRowIndex);
       const obj = messages_MessagesUtils;
       const obj2 = { firstVisibleMessageRowIndex, lastVisibleMessageRowIndex, firstVisibleMessagePercentVisible, lastVisibleMessagePercentVisible, chatManager, channelId: merged.channelId };
@@ -158,10 +158,10 @@ class MessagesRenderer {
         const result4 = tmp2Result8.handleVoiceInviteEmbedViewTracking(visibleMessages, tmp4.shouldTrackVoiceInviteEmbedViews, tmp4.guildId, tmp4.channel);
       }
     }
-    function findMessageIndex(ChatTTITracker) {
-      if (null != ChatTTITracker) {
+    function findMessageIndex(startMessageId) {
+      if (null != startMessageId) {
         const obj = computeScrollData;
-        return obj.findMessageRowIndex(first.getPreviousRows(), ChatTTITracker);
+        return obj.findMessageRowIndex(first.getPreviousRows(), startMessageId);
       }
     }
     let current = function _handleTapNavBar() {
@@ -199,24 +199,24 @@ class MessagesRenderer {
                 ({ channel, useReducedMotion } = merged);
                 if (channel.isForumPost()) {
                   if (!ref2.current) {
-                    const obj2 = c1(c2[20]);
+                    const obj2 = c1(c2[19]);
                     if (null == callback2(obj2.castChannelIdAsMessageId(channel.id))) {
                       const obj5 = { channelId: channel.id, jump: obj6, limit };
                       obj6 = { messageId: channel.id, flash: false };
-                      const tmp10Result = c1(c2[26]);
+                      const tmp10Result = c1(c2[25]);
                       c1 = 1;
                       c2 = 1;
                       const obj7 = { value: tmp10Result.fetchMessages(obj5), done: false };
                       return obj7;
                     } else {
-                      const tmp10Result3 = c1(c2[20]);
+                      const tmp10Result3 = c1(c2[19]);
                       const tmp24 = findMessageIndex(tmp10Result3.castChannelIdAsMessageId(channel.id));
                       if (null == tmp24) {
                         c2 = 3;
                         return { value: "HermesInternal", done: null };
                       } else {
                         const obj8 = { animated: !useReducedMotion };
-                        const tmp10Result4 = c1(c2[17]);
+                        const tmp10Result4 = c1(c2[16]);
                         tmp10Result4.scrollTo(ref.current, tmp24, obj8);
                         const _setTimeout2 = setTimeout;
                         const timerId = setTimeout(() => closure_2_25(!closure_1_0), 10 * tmp24);
@@ -268,7 +268,7 @@ class MessagesRenderer {
       if (null == messages.jumpReturnTargetId) {
         if (!messages.loadingMore) {
           if (messages.hasMoreAfter) {
-            const obj2 = { channelId: channel.id, limit: map1, jump: { present: true } };
+            const obj2 = { channelId: channel.id, limit, jump: { present: true } };
             const obj5 = MessageActionCreatorsDefault;
             const messages1 = obj5.fetchMessages(obj2);
           } else {
@@ -338,11 +338,11 @@ class MessagesRenderer {
     current = react;
     let tmp2 = first2;
     const chatManager = first2(react.useState(() => {
-      const tmp = new first(hasJumpedToOriginalPost[15])();
+      const tmp = new first(hasJumpedToOriginalPost[14])();
       return tmp;
     }), 1)[0];
     const first1 = first2(react.useState(() => {
-      const tmp = new first(hasJumpedToOriginalPost[16])();
+      const tmp = new first(hasJumpedToOriginalPost[15])();
       return tmp;
     }), 1)[0];
     let tmp5 = first2(react.useState(false), 2);
@@ -370,13 +370,13 @@ class MessagesRenderer {
     }, []);
     let tmp16 = dependencyMap;
     let tmp15 = merged;
-    let obj2 = merged(11683);
+    let obj2 = merged(11734);
     const chatUpdatesQueue = obj2.useChatUpdatesQueue(ref6, callback);
     let items = [, ];
     ({ canChat: arr[0], channel: arr[1] } = merged);
     const items1 = [merged.messages];
     const callback1 = react.useCallback(() => {
-      let canChat = merged.canChat && PermissionStore.can(handleVisibleMessagesChange.ADD_REACTIONS, tmp.channel);
+      let canChat = merged.canChat && PermissionStore.can(startOrCancelChannelLatestMessagesLoad.ADD_REACTIONS, tmp.channel);
       if (!canChat) {
         const channel = tmp.channel;
         canChat = channel.isPrivate();
@@ -406,7 +406,7 @@ class MessagesRenderer {
     }, items2);
     let tmp21 = chatManager;
     let obj3 = { channelId: merged.channelId, jumpTargetId: merged.messages.jumpTargetId, oldestUnreadMessageId: merged.oldestUnreadMessageId, shouldJumpToOriginalPost: callback3 };
-    let tmp22 = chatManager(11705)(obj3);
+    let tmp22 = chatManager(11760)(obj3);
     ({ startOrCancelLatestMessagesLoad: c15, channelLatestMessageLoadingStatsManager } = tmp22);
     let obj4 = {
       chatRef: ref6,
@@ -423,7 +423,7 @@ class MessagesRenderer {
           hasMoreBefore = !messages.loadingMore;
         }
         if (hasMoreBefore) {
-          const obj = { channelId, before: id, limit: map1 };
+          const obj = { channelId, before: id, limit };
           const fetchMessages = MessageActionCreatorsDefault.fetchMessages;
           MessageActionCreatorsDefault;
           const firstResult = messages.first();
@@ -443,7 +443,7 @@ class MessagesRenderer {
           hasMoreAfter = !messages.loadingMore;
         }
         if (hasMoreAfter) {
-          const obj = { channelId, after: id, limit: map1 };
+          const obj = { channelId, after: id, limit };
           const fetchMessages = MessageActionCreatorsDefault.fetchMessages;
           MessageActionCreatorsDefault;
           const lastResult = messages.last();
@@ -465,12 +465,12 @@ class MessagesRenderer {
       isStaff: merged.isStaff,
       visibleMessagesWindowHandler: merged.visibleMessagesWindowHandler
     };
-    let tmp23 = chatManager(11707)(obj4);
+    let tmp23 = chatManager(11762)(obj4);
     ({ hasHandledScrollRef: c18, isAtBottomRef: c19, isNearBottomRef: c20, isNearTopRef: c21, deceleratingRef: c22, draggingRef: c23, firstIgnoredScrollEventTimestampRef: c24, scrollToTop: c25, updateNativeRows } = tmp23);
     ({ handleScrollCallbacks: c27, loadMoreBefore, loadMoreAfter, scrollToTopMessage, handleScrollPosition } = tmp23);
-    let obj5 = merged(11708);
+    let obj5 = merged(11763);
     let isMobileTimestampUpdatingEnabled = obj5.useIsMobileTimestampUpdatingEnabled("MessagesRenderer");
-    let tmp25 = chatManager(11709);
+    let tmp25 = chatManager(11764);
     if (isMobileTimestampUpdatingEnabled) {
       isMobileTimestampUpdatingEnabled = false !== merged.isActive;
     }
@@ -496,7 +496,7 @@ class MessagesRenderer {
     }), 1)[0];
     const imperativeHandle = current.useImperativeHandle(ref, () => ({ scrollToBottom, jumpToPresent, scrollToNewMessages, getChatRef }));
     let obj7 = { chatManager, rowGenerator: first1, animatingStickerMessageIdRef: ref4, canAddNewReactions: callback1, channel: merged.channel, messages: merged.messages, isMessagesReady: merged.isMessagesReady, uploads: merged.uploads, roleStyle: merged.roleStyle, oldestUnreadMessageId: merged.oldestUnreadMessageId, replyingMessageId: merged.replyingMessageId, inlineAttachmentMedia: merged.inlineAttachmentMedia, inlineEmbedMedia: merged.inlineEmbedMedia, renderEmbeds: merged.renderEmbeds, renderReactions: merged.renderReactions, animateEmoji: merged.animateEmoji, gifAutoPlay: merged.gifAutoPlay, timestampHourCycle: merged.timestampHourCycle, currentUserId: merged.currentUserId, renderCommunicationDisabled: merged.renderCommunicationDisabled, selectedSummary: merged.selectedSummary, selectedConversation: merged.selectedConversation, enableSwipeActions: merged.enableSwipeActions, isResourceChannel: merged.isResourceChannel, shouldObscureSpoiler: merged.shouldObscureSpoiler, shouldDisableInteractiveComponents: merged.shouldDisableInteractiveComponents, unloadableContentEntryMessageIds: merged.unloadableContentEntryMessageIds, containerWidth: merged.containerWidth, chatRef: ref6, loadedRef: ref5, animatedRef: ref1, hasMoreMessagesAfterForLastUpdateRef: ref2, updateNativeRows, isLoadingAtTop, channelLatestMessageLoadingStatsManager, channelId: merged.channelId, isMessagesCached: merged.isMessagesCached, chatUpdatesQueue, shouldJumpToOriginalPost: callback3, findMessageIndex, scrollToTopMessage, useReducedMotion: merged.useReducedMotion };
-    let tmp29 = tmp21(13845)(obj7);
+    let tmp29 = tmp21(13931)(obj7);
     ({ updateRows: c35, scrollToMessageId: c36 } = tmp29);
     const effect = current.useEffect(() => {
       let channelId;
@@ -508,13 +508,13 @@ class MessagesRenderer {
       const oldestUnreadMessageId = messages.oldestUnreadMessageId;
       if (messages.isMessagesReady) {
         ({ jumpTargetId: obj2.scrollToMessageId, jumpTargetId: obj2.jumpTargetId } = messages);
-        const obj5 = { scrollToMessageId: null, jumpTargetId: null, jumpType: merged(hasJumpedToOriginalPost[31]).JumpType.INSTANT, focusTargetId: messages.focusTargetId, hasJumpedToOriginalPost };
+        const obj5 = { scrollToMessageId: null, jumpTargetId: null, jumpType: merged(hasJumpedToOriginalPost[30]).JumpType.INSTANT, focusTargetId: messages.focusTargetId, hasJumpedToOriginalPost };
         _undefined4(obj5);
         const tmp5 = merged;
         const tmp7 = hasJumpedToOriginalPost;
         if (null != messages.jumpTargetId) {
           ({ jumpTargetId: obj3.scrollToMessageId, jumpTargetId: obj3.jumpTargetId } = messages);
-          const obj6 = { scrollToMessageId: null, jumpTargetId: null, jumpType: tmp5(hasJumpedToOriginalPost[31]).JumpType.INSTANT, hasJumpedToOriginalPost: tmp7 };
+          const obj6 = { scrollToMessageId: null, jumpTargetId: null, jumpType: tmp5(hasJumpedToOriginalPost[30]).JumpType.INSTANT, hasJumpedToOriginalPost: tmp7 };
           _undefined5(obj6);
         } else if (null != oldestUnreadMessageId) {
           const _setTimeout = setTimeout;
@@ -528,18 +528,18 @@ class MessagesRenderer {
         _undefined4(obj);
       }
       ({ channelId, messages: messages2 } = messages);
-      const recordMessageRender = first(hasJumpedToOriginalPost[11]).recordMessageRender;
-      first(hasJumpedToOriginalPost[11]);
-      const mapped = messages2.map(f99803);
+      const recordMessageRender = first(hasJumpedToOriginalPost[10]).recordMessageRender;
+      first(hasJumpedToOriginalPost[10]);
+      const mapped = messages2.map(f100462);
       let hasFetched = messages2.hasFetched;
       if (!hasFetched) {
         hasFetched = messages2.ready && !messages2.cached;
       }
       recordMessageRender(channelId, mapped, hasFetched, messages2.hasMoreAfter);
       ({ channelId: channelId2, messages: messages3 } = messages);
-      const recordMessageRender2 = tmp15(hasJumpedToOriginalPost[11]).recordMessageRender;
-      first(hasJumpedToOriginalPost[11]);
-      const mapped1 = messages3.map(f99803);
+      const recordMessageRender2 = tmp15(hasJumpedToOriginalPost[10]).recordMessageRender;
+      first(hasJumpedToOriginalPost[10]);
+      const mapped1 = messages3.map(f100462);
       let hasFetched2 = messages3.hasFetched;
       if (!hasFetched2) {
         hasFetched2 = messages3.ready && !messages3.cached;
@@ -559,6 +559,7 @@ class MessagesRenderer {
       let channelId2;
       let channelId3;
       let closure_1;
+      let closure_15;
       let closure_19;
       let closure_24;
       let closure_3;
@@ -581,8 +582,7 @@ class MessagesRenderer {
       if (null != props.currentUserId) {
         const messages4 = tmp2.messages;
         const messages5 = props.messages;
-        let tmp108 = props.channelId !== tmp2.channelId;
-        if (tmp108) {
+        if (props.channelId !== tmp2.channelId) {
           _undefined(false);
         }
         const channelId = tmp2.channelId;
@@ -591,7 +591,7 @@ class MessagesRenderer {
         let tmp9 = firstIgnoredScrollEventTimestampRef;
         if (props.channelId !== channelId) {
           obj2.clearRows();
-          let obj3 = first(hasJumpedToOriginalPost[14]);
+          let obj3 = first(hasJumpedToOriginalPost[13]);
           const result = obj3.clearChannelDimensions(channelId);
           const result1 = obj2.startOrCancelChannelLatestMessagesLoad(obj2.hasJumpedToOriginalPost);
           obj2.firstIgnoredScrollEventTimestampRef.current = undefined;
@@ -608,7 +608,7 @@ class MessagesRenderer {
         let tmp16 = callback3;
         const tmp17 = closure_25;
         const tmp18 = _undefined;
-        if (callback3(!tmp108 && closure_2)) {
+        if (callback3(props.channelId === tmp2.channelId && closure_2)) {
           tmp17(false);
           if (messages5.jumpSequenceId === messages4.jumpSequenceId) {
             tmp18(true);
@@ -620,7 +620,7 @@ class MessagesRenderer {
         let tmp25 = _undefined2;
         let tmp26 = first;
         const obj4 = { isAtBottom: _undefined2.current, hasPreviousMessages: null != first.getPreviousMessages() };
-        let tmp24 = first(hasJumpedToOriginalPost[36]);
+        let tmp24 = first(hasJumpedToOriginalPost[35]);
         const tmp24Result = tmp24(tmp2, obj4, props);
         ({ jumpTargetId, focusTargetId } = tmp24Result);
         let tmp28 = props.theme !== tmp2.theme;
@@ -641,7 +641,7 @@ class MessagesRenderer {
         let tmp33 = hasJumpedToOriginalPost;
         const uploads = props.uploads;
         const uploads2 = tmp2.uploads;
-        const tmp34 = first(hasJumpedToOriginalPost[37])(props.interactionStates, tmp2.interactionStates);
+        const tmp34 = first(hasJumpedToOriginalPost[36])(props.interactionStates, tmp2.interactionStates);
         closure_2 = !tmp34;
         _undefined = tmp35;
         shouldForceRender = tmp36;
@@ -657,17 +657,17 @@ class MessagesRenderer {
         const forwardGuildsVersion2 = tmp2.forwardGuildsVersion;
         const tmp42 = channel.isForumPost() && props.isFollowingForumPost !== tmp2.isFollowingForumPost;
         let closure_11 = tmp42;
-        constants = tmp43;
+        let closure_12 = tmp43;
         let closure_13 = tmp44;
         let tmp45 = props.invalidApplicationIds !== tmp2.invalidApplicationIds;
         callback3 = tmp45;
         const tmp46 = props.activityInstanceIds !== tmp2.activityInstanceIds || props.activityParticipants !== tmp2.activityParticipants || props.applicationAssetFetchingIds !== tmp2.applicationAssetFetchingIds || props.activityInstancePresenceDetails !== tmp2.activityInstancePresenceDetails || props.messagesWithActivitiesLaunching !== tmp2.messagesWithActivitiesLaunching || tmp45;
         startOrCancelChannelLatestMessagesLoad = tmp46;
         let tmp47 = merged;
-        let obj5 = merged(hasJumpedToOriginalPost[37]);
+        let obj5 = merged(hasJumpedToOriginalPost[36]);
         const result2 = obj5.areArraysShallowEqual(props.activityInviteMessageIds, tmp2.activityInviteMessageIds);
         let closure_16 = !result2;
-        let obj6 = merged(hasJumpedToOriginalPost[37]);
+        let obj6 = merged(hasJumpedToOriginalPost[36]);
         const result3 = obj6.areArraysShallowEqual(props.resolvedReferralTrialOfferIds, tmp2.resolvedReferralTrialOfferIds);
         let tmp52 = !result3;
         if (result3) {
@@ -703,10 +703,11 @@ class MessagesRenderer {
         }
         let tmp61 = voiceStatePrivateChannelId !== voiceStatePrivateChannelId2;
         firstIgnoredScrollEventTimestampRef = tmp62;
-        const tmp47Result = tmp47(hasJumpedToOriginalPost[37]);
+        closure_25 = tmp63;
+        const tmp47Result = tmp47(hasJumpedToOriginalPost[36]);
         const result4 = tmp47Result.areArraysShallowEqual(props.fetchingSkuIds, tmp2.fetchingSkuIds);
-        closure_25 = !result4;
-        let closure_26 = tmp65;
+        let closure_26 = !result4;
+        let closure_27 = tmp66;
         if (!tmp29) {
           if (!(props.resolvingGiftCodes !== tmp2.resolvingGiftCodes || props.resolvedGiftCodes !== tmp2.resolvedGiftCodes || props.acceptingGiftCodes !== tmp2.acceptingGiftCodes)) {
             if (uploads === uploads2) {
@@ -773,18 +774,21 @@ class MessagesRenderer {
                                                                                                                                       if (fontId === fontId1) {
                                                                                                                                         if (!tmp56) {
                                                                                                                                           if (props.voiceInviteDataByChannelId === tmp2.voiceInviteDataByChannelId) {
-                                                                                                                                            if (result4) {
-                                                                                                                                              ({ channelId: channelId2, messages } = tmp2);
-                                                                                                                                              let tmp67 = hasJumpedToOriginalPost;
-                                                                                                                                              const tmp68 = first(hasJumpedToOriginalPost[11]);
-                                                                                                                                              const recordMessageRender = tmp68.recordMessageRender;
-                                                                                                                                              const mapped = messages.map(f99803);
-                                                                                                                                              let hasFetched = messages.hasFetched;
-                                                                                                                                              if (!hasFetched) {
-                                                                                                                                                hasFetched = messages.ready && !messages.cached;
+                                                                                                                                            if (props.socialLayerStorefrontEmbedData === tmp2.socialLayerStorefrontEmbedData) {
+                                                                                                                                              if (result4) {
+                                                                                                                                                ({ channelId: channelId2, messages } = tmp2);
+                                                                                                                                                let tmp67 = first;
+                                                                                                                                                const tmp69 = first(hasJumpedToOriginalPost[10]);
+                                                                                                                                                const recordMessageRender = tmp69.recordMessageRender;
+                                                                                                                                                const mapped = messages.map(f100462);
+                                                                                                                                                let hasFetched = messages.hasFetched;
+                                                                                                                                                if (!hasFetched) {
+                                                                                                                                                  hasFetched = messages.ready && !messages.cached;
+                                                                                                                                                  const tmp71 = messages.ready && !messages.cached;
+                                                                                                                                                }
+                                                                                                                                                let tmp73 = channelId2;
+                                                                                                                                                recordMessageRender(channelId2, mapped, hasFetched, messages.hasMoreAfter);
                                                                                                                                               }
-                                                                                                                                              let tmp73 = mapped;
-                                                                                                                                              recordMessageRender(channelId2, mapped, hasFetched, messages.hasMoreAfter);
                                                                                                                                             }
                                                                                                                                           }
                                                                                                                                         }
@@ -856,6 +860,7 @@ class MessagesRenderer {
         const self = this;
         const self2 = this;
         set = new Set();
+        let tmp78 = set;
         if (props.editingMessageId !== tmp2.editingMessageId) {
           if (null != tmp2.editingMessageId) {
             set.add(tmp2.editingMessageId);
@@ -874,20 +879,21 @@ class MessagesRenderer {
         }
         if (props.isMessagesReady === tmp2.isMessagesReady) {
           if (props.isCallActive === tmp2.isCallActive) {
-            closure_28 = props.channelThreadsVersion !== tmp2.channelThreadsVersion;
-            let closure_29 = props.rsvpVersion !== tmp2.rsvpVersion;
-            let closure_30 = props.repliedIds !== tmp2.repliedIds;
-            let closure_31 = props.hasLoadedExperiments !== tmp2.hasLoadedExperiments;
+            let closure_29 = props.channelThreadsVersion !== tmp2.channelThreadsVersion;
+            let closure_30 = props.rsvpVersion !== tmp2.rsvpVersion;
+            let closure_31 = props.repliedIds !== tmp2.repliedIds;
+            let closure_32 = props.hasLoadedExperiments !== tmp2.hasLoadedExperiments;
             let num = props.communicationDisabledVersion;
             if (num == null) {
               num = -1;
             }
-            let closure_33 = tmp86;
+            let tmp87 = !props.cacheStoreLoaded && tmp2.cacheStoreLoaded;
+            let closure_34 = tmp87;
             let voiceChannelIdChangedAuthorIds = null;
             if (tmp56) {
               let prop = props.voiceStateChannelIdSummaryForGuild;
-              const getVoiceChannelIdChangedAuthorIds = tmp47(hasJumpedToOriginalPost[13]).getVoiceChannelIdChangedAuthorIds;
-              tmp47(hasJumpedToOriginalPost[13]);
+              const getVoiceChannelIdChangedAuthorIds = tmp47(hasJumpedToOriginalPost[12]).getVoiceChannelIdChangedAuthorIds;
+              tmp47(hasJumpedToOriginalPost[12]);
               if (prop == null) {
                 prop = null;
               }
@@ -899,9 +905,7 @@ class MessagesRenderer {
             }
             const messages1 = tmp2.messages;
             const item = messages1.forEach((author) => {
-              let code2;
               let messageAuthorMembers;
-              let type;
               const tmp = closure_21;
               if (tmp) {
                 const obj = voiceChannelIdChangedAuthorIds;
@@ -916,23 +920,23 @@ class MessagesRenderer {
               const tmp3 = closure_20;
               if (tmp3) {
                 const activity = author.activity;
-                let type1;
+                let type;
                 if (activity != null) {
-                  type1 = activity.type;
+                  type = activity.type;
                 }
-                if (type1 === constants.STREAM_REQUEST) {
+                if (type === unpackModuleId.STREAM_REQUEST) {
                   set.add(author.id);
                 }
               }
-              const tmp7 = closure_31;
+              const tmp7 = closure_32;
               if (tmp7) {
-                if (author.type === constants3.USER_JOIN) {
+                if (author.type === constants.USER_JOIN) {
                   set.add(author.id);
                 }
               }
-              const tmp9 = closure_30;
+              const tmp9 = closure_31;
               if (tmp9) {
-                if (author.type === constants3.REPLY) {
+                if (author.type === constants.REPLY) {
                   const messageReference = author.messageReference;
                   if (null != messageReference) {
                     const repliedIds = merged.repliedIds;
@@ -942,19 +946,19 @@ class MessagesRenderer {
                   }
                 }
               }
-              const tmp13 = closure_28;
+              const tmp13 = closure_29;
               if (tmp13) {
-                if (author.hasFlag(constants2.HAS_THREAD)) {
+                if (author.hasFlag(map1.HAS_THREAD)) {
                   set.add(author.id);
                 }
               }
-              const tmp15 = closure_29;
+              const tmp15 = closure_30;
               if (tmp15) {
                 if (author.codedLinks.length > 0) {
                   set.add(author.id);
                 }
               }
-              const tmp16 = closure_26;
+              const tmp16 = closure_27;
               if (tmp16) {
                 if (author.codedLinks.length > 0) {
                   const codedLinks = author.codedLinks;
@@ -965,12 +969,12 @@ class MessagesRenderer {
                     if (nextResult.type === CodedLink.CodedLinkType.INVITE) {
                       invites = merged.invites;
                       let value = invites.get(code);
-                      let tmp202 = value;
+                      let tmp185 = value;
                       if (null != value) {
-                        if (null != tmp202.channel) {
+                        if (null != tmp185.channel) {
                           let obj2 = InviteTypeUtils;
-                          if (obj2.isVoiceChannelInvite(tmp202)) {
-                            let id = tmp202.channel.id;
+                          if (obj2.isVoiceChannelInvite(tmp185)) {
+                            let id = tmp185.channel.id;
                             if (props.voiceInviteDataByChannelId[id] !== merged.voiceInviteDataByChannelId[id]) {
                               let addResult6 = set.add(author.id);
                               iter.return();
@@ -1011,8 +1015,8 @@ class MessagesRenderer {
                 if (tmp51) {
                   const interactionComponentStates = props.interactionComponentStates;
                   const interactionComponentStates2 = merged.interactionComponentStates;
-                  const value3 = interactionComponentStates.get(author.id);
-                  if (value3 !== interactionComponentStates2.get(author.id)) {
+                  const value2 = interactionComponentStates.get(author.id);
+                  if (value2 !== interactionComponentStates2.get(author.id)) {
                     set.add(author.id);
                   }
                 }
@@ -1061,7 +1065,7 @@ class MessagesRenderer {
                     }
                   }
                 }
-                const tmp78 = constants3;
+                const tmp78 = closure_15;
                 if (tmp78) {
                   if (null != author.activityInstance) {
                     set.add(author.id);
@@ -1097,129 +1101,100 @@ class MessagesRenderer {
                   }
                 }
                 const tmp91 = closure_25;
-                if (tmp91) {
-                  if (author.codedLinks.length > 0) {
-                    const codedLinks2 = author.codedLinks;
-                    const iter2 = codedLinks2[Symbol.iterator]();
-                    const nextResult1 = iter2.next();
-                    while (iter2 !== undefined) {
-                      ({ type, code: code2 } = nextResult1);
-                      if (type === CodedLink.CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
-                        let first = _slicedToArray(code2.split("-"), 1)[0];
-                        let fetchingSkuIds = props.fetchingSkuIds;
-                        let tmp105 = first;
-                        let tmp107 = props;
-                        if (fetchingSkuIds.includes(first)) {
-                          let addResult20 = set.add(author.id);
-                          iter2.return();
-                        } else {
-                          let value4 = SKUStore.get(tmp105);
-                          if (null != value4) {
-                            let invalidApplicationIds = tmp107.invalidApplicationIds;
-                            if (invalidApplicationIds.includes(tmp111.applicationId)) {
-                              let addResult21 = set.add(author.id);
-                              iter2.return();
+                if (!tmp91) {
+                  if (null != author.author) {
+                    const obj10 = MessagesUtilsDefault;
+                    if (!obj10.messageAuthorActivitiesChanged(author, props, merged)) {
+                      const obj7 = MessagesUtilsDefault;
+                      if (!obj7.codedLinksChanged(author, props, merged)) {
+                        const tmp106 = closure_1;
+                        if (!tmp106) {
+                          const obj9 = MessagesUtilsDefault;
+                          if (!obj9.mediaPostPreviewEmbedsChanged(author, props, merged)) {
+                            const tmp115 = closure_34 && author.embeds.length > 0;
+                            if (tmp115) {
+                              set.add(author.id);
                             }
-                          }
-                        }
-                      }
-                      continue;
-                    }
-                  }
-                }
-                if (null != author.author) {
-                  const obj9 = MessagesUtilsDefault;
-                  if (!obj9.messageAuthorActivitiesChanged(author, props, merged)) {
-                    const obj6 = MessagesUtilsDefault;
-                    if (!obj6.codedLinksChanged(author, props, merged)) {
-                      const tmp125 = closure_1;
-                      if (!tmp125) {
-                        const obj8 = MessagesUtilsDefault;
-                        if (!obj8.mediaPostPreviewEmbedsChanged(author, props, merged)) {
-                          const tmp134 = closure_33 && author.embeds.length > 0;
-                          if (tmp134) {
-                            set.add(author.id);
-                          }
-                          const tmp138 = author.type === constants3.THREAD_STARTER_MESSAGE && tmp208.threadStartingReferenceMessage !== merged.threadStartingReferenceMessage;
-                          if (tmp138) {
-                            set.add(author.id);
-                          }
-                          let hasItem1 = constants2 && null != author.applicationId;
-                          if (hasItem1) {
-                            const invalidApplicationIds2 = tmp207.invalidApplicationIds;
-                            hasItem1 = invalidApplicationIds2.includes(author.applicationId);
-                          }
-                          if (hasItem1) {
-                            set.add(author.id);
-                          }
-                          const tmp146 = closure_17;
-                          if (tmp146) {
-                            const referralTrialOfferId = author.referralTrialOfferId;
-                            let hasItem2 = null != referralTrialOfferId;
-                            if (hasItem2) {
-                              const resolvedReferralTrialOfferIds = merged.resolvedReferralTrialOfferIds;
-                              hasItem2 = resolvedReferralTrialOfferIds.includes(referralTrialOfferId);
+                            const tmp119 = author.type === constants.THREAD_STARTER_MESSAGE && tmp189.threadStartingReferenceMessage !== merged.threadStartingReferenceMessage;
+                            if (tmp119) {
+                              set.add(author.id);
                             }
-                            if (hasItem2) {
+                            let hasItem1 = constants && null != author.applicationId;
+                            if (hasItem1) {
+                              const invalidApplicationIds = tmp188.invalidApplicationIds;
+                              hasItem1 = invalidApplicationIds.includes(author.applicationId);
+                            }
+                            if (hasItem1) {
+                              set.add(author.id);
+                            }
+                            const tmp127 = closure_17;
+                            if (tmp127) {
+                              const referralTrialOfferId = author.referralTrialOfferId;
+                              let hasItem2 = null != referralTrialOfferId;
+                              if (hasItem2) {
+                                const resolvedReferralTrialOfferIds = merged.resolvedReferralTrialOfferIds;
+                                hasItem2 = resolvedReferralTrialOfferIds.includes(referralTrialOfferId);
+                              }
+                              if (hasItem2) {
+                                set.add(author.id);
+                              }
+                            }
+                            const tmp132 = closure_18 && author.codedLinks.length > 0;
+                            if (tmp132) {
+                              set.add(author.id);
+                            }
+                            let tmp135 = closure_19 || closure_22;
+                            if (tmp135) {
+                              const activity3 = author.activity;
+                              let party_id1;
+                              if (activity3 != null) {
+                                party_id1 = activity3.party_id;
+                              }
+                              tmp135 = null != party_id1;
+                            }
+                            if (tmp135) {
                               set.add(author.id);
                             }
                           }
-                          const tmp151 = closure_18 && author.codedLinks.length > 0;
-                          if (tmp151) {
-                            set.add(author.id);
-                          }
-                          let tmp154 = closure_19 || closure_22;
-                          if (tmp154) {
-                            const activity3 = author.activity;
-                            let party_id1;
-                            if (activity3 != null) {
-                              party_id1 = activity3.party_id;
-                            }
-                            tmp154 = null != party_id1;
-                          }
-                          if (tmp154) {
-                            set.add(author.id);
-                          }
+                        } else {
+                          MessagesUtilsDefault;
                         }
-                      } else {
-                        MessagesUtilsDefault;
                       }
                     }
+                    set.add(author.id);
                   }
+                }
+                const obj6 = useSocialLayerStorefrontEmbedData;
+                if (obj6.shouldRefreshSocialLayerStorefrontEmbed(author, props.socialLayerStorefrontEmbedData, merged.socialLayerStorefrontEmbedData, props.fetchingSkuIds, props.invalidApplicationIds)) {
                   set.add(author.id);
                 }
               }
               set.add(author.id);
             });
-            const obj7 = { forceRender: tmp29, forceReload: tmp28, updateMessageIds: set, scrollToMessageId, jumpTargetId, jumpType, focusTargetId, ignoreEmbedDescriptionCache: tmp86, messagesNewlyLoaded: tmp21, shouldInitialScroll, minimizeScrolling, isAnimated: props.channelId !== tmp2.channelId || messages5.suppressRowAnimationSequenceId === messages4.suppressRowAnimationSequenceId, hasJumpedToOriginalPost: tmp6 };
-            const tmp93 = props.channelId !== tmp2.channelId || messages5.suppressRowAnimationSequenceId === messages4.suppressRowAnimationSequenceId;
-            const tmp94 = c35;
+            let obj7 = { forceRender: tmp29, forceReload: tmp28, updateMessageIds: set, scrollToMessageId, jumpTargetId, jumpType, focusTargetId, ignoreEmbedDescriptionCache: tmp87, messagesNewlyLoaded: tmp21, shouldInitialScroll, minimizeScrolling, isAnimated: props.channelId !== tmp2.channelId || messages5.suppressRowAnimationSequenceId === messages4.suppressRowAnimationSequenceId, hasJumpedToOriginalPost: tmp6 };
+            const tmp94 = props.channelId !== tmp2.channelId || messages5.suppressRowAnimationSequenceId === messages4.suppressRowAnimationSequenceId;
+            const tmp95 = voiceChannelIdChangedAuthorIds;
             if (!tmp28) {
-              tmp28 = tmp108;
+              tmp28 = tmp109;
             }
-            tmp94(obj7);
-            let tmp96 = closure_5;
-            let tmp97 = closure_5(false);
+            tmp95(obj7);
+            closure_5(false);
             ({ channelId: channelId3, messages: messages3 } = tmp2);
-            let tmp98 = first;
-            let tmp99 = hasJumpedToOriginalPost;
-            let tmp100 = first(hasJumpedToOriginalPost[11]);
-            const recordMessageRender2 = tmp100.recordMessageRender;
-            const mapped1 = messages3.map(f99803);
+            const tmp101 = first(hasJumpedToOriginalPost[10]);
+            const recordMessageRender2 = tmp101.recordMessageRender;
+            const mapped1 = messages3.map(f100462);
             let hasFetched2 = messages3.hasFetched;
             if (!hasFetched2) {
-              let tmp102 = messages3.ready && !messages3.cached;
-              hasFetched2 = tmp102;
+              hasFetched2 = messages3.ready && !messages3.cached;
+              const tmp103 = messages3.ready && !messages3.cached;
             }
-            let tmp103 = tmp100;
-            let tmp105 = mapped1;
-            let tmp106 = hasFetched2;
+            let tmp106 = mapped1;
             recordMessageRender2(channelId3, mapped1, hasFetched2, messages3.hasMoreAfter);
           }
         }
         const messages2 = tmp2.messages;
-        const find = first(hasJumpedToOriginalPost[19]).find;
-        first(hasJumpedToOriginalPost[19]);
+        const find = first(hasJumpedToOriginalPost[18]).find;
+        first(hasJumpedToOriginalPost[18]);
         const toArrayResult = messages2.toArray();
         const found = find(toArrayResult.reverse(), (type) => type.type === constants.CALL);
         if (null != found) {
@@ -1373,10 +1348,10 @@ class MessagesRenderer {
         handleVisibleMessagesChange(obj);
       }
     };
-    items4 = [findMessageIndex(tmp21(13463), obj9), ];
-    const obj10 = { messages: merged.messages };
-    items4[1] = findMessageIndex(tmp15(13853).ChatTTITracker, obj10);
-    return c19(c18, obj8);
+    items4 = [handleVisibleMessagesChange(tmp21(13547), obj9), ];
+    let obj10 = { messages: merged.messages };
+    items4[1] = handleVisibleMessagesChange(tmp15(13939).ChatTTITracker, obj10);
+    return c18(findMessageIndex, obj8);
   }
 }
 MessagesRenderer.displayName = "Messages";

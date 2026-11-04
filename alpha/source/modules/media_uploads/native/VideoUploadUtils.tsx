@@ -1,10 +1,10 @@
-// Module ID: 8354
-// Function ID: 8355
+// Module ID: 8370
+// Function ID: 8371
 // Name: VideoUploadUtils
 // Dependencies: [1194, 3, 2]
 // Exports: calculateOptimalBitrate, calculateTargetDimensions, canSkipVideoTranscode, logEncoderSettings, logSourceMetadata
 
-// Module 8354 (VideoUploadUtils)
+// Module 8370 (VideoUploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import size_mod from "module_2" /* 2 */;

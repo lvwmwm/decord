@@ -1,14 +1,14 @@
-// Module ID: 10954
-// Function ID: 10955
+// Module ID: 11002
+// Function ID: 11003
 // Name: RolePill
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 4966, 7475, 7478, 5831, 7106, 7492, 7494, 5747, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 4966, 7491, 7494, 5845, 7121, 7508, 7510, 5761, 2]
 // Exports: default
 
-// Module 10954 (RolePill)
+// Module 11002 (RolePill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -51,7 +51,7 @@ export default function RolePill(role) {
   const disableInteraction = role.disableInteraction;
   const DeveloperMode = role(4966).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = role(7475);
+  let obj = role(7491);
   let obj2 = { guildId, roleId: role.id, size: 12 };
   const roleIconProps = obj.useRoleIconProps(obj2);
   let name = role.name;
@@ -72,7 +72,7 @@ export default function RolePill(role) {
   }
   const tmp9 = closure_8();
   let tmp11 = !setting;
-  const PressableHighlight = tmp(7106).PressableHighlight;
+  const PressableHighlight = tmp(7121).PressableHighlight;
   if (setting) {
     tmp11 = disableInteraction;
   }
@@ -92,7 +92,7 @@ export default function RolePill(role) {
   tmp12 = closure_7;
   if (undefined !== guild_connections) {
     const obj5 = { style: tmp9.verifiedContainer, roleId: role.id, guildId, roleColor: color, size: 14, displayRoleIcon: false };
-    const tmp16 = combined(7492);
+    const tmp16 = combined(7508);
     if (guildId == null) {
       guildId = closure_4;
     }
@@ -115,11 +115,11 @@ export default function RolePill(role) {
   if (null != roleIconProps) {
     const obj9 = { style: tmp9.roleIcon, children: closure_6(tmp19, obj10) };
     obj10 = {};
-    tmp19 = combined(7494);
+    tmp19 = combined(7510);
     const merged = Object.assign(roleIconProps);
     tmp10Result2 = tmp10(tmp13, obj9);
   }
   items1[1] = tmp10Result2;
-  items1[2] = closure_6(role(5747).Text, { variant: "text-xs/semibold", color: "interactive-text-active", children: name });
+  items1[2] = closure_6(role(5761).Text, { variant: "body-xs/semibold", color: "interactive-text-active", children: name });
   return closure_6(PressableHighlight, obj3);
 };

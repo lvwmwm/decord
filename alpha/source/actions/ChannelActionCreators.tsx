@@ -1,24 +1,24 @@
-// Module ID: 7609
-// Function ID: 7610
+// Module ID: 7625
+// Function ID: 7626
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 7610, 4994, 4990, 6962, 1072, 7611, 1282, 7024, 5322, 5876, 6826, 572, 7013, 1252, 1099, 5148, 1113, 7622, 5878, 6575, 2]
+// Dependencies: [32, 5, 7626, 4994, 4990, 6977, 1072, 7627, 1282, 7039, 5323, 5890, 6841, 572, 7028, 1252, 1099, 5148, 1113, 7638, 5892, 6590, 2]
 
-// Module 7609 (ChannelActionCreators)
+// Module 7625 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import shared from "shared" /* 5148 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
-import preloadChannelDefault from "preloadChannel" /* 5878 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6826 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 7013 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
+import preloadChannelDefault from "preloadChannel" /* 5892 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6841 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 7028 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 7610 */;
+import ChangelogStore from "ChangelogStore" /* 7626 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let closure_12;
 let map1;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(5876);
+const transitionToChannel = tmp5(5890);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -300,7 +300,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(5876);
+          const tmp6Result = tmp6(5890);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -471,7 +471,7 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "isArray" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "ao" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {

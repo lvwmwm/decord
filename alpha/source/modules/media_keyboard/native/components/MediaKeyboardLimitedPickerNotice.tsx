@@ -1,14 +1,14 @@
-// Module ID: 10684
-// Function ID: 10685
+// Module ID: 10732
+// Function ID: 10733
 // Name: MediaKeyboardLimitedPickerNotice
-// Dependencies: [19, 17, 21, 5141, 5747, 1113, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 10684 (MediaKeyboardLimitedPickerNotice)
+// Module 10732 (MediaKeyboardLimitedPickerNotice)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -44,7 +44,7 @@ export default function MediaKeyboardLimitedPickerNotice(onHeightChange) {
   }
   const obj = { style: items1, onLayout: callback, children: items2 };
   items1[1] = absoluteContainer;
-  const obj2 = { style: tmp.text, variant: "text-sm/normal", children: intl.string(intl3.t["5g7NcN"]) };
+  const obj2 = { style: tmp.text, variant: "body-sm/normal", children: intl.string(intl3.t["5g7NcN"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items2 = [React3(Text, obj2), ];

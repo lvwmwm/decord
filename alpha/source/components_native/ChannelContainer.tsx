@@ -1,17 +1,17 @@
-// Module ID: 11140
-// Function ID: 11141
+// Module ID: 11188
+// Function ID: 11189
 // Name: ChannelContainer
-// Dependencies: [19, 17, 5074, 4990, 5044, 1072, 4987, 21, 5141, 5324, 11141, 504, 11329, 6852, 5171, 4974, 11330, 11331, 11347, 2]
+// Dependencies: [19, 17, 5074, 4990, 5044, 1072, 4987, 21, 5141, 5325, 11189, 504, 11379, 6867, 5171, 4974, 11380, 11381, 11397, 2]
 // Exports: ChannelContainer
 
-// Module 11140 (ChannelContainer)
+// Module 11188 (ChannelContainer)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import useChatLayoutDefault from "useChatLayout" /* 5324 */;
+import useChatLayoutDefault from "useChatLayout" /* 5325 */;
 import react_mod from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 5074 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -26,8 +26,8 @@ let c10;
 let tmp;
 let tmp2;
 let unpackModuleId;
-const NotificationsDefault = tmp2(11141);
-const useChannelStylesShared = tmp(11330);
+const NotificationsDefault = tmp2(11189);
+const useChannelStylesShared = tmp(11380);
 function NotificationsContainer() {
   let tmp4 = null;
   const tmp = closure_12();
@@ -79,7 +79,7 @@ export function ChannelContainer(children) {
   let voiceChannelId = stateFromStoresObject.voiceChannelId;
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(11329)(voiceChannelId);
+    tmp5 = channelId(11379)(voiceChannelId);
   }
   const items1 = [LurkingStore];
   let isPrivateResult = null != channel;
@@ -92,9 +92,9 @@ export function ChannelContainer(children) {
     isPrivateResult = channel.isPrivate();
   }
   dependencyMap = isPrivateResult;
-  const tmp8 = channelId(6852)(isPrivateResult);
+  const tmp8 = channelId(6867)(isPrivateResult);
   react = tmp8;
-  const tmp9 = channelId(6852)(channelId);
+  const tmp9 = channelId(6867)(channelId);
   closure_4 = tmp9;
   const items2 = [channelId, tmp9, isPrivateResult, tmp8];
   const effect = react.useEffect(() => {
@@ -128,13 +128,13 @@ export function ChannelContainer(children) {
     tmp15 = null;
     if (stateFromStores) {
       const obj4 = { channel };
-      tmp15 = closure_10(tmp4(11331), obj4);
+      tmp15 = closure_10(tmp4(11381), obj4);
     }
   }
   items3 = [tmp15, children, ];
   if (tmp5) {
     const obj5 = { style: channelStyles.callPTTButton };
-    tmp5 = closure_10(tmp4(11347), obj5);
+    tmp5 = closure_10(tmp4(11397), obj5);
   }
   items3[2] = tmp5;
   items4 = [closure_11(closure_4, obj3), closure_10(NotificationsContainer, {})];

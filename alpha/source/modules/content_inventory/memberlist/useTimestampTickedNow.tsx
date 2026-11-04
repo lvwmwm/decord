@@ -1,10 +1,10 @@
-// Module ID: 14987
-// Function ID: 14988
+// Module ID: 15067
+// Function ID: 15068
 // Name: useTimestampTickedNow
 // Dependencies: [32, 19, 5142, 1089, 504, 4985, 2]
 // Exports: useTimestampTickedNow
 
-// Module 14987 (useTimestampTickedNow)
+// Module 15067 (useTimestampTickedNow)
 import DurationsDefault from "Durations" /* 1089 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

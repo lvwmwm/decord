@@ -1,12 +1,12 @@
-// Module ID: 19940
-// Function ID: 19941
+// Module ID: 20056
+// Function ID: 20057
 // Name: GuildSettingsRoleItem
-// Dependencies: [5, 19, 17, 1072, 21, 5141, 575, 5747, 6160, 7475, 6079, 1113, 11740, 7022, 6150, 8152, 5858, 7494, 7492, 5710, 1380, 1090, 9187, 7101, 8785, 1187, 10109, 8791, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5141, 575, 5761, 6175, 7491, 6094, 1113, 11795, 7037, 6165, 8168, 5872, 7510, 7508, 5723, 1380, 1090, 9204, 7116, 8802, 1187, 10157, 8808, 2]
 
-// Module 19940 (GuildSettingsRoleItem)
+// Module 20056 (GuildSettingsRoleItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -29,12 +29,12 @@ let size;
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const DEFAULT_ROLE_COLOR_HEX = Constants.DEFAULT_ROLE_COLOR_HEX;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let c9 = "text-md/semibold";
+let c9 = "body-md/semibold";
 let createStyles = createStyles_mod;
 let obj = { row: { flexDirection: "row", gap: 4, alignItems: "center" }, everyone: obj2, label: obj3, sparkleIcon: obj4, dragHandlePressable: { alignSelf: "stretch", justifyContent: "center" }, container: size, gradient: obj5, image: { tintColor: "white" } };
 obj2 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: 20, padding: 8 };
 createStyles = createStyles.createStyles;
-let prop = Text_Text.TextStyleSheet["text-md/semibold"];
+let prop = Text_Text.TextStyleSheet["body-md/semibold"];
 let num;
 if (prop != null) {
   num = prop.lineHeight;

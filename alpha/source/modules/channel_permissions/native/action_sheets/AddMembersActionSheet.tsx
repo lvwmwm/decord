@@ -1,17 +1,17 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9202
+// Function ID: 9203
 // Name: AddMembersActionSheet
-// Dependencies: [5, 109, 32, 19, 17, 5053, 5047, 5012, 1385, 8071, 1083, 21, 5141, 575, 5078, 5730, 5776, 504, 9159, 5150, 1113, 1187, 5747, 9186, 5398, 7414, 9190, 7021, 8149, 9195, 5772, 6166, 9160, 5831, 5381, 5395, 7441, 5754, 2]
+// Dependencies: [5, 109, 32, 19, 17, 5053, 5047, 5012, 1385, 8087, 1083, 21, 5141, 575, 5078, 5743, 5790, 504, 9176, 5150, 1113, 1187, 5761, 9203, 5400, 7430, 9207, 7036, 8165, 9212, 5786, 6181, 9177, 5845, 5382, 5396, 7457, 5768, 2]
 // Exports: default
 
-// Module 9185 (AddMembersActionSheet)
+// Module 9202 (AddMembersActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl9 from "intl" /* 1113 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5078 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import RegexUtilsDefault from "RegexUtils" /* 5776 */;
-import GuildUtilsDefault from "GuildUtils" /* 7021 */;
+import RegexUtilsDefault from "RegexUtils" /* 5790 */;
+import GuildUtilsDefault from "GuildUtils" /* 7036 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -21,7 +21,7 @@ import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import UserStore from "UserStore" /* 1385 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8071 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8087 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let obj4;
 let obj5;
 let size;
 let tmp10;
-const ChannelPermissionsUtilsAll = tmp10(9159);
+const ChannelPermissionsUtilsAll = tmp10(9176);
 function _toPropertyKey(obj) {
   let StringResult = obj;
   if (typeof obj === "object") {
@@ -85,6 +85,7 @@ class AddMembersBody {
     let intl6;
     let intl7;
     let intl8;
+    let items11;
     let items2;
     let items8;
     let obj10;
@@ -102,7 +103,7 @@ class AddMembersBody {
       let tmp2 = dependencyMap;
       permission = PermissionUtilsAll.NONE;
     }
-    const inActionSheet = pendingAdditions.inActionSheet;
+    let emptyStateInActionSheet = pendingAdditions.inActionSheet;
     let merged = Object.assign(pendingAdditions, Object.assign({ channel: 0, guild: 0, pendingAdditions: 0, setPendingAdditions: 0, permission: 0, inActionSheet: 0 }));
     let str;
     react = undefined;
@@ -131,9 +132,9 @@ class AddMembersBody {
     str = tmp7[0];
     react = tmp7[1];
     const tmp8 = pendingAdditions;
-    let obj2 = { isKeyboardAwareOnAndroid: !inActionSheet };
+    let obj2 = { isKeyboardAwareOnAndroid: !emptyStateInActionSheet };
     let tmp10 = importAll;
-    const insets = pendingAdditions(5730)(obj2).insets;
+    const insets = pendingAdditions(5743)(obj2).insets;
     let obj3 = PermissionUtilsAll;
     let canEveryoneRoleResult = obj3.canEveryoneRole(Permissions.ADMINISTRATOR, guild);
     const tmp12 = guild;
@@ -214,12 +215,12 @@ class AddMembersBody {
       const merged = Object.assign(row.display);
       return obj;
     });
-    if (inActionSheet) {
-      BottomSheetScrollView = tmp12(5398).BottomSheetScrollView;
+    if (emptyStateInActionSheet) {
+      BottomSheetScrollView = tmp12(5400).BottomSheetScrollView;
     } else {
       BottomSheetScrollView = num3;
     }
-    const tmp12Result = tmp12(7414);
+    const tmp12Result = tmp12(7430);
     const obj9 = { style: tmp4.inputContainer, children: closure_17(tmp8Result, obj10) };
     obj10 = {
       accessibilityLabel: intl5.string(tmp12(1113).t["5h0QOP"]),
@@ -247,8 +248,8 @@ class AddMembersBody {
         });
       }
     };
-    const tmp31 = inActionSheet ? tmp12Result.BottomSheetFlashList : tmp12Result.FlashList;
-    tmp8Result = tmp8(9190);
+    const tmp31 = emptyStateInActionSheet ? tmp12Result.BottomSheetFlashList : tmp12Result.FlashList;
+    tmp8Result = tmp8(9207);
     intl5 = tmp12(1113).intl;
     intl6 = tmp12(1113).intl;
     const items10 = [closure_17(c8, obj9), , ];
@@ -258,7 +259,7 @@ class AddMembersBody {
     if (canEveryoneRoleResult) {
       const obj11 = { style: tmp4.adminWarning, children: closure_17(InlineNotice, obj12) };
       obj12 = { type: "warning", message: intl7.string(tmp12(1113).t["5f3HIC"]), role: "status" };
-      InlineNotice = tmp12(8149).InlineNotice;
+      InlineNotice = tmp12(8165).InlineNotice;
       intl7 = tmp12(1113).intl;
       canEveryoneRoleResult = tmp34(tmp35, obj11);
     }
@@ -269,9 +270,13 @@ class AddMembersBody {
         if (0 === membersRows.length) {
           const obj13 = { children: closure_17(EmptyState, obj14) };
           const merged1 = Object.assign(merged);
-          obj14 = { Illustration: tmp12(9195).NoResultsAlt, style: null, bodyStyle: null, body: intl8.format(tmp12(1113).t.ErpIY3, obj15) };
+          obj14 = { Illustration: tmp12(9212).NoResultsAlt, style: items11, bodyStyle: tmp4.emptyStateText, body: intl8.format(tmp12(1113).t.ErpIY3, obj15) };
           EmptyState = tmp12(1187).EmptyState;
-          ({ emptyState: obj19.style, emptyStateText: obj19.bodyStyle } = tmp4);
+          items11 = [tmp4.emptyState, ];
+          if (emptyStateInActionSheet) {
+            emptyStateInActionSheet = tmp4.emptyStateInActionSheet;
+          }
+          items11[1] = emptyStateInActionSheet;
           intl8 = tmp12(1113).intl;
           obj15 = { query: str };
           tmp34Result = tmp34(BottomSheetScrollView, obj13);
@@ -292,7 +297,7 @@ class AddMembersBody {
         const index = item.index;
         if (typeof item === "string") {
           let items = [sectionRowWrapper.sectionRowWrapper, ];
-          let obj2 = { style: items, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: item };
+          let obj2 = { style: items, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "body-sm/semibold", color: "interactive-text-default", children: item };
           items[1] = 0 === index ? { paddingTop: 0 } : {};
           tmp14Result = closure_1_17(guild(sectionRowWrapper[22]).Text, obj2);
         } else {
@@ -373,7 +378,7 @@ let react = react_mod;
 const Permissions = Constants.Permissions;
 ({ jsx: closure_17, Fragment: closure_18, jsxs: closure_19 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1 }, inputContainer: obj2, tagRoleColor: { height: 12, width: 12, borderRadius: 6 }, tagAvatar: size, emptyState: obj3, emptyStateText: obj4, sectionRowWrapper: obj5, adminWarning: { marginHorizontal: 16, marginVertical: 8 } };
+let obj = { container: { flex: 1 }, inputContainer: obj2, tagRoleColor: { height: 12, width: 12, borderRadius: 6 }, tagAvatar: size, emptyState: obj3, emptyStateInActionSheet: { backgroundColor: "transparent" }, emptyStateText: obj4, sectionRowWrapper: obj5, adminWarning: { marginHorizontal: 16, marginVertical: 8 } };
 obj2 = { alignItems: "stretch", paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12 };
 createStyles = createStyles.createStyles;
 size = { width: 16, height: 16, borderRadius: nativeDefault.radii.sm };
@@ -510,7 +515,7 @@ export default function AddMembersActionSheet(channel) {
     }
     return getGuild(guildId);
   });
-  let str = pendingAdditions(5772)(channel, true);
+  let str = pendingAdditions(5786)(channel, true);
   if (str == null) {
     str = "";
   }
@@ -522,9 +527,9 @@ export default function AddMembersActionSheet(channel) {
     let num = 0;
     const tmp11 = 0 === Object.keys(pendingAdditions).length;
     let tmp12 = closure_17;
-    const BottomSheet = tmp5(5395).BottomSheet;
+    const BottomSheet = tmp5(5396).BottomSheet;
     let obj2 = { title: intl3.string(tmp5(1113).t.dMJ3Y6), subtitle: str, trailing: null };
-    const BottomSheetTitleHeader = tmp5(7441).BottomSheetTitleHeader;
+    const BottomSheetTitleHeader = tmp5(7457).BottomSheetTitleHeader;
     intl3 = tmp5(1113).intl;
     if (canSkip) {
       let obj7;

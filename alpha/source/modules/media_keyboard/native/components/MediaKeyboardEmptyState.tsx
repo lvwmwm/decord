@@ -1,21 +1,21 @@
-// Module ID: 10685
-// Function ID: 10686
+// Module ID: 10733
+// Function ID: 10734
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 8064, 21, 5141, 575, 5837, 5747, 5754, 7685, 1113, 10686, 10680, 10687, 2]
+// Dependencies: [19, 17, 8080, 21, 5141, 575, 5851, 5761, 5768, 7701, 1113, 10734, 10728, 10735, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10685 (MediaKeyboardEmptyState)
+// Module 10733 (MediaKeyboardEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import SettingsIcon from "SettingsIcon" /* 7685 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8064 */;
-import CameraIcon from "CameraIcon" /* 10680 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10686 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10687 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import SettingsIcon from "SettingsIcon" /* 7701 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8080 */;
+import CameraIcon from "CameraIcon" /* 10728 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10734 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10735 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -37,7 +37,7 @@ class MediaKeyboardEmptyState {
     const tmp = closure_7();
     const obj = { style: tmp.container, children: items };
     items = [hasOwnProperty(FastImageDefault, { source: imageSource }), , ];
-    const obj2 = { variant: "text-sm/semibold", color: "text-muted", style: tmp.label, children: label };
+    const obj2 = { variant: "body-sm/semibold", color: "text-muted", style: tmp.label, children: label };
     items[1] = hasOwnProperty(Text_Text.Text, obj2);
     items[2] = hasOwnProperty(components_Button_Button.Button, { icon: actionIcon, size: "sm", text: actionLabel, onPress: actionPress });
     return metroRequire(View, obj);

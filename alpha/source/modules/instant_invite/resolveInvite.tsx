@@ -1,16 +1,16 @@
-// Module ID: 14875
-// Function ID: 14876
+// Module ID: 14955
+// Function ID: 14956
 // Name: resolveInvite
-// Dependencies: [502, 5012, 8003, 1072, 8004, 8002, 5870, 1252, 6867, 1260, 5002, 2]
+// Dependencies: [502, 5012, 8019, 1072, 8020, 8018, 5884, 1252, 6882, 1260, 5002, 2]
 // Exports: default
 
-// Module 14875 (resolveInvite)
+// Module 14955 (resolveInvite)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import TypeUtils from "TypeUtils" /* 5002 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6867 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8002 */;
-import Constants2 from "Constants" /* 8003 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 8004 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6882 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8018 */;
+import Constants2 from "Constants" /* 8019 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 8020 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Constants from "Constants" /* 1072 */;
@@ -69,7 +69,7 @@ export default function resolveInvite(inviteKey, _location, inviteInstanceId) {
       withGuildExperiments = inviteInstanceId.withGuildExperiments;
     }
     const request = { url: closure_6.INVITE(baseCode), query: obj4, oldFormErrors: true, trackedActionData: obj5, rejectWithError: false };
-    const get = tmp4(6867).get;
+    const get = tmp4(6882).get;
     TrackedHTTPUtilsDefault;
     obj5 = {
       event: tmp(1260).NetworkActionNames.INVITE_RESOLVE,

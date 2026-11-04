@@ -1,10 +1,10 @@
-// Module ID: 15149
-// Function ID: 15150
+// Module ID: 15229
+// Function ID: 15230
 // Name: UserProfileIncomingFriendRequest
-// Dependencies: [19, 17, 21, 5141, 575, 8938, 8885, 7446, 15150, 6161, 7450, 5747, 1113, 1187, 1411, 15151, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8955, 8902, 7462, 15230, 6176, 7466, 5761, 1113, 1187, 1411, 15231, 5768, 2]
 // Exports: default
 
-// Module 15149 (UserProfileIncomingFriendRequest)
+// Module 15229 (UserProfileIncomingFriendRequest)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -90,7 +90,7 @@ export default function UserProfileIncomingFriendRequest(style) {
     let tmp16;
     const obj6 = { style: items2, children: items3 };
     items2 = [tmp.container, tmp4.card, style];
-    const obj7 = { variant: "text-sm/semibold", color: "text-default", children: null };
+    const obj7 = { variant: "body-sm/semibold", color: "text-default", children: null };
     const Text = tmp5(tmp3[11]).Text;
     const intl = tmp5(tmp3[12]).intl;
     const format = intl.format;

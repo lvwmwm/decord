@@ -1,14 +1,14 @@
-// Module ID: 16001
-// Function ID: 16002
+// Module ID: 16091
+// Function ID: 16092
 // Name: ContextMenuItem
-// Dependencies: [19, 17, 21, 1652, 5141, 10007, 575, 10006, 5757, 5758, 5756, 1705, 5747, 2]
+// Dependencies: [19, 17, 21, 1652, 5141, 10055, 575, 10054, 5771, 5772, 5770, 1705, 5761, 2]
 // Exports: ContextMenuItem
 
-// Module 16001 (ContextMenuItem)
+// Module 16091 (ContextMenuItem)
 import nativeDefault from "native" /* 575 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import ContextMenuState from "ContextMenuState" /* 10006 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 10007 */;
+import ContextMenuState from "ContextMenuState" /* 10054 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 10055 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -41,7 +41,8 @@ let closure_8 = createStyles.createStyles((arg0) => {
 let closure_9 = { code: "(function ContextMenuItemNativeTsx1(){let[pan]=this.__closure;return pan.get();})" };
 let closure_10 = { code: "(function ContextMenuItemNativeTsx2(_current,previous){let[measure,ref,index,INDEX_BOUNDS_OFFSET,itemMeasurements,INDEX_BOUNDS_PAGE_X_OFFSET,INDEX_BOUNDS_PAGE_Y_OFFSET,INDEX_BOUNDS_WIDTH_OFFSET,INDEX_BOUNDS_HEIGHT_OFFSET]=this.__closure;if(previous==null||_current===previous)return;const measurements=measure(ref);if(measurements!=null){const{pageX:pageX,pageY:pageY,width:width,height:height}=measurements;const offset=index*INDEX_BOUNDS_OFFSET;itemMeasurements.get()[offset+INDEX_BOUNDS_PAGE_X_OFFSET]=pageX;itemMeasurements.get()[offset+INDEX_BOUNDS_PAGE_Y_OFFSET]=pageY;itemMeasurements.get()[offset+INDEX_BOUNDS_WIDTH_OFFSET]=width;itemMeasurements.get()[offset+INDEX_BOUNDS_HEIGHT_OFFSET]=height;}})" };
 let closure_11 = { code: "(function ContextMenuItemNativeTsx3(){let[activeIndex,index,pressed,withSpring,backgroundColor,SUBTLE_SPRING]=this.__closure;const isActive=activeIndex.get()===index||pressed.get()===1;return{backgroundColor:withSpring(isActive?backgroundColor:'transparent',SUBTLE_SPRING,'animate-always')};})" };
-let closure_12 = { code: "(function ContextMenuItemNativeTsx4(){let[activeIndex,index]=this.__closure;activeIndex.set(index);})" };
+let closure_12 = { code: "(function ContextMenuItemNativeTsx4(bounds){let[offset,INDEX_BOUNDS_HEIGHT_OFFSET,height,INDEX_BOUNDS_WIDTH_OFFSET,width]=this.__closure;bounds[offset+INDEX_BOUNDS_HEIGHT_OFFSET]=height;bounds[offset+INDEX_BOUNDS_WIDTH_OFFSET]=width;return bounds;})" };
+let closure_13 = { code: "(function ContextMenuItemNativeTsx5(){let[activeIndex,index]=this.__closure;activeIndex.set(index);})" };
 let result = size.fileFinishedImporting("design/components/ContextMenu/native/ContextMenuItem.native.tsx");
 
 export function ContextMenuItem(accessibilityRole) {
@@ -211,16 +212,41 @@ export function ContextMenuItem(accessibilityRole) {
   const items7 = [activeIndex, index];
   const callback = react.useCallback((nativeEvent) => {
     let height;
+    let tmp10;
+    let tmp11;
+    let tmp12;
+    let tmp13;
+    let tmp8;
+    let tmp9;
     let width;
     ({ height, width } = nativeEvent.nativeEvent.layout);
-    if (0 !== height) {
-      if (0 !== width) {
-        const result = index * ContextMenuState.INDEX_BOUNDS_OFFSET;
-        const value = itemMeasurements.get();
-        value[result + ContextMenuState.INDEX_BOUNDS_HEIGHT_OFFSET] = height;
-        const value2 = itemMeasurements.get();
-        value2[result + ContextMenuState.INDEX_BOUNDS_WIDTH_OFFSET] = width;
+    const tmp = 0 !== height && 0 !== width;
+    if (tmp) {
+      const items = [closure_12, , , , , ];
+      const modify = itemMeasurements.modify;
+      items[1] = index * ContextMenuState.INDEX_BOUNDS_OFFSET;
+      items[2] = ContextMenuState.INDEX_BOUNDS_HEIGHT_OFFSET;
+      items[3] = height;
+      items[4] = ContextMenuState.INDEX_BOUNDS_WIDTH_OFFSET;
+      items[5] = width;
+      let c0;
+      let c1;
+      let c2;
+      let c3;
+      let c4;
+      [tmp8, tmp9, tmp10, tmp11, tmp12, tmp13] = items;
+      class ContextMenuItemNativeTsx4 {
+        constructor(arg0) {
+          nativeEvent[closure_0 + closure_1] = closure_2;
+          nativeEvent[closure_0 + closure_3] = closure_4;
+          return nativeEvent;
+        }
       }
+      const items1 = [tmp9, tmp10, tmp11, tmp12, tmp13];
+      ContextMenuItemNativeTsx4.__closure = items1;
+      ContextMenuItemNativeTsx4.__workletHash = 7995786915080;
+      ContextMenuItemNativeTsx4.__initData = tmp8;
+      modify(ContextMenuItemNativeTsx4, false);
     }
   }, items6);
   const items8 = [activeIndex];
@@ -228,22 +254,22 @@ export function ContextMenuItem(accessibilityRole) {
     let tmp;
     let tmp2;
     let tmp3;
-    const items = [closure_12, activeIndex, index];
+    const items = [closure_13, activeIndex, index];
     let c0;
     let c1;
     [tmp, tmp2, tmp3] = items;
     const obj = _mod1705;
-    class ContextMenuItemNativeTsx4 {
+    class ContextMenuItemNativeTsx5 {
       constructor() {
         result = closure_0.set(closure_1);
         return;
       }
     }
     const items1 = [tmp2, tmp3];
-    ContextMenuItemNativeTsx4.__closure = items1;
-    ContextMenuItemNativeTsx4.__workletHash = 5723143478734;
-    ContextMenuItemNativeTsx4.__initData = tmp;
-    obj.runOnUISync(ContextMenuItemNativeTsx4);
+    ContextMenuItemNativeTsx5.__closure = items1;
+    ContextMenuItemNativeTsx5.__workletHash = 3832423612687;
+    ContextMenuItemNativeTsx5.__initData = tmp;
+    obj.runOnUISync(ContextMenuItemNativeTsx5);
   }, items7);
   const obj6 = { ref: animatedRef, style: items9, onLayout: callback, onPressIn: callback1, onPressOut: callback2, onPress, accessibilityRole: str, children: items10 };
   items9 = [, , , , , ];
@@ -271,7 +297,7 @@ export function ContextMenuItem(accessibilityRole) {
   items9[4] = end;
   items9[5] = animatedStyle;
   items10 = [closure_5(closure_4, { children: tmp29 }), , ];
-  const obj7 = { animated: true, variant: "text-md/medium", style: tmp4.label, color: str2, children: label };
+  const obj7 = { animated: true, variant: "body-md/medium", style: tmp4.label, color: str2, children: label };
   str2 = "text-strong";
   const Text = tmp(tmp2[12]).Text;
   const tmp41 = closure_4;

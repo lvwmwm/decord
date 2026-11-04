@@ -1,31 +1,31 @@
-// Module ID: 17922
-// Function ID: 17923
+// Module ID: 18018
+// Function ID: 18019
 // Name: UserSettingsDesignSystemTableRow
-// Dependencies: [32, 19, 17, 5172, 1385, 1072, 21, 7101, 7685, 504, 1627, 6147, 7186, 5747, 5837, 1411, 1187, 7489, 7100, 7184, 7187, 7109, 16139, 16136, 16137, 16138, 8303, 5710, 2]
+// Dependencies: [32, 19, 17, 5172, 1385, 1072, 21, 7116, 7701, 504, 1627, 6162, 7201, 5761, 5851, 1411, 1187, 7505, 7115, 7199, 7202, 7124, 16228, 16225, 16226, 16227, 8319, 5723, 2]
 // Exports: default
 
-// Module 17922 (UserSettingsDesignSystemTableRow)
+// Module 18018 (UserSettingsDesignSystemTableRow)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import TableCheckboxRow3 from "TableCheckboxRow" /* 7100 */;
-import TableRow16 from "TableRow" /* 7101 */;
-import TableRowIcon5 from "TableRowIcon" /* 7109 */;
-import TableRadioGroup3 from "TableRadioGroup" /* 7184 */;
-import TableRowGroup5 from "TableRowGroup" /* 7186 */;
-import TableRadioRow5 from "TableRadioRow" /* 7187 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7489 */;
-import SettingsIcon from "SettingsIcon" /* 7685 */;
-import RowButton3 from "RowButton" /* 8303 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16136 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16137 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16138 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16139 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import TableCheckboxRow3 from "TableCheckboxRow" /* 7115 */;
+import TableRow16 from "TableRow" /* 7116 */;
+import TableRowIcon5 from "TableRowIcon" /* 7124 */;
+import TableRadioGroup3 from "TableRadioGroup" /* 7199 */;
+import TableRowGroup5 from "TableRowGroup" /* 7201 */;
+import TableRadioRow5 from "TableRadioRow" /* 7202 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7505 */;
+import SettingsIcon from "SettingsIcon" /* 7701 */;
+import RowButton3 from "RowButton" /* 8319 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16225 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16226 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16227 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16228 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -167,7 +167,7 @@ export default function UserSettingsDesignSystemTableRow() {
   obj12 = { IconComponent: SettingsIcon.SettingsIcon };
   Icon4 = TableRow16.TableRow.Icon;
   items1[4] = closure_11(TableRow4, obj11);
-  const obj13 = { icon: closure_11(Icon5, obj14), label: closure_11(Text_Text.Text, { variant: "text-md/medium", lineClamp: 1, children: "Custom node for label - A really long label that takes up all of the space and then some" }), subLabel: closure_12(closure_5, obj15) };
+  const obj13 = { icon: closure_11(Icon5, obj14), label: closure_11(Text_Text.Text, { variant: "body-md/medium", lineClamp: 1, children: "Custom node for label - A really long label that takes up all of the space and then some" }), subLabel: closure_12(closure_5, obj15) };
   const TableRow5 = TableRow16.TableRow;
   obj14 = { IconComponent: SettingsIcon.SettingsIcon };
   Icon5 = TableRow16.TableRow.Icon;
@@ -176,7 +176,7 @@ export default function UserSettingsDesignSystemTableRow() {
   obj17 = { uri: obj18.getEmojiURL({ id: "801497159479722084", animated: false, size: 24 }) };
   const tmp9 = FastImageDefault;
   obj18 = AvatarUtilsDefault;
-  items2 = [closure_11(tmp9, obj16), closure_11(Text_Text.Text, { variant: "text-md/medium", lineClamp: 1, color: "text-muted", style: { flexShrink: 1 }, children: "Custom node for subLabel - A really long sublabel that takes up all of the space and then some" })];
+  items2 = [closure_11(tmp9, obj16), closure_11(Text_Text.Text, { variant: "body-md/medium", lineClamp: 1, color: "text-muted", style: { flexShrink: 1 }, children: "Custom node for subLabel - A really long sublabel that takes up all of the space and then some" })];
   items1[5] = closure_11(TableRow5, obj13);
   const obj19 = { icon: closure_11(Icon6, obj20), label: "A disabled row", subLabel: "you cant do anything with this", disabled: true };
   const TableRow6 = TableRow16.TableRow;
@@ -294,7 +294,7 @@ export default function UserSettingsDesignSystemTableRow() {
   items3[5] = closure_12(TableRadioGroup2, obj54);
   const obj63 = { spacing: 12, children: items9 };
   const Stack2 = Stack_Stack.Stack;
-  items9 = [closure_11(Text_Text.Text, { variant: "heading-sm/semibold", children: "Row buttons" }), , , ];
+  items9 = [closure_11(Text_Text.Text, { variant: "heading-xs/semibold", children: "Row buttons" }), , , ];
   const obj64 = { icon: closure_11(Icon19, obj65), label: "Boost your server", onPress };
   const RowButton = RowButton3.RowButton;
   obj65 = { IconComponent: SettingsIcon.SettingsIcon };

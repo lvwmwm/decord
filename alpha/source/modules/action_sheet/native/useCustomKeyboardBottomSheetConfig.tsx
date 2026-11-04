@@ -1,14 +1,14 @@
-// Module ID: 12543
-// Function ID: 12544
+// Module ID: 12624
+// Function ID: 12625
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 5142, 1377, 2020, 5332, 1625, 1493, 11384, 5735, 11383, 2]
+// Dependencies: [19, 5142, 1377, 2020, 5333, 1625, 1493, 11434, 5749, 11433, 2]
 // Exports: default
 
-// Module 12543 (useCustomKeyboardBottomSheetConfig)
+// Module 12624 (useCustomKeyboardBottomSheetConfig)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2020 */;
-import useKeyboardType from "useKeyboardType" /* 5332 */;
+import useKeyboardType from "useKeyboardType" /* 5333 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   let obj2;
   let str;
   let styles;
-  const f102079 = () => {
+  const f102811 = () => {
     const obj = { initialPosition: styles.height - minimum, animateOnMount: false };
     let tmp3 = obj;
     const obj2 = PlatformUtils;
@@ -64,8 +64,8 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   minimum = tmp3.minimum;
   const maximum = tmp3.maximum;
   let items = [flag, maximum, minimum];
-  ({ initialPosition, animateOnMount } = require("react")(f102079));
-  const tmp4 = require("react")(f102079);
+  ({ initialPosition, animateOnMount } = require("react")(f102811));
+  const tmp4 = require("react")(f102811);
   let obj = { animateOnMount, enablePanDownToClose: flag2, accessible: obj2.isAndroid() && undefined, contentHeight: maximum, containerHeight: tmp2.height, enableDynamicSizing: false, initialPosition, keyboardBehavior: "extend", android_keyboardInputMode: str, snapPoints: memo };
   memo = maximum.useMemo(() => {
     let items1;

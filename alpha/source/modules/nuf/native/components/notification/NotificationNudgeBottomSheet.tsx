@@ -1,19 +1,19 @@
-// Module ID: 18757
-// Function ID: 18758
+// Module ID: 18858
+// Function ID: 18859
 // Name: NotificationNudgeBottomSheet
-// Dependencies: [19, 17, 14105, 1072, 4987, 21, 5141, 575, 1252, 5381, 14106, 5395, 18189, 5747, 6887, 5754, 1113, 2]
+// Dependencies: [19, 17, 14191, 1072, 4987, 21, 5141, 575, 1252, 5382, 14192, 5396, 18286, 5761, 6902, 5768, 1113, 2]
 // Exports: default
 
-// Module 18757 (NotificationNudgeBottomSheet)
+// Module 18858 (NotificationNudgeBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14106 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14192 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14105 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14191 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -95,7 +95,7 @@ export default function NotificationNudgeBottomSheet(actionLocation) {
   items4 = [closure_9(callback, obj3), , , ];
   const obj4 = { style: tmp.title, variant: "heading-xl/semibold", accessibilityRole: "header", children: title };
   items4[1] = closure_9(actionLocation(markAsDismissed[13]).Text, obj4);
-  const obj5 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: body };
+  const obj5 = { style: tmp.body, variant: "body-sm/medium", color: "text-default", children: body };
   items4[2] = closure_9(actionLocation(markAsDismissed[13]).Text, obj5);
   const obj6 = { style: tmp.buttonsContainer, children: closure_10(ButtonGroup, obj7) };
   obj7 = { children: items5 };

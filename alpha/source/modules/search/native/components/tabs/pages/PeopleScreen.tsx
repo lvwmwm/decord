@@ -1,17 +1,17 @@
-// Module ID: 18927
-// Function ID: 18928
+// Module ID: 19030
+// Function ID: 19031
 // Name: PeopleScreen
-// Dependencies: [5, 19, 14046, 14031, 9958, 9957, 21, 14024, 504, 18869, 18865, 7609, 14038, 18928, 18861, 18873, 2]
+// Dependencies: [5, 19, 14132, 14117, 9976, 9975, 21, 14110, 504, 18972, 18968, 7625, 14124, 19031, 18964, 18976, 2]
 
-// Module 18927 (PeopleScreen)
+// Module 19030 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 9957 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 14038 */;
+import TrackingConstants from "TrackingConstants" /* 9975 */;
+import TrackingDefault from "Tracking" /* 14124 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 14046 */;
-import SearchQueryStore from "SearchQueryStore" /* 14031 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 14132 */;
+import SearchQueryStore from "SearchQueryStore" /* 14117 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -111,7 +111,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
   }, items2);
   const items3 = [onPressGroupDMItem, searchContext];
   callback1 = fullscreenPlaceholderCount.useCallback((channelId, index) => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = TrackingDefault;
     const obj2 = { searchContext, channelId, index, entityType: constants.CHANNEL };
     const result = obj.trackSearchResultClicked(obj2);
     onPressGroupDMItem(channelId);

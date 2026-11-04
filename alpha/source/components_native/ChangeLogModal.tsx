@@ -1,25 +1,25 @@
-// Module ID: 17682
-// Function ID: 17683
+// Module ID: 17778
+// Function ID: 17779
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1072, 5043, 21, 5141, 575, 5207, 1252, 8957, 17683, 5837, 8997, 1113, 7106, 9237, 10407, 1187, 8689, 1493, 8690, 1500, 7124, 2171, 8691, 5747, 6864, 7290, 2]
+// Dependencies: [19, 17, 1072, 5043, 21, 5141, 575, 5207, 1252, 8974, 17779, 5851, 9014, 1113, 7121, 9254, 10455, 1187, 8706, 1493, 8707, 1500, 7139, 2171, 8708, 5761, 6879, 7306, 2]
 // Exports: default
 
-// Module 17682 (ChangeLogModal)
+// Module 17778 (ChangeLogModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ChangelogConstants from "ChangelogConstants" /* 5043 */;
 import native from "native" /* 5207 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 7124 */;
-import Navigator from "Navigator" /* 7290 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8689 */;
-import openMediaModal2 from "openMediaModal" /* 8957 */;
-import common_VideoDefault from "common/Video" /* 8997 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9237 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10407 */;
-import _modDef17683 from "module_17683" /* 17683 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7139 */;
+import Navigator from "Navigator" /* 7306 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8706 */;
+import openMediaModal2 from "openMediaModal" /* 8974 */;
+import common_VideoDefault from "common/Video" /* 9014 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9254 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10455 */;
+import _modDef17779 from "module_17779" /* 17779 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -120,7 +120,7 @@ class ChangeLogScreen {
       let tmp18;
       const obj5 = { style: legacyClassComponentStyles.empty, children: null };
       const Text = tmp(tmp2[25]).Text;
-      const obj6 = { variant: "text-md/semibold", children: null };
+      const obj6 = { variant: "body-md/semibold", children: null };
       let intl = tmp(tmp2[13]).intl;
       const string = intl.string;
       const t = tmp(tmp2[13]).t;
@@ -251,21 +251,21 @@ class ChangeLog extends PureComponent2 {
     const self = this;
     const changeLog = this.props.changeLog;
     if (null != changeLog) {
-      const obj3 = { change_log_id: "" + changeLog.date + ":" + changeLog.revision };
+      const obj2 = { change_log_id: "" + changeLog.date + ":" + changeLog.revision };
       const _HermesInternal = HermesInternal;
       const merged = Object.assign(obj);
-      let tmp10 = obj3;
+      let tmp4 = obj2;
       if (arg0 === AnalyticEvents.CHANGE_LOG_CLOSED) {
         const _Math = Math;
         const _Date = Date;
         const _parseInt = parseInt;
         const obj4 = { seconds_open: Math.round((Date.now() - self.mountedAt) / 1000), max_scrolled_percentage: 100 * parseInt(maxScrolledPercentage.toPrecision(4), 10) };
         maxScrolledPercentage = self.maxScrolledPercentage;
-        const merged1 = Object.assign(obj3);
-        tmp10 = obj4;
+        const merged1 = Object.assign(obj2);
+        tmp4 = obj4;
       }
-      const obj2 = AnalyticsUtilsDefault;
-      obj2.track(arg0, tmp10);
+      const obj3 = AnalyticsUtilsDefault;
+      obj3.track(arg0, tmp4);
     }
   }
   renderVideo() {
@@ -306,7 +306,7 @@ class ChangeLog extends PureComponent2 {
               },
           useLocalHTML: true
         };
-        items = [closure_7(_modDef17683, obj4), ];
+        items = [closure_7(_modDef17779, obj4), ];
         let tmp6Result = null;
         const tmp4 = closure_8;
         const tmp5 = View;
@@ -316,7 +316,7 @@ class ChangeLog extends PureComponent2 {
           const obj5 = { style: tmp.videoOverlay, source: obj6 };
           const _HermesInternal = HermesInternal;
           obj6 = { uri: "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg" };
-          const tmp7Result = tmp7(5837);
+          const tmp7Result = tmp7(5851);
           tmp6Result = tmp6(tmp7Result, obj5);
         }
         items[1] = tmp6Result;
@@ -348,7 +348,7 @@ class ChangeLog extends PureComponent2 {
     tmp14 = closure_8;
     if (null != video) {
       const obj9 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: tmp.videoOverlay, onPress: self.playVideo, children: closure_7(tmp15Result, obj10) };
-      const PressableOpacity = tmp18(7106).PressableOpacity;
+      const PressableOpacity = tmp18(7121).PressableOpacity;
       obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: AssetRegistryDefault, onPress: self.playVideo, style: tmp.playButton, iconSize: self(1187).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
       tmp15Result = TouchableHitBoxDefault;
       tmp12Result = tmp12(PressableOpacity, obj9);

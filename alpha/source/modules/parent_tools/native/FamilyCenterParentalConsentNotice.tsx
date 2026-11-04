@@ -1,14 +1,14 @@
-// Module ID: 16920
-// Function ID: 16921
+// Module ID: 17012
+// Function ID: 17013
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 5141, 575, 16912, 16913, 5829, 5747, 16921, 1113, 2667, 2]
+// Dependencies: [19, 21, 5141, 575, 17004, 17005, 5843, 5761, 17013, 1113, 2667, 2]
 // Exports: default
 
-// Module 16920 (FamilyCenterParentalConsentNotice)
+// Module 17012 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 16921 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 17013 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ export default function FamilyCenterParentalConsentNotice() {
     if (null != daysRemaining) {
       if (daysRemaining >= 0) {
         function learnMoreHook(children, arg1) {
-          return jsx(Text_Text.Text, { variant: "text-sm/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress, children }, arg1);
+          return jsx(Text_Text.Text, { variant: "body-sm/medium", color: "text-strong", style: link.link, accessibilityRole: "link", onPress, children }, arg1);
         }
         const obj3 = { style: tmp.container, text: formatResult };
         const tmp10 = FamilyCenterInlineWarningNoticeDefault;

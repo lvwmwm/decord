@@ -1,22 +1,22 @@
-// Module ID: 11742
-// Function ID: 11743
+// Module ID: 11797
+// Function ID: 11798
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7469, 21, 5141, 575, 1113, 11743, 11744, 12, 2024, 5747, 1187, 7468, 2]
+// Dependencies: [19, 17, 7485, 21, 5141, 575, 1113, 11798, 11799, 12, 2024, 5761, 1187, 7484, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 11742 (ConnectionMetadataVanityItems)
+// Module 11797 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import NumberUtils from "NumberUtils" /* 2024 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7468 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11743 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11744 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7484 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11798 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11799 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7469 */;
+import Constants from "Constants" /* 7485 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ function VanityMetric(label) {
     const obj3 = { value: sum };
     formatResult = intl2.format(label, obj3);
   }
-  const obj4 = { variant: "text-xs/normal", color: "text-muted", style: items, children: formatResult };
+  const obj4 = { variant: "body-xs/normal", color: "text-muted", style: items, children: formatResult };
   items = [tmp.connectedAccountVanityMetadata, style];
   return metroRequire(Text_Text.Text, obj4);
 }
@@ -85,7 +85,7 @@ function VanityItem(style) {
   items1 = [, ];
   const obj2 = { source: imageSrc, accessibilityLabel: imageAlt, style: tmp.connectedAccountVanityMetadataItemIcon, disableColor: true };
   items1[0] = metroRequire(native.Icon, obj2);
-  items1[1] = metroRequire(Text_Text.Text, { variant: "text-xs/normal", color: "text-muted", style, children: label });
+  items1[1] = metroRequire(Text_Text.Text, { variant: "body-xs/normal", color: "text-muted", style, children: label });
   return metroImportDefault(View, obj);
 }
 function VanityTag(arg0) {
@@ -95,7 +95,7 @@ function VanityTag(arg0) {
   let textStyle;
   ({ label, style, textStyle } = arg0);
   const tmp = closure_8();
-  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "text-xs/normal", color: "text-muted", style: textStyle, children: label }) };
+  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "body-xs/normal", color: "text-muted", style: textStyle, children: label }) };
   items = [, , ];
   ({ connectedAccountVanityMetadata: arr[0], connectedAccountVanityMetadataTag: arr[1] } = tmp);
   items[2] = style;
@@ -112,7 +112,7 @@ function VanityDate(arg0) {
   let obj3;
   let style;
   ({ date, label, locale, style } = arg0);
-  const obj = { variant: "text-xs/normal", color: "text-muted", style: items, children: format(HLoinF, obj2) };
+  const obj = { variant: "body-xs/normal", color: "text-muted", style: items, children: format(HLoinF, obj2) };
   items = [closure_8().connectedAccountVanityMetadata, style];
   closure_8();
   const Text = Text_Text.Text;

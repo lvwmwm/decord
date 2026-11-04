@@ -1,25 +1,25 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 10402
+// Function ID: 10403
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 4994, 5071, 5083, 1385, 1072, 10355, 6156, 21, 5141, 575, 5772, 8724, 6899, 5195, 8307, 2]
+// Dependencies: [19, 17, 4994, 5071, 5083, 1385, 1072, 10403, 6171, 21, 5141, 575, 5786, 8741, 6914, 5195, 8323, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10354 (autocompleter/AutocompleteUtils)
+// Module 10402 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6899 */;
-import FormDividerDefault from "FormDivider" /* 8307 */;
-import TimestampUtils from "TimestampUtils" /* 8724 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6914 */;
+import FormDividerDefault from "FormDivider" /* 8323 */;
+import TimestampUtils from "TimestampUtils" /* 8741 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5071 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10355 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6156 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10403 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6171 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 

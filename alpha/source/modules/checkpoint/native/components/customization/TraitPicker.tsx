@@ -1,21 +1,21 @@
-// Module ID: 13822
-// Function ID: 13823
+// Module ID: 13908
+// Function ID: 13909
 // Name: TraitPicker
-// Dependencies: [32, 19, 17, 5142, 6186, 21, 575, 6554, 5141, 13823, 1113, 3219, 5747, 13779, 1652, 5377, 13825, 1493, 504, 5397, 13827, 5735, 13828, 5325, 13829, 2]
+// Dependencies: [32, 19, 17, 5142, 6201, 21, 575, 6569, 5141, 13909, 1113, 3219, 5761, 13865, 1652, 5378, 13911, 1493, 504, 5398, 13913, 5749, 13914, 13658, 5326, 13915, 2]
 // Exports: default
 
-// Module 13822 (TraitPicker)
+// Module 13908 (TraitPicker)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _modDef3219 from "module_3219" /* 3219 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CheckpointConstants from "CheckpointConstants" /* 6186 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6554 */;
-import CheckpointTextDefault from "CheckpointText" /* 13779 */;
-import TraitOptionList from "TraitOptionList" /* 13823 */;
-import TraitOptionDetails from "TraitOptionDetails" /* 13825 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6569 */;
+import CheckpointTextDefault from "CheckpointText" /* 13865 */;
+import TraitOptionList from "TraitOptionList" /* 13909 */;
+import TraitOptionDetails from "TraitOptionDetails" /* 13911 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -207,6 +207,8 @@ export default function TraitPicker(customizationOption) {
   let isLandscape;
   let num2;
   let obj11;
+  let onSelectFinalizeOption;
+  let onSelectOption;
   let optionIds;
   let savedOptionId;
   let tmp10;
@@ -227,20 +229,19 @@ export default function TraitPicker(customizationOption) {
   if (isLandscape === undefined) {
     isLandscape = false;
   }
-  const onSelectOption = customizationOption.onSelectOption;
   dependencyMap = undefined;
   const tmp2 = dependencyMap;
-  const onSelectFinalizeOption = customizationOption.onSelectFinalizeOption;
+  ({ onSelectOption, onSelectFinalizeOption } = customizationOption);
   let tmp = selectedOptionId;
   const height = selectedOptionId(1493)().height;
-  const obj = customizationOption(6554);
+  const obj = customizationOption(6569);
   const isTraitRarityVisible = obj.getIsTraitRarityVisible(customizationOption);
   const items = [AccessibilityStore];
   const obj2 = customizationOption(504);
   dependencyMap = obj2.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj3 = customizationOption(5397);
+  const obj3 = customizationOption(5398);
   _slicedToArray = obj3.useIsScreenReaderEnabled();
-  const obj4 = customizationOption(13827);
+  const obj4 = customizationOption(13913);
   const obj5 = { customizationOption, optionIds, savedOptionId, rarityOrder };
   const traitPickerOptions = obj4.useTraitPickerOptions(obj5);
   const availableTraitOptions = traitPickerOptions.availableTraitOptions;
@@ -248,7 +249,7 @@ export default function TraitPicker(customizationOption) {
   let tmp6 = null != selectedOptionId;
   let closure_6 = tmp6;
   const totalCount = traitPickerOptions.totalCount;
-  const tmp7 = selectedOptionId(5735)(() => {
+  const tmp7 = selectedOptionId(5749)(() => {
     let num = 0;
     const tmp = customizationOption;
     if (!closure_6) {
@@ -268,12 +269,12 @@ export default function TraitPicker(customizationOption) {
   });
   [tmp9, tmp10] = availableTraitOptions.useState(tmp7);
   _slicedToArray(availableTraitOptions.useState(tmp7), 2);
-  const obj7 = { availableTraitOptions, selectedOptionId, onSelectOption, paused: tmp12 };
+  const tmp11 = customizationOption(13914);
+  const useAutoSelectTraitOption = tmp11.useAutoSelectTraitOption;
+  const obj7 = { availableTraitOptions, selectedOptionId, onSelectOption: customizationOption(13658).selectCharacterTrait, paused: tmp12 };
   tmp12 = flag;
-  const useAutoSelectTraitOption = customizationOption(13828).useAutoSelectTraitOption;
-  customizationOption(13828);
   const obj6 = availableTraitOptions;
-  if (!flag) {
+  if (!tmp12) {
     let tmp13 = !tmp6;
     if (tmp13) {
       let num = 0;
@@ -298,13 +299,13 @@ export default function TraitPicker(customizationOption) {
   }, items1);
   if (isLandscape) {
     str = "md";
-    if (height <= customizationOption(5325).WINDOW_SIZE_THRESHOLD_LARGE) {
+    if (height <= customizationOption(5326).WINDOW_SIZE_THRESHOLD_LARGE) {
       str = "sm";
     }
   }
   if (isFinalizeRoute) {
     const obj8 = { activeCustomizationOption: customizationOption, onSelectOption: onSelectFinalizeOption, disableSwitching: isCurrentTraitBlocked, disabled: flag };
-    tmp17Result = tmp17(tmp3(13829).FinalizeTraitTabs, obj8);
+    tmp17Result = tmp17(tmp3(13915).FinalizeTraitTabs, obj8);
     tmp20 = tmp17;
   } else {
     const obj9 = { customizationOption, earnedCount: diff, totalCount };
@@ -314,7 +315,7 @@ export default function TraitPicker(customizationOption) {
   const obj10 = { header: tmp17Result, optionList: tmp20(tmpResult, obj11, customizationOption), selectedAsset: memo, isDetailsVisible: tmp6, isRarityVisible: isTraitRarityVisible };
   obj11 = { customizationOption, size: str, options: availableTraitOptions, selectedOptionId, disabled: flag, hideRarity: !isTraitRarityVisible, introStartIndex: num2, onIntroStep: tmp10, onSelectOption };
   num2 = 0;
-  tmpResult = tmp(13823);
+  tmpResult = tmp(13909);
   if (!tmp6) {
     num2 = tmp7;
   }

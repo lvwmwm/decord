@@ -1,24 +1,24 @@
-// Module ID: 18729
-// Function ID: 18730
+// Module ID: 18830
+// Function ID: 18831
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5142, 4990, 5083, 1385, 9030, 1072, 21, 5141, 575, 6171, 1092, 504, 8997, 1652, 5377, 18730, 5837, 5747, 1113, 8972, 8344, 7106, 9048, 12087, 8797, 18683, 8963, 9043, 1380, 12, 7399, 8957, 5772, 2]
+// Dependencies: [32, 19, 17, 5142, 4990, 5083, 1385, 9047, 1072, 21, 5141, 575, 6186, 1092, 504, 9014, 1652, 5378, 18831, 5851, 5761, 1113, 8989, 8360, 7121, 9065, 12146, 8814, 18784, 8980, 9060, 1380, 12, 7415, 8974, 5786, 2]
 // Exports: default
 
-// Module 18729 (ICYMIMediaMosaic)
+// Module 18830 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7399 */;
-import openMediaModal2 from "openMediaModal" /* 8957 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8963 */;
-import common_VideoDefault from "common/Video" /* 8997 */;
-import ICYMITypes from "ICYMITypes" /* 9043 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9048 */;
-import ICYMIContext from "ICYMIContext" /* 18683 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 18730 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7415 */;
+import openMediaModal2 from "openMediaModal" /* 8974 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8980 */;
+import common_VideoDefault from "common/Video" /* 9014 */;
+import ICYMITypes from "ICYMITypes" /* 9060 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
+import ICYMIContext from "ICYMIContext" /* 18784 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 18831 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -26,7 +26,7 @@ import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
-import ICYMIStore from "ICYMIStore" /* 9030 */;
+import ICYMIStore from "ICYMIStore" /* 9047 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -44,7 +44,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp4;
-const useChannelName = tmp4(5772);
+const useChannelName = tmp4(5786);
 function MediaMosaicVideo(source) {
   let autoplay;
   let height;
@@ -96,7 +96,7 @@ function MediaMosaicImage(source) {
   const items = [closure_20, , ];
   const useAnimatedStyle = source(1652).useAnimatedStyle;
   source(1652);
-  items[1] = source(5377).withTiming;
+  items[1] = source(5378).withTiming;
   items[2] = first;
   let c0;
   let c1;
@@ -211,7 +211,7 @@ function Media(handlePressMedia) {
   if (isSpoiler) {
     const obj5 = { style: tmp.centerContainer, children: closure_15(closure_6, obj6) };
     obj6 = { style: tmp.spoilerText, children: closure_15(Text, obj7) };
-    obj7 = { maxFontSizeMultiplier: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: str.toUpperCase() };
+    obj7 = { maxFontSizeMultiplier: 1, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: str.toUpperCase() };
     Text = tmp6(tmp7[20]).Text;
     const intl = tmp6(tmp7[21]).intl;
     str = intl.string(initialIndex(ref[21]).t["F+x38C"]);

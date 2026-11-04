@@ -1,14 +1,14 @@
-// Module ID: 15048
-// Function ID: 15049
+// Module ID: 15128
+// Function ID: 15129
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 5083, 1072, 21, 5141, 575, 14326, 7488, 7180, 1187, 5747, 15049, 7450, 6161, 7612, 5831, 5381, 7486, 7441, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 5083, 1072, 21, 5141, 575, 12568, 7504, 7195, 1187, 5761, 15129, 7466, 6176, 7628, 5845, 5382, 7502, 7457, 1113, 2]
 // Exports: default
 
-// Module 15048 (UserProfileGameFriendActionSheet)
+// Module 15128 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14326 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12568 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -58,7 +58,7 @@ function GameFriendApplicationRow(application) {
     str = "";
   }
   items1 = [closure_10(Icon, obj3, application.id), ];
-  const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: application.name };
+  const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: application.name };
   items1[1] = closure_10(tmp4(tmp5[13]).Text, obj4);
   return closure_10(ActionSheetRow, obj, application.id);
 }

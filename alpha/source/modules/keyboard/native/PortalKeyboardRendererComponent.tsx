@@ -1,12 +1,12 @@
-// Module ID: 12498
-// Function ID: 12499
+// Module ID: 12579
+// Function ID: 12580
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 4990, 21, 5207, 6142, 7520, 1625, 12499, 11639, 12667, 12709, 2]
+// Dependencies: [19, 4990, 21, 5207, 6157, 7536, 1625, 12580, 11690, 12748, 12790, 2]
 
-// Module 12498 (PortalKeyboardRendererComponent)
+// Module 12579 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
-import useBackPressHandler from "useBackPressHandler" /* 6142 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7520 */;
+import useBackPressHandler from "useBackPressHandler" /* 6157 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7536 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
@@ -65,12 +65,12 @@ const memoResult = react.memo(function PortalKeyboardRendererComponent(item) {
   if (null != memo) {
     if (undefined !== memo1) {
       if (tmp(1625).KeyboardTypes.APP_LAUNCHER === type) {
-        chatInputRef(12499);
-        return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(11639).AppLauncherEntrypoint.TEXT} />;
+        chatInputRef(12580);
+        return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(11690).AppLauncherEntrypoint.TEXT} />;
       } else if (tmp(1625).KeyboardTypes.MEDIA === type) {
-        return jsx(chatInputRef(12667), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+        return jsx(chatInputRef(12748), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
       } else if (tmp(1625).KeyboardTypes.EXPRESSION === type) {
-        return jsx(chatInputRef(12709), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
+        return jsx(chatInputRef(12790), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });
       } else {
         return null;
       }

@@ -22,6 +22,7 @@ export function createStandardNavigationFactories(arg0, arg1, arg2) {
   let obj2;
   let obj3;
   let type;
+  let version;
   _require = arg1;
   dependencyMap = arg2;
   ({ type, version, NavigatorContent: closure_2 } = arg0);

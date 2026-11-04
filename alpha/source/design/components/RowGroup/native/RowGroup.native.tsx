@@ -1,13 +1,13 @@
-// Module ID: 15952
-// Function ID: 15953
+// Module ID: 16042
+// Function ID: 16043
 // Name: RowGroup
-// Dependencies: [19, 17, 21, 5141, 575, 6147, 7186, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6162, 7201, 2]
 // Exports: RowGroup
 
-// Module 15952 (RowGroup)
+// Module 16042 (RowGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -39,7 +39,7 @@ export function RowGroup(children) {
     const tmp5 = require;
     if (tmp7) {
       const obj2 = { title };
-      tmp7 = _false(tmp5(7186).TableRowGroupTitle, obj2);
+      tmp7 = _false(tmp5(7201).TableRowGroupTitle, obj2);
     }
     const obj3 = { direction: "horizontal", spacing: 4, children: items };
     items = [tmp7, trailing];

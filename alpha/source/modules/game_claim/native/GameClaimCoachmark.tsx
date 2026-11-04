@@ -1,18 +1,18 @@
-// Module ID: 18394
-// Function ID: 18395
+// Module ID: 18488
+// Function ID: 18489
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1072, 4987, 21, 575, 18395, 11182, 5760, 5141, 18396, 15085, 1113, 7103, 7106, 7180, 5747, 5754, 8285, 7627, 7631, 2]
+// Dependencies: [5, 19, 17, 1072, 4987, 21, 575, 18489, 11232, 5774, 5141, 18490, 15167, 1113, 7118, 7121, 7195, 5761, 5768, 8301, 7643, 7647, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
-// Module 18394 (GameClaimCoachmark)
+// Module 18488 (GameClaimCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import ButtonConstants from "ButtonConstants" /* 5760 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15085 */;
-import GameClaimCardStack from "GameClaimCardStack" /* 18395 */;
-import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18396 */;
+import ButtonConstants from "ButtonConstants" /* 5774 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15167 */;
+import GameClaimCardStack from "GameClaimCardStack" /* 18489 */;
+import UnclaimedGamesActionCreators from "UnclaimedGamesActionCreators" /* 18490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -34,13 +34,13 @@ let size;
 let tmp2;
 let tmp5;
 const intl5 = tmp2(1113);
-const Text_Text = tmp2(5747);
-const components_Button_Button = tmp2(5754);
-const Card_Card = tmp2(7103);
-const Pressables = tmp2(7106);
-const XSmallIcon = tmp2(7180);
-const LinkExternalSmallIcon = tmp2(8285);
-const GameClaimCardStackDefault = tmp5(18395);
+const Text_Text = tmp2(5761);
+const components_Button_Button = tmp2(5768);
+const Card_Card = tmp2(7118);
+const Pressables = tmp2(7121);
+const XSmallIcon = tmp2(7195);
+const LinkExternalSmallIcon = tmp2(8301);
+const GameClaimCardStackDefault = tmp5(18489);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -106,12 +106,12 @@ const memoResult = react.memo(function GameClaimCoachmark(arg0) {
     items = [closure_8(PressableOpacity, obj3), , , , ];
     let obj4 = { imageSrc: coverImageUrl };
     items[1] = closure_8(GameClaimCardStackDefault, obj4);
-    let obj5 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp.centeredText, children: intl2.format(intl5.t.Q11WTQ, obj6) };
+    let obj5 = { variant: "body-md/medium", color: "text-overlay-light", style: tmp.centeredText, children: intl2.format(intl5.t.Q11WTQ, obj6) };
     const Text = Text_Text.Text;
     intl2 = intl5.intl;
     obj6 = { gameName: tmp8 };
     items[2] = closure_8(Text, obj5);
-    const obj7 = { variant: "text-sm/normal", color: "text-overlay-light", style: items1, children: stringResult };
+    const obj7 = { variant: "body-sm/normal", color: "text-overlay-light", style: items1, children: stringResult };
     items1 = [, ];
     ({ body: arr2[0], centeredText: arr2[1] } = tmp);
     items[3] = closure_8(Text_Text.Text, obj7);
@@ -190,10 +190,10 @@ export function getScaledGameClaimNoticeHeight(fontScale) {
   const sum = PX_8 + closure_12;
   const sum1 = sum + GameClaimCardStack.CARD_STACK_HEIGHT;
   const obj = useScaledTextLineHeight;
-  const sum2 = sum1 + obj.scaleTextLineHeight("text-md/medium", fontScale);
+  const sum2 = sum1 + obj.scaleTextLineHeight("body-md/medium", fontScale);
   const sum3 = sum2 + nativeDefault.space.PX_4;
   const obj2 = useScaledTextLineHeight;
-  const result = 2 * obj2.scaleTextLineHeight("text-sm/normal", fontScale);
+  const result = 2 * obj2.scaleTextLineHeight("body-sm/normal", fontScale);
   const sum4 = sum3 + result + nativeDefault.space.PX_8;
   return sum4 + ButtonConstants.SMALL_BUTTON_HEIGHT + PX_82;
 }

@@ -1,13 +1,13 @@
-// Module ID: 18163
-// Function ID: 18164
+// Module ID: 18260
+// Function ID: 18261
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 1499, 7237, 504, 6860, 17813, 1357, 575, 2]
+// Dependencies: [19, 502, 21, 12, 1499, 7257, 504, 6875, 17909, 1357, 575, 2]
 // Exports: default
 
-// Module 18163 (components/MFA)
+// Module 18260 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6860 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6875 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ export default function ConnectedMFA() {
   let obj2 = isMultiAccount(1499);
   navigation = obj2.useNavigation();
   if (inContainer) {
-    inContainer = navigation(7237)();
+    inContainer = navigation(7257)();
   }
   const items = [AuthenticationStore];
   const items1 = [isMultiAccount];
@@ -61,7 +61,7 @@ export default function ConnectedMFA() {
   }, items2);
   const obj3 = { mfaChallenge: stateFromStores, finish: callback, handleOnClose: callback1, ignoreKeyboard: inContainer, containerStyle: tmp9, headerStatusBarHeight: num, headerLeftContainerStyle: tmp10, headerRightContainerStyle: tmp12 };
   tmp9 = undefined;
-  const MFAModal = tmp(17813).MFAModal;
+  const MFAModal = tmp(17909).MFAModal;
   const tmp8 = jsx;
   if (inContainer) {
     tmp9 = closure_7;

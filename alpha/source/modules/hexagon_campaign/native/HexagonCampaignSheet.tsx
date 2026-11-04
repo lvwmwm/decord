@@ -1,25 +1,25 @@
-// Module ID: 17149
-// Function ID: 17150
+// Module ID: 17241
+// Function ID: 17242
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1385, 16369, 5166, 5396, 10111, 1240, 1083, 21, 1405, 1404, 9418, 5141, 575, 5169, 504, 7446, 7471, 15485, 5168, 1627, 2176, 10112, 16609, 6904, 17150, 5832, 1113, 5381, 17148, 4412, 10866, 5747, 17155, 5395, 7441, 16631, 5754, 17156, 7186, 7489, 17157, 2]
+// Dependencies: [5, 32, 19, 17, 1193, 1385, 16458, 5166, 5397, 10159, 1240, 1083, 21, 1404, 1405, 9435, 5141, 575, 5169, 504, 7462, 7487, 15572, 5168, 1627, 2176, 10160, 16699, 6919, 17242, 5846, 1113, 5382, 17240, 4412, 10914, 5761, 17247, 5396, 7457, 16721, 5768, 17248, 7201, 7505, 17249, 2]
 // Exports: default
 
-// Module 17149 (HexagonCampaignSheet)
+// Module 17241 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1404 */;
-import DisplayNameFont from "DisplayNameFont" /* 1405 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9418 */;
-import AppIconConstants from "AppIconConstants" /* 10111 */;
+import DisplayNameFont from "DisplayNameFont" /* 1404 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1405 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9435 */;
+import AppIconConstants from "AppIconConstants" /* 10159 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import UserStore from "UserStore" /* 1385 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16369 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16458 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -398,7 +398,7 @@ export default function HexagonCampaignSheet() {
     obj17 = { style: items6, children: closure_16(tmp2(tmp3[36]).Text, obj18) };
     items6 = [, ];
     ({ rowIcon: arr11[0], fontRowIcon: arr11[1] } = tmp);
-    obj18 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.fontRowIconText, children: "Gg" };
+    obj18 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.fontRowIconText, children: "Gg" };
     items5[1] = obj16;
     const obj19 = { perk: result1.APP_ICON, label: intl4.string(tmp5(tmp3[34]).DTv8Yq), icon: closure_16(tmp5Result3, obj20) };
     intl4 = tmp2(tmp3[31]).intl;

@@ -1,11 +1,11 @@
-// Module ID: 19415
-// Function ID: 19416
+// Module ID: 19519
+// Function ID: 19520
 // Name: VoicePanelCTACardCallerDisconnected
-// Dependencies: [32, 19, 502, 4990, 1385, 21, 5141, 575, 11359, 504, 6161, 7086, 5837, 5747, 1113, 2]
+// Dependencies: [32, 19, 502, 4990, 1385, 21, 5141, 575, 11409, 504, 6176, 7101, 5851, 5761, 1113, 2]
 
-// Module 19415 (VoicePanelCTACardCallerDisconnected)
+// Module 19519 (VoicePanelCTACardCallerDisconnected)
 import nativeDefault from "native" /* 575 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -43,7 +43,7 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let tmp9;
   let tmpResult11;
   let tmpResult9;
-  const f116823 = () => {
+  const f117612 = () => {
     const user = UserStore.getUser(id);
     const user1 = UserStore.getUser(first);
     let avatarURL;
@@ -75,9 +75,9 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let items = [UserStore];
   const items1 = [channelId, id, first];
   const obj = channelId(id[9]);
-  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f116823, items1);
+  [tmp9, tmp10, tmp11] = obj.useStateFromStoresArray(items, f117612, items1);
   const obj2 = { style: tmp3.container, children: items4 };
-  _slicedToArray(obj.useStateFromStoresArray(items, f116823, items1), 3);
+  _slicedToArray(obj.useStateFromStoresArray(items, f117612, items1), 3);
   let obj3 = { style: tmp3.avatarContainer, children: items2 };
   let tmp16Result = null != tmp9;
   const tmpResult = first(id[11]);
@@ -113,7 +113,7 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   items2[1] = tmp21Result;
   items4 = [closure_9(tmpResult7, obj3), ];
   const obj10 = { style: tmp3.textContainer, children: items5 };
-  const obj11 = { style: tmp3.text, variant: "heading-sm/semibold", color: "text-overlay-light", children: intl.string(channelId(id[14]).t.WkAgPU) };
+  const obj11 = { style: tmp3.text, variant: "heading-xs/semibold", color: "text-overlay-light", children: intl.string(channelId(id[14]).t.WkAgPU) };
   const tmpResult12 = first(id[11]);
   const Text = tmp7(tmp2[13]).Text;
   intl = tmp7(tmp2[14]).intl;
@@ -121,7 +121,7 @@ const memoResult = react.memo(function VoicePanelCTACardCallerDisconnected() {
   let tmp26Result = null != tmp11;
   const tmp26 = closure_8;
   if (tmp26Result) {
-    const obj12 = { style: tmp3.text, variant: "text-xs/medium", color: "text-overlay-light", children: intl2.format(channelId(id[14]).t.kXrAqz, obj13) };
+    const obj12 = { style: tmp3.text, variant: "body-xs/medium", color: "text-overlay-light", children: intl2.format(channelId(id[14]).t.kXrAqz, obj13) };
     const Text2 = tmp7(tmp2[13]).Text;
     intl2 = tmp7(tmp2[14]).intl;
     obj13 = { username: tmp11 };

@@ -1,13 +1,13 @@
-// Module ID: 19060
-// Function ID: 19061
+// Module ID: 19163
+// Function ID: 19164
 // Name: VoiceChannelAppActionSheet
-// Dependencies: [19, 21, 1113, 4093, 19057, 5381, 7486, 7441, 7184, 7187, 19059, 2]
+// Dependencies: [19, 21, 1113, 4093, 19160, 5382, 7502, 7457, 7199, 7202, 19162, 2]
 // Exports: default
 
-// Module 19060 (VoiceChannelAppActionSheet)
+// Module 19163 (VoiceChannelAppActionSheet)
 import _modDef4093 from "module_4093" /* 4093 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import VoiceChannelAppIconDefault from "VoiceChannelAppIcon" /* 19059 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import VoiceChannelAppIconDefault from "VoiceChannelAppIcon" /* 19162 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ export default function VoiceChannelAppActionSheet(guildId) {
   let tmp = onChange;
   let tmp2 = dependencyMap;
   guildId = guildId.guildId;
-  let obj = onChange(19057);
+  let obj = onChange(19160);
   const voiceChannelAppSettingOptions = obj.useVoiceChannelAppSettingOptions(guildId, selectedApplicationId);
   ({ options, listState } = voiceChannelAppSettingOptions);
   const items = [onChange];
@@ -51,10 +51,10 @@ export default function VoiceChannelAppActionSheet(guildId) {
   }, items);
   const intl = onChange(1113).intl;
   const stringResult = intl.string(_modDef4093.AdT7SZ);
-  const obj2 = { header: closure_4(onChange(7441).BottomSheetTitleHeader, { title: stringResult }), children: tmp8(TableRadioGroup, obj3) };
-  const ActionSheet = onChange(7486).ActionSheet;
+  const obj2 = { header: closure_4(onChange(7457).BottomSheetTitleHeader, { title: stringResult }), children: tmp8(TableRadioGroup, obj3) };
+  const ActionSheet = onChange(7502).ActionSheet;
   obj3 = { accessibilityLabel: stringResult, value: selectedApplicationId, onChange: callback, helperText: stringResult1, hasIcons: true, children: items1 };
-  TableRadioGroup = onChange(7184).TableRadioGroup;
+  TableRadioGroup = onChange(7199).TableRadioGroup;
   tmp8 = closure_5;
   if (selectedApplicationId == null) {
     selectedApplicationId = none;
@@ -82,7 +82,7 @@ export default function VoiceChannelAppActionSheet(guildId) {
 
   ];
   const obj4 = { value: none, label: intl5.string(_modDef4093.KEB4Rm) };
-  let TableRadioRow = tmp(7187).TableRadioRow;
+  let TableRadioRow = tmp(7202).TableRadioRow;
   intl5 = tmp(1113).intl;
   items1[1] = closure_4(TableRadioRow, obj4);
   return closure_4(ActionSheet, obj2);

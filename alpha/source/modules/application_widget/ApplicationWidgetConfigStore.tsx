@@ -1,9 +1,9 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11130
+// Function ID: 11131
 // Name: ApplicationWidgetConfigStore
 // Dependencies: [32, 504, 572, 2]
 
-// Module 11081 (ApplicationWidgetConfigStore)
+// Module 11130 (ApplicationWidgetConfigStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

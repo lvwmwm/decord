@@ -1,19 +1,19 @@
-// Module ID: 14668
-// Function ID: 14669
+// Module ID: 14748
+// Function ID: 14749
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 6181, 5146, 1072, 14655, 21, 8865, 8964, 1398, 1113, 5150, 7760, 7486, 7441, 6147, 575, 5747, 7373, 7100, 5754, 2]
+// Dependencies: [5, 32, 19, 6196, 5146, 1072, 14735, 21, 8882, 8981, 1398, 1113, 5150, 7776, 7502, 7457, 6162, 575, 5761, 7389, 7115, 5768, 2]
 // Exports: default
 
-// Module 14668 (EditAttachmentActionSheet)
+// Module 14748 (EditAttachmentActionSheet)
 import Constants from "Constants" /* 1072 */;
 import MessageConstants from "MessageConstants" /* 5146 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import react2 from "react" /* 8865 */;
-import AttachmentConstants from "AttachmentConstants" /* 14655 */;
+import react2 from "react" /* 8882 */;
+import AttachmentConstants from "AttachmentConstants" /* 14735 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -24,13 +24,13 @@ let tmp;
 let unpackModuleId;
 const intl7 = tmp(1113);
 const FlagUtils = tmp(1398);
-const Text_Text = tmp(5747);
-const components_Button_Button = tmp(5754);
-const Stack_Stack = tmp(6147);
-const TableCheckboxRow2 = tmp(7100);
-const TextArea2 = tmp(7373);
-const BottomSheetTitleHeader = tmp(7441);
-const ActionSheet2 = tmp(7486);
+const Text_Text = tmp(5761);
+const components_Button_Button = tmp(5768);
+const Stack_Stack = tmp(6162);
+const TableCheckboxRow2 = tmp(7115);
+const TextArea2 = tmp(7389);
+const BottomSheetTitleHeader = tmp(7457);
+const ActionSheet2 = tmp(7502);
 let closure_7 = MessageConstants.LEGACY_SPOILER_ATTACHMENT_PREFIX;
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
 let closure_9 = AttachmentConstants.MAX_ATTACHMENT_DESCRIPTION_LENGTH;
@@ -163,7 +163,7 @@ export default function EditAttachmentActionSheet(arg0) {
   ({ bottomSheetClose: c2, bottomSheetRef } = bottomSheetRef1);
   const tmp4 = attachment;
   const filename = attachment.filename;
-  const tmp5 = attachment(8964)(attachment);
+  const tmp5 = attachment(8981)(attachment);
   const startsWithResult = filename.startsWith(c7);
   let obj2 = first2;
   let str = attachment.description;
@@ -200,7 +200,7 @@ export default function EditAttachmentActionSheet(arg0) {
   intl2 = intl7.intl;
   obj4 = { spacing: tmp4(575).space.PX_16, children: items };
   Stack = Stack_Stack.Stack;
-  items = [closure_10(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 }), , , , ];
+  items = [closure_10(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", lineClamp: 2, children: tmp5 }), , , , ];
   let obj5 = { label: intl3.string(intl7.t.eOB2eR), placeholder: intl4.string(intl7.t.RNH1jn), value, onChange: tmp10, maxLength, disabled: first2 };
   const TextArea = TextArea2.TextArea;
   intl3 = intl7.intl;
@@ -213,7 +213,7 @@ export default function EditAttachmentActionSheet(arg0) {
   let tmp22Result = null;
   tmp23 = closure_11;
   if (null != tmp20) {
-    const obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp20 };
+    const obj7 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp20 };
     tmp22Result = tmp22(Text_Text.Text, obj7);
   }
   items[3] = tmp22Result;

@@ -1,19 +1,19 @@
-// Module ID: 19539
-// Function ID: 19540
+// Module ID: 19643
+// Function ID: 19644
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1385, 21, 5141, 575, 7080, 1627, 19540, 504, 1652, 5377, 1113, 2667, 8096, 5837, 19541, 5304, 5747, 7290, 19542, 6860, 19538, 6142, 11619, 2]
+// Dependencies: [32, 19, 17, 1385, 21, 5141, 575, 7095, 1627, 19644, 504, 1652, 5378, 1113, 2667, 8112, 5851, 19645, 5305, 5761, 7306, 19646, 6875, 19642, 6157, 11670, 2]
 // Exports: default
 
-// Module 19539 (RestrictedHoursModal)
+// Module 19643 (RestrictedHoursModal)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useBackPressHandlerDefault from "useBackPressHandler" /* 6142 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6860 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7080 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19538 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19542 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useBackPressHandlerDefault from "useBackPressHandler" /* 6157 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6875 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7095 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 19642 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 19646 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -210,17 +210,17 @@ function RestrictedHoursScreen(onLogin) {
   const obj14 = { style: tmp.riveContainer, children: closure_7(tmp6(tmp3[18]).TeenScreenTimeRive, { artboard: "Teen Screen Time Illo", stateMachine: "State Machine 1" }) };
   const View3 = tmp2(tmp3[11]).View;
   items12 = [closure_7(closure_5, obj14), ];
-  const obj15 = { variant: "text-lg/medium", color: "text-overlay-light", style: tmp.description, children: formatResult };
+  const obj15 = { variant: "body-lg/medium", color: "text-overlay-light", style: tmp.description, children: formatResult };
   items12[1] = closure_7(tmp6(tmp3[19]).Text, obj15);
   items9[2] = closure_8(View3, obj13);
   const obj16 = { style: tmp.footer, children: closure_7(Text, obj17) };
-  obj17 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.description, children: intl3.format(sharedValue(tmp3[14]).iqeKDz, obj18) };
+  obj17 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.description, children: intl3.format(sharedValue(tmp3[14]).iqeKDz, obj18) };
   Text = tmp6(tmp3[19]).Text;
   intl3 = tmp6(tmp3[13]).intl;
   obj18 = {
     username: stateFromStores,
     loginHook(children, arg1) {
-      const obj = { variant: "text-sm/normal", color: "text-link", onPress: onLogin, children };
+      const obj = { variant: "body-sm/normal", color: "text-link", onPress: onLogin, children };
       return metroImportDefault(Text_Text.Text, obj, arg1);
     }
   };

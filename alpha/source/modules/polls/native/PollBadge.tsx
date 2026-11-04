@@ -1,16 +1,16 @@
-// Module ID: 18898
-// Function ID: 18899
+// Module ID: 19001
+// Function ID: 19002
 // Name: PollBadge
-// Dependencies: [19, 17, 21, 5141, 575, 1187, 18899, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1187, 19002, 5761, 1113, 2]
 // Exports: default
 
-// Module 18898 (PollBadge)
+// Module 19001 (PollBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18899 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19002 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -37,7 +37,7 @@ export default function PollBadge(style) {
   const obj2 = { size: native.IconSizes.EXTRA_SMALL_10, source: AssetRegistryDefault };
   const Icon = native.Icon;
   items1 = [React3(Icon, obj2), ];
-  const obj3 = { style: tmp.text, variant: "text-xs/semibold", children: intl.string(intl2.t.RgIi2B) };
+  const obj3 = { style: tmp.text, variant: "body-xs/semibold", children: intl.string(intl2.t.RgIi2B) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1[1] = React3(Text, obj3);

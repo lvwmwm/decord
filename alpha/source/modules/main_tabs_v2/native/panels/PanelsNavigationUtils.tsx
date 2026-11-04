@@ -1,13 +1,13 @@
-// Module ID: 18198
-// Function ID: 18199
+// Module ID: 18295
+// Function ID: 18296
 // Name: PanelsNavigationUtils
-// Dependencies: [5322, 5321, 1504, 1266, 2]
+// Dependencies: [5323, 5322, 1504, 1266, 2]
 // Exports: convertLandscapeToPortraitScreens, convertPortraitToLandscapeScreens
 
-// Module 18198 (PanelsNavigationUtils)
+// Module 18295 (PanelsNavigationUtils)
 import v1 from "v1" /* 1266 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5321 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5322 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/panels/PanelsNavigationUtils.tsx");

@@ -1,22 +1,22 @@
-// Module ID: 11606
-// Function ID: 11607
+// Module ID: 11657
+// Function ID: 11658
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 575, 1389, 11607, 1113, 11609, 5138, 11611, 11613, 5141, 5148, 5376, 5747, 2]
+// Dependencies: [19, 17, 21, 575, 1389, 11658, 1113, 11660, 5138, 11662, 11664, 5141, 5148, 5377, 5761, 2]
 // Exports: default
 
-// Module 11606 (BadgeRarityPill)
+// Module 11657 (BadgeRarityPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import BadgeRarity from "BadgeRarity" /* 1389 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
 import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 11607 */;
-import ExperimentalRareIcon from "ExperimentalRareIcon" /* 11609 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11611 */;
-import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 11613 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 11658 */;
+import ExperimentalRareIcon from "ExperimentalRareIcon" /* 11660 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 11662 */;
+import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 11664 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -86,7 +86,7 @@ export default function BadgeRarityPill(rarity) {
     const label = tmp5.label;
     const obj9 = { size: "xxs", color: text };
     items1 = [React3(tmp5.Icon, obj9), ];
-    const obj11 = { variant: "text-xs/semibold", color: "none", lineClamp: 1, style: items2, children: label };
+    const obj11 = { variant: "body-xs/semibold", color: "none", lineClamp: 1, style: items2, children: label };
     items2 = [tmp.label, ];
     const obj12 = { color: text };
     items2[1] = obj12;

@@ -1,20 +1,20 @@
-// Module ID: 16632
-// Function ID: 16633
+// Module ID: 16722
+// Function ID: 16723
 // Name: UserProfileBadgesEditButton
-// Dependencies: [32, 19, 17, 11596, 4987, 21, 5141, 575, 11590, 11592, 7446, 7693, 4974, 16633, 11593, 16637, 16623, 1113, 5747, 11597, 5837, 11588, 2]
+// Dependencies: [32, 19, 17, 11647, 4987, 21, 5141, 575, 11640, 11642, 7462, 7709, 4974, 16723, 11644, 16727, 16713, 1113, 5761, 11648, 5851, 11638, 2]
 // Exports: default
 
-// Module 16632 (UserProfileBadgesEditButton)
+// Module 16722 (UserProfileBadgesEditButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11588 */;
-import BadgeUtils from "BadgeUtils" /* 11597 */;
-import openCustomizeBadgesSheet from "openCustomizeBadgesSheet" /* 16633 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11638 */;
+import BadgeUtils from "BadgeUtils" /* 11648 */;
+import openCustomizeBadgesSheet from "openCustomizeBadgesSheet" /* 16723 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11596 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11647 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -150,7 +150,7 @@ export default function UserProfileBadgesEditButton(arg0) {
       intl3 = tmp2(tmp3[17]).intl;
       obj4 = { showNewBadge: tmp11 };
       obj5 = { style: tmp.content, "aria-hidden": true, children: closure_8(Text2, obj6) };
-      obj6 = { variant: "text-sm/medium", color: "text-muted", children: intl4.string(tmp2(tmp3[17]).t.xfuQvv) };
+      obj6 = { variant: "body-sm/medium", color: "text-muted", children: intl4.string(tmp2(tmp3[17]).t.xfuQvv) };
       Text2 = tmp2(tmp3[18]).Text;
       intl4 = tmp2(tmp3[17]).intl;
       obj7 = { text: intl5.string(tmp2(tmp3[17]).t.xfuQvv) };
@@ -223,7 +223,7 @@ export default function UserProfileBadgesEditButton(arg0) {
       let tmp23Result = diff > 0;
       if (tmp23Result) {
         const _HermesInternal = HermesInternal;
-        const obj12 = { variant: "text-md/normal", color: "mobile-text-heading-primary", style: tmp.overflowCount, children: "+" + diff };
+        const obj12 = { variant: "body-md/normal", color: "mobile-text-heading-primary", style: tmp.overflowCount, children: "+" + diff };
         const Text = tmp2(tmp3[18]).Text;
         tmp23Result = tmp23(Text, obj12);
       }

@@ -1,9 +1,9 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12620
+// Function ID: 12621
 // Name: ApplicationCollectionPlatforms
 // Dependencies: [2]
 
-// Module 12539 (ApplicationCollectionPlatforms)
+// Module 12620 (ApplicationCollectionPlatforms)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationCollectionPlatforms.tsx");

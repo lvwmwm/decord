@@ -1,10 +1,10 @@
-// Module ID: 13384
-// Function ID: 13385
+// Module ID: 13468
+// Function ID: 13469
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1399, 502, 5053, 5047, 5012, 13385, 7469, 1072, 21, 5141, 575, 1113, 7468, 7119, 5747, 5376, 12, 5719, 6694, 11731, 9330, 1187, 1411, 5148, 38, 7446, 7471, 504, 1252, 5880, 7022, 5395, 7492, 5754, 5381, 11735, 8874, 2]
+// Dependencies: [32, 19, 17, 1399, 502, 5053, 5047, 5012, 13469, 7485, 1072, 21, 5141, 575, 1113, 7484, 7134, 5761, 5377, 12, 5732, 6709, 11786, 9347, 1187, 1411, 5148, 38, 7462, 7487, 504, 1252, 5894, 7037, 5396, 7508, 5768, 5382, 11790, 8891, 2]
 // Exports: default
 
-// Module 13384 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 13468 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -12,17 +12,17 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
 import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import PlatformsDefault from "Platforms" /* 6694 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 7022 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7119 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7468 */;
-import Constants2 from "Constants" /* 7469 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11735 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
+import PlatformsDefault from "Platforms" /* 6709 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7134 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7484 */;
+import Constants2 from "Constants" /* 7485 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11790 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -31,7 +31,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13385 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13469 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -91,7 +91,7 @@ function PopoutCheck(arg0) {
     const obj5 = { style: tmp.popoutCheck, children: items };
     const obj6 = { size: "sm", style: tmp.popoutCheckIcon };
     items = [authStore4(CheckmarkLargeIcon.CheckmarkLargeIcon, obj6), ];
-    const obj7 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: formatResult };
+    const obj7 = { variant: "body-xs/medium", color: "mobile-text-heading-primary", children: formatResult };
     items[1] = authStore4(Text_Text.Text, obj7);
     tmp10 = closure_17(metroRequire, obj5);
   }
@@ -119,7 +119,7 @@ class PopoutChecks {
     let c3 = groupByResult;
     const keys = Object.keys(groupByResult);
     let closure_4 = keys.length - 1;
-    let obj2 = guildId(5719);
+    let obj2 = guildId(5732);
     const roleColor = obj2.useToken(nativeDefault.unsafe_rawColors.GREEN_330);
     let obj3 = {
       children: keys.map(function(item, index) {
@@ -158,10 +158,10 @@ class PopoutChecks {
         }
         if (includes(str)) {
           const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-          tmp10 = authStore4(tmp2(11731), obj2);
+          tmp10 = authStore4(tmp2(11786), obj2);
         } else if (null != tmp7) {
           const obj3 = { style: closure_1.botTag, verified: false };
-          tmp10 = authStore4(tmp2(9330), obj3);
+          tmp10 = authStore4(tmp2(9347), obj3);
         }
         const items = [closure_1.popoutChecksGroup, ];
         let prop = null;
@@ -190,7 +190,7 @@ class PopoutChecks {
         }
         items1[1] = tmp25;
         let name;
-        const Text = tmp9(5747).Text;
+        const Text = tmp9(5761).Text;
         const tmp27 = authStore4;
         if (value != null) {
           name = value.name;
@@ -202,7 +202,7 @@ class PopoutChecks {
           }
           name = name1;
         }
-        items1[2] = tmp27(Text, { variant: "text-sm/medium", color: "interactive-text-active", children: name });
+        items1[2] = tmp27(Text, { variant: "body-sm/medium", color: "interactive-text-active", children: name });
         items1[3] = tmp10;
         items2 = [
           closure_17(metroRequire, obj5),
@@ -342,9 +342,9 @@ export default function ConnectionsRoleMessageBadgeActionSheet(userId) {
       if (stateFromStores3 != null) {
         name = stateFromStores3.name;
       }
-      const obj12 = { variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: name };
+      const obj12 = { variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: name };
       items8 = [closure_16(Text, obj12), ];
-      const obj13 = { variant: "text-xs/normal", color: "text-default", children: formatResult };
+      const obj13 = { variant: "body-xs/normal", color: "text-default", children: formatResult };
       items8[1] = closure_16(userId(channelId[17]).Text, obj13);
       items7[1] = closure_17(closure_6, obj11);
       const items9 = [closure_17(closure_6, obj8), ];

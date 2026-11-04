@@ -1,18 +1,18 @@
-// Module ID: 19338
-// Function ID: 19339
+// Module ID: 19442
+// Function ID: 19443
 // Name: SoundButton
-// Dependencies: [19, 17, 19332, 21, 1652, 5141, 575, 1377, 7106, 5757, 7420, 13565, 19339, 19340, 7446, 7471, 19342, 19329, 19344, 5747, 8791, 2]
+// Dependencies: [19, 17, 19436, 21, 1652, 5141, 575, 1377, 7121, 5771, 7436, 13649, 19443, 19444, 7462, 7487, 19446, 19433, 19448, 5761, 8808, 2]
 
-// Module 19338 (SoundButton)
+// Module 19442 (SoundButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import Pressables from "Pressables" /* 7106 */;
-import EmojiDefault from "Emoji" /* 7420 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 13565 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19332 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19344 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import Pressables from "Pressables" /* 7121 */;
+import EmojiDefault from "Emoji" /* 7436 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 13649 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19436 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19448 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -267,7 +267,7 @@ const memoResult = react.memo(function SoundButtonComponent(sound) {
   if (isPlayingSound) {
     textPlaying = tmp4.textPlaying;
   }
-  const obj6 = { lineClamp: 1, style: items7, variant: "text-sm/semibold", children: sound.name };
+  const obj6 = { lineClamp: 1, style: items7, variant: "body-sm/semibold", children: sound.name };
   items7[1] = textPlaying;
   items6[2] = isLocked(Text, obj6);
   const children = [onLockedPress(tmp19, obj3), ];

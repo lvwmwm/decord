@@ -1,24 +1,24 @@
-// Module ID: 7612
-// Function ID: 7613
+// Module ID: 7628
+// Function ID: 7629
 // Name: RelationshipActionCreators
-// Dependencies: [32, 1385, 1072, 7613, 7614, 7048, 6078, 7024, 1113, 7615, 7616, 7617, 1282, 5195, 5148, 7619, 572, 7620, 2]
+// Dependencies: [32, 1385, 1072, 7629, 7630, 7063, 6093, 7039, 1113, 7631, 7632, 7633, 1282, 5195, 5148, 7635, 572, 7636, 2]
 
-// Module 7612 (RelationshipActionCreators)
+// Module 7628 (RelationshipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl10 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import shared from "shared" /* 5148 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 7024 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 7048 */;
-import RelationshipConstants from "RelationshipConstants" /* 7613 */;
-import Constants2 from "Constants" /* 7614 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7615 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7616 */;
-import FriendsUtils from "FriendsUtils" /* 7617 */;
-import SafetyToastsUtils from "SafetyToastsUtils" /* 7619 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7620 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 7039 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 7063 */;
+import RelationshipConstants from "RelationshipConstants" /* 7629 */;
+import Constants2 from "Constants" /* 7630 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7631 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7632 */;
+import FriendsUtils from "FriendsUtils" /* 7633 */;
+import SafetyToastsUtils from "SafetyToastsUtils" /* 7635 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7636 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
@@ -323,15 +323,15 @@ let obj2 = {
     obj3 = require("HTTPUtils");
     const putResult = put(obj);
     const nextPromise = putResult.then(() => {
-      obj = SafetyToastsActionCreatorsDefault;
-      const result = obj.showIgnoreSuccessToast(userId, channelId);
+      obj = DispatcherDefault;
+      obj2 = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId, timestamp: Date.now() };
+      obj.dispatch(obj2);
+      const obj3 = SafetyToastsActionCreatorsDefault;
+      const result = obj3.showIgnoreSuccessToast(userId, channelId);
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      obj2 = SafetyToastsUtils;
-      announce(obj2.getSafetyToastTypeContent(SafetyToastType.IGNORE_SUCCESS, userId, channelId));
-      const obj3 = DispatcherDefault;
-      const obj4 = { type: "RELATIONSHIP_IGNORE_USER_SUCCESS", userId, timestamp: Date.now() };
-      obj3.dispatch(obj4);
+      const obj4 = SafetyToastsUtils;
+      announce(obj4.getSafetyToastTypeContent(SafetyToastType.IGNORE_SUCCESS, userId, channelId));
     });
     return nextPromise.catch(() => {
       obj = channelId(dependencyMap[17]);
@@ -344,6 +344,7 @@ let obj2 = {
   },
   unignoreUser(id, UserProfileRemediatedNotice, channelId) {
     let obj3;
+    let userId;
     _require = id;
     const HTTP = require("HTTPUtils").HTTP;
     obj = { url: closure_6.IGNORE_USER(id), context: obj2, rejectWithError: obj3.rejectWithMigratedError() };
@@ -352,20 +353,23 @@ let obj2 = {
     obj3 = require("HTTPUtils");
     const delResult = del(obj);
     const nextPromise = delResult.then(() => {
-      obj = SafetyToastsActionCreatorsDefault;
-      const result = obj.showUnignoreSuccessToast(id, channelId);
+      obj = DispatcherDefault;
+      obj2 = { type: "RELATIONSHIP_UNIGNORE_USER_SUCCESS", userId };
+      obj.dispatch(obj2);
+      const obj3 = SafetyToastsActionCreatorsDefault;
+      const result = obj3.showUnignoreSuccessToast(userId, channelId);
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      obj2 = SafetyToastsUtils;
-      announce(obj2.getSafetyToastTypeContent(SafetyToastType.UNIGNORE_SUCCESS, id, channelId));
+      const obj4 = SafetyToastsUtils;
+      announce(obj4.getSafetyToastTypeContent(SafetyToastType.UNIGNORE_SUCCESS, userId, channelId));
     });
     return nextPromise.catch(() => {
       obj = channelId(dependencyMap[17]);
       obj.showFailedToast();
-      const AccessibilityAnnouncer = id(dependencyMap[14]).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = userId(dependencyMap[14]).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = id(dependencyMap[8]).intl;
-      announce(intl.string(id(dependencyMap[8]).t.n6Jo3E));
+      const intl = userId(dependencyMap[8]).intl;
+      announce(intl.string(userId(dependencyMap[8]).t.n6Jo3E));
     });
   }
 };

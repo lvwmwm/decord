@@ -1,10 +1,10 @@
-// Module ID: 20256
-// Function ID: 20257
+// Module ID: 20372
+// Function ID: 20373
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 1499, 20233, 20238, 5747, 1113, 6147, 5754, 6860, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 1499, 20349, 20354, 5761, 1113, 6162, 5768, 6875, 2]
 // Exports: default
 
-// Module 20256 (ErrorScreen)
+// Module 20372 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -123,7 +123,7 @@ export default function ErrorScreen() {
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items = [closure_7(Text, obj3), , ];
-  let obj4 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(require("intl").t.ZUEGFn) };
+  let obj4 = { variant: "body-md/normal", color: "text-muted", children: intl2.string(require("intl").t.ZUEGFn) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[1] = closure_7(Text2, obj4);

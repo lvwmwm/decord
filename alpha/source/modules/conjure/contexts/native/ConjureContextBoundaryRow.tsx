@@ -1,16 +1,16 @@
-// Module ID: 12786
-// Function ID: 12787
+// Module ID: 12867
+// Function ID: 12868
 // Name: ConjureContextBoundaryRow
-// Dependencies: [19, 17, 21, 5141, 575, 12269, 11773, 5747, 6080, 6084, 1113, 3995, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 12330, 11829, 5761, 6095, 6099, 1113, 3995, 2]
 // Exports: default
 
-// Module 12786 (ConjureContextBoundaryRow)
+// Module 12867 (ConjureContextBoundaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import useAlertStore from "useAlertStore" /* 6080 */;
-import AlertModal2 from "AlertModal" /* 6084 */;
+import useAlertStore from "useAlertStore" /* 6095 */;
+import AlertModal2 from "AlertModal" /* 6099 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -50,7 +50,7 @@ export default function ConjureContextBoundaryRow(arg0) {
   let action;
   ({ projectId, contextSwitch } = arg0);
   const tmp = closure_7();
-  let obj = action(12269);
+  let obj = action(12330);
   const conjureContextSwitchRow = obj.useConjureContextSwitchRow(projectId, contextSwitch);
   if (null == conjureContextSwitchRow) {
     return null;
@@ -62,28 +62,28 @@ export default function ConjureContextBoundaryRow(arg0) {
     items = [closure_4(View, obj4), , ];
     const obj5 = { style: tmp.contextLabel, accessible: true, accessibilityRole: "header", children: items1 };
     const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const ChatPlusIcon = tmp2(11773).ChatPlusIcon;
+    const ChatPlusIcon = tmp2(11829).ChatPlusIcon;
     items1 = [closure_4(ChatPlusIcon, obj6), ];
-    const obj7 = { variant: "text-xs/semibold", color: "text-default", children: conjureContextSwitchRow.label };
-    items1[1] = closure_4(action(5747).Text, obj7);
+    const obj7 = { variant: "body-xs/semibold", color: "text-default", children: conjureContextSwitchRow.label };
+    items1[1] = closure_4(action(5761).Text, obj7);
     items[1] = closure_5(View, obj5);
     const obj8 = { style: tmp.contextLine };
     items[2] = closure_4(View, obj8);
     items2 = [closure_5(View, obj3), ];
-    const obj10 = { variant: "text-sm/normal", color: "text-muted", style: tmp.contextCentered, children: items3 };
+    const obj10 = { variant: "body-sm/normal", color: "text-muted", style: tmp.contextCentered, children: items3 };
     items3 = [conjureContextSwitchRow.body, ];
     let tmp8Result = null;
     const obj9 = { style: tmp.contextText, accessibilityLiveRegion: "polite", children: items5 };
-    const Text2 = tmp2(5747).Text;
+    const Text2 = tmp2(5761).Text;
     if (null != action) {
       const tmp5 = closure_6;
       let str = "text-link";
-      const Text = tmp2(5747).Text;
+      const Text = tmp2(5761).Text;
       if (action.disabled) {
         str = "text-muted";
       }
       const obj12 = {
-        variant: "text-sm/medium",
+        variant: "body-sm/medium",
         color: str,
         accessibilityRole: "link",
         accessibilityLabel: action.text,
@@ -131,8 +131,8 @@ export default function ConjureContextBoundaryRow(arg0) {
     items5 = [tmp8(Text2, obj10), ];
     let tmp10Result = null;
     if (null != conjureContextSwitchRow.note) {
-      const obj14 = { variant: "text-xs/normal", color: "text-muted", style: tmp.contextCentered, children: conjureContextSwitchRow.note };
-      tmp10Result = tmp10(tmp2(5747).Text, obj14);
+      const obj14 = { variant: "body-xs/normal", color: "text-muted", style: tmp.contextCentered, children: conjureContextSwitchRow.note };
+      tmp10Result = tmp10(tmp2(5761).Text, obj14);
     }
     items5[1] = tmp10Result;
     items2[1] = closure_5(View, obj9);

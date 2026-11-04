@@ -1,23 +1,23 @@
-// Module ID: 9908
-// Function ID: 9909
+// Module ID: 9926
+// Function ID: 9927
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7600, 502, 4990, 7825, 6181, 7954, 1112, 1072, 5146, 7567, 7948, 7579, 1113, 9909, 11, 1282, 8467, 9910, 7950, 1398, 8336, 9912, 8328, 5880, 7760, 6078, 572, 5148, 1089, 10445, 14741, 2]
+// Dependencies: [32, 5, 19, 7616, 502, 4990, 7841, 6196, 7970, 1112, 1072, 5146, 7583, 7964, 7595, 1113, 9927, 11, 1282, 8483, 9928, 7966, 1398, 8352, 9930, 8344, 5894, 7776, 6093, 572, 5148, 1089, 10493, 14821, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 9908 (ThreadCreationHooks)
+// Module 9926 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import MessageConstants from "MessageConstants" /* 5146 */;
-import ThreadHooks from "ThreadHooks" /* 7567 */;
-import DraftStore from "DraftStore" /* 7825 */;
-import MessageParserDefault from "MessageParser" /* 7948 */;
-import SlowmodeStore from "SlowmodeStore" /* 7954 */;
+import ThreadHooks from "ThreadHooks" /* 7583 */;
+import DraftStore from "DraftStore" /* 7841 */;
+import MessageParserDefault from "MessageParser" /* 7964 */;
+import SlowmodeStore from "SlowmodeStore" /* 7970 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7600 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7616 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7579);
+    const tmp17Result = tmp17(7595);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];

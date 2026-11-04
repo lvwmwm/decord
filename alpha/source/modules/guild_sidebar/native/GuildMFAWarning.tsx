@@ -1,18 +1,18 @@
-// Module ID: 18403
-// Function ID: 18404
+// Module ID: 18497
+// Function ID: 18498
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1072, 21, 5141, 575, 11182, 2190, 2123, 5829, 7106, 5837, 18404, 5747, 1113, 1187, 2]
+// Dependencies: [5, 19, 1072, 21, 5141, 575, 11232, 2190, 2123, 5843, 7121, 5851, 18498, 5761, 1113, 1187, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 18403 (GuildMFAWarning)
+// Module 18497 (GuildMFAWarning)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import Pressables from "Pressables" /* 7106 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18404 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import Pressables from "Pressables" /* 7121 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18498 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -109,7 +109,7 @@ export default function GuildMFAWarning() {
   const obj2 = { style: tmp.MFAWarningIcon, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj2), ];
-  const obj3 = { variant: "text-xs/medium", color: "text-default", children: items1 };
+  const obj3 = { variant: "body-xs/medium", color: "text-default", children: items1 };
   const Text = Text_Text.Text;
   const intl = intl3.intl;
   items1 = [intl.string(intl3.t.ZIf8Ag), ];
@@ -123,5 +123,5 @@ export default function GuildMFAWarning() {
 };
 export function getScaledGuildMFAWarningHeight(fontScale) {
   obj = useScaledTextLineHeight;
-  return 83 + 5 * obj.scaleTextLineHeight("text-xs/medium", fontScale) + 10 + 10;
+  return 83 + 5 * obj.scaleTextLineHeight("body-xs/medium", fontScale) + 10 + 10;
 }

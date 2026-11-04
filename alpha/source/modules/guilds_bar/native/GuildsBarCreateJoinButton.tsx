@@ -1,17 +1,17 @@
-// Module ID: 18578
-// Function ID: 18579
+// Module ID: 18679
+// Function ID: 18680
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5172, 1072, 1387, 21, 5141, 10381, 2123, 14411, 7500, 9917, 7471, 18515, 504, 18530, 1113, 18579, 11626, 575, 2]
+// Dependencies: [5, 19, 17, 5172, 1072, 1387, 21, 5141, 10429, 2123, 14491, 7516, 9935, 7487, 18610, 504, 18625, 1113, 18680, 11677, 575, 2]
 
-// Module 18578 (GuildsBarCreateJoinButton)
+// Module 18679 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 11626 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18515 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 11677 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18610 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
@@ -152,7 +152,7 @@ const memoResult = react.memo(function GuildsBarCreateJoinButton() {
     };
     return obj;
   }, []);
-  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "text-feedback-critical", children: jsx(CirclePlusIcon, obj5) };
+  obj4 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(intl2.t.l5WIbf), expandedChildren: "button", children: jsx(CirclePlusIcon, obj5) };
   tmp7 = GuildsBarAnimatedItemWrapperDefault;
   intl = intl2.intl;
   CirclePlusIcon = CirclePlusIcon2.CirclePlusIcon;

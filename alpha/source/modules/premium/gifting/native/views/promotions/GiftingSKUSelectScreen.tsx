@@ -1,16 +1,16 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 14670
+// Function ID: 14671
 // Name: GiftingSKUSelectScreen
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1627, 5747, 1113, 14591, 5754, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1627, 5761, 1113, 14671, 5768, 2]
 // Exports: default
 
-// Module 14590 (GiftingSKUSelectScreen)
+// Module 14670 (GiftingSKUSelectScreen)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 14591 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import GiftingSKUCardsGridDefault from "GiftingSKUCardsGrid" /* 14671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -105,7 +105,7 @@ export default function GiftingSKUSelectScreen(defaultHighlightedReward) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items3 = [metroImportDefault(Text, obj4), ];
-  const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(intl4.t.vPeaOS) };
+  const obj5 = { style: tmp.subtitle, variant: "body-md/medium", color: "text-default", children: intl2.string(intl4.t.vPeaOS) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items3[1] = metroImportDefault(Text2, obj5);

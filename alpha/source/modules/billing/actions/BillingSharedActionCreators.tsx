@@ -1,16 +1,16 @@
-// Module ID: 6656
-// Function ID: 6657
+// Module ID: 6671
+// Function ID: 6672
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 2179, 6657, 1072, 1282, 4961, 572, 1113, 1252, 6566, 4954, 6658, 2]
+// Dependencies: [5, 2179, 6672, 1072, 1282, 4961, 572, 1113, 1252, 6581, 4954, 6673, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 6656 (BillingSharedActionCreators)
+// Module 6671 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6566 */;
-import Constants2 from "Constants" /* 6657 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6581 */;
+import Constants2 from "Constants" /* 6672 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PaymentSourceRecord from "PaymentSourceRecord" /* 2179 */;
 import Constants from "Constants" /* 1072 */;
@@ -342,7 +342,7 @@ export function dispatchConfirmationError(error, captureException) {
     let billingError1 = message;
     if (!(message instanceof V6OrEarlierAPIError.BillingError)) {
       let tmp6 = message;
-      const BillingError = tmp3(6566).BillingError;
+      const BillingError = tmp3(6581).BillingError;
       if (typeof message === "string") {
         tmp6 = defaultErrorMessage;
       }

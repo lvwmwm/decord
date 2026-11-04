@@ -1,22 +1,22 @@
-// Module ID: 15768
-// Function ID: 15769
+// Module ID: 15856
+// Function ID: 15857
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 4990, 5083, 1385, 15765, 15767, 1072, 21, 5141, 575, 504, 1113, 7486, 5837, 11410, 5747, 7186, 7101, 1187, 12261, 12109, 5754, 5381, 6826, 1252, 2]
+// Dependencies: [19, 17, 4990, 5083, 1385, 15853, 15855, 1072, 21, 5141, 575, 504, 1113, 7502, 5851, 11460, 5761, 7201, 7116, 1187, 12322, 12168, 5768, 5382, 6841, 1252, 2]
 // Exports: default
 
-// Module 15768 (BlockedUserInVoiceChannelActionSheet)
+// Module 15856 (BlockedUserInVoiceChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6826 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15765 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6841 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15853 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15767 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15855 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -102,7 +102,7 @@ export default function BlockedUserInVoiceChannelActionSheet(arg0) {
   const Text = tmp2(tmp3[16]).Text;
   intl4 = tmp2(tmp3[12]).intl;
   items5 = [closure_13(Text, obj7), ];
-  const obj8 = { variant: "text-md/medium", style: tmp.centerText, children: tmp7Result };
+  const obj8 = { variant: "body-md/medium", style: tmp.centerText, children: tmp7Result };
   items5[1] = closure_13(require("Text/Text").Text, obj8);
   items4[1] = closure_12(View, obj6);
   const TableRowGroup = tmp2(tmp3[17]).TableRowGroup;

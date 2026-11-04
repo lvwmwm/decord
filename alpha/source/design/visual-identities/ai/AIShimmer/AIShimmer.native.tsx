@@ -1,16 +1,16 @@
-// Module ID: 12921
-// Function ID: 12922
+// Module ID: 13003
+// Function ID: 13004
 // Name: AIShimmer
-// Dependencies: [32, 19, 17, 21, 5141, 12922, 5207, 5747, 12923, 1652, 12924, 12925, 1705, 12382, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 13004, 5207, 5761, 13005, 1652, 13006, 13007, 1705, 12447, 2]
 
-// Module 12921 (AIShimmer)
+// Module 13003 (AIShimmer)
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AIGlyphText from "AIGlyphText" /* 12382 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 12922 */;
-import waveTransition2 from "waveTransition" /* 12923 */;
-import createWaveTransition2 from "createWaveTransition" /* 12925 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AIGlyphText from "AIGlyphText" /* 12447 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 13004 */;
+import waveTransition2 from "waveTransition" /* 13005 */;
+import createWaveTransition2 from "createWaveTransition" /* 13007 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -222,11 +222,11 @@ function ShimmerLayers(pass) {
   let items = [closure_24, animationProgress2, , , , , ];
   const useDerivedValue = pass(1652).useDerivedValue;
   pass(1652);
-  items[2] = pass(12923).bandEdgesAt;
+  items[2] = pass(13005).bandEdgesAt;
   items[3] = animationWidth2;
   items[4] = overshoot2;
-  items[5] = pass(12923).glyphLayerOpacityAt;
-  items[6] = pass(12923).easeTail;
+  items[5] = pass(13005).glyphLayerOpacityAt;
+  items[6] = pass(13005).easeTail;
   let c0;
   let c1;
   let c2;
@@ -597,7 +597,7 @@ let closure_15 = { code: "(function AIShimmerNativeTsx2(next,previous){let[sched
 const memoResult = react.memo(function AIShimmer(variant) {
   let str = variant.variant;
   if (str === undefined) {
-    str = "text-md/normal";
+    str = "body-md/normal";
   }
   let AI_TEXT_EFFECT_DEFAULT_DELAY = variant.delay;
   if (AI_TEXT_EFFECT_DEFAULT_DELAY === undefined) {

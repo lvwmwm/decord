@@ -1,10 +1,10 @@
-// Module ID: 8939
-// Function ID: 8940
+// Module ID: 8956
+// Function ID: 8957
 // Name: useBadges
 // Dependencies: [5196, 1385, 4966, 563, 1113, 2]
 // Exports: default
 
-// Module 8939 (useBadges)
+// Module 8956 (useBadges)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4966 */;

@@ -1,20 +1,20 @@
-// Module ID: 18894
-// Function ID: 18895
+// Module ID: 18997
+// Function ID: 18998
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 5141, 575, 1187, 5747, 5195, 5772, 10929, 8784, 1113, 8727, 7103, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1187, 5761, 5195, 5786, 10977, 8801, 1113, 8744, 7118, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 18894 (SearchListCard)
+// Module 18997 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useChannelNameDefault from "useChannelName" /* 5772 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8727 */;
-import ForumIcon from "ForumIcon" /* 8784 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useChannelNameDefault from "useChannelName" /* 5786 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8744 */;
+import ForumIcon from "ForumIcon" /* 8801 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const GroupDMAvatarDefault = tmp2(10929);
+const GroupDMAvatarDefault = tmp2(10977);
 class SearchListContentAuthor {
   constructor(author) {
     let items;
@@ -38,7 +38,7 @@ class SearchListContentAuthor {
     const obj2 = { source: avatarSource, size: native.AvatarSizes.SIZE_16, style: tmp.avatar, avatarDecoration: author.avatarDecoration };
     const Avatar = native.Avatar;
     items = [hasOwnProperty(Avatar, obj2), ];
-    const obj3 = { style: tmp.authorName, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: obj4.getName(author) };
+    const obj3 = { style: tmp.authorName, variant: "body-xs/medium", color: "interactive-text-default", lineClamp: 1, children: obj4.getName(author) };
     const Text = Text_Text.Text;
     obj4 = UserUtilsDefault;
     items[1] = hasOwnProperty(Text, obj3);
@@ -60,7 +60,7 @@ function SearchListPrivateChannel(channel) {
     obj3 = { channel, size: native.AvatarSizes.SIZE_16 };
     tmp2Result = GroupDMAvatarDefault;
     const items = [hasOwnProperty(View, obj2), ];
-    const obj4 = { style: tmp.channelName, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp4 };
+    const obj4 = { style: tmp.channelName, variant: "body-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp4 };
     items[1] = hasOwnProperty(Text_Text.Text, obj4);
     obj.children = items;
     tmp5Result = tmp5(tmp6, obj);
@@ -68,7 +68,7 @@ function SearchListPrivateChannel(channel) {
     obj.style = tmp.privateChannelIcon;
     const obj5 = { style: tmp.icon, size: "xs", color: "interactive-text-default" };
     const items1 = [hasOwnProperty(ForumIcon.ForumIcon, obj5), ];
-    const obj6 = { variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: intl.string(intl2.t.ACgJhM) };
+    const obj6 = { variant: "body-xs/medium", color: "interactive-text-default", lineClamp: 1, children: intl.string(intl2.t.ACgJhM) };
     const Text = Text_Text.Text;
     intl = intl2.intl;
     items1[1] = hasOwnProperty(Text, obj6);
@@ -89,7 +89,7 @@ class SearchListGuildChannel {
     const obj3 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: channelIcon, color: tmp.channelIcon.color };
     const Icon = native.Icon;
     items = [hasOwnProperty(Icon, obj3), ];
-    const obj4 = { style: tmp.channelName, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp2 };
+    const obj4 = { style: tmp.channelName, variant: "body-xs/medium", color: "interactive-text-default", lineClamp: 1, children: tmp2 };
     items[1] = hasOwnProperty(Text_Text.Text, obj4);
     return metroRequire(View, obj2);
   }
@@ -132,13 +132,13 @@ export function SearchListCardContent(arg0) {
   const tmp = metroRequire;
   const tmp2 = View;
   if (typeof label === "string") {
-    const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: label };
+    const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: label };
     tmp3 = hasOwnProperty(Text_Text.Text, obj2);
   }
   items = [tmp3, ];
   let tmp4 = subLabel;
   if (typeof subLabel === "string") {
-    const obj3 = { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: subLabel };
+    const obj3 = { variant: "body-sm/normal", color: "text-default", lineClamp: 1, children: subLabel };
     tmp4 = hasOwnProperty(Text_Text.Text, obj3);
   }
   items[1] = tmp4;

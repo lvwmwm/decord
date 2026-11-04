@@ -1,19 +1,19 @@
-// Module ID: 11387
-// Function ID: 11388
+// Module ID: 11437
+// Function ID: 11438
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 6688, 5074, 4990, 2135, 5884, 1072, 4997, 5141, 575, 11388, 6165, 5332, 563, 1625, 1377, 5719, 9952, 2]
+// Dependencies: [19, 6703, 5074, 4990, 2135, 5898, 1072, 4997, 5141, 575, 11438, 6180, 5333, 563, 1625, 1377, 5732, 9970, 2]
 // Exports: default
 
-// Module 11387 (useChannelSafeAreaBottomStyles)
+// Module 11437 (useChannelSafeAreaBottomStyles)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
 import LurkingStore from "LurkingStore" /* 5074 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 

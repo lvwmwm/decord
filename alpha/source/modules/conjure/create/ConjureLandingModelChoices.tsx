@@ -1,10 +1,10 @@
-// Module ID: 13114
-// Function ID: 13115
+// Module ID: 13197
+// Function ID: 13198
 // Name: ConjureLandingModelChoices
 // Dependencies: [2]
 // Exports: landingModelChoices
 
-// Module 13114 (ConjureLandingModelChoices)
+// Module 13197 (ConjureLandingModelChoices)
 import size from "module_2" /* 2 */;
 
 let closure_0 = { main: [], subagent: [], thinking: ["low", "medium", "high", "xhigh", "max"] };

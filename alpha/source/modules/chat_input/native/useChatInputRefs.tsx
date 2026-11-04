@@ -1,28 +1,28 @@
-// Module ID: 13884
-// Function ID: 13885
+// Module ID: 13970
+// Function ID: 13971
 // Name: useChatInputRefs
-// Dependencies: [19, 8470, 6957, 7825, 7947, 7954, 1385, 10026, 1072, 6156, 5146, 5735, 5330, 12, 12934, 13885, 13886, 13887, 13888, 9907, 8467, 5332, 1625, 1497, 1377, 5333, 2017, 1252, 10329, 7760, 10331, 13889, 7948, 13890, 6680, 13922, 7227, 2]
+// Dependencies: [19, 8486, 6972, 7841, 7963, 7970, 1385, 10074, 1072, 6171, 5146, 5749, 5331, 12, 13016, 13971, 13972, 13973, 13974, 9925, 8483, 5333, 1625, 1497, 1377, 5334, 2017, 6156, 1252, 10377, 7776, 10379, 13975, 7964, 13976, 6695, 14008, 7247, 2]
 // Exports: default
 
-// Module 13884 (useChatInputRefs)
+// Module 13970 (useChatInputRefs)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import MessageConstants from "MessageConstants" /* 5146 */;
-import ChatInputUtils from "ChatInputUtils" /* 5330 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6156 */;
-import StickersUtils from "StickersUtils" /* 6680 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7760 */;
-import DraftStore2 from "DraftStore" /* 7825 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10026 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 10329 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10331 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12934 */;
-import ChatInputSendUtils from "ChatInputSendUtils" /* 13890 */;
+import ChatInputUtils from "ChatInputUtils" /* 5331 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6171 */;
+import StickersUtils from "StickersUtils" /* 6695 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
+import DraftStore2 from "DraftStore" /* 7841 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10074 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 10377 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10379 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 13016 */;
+import ChatInputSendUtils from "ChatInputSendUtils" /* 13976 */;
 import react_mod from "react" /* 19 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8470 */;
-import StickersStore from "StickersStore" /* 6957 */;
-import EditMessageStore from "EditMessageStore" /* 7947 */;
-import SlowmodeStore from "SlowmodeStore" /* 7954 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8486 */;
+import StickersStore from "StickersStore" /* 6972 */;
+import EditMessageStore from "EditMessageStore" /* 7963 */;
+import SlowmodeStore from "SlowmodeStore" /* 7970 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ export default function useChatInputRefs(chatInputProps) {
   const useRef = react.useRef;
   map = new Map();
   const chatInputTextFlushedResponses = useRef(map);
-  let tmp2 = chatInputTextFieldHeight(5735)(() => {
+  let tmp2 = chatInputTextFieldHeight(5749)(() => {
     const obj = ChatInputUtils;
     return obj.createInputRefTracker(chatInputProps.channel.id, chatInputProps.screenIndex);
   });
@@ -85,11 +85,11 @@ export default function useChatInputRefs(chatInputProps) {
       closure_1_12.handleRef(null, channel.channel.id);
     };
   }, items2);
-  const state = react.useRef(chatInputTextFieldHeight(5735)(() => ({ editId: null, focused: false, selectionStart: 0, selectionEnd: 0, text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldContentSize: 0, textFieldHeight: chatInputTextFieldHeight })));
+  const state = react.useRef(chatInputTextFieldHeight(5749)(() => ({ editId: null, focused: false, selectionStart: 0, selectionEnd: 0, text: chatInputProps.defaultValue, textPrev: chatInputProps.defaultValue, textFieldContentSize: 0, textFieldHeight: chatInputTextFieldHeight })));
   const ref = react.useRef({ handledHereMention: false, sending: false });
   const items3 = [tmp2];
   const memo = react.useMemo(() => {
-    let chatInputNativeRef;
+    let channelOnCooldown;
     let chatInputRef;
     let ref2;
     let ref3;
@@ -97,7 +97,7 @@ export default function useChatInputRefs(chatInputProps) {
     let obj = chatInputTextFieldHeight(chatInputActions[13]);
     let closure_0 = obj.throttle((arg0, arg1) => {
       const obj = chatInputTextFieldHeight(ref[14]);
-      obj.updateTextBlocks(chatInputNativeRef.current, arg0, arg1);
+      obj.updateTextBlocks(channelOnCooldown.current, arg0, arg1);
     }, 200);
     let obj2 = chatInputTextFieldHeight(chatInputActions[13]);
     let closure_1 = obj2.throttle((text) => {
@@ -165,11 +165,11 @@ export default function useChatInputRefs(chatInputProps) {
     let obj4 = {
       backspace() {
         const obj = chatInputTextFieldHeight(ref[14]);
-        obj.backspace(chatInputNativeRef.current);
+        obj.backspace(channelOnCooldown.current);
       },
       blur() {
         const obj = chatInputTextFieldHeight(ref[14]);
-        obj.blur(chatInputNativeRef.current);
+        obj.blur(channelOnCooldown.current);
       },
       chatInputTrackerRegister() {
         closure_1_12.register();
@@ -195,7 +195,7 @@ export default function useChatInputRefs(chatInputProps) {
         const tmpResult3 = chatInputProps(ref[24]);
         if (!tmpResult3.isAndroid()) {
           obj4 = chatInputTextFieldHeight(ref[14]);
-          obj4.closeCustomKeyboard(chatInputNativeRef.current);
+          obj4.closeCustomKeyboard(channelOnCooldown.current);
         }
         const tmpResult4 = chatInputProps(ref[25]);
         const result = tmpResult4.closePortalKeyboardRequest();
@@ -213,7 +213,12 @@ export default function useChatInputRefs(chatInputProps) {
       },
       focus() {
         const obj = chatInputTextFieldHeight(ref[14]);
-        obj.focus(chatInputNativeRef.current);
+        obj.focus(channelOnCooldown.current);
+      },
+      focusAccessibility(delay) {
+        const obj = chatInputProps(ref[27]);
+        const obj2 = { ref: channelOnCooldown, delay };
+        const result = obj.setAccessibilityFocus(obj2);
       },
       focusPhotosButton() {
         const current = ref.current;
@@ -252,7 +257,7 @@ export default function useChatInputRefs(chatInputProps) {
             id = currentUser.id;
           }
           track(CHAT_CONTEXT_BAR_ACTION_CANCELED, obj);
-          const tmp6Result = tmp6(7760);
+          const tmp6Result = tmp6(7776);
           tmp6Result.endEditMessage(channel.id);
         }
       },
@@ -292,7 +297,7 @@ export default function useChatInputRefs(chatInputProps) {
               current2.handleCancelEditing();
             }
           } else if (null != pendingReply) {
-            const obj = chatInputProps(ref[30]);
+            const obj = chatInputProps(ref[31]);
             obj.deletePendingReply(channel.id);
           }
         }
@@ -305,7 +310,7 @@ export default function useChatInputRefs(chatInputProps) {
           editingMessage = editingMessage.getEditingMessage(channel.id);
           if (null != editingMessage) {
             const obj2 = { channel, isEdit: true };
-            const obj6 = chatInputProps(chatInputActions[31]);
+            const obj6 = chatInputProps(chatInputActions[32]);
             const handleLegacyCommandsResult = obj6.handleLegacyCommands(text, obj2);
             let content1;
             const tmp21 = chatInputProps;
@@ -338,18 +343,18 @@ export default function useChatInputRefs(chatInputProps) {
                   result = tmp21Result.serializeComposerTimestampMentions(content, mentionTimestamps);
                 }
               }
-              const obj3 = chatInputTextFieldHeight(chatInputActions[32]);
+              const obj3 = chatInputTextFieldHeight(chatInputActions[33]);
               const parsed = obj3.parse(channel, result, undefined, mentionGames);
               const tmp8 = chatInputTextFieldHeight;
               if (parsed.content !== editingMessage.content) {
-                const tmp8Result = tmp8(chatInputActions[29]);
+                const tmp8Result = tmp8(chatInputActions[30]);
                 tmp8Result.editMessage(channel.id, editingMessage.id, parsed);
               }
               if (applicationCommandManager != null) {
                 const result1 = applicationCommandManager.clearTimestampMentions();
               }
             }
-            const obj5 = chatInputTextFieldHeight(chatInputActions[29]);
+            const obj5 = chatInputTextFieldHeight(chatInputActions[30]);
             obj5.endEditMessage(channel.id);
             const current = chatInputRef.current;
             if (current != null) {
@@ -359,7 +364,7 @@ export default function useChatInputRefs(chatInputProps) {
         }
         if (null == text) {
           let obj = ChatInputNativeCommandsDefault;
-          text = obj.getText(chatInputNativeRef.current, ref3.current, handleSaveEditing);
+          text = obj.getText(channelOnCooldown.current, ref3.current, handleSaveEditing);
         } else {
           handleSaveEditing(text);
         }
@@ -375,7 +380,7 @@ export default function useChatInputRefs(chatInputProps) {
           if (null != threadCreationCallback) {
             const tmp13 = chatInputTextFieldHeight;
             let obj2 = chatInputTextFieldHeight(ref[14]);
-            const text = obj2.getText(chatInputNativeRef.current, ref3.current, (text) => {
+            const text = obj2.getText(channelOnCooldown.current, ref3.current, (text) => {
               let obj2;
               const obj = { text, params: obj2 };
               obj2 = { chatInputRef };
@@ -409,8 +414,8 @@ export default function useChatInputRefs(chatInputProps) {
                 const obj = { applicationCommand: obj2, params: obj3 };
                 obj2 = { command, optionValues };
                 obj3 = { chatInputRef };
-                const chatInputSendApplicationCommand = threadCreationCallback(closure_2[33]).chatInputSendApplicationCommand;
-                threadCreationCallback(closure_2[33]);
+                const chatInputSendApplicationCommand = threadCreationCallback(closure_2[34]).chatInputSendApplicationCommand;
+                threadCreationCallback(closure_2[34]);
                 const merged = Object.assign(ref.current);
                 const result = chatInputSendApplicationCommand(obj);
               });
@@ -418,7 +423,7 @@ export default function useChatInputRefs(chatInputProps) {
             if (!sendCommandResult) {
               let tmp9 = ref;
               let obj = chatInputTextFieldHeight(ref[14]);
-              const text1 = obj.getText(chatInputNativeRef.current, ref3.current, (text) => {
+              const text1 = obj.getText(channelOnCooldown.current, ref3.current, (text) => {
                 let obj2;
                 let tmp9;
                 if (null != props.current.pendingEdit) {
@@ -433,8 +438,8 @@ export default function useChatInputRefs(chatInputProps) {
                   closure_1_1.cancel();
                   const obj = { text, params: obj2 };
                   obj2 = { chatInputRef };
-                  const chatInputHandleSendText = chatInputProps(chatInputActions[33]).chatInputHandleSendText;
-                  chatInputProps(chatInputActions[33]);
+                  const chatInputHandleSendText = chatInputProps(chatInputActions[34]).chatInputHandleSendText;
+                  chatInputProps(chatInputActions[34]);
                   const merged = Object.assign(tmp.current);
                   tmp9 = chatInputRef;
                   const result = chatInputHandleSendText(obj);
@@ -459,18 +464,18 @@ export default function useChatInputRefs(chatInputProps) {
         const current = ref.current;
         ({ channel, threadCreationCallback } = current);
         const pendingReply = current.pendingReply;
-        const isChannelOnCooldownResult = chatInputNativeRef.isChannelOnCooldown(channel) || 0 === url.length;
+        const isChannelOnCooldownResult = channelOnCooldown.isChannelOnCooldown(channel) || 0 === url.length;
         if (!isChannelOnCooldownResult) {
           if (null != threadCreationCallback) {
             const result = threadCreationCallback(url);
           } else {
             const id = channel.id;
-            const sendMessage = chatInputTextFieldHeight(ref[29]).sendMessage;
-            const tmp16 = chatInputTextFieldHeight(ref[29]);
-            const obj2 = chatInputTextFieldHeight(ref[32]);
+            const sendMessage = chatInputTextFieldHeight(ref[30]).sendMessage;
+            const tmp16 = chatInputTextFieldHeight(ref[30]);
+            const obj2 = chatInputTextFieldHeight(ref[33]);
             const parsed = obj2.parse(channel, url);
             const obj3 = { location: ref.GIF_REPLY, scheduledTimestamp };
-            obj4 = chatInputTextFieldHeight(ref[29]);
+            obj4 = chatInputTextFieldHeight(ref[30]);
             const merged = Object.assign(obj4.getSendMessageOptionsForReply(pendingReply));
             scheduledMessage = scheduledMessage.getScheduledMessage(channel.id);
             scheduledTimestamp = undefined;
@@ -479,7 +484,7 @@ export default function useChatInputRefs(chatInputProps) {
               scheduledTimestamp = scheduledMessage.scheduledTimestamp;
             }
             sendMessage(id, parsed, true, obj3);
-            const obj = chatInputProps(tmp15[30]);
+            const obj = chatInputProps(tmp15[31]);
             obj.deletePendingReply(channel.id);
           }
           const current2 = chatInputRef.current;
@@ -539,7 +544,7 @@ export default function useChatInputRefs(chatInputProps) {
                   }
                   const tmp30Result2 = PendingReplyActionCreators;
                   tmp30Result2.deletePendingReply(channel.id);
-                  const tmp34Result = tmp34(8467);
+                  const tmp34Result = tmp34(8483);
                   tmp34Result.saveDraft(channel.id, "", DraftType.ChannelMessage);
                   const current3 = tmp13.current;
                   if (current3 != null) {
@@ -597,15 +602,15 @@ export default function useChatInputRefs(chatInputProps) {
         let channel;
         let secondaryTextFieldRef;
         ({ channel, secondaryTextFieldRef } = props.current);
-        const obj = { channelId: channel.id, chatInputRef, chatInputNativeRef, keyboardParams, secondaryTextFieldRef };
-        chatInputTextFieldHeight(ref[35])(obj);
+        const obj = { channelId: channel.id, chatInputRef, chatInputNativeRef: channelOnCooldown, keyboardParams, secondaryTextFieldRef };
+        chatInputTextFieldHeight(ref[36])(obj);
       },
       openSystemKeyboard() {
         const obj = chatInputProps(ref[21]);
         const keyboardType = obj.getKeyboardType();
         let keyboardIsOpen = keyboardType === chatInputProps(ref[22]).KeyboardTypes.SYSTEM;
         if (keyboardIsOpen) {
-          const tmpResult = chatInputProps(ref[36]);
+          const tmpResult = chatInputProps(ref[37]);
           keyboardIsOpen = tmpResult.getKeyboardIsOpen({ includeCustomKeyboard: false });
         }
         if (!keyboardIsOpen) {
@@ -614,20 +619,20 @@ export default function useChatInputRefs(chatInputProps) {
           chatInputProps(ref[23]);
           setKeyboardType(obj2);
           obj4 = chatInputTextFieldHeight(ref[14]);
-          obj4.openSystemKeyboard(chatInputNativeRef.current);
+          obj4.openSystemKeyboard(channelOnCooldown.current);
         }
       },
       replaceRange(arg0) {
         const obj = chatInputTextFieldHeight(ref[14]);
-        obj.replaceRange(chatInputNativeRef.current, arg0);
+        obj.replaceRange(channelOnCooldown.current, arg0);
       },
       setSelectedRange(arg0, arg1) {
         const obj = chatInputTextFieldHeight(ref[14]);
-        obj.setSelectedRange(chatInputNativeRef.current, arg0, arg1);
+        obj.setSelectedRange(channelOnCooldown.current, arg0, arg1);
       },
       setText(arg0) {
         const obj = chatInputTextFieldHeight(ref[14]);
-        obj.setText(chatInputNativeRef.current, arg0);
+        obj.setText(channelOnCooldown.current, arg0);
       },
       showSideActions() {
         const current = ref.current;

@@ -1,14 +1,14 @@
-// Module ID: 18175
-// Function ID: 18176
+// Module ID: 18272
+// Function ID: 18273
 // Name: AgeGateUnderage
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 7237, 1499, 7124, 7130, 1113, 7075, 7268, 8098, 7267, 5747, 2190, 5754, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 7257, 1499, 7139, 7145, 1113, 7090, 7284, 8114, 7283, 5761, 2190, 5768, 2]
 // Exports: default
 
-// Module 18175 (AgeGateUnderage)
+// Module 18272 (AgeGateUnderage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -96,7 +96,7 @@ export default function AgeGateUnderage(onClose) {
   items1 = [tmp12, closure_6(tmp(tmp2[12]), {}), closure_6(onClose(tmp2[13]).ShieldSpotIllustration, {}), , , ];
   const obj4 = { style: tmp4.header, children: stringResult };
   items1[3] = closure_6(existingUser(flag2[14]), obj4);
-  const obj5 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: stringResult1 };
+  const obj5 = { style: tmp4.body, variant: "body-md/medium", color: "interactive-text-default", children: stringResult1 };
   const Text = tmp5(tmp2[15]).Text;
   const intl2 = tmp5(tmp2[10]).intl;
   if (flag) {
@@ -116,7 +116,7 @@ export default function AgeGateUnderage(onClose) {
   let tmp10Result = null;
   if (existingUser) {
     const obj7 = { children: items2 };
-    const obj8 = { style: tmp4.body, variant: "text-md/medium", color: "interactive-text-default", children: intl4.format(onClose(flag2[10]).t.fjqIZp, { days: 30 }) };
+    const obj8 = { style: tmp4.body, variant: "body-md/medium", color: "interactive-text-default", children: intl4.format(onClose(flag2[10]).t.fjqIZp, { days: 30 }) };
     const Text2 = tmp5(tmp2[15]).Text;
     intl4 = tmp5(tmp2[10]).intl;
     items2 = [closure_6(Text2, obj8), ];

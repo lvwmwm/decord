@@ -1,18 +1,18 @@
-// Module ID: 17710
-// Function ID: 17711
+// Module ID: 17806
+// Function ID: 17807
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 5141, 575, 17711, 5019, 5150, 1113, 6147, 5747, 6571, 1377, 7103, 17713, 2]
+// Dependencies: [5, 32, 19, 21, 5141, 575, 17807, 5019, 5150, 1113, 6162, 5761, 6586, 1377, 7118, 17809, 2]
 // Exports: default, useDiskUsageMeasurement
 
-// Module 17710 (CacheActionsDiskUsageSection)
+// Module 17806 (CacheActionsDiskUsageSection)
 import nativeDefault from "native" /* 575 */;
 import intl24 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import FileSizeUtils from "FileSizeUtils" /* 6571 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 17713 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import FileSizeUtils from "FileSizeUtils" /* 6586 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 17809 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -41,10 +41,10 @@ function SizeRow(label) {
   const obj = { direction: "horizontal", justify: "space-between", spacing: nativeDefault.space.PX_16, children: items };
   const Stack = Stack_Stack.Stack;
   items = [, ];
-  const obj2 = { variant: "text-sm/normal", color: "text-subtle", style: indented ? iter.nestedLabel : iter.label, children: label };
+  const obj2 = { variant: "body-sm/normal", color: "text-subtle", style: indented ? iter.nestedLabel : iter.label, children: label };
   items[0] = metroRequire(Text_Text.Text, obj2);
-  const obj3 = { variant: "text-sm/semibold", tabularNumbers: true, style: iter.value, children: formatKbSizeResult };
-  const Text = tmp2(5747).Text;
+  const obj3 = { variant: "body-sm/semibold", tabularNumbers: true, style: iter.value, children: formatKbSizeResult };
+  const Text = tmp2(5761).Text;
   const tmp = metroImportDefault;
   if (null != bytes) {
     const tmp2Result = FileSizeUtils;
@@ -128,7 +128,7 @@ function DiskUsageResults(metricKitSize) {
   }
   items[1] = isIOSResult;
   const Stack2 = tmp(tmp2[10]).Stack;
-  const obj6 = { variant: "heading-sm/semibold", children: intl22.string(tmp(str[9]).t.CoudPr) };
+  const obj6 = { variant: "heading-xs/semibold", children: intl22.string(tmp(str[9]).t.CoudPr) };
   const Heading = tmp(tmp2[11]).Heading;
   intl22 = tmp(tmp2[9]).intl;
   let items1 = [tmp4(Heading, obj6), , ];
@@ -178,7 +178,7 @@ function DiskUsageResults(metricKitSize) {
     tmp4Result = report.unmeasuredRootCount > 0;
   }
   if (tmp4Result) {
-    const obj7 = { variant: "text-sm/normal", color: "text-feedback-warning", children: intl23.formatToPlainString(tmp(str[9]).t.kt7tAT, obj8) };
+    const obj7 = { variant: "body-sm/normal", color: "text-feedback-warning", children: intl23.formatToPlainString(tmp(str[9]).t.kt7tAT, obj8) };
     const Text = tmp(tmp2[11]).Text;
     intl23 = tmp(tmp2[9]).intl;
     obj8 = { errors: null, unavailable: null };
@@ -203,23 +203,23 @@ export default function CacheActionsDiskUsageSection(state) {
   state = state.state;
   const onDiagnosticsBusyChange = state.onDiagnosticsBusyChange;
   const Stack = Stack_Stack.Stack;
-  const obj = { variant: "heading-md/semibold", children: intl.string(intl24.t.m8BOpo) };
+  const obj = { variant: "heading-sm/semibold", children: intl.string(intl24.t.m8BOpo) };
   const Heading = Text_Text.Heading;
   intl = intl24.intl;
   const children = [metroRequire(Heading, obj), , ];
   let tmp4Result = "loading" === state.status;
   const Card = Card_Card.Card;
   if (tmp4Result) {
-    const obj2 = { variant: "text-sm/normal", children: intl2.string(intl24.t.Ynmbie) };
-    const Text = tmp2(5747).Text;
+    const obj2 = { variant: "body-sm/normal", children: intl2.string(intl24.t.Ynmbie) };
+    const Text = tmp2(5761).Text;
     intl2 = tmp2(1113).intl;
     tmp4Result = tmp4(Text, obj2);
   }
   const items1 = [tmp4Result, , ];
   let tmp4Result3 = "error" === state.status;
   if (tmp4Result3) {
-    const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl3.string(intl24.t["hj/3qI"]) };
-    const Text2 = tmp2(5747).Text;
+    const obj3 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(intl24.t["hj/3qI"]) };
+    const Text2 = tmp2(5761).Text;
     intl3 = tmp2(1113).intl;
     tmp4Result3 = tmp4(Text2, obj3);
   }

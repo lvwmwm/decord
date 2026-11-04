@@ -1,15 +1,15 @@
-// Module ID: 11528
-// Function ID: 11529
+// Module ID: 11578
+// Function ID: 11579
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 5141, 9649, 5747, 1113, 11529, 3865, 2]
+// Dependencies: [19, 17, 21, 5141, 9668, 5761, 1113, 11579, 3865, 2]
 // Exports: default
 
-// Module 11528 (SlayerStorefrontGiftPreview)
+// Module 11578 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9649 */;
-import InfoBox from "InfoBox" /* 11529 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9668 */;
+import InfoBox from "InfoBox" /* 11579 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -91,7 +91,7 @@ export default function SlayerStorefrontGiftPreview(arg0) {
     const obj = { style: tmp.container, children: items };
     const obj2 = { sku };
     items = [React3(SlayerStorefrontItemCardDefault, obj2), , ];
-    const obj3 = { variant: "heading-md/medium", color: "mobile-text-heading-primary", style: tmp.text, children: formatToPlainString(v2tBYtA, obj4) };
+    const obj3 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", style: tmp.text, children: formatToPlainString(v2tBYtA, obj4) };
     const Text = Text_Text.Text;
     const intl = intl2.intl;
     formatToPlainString = intl.formatToPlainString;

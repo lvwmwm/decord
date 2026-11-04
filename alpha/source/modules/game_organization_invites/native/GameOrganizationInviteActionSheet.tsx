@@ -1,191 +1,98 @@
-// Module ID: 15933
-// Function ID: 15934
+// Module ID: 16021
+// Function ID: 16022
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 9327, 5012, 9261, 1083, 21, 5141, 575, 9248, 9256, 504, 11788, 9278, 11795, 11798, 1113, 2533, 7486, 6147, 5747, 7339, 15934, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9273, 16022, 16023, 1113, 2533, 7502, 6162, 5761, 7355, 16024, 2]
 // Exports: default
 
-// Module 15933 (GameOrganizationInviteActionSheet)
+// Module 16021 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 9248 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9256 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9278 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9327 */;
-import getGameOrganizationInviteSendStateKeyDefault from "getGameOrganizationInviteSendStateKey" /* 11788 */;
-import sendGameOrganizationInviteDefault from "sendGameOrganizationInvite" /* 11795 */;
-import showGameOrganizationInviteErrorToastDefault from "showGameOrganizationInviteErrorToast" /* 11798 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 9261 */;
+import intl6 from "intl" /* 1113 */;
+import _modDef2533 from "module_2533" /* 2533 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import SearchBar2 from "SearchBar" /* 7355 */;
+import ActionSheet2 from "ActionSheet" /* 7502 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9273 */;
+import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16022 */;
+import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16023 */;
+import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, inviteSuggestionRows;
-
-let c10;
+let closure_4;
+let hasOwnProperty;
 let obj2;
-let unpackModuleId;
-function isInvitableUserRow(type) {
-  let tmp3 = type.type === InstantInviteUtils.RowTypes.FRIEND;
-  if (!tmp3) {
-    tmp3 = type.type === InstantInviteUtils.RowTypes.DM;
-  }
-  if (tmp3) {
-    tmp3 = !type.item.bot;
-  }
-  return tmp3;
-}
+let tmp2;
+const GameOrganizationInviteListDefault = tmp2(16024);
 function Loading() {
   let tmp;
   const children = [];
   let num = 0;
   do {
-    tmp = authStore;
+    tmp = React3;
     let obj = { row: num };
-    let arr = children.push(authStore(UserPlaceholderRowDefault, obj, num));
+    let arr = children.push(React3(UserPlaceholderRowDefault, obj, num));
     num = num + 1;
   } while (num < 10);
   return tmp(View, { children });
 }
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
 const View = react_native.View;
-let closure_6 = InstantInviteSendStateStore.useInstantInviteSendStates;
-const NOOP_NULL = Constants.NOOP_NULL;
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { header: obj2, centeredText: { textAlign: "center" } };
 obj2 = { paddingTop: nativeDefault.space.PX_16 };
-let closure_12 = createStyles.createStyles(obj);
-let result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationInviteActionSheet.tsx");
+let closure_6 = createStyles.createStyles(obj);
+const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationInviteActionSheet.tsx");
 
 export default function GameOrganizationInviteActionSheet(guildId) {
   let Stack;
-  let closure_2;
-  let closure_3;
-  let closure_4;
-  let first;
+  let getSendState;
+  let handleInvite;
   let intl2;
   let intl3;
   let intl4;
   let intl5;
-  let items4;
-  let items5;
-  let obj3;
-  let tmp17Result;
+  let isLoading;
+  let items;
+  let items1;
+  let obj2;
+  let search;
+  let tmp7Result;
+  let users;
   guildId = guildId.guildId;
-  dependencyMap = undefined;
-  _slicedToArray = undefined;
-  react = undefined;
-  let closure_5;
-  let tmp = closure_12();
-  let tmp2 = guildId;
-  let obj = guildId(504);
-  const items = [GuildStore];
-  const stateFromStores = obj.useStateFromStores(items, () => {
-    const guild = GuildStore.getGuild(guildId);
-    let prop;
-    if (guild != null) {
-      prop = guild.linkedGameOrganization;
-    }
-    if (prop == null) {
-      prop = null;
-    }
-    return prop;
-  });
-  let tmp5 = null;
-  if (null != stateFromStores) {
-    let tmp6 = stateFromStores;
-    tmp5 = stateFromStores(11788)(stateFromStores);
-  }
-  dependencyMap = tmp5;
-  const tmp7 = closure_6((arg0) => {
-    let tmp2;
-    if (null != closure_2) {
-      tmp2 = arg0[tmp];
-    }
-    return tmp2;
-  });
-  _slicedToArray = tmp7;
-  const items1 = [InviteSuggestionsStore];
-  const tmp2Result = tmp2(504);
-  const stateFromStoresArray = tmp2Result.useStateFromStoresArray(items1, () => {
-    inviteSuggestionRows = inviteSuggestionRows.getInviteSuggestionRows();
-    const found = inviteSuggestionRows.filter(isInvitableUserRow);
-    return found.map((item) => item.item);
-  });
-  [first, react] = react.useState(true);
-  closure_5 = react.useRef("");
-  const callback = react.useCallback((current) => {
-    closure_5.current = current;
-    const obj = InviteSuggestionsActionCreators;
-    const result = obj.searchInviteSuggestions(current);
-  }, []);
-  const effect = react.useEffect(() => {
-    let ref;
-    const tmp = InviteSuggestionsActionCreators;
-    let obj = { omitUserIds: new Set() };
-    const loadInviteSuggestions = tmp.loadInviteSuggestions;
-    new Set();
-    const inviteSuggestions = loadInviteSuggestions(obj);
-    const nextPromise = inviteSuggestions.then(() => {
-      if ("" !== ref.current) {
-        const obj = guildId(closure_2[14]);
-        const result = obj.searchInviteSuggestions(tmp.current);
-      }
-    });
-    const catchPromise = nextPromise.catch(NOOP_NULL);
-    catchPromise.finally(() => closure_1_4(false));
-  }, []);
-  const items2 = [tmp7];
-  const items3 = [stateFromStores];
-  const callback1 = react.useCallback((arg0) => {
-    let tmp2;
-    if (closure_3 != null) {
-      tmp2 = tmp[arg0];
-    }
-    if (tmp2 == null) {
-      tmp2 = null;
-    }
-    return tmp2;
-  }, items2);
-  const callback2 = react.useCallback((arg0) => {
-    if (null != stateFromStores) {
-      const tmp5 = sendGameOrganizationInviteDefault;
-      const tmp6 = getGameOrganizationInviteSendStateKeyDefault(stateFromStores);
-      tmp5(tmp6, stateFromStores, arg0, showGameOrganizationInviteErrorToastDefault);
-    }
-  }, items3);
-  const intl = tmp2(1113).intl;
-  const stringResult = intl.string(stateFromStores(2533).nVMqjA);
-  const obj2 = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl2.string(tmp2(1113).t.cpT0Cq), header: closure_11(Stack, obj3), children: tmp17Result };
-  const ActionSheet = tmp2(7486).ActionSheet;
-  intl2 = tmp2(1113).intl;
-  obj3 = { spacing: stateFromStores(575).space.PX_16, style: tmp.header, children: items5 };
-  Stack = tmp2(6147).Stack;
-  const obj4 = { spacing: stateFromStores(575).space.PX_4, children: items4 };
-  const Stack2 = tmp2(6147).Stack;
-  const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl3.formatToPlainString(stateFromStores(2533).EnTIIr, { noun: stringResult }) };
-  const Heading = tmp2(5747).Heading;
-  intl3 = tmp2(1113).intl;
-  items4 = [closure_10(Heading, obj5), ];
-  const obj6 = { variant: "text-sm/medium", color: "text-muted", style: tmp.centeredText, children: intl4.formatToPlainString(stateFromStores(2533).BBk7Qw, { noun: stringResult }) };
-  const Text = tmp2(5747).Text;
-  intl4 = tmp2(1113).intl;
-  items4[1] = closure_10(Text, obj6);
-  items5 = [closure_11(Stack2, obj4), ];
-  const obj7 = { size: "md", round: true, onChange: callback, placeholder: intl5.formatToPlainString(stateFromStores(2533).cRK6SQ, { noun: stringResult }) };
-  const SearchBar = tmp2(7339).SearchBar;
-  intl5 = tmp2(1113).intl;
-  items5[1] = closure_10(SearchBar, obj7);
-  const tmp15 = stateFromStores;
-  if (first) {
-    tmp17Result = tmp17(Loading, {});
+  const tmp = closure_6();
+  ({ users, isLoading, search } = useGameOrganizationInviteSuggestionsDefault());
+  useGameOrganizationInviteSuggestionsDefault();
+  ({ getSendState, handleInvite } = useLinkedGameOrganizationInviteSenderDefault(guildId));
+  useLinkedGameOrganizationInviteSenderDefault(guildId);
+  const intl = intl6.intl;
+  const stringResult = intl.string(_modDef2533.nVMqjA);
+  const obj = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl2.string(intl6.t.cpT0Cq), header: hasOwnProperty(Stack, obj2), children: tmp7Result };
+  const ActionSheet = ActionSheet2.ActionSheet;
+  intl2 = intl6.intl;
+  obj2 = { spacing: nativeDefault.space.PX_16, style: tmp.header, children: items1 };
+  Stack = Stack_Stack.Stack;
+  const obj3 = { spacing: nativeDefault.space.PX_4, children: items };
+  const Stack2 = Stack_Stack.Stack;
+  const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: intl3.formatToPlainString(_modDef2533.EnTIIr, { noun: stringResult }) };
+  const Heading = Text_Text.Heading;
+  intl3 = intl6.intl;
+  items = [React3(Heading, obj4), ];
+  const obj5 = { variant: "body-sm/medium", color: "text-muted", style: tmp.centeredText, children: intl4.formatToPlainString(_modDef2533.BBk7Qw, { noun: stringResult }) };
+  const Text = Text_Text.Text;
+  intl4 = intl6.intl;
+  items[1] = React3(Text, obj5);
+  items1 = [hasOwnProperty(Stack2, obj3), ];
+  const obj6 = { size: "md", round: true, onChange: search, placeholder: intl5.formatToPlainString(_modDef2533.cRK6SQ, { noun: stringResult }) };
+  const SearchBar = SearchBar2.SearchBar;
+  intl5 = intl6.intl;
+  items1[1] = React3(SearchBar, obj6);
+  if (isLoading) {
+    tmp7Result = tmp7(Loading, {});
   } else {
-    const obj8 = { users: stateFromStoresArray, getSendState: callback1, onInvite: callback2 };
-    tmp17Result = tmp17(tmp15(15934), obj8);
+    const obj7 = { users, getSendState, onInvite: handleInvite };
+    tmp7Result = tmp7(GameOrganizationInviteListDefault, obj7);
   }
-  return closure_10(ActionSheet, obj2);
+  return React3(ActionSheet, obj);
 };

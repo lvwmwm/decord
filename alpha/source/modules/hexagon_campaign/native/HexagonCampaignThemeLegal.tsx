@@ -1,16 +1,16 @@
-// Module ID: 17157
-// Function ID: 17158
+// Module ID: 17249
+// Function ID: 17250
 // Name: HexagonCampaignThemeLegal
-// Dependencies: [19, 17, 5166, 21, 5141, 575, 5747, 1113, 4412, 16628, 5837, 17158, 2]
+// Dependencies: [19, 17, 5166, 21, 5141, 575, 5761, 1113, 4412, 16718, 5851, 17250, 2]
 // Exports: default
 
-// Module 17157 (HexagonCampaignThemeLegal)
+// Module 17249 (HexagonCampaignThemeLegal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4412 from "module_4412" /* 4412 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17158 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17250 */;
 import react from "react" /* 19 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const openHexagonCampaignLearnMore = tmp2(16628);
+const openHexagonCampaignLearnMore = tmp2(16718);
 const View = react_native.View;
 ({ HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: closure_4, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: hasOwnProperty } = HexagonCampaignConstants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -51,8 +51,8 @@ export default function HexagonCampaignThemeLegal(animatedStyles) {
   let tmp2 = null != animatedStyles;
   dependencyMap = tmp2;
   let tmp5 = dependencyMap;
-  let obj = { animated: tmp2, variant: "text-xs/medium", color: str, style: items, children: intl.format(_modDef4412.y2YmJv, obj2) };
-  let Text = animatedStyles(5747).Text;
+  let obj = { animated: tmp2, variant: "body-xs/medium", color: str, style: items, children: intl.format(_modDef4412.y2YmJv, obj2) };
+  let Text = animatedStyles(5761).Text;
   let headerSecondary;
   const tmp4 = animatedStyles;
   if (animatedStyles != null) {
@@ -65,7 +65,7 @@ export default function HexagonCampaignThemeLegal(animatedStyles) {
     premiumEndDate,
     learnMoreHook(children, arg1) {
       let tmp5;
-      const obj = { animated, variant: "text-xs/medium", color: "text-link", style: tmp5, accessibilityRole: "link", onPress: openHexagonCampaignLearnMore.openHexagonCampaignLearnMore, children };
+      const obj = { animated, variant: "body-xs/medium", color: "text-link", style: tmp5, accessibilityRole: "link", onPress: openHexagonCampaignLearnMore.openHexagonCampaignLearnMore, children };
       const Text = Text_Text.Text;
       tmp5 = undefined;
       const tmp = metroRequire;

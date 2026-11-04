@@ -1,13 +1,13 @@
-// Module ID: 15038
-// Function ID: 15039
+// Module ID: 15118
+// Function ID: 15119
 // Name: UserProfileNote
-// Dependencies: [19, 21, 8885, 15039, 7101, 5747, 1113, 5381, 15041, 10976, 2]
+// Dependencies: [19, 21, 8902, 15119, 7116, 5761, 1113, 5382, 15121, 11024, 2]
 // Exports: default
 
-// Module 15038 (UserProfileNote)
+// Module 15118 (UserProfileNote)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import openEditNoteModalDefault from "openEditNoteModal" /* 15041 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import openEditNoteModalDefault from "openEditNoteModal" /* 15121 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ export default function UserProfileNote(userId) {
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const note = onBack(trackUserProfileAction[3])(userId).note;
   const TableRow = tmp(tmp2[4]).TableRow;
-  ({ variant: "text-sm/semibold", color: "text-default", children: intl.string(userId(trackUserProfileAction[6]).t["mQKv+v"]) });
+  ({ variant: "body-sm/semibold", color: "text-default", children: intl.string(userId(trackUserProfileAction[6]).t["mQKv+v"]) });
   const Text = tmp(tmp2[5]).Text;
   intl = tmp(tmp2[6]).intl;
   let tmp5;

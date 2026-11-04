@@ -1,21 +1,21 @@
-// Module ID: 14578
-// Function ID: 14579
+// Module ID: 14658
+// Function ID: 14659
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 5141, 575, 1627, 6864, 7843, 7471, 8096, 1113, 7180, 5747, 2763, 14579, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1627, 6879, 7859, 7487, 8112, 1113, 7195, 5761, 2763, 14659, 2]
 // Exports: default
 
-// Module 14578 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 14658 (CollectiblesShopGiftBadgePostPurchaseModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef2763 from "module_2763" /* 2763 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7843 */;
-import ModalScreen2 from "ModalScreen" /* 8096 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 14579 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
+import ModalScreen2 from "ModalScreen" /* 8112 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 14659 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -67,7 +67,7 @@ export default function CollectiblesShopGiftBadgePostPurchaseModal(giftBadgeProg
   intl = intl3.intl;
   obj4 = { size: "md", style: tmp.closeIcon };
   items = [metroRequire(React3, obj3), ];
-  const obj5 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2763.roVAey) };
+  const obj5 = { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(_modDef2763.roVAey) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = metroRequire(Text, obj5);

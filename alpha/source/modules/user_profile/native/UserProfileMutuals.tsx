@@ -1,15 +1,15 @@
-// Module ID: 15148
-// Function ID: 15149
+// Module ID: 15228
+// Function ID: 15229
 // Name: UserProfileMutuals
-// Dependencies: [19, 17, 8878, 7497, 21, 5141, 8885, 14311, 14969, 5381, 14317, 2123, 8874, 7646, 7106, 15014, 1187, 5747, 14318, 14325, 7083, 14312, 2]
+// Dependencies: [19, 17, 8895, 7513, 21, 5141, 8902, 14398, 15049, 5382, 14404, 2123, 8891, 7662, 7121, 15094, 1187, 5761, 14405, 14412, 7098, 14399, 2]
 // Exports: default
 
-// Module 15148 (UserProfileMutuals)
+// Module 15228 (UserProfileMutuals)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Constants from "Constants" /* 7497 */;
-import Constants2 from "Constants" /* 8878 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Constants from "Constants" /* 7513 */;
+import Constants2 from "Constants" /* 8895 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -23,7 +23,7 @@ const View = react_native.View;
 const UserProfileSections = Constants2.UserProfileSections;
 const DIVIDER_DOT = Constants.DIVIDER_DOT;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let c8 = "text-sm/medium";
+let c8 = "body-sm/medium";
 let c9 = "text-default";
 let closure_10 = createStyles.createStyles({ container: { flexDirection: "row", columnGap: 4, flexWrap: "wrap" }, section: { flexDirection: "row", alignItems: "center", columnGap: 6 } });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileMutuals.tsx");
@@ -58,12 +58,12 @@ export default function UserProfileMutuals(user) {
   c3 = undefined;
   let tmp = closure_10();
   let tmp2 = user;
-  let obj = user(8885);
+  let obj = user(8902);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c2, trackUserProfileAction: c3 } = userProfileAnalyticsContext);
-  ({ mutualFriends, mutualGuilds } = guildId(14311)(user));
-  guildId(14311)(user);
-  if (guildId(14969)(user)) {
+  ({ mutualFriends, mutualGuilds } = guildId(14398)(user));
+  guildId(14398)(user);
+  if (guildId(15049)(user)) {
     if (!(null != mutualFriends && mutualFriends.length > 0)) {
       if (!(null != mutualGuilds && mutualGuilds.length > 0)) {
         return null;
@@ -83,11 +83,11 @@ export default function UserProfileMutuals(user) {
               _undefined2({ action: "PRESS_SECTION", section: MUTUAL_FRIENDS });
               const obj = ActionSheetActionCreatorsDefault;
               const obj2 = { user, section: MUTUAL_FRIENDS, guildId, onPressMutualFriend, onPressMutualGuild };
-              obj.openLazy(asyncRequire(14317, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
+              obj.openLazy(asyncRequire(14404, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
             },
         children: items
       };
-      const PressableOpacity = tmp2(7106).PressableOpacity;
+      const PressableOpacity = tmp2(7121).PressableOpacity;
       const obj4 = {
         size: tmp2(1187).AvatarSizes.SIZE_16,
         totalCount: mapped.length,
@@ -98,10 +98,10 @@ export default function UserProfileMutuals(user) {
               return closure_1_6(Avatar, obj, user.id);
             })
       };
-      const AvatarPile = tmp2(15014).AvatarPile;
+      const AvatarPile = tmp2(15094).AvatarPile;
       items = [closure_6(AvatarPile, obj4), ];
-      const obj5 = { variant, color, children: guildId(14318)(mutualFriends.length) };
-      const Text = tmp2(5747).Text;
+      const obj5 = { variant, color, children: guildId(14405)(mutualFriends.length) };
+      const Text = tmp2(5761).Text;
       items[1] = closure_6(Text, obj5);
       tmp9Result = tmp9(PressableOpacity, obj3);
     }
@@ -109,7 +109,7 @@ export default function UserProfileMutuals(user) {
     let tmp15 = tmp7 && tmp8;
     if (tmp15) {
       const obj6 = { variant, color, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DIVIDER_DOT };
-      tmp15 = closure_6(tmp2(5747).Text, obj6);
+      tmp15 = closure_6(tmp2(5761).Text, obj6);
     }
     items1[1] = tmp15;
     let tmp9Result2 = null;
@@ -125,14 +125,14 @@ export default function UserProfileMutuals(user) {
               _undefined2({ action: "PRESS_SECTION", section: MUTUAL_GUILDS });
               let obj = ActionSheetActionCreatorsDefault;
               let obj2 = { user, section: MUTUAL_GUILDS, guildId, onPressMutualFriend, onPressMutualGuild };
-              obj.openLazy(asyncRequire(14317, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
+              obj.openLazy(asyncRequire(14404, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
             },
         children: items2
       };
-      const PressableOpacity2 = tmp2(7106).PressableOpacity;
+      const PressableOpacity2 = tmp2(7121).PressableOpacity;
       if (!(null != mutualFriends && mutualFriends.length > 0)) {
         const obj8 = {
-          size: tmp2(7083).GuildIconSizes.XXSMALL,
+          size: tmp2(7098).GuildIconSizes.XXSMALL,
           totalCount: mapped1.length,
           names: mapped1.map((name) => name.name),
           children: mapped1.map((guild) => {
@@ -141,12 +141,12 @@ export default function UserProfileMutuals(user) {
                   return closure_1_6(tmp, obj, guild.id);
                 })
         };
-        const GuildIconPile = tmp2(14325).GuildIconPile;
+        const GuildIconPile = tmp2(14412).GuildIconPile;
         tmp21 = closure_6(GuildIconPile, obj8);
       }
       items2 = [tmp21, ];
-      const obj9 = { variant, color, children: guildId(14312)(mutualGuilds.length) };
-      const Text2 = tmp2(5747).Text;
+      const obj9 = { variant, color, children: guildId(14399)(mutualGuilds.length) };
+      const Text2 = tmp2(5761).Text;
       items2[1] = closure_6(Text2, obj9);
       tmp9Result2 = tmp9(PressableOpacity2, obj7);
     }

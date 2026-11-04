@@ -1,19 +1,19 @@
-// Module ID: 17809
-// Function ID: 17810
+// Module ID: 17905
+// Function ID: 17906
 // Name: DevToolsBountyQaScreen
-// Dependencies: [5, 32, 19, 17, 7967, 21, 5141, 575, 5832, 1627, 504, 6904, 7968, 14822, 9814, 5747, 7184, 7187, 7186, 7101, 12313, 17227, 7263, 6908, 2]
+// Dependencies: [5, 32, 19, 17, 7983, 21, 5141, 575, 5846, 1627, 504, 6919, 7984, 14902, 9832, 5761, 7199, 7202, 7201, 7116, 12378, 17319, 7239, 6923, 2]
 // Exports: default
 
-// Module 17809 (DevToolsBountyQaScreen)
+// Module 17905 (DevToolsBountyQaScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import AdCreativeType from "AdCreativeType" /* 6908 */;
-import QuestActionCreators from "QuestActionCreators" /* 9814 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import AdCreativeType from "AdCreativeType" /* 6923 */;
+import QuestActionCreators from "QuestActionCreators" /* 9832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7967 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7983 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -197,7 +197,7 @@ export default function DevToolsBountyQaScreen() {
     const _HermesInternal2 = HermesInternal;
     str4 = "Last dock bounty still in memory: " + stateFromStores + ".";
   }
-  items5 = [tmp14(Text, { variant: "text-sm/medium", color: "text-muted", children: str4 }), , ];
+  items5 = [tmp14(Text, { variant: "body-sm/medium", color: "text-muted", children: str4 }), , ];
   let obj4 = {
     title: "Reset scope",
     description: "Used by Reset and re-serve. Refresh Organic Serve ignores this.",

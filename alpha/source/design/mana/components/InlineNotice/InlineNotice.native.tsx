@@ -1,20 +1,20 @@
-// Module ID: 8149
-// Function ID: 8150
+// Module ID: 8165
+// Function ID: 8166
 // Name: InlineNotice
-// Dependencies: [19, 17, 21, 7212, 575, 2204, 8150, 5855, 7460, 5748, 5141, 5747, 5762, 1113, 5211, 1357, 5150, 5754, 8152, 7180, 2]
+// Dependencies: [19, 17, 21, 7227, 575, 2204, 8166, 5869, 7476, 5762, 5141, 5761, 5776, 1113, 5210, 1357, 5150, 5768, 8168, 7195, 2]
 // Exports: InlineNotice
 
-// Module 8149 (InlineNotice)
+// Module 8165 (InlineNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import _modDef2204 from "module_2204" /* 2204 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TextVariants from "TextVariants" /* 5748 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5855 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7212 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7460 */;
-import WarningIcon from "WarningIcon" /* 8150 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TextVariants from "TextVariants" /* 5762 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5869 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7227 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7476 */;
+import WarningIcon from "WarningIcon" /* 8166 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -43,7 +43,7 @@ function NoticeMessageList(color) {
   const tmp = closure_10();
   dependencyMap = tmp;
   obj = { style: tmp.stack, children: items1 };
-  items1 = [closure_5(variant(5747).Text, { variant, color, children: intro }), ];
+  items1 = [closure_5(variant(5761).Text, { variant, color, children: intro }), ];
   let obj2 = {
     accessibilityRole: "list",
     style: tmp.stack,
@@ -64,10 +64,10 @@ function NoticeMessageList(color) {
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let obj = { critical: obj2, warning: obj3, info: obj4, success: obj5 };
-obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2204.uKMqrF };
-obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2204["7vL/d/"] };
-obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2204.BReS7U };
-obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2204["1MXXPf"] };
+obj2 = { Icon: CircleErrorIcon.CircleErrorIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, background: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL, border: nativeDefault.colors.INLINENOTICE_BORDER_CRITICAL, typeLabel: _modDef2204.uKMqrF };
+obj3 = { Icon: WarningIcon.WarningIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, background: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING, border: nativeDefault.colors.INLINENOTICE_BORDER_WARNING, typeLabel: _modDef2204["7vL/d/"] };
+obj4 = { Icon: CircleInformationIcon.CircleInformationIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_INFO, background: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO, border: nativeDefault.colors.INLINENOTICE_BORDER_INFO, typeLabel: _modDef2204.BReS7U };
+obj5 = { Icon: CircleCheckIcon.CircleCheckIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE, background: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_POSITIVE, border: nativeDefault.colors.INLINENOTICE_BORDER_POSITIVE, typeLabel: _modDef2204["1MXXPf"] };
 const TextVariantsFlat = TextVariants.TextVariantsFlat;
 let found = TextVariantsFlat.find((name) => "body-sm/normal" === name.name);
 let lineHeight;

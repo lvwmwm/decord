@@ -1,19 +1,19 @@
-// Module ID: 11888
-// Function ID: 11889
+// Module ID: 11947
+// Function ID: 11948
 // Name: PopoutMenu
-// Dependencies: [32, 19, 17, 21, 5141, 575, 7429, 1187, 8301, 1493, 1627, 12, 1652, 5377, 1705, 5385, 5426, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 7445, 1187, 8317, 1493, 1627, 12, 1652, 5378, 1705, 5386, 5428, 2]
 // Exports: default
 
-// Module 11888 (PopoutMenu)
+// Module 11947 (PopoutMenu)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import Patterns from "Patterns" /* 5385 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
-import FormRowDefault from "FormRow" /* 7429 */;
-import _mod8301 from "module_8301" /* 8301 */;
+import Patterns from "Patterns" /* 5386 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
+import FormRowDefault from "FormRow" /* 7445 */;
+import _mod8317 from "module_8317" /* 8317 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -48,7 +48,7 @@ function PopoutMenuRow(onClose) {
     const obj = { source: icon };
     tmp3Result = tmp3(native.Icon, obj);
   }
-  const obj2 = { leading: tmp3Result, label: tmp3(_mod8301.FormLabel, obj3), style: tmp.popoutMenuRow, onPress: callback };
+  const obj2 = { leading: tmp3Result, label: tmp3(_mod8317.FormLabel, obj3), style: tmp.popoutMenuRow, onPress: callback };
   obj3 = { style: tmp.popoutMenuRowLabel, text };
   return tmp3(tmp5, obj2);
 }

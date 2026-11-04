@@ -1,17 +1,17 @@
-// Module ID: 9885
-// Function ID: 9886
-// Dependencies: [19, 17, 21, 5141, 575, 7412, 5837, 9886, 5747, 1113, 5754, 6864, 2]
+// Module ID: 9903
+// Function ID: 9904
+// Dependencies: [19, 17, 21, 5141, 575, 7428, 5851, 9904, 5761, 1113, 5768, 6879, 2]
 // Exports: default
 
-// Module 9885
+// Module 9903
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9886 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9904 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -44,7 +44,7 @@ export default function ErrorResult(error) {
   const obj3 = { source: AssetRegistryDefault, style: tmp.image };
   const tmp7 = FastImageDefault;
   items = [React3(tmp7, obj3), ];
-  const obj4 = { style: tmp.text, variant: "text-md/medium", children: error };
+  const obj4 = { style: tmp.text, variant: "body-md/medium", children: error };
   const Text = Text_Text.Text;
   const tmp5 = View;
   if (error == null) {
@@ -63,7 +63,7 @@ export default function ErrorResult(error) {
           return arr.pop();
         }
     };
-    const Button = tmp3(5754).Button;
+    const Button = tmp3(5768).Button;
     intl2 = tmp3(1113).intl;
     tmp6Result = tmp6(Button, obj5);
   }

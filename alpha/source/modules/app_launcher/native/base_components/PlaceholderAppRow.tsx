@@ -1,15 +1,15 @@
-// Module ID: 12555
-// Function ID: 12556
+// Module ID: 12636
+// Function ID: 12637
 // Name: PlaceholderAppRow
-// Dependencies: [19, 17, 21, 5141, 575, 12518, 7101, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 12599, 7116, 2]
 // Exports: default
 
-// Module 12555 (PlaceholderAppRow)
+// Module 12636 (PlaceholderAppRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import react2 from "react" /* 12518 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import react2 from "react" /* 12599 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

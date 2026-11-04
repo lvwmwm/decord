@@ -1,19 +1,19 @@
-// Module ID: 6554
-// Function ID: 6555
+// Module ID: 6569
+// Function ID: 6570
 // Name: CheckpointCustomizationUtils
-// Dependencies: [6186, 3219, 1113, 6232, 6555, 6231, 6187, 6233, 6230, 2]
+// Dependencies: [6201, 3219, 1113, 6247, 6570, 6246, 6202, 6248, 6245, 2]
 // Exports: getAssetAccessibilityLabel, getChamferedRectPoints, getCustomizationOptionForCharacterStage, getCustomizationOptionName, getIsTraitRarityVisible, getNitroLockedMessage, getTraitOptionShapePoints, isCheckpointRouteBlocked, isNoneOption, makeTraitRaritySorter
 
-// Module 6554 (CheckpointCustomizationUtils)
+// Module 6569 (CheckpointCustomizationUtils)
 import intl7 from "intl" /* 1113 */;
 import _modDef3219 from "module_3219" /* 3219 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6187 */;
-import CheckpointTraitConfig from "CheckpointTraitConfig" /* 6230 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6231 */;
-import CheckpointTrait from "CheckpointTrait" /* 6232 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6233 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6555 */;
-import CheckpointConstants from "CheckpointConstants" /* 6186 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6202 */;
+import CheckpointTraitConfig from "CheckpointTraitConfig" /* 6245 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6246 */;
+import CheckpointTrait from "CheckpointTrait" /* 6247 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6248 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6570 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -36,13 +36,13 @@ let WEARABLE;
 let WEARABLE2;
 let c3;
 let closure_4;
-const f89171 = (item) => {
+const f89538 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
   return "" + tmp + "," + tmp2;
 };
-function getAssetDescription(asset) {
+function getPlaintextAssetDescription(asset) {
   let commonMessage;
   let rarity;
   let topMessage;
@@ -179,7 +179,7 @@ export function isNoneOption(traitOption) {
   const obj = CheckpointCharacterTraits;
   return obj.isTraitNoneOptionId(traitOption.trait, traitOption.optionId);
 }
-export { getAssetDescription };
+export { getPlaintextAssetDescription };
 export function getAssetAccessibilityLabel(getName, arg1) {
   const items = [getName.getName()];
   if (getName.status === CheckpointCharacterAssets.CheckpointTraitOptionStatus.LOCKED) {
@@ -198,7 +198,7 @@ export function getAssetAccessibilityLabel(getName, arg1) {
       const intl3 = tmp(1113).intl;
       push3(intl3.string(_false[getName.rarity]));
     }
-    const tmp12 = getAssetDescription(getName);
+    const tmp12 = getPlaintextAssetDescription(getName);
     if (null != tmp12) {
       items.push(tmp12);
     }
@@ -243,7 +243,7 @@ export function getChamferedRectPoints(width, height, arg2) {
   items1[3] = items4;
   const items5 = [num, height - num];
   items1[4] = items5;
-  const mapped = items1.map(f89171);
+  const mapped = items1.map(f89538);
   return mapped.join(" ");
 }
 export const TRAIT_OPTION_STROKE_WIDTH = 2;
@@ -259,6 +259,6 @@ export function getTraitOptionShapePoints(width, height) {
   items1[3] = items4;
   const items5 = [1, height - 1];
   items1[4] = items5;
-  const mapped = items1.map(f89171);
+  const mapped = items1.map(f89538);
   return mapped.join(" ");
 }

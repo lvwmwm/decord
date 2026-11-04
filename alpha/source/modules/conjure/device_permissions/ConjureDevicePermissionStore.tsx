@@ -1,9 +1,9 @@
-// Module ID: 11061
-// Function ID: 11062
+// Module ID: 11110
+// Function ID: 11111
 // Name: ConjureDevicePermissionStore
 // Dependencies: [502, 504, 572, 2]
 
-// Module 11061 (ConjureDevicePermissionStore)
+// Module 11110 (ConjureDevicePermissionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

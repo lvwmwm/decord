@@ -1,9 +1,9 @@
-// Module ID: 18570
-// Function ID: 18571
+// Module ID: 18665
+// Function ID: 18666
 // Name: WaterwheelsInterestPickerModal
-// Dependencies: [19, 17, 1072, 21, 5141, 5322, 18571, 18574, 6864, 18575, 1113, 2537, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 5323, 18666, 18669, 6879, 18670, 1113, 2537, 2]
 
-// Module 18570 (WaterwheelsInterestPickerModal)
+// Module 18665 (WaterwheelsInterestPickerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -22,7 +22,7 @@ class WaterwheelsInterestPickerModal {
     let intl2;
     let onSkip;
     const tmp = closure_7();
-    const tmp4 = onSkip(18571)("WaterwheelsInterestPickerModal");
+    const tmp4 = onSkip(18666)("WaterwheelsInterestPickerModal");
     _require = tmp4;
     onSkip = react.useCallback((gameIds) => {
       const obj = closure_0(dependencyMap[7]);
@@ -47,7 +47,7 @@ class WaterwheelsInterestPickerModal {
     let tmp7 = null;
     if (null != tmp4) {
       let obj2 = { catalog: tmp4, title: intl.string(tmp2(2537)["5MUKTF"]), subtitle: intl2.string(tmp2(2537)["z/57xV"]), minSelection: 1, onContinue: onSkip, onSkip };
-      onSkip(18575);
+      onSkip(18670);
       intl = require("intl").intl;
       intl2 = require("intl").intl;
       tmp7 = <View style={tmp.screen}>{null}</View>;

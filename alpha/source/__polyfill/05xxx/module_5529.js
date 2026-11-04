@@ -1,102 +1,105 @@
 // Module ID: 5529
 // Function ID: 5530
-// Dependencies: [5, 32, 19, 17]
-// Exports: useIsScreenReaderEnabled
+// Dependencies: [32, 5472, 5499, 5516, 5490]
+// Exports: usePanGesture
 
 // Module 5529
-import react_native from "react-native" /* 17 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import reanimatedWrapper from "reanimatedWrapper" /* 5472 */;
+import ComposedGestureName from "ComposedGestureName" /* 5490 */;
+import _mod5499 from "module_5499" /* 5499 */;
+import _mod5516 from "module_5516" /* 5516 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
 
-let c4, c5;
-
-let c2;
-let c3;
-({ useEffect: c2, useState: c3 } = react);
-const AccessibilityInfo = react_native.AccessibilityInfo;
-
-export function useIsScreenReaderEnabled() {
-  let closure_0;
-  let first;
-  [first, closure_0] = closure_3(false);
-  const tmp3 = closure_2(() => {
-    function checkStatus() {
-      return closure_0(...arguments);
-    }
-    closure_0(function*(arg0, value) {
-      if (c5 === 2) {
-        c5 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        let c3;
-        try {
-          c5 = 2;
-          if (0 === c4) {
-            if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c5 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              let closure_1 = tmp;
-              closure_0 = undefined;
-              c3 = 1;
-              c4 = 2;
-              c5 = 1;
-              const obj4 = { value: screenReaderEnabled.isScreenReaderEnabled(), done: false };
-              return obj4;
-            }
-          } else {
-            if (1 === c4) {
-              c3 = 0;
-              const _console = console;
-              console.warn("Could not read accessibility info: defaulting to false");
-            } else if (arg0 === 1) {
-              c5 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
-              const obj = { value, done: true };
-              return obj;
-            } else {
-              closure_0 = value;
-              closure_0(closure_0);
-              c3 = 0;
-            }
-            c5 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } catch (tmp13) {
-          let closure_2 = tmp13;
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp13;
-          } else {
-            c4 = 1;
-          }
-        }
+let tmp3;
+let tmp4;
+function transformOffsetProp(iter, activeOffsetX) {
+  let tmp10;
+  let tmp9;
+  if (undefined !== iter[activeOffsetX]) {
+    const _Array = Array;
+    if (Array.isArray(iter[activeOffsetX])) {
+      const _HermesInternal4 = HermesInternal;
+      iter["" + activeOffsetX + "Start"] = iter[activeOffsetX][0];
+      const _HermesInternal5 = HermesInternal;
+      iter["" + activeOffsetX + "End"] = iter[activeOffsetX][1];
+    } else {
+      const Reanimated = reanimatedWrapper.Reanimated;
+      let isSharedValueResult;
+      const tmp3 = require;
+      if (Reanimated != null) {
+        isSharedValueResult = Reanimated.isSharedValue(iter);
       }
-    });
-    const tmp = checkStatus();
-    closure_0 = AccessibilityInfo.addEventListener("screenReaderChanged", (event) => {
-      closure_0(event);
-    });
-    return () => {
-      closure_0.remove();
-    };
-  }, []);
-  return first;
+      if (isSharedValueResult) {
+        const tmp3Result = tmp3(5499);
+        const _HermesInternal2 = HermesInternal;
+        [tmp9, tmp10] = tmp3Result.splitSingleOffset(iter[activeOffsetX].value);
+        iter["" + activeOffsetX + "Start"] = tmp9;
+        const _HermesInternal3 = HermesInternal;
+        iter["" + activeOffsetX + "End"] = tmp10;
+        _slicedToArray(tmp3Result.splitSingleOffset(iter[activeOffsetX].value), 2);
+      } else {
+        let str = "End";
+        if (iter[activeOffsetX] < 0) {
+          str = "Start";
+        }
+        const _HermesInternal = HermesInternal;
+        iter["" + activeOffsetX + str] = iter[activeOffsetX];
+      }
+    }
+    delete tmp[tmp2];
+  }
+}
+function transformPanProps(iter) {
+  transformOffsetProp(iter, "activeOffsetY");
+  transformOffsetProp(iter, "failOffsetX");
+  transformOffsetProp(iter, "failOffsetY");
+  transformOffsetProp(iter, "activeOffsetX");
+  const obj = _mod5499;
+  iter.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  iter.fillInDefaultValues = fillInDefaultValues;
+  return iter;
+}
+const items = [["minDistance", "minDist"], ["averageTouches", "avgTouches"]];
+const map = new Map(items);
+const items1 = [{ code: "(function diffCalculator_Pnpm_usePanGestureTs1(current,previous){return{changeX:previous?current.translationX-previous.translationX:current.translationX,changeY:previous?current.translationY-previous.translationY:current.translationY};})" }];
+[tmp3] = items1;
+function diffCalculator(translationX, translationX2) {
+  let diff;
+  let diff1;
+  translationX = translationX.translationX;
+  if (translationX2) {
+    diff = translationX - translationX2.translationX;
+  } else {
+    diff = translationX;
+  }
+  const translationY = translationX.translationY;
+  const obj = { changeX: diff, changeY: diff1 };
+  if (translationX2) {
+    diff1 = translationY - translationX2.translationY;
+  } else {
+    diff1 = translationY;
+  }
+  return obj;
+}
+diffCalculator.__workletHash = 15159965948275;
+diffCalculator.__initData = tmp3;
+const items2 = [{ code: "(function fillInDefaultValues_Pnpm_usePanGestureTs2(event){event.changeX=0;event.changeY=0;})" }];
+[tmp4] = items2;
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__workletHash = 1036941275160;
+fillInDefaultValues.__initData = tmp4;
+let closure_8 = {};
+
+export function usePanGesture(gestureHandlerProps) {
+  let tmp = gestureHandlerProps;
+  if (gestureHandlerProps === undefined) {
+    tmp = closure_8;
+  }
+  const obj = _mod5499;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPanProps);
+  const obj2 = _mod5516;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pan, clonedAndRemappedConfig);
 }

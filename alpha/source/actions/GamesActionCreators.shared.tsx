@@ -1,22 +1,22 @@
-// Module ID: 11833
-// Function ID: 11834
+// Module ID: 11892
+// Function ID: 11893
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4989, 6963, 4990, 5881, 1072, 6967, 7607, 11826, 11832, 11834, 5062, 13322, 2153, 5795, 11866, 11865, 11065, 6971, 13325, 13326, 7609, 2]
+// Dependencies: [5, 4989, 6978, 4990, 5895, 1072, 6982, 7623, 11883, 11889, 11893, 5062, 13405, 2153, 5809, 11925, 11924, 11114, 6986, 13408, 13409, 7625, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 11833 (tryJoinAsFrame)
+// Module 11892 (tryJoinAsFrame)
 import Constants from "Constants" /* 1072 */;
-import FramesConstants from "FramesConstants" /* 6967 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11826 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11832 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11834 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 13326 */;
+import FramesConstants from "FramesConstants" /* 6982 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11883 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11889 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11893 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 13409 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6963 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
 import size from "module_2" /* 2 */;
 
 let application, c8, c9, channelId2, customId, embeddedActivitiesForChannel, inviterUserId, referrerId, source, user;

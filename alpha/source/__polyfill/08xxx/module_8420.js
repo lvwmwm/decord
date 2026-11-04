@@ -1,62 +1,79 @@
 // Module ID: 8420
 // Function ID: 8421
-// Dependencies: [8408]
+// Dependencies: [41, 42]
 
 // Module 8420
-import _modDef8408 from "module_8408" /* 8408 */;
+import _createClassDefault from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-const typeSizes = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 7: 1, 9: 4, 10: 8, 13: 4 };
-const obj2 = { BYTE: 1, ASCII: 2, SHORT: 3, LONG: 4, RATIONAL: 5, UNDEFINED: 7, SLONG: 9, SRATIONAL: 10, IFD: 13 };
-const obj3 = {
-  getAsciiValue(items) {
-    return items.map((item) => String.fromCharCode(item));
-  },
-  getByteAt(getUint8, sum) {
-    return getUint8.getUint8(sum);
-  },
-  getAsciiAt(getUint8, sum) {
-    return getUint8.getUint8(sum);
-  },
-  getShortAt(dataView, sum, byteOrder) {
-    return dataView.getUint16(sum, byteOrder === _modDef8408.LITTLE_ENDIAN);
-  },
-  getLongAt(dataView, sum, byteOrder) {
-    return dataView.getUint32(sum, byteOrder === _modDef8408.LITTLE_ENDIAN);
-  },
-  getRationalAt(getUint32, sum, arg2) {
-    const items = [getUint32.getUint32(sum, arg2 === _modDef8408.LITTLE_ENDIAN), ];
-    sum = sum + 4;
-    items[1] = getUint32.getUint32(sum, arg2 === _modDef8408.LITTLE_ENDIAN);
-    return items;
-  },
-  getUndefinedAt(getUint8, sum) {
-    return getUint8.getUint8(sum);
-  },
-  getSlongAt(getInt32, sum, arg2) {
-    return getInt32.getInt32(sum, arg2 === _modDef8408.LITTLE_ENDIAN);
-  },
-  getSrationalAt(getInt32, sum, arg2) {
-    const items = [getInt32.getInt32(sum, arg2 === _modDef8408.LITTLE_ENDIAN), ];
-    sum = sum + 4;
-    items[1] = getInt32.getInt32(sum, arg2 === _modDef8408.LITTLE_ENDIAN);
-    return items;
-  },
-  getIfdPointerAt(getUint32, sum, arg2) {
-    return getUint32.getUint32(sum, arg2 === _modDef8408.LITTLE_ENDIAN);
-  },
-  typeSizes,
-  tagTypes: obj2,
-  getTypeSize(LONG) {
-    if (undefined === obj2[LONG]) {
+class DataView {
+  constructor(buffer) {
+    const self = this;
+    _classCallCheck(this, DataView);
+    const tmp2 = typeof buffer !== "object" || undefined === buffer.length || undefined === buffer.readUInt8 || undefined === buffer.readUInt16LE || undefined === buffer.readUInt16BE || undefined === buffer.readUInt32LE || undefined === buffer.readUInt32BE || undefined === buffer.readInt32LE || undefined === buffer.readInt32BE;
+    if (tmp2) {
       const _Error = Error;
-      const self = this;
       const self2 = this;
-      const error = new Error("No such type found.");
+      const self3 = this;
+      const error = new Error("DataView: Passed buffer type is unsupported.");
       throw error;
     } else {
-      return obj[tmp[LONG]];
+      self.buffer = buffer;
+      self.byteLength = self.buffer.length;
     }
   }
+}
+const entry = {
+  key: "getUint8",
+  value: function getUint8(sum) {
+    const buffer = this.buffer;
+    return buffer.readUInt8(sum);
+  }
 };
+const items = [
+  entry,
+  {
+    key: "getUint16",
+    value: function getUint16(c5, arg1) {
+      let uInt16LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        uInt16LE = buffer.readUInt16LE(c5);
+      } else {
+        uInt16LE = buffer.readUInt16BE(c5);
+      }
+      return uInt16LE;
+    }
+  },
+  {
+    key: "getUint32",
+    value: function getUint32(sum, arg1) {
+      let uInt32LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        uInt32LE = buffer.readUInt32LE(sum);
+      } else {
+        uInt32LE = buffer.readUInt32BE(sum);
+      }
+      return uInt32LE;
+    }
+  },
+  {
+    key: "getInt32",
+    value: function getInt32(sum, arg1) {
+      let int32LE;
+      const buffer = this.buffer;
+      const tmp = arg1;
+      if (tmp) {
+        int32LE = buffer.readInt32LE(sum);
+      } else {
+        int32LE = buffer.readInt32BE(sum);
+      }
+      return int32LE;
+    }
+  }
+];
 
-export default obj3;
+export default _createClassDefault(DataView, items);

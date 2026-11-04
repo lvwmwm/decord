@@ -1,18 +1,18 @@
-// Module ID: 12176
-// Function ID: 12177
+// Module ID: 12235
+// Function ID: 12236
 // Name: StreamPreview
-// Dependencies: [19, 17, 1192, 21, 5141, 575, 5207, 5837, 5148, 12177, 12178, 1113, 7106, 12179, 504, 2]
+// Dependencies: [19, 17, 1192, 21, 5141, 575, 5207, 5851, 5148, 12236, 12237, 1113, 7121, 12238, 504, 2]
 // Exports: default
 
-// Module 12176 (StreamPreview)
+// Module 12235 (StreamPreview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import shared from "shared" /* 5148 */;
 import native from "native" /* 5207 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import Pressables from "Pressables" /* 7106 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12179 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import Pressables from "Pressables" /* 7121 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12238 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
@@ -50,9 +50,9 @@ class DefaultFallback extends PureComponent {
     const obj3 = shared;
     const tmp3 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp4Result = tmp4(12177);
+      tmp4Result = tmp4(12236);
     } else {
-      tmp4Result = tmp4(12178);
+      tmp4Result = tmp4(12237);
     }
     return hasOwnProperty(tmp3, obj);
   }

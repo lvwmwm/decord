@@ -1,17 +1,17 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 12351
+// Function ID: 12352
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 5071, 5083, 5196, 1385, 6964, 504, 7543, 12289, 5772, 6161, 2]
+// Dependencies: [19, 5071, 5083, 5196, 1385, 6979, 504, 7559, 12352, 5786, 6176, 2]
 // Exports: conjureSettingPickedIds, default, useConjureSettingsGuildId, withPickCap, withSavedPicks
 
-// Module 12288 (useConjureSettingPickerOptions)
-import ConjureUtils from "ConjureUtils" /* 7543 */;
+// Module 12351 (useConjureSettingPickerOptions)
+import ConjureUtils from "ConjureUtils" /* 7559 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 5071 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import StreamerModeStore from "StreamerModeStore" /* 5196 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,8 +47,8 @@ export default function useConjureSettingPickerOptions(arg0, type) {
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(12289).useConjureGuildMemberUsers;
-  tmp(12289);
+  const useConjureGuildMemberUsers = tmp(12352).useConjureGuildMemberUsers;
+  tmp(12352);
   if ("user" === type.type) {
     tmp8 = arg0;
   }
@@ -150,17 +150,16 @@ export function withSavedPicks(arr, value, arg2) {
   }
   return items3;
 }
-export function withPickCap(arr, arg1) {
+export function withPickCap(items1, first1) {
   let mapped;
-  let closure_0 = arg1;
-  if (arg1.length < 25) {
+  if (first1.length < 25) {
     const items = [];
-    HermesBuiltin.arraySpread(items, arr, 0);
+    HermesBuiltin.arraySpread(items, items1, 0);
     mapped = items;
   } else {
-    mapped = arr.map((id) => {
+    mapped = items1.map((id) => {
       let tmp = id;
-      if (!closure_0.includes(id.id)) {
+      if (!first1.includes(id.id)) {
         const obj = { disabled: true };
         const merged = Object.assign(id);
         tmp = obj;

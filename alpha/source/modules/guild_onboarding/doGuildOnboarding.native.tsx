@@ -1,23 +1,23 @@
-// Module ID: 7383
-// Function ID: 7384
+// Module ID: 7399
+// Function ID: 7400
 // Name: doGuildOnboarding
-// Dependencies: [32, 5, 17, 5172, 7384, 7385, 1072, 7386, 5381, 6864, 7022, 7387, 1411, 2021, 2022, 7391, 7392, 7393, 7410, 2123, 1099, 2]
+// Dependencies: [32, 5, 17, 5172, 7400, 7401, 1072, 7402, 5382, 6879, 7037, 7403, 1411, 2021, 2022, 7407, 7408, 7409, 7426, 2123, 1099, 2]
 // Exports: default, discardOnboardingPromise, isOnboardingActiveForGuild
 
-// Module 7383 (doGuildOnboarding)
+// Module 7399 (doGuildOnboarding)
 import react_native from "react-native" /* 17 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import react_nativeDefault from "react-native" /* 2021 */;
 import react_nativeDefault2 from "react-native" /* 2022 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7385 */;
-import _mod7386 from "module_7386" /* 7386 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7393 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7401 */;
+import _mod7402 from "module_7402" /* 7402 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7409 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7384 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7400 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let _require, c4;
 let c10;
 let c9;
 function getBaseAnimationData() {
-  return JSON.parse(JSON.stringify(_mod7386));
+  return JSON.parse(JSON.stringify(_mod7402));
 }
 let obj = function _doGuildOnboarding() {
   obj = _asyncToGenerator(async (arg0) => {
@@ -302,7 +302,7 @@ function openAndWaitForOnboarding(guildId) {
       landingAnimation: closure_13[guildId],
       isFirstOpen: true
     };
-    const pushLazyResult = obj.pushLazy(asyncRequire(7410, dependencyMap.paths), obj2, closure_8);
+    const pushLazyResult = obj.pushLazy(asyncRequire(7426, dependencyMap.paths), obj2, closure_8);
     pushLazyResult.then(() => {
       if (guildId.getGuildId() !== closure_1_0) {
         obj = closure_0(dependencyMap[20]);

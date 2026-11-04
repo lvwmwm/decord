@@ -1,20 +1,20 @@
-// Module ID: 18052
-// Function ID: 18053
+// Module ID: 18149
+// Function ID: 18150
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8556, 1072, 21, 5141, 575, 1113, 2190, 18053, 16862, 14382, 18058, 7596, 11677, 16860, 16731, 18059, 5747, 2]
+// Dependencies: [32, 19, 17, 8573, 1072, 21, 5141, 575, 1113, 2190, 18150, 16954, 14462, 18155, 7612, 11728, 16952, 16823, 18156, 5761, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 18052 (ContentAndSocialScreen)
+// Module 18149 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl16 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14382 */;
-import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18053 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18059 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14462 */;
+import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 18150 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 18156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/ContentAndSocialScreen.tsx");
 
 export default function ContentAndSocialSettings(route) {
-  const f113033 = () => {
+  const f113797 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -62,9 +62,9 @@ export default function ContentAndSocialSettings(route) {
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f113033), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f113797), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f113033), 2);
+  _slicedToArray(react.useState(f113797), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };
@@ -189,7 +189,7 @@ export function DiscordPermissionsPage() {
     tmp16 = undefined;
     if (allServersOptionSelected) {
       if (tmp9) {
-        tmp16 = React4(tmp3(16862).MessageRequestsNotice, {});
+        tmp16 = React4(tmp3(16954).MessageRequestsNotice, {});
       }
     }
     items8[4] = obj15;
@@ -263,11 +263,11 @@ export function ConnectedGamesPage() {
     tmp7 = React4(hasOwnProperty, obj2);
   } else if (0 === slayerSdkApplications.length) {
     let obj3 = { style: tmp.emptyContainer, children: items };
-    let obj4 = { variant: "text-md/semibold", color: "text-strong", children: intl.string(intl16.t["+0U77d"]) };
+    let obj4 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(intl16.t["+0U77d"]) };
     const Text = Text_Text.Text;
     intl = intl16.intl;
     items = [React4(Text, obj4), ];
-    let obj5 = { variant: "text-sm/normal", color: "text-muted", children: format(V8wClM, obj6) };
+    let obj5 = { variant: "body-sm/normal", color: "text-muted", children: format(V8wClM, obj6) };
     const Text2 = Text_Text.Text;
     let intl2 = intl16.intl;
     format = intl2.format;
@@ -278,7 +278,7 @@ export function ConnectedGamesPage() {
     tmp7 = unpackModuleId(metroRequire, obj3);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React4(tmp2(16731), obj);
+    tmp7 = React4(tmp2(16823), obj);
   }
   return tmp7;
 }

@@ -1,19 +1,19 @@
-// Module ID: 18859
-// Function ID: 18860
+// Module ID: 18962
+// Function ID: 18963
 // Name: SuggestedSearchRow
-// Dependencies: [19, 17, 14019, 21, 5141, 575, 14041, 14039, 14042, 14017, 14058, 5747, 18860, 7340, 2]
+// Dependencies: [19, 17, 14105, 21, 5141, 575, 14127, 14125, 14128, 14103, 14144, 5761, 18963, 7356, 2]
 
-// Module 18859 (SuggestedSearchRow)
+// Module 18962 (SuggestedSearchRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14017 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14039 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14041 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14042 */;
-import SuggestedSearchActionCreators from "SuggestedSearchActionCreators" /* 14058 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14103 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14125 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14127 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14128 */;
+import SuggestedSearchActionCreators from "SuggestedSearchActionCreators" /* 14144 */;
 import react from "react" /* 19 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 14019 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 14105 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -52,10 +52,10 @@ const memoResult = react.memo(function SuggestedSearchRow(suggestedSearch) {
     const obj5 = SuggestedSearchActionCreators;
     const result1 = obj5.advanceSuggestedSearches(smartSearchQuery, SearchSessionAnalyticsManagerDefault, hasOwnProperty);
   }, items);
-  let str2 = "redesign/channel-title/semibold";
+  let str2 = "heading-sm/semibold";
   const Text = suggestedSearch(suggestionSource[11]).Text;
   if ("default" === str) {
-    str2 = "text-md/normal";
+    str2 = "body-md/normal";
   }
   let compactLabel;
   const SearchListRow = tmp4(tmp5[12]).SearchListRow;

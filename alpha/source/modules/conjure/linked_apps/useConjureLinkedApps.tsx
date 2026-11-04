@@ -1,14 +1,14 @@
-// Module ID: 12293
-// Function ID: 12294
+// Module ID: 12358
+// Function ID: 12359
 // Name: useConjureLinkedApps
-// Dependencies: [5, 32, 19, 6964, 12294, 504, 1113, 3995, 2]
+// Dependencies: [5, 32, 19, 6979, 12359, 504, 1113, 3995, 2]
 // Exports: default
 
-// Module 12293 (useConjureLinkedApps)
+// Module 12358 (useConjureLinkedApps)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,24 +1,24 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 10064
+// Function ID: 10065
 // Name: ChatItem
-// Dependencies: [32, 19, 17, 5142, 1072, 8502, 21, 575, 10017, 1088, 10018, 7008, 10019, 5141, 1377, 8834, 5719, 671, 5710, 2]
+// Dependencies: [32, 19, 17, 5142, 1072, 8519, 21, 575, 10065, 1088, 10066, 7023, 10067, 5141, 1377, 8851, 5732, 671, 5723, 2]
 // Exports: default
 
-// Module 10016 (ChatItem)
+// Module 10064 (ChatItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
 import MessageTypes2 from "MessageTypes" /* 1088 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7008 */;
-import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 10017 */;
-import MessageViewNativeComponent from "MessageViewNativeComponent" /* 10018 */;
-import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 10019 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7023 */;
+import AutoModerationSystemMessageViewNativeComponent from "AutoModerationSystemMessageViewNativeComponent" /* 10065 */;
+import MessageViewNativeComponent from "MessageViewNativeComponent" /* 10066 */;
+import SystemMessageViewNativeComponent from "SystemMessageViewNativeComponent" /* 10067 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 5142 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8502 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8519 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ let c9;
 let metroImportAll;
 let tmp;
 let unpackModuleId;
-const RowGeneratorTypes = tmp(8834);
+const RowGeneratorTypes = tmp(8851);
 function DCDChatItem(message) {
   let tmp3Result;
   message = message.message;

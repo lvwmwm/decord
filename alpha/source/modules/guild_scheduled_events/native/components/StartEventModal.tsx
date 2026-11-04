@@ -1,20 +1,20 @@
-// Module ID: 9229
-// Function ID: 9230
+// Module ID: 9246
+// Function ID: 9247
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 4990, 5012, 4996, 9091, 21, 5141, 575, 6864, 7106, 1113, 1187, 7377, 5747, 9223, 504, 9148, 9230, 7412, 8078, 9233, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 4990, 5012, 4996, 9108, 21, 5141, 575, 6879, 7121, 1113, 1187, 7393, 5761, 9240, 504, 9165, 9247, 7428, 8094, 9250, 5768, 2]
 // Exports: default
 
-// Module 9229 (StartEventModal)
+// Module 9246 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import Pressables from "Pressables" /* 7106 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7377 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 9091 */;
-import GuildEventCardDefault from "GuildEventCard" /* 9223 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import Pressables from "Pressables" /* 7121 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7393 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 9108 */;
+import GuildEventCardDefault from "GuildEventCard" /* 9240 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -68,7 +68,7 @@ function StartEventHeader(event) {
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [authStore2(Text, obj2), ];
-  const obj3 = { style: tmp.headerTitle, variant: "text-md/medium", color: "text-default", children: event.name };
+  const obj3 = { style: tmp.headerTitle, variant: "body-md/medium", color: "text-default", children: event.name };
   items[1] = authStore2(Text_Text.Text, obj3);
   return map1(View, obj);
 }
@@ -240,7 +240,7 @@ export default function StartEventModal(event) {
   let tmp14Result2 = null;
   const obj8 = { style: tmp.buttonContainer, children: items7 };
   if (null != error) {
-    const obj9 = { variant: "text-sm/medium", color: "text-feedback-critical", children: error.getAnyErrorMessage() };
+    const obj9 = { variant: "body-sm/medium", color: "text-feedback-critical", children: error.getAnyErrorMessage() };
     const Text = tmp2(tmp3[16]).Text;
     tmp14Result2 = tmp14(Text, obj9);
   }

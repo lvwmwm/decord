@@ -1,11 +1,11 @@
-// Module ID: 11525
-// Function ID: 11526
+// Module ID: 11575
+// Function ID: 11576
 // Name: useSocialLayerStorefrontMobileAccountLinkingDisabled
-// Dependencies: [7530, 504, 2]
+// Dependencies: [7546, 504, 2]
 // Exports: useSocialLayerStorefrontMobileAccountLinkingDisabled
 
-// Module 11525 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7530 */;
+// Module 11575 (useSocialLayerStorefrontMobileAccountLinkingDisabled)
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7546 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

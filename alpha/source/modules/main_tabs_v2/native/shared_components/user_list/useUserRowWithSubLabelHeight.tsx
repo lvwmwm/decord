@@ -1,16 +1,16 @@
-// Module ID: 18999
-// Function ID: 19000
+// Module ID: 19102
+// Function ID: 19103
 // Name: useUserRowWithSubLabelHeight
-// Dependencies: [5719, 575, 11182, 5762, 12547, 18668, 2]
+// Dependencies: [5732, 575, 11232, 5776, 12628, 18769, 2]
 // Exports: getUserRowWithSubLabelHeight, useUserRowWithSubLabelHeight
 
-// Module 18999 (useUserRowWithSubLabelHeight)
+// Module 19102 (useUserRowWithSubLabelHeight)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5719 */;
-import useFontScale from "useFontScale" /* 5762 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12547 */;
-import ActionStatusSubLabel from "ActionStatusSubLabel" /* 18668 */;
+import useToken from "useToken" /* 5732 */;
+import useFontScale from "useFontScale" /* 5776 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12628 */;
+import ActionStatusSubLabel from "ActionStatusSubLabel" /* 18769 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useUserRowWithSubLabelHeight.tsx");
@@ -28,7 +28,7 @@ export function useUserRowWithSubLabelHeight(arg0) {
   const obj2 = useToken;
   const token1 = obj2.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const obj3 = useScaledTextLineHeight;
-  const scaledTextLineHeight = obj3.useScaledTextLineHeight("text-md/semibold");
+  const scaledTextLineHeight = obj3.useScaledTextLineHeight("body-md/semibold");
   const obj4 = useFontScale;
   const fontScale = obj4.useFontScale();
   const tmp5 = roundToNearestPixelDefault;

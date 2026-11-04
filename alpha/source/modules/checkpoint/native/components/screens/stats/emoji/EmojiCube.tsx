@@ -1,15 +1,15 @@
-// Module ID: 13806
-// Function ID: 13807
+// Module ID: 13892
+// Function ID: 13893
 // Name: EmojiCube
-// Dependencies: [32, 17, 5142, 6186, 21, 5141, 1357, 575, 504, 1411, 1493, 7420, 2]
+// Dependencies: [32, 17, 5142, 6201, 21, 5141, 1357, 575, 504, 1493, 1411, 7436, 2]
 // Exports: default
 
-// Module 13806 (EmojiCube)
+// Module 13892 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6186 */;
-import EmojiDefault from "Emoji" /* 7420 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import EmojiDefault from "Emoji" /* 7436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -94,43 +94,44 @@ let result = size.fileFinishedImporting("modules/checkpoint/native/components/sc
 export default function EmojiCube(emoji) {
   let closure_2;
   let items2;
-  let tmp6;
+  let tmp7;
   let useReducedMotion;
   emoji = emoji.emoji;
+  let emojiURL;
   dependencyMap = undefined;
-  const tmp = dependencyMap;
   const style = emoji.style;
+  const tmp = dependencyMap;
   let items = [AccessibilityStore];
   const obj = emoji(504);
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let emojiURL;
+  const result = emojiURL(1493)().width / 392;
+  emojiURL = undefined;
   if (null != emoji.id) {
-    const tmp5 = emojiURL(1411);
-    const obj2 = { id: emoji.id, animated: tmp6, size: 48 };
-    tmp6 = !stateFromStores;
-    const getEmojiURL = tmp5.getEmojiURL;
+    const obj2 = { id: emoji.id, animated: tmp7, size: 196 * result };
+    tmp7 = !stateFromStores;
+    const getEmojiURL = tmp3(1411).getEmojiURL;
+    emojiURL(1411);
     if (!stateFromStores) {
-      tmp6 = true === emoji.animated;
+      tmp7 = true === emoji.animated;
     }
     emojiURL = getEmojiURL(obj2);
   }
-  const tmp7 = closure_7();
-  dependencyMap = tmp7;
-  let items1 = [tmp7.container, , ];
+  const tmp8 = closure_7();
+  dependencyMap = tmp8;
+  let items1 = [tmp8.container, , ];
   const obj4 = { transform: items2 };
-  items2 = [{ scale: emojiURL(1493)().width / 392 }];
+  items2 = [{ scale: result }];
   items1[1] = obj4;
   items1[2] = style;
   const items3 = [, ];
-  ({ topFace: arr4[0], topEmoji: arr4[1] } = tmp7);
+  ({ topFace: arr4[0], topEmoji: arr4[1] } = tmp8);
   const items4 = [items3, , ];
   const items5 = [, ];
-  ({ leftFace: arr6[0], leftEmoji: arr6[1] } = tmp7);
+  ({ leftFace: arr6[0], leftEmoji: arr6[1] } = tmp8);
   items4[1] = items5;
   const items6 = [, ];
-  ({ rightFace: arr7[0], rightEmoji: arr7[1] } = tmp7);
+  ({ rightFace: arr7[0], rightEmoji: arr7[1] } = tmp8);
   items4[2] = items6;
-  ({ scale: emojiURL(1493)().width / 392 });
   return <View style={items1}>{items4.map((item, index) => {
     let tmp;
     let tmp2;

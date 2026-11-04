@@ -62,7 +62,7 @@ let obj = function _queryCache() {
 const use = react2.use;
 const jsx = Fragment.jsx;
 let closure_6 = 1;
-let closure_8 = { uri: "replace", width: "r", height: "isArray" };
+let closure_8 = { uri: "Array", width: "id", height: "error" };
 function _BaseImage(arg0) {
   let accessibilityLabel;
   let accessibilityLabelledBy;
@@ -271,7 +271,7 @@ if (null != unstable_setImageComponentDecorator) {
 }
 resultResult.displayName = "Image";
 resultResult.getSize = function getSize(arg0, fn, arg2) {
-  const f78446 = (width) => closure_1(width.width, width.height);
+  const f78780 = (width) => closure_1(width.width, width.height);
   let closure_0 = arg0;
   let closure_1 = fn;
   obj = ImageLoaderDefault;
@@ -280,8 +280,8 @@ resultResult.getSize = function getSize(arg0, fn, arg2) {
     return size;
   } else {
     fn = arg2;
-    const _catch = size.then(f78446).catch;
-    size.then(f78446);
+    const _catch = size.then(f78780).catch;
+    size.then(f78780);
     if (!arg2) {
       fn = () => {
         console.warn(`Failed to get size for image: ${closure_0}`);
@@ -291,7 +291,7 @@ resultResult.getSize = function getSize(arg0, fn, arg2) {
   }
 };
 resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn, arg3) {
-  const f78448 = (width) => closure_1(width.width, width.height);
+  const f78782 = (width) => closure_1(width.width, width.height);
   let closure_0 = arg0;
   let closure_1 = fn;
   obj = ImageLoaderDefault;
@@ -300,8 +300,8 @@ resultResult.getSizeWithHeaders = function getSizeWithHeaders(arg0, arg1, fn, ar
     return sizeWithHeaders;
   } else {
     fn = arg3;
-    const _catch = sizeWithHeaders.then(f78448).catch;
-    sizeWithHeaders.then(f78448);
+    const _catch = sizeWithHeaders.then(f78782).catch;
+    sizeWithHeaders.then(f78782);
     if (!arg3) {
       fn = () => {
         console.warn(`Failed to get size for image: ${closure_0}`);

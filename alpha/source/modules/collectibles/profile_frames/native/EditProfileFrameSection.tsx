@@ -1,18 +1,18 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16740
+// Function ID: 16741
 // Name: EditProfileFrameSection
-// Dependencies: [19, 17, 7851, 8918, 21, 575, 5141, 15215, 16649, 15216, 7471, 9646, 2]
+// Dependencies: [19, 17, 7867, 8935, 21, 575, 5141, 15298, 16739, 15299, 7487, 9665, 2]
 
-// Module 16650 (EditProfileFrameSection)
+// Module 16740 (EditProfileFrameSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7851 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8918 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9646 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15215 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15216 */;
-import useProfileFrameSections from "useProfileFrameSections" /* 16649 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7867 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8935 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9665 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15298 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15299 */;
+import useProfileFrameSections from "useProfileFrameSections" /* 16739 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -57,7 +57,7 @@ const memoResult = react.memo((arg0) => {
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
         const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-        const EditCollectiblesListItemShop = tmp(15216).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(15299).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileFrameRecord(profileFrame)) {
         const obj4 = { profileFrame, isSelected: require === profileFrame.skuId, setSelectedProfileFrame, size: width };

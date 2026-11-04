@@ -1,17 +1,17 @@
-// Module ID: 19552
-// Function ID: 19553
+// Module ID: 19656
+// Function ID: 19657
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 5141, 575, 6854, 7412, 5747, 5754, 8079, 6849, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6869, 7428, 5761, 5768, 8095, 6864, 2]
 // Exports: default
 
-// Module 19552 (AgeGateVerify)
+// Module 19656 (AgeGateVerify)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
-import AgeGateUtils from "AgeGateUtils" /* 6854 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import AgeGateUtils from "AgeGateUtils" /* 6869 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -21,7 +21,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp2;
-const components_Button_Button = tmp2(5754);
+const components_Button_Button = tmp2(5768);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, header: { textAlign: "center" }, body: { textAlign: "center" }, buttonWrapper: { width: "100%" } };
@@ -45,7 +45,7 @@ export default function AgeGateVerify(source) {
   items = [, , ];
   const obj3 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: verifyTitle };
   items[0] = React3(Text_Text.Heading, obj3);
-  const obj4 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: verifyGateDescription };
+  const obj4 = { style: tmp.body, variant: "body-md/medium", color: "interactive-text-default", children: verifyGateDescription };
   items[1] = React3(Text_Text.Text, obj4);
   let tmp6Result = null != verifyAgreementButtonText;
   const tmp5 = hasOwnProperty;

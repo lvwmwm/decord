@@ -1,9 +1,9 @@
-// Module ID: 18914
-// Function ID: 18915
+// Module ID: 19017
+// Function ID: 19018
 // Name: SmartSearchTip
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 4250, 15014, 1187, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 4250, 15094, 1187, 2]
 
-// Module 18914 (SmartSearchTip)
+// Module 19017 (SmartSearchTip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -62,12 +62,12 @@ const memoResult = react.memo(function SmartSearchTip(citations) {
   let obj = { style: tmp.container, children: items3 };
   const obj2 = { style: tmp.header, children: items2 };
   const obj3 = { style: tmp.titleContainer, children: items1 };
-  const obj4 = { variant: "text-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(4250).ydAwWi) };
-  const Text = citations(5747).Text;
+  const obj4 = { variant: "body-sm/semibold", color: "text-subtle", lineClamp: 1, style: tmp.title, accessibilityRole: "header", children: intl.string(guildId(4250).ydAwWi) };
+  const Text = citations(5761).Text;
   intl = citations(1113).intl;
   items1 = [closure_5(Text, obj4), ];
-  const obj5 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(4250).QIdSmb) };
-  const Text2 = citations(5747).Text;
+  const obj5 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 1, children: intl2.string(guildId(4250).QIdSmb) };
+  const Text2 = citations(5761).Text;
   intl2 = citations(1113).intl;
   items1[1] = closure_5(Text2, obj5);
   items2 = [closure_6(View, obj3), ];
@@ -83,12 +83,12 @@ const memoResult = react.memo(function SmartSearchTip(citations) {
           return hasOwnProperty(Avatar, obj, user.id);
         })
     };
-    const AvatarPile = tmp5(15014).AvatarPile;
+    const AvatarPile = tmp5(15094).AvatarPile;
     substr = memo.slice(0, 3);
     tmp4Result = tmp4(AvatarPile, obj6);
   }
   items2[1] = tmp4Result;
-  items3 = [tmp2(View, obj2), closure_5(citations(5747).Text, { variant: "text-md/normal", color: "text-default", children: answerText })];
+  items3 = [tmp2(View, obj2), closure_5(citations(5761).Text, { variant: "body-md/normal", color: "text-default", children: answerText })];
   return tmp2(View, obj);
 });
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/native/components/SmartSearchTip.tsx");

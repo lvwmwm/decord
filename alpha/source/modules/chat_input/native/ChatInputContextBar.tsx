@@ -1,19 +1,19 @@
-// Module ID: 14116
-// Function ID: 14117
+// Module ID: 14202
+// Function ID: 14203
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5142, 7825, 1385, 1072, 21, 1187, 5141, 575, 5719, 5747, 1113, 7106, 7232, 504, 5209, 6559, 9418, 8543, 14117, 5315, 1652, 5377, 1705, 10331, 1252, 10329, 1099, 6558, 14118, 8467, 9938, 9940, 2]
+// Dependencies: [19, 17, 5142, 7841, 1385, 1072, 21, 1187, 5141, 575, 5732, 5761, 1113, 7121, 7252, 504, 5208, 6574, 9435, 8560, 14203, 5316, 1652, 5378, 1705, 10379, 1252, 10377, 1099, 6573, 14204, 8483, 9956, 9958, 2]
 
-// Module 14116 (ChatInputContextBar)
+// Module 14202 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import DraftStore2 from "DraftStore" /* 7825 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8467 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9938 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9940 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import DraftStore2 from "DraftStore" /* 7841 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8483 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9956 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 9958 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -34,7 +34,7 @@ let hasOwnProperty;
 let map1;
 let tmp4;
 let unpackModuleId;
-const AssetRegistryDefault = tmp4(7232);
+const AssetRegistryDefault = tmp4(7252);
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let Icon;
   let PressableOpacity;
@@ -51,7 +51,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
   const obj2 = useToken;
   const bound = Math.max(0, (token - obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
   const obj3 = { style: tmp.contextBarRow, children: items };
-  const obj4 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t["5IEsGx"]) };
+  const obj4 = { lineClamp: 1, variant: "body-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t["5IEsGx"]) };
   const Text = Text_Text.Text;
   intl = intl9.intl;
   items = [authStore2(Text, obj4), ];
@@ -109,7 +109,7 @@ class ChatInputReplyBar {
         if (null != colorString) {
           const obj2 = { color: tmp, colors: colorStrings, guildId, size: "small" };
           const items = [authStore2(native.RoleDot, obj2), ];
-          const obj3 = { variant: "text-sm/semibold", style: tmp19, children: nick };
+          const obj3 = { variant: "body-sm/semibold", style: tmp19, children: nick };
           tmp19 = undefined;
           const Text2 = Text_Text.Text;
           const tmp15 = authStore2;
@@ -125,7 +125,7 @@ class ChatInputReplyBar {
         }
         return tmp3Result;
       }
-      obj = { variant: "text-sm/semibold", style: items1, gradientColors: tmp6, children: nick };
+      obj = { variant: "body-sm/semibold", style: items1, gradientColors: tmp6, children: nick };
       items1 = [roleStyle, ];
       let tmp5 = null != closure_7;
       const Text = Text_Text.Text;
@@ -187,7 +187,7 @@ class ChatInputReplyBar {
     const obj9 = pendingReply(colorString[19]);
     let closure_9 = obj9.useIsRoleStyleAndRoleColorsEligibleForERC(guildId, pendingReply.message.author.id, stateFromStores, processColorStringsArray);
     if (null == onTapContextBarReply) {
-      const obj10 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: intl.format(tmp2(tmp3[12]).t["8E4GxS"], obj11) };
+      const obj10 = { lineClamp: 1, variant: "body-sm/normal", color: "text-strong", children: intl.format(tmp2(tmp3[12]).t["8E4GxS"], obj11) };
       let Text = tmp2(tmp3[11]).Text;
       intl = tmp2(tmp3[12]).intl;
       obj11 = { userHook };
@@ -200,7 +200,7 @@ class ChatInputReplyBar {
       intl6 = tmp2(tmp3[12]).intl;
       obj13 = { username: nick };
       intl7 = tmp2(tmp3[12]).intl;
-      obj14 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: intl8.format(tmp2(tmp3[12]).t["8E4GxS"], obj15) };
+      obj14 = { lineClamp: 1, variant: "body-sm/normal", color: "text-strong", children: intl8.format(tmp2(tmp3[12]).t["8E4GxS"], obj15) };
       Text3 = tmp2(tmp3[11]).Text;
       intl8 = tmp2(tmp3[12]).intl;
       obj15 = { userHook };
@@ -252,7 +252,7 @@ class ChatInputReplyBar {
         prop = tmp.replyMentionButtonActive;
       }
       const shouldMention2 = pendingReply.shouldMention;
-      const obj20 = { variant: "text-sm/semibold", color: "text-muted", style: prop, children: string2Result };
+      const obj20 = { variant: "body-sm/semibold", color: "text-muted", style: prop, children: string2Result };
       const intl5 = tmp2(tmp3[12]).intl;
       const string2 = intl5.string;
       const t2 = tmp2(tmp3[12]).t;
@@ -299,7 +299,7 @@ function ChatInputEditBar(onCancelEditing) {
   const token = obj.useToken(nativeDefault.modules.mobile.CHAT_INPUT_BUTTON_MIN_TOUCH_TARGET_SIZE);
   const obj2 = useToken;
   const bound = Math.max(0, (token - obj2.useToken(nativeDefault.modules.mobile.CHAT_INPUT_REPLY_MENTION_ICON_SIZE)) / 2);
-  const obj3 = { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t.rtNXxN) };
+  const obj3 = { lineClamp: 1, variant: "body-sm/normal", color: "text-strong", style: tmp.floatingReplyTextWrapper, children: intl.string(intl9.t.rtNXxN) };
   const Text = Text_Text.Text;
   intl = intl9.intl;
   const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl9.t.qv9j1K), activeOpacity: 0.5, hitSlop: tmp9, onPress: onCancelEditing, children: authStore2(Icon, obj5) };
@@ -343,7 +343,7 @@ function ChatInputScheduledMessageBar(scheduledTimestamp) {
   const ZN3tIx = intl9.t.ZN3tIx;
   date = new Date(scheduledTimestamp);
   const formatToPlainStringResult = formatToPlainString(ZN3tIx, obj3);
-  const obj4 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, accessibilityHint: intl2.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: authStore2(Text_Text.Text, { lineClamp: 1, variant: "text-sm/normal", color: "text-strong", children: formatToPlainStringResult }) };
+  const obj4 = { style: tmp.floatingReplyTextWrapper, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, accessibilityHint: intl2.string(intl9.t.SBcdAN), activeOpacity: 0.5, onPress: onEditSchedule, children: authStore2(Text_Text.Text, { lineClamp: 1, variant: "body-sm/normal", color: "text-strong", children: formatToPlainStringResult }) };
   const PressableOpacity = Pressables.PressableOpacity;
   intl2 = intl9.intl;
   const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl9.t.cpT0Cq), activeOpacity: 0.5, hitSlop: tmp10, onPress: onCancelScheduling, children: authStore2(Icon, obj6) };
@@ -376,8 +376,8 @@ function ContextBarItem(arg0) {
   dependencyMap = undefined;
   ({ children, ref } = arg0);
   let tmp = dependencyMap;
-  obj = sharedValue(5315);
-  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5315).GradientPercentage.END)).contextBar.backgroundColor;
+  obj = sharedValue(5316);
+  backgroundColor = closure_16(obj.useGradientValue(sharedValue(5316).GradientPercentage.END)).contextBar.backgroundColor;
   let tmp2 = closure_17();
   const obj2 = sharedValue(1652);
   sharedValue = obj2.useSharedValue(0);

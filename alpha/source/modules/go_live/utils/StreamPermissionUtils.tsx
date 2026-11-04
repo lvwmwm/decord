@@ -1,20 +1,20 @@
-// Module ID: 6844
-// Function ID: 6845
+// Module ID: 6859
+// Function ID: 6860
 // Name: StreamPermissionUtils
-// Dependencies: [5885, 4994, 5071, 5012, 5073, 5799, 1072, 6831, 6166, 6845, 6854, 504, 2]
+// Dependencies: [5899, 4994, 5071, 5012, 5073, 5813, 1072, 6846, 6181, 6860, 6869, 504, 2]
 // Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 6844 (StreamPermissionUtils)
+// Module 6859 (StreamPermissionUtils)
 import Constants from "Constants" /* 1072 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import GuildChannelStore from "GuildChannelStore" /* 5071 */;
-import ChannelUtils from "ChannelUtils" /* 6166 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6831 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6845 */;
-import GameConsoleStore from "GameConsoleStore" /* 5885 */;
+import ChannelUtils from "ChannelUtils" /* 6181 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6846 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6860 */;
+import GameConsoleStore from "GameConsoleStore" /* 5899 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import VoiceStateStore from "VoiceStateStore" /* 5799 */;
+import VoiceStateStore from "VoiceStateStore" /* 5813 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(6854);
+      const tmp11Result = tmp11(6869);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {

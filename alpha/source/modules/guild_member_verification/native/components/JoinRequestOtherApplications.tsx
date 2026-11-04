@@ -1,13 +1,13 @@
-// Module ID: 18821
-// Function ID: 18822
+// Module ID: 18922
+// Function ID: 18923
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 5141, 575, 5175, 7460, 7218, 18822, 5747, 1113, 18818, 4963, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5175, 7476, 7233, 18923, 5761, 1113, 18919, 4963, 2]
 
-// Module 18821 (JoinRequestOtherApplications)
+// Module 18922 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 575 */;
 import DateUtils from "DateUtils" /* 4963 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -28,11 +28,11 @@ function ApplicationStatusIcon(status) {
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const CircleCheckIcon = tmp(7460).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7476).CircleCheckIcon;
     return metroRequire(CircleCheckIcon, obj2);
   } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp(7218).CircleXIcon;
+    const CircleXIcon = tmp(7233).CircleXIcon;
     return metroRequire(CircleXIcon, obj);
   } else {
     return null;
@@ -62,8 +62,8 @@ const memoResult = react.memo(function JoinRequestOtherApplications(arg0) {
   let tmp4 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {
     let obj2 = { children: items };
-    let obj3 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1113).t["hxa+G3"]) };
-    let Text = tmp2(5747).Text;
+    let obj3 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1113).t["hxa+G3"]) };
+    let Text = tmp2(5761).Text;
     intl = tmp2(1113).intl;
     items = [closure_6(Text, obj3), ];
     let obj4 = {
@@ -90,7 +90,7 @@ const memoResult = react.memo(function JoinRequestOtherApplications(arg0) {
             },
             children: items1
           };
-          const obj4 = { variant: "text-sm/normal", color: "text-default", children: dateFormat(date, "LL") };
+          const obj4 = { variant: "body-sm/normal", color: "text-default", children: dateFormat(date, "LL") };
           const Text = Text_Text.Text;
           dateFormat = DateUtils.dateFormat;
           DateUtils;

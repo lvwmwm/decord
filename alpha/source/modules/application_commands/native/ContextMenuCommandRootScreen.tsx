@@ -1,19 +1,19 @@
-// Module ID: 19115
-// Function ID: 19116
+// Module ID: 19218
+// Function ID: 19219
 // Name: ContextMenuCommandRootScreen
-// Dependencies: [32, 19, 17, 5012, 6155, 21, 5141, 575, 504, 10446, 9900, 10440, 5730, 7338, 11182, 1113, 5747, 19116, 7339, 7344, 2]
+// Dependencies: [32, 19, 17, 5012, 6170, 21, 5141, 575, 504, 10494, 9918, 10488, 5743, 7354, 11232, 1113, 5761, 19219, 7355, 7360, 2]
 // Exports: default
 
-// Module 19115 (ContextMenuCommandRootScreen)
+// Module 19218 (ContextMenuCommandRootScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import executeCommandDefault from "executeCommand" /* 10440 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import executeCommandDefault from "executeCommand" /* 10488 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6155 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6170 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -207,9 +207,9 @@ export default function ContextMenuCommandRootScreen(navigation) {
   const memo2 = obj2.useMemo(() => memo1.map((item) => item.length), items8);
   const tmp20 = onPressCommand();
   closure_18 = tmp20;
-  c19 = "text-sm/semibold";
+  c19 = "body-sm/semibold";
   const tmpResult = tmp(tmp2[14]);
-  scaledTextLineHeight = tmpResult.useScaledTextLineHeight("text-sm/semibold");
+  scaledTextLineHeight = tmpResult.useScaledTextLineHeight("body-sm/semibold");
   const items9 = [loading, commands.length, tmp7, frecencyItems.length, tmp20.sectionHeader];
   const items10 = [memo1, onPressCommand, callback1, sections];
   const callback2 = obj2.useCallback((arg0) => {

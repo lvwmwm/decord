@@ -1,19 +1,19 @@
-// Module ID: 18690
-// Function ID: 18691
+// Module ID: 18789
+// Function ID: 18790
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 4990, 5012, 9030, 21, 5141, 575, 504, 5772, 7126, 7083, 1187, 9047, 7486, 11281, 18691, 7186, 7101, 2]
+// Dependencies: [19, 17, 4990, 5012, 9047, 21, 5141, 575, 504, 5786, 7141, 7098, 1187, 9064, 7502, 11331, 18790, 7201, 7116, 2]
 // Exports: default
 
-// Module 18690 (ItemDetailsActionSheet)
+// Module 18789 (ItemDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import useChannelNameDefault from "useChannelName" /* 5772 */;
-import useDesignToggleDefault from "useDesignToggle" /* 7126 */;
+import useChannelNameDefault from "useChannelName" /* 5786 */;
+import useDesignToggleDefault from "useDesignToggle" /* 7141 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import ICYMIStore from "ICYMIStore" /* 9030 */;
+import ICYMIStore from "ICYMIStore" /* 9047 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -25,14 +25,14 @@ let obj2;
 let tmp;
 let tmp5;
 const native = tmp(1187);
-const GuildIcon = tmp(7083);
-const GuildIconDefault = tmp5(7083);
-const TableRow2 = tmp(7101);
-const TableRowGroup2 = tmp(7186);
-const ActionSheet2 = tmp(7486);
-const ICYMIUtils = tmp(9047);
-const ActionSheetIconHeader2 = tmp(11281);
-const ICYMIContentSettingControl = tmp(18691);
+const GuildIcon = tmp(7098);
+const GuildIconDefault = tmp5(7098);
+const TableRow2 = tmp(7116);
+const TableRowGroup2 = tmp(7201);
+const ActionSheet2 = tmp(7502);
+const ICYMIUtils = tmp(9064);
+const ActionSheetIconHeader2 = tmp(11331);
+const ICYMIContentSettingControl = tmp(18790);
 const View = react_native.View;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { divider: obj2 };

@@ -1,18 +1,18 @@
-// Module ID: 14068
-// Function ID: 14069
+// Module ID: 14154
+// Function ID: 14155
 // Name: BaseChannelItem
-// Dependencies: [19, 17, 11186, 6896, 21, 5141, 575, 5747, 1357, 1187, 14069, 9120, 14070, 2]
+// Dependencies: [19, 17, 11236, 6911, 21, 5141, 575, 5761, 1357, 1187, 14155, 9137, 14156, 2]
 // Exports: BaseChannelIcon, BaseChannelName, default, getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 14068 (BaseChannelItem)
+// Module 14154 (BaseChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ReadStateConstants from "ReadStateConstants" /* 6911 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -120,7 +120,7 @@ export default function BaseChannelItem(mode) {
   if (!hideIcon) {
     const obj2 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: ALL_MESSAGES };
     const tmp6 = closure_8;
-    const tmp9 = hideIcon(14069);
+    const tmp9 = hideIcon(14155);
     if (mode === obj.UNREAD_LESS_IMPORTANT) {
       ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
     } else {
@@ -131,9 +131,9 @@ export default function BaseChannelItem(mode) {
   items1 = [tmp6Result, !hideIcon && icon, name, channelInfo];
   const tmp3Result = closure_9(tmp4, obj);
   if (flag) {
-    AnimatedPressableHighlight = hideIcon(14070);
+    AnimatedPressableHighlight = hideIcon(14156);
   } else {
-    AnimatedPressableHighlight = mode(9120).AnimatedPressableHighlight;
+    AnimatedPressableHighlight = mode(9137).AnimatedPressableHighlight;
   }
   const obj3 = { children: items2 };
   const merged1 = Object.assign(merged);
@@ -204,14 +204,14 @@ export function useChannelNameTextProps(channelMode) {
   if (channelMode !== obj.UNREAD_IMPORTANT) {
     if (channelMode !== obj.RELEVANT) {
       if (channelMode === obj.UNREAD_LESS_IMPORTANT) {
-        obj = { variant: "text-md/medium", color: "redesign-channel-name-muted-text" };
+        obj = { variant: "body-md/medium", color: "redesign-channel-name-muted-text" };
       } else if (channelMode === obj.MUTED) {
-        obj = { variant: "text-md/medium", color: "text-muted" };
+        obj = { variant: "body-md/medium", color: "text-muted" };
       } else {
-        obj = channelMode === tmp.SELECTED ? { variant: "text-md/medium", color: "redesign-channel-name-text" } : { variant: "text-md/medium", color: "redesign-channel-name-muted-text" };
+        obj = channelMode === tmp.SELECTED ? { variant: "body-md/medium", color: "redesign-channel-name-text" } : { variant: "body-md/medium", color: "redesign-channel-name-muted-text" };
       }
     }
-    return { variant: "text-md/semibold", color: "redesign-channel-name-text" };
+    return { variant: "body-md/semibold", color: "redesign-channel-name-text" };
   }
 }
 export function getChannelSubtitleTextProps(channelMode) {
@@ -242,11 +242,11 @@ export function BaseChannelName(mode) {
     let obj2;
     if (mode !== obj.RELEVANT) {
       if (mode === obj.UNREAD_LESS_IMPORTANT) {
-        obj2 = { variant: "text-md/medium", color: "redesign-channel-name-muted-text" };
+        obj2 = { variant: "body-md/medium", color: "redesign-channel-name-muted-text" };
       } else if (mode === obj.MUTED) {
-        obj2 = { variant: "text-md/medium", color: "text-muted" };
+        obj2 = { variant: "body-md/medium", color: "text-muted" };
       } else {
-        obj2 = mode === tmp6.SELECTED ? { variant: "text-md/medium", color: "redesign-channel-name-text" } : { variant: "text-md/medium", color: "redesign-channel-name-muted-text" };
+        obj2 = mode === tmp6.SELECTED ? { variant: "body-md/medium", color: "redesign-channel-name-text" } : { variant: "body-md/medium", color: "redesign-channel-name-muted-text" };
       }
     }
     const obj3 = { experimental_useNativeText: true, lineClamp: 1, style: items, children: name };
@@ -258,5 +258,5 @@ export function BaseChannelName(mode) {
     obj.children = items1;
     return tmp2(tmp3, obj);
   }
-  obj2 = { variant: "text-md/semibold", color: "redesign-channel-name-text" };
+  obj2 = { variant: "body-md/semibold", color: "redesign-channel-name-text" };
 }

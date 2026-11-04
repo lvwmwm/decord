@@ -1,9 +1,9 @@
-// Module ID: 11673
-// Function ID: 11674
+// Module ID: 11724
+// Function ID: 11725
 // Name: LaunchPadConstants
 // Dependencies: [17, 1377, 5098, 2]
 
-// Module 11673 (LaunchPadConstants)
+// Module 11724 (LaunchPadConstants)
 import react_native from "react-native" /* 17 */;
 import DeviceUtils from "DeviceUtils" /* 5098 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;

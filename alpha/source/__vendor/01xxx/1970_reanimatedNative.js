@@ -10,16 +10,16 @@ import _mod1652 from "module_1652" /* 1652 */;
 let closure_2 = { code: "(function pnpm_reanimatedNativeTs1(event){let[handlers,context]=this.__closure;const{onKeyboardMoveStart:onKeyboardMoveStart,onKeyboardMove:onKeyboardMove,onKeyboardMoveEnd:onKeyboardMoveEnd,onKeyboardMoveInteractive:onKeyboardMoveInteractive}=handlers;if(onKeyboardMoveStart&&event.eventName.endsWith(\"onKeyboardMoveStart\")){onKeyboardMoveStart(event,context);}if(onKeyboardMove&&event.eventName.endsWith(\"onKeyboardMove\")){onKeyboardMove(event,context);}if(onKeyboardMoveEnd&&event.eventName.endsWith(\"onKeyboardMoveEnd\")){onKeyboardMoveEnd(event,context);}if(onKeyboardMoveInteractive&&event.eventName.endsWith(\"onKeyboardMoveInteractive\")){onKeyboardMoveInteractive(event,context);}})" };
 let closure_3 = { code: "(function pnpm_reanimatedNativeTs2(event){let[handlers,context]=this.__closure;const{onFocusedInputLayoutChanged:onFocusedInputLayoutChanged}=handlers;if(onFocusedInputLayoutChanged&&event.eventName.endsWith(\"onFocusedInputLayoutChanged\")){onFocusedInputLayoutChanged(event,context);}})" };
 
-export const useAnimatedKeyboardHandler = (memoizedGestureCallbacks, items26) => {
+export const useAnimatedKeyboardHandler = (ChannelListLegendListTsx1, items26) => {
   let context;
   let doDependenciesDiffer;
   let tmp2;
   let tmp3;
   let tmp4;
   const obj = _mod1652;
-  const handler = obj.useHandler(memoizedGestureCallbacks, items26);
+  const handler = obj.useHandler(ChannelListLegendListTsx1, items26);
   ({ context, doDependenciesDiffer } = handler);
-  const items = [closure_2, memoizedGestureCallbacks, context];
+  const items = [closure_2, ChannelListLegendListTsx1, context];
   let c0;
   let c1;
   [tmp2, tmp3, tmp4] = items;
@@ -69,16 +69,16 @@ export const useAnimatedKeyboardHandler = (memoizedGestureCallbacks, items26) =>
   const obj2 = _mod1652;
   return obj2.useEvent(pnpm_reanimatedNativeTs1, ["onKeyboardMoveStart", "onKeyboardMove", "onKeyboardMoveEnd", "onKeyboardMoveInteractive"], doDependenciesDiffer);
 };
-export const useFocusedInputLayoutHandler = (memoizedGestureCallbacks, items26) => {
+export const useFocusedInputLayoutHandler = (ChannelListLegendListTsx1, items26) => {
   let context;
   let doDependenciesDiffer;
   let tmp2;
   let tmp3;
   let tmp4;
   const obj = _mod1652;
-  const handler = obj.useHandler(memoizedGestureCallbacks, items26);
+  const handler = obj.useHandler(ChannelListLegendListTsx1, items26);
   ({ context, doDependenciesDiffer } = handler);
-  const items = [closure_3, memoizedGestureCallbacks, context];
+  const items = [closure_3, ChannelListLegendListTsx1, context];
   let c0;
   let c1;
   [tmp2, tmp3, tmp4] = items;

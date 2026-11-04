@@ -1,13 +1,13 @@
-// Module ID: 9217
-// Function ID: 9218
+// Module ID: 9234
+// Function ID: 9235
 // Name: useCanCreateAnEvent
-// Dependencies: [32, 5071, 5012, 5073, 1072, 504, 9148, 2]
+// Dependencies: [32, 5071, 5012, 5073, 1072, 504, 9165, 2]
 // Exports: default
 
-// Module 9217 (useCanCreateAnEvent)
+// Module 9234 (useCanCreateAnEvent)
 import Constants from "Constants" /* 1072 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
-import useManageResourcePermissions from "useManageResourcePermissions" /* 9148 */;
+import useManageResourcePermissions from "useManageResourcePermissions" /* 9165 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;

@@ -1,16 +1,16 @@
-// Module ID: 13971
-// Function ID: 13972
+// Module ID: 14057
+// Function ID: 14058
 // Name: ChannelBadge
-// Dependencies: [19, 21, 1187, 13970, 5747, 1113, 2024, 2]
+// Dependencies: [19, 21, 1187, 14056, 5761, 1113, 2024, 2]
 // Exports: renderChannelBadge
 
-// Module 13971 (ChannelBadge)
+// Module 14057 (ChannelBadge)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import NumberUtils from "NumberUtils" /* 2024 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import _mod13970 from "module_13970" /* 13970 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import _mod14056 from "module_14056" /* 14056 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -40,7 +40,7 @@ export function renderChannelBadge(newChannel) {
     return tmp2;
   }
   if (flag) {
-    tmp2 = jsx(_mod13970.NewBadge, {});
+    tmp2 = jsx(_mod14056.NewBadge, {});
   } else {
     if (null != newPostCount) {
       if (newPostCount > 0) {
@@ -49,13 +49,13 @@ export function renderChannelBadge(newChannel) {
         const format = intl.format;
         const obj4 = { count: obj5.humanizeValue(newPostCount, locale) };
         const GkAbqY = intl2.t.GkAbqY;
-        tmp2 = <Text variant="text-xs/semibold" color="text-brand">{format(GkAbqY, obj4)}</Text>;
+        tmp2 = <Text variant="body-xs/semibold" color="text-brand">{format(GkAbqY, obj4)}</Text>;
         obj5 = NumberUtils;
       }
     }
     if (null != postsWithUnreadsCount) {
       if (postsWithUnreadsCount > 0) {
-        tmp2 = jsx(Text_Text.Text, { variant: "text-xs/semibold", color: "text-muted", children: postsWithUnreadsCount });
+        tmp2 = jsx(Text_Text.Text, { variant: "body-xs/semibold", color: "text-muted", children: postsWithUnreadsCount });
       }
     }
     tmp2 = null;

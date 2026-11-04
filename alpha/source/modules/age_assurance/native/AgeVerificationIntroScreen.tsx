@@ -1,15 +1,15 @@
-// Module ID: 8282
-// Function ID: 8283
+// Module ID: 8298
+// Function ID: 8299
 // Name: AgeVerificationIntroScreen
-// Dependencies: [5, 19, 17, 1072, 21, 5141, 575, 1627, 8143, 8098, 5747, 6846, 7186, 8283, 8284, 1113, 8079, 2190, 6849, 5754, 8285, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5141, 575, 1627, 8159, 8114, 5761, 6861, 7201, 8299, 8300, 1113, 8095, 2190, 6864, 5768, 8301, 2]
 // Exports: default
 
-// Module 8282 (AgeVerificationIntroScreen)
+// Module 8298 (AgeVerificationIntroScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -68,7 +68,7 @@ export default function GetStartedScreen(modalSessionId) {
   const onClose = modalSessionId.onClose;
   const tmp = closure_10();
   const bottom = initiateAgeVerification(1627)().bottom;
-  let obj = modalSessionId(8143);
+  let obj = modalSessionId(8159);
   initiateAgeVerification = obj.useInitiateAgeVerification({ onComplete: onClose, entryPoint });
   initiateAgeVerification = initiateAgeVerification.initiateAgeVerification;
   let obj2 = { children: items2 };
@@ -76,14 +76,14 @@ export default function GetStartedScreen(modalSessionId) {
   obj4 = { style: tmp.getStartedContainer, children: items1 };
   const loading = initiateAgeVerification.loading;
   const obj5 = { style: tmp.getStartedHeaderContainer, children: items };
-  items = [closure_7(modalSessionId(8098).ShieldSpotIllustration, {}), , ];
+  items = [closure_7(modalSessionId(8114).ShieldSpotIllustration, {}), , ];
   const obj6 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.getStartedHeaderText, children: obj7.getAgeVerificationGetStartedTitle(entryPoint) };
-  const Text = modalSessionId(5747).Text;
-  obj7 = modalSessionId(6846);
+  const Text = modalSessionId(5761).Text;
+  obj7 = modalSessionId(6861);
   items[1] = closure_7(Text, obj6);
-  const obj8 = { variant: "heading-md/medium", color: "text-default", style: tmp.getStartedHeaderText, children: obj9.getAgeVerificationGetStartedSubtitle(entryPoint) };
-  const Text2 = modalSessionId(5747).Text;
-  obj9 = modalSessionId(6846);
+  const obj8 = { variant: "heading-sm/medium", color: "text-default", style: tmp.getStartedHeaderText, children: obj9.getAgeVerificationGetStartedSubtitle(entryPoint) };
+  const Text2 = modalSessionId(5761).Text;
+  obj9 = modalSessionId(6861);
   items[2] = closure_7(Text2, obj8);
   items1 = [closure_8(closure_5, obj5), , ];
   const obj10 = {
@@ -92,32 +92,32 @@ export default function GetStartedScreen(modalSessionId) {
       let tmpResult;
       description = description.description;
       const title = description.title;
-      const obj = { index: index + 1, tip: closure_1_7(modalSessionId(dependencyMap[10]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
+      const obj = { index: index + 1, tip: closure_1_7(modalSessionId(dependencyMap[10]).Text, { variant: "body-md/medium", color: "mobile-text-heading-primary", children: title }), description: tmpResult };
       tmpResult = null;
       const tmp2 = dependencyMap;
       const tmp3 = initiateAgeVerification(dependencyMap[14]);
       const tmp4 = modalSessionId;
       if (null != description) {
-        const obj2 = { variant: "text-xs/medium", color: "text-subtle", children: description };
+        const obj2 = { variant: "body-xs/medium", color: "text-subtle", children: description };
         tmpResult = tmp(tmp4(tmp2[10]).Text, obj2);
       }
       return closure_1_7(tmp3, obj, index);
     })
   };
-  const TableRowGroup = modalSessionId(7186).TableRowGroup;
-  const obj11 = modalSessionId(8283);
+  const TableRowGroup = modalSessionId(7201).TableRowGroup;
+  const obj11 = modalSessionId(8299);
   ageVerificationGetStartedSteps = obj11.getAgeVerificationGetStartedSteps(modalSessionId);
   items1[1] = closure_7(TableRowGroup, obj10);
   const obj12 = { style: tmp.ageGroupLearnMoreContainer, children: closure_7(Text3, obj13) };
-  obj13 = { variant: "text-xs/medium", color: "text-muted", children: intl.format(modalSessionId(1113).t["L+FgkZ"], obj14) };
-  Text3 = modalSessionId(5747).Text;
+  obj13 = { variant: "body-xs/medium", color: "text-muted", children: intl.format(modalSessionId(1113).t["L+FgkZ"], obj14) };
+  Text3 = modalSessionId(5761).Text;
   intl = modalSessionId(1113).intl;
   obj14 = {
     handleOnHelpUrlHook() {
       const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
       AgeVerificationActionCreatorsDefault;
       const obj = HelpdeskUtilsDefault;
-      openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
+      openUrl(obj.getArticleURL(HelpdeskArticles.AGE_VERIFICATION_LEARN_MORE));
       const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
       AgeVerificationAnalyticsUtils;
       const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.LEARN_MORE);
@@ -187,10 +187,10 @@ export default function GetStartedScreen(modalSessionId) {
     loading,
     iconPosition: "end"
   };
-  Button = modalSessionId(5754).Button;
+  Button = modalSessionId(5768).Button;
   intl2 = modalSessionId(1113).intl;
   obj18 = { color: initiateAgeVerification(575).colors.WHITE };
-  LinkExternalSmallIcon = modalSessionId(8285).LinkExternalSmallIcon;
+  LinkExternalSmallIcon = modalSessionId(8301).LinkExternalSmallIcon;
   items2[1] = closure_7(closure_5, obj15);
   return closure_8(closure_9, obj2);
 };

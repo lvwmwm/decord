@@ -1,13 +1,13 @@
-// Module ID: 8319
-// Function ID: 8320
+// Module ID: 8335
+// Function ID: 8336
 // Name: useLegacyTextMigrationHighlight
-// Dependencies: [5750, 5141, 575, 504, 2]
+// Dependencies: [5764, 5141, 575, 504, 2]
 // Exports: useLegacyTextMigrationHighlight
 
-// Module 8319 (useLegacyTextMigrationHighlight)
+// Module 8335 (useLegacyTextMigrationHighlight)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import DevSettingsStore from "DevSettingsStore" /* 5750 */;
+import DevSettingsStore from "DevSettingsStore" /* 5764 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 

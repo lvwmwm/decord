@@ -1,15 +1,15 @@
-// Module ID: 7041
-// Function ID: 7042
+// Module ID: 7056
+// Function ID: 7057
 // Name: useCanReapplyToRejectedMemberVerificationApplication
-// Dependencies: [5, 32, 19, 5869, 5173, 1072, 504, 7042, 2]
+// Dependencies: [5, 32, 19, 5883, 5173, 1072, 504, 7057, 2]
 // Exports: useCanReapplyToRejectedMemberVerificationApplication
 
-// Module 7041 (useCanReapplyToRejectedMemberVerificationApplication)
+// Module 7056 (useCanReapplyToRejectedMemberVerificationApplication)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5869 */;
+import InviteStore from "InviteStore" /* 5883 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5173 */;
 import size from "module_2" /* 2 */;
 

@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite12, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj, version;
+let internalBinaryWrite10, internalBinaryWrite11, internalBinaryWrite12, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9, obj;
 
 let obj40;
 let tmp;
@@ -1187,7 +1187,7 @@ class TypingIndicatorEmoji$Type extends MessageType8 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { emoji: { oneofKind: "Array" }, animated: false };
+    obj = { emoji: { oneofKind: "r" }, animated: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -2068,7 +2068,7 @@ class Badge$Type extends MessageType16 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { badge: { oneofKind: "Array" } };
+    obj = { badge: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -3184,7 +3184,7 @@ const items19 = [
   { no: 6, name: "updated_at", kind: "message", T: T37 }
 ];
 let tmp28 = new "binaryReadMap3"("discord_protos.users.v1.LinkedUser", items19, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15);
-const authStore6 = tmp28;
+const authStore7 = tmp28;
 const MessageType22 = _mod1197.MessageType;
 class RateLimitData$Type extends MessageType22 {
   constructor() {
@@ -3917,7 +3917,7 @@ class PerkConfig$Type extends MessageType29 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { source: [], kind: { oneofKind: "Array" } };
+    obj = { source: [], kind: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -5101,7 +5101,7 @@ class AgreementAcceptance$Type extends MessageType38 {
     if (acceptedAt.version) {
       const StringValue = wrappers.StringValue;
       internalBinaryWrite2 = StringValue.internalBinaryWrite;
-      version = acceptedAt.version;
+      const version = acceptedAt.version;
       const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(version, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();

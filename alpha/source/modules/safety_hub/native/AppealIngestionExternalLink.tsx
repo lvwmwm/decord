@@ -1,17 +1,17 @@
-// Module ID: 13475
-// Function ID: 13476
+// Module ID: 13559
+// Function ID: 13560
 // Name: AppealIngestionExternalLink
-// Dependencies: [19, 17, 21, 5141, 575, 7106, 5829, 5747, 1187, 8487, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7121, 5843, 5761, 1187, 8504, 2]
 // Exports: default
 
-// Module 13475 (AppealIngestionExternalLink)
+// Module 13559 (AppealIngestionExternalLink)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import Pressables from "Pressables" /* 7106 */;
-import AssetRegistry from "AssetRegistry" /* 8487 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import Pressables from "Pressables" /* 7121 */;
+import AssetRegistry from "AssetRegistry" /* 8504 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -54,7 +54,7 @@ export default function AppealIngestionExternalLink(text) {
   obj2 = { style: tmp.childContainer, children: items };
   const PressableHighlight = Pressables.PressableHighlight;
   items = [, ];
-  const obj3 = { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: text };
+  const obj3 = { style: tmp.childButtonText, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: text };
   items[0] = closure_4(Text_Text.Text, obj3);
   const obj4 = { source: AssetRegistry, color: tmp.chevron.color };
   const Icon = native.Icon;

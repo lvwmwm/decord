@@ -1,17 +1,17 @@
-// Module ID: 14046
-// Function ID: 14047
+// Module ID: 14132
+// Function ID: 14133
 // Name: SearchPeopleTabStore
-// Dependencies: [4990, 7015, 12, 14047, 10859, 1113, 504, 572, 2]
+// Dependencies: [4990, 7030, 12, 14133, 10907, 1113, 504, 572, 2]
 
-// Module 14046 (SearchPeopleTabStore)
+// Module 14132 (SearchPeopleTabStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
-import useUserListData from "useUserListData" /* 10859 */;
-import NewMessageUserList from "NewMessageUserList" /* 14047 */;
+import useUserListData from "useUserListData" /* 10907 */;
+import NewMessageUserList from "NewMessageUserList" /* 14133 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import FrecencyStore from "FrecencyStore" /* 7015 */;
+import FrecencyStore from "FrecencyStore" /* 7030 */;
 import size from "module_2" /* 2 */;
 
 let results, title;
@@ -54,7 +54,7 @@ class PeopleSearchManager {
         const obj2 = _modDef12;
         const chainResult = obj2.chain(ChannelStore.getMutablePrivateChannels());
         const values = chainResult.values();
-        const found = values.filter(trimmed1(14047).filterGroupDMs);
+        const found = values.filter(trimmed1(14133).filterGroupDMs);
         const mapped = found.map((id) => {
           const items = [id, , ];
           const obj = NewMessageUserList;

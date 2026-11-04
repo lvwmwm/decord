@@ -1,16 +1,16 @@
-// Module ID: 14131
-// Function ID: 14132
+// Module ID: 14217
+// Function ID: 14218
 // Name: EmojiSuggestionBarSmall
-// Dependencies: [19, 10073, 21, 575, 5141, 14121, 1652, 10156, 10180, 5207, 2]
+// Dependencies: [19, 10121, 21, 575, 5141, 14207, 1652, 10204, 10228, 5207, 2]
 // Exports: EmojiSuggestionBarSmall
 
-// Module 14131 (EmojiSuggestionBarSmall)
+// Module 14217 (EmojiSuggestionBarSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10073 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 10156 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14121 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10121 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 10204 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14207 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
   ({ onOccupiedHeightChange, cleanUp } = displayEmojis);
   const tmp2 = dependencyMap;
   const tmp = closure_7(displayEmojis.anchorTop);
-  let obj = displayEmojis(14121);
+  let obj = displayEmojis(14207);
   const suggestionBarHeight = obj.useSuggestionBarHeight(transitionState, cleanUp, closure_6, onOccupiedHeightChange);
   let tmp4 = displayEmojis(1652);
   let items = [closure_8, , , ];
@@ -66,7 +66,7 @@ function EmojiSuggestionBarSmallAnimated(displayEmojis) {
     if (locked) {
       let openEmojiActionSheet = react;
     } else {
-      openEmojiActionSheet = tmp2(10180).openEmojiActionSheet;
+      openEmojiActionSheet = tmp2(10228).openEmojiActionSheet;
     }
     const tmp2Result = EmojiSuggestionBarUtils;
     return <EmojiEntranceAnimation key={tmp2Result.getEmojiEntranceKey(displayEmojis, arg1)} index={arg1} reducedMotion={importDefault}>{null}</EmojiEntranceAnimation>;

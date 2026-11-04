@@ -1,18 +1,18 @@
-// Module ID: 14799
-// Function ID: 14800
+// Module ID: 14879
+// Function ID: 14880
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 575, 5141, 14800, 1113, 14801, 5747, 1377, 5426, 7986, 7995, 2]
+// Dependencies: [19, 17, 21, 575, 5141, 14880, 1113, 14881, 5761, 1377, 5428, 8002, 8011, 2]
 // Exports: default
 
-// Module 14799 (AppStoreOverlayStatsCarousel)
+// Module 14879 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AnalyticsActions from "AnalyticsActions" /* 7986 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14800 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14801 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AnalyticsActions from "AnalyticsActions" /* 8002 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 14880 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 14881 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -115,14 +115,14 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     str9 = "(" + ratingCount + ")";
   }
   items1[2] = str9;
-  const items2 = [metroImportAll(Text, { variant: "text-xs/semibold", color: "text-subtle", children: items1 }), metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, children: primaryText }), ];
+  const items2 = [metroImportAll(Text, { variant: "body-xs/semibold", color: "text-subtle", children: items1 }), metroImportDefault(Text_Text.Text, { variant: "body-md/semibold", color: "text-default", lineClamp: 1, children: primaryText }), ];
   let tmp24Result = null != secondaryContent || null != secondaryText;
   if (tmp24Result) {
     const obj8 = { style: tmp.secondaryRow, children: secondaryContent };
     const tmp26 = metroRequire;
     if (null == secondaryContent) {
-      const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp24(tmp21(5747).Text, obj9);
+      const obj9 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
+      secondaryContent = tmp24(tmp21(5761).Text, obj9);
     }
     tmp24Result = tmp24(tmp26, obj8);
   }
@@ -194,9 +194,9 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(7995).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(8011).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7995).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(8011).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

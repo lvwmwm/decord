@@ -1,14 +1,14 @@
-// Module ID: 7368
-// Function ID: 7369
+// Module ID: 7384
+// Function ID: 7385
 // Name: CodeField
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1187, 7208, 1113, 5754, 5747, 7081, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1187, 7223, 1113, 5768, 5761, 7096, 2]
 // Exports: CodeBlocks, default
 
-// Module 7368 (CodeField)
+// Module 7384 (CodeField)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7081 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7096 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -128,7 +128,7 @@ function CodeFieldInner(loading) {
   const obj3 = { style: tmp2.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   _slicedToArray(react.useState(""), 2);
   items1[0] = metroImportDefault(Text_Text.Text, obj3);
-  const obj4 = { style: tmp2.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
+  const obj4 = { style: tmp2.subtitle, variant: "body-sm/medium", color: "text-default", children: description };
   items1[1] = metroImportDefault(Text_Text.Text, obj4);
   const obj5 = { style: tmp2.inputContainer, children: metroImportDefault(SingleCodeInput, { loading: flag, error, count: num, onCodeEntered, codeType: NUMERIC, disabled, code: tmp4, setCode: tmp5 }) };
   items1[2] = metroImportDefault(hasOwnProperty, obj5);

@@ -1,20 +1,20 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 16820
+// Function ID: 16821
 // Name: SettingsAccountHeader
-// Dependencies: [19, 17, 5083, 1385, 1072, 7614, 21, 5141, 575, 16729, 1113, 7687, 504, 7288, 7121, 7101, 5754, 2]
+// Dependencies: [19, 17, 5083, 1385, 1072, 7630, 21, 5141, 575, 16821, 1113, 7703, 504, 7304, 7136, 7116, 5768, 2]
 
-// Module 16728 (SettingsAccountHeader)
+// Module 16820 (SettingsAccountHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7121 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7288 */;
-import Constants2 from "Constants" /* 7614 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16729 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7136 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7304 */;
+import Constants2 from "Constants" /* 7630 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 16821 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function SettingsAccountHeader() {
     if (null != bannerText) {
       ({ title: obj5.label, title: obj5.accessibilityLabel } = bannerText);
       const obj9 = { onPress: callback, variant: "danger", label: null, accessibilityLabel: null, trailing: React4(components_Button_Button.Button, obj10), start: true, end: true };
-      const TableRow = tmp2(7101).TableRow;
+      const TableRow = tmp2(7116).TableRow;
       obj10 = { text: null, accessibilityLabel: null, onPress: callback };
       ({ button: obj6.text, button: obj6.accessibilityLabel } = bannerText);
       tmp14 = React4(TableRow, obj9);

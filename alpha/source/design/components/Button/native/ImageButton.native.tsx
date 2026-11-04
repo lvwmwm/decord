@@ -1,18 +1,18 @@
-// Module ID: 9323
-// Function ID: 9324
+// Module ID: 9340
+// Function ID: 9341
 // Name: ImageButton
-// Dependencies: [19, 17, 21, 5141, 5760, 575, 5761, 1652, 5757, 5758, 5837, 5763, 8153, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 5774, 575, 5775, 1652, 5771, 5772, 5851, 5777, 8169, 5761, 2]
 // Exports: ImageButton
 
-// Module 9323 (ImageButton)
+// Module 9340 (ImageButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import springPresets from "springPresets" /* 5758 */;
-import ButtonConstants from "ButtonConstants" /* 5760 */;
-import ButtonHooks from "ButtonHooks" /* 5761 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import springPresets from "springPresets" /* 5772 */;
+import ButtonConstants from "ButtonConstants" /* 5774 */;
+import ButtonHooks from "ButtonHooks" /* 5775 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -23,9 +23,9 @@ const _modDef1652 = _mod1652;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const Text_Text = tmp2(5747);
-const Button_BaseButton = tmp2(5763);
-const BaseIconButton3 = tmp2(8153);
+const Text_Text = tmp2(5761);
+const Button_BaseButton = tmp2(5777);
+const BaseIconButton3 = tmp2(8169);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = createStyles.createStyles((arg0, arg1, arg2) => {
@@ -33,9 +33,9 @@ let closure_7 = createStyles.createStyles((arg0, arg1, arg2) => {
   let rect;
   let MEDIUM_BUTTON_PADDING = ButtonConstants.LARGE_BUTTON_PADDING;
   if ("sm" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5760).SMALL_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5774).SMALL_BUTTON_PADDING;
   } else if ("md" === arg0) {
-    MEDIUM_BUTTON_PADDING = tmp(5760).MEDIUM_BUTTON_PADDING;
+    MEDIUM_BUTTON_PADDING = tmp(5774).MEDIUM_BUTTON_PADDING;
   }
   const sum = arg1 + 2 * MEDIUM_BUTTON_PADDING;
   const tmpResult = ButtonConstants;
@@ -138,7 +138,7 @@ export function ImageButton(size) {
     const BaseIconButton2 = BaseIconButton3.BaseIconButton;
     const merged2 = Object.assign(merged);
     items6 = [hasOwnProperty(BaseIconButton2, obj7), ];
-    const obj8 = { variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
+    const obj8 = { variant: "body-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
     items6[1] = hasOwnProperty(Text_Text.Text, obj8);
     tmp15Result = tmp14(BaseButton, obj6);
   } else {

@@ -1,10 +1,10 @@
-// Module ID: 7013
-// Function ID: 7014
+// Module ID: 7028
+// Function ID: 7029
 // Name: isChangelogChannel
 // Dependencies: [4990, 5043, 2]
 // Exports: default
 
-// Module 7013 (isChangelogChannel)
+// Module 7028 (isChangelogChannel)
 import ChangelogConstants from "ChangelogConstants" /* 5043 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;

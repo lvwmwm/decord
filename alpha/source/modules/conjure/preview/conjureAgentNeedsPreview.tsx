@@ -1,12 +1,12 @@
-// Module ID: 12225
-// Function ID: 12226
+// Module ID: 12284
+// Function ID: 12285
 // Name: conjureAgentNeedsPreview
-// Dependencies: [10981, 11053, 504, 2]
+// Dependencies: [11029, 11102, 504, 2]
 // Exports: conjureAgentNeedsPreview, useConjureAgentNeedsPreview
 
-// Module 12225 (conjureAgentNeedsPreview)
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11053 */;
-import ConjureChatStore from "ConjureChatStore" /* 10981 */;
+// Module 12284 (conjureAgentNeedsPreview)
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11102 */;
+import ConjureChatStore from "ConjureChatStore" /* 11029 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

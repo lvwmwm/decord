@@ -1,17 +1,17 @@
-// Module ID: 15636
-// Function ID: 15637
+// Module ID: 15723
+// Function ID: 15724
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 7707, 575, 1113, 2190, 5747, 7106, 1187, 15637, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 7723, 575, 1113, 2190, 5761, 7121, 1187, 15724, 2]
 // Exports: default
 
-// Module 15636 (GuildBoostingMarketingFaq)
+// Module 15723 (GuildBoostingMarketingFaq)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7707 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15637 */;
+import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7723 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15724 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -193,7 +193,7 @@ export default function GuildBoostingMarketingFaq() {
         str = "interactive-text-active";
       }
       items1 = [, ];
-      const obj3 = { color: str, style: closure_0.question, variant: "text-md/normal", children: getQuestion.getQuestion() };
+      const obj3 = { color: str, style: closure_0.question, variant: "body-md/normal", children: getQuestion.getQuestion() };
       items1[0] = closure_1_7(Text, obj3);
       const obj4 = { source: AssetRegistryDefault, style: items2 };
       const Icon = tmp5(tmp6[12]).Icon;
@@ -201,7 +201,7 @@ export default function GuildBoostingMarketingFaq() {
       items1[1] = closure_1_7(Icon, obj4);
       items3 = [closure_1_8(PressableOpacity, obj2), ];
       if (tmp) {
-        const obj5 = { style: closure_0.answer, color: "interactive-text-active", variant: "text-sm/normal", children: getQuestion.getAnswer() };
+        const obj5 = { style: closure_0.answer, color: "interactive-text-active", variant: "body-sm/normal", children: getQuestion.getAnswer() };
         const Text2 = tmp5(tmp6[10]).Text;
         tmp = tmp7(Text2, obj5);
       }

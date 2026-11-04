@@ -1,14 +1,14 @@
-// Module ID: 12777
-// Function ID: 12778
+// Module ID: 12858
+// Function ID: 12859
 // Name: DoubleChevronSmallRightIcon
-// Dependencies: [19, 21, 575, 5836, 12778, 2]
+// Dependencies: [19, 21, 575, 5850, 12859, 2]
 // Exports: DoubleChevronSmallRightIcon
 
-// Module 12777 (DoubleChevronSmallRightIcon)
+// Module 12858 (DoubleChevronSmallRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 12778 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 12859 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

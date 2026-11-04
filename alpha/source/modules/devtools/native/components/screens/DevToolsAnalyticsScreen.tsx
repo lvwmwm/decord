@@ -1,20 +1,20 @@
-// Module ID: 17723
-// Function ID: 17724
+// Module ID: 17819
+// Function ID: 17820
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1385, 16373, 1072, 21, 5141, 575, 5747, 7101, 10393, 2171, 9329, 7106, 7478, 5851, 504, 7414, 6147, 7186, 7489, 12618, 5858, 17718, 7339, 2]
+// Dependencies: [32, 19, 17, 1385, 16462, 1072, 21, 5141, 575, 5761, 7116, 10441, 2171, 9346, 7121, 7494, 5865, 504, 7430, 6162, 7201, 7505, 12699, 5872, 17814, 7355, 2]
 // Exports: default
 
-// Module 17723 (DevToolsAnalyticsScreen)
+// Module 17819 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef2171 from "module_2171" /* 2171 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 16373 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 16462 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ function CommonProperty(arg0) {
   let name;
   ({ name, children } = arg0);
   const obj = { style: closure_10().commonProperty, children: items };
-  items = [metroImportAll(Text_Text.Text, { variant: "text-sm/semibold", color: "text-default", children: name }), children];
+  items = [metroImportAll(Text_Text.Text, { variant: "body-sm/semibold", color: "text-default", children: name }), children];
   return React4(View, obj);
 }
 function LoggedEvent(arg0) {
@@ -70,7 +70,7 @@ function LoggedEvent(arg0) {
   let tmp6 = View;
   let obj = {
     arrow: !tmp5Result2,
-    icon: closure_8(fingerprint(10393).AnalyticsIcon, {}),
+    icon: closure_8(fingerprint(10441).AnalyticsIcon, {}),
     label: event,
     subLabel: str2,
     onPress() {
@@ -79,7 +79,7 @@ function LoggedEvent(arg0) {
     start,
     end
   };
-  const TableRow = fingerprint(7101).TableRow;
+  const TableRow = fingerprint(7116).TableRow;
   if ("name" in properties) {
     str2 = properties.name;
   } else {
@@ -97,14 +97,14 @@ function LoggedEvent(arg0) {
     let obj2 = { style: tmp.detailsContainer, children: items4 };
     let obj3 = { style: tmp.commonPropertiesContainer, children: items1 };
     let obj4 = { name: "Timestamp (local)", children: tmp7(Text, obj5) };
-    obj5 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: obj6.calendar() };
-    Text = tmp8(5747).Text;
+    obj5 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: obj6.calendar() };
+    Text = tmp8(5761).Text;
     obj6 = _modDef2171(timestamp);
     items1 = [tmp7(CommonProperty, obj4), , ];
     let tmp7Result = null != user;
     const tmp12 = importDefault;
     if (tmp7Result) {
-      const obj7 = { name: "User ", children: closure_8(tmp12(9329), obj8) };
+      const obj7 = { name: "User ", children: closure_8(tmp12(9346), obj8) };
       obj8 = { user };
       tmp7Result = tmp7(tmp11, obj7);
     }
@@ -120,14 +120,14 @@ function LoggedEvent(arg0) {
             },
         children: items3
       };
-      const PressableOpacity = tmp8(7106).PressableOpacity;
-      const obj10 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", style: items2, children: fingerprint };
+      const PressableOpacity = tmp8(7121).PressableOpacity;
+      const obj10 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: items2, children: fingerprint };
       items2 = [tmp.monospace, { marginRight: 4 }];
-      items3 = [tmp7(fingerprint(5747).Text, obj10), tmp7(fingerprint(5851).CopyIcon, { size: "sm" })];
+      items3 = [tmp7(fingerprint(5761).Text, obj10), tmp7(fingerprint(5865).CopyIcon, { size: "sm" })];
       tmp7Result1 = tmp5(PressableOpacity, obj9);
     } else {
-      const obj11 = { variant: "text-sm/medium", color: "text-muted", style: tmp.monospace, children: "null" };
-      tmp7Result1 = tmp7(tmp8(5747).Text, obj11);
+      const obj11 = { variant: "body-sm/medium", color: "text-muted", style: tmp.monospace, children: "null" };
+      tmp7Result1 = tmp7(tmp8(5761).Text, obj11);
     }
     const obj12 = { name: "Fingerprint", children: tmp7Result1 };
     items1[2] = closure_8(CommonProperty, obj12);
@@ -142,7 +142,7 @@ function LoggedEvent(arg0) {
           let tmp;
           let tmp2;
           [tmp, tmp2] = item;
-          const obj2 = { variant: "text-sm/semibold", color: "text-brand", style: closure_1.customPropertyName, children: items };
+          const obj2 = { variant: "body-sm/semibold", color: "text-brand", style: closure_1.customPropertyName, children: items };
           items = [tmp, ":"];
           const obj = { style: closure_1.customProperty, children: items1 };
           items1 = [React4(Text_Text.Text, obj2), ];
@@ -152,10 +152,10 @@ function LoggedEvent(arg0) {
           const tmp6 = metroImportAll;
           if (null != tmp2) {
             const _JSON = JSON;
-            obj4 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", style: closure_1.monospace, children: JSON.stringify(tmp2) };
-            const obj3 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", style: closure_1.monospace, children: JSON.stringify(tmp2) };
+            obj4 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", style: closure_1.monospace, children: JSON.stringify(tmp2) };
+            const obj3 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", style: closure_1.monospace, children: JSON.stringify(tmp2) };
           } else {
-            obj4 = { variant: "text-sm/semibold", color: "text-muted", style: closure_1.monospace, children: "null" };
+            obj4 = { variant: "body-sm/semibold", color: "text-muted", style: closure_1.monospace, children: "null" };
           }
           items1[1] = tmp6(Text, obj4);
           return tmp3(tmp4, obj, tmp);
@@ -220,30 +220,30 @@ export default function DevToolsAnalyticsScreen() {
     reversed = items1;
   }
   const obj2 = { style: tmp.analyticsContainer, children: closure_8(FlashList, obj8) };
-  FlashList = tmp2(7414).FlashList;
-  const Stack = tmp2(6147).Stack;
+  FlashList = tmp2(7430).FlashList;
+  const Stack = tmp2(6162).Stack;
   const obj3 = { title: "Actions", hasIcons: true, children: items2 };
-  const TableRowGroup = tmp2(7186).TableRowGroup;
-  const obj4 = { icon: closure_8(trimmed(12618).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
-  const TableSwitchRow = tmp2(7489).TableSwitchRow;
+  const TableRowGroup = tmp2(7201).TableRowGroup;
+  const obj4 = { icon: closure_8(trimmed(12699).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
+  const TableSwitchRow = tmp2(7505).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5858).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17718).clearAnalyticsLog };
-  const TableRow = tmp2(7101).TableRow;
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(5872).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(17814).clearAnalyticsLog };
+  const TableRow = tmp2(7116).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];
-  const obj6 = { style: tmp.searchFieldContainer, children: closure_8(trimmed(7339).SearchBar, { placeholder: "Search by event name", onChange: tmp9 }) };
+  const obj6 = { style: tmp.searchFieldContainer, children: closure_8(trimmed(7355).SearchBar, { placeholder: "Search by event name", onChange: tmp9 }) };
   items3[1] = closure_8(View, obj6);
-  const TableRowGroup2 = tmp2(7186).TableRowGroup;
+  const TableRowGroup2 = tmp2(7201).TableRowGroup;
   const tmp13 = View;
   const tmp14 = closure_9;
   if (0 === loggedEvents.length) {
-    tmp12Result = tmp12(tmp2(7101).TableRow, { label: "No events logged." });
+    tmp12Result = tmp12(tmp2(7116).TableRow, { label: "No events logged." });
   } else {
     tmp12Result = null;
     if (0 === found.length) {
       const _HermesInternal = HermesInternal;
       const obj7 = { label: "No events match \"" + str + "\"" };
-      const TableRow2 = tmp2(7101).TableRow;
+      const TableRow2 = tmp2(7116).TableRow;
       tmp12Result = tmp12(TableRow2, obj7);
     }
   }

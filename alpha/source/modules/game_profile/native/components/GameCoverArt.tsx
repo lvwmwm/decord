@@ -1,15 +1,15 @@
-// Module ID: 9503
-// Function ID: 9504
+// Module ID: 9521
+// Function ID: 9522
 // Name: GameCoverArt
-// Dependencies: [19, 17, 21, 5141, 575, 9504, 1113, 5837, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9522, 1113, 5851, 5761, 2]
 // Exports: default
 
-// Module 9503 (GameCoverArt)
+// Module 9521 (GameCoverArt)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import useGameArtworkDefault from "useGameArtwork" /* 9504 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import useGameArtworkDefault from "useGameArtwork" /* 9522 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -122,7 +122,7 @@ function GameCoverArtFallback(arg0) {
   if (size === obj.COMPACT) {
     const obj2 = { style: items, accessible, accessibilityRole: "image", accessibilityLabel: gameName, children: React3(Text_Text.Text, obj3) };
     items = [tmp.container, style, tmp.compactFallback];
-    obj3 = { variant: "text-xxs/medium", lineClamp: 3, style: tmp.fallbackText, accessible: false, children: gameName };
+    obj3 = { variant: "footnote/medium", lineClamp: 3, style: tmp.fallbackText, accessible: false, children: gameName };
     return React3(_false, obj2);
   } else {
     let date = null;
@@ -160,7 +160,7 @@ function GameCoverArtFallback(arg0) {
 ({ StyleSheet, View: c3 } = react_native);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 const GameCoverArtSize = { SMALL: 0, [0]: "SMALL", LARGE: 1, [1]: "LARGE", COMPACT: 2, [2]: "COMPACT" };
-let closure_7 = { [GameCoverArtSize.SMALL]: { nameVariant: "text-xs/medium", nameLineClamp: 3, releaseYearVariant: "text-xxs/normal" }, [GameCoverArtSize.LARGE]: { nameVariant: "text-md/medium", nameLineClamp: 4, releaseYearVariant: "text-sm/normal" } };
+let closure_7 = { [GameCoverArtSize.SMALL]: { nameVariant: "body-xs/medium", nameLineClamp: 3, releaseYearVariant: "footnote/normal" }, [GameCoverArtSize.LARGE]: { nameVariant: "body-md/medium", nameLineClamp: 4, releaseYearVariant: "body-sm/normal" } };
 let createStyles = createStyles_mod;
 let obj2 = { container: obj3, image: size, iconContainer: obj4, backdropContainer: obj5, backdrop: obj6, icon: obj7, fallback: obj8, compactFallback: obj9, fallbackText: { textAlign: "center" }, spacer: { flex: 1 }, placeholder: obj10 };
 obj3 = { borderRadius: nativeDefault.radii.sm };

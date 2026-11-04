@@ -1,14 +1,14 @@
-// Module ID: 8313
-// Function ID: 8314
+// Module ID: 8329
+// Function ID: 8330
 // Name: FormText
-// Dependencies: [19, 21, 5141, 6898, 575, 1187, 2]
+// Dependencies: [19, 21, 5141, 6913, 575, 1187, 2]
 // Exports: default
 
-// Module 8313 (FormText)
+// Module 8329 (FormText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

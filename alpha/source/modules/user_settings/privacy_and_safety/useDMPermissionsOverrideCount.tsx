@@ -1,10 +1,10 @@
-// Module ID: 18056
-// Function ID: 18057
+// Module ID: 18153
+// Function ID: 18154
 // Name: useDMPermissionsOverrideCount
-// Dependencies: [5012, 4966, 18057, 504, 2]
+// Dependencies: [5012, 4966, 18154, 504, 2]
 // Exports: useDMPermissionsOverrideCount
 
-// Module 18056 (useDMPermissionsOverrideCount)
+// Module 18153 (useDMPermissionsOverrideCount)
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 

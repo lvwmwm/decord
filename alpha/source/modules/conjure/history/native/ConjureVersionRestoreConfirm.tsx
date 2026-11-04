@@ -1,14 +1,14 @@
-// Module ID: 12326
-// Function ID: 12327
+// Module ID: 12391
+// Function ID: 12392
 // Name: ConjureVersionRestoreConfirm
-// Dependencies: [32, 19, 21, 6084, 1113, 3995, 7186, 7100, 6080, 2]
+// Dependencies: [32, 19, 21, 6099, 1113, 3995, 7201, 7115, 6095, 2]
 // Exports: confirmRestoreVersion
 
-// Module 12326 (ConjureVersionRestoreConfirm)
+// Module 12391 (ConjureVersionRestoreConfirm)
 import intl7 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import useAlertStore from "useAlertStore" /* 6080 */;
-import AlertModal2 from "AlertModal" /* 6084 */;
+import useAlertStore from "useAlertStore" /* 6095 */;
+import AlertModal2 from "AlertModal" /* 6099 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -42,9 +42,9 @@ function ConjureVersionRestoreAlert(matchingBackup) {
   tmp4Result = undefined;
   if (null != matchingBackup) {
     const obj2 = { hasIcons: false, children: hasOwnProperty(TableCheckboxRow, obj3) };
-    const TableRowGroup = tmp5(7186).TableRowGroup;
+    const TableRowGroup = tmp5(7201).TableRowGroup;
     obj3 = { label: intl3.string(_modDef3995["+/pFME"]), subLabel: intl4.string(_modDef3995["+I112y"]), checked: first, onPress: tmp3 };
-    TableCheckboxRow = tmp5(7100).TableCheckboxRow;
+    TableCheckboxRow = tmp5(7115).TableCheckboxRow;
     intl3 = tmp5(1113).intl;
     intl4 = tmp5(1113).intl;
     tmp4Result = tmp4(TableRowGroup, obj2);
@@ -65,11 +65,11 @@ function ConjureVersionRestoreAlert(matchingBackup) {
       return tmp(tmp2);
     }
   };
-  const AlertActionButton = tmp5(6084).AlertActionButton;
+  const AlertActionButton = tmp5(6099).AlertActionButton;
   intl5 = tmp5(1113).intl;
   items = [hasOwnProperty(AlertActionButton, obj5), ];
   const obj6 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp5(6084).AlertActionButton;
+  const AlertActionButton2 = tmp5(6099).AlertActionButton;
   intl6 = tmp5(1113).intl;
   items[1] = hasOwnProperty(AlertActionButton2, obj6);
   return hasOwnProperty(AlertModal, obj);

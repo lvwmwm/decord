@@ -1,20 +1,20 @@
-// Module ID: 19470
-// Function ID: 19471
+// Module ID: 19574
+// Function ID: 19575
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 4990, 21, 5141, 575, 11359, 19397, 504, 1113, 6854, 6873, 8074, 6826, 6080, 19471, 19474, 19475, 14877, 19469, 5747, 2]
+// Dependencies: [19, 4990, 21, 5141, 575, 11409, 19501, 504, 1113, 6869, 6888, 8090, 6841, 6095, 19575, 19578, 19579, 14957, 19573, 5761, 2]
 // Exports: default
 
-// Module 19470 (VoicePanelConnectButton)
+// Module 19574 (VoicePanelConnectButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useAlertStore from "useAlertStore" /* 6080 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6826 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8074 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14877 */;
-import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 19471 */;
-import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 19474 */;
-import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 19475 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useAlertStore from "useAlertStore" /* 6095 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6841 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8090 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14957 */;
+import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 19575 */;
+import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 19578 */;
+import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 19579 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -138,7 +138,7 @@ export default function ConnectButton(props) {
       openAlert(VoicePanelNoJoinPermissionsAlert.VOICE_PANEL_NO_JOIN_PERMS_KEY, jsx(VoicePanelNoJoinPermissionsAlertDefault, {}));
     }
   }, items2);
-  const element = { onPress: callback1, props, accessibilityLabel: stringResult, style: tmp.connectButton, children: obj.useMemo(() => jsx(Text_Text.Text, { variant: "text-sm/semibold", color: "text-overlay-light", style: connectText.connectText, children }), items3) };
+  const element = { onPress: callback1, props, accessibilityLabel: stringResult, style: tmp.connectButton, children: obj.useMemo(() => jsx(Text_Text.Text, { variant: "body-sm/semibold", color: "text-overlay-light", style: connectText.connectText, children }), items3) };
   items3 = [stringResult, tmp.connectText];
   const tmp2Result = tmp2(tmp3[18]);
   return isAtMaxCapacity(tmp2Result, element);

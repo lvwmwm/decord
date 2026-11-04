@@ -3,60 +3,16 @@
 // Dependencies: []
 
 // Module 16386
-let map;
-
-
-export default function(arg0) {
-  map = arg0;
-  if (!map) {
-    const _Map = Map;
-    const self = this;
-    const self2 = this;
-    map = new Map();
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
+}
+if (undefined === all) {
+  let fn;
+  if (undefined !== all) {
+    fn = (fn) => typeof fn === "function" || fn === all;
   }
-  let obj = {
-    all: map,
-    on(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        value.push(arg1);
-      } else {
-        const items = [arg1];
-        const result = obj.set(arg0, items);
-      }
-    },
-    off(arg0, arg1) {
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const tmp = arg1;
-        if (tmp) {
-          value.splice(value.indexOf(arg1) >>> 0, 1);
-        } else {
-          const result = obj.set(arg0, []);
-        }
-      }
-    },
-    emit(arg0, arg1) {
-      let closure_0 = arg0;
-      let closure_1 = arg1;
-      const value = map.get(arg0);
-      const obj = map;
-      if (value) {
-        const substr = value.slice();
-        const mapped = substr.map((fn) => {
-          fn(closure_1);
-        });
-      }
-      const value2 = obj.get("*");
-      if (value2) {
-        const substr1 = value2.slice();
-        const mapped1 = substr1.map((fn) => {
-          fn(closure_0, closure_1);
-        });
-      }
-    }
-  };
-  return obj;
-};
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

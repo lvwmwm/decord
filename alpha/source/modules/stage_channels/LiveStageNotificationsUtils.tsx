@@ -1,12 +1,12 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 9255
+// Function ID: 9256
 // Name: LiveStageNotificationsUtils
-// Dependencies: [5365, 5073, 1083, 504, 2]
+// Dependencies: [5366, 5073, 1083, 504, 2]
 // Exports: useCanSendStageStartNotification, useDefaultSendStartStageNotificationToggle
 
-// Module 9238 (LiveStageNotificationsUtils)
+// Module 9255 (LiveStageNotificationsUtils)
 import Constants from "Constants" /* 1083 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5365 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5366 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import size from "module_2" /* 2 */;
 

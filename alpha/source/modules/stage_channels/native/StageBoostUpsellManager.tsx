@@ -1,20 +1,20 @@
-// Module ID: 19771
-// Function ID: 19772
+// Module ID: 19887
+// Function ID: 19888
 // Name: StageBoostUpsellManager
-// Dependencies: [5382, 4990, 5073, 5044, 6829, 7407, 5381, 6832, 9352, 4998, 6884, 2123, 2]
+// Dependencies: [5383, 4990, 5073, 5044, 6844, 7423, 5382, 6847, 9369, 4998, 6899, 2123, 2]
 
-// Module 19771 (StageBoostUpsellManager)
+// Module 19887 (StageBoostUpsellManager)
 import asyncRequire from "asyncRequire" /* 2123 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4998 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6829 */;
-import StageMediaHooks from "StageMediaHooks" /* 6832 */;
-import useChannelVideoLimit from "useChannelVideoLimit" /* 9352 */;
-import ActionSheetStore from "ActionSheetStore" /* 5382 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6844 */;
+import StageMediaHooks from "StageMediaHooks" /* 6847 */;
+import useChannelVideoLimit from "useChannelVideoLimit" /* 9369 */;
+import ActionSheetStore from "ActionSheetStore" /* 5383 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 
 const STAGE_BOOSTING_SHEET_KEY = StageChannelsConstants.STAGE_BOOSTING_SHEET_KEY;
@@ -52,7 +52,7 @@ class StageBoostUpsellManager extends AutomaticLifecycleManager {
                 if (PermissionStore.can(StageChannelPermissions.MODERATE_STAGE_CHANNEL_PERMISSIONS, channel)) {
                   const obj2 = { channel };
                   const obj3 = ActionSheetActionCreatorsDefault;
-                  obj3.openLazy(asyncRequire(6884, tmp7.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
+                  obj3.openLazy(asyncRequire(6899, tmp7.paths), STAGE_BOOSTING_SHEET_KEY, obj2);
                   c8 = true;
                 }
               }

@@ -1,14 +1,14 @@
 // Module ID: 5166
 // Function ID: 5167
 // Name: HexagonCampaignConstants
-// Dependencies: [1387, 1405, 1404, 1393, 1196, 5167, 2]
+// Dependencies: [1387, 1404, 1405, 1393, 1196, 5167, 2]
 
 // Module 5166 (HexagonCampaignConstants)
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import user from "user" /* 1393 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1404 */;
-import DisplayNameFont from "DisplayNameFont" /* 1405 */;
+import DisplayNameFont from "DisplayNameFont" /* 1404 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1405 */;
 import HexagonCampaignDates from "HexagonCampaignDates" /* 5167 */;
 import size from "module_2" /* 2 */;
 

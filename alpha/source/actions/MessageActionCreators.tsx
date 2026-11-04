@@ -1,9 +1,9 @@
-// Module ID: 7760
-// Function ID: 7761
+// Module ID: 7776
+// Function ID: 7777
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 6688, 7037, 7761, 7762, 7944, 7946, 7890, 6957, 6834, 502, 4990, 7947, 5012, 5869, 6181, 5073, 5881, 6962, 7954, 1385, 1072, 7956, 7625, 5146, 17, 3, 5868, 7957, 5872, 7960, 7961, 5880, 7966, 6906, 7986, 1252, 5870, 8002, 8006, 6564, 8008, 1113, 2190, 8336, 572, 10449, 6676, 10445, 8811, 1282, 6183, 7520, 9, 7791, 6683, 11, 5019, 5039, 7780, 6685, 15357, 10340, 9257, 15358, 2176, 7950, 1398, 7565, 8527, 15359, 8508, 11818, 15363, 9914, 14723, 14729, 7038, 1089, 8511, 2121, 8326, 5148, 10741, 6078, 2]
+// Dependencies: [32, 5, 6703, 7052, 7777, 7778, 7960, 7962, 7906, 6972, 6849, 502, 4990, 7963, 5012, 5883, 6196, 5073, 5895, 6977, 7970, 1385, 1072, 7972, 7641, 5146, 17, 3, 5882, 7973, 5886, 7976, 7977, 5894, 7982, 6921, 8002, 1252, 5884, 8018, 8022, 6579, 8024, 1113, 2190, 8352, 572, 10497, 6691, 10493, 8828, 1282, 6198, 7536, 9, 7807, 6698, 11, 5019, 5039, 7796, 6700, 15444, 10388, 9274, 15445, 2176, 7966, 1398, 7581, 8544, 15446, 8525, 11875, 15450, 9932, 14803, 14809, 7053, 1089, 8528, 2121, 8342, 5148, 10789, 6093, 2]
 
-// Module 7760 (MessageActionCreators)
+// Module 7776 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -12,43 +12,43 @@ import intl5 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5870 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5880 */;
-import merged5 from "merged5" /* 6676 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7625 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7791 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7890 */;
-import SlowmodeStore from "SlowmodeStore" /* 7954 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7956 */;
-import appMessageEmbedTracking from "appMessageEmbedTracking" /* 7961 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8002 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8006 */;
-import UploadUtils from "UploadUtils" /* 8336 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8811 */;
-import getInviteURLDefault from "getInviteURL" /* 9257 */;
-import createNonce from "createNonce" /* 10445 */;
-import createMessage from "createMessage" /* 10449 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10741 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15358 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5884 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
+import merged5 from "merged5" /* 6691 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7641 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7807 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7906 */;
+import SlowmodeStore from "SlowmodeStore" /* 7970 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7972 */;
+import appMessageEmbedTracking from "appMessageEmbedTracking" /* 7977 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8018 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8022 */;
+import UploadUtils from "UploadUtils" /* 8352 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8828 */;
+import getInviteURLDefault from "getInviteURL" /* 9274 */;
+import createNonce from "createNonce" /* 10493 */;
+import createMessage from "createMessage" /* 10497 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10789 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7037 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7761 */;
-import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 7762 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7944 */;
-import PendingReplyStore from "PendingReplyStore" /* 7946 */;
-import StickersStore from "StickersStore" /* 6957 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7052 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7777 */;
+import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 7778 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7960 */;
+import PendingReplyStore from "PendingReplyStore" /* 7962 */;
+import StickersStore from "StickersStore" /* 6972 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import EditMessageStore from "EditMessageStore" /* 7947 */;
+import EditMessageStore from "EditMessageStore" /* 7963 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import InviteStore from "InviteStore" /* 5869 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import InviteStore from "InviteStore" /* 5883 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import MessageConstants from "MessageConstants" /* 5146 */;
@@ -445,7 +445,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f91516 = () => {
+    const f91888 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -469,8 +469,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f91516));
-      withResult1.otherwise(f91516);
+      ({ message, messageName } = withResult1.otherwise(f91888));
+      withResult1.otherwise(f91888);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -526,6 +526,7 @@ let obj17 = {
     let isPreload;
     let jumpType;
     let messageId;
+    let nitroPrefetchKey;
     let offset;
     let onJumpComplete;
     let returnMessageId;
@@ -538,7 +539,7 @@ let obj17 = {
     if (extraProperties === undefined) {
       extraProperties = null;
     }
-    ({ isPreload, returnMessageId, skipLocalFetch, jumpType, avoidInitialScroll, onJumpComplete } = arg0);
+    ({ isPreload, returnMessageId, skipLocalFetch, jumpType, avoidInitialScroll, onJumpComplete, nitroPrefetchKey } = arg0);
     if (typeof context === "string") {
       obj17.trackJump(channelId, messageId, context, extraProperties);
     }
@@ -549,7 +550,7 @@ let obj17 = {
         pauseAllMediaPlayers();
       }
     }
-    const obj = { channelId, limit, jump: { messageId, flash, offset, returnMessageId, jumpType, onJumpComplete }, isPreload, skipLocalFetch, avoidInitialScroll };
+    const obj = { channelId, limit, jump: { messageId, flash, offset, returnMessageId, jumpType, onJumpComplete }, isPreload, skipLocalFetch, avoidInitialScroll, nitroPrefetchKey };
     return obj17.fetchMessages(obj);
   },
   focusMessage(channelId) {
@@ -633,7 +634,7 @@ let obj17 = {
     let focus;
     let forICYMI;
     let isPreload;
-    let obj3;
+    let obj4;
     let skipLocalFetch;
     let tmp4Result;
     let truncate;
@@ -644,7 +645,8 @@ let obj17 = {
     let jump = channelId.jump;
     ({ focus, truncate } = channelId);
     ({ forICYMI: GatewayConnectionStore, avoidInitialScroll: GuildJoinRequestStore, fetchKey } = channelId);
-    let messageId;
+    const nitroPrefetchKey = channelId.nitroPrefetchKey;
+    let c11;
     let merged1;
     ({ isPreload, skipLocalFetch, feature } = channelId);
     const channel = ChannelStore.getChannel(channelId);
@@ -690,9 +692,13 @@ let obj17 = {
         tmp6Result3.commit(start);
         const tmp6Result4 = tmp6(tmp5[46]);
         tmp6Result4.dispatch({ type: "LOAD_MESSAGES" });
-        messageId = undefined;
+        let messageId;
         if (jump != null) {
           messageId = jump.messageId;
+        }
+        c11 = messageId;
+        if (null != nitroPrefetchKey) {
+          c11 = undefined;
         }
         const self = this;
         if (typeof RemoteFetch === "function") {
@@ -706,10 +712,15 @@ let obj17 = {
             let tmp27 = channelId;
             const localMessages = fetchLocalMessages(channelId, fetchKey, before, after, limit, merged1);
           }
+          let tmp34;
+          if (null != nitroPrefetchKey) {
+            tmp34 = { prefetchKey: nitroPrefetchKey };
+            const obj3 = { prefetchKey: nitroPrefetchKey };
+          }
           const HTTP = tmp4(tmp5[51]).HTTP;
-          const request = { url: closure_28.MESSAGES(channelId), query: obj3, retries: 2, oldFormErrors: true, rejectWithError: tmp4Result.rejectWithMigratedError() };
+          const request = { url: closure_28.MESSAGES(channelId), query: obj4, headers: tmp34, retries: 2, oldFormErrors: true, rejectWithError: tmp4Result.rejectWithMigratedError() };
           const get = HTTP.get;
-          obj3 = { before, after, limit, around: messageId, preload: isPreload, feature };
+          obj4 = { before, after, limit, around: messageId, preload: isPreload, feature };
           tmp4Result = tmp4(tmp5[51]);
           const value = get(request);
           return value.then((result) => {
@@ -720,7 +731,7 @@ let obj17 = {
             dispatchMessages.measure(() => {
               let tmp21;
               body = body.body;
-              let flag = null != messageId;
+              let flag = null != c11;
               if (!flag) {
                 let tmp8 = body.length === limit;
                 if (tmp8) {
@@ -739,10 +750,10 @@ let obj17 = {
               }
               let flag3 = flag2;
               let tmp13 = flag;
-              if (null != messageId) {
+              if (null != c11) {
                 const _Math = Math;
                 const rounded = Math.floor(limit / 2);
-                const items = [messageId];
+                const items = [c11];
                 HermesBuiltin.arraySpread(items, body.map((id) => id.id), 1);
                 const found = items.filter((item, index, arr) => arr.indexOf(item) === index);
                 const sorted = found.sort(SnowflakeUtilsDefault.compare);
@@ -2667,9 +2678,9 @@ let obj17 = {
         const obj = id(c3[46]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f140289);
+        dispatchResult.then(f140993);
       }
-      const f140289 = () => {
+      const f140993 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[43]).intl;
@@ -2730,7 +2741,7 @@ let obj17 = {
               const obj = id(c3[46]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f140289);
+              dispatchResult.then(f140993);
             });
           }
           c3 = 3;

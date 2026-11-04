@@ -1,11 +1,11 @@
-// Module ID: 8919
-// Function ID: 8920
+// Module ID: 8936
+// Function ID: 8937
 // Name: useProfileFrameLayerAsset
-// Dependencies: [5, 32, 19, 17, 7497, 2110, 2022, 8920, 8921, 2]
+// Dependencies: [5, 32, 19, 17, 7513, 2110, 2022, 8937, 8938, 2]
 // Exports: default, isProfileFrameLayerShown, usePreloadLayerImages
 
-// Module 8919 (useProfileFrameLayerAsset)
-import Constants from "Constants" /* 7497 */;
+// Module 8936 (useProfileFrameLayerAsset)
+import Constants from "Constants" /* 7513 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ let c4, c5;
 
 let metroImportDefault;
 let metroRequire;
-const f93673 = (arg0) => {
+const f94050 = (arg0) => {
   closure_0 = arg0;
   size = size.getSize(closure_0, (arg0, arg1) => {
     if (arg0 > 0) {
@@ -43,7 +43,7 @@ function measureProfileFrameLayer(arg0) {
     if (null == value2) {
       const self = this;
       const self2 = this;
-      const promise = new Promise(f93673);
+      const promise = new Promise(f94050);
       const cleanupPromise = promise.finally(() => set.delete(closure_0));
       const result = obj.set(arg0, cleanupPromise);
       value2 = cleanupPromise;
@@ -189,7 +189,7 @@ export default function useProfileFrameLayerAsset(width) {
             if (null == resolved) {
               const self = this;
               const self2 = this;
-              const promise = new Promise(f93673);
+              const promise = new Promise(f94050);
               const cleanupPromise = promise.finally(() => set.delete(closure_0));
               let result = obj.set(tmp, cleanupPromise);
               resolved = cleanupPromise;

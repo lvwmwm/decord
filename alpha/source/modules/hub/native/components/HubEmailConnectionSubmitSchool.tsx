@@ -1,20 +1,20 @@
-// Module ID: 14481
-// Function ID: 14482
+// Module ID: 14561
+// Function ID: 14562
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 14460, 1072, 21, 5141, 575, 1499, 5730, 14473, 6566, 14468, 1187, 1113, 5747, 7207, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 14540, 1072, 21, 5141, 575, 1499, 5743, 14553, 6581, 14548, 1187, 1113, 5761, 7222, 5768, 2]
 // Exports: default
 
-// Module 14481 (HubEmailConnectionSubmitSchool)
+// Module 14561 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7207 */;
-import HubConstants from "HubConstants" /* 14460 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 14468 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7222 */;
+import HubConstants from "HubConstants" /* 14540 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 14548 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -180,7 +180,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
   const LegacyText = native.LegacyText;
   intl = intl6.intl;
   items1 = [closure_9(LegacyText, obj6), , ];
-  const obj7 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl6.t["/4y6ox"]) };
+  const obj7 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl6.t["/4y6ox"]) };
   const Text = Text_Text.Text;
   intl2 = intl6.intl;
   items1[1] = closure_9(Text, obj7);
@@ -233,7 +233,7 @@ export default function HubEmailConnectionSubmitSchool(arg0) {
       return obj(...arguments);
     }
   };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   intl5 = tmp2(1113).intl;
   items2[2] = closure_9(first1, obj12);
   return closure_9(HubEmailConnectionScreen, obj10);

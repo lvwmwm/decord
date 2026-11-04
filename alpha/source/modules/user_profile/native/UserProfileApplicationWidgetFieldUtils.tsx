@@ -1,17 +1,17 @@
-// Module ID: 12483
-// Function ID: 12484
+// Module ID: 12548
+// Function ID: 12549
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 5141, 575, 1113, 12484, 5747, 12485, 5837, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1113, 12549, 5761, 12550, 5851, 2]
 // Exports: FieldText, formatDurationNarrow
 
-// Module 12483 (UserProfileApplicationWidgetFieldUtils)
+// Module 12548 (UserProfileApplicationWidgetFieldUtils)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 12484 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 12485 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 12549 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 12550 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

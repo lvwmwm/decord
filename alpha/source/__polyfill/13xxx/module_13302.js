@@ -1,121 +1,23 @@
 // Module ID: 13302
 // Function ID: 13303
-// Dependencies: [13191, 13189, 13190]
-// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
+// Dependencies: [13279]
+// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
 
 // Module 13302
-import _mod13189 from "module_13189" /* 13189 */;
-import _mod13191 from "module_13191" /* 13191 */;
+import _mod13279 from "module_13279" /* 13279 */;
 
-function supportsFetch() {
-  if ("fetch" in _mod13191.GLOBAL_OBJ) {
-    try {
-      const _Headers = Headers;
-      const self = this;
-      const headers = new Headers();
-      const _Request = Request;
-      const self2 = this;
-      const request = new Request("http://www.example.com");
-      const _Response = Response;
-      const self3 = this;
-      const response = new Response();
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-}
-function isNativeFunction(arg0) {
-  let isMatch = arg0;
-  if (isMatch) {
-    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
-    isMatch = obj.test(arg0.toString());
-  }
-  return isMatch;
-}
+const _sentryScope = "_sentryScope";
+const _sentryIsolationScope = "_sentryIsolationScope";
 
-export { isNativeFunction };
-export function supportsDOMError() {
-  try {
-    const self = this;
-    const dOMError = new globalThis.DOMError("");
-    return true;
-  } catch (err) {
-    return false;
-  }
+export function getCapturedScopesOnSpan(scope) {
+  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
 }
-export function supportsDOMException() {
-  try {
-    const self = this;
-    const dOMException = new globalThis.DOMException("");
-    return true;
-  } catch (err) {
-    return false;
+export function setCapturedScopesOnSpan(arg0, arg1, arg2) {
+  const tmp = arg0;
+  if (tmp) {
+    const obj = _mod13279;
+    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
+    const obj2 = _mod13279;
+    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
   }
-}
-export function supportsErrorEvent() {
-  try {
-    const self = this;
-    const errorEvent = new globalThis.ErrorEvent("");
-    return true;
-  } catch (err) {
-    return false;
-  }
-}
-export { supportsFetch };
-export function supportsNativeFetch() {
-  if (typeof globalThis.EdgeRuntime === "string") {
-    return true;
-  } else if (supportsFetch()) {
-    const tmp = isNativeFunction;
-    if (isNativeFunction(_mod13191.GLOBAL_OBJ.fetch)) {
-      return true;
-    } else {
-      let flag2 = false;
-      const _document = tmp2(13191).GLOBAL_OBJ.document;
-      if (_document) {
-        if (typeof _document.createElement === "function") {
-          try {
-            const element = <iframe />;
-            element.hidden = true;
-            const head = _document.head;
-            head.appendChild(element);
-            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
-            if (_fetch) {
-              flag2 = tmp(tmp5.contentWindow.fetch);
-            }
-            const head2 = _document.head;
-            head2.removeChild(element);
-          } catch (tmp10) {
-            if (_mod13189.DEBUG_BUILD) {
-              const logger = tmp2(13190).logger;
-              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
-            }
-          }
-        }
-      }
-      return flag2;
-    }
-  } else {
-    return false;
-  }
-}
-export function supportsReferrerPolicy() {
-  if (supportsFetch()) {
-    try {
-      const _Request = Request;
-      const self = this;
-      const request = new Request("_", { referrerPolicy: "origin" });
-      return true;
-    } catch (err) {
-      return false;
-    }
-  } else {
-    return false;
-  }
-}
-export function supportsReportingObserver() {
-  return "ReportingObserver" in _mod13191.GLOBAL_OBJ;
 }

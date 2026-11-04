@@ -1,25 +1,21 @@
 // Module ID: 9996
 // Function ID: 9997
 // Dependencies: []
-// Exports: getModalRouteKeys
+// Exports: createAbortError
 
 // Module 9996
 
-export const getModalRouteKeys = (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.reduce((arr, key) => {
-    let options;
-    if (closure_0[key.key] != null) {
-      options = tmp.options;
+export function createAbortError(signal) {
+  let aborted;
+  if (signal != null) {
+    aborted = signal.aborted;
+  }
+  if (aborted) {
+    if (undefined !== signal.reason) {
+      return signal.reason;
     }
-    if (options == null) {
-      options = {};
-    }
-    const presentation = options.presentation;
-    const tmp2 = arr.length && !presentation || "modal" === presentation || "transparentModal" === presentation || "containedModal" === presentation || "containedTransparentModal" === presentation || "fullScreenModal" === presentation || "formSheet" === presentation || "pageSheet" === presentation;
-    if (tmp2) {
-      arr.push(key.key);
-    }
-    return arr;
-  }, []);
-};
+  }
+  const error = new Error("The operation was aborted.");
+  error.name = "AbortError";
+  return error;
+}

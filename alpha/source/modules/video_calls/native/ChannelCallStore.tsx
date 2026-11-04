@@ -1,22 +1,22 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 11181
+// Function ID: 11182
 // Name: ChannelCallStore
-// Dependencies: [19, 4989, 11134, 5801, 4985, 9027, 560, 1259, 5879, 12, 11135, 11136, 11137, 504, 2148, 11138, 2]
+// Dependencies: [19, 4989, 11182, 5815, 4985, 9044, 560, 1259, 5893, 12, 11183, 11184, 11185, 504, 2148, 11186, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers, useIsVoiceChatFocused
 
-// Module 11133 (ChannelCallStore)
+// Module 11181 (ChannelCallStore)
 import react_native from "react-native" /* 1259 */;
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2148 */;
 import Timers from "Timers" /* 4985 */;
-import CallConstants from "CallConstants" /* 5801 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5879 */;
-import DeviceOrientation from "DeviceOrientation" /* 9027 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 11135 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 11136 */;
-import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 11138 */;
+import CallConstants from "CallConstants" /* 5815 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
+import DeviceOrientation from "DeviceOrientation" /* 9044 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 11183 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 11184 */;
+import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 11186 */;
 import react_mod from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 11134 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11182 */;
 import module_560 from "module_560" /* 560 */;
 import module_12 from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ let _require, dependencyMap, importDefault;
 let VoiceCallOverlayType;
 let VoiceChatDrawerState;
 let obj2;
-const f98795 = () => {
+const f99433 = () => {
   const obj = require("react-native");
   obj.batchUpdates(() => state.setState({ focus: false }));
 };
@@ -37,10 +37,10 @@ const ParticipantTypes = CallConstants.ParticipantTypes;
 const timeout = new Timers.Timeout();
 let obj = { focus: true, pipFocus: false, isGestureEnabled: true, voiceChatDrawerState: VoiceChatDrawerState.CLOSED, voiceCallOverlayLayoutStates: obj2 };
 obj2 = {};
-let size = { x: "Array", y: "Path", width: "disabled", height: "Map", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "message", isInitialized: "properties", isVisible: null };
+let size = { x: "Array", y: "Path", width: "dispatch", height: "t", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: true };
 const VOICE_CONTROLS_TOGGLE_BUTTON = VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON;
 obj2[VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "Path", width: "disabled", height: "Map", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "message", isInitialized: "properties", isVisible: null };
+const size1 = { x: "Array", y: "Path", width: "dispatch", height: "t", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: true };
 const CAMERA_PREVIEW_PICTURE_IN_PICTURE = VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE;
 obj2[CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let closure_8 = freeze(obj);
@@ -75,13 +75,13 @@ export function toggleFocus() {
 }
 export function resetFocusTimer() {
   timeout.stop();
-  timeout.start(5000, f98795);
+  timeout.start(5000, f99433);
 }
 export function resetFocus() {
   let state;
   if (obj3.getState().focus) {
     timeout.stop();
-    timeout.start(5000, f98795);
+    timeout.start(5000, f99433);
   } else {
     let obj = react_native;
     obj.batchUpdates(() => state.setState({ focus: true }));

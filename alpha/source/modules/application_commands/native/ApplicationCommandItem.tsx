@@ -1,14 +1,14 @@
-// Module ID: 14095
-// Function ID: 14096
+// Module ID: 14181
+// Function ID: 14182
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 5053, 10355, 21, 5141, 575, 5762, 504, 13924, 7106, 1113, 5837, 5747, 2]
+// Dependencies: [19, 17, 5053, 10403, 21, 5141, 575, 5776, 504, 14010, 7121, 1113, 5851, 5761, 2]
 // Exports: default
 
-// Module 14095 (ApplicationCommandItem)
+// Module 14181 (ApplicationCommandItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10355 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13924 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10403 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14010 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import Fragment from "Fragment" /* 21 */;
@@ -102,12 +102,12 @@ export default function ApplicationCommandItem(onPress) {
   items2 = [showIcon, , ];
   const obj7 = { style: tmp3.applicationCommandDescriptionWrapper, children: items3 };
   items3 = [, ];
-  const obj8 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
+  const obj8 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: `/ ${command.displayName}` };
   items3[0] = closure_7(tmp(tmp2[13]).Text, obj8);
-  const obj9 = { lineClamp: 1, variant: "text-xs/medium", color: "text-default", children: command.displayDescription };
+  const obj9 = { lineClamp: 1, variant: "body-xs/medium", color: "text-default", children: command.displayDescription };
   items3[1] = closure_7(tmp(tmp2[13]).Text, obj9);
   items2[1] = closure_8(View, obj7);
-  const obj10 = { style: tmp3.applicationCommandSectionName, variant: "eyebrow", color: "text-muted", children: name };
+  const obj10 = { style: tmp3.applicationCommandSectionName, variant: "body-sm/medium", color: "text-muted", children: name };
   items2[2] = closure_7(tmp(tmp2[13]).Text, obj10);
   return closure_8(PressableOpacity, obj3);
 };

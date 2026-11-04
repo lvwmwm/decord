@@ -1,11 +1,11 @@
-// Module ID: 13839
-// Function ID: 13840
+// Module ID: 13925
+// Function ID: 13926
 // Name: getPlayInContext
-// Dependencies: [4989, 5044, 504, 11885, 2]
+// Dependencies: [4989, 5044, 504, 11944, 2]
 // Exports: getPlayInContext, usePlayInContext
 
-// Module 13839 (getPlayInContext)
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11885 */;
+// Module 13925 (getPlayInContext)
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11944 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import size from "module_2" /* 2 */;
@@ -88,7 +88,7 @@ export function getPlayInContext(id, channel_id) {
       tmp3 = require;
       NO_CHANNEL = getEmbeddedActivityLaunchability.EmbeddedActivityLaunchability.NO_CHANNEL;
     }
-    const CAN_LAUNCH = tmp3(11885).EmbeddedActivityLaunchability.CAN_LAUNCH;
+    const CAN_LAUNCH = tmp3(11944).EmbeddedActivityLaunchability.CAN_LAUNCH;
     const embeddedActivitiesForChannel = EmbeddedActivitiesStore.getEmbeddedActivitiesForChannel(channelId);
     const found = embeddedActivitiesForChannel.filter((applicationId) => applicationId.applicationId === closure_0);
     let first;

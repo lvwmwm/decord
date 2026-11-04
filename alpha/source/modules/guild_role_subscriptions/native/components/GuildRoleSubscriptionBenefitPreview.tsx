@@ -1,18 +1,18 @@
-// Module ID: 20134
-// Function ID: 20135
+// Module ID: 20250
+// Function ID: 20251
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 17339, 21, 5141, 17373, 7498, 5747, 17376, 17365, 5772, 1113, 2]
+// Dependencies: [19, 17, 17430, 21, 5141, 17464, 7514, 5761, 17467, 17456, 5786, 1113, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 20134 (GuildRoleSubscriptionBenefitPreview)
+// Module 20250 (GuildRoleSubscriptionBenefitPreview)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7498 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17339 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17365 */;
-import EmojiIconDefault from "EmojiIcon" /* 17373 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17376 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7514 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17430 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 17456 */;
+import EmojiIconDefault from "EmojiIcon" /* 17464 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17467 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -60,7 +60,7 @@ function DescriptiveBenefitRow(benefit) {
   ({ children, guildId, isInteractive } = benefit);
   let tmp2 = null;
   if (null != benefit.description) {
-    const obj = { style: tmp.benefitDescription, variant: "text-sm/medium", color: "interactive-text-default", children: benefit.description };
+    const obj = { style: tmp.benefitDescription, variant: "body-sm/medium", color: "interactive-text-default", children: benefit.description };
     tmp2 = hasOwnProperty(Text_Text.Text, obj);
   }
   const obj2 = { emoji: obj3.getBenefitEmojiId(benefit), guildId, isInteractive, children: items };
@@ -81,8 +81,8 @@ function ChannelBenefitRow(benefit) {
   const obj = GuildRoleSubscriptionTierTemplatesUtils;
   const channelWithTemplateFallback = obj.useChannelWithTemplateFallback(benefit.ref_id);
   if (null == channelWithTemplateFallback) {
-    const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
-    const Text = tmp2(5747).Text;
+    const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(intl2.t.bz1PZX) + "]" };
+    const Text = tmp2(5761).Text;
     intl = tmp2(1113).intl;
     const _HermesInternal = HermesInternal;
     tmp8 = hasOwnProperty(Text, obj2);
@@ -93,7 +93,7 @@ function ChannelBenefitRow(benefit) {
     const obj5 = { style: tmp.channelIcon, size: "xs" };
     const tmp2Result = GuildRoleSubscriptionBenefitUtils;
     items[0] = tmp2Result.renderChannelIcon(channelWithTemplateFallback, obj5);
-    const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp5 };
+    const obj6 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: tmp5 };
     items[1] = hasOwnProperty(Text_Text.Text, obj6);
     tmp8 = hasOwnProperty(DescriptiveBenefitRow, obj3);
   }
@@ -103,7 +103,7 @@ function IntangibleBenefitRow(benefit) {
   let obj2;
   benefit = benefit.benefit;
   const obj = { benefit, guildId: benefit.guildId, isInteractive: benefit.isInteractive, children: hasOwnProperty(Text_Text.Text, obj2) };
-  obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: benefit.name };
+  obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: benefit.name };
   return hasOwnProperty(DescriptiveBenefitRow, obj);
 }
 function EmojiBenefitRow(benefit) {
@@ -115,11 +115,11 @@ function EmojiBenefitRow(benefit) {
   const tmp = closure_7();
   const obj = { emoji: benefit.id, guildId, contentStyle: tmp.emojiRow, isInteractive, children: items };
   items = [, , ];
-  const obj2 = { style: tmp.emojiColons, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const obj2 = { style: tmp.emojiColons, variant: "body-md/medium", color: "text-muted", children: ":" };
   items[0] = hasOwnProperty(Text_Text.Text, obj2);
-  const obj3 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: benefit.name };
+  const obj3 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: benefit.name };
   items[1] = hasOwnProperty(Text_Text.Text, obj3);
-  const obj4 = { style: tmp.emojiColons, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const obj4 = { style: tmp.emojiColons, variant: "body-md/medium", color: "text-muted", children: ":" };
   items[2] = hasOwnProperty(Text_Text.Text, obj4);
   return metroRequire(BaseBenefitRow, obj);
 }

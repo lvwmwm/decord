@@ -1,13 +1,13 @@
-// Module ID: 17294
-// Function ID: 17295
+// Module ID: 17386
+// Function ID: 17387
 // Name: QuestThemePicker
-// Dependencies: [19, 17, 1193, 1192, 1240, 1083, 21, 5141, 575, 7446, 7471, 5373, 504, 1241, 5719, 2155, 17152, 5747, 12355, 1113, 2]
+// Dependencies: [19, 17, 1193, 1192, 1240, 1083, 21, 5141, 575, 7462, 7487, 5374, 504, 1241, 5732, 2155, 17244, 5761, 12420, 1113, 2]
 
-// Module 17294 (QuestThemePicker)
+// Module 17386 (QuestThemePicker)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17152 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17244 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
@@ -130,7 +130,7 @@ class QuestThemePicker {
         }
         items[2] = themeCircleSelected;
         items1 = [callback(tmp5, { style: items }), ];
-        const obj2 = { variant: "text-xs/medium", color: "text-muted", style: backgroundColor.themeLabel, children: backgroundColor.name };
+        const obj2 = { variant: "body-xs/medium", color: "text-muted", style: backgroundColor.themeLabel, children: backgroundColor.name };
         items1[1] = callback(backgroundColor(allMobileThemes[17]).Text, obj2);
         return tmp(tmp2, obj, backgroundColor.theme);
       }),
@@ -140,7 +140,7 @@ class QuestThemePicker {
     items8 = [, ];
     const obj10 = { style: tmp.resetIcon, children: callback(require("RefreshIcon").RefreshIcon, { size: "sm" }) };
     items8[0] = callback(isSynced, obj10);
-    const obj11 = { variant: "text-xs/medium", color: "text-muted", style: tmp.themeLabel, children: intl.string(require("intl").t.yBZMsQ) };
+    const obj11 = { variant: "body-xs/medium", color: "text-muted", style: tmp.themeLabel, children: intl.string(require("intl").t.yBZMsQ) };
     const Text = require("Text/Text").Text;
     intl = require("intl").intl;
     items8[1] = callback(Text, obj11);

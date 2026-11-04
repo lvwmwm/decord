@@ -1,18 +1,18 @@
-// Module ID: 14047
-// Function ID: 14048
+// Module ID: 14133
+// Function ID: 14134
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 4990, 5083, 1385, 10857, 21, 5141, 575, 7019, 5195, 5772, 12, 10859, 1113, 5747, 10861, 10863, 13539, 14048, 2]
+// Dependencies: [32, 19, 17, 4990, 5083, 1385, 10905, 21, 5141, 575, 7034, 5195, 5786, 12, 10907, 1113, 5761, 10909, 10911, 13623, 14134, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 14047 (NewMessageUserList)
+// Module 14133 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import fuzzysearchDefault from "fuzzysearch" /* 7019 */;
-import UserRowConstants from "UserRowConstants" /* 10857 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import fuzzysearchDefault from "fuzzysearch" /* 7034 */;
+import UserRowConstants from "UserRowConstants" /* 10905 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -49,7 +49,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult1 = globalName.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult1) {
-          if (tmp19(7019)(trimmed1, tmp7)) {
+          if (tmp19(7034)(trimmed1, tmp7)) {
             obj.return();
             return 1;
           }
@@ -60,7 +60,7 @@ function matchGroupDMRecipients(trimmed1, recipients) {
           toLocaleLowerCaseResult2 = nickname.toLocaleLowerCase();
         }
         if (null != toLocaleLowerCaseResult2) {
-          if (tmp19(7019)(trimmed1, tmp12)) {
+          if (tmp19(7034)(trimmed1, tmp12)) {
             obj.return();
             return 1;
           }
@@ -339,7 +339,7 @@ export default function NewMessageUserList(selectedUserIds) {
         }
         const element = { type: "user", props: obj };
         obj.mode = TOGGLE;
-        const obj2 = { variant: "text-xs/medium", color: "text-muted", children: obj8.getUserTag(user) };
+        const obj2 = { variant: "body-xs/medium", color: "text-muted", children: obj8.getUserTag(user) };
         const Text = Text_Text.Text;
         obj8 = UserUtilsDefault;
         obj.subLabel = authStore(Text, obj2);

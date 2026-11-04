@@ -1,20 +1,20 @@
-// Module ID: 9222
-// Function ID: 9223
+// Module ID: 9239
+// Function ID: 9240
 // Name: GuildEventsNoContent
-// Dependencies: [19, 17, 5073, 1072, 1083, 21, 5141, 575, 6843, 504, 5747, 1113, 9202, 2]
+// Dependencies: [19, 17, 5073, 1072, 1083, 21, 5141, 575, 6858, 504, 5761, 1113, 9219, 2]
 // Exports: default
 
-// Module 9222 (GuildEventsNoContent)
+// Module 9239 (GuildEventsNoContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import Constants from "Constants" /* 1083 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import TextStyles from "TextStyles" /* 6843 */;
+import TextStyles from "TextStyles" /* 6858 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;
@@ -52,19 +52,19 @@ export default function GuildEventsNoContent(guild) {
   let stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(metroRequire.MANAGE_ROLES, guild), items1);
   const obj2 = { style: tmp.container, children: items2 };
   const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(guild(1113).t["WgZ+3D"]) };
-  const Text = guild(5747).Text;
+  const Text = guild(5761).Text;
   intl = guild(1113).intl;
   items2 = [closure_7(Text, obj3), , ];
-  const obj4 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl2.string(guild(1113).t["v/S/PG"]) };
-  const Text2 = guild(5747).Text;
+  const obj4 = { style: tmp.subtitle, variant: "body-sm/normal", color: "text-default", children: intl2.string(guild(1113).t["v/S/PG"]) };
+  const Text2 = guild(5761).Text;
   intl2 = guild(1113).intl;
   items2[1] = closure_7(Text2, obj4);
   const tmp5 = closure_8;
   const tmp6 = View;
   const tmp7 = closure_7;
   if (stateFromStores) {
-    const obj5 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl3.format(guild(1113).t["K+DH2o"], obj6) };
-    const Text3 = tmp2(5747).Text;
+    const obj5 = { style: tmp.subtitle, variant: "body-sm/normal", color: "text-default", children: intl3.format(guild(1113).t["K+DH2o"], obj6) };
+    const Text3 = tmp2(5761).Text;
     intl3 = tmp2(1113).intl;
     obj6 = {
       onClick() {

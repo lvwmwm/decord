@@ -1,10 +1,10 @@
-// Module ID: 14119
-// Function ID: 14120
+// Module ID: 14205
+// Function ID: 14206
 // Name: react
 // Dependencies: [19, 2]
 // Exports: getChildMapping, mergeChildMappings
 
-// Module 14119 (react)
+// Module 14205 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 13488
-// Function ID: 13489
+// Module ID: 13572
+// Function ID: 13573
 // Name: AgeVerificationSystemNotificationUtils
-// Dependencies: [11505, 6181, 1072, 8124, 2]
+// Dependencies: [11555, 6196, 1072, 8140, 2]
 // Exports: isAgeVerificationMessageWithConfirmAgeCta, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta
 
-// Module 13488 (AgeVerificationSystemNotificationUtils)
+// Module 13572 (AgeVerificationSystemNotificationUtils)
 import Constants from "Constants" /* 1072 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8124 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11505 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8140 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11555 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import size from "module_2" /* 2 */;
 
 const MessageEmbedTypes = Constants.MessageEmbedTypes;

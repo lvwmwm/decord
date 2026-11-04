@@ -1,39 +1,15 @@
 // Module ID: 16381
 // Function ID: 16382
-// Dependencies: []
-// Exports: getReactNativeVersionWithModules
+// Dependencies: [16360]
 
 // Module 16381
+import _mod16360 from "module_16360" /* 16360 */;
 
-export function getReactNativeVersionWithModules(constants) {
-  try {
-    const tmp = constants;
-    if (tmp) {
-      if (constants.reactNativeVersion) {
-        const major = constants.reactNativeVersion.major;
-        const minor = constants.reactNativeVersion.minor;
-        const patch = constants.reactNativeVersion.patch;
-        const prerelease = constants.reactNativeVersion.prerelease;
-        if (typeof major !== "number") {
-          return null;
-        } else {
-          const items = [];
-          const _HermesInternal2 = HermesInternal;
-          items.push("" + tmp4 + "." + minor + "." + patch);
-          const tmp16 = prerelease;
-          if (tmp16) {
-            const _HermesInternal = HermesInternal;
-            items.push("-" + prerelease);
-          }
-          return items.join("");
-        }
-      } else {
-        return null;
-      }
-    } else {
-      return null;
-    }
-  } catch (err) {
-    return null;
-  }
+const tmp = _mod16360.navigator && _mod16360.navigator.userAgent;
+let str = "";
+if (tmp) {
+  const _String = String;
+  str = String(tmp);
 }
+
+export default str;

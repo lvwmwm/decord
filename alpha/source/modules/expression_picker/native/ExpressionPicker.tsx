@@ -1,16 +1,16 @@
-// Module ID: 10368
-// Function ID: 10369
+// Module ID: 10416
+// Function ID: 10417
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1228, 1072, 1388, 21, 5141, 575, 10369, 10076, 9108, 1497, 1625, 5880, 10101, 10370, 5397, 9342, 10371, 10372, 10395, 2]
+// Dependencies: [19, 17, 1228, 1072, 1388, 21, 5141, 575, 10417, 10124, 9125, 1497, 1625, 5894, 10149, 10418, 5398, 9359, 10419, 10420, 10443, 2]
 
-// Module 10368 (ExpressionPicker)
+// Module 10416 (ExpressionPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5880 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 10076 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 10101 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 10124 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 10149 */;
 import react from "react" /* 19 */;
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import Fragment from "Fragment" /* 21 */;

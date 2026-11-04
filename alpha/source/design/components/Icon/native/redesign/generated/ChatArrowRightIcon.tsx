@@ -1,14 +1,14 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11357
+// Function ID: 11358
 // Name: ChatArrowRightIcon
-// Dependencies: [19, 21, 575, 5836, 11308, 2]
+// Dependencies: [19, 21, 575, 5850, 11358, 2]
 // Exports: ChatArrowRightIcon
 
-// Module 11307 (ChatArrowRightIcon)
+// Module 11357 (ChatArrowRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 11308 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 11358 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 11802
-// Function ID: 11803
+// Module ID: 11859
+// Function ID: 11860
 // Name: trackRepliedMessageClicked
-// Dependencies: [7890, 1072, 9576, 5880, 2]
+// Dependencies: [7906, 1072, 9595, 5894, 2]
 // Exports: default
 
-// Module 11802 (trackRepliedMessageClicked)
+// Module 11859 (trackRepliedMessageClicked)
 import Constants from "Constants" /* 1072 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 7890 */;
-import maybeCreateMessageRecordFromSnapshotDefault from "maybeCreateMessageRecordFromSnapshot" /* 9576 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 7906 */;
+import maybeCreateMessageRecordFromSnapshotDefault from "maybeCreateMessageRecordFromSnapshot" /* 9595 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageState = ReferencedMessageStore.ReferencedMessageState;

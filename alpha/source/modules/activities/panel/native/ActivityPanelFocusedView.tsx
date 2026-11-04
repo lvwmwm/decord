@@ -1,24 +1,24 @@
-// Module ID: 19296
-// Function ID: 19297
+// Module ID: 19400
+// Function ID: 19401
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 5142, 4990, 4989, 5777, 19158, 1072, 11360, 11831, 21, 5141, 575, 1627, 504, 1493, 19287, 12211, 1652, 5207, 1705, 5377, 5757, 6138, 5062, 19289, 19297, 11863, 11931, 2]
+// Dependencies: [19, 17, 5142, 4990, 4989, 5791, 19261, 1072, 11410, 11888, 21, 5141, 575, 1627, 504, 1493, 19391, 12270, 1652, 5207, 1705, 5378, 5771, 6153, 5062, 19393, 19401, 11922, 11990, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 19296 (ActivityPanelFocusedView)
+// Module 19400 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
-import Constants2 from "Constants" /* 11831 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11931 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19289 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
+import Constants2 from "Constants" /* 11888 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 11990 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19393 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5777 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19158 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19261 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

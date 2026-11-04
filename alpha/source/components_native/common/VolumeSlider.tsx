@@ -1,17 +1,17 @@
-// Module ID: 12086
-// Function ID: 12087
+// Module ID: 12145
+// Function ID: 12146
 // Name: VolumeSlider
-// Dependencies: [19, 17, 5888, 21, 1377, 5141, 575, 5719, 12087, 8976, 6043, 1113, 8797, 2]
+// Dependencies: [19, 17, 5902, 21, 1377, 5141, 575, 5732, 12146, 8993, 6058, 1113, 8814, 2]
 // Exports: default
 
-// Module 12086 (VolumeSlider)
+// Module 12145 (VolumeSlider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useToken2 from "useToken" /* 5719 */;
-import Constants from "Constants" /* 5888 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6043 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8797 */;
-import VoiceXIcon from "VoiceXIcon" /* 12087 */;
+import useToken2 from "useToken" /* 5732 */;
+import Constants from "Constants" /* 5902 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6058 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8814 */;
+import VoiceXIcon from "VoiceXIcon" /* 12146 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 let hasOwnProperty;
 let metroRequire;
 let tmp8;
-const _modDef8976 = tmp8(8976);
+const _modDef8993 = tmp8(8993);
 const View = react_native.View;
 let closure_4 = Constants.MAX_EMBEDDED_VOLUME_PERCEPTUAL;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -80,7 +80,7 @@ export default function VolumeSlider(maxTrackTintColor) {
     },
     onResponderGrant
   };
-  const tmp8Result = _modDef8976;
+  const tmp8Result = _modDef8993;
   const tmp10 = View;
   tmp5Result = PerceptualVolumeUtils;
   const tmp9 = closure_6;

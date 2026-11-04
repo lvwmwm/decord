@@ -1,13 +1,13 @@
-// Module ID: 19847
-// Function ID: 19848
+// Module ID: 19963
+// Function ID: 19964
 // Name: ApplicationTriggerFields
-// Dependencies: [19, 21, 19848, 1113, 5747, 7186, 7101, 5767, 5381, 19850, 2123, 2]
+// Dependencies: [19, 21, 19964, 1113, 5761, 7201, 7116, 5781, 5382, 19966, 2123, 2]
 // Exports: default
 
-// Module 19847 (ApplicationTriggerFields)
+// Module 19963 (ApplicationTriggerFields)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export default function ApplicationTriggerFields(rule) {
   if (null != guildBotApplications) {
     let tmp5Result2;
     if (0 === guildBotApplications.length) {
-      let obj2 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(tmp(tmp2[3]).t["7/h5vj"]) };
+      let obj2 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(tmp(tmp2[3]).t["7/h5vj"]) };
       const Text = tmp(tmp2[4]).Text;
       intl4 = tmp(tmp2[3]).intl;
       tmp5Result2 = applicationId(Text, obj2);
@@ -76,7 +76,7 @@ export default function ApplicationTriggerFields(rule) {
               return tmp(obj);
             }
         };
-        obj.openLazy(asyncRequire(19850, dependencyMap.paths), "AutomodSelectApplication", obj2);
+        obj.openLazy(asyncRequire(19966, dependencyMap.paths), "AutomodSelectApplication", obj2);
       }
     }
   };

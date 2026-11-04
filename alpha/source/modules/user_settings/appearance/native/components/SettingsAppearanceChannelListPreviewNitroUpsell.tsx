@@ -1,19 +1,19 @@
-// Module ID: 17437
-// Function ID: 17438
+// Module ID: 17528
+// Function ID: 17529
 // Name: SettingsAppearanceChannelListPreviewNitroUpsell
-// Dependencies: [19, 17, 5142, 1072, 21, 1652, 5710, 5757, 5758, 5141, 575, 7446, 7471, 10036, 10037, 5754, 1113, 1187, 504, 10091, 2]
+// Dependencies: [19, 17, 5142, 1072, 21, 1652, 5723, 5771, 5772, 5141, 575, 7462, 7487, 10084, 10085, 5768, 1113, 1187, 504, 10139, 2]
 
-// Module 17437 (SettingsAppearanceChannelListPreviewNitroUpsell)
+// Module 17528 (SettingsAppearanceChannelListPreviewNitroUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import springPresets from "springPresets" /* 5758 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7446 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10036 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10037 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10091 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import springPresets from "springPresets" /* 5772 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7462 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10084 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10085 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10139 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -53,8 +53,8 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   const items = [closure_17, theme, closure_9, StyleSheet, , ];
   const useAnimatedStyle = analyticsLocations(1652).useAnimatedStyle;
   analyticsLocations(1652);
-  items[4] = analyticsLocations(5757).withSpring;
-  items[5] = analyticsLocations(5758).springStandard;
+  items[4] = analyticsLocations(5771).withSpring;
+  items[5] = analyticsLocations(5772).springStandard;
   let c0;
   let c1;
   let c2;
@@ -91,7 +91,7 @@ function SettingsAppearanceChannelListPreviewNitroUpsellComponent(theme) {
   }, items2);
   items3 = [closure_10(LinearGradient, obj2), ];
   const obj3 = { text: intl.string(analyticsLocations(1113).t.pj0XBN), icon: closure_10(analyticsLocations(1187).NitroWheel, obj4), variant: "active", onPress: callback, size: "md" };
-  const Button = tmp2(5754).Button;
+  const Button = tmp2(5768).Button;
   intl = tmp2(1113).intl;
   obj4 = { style: tmp.nitroWheelIcon };
   items3[1] = closure_10(Button, obj3);

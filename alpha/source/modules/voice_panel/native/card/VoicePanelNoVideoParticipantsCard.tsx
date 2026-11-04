@@ -1,14 +1,14 @@
-// Module ID: 19414
-// Function ID: 19415
+// Module ID: 19518
+// Function ID: 19519
 // Name: VoicePanelNoVideoParticipantsCard
-// Dependencies: [19, 17, 21, 5141, 575, 11359, 5879, 7086, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 11409, 5893, 7101, 5761, 1113, 2]
 
-// Module 19414 (VoicePanelNoVideoParticipantsCard)
+// Module 19518 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5879 */;
-import NativeViewDefault from "NativeView" /* 7086 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11359 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
+import NativeViewDefault from "NativeView" /* 7101 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11409 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -43,15 +43,15 @@ const memoResult = react.memo(function VoicePanelNoVideoParticipantsCard() {
     const result = obj.toggleVoiceParticipantsHidden(channelId, false);
   }, items);
   let obj = { style: tmp.container, children: items1 };
-  const obj2 = { style: tmp.label, variant: "text-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1113).t["8eBJ73"]) };
+  const obj2 = { style: tmp.label, variant: "body-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1113).t["8eBJ73"]) };
   const tmp3 = NativeViewDefault;
-  const Text = channelId(5747).Text;
+  const Text = channelId(5761).Text;
   intl = channelId(1113).intl;
   items1 = [closure_5(Text, obj2), ];
   const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(channelId(1113).t.kLQySL), children: closure_5(Text2, obj4) };
   intl2 = channelId(1113).intl;
-  obj4 = { variant: "text-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1113).t.kLQySL) };
-  Text2 = channelId(5747).Text;
+  obj4 = { variant: "body-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1113).t.kLQySL) };
+  Text2 = channelId(5761).Text;
   intl3 = channelId(1113).intl;
   items1[1] = closure_5(Pressable, obj3);
   return closure_6(tmp3, obj);

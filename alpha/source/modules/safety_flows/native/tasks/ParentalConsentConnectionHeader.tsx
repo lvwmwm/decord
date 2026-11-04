@@ -1,19 +1,19 @@
-// Module ID: 20246
-// Function ID: 20247
+// Module ID: 20362
+// Function ID: 20363
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1385, 21, 5141, 5709, 575, 1627, 504, 5747, 6860, 1113, 2963, 2]
+// Dependencies: [19, 17, 1385, 21, 5141, 5722, 575, 1627, 504, 5761, 6875, 1113, 2963, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 20246 (ParentalConsentConnectionHeader)
+// Module 20362 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef2963 from "module_2963" /* 2963 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6860 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6875 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -57,7 +57,7 @@ export function ParentalConsentConnectionNavbar() {
   obj3 = { style: tmp.row, children: items1 };
   const obj4 = {
     accessibilityRole: "button",
-    variant: "text-md/medium",
+    variant: "body-md/medium",
     color: "text-link",
     style: tmp.logOut,
     onPress() {
@@ -72,7 +72,7 @@ export function ParentalConsentConnectionNavbar() {
   let tmp5Result = null != stateFromStores;
   tmp7 = metroRequire;
   if (tmp5Result) {
-    const obj5 = { accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
+    const obj5 = { accessibilityRole: "header", variant: "body-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores };
     tmp5Result = tmp5(Text_Text.Text, obj5);
   }
   items1[1] = tmp5Result;

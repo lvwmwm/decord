@@ -1,19 +1,19 @@
-// Module ID: 11883
-// Function ID: 11884
+// Module ID: 11942
+// Function ID: 11943
 // Name: confirmExternalAppLaunchAlert
-// Dependencies: [19, 17, 2147, 21, 5141, 5837, 11884, 5747, 1113, 5754, 5829, 6078, 2]
+// Dependencies: [19, 17, 2147, 21, 5141, 5851, 11943, 5761, 1113, 5768, 5843, 6093, 2]
 // Exports: confirmExternalAppLaunchAlert
 
-// Module 11883 (confirmExternalAppLaunchAlert)
+// Module 11942 (confirmExternalAppLaunchAlert)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import Constants from "Constants" /* 2147 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11884 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11943 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -33,7 +33,7 @@ function ConfirmActivityGateContent(application) {
   const obj2 = { source: AssetRegistryDefault, style: tmp.announcementBirb };
   const tmp2 = FastImageDefault;
   items = [hasOwnProperty(tmp2, obj2), , , ];
-  const obj3 = { style: tmp.alertEyebrowText, variant: "eyebrow", children: intl.string(intl4.t["06YebE"]) };
+  const obj3 = { style: tmp.alertEyebrowText, variant: "body-sm/medium", children: intl.string(intl4.t["06YebE"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = hasOwnProperty(Text, obj3);
@@ -42,7 +42,7 @@ function ConfirmActivityGateContent(application) {
   intl2 = intl4.intl;
   obj5 = { activityName: application.name };
   items[2] = hasOwnProperty(Text2, obj4);
-  const obj6 = { style: tmp.alertSubtitleText, variant: "text-sm/normal", children: intl3.string(intl4.t.z81WwD) };
+  const obj6 = { style: tmp.alertSubtitleText, variant: "body-sm/normal", children: intl3.string(intl4.t.z81WwD) };
   const Text3 = Text_Text.Text;
   intl3 = intl4.intl;
   items[3] = hasOwnProperty(Text3, obj6);

@@ -1,13 +1,13 @@
-// Module ID: 12558
-// Function ID: 12559
+// Module ID: 12639
+// Function ID: 12640
 // Name: RecommendationAppRow
-// Dependencies: [19, 21, 1411, 12546, 2]
+// Dependencies: [19, 21, 1411, 12627, 2]
 // Exports: default
 
-// Module 12558 (RecommendationAppRow)
+// Module 12639 (RecommendationAppRow)
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import AppLauncherHomeScreen from "AppLauncherHomeScreen" /* 12546 */;
+import AppLauncherHomeScreen from "AppLauncherHomeScreen" /* 12627 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

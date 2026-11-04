@@ -1,18 +1,18 @@
-// Module ID: 16709
-// Function ID: 16710
+// Module ID: 16799
+// Function ID: 16800
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1072, 21, 7471, 5141, 16636, 5747, 1499, 7282, 1113, 7750, 7446, 10036, 10037, 1627, 2]
+// Dependencies: [19, 1072, 21, 7487, 5141, 16726, 5761, 1499, 7298, 1113, 7766, 7462, 10084, 10085, 1627, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 16709 (UserProfilePremiumUpsellCard)
+// Module 16799 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7282 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7446 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10036 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10037 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16636 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7298 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7462 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10084 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10085 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16726 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -54,7 +54,7 @@ function GetNitroCard(style) {
   let analyticsLocations;
   let tmp = analyticsLocations;
   style = style.style;
-  let obj = analyticsLocations(7750);
+  let obj = analyticsLocations(7766);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];

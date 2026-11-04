@@ -1,16 +1,16 @@
-// Module ID: 5323
-// Function ID: 5324
+// Module ID: 5324
+// Function ID: 5325
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 5176, 5044, 1072, 3, 5324, 1099, 5177, 5190, 5327, 2]
+// Dependencies: [32, 502, 5176, 5044, 1072, 3, 5325, 1099, 5177, 5190, 5328, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 5323 (getInitialNavigationState)
+// Module 5324 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
 import router_utils from "router_utils" /* 1099 */;
 import matchPathCompat from "matchPathCompat" /* 5177 */;
 import RouteUtils from "RouteUtils" /* 5190 */;
-import useChatLayout from "useChatLayout" /* 5324 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5327 */;
+import useChatLayout from "useChatLayout" /* 5325 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5328 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 5176 */;

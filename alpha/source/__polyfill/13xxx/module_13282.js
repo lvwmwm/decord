@@ -1,308 +1,151 @@
 // Module ID: 13282
 // Function ID: 13283
-// Dependencies: []
-// Exports: basename, dirname, isAbsolute, join, relative
+// Dependencies: [13280]
+// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
 
 // Module 13282
-function resolve() {
-  let tmp17;
-  const items = [...arguments];
-  let diff = items.length - 1;
-  let flag = false;
-  let str = "";
-  let flag2 = false;
-  let str2 = "";
-  if (-1 <= diff) {
-    while (true) {
-      let tmp3 = flag;
-      let str3 = "/";
-      if (0 <= diff) {
-        str3 = items[diff];
-      }
-      let combined = str;
-      if (str3) {
-        let _HermesInternal = HermesInternal;
-        combined = "" + str3 + "/" + str;
-        tmp3 = "/" === str3.charAt(0);
-      }
-      let diff1 = diff - 1;
-      flag2 = tmp3;
-      str2 = combined;
-      if (-1 > diff1) {
-        break;
-      } else {
-        diff = diff1;
-        flag = tmp3;
-        str = combined;
-        str2 = combined;
-        flag2 = tmp3;
-        if (flag2) {
-          break;
-        }
-      }
-    }
-  }
-  let str4 = "";
-  if (flag2) {
-    str4 = "/";
-  }
-  const parts = str2.split("/");
-  const found = parts.filter((item) => item);
-  let diff2 = found.length - 1;
-  let num = 0;
-  let num2 = 0;
-  if (0 <= diff2) {
-    do {
-      let sum;
-      let tmp8 = found[diff2];
-      if ("." === tmp8) {
-        let spliceResult = found.splice(diff2, 1);
-        sum = num;
-      } else if (".." === tmp8) {
-        let spliceResult1 = found.splice(diff2, 1);
-        sum = num + 1;
-      } else {
-        sum = num;
-        if (sum) {
-          let spliceResult2 = found.splice(diff2, 1);
-          sum = num - 1;
-        }
-      }
-      diff2 = diff2 - 1;
-      num = sum;
-      num2 = sum;
-    } while (0 <= diff2);
-  }
-  if (!flag2) {
-    let diff3 = num2 - 1;
-    if (num2) {
-      do {
-        let arr = found.unshift("..");
-        tmp17 = diff3;
-        diff3 = diff3 - 1;
-      } while (tmp17);
-    }
-  }
-  const tmp18 = str4 + found.join("/") || ".";
-  return tmp18;
-}
-function normalizePath(str) {
-  let tmp14;
-  const charAtResult = str.charAt(0);
-  const substr = str.slice(-1);
-  const parts = str.split("/");
-  const found = parts.filter((item) => item);
-  let diff = found.length - 1;
-  let num = 0;
-  let num2 = 0;
-  if (0 <= diff) {
-    do {
-      let sum;
-      let tmp4 = found[diff];
-      if ("." === tmp4) {
-        let spliceResult = found.splice(diff, 1);
-        sum = num;
-      } else if (".." === tmp4) {
-        let spliceResult1 = found.splice(diff, 1);
-        sum = num + 1;
-      } else {
-        sum = num;
-        if (sum) {
-          let spliceResult2 = found.splice(diff, 1);
-          sum = num - 1;
-        }
-      }
-      diff = diff - 1;
-      num = sum;
-      num2 = sum;
-    } while (0 <= diff);
-  }
-  if ("/" !== charAtResult) {
-    let diff1 = num2 - 1;
-    if (num2) {
-      do {
-        let arr = found.unshift("..");
-        tmp14 = diff1;
-        diff1 = diff1 - 1;
-      } while (tmp14);
-    }
-  }
-  str = found.join("/");
-  const tmp15 = str || "/" === charAtResult;
-  if (!tmp15) {
-    str = ".";
-  }
-  let text = str;
-  const tmp16 = str && "/" === substr;
-  if (tmp16) {
-    text = `${str}/`;
-  }
-  let str2 = "";
-  if ("/" === charAtResult) {
-    str2 = "/";
-  }
-  return str2 + text;
-}
-const re0 = /^(\S+:\\|\/?)([\s\S]*?)((?:\.{1,2}|[^/\\]+?|)(\.[^./\\]*|))(?:[/\\]*)$/;
+import _mod13280 from "module_13280" /* 13280 */;
 
-export function basename(arr, arg1) {
-  let combined = arr;
-  if (arr.length > 1024) {
-    const _HermesInternal = HermesInternal;
-    combined = "<truncated>" + arr.slice(-1024);
+
+export function isMatchingPattern(arr, test) {
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
   }
-  const match = re0.exec(combined);
-  if (match) {
-    let substr = match.slice(1);
-  } else {
-    substr = [];
-  }
-  let substr1 = arr3;
-  const tmp3 = arg1 && arr3.slice(-1 * arg1.length) === arg1;
-  if (tmp3) {
-    substr1 = arr3.slice(0, arr3.length - arg1.length);
-  }
-  return substr1;
-}
-export function dirname(arr) {
-  let str2;
-  let substr;
-  let combined = arr;
-  if (arr.length > 1024) {
-    const _HermesInternal = HermesInternal;
-    combined = "<truncated>" + arr.slice(-1024);
-  }
-  const match = re0.exec(combined);
-  if (match) {
-    substr = match.slice(1);
-  } else {
-    substr = [];
-  }
-  if (substr[0] || "") {
-    const substr1 = arr3 && arr3.slice(0, arr3.length - 1);
-    str2 = tmp3 + substr1;
-  } else {
-    str2 = ".";
-  }
-  return str2;
-}
-export function isAbsolute(str) {
-  return "/" === str.charAt(0);
-}
-export function join() {
-  const items = [...arguments];
-  return normalizePath(items.join("/"));
-}
-export { normalizePath };
-export function relative(arg0, arg1) {
-  let items;
-  let items1;
-  let length;
-  const arr = resolve(arg0);
-  const str = arr.slice(1);
-  const arr2 = resolve(arg1);
-  const str2 = arr2.slice(1);
-  const parts = str.split("/");
-  let num = 0;
-  if (0 < parts.length) {
-    let num2 = 0;
-    num = 0;
-    if ("" === parts[0]) {
-      const sum = num2 + 1;
-      num = sum;
-      while (sum < parts.length) {
-        num2 = sum;
-        num = sum;
-        if ("" !== parts[sum]) {
-          break;
+  const obj = _mod13280;
+  let isStringResult = obj.isString(arr);
+  if (isStringResult) {
+    let isMatch;
+    const tmpResult = _mod13280;
+    if (tmpResult.isRegExp(test)) {
+      isMatch = test.test(arr);
+    } else {
+      const tmpResult2 = _mod13280;
+      isMatch = tmpResult2.isString(test);
+      if (isMatch) {
+        let hasItem;
+        if (flag) {
+          hasItem = arr === test;
+        } else {
+          hasItem = arr.includes(test);
         }
+        isMatch = hasItem;
       }
     }
+    isStringResult = isMatch;
   }
-  const diff = parts.length - 1;
-  let tmp3 = diff;
-  if (0 <= diff) {
-    let tmp4 = diff;
-    tmp3 = diff;
-    if ("" === parts[diff]) {
-      const diff1 = tmp4 - 1;
-      tmp3 = diff1;
-      while (0 <= diff1) {
-        tmp4 = diff1;
-        tmp3 = diff1;
-        if ("" !== parts[diff1]) {
-          break;
+  return isStringResult;
+}
+export function safeJoin(arg0, arg1) {
+  if (Array.isArray(arg0)) {
+    const items = [];
+    let num = 0;
+    if (0 < arg0.length) {
+      try {
+        const push = items.push;
+        const obj = _mod13280;
+        if (obj.isVueViewModel(arg0[num])) {
+          push("[VueViewModel]");
+        } else {
+          const _String = String;
+          push(String(arg0[num]));
         }
+      } catch (err) {
+        items.push("[value cannot be serialized]");
       }
+      num = num + 1;
     }
+    return items.join(arg1);
+  } else {
+    return "";
   }
-  if (tmp3 < num) {
+}
+export function snipLine(arr, arg1) {
+  if (arr.length <= 150) {
+    return arr;
+  } else {
+    let tmp = arg1;
+    if (arg1 > arr.length) {
+      tmp = length;
+    }
+    const _Math = Math;
+    let num3 = Math.max(tmp - 60, 0);
+    if (num3 < 5) {
+      num3 = 0;
+    }
+    const _Math2 = Math;
+    let bound = Math.min(num3 + 140, length);
+    if (bound > arr.length - 5) {
+      bound = length;
+    }
+    if (bound === arr.length) {
+      const _Math3 = Math;
+      num3 = Math.max(bound - 140, 0);
+    }
+    const substr = arr.slice(num3, bound);
+    let combined = substr;
+    if (num3 > 0) {
+      const _HermesInternal = HermesInternal;
+      combined = "'{snip} " + substr;
+    }
+    let text = combined;
+    if (bound < arr.length) {
+      text = `${tmp6} {snip}`;
+    }
+    return text;
+  }
+}
+export function stringMatchesSomePattern(arg0) {
+  let closure_0 = arg0;
+  let items = arg1;
+  if (arg1 === undefined) {
     items = [];
-  } else {
-    items = parts.slice(num, tmp3 - num + 1);
   }
-  const parts1 = str2.split("/");
-  let num3 = 0;
-  if (0 < parts1.length) {
-    let num4 = 0;
-    num3 = 0;
-    if ("" === parts1[0]) {
-      const sum1 = num4 + 1;
-      num3 = sum1;
-      while (sum1 < parts1.length) {
-        num4 = sum1;
-        num3 = sum1;
-        if ("" !== parts1[sum1]) {
-          break;
+  let flag = arg2;
+  if (arg2 === undefined) {
+    flag = false;
+  }
+  return items.some((test) => {
+    const obj2 = _mod13280;
+    let isStringResult = obj2.isString(obj);
+    if (isStringResult) {
+      let isMatch;
+      const tmpResult = _mod13280;
+      if (tmpResult.isRegExp(test)) {
+        isMatch = test.test(obj);
+      } else {
+        const tmpResult2 = _mod13280;
+        isMatch = tmpResult2.isString(test);
+        if (isMatch) {
+          let hasItem;
+          if (flag) {
+            hasItem = obj === test;
+          } else {
+            hasItem = obj.includes(test);
+          }
+          isMatch = hasItem;
         }
       }
+      isStringResult = isMatch;
     }
-  }
-  const diff2 = parts1.length - 1;
-  let tmp8 = diff2;
-  if (0 <= diff2) {
-    let tmp9 = diff2;
-    tmp8 = diff2;
-    if ("" === parts1[diff2]) {
-      const diff3 = tmp9 - 1;
-      tmp8 = diff3;
-      while (0 <= diff3) {
-        tmp9 = diff3;
-        tmp8 = diff3;
-        if ("" !== parts1[diff3]) {
-          break;
-        }
-      }
-    }
-  }
-  if (tmp8 < num3) {
-    items1 = [];
-  } else {
-    items1 = parts1.slice(num3, tmp8 - num3 + 1);
-  }
-  const bound = Math.min(items.length, items1.length);
-  let num5 = 0;
-  let tmp12 = bound;
-  if (0 < bound) {
-    tmp12 = num5;
-    while (items[num5] === items1[num5]) {
-      num5 = num5 + 1;
-      tmp12 = bound;
-      if (num5 >= bound) {
-        break;
-      }
-    }
-  }
-  const items2 = [];
-  let sum2 = tmp12;
-  if (tmp12 < items.length) {
-    do {
-      let arr3 = items2.push("..");
-      sum2 = sum2 + 1;
-      length = items.length;
-    } while (sum2 < length);
-  }
-  const combined = items2.concat(items1.slice(tmp12));
-  return combined.join("/");
+    return isStringResult;
+  });
 }
-export { resolve };
+export function truncate(str) {
+  let num = arg1;
+  if (arg1 === undefined) {
+    num = 0;
+  }
+  let combined = str;
+  if (typeof str === "string") {
+    combined = str;
+    if (0 !== num) {
+      combined = str;
+      if (str.length > num) {
+        const _HermesInternal = HermesInternal;
+        combined = "" + str.slice(0, num) + "...";
+      }
+    }
+  }
+  return combined;
+}

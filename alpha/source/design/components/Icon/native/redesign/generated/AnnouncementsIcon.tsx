@@ -1,14 +1,14 @@
-// Module ID: 8790
-// Function ID: 8791
+// Module ID: 8807
+// Function ID: 8808
 // Name: AnnouncementsIcon
-// Dependencies: [19, 21, 575, 5836, 8735, 2]
+// Dependencies: [19, 21, 575, 5850, 8752, 2]
 // Exports: AnnouncementsIcon
 
-// Module 8790 (AnnouncementsIcon)
+// Module 8807 (AnnouncementsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 8735 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 8752 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

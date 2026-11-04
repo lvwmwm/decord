@@ -1,14 +1,14 @@
-// Module ID: 19118
-// Function ID: 19119
+// Module ID: 19221
+// Function ID: 19222
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1072, 21, 5141, 575, 6864, 6148, 1260, 7778, 1627, 7238, 5098, 19119, 16577, 1377, 12497, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5141, 575, 6879, 6163, 1260, 7794, 1627, 7258, 5098, 19222, 16668, 1377, 12578, 2]
 // Exports: default
 
-// Module 19118 (modal/ModalScreen)
+// Module 19221 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6148 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6163 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -92,7 +92,7 @@ export default function Modal(route) {
   }, []);
   ({ left, right } = useSafeAreaInsetsDefault());
   useSafeAreaInsetsDefault();
-  let isIpadOSResult = tmp4(7238)();
+  let isIpadOSResult = tmp4(7258)();
   if (isIpadOSResult) {
     const tmp7Result = modal(5098);
     isIpadOSResult = tmp7Result.isIpadOS();
@@ -101,7 +101,7 @@ export default function Modal(route) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const tmp7Result3 = modal(19119);
+    const tmp7Result3 = modal(19222);
     isIpadOSResult = tmp7Result3.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const items = [absoluteFillObject.absoluteFillObject, ];
@@ -116,17 +116,17 @@ export default function Modal(route) {
   items[1] = tmp17;
   const obj4 = { style: items, onAccessibilityEscape: pop, children: closure_10(SafeAreaProvider, { children: items2 }) };
   if (modal.closable) {
-    pop = tmp4(6864).pop;
+    pop = tmp4(6879).pop;
   } else {
     pop = NOOP;
   }
-  SafeAreaProvider = tmp7(16577).SafeAreaProvider;
+  SafeAreaProvider = tmp7(16668).SafeAreaProvider;
   const createElement = obj2.createElement;
   const modal2 = modal.modal;
   const merged = Object.assign(tmp2);
   items2 = [<modal2 style={undefined} transitionState={null} onClose={callback} />, ];
   const tmp7Result4 = modal(1377);
-  items2[1] = tmp7Result4.isIOS() && closure_9(modal(12497).PortalKeyboardRenderer, { portal: false });
-  tmp7Result4.isIOS() && closure_9(modal(12497).PortalKeyboardRenderer, { portal: false });
+  items2[1] = tmp7Result4.isIOS() && closure_9(modal(12578).PortalKeyboardRenderer, { portal: false });
+  tmp7Result4.isIOS() && closure_9(modal(12578).PortalKeyboardRenderer, { portal: false });
   return closure_9(tmp16, obj4);
 };

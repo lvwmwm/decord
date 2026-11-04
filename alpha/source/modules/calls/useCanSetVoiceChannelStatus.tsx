@@ -1,10 +1,10 @@
-// Module ID: 19386
-// Function ID: 19387
+// Module ID: 19490
+// Function ID: 19491
 // Name: useCanSetVoiceChannelStatus
 // Dependencies: [5073, 1083, 5078, 504, 2]
 // Exports: _canSetVoiceChannelStatus, canSetVoiceChannelStatus, default
 
-// Module 19386 (useCanSetVoiceChannelStatus)
+// Module 19490 (useCanSetVoiceChannelStatus)
 import Constants from "Constants" /* 1083 */;
 import PermissionStore_mod from "PermissionStore" /* 5073 */;
 import size from "module_2" /* 2 */;

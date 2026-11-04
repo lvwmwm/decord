@@ -1,16 +1,16 @@
-// Module ID: 14258
-// Function ID: 14259
+// Module ID: 14344
+// Function ID: 14345
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5353, 21, 5141, 575, 14259, 10051, 5747, 2]
+// Dependencies: [17, 5354, 21, 5141, 575, 14345, 10099, 5761, 2]
 // Exports: default
 
-// Module 14258 (GuildPowerupsBoostInfo)
+// Module 14344 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5353 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 10051 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 14259 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5354 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 10099 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 14345 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -47,11 +47,11 @@ export default function GuildPowerupsBoostInfo(arg0) {
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-subtle";
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   if (type === tmp8.AVAILABLE) {
     str = "text-strong";
   }
   items[1] = hasOwnProperty(Text, { variant: "body-lg/semibold", color: str, importantForAccessibility: "no-hide-descendants", children: count });
-  items1 = [metroRequire(View, obj3), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
+  items1 = [metroRequire(View, obj3), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-subtle", importantForAccessibility: "no-hide-descendants", children: guildPowerupsBoostInfoText })];
   return metroRequire(View, obj2);
 };

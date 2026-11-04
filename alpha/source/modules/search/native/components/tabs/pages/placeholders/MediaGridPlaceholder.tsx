@@ -1,21 +1,21 @@
-// Module ID: 18870
-// Function ID: 18871
+// Module ID: 18973
+// Function ID: 18974
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 9958, 21, 5141, 575, 18869, 1652, 18871, 12, 5747, 1113, 14017, 18872, 2]
+// Dependencies: [19, 17, 9976, 21, 5141, 575, 18972, 1652, 18974, 12, 5761, 1113, 14103, 18975, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
-// Module 18870 (MediaGridPlaceholder)
+// Module 18973 (MediaGridPlaceholder)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14017 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 18869 */;
-import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 18871 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14103 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 18972 */;
+import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 18974 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -86,12 +86,12 @@ export function RecentsMediaGridPlaceholder(visible) {
   const obj3 = { style: tmp.section, children: items3 };
   const obj4 = { style: tmp.sectionItem, children: closure_7(Text, obj5) };
   View = numRows(1652).View;
-  obj5 = { style: tmp.sectionText, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: intl.string(intl3.t.LBYpDH) };
+  obj5 = { style: tmp.sectionText, maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "body-sm/semibold", color: "interactive-text-default", children: intl.string(intl3.t.LBYpDH) };
   Text = Text_Text.Text;
   intl = intl3.intl;
   items3 = [closure_7(memo1, obj4), ];
   const obj6 = { style: tmp.sectionItem, children: closure_7(Text2, obj7) };
-  obj7 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.sectionText, children: intl2.string(intl3.t.LFTAUp) };
+  obj7 = { variant: "body-sm/semibold", color: "text-brand", style: tmp.sectionText, children: intl2.string(intl3.t.LFTAUp) };
   Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items3[1] = closure_7(memo1, obj6);

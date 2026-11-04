@@ -1,13 +1,13 @@
-// Module ID: 8522
-// Function ID: 8523
+// Module ID: 8539
+// Function ID: 8540
 // Name: ForumPostActions
-// Dependencies: [1072, 8520, 7120, 8523, 1242, 5848, 1113, 2190, 8524, 7377, 1411, 8525, 5085, 5091, 2]
+// Dependencies: [1072, 8537, 7135, 8540, 1242, 5862, 1113, 2190, 8541, 7393, 1411, 8542, 5085, 5091, 2]
 // Exports: createDefaultReaction, createForumPostActions
 
-// Module 8522 (ForumPostActions)
+// Module 8539 (ForumPostActions)
 import Constants from "Constants" /* 1072 */;
 import ReactionUtils from "ReactionUtils" /* 5085 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8520 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8537 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -102,22 +102,22 @@ export function createForumPostActions(arg0) {
   const getAssetUriForEmbed = renderer_EmbedUtils.getAssetUriForEmbed;
   renderer_EmbedUtils;
   if (isFollowing) {
-    assetUriForEmbed = getAssetUriForEmbed(tmp4(7120));
+    assetUriForEmbed = getAssetUriForEmbed(tmp4(7135));
     tmp6 = tmp4;
     tmp8 = tmp;
   } else {
-    assetUriForEmbed = getAssetUriForEmbed(tmp4(8523));
+    assetUriForEmbed = getAssetUriForEmbed(tmp4(8540));
     tmp6 = tmp4;
     tmp8 = tmp;
   }
   if (null == assetUriForEmbed) {
     const _HermesInternal = HermesInternal;
     const tmp6Result = tmp6(1242);
-    tmp6Result.captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 7120 : 8523));
+    tmp6Result.captureMessage("Forum follow is null. isFollowing: " + isFollowing + " icon: " + tmp6(isFollowing ? 7135 : 8540));
   }
   let stringResult;
-  const tmp8Result = tmp8(8520);
-  const assetUriForEmbed1 = tmp8Result.getAssetUriForEmbed(tmp6(5848));
+  const tmp8Result = tmp8(8537);
+  const assetUriForEmbed1 = tmp8Result.getAssetUriForEmbed(tmp6(5862));
   if (!hasReactions) {
     let emoji;
     if (defaultReaction != null) {
@@ -130,7 +130,7 @@ export function createForumPostActions(arg0) {
   }
   let tmp14;
   if (showMediaPostSharePrompt) {
-    const obj = { title: intl2.string(tmp8(1113).t["5uAO7d"]), subtitle: formatToParts(YtCu5p, obj2), cta: intl4.string(tmp8(1113).t.C5UQC9), icon: tmp8Result3.getAssetUriForEmbed(tmp6(8524)), closeIcon: tmp8Result4.getAssetUriForEmbed(tmp6(7377)) };
+    const obj = { title: intl2.string(tmp8(1113).t["5uAO7d"]), subtitle: formatToParts(YtCu5p, obj2), cta: intl4.string(tmp8(1113).t.C5UQC9), icon: tmp8Result3.getAssetUriForEmbed(tmp6(8541)), closeIcon: tmp8Result4.getAssetUriForEmbed(tmp6(7393)) };
     intl2 = tmp8(1113).intl;
     const intl3 = tmp8(1113).intl;
     formatToParts = intl3.formatToParts;
@@ -139,9 +139,9 @@ export function createForumPostActions(arg0) {
     YtCu5p = tmp8(1113).t.YtCu5p;
     tmp6Result2 = tmp6(2190);
     intl4 = tmp8(1113).intl;
-    tmp8Result3 = tmp8(8520);
+    tmp8Result3 = tmp8(8537);
     tmp14 = obj;
-    tmp8Result4 = tmp8(8520);
+    tmp8Result4 = tmp8(8537);
   }
   const obj4 = { numDisplayedReactions: 3, isFollowing, followIcon: assetUriForEmbed, followLabel: stringResult1, shareIcon: assetUriForEmbed1, shareLabel: intl6.string(tmp8(1113).t.Ej3B3Y), defaultReaction, addReactLabel: stringResult, sharePrompt: tmp14 };
   const intl5 = tmp8(1113).intl;

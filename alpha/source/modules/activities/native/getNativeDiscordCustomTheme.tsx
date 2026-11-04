@@ -1,11 +1,11 @@
-// Module ID: 16522
-// Function ID: 16523
+// Module ID: 16614
+// Function ID: 16615
 // Name: getNativeDiscordCustomTheme
-// Dependencies: [5165, 5373, 1241, 5315, 5148, 5138, 2]
+// Dependencies: [5165, 5374, 1241, 5316, 5148, 5138, 2]
 // Exports: default
 
-// Module 16522 (getNativeDiscordCustomTheme)
-import MobileThemesUtils from "MobileThemesUtils" /* 5373 */;
+// Module 16614 (getNativeDiscordCustomTheme)
+import MobileThemesUtils from "MobileThemesUtils" /* 5374 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5165 */;
 import size from "module_2" /* 2 */;
 
@@ -13,7 +13,7 @@ let tmp;
 const ClientThemesTypes = tmp(1241);
 const ColorUtils = tmp(5138);
 const shared = tmp(5148);
-const client_themes_ClientThemesUtils = tmp(5315);
+const client_themes_ClientThemesUtils = tmp(5316);
 const result = size.fileFinishedImporting("modules/activities/native/getNativeDiscordCustomTheme.tsx");
 
 export default function getNativeDiscordCustomTheme() {

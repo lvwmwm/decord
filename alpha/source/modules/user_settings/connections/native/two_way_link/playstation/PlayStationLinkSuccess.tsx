@@ -1,18 +1,18 @@
-// Module ID: 14776
-// Function ID: 14777
+// Module ID: 14856
+// Function ID: 14857
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 5141, 9862, 14761, 5837, 5747, 1113, 7412, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 9880, 14841, 5851, 5761, 1113, 7428, 5768, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 14776 (PlayStationLinkSuccess)
+// Module 14856 (PlayStationLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9862 */;
-import _modDef14761 from "module_14761" /* 14761 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9880 */;
+import _modDef14841 from "module_14841" /* 14841 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -41,7 +41,7 @@ export function PlayStationLinkSuccess(onClose) {
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
   const obj3 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14761 };
+    const obj = { uri: _modDef14841 };
     return obj;
   }, []);
   items = [, , ];
@@ -51,7 +51,7 @@ export function PlayStationLinkSuccess(onClose) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = hasOwnProperty(Text, obj5);
-  const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.QjAZAQ) };
+  const obj6 = { variant: "body-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.QjAZAQ) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = hasOwnProperty(Text2, obj6);

@@ -1,19 +1,19 @@
-// Module ID: 19084
-// Function ID: 19085
+// Module ID: 19187
+// Function ID: 19188
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 4994, 4990, 1072, 21, 1499, 7450, 7186, 1113, 7101, 9169, 5141, 575, 504, 8301, 6147, 18967, 19085, 2]
+// Dependencies: [19, 4994, 4990, 1072, 21, 1499, 7466, 7201, 1113, 7116, 9186, 5141, 575, 504, 8317, 6162, 19070, 19188, 2]
 // Exports: default
 
-// Module 19084 (ChannelSettingsIntegrationsOverview)
+// Module 19187 (ChannelSettingsIntegrationsOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1499 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9169 */;
-import WebhookIcon from "WebhookIcon" /* 18967 */;
-import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19085 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9186 */;
+import WebhookIcon from "WebhookIcon" /* 19070 */;
+import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19188 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import Fragment from "Fragment" /* 21 */;
@@ -36,8 +36,8 @@ function LinkedLobbyFormSection(channel) {
   importDefault = obj.useNavigation();
   const linkedLobby = channel.linkedLobby;
   let application_id;
-  const useGetOrFetchApplication = channel(7450).useGetOrFetchApplication;
-  channel(7450);
+  const useGetOrFetchApplication = channel(7466).useGetOrFetchApplication;
+  channel(7466);
   if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
@@ -45,7 +45,7 @@ function LinkedLobbyFormSection(channel) {
   let tmp6 = null;
   if (null != getOrFetchApplication) {
     const obj2 = { title: intl.string(channel(1113).t.oAvIAg), hasIcons: true, children: closure_6(TableRow, obj3) };
-    const TableRowGroup = tmp(7186).TableRowGroup;
+    const TableRowGroup = tmp(7201).TableRowGroup;
     intl = tmp(1113).intl;
     obj3 = {
       label: getOrFetchApplication.name,
@@ -56,7 +56,7 @@ function LinkedLobbyFormSection(channel) {
           closure_1.push(ChannelSettingsSections.EDIT_LINKED_LOBBY, obj);
         }
     };
-    TableRow = tmp(7101).TableRow;
+    TableRow = tmp(7116).TableRow;
     obj4 = { application: getOrFetchApplication };
     tmp6 = closure_6(TableRowGroup, obj2);
   }
@@ -91,12 +91,12 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
   let tmp6Result = null;
   if (null != stateFromStores) {
     const obj3 = { style: tmp4.screenContainer, children: closure_7(Stack, obj4) };
-    const Form = tmp(8301).Form;
+    const Form = tmp(8317).Form;
     obj4 = { style: obj5, spacing: nativeDefault.space.PX_24, children: items2 };
     obj5 = { paddingHorizontal: nativeDefault.space.PX_12 };
-    Stack = tmp(6147).Stack;
+    Stack = tmp(6162).Stack;
     if (canManageWebhooks) {
-      const TableRowGroup = tmp(7186).TableRowGroup;
+      const TableRowGroup = tmp(7201).TableRowGroup;
       const obj6 = {
         label: intl.string(intl5.t.jp25Id),
         subLabel: intl2.string(intl5.t.mKIOkI),
@@ -106,7 +106,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
               return closure_1.push(ChannelSettingsSections.WEBHOOKS);
             }
       };
-      const TableRow = tmp(7101).TableRow;
+      const TableRow = tmp(7116).TableRow;
       intl = tmp(1113).intl;
       intl2 = tmp(1113).intl;
       const items1 = [closure_6(TableRow, obj6), ];
@@ -121,7 +121,7 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
                   return closure_1.push(ChannelSettingsSections.CHANNELS_FOLLOWED);
                 }
         };
-        const TableRow2 = tmp(7101).TableRow;
+        const TableRow2 = tmp(7116).TableRow;
         intl3 = tmp(1113).intl;
         intl4 = tmp(1113).intl;
         hasItem = tmp6(TableRow2, obj7);

@@ -1,22 +1,22 @@
-// Module ID: 19954
-// Function ID: 19955
+// Module ID: 20070
+// Function ID: 20071
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7418, 1072, 21, 5141, 575, 5832, 1113, 19932, 7606, 504, 6078, 9202, 1187, 1252, 5381, 19933, 2123, 10949, 8152, 7218, 7339, 5855, 5747, 7101, 11626, 2]
+// Dependencies: [32, 19, 17, 7434, 1072, 21, 5141, 575, 5846, 1113, 20048, 7622, 504, 6093, 9219, 1187, 1252, 5382, 20049, 2123, 10997, 8168, 7233, 7355, 5869, 5761, 7116, 11677, 2]
 // Exports: default
 
-// Module 19954 (GuildSettingsRoleMembers)
+// Module 20070 (GuildSettingsRoleMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7418 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7434 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ let obj = { container: obj2, containerSearchBar: obj3, missingMembers: obj4, mis
 obj2 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
 createStyles = createStyles.createStyles;
 obj3 = { paddingBottom: nativeDefault.space.PX_12 };
-obj4 = { borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, marginBottom: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
+obj4 = { borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO, marginBottom: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
 obj5 = { marginLeft: nativeDefault.space.PX_8, flex: 1 };
 let closure_10 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleMembers.tsx");
@@ -147,7 +147,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj2 = { guild, role };
-    const tmp3 = asyncRequire(19933, dependencyMap.paths);
+    const tmp3 = asyncRequire(20049, dependencyMap.paths);
     openLazy(tmp3, "role-add-members-" + guild.id + "-" + role.id, obj2);
   }, items3);
   closure_6 = found.useCallback((item) => {
@@ -190,7 +190,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const obj10 = { color: role(locked[7]).colors.TEXT_LINK, size: "md" };
     const CircleInformationIcon = tmp5(tmp6[24]).CircleInformationIcon;
     items6 = [closure_8(CircleInformationIcon, obj10), ];
-    const obj11 = { style: tmp.missingMembersText, variant: "text-sm/medium", children: intl.string(guild(locked[9]).t.RQxHZ8) };
+    const obj11 = { style: tmp.missingMembersText, variant: "body-sm/medium", children: intl.string(guild(locked[9]).t.RQxHZ8) };
     const Text = tmp5(tmp6[25]).Text;
     intl = tmp5(tmp6[9]).intl;
     items6[1] = closure_8(Text, obj11);

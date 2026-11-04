@@ -1,18 +1,18 @@
-// Module ID: 9423
-// Function ID: 9424
+// Module ID: 9440
+// Function ID: 9441
 // Name: GuildTag
-// Dependencies: [19, 17, 1385, 8517, 21, 5141, 575, 1377, 5837, 1113, 5747, 7106, 504, 8860, 5381, 9424, 2123, 2]
+// Dependencies: [19, 17, 1385, 8534, 21, 5141, 575, 1377, 5851, 1113, 5761, 7121, 504, 8877, 5382, 9441, 2123, 2]
 
-// Module 9423 (GuildTag)
+// Module 9440 (GuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import GuildTagConstants from "GuildTagConstants" /* 8517 */;
-import GuildTagUtils from "GuildTagUtils" /* 8860 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import GuildTagConstants from "GuildTagConstants" /* 8534 */;
+import GuildTagUtils from "GuildTagUtils" /* 8877 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -83,7 +83,7 @@ const memoResult1 = react.memo(function BaseGuildTagChiplet(textVariant) {
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
-    str = "text-xs/semibold";
+    str = "body-xs/semibold";
   }
   let str2 = textVariant.textColor;
   if (str2 === undefined) {

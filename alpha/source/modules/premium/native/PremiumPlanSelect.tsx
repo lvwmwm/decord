@@ -1,10 +1,10 @@
-// Module ID: 15570
-// Function ID: 15571
+// Module ID: 15657
+// Function ID: 15658
 // Name: PremiumPlanSelect
-// Dependencies: [5, 32, 19, 17, 7733, 5012, 2180, 2181, 7721, 15571, 1387, 1072, 7741, 5867, 21, 5141, 6843, 6898, 575, 6147, 15572, 5747, 1113, 2176, 15576, 15577, 15578, 15579, 15580, 15581, 9656, 5719, 504, 15582, 15366, 5376, 1187, 1252, 15404, 15405, 7101, 15583, 5837, 7080, 5426, 5148, 1357, 7716, 10690, 6079, 15584, 2123, 7186, 5710, 7717, 4954, 6864, 7719, 10709, 7446, 7555, 5735, 5716, 10807, 10697, 1499, 7726, 15417, 7471, 10698, 6655, 11514, 15380, 7711, 10040, 2187, 10806, 2]
+// Dependencies: [5, 32, 19, 17, 7749, 5012, 2180, 2181, 7737, 15658, 1387, 1072, 7757, 5881, 21, 5141, 6858, 6913, 575, 6162, 15659, 5761, 1113, 2176, 15663, 15664, 15665, 15666, 15667, 15668, 9675, 5732, 504, 15669, 15453, 5377, 1187, 1252, 15491, 15492, 7116, 15670, 5851, 7095, 5428, 5148, 1357, 7732, 10738, 6094, 15671, 2123, 7201, 5723, 7733, 4954, 6879, 7735, 10757, 7462, 7571, 5749, 5729, 10855, 10745, 1499, 7742, 15504, 7487, 10746, 6670, 11564, 15467, 7727, 10088, 2187, 10854, 2]
 // Exports: default
 
-// Module 15570 (PremiumPlanSelect)
+// Module 15657 (PremiumPlanSelect)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -12,29 +12,29 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import PremiumUtils from "PremiumUtils" /* 2176 */;
 import PremiumSubscription from "PremiumSubscription" /* 2187 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import PaymentConstants from "PaymentConstants" /* 5867 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6655 */;
-import TextStylesDefault from "TextStyles" /* 6843 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7555 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7716 */;
-import ProductIds from "ProductIds" /* 7717 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7733 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 9656 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10690 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10807 */;
-import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 15404 */;
-import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 15405 */;
-import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 15572 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15576 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15577 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15578 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15579 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15580 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15581 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import PaymentConstants from "PaymentConstants" /* 5881 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6670 */;
+import TextStylesDefault from "TextStyles" /* 6858 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7571 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 7732 */;
+import ProductIds from "ProductIds" /* 7733 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7749 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 9675 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10738 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10855 */;
+import openPremiumPlanWhatYouLoseActionSheetDefault from "openPremiumPlanWhatYouLoseActionSheet" /* 15491 */;
+import PremiumPlanWhatYouLoseActionSheet from "PremiumPlanWhatYouLoseActionSheet" /* 15492 */;
+import TreasureChestBannerSpotIllustration from "TreasureChestBannerSpotIllustration" /* 15659 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15663 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15664 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15665 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15666 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15667 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 15668 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -42,11 +42,11 @@ import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2180 */;
 import SubscriptionStore from "SubscriptionStore" /* 2181 */;
-import IAPStore from "IAPStore" /* 7721 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15571 */;
+import IAPStore from "IAPStore" /* 7737 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15658 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
-import ColorConstants from "ColorConstants" /* 7741 */;
+import ColorConstants from "ColorConstants" /* 7757 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -102,18 +102,18 @@ function BoostPurchaseNitroBanner() {
   items = [closure_30(TreasureChestBannerSpotIllustration.TreasureChestBannerSpotIllustration, { width: 117, height: 93, accessible: false }), ];
   const obj2 = { align: "center", spacing: nativeDefault.space.PX_4, children: items1 };
   const Stack2 = Stack_Stack.Stack;
-  const obj3 = { variant: "text-md/semibold", color: "text-default", style: tmp.nitroBannerText, children: format(jbrHpT, obj4) };
+  const obj3 = { variant: "body-md/semibold", color: "text-default", style: tmp.nitroBannerText, children: format(jbrHpT, obj4) };
   const Text = Text_Text.Text;
   const intl = intl5.intl;
   format = intl.format;
   obj4 = { discount: closure_30(Text2, obj5, "discount") };
   jbrHpT = intl5.t.jbrHpT;
-  obj5 = { variant: "text-md/semibold", color: "text-feedback-positive", children: intl2.format(intl5.t.RmVM19, obj6) };
+  obj5 = { variant: "body-md/semibold", color: "text-feedback-positive", children: intl2.format(intl5.t.RmVM19, obj6) };
   Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   obj6 = { percentageOff };
   items1 = [closure_30(Text, obj3), ];
-  const obj7 = { variant: "text-sm/medium", color: "text-muted", style: tmp.nitroBannerText, children: intl3.format(intl5.t.HYpETY, obj8) };
+  const obj7 = { variant: "body-sm/medium", color: "text-muted", style: tmp.nitroBannerText, children: intl3.format(intl5.t.HYpETY, obj8) };
   const Text3 = Text_Text.Text;
   intl3 = intl5.intl;
   obj8 = { boostCount };
@@ -173,8 +173,8 @@ function BoostDeltaPriceTrailing(arg0) {
   } else {
     AbOLNu = tmp2(1113).t["rS8FA+"];
   }
-  const obj3 = { variant: "text-sm/medium", color: "text-muted", children: format(AbOLNu, obj4) };
-  obj4 = { price: closure_30(Text_Text.Text, { variant: "text-sm/semibold", color: "text-feedback-positive", children: price }, "price") };
+  const obj3 = { variant: "body-sm/medium", color: "text-muted", children: format(AbOLNu, obj4) };
+  obj4 = { price: closure_30(Text_Text.Text, { variant: "body-sm/semibold", color: "text-feedback-positive", children: price }, "price") };
   items[1] = closure_30(Text, obj3);
   return tmp(Stack, obj);
 }
@@ -358,7 +358,7 @@ function PlanRow(plan) {
     }
     const obj10 = { icon: tmp38Result, label: getPlanDescription(plan, flag5), subLabel: formatToPlainStringResult1, trailing: tmp38Result2, arrow: flag2, disabled: flag, onPress: tmp43 };
     if (null != prop && plan.premiumTier === closure_19.TIER_2 && plan.numPremiumGuild === prop) {
-      const obj11 = { variant: "text-xs/semibold", color: "none", style: tmp2.recommendedText, children: intl4.string(plan(subscription[22]).t.WThgAR) };
+      const obj11 = { variant: "body-xs/semibold", color: "none", style: tmp2.recommendedText, children: intl4.string(plan(subscription[22]).t.WThgAR) };
       const Text = tmp5(tmp6[21]).Text;
       intl4 = tmp5(tmp6[22]).intl;
       formatToPlainStringResult1 = tmp38(Text, obj11);
@@ -370,7 +370,7 @@ function PlanRow(plan) {
       const obj13 = { price: premiumTier2DeltaPriceString, interval: plan.interval };
       tmp38Result2 = tmp38(BoostDeltaPriceTrailing, obj13);
     } else {
-      const obj14 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: formatToPlainStringResult };
+      const obj14 = { variant: "body-sm/medium", color: "text-muted", lineClamp: 1, children: formatToPlainStringResult };
       tmp38Result2 = tmp38(tmp5(tmp6[21]).Text, obj14);
     }
     if (flag) {
@@ -665,7 +665,7 @@ function PlanSection(label) {
   });
   if (shouldShowModernBoostFlow) {
     let obj2 = { title: label, hasIcons: true, children: mapped };
-    tmp7Result = tmp7(tmp2(7186).TableRowGroup, obj2);
+    tmp7Result = tmp7(tmp2(7201).TableRowGroup, obj2);
   } else {
     let tmp8 = closure_6;
     let obj3 = { children: mapped };
@@ -869,7 +869,7 @@ function PlanSections(isBoostPurchaseFlow) {
             const tmp8 = require;
             if (result) {
               const interval = productId.interval;
-              const tmp8Result = tmp8(7716);
+              const tmp8Result = tmp8(7732);
               result = interval === tmp8Result.getPremiumBundledItemsFromProductId(tmp).interval;
             }
             tmp7 = result;
@@ -1336,7 +1336,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
             const tmp32 = orderRequired;
             if (tmp31Result) {
               let obj9 = { children: items4 };
-              const obj10 = { style: tmp.premiumHeaderLabel, variant: "eyebrow", color: "text-default", accessibilityRole: "header", children: intl.string(tmp4(tmp3[22]).t.ITurwY) };
+              const obj10 = { style: tmp.premiumHeaderLabel, variant: "body-sm/medium", color: "text-default", accessibilityRole: "header", children: intl.string(tmp4(tmp3[22]).t.ITurwY) };
               const Text = tmp4(tmp3[21]).Text;
               intl = tmp4(tmp3[22]).intl;
               items4 = [closure_30(Text, obj10), ];
@@ -1346,7 +1346,7 @@ function PremiumPlanSelect(isBoostPurchaseFlow) {
             }
             let obj12 = { children: items5 };
             items5 = [tmp31Result, ];
-            const obj13 = { style: tmp.offPlatformSubscriptionMessage, variant: "text-md/semibold", children: tmp4Result15.getExternalManagementMessage(activeSubscription, { shouldAllowExternalManagement: true }) };
+            const obj13 = { style: tmp.offPlatformSubscriptionMessage, variant: "body-md/semibold", children: tmp4Result15.getExternalManagementMessage(activeSubscription, { shouldAllowExternalManagement: true }) };
             const Text2 = tmp4(tmp3[21]).Text;
             tmp4Result15 = tmp4(tmp3[73]);
             items5[1] = closure_30(Text2, obj13);

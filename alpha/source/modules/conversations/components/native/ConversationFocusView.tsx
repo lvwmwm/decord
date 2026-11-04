@@ -1,14 +1,14 @@
-// Module ID: 10021
-// Function ID: 10022
+// Module ID: 10069
+// Function ID: 10070
 // Name: ConversationFocusView
-// Dependencies: [19, 17, 21, 5141, 575, 5719, 9983, 9998, 1113, 5747, 5754, 10022, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5732, 10031, 10046, 1113, 5761, 5768, 10070, 2]
 // Exports: default
 
-// Module 10021 (ConversationFocusView)
+// Module 10069 (ConversationFocusView)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9983 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9998 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10031 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 10046 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -89,7 +89,7 @@ export default function ConversationFocusView(channelId) {
     tmp12Result = closure_7(closure_5, obj3);
   } else {
     const obj5 = { style: tmp4.pendingContent, children: items3 };
-    const obj6 = { variant: "text-md/normal", color: "text-muted", children: intl.string(tmp(jumpMessageId[8]).t.eylmYW) };
+    const obj6 = { variant: "body-md/normal", color: "text-muted", children: intl.string(tmp(jumpMessageId[8]).t.eylmYW) };
     const Text = tmp(tmp2[9]).Text;
     intl = tmp(tmp2[8]).intl;
     items3 = [closure_7(Text, obj6), ];

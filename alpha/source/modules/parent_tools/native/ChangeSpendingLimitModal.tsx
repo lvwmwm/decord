@@ -1,13 +1,13 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 17046
+// Function ID: 17047
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 5141, 575, 8150, 5747, 1113, 2667, 16955, 5832, 6864, 5831, 7537, 8096, 8097, 6147, 7208, 13344, 6887, 5754, 7124, 11619, 2]
+// Dependencies: [5, 19, 17, 21, 5141, 575, 8166, 5761, 1113, 2667, 17047, 5846, 6879, 5845, 7553, 8112, 8113, 6162, 7223, 13427, 6902, 5768, 7139, 11670, 2]
 // Exports: default
 
-// Module 16954 (ChangeSpendingLimitModal)
+// Module 17046 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -152,22 +152,22 @@ function ChangeSpendingLimitScreen(teenId) {
   }
   let tmp8 = closure_7;
   const tmp7 = amountInput.length > 0;
-  const ModalScreen = tmp2(8096).ModalScreen;
-  const ModalContent = tmp2(8097).ModalContent;
+  const ModalScreen = tmp2(8112).ModalScreen;
+  const ModalContent = tmp2(8113).ModalContent;
   let obj2 = { spacing: obj(575).space.PX_16, children: items };
-  const Stack = tmp2(6147).Stack;
-  let obj3 = { variant: "text-sm/normal", children: intl.string(obj(2667).IFguF2) };
-  const Text = tmp2(5747).Text;
+  const Stack = tmp2(6162).Stack;
+  let obj3 = { variant: "body-sm/normal", children: intl.string(obj(2667).IFguF2) };
+  const Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
   items = [closure_6(Text, obj3), ];
   let obj4 = { spacing: obj(575).space.PX_8, children: items1 };
-  const Stack2 = tmp2(6147).Stack;
-  let obj5 = { variant: "text-sm/semibold", color: "text-subtle", children: intl2.string(obj(2667)["1fHSu2"]) };
-  const Text2 = tmp2(5747).Text;
+  const Stack2 = tmp2(6162).Stack;
+  let obj5 = { variant: "body-sm/semibold", color: "text-subtle", children: intl2.string(obj(2667)["1fHSu2"]) };
+  const Text2 = tmp2(5761).Text;
   intl2 = tmp2(1113).intl;
   items1 = [closure_6(Text2, obj5), , ];
   const obj6 = { accessibilityLabel: intl3.string(obj(2667)["1fHSu2"]), value: amountInput, onChange: handleAmountChange, leadingText: tmp12, placeholder: intl4.string(obj(2667).DjSv82), keyboardType: str, clearable: true };
-  const TextInput = tmp2(7208).TextInput;
+  const TextInput = tmp2(7223).TextInput;
   intl3 = tmp2(1113).intl;
   tmp12 = undefined;
   if (tmp7) {
@@ -192,17 +192,17 @@ function ChangeSpendingLimitScreen(teenId) {
     if (isOverspending) {
       const obj8 = { style: tmp.warningRow, children: items3 };
       const obj9 = { size: "xs", color: obj(575).colors.ICON_FEEDBACK_WARNING };
-      const WarningIcon = tmp2(8150).WarningIcon;
+      const WarningIcon = tmp2(8166).WarningIcon;
       items3 = [tmp9(WarningIcon, obj9), ];
-      const obj10 = { variant: "text-sm/normal", style: tmp.warningText, children: intl6.formatToPlainString(obj(2667).Tk6x4X, obj11) };
-      const Text4 = tmp2(5747).Text;
+      const obj10 = { variant: "body-sm/normal", style: tmp.warningText, children: intl6.formatToPlainString(obj(2667).Tk6x4X, obj11) };
+      const Text4 = tmp2(5761).Text;
       intl6 = tmp2(1113).intl;
       obj11 = { amount: formatPriceResult, date: renewalDate };
       items3[1] = closure_6(Text4, obj10);
       tmp9Result1 = tmp8(tmp11, obj8);
     } else {
-      const obj12 = { variant: "text-sm/normal", color: "text-muted", children: intl5.formatToPlainString(obj(2667).pfAlRY, obj13) };
-      const Text3 = tmp2(5747).Text;
+      const obj12 = { variant: "body-sm/normal", color: "text-muted", children: intl5.formatToPlainString(obj(2667).pfAlRY, obj13) };
+      const Text3 = tmp2(5761).Text;
       intl5 = tmp2(1113).intl;
       obj13 = { amount: formatPriceResult };
       tmp9Result1 = tmp9(Text3, obj12);
@@ -216,9 +216,9 @@ function ChangeSpendingLimitScreen(teenId) {
   const obj14 = { children: tmp8(Stack, obj2) };
   items[1] = tmp8(Stack2, obj4);
   const items4 = [tmp9(ModalContent, obj14), ];
-  const ModalFooter = tmp2(13344).ModalFooter;
-  const ButtonGroup = tmp2(6887).ButtonGroup;
-  const Button = tmp2(5754).Button;
+  const ModalFooter = tmp2(13427).ModalFooter;
+  const ButtonGroup = tmp2(6902).ButtonGroup;
+  const Button = tmp2(5768).Button;
   if (isClearingCap) {
     const obj15 = { variant: "destructive", text: intl8.string(obj(2667).JZDGJ8), onPress: handleSave, disabled: isSubmitting, loading: isSubmitting };
     intl8 = tmp2(1113).intl;
@@ -235,8 +235,8 @@ function ChangeSpendingLimitScreen(teenId) {
   const obj18 = { children: tmp8(ButtonGroup, obj19) };
   obj19 = { children: items5 };
   items5 = [tmp9(Button, obj16), ];
-  const obj20 = { variant: "tertiary", text: intl9.string(require("intl").t["ETE/oC"]), onPress: obj(6864).pop };
-  const Button2 = tmp2(5754).Button;
+  const obj20 = { variant: "tertiary", text: intl9.string(require("intl").t["ETE/oC"]), onPress: obj(6879).pop };
+  const Button2 = tmp2(5768).Button;
   intl9 = tmp2(1113).intl;
   items5[1] = closure_6(Button2, obj20);
   items4[1] = closure_6(ModalFooter, obj18);
@@ -246,7 +246,7 @@ function ChangeSpendingLimitScreen(teenId) {
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { warningOverlay: obj2, warningRow: obj3, warningText: obj4 };
-obj2 = { borderRadius: nativeDefault.modules.mobile.INPUT_FIELD_RADIUS_LG, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
+obj2 = { borderRadius: nativeDefault.modules.mobile.INPUT_FIELD_RADIUS_LG, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_8, alignItems: "flex-start" };
@@ -267,7 +267,7 @@ export default function ChangeSpendingLimitModal(teenId) {
       headerLeft: obj3.getHeaderCloseButton(ModalActionCreatorsDefault.pop),
       headerTitle() {
         let intl;
-        const obj = { variant: "text-md/semibold", children: intl.string(closure_1_1(closure_1_2[9]).xMRO6A) };
+        const obj = { variant: "body-md/semibold", children: intl.string(closure_1_1(closure_1_2[9]).xMRO6A) };
         const Text = teenId(closure_1_2[7]).Text;
         intl = teenId(closure_1_2[8]).intl;
         return closure_1_6(Text, obj);
@@ -281,7 +281,7 @@ export default function ChangeSpendingLimitModal(teenId) {
     return obj;
   }, items);
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: intl.string(teenId(1113).t["13/7kX"]) };
-  const Modal = teenId(11619).Modal;
+  const Modal = teenId(11670).Modal;
   intl = teenId(1113).intl;
   return closure_6(Modal, obj);
 };

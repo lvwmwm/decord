@@ -1,23 +1,23 @@
-// Module ID: 6982
-// Function ID: 6983
+// Module ID: 6997
+// Function ID: 6998
 // Name: ChannelSectionStore
-// Dependencies: [2167, 5361, 6983, 4990, 5012, 5073, 5044, 5172, 1385, 1072, 4997, 1083, 6984, 6985, 6986, 1108, 11, 6072, 504, 1449, 572, 2]
+// Dependencies: [2167, 5362, 6998, 4990, 5012, 5073, 5044, 5172, 1385, 1072, 4997, 1083, 6999, 7000, 7001, 1108, 11, 6087, 504, 1449, 572, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6982 (ChannelSectionStore)
+// Module 6997 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6072 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6984 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 6985 */;
-import FriendsSidebarTracking from "FriendsSidebarTracking" /* 6986 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6087 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6999 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 7000 */;
+import FriendsSidebarTracking from "FriendsSidebarTracking" /* 7001 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import ExperimentStore from "ExperimentStore" /* 5361 */;
-import SearchMessageStore from "SearchMessageStore" /* 6983 */;
+import ExperimentStore from "ExperimentStore" /* 5362 */;
+import SearchMessageStore from "SearchMessageStore" /* 6998 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
@@ -229,7 +229,7 @@ class ChannelSectionStore extends PersistedStore {
       const obj = FriendsSidebarExperimentDefault;
       const tmp11 = importDefault;
       if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? flag5 : flag4) {
-        const tmp11Result = tmp11(6985);
+        const tmp11Result = tmp11(7000);
         if (tmp11Result.getConfig({ location: "ChannelSectionStore" }).sidebarEnabled) {
           NONE = constants.FRIENDS;
         }

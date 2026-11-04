@@ -1,13 +1,13 @@
-// Module ID: 8944
-// Function ID: 8945
+// Module ID: 8961
+// Function ID: 8962
 // Name: profile_customization/ProfileCustomizationUtils
-// Dependencies: [1411, 8945, 1090, 2]
+// Dependencies: [1411, 8962, 1090, 2]
 // Exports: getAvatarSource, useUserProfileBannerBackgroundColor
 
-// Module 8944 (profile_customization/ProfileCustomizationUtils)
+// Module 8961 (profile_customization/ProfileCustomizationUtils)
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import VideoBackground from "VideoBackground" /* 8945 */;
+import VideoBackground from "VideoBackground" /* 8962 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/profile_customization/native/ProfileCustomizationUtils.tsx");

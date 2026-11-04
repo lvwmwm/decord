@@ -1,19 +1,19 @@
-// Module ID: 18781
-// Function ID: 18782
+// Module ID: 18882
+// Function ID: 18883
 // Name: Elements
-// Dependencies: [32, 19, 17, 2180, 21, 5141, 575, 5747, 1113, 7106, 1187, 18782, 10041, 17359, 563, 10044, 7537, 2]
+// Dependencies: [32, 19, 17, 2180, 21, 5141, 575, 5761, 1113, 7121, 1187, 18883, 10089, 17450, 563, 10092, 7553, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 18781 (Elements)
+// Module 18882 (Elements)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 10041 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10044 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17359 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18782 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 10089 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10092 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17450 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18883 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -80,7 +80,7 @@ export function TruncatedText(lineClamp) {
     } else {
       stringResult = string(t.Fbrd8J);
     }
-    obj2 = { variant: "text-sm/medium", color: "text-default", children: stringResult };
+    obj2 = { variant: "body-sm/medium", color: "text-default", children: stringResult };
     tmp8Result = tmp8(tmp9, obj);
   }
   const obj3 = {
@@ -128,7 +128,7 @@ export function ArrowButton(arg0) {
   const obj = { accessibilityRole: "button", style: tmp.arrowButton, onPress, children: items };
   const PressableOpacity = Pressables.PressableOpacity;
   items = [, ];
-  const obj2 = { variant: "text-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
+  const obj2 = { variant: "body-md/semibold", color: "text-default", style: tmp.arrowButtonText, children: text };
   items[0] = React4(Text_Text.Text, obj2);
   const obj3 = { size: native.Icon.Sizes.SMALL, source: AssetRegistryDefault, style: tmp.arrowButtonIcon };
   const Icon = native.Icon;
@@ -149,7 +149,7 @@ export function useFormattedSubscriptionPlan(listingId) {
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7537);
+    const tmp3Result = tmp3(7553);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

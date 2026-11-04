@@ -1,9 +1,9 @@
-// Module ID: 11940
-// Function ID: 11941
+// Module ID: 11999
+// Function ID: 12000
 // Name: bridgeProtocol
 // Dependencies: [2]
 
-// Module 11940 (bridgeProtocol)
+// Module 11999 (bridgeProtocol)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/embedded-app-shims/src/native-shell/bridgeProtocol.tsx");

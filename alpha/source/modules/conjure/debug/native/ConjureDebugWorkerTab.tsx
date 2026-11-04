@@ -1,17 +1,17 @@
-// Module ID: 13167
-// Function ID: 13168
+// Module ID: 13250
+// Function ID: 13251
 // Name: ConjureDebugWorkerTab
-// Dependencies: [19, 17, 21, 5141, 575, 13166, 1113, 3995, 13163, 13164, 13168, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 13249, 1113, 3995, 13246, 13247, 13251, 2]
 // Exports: default
 
-// Module 13167 (ConjureDebugWorkerTab)
+// Module 13250 (ConjureDebugWorkerTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl16 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 13163 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 13164 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 13166 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 13246 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 13247 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 13249 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -45,7 +45,7 @@ function EnvSection(title) {
   const DebugSection = ConjureDebugPrimitives.DebugSection;
   if (items.length <= 0) {
     const obj4 = { children: intl.string(_modDef3995.umcjif) };
-    const DebugNote = tmp8(13166).DebugNote;
+    const DebugNote = tmp8(13249).DebugNote;
     intl = tmp8(1113).intl;
     items = tmp7(DebugNote, obj4);
   }
@@ -102,7 +102,7 @@ function BotEnvBlock(arg0) {
     }
     const items = [hasOwnProperty(DebugStatRow2, obj3), , , , ];
     const obj7 = { label: intl3.string(_modDef3995["z1dh+F"]), value: tmp9Result.formatCount(bot.events_received), hint: combined };
-    const DebugStatRow3 = tmp9(13166).DebugStatRow;
+    const DebugStatRow3 = tmp9(13249).DebugStatRow;
     intl3 = tmp9(1113).intl;
     combined = undefined;
     tmp9Result = ConjureDebugFormat;
@@ -116,12 +116,12 @@ function BotEnvBlock(arg0) {
     }
     items[1] = hasOwnProperty(DebugStatRow3, obj7);
     const obj8 = { label: intl4.string(_modDef3995.Iz5GnJ), value: tmp9Result7.formatCount(bot.guild_count) };
-    const DebugStatRow4 = tmp9(13166).DebugStatRow;
+    const DebugStatRow4 = tmp9(13249).DebugStatRow;
     intl4 = tmp9(1113).intl;
     tmp9Result7 = ConjureDebugFormat;
     items[2] = hasOwnProperty(DebugStatRow4, obj8);
     const obj9 = { label: intl5.string(_modDef3995["7UqtNv"]), value: tmp9Result8.formatCount(bot.reconnects), hint: formatToPlainString2Result };
-    const DebugStatRow5 = tmp9(13166).DebugStatRow;
+    const DebugStatRow5 = tmp9(13249).DebugStatRow;
     intl5 = tmp9(1113).intl;
     formatToPlainString2Result = undefined;
     tmp9Result8 = ConjureDebugFormat;
@@ -139,7 +139,7 @@ function BotEnvBlock(arg0) {
     let tmp8Result = null;
     if (bot.dispatch_errors > 0) {
       const obj11 = { label: intl7.string(_modDef3995["x3+JXJ"]), value: tmp9Result10.formatCount(bot.dispatch_errors), critical: true };
-      const DebugStatRow6 = tmp9(13166).DebugStatRow;
+      const DebugStatRow6 = tmp9(13249).DebugStatRow;
       intl7 = tmp9(1113).intl;
       tmp9Result10 = ConjureDebugFormat;
       tmp8Result = tmp8(DebugStatRow6, obj11);
@@ -212,13 +212,13 @@ function RuntimeEnvBlock(env) {
   const runtime = env.runtime;
   let obj = { children: items };
   let obj2 = { label: formatToPlainString(v92gVTm, obj3), value: obj5.formatCount(runtime.connections) };
-  let DebugStatRow = env(13166).DebugStatRow;
+  let DebugStatRow = env(13249).DebugStatRow;
   let intl = env(1113).intl;
   formatToPlainString = intl.formatToPlainString;
   obj3 = { env: obj4.debugEnvLabel(env) };
   v92gVTm = _modDef3995["92gVTm"];
-  obj4 = env(13163);
-  obj5 = env(13164);
+  obj4 = env(13246);
+  obj5 = env(13247);
   items = [closure_5(DebugStatRow, obj2), ];
   const schedules = runtime.schedules;
   items[1] = schedules.map((id) => {
@@ -337,11 +337,11 @@ function EnvMetricsSection(arg0) {
       if (metrics.cpu_ms_total > 0) {
         const obj6 = { children: items1 };
         const obj7 = { label: intl4.string(_modDef3995.LEJ5r3), used: metrics.cpu_ms_max, max: limits.cpu_ms_per_request, formatValue: ConjureDebugFormat.formatMs };
-        const DebugMeter = tmp10(13166).DebugMeter;
+        const DebugMeter = tmp10(13249).DebugMeter;
         intl4 = tmp10(1113).intl;
         items1 = [hasOwnProperty(DebugMeter, obj7), ];
         const obj8 = { label: intl5.string(_modDef3995.mSKImM), value: tmp10Result.formatMs(metrics.cpu_ms_total / metrics.requests), hint: formatToPlainString(JqMU05, obj9) };
-        const DebugStatRow2 = tmp10(13166).DebugStatRow;
+        const DebugStatRow2 = tmp10(13249).DebugStatRow;
         intl5 = tmp10(1113).intl;
         tmp10Result = ConjureDebugFormat;
         const intl6 = tmp10(1113).intl;
@@ -354,7 +354,7 @@ function EnvMetricsSection(arg0) {
         tmp = tmp9(metroRequire, obj6);
       } else {
         const obj = { label: intl.string(_modDef3995.LEJ5r3), value: intl2.string(_modDef3995["2Ekb2b"]), hint: intl3.string(_modDef3995.G0aq7i) };
-        const DebugStatRow = tmp10(13166).DebugStatRow;
+        const DebugStatRow = tmp10(13249).DebugStatRow;
         intl = tmp10(1113).intl;
         intl2 = tmp10(1113).intl;
         intl3 = tmp10(1113).intl;
@@ -366,7 +366,7 @@ function EnvMetricsSection(arg0) {
         tmp12Result = null;
         if (metrics.wall_ms_total > 0) {
           const obj10 = { label: intl7.string(_modDef3995.xvmL1D), value: tmp10Result9.formatMs(metrics.wall_ms_total) };
-          const DebugStatRow3 = tmp10(13166).DebugStatRow;
+          const DebugStatRow3 = tmp10(13249).DebugStatRow;
           intl7 = tmp10(1113).intl;
           tmp10Result9 = ConjureDebugFormat;
           tmp12Result = tmp12(DebugStatRow3, obj10);
@@ -376,14 +376,14 @@ function EnvMetricsSection(arg0) {
       let tmp12Result3 = null;
       if (metrics.exceeded_cpu > 0) {
         const obj11 = { label: intl8.string(_modDef3995["4sQYwH"]), value: tmp10Result10.formatCount(metrics.exceeded_cpu), critical: true };
-        const DebugStatRow4 = tmp10(13166).DebugStatRow;
+        const DebugStatRow4 = tmp10(13249).DebugStatRow;
         intl8 = tmp10(1113).intl;
         tmp10Result10 = ConjureDebugFormat;
         tmp12Result3 = tmp12(DebugStatRow4, obj11);
       }
       items[4] = tmp12Result3;
       const obj12 = { label: intl9.string(_modDef3995.bQenOy), value: tmp10Result11.formatCount(metrics.exceeded_memory), critical: metrics.exceeded_memory > 0, hint: formatToPlainString2(v5jIZwv, obj13) };
-      const DebugStatRow5 = tmp10(13166).DebugStatRow;
+      const DebugStatRow5 = tmp10(13249).DebugStatRow;
       intl9 = tmp10(1113).intl;
       tmp10Result11 = ConjureDebugFormat;
       const intl10 = tmp10(1113).intl;
@@ -395,7 +395,7 @@ function EnvMetricsSection(arg0) {
       let tmp12Result4 = null;
       if (null != metrics.build) {
         const obj14 = { label: intl11.string(_modDef3995.xgpn4Y), value: tmp10Result12.shortBuildLabel(metrics.build) };
-        const DebugStatRow6 = tmp10(13166).DebugStatRow;
+        const DebugStatRow6 = tmp10(13249).DebugStatRow;
         intl11 = tmp10(1113).intl;
         tmp10Result12 = ConjureDebugFormat;
         tmp12Result4 = tmp12(DebugStatRow6, obj14);
@@ -431,10 +431,10 @@ function StorageSection(status) {
     items1 = items;
   } else {
     let obj = { key: "preview", label: obj2.debugEnvLabel("preview"), metrics: tmp };
-    obj2 = limits(13163);
+    obj2 = limits(13246);
     items1 = [obj, ];
     let obj5 = { key: "stable", label: obj4.debugEnvLabel("stable"), metrics: stable };
-    obj4 = limits(13163);
+    obj4 = limits(13246);
     items1[1] = obj5;
     tmp4 = limits;
   }
@@ -490,7 +490,7 @@ function StorageSection(status) {
       return tmp18Result;
     })
   };
-  const DebugSection = tmp4(13166).DebugSection;
+  const DebugSection = tmp4(13249).DebugSection;
   intl2 = tmp4(1113).intl;
   return closure_5(DebugSection, obj6);
 }
@@ -604,14 +604,14 @@ export default function ConjureDebugWorkerTab(status) {
     let tmp3Result8 = null;
     if (null != status.analytics) {
       const obj9 = { analytics: status.analytics };
-      tmp3Result8 = tmp3(tmp4(13168).ConjureDebugWorkerAnalyticsSection, obj9);
+      tmp3Result8 = tmp3(tmp4(13251).ConjureDebugWorkerAnalyticsSection, obj9);
     }
     items1[7] = tmp3Result8;
     const obj10 = { title: intl7.string(_modDef3995.fQMpFp), children: items2 };
-    const DebugSection = tmp4(13166).DebugSection;
+    const DebugSection = tmp4(13249).DebugSection;
     intl7 = tmp4(1113).intl;
     const obj11 = { label: tmp4Result.debugEnvLabel("preview"), value: str3 };
-    const DebugStatRow = tmp4(13166).DebugStatRow;
+    const DebugStatRow = tmp4(13249).DebugStatRow;
     let str2 = "\u2014";
     str3 = "\u2014";
     tmp4Result = ConjureDebugLabels;
@@ -621,7 +621,7 @@ export default function ConjureDebugWorkerTab(status) {
     }
     items2 = [hasOwnProperty(DebugStatRow, obj11), ];
     const obj12 = { label: tmp4Result5.debugEnvLabel("stable"), value: str2 };
-    const DebugStatRow2 = tmp4(13166).DebugStatRow;
+    const DebugStatRow2 = tmp4(13249).DebugStatRow;
     tmp4Result5 = ConjureDebugLabels;
     if (null != status.deployments.stable_build) {
       const tmp4Result6 = ConjureDebugFormat;

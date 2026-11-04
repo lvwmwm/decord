@@ -1,14 +1,14 @@
-// Module ID: 14588
-// Function ID: 14589
+// Module ID: 14668
+// Function ID: 14669
 // Name: WishlistViewMoreCard
-// Dependencies: [19, 17, 21, 5141, 575, 1113, 14583, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1113, 14663, 5761, 2]
 // Exports: default
 
-// Module 14588 (WishlistViewMoreCard)
+// Module 14668 (WishlistViewMoreCard)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import WishlistItemCardDefault from "WishlistItemCard" /* 14583 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import WishlistItemCardDefault from "WishlistItemCard" /* 14663 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,7 +47,7 @@ export default function WishlistViewMoreCard(overflowCount) {
   intl = intl3.intl;
   items = [metroRequire(WishlistItemCardDefault, { accessibilityHidden: true, sku, size, recipientName }), ];
   const obj2 = { style: tmp.moreOverlay, children: metroRequire(Text, obj3) };
-  obj3 = { variant: "text-md/semibold", color: "text-overlay-light", children: intl2.format(intl3.t.F6iMs4, { count: overflowCount }) };
+  obj3 = { variant: "body-md/semibold", color: "text-overlay-light", children: intl2.format(intl3.t.F6iMs4, { count: overflowCount }) };
   Text = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = metroRequire(hasOwnProperty, obj2);

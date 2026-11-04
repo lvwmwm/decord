@@ -1,15 +1,15 @@
-// Module ID: 11263
-// Function ID: 11264
+// Module ID: 11313
+// Function ID: 11314
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 5141, 575, 5747, 7187, 11227, 5381, 5730, 12, 7019, 7338, 10867, 5395, 7441, 1113, 7339, 7344, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5761, 7202, 11277, 5382, 5743, 12, 7034, 7354, 10915, 5396, 7457, 1113, 7355, 7360, 2]
 // Exports: default
 
-// Module 11263 (BugReporterFeatureActionSheet)
+// Module 11313 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -35,7 +35,7 @@ let closure_9 = react.memo(function BugReporterFeatureHeader(arg0) {
   let items;
   let title;
   ({ title, height } = arg0);
-  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "text-sm/semibold", color: "text-muted", children: title }) };
+  const obj = { style: items, children: metroRequire(Text_Text.Text, { variant: "body-sm/semibold", color: "text-muted", children: title }) };
   items = [closure_8().sectionHeader, { height }];
   return metroRequire(View, obj);
 });
@@ -61,11 +61,11 @@ let closure_10 = react.memo(function BugReporterFeature(item) {
       obj.hideActionSheet();
     }
   };
-  const TableRadioRow = item(7187).TableRadioRow;
-  obj2 = item(11227);
-  const obj3 = item(11227);
+  const TableRadioRow = item(7202).TableRadioRow;
+  obj2 = item(11277);
+  const obj3 = item(11277);
   featureId = obj3.getFeatureId(item);
-  obj4 = item(11227);
+  obj4 = item(11277);
   return closure_6(TableRadioRow, obj);
 });
 const result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");

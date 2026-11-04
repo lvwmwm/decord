@@ -1,19 +1,19 @@
-// Module ID: 14764
-// Function ID: 14765
+// Module ID: 14844
+// Function ID: 14845
 // Name: TwoWayLinkError
-// Dependencies: [19, 17, 21, 5141, 9862, 5837, 14765, 5747, 7412, 6147, 5754, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 9880, 5851, 14845, 5761, 7428, 6162, 5768, 1113, 2]
 // Exports: TwoWayLinkError
 
-// Module 14764 (TwoWayLinkError)
+// Module 14844 (TwoWayLinkError)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9862 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14765 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9880 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14845 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -49,7 +49,7 @@ export function TwoWayLinkError(arg0) {
   items = [React3(tmp3, obj4), , ];
   const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, children: title };
   items[1] = React3(Text_Text.Text, obj5);
-  const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body };
+  const obj6 = { variant: "body-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: body };
   items[2] = React3(Text_Text.Text, obj6);
   items1 = [hasOwnProperty(View, obj3), ];
   const obj7 = { bottom: true, style: twoWayLinkStyles.footerContainer, children: hasOwnProperty(Stack, obj8) };

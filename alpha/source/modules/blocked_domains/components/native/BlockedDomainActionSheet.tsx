@@ -1,19 +1,19 @@
-// Module ID: 14891
-// Function ID: 14892
+// Module ID: 14971
+// Function ID: 14972
 // Name: BlockedDomainActionSheet
-// Dependencies: [19, 21, 5141, 575, 5395, 6147, 7191, 5747, 1113, 14892, 5754, 5381, 2]
+// Dependencies: [19, 21, 5141, 575, 5396, 6162, 7206, 5761, 1113, 14972, 5768, 5382, 2]
 // Exports: default
 
-// Module 14891 (BlockedDomainActionSheet)
+// Module 14971 (BlockedDomainActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 7191 */;
-import URLCallout from "URLCallout" /* 14892 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 7206 */;
+import URLCallout from "URLCallout" /* 14972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -49,7 +49,7 @@ export default function BlockedDomainActionSheet(url) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = _false(Text, obj4);
-  const obj5 = { style: tmp.warningMessage, variant: "text-md/medium", children: intl2.format(intl4.t.jnHyYU, {}) };
+  const obj5 = { style: tmp.warningMessage, variant: "body-md/medium", children: intl2.format(intl4.t.jnHyYU, {}) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = _false(Text2, obj5);

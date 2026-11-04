@@ -1,16 +1,16 @@
-// Module ID: 5351
-// Function ID: 5352
+// Module ID: 5352
+// Function ID: 5353
 // Name: GuildThemeRuntimeStore
-// Dependencies: [5352, 5012, 5172, 1072, 5356, 5011, 12, 504, 572, 2]
+// Dependencies: [5353, 5012, 5172, 1072, 5357, 5011, 12, 504, 572, 2]
 
-// Module 5351 (GuildThemeRuntimeStore)
+// Module 5352 (GuildThemeRuntimeStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import guildThemeSerialization from "guildThemeSerialization" /* 5011 */;
-import Powerups from "Powerups" /* 5356 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5352 */;
+import Powerups from "Powerups" /* 5357 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5353 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import size from "module_2" /* 2 */;

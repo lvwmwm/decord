@@ -1,14 +1,14 @@
-// Module ID: 10948
-// Function ID: 10949
+// Module ID: 10996
+// Function ID: 10997
 // Name: InstantInviteCreator
-// Dependencies: [19, 17, 21, 5141, 6147, 575, 1187, 10949, 2]
+// Dependencies: [19, 17, 21, 5141, 6162, 575, 1187, 10997, 2]
 
-// Module 10948 (InstantInviteCreator)
+// Module 10996 (InstantInviteCreator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10949 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import DetailedGuildIdentityUserRow from "DetailedGuildIdentityUserRow" /* 10997 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

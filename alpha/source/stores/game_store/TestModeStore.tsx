@@ -1,9 +1,9 @@
-// Module ID: 5793
-// Function ID: 5794
+// Module ID: 5807
+// Function ID: 5808
 // Name: TestModeStore
 // Dependencies: [1193, 1231, 2165, 504, 4966, 572, 2]
 
-// Module 5793 (TestModeStore)
+// Module 5807 (TestModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettings from "UserSettings" /* 4966 */;

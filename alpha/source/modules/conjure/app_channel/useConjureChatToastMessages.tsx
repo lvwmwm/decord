@@ -1,17 +1,17 @@
-// Module ID: 18834
-// Function ID: 18835
+// Module ID: 18937
+// Function ID: 18938
 // Name: useConjureChatToastMessages
-// Dependencies: [32, 19, 18835, 6181, 1089, 504, 6183, 572, 2]
+// Dependencies: [32, 19, 18938, 6196, 1089, 504, 6198, 572, 2]
 // Exports: default
 
-// Module 18834 (useConjureChatToastMessages)
+// Module 18937 (useConjureChatToastMessages)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6183 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CallChatToastsStore from "CallChatToastsStore" /* 18835 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import CallChatToastsStore from "CallChatToastsStore" /* 18938 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

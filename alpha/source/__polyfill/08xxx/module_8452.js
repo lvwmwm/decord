@@ -1,56 +1,45 @@
 // Module ID: 8452
 // Function ID: 8453
-// Dependencies: [8420]
+// Dependencies: [8453]
 
 // Module 8452
-import _modDef8420 from "module_8420" /* 8420 */;
+import _modDef8453 from "module_8453" /* 8453 */;
 
-let obj = {
-  read(getUint8, sum) {
-    let obj4;
-    let obj5;
-    let str2;
-    let sum5;
-    const obj = _modDef8420;
-    const byteAt = obj.getByteAt(getUint8, sum);
-    let num = 0;
-    if (16 & byteAt) {
-      num = 1;
+
+export default {
+  decode(arg0, buffer) {
+    function decodeAsciiValue(arg0) {
+      try {
+        const _decodeURIComponent = decodeURIComponent;
+        const _escape = escape;
+        return decodeURIComponent(escape(arg0));
+      } catch (err) {
+        return arg0;
+      }
     }
-    let str = "No";
-    const obj2 = { value: num, description: str2 };
-    str2 = "No";
-    if (16 & byteAt) {
-      str2 = "Yes";
+    const obj = _modDef8453;
+    const value = obj.get();
+    if (undefined !== value) {
+      if (undefined !== arg0) {
+        try {
+          const self = this;
+          const self2 = this;
+          const value1 = new value(arg0);
+          const _DataView = DataView;
+          const decode = value1.decode;
+          if (buffer instanceof DataView) {
+            buffer = buffer.buffer;
+          } else {
+            const _Uint8Array = Uint8Array;
+            buffer = Uint8Array.from(buffer);
+          }
+          return decode(buffer);
+        } catch (err) {
+        }
+      }
     }
-    let num2 = 0;
-    const obj3 = { Alpha: obj2, Animation: obj4, ImageWidth: obj5, ImageHeight: { value: sum5, description: `${tmp13}px` } };
-    if (2 & byteAt) {
-      num2 = 1;
-    }
-    obj4 = { value: num2, description: str };
-    if (2 & byteAt) {
-      str = "Yes";
-    }
-    sum = sum + c2;
-    const tmpResult = _modDef8420;
-    const byteAt1 = tmpResult.getByteAt(getUint8, sum);
-    const tmpResult6 = _modDef8420;
-    const sum1 = byteAt1 + 256 * tmpResult6.getByteAt(getUint8, sum + 1);
-    const tmpResult7 = _modDef8420;
-    const sum2 = sum1 + 65536 * tmpResult7.getByteAt(getUint8, sum + 2) + 1;
-    const sum3 = sum + c3;
-    obj5 = { value: sum2, description: `${tmp9}px` };
-    const tmpResult8 = _modDef8420;
-    const byteAt2 = tmpResult8.getByteAt(getUint8, sum3);
-    const tmpResult9 = _modDef8420;
-    const sum4 = byteAt2 + 256 * tmpResult9.getByteAt(getUint8, sum3 + 1);
-    const tmpResult10 = _modDef8420;
-    sum5 = sum4 + 65536 * tmpResult10.getByteAt(getUint8, sum3 + 2) + 1;
-    return obj3;
-  }
+    const mapped = buffer.map((item) => String.fromCharCode(item));
+    return decodeAsciiValue(mapped.join(""));
+  },
+  TAG_HEADER_SIZE: 5
 };
-let c2 = 4;
-let c3 = 7;
-
-export default obj;

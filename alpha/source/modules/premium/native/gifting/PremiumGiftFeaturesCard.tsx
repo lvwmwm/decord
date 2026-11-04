@@ -1,31 +1,31 @@
-// Module ID: 10750
-// Function ID: 10751
+// Module ID: 10798
+// Function ID: 10799
 // Name: PremiumGiftFeaturesCard
-// Dependencies: [19, 17, 9758, 1387, 1083, 21, 575, 5141, 6843, 504, 10739, 10046, 10751, 10752, 9655, 10060, 10058, 5747, 1113, 10067, 5754, 10753, 10738, 10754, 5207, 5710, 10755, 10757, 5860, 2155, 2]
+// Dependencies: [19, 17, 9776, 1387, 1083, 21, 575, 5141, 6858, 504, 10787, 10094, 10799, 10800, 9674, 10108, 10106, 5761, 1113, 10115, 5768, 10801, 10786, 10802, 5207, 5723, 10803, 10805, 5874, 2155, 2]
 
-// Module 10750 (PremiumGiftFeaturesCard)
+// Module 10798 (PremiumGiftFeaturesCard)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import StringUtils from "StringUtils" /* 2155 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import TextStylesDefault from "TextStyles" /* 6843 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9655 */;
-import usePremiumFeaturesDefault from "usePremiumFeatures" /* 10046 */;
-import PremiumFeaturesLogoDefault from "PremiumFeaturesLogo" /* 10058 */;
-import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 10060 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 10067 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10738 */;
-import MarketingComponentType from "MarketingComponentType" /* 10739 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10751 */;
-import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10752 */;
-import MarketingComponentHooks from "MarketingComponentHooks" /* 10753 */;
-import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 10754 */;
-import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 10755 */;
-import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 10757 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import TextStylesDefault from "TextStyles" /* 6858 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9674 */;
+import usePremiumFeaturesDefault from "usePremiumFeatures" /* 10094 */;
+import PremiumFeaturesLogoDefault from "PremiumFeaturesLogo" /* 10106 */;
+import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 10108 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 10115 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10786 */;
+import MarketingComponentType from "MarketingComponentType" /* 10787 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10799 */;
+import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10800 */;
+import MarketingComponentHooks from "MarketingComponentHooks" /* 10801 */;
+import SlayerStorefrontTimeUtils from "SlayerStorefrontTimeUtils" /* 10802 */;
+import PremiumGiftPromotionDetailsDefault from "PremiumGiftPromotionDetails" /* 10803 */;
+import PremiumGiftCountdownBadgeDefault from "PremiumGiftCountdownBadge" /* 10805 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9758 */;
+import PromotionsStore from "PromotionsStore" /* 9776 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1083 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,7 +90,7 @@ function PremiumGiftPlanSelectPromotionDetails(config) {
     const obj6 = { text: tickingFormattedLimitedOfferTimeLeft, icon: React4(ClockIcon, obj7), style: tmp.countdownBadge };
     obj7 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
     const tmp11Result = PremiumGiftCountdownBadgeDefault;
-    ClockIcon = tmp2(5860).ClockIcon;
+    ClockIcon = tmp2(5874).ClockIcon;
     tmp9Result = tmp9(tmp11Result, obj6);
   }
   const tmp2Result = StringUtils;
@@ -110,7 +110,7 @@ function PremiumGiftPlanSelectPromotionDetails(config) {
   }
   items1 = [React4(tmp13, obj5), ];
   const obj9 = { variant: "primary-overlay", text: intl3.string(intl5.t.Ve9Ge6), onPress };
-  const Button = tmp2(5754).Button;
+  const Button = tmp2(5768).Button;
   intl3 = tmp2(1113).intl;
   items1[1] = React4(Button, obj9);
   return React4(ThemeContextProvider, obj3);
@@ -202,14 +202,14 @@ const memoResult = react.memo(function PremiumGiftFeaturesCard(variant) {
   const items3 = [React4(PremiumFeaturesWumpusDefault, { premiumType }), , , , , , ];
   obj4 = { style: tmp6.logo, premiumType };
   items3[1] = React4(PremiumFeaturesLogoDefault, obj4);
-  const obj5 = { style: items4, variant: "text-sm/medium", color: "text-overlay-light", children: intl.format(intl5.t.Ob6fwp, { monthlyPrice: tmp9, yearlyPrice: tmp10 }) };
+  const obj5 = { style: items4, variant: "body-sm/medium", color: "text-overlay-light", children: intl.format(intl5.t.Ob6fwp, { monthlyPrice: tmp9, yearlyPrice: tmp10 }) };
   items4 = [tmp6.pricing, obj8[str]];
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
   items3[2] = React4(Text, obj5);
-  const obj6 = { style: items5, variant: "heading-sm/semibold", color: "text-overlay-light", children: intl2.string(intl5.t.JgsVht) };
+  const obj6 = { style: items5, variant: "heading-xs/semibold", color: "text-overlay-light", children: intl2.string(intl5.t.JgsVht) };
   items5 = [tmp6.featureTitle, obj4[str]];
-  const Text2 = tmp2(5747).Text;
+  const Text2 = tmp2(5761).Text;
   intl2 = tmp2(1113).intl;
   items3[3] = React4(Text2, obj6);
   const obj7 = { style: tmp6.features, features: tmp8, iconStyle: tmp6.featureIcon, labelStyle: tmp6.featureText, rowStyle: obj[str] };
@@ -231,7 +231,7 @@ const memoResult = react.memo(function PremiumGiftFeaturesCard(variant) {
   }
   const obj9 = { style: items6, children: React4(Button, { variant: "primary-overlay", text: stringResult, onPress }) };
   items6 = [tmp6.button, obj12[str]];
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   if (premiumType === hasOwnProperty.TIER_0) {
     const intl4 = tmp2(1113).intl;
     stringResult = intl4.string(tmp2(1113).t.rk4Uu8);

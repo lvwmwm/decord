@@ -1,16 +1,16 @@
-// Module ID: 13166
-// Function ID: 13167
+// Module ID: 13249
+// Function ID: 13250
 // Name: ConjureDebugPrimitives
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 3995, 13164, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 3995, 13247, 5768, 2]
 // Exports: DebugMeter, DebugNote, DebugSection, DebugSnapshotToolbar, DebugStatRow
 
-// Module 13166 (ConjureDebugPrimitives)
+// Module 13249 (ConjureDebugPrimitives)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 13164 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 13247 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -63,14 +63,14 @@ export function DebugSnapshotToolbar(onRefresh) {
   if ("loading" === fetchState) {
     tmp4Result = tmp4(_false, { size: "small" });
   } else if ("failed" === fetchState) {
-    const obj3 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3995.ZVByPX) };
+    const obj3 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3995.ZVByPX) };
     const Text2 = Text_Text.Text;
     intl2 = intl4.intl;
     tmp4Result = tmp4(Text2, obj3);
   } else {
     tmp4Result = null;
     if (null != generatedAt) {
-      const obj4 = { variant: "text-xs/normal", color: "text-muted", children: formatToPlainString(INVO50, obj6) };
+      const obj4 = { variant: "body-xs/normal", color: "text-muted", children: formatToPlainString(INVO50, obj6) };
       const Text = Text_Text.Text;
       const intl = intl4.intl;
       formatToPlainString = intl.formatToPlainString;
@@ -93,11 +93,11 @@ export function DebugSection(arg0) {
   let title;
   ({ title, children } = arg0);
   const obj = { style: closure_7().section, children: items };
-  items = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/semibold", color: "text-muted", children: title }), children];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "body-xs/semibold", color: "text-muted", children: title }), children];
   return metroRequire(React3, obj);
 }
 export function DebugNote(children) {
-  return hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: children.children });
+  return hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", children: children.children });
 }
 export function DebugStatRow(arg0) {
   let critical;
@@ -124,7 +124,7 @@ export function DebugStatRow(arg0) {
   const obj = { style: tmp.statRow, children: items5 };
   const obj2 = { style: tmp.statRowHead, children: items2 };
   ({ statLabel: arr[0], statGroup: arr[1] } = tmp);
-  items1 = [icon, hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: label })];
+  items1 = [icon, hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", children: label })];
   items2 = [metroRequire(React3, obj3), ];
   const obj4 = { style: items3, children: items4 };
   items3 = [, ];
@@ -135,13 +135,13 @@ export function DebugStatRow(arg0) {
   if (critical) {
     str = "text-feedback-critical";
   }
-  const obj5 = { variant: "text-sm/medium", color: str, style: tmp.statValue, children: value };
+  const obj5 = { variant: "body-sm/medium", color: str, style: tmp.statValue, children: value };
   items4[1] = hasOwnProperty(Text, obj5);
   items2[1] = metroRequire(React3, obj4);
   items5 = [metroRequire(React3, obj2), ];
   let tmp4Result = null;
   if (null != hint) {
-    const obj6 = { variant: "text-xs/normal", color: "text-muted", children: hint };
+    const obj6 = { variant: "body-xs/normal", color: "text-muted", children: hint };
     tmp4Result = tmp4(Text_Text.Text, obj6);
   }
   items5[1] = tmp4Result;
@@ -169,14 +169,14 @@ export function DebugMeter(arg0) {
   const obj2 = { style: tmp.statRowHead, children: items };
   items = [, ];
   const obj = { style: tmp.statRow, accessibilityRole: "progressbar", accessibilityLabel: label, accessibilityValue: { text: combined }, children: items1 };
-  const obj3 = { style: tmp.statLabel, children: hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: label }) };
+  const obj3 = { style: tmp.statLabel, children: hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", children: label }) };
   items[0] = hasOwnProperty(React3, obj3);
   let str = "text-default";
   const Text = Text_Text.Text;
   if (meterFillCritical) {
     str = "text-feedback-critical";
   }
-  items[1] = hasOwnProperty(Text, { variant: "text-sm/medium", color: str, children: combined });
+  items[1] = hasOwnProperty(Text, { variant: "body-sm/medium", color: str, children: combined });
   items1 = [metroRequire(React3, obj2), ];
   const obj4 = { style: tmp.meterTrack, children: hasOwnProperty(React3, { style: items2 }) };
   items2 = [tmp.meterFill, , ];

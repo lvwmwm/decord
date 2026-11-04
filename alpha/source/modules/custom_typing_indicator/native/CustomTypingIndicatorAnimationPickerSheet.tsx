@@ -1,14 +1,14 @@
-// Module ID: 17497
-// Function ID: 17498
+// Module ID: 17587
+// Function ID: 17588
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 5141, 575, 7103, 5747, 1393, 1113, 3997, 7486, 13877, 6147, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 7118, 5761, 1393, 1113, 3997, 7502, 13963, 6162, 2]
 // Exports: default
 
-// Module 17497 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 17587 (CustomTypingIndicatorAnimationPickerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import Card_Card from "Card/Card" /* 7103 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import Card_Card from "Card/Card" /* 7118 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp3;
-const Text_Text = tmp3(5747);
+const Text_Text = tmp3(5761);
 function MotionOptionButton(isSelected) {
   let label;
   let onPress;
@@ -38,7 +38,7 @@ function MotionOptionButton(isSelected) {
     optionCardSelected = tmp.optionCardSelected;
   }
   items[1] = optionCardSelected;
-  const obj = { style: items, onPress, border: str, accessibilityRole: "togglebutton", accessibilityState: { checked: isSelected }, children: metroRequire(Text_Text.Text, { variant: "text-md/medium", color: "text-default", children: label }) };
+  const obj = { style: items, onPress, border: str, accessibilityRole: "togglebutton", accessibilityState: { checked: isSelected }, children: metroRequire(Text_Text.Text, { variant: "body-md/medium", color: "text-default", children: label }) };
   str = "faint";
   if (isSelected) {
     str = "none";
@@ -90,12 +90,12 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
   intl4 = onChange(1113).intl;
   items[3] = obj4;
   const obj5 = { contentStyles: tmp.content, dismissAccessibilityLabel: intl5.string(animation(3997)["q+qHax"]), children: items1 };
-  const ActionSheet = onChange(7486).ActionSheet;
+  const ActionSheet = onChange(7502).ActionSheet;
   intl5 = onChange(1113).intl;
   const obj6 = { style: tmp.previewRow, children: closure_6(tmp4, obj7) };
   obj7 = { config: obj8, size: 54 };
   obj8 = { emojis, animation, typingSuggestion: onChange(1393).TypingSuggestion.UNSPECIFIED };
-  tmp4 = animation(13877);
+  tmp4 = animation(13963);
   items1 = [closure_6(View, obj6), ];
   const obj9 = {
     spacing: 8,
@@ -120,7 +120,7 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
       return metroRequire(Stack, obj, index);
     })
   };
-  let Stack = onChange(6147).Stack;
+  let Stack = onChange(6162).Stack;
   items2 = [items.slice(0, 2), items.slice(2, 4)];
   items1[1] = closure_6(Stack, obj9);
   return closure_7(ActionSheet, obj5);

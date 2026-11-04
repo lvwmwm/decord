@@ -1,26 +1,26 @@
-// Module ID: 7512
-// Function ID: 7513
+// Module ID: 7528
+// Function ID: 7529
 // Name: getGuildTransitionRoute
-// Dependencies: [7513, 7515, 4993, 7384, 4990, 5071, 5012, 5044, 7519, 1072, 4997, 7521, 7526, 7528, 5015, 7543, 2]
+// Dependencies: [7529, 7531, 4993, 7400, 4990, 5071, 5012, 5044, 7535, 1072, 4997, 7537, 7542, 7544, 5015, 7559, 2]
 // Exports: getGuildTransitionRoute
 
-// Module 7512 (getGuildTransitionRoute)
+// Module 7528 (getGuildTransitionRoute)
 import Constants from "Constants" /* 1072 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
 import FavoritesUtils from "FavoritesUtils" /* 5015 */;
-import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7521 */;
-import canUseGuildSpace from "canUseGuildSpace" /* 7526 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7528 */;
-import ConjureUtils from "ConjureUtils" /* 7543 */;
-import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7513 */;
-import ConjureServerProjectRouteStore from "ConjureServerProjectRouteStore" /* 7515 */;
+import OnboardingHomeUtils from "OnboardingHomeUtils" /* 7537 */;
+import canUseGuildSpace from "canUseGuildSpace" /* 7542 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7544 */;
+import ConjureUtils from "ConjureUtils" /* 7559 */;
+import ConjureBuilderRouteStore from "ConjureBuilderRouteStore" /* 7529 */;
+import ConjureServerProjectRouteStore from "ConjureServerProjectRouteStore" /* 7531 */;
 import FavoriteStore from "FavoriteStore" /* 4993 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7384 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7400 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildChannelStore from "GuildChannelStore" /* 5071 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7519 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7535 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;

@@ -1,9 +1,9 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11717
+// Function ID: 11718
 // Name: ConjurePagesStore
 // Dependencies: [504, 572, 2]
 
-// Module 11666 (ConjurePagesStore)
+// Module 11717 (ConjurePagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -12,7 +12,6 @@ let closure_0 = { chatOpen: true, debugOpen: false, previewSelection: null, chat
 let c1 = null;
 let c2 = null;
 let c3 = false;
-let c4 = "";
 const map = new Map();
 const map1 = new Map();
 const set = new Set();
@@ -30,9 +29,6 @@ class ConjurePagesStore extends Store {
       tmp = c1;
     }
     return tmp;
-  }
-  getHomePrompt() {
-    return c4;
   }
   getScrollTop(arg0) {
     let num = map.get(arg0);
@@ -76,10 +72,6 @@ let obj = {
     }
     return flag;
   },
-  CONJURE_PAGES_HOME_PROMPT_SAVE: function handleHomePromptSave(prompt) {
-    const _prompt = prompt.prompt;
-    return false;
-  },
   CONJURE_PAGES_SCROLL_SAVE: function handleScrollSave(key) {
     const result = map.set(key.key, key.scrollTop);
     return false;
@@ -118,7 +110,6 @@ let obj = {
     c1 = null;
     c2 = null;
     c3 = false;
-    c4 = "";
     map.clear();
     map1.clear();
     set.clear();

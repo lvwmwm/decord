@@ -1,10 +1,10 @@
-// Module ID: 7038
-// Function ID: 7039
+// Module ID: 7053
+// Function ID: 7054
 // Name: GuildJoinRequestAnalyticUtils
 // Dependencies: [502, 5053, 1072, 1252, 2]
 // Exports: trackMemberApplicationAction, trackMemberApplicationInterviewMessage, trackMemberApplicationViewed, trackMemberVerificationApplicationViewed
 
-// Module 7038 (GuildJoinRequestAnalyticUtils)
+// Module 7053 (GuildJoinRequestAnalyticUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,29 +1,29 @@
-// Module ID: 17938
-// Function ID: 17939
+// Module ID: 18034
+// Function ID: 18035
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 5141, 575, 7103, 6147, 7208, 8786, 16011, 5395, 7441, 7373, 5747, 8776, 7209, 7339, 8152, 7685, 7215, 5754, 5381, 7259, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 7118, 6162, 7223, 8803, 16101, 5396, 7457, 7389, 5761, 8793, 7224, 7355, 8168, 7701, 7230, 5768, 5382, 7279, 2]
 // Exports: default
 
-// Module 17938 (UserSettingsDesignSystemTextInput)
+// Module 18034 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7208 */;
-import Input2 from "Input" /* 7209 */;
-import TextField from "TextField" /* 7215 */;
-import SplitTextInput from "SplitTextInput" /* 7259 */;
-import SearchBar from "SearchBar" /* 7339 */;
-import TextArea from "TextArea" /* 7373 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7441 */;
-import SettingsIcon from "SettingsIcon" /* 7685 */;
-import IconButton2 from "IconButton" /* 8152 */;
-import TextIcon from "TextIcon" /* 8776 */;
-import GhostInput2 from "GhostInput" /* 16011 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7223 */;
+import Input2 from "Input" /* 7224 */;
+import TextField from "TextField" /* 7230 */;
+import SplitTextInput from "SplitTextInput" /* 7279 */;
+import SearchBar from "SearchBar" /* 7355 */;
+import TextArea from "TextArea" /* 7389 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7457 */;
+import SettingsIcon from "SettingsIcon" /* 7701 */;
+import IconButton2 from "IconButton" /* 8168 */;
+import TextIcon from "TextIcon" /* 8793 */;
+import GhostInput2 from "GhostInput" /* 16101 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -34,7 +34,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp6;
-const AtIcon = tmp6(8786);
+const AtIcon = tmp6(8803);
 function Sample(children) {
   children = children.children;
   const obj = { shadow: "low", style: closure_8().sample, children: metroRequire(Stack_Stack.Stack, { spacing: 24, children }) };
@@ -203,20 +203,20 @@ export default function UserSettingsDesignSystemTextInput() {
   let items5;
   let items6;
   let obj11;
-  let obj18;
+  let obj19;
   let obj2;
-  let obj20;
+  let obj21;
   let obj = { children: metroImportDefault(Stack, obj2) };
   obj2 = { spacing: 24, style: closure_8().container, children: items1 };
   const obj3 = { children: items };
   Stack = Stack_Stack.Stack;
   items = [metroRequire(TextInput_TextInput.TextInput, { label: "Input Label", placeholder: "Placeholder text", description: "Descriptions give context for the input.", errorMessage: "Error messages communicate invalid states." }), metroRequire(TextArea.TextArea, { label: "Text Area", maxLength: 100, placeholder: "Multiline inputs use TextArea" }), metroRequire(TextInput_TextInput.TextInput, { label: "Password", secureTextEntry: true, placeholder: "Password", clearable: true }), metroRequire(TextInput_TextInput.TextInput, { label: "Required Field", placeholder: "Placeholder", description: "Required inputs are indicated with an asterisk.", required: true })];
-  items1 = [metroImportDefault(Sample, obj3), metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Sizing" }), metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "All inputs except TextArea accept a size prop, either sm, md, or lg. By default, inputs will use the large variant." }), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
+  items1 = [metroImportDefault(Sample, obj3), metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Sizing" }), metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "All inputs except TextArea accept a size prop, either sm, md, or lg. By default, inputs will use the large variant." }), , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
   const obj4 = { children: items2 };
   items2 = [metroRequire(TextInput_TextInput.TextInput, { label: "Small", size: "sm" }), metroRequire(TextInput_TextInput.TextInput, { label: "Medium", size: "md" }), metroRequire(TextInput_TextInput.TextInput, { label: "Large (default)" })];
   items1[3] = metroImportDefault(Sample, obj4);
   items1[4] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Attachments" });
-  items1[5] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Inputs can have either text and icon attachments, either on the leading or trailing edge. If both text and icon are given for a single side, the icon will take precedence." });
+  items1[5] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Inputs can have either text and icon attachments, either on the leading or trailing edge. If both text and icon are given for a single side, the icon will take precedence." });
   const obj5 = { children: items3 };
   const obj6 = { label: "Leading icon", leadingIcon: TextIcon.TextIcon };
   const TextInput = TextInput_TextInput.TextInput;
@@ -229,14 +229,14 @@ export default function UserSettingsDesignSystemTextInput() {
   const TextInput3 = TextInput_TextInput.TextInput;
   items3[3] = metroRequire(TextInput3, obj8);
   items1[6] = metroImportDefault(Sample, obj5);
-  items1[7] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Text attachments should be kept as short as possible to preserve space for the user to see their input value while editing." });
+  items1[7] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Text attachments should be kept as short as possible to preserve space for the user to see their input value while editing." });
   items1[8] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Pressable Attachments" });
-  items1[9] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Inputs do not allow custom nodes to be passed as leading or trailing attachments, but they can be made interactive by passing `*PressableProps` respectively. If given, the attachment will be wrapped by a Pressable and have the props passed to it." });
+  items1[9] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Inputs do not allow custom nodes to be passed as leading or trailing attachments, but they can be made interactive by passing `*PressableProps` respectively. If given, the attachment will be wrapped by a Pressable and have the props passed to it." });
   const obj9 = { children: metroRequire(CustomAttachmentExample, {}) };
   items1[10] = metroRequire(Sample, obj9);
-  items1[11] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Note that the props do not allow for changing the styling of the pressable. Styling is instead handled by the Input itself." });
+  items1[11] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Note that the props do not allow for changing the styling of the pressable. Styling is instead handled by the Input itself." });
   items1[12] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Rounding" });
-  items1[13] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "All inputs except TextArea can use the round prop to fully round out the sides. Round variants should only be used when adjacent to another round element, like an IconButton." });
+  items1[13] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "All inputs except TextArea can use the round prop to fully round out the sides. Round variants should only be used when adjacent to another round element, like an IconButton." });
   const obj10 = { children: metroImportDefault(Input, obj11) };
   obj11 = { children: items4 };
   Input = Input2.Input;
@@ -253,52 +253,56 @@ export default function UserSettingsDesignSystemTextInput() {
   items4[1] = metroRequire(IconButton, obj12);
   items1[14] = metroRequire(Sample, obj10);
   items1[15] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Error States" });
-  items1[16] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "The status prop communicates the overall state of the input. Setting status to \"error\" will render a red ring around the input. Note that errorMessage will always be displayed regardless of status." });
+  items1[16] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "The status prop communicates the overall state of the input. Setting status to \"error\" will render a red ring around the input. Note that errorMessage will always be displayed regardless of status." });
   const obj13 = { children: items5 };
   items5 = [metroRequire(InputUsername, { defaultValue: "a space" }), metroRequire(TextArea.TextArea, { label: "About me", maxLength: 100, placeholder: "Long form text use TextArea", errorMessage: "This is an example of a multiline error message to showcase the icon alignment to this text" })];
   items1[17] = metroImportDefault(Sample, obj13);
   items1[18] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Clearable" });
-  items1[19] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Inputs can use the clearable prop to let users immediately empty the input value with a button. The button is automatically rendered when the input contains a non-empty value. When pressed, the onClear callback is called, as well as the onChange with the new empty value." });
+  items1[19] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Inputs can use the clearable prop to let users immediately empty the input value with a button. The button is automatically rendered when the input contains a non-empty value. When pressed, the onClear callback is called, as well as the onChange with the new empty value." });
   const obj14 = { children: metroRequire(TextField.TextField, { defaultValue: "Clear this text", clearable: true }) };
   items1[20] = metroRequire(Sample, obj14);
-  items1[21] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Certain input types automatically control the clearable prop. For example, SearchInput is always clearable. Most inputs will also replace any trailing attachment with the clear button when it is present." });
-  items1[22] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Disableable" });
-  items1[23] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "The disabled prop prevents users from interacting with an input in any way. The input container will be visually dimmed." });
-  const obj15 = { children: metroRequire(TextInput_TextInput.TextInput, { defaultValue: "Can't edit this value", disabled: true }) };
+  items1[21] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Certain input types automatically control the clearable prop. For example, SearchInput is always clearable. Most inputs will also replace any trailing attachment with the clear button when it is present." });
+  items1[22] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Revealable" });
+  items1[23] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Inputs with secureTextEntry can use the revealable prop to add a button that shows or hides the value. The button replaces the trailing attachment and the clear button." });
+  const obj15 = { children: metroRequire(TextInput_TextInput.TextInput, { label: "Password", secureTextEntry: true, revealable: true, defaultValue: "Hunter2-example!" }) };
   items1[24] = metroRequire(Sample, obj15);
-  items1[25] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "The disabled prop prevents users from interacting with an input in any way. The input container will be visually dimmed." });
-  items1[26] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Max Length" });
-  items1[27] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Inputs can specify a maxLength prop to limit how long the user's input value can be. For TextAreas, setting a maxLength will also render an indicator in the bottom corner of how much of that length the current value takes up." });
-  const obj16 = { children: metroRequire(TextArea.TextArea, { label: "Limited length", maxLength: 124 }) };
-  items1[28] = metroRequire(Sample, obj16);
-  items1[29] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Exceeding the maxLength will prevent the user from inputting any more text for the value until it has been shortened under the maximum length." });
-  items1[30] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Ghost Inputs (Deprecated)" });
-  items1[31] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "GhostInput is deprecated and should not be used in new work; prefer TextInput. It is a minimal version of TextInput with no container shape, intended for cases where a single input is the primary focus of the surrounding area." });
-  const obj17 = { children: metroRequire(components_Button_Button.Button, obj18) };
-  obj18 = {
+  items1[25] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Disableable" });
+  items1[26] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "The disabled prop prevents users from interacting with an input in any way. The input container will be visually dimmed." });
+  const obj16 = { children: metroRequire(TextInput_TextInput.TextInput, { defaultValue: "Can't edit this value", disabled: true }) };
+  items1[27] = metroRequire(Sample, obj16);
+  items1[28] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "The disabled prop prevents users from interacting with an input in any way. The input container will be visually dimmed." });
+  items1[29] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Max Length" });
+  items1[30] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Inputs can specify a maxLength prop to limit how long the user's input value can be. For TextAreas, setting a maxLength will also render an indicator in the bottom corner of how much of that length the current value takes up." });
+  const obj17 = { children: metroRequire(TextArea.TextArea, { label: "Limited length", maxLength: 124 }) };
+  items1[31] = metroRequire(Sample, obj17);
+  items1[32] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Exceeding the maxLength will prevent the user from inputting any more text for the value until it has been shortened under the maximum length." });
+  items1[33] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Ghost Inputs (Deprecated)" });
+  items1[34] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "GhostInput is deprecated and should not be used in new work; prefer TextInput. It is a minimal version of TextInput with no container shape, intended for cases where a single input is the primary focus of the surrounding area." });
+  const obj18 = { children: metroRequire(components_Button_Button.Button, obj19) };
+  obj19 = {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.openLazy(() => Promise.resolve(closure_1_12), "ghost-input-sheet");
     },
     text: "Show example"
   };
-  items1[32] = metroRequire(Sample, obj17);
-  items1[33] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "GhostInputs can also appear left-aligned by setting `centered` to false." });
-  const obj19 = { children: metroRequire(components_Button_Button.Button, obj20) };
-  obj20 = {
+  items1[35] = metroRequire(Sample, obj18);
+  items1[36] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "GhostInputs can also appear left-aligned by setting `centered` to false." });
+  const obj20 = { children: metroRequire(components_Button_Button.Button, obj21) };
+  obj21 = {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.openLazy(() => Promise.resolve(closure_1_13), "ghost-input-sheet-left");
     },
     text: "Show left-aligned example"
   };
-  items1[34] = metroRequire(Sample, obj19);
-  items1[35] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Split Text Input" });
-  items1[36] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "SplitTextInput is a special TextInput extension that is primarily used for inputs that require selecting a prefix value." });
-  const obj21 = { children: items6 };
+  items1[37] = metroRequire(Sample, obj20);
+  items1[38] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Split Text Input" });
+  items1[39] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "SplitTextInput is a special TextInput extension that is primarily used for inputs that require selecting a prefix value." });
+  const obj22 = { children: items6 };
   items6 = [metroRequire(SplitTextInput.SplitTextInput, { label: "Small", size: "sm", placeholder: "Placeholder", leadingText: "Click", leadingPressableProps: { accessibilityLabel: "Click" } }), metroRequire(SplitTextInput.SplitTextInput, { label: "Medium", size: "md", placeholder: "Placeholder", leadingText: "Me", leadingPressableProps: { accessibilityLabel: "Me" } }), metroRequire(SplitTextInput.SplitTextInput, { label: "Large", size: "lg", placeholder: "Placeholder", leadingText: "Here", leadingPressableProps: { accessibilityLabel: "Here" } })];
-  items1[37] = metroImportDefault(Sample, obj21);
-  items1[38] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Data Types" });
-  items1[39] = metroRequire(Text_Text.Text, { variant: "text-md/normal", children: "Many special input types will have their own components. All inputs use a similar interface and support roughly the same set of props for styling and functionality. Examples will be added as these different types get implemented." });
+  items1[40] = metroImportDefault(Sample, obj22);
+  items1[41] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Data Types" });
+  items1[42] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Many special input types will have their own components. All inputs use a similar interface and support roughly the same set of props for styling and functionality. Examples will be added as these different types get implemented." });
   return metroRequire(ScrollView, obj);
 };

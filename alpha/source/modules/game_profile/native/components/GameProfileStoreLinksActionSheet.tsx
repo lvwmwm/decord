@@ -1,21 +1,21 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9512
+// Function ID: 9513
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 5141, 575, 9451, 5829, 1627, 7486, 5398, 5747, 1113, 5754, 5381, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9469, 5843, 1627, 7502, 5400, 5761, 1113, 5768, 5382, 2]
 // Exports: default
 
-// Module 9494 (GameProfileStoreLinksActionSheet)
+// Module 9512 (GameProfileStoreLinksActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import BottomSheetModal from "BottomSheetModal" /* 5398 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import ActionSheet2 from "ActionSheet" /* 7486 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9451 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import BottomSheetModal from "BottomSheetModal" /* 5400 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import ActionSheet2 from "ActionSheet" /* 7502 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9469 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -64,7 +64,7 @@ export default function GameProfileStoreLinksActionSheet(gameName) {
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [closure_4(Text, obj5), ];
-  const obj6 = { variant: "text-md/medium", color: "text-subtle", style: tmp.headerText, children: intl2.format(intl3.t["0acM2Y"], { gameName }) };
+  const obj6 = { variant: "body-md/medium", color: "text-subtle", style: tmp.headerText, children: intl2.format(intl3.t["0acM2Y"], { gameName }) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = closure_4(Text2, obj6);

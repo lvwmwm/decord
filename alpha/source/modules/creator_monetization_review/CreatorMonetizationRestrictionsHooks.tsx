@@ -1,13 +1,13 @@
-// Module ID: 7551
-// Function ID: 7552
+// Module ID: 7567
+// Function ID: 7568
 // Name: CreatorMonetizationRestrictionsHooks
-// Dependencies: [19, 5066, 5012, 1072, 7552, 7553, 504, 5065, 2]
+// Dependencies: [19, 5066, 5012, 1072, 7568, 7569, 504, 5065, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 7551 (CreatorMonetizationRestrictionsHooks)
+// Module 7567 (CreatorMonetizationRestrictionsHooks)
 import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5066 */;
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 7552 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7553 */;
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 7568 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7569 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Constants from "Constants" /* 1072 */;

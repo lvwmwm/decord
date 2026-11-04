@@ -1,16 +1,16 @@
-// Module ID: 16948
-// Function ID: 16949
+// Module ID: 17040
+// Function ID: 17041
 // Name: FamilyCenterActivityPurchaseRow
-// Dependencies: [19, 17, 21, 5141, 575, 8868, 16949, 7537, 16950, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8885, 17041, 7553, 17042, 5761, 2]
 // Exports: default
 
-// Module 16948 (FamilyCenterActivityPurchaseRow)
+// Module 17040 (FamilyCenterActivityPurchaseRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import PriceUtils from "PriceUtils" /* 7537 */;
-import useCollectiblesDataDefault from "useCollectiblesData" /* 8868 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 16949 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import PriceUtils from "PriceUtils" /* 7553 */;
+import useCollectiblesDataDefault from "useCollectiblesData" /* 8885 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 17041 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -20,7 +20,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp2;
-const FamilyCenterActivityItemPreviewDefault = tmp2(16950);
+const FamilyCenterActivityItemPreviewDefault = tmp2(17042);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, textContainer: { display: "flex", flexDirection: "column", flexShrink: 1 } };
@@ -75,9 +75,9 @@ export default function FamilyCenterActivityPurchaseRow(arg0) {
     }
     items = [React3(tmp2Result, obj2), ];
     const obj3 = { style: tmp.textContainer, children: items1 };
-    const obj4 = { variant: "text-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
+    const obj4 = { variant: "body-md/semibold", color: "interactive-text-active", ellipsizeMode: "tail", lineClamp: 1, children: combined };
     items1 = [React3(Text_Text.Text, obj4), ];
-    const obj5 = { variant: "text-xs/medium", color: "text-muted", children: formatPriceResult };
+    const obj5 = { variant: "body-xs/medium", color: "text-muted", children: formatPriceResult };
     items1[1] = React3(Text_Text.Text, obj5);
     items[1] = hasOwnProperty(View, obj3);
     return hasOwnProperty(View, obj);

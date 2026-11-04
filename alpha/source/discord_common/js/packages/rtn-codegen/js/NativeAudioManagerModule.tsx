@@ -1,10 +1,10 @@
-// Module ID: 9351
-// Function ID: 9352
+// Module ID: 9368
+// Function ID: 9369
 // Name: NativeAudioManagerModule
 // Dependencies: [17, 2]
 // Exports: getInvalidAndroidDevice
 
-// Module 9351 (NativeAudioManagerModule)
+// Module 9368 (NativeAudioManagerModule)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

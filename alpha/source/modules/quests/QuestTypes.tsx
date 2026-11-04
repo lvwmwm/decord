@@ -1,12 +1,12 @@
-// Module ID: 6904
-// Function ID: 6905
+// Module ID: 6919
+// Function ID: 6920
 // Name: QuestTypes
-// Dependencies: [6905, 2, 6906, 6907]
+// Dependencies: [6920, 2, 6921, 6922]
 
-// Module 6904 (QuestTypes)
-import QuestRewardCodePlatforms from "QuestRewardCodePlatforms" /* 6905 */;
-import QuestContent from "QuestContent" /* 6906 */;
-import AdPlacement from "AdPlacement" /* 6907 */;
+// Module 6919 (QuestTypes)
+import QuestRewardCodePlatforms from "QuestRewardCodePlatforms" /* 6920 */;
+import QuestContent from "QuestContent" /* 6921 */;
+import AdPlacement from "AdPlacement" /* 6922 */;
 import size from "module_2" /* 2 */;
 
 const values = Object.values(QuestRewardCodePlatforms.QuestRewardCodePlatforms);

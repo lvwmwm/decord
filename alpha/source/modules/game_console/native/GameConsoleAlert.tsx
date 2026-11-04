@@ -1,13 +1,13 @@
-// Module ID: 12122
-// Function ID: 12123
+// Module ID: 12181
+// Function ID: 12182
 // Name: GameConsoleAlert
-// Dependencies: [19, 17, 5885, 21, 5141, 504, 5747, 2]
+// Dependencies: [19, 17, 5899, 21, 5141, 504, 5761, 2]
 // Exports: SelfDismissibleAlertBody
 
-// Module 12122 (GameConsoleAlert)
+// Module 12181 (GameConsoleAlert)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5885 */;
+import GameConsoleStore from "GameConsoleStore" /* 5899 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -41,12 +41,12 @@ export function SelfDismissibleAlertBody(errorCodeMessage) {
   }, items1);
   let tmp6 = body;
   if (null != errorCodeMessage) {
-    const obj3 = { maxFontSizeMultiplier: 1, variant: "text-md/normal", style: items2, children: body };
+    const obj3 = { maxFontSizeMultiplier: 1, variant: "body-md/normal", style: items2, children: body };
     items2 = [, ];
     const obj2 = { style: tmp.container, children: items3 };
     ({ body: arr3[0], alertBody: arr3[1] } = tmp);
     items3 = [closure_5(tmp2(stateFromStores[6]).Text, obj3), ];
-    const obj4 = { maxFontSizeMultiplier: 1, variant: "text-md/normal", style: items4, children: errorCodeMessage };
+    const obj4 = { maxFontSizeMultiplier: 1, variant: "body-md/normal", style: items4, children: errorCodeMessage };
     items4 = [, ];
     ({ body: arr5[0], errorCodeText: arr5[1] } = tmp);
     items3[1] = closure_5(dismissCallback(stateFromStores[6]).Text, obj4);

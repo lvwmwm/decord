@@ -1,89 +1,85 @@
 // Module ID: 13285
 // Function ID: 13286
-// Dependencies: [13246, 13234, 13269, 13193]
+// Dependencies: [13286, 13283]
+// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
 
 // Module 13285
-import _mod13193 from "module_13193" /* 13193 */;
-import module_13246 from "module_13246" /* 13246 */;
+import generatePropagationContext from "generatePropagationContext" /* 13283 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 13286 */;
 
-let filterKeys;
+const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
 
-let c2 = "_sentryBundlerPluginAppKey:";
-
-export const thirdPartyErrorFilterIntegration = module_13246.defineIntegration((arg0) => {
-  const behaviour = arg0;
-  let obj = {
-    name: "ThirdPartyErrorsFilter",
-    setup(on) {
-      const options = on;
-      on.on("beforeEnvelope", (arg0) => {
-        let obj = options(closure_1_1[1]);
-        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp3;
-            if (Array.isArray(arg0)) {
-              tmp3 = arg0[1];
-            }
-            if (tmp3) {
-              const obj = options(closure_1_1[2]);
-              const result = obj.stripMetadataFromStackFrames(tmp3);
-              arg0[1] = tmp3;
-            }
-          }
-        });
-      });
-      on.on("applyFrameMetadata", (type) => {
-        if (!type.type) {
-          const stackParser = options.getOptions().stackParser;
-          const obj = options(dependencyMap[2]);
-          const result = obj.addMetadataToStackFrames(stackParser, type);
-        }
-      });
-    },
-    processEvent(tags) {
-      const obj = _mod13193;
-      const framesFromEvent = obj.getFramesFromEvent(tags);
-      let mapped;
-      if (framesFromEvent) {
-        let found = framesFromEvent.filter((filename) => filename.filename);
-        mapped = found.map((module_metadata) => {
-          let length;
-          let mapped;
-          if (module_metadata.module_metadata) {
-            const _Object = Object;
-            const keys = Object.keys(module_metadata.module_metadata);
-            const found = keys.filter((item) => item.startsWith(length));
-            mapped = found.map((arr) => arr.slice(length.length));
-          } else {
-            mapped = [];
-          }
-          return mapped;
-        });
-      }
-      if (mapped) {
-        let str2;
-        if ("drop-error-if-contains-third-party-frames" === behaviour.behaviour) {
-          str2 = "some";
-        } else {
-          str2 = "every";
-        }
-        if (mapped[str2]((arr) => !arr.some((item) => {
-          filterKeys = filterKeys.filterKeys;
-          return filterKeys.includes(item);
-        }))) {
-          if ("drop-error-if-contains-third-party-frames" !== behaviour.behaviour) {
-            if ("drop-error-if-exclusively-contains-third-party-frames" !== behaviour.behaviour) {
-              const obj2 = { third_party_code: true };
-              const merged = Object.assign(tags.tags);
-              tags.tags = obj2;
-            }
-          }
-          return null;
+export const TRACEPARENT_REGEXP = regExp;
+export function extractTraceparentData(str) {
+  const tmp = str;
+  if (tmp) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
         }
       }
-      return tags;
+      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
     }
-  };
-  return obj;
-});
+  }
+}
+export function generateSentryTraceHeader() {
+  let traceId = arg0;
+  if (arg0 === undefined) {
+    const obj = generatePropagationContext;
+    traceId = obj.generateTraceId();
+  }
+  let spanId = arg1;
+  if (arg1 === undefined) {
+    const obj2 = generatePropagationContext;
+    spanId = obj2.generateSpanId();
+  }
+  let str = "";
+  if (undefined !== arg2) {
+    let str2 = "-0";
+    if (arg2) {
+      str2 = "-1";
+    }
+    str = str2;
+  }
+  return "" + traceId + "-" + spanId + str;
+}
+export function propagationContextFromHeaders(str, arg1) {
+  let parentSampled;
+  let tmp4Result;
+  let tmp4Result3;
+  let tmp4Result4;
+  let tmp;
+  if (str) {
+    const match = str.match(regExp);
+    if (match) {
+      let flag = true;
+      if ("1" !== match[3]) {
+        if ("0" === match[3]) {
+          flag = false;
+        }
+      }
+      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+    }
+  }
+  const obj2 = BAGGAGE_HEADER_NAME;
+  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
+  if (tmp) {
+    if (tmp.traceId) {
+      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
+      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
+      tmp4Result = generatePropagationContext;
+      if (!result) {
+        result = {};
+      }
+      return obj3;
+    }
+  }
+  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
+  tmp4Result3 = generatePropagationContext;
+  tmp4Result4 = generatePropagationContext;
+  return obj4;
+}

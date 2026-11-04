@@ -1,20 +1,20 @@
-// Module ID: 14229
-// Function ID: 14230
+// Module ID: 14315
+// Function ID: 14316
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 5141, 7460, 575, 5747, 7212, 1113, 2699, 14230, 14205, 10051, 2]
+// Dependencies: [17, 21, 5141, 7476, 575, 5761, 7227, 1113, 2699, 14316, 14291, 10099, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 14229 (GuildPowerupsCardFooter)
+// Module 14315 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2699 from "module_2699" /* 2699 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7212 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7460 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 10051 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14205 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 14230 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7227 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7476 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 10099 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14291 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 14316 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -28,7 +28,7 @@ class GuildPowerupCardFooterActive {
     const obj = { style: closure_6().inline, children: items };
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_POSITIVE };
     const CircleCheckIcon = CircleCheckIcon2.CircleCheckIcon;
-    items = [React3(CircleCheckIcon, obj2), React3(Text_Text.Text, { color: "status-positive", variant: "text-sm/semibold", children: text })];
+    items = [React3(CircleCheckIcon, obj2), React3(Text_Text.Text, { color: "status-positive", variant: "body-sm/semibold", children: text })];
     return hasOwnProperty(View, obj);
   }
 }
@@ -43,7 +43,7 @@ class GuildPowerupCardFooterExpiring {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
     const CircleErrorIcon = CircleErrorIcon2.CircleErrorIcon;
     items = [React3(CircleErrorIcon, obj2), ];
-    const obj3 = { color: "text-feedback-warning", variant: "text-sm/semibold", children: formatToMarkdownString(prop, obj4) };
+    const obj3 = { color: "text-feedback-warning", variant: "body-sm/semibold", children: formatToMarkdownString(prop, obj4) };
     const Text = Text_Text.Text;
     const intl = intl2.intl;
     formatToMarkdownString = intl.formatToMarkdownString;
@@ -64,7 +64,7 @@ class GuildPowerupCardFooterRemoving {
     const obj2 = { size: "xs", color: nativeDefault.colors.STATUS_WARNING };
     const CircleErrorIcon = CircleErrorIcon2.CircleErrorIcon;
     items = [React3(CircleErrorIcon, obj2), ];
-    const obj3 = { color: "text-feedback-warning", variant: "text-sm/semibold", children: formatToPlainString(v6e2ry1, obj4) };
+    const obj3 = { color: "text-feedback-warning", variant: "body-sm/semibold", children: formatToPlainString(v6e2ry1, obj4) };
     const Text = Text_Text.Text;
     const intl = intl2.intl;
     formatToPlainString = intl.formatToPlainString;

@@ -1,20 +1,20 @@
-// Module ID: 8300
-// Function ID: 8301
+// Module ID: 8316
+// Function ID: 8317
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 6963, 4990, 5073, 4995, 6829, 1072, 21, 5141, 575, 5381, 504, 4998, 6878, 7486, 8301, 1113, 1187, 8320, 8065, 8321, 7687, 8322, 8323, 8474, 8475, 8476, 2]
+// Dependencies: [19, 17, 6978, 4990, 5073, 4995, 6844, 1072, 21, 5141, 575, 5382, 504, 4998, 6893, 7502, 8317, 1113, 1187, 8336, 8081, 8337, 7703, 8338, 8339, 8490, 8491, 8492, 2]
 // Exports: default
 
-// Module 8300 (StageSettingsActionSheet)
+// Module 8316 (StageSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4998 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6829 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8065 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8323 */;
-import ReportModals from "ReportModals" /* 8476 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6844 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8081 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8339 */;
+import ReportModals from "ReportModals" /* 8492 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6963 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import StageInstanceStore from "StageInstanceStore" /* 4995 */;

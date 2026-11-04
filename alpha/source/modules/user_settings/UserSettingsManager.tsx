@@ -1,11 +1,11 @@
-// Module ID: 19786
-// Function ID: 19787
+// Module ID: 19902
+// Function ID: 19903
 // Name: UserSettingsManager
-// Dependencies: [7407, 4966, 2]
+// Dependencies: [7423, 4966, 2]
 
-// Module 19786 (UserSettingsManager)
+// Module 19902 (UserSettingsManager)
 import UserSettings from "UserSettings" /* 4966 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 
 let c2 = false;

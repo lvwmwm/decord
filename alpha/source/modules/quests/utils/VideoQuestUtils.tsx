@@ -1,24 +1,24 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 14895
+// Function ID: 14896
 // Name: VideoQuestUtils
-// Dependencies: [6021, 7970, 7972, 1072, 7976, 9814, 7992, 1113, 7986, 5321, 2, 14816]
-// Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestEndCardCtaText, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isValidDuration, isVideoQuestProgressing, sendVideoProgress
+// Dependencies: [6036, 7986, 7988, 1072, 7992, 9832, 8008, 1113, 8002, 5322, 2, 14896]
+// Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isValidDuration, isVideoQuestProgressing, sendVideoProgress
 
-// Module 14815 (VideoQuestUtils)
+// Module 14895 (VideoQuestUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7976 */;
-import AnalyticsActions from "AnalyticsActions" /* 7986 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7992 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14816 */;
-import NetworkStore from "NetworkStore" /* 6021 */;
-import QuestStore from "QuestStore" /* 7970 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7972 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7992 */;
+import AnalyticsActions from "AnalyticsActions" /* 8002 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8008 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14896 */;
+import NetworkStore from "NetworkStore" /* 6036 */;
+import QuestStore from "QuestStore" /* 7986 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7988 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationRouteUtils = tmp(5321);
-const QuestActionCreators = tmp(9814);
+const NavigationRouteUtils = tmp(5322);
+const QuestActionCreators = tmp(9832);
 const AnalyticEvents = Constants.AnalyticEvents;
 const portrait = "portrait";
 const result = size.fileFinishedImporting("modules/quests/utils/VideoQuestUtils.tsx");
@@ -117,14 +117,6 @@ export function isValidDuration(arg0) {
   const isFiniteResult = Number.isFinite(arg0) && arg0 > 0;
   return isFiniteResult;
 }
-export function getVideoQuestEndCardCtaText(ctaConfig) {
-  let buttonLabel = ctaConfig.ctaConfig.buttonLabel;
-  if (buttonLabel == null) {
-    const intl = intl6.intl;
-    buttonLabel = intl.string(intl6.t.iiTtpJ);
-  }
-  return buttonLabel;
-}
 export function handleVideoQuestModalClose(arg0) {
   let duration;
   let maxTimestampSec2;
@@ -177,7 +169,7 @@ export function handleVideoQuestModalClose(arg0) {
         isQuestExpiredResult = null != completedAt1;
       }
       if (!isQuestExpiredResult) {
-        const tmp5Result = tmp5(9814);
+        const tmp5Result = tmp5(9832);
         tmp5Result.updateVideoProgress(quest.id, maxTimestampSec);
       }
     }

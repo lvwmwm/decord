@@ -1,15 +1,15 @@
-// Module ID: 15493
-// Function ID: 15494
+// Module ID: 15580
+// Function ID: 15581
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 5141, 575, 5832, 1113, 5855, 5747, 2]
+// Dependencies: [17, 21, 5141, 575, 5846, 1113, 5869, 5761, 2]
 // Exports: default
 
-// Module 15493 (LargeCountDownPill)
+// Module 15580 (LargeCountDownPill)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5855 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5869 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -48,7 +48,7 @@ export default function LargeCountDownPill(countdownText) {
     children: metroRequire(React3, obj2)
   };
   obj2 = { style: tmp.largeCountdownPill, children: items };
-  const obj3 = { variant: "text-xs/semibold", style: tmp.largeCountdownPillText, children: str.toUpperCase() };
+  const obj3 = { variant: "body-xs/semibold", style: tmp.largeCountdownPillText, children: str.toUpperCase() };
   const Text = Text_Text.Text;
   items = [hasOwnProperty(Text, obj3), ];
   const obj4 = { style: tmp.iconStyle, color: nativeDefault.colors.TEXT_STATUS_IDLE };

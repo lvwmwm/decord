@@ -1,15 +1,15 @@
-// Module ID: 15999
-// Function ID: 16000
+// Module ID: 16089
+// Function ID: 16090
 // Name: TableSliderRow
-// Dependencies: [32, 19, 17, 21, 5141, 7102, 16000, 7103, 5747, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 7117, 16090, 7118, 5761, 2]
 // Exports: TableSliderRow
 
-// Module 15999 (TableSliderRow)
+// Module 16089 (TableSliderRow)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import react2 from "react" /* 7102 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import Slider2 from "Slider" /* 16000 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import react2 from "react" /* 7117 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import Slider2 from "Slider" /* 16090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -64,12 +64,12 @@ export function TableSliderRow(end) {
   const obj3 = { style: tmp2.header, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items };
   items = [, ];
   const obj2 = { start: tmp9, end: !context && flag, border: "none", shadow: "none", children: items1 };
-  const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp2.label, children: label };
+  const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp2.label, children: label };
   items[0] = hasOwnProperty(Text_Text.Text, obj4);
   let tmp11Result = null;
   if (null != formatValue) {
-    const obj5 = { variant: "text-md/medium", color: "text-muted", children: formatValue(first) };
-    const Text = tmp3(5747).Text;
+    const obj5 = { variant: "body-md/medium", color: "text-muted", children: formatValue(first) };
+    const Text = tmp3(5761).Text;
     tmp11Result = tmp11(Text, obj5);
   }
   items[1] = tmp11Result;
@@ -88,7 +88,7 @@ export function TableSliderRow(end) {
     },
     accessibilityLabel: label
   };
-  Slider = tmp3(16000).Slider;
+  Slider = tmp3(16090).Slider;
   const merged1 = Object.assign(merged);
   items1[1] = hasOwnProperty(View, obj6);
   return metroRequire(Card, obj2);

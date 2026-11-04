@@ -1,15 +1,15 @@
-// Module ID: 16657
-// Function ID: 16658
+// Module ID: 16747
+// Function ID: 16748
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 5012, 8517, 21, 5141, 575, 504, 16658, 14862, 8860, 8859, 1113, 1377, 5747, 16623, 5381, 16659, 2123, 7083, 9423, 2]
+// Dependencies: [19, 5012, 8534, 21, 5141, 575, 504, 16748, 14943, 8877, 8876, 1113, 1377, 5761, 16713, 5382, 16749, 2123, 7098, 9440, 2]
 // Exports: default
 
-// Module 16657 (UserProfilePrimaryGuildEditButton)
+// Module 16747 (UserProfilePrimaryGuildEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import GuildTagConstants from "GuildTagConstants" /* 8517 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import GuildTagConstants from "GuildTagConstants" /* 8534 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -122,7 +122,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     if (tmp6Result4.isAndroid()) {
       num = 1;
     }
-    const sum = tmp6(tmp7[13]).TextStyleSheet["text-md/semibold"].fontSize + num;
+    const sum = tmp6(tmp7[13]).TextStyleSheet["body-md/semibold"].fontSize + num;
     const UserProfileEditFormButton = tmp6(tmp7[14]).UserProfileEditFormButton;
     const intl2 = tmp6(tmp7[11]).intl;
     let tmp23Result = null;
@@ -134,7 +134,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     }
     let tmp23Result2 = null;
     if (null != tag) {
-      const obj7 = { containerStyles: items2, textStyle: obj8, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "text-md/semibold", textColor: "text-default" };
+      const obj7 = { containerStyles: items2, textStyle: obj8, guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16, textVariant: "body-md/semibold", textColor: "text-default" };
       items2 = [tmp.tag, tagStyle];
       obj8 = { lineHeight: sum };
       tmp23Result2 = tmp23(tmp6(tmp7[19]).BaseGuildTagChiplet, obj7);
@@ -142,7 +142,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     return <UserProfileEditFormButton label={intl2.string(pendingPrimaryGuildId(handleSelectPrimaryGuild[11]).t["DUD+5n"])} buttonText={name} accessibilityValue={obj5} onPress={function handleOpenSelectPrimaryGuild() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild };
-      obj.openLazy(asyncRequire(16659, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
+      obj.openLazy(asyncRequire(16749, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", obj2);
     }} leading={tmp23Result} trailing={tmp23Result2} disabled={disabled} />;
   }
   return null;

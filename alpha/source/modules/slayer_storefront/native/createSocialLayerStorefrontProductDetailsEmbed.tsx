@@ -1,143 +1,222 @@
-// Module ID: 11697
-// Function ID: 11698
+// Module ID: 15355
+// Function ID: 15356
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [19, 2167, 7016, 8003, 8518, 1113, 11698, 7533, 7528, 3865, 5872, 11699, 504, 1380, 7450, 2]
-// Exports: createSocialLayerStorefrontProductDetailsEmbed, useFetchSocialLayerStorefrontProductDetailsEmbedApplications
+// Dependencies: [17, 2167, 7912, 9618, 502, 1385, 7031, 8019, 10295, 1387, 8535, 1113, 14390, 7549, 7544, 3865, 15353, 11750, 2176, 7556, 9680, 15354, 9616, 9683, 11752, 2]
+// Exports: createSocialLayerStorefrontProductDetailsEmbed
 
-// Module 11697 (createSocialLayerStorefrontProductDetailsEmbed)
-import intl4 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1380 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7528 */;
-import StorefrontUtils from "StorefrontUtils" /* 7533 */;
-import Constants from "Constants" /* 8003 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8518 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 11698 */;
-import react from "react" /* 19 */;
+// Module 15355 (createSocialLayerStorefrontProductDetailsEmbed)
+import react_native from "react-native" /* 17 */;
+import intl6 from "intl" /* 1113 */;
+import PremiumConstants from "PremiumConstants" /* 1387 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7544 */;
+import StorefrontUtils from "StorefrontUtils" /* 7549 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7556 */;
+import Constants from "Constants" /* 8019 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8535 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10295 */;
+import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11750 */;
+import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11752 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14390 */;
+import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15353 */;
+import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 15354 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import SKUStore from "SKUStore" /* 7016 */;
+import UserProfileStore from "UserProfileStore" /* 7912 */;
+import WishlistStore from "WishlistStore" /* 9618 */;
+import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import UserStore from "UserStore" /* 1385 */;
+import SKUStore from "SKUStore" /* 7031 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, arr;
-
+const Image = react_native.Image;
 const InviteTypes = Constants.InviteTypes;
+const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
+const PremiumTypes = PremiumConstants.PremiumTypes;
 let result = size.fileFinishedImporting("modules/slayer_storefront/native/createSocialLayerStorefrontProductDetailsEmbed.tsx");
 
-export function createSocialLayerStorefrontProductDetailsEmbed(theme) {
+export function createSocialLayerStorefrontProductDetailsEmbed(arg0) {
+  let StringResult;
   let baseColors;
   let colors;
   let guildOrApplication;
   let intl2;
   let prop;
   let skuId;
+  let string2;
   let stringResult;
-  ({ skuId, guildOrApplication } = theme);
-  ({ colors, baseColors } = getEmbedThemeColorsDefault(theme.theme));
-  getEmbedThemeColorsDefault(theme.theme);
+  let t;
+  let theme;
+  let tmp15;
+  let tmp36;
+  let tmpResult10;
+  let tmpResult9;
+  let uri;
+  ({ skuId, guildOrApplication, theme } = arg0);
+  const obj = SocialLayerStorefrontMobileEmbedExperiment;
+  const isEligibleForSocialLayerStorefrontMobileEmbed = obj.getIsEligibleForSocialLayerStorefrontMobileEmbed({ location: "create_coded_link_embeds", autoTrackExposure: true });
+  ({ colors, baseColors } = getEmbedThemeColorsDefault(theme));
+  getEmbedThemeColorsDefault(theme);
   const value = SKUStore.get(skuId);
-  let applicationId;
-  if (value != null) {
-    applicationId = value.applicationId;
-  }
-  const application = ApplicationStore.getApplication(applicationId);
-  let result = null != applicationId;
-  const isFetchingResult = SKUStore.isFetching(skuId);
-  SKUStore.didFetchingSkuFail(skuId);
-  if (result) {
-    result = obj2.isFetchingApplication(applicationId);
-  }
-  let name;
-  null != applicationId && ApplicationStore.didFetchingApplicationFail(applicationId);
-  if (application != null) {
-    name = application.name;
-  }
-  if (name == null) {
-    const intl = intl4.intl;
-    const str = intl.string(intl4.t.vyaWs7);
-    name = str.toUpperCase();
-  }
-  if (!isFetchingResult) {
-    if (null == value) {
-      return null;
-    } else {
-      if (null != application) {
-        if (isSocialLayerApplicationDefault(application)) {
-          if ("guild" !== guildOrApplication.type) {
-            const obj4 = StorefrontUtils;
-            const result1 = obj4.isSlayerSkuAvailableOnThisPlatform(value);
-            const obj5 = SlayerStorefrontUtils;
-            const str4 = obj5.getCardImageURL(value);
-            let str1;
-            if (str4 != null) {
-              str1 = str4.toString();
+  if (isEligibleForSocialLayerStorefrontMobileEmbed) {
+    let applicationId;
+    if (value != null) {
+      applicationId = value.applicationId;
+    }
+    const application = ApplicationStore.getApplication(applicationId);
+    let result = null != applicationId;
+    const isFetchingResult = SKUStore.isFetching(skuId);
+    SKUStore.didFetchingSkuFail(skuId);
+    if (result) {
+      result = obj9.isFetchingApplication(applicationId);
+    }
+    let name;
+    null != applicationId && ApplicationStore.didFetchingApplicationFail(applicationId);
+    if (application != null) {
+      name = application.name;
+    }
+    if (name == null) {
+      const intl4 = tmp(1113).intl;
+      const str5 = intl4.string(intl6.t.vyaWs7);
+      name = str5.toUpperCase();
+    }
+    if (!isFetchingResult) {
+      if (!result) {
+        if (null != applicationId) {
+          if (null == application) {
+            if (!result) {
+              tmp15 = tmp36;
             }
-            if (str1 == null) {
-              str1 = application.getIconURL(64);
-            }
-            const obj3 = { headerText: name, headerColor: colors.headerColor, titleText: value.name, titleColor: colors.titleColor, subtitle: intl2.string(intl4.t.V91tvy), subtitleColor: colors.subtitleColor, thumbnailUrl: str1, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, acceptLabelText: stringResult, acceptLabelColor: prop, acceptLabelBackgroundColor: result1 ? colors.acceptLabelGreenBackgroundColor : colors.acceptBlurpleLabelBackgroundColor, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
-            const merged = Object.assign(baseColors);
-            intl2 = tmp12(1113).intl;
-            const intl3 = tmp12(1113).intl;
-            const string = intl3.string;
-            if (result1) {
-              stringResult = string(tmp12(1113).t.boqtTA);
-            } else {
-              stringResult = string(tmp(3865).BKf0MM);
-            }
-            prop = undefined;
-            if (result1) {
-              prop = colors.acceptLabelGreenColor;
-            }
-            return obj3;
           }
         }
       }
-      return null;
-    }
-  }
-  const obj6 = { headerText: name, type: InviteTypes.GUILD };
-  const merged1 = Object.assign(baseColors);
-  ({ resolvingGradientEnd: obj7.resolvingGradientEnd, resolvingGradientStart: obj7.resolvingGradientStart } = colors);
-  return obj6;
-}
-export function useFetchSocialLayerStorefrontProductDetailsEmbedApplications(stateFromStores) {
-  _require = stateFromStores;
-  let items = [stateFromStores];
-  const memo = react.useMemo(() => stateFromStores.reduce((arr, item) => {
-    let code;
-    let type;
-    const iter = item.codedLinks[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      ({ type, code } = nextResult);
-      let tmp3 = stateFromStores;
-      let tmp4 = closure_1_2;
-      if (type === stateFromStores(closure_1_2[10]).CodedLinkType.SOCIAL_LAYER_STOREFRONT) {
-        let tmp3Result = tmp3(tmp4[11]);
-        let result = tmp3Result.parseStorefrontCodedLink(code);
-        let tmp8 = result;
-        let tmp9 = null != result;
-        if (tmp9) {
-          tmp9 = 1 === tmp8.skuIds.length;
-        }
-        if (tmp9) {
-          arr = arr.push(tmp8.skuIds[0]);
+      tmp36 = null;
+      if (null != value) {
+        tmp36 = null;
+        if (null != application) {
+          tmp36 = null;
+          if (isSocialLayerApplicationDefault(application)) {
+            if ("guild" !== guildOrApplication.type) {
+              if ("application" !== guildOrApplication.type) {
+                const tmpResult = getSocialLayerStorefrontSkuEmbedDetails;
+                const socialLayerStorefrontSkuEmbedDetails = tmpResult.getSocialLayerStorefrontSkuEmbedDetails(value, application);
+                const tmpResult7 = socialLayerStorefrontEmbedPrice2;
+                const socialLayerStorefrontEmbedPrice = tmpResult7.getSocialLayerStorefrontEmbedPrice(value);
+                const currentUser = UserStore.getCurrentUser();
+                const tmp4Result = PremiumUtilsDefault;
+                const isPremiumResult = tmp4Result.isPremium(currentUser, PremiumTypes.TIER_2);
+                const tmpResult8 = OrbCheckoutUtils;
+                const orbPriceFromPrices = tmpResult8.getOrbPriceFromPrices(value.prices, isPremiumResult);
+                const id = AuthenticationStore.getId();
+                let firstWishlistId = null;
+                if (null != id) {
+                  firstWishlistId = UserProfileStore.getFirstWishlistId(id);
+                }
+                const hasSkuIdResult = null != firstWishlistId && WishlistStore.hasSkuId(firstWishlistId, value.id);
+                const obj4 = { headerText: name, headerColor: colors.headerColor, titleText: socialLayerStorefrontSkuEmbedDetails.title, titleColor: colors.titleColor, subtitleColor: colors.subtitleColor, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, normalPriceText: socialLayerStorefrontEmbedPrice, orbPriceText: StringResult, orbIconUrl: uri, overlayBadgeBackgroundColor: colors.acceptBlurpleLabelBackgroundColor, overlayBadgeTextColor: tmpResult9.getSocialLayerStorefrontEmbedColors(theme).overlayTextColor, backgroundColor: tmpResult10.getSocialLayerStorefrontEmbedColors(theme).backgroundColor, showWishlistButton: true, wishlistButtonIconUrl: Image.resolveAssetSource(importDefault(hasSkuIdResult ? 9616 : 9683)).uri, wishlistButtonAccessibilityLabel: string2(hasSkuIdResult ? t["19b82d"] : t.Hcgz2S), embedCanBeTapped: true, canBeAccepted: false, type: InviteTypes.GUILD, extendedType: CodedLinkExtendedType.SOCIAL_LAYER_STOREFRONT_EMBED, skuId };
+                const merged = Object.assign(baseColors);
+                ({ titleIconUrl: obj14.titleIconUrl, subtitle: obj14.subtitle } = socialLayerStorefrontSkuEmbedDetails);
+                ({ foregroundImageUrl: obj14.foregroundImageUrl, backgroundImageUrl: obj14.backgroundImageUrl, foregroundImageUrl: obj14.thumbnailUrl } = socialLayerStorefrontSkuEmbedDetails);
+                StringResult = undefined;
+                if (null != orbPriceFromPrices) {
+                  const _String = String;
+                  StringResult = String(orbPriceFromPrices.amount);
+                }
+                uri = undefined;
+                if (null != orbPriceFromPrices) {
+                  uri = Image.resolveAssetSource(tmp4(9680)).uri;
+                }
+                ({ badgeText: obj14.overlayBadgeText, badgeIconUrl: obj14.overlayBadgeIconUrl } = socialLayerStorefrontSkuEmbedDetails);
+                tmpResult9 = socialLayerStorefrontEmbedColors;
+                tmpResult10 = socialLayerStorefrontEmbedColors;
+                const intl5 = tmp(1113).intl;
+                string2 = intl5.string;
+                t = tmp(1113).t;
+                tmp36 = obj4;
+              } else {
+                tmp36 = null;
+              }
+            } else {
+              tmp36 = null;
+            }
+          }
         }
       }
-      continue;
     }
-    return arr;
-  }, []), items);
-  const items1 = [SKUStore];
-  const items2 = [memo];
-  const obj = require("get initialized");
-  const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
-    const f126590 = (applicationId) => applicationId.applicationId;
-    const mapped = memo.map((item) => closure_1_5.get(item));
-    const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f126590))];
-    new Set(found.map(f126590));
-    return items;
-  }, items2);
-  let tmp3 = memo(7450)(stateFromStoresArray);
+    const obj5 = { headerText: name, type: InviteTypes.GUILD, extendedType: CodedLinkExtendedType.SOCIAL_LAYER_STOREFRONT_EMBED, skuId };
+    const merged1 = Object.assign(baseColors);
+    ({ resolvingGradientEnd: obj17.resolvingGradientEnd, resolvingGradientStart: obj17.resolvingGradientStart } = colors);
+    tmp36 = obj5;
+  } else {
+    let applicationId1;
+    if (value != null) {
+      applicationId1 = value.applicationId;
+    }
+    const application1 = ApplicationStore.getApplication(applicationId1);
+    let result1 = null != applicationId1;
+    const isFetchingResult1 = SKUStore.isFetching(skuId);
+    SKUStore.didFetchingSkuFail(skuId);
+    if (result1) {
+      result1 = obj3.isFetchingApplication(applicationId1);
+    }
+    let name1;
+    null != applicationId1 && ApplicationStore.didFetchingApplicationFail(applicationId1);
+    if (application1 != null) {
+      name1 = application1.name;
+    }
+    if (name1 == null) {
+      const intl = tmp(1113).intl;
+      const str = intl.string(intl6.t.vyaWs7);
+      name1 = str.toUpperCase();
+    }
+    if (!isFetchingResult1) {
+      tmp15 = null;
+      if (null != value) {
+        tmp15 = null;
+        if (null != application1) {
+          tmp15 = null;
+          if (isSocialLayerApplicationDefault(application1)) {
+            if ("guild" !== guildOrApplication.type) {
+              if ("application" !== guildOrApplication.type) {
+                const tmpResult11 = StorefrontUtils;
+                const result2 = tmpResult11.isSlayerSkuAvailableOnThisPlatform(value);
+                const tmpResult12 = SlayerStorefrontUtils;
+                const str4 = tmpResult12.getCardImageURL(value);
+                let str1;
+                if (str4 != null) {
+                  str1 = str4.toString();
+                }
+                if (str1 == null) {
+                  str1 = application1.getIconURL(64);
+                }
+                const obj6 = { headerText: name1, headerColor: colors.headerColor, titleText: value.name, titleColor: colors.titleColor, subtitle: intl2.string(intl6.t.V91tvy), subtitleColor: colors.subtitleColor, thumbnailUrl: str1, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, acceptLabelText: stringResult, acceptLabelColor: prop, acceptLabelBackgroundColor: result2 ? colors.acceptLabelGreenBackgroundColor : colors.acceptBlurpleLabelBackgroundColor, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
+                const merged2 = Object.assign(baseColors);
+                intl2 = tmp(1113).intl;
+                const intl3 = tmp(1113).intl;
+                const string = intl3.string;
+                if (result2) {
+                  stringResult = string(tmp(1113).t.boqtTA);
+                } else {
+                  stringResult = string(tmp4(3865).BKf0MM);
+                }
+                prop = undefined;
+                if (result2) {
+                  prop = colors.acceptLabelGreenColor;
+                }
+                tmp15 = obj6;
+              } else {
+                tmp15 = null;
+              }
+            } else {
+              tmp15 = null;
+            }
+          }
+        }
+      }
+    }
+    const obj7 = { headerText: name1, type: InviteTypes.GUILD };
+    const merged3 = Object.assign(baseColors);
+    ({ resolvingGradientEnd: obj8.resolvingGradientEnd, resolvingGradientStart: obj8.resolvingGradientStart } = colors);
+    tmp15 = obj7;
+  }
+  return tmp15;
 }

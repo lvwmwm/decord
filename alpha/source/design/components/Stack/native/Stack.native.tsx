@@ -1,10 +1,10 @@
-// Module ID: 6147
-// Function ID: 6148
+// Module ID: 6162
+// Function ID: 6163
 // Name: Stack/Stack
 // Dependencies: [19, 17, 21, 5141, 2]
 // Exports: Stack
 
-// Module 6147 (Stack/Stack)
+// Module 6162 (Stack/Stack)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

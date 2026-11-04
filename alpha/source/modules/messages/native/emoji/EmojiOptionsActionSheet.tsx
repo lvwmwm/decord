@@ -1,14 +1,14 @@
-// Module ID: 10195
-// Function ID: 10196
+// Module ID: 10243
+// Function ID: 10244
 // Name: EmojiOptionsActionSheet
-// Dependencies: [19, 21, 7478, 5831, 5381, 7486, 7186, 7101, 5847, 1113, 2]
+// Dependencies: [19, 21, 7494, 5845, 5382, 7502, 7201, 7116, 5861, 1113, 2]
 // Exports: default
 
-// Module 10195 (EmojiOptionsActionSheet)
+// Module 10243 (EmojiOptionsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,11 +27,11 @@ export default function EmojiOptionsActionSheet(emojiSrc) {
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();
   }, items);
-  const ActionSheet = emojiSrc(7486).ActionSheet;
+  const ActionSheet = emojiSrc(7502).ActionSheet;
   let obj2 = { hasIcons: true, children: null };
-  const TableRowGroup = emojiSrc(7186).TableRowGroup;
+  const TableRowGroup = emojiSrc(7201).TableRowGroup;
   let obj3 = { icon: null, label: intl.string(emojiSrc(1113).t.cIoudn), onPress: callback };
-  const TableRow = emojiSrc(7101).TableRow;
+  const TableRow = emojiSrc(7116).TableRow;
   intl = emojiSrc(1113).intl;
   return <ActionSheet>{null}</ActionSheet>;
 };

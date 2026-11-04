@@ -1,9 +1,0 @@
-// Module ID: 16295
-// Function ID: 16296
-// Dependencies: [16281]
-
-// Module 16295
-import _mod16281 from "module_16281" /* 16281 */;
-
-
-export default (arg0) => Object(_mod16281(arg0));

@@ -1,14 +1,14 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14720
+// Function ID: 14721
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 1652, 5155, 5757, 1705, 14641, 5747, 2]
+// Dependencies: [32, 19, 21, 1652, 5155, 5771, 1705, 14721, 5761, 2]
 
-// Module 14640 (BalanceCounter)
+// Module 14720 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import react2 from "react" /* 5155 */;
-import spring_spring from "spring/spring" /* 5757 */;
+import spring_spring from "spring/spring" /* 5771 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5747);
+const Text_Text = tmp(5761);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;
@@ -53,7 +53,7 @@ class BalanceCounter {
     let str = value.textVariant;
     ({ onValueReached, style } = value);
     if (str === undefined) {
-      str = "text-sm/semibold";
+      str = "body-sm/semibold";
     }
     let c6;
     react = undefined;

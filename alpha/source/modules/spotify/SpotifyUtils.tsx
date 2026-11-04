@@ -1,20 +1,20 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 11869
+// Function ID: 11870
 // Name: SpotifyUtils
-// Dependencies: [5, 2142, 11813, 6691, 9035, 1072, 1089, 6694, 11814, 11815, 2]
+// Dependencies: [5, 2142, 11870, 6706, 9052, 1072, 1089, 6709, 11871, 11872, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 11812 (SpotifyUtils)
+// Module 11869 (SpotifyUtils)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import PlatformsDefault from "Platforms" /* 6694 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 11814 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11815 */;
+import PlatformsDefault from "Platforms" /* 6709 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 11871 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2142 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11813 */;
-import SpotifyStore from "SpotifyStore" /* 6691 */;
-import SpotifyConstants from "SpotifyConstants" /* 9035 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11870 */;
+import SpotifyStore from "SpotifyStore" /* 6706 */;
+import SpotifyConstants from "SpotifyConstants" /* 9052 */;
 import size from "module_2" /* 2 */;
 
 let TRACK, closure_3, closure_4;
@@ -157,7 +157,7 @@ export function ensureSpotifyPlayable() {
     if (isObservedAppRunning(obj2.get(PlatformTypes.SPOTIFY).name)) {
       if (playableComputerDevices.length > 0) {
         ({ socket, device } = playableComputerDevices[0]);
-        const obj3 = playableComputerDevices(11814);
+        const obj3 = playableComputerDevices(11871);
         obj3.setActiveDevice(socket.accountId, device.id);
         const obj4 = { socket, device };
         return Promise.resolve(obj4);

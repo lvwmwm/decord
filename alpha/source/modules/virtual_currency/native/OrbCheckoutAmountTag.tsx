@@ -1,14 +1,14 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14643
+// Function ID: 14644
 // Name: OrbCheckoutAmountTag
-// Dependencies: [17, 21, 5141, 575, 9660, 5747, 1113, 2]
+// Dependencies: [17, 21, 5141, 575, 9679, 5761, 1113, 2]
 // Exports: default
 
-// Module 14563 (OrbCheckoutAmountTag)
+// Module 14643 (OrbCheckoutAmountTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import OrbsIcon from "OrbsIcon" /* 9660 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import OrbsIcon from "OrbsIcon" /* 9679 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ export default function OrbCheckoutAmountTag(orbAmount) {
     const obj3 = { orbAmount };
     stringResult = intl.formatToPlainString(tmp5(1113).t.W4DfeF, obj3);
   }
-  const obj4 = { variant: "text-md/semibold", accessibilityLabel: stringResult, children: str };
+  const obj4 = { variant: "body-md/semibold", accessibilityLabel: stringResult, children: str };
   str = "--";
   if (null != orbAmount) {
     str = orbAmount;

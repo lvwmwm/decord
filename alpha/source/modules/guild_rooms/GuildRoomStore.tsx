@@ -1,15 +1,15 @@
-// Module ID: 8030
-// Function ID: 8031
+// Module ID: 8046
+// Function ID: 8047
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 5884, 5044, 8031, 504, 572, 2]
+// Dependencies: [109, 502, 5898, 5044, 8047, 504, 572, 2]
 
-// Module 8030 (GuildRoomStore)
+// Module 8046 (GuildRoomStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 8031 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 8047 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 

@@ -1,27 +1,27 @@
-// Module ID: 14557
-// Function ID: 14558
+// Module ID: 14637
+// Function ID: 14638
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5142, 7016, 7531, 1072, 21, 5141, 575, 1652, 5757, 5377, 5383, 1493, 504, 8897, 7528, 5747, 5754, 1113, 5837, 5710, 7412, 7131, 7180, 9649, 7450, 7447, 11525, 7471, 1252, 5716, 10799, 3865, 9568, 5195, 2]
+// Dependencies: [32, 717, 19, 17, 5142, 7031, 7547, 1072, 21, 5141, 575, 1652, 5771, 5378, 5384, 1493, 504, 8914, 7544, 5761, 5768, 1113, 5851, 5723, 7428, 7146, 7195, 9668, 7466, 7463, 11575, 7487, 1252, 5729, 10847, 3865, 9587, 5195, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 14557 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 14637 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _modDef3865 from "module_3865" /* 3865 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7528 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7531 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10799 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7544 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7547 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10847 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import SKUStore from "SKUStore" /* 7016 */;
+import SKUStore from "SKUStore" /* 7031 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -294,7 +294,7 @@ function PurchaseSuccessModalBase(sku) {
     textLandscape2 = tmp.textLandscape;
   }
   items16[1] = textLandscape2;
-  items15[1] = closure_14(Text2, { variant: "text-md/medium", color: "text-overlay-light", style: items16, children: body });
+  items15[1] = closure_14(Text2, { variant: "body-md/medium", color: "text-overlay-light", style: items16, children: body });
   const tmp34Result = closure_15(View, obj5);
   const items17 = [tmp.footer, ];
   const obj6 = { style: items17, children: items19 };
@@ -308,7 +308,7 @@ function PurchaseSuccessModalBase(sku) {
     if (isScreenLandscape) {
       textLandscape3 = tmp.textLandscape;
     }
-    const obj7 = { variant: "text-xs/normal", color: "text-overlay-light", style: items18, children: finePrint };
+    const obj7 = { variant: "body-xs/normal", color: "text-overlay-light", style: items18, children: finePrint };
     items18[1] = textLandscape3;
     tmp35Result = tmp35(Text3, obj7);
   }

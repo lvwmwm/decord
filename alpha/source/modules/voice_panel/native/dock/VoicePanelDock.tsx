@@ -1,18 +1,18 @@
-// Module ID: 19367
-// Function ID: 19368
+// Module ID: 19471
+// Function ID: 19472
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 11360, 11378, 11379, 21, 5141, 575, 1627, 11359, 1652, 11386, 1705, 5994, 5383, 11364, 5426, 5377, 1113, 19368, 19370, 2]
+// Dependencies: [19, 17, 11410, 11428, 11429, 21, 5141, 575, 1627, 11409, 1652, 11436, 1705, 6008, 5384, 11414, 5428, 5378, 1113, 19472, 19474, 2]
 
-// Module 19367 (VoicePanelDock)
+// Module 19471 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11364 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11414 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11378 */;
-import GestureConstants from "GestureConstants" /* 11379 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11428 */;
+import GestureConstants from "GestureConstants" /* 11429 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -42,8 +42,8 @@ let size;
 let tmp;
 let unpackModuleId;
 const _mod1705 = tmp(1705);
-const timing_timing = tmp(5377);
-const VoicePanelSheetMorph = tmp(11386);
+const timing_timing = tmp(5378);
+const VoicePanelSheetMorph = tmp(11436);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ DOCK_EXPAND_GESTURE_CANCEL_DISTANCE: metroImportDefault, DOCK_PULL_SNAP_DISTANCE: metroImportAll, DOCK_PULL_SNAP_GIVE: c9, DOCK_TAP_MAX_MOVEMENT: c10, getDockInset: unpackModuleId, DOCK_DRAG_HANDLE_TOP, DOCK_DRAG_HANDLE_WIDTH, DOCK_GAP, DOCK_PADDING_TOP, DOCK_ROW_HEIGHT } = VoicePanelDockConstants);

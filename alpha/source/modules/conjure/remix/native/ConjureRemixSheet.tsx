@@ -1,19 +1,19 @@
-// Module ID: 10978
-// Function ID: 10979
+// Module ID: 11026
+// Function ID: 11027
 // Name: ConjureRemixSheet
-// Dependencies: [5, 32, 19, 17, 5012, 6892, 21, 5141, 575, 10979, 504, 7543, 1113, 3995, 5381, 7486, 7441, 7412, 5747, 5754, 5398, 7373, 7208, 6965, 7184, 7187, 2]
+// Dependencies: [5, 32, 19, 17, 5012, 6907, 21, 5141, 575, 11027, 504, 7559, 1113, 3995, 5382, 7502, 7457, 7428, 5761, 5768, 5400, 7389, 7223, 6980, 7199, 7202, 2]
 // Exports: default
 
-// Module 10978 (ConjureRemixSheet)
+// Module 11026 (ConjureRemixSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import TableRadioRow from "TableRadioRow" /* 7187 */;
-import ConjureRemix from "ConjureRemix" /* 10979 */;
+import TableRadioRow from "TableRadioRow" /* 7202 */;
+import ConjureRemix from "ConjureRemix" /* 11027 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import SortedGuildStore from "SortedGuildStore" /* 6892 */;
+import SortedGuildStore from "SortedGuildStore" /* 6907 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -211,7 +211,7 @@ export default function ConjureRemixSheet(project) {
   SafeAreaPaddingView = tmp17(tmp18[17]).SafeAreaPaddingView;
   if (null != tmp12) {
     const obj8 = { accessibilityRole: "alert", children: closure_9(project(value[18]).Text, obj9) };
-    obj9 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp12 };
+    obj9 = { variant: "body-xs/normal", color: "text-feedback-critical", children: tmp12 };
     tmp23Result = tmp23(tmp24, obj8);
   }
   items4 = [tmp23Result, ];

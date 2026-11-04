@@ -1,16 +1,16 @@
-// Module ID: 19148
-// Function ID: 19149
+// Module ID: 19251
+// Function ID: 19252
 // Name: RestrictedBlockedMessageGroup
-// Dependencies: [32, 19, 17, 21, 5141, 19146, 575, 7106, 5747, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 19249, 575, 7121, 5761, 1113, 2]
 // Exports: default
 
-// Module 19148 (RestrictedBlockedMessageGroup)
+// Module 19251 (RestrictedBlockedMessageGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 19146 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import RestrictedMessagePreviewLayout from "RestrictedMessagePreviewLayout" /* 19249 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,7 +50,7 @@ export default function RestrictedBlockedMessageGroup(arg0) {
   }, []);
   let obj = { style: tmp.toggle, accessibilityRole: "button", accessibilityState: { expanded: mapped }, onPress: callback, children: closure_5(Text, obj2) };
   const PressableOpacity = Pressables.PressableOpacity;
-  obj2 = { variant: "text-sm/medium", color: "text-muted", children: intl.format(intl2.t["+FcYM/"], obj3) };
+  obj2 = { variant: "body-sm/medium", color: "text-muted", children: intl.format(intl2.t["+FcYM/"], obj3) };
   Text = Text_Text.Text;
   intl = intl2.intl;
   obj3 = { count: messages.length };

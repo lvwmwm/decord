@@ -1,45 +1,62 @@
 // Module ID: 8436
 // Function ID: 8437
-// Dependencies: [8437]
+// Dependencies: [8424]
 
 // Module 8436
-import _modDef8437 from "module_8437" /* 8437 */;
+import _modDef8424 from "module_8424" /* 8424 */;
 
-
-export default {
-  decode(arg0, buffer) {
-    function decodeAsciiValue(arg0) {
-      try {
-        const _decodeURIComponent = decodeURIComponent;
-        const _escape = escape;
-        return decodeURIComponent(escape(arg0));
-      } catch (err) {
-        return arg0;
-      }
-    }
-    const obj = _modDef8437;
-    const value = obj.get();
-    if (undefined !== value) {
-      if (undefined !== arg0) {
-        try {
-          const self = this;
-          const self2 = this;
-          const value1 = new value(arg0);
-          const _DataView = DataView;
-          const decode = value1.decode;
-          if (buffer instanceof DataView) {
-            buffer = buffer.buffer;
-          } else {
-            const _Uint8Array = Uint8Array;
-            buffer = Uint8Array.from(buffer);
-          }
-          return decode(buffer);
-        } catch (err) {
-        }
-      }
-    }
-    const mapped = buffer.map((item) => String.fromCharCode(item));
-    return decodeAsciiValue(mapped.join(""));
+const typeSizes = { 1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 7: 1, 9: 4, 10: 8, 13: 4 };
+const obj2 = { BYTE: 1, ASCII: 2, SHORT: 3, LONG: 4, RATIONAL: 5, UNDEFINED: 7, SLONG: 9, SRATIONAL: 10, IFD: 13 };
+const obj3 = {
+  getAsciiValue(items) {
+    return items.map((item) => String.fromCharCode(item));
   },
-  TAG_HEADER_SIZE: 5
+  getByteAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getAsciiAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getShortAt(dataView, sum, byteOrder) {
+    return dataView.getUint16(sum, byteOrder === _modDef8424.LITTLE_ENDIAN);
+  },
+  getLongAt(dataView, sum, byteOrder) {
+    return dataView.getUint32(sum, byteOrder === _modDef8424.LITTLE_ENDIAN);
+  },
+  getRationalAt(getUint32, sum, arg2) {
+    const items = [getUint32.getUint32(sum, arg2 === _modDef8424.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getUint32.getUint32(sum, arg2 === _modDef8424.LITTLE_ENDIAN);
+    return items;
+  },
+  getUndefinedAt(getUint8, sum) {
+    return getUint8.getUint8(sum);
+  },
+  getSlongAt(getInt32, sum, arg2) {
+    return getInt32.getInt32(sum, arg2 === _modDef8424.LITTLE_ENDIAN);
+  },
+  getSrationalAt(getInt32, sum, arg2) {
+    const items = [getInt32.getInt32(sum, arg2 === _modDef8424.LITTLE_ENDIAN), ];
+    sum = sum + 4;
+    items[1] = getInt32.getInt32(sum, arg2 === _modDef8424.LITTLE_ENDIAN);
+    return items;
+  },
+  getIfdPointerAt(getUint32, sum, arg2) {
+    return getUint32.getUint32(sum, arg2 === _modDef8424.LITTLE_ENDIAN);
+  },
+  typeSizes,
+  tagTypes: obj2,
+  getTypeSize(LONG) {
+    if (undefined === obj2[LONG]) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error = new Error("No such type found.");
+      throw error;
+    } else {
+      return obj[tmp[LONG]];
+    }
+  }
 };
+
+export default obj3;

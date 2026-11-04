@@ -1,16 +1,16 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 15234
+// Function ID: 15235
 // Name: UserProfileRemediatedNotice
-// Dependencies: [19, 17, 5083, 1072, 21, 5141, 575, 8938, 563, 5747, 1113, 7612, 2]
+// Dependencies: [19, 17, 5083, 1072, 21, 5141, 575, 8955, 563, 5761, 1113, 7628, 2]
 // Exports: default
 
-// Module 15154 (UserProfileRemediatedNotice)
+// Module 15234 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7612 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8938 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7628 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8955 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Fragment from "Fragment" /* 21 */;
@@ -54,25 +54,25 @@ export default function RemediatedUserNotice(user) {
     items1 = [tmp.container, tmp3.card, style];
     const tmp9 = View;
     if (isBlocked) {
-      const obj3 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1113).t["oC/fU6"]) };
-      const Text = tmp4(5747).Text;
+      const obj3 = { variant: "body-sm/semibold", color: "text-default", lineClamp: 1, children: intl.string(user(1113).t["oC/fU6"]) };
+      const Text = tmp4(5761).Text;
       intl = tmp4(1113).intl;
       isBlocked = closure_6(Text, obj3);
     }
     items2 = [isBlocked, ];
     if (isIgnored) {
       const obj4 = { children: items3 };
-      const obj5 = { variant: "text-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1113).t.HXz5An) };
-      const Text2 = tmp4(5747).Text;
+      const obj5 = { variant: "body-sm/semibold", color: "text-default", lineClamp: 1, children: intl2.string(user(1113).t.HXz5An) };
+      const Text2 = tmp4(5761).Text;
       intl2 = tmp4(1113).intl;
-      items3 = [closure_6(Text2, obj5), closure_6(user(5747).Text, { variant: "text-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
+      items3 = [closure_6(Text2, obj5), closure_6(user(5761).Text, { variant: "body-sm/semibold", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no", children: "\u2022" }), ];
       const intl3 = tmp4(1113).intl;
       const obj6 = {
         unignoreHook(children) {
               let id;
               let obj = {
                 role: "button",
-                variant: "heading-sm/medium",
+                variant: "heading-xs/medium",
                 color: "text-link",
                 onPress() {
                   const obj = RelationshipActionCreatorsDefault;

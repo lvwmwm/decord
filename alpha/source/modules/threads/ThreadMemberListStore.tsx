@@ -1,9 +1,9 @@
-// Module ID: 7568
-// Function ID: 7569
+// Module ID: 7584
+// Function ID: 7585
 // Name: ThreadMemberListStore
-// Dependencies: [32, 4990, 5053, 7569, 5881, 6690, 1385, 1072, 12, 11, 5078, 5195, 1380, 504, 572, 2]
+// Dependencies: [32, 4990, 5053, 7585, 5895, 6705, 1385, 1072, 12, 11, 5078, 5195, 1380, 504, 572, 2]
 
-// Module 7568 (ThreadMemberListStore)
+// Module 7584 (ThreadMemberListStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -13,14 +13,14 @@ import UserUtilsDefault from "UserUtils" /* 5195 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7569 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6690 */;
+import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7585 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6705 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let closure_13, set, subscribedThreadIds, version;
+let closure_13, set, subscribedThreadIds;
 
 let closure_12;
 let unpackModuleId;
@@ -374,7 +374,7 @@ class ThreadMemberListStore extends Store {
     });
   }
   getMemberListVersion(arg0) {
-    version = undefined;
+    let version;
     if (closure_13[arg0] != null) {
       version = tmp.version;
     }

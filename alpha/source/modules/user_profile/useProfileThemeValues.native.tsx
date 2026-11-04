@@ -1,10 +1,10 @@
-// Module ID: 7473
-// Function ID: 7474
+// Module ID: 7489
+// Function ID: 7490
 // Name: useProfileThemeValues
 // Dependencies: [19, 5142, 563, 575, 574, 2]
 // Exports: useProfileThemeValues
 
-// Module 7473 (useProfileThemeValues)
+// Module 7489 (useProfileThemeValues)
 import react from "react" /* 19 */;
 import shims from "shims" /* 574 */;
 import nativeDefault from "native" /* 575 */;

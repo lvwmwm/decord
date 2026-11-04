@@ -1,14 +1,14 @@
-// Module ID: 8972
-// Function ID: 8973
+// Module ID: 8989
+// Function ID: 8990
 // Name: PlayIcon
-// Dependencies: [19, 21, 575, 5836, 8973, 2]
+// Dependencies: [19, 21, 575, 5850, 8990, 2]
 // Exports: PlayIcon
 
-// Module 8972 (PlayIcon)
+// Module 8989 (PlayIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 8973 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 8990 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

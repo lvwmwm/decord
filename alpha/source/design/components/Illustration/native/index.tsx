@@ -1,9 +1,9 @@
-// Module ID: 8930
-// Function ID: 8931
+// Module ID: 8947
+// Function ID: 8948
 // Dependencies: [1072, 5207, 2]
 // Exports: getIllustrationSource, useIllustrationSource
 
-// Module 8930
+// Module 8947
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 5207 */;
 import size from "module_2" /* 2 */;

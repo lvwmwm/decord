@@ -1,14 +1,14 @@
-// Module ID: 14247
-// Function ID: 14248
+// Module ID: 14333
+// Function ID: 14334
 // Name: useDeactivateWarningText
-// Dependencies: [19, 5365, 5047, 5012, 504, 7417, 5356, 1113, 2699, 2]
+// Dependencies: [19, 5366, 5047, 5012, 504, 7433, 5357, 1113, 2699, 2]
 // Exports: default
 
-// Module 14247 (useDeactivateWarningText)
+// Module 14333 (useDeactivateWarningText)
 import _modDef2699 from "module_2699" /* 2699 */;
-import Powerups from "Powerups" /* 5356 */;
+import Powerups from "Powerups" /* 5357 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5365 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5366 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
@@ -137,7 +137,7 @@ export default function useDeactivateWarningText(arg0, skuId) {
     let tmp19 = stateFromStores1;
     ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
     if (tmp19) {
-      tmp19 = tmp.skuId === tmp2(5356).GUILD_POWERUP_LEVEL_3_SKU_ID;
+      tmp19 = tmp.skuId === tmp2(5357).GUILD_POWERUP_LEVEL_3_SKU_ID;
     }
     if (tmp19) {
       const push = items.push;

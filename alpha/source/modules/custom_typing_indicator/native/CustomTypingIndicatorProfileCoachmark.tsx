@@ -1,10 +1,10 @@
-// Module ID: 19025
-// Function ID: 19026
+// Module ID: 19128
+// Function ID: 19129
 // Name: CustomTypingIndicatorProfileCoachmark
-// Dependencies: [19, 17, 1072, 4987, 21, 5141, 575, 1113, 3997, 7446, 7471, 7687, 10085, 13868, 1393, 13871, 13872, 2]
+// Dependencies: [19, 17, 1072, 4987, 21, 5141, 575, 1113, 3997, 7462, 7487, 7703, 10133, 13954, 1393, 13957, 13958, 2]
 // Exports: default
 
-// Module 19025 (CustomTypingIndicatorProfileCoachmark)
+// Module 19128 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,9 +13,9 @@ import intl3 from "intl" /* 1113 */;
 import user from "user" /* 1393 */;
 import _modDef3997 from "module_3997" /* 3997 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 13868 */;
-import _modDef13871 from "module_13871" /* 13871 */;
-import _modDef13872 from "module_13872" /* 13872 */;
+import CustomTypingIndicatorDynamicAssetDefault from "CustomTypingIndicatorDynamicAsset" /* 13954 */;
+import _modDef13957 from "module_13957" /* 13957 */;
+import _modDef13958 from "module_13958" /* 13958 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -24,9 +24,9 @@ let obj2;
 function CoachmarkPreview() {
   let items;
   const tmp = closure_8();
-  ({ name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "text-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: items });
+  ({ name: "Locke", suggestion: user.TypingSuggestion.YAPPING, emojiSize: 16, spacing: 8, emojiGap: 4, textVariant: "body-xs/medium", textColor: "text-subtle", textStyle: tmp.typingText, emojiSource: items });
   CustomTypingIndicatorDynamicAssetDefault;
-  items = [_modDef13871, _modDef13872, _modDef13871];
+  items = [_modDef13957, _modDef13958, _modDef13957];
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 }
 let react = react_mod;

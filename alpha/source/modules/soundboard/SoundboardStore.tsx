@@ -1,9 +1,9 @@
-// Module ID: 6178
-// Function ID: 6179
+// Module ID: 6193
+// Function ID: 6194
 // Name: SoundboardStore
-// Dependencies: [32, 1231, 5884, 1385, 6179, 6180, 1072, 1082, 5900, 2171, 12, 4966, 1252, 6043, 11, 504, 572, 2]
+// Dependencies: [32, 1231, 5898, 1385, 6194, 6195, 1072, 1082, 5914, 2171, 12, 4966, 1252, 6058, 11, 504, 572, 2]
 
-// Module 6178 (SoundboardStore)
+// Module 6193 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,14 +12,14 @@ import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import UserSettings from "UserSettings" /* 4966 */;
-import FrecencyDefault from "Frecency" /* 5900 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6043 */;
+import FrecencyDefault from "Frecency" /* 5914 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6058 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
 import UserStore from "UserStore" /* 1385 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6179 */;
-import SoundboardConstants from "SoundboardConstants" /* 6180 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6194 */;
+import SoundboardConstants from "SoundboardConstants" /* 6195 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -139,7 +139,7 @@ let obj2 = {
   }
 };
 let tmp9 = new FrecencyDefault(obj2);
-const version = tmp9;
+const authStore6 = tmp9;
 const sidebars = [];
 let c24 = false;
 let closure_25 = false;

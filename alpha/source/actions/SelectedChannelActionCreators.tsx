@@ -1,14 +1,14 @@
-// Module ID: 6826
-// Function ID: 6827
+// Module ID: 6841
+// Function ID: 6842
 // Name: SelectedChannelActionCreators
-// Dependencies: [5885, 4990, 2135, 1072, 6827, 572, 1099, 12116, 2]
+// Dependencies: [5899, 4990, 2135, 1072, 6842, 572, 1099, 12175, 2]
 
-// Module 6826 (SelectedChannelActionCreators)
+// Module 6841 (SelectedChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
-import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 6827 */;
-import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 12116 */;
-import GameConsoleStore from "GameConsoleStore" /* 5885 */;
+import SelectedChannelActionCreatorsAdditional from "SelectedChannelActionCreatorsAdditional" /* 6842 */;
+import GameConsoleActionCreatorsAll from "GameConsoleActionCreators" /* 12175 */;
+import GameConsoleStore from "GameConsoleStore" /* 5899 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
 import Constants from "Constants" /* 1072 */;
@@ -46,7 +46,7 @@ let obj = {
     const obj = router_utils;
     obj.transitionTo(metroImportAll.CHANNEL(metroImportDefault, id));
   },
-  selectVoiceChannel(id, MediaEngineStore, flag2) {
+  selectVoiceChannel(id, MediaEngineStore, flag2, arg3) {
     let guildId;
     let flag = MediaEngineStore;
     if (MediaEngineStore === undefined) {

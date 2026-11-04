@@ -1,17 +1,17 @@
-// Module ID: 19253
-// Function ID: 19254
+// Module ID: 19357
+// Function ID: 19358
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7840, 1072, 21, 575, 5141, 1627, 16913, 16912, 19254, 11995, 5719, 7854, 1252, 7841, 7687, 5747, 5710, 1113, 2667, 2]
+// Dependencies: [19, 17, 7856, 1072, 21, 575, 5141, 1627, 17005, 17004, 19358, 12054, 5732, 7870, 1252, 7857, 7703, 5761, 5723, 1113, 2667, 2]
 // Exports: default
 
-// Module 19253 (ParentalConsentWarningBanner)
+// Module 19357 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7841 */;
-import _modDef7854 from "module_7854" /* 7854 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7856 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7857 */;
+import _modDef7870 from "module_7870" /* 7870 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -74,12 +74,12 @@ export default function ParentalConsentWarningBanner(children) {
   let obj4 = require("useGlobalStatusIndicatorState");
   const isVisible = obj4.useGlobalStatusIndicatorState().isVisible;
   let obj5 = require("useToken");
-  token = obj5.useToken(token(daysRemaining[5]).colors.BACKGROUND_FEEDBACK_WARNING);
+  token = obj5.useToken(token(daysRemaining[5]).colors.BACKGROUND_FEEDBACK_MOD_WARNING);
   let items = [token];
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7854(token);
+    const obj = _modDef7870(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;
@@ -116,7 +116,7 @@ export default function ParentalConsentWarningBanner(children) {
     obj4.openUserSettings(obj5);
   }, items1);
   const callback1 = obj6.useCallback((children, arg1) => {
-    const obj = { variant: "text-sm/medium", color: "text-strong", style: link.link, children };
+    const obj = { variant: "body-sm/medium", color: "text-strong", style: link.link, children };
     return unpackModuleId(Text_Text.Text, obj, arg1);
   }, items2);
   const items3 = [StyleSheet.absoluteFill, ];
@@ -145,7 +145,7 @@ export default function ParentalConsentWarningBanner(children) {
       items7 = [tmp.pressable, ];
       const obj12 = { paddingTop: tmp4.top + 8 };
       items7[1] = obj12;
-      obj13 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, style: tmp.label, children: formatResult };
+      obj13 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, style: tmp.label, children: formatResult };
       Text = tmp5(tmp3[17]).Text;
       const tmp24 = closure_4;
       if (0 === daysRemaining) {

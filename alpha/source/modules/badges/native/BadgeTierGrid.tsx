@@ -1,10 +1,10 @@
-// Module ID: 11618
-// Function ID: 11619
+// Module ID: 11669
+// Function ID: 11670
 // Name: BadgeTierGrid
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 10199, 11597, 11589, 8791, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 10247, 11648, 11639, 8808, 2]
 // Exports: default
 
-// Module 11618 (BadgeTierGrid)
+// Module 11669 (BadgeTierGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
@@ -55,8 +55,8 @@ export default function BadgeTierGrid(badge) {
     const tmp5 = closure_4;
     const tmp6 = badge;
     const tmp7 = dependencyMap;
-    let obj2 = { variant: "text-sm/medium", color: "text-default", style: tmp.progressLabel, children: intl.formatToPlainString(badge(1113).t.KyTwIh, obj3) };
-    let Text = badge(5747).Text;
+    let obj2 = { variant: "body-sm/medium", color: "text-default", style: tmp.progressLabel, children: intl.formatToPlainString(badge(1113).t.KyTwIh, obj3) };
+    let Text = badge(5761).Text;
     intl = badge(1113).intl;
     obj3 = { username: targetUsername };
     isViewingOtherUser = closure_4(Text, obj2);
@@ -114,7 +114,7 @@ export default function BadgeTierGrid(badge) {
             if (owned) {
               str = "text-default";
             }
-            const obj5 = { variant: "text-sm/semibold", color: str, style: item.centeredText, children: owned.name };
+            const obj5 = { variant: "body-sm/semibold", color: str, style: item.centeredText, children: owned.name };
             tmp13Result = tmp13(Text, obj5);
           }
           items2[1] = tmp13Result;
@@ -134,7 +134,7 @@ export default function BadgeTierGrid(badge) {
             if (owned) {
               str2 = "text-default";
             }
-            const obj8 = { variant: "text-sm/normal", color: str2, style: item.centeredText, children: tierRowSubtitle };
+            const obj8 = { variant: "body-sm/normal", color: str2, style: item.centeredText, children: tierRowSubtitle };
             items3[1] = tmp18(Text2, obj8);
             tmp5Result = tmp5(tmp6, obj6);
           }
@@ -146,7 +146,7 @@ export default function BadgeTierGrid(badge) {
     })
   };
   let tiers = badge.tiers;
-  let tmp9 = isViewingOtherUser(10199);
+  let tmp9 = isViewingOtherUser(10247);
   const tmp8 = closure_4;
   if (tiers == null) {
     tiers = [];

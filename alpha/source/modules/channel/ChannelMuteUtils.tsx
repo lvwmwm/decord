@@ -1,10 +1,10 @@
-// Module ID: 11209
-// Function ID: 11210
+// Module ID: 11259
+// Function ID: 11260
 // Name: ChannelMuteUtils
 // Dependencies: [2171, 2]
 // Exports: getMuteSettings
 
-// Module 11209 (ChannelMuteUtils)
+// Module 11259 (ChannelMuteUtils)
 import _modDef2171 from "module_2171" /* 2171 */;
 import size from "module_2" /* 2 */;
 

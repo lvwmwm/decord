@@ -1,19 +1,19 @@
-// Module ID: 19621
-// Function ID: 19622
+// Module ID: 19726
+// Function ID: 19727
 // Name: UploadLogsActionSheet
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 5395, 7441, 1113, 5747, 5754, 11228, 1252, 5381, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5396, 7457, 1113, 5761, 5768, 11278, 1252, 5382, 2]
 // Exports: default
 
-// Module 19621 (UploadLogsActionSheet)
+// Module 19726 (UploadLogsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7441 */;
-import DebugUploadManager from "DebugUploadManager" /* 11228 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7457 */;
+import DebugUploadManager from "DebugUploadManager" /* 11278 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,7 +28,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp3;
-const ActionSheetActionCreatorsDefault = tmp3(5381);
+const ActionSheetActionCreatorsDefault = tmp3(5382);
 const View = react_native.View;
 ({ AnalyticEvents: closure_4, DebugLogCategory: hasOwnProperty } = Constants);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -58,7 +58,7 @@ export default function UploadLogsActionSheet(arg0) {
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl5.intl;
   obj3 = { style: tmp.container, children: items };
-  const obj4 = { variant: "text-sm/normal", color: "text-muted", style: tmp.body, children: intl2.string(intl5.t["ZvRR/t"]) };
+  const obj4 = { variant: "body-sm/normal", color: "text-muted", style: tmp.body, children: intl2.string(intl5.t["ZvRR/t"]) };
   const Text = Text_Text.Text;
   intl2 = intl5.intl;
   items = [closure_6(Text, obj4), , , ];

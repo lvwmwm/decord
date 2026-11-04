@@ -1,17 +1,17 @@
-// Module ID: 8053
-// Function ID: 8054
+// Module ID: 8069
+// Function ID: 8070
 // Name: SurveyStore
-// Dependencies: [5365, 5012, 5073, 5172, 1385, 1072, 1089, 8054, 1084, 510, 2171, 504, 572, 2]
+// Dependencies: [5366, 5012, 5073, 5172, 1385, 1072, 1089, 8070, 1084, 510, 2171, 504, 572, 2]
 
-// Module 8053 (SurveyStore)
+// Module 8069 (SurveyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _modDef2171 from "module_2171" /* 2171 */;
-import surveyFetch from "surveyFetch" /* 8054 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5365 */;
+import surveyFetch from "surveyFetch" /* 8070 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5366 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;

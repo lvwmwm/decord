@@ -1,14 +1,14 @@
-// Module ID: 9191
-// Function ID: 9192
+// Module ID: 9208
+// Function ID: 9209
 // Name: Sheet/BottomSheetTextInput
-// Dependencies: [19, 21, 7228, 7226, 9192, 2]
+// Dependencies: [19, 21, 7248, 7246, 9209, 2]
 // Exports: BottomSheetTextInput
 
-// Module 9191 (Sheet/BottomSheetTextInput)
+// Module 9208 (Sheet/BottomSheetTextInput)
 import Fragment from "Fragment" /* 21 */;
-import NativeTextInput from "NativeTextInput" /* 7226 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7228 */;
-import void_TextInput_TextInputDefault from "void/TextInput/TextInput" /* 9192 */;
+import NativeTextInput from "NativeTextInput" /* 7246 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7248 */;
+import void_TextInput_TextInputDefault from "void/TextInput/TextInput" /* 9209 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

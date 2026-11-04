@@ -1,28 +1,28 @@
-// Module ID: 13119
-// Function ID: 13120
+// Module ID: 13202
+// Function ID: 13203
 // Name: ConjureProjectList
-// Dependencies: [19, 17, 1231, 6964, 21, 5141, 575, 1627, 1499, 13120, 13123, 12223, 5381, 13124, 10978, 12357, 11008, 12348, 12263, 7484, 7131, 11621, 1113, 5747, 3995, 5754, 11005, 13139, 7186, 7101, 13141, 11007, 504, 6980, 12258, 13149, 12370, 9888, 2]
+// Dependencies: [19, 17, 1231, 6979, 21, 5141, 575, 1627, 1499, 13203, 13206, 12282, 5382, 13207, 11026, 12422, 11057, 12413, 12324, 7500, 7146, 11672, 1113, 5761, 3995, 5768, 11054, 13222, 7201, 7116, 13224, 11056, 504, 6995, 12319, 13232, 12435, 9906, 2]
 // Exports: default
 
-// Module 13119 (ConjureProjectList)
+// Module 13202 (ConjureProjectList)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 10978 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12223 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12258 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12263 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 12370 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 13124 */;
-import openConjureProjectsSheet from "openConjureProjectsSheet" /* 13141 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 11026 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11054 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12282 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12319 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12324 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 12435 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 13207 */;
+import openConjureProjectsSheet from "openConjureProjectsSheet" /* 13224 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -49,7 +49,7 @@ function ProjectRow(project) {
   const onMore = project.onMore;
   const onPress = project.onPress;
   const tmp = closure_11(0);
-  const obj = project(11007);
+  const obj = project(11056);
   const conjureProjectBadge = obj.useConjureProjectBadge(project.id);
   const items = [ConjureProjectStore];
   const items1 = [project.id];
@@ -64,13 +64,13 @@ function ProjectRow(project) {
     const _Date = Date;
     const self = this;
     const self2 = this;
-    getRelativeTimestamp = project(6980).getRelativeTimestamp;
-    project(6980);
+    getRelativeTimestamp = project(6995).getRelativeTimestamp;
+    project(6995);
     date = new Date(project.updated_at);
     formatToPlainStringResult = formatToPlainString(AXydi3, obj3);
   }
   const obj4 = { label: project.name, subLabel: formatToPlainStringResult, accessibilityHint: stringResult, disabled: stateFromStores, icon: closure_9(ConjureProjectIconDefault, { project, size: "list" }), trailing: tmp12Result, onPress, onLongPress: onMore };
-  const TableRow = tmp2(7101).TableRow;
+  const TableRow = tmp2(7116).TableRow;
   if (stateFromStores) {
     const intl2 = tmp2(1113).intl;
     formatToPlainStringResult = intl2.string(_modDef3995.Yh5pAc);
@@ -87,10 +87,10 @@ function ProjectRow(project) {
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { value: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(13149), obj6);
+      tmp14Result3 = tmp14(tmp18(13232), obj6);
     }
     items2 = [tmp14Result3, ];
-    const obj7 = { IconComponent: project(9888).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1113).t["UKOtz+"]) };
+    const obj7 = { IconComponent: project(9906).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1113).t["UKOtz+"]) };
     const tmp18Result = ConjureHeaderIconButtonDefault;
     intl4 = tmp2(1113).intl;
     items2[1] = closure_9(tmp18Result, obj7);
@@ -273,7 +273,7 @@ export default function ConjureProjectList(guildId) {
     let str = "error";
     if ("error" === fetchState) {
       let obj3 = { style: tmp3.listError, children: items7 };
-      let obj4 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(tmp(tmp2[24]).DJAPMO) };
+      let obj4 = { variant: "body-md/normal", color: "text-muted", children: intl2.string(tmp(tmp2[24]).DJAPMO) };
       let Text = tmp4(tmp2[23]).Text;
       intl2 = tmp4(tmp2[22]).intl;
       items7 = [closure_9(Text, obj4), ];
@@ -304,7 +304,7 @@ export default function ConjureProjectList(guildId) {
       } else {
         prop = tmp(tmp2[24])["9/5sLV"];
       }
-      const obj7 = { variant: "text-md/normal", color: "text-muted", children: string(prop) };
+      const obj7 = { variant: "body-md/normal", color: "text-muted", children: string(prop) };
       items8 = [closure_9(Text2, obj7), ];
       const obj8 = { variant: "primary", size: "sm", text: intl.string(guildId(tmp2[22]).t.CumH4u), onPress: callback1 };
       const Button = tmp4(tmp2[25]).Button;
@@ -330,7 +330,7 @@ export default function ConjureProjectList(guildId) {
     let tmp = null;
     if (projects.projects.length > 0) {
       let obj = { style: section.section, children: items };
-      const obj2 = { variant: "heading-md/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(projects.title) };
+      const obj2 = { variant: "heading-sm/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(projects.title) };
       const Text = Text_Text.Text;
       intl = intl6.intl;
       items = [React4(Text, obj2), ];

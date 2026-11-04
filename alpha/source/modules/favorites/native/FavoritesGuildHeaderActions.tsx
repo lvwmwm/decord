@@ -1,16 +1,16 @@
-// Module ID: 18355
-// Function ID: 18356
+// Module ID: 18449
+// Function ID: 18450
 // Name: FavoritesGuildHeaderActions
-// Dependencies: [19, 21, 8152, 11622, 18356, 1113, 3577, 2]
+// Dependencies: [19, 21, 8168, 11673, 18450, 1113, 3577, 2]
 // Exports: FavoritesGuildHeaderActionButton
 
-// Module 18355 (FavoritesGuildHeaderActions)
+// Module 18449 (FavoritesGuildHeaderActions)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3577 from "module_3577" /* 3577 */;
-import IconButton2 from "IconButton" /* 8152 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11622 */;
-import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 18356 */;
+import IconButton2 from "IconButton" /* 8168 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11673 */;
+import FavoritesGuildAddActionSheet from "FavoritesGuildAddActionSheet" /* 18450 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

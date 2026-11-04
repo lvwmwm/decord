@@ -1,14 +1,14 @@
-// Module ID: 16760
-// Function ID: 16761
+// Module ID: 16852
+// Function ID: 16853
 // Name: AgeNoticeVisibility
-// Dependencies: [1385, 2121, 5813, 6851, 504, 2]
+// Dependencies: [1385, 2121, 5827, 6866, 504, 2]
 // Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
-// Module 16760 (AgeNoticeVisibility)
+// Module 16852 (AgeNoticeVisibility)
 import get_initialized from "get initialized" /* 504 */;
 import Server from "Server" /* 2121 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5813 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6851 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5827 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6866 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

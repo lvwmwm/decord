@@ -1,25 +1,25 @@
-// Module ID: 10675
-// Function ID: 10676
+// Module ID: 10723
+// Function ID: 10724
 // Name: MediaKeyboardItem
-// Dependencies: [19, 17, 8332, 10676, 21, 1652, 5141, 575, 5138, 1187, 10407, 5747, 504, 8342, 10677, 1113, 8362, 8344, 10678, 10679, 5377, 1493, 10680, 8783, 10665, 2]
+// Dependencies: [19, 17, 8348, 10724, 21, 1652, 5141, 575, 5138, 1187, 10455, 5761, 504, 8358, 10725, 1113, 8378, 8360, 10726, 10727, 5378, 1493, 10728, 8800, 10713, 2]
 // Exports: isAttachFilesNode, isMediaCameraNode, isSpecialMediaGridNode, isViewAllPhotosNode
 
-// Module 10675 (MediaKeyboardItem)
+// Module 10723 (MediaKeyboardItem)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ImageIcon from "ImageIcon" /* 8783 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10407 */;
-import AttachmentIcon from "AttachmentIcon" /* 10665 */;
-import CameraIcon from "CameraIcon" /* 10680 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ImageIcon from "ImageIcon" /* 8800 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10455 */;
+import AttachmentIcon from "AttachmentIcon" /* 10713 */;
+import CameraIcon from "CameraIcon" /* 10728 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8332 */;
-import DeviceConstants from "DeviceConstants" /* 10676 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8348 */;
+import DeviceConstants from "DeviceConstants" /* 10724 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import ColorUtils_mod from "ColorUtils" /* 5138 */;
@@ -54,7 +54,7 @@ function NewCaption(arg0) {
   items = [tmp.labelContainer, style];
   const obj2 = { source: AssetRegistryDefault, style: tmp.icon };
   const Icon = native.Icon;
-  items1 = [React4(Icon, obj2), React4(Text_Text.Text, { style: textStyle, color: "text-overlay-light", variant: "text-xs/semibold", children: label })];
+  items1 = [React4(Icon, obj2), React4(Text_Text.Text, { style: textStyle, color: "text-overlay-light", variant: "body-xs/semibold", children: label })];
   return authStore(React3, obj);
 }
 function MediaKeyboardImage(draftType) {

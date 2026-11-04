@@ -1,13 +1,13 @@
-// Module ID: 12329
-// Function ID: 12330
+// Module ID: 12394
+// Function ID: 12395
 // Name: ConjureSaveBackupSheet
-// Dependencies: [32, 19, 17, 21, 5141, 575, 12319, 12315, 5832, 1113, 3995, 5381, 7486, 7441, 6147, 5747, 12317, 7208, 5754, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 12384, 12380, 5846, 1113, 3995, 5382, 7502, 7457, 6162, 5761, 12382, 7223, 5768, 2]
 // Exports: default
 
-// Module 12329 (ConjureSaveBackupSheet)
+// Module 12394 (ConjureSaveBackupSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import conjureDatabaseLock from "conjureDatabaseLock" /* 12319 */;
+import conjureDatabaseLock from "conjureDatabaseLock" /* 12384 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -99,7 +99,7 @@ export default function ConjureSaveBackupSheet(projectId) {
   intl = projectId(onSaved[9]).intl;
   obj3 = { style: tmp.content, children: tmp15(Stack, obj8) };
   Stack = projectId(onSaved[14]).Stack;
-  const obj4 = { variant: "text-sm/normal", color: "text-muted", children: formatToPlainString(sXGNm5, obj5) };
+  const obj4 = { variant: "body-sm/normal", color: "text-muted", children: formatToPlainString(sXGNm5, obj5) };
   const Text = projectId(onSaved[15]).Text;
   const intl2 = projectId(onSaved[9]).intl;
   formatToPlainString = intl2.formatToPlainString;

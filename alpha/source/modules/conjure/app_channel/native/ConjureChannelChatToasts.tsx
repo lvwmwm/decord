@@ -1,16 +1,16 @@
-// Module ID: 18833
-// Function ID: 18834
+// Module ID: 18936
+// Function ID: 18937
 // Name: ConjureChannelChatToasts
-// Dependencies: [19, 17, 21, 5141, 575, 1113, 5195, 7103, 1187, 5747, 18834, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1113, 5195, 7118, 1187, 5761, 18937, 2]
 // Exports: default
 
-// Module 18833 (ConjureChannelChatToasts)
+// Module 18936 (ConjureChannelChatToasts)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import UserUtils from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18834 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useConjureChatToastMessagesDefault from "useConjureChatToastMessages" /* 18937 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -49,12 +49,12 @@ function ChatToast(message) {
   const obj2 = { style: tmp.opaque, children: metroRequire(Card, obj3) };
   const callback = react.useCallback(() => onOpenChat(message), items);
   obj3 = { variant: "primary", shadow: "high", border: "subtle", style: tmp.card, onPress: callback, children: items1 };
-  Card = tmp2(7103).Card;
+  Card = tmp2(7118).Card;
   const obj4 = { size: native.AvatarSizes.SMALL, user: message.author, guildId: "Array" };
   const Avatar = tmp2(1187).Avatar;
   items1 = [hasOwnProperty(Avatar, obj4), ];
   const obj5 = { style: tmp.body, children: items2 };
-  items2 = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, children: name }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", lineClamp: 1, children: trimmed })];
+  items2 = [hasOwnProperty(Text_Text.Text, { variant: "body-xs/semibold", color: "text-default", lineClamp: 1, children: name }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-default", lineClamp: 1, children: trimmed })];
   items1[1] = metroRequire(View, obj5);
   return hasOwnProperty(View, obj2);
 }

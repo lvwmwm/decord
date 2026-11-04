@@ -1,10 +1,10 @@
-// Module ID: 14324
-// Function ID: 14325
+// Module ID: 14411
+// Function ID: 14412
 // Name: MathUtils
 // Dependencies: [2]
 // Exports: roundIfClose
 
-// Module 14324 (MathUtils)
+// Module 14411 (MathUtils)
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,14 +1,14 @@
-// Module ID: 20031
-// Function ID: 20032
+// Module ID: 20147
+// Function ID: 20148
 // Name: EligibilityActionSheet
-// Dependencies: [19, 1072, 21, 5141, 5381, 9202, 7687, 20032, 5395, 5747, 1113, 20036, 2]
+// Dependencies: [19, 1072, 21, 5141, 5382, 9219, 7703, 20148, 5396, 5761, 1113, 20152, 2]
 // Exports: default
 
-// Module 20031 (EligibilityActionSheet)
+// Module 20147 (EligibilityActionSheet)
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 20032 */;
-import EligibilityChecklistDefault from "EligibilityChecklist" /* 20036 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 20148 */;
+import EligibilityChecklistDefault from "EligibilityChecklist" /* 20152 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -53,9 +53,9 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   }, items);
   let obj = { startExpanded: true, children: items1 };
   const tmp3 = useCreatorMonetizationEligibilityItemsDefault(eligibility, memo);
-  const BottomSheet = onRequireModeratorMFAClick(5395).BottomSheet;
+  const BottomSheet = onRequireModeratorMFAClick(5396).BottomSheet;
   let obj2 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(onRequireModeratorMFAClick(1113).t["3s47iN"]) };
-  const Heading = onRequireModeratorMFAClick(5747).Heading;
+  const Heading = onRequireModeratorMFAClick(5761).Heading;
   intl = onRequireModeratorMFAClick(1113).intl;
   items1 = [closure_5(Heading, obj2), ];
   let obj3 = { style: tmp.container, items: tmp3 };

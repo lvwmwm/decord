@@ -1,17 +1,17 @@
-// Module ID: 6143
-// Function ID: 6144
+// Module ID: 6158
+// Function ID: 6159
 // Name: KeyCommands
-// Dependencies: [19, 6144, 2]
+// Dependencies: [19, 6159, 2]
 // Exports: subscribeKeyCommand, useKeyCommands
 
-// Module 6143 (KeyCommands)
+// Module 6158 (KeyCommands)
 import react from "react" /* 19 */;
-import react_native_mod from "react-native" /* 6144 */;
+import react_native_mod from "react-native" /* 6159 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, map;
 
-const f89078 = () => {
+const f89445 = () => {
   c4 = false;
   map = new Map();
   for (const item10012 of closure_1_3) {
@@ -50,7 +50,7 @@ function registerKeyCommand(arg0) {
   if (!tmp4) {
     c4 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f89078);
+    queueMicrotask(f89445);
   }
 }
 function unregisterKeyCommand(arg0) {
@@ -60,7 +60,7 @@ function unregisterKeyCommand(arg0) {
   if (!tmp) {
     c4 = true;
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f89078);
+    queueMicrotask(f89445);
   }
 }
 let react_native = react_native_mod;
@@ -100,7 +100,7 @@ export function subscribeKeyCommand(arg0) {
   if (!tmp4) {
     c4 = true;
     let _queueMicrotask = queueMicrotask;
-    queueMicrotask(f89078);
+    queueMicrotask(f89445);
   }
   return () => {
     items = items.filter((item) => item !== closure_0);
@@ -108,7 +108,7 @@ export function subscribeKeyCommand(arg0) {
     if (!tmp) {
       c4 = true;
       const _queueMicrotask = queueMicrotask;
-      queueMicrotask(f89078);
+      queueMicrotask(f89445);
     }
   };
 }

@@ -1,15 +1,15 @@
-// Module ID: 16851
-// Function ID: 16852
+// Module ID: 16943
+// Function ID: 16944
 // Name: RestrictedUserRowLabel
-// Dependencies: [19, 17, 21, 5719, 575, 1113, 5747, 2]
+// Dependencies: [19, 17, 21, 5732, 575, 1113, 5761, 2]
 // Exports: RestrictedUserRowLabel
 
-// Module 16851 (RestrictedUserRowLabel)
+// Module 16943 (RestrictedUserRowLabel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ export function RestrictedUserRowLabel(userRecord) {
   }
   items = [React3(Text, obj4), ];
   if (tmp8Result) {
-    const obj5 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, includeFontPadding: true, children: userRecord.username };
+    const obj5 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, includeFontPadding: true, children: userRecord.username };
     tmp8Result = tmp8(Text_Text.Text, obj5);
   }
   items[1] = tmp8Result;

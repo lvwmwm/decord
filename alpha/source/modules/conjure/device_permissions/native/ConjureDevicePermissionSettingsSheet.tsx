@@ -1,15 +1,15 @@
-// Module ID: 14691
-// Function ID: 14692
+// Module ID: 14771
+// Function ID: 14772
 // Name: ConjureDevicePermissionSettingsSheet
-// Dependencies: [19, 17, 21, 5141, 575, 14692, 7486, 7441, 1113, 3995, 7186, 7489, 11059, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 14772, 7502, 7457, 1113, 3995, 7201, 7505, 11108, 2]
 // Exports: default
 
-// Module 14691 (ConjureDevicePermissionSettingsSheet)
+// Module 14771 (ConjureDevicePermissionSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import useConjureDevicePermissionSettingsDefault from "useConjureDevicePermissionSettings" /* 14692 */;
+import useConjureDevicePermissionSettingsDefault from "useConjureDevicePermissionSettings" /* 14772 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

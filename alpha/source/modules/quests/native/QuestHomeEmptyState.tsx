@@ -1,21 +1,21 @@
-// Module ID: 17122
-// Function ID: 17123
+// Module ID: 17214
+// Function ID: 17215
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1113, 5719, 5324, 7412, 1377, 5747, 5837, 17123, 5710, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1113, 5732, 5325, 7428, 1377, 5761, 5851, 17215, 5723, 2]
 // Exports: default
 
-// Module 17122 (QuestHomeEmptyState)
+// Module 17214 (QuestHomeEmptyState)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useChatLayoutDefault from "useChatLayout" /* 5324 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17123 */;
+import useChatLayoutDefault from "useChatLayout" /* 5325 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17215 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -88,7 +88,7 @@ export default function QuestHomeEmptyState(hasContentAbove) {
   items2 = [, , ];
   const obj7 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp5.emptyStateContentTitle, children: title };
   items2[0] = hasOwnProperty(Text_Text.Text, obj7);
-  const obj8 = { variant: "text-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle };
+  const obj8 = { variant: "body-md/normal", color: "text-default", style: tmp5.emptyStateContentDescription, children: subtitle };
   items2[1] = hasOwnProperty(Text_Text.Text, obj8);
   let tmp10Result = null != action;
   if (tmp10Result) {

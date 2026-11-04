@@ -1,13 +1,13 @@
-// Module ID: 8661
-// Function ID: 8662
+// Module ID: 8678
+// Function ID: 8679
 // Name: VoiceSessionSystemMessage
-// Dependencies: [4990, 8561, 8542, 8662, 1113, 8544, 8546, 2]
+// Dependencies: [4990, 8578, 8559, 8679, 1113, 8561, 8563, 2]
 // Exports: createVoiceSessionSystemMessage
 
-// Module 8661 (VoiceSessionSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8542 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8544 */;
-import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8561 */;
+// Module 8678 (VoiceSessionSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8559 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8561 */;
+import getHumanizedCallDurationDefault from "getHumanizedCallDuration" /* 8578 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ export function createVoiceSessionSystemMessage(message) {
     tmp7 = undefined;
     if (null != mapped[0]) {
       const obj7 = { userId: mapped[0].user.id, message, author: mapped[0].messageAuthor, roleStyle };
-      tmp7 = tmp(8544)(obj7);
+      tmp7 = tmp(8561)(obj7);
     }
     nick1 = undefined;
     if (mapped[1] != null) {
@@ -69,11 +69,11 @@ export function createVoiceSessionSystemMessage(message) {
     tmp10 = undefined;
     if (null != mapped[1]) {
       const obj8 = { userId: mapped[1].user.id, message, author: mapped[1].messageAuthor, roleStyle };
-      tmp10 = tmp(8544)(obj8);
+      tmp10 = tmp(8561)(obj8);
     }
     formatToPartsResult = formatToParts2(atbXuX, obj5);
   }
   const obj9 = { content: formatToPartsResult };
-  const merged = Object.assign(tmp(8546)(message));
+  const merged = Object.assign(tmp(8563)(message));
   return obj9;
 }

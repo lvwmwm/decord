@@ -1,16 +1,16 @@
-// Module ID: 15599
-// Function ID: 15600
+// Module ID: 15686
+// Function ID: 15687
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 2181, 7721, 21, 5761, 5747, 504, 7717, 14596, 7446, 10743, 6079, 1113, 2176, 10688, 5755, 15600, 2]
+// Dependencies: [5, 19, 17, 2181, 7737, 21, 5775, 5761, 504, 7733, 14676, 7462, 10791, 6094, 1113, 2176, 10736, 5769, 15687, 2]
 // Exports: default
 
-// Module 15599 (GiftPurchaseButton)
+// Module 15686 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2181 */;
-import IAPStore from "IAPStore" /* 7721 */;
+import IAPStore from "IAPStore" /* 7737 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -36,7 +36,7 @@ export default function GiftPurchaseButton(variant) {
   const obj2 = planId(recipientUserId[6]);
   const buttonTextColorStyles = obj2.useButtonTextColorStyles(str);
   const obj = {};
-  const merged = Object.assign(planId(recipientUserId[7]).TextStyleSheet["text-sm/semibold"]);
+  const merged = Object.assign(planId(recipientUserId[7]).TextStyleSheet["body-sm/semibold"]);
   const merged1 = Object.assign(buttonTextColorStyles);
   let obj4 = planId(recipientUserId[8]);
   const items = [SubscriptionStore];

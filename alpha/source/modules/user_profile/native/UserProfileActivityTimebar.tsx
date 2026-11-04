@@ -1,14 +1,14 @@
-// Module ID: 15009
-// Function ID: 15010
+// Module ID: 15089
+// Function ID: 15090
 // Name: UserProfileActivityTimebar
-// Dependencies: [19, 17, 21, 5141, 575, 15010, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 15090, 5761, 2]
 // Exports: default
 
-// Module 15009 (UserProfileActivityTimebar)
+// Module 15089 (UserProfileActivityTimebar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useActivityTimer from "useActivityTimer" /* 15010 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useActivityTimer from "useActivityTimer" /* 15090 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -54,11 +54,11 @@ export default function UserProfileActivityTimebar(arg0) {
   ({ elapsed, duration } = tmp2);
   items1 = [React3(View, obj2), ];
   const obj5 = { style: tmp.textRow, children: items2 };
-  const obj6 = { variant: "text-xs/normal", tabularNumbers: true, color: "text-subtle", children: obj7.formatTime(elapsed) };
+  const obj6 = { variant: "body-xs/normal", tabularNumbers: true, color: "text-subtle", children: obj7.formatTime(elapsed) };
   const Text = Text_Text.Text;
   obj7 = useActivityTimer;
   items2 = [React3(Text, obj6), ];
-  const obj8 = { variant: "text-xs/normal", tabularNumbers: true, color: "text-subtle", children: obj9.formatTime(duration) };
+  const obj8 = { variant: "body-xs/normal", tabularNumbers: true, color: "text-subtle", children: obj9.formatTime(duration) };
   const Text2 = Text_Text.Text;
   obj9 = useActivityTimer;
   items2[1] = React3(Text2, obj8);

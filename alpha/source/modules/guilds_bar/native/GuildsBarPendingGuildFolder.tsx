@@ -1,14 +1,14 @@
-// Module ID: 18528
-// Function ID: 18529
+// Module ID: 18623
+// Function ID: 18624
 // Name: GuildsBarPendingGuildFolder
-// Dependencies: [19, 5172, 1072, 21, 18515, 13354, 504, 18508, 1652, 5383, 7022, 1113, 18514, 12495, 2]
+// Dependencies: [19, 5172, 1072, 21, 18610, 13437, 504, 18603, 1652, 5384, 7037, 1113, 18609, 12576, 2]
 
-// Module 18528 (GuildsBarPendingGuildFolder)
+// Module 18623 (GuildsBarPendingGuildFolder)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 13354 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18508 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 18515 */;
+import usePendingFolderGuildIdsDefault from "usePendingFolderGuildIds" /* 13437 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18603 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 18610 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ const memoResult = react.memo(function GuildsBarPendingGuildFolder(id) {
   let onAccessibilityAction;
   id = id.id;
   ({ expanded, childNodes } = id);
-  let obj = id(18515);
+  let obj = id(18610);
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: false });
   importDefault = usePendingFolderGuildIdsDefault();
   let obj2 = id(504);
@@ -77,9 +77,9 @@ const memoResult = react.memo(function GuildsBarPendingGuildFolder(id) {
   const tmp = id;
   if (expanded) {
     const obj5 = { folderId: id, totalItems: childNodes.length };
-    tmp8Result = tmp8(tmp(18514).GuildsBarGuildFolderBG, obj5);
+    tmp8Result = tmp8(tmp(18609).GuildsBarGuildFolderBG, obj5);
   }
-  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1113).t["scsU+l"])} sharedId={sharedValue} cutouts="HermesInternal" overState="a" preventClipping={2006} config={memo1} externalChildren={tmp8Result}>{true}</tmp9>;
+  return <tmp9 id={"" + id} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} selected={stateFromStores} unread={false} circle={false} styles={guildsBarAnimatedWrapperStyles} label={intl.string(id(1113).t["scsU+l"])} sharedId={sharedValue} cutouts="HermesInternal" overState="a" preventClipping="body-md/medium" config={memo1} externalChildren={tmp8Result}>{"body-xs/semibold"}</tmp9>;
 });
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx");
 

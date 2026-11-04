@@ -1,25 +1,25 @@
-// Module ID: 7569
-// Function ID: 7570
+// Module ID: 7585
+// Function ID: 7586
 // Name: GuildSubscriptionsStore
-// Dependencies: [32, 5361, 5074, 6691, 502, 7570, 6982, 4990, 6894, 5053, 5012, 5884, 5083, 5044, 5172, 1072, 7571, 572, 12, 5015, 504, 2]
+// Dependencies: [32, 5362, 5074, 6706, 502, 7586, 6997, 4990, 6909, 5053, 5012, 5898, 5083, 5044, 5172, 1072, 7587, 572, 12, 5015, 504, 2]
 
-// Module 7569 (GuildSubscriptionsStore)
+// Module 7585 (GuildSubscriptionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FavoritesUtils from "FavoritesUtils" /* 5015 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7570 */;
-import GuildSubscriptionsDefault from "GuildSubscriptions" /* 7571 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7586 */;
+import GuildSubscriptionsDefault from "GuildSubscriptions" /* 7587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5361 */;
+import ExperimentStore from "ExperimentStore" /* 5362 */;
 import LurkingStore from "LurkingStore" /* 5074 */;
-import SpotifyStore from "SpotifyStore" /* 6691 */;
+import SpotifyStore from "SpotifyStore" /* 6706 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6982 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6997 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6894 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6909 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;

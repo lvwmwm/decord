@@ -1,24 +1,24 @@
-// Module ID: 19368
-// Function ID: 19369
+// Module ID: 19472
+// Function ID: 19473
 // Name: VoicePanelDockIdentity
-// Dependencies: [19, 17, 4990, 5012, 5083, 1385, 11378, 21, 5141, 575, 19369, 11359, 504, 7083, 1187, 7395, 5772, 8794, 8797, 5747, 2]
+// Dependencies: [19, 17, 4990, 5012, 5083, 1385, 11428, 21, 5141, 575, 19473, 11409, 504, 7098, 1187, 7411, 5786, 8811, 8814, 5761, 2]
 
-// Module 19368 (VoicePanelDockIdentity)
+// Module 19472 (VoicePanelDockIdentity)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
 import native2 from "native" /* 1187 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 7395 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11359 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19369 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 7411 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11409 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19473 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11378 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11428 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let c9;
 let size;
 let size1;
 let tmp2;
-const GuildIconDefault = tmp2(7083);
+const GuildIconDefault = tmp2(7098);
 function DockChannelIcon() {
   let Avatar;
   let items2;
@@ -131,15 +131,15 @@ const memoResult = react.memo(function VoicePanelDockIdentity() {
   items3 = [closure_9(DockChannelIcon, {}), ];
   const obj4 = { style: tmp.titleRow, children: items4 };
   if (stateFromStores) {
-    VoiceNormalIcon = tmp4(8794).VoiceLockIcon;
+    VoiceNormalIcon = tmp4(8811).VoiceLockIcon;
   } else {
-    VoiceNormalIcon = tmp4(8797).VoiceNormalIcon;
+    VoiceNormalIcon = tmp4(8814).VoiceNormalIcon;
   }
   items4 = [, ];
   const obj5 = { size: "sm", color: nativeDefault.colors.ICON_DEFAULT };
   items4[0] = closure_9(VoiceNormalIcon, obj5);
-  const obj6 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, style: tmp.title, children: stateFromStores1 };
-  items4[1] = closure_9(channelId(5747).Text, obj6);
+  const obj6 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, style: tmp.title, children: stateFromStores1 };
+  items4[1] = closure_9(channelId(5761).Text, obj6);
   items3[1] = closure_10(View, obj4);
   return closure_10(View, obj3);
 });

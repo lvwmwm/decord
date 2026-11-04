@@ -1,23 +1,23 @@
-// Module ID: 9325
-// Function ID: 9326
+// Module ID: 9342
+// Function ID: 9343
 // Name: InstantInviteFriendsList
-// Dependencies: [19, 1072, 21, 5141, 6843, 575, 1187, 1113, 7106, 5381, 5322, 5747, 9326, 5730, 7414, 2]
+// Dependencies: [19, 1072, 21, 5141, 6858, 575, 1187, 1113, 7121, 5382, 5323, 5761, 9343, 5743, 7430, 2]
 // Exports: default
 
-// Module 9325 (InstantInviteFriendsList)
+// Module 9342 (InstantInviteFriendsList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import InstantInviteRowDefault from "InstantInviteRow" /* 9326 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import InstantInviteRowDefault from "InstantInviteRow" /* 9343 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import TextStyles_mod from "TextStyles" /* 6843 */;
+import TextStyles_mod from "TextStyles" /* 6858 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -62,7 +62,7 @@ function FriendsEmptyComponent() {
   };
   const PressableOpacity = Pressables.PressableOpacity;
   intl3 = intl5.intl;
-  obj7 = { style: tmp.goToFriendsLink, variant: "text-sm/semibold", color: "text-link", children: intl4.string(intl5.t.a7FVbE) };
+  obj7 = { style: tmp.goToFriendsLink, variant: "body-sm/semibold", color: "text-link", children: intl4.string(intl5.t.a7FVbE) };
   Text = Text_Text.Text;
   intl4 = intl5.intl;
   items[1] = React3(PressableOpacity, obj4);

@@ -1,11 +1,11 @@
-// Module ID: 11954
-// Function ID: 11955
+// Module ID: 12013
+// Function ID: 12014
 // Name: WebViewWindowProxySocketFactory
-// Dependencies: [11955, 11942, 2]
+// Dependencies: [12014, 12001, 2]
 // Exports: default
 
-// Module 11954 (WebViewWindowProxySocketFactory)
-import stripSensitiveLoggingDataDefault from "stripSensitiveLoggingData" /* 11942 */;
+// Module 12013 (WebViewWindowProxySocketFactory)
+import stripSensitiveLoggingDataDefault from "stripSensitiveLoggingData" /* 12001 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/native/server/transports/WebViewWindowProxySocketFactory.tsx");
@@ -16,6 +16,7 @@ export default function _default(logger) {
   let postClose;
   let postMessageToRPCClient;
   let source;
+  let version;
   logger = logger.logger;
   ({ source, context, postMessageToRPCClient, version, encoding, postClose } = logger);
   const obj = {
@@ -32,6 +33,6 @@ export default function _default(logger) {
       info(combined, stripSensitiveLoggingDataDefault(arg0));
     }
   };
-  const tmp = new logger(11955)(obj);
+  const tmp = new logger(12014)(obj);
   return tmp;
 };

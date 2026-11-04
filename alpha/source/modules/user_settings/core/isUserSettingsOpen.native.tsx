@@ -1,18 +1,18 @@
-// Module ID: 15795
-// Function ID: 15796
+// Module ID: 15883
+// Function ID: 15884
 // Name: isUserSettingsOpen
-// Dependencies: [32, 19, 5322, 2]
+// Dependencies: [32, 19, 5323, 2]
 // Exports: useIsUserSettingsOpen
 
-// Module 15795 (isUserSettingsOpen)
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
+// Module 15883 (isUserSettingsOpen)
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f108730 = (name) => {
+const f109447 = (name) => {
   let tmp = "settings" === name.name;
   if (!tmp) {
     const state = name.state;
@@ -23,7 +23,7 @@ const f108730 = (name) => {
     let someResult = null != routes1;
     if (someResult) {
       const routes = state.routes;
-      someResult = routes.some(f108730);
+      someResult = routes.some(f109447);
     }
     tmp = someResult;
   }
@@ -43,7 +43,7 @@ function isUserSettingsOpen() {
     let someResult = null != routes1;
     if (someResult) {
       const routes = rootState.routes;
-      someResult = routes.some(f108730);
+      someResult = routes.some(f109447);
     }
     tmp2 = someResult;
   }
@@ -68,7 +68,7 @@ export function useIsUserSettingsOpen() {
         let someResult = null != routes1;
         if (someResult) {
           let routes = rootState.routes;
-          someResult = routes.some(f108730);
+          someResult = routes.some(f109447);
         }
         require(someResult);
       }

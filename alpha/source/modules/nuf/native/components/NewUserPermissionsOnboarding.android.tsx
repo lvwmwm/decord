@@ -1,14 +1,14 @@
-// Module ID: 14390
-// Function ID: 14391
+// Module ID: 14470
+// Function ID: 14471
 // Name: NewUserPermissionsOnboarding
-// Dependencies: [19, 17, 21, 5141, 5709, 575, 5747, 5754, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 5722, 575, 5761, 5768, 1113, 2]
 // Exports: default
 
-// Module 14390 (NewUserPermissionsOnboarding)
+// Module 14470 (NewUserPermissionsOnboarding)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -105,20 +105,20 @@ export default function NewUserPermissionsOnboarding(arg0) {
   items4 = [headerInsideCard, , , , ];
   const obj7 = { style: tmp.alertTitle, variant: "heading-lg/semibold", color: "text-default", children: title };
   items4[1] = React3(Text_Text.Text, obj7);
-  const obj8 = { style: tmp.alertSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
+  const obj8 = { style: tmp.alertSubtitle, variant: "body-sm/medium", color: "text-default", children: subtitle };
   items4[2] = React3(Text_Text.Text, obj8);
   const items5 = [tmp.buttonWrapper, ];
   const tmp12 = showSkip && tmp.primaryButtonContainer;
   items5[1] = tmp12;
   const obj9 = { style: items5, children: React3(Button, obj10) };
   obj10 = { variant: "primary", size: "md", text: intl.string(intl3.t["2nYlT2"]), onPress: onAllow, loading, grow: true };
-  Button = tmp10(5754).Button;
+  Button = tmp10(5768).Button;
   intl = tmp10(1113).intl;
   items4[3] = React3(React2, obj9);
   if (showSkip) {
     const obj11 = { style: tmp.buttonWrapper, children: React3(Button2, obj12) };
     obj12 = { variant: "secondary", text: intl2.string(intl3.t["5Wxrcd"]), onPress: onDontAllow, grow: true };
-    Button2 = tmp10(5754).Button;
+    Button2 = tmp10(5768).Button;
     intl2 = tmp10(1113).intl;
     showSkip = tmp4(tmp5, obj11);
   }

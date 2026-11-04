@@ -1,16 +1,16 @@
-// Module ID: 11277
-// Function ID: 11278
+// Module ID: 11327
+// Function ID: 11328
 // Name: AvailableForumTag
-// Dependencies: [19, 6916, 1388, 21, 5141, 575, 504, 10653, 9120, 7420, 1411, 5747, 2]
+// Dependencies: [19, 6931, 1388, 21, 5141, 575, 504, 10701, 9137, 7436, 1411, 5761, 2]
 // Exports: default
 
-// Module 11277 (AvailableForumTag)
+// Module 11327 (AvailableForumTag)
 import nativeDefault from "native" /* 575 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import EmojiDefault from "Emoji" /* 7420 */;
-import native from "native" /* 9120 */;
+import EmojiDefault from "Emoji" /* 7436 */;
+import native from "native" /* 9137 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const Text_Text = tmp3(5747);
+const Text_Text = tmp3(5761);
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -116,7 +116,7 @@ export default function AvailableForumTag(tag) {
         tmp9Result = tmp9(tmp11, obj4);
       }
       items = [tmp9Result, ];
-      const obj10 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      const obj10 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children };
       items[1] = metroRequire(Text_Text.Text, obj10);
       return tmp2(PressableScale, obj);
     }

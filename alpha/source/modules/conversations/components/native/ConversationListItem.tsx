@@ -1,20 +1,20 @@
-// Module ID: 10011
-// Function ID: 10012
+// Module ID: 10059
+// Function ID: 10060
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7891, 5775, 1072, 21, 5141, 575, 1499, 504, 9980, 9998, 9983, 7103, 5747, 1113, 7164, 5710, 10012, 10013, 10015, 2]
+// Dependencies: [19, 17, 7907, 5789, 1072, 21, 5141, 575, 1499, 504, 10028, 10046, 10031, 7118, 5761, 1113, 7179, 5723, 10060, 10061, 10063, 2]
 
-// Module 10011 (ConversationListItem)
+// Module 10059 (ConversationListItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ConversationConstants from "ConversationConstants" /* 5775 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9980 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9983 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9998 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10013 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10015 */;
+import ConversationConstants from "ConversationConstants" /* 5789 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 10028 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10031 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 10046 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10061 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10063 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7891 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7907 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -80,9 +80,9 @@ function ConversationListItemBase(conversation) {
   const Card = conversation(stateFromStores[13]).Card;
   let tmp7 = closure_4;
   items4 = [, ];
-  const obj5 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp.title, children: conversation.title };
+  const obj5 = { variant: "body-md/semibold", color: "text-default", lineClamp: 1, style: tmp.title, children: conversation.title };
   items4[0] = closure_8(conversation(stateFromStores[14]).Text, obj5);
-  const obj6 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: tmp.timestamp, children: intl.formatToPlainString(conversation(stateFromStores[15]).t.poZZGL, obj7) };
+  const obj6 = { variant: "body-sm/medium", color: "text-muted", lineClamp: 1, style: tmp.timestamp, children: intl.formatToPlainString(conversation(stateFromStores[15]).t.poZZGL, obj7) };
   const Text = conversation(stateFromStores[14]).Text;
   intl = conversation(stateFromStores[15]).intl;
   obj7 = { count: conversation.messageCount };

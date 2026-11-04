@@ -1,21 +1,21 @@
-// Module ID: 11030
-// Function ID: 11031
+// Module ID: 11079
+// Function ID: 11080
 // Name: ConjurePreviewActionCreators
-// Dependencies: [5, 4994, 6964, 11031, 1072, 11032, 6965, 572, 11076, 11077, 1282, 2]
+// Dependencies: [5, 4994, 6979, 11080, 1072, 11081, 6980, 572, 11125, 11126, 1282, 2]
 // Exports: loadConjurePreviewDm, pauseConjurePreview, reloadConjureAppFrames, reloadConjureProjectFrames, resumeConjurePreview, selectConjureGameCapture, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, wakeConjurePreview
 
-// Module 11030 (ConjurePreviewActionCreators)
+// Module 11079 (ConjurePreviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11032 */;
-import leaveFrame from "leaveFrame" /* 11076 */;
-import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 11077 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11081 */;
+import leaveFrame from "leaveFrame" /* 11125 */;
+import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 11126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
-import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 11031 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 11080 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _loadConjurePreviewDm() {
@@ -41,9 +41,9 @@ let closure_4 = ChannelRecord.createChannelRecordFromServer;
 const Endpoints = Constants.Endpoints;
 const result = size.fileFinishedImporting("modules/conjure/preview/ConjurePreviewActionCreators.tsx");
 
-export function reloadConjureAppFrames(application_id) {
+export function reloadConjureAppFrames(applicationId) {
   obj = ConjurePlatformUtilsDefault;
-  obj.reloadAppFrames(application_id);
+  obj.reloadAppFrames(applicationId);
 }
 export function reloadConjureProjectFrames(projectId) {
   const project = ConjureProjectStore.getProject(projectId);
@@ -58,7 +58,7 @@ export function reloadConjureProjectFrames(projectId) {
       if (prop == null) {
         prop = null;
       }
-      const tmp2Result = tmp2(11032);
+      const tmp2Result = tmp2(11081);
       tmp2Result.reloadAppFrames(prop);
     }
   }

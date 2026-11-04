@@ -1,17 +1,17 @@
-// Module ID: 17633
-// Function ID: 17634
+// Module ID: 17729
+// Function ID: 17730
 // Name: AndroidNotificationVibrationsSetting
-// Dependencies: [17619, 8556, 1377, 17621, 1113, 11677, 16423, 17625, 2]
+// Dependencies: [17709, 8573, 1377, 17711, 1113, 11728, 16515, 17715, 2]
 
-// Module 17633 (AndroidNotificationVibrationsSetting)
+// Module 17729 (AndroidNotificationVibrationsSetting)
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16423 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17621 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17625 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17619 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11677 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16515 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17711 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17715 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17709 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 let c2;

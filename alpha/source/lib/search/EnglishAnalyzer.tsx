@@ -1,13 +1,13 @@
-// Module ID: 18918
-// Function ID: 18919
+// Module ID: 19021
+// Function ID: 19022
 // Name: EnglishAnalyzer
-// Dependencies: [12, 18919, 18921, 2]
+// Dependencies: [12, 19022, 19024, 2]
 // Exports: analyze, createASTHighlighter
 
-// Module 18918 (EnglishAnalyzer)
+// Module 19021 (EnglishAnalyzer)
 import _modDef12 from "module_12" /* 12 */;
-import snowballStemmer from "snowballStemmer" /* 18919 */;
-import Search from "Search" /* 18921 */;
+import snowballStemmer from "snowballStemmer" /* 19022 */;
+import Search from "Search" /* 19024 */;
 import size from "module_2" /* 2 */;
 
 function stripPossessive(item10009) {
@@ -99,7 +99,7 @@ function createHighlightMatcher(str, flag) {
   if (flag === undefined) {
     flag = false;
   }
-  let tmp3 = str.length >= Search.SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH && str.length <= tmp(18921).SEARCH_PARTIAL_NAME_MATCH_MAX_QUERY_LENGTH;
+  let tmp3 = str.length >= Search.SEARCH_PARTIAL_NAME_MATCH_MIN_QUERY_LENGTH && str.length <= tmp(19024).SEARCH_PARTIAL_NAME_MATCH_MAX_QUERY_LENGTH;
   const obj = { words: new Set(iter.value()), supportPartialMatches: tmp3 };
   const tmp4 = _modDef12;
   const tmp4Result = tmp4(str.split(/\W+/));

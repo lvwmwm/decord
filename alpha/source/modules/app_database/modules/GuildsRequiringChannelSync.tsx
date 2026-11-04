@@ -1,9 +1,9 @@
-// Module ID: 7918
-// Function ID: 7919
+// Module ID: 7934
+// Function ID: 7935
 // Name: GuildsRequiringChannelSync
 // Dependencies: [4994, 502, 4990, 5053, 5047, 5012, 5073, 1072, 4997, 1083, 1084, 3, 5019, 5063, 1266, 1252, 1398, 2]
 
-// Module 7918 (GuildsRequiringChannelSync)
+// Module 7934 (GuildsRequiringChannelSync)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

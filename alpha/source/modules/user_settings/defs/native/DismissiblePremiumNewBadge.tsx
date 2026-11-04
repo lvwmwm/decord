@@ -1,18 +1,18 @@
-// Module ID: 16766
-// Function ID: 16767
+// Module ID: 16858
+// Function ID: 16859
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 7741, 21, 5141, 575, 10650, 1377, 1187, 5710, 1092, 2]
+// Dependencies: [19, 7757, 21, 5141, 575, 10698, 1377, 1187, 5723, 1092, 2]
 // Exports: default
 
-// Module 16766 (DismissiblePremiumNewBadge)
+// Module 16858 (DismissiblePremiumNewBadge)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import ColorConstants from "ColorConstants" /* 7741 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10650 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import ColorConstants from "ColorConstants" /* 7757 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10698 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -40,10 +40,10 @@ export default function DismissiblePremiumNewBadge(dismissibleContent) {
         let tmp6Result;
         let tmp3 = closure_5;
         if (null == closure_5) {
-          let str = "text-xs/semibold";
+          let str = "body-xs/semibold";
           const obj = PlatformUtils;
           if (obj.isAndroid()) {
-            str = "text-xxs/semibold";
+            str = "footnote/semibold";
           }
           tmp3 = str;
         }

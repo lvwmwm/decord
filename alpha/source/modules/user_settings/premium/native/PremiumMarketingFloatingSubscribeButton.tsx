@@ -1,18 +1,18 @@
-// Module ID: 15524
-// Function ID: 15525
+// Module ID: 15611
+// Function ID: 15612
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 5142, 1072, 21, 5141, 575, 1627, 504, 15522, 7471, 671, 1652, 5377, 5710, 10420, 2]
+// Dependencies: [19, 17, 5142, 1072, 21, 5141, 575, 1627, 504, 15609, 7487, 671, 1652, 5378, 5723, 10468, 2]
 // Exports: default
 
-// Module 15524 (PremiumMarketingFloatingSubscribeButton)
+// Module 15611 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10420 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 15522 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10468 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 15609 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,7 +72,7 @@ export default function PremiumMarketingFloatingSubscribeButton(style) {
   const items2 = [closure_10, , , , , ];
   const useAnimatedStyle = backgroundColor(1652).useAnimatedStyle;
   backgroundColor(1652);
-  items2[1] = backgroundColor(5377).withTiming;
+  items2[1] = backgroundColor(5378).withTiming;
   items2[2] = isVisible;
   items2[3] = stateFromStores;
   items2[4] = 150;
@@ -143,7 +143,7 @@ export default function PremiumMarketingFloatingSubscribeButton(style) {
   items6 = [tmp.container, animatedStyle];
   View = tmp2(1652).View;
   const obj3 = { pointerEvents: "none", style: tmp.gradient, colors: memo, locations: [0, 0.75, 1], start: VerticalGradient.START, end: VerticalGradient.END };
-  items7 = [closure_7(tmp2(5710), obj3), ];
+  items7 = [closure_7(tmp2(5723), obj3), ];
   const obj4 = { style: items8, children: closure_7(NitroUpsellButtonDefault, { onPress: openPayment, text: buttonText }) };
   items8 = [tmp.buttonContainer, { paddingBottom: Math.max(bottom, tmp2(575).space.PX_16) }, style];
   ({ paddingBottom: Math.max(bottom, nativeDefault.space.PX_16) });

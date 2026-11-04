@@ -1,11 +1,11 @@
-// Module ID: 18780
-// Function ID: 18781
+// Module ID: 18881
+// Function ID: 18882
 // Name: GuildRoleSubscriptionSettingsUtils
-// Dependencies: [5066, 6575, 2]
+// Dependencies: [5066, 6590, 2]
 // Exports: getCoverImageURI
 
-// Module 18780 (GuildRoleSubscriptionSettingsUtils)
-import StoreUtils from "StoreUtils" /* 6575 */;
+// Module 18881 (GuildRoleSubscriptionSettingsUtils)
+import StoreUtils from "StoreUtils" /* 6590 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5066 */;
 import size from "module_2" /* 2 */;
 

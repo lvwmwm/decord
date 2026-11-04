@@ -1,19 +1,19 @@
-// Module ID: 10745
-// Function ID: 10746
+// Module ID: 10793
+// Function ID: 10794
 // Name: GiftingBadgeInfoActionSheet
-// Dependencies: [19, 17, 5142, 8887, 1072, 21, 5141, 575, 1627, 504, 8879, 1252, 5395, 5747, 1113, 2763, 10746, 10749, 2]
+// Dependencies: [19, 17, 5142, 8904, 1072, 21, 5141, 575, 1627, 504, 8896, 1252, 5396, 5761, 1113, 2763, 10794, 10797, 2]
 // Exports: default
 
-// Module 10745 (GiftingBadgeInfoActionSheet)
+// Module 10793 (GiftingBadgeInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef2763 from "module_2763" /* 2763 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8887 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10746 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10749 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8904 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10794 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10797 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -87,7 +87,7 @@ export default function GiftingBadgeInfoActionSheet() {
   let Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items3 = [closure_9(Text, obj6), ];
-  let obj7 = { style: tmp.description, variant: "text-md/medium", color: "text-default", children: intl2.string(_modDef2763.k9sNVH) };
+  let obj7 = { style: tmp.description, variant: "body-md/medium", color: "text-default", children: intl2.string(_modDef2763.k9sNVH) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items3[1] = closure_9(Text2, obj7);
@@ -132,13 +132,13 @@ export default function GiftingBadgeInfoActionSheet() {
           tmp10 = React4(tmp6, obj3);
         }
         items = [tmp10, , ];
-        const obj5 = { variant: "text-lg/semibold", color: "text-strong", children: children.name };
+        const obj5 = { variant: "body-lg/semibold", color: "text-strong", children: children.name };
         items[1] = React4(Text_Text.Text, obj5);
         let tmp13Result = null != tmp4;
         const tmp13 = React4;
         if (tmp13Result) {
-          const obj6 = { variant: "text-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2763.qvx9E4, obj7) };
-          const Text = tmp8(5747).Text;
+          const obj6 = { variant: "body-md/normal", color: "text-subtle", children: intl.formatToPlainString(_modDef2763.qvx9E4, obj7) };
+          const Text = tmp8(5761).Text;
           intl = tmp8(1113).intl;
           obj7 = { count: tmp4 };
           tmp13Result = tmp13(Text, obj6);

@@ -1,23 +1,24 @@
-// Module ID: 17470
-// Function ID: 17471
+// Module ID: 17561
+// Function ID: 17562
 // Name: DisplayNameStylesEditScreen
-// Dependencies: [32, 19, 17, 5142, 1385, 1072, 1623, 21, 1404, 5141, 575, 1500, 6148, 1260, 17471, 504, 16630, 8861, 6559, 5376, 1405, 1402, 10905, 10906, 558, 5832, 1113, 17472, 17473, 17474, 16617, 1252, 5383, 8862, 8859, 5381, 17475, 2123, 17478, 17479, 17489, 17491, 16620, 5207, 6561, 17156, 3059, 5747, 1187, 7498, 1090, 16621, 5754, 9657, 10014, 1627, 1652, 5757, 2]
+// Dependencies: [32, 19, 17, 5142, 1385, 1403, 1072, 1623, 21, 1405, 5141, 575, 1500, 6163, 1260, 17562, 504, 16720, 8878, 6574, 5377, 1404, 1402, 10953, 10954, 558, 5846, 1113, 17563, 17564, 16707, 1252, 5384, 8879, 8876, 5382, 17565, 2123, 17568, 17569, 17579, 17581, 16710, 5207, 6576, 17248, 3059, 5761, 1187, 7514, 1090, 16711, 5768, 9676, 10062, 1627, 1652, 5771, 2]
 // Exports: default
 
-// Module 17470 (DisplayNameStylesEditScreen)
+// Module 17561 (DisplayNameStylesEditScreen)
 import shallowEqual from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1402 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1404 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1403 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1405 */;
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8859 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8862 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8876 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -29,7 +30,7 @@ import size from "module_2" /* 2 */;
 
 let navigation;
 
-let closure_12;
+let closure_14;
 let hasOwnProperty;
 let map1;
 let metroImportDefault;
@@ -65,7 +66,7 @@ function ApplyButton(onPress) {
   items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const bottom = useSafeAreaInsetsDefault().bottom;
-  const items1 = [closure_17, visible];
+  const items1 = [closure_18, visible];
   let c0;
   [tmp5, tmp6] = items1;
   const obj2 = onPress(1652);
@@ -83,13 +84,13 @@ function ApplyButton(onPress) {
   DisplayNameStylesEditScreenTsx1.__workletHash = 11149120055604;
   DisplayNameStylesEditScreenTsx1.__initData = tmp5;
   const animatedProps = obj2.useAnimatedProps(DisplayNameStylesEditScreenTsx1);
-  const items3 = [closure_18, visible, , , , ];
+  const items3 = [closure_19, visible, , , , ];
   const useAnimatedStyle = tmp(1652).useAnimatedStyle;
   onPress(1652);
   items3[2] = nativeDefault;
   items3[3] = stateFromStores;
-  items3[4] = onPress(5757).withSpring;
-  items3[5] = closure_11;
+  items3[4] = onPress(5771).withSpring;
+  items3[5] = closure_12;
   c0 = undefined;
   let c1;
   let c2;
@@ -140,21 +141,22 @@ function ApplyButton(onPress) {
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     onPress();
   }, items5);
-  const obj3 = { style: animatedStyle, children: closure_12(View2, obj4) };
+  const obj3 = { style: animatedStyle, children: closure_13(View2, obj4) };
   const View = tmp4(1652).View;
-  obj4 = { style: { marginBottom: bottom }, animatedProps, children: closure_12(Button, obj5) };
+  obj4 = { style: { marginBottom: bottom }, animatedProps, children: closure_13(Button, obj5) };
   View2 = tmp4(1652).View;
   obj5 = { variant: "primary", onPress: callback, size: "lg", text: intl.string(onPress(1113).t["1Qm822"]), loading };
-  Button = tmp(5754).Button;
+  Button = tmp(5768).Button;
   intl = tmp(1113).intl;
-  return closure_12(View, obj3);
+  return closure_13(View, obj3);
 }
 ({ View: hasOwnProperty, ScrollView: metroRequire, Pressable: metroImportDefault } = react_native);
+const EFFECT_ORDER = DisplayNameStylesConstants.EFFECT_ORDER;
 const AnalyticEvents = Constants.AnalyticEvents;
-let closure_11 = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
-({ jsx: closure_12, jsxs: map1 } = Fragment);
+let closure_12 = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
+({ jsx: map1, jsxs: closure_14 } = Fragment);
 let items = [DisplayNameEffect.DisplayNameEffect.GRADIENT, DisplayNameEffect.DisplayNameEffect.GUMMY, DisplayNameEffect.DisplayNameEffect.PRISM];
-let value = { overrideSettings: true };
+let closure_16 = { overrideSettings: true };
 let createStyles = createStyles_mod;
 let obj = { container: obj2, contentContainer: obj3, fieldButtonGroup: obj4, fieldButton: obj5, fieldButtonBorder: obj6, fieldButtonLabel: obj7, fieldButtonChevron: obj8, fieldButtonTrailing: obj9, buttonContainer: obj10 };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -167,9 +169,9 @@ obj7 = { flex: 1, marginRight: nativeDefault.space.PX_12 };
 obj8 = { flexDirection: "row", gap: nativeDefault.space.PX_8, flexShrink: 0 };
 obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj10 = { marginVertical: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_MUTED, gap: nativeDefault.space.PX_16 };
-let closure_16 = createStyles(obj);
-let closure_17 = { code: "(function DisplayNameStylesEditScreenTsx1(){let[visible]=this.__closure;return{pointerEvents:visible?'box-none':'none'};})" };
-let closure_18 = { code: "(function DisplayNameStylesEditScreenTsx2(){let[visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING]=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};})" };
+let closure_17 = createStyles(obj);
+let closure_18 = { code: "(function DisplayNameStylesEditScreenTsx1(){let[visible]=this.__closure;return{pointerEvents:visible?'box-none':'none'};})" };
+let closure_19 = { code: "(function DisplayNameStylesEditScreenTsx2(){let[visible,tokens,reducedMotion,withSpring,MEDIA_PICKER_SEND_BUTTON_SPRING]=this.__closure;const targetOpacity=visible?1:0;const targetTranslateY=visible?0:60;const targetScale=visible?1:0.9;return{position:'absolute',bottom:0,left:0,right:0,marginHorizontal:tokens.space.PX_16,flexDirection:'column',justifyContent:'flex-end',transform:[{translateY:reducedMotion?targetTranslateY:withSpring(targetTranslateY,MEDIA_PICKER_SEND_BUTTON_SPRING)},{scale:reducedMotion?targetScale:withSpring(targetScale,MEDIA_PICKER_SEND_BUTTON_SPRING)}],opacity:reducedMotion?targetOpacity:withSpring(targetOpacity,MEDIA_PICKER_SEND_BUTTON_SPRING)};})" };
 let result = size.fileFinishedImporting("modules/display_name_styles/native/DisplayNameStylesEditScreen.tsx");
 
 export default function DisplayNameStylesEditScreen() {
@@ -177,7 +179,6 @@ export default function DisplayNameStylesEditScreen() {
   let combined;
   let combined1;
   let first2;
-  let first4;
   let guildDisplayNameStyles;
   let handleApply;
   let intl10;
@@ -209,17 +210,16 @@ export default function DisplayNameStylesEditScreen() {
   let obj4;
   let obj8;
   let obj9;
-  let onSelectColor;
   let onSelectEffect;
   let pendingDisplayNameStyles;
   let tmp14;
   let tryItOutDisplayNameStyles;
-  let tmp = first4();
+  let tmp = closure_17();
   const tmp2 = navigation;
   const tmp3 = isTryItOut;
-  let obj = navigation(isTryItOut[11]);
+  let obj = navigation(isTryItOut[12]);
   const route = obj.useRoute();
-  let obj2 = navigation(isTryItOut[11]);
+  let obj2 = navigation(isTryItOut[12]);
   navigation = obj2.useNavigation();
   let params = route.params;
   if (params == null) {
@@ -227,20 +227,20 @@ export default function DisplayNameStylesEditScreen() {
   }
   const guildId = params.guildId;
   isTryItOut = params.isTryItOut;
-  let obj3 = { type: tmp2(tmp3[13]).ImpressionTypes.POPOUT, name: tmp2(tmp3[13]).ImpressionNames.DISPLAY_NAME_STYLES_MODAL, properties: obj4 };
-  const tmp7 = guildId(tmp3[12]);
-  obj4 = { entry_point: tmp2(tmp3[14]).DisplayNameStylesEntryPoints.PROFILE_EDITOR };
+  let obj3 = { type: tmp2(tmp3[14]).ImpressionTypes.POPOUT, name: tmp2(tmp3[14]).ImpressionNames.DISPLAY_NAME_STYLES_MODAL, properties: obj4 };
+  const tmp7 = guildId(tmp3[13]);
+  obj4 = { entry_point: tmp2(tmp3[15]).DisplayNameStylesEntryPoints.PROFILE_EDITOR };
   tmp7(obj3, { trackOnInitialLoad: true });
-  let tmp2Result = tmp2(tmp3[15]);
+  let tmp2Result = tmp2(tmp3[16]);
   items = [onSelectEffect];
   const stateFromStores = tmp2Result.useStateFromStores(items, () => onSelectEffect.getCurrentUser());
-  const tmp2Result12 = tmp2(tmp3[16]);
-  const displayNameStylesPendingName = tmp2Result12.useDisplayNameStylesPendingName(stateFromStores, guildId);
-  const tmp2Result13 = tmp2(tmp3[17]);
-  const guildMemberOrUserPendingDisplayNameStyles = tmp2Result13.useGuildMemberOrUserPendingDisplayNameStyles(stateFromStores, guildId);
+  const tmp2Result11 = tmp2(tmp3[17]);
+  const displayNameStylesPendingName = tmp2Result11.useDisplayNameStylesPendingName(stateFromStores, guildId);
+  const tmp2Result12 = tmp2(tmp3[18]);
+  const guildMemberOrUserPendingDisplayNameStyles = tmp2Result12.useGuildMemberOrUserPendingDisplayNameStyles(stateFromStores, guildId);
   ({ pendingDisplayNameStyles, guildDisplayNameStyles, tryItOutDisplayNameStyles } = guildMemberOrUserPendingDisplayNameStyles);
   let id;
-  const tmp12 = guildId(tmp3[18]);
+  const tmp12 = guildId(tmp3[19]);
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
@@ -253,12 +253,12 @@ export default function DisplayNameStylesEditScreen() {
   let closure_5 = tmp12Result;
   let fontId;
   const useState = displayNameStylesPendingName.useState;
-  const tmp16 = guildId(tmp3[19])();
+  const tmp16 = guildId(tmp3[20])();
   if (tmp12Result != null) {
     fontId = tmp12Result.fontId;
   }
   if (fontId == null) {
-    fontId = tmp2(tmp3[20]).DisplayNameFont.DEFAULT;
+    fontId = tmp2(tmp3[21]).DisplayNameFont.DEFAULT;
   }
   const tmp19 = stateFromStores(useState(fontId), 2);
   const selectedFontId = tmp19[0];
@@ -269,17 +269,17 @@ export default function DisplayNameStylesEditScreen() {
     effectId = tmp12Result.effectId;
   }
   if (effectId == null) {
-    effectId = tmp2(tmp3[8]).DisplayNameEffect.SOLID;
+    effectId = tmp2(tmp3[9]).DisplayNameEffect.SOLID;
   }
   const tmp18Result = stateFromStores(useState2(effectId), 2);
   const first1 = tmp18Result[0];
   onSelectEffect = tmp18Result[1];
-  const tmp2Result14 = tmp2(tmp3[21]);
-  const tmp24 = tmp2Result14.getEffectColorCount(first1) > 1;
+  const tmp2Result13 = tmp2(tmp3[22]);
+  const tmp24 = tmp2Result13.getEffectColorCount(first1) > 1;
   let closure_10 = tmp24;
-  const tmp2Result15 = tmp2(tmp3[22]);
-  const displayNameStylesEffectConfig = tmp2Result15.useDisplayNameStylesEffectConfig(first1);
-  let closure_12 = tmp6(tmp3[23])();
+  const tmp2Result14 = tmp2(tmp3[23]);
+  const displayNameStylesEffectConfig = tmp2Result14.useDisplayNameStylesEffectConfig(first1);
+  closure_12 = tmp6(tmp3[24])();
   let colors;
   if (tmp12Result != null) {
     colors = tmp12Result.colors;
@@ -296,7 +296,7 @@ export default function DisplayNameStylesEditScreen() {
   }
   const tmp18Result3 = stateFromStores(useState3(first2), 2);
   const first3 = tmp18Result3[0];
-  value = tmp30;
+  const onSelectColor = tmp30;
   const tmp18Result4 = stateFromStores(displayNameStylesPendingName.useState(() => {
     let length;
     return Object.fromEntries(items.map((item) => {
@@ -309,7 +309,7 @@ export default function DisplayNameStylesEditScreen() {
       return items;
     }));
   }), 2);
-  first4 = tmp18Result4[0];
+  const first4 = tmp18Result4[0];
   closure_17 = tmp18Result4[1];
   const callback = obj10.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
@@ -368,16 +368,16 @@ export default function DisplayNameStylesEditScreen() {
   }, items2);
   const callback1 = obj10.useCallback(() => {
     let intl;
-    const obj = { text: intl.string(navigation(isTryItOut[26]).t.F8FvUy) };
-    const open = guildId(isTryItOut[25]).open;
-    guildId(isTryItOut[25]);
-    intl = navigation(isTryItOut[26]).intl;
+    const obj = { text: intl.string(navigation(isTryItOut[27]).t.F8FvUy) };
+    const open = guildId(isTryItOut[26]).open;
+    guildId(isTryItOut[26]);
+    intl = navigation(isTryItOut[27]).intl;
     open("HEXAGON_CAMPAIGN_ENROLLMENT_ERROR", obj);
   }, []);
-  const tmp2Result16 = tmp2(tmp3[14]);
+  const tmp2Result15 = tmp2(tmp3[15]);
   const obj6 = {
     hasChanges: memo1,
-    entryPoint: tmp2(tmp3[14]).DisplayNameStylesEntryPoints.PROFILE_EDITOR,
+    entryPoint: tmp2(tmp3[15]).DisplayNameStylesEntryPoints.PROFILE_EDITOR,
     selectedFontId,
     selectedEffectId: first1,
     selectedColors: memo,
@@ -392,32 +392,30 @@ export default function DisplayNameStylesEditScreen() {
     },
     onEnrollmentError: callback1
   };
-  const displayNameStylesHandleApply = tmp2Result16.useDisplayNameStylesHandleApply(obj6);
+  const displayNameStylesHandleApply = tmp2Result15.useDisplayNameStylesHandleApply(obj6);
   ({ handleApply, isApplying } = displayNameStylesHandleApply);
-  const tmp2Result17 = tmp2(tmp3[27]);
-  const visibleFontOrder = tmp2Result17.useVisibleFontOrder({ includeCampaignFonts: true });
-  const tmp2Result18 = tmp2(tmp3[28]);
-  const visibleEffectOrder = tmp2Result18.useVisibleEffectOrder();
-  const tmp2Result19 = tmp2(tmp3[29]);
-  const displayNameStylesNewFontsBadge = tmp2Result19.useDisplayNameStylesNewFontsBadge(visibleFontOrder);
+  const tmp2Result16 = tmp2(tmp3[28]);
+  const visibleFontOrder = tmp2Result16.useVisibleFontOrder({ includeCampaignFonts: true });
+  const tmp2Result17 = tmp2(tmp3[29]);
+  const displayNameStylesNewFontsBadge = tmp2Result17.useDisplayNameStylesNewFontsBadge(visibleFontOrder);
   const showFontsBadge = displayNameStylesNewFontsBadge.showFontsBadge;
   const dismissFontsBadge = displayNameStylesNewFontsBadge.dismissFontsBadge;
-  const tmp2Result20 = tmp2(tmp3[30]);
-  const hexagonCampaignNewFontBadge = tmp2Result20.useHexagonCampaignNewFontBadge("DisplayNameStylesEditScreen");
+  const tmp2Result18 = tmp2(tmp3[30]);
+  const hexagonCampaignNewFontBadge = tmp2Result18.useHexagonCampaignNewFontBadge("DisplayNameStylesEditScreen");
   const showCampaignFontBadge = hexagonCampaignNewFontBadge.showCampaignFontBadge;
   const dismissCampaignFontBadge = hexagonCampaignNewFontBadge.dismissCampaignFontBadge;
-  const tmp2Result21 = tmp2(tmp3[30]);
-  const markHexagonCampaignDisplayNameStylesVisited = tmp2Result21.useMarkHexagonCampaignDisplayNameStylesVisited("DisplayNameStylesEditScreen");
-  const tmp2Result22 = tmp2(tmp3[29]);
-  const displayNameStylesNewEffectsBadge = tmp2Result22.useDisplayNameStylesNewEffectsBadge(visibleEffectOrder);
+  const tmp2Result19 = tmp2(tmp3[30]);
+  const markHexagonCampaignDisplayNameStylesVisited = tmp2Result19.useMarkHexagonCampaignDisplayNameStylesVisited("DisplayNameStylesEditScreen");
+  const tmp2Result20 = tmp2(tmp3[29]);
+  const displayNameStylesNewEffectsBadge = tmp2Result20.useDisplayNameStylesNewEffectsBadge(closure_10);
   const showEffectsBadge = displayNameStylesNewEffectsBadge.showEffectsBadge;
   const dismissEffectsBadge = displayNameStylesNewEffectsBadge.dismissEffectsBadge;
-  const items3 = [callback, tmp18Result3[1], visibleFontOrder, visibleEffectOrder];
+  const items3 = [callback, tmp18Result3[1], visibleFontOrder];
   const items4 = [navigation, isTryItOut];
   const callback2 = obj10.useCallback(() => {
     let effectId;
     const obj = DisplayNameStylesUtils;
-    const randomDisplayNameStyles = obj.generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder);
+    const randomDisplayNameStyles = obj.generateRandomDisplayNameStyles(visibleFontOrder, EFFECT_ORDER);
     ({ effectId, colors } = randomDisplayNameStyles);
     onSelectFont(randomDisplayNameStyles.fontId);
     onSelectEffect(effectId);
@@ -468,7 +466,7 @@ export default function DisplayNameStylesEditScreen() {
     }
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { selectedFontId, onSelectFont, displayName: displayNameStylesPendingName, isTryItOut };
-    obj.openLazy(asyncRequire(17475, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17565, dependencyMap.paths), "DisplayNameStylesFontPickerSheet", obj2);
   }, items6);
   const useCallback = displayNameStylesPendingName.useCallback;
   if (stateFromStores != null) {
@@ -486,7 +484,7 @@ export default function DisplayNameStylesEditScreen() {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let id;
     ActionSheetActionCreatorsDefault;
-    const tmp5 = asyncRequire(17478, dependencyMap.paths);
+    const tmp5 = asyncRequire(17568, dependencyMap.paths);
     if (stateFromStores != null) {
       id = stateFromStores.id;
     }
@@ -498,11 +496,11 @@ export default function DisplayNameStylesEditScreen() {
       const obj2 = {
         selectedColors: memo,
         onSelectColors(arg0) {
-            return callback(navigation(isTryItOut[8]).DisplayNameEffect.GUMMY, arg0);
+            return callback(navigation(isTryItOut[9]).DisplayNameEffect.GUMMY, arg0);
           }
       };
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(17479, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
+      obj3.openLazy(asyncRequire(17569, dependencyMap.paths), "DisplayNameStylesGummyColorPickerSheet", obj2);
     } else {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
@@ -515,146 +513,146 @@ export default function DisplayNameStylesEditScreen() {
                 return callback(first1, arg0);
               }
         };
-        openLazy(tmp2Result(17489, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
+        openLazy(tmp2Result(17579, dependencyMap.paths), "DisplayNameStylesGradientPickerSheet", obj4);
       } else {
         const obj = { selectedColor: first3, selectedEffectId: first1, onSelectColor };
-        openLazy(tmp2Result(17491, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
+        openLazy(tmp2Result(17581, dependencyMap.paths), "DisplayNameStylesColorPickerSheet", obj);
       }
     }
   }, items8);
-  let intl = tmp2(tmp3[26]).intl;
+  let intl = tmp2(tmp3[27]).intl;
   const stringResult = intl.string(guildId(tmp3[42])(selectedFontId));
-  let tmp53Result5 = null;
+  let tmp52Result5 = null;
   if (null != stateFromStores) {
-    let tmp53Result3;
-    let tmp55Result2;
-    const obj7 = { theme: tmp16, children: closure_12(Provider, obj8) };
+    let tmp52Result3;
+    let tmp54Result2;
+    const obj7 = { theme: tmp16, children: colors(Provider, obj8) };
     const ThemeContextProvider = tmp2(tmp3[43]).ThemeContextProvider;
-    obj8 = { value, children: colors(closure_5, obj9) };
+    obj8 = { value: first4, children: first3(closure_5, obj9) };
     const obj11 = { paddingBottom: num };
     obj9 = { style: tmp.container, children: items23 };
     Provider = tmp2(tmp3[44]).DisplayNameStylesContext.Provider;
     let merged = Object.assign(tmp.contentContainer);
     num = 0;
-    const tmp57 = selectedFontId;
+    const tmp56 = selectedFontId;
     if (memo1) {
       num = 70;
     }
     const obj12 = { contentContainerStyle: obj11, children: items9 };
     const obj13 = { user: stateFromStores, displayName: displayNameStylesPendingName, guildId, selectedFontId, selectedEffectId: first1, selectedColors: memo, isTryItOut };
-    items9 = [closure_12(tmp6(tmp3[45]), obj13), , ];
+    items9 = [colors(tmp6(tmp3[45]), obj13), , ];
     const obj14 = { style: tmp.fieldButtonGroup, children: items13 };
     const obj15 = { onPress: callback5, style: tmp.fieldButton, accessibilityRole: "button", accessibilityLabel: combined, children: items11 };
-    const intl2 = tmp2(tmp3[26]).intl;
+    const intl2 = tmp2(tmp3[27]).intl;
     const stringResult1 = intl2.string(guildId(tmp3[46])["0JCuGm"]);
     if (showFontsBadge || showCampaignFontBadge) {
-      const intl3 = tmp2(tmp3[26]).intl;
+      const intl3 = tmp2(tmp3[27]).intl;
       const _HermesInternal2 = HermesInternal;
-      combined = "" + stringResult1 + ", " + stringResult + ", " + intl3.string(tmp2(tmp3[26]).t.y2b7CA);
+      combined = "" + stringResult1 + ", " + stringResult + ", " + intl3.string(tmp2(tmp3[27]).t.y2b7CA);
     } else {
       const _HermesInternal = HermesInternal;
       combined = "" + stringResult1 + ", " + stringResult;
     }
     const obj16 = { children: items10 };
-    const obj17 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl4.string(guildId(tmp3[46])["0JCuGm"]) };
+    const obj17 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl4.string(guildId(tmp3[46])["0JCuGm"]) };
     const Text = tmp2(tmp3[47]).Text;
-    intl4 = tmp2(tmp3[26]).intl;
-    items10 = [closure_12(Text, obj17), ];
-    const obj18 = { variant: "text-md/normal", color: "text-subtle", children: stringResult };
-    items10[1] = closure_12(tmp2(tmp3[47]).Text, obj18);
-    items11 = [colors(closure_5, obj16), ];
+    intl4 = tmp2(tmp3[27]).intl;
+    items10 = [colors(Text, obj17), ];
+    const obj18 = { variant: "body-md/normal", color: "text-subtle", children: stringResult };
+    items10[1] = colors(tmp2(tmp3[47]).Text, obj18);
+    items11 = [first3(closure_5, obj16), ];
     if (showFontsBadge || showCampaignFontBadge) {
       const obj19 = { style: tmp.fieldButtonTrailing, children: items12 };
-      items12 = [closure_12(tmp2(tmp3[48]).NewTag, {}), closure_12(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" })];
-      tmp53Result3 = tmp55(tmp56, obj19);
+      items12 = [colors(tmp2(tmp3[48]).NewTag, {}), colors(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" })];
+      tmp52Result3 = tmp54(tmp55, obj19);
     } else {
-      tmp53Result3 = tmp53(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" });
+      tmp52Result3 = tmp52(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" });
     }
-    items11[1] = tmp53Result3;
-    items13 = [colors(onSelectFont, obj15), , ];
+    items11[1] = tmp52Result3;
+    items13 = [first3(onSelectFont, obj15), , ];
     const obj20 = { onPress: callback6, style: items14, accessibilityRole: "button", accessibilityLabel: combined1, children: items16 };
     items14 = [, ];
     ({ fieldButton: arr17[0], fieldButtonBorder: arr17[1] } = tmp);
-    const intl5 = tmp2(tmp3[26]).intl;
+    const intl5 = tmp2(tmp3[27]).intl;
     const stringResult2 = intl5.string(guildId(tmp3[46]).RVtMxT);
     const name = displayNameStylesEffectConfig.name;
     if (showEffectsBadge) {
-      const intl6 = tmp2(tmp3[26]).intl;
+      const intl6 = tmp2(tmp3[27]).intl;
       const _HermesInternal4 = HermesInternal;
-      combined1 = "" + stringResult2 + ", " + name + ", " + intl6.string(tmp2(tmp3[26]).t.y2b7CA);
+      combined1 = "" + stringResult2 + ", " + name + ", " + intl6.string(tmp2(tmp3[27]).t.y2b7CA);
     } else {
       const _HermesInternal3 = HermesInternal;
       combined1 = "" + stringResult2 + ", " + name;
     }
     const obj21 = { children: items15 };
-    const obj22 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl7.string(guildId(tmp3[46]).RVtMxT) };
+    const obj22 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl7.string(guildId(tmp3[46]).RVtMxT) };
     const Text2 = tmp2(tmp3[47]).Text;
-    intl7 = tmp2(tmp3[26]).intl;
-    items15 = [closure_12(Text2, obj22), ];
-    const obj23 = { variant: "text-md/normal", color: "text-subtle", children: displayNameStylesEffectConfig.name };
-    items15[1] = closure_12(tmp2(tmp3[47]).Text, obj23);
-    items16 = [colors(closure_5, obj21), ];
+    intl7 = tmp2(tmp3[27]).intl;
+    items15 = [colors(Text2, obj22), ];
+    const obj23 = { variant: "body-md/normal", color: "text-subtle", children: displayNameStylesEffectConfig.name };
+    items15[1] = colors(tmp2(tmp3[47]).Text, obj23);
+    items16 = [first3(closure_5, obj21), ];
     if (showEffectsBadge) {
       const obj24 = { style: tmp.fieldButtonTrailing, children: items17 };
-      items17 = [closure_12(tmp2(tmp3[48]).NewTag, {}), closure_12(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" })];
-      tmp55Result2 = tmp55(tmp56, obj24);
+      items17 = [colors(tmp2(tmp3[48]).NewTag, {}), colors(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" })];
+      tmp54Result2 = tmp54(tmp55, obj24);
     } else {
-      tmp55Result2 = tmp53(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" });
+      tmp54Result2 = tmp52(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" });
     }
-    items16[1] = tmp55Result2;
-    items13[1] = colors(onSelectFont, obj20);
+    items16[1] = tmp54Result2;
+    items13[1] = first3(onSelectFont, obj20);
     const obj25 = { onPress: callback7, style: items18, accessibilityRole: "button", accessibilityLabel: intl8.string(guildId(tmp3[46])["6OxgN7"]), children: items20 };
     items18 = [, ];
     ({ fieldButton: arr21[0], fieldButtonBorder: arr21[1] } = tmp);
-    intl8 = tmp2(tmp3[26]).intl;
+    intl8 = tmp2(tmp3[27]).intl;
     const obj26 = { style: tmp.fieldButtonLabel, children: items19 };
-    const obj27 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl9.string(guildId(tmp3[46])["6OxgN7"]) };
+    const obj27 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl9.string(guildId(tmp3[46])["6OxgN7"]) };
     const Text3 = tmp2(tmp3[47]).Text;
-    intl9 = tmp2(tmp3[26]).intl;
-    items19 = [closure_12(Text3, obj27), ];
-    const obj28 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: mapped.join(", ") };
+    intl9 = tmp2(tmp3[27]).intl;
+    items19 = [colors(Text3, obj27), ];
+    const obj28 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 1, children: mapped.join(", ") };
     const Text4 = tmp2(tmp3[47]).Text;
     mapped = memo.map((item) => {
       const obj = navigation(isTryItOut[50]);
       return obj.int2hex(item);
     });
-    items19[1] = closure_12(Text4, obj28);
-    items20 = [colors(closure_5, obj26), ];
+    items19[1] = colors(Text4, obj28);
+    items20 = [first3(closure_5, obj26), ];
     const obj29 = { style: tmp.fieldButtonChevron, children: items21 };
     const obj30 = { colors: memo, effectId: first1 };
-    items21 = [closure_12(tmp6(tmp3[51]), obj30), closure_12(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" })];
-    items20[1] = colors(closure_5, obj29);
-    items13[2] = colors(onSelectFont, obj25);
-    items9[1] = colors(closure_5, obj14);
+    items21 = [colors(tmp6(tmp3[51]), obj30), colors(tmp2(tmp3[49]).ChevronSmallRightIcon, { color: "icon-muted" })];
+    items20[1] = first3(closure_5, obj29);
+    items13[2] = first3(onSelectFont, obj25);
+    items9[1] = first3(closure_5, obj14);
     const obj31 = { style: tmp.buttonContainer, children: items22 };
-    const obj32 = { text: intl10.string(guildId(tmp3[46]).NOGFds), onPress: callback2, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[53]).DiceIcon, {}), iconPosition: "start" };
+    const obj32 = { text: intl10.string(guildId(tmp3[46]).NOGFds), onPress: callback2, variant: "tertiary", size: "lg", grow: true, icon: colors(tmp2(tmp3[53]).DiceIcon, {}), iconPosition: "start" };
     const Button = tmp2(tmp3[52]).Button;
-    intl10 = tmp2(tmp3[26]).intl;
-    items22 = [closure_12(Button, obj32), , ];
-    let tmp53Result = null == guildId && null != tmp12Result;
-    if (tmp53Result) {
-      const obj33 = { text: intl11.string(guildId(tmp3[46]).ymq8WQ), onPress: callback3, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[54]).DenyIcon, {}), iconPosition: "start" };
+    intl10 = tmp2(tmp3[27]).intl;
+    items22 = [colors(Button, obj32), , ];
+    let tmp52Result = null == guildId && null != tmp12Result;
+    if (tmp52Result) {
+      const obj33 = { text: intl11.string(guildId(tmp3[46]).ymq8WQ), onPress: callback3, variant: "tertiary", size: "lg", grow: true, icon: colors(tmp2(tmp3[54]).DenyIcon, {}), iconPosition: "start" };
       const Button2 = tmp2(tmp3[52]).Button;
-      intl11 = tmp2(tmp3[26]).intl;
-      tmp53Result = tmp53(Button2, obj33);
+      intl11 = tmp2(tmp3[27]).intl;
+      tmp52Result = tmp52(Button2, obj33);
     }
-    items22[1] = tmp53Result;
-    let tmp53Result4 = null != guildId;
-    if (tmp53Result4) {
-      tmp53Result4 = null != guildDisplayNameStyles || null != pendingDisplayNameStyles;
+    items22[1] = tmp52Result;
+    let tmp52Result4 = null != guildId;
+    if (tmp52Result4) {
+      tmp52Result4 = null != guildDisplayNameStyles || null != pendingDisplayNameStyles;
     }
-    if (tmp53Result4) {
-      const obj34 = { text: intl12.string(guildId(tmp3[46])["j/KRxc"]), onPress: callback4, variant: "tertiary", size: "lg", grow: true, icon: closure_12(tmp2(tmp3[54]).DenyIcon, {}), iconPosition: "start" };
+    if (tmp52Result4) {
+      const obj34 = { text: intl12.string(guildId(tmp3[46])["j/KRxc"]), onPress: callback4, variant: "tertiary", size: "lg", grow: true, icon: colors(tmp2(tmp3[54]).DenyIcon, {}), iconPosition: "start" };
       const Button3 = tmp2(tmp3[52]).Button;
-      intl12 = tmp2(tmp3[26]).intl;
-      tmp53Result4 = tmp53(Button3, obj34);
+      intl12 = tmp2(tmp3[27]).intl;
+      tmp52Result4 = tmp52(Button3, obj34);
     }
-    items22[2] = tmp53Result4;
-    items9[2] = colors(closure_5, obj31);
-    items23 = [colors(tmp57, obj12), ];
+    items22[2] = tmp52Result4;
+    items9[2] = first3(closure_5, obj31);
+    items23 = [first3(tmp56, obj12), ];
     const obj35 = { onPress: handleApply, visible: memo1, loading: isApplying };
-    items23[1] = closure_12(memo, obj35);
-    tmp53Result5 = tmp53(ThemeContextProvider, obj7);
+    items23[1] = colors(visibleFontOrder, obj35);
+    tmp52Result5 = tmp52(ThemeContextProvider, obj7);
   }
-  return tmp53Result5;
+  return tmp52Result5;
 };

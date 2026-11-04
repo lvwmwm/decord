@@ -1,20 +1,20 @@
-// Module ID: 17618
-// Function ID: 17619
+// Module ID: 17708
+// Function ID: 17709
 // Name: SettingsNotificationScreen
-// Dependencies: [19, 17, 17619, 8556, 21, 5141, 575, 14106, 17620, 17621, 5747, 1113, 7103, 7212, 11677, 17622, 17623, 16731, 2]
+// Dependencies: [19, 17, 17709, 8573, 21, 5141, 575, 14192, 17710, 17711, 5761, 1113, 7118, 7227, 11728, 17712, 17713, 16823, 2]
 
-// Module 17618 (SettingsNotificationScreen)
+// Module 17708 (SettingsNotificationScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14106 */;
-import SettingLayoutDefault from "SettingLayout" /* 16731 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17619 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17620 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17621 */;
-import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17622 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14192 */;
+import SettingLayoutDefault from "SettingLayout" /* 16823 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 17709 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 17710 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 17711 */;
+import NotificationPermissionSettingsHeaderDefault from "NotificationPermissionSettingsHeader" /* 17712 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -43,7 +43,7 @@ function SystemNotificationsSubLabel() {
   const tmp8 = React4;
   if (result) {
     const obj4 = { variant: "body-xs/normal", color: "text-muted", children: intl.string(intl7.t["/TZX1J"]) };
-    const Text = tmp2(5747).Text;
+    const Text = tmp2(5761).Text;
     intl = tmp2(1113).intl;
     result = metroImportDefault(Text, obj4);
   }
@@ -55,13 +55,13 @@ function SystemNotificationsSubLabel() {
     const obj5 = { style: tmp.card, children: metroImportDefault(Card, obj6) };
     obj6 = { border: "none", shadow: "none", children: metroImportAll(View, obj7) };
     obj7 = { style: tmp.cardContent, children: items1 };
-    Card = tmp2(7103).Card;
+    Card = tmp2(7118).Card;
     const obj8 = { color: nativeDefault.unsafe_rawColors.YELLOW_300 };
-    const CircleErrorIcon = tmp2(7212).CircleErrorIcon;
+    const CircleErrorIcon = tmp2(7227).CircleErrorIcon;
     items1 = [metroImportDefault(CircleErrorIcon, obj8), ];
     const obj9 = { style: tmp.text, children: metroImportDefault(Text2, obj10) };
-    obj10 = { color: "text-default", variant: "text-sm/medium", children: intl2.string(intl7.t.TAuasM) };
-    Text2 = tmp2(5747).Text;
+    obj10 = { color: "text-default", variant: "body-sm/medium", children: intl2.string(intl7.t.TAuasM) };
+    Text2 = tmp2(5761).Text;
     intl2 = tmp2(1113).intl;
     items1[1] = metroImportDefault(View, obj9);
     showReactivationPrompt = metroImportDefault(View, obj5);
@@ -101,6 +101,7 @@ const memoResult = react.memo(function SettingsNotificationsScreen() {
     let items18;
     let items19;
     let items2;
+    let items20;
     let items3;
     let items4;
     let items5;
@@ -116,7 +117,7 @@ const memoResult = react.memo(function SettingsNotificationsScreen() {
     intl = intl7.intl;
     items = [, ];
     ({ IN_APP_NOTIFICATIONS: arr[0], IN_APP_MESSAGE_SOUNDS: arr[1] } = MobileUserSettings);
-    items1 = [obj2, , , , , , , , , , , , , , , , , , ];
+    items1 = [obj2, , , , , , , , , , , , , , , , , , , ];
     const obj3 = { label: intl2.string(intl7.t["jcHF+3"]), settings: items2, subLabel: metroImportDefault(SystemNotificationsSubLabel, {}) };
     intl2 = intl7.intl;
     items2 = [MobileUserSettings.SYSTEM_NOTIFICATIONS];
@@ -138,46 +139,49 @@ const memoResult = react.memo(function SettingsNotificationsScreen() {
     items1[5] = obj7;
     const obj8 = { label: intl5.string(intl7.t.EZorjX), settings: items7 };
     intl5 = intl7.intl;
-    items7 = [MobileUserSettings.COMMUNITY_ACTIVITY_ALERTS];
+    items7 = [MobileUserSettings.EMAIL_NOTIFICATIONS];
     items1[6] = obj8;
     const obj9 = { settings: items8 };
-    items8 = [MobileUserSettings.HIGHLIGHT_NOTIFICATIONS];
+    items8 = [MobileUserSettings.COMMUNITY_ACTIVITY_ALERTS];
     items1[7] = obj9;
     const obj10 = { settings: items9 };
-    items9 = [MobileUserSettings.FRIEND_STREAM_NOTIFICATIONS];
+    items9 = [MobileUserSettings.HIGHLIGHT_NOTIFICATIONS];
     items1[8] = obj10;
     const obj11 = { settings: items10 };
-    items10 = [MobileUserSettings.FRIEND_ANNIVERSARY_NOTIFICATIONS];
+    items10 = [MobileUserSettings.FRIEND_STREAM_NOTIFICATIONS];
     items1[9] = obj11;
     const obj12 = { settings: items11 };
-    items11 = [MobileUserSettings.VOICE_ACTIVITY_NOTIFICATIONS];
+    items11 = [MobileUserSettings.FRIEND_ANNIVERSARY_NOTIFICATIONS];
     items1[10] = obj12;
     const obj13 = { settings: items12 };
-    items12 = [MobileUserSettings.FRIEND_ONLINE_NOTIFICATIONS];
+    items12 = [MobileUserSettings.VOICE_ACTIVITY_NOTIFICATIONS];
     items1[11] = obj13;
     const obj14 = { settings: items13 };
-    items13 = [MobileUserSettings.CUSTOM_STATUS_NOTIFICATIONS];
+    items13 = [MobileUserSettings.FRIEND_ONLINE_NOTIFICATIONS];
     items1[12] = obj14;
     const obj15 = { settings: items14 };
-    items14 = [MobileUserSettings.FRIEND_GAMING_ACTIVITY_NOTIFICATIONS];
+    items14 = [MobileUserSettings.CUSTOM_STATUS_NOTIFICATIONS];
     items1[13] = obj15;
     const obj16 = { settings: items15 };
-    items15 = [MobileUserSettings.PROFILE_UPDATES_NOTIFICATIONS];
+    items15 = [MobileUserSettings.FRIEND_GAMING_ACTIVITY_NOTIFICATIONS];
     items1[14] = obj16;
     const obj17 = { settings: items16 };
-    items16 = [MobileUserSettings.SERVER_TRENDING_NOTIFICATIONS];
+    items16 = [MobileUserSettings.PROFILE_UPDATES_NOTIFICATIONS];
     items1[15] = obj17;
     const obj18 = { settings: items17 };
-    items17 = [MobileUserSettings.UPCOMING_SERVER_EVENT_NOTIFICATIONS];
+    items17 = [MobileUserSettings.SERVER_TRENDING_NOTIFICATIONS];
     items1[16] = obj18;
     const obj19 = { settings: items18 };
-    items18 = [MobileUserSettings.SUMMARY_REMINDER_NOTIFICATIONS];
+    items18 = [MobileUserSettings.UPCOMING_SERVER_EVENT_NOTIFICATIONS];
     items1[17] = obj19;
-    const obj20 = { label: intl6.string(intl7.t["0YtG+k"]), settings: items19 };
-    intl6 = intl7.intl;
-    items19 = [, ];
-    ({ SCREEN_DOWNTIME_SCHEDULE_NOTIFICATIONS: arr20[0], SCREEN_DOWNTIME_REMINDER_NOTIFICATIONS: arr20[1] } = MobileUserSettings);
+    const obj20 = { settings: items19 };
+    items19 = [MobileUserSettings.SUMMARY_REMINDER_NOTIFICATIONS];
     items1[18] = obj20;
+    const obj21 = { label: intl6.string(intl7.t["0YtG+k"]), settings: items20 };
+    intl6 = intl7.intl;
+    items20 = [, ];
+    ({ SCREEN_DOWNTIME_SCHEDULE_NOTIFICATIONS: arr21[0], SCREEN_DOWNTIME_REMINDER_NOTIFICATIONS: arr21[1] } = MobileUserSettings);
+    items1[19] = obj21;
     tmp3 = undefined;
     if (closure_0) {
       tmp3 = NotificationPermissionSettingsHeaderDefault;

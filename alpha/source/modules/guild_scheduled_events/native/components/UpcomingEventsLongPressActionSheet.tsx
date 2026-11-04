@@ -1,19 +1,19 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14150
+// Function ID: 14151
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 5012, 6895, 6896, 21, 5141, 504, 7486, 7441, 7083, 1113, 8301, 1187, 14065, 7399, 5381, 14066, 14067, 7408, 7403, 2]
+// Dependencies: [19, 17, 5012, 6910, 6911, 21, 5141, 504, 7502, 7457, 7098, 1113, 8317, 1187, 14151, 7415, 5382, 14152, 14153, 7424, 7419, 2]
 // Exports: default
 
-// Module 14064 (UpcomingEventsLongPressActionSheet)
+// Module 14150 (UpcomingEventsLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7399 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7403 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7408 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ReadStateConstants from "ReadStateConstants" /* 6911 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7415 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7419 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7424 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -48,12 +48,12 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
   let obj2 = guildId(504);
   const items1 = [UserGuildSettingsStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId));
-  const ActionSheet = guildId(7486).ActionSheet;
+  const ActionSheet = guildId(7502).ActionSheet;
   const obj3 = { leading: closure_7(View, obj4), title: intl.string(guildId(1113).t.tlopTM) };
   obj4 = { style: tmp.headerIcon, children: closure_7(tmp9, obj5) };
-  const BottomSheetTitleHeader = guildId(7441).BottomSheetTitleHeader;
-  obj5 = { guild: stateFromStores, size: guildId(7083).GuildIconSizes.LARGE };
-  tmp9 = stateFromStores1(7083);
+  const BottomSheetTitleHeader = guildId(7457).BottomSheetTitleHeader;
+  obj5 = { guild: stateFromStores, size: guildId(7098).GuildIconSizes.LARGE };
+  tmp9 = stateFromStores1(7098);
   intl = guildId(1113).intl;
   const items2 = [closure_7(BottomSheetTitleHeader, obj3), , ];
   const obj6 = {
@@ -66,14 +66,14 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
       obj2.hideActionSheet();
     }
   };
-  const FormRow = guildId(8301).FormRow;
-  obj7 = { source: stateFromStores1(14065) };
+  const FormRow = guildId(8317).FormRow;
+  obj7 = { source: stateFromStores1(14151) };
   Icon = guildId(1187).Icon;
   obj8 = { text: intl2.string(guildId(1113).t.e6RscS) };
-  FormLabel = guildId(8301).FormLabel;
+  FormLabel = guildId(8317).FormLabel;
   intl2 = guildId(1113).intl;
   items2[1] = closure_7(FormRow, obj6);
-  const FormRow2 = guildId(8301).FormRow;
+  const FormRow2 = guildId(8317).FormRow;
   const obj9 = {
     leading: closure_7(Icon2, obj10),
     label: closure_7(FormLabel2, { text: stringResult }),
@@ -85,9 +85,9 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
       const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
     }
   };
-  obj10 = { source: stateFromStores1(stateFromStores1 ? 14066 : 14067) };
+  obj10 = { source: stateFromStores1(stateFromStores1 ? 14152 : 14153) };
   Icon2 = guildId(1187).Icon;
-  FormLabel2 = tmp2(8301).FormLabel;
+  FormLabel2 = tmp2(8317).FormLabel;
   const intl3 = tmp2(1113).intl;
   const string = intl3.string;
   const t = tmp2(1113).t;

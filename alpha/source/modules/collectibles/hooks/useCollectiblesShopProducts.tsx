@@ -1,26 +1,26 @@
-// Module ID: 9712
-// Function ID: 9713
+// Module ID: 9730
+// Function ID: 9731
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 9713, 8915, 7845, 7846, 9714, 504, 7843, 8914, 9715, 2]
+// Dependencies: [32, 19, 9731, 8932, 7861, 7862, 9732, 504, 7859, 8931, 9733, 2]
 // Exports: useCollectiblesShopProduct, useCollectiblesShopProducts, useFetchResolvedAbsent
 
-// Module 9712 (useCollectiblesShopProducts)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7843 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8914 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9714 */;
+// Module 9730 (useCollectiblesShopProducts)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8931 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9732 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9713 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8915 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7845 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7846 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9731 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8932 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7861 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7862 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, set, set2;
 
 let tmp;
-const StorefrontCollectionActionCreators = tmp(9715);
+const StorefrontCollectionActionCreators = tmp(9733);
 function computeEntryState(arg0) {
   let needsCategory;
   let product;
@@ -123,7 +123,7 @@ function useAbsentIds(arg0) {
 }
 let result = size.fileFinishedImporting("modules/collectibles/hooks/useCollectiblesShopProducts.tsx");
 
-export function useFetchResolvedAbsent(id, arg1) {
+export function useFetchResolvedAbsent(id, fetchState) {
   let tmp2;
   let tmp3;
   const obj = { id, sawFetch: false };
@@ -131,18 +131,18 @@ export function useFetchResolvedAbsent(id, arg1) {
   let flag = tmp2.sawFetch;
   _slicedToArray(react.useState(obj), 2);
   if (tmp2.id !== id) {
-    const obj2 = { id, sawFetch: null != arg1 };
+    const obj2 = { id, sawFetch: null != fetchState };
     tmp3(obj2);
     flag = tmp8;
   } else {
-    const tmp5 = null == arg1 || tmp2.sawFetch;
+    const tmp5 = null == fetchState || tmp2.sawFetch;
     if (!tmp5) {
       const obj3 = { id, sawFetch: true };
       tmp3(obj3);
       flag = true;
     }
   }
-  return "" !== id && null == arg1 && flag;
+  return "" !== id && null == fetchState && flag;
 }
 export function useCollectiblesShopProduct(skuId, arg1) {
   let fetchState;
@@ -453,10 +453,10 @@ export function useCollectiblesShopProducts(resolvedSkuIds, arg1) {
   }, items6);
   const items7 = [memo1];
   const memo2 = memo.useMemo(() => {
-    const f125223 = (item) => "" !== item;
+    const f125813 = (item) => "" !== item;
     const values = Object.values(memo1);
-    const items = [...new Set(values.filter(f125223))];
-    new Set(values.filter(f125223));
+    const items = [...new Set(values.filter(f125813))];
+    new Set(values.filter(f125813));
     return items;
   }, items7);
   const items8 = [flag, memo2.join(",")];

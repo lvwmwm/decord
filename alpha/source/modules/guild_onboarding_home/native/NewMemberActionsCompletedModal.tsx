@@ -1,10 +1,10 @@
-// Module ID: 19636
-// Function ID: 19637
+// Module ID: 19741
+// Function ID: 19742
 // Name: NewMemberActionsCompletedModal
-// Dependencies: [19, 17, 21, 5141, 575, 1652, 5377, 6864, 7523, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1652, 5378, 6879, 7539, 5761, 1113, 2]
 // Exports: default
 
-// Module 19636 (NewMemberActionsCompletedModal)
+// Module 19741 (NewMemberActionsCompletedModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
@@ -53,7 +53,7 @@ export default function NewMemberActionsCompleted(arg0) {
   const useAnimatedStyle = sharedValue(1652).useAnimatedStyle;
   sharedValue(1652);
   items1[1] = sharedValue(1652).withDelay;
-  items1[2] = sharedValue(5377).withTiming;
+  items1[2] = sharedValue(5378).withTiming;
   items1[3] = sharedValue;
   let c0;
   let c1;
@@ -79,7 +79,7 @@ export default function NewMemberActionsCompleted(arg0) {
   }, []);
   const obj3 = { style: tmp.screen, children: items3 };
   const obj4 = { style: tmp.text, variant: "heading-xl/semibold", color: "text-overlay-light", children: intl.format(sharedValue(1113).t.pGj5u2, { count: numActions }) };
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
   items3 = [closure_5(Text, obj4), ];
   const obj5 = { style: tmp.progressBackground, children: closure_5(_modDef1652.View, obj6) };

@@ -1,15 +1,15 @@
-// Module ID: 19155
-// Function ID: 19156
+// Module ID: 19258
+// Function ID: 19259
 // Name: ConjureHomeScreen
-// Dependencies: [32, 19, 17, 6688, 21, 5141, 575, 1500, 12735, 504, 12210, 12208, 5747, 1113, 3995, 5754, 2]
+// Dependencies: [32, 19, 17, 6703, 21, 5141, 575, 1500, 12816, 504, 12269, 12267, 5761, 1113, 3995, 5768, 2]
 // Exports: default
 
-// Module 19155 (ConjureHomeScreen)
+// Module 19258 (ConjureHomeScreen)
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -143,7 +143,7 @@ export default function ConjureHomeScreen(navigation) {
       const Text = tmp2(tmp3[12]).Text;
       intl = tmp2(tmp3[13]).intl;
       const items5 = [ref(Text, obj9), , ];
-      const obj10 = { variant: "text-md/normal", color: "text-muted", children: intl2.string(projectId(tmp3[14])["5PqGKy"]) };
+      const obj10 = { variant: "body-md/normal", color: "text-muted", children: intl2.string(projectId(tmp3[14])["5PqGKy"]) };
       const Text2 = tmp2(tmp3[12]).Text;
       intl2 = tmp2(tmp3[13]).intl;
       items5[1] = ref(Text2, obj10);

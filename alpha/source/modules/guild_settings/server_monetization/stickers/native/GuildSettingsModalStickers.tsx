@@ -1,19 +1,19 @@
-// Module ID: 19892
-// Function ID: 19893
+// Module ID: 20008
+// Function ID: 20009
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 5012, 5073, 1385, 1072, 4969, 21, 1113, 19893, 10051, 15553, 5141, 575, 1627, 504, 9148, 19895, 7329, 8587, 5747, 6571, 5754, 19896, 8301, 6147, 7186, 7101, 8791, 10412, 1187, 6161, 7110, 19902, 2]
+// Dependencies: [19, 17, 5012, 5073, 1385, 1072, 4969, 21, 1113, 20009, 10099, 15640, 5141, 575, 1627, 504, 9165, 20011, 7345, 8604, 5761, 6586, 5768, 20012, 8317, 6162, 7201, 7116, 8808, 10460, 1187, 6176, 7125, 20018, 2]
 
-// Module 19892 (GuildSettingsModalStickers)
+// Module 20008 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import StickersConstants from "StickersConstants" /* 4969 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8587 */;
-import BoostGemIcon from "BoostGemIcon" /* 10051 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 15553 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19893 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19896 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8604 */;
+import BoostGemIcon from "BoostGemIcon" /* 10099 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 15640 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 20009 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 20012 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -38,7 +38,7 @@ let intl4;
 let map1;
 let metroImportAll;
 let tmp2;
-const LockIcon = tmp2(8791);
+const LockIcon = tmp2(8808);
 ({ ScrollView: c3, View: closure_4 } = react_native);
 ({ AppliedGuildBoostsRequiredForBoostedGuildTier: metroImportAll, BoostedGuildTiers } = Constants);
 const GuildFeatures = Constants.GuildFeatures;
@@ -131,11 +131,11 @@ const memoResult = react.memo(function GuildSettingsModalStickers(guildId) {
     const tmp10 = closure_12;
     let tmp8 = closure_13;
     const tmp9 = guildTier;
-    let obj4 = { variant: "heading-md/semibold", style: tmp3.label, children: intl.string(tmp4(tmp2[8]).t.yxVsBJ) };
+    let obj4 = { variant: "heading-sm/semibold", style: tmp3.label, children: intl.string(tmp4(tmp2[8]).t.yxVsBJ) };
     let Text = tmp4(tmp2[20]).Text;
     intl = tmp4(tmp2[8]).intl;
     items2 = [closure_12(Text, obj4), , , , ];
-    let obj5 = { variant: "text-sm/medium", color: "text-muted", style: tmp3.label, children: format(kpcMft, obj6) };
+    let obj5 = { variant: "body-sm/medium", color: "text-muted", style: tmp3.label, children: format(kpcMft, obj6) };
     const Text2 = tmp4(tmp2[20]).Text;
     const intl2 = tmp4(tmp2[8]).intl;
     format = intl2.format;
@@ -232,7 +232,7 @@ const memoResult = react.memo(function GuildSettingsModalStickers(guildId) {
               obj3 = { style: closure_1.stickerSlot, children: closure_1_12(tmp15, obj4) };
               const TableRow = guildId(guild[27]).TableRow;
               obj4 = { sticker: closure_5[+closure_6], size: closure_1_1(guild[13]).space.PX_48, animated: true };
-              const obj5 = { variant: "heading-sm/semibold", color: "text-strong", style: closure_1.label, children: closure_5[+closure_6].name };
+              const obj5 = { variant: "heading-xs/semibold", color: "text-strong", style: closure_1.label, children: closure_5[+closure_6].name };
               tmp15 = closure_1_1(guild[29]);
               items = [closure_1_12(guildId(guild[20]).Text, obj5), ];
               let tmp16Result = null;
@@ -243,7 +243,7 @@ const memoResult = react.memo(function GuildSettingsModalStickers(guildId) {
                 const obj6 = { user, size: guildId(guild[30]).AvatarSizes.XSMALL_20, guildId };
                 const Avatar = tmp10(tmp11[30]).Avatar;
                 items1 = [closure_1_12(Avatar, obj6), ];
-                const obj7 = { variant: "text-sm/medium", color: "text-subtle", children: tmp14Result.getName(guildId, undefined, user) };
+                const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: tmp14Result.getName(guildId, undefined, user) };
                 const Text = tmp10(tmp11[20]).Text;
                 tmp14Result = tmp14(guild[31]);
                 items1[1] = closure_1_12(Text, obj7);

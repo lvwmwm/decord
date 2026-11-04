@@ -1,10 +1,10 @@
-// Module ID: 5394
-// Function ID: 5395
+// Module ID: 5395
+// Function ID: 5396
 // Name: getDeviceSpecificString
 // Dependencies: [1113, 1624, 2]
 // Exports: getDeviceSpecificString
 
-// Module 5394 (getDeviceSpecificString)
+// Module 5395 (getDeviceSpecificString)
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 9688
-// Function ID: 9689
+// Module ID: 9707
+// Function ID: 9708
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 7016, 1072, 3, 572, 1282, 6566, 9689, 1242, 2]
+// Dependencies: [5, 7031, 1072, 3, 572, 1282, 6581, 9708, 1242, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9688 (VirtualCurrencyActionCreators)
+// Module 9707 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 7016 */;
+import SKUStore from "SKUStore" /* 7031 */;
 import size from "module_2" /* 2 */;
 
-let applicationId, checkout_session_id, closure_2, skuId;
+let applicationId, checkout_session_id, closure_2;
 
 function fetchVirtualCurrencyBalance() {
   return obj(...arguments);
@@ -109,7 +109,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
       } else {
         try {
           let c8;
-          let obj8;
+          let obj9;
           let body;
           let c11;
           let error;
@@ -136,7 +136,7 @@ obj = function _redeemVirtualCurrencyForSKU() {
               }
               applicationId = undefined;
               c8 = undefined;
-              obj8 = undefined;
+              obj9 = undefined;
               body = undefined;
               c11 = undefined;
               error = undefined;
@@ -153,9 +153,9 @@ obj = function _redeemVirtualCurrencyForSKU() {
               c6 = 3;
               return { value, done: true };
             } else {
-              const obj6 = { type: "VIRTUAL_CURRENCY_REDEEM_START", skuId };
-              const obj16 = closure_130_1(closure_130_2[4]);
-              obj16.dispatch(obj6);
+              const obj7 = { type: "VIRTUAL_CURRENCY_REDEEM_START", skuId };
+              const obj15 = closure_130_1(closure_130_2[4]);
+              obj15.dispatch(obj7);
               if (tmp != null) {
                 tmp();
               }
@@ -167,17 +167,17 @@ obj = function _redeemVirtualCurrencyForSKU() {
               }
               let result = null != applicationId;
               if (result) {
-                const obj9 = closure_130_0(closure_130_2[7]);
-                result = obj9.isTestModeForApplication(applicationId);
+                const obj8 = closure_130_0(closure_130_2[7]);
+                result = obj8.isTestModeForApplication(applicationId);
               }
               c8 = result;
-              obj8 = { checkout_session_id };
-              const tmp82 = c8;
-              if (tmp82) {
-                obj8.test_mode = true;
+              obj9 = { checkout_session_id };
+              const tmp81 = c8;
+              if (tmp81) {
+                obj9.test_mode = true;
               }
               const HTTP = closure_130_0(closure_130_2[5]).HTTP;
-              const request = { url: closure_130_5.VIRTUAL_CURRENCY_SKU_REDEEM(skuId), body: obj8, rejectWithError: false };
+              const request = { url: closure_130_5.VIRTUAL_CURRENCY_SKU_REDEEM(skuId), body: obj9, rejectWithError: false };
               const post = HTTP.post;
               c5 = 3;
               c6 = 1;
@@ -195,14 +195,14 @@ obj = function _redeemVirtualCurrencyForSKU() {
               billingError = new closure_130_0(closure_130_2[6]).BillingError(closure_14);
             }
             const obj11 = { type: "VIRTUAL_CURRENCY_REDEEM_FAIL", skuId, error: billingError };
-            const obj7 = closure_130_1(closure_130_2[4]);
-            obj7.dispatch(obj11);
-            const tmp57 = shouldRefetchBalance;
-            if (tmp57) {
+            const obj6 = closure_130_1(closure_130_2[4]);
+            obj6.dispatch(obj11);
+            const tmp56 = shouldRefetchBalance;
+            if (tmp56) {
               closure_130_7();
             }
             if (c4 != null) {
-              tmp62(billingError);
+              tmp61(billingError);
             }
             c6 = 3;
             return { value: "HermesInternal", done: null };
@@ -218,15 +218,14 @@ obj = function _redeemVirtualCurrencyForSKU() {
             if (null != body) {
               const _Array = Array;
               if (Array.isArray(body)) {
-                const obj13 = { type: "VIRTUAL_CURRENCY_REDEEM_SUCCESS", skuId, entitlements: body };
-                obj = closure_130_1(closure_130_2[4]);
-                obj.dispatch(obj13);
-                const tmp12 = shouldRefetchBalance;
-                if (tmp12) {
+                obj = { skuId, entitlements: body };
+                closure_130_11(obj);
+                const tmp11 = shouldRefetchBalance;
+                if (tmp11) {
                   closure_130_7();
                 }
                 if (c3 != null) {
-                  tmp17(body);
+                  tmp16(body);
                 }
                 c4 = 0;
                 c6 = 3;
@@ -239,16 +238,16 @@ obj = function _redeemVirtualCurrencyForSKU() {
             const self2 = this;
             error = new Error(c11, body);
             closure_130_6.error(c11, body);
-            const obj15 = { tags: { app_context: "virtual_currency" } };
-            const obj4 = closure_130_1(closure_130_2[8]);
-            obj4.captureException(error, obj15);
+            const obj14 = { tags: { app_context: "virtual_currency" } };
+            const obj3 = closure_130_1(closure_130_2[8]);
+            obj3.captureException(error, obj14);
             throw error;
           }
-        } catch (tmp91) {
-          closure_3 = tmp91;
+        } catch (tmp90) {
+          closure_3 = tmp90;
           if (0 === c4) {
             c6 = 3;
-            throw tmp91;
+            throw tmp90;
           } else {
             c5 = 2;
           }
@@ -260,6 +259,13 @@ obj = function _redeemVirtualCurrencyForSKU() {
   });
   return obj(...arguments);
 };
+function dispatchVirtualCurrencyRedeemSuccess(arg0) {
+  let entitlements;
+  let skuId;
+  ({ skuId, entitlements } = arg0);
+  obj = DispatcherDefault;
+  obj.dispatch({ type: "VIRTUAL_CURRENCY_REDEEM_SUCCESS", skuId, entitlements });
+}
 const Endpoints = Constants.Endpoints;
 let closure_6 = new LoggerDefault("VirtualCurrencyActionCreators");
 const tmp2 = new LoggerDefault("VirtualCurrencyActionCreators");
@@ -272,6 +278,7 @@ export function fetchVirtualCurrencyTotalRedeemed() {
 export function redeemVirtualCurrencyForSKU() {
   return obj(...arguments);
 }
+export { dispatchVirtualCurrencyRedeemSuccess };
 export function setBalancePillOverlay(balancePillOverlay) {
   obj = DispatcherDefault;
   const obj2 = { type: "VIRTUAL_CURRENCY_SET_BALANCE_PILL_OVERLAY", balancePillOverlay };

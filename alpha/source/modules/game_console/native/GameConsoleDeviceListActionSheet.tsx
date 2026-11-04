@@ -1,25 +1,25 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12184
+// Function ID: 12185
 // Name: GameConsoleDeviceListActionSheet
-// Dependencies: [5, 32, 19, 17, 5885, 1072, 21, 5141, 575, 7412, 5754, 1113, 12126, 5837, 5747, 12127, 504, 12116, 38, 12118, 5381, 1108, 1187, 11529, 5395, 7441, 5398, 2]
+// Dependencies: [5, 32, 19, 17, 5899, 1072, 21, 5141, 575, 7428, 5768, 1113, 12185, 5851, 5761, 12186, 504, 12175, 38, 12177, 5382, 1108, 1187, 11579, 5396, 7457, 5400, 2]
 // Exports: default
 
-// Module 12125 (GameConsoleDeviceListActionSheet)
+// Module 12184 (GameConsoleDeviceListActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 12116 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12126 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12127 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 12175 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12185 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12186 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleStore from "GameConsoleStore" /* 5885 */;
+import GameConsoleStore from "GameConsoleStore" /* 5899 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ function DeviceOption(name) {
   const obj2 = { style: tmp.deviceIcon, source: AssetRegistryDefault };
   const tmp2 = FastImageDefault;
   items = [unpackModuleId(tmp2, obj2), ];
-  const obj3 = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "text-md/semibold", children: name };
+  const obj3 = { style: tmp.deviceText, color: "mobile-text-heading-primary", variant: "body-md/semibold", children: name };
   items[1] = unpackModuleId(Text_Text.Text, obj3);
   return authStore2(metroImportDefault, obj);
 }
@@ -74,11 +74,11 @@ function EmptyState() {
   const obj2 = { source: AssetRegistryDefault2, style: tmp.emptyArt };
   const tmp2 = FastImageDefault;
   items = [unpackModuleId(tmp2, obj2), , ];
-  const obj3 = { style: tmp.emptyHeader, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.OkJf1e) };
+  const obj3 = { style: tmp.emptyHeader, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t.OkJf1e) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = unpackModuleId(Text, obj3);
-  const obj4 = { style: tmp.emptyBody, variant: "text-md/normal", color: "text-default", children: intl2.string(intl4.t["of/l5Z"]) };
+  const obj4 = { style: tmp.emptyBody, variant: "body-md/normal", color: "text-default", children: intl2.string(intl4.t["of/l5Z"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = unpackModuleId(Text2, obj4);
@@ -275,7 +275,7 @@ export default function GameConsoleListActionSheet(arg0) {
     },
     children: tmp12(Text, obj11)
   };
-  obj11 = { variant: "text-md/semibold", color: "text-brand", children: intl3.string(tmp2(tmp3[11]).t.hb12iG) };
+  obj11 = { variant: "body-md/semibold", color: "text-brand", children: intl3.string(tmp2(tmp3[11]).t.hb12iG) };
   Text = tmp2(tmp3[14]).Text;
   intl3 = tmp2(tmp3[11]).intl;
   obj12 = { contentContainerStyle: tmp.container, children: tmp12Result };

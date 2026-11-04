@@ -1,18 +1,18 @@
-// Module ID: 20124
-// Function ID: 20125
+// Module ID: 20240
+// Function ID: 20241
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 21, 5141, 575, 17359, 7412, 9237, 5747, 1113, 7124, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 17450, 7428, 9254, 5761, 1113, 7139, 2]
 // Exports: default
 
-// Module 20124 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 20240 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 9237 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17359 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 9254 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17450 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -53,7 +53,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   const obj3 = { style: items, accessibilityRole: "button", onPress: onClose, children: metroRequire(Text, obj4) };
   items = [, ];
   ({ headerButtonContainer: arr[0], headerButtonStart: arr[1] } = tmp);
-  obj4 = { variant: "text-md/medium", color: "interactive-text-active", children: intl.string(intl3.t["ETE/oC"]) };
+  obj4 = { variant: "body-md/medium", color: "interactive-text-active", children: intl.string(intl3.t["ETE/oC"]) };
   const tmp7 = TouchableHitBoxDefault;
   Text = Text_Text.Text;
   intl = intl3.intl;
@@ -70,7 +70,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
   if (canSave) {
     str = "interactive-text-active";
   }
-  obj7 = { variant: "text-md/medium", color: str, children: intl2.string(intl3.t["R3BPH+"]) };
+  obj7 = { variant: "body-md/medium", color: str, children: intl2.string(intl3.t["R3BPH+"]) };
   intl2 = tmp5(1113).intl;
   items1[2] = metroRequire(tmp8, obj6);
   return tmp4(SafeAreaPaddingView, obj2);

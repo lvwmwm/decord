@@ -1,21 +1,21 @@
-// Module ID: 16686
-// Function ID: 16687
+// Module ID: 16776
+// Function ID: 16777
 // Name: useTryItOutProfileTheme
-// Dependencies: [8855, 8881, 504, 8924, 8864, 8839, 575, 2]
+// Dependencies: [8872, 8898, 504, 8941, 8881, 8856, 575, 2]
 // Exports: default
 
-// Module 16686 (useTryItOutProfileTheme)
+// Module 16776 (useTryItOutProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8864 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8881 */;
-import useProfileThemeDefault from "useProfileTheme" /* 8924 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8855 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8881 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8898 */;
+import useProfileThemeDefault from "useProfileTheme" /* 8941 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8872 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
 const nativeDefault = tmp(575);
-const useAvatarColor = tmp4(8839);
+const useAvatarColor = tmp4(8856);
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useTryItOutProfileTheme.tsx");
 
 export default function useTryItOutProfileTheme(id) {

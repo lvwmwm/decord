@@ -1,15 +1,15 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11237
+// Function ID: 11238
 // Name: MarkupReactGameMentionRule
-// Dependencies: [19, 17, 11186, 21, 575, 5141, 5747, 11182, 8803, 11188, 5762, 2154, 1113, 11189, 6147, 2155, 8267, 5837, 9448, 9468, 7604, 2]
+// Dependencies: [19, 17, 11236, 21, 575, 5141, 5761, 11232, 8820, 11238, 5776, 2154, 1113, 11239, 6162, 2155, 8283, 5851, 9466, 9486, 7620, 2]
 // Exports: createFetchingGameMentionRule
 
-// Module 11187 (MarkupReactGameMentionRule)
+// Module 11237 (MarkupReactGameMentionRule)
 import nativeDefault from "native" /* 575 */;
-import useGame from "useGame" /* 7604 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9448 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
+import useGame from "useGame" /* 7620 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9466 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -40,12 +40,12 @@ class MarkupGameMention {
     }
     const gameId = node.gameId;
     const muted = state.muted;
-    let obj = state(8803);
+    let obj = state(8820);
     const gameMentionData = obj.useGameMentionData(gameId);
-    let obj2 = state(11188);
+    let obj2 = state(11238);
     const previewMentionLayout = obj2.usePreviewMentionLayout();
     let variant;
-    const obj3 = state(5762);
+    const obj3 = state(5776);
     const fontScale = obj3.useFontScale();
     if (previewMentionLayout != null) {
       variant = previewMentionLayout.variant;
@@ -57,7 +57,7 @@ class MarkupGameMention {
     if (previewMentionLayout != null) {
       prop = previewMentionLayout.maxFontSizeMultiplier;
     }
-    const fontSize = tmp(5747).TextStyleSheet[variant].fontSize;
+    const fontSize = tmp(5761).TextStyleSheet[variant].fontSize;
     let num = Infinity;
     if (null != prop) {
       num = Infinity;
@@ -65,7 +65,7 @@ class MarkupGameMention {
         num = prop;
       }
     }
-    const tmpResult = state(11182);
+    const tmpResult = state(11232);
     const minResult = min(tmpResult.scaleLineHeight(fontSize, fontScale), fontSize * num);
     let value;
     if (previewMentionLayout != null) {
@@ -96,14 +96,14 @@ class MarkupGameMention {
     if (mentionPillOffsetY == null) {
       let prop1;
       if (true === state.noStyleAndInteraction) {
-        prop1 = tmp(11189).MENTION_PILL_OFFSET_Y;
+        prop1 = tmp(11239).MENTION_PILL_OFFSET_Y;
       }
       mentionPillOffsetY = prop1;
     }
     let result1;
     if (null != mentionPillOffsetY) {
       const result = mentionPillOffsetY * minResult;
-      result1 = result / tmp(5747).TextStyleSheet[variant].fontSize;
+      result1 = result / tmp(5761).TextStyleSheet[variant].fontSize;
     }
     if (null != result1) {
       const items = [tmp11.inlineRoot, ];
@@ -115,7 +115,7 @@ class MarkupGameMention {
     } else {
       inlineRoot = tmp11.inlineRoot;
     }
-    const Stack = tmp(6147).Stack;
+    const Stack = tmp(6162).Stack;
     const tmp20 = closure_7;
     if (null != value) {
       const items2 = [tmp11.pill, ];
@@ -129,18 +129,18 @@ class MarkupGameMention {
     const tmpResult2 = state(2155);
     if (tmpResult2.isNullOrEmpty(tmp13Result)) {
       const obj8 = { size: "custom", color: str, style: tmp11.icon, accessible: false };
-      tmp21Result = tmp21(tmp(8267).UnknownGameIcon, obj8);
+      tmp21Result = tmp21(tmp(8283).UnknownGameIcon, obj8);
       tmp23 = tmp21;
     } else {
       const obj9 = { source: obj10, resizeMode: "contain", style: tmp11.icon, accessible: false };
       obj10 = { uri: tmp13Result };
-      tmp21Result = tmp21(tmp12(5837), obj9);
+      tmp21Result = tmp21(tmp12(5851), obj9);
       tmp23 = tmp21;
     }
     items3 = [tmp21Result, ];
     const obj11 = { variant, color: str, lineClamp: 1, ellipsizeMode: str2, maxFontSizeMultiplier: prop, style: tmp11.name, children: gameName };
     str2 = "tail";
-    const Text = tmp(5747).Text;
+    const Text = tmp(5761).Text;
     if (null != value) {
       str2 = "clip";
     }
@@ -177,7 +177,7 @@ function FetchingGameMention(node) {
 const MUTED_OPACITY_CONTENT = RedesignChannelListConstants.MUTED_OPACITY_CONTENT;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = nativeDefault.space.PX_4 / 2;
-let c9 = "text-sm/semibold";
+let c9 = "body-sm/semibold";
 const authStore = createStyles.createStyles((width, arg1) => {
   let num;
   const obj = { inlineRoot: { flexDirection: "row" }, pill: { width: "auto", minWidth: 0, flexShrink: 1, overflow: "hidden", backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, borderRadius: nativeDefault.radii.xs, paddingHorizontal: gap, gap }, name: { minWidth: 0, flexShrink: 1 }, icon: size };

@@ -1,18 +1,18 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13984
+// Function ID: 13985
 // Name: ForumPostUsername
-// Dependencies: [19, 17, 5142, 13894, 21, 5141, 9969, 5000, 11692, 13899, 504, 8543, 1187, 5747, 2]
+// Dependencies: [19, 17, 5142, 13980, 21, 5141, 10017, 5000, 11743, 13985, 504, 8560, 1187, 5761, 2]
 // Exports: ForumPostAuthor, ForumPostMessageAuthor
 
-// Module 13898 (ForumPostUsername)
+// Module 13984 (ForumPostUsername)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
 import ForumLayout from "ForumLayout" /* 5000 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8543 */;
-import ForumHooks from "ForumHooks" /* 9969 */;
-import useChatWidthDefault from "useChatWidth" /* 11692 */;
-import ForumChannelStore from "ForumChannelStore" /* 13894 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8560 */;
+import ForumHooks from "ForumHooks" /* 10017 */;
+import useChatWidthDefault from "useChatWidth" /* 11743 */;
+import ForumChannelStore from "ForumChannelStore" /* 13980 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,7 +47,7 @@ function ForumPostUsername(arg0) {
     num = 72;
   }
   const tmp4 = useChatWidthDefault();
-  const diff = tmp4 - tmp2(13899).GRID_HORIZONTAL_PADDING - num;
+  const diff = tmp4 - tmp2(13985).GRID_HORIZONTAL_PADDING - num;
   const items = [AccessibilityStore];
   const tmp2Result = get_initialized;
   const stateFromStores = tmp2Result.useStateFromStores(items, () => roleStyle.roleStyle);
@@ -73,11 +73,11 @@ function ForumPostUsername(arg0) {
       }
       items3 = [tmp24, ];
       let tmp26;
-      const Text = tmp2(5747).Text;
+      const Text = tmp2(5761).Text;
       if (tmp18) {
         tmp26 = processColorStringsArray;
       }
-      const obj6 = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp26, lineClamp: 1, style: items4, children: items5 };
+      const obj6 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", gradientColors: tmp26, lineClamp: 1, style: items4, children: items5 };
       items4 = [{}, textStyle, tmp.authorName];
       items5 = [authorName, suffix];
       items3[1] = metroImportDefault(Text, obj6);

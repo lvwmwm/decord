@@ -1,10 +1,10 @@
-// Module ID: 20242
-// Function ID: 20243
+// Module ID: 20358
+// Function ID: 20359
 // Name: VerifyEmailScreen
-// Dependencies: [5, 32, 19, 21, 20237, 20238, 20231, 5832, 1113, 2963, 20241, 6147, 575, 5747, 7208, 20243, 2]
+// Dependencies: [5, 32, 19, 21, 20353, 20354, 20347, 5846, 1113, 2963, 20357, 6162, 575, 5761, 7223, 20359, 2]
 // Exports: default
 
-// Module 20242 (VerifyEmailScreen)
+// Module 20358 (VerifyEmailScreen)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -145,7 +145,7 @@ export default function _default() {
   intl2 = onTaskComplete(value[8]).intl;
   obj4 = { spacing: require("native").space.PX_16, children: items3 };
   Stack = onTaskComplete(value[11]).Stack;
-  let obj5 = { variant: "text-sm/medium", color: "text-subtle", children: intl3.string(require("module_2963").aveKoG) };
+  let obj5 = { variant: "body-sm/medium", color: "text-subtle", children: intl3.string(require("module_2963").aveKoG) };
   const Text = onTaskComplete(value[13]).Text;
   intl3 = onTaskComplete(value[8]).intl;
   items3 = [onAction(Text, obj5), ];

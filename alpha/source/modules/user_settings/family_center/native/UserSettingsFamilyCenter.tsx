@@ -1,10 +1,10 @@
-// Module ID: 16916
-// Function ID: 16917
+// Module ID: 17008
+// Function ID: 17009
 // Name: UserSettingsFamilyCenter
-// Dependencies: [32, 19, 17, 7839, 1385, 1072, 1097, 7840, 21, 6147, 1113, 2667, 5150, 575, 7212, 5747, 5754, 7841, 5141, 1499, 7446, 7471, 8493, 16917, 16918, 8495, 563, 9108, 16919, 16959, 1252, 6660, 6665, 5716, 16977, 6859, 572, 9342, 14323, 2]
+// Dependencies: [32, 19, 17, 7855, 1385, 1072, 1097, 7856, 21, 6162, 1113, 2667, 5150, 575, 7227, 5761, 5768, 7857, 5141, 1499, 7462, 7487, 8510, 17009, 17010, 8512, 563, 9125, 17011, 17051, 1252, 6675, 6680, 5729, 17069, 6874, 572, 9359, 14410, 2]
 // Exports: default
 
-// Module 16916 (UserSettingsFamilyCenter)
+// Module 17008 (UserSettingsFamilyCenter)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,20 +13,20 @@ import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _modDef2667 from "module_2667" /* 2667 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6660 */;
-import MetricEvents from "MetricEvents" /* 6665 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6859 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7212 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7841 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6675 */;
+import MetricEvents from "MetricEvents" /* 6680 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6874 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7227 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7857 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7839 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7855 */;
 import UserStore_mod from "UserStore" /* 1385 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7856 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ function FamilyCenterLoadError() {
   const obj3 = { size: "lg", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
   const CircleErrorIcon = CircleErrorIcon2.CircleErrorIcon;
   items1 = [closure_14(CircleErrorIcon, obj3), ];
-  const obj4 = { variant: "text-md/medium", color: "text-strong", style: tmp.loadErrorText, children: stringResult };
+  const obj4 = { variant: "body-md/medium", color: "text-strong", style: tmp.loadErrorText, children: stringResult };
   items1[1] = closure_14(Text_Text.Text, obj4);
   items2 = [closure_15(Stack2, obj2), ];
   const obj5 = {

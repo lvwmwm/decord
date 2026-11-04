@@ -1,9 +1,9 @@
-// Module ID: 14812
-// Function ID: 14813
+// Module ID: 14892
+// Function ID: 14893
 // Name: IosAttributionFramework
 // Dependencies: [2]
 
-// Module 14812 (IosAttributionFramework)
+// Module 14892 (IosAttributionFramework)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/IosAttributionFramework.tsx");

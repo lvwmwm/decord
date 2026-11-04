@@ -1,17 +1,17 @@
-// Module ID: 11757
-// Function ID: 11758
+// Module ID: 11812
+// Function ID: 11813
 // Name: RoleMembersActionSheet
-// Dependencies: [19, 17, 5142, 7570, 5047, 21, 5141, 575, 11, 7419, 504, 7417, 1187, 5747, 5395, 11758, 2]
+// Dependencies: [19, 17, 5142, 7586, 5047, 21, 5141, 575, 11, 7435, 504, 7433, 1187, 5761, 5396, 11813, 2]
 // Exports: default
 
-// Module 11757 (RoleMembersActionSheet)
+// Module 11812 (RoleMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7419 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7570 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7435 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7586 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
@@ -79,7 +79,7 @@ export default function RoleMembersActionSheet(guildId) {
   const tmp9 = roleId;
   let obj3 = roleId(11);
   const result = obj3.castGuildIdAsEveryoneGuildRoleId(guildId);
-  const tmp11 = roleId(7417)(guildId);
+  const tmp11 = roleId(7433)(guildId);
   let tmp12 = null;
   if (roleId !== result) {
     let tmp13;
@@ -96,9 +96,9 @@ export default function RoleMembersActionSheet(guildId) {
   let tmp16Result = null;
   if (null != stateFromStores) {
     let obj4 = { scrollable: true, header: tmp14, children: closure_8(tmp9Result, obj5) };
-    const BottomSheet = tmp3(5395).BottomSheet;
+    const BottomSheet = tmp3(5396).BottomSheet;
     obj5 = { guildId, channelId, roleId, headerShown: false, inActionSheet: true, disableStickySections: true, disableThemedGradient: true };
-    tmp9Result = tmp9(11758);
+    tmp9Result = tmp9(11813);
     if (channelId == null) {
       channelId = EVERYONE_CHANNEL_ID;
     }

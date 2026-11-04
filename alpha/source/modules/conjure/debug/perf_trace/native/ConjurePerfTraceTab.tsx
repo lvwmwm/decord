@@ -1,26 +1,26 @@
-// Module ID: 13151
-// Function ID: 13152
+// Module ID: 13234
+// Function ID: 13235
 // Name: ConjurePerfTraceTab
-// Dependencies: [32, 5, 19, 17, 10987, 21, 5141, 575, 6864, 13152, 2123, 7103, 13158, 11024, 5747, 13154, 1266, 8902, 13159, 11237, 1627, 504, 13156, 7414, 7339, 12370, 5853, 13153, 2]
+// Dependencies: [32, 5, 19, 17, 11035, 21, 5141, 575, 6879, 13235, 2123, 7118, 13241, 11073, 5761, 13237, 1266, 8919, 13242, 11287, 1627, 504, 13239, 7430, 7355, 12435, 5867, 13236, 2]
 // Exports: default, openPerfTrace
 
-// Module 13151 (ConjurePerfTraceTab)
+// Module 13234 (ConjurePerfTraceTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import v1 from "v1" /* 1266 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import FileManagerUtils from "FileManagerUtils" /* 8902 */;
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11024 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13154 */;
-import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 13156 */;
-import ConjurePerfTraceList from "ConjurePerfTraceList" /* 13159 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import FileManagerUtils from "FileManagerUtils" /* 8919 */;
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11073 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 13237 */;
+import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 13239 */;
+import ConjurePerfTraceList from "ConjurePerfTraceList" /* 13242 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 10987 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 11035 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -63,7 +63,7 @@ function PerfTraceRow(arg0) {
       const id = trace.id;
       const obj = ModalActionCreatorsDefault;
       const obj2 = { projectId: require, traceId: id };
-      obj.pushLazy(asyncRequire(13152, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+      obj.pushLazy(asyncRequire(13235, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
     },
     accessibilityLabel: trace.name,
     children: tmp8(View, obj3)
@@ -72,24 +72,24 @@ function PerfTraceRow(arg0) {
   const obj4 = { style: tmp.rowTop, children: items };
   Card = Card_Card.Card;
   const obj5 = { status: obj6.perfTraceStatus(trace) };
-  const tmp9 = trace(13158);
+  const tmp9 = trace(13241);
   obj6 = ConjurePerfTraceLayout;
   items = [closure_8(tmp9, obj5), , ];
-  const obj7 = { variant: "text-sm/semibold", color: "text-default", style: tmp.rowName, lineClamp: 1, children: trace.name };
+  const obj7 = { variant: "body-sm/semibold", color: "text-default", style: tmp.rowName, lineClamp: 1, children: trace.name };
   items[1] = closure_8(Text_Text.Text, obj7);
-  const obj8 = { variant: "text-xs/normal", color: "text-subtle", children: obj9.perfTraceDuration(trace) };
+  const obj8 = { variant: "body-xs/normal", color: "text-subtle", children: obj9.perfTraceDuration(trace) };
   const Text = Text_Text.Text;
   obj9 = ConjurePerfTraceFormat;
   items[2] = closure_8(Text, obj8);
   items1 = [closure_9(View, obj4), , ];
-  const obj10 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 2, children: obj11.perfTraceSummary(trace) };
+  const obj10 = { variant: "body-xs/normal", color: "text-muted", lineClamp: 2, children: obj11.perfTraceSummary(trace) };
   const Text2 = Text_Text.Text;
   obj11 = ConjurePerfTraceFormat;
   items1[1] = closure_8(Text2, obj10);
   let tmp4Result = null;
   tmp8 = closure_9;
   if (null != error) {
-    const obj12 = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: error };
+    const obj12 = { variant: "body-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: error };
     tmp4Result = tmp4(Text_Text.Text, obj12);
   }
   items1[2] = tmp4Result;
@@ -258,7 +258,7 @@ export default function ConjurePerfTraceTab(projectId) {
   }, items5);
   if (0 === stateFromStoresArray.length) {
     let obj2 = { style: tmp.placeholder, children: items6 };
-    items6 = [closure_8(tmp4(tmp3[14]).Text, { variant: "text-sm/medium", color: "text-default", children: "No traces yet" }), closure_8(tmp4(tmp3[14]).Text, { variant: "text-sm/normal", color: "text-muted", children: "Turns and project operations over 100ms show up here as they run. Periodic checks and live preview requests show up only when they take a second or fail." })];
+    items6 = [closure_8(tmp4(tmp3[14]).Text, { variant: "body-sm/medium", color: "text-default", children: "No traces yet" }), closure_8(tmp4(tmp3[14]).Text, { variant: "body-sm/normal", color: "text-muted", children: "Turns and project operations over 100ms show up here as they run. Periodic checks and live preview requests show up only when they take a second or fail." })];
     tmp17Result2 = closure_9(View, obj2);
   } else {
     let obj3 = {
@@ -286,7 +286,7 @@ export default function ConjurePerfTraceTab(projectId) {
     tmp18 = closure_9;
     tmp19 = View;
     if (0 === memo1.length) {
-      tmp17Result = tmp17(tmp4(tmp3[14]).Text, { variant: "text-sm/normal", color: "text-muted", children: "No traces match this search." });
+      tmp17Result = tmp17(tmp4(tmp3[14]).Text, { variant: "body-sm/normal", color: "text-muted", children: "No traces match this search." });
     }
     items8[2] = tmp17Result;
     items9 = [tmp.list, ];
@@ -299,5 +299,5 @@ export default function ConjurePerfTraceTab(projectId) {
 export function openPerfTrace(projectId, traceId) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { projectId, traceId };
-  obj.pushLazy(asyncRequire(13152, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+  obj.pushLazy(asyncRequire(13235, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
 }

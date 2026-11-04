@@ -1,19 +1,19 @@
-// Module ID: 17595
-// Function ID: 17596
+// Module ID: 17685
+// Function ID: 17686
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1385, 2181, 8556, 1072, 21, 5141, 575, 1499, 563, 2176, 5747, 1113, 7103, 1187, 10408, 7282, 11677, 16731, 2]
+// Dependencies: [19, 17, 1385, 2181, 8573, 1072, 21, 5141, 575, 1499, 563, 2176, 5761, 1113, 7118, 1187, 10456, 7298, 11728, 16823, 2]
 // Exports: default
 
-// Module 17595 (SettingsChatScreen)
+// Module 17685 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl14 from "intl" /* 1113 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7282 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10408 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
-import SettingLayoutDefault from "SettingLayout" /* 16731 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7298 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10456 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
+import SettingLayoutDefault from "SettingLayout" /* 16823 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import SubscriptionStore from "SubscriptionStore" /* 2181 */;
@@ -47,7 +47,7 @@ function VideoUploadQualityNitroUpsell() {
     const obj = closure_0(dependencyMap[11]);
     return obj.hasPremiumSubscriptionToDisplay(currentUser, premiumTypeSubscription);
   });
-  const obj3 = { variant: "text-xs/normal", color: "text-muted", children: intl.format(require("intl").t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" }) };
+  const obj3 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(require("intl").t["Up+hSO"], { supportURL: "https://support.discord.com/hc/articles/9665451164951" }) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   const children = [closure_9(Text, obj3), ];
@@ -56,12 +56,12 @@ function VideoUploadQualityNitroUpsell() {
     const obj4 = { style: tmp3.card, children: closure_9(Card, obj5) };
     obj5 = { border: "none", shadow: "none", children: closure_10(View, obj6) };
     obj6 = { style: tmp3.cardContent, children: items2 };
-    Card = tmp(7103).Card;
+    Card = tmp(7118).Card;
     const obj7 = { style: tmp3.cardIcon, source: AssetRegistryDefault, size: require("native").Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
     const Icon = tmp(1187).Icon;
     items2 = [closure_9(Icon, obj7), ];
-    const obj8 = { variant: "text-sm/medium", color: "text-muted", children: intl2.format(require("intl").t.uW1zul, obj9) };
-    const Text2 = tmp(5747).Text;
+    const obj8 = { variant: "body-sm/medium", color: "text-muted", children: intl2.format(require("intl").t.uW1zul, obj9) };
+    const Text2 = tmp(5761).Text;
     intl2 = tmp(1113).intl;
     obj9 = {
       onClick() {

@@ -1,14 +1,14 @@
-// Module ID: 10757
-// Function ID: 10758
+// Module ID: 10805
+// Function ID: 10806
 // Name: PremiumGiftCountdownBadge
-// Dependencies: [19, 17, 21, 5141, 575, 1377, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1377, 5761, 2]
 // Exports: default
 
-// Module 10757 (PremiumGiftCountdownBadge)
+// Module 10805 (PremiumGiftCountdownBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -47,7 +47,7 @@ export default function PremiumGiftCountdownBadge(text) {
   const obj = { style: items, children: items1 };
   items = [tmp.badge, style];
   items1 = [icon, ];
-  const obj2 = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.text, children: str.toUpperCase() };
+  const obj2 = { variant: "body-xs/semibold", color: "text-overlay-light", style: tmp.text, children: str.toUpperCase() };
   const Text = Text_Text.Text;
   items1[1] = React3(Text, obj2);
   return hasOwnProperty(View, obj);

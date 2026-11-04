@@ -1,16 +1,16 @@
-// Module ID: 17375
-// Function ID: 17376
+// Module ID: 17466
+// Function ID: 17467
 // Name: GuildRoleSubscriptionBenefitRow
-// Dependencies: [19, 17, 4990, 21, 5141, 575, 17373, 1187, 5747, 504, 5772, 1113, 17376, 2]
+// Dependencies: [19, 17, 4990, 21, 5141, 575, 17464, 1187, 5761, 504, 5786, 1113, 17467, 2]
 // Exports: ChannelBenefitRow, IntangibleBenefitRow
 
-// Module 17375 (GuildRoleSubscriptionBenefitRow)
+// Module 17466 (GuildRoleSubscriptionBenefitRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import useChannelNameDefault from "useChannelName" /* 5772 */;
-import EmojiIconDefault from "EmojiIcon" /* 17373 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17376 */;
+import useChannelNameDefault from "useChannelName" /* 5786 */;
+import EmojiIconDefault from "EmojiIcon" /* 17464 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 17467 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import Fragment from "Fragment" /* 21 */;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroRequire;
 let obj2;
 let tmp6;
-const Text_Text = tmp6(5747);
+const Text_Text = tmp6(5761);
 function BenefitRow(description) {
   let emojiId;
   let guildId;
@@ -38,7 +38,7 @@ function BenefitRow(description) {
   let tmp4Result = null;
   const tmp4 = hasOwnProperty;
   if (null != description) {
-    const obj3 = { style: tmp.description, variant: "text-sm/normal", color: "interactive-text-default", children: description };
+    const obj3 = { style: tmp.description, variant: "body-sm/normal", color: "interactive-text-default", children: description };
     tmp4Result = tmp4(Text_Text.Text, obj3);
   }
   items1[1] = tmp4Result;
@@ -63,23 +63,23 @@ export function ChannelBenefitRow(benefit) {
   const items1 = [benefit.ref_id];
   const obj = benefit(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(benefit.ref_id), items1);
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1113).t.bz1PZX) + "]" };
+  const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: "[" + intl.string(benefit(1113).t.bz1PZX) + "]" };
   const tmp5 = useChannelNameDefault(stateFromStores);
-  const Text = benefit(5747).Text;
+  const Text = benefit(5761).Text;
   intl = benefit(1113).intl;
   let tmp7 = closure_5(Text, obj2);
   if (null != stateFromStores) {
     const obj3 = { style: tmp.channelTitle, children: items2 };
     items2 = [, ];
     const obj4 = { style: tmp.channelIcon, size: "xs", color: "interactive-text-default" };
-    const tmp2Result = benefit(17376);
+    const tmp2Result = benefit(17467);
     items2[0] = tmp2Result.renderChannelIcon(stateFromStores, obj4);
-    const obj5 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: tmp5 };
-    items2[1] = closure_5(benefit(5747).Text, obj5);
+    const obj5 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: tmp5 };
+    items2[1] = closure_5(benefit(5761).Text, obj5);
     tmp7 = closure_6(View, obj3);
   }
   const obj6 = { emojiId: tmp2Result2.getBenefitEmojiId(benefit), guildId, title: tmp7, description: benefit.description };
-  tmp2Result2 = benefit(17376);
+  tmp2Result2 = benefit(17467);
   return closure_5(BenefitRow, obj6);
 }
 export function IntangibleBenefitRow(benefit) {
@@ -90,6 +90,6 @@ export function IntangibleBenefitRow(benefit) {
   const obj = { emojiId: obj2.getBenefitEmojiId(benefit), guildId, title: hasOwnProperty(Text_Text.Text, obj3), description: benefit.description };
   guildId = benefit.guildId;
   obj2 = GuildRoleSubscriptionBenefitUtils;
-  obj3 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: benefit.name };
+  obj3 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: benefit.name };
   return hasOwnProperty(BenefitRow, obj);
 }

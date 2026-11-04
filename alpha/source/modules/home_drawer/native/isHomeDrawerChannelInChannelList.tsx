@@ -1,12 +1,12 @@
-// Module ID: 18538
-// Function ID: 18539
+// Module ID: 18633
+// Function ID: 18634
 // Name: isHomeDrawerChannelInChannelList
-// Dependencies: [6895, 504, 7005, 2]
+// Dependencies: [6910, 504, 7020, 2]
 // Exports: useIsHomeDrawerChannelInChannelList
 
-// Module 18538 (isHomeDrawerChannelInChannelList)
+// Module 18633 (isHomeDrawerChannelInChannelList)
 import get_initialized from "get initialized" /* 504 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/home_drawer/native/isHomeDrawerChannelInChannelList.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 7694
-// Function ID: 7695
+// Module ID: 7710
+// Function ID: 7711
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1231, 5172, 4977, 4982, 1072, 1082, 1252, 4974, 7695, 4975, 504, 5193, 4973, 5171, 11, 2]
+// Dependencies: [32, 19, 1231, 5172, 4977, 4982, 1072, 1082, 1252, 4974, 7711, 4975, 504, 5193, 4973, 5171, 11, 2]
 // Exports: useDangerouslyPeekDismissibleContents, useGetDismissibleContent, useGetSingleUseGuildDismissibleContent_UNSAFE, useGetSnowflakeBoundDismissibleContent, useGetSnowflakeBoundGuildDismissibleContent_UNSAFE, useGetTimeRecurringDismissibleContent, useGetTimeRecurringGuildDismissibleContent_UNSAFE, useGetTimeRecurringSnowflakeBoundDismissibleContent, useGetVersionedDismissibleContent
 
-// Module 7694 (useGetDismissibleContent)
+// Module 7710 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
@@ -31,6 +31,7 @@ function useGetVisibleContent(found1, stateFromStores, GUILD_HEADER_TOOLTIPS, la
   let ref;
   let snowflakeId;
   let tmp6;
+  let version;
   _require = found1;
   let closure_1 = stateFromStores;
   dependencyMap = GUILD_HEADER_TOOLTIPS;
@@ -221,6 +222,7 @@ export function useGetDismissibleContent(items3, groupName) {
 export function useGetVersionedDismissibleContent(COLLECTIBLES_SHOP_ENTRY_MARKETING, latestVersion, groupName) {
   let guildId;
   let stateFromStores;
+  let version;
   _require = COLLECTIBLES_SHOP_ENTRY_MARKETING;
   const tmp = _require;
   let obj = require("get initialized");

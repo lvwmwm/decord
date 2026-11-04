@@ -1,17 +1,17 @@
-// Module ID: 18796
-// Function ID: 18797
+// Module ID: 18897
+// Function ID: 18898
 // Name: ResourcesRow
-// Dependencies: [19, 17, 18797, 21, 5141, 575, 18798, 13964, 5381, 18799, 2123, 7106, 5747, 1113, 2]
+// Dependencies: [19, 17, 18898, 21, 5141, 575, 18899, 14050, 5382, 18900, 2123, 7121, 5761, 1113, 2]
 // Exports: default
 
-// Module 18796 (ResourcesRow)
+// Module 18897 (ResourcesRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13964 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18797 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 18798 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14050 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18898 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 18899 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -57,7 +57,7 @@ export default function ResourcesRow(guildId) {
         children: closure_1_5(guildId(dependencyMap[12]).Text, obj2)
       };
       const PressableOpacity = guildId(dependencyMap[11]).PressableOpacity;
-      obj2 = { variant: "text-md/medium", color: "text-default", children: children.title };
+      obj2 = { variant: "body-md/medium", color: "text-default", children: children.title };
       return closure_1_5(PressableOpacity, obj, children.channelId);
     }),
 
@@ -71,13 +71,13 @@ export default function ResourcesRow(guildId) {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guildId };
-          obj.openLazy(asyncRequire(18799, dependencyMap.paths), closure_4, obj2);
+          obj.openLazy(asyncRequire(18900, dependencyMap.paths), closure_4, obj2);
         },
       children: closure_5(Text, obj3)
     };
-    let PressableOpacity = guildId(7106).PressableOpacity;
-    obj3 = { variant: "text-md/medium", color: "text-default", children: intl.format(guildId(1113).t.F6iMs4, obj4) };
-    Text = guildId(5747).Text;
+    let PressableOpacity = guildId(7121).PressableOpacity;
+    obj3 = { variant: "body-md/medium", color: "text-default", children: intl.format(guildId(1113).t.F6iMs4, obj4) };
+    Text = guildId(5761).Text;
     intl = guildId(1113).intl;
     obj4 = { count: arr.length - 2 };
     tmp6 = closure_5(PressableOpacity, obj2);

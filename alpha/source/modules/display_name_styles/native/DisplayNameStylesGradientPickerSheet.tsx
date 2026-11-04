@@ -1,16 +1,16 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17579
+// Function ID: 17580
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 17480, 1072, 21, 5141, 575, 1404, 10905, 1402, 17481, 5383, 1252, 5381, 16593, 5395, 17476, 5754, 1113, 5710, 1090, 17490, 12, 7106, 2]
+// Dependencies: [32, 19, 17, 17570, 1072, 21, 5141, 575, 1405, 10953, 1402, 17571, 5384, 1252, 5382, 16684, 5396, 17566, 5768, 1113, 5723, 1090, 17580, 12, 7121, 2]
 // Exports: default
 
-// Module 17489 (DisplayNameStylesGradientPickerSheet)
+// Module 17579 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17480 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17570 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

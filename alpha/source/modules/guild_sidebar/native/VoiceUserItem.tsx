@@ -1,21 +1,21 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18422
+// Function ID: 18423
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1072, 21, 1187, 11182, 5141, 575, 11177, 9419, 9421, 1252, 1411, 18326, 9368, 9370, 9364, 9366, 11173, 8732, 14873, 9422, 2]
+// Dependencies: [19, 17, 1072, 21, 1187, 11232, 5141, 575, 11227, 9436, 9438, 1252, 1411, 18423, 9385, 9387, 9381, 9383, 11223, 8749, 14953, 9439, 2]
 // Exports: getVoiceUserHeight
 
-// Module 18325 (VoiceUserItem)
+// Module 18422 (VoiceUserItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import ChannelListLayout from "ChannelListLayout" /* 11177 */;
+import ChannelListLayout from "ChannelListLayout" /* 11227 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let size;
 const View = react_native.View;
 const AnalyticEvents = Constants.AnalyticEvents;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let c8 = "text-sm/medium";
+let c8 = "body-sm/medium";
 let c9 = "redesign-channel-name-muted-text";
 const XSMALL_20 = native.AvatarSizes.XSMALL_20;
 let createStyles = createStyles_mod;

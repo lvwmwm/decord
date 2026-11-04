@@ -1,24 +1,24 @@
-// Module ID: 15225
-// Function ID: 15226
+// Module ID: 15308
+// Function ID: 15309
 // Name: transformMessageAttachments
-// Dependencies: [8502, 1072, 1398, 10241, 6171, 8814, 1377, 8813, 1113, 13546, 8835, 8964, 8341, 8833, 2]
+// Dependencies: [8519, 1072, 1398, 10289, 6186, 8831, 1377, 8830, 1113, 13630, 8852, 8981, 8357, 8850, 2]
 // Exports: default
 
-// Module 15225 (transformMessageAttachments)
+// Module 15308 (transformMessageAttachments)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 6171 */;
-import _modDef8341 from "module_8341" /* 8341 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8502 */;
-import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 8813 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8814 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8833 */;
-import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8835 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8964 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10241 */;
-import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 13546 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 6186 */;
+import _modDef8357 from "module_8357" /* 8357 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8519 */;
+import sanitizeMediaDimension3 from "sanitizeMediaDimension" /* 8830 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8831 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 8850 */;
+import SuspiciousDownloadUtils from "SuspiciousDownloadUtils" /* 8852 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8981 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10289 */;
+import PlaintextFilePreviewHelpers from "PlaintextFilePreviewHelpers" /* 13630 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;
@@ -203,7 +203,7 @@ export default function transformMessageAttachments(arg0) {
           const intl3 = tmp(1113).intl;
           stringResult1 = intl3.string(tmp(1113).t["0PQYk3"]);
         }
-        obj12 = _modDef8341;
+        obj12 = _modDef8357;
         const intl4 = tmp(1113).intl;
         str6 = intl4.string(intl8.t.jCV1Tz);
         intl5 = tmp(1113).intl;

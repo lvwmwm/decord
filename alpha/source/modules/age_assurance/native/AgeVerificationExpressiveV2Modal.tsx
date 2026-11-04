@@ -1,21 +1,21 @@
-// Module ID: 8130
-// Function ID: 8131
+// Module ID: 8146
+// Function ID: 8147
 // Name: AgeVerificationExpressiveV2Modal
-// Dependencies: [5, 32, 19, 17, 6848, 1072, 21, 1393, 8131, 8133, 8135, 1377, 8137, 8139, 7251, 5141, 575, 8141, 8142, 8126, 8143, 6849, 8112, 8113, 6846, 8144, 8096, 8097, 6147, 8145, 5747, 8079, 2190, 8149, 1113, 3223, 7186, 7101, 8154, 8267, 7498, 6864, 7124, 8269, 8270, 1266, 7290, 2]
+// Dependencies: [5, 32, 19, 17, 6863, 1072, 21, 1393, 8147, 8149, 8151, 1377, 8153, 8155, 7271, 5141, 575, 8157, 8158, 8142, 8159, 6864, 8128, 8129, 6861, 8160, 8112, 8113, 6162, 8161, 5761, 8095, 2190, 8165, 1113, 3223, 7201, 7116, 8170, 8283, 7514, 6879, 7139, 8285, 8286, 1266, 7306, 2]
 // Exports: default
 
-// Module 8130 (AgeVerificationExpressiveV2Modal)
+// Module 8146 (AgeVerificationExpressiveV2Modal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6846 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6848 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
-import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8112 */;
-import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 8113 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6861 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6863 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
+import AgeVerificationCustomTab from "AgeVerificationCustomTab" /* 8128 */;
+import AgeVerificationAuthSession from "AgeVerificationAuthSession" /* 8129 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -271,14 +271,14 @@ function MethodsScreen(onClose) {
     tmp2Result = tmp2(tmp3[24]);
     const items8 = [tmp19(Text, obj11), ];
     const obj12 = {
-      variant: "text-md/medium",
+      variant: "body-md/medium",
       color: "text-subtle",
       style: tmp.header,
       children: getAgeVerificationGetStartedSubtitle(entryPoint, () => {
           const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
           AgeVerificationActionCreatorsDefault;
           const obj = HelpdeskUtilsDefault;
-          openUrl(obj.getArticleURL(HelpdeskArticles.TIGGER_PAWTECT_LEARN_MORE));
+          openUrl(obj.getArticleURL(HelpdeskArticles.AGE_VERIFICATION_LEARN_MORE));
           const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
           AgeVerificationAnalyticsUtils;
           const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_V2, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.LEARN_MORE);
@@ -414,12 +414,12 @@ function MethodsScreen(onClose) {
                   };
                   Stack = tmp(tmp2[28]).Stack;
                   items = [, ];
-                  const obj6 = { variant: "text-sm/normal", color: "text-muted", children: children.description };
+                  const obj6 = { variant: "body-sm/normal", color: "text-muted", children: children.description };
                   items[0] = tmp5(navigation(onComplete[30]).Text, obj6);
                   let tmp5Result2 = null != children.providedBy;
                   tmp14 = closure_10;
                   if (tmp5Result2) {
-                    const obj7 = { variant: "text-sm/normal", color: "text-muted", children: children.providedBy };
+                    const obj7 = { variant: "body-sm/normal", color: "text-muted", children: children.providedBy };
                     tmp5Result2 = tmp5(tmp(tmp2[30]).Text, obj7);
                   }
                   items[1] = tmp5Result2;
@@ -436,7 +436,7 @@ function MethodsScreen(onClose) {
     items9[2] = tmp20Result;
     let tmp19Result10 = !loading && tmp6 && null != footerMessage;
     if (tmp19Result10) {
-      const obj22 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.footer, children: footerMessage };
+      const obj22 = { variant: "body-sm/normal", color: "text-subtle", style: tmp.footer, children: footerMessage };
       tmp19Result10 = tmp19(tmp2(tmp3[30]).Text, obj22);
     }
     const obj23 = { children: c9(ModalContent, obj24) };

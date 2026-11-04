@@ -1,17 +1,17 @@
-// Module ID: 12164
-// Function ID: 12165
+// Module ID: 12223
+// Function ID: 12224
 // Name: SpeakerTile
-// Dependencies: [19, 17, 6963, 5801, 21, 5141, 575, 5138, 12165, 1493, 8897, 504, 8074, 12166, 7106, 1113, 8945, 1187, 12168, 12170, 7262, 5747, 2]
+// Dependencies: [19, 17, 6978, 5815, 21, 5141, 575, 5138, 12224, 1493, 8914, 504, 8090, 12225, 7121, 1113, 8962, 1187, 12227, 12229, 7238, 5761, 2]
 // Exports: getSizeStyle, getTileWidthStyle
 
-// Module 12164 (SpeakerTile)
+// Module 12223 (SpeakerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CallConstants from "CallConstants" /* 5801 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8074 */;
-import StageTileTypes from "StageTileTypes" /* 12165 */;
+import CallConstants from "CallConstants" /* 5815 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8090 */;
+import StageTileTypes from "StageTileTypes" /* 12224 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6963 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import ColorUtils_mod from "ColorUtils" /* 5138 */;
@@ -135,7 +135,7 @@ const memoResult = react.memo(function SpeakerTile(channel) {
         tmp10Result = tmp10(tmp11, obj13);
       }
       items10 = [tmp10Result, ];
-      const obj16 = { lineClamp: 1, style: tmp.nameplateText, variant: "text-sm/medium", color: "text-overlay-light", children: tmp9 };
+      const obj16 = { lineClamp: 1, style: tmp.nameplateText, variant: "body-sm/medium", color: "text-overlay-light", children: tmp9 };
       items10[1] = closure_7(channel(user[21]).Text, obj16);
       items7[1] = closure_8(View, obj12);
       return closure_8(PressableOpacity, obj3);

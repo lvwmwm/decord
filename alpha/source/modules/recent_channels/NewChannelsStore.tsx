@@ -1,24 +1,24 @@
-// Module ID: 7835
-// Function ID: 7836
+// Module ID: 7851
+// Function ID: 7852
 // Name: NewChannelsStore
-// Dependencies: [1231, 502, 4990, 5071, 5053, 5012, 6962, 6895, 1072, 1089, 6984, 7399, 11, 504, 6872, 572, 2]
+// Dependencies: [1231, 502, 4990, 5071, 5053, 5012, 6977, 6910, 1072, 1089, 6999, 7415, 11, 504, 6887, 572, 2]
 
-// Module 7835 (NewChannelsStore)
+// Module 7851 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
-import NSFWContentGate from "NSFWContentGate" /* 6872 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6984 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7399 */;
+import NSFWContentGate from "NSFWContentGate" /* 6887 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6999 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7415 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -142,11 +142,11 @@ function pruneNewChannels() {
   const obj = SnowflakeUtilsDefault;
   const keys = obj.keys(closure_16);
   const item = keys.forEach((item) => {
-    const f124004 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
+    const f124592 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
     let closure_0 = item;
     const items = [...closure_16[item]];
-    closure_16[item] = new Set(items.filter(f124004));
-    new Set(items.filter(f124004));
+    closure_16[item] = new Set(items.filter(f124592));
+    new Set(items.filter(f124592));
   });
 }
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;

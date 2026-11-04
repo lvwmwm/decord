@@ -1,24 +1,24 @@
-// Module ID: 19880
-// Function ID: 19881
+// Module ID: 19996
+// Function ID: 19997
 // Name: GuildSettingsModalEmoji
-// Dependencies: [32, 19, 17, 5012, 19881, 21, 12, 10187, 5141, 575, 1113, 5095, 8587, 504, 9148, 5747, 19883, 19887, 1187, 19888, 7080, 5729, 7414, 1499, 7124, 2]
+// Dependencies: [32, 19, 17, 5012, 19997, 21, 12, 10235, 5141, 575, 1113, 5095, 8604, 504, 9165, 5761, 19999, 20003, 1187, 20004, 7095, 5742, 7430, 1499, 7139, 2]
 // Exports: computeSectionItem, default
 
-// Module 19880 (GuildSettingsModalEmoji)
+// Module 19996 (GuildSettingsModalEmoji)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import RoleSubscriptionEmojiUtils from "RoleSubscriptionEmojiUtils" /* 5095 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10187 */;
-import EmojiRow2 from "EmojiRow" /* 19883 */;
-import HeaderRow from "HeaderRow" /* 19887 */;
-import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 19888 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10235 */;
+import EmojiRow2 from "EmojiRow" /* 19999 */;
+import HeaderRow from "HeaderRow" /* 20003 */;
+import EmptyServerSettingsEmoji from "EmptyServerSettingsEmoji" /* 20004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19881 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19997 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12_mod from "module_12" /* 12 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -97,7 +97,7 @@ class ManageEmojisModal {
       ({ item, index } = arg0);
       const type = item.type;
       if ("SECTION" === type) {
-        const obj2 = { style: metroImportAll.section, variant: "text-xs/semibold", color: "text-default", children: item.section };
+        const obj2 = { style: metroImportAll.section, variant: "body-xs/semibold", color: "text-default", children: item.section };
         return metroImportAll(Text_Text.Text, obj2);
       } else if ("EMOJI" === type) {
         let type1;
@@ -197,7 +197,7 @@ const computeEmojiItems = module_12.memoize((arr, stateFromStores) => {
   let arr3;
   let items1;
   let items4;
-  const f118026 = (emoji) => !emoji.emoji.animated;
+  const f118847 = (emoji) => !emoji.emoji.animated;
   _require = stateFromStores;
   const found = arr.filter((item) => {
     const obj = RoleSubscriptionEmojiUtils;
@@ -208,8 +208,8 @@ const computeEmojiItems = module_12.memoize((arr, stateFromStores) => {
   const obj2 = require("GuildBoostingUtils");
   const maxEmojiSlots = obj2.getMaxEmojiSlots(stateFromStores);
   const obj3 = module_12;
-  [arr2, arr3] = obj3.partition(reversed, f118026);
-  _slicedToArray(obj3.partition(reversed, f118026), 2);
+  [arr2, arr3] = obj3.partition(reversed, f118847);
+  _slicedToArray(obj3.partition(reversed, f118847), 2);
   const intl = require("intl").intl;
   const stringResult = intl.string(require("intl").t.sMOuuS);
   const bound = Math.max(maxEmojiSlots - arr2.length, 0);

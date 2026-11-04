@@ -1,15 +1,15 @@
-// Module ID: 7223
-// Function ID: 7224
+// Module ID: 7243
+// Function ID: 7244
 // Name: InputFieldContainer
-// Dependencies: [19, 17, 21, 575, 5719, 5141, 7224, 5747, 1652, 5757, 2]
+// Dependencies: [19, 17, 21, 575, 5732, 5141, 7244, 5761, 1652, 5771, 2]
 // Exports: InputFieldContainer
 
-// Module 7223 (InputFieldContainer)
+// Module 7243 (InputFieldContainer)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import useToken4 from "useToken" /* 5719 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import InputTypes from "InputTypes" /* 7224 */;
+import useToken4 from "useToken" /* 5732 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import InputTypes from "InputTypes" /* 7244 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,7 +25,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5747);
+const Text_Text = tmp(5761);
 function useInputStyles(size) {
   let INPUT_FIELD_RADIUS_LG;
   let INPUT_FIELD_TEXT_STYLE_LG;
@@ -103,7 +103,7 @@ let closure_9 = createStyles.createStyles(() => {
   }
   let str2 = arg4;
   if (arg4 === undefined) {
-    str2 = "text-md/medium";
+    str2 = "body-md/medium";
   }
   const obj = { sm: InputTypes.InputHeights.SM, md: InputTypes.InputHeights.MD, lg: InputTypes.InputHeights.LG };
   const tmp5 = { sm: nativeDefault.space.PX_8, md: nativeDefault.space.PX_12, lg: nativeDefault.space.PX_16 }[str];

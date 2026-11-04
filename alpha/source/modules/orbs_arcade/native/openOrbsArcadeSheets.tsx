@@ -1,12 +1,12 @@
-// Module ID: 17184
-// Function ID: 17185
+// Module ID: 17276
+// Function ID: 17277
 // Name: openOrbsArcadeSheets
-// Dependencies: [5381, 17185, 2123, 17195, 17200, 17201, 2]
+// Dependencies: [5382, 17277, 2123, 17287, 17292, 17293, 2]
 // Exports: openOrbsArcadeHowToPlaySheet, openOrbsArcadeInfoSheet, openOrbsArcadeRewardUnlockedSheet, openOrbsArcadeRewardsSheet
 
-// Module 17184 (openOrbsArcadeSheets)
+// Module 17276 (openOrbsArcadeSheets)
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/orbs_arcade/native/openOrbsArcadeSheets.tsx");
@@ -14,17 +14,17 @@ const result = size.fileFinishedImporting("modules/orbs_arcade/native/openOrbsAr
 export function openOrbsArcadeHowToPlaySheet(id) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id };
-  obj.openLazy(asyncRequire(17185, dependencyMap.paths), "OrbsArcadeHowToPlaySheet", obj2);
+  obj.openLazy(asyncRequire(17277, dependencyMap.paths), "OrbsArcadeHowToPlaySheet", obj2);
 }
 export function openOrbsArcadeRewardsSheet(id) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id };
-  obj.openLazy(asyncRequire(17195, dependencyMap.paths), "OrbsArcadeRewardsSheet", obj2);
+  obj.openLazy(asyncRequire(17287, dependencyMap.paths), "OrbsArcadeRewardsSheet", obj2);
 }
 export function openOrbsArcadeInfoSheet(id) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id };
-  obj.openLazy(asyncRequire(17200, dependencyMap.paths), "OrbsArcadeInfoSheet", obj2);
+  obj.openLazy(asyncRequire(17292, dependencyMap.paths), "OrbsArcadeInfoSheet", obj2);
 }
 export function openOrbsArcadeRewardUnlockedSheet(id, set) {
   if (set === undefined) {
@@ -35,5 +35,5 @@ export function openOrbsArcadeRewardUnlockedSheet(id, set) {
   }
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { gameId: id, unlockedRewardIds: set };
-  obj.openLazy(asyncRequire(17201, dependencyMap.paths), "OrbsArcadeRewardUnlockedSheet", obj2);
+  obj.openLazy(asyncRequire(17293, dependencyMap.paths), "OrbsArcadeRewardUnlockedSheet", obj2);
 }

@@ -1,14 +1,14 @@
-// Module ID: 18674
-// Function ID: 18675
+// Module ID: 18775
+// Function ID: 18776
 // Name: ForYouEmptyState
-// Dependencies: [19, 17, 21, 5141, 18675, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 18776, 5761, 1113, 2]
 // Exports: ForYouEmptyState
 
-// Module 18674 (ForYouEmptyState)
+// Module 18775 (ForYouEmptyState)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import MailboxSpotIllustration from "MailboxSpotIllustration" /* 18675 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import MailboxSpotIllustration from "MailboxSpotIllustration" /* 18776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -34,13 +34,13 @@ export function ForYouEmptyState(height) {
   items1 = [, , ];
   const obj2 = { style: tmp.image, children: _false(MailboxSpotIllustration.MailboxSpotIllustration, { scale: 0.75 }) };
   items1[0] = _false(View, obj2);
-  const obj3 = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-md/semibold", style: items2, children: intl.string(intl3.t.MwjTvn) };
+  const obj3 = { accessibilityRole: "header", color: "mobile-text-heading-primary", variant: "heading-sm/semibold", style: items2, children: intl.string(intl3.t.MwjTvn) };
   items2 = [, ];
   ({ text: arr3[0], headerText: arr3[1] } = tmp);
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items1[1] = _false(Text, obj3);
-  const obj4 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: intl2.string(intl3.t.AKBgPy) };
+  const obj4 = { color: "text-default", variant: "body-md/medium", style: tmp.text, children: intl2.string(intl3.t.AKBgPy) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items1[2] = _false(Text2, obj4);

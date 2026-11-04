@@ -1,14 +1,14 @@
-// Module ID: 12784
-// Function ID: 12785
+// Module ID: 12865
+// Function ID: 12866
 // Name: ConjureAttachmentPills
-// Dependencies: [19, 17, 21, 5141, 575, 12283, 5829, 7103, 1113, 3995, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 12344, 5843, 7118, 1113, 3995, 5761, 2]
 // Exports: default
 
-// Module 12784 (ConjureAttachmentPills)
+// Module 12865 (ConjureAttachmentPills)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12283 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12344 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -54,7 +54,7 @@ export default function ConjureAttachmentPills(projectId) {
         return closure_2(id.id);
       }} accessibilityLabel={intl.formatToPlainString(closure_1(closure_2[9]).GtNukg, obj2)}>{null}</Card>;
     } else {
-      ({ variant: "text-xs/medium", color: "text-muted", children: intl2.formatToPlainString(closure_1(closure_2[9]).nd81jR, obj6) });
+      ({ variant: "body-xs/medium", color: "text-muted", children: intl2.formatToPlainString(closure_1(closure_2[9]).nd81jR, obj6) });
       const Text = projectId(closure_2[10]).Text;
       intl2 = projectId(closure_2[8]).intl;
       const _HermesInternal = HermesInternal;

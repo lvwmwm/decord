@@ -1,28 +1,28 @@
-// Module ID: 18741
-// Function ID: 18742
+// Module ID: 18842
+// Function ID: 18843
 // Name: ICYMICustomStatusRow
-// Dependencies: [32, 19, 17, 1385, 9030, 21, 575, 5141, 18682, 1187, 13902, 5747, 1113, 9952, 5138, 504, 6559, 9418, 10879, 10896, 1377, 7106, 5858, 10362, 12884, 9580, 11, 1089, 18738, 5195, 6980, 18742, 9637, 2]
+// Dependencies: [32, 19, 17, 1385, 9047, 21, 575, 5141, 18783, 1187, 13988, 5761, 1113, 9970, 5138, 504, 6574, 9435, 10927, 10944, 1377, 7121, 5872, 10410, 12965, 9599, 11, 1089, 18839, 5195, 6995, 18843, 9656, 2]
 // Exports: default
 
-// Module 18741 (ICYMICustomStatusRow)
+// Module 18842 (ICYMICustomStatusRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TrashIcon from "TrashIcon" /* 5858 */;
-import Pressables from "Pressables" /* 7106 */;
-import ReactionIcon from "ReactionIcon" /* 9580 */;
-import PencilIcon from "PencilIcon" /* 10362 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12884 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13902 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TrashIcon from "TrashIcon" /* 5872 */;
+import Pressables from "Pressables" /* 7121 */;
+import ReactionIcon from "ReactionIcon" /* 9599 */;
+import PencilIcon from "PencilIcon" /* 10410 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12965 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13988 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import ICYMIStore from "ICYMIStore" /* 9030 */;
+import ICYMIStore from "ICYMIStore" /* 9047 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
-import createICYMIStyles from "createICYMIStyles" /* 18682 */;
+import createICYMIStyles from "createICYMIStyles" /* 18783 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -35,7 +35,7 @@ function UploadPlaceholder() {
   const obj2 = { source: AssetRegistryDefault, size: native.IconSizes.SMALL };
   const Icon = native.Icon;
   items = [metroImportAll(Icon, obj2), ];
-  const obj3 = { variant: "text-md/normal", color: "text-strong", children: intl.string(intl4.t["3UB9ad"]) };
+  const obj3 = { variant: "body-md/normal", color: "text-strong", children: intl.string(intl4.t["3UB9ad"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = metroImportAll(Text, obj3);
@@ -225,13 +225,13 @@ export default function GravityCustomStatusEntryRow(id) {
       let obj6 = { fontFamily: displayNameStylesFont };
       tmp32 = obj6;
     }
-    const obj7 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp32, children: tmp14Result9.getName(stateFromStores1) };
+    const obj7 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp32, children: tmp14Result9.getName(stateFromStores1) };
     tmp14Result9 = userId(renderForScreenshot[29]);
     items6 = [tmp31(Text, obj7), ];
     let tmp31Result = hasStatus;
     const obj8 = { style: tmp.timestamp, children: items7 };
     if (tmp31Result) {
-      const obj9 = { lineClamp: 1, variant: "text-sm/normal", color: "text-muted", children: getRelativeTimestamp(tmp14Result10.extractTimestamp(id)) };
+      const obj9 = { lineClamp: 1, variant: "body-sm/normal", color: "text-muted", children: getRelativeTimestamp(tmp14Result10.extractTimestamp(id)) };
       const Text2 = tmp2(tmp3[11]).Text;
       getRelativeTimestamp = tmp2(tmp3[30]).getRelativeTimestamp;
       tmp2(renderForScreenshot[30]);
@@ -246,7 +246,7 @@ export default function GravityCustomStatusEntryRow(id) {
     items7[1] = tmp31Result7;
     let tmp31Result8 = null;
     if (tmp27) {
-      const obj10 = { lineClamp: 1, variant: "text-sm/medium", color: "text-brand", children: intl.string(tmp2(renderForScreenshot[12]).t.tWnHcL) };
+      const obj10 = { lineClamp: 1, variant: "body-sm/medium", color: "text-brand", children: intl.string(tmp2(renderForScreenshot[12]).t.tWnHcL) };
       const Text3 = tmp2(tmp3[11]).Text;
       intl = tmp2(tmp3[12]).intl;
       tmp31Result8 = tmp31(Text3, obj10);
@@ -255,7 +255,7 @@ export default function GravityCustomStatusEntryRow(id) {
     items6[1] = closure_9(closure_5, obj8);
     tmp31Result9 = null;
     if ("otherUserStatus" === variant.kind) {
-      const obj11 = { variant: "text-sm/normal", lineClamp: 1, color: "text-default", children: intl2.string(tmp2(renderForScreenshot[12]).t.fxOLPR) };
+      const obj11 = { variant: "body-sm/normal", lineClamp: 1, color: "text-default", children: intl2.string(tmp2(renderForScreenshot[12]).t.fxOLPR) };
       const Text4 = tmp2(tmp3[11]).Text;
       intl2 = tmp2(tmp3[12]).intl;
       tmp31Result9 = tmp31(Text4, obj11);
@@ -301,13 +301,13 @@ export default function GravityCustomStatusEntryRow(id) {
     const obj18 = { style: tmp.emojiTextContainer, children: items14 };
     items14 = [tmp20Result, , ];
     if (tmp31Result10) {
-      const obj19 = { style: tmp.emojiText, variant: "text-md/normal", children: gameMentionsAsPlainText };
+      const obj19 = { style: tmp.emojiText, variant: "body-md/normal", children: gameMentionsAsPlainText };
       tmp31Result10 = tmp31(tmp2(tmp3[11]).Text, obj19);
     }
     items14[1] = tmp31Result10;
     let tmp31Result11 = !hasStatus;
     if (tmp31Result11) {
-      const obj20 = { variant: "text-md/normal", children: intl3.string(tmp2(renderForScreenshot[12]).t["6ojWO0"]) };
+      const obj20 = { variant: "body-md/normal", children: intl3.string(tmp2(renderForScreenshot[12]).t["6ojWO0"]) };
       const Text5 = tmp2(tmp3[11]).Text;
       intl3 = tmp2(tmp3[12]).intl;
       tmp31Result11 = tmp31(Text5, obj20);

@@ -1,16 +1,16 @@
-// Module ID: 9866
-// Function ID: 9867
+// Module ID: 9884
+// Function ID: 9885
 // Name: TwoWayLinkPreConnect
-// Dependencies: [32, 5, 19, 17, 1072, 21, 3, 5141, 7467, 9867, 5829, 1377, 9862, 7468, 38, 572, 5837, 5747, 1113, 7412, 5754, 2]
+// Dependencies: [32, 5, 19, 17, 1072, 21, 3, 5141, 7483, 9885, 5843, 1377, 9880, 7484, 38, 572, 5851, 5761, 1113, 7428, 5768, 2]
 // Exports: TwoWayLinkPreConnect
 
-// Module 9866 (TwoWayLinkPreConnect)
+// Module 9884 (TwoWayLinkPreConnect)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7467 */;
-import TwoWayLinkType from "TwoWayLinkType" /* 9867 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7483 */;
+import TwoWayLinkType from "TwoWayLinkType" /* 9885 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -144,11 +144,11 @@ export function TwoWayLinkPreConnect(platformType) {
   items4 = [tmp12(tmp13, obj4), , , ];
   const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: twoWayLinkStyles.title, accessibilityRole: "header", children: title };
   items4[1] = tmp12(platformType(tmp3[17]).Text, obj5);
-  let obj6 = { variant: "text-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body };
+  let obj6 = { variant: "body-md/medium", color: "text-default", style: twoWayLinkStyles.body, children: body };
   items4[2] = tmp12(platformType(tmp3[17]).Text, obj6);
   let tmp12Result = null != redirectDestination;
   if (tmp12Result) {
-    const obj7 = { style: tmp.redirect, variant: "text-sm/medium", color: "text-default", children: intl.format(platformType(tmp3[18]).t.XhlYYn, obj8) };
+    const obj7 = { style: tmp.redirect, variant: "body-sm/medium", color: "text-default", children: intl.format(platformType(tmp3[18]).t.XhlYYn, obj8) };
     const Text = tmp2(tmp3[17]).Text;
     intl = tmp2(tmp3[18]).intl;
     obj8 = { redirectUrl: redirectDestination };

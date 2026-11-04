@@ -1,10 +1,10 @@
-// Module ID: 6558
-// Function ID: 6559
+// Module ID: 6573
+// Function ID: 6574
 // Name: useMessageAuthor
-// Dependencies: [4990, 5053, 5047, 5012, 5083, 1385, 38, 504, 5195, 6559, 2]
+// Dependencies: [4990, 5053, 5047, 5012, 5083, 1385, 38, 504, 5195, 6574, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 6558 (useMessageAuthor)
+// Module 6573 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

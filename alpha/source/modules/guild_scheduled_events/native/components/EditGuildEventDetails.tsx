@@ -1,25 +1,25 @@
-// Module ID: 9210
-// Function ID: 9211
+// Module ID: 9227
+// Function ID: 9228
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 6975, 4996, 21, 5141, 1113, 2171, 9097, 1499, 5747, 5754, 2017, 9096, 5150, 9117, 9200, 9119, 2]
+// Dependencies: [32, 19, 6990, 4996, 21, 5141, 2171, 1113, 9114, 5150, 1499, 5761, 5768, 2017, 9113, 9134, 9217, 9136, 2]
 // Exports: default
 
-// Module 9210 (EditGuildEventDetails)
-import intl8 from "intl" /* 1113 */;
+// Module 9227 (EditGuildEventDetails)
+import intl9 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6975 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9096 */;
-import ScheduleUtils from "ScheduleUtils" /* 9097 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6990 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9113 */;
+import ScheduleUtils from "ScheduleUtils" /* 9114 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let navigation;
+let current, navigation;
 
 let c10;
 let c9;
@@ -33,24 +33,24 @@ let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/c
 export default function EditGuildEventDetails(guildEvent) {
   let _undefined;
   let _undefined2;
-  let c11;
+  let c10;
+  let c6;
   let c7;
-  let c8;
   let description;
   let entityType;
-  let intl;
   let intl2;
   let intl3;
   let intl4;
   let intl5;
   let intl6;
   let intl7;
-  let items3;
+  let intl8;
   let items4;
+  let items5;
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f94300 = () => {
+  const f94678 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef2171(scheduledStartTime), recurrenceRule);
   };
@@ -58,13 +58,16 @@ export default function EditGuildEventDetails(guildEvent) {
   const onChange = guildEvent.onChange;
   scheduledStartTime = undefined;
   let memo;
+  c6 = undefined;
   constants = undefined;
-  c8 = undefined;
-  c11 = undefined;
+  c10 = undefined;
+  let c11;
+  navigation = undefined;
   const initialGuildEvent = guildEvent.initialGuildEvent;
   ({ description, scheduledStartTime } = guildEvent);
-  const scheduledEndTime = guildEvent.scheduledEndTime;
+  let scheduledEndTime = guildEvent.scheduledEndTime;
   const recurrenceRule = guildEvent.recurrenceRule;
+  let obj = memo;
   const items = [scheduledStartTime];
   let tmp = c11();
   ({ name, entityType } = guildEvent);
@@ -80,12 +83,12 @@ export default function EditGuildEventDetails(guildEvent) {
     }
     return addResult;
   }, items1);
-  [c7, c8] = recurrenceRule(memo.useState(f94300), 2);
-  const tmp4 = recurrenceRule(memo.useState(f94300), 2);
-  const memo2 = memo.useMemo(() => onChange(scheduledEndTime[7])(), []);
+  [c6, c7] = recurrenceRule(memo.useState(f94678), 2);
+  const tmp4 = recurrenceRule(memo.useState(f94678), 2);
+  const memo2 = memo.useMemo(() => onChange(scheduledEndTime[6])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {
-    const obj = onChange(scheduledEndTime[7])();
+    const obj = onChange(scheduledEndTime[6])();
     return obj.add(guildEvent(scheduledEndTime[8]).MAX_DAYS_AHEAD_AN_EVENT_CAN_START, "days");
   }, []);
   const memo4 = memo.useMemo(() => {
@@ -93,63 +96,104 @@ export default function EditGuildEventDetails(guildEvent) {
     return obj.add(15, "minutes");
   }, items2);
   const memo5 = memo.useMemo(() => {
-    const obj = onChange(scheduledEndTime[7])();
+    const obj = onChange(scheduledEndTime[6])();
     return obj.add(guildEvent(scheduledEndTime[8]).MAX_DAYS_AHEAD_AN_EVENT_CAN_END, "days");
   }, []);
-  const ref = memo.useRef(null);
-  const tmp10 = memo1(initialGuildEvent);
-  let closure_10 = tmp10;
+  let ref = memo.useRef(null);
+  let tmp10 = c6(initialGuildEvent);
+  let closure_9 = tmp10;
   const tmp11 = recurrenceRule(memo.useState(null), 2);
-  [tmp12, c11] = tmp11;
-  let obj = guildEvent(scheduledEndTime[9]);
-  navigation = obj.useNavigation();
-  let tmp17 = null;
-  const tmp16 = ref;
-  if (null != tmp12) {
-    let obj2 = { style: tmp.error, variant: "text-sm/normal", color: "text-feedback-critical", children: tmp12 };
-    tmp17 = c8(tmp13(tmp14[10]).Text, obj2);
+  [tmp12, c10] = tmp11;
+  let stringResult = null;
+  if (null != scheduledEndTime) {
+    let obj2 = onChange(scheduledEndTime[6])(scheduledEndTime);
+    let startOfResult = obj2.startOf("minute");
+    let isAfter = startOfResult.isAfter;
+    stringResult = null;
+    const obj3 = onChange(scheduledEndTime[6])(scheduledStartTime);
+    if (!isAfter(obj3.startOf("minute"))) {
+      let intl = guildEvent(tmp15[7]).intl;
+      stringResult = intl.string(guildEvent(tmp15[7]).t.LpjF4K);
+    }
   }
-  const obj3 = { children: items3 };
-  items3 = [tmp17, ];
-  let obj4 = {
-    text: intl.string(tmp13(tmp14[6]).t.PDTjLN),
+  c11 = stringResult;
+  if (tmp12 == null) {
+    tmp12 = stringResult;
+  }
+  ref = obj.useRef(null);
+  const items3 = [stringResult];
+  const effect = obj.useEffect(() => {
+    const tmp2 = null != current && null == ref.current;
+    if (tmp2) {
+      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
+      AccessibilityAnnouncer.announce(current);
+    }
+    ref.current = current;
+  }, items3);
+  let obj4 = guildEvent(scheduledEndTime[10]);
+  navigation = obj4.useNavigation();
+  let tmp23 = null;
+  if (null != tmp12) {
+    const obj5 = { style: tmp.error, variant: "body-sm/normal", color: "text-feedback-critical", children: tmp12 };
+    tmp23 = ref(tmp19(tmp20[11]).Text, obj5);
+  }
+  let obj6 = { children: items4 };
+  items4 = [tmp23, ];
+  const obj7 = {
+    text: intl2.string(guildEvent(scheduledEndTime[7]).t.PDTjLN),
     variant: "primary",
     onPress: function handleNext() {
       function assertGuildEventDetailsValid(guildEvent) {
+        scheduledEndTime = guildEvent.scheduledEndTime;
         if (0 === guildEvent.name.length) {
-          const _Error = Error;
-          const intl = guildEvent(scheduledEndTime[6]).intl;
-          const self = this;
-          const self2 = this;
-          const error = new Error(intl.string(guildEvent(scheduledEndTime[6]).t.GoV0uR));
+          const _Error2 = Error;
+          const intl2 = guildEvent(closure_1_3[7]).intl;
+          const self3 = this;
+          const self4 = this;
+          const error = new Error(intl2.string(guildEvent(closure_1_3[7]).t.GoV0uR));
           throw error;
+        } else if (null != scheduledEndTime) {
+          const obj = onChange(closure_1_3[6])(scheduledEndTime);
+          const isAfter = obj.startOf("minute").isAfter;
+          obj.startOf("minute");
+          const obj2 = onChange(closure_1_3[6])(tmp);
+          if (!isAfter(obj2.startOf("minute"))) {
+            const _Error = Error;
+            const intl = guildEvent(tmp13[7]).intl;
+            const self = this;
+            const self2 = this;
+            const error1 = new Error(intl.string(guildEvent(tmp13[7]).t.LpjF4K));
+            throw error1;
+          }
         }
       }
-      const obj = KeyboardManagerUtilsAll;
+      const tmp = dependencyMap;
+      let obj = KeyboardManagerUtilsAll;
       const result = obj.dismissGlobalKeyboard();
       try {
         _undefined2(null);
         assertGuildEventDetailsValid(guildEvent);
         navigation.navigate(EditGuildEventUtils.EditGuildEventScreens.PREVIEW);
       } catch (tmp11) {
-        _undefined2(tmp11.message);
+        const tmp13 = _undefined2(tmp11.message);
         const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
         AccessibilityAnnouncer.announce(tmp11.message);
       }
     },
     disabled: null != tmp12
   };
-  const Button = tmp13(tmp14[11]).Button;
-  intl = tmp13(tmp14[6]).intl;
-  items3[1] = c8(Button, obj4);
-  const obj5 = { action: closure_10(tmp16, obj3), ref, children: items4 };
-  const tmp21 = onChange(scheduledEndTime[15]);
-  const obj6 = { title: intl2.string(guildEvent(scheduledEndTime[6]).t.GG6vbr), subtitle: intl3.string(guildEvent(scheduledEndTime[6]).t.q5lgwV) };
-  const tmp22 = onChange(scheduledEndTime[16]);
-  intl2 = tmp13(tmp14[6]).intl;
-  intl3 = tmp13(tmp14[6]).intl;
-  items4 = [c8(tmp22, obj6), , , , , ];
-  const obj7 = {
+  const Button = tmp19(tmp20[12]).Button;
+  intl2 = tmp19(tmp20[7]).intl;
+  items4[1] = ref(Button, obj7);
+  let obj8 = { action: tmp21(tmp22, obj6), ref, children: items5 };
+  c10(closure_9, obj6);
+  const obj9 = { title: intl3.string(guildEvent(scheduledEndTime[7]).t.GG6vbr), subtitle: intl4.string(guildEvent(scheduledEndTime[7]).t.q5lgwV) };
+  const tmp27 = onChange(scheduledEndTime[15]);
+  const tmp28 = onChange(scheduledEndTime[16]);
+  intl3 = tmp19(tmp20[7]).intl;
+  intl4 = tmp19(tmp20[7]).intl;
+  items5 = [ref(tmp28, obj9), , , , , ];
+  const obj10 = {
     topic: name,
     onChange(name) {
       const obj = { name };
@@ -157,80 +201,90 @@ export default function EditGuildEventDetails(guildEvent) {
       onChange(obj);
     }
   };
-  items4[1] = c8(guildEvent(scheduledEndTime[17]).GuildEventTopic, obj7);
-  const obj8 = {
+  items5[1] = ref(guildEvent(scheduledEndTime[17]).GuildEventTopic, obj10);
+  const obj11 = {
     date: memo,
-    onChange: function handleChangeEventStartTime(toISOString) {
-      const tmp = closure_10;
+    onChange: function handleChangeEventStartTime(arg0) {
+      const tmp = closure_9;
       if (tmp) {
-        const intl = intl8.intl;
-        return _undefined2(intl.string(intl8.t.nKIaRG));
+        const intl = intl9.intl;
+        return _undefined2(intl.string(intl9.t.nKIaRG));
       } else {
-        const obj = { scheduledStartTime: toISOString.toISOString() };
-        const isBeforeResult = null != scheduledEndTime && memo1.isBefore(toISOString);
+        const obj = _modDef2171(arg0);
+        const startOfResult = obj.startOf("minute");
+        const obj2 = { scheduledStartTime: startOfResult.toISOString() };
+        let isBeforeResult = null != scheduledEndTime;
         if (isBeforeResult) {
-          const obj2 = _modDef2171(toISOString);
-          const addResult = obj2.add(1, "hour");
-          obj.scheduledEndTime = addResult.toISOString();
+          const obj4 = _modDef2171(tmp5);
+          const startOfResult1 = obj4.startOf("minute");
+          isBeforeResult = startOfResult1.isBefore(startOfResult);
         }
-        const tmp9 = null != toISOString && null != c7;
-        if (tmp9) {
-          const obj4 = ScheduleUtils;
-          obj.recurrenceRule = obj4.recurrenceOptionToRecurrenceRule(c7, toISOString);
+        if (isBeforeResult) {
+          const obj6 = _modDef2171(startOfResult);
+          const addResult = obj6.add(1, "hour");
+          obj2.scheduledEndTime = addResult.toISOString();
+        }
+        const tmp10 = null != arg0 && null != c6;
+        if (tmp10) {
+          const obj8 = ScheduleUtils;
+          obj2.recurrenceRule = obj8.recurrenceOptionToRecurrenceRule(c6, startOfResult);
         }
         _undefined2(null);
-        onChange(obj);
+        onChange(obj2);
       }
     },
     disabled: tmp10,
     minimumDate: memo2,
     maximumDate: memo3,
-    dateLabel: intl4.string(guildEvent(scheduledEndTime[6]).t.kKOIwJ),
-    timeLabel: intl5.string(guildEvent(scheduledEndTime[6]).t["6dGmCD"])
+    dateLabel: intl5.string(guildEvent(scheduledEndTime[7]).t.kKOIwJ),
+    timeLabel: intl6.string(guildEvent(scheduledEndTime[7]).t["6dGmCD"])
   };
-  const GuildEventDatetime = tmp13(tmp14[17]).GuildEventDatetime;
-  intl4 = tmp13(tmp14[6]).intl;
-  intl5 = tmp13(tmp14[6]).intl;
-  items4[2] = c8(GuildEventDatetime, obj8);
-  let tmp19Result = entityType === constants.EXTERNAL;
-  if (tmp19Result) {
-    const obj9 = {
+  const GuildEventDatetime = tmp19(tmp20[17]).GuildEventDatetime;
+  intl5 = tmp19(tmp20[7]).intl;
+  intl6 = tmp19(tmp20[7]).intl;
+  items5[2] = ref(GuildEventDatetime, obj11);
+  let tmp25Result = entityType === constants.EXTERNAL;
+  if (tmp25Result) {
+    const obj12 = {
       date: memo1,
-      onChange: function handleChangeEventEndTime(toISOString) {
-          const obj = { scheduledEndTime: toISOString.toISOString() };
+      onChange: function handleChangeEventEndTime(arg0) {
+          let startOfResult;
+          const obj = { scheduledEndTime: startOfResult.toISOString() };
+          const obj2 = _modDef2171(arg0);
+          startOfResult = obj2.startOf("minute");
           _undefined2(null);
           onChange(obj);
         },
       minimumDate: memo4,
       maximumDate: memo5,
-      dateLabel: intl6.string(guildEvent(scheduledEndTime[6]).t.CTLgZJ),
-      timeLabel: intl7.string(guildEvent(scheduledEndTime[6]).t.j2RuXF)
+      dateLabel: intl7.string(guildEvent(scheduledEndTime[7]).t.CTLgZJ),
+      timeLabel: intl8.string(guildEvent(scheduledEndTime[7]).t.j2RuXF)
     };
-    const GuildEventDatetime2 = tmp13(tmp14[17]).GuildEventDatetime;
-    intl6 = tmp13(tmp14[6]).intl;
-    intl7 = tmp13(tmp14[6]).intl;
-    tmp19Result = tmp19(GuildEventDatetime2, obj9);
+    const GuildEventDatetime2 = tmp19(tmp20[17]).GuildEventDatetime;
+    intl7 = tmp19(tmp20[7]).intl;
+    intl8 = tmp19(tmp20[7]).intl;
+    tmp25Result = tmp25(GuildEventDatetime2, obj12);
   }
-  items4[3] = tmp19Result;
-  const obj10 = {
+  items5[3] = tmp25Result;
+  const obj13 = {
     startDate: memo,
     recurrenceRule,
-    onRecurrenceChange: function handleRecurrenceChange(c7) {
+    onRecurrenceChange: function handleRecurrenceChange(c6) {
       let obj;
       if (null != memo) {
-        const obj2 = { recurrenceRule: obj.recurrenceOptionToRecurrenceRule(c7, tmp) };
+        const obj2 = { recurrenceRule: obj.recurrenceOptionToRecurrenceRule(c6, tmp) };
         obj = ScheduleUtils;
         onChange(obj2);
-        _undefined(c7);
+        _undefined(c6);
       }
     }
   };
-  items4[4] = c8(guildEvent(scheduledEndTime[17]).GuildEventRecurrence, obj10);
-  const GuildEventDescription = tmp13(tmp14[17]).GuildEventDescription;
+  items5[4] = ref(guildEvent(scheduledEndTime[17]).GuildEventRecurrence, obj13);
+  const GuildEventDescription = tmp19(tmp20[17]).GuildEventDescription;
   if (description == null) {
     description = "";
   }
-  const obj11 = {
+  const obj14 = {
     description,
     onChange(description) {
       const obj = { description };
@@ -240,12 +294,12 @@ export default function EditGuildEventDetails(guildEvent) {
     onFocus() {
       const timerId = setTimeout(() => {
         if (null != ref.current) {
-          const current = ref.current;
+          current = ref.current;
           current.scrollToEnd();
         }
       }, 100);
     }
   };
-  items4[5] = c8(GuildEventDescription, obj11);
-  return closure_10(tmp21, obj5);
+  items5[5] = ref(GuildEventDescription, obj14);
+  return c10(tmp27, obj8);
 };

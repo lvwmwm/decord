@@ -1,13 +1,13 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16853
+// Function ID: 16854
 // Name: useShowAgeNoticePromoSheet
-// Dependencies: [19, 16760, 4974, 16762, 2]
+// Dependencies: [19, 16852, 4974, 16854, 2]
 // Exports: useIsTinyBroncoEligible, useShowTinyBroncoPromoSheet
 
-// Module 16761 (useShowAgeNoticePromoSheet)
+// Module 16853 (useShowAgeNoticePromoSheet)
 import dismissible_content from "dismissible_content" /* 4974 */;
-import AgeNoticeVisibility from "AgeNoticeVisibility" /* 16760 */;
-import openAgeNoticePromoSheetDefault from "openAgeNoticePromoSheet" /* 16762 */;
+import AgeNoticeVisibility from "AgeNoticeVisibility" /* 16852 */;
+import openAgeNoticePromoSheetDefault from "openAgeNoticePromoSheet" /* 16854 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

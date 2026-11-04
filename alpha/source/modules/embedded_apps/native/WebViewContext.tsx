@@ -1,10 +1,10 @@
-// Module ID: 11960
-// Function ID: 11961
+// Module ID: 12019
+// Function ID: 12020
 // Name: WebViewContext
 // Dependencies: [32, 19, 17, 21, 5141, 2]
 // Exports: WebViewContextProvider
 
-// Module 11960 (WebViewContext)
+// Module 12019 (WebViewContext)
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

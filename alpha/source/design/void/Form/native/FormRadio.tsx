@@ -1,12 +1,12 @@
-// Module ID: 7435
-// Function ID: 7436
+// Module ID: 7451
+// Function ID: 7452
 // Name: FormRadio
-// Dependencies: [19, 21, 5141, 5837, 7436, 7437, 2]
+// Dependencies: [19, 21, 5141, 5851, 7452, 7453, 2]
 // Exports: default
 
-// Module 7435 (FormRadio)
+// Module 7451 (FormRadio)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -18,5 +18,5 @@ const result = size.fileFinishedImporting("design/void/Form/native/FormRadio.tsx
 export default function FormRadio(selected) {
   selected = selected.selected;
   FastImageDefault;
-  return <tmp5 style={closure_3().radio} source={importDefault(selected ? 7436 : 7437)} />;
+  return <tmp5 style={closure_3().radio} source={importDefault(selected ? 7452 : 7453)} />;
 };

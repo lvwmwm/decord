@@ -1,15 +1,15 @@
-// Module ID: 13950
-// Function ID: 13951
+// Module ID: 14036
+// Function ID: 14037
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 5315, 5719, 575, 1090, 5710, 2]
+// Dependencies: [19, 17, 21, 5316, 5732, 575, 1090, 5723, 2]
 // Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
 
-// Module 13950 (ChatInputScrimGradient)
+// Module 14036 (ChatInputScrimGradient)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5315 */;
-import useToken2 from "useToken" /* 5719 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5316 */;
+import useToken2 from "useToken" /* 5732 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp4;
-const LinearGradientDefault = tmp4(5710);
+const LinearGradientDefault = tmp4(5723);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let result = size.fileFinishedImporting("modules/chat_input/native/ChatInputScrimGradient.tsx");

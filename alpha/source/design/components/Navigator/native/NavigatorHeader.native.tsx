@@ -1,20 +1,20 @@
-// Module ID: 7124
-// Function ID: 7125
+// Module ID: 7139
+// Function ID: 7140
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1072, 21, 5141, 575, 5747, 7125, 7128, 1500, 7130, 1113, 7131, 7180, 1377, 1627, 5709, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 5141, 575, 5761, 7140, 7143, 1500, 7145, 1113, 7146, 7195, 1377, 1627, 5722, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
 
-// Module 7124 (NavigatorHeader)
+// Module 7139 (NavigatorHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7125 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7128 */;
-import _mod7131 from "module_7131" /* 7131 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7140 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7143 */;
+import _mod7146 from "module_7146" /* 7146 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -79,7 +79,7 @@ function CloseButton(onPress) {
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(7130);
+  const obj = onPress(7145);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -93,7 +93,7 @@ function CustomHeaderBackButton(onPress) {
       return closure_1_6(HeaderBackImage, {});
     }
   };
-  const HeaderBackButton = onPress(7131).HeaderBackButton;
+  const HeaderBackButton = onPress(7146).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_6(HeaderBackButton, obj2);
 }
@@ -114,7 +114,7 @@ function HeaderTextButton(text) {
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod7131.HeaderBackButton;
+  const HeaderBackButton = _mod7146.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;
@@ -132,7 +132,7 @@ let obj = { fauxHeaderWrapper: obj2, headerTitle: obj3, headerBackTitleStyle: ob
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
 createStyles = createStyles.createStyles;
 obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-let merged = Object.assign(Text_Text.TextStyleSheet["redesign/heading-18/semibold"]);
+let merged = Object.assign(Text_Text.TextStyleSheet["heading-md/semibold"]);
 obj4 = { fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 16, letterSpacing: 0, lineHeight: 20, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 size = { width: 24, height: 24, tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 size1 = { width: 22, height: 22, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
@@ -153,7 +153,7 @@ export function NavigatorHeader(subtitle) {
   items = [icon, ];
   const obj = { style: tmp.navigatorHeaderContainer, children: items1 };
   const tmp3 = HeaderDebugOverlayDefault("js-stack");
-  items[1] = metroRequire(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", children: title });
+  items[1] = metroRequire(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: title });
   items1 = [metroImportDefault(React3, obj2), , ];
   let tmp6Result = null != subtitle;
   const tmp4 = metroImportDefault;
@@ -163,7 +163,7 @@ export function NavigatorHeader(subtitle) {
     tmp6Result = "" !== subtitle;
   }
   if (tmp6Result) {
-    const obj3 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "text-xs/medium", color: "text-muted", children: subtitle };
+    const obj3 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "body-xs/medium", color: "text-muted", children: subtitle };
     tmp6Result = tmp6(Text_Text.Text, obj3);
   }
   items1[1] = tmp6Result;

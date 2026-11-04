@@ -1,14 +1,14 @@
-// Module ID: 8777
-// Function ID: 8778
+// Module ID: 8794
+// Function ID: 8795
 // Name: ImageWarningIcon
-// Dependencies: [19, 21, 575, 5836, 8752, 2]
+// Dependencies: [19, 21, 575, 5850, 8769, 2]
 // Exports: ImageWarningIcon
 
-// Module 8777 (ImageWarningIcon)
+// Module 8794 (ImageWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 8752 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 8769 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

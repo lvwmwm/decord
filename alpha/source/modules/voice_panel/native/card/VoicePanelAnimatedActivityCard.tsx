@@ -1,9 +1,9 @@
-// Module ID: 19417
-// Function ID: 19418
+// Module ID: 19521
+// Function ID: 19522
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 4989, 11842, 4990, 11360, 11358, 1072, 2147, 11831, 21, 5141, 575, 11359, 12211, 504, 19418, 11859, 7450, 11925, 7446, 7471, 10179, 5796, 1652, 1705, 6971, 5426, 2148, 1493, 11138, 19419, 11931, 19420, 19421, 19425, 5207, 2]
+// Dependencies: [32, 19, 4989, 11901, 4990, 11410, 11408, 1072, 2147, 11888, 21, 5141, 575, 11409, 12270, 504, 19522, 11918, 7466, 11984, 7462, 7487, 10227, 5810, 1652, 1705, 6986, 5428, 2148, 1493, 11186, 19523, 11990, 19524, 19525, 19529, 5207, 2]
 
-// Module 19417 (VoicePanelAnimatedActivityCard)
+// Module 19521 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
@@ -11,16 +11,16 @@ import _mod1705 from "module_1705" /* 1705 */;
 import Constants2 from "Constants" /* 2147 */;
 import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2148 */;
 import native from "native" /* 5207 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11358 */;
-import Constants3 from "Constants" /* 11831 */;
-import fetchShelf from "fetchShelf" /* 11859 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11408 */;
+import Constants3 from "Constants" /* 11888 */;
+import fetchShelf from "fetchShelf" /* 11918 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11842 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11901 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

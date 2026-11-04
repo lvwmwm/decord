@@ -1,25 +1,25 @@
-// Module ID: 11333
-// Function ID: 11334
+// Module ID: 11383
+// Function ID: 11384
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 4994, 4990, 5071, 5012, 5073, 6892, 1072, 21, 5141, 575, 8865, 5376, 504, 5772, 5716, 5148, 11334, 11335, 5395, 5398, 5837, 7083, 1187, 8727, 5747, 1113, 6147, 7186, 7101, 5381, 9130, 2123, 11336, 8301, 6887, 5754, 11339, 5718, 2]
+// Dependencies: [32, 19, 17, 4994, 4990, 5071, 5012, 5073, 6907, 1072, 21, 5141, 575, 8882, 5377, 504, 5786, 5729, 5148, 11384, 11385, 5396, 5400, 5851, 7098, 1187, 8744, 5761, 1113, 6162, 7201, 7116, 5382, 9147, 2123, 11386, 8317, 6902, 5768, 11389, 5731, 2]
 // Exports: default
 
-// Module 11333 (NewChannelFollower)
+// Module 11383 (NewChannelFollower)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11336 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11339 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11386 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11389 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import SortedGuildStore from "SortedGuildStore" /* 6892 */;
+import SortedGuildStore from "SortedGuildStore" /* 6907 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -163,7 +163,7 @@ export default function NewChannelFollower(targetChannelId) {
     const tmp6Result3 = tmp6(tmp7[26]);
     channelIcon = tmp6Result3.getChannelIcon(sourceChannel);
   }
-  items4 = [closure_15(Icon, obj11), closure_15(tmp6(tmp7[27]).Text, { lineClamp: 1, variant: "text-sm/medium", children: tmp13 })];
+  items4 = [closure_15(Icon, obj11), closure_15(tmp6(tmp7[27]).Text, { lineClamp: 1, variant: "body-sm/medium", children: tmp13 })];
   items3[1] = closure_15(closure_5, obj9);
   items2[1] = closure_16(closure_5, obj7);
   const items5 = [closure_16(closure_5, obj5), ];
@@ -172,7 +172,7 @@ export default function NewChannelFollower(targetChannelId) {
   const Text = tmp6(tmp7[27]).Text;
   intl = tmp6(tmp7[28]).intl;
   items6 = [closure_15(Text, obj13), , , , , ];
-  const obj14 = { style: tmp.ctaSubhead, variant: "text-sm/medium", color: "text-default", children: intl2.string(tmp6(tmp7[28]).t.kbpkxJ) };
+  const obj14 = { style: tmp.ctaSubhead, variant: "body-sm/medium", color: "text-default", children: intl2.string(tmp6(tmp7[28]).t.kbpkxJ) };
   const Text2 = tmp6(tmp7[27]).Text;
   intl2 = tmp6(tmp7[28]).intl;
   items6[1] = closure_15(Text2, obj14);
@@ -225,7 +225,7 @@ export default function NewChannelFollower(targetChannelId) {
         },
         hasIcons: false
       };
-      const tmp2 = asyncRequire(9130, dependencyMap.paths);
+      const tmp2 = asyncRequire(9147, dependencyMap.paths);
       intl = intl10.intl;
       const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
       reduce = flattenedGuildIds.reduce;

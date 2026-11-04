@@ -1,9 +1,9 @@
-// Module ID: 10239
-// Function ID: 10240
+// Module ID: 10287
+// Function ID: 10288
 // Name: ChatNativeComponent
 // Dependencies: [26, 106, 65, 114, 2]
 
-// Module 10239 (ChatNativeComponent)
+// Module 10287 (ChatNativeComponent)
 import _mod26 from "module_26" /* 26 */;
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;

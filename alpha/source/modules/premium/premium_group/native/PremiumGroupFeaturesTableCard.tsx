@@ -1,20 +1,20 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15600
+// Function ID: 15601
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 7741, 21, 5141, 575, 5747, 1113, 15514, 1187, 5710, 5138, 10057, 2]
+// Dependencies: [17, 7757, 21, 5141, 575, 5761, 1113, 15601, 1187, 5723, 5138, 10105, 2]
 // Exports: default
 
-// Module 15513 (PremiumGroupFeaturesTableCard)
+// Module 15600 (PremiumGroupFeaturesTableCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ColorConstants from "ColorConstants" /* 7741 */;
-import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 10057 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 15514 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ColorConstants from "ColorConstants" /* 7757 */;
+import PremiumGroupWordmarkDefault from "PremiumGroupWordmark" /* 10105 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 15601 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ class BetaPill {
     let obj2;
     const tmp = closure_7();
     const obj = { style: tmp.betaPill, children: hasOwnProperty(Text, obj2) };
-    obj2 = { variant: "text-xs/semibold", style: tmp.betaText, children: intl.string(intl2.t.oW0eUd) };
+    obj2 = { variant: "body-xs/semibold", style: tmp.betaText, children: intl.string(intl2.t.oW0eUd) };
     Text = Text_Text.Text;
     intl = intl2.intl;
     return hasOwnProperty(View, obj);
@@ -84,9 +84,9 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     const obj6 = { style: tmp.headerContainer, children: items1 };
     items1 = [hasOwnProperty(PremiumGroupWordmarkDefault, { width: 181, height: 16 }), hasOwnProperty(BetaPill, {})];
     items2 = [metroRequire(View, obj6), , ];
-    const obj7 = { variant: "text-sm/normal", style: tmp.title, children: subheaderString };
+    const obj7 = { variant: "body-sm/normal", style: tmp.title, children: subheaderString };
     items2[1] = hasOwnProperty(Text_Text.Text, obj7);
-    const obj8 = { variant: "text-sm/normal", style: tmp.description, children: bodyString };
+    const obj8 = { variant: "body-sm/normal", style: tmp.description, children: bodyString };
     items2[2] = hasOwnProperty(Text_Text.Text, obj8);
     return hasOwnProperty(GradientBorder, obj);
   }

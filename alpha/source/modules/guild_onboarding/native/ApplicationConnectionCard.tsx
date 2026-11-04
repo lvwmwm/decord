@@ -1,15 +1,15 @@
-// Module ID: 7445
-// Function ID: 7446
+// Module ID: 7461
+// Function ID: 7462
 // Name: ApplicationConnectionCard
-// Dependencies: [19, 2167, 1072, 21, 504, 7446, 7001, 1113, 7447, 7454, 1252, 5880, 7459, 2]
+// Dependencies: [19, 2167, 1072, 21, 504, 7462, 7016, 1113, 7463, 7470, 1252, 5894, 7475, 2]
 // Exports: default
 
-// Module 7445 (ApplicationConnectionCard)
+// Module 7461 (ApplicationConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7001 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7016 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 6165
-// Function ID: 6166
+// Module ID: 6180
+// Function ID: 6181
 // Name: useChannelRoleSubscriptionStatus
 // Dependencies: [5045, 4990, 5073, 1072, 504, 2]
 // Exports: default
 
-// Module 6165 (useChannelRoleSubscriptionStatus)
+// Module 6180 (useChannelRoleSubscriptionStatus)
 import Constants from "Constants" /* 1072 */;
 import GatedChannelStore from "GatedChannelStore" /* 5045 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

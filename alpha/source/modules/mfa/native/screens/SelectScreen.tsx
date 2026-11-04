@@ -1,15 +1,15 @@
-// Module ID: 17815
-// Function ID: 17816
+// Module ID: 17911
+// Function ID: 17912
 // Name: SelectScreen
-// Dependencies: [19, 17, 17812, 21, 5141, 5709, 8303, 7237, 1499, 7412, 5747, 1113, 2]
+// Dependencies: [19, 17, 17908, 21, 5141, 5722, 8319, 7257, 1499, 7428, 5761, 1113, 2]
 // Exports: default
 
-// Module 17815 (SelectScreen)
+// Module 17911 (SelectScreen)
 import react_native from "react-native" /* 17 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7237 */;
-import RowButton from "RowButton" /* 8303 */;
-import MFAConstants from "MFAConstants" /* 17812 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7257 */;
+import RowButton from "RowButton" /* 8319 */;
+import MFAConstants from "MFAConstants" /* 17908 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -55,7 +55,7 @@ export default function SelectScreen(mfaChallenge) {
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items = [closure_5(Heading, obj4), ];
-  const obj5 = { variant: "text-sm/medium", children: intl2.string(require("intl").t.Jz1lXO) };
+  const obj5 = { variant: "body-sm/medium", children: intl2.string(require("intl").t.Jz1lXO) };
   const Text = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[1] = closure_5(Text, obj5);

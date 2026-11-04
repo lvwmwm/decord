@@ -1,20 +1,20 @@
-// Module ID: 10691
-// Function ID: 10692
+// Module ID: 10739
+// Function ID: 10740
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8887, 9758, 1387, 1072, 21, 5141, 575, 671, 1499, 1627, 1493, 10692, 5397, 7130, 504, 10742, 10740, 8879, 10689, 10744, 10750, 9975, 1652, 1187, 5377, 10758, 10746, 7471, 10759, 10793, 11349, 1113, 7180, 5837, 14589, 5710, 5709, 5747, 2]
+// Dependencies: [32, 19, 17, 8904, 9776, 1387, 1072, 21, 5141, 575, 671, 1499, 1627, 1493, 10740, 5398, 7145, 504, 10790, 10788, 8896, 10737, 10792, 10798, 10023, 1652, 1187, 5378, 10806, 10794, 7487, 10807, 10841, 11399, 1113, 7195, 5851, 14669, 5723, 5722, 5761, 2]
 // Exports: default
 
-// Module 10691 (PremiumGiftPlanSelect)
+// Module 10739 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10750 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 10798 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8887 */;
-import PromotionsStore from "PromotionsStore" /* 9758 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
+import PromotionsStore from "PromotionsStore" /* 9776 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -513,7 +513,7 @@ export default function PremiumGiftPlanSelect(shouldUseDMWishlistGiftingDesign) 
       formatToPlainStringResult = intl2.string(tmp(tmp2[34]).t.dqQgZv);
     }
     items21[1] = c12(Text, obj34);
-    const obj36 = { style: tmp13.description, variant: "heading-sm/medium", color: "text-overlay-light", children: intl4.string(tmp(tmp2[34]).t["30qzrd"]) };
+    const obj36 = { style: tmp13.description, variant: "heading-xs/medium", color: "text-overlay-light", children: intl4.string(tmp(tmp2[34]).t["30qzrd"]) };
     const Text2 = tmp(tmp2[40]).Text;
     intl4 = tmp(tmp2[34]).intl;
     items21[2] = c12(Text2, obj36);

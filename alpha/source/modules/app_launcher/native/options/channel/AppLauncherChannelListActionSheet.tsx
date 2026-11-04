@@ -1,18 +1,18 @@
-// Module ID: 12662
-// Function ID: 12663
+// Module ID: 12743
+// Function ID: 12744
 // Name: AppLauncherChannelListActionSheet
-// Dependencies: [32, 19, 5012, 21, 5141, 575, 8776, 8727, 12650, 6899, 5381, 12634, 12635, 5772, 7101, 5747, 2]
+// Dependencies: [32, 19, 5012, 21, 5141, 575, 8793, 8744, 12731, 6914, 5382, 12715, 12716, 5786, 7116, 5761, 2]
 // Exports: default
 
-// Module 12662 (AppLauncherChannelListActionSheet)
+// Module 12743 (AppLauncherChannelListActionSheet)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useChannelNameDefault from "useChannelName" /* 5772 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6899 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8727 */;
-import TextIcon3 from "TextIcon" /* 8776 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12650 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useChannelNameDefault from "useChannelName" /* 5786 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6914 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8744 */;
+import TextIcon3 from "TextIcon" /* 8793 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -43,7 +43,7 @@ class ChannelIcon {
       const tmp2Result = utils_ChannelUtils;
       let TextIcon2 = tmp2Result.getChannelIconComponentWithGuild(channel, guild);
       if (TextIcon2 == null) {
-        TextIcon2 = tmp2(8776).TextIcon;
+        TextIcon2 = tmp2(8793).TextIcon;
       }
       TextIcon = TextIcon2;
     }
@@ -60,7 +60,7 @@ function ChannelListItem(arg0) {
   let totalCount;
   ({ channel, index } = arg0);
   ({ totalCount, onPress } = arg0);
-  const obj = { onPress, label: metroRequire(Text_Text.Text, { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp }), icon: metroRequire(ChannelIcon, { channel }), start: 0 === index, end: index === totalCount - 1 };
+  const obj = { onPress, label: metroRequire(Text_Text.Text, { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: tmp }), icon: metroRequire(ChannelIcon, { channel }), start: 0 === index, end: index === totalCount - 1 };
   tmp = useChannelNameDefault(channel);
   const TableRow = TableRow2.TableRow;
   return metroRequire(TableRow, obj, channel.id);

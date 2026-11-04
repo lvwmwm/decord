@@ -1,12 +1,12 @@
-// Module ID: 16027
-// Function ID: 16028
+// Module ID: 16117
+// Function ID: 16118
 // Name: BitRateStore
-// Dependencies: [5888, 504, 572, 2]
+// Dependencies: [5902, 504, 572, 2]
 
-// Module 16027 (BitRateStore)
+// Module 16117 (BitRateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 5888 */;
+import Constants from "Constants" /* 5902 */;
 import size from "module_2" /* 2 */;
 
 let bitrate = Constants.DEFAULT_VOICE_BITRATE;

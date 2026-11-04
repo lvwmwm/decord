@@ -1,18 +1,18 @@
-// Module ID: 14786
-// Function ID: 14787
+// Module ID: 14866
+// Function ID: 14867
 // Name: CrunchyrollLinkSuccess
-// Dependencies: [19, 17, 21, 5141, 9862, 5837, 14787, 5747, 1113, 7412, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 9880, 5851, 14867, 5761, 1113, 7428, 5768, 2]
 // Exports: default
 
-// Module 14786 (CrunchyrollLinkSuccess)
+// Module 14866 (CrunchyrollLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9862 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14787 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9880 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14867 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -47,7 +47,7 @@ export default function CrunchyrollLinkDiscordSuccess(onClose) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items[1] = React3(Text, obj5);
-  const obj6 = { variant: "text-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.YwXceg) };
+  const obj6 = { variant: "body-md/normal", color: "text-default", style: twoWayLinkStyles.body, children: intl2.string(intl4.t.YwXceg) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = React3(Text2, obj6);

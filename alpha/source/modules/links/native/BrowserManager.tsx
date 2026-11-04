@@ -1,15 +1,15 @@
-// Module ID: 5862
-// Function ID: 5863
+// Module ID: 5876
+// Function ID: 5877
 // Name: BrowserManager
-// Dependencies: [5, 17, 1377, 5863, 5864, 560, 1092, 5829, 1380, 2]
+// Dependencies: [5, 17, 1377, 5877, 5878, 560, 1092, 5843, 1380, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
-// Module 5862 (BrowserManager)
+// Module 5876 (BrowserManager)
 import react_native from "react-native" /* 17 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import react_native2 from "react-native" /* 5863 */;
-import react_nativeDefault2 from "react-native" /* 5864 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import react_native2 from "react-native" /* 5877 */;
+import react_nativeDefault2 from "react-native" /* 5878 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import module_560 from "module_560" /* 560 */;

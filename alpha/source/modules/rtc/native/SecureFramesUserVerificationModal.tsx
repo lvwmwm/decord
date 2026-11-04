@@ -1,24 +1,24 @@
-// Module ID: 9398
-// Function ID: 9399
+// Module ID: 9415
+// Function ID: 9416
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [19, 17, 4990, 1385, 9394, 1072, 1191, 21, 5141, 575, 504, 6161, 9399, 9401, 9374, 9402, 9393, 6864, 5832, 1113, 9403, 9396, 9059, 7446, 8874, 9404, 7412, 7106, 7128, 5747, 6147, 9405, 9407, 7426, 5754, 2]
+// Dependencies: [19, 17, 4990, 1385, 9411, 1072, 1191, 21, 5141, 575, 504, 6176, 9416, 9418, 9391, 9419, 9410, 6879, 5846, 1113, 9420, 9413, 9076, 7462, 8891, 9421, 7428, 7121, 7143, 5761, 6162, 9422, 9424, 7442, 5768, 2]
 // Exports: default
 
-// Module 9398 (SecureFramesUserVerificationModal)
+// Module 9415 (SecureFramesUserVerificationModal)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import FormConstants from "FormConstants" /* 1191 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import showShareActionSheet from "showShareActionSheet" /* 9059 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9393 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 9396 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import showShareActionSheet from "showShareActionSheet" /* 9076 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9410 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9413 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import UserStore from "UserStore" /* 1385 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9394 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9411 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -203,7 +203,7 @@ export default function SecureFramesUserVerificationModal(userId) {
     const obj14 = { accessibilityRole: "button", accessibilityLabel: intl2.string(userId(name[19]).t.RDE0Sc), androidRippleConfig: tmp23, hitSlop: 8, onPress: callback2, children: closure_15(Text, obj15) };
     const PressableOpacity2 = tmp2(tmp3[27]).PressableOpacity;
     intl2 = tmp2(tmp3[19]).intl;
-    obj15 = { variant: "text-md/semibold", color: "text-brand", children: intl3.string(userId(name[19]).t.RDE0Sc) };
+    obj15 = { variant: "body-md/semibold", color: "text-brand", children: intl3.string(userId(name[19]).t.RDE0Sc) };
     Text = tmp2(tmp3[29]).Text;
     intl3 = tmp2(tmp3[19]).intl;
     tmp22Result = tmp22(PressableOpacity2, obj14);
@@ -216,7 +216,7 @@ export default function SecureFramesUserVerificationModal(userId) {
   const Text2 = tmp2(tmp3[29]).Text;
   intl4 = tmp2(tmp3[19]).intl;
   items11 = [closure_15(Text2, obj17), ];
-  const obj18 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl5.format(userId(name[19]).t.oc2kce, { username: name }) };
+  const obj18 = { style: tmp.subtitle, variant: "body-md/medium", color: "text-default", children: intl5.format(userId(name[19]).t.oc2kce, { username: name }) };
   const Text3 = tmp2(tmp3[29]).Text;
   intl5 = tmp2(tmp3[19]).intl;
   items11[1] = closure_15(Text3, obj18);
@@ -240,7 +240,7 @@ export default function SecureFramesUserVerificationModal(userId) {
   items10[2] = closure_16(readableSecureFramesFingerprint, obj19);
   const obj23 = { style: tmp.footer, children: items13 };
   items13 = [, ];
-  const obj24 = { style: tmp.footerText, variant: "text-xs/normal", color: "text-default", children: memo1 };
+  const obj24 = { style: tmp.footerText, variant: "body-xs/normal", color: "text-default", children: memo1 };
   items13[0] = closure_15(userId(name[29]).Text, obj24);
   let tmp31 = null == readableSecureFramesFingerprint;
   const Button = tmp2(tmp3[34]).Button;

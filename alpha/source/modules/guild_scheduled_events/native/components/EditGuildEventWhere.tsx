@@ -1,16 +1,16 @@
-// Module ID: 9149
-// Function ID: 9150
+// Module ID: 9166
+// Function ID: 9167
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 4990, 5073, 6975, 4996, 1072, 21, 5141, 1113, 9100, 504, 1499, 9150, 9119, 5747, 5754, 2017, 9096, 5150, 9117, 9200, 2171, 9201, 9202, 2]
+// Dependencies: [32, 19, 4990, 5073, 6990, 4996, 1072, 21, 5141, 1113, 9117, 504, 1499, 9167, 9136, 5761, 5768, 2017, 9113, 5150, 9134, 9217, 2171, 9218, 9219, 2]
 // Exports: default
 
-// Module 9149 (EditGuildEventWhere)
+// Module 9166 (EditGuildEventWhere)
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6975 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9096 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6990 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9113 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -126,7 +126,7 @@ export default function EditGuildEventWhere(guild) {
   let tmp10Result2 = null;
   const tmp16 = closure_14;
   if (null != tmp8) {
-    const obj7 = { style: tmp.error, variant: "text-sm/normal", color: "text-feedback-critical", children: tmp8 };
+    const obj7 = { style: tmp.error, variant: "body-sm/normal", color: "text-feedback-critical", children: tmp8 };
     tmp10Result2 = tmp10(tmp3(tmp4[15]).Text, obj7);
   }
   const obj8 = { children: items4 };
@@ -200,7 +200,7 @@ export default function EditGuildEventWhere(guild) {
     entityType: guildEvent.entityType,
     onChange: function handleChangeEventEntityType(entityType) {
       _undefined(null);
-      const obj = { entityType, scheduledEndTime: "y" };
+      const obj = { entityType, scheduledEndTime: "a" };
       if (entityType === constants.EXTERNAL) {
         let obj2 = _modDef2171(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;
@@ -219,7 +219,7 @@ export default function EditGuildEventWhere(guild) {
   items5[3] = set.has(guildEvent.entityType) && closure_13(tmp11(tmp4[23]), {});
   set.has(guildEvent.entityType) && closure_13(tmp11(tmp4[23]), {});
   if (stateFromStores1) {
-    const obj13 = { style: tmp.text, variant: "text-sm/normal", color: "text-default", children: intl4.format(tmp3(tmp4[9]).t["K+DH2o"], obj14) };
+    const obj13 = { style: tmp.text, variant: "body-sm/normal", color: "text-default", children: intl4.format(tmp3(tmp4[9]).t["K+DH2o"], obj14) };
     const Text = tmp3(tmp4[15]).Text;
     intl4 = tmp3(tmp4[9]).intl;
     obj14 = {

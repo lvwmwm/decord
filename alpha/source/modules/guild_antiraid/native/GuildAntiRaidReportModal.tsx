@@ -1,22 +1,22 @@
-// Module ID: 15938
-// Function ID: 15939
+// Module ID: 16028
+// Function ID: 16029
 // Name: GuildAntiRaidReportModal
-// Dependencies: [5, 32, 19, 17, 15939, 21, 5141, 575, 1627, 5747, 5829, 1113, 7186, 7100, 5754, 7124, 10276, 7257, 13393, 7290, 2]
+// Dependencies: [5, 32, 19, 17, 16029, 21, 5141, 575, 1627, 5761, 5843, 1113, 7201, 7115, 5768, 7139, 10324, 7277, 13477, 7306, 2]
 // Exports: default
 
-// Module 15938 (GuildAntiRaidReportModal)
+// Module 16028 (GuildAntiRaidReportModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 15939 */;
+import GuildReportRaidModalConstants from "GuildReportRaidModalConstants" /* 16029 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ function ReportModal(onSubmit) {
   const items = [tmp];
   const bottom = useSafeAreaInsetsDefault().bottom;
   let closure_3 = react.useCallback((arg0) => {
-    const obj = { style: formRow.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: metroImportAll(arg0) };
+    const obj = { style: formRow.formRow, variant: "body-md/semibold", color: "interactive-text-active", children: metroImportAll(arg0) };
     const Text = Text_Text.Text;
     return authStore(Text, obj);
   }, items);
@@ -56,7 +56,7 @@ function ReportModal(onSubmit) {
     const obj = require("Linking");
     obj.openURL(closure_1_7());
   }, []);
-  const obj2 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: intl.format(intl3.t.Hg8Ee7, { onClick: callback }) };
+  const obj2 = { style: tmp.headerSubtitle, variant: "body-sm/medium", color: "text-default", children: intl.format(intl3.t.Hg8Ee7, { onClick: callback }) };
   let Text = Text_Text.Text;
   intl = intl3.intl;
   items1 = [closure_10(Text, obj2), , ];

@@ -1,12 +1,12 @@
-// Module ID: 18857
-// Function ID: 18858
+// Module ID: 18960
+// Function ID: 18961
 // Name: SuggestedSearchList
-// Dependencies: [19, 17, 21, 5141, 575, 18858, 5747, 1113, 4250, 18859, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 18961, 5761, 1113, 4250, 18962, 2]
 
-// Module 18857 (SuggestedSearchList)
+// Module 18960 (SuggestedSearchList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18859 */;
+import SuggestedSearchRowDefault from "SuggestedSearchRow" /* 18962 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -47,7 +47,7 @@ const memoResult = react.memo(function SuggestedSearchList(smartSearchQuery) {
     const obj2 = { children: items1 };
     const obj4 = { marginTop: num };
     items[1] = obj4;
-    const obj3 = { variant: "text-sm/semibold", color: "interactive-text-default", style: items, children: intl.string(source(suggestedSearches[8]).bzswFC) };
+    const obj3 = { variant: "body-sm/semibold", color: "interactive-text-default", style: items, children: intl.string(source(suggestedSearches[8]).bzswFC) };
     intl = tmp2(tmp3[7]).intl;
     items1 = [
       tmp9(Text, obj3),

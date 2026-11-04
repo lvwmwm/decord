@@ -1,15 +1,15 @@
-// Module ID: 8337
-// Function ID: 8338
+// Module ID: 8353
+// Function ID: 8354
 // Name: clipPayloadUtils
-// Dependencies: [32, 8338, 1072, 5888, 8339, 1252, 2]
+// Dependencies: [32, 8354, 1072, 5902, 8355, 1252, 2]
 // Exports: getClipCreatedAt, getClipEventsTimeline, getClipParticipantIds, getClipSyncTimestamp
 
-// Module 8337 (clipPayloadUtils)
+// Module 8353 (clipPayloadUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Constants2 from "Constants" /* 5888 */;
+import Constants2 from "Constants" /* 5902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ClipsConstants from "ClipsConstants" /* 8338 */;
+import ClipsConstants from "ClipsConstants" /* 8354 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -153,54 +153,54 @@ export function getClipEventsTimeline(clip) {
                 obj8.return();
                 break;
               } else {
-                let tmp72 = (tmp33.signal.speakingFlags & SpeakingFlags.VOICE) === SpeakingFlags.VOICE;
+                let tmp76 = (tmp33.signal.speakingFlags & SpeakingFlags.VOICE) === SpeakingFlags.VOICE;
                 let flag2 = map.get(tmp33.signal.userId) ?? false;
-                if (flag2 === tmp72) {
+                if (flag2 === tmp76) {
                   continue;
                 } else {
-                  let result1 = map.set(tmp33.signal.userId, tmp72);
+                  let result1 = map.set(tmp33.signal.userId, tmp76);
                   let obj6 = { timestamp_ms: Math.round(tmp33.timestamp - sum), speaking: obj7 };
-                  let _Math3 = Math;
-                  let push3 = items1.push;
+                  let _Math2 = Math;
+                  let push2 = items1.push;
                   let obj7 = { user_id: tmp33.signal.userId, speaking_flags: tmp33.signal.speakingFlags };
-                  let push3Result = push3(obj6);
+                  let push2Result = push2(obj6);
                 }
               }
               break;
             }
-            for (const item10146 of items) {
-              let tmp45 = item10146;
-              let tmp46 = item10146.peakMs < sum;
-              if (!tmp46) {
-                tmp46 = tmp45.peakMs > sum1;
+            for (const item10165 of items) {
+              let tmp49 = item10165;
+              let tmp50 = item10165.peakMs < sum;
+              if (!tmp50) {
+                tmp50 = tmp49.peakMs > sum1;
               }
-              if (!tmp46) {
+              if (!tmp50) {
                 let SHOUTING;
-                let obj9 = { timestamp_ms: Math.round(tmp45.peakMs - sum), emotion: obj10 };
-                let _Math2 = Math;
-                let push2 = items1.push;
-                if (tmp45.type === constants.LAUGHTER) {
+                let obj9 = { timestamp_ms: Math.round(tmp49.peakMs - sum), emotion: obj10 };
+                let _Math3 = Math;
+                let push3 = items1.push;
+                if (tmp49.type === constants.LAUGHTER) {
                   SHOUTING = obj2.LAUGHTER;
                 } else {
                   SHOUTING = obj2.SHOUTING;
                 }
                 let obj10 = { type: SHOUTING };
-                let push2Result = push2(obj9);
+                let push3Result = push3(obj9);
               }
               continue;
             }
             let sorted1 = items1.sort((timestamp_ms, timestamp_ms2) => timestamp_ms.timestamp_ms - timestamp_ms2.timestamp_ms);
             let substr = items1.slice(0, closure_5);
             if (substr.length !== items1.length) {
-              let obj13 = AnalyticsUtilsDefault;
+              let obj15 = AnalyticsUtilsDefault;
               let obj11 = { clip_uuid: clip.id, clip_event_timeline_size: items1.length, clip_runtime };
-              let trackResult = obj13.track(AnalyticEvents.CLIP_TIMELINE_TRIMMED, obj11);
+              let trackResult = obj15.track(AnalyticEvents.CLIP_TIMELINE_TRIMMED, obj11);
             }
-            let tmp61;
+            let tmp65;
             if (substr.length > 0) {
-              tmp61 = substr;
+              tmp65 = substr;
             }
-            return tmp61;
+            return tmp65;
           } else {
             if (tmp33.signal.type === tmp35.GAME_EVENT) {
               if (tmp33.timestamp < sum) {
@@ -210,21 +210,21 @@ export function getClipEventsTimeline(clip) {
                   obj8.return();
                   break;
                 } else {
-                  let tmp66 = obj;
+                  let tmp70 = obj;
                   let DEATH = obj.UNKNOWN;
                   let eventType = tmp33.signal.eventType;
-                  let tmp68 = constants2;
+                  let tmp72 = constants2;
                   if (constants2.KILL === eventType) {
-                    DEATH = tmp66.KILL;
-                  } else if (tmp68.MULTIKILL === eventType) {
-                    DEATH = tmp66.MULTIKILL;
-                  } else if (tmp68.DEATH === eventType) {
-                    DEATH = tmp66.DEATH;
+                    DEATH = tmp70.KILL;
+                  } else if (tmp72.MULTIKILL === eventType) {
+                    DEATH = tmp70.MULTIKILL;
+                  } else if (tmp72.DEATH === eventType) {
+                    DEATH = tmp70.DEATH;
                   }
-                  let obj12 = { timestamp_ms: Math.round(tmp33.timestamp - sum), game: obj14 };
+                  let obj12 = { timestamp_ms: Math.round(tmp33.timestamp - sum), game: obj13 };
                   let _Math = Math;
                   let push = items1.push;
-                  let obj14 = { type: DEATH, event_name: tmp33.signal.eventName };
+                  let obj13 = { type: DEATH, event_name: tmp33.signal.eventName };
                   let arr2 = push(obj12);
                 }
                 break;

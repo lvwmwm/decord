@@ -1,14 +1,14 @@
-// Module ID: 14530
-// Function ID: 14531
+// Module ID: 14610
+// Function ID: 14611
 // Name: VoiceChannelAppActionCreators
-// Dependencies: [6966, 572, 13324, 11076, 2]
+// Dependencies: [6981, 572, 13407, 11125, 2]
 // Exports: closeVoiceChannelApp, toggleVoiceChannelAppSurface
 
-// Module 14530 (VoiceChannelAppActionCreators)
+// Module 14610 (VoiceChannelAppActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import leaveFrame from "leaveFrame" /* 11076 */;
-import voiceChannelAppSession from "voiceChannelAppSession" /* 13324 */;
-import FramesStore from "FramesStore" /* 6966 */;
+import leaveFrame from "leaveFrame" /* 11125 */;
+import voiceChannelAppSession from "voiceChannelAppSession" /* 13407 */;
+import FramesStore from "FramesStore" /* 6981 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_channel_apps/VoiceChannelAppActionCreators.tsx");

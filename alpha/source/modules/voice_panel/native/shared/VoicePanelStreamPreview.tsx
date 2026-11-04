@@ -1,17 +1,17 @@
-// Module ID: 15025
-// Function ID: 15026
+// Module ID: 15105
+// Function ID: 15106
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 6834, 502, 21, 1652, 5754, 5141, 575, 12179, 504, 6837, 5377, 5837, 5747, 1113, 2]
+// Dependencies: [19, 17, 6849, 502, 21, 1652, 5768, 5141, 575, 12238, 504, 6852, 5378, 5851, 5761, 1113, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 15025 (VoicePanelStreamPreview)
+// Module 15105 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6837 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12179 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6852 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12238 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652_mod from "module_1652" /* 1652 */;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let size;
 let tmp2;
-const FastImageDefault = tmp2(5837);
+const FastImageDefault = tmp2(5851);
 ({ StyleSheet: c3, View: closure_4, Pressable } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let module_1652 = module_1652_mod;
@@ -99,7 +99,7 @@ export function VoicePanelStreamPreview(stream) {
   const items2 = [closure_13, mode, , ];
   const useAnimatedStyle = stream(1652).useAnimatedStyle;
   stream(1652);
-  items2[2] = stream(5377).withTiming;
+  items2[2] = stream(5378).withTiming;
   items2[3] = closure_11;
   let c0;
   let c1;
@@ -149,8 +149,8 @@ export function VoicePanelStreamPreview(stream) {
   View3 = module_1652.View;
   if (stateFromStores) {
     const obj8 = { style: tmp.ownStreamTextContainer, children: closure_7(Text, obj9) };
-    obj9 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(stream(1113).t["ro/HN8"]) };
-    Text = tmp8(5747).Text;
+    obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(stream(1113).t["ro/HN8"]) };
+    Text = tmp8(5761).Text;
     intl2 = tmp8(1113).intl;
     tmp22Result = tmp22(closure_4, obj8);
   } else {

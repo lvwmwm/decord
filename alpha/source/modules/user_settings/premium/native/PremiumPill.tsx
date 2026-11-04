@@ -1,10 +1,10 @@
-// Module ID: 7747
-// Function ID: 7748
+// Module ID: 7763
+// Function ID: 7764
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 5141, 575, 5376, 7748, 7750, 1113, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5377, 7764, 7766, 1113, 5761, 2]
 // Exports: PremiumPill
 
-// Module 7747 (PremiumPill)
+// Module 7763 (PremiumPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -133,7 +133,7 @@ export const PremiumPill = (discountOffer) => {
   if (null != str3) {
     let obj = { style: items2, children: flag3(Text, obj2) };
     items2 = [tmp6.pillContainer, style];
-    obj2 = { variant: "text-xs/semibold", color: str2, style: tmp6.discountPillText, children: str3.toUpperCase() };
+    obj2 = { variant: "body-xs/semibold", color: str2, style: tmp6.discountPillText, children: str3.toUpperCase() };
     Text = tmp(tmp2[9]).Text;
     tmp11 = flag3(trialOffer, obj);
   }

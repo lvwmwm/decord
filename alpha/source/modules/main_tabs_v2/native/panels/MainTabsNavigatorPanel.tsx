@@ -1,17 +1,17 @@
-// Module ID: 18197
-// Function ID: 18198
+// Module ID: 18294
+// Function ID: 18295
 // Name: MainTabsNavigatorPanel
-// Dependencies: [32, 19, 17, 1072, 21, 3, 5141, 575, 1500, 5324, 11694, 11692, 11695, 18198, 5330, 18199, 5322, 5876, 1108, 18200, 7609, 18203, 1652, 7126, 9954, 11380, 18204, 18205, 5426, 18212, 18213, 18759, 18760, 18761, 18977, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 3, 5141, 575, 1500, 5325, 11745, 11743, 11746, 18295, 5331, 18296, 5323, 5890, 1108, 18297, 7625, 18300, 1652, 7141, 9972, 11430, 18301, 18302, 5428, 18309, 18310, 18860, 18861, 18862, 19080, 2]
 
-// Module 18197 (MainTabsNavigatorPanel)
+// Module 18294 (MainTabsNavigatorPanel)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
-import ChatInputUtils from "ChatInputUtils" /* 5330 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
-import PanelsNavigationUtils from "PanelsNavigationUtils" /* 18198 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18199 */;
-import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 18203 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
+import ChatInputUtils from "ChatInputUtils" /* 5331 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
+import PanelsNavigationUtils from "PanelsNavigationUtils" /* 18295 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18296 */;
+import ChannelScreenAnimatedFrameDefault from "ChannelScreenAnimatedFrame" /* 18300 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -74,7 +74,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let tmp72;
   let tmp73;
   let type1;
-  const f113294 = () => first4;
+  const f114058 = () => first4;
   let flag = showHeaderGradient.showHeaderGradient;
   if (flag === undefined) {
     flag = true;
@@ -186,9 +186,9 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     const obj = useChannelScreensFromNavigation;
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp25, c13] = react.useState(f113294);
+  [tmp25, c13] = react.useState(f114058);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f113294), 2);
+  _slicedToArray(react.useState(f114058), 2);
   const effect1 = obj3.useEffect(() => {
     function handleStateChange(data) {
       const obj = navigation(drawerWidth[15]);
@@ -235,7 +235,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
           }
           if ("modal" !== name) {
             tmp3.current = true;
-            const tmp15Result = tmp15(5876);
+            const tmp15Result = tmp15(5890);
             tmp15Result.transitionToChannel(tmp6.current.channelId);
           }
         }
@@ -329,7 +329,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
           movePanel(true, false, 0, true);
         }
       } else if (movePanel(false, false, 0, false)) {
-        const tmp4Result = tmp4(5330);
+        const tmp4Result = tmp4(5331);
         tmp4Result.dismissKeyboard();
       }
     }

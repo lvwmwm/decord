@@ -1,18 +1,18 @@
-// Module ID: 18753
-// Function ID: 18754
+// Module ID: 18854
+// Function ID: 18855
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 5012, 9030, 21, 5141, 575, 9637, 7083, 504, 5376, 9043, 9047, 1652, 5757, 1502, 7106, 13180, 5747, 1113, 5148, 2]
+// Dependencies: [32, 19, 17, 5012, 9047, 21, 5141, 575, 9656, 7098, 504, 5377, 9060, 9064, 1652, 5771, 1502, 7121, 13263, 5761, 1113, 5148, 2]
 // Exports: default
 
-// Module 18753 (NewContentPill)
+// Module 18854 (NewContentPill)
 import nativeDefault from "native" /* 575 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import ClipView from "ClipView" /* 9637 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import ClipView from "ClipView" /* 9656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import ICYMIStore from "ICYMIStore" /* 9030 */;
+import ICYMIStore from "ICYMIStore" /* 9047 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -224,7 +224,7 @@ export default function NewContentPill(onPress) {
     obj6 = { onPress: callback, style: tmp.container, children: items12 };
     PressableOpacity = tmp2(tmp3[17]).PressableOpacity;
     items12 = [first1(tmp2(tmp3[18]).ArrowSmallUpIcon, { size: "md", color: "interactive-text-active" }), ];
-    const obj7 = { style: { marginLeft: 4 }, variant: "heading-md/semibold", color: "interactive-text-active", children: intl.string(tmp2(tmp3[20]).t["4Nl0Rl"]) };
+    const obj7 = { style: { marginLeft: 4 }, variant: "heading-sm/semibold", color: "interactive-text-active", children: intl.string(tmp2(tmp3[20]).t["4Nl0Rl"]) };
     const Text = tmp2(tmp3[19]).Text;
     intl = tmp2(tmp3[20]).intl;
     items12[1] = first1(Text, obj7);

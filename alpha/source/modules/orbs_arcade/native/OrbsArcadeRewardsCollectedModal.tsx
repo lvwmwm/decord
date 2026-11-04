@@ -1,31 +1,32 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17282
+// Function ID: 17283
 // Name: OrbsArcadeRewardsCollectedModal
-// Dependencies: [32, 19, 17, 5142, 1072, 1387, 21, 5141, 575, 14630, 5747, 8873, 504, 11524, 8866, 9634, 17176, 1113, 11650, 5754, 7885, 9669, 17189, 7687, 5719, 5710, 1092, 7412, 8152, 10899, 17167, 6887, 2]
+// Dependencies: [32, 19, 17, 5142, 1072, 1387, 21, 5141, 575, 14710, 9531, 5761, 8890, 504, 11574, 8883, 9653, 17268, 1113, 11701, 5768, 7901, 9688, 17281, 7703, 5732, 5723, 1092, 7428, 8168, 10947, 17259, 6902, 2]
 // Exports: default
 
-// Module 17190 (OrbsArcadeRewardsCollectedModal)
+// Module 17282 (OrbsArcadeRewardsCollectedModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7885 */;
-import useShopProductItems from "useShopProductItems" /* 8866 */;
-import useCurrentUser from "useCurrentUser" /* 8873 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9634 */;
-import FractionalNitroCoinIllustration from "FractionalNitroCoinIllustration" /* 9669 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10899 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11524 */;
-import useHandleUseNow from "useHandleUseNow" /* 11650 */;
-import useAvatarDecorationPreviewSizes from "useAvatarDecorationPreviewSizes" /* 14630 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17167 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17176 */;
-import openOrbsArcadeRewardsCollectedModal from "openOrbsArcadeRewardsCollectedModal" /* 17189 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import utils_CollectiblesUtils from "utils/CollectiblesUtils" /* 7901 */;
+import useShopProductItems from "useShopProductItems" /* 8883 */;
+import useCurrentUser from "useCurrentUser" /* 8890 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9531 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9653 */;
+import FractionalNitroCoinIllustration from "FractionalNitroCoinIllustration" /* 9688 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10947 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11574 */;
+import useHandleUseNow from "useHandleUseNow" /* 11701 */;
+import useAvatarDecorationPreviewSizes from "useAvatarDecorationPreviewSizes" /* 14710 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17259 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17268 */;
+import openOrbsArcadeRewardsCollectedModal from "openOrbsArcadeRewardsCollectedModal" /* 17281 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -56,30 +57,35 @@ function OrbsArcadeRewardPageContent(arg0) {
   let items3;
   let obj4;
   let obj6;
+  let onLayout;
   let preview;
+  let ref;
   let title;
   ({ preview, title, description } = arg0);
   const tmp = closure_13();
   const obj = useAvatarDecorationPreviewSizes;
   const avatarDecorationSize = obj.useAvatarDecorationPreviewSizes().avatarDecorationSize;
-  const tmp2 = _slicedToArray(react.useState(0), 2);
-  let closure_0 = tmp2[1];
-  const tmp3 = closure_14(avatarDecorationSize, tmp2[0]);
+  const tmp4 = useMeasuredLayoutDefault();
+  const height = tmp4.height;
+  let num = 0;
+  ({ ref, onLayout } = tmp4);
+  const tmp5 = closure_14;
+  if (undefined !== height) {
+    num = height;
+  }
+  const tmp5Result = tmp5(avatarDecorationSize, num);
   const obj2 = { contentContainerStyle: tmp.pageContent, alwaysBounceVertical: false, children: items1 };
   const obj3 = { style: items, children: authStore(metroRequire, obj4) };
-  items = [tmp.previewArea, tmp3.previewAreaMinHeight];
-  obj4 = { style: tmp3.preview, children: preview };
-  const callback = react.useCallback((nativeEvent) => {
-    closure_0(nativeEvent.nativeEvent.layout.height);
-  }, []);
+  items = [tmp.previewArea, tmp5Result.previewAreaMinHeight];
+  obj4 = { style: tmp5Result.preview, children: preview };
   items1 = [authStore(metroRequire, obj3), ];
   const obj5 = { style: items2, children: unpackModuleId(metroRequire, obj6) };
-  items2 = [tmp.messageArea, tmp3.messageAreaMinHeight];
-  obj6 = { style: tmp.messages, onLayout: callback, children: items3 };
+  items2 = [tmp.messageArea, tmp5Result.messageAreaMinHeight];
+  obj6 = { style: tmp.messages, ref, onLayout, children: items3 };
   items3 = [, ];
   const obj7 = { variant: "heading-xl/semibold", color: "text-default", style: tmp.message, children: title };
   items3[0] = authStore(Text_Text.Text, obj7);
-  const obj8 = { variant: "text-md/medium", color: "text-default", style: tmp.message, children: description };
+  const obj8 = { variant: "body-md/medium", color: "text-default", style: tmp.message, children: description };
   items3[1] = authStore(Text_Text.Text, obj8);
   items1[1] = authStore(metroRequire, obj5);
   return unpackModuleId(hasOwnProperty, obj2);
@@ -171,7 +177,7 @@ function CollectibleRewardPrimaryAction(reward) {
 
         }
     };
-    const Button = tmp(5754).Button;
+    const Button = tmp(5768).Button;
     intl = tmp(1113).intl;
     tmp4 = authStore(Button, obj3);
   }
@@ -219,7 +225,7 @@ function NitroCreditRewardPageContent(reward) {
 }
 function NitroCreditRewardPrimaryAction(consumed) {
   consumed = consumed.consumed;
-  const Button = consumed(5754).Button;
+  const Button = consumed(5768).Button;
   const intl = consumed(1113).intl;
   const string = intl.string;
   const t = consumed(1113).t;
@@ -268,8 +274,6 @@ let result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeRe
 
 export default function OrbsArcadeRewardsCollectedModal(arg0) {
   let IconButton;
-  let _undefined;
-  let c7;
   let closure_1;
   let closure_2;
   let entitlements;
@@ -279,75 +283,80 @@ export default function OrbsArcadeRewardsCollectedModal(arg0) {
   let items3;
   let items4;
   let items5;
-  let obj13;
   let obj14;
-  let obj8;
+  let obj15;
+  let obj9;
+  let onLayout;
+  let ref;
   let rewards;
-  let tmp12;
-  let tmp29Result;
+  let tmp27Result;
   ({ rewards, entitlements } = arg0);
   dependencyMap = undefined;
-  let first;
-  c7 = undefined;
-  closure_9 = undefined;
+  let num;
+  let page;
+  let closure_6;
+  let bound;
+  let closure_8;
   let tmp = closure_13();
   importDefault = tmp;
   let tmp2 = entitlements;
   let tmp3 = dependencyMap;
-  let obj = entitlements(5719);
+  let obj = entitlements(5732);
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
-  let obj2 = entitlements(5719);
+  let obj2 = entitlements(5732);
   const token1 = obj2.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWER);
-  let obj3 = entitlements(5719);
+  let obj3 = entitlements(5732);
   const token2 = obj3.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWEST);
-  const items = [c7];
+  const items = [bound];
   const obj4 = entitlements(504);
-  dependencyMap = obj4.useStateFromStores(items, () => _undefined.useReducedMotion);
-  const ref = first.useRef(null);
-  const tmp9 = ref(first.useState(0), 2);
-  first = tmp9[0];
-  let closure_5 = tmp9[1];
-  const page = closure_15(first);
-  [tmp12, c7] = ref(first.useState(0), 2);
-  const items1 = [first];
-  const tmp11 = ref(first.useState(0), 2);
-  const callback = first.useCallback((nativeEvent) => {
-    closure_5(nativeEvent.nativeEvent.layout.width);
-  }, []);
-  const callback1 = first.useCallback((nativeEvent) => {
-    if (first > 0) {
+  dependencyMap = obj4.useStateFromStores(items, () => bound.useReducedMotion);
+  const ref1 = num.useRef(null);
+  const tmp9 = useMeasuredLayoutDefault();
+  const width = tmp9.width;
+  num = 0;
+  ({ ref, onLayout } = tmp9);
+  if (undefined !== width) {
+    num = width;
+  }
+  page = closure_15(num);
+  const tmp10 = ref1(obj5.useState(0), 2);
+  closure_6 = tmp10[1];
+  const items1 = [num];
+  const first = tmp10[0];
+  const callback = obj5.useCallback((nativeEvent) => {
+    if (num > 0) {
       const _Math = Math;
-      _undefined(Math.round(nativeEvent.nativeEvent.contentOffset.x / tmp));
+      closure_6(Math.round(nativeEvent.nativeEvent.contentOffset.x / tmp));
     }
   }, items1);
-  const bound = Math.max(Math.min(tmp12, rewards.length - 1), 0);
+  bound = Math.max(Math.min(first, rewards.length - 1), 0);
   if (null == rewards[bound]) {
     return null;
   } else {
-    let tmp29Result5;
-    closure_9 = tmp25;
-    const obj5 = { style: tmp.root, children: items3 };
-    const obj6 = { style: tmp.backdrop, start: tmp2(1092).VerticalGradient.START, end: tmp2(1092).VerticalGradient.END, locations, colors: items2 };
+    let tmp27Result5;
+    closure_8 = tmp23;
+    const obj6 = { style: tmp.root, children: items3 };
+    const obj7 = { style: tmp.backdrop, start: tmp2(1092).VerticalGradient.START, end: tmp2(1092).VerticalGradient.END, locations, colors: items2 };
     items2 = [token, token1, token2];
     const tmp4Result = LinearGradientDefault;
-    items3 = [closure_10(tmp4Result, obj6), ];
+    items3 = [closure_10(tmp4Result, obj7), ];
     const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items4 };
-    const obj7 = { style: tmp.header, children: closure_10(IconButton, obj8) };
-    const SafeAreaPaddingView = tmp2(7412).SafeAreaPaddingView;
-    obj8 = { variant: "tertiary", icon: AssetRegistryDefault, accessibilityLabel: intl3.string(tmp2(1113).t.cpT0Cq), onPress: tmp2(17189).closeOrbsArcadeRewardsCollectedModal };
-    IconButton = tmp2(8152).IconButton;
+    const obj8 = { style: tmp.header, children: closure_10(IconButton, obj9) };
+    const SafeAreaPaddingView = tmp2(7428).SafeAreaPaddingView;
+    obj9 = { variant: "tertiary", icon: AssetRegistryDefault, accessibilityLabel: intl3.string(tmp2(1113).t.cpT0Cq), onPress: tmp2(17281).closeOrbsArcadeRewardsCollectedModal };
+    IconButton = tmp2(8168).IconButton;
     intl3 = tmp2(1113).intl;
-    items4 = [closure_10(page, obj7), , ];
-    const obj9 = { style: tmp.pager, onLayout: callback, children: tmp29Result };
-    tmp29Result = null;
-    if (first > 0) {
-      const obj10 = {
-        ref,
+    items4 = [closure_10(closure_6, obj8), , ];
+    const obj10 = { style: tmp.pager, ref, onLayout, children: tmp27Result };
+    tmp27Result = null;
+    if (num > 0) {
+      const obj11 = {
+        ref: ref1,
         horizontal: true,
         pagingEnabled: true,
         scrollEnabled: 1 !== rewards.length,
         showsHorizontalScrollIndicator: false,
-        onMomentumScrollEnd: callback1,
+        onMomentumScrollEnd: callback,
         children: rewards.map((type) => {
               let flag;
               let tmpResult;
@@ -373,17 +382,17 @@ export default function OrbsArcadeRewardsCollectedModal(arg0) {
               return authStore(tmp2, obj, type.id);
             })
       };
-      tmp29Result = tmp29(closure_5, obj10);
+      tmp27Result = tmp27(page, obj11);
     }
-    items4[1] = closure_10(page, obj9);
-    let tmp29Result4 = null;
-    const obj11 = { style: tmp.footer, children: items5 };
+    items4[1] = closure_10(closure_6, obj10);
+    let tmp27Result4 = null;
+    const obj12 = { style: tmp.footer, children: items5 };
     if (1 !== rewards.length) {
-      const obj12 = {
+      const obj13 = {
         style: tmp.pageDots,
         accessible: true,
-        accessibilityLabel: intl.formatToPlainString(tmp2(1113).t.qD8TVH, obj13),
-        children: Array.from(obj14, (arg0, arg1) => {
+        accessibilityLabel: intl.formatToPlainString(tmp2(1113).t.qD8TVH, obj14),
+        children: Array.from(obj15, (arg0, arg1) => {
               const style = [closure_1.pageDot, ];
               let currentPageDot;
               const tmp = authStore;
@@ -397,62 +406,62 @@ export default function OrbsArcadeRewardsCollectedModal(arg0) {
       };
       intl = tmp2(1113).intl;
       const _Array = Array;
-      obj13 = { current: bound + 1, total: rewards.length };
-      obj14 = { length: rewards.length };
-      tmp29Result4 = tmp29(tmp28, obj12);
+      obj14 = { current: bound + 1, total: rewards.length };
+      obj15 = { length: rewards.length };
+      tmp27Result4 = tmp27(tmp26, obj13);
     }
-    items5 = [tmp29Result4, ];
-    const ButtonGroup = tmp2(6887).ButtonGroup;
-    if (rewards[bound].type === tmp2(17167).OrbsArcadeRewardType.COLLECTIBLE) {
-      const obj15 = { reward: rewards[bound] };
-      tmp29Result5 = tmp29(CollectibleRewardPrimaryAction, obj15, tmp16.id);
+    items5 = [tmp27Result4, ];
+    const ButtonGroup = tmp2(6902).ButtonGroup;
+    if (rewards[bound].type === tmp2(17259).OrbsArcadeRewardType.COLLECTIBLE) {
+      const obj16 = { reward: rewards[bound] };
+      tmp27Result5 = tmp27(CollectibleRewardPrimaryAction, obj16, tmp14.id);
     } else {
-      let skuId = tmp16.skuId;
+      let skuId = tmp14.skuId;
       let found = entitlements.find((sku_id) => sku_id.sku_id === skuId);
       let flag;
-      const tmp20 = NitroCreditRewardPrimaryAction;
+      const tmp18 = NitroCreditRewardPrimaryAction;
       if (found != null) {
         flag = found.consumed;
       }
       if (flag == null) {
         flag = false;
       }
-      const obj16 = { consumed: flag };
-      tmp29Result5 = tmp29(tmp20, obj16, tmp16.id);
+      const obj17 = { consumed: flag };
+      tmp27Result5 = tmp27(tmp18, obj17, tmp14.id);
     }
-    const items6 = [tmp29Result5, ];
-    let tmp29Result6 = null;
+    const items6 = [tmp27Result5, ];
+    let tmp27Result6 = null;
     if (1 !== rewards.length) {
-      const Button = tmp2(5754).Button;
+      const Button = tmp2(5768).Button;
       const intl2 = tmp2(1113).intl;
       const string = intl2.string;
       const t = tmp2(1113).t;
-      const obj17 = {
+      const obj18 = {
         size: "lg",
         variant: "secondary",
         text: string(bound >= rewards.length - 1 ? t.i4jeWR : t.PDTjLN),
         onPress: function handleNextPress() {
-              const tmp = closure_9;
+              const tmp = closure_8;
               if (tmp) {
                 const obj2 = openOrbsArcadeRewardsCollectedModal;
                 const result = obj2.closeOrbsArcadeRewardsCollectedModal();
               } else {
-                const current = ref.current;
+                const current = ref1.current;
                 if (current != null) {
-                  const obj = { x: (bound + 1) * first, animated: !closure_2 };
+                  const obj = { x: (bound + 1) * 1, animated: !closure_2 };
                   current.scrollTo(obj);
                 }
-                _undefined(bound + 1);
+                closure_6(bound + 1);
               }
             }
       };
-      tmp29Result6 = tmp29(Button, obj17);
+      tmp27Result6 = tmp27(Button, obj18);
     }
-    const obj18 = { size: "lg", children: items6 };
-    items6[1] = tmp29Result6;
-    items5[1] = closure_11(ButtonGroup, obj18);
-    items4[2] = closure_11(page, obj11);
+    const obj19 = { size: "lg", children: items6 };
+    items6[1] = tmp27Result6;
+    items5[1] = closure_11(ButtonGroup, obj19);
+    items4[2] = closure_11(closure_6, obj12);
     items3[1] = closure_11(SafeAreaPaddingView, rect);
-    return closure_11(page, obj5);
+    return closure_11(closure_6, obj6);
   }
 };

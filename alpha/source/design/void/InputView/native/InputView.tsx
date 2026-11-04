@@ -1,9 +1,9 @@
-// Module ID: 16153
-// Function ID: 16154
+// Module ID: 16242
+// Function ID: 16243
 // Name: InputView
-// Dependencies: [109, 19, 17, 1072, 21, 5141, 575, 6898, 5207, 1187, 5747, 1113, 7218, 5148, 12641, 1377, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5141, 575, 6913, 5207, 1187, 5761, 1113, 7233, 5148, 12722, 1377, 2]
 
-// Module 16153 (InputView)
+// Module 16242 (InputView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
@@ -11,10 +11,10 @@ import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import shared from "shared" /* 5148 */;
 import native2 from "native" /* 5207 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import CircleXIcon from "CircleXIcon" /* 7218 */;
-import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 12641 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
+import CircleXIcon from "CircleXIcon" /* 7233 */;
+import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 12722 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -218,13 +218,13 @@ class InputView extends PureComponent {
           str5 = "text-feedback-critical";
         }
       }
-      const obj2 = { variant: "heading-md/semibold", color: str5, style: tmp.inputViewTitle, children: title };
+      const obj2 = { variant: "heading-sm/semibold", color: str5, style: tmp.inputViewTitle, children: title };
       tmp12Result = tmp12(Text, obj2);
     }
     let tmp16;
     const tmp15 = null != helpText && "" !== helpText;
     if (tmp15) {
-      const obj3 = { variant: "text-xs/medium", children: helpText };
+      const obj3 = { variant: "body-xs/medium", children: helpText };
       tmp16 = React4(Text_Text.Text, obj3);
     }
     const obj4 = { style: tmp.topContainer, children: items2 };

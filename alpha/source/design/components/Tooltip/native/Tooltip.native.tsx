@@ -1,17 +1,17 @@
-// Module ID: 10088
-// Function ID: 10089
+// Module ID: 10136
+// Function ID: 10137
 // Name: Tooltip
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1652, 5719, 10089, 5757, 5747, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1652, 5732, 10137, 5771, 5761, 2]
 // Exports: Tooltip
 
-// Module 10088 (Tooltip)
+// Module 10136 (Tooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import reactDefault from "react" /* 10089 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import reactDefault from "react" /* 10137 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -232,7 +232,7 @@ export function Tooltip(targetMeasurements) {
   const obj9 = { style: items10, children: metroRequire(Text_Text.Text, obj10) };
   items10 = [tmp.textContainer, animatedStyle];
   const View = tmp5(1652).View;
-  obj10 = { style: tmp.text, variant: "text-xs/semibold", color: "text-overlay-light", children: label };
+  obj10 = { style: tmp.text, variant: "body-xs/semibold", color: "text-overlay-light", children: label };
   items9[1] = metroRequire(View, obj9);
   if ("top" === position) {
     const obj11 = { style: items11 };

@@ -1,16 +1,16 @@
-// Module ID: 12616
-// Function ID: 12617
+// Module ID: 12697
+// Function ID: 12698
 // Name: CommandListSortButton
-// Dependencies: [19, 17, 12601, 1191, 21, 5141, 575, 1113, 7106, 5381, 12617, 2123, 5747, 11552, 2]
+// Dependencies: [19, 17, 12682, 1191, 21, 5141, 575, 1113, 7121, 5382, 12698, 2123, 5761, 11602, 2]
 // Exports: default
 
-// Module 12616 (CommandListSortButton)
+// Module 12697 (CommandListSortButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import AppLauncherConstants from "AppLauncherConstants" /* 12601 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import AppLauncherConstants from "AppLauncherConstants" /* 12682 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -61,15 +61,15 @@ export default function CommandListSortButton(sortOrder) {
           obj.hideActionSheet("CommandListSortActionSheet");
         }
       };
-      obj.openLazy(asyncRequire(12617, dependencyMap.paths), "CommandListSortActionSheet", obj2);
+      obj.openLazy(asyncRequire(12698, dependencyMap.paths), "CommandListSortActionSheet", obj2);
     },
     children: closure_7(View, obj2)
   };
   obj2 = { style: tmp.button, children: items };
-  const PressableOpacity = sortOrder(7106).PressableOpacity;
-  items = [closure_6(sortOrder(5747).Text, { variant: "text-sm/medium", color: "text-default", children: stringResult }), ];
+  const PressableOpacity = sortOrder(7121).PressableOpacity;
+  items = [closure_6(sortOrder(5761).Text, { variant: "body-sm/medium", color: "text-default", children: stringResult }), ];
   const obj3 = { size: "xs", color: onSortOptionPress(575).colors.TEXT_DEFAULT };
-  const ChevronSmallDownIcon = sortOrder(11552).ChevronSmallDownIcon;
+  const ChevronSmallDownIcon = sortOrder(11602).ChevronSmallDownIcon;
   items[1] = closure_6(ChevronSmallDownIcon, obj3);
   return closure_6(PressableOpacity, obj);
 };

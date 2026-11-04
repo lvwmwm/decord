@@ -1,14 +1,14 @@
-// Module ID: 11477
-// Function ID: 11478
+// Module ID: 11527
+// Function ID: 11528
 // Name: ConjureAppIconTile
-// Dependencies: [19, 17, 21, 5141, 11478, 11480, 5747, 8802, 2]
+// Dependencies: [19, 17, 21, 5141, 11528, 11530, 5761, 8819, 2]
 // Exports: default
 
-// Module 11477 (ConjureAppIconTile)
+// Module 11527 (ConjureAppIconTile)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useConjureDefaultAppIconDefault from "useConjureDefaultAppIcon" /* 11478 */;
-import useConjureProjectIcon from "useConjureProjectIcon" /* 11480 */;
+import useConjureDefaultAppIconDefault from "useConjureDefaultAppIcon" /* 11528 */;
+import useConjureProjectIcon from "useConjureProjectIcon" /* 11530 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -38,11 +38,11 @@ export default function ConjureAppIconTile(size) {
   const obj = useConjureProjectIcon;
   const tmp4 = closure_5(size, obj.conjureProjectIconMetrics(size).glyphSize, backgroundColor, foregroundColor);
   if (null != character) {
-    const obj3 = { variant: "heading-md/semibold", color: "none", style: tmp4.character, allowFontScaling: false, children: character };
-    tmp5Result = tmp5(tmp3(5747).Text, obj3);
+    const obj3 = { variant: "heading-sm/semibold", color: "none", style: tmp4.character, allowFontScaling: false, children: character };
+    tmp5Result = tmp5(tmp3(5761).Text, obj3);
   } else {
     const obj4 = { size: "custom", style: tmp4.glyph, color: foregroundColor };
-    tmp5Result = tmp5(tmp3(8802).AppsIcon, obj4);
+    tmp5Result = tmp5(tmp3(8819).AppsIcon, obj4);
   }
   return <tmp6 style={tmp4.tile} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">{tmp5Result}</tmp6>;
 };

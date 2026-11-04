@@ -1,19 +1,19 @@
-// Module ID: 8924
-// Function ID: 8925
+// Module ID: 8941
+// Function ID: 8942
 // Name: useProfileTheme
-// Dependencies: [32, 5142, 8925, 1072, 5376, 504, 574, 8839, 1090, 8926, 5148, 2]
+// Dependencies: [32, 5142, 8942, 1072, 5377, 504, 574, 8856, 1090, 8943, 5148, 2]
 // Exports: default
 
-// Module 8924 (useProfileTheme)
+// Module 8941 (useProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
 import shims from "shims" /* 574 */;
 import Constants from "Constants" /* 1072 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import useAvatarColor from "useAvatarColor" /* 8839 */;
-import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 8925 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8926 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import useAvatarColor from "useAvatarColor" /* 8856 */;
+import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 8942 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import size from "module_2" /* 2 */;

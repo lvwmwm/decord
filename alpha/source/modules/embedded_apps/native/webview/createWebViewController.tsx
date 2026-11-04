@@ -1,16 +1,16 @@
-// Module ID: 11937
-// Function ID: 11938
+// Module ID: 11996
+// Function ID: 11997
 // Name: createWebViewController
-// Dependencies: [5, 11051, 1072, 6570, 8103, 11050, 1242, 11938, 11941, 1108, 2]
+// Dependencies: [5, 11100, 1072, 6585, 8119, 11099, 1242, 11997, 12000, 1108, 2]
 // Exports: default
 
-// Module 11937 (createWebViewController)
+// Module 11996 (createWebViewController)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import Constants2 from "Constants" /* 6570 */;
-import EmbeddedAppConstants from "EmbeddedAppConstants" /* 11051 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11941 */;
+import Constants2 from "Constants" /* 6585 */;
+import EmbeddedAppConstants from "EmbeddedAppConstants" /* 11100 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 12000 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

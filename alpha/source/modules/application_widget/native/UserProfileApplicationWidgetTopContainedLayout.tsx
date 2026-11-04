@@ -1,15 +1,15 @@
-// Module ID: 12487
-// Function ID: 12488
+// Module ID: 12552
+// Function ID: 12553
 // Name: UserProfileApplicationWidgetTopContainedLayout
-// Dependencies: [19, 17, 21, 5141, 575, 12397, 12483, 5837, 12484, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 12462, 12548, 5851, 12549, 2]
 // Exports: default
 
-// Module 12487 (UserProfileApplicationWidgetTopContainedLayout)
+// Module 12552 (UserProfileApplicationWidgetTopContainedLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import _mod12397 from "module_12397" /* 12397 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12483 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import _mod12462 from "module_12462" /* 12462 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12548 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -46,25 +46,25 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
   ({ topConfig, resolveFieldValue, numberFormat } = header);
   header = header.header;
   const tmp = closure_6();
-  const obj = _mod12397;
+  const obj = _mod12462;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  const obj2 = _mod12397;
+  const obj2 = _mod12462;
   const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  const obj3 = _mod12397;
+  const obj3 = _mod12462;
   const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
   const contained_image = topConfig.components.contained_image;
   let image;
-  const obj4 = _mod12397;
+  const obj4 = _mod12462;
   const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (contained_image != null) {
     image = contained_image.fields.image;
   }
-  const items = [_mod12397.ResolvedValueType.MEDIA];
+  const items = [_mod12462.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   const items1 = [header, ];
   const obj5 = { style: tmp.contentRow, children: items3 };
   const obj6 = { style: tmp.text, children: items2 };
-  items2 = [React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
+  items2 = [React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues, variant: "body-lg/medium", color: "text-default" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues1, variant: "body-sm/normal", color: "text-muted" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues2, variant: "body-sm/normal", color: "text-muted" }), React3(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues3, variant: "body-sm/normal", color: "text-muted" })];
   items3 = [hasOwnProperty(View, obj6), ];
   if (null != fieldValue) {
     const obj7 = { style: tmp.imageContainer, children: React3(FastImageDefault, obj8) };
@@ -73,7 +73,7 @@ export default function UserProfileApplicationWidgetTopContainedLayout(header) {
     tmp12Result = tmp12(tmp11, obj7);
   } else {
     const obj10 = { style: tmp.imageSkeleton };
-    tmp12Result = tmp12(tmp2(12484).ImageSkeleton, obj10);
+    tmp12Result = tmp12(tmp2(12549).ImageSkeleton, obj10);
   }
   const obj11 = { children: items1 };
   items3[1] = tmp12Result;

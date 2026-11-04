@@ -1,27 +1,27 @@
-// Module ID: 9980
-// Function ID: 9981
+// Module ID: 10028
+// Function ID: 10029
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7891, 7894, 9981, 9982, 5775, 1072, 9978, 572, 1282, 7760, 9983, 8052, 8059, 2]
+// Dependencies: [5, 7907, 7910, 10029, 10030, 5789, 1072, 10026, 572, 1282, 7776, 10031, 8068, 8075, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9980 (ConversationsActionCreators)
+// Module 10028 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ConversationConstants from "ConversationConstants" /* 5775 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 8052 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9983 */;
+import ConversationConstants from "ConversationConstants" /* 5789 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 8068 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10031 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7891 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7894 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9981 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9982 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7907 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7910 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 10029 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 10030 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(8059);
+const SurveyActionTypes = tmp(8075);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_4;
@@ -443,7 +443,7 @@ export function setSelectedConversation(channelId, id, arg2) {
       }
       if (null != startMessageId) {
         const obj2 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7760);
+        const tmp6Result = tmp6(7776);
         tmp6Result.jumpToMessage(obj2);
       }
     }

@@ -1,15 +1,15 @@
-// Module ID: 16638
-// Function ID: 16639
+// Module ID: 16728
+// Function ID: 16729
 // Name: UserProfileEditTheme
-// Dependencies: [19, 17, 21, 5141, 575, 8881, 8924, 8839, 5974, 16639, 5747, 1113, 7106, 5381, 16640, 2123, 9888, 16641, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8898, 8941, 8856, 5988, 16729, 5761, 1113, 7121, 5382, 16730, 2123, 9906, 16731, 2]
 // Exports: default
 
-// Module 16638 (UserProfileEditTheme)
+// Module 16728 (UserProfileEditTheme)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import isEqualDefault from "isEqual" /* 5974 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import isEqualDefault from "isEqual" /* 5988 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -94,7 +94,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
     if (null != secondaryColor) {
       let obj2 = { style: tmp.container, children: items2 };
       const obj3 = { style: tmp.labelRow, children: items1 };
-      const obj4 = { variant: "text-sm/semibold", color: "text-subtle", children: intl.string(onProfileThemeColorsChanged(tmp3[11]).t.DMeO2X) };
+      const obj4 = { variant: "body-sm/semibold", color: "text-subtle", children: intl.string(onProfileThemeColorsChanged(tmp3[11]).t.DMeO2X) };
       const Text = tmp6(tmp3[10]).Text;
       intl = tmp6(tmp3[11]).intl;
       items1 = [closure_5(Text, obj4), ];
@@ -109,7 +109,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
                       return onChangeColors([null, null]);
                     }
                   };
-                  obj.openLazy(asyncRequire(16640, dependencyMap.paths), "Profile Theme", obj2);
+                  obj.openLazy(asyncRequire(16730, dependencyMap.paths), "Profile Theme", obj2);
                 },
           children: closure_5(onProfileThemeColorsChanged(tmp3[16]).MoreHorizontalIcon, obj6)
         };

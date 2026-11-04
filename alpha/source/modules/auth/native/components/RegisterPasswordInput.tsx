@@ -1,19 +1,19 @@
-// Module ID: 18160
-// Function ID: 18161
+// Module ID: 18257
+// Function ID: 18258
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 7235, 18132, 21, 5141, 575, 1652, 18157, 1113, 5747, 16015, 7250, 504, 5817, 7208, 5312, 7261, 7263, 2]
+// Dependencies: [109, 32, 19, 7255, 18229, 21, 5141, 575, 1652, 18254, 1113, 5761, 16105, 7270, 504, 5831, 7223, 5313, 7237, 7239, 2]
 // Exports: RegisterPasswordInput
 
-// Module 18160 (RegisterPasswordInput)
+// Module 18257 (RegisterPasswordInput)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import usePasswordScore from "usePasswordScore" /* 18157 */;
+import usePasswordScore from "usePasswordScore" /* 18254 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7235 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18132 */;
+import PhoneStore from "PhoneStore" /* 7255 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18229 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -63,8 +63,8 @@ function PasswordStrength(passwordScore) {
               strong = tmp.strong;
             }
           }
-          const obj = { variant: "text-xs/medium", style: items, animated: true, children: items1 };
-          const Text = tmp9(5747).Text;
+          const obj = { variant: "body-xs/medium", style: items, animated: true, children: items1 };
+          const Text = tmp9(5761).Text;
           const merged = Object.assign(obj5);
           const merged1 = Object.assign(obj6);
           items = [tmp.passwordStrength, strong];
@@ -213,7 +213,7 @@ export function RegisterPasswordInput(ref) {
   if (null != memo) {
     tmp25Result = null;
     if (null == tmp15) {
-      obj6 = { style: tmp2.inputHint, variant: "text-xs/medium", color: "text-muted", animated: true, children: memo };
+      obj6 = { style: tmp2.inputHint, variant: "body-xs/medium", color: "text-muted", animated: true, children: memo };
       const Text = tmp17(tmp5[11]).Text;
       const merged1 = Object.assign(obj5);
       const merged2 = Object.assign(obj6);

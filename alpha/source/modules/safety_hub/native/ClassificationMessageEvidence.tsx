@@ -1,20 +1,20 @@
-// Module ID: 13460
-// Function ID: 13461
+// Module ID: 13544
+// Function ID: 13545
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1192, 1385, 8118, 8094, 1072, 21, 8501, 5141, 504, 5148, 13461, 13462, 8093, 6171, 8957, 8998, 13463, 10016, 6183, 11, 2]
+// Dependencies: [32, 19, 17, 1192, 1385, 8134, 8110, 1072, 21, 8518, 5141, 504, 5148, 13545, 13546, 8109, 6186, 8974, 9015, 13547, 10064, 6198, 11, 2]
 // Exports: default
 
-// Module 13460 (ClassificationMessageEvidence)
+// Module 13544 (ClassificationMessageEvidence)
 import Constants from "Constants" /* 1072 */;
-import RowGeneratorDefault from "RowGenerator" /* 8501 */;
-import openMediaModal from "openMediaModal" /* 8957 */;
+import RowGeneratorDefault from "RowGenerator" /* 8518 */;
+import openMediaModal from "openMediaModal" /* 8974 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserStore from "UserStore" /* 1385 */;
-import SafetyHubStore from "SafetyHubStore" /* 8118 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8094 */;
+import SafetyHubStore from "SafetyHubStore" /* 8134 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8110 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -85,10 +85,10 @@ export default function ClassificationEvidence(flaggedContent) {
     const obj = ref(closure_2[12]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(13461));
+    assetSource = resolveAssetSource(tmp12(13545));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(13462));
+    assetSource = resolveAssetSource(tmp12(13546));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -273,13 +273,13 @@ export default function ClassificationEvidence(flaggedContent) {
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(13463), obj6), ];
+      const items9 = [closure_18(tmp14(13547), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(10016);
+      const tmp14Result = tmp14(10064);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id: "1", type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
-      createMessageRecord = tmp2(6183).createMessageRecord;
-      tmp2(6183);
+      createMessageRecord = tmp2(6198).createMessageRecord;
+      tmp2(6198);
       const self = this;
       const self2 = this;
       const tmp14Result2 = tmp14(11);

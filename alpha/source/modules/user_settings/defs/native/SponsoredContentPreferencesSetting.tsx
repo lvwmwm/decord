@@ -1,15 +1,15 @@
-// Module ID: 18044
-// Function ID: 18045
+// Module ID: 18141
+// Function ID: 18142
 // Name: SponsoredContentPreferencesSetting
-// Dependencies: [1072, 11677, 1113, 2236, 14849, 18040, 18045, 2]
+// Dependencies: [1072, 11728, 1113, 2236, 14929, 18137, 18142, 2]
 
-// Module 18044 (SponsoredContentPreferencesSetting)
+// Module 18141 (SponsoredContentPreferencesSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2236 from "module_2236" /* 2236 */;
-import QuestsIcon from "QuestsIcon" /* 14849 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18040 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import QuestsIcon from "QuestsIcon" /* 14929 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18137 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,23 +1,23 @@
-// Module ID: 19478
-// Function ID: 19479
+// Module ID: 19582
+// Function ID: 19583
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 4989, 6834, 6995, 11360, 21, 5141, 575, 11359, 6971, 1652, 1705, 11069, 5879, 8025, 6826, 12021, 19479, 9966, 19469, 1113, 2]
+// Dependencies: [32, 19, 4989, 6849, 7010, 11410, 21, 5141, 575, 11409, 6986, 1652, 1705, 11118, 5893, 8041, 6841, 12080, 19583, 10014, 19573, 1113, 2]
 // Exports: default
 
-// Module 19478 (VoicePanelDisconnectCancelButton)
+// Module 19582 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5879 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6826 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6971 */;
-import StreamActionCreators from "StreamActionCreators" /* 8025 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11069 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6841 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6986 */;
+import StreamActionCreators from "StreamActionCreators" /* 8041 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11118 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
-import VoicePanelStore from "VoicePanelStore" /* 6995 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
+import VoicePanelStore from "VoicePanelStore" /* 7010 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 

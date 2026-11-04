@@ -1,16 +1,16 @@
-// Module ID: 11427
-// Function ID: 11428
+// Module ID: 11477
+// Function ID: 11478
 // Name: StrangerDangerMoreTipsModalActionItems
-// Dependencies: [32, 19, 5083, 1385, 10934, 21, 504, 5195, 11406, 7612, 1113, 7263, 7261, 10014, 7186, 11428, 2]
+// Dependencies: [32, 19, 5083, 1385, 10982, 21, 504, 5195, 11456, 7628, 1113, 7239, 7237, 10062, 7201, 11478, 2]
 // Exports: default
 
-// Module 11427 (StrangerDangerMoreTipsModalActionItems)
+// Module 11477 (StrangerDangerMoreTipsModalActionItems)
 import Fragment2 from "Fragment" /* 21 */;
 import intl5 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7612 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10934 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11406 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7628 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10982 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11456 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
@@ -92,9 +92,9 @@ export default function StrangerDangerMoreTipsModalActionItems(channelId) {
       stringResult = intl2.string(intl5.t.naWE6W);
     }
     if (first) {
-      let EyeSlashIcon = tmp11(7263).EyeIcon;
+      let EyeSlashIcon = tmp11(7239).EyeIcon;
     } else {
-      EyeSlashIcon = tmp11(7261).EyeSlashIcon;
+      EyeSlashIcon = tmp11(7237).EyeSlashIcon;
     }
     const items = [obj3, ];
     const intl3 = intl5.intl;

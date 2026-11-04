@@ -1,36 +1,36 @@
-// Module ID: 17210
-// Function ID: 17211
+// Module ID: 17302
+// Function ID: 17303
 // Name: QuestCard
-// Dependencies: [5, 32, 19, 17, 1385, 7970, 6901, 1083, 21, 575, 5141, 5149, 5138, 6904, 7977, 17143, 9813, 1500, 1493, 9827, 17211, 7414, 6660, 6665, 7995, 504, 9832, 7992, 7976, 7966, 9837, 5376, 11524, 5719, 17239, 9849, 9816, 9819, 6908, 9851, 5381, 17241, 2123, 14827, 7854, 9847, 1113, 9810, 14816, 17246, 9814, 9834, 9835, 5762, 11182, 9468, 1377, 9660, 5747, 17247, 7103, 17282, 5837, 5710, 1092, 17271, 7088, 17253, 14823, 17283, 6147, 5754, 17286, 8152, 11221, 17272, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7986, 6916, 1083, 21, 575, 5141, 5149, 5138, 6919, 7993, 17235, 9831, 1500, 1493, 9845, 17303, 7430, 6675, 6680, 8011, 504, 9850, 8008, 7992, 7982, 9855, 5377, 11574, 5732, 17331, 9867, 9834, 9837, 6923, 9869, 5382, 17333, 2123, 14907, 7870, 9865, 1113, 9828, 14896, 17338, 9832, 9852, 9853, 5776, 11232, 9486, 1377, 9679, 5761, 17339, 7118, 17374, 5851, 5723, 1092, 17363, 7103, 17345, 14903, 17375, 6162, 5768, 17378, 8168, 11271, 17364, 2]
 
-// Module 17210 (QuestCard)
+// Module 17302 (QuestCard)
 import nativeDefault from "native" /* 575 */;
 import intl15 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
 import design_shared from "design/shared" /* 5149 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6660 */;
-import MetricEvents from "MetricEvents" /* 6665 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
-import AdCreativeType from "AdCreativeType" /* 6908 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7995 */;
-import OrbsIcon from "OrbsIcon" /* 9660 */;
-import QuestUtils from "QuestUtils" /* 9810 */;
-import captureAdUserAction from "captureAdUserAction" /* 9816 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9819 */;
-import AssetUtils from "AssetUtils" /* 9827 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9851 */;
-import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 17239 */;
-import openVideoQuestModalDefault from "openVideoQuestModal" /* 17246 */;
-import VideoQuestModal from "VideoQuestModal" /* 17247 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6675 */;
+import MetricEvents from "MetricEvents" /* 6680 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
+import AdCreativeType from "AdCreativeType" /* 6923 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8011 */;
+import OrbsIcon from "OrbsIcon" /* 9679 */;
+import QuestUtils from "QuestUtils" /* 9828 */;
+import captureAdUserAction from "captureAdUserAction" /* 9834 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9837 */;
+import AssetUtils from "AssetUtils" /* 9845 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9869 */;
+import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 17331 */;
+import openVideoQuestModalDefault from "openVideoQuestModal" /* 17338 */;
+import VideoQuestModal from "VideoQuestModal" /* 17339 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
-import QuestStore_mod from "QuestStore" /* 7970 */;
+import QuestStore_mod from "QuestStore" /* 7986 */;
 import Constants from "Constants" /* 1083 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -184,7 +184,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
   function showQuestBottomSheet() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
-    obj.openLazy(asyncRequire(17241, dependencyMap.paths), "QuestBottomSheet", obj2);
+    obj.openLazy(asyncRequire(17333, dependencyMap.paths), "QuestBottomSheet", obj2);
   }
   ({ onLayout: require, quest } = questContent);
   let QUEST_HOME_MOBILE = questContent.questContent;
@@ -517,7 +517,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                       } else {
                         const obj5 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
                         const obj3 = ActionSheetActionCreatorsDefault;
-                        obj3.openLazy(asyncRequire(17241, dependencyMap.paths), "QuestBottomSheet", obj5);
+                        obj3.openLazy(asyncRequire(17333, dependencyMap.paths), "QuestBottomSheet", obj5);
                       }
                     }
           };
@@ -569,7 +569,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
                           obj.captureAdUserAction(obj2);
                           const obj3 = ActionSheetActionCreatorsDefault;
                           const obj4 = { questId: quest.id, questContentPosition: _asyncToGenerator, sourceQuestContent };
-                          obj3.openLazy(asyncRequire(17241, dependencyMap.paths), "QuestBottomSheet", obj4);
+                          obj3.openLazy(asyncRequire(17333, dependencyMap.paths), "QuestBottomSheet", obj4);
                         }
             };
             intl = tmp3(tmp4[46]).intl;
@@ -705,7 +705,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
   const tmp3Result77 = tmp3(tmp4[53]);
   const fontScale = tmp3Result77.useFontScale();
   const tmp3Result78 = tmp3(tmp4[54]);
-  const scaledTextLineHeight = tmp3Result78.useScaledTextLineHeight("text-md/semibold");
+  const scaledTextLineHeight = tmp3Result78.useScaledTextLineHeight("body-md/semibold");
   const tmp3Result79 = tmp3(tmp4[43]);
   const questDescription = tmp3Result79.useQuestDescription(quest, sourceQuestContent, tmp5.QUEST_HOME_MOBILE, tmp3(tmp4[55]).GameProfileSources.QuestHome);
   const result3 = 16 * Math.min(fontScale, 1.3);
@@ -736,7 +736,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
       num = 16 / scaledTextLineHeight;
     }
     result = tmp / 8;
-    const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: authStore.shrinkableText };
+    const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: authStore.shrinkableText };
     size = { width: tmp, height: tmp, marginRight: result, marginTop: 0, transform: items };
     items = [{ translateY: num }];
     if (closure_16) {
@@ -749,7 +749,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         obj6 = { width: result };
         items1[1] = unpackModuleId(metroRequire, obj5);
         const obj7 = { children: format2(prop, obj8) };
-        const Text5 = tmp2(5747).Text;
+        const Text5 = tmp2(5761).Text;
         const merged = Object.assign(obj2);
         const intl4 = tmp2(1113).intl;
         format2 = intl4.format;
@@ -769,7 +769,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
     }
     if (closure_16) {
       const obj9 = { children: defaultRewardName };
-      const Text4 = tmp2(5747).Text;
+      const Text4 = tmp2(5761).Text;
       const merged1 = Object.assign(obj2);
       tmp15Result = unpackModuleId(Text4, obj9);
     } else {
@@ -777,7 +777,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
       if (tmp9) {
         const obj10 = { style: authStore.rewardSubtitleRow, children: items2 };
         const obj11 = { children: intl2.format(intl15.t["0IUT4Y"], obj12) };
-        const Text2 = tmp2(5747).Text;
+        const Text2 = tmp2(5761).Text;
         const merged2 = Object.assign(obj2);
         intl2 = tmp2(1113).intl;
         obj12 = {
@@ -793,7 +793,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         obj16 = { width: result };
         items3[1] = unpackModuleId(metroRequire, obj15);
         const obj17 = { children: format(prop1, obj18) };
-        const Text3 = tmp2(5747).Text;
+        const Text3 = tmp2(5761).Text;
         const merged3 = Object.assign(obj2);
         const intl3 = tmp2(1113).intl;
         format = intl3.format;
@@ -809,7 +809,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
         tmp15Result = tmp15(tmp16, obj10);
       } else {
         const obj19 = { children: intl.format(intl15.t["0IUT4Y"], obj20) };
-        const Text = tmp2(5747).Text;
+        const Text = tmp2(5761).Text;
         const merged4 = Object.assign(obj2);
         intl = tmp2(1113).intl;
         obj20 = {
@@ -931,14 +931,14 @@ const memoResult = react.memo(function QuestCard(questContent) {
   if (isThemeDarkResult) {
     str2 = "text-muted";
   }
-  const obj31 = { variant: "text-xs/medium", color: str2, style: tmp9.shrinkableText, children: intl8.string(tmp3(tmp4[46]).t.VAbKhK) };
+  const obj31 = { variant: "body-xs/medium", color: str2, style: tmp9.shrinkableText, children: intl8.string(tmp3(tmp4[46]).t.VAbKhK) };
   intl8 = tmp3(tmp4[46]).intl;
   items18 = [closure_11(Text2, obj31), , ];
   const obj32 = { source: quest(tmp4[66]), style: { height: 16, width: 16 }, accessible: true, accessibilityRole: "image", accessibilityLabel: intl9.string(tmp3(tmp4[46]).t.OfMjx9) };
   const tmp11Result4 = quest(tmp4[62]);
   intl9 = tmp3(tmp4[46]).intl;
   items18[1] = closure_11(tmp11Result4, obj32);
-  const obj33 = { variant: "text-xs/medium", color: "text-overlay-light", style: tmp9.shrinkableText, children: quest.config.messages.gamePublisher };
+  const obj33 = { variant: "body-xs/medium", color: "text-overlay-light", style: tmp9.shrinkableText, children: quest.config.messages.gamePublisher };
   items18[2] = closure_11(tmp3(tmp4[58]).Text, obj33);
   items17[1] = defaultRewardNameWithArticle(closure_6, obj30);
   items19 = [defaultRewardNameWithArticle(closure_6, obj29), ];
@@ -948,7 +948,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
     if (isThemeDarkResult) {
       str = "text-default";
     }
-    const obj34 = { variant: "text-xs/medium", color: str, style: tmp9.shrinkableText, children: intl10.format(tmp3(tmp4[46]).t["7D8r4F"], obj35) };
+    const obj34 = { variant: "body-xs/medium", color: str, style: tmp9.shrinkableText, children: intl10.format(tmp3(tmp4[46]).t["7D8r4F"], obj35) };
     intl10 = tmp3(tmp4[46]).intl;
     obj35 = { expiryDate: questFormattedDate1 };
     tmp95Result = tmp95(Text3, obj34);
@@ -969,7 +969,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
   items21 = [closure_11(closure_6, obj38), ];
   const obj40 = { style: tmp9.detailsTextContainer, children: items22 };
   items22 = [, ];
-  const obj41 = { variant: "eyebrow", color: "text-brand", style: tmp9.questName, accessibilityRole: "header", children: formatToPlainStringResult };
+  const obj41 = { variant: "body-sm/medium", color: "text-brand", style: tmp9.questName, accessibilityRole: "header", children: formatToPlainStringResult };
   items22[0] = closure_11(tmp3(tmp4[58]).Text, obj41);
   const obj43 = { style: tmp9.subtitleRow, children: items23 };
   items23 = [memo1, ];
@@ -982,7 +982,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
   items24 = [defaultRewardNameWithArticle(closure_6, obj43), ];
   let tmp95Result7 = null != formatToPlainStringResult1;
   if (tmp95Result7) {
-    const obj45 = { variant: "text-sm/medium", color: "text-muted", children: formatToPlainStringResult1 };
+    const obj45 = { variant: "body-sm/medium", color: "text-muted", children: formatToPlainStringResult1 };
     tmp95Result7 = tmp95(tmp3(tmp4[58]).Text, obj45);
   }
   items24[1] = tmp95Result7;
@@ -1002,7 +1002,7 @@ const memoResult = react.memo(function QuestCard(questContent) {
       onPress: function showQuestEnrollmentBlockedBottomSheet() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { questId: quest.id, questEnrollmentBlockedUntil, sourceQuestContent };
-          obj.openLazy(asyncRequire(17286, dependencyMap.paths), "QuestEnrollmentBlockedBottomSheet", obj2);
+          obj.openLazy(asyncRequire(17378, dependencyMap.paths), "QuestEnrollmentBlockedBottomSheet", obj2);
         },
       variant: "tertiary",
       text: intl12.string(tmp3(tmp4[46]).t.vY9GgG)

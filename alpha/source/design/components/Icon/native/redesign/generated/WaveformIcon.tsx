@@ -1,14 +1,14 @@
-// Module ID: 11197
-// Function ID: 11198
+// Module ID: 11247
+// Function ID: 11248
 // Name: WaveformIcon
-// Dependencies: [19, 21, 575, 5836, 11198, 2]
+// Dependencies: [19, 21, 575, 5850, 11248, 2]
 // Exports: WaveformIcon
 
-// Module 11197 (WaveformIcon)
+// Module 11247 (WaveformIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 11198 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 11248 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

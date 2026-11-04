@@ -1,21 +1,21 @@
-// Module ID: 20105
-// Function ID: 20106
+// Module ID: 20221
+// Function ID: 20222
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 5141, 575, 1627, 38, 20106, 5395, 5398, 5747, 1187, 5754, 5381, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1627, 38, 20222, 5396, 5400, 5761, 1187, 5768, 5382, 1113, 2]
 // Exports: default
 
-// Module 20105 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 20221 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import BottomSheetModal from "BottomSheetModal" /* 5398 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20106 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import BottomSheetModal from "BottomSheetModal" /* 5400 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20222 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -61,7 +61,7 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
   const BottomSheet = Sheet_BottomSheet.BottomSheet;
   obj2 = { contentContainerStyle: { paddingBottom: bottom }, children: items };
   BottomSheetScrollView = BottomSheetModal.BottomSheetScrollView;
-  items = [hasOwnProperty(Text_Text.Text, { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: headerText }), hasOwnProperty(native.Spacer, { size: 12 }), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", children: descriptionText }), hasOwnProperty(native.Spacer, { size: 24 }), , , ];
+  items = [hasOwnProperty(Text_Text.Text, { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: headerText }), hasOwnProperty(native.Spacer, { size: 12 }), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-default", children: descriptionText }), hasOwnProperty(native.Spacer, { size: 24 }), , , ];
   const obj3 = { text: buttonText, variant: "destructive", grow: true, onPress: handleArchiveOrDelete, disabled: deleting };
   const Button = components_Button_Button.Button;
   const tmp7 = React3;
@@ -81,8 +81,8 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
     activeOpacity: 0.5,
     children: hasOwnProperty(Text, obj6)
   };
-  obj6 = { variant: "text-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-  Text = tmp6(5747).Text;
+  obj6 = { variant: "body-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
+  Text = tmp6(5761).Text;
   intl = tmp6(1113).intl;
   items[6] = hasOwnProperty(_false, obj5);
   return hasOwnProperty(BottomSheet, obj4);

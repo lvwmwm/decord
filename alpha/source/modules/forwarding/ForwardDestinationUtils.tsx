@@ -1,17 +1,17 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13606
+// Function ID: 13607
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6957, 4994, 4990, 5073, 5083, 1385, 1072, 13520, 1380, 504, 1093, 6680, 2121, 6854, 6846, 5813, 6851, 13523, 1113, 6678, 7955, 5195, 5772, 2]
+// Dependencies: [19, 6972, 4994, 4990, 5073, 5083, 1385, 1072, 13604, 1380, 504, 1093, 6695, 2121, 6869, 6861, 5827, 6866, 13607, 1113, 6693, 7971, 5195, 5786, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 13522 (ForwardDestinationUtils)
+// Module 13606 (ForwardDestinationUtils)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import StickersUtils from "StickersUtils" /* 6680 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 7955 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 13523 */;
+import StickersUtils from "StickersUtils" /* 6695 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 7971 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 13607 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6957 */;
+import StickersStore from "StickersStore" /* 6972 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
@@ -34,7 +34,7 @@ let result = size.fileFinishedImporting("modules/forwarding/ForwardDestinationUt
 
 export function useSelectedDestinationChannel(selectedDestinations) {
   let found;
-  const mapped = selectedDestinations.map(found(13520).getChannelIdFromDestinationId);
+  const mapped = selectedDestinations.map(found(13604).getChannelIdFromDestinationId);
   found = mapped.find(found(1380).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
@@ -101,7 +101,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           let result = tmp13Result9.shouldShowTiggerPawtect();
           if (result) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            result = tmp13Result10.isFeatureAgeGated(tmp13(6851).AgeGatedFeature.AGE_GATED_SPACES);
+            result = tmp13Result10.isFeatureAgeGated(tmp13(6866).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !result);
           if (disableAgeRestrictedDestinations) {

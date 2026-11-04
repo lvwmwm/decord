@@ -1,14 +1,15 @@
-// Module ID: 7215
-// Function ID: 7216
+// Module ID: 7230
+// Function ID: 7231
 // Name: TextField
-// Dependencies: [19, 21, 7216, 7217, 7221, 7225, 2]
+// Dependencies: [19, 21, 7231, 7232, 7236, 7241, 7245, 2]
 // Exports: TextField
 
-// Module 7215 (TextField)
+// Module 7230 (TextField)
 import Fragment from "Fragment" /* 21 */;
-import useTextField from "useTextField" /* 7216 */;
-import useInputClearButton from "useInputClearButton" /* 7217 */;
-import useInputAttachments from "useInputAttachments" /* 7221 */;
+import useTextField from "useTextField" /* 7231 */;
+import useInputClearButton from "useInputClearButton" /* 7232 */;
+import useInputRevealButton from "useInputRevealButton" /* 7236 */;
+import useInputAttachments from "useInputAttachments" /* 7241 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,19 +27,24 @@ export function TextField(ref) {
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   const obj = useTextField;
   const textField = obj.useTextField(merged, ref);
-  ({ inputProps, innerRef, state } = textField);
+  ({ inputProps, state, innerRef } = textField);
   const obj2 = useInputClearButton;
   const inputClearButtonConfig = obj2.useInputClearButtonConfig(merged, state);
-  let tmp6;
-  if (null != inputClearButtonConfig) {
-    const obj4 = { trailing: null, trailingPressableProps: null };
-    ({ content: obj3.trailing, pressableProps: obj3.trailingPressableProps } = inputClearButtonConfig);
-    tmp6 = obj4;
+  const obj3 = useInputRevealButton;
+  let inputRevealButtonConfig = obj3.useInputRevealButtonConfig(merged, state);
+  if (inputRevealButtonConfig == null) {
+    inputRevealButtonConfig = inputClearButtonConfig;
+  }
+  let tmp7;
+  if (null != inputRevealButtonConfig) {
+    const obj5 = { trailing: null, trailingPressableProps: null };
+    ({ content: obj4.trailing, pressableProps: obj4.trailingPressableProps } = inputRevealButtonConfig);
+    tmp7 = obj5;
   }
   const tmp2Result = useInputAttachments;
-  const inputAttachments = tmp2Result.useInputAttachments(merged, tmp6);
+  const inputAttachments = tmp2Result.useInputAttachments(merged, tmp7);
   ({ leading, trailing, inputStyle } = inputAttachments);
-  const BaseTextField = tmp2(7225).BaseTextField;
+  const BaseTextField = tmp2(7245).BaseTextField;
   const merged1 = Object.assign(inputProps);
   return <BaseTextField ref={innerRef} leading={leading} trailing={trailing} inputStyle={inputStyle} />;
 }

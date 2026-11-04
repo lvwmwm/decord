@@ -1,12 +1,12 @@
-// Module ID: 13338
-// Function ID: 13339
+// Module ID: 13421
+// Function ID: 13422
 // Name: ViewStep
-// Dependencies: [32, 19, 11501, 13337, 21, 5141, 1499, 13339, 13334, 13340, 8096, 8097, 6147, 575, 13341, 5747, 1113, 2533, 8785, 13342, 13344, 5754, 2]
+// Dependencies: [32, 19, 11551, 13420, 21, 5141, 1499, 13422, 13417, 13423, 8112, 8113, 6162, 575, 13424, 5761, 1113, 2533, 8802, 13425, 13427, 5768, 2]
 // Exports: ViewStep
 
-// Module 13338 (ViewStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11501 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13337 */;
+// Module 13421 (ViewStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11551 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13420 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -104,7 +104,7 @@ export function ViewStep(code) {
     const obj11 = { iconUrl: application.iconUrl, size: 16, borderRadius: require("native").radii.xs };
     const tmp4Result = require("GameOrganizationIcon");
     items2 = [closure_7(tmp4Result, obj11), ];
-    const obj12 = { variant: "heading-md/medium", children: application.name };
+    const obj12 = { variant: "heading-sm/medium", children: application.name };
     items2[1] = closure_7(tmp2(tmp3[15]).Text, obj12);
     items3 = [closure_8(Stack6, obj10), ];
     let tmp18Result = null != memberCount && null != maxMembers;
@@ -114,7 +114,7 @@ export function ViewStep(code) {
       const obj14 = { size: "xs", color: require("native").colors.ICON_MUTED };
       const GroupIcon = tmp2(tmp3[18]).GroupIcon;
       items4 = [closure_7(GroupIcon, obj14), ];
-      const obj15 = { variant: "heading-md/medium", children: intl.formatToPlainString(require("module_2533").VuENGl, obj16) };
+      const obj15 = { variant: "heading-sm/medium", children: intl.formatToPlainString(require("module_2533").VuENGl, obj16) };
       const Text = tmp2(tmp3[15]).Text;
       intl = tmp2(tmp3[16]).intl;
       obj16 = { count: memberCount, max: maxMembers };

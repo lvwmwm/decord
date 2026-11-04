@@ -1,17 +1,17 @@
-// Module ID: 8292
-// Function ID: 8293
+// Module ID: 8308
+// Function ID: 8309
 // Name: ManualReviewDecidedTeenAlertModal
-// Dependencies: [19, 6848, 21, 8293, 5747, 8079, 2190, 1113, 3319, 6084, 6084, 1260, 2]
+// Dependencies: [19, 6863, 21, 8309, 5761, 8095, 2190, 1113, 3319, 6099, 6099, 1260, 2]
 // Exports: default
 
-// Module 8292 (ManualReviewDecidedTeenAlertModal)
+// Module 8308 (ManualReviewDecidedTeenAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3319 from "module_3319" /* 3319 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AlertModal2 from "AlertModal" /* 6084 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6848 */;
-import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 8293 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AlertModal2 from "AlertModal" /* 6099 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6863 */;
+import ManualReviewInconclusiveCopyExperiment from "ManualReviewInconclusiveCopyExperiment" /* 8309 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export default function ManualReviewDecidedTeenAlertModal(teenAgeRange) {
   teenAgeRange = teenAgeRange.teenAgeRange;
   function contentAndSettingsHook(children, arg1) {
     return jsx(Text_Text.Text, {
-      variant: "text-md/normal",
+      variant: "body-md/normal",
       color: "text-link",
       onPress() {
         const openUrl = closure_1_1(closure_1_2[5]).openUrl;

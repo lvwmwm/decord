@@ -1,17 +1,17 @@
-// Module ID: 11924
-// Function ID: 11925
+// Module ID: 11983
+// Function ID: 11984
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 4989, 1385, 1072, 1191, 11831, 21, 1187, 5141, 575, 504, 1380, 7450, 6161, 5195, 11925, 7446, 7471, 10179, 1113, 11927, 11834, 11929, 11930, 7106, 11931, 11978, 5747, 5755, 5207, 2]
+// Dependencies: [5, 32, 19, 17, 4989, 1385, 1072, 1191, 11888, 21, 1187, 5141, 575, 504, 1380, 7466, 6176, 5195, 11984, 7462, 7487, 10227, 1113, 11986, 11893, 11988, 11989, 7121, 11990, 12037, 5761, 5769, 5207, 2]
 // Exports: default
 
-// Module 11924 (ActivityTile)
+// Module 11983 (ActivityTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import native2 from "native" /* 5207 */;
-import Constants2 from "Constants" /* 11831 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11930 */;
+import Constants2 from "Constants" /* 11888 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 11989 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -265,7 +265,7 @@ function ActivityTileInner(participant) {
     };
     const SummarizedIconRow = tmp5(tmp3[10]).SummarizedIconRow;
     items5 = [closure_10(SummarizedIconRow, obj12), , , ];
-    const obj13 = { style: tmp.subtitleText, lineClamp: 2, variant: "text-sm/normal", children: formatToPlainStringResult };
+    const obj13 = { style: tmp.subtitleText, lineClamp: 2, variant: "body-sm/normal", children: formatToPlainStringResult };
     items5[1] = closure_10(tmp5(tmp3[30]).Text, obj13);
     const obj14 = { style: tmp.titleText, children: name1 };
     items5[2] = closure_10(tmp5(tmp3[10]).LegacyText, obj14);

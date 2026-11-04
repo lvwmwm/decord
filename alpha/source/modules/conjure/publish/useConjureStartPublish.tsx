@@ -1,11 +1,11 @@
-// Module ID: 12239
-// Function ID: 12240
+// Module ID: 12300
+// Function ID: 12301
 // Name: useConjureStartPublish
-// Dependencies: [19, 12233, 11093, 2]
+// Dependencies: [19, 12294, 11052, 2]
 // Exports: default
 
-// Module 12239 (useConjureStartPublish)
-import ConjurePublishTypes from "ConjurePublishTypes" /* 11093 */;
+// Module 12300 (useConjureStartPublish)
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11052 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -39,15 +39,21 @@ export default function useConjureStartPublish(arg0, arg1, arg2, arg3) {
             if (status != null) {
               publishState = status.publishState;
             }
-            if (closure_1.awaitingApproval) {
-              closure_1.run(entryPoint);
-            } else {
-              if (null != publishState) {
-                ConjurePublishTypes;
+            if (!closure_1.awaitingApproval) {
+              const status2 = obj3.status;
+              let safetyHold;
+              if (status2 != null) {
+                safetyHold = status2.safetyHold;
               }
-              const obj2 = { projectId: tmp, publishOptions: tmp8, entryPoint };
-              closure_2(obj2);
+              if (true !== safetyHold) {
+                if (null != publishState) {
+                  ConjurePublishTypes;
+                }
+                const obj2 = { projectId: tmp, publishOptions: tmp9, entryPoint };
+                closure_2(obj2);
+              }
             }
+            closure_1.run(entryPoint);
           }
         }
       }

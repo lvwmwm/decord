@@ -1,12 +1,12 @@
-// Module ID: 11376
-// Function ID: 11377
+// Module ID: 11426
+// Function ID: 11427
 // Name: useChannelDockHeight
-// Dependencies: [19, 11377, 11380, 2]
+// Dependencies: [19, 11427, 11430, 2]
 // Exports: default
 
-// Module 11376 (useChannelDockHeight)
-import useVoicePanelDockHeightDefault from "useVoicePanelDockHeight" /* 11377 */;
-import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11380 */;
+// Module 11426 (useChannelDockHeight)
+import useVoicePanelDockHeightDefault from "useVoicePanelDockHeight" /* 11427 */;
+import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11430 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 16602
-// Function ID: 16603
+// Module ID: 16693
+// Function ID: 16694
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 21, 5141, 575, 7446, 8885, 8874, 7106, 1113, 5747, 10362, 13598, 8927, 8943, 16603, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7462, 8902, 8891, 7121, 1113, 5761, 10410, 9531, 8944, 8960, 16694, 2]
 // Exports: default
 
-// Module 16602 (UserProfileEditBannerButton)
+// Module 16693 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 7106 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8927 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8943 */;
-import PencilIcon2 from "PencilIcon" /* 10362 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 13598 */;
+import Pressables from "Pressables" /* 7121 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8944 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8960 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9531 */;
+import PencilIcon2 from "PencilIcon" /* 10410 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -23,7 +23,7 @@ let metroRequire;
 let rect;
 let size;
 let tmp2;
-const EditButtonDefault = tmp2(16603);
+const EditButtonDefault = tmp2(16694);
 function ProfilePreviewButton(userId) {
   let Text;
   let intl;
@@ -43,7 +43,7 @@ function ProfilePreviewButton(userId) {
     const obj2 = { style: tmp.previewButton, onPress: tmp4, accessibilityRole: "button", accessibilityLabel: intl.string(userId(context[9]).t["3Qcx6K"]), children: closure_5(Text, obj3) };
     const PressableOpacity = tmp3(tmp2[8]).PressableOpacity;
     intl = tmp3(tmp2[9]).intl;
-    obj3 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl2.string(userId(context[9]).t["3Qcx6K"]) };
+    obj3 = { variant: "body-sm/semibold", color: "text-overlay-light", children: intl2.string(userId(context[9]).t["3Qcx6K"]) };
     Text = tmp3(tmp2[10]).Text;
     intl2 = tmp3(tmp2[9]).intl;
     tmp5 = closure_5(PressableOpacity, obj2);

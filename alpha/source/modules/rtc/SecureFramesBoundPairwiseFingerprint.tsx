@@ -1,14 +1,14 @@
-// Module ID: 9400
-// Function ID: 9401
+// Module ID: 9417
+// Function ID: 9418
 // Name: SecureFramesBoundPairwiseFingerprint
-// Dependencies: [5, 502, 5884, 9394, 206, 9378, 2]
+// Dependencies: [5, 502, 5898, 9411, 206, 9395, 2]
 // Exports: computeBoundPairwiseFingerprint
 
-// Module 9400 (SecureFramesBoundPairwiseFingerprint)
-import SecureFramesConstants from "SecureFramesConstants" /* 9394 */;
+// Module 9417 (SecureFramesBoundPairwiseFingerprint)
+import SecureFramesConstants from "SecureFramesConstants" /* 9411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;

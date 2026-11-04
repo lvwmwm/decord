@@ -1,10 +1,10 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15916
+// Function ID: 15917
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1385, 1072, 1240, 21, 5141, 575, 1627, 1493, 1357, 1252, 6864, 5321, 1099, 6080, 6084, 7212, 1113, 6084, 6860, 10866, 5315, 5837, 15829, 5747, 7234, 2]
+// Dependencies: [5, 19, 17, 502, 1385, 1072, 1240, 21, 5141, 575, 1627, 1493, 1357, 1252, 6879, 5322, 1099, 6095, 6099, 7227, 1113, 6099, 6875, 10914, 5316, 5851, 15917, 5761, 7254, 2]
 // Exports: default
 
-// Module 15828 (OneTimeLoginModal)
+// Module 15916 (OneTimeLoginModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
@@ -12,11 +12,11 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import useAlertStore from "useAlertStore" /* 6080 */;
-import AlertModal2 from "AlertModal" /* 6084 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7212 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10866 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import useAlertStore from "useAlertStore" /* 6095 */;
+import AlertModal2 from "AlertModal" /* 6099 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7227 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10914 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -162,9 +162,9 @@ export default function OneTimeLoginModal(token) {
       str = "current user";
     }
     obj3 = { children: authStore2(AlertActionButton, obj4, "confirm") };
-    AlertActions = tmp(6084).AlertActions;
+    AlertActions = tmp(6099).AlertActions;
     obj4 = { onPress: callback1, text: intl3.string(intl4.t["3PatSz"]) };
-    AlertActionButton = tmp(6084).AlertActionButton;
+    AlertActionButton = tmp(6099).AlertActionButton;
     intl3 = tmp(1113).intl;
     openAlert("already-logged-in-alert", authStore2(AlertModal, obj));
   }, items3);
@@ -277,29 +277,29 @@ export default function OneTimeLoginModal(token) {
   }, items5);
   let obj = { style: memo, children: items6 };
   let obj2 = { absolute: true, wide: true, tall: true, gradientOverride: closure_11[5], mix: true, angleOverride: 0, mixAmount: obj3 };
-  obj3 = { dark: token(5315).OverlayOpacity.LEVEL_1 };
+  obj3 = { dark: token(5316).OverlayOpacity.LEVEL_1 };
   const tmp11 = ThemedGradientDefault;
   items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(15829), style: tmp.logo };
+  let obj6 = { source: token(15917), style: tmp.logo };
   const tmp12 = FastImageDefault;
   items7 = [closure_12(tmp12, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };
   items8 = [closure_12(callback2, {}), ];
-  let obj8 = { variant: "text-lg/semibold", children: intl.string(token(1113).t.W9uNdG) };
-  const Text = token(5747).Text;
+  let obj8 = { variant: "body-lg/semibold", children: intl.string(token(1113).t.W9uNdG) };
+  const Text = token(5761).Text;
   intl = token(1113).intl;
   items8[1] = closure_12(Text, obj8);
   items7[1] = closure_13(callback1, obj7);
   items9 = [closure_13(callback1, obj5), ];
   let obj9 = { style: tmp.bottomContent, children: items10 };
-  let obj10 = { variant: "text-sm/normal", children: intl2.string(token(1113).t["ZXe5/Y"]) };
-  const Text2 = token(5747).Text;
+  let obj10 = { variant: "body-sm/normal", children: intl2.string(token(1113).t["ZXe5/Y"]) };
+  const Text2 = token(5761).Text;
   intl2 = token(1113).intl;
   items10 = [closure_12(Text2, obj10), ];
-  let obj11 = { textColor: "text-default", text: intl3.string(token(1113).t.FIEwfG), variant: "text-sm/medium", onPress, textStyle: tmp.link };
-  const LinkButton = token(7234).LinkButton;
+  let obj11 = { textColor: "text-default", text: intl3.string(token(1113).t.FIEwfG), variant: "body-sm/medium", onPress, textStyle: tmp.link };
+  const LinkButton = token(7254).LinkButton;
   intl3 = token(1113).intl;
   items10[1] = closure_12(LinkButton, obj11);
   items9[1] = closure_13(callback1, obj9);

@@ -1,25 +1,25 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 16839
+// Function ID: 16840
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1385, 8556, 1072, 21, 504, 5195, 13437, 5747, 11677, 1113, 16748, 2]
+// Dependencies: [19, 1385, 8573, 1072, 21, 504, 5195, 13521, 5761, 11728, 1113, 16840, 2]
 
-// Module 16747 (AccountUsernameSetting)
+// Module 16839 (AccountUsernameSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 13437 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 13521 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const Text_Text = tmp(5747);
+const Text_Text = tmp(5761);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const UserSettingsSections = Constants.UserSettingsSections;
 const jsx = Fragment.jsx;
@@ -50,7 +50,7 @@ let obj = {
     }
     let tmp5 = null;
     if (null != first) {
-      tmp5 = jsx(Text_Text.Text, { variant: "text-xs/medium", color: "text-feedback-warning", children: first });
+      tmp5 = jsx(Text_Text.Text, { variant: "body-xs/medium", color: "text-feedback-warning", children: first });
     }
     return tmp5;
   },

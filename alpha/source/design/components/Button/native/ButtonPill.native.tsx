@@ -1,26 +1,26 @@
-// Module ID: 5765
-// Function ID: 5766
+// Module ID: 5779
+// Function ID: 5780
 // Name: ButtonPill
-// Dependencies: [32, 19, 17, 21, 5760, 5141, 575, 5761, 5207, 5719, 5766, 5710, 1652, 5148, 5767, 5155, 5757, 5758, 2]
+// Dependencies: [32, 19, 17, 21, 5774, 5141, 575, 5775, 5207, 5732, 5780, 5723, 1652, 5148, 5781, 5155, 5771, 5772, 2]
 // Exports: ButtonPill
 
-// Module 5765 (ButtonPill)
+// Module 5779 (ButtonPill)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import shared from "shared" /* 5148 */;
 import react2 from "react" /* 5155 */;
 import native from "native" /* 5207 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import useToken from "useToken" /* 5719 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import springPresets from "springPresets" /* 5758 */;
-import ButtonHooks from "ButtonHooks" /* 5761 */;
-import ButtonEllipsis from "ButtonEllipsis" /* 5767 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import useToken from "useToken" /* 5732 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import springPresets from "springPresets" /* 5772 */;
+import ButtonHooks from "ButtonHooks" /* 5775 */;
+import ButtonEllipsis from "ButtonEllipsis" /* 5781 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ButtonConstants_mod from "ButtonConstants" /* 5760 */;
+import ButtonConstants_mod from "ButtonConstants" /* 5774 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -75,7 +75,7 @@ function PillWrapper(pressed) {
   let tmp7 = null;
   if (shiny) {
     const obj7 = { variant };
-    tmp7 = metroImportDefault(tmp(5766).ButtonShine, obj7);
+    tmp7 = metroImportDefault(tmp(5780).ButtonShine, obj7);
   }
   if ("experimental_premium-primary" !== variant) {
     let obj11;

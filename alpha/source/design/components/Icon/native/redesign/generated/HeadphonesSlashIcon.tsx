@@ -1,14 +1,14 @@
-// Module ID: 9366
-// Function ID: 9367
+// Module ID: 9383
+// Function ID: 9384
 // Name: HeadphonesSlashIcon
-// Dependencies: [19, 21, 575, 5836, 9367, 2]
+// Dependencies: [19, 21, 575, 5850, 9384, 2]
 // Exports: HeadphonesSlashIcon
 
-// Module 9366 (HeadphonesSlashIcon)
+// Module 9383 (HeadphonesSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 9367 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 9384 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

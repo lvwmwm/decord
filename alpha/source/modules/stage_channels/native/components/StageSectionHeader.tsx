@@ -1,15 +1,15 @@
-// Module ID: 12171
-// Function ID: 12172
+// Module ID: 12230
+// Function ID: 12231
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 5141, 575, 1652, 5377, 5747, 1187, 7442, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1652, 5378, 5761, 1187, 7458, 2]
 // Exports: default
 
-// Module 12171 (StageSectionHeader)
+// Module 12230 (StageSectionHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7442 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7458 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -86,7 +86,7 @@ export default function StageSectionHeader(children) {
   let obj = { style: tmp.section, children: tmp11(tmp12, obj2) };
   obj2 = { style: tmp.audience, onPress: onToggleCollapse, children: items3 };
   const animatedStyle = useAnimatedStyle(StageSectionHeaderTsx1);
-  const obj3 = { variant: "text-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items2 };
+  const obj3 = { variant: "body-md/semibold", color: "text-overlay-light", accessibilityRole: "header", children: items2 };
   items2 = [label, " \u2014 ", count];
   items3 = [hasOwnProperty(Text_Text.Text, obj3), , ];
   let tmp9Result = null != children;

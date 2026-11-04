@@ -1,13 +1,13 @@
-// Module ID: 18300
-// Function ID: 18301
+// Module ID: 18397
+// Function ID: 18398
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 5747, 575, 5141, 1652, 8965, 10866, 1113, 2]
+// Dependencies: [19, 17, 21, 5761, 575, 5141, 1652, 8982, 10914, 1113, 2]
 
-// Module 18300 (MessagesItemSuggestedFriendsHeader)
+// Module 18397 (MessagesItemSuggestedFriendsHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8965 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8982 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,10 +26,10 @@ let obj3;
 let tmp2;
 let tmp8;
 const intl2 = tmp2(1113);
-const ThemedGradientDefault = tmp8(10866);
+const ThemedGradientDefault = tmp8(10914);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
-const sum = Text_Text.TextStyleSheet["text-md/semibold"].lineHeight + nativeDefault.space.PX_24;
+const sum = Text_Text.TextStyleSheet["body-md/semibold"].lineHeight + nativeDefault.space.PX_24;
 let createStyles = createStyles_mod;
 let obj = { headerContainer: { height: sum, justifyContent: "center", overflow: "hidden" }, stickyOverlay: obj2, headerText: obj3 };
 obj2 = { backgroundColor: nativeDefault.colors.PANEL_BG };
@@ -85,7 +85,7 @@ const memoResult = react.memo(function MessagesItemSuggestedFriendsHeader(sticky
     tmp11Result = tmp11(metroRequire, obj3);
   }
   items4 = [tmp11Result, ];
-  const obj6 = { style: tmp.headerText, maxFontSizeMultiplier: 2, lineClamp: 1, accessibilityRole: "header", variant: "text-md/semibold", color: "text-default", children: intl.string(intl2.t["1uAmCw"]) };
+  const obj6 = { style: tmp.headerText, maxFontSizeMultiplier: 2, lineClamp: 1, accessibilityRole: "header", variant: "body-md/semibold", color: "text-default", children: intl.string(intl2.t["1uAmCw"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items4[1] = hasOwnProperty(Text, obj6);

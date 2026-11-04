@@ -1,25 +1,25 @@
-// Module ID: 19769
-// Function ID: 19770
+// Module ID: 19885
+// Function ID: 19886
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4990, 1385, 15767, 1072, 21, 5141, 575, 5747, 6161, 1113, 504, 1380, 1187, 12261, 10929, 7460, 5855, 1252, 7486, 5837, 11410, 7186, 7101, 5754, 5381, 19770, 7609, 2]
+// Dependencies: [19, 17, 4990, 1385, 15855, 1072, 21, 5141, 575, 5761, 6176, 1113, 504, 1380, 1187, 12322, 10977, 7476, 5869, 1252, 7502, 5851, 11460, 7201, 7116, 5768, 5382, 19886, 7625, 2]
 // Exports: default
 
-// Module 19769 (BlockedUserInGdmActionSheet)
+// Module 19885 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19770 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19886 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import UserStore from "UserStore" /* 1385 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15767 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15855 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -56,7 +56,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -71,7 +71,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -79,7 +79,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -93,7 +93,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook1() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -101,7 +101,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook2() {
           let obj2;
           let tmp;
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, tmp) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, tmp) };
           tmp = closure_2[1];
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
@@ -116,7 +116,7 @@ function getUserCalloutRowText(arg0) {
       usernameHook() {
           let obj2;
           const first = closure_2[0];
-          const obj = { variant: "text-md/semibold", children: obj2.getName(require, importDefault, first) };
+          const obj = { variant: "body-md/semibold", children: obj2.getName(require, importDefault, first) };
           const Text = Text_Text.Text;
           obj2 = NicknameUtilsDefault;
           return authStore(Text, obj);
@@ -146,12 +146,12 @@ function UserCalloutAvatars(userIds) {
       const Avatar = tmp(1187).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(12261).UserIcon, {});
+      tmp8 = closure_10(tmp(12322).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {
     const obj4 = { users: found, size: userIds(1187).AvatarSizes.REFRESH_MEDIUM_32 };
-    const FacepileGroupDMAvatar = tmp(10929).FacepileGroupDMAvatar;
+    const FacepileGroupDMAvatar = tmp(10977).FacepileGroupDMAvatar;
     tmp5 = closure_10(FacepileGroupDMAvatar, obj4);
   }
   return tmp5;
@@ -283,7 +283,7 @@ export default function BlockedUserInGdmActionSheet(channelId) {
     const Text = tmp8(tmp9[9]).Text;
     intl3 = tmp8(tmp9[11]).intl;
     items4 = [closure_10(Text, obj10), ];
-    const obj11 = { variant: "text-md/medium", color: "text-default", style: tmp2.description, children: closure_10(BlockedUserInGDMDescription, obj12) };
+    const obj11 = { variant: "body-md/medium", color: "text-default", style: tmp2.description, children: closure_10(BlockedUserInGDMDescription, obj12) };
     obj12 = { numOfBlockedUsers: blockedUserIds.length, numOfIgnoredUsers: ignoredUserIds.length };
     const Text2 = tmp8(tmp9[9]).Text;
     items4[1] = closure_10(Text2, obj11);

@@ -1,17 +1,17 @@
-// Module ID: 19138
-// Function ID: 19139
+// Module ID: 19241
+// Function ID: 19242
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1113, 14154, 5832, 5876, 6864, 14146, 1252, 7106, 19123, 1187, 15259, 16972, 8301, 1627, 19132, 19139, 19130, 5716, 6660, 6665, 19133, 7414, 1377, 5747, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1113, 14240, 5846, 5890, 6879, 14232, 1252, 7121, 19226, 1187, 15342, 17064, 8317, 1627, 19235, 19242, 19233, 5729, 6675, 6680, 19236, 7430, 1377, 5761, 2]
 // Exports: default
 
-// Module 19138 (SpamMessageList)
+// Module 19241 (SpamMessageList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import transitionToChannel from "transitionToChannel" /* 5876 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6660 */;
-import MetricEvents from "MetricEvents" /* 6665 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
+import transitionToChannel from "transitionToChannel" /* 5890 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6675 */;
+import MetricEvents from "MetricEvents" /* 6680 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -279,7 +279,7 @@ export default function SpamMessageList(goToMessageRequestPreview) {
     items[1] = obj5;
     obj6 = { paddingHorizontal: 16, paddingBottom: bottom, paddingTop: 12 };
     obj7 = { style: tmp.sectionContainer, children: closure_7(Text, obj8) };
-    obj8 = { variant: "eyebrow", color: "text-default", children: intl.format(goToMessageRequestPreview(tmp3[6]).t.aNh5Kf, obj9) };
+    obj8 = { variant: "body-sm/medium", color: "text-default", children: intl.format(goToMessageRequestPreview(tmp3[6]).t.aNh5Kf, obj9) };
     Text = tmp4(tmp3[29]).Text;
     intl = tmp4(tmp3[6]).intl;
     obj9 = { count: data.length };

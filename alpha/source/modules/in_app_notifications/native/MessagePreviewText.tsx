@@ -1,29 +1,29 @@
-// Module ID: 11170
-// Function ID: 11171
+// Module ID: 11220
+// Function ID: 11221
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 4990, 11156, 1083, 21, 5141, 1357, 575, 11171, 11172, 11155, 5747, 5837, 1090, 11196, 6558, 11201, 11202, 1094, 5770, 1113, 5812, 2]
+// Dependencies: [19, 17, 4990, 11204, 1083, 21, 5141, 1357, 575, 11221, 11222, 11203, 5761, 5851, 1090, 11246, 6573, 11251, 11252, 1094, 5784, 1113, 5826, 2]
 // Exports: default
 
-// Module 11170 (MessagePreviewText)
+// Module 11220 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1094 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5770 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5812 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import useMessageAuthor from "useMessageAuthor" /* 6558 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11155 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 11171 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 11172 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11196 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 11201 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 11202 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5784 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5826 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import useMessageAuthor from "useMessageAuthor" /* 6573 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11203 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 11221 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 11222 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11246 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 11251 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 11252 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11156 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11204 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -122,13 +122,13 @@ function EmbedCard(embed) {
   let tmp11 = null != name;
   const obj5 = { style: tmp.embedTextContainer, children: items2 };
   if (tmp11) {
-    const obj6 = { variant: "text-xxs/normal", color: "text-subtle", lineClamp: 1, children: name };
+    const obj6 = { variant: "footnote/normal", color: "text-subtle", lineClamp: 1, children: name };
     tmp11 = metroImportAll(Text_Text.Text, obj6);
   }
   items2 = [tmp11, , , ];
   let tmp15 = null != name1;
   if (tmp15) {
-    const obj7 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
+    const obj7 = { variant: "body-xs/medium", color: "text-default", lineClamp: 1, children: name1 };
     tmp15 = metroImportAll(Text_Text.Text, obj7);
   }
   items2[1] = tmp15;
@@ -143,13 +143,13 @@ function EmbedCard(embed) {
         num3 = 3;
       }
     }
-    const obj8 = { variant: "text-xs/medium", color: "text-link", lineClamp: num3, children: rawTitle };
+    const obj8 = { variant: "body-xs/medium", color: "text-link", lineClamp: num3, children: rawTitle };
     tmp20Result = tmp20(Text, obj8);
   }
   items2[2] = tmp20Result;
   let tmp23 = null != embed.rawDescription;
   if (tmp23) {
-    const obj9 = { variant: "text-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
+    const obj9 = { variant: "body-xs/medium", color: "text-default", lineClamp: 3, children: embed.rawDescription };
     tmp23 = metroImportAll(Text_Text.Text, obj9);
   }
   items2[3] = tmp23;
@@ -231,7 +231,7 @@ export default function MessagePreviewText(message) {
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(11196).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(11246).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
@@ -254,7 +254,7 @@ export default function MessagePreviewText(message) {
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(11172).ChannelRowPreview;
+        const ChannelRowPreview = tmp(11222).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }
@@ -270,8 +270,8 @@ export default function MessagePreviewText(message) {
         const tmp17 = View;
         const tmp18 = metroImportAll;
         if (tmp18Result) {
-          const obj12 = { variant: "redesign/message-preview/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-          tmp18Result = tmp18(tmp(5747).Text, obj12);
+          const obj12 = { variant: "heading-sm/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
+          tmp18Result = tmp18(tmp(5761).Text, obj12);
         }
         const obj13 = { children: items2 };
         items2[1] = tmp18Result;
@@ -292,7 +292,7 @@ export default function MessagePreviewText(message) {
       const obj15 = { children: items3 };
       const obj16 = { text: formatResult1 };
       items3 = [metroImportAll(SystemMessageText, obj16), ];
-      const obj17 = { variant: "redesign/message-preview/medium", color: "text-default", lineClamp: metroImportDefault, children: text2 };
+      const obj17 = { variant: "heading-sm/medium", color: "text-default", lineClamp: metroImportDefault, children: text2 };
       items3[1] = metroImportAll(Text_Text.Text, obj17);
       return React4(View, obj15);
     } else {

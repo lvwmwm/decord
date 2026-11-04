@@ -1,10 +1,10 @@
-// Module ID: 6028
-// Function ID: 6029
+// Module ID: 6043
+// Function ID: 6044
 // Name: ProcessBoostExperiment
-// Dependencies: [5888, 1449, 2]
+// Dependencies: [5902, 1449, 2]
 
-// Module 6028 (ProcessBoostExperiment)
-import Constants from "Constants" /* 5888 */;
+// Module 6043 (ProcessBoostExperiment)
+import Constants from "Constants" /* 5902 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 14344
-// Function ID: 14345
+// Module ID: 14424
+// Function ID: 14425
 // Name: PortalKeyboardInlineComponent
-// Dependencies: [19, 17, 5142, 5332, 2020, 7227, 1625, 5716, 5333, 5330, 5336, 11384, 2]
+// Dependencies: [19, 17, 5142, 5333, 2020, 7247, 1625, 5729, 5334, 5331, 5337, 11434, 2]
 
-// Module 14344 (PortalKeyboardInlineComponent)
+// Module 14424 (PortalKeyboardInlineComponent)
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -22,14 +22,14 @@ const memoResult = react.memo(function InlinePortalKeyboard(messagesRef) {
   react = undefined;
   const channelId = messagesRef.channelId;
   const id = react.useId();
-  const tmp2 = id(5332)();
+  const tmp2 = id(5333)();
   dependencyMap = tmp2;
   const tmp3 = id(2020)();
-  let tmp4 = id(7227)({ includeCustomKeyboard: false });
+  let tmp4 = id(7247)({ includeCustomKeyboard: false });
   react = tmp4;
-  let obj = messagesRef(5332);
+  let obj = messagesRef(5333);
   const keyboardContextForType = obj.useKeyboardContextForType(messagesRef(1625).KeyboardTypes.SYSTEM);
-  id(5716)(() => () => {
+  id(5729)(() => () => {
     const PortalKeyboardUIStore = messagesRef(closure_2[8]).PortalKeyboardUIStore;
     field = PortalKeyboardUIStore.getField("keyboard");
     const tmp4 = null != field && field.handlerId === id;
@@ -40,9 +40,9 @@ const memoResult = react.memo(function InlinePortalKeyboard(messagesRef) {
       tmpResult2.closePortalKeyboard();
     }
   });
-  let PortalKeyboardUIStore = messagesRef(5333).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = messagesRef(5334).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = messagesRef(5333).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = messagesRef(5334).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("state");
   const ref = react.useRef(false);
   const items = [channelId, id, field, field1, tmp2, messagesRef, keyboardContextForType, tmp3, tmp4];

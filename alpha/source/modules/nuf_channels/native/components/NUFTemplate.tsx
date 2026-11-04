@@ -1,15 +1,15 @@
-// Module ID: 15331
-// Function ID: 15332
+// Module ID: 15418
+// Function ID: 15419
 // Name: NUFTemplate
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 5837, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 5851, 5768, 2]
 // Exports: default
 
-// Module 15331 (NUFTemplate)
+// Module 15418 (NUFTemplate)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -38,7 +38,7 @@ export default function NUFActionSheetTemplate(arg0) {
   items = [, , , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   items[0] = React3(Text_Text.Text, obj2);
-  const obj3 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: description };
+  const obj3 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: description };
   items[1] = React3(Text_Text.Text, obj3);
   const obj4 = { source: imageSrc, style: tmp.image };
   items[2] = React3(FastImageDefault, obj4);

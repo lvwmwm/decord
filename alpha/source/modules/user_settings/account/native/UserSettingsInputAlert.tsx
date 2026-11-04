@@ -1,12 +1,12 @@
-// Module ID: 16817
-// Function ID: 16818
+// Module ID: 16909
+// Function ID: 16910
 // Name: UserSettingsInputAlert
-// Dependencies: [19, 21, 1282, 6147, 5747, 7208, 6150, 7081, 2]
+// Dependencies: [19, 21, 1282, 6162, 5761, 7223, 6165, 7096, 2]
 
-// Module 16817 (UserSettingsInputAlert)
+// Module 16909 (UserSettingsInputAlert)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import AlertDefault from "Alert" /* 6150 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import AlertDefault from "Alert" /* 6165 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -14,9 +14,9 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const KeyboardAwareViewDefault = tmp2(7081);
+const KeyboardAwareViewDefault = tmp2(7096);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const hasOwnProperty = { input: "", error: "id" };
+const hasOwnProperty = { input: "", error: "children" };
 const PureComponent = react.PureComponent;
 class UserSettingsInputAlert extends PureComponent {
   constructor() {
@@ -86,8 +86,8 @@ class UserSettingsInputAlert extends PureComponent {
       const Stack = Stack_Stack.Stack;
       const tmp4 = React3;
       if (tmp7) {
-        let obj = { variant: "text-md/normal", children: helpText };
-        tmp7 = _false(tmp5(5747).Text, obj);
+        let obj = { variant: "body-md/normal", children: helpText };
+        tmp7 = _false(tmp5(5761).Text, obj);
       }
       const items = [tmp7, ];
       const obj2 = {
@@ -105,7 +105,7 @@ class UserSettingsInputAlert extends PureComponent {
           }
       };
       str2 = "default";
-      const TextInput = tmp5(7208).TextInput;
+      const TextInput = tmp5(7223).TextInput;
       const tmp9 = _false;
       if (null != error) {
         str2 = "error";

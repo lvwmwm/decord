@@ -1,18 +1,18 @@
-// Module ID: 17907
-// Function ID: 17908
+// Module ID: 18003
+// Function ID: 18004
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 5719, 575, 6147, 7186, 5748, 7101, 5747, 2]
+// Dependencies: [19, 17, 21, 5732, 575, 6162, 7201, 5762, 7116, 5761, 2]
 // Exports: default
 
-// Module 17907 (UserSettingsDesignSystemText)
+// Module 18003 (UserSettingsDesignSystemText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5719 */;
-import TextVariants from "TextVariants" /* 5748 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
+import useToken from "useToken" /* 5732 */;
+import TextVariants from "TextVariants" /* 5762 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -30,12 +30,8 @@ export default function UserSettingsDesignSystemText() {
     title: "Text Variants",
     hasIcons: false,
     children: TEXT_VARIANT.map((variant) => {
-      let tmp = null;
-      if ("code" !== variant) {
-        const TableRow = TableRow2.TableRow;
-        tmp = <TableRow key={arg0} label={null} />;
-      }
-      return tmp;
+      const TableRow = TableRow2.TableRow;
+      return <TableRow key={arg0} label={null} />;
     })
   });
   const TableRowGroup = TableRowGroup2.TableRowGroup;

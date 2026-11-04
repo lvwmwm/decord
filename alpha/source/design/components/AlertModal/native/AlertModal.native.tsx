@@ -1,10 +1,10 @@
-// Module ID: 6084
-// Function ID: 6085
+// Module ID: 6099
+// Function ID: 6100
 // Name: AlertModal
-// Dependencies: [5, 32, 717, 19, 17, 1340, 1083, 21, 5141, 575, 5207, 6080, 1652, 2017, 6085, 6137, 1259, 1705, 5721, 1113, 5155, 1627, 6141, 1493, 6142, 6147, 5747, 6148, 5757, 5754, 2]
+// Dependencies: [5, 32, 717, 19, 17, 1340, 1083, 21, 5141, 575, 5207, 6095, 1652, 2017, 6100, 6152, 1259, 1705, 5734, 1113, 5155, 1627, 6156, 1493, 6157, 6162, 5761, 6163, 5771, 5768, 2]
 // Exports: showConfirmModal, useDismissModalCallback
 
-// Module 6084 (AlertModal)
+// Module 6099 (AlertModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;
@@ -13,14 +13,14 @@ import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
 import native from "native" /* 5207 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import useAlertStore2 from "useAlertStore" /* 6080 */;
-import OverlayViewDefault from "OverlayView" /* 6085 */;
-import Dialog2 from "Dialog" /* 6137 */;
-import react_native from "react-native" /* 6141 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6148 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import useAlertStore2 from "useAlertStore" /* 6095 */;
+import OverlayViewDefault from "OverlayView" /* 6100 */;
+import Dialog2 from "Dialog" /* 6152 */;
+import react_native from "react-native" /* 6156 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6163 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
@@ -126,7 +126,7 @@ function AlertModalBackdrop() {
   const animatedStyle = useAnimatedStyle(AlertModalNativeTsx1);
   const obj2 = { blur: "strong", style: animatedStyle, onDismiss: tmp18, accessibilityLabel: intl.string(intl2.t.Xkfav5) };
   tmp18 = null;
-  const Backdrop = tmp5(5721).Backdrop;
+  const Backdrop = tmp5(5734).Backdrop;
   const tmp17 = unpackModuleId;
   if (alertStore) {
     tmp18 = dismissTopAlert;
@@ -338,7 +338,7 @@ class AlertModal {
     if (null != content) {
       tmp38Result = null;
       if ("" !== content) {
-        const obj7 = { variant: "text-md/medium", color: "text-default", style: tmp3.contentText, children: content };
+        const obj7 = { variant: "body-md/medium", color: "text-default", style: tmp3.contentText, children: content };
         tmp38Result = tmp38(tmp5(tmp6[26]).Text, obj7);
       }
     }

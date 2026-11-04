@@ -1,16 +1,14 @@
-// Module ID: 9412
-// Function ID: 9413
+// Module ID: 9429
+// Function ID: 9430
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [4990, 5884, 9394, 504, 2]
+// Dependencies: [4990, 5898, 9411, 504, 2]
 // Exports: useIsSecureFramesUIEnabled
 
-// Module 9412 (useIsSecureFramesUIEnabled)
-import SecureFramesConstants from "SecureFramesConstants" /* 9394 */;
+// Module 9429 (useIsSecureFramesUIEnabled)
+import SecureFramesConstants from "SecureFramesConstants" /* 9411 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
 import size from "module_2" /* 2 */;
-
-let version;
 
 let closure_4 = SecureFramesConstants.END_TO_END_ENCRYPTION_DISABLED;
 const result = size.fileFinishedImporting("modules/rtc/hooks/useIsSecureFramesUIEnabled.tsx");
@@ -35,7 +33,7 @@ export function useIsSecureFramesUIEnabled(channelId) {
           flag = false;
           if (!channel.isGuildStageVoice()) {
             const secureFramesState = obj.getSecureFramesState();
-            version = undefined;
+            let version;
             if (secureFramesState != null) {
               version = secureFramesState.version;
             }

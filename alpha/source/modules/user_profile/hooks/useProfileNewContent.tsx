@@ -1,22 +1,21 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15195
+// Function ID: 15196
 // Name: useProfileNewContent
-// Dependencies: [9599, 1385, 7896, 7908, 15116, 15117, 504, 7907, 9598, 2]
+// Dependencies: [9618, 1385, 7912, 15196, 15197, 504, 7924, 7923, 9617, 2]
 // Exports: default
 
-// Module 15115 (useProfileNewContent)
-import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7907 */;
-import ProfileReadStateConstants from "ProfileReadStateConstants" /* 7908 */;
-import WishlistStore from "WishlistStore" /* 9599 */;
+// Module 15195 (useProfileNewContent)
+import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7923 */;
+import ProfileReadStateSection from "ProfileReadStateSection" /* 7924 */;
+import WishlistStore from "WishlistStore" /* 9618 */;
 import UserStore from "UserStore" /* 1385 */;
-import UserProfileStore from "UserProfileStore" /* 7896 */;
+import UserProfileStore from "UserProfileStore" /* 7912 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, currentUser, profileReadStateSectionAckedAt;
 
-const ProfileReadStateSection = ProfileReadStateConstants.ProfileReadStateSection;
-let closure_7 = { hasNewWishlistItems: false, newWishlistItemCount: 0, shouldLogExposure: false };
+let closure_6 = { hasNewWishlistItems: false, newWishlistItemCount: 0, shouldLogExposure: false };
 const result = size.fileFinishedImporting("modules/user_profile/hooks/useProfileNewContent.tsx");
 
 export default function useProfileNewContent(id) {
@@ -29,7 +28,7 @@ export default function useProfileNewContent(id) {
   let profileReadStateConfigPeek;
   let obj2 = require("ProfileReadStateExperiment");
   profileReadStateConfigPeek = obj2.useProfileReadStateConfigPeek();
-  const tmp2 = isItemShown(profileReadStateConfigPeek[5])(id);
+  const tmp2 = isItemShown(profileReadStateConfigPeek[4])(id);
   let wishlist = tmp2;
   let items = [UserProfileStore, UserStore];
   let items1 = [id, profileReadStateConfigPeek];
@@ -43,18 +42,18 @@ export default function useProfileNewContent(id) {
         id1 = currentUser.id;
       }
       if (id !== id1) {
-        const firstWishlistId = UserProfileStore.getFirstWishlistId(tmp9.id);
+        const firstWishlistId = UserProfileStore.getFirstWishlistId(tmp7.id);
         if (null == firstWishlistId) {
           return null;
         } else {
-          const wishlistSettings = obj.getWishlistSettings(tmp9.id, firstWishlistId);
-          profileReadStateSectionAckedAt = obj.getProfileReadStateSectionAckedAt(tmp9.id, ProfileReadStateSection.WISHLIST);
-          let tmp8 = null;
-          const obj2 = ProfileReadStateUtils;
-          if (obj2.hasWishlistBeenUpdatedSinceAcked(wishlistSettings, profileReadStateSectionAckedAt)) {
-            tmp8 = firstWishlistId;
+          const wishlistSettings = obj2.getWishlistSettings(tmp7.id, firstWishlistId);
+          profileReadStateSectionAckedAt = obj2.getProfileReadStateSectionAckedAt(tmp7.id, ProfileReadStateSection.ProfileReadStateSection.WISHLIST);
+          let tmp6 = null;
+          const obj = ProfileReadStateUtils;
+          if (obj.hasWishlistBeenUpdatedSinceAcked(wishlistSettings, profileReadStateSectionAckedAt)) {
+            tmp6 = firstWishlistId;
           }
-          return tmp8;
+          return tmp6;
         }
       }
     }
@@ -76,9 +75,9 @@ export default function useProfileNewContent(id) {
       }
       if (id !== id1) {
         const obj2 = profileReadStateSectionAckedAt;
-        profileReadStateSectionAckedAt = profileReadStateSectionAckedAt.getProfileReadStateSectionAckedAt(tmp7.id, constants.WISHLIST);
+        profileReadStateSectionAckedAt = profileReadStateSectionAckedAt.getProfileReadStateSectionAckedAt(tmp7.id, id(profileReadStateConfigPeek[6]).ProfileReadStateSection.WISHLIST);
         if (null == profileReadStateSectionAckedAt) {
-          return closure_1_7;
+          return closure_1_6;
         } else {
           let items1;
           let firstWishlistId = null;
@@ -118,6 +117,6 @@ export default function useProfileNewContent(id) {
         }
       }
     }
-    return closure_1_7;
+    return closure_1_6;
   }, items3);
 };

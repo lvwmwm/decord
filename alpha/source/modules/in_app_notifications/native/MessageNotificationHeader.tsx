@@ -1,17 +1,17 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 11265
+// Function ID: 11266
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 5142, 5083, 1385, 21, 5141, 575, 5747, 5772, 1093, 8767, 8769, 8727, 504, 2]
+// Dependencies: [19, 17, 5142, 5083, 1385, 21, 5141, 575, 5761, 5786, 1093, 8784, 8786, 8744, 504, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 11215 (MessageNotificationHeader)
+// Module 11265 (MessageNotificationHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8727 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8744 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
@@ -49,11 +49,11 @@ function LocationText(channel) {
         if (null != parentChannel) {
           let ThreadIcon;
           if (parentChannel.type === ChannelTypes.ChannelTypes.GUILD_FORUM) {
-            ThreadIcon = tmp3(8767).ChatIcon;
+            ThreadIcon = tmp3(8784).ChatIcon;
           }
           simpleChannelIconComponent = ThreadIcon;
         }
-        ThreadIcon = tmp3(8769).ThreadIcon;
+        ThreadIcon = tmp3(8786).ThreadIcon;
       } else {
         const tmp3Result = utils_ChannelUtils;
         simpleChannelIconComponent = tmp3Result.getSimpleChannelIconComponent(tmp);
@@ -69,11 +69,11 @@ function LocationText(channel) {
   const tmp3 = closure_8;
   const tmp4 = str;
   if (tmp5) {
-    const obj2 = { variant: "text-md/semibold", color: str, maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
+    const obj2 = { variant: "body-md/semibold", color: str, maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
     tmp5 = closure_7(channel(parentChannel[8]).Text, obj2);
   }
   items1 = [tmp5, memo, ];
-  const obj3 = { variant: "text-md/semibold", color: str, lineClamp: 1, style: tmp.secondaryText, children: _location };
+  const obj3 = { variant: "body-md/semibold", color: str, lineClamp: 1, style: tmp.secondaryText, children: _location };
   items1[2] = closure_7(channel(parentChannel[8]).Text, obj3);
   return tmp3(tmp4, obj);
 }
@@ -188,9 +188,9 @@ export default function MessageNotificationHeader(locationTextColor) {
   obj4 = { style: tmp.headerContent, children: items2 };
   tmp19 = metroImportAll;
   if (tmp17Result) {
-    const obj5 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items1, children: author.nick };
+    const obj5 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items1, children: author.nick };
     items1 = [tmp.primaryText, tmp6];
-    tmp17Result = tmp17(tmp2(5747).Text, obj5);
+    tmp17Result = tmp17(tmp2(5761).Text, obj5);
   }
   items2 = [tmp17Result, ];
   let tmp17Result2 = null != tmp10;
@@ -210,16 +210,16 @@ export function SimpleNotificationHeader(secondaryText) {
   secondaryText = secondaryText.secondaryText;
   ({ text, labelStyle } = secondaryText);
   const tmp = closure_9();
-  const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items, children: text };
+  const obj2 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: items, children: text };
   items = [tmp.primaryText, labelStyle];
   const obj = { style: tmp.container, children: items1 };
   items1 = [metroImportDefault(Text_Text.Text, obj2), ];
   let tmp2Result = null != secondaryText;
   if (tmp2Result) {
     const obj3 = { style: tmp.secondaryTextContainer, children: items2 };
-    const obj4 = { variant: "text-md/semibold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
+    const obj4 = { variant: "body-md/semibold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
     items2 = [metroImportDefault(Text_Text.Text, obj4), ];
-    const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
+    const obj5 = { variant: "body-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
     items2[1] = metroImportDefault(Text_Text.Text, obj5);
     tmp2Result = tmp2(tmp3, obj3);
   }

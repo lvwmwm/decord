@@ -1,16 +1,16 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 12443
+// Function ID: 12444
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 5142, 21, 5141, 575, 12379, 11053, 504, 1652, 5757, 5758, 5377, 1113, 3995, 12380, 12384, 5747, 5754, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 12444, 11102, 504, 1652, 5771, 5772, 5378, 1113, 3995, 12445, 12449, 5761, 5768, 2]
 // Exports: default
 
-// Module 12378 (ConjureNativeControlOverlay)
+// Module 12443 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import springPresets from "springPresets" /* 5758 */;
-import useConjureControlBar from "useConjureControlBar" /* 12379 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import springPresets from "springPresets" /* 5772 */;
+import useConjureControlBar from "useConjureControlBar" /* 12444 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -89,12 +89,12 @@ export default function ConjureNativeControlOverlay(arg0) {
   ({ active, children } = arg0);
   let tmp = closure_9();
   let tmp2 = conjureControlPhase;
-  let obj = conjureControlPhase(12379);
+  let obj = conjureControlPhase(12444);
   conjureControlPhase = obj.useConjureControlPhase(active);
-  let obj2 = conjureControlPhase(12379);
+  let obj2 = conjureControlPhase(12444);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj3 = conjureControlPhase(11053);
+  const obj3 = conjureControlPhase(11102);
   const conjureControlTuning = obj3.useConjureControlTuning(projectId);
   let items = [sharedValue2];
   const obj4 = conjureControlPhase(504);
@@ -261,16 +261,16 @@ export default function ConjureNativeControlOverlay(arg0) {
       items10 = [tmp.bar, animatedStyle1];
       View2 = tmp28(1652).View;
       if (tmp8) {
-        tmp44Result = tmp44(tmp2(12380).AILoader, { size: 12, color: "text-overlay-light" });
+        tmp44Result = tmp44(tmp2(12445).AILoader, { size: 12, color: "text-overlay-light" });
       } else {
         const obj8 = { size: "sm", color: tmp28(575).colors.TEXT_OVERLAY_LIGHT };
-        const SparklesIcon = tmp2(12384).SparklesIcon;
+        const SparklesIcon = tmp2(12449).SparklesIcon;
         tmp44Result = tmp44(SparklesIcon, obj8);
       }
       items11 = [tmp44Result, , ];
-      const obj9 = { variant: "text-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp.title, accessibilityLabel: combined, children: stringResult };
+      const obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp.title, accessibilityLabel: combined, children: stringResult };
       combined = stringResult;
-      const Text = tmp2(5747).Text;
+      const Text = tmp2(5761).Text;
       if (tmp8) {
         const intl2 = tmp2(1113).intl;
         const _HermesInternal = HermesInternal;
@@ -283,7 +283,7 @@ export default function ConjureNativeControlOverlay(arg0) {
         if (null != stop) {
           const obj10 = { style: tmp.actions, children: closure_6(Button, obj11) };
           obj11 = { variant: "primary-overlay", size: "sm", text: intl3.string(tmp28(3995).oU59sU), loading: stopping, onPress: stop };
-          Button = tmp2(5754).Button;
+          Button = tmp2(5768).Button;
           intl3 = tmp2(1113).intl;
           tmp44Result3 = tmp44(tmp33, obj10);
         }

@@ -1,13 +1,13 @@
-// Module ID: 17476
-// Function ID: 17477
+// Module ID: 17566
+// Function ID: 17567
 // Name: DisplayNameStylesSheetHeader
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 2]
 // Exports: default
 
-// Module 17476 (DisplayNameStylesSheetHeader)
+// Module 17566 (DisplayNameStylesSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -46,7 +46,7 @@ export default function DisplayNameStylesSheetHeader(title) {
   const obj = { style: tmp.header, children: tmp4(View, obj2) };
   obj2 = { style: tmp.row, children: items };
   const obj3 = { style: tmp.title, children: _false(Text_Text.Heading, obj4) };
-  obj4 = { variant: "redesign/heading-18/semibold", color: "text-default", style: tmp.titleText, children: title };
+  obj4 = { variant: "heading-md/semibold", color: "text-default", style: tmp.titleText, children: title };
   items = [_false(View, obj3), , ];
   let tmp2Result = null != leading;
   tmp4 = React3;

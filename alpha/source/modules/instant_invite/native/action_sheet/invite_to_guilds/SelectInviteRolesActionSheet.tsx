@@ -1,12 +1,12 @@
-// Module ID: 20165
-// Function ID: 20166
+// Module ID: 20281
+// Function ID: 20282
 // Name: SelectInviteRolesActionSheet
-// Dependencies: [32, 19, 21, 5141, 10865, 7338, 5381, 12, 8301, 13401, 7106, 5747, 1113, 7441, 7486, 7344, 2]
+// Dependencies: [32, 19, 21, 5141, 10913, 7354, 5382, 12, 8317, 13485, 7121, 5761, 1113, 7457, 7502, 7360, 2]
 // Exports: default
 
-// Module 20165 (SelectInviteRolesActionSheet)
+// Module 20281 (SelectInviteRolesActionSheet)
 import _mod12 from "module_12" /* 12 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -96,7 +96,7 @@ export default function SelectInviteRolesActionSheet(assignableRoles) {
   }, items2);
   let obj = { onPress: callback1, accessibilityRole: "button", children: closure_5(Text, obj2) };
   const PressableOpacity = assignableRoles(onSave[10]).PressableOpacity;
-  obj2 = { variant: "text-md/semibold", children: intl.string(assignableRoles(onSave[12]).t.i4jeWR) };
+  obj2 = { variant: "body-md/semibold", children: intl.string(assignableRoles(onSave[12]).t.i4jeWR) };
   Text = assignableRoles(onSave[11]).Text;
   intl = assignableRoles(onSave[12]).intl;
   let obj3 = { title: intl2.string(assignableRoles(onSave[12]).t["LPJmL/"]), trailing: tmp10 };

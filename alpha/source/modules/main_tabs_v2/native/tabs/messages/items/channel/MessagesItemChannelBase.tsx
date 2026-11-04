@@ -1,21 +1,21 @@
-// Module ID: 18233
-// Function ID: 18234
+// Module ID: 18330
+// Function ID: 18331
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5881, 6962, 5083, 5044, 6895, 1385, 21, 5141, 575, 504, 18234, 8913, 1377, 7609, 5876, 10932, 7106, 9213, 9642, 18235, 5812, 9638, 18236, 8955, 18237, 5882, 2]
+// Dependencies: [19, 17, 5895, 6977, 5083, 5044, 6910, 1385, 21, 5141, 575, 504, 18331, 8930, 1377, 7625, 5890, 10980, 7121, 9230, 9661, 18332, 5826, 9657, 18333, 8972, 18334, 5896, 2]
 
-// Module 18233 (MessagesItemChannelBase)
+// Module 18330 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import transitionToChannel from "transitionToChannel" /* 5876 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10932 */;
+import transitionToChannel from "transitionToChannel" /* 5890 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10980 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -97,7 +97,7 @@ const memoResult = react.memo(function MessagesItemChannelBase(channel) {
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "Array", activities: "flexDirection" };
+      obj3 = { status: "PX_8", activities: "__closure" };
     }
     return obj3;
   });

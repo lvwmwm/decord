@@ -1,18 +1,18 @@
-// Module ID: 19597
-// Function ID: 19598
+// Module ID: 19702
+// Function ID: 19703
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 19594, 19598, 7486, 5837, 11410, 5747, 1113, 7083, 5754, 7286, 4966, 5832, 5381, 15877, 2]
+// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 19699, 19703, 7502, 5851, 11460, 5761, 1113, 7098, 5768, 7302, 4966, 5846, 5382, 15965, 2]
 // Exports: default
 
-// Module 19597 (DmSettingsUpsellActionSheet)
+// Module 19702 (DmSettingsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettings from "UserSettings" /* 4966 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7286 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15877 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 19594 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19598 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15965 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 19699 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19703 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
@@ -66,30 +66,30 @@ export default function DmSettingsUpsellActionSheet(guildId) {
   if (null != stateFromStores) {
     let obj2 = { startExpanded: true, children: closure_7(View, obj3) };
     obj3 = { style: tmp.container, children: items2 };
-    const ActionSheet = tmp2(7486).ActionSheet;
-    let obj4 = { source: stateFromStores(11410), style: tmp.headerImage };
-    const tmp11 = stateFromStores(5837);
+    const ActionSheet = tmp2(7502).ActionSheet;
+    let obj4 = { source: stateFromStores(11460), style: tmp.headerImage };
+    const tmp11 = stateFromStores(5851);
     items2 = [closure_6(tmp11, obj4), , , , , , ];
     const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(guildId(1113).t.w2BvnL) };
-    const Text = tmp2(5747).Text;
+    const Text = tmp2(5761).Text;
     intl = tmp2(1113).intl;
     items2[1] = closure_6(Text, obj5);
-    const obj6 = { variant: "text-md/normal", color: "text-default", style: tmp.body, children: intl2.format(guildId(1113).t.Depjkv, obj7) };
-    const Text2 = tmp2(5747).Text;
+    const obj6 = { variant: "body-md/normal", color: "text-default", style: tmp.body, children: intl2.format(guildId(1113).t.Depjkv, obj7) };
+    const Text2 = tmp2(5761).Text;
     intl2 = tmp2(1113).intl;
     obj7 = { guild_name: stateFromStores.name };
     items2[2] = closure_6(Text2, obj6);
     const obj8 = { style: tmp.guildContainer, children: items3 };
-    const obj9 = { variant: "eyebrow", color: "text-default", children: intl3.string(guildId(1113).t.KPB2iw) };
-    const Text3 = tmp2(5747).Text;
+    const obj9 = { variant: "body-sm/medium", color: "text-default", children: intl3.string(guildId(1113).t.KPB2iw) };
+    const Text3 = tmp2(5761).Text;
     intl3 = tmp2(1113).intl;
     items3 = [closure_6(Text3, obj9), ];
     const obj10 = { style: tmp.guildInfo, children: items4 };
-    const obj11 = { guild: stateFromStores, size: guildId(7083).GuildIconSizes.SMALL_32 };
-    const tmp12 = stateFromStores(7083);
+    const obj11 = { guild: stateFromStores, size: guildId(7098).GuildIconSizes.SMALL_32 };
+    const tmp12 = stateFromStores(7098);
     items4 = [closure_6(tmp12, obj11), ];
-    const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
-    items4[1] = closure_6(guildId(5747).Text, obj12);
+    const obj12 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
+    items4[1] = closure_6(guildId(5761).Text, obj12);
     items3[1] = closure_7(View, obj10);
     items2[3] = closure_7(View, obj8);
     const obj13 = {
@@ -115,7 +115,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
         },
       text: intl4.string(guildId(1113).t.TD7iUx)
     };
-    const Button = tmp2(5754).Button;
+    const Button = tmp2(5768).Button;
     intl4 = tmp2(1113).intl;
     items2[4] = closure_6(Button, obj13);
     const obj14 = {
@@ -129,11 +129,11 @@ export default function DmSettingsUpsellActionSheet(guildId) {
         },
       text: intl5.string(guildId(1113).t.PsWbcp)
     };
-    const Button2 = tmp2(5754).Button;
+    const Button2 = tmp2(5768).Button;
     intl5 = tmp2(1113).intl;
     items2[5] = closure_6(Button2, obj14);
-    const obj15 = { variant: "text-xs/normal", style: tmp.footer, children: intl6.format(guildId(1113).t.IzZxXW, obj16) };
-    const Text4 = tmp2(5747).Text;
+    const obj15 = { variant: "body-xs/normal", style: tmp.footer, children: intl6.format(guildId(1113).t.IzZxXW, obj16) };
+    const Text4 = tmp2(5761).Text;
     intl6 = tmp2(1113).intl;
     obj16 = {
       onClick: function handleGotoServerPrivacySettings() {

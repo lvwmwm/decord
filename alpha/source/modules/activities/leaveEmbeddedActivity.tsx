@@ -1,10 +1,10 @@
-// Module ID: 11069
-// Function ID: 11070
+// Module ID: 11118
+// Function ID: 11119
 // Name: leaveEmbeddedActivity
 // Dependencies: [572, 2]
 // Exports: leaveEmbeddedActivity
 
-// Module 11069 (leaveEmbeddedActivity)
+// Module 11118 (leaveEmbeddedActivity)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

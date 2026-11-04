@@ -1,10 +1,10 @@
-// Module ID: 14462
-// Function ID: 14463
+// Module ID: 14542
+// Function ID: 14543
 // Name: InviteError
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 5148, 5376, 14463, 14464, 14465, 1113, 5837, 5747, 5754, 1411, 1187, 14466, 7083, 2190, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5148, 5377, 14543, 14544, 14545, 1113, 5851, 5761, 5768, 1411, 1187, 14546, 7098, 2190, 2]
 // Exports: default
 
-// Module 14462 (InviteError)
+// Module 14542 (InviteError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -12,13 +12,13 @@ import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
 import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 14465 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14466 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 14545 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14546 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ function InviteErrorBase(invite) {
   const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 14463 : 14464);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 14543 : 14544);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -71,7 +71,7 @@ function InviteErrorBase(invite) {
   items[0] = metroImportDefault(FastImageDefault, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   const tmp10 = React4;
   const tmp11 = metroImportAll;
   if (descriptiveInviteError != null) {
@@ -86,10 +86,10 @@ function InviteErrorBase(invite) {
   }
   const obj4 = { children: items };
   items[1] = metroImportDefault(Text, obj3);
-  const obj5 = { style: tmp.expiredBody, variant: "text-sm/medium", color: "text-default", children: stringResult };
+  const obj5 = { style: tmp.expiredBody, variant: "body-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportDefault(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5754).Button;
+  const Button = tmp2(5768).Button;
   intl4 = tmp2(1113).intl;
   items[3] = metroImportDefault(Button, obj6);
   return tmp10(tmp11, obj4);
@@ -130,7 +130,7 @@ function InviteDisabledError(onPressClose) {
     const Text = Text_Text.Text;
     intl = intl5.intl;
     items1[1] = metroImportDefault(Text, obj8);
-    const obj9 = { style: tmp.disabledBody, variant: "text-md/normal", color: "text-default", children: format(RXSeLl, obj11) };
+    const obj9 = { style: tmp.disabledBody, variant: "body-md/normal", color: "text-default", children: format(RXSeLl, obj11) };
     const Text2 = Text_Text.Text;
     const intl2 = intl5.intl;
     format = intl2.format;

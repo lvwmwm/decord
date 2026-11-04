@@ -1,23 +1,23 @@
-// Module ID: 15323
-// Function ID: 15324
+// Module ID: 15410
+// Function ID: 15411
 // Name: NUFChannelsManager
-// Dependencies: [5053, 5012, 5172, 1385, 1072, 5059, 510, 5195, 7407, 5322, 5321, 1398, 5381, 15324, 2123, 2]
+// Dependencies: [5053, 5012, 5172, 1385, 1072, 5059, 510, 5195, 7423, 5323, 5322, 1398, 5382, 15411, 2123, 2]
 
-// Module 15323 (NUFChannelsManager)
+// Module 15410 (NUFChannelsManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 5059 */;
 import UserUtils from "UserUtils" /* 5195 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5321 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5322 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import UserStore from "UserStore" /* 1385 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;
@@ -96,7 +96,7 @@ class NUFChannelsManager extends AutomaticLifecycleManager {
           }
           if (isNewUserResult) {
             const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.openLazy(asyncRequire(15324, tmp2.paths), "NUFChannelsActionSheet");
+            obj3.openLazy(asyncRequire(15411, tmp2.paths), "NUFChannelsActionSheet");
             const Storage2 = tmp(510).Storage;
             const result = Storage2.set(tmp14, true);
           }

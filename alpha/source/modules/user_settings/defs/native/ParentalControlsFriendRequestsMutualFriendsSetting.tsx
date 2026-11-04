@@ -1,18 +1,18 @@
-// Module ID: 18082
-// Function ID: 18083
+// Module ID: 18179
+// Function ID: 18180
 // Name: ParentalControlsFriendRequestsMutualFriendsSetting
-// Dependencies: [19, 7839, 8556, 1072, 8495, 16865, 7286, 1398, 11677, 1113, 2]
+// Dependencies: [19, 7855, 8573, 1072, 8512, 16957, 7302, 1398, 11728, 1113, 2]
 
-// Module 18082 (ParentalControlsFriendRequestsMutualFriendsSetting)
+// Module 18179 (ParentalControlsFriendRequestsMutualFriendsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FlagUtilsAll from "FlagUtils" /* 1398 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7286 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16865 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16957 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7839 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7855 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -25,9 +25,9 @@ let obj = {
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useFriendRequestsMutualFriendsSettingValue() {
     let controlledSetting;
-    let obj = controlledSetting(8495);
+    let obj = controlledSetting(8512);
     const selectedTeenId = obj.useSelectedTeenId();
-    const ParentalControlledFriendSourceFlags = controlledSetting(16865).ParentalControlledFriendSourceFlags;
+    const ParentalControlledFriendSourceFlags = controlledSetting(16957).ParentalControlledFriendSourceFlags;
     controlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting(selectedTeenId);
     const items = [controlledSetting];
     return react.useMemo(() => {

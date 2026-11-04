@@ -1,10 +1,10 @@
-// Module ID: 9055
-// Function ID: 9056
+// Module ID: 9072
+// Function ID: 9073
 // Name: parseWaterwheelsCard
-// Dependencies: [109, 12, 9056, 2]
+// Dependencies: [109, 12, 9073, 2]
 // Exports: parseWaterwheelsCard
 
-// Module 9055 (parseWaterwheelsCard)
+// Module 9072 (parseWaterwheelsCard)
 import _mod12 from "module_12" /* 12 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;

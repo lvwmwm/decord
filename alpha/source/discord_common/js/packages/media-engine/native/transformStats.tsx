@@ -1,11 +1,11 @@
-// Module ID: 5972
-// Function ID: 5973
+// Module ID: 5986
+// Function ID: 5987
 // Name: transformStats
-// Dependencies: [5973, 2]
+// Dependencies: [5987, 2]
 // Exports: default
 
-// Module 5972 (transformStats)
-import transformStatsUtils from "transformStatsUtils" /* 5973 */;
+// Module 5986 (transformStats)
+import transformStatsUtils from "transformStatsUtils" /* 5987 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -531,6 +531,7 @@ export default function transformStats(mediaEngineConnectionId, str, id, arg3) {
     const item1 = inbound.forEach((id) => {
       let audio;
       let audioReceiverDelayMs;
+      let mosMean;
       let obj2;
       let obj3;
       let obj5;
@@ -538,6 +539,7 @@ export default function transformStats(mediaEngineConnectionId, str, id, arg3) {
       let prop;
       let video;
       let videos;
+      let voiceQuality;
       id = id.id;
       ({ audio, video, videos, playout } = id);
       let tmp = obj7;
@@ -550,7 +552,7 @@ export default function transformStats(mediaEngineConnectionId, str, id, arg3) {
         }
         closure_2 = num + audio.bytesReceived;
         let arr = tmp[id];
-        const obj = { type: "audio", ssrc: audio.ssrc, sinkWant: obj2.formatSinkWantStat(id, audio.ssrc, false), sinkWantAsInt: obj3.formatSinkWantAsInt(id, audio.ssrc), codec: obj5, bytesReceived: null, packetsReceived: null, packetsLost: null, fractionLost: 100 * audio.fractionLost, fecPacketsReceived: null, fecPacketsDiscarded: null, audioLevel: audio.audioLevel / 32768, audioDetected: null, currentSampleRate: null, jitter: null, jitterBuffer: null, jitterBufferPreferred: null, decodingCNG: null, decodingMutedOutput: null, decodingNormal: null, decodingPLC: null, decodingPLCCNG: null, nackCount: null, accelerateRate: 100 * audio.accelerateRate, expandRate: 100 * audio.expandRate, preemptiveExpandRate: 100 * audio.preemptiveExpandRate, speechExpandRate: 100 * audio.speechExpandRate, secondaryDecodedRate: 100 * audio.secondaryDecodedRate, opSilence: null, opNormal: null, opMerge: null, opExpand: null, opAccelerate: null, opPreemptiveExpand: null, opCNG: null, delayEstimate: null, passthroughCount: null, decryptSuccessCount: null, decryptFailureCount: null, decryptDuration: null, decryptAttempts: null, decryptMissingKeyCount: null, decryptInvalidNonceCount: null, audioReceiverDelayMs, audioReceiverPacketCount: prop };
+        const obj = { type: "audio", ssrc: audio.ssrc, sinkWant: obj2.formatSinkWantStat(id, audio.ssrc, false), sinkWantAsInt: obj3.formatSinkWantAsInt(id, audio.ssrc), codec: obj5, bytesReceived: null, packetsReceived: null, packetsLost: null, fractionLost: 100 * audio.fractionLost, fecPacketsReceived: null, fecPacketsDiscarded: null, audioLevel: audio.audioLevel / 32768, audioDetected: null, currentSampleRate: null, jitter: null, jitterBuffer: null, jitterBufferPreferred: null, decodingCNG: null, decodingMutedOutput: null, decodingNormal: null, decodingPLC: null, decodingPLCCNG: null, nackCount: null, accelerateRate: 100 * audio.accelerateRate, expandRate: 100 * audio.expandRate, preemptiveExpandRate: 100 * audio.preemptiveExpandRate, speechExpandRate: 100 * audio.speechExpandRate, secondaryDecodedRate: 100 * audio.secondaryDecodedRate, opSilence: null, opNormal: null, opMerge: null, opExpand: null, opAccelerate: null, opPreemptiveExpand: null, opCNG: null, delayEstimate: null, passthroughCount: null, decryptSuccessCount: null, decryptFailureCount: null, decryptDuration: null, decryptAttempts: null, decryptMissingKeyCount: null, decryptInvalidNonceCount: null, audioReceiverDelayMs, audioReceiverPacketCount: prop, voiceQuality: null, voiceQualityMos: mosMean };
         let tmp2 = id;
         const push = arr.push;
         obj2 = id(closure_1[0]);
@@ -568,6 +570,11 @@ export default function transformStats(mediaEngineConnectionId, str, id, arg3) {
         prop = undefined;
         if (playout != null) {
           prop = playout.audioReceiverPacketCount;
+        }
+        ({ voiceQuality: obj.voiceQuality, voiceQuality } = audio);
+        mosMean = undefined;
+        if (voiceQuality != null) {
+          mosMean = voiceQuality.mosMean;
         }
         if (null != playout) {
           const obj9 = { audioJitterBuffer: null, audioJitterBufferSamples: null, audioJitterDelay: null, audioJitterDelaySamples: null, audioJitterTarget: null, audioJitterTargetSamples: null, audioPlayoutUnderruns: null, relativeReceptionDelay: null, relativePlayoutDelay: null };
@@ -593,14 +600,14 @@ export default function transformStats(mediaEngineConnectionId, str, id, arg3) {
         });
       } else if (null != video) {
         let num7 = closure_2;
-        const tmp17 = transformInboundVideoStats(video, id, playout, playout);
-        const tmp19 = closure_3(video.rtpStats);
+        const tmp18 = transformInboundVideoStats(video, id, playout, playout);
+        const tmp20 = closure_3(video.rtpStats);
         if (closure_2 == null) {
           num7 = 0;
         }
-        closure_2 = num7 + tmp19;
+        closure_2 = num7 + tmp20;
         const arr2 = tmp[id];
-        arr2.push(tmp17);
+        arr2.push(tmp18);
       }
     });
   }
@@ -656,6 +663,7 @@ export default function transformStats(mediaEngineConnectionId, str, id, arg3) {
   }
   let tmp19 = null != bytesSent;
   if (!tmp19) {
+    let tmp20 = closure_3;
     let tmp21 = null != closure_3;
     if (tmp21) {
       const _Number2 = Number;

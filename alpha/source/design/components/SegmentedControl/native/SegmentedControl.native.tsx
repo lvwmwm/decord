@@ -1,10 +1,10 @@
-// Module ID: 9342
-// Function ID: 9343
+// Module ID: 9359
+// Function ID: 9360
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 5141, 575, 5719, 1652, 5757, 9343, 5426, 1705, 1377, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5732, 1652, 5771, 9360, 5428, 1705, 1377, 2]
 // Exports: SegmentedControl
 
-// Module 9342 (SegmentedControl)
+// Module 9359 (SegmentedControl)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,18 +1,18 @@
-// Module ID: 7269
-// Function ID: 7270
+// Module ID: 7285
+// Function ID: 7286
 // Name: JoinServer
-// Dependencies: [19, 17, 7270, 21, 5141, 575, 5747, 1113, 5730, 1499, 1493, 7207, 5754, 2]
+// Dependencies: [19, 17, 7286, 21, 5141, 575, 5761, 1113, 5743, 1499, 1493, 7222, 5768, 2]
 // Exports: default
 
-// Module 7269 (JoinServer)
+// Module 7285 (JoinServer)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7270 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7286 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const FreeFormInputGroupDefault = tmp2(7207);
+const FreeFormInputGroupDefault = tmp2(7222);
 class OrSeparator {
   constructor() {
     let intl;
@@ -41,7 +41,7 @@ class OrSeparator {
     items = [, , ];
     const obj2 = { style: tmp.innerSeparator };
     items[0] = metroImportAll(React3, obj2);
-    const obj3 = { style: tmp.orText, variant: "text-sm/semibold", color: "text-muted", children: intl.string(intl10.t.HEuagM) };
+    const obj3 = { style: tmp.orText, variant: "body-sm/semibold", color: "text-muted", children: intl.string(intl10.t.HEuagM) };
     const Text = Text_Text.Text;
     intl = intl10.intl;
     items[1] = metroImportAll(Text, obj3);
@@ -108,11 +108,11 @@ export default function JoinServer(arg0) {
   if (height > closure_6) {
     const obj4 = { children: items2 };
     const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1113).t.jlfuFW) };
-    const Text = tmp4(5747).Text;
+    const Text = tmp4(5761).Text;
     intl = tmp4(1113).intl;
     items2 = [closure_8(Text, obj5), ];
-    const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(navigation(1113).t.lVvN3A) };
-    const Text2 = tmp4(5747).Text;
+    const obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(navigation(1113).t.lVvN3A) };
+    const Text2 = tmp4(5761).Text;
     intl2 = tmp4(1113).intl;
     items2[1] = closure_8(Text2, obj6);
     tmp7Result = tmp7(closure_10, obj4);
@@ -124,15 +124,15 @@ export default function JoinServer(arg0) {
   intl3 = tmp4(1113).intl;
   intl4 = tmp4(1113).intl;
   items3[1] = closure_8(tmp2Result, obj8);
-  const obj9 = { style: tmp.exampleText, variant: "text-sm/medium", color: "text-muted", children: intl5.format(navigation(1113).t.vwWaTe, obj10) };
-  const Text3 = tmp4(5747).Text;
+  const obj9 = { style: tmp.exampleText, variant: "body-sm/medium", color: "text-muted", children: intl5.format(navigation(1113).t.vwWaTe, obj10) };
+  const Text3 = tmp4(5761).Text;
   intl5 = tmp4(1113).intl;
   obj10 = {
     example1: items[0],
     example2: items[1],
     example3: items[2],
     exampleHook(children, arg1) {
-      const obj = { variant: "text-sm/medium", color: "text-default", children };
+      const obj = { variant: "body-sm/medium", color: "text-default", children };
       return closure_1_8(navigation(dependencyMap[6]).Text, obj, arg1);
     }
   };
@@ -143,13 +143,13 @@ export default function JoinServer(arg0) {
   const obj12 = { style: tmp.growSpacing };
   items5[0] = closure_8(closure_4, obj12);
   const obj13 = { size: "lg", text: intl6.string(navigation(1113).t["+H/coT"]), accessibilityLabel: intl7.string(navigation(1113).t["+H/coT"]), loading: submitting, disabled: submitting, onPress: onDone };
-  const Button = tmp4(5754).Button;
+  const Button = tmp4(5768).Button;
   intl6 = tmp4(1113).intl;
   intl7 = tmp4(1113).intl;
   items5[1] = closure_8(Button, obj13);
   items5[2] = closure_8(OrSeparator, {});
   const obj14 = { size: "lg", variant: "secondary", text: intl8.string(navigation(1113).t["MOqX/G"]), accessibilityLabel: intl9.string(navigation(1113).t["MOqX/G"]), onPress: callback };
-  const Button2 = tmp4(5754).Button;
+  const Button2 = tmp4(5768).Button;
   intl8 = tmp4(1113).intl;
   intl9 = tmp4(1113).intl;
   items5[3] = closure_8(Button2, obj14);

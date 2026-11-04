@@ -1,13 +1,13 @@
-// Module ID: 13417
-// Function ID: 13418
+// Module ID: 13501
+// Function ID: 13502
 // Name: BanConfirm
-// Dependencies: [32, 19, 17, 5012, 1385, 21, 1113, 1089, 5141, 575, 5730, 11543, 504, 7022, 5837, 13418, 5747, 5195, 7184, 7187, 7373, 5754, 2]
+// Dependencies: [32, 19, 17, 5012, 1385, 21, 1113, 1089, 5141, 575, 5743, 11593, 504, 7037, 5851, 13502, 5761, 5195, 7199, 7202, 7389, 5768, 2]
 
-// Module 13417 (BanConfirm)
+// Module 13501 (BanConfirm)
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl7 from "intl" /* 1113 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 7022 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -127,7 +127,7 @@ const memoResult = react.memo(function BanConfirm(arg0) {
   let tmp4Result5;
   let tmp4Result6;
   let v8jV9fx;
-  const f104310 = () => ({ banning: false, banError: false });
+  const f105046 = () => ({ banning: false, banError: false });
   ({ guildId: require, userId: importDefault, onBan } = arg0);
   let stateFromStores1;
   c7 = undefined;
@@ -146,10 +146,10 @@ const memoResult = react.memo(function BanConfirm(arg0) {
   stateFromStores1 = obj3.useStateFromStores(items2, () => UserStore.getUser(importDefault));
   ref = stateFromStores1.useRef(0);
   const ref2 = stateFromStores1.useRef("");
-  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f104310), 2);
+  [tmp11, c7] = stateFromStores(stateFromStores1.useState(f105046), 2);
   const items3 = [stateFromStores, stateFromStores1, onBan];
   let tmp14Result2 = null;
-  const tmp10 = stateFromStores(stateFromStores1.useState(f104310), 2);
+  const tmp10 = stateFromStores(stateFromStores1.useState(f105046), 2);
   if (null != stateFromStores1) {
     tmp14Result2 = null;
     if (null != stateFromStores) {
@@ -159,7 +159,7 @@ const memoResult = react.memo(function BanConfirm(arg0) {
       const obj7 = { style: tmp.iconStyles, source: require("AssetRegistry"), resizeMode: "contain" };
       const tmp4Result = require("FastImage");
       items4 = [closure_9(tmp4Result, obj7), , ];
-      const obj8 = { style: tmp.redText, variant: "text-md/semibold", children: format(Qd6w7T, obj9) };
+      const obj8 = { style: tmp.redText, variant: "body-md/semibold", children: format(Qd6w7T, obj9) };
       const Text = tmp7(tmp5[16]).Text;
       const intl = tmp7(tmp5[6]).intl;
       format = intl.format;
@@ -167,10 +167,10 @@ const memoResult = react.memo(function BanConfirm(arg0) {
       Qd6w7T = tmp7(tmp5[6]).t.Qd6w7T;
       tmp4Result4 = require("UserUtils");
       items4[1] = closure_9(Text, obj8);
-      const obj10 = { variant: "text-lg/semibold", color: "text-feedback-warning", children: stateFromStores.name };
+      const obj10 = { variant: "body-lg/semibold", color: "text-feedback-warning", children: stateFromStores.name };
       items4[2] = closure_9(require("Text/Text").Text, obj10);
       const items5 = [closure_10(ref, obj6), , , , , ];
-      const obj11 = { style: tmp.blurb, variant: "heading-md/medium", color: "text-feedback-warning", children: format2(v8jV9fx, obj12) };
+      const obj11 = { style: tmp.blurb, variant: "heading-sm/medium", color: "text-feedback-warning", children: format2(v8jV9fx, obj12) };
       const Text2 = tmp7(tmp5[16]).Text;
       const intl2 = tmp7(tmp5[6]).intl;
       format2 = intl2.format;
@@ -218,7 +218,7 @@ const memoResult = react.memo(function BanConfirm(arg0) {
       tmp16 = closure_10;
       tmp17 = closure_11;
       if (tmp11.banError) {
-        const obj19 = { style: tmp.errorText, variant: "text-md/semibold", color: "input-text-error-default", children: format3(prop, obj20) };
+        const obj19 = { style: tmp.errorText, variant: "body-md/semibold", color: "input-text-error-default", children: format3(prop, obj20) };
         const Text3 = tmp7(tmp5[16]).Text;
         const intl6 = tmp7(tmp5[6]).intl;
         format3 = intl6.format;

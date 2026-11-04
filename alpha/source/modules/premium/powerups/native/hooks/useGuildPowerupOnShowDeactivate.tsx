@@ -1,18 +1,18 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14330
+// Function ID: 14331
 // Name: useGuildPowerupOnShowDeactivate
-// Dependencies: [19, 21, 14245, 2123, 6080, 2]
+// Dependencies: [19, 21, 14331, 2123, 6095, 2]
 // Exports: default
 
-// Module 14244 (useGuildPowerupOnShowDeactivate)
+// Module 14330 (useGuildPowerupOnShowDeactivate)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import useAlertStore from "useAlertStore" /* 6080 */;
+import useAlertStore from "useAlertStore" /* 6095 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let closure_4 = react.lazy(() => asyncRequire(14245, dependencyMap.paths));
+let closure_4 = react.lazy(() => asyncRequire(14331, dependencyMap.paths));
 const result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnShowDeactivate.tsx");
 
 export default function useGuildPowerupOnShowDeactivate(guildId, powerup) {

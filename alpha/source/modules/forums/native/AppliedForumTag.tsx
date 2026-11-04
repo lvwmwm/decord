@@ -1,19 +1,19 @@
-// Module ID: 10652
-// Function ID: 10653
+// Module ID: 10700
+// Function ID: 10701
 // Name: AppliedForumTag
-// Dependencies: [19, 17, 6916, 1388, 21, 5141, 575, 504, 10653, 1113, 7420, 1411, 5747, 2]
+// Dependencies: [19, 17, 6931, 1388, 21, 5141, 575, 504, 10701, 1113, 7436, 1411, 5761, 2]
 // Exports: AppliedForumTagPill
 
-// Module 10652 (AppliedForumTag)
+// Module 10700 (AppliedForumTag)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import EmojiDefault from "Emoji" /* 7420 */;
-import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10653 */;
+import EmojiDefault from "Emoji" /* 7436 */;
+import ForumTagContextMenuDefault from "ForumTagContextMenu" /* 10701 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp5;
-const Text_Text = tmp5(5747);
+const Text_Text = tmp5(5761);
 class AppliedForumTag {
   constructor(hasUnreads) {
     let c2;
@@ -97,7 +97,7 @@ class AppliedForumTag {
           tmp11Result = tmp11(tmp13, obj4);
         }
         items1 = [tmp11Result, ];
-        const obj10 = { lineClamp: 1, style: container.tagName, variant: "text-xs/semibold", color: str, children: tmp7 };
+        const obj10 = { lineClamp: 1, style: container.tagName, variant: "body-xs/semibold", color: str, children: tmp7 };
         items1[1] = metroRequire(Text_Text.Text, obj10);
         return tmp2(tmp3, obj);
       }

@@ -1,10 +1,10 @@
-// Module ID: 10678
-// Function ID: 10679
+// Module ID: 10726
+// Function ID: 10727
 // Name: Caption
 // Dependencies: [17, 1072, 21, 5141, 575, 5138, 1187, 2]
 // Exports: Caption
 
-// Module 10678 (Caption)
+// Module 10726 (Caption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

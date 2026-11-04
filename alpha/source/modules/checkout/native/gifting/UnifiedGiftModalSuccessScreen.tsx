@@ -1,15 +1,15 @@
-// Module ID: 14566
-// Function ID: 14567
+// Module ID: 14646
+// Function ID: 14647
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 1072, 21, 5141, 575, 14567, 10740, 6864, 14578, 2123, 7687, 6150, 5837, 5747, 1113, 5755, 2]
+// Dependencies: [19, 1072, 21, 5141, 575, 14647, 10788, 6879, 14658, 2123, 7703, 6165, 5851, 5761, 1113, 5769, 2]
 // Exports: default
 
-// Module 14566 (UnifiedGiftModalSuccessScreen)
+// Module 14646 (UnifiedGiftModalSuccessScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -50,7 +50,7 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     if (tmp2) {
       const obj2 = { giftBadgeProgress };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(14578, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
+      obj.pushLazy(asyncRequire(14658, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
     }
   }, items);
   const items1 = [onClose];
@@ -69,11 +69,11 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
   const Text = tmp2(tmp3[13]).Text;
   intl = tmp2(tmp3[14]).intl;
   items2[1] = closure_5(Text, obj3);
-  const obj4 = { variant: "text-md/medium", style: tmp.description, children: intl2.format(tmp2(enabled[14]).t.YS2J4S, { onClick: callback1 }) };
+  const obj4 = { variant: "body-md/medium", style: tmp.description, children: intl2.format(tmp2(enabled[14]).t.YS2J4S, { onClick: callback1 }) };
   const Text2 = tmp2(tmp3[13]).Text;
   intl2 = tmp2(tmp3[14]).intl;
   items2[2] = closure_5(Text2, obj4);
-  const obj5 = { onPress: callback, text: null, textVariant: "text-md/semibold", grow: true };
+  const obj5 = { onPress: callback, text: null, textVariant: "body-md/semibold", grow: true };
   const BaseTextButton = tmp2(tmp3[15]).BaseTextButton;
   const intl3 = tmp2(tmp3[14]).intl;
   const tmp7 = closure_6;

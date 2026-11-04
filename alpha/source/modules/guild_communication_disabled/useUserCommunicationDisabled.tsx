@@ -1,10 +1,10 @@
-// Module ID: 8558
-// Function ID: 8559
+// Module ID: 8575
+// Function ID: 8576
 // Name: useUserCommunicationDisabled
 // Dependencies: [5053, 1385, 504, 5060, 2]
 // Exports: default, useCurrentUserCommunicationDisabled, userCommunicationDisabled
 
-// Module 8558 (useUserCommunicationDisabled)
+// Module 8575 (useUserCommunicationDisabled)
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5060 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import UserStore from "UserStore" /* 1385 */;

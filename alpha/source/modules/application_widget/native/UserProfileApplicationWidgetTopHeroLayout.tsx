@@ -1,20 +1,20 @@
-// Module ID: 12396
-// Function ID: 12397
+// Module ID: 12461
+// Function ID: 12462
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 1072, 7497, 21, 5141, 575, 12397, 8938, 12483, 12484, 7164, 5710, 5837, 2]
+// Dependencies: [32, 19, 17, 1072, 7513, 21, 5141, 575, 12462, 8955, 12548, 12549, 7179, 5723, 5851, 2]
 // Exports: default
 
-// Module 12396 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 12461 (UserProfileApplicationWidgetTopHeroLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import _modDef7164 from "module_7164" /* 7164 */;
-import Constants2 from "Constants" /* 7497 */;
-import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8938 */;
-import _mod12397 from "module_12397" /* 12397 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12483 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import _modDef7179 from "module_7179" /* 7179 */;
+import Constants2 from "Constants" /* 7513 */;
+import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8955 */;
+import _mod12462 from "module_12462" /* 12462 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -63,20 +63,20 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   const tmp = closure_10();
   [tmp3, c0] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
-  const obj = _mod12397;
+  const obj = _mod12462;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  const obj2 = _mod12397;
+  const obj2 = _mod12462;
   const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  const obj3 = _mod12397;
+  const obj3 = _mod12462;
   const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
   const hero_image = topConfig.components.hero_image;
   let image;
-  const obj4 = _mod12397;
+  const obj4 = _mod12462;
   const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (hero_image != null) {
     image = hero_image.fields.image;
   }
-  const items = [_mod12397.ResolvedValueType.MEDIA];
+  const items = [_mod12462.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   const obj5 = { style: tmp.root, children: items1 };
   items1 = [header, , ];
@@ -84,13 +84,13 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   const obj7 = { style: tmp.heroText, children: items2 };
   const tmp4Result = UserProfileSharedStyles;
   const userProfileCardRadius = tmp4Result.useUserProfileCardRadius();
-  items2 = [metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues, variant: "text-lg/medium", color: "text-default" }), metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues1, variant: "text-sm/normal", color: "text-muted" }), metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues2, variant: "text-sm/normal", color: "text-muted" }), metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues3, variant: "text-sm/normal", color: "text-muted" })];
+  items2 = [metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues, variant: "body-lg/medium", color: "text-default" }), metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues1, variant: "body-sm/normal", color: "text-muted" }), metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues2, variant: "body-sm/normal", color: "text-muted" }), metroImportDefault(UserProfileApplicationWidgetFieldUtils.FieldText, { field: textComponentValues3, variant: "body-sm/normal", color: "text-muted" })];
   items3 = [metroImportAll(View, obj7), ];
   const obj8 = { style: tmp.heroImageColumn, children: tmp15Result };
   tmp15Result = null == fieldValue || null == tmp3;
   if (tmp15Result) {
     const obj9 = { style: tmp.heroImageSkeleton };
-    tmp15Result = tmp15(tmp4(12484).ImageSkeleton, obj9);
+    tmp15Result = tmp15(tmp4(12549).ImageSkeleton, obj9);
   }
   items3[1] = metroImportDefault(View, obj8);
   items1[1] = metroImportAll(View, obj6);
@@ -118,7 +118,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
       const obj14 = { start: null, end: null, colors, style: tmp.heroImageFadeGradient };
       ({ START: obj16.start, END: obj16.end } = HorizontalGradient);
       items5 = [, ];
-      const tmp21 = _modDef7164;
+      const tmp21 = _modDef7179;
       items5[0] = metroImportDefault(LinearGradientDefault, obj14);
       const obj15 = { style: tmp.heroImageMaskRemainder };
       items5[1] = metroImportDefault(View, obj15);

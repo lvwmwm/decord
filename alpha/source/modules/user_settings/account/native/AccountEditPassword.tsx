@@ -1,12 +1,12 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16886
+// Function ID: 16887
 // Name: AccountEditPassword
-// Dependencies: [19, 17, 21, 5141, 575, 16795, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 16887, 2]
 
-// Module 16794 (AccountEditPassword)
+// Module 16886 (AccountEditPassword)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 16795 */;
+import UserSettingsAccountEditPasswordDefault from "UserSettingsAccountEditPassword" /* 16887 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles_mod from "createStyles" /* 5141 */;

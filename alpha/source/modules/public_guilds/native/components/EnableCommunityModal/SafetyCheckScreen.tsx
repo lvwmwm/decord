@@ -1,15 +1,15 @@
-// Module ID: 19987
-// Function ID: 19988
+// Module ID: 20103
+// Function ID: 20104
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 9203, 1072, 21, 5719, 575, 19988, 504, 19989, 19986, 5747, 1113, 5837, 6147, 7186, 19998, 7489, 9202, 2]
+// Dependencies: [32, 19, 17, 9220, 1072, 21, 5732, 575, 20104, 504, 20105, 20102, 5761, 1113, 5851, 6162, 7201, 20114, 7505, 9219, 2]
 // Exports: default
 
-// Module 19987 (SafetyCheckScreen)
+// Module 20103 (SafetyCheckScreen)
 import react_native from "react-native" /* 17 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9203 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9220 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -84,7 +84,7 @@ export default function SafetyCheckScreen() {
     const EnableCommunityModalScreen = tmp3(tmp4[11]).EnableCommunityModalScreen;
     const obj5 = { style: enableCommunitySharedStyles.content, children: items1 };
     tmp22 = guild.explicitContentFilter !== constants2.ALL_MEMBERS || guild.verificationLevel === constants.NONE;
-    const obj6 = { ref, accessibilityRole: "header", variant: "text-md/semibold", color: "text-subtle", children: intl.formatToPlainString(guild(first1[13]).t.tInpJj, { number: 1, total: 3 }) };
+    const obj6 = { ref, accessibilityRole: "header", variant: "body-md/semibold", color: "text-subtle", children: intl.formatToPlainString(guild(first1[13]).t.tInpJj, { number: 1, total: 3 }) };
     const Text = tmp3(tmp4[12]).Text;
     intl = tmp3(tmp4[13]).intl;
     items1 = [closure_9(Text, obj6), , , ];
@@ -94,7 +94,7 @@ export default function SafetyCheckScreen() {
     const Heading = tmp3(tmp4[12]).Heading;
     intl2 = tmp3(tmp4[13]).intl;
     items1[2] = closure_9(Heading, obj8);
-    const obj9 = { style: enableCommunitySharedStyles.description, variant: "text-md/medium", color: "text-subtle", children: intl3.string(guild(first1[13]).t.i1STwu) };
+    const obj9 = { style: enableCommunitySharedStyles.description, variant: "body-md/medium", color: "text-subtle", children: intl3.string(guild(first1[13]).t.i1STwu) };
     const Text2 = tmp3(tmp4[12]).Text;
     intl3 = tmp3(tmp4[13]).intl;
     items1[3] = closure_9(Text2, obj9);

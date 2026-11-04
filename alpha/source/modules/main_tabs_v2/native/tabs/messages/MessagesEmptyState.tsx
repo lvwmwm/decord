@@ -1,17 +1,17 @@
-// Module ID: 18254
-// Function ID: 18255
+// Module ID: 18351
+// Function ID: 18352
 // Name: MessagesEmptyState
-// Dependencies: [19, 17, 21, 5141, 1499, 6148, 1260, 8897, 17220, 18255, 5747, 1113, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 1499, 6163, 1260, 8914, 17312, 18352, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 18254 (MessagesEmptyState)
+// Module 18351 (MessagesEmptyState)
 import intl4 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6148 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8897 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17220 */;
-import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 18255 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6163 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8914 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17312 */;
+import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 18352 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -67,19 +67,19 @@ export default function MessagesEmptyState() {
   const obj8 = { style: tmp.imageContainer, children: metroRequire(ActivitiesTogetherSpotIllustration.ActivitiesTogetherSpotIllustration, { width: 230, accessible: false }) };
   items2[0] = metroRequire(React3, obj8);
   const obj9 = { style: tmp.textWrapper, children: items3 };
-  const obj10 = { color: "mobile-text-heading-primary", variant: "heading-md/semibold", style: tmp.title, children: intl.string(intl4.t["8JZof8"]) };
-  const Heading = tmp2(5747).Heading;
+  const obj10 = { color: "mobile-text-heading-primary", variant: "heading-sm/semibold", style: tmp.title, children: intl.string(intl4.t["8JZof8"]) };
+  const Heading = tmp2(5761).Heading;
   intl = tmp2(1113).intl;
   items3 = [metroRequire(Heading, obj10), ];
-  const obj11 = { color: "text-default", variant: "text-md/medium", style: tmp.body, children: intl2.string(intl4.t["qm+H7x"]) };
-  const Text = tmp2(5747).Text;
+  const obj11 = { color: "text-default", variant: "body-md/medium", style: tmp.body, children: intl2.string(intl4.t["qm+H7x"]) };
+  const Text = tmp2(5761).Text;
   intl2 = tmp2(1113).intl;
   items3[1] = metroRequire(Text, obj11);
   items2[1] = metroImportDefault(React3, obj9);
   items4 = [metroImportDefault(React3, obj7), ];
   const obj12 = { style: tmp.buttonWrapper, children: metroRequire(Button, obj13) };
   obj13 = { text: intl3.string(intl4.t.zIJnA6), onPress: callback, size: "lg" };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   intl3 = tmp2(1113).intl;
   items4[1] = metroRequire(React3, obj12);
   return metroRequire(tmp12, obj5);

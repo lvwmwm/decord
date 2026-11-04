@@ -1,15 +1,15 @@
-// Module ID: 7540
-// Function ID: 7541
+// Module ID: 7556
+// Function ID: 7557
 // Name: OrbCheckoutUtils
-// Dependencies: [1072, 1074, 7541, 1113, 7542, 4961, 2]
+// Dependencies: [1072, 1074, 7557, 1113, 7558, 4961, 2]
 // Exports: getOrbCheckoutDisclaimerMessage, getOrbPriceFromPrices, resolveOrbCheckoutErrorMessage
 
-// Module 7540 (OrbCheckoutUtils)
+// Module 7556 (OrbCheckoutUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl10 from "intl" /* 1113 */;
 import BillingError from "BillingError" /* 4961 */;
-import OrderConstants from "OrderConstants" /* 7541 */;
-import OrderActionCreators from "OrderActionCreators" /* 7542 */;
+import OrderConstants from "OrderConstants" /* 7557 */;
+import OrderActionCreators from "OrderActionCreators" /* 7558 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ const EXTERNAL_PRODUCT_SKU_IDS = CollectiblesShopConstants.EXTERNAL_PRODUCT_SKU_
 const ConstraintReasonCode = OrderConstants.ConstraintReasonCode;
 const result = size.fileFinishedImporting("modules/virtual_currency/checkout/OrbCheckoutUtils.tsx");
 
-export function getOrbPriceFromPrices(prices, memo1) {
-  const tmp = memo1;
+export function getOrbPriceFromPrices(prices, isPremiumResult) {
+  const tmp = isPremiumResult;
   if (tmp) {
     let tmp3;
     if (null != prices[React3.PREMIUM_TIER_2]) {
@@ -67,20 +67,20 @@ export function getOrbCheckoutDisclaimerMessage(skuId) {
   const items = [formatResult, " ", stringResult];
   return items;
 }
-export function resolveOrbCheckoutErrorMessage(code, arg1) {
+export function resolveOrbCheckoutErrorMessage(orbRedemptionError, result) {
   let tmp = null;
-  if (null != code) {
+  if (null != orbRedemptionError) {
     let stringResult1;
-    if (code instanceof OrderActionCreators.OrderSigningFailedWithConstraintsError) {
-      if (null != arg1) {
+    if (orbRedemptionError instanceof OrderActionCreators.OrderSigningFailedWithConstraintsError) {
+      if (null != result) {
         let stringResult;
-        if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === arg1) {
+        if (ConstraintReasonCode.INSUFFICIENT_ORB_BALANCE === result) {
           const intl9 = tmp2(1113).intl;
           stringResult = intl9.string(tmp2(1113).t.keFvXM);
-        } else if (ConstraintReasonCode.SKU_ALREADY_OWNED === arg1) {
+        } else if (ConstraintReasonCode.SKU_ALREADY_OWNED === result) {
           const intl8 = tmp2(1113).intl;
           stringResult = intl8.string(tmp2(1113).t.m371Mx);
-        } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED === arg1) {
+        } else if (ConstraintReasonCode.BUNDLE_PARTIALLY_OWNED === result) {
           const intl7 = tmp2(1113).intl;
           stringResult = intl7.string(tmp2(1113).t.v9oC0p);
         } else {
@@ -91,16 +91,16 @@ export function resolveOrbCheckoutErrorMessage(code, arg1) {
       }
       tmp = stringResult1;
     }
-    if (code instanceof OrderActionCreators.OrderProcessingPendingError) {
+    if (orbRedemptionError instanceof OrderActionCreators.OrderProcessingPendingError) {
       const intl5 = tmp2(1113).intl;
       stringResult1 = intl5.string(tmp2(1113).t["2BmwgV"]);
-    } else if (code.code === BillingError.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
+    } else if (orbRedemptionError.code === BillingError.ErrorCodes.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE) {
       const intl4 = tmp2(1113).intl;
       stringResult1 = intl4.string(tmp2(1113).t.keFvXM);
-    } else if (code.code === BillingError.ErrorCodes.ALREADY_PURCHASED) {
+    } else if (orbRedemptionError.code === BillingError.ErrorCodes.ALREADY_PURCHASED) {
       const intl3 = tmp2(1113).intl;
       stringResult1 = intl3.string(tmp2(1113).t.m371Mx);
-    } else if (code.code === BillingError.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
+    } else if (orbRedemptionError.code === BillingError.ErrorCodes.BILLING_ORDER_NOT_SIGNABLE) {
       const intl2 = tmp2(1113).intl;
       stringResult1 = intl2.string(tmp2(1113).t.ZHgEG7);
     } else {

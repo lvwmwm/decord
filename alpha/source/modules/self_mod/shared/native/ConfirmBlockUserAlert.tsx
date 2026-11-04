@@ -1,17 +1,17 @@
-// Module ID: 11431
-// Function ID: 11432
+// Module ID: 11481
+// Function ID: 11482
 // Name: ConfirmBlockUserAlert
-// Dependencies: [19, 17, 1385, 11393, 21, 5141, 575, 504, 11432, 5195, 7612, 7620, 8476, 6150, 5754, 1113, 5747, 2]
+// Dependencies: [19, 17, 1385, 11443, 21, 5141, 575, 504, 11482, 5195, 7628, 7636, 8492, 6165, 5768, 1113, 5761, 2]
 // Exports: default
 
-// Module 11431 (ConfirmBlockUserAlert)
+// Module 11481 (ConfirmBlockUserAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7612 */;
-import ReportModals from "ReportModals" /* 8476 */;
-import Constants from "Constants" /* 11393 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7628 */;
+import ReportModals from "ReportModals" /* 8492 */;
+import Constants from "Constants" /* 11443 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -104,7 +104,7 @@ export default function ConfirmBlockUserAlert(userId) {
   const Text = userId(onCancel[16]).Text;
   intl = userId(onCancel[15]).intl;
   items5 = [callback(Text, obj5), , ];
-  const obj6 = { style: tmp.text, variant: "text-md/medium", children: description };
+  const obj6 = { style: tmp.text, variant: "body-md/medium", children: description };
   const Text2 = userId(onCancel[16]).Text;
   if (description == null) {
     const intl2 = tmp2(tmp3[15]).intl;

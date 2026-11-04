@@ -1,13 +1,13 @@
-// Module ID: 12525
-// Function ID: 12526
+// Module ID: 12606
+// Function ID: 12607
 // Name: BannerBase
-// Dependencies: [32, 19, 17, 5142, 21, 575, 5141, 12514, 1652, 1493, 5138, 504, 5757, 5710, 5741, 12526, 5747, 2]
+// Dependencies: [32, 19, 17, 5142, 21, 575, 5141, 12595, 1652, 1493, 5138, 504, 5771, 5723, 5755, 12607, 5761, 2]
 // Exports: default
 
-// Module 12525 (BannerBase)
+// Module 12606 (BannerBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ApplicationsImage from "ApplicationsImage" /* 12514 */;
+import ApplicationsImage from "ApplicationsImage" /* 12595 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -127,22 +127,22 @@ export default function BannerBase(image) {
   items4[2] = animatedStyle;
   const obj6 = { start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, colors: items, style: items5 };
   items5 = [tmp.bannerBackgroundGradient, { height: tmp3, width: diff }];
-  items6 = [closure_7(sharedValue(5710), obj6), , ];
+  items6 = [closure_7(sharedValue(5723), obj6), , ];
   let tmp17Result = null != image;
   if (tmp17Result) {
     const obj7 = { style: tmp.imageContainer, children: items7 };
-    const obj8 = { style: tmp.trinketsLottie, source: require("module_12526"), autoPlay: !stateFromStores };
-    const tmp7Result = sharedValue(5741);
+    const obj8 = { style: tmp.trinketsLottie, source: require("module_12607"), autoPlay: !stateFromStores };
+    const tmp7Result = sharedValue(5755);
     items7 = [closure_7(tmp7Result, obj8), image];
     tmp17Result = tmp17(View, obj7);
   }
   items6[1] = tmp17Result;
   const items8 = [tmp.bannerTextContainer, ];
   items8[1] = null != image ? tmp.bannerTextContainerWithImage : tmp.bannerTextContainerWithoutImage;
-  const obj9 = { style: items8, children: closure_7(Text, { variant: "text-md/semibold", color: "text-overlay-light", style: items9, children: text }) };
+  const obj9 = { style: items8, children: closure_7(Text, { variant: "body-md/semibold", color: "text-overlay-light", style: items9, children: text }) };
   items9 = [tmp.bannerText, ];
   let bannerTextCentered = null == image;
-  Text = tmp4(5747).Text;
+  Text = tmp4(5761).Text;
   const tmp22 = View;
   if (bannerTextCentered) {
     bannerTextCentered = tmp.bannerTextCentered;

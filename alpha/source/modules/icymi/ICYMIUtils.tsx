@@ -1,24 +1,24 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9064
+// Function ID: 9065
 // Name: ICYMIUtils
-// Dependencies: [5, 6975, 4994, 4990, 5012, 9044, 1072, 9043, 9048, 9052, 6183, 9053, 8838, 9054, 1113, 2]
+// Dependencies: [5, 6990, 4994, 4990, 5012, 9061, 1072, 9060, 9065, 9069, 6198, 9070, 8855, 9071, 1113, 2]
 // Exports: compareGravityUnreadIds, contentTypeToText, createGravityMessageFromServer, customScoreToNumber, customStatusToContentInventoryEntry, determineContentType, hydrateItems, isChannelCustomScoreEligible, isGuildItem, isItemNSFW, itemToType, numberToCustomScore
 
-// Module 9047 (ICYMIUtils)
+// Module 9064 (ICYMIUtils)
 import intl11 from "intl" /* 1113 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6183 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8838 */;
-import ICYMITypes from "ICYMITypes" /* 9043 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9048 */;
-import generateHydrationId from "generateHydrationId" /* 9052 */;
-import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 9053 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9054 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8855 */;
+import ICYMITypes from "ICYMITypes" /* 9060 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
+import generateHydrationId from "generateHydrationId" /* 9069 */;
+import ContentInventoryAuthorType from "ContentInventoryAuthorType" /* 9070 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6975 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6990 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 9044 */;
+import ICYMIUnreadStateStore from "ICYMIUnreadStateStore" /* 9061 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -391,11 +391,11 @@ export function determineContentType(channel, message) {
       let IMAGE;
       obj = ForumPostMediaUtils;
       if (obj.isValidImageAttachment(message.attachments[0])) {
-        IMAGE = tmp6(9043).ContentType.IMAGE;
+        IMAGE = tmp6(9060).ContentType.IMAGE;
       } else {
         const tmp6Result = ForumPostMediaUtils;
         const result = tmp6Result.isValidVideoAttachment(message.attachments[0]);
-        const ContentType = tmp6(9043).ContentType;
+        const ContentType = tmp6(9060).ContentType;
         IMAGE = result ? ContentType.VIDEO : ContentType.FILE;
       }
       INTERESTING = IMAGE;

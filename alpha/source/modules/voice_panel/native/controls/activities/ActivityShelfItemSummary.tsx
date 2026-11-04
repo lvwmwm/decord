@@ -1,18 +1,18 @@
-// Module ID: 19423
-// Function ID: 19424
+// Module ID: 19527
+// Function ID: 19528
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 5141, 575, 5138, 19424, 11739, 1187, 5765, 5747, 1652, 5767, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5138, 19528, 11794, 1187, 5779, 5761, 1652, 5781, 2]
 // Exports: default
 
-// Module 19423 (ActivityShelfItemSummary)
+// Module 19527 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ButtonPill from "ButtonPill" /* 5765 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 11739 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19424 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ButtonPill from "ButtonPill" /* 5779 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 11794 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19528 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,7 +26,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const ButtonEllipsis = tmp2(5767);
+const ButtonEllipsis = tmp2(5781);
 function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
@@ -64,7 +64,7 @@ export default function ActivityShelfItemSummary(submitting) {
   items = [, ];
   const obj = ButtonPill;
   const obj2 = { style: tmp.ongoingActivityContainer, children: items2 };
-  const obj4 = { variant: "text-md/semibold", style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, lineClamp: 2, children: applicationName };
+  const obj4 = { variant: "body-md/semibold", style: flag ? tmp.loadingTextColor : tmp.overlayActivityNameText, lineClamp: 2, children: applicationName };
   const tmp5 = _slicedToArray(obj.useLoadingStyles(flag, "md"), 2)[1];
   items[0] = hasOwnProperty(Text_Text.Text, obj4);
   const obj5 = { style: items1, children: tmp8Result };

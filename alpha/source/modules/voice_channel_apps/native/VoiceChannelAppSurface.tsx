@@ -1,13 +1,13 @@
-// Module ID: 19440
-// Function ID: 19441
+// Module ID: 19544
+// Function ID: 19545
 // Name: VoiceChannelAppSurface
-// Dependencies: [19, 21, 1627, 12376, 5795, 18830, 16509, 12377, 12386, 12390, 18836, 1113, 4093, 2]
+// Dependencies: [19, 21, 1627, 12441, 5809, 18932, 16601, 12442, 18935, 12451, 12455, 18939, 1113, 4093, 2]
 // Exports: default
 
-// Module 19440 (VoiceChannelAppSurface)
+// Module 19544 (VoiceChannelAppSurface)
 import Fragment from "Fragment" /* 21 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5795 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12376 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5809 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12441 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -43,26 +43,28 @@ export default function VoiceChannelAppSurface(guildId) {
   tmp7(tmp9);
   const state = tmp5.state;
   if (channelId(left[5]).FrameLifecycleState.Launched === state) {
+    ({ frameId: tmp5.frame.id, level: channelId(left[10]).FrameStackLevel.WithinCallContent, presentation: memo });
     guildId(left[8]);
-    return <tmpResult frameId={tmp5.frame.id} level={channelId(left[9]).FrameStackLevel.WithinCallContent} presentation={memo} />;
+    guildId(left[9]);
+    return <tmpResult frameId={tmp5.frame.id}>{null}</tmpResult>;
   } else if (channelId(left[5]).FrameLifecycleState.RenderingElsewhere === state) {
-    const FrameSurfaceExplanation4 = tmp8(tmp2[10]).FrameSurfaceExplanation;
-    const intl5 = tmp8(tmp2[11]).intl;
-    return <FrameSurfaceExplanation4 description={intl5.string(channelId(left[11]).t["2KIDX+"])} />;
+    const FrameSurfaceExplanation4 = tmp8(tmp2[11]).FrameSurfaceExplanation;
+    const intl5 = tmp8(tmp2[12]).intl;
+    return <FrameSurfaceExplanation4 description={intl5.string(channelId(left[12]).t["2KIDX+"])} />;
   } else if (channelId(left[5]).FrameLifecycleState.NoApplication === state) {
-    const FrameSurfaceExplanation3 = tmp8(tmp2[10]).FrameSurfaceExplanation;
-    const intl4 = tmp8(tmp2[11]).intl;
-    return <FrameSurfaceExplanation3 description={intl4.string(guildId(left[12]).TQptZV)} />;
+    const FrameSurfaceExplanation3 = tmp8(tmp2[11]).FrameSurfaceExplanation;
+    const intl4 = tmp8(tmp2[12]).intl;
+    return <FrameSurfaceExplanation3 description={intl4.string(guildId(left[13]).TQptZV)} />;
   } else if (channelId(left[5]).FrameLifecycleState.DoesNotSupportSurface === state) {
-    const FrameSurfaceExplanation2 = tmp8(tmp2[10]).FrameSurfaceExplanation;
-    const intl3 = tmp8(tmp2[11]).intl;
-    return <FrameSurfaceExplanation2 description={intl3.string(guildId(left[12])["13FYwI"])} />;
+    const FrameSurfaceExplanation2 = tmp8(tmp2[11]).FrameSurfaceExplanation;
+    const intl3 = tmp8(tmp2[12]).intl;
+    return <FrameSurfaceExplanation2 description={intl3.string(guildId(left[13])["13FYwI"])} />;
   } else if (channelId(left[5]).FrameLifecycleState.Error === state) {
-    const FrameSurfaceExplanation = tmp8(tmp2[10]).FrameSurfaceExplanation;
-    const intl = tmp8(tmp2[11]).intl;
-    const intl2 = tmp8(tmp2[11]).intl;
-    return <FrameSurfaceExplanation heading={intl.string(channelId(left[11]).t.VquUff)} error={intl2.string(channelId(left[11]).t["Sd9D/R"])} />;
+    const FrameSurfaceExplanation = tmp8(tmp2[11]).FrameSurfaceExplanation;
+    const intl = tmp8(tmp2[12]).intl;
+    const intl2 = tmp8(tmp2[12]).intl;
+    return <FrameSurfaceExplanation heading={intl.string(channelId(left[12]).t.VquUff)} error={intl2.string(channelId(left[12]).t["Sd9D/R"])} />;
   } else {
-    return jsx(channelId(left[10]).FrameSurfaceLoading, {});
+    return jsx(channelId(left[11]).FrameSurfaceLoading, {});
   }
 };

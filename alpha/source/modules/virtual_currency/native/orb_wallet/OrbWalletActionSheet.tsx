@@ -1,9 +1,9 @@
-// Module ID: 17045
-// Function ID: 17046
+// Module ID: 17137
+// Function ID: 17138
 // Name: OrbWalletActionSheet
-// Dependencies: [19, 17, 1385, 15771, 17044, 1072, 1387, 21, 5141, 575, 17046, 7446, 17047, 504, 7471, 1113, 2301, 5747, 15773, 17048, 17049, 11555, 1252, 17057, 15772, 9685, 5381, 5207, 17060, 5395, 2]
+// Dependencies: [19, 17, 1385, 15859, 17136, 1072, 1387, 21, 5141, 575, 17138, 7462, 17139, 504, 7487, 1113, 2301, 5761, 15861, 17140, 17141, 11605, 1252, 17149, 15860, 9704, 5382, 5207, 17152, 5396, 2]
 
-// Module 17045 (OrbWalletActionSheet)
+// Module 17137 (OrbWalletActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -11,12 +11,12 @@ import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _modDef2301 from "module_2301" /* 2301 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import OrbChallengesStore2 from "OrbChallengesStore" /* 15771 */;
-import OrbChallengeActionCreators from "OrbChallengeActionCreators" /* 15773 */;
-import OrbWalletConstants from "OrbWalletConstants" /* 17044 */;
-import OrbWalletCards from "OrbWalletCards" /* 17057 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import OrbChallengesStore2 from "OrbChallengesStore" /* 15859 */;
+import OrbChallengeActionCreators from "OrbChallengeActionCreators" /* 15861 */;
+import OrbWalletConstants from "OrbWalletConstants" /* 17136 */;
+import OrbWalletCards from "OrbWalletCards" /* 17149 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -74,7 +74,7 @@ function StatefulOrbChallengesCard(reopenWallet) {
         const obj2 = {
           underlineHook(children) {
                 const obj = {
-                  variant: "text-sm/normal",
+                  variant: "body-sm/normal",
                   color: "text-default",
                   style: tryAgainLink.tryAgainLink,
                   onPress() {

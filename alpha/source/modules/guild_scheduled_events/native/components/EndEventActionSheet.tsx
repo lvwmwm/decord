@@ -1,17 +1,17 @@
-// Module ID: 9348
-// Function ID: 9349
+// Module ID: 9365
+// Function ID: 9366
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 4996, 1072, 21, 5141, 575, 9218, 5381, 9349, 14874, 1187, 1113, 5747, 5754, 9095, 2]
+// Dependencies: [19, 17, 4996, 1072, 21, 5141, 575, 9235, 5382, 9366, 14954, 1187, 1113, 5761, 5768, 9112, 2]
 // Exports: default
 
-// Module 9348 (EndEventActionSheet)
+// Module 9365 (EndEventActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9095 */;
-import CallsUtils from "CallsUtils" /* 9349 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9112 */;
+import CallsUtils from "CallsUtils" /* 9366 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -42,7 +42,7 @@ export default function EndEventActionSheet(channel) {
   let obj9;
   channel = channel.channel;
   const tmp = closure_7();
-  let obj = channel(9218);
+  let obj = channel(9235);
   const activeEvent = obj.useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
@@ -55,18 +55,18 @@ export default function EndEventActionSheet(channel) {
     }
     let obj2 = { children: closure_6(View, obj3) };
     obj3 = { style: tmp.container, children: items };
-    const tmp7 = activeEvent(14874);
+    const tmp7 = activeEvent(14954);
     const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1113).t["4Ao8LC"]) };
     const LegacyText = tmp2(1187).LegacyText;
     intl = tmp2(1113).intl;
     items = [closure_5(LegacyText, obj4), , , ];
-    const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: intl2.string(channel(1113).t["0I0B8f"]) };
-    const Text = tmp2(5747).Text;
+    const obj5 = { style: tmp.subtitle, variant: "body-md/medium", color: "text-default", children: intl2.string(channel(1113).t["0I0B8f"]) };
+    const Text = tmp2(5761).Text;
     intl2 = tmp2(1113).intl;
     items[1] = closure_5(Text, obj5);
     const obj6 = { style: tmp.cancelButtonContainer, children: closure_5(Button, obj7) };
     obj7 = { text: intl3.string(channel(1113).t.P60OAX), grow: true, onPress: handleClose };
-    Button = tmp2(5754).Button;
+    Button = tmp2(5768).Button;
     intl3 = tmp2(1113).intl;
     items[2] = closure_5(View, obj6);
     const obj8 = { style: tmp.confirmButtonContainer, children: closure_5(Button2, obj9) };
@@ -85,7 +85,7 @@ export default function EndEventActionSheet(channel) {
           }
         }
     };
-    Button2 = tmp2(5754).Button;
+    Button2 = tmp2(5768).Button;
     intl4 = tmp2(1113).intl;
     items[3] = closure_5(View, obj8);
     return closure_5(tmp7, obj2);

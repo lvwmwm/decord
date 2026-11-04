@@ -1,10 +1,10 @@
-// Module ID: 19444
-// Function ID: 19445
+// Module ID: 19548
+// Function ID: 19549
 // Name: VoiceControlsToggleNuxActionSheet
-// Dependencies: [32, 19, 17, 5142, 4987, 21, 5141, 575, 8897, 504, 5395, 8997, 5747, 1113, 5754, 2]
+// Dependencies: [32, 19, 17, 5142, 4987, 21, 5141, 575, 8914, 504, 5396, 9014, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 19444 (VoiceControlsToggleNuxActionSheet)
+// Module 19548 (VoiceControlsToggleNuxActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
@@ -84,7 +84,7 @@ export default function VoiceControlsToggleActionSheet(markAsDismissed) {
   const Text = tmp4(tmp5[12]).Text;
   intl = tmp4(tmp5[13]).intl;
   items1[1] = closure_8(Text, obj6);
-  const obj7 = { style: tmp.body, variant: "text-sm/normal", children: intl2.string(markAsDismissed(isScreenLandscape[13]).t.tNm8AZ) };
+  const obj7 = { style: tmp.body, variant: "body-sm/normal", children: intl2.string(markAsDismissed(isScreenLandscape[13]).t.tNm8AZ) };
   const Text2 = tmp4(tmp5[12]).Text;
   intl2 = tmp4(tmp5[13]).intl;
   items1[2] = closure_8(Text2, obj7);

@@ -1,10 +1,10 @@
-// Module ID: 8097
-// Function ID: 8098
+// Module ID: 8113
+// Function ID: 8114
 // Name: ModalContent
 // Dependencies: [19, 17, 21, 5141, 2]
 // Exports: ModalContent
 
-// Module 8097 (ModalContent)
+// Module 8113 (ModalContent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

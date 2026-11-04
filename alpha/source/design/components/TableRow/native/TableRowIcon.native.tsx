@@ -1,14 +1,14 @@
-// Module ID: 7109
-// Function ID: 7110
+// Module ID: 7124
+// Function ID: 7125
 // Name: TableRowIcon
-// Dependencies: [109, 19, 17, 21, 5141, 575, 5756, 2]
+// Dependencies: [109, 19, 17, 21, 5141, 575, 5770, 2]
 // Exports: TableRowIcon
 
-// Module 7109 (TableRowIcon)
+// Module 7124 (TableRowIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Icon from "Icon" /* 5756 */;
+import Icon from "Icon" /* 5770 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;

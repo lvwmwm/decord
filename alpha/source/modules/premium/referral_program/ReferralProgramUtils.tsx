@@ -1,10 +1,10 @@
-// Module ID: 8647
-// Function ID: 8648
+// Module ID: 8664
+// Function ID: 8665
 // Name: ReferralProgramUtils
-// Dependencies: [1231, 7756, 4987, 1089, 1113, 5171, 4974, 11, 4975, 8648, 504, 2]
+// Dependencies: [1231, 7772, 4987, 1089, 1113, 5171, 4974, 11, 4975, 8665, 504, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralIncentivePopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 8647 (ReferralProgramUtils)
+// Module 8664 (ReferralProgramUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import DismissibleContentUtils from "DismissibleContentUtils" /* 4975 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7756 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7772 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -101,7 +101,7 @@ export function markReferralIncentivePopoverSeen() {
 }
 export function useIsReferralProgramPopoverShowable() {
   let stateFromStores1;
-  let obj = stateFromStores1(8648);
+  let obj = stateFromStores1(8665);
   let isEligibleSenderForReferralProgram = obj.useIsEligibleSenderForReferralProgram(false);
   const items = [ReferralTrialStore];
   const obj2 = stateFromStores1(504);

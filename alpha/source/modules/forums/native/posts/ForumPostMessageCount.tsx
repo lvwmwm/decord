@@ -1,15 +1,15 @@
-// Module ID: 13912
-// Function ID: 13913
+// Module ID: 13998
+// Function ID: 13999
 // Name: ForumPostMessageCount
-// Dependencies: [19, 17, 21, 5141, 575, 1377, 9969, 1113, 8767, 5747, 11284, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1377, 10017, 1113, 8784, 5761, 11334, 2]
 // Exports: default
 
-// Module 13912 (ForumPostMessageCount)
+// Module 13998 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ForumHooks from "ForumHooks" /* 9969 */;
-import AnimatedCounterDefault from "AnimatedCounter" /* 11284 */;
+import ForumHooks from "ForumHooks" /* 10017 */;
+import AnimatedCounterDefault from "AnimatedCounter" /* 11334 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -70,24 +70,24 @@ export default function ForumPostMessageCount(hasUnreads) {
   intl = tmp2(1113).intl;
   const obj3 = { size: "xs", style: hasUnreads ? tmp.iconUnread : tmp.iconRead, color: str2 };
   str2 = "icon-muted";
-  const ChatIcon = tmp2(8767).ChatIcon;
+  const ChatIcon = tmp2(8784).ChatIcon;
   const tmp6 = View;
   if (hasUnreads) {
     str2 = "interactive-text-default";
   }
   items1 = [React3(ChatIcon, obj3), , ];
   if (isMaxMessageCount) {
-    const obj4 = { variant: "text-sm/semibold", color: str, children: messageCountText };
-    tmp7Result = tmp7(tmp2(5747).Text, obj4);
+    const obj4 = { variant: "body-sm/semibold", color: str, children: messageCountText };
+    tmp7Result = tmp7(tmp2(5761).Text, obj4);
   } else {
-    const obj5 = { count: messageCount, textVariant: "text-sm/semibold", textColor: str, animate: false };
+    const obj5 = { count: messageCount, textVariant: "body-sm/semibold", textColor: str, animate: false };
     tmp7Result = tmp7(AnimatedCounterDefault, obj5);
   }
   items1[1] = tmp7Result;
   let tmp5Result = null != unreadCount;
   if (tmp5Result) {
-    const obj6 = { variant: "text-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount, children: items2 };
-    const Text = tmp2(5747).Text;
+    const obj6 = { variant: "body-sm/semibold", color: "text-brand", style: tmp.messageUnreadCount, children: items2 };
+    const Text = tmp2(5761).Text;
     const intl2 = tmp2(1113).intl;
     const obj7 = { count: unreadCount };
     items2 = ["(", intl2.format(intl3.t.z3PEth, obj7), ")"];

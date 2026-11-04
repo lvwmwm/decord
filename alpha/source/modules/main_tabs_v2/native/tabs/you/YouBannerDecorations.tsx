@@ -1,10 +1,10 @@
-// Module ID: 9756
-// Function ID: 9757
+// Module ID: 9774
+// Function ID: 9775
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2192, 1385, 4987, 1387, 21, 1357, 575, 5141, 9757, 7753, 5171, 4974, 1113, 504, 8881, 8924, 8935, 5148, 671, 2176, 9802, 9803, 9805, 9806, 9809, 9810, 6904, 14841, 14844, 14849, 14851, 9656, 7685, 14846, 5710, 2]
+// Dependencies: [19, 17, 2192, 1385, 4987, 1387, 21, 1357, 575, 5141, 9775, 7769, 5171, 4974, 1113, 504, 8898, 8941, 8952, 5148, 671, 2176, 9820, 9821, 9823, 9824, 9827, 9828, 6919, 14921, 14924, 14929, 14931, 9675, 7701, 14926, 5723, 2]
 // Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
-// Module 9756 (YouBannerDecorations)
+// Module 9774 (YouBannerDecorations)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -13,11 +13,11 @@ import IntlLoaderStore from "IntlLoaderStore" /* 2192 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import QuestTypes from "QuestTypes" /* 6904 */;
-import useTrialOffer from "useTrialOffer" /* 7753 */;
-import PromotionsHooks from "PromotionsHooks" /* 9757 */;
-import tracking_Tracking from "tracking/Tracking" /* 9809 */;
-import QuestUtils from "QuestUtils" /* 9810 */;
+import QuestTypes from "QuestTypes" /* 6919 */;
+import useTrialOffer from "useTrialOffer" /* 7769 */;
+import PromotionsHooks from "PromotionsHooks" /* 9775 */;
+import Tracking from "Tracking" /* 9827 */;
+import QuestUtils from "QuestUtils" /* 9828 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -175,7 +175,7 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
   const items2 = [tmp15, navigateToSettings, tmp24];
   const items3 = [navigateToPremium];
   const callback = obj4.useCallback(() => {
-    const obj = tracking_Tracking;
+    const obj = Tracking;
     const obj2 = { isBadged };
     const result = obj.trackYouTabSettingsIconPress(obj2);
     navigateToSettings();
@@ -191,7 +191,7 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
   }, items2);
   const items4 = [showBadge, dismissBadge];
   const callback1 = obj4.useCallback(() => {
-    const obj = tracking_Tracking;
+    const obj = Tracking;
     const result = obj.trackYouTabNitroIconPress();
     navigateToPremium();
   }, items3);

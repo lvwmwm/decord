@@ -1,30 +1,30 @@
-// Module ID: 12240
-// Function ID: 12241
+// Module ID: 12301
+// Function ID: 12302
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6964, 21, 9719, 8797, 6965, 12241, 12243, 12245, 11418, 5141, 575, 5832, 5381, 12233, 504, 12247, 6142, 5714, 8801, 8802, 1113, 3995, 7486, 12253, 12258, 7208, 7373, 5747, 7083, 12261, 5754, 7489, 5772, 2]
+// Dependencies: [5, 19, 17, 6979, 21, 9737, 8814, 6980, 12302, 12304, 12306, 11468, 5141, 575, 5846, 5382, 12294, 504, 12308, 6157, 5727, 8818, 8819, 1113, 3995, 7502, 12314, 12319, 7223, 7389, 5761, 7098, 12322, 5768, 7505, 5786, 2]
 // Exports: default
 
-// Module 12240 (ConjurePublishSheet)
+// Module 12301 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useChannelNameDefault from "useChannelName" /* 5772 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7489 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8797 */;
-import AppsIcon2 from "AppsIcon" /* 8802 */;
-import ScreenIcon from "ScreenIcon" /* 9719 */;
-import ShieldIcon from "ShieldIcon" /* 11418 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12233 */;
-import RobotIcon from "RobotIcon" /* 12241 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 12243 */;
-import BadgeIcon from "BadgeIcon" /* 12245 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useChannelNameDefault from "useChannelName" /* 5786 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7505 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8814 */;
+import AppsIcon2 from "AppsIcon" /* 8819 */;
+import ScreenIcon from "ScreenIcon" /* 9737 */;
+import ShieldIcon from "ShieldIcon" /* 11468 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12294 */;
+import RobotIcon from "RobotIcon" /* 12302 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 12304 */;
+import BadgeIcon from "BadgeIcon" /* 12306 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -221,12 +221,12 @@ function PublishSheetBody(entryPoint) {
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(12247)(project, publish);
+  const tmp4 = entryPoint(12308)(project, publish);
   dependencyMap = tmp4;
-  entryPoint(6142)(() => true, tmp4.saving);
+  entryPoint(6157)(() => true, tmp4.saving);
   obj = react;
   let closure_3 = react.useRef(false);
-  const context = react.useContext(entryPoint(5714));
+  const context = react.useContext(entryPoint(5727));
   let transitionState;
   if (context != null) {
     transitionState = context.transitionState;
@@ -251,11 +251,11 @@ function PublishSheetBody(entryPoint) {
     isPrivate = appChannelsPrivate.isPrivate;
   }
   if (true === isPrivate) {
-    AppsIcon = publish(8801).AppsLockIcon;
+    AppsIcon = publish(8818).AppsLockIcon;
     tmp12 = publish;
   } else {
     let tmp11 = publish;
-    AppsIcon = publish(8802).AppsIcon;
+    AppsIcon = publish(8819).AppsIcon;
     tmp12 = publish;
   }
   if (initial) {
@@ -281,7 +281,7 @@ function PublishSheetBody(entryPoint) {
   ];
   components = tmp4.components;
   obj2 = { startExpanded: editable, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl.string(tmp2(3995).NEPcoi), children: tmp16(tmp17, obj3) };
-  const ActionSheet = tmp12(7486).ActionSheet;
+  const ActionSheet = tmp12(7502).ActionSheet;
   intl = tmp12(1113).intl;
   obj3 = { style: tmp.content, children: items2 };
   if (editable) {
@@ -299,22 +299,22 @@ function PublishSheetBody(entryPoint) {
           }
         }
     };
-    tmp15Result = tmp15(tmp12(12253).ConjureAppIconTile, obj4);
+    tmp15Result = tmp15(tmp12(12314).ConjureAppIconTile, obj4);
   } else {
     const obj5 = { project, size: "dialog" };
-    tmp15Result = tmp15(tmp2(12258), obj5);
+    tmp15Result = tmp15(tmp2(12319), obj5);
   }
   items2 = [tmp15Result, , , , , , ];
   if (editable) {
-    const obj6 = { label: intl2.string(entryPoint(3995).knevPu), value: null, onChange: null, maxLength: tmp12(6965).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
-    const TextInput = tmp12(7208).TextInput;
+    const obj6 = { label: intl2.string(entryPoint(3995).knevPu), value: null, onChange: null, maxLength: tmp12(6980).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
+    const TextInput = tmp12(7223).TextInput;
     intl2 = tmp12(1113).intl;
     ({ name: obj9.value, setName: obj9.onChange } = tmp4);
     ({ saving: obj9.disabled, nameError } = tmp4);
     const obj7 = { children: items3 };
     items3 = [tmp15(TextInput, obj6), ];
-    const obj8 = { label: intl3.string(entryPoint(3995).ynaGa1), placeholder: intl4.string(entryPoint(3995)["I+3UTL"]), value: null, onChange: null, maxLength: tmp12(6965).MAX_APP_DESCRIPTION_LENGTH, disabled: tmp4.saving };
-    const TextArea = tmp12(7373).TextArea;
+    const obj8 = { label: intl3.string(entryPoint(3995).ynaGa1), placeholder: intl4.string(entryPoint(3995)["I+3UTL"]), value: null, onChange: null, maxLength: tmp12(6980).MAX_APP_DESCRIPTION_LENGTH, disabled: tmp4.saving };
+    const TextArea = tmp12(7389).TextArea;
     intl3 = tmp12(1113).intl;
     intl4 = tmp12(1113).intl;
     ({ description: obj11.value, setDescription: obj11.onChange } = identity);
@@ -323,11 +323,11 @@ function PublishSheetBody(entryPoint) {
   } else {
     const obj10 = { style: tmp.nameGroup, children: items4 };
     const obj12 = { variant: "heading-lg/semibold", color: "text-strong", lineClamp: 1, children: tmp4.displayName };
-    items4 = [tmp15(tmp12(5747).Text, obj12), ];
+    items4 = [tmp15(tmp12(5761).Text, obj12), ];
     let tmp15Result6 = null;
     if ("" !== tmp4.description) {
-      const obj13 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 2, children: tmp4.description };
-      tmp15Result6 = tmp15(tmp12(5747).Text, obj13);
+      const obj13 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: tmp4.description };
+      tmp15Result6 = tmp15(tmp12(5761).Text, obj13);
     }
     items4[1] = tmp15Result6;
     tmp16Result = tmp16(tmp17, obj10);
@@ -364,20 +364,20 @@ function PublishSheetBody(entryPoint) {
     const items5 = [tmp15(SectionTitle, obj17), ];
     const obj18 = { style: tmp.sharingRow, children: items6 };
     if (null != sharing.guild) {
-      const obj19 = { guild: sharing.guild, size: tmp12(7083).GuildIconSizes.SMALL_36 };
-      const tmp2Result = entryPoint(7083);
+      const obj19 = { guild: sharing.guild, size: tmp12(7098).GuildIconSizes.SMALL_36 };
+      const tmp2Result = entryPoint(7098);
       tmp15Result8 = tmp15(tmp2Result, obj19);
     } else {
       const obj20 = { style: tmp.onlyMeIcon, children: obj(UserIcon, obj21) };
       obj21 = { size: "xs", color: entryPoint(575).colors.ICON_DEFAULT };
-      UserIcon = tmp12(12261).UserIcon;
+      UserIcon = tmp12(12322).UserIcon;
       tmp15Result8 = tmp15(tmp17, obj20);
     }
     items6 = [tmp15Result8, ];
     const guild = sharing.guild;
     let name;
     const obj22 = { style: tmp.rowText, children: items7 };
-    const Text = tmp12(5747).Text;
+    const Text = tmp12(5761).Text;
     if (guild != null) {
       name = guild.name;
     }
@@ -385,12 +385,12 @@ function PublishSheetBody(entryPoint) {
       const intl8 = tmp12(1113).intl;
       name = intl8.string(tmp2(3995)["37xgkF"]);
     }
-    const obj23 = { variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: name };
+    const obj23 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, children: name };
     items7 = [tmp15(Text, obj23), ];
     let tmp15Result9 = null;
     if (null != sharing.caption) {
-      const obj24 = { variant: "text-xs/normal", color: "text-subtle", children: sharing.caption };
-      tmp15Result9 = tmp15(tmp12(5747).Text, obj24);
+      const obj24 = { variant: "body-xs/normal", color: "text-subtle", children: sharing.caption };
+      tmp15Result9 = tmp15(tmp12(5761).Text, obj24);
     }
     const obj25 = { children: items5 };
     items7[1] = tmp15Result9;
@@ -402,13 +402,13 @@ function PublishSheetBody(entryPoint) {
   let tmp15Result10 = null;
   const obj26 = { style: tmp.footer, children: items8 };
   if (null != tmp4.note) {
-    const obj27 = { variant: "text-sm/normal", color: "text-subtle", children: tmp4.note };
-    tmp15Result10 = tmp15(tmp12(5747).Text, obj27);
+    const obj27 = { variant: "body-sm/normal", color: "text-subtle", children: tmp4.note };
+    tmp15Result10 = tmp15(tmp12(5761).Text, obj27);
   }
   items8 = [tmp15Result10, ];
   const obj28 = { style: tmp.actions, children: items9 };
   const obj55 = { variant: "secondary", size: "md", grow: true, text: intl9.string(tmp12(1113).t["ETE/oC"]), disabled: tmp4.saving, onPress: hidePublishSheet };
-  const Button = tmp12(5754).Button;
+  const Button = tmp12(5768).Button;
   intl9 = tmp12(1113).intl;
   items9 = [tmp15(Button, obj55), ];
   const obj56 = {
@@ -423,7 +423,7 @@ function PublishSheetBody(entryPoint) {
     }
   };
   disabled = publish.disabled;
-  const Button2 = tmp12(5754).Button;
+  const Button2 = tmp12(5768).Button;
   if (!disabled) {
     disabled = null != tmp4.nameError;
   }
@@ -434,7 +434,7 @@ function PublishSheetBody(entryPoint) {
 }
 function SectionTitle(title) {
   title = title.title;
-  obj = { variant: "text-sm/semibold", color: "text-subtle", accessibilityRole: "header", style: closure_13().sectionTitle, children: title };
+  obj = { variant: "body-sm/semibold", color: "text-subtle", accessibilityRole: "header", style: closure_13().sectionTitle, children: title };
   return metroImportDefault(Text_Text.Text, obj);
 }
 function RowSection(title) {
@@ -469,7 +469,7 @@ function ContentRow(arg0) {
   items = [, ];
   obj2 = { size: "sm", color: nativeDefault.colors.ICON_MUTED };
   items[0] = metroImportDefault(icon, obj2);
-  items[1] = metroImportDefault(Text_Text.Text, { variant: "text-md/semibold", color: "text-strong", lineClamp: 1, children: label });
+  items[1] = metroImportDefault(Text_Text.Text, { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, children: label });
   return React4(View, obj);
 }
 function AppChannelsPrivateSection(appChannelsPrivate) {
@@ -486,7 +486,7 @@ function AppChannelsPrivateSection(appChannelsPrivate) {
     str = "text-default";
   }
   obj = { start: true, end: true, label: metroImportDefault(Text, obj2), value: isPrivate, disabled, onValueChange: appChannelsPrivate.setPrivate };
-  obj2 = { variant: "text-md/medium", color: str, children: intl.formatToPlainString(_modDef3995.Td1mlg, { count: channelCount }) };
+  obj2 = { variant: "body-md/medium", color: str, children: intl.formatToPlainString(_modDef3995.Td1mlg, { count: channelCount }) };
   intl = intl10.intl;
   return metroImportDefault(TableSwitchRow, obj);
 }

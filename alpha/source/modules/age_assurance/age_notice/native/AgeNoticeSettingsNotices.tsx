@@ -1,27 +1,27 @@
-// Module ID: 16863
-// Function ID: 16864
+// Module ID: 16955
+// Function ID: 16956
 // Name: AgeNoticeSettingsNotices
-// Dependencies: [19, 17, 1385, 6857, 7614, 21, 5141, 575, 16730, 10262, 8079, 6849, 8149, 1113, 3255, 16770, 6858, 5813, 6846, 16864, 8492, 2]
+// Dependencies: [19, 17, 1385, 6872, 7630, 21, 5141, 575, 16822, 10310, 8095, 6864, 8165, 1113, 3255, 16862, 6873, 5827, 6861, 16956, 8509, 2]
 // Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled, useMessageRequestsNoticeVariant
 
-// Module 16863 (AgeNoticeSettingsNotices)
+// Module 16955 (AgeNoticeSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3255 from "module_3255" /* 3255 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5813 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6846 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6857 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
-import useUserIsTeen from "useUserIsTeen" /* 8492 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10262 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16730 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16770 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16864 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5827 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6861 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
+import useUserIsTeen from "useUserIsTeen" /* 8509 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10310 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16822 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16862 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16956 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 7614 */;
+import Constants from "Constants" /* 7630 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const AgeNoticeExperiment = tmp(6858);
+const AgeNoticeExperiment = tmp(6873);
 function TeenNotice(noticeType) {
   let intl;
   let intl2;
@@ -58,7 +58,7 @@ function TeenNotice(noticeType) {
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
   }, items2);
   let obj2 = { type: "info", message: intl.format(message, { handleOnConfirmAgeHook: callback1 }), role: "status", action: obj3 };
-  const InlineNotice = noticeType(8149).InlineNotice;
+  const InlineNotice = noticeType(8165).InlineNotice;
   intl = noticeType(1113).intl;
   obj3 = { text: intl2.string(noticeType(1113).t.hvVgAZ), onPress: callback };
   intl2 = noticeType(1113).intl;
@@ -97,7 +97,7 @@ function UnconfirmedNotice(message) {
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
   }, items2);
   let obj2 = { type: "info", message: intl.format(message, { handleOnAgeGatedContentHook: callback }), role: "status", action: obj3 };
-  const InlineNotice = AGE_CONFIRMATION_NOTICE(8149).InlineNotice;
+  const InlineNotice = AGE_CONFIRMATION_NOTICE(8165).InlineNotice;
   intl = AGE_CONFIRMATION_NOTICE(1113).intl;
   obj3 = { text: intl2.string(AGE_CONFIRMATION_NOTICE(1113).t.FDSSia), onPress: callback1 };
   intl2 = AGE_CONFIRMATION_NOTICE(1113).intl;

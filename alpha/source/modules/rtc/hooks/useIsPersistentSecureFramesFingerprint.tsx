@@ -1,11 +1,11 @@
-// Module ID: 9402
-// Function ID: 9403
+// Module ID: 9419
+// Function ID: 9420
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 9394, 9393, 2]
+// Dependencies: [5, 32, 19, 9411, 9410, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 9402 (useIsPersistentSecureFramesFingerprint)
-import SecureFramesConstants from "SecureFramesConstants" /* 9394 */;
+// Module 9419 (useIsPersistentSecureFramesFingerprint)
+import SecureFramesConstants from "SecureFramesConstants" /* 9411 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

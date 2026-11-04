@@ -1,27 +1,27 @@
-// Module ID: 11474
-// Function ID: 11475
+// Module ID: 11524
+// Function ID: 11525
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 5083, 1385, 21, 5141, 575, 7106, 1377, 10902, 5747, 1187, 11475, 10929, 5719, 8727, 11476, 1113, 5772, 5837, 1411, 11477, 9330, 2]
+// Dependencies: [32, 19, 17, 5083, 1385, 21, 5141, 575, 7121, 1377, 10950, 5761, 1187, 11525, 10977, 5732, 8744, 11526, 1113, 5786, 5851, 1411, 11527, 9347, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 11474 (ChannelHeaderShared)
+// Module 11524 (ChannelHeaderShared)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import Pressables from "Pressables" /* 7106 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8727 */;
-import BotTagDefault from "BotTag" /* 9330 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10902 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10929 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11475 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11476 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11477 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import Pressables from "Pressables" /* 7121 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8744 */;
+import BotTagDefault from "BotTag" /* 9347 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10950 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10977 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11525 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11526 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11527 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -96,13 +96,13 @@ function ChannelTitle(guildId) {
   }
   items = [tmp4, , ];
   if (null != userId) {
-    const obj3 = { userId, guildId, userName: title, variant: "redesign/heading-18/semibold", defaultColor: "mobile-text-heading-primary", lineClamp: 1, style: null, containerStyle: null, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2 };
+    const obj3 = { userId, guildId, userName: title, variant: "heading-md/semibold", defaultColor: "mobile-text-heading-primary", lineClamp: 1, style: null, containerStyle: null, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2 };
     ({ channelName: obj4.style, channelNameContainer: obj4.containerStyle } = tmp);
     tmp8 = metroImportAll(UsernameWithEffectsDefault, obj3);
     tmp5 = metroImportAll;
   } else {
     tmp5 = metroImportAll;
-    const obj5 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
+    const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, style: tmp.channelName, accessibilityLabel: accessibleTitle, accessibilityRole: "header", maxFontSizeMultiplier: 2, children: title };
     tmp8 = metroImportAll(Text_Text.Text, obj5);
   }
   items[1] = tmp8;
@@ -176,7 +176,7 @@ function MemberCountText(arg0) {
       str = "total";
     }
   }
-  const obj = { type: str, count: memberCount, color: "text-subtle", dotContainerWidth: leadingAccessoryWidth, textVariant: "text-xs/normal" };
+  const obj = { type: str, count: memberCount, color: "text-subtle", dotContainerWidth: leadingAccessoryWidth, textVariant: "body-xs/normal" };
   const tmp2 = React4;
   const tmp3 = authStore;
   const tmp6 = GuildActionSheetMemberCountDefault;
@@ -186,14 +186,14 @@ function MemberCountText(arg0) {
   const children = [metroImportAll(tmp6, obj), ];
   let tmp4Result = null;
   if (withSeparator) {
-    tmp4Result = tmp4(Text_Text.Text, { variant: "text-xs/normal", color: "text-subtle", children: "\u2022" });
+    tmp4Result = tmp4(Text_Text.Text, { variant: "body-xs/normal", color: "text-subtle", children: "\u2022" });
   }
   children[1] = tmp4Result;
   return tmp2(tmp3, { children });
 }
 class SubtitleText {
   constructor(arg0) {
-    const obj = { variant: "text-sm/medium", color: "text-subtle", maxFontSizeMultiplier: 2 };
+    const obj = { variant: "body-sm/medium", color: "text-subtle", maxFontSizeMultiplier: 2 };
     const Text = Text_Text.Text;
     const merged = Object.assign(arg0);
     return metroImportAll(Text, obj);
@@ -244,7 +244,7 @@ function AppSubTitle(application) {
     }
   }
   items = [tmp4, , ];
-  const obj14 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: "text-xs/normal", color: "text-subtle", style: tmp.appName, children: application.name };
+  const obj14 = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: "body-xs/normal", color: "text-subtle", style: tmp.appName, children: application.name };
   items[1] = metroImportAll(Text_Text.Text, obj14);
   const obj15 = { verified: application.isVerified, size: "sm" };
   items[2] = metroImportAll(BotTagDefault, obj15);
@@ -263,7 +263,7 @@ function AppSubTitleSkeleton() {
 }
 function NoAppSubTitle() {
   let intl;
-  const obj = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: "text-xs/normal", color: "text-subtle", style: closure_12().noApp, children: intl.string(intl2.t.tU5fiM) };
+  const obj = { lineClamp: 1, maxFontSizeMultiplier: 2, variant: "body-xs/normal", color: "text-subtle", style: closure_12().noApp, children: intl.string(intl2.t.tU5fiM) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return metroImportAll(Text, obj);

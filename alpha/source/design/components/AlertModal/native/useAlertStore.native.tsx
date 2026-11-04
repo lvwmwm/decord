@@ -1,11 +1,11 @@
-// Module ID: 6080
-// Function ID: 6081
+// Module ID: 6095
+// Function ID: 6096
 // Name: useAlertStore
-// Dependencies: [32, 560, 1259, 6081, 6083, 2]
+// Dependencies: [32, 560, 1259, 6096, 6098, 2]
 // Exports: dismissAlert, dismissAlerts, openAlert
 
-// Module 6080 (useAlertStore)
-import react_nativeDefault from "react-native" /* 6083 */;
+// Module 6095 (useAlertStore)
+import react_nativeDefault from "react-native" /* 6098 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ export function dismissAlerts() {
   });
   const tmp4 = 0 === arr4.length && first.length > 0;
   if (tmp4) {
-    arr4(6081)();
+    arr4(6096)();
   }
 }
 export function dismissAlert(c6) {
@@ -79,7 +79,7 @@ export function dismissAlert(c6) {
       }
     });
     if (tmp2) {
-      found(6081)();
+      found(6096)();
     }
   }
 }

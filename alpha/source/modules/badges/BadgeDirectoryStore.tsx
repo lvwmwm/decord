@@ -1,17 +1,17 @@
-// Module ID: 8887
-// Function ID: 8888
+// Module ID: 8904
+// Function ID: 8905
 // Name: BadgeDirectoryStore
-// Dependencies: [1385, 1089, 1453, 8888, 559, 8892, 504, 572, 2]
+// Dependencies: [1385, 1089, 1453, 8905, 559, 8909, 504, 572, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8887 (BadgeDirectoryStore)
+// Module 8904 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import LRUCacheDefault from "LRUCache" /* 1453 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8888 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8892 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8905 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8909 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -50,8 +50,8 @@ class BadgeDirectoryStore extends Store {
       return items;
     }
   }
-  hasCatalogFor(stateFromStores) {
-    const peekResult = closure_5.peek(stateFromStores);
+  hasCatalogFor(id) {
+    const peekResult = closure_5.peek(id);
     let flag;
     if (peekResult != null) {
       flag = peekResult.catalogFetched;
@@ -97,6 +97,30 @@ class BadgeDirectoryStore extends Store {
       tmp5 = flag;
     }
     return tmp5;
+  }
+  getUnreadBadges(id) {
+    const badges = this.getBadges(id);
+    return badges.filter((has_updates) => true === has_updates.has_updates);
+  }
+  getUnreadBadgeCount(id) {
+    let tmp = id;
+    if (id == null) {
+      const currentUser = UserStore.getCurrentUser();
+      id = undefined;
+      if (currentUser != null) {
+        id = currentUser.id;
+      }
+      tmp = id;
+    }
+    let num = 0;
+    if (null != tmp) {
+      const self = this;
+      num = 0;
+      if (this.hasCatalogFor(tmp)) {
+        num = self.getUnreadBadges(tmp).length;
+      }
+    }
+    return num;
   }
   getBadgeById(GIFTING, displayedUserId) {
     let tmp = displayedUserId;
@@ -200,7 +224,7 @@ let obj = {
   BADGE_DIRECTORY_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     let badges;
     let userId;
-    const f93600 = (badge_id) => {
+    const f93976 = (badge_id) => {
       const items = [badge_id.badge_id, badge_id];
       return items;
     };
@@ -215,10 +239,10 @@ let obj = {
       peekResult = obj2;
       map = new Map();
     }
-    peekResult.badges = new Map(badges.map(f93600));
+    peekResult.badges = new Map(badges.map(f93976));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f93600));
+    new Map(badges.map(f93976));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },
@@ -296,6 +320,29 @@ let obj = {
     }
     const result = set(badge_id, obj3);
     const result1 = obj.set(userId, peekResult);
+  },
+  BADGE_ACK_SUCCESS: function handleBadgeAckSuccess(badgeId) {
+    let value;
+    badgeId = badgeId.badgeId;
+    const peekResult = closure_5.peek(badgeId.userId);
+    if (peekResult != null) {
+      const badges = peekResult.badges;
+      value = badges.get(badgeId);
+    }
+    if (null != peekResult) {
+      let has_updates;
+      if (value != null) {
+        has_updates = value.has_updates;
+      }
+      if (true === has_updates) {
+        const badges2 = peekResult.badges;
+        const obj = { has_updates: false, previous_acked_tier: null };
+        set = badges2.set;
+        const merged = Object.assign(value);
+        const result = set(badgeId, obj);
+      }
+    }
+    return false;
   },
   USER_PROFILE_FETCH_SUCCESS: function handleUserProfileFetchSuccess(userProfile) {
     userProfile = userProfile.userProfile;

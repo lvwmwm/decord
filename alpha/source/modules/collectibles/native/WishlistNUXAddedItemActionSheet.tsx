@@ -1,18 +1,18 @@
-// Module ID: 9593
-// Function ID: 9594
+// Module ID: 9612
+// Function ID: 9613
 // Name: WishlistNUXAddedItemActionSheet
-// Dependencies: [32, 19, 17, 1385, 8878, 21, 5141, 575, 504, 2116, 5381, 8874, 7471, 9594, 5395, 9595, 5747, 1113, 6887, 5754, 2]
+// Dependencies: [32, 19, 17, 1385, 8895, 21, 5141, 575, 504, 2116, 5382, 8891, 7487, 9613, 5396, 9614, 5761, 1113, 6902, 5768, 2]
 // Exports: default
 
-// Module 9593 (WishlistNUXAddedItemActionSheet)
+// Module 9612 (WishlistNUXAddedItemActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import Constants from "Constants" /* 8878 */;
-import SKUPreview from "SKUPreview" /* 9594 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import Constants from "Constants" /* 8895 */;
+import SKUPreview from "SKUPreview" /* 9613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -103,7 +103,7 @@ export default function WishlistNUXAddedItemActionSheet(product) {
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items5 = [closure_8(Text, obj5), ];
-  const obj6 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: intl2.string(require("intl").t.SXb73A) };
+  const obj6 = { variant: "body-md/normal", color: "text-default", style: tmp.subtitle, children: intl2.string(require("intl").t.SXb73A) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items5[1] = closure_8(Text2, obj6);

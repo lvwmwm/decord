@@ -1,11 +1,11 @@
-// Module ID: 10244
-// Function ID: 10245
+// Module ID: 10292
+// Function ID: 10293
 // Name: VoiceChannelListInviteExperiment
-// Dependencies: [5359, 2]
+// Dependencies: [5360, 2]
 // Exports: getVoiceChannelListInviteExperiment, useVoiceChannelListInviteExperiment
 
-// Module 10244 (VoiceChannelListInviteExperiment)
-import createExperiment from "module_5359" /* 5359 */;
+// Module 10292 (VoiceChannelListInviteExperiment)
+import createExperiment from "module_5360" /* 5360 */;
 import size from "module_2" /* 2 */;
 
 let items;

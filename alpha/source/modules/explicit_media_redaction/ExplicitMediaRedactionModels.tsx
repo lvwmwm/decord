@@ -1,9 +1,9 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7609
+// Function ID: 7610
 // Name: ExplicitMediaRedactionModels
 // Dependencies: [2]
 
-// Module 7593 (ExplicitMediaRedactionModels)
+// Module 7609 (ExplicitMediaRedactionModels)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaRedactionModels.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 8795
-// Function ID: 8796
+// Module ID: 8812
+// Function ID: 8813
 // Name: VoiceWarningIcon
-// Dependencies: [19, 21, 575, 5836, 8740, 2]
+// Dependencies: [19, 21, 575, 5850, 8757, 2]
 // Exports: VoiceWarningIcon
 
-// Module 8795 (VoiceWarningIcon)
+// Module 8812 (VoiceWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 8740 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 8757 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

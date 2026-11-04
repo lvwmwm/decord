@@ -1,12 +1,12 @@
-// Module ID: 12082
-// Function ID: 12083
+// Module ID: 12141
+// Function ID: 12142
 // Name: useIsVideoBackgroundSupported
-// Dependencies: [2135, 504, 6060, 2]
+// Dependencies: [2135, 504, 6075, 2]
 // Exports: default
 
-// Module 12082 (useIsVideoBackgroundSupported)
+// Module 12141 (useIsVideoBackgroundSupported)
 import get_initialized from "get initialized" /* 504 */;
-import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 6060 */;
+import isVideoBackgroundSupportedDefault from "isVideoBackgroundSupported" /* 6075 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
 import size from "module_2" /* 2 */;
 

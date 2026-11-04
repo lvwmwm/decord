@@ -1,18 +1,18 @@
-// Module ID: 8144
-// Function ID: 8145
+// Module ID: 8160
+// Function ID: 8161
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 5141, 1113, 3223, 8096, 8097, 6147, 7253, 575, 5747, 2]
+// Dependencies: [19, 21, 5141, 1113, 3223, 8112, 8113, 6162, 7273, 575, 5761, 2]
 // Exports: default
 
-// Module 8144 (AgeVerificationOtherWindowScreen)
+// Module 8160 (AgeVerificationOtherWindowScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3223 from "module_3223" /* 3223 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7253 */;
-import ModalScreen2 from "ModalScreen" /* 8096 */;
-import ModalContent2 from "ModalContent" /* 8097 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7273 */;
+import ModalScreen2 from "ModalScreen" /* 8112 */;
+import ModalContent2 from "ModalContent" /* 8113 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -63,7 +63,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   items1 = [, ];
   const obj6 = { accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: title };
   items1[0] = _false(Text_Text.Text, obj6);
-  const obj7 = { variant: "text-md/medium", color: "text-muted", style: tmp.text, children: description };
+  const obj7 = { variant: "body-md/medium", color: "text-muted", style: tmp.text, children: description };
   items1[1] = _false(Text_Text.Text, obj7);
   items[1] = React3(Stack2, obj5);
   return _false(ModalScreen, obj);

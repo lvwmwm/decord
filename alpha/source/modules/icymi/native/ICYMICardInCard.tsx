@@ -1,27 +1,27 @@
-// Module ID: 18725
-// Function ID: 18726
+// Module ID: 18826
+// Function ID: 18827
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 4990, 5053, 5012, 1072, 21, 18682, 575, 9637, 7083, 1187, 5762, 504, 6559, 9418, 6161, 5747, 5772, 18726, 1113, 8776, 18724, 7106, 6980, 9888, 2]
+// Dependencies: [19, 17, 4990, 5053, 5012, 1072, 21, 18783, 575, 9656, 7098, 1187, 5776, 504, 6574, 9435, 6176, 5761, 5786, 18827, 1113, 8793, 18825, 7121, 6995, 9906, 2]
 // Exports: default
 
-// Module 18725 (ICYMICardInCard)
+// Module 18826 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import TextIcon2 from "TextIcon" /* 8776 */;
-import ClipView from "ClipView" /* 9637 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 18724 */;
-import getIconForChannel from "getIconForChannel" /* 18726 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import TextIcon2 from "TextIcon" /* 8793 */;
+import ClipView from "ClipView" /* 9656 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 18825 */;
+import getIconForChannel from "getIconForChannel" /* 18827 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18682 */;
+import createICYMIStyles from "createICYMIStyles" /* 18783 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -222,7 +222,7 @@ export default function ICYMICardInCard(message) {
   const memo1 = obj6.useMemo(() => {
     let tmp2 = null;
     if (null != stateFromStores1) {
-      const obj = { style: { maxWidth: 225 }, lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
+      const obj = { style: { maxWidth: 225 }, lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: stateFromStores1.name };
       tmp2 = React4(Text_Text.Text, obj, tmp.id);
     }
     return tmp2;
@@ -288,7 +288,7 @@ export default function ICYMICardInCard(message) {
                 tmp43 = { fontFamily: tmp42 };
                 const obj4 = { fontFamily: tmp42 };
               }
-              const obj5 = { variant: "text-sm/semibold", style: items, children: combined };
+              const obj5 = { variant: "body-sm/semibold", style: items, children: combined };
               items[1] = tmp43;
               combined = arr;
               if (_undefined.length > 20) {
@@ -296,13 +296,13 @@ export default function ICYMICardInCard(message) {
                 combined = "" + arr.slice(0, 17) + "...";
               }
               items1 = [tmp39(Text2, obj5), , ];
-              const obj6 = { variant: "text-sm/medium", color: "text-default", children: intl2.string(intl3.t.CHUAYk) };
+              const obj6 = { variant: "body-sm/medium", color: "text-default", children: intl2.string(intl3.t.CHUAYk) };
               const Text3 = Text_Text.Text;
               intl2 = intl3.intl;
               items1[1] = React4(Text3, obj6);
               const obj7 = { style: tmp38.genContentSubtitleChannel, children: items2 };
               items2 = [React4(iconForChannel, { size: "xs", color: "text-default" }), ];
-              const obj9 = { variant: "text-sm/medium", color: "text-default", onPress: onHeaderPress, style: { flex: 1 }, lineClamp: 1, ellipsizeMode: "tail", children };
+              const obj9 = { variant: "body-sm/medium", color: "text-default", onPress: onHeaderPress, style: { flex: 1 }, lineClamp: 1, ellipsizeMode: "tail", children };
               items2[1] = React4(Text_Text.Text, obj9);
               items1[2] = authStore(View, obj7);
               return tmp36(tmp37, obj2);
@@ -319,7 +319,7 @@ export default function ICYMICardInCard(message) {
     }
     const obj10 = { style: closure_7.genContentSubtitle, children: items3 };
     items3 = [, ];
-    const obj11 = { variant: "text-sm/medium", color: "text-default", children: actionLabel };
+    const obj11 = { variant: "body-sm/medium", color: "text-default", children: actionLabel };
     items3[0] = React4(Text_Text.Text, obj11);
     let tmp14 = null;
     const tmp11 = authStore;
@@ -327,13 +327,13 @@ export default function ICYMICardInCard(message) {
     const tmp13 = closure_7;
     if (null != stateFromStores) {
       const obj12 = { children: items4 };
-      const obj13 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl3.t.CHUAYk) };
+      const obj13 = { variant: "body-sm/medium", color: "text-default", children: intl.string(intl3.t.CHUAYk) };
       const Text = Text_Text.Text;
       intl = intl3.intl;
       items4 = [React4(Text, obj13), ];
       const obj14 = { style: tmp13.genContentSubtitleChannel, children: items5 };
       items5 = [React4(TextIcon, { size: "xs", color: "text-default" }), ];
-      const obj15 = { variant: "text-sm/medium", color: "text-default", onPress: onHeaderPress, style: { flex: 1 }, lineClamp: 1, ellipsizeMode: "tail", children };
+      const obj15 = { variant: "body-sm/medium", color: "text-default", onPress: onHeaderPress, style: { flex: 1 }, lineClamp: 1, ellipsizeMode: "tail", children };
       items5[1] = React4(Text_Text.Text, obj15);
       items4[1] = authStore(View, obj14);
       tmp14 = authStore(unpackModuleId, obj12);
@@ -376,7 +376,7 @@ export default function ICYMICardInCard(message) {
   let tmp28Result = !flag;
   const PressableHighlight = tmp2(tmp3[23]).PressableHighlight;
   if (!flag) {
-    let obj11 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: tmp2Result8.getRelativeTimestamp(timestamp) };
+    let obj11 = { lineClamp: 1, variant: "body-xs/normal", color: "text-muted", children: tmp2Result8.getRelativeTimestamp(timestamp) };
     let Text = tmp2(tmp3[17]).Text;
     tmp2Result8 = tmp2(tmp3[24]);
     tmp28Result = tmp28(Text, obj11);

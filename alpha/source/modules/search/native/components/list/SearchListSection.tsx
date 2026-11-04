@@ -1,12 +1,12 @@
-// Module ID: 18908
-// Function ID: 18909
+// Module ID: 19011
+// Function ID: 19012
 // Name: SearchListSection
-// Dependencies: [19, 17, 9958, 21, 5141, 5747, 2]
+// Dependencies: [19, 17, 9976, 21, 5141, 5761, 2]
 
-// Module 18908 (SearchListSection)
+// Module 19011 (SearchListSection)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -25,7 +25,7 @@ const memoResult = react.memo(function SearchListSection(arg0) {
   let trailing;
   ({ title, trailing } = arg0);
   const obj = { style: closure_5().section, children: items };
-  items = [_false(Text_Text.Text, { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "text-sm/semibold", color: "interactive-text-default", children: title }), trailing];
+  items = [_false(Text_Text.Text, { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "body-sm/semibold", color: "interactive-text-default", children: title }), trailing];
   return React3(View, obj);
 });
 const result = size.fileFinishedImporting("modules/search/native/components/list/SearchListSection.tsx");

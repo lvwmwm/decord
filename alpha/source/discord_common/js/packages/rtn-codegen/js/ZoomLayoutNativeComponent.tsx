@@ -1,9 +1,9 @@
-// Module ID: 11909
-// Function ID: 11910
+// Module ID: 11968
+// Function ID: 11969
 // Name: ZoomLayoutNativeComponent
 // Dependencies: [106, 65, 114, 2]
 
-// Module 11909 (ZoomLayoutNativeComponent)
+// Module 11968 (ZoomLayoutNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;

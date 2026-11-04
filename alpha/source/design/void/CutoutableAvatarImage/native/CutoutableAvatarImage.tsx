@@ -1,21 +1,21 @@
-// Module ID: 15015
-// Function ID: 15016
+// Module ID: 15095
+// Function ID: 15096
 // Name: CutoutableAvatarImage
-// Dependencies: [19, 17, 15016, 21, 3, 1411, 15017, 15018, 9637, 5837, 1652, 5757, 1266, 8155, 558, 2]
+// Dependencies: [19, 17, 15096, 21, 3, 1411, 15097, 15098, 9656, 5851, 1652, 5771, 1266, 8171, 558, 2]
 
-// Module 15015 (CutoutableAvatarImage)
+// Module 15095 (CutoutableAvatarImage)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import v1 from "v1" /* 1266 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import inlineStyles from "inlineStyles" /* 8155 */;
-import ClipView from "ClipView" /* 9637 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 15016 */;
-import getChannelIcon from "getChannelIcon" /* 15017 */;
-import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 15018 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import inlineStyles from "inlineStyles" /* 8171 */;
+import ClipView from "ClipView" /* 9656 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 15096 */;
+import getChannelIcon from "getChannelIcon" /* 15097 */;
+import getReactNativeSVGImageSourceDefault from "getReactNativeSVGImageSource" /* 15098 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -31,7 +31,7 @@ let metroImportDefault;
 let obj3;
 let obj4;
 let tmp11;
-const inlineStylesDefault = tmp11(8155);
+const inlineStylesDefault = tmp11(8171);
 function StaticNativeCutoutAvatarImage(cutout) {
   let imageStyle;
   let items1;
@@ -174,7 +174,7 @@ function CutoutAvatarImage(arg0) {
     if (null != tintColor) {
       const size1 = { x: "0", y: "0", height: "100%", width: "100%", mask: "url(#" + v4Result + ")", children: metroImportDefault(tmp16, obj2) };
       const _HermesInternal = HermesInternal;
-      const ForeignObject = tmp7(8155).ForeignObject;
+      const ForeignObject = tmp7(8171).ForeignObject;
       obj2 = { style: obj3, source: getReactNativeSVGImageSourceDefault(source), usesSmallCache: true };
       obj3 = { tintColor };
       tmp16 = FastImageDefault;
@@ -183,16 +183,16 @@ function CutoutAvatarImage(arg0) {
     }
     const obj4 = { style, children: metroImportAll(tmp11Result, size5) };
     tmp11Result = inlineStylesDefault;
-    const Defs = tmp7(8155).Defs;
+    const Defs = tmp7(8171).Defs;
     const size2 = { width: size, height: size, id: v4Result, children: items };
-    const Mask = tmp7(8155).Mask;
+    const Mask = tmp7(8171).Mask;
     const tmp17 = hasOwnProperty;
     if (CIRCULAR === obj6.CIRCULAR) {
       obj5 = { cx: result, cy: result, r: result, fill: "white" };
-      tmp12Result = tmp12(tmp7(8155).Circle, obj5);
+      tmp12Result = tmp12(tmp7(8171).Circle, obj5);
     } else {
       const size3 = { x: 0, y: 0, height: size, width: size, fill: "white" };
-      tmp12Result = tmp12(tmp7(8155).Rect, size3);
+      tmp12Result = tmp12(tmp7(8171).Rect, size3);
     }
     obj6 = { children: metroImportAll(Mask, size2) };
     items = [tmp12Result, ];
@@ -205,12 +205,12 @@ function CutoutAvatarImage(arg0) {
       if (CIRCULAR === obj6.CIRCULAR) {
         const _HermesInternal3 = HermesInternal;
         const obj8 = { cx: result, cy: result, r: result, fill: "none", mask: "url(#" + v4Result + ")", stroke: cutout.border.color, strokeWidth: cutout.border.width };
-        const Circle = tmp7(8155).Circle;
+        const Circle = tmp7(8171).Circle;
         tmp12Result2 = tmp12(Circle, obj8);
       } else {
         const size4 = { x: 0, y: 0, height: size, width: size, fill: "none", mask: "url(#" + v4Result + ")", stroke: cutout.border.color, strokeWidth: cutout.border.width };
         const _HermesInternal2 = HermesInternal;
-        const Rect = tmp7(8155).Rect;
+        const Rect = tmp7(8171).Rect;
         tmp12Result2 = tmp12(Rect, size4);
       }
       tmp21 = tmp12Result2;
@@ -220,7 +220,7 @@ function CutoutAvatarImage(arg0) {
     return tmp12(tmp17, obj4);
   }
   const size6 = { x: "0", y: "0", height: "100%", width: "100%", href: getReactNativeSVGImageSourceDefault(source), mask: "url(#" + v4Result + ")" };
-  const Image = tmp7(8155).Image;
+  const Image = tmp7(8171).Image;
   tmp10 = metroImportDefault(Image, size6);
   tmp12 = metroImportDefault;
 }

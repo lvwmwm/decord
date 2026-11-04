@@ -1,22 +1,22 @@
-// Module ID: 20132
-// Function ID: 20133
+// Module ID: 20248
+// Function ID: 20249
 // Name: GuildRoleSubscriptionListingPreview
-// Dependencies: [32, 19, 17, 21, 5141, 575, 5747, 7537, 1113, 17363, 17359, 5837, 20133, 20134, 20108, 17371, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5761, 7553, 1113, 17454, 17450, 5851, 20249, 20250, 20224, 17462, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 20132 (GuildRoleSubscriptionListingPreview)
+// Module 20248 (GuildRoleSubscriptionListingPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import PriceUtils from "PriceUtils" /* 7537 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17359 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17363 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17371 */;
-import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 20108 */;
-import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 20133 */;
-import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 20134 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import PriceUtils from "PriceUtils" /* 7553 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17450 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17454 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 17462 */;
+import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 20224 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 20249 */;
+import GuildRoleSubscriptionBenefitPreview2 from "GuildRoleSubscriptionBenefitPreview" /* 20250 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -54,7 +54,7 @@ function PriceTier(arg0) {
   const Text = Text_Text.Text;
   obj3 = PriceUtils;
   items = [metroRequire(Text, obj2), ];
-  const obj4 = { style: tmp2.priceInterval, variant: "eyebrow", color: "text-default", children: format(isLGyX, obj5) };
+  const obj4 = { style: tmp2.priceInterval, variant: "body-sm/medium", color: "text-default", children: format(isLGyX, obj5) };
   const Text2 = Text_Text.Text;
   const intl = intl2.intl;
   format = intl.format;
@@ -78,7 +78,7 @@ function Header(listingId) {
   const obj5 = { style: tmp.header, children: items };
   const obj4 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first2 = _slicedToArray(obj4.useDescription(listingId), 1)[0];
-  items = [metroRequire(Text_Text.Text, { variant: "heading-md/semibold", color: "interactive-text-active", children: first1 }), , , , ];
+  items = [metroRequire(Text_Text.Text, { variant: "heading-sm/semibold", color: "interactive-text-active", children: first1 }), , , , ];
   const obj6 = { style: tmp.image, source: { uri: str } };
   const tmp10 = FastImageDefault;
   const tmp6 = metroImportDefault;
@@ -91,7 +91,7 @@ function Header(listingId) {
   const merged = Object.assign(first);
   items[2] = metroRequire(PriceTier, obj7);
   items[3] = metroRequire(GuildPremiumRoleSubscribeButton.GuildPremiumRoleSubscribeButton, { onPress: onSubscribePress });
-  items[4] = metroRequire(Text_Text.Text, { variant: "text-sm/medium", children: first2 });
+  items[4] = metroRequire(Text_Text.Text, { variant: "body-sm/medium", children: first2 });
   return tmp6(tmp7, obj5);
 }
 function Content(arg0) {
@@ -118,7 +118,7 @@ function SectionLabel(label) {
   const obj = { children: metroRequire(Text_Text.Text, obj2) };
   const tmp2 = closure_9();
   const merged1 = Object.assign(merged);
-  obj2 = { style: tmp2.sectionLabel, variant: "eyebrow", color: "text-default", children: label };
+  obj2 = { style: tmp2.sectionLabel, variant: "body-sm/medium", color: "text-default", children: label };
   return metroRequire(Content, obj);
 }
 function LabeledSection(arg0) {

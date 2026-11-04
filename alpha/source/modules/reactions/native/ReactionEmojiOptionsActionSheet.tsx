@@ -1,25 +1,25 @@
-// Module ID: 10228
-// Function ID: 10229
+// Module ID: 10276
+// Function ID: 10277
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 5142, 6916, 7084, 5172, 1072, 21, 5141, 575, 10188, 4966, 7477, 504, 10074, 1411, 5381, 10187, 5832, 1113, 10191, 10193, 7478, 5831, 8529, 7486, 7420, 5747, 4282, 2190, 7186, 7101, 2]
+// Dependencies: [19, 17, 5142, 6931, 7099, 5172, 1072, 21, 5141, 575, 10236, 4966, 7493, 504, 10122, 1411, 5382, 10235, 5846, 1113, 10239, 10241, 7494, 5845, 8546, 7502, 7436, 5761, 4282, 2190, 7201, 7116, 2]
 // Exports: default
 
-// Module 10228 (ReactionEmojiOptionsActionSheet)
+// Module 10276 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7084 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8529 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10187 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10191 */;
-import StarIcon from "StarIcon" /* 10193 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7099 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8546 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10235 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10239 */;
+import StarIcon from "StarIcon" /* 10241 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -190,11 +190,11 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   items8 = [, ];
   const obj7 = { src: emojiURL, name: str, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emoji };
   items8[0] = closure_11(messageId(stateFromStores1[26]), obj7);
-  const obj8 = { variant: "text-lg/semibold", color: "text-default", style: tmp.reactionText, children: tmp18 };
+  const obj8 = { variant: "body-lg/semibold", color: "text-default", style: tmp.reactionText, children: tmp18 };
   items8[1] = closure_11(channelId(stateFromStores1[27]).Text, obj8);
   const items9 = [closure_12(emojiURL, obj5), ];
   const Text = tmp3(tmp4[27]).Text;
-  const obj9 = { variant: "text-lg/semibold", color: "text-default", children: null };
+  const obj9 = { variant: "body-lg/semibold", color: "text-default", children: null };
   if (isEmojiPack) {
     let combined = str;
     if (null != emoji.id) {
@@ -205,7 +205,7 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
     items9[1] = closure_11(Text, obj9);
     obj4.children = items9;
     const items10 = [tmp24(tmp25, obj4), , ];
-    const obj10 = { variant: "text-md/normal", color: "text-subtle", style: tmp.packDescription, children: format(prop, obj11) };
+    const obj10 = { variant: "body-md/normal", color: "text-subtle", style: tmp.packDescription, children: format(prop, obj11) };
     const Text3 = tmp3(tmp4[27]).Text;
     const intl5 = tmp3(tmp4[19]).intl;
     format = intl5.format;
@@ -218,7 +218,7 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
       const TableRowGroup2 = tmp3(tmp4[30]).TableRowGroup;
       obj13 = { label: closure_11(Text4, obj14), onPress: callback4 };
       TableRow5 = tmp3(tmp4[31]).TableRow;
-      obj14 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl6.string(channelId(stateFromStores1[19]).t["zx/e4P"]) };
+      obj14 = { variant: "body-md/semibold", color: "text-feedback-critical", children: intl6.string(channelId(stateFromStores1[19]).t["zx/e4P"]) };
       Text4 = tmp3(tmp4[27]).Text;
       intl6 = tmp3(tmp4[19]).intl;
       canRemoveReactions = tmp26(TableRowGroup2, obj12);
@@ -284,7 +284,7 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
     if (tmp26Result4) {
       const obj18 = { label: closure_11(Text2, obj19), onPress: callback4 };
       const TableRow4 = tmp3(tmp4[31]).TableRow;
-      obj19 = { variant: "text-md/semibold", color: "text-feedback-critical", children: intl4.string(channelId(stateFromStores1[19]).t["zx/e4P"]) };
+      obj19 = { variant: "body-md/semibold", color: "text-feedback-critical", children: intl4.string(channelId(stateFromStores1[19]).t["zx/e4P"]) };
       Text2 = tmp3(tmp4[27]).Text;
       intl4 = tmp3(tmp4[19]).intl;
       tmp26Result4 = tmp26(TableRow4, obj18);

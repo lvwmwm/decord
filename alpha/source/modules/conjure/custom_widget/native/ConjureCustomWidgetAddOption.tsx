@@ -1,19 +1,19 @@
-// Module ID: 15076
-// Function ID: 15077
+// Module ID: 15156
+// Function ID: 15157
 // Name: ConjureCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 5141, 575, 15077, 9808, 5381, 15078, 8303, 12259, 1113, 3995, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 15157, 9826, 5382, 15158, 8319, 12320, 1113, 3995, 2]
 // Exports: default
 
-// Module 15076 (ConjureCustomWidgetAddOption)
+// Module 15156 (ConjureCustomWidgetAddOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9808 */;
-import MagicWandIcon from "MagicWandIcon" /* 12259 */;
-import ConjureCustomWidget from "ConjureCustomWidget" /* 15077 */;
-import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 15078 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9826 */;
+import MagicWandIcon from "MagicWandIcon" /* 12320 */;
+import ConjureCustomWidget from "ConjureCustomWidget" /* 15157 */;
+import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 15158 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -38,9 +38,9 @@ export default function ConjureCustomWidgetAddOption() {
   let tmp7 = null;
   if (isConjureMobileEnabled) {
     ({ icon: null, label: intl.string(_modDef3995["5WHmVU"]), subLabel: intl2.string(_modDef3995.yI85oV), onPress: tmp6 });
-    const RowButton = tmp2(8303).RowButton;
+    const RowButton = tmp2(8319).RowButton;
     ({ IconComponent: MagicWandIcon.MagicWandIcon, variant: "secondary" });
-    const Icon = tmp2(8303).RowButton.Icon;
+    const Icon = tmp2(8319).RowButton.Icon;
     intl = tmp2(1113).intl;
     intl2 = tmp2(1113).intl;
     tmp7 = <View style={tmp.container}>{null}</View>;

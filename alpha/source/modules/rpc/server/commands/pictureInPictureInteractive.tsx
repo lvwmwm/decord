@@ -1,17 +1,17 @@
-// Module ID: 16508
-// Function ID: 16509
+// Module ID: 16600
+// Function ID: 16601
 // Name: pictureInPictureInteractive
-// Dependencies: [6570, 1072, 6967, 11831, 16444, 16436, 11065, 16509, 2]
+// Dependencies: [6585, 1072, 6982, 11888, 16536, 16528, 11114, 16601, 2]
 
-// Module 16508 (pictureInPictureInteractive)
+// Module 16600 (pictureInPictureInteractive)
 import Constants2 from "Constants" /* 1072 */;
-import FramesConstants from "FramesConstants" /* 6967 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11065 */;
-import Constants3 from "Constants" /* 11831 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16436 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 16509 */;
-import Constants from "Constants" /* 6570 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16444 */;
+import FramesConstants from "FramesConstants" /* 6982 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11114 */;
+import Constants3 from "Constants" /* 11888 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16528 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 16601 */;
+import Constants from "Constants" /* 6585 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16536 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;

@@ -1,22 +1,22 @@
-// Module ID: 19156
-// Function ID: 19157
+// Module ID: 19259
+// Function ID: 19260
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 8118, 8094, 21, 5141, 575, 504, 7412, 8152, 1113, 6860, 8483, 5747, 5829, 16784, 2]
+// Dependencies: [19, 17, 8134, 8110, 21, 5141, 575, 504, 7428, 8168, 1113, 6875, 8499, 5761, 5843, 16876, 2]
 // Exports: default
 
-// Module 19156 (SuspendedUserPage)
+// Module 19259 (SuspendedUserPage)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6860 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8483 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 16784 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6875 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8499 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 16876 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8118 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8094 */;
+import SafetyHubStore from "SafetyHubStore" /* 8134 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8110 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ export default function SuspendedUserSafetyHubPage() {
         },
       icon: AssetRegistryDefault
     };
-    const IconButton = tmp2(8152).IconButton;
+    const IconButton = tmp2(8168).IconButton;
     intl = tmp2(1113).intl;
     items1 = [metroImportDefault(IconButton, obj4), ];
     const obj5 = {
@@ -73,15 +73,15 @@ export default function SuspendedUserSafetyHubPage() {
           const obj = LinkingDefault;
           obj.openURL(constants.WARNING_SYSTEM_HELPCENTER_LINK);
         },
-      variant: "text-xs/medium",
+      variant: "body-xs/medium",
       color: "control-critical-primary-text-default",
       children: items2
     };
-    const Text = tmp2(5747).Text;
+    const Text = tmp2(5761).Text;
     const intl2 = tmp2(1113).intl;
     items2 = [intl2.string(intl4.t["MG+Bzb"]), " ", ];
-    const obj6 = { style: tmp.link, variant: "text-xs/medium", color: "control-critical-primary-text-default", children: intl3.string(intl4.t["9JceHN"]) };
-    const Text2 = tmp2(5747).Text;
+    const obj6 = { style: tmp.link, variant: "body-xs/medium", color: "control-critical-primary-text-default", children: intl3.string(intl4.t["9JceHN"]) };
+    const Text2 = tmp2(5761).Text;
     intl3 = tmp2(1113).intl;
     items2[2] = metroImportDefault(Text2, obj6);
     items1[1] = metroImportAll(Text, obj5);

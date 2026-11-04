@@ -1,13 +1,13 @@
-// Module ID: 13948
-// Function ID: 13949
+// Module ID: 14034
+// Function ID: 14035
 // Name: useChatInputFloatingWidth
-// Dependencies: [19, 12945, 1652, 5377, 2]
+// Dependencies: [19, 13027, 1652, 5378, 2]
 // Exports: default
 
-// Module 13948 (useChatInputFloatingWidth)
+// Module 14034 (useChatInputFloatingWidth)
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import ChatInputConstants from "ChatInputConstants" /* 12945 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import ChatInputConstants from "ChatInputConstants" /* 13027 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

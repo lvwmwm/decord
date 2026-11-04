@@ -1,12 +1,12 @@
-// Module ID: 8269
-// Function ID: 8270
+// Module ID: 8285
+// Function ID: 8286
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 1499, 6846, 8128, 8093, 6660, 6665, 1113, 3223, 8096, 8097, 6147, 5747, 6887, 5754, 6849, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1499, 6861, 8144, 8109, 6675, 6680, 1113, 3223, 8112, 8113, 6162, 5761, 6902, 5768, 6864, 2]
 // Exports: default
 
-// Module 8269 (GoogleWalletVerificationScreen)
+// Module 8285 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -288,7 +288,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
     obj5 = { align: "center", justify: "center", spacing: 16, children: items4 };
     Stack = tmp(tmp2[15]).Stack;
     items4 = [callback2(callback1, { size: "large" }), ];
-    let obj6 = { variant: "text-md/medium", color: "text-strong", children: intl.string(onComplete(tmp2[12]).MlFuBI) };
+    let obj6 = { variant: "body-md/medium", color: "text-strong", children: intl.string(onComplete(tmp2[12]).MlFuBI) };
     const Text = tmp(tmp2[16]).Text;
     intl = tmp(tmp2[11]).intl;
     items4[1] = callback2(Text, obj6);
@@ -300,7 +300,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
     ModalContent2 = tmp(tmp2[14]).ModalContent;
     obj9 = { align: "center", justify: "center", spacing: 16, children: items5 };
     Stack2 = tmp(tmp2[15]).Stack;
-    let obj10 = { variant: "text-md/medium", color: "text-strong", children: tmp5.message };
+    let obj10 = { variant: "body-md/medium", color: "text-strong", children: tmp5.message };
     items5 = [callback2(tmp(tmp2[16]).Text, obj10), ];
     let obj11 = { children: callback2(Button, obj12) };
     const ButtonGroup = tmp(tmp2[17]).ButtonGroup;

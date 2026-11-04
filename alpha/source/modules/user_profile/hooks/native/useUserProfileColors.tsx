@@ -1,18 +1,18 @@
-// Module ID: 8935
-// Function ID: 8936
+// Module ID: 8952
+// Function ID: 8953
 // Name: useUserProfileColors
-// Dependencies: [5142, 1083, 5376, 7473, 504, 5719, 575, 8926, 1090, 2]
+// Dependencies: [5142, 1083, 5377, 7489, 504, 5732, 575, 8943, 1090, 2]
 // Exports: useUserProfileColors
 
-// Module 8935 (useUserProfileColors)
+// Module 8952 (useUserProfileColors)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import useToken from "useToken" /* 5719 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7473 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8926 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import useToken from "useToken" /* 5732 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7489 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8943 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import size from "module_2" /* 2 */;
 

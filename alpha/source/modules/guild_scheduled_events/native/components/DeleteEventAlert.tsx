@@ -1,14 +1,14 @@
-// Module ID: 9242
-// Function ID: 9243
+// Module ID: 9259
+// Function ID: 9260
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6975, 21, 5141, 504, 9095, 5381, 6084, 1113, 5747, 2]
+// Dependencies: [5, 19, 6990, 21, 5141, 504, 9112, 5382, 6099, 1113, 5761, 2]
 // Exports: default
 
-// Module 9242 (DeleteEventAlert)
+// Module 9259 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6975 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6990 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -129,7 +129,7 @@ export default function DeleteEventAlert(eventException) {
   if (null != recurrence_rule) {
     tmp8Result = null;
     if (null == recurrenceId) {
-      let obj3 = { variant: "text-md/medium", color: "text-default", style: tmp.contentText, children: intl3.format(tmp2(tmp3[9]).t.ZcpcyO, {}) };
+      let obj3 = { variant: "body-md/medium", color: "text-default", style: tmp.contentText, children: intl3.format(tmp2(tmp3[9]).t.ZcpcyO, {}) };
       const Text = tmp2(tmp3[10]).Text;
       intl3 = tmp2(tmp3[9]).intl;
       tmp8Result = tmp8(Text, obj3);

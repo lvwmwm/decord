@@ -1,15 +1,15 @@
-// Module ID: 16713
-// Function ID: 16714
+// Module ID: 16803
+// Function ID: 16804
 // Name: GuildProfileEmptyState
-// Dependencies: [5, 19, 17, 21, 5141, 16714, 5747, 1113, 5754, 14411, 2123, 2]
+// Dependencies: [5, 19, 17, 21, 5141, 16804, 5761, 1113, 5768, 14491, 2123, 2]
 // Exports: default
 
-// Module 16713 (GuildProfileEmptyState)
+// Module 16803 (GuildProfileEmptyState)
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 16714 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import GuildProfileEmptyStateSvgDefault from "GuildProfileEmptyStateSvg" /* 16804 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -46,7 +46,7 @@ export default function GuildProfileEmptyState() {
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items[1] = metroRequire(Text, obj4);
-  const obj5 = { style: tmp.header, variant: "text-sm/normal", color: "text-default", children: intl2.string(intl5.t.UEmBq7) };
+  const obj5 = { style: tmp.header, variant: "body-sm/normal", color: "text-default", children: intl2.string(intl5.t.UEmBq7) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items[2] = metroRequire(Text2, obj5);

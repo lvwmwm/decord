@@ -1,10 +1,10 @@
-// Module ID: 17371
-// Function ID: 17372
+// Module ID: 17462
+// Function ID: 17463
 // Name: GuildRoleSubscriptionMemberPreview
-// Dependencies: [19, 17, 1385, 21, 5141, 575, 1113, 504, 6161, 1411, 7476, 5837, 5747, 1090, 1187, 7494, 2]
+// Dependencies: [19, 17, 1385, 21, 5141, 575, 1113, 504, 6176, 1411, 7492, 5851, 5761, 1090, 1187, 7510, 2]
 // Exports: GuildRoleSubscriptionMemberPreview
 
-// Module 17371 (GuildRoleSubscriptionMemberPreview)
+// Module 17462 (GuildRoleSubscriptionMemberPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,11 +12,11 @@ import utils_ColorUtilsAll from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
-import RoleIconUtils from "RoleIconUtils" /* 7476 */;
-import RoleIconDefault from "RoleIcon" /* 7494 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
+import RoleIconUtils from "RoleIconUtils" /* 7492 */;
+import RoleIconDefault from "RoleIcon" /* 7510 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -86,9 +86,9 @@ export function GuildRoleSubscriptionMemberPreview(content) {
     items2 = [metroRequire(FastImageDefault, obj3), ];
     const obj4 = { style: tmp3.content, children: items5 };
     const obj5 = { style: tmp3.contextRow, children: items3 };
-    const obj6 = { variant: "text-md/semibold", color: "interactive-text-active", style: obj7, children: tmp8 };
+    const obj6 = { variant: "body-md/semibold", color: "interactive-text-active", style: obj7, children: tmp8 };
     obj7 = { color: obj11.int2hex(color) };
-    const Text = tmp4(5747).Text;
+    const Text = tmp4(5761).Text;
     obj11 = utils_ColorUtilsAll;
     items3 = [metroRequire(Text, obj6), , , ];
     let tmp12Result = null;
@@ -102,9 +102,9 @@ export function GuildRoleSubscriptionMemberPreview(content) {
     }
     items3[1] = tmp12Result;
     items3[2] = metroRequire(native.Spacer, { size: 8 });
-    items3[3] = metroRequire(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" });
+    items3[3] = metroRequire(Text_Text.Text, { variant: "body-xs/medium", color: "text-muted", children: "4:20 PM" });
     items5 = [metroImportAll(View, obj5), ];
-    const obj10 = { variant: "text-md/normal", color: "text-default", style: textStyle, children: content };
+    const obj10 = { variant: "body-md/normal", color: "text-default", style: textStyle, children: content };
     items5[1] = metroRequire(Text_Text.Text, obj10);
     items2[1] = metroImportAll(View, obj4);
     return metroImportAll(View, obj2);

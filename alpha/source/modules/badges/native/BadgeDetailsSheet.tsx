@@ -1,24 +1,24 @@
-// Module ID: 11601
-// Function ID: 11602
+// Module ID: 11652
+// Function ID: 11653
 // Name: BadgeDetailsSheet
-// Dependencies: [19, 17, 5142, 1385, 8887, 1072, 5396, 21, 5141, 575, 5855, 5747, 504, 11602, 11603, 11604, 11597, 11605, 2155, 1389, 11606, 11615, 11616, 5381, 11600, 11593, 7687, 1113, 11589, 11617, 5754, 11618, 1627, 11592, 8892, 11598, 5395, 5398, 2]
+// Dependencies: [19, 17, 5142, 1385, 8904, 1072, 5397, 21, 5141, 575, 5869, 5761, 504, 11653, 11654, 11655, 11648, 11656, 2155, 1389, 11657, 11666, 11667, 5382, 11651, 11644, 7703, 1113, 11639, 11668, 5768, 11669, 1627, 11642, 8909, 11649, 5396, 5400, 2]
 // Exports: default
 
-// Module 11601 (BadgeDetailsSheet)
+// Module 11652 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5855 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8892 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11600 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11616 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5869 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8909 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11651 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11667 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import UserStore from "UserStore" /* 1385 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8887 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -75,7 +75,7 @@ function InfoNotice(children) {
   const obj2 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_INFO, style: tmp.noticeIcon };
   const CircleInformationIcon = CircleInformationIcon2.CircleInformationIcon;
   items = [authStore(CircleInformationIcon, obj2), ];
-  const obj3 = { variant: "text-xs/medium", color: "text-default", style: tmp.noticeText, children };
+  const obj3 = { variant: "body-xs/medium", color: "text-default", style: tmp.noticeText, children };
   items[1] = authStore(Text_Text.Text, obj3);
   return unpackModuleId(React3, obj);
 }
@@ -175,12 +175,12 @@ function BadgeDetailsSheetContent(badge) {
   if (!tmp2Result12.isNullOrEmpty(badge.info_label)) {
     const push = items2.push;
     const obj5 = { key: "info", node: closure_10(badge(isViewingOtherUser[11]).Text, obj6) };
-    obj6 = { variant: "text-md/medium", color: "text-subtle", children: badge.info_label };
+    obj6 = { variant: "body-md/medium", color: "text-subtle", children: badge.info_label };
     push(obj5);
   }
   const push2 = items2.push;
   const obj7 = { key: "status", node: closure_10(Text, obj8) };
-  obj8 = { variant: "text-md/medium", color: "text-subtle", children: tmp2Result13.getBadgeStatusText(badge, tmp7) };
+  obj8 = { variant: "body-md/medium", color: "text-subtle", children: tmp2Result13.getBadgeStatusText(badge, tmp7) };
   Text = tmp2(tmp3[11]).Text;
   tmp2Result13 = badge(isViewingOtherUser[17]);
   push2(obj7);
@@ -253,7 +253,7 @@ function BadgeDetailsSheetContent(badge) {
   let isBetaBadgeIdResult = tmp2Result19.isBetaBadgeId(badge.badge_id);
   if (isBetaBadgeIdResult) {
     const obj15 = { style: tmp.betaPill, children: closure_10(Text2, obj16) };
-    obj16 = { variant: "text-xs/semibold", color: "text-default", style: tmp.uppercase, children: intl2.string(badge(isViewingOtherUser[27]).t.oW0eUd) };
+    obj16 = { variant: "body-xs/semibold", color: "text-default", style: tmp.uppercase, children: intl2.string(badge(isViewingOtherUser[27]).t.oW0eUd) };
     Text2 = tmp2(tmp3[11]).Text;
     intl2 = tmp2(tmp3[27]).intl;
     isBetaBadgeIdResult = tmp18(tmp36, obj15);
@@ -274,7 +274,7 @@ function BadgeDetailsSheetContent(badge) {
   let tmp18Result8 = null != eyebrow;
   const obj18 = { style: tmp.identity, children: items7 };
   if (tmp18Result8) {
-    const obj19 = { variant: "text-md/medium", color: "text-subtle", style: items6, children: eyebrow };
+    const obj19 = { variant: "body-md/medium", color: "text-subtle", style: items6, children: eyebrow };
     items6 = [, ];
     ({ centeredText: arr8[0], eyebrow: arr8[1] } = tmp);
     tmp18Result8 = tmp18(tmp2(tmp3[11]).Text, obj19);
@@ -323,13 +323,13 @@ function BadgeDetailsSheetContent(badge) {
     let tmp18Result10 = isLegacyDisplayBadgeResult;
     const obj28 = { style: tmp.descriptionGroup, children: items12 };
     if (tmp18Result10) {
-      const obj29 = { variant: "text-sm/medium", color: "text-subtle", children: intl4.string(badge(isViewingOtherUser[27]).t["/Gmn3f"]) };
+      const obj29 = { variant: "body-sm/medium", color: "text-subtle", children: intl4.string(badge(isViewingOtherUser[27]).t["/Gmn3f"]) };
       const Text3 = tmp2(tmp3[11]).Text;
       intl4 = tmp2(tmp3[27]).intl;
       tmp18Result10 = tmp18(Text3, obj29);
     }
     items12 = [tmp18Result10, ];
-    const obj30 = { variant: "text-md/medium", color: "text-default", children: badgeDescriptionText };
+    const obj30 = { variant: "body-md/medium", color: "text-default", children: badgeDescriptionText };
     items12[1] = closure_10(badge(isViewingOtherUser[11]).Text, obj30);
     tmp34Result4 = tmp34(tmp36, obj28);
   }
@@ -410,7 +410,7 @@ size = { width: 3, height: 3, borderRadius: nativeDefault.radii.round, backgroun
 obj9 = { gap: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
 obj10 = { gap: nativeDefault.space.PX_4 };
 obj11 = { height: 1, marginTop: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
-obj12 = { flexDirection: "row", gap: nativeDefault.space.PX_4, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+obj12 = { flexDirection: "row", gap: nativeDefault.space.PX_4, padding: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
 let closure_13 = createStyles(obj);
 size = size_mod;
 let result = size.fileFinishedImporting("modules/badges/native/BadgeDetailsSheet.tsx");
@@ -517,7 +517,7 @@ export default function BadgeDetailsSheet(badgeId) {
     const intl = tmp4(tmp2[27]).intl;
     const string = intl.string;
     const t = tmp4(tmp2[27]).t;
-    const obj12 = { variant: "text-md/medium", color: "text-default", children: string(tmp17Result ? t.eAn6z2 : t.ZTNur7) };
+    const obj12 = { variant: "body-md/medium", color: "text-default", children: string(tmp17Result ? t.eAn6z2 : t.ZTNur7) };
     items14 = [closure_10(Text, obj12), ];
     const tmp21 = closure_11;
     const tmp22 = closure_4;

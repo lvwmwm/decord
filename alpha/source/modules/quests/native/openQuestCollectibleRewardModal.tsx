@@ -1,19 +1,19 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 14920
+// Function ID: 14921
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1385, 6901, 21, 5141, 575, 504, 9832, 9813, 5747, 1113, 7977, 14626, 2]
+// Dependencies: [1385, 6916, 21, 5141, 575, 504, 9850, 9831, 5761, 1113, 7993, 14706, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 14840 (openQuestCollectibleRewardModal)
+// Module 14920 (openQuestCollectibleRewardModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
-import getQuestLogger from "getQuestLogger" /* 7977 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9813 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9832 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14626 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
+import getQuestLogger from "getQuestLogger" /* 7993 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9831 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9850 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14706 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -41,7 +41,7 @@ function QuestCollectibleRewardModalMessages(quest) {
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1 = [hasOwnProperty(Text, obj5), ];
-  const obj6 = { variant: "text-md/medium", style: tmp.title, children: claimedCollectibleRewardMessage };
+  const obj6 = { variant: "body-md/medium", style: tmp.title, children: claimedCollectibleRewardMessage };
   items1[1] = hasOwnProperty(Text_Text.Text, obj6);
   return metroImportDefault(metroRequire, obj4);
 }

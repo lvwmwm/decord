@@ -1,21 +1,21 @@
-// Module ID: 10444
-// Function ID: 10445
+// Module ID: 10492
+// Function ID: 10493
 // Name: PlaintextResolvers
-// Dependencies: [32, 6916, 6961, 4990, 5071, 5053, 5047, 5012, 5073, 5083, 1385, 1072, 1388, 7953, 5772, 11, 6899, 5087, 7951, 5091, 2]
+// Dependencies: [32, 6931, 6976, 4990, 5071, 5053, 5047, 5012, 5073, 5083, 1385, 1072, 1388, 7969, 5786, 11, 6914, 5087, 7967, 5091, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 10444 (PlaintextResolvers)
+// Module 10492 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5087 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6899 */;
-import SlateUtils from "SlateUtils" /* 7953 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6914 */;
+import SlateUtils from "SlateUtils" /* 7969 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6961 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6976 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
@@ -208,7 +208,7 @@ function resolvePlaintextInlineVoid(text, id5, id, arg3) {
     if (null != match) {
       const tmp8 = match[1];
       const disambiguatedEmojiContext = EmojiStore.getDisambiguatedEmojiContext(id5);
-      let tmp11 = tmp4(7951)(disambiguatedEmojiContext, tmp8);
+      let tmp11 = tmp4(7967)(disambiguatedEmojiContext, tmp8);
       let channel = null;
       if (null != id) {
         let tmp13 = ChannelStore;

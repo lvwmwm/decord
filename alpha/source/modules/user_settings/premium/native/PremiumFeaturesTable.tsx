@@ -1,22 +1,22 @@
-// Module ID: 15504
-// Function ID: 15505
+// Module ID: 15591
+// Function ID: 15592
 // Name: PremiumFeaturesTable
-// Dependencies: [32, 19, 17, 1072, 1387, 21, 5141, 575, 6898, 5376, 5148, 1187, 15505, 15506, 5747, 1113, 5710, 10039, 2176, 15507, 15508, 5837, 15509, 15510, 15511, 15512, 15513, 2]
+// Dependencies: [32, 19, 17, 1072, 1387, 21, 5141, 575, 6913, 5377, 5148, 1187, 15592, 15593, 5761, 1113, 5723, 10087, 2176, 15594, 15595, 5851, 15596, 15597, 15598, 15599, 15600, 2]
 // Exports: default
 
-// Module 15504 (PremiumFeaturesTable)
+// Module 15591 (PremiumFeaturesTable)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl32 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15505 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15506 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15592 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15593 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -56,7 +56,7 @@ function CellText(arg0) {
   let style;
   let text;
   ({ text, style } = arg0);
-  return unpackModuleId(Text_Text.Text, { style, variant: "text-md/medium", color: "mobile-text-heading-primary", children });
+  return unpackModuleId(Text_Text.Text, { style, variant: "body-md/medium", color: "mobile-text-heading-primary", children });
 }
 function Row(withTopBorderRadius) {
   let closure_0;
@@ -380,7 +380,7 @@ export default function PremiumFeaturesTable(highlightNitroBasic) {
   intl7 = tmp9(tmp3[15]).intl;
   intl8 = tmp9(tmp3[15]).intl;
   items[3] = obj12;
-  const obj14 = { label: closure_11(CellText, obj15), rowName: intl10.string(tmp9(tmp3[15]).t["ufhQC+"]), column1: closure_11(tmp9(tmp3[14]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: maxFileSizeForPremiumType }), column1AccessibilityLabel: maxFileSizeForPremiumType, column2: closure_11(tmp9(tmp3[14]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: maxFileSizeForPremiumType1 }), column2AccessibilityLabel: maxFileSizeForPremiumType1 };
+  const obj14 = { label: closure_11(CellText, obj15), rowName: intl10.string(tmp9(tmp3[15]).t["ufhQC+"]), column1: closure_11(tmp9(tmp3[14]).Text, { variant: "body-md/medium", color: "mobile-text-heading-primary", children: maxFileSizeForPremiumType }), column1AccessibilityLabel: maxFileSizeForPremiumType, column2: closure_11(tmp9(tmp3[14]).Text, { variant: "body-md/medium", color: "mobile-text-heading-primary", children: maxFileSizeForPremiumType1 }), column2AccessibilityLabel: maxFileSizeForPremiumType1 };
   obj15 = { text: intl9.string(tmp9(tmp3[15]).t["ufhQC+"]) };
   intl9 = tmp9(tmp3[15]).intl;
   intl10 = tmp9(tmp3[15]).intl;

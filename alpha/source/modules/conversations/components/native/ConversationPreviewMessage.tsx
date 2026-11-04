@@ -1,15 +1,15 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10063
+// Function ID: 10064
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 5142, 5053, 21, 8501, 8834, 5141, 575, 504, 6161, 8543, 4966, 4963, 1187, 5747, 10016, 2]
+// Dependencies: [19, 17, 5142, 5053, 21, 8518, 8851, 5141, 575, 504, 6176, 8560, 4966, 4963, 1187, 5761, 10064, 2]
 // Exports: default
 
-// Module 10015 (ConversationPreviewMessage)
+// Module 10063 (ConversationPreviewMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DateUtils from "DateUtils" /* 4963 */;
-import RowGeneratorDefault from "RowGenerator" /* 8501 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8834 */;
+import RowGeneratorDefault from "RowGenerator" /* 8518 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8851 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
@@ -98,7 +98,7 @@ export default function ConversationPreviewMessage(message) {
       tmp25Result = tmp25(tmp2(tmp3[14]).RoleDot, obj8);
     }
     items5 = [tmp25Result, ];
-    const obj10 = { variant: "text-md/medium", lineClamp: 1, style: {}, gradientColors: tmp28, children: tmp7 };
+    const obj10 = { variant: "body-md/medium", lineClamp: 1, style: {}, gradientColors: tmp28, children: tmp7 };
     tmp28 = undefined;
     const Text = tmp2(tmp3[15]).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
@@ -106,7 +106,7 @@ export default function ConversationPreviewMessage(message) {
     }
     items5[1] = closure_7(Text, obj10);
     items4[1] = closure_8(View, obj7);
-    const obj11 = { variant: "text-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.headerTimestamp, children: memo };
+    const obj11 = { variant: "body-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.headerTimestamp, children: memo };
     items4[2] = closure_7(message(setting[15]).Text, obj11);
     items6 = [closure_8(View, obj5), ];
     const obj12 = { pointerEvents: "none", horizontalOffset: 0, modifyRow, message, rowGenerator };

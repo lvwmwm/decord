@@ -1,18 +1,18 @@
-// Module ID: 13975
-// Function ID: 13976
+// Module ID: 14061
+// Function ID: 14062
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 5141, 1377, 575, 5148, 9953, 5376, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 1377, 575, 5148, 9971, 5377, 5761, 1113, 2]
 // Exports: default
 
-// Module 13975 (NewBadge)
+// Module 14061 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9953 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9971 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -50,7 +50,7 @@ export default function NewBadge() {
   const tmp2 = useIsUsingClientThemeDefault();
   const tmp3 = useThemeDefault();
   const tmp4 = closure_5(tmp2, tmp3);
-  ({ variant: "text-xxs/semibold", style: tmp4.text, color: str, children: intl.string(intl2.t.y2b7CA) });
+  ({ variant: "footnote/semibold", style: tmp4.text, color: str, children: intl.string(intl2.t.y2b7CA) });
   const Text = Text_Text.Text;
   const obj3 = shared;
   if (obj3.isThemeLight(tmp3)) {

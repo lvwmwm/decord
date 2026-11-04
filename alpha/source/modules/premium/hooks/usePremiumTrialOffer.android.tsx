@@ -1,11 +1,11 @@
-// Module ID: 7751
-// Function ID: 7752
+// Module ID: 7767
+// Function ID: 7768
 // Name: usePremiumTrialOffer
-// Dependencies: [7752, 2]
+// Dependencies: [7768, 2]
 // Exports: usePremiumTrialOffer
 
-// Module 7751 (usePremiumTrialOffer)
-import useAndroidAndLegacyIOSPremiumTrialOfferCandidates from "useAndroidAndLegacyIOSPremiumTrialOfferCandidates" /* 7752 */;
+// Module 7767 (usePremiumTrialOffer)
+import useAndroidAndLegacyIOSPremiumTrialOfferCandidates from "useAndroidAndLegacyIOSPremiumTrialOfferCandidates" /* 7768 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/hooks/usePremiumTrialOffer.android.tsx");

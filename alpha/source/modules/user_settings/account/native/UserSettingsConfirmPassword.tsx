@@ -1,17 +1,17 @@
-// Module ID: 7284
-// Function ID: 7285
+// Module ID: 7300
+// Function ID: 7301
 // Name: UserSettingsConfirmPassword
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5141, 575, 7285, 504, 7286, 6566, 1242, 1113, 7288, 5747, 7207, 7233, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5141, 575, 7301, 504, 7302, 6581, 1242, 1113, 7304, 5761, 7222, 7253, 5768, 2]
 // Exports: UserSettingsConfirmPasswordWrapped
 
-// Module 7284 (UserSettingsConfirmPassword)
+// Module 7300 (UserSettingsConfirmPassword)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7207 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7285 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7286 */;
-import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7288 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 7222 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7301 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
+import UserSettingsAccountUnverifiedHeaderDefault from "UserSettingsAccountUnverifiedHeader" /* 7304 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -33,8 +33,8 @@ let obj4;
 let tmp3;
 let unpackModuleId;
 const intl5 = tmp3(1113);
-const Text_Text = tmp3(5747);
-const components_Button_Button = tmp3(5754);
+const Text_Text = tmp3(5761);
+const components_Button_Button = tmp3(5768);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 const UserSettingsSections = Constants.UserSettingsSections;
@@ -235,7 +235,7 @@ class UserSettingsConfirmPasswordInner {
       const Text = Text_Text.Text;
       intl = intl5.intl;
       items3 = [closure_10(Text, obj5), , , , ];
-      let obj6 = { style: tmp.prompt, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl5.t.vaZmAx) };
+      let obj6 = { style: tmp.prompt, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl5.t.vaZmAx) };
       const Text2 = Text_Text.Text;
       intl2 = intl5.intl;
       items3[1] = closure_10(Text2, obj6);
@@ -254,7 +254,7 @@ class UserSettingsConfirmPasswordInner {
         tmp20Result = null;
         if (null == obj2.getFieldMessage("password")) {
           const obj9 = { style: tmp.hint, children: obj2.message };
-          tmp20Result = tmp20(tmp21(7233), obj9);
+          tmp20Result = tmp20(tmp21(7253), obj9);
         }
       }
       items3[3] = tmp20Result;

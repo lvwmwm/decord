@@ -1,14 +1,14 @@
-// Module ID: 20099
-// Function ID: 20100
+// Module ID: 20215
+// Function ID: 20216
 // Name: RoleTierEditStore
-// Dependencies: [32, 5, 1259, 1254, 7554, 5056, 5716, 17346, 2]
+// Dependencies: [32, 5, 1259, 1254, 7570, 5056, 5729, 17437, 2]
 // Exports: resetImperatively, useCurrentTierEditScene, useGroupCoverState, useGroupDescriptionState, useGroupIsFullGateState, usePriceTiersAvailableInGuild, useResetTierEditState
 
-// Module 20099 (RoleTierEditStore)
+// Module 20215 (RoleTierEditStore)
 import react_native from "react-native" /* 1259 */;
 import _slicedToArray2 from "_slicedToArray" /* 5056 */;
-import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7554 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17346 */;
+import GuildRoleSubscriptionsHttpApiAll from "GuildRoleSubscriptionsHttpApi" /* 7570 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 17437 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
@@ -28,7 +28,7 @@ function usePriceTiers(guildId) {
     return items;
   }, require("_slicedToArray").shallow);
   let closure_2 = tmp3;
-  tiers(5716)(() => {
+  tiers(5729)(() => {
     let tmp2 = null == first;
     const tmp = guildId;
     if (tmp2) {

@@ -1,12 +1,12 @@
-// Module ID: 17474
-// Function ID: 17475
+// Module ID: 17564
+// Function ID: 17565
 // Name: useDisplayNameStylesNewItems
-// Dependencies: [19, 16618, 1403, 504, 16619, 2]
+// Dependencies: [19, 16708, 1403, 504, 16709, 2]
 // Exports: useDisplayNameStylesNewEffects, useDisplayNameStylesNewEffectsBadge, useDisplayNameStylesNewFonts, useDisplayNameStylesNewFontsBadge
 
-// Module 17474 (useDisplayNameStylesNewItems)
+// Module 17564 (useDisplayNameStylesNewItems)
 import react from "react" /* 19 */;
-import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 16618 */;
+import DisplayNameStylesSeenStore from "DisplayNameStylesSeenStore" /* 16708 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1403 */;
 import size from "module_2" /* 2 */;
 
@@ -42,28 +42,29 @@ export function useDisplayNameStylesNewFonts(visibleFontOrder) {
   items1 = [visibleFontOrder, stateFromStores];
   return obj2;
 }
-export function useDisplayNameStylesNewEffects(visibleEffectOrder) {
+export function useDisplayNameStylesNewEffects(arg0) {
+  let closure_0;
   let items1;
   let seenEffects;
   let stateFromStores;
-  _require = visibleEffectOrder;
+  _require = arg0;
   let obj = require("get initialized");
   const items = [DisplayNameStylesSeenStore];
   stateFromStores = obj.useStateFromStores(items, () => seenEffects.getSeenEffects());
   const obj2 = {
     dotEffectIds: react.useMemo(() => {
-      set = new Set(visibleEffectOrder.filter((item) => {
+      set = new Set(closure_0.filter((item) => {
         const hasItem = closure_2_4.includes(item) && !set.has(item);
         return hasItem;
       }));
       return set;
     }, items1),
     dismissEffectDot: react.useCallback((effectId) => {
-      const obj = visibleEffectOrder(stateFromStores[4]);
+      const obj = closure_0(stateFromStores[4]);
       const result = obj.markDisplayNameStyleEffectSeen(effectId);
     }, [])
   };
-  items1 = [visibleEffectOrder, stateFromStores];
+  items1 = [arg0, stateFromStores];
   return obj2;
 }
 export function useDisplayNameStylesNewFontsBadge(visibleFontOrder) {
@@ -83,18 +84,19 @@ export function useDisplayNameStylesNewFontsBadge(visibleFontOrder) {
   };
   return obj3;
 }
-export function useDisplayNameStylesNewEffectsBadge(visibleEffectOrder) {
+export function useDisplayNameStylesNewEffectsBadge(arg0) {
+  let closure_0;
   let newEffectsBadgeDismissed;
-  _require = visibleEffectOrder;
+  _require = arg0;
   let obj = require("get initialized");
   const items = [DisplayNameStylesSeenStore];
-  const items1 = [visibleEffectOrder];
+  const items1 = [arg0];
   const stateFromStores = obj.useStateFromStores(items, () => newEffectsBadgeDismissed.getNewEffectsBadgeDismissed());
-  const tmp2 = react.useMemo(() => visibleEffectOrder.some((item) => closure_1_4.includes(item)), items1) && !stateFromStores;
+  const tmp2 = react.useMemo(() => closure_0.some((item) => closure_1_4.includes(item)), items1) && !stateFromStores;
   const obj3 = {
     showEffectsBadge: tmp2,
     dismissEffectsBadge: react.useCallback(() => {
-      const obj = visibleEffectOrder(dependencyMap[4]);
+      const obj = closure_0(dependencyMap[4]);
       const result = obj.markDisplayNameStyleNewEffectsBadgeDismissed();
     }, [])
   };

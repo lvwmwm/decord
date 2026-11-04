@@ -1,23 +1,23 @@
-// Module ID: 18987
-// Function ID: 18988
+// Module ID: 19090
+// Function ID: 19091
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7924, 5083, 21, 5141, 575, 1499, 7446, 7471, 1627, 504, 18988, 2017, 8874, 18989, 18992, 18670, 5849, 1113, 7101, 13539, 17234, 5754, 10858, 13471, 2]
+// Dependencies: [19, 17, 7940, 5083, 21, 5141, 575, 1499, 7462, 7487, 1627, 504, 19091, 2017, 8891, 19092, 19095, 18771, 5863, 1113, 7116, 13623, 17326, 5768, 10906, 13555, 2]
 // Exports: default
 
-// Module 18987 (FriendsScreen)
+// Module 19090 (FriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import SendMessageIcon from "SendMessageIcon" /* 5849 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import NoResultsDefault from "NoResults" /* 13539 */;
-import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 17234 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18670 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import SendMessageIcon from "SendMessageIcon" /* 5863 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import NoResultsDefault from "NoResults" /* 13623 */;
+import WumpusCouchSpotIllustration from "WumpusCouchSpotIllustration" /* 17326 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18771 */;
 import react from "react" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7924 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7940 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

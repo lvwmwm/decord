@@ -1,16 +1,16 @@
-// Module ID: 7923
-// Function ID: 7924
+// Module ID: 7939
+// Function ID: 7940
 // Name: UserSearchItems
-// Dependencies: [5, 7924, 7925, 5083, 1385, 1072, 3, 5019, 7927, 2]
+// Dependencies: [5, 7940, 7941, 5083, 1385, 1072, 3, 5019, 7943, 2]
 
-// Module 7923 (UserSearchItems)
+// Module 7939 (UserSearchItems)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 5019 */;
-import UserSearchUtils from "UserSearchUtils" /* 7927 */;
+import UserSearchUtils from "UserSearchUtils" /* 7943 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7924 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7925 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7940 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7941 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

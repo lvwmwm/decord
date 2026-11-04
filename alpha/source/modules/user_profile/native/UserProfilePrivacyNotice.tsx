@@ -1,10 +1,10 @@
-// Module ID: 15127
-// Function ID: 15128
+// Module ID: 15207
+// Function ID: 15208
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1072, 4987, 21, 5141, 575, 1196, 1113, 8492, 4966, 4974, 7693, 5747, 7687, 5855, 7106, 7180, 2]
+// Dependencies: [32, 19, 17, 1072, 4987, 21, 5141, 575, 1196, 1113, 8509, 4966, 4974, 7709, 5761, 7703, 5869, 7121, 7195, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 15127 (UserProfilePrivacyNotice)
+// Module 15207 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,11 +13,11 @@ import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 4966 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5855 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7693 */;
-import useUserIsTeen from "useUserIsTeen" /* 8492 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5869 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7709 */;
+import useUserIsTeen from "useUserIsTeen" /* 8509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -34,7 +34,7 @@ const UserSettingsSections = Constants.UserSettingsSections;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { container: obj2, icon: { flexShrink: 0, marginTop: 2 }, text: { flex: 1 }, closeButton: { flexShrink: 0 } };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8 };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO, borderWidth: 1, borderColor: nativeDefault.colors.ICON_FEEDBACK_INFO, borderRadius: nativeDefault.radii.sm, padding: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8 };
 let closure_9 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfilePrivacyNotice.tsx");
 
@@ -67,7 +67,7 @@ export default function UserProfilePrivacyNotice() {
   const setting1 = ProfileVisibility2.useSetting();
   const callback = react.useCallback((children, arg1) => {
     let obj = {
-      variant: "text-sm/normal",
+      variant: "body-sm/normal",
       color: "text-link",
       onPress() {
         const obj = closure_1_0(closure_1_1[15]);
@@ -93,8 +93,8 @@ export default function UserProfilePrivacyNotice() {
     const obj3 = { style: tmp.container, children: items1 };
     const obj4 = { style: tmp.icon, children: closure_7(CircleInformationIcon.CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
     items1 = [closure_7(View, obj4), , ];
-    const obj5 = { style: tmp.text, variant: "text-sm/normal", color: "text-default", children: intl.format(dqQ7AN, obj6) };
-    const Text = tmp2(5747).Text;
+    const obj5 = { style: tmp.text, variant: "body-sm/normal", color: "text-default", children: intl.format(dqQ7AN, obj6) };
+    const Text = tmp2(5761).Text;
     intl = tmp2(1113).intl;
     obj6 = { privacySettingsLink: callback };
     items1[1] = closure_7(Text, obj5);
@@ -107,7 +107,7 @@ export default function UserProfilePrivacyNotice() {
       style: tmp.closeButton,
       children: closure_7(XSmallIcon.XSmallIcon, { size: "xs", color: "icon-feedback-info" })
     };
-    const PressableOpacity = tmp2(7106).PressableOpacity;
+    const PressableOpacity = tmp2(7121).PressableOpacity;
     intl2 = tmp2(1113).intl;
     items1[2] = closure_7(PressableOpacity, obj7);
     return closure_8(View, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 10157
-// Function ID: 10158
+// Module ID: 10205
+// Function ID: 10206
 // Name: getEmojiItemUrl
 // Dependencies: [1411, 2]
 // Exports: default
 
-// Module 10157 (getEmojiItemUrl)
+// Module 10205 (getEmojiItemUrl)
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import size from "module_2" /* 2 */;
 

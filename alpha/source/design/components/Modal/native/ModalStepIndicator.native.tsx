@@ -1,15 +1,15 @@
-// Module ID: 13350
-// Function ID: 13351
+// Module ID: 13433
+// Function ID: 13434
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 5141, 575, 1652, 5719, 5757, 1113, 2204, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1652, 5732, 5771, 1113, 2204, 2]
 // Exports: ModalStepIndicator
 
-// Module 13350 (ModalStepIndicator)
+// Module 13433 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2204 from "module_2204" /* 2204 */;
-import spring_spring from "spring/spring" /* 5757 */;
+import spring_spring from "spring/spring" /* 5771 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -49,10 +49,10 @@ function StepPill(isActive) {
     num2 = 1;
   }
   sharedValue = useSharedValue(num2);
-  const tmp6Result = isActive(5719);
+  const tmp6Result = isActive(5732);
   const token = tmp6Result.useToken(TEXT_BRAND);
   let items = [isActive, sharedValue];
-  const tmp6Result3 = isActive(5719);
+  const tmp6Result3 = isActive(5732);
   const token1 = tmp6Result3.useToken(BACKGROUND_MOD_STRONG);
   const effect = react.useEffect(() => {
     let num = 0;

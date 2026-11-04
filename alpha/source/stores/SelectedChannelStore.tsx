@@ -1,7 +1,7 @@
 // Module ID: 5044
 // Function ID: 5045
 // Name: SelectedChannelStore
-// Dependencies: [5045, 4994, 502, 4990, 5071, 5012, 2135, 5073, 5172, 1072, 4997, 510, 12, 1380, 1084, 5321, 1099, 5773, 504, 572, 2]
+// Dependencies: [5045, 4994, 502, 4990, 5071, 5012, 2135, 5073, 5172, 1072, 4997, 510, 12, 1380, 1084, 5322, 1099, 5787, 504, 572, 2]
 // Exports: findFirstVoiceChannelId, handleConnectionOpen
 
 // Module 5044 (SelectedChannelStore)
@@ -13,8 +13,8 @@ import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import router_utils from "router_utils" /* 1099 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5321 */;
-import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 5773 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5322 */;
+import isAccessibleNonStaticChannelPathDefault from "isAccessibleNonStaticChannelPath" /* 5787 */;
 import GatedChannelStore from "GatedChannelStore" /* 5045 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -326,7 +326,7 @@ class SelectedChannelStore extends Store {
     }
     let guildId = arg0;
     let tmp2 = null;
-    if (arg0 !== version) {
+    if (arg0 !== authStore6) {
       if (guildId == null) {
         guildId = SelectedGuildStore.getGuildId();
       }

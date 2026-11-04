@@ -1,16 +1,16 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 12994
+// Function ID: 12995
 // Name: ConjureRestoreProposalCard
-// Dependencies: [19, 21, 12317, 12272, 6147, 5747, 1113, 3995, 5754, 2]
+// Dependencies: [19, 21, 12382, 12333, 6162, 5761, 1113, 3995, 5768, 2]
 // Exports: default
 
-// Module 12913 (ConjureRestoreProposalCard)
+// Module 12994 (ConjureRestoreProposalCard)
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12272 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12317 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12333 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12382 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -30,25 +30,25 @@ export default function ConjureRestoreProposalCard(arg0) {
   const relative = obj.formatAuthoredAt(proposal.authored_at).relative;
   const tmp5 = ConjureNativeCardSurfaceDefault;
   const Stack = Stack_Stack.Stack;
-  const obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3995["t+b0rz"]) };
+  const obj2 = { variant: "body-sm/semibold", color: "text-muted", children: intl.string(_modDef3995["t+b0rz"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   const items = [_false(Text, obj2), , ];
   const Stack2 = Stack_Stack.Stack;
   const items1 = [, ];
-  const obj3 = { variant: "text-md/medium", color: "text-default", children: proposal.subject };
+  const obj3 = { variant: "body-md/medium", color: "text-default", children: proposal.subject };
   items1[0] = _false(Text_Text.Text, obj3);
   let tmp3Result = null;
   if (null != relative) {
-    const obj4 = { variant: "text-sm/normal", color: "text-muted", children: relative };
-    tmp3Result = tmp3(tmp(5747).Text, obj4);
+    const obj4 = { variant: "body-sm/normal", color: "text-muted", children: relative };
+    tmp3Result = tmp3(tmp(5761).Text, obj4);
   }
   items1[1] = tmp3Result;
   items[1] = React3(Stack2, { direction: "vertical", spacing: 4, children: items1 });
   let tmp3Result2 = null;
   if (null != onRestore) {
     const obj5 = { text: intl2.string(_modDef3995.H8Jfhu), variant: "secondary", onPress: onRestore };
-    const Button = tmp(5754).Button;
+    const Button = tmp(5768).Button;
     intl2 = tmp(1113).intl;
     tmp3Result2 = tmp3(Button, obj5);
   }

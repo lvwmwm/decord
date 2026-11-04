@@ -1,14 +1,14 @@
-// Module ID: 7753
-// Function ID: 7754
+// Module ID: 7769
+// Function ID: 7770
 // Name: useTrialOffer
-// Dependencies: [32, 19, 1385, 7754, 504, 2176, 4985, 2]
+// Dependencies: [32, 19, 1385, 7770, 504, 2176, 4985, 2]
 // Exports: hasUserTrialOfferExpired, useTrialOffer
 
-// Module 7753 (useTrialOffer)
+// Module 7769 (useTrialOffer)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import UserOfferStore from "UserOfferStore" /* 7754 */;
+import UserOfferStore from "UserOfferStore" /* 7770 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,7 +64,7 @@ export function useTrialOffer(arg0) {
   }
   const items2 = [first, stateFromStores];
   const effect = obj3.useEffect(function() {
-    const f136286 = () => {
+    const f136956 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired) {
@@ -81,7 +81,7 @@ export function useTrialOffer(arg0) {
         }
         const obj = timeout;
         if (timeout != null) {
-          obj.start(num, f136286);
+          obj.start(num, f136956);
         }
       }
     };
@@ -99,7 +99,7 @@ export function useTrialOffer(arg0) {
             let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, f136286);
+          timeout.start(num, f136956);
         }
         return () => timeout.stop();
       }

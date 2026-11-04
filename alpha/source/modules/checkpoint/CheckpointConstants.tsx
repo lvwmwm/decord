@@ -1,11 +1,11 @@
-// Module ID: 6186
-// Function ID: 6187
+// Module ID: 6201
+// Function ID: 6202
 // Name: CheckpointConstants
-// Dependencies: [3219, 6187, 2]
+// Dependencies: [3219, 6202, 2]
 
-// Module 6186 (CheckpointConstants)
+// Module 6201 (CheckpointConstants)
 import _modDef3219 from "module_3219" /* 3219 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6187 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6202 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ list: "gamesByPlayers", label: _modDef3219.b4s18j }, , , , ];

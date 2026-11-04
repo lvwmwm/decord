@@ -1,20 +1,20 @@
-// Module ID: 7703
-// Function ID: 7704
+// Module ID: 7719
+// Function ID: 7720
 // Name: EntitlementStore
-// Dependencies: [2168, 2165, 7016, 1387, 504, 12, 7704, 7705, 2175, 1075, 572, 2]
+// Dependencies: [2168, 2165, 7031, 1387, 504, 12, 7720, 7721, 2175, 1075, 572, 2]
 
-// Module 7703 (EntitlementStore)
+// Module 7719 (EntitlementStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedAll from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import EntitlementTypes from "EntitlementTypes" /* 2175 */;
-import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7704 */;
-import EntitlementSourceTypes from "EntitlementSourceTypes" /* 7705 */;
+import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7720 */;
+import EntitlementSourceTypes from "EntitlementSourceTypes" /* 7721 */;
 import EntitlementRecord from "EntitlementRecord" /* 2168 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2165 */;
-import SKUStore from "SKUStore" /* 7016 */;
+import SKUStore from "SKUStore" /* 7031 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_9, set2;

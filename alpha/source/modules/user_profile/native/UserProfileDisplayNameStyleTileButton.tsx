@@ -1,16 +1,16 @@
-// Module ID: 16691
-// Function ID: 16692
+// Module ID: 16781
+// Function ID: 16782
 // Name: UserProfileDisplayNameStyleTileButton
-// Dependencies: [19, 17, 5142, 8855, 21, 5141, 575, 504, 8861, 4966, 7106, 1113, 16692, 10902, 10903, 7110, 2]
+// Dependencies: [19, 17, 5142, 8872, 21, 5141, 575, 504, 8878, 4966, 7121, 1113, 16782, 10950, 10951, 7125, 2]
 // Exports: default
 
-// Module 16691 (UserProfileDisplayNameStyleTileButton)
+// Module 16781 (UserProfileDisplayNameStyleTileButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8861 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8878 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8855 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8872 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -57,10 +57,10 @@ export default function UserProfileDisplayNameStyleTileButton(user) {
   const GifAutoPlay = user(4966).GifAutoPlay;
   const setting = GifAutoPlay.useSetting();
   const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(user(1113).t.lsjENp), accessibilityValue: obj4, accessibilityHint: intl2.string(user(1113).t["4lAcxv"]), onPress, style: tmp.button, children: null };
-  const PressableHighlight = user(7106).PressableHighlight;
+  const PressableHighlight = user(7121).PressableHighlight;
   intl = user(1113).intl;
   obj4 = { text: obj5.getDisplayNameStyleAccessibleValue(displayNameStyles) };
-  obj5 = user(16692);
+  obj5 = user(16782);
   intl2 = user(1113).intl;
   const obj6 = { style: tmp.previewContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const obj7 = { userId: user.id, userName: displayName, pendingDisplayNameStyles: displayNameStyles, ignoreDisabledStylesSetting: true, effectDisplayType: null, variant: "heading-xl/semibold", defaultColor: "text-muted", lineClamp: 1 };
@@ -69,13 +69,13 @@ export default function UserProfileDisplayNameStyleTileButton(user) {
   if (!stateFromStores) {
     let STATIC;
     if (setting) {
-      STATIC = tmp2(10903).EffectDisplayType.ANIMATED;
+      STATIC = tmp2(10951).EffectDisplayType.ANIMATED;
     }
     obj7.effectDisplayType = STATIC;
     obj6.children = closure_6(tmp10, obj7);
-    const items2 = [closure_6(tmp9, obj6), closure_6(user(7110).TableRowArrow, {})];
+    const items2 = [closure_6(tmp9, obj6), closure_6(user(7125).TableRowArrow, {})];
     obj3.children = items2;
     return tmp7(PressableHighlight, obj3);
   }
-  STATIC = tmp2(10903).EffectDisplayType.STATIC;
+  STATIC = tmp2(10951).EffectDisplayType.STATIC;
 };

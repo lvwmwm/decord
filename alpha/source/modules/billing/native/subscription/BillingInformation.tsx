@@ -1,10 +1,10 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15509
+// Function ID: 15510
 // Name: BillingInformation
-// Dependencies: [5, 1072, 15414, 2176, 1357, 1113, 14596, 2]
+// Dependencies: [5, 1072, 15501, 2176, 1357, 1113, 14676, 2]
 // Exports: useBillingInformationNative
 
-// Module 15422 (BillingInformation)
+// Module 15509 (BillingInformation)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

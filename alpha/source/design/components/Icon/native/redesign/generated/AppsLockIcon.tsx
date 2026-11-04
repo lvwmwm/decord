@@ -1,14 +1,14 @@
-// Module ID: 8801
-// Function ID: 8802
+// Module ID: 8818
+// Function ID: 8819
 // Name: AppsLockIcon
-// Dependencies: [19, 21, 575, 5836, 8765, 2]
+// Dependencies: [19, 21, 575, 5850, 8782, 2]
 // Exports: AppsLockIcon
 
-// Module 8801 (AppsLockIcon)
+// Module 8818 (AppsLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 8765 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 8782 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 19097
-// Function ID: 19098
+// Module ID: 19200
+// Function ID: 19201
 // Name: IconLabelBlock
-// Dependencies: [109, 19, 17, 21, 5141, 575, 5207, 1187, 5747, 10277, 5837, 5148, 2]
+// Dependencies: [109, 19, 17, 21, 5141, 575, 5207, 1187, 5761, 10325, 5851, 5148, 2]
 
-// Module 19097 (IconLabelBlock)
+// Module 19200 (IconLabelBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import shared from "shared" /* 5148 */;
 import native2 from "native" /* 5207 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import IconUploaderDefault from "IconUploader" /* 10277 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import IconUploaderDefault from "IconUploader" /* 10325 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -48,7 +48,7 @@ class IconLabelBlock extends PureComponent {
     const text = this.props.text;
     let tmp4 = null;
     if (null != text) {
-      const obj = { variant: "heading-md/medium", color: "text-default", style: items, accessibilityRole: tmp3, children: text };
+      const obj = { variant: "heading-sm/medium", color: "text-default", style: items, accessibilityRole: tmp3, children: text };
       items = [tmp.text, tmp2];
       tmp4 = metroRequire(Text_Text.Text, obj);
     }

@@ -1,91 +1,295 @@
 // Module ID: 8419
 // Function ID: 8420
 // Dependencies: [8420]
+// Exports: dataUriToBuffer, decompress, deferInit, getBase64Image, getCharacterArray, getDataView, getNullTerminatedStringFromDataView, getPascalStringFromDataView, getStringFromDataView, getStringValueFromArray, getUnicodeStringFromDataView, objectAssign, padStart, parseFloatRadix, strRepeat
 
 // Module 8419
 import _modDef8420 from "module_8420" /* 8420 */;
 
+const f93341 = (item) => String.fromCharCode(item);
 
-export default {
-  read(dataView, sum) {
-    let str6;
-    let tmp11;
-    let tmp14;
-    let tmp8;
-    const obj = _modDef8420;
-    const shortAt = obj.getShortAt(dataView, sum);
-    let tmp4;
-    if (8 <= shortAt) {
-      const tmpResult = _modDef8420;
-      const byteAt = tmpResult.getByteAt(dataView, sum + 7);
-      tmp4 = { value: byteAt, description: "" + byteAt };
-      const obj2 = { value: byteAt, description: "" + byteAt };
-    }
-    let tmp6;
-    if (3 <= shortAt) {
-      const tmpResult4 = _modDef8420;
-      const byteAt1 = tmpResult4.getByteAt(dataView, sum + 2);
-      tmp6 = { value: byteAt1, description: "" + byteAt1 };
-      const obj3 = { value: byteAt1, description: "" + byteAt1 };
-    }
-    const obj4 = { "Bits Per Sample": tmp6, "Image Height": tmp8, "Image Width": tmp11, "Color Components": tmp4, Subsampling: tmp14 };
-    tmp8 = undefined;
-    if (5 <= shortAt) {
-      const tmpResult5 = _modDef8420;
-      const shortAt1 = tmpResult5.getShortAt(dataView, sum + 3);
-      const _HermesInternal = HermesInternal;
-      tmp8 = { value: shortAt1, description: "" + shortAt1 + "px" };
-      const obj5 = { value: shortAt1, description: "" + shortAt1 + "px" };
-    }
-    tmp11 = undefined;
-    if (7 <= shortAt) {
-      const tmpResult6 = _modDef8420;
-      const shortAt2 = tmpResult6.getShortAt(dataView, sum + 5);
-      const _HermesInternal2 = HermesInternal;
-      tmp11 = { value: shortAt2, description: "" + shortAt2 + "px" };
-      const obj6 = { value: shortAt2, description: "" + shortAt2 + "px" };
-    }
-    tmp14 = tmp4;
-    if (tmp14) {
-      const value = tmp4.value;
-      let tmp15;
-      if (8 + 3 * value <= shortAt) {
-        let num6;
-        const items = [];
-        for (let num6 = 0; num6 < value; num6 = num6 + 1) {
-          sum = sum + 8 + 3 * num6;
-          let push = items.push;
-          let obj11 = _modDef8420;
-          let items1 = [obj11.getByteAt(dataView, sum), , ];
-          let obj12 = _modDef8420;
-          items1[1] = obj12.getByteAt(dataView, sum + 1);
-          let obj13 = _modDef8420;
-          items1[2] = obj13.getByteAt(dataView, sum + 2);
-          let arr = push(items1);
-        }
-        const obj7 = { value: items, description: str6 };
-        str6 = "";
-        if (items.length > 1) {
-          let closure_0 = { 1: "Y", 2: "Cb", 3: "Cr", 4: "I", 5: "Q" };
-          const mapped = items.map((item) => closure_0[item[0]]);
-          let str7 = "";
-          const joined = mapped.join("");
-          if (0 !== items.length) {
-            str7 = "";
-            if (undefined !== items[0][1]) {
-              const obj8 = { 17: "4:4:4 (1 1)", 18: "4:4:0 (1 2)", 20: "4:4:1 (1 4)", 33: "4:2:2 (2 1)", 34: "4:2:0 (2 2)", 36: "4:2:1 (2 4)", 65: "4:1:1 (4 1)", 66: "4:1:0 (4 2)" };
-              str7 = "";
-              if (undefined !== obj8[items[0][1]]) {
-                str7 = obj8[items[0][1]];
-              }
-            }
-          }
-          str6 = joined + str7;
-        }
-        tmp15 = obj7;
-      }
-      tmp14 = tmp15;
-    }
-    return obj4;
+export function getDataView(buffer, byteOffset, byteLength) {
+  try {
+    const _DataView = DataView;
+    const self = this;
+    const self2 = this;
+    const dataView = new DataView(buffer, byteOffset, byteLength);
+    return dataView;
+  } catch (err) {
+    const self3 = this;
+    const self4 = this;
+    const tmp12 = new _modDef8420(buffer, byteOffset, byteLength);
+    return tmp12;
   }
-};
+}
+export function getStringFromDataView(dataView, sum, length) {
+  const items = [];
+  if (0 < length) {
+    let num2 = 0;
+    if (sum < dataView.byteLength) {
+      items.push(dataView.getUint8(sum + num2));
+      sum = num2 + 1;
+      while (sum < length) {
+        num2 = sum;
+        if (sum + sum >= dataView.byteLength) {
+          break;
+        }
+      }
+    }
+  }
+  const mapped = items.map(f93341);
+  return mapped.join("");
+}
+export function getNullTerminatedStringFromDataView(byteLength, sum13) {
+  const items = [];
+  let num = 0;
+  if (sum13 < byteLength.byteLength) {
+    const uint8 = byteLength.getUint8(sum13 + num);
+    while (0 !== uint8) {
+      let arr = items.push(uint8);
+      let sum = num + 1;
+      num = sum;
+      if (sum13 + sum >= byteLength.byteLength) {
+        break;
+      }
+    }
+  }
+  const mapped = items.map(f93341);
+  return mapped.join("");
+}
+export function getUnicodeStringFromDataView(byteLength, arg1, uint325) {
+  const items = [];
+  if (0 < uint325) {
+    let num2 = 0;
+    if (arg1 < byteLength.byteLength) {
+      items.push(byteLength.getUint16(arg1 + num2));
+      const sum = num2 + 2;
+      while (sum < uint325) {
+        num2 = sum;
+        if (arg1 + sum >= byteLength.byteLength) {
+          break;
+        }
+      }
+    }
+  }
+  if (0 === items[items.length - 1]) {
+    items.pop();
+  }
+  const mapped = items.map(f93341);
+  return mapped.join("");
+}
+export function getPascalStringFromDataView(getUint8, sum1) {
+  const uint8 = getUint8.getUint8(sum1);
+  const items = [uint8, ];
+  const sum = sum1 + 1;
+  const items1 = [];
+  if (0 < uint8) {
+    let num = 0;
+    if (sum < getUint8.byteLength) {
+      items1.push(getUint8.getUint8(sum + num));
+      sum1 = num + 1;
+      while (sum1 < uint8) {
+        num = sum1;
+        if (sum + sum1 >= getUint8.byteLength) {
+          break;
+        }
+      }
+    }
+  }
+  const mapped = items1.map(f93341);
+  items[1] = mapped.join("");
+  return items;
+}
+export function getStringValueFromArray(value) {
+  const mapped = value.map(f93341);
+  return mapped.join("");
+}
+export function getCharacterArray(str) {
+  const parts = str.split("");
+  return parts.map((item) => item.charCodeAt(0));
+}
+export function objectAssign() {
+  let num;
+  for (let num = 1; num < arguments.length; num = num + 1) {
+    for (const key10010 in arguments[num]) {
+      arguments[0][key10010] = arguments[num][key10010];
+      continue;
+    }
+  }
+  return arguments[0];
+}
+export function deferInit(items, base64, arg2) {
+  let closure_1 = base64;
+  let closure_2 = arg2;
+  let c3 = false;
+  let obj = {
+    get() {
+      const tmp = c3;
+      if (!tmp) {
+        c3 = true;
+        const _Object = Object;
+        const obj = { configurable: true, enumerable: true, value: closure_2.apply(items), writable: true };
+        defineProperty(items, base64, obj);
+      }
+      return items[base64];
+    },
+    configurable: true,
+    enumerable: true
+  };
+  Object.defineProperty(items, base64, obj);
+}
+export function getBase64Image(image) {
+  let tmp4;
+  if (typeof btoa !== "undefined") {
+    let btoaResult;
+    if (typeof image === "string") {
+      const _btoa = btoa;
+      btoaResult = btoa(image);
+    } else {
+      const _Array = Array;
+      const _Uint8Array = Uint8Array;
+      const self3 = this;
+      const self4 = this;
+      const _btoa2 = btoa;
+      const call = reduce.call;
+      const uint8Array = new Uint8Array(image);
+      btoaResult = _btoa2(call(uint8Array, (arg0, arg1) => arg0 + String.fromCharCode(arg1), ""));
+    }
+    tmp4 = btoaResult;
+  } else {
+    const _Buffer3 = Buffer;
+    if (typeof Buffer !== "undefined") {
+      let str1;
+      const _Buffer4 = Buffer;
+      if (undefined !== Buffer.from) {
+        const _Buffer2 = Buffer;
+        const str3 = Buffer.from(image);
+        str1 = str3.toString("base64");
+      } else {
+        const _Buffer = Buffer;
+        const self = this;
+        const self2 = this;
+        const str = new Buffer(image);
+        str1 = str.toString("base64");
+      }
+      tmp4 = str1;
+    }
+  }
+  return tmp4;
+}
+export function dataUriToBuffer(result) {
+  const substr = result.substring(result.indexOf(",") + 1);
+  if (-1 !== result.indexOf(";base64")) {
+    const _atob = atob;
+    if (typeof atob !== "undefined") {
+      const _Uint8Array = Uint8Array;
+      const _atob2 = atob;
+      return Uint8Array.from(atob(substr), (str) => str.charCodeAt(0)).buffer;
+    } else {
+      const _Buffer7 = Buffer;
+      if (typeof Buffer !== "undefined") {
+        let fromResult;
+        const _Buffer8 = Buffer;
+        if (undefined !== Buffer.from) {
+          const _Buffer5 = Buffer;
+          fromResult = Buffer.from(substr, "base64");
+        } else {
+          const _Buffer4 = Buffer;
+          const self3 = this;
+          const self4 = this;
+          fromResult = new Buffer(substr, "base64");
+        }
+        return fromResult;
+      }
+    }
+  } else {
+    let buffer;
+    const _decodeURIComponent = decodeURIComponent;
+    const decodeURIComponentResult = decodeURIComponent(substr);
+    const _Buffer6 = Buffer;
+    if (typeof Buffer !== "undefined") {
+      let fromResult1;
+      const _Buffer = Buffer;
+      if (undefined !== Buffer.from) {
+        const _Buffer3 = Buffer;
+        fromResult1 = Buffer.from(decodeURIComponentResult);
+      } else {
+        const _Buffer2 = Buffer;
+        const self = this;
+        const self2 = this;
+        fromResult1 = new Buffer(decodeURIComponentResult);
+      }
+      buffer = fromResult1;
+    } else {
+      const _Uint8Array2 = Uint8Array;
+      buffer = Uint8Array.from(decodeURIComponentResult, (str) => str.charCodeAt(0)).buffer;
+    }
+    return buffer;
+  }
+}
+export function padStart(arg0, arg1, arg2) {
+  const array = new Array(arg1 - arg0.length + 1);
+  return array.join(arg2) + arg0;
+}
+export function parseFloatRadix(str, sum) {
+  const parsed = parseInt(str.replace(".", ""), sum);
+  const _Math = Math;
+  const arr = str.split(".")[1] || "";
+  return parsed / pow(sum, arr.length);
+}
+export function strRepeat(_1, arg1) {
+  const array = new Array(arg1 + 1);
+  return array.join(_1);
+}
+export const COMPRESSION_METHOD_DEFLATE = 0;
+export function decompress(arg0, arg1, arg2) {
+  let closure_0 = arg2;
+  let str = arg3;
+  if (arg3 === undefined) {
+    str = "string";
+  }
+  if (0 === arg1) {
+    if (typeof globalThis.DecompressionStream === "function") {
+      let nextPromise;
+      const DecompressionStream2 = globalThis.DecompressionStream;
+      const self = this;
+      const self2 = this;
+      const decompressionStream = new globalThis.DecompressionStream("deflate");
+      const _Blob = Blob;
+      const items = [arg0];
+      const self3 = this;
+      const self4 = this;
+      const blob = new Blob(items);
+      const streamResult = blob.stream();
+      const pipeThroughResult = streamResult.pipeThrough(decompressionStream);
+      if ("dataview" === str) {
+        const _Response2 = Response;
+        const self7 = this;
+        const self8 = this;
+        const response = new Response(pipeThroughResult);
+        const arrayBufferResult = response.arrayBuffer();
+        nextPromise = arrayBufferResult.then((result) => {
+          const dataView = new DataView(result);
+          return dataView;
+        });
+      } else {
+        const _Response = Response;
+        const self5 = this;
+        const self6 = this;
+        const response1 = new Response(pipeThroughResult);
+        const arrayBufferResult2 = response1.arrayBuffer();
+        nextPromise = arrayBufferResult2.then((result) => {
+          const decoder = new TextDecoder(closure_0);
+          return decoder.decode(result);
+        });
+      }
+      return nextPromise;
+    }
+  }
+  let rejectResult = arg0;
+  if (undefined !== arg1) {
+    const _HermesInternal = HermesInternal;
+    rejectResult = Promise.reject("Unknown compression method " + arg1 + ".");
+  }
+  return rejectResult;
+}

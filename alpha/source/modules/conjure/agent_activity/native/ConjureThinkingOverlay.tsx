@@ -1,17 +1,22 @@
-// Module ID: 12916
-// Function ID: 12917
+// Module ID: 12997
+// Function ID: 12998
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 10981, 21, 5141, 575, 504, 12335, 7103, 10204, 5747, 1113, 3995, 12333, 2]
+// Dependencies: [19, 17, 11029, 21, 5141, 575, 12998, 12398, 504, 12400, 7118, 10252, 5761, 1113, 3995, 2]
 // Exports: default
 
-// Module 12916 (ConjureThinkingOverlay)
+// Module 12997 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 575 */;
-import react from "react" /* 19 */;
+import _modDef3995 from "module_3995" /* 3995 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 12398 */;
+import conjureThinkingTail from "conjureThinkingTail" /* 12998 */;
+import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 10981 */;
+import ConjureChatStore from "ConjureChatStore" /* 11029 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
+
+let dependencyMap, importDefault, nativeEvent;
 
 let closure_4;
 let hasOwnProperty;
@@ -21,6 +26,56 @@ let obj2;
 let obj3;
 let obj4;
 let rect;
+function ThinkingScroll(arg0) {
+  let ref2;
+  let ref3;
+  let style;
+  let text;
+  react = undefined;
+  ({ style, text } = arg0);
+  const ref = react.useRef(null);
+  importDefault = react.useRef(true);
+  dependencyMap = react.useRef(0);
+  react = react.useRef(false);
+  const callback = react.useCallback((nativeEvent) => {
+    ref3.current = true;
+    ref2.current = nativeEvent.nativeEvent.contentOffset.y;
+  }, []);
+  const callback1 = react.useCallback(() => {
+    ref3.current = false;
+  }, []);
+  const callback2 = react.useCallback((nativeEvent) => {
+    let contentSize;
+    let layoutMeasurement;
+    nativeEvent = nativeEvent.nativeEvent;
+    const contentOffset = nativeEvent.contentOffset;
+    ({ contentSize, layoutMeasurement } = nativeEvent);
+    const obj = conjureThinkingTail;
+    ref.current = obj.followsTail(ref.current, contentSize.height - layoutMeasurement.height - contentOffset.y, contentOffset.y < ref2.current);
+    ref2.current = contentOffset.y;
+  }, []);
+  let obj = {
+    ref,
+    style,
+    nestedScrollEnabled: true,
+    scrollEventThrottle: 16,
+    onScrollBeginDrag: callback,
+    onScrollEndDrag: callback1,
+    onScroll: callback2,
+    onContentSizeChange: react.useCallback(() => {
+      const current = ref.current && !ref3.current;
+      if (current) {
+        const current2 = ref.current;
+        if (current2 != null) {
+          current2.scrollToEnd({ animated: false });
+        }
+      }
+    }, []),
+    children: closure_7(ConjureNativeMarkdownDefault, { source: text })
+  };
+  return closure_7(closure_4, obj);
+}
+let react = react_mod;
 ({ ScrollView: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -39,66 +94,50 @@ export default function ConjureThinkingOverlay(projectId) {
   let intl2;
   let items2;
   let items3;
-  let obj11;
+  let obj10;
   let obj3;
-  let obj9;
-  let tmp8Result;
+  let tmp7Result;
   projectId = projectId.projectId;
   const tmp = closure_9();
-  const ref = react.useRef(null);
   const items = [ConjureChatStore];
   const items1 = [projectId];
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(12335).useConjureRevealedText;
-  projectId(12335);
+  const useConjureRevealedText = projectId(12400).useConjureRevealedText;
+  projectId(12400);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }
   if (str == null) {
     str = "";
   }
-  const tmp7 = null != stateFromStores && "end" !== stateFromStores.phase;
-  const text = useConjureRevealedText(str, { streaming: tmp7 }).text;
+  const tmp6 = null != stateFromStores && "end" !== stateFromStores.phase;
+  const text = useConjureRevealedText(str, { streaming: tmp6 }).text;
   const obj2 = { style: tmp.root, children: closure_7(closure_5, obj3) };
-  obj3 = { style: tmp.opaque, children: closure_7(Card, obj11) };
+  obj3 = { style: tmp.opaque, children: closure_7(Card, obj10) };
   const obj4 = { style: tmp.body, children: items3 };
   const obj5 = { style: tmp.header, children: items2 };
-  Card = tmp3(7103).Card;
-  const obj6 = { size: "xs", color: ref(575).colors.TEXT_BRAND };
-  const LightbulbIcon = tmp3(10204).LightbulbIcon;
+  Card = tmp2(7118).Card;
+  const obj6 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
+  const LightbulbIcon = tmp2(10252).LightbulbIcon;
   items2 = [closure_7(LightbulbIcon, obj6), ];
-  const obj7 = { variant: "text-sm/semibold", color: "text-strong", children: intl.string(ref(3995).XXYIeI) };
-  const Text = tmp3(5747).Text;
-  intl = tmp3(1113).intl;
+  const obj7 = { variant: "body-sm/semibold", color: "text-strong", children: intl.string(_modDef3995.XXYIeI) };
+  const Text = tmp2(5761).Text;
+  intl = tmp2(1113).intl;
   items2[1] = closure_7(Text, obj7);
   items3 = [closure_8(closure_5, obj5), ];
-  const tmp10 = closure_8;
+  const tmp9 = closure_8;
   if ("" !== text) {
-    const obj8 = {
-      ref,
-      style: tmp.panel,
-      nestedScrollEnabled: true,
-      onContentSizeChange() {
-          const current = ref.current;
-          let scrollToEndResult;
-          if (current != null) {
-            scrollToEndResult = current.scrollToEnd({ animated: false });
-          }
-          return scrollToEndResult;
-        },
-      children: closure_7(ref(12333), obj9)
-    };
-    obj9 = { source: text };
-    tmp8Result = tmp8(closure_4, obj8);
+    const obj8 = { style: tmp.panel, text };
+    tmp7Result = tmp7(ThinkingScroll, obj8);
   } else {
-    const obj10 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(ref(3995).LfoD6c) };
-    const Text2 = tmp3(5747).Text;
-    intl2 = tmp3(1113).intl;
-    tmp8Result = tmp8(Text2, obj10);
+    const obj9 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(_modDef3995.LfoD6c) };
+    const Text2 = tmp2(5761).Text;
+    intl2 = tmp2(1113).intl;
+    tmp7Result = tmp7(Text2, obj9);
   }
-  items3[1] = tmp8Result;
-  obj11 = { variant: "primary", shadow: "high", children: tmp10(closure_5, obj4) };
+  items3[1] = tmp7Result;
+  obj10 = { variant: "primary", shadow: "high", children: tmp9(closure_5, obj4) };
   return closure_7(closure_5, obj2);
 };

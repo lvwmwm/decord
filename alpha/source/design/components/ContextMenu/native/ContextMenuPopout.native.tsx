@@ -1,18 +1,18 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16093
+// Function ID: 16094
 // Name: ContextMenuPopout
-// Dependencies: [32, 19, 17, 21, 5141, 575, 10007, 1652, 5207, 5730, 1493, 1377, 5757, 1705, 10006, 5426, 6142, 5747, 16001, 5397, 5721, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 10055, 1652, 5207, 5743, 1493, 1377, 5771, 1705, 10054, 5428, 6157, 5761, 16091, 5398, 5734, 1113, 2]
 // Exports: ContextMenuPopout
 
-// Module 16003 (ContextMenuPopout)
+// Module 16093 (ContextMenuPopout)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import native from "native" /* 5207 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import ContextMenuState from "ContextMenuState" /* 10006 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 10007 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import ContextMenuState from "ContextMenuState" /* 10054 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 10055 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -65,7 +65,7 @@ function ContextMenuBackdrop(arg0) {
   ContextMenuPopoutNativeTsx5.__initData = tmp5;
   const animatedStyle = useAnimatedStyle(ContextMenuPopoutNativeTsx5);
   let obj = { blur: "none", style: animatedStyle, accessibleDismissStyle: tmp.accessibleDismiss, onDismiss: onPress, accessibilityLabel: stringResult };
-  const Backdrop = tmp2(5721).Backdrop;
+  const Backdrop = tmp2(5734).Backdrop;
   const tmp2Result = PlatformUtils;
   const isAndroidResult = tmp2Result.isAndroid();
   const intl = tmp2(1113).intl;
@@ -326,7 +326,7 @@ export function ContextMenuPopout(cleanUp) {
     update.__closure = items1;
     update.__workletHash = 16389563863227;
     update.__initData = tmp4;
-    const Gesture = tmp(5426).Gesture;
+    const Gesture = tmp(5428).Gesture;
     const PanResult = Gesture.Pan();
     const enabledResult = PanResult.enabled(!first);
     const onStartResult = enabledResult.onStart(update);
@@ -377,7 +377,7 @@ export function ContextMenuPopout(cleanUp) {
   if (null != title) {
     const obj6 = { children: items10 };
     const obj7 = { style: tmp6.titleContainer, children: closure_6(tmp(tmp2[17]).Text, obj8) };
-    obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
+    obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
     items10 = [closure_6(first, obj7), closure_6(ContextMenuDivider, {})];
     tmp40Result = tmp40(tmp41, obj6);
   }

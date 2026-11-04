@@ -1,10 +1,10 @@
-// Module ID: 7566
-// Function ID: 7567
+// Module ID: 7582
+// Function ID: 7583
 // Name: GuildOfficialMessagesExperiment
-// Dependencies: [5359, 2]
+// Dependencies: [5360, 2]
 
-// Module 7566 (GuildOfficialMessagesExperiment)
-import createExperiment from "module_5359" /* 5359 */;
+// Module 7582 (GuildOfficialMessagesExperiment)
+import createExperiment from "module_5360" /* 5360 */;
 import size from "module_2" /* 2 */;
 
 let items;

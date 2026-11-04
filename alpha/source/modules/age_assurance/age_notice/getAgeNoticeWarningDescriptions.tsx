@@ -1,14 +1,14 @@
-// Module ID: 6856
-// Function ID: 6857
+// Module ID: 6871
+// Function ID: 6872
 // Name: getAgeNoticeWarningDescriptions
-// Dependencies: [6857, 1113, 6858, 3255, 2]
+// Dependencies: [6872, 1113, 6873, 3255, 2]
 // Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
 
-// Module 6856 (getAgeNoticeWarningDescriptions)
+// Module 6871 (getAgeNoticeWarningDescriptions)
 import intl6 from "intl" /* 1113 */;
 import _modDef3255 from "module_3255" /* 3255 */;
-import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6858 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6857 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6873 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
 import size from "module_2" /* 2 */;
 
 let c3;

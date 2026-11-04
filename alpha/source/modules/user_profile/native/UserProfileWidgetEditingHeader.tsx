@@ -1,18 +1,18 @@
-// Module ID: 16706
-// Function ID: 16707
+// Module ID: 16796
+// Function ID: 16797
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 5754, 9704, 8152, 12618, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 5768, 9722, 8168, 12699, 2]
 // Exports: default
 
-// Module 16706 (UserProfileWidgetEditingHeader)
+// Module 16796 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import IconButton2 from "IconButton" /* 8152 */;
-import PlusSmallIcon2 from "PlusSmallIcon" /* 9704 */;
-import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12618 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import IconButton2 from "IconButton" /* 8168 */;
+import PlusSmallIcon2 from "PlusSmallIcon" /* 9722 */;
+import ArrowsUpDownIcon2 from "ArrowsUpDownIcon" /* 12699 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -39,7 +39,7 @@ export default function UserProfileWidgetEditingHeader() {
   let obj6;
   const tmp = closure_6();
   const obj = { style: tmp.header, children: items };
-  const obj2 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.heading, children: intl.string(intl4.t.OYlggR) };
+  const obj2 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.heading, children: intl.string(intl4.t.OYlggR) };
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
   items = [React3(Heading, obj2), , ];

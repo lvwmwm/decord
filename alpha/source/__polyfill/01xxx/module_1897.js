@@ -13,16 +13,16 @@ let c2;
 let c3;
 ({ useEffect: c2, useRef: c3 } = react);
 
-export function useHandler(memoizedGestureCallbacks, items26) {
+export function useHandler(ChannelListLegendListTsx1, items26) {
   let prevHandlers;
-  _require = memoizedGestureCallbacks;
+  _require = ChannelListLegendListTsx1;
   const tmp = closure_3(null);
   if (null === tmp.current) {
-    tmp.current = { context: "Array", prevHandlers: "flexDirection" };
+    tmp.current = { context: "PX_8", prevHandlers: "__closure" };
   }
   const current = tmp.current;
   let obj = require("module_1898");
-  const tmp2 = !obj.areWorkletHandlersEqual(memoizedGestureCallbacks, current.prevHandlers);
+  const tmp2 = !obj.areWorkletHandlersEqual(ChannelListLegendListTsx1, current.prevHandlers);
   closure_2(() => {
     current.prevHandlers = prevHandlers;
   });

@@ -1,15 +1,15 @@
-// Module ID: 13459
-// Function ID: 13460
+// Module ID: 13543
+// Function ID: 13544
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 5141, 1187, 575, 5747, 1113, 13460, 2]
+// Dependencies: [19, 17, 21, 5141, 1187, 575, 5761, 1113, 13544, 2]
 // Exports: default
 
-// Module 13459 (ClassificationEvidence)
+// Module 13543 (ClassificationEvidence)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 13460 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 13544 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -42,7 +42,7 @@ export default function ClassificationEvidence(flaggedContent) {
   let tmp2 = null;
   if (0 !== flaggedContent.length) {
     const obj = { style: tmp.sectionContainer, children: items };
-    const obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(intl2.t.s64CMg) };
+    const obj2 = { variant: "body-sm/medium", color: "text-default", children: intl.string(intl2.t.s64CMg) };
     const Text = Text_Text.Text;
     intl = intl2.intl;
     items = [React3(Text, obj2), ];

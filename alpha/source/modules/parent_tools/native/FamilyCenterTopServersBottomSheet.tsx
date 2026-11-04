@@ -1,18 +1,18 @@
-// Module ID: 16945
-// Function ID: 16946
+// Module ID: 17037
+// Function ID: 17038
 // Name: FamilyCenterTopServersBottomSheet
-// Dependencies: [7839, 21, 5141, 575, 504, 8496, 7101, 7083, 7486, 5747, 1113, 2667, 7186, 2]
+// Dependencies: [7855, 21, 5141, 575, 504, 8513, 7116, 7098, 7502, 5761, 1113, 2667, 7201, 2]
 // Exports: default
 
-// Module 16945 (FamilyCenterTopServersBottomSheet)
+// Module 17037 (FamilyCenterTopServersBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2667 from "module_2667" /* 2667 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildIconDefault from "GuildIcon" /* 7083 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import ActionSheet2 from "ActionSheet" /* 7486 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7839 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildIconDefault from "GuildIcon" /* 7098 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import ActionSheet2 from "ActionSheet" /* 7502 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7855 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -30,10 +30,10 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp2Result = guildActivity(8496);
+    const tmp2Result = guildActivity(8513);
     const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
-    const TableRow = tmp2(7101).TableRow;
+    const TableRow = tmp2(7116).TableRow;
     obj3 = { guild: stateFromStores, style: tmp.guildIcon };
     return closure_4(TableRow, obj2);
   }
@@ -51,7 +51,7 @@ export default function FamilyCenterTopGuildsBottomSheet(topGuildActivities) {
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "text-md/semibold", style: tmp.header, children: intl.string(_modDef2667.Lq9Set) };
+  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2667.Lq9Set) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

@@ -1,23 +1,23 @@
-// Module ID: 20050
-// Function ID: 20051
+// Module ID: 20166
+// Function ID: 20167
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 17339, 21, 5141, 575, 5148, 5376, 5747, 1113, 20051, 20055, 20059, 20063, 20067, 20071, 2]
+// Dependencies: [19, 17, 17430, 21, 5141, 575, 5148, 5377, 5761, 1113, 20167, 20171, 20175, 20179, 20183, 20187, 2]
 // Exports: default
 
-// Module 20050 (CreatorBenefitsSection)
+// Module 20166 (CreatorBenefitsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17339 */;
-import AvatarRoseExample from "AvatarRoseExample" /* 20051 */;
-import AvatarLokyExample from "AvatarLokyExample" /* 20055 */;
-import AvatarGraggleExample from "AvatarGraggleExample" /* 20059 */;
-import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 20063 */;
-import StarKeySpotIllustration from "StarKeySpotIllustration" /* 20067 */;
-import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 20071 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17430 */;
+import AvatarRoseExample from "AvatarRoseExample" /* 20167 */;
+import AvatarLokyExample from "AvatarLokyExample" /* 20171 */;
+import AvatarGraggleExample from "AvatarGraggleExample" /* 20175 */;
+import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 20179 */;
+import StarKeySpotIllustration from "StarKeySpotIllustration" /* 20183 */;
+import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 20187 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -47,11 +47,11 @@ function EarningPreview() {
   obj3 = { style: items1, children: items3 };
   const tmp6Result = shared;
   items1[2] = tmp6Result.isThemeDark(tmp2) ? tmp3.earningMetricsDarkMode : tmp3.earningMetricsLightMode;
-  const obj4 = { variant: "text-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
-  const Text = tmp6(5747).Text;
+  const obj4 = { variant: "body-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
+  const Text = tmp6(5761).Text;
   intl = tmp6(1113).intl;
   const items2 = [hasOwnProperty(Text, obj4), ];
-  const Text2 = tmp6(5747).Text;
+  const Text2 = tmp6(5761).Text;
   const obj5 = { children: items2 };
   const tmp6Result2 = shared;
   const obj6 = { style: tmp6Result2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode, variant: "heading-lg/semibold", children: intl2.string(intl3.t.LdjJG5) };
@@ -67,7 +67,7 @@ function ConsistentEarningBenefit() {
   let items2;
   const tmp = closure_7();
   const obj = { style: tmp.benefitCard, children: items };
-  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t["9CdmS8"]) };
+  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-sm/medium", color: "text-default", children: intl.string(intl3.t["9CdmS8"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [hasOwnProperty(Text, obj2), hasOwnProperty(EarningPreview, {}), ];
@@ -89,7 +89,7 @@ function FollowerAwardBenefit() {
   let items;
   const tmp = closure_7();
   const obj = { style: tmp.benefitCard, children: items };
-  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.qsKRUQ) };
+  const obj2 = { style: tmp.benefitCardTitle, variant: "heading-sm/medium", color: "text-default", children: intl.string(intl3.t.qsKRUQ) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [hasOwnProperty(Text, obj2), ];
@@ -112,8 +112,8 @@ function RevenueShareBenefit() {
   const obj2 = shared;
   items1[1] = obj2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode;
   items2 = [hasOwnProperty(Text, obj3), , ];
-  const obj4 = { style: tmp3.revenueShareDescription, variant: "heading-md/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
-  const Text2 = tmp7(5747).Text;
+  const obj4 = { style: tmp3.revenueShareDescription, variant: "heading-sm/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
+  const Text2 = tmp7(5761).Text;
   intl = tmp7(1113).intl;
   items2[1] = hasOwnProperty(Text2, obj4);
   const obj5 = { style: tmp3.revenueShareIllo, children: hasOwnProperty(StarCoinsSpotIllustration.StarCoinsSpotIllustration, { width: 128 }) };

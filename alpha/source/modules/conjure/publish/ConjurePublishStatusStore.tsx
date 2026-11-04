@@ -1,13 +1,13 @@
-// Module ID: 10997
-// Function ID: 10998
+// Module ID: 11045
+// Function ID: 11046
 // Name: ConjurePublishStatusStore
-// Dependencies: [6964, 504, 558, 572, 2]
+// Dependencies: [6979, 504, 558, 572, 2]
 
-// Module 10997 (ConjurePublishStatusStore)
+// Module 11045 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
@@ -15,8 +15,9 @@ let set = new Set();
 const map1 = new Map();
 const map2 = new Map();
 const map3 = new Map();
+const map4 = new Map();
 const set1 = new Set();
-let closure_9 = [];
+let closure_10 = [];
 const Store = get_initializedDefault.Store;
 class ConjurePublishStatusStore extends Store {
   initialize() {
@@ -46,6 +47,13 @@ class ConjurePublishStatusStore extends Store {
     }
     return value;
   }
+  getSafetyRecheck(projectId) {
+    let value = map4.get(projectId);
+    if (value == null) {
+      value = null;
+    }
+    return value;
+  }
   getPublishFailure(arg0) {
     let value = map3.get(arg0);
     if (value == null) {
@@ -58,7 +66,7 @@ class ConjurePublishStatusStore extends Store {
   }
 }
 const prototype = ConjurePublishStatusStore.prototype;
-let closure_10 = [];
+let closure_11 = [];
 let obj = {
   LOGOUT: function handleLogout() {
     const obj = map;
@@ -67,8 +75,10 @@ let obj = {
         if (0 === map1.size) {
           if (0 === map2.size) {
             if (0 === map3.size) {
-              if (0 === set1.size) {
-                return false;
+              if (0 === map4.size) {
+                if (0 === set1.size) {
+                  return false;
+                }
               }
             }
           }
@@ -80,6 +90,7 @@ let obj = {
     map1.clear();
     map2.clear();
     map3.clear();
+    map4.clear();
     set1.clear();
   },
   CONJURE_PROJECTS_FETCH_SUCCESS: function handleProjectsFetchSuccess() {
@@ -134,7 +145,7 @@ let obj = {
     let surface;
     ({ projectId, publishState, surface, previewAppChannels, previewDevicePermissions } = publishedRevision);
     if (previewDevicePermissions === undefined) {
-      previewDevicePermissions = closure_10;
+      previewDevicePermissions = closure_11;
     }
     publishedRevision = publishedRevision.publishedRevision;
     if (publishedRevision === undefined) {
@@ -151,6 +162,10 @@ let obj = {
     ({ patchNotesSent, newUiUnpublished } = publishedRevision);
     if (newUiUnpublished === undefined) {
       newUiUnpublished = false;
+    }
+    let flag2 = publishedRevision.safetyHold;
+    if (flag2 === undefined) {
+      flag2 = false;
     }
     const deleteResult = !flag && map1.delete(projectId);
     const deleteResult1 = !flag && map2.delete(projectId);
@@ -169,7 +184,7 @@ let obj = {
         patchNotesSent1 = value.patchNotesSent;
       }
       if (patchNotesSent1 == null) {
-        patchNotesSent1 = closure_9;
+        patchNotesSent1 = closure_10;
       }
       patchNotesSent = patchNotesSent1;
     } else {
@@ -178,7 +193,7 @@ let obj = {
         patchNotesSent2 = value.patchNotesSent;
       }
       if (patchNotesSent2 == null) {
-        patchNotesSent2 = closure_9;
+        patchNotesSent2 = closure_10;
       }
       patchNotesSent2.length === patchNotesSent.length && patchNotesSent2.every((publishedRevision, index) => publishedRevision.publishedRevision === patchNotesSent[index].publishedRevision && publishedRevision.messageId === tmp[index].messageId);
     }
@@ -197,7 +212,7 @@ let obj = {
                 const areArraysShallowEqual = tmp18(558).areArraysShallowEqual;
                 shallowEqual;
                 if (previewDevicePermissions2 == null) {
-                  previewDevicePermissions2 = closure_10;
+                  previewDevicePermissions2 = closure_11;
                 }
                 if (areArraysShallowEqual(previewDevicePermissions2, previewDevicePermissions)) {
                   if (value.publishedRevision === publishedRevision) {
@@ -205,7 +220,13 @@ let obj = {
                       if (value.publishing === flag) {
                         if (value.patchNotesSent === patchNotesSent) {
                           if (value.newUiUnpublished === newUiUnpublished) {
-                            return false;
+                            let flag3 = value.safetyHold;
+                            if (flag3 == null) {
+                              flag3 = false;
+                            }
+                            if (flag3 === flag2) {
+                              return false;
+                            }
                           }
                         }
                       }
@@ -218,7 +239,7 @@ let obj = {
         }
       }
     }
-    const result = obj.set(projectId, { publishState, surface, previewAppChannels, previewDevicePermissions, publishedRevision, publishedAt, publishing: flag, patchNotesSent, newUiUnpublished });
+    const result = obj.set(projectId, { publishState, surface, previewAppChannels, previewDevicePermissions, publishedRevision, publishedAt, publishing: flag, patchNotesSent, newUiUnpublished, safetyHold: flag2 });
   },
   CONJURE_PROJECT_PUBLISH_START: function handleProjectPublishStart(projectId) {
     projectId = projectId.projectId;
@@ -266,6 +287,16 @@ let obj = {
     }
     return deleteResult;
   },
+  CONJURE_PROJECT_SAFETY_RECHECK: function handleProjectSafetyRecheck(arg0) {
+    let projectId;
+    let recheck;
+    ({ projectId, recheck } = arg0);
+    if (null == recheck) {
+      return map4.delete(projectId);
+    } else {
+      const result = map4.set(projectId, recheck);
+    }
+  },
   CONJURE_PROJECT_PUBLISH_PROGRESS: function handleProjectPublishProgress(arg0) {
     let progress;
     let projectId;
@@ -309,7 +340,7 @@ let obj = {
       const merged = Object.assign(value);
       let patchNotesSent = value.patchNotesSent;
       if (patchNotesSent == null) {
-        patchNotesSent = closure_9;
+        patchNotesSent = closure_10;
       }
       items = [];
       items[HermesBuiltin.arraySpread(items, patchNotesSent.filter((publishedRevision) => publishedRevision.publishedRevision !== publishedRevision.publishedRevision), 0)] = sent;
@@ -323,6 +354,7 @@ let obj = {
     map1.delete(projectId);
     map2.delete(projectId);
     map3.delete(projectId);
+    map4.delete(projectId);
     set1.delete(projectId);
   }
 };

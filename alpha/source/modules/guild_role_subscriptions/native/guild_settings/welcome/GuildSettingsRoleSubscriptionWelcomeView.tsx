@@ -1,25 +1,25 @@
-// Module ID: 20026
-// Function ID: 20027
+// Module ID: 20142
+// Function ID: 20143
 // Name: GuildSettingsRoleSubscriptionWelcomeView
-// Dependencies: [32, 19, 17, 17339, 1072, 20027, 21, 5141, 575, 12698, 1113, 20028, 5747, 20029, 1499, 5381, 20031, 2123, 20031, 8301, 5754, 1187, 7212, 20037, 20050, 20075, 20078, 20083, 20084, 1500, 6148, 1260, 5709, 20025, 5831, 7412, 20085, 2]
+// Dependencies: [32, 19, 17, 17430, 1072, 20143, 21, 5141, 575, 12779, 1113, 20144, 5761, 20145, 1499, 5382, 20147, 2123, 20147, 8317, 5768, 1187, 7227, 20153, 20166, 20191, 20194, 20199, 20200, 1500, 6163, 1260, 5722, 20141, 5845, 7428, 20201, 2]
 // Exports: default
 
-// Module 20026 (GuildSettingsRoleSubscriptionWelcomeView)
+// Module 20142 (GuildSettingsRoleSubscriptionWelcomeView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12698 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17339 */;
-import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 20027 */;
-import WarningNoticeDefault from "WarningNotice" /* 20028 */;
-import EligibilityActionSheet from "EligibilityActionSheet" /* 20031 */;
-import HowItWorksSectionDefault from "HowItWorksSection" /* 20037 */;
-import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 20050 */;
-import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 20075 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12779 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17430 */;
+import CreatorMonetizationEligibilityConstants from "CreatorMonetizationEligibilityConstants" /* 20143 */;
+import WarningNoticeDefault from "WarningNotice" /* 20144 */;
+import EligibilityActionSheet from "EligibilityActionSheet" /* 20147 */;
+import HowItWorksSectionDefault from "HowItWorksSection" /* 20153 */;
+import CreatorBenefitsSectionDefault from "CreatorBenefitsSection" /* 20166 */;
+import CreatorHighlightSectionDefault from "CreatorHighlightSection" /* 20191 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -103,7 +103,7 @@ class SectionContainer {
     const tmp3 = metroRequire;
     const tmp4 = unpackModuleId;
     if (tmp4Result) {
-      const obj4 = { style: tmp.sectionFooter, variant: "text-sm/normal", color: "text-default", children: footer };
+      const obj4 = { style: tmp.sectionFooter, variant: "body-sm/normal", color: "text-default", children: footer };
       tmp4Result = tmp4(Text_Text.Text, obj4);
     }
     items[3] = tmp4Result;
@@ -152,13 +152,13 @@ function StartEarningButton(isTermsAccepted) {
         navigation.push(constants.SECURITY);
       }
     };
-    const tmp2 = asyncRequire(20031, dependencyMap.paths);
+    const tmp2 = asyncRequire(20147, dependencyMap.paths);
     return openLazy(tmp2, EligibilityActionSheet.ELIGIBILITY_ACTION_SHEET_KEY, obj);
   }, items1);
   const obj2 = {
     style: tmp.tos,
     leading: closure_11(isTermsAccepted(submitAcceptTermsRequest[19]).FormRow.Checkbox, { selected: isTermsAccepted }),
-    label: closure_11(isTermsAccepted(submitAcceptTermsRequest[12]).Text, { variant: "text-xs/normal", color: "text-default", children: acceptTermsCheckboxText }),
+    label: closure_11(isTermsAccepted(submitAcceptTermsRequest[12]).Text, { variant: "body-xs/normal", color: "text-default", children: acceptTermsCheckboxText }),
     onPress() {
       return importDefault(!isTermsAccepted);
     }
@@ -397,7 +397,7 @@ export default function GuildSettingsRoleSubscriptionWelcomeView(guild) {
         const Text = tmp2(tmp3[12]).Text;
         intl3 = tmp2(tmp3[10]).intl;
         items4 = [closure_11(Text, obj12), , , ];
-        const obj13 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl4.string(tmp2(ref1[10]).t["41wkMc"]) };
+        const obj13 = { style: tmp.subtitle, variant: "body-sm/normal", color: "text-default", children: intl4.string(tmp2(ref1[10]).t["41wkMc"]) };
         const Text2 = tmp2(tmp3[12]).Text;
         intl4 = tmp2(tmp3[10]).intl;
         items4[1] = closure_11(Text2, obj13);

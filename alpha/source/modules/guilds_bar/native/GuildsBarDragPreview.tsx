@@ -1,16 +1,16 @@
-// Module ID: 18586
-// Function ID: 18587
+// Module ID: 18687
+// Function ID: 18688
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 6892, 18506, 18503, 21, 5141, 18224, 1652, 5757, 1705, 5207, 5719, 575, 18514, 18535, 5056, 2]
+// Dependencies: [19, 6907, 18601, 18598, 21, 5141, 18321, 1652, 5771, 1705, 5207, 5732, 575, 18609, 18630, 5056, 2]
 
-// Module 18586 (GuildsBarDragPreview)
+// Module 18687 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 5056 */;
 import native from "native" /* 5207 */;
-import SortedGuildStore from "SortedGuildStore" /* 6892 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18503 */;
+import SortedGuildStore from "SortedGuildStore" /* 6907 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18598 */;
 import react from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18506 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18601 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ function PreviewItem(overState) {
   ({ dropComplete, gestureState, dropPosition } = overState);
   let tmp = closure_8();
   const tmp2 = overNode;
-  let obj = overNode(18224);
+  let obj = overNode(18321);
   const isHomeDrawerEnabled = obj.useIsHomeDrawerEnabled();
   let obj2 = overNode(1652);
   let items = [closure_11, scrollPosition, dragRegion, listInsets];
@@ -118,7 +118,7 @@ function PreviewItem(overState) {
   const items4 = [closure_14, dropPosition, scrollPosition, gestureState, draggedHeight, derivedValue, derivedValue1, windowSize, , , , , ];
   const useAnimatedStyle = tmp2(1652).useAnimatedStyle;
   tmp2(1652);
-  items4[8] = tmp2(5757).withSpring;
+  items4[8] = tmp2(5771).withSpring;
   items4[9] = closure_10;
   items4[10] = closure_13;
   items4[11] = tmp2(1705).scheduleOnRN;
@@ -196,7 +196,7 @@ function PreviewItem(overState) {
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flexDirection", name: "Array", color: "applicationId", expanded: "r", children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flexDirection", name: "Array", color: "ao", expanded: "Boolean", children: items };
         items = [tmp2];
         return element;
       }
@@ -243,10 +243,10 @@ function AnimatedItemPreview(cleanUp) {
   cleanUp = cleanUp.cleanUp;
   const tmp2 = transitionState;
   let tmp = closure_8();
-  let obj = transitionState(5719);
+  let obj = transitionState(5732);
   const tmp4 = sharedValue;
   const tmp5 = closure_9(GUILD_ITEM_INSET_LEFT + obj.useToken(sharedValue(575).modules.mobile.GUILD_BAR_ITEM_SIZE) / 2);
-  let obj2 = transitionState(18224);
+  let obj2 = transitionState(18321);
   let isHomeDrawerEnabled = obj2.useIsHomeDrawerEnabled();
   const useSharedValue = transitionState(1652).useSharedValue;
   let num = 1;
@@ -263,7 +263,7 @@ function AnimatedItemPreview(cleanUp) {
   let items = [closure_19, tmp10, sharedValue, , , , , , , ];
   const useAnimatedStyle = tmp2(1652).useAnimatedStyle;
   tmp2(1652);
-  items[3] = tmp2(5757).withSpring;
+  items[3] = tmp2(5771).withSpring;
   items[4] = closure_10;
   items[5] = closure_18;
   items[6] = transitionState;
@@ -388,11 +388,11 @@ function AnimatedItemPreview(cleanUp) {
   if (node.type === tmp9.FOLDER) {
     let obj4 = { id: null, expanded: null, color: null, name: null, childNodes: null, isDragPreview: true, hideExpandedChildren: !isHomeDrawerEnabled };
     ({ id: obj5.id, expanded: obj5.expanded, color: obj5.color, name: obj5.name, children: obj5.childNodes } = node);
-    tmp24Result = tmp24(tmp4(18514), obj4);
+    tmp24Result = tmp24(tmp4(18609), obj4);
   } else {
     const obj8 = { guildId: node.id, isDragPreview: true, hideExpandedChildren: tmp27 };
     tmp27 = !isHomeDrawerEnabled;
-    const tmp4Result = tmp4(18535);
+    const tmp4Result = tmp4(18630);
     if (isHomeDrawerEnabled) {
       tmp27 = transitionState === YEETED;
     }

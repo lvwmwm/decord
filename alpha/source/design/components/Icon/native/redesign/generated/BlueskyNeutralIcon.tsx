@@ -1,14 +1,14 @@
-// Module ID: 9730
-// Function ID: 9731
+// Module ID: 9748
+// Function ID: 9749
 // Name: BlueskyNeutralIcon
-// Dependencies: [19, 21, 575, 5836, 9731, 2]
+// Dependencies: [19, 21, 575, 5850, 9749, 2]
 // Exports: BlueskyNeutralIcon
 
-// Module 9730 (BlueskyNeutralIcon)
+// Module 9748 (BlueskyNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 9731 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 9749 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 19497
-// Function ID: 19498
+// Module ID: 19601
+// Function ID: 19602
 // Name: HideSelfStreamAndVideoConstants
 // Dependencies: [2]
 
-// Module 19497 (HideSelfStreamAndVideoConstants)
+// Module 19601 (HideSelfStreamAndVideoConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/calls/HideSelfStreamAndVideoConstants.tsx");

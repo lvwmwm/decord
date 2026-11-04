@@ -1,14 +1,14 @@
-// Module ID: 16839
-// Function ID: 16840
+// Module ID: 16931
+// Function ID: 16932
 // Name: WebAuthnNameStep
-// Dependencies: [5, 32, 19, 17, 1072, 21, 5141, 7285, 1499, 6868, 5832, 1113, 8301, 1187, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 21, 5141, 7301, 1499, 6883, 5846, 1113, 8317, 1187, 5768, 2]
 // Exports: default
 
-// Module 16839 (WebAuthnNameStep)
+// Module 16931 (WebAuthnNameStep)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7285 */;
+import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -23,8 +23,8 @@ let metroImportAll;
 let tmp;
 const intl4 = tmp(1113);
 const native = tmp(1187);
-const components_Button_Button = tmp(5754);
-const _mod8301 = tmp(8301);
+const components_Button_Button = tmp(5768);
+const _mod8317 = tmp(8317);
 const View = react_native.View;
 const UserSettingsSections = Constants.UserSettingsSections;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -149,12 +149,12 @@ export default function WebAuthnNameStep() {
   first1 = tmp5Result[0];
   let obj3 = { children: items };
   const tmp12 = tmp5Result[1];
-  const Form = _mod8301.Form;
+  const Form = _mod8317.Form;
   let obj4 = { showTopContainer: false, value: first1, onChange: tmp12, style: tmp3.margin, error: tmp9, title: intl.string(intl4.t["Jzd+z/"]), placeholder: intl2.string(intl4.t["I/sJtJ"]), disabled: first, clearButtonVisibility: native.ClearButtonVisibility.WITH_CONTENT, autoFocus: true, showBorder: true, required: true, large: true };
-  const FormInput = _mod8301.FormInput;
+  const FormInput = _mod8317.FormInput;
   intl = intl4.intl;
   intl2 = intl4.intl;
-  items = [closure_8(FormInput, obj4), closure_8(_mod8301.FormDivider, {}), ];
+  items = [closure_8(FormInput, obj4), closure_8(_mod8317.FormDivider, {}), ];
   let obj5 = { style: tmp3.margin, children: closure_8(Button, obj6) };
   obj6 = {
     onPress() {

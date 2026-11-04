@@ -1,16 +1,16 @@
-// Module ID: 13386
-// Function ID: 13387
+// Module ID: 13470
+// Function ID: 13471
 // Name: StringSelectComponentActionSheet
-// Dependencies: [32, 19, 21, 5141, 575, 8827, 2121, 5381, 12292, 7420, 5747, 1113, 2]
+// Dependencies: [32, 19, 21, 5141, 575, 8844, 2121, 5382, 12355, 7436, 5761, 1113, 2]
 // Exports: default
 
-// Module 13386 (StringSelectComponentActionSheet)
+// Module 13470 (StringSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import EmojiDefault from "Emoji" /* 7420 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import EmojiDefault from "Emoji" /* 7436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -41,7 +41,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
   ({ labelComponent, channelId, containerId, allowEmpty } = selectionActionComponent);
   let tmp = callback();
   dependencyMap = tmp;
-  let obj = selectionActionComponent(8827);
+  let obj = selectionActionComponent(8844);
   const useState = react.useState;
   set = new Set(obj.getInitialStringSelectOptions(selectionActionComponent, containerId));
   let tmp3 = first(useState(set), 2);
@@ -118,7 +118,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
       if (null != description.description) {
         tmp = null;
         if ("" !== description.description) {
-          tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "text-xs/medium", color: "text-default", children: description.description });
+          tmp = jsx(Text_Text.Text, { style: closure_2.selectionOptionItemDescription, variant: "body-xs/medium", color: "text-default", children: description.description });
         }
       }
       return tmp;
@@ -150,7 +150,7 @@ export default function StringSelectComponentActionSheet(selectionActionComponen
     channelId,
     allowEmpty
   };
-  const tmp10 = onSubmit(12292);
+  const tmp10 = onSubmit(12355);
   const tmp9 = memo;
   if (selectionOptionItemWithDescription) {
     selectionOptionItemWithDescription = tmp.selectionOptionItemWithDescription;

@@ -1,16 +1,16 @@
-// Module ID: 10094
-// Function ID: 10095
+// Module ID: 10142
+// Function ID: 10143
 // Name: Coachmark
-// Dependencies: [109, 32, 19, 17, 1072, 21, 1652, 5141, 575, 10089, 5761, 10095, 5837, 6141, 5747, 5754, 1113, 7180, 9120, 10096, 1377, 5207, 2]
+// Dependencies: [109, 32, 19, 17, 1072, 21, 1652, 5141, 575, 10137, 5775, 10143, 5851, 6156, 5761, 5768, 1113, 7195, 9137, 10144, 1377, 5207, 2]
 // Exports: CoachmarkContainer
 
-// Module 10094 (Coachmark)
+// Module 10142 (Coachmark)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 5207 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import react_native from "react-native" /* 6141 */;
-import Graphic2 from "Graphic" /* 10095 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import react_native from "react-native" /* 6156 */;
+import Graphic2 from "Graphic" /* 10143 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -164,8 +164,8 @@ class Coachmark {
       textOnlyPadding = tmp.textOnlyPadding;
     }
     items4[1] = textOnlyPadding;
-    items5 = [tmp17(Text, { style: items4, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), ];
-    const obj5 = { style: tmp.text, variant: "text-sm/medium", color: "text-subtle", children: description };
+    items5 = [tmp17(Text, { style: items4, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: title }), ];
+    const obj5 = { style: tmp.text, variant: "body-sm/medium", color: "text-subtle", children: description };
     items5[1] = closure_10(tmp8(renderImgComponent[14]).Text, obj5);
     items3[1] = closure_11(closure_7, obj4);
     const items6 = [tmp14(tmp16, obj3), , ];

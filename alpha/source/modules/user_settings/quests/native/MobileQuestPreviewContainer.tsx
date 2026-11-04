@@ -1,13 +1,13 @@
-// Module ID: 17291
-// Function ID: 17292
+// Module ID: 17383
+// Function ID: 17384
 // Name: MobileQuestPreviewContainer
-// Dependencies: [17, 21, 5141, 575, 5747, 2]
+// Dependencies: [17, 21, 5141, 575, 5761, 2]
 // Exports: default
 
-// Module 17291 (MobileQuestPreviewContainer)
+// Module 17383 (MobileQuestPreviewContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ export default function MobileQuestPreviewContainer(title) {
   const tmp2 = React3;
   const tmp3 = View;
   if (tmp4) {
-    const obj2 = { variant: "text-lg/semibold", color: "text-default", style: tmp.title, children: title };
+    const obj2 = { variant: "body-lg/semibold", color: "text-default", style: tmp.title, children: title };
     tmp4 = _false(Text_Text.Text, obj2);
   }
   items = [tmp4, children];

@@ -1,22 +1,22 @@
-// Module ID: 15627
-// Function ID: 15628
+// Module ID: 15714
+// Function ID: 15715
 // Name: GuildBoostingMarketingBoosterRecognitionCards
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 15628, 10051, 15629, 15553, 15630, 9187, 15631, 9596, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 15715, 10099, 15716, 15640, 15717, 9204, 15718, 9615, 2]
 // Exports: default
 
-// Module 15627 (GuildBoostingMarketingBoosterRecognitionCards)
+// Module 15714 (GuildBoostingMarketingBoosterRecognitionCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9187 */;
-import HeartIcon from "HeartIcon" /* 9596 */;
-import BoostGemIcon from "BoostGemIcon" /* 10051 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 15553 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15628 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15629 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15630 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15631 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9204 */;
+import HeartIcon from "HeartIcon" /* 9615 */;
+import BoostGemIcon from "BoostGemIcon" /* 10099 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 15640 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15715 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15716 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15717 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15718 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -36,7 +36,7 @@ function Card(arg0) {
   ({ IconComponent, children } = arg0);
   obj3 = { size: "lg", color: nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PINK };
   items = [React3(View, obj2), ];
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", children };
+  const obj4 = { style: tmp.description, variant: "body-sm/medium", children };
   items[1] = React3(Text_Text.Text, obj4);
   return hasOwnProperty(View, obj);
 }

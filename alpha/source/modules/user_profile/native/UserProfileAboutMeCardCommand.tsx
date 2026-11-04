@@ -1,19 +1,19 @@
-// Module ID: 11634
-// Function ID: 11635
+// Module ID: 11685
+// Function ID: 11686
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1072, 21, 5141, 575, 5747, 5330, 11635, 1252, 5880, 5381, 11641, 7824, 5803, 2]
+// Dependencies: [19, 1072, 21, 5141, 575, 5761, 5331, 11686, 1252, 5894, 5382, 11692, 7840, 5817, 2]
 
-// Module 11634 (UserProfileAboutMeCardCommand)
+// Module 11685 (UserProfileAboutMeCardCommand)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5803 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7824 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11635 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11641 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5817 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7840 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11686 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11692 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ const memoResult = react.memo(function UserProfileAboutMeCardCommand(channel) {
   let tmp = closure_5();
   const items = ["/", command.displayName];
   return jsxs(require("Text/Text").Text, {
-    variant: "text-md/semibold",
+    variant: "body-md/semibold",
     onPress() {
       let str;
       let obj = require("ChatInputUtils");

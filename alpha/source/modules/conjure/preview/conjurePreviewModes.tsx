@@ -1,11 +1,11 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12278
+// Function ID: 12279
 // Name: conjurePreviewModes
-// Dependencies: [11014, 6965, 12220, 2]
+// Dependencies: [11063, 6980, 12279, 2]
 // Exports: previewBotInstallBlocksMode, previewCapabilitiesFromSurfaces, previewModeAvailability, profileSurfaceAvailability, profileWidgetState, requiresPermissionReview, resolvePreviewMode, showsFramePreview
 
-// Module 12219 (conjurePreviewModes)
-import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11014 */;
+// Module 12278 (conjurePreviewModes)
+import conjurePreviewFrameSurfaces from "conjurePreviewFrameSurfaces" /* 11063 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -15,8 +15,8 @@ let obj = {
   frame(hasFrame) {
     return hasFrame.hasFrame;
   },
-  widget(disableInteraction) {
-    return disableInteraction.hasProfileWidget;
+  widget(dependencyMap) {
+    return dependencyMap.hasProfileWidget;
   },
   overlay(hasOverlay) {
     return true === hasOverlay.hasOverlay;
@@ -40,10 +40,10 @@ export function previewCapabilitiesFromSurfaces(previewSupportedSurfaces, arg1) 
       obj = { hasFrame: obj2.declaresPreviewFrame(previewSupportedSurfaces), hasProfileWidget: widgetResolvable, hasBotDm: botDmResolvable };
       obj2 = conjurePreviewFrameSurfaces;
       if (widgetResolvable) {
-        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6965).ConjureSupportedSurface.PROFILE_WIDGET);
+        widgetResolvable = previewSupportedSurfaces.includes(tmp3(6980).ConjureSupportedSurface.PROFILE_WIDGET);
       }
       if (botDmResolvable) {
-        const hasItem = previewSupportedSurfaces.includes(tmp3(6965).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6965).ConjureSupportedSurface.APPLICATION_COMMANDS);
+        const hasItem = previewSupportedSurfaces.includes(tmp3(6980).ConjureSupportedSurface.BOT) || previewSupportedSurfaces.includes(tmp3(6980).ConjureSupportedSurface.APPLICATION_COMMANDS);
         botDmResolvable = hasItem;
       }
       tmp = obj;

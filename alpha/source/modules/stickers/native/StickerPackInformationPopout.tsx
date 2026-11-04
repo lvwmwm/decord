@@ -1,15 +1,15 @@
-// Module ID: 10410
-// Function ID: 10411
+// Module ID: 10458
+// Function ID: 10459
 // Name: StickerPackInformationPopout
-// Dependencies: [19, 17, 21, 5141, 575, 6680, 1113, 5747, 7106, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6695, 1113, 5761, 7121, 2]
 // Exports: default, doesStickerPackHavePopoutInformation
 
-// Module 10410 (StickerPackInformationPopout)
+// Module 10458 (StickerPackInformationPopout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import StickersUtils from "StickersUtils" /* 6680 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import StickersUtils from "StickersUtils" /* 6695 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -57,16 +57,16 @@ export default function StickerPackInformationPopout(stickerPack) {
   let obj3 = { style: items1, children: items3 };
   items1 = [tmp.informationContainer, style];
   const obj4 = { style: tmp.headerContainer, children: items2 };
-  const obj5 = { style: tmp.informationHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.format(require("intl").t.XDm6yN, obj6) };
-  const Text = tmp2(5747).Text;
+  const obj5 = { style: tmp.informationHeader, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.format(require("intl").t.XDm6yN, obj6) };
+  const Text = tmp2(5761).Text;
   intl2 = tmp2(1113).intl;
   obj6 = { stickerPackName: stickerPack.name };
   items2 = [closure_3(Text, obj5), ];
   const obj7 = { onPress: onClose, accessibilityRole: "button", accessibilityLabel: intl3.string(require("intl").t.cpT0Cq), children: closure_3(Text2, obj8) };
-  const PressableOpacity = tmp2(7106).PressableOpacity;
+  const PressableOpacity = tmp2(7121).PressableOpacity;
   intl3 = tmp2(1113).intl;
-  obj8 = { variant: "text-md/semibold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
-  Text2 = tmp2(5747).Text;
+  obj8 = { variant: "body-md/semibold", color: "text-brand", children: intl4.string(require("intl").t.cpT0Cq) };
+  Text2 = tmp2(5761).Text;
   intl4 = tmp2(1113).intl;
   items2[1] = closure_3(PressableOpacity, obj7);
   items3 = [
@@ -76,9 +76,9 @@ export default function StickerPackInformationPopout(stickerPack) {
       let items1;
       const obj = { style: closure_0.informationContentContainer, children: items };
       items = [, ];
-      const obj2 = { style: closure_0.informationContent, variant: "text-md/medium", color: "text-default", children: "\u2022" };
+      const obj2 = { style: closure_0.informationContent, variant: "body-md/medium", color: "text-default", children: "\u2022" };
       items[0] = _false(Text_Text.Text, obj2);
-      const obj3 = { style: items1, variant: "text-md/medium", color: "text-default", children: children.description };
+      const obj3 = { style: items1, variant: "body-md/medium", color: "text-default", children: children.description };
       items1 = [, ];
       ({ informationContent: arr2[0], informationContentDescription: arr2[1] } = closure_0);
       items[1] = _false(Text_Text.Text, obj3);

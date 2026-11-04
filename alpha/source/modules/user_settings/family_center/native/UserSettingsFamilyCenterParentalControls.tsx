@@ -1,16 +1,16 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 17071
+// Function ID: 17072
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1072, 7840, 21, 5141, 575, 1499, 7446, 7471, 7285, 16940, 16958, 1113, 2667, 9943, 16980, 16981, 9108, 7841, 7412, 16982, 9342, 14323, 2]
+// Dependencies: [32, 19, 17, 1072, 7856, 21, 5141, 575, 1499, 7462, 7487, 7301, 17032, 17050, 1113, 2667, 9961, 17072, 17073, 9125, 7857, 7428, 17074, 9359, 14410, 2]
 // Exports: default
 
-// Module 16979 (UserSettingsFamilyCenterParentalControls)
+// Module 17071 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2667 from "module_2667" /* 2667 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7841 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7856 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7857 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -134,7 +134,7 @@ export default function FamilyCenterParentalControlsSettings() {
         setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "Array", headerRight: "flexDirection" });
+    stackNavigation.setOptions({ title: "PX_8", headerRight: "__closure" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
   const obj4 = { label: intl.string(stackNavigation(selectedSubPage[14]).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_9(require("FamilyCenterParentalControlsContentAndSocial"), {}) };

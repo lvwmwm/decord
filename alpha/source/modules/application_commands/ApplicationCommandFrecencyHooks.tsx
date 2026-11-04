@@ -1,13 +1,13 @@
-// Module ID: 9901
-// Function ID: 9902
+// Module ID: 9919
+// Function ID: 9920
 // Name: ApplicationCommandFrecencyHooks
-// Dependencies: [19, 9896, 1082, 4971, 504, 2]
+// Dependencies: [19, 9914, 1082, 4971, 504, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 9901 (ApplicationCommandFrecencyHooks)
+// Module 9919 (ApplicationCommandFrecencyHooks)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import react from "react" /* 19 */;
-import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9896 */;
+import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

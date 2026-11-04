@@ -1,14 +1,14 @@
-// Module ID: 5853
-// Function ID: 5854
+// Module ID: 5867
+// Function ID: 5868
 // Name: DownloadIcon
-// Dependencies: [19, 21, 575, 5836, 5854, 2]
+// Dependencies: [19, 21, 575, 5850, 5868, 2]
 // Exports: DownloadIcon
 
-// Module 5853 (DownloadIcon)
+// Module 5867 (DownloadIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 5854 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 5868 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

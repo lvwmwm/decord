@@ -1,13 +1,13 @@
-// Module ID: 13917
-// Function ID: 13918
+// Module ID: 14003
+// Function ID: 14004
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 5141, 13918, 5747, 2]
+// Dependencies: [19, 21, 5141, 14004, 5761, 2]
 // Exports: default
 
-// Module 13917 (ForumPostMessageContent)
+// Module 14003 (ForumPostMessageContent)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 13918 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 14004 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 16010
-// Function ID: 16011
+// Module ID: 16100
+// Function ID: 16101
 // Name: DEFAULT_TOAST_POSITION
-// Dependencies: [32, 19, 5152, 5834, 5155, 5150, 2]
+// Dependencies: [32, 19, 5152, 5848, 5155, 5150, 2]
 // Exports: useToastContainer
 
-// Module 16010 (DEFAULT_TOAST_POSITION)
+// Module 16100 (DEFAULT_TOAST_POSITION)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -70,7 +70,7 @@ export function useToastContainer(app) {
     const value = containerIdsBySurface.get(closure_0);
     return null != value && value[value.length - 1] === id;
   });
-  const obj2 = require("module_5834");
+  const obj2 = require("module_5848");
   const tmp5 = entry;
   entry = undefined;
   const tmp4 = _require;

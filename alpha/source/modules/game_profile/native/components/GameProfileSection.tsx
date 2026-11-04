@@ -1,16 +1,16 @@
-// Module ID: 9565
-// Function ID: 9566
+// Module ID: 9584
+// Function ID: 9585
 // Name: GameProfileSection
-// Dependencies: [19, 17, 21, 5141, 575, 9566, 5747, 5754, 1113, 7498, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9585, 5761, 5768, 1113, 7514, 2]
 // Exports: GameProfileSectionSkeleton, default
 
-// Module 9565 (GameProfileSection)
+// Module 9584 (GameProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7498 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9566 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7514 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9585 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -50,11 +50,11 @@ export default function GameProfileSection(onPressViewAll) {
   items = [tmp.container, style];
   const obj2 = { style: items1, children: items2 };
   items1 = [tmp.header, headerStyle];
-  items2 = [React3(Text_Text.Heading, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: title }), ];
+  items2 = [React3(Text_Text.Heading, { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", children: title }), ];
   let tmp4Result = null != onPressViewAll;
   if (tmp4Result) {
     const obj3 = { text: intl.string(intl2.t.budhsM), variant: "tertiary", size: "sm", icon: React3(ChevronSmallRightIcon.ChevronSmallRightIcon, { size: "sm" }), iconPosition: "end", onPress: onPressViewAll };
-    const Button = tmp5(5754).Button;
+    const Button = tmp5(5768).Button;
     intl = tmp5(1113).intl;
     tmp4Result = tmp4(Button, obj3);
   }

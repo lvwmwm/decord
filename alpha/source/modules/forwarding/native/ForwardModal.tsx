@@ -1,36 +1,36 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 13602
+// Function ID: 13603
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7891, 7894, 9030, 4990, 6181, 9058, 13519, 10857, 21, 5141, 575, 1493, 13520, 504, 13516, 13515, 7130, 13522, 5832, 1113, 1380, 13524, 6080, 13525, 9961, 5876, 13526, 13527, 6166, 5383, 5384, 5831, 7478, 1377, 13530, 7682, 5847, 10866, 13531, 13540, 13555, 2]
+// Dependencies: [5, 32, 19, 17, 7907, 7910, 9047, 4990, 6196, 9075, 13603, 10905, 21, 5141, 575, 1493, 13604, 504, 13600, 13599, 7145, 13606, 5846, 1113, 1380, 13608, 6095, 13609, 9979, 5890, 13610, 13611, 6181, 5384, 5385, 5845, 7494, 1377, 13614, 7698, 5861, 10914, 13615, 13624, 13639, 2]
 // Exports: default
 
-// Module 13518 (ForwardModal)
+// Module 13602 (ForwardModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5384 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import LinkIcon from "LinkIcon" /* 5847 */;
-import ChannelUtils from "ChannelUtils" /* 6166 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7682 */;
-import UserRowConstants from "UserRowConstants" /* 10857 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13515 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 13516 */;
-import ForwardConstants from "ForwardConstants" /* 13519 */;
-import formatResults from "formatResults" /* 13520 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 13522 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5385 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import LinkIcon from "LinkIcon" /* 5861 */;
+import ChannelUtils from "ChannelUtils" /* 6181 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7698 */;
+import UserRowConstants from "UserRowConstants" /* 10905 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13599 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 13600 */;
+import ForwardConstants from "ForwardConstants" /* 13603 */;
+import formatResults from "formatResults" /* 13604 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 13606 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7891 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7894 */;
-import ICYMIStore from "ICYMIStore" /* 9030 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7907 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7910 */;
+import ICYMIStore from "ICYMIStore" /* 9047 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import MessageStore from "MessageStore" /* 6181 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 9058 */;
+import MessageStore from "MessageStore" /* 6196 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 9075 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

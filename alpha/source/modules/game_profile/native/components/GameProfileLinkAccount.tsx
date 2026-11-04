@@ -1,16 +1,16 @@
-// Module ID: 9564
-// Function ID: 9565
+// Module ID: 9583
+// Function ID: 9584
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 2167, 1385, 21, 5141, 575, 7238, 9565, 9566, 7447, 504, 9468, 1113, 5837, 1187, 5747, 5754, 9568, 2]
+// Dependencies: [19, 17, 2167, 1385, 21, 5141, 575, 7258, 9584, 9585, 7463, 504, 9486, 1113, 5851, 1187, 5761, 5768, 9587, 2]
 // Exports: default
 
-// Module 9564 (GameProfileLinkAccount)
+// Module 9583 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7238 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
-import GameProfileSection from "GameProfileSection" /* 9565 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9566 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7258 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
+import GameProfileSection from "GameProfileSection" /* 9584 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9585 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -105,7 +105,7 @@ let closure_11 = react.memo(function GameProfileLinkAccountSkeleton() {
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(9566), obj13);
+    tmp5Result = tmp5(tmp2(9585), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };
@@ -187,12 +187,12 @@ export default function GameProfileLinkAccount(analyticsLocations) {
                 }
                 items6 = [tmp16Result, , ];
                 const obj12 = { style: tmp.cardContent, children: items7 };
-                const obj13 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp.cardText, children: intl2.formatToPlainString(trackAction(startAuthorization[13]).t.hUbQT2, obj14) };
+                const obj13 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.cardText, children: intl2.formatToPlainString(trackAction(startAuthorization[13]).t.hUbQT2, obj14) };
                 const Text = tmp5(tmp3[16]).Text;
                 intl2 = tmp5(tmp3[13]).intl;
                 obj14 = { gameName: connectionApp.name };
                 items7 = [closure_7(Text, obj13), ];
-                const obj15 = { variant: "text-sm/medium", color: "text-default", style: tmp.cardText, children: intl3.string(trackAction(startAuthorization[13]).t["JKqu+4"]) };
+                const obj15 = { variant: "body-sm/medium", color: "text-default", style: tmp.cardText, children: intl3.string(trackAction(startAuthorization[13]).t["JKqu+4"]) };
                 const Text2 = tmp5(tmp3[16]).Text;
                 intl3 = tmp5(tmp3[13]).intl;
                 items7[1] = closure_7(Text2, obj15);

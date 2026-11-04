@@ -1,10 +1,10 @@
-// Module ID: 18239
-// Function ID: 18240
+// Module ID: 18336
+// Function ID: 18337
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1072, 5146, 13953, 1099, 7760, 5832, 1113, 18240, 2]
+// Dependencies: [5, 32, 19, 1072, 5146, 14039, 1099, 7776, 5846, 1113, 18337, 2]
 // Exports: default
 
-// Module 18239 (usePrivateChannelWave)
+// Module 18336 (usePrivateChannelWave)
 import MessageConstants from "MessageConstants" /* 5146 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

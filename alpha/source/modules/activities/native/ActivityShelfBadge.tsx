@@ -1,10 +1,10 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12631
+// Function ID: 12632
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1187, 2121, 5747, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1187, 2121, 5761, 1113, 2]
 // Exports: default
 
-// Module 12550 (ActivityShelfBadge)
+// Module 12631 (ActivityShelfBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -47,8 +47,8 @@ export default function ActivityShelfBadge(arg0) {
   if (labelType === Server.EmbeddedActivityLabelTypes.NEW) {
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
-    ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl.string(intl3.t.y2b7CA) });
-    const Text = tmp2(5747).Text;
+    ({ variant: "body-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl.string(intl3.t.y2b7CA) });
+    const Text = tmp2(5761).Text;
     intl = tmp2(1113).intl;
     tmp6 = <View style={items}>{null}</View>;
   } else {
@@ -56,8 +56,8 @@ export default function ActivityShelfBadge(arg0) {
     if (labelType === Server.EmbeddedActivityLabelTypes.UPDATED) {
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
-      ({ variant: "text-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl2.string(intl3.t["/qdhkk"]) });
-      const Text2 = tmp2(5747).Text;
+      ({ variant: "body-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl2.string(intl3.t["/qdhkk"]) });
+      const Text2 = tmp2(5761).Text;
       intl2 = tmp2(1113).intl;
       tmp6 = <View style={items1}>{null}</View>;
     }

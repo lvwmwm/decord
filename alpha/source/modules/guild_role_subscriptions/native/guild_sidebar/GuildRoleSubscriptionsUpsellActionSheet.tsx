@@ -1,20 +1,20 @@
-// Module ID: 18450
-// Function ID: 18451
+// Module ID: 18544
+// Function ID: 18545
 // Name: GuildRoleSubscriptionsUpsellActionSheet
-// Dependencies: [19, 17, 1072, 4987, 21, 5141, 5395, 5837, 18451, 5747, 1113, 5754, 9202, 2]
+// Dependencies: [19, 17, 1072, 4987, 21, 5141, 5396, 5851, 18545, 5761, 1113, 5768, 9219, 2]
 // Exports: default
 
-// Module 18450 (GuildRoleSubscriptionsUpsellActionSheet)
+// Module 18544 (GuildRoleSubscriptionsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18451 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18545 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -54,7 +54,7 @@ export default function GuildRoleSubscriptionsUpsellActionSheet(arg0) {
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items[1] = closure_6(Text, obj3);
-  const obj4 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl5.t.zOHfEX) };
+  const obj4 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl5.t.zOHfEX) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items[2] = closure_6(Text2, obj4);

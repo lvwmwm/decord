@@ -1,18 +1,18 @@
-// Module ID: 8693
-// Function ID: 8694
+// Module ID: 8710
+// Function ID: 8711
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5141, 575, 6898, 6151, 5747, 8694, 8695, 8696, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6913, 6166, 5761, 8711, 8712, 8713, 2]
 
-// Module 8693 (utils/ChangeLogUtils)
+// Module 8710 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8696 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8713 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import CustomMarkup from "CustomMarkup" /* 6151 */;
+import CustomMarkup from "CustomMarkup" /* 6166 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let closure_4, item, length;
 let obj2;
 let obj3;
 let tmp2;
-const MarkupRulesUtils = tmp2(8695);
+const MarkupRulesUtils = tmp2(8712);
 function ChangeLogLink(arg0) {
   let node;
   let output;
@@ -58,7 +58,7 @@ function ChangeLogList(styling) {
         if ("list" === type.type) {
           if (closure_4.length > 0) {
             const push2 = items.push;
-            const obj2 = { variant: "text-sm/normal", children: closure_0(closure_4, obj) };
+            const obj2 = { variant: "body-sm/normal", children: closure_0(closure_4, obj) };
             const Text = item(closure_2_2[7]).Text;
             const merged = Object.assign(closure_2);
             const _HermesInternal = HermesInternal;
@@ -74,11 +74,11 @@ function ChangeLogList(styling) {
       });
       if (length.length > 0) {
         let push = items.push;
-        let obj2 = { variant: "text-sm/normal", children: tmp(length, obj) };
+        let obj2 = { variant: "body-sm/normal", children: tmp(length, obj) };
         let Text = Text_Text.Text;
         const merged1 = Object.assign(arg0);
         let _HermesInternal = HermesInternal;
-        push(<Text key={"text-" + items.length} variant="text-sm/normal">{require(length, obj)}</Text>);
+        push(<Text key={"text-" + items.length} variant="body-sm/normal">{require(length, obj)}</Text>);
         length = [];
       }
       return items;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5747).Text;
+    Paragraph = output(5761).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8694);
+  const obj = output(8711);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8694);
+    const tmp5Result = tmp5(8711);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;
@@ -119,14 +119,14 @@ function ChangeLogParagraph(state) {
           const merged = Object.assign(state);
           tmp6 = < key={arg1}>{output(items, obj3)}</>;
         } else {
-          tmp6 = <Paragraph key={arg1} variant="text-sm/normal" style={text.text}>{output(arg0.nodes, state)}</Paragraph>;
+          tmp6 = <Paragraph key={arg1} variant="body-sm/normal" style={text.text}>{output(arg0.nodes, state)}</Paragraph>;
         }
         return tmp6;
       })}</View>;
     }
     return tmp7;
   }
-  tmp7 = <Paragraph key={state.key} variant="text-sm/normal" style={tmp.text}>{output(node.content, state)}</Paragraph>;
+  tmp7 = <Paragraph key={state.key} variant="body-sm/normal" style={tmp.text}>{output(node.content, state)}</Paragraph>;
 }
 function ChangeLogStrong(state) {
   let node;
@@ -155,7 +155,7 @@ function ChangeLogBlockQuote(state) {
   state = state.state;
   ({ node, output } = state);
   const tmp = closure_6();
-  ({ variant: "text-sm/normal", style: tmp.text, children: output(content, obj3) });
+  ({ variant: "body-sm/normal", style: tmp.text, children: output(content, obj3) });
   obj3 = { changelogImagesDisabled: true };
   const Text = Text_Text.Text;
   content = node.content;

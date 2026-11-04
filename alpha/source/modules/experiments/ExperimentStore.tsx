@@ -1,10 +1,10 @@
-// Module ID: 5361
-// Function ID: 5362
+// Module ID: 5362
+// Function ID: 5363
 // Name: ExperimentStore
-// Dependencies: [32, 502, 1071, 5362, 1072, 3, 1374, 1251, 1252, 5363, 510, 12, 572, 2]
+// Dependencies: [32, 502, 1071, 5363, 1072, 3, 1374, 1251, 1252, 5364, 510, 12, 572, 2]
 // Exports: registerExperiment
 
-// Module 5361 (ExperimentStore)
+// Module 5362 (ExperimentStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage5 from "Storage" /* 510 */;
@@ -12,11 +12,11 @@ import Dispatcher from "Dispatcher" /* 572 */;
 import _modDef1251 from "module_1251" /* 1251 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1374 */;
-import GuildFilters from "GuildFilters" /* 5363 */;
+import GuildFilters from "GuildFilters" /* 5364 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import ExperimentConstants from "ExperimentConstants" /* 5362 */;
+import ExperimentConstants from "ExperimentConstants" /* 5363 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -784,7 +784,7 @@ const map = new Map();
 let closure_19 = {};
 let obj = { rawUserExperiments: [], rawGuildExperiments: [] };
 let loadedUserExperiments = {};
-const version = {};
+const authStore6 = {};
 const sidebars = {};
 let obj4 = {};
 obj = {};

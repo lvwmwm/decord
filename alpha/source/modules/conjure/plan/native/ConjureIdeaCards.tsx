@@ -1,17 +1,17 @@
-// Module ID: 12912
-// Function ID: 12913
+// Module ID: 12993
+// Function ID: 12994
 // Name: ConjureIdeaCards
-// Dependencies: [19, 17, 21, 5141, 12770, 5747, 1113, 3995, 7103, 6147, 2]
+// Dependencies: [19, 17, 21, 5141, 12851, 5761, 1113, 3995, 7118, 6162, 2]
 // Exports: default
 
-// Module 12912 (ConjureIdeaCards)
+// Module 12993 (ConjureIdeaCards)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12770 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12851 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -33,7 +33,7 @@ export default function ConjureIdeaCards(arg0) {
   let items;
   ({ ideas, onPick: require } = arg0);
   let obj = { style: closure_6().ideaCards, children: items };
-  let obj2 = { variant: "text-sm/semibold", color: "text-muted", children: intl.string(_modDef3995["wx/o8Y"]) };
+  let obj2 = { variant: "body-sm/semibold", color: "text-muted", children: intl.string(_modDef3995["wx/o8Y"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [
@@ -64,13 +64,13 @@ export default function ConjureIdeaCards(arg0) {
       obj2 = { title: title.title };
       Stack = Stack_Stack.Stack;
       items = [, ];
-      const obj3 = { variant: "text-md/semibold", color: "text-default", children: title.title };
+      const obj3 = { variant: "body-md/semibold", color: "text-default", children: title.title };
       items[0] = closure_1_4(Text_Text.Text, obj3);
       const tmp2 = require;
       const tmp3 = dependencyMap;
       tmp5 = closure_1_5;
       if ("" !== title.value) {
-        const obj4 = { variant: "text-sm/normal", color: "text-muted", children: title.value };
+        const obj4 = { variant: "body-sm/normal", color: "text-muted", children: title.value };
         tmpResult = tmp(tmp2(tmp3[5]).Text, obj4);
       }
       items[1] = tmpResult;

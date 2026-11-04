@@ -1,18 +1,18 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15940
+// Function ID: 15941
 // Name: UserCodeInput
-// Dependencies: [32, 19, 17, 15853, 21, 5141, 15854, 15855, 5747, 1113, 7208, 5754, 2]
+// Dependencies: [32, 19, 17, 15941, 21, 5141, 15942, 15943, 5761, 1113, 7223, 5768, 2]
 // Exports: UserCodeInput
 
-// Module 15852 (UserCodeInput)
+// Module 15940 (UserCodeInput)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7208 */;
-import OAuthConstants2 from "OAuthConstants" /* 15853 */;
-import useUserCodeSubmit from "useUserCodeSubmit" /* 15854 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15855 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7223 */;
+import OAuthConstants2 from "OAuthConstants" /* 15941 */;
+import useUserCodeSubmit from "useUserCodeSubmit" /* 15942 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -62,7 +62,7 @@ export function UserCodeInput(prefilledUserCode) {
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [metroImportDefault(Text, obj4), ];
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: tmp.text, children: intl2.string(intl5.t.xRHk7f) };
+  const obj5 = { variant: "body-md/medium", color: "text-default", style: tmp.text, children: intl2.string(intl5.t.xRHk7f) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items[1] = metroImportDefault(Text2, obj5);

@@ -1,9 +1,9 @@
-// Module ID: 11476
-// Function ID: 11477
+// Module ID: 11526
+// Function ID: 11527
 // Name: GuildActionSheetMemberCount
-// Dependencies: [19, 17, 21, 5141, 575, 1357, 1113, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1357, 1113, 5761, 2]
 
-// Module 11476 (GuildActionSheetMemberCount)
+// Module 11526 (GuildActionSheetMemberCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -80,9 +80,9 @@ const memoResult = react.memo(function MemberCount(arg0) {
   const obj4 = { style: items, children: _false(View, { style: items1 }) };
   items1 = [tmp8.dot, "online" === type ? tmp8.onlineDot : tmp8.offlineDot];
   items2 = [_false(View, obj4), ];
-  const Text = tmp4(5747).Text;
+  const Text = tmp4(5761).Text;
   if (textVariant == null) {
-    textVariant = "text-sm/normal";
+    textVariant = "body-sm/normal";
   }
   const obj5 = { variant: textVariant, color, lineClamp: 1, style: tmp8.refreshText, children: stringResult };
   if (color == null) {

@@ -1,23 +1,23 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12850
+// Function ID: 12851
 // Name: ConjureMessageRow
-// Dependencies: [19, 17, 1385, 21, 5141, 12761, 12770, 12771, 575, 12726, 10982, 12740, 12351, 12773, 12279, 504, 12781, 12782, 12776, 12716, 12326, 12222, 12774, 5747, 1113, 12780, 12783, 12784, 12785, 12786, 12787, 12795, 3995, 12802, 12804, 12805, 12333, 12806, 12855, 12272, 12856, 12725, 12858, 12886, 12894, 12902, 12904, 12792, 12907, 12912, 12913, 12914, 2]
+// Dependencies: [19, 17, 1385, 21, 5141, 12842, 12851, 12852, 575, 12807, 11030, 12821, 12416, 12854, 12340, 504, 12862, 12863, 12857, 12797, 12391, 12281, 12855, 5761, 1113, 12861, 12864, 12865, 12866, 12867, 12868, 12876, 3995, 12883, 12885, 12886, 12398, 12887, 12936, 12333, 12937, 12806, 12939, 12967, 12975, 12983, 12985, 12873, 12988, 12993, 12994, 12995, 2]
 
-// Module 12769 (ConjureMessageRow)
+// Module 12850 (ConjureMessageRow)
 import nativeDefault from "native" /* 575 */;
-import conjureChatTurns from "conjureChatTurns" /* 10982 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12326 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12333 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12351 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 12716 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12726 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12740 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12761 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12770 */;
-import ConjureRepliedMessage from "ConjureRepliedMessage" /* 12771 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12776 */;
-import ConjureChatRestore from "ConjureChatRestore" /* 12781 */;
-import ConjureActivityBox from "ConjureActivityBox" /* 12806 */;
+import conjureChatTurns from "conjureChatTurns" /* 11030 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12391 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12398 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12416 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 12797 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12807 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12821 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12842 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12851 */;
+import ConjureRepliedMessage from "ConjureRepliedMessage" /* 12852 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12857 */;
+import ConjureChatRestore from "ConjureChatRestore" /* 12862 */;
+import ConjureActivityBox from "ConjureActivityBox" /* 12887 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -296,9 +296,9 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
             combined = "" + intl3.string(tmp11(tmp12[24]).t.KD6OJJ) + ": " + conjureMentionNames;
           }
           let tmp100 = null;
-          const obj8 = { variant: "text-md/normal", color: "text-default", accessibilityLabel: combined, children: items13 };
+          const obj8 = { variant: "body-md/normal", color: "text-default", accessibilityLabel: combined, children: items13 };
           if (null != memo4) {
-            const obj9 = { label: memo4.label, variant: "text-md/medium" };
+            const obj9 = { label: memo4.label, variant: "body-md/medium" };
             tmp100 = replied(tmp18(tmp12[25]), obj9);
           }
           items13 = [tmp100, , ];
@@ -310,7 +310,7 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
             }
           }
           items13[1] = str5;
-          const obj10 = { text: trimmed, variant: "text-md/normal" };
+          const obj10 = { text: trimmed, variant: "body-md/normal" };
           items13[2] = replied(message(tmp12[26]), obj10);
           tmp89Result = tmp89(Text3, obj8);
         } else {
@@ -622,7 +622,7 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
                                 let tmp52Result15 = null;
                                 if (null != tmp30) {
                                   const obj32 = { style: tmp.spoken, children: replied(Text2, obj33) };
-                                  obj33 = { variant: "text-xs/normal", color: "text-muted", children: intl.string(message(tmp12[32]).YR8A2v) };
+                                  obj33 = { variant: "body-xs/normal", color: "text-muted", children: intl.string(message(tmp12[32]).YR8A2v) };
                                   Text2 = tmp11(tmp12[23]).Text;
                                   intl = tmp11(tmp12[24]).intl;
                                   tmp52Result15 = tmp52(tmp53, obj32);
@@ -658,7 +658,7 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           items17[1] = tmp52Result16;
           let tmp52Result17 = null;
           if ("side_reply" === message.kind) {
-            const obj36 = { variant: "text-xs/normal", color: "text-muted", children: tmp11Result18.midTurnCaption(message.acknowledges) };
+            const obj36 = { variant: "body-xs/normal", color: "text-muted", children: tmp11Result18.midTurnCaption(message.acknowledges) };
             const Text = tmp11(tmp12[23]).Text;
             tmp11Result18 = projectId(tmp12[38]);
             tmp52Result17 = tmp52(Text, obj36);

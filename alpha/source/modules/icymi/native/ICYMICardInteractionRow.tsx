@@ -1,34 +1,34 @@
-// Module ID: 18731
-// Function ID: 18732
+// Module ID: 18832
+// Function ID: 18833
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7601, 4990, 6828, 5073, 1072, 1388, 21, 5085, 8529, 5141, 575, 1377, 5138, 504, 7609, 7760, 10070, 7106, 1113, 9580, 5747, 10226, 1090, 4966, 1411, 10025, 5837, 10896, 11284, 13527, 12884, 18723, 8767, 5738, 8553, 10323, 9048, 13515, 10331, 5719, 5710, 671, 7498, 2]
+// Dependencies: [32, 19, 17, 7617, 4990, 6843, 5073, 1072, 1388, 21, 5085, 8546, 5141, 575, 1377, 5138, 504, 7625, 7776, 10118, 7121, 1113, 9599, 5761, 10274, 1090, 4966, 1411, 10073, 5851, 10944, 11334, 13611, 12965, 18824, 8784, 5752, 8570, 10371, 9065, 13599, 10379, 5732, 5723, 671, 7514, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 18731 (ICYMICardInteractionRow)
+// Module 18832 (ICYMICardInteractionRow)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import ReactionUtils from "ReactionUtils" /* 5085 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5738 */;
-import Pressables from "Pressables" /* 7106 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8529 */;
-import canAddNewReactionsDefault from "canAddNewReactions" /* 8553 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9048 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10025 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10070 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10331 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12884 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13515 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 13527 */;
-import ICYMIShared from "ICYMIShared" /* 18723 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5752 */;
+import Pressables from "Pressables" /* 7121 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8546 */;
+import canAddNewReactionsDefault from "canAddNewReactions" /* 8570 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10073 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10118 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10379 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12965 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13599 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 13611 */;
+import ICYMIShared from "ICYMIShared" /* 18824 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7601 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7617 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6828 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6843 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -87,7 +87,7 @@ function AddEmojiButton(channel) {
   items2 = [closure_15(channel(handleItemInteracted[22]).ReactionIcon, { size: "sm" }), ];
   const tmp7 = closure_15;
   if (showText) {
-    const obj2 = { variant: "text-sm/semibold", color: "redesign-button-tertiary-text", children: intl2.string(channel(handleItemInteracted[21]).t.m9O1gd) };
+    const obj2 = { variant: "body-sm/semibold", color: "redesign-button-tertiary-text", children: intl2.string(channel(handleItemInteracted[21]).t.m9O1gd) };
     const Text = tmp4(tmp5[23]).Text;
     intl2 = tmp4(tmp5[21]).intl;
     showText = tmp7(Text, obj2);
@@ -208,7 +208,7 @@ function EmojiReaction(messageId) {
   const tmp20 = selectedInnerTextContainer && tmp.selectedInnerEmojiContainer;
   items4[1] = tmp20;
   if (null == emoji.id) {
-    const obj5 = { variant: "text-md/medium", color: "interactive-text-default", style: items5, allowFontScaling: false, children: emoji.name };
+    const obj5 = { variant: "body-md/medium", color: "interactive-text-default", style: items5, allowFontScaling: false, children: emoji.name };
     items5 = [, ];
     ({ defaultEmoji: arr8[0], emojiText: arr8[1] } = tmp);
     tmp18Result = tmp18(tmp2(tmp3[23]).Text, obj5);
@@ -231,7 +231,7 @@ function EmojiReaction(messageId) {
   }
   items8[1] = selectedInnerTextContainer;
   const obj8 = { style: items8, children: closure_15(tmp23, obj9) };
-  obj9 = { animate: true, count, textStyle: tmp24, textVariant: "text-md/semibold" };
+  obj9 = { animate: true, count, textStyle: tmp24, textVariant: "body-md/semibold" };
   tmp24 = null;
   tmp23 = channel(reaction[31]);
   if (isBurstReaction) {
@@ -319,7 +319,7 @@ function ThreadAsCommentsButton(parentMessage) {
           const PressableHighlight2 = tmp2(tmp3[20]).PressableHighlight;
           const obj4 = { style: tmp.commentsIcon };
           items3 = [closure_15(tmp2(tmp3[35]).ChatIcon, obj4), ];
-          const obj5 = { variant: "text-md/semibold", color: "text-strong", children: str };
+          const obj5 = { variant: "body-md/semibold", color: "text-strong", children: str };
           items3[1] = closure_15(tmp2(handleItemInteracted[23]).Text, obj5);
           return closure_15(PressableHighlight2, obj2);
         }

@@ -1,18 +1,18 @@
-// Module ID: 17704
-// Function ID: 17705
+// Module ID: 17800
+// Function ID: 17801
 // Name: UserSettingsDebugLogs
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 7224, 1627, 5832, 510, 7, 5747, 7339, 12942, 1113, 17705, 5381, 17706, 7414, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 7244, 1627, 5846, 510, 7, 5761, 7355, 13024, 1113, 17801, 5382, 17802, 7430, 2]
 // Exports: default
 
-// Module 17704 (UserSettingsDebugLogs)
+// Module 17800 (UserSettingsDebugLogs)
 import LogAggregator from "LogAggregator" /* 7 */;
 import Storage2 from "Storage" /* 510 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import InputTypes from "InputTypes" /* 7224 */;
-import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17705 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import InputTypes from "InputTypes" /* 7244 */;
+import UserSettingsDebugLogsActionSheet from "UserSettingsDebugLogsActionSheet" /* 17801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -159,7 +159,7 @@ export default function UserSettingsDebugLogs() {
     item = item.item;
     const index = item.index;
     const obj = { style: closure_0.log, children: items1 };
-    const obj2 = { style: closure_0.code, variant: "text-xs/normal", color: "text-muted", children: items };
+    const obj2 = { style: closure_0.code, variant: "body-xs/normal", color: "text-muted", children: items };
     const Text = Text_Text.Text;
     items = [, , ];
     const date = new Date(item.time);
@@ -172,10 +172,10 @@ export default function UserSettingsDebugLogs() {
     }
     items[2] = str;
     items1 = [metroImportDefault(Text, obj2), ];
-    const obj3 = { style: closure_0.code, variant: "text-sm/normal", children: items2 };
-    const Text2 = tmp4(5747).Text;
-    const obj4 = { style: closure_0.code, variant: "text-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
-    const Text3 = tmp4(5747).Text;
+    const obj3 = { style: closure_0.code, variant: "body-sm/normal", children: items2 };
+    const Text2 = tmp4(5761).Text;
+    const obj4 = { style: closure_0.code, variant: "body-sm/normal", color: "text-brand", children: "[" + item.category + "]: " };
+    const Text3 = tmp4(5761).Text;
     items2 = [metroImportAll(Text3, obj4), item.message];
     items1[1] = metroImportDefault(Text2, obj3);
     return metroImportDefault(tmp2, obj, index);

@@ -1,17 +1,17 @@
-// Module ID: 11714
-// Function ID: 11715
+// Module ID: 11769
+// Function ID: 11770
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 5012, 7389, 21, 5141, 575, 563, 7638, 9108, 1113, 9342, 11715, 11721, 10273, 2]
+// Dependencies: [32, 19, 17, 5012, 7405, 21, 5141, 575, 563, 7654, 9125, 1113, 9359, 11770, 11776, 10321, 2]
 // Exports: default
 
-// Module 11714 (ChannelsAndRolesModal)
+// Module 11769 (ChannelsAndRolesModal)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7389 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7638 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10273 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7405 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7654 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10321 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;

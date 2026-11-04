@@ -1,26 +1,26 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19253
+// Function ID: 19254
 // Name: SettingsNavigator
-// Dependencies: [19, 17, 2191, 16733, 1072, 21, 9987, 5141, 575, 19151, 1187, 5747, 1500, 15487, 19152, 7286, 563, 7446, 7471, 16735, 7778, 16736, 7290, 16013, 5719, 7106, 1113, 18632, 19153, 16580, 19154, 38, 2]
+// Dependencies: [19, 17, 2191, 16825, 1072, 21, 10035, 5141, 575, 19254, 1187, 5761, 1500, 15574, 19255, 7302, 563, 7462, 7487, 16827, 7794, 16828, 7306, 16103, 5732, 7121, 1113, 18733, 19256, 16671, 19257, 38, 2]
 
-// Module 19150 (SettingsNavigator)
+// Module 19253 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7286 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16735 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 18632 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 19151 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16827 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 18733 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 19254 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16733 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16825 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9987 */;
+import NativeStackView from "NativeStackView" /* 10035 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ function LeftAlignedHeaderTitle(usePersistentBadge) {
     persistentBadge = usePersistentBadge();
   }
   const tmp3 = null != persistentBadge ? tmp.headerTitleWithBadge : tmp.headerContainer;
-  const tmp5 = React4(Text_Text.Heading, { lineClamp: 1, variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: tmp3, children: title });
+  const tmp5 = React4(Text_Text.Heading, { lineClamp: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, style: tmp3, children: title });
   let tmp6 = tmp5;
   const tmp4 = React4;
   if (null != persistentBadge) {

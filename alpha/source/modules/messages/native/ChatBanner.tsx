@@ -1,24 +1,24 @@
-// Module ID: 11493
-// Function ID: 11494
+// Module ID: 11543
+// Function ID: 11544
 // Name: ChatBanner
-// Dependencies: [19, 17, 6688, 6962, 11494, 1072, 21, 5141, 575, 11495, 11496, 504, 11, 1252, 5880, 7402, 5747, 1113, 5754, 7567, 8326, 7106, 7399, 11497, 2]
+// Dependencies: [19, 17, 6703, 6977, 11544, 1072, 21, 5141, 575, 11545, 11546, 504, 11, 1252, 5894, 7418, 5761, 1113, 5768, 7583, 8342, 7121, 7415, 11547, 2]
 // Exports: default
 
-// Module 11493 (ChatBanner)
+// Module 11543 (ChatBanner)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7399 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7402 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8326 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 11494 */;
-import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 11495 */;
-import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 11496 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7415 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7418 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8342 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 11544 */;
+import useShowChannelOptInNoticeDefault from "useShowChannelOptInNotice" /* 11545 */;
+import useAllowedChatOverlaysDefault from "useAllowedChatOverlays" /* 11546 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -82,13 +82,13 @@ class OptInChannelBanner {
     }
     let obj = { style: items2, children: items3 };
     items2[1] = topBorder1;
-    let obj2 = { lineClamp: 2, style: tmp.optInChannelBannerText, variant: "text-sm/semibold", children: intl.string(channel(1113).t.iOWmmB) };
-    const Text = channel(5747).Text;
+    let obj2 = { lineClamp: 2, style: tmp.optInChannelBannerText, variant: "body-sm/semibold", children: intl.string(channel(1113).t.iOWmmB) };
+    const Text = channel(5761).Text;
     intl = channel(1113).intl;
     items3 = [closure_12(Text, obj2), ];
     let obj3 = { style: tmp.optInChannelBannerButtonContainer, children: closure_12(Button, obj4) };
     obj4 = { onPress: callback, size: "sm", text: intl2.string(channel(1113).t["TD/+zP"]) };
-    Button = channel(5754).Button;
+    Button = channel(5768).Button;
     let merged = Object.assign(ctaProps);
     intl2 = channel(1113).intl;
     items3[1] = closure_12(closure_4, obj3);
@@ -115,11 +115,11 @@ function ArchivedLockedThreadChatBanner(channel) {
     const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
     track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(7567);
+  let obj = channel(7583);
   let canUnarchiveThread = obj.useCanUnarchiveThread(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: items1 };
-  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  const Text = channel(5747).Text;
+  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "body-sm/medium", color: "text-default", children: stringResult };
+  const Text = channel(5761).Text;
   const isForumPostResult = channel.isForumPost();
   const intl = channel(1113).intl;
   const string = intl.string;
@@ -151,7 +151,7 @@ function ArchivedLockedThreadChatBanner(channel) {
           obj4.unarchiveThread(channel, false);
         }
     };
-    Button = tmp3(5754).Button;
+    Button = tmp3(5768).Button;
     intl2 = tmp3(1113).intl;
     canUnarchiveThread = tmp8(tmp7, obj4);
   }
@@ -178,11 +178,11 @@ function LockedThreadChatBanner(channel) {
     const merged1 = Object.assign(obj3.collectChannelAnalyticsMetadata(channel));
     track(CHANNEL_BANNER_VIEWED, obj);
   }, items);
-  let obj = channel(7567);
+  let obj = channel(7583);
   let isThreadModerator = obj.useIsThreadModerator(channel);
   let obj2 = { style: tmp.threadBannerContainer, children: items1 };
-  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "text-sm/medium", color: "text-default", children: stringResult };
-  const Text = channel(5747).Text;
+  let obj3 = { lineClamp: 4, style: tmp.threadBannerTitle, variant: "body-sm/medium", color: "text-default", children: stringResult };
+  const Text = channel(5761).Text;
   const isForumPostResult = channel.isForumPost();
   const intl = channel(1113).intl;
   const string = intl.string;
@@ -214,7 +214,7 @@ function LockedThreadChatBanner(channel) {
           obj4.unlockThread(channel);
         }
     };
-    Button = tmp3(5754).Button;
+    Button = tmp3(5768).Button;
     intl2 = tmp3(1113).intl;
     isThreadModerator = tmp8(tmp7, obj4);
   }
@@ -248,9 +248,9 @@ function NewMessagesChatBar(channel) {
       let obj2 = { style: tmp.newMessageBar, children: items1 };
       const obj3 = { accessibilityRole: "button", style: tmp.newMessageBarTextContainer, onPress: handleScrollToNewMessages, children: closure_12(Text, obj4) };
       const tmp8 = isEstimatedResult ? t.wvtbbG : t["BctFH/"];
-      const PressableOpacity = tmp2(7106).PressableOpacity;
-      obj4 = { variant: "text-sm/semibold", color: "text-overlay-light", children: intl.format(tmp8, obj5) };
-      Text = tmp2(5747).Text;
+      const PressableOpacity = tmp2(7121).PressableOpacity;
+      obj4 = { variant: "body-sm/semibold", color: "text-overlay-light", children: intl.format(tmp8, obj5) };
+      Text = tmp2(5761).Text;
       intl = tmp2(1113).intl;
       obj5 = { count: unreadCount, timestamp: oldestUnreadTimestamp };
       items1 = [closure_12(PressableOpacity, obj3), ];
@@ -265,10 +265,10 @@ function NewMessagesChatBar(channel) {
             },
         children: closure_12(XSmallBoldIcon, obj7)
       };
-      const PressableOpacity2 = tmp2(7106).PressableOpacity;
+      const PressableOpacity2 = tmp2(7121).PressableOpacity;
       intl2 = tmp2(1113).intl;
       obj7 = { size: "sm", color: nativeDefault.colors.WHITE };
-      XSmallBoldIcon = tmp2(11497).XSmallBoldIcon;
+      XSmallBoldIcon = tmp2(11547).XSmallBoldIcon;
       items1[1] = closure_12(PressableOpacity2, obj6);
       tmp5 = closure_13(closure_4, obj2);
     }

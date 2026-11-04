@@ -1,18 +1,18 @@
-// Module ID: 19004
-// Function ID: 19005
+// Module ID: 19107
+// Function ID: 19108
 // Name: AddFriendsContactSyncEmptyState
-// Dependencies: [19, 17, 21, 5141, 575, 19005, 5747, 1113, 14382, 5754, 14378, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 19108, 5761, 1113, 14462, 5768, 14458, 2]
 // Exports: default
 
-// Module 19004 (AddFriendsContactSyncEmptyState)
+// Module 19107 (AddFriendsContactSyncEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14378 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14382 */;
-import CompassSpotIllustration from "CompassSpotIllustration" /* 19005 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14458 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14462 */;
+import CompassSpotIllustration from "CompassSpotIllustration" /* 19108 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -59,7 +59,7 @@ export default function AddFriendsContactSyncEmptyState() {
   intl = intl4.intl;
   items[1] = _false(Heading, obj3);
   const obj4 = { style: tmp.subtitle, children: _false(Text, obj5) };
-  obj5 = { style: tmp.subtitleText, variant: "text-sm/medium", children: format(OXdOPf, obj6) };
+  obj5 = { style: tmp.subtitleText, variant: "body-sm/medium", children: format(OXdOPf, obj6) };
   Text = Text_Text.Text;
   const intl2 = intl4.intl;
   format = intl2.format;

@@ -1,13 +1,13 @@
-// Module ID: 9746
-// Function ID: 9747
+// Module ID: 9764
+// Function ID: 9765
 // Name: DiscoverableGuildsStore
-// Dependencies: [502, 7645, 504, 1380, 572, 2]
+// Dependencies: [502, 7661, 504, 1380, 572, 2]
 
-// Module 9746 (DiscoverableGuildsStore)
+// Module 9764 (DiscoverableGuildsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7645 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7661 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

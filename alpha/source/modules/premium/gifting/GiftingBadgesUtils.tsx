@@ -1,17 +1,17 @@
-// Module ID: 10746
-// Function ID: 10747
+// Module ID: 10794
+// Function ID: 10795
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 8887, 1385, 1113, 2763, 10740, 10747, 10748, 504, 5171, 4974, 8879, 8892, 2]
+// Dependencies: [19, 8904, 1385, 1113, 2763, 10788, 10795, 10796, 504, 5171, 4974, 8896, 8909, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, getIsGiftingBadgesDesktopEnabled, useGiftingBadgeCoachmarkVariant, useIsGiftingBadgesDesktopEnabled
 
-// Module 10746 (GiftingBadgesUtils)
+// Module 10794 (GiftingBadgesUtils)
 import intl2 from "intl" /* 1113 */;
 import _modDef2763 from "module_2763" /* 2763 */;
-import BadgeId from "BadgeId" /* 8879 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8887 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8892 */;
-import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 10740 */;
-import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 10747 */;
+import BadgeId from "BadgeId" /* 8896 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8904 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8909 */;
+import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 10788 */;
+import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 10795 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -126,7 +126,7 @@ export function useGiftingBadgeCoachmarkVariant(platform) {
     }
     tmp4 = enabled3;
   }
-  const GiftingBadgeCoachmarkAudienceExperiment = tmp(10748).GiftingBadgeCoachmarkAudienceExperiment;
+  const GiftingBadgeCoachmarkAudienceExperiment = tmp(10796).GiftingBadgeCoachmarkAudienceExperiment;
   const useConfig2 = GiftingBadgeCoachmarkAudienceExperiment.useConfig;
   if (tmp4) {
     str = "";

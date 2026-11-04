@@ -1,19 +1,19 @@
-// Module ID: 15104
-// Function ID: 15105
+// Module ID: 15184
+// Function ID: 15185
 // Name: UserProfilePersonalWidgetCard
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 15105, 15106, 5747, 1113, 4966, 15107, 5207, 5837, 5710, 8697, 15101, 9656, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 15185, 15186, 5761, 1113, 4966, 15187, 5207, 5851, 5723, 8714, 15181, 9675, 12560, 2]
 // Exports: default
 
-// Module 15104 (UserProfilePersonalWidgetCard)
+// Module 15184 (UserProfilePersonalWidgetCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 5207 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import GifTagDefault from "GifTag" /* 8697 */;
-import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 15105 */;
-import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 15106 */;
-import WidgetAssetUtils from "WidgetAssetUtils" /* 15107 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import GifTagDefault from "GifTag" /* 8714 */;
+import PersonalWidgetExpandCollapseContext from "PersonalWidgetExpandCollapseContext" /* 15185 */;
+import PersonalWidgetMarkupUtils from "PersonalWidgetMarkupUtils" /* 15186 */;
+import WidgetAssetUtils from "WidgetAssetUtils" /* 15187 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -77,11 +77,11 @@ function PersonalWidgetShowMoreButton() {
       children: React4(Text, obj4)
     };
     obj3 = { expanded: isExpanded };
-    Text = tmp(5747).Text;
+    Text = tmp(5761).Text;
     const intl = tmp(1113).intl;
     const string = intl.string;
     const t = tmp(1113).t;
-    obj4 = { variant: "text-sm/medium", color: "text-subtle", children: string(isExpanded ? t["6MwJo/"] : t.lBeKY2) };
+    obj4 = { variant: "body-sm/medium", color: "text-subtle", children: string(isExpanded ? t["6MwJo/"] : t.lBeKY2) };
     tmp5Result = tmp5(hasOwnProperty, obj2);
   } else {
     tmp5Result = null;
@@ -172,7 +172,7 @@ function CoverSection(section) {
   items1 = [tmp6, ];
   let tmp9 = null;
   if ("" !== section.subtitle) {
-    const obj3 = { variant: "text-sm/medium", color: "text-default", maxLines: 3, children: section.subtitle };
+    const obj3 = { variant: "body-sm/medium", color: "text-default", maxLines: 3, children: section.subtitle };
     tmp9 = React4(PersonalWidgetText, obj3);
   }
   items1[1] = tmp9;
@@ -203,7 +203,7 @@ function CoverSection(section) {
     if (null != source) {
       if ("" !== section.title) {
         const obj9 = { colors, locations, style: tmp15.absoluteFill, pointerEvents: "none" };
-        tmp24Result4 = tmp24(tmp14(5710), obj9);
+        tmp24Result4 = tmp24(tmp14(5723), obj9);
       } else {
         tmp24Result4 = null;
       }
@@ -213,7 +213,7 @@ function CoverSection(section) {
     let tmp24Result5 = null;
     if (showGifTag) {
       const obj10 = { style: tmp.gifTag };
-      tmp24Result5 = tmp24(tmp14(8697), obj10);
+      tmp24Result5 = tmp24(tmp14(8714), obj10);
     }
     items2[3] = tmp24Result5;
     tmp24Result6 = tmp24(ThemeContextProvider, obj4);
@@ -263,13 +263,13 @@ function FieldRow(field) {
   let tmp16 = null;
   const obj5 = { style: tmp.fieldContent, children: items2 };
   if ("" !== field.title) {
-    const obj6 = { variant: "text-sm/medium", color: "text-default", maxLines: 2, children: field.title };
+    const obj6 = { variant: "body-sm/medium", color: "text-default", maxLines: 2, children: field.title };
     tmp16 = React4(PersonalWidgetText, obj6);
   }
   items2 = [tmp16, ];
   let tmp19 = null;
   if ("" !== field.description) {
-    const obj7 = { variant: "text-xs/medium", color: "text-subtle", maxLines: 4, children: field.description };
+    const obj7 = { variant: "body-xs/medium", color: "text-subtle", maxLines: 4, children: field.description };
     tmp19 = React4(PersonalWidgetText, obj7);
   }
   items2[1] = tmp19;
@@ -299,10 +299,11 @@ function FieldsSection(arg0) {
 }
 function UserProfilePersonalWidgetCardContent(userId) {
   let disableInteraction;
-  let items;
-  let obj2;
-  let tmp4;
-  let tmp5;
+  let items1;
+  let obj3;
+  let tmp6;
+  let tmp7;
+  let tmp8;
   let widget;
   userId = userId.userId;
   ({ widget, disableInteraction } = userId);
@@ -310,12 +311,23 @@ function UserProfilePersonalWidgetCardContent(userId) {
   if (disableInteraction === undefined) {
     disableInteraction = false;
   }
+  let flag = userId.isEditing;
+  if (flag === undefined) {
+    flag = false;
+  }
   const tmp = closure_14();
-  let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9656).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, children: tmp4(tmp5, obj2) };
-  obj2 = { style: tmp.sectionsContainer, children: items };
+  let obj = { userId, widget, style: cardStyle, titleLeadingIcon: closure_9(userId(9675).NitroWheelIcon, { size: "xs", color: "icon-subtle" }), title: widget.header, disableInteraction, actionButtons: tmp6, children: tmp7(tmp8, obj3) };
+  tmp6 = undefined;
+  const tmp3 = disableInteraction;
+  const tmp5 = disableInteraction(15181);
+  if (flag) {
+    let obj2 = { widget };
+    const items = [tmp2(tmp3(12560), obj2, "edit-options")];
+    tmp6 = items;
+  }
   const sections = widget.sections;
-  const tmp3 = disableInteraction(15101);
-  items = [
+  obj3 = { style: tmp.sectionsContainer, children: items1 };
+  items1 = [
     sections.map(function renderSection(type, index) {
       type = type.type;
       if ("cover" === type) {
@@ -331,13 +343,13 @@ function UserProfilePersonalWidgetCardContent(userId) {
 
   ];
   let tmp2Result = null;
-  tmp4 = closure_10;
-  tmp5 = closure_7;
+  tmp7 = closure_10;
+  tmp8 = closure_7;
   if (!disableInteraction) {
     tmp2Result = tmp2(PersonalWidgetShowMoreButton, {});
   }
-  items[1] = tmp2Result;
-  return closure_9(tmp3, obj);
+  items1[1] = tmp2Result;
+  return closure_9(tmp5, obj);
 }
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, StyleSheet: metroRequire, View: metroImportDefault } = react_native);

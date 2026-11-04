@@ -1,11 +1,11 @@
-// Module ID: 10310
-// Function ID: 10311
+// Module ID: 10358
+// Function ID: 10359
 // Name: FeedbackModal
-// Dependencies: [32, 19, 17, 21, 5141, 8301, 1113, 5747, 2190, 5754, 6864, 7290, 7124, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 8317, 1113, 5761, 2190, 5768, 6879, 7306, 7139, 2]
 // Exports: default
 
-// Module 10310 (FeedbackModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
+// Module 10358 (FeedbackModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -41,9 +41,9 @@ function FeedbackForm(result) {
   const tmp = closure_9();
   const reason = result.reason;
   [value, tmp4] = react.useState("");
-  const FormSection = require("module_8301").FormSection;
+  const FormSection = require("module_8317").FormSection;
   let label;
-  const FormInput = require("module_8301").FormInput;
+  const FormInput = require("module_8317").FormInput;
   const tmp6 = closure_6;
   if (reason != null) {
     label = reason.label;
@@ -53,7 +53,7 @@ function FeedbackForm(result) {
     const intl = tmp7(tmp8[6]).intl;
     titleLabel = intl.string(tmp7(tmp8[6]).t.vcqwCj);
   }
-  const items = [closure_7(FormInput, obj, "channel-input"), closure_7(require("module_8301").FormDivider, {}), ];
+  const items = [closure_7(FormInput, obj, "channel-input"), closure_7(require("module_8317").FormDivider, {}), ];
   const obj2 = { value, title: descriptionLabel, onChange: tmp4, multiline: true, numberOfLines: 4, autoCorrect: true };
   const FormInput2 = tmp7(tmp8[5]).FormInput;
   if (descriptionLabel == null) {
@@ -66,7 +66,7 @@ function FeedbackForm(result) {
   let tmp9Result = !hideHelpdeskLink;
   const obj4 = { style: tmp.bottomContainer, children: items2 };
   if (tmp9Result) {
-    const obj5 = { style: tmp.helpDeskLabel, variant: "text-xs/medium", color: "text-muted", children: format(ybi2tD, obj6) };
+    const obj5 = { style: tmp.helpDeskLabel, variant: "body-xs/medium", color: "text-muted", children: format(ybi2tD, obj6) };
     const Text = tmp7(tmp8[7]).Text;
     const intl3 = tmp7(tmp8[6]).intl;
     format = intl3.format;

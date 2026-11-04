@@ -1,10 +1,10 @@
-// Module ID: 8687
-// Function ID: 8688
+// Module ID: 8704
+// Function ID: 8705
 // Name: LabFeatures
 // Dependencies: [2]
 // Exports: getLabFeatureDefaultValue
 
-// Module 8687 (LabFeatures)
+// Module 8704 (LabFeatures)
 import size from "module_2" /* 2 */;
 
 const obj = { hide_icymi_tab: { description: "Hide ICYMI tab" }, go_back_to_regular_input: { description: "Go back to regular input" }, enable_native_markdown: { description: "Enable native markdown parser", defaultValue: true } };

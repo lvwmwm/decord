@@ -1,14 +1,14 @@
-// Module ID: 13169
-// Function ID: 13170
+// Module ID: 13252
+// Function ID: 13253
 // Name: ConjureDebugAgentTab
-// Dependencies: [19, 17, 21, 5141, 575, 13166, 1113, 3995, 13164, 10989, 13170, 5754, 5747, 13163, 13171, 13168, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 13249, 1113, 3995, 13247, 11037, 13253, 5768, 5761, 13246, 13254, 13251, 2]
 // Exports: default
 
-// Module 13169 (ConjureDebugAgentTab)
+// Module 13252 (ConjureDebugAgentTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 13166 */;
-import useConjureDebugAgentStateDefault from "useConjureDebugAgentState" /* 13170 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 13249 */;
+import useConjureDebugAgentStateDefault from "useConjureDebugAgentState" /* 13253 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -23,13 +23,13 @@ let tmp2;
 let tmp9;
 const intl45 = tmp9(1113);
 const _modDef3995 = tmp2(3995);
-const Text_Text = tmp9(5747);
-const components_Button_Button = tmp9(5754);
-const ConjureUsageTypes = tmp9(10989);
-const ConjureDebugLabels = tmp9(13163);
-const ConjureDebugFormat = tmp9(13164);
-const ConjureDebugAnalytics = tmp9(13168);
-const ConjureDebugGitSection = tmp9(13171);
+const Text_Text = tmp9(5761);
+const components_Button_Button = tmp9(5768);
+const ConjureUsageTypes = tmp9(11037);
+const ConjureDebugLabels = tmp9(13246);
+const ConjureDebugFormat = tmp9(13247);
+const ConjureDebugAnalytics = tmp9(13251);
+const ConjureDebugGitSection = tmp9(13254);
 const View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -414,7 +414,7 @@ export default function ConjureDebugAgentTab(arg0) {
         str9 = "text-feedback-critical";
       }
     }
-    const obj29 = { variant: "text-xs/normal", color: str9, children: tmp9Result75.forceCompactionStatus(forceState) };
+    const obj29 = { variant: "body-xs/normal", color: str9, children: tmp9Result75.forceCompactionStatus(forceState) };
     tmp9Result75 = ConjureDebugLabels;
     items5[1] = React3(Text, obj29);
     let pendingTurn;
@@ -428,7 +428,7 @@ export default function ConjureDebugAgentTab(arg0) {
       const Button3 = components_Button_Button.Button;
       intl43 = intl45.intl;
       items6 = [React3(Button3, obj31), ];
-      const obj32 = { variant: "text-xs/normal", color: "text-muted", children: intl44.string(_modDef3995.V73vdN) };
+      const obj32 = { variant: "body-xs/normal", color: "text-muted", children: intl44.string(_modDef3995.V73vdN) };
       const Text3 = Text_Text.Text;
       intl44 = intl45.intl;
       items6[1] = React3(Text3, obj32);
@@ -449,7 +449,7 @@ export default function ConjureDebugAgentTab(arg0) {
         str11 = "text-feedback-critical";
       }
     }
-    const obj35 = { variant: "text-xs/normal", accessibilityLiveRegion: "polite", color: str11, children: tmp9Result76.sandboxRestartStatus(restartState) };
+    const obj35 = { variant: "body-xs/normal", accessibilityLiveRegion: "polite", color: str11, children: tmp9Result76.sandboxRestartStatus(restartState) };
     tmp9Result76 = ConjureDebugLabels;
     items7[1] = React3(Text2, obj35);
     items4[3] = metroRequire(View, obj33);

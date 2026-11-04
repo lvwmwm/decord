@@ -1,24 +1,24 @@
-// Module ID: 10313
-// Function ID: 10314
+// Module ID: 10361
+// Function ID: 10362
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 6688, 4990, 10252, 1072, 1089, 572, 1282, 6566, 12, 10254, 563, 2]
+// Dependencies: [5, 19, 6703, 4990, 10300, 1072, 1089, 572, 1282, 6581, 12, 10302, 563, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 10313 (SummaryActionCreators)
+// Module 10361 (SummaryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import SummaryStore from "SummaryStore" /* 10252 */;
+import SummaryStore from "SummaryStore" /* 10300 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
 
-const f96632 = () => connected.isConnected();
+const f97262 = () => connected.isConnected();
 function fetchSummary() {
   return obj(...arguments);
 }
@@ -503,7 +503,7 @@ function useChannelSummaries(channelIds) {
   let memo;
   obj = channelIds(memo[12]);
   const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f96632);
+  const stateFromStores = obj.useStateFromStores(items, f97262);
   const items1 = [channelIds];
   memo = react.useMemo(() => channelIds.join(","), items1);
   const items2 = [memo, stateFromStores];
@@ -717,7 +717,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
   let memo;
   const items1 = [GatewayConnectionStore];
   obj = items(memo[12]);
-  const stateFromStores = obj.useStateFromStores(items1, f96632);
+  const stateFromStores = obj.useStateFromStores(items1, f97262);
   const items2 = [items];
   memo = react.useMemo(() => channelIds.join(","), items2);
   const items3 = [memo, stateFromStores];

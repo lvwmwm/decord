@@ -1,16 +1,16 @@
-// Module ID: 10392
-// Function ID: 10393
+// Module ID: 10440
+// Function ID: 10441
 // Name: GIFPickerCategoryView
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1113, 9194, 5837, 10393, 10193, 5747, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1113, 9211, 5851, 10441, 10241, 5761, 2]
 // Exports: default
 
-// Module 10392 (GIFPickerCategoryView)
+// Module 10440 (GIFPickerCategoryView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import reactDefault from "react" /* 9194 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import reactDefault from "react" /* 9211 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -69,18 +69,18 @@ export default function GIFPickerCategoryView(onSelectCategory) {
   const tmp8 = hasOwnProperty;
   if (item.type === GIFPickerResultTypes.TRENDING_GIFS) {
     const obj6 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-    const AnalyticsIcon = tmp3(10393).AnalyticsIcon;
+    const AnalyticsIcon = tmp3(10441).AnalyticsIcon;
     tmp10Result = tmp10(AnalyticsIcon, obj6);
   } else {
     tmp10Result = null;
     if (item.type === tmp12.FAVORITES) {
       const obj7 = { size: "sm", style: tmp.categoryNameIcon, color: nativeDefault.colors.WHITE };
-      const StarIcon = tmp3(10193).StarIcon;
+      const StarIcon = tmp3(10241).StarIcon;
       tmp10Result = tmp10(StarIcon, obj7);
     }
   }
   items2 = [tmp10Result, ];
-  const obj8 = { variant: "text-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name };
+  const obj8 = { variant: "body-sm/semibold", color: "text-overlay-light", maxFontSizeMultiplier: 2, accessible: false, children: item.name };
   items2[1] = metroImportDefault(Text_Text.Text, obj8);
   items1[2] = metroImportAll(tmp11, obj5);
   return metroImportAll(tmp8, obj2);

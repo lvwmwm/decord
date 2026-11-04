@@ -1,29 +1,29 @@
-// Module ID: 18315
-// Function ID: 18316
+// Module ID: 18412
+// Function ID: 18413
 // Name: ThreadChannel
-// Dependencies: [19, 17, 5075, 4990, 5073, 6962, 5044, 1385, 5799, 5887, 11186, 1072, 6896, 1112, 21, 5141, 575, 8155, 5762, 504, 13973, 5876, 11270, 18316, 18318, 9213, 18321, 1187, 18323, 18332, 6166, 2]
+// Dependencies: [19, 17, 5075, 4990, 5073, 6977, 5044, 1385, 5813, 5901, 11236, 1072, 6911, 1112, 21, 5141, 575, 8171, 5776, 504, 14059, 5890, 11320, 18413, 18415, 9230, 18418, 1187, 18420, 18429, 6181, 2]
 // Exports: default
 
-// Module 18315 (ThreadChannel)
+// Module 18412 (ThreadChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
-import transitionToChannel from "transitionToChannel" /* 5876 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import inlineStyles from "inlineStyles" /* 8155 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 11270 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 18316 */;
+import transitionToChannel from "transitionToChannel" /* 5890 */;
+import ReadStateConstants from "ReadStateConstants" /* 6911 */;
+import inlineStyles from "inlineStyles" /* 8171 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 11320 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 18413 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5075 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5799 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5887 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
+import VoiceStateStore from "VoiceStateStore" /* 5813 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5901 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

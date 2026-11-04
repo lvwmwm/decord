@@ -1,18 +1,18 @@
-// Module ID: 15821
-// Function ID: 15822
+// Module ID: 15909
+// Function ID: 15910
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1113, 5747, 7215, 7617, 7612, 5831, 1252, 5150, 7373, 5754, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1113, 5761, 7230, 7633, 7628, 5845, 1252, 5150, 7389, 5768, 2]
 // Exports: default
 
-// Module 15821 (AddFriendById)
+// Module 15909 (AddFriendById)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import TextField2 from "TextField" /* 7215 */;
-import FriendsUtils from "FriendsUtils" /* 7617 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import TextField2 from "TextField" /* 7230 */;
+import FriendsUtils from "FriendsUtils" /* 7633 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let unpackModuleId;
 function ErrorMessage(errorMessage) {
   let items;
   errorMessage = errorMessage.errorMessage;
-  const obj = { variant: "text-xs/medium", color: "text-feedback-critical", style: items, children: errorMessage };
+  const obj = { variant: "body-xs/medium", color: "text-feedback-critical", style: items, children: errorMessage };
   items = [, ];
   ({ inputAccessoryText: arr[0], errorStateText: arr[1] } = closure_12());
   closure_12();
@@ -101,7 +101,7 @@ function AddFriendByIdInput(arg0) {
       message = validationState.message;
     }
   }
-  const obj2 = { style: items, variant: "text-sm/semibold", color: "text-muted", children: headerText };
+  const obj2 = { style: items, variant: "body-sm/semibold", color: "text-muted", children: headerText };
   items = [, , ];
   const obj = { style: tmp3.textInputContainer, children: items1 };
   ({ redesignInputAccessoryText: arr[0], inputHeaderText: arr[1] } = tmp3);
@@ -369,16 +369,16 @@ export default function _default(arg0) {
   const length = str.trim().length;
   items5[0] = closure_9(AddFriendByIdInput, obj3);
   let obj4 = { style: tmp.friendMessageContainer, children: null };
-  let obj5 = { style: items6, variant: "text-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1113).t.Yi6Mpu) };
+  let obj5 = { style: items6, variant: "body-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1113).t.Yi6Mpu) };
   items6 = [, , ];
   ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
   items6[2] = headerTextStyle;
-  const Text = sourcePage(5747).Text;
+  const Text = sourcePage(5761).Text;
   intl = sourcePage(1113).intl;
   const items7 = [closure_9(Text, obj5), , ];
   const obj6 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
   str2 = undefined;
-  const TextArea = sourcePage(7373).TextArea;
+  const TextArea = sourcePage(7389).TextArea;
   const tmp19 = constants3;
   if (first1.field === constants3.MESSAGE) {
     if (first1.status === tmp4.ERROR) {
@@ -401,13 +401,13 @@ export default function _default(arg0) {
     const obj9 = { style: tmp.redesignGrow };
     items8[1] = tmp16(tmp15, obj9);
     const obj10 = { size: "lg", text: intl3.string(sourcePage(1113).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-    const Button = tmp17(5754).Button;
+    const Button = tmp17(5768).Button;
     intl3 = tmp17(1113).intl;
     items8[2] = tmp16(Button, obj10);
     return tmp13(tmp14, obj8);
   }
-  const obj11 = { style: tmp.messageFooterText, variant: "text-xs/medium", color: "text-muted", children: intl2.string(sourcePage(1113).t.UtfQNw) };
-  const Text2 = tmp17(5747).Text;
+  const obj11 = { style: tmp.messageFooterText, variant: "body-xs/medium", color: "text-muted", children: intl2.string(sourcePage(1113).t.UtfQNw) };
+  const Text2 = tmp17(5761).Text;
   intl2 = tmp17(1113).intl;
   tmp16Result = tmp16(Text2, obj11);
 };

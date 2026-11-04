@@ -1,10 +1,10 @@
-// Module ID: 6172
-// Function ID: 6173
+// Module ID: 6187
+// Function ID: 6188
 // Name: WebViewWebmSupportTest
 // Dependencies: [1377, 5098, 2]
 // Exports: isIOSWithWebM
 
-// Module 6172 (WebViewWebmSupportTest)
+// Module 6187 (WebViewWebmSupportTest)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

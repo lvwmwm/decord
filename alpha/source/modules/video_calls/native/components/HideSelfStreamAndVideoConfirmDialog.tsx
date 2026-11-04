@@ -1,14 +1,14 @@
-// Module ID: 19498
-// Function ID: 19499
+// Module ID: 19602
+// Function ID: 19603
 // Name: HideSelfStreamAndVideoConfirmDialog
-// Dependencies: [19, 17, 19497, 21, 5141, 1113, 6150, 5747, 6052, 2]
+// Dependencies: [19, 17, 19601, 21, 5141, 1113, 6165, 5761, 6067, 2]
 // Exports: default
 
-// Module 19498 (HideSelfStreamAndVideoConfirmDialog)
+// Module 19602 (HideSelfStreamAndVideoConfirmDialog)
 import react_native from "react-native" /* 17 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6052 */;
-import AlertDefault from "Alert" /* 6150 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19497 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6067 */;
+import AlertDefault from "Alert" /* 6165 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19601 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -66,8 +66,8 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
   intl6 = tmp6(1113).intl;
   obj2 = { style: tmp2.body, children: items };
   items = [, ];
-  const obj3 = { style: tmp2.description, variant: "text-sm/medium", children: stringResult1 };
-  items[0] = closure_5(tmp6(5747).Text, obj3);
+  const obj3 = { style: tmp2.description, variant: "body-sm/medium", children: stringResult1 };
+  items[0] = closure_5(tmp6(5761).Text, obj3);
   const obj4 = {
     accessibilityRole: "link",
     style: items1,
@@ -76,12 +76,12 @@ export default function HideSelfStreamAndVideoConfirmDialog(arg0) {
       const result = obj.updatedUnsyncedSettings({ disableHideSelfStreamAndVideoConfirmationAlert: true });
       onConfirm();
     },
-    variant: "text-sm/medium",
+    variant: "body-sm/medium",
     children: intl7.string(tmp6(1113).t["JdIQ/Y"])
   };
   items1 = [, ];
   ({ ctaLink: arr2[0], description: arr2[1] } = tmp2);
-  const Text = tmp6(5747).Text;
+  const Text = tmp6(5761).Text;
   intl7 = tmp6(1113).intl;
   items[1] = closure_5(Text, obj4);
   return closure_5(tmp12, obj);

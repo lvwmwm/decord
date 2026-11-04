@@ -1,14 +1,14 @@
-// Module ID: 12261
-// Function ID: 12262
+// Module ID: 12322
+// Function ID: 12323
 // Name: UserIcon
-// Dependencies: [19, 21, 575, 5836, 12262, 2]
+// Dependencies: [19, 21, 575, 5850, 12323, 2]
 // Exports: UserIcon
 
-// Module 12261 (UserIcon)
+// Module 12322 (UserIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 12262 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 12323 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

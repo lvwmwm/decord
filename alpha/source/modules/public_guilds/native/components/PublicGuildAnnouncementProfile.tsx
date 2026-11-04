@@ -1,19 +1,19 @@
-// Module ID: 11800
-// Function ID: 11801
+// Module ID: 11857
+// Function ID: 11858
 // Name: PublicGuildAnnouncementProfile
-// Dependencies: [19, 17, 21, 5141, 575, 5395, 5837, 8626, 1187, 11801, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5396, 5851, 8643, 1187, 11858, 5761, 1113, 2]
 // Exports: default
 
-// Module 11800 (PublicGuildAnnouncementProfile)
+// Module 11857 (PublicGuildAnnouncementProfile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import PublicGuildsUtils from "PublicGuildsUtils" /* 8626 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11801 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import PublicGuildsUtils from "PublicGuildsUtils" /* 8643 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11858 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -55,11 +55,11 @@ export default function PublicGuildAnnouncementProfile() {
   intl = intl4.intl;
   items1[1] = React3(Text, obj7);
   items[1] = hasOwnProperty(View, obj5);
-  const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl4.t.BUZ0sl) };
+  const obj8 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl4.t.BUZ0sl) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[2] = React3(Text2, obj8);
-  const obj9 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl3.string(intl4.t.w5beJH) };
+  const obj9 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl3.string(intl4.t.w5beJH) };
   const Text3 = Text_Text.Text;
   intl3 = intl4.intl;
   items[3] = React3(Text3, obj9);

@@ -1,11 +1,11 @@
-// Module ID: 17805
-// Function ID: 17806
+// Module ID: 17901
+// Function ID: 17902
 // Name: DevToolsProfilingUseStateFromStores
-// Dependencies: [32, 19, 21, 17806, 5747, 7186, 7489, 7101, 7215, 11778, 10393, 17807, 5858, 1113, 2]
+// Dependencies: [32, 19, 21, 17902, 5761, 7201, 7505, 7116, 7230, 11834, 10441, 17903, 5872, 1113, 2]
 // Exports: DevToolsProfilingUseStateFromStores
 
-// Module 17805 (DevToolsProfilingUseStateFromStores)
-import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 17806 */;
+// Module 17901 (DevToolsProfilingUseStateFromStores)
+import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 17902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,7 +90,7 @@ export function DevToolsProfilingUseStateFromStores() {
     const obj8 = { label: "Execution time window threshold", subLabel: closure_6(str3, obj9) };
     obj9 = { children: items6 };
     const TableRow = tmp(tmp2[7]).TableRow;
-    const obj10 = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children: "Time window to wait for before reporting violations." };
+    const obj10 = { variant: "body-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children: "Time window to wait for before reporting violations." };
     items6 = [closure_4(tmp(tmp2[4]).Text, obj10), ];
     const obj11 = {
       size: "sm",
@@ -118,7 +118,7 @@ export function DevToolsProfilingUseStateFromStores() {
     const obj12 = { label: "Cumulative execution time warning threshold", subLabel: closure_6(str3, obj13) };
     obj13 = { children: items8 };
     const TableRow2 = tmp(tmp2[7]).TableRow;
-    const obj14 = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children: "Total execution time limit for hooks before reporting violations." };
+    const obj14 = { variant: "body-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children: "Total execution time limit for hooks before reporting violations." };
     items8 = [closure_4(tmp(tmp2[4]).Text, obj14), ];
     const obj15 = {
       size: "sm",
@@ -136,7 +136,7 @@ export function DevToolsProfilingUseStateFromStores() {
     const obj16 = { label: "Cumulative execution count warning threshold", subLabel: closure_6(str3, obj17) };
     obj17 = { children: items9 };
     const TableRow3 = tmp(tmp2[7]).TableRow;
-    const obj18 = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children: "Execution counts limit for hooks before reporting violations." };
+    const obj18 = { variant: "body-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children: "Execution counts limit for hooks before reporting violations." };
     items9 = [closure_4(tmp(tmp2[4]).Text, obj18), ];
     const obj19 = {
       size: "sm",
@@ -154,7 +154,7 @@ export function DevToolsProfilingUseStateFromStores() {
     const obj20 = { label: "Track specific hook", subLabel: closure_6(str3, obj21) };
     obj21 = { children: items10 };
     const TableRow4 = tmp(tmp2[7]).TableRow;
-    const obj22 = { variant: "text-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children: "Include a specific hook in the profiling regardless of limits." };
+    const obj22 = { variant: "body-xs/medium", color: "text-subtle", style: { marginBottom: 4 }, children: "Include a specific hook in the profiling regardless of limits." };
     items10 = [closure_4(tmp(tmp2[4]).Text, obj22), ];
     const obj23 = {
       size: "sm",

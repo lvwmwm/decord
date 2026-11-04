@@ -1,11 +1,11 @@
-// Module ID: 9794
-// Function ID: 9795
+// Module ID: 9812
+// Function ID: 9813
 // Name: outbound_promotion_claim_modal_card
-// Dependencies: [32, 1197, 9773, 2]
+// Dependencies: [32, 1197, 9791, 2]
 
-// Module 9794 (outbound_promotion_claim_modal_card)
+// Module 9812 (outbound_promotion_claim_modal_card)
 import _mod1197 from "module_1197" /* 1197 */;
-import theme_aware_asset from "theme_aware_asset" /* 9773 */;
+import theme_aware_asset from "theme_aware_asset" /* 9791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

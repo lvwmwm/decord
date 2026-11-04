@@ -1,12 +1,12 @@
-// Module ID: 6999
-// Function ID: 7000
+// Module ID: 7014
+// Function ID: 7015
 // Name: ConjureGuildExperiment
-// Dependencies: [5012, 1072, 1449, 7000, 504, 2]
+// Dependencies: [5012, 1072, 1449, 7015, 504, 2]
 // Exports: useHasConjureGuild, useIsConjureGuildEnabled
 
-// Module 6999 (ConjureGuildExperiment)
+// Module 7014 (ConjureGuildExperiment)
 import Constants from "Constants" /* 1072 */;
-import ConjureUserExperiment from "ConjureUserExperiment" /* 7000 */;
+import ConjureUserExperiment from "ConjureUserExperiment" /* 7015 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
@@ -69,10 +69,10 @@ function isConjureGuildEnabledWithoutExposure(id, location) {
   }
   return enabled;
 }
-function hasConjureGuildWithoutExposure(conjure_resume) {
+function hasConjureGuildWithoutExposure(ConjureProjectReconnectManager) {
   const values = Object.values(GuildStore.getGuilds());
   for (const item10012 of values) {
-    if (isConjureGuildEnabledWithoutExposure(item10012.id, conjure_resume)) {
+    if (isConjureGuildEnabledWithoutExposure(item10012.id, ConjureProjectReconnectManager)) {
       obj.return();
       let flag = true;
       return true;

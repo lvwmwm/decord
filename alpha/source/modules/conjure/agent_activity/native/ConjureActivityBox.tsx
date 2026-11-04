@@ -1,17 +1,17 @@
-// Module ID: 12806
-// Function ID: 12807
+// Module ID: 12887
+// Function ID: 12888
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 12770, 575, 12807, 12726, 12237, 1113, 3995, 12761, 12853, 5747, 12254, 8150, 12854, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 12851, 575, 12888, 12807, 12298, 1113, 3995, 12842, 12934, 5761, 12315, 8166, 12935, 2]
 // Exports: default, stretchOf
 
-// Module 12806 (ConjureActivityBox)
+// Module 12887 (ConjureActivityBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12761 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12770 */;
-import ConjureSubagentMark from "ConjureSubagentMark" /* 12807 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ConjureNativeStatusLineDefault from "ConjureNativeStatusLine" /* 12842 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12851 */;
+import ConjureSubagentMark from "ConjureSubagentMark" /* 12888 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -29,8 +29,8 @@ let obj4;
 let obj5;
 let tmp2;
 let tmp5;
-const WarningIcon2 = tmp2(8150);
-const ConjureNativeStepImagesDefault = tmp5(12854);
+const WarningIcon2 = tmp2(8166);
+const ConjureNativeStepImagesDefault = tmp5(12935);
 function TurnStatusLine(epoch) {
   let _undefined;
   let c3;
@@ -192,7 +192,7 @@ function LaneStatusLine(arg0) {
       const obj6 = { style: tmp.activityDetail, children: items1 };
       items1 = [
         detail.map((children, index) => {
-              const obj = { variant: "text-xs/normal", color: "text-feedback-critical", children };
+              const obj = { variant: "body-xs/normal", color: "text-feedback-critical", children };
               return closure_1_6(require("Text/Text").Text, obj, index);
             }),
 
@@ -252,7 +252,7 @@ function TimelineRow(inGutter) {
   let obj = { line: obj2.describeNode(node), live: flag2, settled: tmp9, failed: "failed" === node.status, presentation: str2, crestColor, inGutter: flag, epoch, trailing: tmp4Result };
   let tmp8 = node;
   let tmp7 = ConjureNativeStatusLineDefault;
-  obj2 = node(12726);
+  obj2 = node(12807);
   str2 = "detail";
   tmp9 = !flag2 && "failed" !== node.status;
   if (flag2) {
@@ -260,9 +260,9 @@ function TimelineRow(inGutter) {
   }
   tmp4Result = null;
   if (null != node.durationMs) {
-    let obj3 = { variant: "text-xs/normal", color: "text-subtle", children: tmp8Result.describeDuration(node.durationMs) };
-    let Text = tmp8(5747).Text;
-    tmp8Result = tmp8(12237);
+    let obj3 = { variant: "body-xs/normal", color: "text-subtle", children: tmp8Result.describeDuration(node.durationMs) };
+    let Text = tmp8(5761).Text;
+    tmp8Result = tmp8(12298);
     tmp4Result = tmp4(Text, obj3);
   }
   const children = [tmp4(tmp7, obj), , ];
@@ -279,7 +279,7 @@ function TimelineRow(inGutter) {
           if (children.startsWith("$ ")) {
             stepCommand = closure_1.stepCommand;
           }
-          const obj = { variant: "text-sm/normal", color: "text-muted", style: stepCommand, children };
+          const obj = { variant: "body-sm/normal", color: "text-muted", style: stepCommand, children };
           const tmpResult = metroRequire(Text, obj, index);
           let tmp7 = node.detailError[index];
           if (tmp7 == null) {

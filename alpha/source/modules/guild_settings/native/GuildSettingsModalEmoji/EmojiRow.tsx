@@ -1,15 +1,15 @@
-// Module ID: 19883
-// Function ID: 19884
+// Module ID: 19999
+// Function ID: 20000
 // Name: EmojiRow
-// Dependencies: [32, 19, 17, 5012, 1385, 21, 5141, 575, 1377, 7414, 504, 9148, 10187, 5091, 19884, 5397, 5747, 1187, 7101, 5832, 1113, 5837, 1411, 6161, 5195, 7106, 19886, 2]
+// Dependencies: [32, 19, 17, 5012, 1385, 21, 5141, 575, 1377, 7430, 504, 9165, 10235, 5091, 20000, 5398, 5761, 1187, 7116, 5846, 1113, 5851, 1411, 6176, 5195, 7121, 20002, 2]
 // Exports: EmojiRow
 
-// Module 19883 (EmojiRow)
+// Module 19999 (EmojiRow)
 import nativeDefault from "native" /* 575 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5091 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5397 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10187 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 19884 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5398 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10235 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 20000 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -214,11 +214,11 @@ export function EmojiRow(guildId) {
   }
   const obj22 = { style: tmp.nameContainer, children: items11 };
   items11 = [, , ];
-  const obj23 = { style: tmp.colon, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const obj23 = { style: tmp.colon, variant: "body-md/medium", color: "text-muted", children: ":" };
   items11[0] = closure_9(tmp2(onSelectRolesForEmoji[16]).Text, obj23);
-  const obj24 = { lineClamp: 1, style: tmp.emojiText, variant: "text-md/medium", color: "mobile-text-heading-primary", children };
+  const obj24 = { lineClamp: 1, style: tmp.emojiText, variant: "body-md/medium", color: "mobile-text-heading-primary", children };
   items11[1] = closure_9(tmp2(onSelectRolesForEmoji[16]).Text, obj24);
-  const obj25 = { style: tmp.colon, variant: "text-md/medium", color: "text-muted", children: ":" };
+  const obj25 = { style: tmp.colon, variant: "body-md/medium", color: "text-muted", children: ":" };
   items11[2] = closure_9(tmp2(onSelectRolesForEmoji[16]).Text, obj25);
   tmp15Result4 = tmp19(tmp20, obj22);
 }

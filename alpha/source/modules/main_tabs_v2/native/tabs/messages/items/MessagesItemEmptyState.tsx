@@ -1,15 +1,15 @@
-// Module ID: 18298
-// Function ID: 18299
+// Module ID: 18395
+// Function ID: 18396
 // Name: MessagesItemEmptyState
-// Dependencies: [19, 17, 21, 5141, 575, 5322, 5747, 1113, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5323, 5761, 1113, 5768, 2]
 
-// Module 18298 (MessagesItemEmptyState)
+// Module 18395 (MessagesItemEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -49,7 +49,7 @@ const memoResult = react.memo(function MessagesItemEmptyState() {
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
   items = [React3(Heading, obj2), , ];
-  const obj3 = { color: "text-default", variant: "text-md/medium", style: tmp.body, maxFontSizeMultiplier: 2, children: intl2.string(intl4.t["qm+H7x"]) };
+  const obj3 = { color: "text-default", variant: "body-md/medium", style: tmp.body, maxFontSizeMultiplier: 2, children: intl2.string(intl4.t["qm+H7x"]) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = React3(Text, obj3);

@@ -1,9 +1,9 @@
-// Module ID: 7792
-// Function ID: 7793
+// Module ID: 7808
+// Function ID: 7809
 // Name: UserSettingsProto
 // Dependencies: [5, 1231, 502, 3, 5019, 5036, 12, 2]
 
-// Module 7792 (UserSettingsProto)
+// Module 7808 (UserSettingsProto)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;

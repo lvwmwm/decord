@@ -1,19 +1,19 @@
-// Module ID: 10380
-// Function ID: 10381
+// Module ID: 10428
+// Function ID: 10429
 // Name: GifPickerUtils
 // Dependencies: [2]
 // Exports: filterFavoriteGIFsByQuery
 
-// Module 10380 (GifPickerUtils)
+// Module 10428 (GifPickerUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gif_picker/GifPickerUtils.tsx");
 
-export function filterFavoriteGIFsByQuery(favorites, first3) {
-  if ("" === first3) {
+export function filterFavoriteGIFsByQuery(favorites, first2) {
+  if ("" === first2) {
     return favorites;
   } else {
-    let str = first3.toLowerCase();
+    let str = first2.toLowerCase();
     let closure_0 = str.replace(/[-_ ]/g, "");
     return favorites.filter((url) => {
       const str = url.url;

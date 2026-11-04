@@ -1,20 +1,20 @@
-// Module ID: 18948
-// Function ID: 18949
+// Module ID: 19051
+// Function ID: 19052
 // Name: ThreadList
-// Dependencies: [19, 17, 21, 5141, 5747, 18949, 1652, 5207, 5757, 5758, 1705, 14505, 4999, 5001, 1113, 7101, 8303, 13929, 18951, 18952, 7414, 2]
+// Dependencies: [19, 17, 21, 5141, 5761, 19052, 1652, 5207, 5771, 5772, 1705, 14585, 4999, 5001, 1113, 7116, 8319, 14015, 19054, 19055, 7430, 2]
 // Exports: default
 
-// Module 18948 (ThreadList)
+// Module 19051 (ThreadList)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 5207 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7414 */;
-import RowButton from "RowButton" /* 8303 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 13929 */;
-import ThreadListTableRowDefault from "ThreadListTableRow" /* 18949 */;
-import ThreadListLoadingIndicatorDefault from "ThreadListLoadingIndicator" /* 18952 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7430 */;
+import RowButton from "RowButton" /* 8319 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 14015 */;
+import ThreadListTableRowDefault from "ThreadListTableRow" /* 19052 */;
+import ThreadListLoadingIndicatorDefault from "ThreadListLoadingIndicator" /* 19055 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -25,7 +25,7 @@ let hasOwnProperty;
 function ThreadListSection(title) {
   const str = title.title;
   const Text = Text_Text.Text;
-  return <Text style={closure_7().section} accessibilityRole="header" variant="text-xs/semibold" color="text-default">{str.toUpperCase()}</Text>;
+  return <Text style={closure_7().section} accessibilityRole="header" variant="body-xs/semibold" color="text-default">{str.toUpperCase()}</Text>;
 }
 function renderItem(item) {
   item = item.item;
@@ -73,9 +73,9 @@ function EnterExitCrossFadeContainer(state) {
   let items = [closure_13, , , , , , , , ];
   const useAnimatedStyle = tmp(1652).useAnimatedStyle;
   tmp(1652);
-  items[1] = tmp(5757).withSpring;
+  items[1] = tmp(5771).withSpring;
   items[2] = sharedValue;
-  items[3] = tmp(5758).springStandard;
+  items[3] = tmp(5772).springStandard;
   items[4] = closure_12;
   items[5] = state;
   items[6] = tmp(5207).TransitionStates;

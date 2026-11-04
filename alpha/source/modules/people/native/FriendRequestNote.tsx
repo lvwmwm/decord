@@ -1,13 +1,13 @@
-// Module ID: 15151
-// Function ID: 15152
+// Module ID: 15231
+// Function ID: 15232
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 5083, 1072, 21, 5141, 575, 15152, 504, 15153, 5747, 5754, 7263, 1113, 2]
+// Dependencies: [32, 19, 17, 5083, 1072, 21, 5141, 575, 15232, 504, 15233, 5761, 5768, 7239, 1113, 2]
 // Exports: default
 
-// Module 15151 (FriendRequestNote)
+// Module 15231 (FriendRequestNote)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import PeopleListTracking from "PeopleListTracking" /* 15153 */;
+import PeopleListTracking from "PeopleListTracking" /* 15233 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -96,7 +96,7 @@ export default function FriendRequestNote(styles) {
           hidden = tmp.hidden;
         }
         const obj4 = { style: hidden, children: closure_8(Text, obj5) };
-        obj5 = { accessible: tmp7, accessibilityElementsHidden: !tmp7, accessibilityLabel: "", variant: "redesign/message-preview/medium", children: note };
+        obj5 = { accessible: tmp7, accessibilityElementsHidden: !tmp7, accessibilityLabel: "", variant: "heading-sm/medium", children: note };
         Text = tmp2(tmp3[11]).Text;
         items3 = [closure_8(closure_5, obj4), ];
         let tmp15Result = null;

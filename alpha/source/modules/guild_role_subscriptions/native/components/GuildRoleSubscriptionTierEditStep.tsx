@@ -1,17 +1,17 @@
-// Module ID: 20102
-// Function ID: 20103
+// Module ID: 20218
+// Function ID: 20219
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [19, 17, 21, 5141, 575, 7412, 5747, 17351, 1113, 1627, 5754, 1499, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7428, 5761, 17442, 1113, 1627, 5768, 1499, 2]
 // Exports: default
 
-// Module 20102 (GuildRoleSubscriptionTierEditStep)
+// Module 20218 (GuildRoleSubscriptionTierEditStep)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1499 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import FormSeparatorDefault from "FormSeparator" /* 17351 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import FormSeparatorDefault from "FormSeparator" /* 17442 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -41,7 +41,7 @@ function Header(arg0) {
   items = [, , ];
   const obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   items[0] = metroRequire(Text_Text.Text, obj2);
-  const obj3 = { style: tmp.subtitle, variant: "text-sm/medium", color: "text-default", children: description };
+  const obj3 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-default", children: description };
   items[1] = metroRequire(Text_Text.Text, obj3);
   const obj4 = { style: tmp.separator };
   items[2] = metroRequire(FormSeparatorDefault, obj4);
@@ -67,7 +67,7 @@ function Footer(arg0) {
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroRequire(tmp5(5754).Button, obj3) };
+  const obj = { style: items, children: metroRequire(tmp5(5768).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };

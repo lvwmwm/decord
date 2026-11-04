@@ -1,21 +1,21 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17091
+// Function ID: 17092
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7396, 1072, 21, 5141, 575, 9878, 9178, 14754, 5855, 504, 1500, 7452, 5747, 1113, 1499, 7101, 9169, 7282, 7286, 2]
+// Dependencies: [19, 17, 7412, 1072, 21, 5141, 575, 9896, 9195, 14834, 5869, 504, 1500, 7468, 5761, 1113, 1499, 7116, 9186, 7298, 7302, 2]
 // Exports: AuthorizedAppRow, AuthorizedAppsEmpty, AuthorizedAppsHeader, DisclosureIcon, useAuthorizedApps
 
-// Module 16999 (UserSettingsAuthedApps)
+// Module 17091 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5855 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7282 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7286 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7396 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9169 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9178 */;
-import applications from "applications" /* 9878 */;
-import EmbedIcon from "EmbedIcon" /* 14754 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5869 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7298 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7412 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 9186 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9195 */;
+import applications from "applications" /* 9896 */;
+import EmbedIcon from "EmbedIcon" /* 14834 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -110,11 +110,11 @@ export function AuthorizedAppsHeader() {
   let items;
   const tmp = closure_12();
   const obj = { style: tmp.appListHeader, children: items };
-  const obj2 = { color: "text-strong", variant: "heading-md/semibold", children: intl.string(intl3.t["f6kk+r"]) };
+  const obj2 = { color: "text-strong", variant: "heading-sm/semibold", children: intl.string(intl3.t["f6kk+r"]) };
   const Heading = Text_Text.Heading;
   intl = intl3.intl;
   items = [authStore(Heading, obj2), ];
-  const obj3 = { style: tmp.headerDescription, color: "text-default", variant: "text-sm/normal", children: intl2.string(intl3.t.G9JfLg) };
+  const obj3 = { style: tmp.headerDescription, color: "text-default", variant: "body-sm/normal", children: intl2.string(intl3.t.G9JfLg) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = authStore(Text, obj3);
@@ -129,7 +129,7 @@ export function AuthorizedAppsEmpty(loading) {
     const obj2 = { style: tmp.spinner, animating: true, size: "large" };
     tmp2Result = tmp2(hasOwnProperty, obj2);
   } else {
-    const obj = { color: "text-default", style: tmp.emptyText, variant: "text-sm/normal", children: intl.string(intl3.t["E+SM6T"]) };
+    const obj = { color: "text-default", style: tmp.emptyText, variant: "body-sm/normal", children: intl.string(intl3.t["E+SM6T"]) };
     const Text = Text_Text.Text;
     intl = intl3.intl;
     tmp2Result = tmp2(Text, obj);
@@ -163,7 +163,7 @@ export function AuthorizedAppRow(app) {
     start,
     end
   };
-  const TableRow = app(7101).TableRow;
+  const TableRow = app(7116).TableRow;
   obj3 = { application: app.application };
   return closure_10(TableRow, obj2);
 }

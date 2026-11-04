@@ -1,10 +1,10 @@
-// Module ID: 19724
-// Function ID: 19725
+// Module ID: 19829
+// Function ID: 19830
 // Name: InterestPickerStep
-// Dependencies: [19, 21, 18571, 19722, 1242, 18575, 1113, 2537, 2]
+// Dependencies: [19, 21, 18666, 19827, 1242, 19830, 2]
 // Exports: default
 
-// Module 19724 (InterestPickerStep)
+// Module 19829 (InterestPickerStep)
 import Fragment from "Fragment" /* 21 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react from "react" /* 19 */;
@@ -19,18 +19,18 @@ export default function InterestPickerStep(navigation) {
   let closure_2;
   let ref;
   navigation = navigation.navigation;
-  const onComplete = navigation.route.params.onComplete;
+  let onComplete = navigation.route.params.onComplete;
   const tmp = onComplete;
-  const tmp3 = onComplete(18571)("InterestPickerStep");
+  const tmp3 = onComplete(18666)("InterestPickerStep");
   dependencyMap = tmp3;
-  let obj = navigation(19722);
+  let obj = navigation(19827);
   const setPicks = obj.useInterestPickerPicks().setPicks;
   jsx = setPicks.useRef(false);
   const items = [navigation, onComplete, setPicks];
-  const callback = setPicks.useCallback((gameIds, arg1) => {
+  onComplete = setPicks.useCallback((arg0, arg1) => {
     if (!ref.current) {
       tmp.current = true;
-      setPicks(gameIds);
+      setPicks(arg0);
       if (null == onComplete) {
         const obj2 = { tags: { reason: "missing_on_complete" } };
         const obj = SentryUtilsDefault;
@@ -41,21 +41,15 @@ export default function InterestPickerStep(navigation) {
       }
     }
   }, items);
-  const items1 = [tmp3, callback];
+  const items1 = [tmp3, onComplete];
   const effect = setPicks.useEffect(() => {
     if (null == closure_2) {
       callback([], true);
     }
   }, items1);
-  const items2 = [callback];
-  [][0] = callback;
-  const callback1 = setPicks.useCallback((arg0) => callback(arg0, false), items2);
-  let tmp9 = null;
+  let tmp6 = null;
   if (null != tmp3) {
-    tmp(18575);
-    const intl = tmp4(1113).intl;
-    const intl2 = tmp4(1113).intl;
-    tmp9 = <tmpResult catalog={tmp3} title={intl.string(tmp(2537)["5MUKTF"])} subtitle={intl2.string(tmp(2537)["z/57xV"])} minSelection={1} onContinue={callback1} onSkip={tmp8} />;
+    tmp6 = jsx(tmp(19830), { catalog: tmp3, onComplete });
   }
-  return tmp9;
+  return tmp6;
 };

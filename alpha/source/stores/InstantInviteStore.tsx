@@ -1,16 +1,16 @@
-// Module ID: 9075
-// Function ID: 9076
+// Module ID: 9092
+// Function ID: 9093
 // Name: InstantInviteStore
-// Dependencies: [8325, 8004, 9076, 9078, 9079, 504, 572, 2]
+// Dependencies: [8341, 8020, 9093, 9095, 9096, 504, 572, 2]
 
-// Module 9075 (InstantInviteStore)
+// Module 9092 (InstantInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 8004 */;
-import headDefault from "head" /* 9076 */;
-import reverseDefault from "reverse" /* 9078 */;
-import _modDef9079 from "module_9079" /* 9079 */;
-import InviteRecord from "InviteRecord" /* 8325 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 8020 */;
+import headDefault from "head" /* 9093 */;
+import reverseDefault from "reverse" /* 9095 */;
+import _modDef9096 from "module_9096" /* 9096 */;
+import InviteRecord from "InviteRecord" /* 8341 */;
 import size from "module_2" /* 2 */;
 
 let c3, closure_5, closure_6, closure_7;
@@ -92,7 +92,7 @@ let obj = {
     closure_8[invite.invite.code] = InviteRecord.createFromServer(invite.invite);
     const tmp = headDefault;
     const tmp2 = reverseDefault;
-    const tmp3 = _modDef9079;
+    const tmp3 = _modDef9096;
     let tmpResult = tmp(tmp2(tmp3(Object.values(closure_8), "createdAt")));
     if (tmpResult == null) {
       tmpResult = null;
@@ -114,7 +114,7 @@ let obj = {
     }
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    const tmp4 = _modDef9079;
+    const tmp4 = _modDef9096;
     let tmp2Result = tmp2(tmp3(tmp4(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;
@@ -167,7 +167,7 @@ let obj = {
     });
     const tmp2 = headDefault;
     const tmp3 = reverseDefault;
-    const tmp4 = _modDef9079;
+    const tmp4 = _modDef9096;
     let tmp2Result = tmp2(tmp3(tmp4(Object.values(closure_8), "createdAt")));
     if (tmp2Result == null) {
       tmp2Result = null;

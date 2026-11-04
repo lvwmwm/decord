@@ -1,14 +1,14 @@
-// Module ID: 10929
-// Function ID: 10930
+// Module ID: 10977
+// Function ID: 10978
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1385, 21, 1187, 5141, 9637, 504, 1380, 2]
+// Dependencies: [19, 17, 1385, 21, 1187, 5141, 9656, 504, 1380, 2]
 // Exports: default
 
-// Module 10929 (GroupDMAvatar)
+// Module 10977 (GroupDMAvatar)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ClipView from "ClipView" /* 9637 */;
+import ClipView from "ClipView" /* 9656 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;

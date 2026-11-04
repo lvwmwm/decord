@@ -1,12 +1,12 @@
-// Module ID: 11014
-// Function ID: 11015
+// Module ID: 11063
+// Function ID: 11064
 // Name: conjurePreviewFrameSurfaces
-// Dependencies: [5795, 6965, 2]
+// Dependencies: [5809, 6980, 2]
 // Exports: declaresPreviewFrame, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
 
-// Module 11014 (conjurePreviewFrameSurfaces)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5795 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
+// Module 11063 (conjurePreviewFrameSurfaces)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5809 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
 import size from "module_2" /* 2 */;
 
 let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL };
@@ -35,8 +35,8 @@ export function previewFrameSurfaceOptions(previewSupportedSurfaces) {
   let closure_0 = previewSupportedSurfaces;
   const found = items.filter((item) => {
     let hasItem;
-    const obj = closure_0;
-    if (closure_0 != null) {
+    const obj = publishedRevision;
+    if (publishedRevision != null) {
       hasItem = obj.includes(tmp);
     }
     return true === hasItem;

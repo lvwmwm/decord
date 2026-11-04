@@ -1,20 +1,20 @@
-// Module ID: 16763
-// Function ID: 16764
+// Module ID: 16855
+// Function ID: 16856
 // Name: AgeNoticePromoSheet
-// Dependencies: [19, 6857, 1072, 4987, 21, 5141, 575, 6846, 16764, 5381, 16762, 8079, 6849, 2190, 7687, 1113, 3255, 10967, 5837, 16765, 6887, 5754, 2]
+// Dependencies: [19, 6872, 1072, 4987, 21, 5141, 575, 6861, 16856, 5382, 16854, 8095, 6864, 2190, 7703, 1113, 3255, 11015, 5851, 16857, 6902, 5768, 2]
 // Exports: default
 
-// Module 16763 (AgeNoticePromoSheet)
+// Module 16855 (AgeNoticePromoSheet)
 import nativeDefault from "native" /* 575 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
 import _modDef3255 from "module_3255" /* 3255 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6857 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
-import openAgeNoticePromoSheet from "openAgeNoticePromoSheet" /* 16762 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
+import openAgeNoticePromoSheet from "openAgeNoticePromoSheet" /* 16854 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,9 +50,9 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
   let dismissOnce;
   markAsDismissed = markAsDismissed.markAsDismissed;
   const tmp = closure_10();
-  let obj = dismissOnce(6846);
+  let obj = dismissOnce(6861);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  let obj2 = dismissOnce(16764);
+  let obj2 = dismissOnce(16856);
   dismissOnce = obj2.useDismissOnce(markAsDismissed);
   const items = [dismissOnce];
   const items1 = [dismissOnce];
@@ -81,7 +81,7 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
     const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
     AgeVerificationActionCreatorsDefault;
     const obj2 = HelpdeskUtilsDefault;
-    openUrl(obj2.getArticleURL(hasOwnProperty.TIGGER_PAWTECT_LEARN_MORE));
+    openUrl(obj2.getArticleURL(hasOwnProperty.AGE_VERIFICATION_LEARN_MORE));
   }, items3);
   const items4 = [dismissOnce];
   const callback4 = react.useCallback(() => {
@@ -112,9 +112,9 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
     tmp15 = obj3;
   }
   const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3255).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
-  const PromoSheet = tmp2(10967).PromoSheet;
-  obj5 = { source: tmp14(16765), style: tmp.illustration, resizeMode: "contain" };
-  tmp14Result = tmp14(5837);
+  const PromoSheet = tmp2(11015).PromoSheet;
+  obj5 = { source: tmp14(16857), style: tmp.illustration, resizeMode: "contain" };
+  tmp14Result = tmp14(5851);
   intl2 = tmp2(1113).intl;
   const intl3 = tmp2(1113).intl;
   const format = intl3.format;
@@ -127,12 +127,12 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
     formatResult = format(tmp14Result2.xuvWqy, obj7);
   }
   obj8 = { size: "lg", style: tmp.actions, children: items5 };
-  ButtonGroup = tmp2(6887).ButtonGroup;
+  ButtonGroup = tmp2(6902).ButtonGroup;
   items5 = [, ];
   const obj9 = { size: "lg", text: tmp15.text, onPress: tmp15.onPress };
-  items5[0] = closure_8(dismissOnce(5754).Button, obj9);
+  items5[0] = closure_8(dismissOnce(5768).Button, obj9);
   const obj10 = { size: "lg", variant: "secondary", text: intl4.string(dismissOnce(1113).t["NX+WJN"]), onPress: callback1 };
-  const Button = tmp2(5754).Button;
+  const Button = tmp2(5768).Button;
   intl4 = tmp2(1113).intl;
   items5[1] = closure_8(Button, obj10);
   return closure_8(PromoSheet, obj4);

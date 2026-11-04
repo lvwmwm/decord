@@ -1,16 +1,16 @@
-// Module ID: 7645
-// Function ID: 7646
+// Module ID: 7661
+// Function ID: 7662
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 5074, 5365, 5012, 1072, 1099, 7646, 7545, 7022, 1252, 1282, 1487, 2]
+// Dependencies: [5, 5074, 5366, 5012, 1072, 1099, 7662, 7561, 7037, 1252, 1282, 1487, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7645 (GuildDiscoveryUtils)
+// Module 7661 (GuildDiscoveryUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef1487 from "module_1487" /* 1487 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LurkingStore from "LurkingStore" /* 5074 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5365 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5366 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -243,11 +243,11 @@ obj = function _fetchPublicDiscoveryGuild() {
         const uRL = new URL(body.seo.canonical_url);
         const pathname = uRL.pathname;
         slug = pathname.slice(9);
-        const obj7 = { guild: body.data.guild, slug };
+        obj = { guild: body.data.guild, slug };
         let c3 = 0;
         let c4 = 3;
-        obj = { value: obj7, done: true };
-        return obj;
+        const obj7 = { value: obj, done: true };
+        return obj7;
       }
     }
     return null;

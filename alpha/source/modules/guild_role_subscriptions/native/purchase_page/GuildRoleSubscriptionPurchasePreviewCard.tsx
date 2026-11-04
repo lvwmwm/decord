@@ -1,19 +1,19 @@
-// Module ID: 18785
-// Function ID: 18786
+// Module ID: 18886
+// Function ID: 18887
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 4990, 21, 5141, 575, 5747, 5381, 18786, 2123, 17373, 1187, 504, 5772, 1113, 8727, 17359, 18781, 5837, 18787, 17370, 2]
+// Dependencies: [32, 19, 17, 4990, 21, 5141, 575, 5761, 5382, 18887, 2123, 17464, 1187, 504, 5786, 1113, 8744, 17450, 18882, 5851, 18888, 17461, 2]
 // Exports: default
 
-// Module 18785 (GuildRoleSubscriptionPurchasePreviewCard)
+// Module 18886 (GuildRoleSubscriptionPurchasePreviewCard)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useChannelNameDefault from "useChannelName" /* 5772 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17359 */;
-import EmojiIconDefault from "EmojiIcon" /* 17373 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useChannelNameDefault from "useChannelName" /* 5786 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17450 */;
+import EmojiIconDefault from "EmojiIcon" /* 17464 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -71,7 +71,7 @@ function EmojiGallery(arg0) {
   let tmp5 = diff > 0;
   if (tmp5) {
     const obj2 = { style: tmp.emojiTruncatedContainer, children: closure_9(Text_Text.Text, obj3) };
-    obj3 = { variant: "text-sm/semibold", color: "text-default", children: items1 };
+    obj3 = { variant: "body-sm/semibold", color: "text-default", children: items1 };
     items1 = ["+", diff];
     tmp5 = closure_8(tmp4, obj2);
   }
@@ -86,7 +86,7 @@ function BenefitShowCase(arg0) {
   let tmp3 = title;
   const tmp2 = metroRequire;
   if (typeof title === "string") {
-    const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
+    const obj2 = { variant: "body-md/semibold", color: "text-default", children: title };
     tmp3 = metroImportAll(Text_Text.Text, obj2);
   }
   const children = [tmp3, ];
@@ -94,7 +94,7 @@ function BenefitShowCase(arg0) {
   if (tmpResult) {
     const obj = { children: items1 };
     items1 = [metroImportAll(native.Spacer, { size: 2 }), ];
-    const obj3 = { variant: "text-sm/medium", color: "interactive-text-default", children: description };
+    const obj3 = { variant: "body-sm/medium", color: "interactive-text-default", children: description };
     items1[1] = metroImportAll(Text_Text.Text, obj3);
     tmpResult = tmp(authStore, obj);
   }
@@ -117,10 +117,10 @@ function ChannelBenefitShowCase(channelId) {
     const obj2 = { style: { flexDirection: "row", alignItems: "center" }, children: items2 };
     const obj3 = { size: channelId(1187).Icon.Sizes.REFRESH_SMALL_16, source: tmpResult.getChannelIcon(stateFromStores) };
     const Icon = tmp(1187).Icon;
-    tmpResult = channelId(8727);
+    tmpResult = channelId(8744);
     items2 = [closure_8(Icon, obj3), closure_8(channelId(1187).Spacer, { size: 4 }), ];
-    const obj4 = { variant: "text-md/semibold", color: "text-default", children: tmp4 };
-    items2[2] = closure_8(channelId(5747).Text, obj4);
+    const obj4 = { variant: "body-md/semibold", color: "text-default", children: tmp4 };
+    items2[2] = closure_8(channelId(5761).Text, obj4);
     title = closure_9(closure_6, obj2);
   }
   return closure_8(BenefitShowCase, { title, description });
@@ -133,7 +133,7 @@ function ShowAllButton(onPress) {
   const tmp = closure_11();
   const obj = { onPress, style: tmp.showAllButton, activeOpacity: 0.5, children: React4(metroRequire, obj2) };
   obj2 = { children: items };
-  const obj3 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl4.t["hub6t/"]) };
+  const obj3 = { variant: "body-sm/semibold", color: "interactive-text-hover", style: { marginTop: -1 }, children: intl.string(intl4.t["hub6t/"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [metroImportAll(Text, obj3), metroImportAll(native.Spacer, { size: 3 }), ];
@@ -192,10 +192,10 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   size = first1.size;
   const obj7 = { style: tmp2.container, children: items2 };
   const obj8 = { style: tmp2.header, children: items };
-  const obj6 = listingId(18781);
+  const obj6 = listingId(18882);
   const formattedSubscriptionPlan = obj6.useFormattedSubscriptionPlan(listingId);
   const tmp13 = guildId;
-  const tmp14 = guildId(5837);
+  const tmp14 = guildId(5851);
   if (str == null) {
     str = "";
   }
@@ -203,15 +203,15 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
   const obj9 = { source: { uri: str }, style: tmp2.image };
   items[0] = closure_8(tmp14, obj9);
   const obj10 = { children: items1 };
-  items1 = [closure_8(listingId(5747).Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1187).Spacer, { size: 4 }), closure_8(listingId(5747).Text, { variant: "heading-md/medium", color: "text-default", children: formattedSubscriptionPlan })];
+  items1 = [closure_8(listingId(5761).Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: first }), closure_8(listingId(1187).Spacer, { size: 4 }), closure_8(listingId(5761).Text, { variant: "heading-sm/medium", color: "text-default", children: formattedSubscriptionPlan })];
   items[1] = closure_9(closure_6, obj10);
-  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1187).Spacer, { size: 16 }), closure_8(tmp13(18787), { listingId }), ];
+  items2 = [closure_9(closure_6, obj8), closure_8(listingId(1187).Spacer, { size: 16 }), closure_8(tmp13(18888), { listingId }), ];
   let tmp10Result6 = length > 0 || size > 0 || length2 > 0;
   if (tmp10Result6) {
     const items3 = [closure_8(listingId(1187).Spacer, { size: 24 }), , ];
     const obj11 = { style: tmp2.contentContainer, children: closure_9(SeparatedList, obj12) };
     obj12 = { separator: closure_8(Separator, {}), children: items6 };
-    SeparatedList = tmp6(17370).SeparatedList;
+    SeparatedList = tmp6(17461).SeparatedList;
     let tmp10Result = null;
     const tmp16 = closure_10;
     if (size > 0) {
@@ -262,7 +262,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
           const obj = { listingId, guildId };
-          const tmp2 = asyncRequire(18786, dependencyMap.paths);
+          const tmp2 = asyncRequire(18887, dependencyMap.paths);
           openLazy(tmp2, "PurchaseCard:" + listingId, obj);
         }
     };

@@ -1,8 +1,8 @@
-// Module ID: 6476
-// Function ID: 6477
+// Module ID: 6491
+// Function ID: 6492
 // Dependencies: [2]
 
-// Module 6476
+// Module 6491
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/hat/piercings.png.js");

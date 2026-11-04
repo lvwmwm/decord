@@ -1,17 +1,17 @@
-// Module ID: 15147
-// Function ID: 15148
+// Module ID: 15227
+// Function ID: 15228
 // Name: UserProfilePrivateBanner
-// Dependencies: [19, 17, 7497, 21, 5141, 575, 1090, 8791, 5747, 1113, 2]
+// Dependencies: [19, 17, 7513, 21, 5141, 575, 1090, 8808, 5761, 1113, 2]
 // Exports: default
 
-// Module 15147 (UserProfilePrivateBanner)
+// Module 15227 (UserProfilePrivateBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Constants from "Constants" /* 7497 */;
-import LockIcon2 from "LockIcon" /* 8791 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Constants from "Constants" /* 7513 */;
+import LockIcon2 from "LockIcon" /* 8808 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -47,7 +47,7 @@ export default function UserProfilePrivateBanner(primaryColor) {
   const obj4 = { size: "xs", color: nativeDefault.colors.TEXT_DEFAULT };
   const LockIcon = LockIcon2.LockIcon;
   items1 = [React3(LockIcon, obj4), ];
-  const obj5 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl2.t.KPnd2O) };
+  const obj5 = { variant: "body-sm/medium", color: "text-default", children: intl.string(intl2.t.KPnd2O) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1[1] = React3(Text, obj5);

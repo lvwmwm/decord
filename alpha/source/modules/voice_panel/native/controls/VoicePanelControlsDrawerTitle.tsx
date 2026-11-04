@@ -1,15 +1,15 @@
-// Module ID: 13960
-// Function ID: 13961
+// Module ID: 14046
+// Function ID: 14047
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 11358, 21, 5141, 575, 1652, 7086, 13961, 5747, 2]
+// Dependencies: [19, 17, 11408, 21, 5141, 575, 1652, 7101, 14047, 5761, 2]
 
-// Module 13960 (VoicePanelControlsDrawerTitle)
+// Module 14046 (VoicePanelControlsDrawerTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import NativeViewDefault from "NativeView" /* 7086 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11358 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 13961 */;
+import NativeViewDefault from "NativeView" /* 7101 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11408 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 14047 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -24,7 +24,7 @@ let obj3;
 let tmp12;
 let tmp2;
 const _modDef1652 = tmp12(1652);
-const Text_Text = tmp2(5747);
+const Text_Text = tmp2(5761);
 const StyleSheet = react_native.StyleSheet;
 const CONTROLS_DRAWER_HEADER_SIZE = VoicePanelControlsConstants.CONTROLS_DRAWER_HEADER_SIZE;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
@@ -101,7 +101,7 @@ const memoResult = react.memo(function VoicePanelControlsDrawerTitle(title) {
   items3 = [, ];
   const obj4 = { shown, style: StyleSheet.absoluteFillObject, blurStyle };
   items3[0] = React3(tmp15, obj4);
-  const obj5 = { style: items4, children: React3(Text_Text.Text, { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }) };
+  const obj5 = { style: items4, children: React3(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }) };
   items4 = [tmp.titlePill, animatedStyle];
   const View = _modDef1652.View;
   items3[1] = React3(View, obj5);

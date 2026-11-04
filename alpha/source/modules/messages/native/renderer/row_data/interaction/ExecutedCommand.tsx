@@ -1,22 +1,22 @@
-// Module ID: 15233
-// Function ID: 15234
+// Module ID: 15316
+// Function ID: 15317
 // Name: ExecutedCommand
-// Dependencies: [17, 1399, 4990, 1385, 1072, 1414, 1411, 6558, 10281, 575, 7824, 6190, 8543, 8545, 9089, 1113, 9893, 2]
+// Dependencies: [17, 1399, 4990, 1385, 1072, 1414, 1411, 6573, 10329, 575, 7840, 6205, 8560, 8562, 9106, 1113, 9911, 2]
 // Exports: createExecutedCommand
 
-// Module 15233 (ExecutedCommand)
+// Module 15316 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import InteractionTypes from "InteractionTypes" /* 6190 */;
-import useMessageAuthor from "useMessageAuthor" /* 6558 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7824 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8543 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8545 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9089 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9893 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10281 */;
+import InteractionTypes from "InteractionTypes" /* 6205 */;
+import useMessageAuthor from "useMessageAuthor" /* 6573 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7840 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8560 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8562 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9106 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9911 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10329 */;
 import UserRecord from "UserRecord" /* 1399 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import UserStore from "UserStore" /* 1385 */;

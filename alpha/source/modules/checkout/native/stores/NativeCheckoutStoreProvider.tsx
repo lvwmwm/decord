@@ -1,10 +1,10 @@
-// Module ID: 10806
-// Function ID: 10807
+// Module ID: 10854
+// Function ID: 10855
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7733, 1072, 5867, 1083, 21, 5141, 5735, 10041, 572, 7738, 7739, 7080, 1266, 1242, 5716, 10807, 1252, 10809, 2]
+// Dependencies: [5, 32, 19, 17, 7749, 1072, 5881, 1083, 21, 5141, 5749, 10089, 572, 7754, 7755, 7095, 1266, 1242, 5729, 10855, 1252, 10857, 2]
 // Exports: default
 
-// Module 10806 (NativeCheckoutStoreProvider)
+// Module 10854 (NativeCheckoutStoreProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,13 +12,13 @@ import Constants2 from "Constants" /* 1083 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import v1 from "v1" /* 1266 */;
-import PaymentConstants from "PaymentConstants" /* 5867 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10807 */;
-import OrderUtils from "OrderUtils" /* 10809 */;
+import PaymentConstants from "PaymentConstants" /* 5881 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10855 */;
+import OrderUtils from "OrderUtils" /* 10857 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7733 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7749 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ function NativeCheckoutStoreProvider(children) {
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
   children = children.children;
-  const contextMetadata = order(5735)(() => {
+  const contextMetadata = order(5749)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -54,7 +54,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj4 = { loadId: id, startTime: Date.now() };
     return obj4;
   });
-  redux = order(5735)(() => {
+  redux = order(5749)(() => {
     const obj = { load_id: contextMetadata.loadId, payment_gateway };
     const merged = Object.assign(View);
     return obj;
@@ -63,7 +63,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj = { order, checkoutInitParameters: require, contextMetadata, analyticsFields, paymentGateway, orderRequired: _asyncToGenerator, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: react };
     return metroImportDefault(obj);
   }), 1)[0];
-  const tmp2 = order(5716)(() => {
+  const tmp2 = order(5729)(() => {
     if (null != View) {
       let obj = PaymentFlowStartedTriggerPoint;
       const result = obj.trackPaymentFlowStartedAnalyticsAndCTP(analyticsFields);

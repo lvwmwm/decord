@@ -15,9 +15,9 @@ const SUPPORT_DEV_DOMAIN = Constants.SUPPORT_DEV_DOMAIN;
 let combined = "https://" + Constants.SUPPORT_DOMAIN;
 let closure_6 = "https://" + SUPPORT_DEV_DOMAIN;
 let obj = {
-  getArticleURL(REFERRAL_PROGRAM) {
+  getArticleURL(AGE_VERIFICATION_LEARN_MORE) {
     const str = LocaleStore.locale;
-    return combined + "/hc/" + str.toLowerCase() + "/articles/" + REFERRAL_PROGRAM;
+    return combined + "/hc/" + str.toLowerCase() + "/articles/" + AGE_VERIFICATION_LEARN_MORE;
   },
   getDevArticleURL(arg0) {
     let tmp2 = closure_6;

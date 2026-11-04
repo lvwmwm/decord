@@ -1,17 +1,17 @@
-// Module ID: 14726
-// Function ID: 14727
+// Module ID: 14806
+// Function ID: 14807
 // Name: ScheduledMessagesIntro
-// Dependencies: [17, 21, 5141, 575, 14133, 5747, 1113, 10665, 12696, 10958, 2]
+// Dependencies: [17, 21, 5141, 575, 14219, 5761, 1113, 10713, 12777, 11006, 2]
 // Exports: default
 
-// Module 14726 (ScheduledMessagesIntro)
+// Module 14806 (ScheduledMessagesIntro)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AttachmentIcon from "AttachmentIcon" /* 10665 */;
-import PlusLargeIcon2 from "PlusLargeIcon" /* 10958 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12696 */;
-import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 14133 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AttachmentIcon from "AttachmentIcon" /* 10713 */;
+import PlusLargeIcon2 from "PlusLargeIcon" /* 11006 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12777 */;
+import ScheduleMessageSpotIllustration from "ScheduleMessageSpotIllustration" /* 14219 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -50,7 +50,7 @@ function MenuRow(arg0) {
   items1 = [, ];
   const obj2 = { size: "sm", color: nativeDefault.colors.TEXT_STRONG };
   items1[0] = hasOwnProperty(icon, obj2);
-  items1[1] = hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: label });
+  items1[1] = hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: label });
   return tmp2(tmp3, obj);
 }
 ({ ScrollView: c3, View: closure_4 } = react_native);
@@ -97,7 +97,7 @@ export default function ScheduledMessagesIntro() {
   const Heading = Text_Text.Heading;
   intl = intl6.intl;
   items1 = [hasOwnProperty(Heading, obj5), ];
-  const obj6 = { variant: "text-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: intl2.format(intl6.t.PqmI8J, {}) };
+  const obj6 = { variant: "body-sm/medium", color: "text-default", style: tmp.text, includeFontPadding: true, children: intl2.format(intl6.t.PqmI8J, {}) };
   const Text = Text_Text.Text;
   intl2 = intl6.intl;
   items1[1] = hasOwnProperty(Text, obj6);
@@ -118,7 +118,7 @@ export default function ScheduledMessagesIntro() {
   obj14 = { size: "xs", color: nativeDefault.colors.CHAT_INPUT_ACTION_BUTTON_ICON_DEFAULT_TINT };
   PlusLargeIcon = PlusLargeIcon2.PlusLargeIcon;
   items4 = [hasOwnProperty(React3, obj13), ];
-  const obj15 = { variant: "text-sm/normal", color: "text-muted", children: intl5.string(intl6.t.fxxYiB) };
+  const obj15 = { variant: "body-sm/normal", color: "text-muted", children: intl5.string(intl6.t.fxxYiB) };
   const Text2 = Text_Text.Text;
   intl5 = intl6.intl;
   items4[1] = hasOwnProperty(Text2, obj15);

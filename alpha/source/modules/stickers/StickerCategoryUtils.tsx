@@ -1,11 +1,11 @@
-// Module ID: 10400
-// Function ID: 10401
+// Module ID: 10448
+// Function ID: 10449
 // Name: StickerCategoryUtils
-// Dependencies: [7640, 6681, 2]
+// Dependencies: [7656, 6696, 2]
 // Exports: getStickerCategoriesWithNitroLockState, isStickerCategoryNitroLocked
 
-// Module 10400 (StickerCategoryUtils)
-import StickersTypes from "StickersTypes" /* 6681 */;
+// Module 10448 (StickerCategoryUtils)
+import StickersTypes from "StickersTypes" /* 6696 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ export function getStickerCategoriesWithNitroLockState(arr, arg1, arg2) {
   let closure_0 = arg1;
   let closure_1 = arg2;
   return arr.flatMap((type) => {
-    const f96872 = (item) => {
+    const f97501 = (item) => {
       const obj = closure_2_0(closure_2_1[0]);
       const stickerSendability = obj.getStickerSendability(item, closure_0, closure_1);
       return stickerSendability !== closure_2_0(closure_2_1[0]).StickerSendability.SENDABLE_WITH_BOOSTED_GUILD;
@@ -47,14 +47,14 @@ export function getStickerCategoriesWithNitroLockState(arr, arg1, arg2) {
           closure_0 = tmp;
           closure_1 = tmp2;
           const stickers1 = type.stickers;
-          const found = stickers1.filter(f96872);
+          const found = stickers1.filter(f97501);
           if (found.length > 0) {
             let obj4;
             const obj2 = { stickers: found };
             const merged = Object.assign(type);
             closure_0 = tmp;
             closure_1 = tmp2;
-            let everyResult = obj2.type === tmp3(6681).StickerCategoryTypes.GUILD && 0 !== obj2.stickers.length;
+            let everyResult = obj2.type === tmp3(6696).StickerCategoryTypes.GUILD && 0 !== obj2.stickers.length;
             if (everyResult) {
               const stickers = obj2.stickers;
               everyResult = stickers.every((item) => {
@@ -88,7 +88,7 @@ export function getStickerCategoriesWithNitroLockState(arr, arg1, arg2) {
     closure_0 = tmp;
     closure_1 = tmp2;
     const stickers2 = type.stickers;
-    const found1 = stickers2.filter(f96872);
+    const found1 = stickers2.filter(f97501);
     let tmp18 = null;
     if (0 !== found1.length) {
       const obj5 = { stickers: found1, isNitroLocked: false };

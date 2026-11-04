@@ -1,17 +1,17 @@
-// Module ID: 13530
-// Function ID: 13531
+// Module ID: 13614
+// Function ID: 13615
 // Name: SearchableDestinationListHeader
-// Dependencies: [19, 21, 5141, 575, 1627, 1500, 1377, 7131, 9943, 7124, 2]
+// Dependencies: [19, 21, 5141, 575, 1627, 1500, 1377, 7146, 9961, 7139, 2]
 // Exports: default
 
-// Module 13530 (SearchableDestinationListHeader)
+// Module 13614 (SearchableDestinationListHeader)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import Link from "Link" /* 1500 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import HeaderShared from "HeaderShared" /* 9943 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import HeaderShared from "HeaderShared" /* 9961 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ export default function SearchableDestinationListHeader(arg0) {
     headerStyle: tmp.header,
     title,
     headerTitle(children) {
-      return jsx(HeaderShared.GenericHeaderTitle, { title: children.children, subtitle: require, subtitleColor: importDefault, variant: "redesign/heading-18/semibold" });
+      return jsx(HeaderShared.GenericHeaderTitle, { title: children.children, subtitle: require, subtitleColor: importDefault, variant: "heading-md/semibold" });
     },
     headerTitleAlign: "center",
     headerLeft: headerCloseButton,
@@ -67,7 +67,7 @@ export default function SearchableDestinationListHeader(arg0) {
     headerStatusBarHeight
   };
   headerCloseButton = undefined;
-  const Header = tmp4(7131).Header;
+  const Header = tmp4(7146).Header;
   const tmp9 = jsx;
   if (null != onClose) {
     const tmp4Result = NavigatorHeader;

@@ -1,14 +1,14 @@
-// Module ID: 13126
-// Function ID: 13127
+// Module ID: 13209
+// Function ID: 13210
 // Name: useConjureAppSlotsLeft
-// Dependencies: [19, 6964, 11005, 504, 2]
+// Dependencies: [19, 6979, 11054, 504, 2]
 // Exports: default
 
-// Module 13126 (useConjureAppSlotsLeft)
+// Module 13209 (useConjureAppSlotsLeft)
 import get_initialized from "get initialized" /* 504 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11005 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11054 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import size from "module_2" /* 2 */;
 
 let maxProjects;

@@ -1,15 +1,15 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17369
+// Function ID: 17370
 // Name: VideoQuestModalContentCompleted
-// Dependencies: [32, 19, 17, 21, 5141, 575, 17253, 17248, 9827, 17275, 17244, 14626, 9813, 1652, 5757, 7990, 9059, 9837, 14836, 17216, 8965, 7412, 6147, 5747, 1113, 17269, 17270, 5754, 17239, 7106, 11220, 6904, 5837, 14898, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 17345, 17340, 9845, 17367, 17336, 14706, 9831, 1652, 5771, 8006, 9076, 9855, 14916, 17308, 8982, 7428, 6162, 5761, 1113, 17361, 17362, 5768, 17331, 7121, 11270, 6919, 5851, 14978, 2]
 
-// Module 17277 (VideoQuestModalContentCompleted)
+// Module 17369 (VideoQuestModalContentCompleted)
 import nativeDefault from "native" /* 575 */;
-import QuestTypes from "QuestTypes" /* 6904 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 9059 */;
-import AssetUtils from "AssetUtils" /* 9827 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9837 */;
-import QuestProgressIndicator from "QuestProgressIndicator" /* 17253 */;
+import QuestTypes from "QuestTypes" /* 6919 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 9076 */;
+import AssetUtils from "AssetUtils" /* 9845 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9855 */;
+import QuestProgressIndicator from "QuestProgressIndicator" /* 17345 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -194,7 +194,7 @@ const memoResult = react.memo(function VideoQuestModalContentCompleted(onRestart
   const SafeAreaPaddingView = tmp2(tmp3[21]).SafeAreaPaddingView;
   const obj7 = { align: "center", direction: "horizontal", justify: "space-between", style: tmp.content, children: items5 };
   const Stack = tmp2(tmp3[22]).Stack;
-  const obj8 = { variant: "heading-sm/semibold", color: "text-subtle", style: tmp.headerContentCopy, children: intl.formatToPlainString(quest(tmp3[24]).t.EAYZAr, obj9) };
+  const obj8 = { variant: "heading-xs/semibold", color: "text-subtle", style: tmp.headerContentCopy, children: intl.formatToPlainString(quest(tmp3[24]).t.EAYZAr, obj9) };
   const Heading = tmp2(tmp3[23]).Heading;
   intl = tmp2(tmp3[24]).intl;
   obj9 = { questName: quest.config.messages.questName };
@@ -242,9 +242,9 @@ const memoResult = react.memo(function VideoQuestModalContentCompleted(onRestart
     const Stack3 = tmp2(tmp3[22]).Stack;
     const obj17 = { spacing: require("native").space.PX_4, style: tmp.contentEndCardHeaderCopy, children: items12 };
     const Stack4 = tmp2(tmp3[22]).Stack;
-    const obj18 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: quest.config.messages.gameTitle };
+    const obj18 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: quest.config.messages.gameTitle };
     items12 = [closure_8(tmp2(tmp3[23]).Heading, obj18), ];
-    const obj19 = { variant: "text-sm/medium", color: "text-subtle", children: quest.config.messages.gamePublisher };
+    const obj19 = { variant: "body-sm/medium", color: "text-subtle", children: quest.config.messages.gamePublisher };
     items12[1] = closure_8(quest(tmp3[23]).Text, obj19);
     items13 = [closure_9(Stack4, obj17), ];
     const obj20 = { accessibilityRole: "button", accessibilityLabel: intl4.string(quest(tmp3[24]).t.YsCuyF), onPress: onRestartVideo, children: closure_8(RetryIcon, obj21) };

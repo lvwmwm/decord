@@ -1,20 +1,20 @@
-// Module ID: 18624
-// Function ID: 18625
+// Module ID: 18725
+// Function ID: 18726
 // Name: YouBarFloatingShade
-// Dependencies: [19, 17, 5165, 17218, 18503, 21, 5141, 504, 5719, 575, 17220, 1493, 5324, 18221, 5315, 1090, 5710, 2]
+// Dependencies: [19, 17, 5165, 17310, 18598, 21, 5141, 504, 5732, 575, 17312, 1493, 5325, 18318, 5316, 1090, 5723, 2]
 
-// Module 18624 (YouBarFloatingShade)
+// Module 18725 (YouBarFloatingShade)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5315 */;
-import useChatLayoutDefault from "useChatLayout" /* 5324 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import useToken2 from "useToken" /* 5719 */;
-import YouBarConstants from "YouBarConstants" /* 17218 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17220 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18503 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5316 */;
+import useChatLayoutDefault from "useChatLayout" /* 5325 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import useToken2 from "useToken" /* 5732 */;
+import YouBarConstants from "YouBarConstants" /* 17310 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 17312 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18598 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5165 */;
 import Fragment from "Fragment" /* 21 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function YouBarFloatingShade() {
     width = tmp7 + GUILD_LIST_WIDTH;
   }
   const tmp2Result = client_themes_ClientThemesUtils;
-  const gradientValue = tmp2Result.useGradientValue(tmp2(5315).GradientPercentage.END);
+  const gradientValue = tmp2Result.useGradientValue(tmp2(5316).GradientPercentage.END);
   const tmp2Result6 = useToken2;
   const token = tmp2Result6.useToken(tmp6(575).colors.BACKGROUND_BASE_LOWER);
   const items = [ClientThemesBackgroundStore];

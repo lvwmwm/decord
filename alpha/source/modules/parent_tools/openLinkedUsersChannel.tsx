@@ -1,12 +1,12 @@
-// Module ID: 10700
-// Function ID: 10701
+// Module ID: 10748
+// Function ID: 10749
 // Name: openLinkedUsersChannel
-// Dependencies: [5, 4990, 5876, 7609, 2]
+// Dependencies: [5, 4990, 5890, 7625, 2]
 // Exports: default
 
-// Module 10700 (openLinkedUsersChannel)
-import transitionToChannel from "transitionToChannel" /* 5876 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
+// Module 10748 (openLinkedUsersChannel)
+import transitionToChannel from "transitionToChannel" /* 5890 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;

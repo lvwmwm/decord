@@ -1,10 +1,10 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14635
+// Function ID: 14636
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7733, 1385, 1072, 1387, 21, 5141, 575, 5730, 7450, 504, 1252, 14556, 10811, 1377, 572, 10799, 1113, 10817, 5747, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 7749, 1385, 1072, 1387, 21, 5141, 575, 5743, 7466, 504, 1252, 14636, 10859, 1377, 572, 10847, 1113, 10865, 5761, 5768, 2]
 // Exports: default
 
-// Module 14555 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 14635 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,8 +12,8 @@ import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7733 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10799 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7749 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10847 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -155,7 +155,7 @@ export default function SocialLayerStorefrontGiftPurchaseSection(skuId) {
   let obj3 = {
     style: tmp3.legalCopy,
     children: mobileFinePrintMessageForApplication.map((children, index) => {
-      const obj = { variant: "text-xs/normal", color: "text-muted", children };
+      const obj = { variant: "body-xs/normal", color: "text-muted", children };
       return awaitSync(skuId(giftOptions[22]).Text, obj, index);
     })
   };

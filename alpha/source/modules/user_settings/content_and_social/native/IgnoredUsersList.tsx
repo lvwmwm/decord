@@ -1,21 +1,21 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 16945
+// Function ID: 16946
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 5083, 21, 5141, 575, 7446, 7471, 1187, 16846, 1113, 7412, 5747, 7186, 16854, 504, 2]
+// Dependencies: [19, 17, 5083, 21, 5141, 575, 7462, 7487, 1187, 16938, 1113, 7428, 5761, 7201, 16946, 504, 2]
 // Exports: default
 
-// Module 16853 (IgnoredUsersList)
+// Module 16945 (IgnoredUsersList)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7446 */;
-import Blocked from "Blocked" /* 16846 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 16854 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7462 */;
+import Blocked from "Blocked" /* 16938 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 16946 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Fragment from "Fragment" /* 21 */;
@@ -51,7 +51,7 @@ function IgnoredUsersList(userIds) {
     obj3 = { bottom: true, style: tmp.list, children: metroRequire(ScrollView, obj4) };
     obj4 = { children: items };
     SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-    const obj5 = { style: tmp.sectionLabelStyle, variant: "text-sm/semibold", color: "text-default", children: intl2.formatToPlainString(intl4.t.iNKUhU, obj6) };
+    const obj5 = { style: tmp.sectionLabelStyle, variant: "body-sm/semibold", color: "text-default", children: intl2.formatToPlainString(intl4.t.iNKUhU, obj6) };
     const Text = Text_Text.Text;
     intl2 = intl4.intl;
     obj6 = { numberOfIgnoredUsers: userIds.length };

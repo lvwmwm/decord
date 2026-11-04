@@ -1,10 +1,10 @@
-// Module ID: 8068
-// Function ID: 8069
+// Module ID: 8084
+// Function ID: 8085
 // Name: StartStageChannelActionSheet
-// Dependencies: [5, 32, 19, 17, 4995, 6829, 1072, 4996, 21, 5141, 575, 504, 6878, 5716, 1252, 2017, 8069, 5381, 6566, 5747, 1113, 5395, 7412, 7208, 8078, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 4995, 6844, 1072, 4996, 21, 5141, 575, 504, 6893, 5729, 1252, 2017, 8085, 5382, 6581, 5761, 1113, 5396, 7428, 7223, 8094, 5768, 2]
 // Exports: default
 
-// Module 8068 (StartStageChannelActionSheet)
+// Module 8084 (StartStageChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -13,7 +13,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 4995 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6829 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6844 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -186,9 +186,9 @@ export default function StartStageChannelEventActionSheet(channel) {
   const tmp8 = obj(obj2.useState(false), 2);
   [obj3, c4] = obj(obj2.useState(null), 2);
   const tmp10 = obj(obj2.useState(null), 2);
-  const tmp2Result = channel(6878);
+  const tmp2Result = channel(6893);
   const shouldAgeVerifyToSpeakForCurrentUser = tmp2Result.useShouldAgeVerifyToSpeakForCurrentUser(channel.id);
-  stateFromStores(5716)(() => {
+  stateFromStores(5729)(() => {
     let id;
     const track = AnalyticsUtilsDefault.track;
     const START_STAGE_OPENED = unpackModuleId.START_STAGE_OPENED;
@@ -201,7 +201,7 @@ export default function StartStageChannelEventActionSheet(channel) {
   });
   let obj4 = { style: tmp.header, children: items1 };
   let obj5 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   const tmp12 = stateFromStores;
   if (null == stateFromStores) {
     const intl2 = tmp2(1113).intl;
@@ -211,8 +211,8 @@ export default function StartStageChannelEventActionSheet(channel) {
     stringResult = intl.string(tmp2(1113).t["5BKP4y"]);
   }
   items1 = [tmp16(Text, obj5), ];
-  let obj6 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: stringResult1 };
-  const Text2 = tmp2(5747).Text;
+  let obj6 = { style: tmp.headerSubtitle, variant: "body-sm/medium", color: "text-default", children: stringResult1 };
+  const Text2 = tmp2(5761).Text;
   if (null == stateFromStores) {
     const intl4 = tmp2(1113).intl;
     stringResult1 = intl4.string(tmp2(1113).t.bqQIwa);
@@ -230,12 +230,12 @@ export default function StartStageChannelEventActionSheet(channel) {
   function handleSave() {
     return obj(...arguments);
   }
-  const BottomSheet = tmp2(5395).BottomSheet;
+  const BottomSheet = tmp2(5396).BottomSheet;
   let obj7 = { bottom: true, style: tmp.container, children: items2 };
   items2 = [tmp14Result, , , , , ];
-  const SafeAreaPaddingView = tmp2(7412).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7428).SafeAreaPaddingView;
   let obj8 = { label: intl6.string(tmp2(1113).t["5FPBOB"]), maxLength, value, placeholder: intl7.string(tmp2(1113).t.ZwWruY), onChange: tmp7, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: handleSave };
-  const TextInput = tmp2(7208).TextInput;
+  const TextInput = tmp2(7223).TextInput;
   intl6 = tmp2(1113).intl;
   intl7 = tmp2(1113).intl;
   items2[1] = closure_13(TextInput, obj8);
@@ -247,16 +247,16 @@ export default function StartStageChannelEventActionSheet(channel) {
     style: tmp.ageVerificationNotice,
     channelId: channel.id
   };
-  items2[2] = closure_13(tmp12(8078), obj9);
+  items2[2] = closure_13(tmp12(8094), obj9);
   let tmp16Result = null;
   if (null != obj3) {
-    const obj10 = { style: tmp.error, variant: "text-xs/medium", color: "text-feedback-critical", children: obj3.getAnyErrorMessage() };
-    const Text3 = tmp2(5747).Text;
+    const obj10 = { style: tmp.error, variant: "body-xs/medium", color: "text-feedback-critical", children: obj3.getAnyErrorMessage() };
+    const Text3 = tmp2(5761).Text;
     tmp16Result = tmp16(Text3, obj10);
   }
   items2[3] = tmp16Result;
   const obj11 = { style: tmp.startButton, children: closure_13(Button, obj12) };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   if (null == stateFromStores) {
     const intl9 = tmp2(1113).intl;
     stringResult3 = intl9.string(tmp2(1113).t.s8mM8A);
@@ -268,8 +268,8 @@ export default function StartStageChannelEventActionSheet(channel) {
   items2[4] = closure_13(View, obj11);
   let tmp16Result2 = null != stringResult2 && !shouldAgeVerifyToSpeakForCurrentUser;
   if (tmp16Result2) {
-    const obj13 = { accessible: false, style: tmp.buttonSubtitle, variant: "text-xs/medium", color: "text-default", children: intl10.string(channel(1113).t.gR66jX) };
-    const Text4 = tmp2(5747).Text;
+    const obj13 = { accessible: false, style: tmp.buttonSubtitle, variant: "body-xs/medium", color: "text-default", children: intl10.string(channel(1113).t.gR66jX) };
+    const Text4 = tmp2(5761).Text;
     intl10 = tmp2(1113).intl;
     tmp16Result2 = tmp16(Text4, obj13);
   }

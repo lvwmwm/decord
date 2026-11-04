@@ -1,15 +1,15 @@
-// Module ID: 15354
-// Function ID: 15355
+// Module ID: 15441
+// Function ID: 15442
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 1072, 21, 5141, 6084, 7212, 1113, 2190, 6084, 2]
+// Dependencies: [19, 1072, 21, 5141, 6099, 7227, 1113, 2190, 6099, 2]
 // Exports: default
 
-// Module 15354 (ProvisionalAccountNoCallAllowed)
+// Module 15441 (ProvisionalAccountNoCallAllowed)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import AlertModal2 from "AlertModal" /* 6084 */;
+import AlertModal2 from "AlertModal" /* 6099 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

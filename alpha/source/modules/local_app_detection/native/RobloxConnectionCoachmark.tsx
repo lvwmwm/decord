@@ -1,10 +1,10 @@
-// Module ID: 19184
-// Function ID: 19185
+// Module ID: 19287
+// Function ID: 19288
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 6692, 1385, 15745, 1072, 4987, 21, 5141, 575, 5207, 1627, 5381, 5395, 7441, 7487, 6147, 5747, 1113, 5754, 14719, 9852, 7687, 5163, 6694, 1411, 1187, 8155, 504, 15746, 7467, 5171, 4974, 2]
+// Dependencies: [32, 19, 17, 6707, 1385, 15833, 1072, 4987, 21, 5141, 575, 5207, 1627, 5382, 5396, 7457, 7503, 6162, 5761, 1113, 5768, 14799, 9870, 7703, 5163, 6709, 1411, 1187, 8171, 504, 15834, 7483, 5171, 4974, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 19184 (RobloxConnectionCoachmark)
+// Module 19287 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,16 +15,16 @@ import dismissible_content from "dismissible_content" /* 4974 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import themes from "themes" /* 5163 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import PlatformsDefault from "Platforms" /* 6694 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7467 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import inlineStyles from "inlineStyles" /* 8155 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import PlatformsDefault from "Platforms" /* 6709 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 7483 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import inlineStyles from "inlineStyles" /* 8171 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6692 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6707 */;
 import UserStore from "UserStore" /* 1385 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15745 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15833 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -42,7 +42,7 @@ let size;
 let size1;
 let tmp;
 let unpackModuleId;
-const authorizeConnectionDefault = tmp(9852);
+const authorizeConnectionDefault = tmp(9870);
 function RobloxIcon(theme) {
   let Icon;
   let items;
@@ -84,9 +84,9 @@ class UnionIcon {
     const tmp4 = inlineStylesDefault;
     items[0] = map1(inlineStyles.Path, { fill: "url(#a)", d: "M1.7002 0.799805C2.36285 0.79991 2.90039 1.33732 2.90039 2C2.90029 2.66259 2.36278 3.20009 1.7002 3.2002C1.03752 3.2002 0.500106 2.66265 0.5 2C0.5 1.33726 1.03745 0.799805 1.7002 0.799805ZM8.90039 0.799805C9.56297 0.799989 10.0996 1.33737 10.0996 2C10.0995 2.66254 9.56291 3.20001 8.90039 3.2002C8.23771 3.2002 7.70029 2.66266 7.7002 2C7.7002 1.33726 8.23765 0.799805 8.90039 0.799805ZM16.0996 0.799805C16.7624 0.799805 17.2998 1.33726 17.2998 2C17.2997 2.66266 16.7623 3.2002 16.0996 3.2002C15.4371 3.19996 14.9005 2.66251 14.9004 2C14.9004 1.3374 15.4371 0.800042 16.0996 0.799805ZM23.2998 0.799805C23.9625 0.799805 24.5 1.33726 24.5 2C24.4999 2.66266 23.9625 3.2002 23.2998 3.2002C22.6372 3.20006 22.0997 2.66258 22.0996 2C22.0996 1.33734 22.6372 0.799936 23.2998 0.799805Z" });
     const obj2 = { children: authStore3(LinearGradient, obj3) };
-    const Defs = tmp(8155).Defs;
+    const Defs = tmp(8171).Defs;
     obj3 = { id: "a", x1: 0.5, y1: 2, x2: 24.5, y2: 2, gradientUnits: "userSpaceOnUse", children: items1 };
-    LinearGradient = tmp(8155).LinearGradient;
+    LinearGradient = tmp(8171).LinearGradient;
     items1 = [map1(inlineStyles.Stop, { stopColor: str, stopOpacity: 0.3 }), map1(inlineStyles.Stop, { offset: 1, stopColor: str, stopOpacity: 0.7 })];
     items[1] = map1(Defs, obj2);
     return authStore3(tmp4, size);
@@ -157,28 +157,28 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
     },
     children: closure_14(Stack, obj4)
   };
-  const BottomSheet = markAsDismissed(5395).BottomSheet;
-  obj3 = { title: null, leading: closure_13(markAsDismissed(7487).ActionSheetCloseButton, { onPress: handleCancel }) };
-  BottomSheetTitleHeader = markAsDismissed(7441).BottomSheetTitleHeader;
+  const BottomSheet = markAsDismissed(5396).BottomSheet;
+  obj3 = { title: null, leading: closure_13(markAsDismissed(7503).ActionSheetCloseButton, { onPress: handleCancel }) };
+  BottomSheetTitleHeader = markAsDismissed(7457).BottomSheetTitleHeader;
   obj4 = { spacing: 24, style: { paddingBottom: bottom }, children: items1 };
-  Stack = markAsDismissed(6147).Stack;
+  Stack = markAsDismissed(6162).Stack;
   const obj5 = { justify: "center", align: "center", direction: "horizontal", children: items };
-  const Stack2 = markAsDismissed(6147).Stack;
+  const Stack2 = markAsDismissed(6162).Stack;
   items = [closure_13(RobloxIcon, { theme }), closure_13(UnionIcon, { theme }), closure_13(UserIcon, {})];
   items1 = [closure_14(Stack2, obj5), , ];
   const obj6 = { justify: "center", children: items2 };
-  const Stack3 = markAsDismissed(6147).Stack;
+  const Stack3 = markAsDismissed(6162).Stack;
   const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl.string(markAsDismissed(1113).t.t3asUZ) };
-  const Text = markAsDismissed(5747).Text;
+  const Text = markAsDismissed(5761).Text;
   intl = markAsDismissed(1113).intl;
   items2 = [closure_13(Text, obj7), ];
-  const obj8 = { variant: "text-md/medium", style: tmp.text, children: intl2.string(markAsDismissed(1113).t.no96NU) };
-  const Text2 = markAsDismissed(5747).Text;
+  const obj8 = { variant: "body-md/medium", style: tmp.text, children: intl2.string(markAsDismissed(1113).t.no96NU) };
+  const Text2 = markAsDismissed(5761).Text;
   intl2 = markAsDismissed(1113).intl;
   items2[1] = closure_13(Text2, obj8);
   items1[1] = closure_14(Stack3, obj6);
   const obj9 = { children: items3 };
-  const Stack4 = markAsDismissed(6147).Stack;
+  const Stack4 = markAsDismissed(6162).Stack;
   const obj10 = {
     text: intl3.string(markAsDismissed(1113).t.ItuabN),
     icon: closure_13(WindowLaunchIcon, obj11),
@@ -197,13 +197,13 @@ export default function RobloxConnectionActionSheet(markAsDismissed) {
       obj3.openUserSettings(obj4);
     }
   };
-  const Button = markAsDismissed(5754).Button;
+  const Button = markAsDismissed(5768).Button;
   intl3 = markAsDismissed(1113).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-  WindowLaunchIcon = markAsDismissed(14719).WindowLaunchIcon;
+  WindowLaunchIcon = markAsDismissed(14799).WindowLaunchIcon;
   items3 = [closure_13(Button, obj10), ];
   const obj12 = { text: intl4.string(markAsDismissed(1113).t.DiGJy3), variant: "secondary", size: "lg", onPress: handleCancel };
-  const Button2 = markAsDismissed(5754).Button;
+  const Button2 = markAsDismissed(5768).Button;
   intl4 = markAsDismissed(1113).intl;
   items3[1] = closure_13(Button2, obj12);
   items1[2] = closure_14(Stack4, obj9);

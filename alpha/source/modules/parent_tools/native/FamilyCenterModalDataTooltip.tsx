@@ -1,27 +1,27 @@
-// Module ID: 16938
-// Function ID: 16939
+// Module ID: 17030
+// Function ID: 17031
 // Name: FamilyCenterModalDataTooltip
-// Dependencies: [19, 17, 7840, 21, 8767, 13499, 5835, 15618, 8769, 8139, 5860, 13501, 5141, 575, 5747, 13498, 1113, 2667, 8494, 8496, 8096, 8097, 13344, 5754, 6864, 7124, 11619, 2]
+// Dependencies: [19, 17, 7856, 21, 8784, 13583, 5849, 15705, 8786, 8155, 5874, 13585, 5141, 575, 5761, 13582, 1113, 2667, 8511, 8513, 8112, 8113, 13427, 5768, 6879, 7139, 11670, 2]
 // Exports: default
 
-// Module 16938 (FamilyCenterModalDataTooltip)
+// Module 17030 (FamilyCenterModalDataTooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2667 from "module_2667" /* 2667 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FriendsIcon from "FriendsIcon" /* 5835 */;
-import ClockIcon from "ClockIcon" /* 5860 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
-import CreditCardIcon from "CreditCardIcon" /* 8139 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8494 */;
-import ChatIcon from "ChatIcon" /* 8767 */;
-import ThreadIcon from "ThreadIcon" /* 8769 */;
-import Modal2 from "Modal" /* 11619 */;
-import PhoneIcon from "PhoneIcon" /* 13499 */;
-import GiftIcon from "GiftIcon" /* 13501 */;
-import ServerGridIcon from "ServerGridIcon" /* 15618 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FriendsIcon from "FriendsIcon" /* 5849 */;
+import ClockIcon from "ClockIcon" /* 5874 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7856 */;
+import CreditCardIcon from "CreditCardIcon" /* 8155 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8511 */;
+import ChatIcon from "ChatIcon" /* 8784 */;
+import ThreadIcon from "ThreadIcon" /* 8786 */;
+import Modal2 from "Modal" /* 11670 */;
+import PhoneIcon from "PhoneIcon" /* 13583 */;
+import GiftIcon from "GiftIcon" /* 13585 */;
+import ServerGridIcon from "ServerGridIcon" /* 15705 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -60,9 +60,9 @@ function Row(arg0) {
   items = [hasOwnProperty(View, obj2), ];
   const obj4 = { style: tmp.content, children: items1 };
   items1 = [, ];
-  const obj5 = { style: tmp.header, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: header };
+  const obj5 = { style: tmp.header, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: header };
   items1[0] = hasOwnProperty(Text_Text.Text, obj5);
-  items1[1] = hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-default", children: description });
+  items1[1] = hasOwnProperty(Text_Text.Text, { variant: "body-xs/medium", color: "text-default", children: description });
   items[1] = metroRequire(View, obj4);
   return metroRequire(View, obj);
 }
@@ -90,7 +90,7 @@ function FamilyCenterModalDataTooltipScreen() {
   obj4 = { style: tmp.container, children: items };
   const ModalContent = require("ModalContent").ModalContent;
   items = [, ];
-  const obj5 = { style: tmp.groupHeader, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: ageSpecificText };
+  const obj5 = { style: tmp.groupHeader, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: ageSpecificText };
   items[0] = closure_5(require("Text/Text").Text, obj5);
   items[1] = sortedActivityTypeConfigs.map((item) => {
     let tmp;

@@ -1,24 +1,24 @@
-// Module ID: 19557
-// Function ID: 19558
+// Module ID: 19661
+// Function ID: 19662
 // Name: AgeVerificationManager
-// Dependencies: [6982, 4990, 6181, 5044, 1385, 1072, 7614, 3, 1094, 13488, 8296, 7760, 7599, 7407, 6846, 6683, 2]
+// Dependencies: [6997, 4990, 6196, 5044, 1385, 1072, 7630, 3, 1094, 13572, 8312, 7776, 7615, 7423, 6861, 6698, 2]
 
-// Module 19557 (AgeVerificationManager)
+// Module 19661 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1094 */;
 import UserStore2 from "UserStore" /* 1385 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6683 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6846 */;
-import Constants2 from "Constants" /* 7614 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7760 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8296 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13488 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6982 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6698 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6861 */;
+import Constants2 from "Constants" /* 7630 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8312 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 13572 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6997 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 
 const UserStore = UserStore2;

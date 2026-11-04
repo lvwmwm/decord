@@ -1,14 +1,14 @@
-// Module ID: 10299
-// Function ID: 10300
+// Module ID: 10347
+// Function ID: 10348
 // Name: FeedbackModalNeutralDesaturated
-// Dependencies: [19, 21, 8930, 10300, 10301, 10302, 5148, 5837, 2]
+// Dependencies: [19, 21, 8947, 10348, 10349, 10350, 5148, 5851, 2]
 // Exports: FeedbackModalNeutralDesaturated, getFeedbackModalNeutralDesaturatedSource, useFeedbackModalNeutralDesaturatedSource
 
-// Module 10299 (FeedbackModalNeutralDesaturated)
+// Module 10347 (FeedbackModalNeutralDesaturated)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5148 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import _mod8930 from "module_8930" /* 8930 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import _mod8947 from "module_8947" /* 8947 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/FeedbackModalNeutralDesaturated.tsx");
 
 export function getFeedbackModalNeutralDesaturatedSource(theme) {
-  const obj = _mod8930;
+  const obj = _mod8947;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useFeedbackModalNeutralDesaturatedSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8930;
+  const obj2 = _mod8947;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function FeedbackModalNeutralDesaturated(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8930;
+  const obj2 = _mod8947;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

@@ -1,15 +1,15 @@
-// Module ID: 7288
-// Function ID: 7289
+// Module ID: 7304
+// Function ID: 7305
 // Name: UserSettingsAccountUnverifiedHeader
-// Dependencies: [19, 1385, 21, 5141, 575, 7121, 1113, 504, 7106, 5747, 2]
+// Dependencies: [19, 1385, 21, 5141, 575, 7136, 1113, 504, 7121, 5761, 2]
 // Exports: default
 
-// Module 7288 (UserSettingsAccountUnverifiedHeader)
+// Module 7304 (UserSettingsAccountUnverifiedHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7121 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7136 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -69,10 +69,10 @@ export default function UserSettingsAccountUnverifiedHeader() {
   let tmp5 = null;
   if (null != tmp4) {
     const obj2 = { accessibilityRole: "button", style: tmp.accountWarning, onPress: handleOpenEmailVerification, children: items1 };
-    const PressableOpacity = tmp2(7106).PressableOpacity;
-    const obj3 = { style: tmp.accountWarningText, variant: "text-xs/semibold", color: "text-overlay-light", children: tmp4.title };
+    const PressableOpacity = tmp2(7121).PressableOpacity;
+    const obj3 = { style: tmp.accountWarningText, variant: "body-xs/semibold", color: "text-overlay-light", children: tmp4.title };
     items1 = [React3(Text_Text.Text, obj3), ];
-    const obj4 = { style: tmp.accountWarningButton, variant: "text-xs/medium", color: "text-overlay-light", children: tmp4.button };
+    const obj4 = { style: tmp.accountWarningButton, variant: "body-xs/medium", color: "text-overlay-light", children: tmp4.button };
     items1[1] = React3(Text_Text.Text, obj4);
     tmp5 = hasOwnProperty(PressableOpacity, obj2);
   }

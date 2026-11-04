@@ -1,19 +1,19 @@
-// Module ID: 13908
-// Function ID: 13909
+// Module ID: 13994
+// Function ID: 13995
 // Name: ForumPostTimestamp
-// Dependencies: [19, 13894, 21, 5141, 9969, 5747, 2]
+// Dependencies: [19, 13980, 21, 5141, 10017, 5761, 2]
 // Exports: default
 
-// Module 13908 (ForumPostTimestamp)
+// Module 13994 (ForumPostTimestamp)
 import Fragment from "Fragment" /* 21 */;
-import ForumHooks from "ForumHooks" /* 9969 */;
-import ForumChannelStore from "ForumChannelStore" /* 13894 */;
+import ForumHooks from "ForumHooks" /* 10017 */;
+import ForumChannelStore from "ForumChannelStore" /* 13980 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const Text_Text = tmp2(5747);
+const Text_Text = tmp2(5761);
 const useForumChannelStore = ForumChannelStore.useForumChannelStore;
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ text: { lineHeight: 18, height: 18 } });
@@ -34,5 +34,5 @@ export default function ForumPostTimestamp(thread) {
     str = "text-default";
   }
   const items = [textStyle, tmp.text];
-  return jsx(Text_Text.Text, { lineClamp: 1, variant: "text-xs/normal", color: str, style: items, children: lastActiveTimestamp });
+  return jsx(Text_Text.Text, { lineClamp: 1, variant: "body-xs/normal", color: str, style: items, children: lastActiveTimestamp });
 };

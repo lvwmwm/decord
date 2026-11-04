@@ -1,15 +1,15 @@
-// Module ID: 9742
-// Function ID: 9743
+// Module ID: 9760
+// Function ID: 9761
 // Name: GameDetectionReportModal
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1499, 9468, 9269, 9743, 9272, 6864, 1113, 7682, 7180, 7124, 5747, 7184, 7187, 7208, 5754, 7373, 7290, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1499, 9486, 9286, 9761, 9289, 6879, 1113, 7698, 7195, 7139, 5761, 7199, 7202, 7223, 5768, 7389, 7306, 2]
 // Exports: default
 
-// Module 9742 (GameDetectionReportModal)
+// Module 9760 (GameDetectionReportModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import Navigator from "Navigator" /* 7290 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import Navigator from "Navigator" /* 7306 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -175,7 +175,7 @@ function ReportContent(applicationId) {
   const tmp18 = closure_5;
   if ("issue_selection" === first) {
     let obj5 = { style: tmp.content, children: items3 };
-    const obj6 = { variant: "text-sm/normal", color: "text-muted", children: intl4.string(tmp2(first[12]).t.IQHicr) };
+    const obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl4.string(tmp2(first[12]).t.IQHicr) };
     const Text2 = tmp2(tmp3[16]).Text;
     intl4 = tmp2(tmp3[12]).intl;
     items3 = [tmp17(Text2, obj6), ];
@@ -208,7 +208,7 @@ function ReportContent(applicationId) {
     tmp19Result = str2(first1, obj5);
   } else if ("game_search" === first) {
     const obj10 = { style: tmp.content, children: items5 };
-    const obj11 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(tmp2(first[12]).t["79o/iq"]) };
+    const obj11 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(tmp2(first[12]).t["79o/iq"]) };
     const Text = tmp2(tmp3[16]).Text;
     intl = tmp2(tmp3[12]).intl;
     items5 = [tmp17(Text, obj11), , ];
@@ -268,7 +268,7 @@ function ReportContent(applicationId) {
   } else if ("other_feedback" === first) {
     const obj17 = { children: items8 };
     const obj18 = { style: tmp.content, children: items7 };
-    const obj19 = { variant: "text-sm/normal", color: "text-muted", children: intl7.string(tmp2(first[12]).t.IblYEw) };
+    const obj19 = { variant: "body-sm/normal", color: "text-muted", children: intl7.string(tmp2(first[12]).t.IblYEw) };
     const Text3 = tmp2(tmp3[16]).Text;
     intl7 = tmp2(tmp3[12]).intl;
     items7 = [tmp17(Text3, obj19), ];

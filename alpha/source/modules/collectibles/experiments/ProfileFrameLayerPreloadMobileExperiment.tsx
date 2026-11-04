@@ -1,10 +1,10 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 8937
+// Function ID: 8938
 // Name: ProfileFrameLayerPreloadMobileExperiment
 // Dependencies: [1449, 2]
 // Exports: useIsProfileFrameLayerPreloadEnabled
 
-// Module 8920 (ProfileFrameLayerPreloadMobileExperiment)
+// Module 8937 (ProfileFrameLayerPreloadMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

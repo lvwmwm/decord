@@ -1,18 +1,18 @@
-// Module ID: 13361
-// Function ID: 13362
+// Module ID: 13444
+// Function ID: 13445
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1192, 21, 5141, 575, 5207, 5837, 5148, 13362, 13363, 5747, 1113, 13364, 13365, 7106, 2]
+// Dependencies: [19, 17, 1192, 21, 5141, 575, 5207, 5851, 5148, 13445, 13446, 5761, 1113, 13447, 13448, 7121, 2]
 
-// Module 13361 (GuildIconUploader)
+// Module 13444 (GuildIconUploader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5148 */;
 import native from "native" /* 5207 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import Pressables from "Pressables" /* 7106 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13364 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13365 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import Pressables from "Pressables" /* 7121 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13447 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13448 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
@@ -61,14 +61,14 @@ class GuildIconUploader extends PureComponent {
       const tmp7 = metroRequire;
       const tmp8 = View;
       if (obj6.isThemeDark(ThemeStore.theme)) {
-        tmp10Result = tmp10(13362);
+        tmp10Result = tmp10(13445);
       } else {
-        tmp10Result = tmp10(13363);
+        tmp10Result = tmp10(13446);
       }
       const obj = { source: tmp10Result };
       items2 = [hasOwnProperty(tmp12, obj), ];
-      const obj5 = { style: tmp.emptyGuildIconText, variant: "text-xs/semibold", color: "text-default", children: str.toUpperCase() };
-      const Text = tmp13(5747).Text;
+      const obj5 = { style: tmp.emptyGuildIconText, variant: "body-xs/semibold", color: "text-default", children: str.toUpperCase() };
+      const Text = tmp13(5761).Text;
       const intl = tmp13(1113).intl;
       str = intl.string(intl3.t["3UB9ad"]);
       items2[1] = hasOwnProperty(Text, obj5);

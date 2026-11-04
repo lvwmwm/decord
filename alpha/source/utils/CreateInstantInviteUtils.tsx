@@ -1,10 +1,10 @@
-// Module ID: 20161
-// Function ID: 20162
+// Module ID: 20277
+// Function ID: 20278
 // Name: CreateInstantInviteUtils
 // Dependencies: [5071, 5073, 1072, 2]
 // Exports: getInvitableChannelForGuild
 
-// Module 20161 (CreateInstantInviteUtils)
+// Module 20277 (CreateInstantInviteUtils)
 import Constants from "Constants" /* 1072 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 5071 */;
 import PermissionStore from "PermissionStore" /* 5073 */;

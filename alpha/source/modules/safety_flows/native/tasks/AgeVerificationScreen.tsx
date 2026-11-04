@@ -1,16 +1,16 @@
-// Module ID: 20245
-// Function ID: 20246
+// Module ID: 20361
+// Function ID: 20362
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1385, 1072, 21, 5141, 1266, 20238, 504, 8289, 20231, 2121, 6849, 20241, 8098, 1113, 2963, 3223, 8079, 2190, 16016, 6860, 5747, 8291, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5141, 1266, 20354, 504, 8305, 20347, 2121, 6864, 20357, 8114, 1113, 2963, 3223, 8095, 2190, 16106, 6875, 5761, 8307, 2]
 // Exports: default
 
-// Module 20245 (AgeVerificationScreen)
+// Module 20361 (AgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Server from "Server" /* 2121 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
-import types from "types" /* 20231 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import types from "types" /* 20347 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -71,11 +71,11 @@ export default function AgeVerificationScreen() {
       const openUrl = onTaskComplete(stateFromStores[18]).openUrl;
       onTaskComplete(stateFromStores[18]);
       const obj = onTaskComplete(stateFromStores[19]);
-      openUrl(obj.getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
+      openUrl(obj.getArticleURL(constants.AGE_VERIFICATION_LEARN_MORE));
     }
   };
   const ModalDisclaimer = memo(stateFromStores[20]).ModalDisclaimer;
-  ({ variant: "text-sm/medium", color: "text-link", style: tmp2.helpLink, children: intl3.string(memo(stateFromStores[15]).t["2jxGer"]) });
+  ({ variant: "body-sm/medium", color: "text-link", style: tmp2.helpLink, children: intl3.string(memo(stateFromStores[15]).t["2jxGer"]) });
   const Text = memo(stateFromStores[22]).Text;
   intl3 = memo(stateFromStores[15]).intl;
   return <tmp8 ImageComponent={null} title={intl.string(onTaskComplete(stateFromStores[16])["dSkE/A"])} subtitle={intl2.format(onTaskComplete(stateFromStores[17]).RpMIT0, obj5)} footer={null} submitting={loading}>{null}</tmp8>;

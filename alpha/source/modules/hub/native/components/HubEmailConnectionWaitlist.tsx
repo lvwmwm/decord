@@ -1,10 +1,10 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 14559
+// Function ID: 14560
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1499, 7682, 1113, 5837, 14480, 1187, 5747, 5754, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1499, 7698, 1113, 5851, 14560, 1187, 5761, 5768, 2]
 // Exports: default
 
-// Module 14479 (HubEmailConnectionWaitlist)
+// Module 14559 (HubEmailConnectionWaitlist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -53,20 +53,20 @@ export default function HubEmailConnectionWaitlist(onClose) {
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { source: navigation(14480), style: tmp.header };
-  const tmp4 = navigation(5837);
+  const obj3 = { source: navigation(14560), style: tmp.header };
+  const tmp4 = navigation(5851);
   items1 = [closure_5(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1113).t.OaloU5) };
   const LegacyText = onClose(1187).LegacyText;
   intl = onClose(1113).intl;
   items1[1] = closure_5(LegacyText, obj4);
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(onClose(1113).t.Rs7MXJ, { school }) };
-  const Text = onClose(5747).Text;
+  const obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.format(onClose(1113).t.Rs7MXJ, { school }) };
+  const Text = onClose(5761).Text;
   intl2 = onClose(1113).intl;
   items1[2] = closure_5(Text, obj5);
   const obj6 = { style: tmp.redesignButton, children: closure_5(Button, obj7) };
   obj7 = { size: "lg", text: intl3.string(onClose(1113).t.i4jeWR), onPress: onClose };
-  Button = onClose(5754).Button;
+  Button = onClose(5768).Button;
   intl3 = onClose(1113).intl;
   items1[3] = closure_5(View, obj6);
   return closure_6(View, obj2);

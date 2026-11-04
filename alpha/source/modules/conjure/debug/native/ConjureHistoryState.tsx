@@ -1,15 +1,15 @@
-// Module ID: 13165
-// Function ID: 13166
+// Module ID: 13248
+// Function ID: 13249
 // Name: ConjureHistoryState
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 3995, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 3995, 2]
 // Exports: ConjureHistoryNotice, ConjureHistoryPlaceholder
 
-// Module 13165 (ConjureHistoryState)
+// Module 13248 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -43,13 +43,13 @@ export function ConjureHistoryPlaceholder(state) {
     const intl = tmp5(1113).intl;
     emptyTitle = intl.string(_modDef3995.h1SE6R);
   }
-  items = [React3(Text, { variant: "text-sm/medium", color: "text-default", children: emptyTitle }), ];
-  const Text2 = tmp5(5747).Text;
+  items = [React3(Text, { variant: "body-sm/medium", color: "text-default", children: emptyTitle }), ];
+  const Text2 = tmp5(5761).Text;
   if ("failed" === state.state.status) {
     const intl2 = tmp5(1113).intl;
     emptyBody = intl2.string(_modDef3995["8SErdg"]);
   }
-  items[1] = React3(Text2, { variant: "text-xs/normal", color: "text-muted", children: emptyBody });
+  items[1] = React3(Text2, { variant: "body-xs/normal", color: "text-muted", children: emptyBody });
   return tmp2(tmp3, obj);
 }
 export function ConjureHistoryNotice(state) {
@@ -60,14 +60,14 @@ export function ConjureHistoryNotice(state) {
   if (state.hasRows) {
     let tmp2;
     if ("failed" === state.status) {
-      const obj2 = { variant: "text-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3995.h1SE6R) };
+      const obj2 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3995.h1SE6R) };
       const Text2 = Text_Text.Text;
       intl2 = intl3.intl;
       tmp2 = React3(Text2, obj2);
     } else {
       tmp2 = null;
       if (state.truncated) {
-        const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.string(_modDef3995.V7Ri8H) };
+        const obj = { variant: "body-xs/normal", color: "text-muted", children: intl.string(_modDef3995.V7Ri8H) };
         const Text = Text_Text.Text;
         intl = intl3.intl;
         tmp2 = React3(Text, obj);

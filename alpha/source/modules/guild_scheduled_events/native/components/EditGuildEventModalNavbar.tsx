@@ -1,15 +1,15 @@
-// Module ID: 9116
-// Function ID: 9117
+// Module ID: 9133
+// Function ID: 9134
 // Name: EditGuildEventModalNavbar
-// Dependencies: [32, 19, 17, 21, 5141, 9096, 1380, 7412, 5747, 1113, 7682, 8483, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 9113, 1380, 7428, 5761, 1113, 7698, 8499, 2]
 // Exports: default
 
-// Module 9116 (EditGuildEventModalNavbar)
+// Module 9133 (EditGuildEventModalNavbar)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8483 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9096 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8499 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9113 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -49,15 +49,15 @@ export default function EditGuildEventModalNavbar(screen) {
   const obj = { top: true, style: tmp.header, children: items1 };
   const obj2 = { style: tmp.buttonContainer };
   _slicedToArray(items, 2);
-  const SafeAreaPaddingView = tmp2(7412).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(7428).SafeAreaPaddingView;
   items1 = [hasOwnProperty(View, obj2), , ];
   const obj3 = { style: tmp.headerTitle, variant: "body-sm/medium", color: "text-default", children: intl.format(intl3.t["42HaFY"], { step: tmp6, total: tmp7 }) };
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
   items1[1] = hasOwnProperty(Text, obj3);
   const obj4 = { style: tmp.buttonContainer, children: hasOwnProperty(HeaderActionButton, obj5) };
   obj5 = { accessibilityLabel: intl2.string(intl3.t.cpT0Cq), onPress: onClose, source: AssetRegistryDefault, style: tmp.rightButton };
-  HeaderActionButton = tmp2(7682).HeaderActionButton;
+  HeaderActionButton = tmp2(7698).HeaderActionButton;
   intl2 = tmp2(1113).intl;
   items1[2] = hasOwnProperty(View, obj4);
   return metroRequire(SafeAreaPaddingView, obj);

@@ -1,18 +1,18 @@
-// Module ID: 18032
-// Function ID: 18033
+// Module ID: 18129
+// Function ID: 18130
 // Name: SettingsSecureFramesScreen
-// Dependencies: [19, 17, 1385, 1072, 21, 5141, 575, 504, 18033, 5195, 8876, 7446, 8874, 7101, 1187, 1113, 7110, 5719, 1499, 18031, 5747, 7414, 9393, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5141, 575, 504, 18130, 5195, 8893, 7462, 8891, 7116, 1187, 1113, 7125, 5732, 1499, 18128, 5761, 7430, 9410, 2]
 // Exports: default
 
-// Module 18032 (SettingsSecureFramesScreen)
+// Module 18129 (SettingsSecureFramesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import UserActionCreators from "UserActionCreators" /* 8876 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9393 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import UserActionCreators from "UserActionCreators" /* 8893 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9410 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -110,7 +110,7 @@ function SettingsSecureFramesFooter() {
   let tmp8 = null;
   if (0 !== secureFramesVerifiedUserIds.length) {
     const obj4 = { style: tmp.list, children: items2 };
-    const obj5 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(navigation(secureFramesVerifiedUserIds[15]).t["5b3FNI"]) };
+    const obj5 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(navigation(secureFramesVerifiedUserIds[15]).t["5b3FNI"]) };
     const Text = tmp2(tmp3[20]).Text;
     intl = tmp2(tmp3[15]).intl;
     items2 = [closure_7(Text, obj5), , ];
@@ -118,7 +118,7 @@ function SettingsSecureFramesFooter() {
     obj7 = { minHeight: secureFramesVerifiedUserIds.length * token };
     obj8 = { keyExtractor, getItemType, renderItem, data: tmp7 };
     items2[1] = closure_7(View, obj6);
-    const obj9 = { variant: "text-xs/normal", color: "text-default", children: format(v7w9ymD, obj10) };
+    const obj9 = { variant: "body-xs/normal", color: "text-default", children: format(v7w9ymD, obj10) };
     const Text2 = tmp2(tmp3[20]).Text;
     const intl2 = tmp2(tmp3[15]).intl;
     format = intl2.format;
@@ -154,11 +154,11 @@ export default function SettingsSecureFramesScreen() {
   const tmp = closure_9();
   const obj = { style: tmp.container, children: items1 };
   const obj2 = { style: tmp.header, children: items };
-  const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9Q/PQv"]) };
+  const obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t["9Q/PQv"]) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [metroImportDefault(Text, obj3), ];
-  const obj4 = { variant: "text-sm/normal", color: "text-default", children: format(v8IwQfG, obj5) };
+  const obj4 = { variant: "body-sm/normal", color: "text-default", children: format(v8IwQfG, obj5) };
   const Text2 = Text_Text.Text;
   const intl2 = intl3.intl;
   format = intl2.format;

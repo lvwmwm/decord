@@ -1,17 +1,17 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 12659
+// Function ID: 12660
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 5141, 575, 12515, 11639, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 12596, 11690, 5761, 1113, 2]
 // Exports: default
 
-// Module 12578 (EmptyState)
+// Module 12659 (EmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11639 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12515 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11690 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12596 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ export default function EmptyState() {
   const tmp = closure_4();
   const obj = AppLauncherNativeUtils;
   const logAppLauncherEmptyStateView = obj.useLogAppLauncherEmptyStateView(AppLauncherTypes.AppLauncherEmptyStateType.HOME_EMPTY);
-  ({ style: tmp.textContainer, variant: "text-md/semibold", color: "text-default", children: intl.string(intl2.t["V7+xhH"]) });
+  ({ style: tmp.textContainer, variant: "body-md/semibold", color: "text-default", children: intl.string(intl2.t["V7+xhH"]) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <View style={tmp.container}>{null}</View>;

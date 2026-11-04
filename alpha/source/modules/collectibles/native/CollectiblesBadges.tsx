@@ -1,18 +1,18 @@
-// Module ID: 9654
-// Function ID: 9655
+// Module ID: 9673
+// Function ID: 9674
 // Name: CollectiblesBadges
-// Dependencies: [19, 17, 1387, 21, 5141, 575, 5747, 1113, 9655, 8791, 9656, 2]
+// Dependencies: [19, 17, 1387, 21, 5141, 575, 5761, 1113, 9674, 8808, 9675, 2]
 // Exports: IconBadgePill, IconTextBadge, LimitedTimeBadge, LockBadge, NewBadge, PremiumBadge
 
-// Module 9654 (CollectiblesBadges)
+// Module 9673 (CollectiblesBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LockIcon3 from "LockIcon" /* 8791 */;
-import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9655 */;
-import NitroWheelIcon3 from "NitroWheelIcon" /* 9656 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LockIcon3 from "LockIcon" /* 8808 */;
+import PremiumFeaturesBackgroundDefault from "PremiumFeaturesBackground" /* 9674 */;
+import NitroWheelIcon3 from "NitroWheelIcon" /* 9675 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -50,7 +50,7 @@ export function NewBadge(style) {
   const tmp = closure_7();
   const obj = { style: items, children: hasOwnProperty(Text, obj2) };
   items = [tmp.newIconBadge, style];
-  obj2 = { variant: "text-sm/semibold", color: "text-overlay-light", style: tmp.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
+  obj2 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
   Text = Text_Text.Text;
   intl = intl2.intl;
   return hasOwnProperty(View, obj);
@@ -76,7 +76,7 @@ export function LockBadge(isNew) {
     const tmp11 = PremiumFeaturesBackgroundDefault;
     const LockIcon2 = LockIcon3.LockIcon;
     items1 = [hasOwnProperty(LockIcon2, obj3), ];
-    const obj4 = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
+    const obj4 = { variant: "body-xs/semibold", color: "text-overlay-light", style: tmp.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
     const Text = Text_Text.Text;
     intl = intl2.intl;
     items1[1] = hasOwnProperty(Text, obj4);
@@ -111,7 +111,7 @@ export function PremiumBadge(isNew) {
     const tmp11 = PremiumFeaturesBackgroundDefault;
     const NitroWheelIcon2 = NitroWheelIcon3.NitroWheelIcon;
     items1 = [hasOwnProperty(NitroWheelIcon2, obj3), ];
-    const obj4 = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
+    const obj4 = { variant: "body-xs/semibold", color: "text-overlay-light", style: tmp.badgeTextUppercase, children: intl.string(intl2.t.y2b7CA) };
     const Text = Text_Text.Text;
     intl = intl2.intl;
     items1[1] = hasOwnProperty(Text, obj4);
@@ -134,7 +134,7 @@ export function LimitedTimeBadge(style) {
   const tmp = closure_7();
   const obj = { style: items, children: hasOwnProperty(Text, obj2) };
   items = [tmp.limitedTimeBadge, style];
-  obj2 = { variant: "text-xs/semibold", color: "text-overlay-dark", style: tmp.badgeTextUppercase, children: intl.string(intl2.t["h/uBCR"]) };
+  obj2 = { variant: "body-xs/semibold", color: "text-overlay-dark", style: tmp.badgeTextUppercase, children: intl.string(intl2.t["h/uBCR"]) };
   Text = Text_Text.Text;
   intl = intl2.intl;
   return hasOwnProperty(View, obj);
@@ -178,7 +178,7 @@ export function IconTextBadge(isDark) {
   if (isDark) {
     str2 = "text-overlay-dark";
   }
-  const obj2 = { variant: "text-xs/semibold", color: str2, style: tmp.badgeTextUppercase, children: label };
+  const obj2 = { variant: "body-xs/semibold", color: str2, style: tmp.badgeTextUppercase, children: label };
   items1[1] = hasOwnProperty(Text, obj2);
   return tmp2(tmp3, obj);
 }

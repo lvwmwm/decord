@@ -1,31 +1,31 @@
-// Module ID: 19569
-// Function ID: 19570
+// Module ID: 19673
+// Function ID: 19674
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 4994, 4990, 6962, 2122, 7782, 1072, 6957, 6916, 5012, 3, 1089, 510, 10340, 1377, 572, 1242, 1252, 5019, 1282, 11, 12, 7919, 7922, 7920, 15703, 17714, 7780, 1380, 7790, 2]
+// Dependencies: [32, 5, 4994, 4990, 6977, 2122, 7798, 1072, 6972, 6931, 5012, 3, 1089, 510, 10388, 1377, 572, 1242, 1252, 5019, 1282, 11, 12, 7935, 7938, 7936, 15791, 17810, 7796, 1380, 7806, 2]
 // Exports: backgroundSync
 
-// Module 19569 (background_sync/BackgroundSync)
+// Module 19673 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 5019 */;
-import modules_Messages from "modules/Messages" /* 7780 */;
-import GuildVersionsDefault from "GuildVersions" /* 7919 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7920 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7922 */;
+import modules_Messages from "modules/Messages" /* 7796 */;
+import GuildVersionsDefault from "GuildVersions" /* 7935 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7936 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7938 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import AppStateStore from "AppStateStore" /* 2122 */;
-import FileSystemStore from "FileSystemStore" /* 7782 */;
+import FileSystemStore from "FileSystemStore" /* 7798 */;
 import Constants from "Constants" /* 1072 */;
-import StickersStore from "StickersStore" /* 6957 */;
+import StickersStore from "StickersStore" /* 6972 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 

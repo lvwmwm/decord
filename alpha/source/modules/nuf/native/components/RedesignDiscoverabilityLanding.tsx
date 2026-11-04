@@ -1,18 +1,18 @@
-// Module ID: 19726
-// Function ID: 19727
+// Module ID: 19842
+// Function ID: 19843
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 5141, 575, 1627, 5709, 5747, 1113, 19727, 14382, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1627, 5722, 5761, 1113, 19843, 14462, 5768, 2]
 // Exports: default
 
-// Module 19726 (RedesignDiscoverabilityLanding)
+// Module 19842 (RedesignDiscoverabilityLanding)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14382 */;
-import LanternSpotIllustration from "LanternSpotIllustration" /* 19727 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14462 */;
+import LanternSpotIllustration from "LanternSpotIllustration" /* 19843 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -61,20 +61,20 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   let Text = Text_Text.Text;
   intl = intl6.intl;
   items[1] = hasOwnProperty(Text, obj4);
-  const obj5 = { variant: "text-sm/medium", color: "text-default", style: tmp.subtitle, children: intl2.string(intl6.t.KMW0kP) };
+  const obj5 = { variant: "body-sm/medium", color: "text-default", style: tmp.subtitle, children: intl2.string(intl6.t.KMW0kP) };
   const Text2 = Text_Text.Text;
   intl2 = intl6.intl;
   items[2] = hasOwnProperty(Text2, obj5);
   const obj6 = { style: tmp.illustration, children: hasOwnProperty(LanternSpotIllustration.LanternSpotIllustration, { accessible: false }) };
   items[3] = hasOwnProperty(_false, obj6);
-  const obj7 = { style: tmp.info, variant: "text-sm/medium", color: "text-default", children: items1 };
+  const obj7 = { style: tmp.info, variant: "body-sm/medium", color: "text-default", children: items1 };
   const Text3 = Text_Text.Text;
   const intl3 = intl6.intl;
   items1 = [intl3.string(intl6.t.ci12MJ), " ", ];
   const intl4 = intl6.intl;
   const obj8 = {
     learnMoreHook: function LearnMore(children, arg1) {
-      const obj = { onPress: ContactSyncUtils.handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
+      const obj = { onPress: ContactSyncUtils.handleOpenLearnMoreLink, variant: "body-sm/medium", color: "text-link", children };
       const Text = Text_Text.Text;
       return closure_1_5(Text, obj, arg1);
     }

@@ -1,13 +1,13 @@
-// Module ID: 14752
-// Function ID: 14753
+// Module ID: 14832
+// Function ID: 14833
 // Name: Checkbox
-// Dependencies: [17, 21, 5141, 5209, 1113, 6147, 7115, 5747, 2]
+// Dependencies: [17, 21, 5141, 5208, 1113, 6162, 7130, 5761, 2]
 // Exports: Checkbox
 
-// Module 14752 (Checkbox)
+// Module 14832 (Checkbox)
 import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 5209 */;
-import FormCheckbox from "FormCheckbox" /* 7115 */;
+import react_native from "react-native" /* 5208 */;
+import FormCheckbox from "FormCheckbox" /* 7130 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -64,15 +64,15 @@ export function Checkbox(onToggle) {
     const _HermesInternal2 = HermesInternal;
     str = ", " + description;
   }
-  Stack = tmp2(6147).Stack;
+  Stack = tmp2(6162).Stack;
   const items = [React3(FormCheckbox.FormCheckbox, { checked }), ];
   const obj3 = { style: tmp.textContainer, children: items2 };
-  const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "text-md/medium", children: items1 }) };
+  const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "body-md/medium", children: items1 }) };
   items1 = [label, ];
-  Text = tmp2(5747).Text;
+  Text = tmp2(5761).Text;
   if (required) {
-    const obj5 = { variant: "text-md/semibold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-    const Text2 = tmp2(5747).Text;
+    const obj5 = { variant: "body-md/semibold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
+    const Text2 = tmp2(5761).Text;
     intl2 = tmp2(1113).intl;
     required = tmp10(Text2, obj5);
   }
@@ -80,8 +80,8 @@ export function Checkbox(onToggle) {
   items2 = [React3(_false, obj4), ];
   let tmp5Result = null != description;
   if (tmp5Result) {
-    const obj6 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp5Result = tmp5(tmp2(5747).Text, obj6);
+    const obj6 = { variant: "body-sm/normal", color: "text-subtle", children: description };
+    tmp5Result = tmp5(tmp2(5761).Text, obj6);
   }
   obj7 = { direction: "horizontal", children: items };
   items2[1] = tmp5Result;

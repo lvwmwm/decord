@@ -1,20 +1,20 @@
-// Module ID: 11064
-// Function ID: 11065
+// Module ID: 11113
+// Function ID: 11114
 // Name: restartFrames
-// Dependencies: [6966, 6967, 11065, 2]
+// Dependencies: [6981, 6982, 11114, 2]
 // Exports: restartAppFrames
 
-// Module 11064 (restartFrames)
-import FramesConstants from "FramesConstants" /* 6967 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11065 */;
-import FramesStore from "FramesStore" /* 6966 */;
+// Module 11113 (restartFrames)
+import FramesConstants from "FramesConstants" /* 6982 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11114 */;
+import FramesStore from "FramesStore" /* 6981 */;
 import size from "module_2" /* 2 */;
 
-function restartFrame(data) {
-  const tmp = isLaunched(data) && !data.data.proxyTicketRefreshing;
+function restartFrame(frame) {
+  const tmp = isLaunched(frame) && !frame.data.proxyTicketRefreshing;
   if (tmp) {
     const obj = FramesActionCreatorsDefault;
-    const refreshProxyTicketResult = obj.refreshProxyTicket(data.id);
+    const refreshProxyTicketResult = obj.refreshProxyTicket(frame.id);
     refreshProxyTicketResult.catch(() => {
 
     });

@@ -1,16 +1,16 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 15682
+// Function ID: 15683
 // Name: GiftCodeRow
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 5207, 11509, 6564, 9059, 7223, 5747, 5754, 1113, 2171, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5207, 11559, 6579, 9076, 7243, 5761, 5768, 1113, 2171, 1187, 2]
 
-// Module 15595 (GiftCodeRow)
+// Module 15682 (GiftCodeRow)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import native2 from "native" /* 5207 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6564 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 9059 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11509 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6579 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 9076 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11559 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -100,7 +100,7 @@ class GiftCodeRow extends PureComponent {
     obj3 = { children: closure_7(closure_3, obj4) };
     obj4 = { style: tmp.giftCodeInputContent, children: items1 };
     InputFieldContainer = giftCode(self[10]).InputFieldContainer;
-    const obj5 = { variant: "text-sm/normal", style: tmp.codeText, lineClamp: 1, children: obj6.getGiftCodeURL(giftCode.code) };
+    const obj5 = { variant: "body-sm/normal", style: tmp.codeText, lineClamp: 1, children: obj6.getGiftCodeURL(giftCode.code) };
     const Text = giftCode(self[11]).Text;
     obj6 = giftCode(self[8]);
     items1 = [closure_6(Text, obj5), ];
@@ -115,7 +115,7 @@ class GiftCodeRow extends PureComponent {
     const obj9 = { style: tmp.subTextRow, children: tmp5Result };
     tmp5Result = null;
     if (null != giftCode.expiresAt) {
-      const obj10 = { variant: "text-xs/normal", color: "text-subtle", children: format(b1BfWD, obj11) };
+      const obj10 = { variant: "body-xs/normal", color: "text-subtle", children: format(b1BfWD, obj11) };
       const Text2 = tmp6(tmp7[11]).Text;
       const intl2 = tmp6(tmp7[13]).intl;
       format = intl2.format;

@@ -1,39 +1,39 @@
-// Module ID: 12149
-// Function ID: 12150
+// Module ID: 12208
+// Function ID: 12209
 // Name: StageActionHeader
-// Dependencies: [19, 17, 6963, 4990, 7006, 5012, 4995, 12012, 1072, 21, 5141, 5709, 5138, 575, 1252, 5880, 11349, 6864, 8063, 504, 12033, 12150, 1113, 5879, 1187, 5772, 6885, 6879, 5710, 5747, 8320, 8298, 12151, 12152, 8065, 9218, 11111, 11110, 9246, 12014, 12015, 12016, 12019, 12153, 12154, 2]
+// Dependencies: [19, 17, 6978, 4990, 7021, 5012, 4995, 12071, 1072, 21, 5141, 5722, 5138, 575, 1252, 5894, 11399, 6879, 8079, 504, 12092, 12209, 1113, 5893, 1187, 5786, 6900, 6894, 5723, 5761, 8336, 8314, 12210, 12211, 8081, 9235, 11159, 11158, 9263, 12073, 12074, 12075, 12078, 12212, 12213, 2]
 // Exports: HideChannelCallButton, closeStageModal
 
-// Module 12149 (StageActionHeader)
+// Module 12208 (StageActionHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import useChannelNameDefault from "useChannelName" /* 5772 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5879 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8063 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8065 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8298 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8320 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9246 */;
-import StatusBarDefault from "StatusBar" /* 11349 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 12019 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12033 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12150 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12151 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 12152 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 12153 */;
-import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 12154 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import useChannelNameDefault from "useChannelName" /* 5786 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8079 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8081 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8314 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8336 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9263 */;
+import StatusBarDefault from "StatusBar" /* 11399 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 12078 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 12092 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12209 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12210 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 12211 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 12212 */;
+import ChannelCallHeaderButtons from "ChannelCallHeaderButtons" /* 12213 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6963 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7006 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7021 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import StageInstanceStore from "StageInstanceStore" /* 4995 */;
-import StageMusicStore from "StageMusicStore" /* 12012 */;
+import StageMusicStore from "StageMusicStore" /* 12071 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -100,9 +100,9 @@ class StageChannelCallHeader {
     const items1 = [channel.id];
     const obj = channel(504);
     const stateFromStores = obj.useStateFromStores(items, () => StageInstanceStore.getStageInstanceByChannel(channel.id), items1);
-    const obj2 = channel(6885);
-    const stageParticipantsCount = obj2.useStageParticipantsCount(channel.id, channel(6879).StageChannelParticipantNamedIndex.AUDIENCE);
-    const obj3 = channel(6885);
+    const obj2 = channel(6900);
+    const stageParticipantsCount = obj2.useStageParticipantsCount(channel.id, channel(6894).StageChannelParticipantNamedIndex.AUDIENCE);
+    const obj3 = channel(6900);
     const actualStageSpeakerCount = obj3.useActualStageSpeakerCount(channel.id);
     const items2 = [ChannelRTCStore];
     const obj5 = { pointerEvents: "none", style: tmp.leftTitleContainer, children: items4 };
@@ -111,18 +111,18 @@ class StageChannelCallHeader {
     let tmp11 = null == obj4.useStateFromStores(items2, () => ChannelRTCStore.getSelectedParticipant(channel.id));
     if (tmp11) {
       const obj7 = { style: tmp.linearGradient, colors: ["#00000000", "#000000"], start: { x: 0.85, y: 0 }, end: { x: 1, y: 0 } };
-      tmp11 = closure_12(tmp2(5710), obj7);
+      tmp11 = closure_12(tmp2(5723), obj7);
     }
     items3 = [tmp11, ];
     let topic;
-    const Text = tmp5(5747).Text;
+    const Text = tmp5(5761).Text;
     if (stateFromStores != null) {
       topic = stateFromStores.topic;
     }
     if (topic == null) {
       topic = tmp4;
     }
-    items3[1] = closure_12(Text, { color: "text-overlay-light", variant: "text-md/semibold", children: topic });
+    items3[1] = closure_12(Text, { color: "text-overlay-light", variant: "body-md/semibold", children: topic });
     items4 = [closure_13(View, obj6), ];
     let tmp9Result = null != stateFromStores;
     if (tmp9Result) {
@@ -130,18 +130,18 @@ class StageChannelCallHeader {
       const obj9 = { source: AssetRegistryDefault2, size: channel(1187).Icon.Sizes.SMALL, disableColor: true };
       const Icon = tmp5(1187).Icon;
       items5 = [closure_12(Icon, obj9), , , , , ];
-      const obj10 = { variant: "text-xs/normal", style: tmp.stageInfoTopic, children: tmp4 };
-      items5[1] = closure_12(channel(5747).Text, obj10);
+      const obj10 = { variant: "body-xs/normal", style: tmp.stageInfoTopic, children: tmp4 };
+      items5[1] = closure_12(channel(5761).Text, obj10);
       const obj11 = { source: AssetRegistryDefault, size: channel(1187).Icon.Sizes.SMALL, style: tmp.icon };
       const Icon2 = tmp5(1187).Icon;
       items5[2] = closure_12(Icon2, obj11);
-      const obj12 = { variant: "text-xs/normal", children: actualStageSpeakerCount };
-      items5[3] = closure_12(channel(5747).Text, obj12);
+      const obj12 = { variant: "body-xs/normal", children: actualStageSpeakerCount };
+      items5[3] = closure_12(channel(5761).Text, obj12);
       const obj13 = { source: AssetRegistryDefault4, size: channel(1187).Icon.Sizes.SMALL, style: tmp.icon };
       const Icon3 = tmp5(1187).Icon;
       items5[4] = closure_12(Icon3, obj13);
-      const obj14 = { variant: "text-xs/normal", children: stageParticipantsCount };
-      items5[5] = closure_12(channel(5747).Text, obj14);
+      const obj14 = { variant: "body-xs/normal", children: stageParticipantsCount };
+      items5[5] = closure_12(channel(5761).Text, obj14);
       tmp9Result = tmp9(tmp10, obj8);
     }
     items4[1] = tmp9Result;
@@ -242,7 +242,7 @@ class MusicMuteButton {
     const items = [StageMusicStore];
     stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
     let tmp6Result = null;
-    const obj2 = stateFromStores(12014);
+    const obj2 = stateFromStores(12073);
     if (obj2.useShowStageMusicMuteButton(channelId)) {
       let stringResult;
       const tmp8 = ChannelCallNavigatorIconDefault;
@@ -259,7 +259,7 @@ class MusicMuteButton {
       const obj3 = {
         accessibilityLabel: stringResult,
         containerStyle: tmp.iconBackground,
-        source: tmp7(stateFromStores ? 12015 : 12016),
+        source: tmp7(stateFromStores ? 12074 : 12075),
         onPress() {
             const obj = StageMusicActionCreators;
             return obj.updateStageMusicMuted(!stateFromStores);

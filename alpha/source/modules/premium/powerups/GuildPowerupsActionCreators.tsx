@@ -1,15 +1,15 @@
-// Module ID: 14195
-// Function ID: 14196
+// Module ID: 14281
+// Function ID: 14282
 // Name: GuildPowerupsActionCreators
-// Dependencies: [5353, 1072, 572, 14196, 6575, 1282, 14197, 1380, 2]
+// Dependencies: [5354, 1072, 572, 14282, 6590, 1282, 14283, 1380, 2]
 // Exports: disablePowerupForGuild, enablePowerupForGuild, fetchGuildBoostEntitlements, fetchPowerupCatalogForGuild, guildPowerupsAckNotification, guildPowerupsResetNotifications
 
-// Module 14195 (GuildPowerupsActionCreators)
+// Module 14281 (GuildPowerupsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5353 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5354 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ export function guildPowerupsResetNotifications() {
 }
 export function fetchPowerupCatalogForGuild(guildId, arg1) {
   let obj3;
-  let obj6;
+  let obj4;
   let sorted;
   _require = guildId;
   if (true === arg1) {
@@ -61,11 +61,11 @@ export function fetchPowerupCatalogForGuild(guildId, arg1) {
     });
     dispatch(obj2);
   } else {
-    const request = { url: Endpoints.STORE_PUBLISHED_LISTINGS_SKUS, query: obj3, oldFormErrors: true, rejectWithError: obj6.rejectWithMigratedError() };
-    obj3 = { application_id, guild_id: guildId };
+    const request = { url: Endpoints.STORE_PUBLISHED_LISTINGS_SKUS, query: obj4, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
+    obj4 = { application_id, guild_id: guildId };
     const httpGetWithCountryCodeQuery = require("StoreUtils").httpGetWithCountryCodeQuery;
     require("StoreUtils");
-    obj6 = require("HTTPUtils");
+    obj3 = require("HTTPUtils");
     const result = httpGetWithCountryCodeQuery(request);
     return result.then((body) => {
       let allPowerups;

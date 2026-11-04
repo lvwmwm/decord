@@ -1,7 +1,7 @@
 // Module ID: 4989
 // Function ID: 4990
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 4990, 5044, 1385, 2147, 5777, 1072, 5778, 5779, 5062, 5792, 5796, 1108, 5797, 572, 5798, 5802, 1377, 2121, 5803, 504, 2]
+// Dependencies: [32, 502, 4990, 5044, 1385, 2147, 5791, 1072, 5792, 5793, 5062, 5806, 5810, 1108, 5811, 572, 5812, 5816, 1377, 2121, 5817, 504, 2]
 
 // Module 4989 (EmbeddedActivitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,18 +9,18 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import Server from "Server" /* 2121 */;
 import Constants2 from "Constants" /* 2147 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5062 */;
-import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 5778 */;
-import ContentClassificationReference from "ContentClassificationReference" /* 5779 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 5792 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5798 */;
-import getPlatformDefault from "getPlatform" /* 5802 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5803 */;
+import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 5792 */;
+import ContentClassificationReference from "ContentClassificationReference" /* 5793 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5806 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5812 */;
+import getPlatformDefault from "getPlatform" /* 5816 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import UserStore from "UserStore" /* 1385 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5777 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let embeddedActivitiesForLocationIncludingHidden, importDefault, set3;
 let c10;
 let set1;
 let unpackModuleId;
-const f86991 = (item) => {
+const f87326 = (item) => {
   closure_1_34(item);
 };
 function participantFromServer(userId) {
@@ -257,7 +257,7 @@ function updateEmbeddedActivities(content_classification) {
                   const ComponentDispatch2 = tmp70(1108).ComponentDispatch;
                   const obj8 = { location: _location, applicationId: application_id, isFirstActivityInChannel: tmp39, isStart: tmp72, participants: mapped, embeddedActivity: obj7, inviterUserId };
                   ComponentDispatch2.dispatch(constants.OPEN_EMBEDDED_ACTIVITY, obj8);
-                  application_id(5797);
+                  application_id(5811);
                   if (true === renderInFramePool) {
                     let PIP = ActivityPanelModes.DISCONNECTED;
                   } else if (tmp46) {
@@ -750,7 +750,7 @@ const obj2 = {
     let item = guilds.forEach((activity_instances) => {
       activity_instances = activity_instances.activity_instances;
       if (activity_instances != null) {
-        const item = activity_instances.forEach(f86991);
+        const item = activity_instances.forEach(f87326);
       }
     });
     id = AuthenticationStore.getId();
@@ -780,7 +780,7 @@ const obj2 = {
   GUILD_CREATE: function handleGuildCreate(guild) {
     const activity_instances = guild.guild.activity_instances;
     if (activity_instances != null) {
-      const item = activity_instances.forEach(f86991);
+      const item = activity_instances.forEach(f87326);
     }
   },
   CHANNEL_DELETE: function handleChannelDelete(channel) {

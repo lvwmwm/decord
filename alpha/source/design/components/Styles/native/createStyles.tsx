@@ -1,7 +1,7 @@
 // Module ID: 5141
 // Function ID: 5142
 // Name: createStyles
-// Dependencies: [32, 17, 5142, 5165, 5207, 1377, 575, 5309, 1652, 5377, 5380, 5373, 2]
+// Dependencies: [32, 17, 5142, 5165, 5207, 1377, 575, 5310, 1652, 5378, 5381, 5374, 2]
 // Exports: createAnimatedThemedStyles, createLegacyClassComponentStyles, createNativeStyleProperties, createStyleProperties, createStyles, experimental_createToken, processColorOrThrow, useLegacyClassComponentStyles
 
 // Module 5141 (createStyles)
@@ -9,8 +9,8 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import native from "native" /* 5207 */;
-import SemanticColorContext from "SemanticColorContext" /* 5309 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5373 */;
+import SemanticColorContext from "SemanticColorContext" /* 5310 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5374 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5165 */;

@@ -1,17 +1,17 @@
-// Module ID: 16643
-// Function ID: 16644
+// Module ID: 16733
+// Function ID: 16734
 // Name: UserProfileEffectEditButton
-// Dependencies: [19, 17, 7497, 9622, 1083, 21, 5141, 575, 8861, 11524, 5381, 16644, 2123, 1113, 16623, 7080, 5837, 14562, 9625, 1187, 15217, 2]
+// Dependencies: [19, 17, 7513, 9641, 1083, 21, 5141, 575, 8878, 11574, 5382, 16734, 2123, 1113, 16713, 7095, 5851, 14642, 9644, 1187, 15300, 2]
 // Exports: default
 
-// Module 16643 (UserProfileEffectEditButton)
+// Module 16733 (UserProfileEffectEditButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Constants2 from "Constants" /* 7497 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9622 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Constants2 from "Constants" /* 7513 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9641 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -93,7 +93,7 @@ export default function UserProfileEffectEditButton(isTryItOut) {
   const callback = userProfileEffect.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { user, currentProfileEffect: userProfileEffect, guildId, isTryItOut };
-    obj.openLazy(asyncRequire(16644, dependencyMap.paths), "Profile Effect", obj2);
+    obj.openLazy(asyncRequire(16734, dependencyMap.paths), "Profile Effect", obj2);
   }, items);
   if (product != null) {
     name = product.name;

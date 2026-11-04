@@ -1,18 +1,18 @@
-// Module ID: 16943
-// Function ID: 16944
+// Module ID: 17035
+// Function ID: 17036
 // Name: FamilyCenterTopActivity
-// Dependencies: [19, 17, 1385, 7839, 21, 5141, 575, 563, 5381, 16944, 2123, 16945, 9237, 1113, 2667, 5747, 1187, 7083, 2]
+// Dependencies: [19, 17, 1385, 7855, 21, 5141, 575, 563, 5382, 17036, 2123, 17037, 9254, 1113, 2667, 5761, 1187, 7098, 2]
 // Exports: default
 
-// Module 16943 (FamilyCenterTopActivity)
+// Module 17035 (FamilyCenterTopActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7839 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7855 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ export default function FamilyCenterTopActivity() {
   const callback = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { topUserActivities: stateFromStores };
-    obj.openLazy(asyncRequire(16944, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
+    obj.openLazy(asyncRequire(17036, dependencyMap.paths), "FamilyCenterTopUsers", obj2);
   }, items2);
   if (0 !== stateFromStores.length) {
     let tmp9 = stateFromStores.length > 0;
@@ -76,7 +76,7 @@ export default function FamilyCenterTopActivity() {
       obj5 = { style: tmp.touchableHitBox, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(stateFromStores(stateFromStores1[14]).BxbvS7), children: items3 };
       tmp12 = stateFromStores(stateFromStores1[12]);
       intl = tmp2(tmp3[13]).intl;
-      const obj6 = { variant: "text-sm/semibold", children: intl2.string(stateFromStores(stateFromStores1[14]).BxbvS7) };
+      const obj6 = { variant: "body-sm/semibold", children: intl2.string(stateFromStores(stateFromStores1[14]).BxbvS7) };
       const Text = tmp2(tmp3[15]).Text;
       intl2 = tmp2(tmp3[13]).intl;
       items3 = [closure_7(Text, obj6), ];
@@ -103,7 +103,7 @@ export default function FamilyCenterTopActivity() {
       obj9 = { style: tmp.touchableHitBox, onPress: tmp5, accessibilityRole: "button", accessibilityLabel: intl3.string(stateFromStores(stateFromStores1[14]).Lq9Set), children: items5 };
       tmp16 = stateFromStores(stateFromStores1[12]);
       intl3 = tmp2(tmp3[13]).intl;
-      const obj10 = { variant: "text-sm/semibold", children: intl4.string(stateFromStores(stateFromStores1[14]).Lq9Set) };
+      const obj10 = { variant: "body-sm/semibold", children: intl4.string(stateFromStores(stateFromStores1[14]).Lq9Set) };
       const Text2 = tmp2(tmp3[15]).Text;
       intl4 = tmp2(tmp3[13]).intl;
       items5 = [closure_7(Text2, obj10), ];

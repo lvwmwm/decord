@@ -1,14 +1,14 @@
-// Module ID: 19290
-// Function ID: 19291
+// Module ID: 19394
+// Function ID: 19395
 // Name: ActivityPanelUI
-// Dependencies: [19, 17, 5777, 21, 19291, 19296, 19309, 5734, 5207, 19310, 19289, 2]
+// Dependencies: [19, 17, 5791, 21, 19395, 19400, 19413, 5748, 5207, 19414, 19393, 2]
 // Exports: default
 
-// Module 19290 (ActivityPanelUI)
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5777 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19289 */;
-import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19309 */;
-import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 19310 */;
+// Module 19394 (ActivityPanelUI)
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19393 */;
+import useIsConnectedToVoiceChannelDefault from "useIsConnectedToVoiceChannel" /* 19413 */;
+import ActivityPanelSystemUIManagerDefault from "ActivityPanelSystemUIManager" /* 19414 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,9 +25,9 @@ function renderActivityOrPIP(arg0, arg1, transitionState, transitionCleanUp) {
   const tmp = metroImportDefault;
   const tmp2 = importDefault;
   if ("pip" === arg1) {
-    tmp4 = 19291;
+    tmp4 = 19395;
   } else {
-    tmp4 = 19296;
+    tmp4 = 19400;
   }
   const obj = { transitionState, transitionCleanUp };
   return tmp(tmp2(tmp4), obj, arg0);
@@ -60,7 +60,7 @@ class BaseActivityPanelUI {
       tmp4 = closure_12;
     }, items);
     const obj = { children: items1 };
-    const LayerScope = mode(5734).LayerScope;
+    const LayerScope = mode(5748).LayerScope;
     items1 = [renderActivityPanelSystemUIManager(), ];
     const obj2 = { items: memo, renderItem: renderActivityOrPIP, getItemKey: getKey, wrapChildren };
     items1[1] = closure_7(mode(5207).TransitionGroup, obj2);

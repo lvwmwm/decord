@@ -1,18 +1,18 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 16913
+// Function ID: 16914
 // Name: PasskeyInitStep
-// Dependencies: [5, 32, 19, 17, 16724, 1072, 21, 5141, 575, 504, 16822, 5747, 1113, 6887, 8152, 5858, 16814, 6078, 1187, 16826, 5381, 16827, 2123, 10362, 7186, 7101, 16828, 1499, 6868, 7244, 7682, 8301, 2]
+// Dependencies: [5, 32, 19, 17, 16816, 1072, 21, 5141, 575, 504, 16914, 5761, 1113, 6902, 8168, 5872, 16906, 6093, 1187, 16918, 5382, 16919, 2123, 10410, 7201, 7116, 16920, 1499, 6883, 7264, 7698, 8317, 2]
 // Exports: default
 
-// Module 16821 (PasskeyInitStep)
+// Module 16913 (PasskeyInitStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6868 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6883 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16724 */;
+import WebAuthnStore from "WebAuthnStore" /* 16816 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -53,9 +53,9 @@ function CredentialList(navigation) {
     let tmp7 = View;
     let obj2 = { style: tmp3.upsellContainer, children: items1 };
     let tmp8 = closure_9;
-    items1 = [closure_9(tmp(16822).PasskeysSpotIllustration, { scale: 0.6 }), ];
-    let obj3 = { variant: "text-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1113).t.FSNwFW) };
-    const Text = tmp(5747).Text;
+    items1 = [closure_9(tmp(16914).PasskeysSpotIllustration, { scale: 0.6 }), ];
+    let obj3 = { variant: "body-md/normal", style: tmp3.upsellText, children: intl2.string(tmp(1113).t.FSNwFW) };
+    const Text = tmp(5761).Text;
     intl2 = tmp(1113).intl;
     items1[1] = closure_9(Text, obj3);
     return closure_10(View, obj2);
@@ -273,7 +273,7 @@ function CredentialList(navigation) {
           return tmp(TableRow, obj, label.id);
         })
     };
-    const TableRowGroup = tmp(7186).TableRowGroup;
+    const TableRowGroup = tmp(7201).TableRowGroup;
     intl = tmp(1113).intl;
     return closure_9(TableRowGroup, obj4);
   }

@@ -1,9 +1,9 @@
-// Module ID: 7002
-// Function ID: 7003
+// Module ID: 7017
+// Function ID: 7018
 // Name: ApplicationDirectoryApplicationsStore
 // Dependencies: [2145, 504, 572, 2]
 
-// Module 7002 (ApplicationDirectoryApplicationsStore)
+// Module 7017 (ApplicationDirectoryApplicationsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApplicationRecord from "ApplicationRecord" /* 2145 */;

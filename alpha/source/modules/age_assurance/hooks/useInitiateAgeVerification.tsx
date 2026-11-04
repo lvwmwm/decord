@@ -1,14 +1,14 @@
-// Module ID: 8143
-// Function ID: 8144
+// Module ID: 8159
+// Function ID: 8160
 // Name: useInitiateAgeVerification
-// Dependencies: [5, 32, 19, 1385, 1072, 7614, 504, 572, 8079, 7620, 8092, 2]
+// Dependencies: [5, 32, 19, 1385, 1072, 7630, 504, 572, 8095, 7636, 8108, 2]
 // Exports: useInitiateAgeVerification, useInitiateAgeVerificationV2
 
-// Module 8143 (useInitiateAgeVerification)
+// Module 8159 (useInitiateAgeVerification)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 7614 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8092 */;
+import Constants2 from "Constants" /* 7630 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8108 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -112,7 +112,7 @@ function useAgeVerificationRunner(onComplete) {
               }
               code = closure_2_1(true[9]).showFailedToast;
               closure_2_1(true[9]);
-              code(constants2.TIGGER_PAWTECT_ERROR);
+              code(constants2.AGE_VERIFICATION_ERROR);
             } else if (arg0 === 1) {
               c7 = 3;
               throw value;
@@ -136,7 +136,7 @@ function useAgeVerificationRunner(onComplete) {
               }
               if (false === code(obj)) {
                 const obj2 = closure_2_1(true[9]);
-                code = obj2.showFailedToast(constants2.TIGGER_PAWTECT_ERROR);
+                code = obj2.showFailedToast(constants2.AGE_VERIFICATION_ERROR);
                 v2();
               }
               c5 = 1;

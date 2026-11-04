@@ -1,15 +1,15 @@
-// Module ID: 18701
-// Function ID: 18702
+// Module ID: 18800
+// Function ID: 18801
 // Name: GuildDiscoveryCategoryActionCreators
-// Dependencies: [5, 2191, 18702, 1072, 1282, 572, 2]
+// Dependencies: [5, 2191, 18801, 1072, 1282, 572, 2]
 // Exports: addGuildCategory, deleteGuildCategory, fetchMetadataForGuild, fetchSlugForGuild, maybeFetchGuildDiscoveryCategories, saveGuildMetadata, updateGuildDiscoveryMetadataAbout, updateGuildDiscoveryMetadataIsPublished, updateGuildDiscoveryMetadataReasonsToJoin, updateGuildDiscoveryMetadataSocialLinks, updateGuildEmojiDiscoverabilityEnabled, updateGuildKeywords, updateGuildPrimaryCategory
 
-// Module 18701 (GuildDiscoveryCategoryActionCreators)
+// Module 18800 (GuildDiscoveryCategoryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18702 */;
+import GuildDiscoveryCategoryStore from "GuildDiscoveryCategoryStore" /* 18801 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,13 +1,13 @@
-// Module ID: 5278
-// Function ID: 5279
+// Module ID: 5279
+// Function ID: 5280
 // Name: CheckpointCardRive
-// Dependencies: [109, 19, 21, 5216, 5279, 5269, 2]
+// Dependencies: [109, 19, 21, 5215, 5280, 5268, 2]
 // Exports: CheckpointCardRive
 
-// Module 5278 (CheckpointCardRive)
+// Module 5279 (CheckpointCardRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5216 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5269 */;
+import BaseRive2 from "BaseRive" /* 5215 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5268 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,19 +1,19 @@
-// Module ID: 18716
-// Function ID: 18717
+// Module ID: 18817
+// Function ID: 18818
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 14104, 1072, 8064, 21, 5141, 575, 504, 5837, 5747, 5754, 9056, 7087, 1113, 7498, 2]
+// Dependencies: [19, 17, 14190, 1072, 8080, 21, 5141, 575, 504, 5851, 5761, 5768, 9073, 7102, 1113, 7514, 2]
 // Exports: WaterwheelsCard, getWaterwheelsCardEligible, useWaterwheelsCardEligible
 
-// Module 18716 (WaterwheelsCard)
+// Module 18817 (WaterwheelsCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8064 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9056 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8080 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9073 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14104 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14190 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -106,7 +106,7 @@ function WaterwheelsServerRowRenderer(server) {
     tmp5Result = tmp5(tmp13, obj10);
   }
   items3 = [tmp5Result, ];
-  const obj11 = { variant: "text-md/semibold", lineClamp: 1, children: server.name };
+  const obj11 = { variant: "body-md/semibold", lineClamp: 1, children: server.name };
   items3[1] = tmp5(server(joined[10]).Text, obj11);
   items4 = [closure_10(closure_5, obj7), ];
   let tmp2Result = null;
@@ -115,7 +115,7 @@ function WaterwheelsServerRowRenderer(server) {
     const obj13 = { style: tmp.row, children: items5 };
     const obj14 = { style: tmp.dot };
     items5 = [tmp5(closure_5, obj14), ];
-    const obj15 = { variant: "text-xs/medium", children: intl.format(server(joined[14]).t["LC+S+m"], obj16) };
+    const obj15 = { variant: "body-xs/medium", children: intl.format(server(joined[14]).t["LC+S+m"], obj16) };
     const Text = tmp15(tmp16[10]).Text;
     intl = tmp15(tmp16[14]).intl;
     obj16 = { membersOnline: server.online };
@@ -130,7 +130,7 @@ function WaterwheelsServerRowRenderer(server) {
     const obj17 = { style: tmp.row, children: items8 };
     ({ dot: arr8[0], mutedDot: arr8[1] } = tmp);
     items8 = [tmp5(closure_5, obj18), ];
-    const obj19 = { variant: "text-xs/medium", children: intl2.format(server(joined[14]).t.zRl6XR, obj20) };
+    const obj19 = { variant: "body-xs/medium", children: intl2.format(server(joined[14]).t.zRl6XR, obj20) };
     const Text2 = tmp15(tmp16[10]).Text;
     intl2 = tmp15(tmp16[14]).intl;
     obj20 = { count: server.members };
@@ -255,14 +255,14 @@ export function WaterwheelsCard(card) {
       if (null != layout.header.iconUrl) {
         let obj6 = { style: tmp.icon, source: obj7 };
         obj7 = { uri: layout.header.iconUrl };
-        tmp10 = closure_9(onAction(5837), obj6);
+        tmp10 = closure_9(onAction(5851), obj6);
       }
       items = [tmp10, ];
       const obj8 = { children: items1 };
-      const obj9 = { variant: "heading-sm/semibold", children: layout.header.title };
-      items1 = [closure_9(tmp2(5747).Heading, obj9), ];
-      const obj10 = { variant: "text-sm/normal", children: layout.header.subtitle };
-      items1[1] = closure_9(tmp2(5747).Text, obj10);
+      const obj9 = { variant: "heading-xs/semibold", children: layout.header.title };
+      items1 = [closure_9(tmp2(5761).Heading, obj9), ];
+      const obj10 = { variant: "body-sm/normal", children: layout.header.subtitle };
+      items1[1] = closure_9(tmp2(5761).Text, obj10);
       items[1] = closure_10(closure_5, obj8);
       items2 = [tmp8(closure_5, obj5), ];
       const obj11 = {
@@ -273,7 +273,7 @@ export function WaterwheelsCard(card) {
               let obj4;
               const obj = { style: game.game, children: items };
               items = [, , , , ];
-              const obj2 = { variant: "text-xs/medium", children: children.rank };
+              const obj2 = { variant: "body-xs/medium", children: children.rank };
               items[0] = React4(Text_Text.Text, obj2);
               let tmp4Result = null;
               const tmp = authStore;
@@ -285,9 +285,9 @@ export function WaterwheelsCard(card) {
                 tmp4Result = tmp4(FastImageDefault, obj3);
               }
               items[1] = tmp4Result;
-              const obj5 = { variant: "heading-md/semibold", children: children.name };
+              const obj5 = { variant: "heading-sm/semibold", children: children.name };
               items[2] = React4(Text_Text.Heading, obj5);
-              const obj6 = { variant: "text-sm/normal", children: children.description };
+              const obj6 = { variant: "body-sm/normal", children: children.description };
               items[3] = React4(Text_Text.Text, obj6);
               let tmp4Result2 = null;
               if (null != children.server) {
@@ -304,17 +304,17 @@ export function WaterwheelsCard(card) {
     } else {
       first = card.actions[0];
       const obj12 = { style: tmp.card, children: items4 };
-      const obj13 = { variant: "heading-md/semibold", children: layout.title };
-      items4 = [closure_9(tmp2(5747).Heading, obj13), , , ];
-      const obj14 = { variant: "text-md/normal", children: layout.body };
-      items4[1] = closure_9(tmp2(5747).Text, obj14);
+      const obj13 = { variant: "heading-sm/semibold", children: layout.title };
+      items4 = [closure_9(tmp2(5761).Heading, obj13), , , ];
+      const obj14 = { variant: "body-md/normal", children: layout.body };
+      items4[1] = closure_9(tmp2(5761).Text, obj14);
       let tmp21Result = null;
       const tmp19 = closure_10;
       const tmp20 = closure_5;
       if (null != layout.imageUrl) {
         const obj15 = { style: tmp.media, source: obj16 };
         obj16 = { uri: layout.imageUrl };
-        tmp21Result = tmp21(onAction(5837), obj15);
+        tmp21Result = tmp21(onAction(5851), obj15);
       }
       items4[2] = tmp21Result;
       let tmp21Result2 = null;
@@ -327,7 +327,7 @@ export function WaterwheelsCard(card) {
                       onAction(first, card);
                     }
           };
-          tmp21Result2 = tmp21(tmp2(5754).Button, obj17);
+          tmp21Result2 = tmp21(tmp2(5768).Button, obj17);
         }
       }
       items4[3] = tmp21Result2;

@@ -1,13 +1,13 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15880
+// Function ID: 15881
 // Name: HubLinkNoticeStore
-// Dependencies: [7502, 5012, 1072, 504, 572, 2]
+// Dependencies: [7518, 5012, 1072, 504, 572, 2]
 
-// Module 15792 (HubLinkNoticeStore)
+// Module 15880 (HubLinkNoticeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import HotspotStore from "hotspot/HotspotStore" /* 7502 */;
+import HotspotStore from "hotspot/HotspotStore" /* 7518 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 

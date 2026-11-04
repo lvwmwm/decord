@@ -1,10 +1,10 @@
-// Module ID: 8492
-// Function ID: 8493
+// Module ID: 8509
+// Function ID: 8510
 // Name: useUserIsTeen
 // Dependencies: [1385, 504, 2]
 // Exports: useUserIsTeen
 
-// Module 8492 (useUserIsTeen)
+// Module 8509 (useUserIsTeen)
 import get_initialized from "get initialized" /* 504 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

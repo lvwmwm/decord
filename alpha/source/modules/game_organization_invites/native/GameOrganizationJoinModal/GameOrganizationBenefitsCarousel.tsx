@@ -1,18 +1,18 @@
-// Module ID: 13347
-// Function ID: 13348
+// Module ID: 13430
+// Function ID: 13431
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 2533, 5141, 7103, 6147, 5837, 5747, 1493, 10147, 1113, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 575, 2533, 5141, 7118, 6162, 5851, 5761, 1493, 10195, 1113, 1187, 2]
 // Exports: default
 
-// Module 13347 (GameOrganizationBenefitsCarousel)
+// Module 13430 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _modDef2533 from "module_2533" /* 2533 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Card_Card from "Card/Card" /* 7103 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Card_Card from "Card/Card" /* 7118 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -28,8 +28,8 @@ let obj4;
 let obj5;
 let tmp2;
 let tmp6;
-const FastImageDefault = tmp6(5837);
-const CarouselDefault = tmp2(10147);
+const FastImageDefault = tmp6(5851);
+const CarouselDefault = tmp2(10195);
 function BenefitCard(arg0) {
   let Stack;
   let img;
@@ -53,7 +53,7 @@ function BenefitCard(arg0) {
   items[2] = cardSpacing;
   const obj = { style: items, children: tmp5(Stack, obj2) };
   obj2 = { spacing: nativeDefault.space.PX_24, children: items1 };
-  Stack = tmp3(6147).Stack;
+  Stack = tmp3(6162).Stack;
   tmp5 = metroImportDefault;
   if (null != img) {
     const obj3 = { source: obj4, style: tmp.benefitImage, resizeMode: "cover", accessible: false };
@@ -63,7 +63,7 @@ function BenefitCard(arg0) {
     const obj5 = { style: tmp.benefitImage };
     tmp2Result = tmp2(View, obj5);
   }
-  items1 = [tmp2Result, metroRequire(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", children: text })];
+  items1 = [tmp2Result, metroRequire(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", children: text })];
   return metroRequire(Card, obj);
 }
 let _slicedToArray = _slicedToArray_mod;

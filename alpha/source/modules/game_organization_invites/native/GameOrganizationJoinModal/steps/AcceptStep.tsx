@@ -1,14 +1,14 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13428
+// Function ID: 13429
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 13337, 21, 5141, 13339, 1499, 11792, 5832, 1113, 8096, 8097, 6147, 575, 5747, 2533, 13346, 13347, 13344, 6887, 5754, 2]
+// Dependencies: [5, 32, 19, 13420, 21, 5141, 13422, 1499, 11849, 5846, 1113, 8112, 8113, 6162, 575, 5761, 2533, 13429, 13430, 13427, 6902, 5768, 2]
 // Exports: AcceptStep
 
-// Module 13345 (AcceptStep)
+// Module 13428 (AcceptStep)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13337 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13420 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -158,7 +158,7 @@ export function AcceptStep(code) {
   };
   const tmp = closure_10();
   const tmp3 = dependencyMap;
-  const tmp4 = character(13339)(code);
+  const tmp4 = character(13422)(code);
   obj = code(1499);
   dependencyMap = obj.useNavigation();
   [tmp7, c3] = obj(react.useState(false), 2);
@@ -168,14 +168,14 @@ export function AcceptStep(code) {
   } else {
     let str = tmp4.displayNoun;
     const linkedGuild = tmp4.linkedGuild;
-    const ModalScreen = tmp5(8096).ModalScreen;
-    const ModalContent = tmp5(8097).ModalContent;
+    const ModalScreen = tmp5(8112).ModalScreen;
+    const ModalContent = tmp5(8113).ModalContent;
     let obj2 = { spacing: tmp2(575).space.PX_48, children: items1 };
-    const Stack2 = tmp5(6147).Stack;
+    const Stack2 = tmp5(6162).Stack;
     let obj3 = { spacing: tmp2(575).space.PX_24, children: items };
-    const Stack3 = tmp5(6147).Stack;
+    const Stack3 = tmp5(6162).Stack;
     let obj4 = { variant: "heading-xl/semibold", style: tmp.text, children: formatToPlainString(WmxMAI, obj7) };
-    const Text2 = tmp5(5747).Text;
+    const Text2 = tmp5(5761).Text;
     const intl4 = tmp5(1113).intl;
     formatToPlainString = intl4.formatToPlainString;
     WmxMAI = tmp2(2533).WmxMAI;
@@ -187,20 +187,20 @@ export function AcceptStep(code) {
     obj7 = { displayNoun: str };
     items = [tmp10(Text2, obj4), ];
     const obj8 = { linkedGuild };
-    items[1] = closure_8(character(13346), obj8);
+    items[1] = closure_8(character(13429), obj8);
     items1 = [tmp9(Stack3, obj3), ];
     const obj9 = { spacing: character(575).space.PX_24, children: items2 };
-    const Stack = tmp5(6147).Stack;
+    const Stack = tmp5(6162).Stack;
     const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(2533).yFqGy8) };
-    const Text = tmp5(5747).Text;
+    const Text = tmp5(5761).Text;
     intl = tmp5(1113).intl;
-    items2 = [tmp10(Text, obj10), tmp10(tmp2(13347), {})];
+    items2 = [tmp10(Text, obj10), tmp10(tmp2(13430), {})];
     items1[1] = closure_9(Stack, obj9);
     items3 = [tmp10(ModalContent, obj6), ];
     const obj11 = { children: closure_9(ButtonGroup, obj12) };
-    const ModalFooter = tmp5(13344).ModalFooter;
+    const ModalFooter = tmp5(13427).ModalFooter;
     obj12 = { style: tmp.buttonGroup, children: items4 };
-    ButtonGroup = tmp5(6887).ButtonGroup;
+    ButtonGroup = tmp5(6902).ButtonGroup;
     const obj13 = {
       text: intl2.string(character(2533).BaZ6nt),
       size: "lg",
@@ -210,11 +210,11 @@ export function AcceptStep(code) {
           return obj(...arguments);
         }
     };
-    const Button = tmp5(5754).Button;
+    const Button = tmp5(5768).Button;
     intl2 = tmp5(1113).intl;
     items4 = [tmp10(Button, obj13), ];
     const obj14 = { text: intl3.string(code(1113).t["ETE/oC"]), size: "lg", variant: "secondary", onPress, disabled: tmp7 };
-    const Button2 = tmp5(5754).Button;
+    const Button2 = tmp5(5768).Button;
     intl3 = tmp5(1113).intl;
     items4[1] = closure_8(Button2, obj14);
     items3[1] = closure_8(ModalFooter, obj11);

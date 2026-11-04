@@ -1,18 +1,18 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14707
+// Function ID: 14708
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5142, 1072, 21, 5141, 575, 2116, 14626, 7131, 7180, 1113, 1652, 5757, 5377, 5383, 7854, 14628, 5719, 5710, 8873, 14630, 504, 14631, 11650, 9686, 9027, 8866, 5837, 7412, 14632, 9621, 9634, 11530, 11643, 11644, 5747, 7856, 5754, 2]
+// Dependencies: [32, 717, 19, 17, 5142, 1072, 21, 5141, 575, 2116, 14706, 7146, 7195, 1113, 1652, 5771, 5378, 5384, 7870, 14708, 5732, 5723, 8890, 14710, 504, 14711, 11701, 9705, 9044, 8883, 5851, 7428, 14712, 9640, 9653, 11580, 11694, 11695, 5761, 7872, 5768, 2]
 // Exports: default
 
-// Module 14627 (ProductPurchaseSuccessModal)
+// Module 14707 (ProductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import _mod7131 from "module_7131" /* 7131 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import _modDef7854 from "module_7854" /* 7854 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14626 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import _mod7146 from "module_7146" /* 7146 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import _modDef7870 from "module_7870" /* 7870 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14706 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
@@ -63,7 +63,7 @@ function CancelButton(arg0) {
     accessibilityLabel: intl.string(intl5.t.cpT0Cq),
     displayMode: "minimal"
   };
-  const HeaderBackButton = _mod7131.HeaderBackButton;
+  const HeaderBackButton = _mod7146.HeaderBackButton;
   intl = intl5.intl;
   return closure_11(HeaderBackButton, obj);
 }
@@ -178,7 +178,7 @@ let closure_17 = { code: "(function ProductPurchaseSuccessModalTsx1(){let[interp
 let closure_18 = { code: "(function ProductPurchaseSuccessModalTsx2(){let[interpolate,springInput]=this.__closure;return{opacity:interpolate(springInput.get(),[0,1],[0,1]),transform:[{scale:interpolate(springInput.get(),[0,1],[0.75,1])}]};})" };
 let closure_19 = { code: "(function ProductPurchaseSuccessModalTsx3(){let[interpolate,linearInput]=this.__closure;return{opacity:interpolate(linearInput.get(),[0,1],[0.5,0])};})" };
 let closure_20 = [80, 79, 78, 75, 72, 50, 45, 35, 70];
-let obj5 = _modDef7854("black");
+let obj5 = _modDef7870("black");
 let closure_21 = obj5.toHexString();
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/collectibles/native/ProductPurchaseSuccessModal.tsx");
@@ -247,7 +247,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const stageCollectibleChangeForEditProfile = orbBalancePriorToPurchase.stageCollectibleChangeForEditProfile;
   let obj = require("useCurrentUser");
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(14628)(product.styles).backgroundColors;
+  const backgroundColors = callback(14708)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -428,14 +428,14 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     if (null != mobileBgUrl) {
       let obj3 = { source: obj5, style: tmp6.imageBackground };
       obj5 = { uri: mobileBgUrl };
-      tmp42 = closure_11(tmp4(5837), obj3);
+      tmp42 = closure_11(tmp4(5851), obj3);
       tmp43 = closure_11;
       tmp44 = closure_11;
     }
     const items9 = [tmp42, , ];
     const items10 = [tmp6.main, ];
     let str;
-    const SafeAreaPaddingView = tmp2(7412).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp2(7428).SafeAreaPaddingView;
     if (useCategoryImage) {
       str = "rgba(0, 0, 0, 0.3)";
     }
@@ -446,7 +446,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const obj8 = { style: tmp6.headerLeading, children: showOrbBalancePill };
     if (showOrbBalancePill) {
       const obj9 = { initialRenderedBalance: prop, balance };
-      showOrbBalancePill = tmp44(tmp2(14632).BalanceWidgetPill, obj9);
+      showOrbBalancePill = tmp44(tmp2(14712).BalanceWidgetPill, obj9);
     }
     items11 = [tmp44(closure_7, obj8), ];
     let toHexStringResult;
@@ -473,23 +473,23 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       if (tmp43Result) {
         const obj14 = { deco: null, pfx: null, nameplate: null, previewAssets: product.previewAssets, disableStaticBackground: true, size: "large", targetSize: tmp38 };
         ({ firstAvatarDecoration: obj28.deco, firstProfileEffect: obj28.pfx, firstNameplate: obj28.nameplate } = shopProductItems);
-        tmp43Result = tmp43(tmp4(9621), obj14);
+        tmp43Result = tmp43(tmp4(9640), obj14);
       }
       tmp43Result2 = tmp43(tmp41, obj13);
     } else if (require("CollectiblesItemType").CollectiblesItemType.AVATAR_DECORATION === type) {
       const obj15 = { item: first, size: avatarDecorationSize, avatarSource, animate: !stateFromStores };
-      tmp43Result2 = tmp43(tmp4(9634), obj15);
+      tmp43Result2 = tmp43(tmp4(9653), obj15);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj16 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(11530), obj16);
+      tmp43Result2 = tmp43(tmp4(11580), obj16);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
       const obj17 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(11643), obj17);
+      tmp43Result2 = tmp43(tmp4(11694), obj17);
     } else {
       tmp43Result2 = null;
       if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
         const obj18 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43Result2 = tmp43(tmp2(11644).NameplatePreview, obj18);
+        tmp43Result2 = tmp43(tmp2(11695).NameplatePreview, obj18);
       }
     }
     items14 = [tmp44(View, obj12), ];
@@ -500,12 +500,12 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       renderMessagesResult = renderMessages();
     } else {
       const obj20 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp6.title, children: intl3.format(require("intl").t.YNaxMp, obj21) };
-      const Text = tmp2(5747).Text;
+      const Text = tmp2(5761).Text;
       intl3 = tmp2(1113).intl;
       obj21 = { itemName: product.name };
       const items16 = [tmp44(Text, obj20), ];
-      const obj22 = { variant: "text-md/medium", color: "text-overlay-light", style: tmp6.title, children: formatResult };
-      const Text2 = tmp2(5747).Text;
+      const obj22 = { variant: "body-md/medium", color: "text-overlay-light", style: tmp6.title, children: formatResult };
+      const Text2 = tmp2(5761).Text;
       const tmp2Result24 = require("CollectiblesUtils");
       let result = tmp2Result24.isPremiumCollectiblesProduct(product);
       const intl4 = tmp2(1113).intl;
@@ -527,7 +527,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     items12[1] = closure_12(tmp48, obj11);
     const obj26 = { style: tmp6.footer, children: tmp44(closure_7, obj27) };
     obj27 = { style: tmp6.cta, children: tmp44(Button, obj30) };
-    Button = tmp2(5754).Button;
+    Button = tmp2(5768).Button;
     if (canUseNow) {
       const obj29 = { loading: isApplying, disabled: isApplying, onPress: handleUseNow, text: intl2.string(require("intl").t.MAS7uK), size: "lg", grow: true };
       intl2 = tmp2(1113).intl;

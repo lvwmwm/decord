@@ -1,13 +1,13 @@
-// Module ID: 20125
-// Function ID: 20126
+// Module ID: 20241
+// Function ID: 20242
 // Name: FormEmojiPicker
-// Dependencies: [19, 1388, 21, 5087, 17374, 5091, 1113, 17373, 7101, 9580, 5747, 10070, 2]
+// Dependencies: [19, 1388, 21, 5087, 17465, 5091, 1113, 17464, 7116, 9599, 5761, 10118, 2]
 // Exports: default
 
-// Module 20125 (FormEmojiPicker)
+// Module 20241 (FormEmojiPicker)
 import Fragment from "Fragment" /* 21 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10070 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10118 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export default function FormEmojiPicker(emoji) {
     }
     emojiId = convertSurrogateToName(emojiName, false);
   }
-  let obj = guildId(17374);
+  let obj = guildId(17465);
   const emojiByIdOrName = obj.useEmojiByIdOrName(guildId, emojiId);
   let allEmojiNamesString = null;
   if (null != emojiByIdOrName) {
@@ -42,12 +42,12 @@ export default function FormEmojiPicker(emoji) {
   const intl = tmp4(1113).intl;
   const stringResult = intl.string(guildId(1113).t.gXAN3P);
   if (null != emojiId) {
-    tmp10 = jsx(onChange(17373), { guildId, id: emojiId });
+    tmp10 = jsx(onChange(17464), { guildId, id: emojiId });
     tmp9 = jsx;
   } else {
     tmp9 = jsx;
-    const Icon = tmp4(7101).TableRow.Icon;
-    tmp10 = <Icon IconComponent={guildId(9580).ReactionIcon} />;
+    const Icon = tmp4(7116).TableRow.Icon;
+    tmp10 = <Icon IconComponent={guildId(9599).ReactionIcon} />;
   }
   const obj4 = {
     icon: tmp10,
@@ -75,10 +75,10 @@ export default function FormEmojiPicker(emoji) {
       const result = obj.openEmojiPickerActionSheet(obj2);
     }
   };
-  const TableRow = tmp4(7101).TableRow;
+  const TableRow = tmp4(7116).TableRow;
   if (allEmojiNamesString == null) {
-    const obj5 = { variant: "text-md/medium", color: "text-muted", children: stringResult };
-    allEmojiNamesString = tmp9(tmp4(5747).Text, obj5);
+    const obj5 = { variant: "body-md/medium", color: "text-muted", children: stringResult };
+    allEmojiNamesString = tmp9(tmp4(5761).Text, obj5);
   }
   return tmp9(TableRow, obj4);
 };

@@ -1,17 +1,17 @@
-// Module ID: 20181
-// Function ID: 20182
+// Module ID: 20297
+// Function ID: 20298
 // Name: QuestFetchManager
-// Dependencies: [5, 7970, 1089, 7407, 9805, 1242, 9814, 1377, 6992, 20182, 2]
+// Dependencies: [5, 7986, 1089, 7423, 9823, 1242, 9832, 1377, 7007, 20298, 2]
 
-// Module 20181 (QuestFetchManager)
+// Module 20297 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import QuestsEligibility from "QuestsEligibility" /* 9805 */;
-import QuestActionCreators from "QuestActionCreators" /* 9814 */;
+import QuestsEligibility from "QuestsEligibility" /* 9823 */;
+import QuestActionCreators from "QuestActionCreators" /* 9832 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 7970 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
+import QuestStore from "QuestStore" /* 7986 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -159,7 +159,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(6992);
+        const tmp6Result = tmp6(7007);
         const state = tmp6Result.getState();
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 9233
-// Function ID: 9234
+// Module ID: 9250
+// Function ID: 9251
 // Name: StartStageChannelModal
-// Dependencies: [5, 32, 19, 17, 4995, 6829, 1072, 4996, 21, 5141, 575, 6864, 7106, 1113, 1187, 7377, 9234, 7083, 504, 7501, 8301, 5747, 9237, 9238, 9239, 5716, 1252, 2017, 8069, 7505, 6566, 9240, 9241, 8078, 5754, 7412, 7081, 2]
+// Dependencies: [5, 32, 19, 17, 4995, 6844, 1072, 4996, 21, 5141, 575, 6879, 7121, 1113, 1187, 7393, 9251, 7098, 504, 7517, 8317, 5761, 9254, 9255, 9256, 5729, 1252, 2017, 8085, 7521, 6581, 9257, 9258, 8094, 5768, 7428, 7096, 2]
 // Exports: default
 
-// Module 9233 (StartStageChannelModal)
+// Module 9250 (StartStageChannelModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,19 +13,19 @@ import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import Pressables from "Pressables" /* 7106 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7377 */;
-import HotspotStore2 from "HotspotStore" /* 7501 */;
-import _mod8301 from "module_8301" /* 8301 */;
-import StageSparkleDefault from "StageSparkle" /* 9234 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import Pressables from "Pressables" /* 7121 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7393 */;
+import HotspotStore2 from "HotspotStore" /* 7517 */;
+import _mod8317 from "module_8317" /* 8317 */;
+import StageSparkleDefault from "StageSparkle" /* 9251 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StageInstanceStore from "StageInstanceStore" /* 4995 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6829 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6844 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -108,17 +108,17 @@ class NotificationToggle {
     });
     const obj = { DEPRECATED_style: tmp.notificationToggle, label: tmp7(metroImportDefault, obj2), onPress: onToggle, trailing: authStore3(native.Checkbox, { selected: sendStartNotification }) };
     obj2 = { style: tmp.label, children: items1 };
-    const FormRow = _mod8301.FormRow;
+    const FormRow = _mod8317.FormRow;
     const obj3 = { text: intl.string(intl9.t.BYJgew) };
-    const FormLabel = _mod8301.FormLabel;
+    const FormLabel = _mod8317.FormLabel;
     intl = intl9.intl;
     items1 = [authStore3(FormLabel, obj3), ];
     let tmp6Result = null;
     tmp7 = closure_15;
     if (stateFromStores) {
       const obj4 = { style: tmp.pill, children: authStore3(Text, obj5) };
-      obj5 = { style: tmp.pillLabel, variant: "text-xxs/semibold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
-      Text = tmp2(5747).Text;
+      obj5 = { style: tmp.pillLabel, variant: "footnote/semibold", color: "text-overlay-light", children: intl2.string(intl9.t.y2b7CA) };
+      Text = tmp2(5761).Text;
       intl2 = tmp2(1113).intl;
       tmp6Result = tmp6(tmp8, obj4);
     }
@@ -414,7 +414,7 @@ export default function StartStageChannelModal(arg0) {
   });
   let obj6 = { style: tmp.header, children: items3 };
   items3 = [obj5(HeaderIcon, { guild }), , ];
-  let obj7 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
+  let obj7 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
   const Text = tmp17(tmp18[21]).Text;
   if (null == memo) {
     const intl2 = tmp17(tmp18[13]).intl;
@@ -424,7 +424,7 @@ export default function StartStageChannelModal(arg0) {
     stringResult = intl.string(tmp17(tmp18[13]).t["5BKP4y"]);
   }
   items3[1] = obj5(Text, obj7);
-  let obj8 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: stringResult1 };
+  let obj8 = { style: tmp.headerSubtitle, variant: "body-sm/medium", color: "text-default", children: stringResult1 };
   const Text2 = tmp17(tmp18[21]).Text;
   if (null == memo) {
     const intl4 = tmp17(tmp18[13]).intl;
@@ -454,7 +454,7 @@ export default function StartStageChannelModal(arg0) {
   items5[2] = obj5(FormInput, obj11);
   let tmp33Result = null != helpText;
   if (tmp33Result) {
-    const obj12 = { style: tmp.optionExplanation, variant: "text-xs/medium", color: "text-default", children: helpText };
+    const obj12 = { style: tmp.optionExplanation, variant: "body-xs/medium", color: "text-default", children: helpText };
     tmp33Result = tmp33(tmp17(tmp18[21]).Text, obj12);
   }
   items5[3] = tmp33Result;
@@ -481,7 +481,7 @@ export default function StartStageChannelModal(arg0) {
   items5[6] = obj5(require("StageChannelAgeVerificationNotice"), obj15);
   let tmp33Result7 = null;
   if (null != obj2) {
-    const obj16 = { style: tmp.error, variant: "text-xs/medium", color: "text-feedback-critical", children: obj2.getAnyErrorMessage() };
+    const obj16 = { style: tmp.error, variant: "body-xs/medium", color: "text-feedback-critical", children: obj2.getAnyErrorMessage() };
     const Text3 = tmp17(tmp18[21]).Text;
     tmp33Result7 = tmp33(Text3, obj16);
   }

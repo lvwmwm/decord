@@ -1,19 +1,20 @@
-// Module ID: 18493
-// Function ID: 18494
+// Module ID: 18587
+// Function ID: 18588
 // Name: FavoritesGuildChannels
-// Dependencies: [19, 18406, 21, 7338, 5762, 18494, 18468, 18495, 18252, 18337, 18405, 18500, 18305, 2]
+// Dependencies: [19, 18500, 21, 7354, 5776, 18588, 18589, 18562, 18590, 18349, 18434, 18499, 18595, 18402, 2]
 // Exports: default
 
-// Module 18493 (FavoritesGuildChannels)
-import useFontScale from "useFontScale" /* 5762 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 7338 */;
-import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 18252 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18337 */;
-import FavoritesGuildSuggestedChannels from "FavoritesGuildSuggestedChannels" /* 18405 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18406 */;
-import useShouldRenderChannelList from "useShouldRenderChannelList" /* 18468 */;
-import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 18494 */;
-import FavoritesGuildSuggestionsLoaderDefault from "FavoritesGuildSuggestionsLoader" /* 18495 */;
+// Module 18587 (FavoritesGuildChannels)
+import useFontScale from "useFontScale" /* 5776 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 7354 */;
+import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 18349 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18434 */;
+import FavoritesGuildSuggestedChannels from "FavoritesGuildSuggestedChannels" /* 18499 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18500 */;
+import useShouldRenderChannelList from "useShouldRenderChannelList" /* 18562 */;
+import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 18588 */;
+import useFavoritesPruneInactiveThreadsDefault from "useFavoritesPruneInactiveThreads" /* 18589 */;
+import FavoritesGuildSuggestionsLoaderDefault from "FavoritesGuildSuggestionsLoader" /* 18590 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -41,12 +42,13 @@ export default function FavoritesGuildChannels(guild) {
   const obj3 = { withSuggestionsNotice: tmp > 0 };
   const favoritesGuildChannelList = obj2.useFavoritesGuildChannelList(obj3);
   ({ guildChannels, shouldShowEmptyState, hasNoChannels } = favoritesGuildChannelList);
-  let tmp10Result2 = null;
+  useFavoritesPruneInactiveThreadsDefault();
+  let tmp11Result2 = null;
   const obj4 = useShouldRenderChannelList;
   if (obj4.useShouldRenderChannelList()) {
-    let tmp12Result1;
+    let tmp13Result1;
     const items = [React3(FavoritesGuildSuggestionsLoaderDefault, {}), ];
-    const tmp11 = metroRequire;
+    const tmp12 = metroRequire;
     if (hasNoChannels) {
       const obj5 = { style: null, contentInset: null, children: items1 };
       ({ style: obj7.style, contentInset: obj7.contentInset } = guild);
@@ -55,22 +57,22 @@ export default function FavoritesGuildChannels(guild) {
       const tmp2Result = ChannelListPanelBackdropDefault;
       items1[0] = React3(ChannelListStickyHeaderDefault, obj6);
       items1[1] = React3(FavoritesGuildSuggestedChannelsDefault, {});
-      let tmp12Result = null;
+      let tmp13Result = null;
       if (shouldShowEmptyState) {
-        tmp12Result = tmp12(tmp2(18500), {});
+        tmp13Result = tmp13(tmp2(18595), {});
       }
-      items1[2] = tmp12Result;
-      tmp12Result1 = tmp10(tmp2Result, obj5);
+      items1[2] = tmp13Result;
+      tmp13Result1 = tmp11(tmp2Result, obj5);
     } else {
       const obj8 = { guildChannels, guildChannelsVersion: 0, favoritesSuggestionsNoticeHeight: tmp5Result.getFavoritesSuggestionsNoticeHeight(fontScale, tmp4, tmp) };
-      const ChannelList = tmp5(18305).ChannelList;
+      const ChannelList = tmp5(18402).ChannelList;
       const merged = Object.assign(guild);
       tmp5Result = FavoritesGuildSuggestedChannels;
-      tmp12Result1 = tmp12(ChannelList, obj8);
+      tmp13Result1 = tmp13(ChannelList, obj8);
     }
     const obj9 = { children: items };
-    items[1] = tmp12Result1;
-    tmp10Result2 = tmp10(tmp11, obj9);
+    items[1] = tmp13Result1;
+    tmp11Result2 = tmp11(tmp12, obj9);
   }
-  return tmp10Result2;
+  return tmp11Result2;
 };

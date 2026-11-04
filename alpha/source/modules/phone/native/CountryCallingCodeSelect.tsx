@@ -1,14 +1,14 @@
-// Module ID: 7337
-// Function ID: 7338
+// Module ID: 7353
+// Function ID: 7354
 // Name: CountryCallingCodeSelect
-// Dependencies: [32, 19, 17, 5815, 21, 5141, 575, 7237, 5816, 7338, 7019, 7101, 5747, 7339, 7342, 7343, 1113, 7344, 2]
+// Dependencies: [32, 19, 17, 5829, 21, 5141, 575, 7257, 5830, 7354, 7034, 7116, 5761, 7355, 7358, 7359, 1113, 7360, 2]
 // Exports: default
 
-// Module 7337 (CountryCallingCodeSelect)
+// Module 7353 (CountryCallingCodeSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5815 */;
-import fuzzysearchDefault from "fuzzysearch" /* 7019 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5829 */;
+import fuzzysearchDefault from "fuzzysearch" /* 7034 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -120,7 +120,7 @@ export default function CountryCallingCodeSelect(onCountrySelected) {
       }
     };
     const TableRow = onCountrySelected(first[11]).TableRow;
-    obj2 = { variant: "text-md/semibold", children: country.code };
+    obj2 = { variant: "body-md/semibold", children: country.code };
     return closure_1_7(TableRow, obj);
   }, items1);
   let tmp11 = closure_8;

@@ -1,14 +1,14 @@
-// Module ID: 5304
-// Function ID: 5305
+// Module ID: 5305
+// Function ID: 5306
 // Name: TeenScreenTimeRive
-// Dependencies: [109, 19, 21, 5216, 5305, 5269, 2]
+// Dependencies: [109, 19, 21, 5215, 5306, 5268, 2]
 // Exports: TeenScreenTimeRive
 
-// Module 5304 (TeenScreenTimeRive)
+// Module 5305 (TeenScreenTimeRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5216 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5269 */;
-import _modDef5305 from "module_5305" /* 5305 */;
+import BaseRive2 from "BaseRive" /* 5215 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5268 */;
+import _modDef5306 from "module_5306" /* 5306 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ function TeenScreenTimeRiveInner(ref) {
   const tmp2 = _objectWithoutProperties(ref, closure_3);
   const BaseRive = BaseRive2.BaseRive;
   const merged = Object.assign(tmp2);
-  return <BaseRive ref={ref} src={_modDef5305} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
+  return <BaseRive ref={ref} src={_modDef5306} artboard={str} artboardProperties={artboardProperties} artboardViewModelInstances={artboardViewModelInstances} defaultViewModelInstance={tmp} stateMachine={stateMachine} />;
 }
 let closure_3 = ["ref", "fallback", "artboard", "stateMachine", "defaultViewModelInstance"];
 const jsx = Fragment.jsx;

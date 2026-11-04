@@ -1,9 +1,9 @@
-// Module ID: 7914
-// Function ID: 7915
+// Module ID: 7930
+// Function ID: 7931
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 6688, 4994, 502, 4990, 5047, 5012, 5073, 4991, 3, 5019, 7915, 1084, 5082, 2]
+// Dependencies: [32, 5, 6703, 4994, 502, 4990, 5047, 5012, 5073, 4991, 3, 5019, 7931, 1084, 5082, 2]
 
-// Module 7914 (GuildBasicChannels)
+// Module 7930 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import ChannelStore2 from "ChannelStore" /* 4990 */;
@@ -12,7 +12,7 @@ import DatabaseDaosDefault from "DatabaseDaos" /* 5019 */;
 import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 5082 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -332,7 +332,7 @@ class GuildBasicChannels {
                               closure_1 = closure_3;
                               closure_2_15.warn("couldn't optimstically write basic_channel:", closure_1);
                               c6 = 3;
-                              return { value: { v: "Array" }, done: true };
+                              return { value: { v: "r" }, done: true };
                             } else if (2 === c5) {
                               if (arg0 === 1) {
                                 c6 = 3;

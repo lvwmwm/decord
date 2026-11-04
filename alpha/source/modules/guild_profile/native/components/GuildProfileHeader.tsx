@@ -1,19 +1,19 @@
-// Module ID: 9430
-// Function ID: 9431
+// Module ID: 9448
+// Function ID: 9449
 // Name: GuildProfileHeader
-// Dependencies: [19, 17, 2191, 502, 5053, 9431, 21, 5141, 575, 504, 8005, 11, 5004, 9432, 9433, 5832, 5381, 7646, 7083, 5747, 7106, 9434, 1113, 2]
+// Dependencies: [19, 17, 2191, 502, 5053, 9449, 21, 5141, 575, 504, 8021, 11, 5004, 9450, 9451, 5846, 5382, 7662, 7098, 5761, 7121, 9452, 1113, 2]
 // Exports: default
 
-// Module 9430 (GuildProfileHeader)
+// Module 9448 (GuildProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5004 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import transitionToGuild from "transitionToGuild" /* 7646 */;
-import GuildBadgeConstants from "GuildBadgeConstants" /* 9431 */;
-import GuildTraits from "GuildTraits" /* 9432 */;
-import BadgeCategory from "BadgeCategory" /* 9433 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import transitionToGuild from "transitionToGuild" /* 7662 */;
+import GuildBadgeConstants from "GuildBadgeConstants" /* 9449 */;
+import GuildTraits from "GuildTraits" /* 9450 */;
+import BadgeCategory from "BadgeCategory" /* 9451 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -58,9 +58,13 @@ export default function GuildProfileHeader(profile) {
   let obj7;
   let tmp15;
   profile = profile.profile;
+  let flag = profile.disableNameNavigation;
+  const guildIconSource = profile.guildIconSource;
+  if (flag === undefined) {
+    flag = false;
+  }
   let id;
   let stateFromStores1;
-  const guildIconSource = profile.guildIconSource;
   let tmp = styles();
   let obj = profile(stateFromStores1[9]);
   const items = [LocaleStore];
@@ -126,7 +130,9 @@ export default function GuildProfileHeader(profile) {
   const obj8 = { style: tmp.nameRow, children: items6 };
   const Text = profile(stateFromStores1[19]).Text;
   if (stateFromStores1) {
-    tmp16 = callback1;
+    if (!flag) {
+      tmp16 = callback1;
+    }
   }
   items6 = [, ];
   const obj9 = { onPress: tmp16, style: tmp.guildName, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: profile.name };
@@ -141,7 +147,7 @@ export default function GuildProfileHeader(profile) {
   const obj12 = { style: tmp.members, children: items8 };
   const obj14 = { style: tmp.dotOnline };
   items7[0] = closure_9(View, obj14);
-  const obj15 = { variant: "text-md/medium", color: "text-default", children: intl.format(profile(stateFromStores1[22]).t["LC+S+m"], obj16) };
+  const obj15 = { variant: "body-md/medium", color: "text-default", children: intl.format(profile(stateFromStores1[22]).t["LC+S+m"], obj16) };
   const Text2 = tmp2(tmp3[19]).Text;
   intl = tmp2(tmp3[22]).intl;
   obj16 = { membersOnline: profile.onlineCount };
@@ -151,7 +157,7 @@ export default function GuildProfileHeader(profile) {
   items9 = [, ];
   const obj18 = { style: tmp.dot };
   items9[0] = closure_9(View, obj18);
-  const obj19 = { variant: "text-md/medium", color: "text-default", children: intl2.format(profile(stateFromStores1[22]).t.zRl6XR, obj20) };
+  const obj19 = { variant: "body-md/medium", color: "text-default", children: intl2.format(profile(stateFromStores1[22]).t.zRl6XR, obj20) };
   const Text3 = tmp2(tmp3[19]).Text;
   intl2 = tmp2(tmp3[22]).intl;
   obj20 = { count: profile.memberCount };
@@ -159,7 +165,7 @@ export default function GuildProfileHeader(profile) {
   items8[1] = closure_10(View, obj17);
   items5[2] = closure_10(View, obj12);
   const obj21 = { style: tmp.established, children: closure_9(Text4, obj22) };
-  obj22 = { variant: "text-md/medium", color: "text-muted", children: intl3.format(profile(stateFromStores1[22]).t.zb2Q56, { createdAtDate: establishedDate }) };
+  obj22 = { variant: "body-md/medium", color: "text-muted", children: intl3.format(profile(stateFromStores1[22]).t.zb2Q56, { createdAtDate: establishedDate }) };
   Text4 = tmp2(tmp3[19]).Text;
   intl3 = tmp2(tmp3[22]).intl;
   items5[3] = closure_9(View, obj21);

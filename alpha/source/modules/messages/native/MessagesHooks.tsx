@@ -1,24 +1,24 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11734
+// Function ID: 11735
 // Name: MessagesHooks
-// Dependencies: [32, 19, 17, 10246, 10026, 6894, 5012, 5881, 504, 12, 558, 7001, 1380, 8002, 11684, 10025, 11685, 2]
+// Dependencies: [32, 19, 17, 10294, 10074, 6909, 5012, 5895, 504, 12, 558, 7016, 1380, 8018, 11735, 10073, 11736, 2]
 // Exports: useChatUpdatesQueue, useFetchMessageApplications, useFetchVoiceChannelInviteStartTimes, useMessageAuthorActivities, useMessagesLifecycle, useMessagesState, useScrollState
 
-// Module 11683 (MessagesHooks)
+// Module 11734 (MessagesHooks)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import shallowEqual from "shallowEqual" /* 558 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7001 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8002 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10025 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10026 */;
-import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11685 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7016 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8018 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10073 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10074 */;
+import ChatUpdatesQueueDefault from "ChatUpdatesQueue" /* 11736 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10246 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6894 */;
+import VoiceChannelStartTimeStore from "VoiceChannelStartTimeStore" /* 10294 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6909 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -128,7 +128,7 @@ export function useFetchVoiceChannelInviteStartTimes(stateFromStores4) {
             result = VoiceChannelStartTimeStore.hasRequestedStartTimes(tmp8);
           }
           if (!result) {
-            let tmp4Result = tmp4(11684);
+            let tmp4Result = tmp4(11735);
             let channelInfo = tmp4Result.fetchChannelInfo(tmp8);
           }
         }

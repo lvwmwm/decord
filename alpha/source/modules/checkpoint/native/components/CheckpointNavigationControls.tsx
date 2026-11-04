@@ -1,16 +1,16 @@
-// Module ID: 13832
-// Function ID: 13833
+// Module ID: 13918
+// Function ID: 13919
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 6186, 1072, 21, 5141, 575, 6554, 13831, 1627, 5719, 1113, 6555, 13833, 8972, 13779, 3219, 5829, 2190, 10362, 11036, 10941, 2]
+// Dependencies: [17, 6201, 1072, 21, 5141, 575, 6569, 13917, 1627, 5732, 1113, 6570, 13919, 8989, 13865, 3219, 5843, 2190, 10410, 11085, 10989, 2]
 // Exports: default
 
-// Module 13832 (CheckpointNavigationControls)
+// Module 13918 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import CheckpointTextDefault from "CheckpointText" /* 13779 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13831 */;
+import CheckpointTextDefault from "CheckpointText" /* 13865 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13917 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 6186 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -130,13 +130,13 @@ export default function CheckpointNavigationControls(onShare) {
     intl6 = tmp7(tmp6[10]).intl;
     obj5 = { disabled: flag2 };
     items2 = [closure_7(tmp5Result, obj4), ];
-    const obj6 = { variant: "text-sm/medium", children: intl7.format(tmp5(flag2[15]).hcNhyq, obj7) };
+    const obj6 = { variant: "body-sm/medium", children: intl7.format(tmp5(flag2[15]).hcNhyq, obj7) };
     const tmp5Result4 = tmp5(flag2[14]);
     intl7 = tmp7(tmp6[10]).intl;
     obj7 = {
       learnMoreHook(children, arg1) {
           let obj = {
-            variant: "text-sm/medium",
+            variant: "body-sm/medium",
             style: link.link,
             onPress() {
               const openURL = flag(flag2[16]).openURL;

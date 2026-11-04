@@ -1,15 +1,15 @@
-// Module ID: 7846
-// Function ID: 7847
+// Module ID: 7862
+// Function ID: 7863
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7847, 7848, 7853, 1074, 1072, 2172, 2116, 2]
+// Dependencies: [32, 7863, 7864, 7869, 1074, 1072, 2172, 2116, 2]
 
-// Module 7846 (CollectiblesProductRecord)
+// Module 7862 (CollectiblesProductRecord)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import getPricesFromServerDefault from "getPricesFromServer" /* 2172 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7847 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7848 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7853 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7863 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7864 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7869 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -200,7 +200,7 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
                 }
                 ({ items, item } = obj);
                 first = _slicedToArray(tenantMetadata.selectedOptions, 1)[0];
-                const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: str, variantValue: str2, storeListingId: null, skuId: null, name: null, summary: null, styles: "t", type: "Array", premiumType: premiumType1, items, categorySkuId: str3, categoryWillUnpublishAt: skus.primaryCollectionWillUnpublishAt, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === id.id), prices: "it", previewAssets: previewAssetPaths, googleSkuIds, eligibleOffers: tenantMetadata.eligibleOffers, variants: "parent", bundledProducts: "source", isFirstParty: collectibles.isFirstParty };
+                const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: str, variantValue: str2, storeListingId: null, skuId: null, name: null, summary: null, styles: "t", type: "Array", premiumType: premiumType1, items, categorySkuId: str3, categoryWillUnpublishAt: skus.primaryCollectionWillUnpublishAt, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === id.id), prices: "isArray", previewAssets: previewAssetPaths, googleSkuIds, eligibleOffers: tenantMetadata.eligibleOffers, variants: null, bundledProducts: "\u{1F1F8}\u{1F1FF}", isFirstParty: collectibles.isFirstParty };
                 str = undefined;
                 const tmp5 = CollectiblesVariantProductRecord;
                 if (first != null) {

@@ -1,14 +1,14 @@
-// Module ID: 13401
-// Function ID: 13402
+// Module ID: 13485
+// Function ID: 13486
 // Name: RoleName
-// Dependencies: [19, 17, 5142, 21, 5141, 575, 504, 8543, 1187, 5747, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 504, 8560, 1187, 5761, 2]
 // Exports: default
 
-// Module 13401 (RoleName)
+// Module 13485 (RoleName)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8543 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8560 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -38,7 +38,7 @@ export default function RoleName(children) {
   ({ role, textVariant } = children);
   children = children.children;
   if (textVariant === undefined) {
-    textVariant = "text-md/medium";
+    textVariant = "body-md/medium";
   }
   let flag = children.dotBackground;
   if (flag === undefined) {
@@ -68,7 +68,7 @@ export default function RoleName(children) {
   const obj6 = { variant: textVariant, style: items2, lineClamp: 1, gradientColors: tmp15, children };
   items2 = [tmp.name, ];
   let tmp13;
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   const tmp12 = React3;
   if ("username" === stateFromStores) {
     if (null != colorString) {

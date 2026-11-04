@@ -1,19 +1,19 @@
-// Module ID: 16960
-// Function ID: 16961
+// Module ID: 17052
+// Function ID: 17053
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 5141, 575, 8494, 13498, 1113, 2667, 16961, 5747, 16923, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8511, 13582, 1113, 2667, 17053, 5761, 17015, 2]
 // Exports: default
 
-// Module 16960 (FamilyCenterLinkingBanner)
+// Module 17052 (FamilyCenterLinkingBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import _modDef2667 from "module_2667" /* 2667 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8494 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 13498 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 16923 */;
-import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 16961 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8511 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 13582 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 17015 */;
+import WizardHatAndBookSpotIllustration from "WizardHatAndBookSpotIllustration" /* 17053 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -64,7 +64,7 @@ function FamilyCenterLinkingInstructionsRow(arg0) {
   const tmp = closure_11();
   const obj = { style: tmp.row, children: items };
   items = [, ];
-  const obj2 = { style: tmp.circle, children: React3(Text_Text.Text, { variant: "heading-md/semibold", color: "text-brand", children: index }) };
+  const obj2 = { style: tmp.circle, children: React3(Text_Text.Text, { variant: "heading-sm/semibold", color: "text-brand", children: index }) };
   items[0] = React3(View, obj2);
   const items1 = [tmp.rowContent, ];
   let gap = null;
@@ -73,7 +73,7 @@ function FamilyCenterLinkingInstructionsRow(arg0) {
   }
   const obj3 = { style: items1, children: items2 };
   items1[1] = gap;
-  items2 = [React3(Text_Text.Text, { variant: "heading-sm/semibold", children: header }), React3(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: description })];
+  items2 = [React3(Text_Text.Text, { variant: "heading-xs/semibold", children: header }), React3(Text_Text.Text, { variant: "body-sm/medium", color: "text-muted", children: description })];
   items[1] = hasOwnProperty(View, obj3);
   return hasOwnProperty(View, obj);
 }
@@ -126,7 +126,7 @@ export default function FamilyCenterLinkingBanner() {
   items1 = [, ];
   const obj4 = { style: tmp.header, variant: "heading-lg/semibold", children: ageSpecificText };
   items1[0] = React3(Text_Text.Text, obj4);
-  items1[1] = React3(Text_Text.Text, { variant: "text-sm/medium", color: "text-muted", children: ageSpecificText2 });
+  items1[1] = React3(Text_Text.Text, { variant: "body-sm/medium", color: "text-muted", children: ageSpecificText2 });
   items[1] = hasOwnProperty(View, obj3);
   items[2] = React3(tmp2 ? FamilyCenterLinkingBannerParentContent : FamilyCenterLinkingBannerTeenContent, {});
   return hasOwnProperty(View, obj);

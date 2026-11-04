@@ -1,18 +1,18 @@
-// Module ID: 10188
-// Function ID: 10189
+// Module ID: 10236
+// Function ID: 10237
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 5012, 6916, 7084, 1072, 5090, 563, 2]
+// Dependencies: [5, 32, 19, 5012, 6931, 7099, 1072, 5090, 563, 2]
 // Exports: useEmojiAndSource
 
-// Module 10188 (useEmojiAndSource)
+// Module 10236 (useEmojiAndSource)
 import Constants from "Constants" /* 1072 */;
 import EmojiTypes from "EmojiTypes" /* 5090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7084 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7099 */;
 import size from "module_2" /* 2 */;
 
 let c2;

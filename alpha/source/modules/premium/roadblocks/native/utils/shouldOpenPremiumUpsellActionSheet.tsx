@@ -1,12 +1,12 @@
-// Module ID: 9924
-// Function ID: 9925
+// Module ID: 9942
+// Function ID: 9943
 // Name: shouldOpenPremiumUpsellActionSheet
-// Dependencies: [9925, 1092, 5200, 2]
+// Dependencies: [9943, 1092, 5200, 2]
 // Exports: default
 
-// Module 9924 (shouldOpenPremiumUpsellActionSheet)
+// Module 9942 (shouldOpenPremiumUpsellActionSheet)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9925 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9943 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/utils/shouldOpenPremiumUpsellActionSheet.tsx");

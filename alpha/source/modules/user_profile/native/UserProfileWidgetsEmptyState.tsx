@@ -1,15 +1,15 @@
-// Module ID: 16707
-// Function ID: 16708
+// Module ID: 16797
+// Function ID: 16798
 // Name: UserProfileWidgetsEmptyState
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 16707 (UserProfileWidgetsEmptyState)
+// Module 16797 (UserProfileWidgetsEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -38,11 +38,11 @@ export default function UserProfileWidgetsEmptyState() {
   const tmp = closure_5();
   const obj = { style: tmp.container, children: items1 };
   const obj2 = { style: tmp.textContainer, children: items };
-  const obj3 = { variant: "heading-md/semibold", color: "text-strong", style: tmp.centeredText, children: intl.string(intl4.t["oqalC+"]) };
+  const obj3 = { variant: "heading-sm/semibold", color: "text-strong", style: tmp.centeredText, children: intl.string(intl4.t["oqalC+"]) };
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
   items = [_false(Heading, obj3), ];
-  const obj4 = { variant: "text-sm/normal", color: "text-default", style: tmp.centeredText, children: intl2.string(intl4.t.O9SQ1c) };
+  const obj4 = { variant: "body-sm/normal", color: "text-default", style: tmp.centeredText, children: intl2.string(intl4.t.O9SQ1c) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = _false(Text, obj4);

@@ -1,17 +1,17 @@
-// Module ID: 12883
-// Function ID: 12884
+// Module ID: 12964
+// Function ID: 12965
 // Name: ConjurePlanCommandMenuPreview
-// Dependencies: [19, 17, 21, 5141, 575, 12884, 5747, 1113, 5837, 1411, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 12965, 5761, 1113, 5851, 1411, 2]
 // Exports: default
 
-// Module 12883 (ConjurePlanCommandMenuPreview)
+// Module 12964 (ConjurePlanCommandMenuPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12884 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12965 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -63,7 +63,7 @@ export default function ConjurePlanCommandMenuPreview(appIconSrc) {
   const intl = intl2.intl;
   const string = intl.string;
   const t = intl2.t;
-  const obj4 = { variant: "text-sm/medium", color: "text-default", children: string("message" === target ? t["5IEsGx"] : t.LYju5J) };
+  const obj4 = { variant: "body-sm/medium", color: "text-default", children: string("message" === target ? t["5IEsGx"] : t.LYju5J) };
   items1[1] = React3(Text, obj4);
   items2 = [hasOwnProperty(View, obj2), ];
   const obj5 = { style: items3, children: items4 };
@@ -77,7 +77,7 @@ export default function ConjurePlanCommandMenuPreview(appIconSrc) {
     tmp10Result = tmp10(tmp15, obj6);
   }
   items4 = [tmp10Result, ];
-  const obj7 = { variant: "text-sm/medium", color: "text-strong", style: tmp.label, children: commandName };
+  const obj7 = { variant: "body-sm/medium", color: "text-strong", style: tmp.label, children: commandName };
   items4[1] = React3(Text_Text.Text, obj7);
   items2[1] = hasOwnProperty(View, obj5);
   return hasOwnProperty(View, obj);

@@ -1,14 +1,14 @@
-// Module ID: 17531
-// Function ID: 17532
+// Module ID: 17621
+// Function ID: 17622
 // Name: EmojiSquintingFaceWithTongueIcon
-// Dependencies: [19, 21, 575, 5836, 17532, 2]
+// Dependencies: [19, 21, 575, 5850, 17622, 2]
 // Exports: EmojiSquintingFaceWithTongueIcon
 
-// Module 17531 (EmojiSquintingFaceWithTongueIcon)
+// Module 17621 (EmojiSquintingFaceWithTongueIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 17532 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 17622 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

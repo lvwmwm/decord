@@ -1,16 +1,16 @@
-// Module ID: 16121
-// Function ID: 16122
+// Module ID: 16210
+// Function ID: 16211
 // Name: NewTag
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 5710, 5747, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5723, 5761, 1113, 2]
 // Exports: default
 
-// Module 16121 (NewTag)
+// Module 16210 (NewTag)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -40,7 +40,7 @@ export default function NewTag(color) {
   let variant;
   ({ containerStyle, textStyle, variant } = color);
   if (variant === undefined) {
-    variant = "heading-sm/semibold";
+    variant = "heading-xs/semibold";
   }
   let str = color.color;
   if (str === undefined) {

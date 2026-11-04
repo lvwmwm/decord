@@ -1,15 +1,15 @@
-// Module ID: 11163
-// Function ID: 11164
+// Module ID: 11211
+// Function ID: 11212
 // Name: SoundUtils
-// Dependencies: [11164, 5196, 6040, 3, 11166, 11167, 2]
+// Dependencies: [11212, 5196, 6055, 3, 11214, 11215, 2]
 // Exports: createSound, createSoundForPack, playSound
 
-// Module 11163 (SoundUtils)
+// Module 11211 (SoundUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 6040 */;
-import getSoundsForPackDefault from "getSoundsForPack" /* 11166 */;
-import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 11167 */;
-import SoundpackStore from "SoundpackStore" /* 11164 */;
+import Constants from "Constants" /* 6055 */;
+import getSoundsForPackDefault from "getSoundsForPack" /* 11214 */;
+import sound_playback_SoundUtils from "sound_playback/SoundUtils" /* 11215 */;
+import SoundpackStore from "SoundpackStore" /* 11212 */;
 import StreamerModeStore from "StreamerModeStore" /* 5196 */;
 import size from "module_2" /* 2 */;
 

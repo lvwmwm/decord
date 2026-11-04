@@ -1,22 +1,22 @@
-// Module ID: 9248
-// Function ID: 9249
+// Module ID: 9265
+// Function ID: 9266
 // Name: InstantInviteUtils
-// Dependencies: [4989, 4990, 5053, 6962, 5083, 1385, 7519, 1072, 6899, 8004, 9249, 1113, 2]
+// Dependencies: [4989, 4990, 5053, 6977, 5083, 1385, 7535, 1072, 6914, 8020, 9266, 1113, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 9248 (InstantInviteUtils)
+// Module 9265 (InstantInviteUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6899 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 8004 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9249 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6914 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 8020 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9266 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7519 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7535 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -370,9 +370,9 @@ export function generateRowsForQuery(arg0) {
       _require = undefined;
       importDefault = undefined;
       ({ rows: c0, counts: c1, query: query5, inviteTargetType: inviteTargetType2 } = obj10);
-      if (inviteTargetType2 === tmp39(8004).InviteTargetTypes.EMBEDDED_APPLICATION) {
+      if (inviteTargetType2 === tmp39(8020).InviteTargetTypes.EMBEDDED_APPLICATION) {
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: query5, limit: 3, guildId: "channel_id" };
+        const obj12 = { query: query5, limit: 3, guildId: "id" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };

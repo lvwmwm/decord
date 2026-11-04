@@ -1,12 +1,12 @@
-// Module ID: 9200
-// Function ID: 9201
+// Module ID: 9217
+// Function ID: 9218
 // Name: EditGuildEventStepHeader
-// Dependencies: [19, 17, 21, 5141, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 5761, 2]
 // Exports: default
 
-// Module 9200 (EditGuildEventStepHeader)
+// Module 9217 (EditGuildEventStepHeader)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -35,7 +35,7 @@ export default function EditGuildEventStepHeader(subtitle) {
   if (null != subtitle) {
     tmp4Result = null;
     if ("" !== subtitle) {
-      const obj3 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: subtitle };
+      const obj3 = { style: tmp.headerSubtitle, variant: "body-sm/medium", color: "text-default", children: subtitle };
       tmp4Result = tmp4(Text_Text.Text, obj3);
     }
   }

@@ -1,20 +1,20 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 15700
+// Function ID: 15701
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1072, 21, 15614, 15615, 15616, 5141, 575, 5376, 1652, 5138, 5148, 5757, 14289, 5837, 11729, 5747, 8587, 2]
+// Dependencies: [19, 17, 1072, 21, 15701, 15702, 15703, 5141, 575, 5377, 1652, 5138, 5148, 5771, 14375, 5851, 11784, 5761, 8604, 2]
 // Exports: default
 
-// Module 15613 (GuildBoostingMarketingProgressBarMarker)
+// Module 15700 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11729 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15614 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15615 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15616 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11784 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15701 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15702 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15703 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -56,7 +56,7 @@ function ProgressBarMarkerInnerContent(arg0) {
   isTierUnlocked = undefined;
   ({ isTierAnimated, isCurrentTier, useReducedMotion, isDisabled } = arg0);
   let tmp = closure_10();
-  const tmp4 = isTierUnlocked(5376)();
+  const tmp4 = isTierUnlocked(5377)();
   let obj = sharedValue(1652);
   let num = 1;
   sharedValue = obj.useSharedValue(1);
@@ -116,11 +116,11 @@ function ProgressBarMarkerInnerContent(arg0) {
   if (tier !== BoostedGuildTiers.NONE) {
     let tmp23Result;
     if (isDisabled) {
-      tmp23Result = tmp23(tmp5(14289).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+      tmp23Result = tmp23(tmp5(14375).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
     } else {
       obj2 = { source: obj2[tier], style: items3 };
       items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];
-      const tmp2Result = isTierUnlocked(5837);
+      const tmp2Result = isTierUnlocked(5851);
       const unsafe_rawColors = tmp2(575).unsafe_rawColors;
       const obj3 = { tintColor: isTierUnlocked ? unsafe_rawColors.WHITE : unsafe_rawColors.PREMIUM_PERK_PINK };
       items3[1] = obj3;
@@ -252,9 +252,9 @@ export default function ProgressBarMarker(arg0) {
       tmp25Result = tmp25(tmp2Result, obj7);
     }
     items7 = [tmp25Result, ];
-    const obj8 = { variant: "text-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
-    const Text = tmp5(5747).Text;
-    tmp5Result4 = sharedValue(8587);
+    const obj8 = { variant: "body-xs/medium", children: tmp5Result4.getTierName(tier, { useLevels: false }) };
+    const Text = tmp5(5761).Text;
+    tmp5Result4 = sharedValue(8604);
     items7[1] = closure_6(Text, obj8);
     items5[2] = closure_7(View, obj6);
     return closure_7(View, obj2);

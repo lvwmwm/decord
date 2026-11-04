@@ -1,11 +1,11 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12270
+// Function ID: 12271
 // Name: useAnimatedKeyboardHeight
-// Dependencies: [12212, 2]
+// Dependencies: [12271, 2]
 // Exports: default
 
-// Module 12211 (useAnimatedKeyboardHeight)
-import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 12212 */;
+// Module 12270 (useAnimatedKeyboardHeight)
+import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 12271 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/keyboard/native/useAnimatedKeyboardHeight.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 8569
-// Function ID: 8570
+// Module ID: 8586
+// Function ID: 8587
 // Name: markup/MarkupParser
-// Dependencies: [8570, 2072, 2]
+// Dependencies: [8587, 2072, 2]
 
-// Module 8569 (markup/MarkupParser)
+// Module 8586 (markup/MarkupParser)
 import _modDef2072 from "module_2072" /* 2072 */;
-import MarkupASTUtils from "MarkupASTUtils" /* 8570 */;
+import MarkupASTUtils from "MarkupASTUtils" /* 8587 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

@@ -1,17 +1,17 @@
-// Module ID: 15078
-// Function ID: 15079
+// Module ID: 15158
+// Function ID: 15159
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 10980, 21, 5141, 575, 7543, 1113, 3995, 11005, 15077, 11109, 11009, 7486, 7441, 7373, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 11028, 21, 5141, 575, 7559, 1113, 3995, 11054, 15157, 11157, 11058, 7502, 7457, 7389, 5768, 2]
 // Exports: default
 
-// Module 15078 (ConjureCustomWidgetSheet)
+// Module 15158 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3995 from "module_3995" /* 3995 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10980 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -179,13 +179,13 @@ export default function ConjureCustomWidgetSheet() {
     }
   }), items);
   let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_9(BottomSheetTitleHeader, obj2), children: tmp15(tmp16, obj3) };
-  const ActionSheet = value(7486).ActionSheet;
+  const ActionSheet = value(7502).ActionSheet;
   obj2 = { title: intl.string(_modDef3995.yI85oV) };
-  BottomSheetTitleHeader = value(7441).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = value(7457).BottomSheetTitleHeader;
   intl = value(1113).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3995["09BSx3"]), placeholder: intl3.string(_modDef3995.K7zdCZ), description: intl4.string(_modDef3995.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15077).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
-  const TextArea = value(7373).TextArea;
+  let obj4 = { label: intl2.string(_modDef3995["09BSx3"]), placeholder: intl3.string(_modDef3995.K7zdCZ), description: intl4.string(_modDef3995.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15157).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  const TextArea = value(7389).TextArea;
   intl2 = value(1113).intl;
   intl3 = value(1113).intl;
   intl4 = value(1113).intl;
@@ -193,7 +193,7 @@ export default function ConjureCustomWidgetSheet() {
   tmp16 = View;
   items1 = [tmp11(TextArea, obj4), ];
   let obj5 = { variant: "primary", text: intl5.string(_modDef3995.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
-  const Button = tmp12(5754).Button;
+  const Button = tmp12(5768).Button;
   intl5 = tmp12(1113).intl;
   items1[1] = closure_9(Button, obj5);
   return closure_9(ActionSheet, obj);

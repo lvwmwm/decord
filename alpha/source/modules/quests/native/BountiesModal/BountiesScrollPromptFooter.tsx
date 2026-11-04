@@ -1,21 +1,21 @@
-// Module ID: 17069
-// Function ID: 17070
+// Module ID: 17161
+// Function ID: 17162
 // Name: BountiesScrollPromptFooter
-// Dependencies: [19, 17, 5142, 6901, 21, 5141, 575, 5377, 5380, 504, 1627, 1652, 5272, 17070, 17071, 10091, 2]
+// Dependencies: [19, 17, 5142, 6916, 21, 5141, 575, 5378, 5381, 504, 1627, 1652, 5273, 17162, 17163, 10139, 2]
 // Exports: default
 
-// Module 17069 (BountiesScrollPromptFooter)
+// Module 17161 (BountiesScrollPromptFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import timingPresets from "timingPresets" /* 5380 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
-import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10091 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 17070 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 17071 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import timingPresets from "timingPresets" /* 5381 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
+import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 10139 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 17162 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 17163 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -75,7 +75,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   items4 = [tmp.gradient, opacityStyle];
   const View2 = _modDef1652.View;
   str = "play";
-  BountiesScrollGradientRive = zIndex(5272).BountiesScrollGradientRive;
+  BountiesScrollGradientRive = zIndex(5273).BountiesScrollGradientRive;
   const tmp8 = closure_8;
   if (stateFromStores) {
     str = "halt";

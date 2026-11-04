@@ -1,14 +1,14 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12372
+// Function ID: 12373
 // Name: TabItem
-// Dependencies: [19, 17, 21, 1652, 5141, 575, 5757, 5747, 1705, 12308, 1377, 1113, 9619, 2]
+// Dependencies: [19, 17, 21, 1652, 5141, 575, 5771, 5761, 1705, 12373, 1377, 1113, 9638, 2]
 // Exports: TabItem
 
-// Module 12307 (TabItem)
+// Module 12372 (TabItem)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import spring_spring from "spring/spring" /* 5757 */;
+import spring_spring from "spring/spring" /* 5771 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5747);
+const Text_Text = tmp2(5761);
 function useAnimatedTextStyle(arg0) {
   let activeIndex;
   let index;
@@ -126,7 +126,7 @@ function TabItemCount(arg0) {
   TabItemNativeTsx2.__workletHash = 15126685663834;
   TabItemNativeTsx2.__initData = tmp7;
   const animatedStyle = useAnimatedStyle(TabItemNativeTsx2);
-  const obj2 = { style: items3, children: hasOwnProperty(Text_Text.Text, { animated: true, variant: "text-sm/medium", style: tmp13, lineClamp: 1, children: count }) };
+  const obj2 = { style: items3, children: hasOwnProperty(Text_Text.Text, { animated: true, variant: "body-sm/medium", style: tmp13, lineClamp: 1, children: count }) };
   items3 = [tmp.count, animatedStyle];
   tmp13 = useAnimatedTextStyle({ index, activeIndex, pressed, variant });
   const View = module_1652.View;
@@ -218,14 +218,14 @@ export function TabItem(arg0) {
   items2[1] = { flexGrow: num };
   const merged1 = Object.assign(merged);
   formatToPlainStringResult = undefined;
-  tmp3Result = index(12308);
+  tmp3Result = index(12373);
   const tmp3Result2 = index(1377);
   if (tmp3Result2.isAndroid()) {
     const intl = tmp3(1113).intl;
     const obj3 = { position: index + 1, tabCount: itemCount };
     formatToPlainStringResult = intl.formatToPlainString(tmp3(1113).t["4EsQA1"], obj3);
   }
-  items3 = [closure_5(index(5747).Text, { animated: true, variant: "text-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
+  items3 = [closure_5(index(5761).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
   let tmp14Result = null;
   if (null != count) {
     const obj4 = { count, index, activeIndex, pressed, variant };
@@ -234,7 +234,7 @@ export function TabItem(arg0) {
   items3[1] = tmp14Result;
   let tmp14Result2 = null;
   if (null != indicatorDot) {
-    const obj5 = { style: tmp2.indicatorDot, children: closure_5(index(9619).IndicatorDot, {}) };
+    const obj5 = { style: tmp2.indicatorDot, children: closure_5(index(9638).IndicatorDot, {}) };
     tmp14Result2 = tmp14(closure_4, obj5);
   }
   items3[2] = tmp14Result2;

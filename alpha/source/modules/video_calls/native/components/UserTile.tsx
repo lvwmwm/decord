@@ -1,28 +1,28 @@
-// Module ID: 11915
-// Function ID: 11916
+// Module ID: 11974
+// Function ID: 11975
 // Name: UserTile
-// Dependencies: [32, 19, 17, 6178, 11916, 502, 4990, 2135, 1072, 5801, 5888, 21, 5141, 575, 5138, 504, 8945, 1187, 11917, 5747, 1113, 11902, 11904, 11918, 11919, 11920, 11921, 9363, 6972, 11365, 11922, 11139, 11892, 5426, 11923, 2]
+// Dependencies: [32, 19, 17, 6193, 11975, 502, 4990, 2135, 1072, 5815, 5902, 21, 5141, 575, 5138, 504, 8962, 1187, 11976, 5761, 1113, 11961, 11963, 11977, 11978, 11979, 11980, 9380, 6987, 11415, 11981, 11187, 11951, 5428, 11982, 2]
 // Exports: default
 
-// Module 11915 (UserTile)
+// Module 11974 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CallConstants from "CallConstants" /* 5801 */;
-import Constants2 from "Constants" /* 5888 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11916 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11917 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11918 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11919 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11920 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11921 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11922 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CallConstants from "CallConstants" /* 5815 */;
+import Constants2 from "Constants" /* 5902 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 11975 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11976 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11977 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11978 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11979 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11980 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 11981 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 6178 */;
+import SoundboardStore from "SoundboardStore" /* 6193 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
@@ -144,7 +144,7 @@ let closure_19 = react.memo(function VideoContent(guildId) {
         const obj3 = { source: AssetRegistryDefault, size: native.Icon.Sizes.SMALL, disableColor: true };
         const Icon = native.Icon;
         items1 = [closure_15(Icon, obj3), ];
-        const obj4 = { variant: "text-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
+        const obj4 = { variant: "body-sm/normal", color: "text-default", style: closure_1.labelText, children: intl.string(intl2.t.m2Hyj0) };
         const Text = Text_Text.Text;
         intl = intl2.intl;
         items1[1] = closure_15(Text, obj4);

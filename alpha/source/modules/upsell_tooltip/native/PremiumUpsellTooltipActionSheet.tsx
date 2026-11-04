@@ -1,17 +1,17 @@
-// Module ID: 10069
-// Function ID: 10070
+// Module ID: 10117
+// Function ID: 10118
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 4987, 21, 5141, 575, 5171, 5395, 5837, 1187, 5747, 5754, 5381, 2]
+// Dependencies: [19, 17, 4987, 21, 5141, 575, 5171, 5396, 5851, 1187, 5761, 5768, 5382, 2]
 // Exports: default
 
-// Module 10069 (PremiumUpsellTooltipActionSheet)
+// Module 10117 (PremiumUpsellTooltipActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -26,8 +26,8 @@ let size;
 let size1;
 let tmp3;
 const native = tmp3(1187);
-const Text_Text = tmp3(5747);
-const components_Button_Button = tmp3(5754);
+const Text_Text = tmp3(5761);
+const components_Button_Button = tmp3(5768);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -97,7 +97,7 @@ export default function PremiumUpsellTooltipActionSheet(arg0) {
   const obj6 = { variant: "heading-xl/semibold", style: tmp.title, color: "mobile-text-heading-primary", accessibilityRole: "header", children: title };
   items2[1] = closure_5(Text_Text.Text, obj6);
   items1[1] = closure_6(View, obj4);
-  const obj7 = { style: items3, variant: "text-md/medium", color: "text-default", children: description };
+  const obj7 = { style: items3, variant: "body-md/medium", color: "text-default", children: description };
   items3 = [tmp.description, descriptionStyle];
   items1[2] = closure_5(Text_Text.Text, obj7);
   const obj9 = {

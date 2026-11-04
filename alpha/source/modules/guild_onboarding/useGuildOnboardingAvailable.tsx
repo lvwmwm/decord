@@ -1,10 +1,10 @@
-// Module ID: 7638
-// Function ID: 7639
+// Module ID: 7654
+// Function ID: 7655
 // Name: useGuildOnboardingAvailable
 // Dependencies: [5046, 1072, 504, 2]
 // Exports: default, isGuildOnboardingAvailable
 
-// Module 7638 (useGuildOnboardingAvailable)
+// Module 7654 (useGuildOnboardingAvailable)
 import Constants from "Constants" /* 1072 */;
 import ImpersonateStore from "ImpersonateStore" /* 5046 */;
 import size from "module_2" /* 2 */;

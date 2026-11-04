@@ -1,16 +1,16 @@
-// Module ID: 15191
-// Function ID: 15192
+// Module ID: 15271
+// Function ID: 15272
 // Name: ProductDetailsActionSheetVariants
-// Dependencies: [19, 17, 21, 5141, 575, 9665, 7106, 1113, 9703, 7423, 7855, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9684, 7121, 1113, 9721, 7439, 7871, 5761, 2]
 // Exports: default
 
-// Module 15191 (ProductDetailsActionSheetVariants)
+// Module 15271 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 7106 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7423 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9665 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9703 */;
+import Pressables from "Pressables" /* 7121 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7439 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9684 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9721 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -102,13 +102,13 @@ export default function ProductDetailsActionSheetVariants(disabled) {
   if (obj.getIsVariantProduct(product)) {
     const obj2 = { style: tmp.container, children: items1 };
     const obj3 = { style: tmp.headerRow, children: items };
-    const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl.string(selectedVariantIndex(onVariantSelect[7]).t.wbgaj6) };
+    const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl.string(selectedVariantIndex(onVariantSelect[7]).t.wbgaj6) };
     const Text = tmp2(tmp3[11]).Text;
     intl = tmp2(tmp3[7]).intl;
     items = [closure_4(Text, obj4), ];
     let tmp7Result = product.variants.length > selectedVariantIndex;
     if (tmp7Result) {
-      const obj5 = { variant: "text-md/medium", color: "text-default", lineClamp: 1, style: tmp.text, children: product.variants[selectedVariantIndex].variantLabel };
+      const obj5 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, style: tmp.text, children: product.variants[selectedVariantIndex].variantLabel };
       tmp7Result = tmp7(tmp2(tmp3[11]).Text, obj5);
     }
     items[1] = tmp7Result;

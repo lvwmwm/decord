@@ -1,22 +1,22 @@
-// Module ID: 18733
-// Function ID: 18734
+// Module ID: 18834
+// Function ID: 18835
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1385, 21, 14989, 8842, 14994, 18682, 575, 504, 6559, 9418, 7450, 8840, 9444, 9468, 8838, 18734, 2123, 9048, 13517, 18736, 1113, 18738, 5747, 5195, 6980, 11, 671, 7106, 5837, 18739, 2]
+// Dependencies: [19, 17, 1385, 21, 15069, 8859, 15074, 18783, 575, 504, 6574, 9435, 7466, 8857, 9462, 9486, 8855, 18835, 2123, 9065, 13601, 18837, 1113, 18839, 5761, 5195, 6995, 11, 671, 7121, 5851, 18840, 2]
 // Exports: default
 
-// Module 18733 (GamingLikeEntryRow)
+// Module 18834 (GamingLikeEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8838 */;
-import utils from "utils" /* 8842 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9048 */;
-import BadgesAll from "Badges" /* 14989 */;
-import TrendingType from "TrendingType" /* 14994 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8855 */;
+import utils from "utils" /* 8859 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
+import BadgesAll from "Badges" /* 15069 */;
+import TrendingType from "TrendingType" /* 15074 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18682 */;
+import createICYMIStyles from "createICYMIStyles" /* 18783 */;
 import size_mod from "module_2" /* 2 */;
 
 let Badge, GameShareModal;
@@ -165,7 +165,7 @@ export default function GamingLikeEntryRow(content) {
   }, items2);
   const items3 = [content];
   const callback1 = react.useCallback(() => {
-    const promise = asyncRequire(18734, dependencyMap.paths);
+    const promise = asyncRequire(18835, dependencyMap.paths);
     promise.then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {
@@ -207,10 +207,10 @@ export default function GamingLikeEntryRow(content) {
           const obj5 = { fontFamily: displayNameStylesFont };
         }
         obj6 = { children: items5 };
-        const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp20, children: tmp5Result6.getName(stateFromStores) };
+        const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp20, children: tmp5Result6.getName(stateFromStores) };
         tmp5Result6 = author_id(tmp3[25]);
         items5 = [closure_7(Text, obj8), ];
-        const obj9 = { lineClamp: 1, variant: "text-xs/normal", color: "text-muted", children: getRelativeTimestamp(tmp5Result7.extractTimestamp(content.id)) };
+        const obj9 = { lineClamp: 1, variant: "body-xs/normal", color: "text-muted", children: getRelativeTimestamp(tmp5Result7.extractTimestamp(content.id)) };
         const Text2 = tmp2(tmp3[24]).Text;
         getRelativeTimestamp = tmp2(tmp3[26]).getRelativeTimestamp;
         tmp2(tmp3[26]);
@@ -224,7 +224,7 @@ export default function GamingLikeEntryRow(content) {
         }
         const items6 = [tmp.card, ];
         let tmp23 = null;
-        obj10 = { variant: "text-sm/normal", lineClamp: 1, color: str, children: stringResult };
+        obj10 = { variant: "body-sm/normal", lineClamp: 1, color: str, children: stringResult };
         if (null != primaryColor) {
           const obj11 = { backgroundColor: alphaResult.hex() };
           const obj17 = author_id(tmp3[28])(primaryColor);
@@ -245,7 +245,7 @@ export default function GamingLikeEntryRow(content) {
         const PressableOpacity2 = tmp2(tmp3[29]).PressableOpacity;
         intl2 = tmp2(tmp3[22]).intl;
         obj20 = { gameName: getOrFetchApplication.name };
-        obj21 = { variant: "text-md/semibold", style: tmp.gameName, children: getOrFetchApplication.name };
+        obj21 = { variant: "body-md/semibold", style: tmp.gameName, children: getOrFetchApplication.name };
         items8 = [closure_7(PressableOpacity2, obj19), ];
         let tmp16Result = null != memo && memo.length > 0;
         if (tmp16Result) {

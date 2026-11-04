@@ -1,21 +1,21 @@
-// Module ID: 19906
-// Function ID: 19907
+// Module ID: 20022
+// Function ID: 20023
 // Name: GuildSettingsModalServerTagCustomize
-// Dependencies: [32, 19, 17, 9174, 9203, 8517, 21, 575, 5141, 9205, 1493, 9175, 504, 9176, 9202, 5381, 19907, 2123, 7329, 14867, 8301, 6147, 7208, 1113, 5855, 5747, 19908, 19912, 2]
+// Dependencies: [32, 19, 17, 9191, 9220, 8534, 21, 575, 5141, 9222, 1493, 9192, 504, 9193, 9219, 5382, 20023, 2123, 7345, 14941, 8317, 6162, 7223, 1113, 5869, 5761, 20024, 20028, 2]
 // Exports: default
 
-// Module 19906 (GuildSettingsModalServerTagCustomize)
+// Module 20022 (GuildSettingsModalServerTagCustomize)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import GuildTagConstants from "GuildTagConstants" /* 8517 */;
-import GuildProfileStore from "GuildProfileStore" /* 9174 */;
-import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9176 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import GuildTagConstants from "GuildTagConstants" /* 8534 */;
+import GuildProfileStore from "GuildProfileStore" /* 9191 */;
+import GuildProfileActionCreators from "GuildProfileActionCreators" /* 9193 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9203 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9220 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -180,7 +180,7 @@ export default function GuildSettingsModalServerTagCustomize(guildId) {
         const obj10 = { size: "sm", color: fetchStatus(tmp3[7]).colors.ICON_SUBTLE };
         const CircleInformationIcon = tmp2(tmp3[24]).CircleInformationIcon;
         items11 = [closure_9(CircleInformationIcon, obj10), ];
-        const obj11 = { variant: "text-sm/medium", color: "text-subtle", style: tmp.warningText, children: intl3.string(tmp2(tmp3[23]).t["4tVt6P"]) };
+        const obj11 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.warningText, children: intl3.string(tmp2(tmp3[23]).t["4tVt6P"]) };
         const Text = tmp2(tmp3[25]).Text;
         intl3 = tmp2(tmp3[23]).intl;
         items11[1] = closure_9(Text, obj11);

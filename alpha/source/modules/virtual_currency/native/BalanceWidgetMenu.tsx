@@ -1,24 +1,24 @@
-// Module ID: 17850
-// Function ID: 17851
+// Module ID: 17946
+// Function ID: 17947
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1072, 1074, 4987, 6901, 21, 7101, 5747, 1113, 10650, 4974, 1252, 9810, 6904, 17851, 9685, 17043, 7471, 5381, 7843, 17852, 14642, 5171, 5767, 2]
+// Dependencies: [19, 1072, 1074, 4987, 6916, 21, 7116, 5761, 1113, 10698, 4974, 1252, 9828, 6919, 17947, 9704, 17135, 7487, 5382, 7859, 17948, 14722, 5171, 5781, 2]
 // Exports: default
 
-// Module 17850 (BalanceWidgetMenu)
+// Module 17946 (BalanceWidgetMenu)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
-import QuestTypes from "QuestTypes" /* 6904 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import _mod9685 from "module_9685" /* 9685 */;
-import QuestUtils from "QuestUtils" /* 9810 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10650 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
+import QuestTypes from "QuestTypes" /* 6919 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import _mod9704 from "module_9704" /* 9704 */;
+import QuestUtils from "QuestUtils" /* 9828 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10698 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
@@ -41,7 +41,7 @@ function OrbsBalanceRow(isBusy) {
   }
   const obj = { label: null, accessibilityLabel, accessibilityState: obj3, onPress, trailing, start: true, end: true };
   const TableRow = TableRow2.TableRow;
-  ({ variant: "text-sm/semibold", color: "text-default", children: intl.string(intl3.t.gGtZpz) });
+  ({ variant: "body-sm/semibold", color: "text-default", children: intl.string(intl3.t.gGtZpz) });
   const Text = Text_Text.Text;
   intl = intl3.intl;
   obj3 = undefined;
@@ -85,9 +85,9 @@ function BalanceWidgetMenu() {
   let obj5;
   let str;
   let tmp5Result;
-  let obj = str(9685);
+  let obj = str(9704);
   str = obj.useFetchVirtualCurrencyBalance().balance;
-  let obj2 = str(17043);
+  let obj2 = str(17135);
   const orbBalanceEntrypoint = obj2.useOrbBalanceEntrypoint({ location: "MobileBalanceWidgetMenu" });
   const openBalanceWidgetActionSheet = orbBalanceEntrypoint.openBalanceWidgetActionSheet;
   let items = [str, openBalanceWidgetActionSheet];
@@ -137,7 +137,7 @@ function BalanceWidgetMenu() {
   }, items);
   if (isOrbchievementsEnabled) {
     let obj3 = { balance: str, notificationType, onPress: callback };
-    tmp5Result = tmp5(tmp(17852).OrbWalletEntryRow, obj3);
+    tmp5Result = tmp5(tmp(17948).OrbWalletEntryRow, obj3);
   } else {
     let intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
@@ -165,7 +165,7 @@ let result = size.fileFinishedImporting("modules/virtual_currency/native/Balance
 
 export default function BalanceWidgetMenuWrapper() {
   let tmp5Result;
-  const obj = _mod9685;
+  const obj = _mod9704;
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {

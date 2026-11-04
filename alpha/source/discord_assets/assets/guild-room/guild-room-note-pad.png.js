@@ -1,8 +1,8 @@
-// Module ID: 8044
-// Function ID: 8045
+// Module ID: 8060
+// Function ID: 8061
 // Dependencies: [2]
 
-// Module 8044
+// Module 8060
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/guild-room-note-pad.png.js");

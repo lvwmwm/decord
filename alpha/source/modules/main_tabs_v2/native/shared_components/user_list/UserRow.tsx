@@ -1,9 +1,9 @@
-// Module ID: 10868
-// Function ID: 10869
+// Module ID: 10916
+// Function ID: 10917
 // Name: UserRow
-// Dependencies: [19, 17, 5142, 2167, 7928, 4990, 5881, 5083, 10857, 1072, 21, 1357, 5141, 575, 7609, 38, 10869, 10870, 5831, 10871, 7612, 7929, 504, 1187, 5747, 5195, 10875, 7446, 6973, 1113, 10897, 10898, 7119, 5754, 2156, 9964, 8767, 8874, 2123, 8913, 10900, 10051, 6160, 8543, 6559, 9418, 10902, 9330, 10910, 9423, 10911, 7100, 10927, 7101, 2]
+// Dependencies: [19, 17, 5142, 2167, 7944, 4990, 5895, 5083, 10905, 1072, 21, 1357, 5141, 575, 7625, 38, 10917, 10918, 5845, 10919, 7628, 7945, 504, 1187, 5761, 5195, 10923, 7462, 6988, 1113, 10945, 10946, 7134, 5768, 2156, 10012, 8784, 8891, 2123, 8930, 10948, 10099, 6175, 8560, 6574, 9435, 10950, 9347, 10958, 9440, 10959, 7115, 10975, 7116, 2]
 
-// Module 10868 (UserRow)
+// Module 10916 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -11,29 +11,29 @@ import intl14 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import utils_StringUtils from "utils/StringUtils" /* 2156 */;
 import UserUtils from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7119 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7612 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7929 */;
-import ChatIcon from "ChatIcon" /* 8767 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 9964 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 10051 */;
-import UserRowConstants from "UserRowConstants" /* 10857 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10870 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10871 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10875 */;
-import ActionButtonDefault from "ActionButton" /* 10897 */;
-import XLargeIcon from "XLargeIcon" /* 10898 */;
-import CrownIcon2 from "CrownIcon" /* 10900 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7134 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7628 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 7945 */;
+import ChatIcon from "ChatIcon" /* 8784 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 10012 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 10099 */;
+import UserRowConstants from "UserRowConstants" /* 10905 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10918 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10919 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10923 */;
+import ActionButtonDefault from "ActionButton" /* 10945 */;
+import XLargeIcon from "XLargeIcon" /* 10946 */;
+import CrownIcon2 from "CrownIcon" /* 10948 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7928 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7944 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -96,14 +96,14 @@ function UserRowSubLabel(arg0) {
       }
       obj6 = { uri: str };
       items1 = [closure_14(Icon, obj5, stateFromStores.id), ];
-      const obj7 = { lineClamp: 1, variant: "text-xs/medium", color: "text-subtle", children: stateFromStores.name };
+      const obj7 = { lineClamp: 1, variant: "body-xs/medium", color: "text-subtle", children: stateFromStores.name };
       items1[1] = closure_14(Text_Text.Text, obj7);
       tmp14Result = tmp14(tmp15, obj4);
     }
     tmp9 = tmp14Result;
   } else {
-    const obj8 = { lineClamp: 1, variant: "text-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5747).Text;
+    const obj8 = { lineClamp: 1, variant: "body-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
+    const Text = tmp2(5761).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -115,7 +115,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "Array" };
+  obj = { lineHeight: "r" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "y" };
+      let obj2 = { accessibilityActions: items, actions: "a" };
       return obj2;
     } else {
       let tmp9;
@@ -608,7 +608,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(8874, dependencyMap.paths);
+      const promise = asyncRequire(8891, dependencyMap.paths);
       promise.then((result) => {
         obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);
@@ -744,7 +744,7 @@ const memoResult = react.memo(function UserRow(type) {
       formatToPlainStringResult = intl.formatToPlainString(tmp6(tmp5[29]).t["/6mw10"], obj9);
     }
   }
-  let obj10 = { lineClamp: 1, variant: "text-md/semibold" };
+  let obj10 = { lineClamp: 1, variant: "body-md/semibold" };
   let obj11 = { style: tmp3.usernameLabelContainer, children: null };
   if (flag6) {
     if (null != tmp26) {

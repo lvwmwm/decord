@@ -3,7 +3,7 @@
 // Dependencies: []
 
 // Module 1353
-let hasOwnProperty, version;
+let hasOwnProperty;
 
 const fn = function() {
   function format(arg0) {
@@ -724,7 +724,7 @@ const fn = function() {
                 if (tmp11) {
                   let tmp145;
                   try {
-                    version = obj.require("ringo/engine").version;
+                    let version = obj.require("ringo/engine").version;
                     version1 = version.join(".");
                     text1 = "RingoJS";
                     tmp145 = tmp131;
@@ -1292,7 +1292,7 @@ const fn = function() {
                       family: replaced1,
                       version: tmp277,
                       toString() {
-                                        version = this.version;
+                                        const version = this.version;
                                         let str = "";
                                         let str2 = "";
                                         const family = this.family;

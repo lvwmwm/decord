@@ -1,15 +1,15 @@
-// Module ID: 20241
-// Function ID: 20242
+// Module ID: 20357
+// Function ID: 20358
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 5141, 8096, 8097, 6147, 5747, 13344, 20239, 13556, 2]
+// Dependencies: [19, 21, 5141, 8112, 8113, 6162, 5761, 13427, 20355, 13640, 2]
 // Exports: default
 
-// Module 20241 (SafetyFlowTaskScreen)
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import ModalScreen2 from "ModalScreen" /* 8096 */;
-import ModalContent2 from "ModalContent" /* 8097 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20239 */;
+// Module 20357 (SafetyFlowTaskScreen)
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import ModalScreen2 from "ModalScreen" /* 8112 */;
+import ModalContent2 from "ModalContent" /* 8113 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20355 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -57,15 +57,15 @@ export default function SafetyFlowTaskScreen(title) {
   items[1] = _false(Text_Text.Text, obj);
   let tmp7Result = null != subtitle;
   if (tmp7Result) {
-    const obj2 = { variant: "text-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
-    tmp7Result = tmp7(tmp4(5747).Text, obj2);
+    const obj2 = { variant: "body-md/medium", color: subtitleColor, style: tmp2.header, children: subtitle };
+    tmp7Result = tmp7(tmp4(5761).Text, obj2);
   }
   const obj3 = { children: items1 };
   items[2] = tmp7Result;
   items1 = [React3(Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
   const children1 = [React3(ModalContent, obj3), ];
   if (undefined === footer) {
-    const ModalFooter = tmp4(13344).ModalFooter;
+    const ModalFooter = tmp4(13427).ModalFooter;
     if (withLogout) {
       withLogout = tmp7(LogOutDisclaimerDefault, {});
     }
@@ -73,7 +73,7 @@ export default function SafetyFlowTaskScreen(title) {
     let tmp7Result2 = null != action;
     if (tmp7Result2) {
       const obj4 = { variant: "primary", text: action, onPress: onAction, loading: submitting };
-      tmp7Result2 = tmp7(tmp4(13556).ModalActionButton, obj4);
+      tmp7Result2 = tmp7(tmp4(13640).ModalActionButton, obj4);
     }
     const obj5 = { children: items3 };
     items3[1] = tmp7Result2;

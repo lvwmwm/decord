@@ -1,15 +1,15 @@
-// Module ID: 13867
-// Function ID: 13868
+// Module ID: 13953
+// Function ID: 13954
 // Name: CustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [19, 17, 1072, 4987, 21, 5141, 575, 7446, 7471, 7687, 5395, 7412, 5718, 13868, 1393, 13869, 13870, 13871, 13872, 13873, 13874, 13875, 1187, 1113, 5747, 3997, 5754, 2]
+// Dependencies: [19, 17, 1072, 4987, 21, 5141, 575, 7462, 7487, 7703, 5396, 7428, 5731, 13954, 1393, 13955, 13956, 13957, 13958, 13959, 13960, 13961, 1187, 1113, 5761, 3997, 5768, 2]
 // Exports: default
 
-// Module 13867 (CustomTypingIndicatorAnnounceActionSheet)
+// Module 13953 (CustomTypingIndicatorAnnounceActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -109,21 +109,21 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
   const obj7 = { style: items4, children: closure_7(tmp3Result, obj8) };
   items4 = [, ];
   ({ row: arr6[0], outerRow: arr6[1] } = tmp2);
-  obj8 = { name: "Cap", suggestion: markAsDismissed(analyticsLocations[14]).TypingSuggestion.UNSPECIFIED, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, emojiSource: items5, style: tmp2.outerStack };
+  obj8 = { name: "Cap", suggestion: markAsDismissed(analyticsLocations[14]).TypingSuggestion.UNSPECIFIED, emojiSize: 24, spacing: 8, textVariant: "body-md/medium", textColor: "text-subtle", lineClamp: 1, emojiSource: items5, style: tmp2.outerStack };
   tmp3Result = ref(analyticsLocations[13]);
   items5 = [ref(analyticsLocations[15]), ref(analyticsLocations[16]), ref(analyticsLocations[15])];
   items6 = [closure_7(View, obj7), , ];
   const obj9 = { style: items7, children: closure_7(tmp3Result3, obj10) };
   items7 = [, ];
   ({ row: arr9[0], innerRow: arr9[1] } = tmp2);
-  obj10 = { name: "Rose", suggestion: markAsDismissed(analyticsLocations[14]).TypingSuggestion.YAPPING, emojiSize: 28, spacing: 10, textVariant: "text-lg/medium", textColor: "text-default", lineClamp: 1, style: tmp2.innerStack, emojiSource: items8 };
+  obj10 = { name: "Rose", suggestion: markAsDismissed(analyticsLocations[14]).TypingSuggestion.YAPPING, emojiSize: 28, spacing: 10, textVariant: "body-lg/medium", textColor: "text-default", lineClamp: 1, style: tmp2.innerStack, emojiSource: items8 };
   tmp3Result3 = ref(analyticsLocations[13]);
   items8 = [ref(analyticsLocations[17]), ref(analyticsLocations[18]), ref(analyticsLocations[17])];
   items6[1] = closure_7(View, obj9);
   const obj11 = { style: items9, children: closure_7(tmp3Result4, obj12) };
   items9 = [, ];
   ({ row: arr11[0], outerRow: arr11[1] } = tmp2);
-  obj12 = { name: "Loky", suggestion: markAsDismissed(analyticsLocations[14]).TypingSuggestion.OVERSHARING, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, style: tmp2.outerStack, emojiSource: items10 };
+  obj12 = { name: "Loky", suggestion: markAsDismissed(analyticsLocations[14]).TypingSuggestion.OVERSHARING, emojiSize: 24, spacing: 8, textVariant: "body-md/medium", textColor: "text-subtle", lineClamp: 1, style: tmp2.outerStack, emojiSource: items10 };
   tmp3Result4 = ref(analyticsLocations[13]);
   items10 = [ref(analyticsLocations[19]), ref(analyticsLocations[20]), ref(analyticsLocations[21])];
   items6[2] = closure_7(View, obj11);
@@ -136,7 +136,7 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
   const Text = markAsDismissed(tmp4[24]).Text;
   intl2 = markAsDismissed(tmp4[23]).intl;
   items3[3] = closure_7(Text, obj14);
-  const obj15 = { variant: "text-md/normal", style: tmp2.body, color: "text-muted", children: intl3.string(ref(analyticsLocations[25]).yezU3E) };
+  const obj15 = { variant: "body-md/normal", style: tmp2.body, color: "text-muted", children: intl3.string(ref(analyticsLocations[25]).yezU3E) };
   const Text2 = markAsDismissed(tmp4[24]).Text;
   intl3 = markAsDismissed(tmp4[23]).intl;
   items3[4] = closure_7(Text2, obj15);

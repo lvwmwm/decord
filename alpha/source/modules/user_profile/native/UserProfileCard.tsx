@@ -1,16 +1,16 @@
-// Module ID: 7496
-// Function ID: 7497
+// Module ID: 7512
+// Function ID: 7513
 // Name: UserProfileCard
-// Dependencies: [19, 17, 7497, 21, 5141, 575, 7106, 5747, 7498, 2]
+// Dependencies: [19, 17, 7513, 21, 5141, 575, 7121, 5761, 7514, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 7496 (UserProfileCard)
+// Module 7512 (UserProfileCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7497 */;
+import Constants from "Constants" /* 7513 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const ChevronSmallRightIcon = tmp3(7498);
+const ChevronSmallRightIcon = tmp3(7514);
 const View = react_native.View;
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: closure_4 } = Constants);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
@@ -62,7 +62,7 @@ export default function UserProfileCard(arg0) {
     if (tmp3Result) {
       const obj3 = { style: tmp2.titleContent, children: items1 };
       items1 = [titleLeadingIcon, , ];
-      const obj4 = { style: tmp2.text, accessibilityRole: "header", variant: "text-sm/medium", color: "text-strong", lineClamp: 1, children: title };
+      const obj4 = { style: tmp2.text, accessibilityRole: "header", variant: "body-sm/medium", color: "text-strong", lineClamp: 1, children: title };
       items1[1] = hasOwnProperty(Text_Text.Text, obj4);
       items1[2] = titleIcon;
       tmp3Result = tmp3(tmp4, obj3);
@@ -110,7 +110,7 @@ export function UserProfileFormRow(arg0) {
   if (labelColor == null) {
     labelColor = str2;
   }
-  const obj4 = { variant: "text-md/semibold", color: labelColor, style: tmp.rowLabelText, children: label };
+  const obj4 = { variant: "body-md/semibold", color: labelColor, style: tmp.rowLabelText, children: label };
   items[1] = hasOwnProperty(Text, obj4);
   let tmp6Result = null != hint;
   if (tmp6Result) {

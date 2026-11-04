@@ -1,14 +1,14 @@
-// Module ID: 12864
-// Function ID: 12865
+// Module ID: 12945
+// Function ID: 12946
 // Name: useConjureOverlayBackground
-// Dependencies: [5, 32, 19, 10996, 504, 11029, 2]
+// Dependencies: [5, 32, 19, 11044, 504, 11078, 2]
 // Exports: default
 
-// Module 12864 (useConjureOverlayBackground)
+// Module 12945 (useConjureOverlayBackground)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 10996 */;
+import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 11044 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

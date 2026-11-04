@@ -1,15 +1,15 @@
-// Module ID: 7489
-// Function ID: 7490
+// Module ID: 7505
+// Function ID: 7506
 // Name: TableSwitchRow
-// Dependencies: [32, 19, 17, 21, 5141, 1377, 5310, 7101, 5747, 7490, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 1377, 5311, 7116, 5761, 7506, 2]
 // Exports: TableSwitchRow
 
-// Module 7489 (TableSwitchRow)
+// Module 7505 (TableSwitchRow)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import native from "native" /* 5310 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import FormSwitch from "FormSwitch" /* 7490 */;
+import native from "native" /* 5311 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import FormSwitch from "FormSwitch" /* 7506 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,11 +90,11 @@ export function TableSwitchRow(value) {
     const tmp17 = View;
     if (!obj4.isValidElement(label)) {
       let str = "mobile-text-heading-primary";
-      const Text = tmp3(5747).Text;
+      const Text = tmp3(5761).Text;
       if ("danger" === variant) {
         str = "text-feedback-critical";
       }
-      const obj7 = { variant: "text-md/semibold", color: str, includeFontPadding: true, children: label };
+      const obj7 = { variant: "body-md/semibold", color: str, includeFontPadding: true, children: label };
       tmp11Result = tmp11(Text, obj7);
     }
     items1 = [tmp11Result, trailing];

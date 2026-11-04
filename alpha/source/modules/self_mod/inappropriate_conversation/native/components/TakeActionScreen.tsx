@@ -1,22 +1,22 @@
-// Module ID: 17878
-// Function ID: 17879
+// Module ID: 17974
+// Function ID: 17975
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 5083, 1385, 11393, 21, 5141, 575, 504, 11432, 11435, 1499, 7612, 7620, 11406, 8476, 5832, 1113, 5831, 5754, 11443, 10215, 8747, 8286, 5829, 5747, 2]
+// Dependencies: [5, 32, 19, 17, 5083, 1385, 11443, 21, 5141, 575, 504, 11482, 11485, 1499, 7628, 7636, 11456, 8492, 5846, 1113, 5845, 5768, 11493, 10263, 8764, 8302, 5843, 5761, 2]
 // Exports: default
 
-// Module 17878 (TakeActionScreen)
+// Module 17974 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7612 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7620 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11406 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7628 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7636 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11456 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 11393 */;
+import Constants from "Constants" /* 11443 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -242,7 +242,7 @@ export default function TakeActionButtons(senderId) {
         trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_THROUGHLINE);
       };
       const items6 = [tmp14(Button3, obj11), ];
-      const obj12 = { variant: "text-xs/medium", color: "text-default", style: tmp.textCenter, children: intl5.string(tmp2(tmp3[19]).t["PMeb/r"]) };
+      const obj12 = { variant: "body-xs/medium", color: "text-default", style: tmp.textCenter, children: intl5.string(tmp2(tmp3[19]).t["PMeb/r"]) };
       const Text2 = tmp2(tmp3[27]).Text;
       intl5 = tmp2(tmp3[19]).intl;
       items6[1] = closure_14(Text2, obj12);
@@ -256,7 +256,7 @@ export default function TakeActionButtons(senderId) {
         trackAnalyticsEvent(SafetyWarningUtils.CtaEventTypes.USER_TAKEOVER_MODAL_NO_FILTR);
       };
       const items7 = [tmp14(Button3, obj11), ];
-      const obj13 = { variant: "text-xs/medium", color: "text-default", style: tmp.textCenter, children: intl4.string(tmp2(tmp3[19]).t.XNwhxC) };
+      const obj13 = { variant: "body-xs/medium", color: "text-default", style: tmp.textCenter, children: intl4.string(tmp2(tmp3[19]).t.XNwhxC) };
       const Text = tmp2(tmp3[27]).Text;
       intl4 = tmp2(tmp3[19]).intl;
       items7[1] = closure_14(Text, obj13);

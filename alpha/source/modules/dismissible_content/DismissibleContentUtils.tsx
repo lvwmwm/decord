@@ -1,7 +1,7 @@
 // Module ID: 4975
 // Function ID: 4976
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1231, 4976, 4977, 4982, 4987, 1072, 4981, 4988, 11, 4971, 5193, 504, 4974, 572, 5810, 1252, 4978, 5811, 2]
+// Dependencies: [32, 5, 1231, 4976, 4977, 4982, 4987, 1072, 4981, 4988, 11, 4971, 5193, 504, 4974, 572, 5824, 1252, 4978, 5825, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
 // Module 4975 (DismissibleContentUtils)
@@ -16,8 +16,8 @@ import DismissibleContentTypes from "DismissibleContentTypes" /* 4981 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4988 */;
 import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5193 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5810 */;
-import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5811 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5824 */;
+import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5825 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -26,7 +26,7 @@ import DismissibleContentShownStateStore from "DismissibleContentShownStateStore
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c2, c3, c4, importDefault, version;
+let _require, c2, c3, c4, importDefault;
 
 let c10;
 let c9;
@@ -338,6 +338,7 @@ function trackDismissibleContentShown(WISHLIST_MOBILE_NUX_ACTION_SHEET, groupNam
   let tmp3;
   let tmp4;
   let tmp7Result;
+  let version;
   let tmp = arg2;
   if (arg2 === undefined) {
     tmp = null;
@@ -381,6 +382,7 @@ function trackDismissibleContentDismissed(content, dismissAction) {
   let numTimesDismissed;
   let snowflakeId;
   let tmp18Result;
+  let version;
   dismissAction = undefined;
   if (dismissAction != null) {
     dismissAction = dismissAction.dismissAction;

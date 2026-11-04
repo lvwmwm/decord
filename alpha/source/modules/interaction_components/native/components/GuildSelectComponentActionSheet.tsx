@@ -1,21 +1,21 @@
-// Module ID: 16715
-// Function ID: 16716
+// Module ID: 16805
+// Function ID: 16806
 // Name: GuildSelectComponentActionSheet
-// Dependencies: [32, 19, 17, 5012, 6892, 21, 5141, 6193, 1113, 5381, 12292, 7083, 6161, 1187, 5747, 6899, 2]
+// Dependencies: [32, 19, 17, 5012, 6907, 21, 5141, 6208, 1113, 5382, 12355, 7098, 6176, 1187, 5761, 6914, 2]
 // Exports: default
 
-// Module 16715 (GuildSelectComponentActionSheet)
+// Module 16805 (GuildSelectComponentActionSheet)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1187 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6193 */;
-import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12292 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6208 */;
+import SelectComponentActionSheetDefault from "SelectComponentActionSheet" /* 12355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import SortedGuildStore from "SortedGuildStore" /* 6892 */;
+import SortedGuildStore from "SortedGuildStore" /* 6907 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -138,7 +138,7 @@ export default function GuildSelectComponentActionSheet(arg0) {
       if (username == null) {
         username = tmp.username;
       }
-      items[1] = tmp11(Text, { variant: "text-sm/medium", color: "text-default", children: username });
+      items[1] = tmp11(Text, { variant: "body-sm/medium", color: "text-default", children: username });
       return tmp5(tmp6, obj2);
     },
     selectionActionComponent: obj3,

@@ -1,26 +1,26 @@
-// Module ID: 12534
-// Function ID: 12535
+// Module ID: 12615
+// Function ID: 12616
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 5750, 2191, 1359, 7002, 12535, 12536, 12531, 12537, 12538, 1072, 572, 559, 1282, 12532, 1377, 12539, 12540, 12541, 2]
+// Dependencies: [5, 5764, 2191, 1359, 7017, 12616, 12617, 12612, 12618, 12619, 1072, 572, 559, 1282, 12613, 1377, 12620, 12621, 12622, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 12534 (ApplicationDirectoryActionCreators)
+// Module 12615 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 7002 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12531 */;
-import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 12536 */;
-import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 12537 */;
-import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 12538 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12540 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12541 */;
+import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 7017 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12612 */;
+import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 12617 */;
+import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 12618 */;
+import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 12619 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12621 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12622 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5750 */;
+import DevSettingsStore from "DevSettingsStore" /* 5764 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1359 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12535 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12616 */;
 import size from "module_2" /* 2 */;
 
 const MyGuildApplicationsStore = MyGuildApplicationsStore2;

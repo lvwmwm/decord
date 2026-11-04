@@ -1,17 +1,17 @@
-// Module ID: 14751
-// Function ID: 14752
+// Module ID: 14831
+// Function ID: 14832
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 5141, 575, 5078, 1084, 9884, 14752, 6147, 7180, 5747, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5078, 1084, 9902, 14832, 6162, 7195, 5761, 1113, 2]
 // Exports: default
 
-// Module 14751 (BotPermissions)
+// Module 14831 (BotPermissions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import permissions from "permissions" /* 9884 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import permissions from "permissions" /* 9902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -96,13 +96,13 @@ export default function BotPermissions(guild) {
     const obj2 = { direction: "horizontal", align: "center", children: items };
     const obj3 = { style: closure_4.disabledPermissionIcon, children: metroRequire(XSmallIcon.XSmallIcon, { size: "sm", color: "white" }) };
     const Stack = Stack_Stack.Stack;
-    items = [metroRequire(View, obj3), metroRequire(Text_Text.Text, { variant: "text-md/medium", children: permissionName })];
+    items = [metroRequire(View, obj3), metroRequire(Text_Text.Text, { variant: "body-md/medium", children: permissionName })];
     return metroImportDefault(Stack, obj2, String(item));
   });
   let Stack = permissions(onPermissionsChange[10]).Stack;
   let obj = { children: items1 };
   const Stack2 = permissions(onPermissionsChange[10]).Stack;
-  let obj2 = { variant: "text-sm/medium", color: "text-subtle", children: intl.format(permissions(onPermissionsChange[13]).t.sOaT2j, obj3) };
+  let obj2 = { variant: "body-sm/medium", color: "text-subtle", children: intl.format(permissions(onPermissionsChange[13]).t.sOaT2j, obj3) };
   const Text = permissions(onPermissionsChange[12]).Text;
   intl = permissions(onPermissionsChange[13]).intl;
   obj3 = { applicationName: application.name, guildName: guild.name };
@@ -112,7 +112,7 @@ export default function BotPermissions(guild) {
   if (mapped1.length > 0) {
     const obj4 = { children: items3 };
     const Stack3 = tmp4(tmp[10]).Stack;
-    const obj5 = { variant: "text-sm/medium", color: "text-subtle", children: intl2.format(permissions(onPermissionsChange[13]).t.fsOkF4, obj6) };
+    const obj5 = { variant: "body-sm/medium", color: "text-subtle", children: intl2.format(permissions(onPermissionsChange[13]).t.fsOkF4, obj6) };
     const Text2 = tmp4(tmp[12]).Text;
     intl2 = tmp4(tmp[13]).intl;
     obj6 = { applicationName: application.name };

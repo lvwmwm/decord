@@ -1,18 +1,18 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 15633
+// Function ID: 15634
 // Name: NitroCreditEducationActionSheet
-// Dependencies: [17, 1072, 21, 5141, 575, 5395, 7212, 5747, 1113, 2190, 2]
+// Dependencies: [17, 1072, 21, 5141, 575, 5396, 7227, 5761, 1113, 2190, 2]
 // Exports: default
 
-// Module 15546 (NitroCreditEducationActionSheet)
+// Module 15633 (NitroCreditEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7212 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7227 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -45,10 +45,10 @@ export default function NitroCreditEducationActionSheet(aboutText) {
   items = [, ];
   const obj4 = { size: "lg", style: tmp.warningIcon };
   items[0] = hasOwnProperty(CircleErrorIcon.CircleErrorIcon, obj4);
-  const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "text-sm/medium", color: "text-overlay-light", children: aboutText }) };
+  const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "text-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: format(bg3jBj, obj7) };
+  const obj6 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: format(bg3jBj, obj7) };
   const Text = Text_Text.Text;
   const intl = intl2.intl;
   format = intl.format;

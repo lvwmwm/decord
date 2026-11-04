@@ -1,10 +1,10 @@
-// Module ID: 10985
-// Function ID: 10986
+// Module ID: 11033
+// Function ID: 11034
 // Name: conjureAgentReaction
 // Dependencies: [5087, 1113, 3995, 2]
 // Exports: agentReactionFromStep, getConjureAgentReactionLabel, sameAgentReaction
 
-// Module 10985 (conjureAgentReaction)
+// Module 11033 (conjureAgentReaction)
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5087 */;

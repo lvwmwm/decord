@@ -1,9 +1,9 @@
-// Module ID: 10432
-// Function ID: 10433
+// Module ID: 10480
+// Function ID: 10481
 // Name: StickerPickerListEmptyState
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 10169, 5398, 1187, 1113, 10433, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 10217, 5400, 1187, 1113, 10481, 2]
 
-// Module 10432 (StickerPickerListEmptyState)
+// Module 10480 (StickerPickerListEmptyState)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -32,10 +32,10 @@ const memoResult = react.memo(function StickerPickerListEmptyState(insetBottom) 
   const items = [insetBottom, insetTop];
   const tmp = closure_7();
   const memo = react.useMemo(() => ({ marginBottom: insetBottom + EXPRESSION_FOOTER_HEIGHT, marginTop: insetTop, flex: 1 }), items);
-  const obj = insetTop(10169);
+  const obj = insetTop(10217);
   const modalDismissGuardRefreshControl = obj.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(5398).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(5400).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -43,7 +43,7 @@ const memoResult = react.memo(function StickerPickerListEmptyState(insetBottom) 
   if (inActionSheet) {
     tmp7 = modalDismissGuardRefreshControl;
   }
-  ({ body: intl.string(insetTop(1113).t.jyiGfc), bodyStyle: null, containerStyle: null, imageStyle: null, source: insetBottom(10433), titleStyle: { marginBottom: 0 } });
+  ({ body: intl.string(insetTop(1113).t.jyiGfc), bodyStyle: null, containerStyle: null, imageStyle: null, source: insetBottom(10481), titleStyle: { marginBottom: 0 } });
   const RefreshEmptyState = tmp3(1187).RefreshEmptyState;
   intl = tmp3(1113).intl;
   ({ emptyStateBody: obj3.bodyStyle, emptyStateContainer: obj3.containerStyle, emptyStateImage: obj3.imageStyle } = tmp);

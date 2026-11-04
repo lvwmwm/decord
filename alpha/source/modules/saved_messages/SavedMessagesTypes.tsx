@@ -1,11 +1,11 @@
-// Module ID: 10322
-// Function ID: 10323
+// Module ID: 10370
+// Function ID: 10371
 // Name: SavedMessagesTypes
-// Dependencies: [6183, 2]
+// Dependencies: [6198, 2]
 // Exports: getSavedMessagesRawMessages, savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 10322 (SavedMessagesTypes)
-import MessageRecordUtils from "MessageRecordUtils" /* 6183 */;
+// Module 10370 (SavedMessagesTypes)
+import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
 import size from "module_2" /* 2 */;
 
 let message;

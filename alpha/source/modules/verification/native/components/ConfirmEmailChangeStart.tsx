@@ -1,11 +1,11 @@
-// Module ID: 7202
-// Function ID: 7203
+// Module ID: 7217
+// Function ID: 7218
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1385, 21, 5141, 1499, 504, 7203, 1092, 6567, 5832, 1113, 5837, 7204, 5747, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 21, 5141, 1499, 504, 7218, 1092, 6582, 5846, 1113, 5851, 7219, 5761, 5768, 2]
 // Exports: default
 
-// Module 7202 (ConfirmEmailChangeStart)
-import Text_Text from "Text/Text" /* 5747 */;
+// Module 7217 (ConfirmEmailChangeStart)
+import Text_Text from "Text/Text" /* 5761 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -54,21 +54,21 @@ export default function ConfirmEmailChangeStart() {
     let obj3 = { oldEmail: stateFromStores.email };
     let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_6, obj5) };
     obj5 = { style: tmp.container, children: items1 };
-    let obj6 = { style: tmp.image, source: navigation(7204) };
+    let obj6 = { style: tmp.image, source: navigation(7219) };
     const formatResult = intl.format(require("intl").t.oMFSgi, obj3);
-    const tmp14 = navigation(5837);
+    const tmp14 = navigation(5851);
     items1 = [closure_9(tmp14, obj6), , , ];
     let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(1113).t.dQ71Wa) };
-    const Text = tmp2(5747).Text;
+    const Text = tmp2(5761).Text;
     intl2 = tmp2(1113).intl;
     items1[1] = closure_9(Text, obj7);
     items1[2] = formatResult.map((children, index) => {
-      const obj = { style: body.body, variant: "text-sm/medium", color: "text-default", children };
+      const obj = { style: body.body, variant: "body-sm/medium", color: "text-default", children };
       return React4(Text_Text.Text, obj, index);
     });
     let obj8 = { style: tmp.button, children: closure_9(Button, obj9) };
     obj9 = { text: intl3.string(require("intl").t.rXV81H), onPress: tmp8, loading: first, grow: true };
-    Button = tmp2(5754).Button;
+    Button = tmp2(5768).Button;
     intl3 = tmp2(1113).intl;
     items1[3] = closure_9(closure_6, obj8);
     return closure_9(closure_7, obj4);

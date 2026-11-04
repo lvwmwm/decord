@@ -1,19 +1,19 @@
-// Module ID: 10083
-// Function ID: 10084
+// Module ID: 10131
+// Function ID: 10132
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 5142, 4987, 21, 1652, 504, 5719, 575, 5377, 5757, 5141, 10084, 1113, 10049, 2]
+// Dependencies: [19, 17, 5142, 4987, 21, 1652, 504, 5732, 575, 5378, 5771, 5141, 10132, 1113, 10097, 2]
 // Exports: default
 
-// Module 10083 (BurstReactionToggle)
+// Module 10131 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import useToken2 from "useToken" /* 5719 */;
-import spring_spring from "spring/spring" /* 5757 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import useToken2 from "useToken" /* 5732 */;
+import spring_spring from "spring/spring" /* 5771 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -64,7 +64,7 @@ export default function BurstReactionToggle(arg0) {
   }
   obj = react;
   const ref = react.useRef(null);
-  importDefault = tmp7(10084)(ref);
+  importDefault = tmp7(10132)(ref);
   let num;
   let sharedValue;
   let sharedValue1;

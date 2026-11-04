@@ -1,9 +1,9 @@
-// Module ID: 19125
-// Function ID: 19126
+// Module ID: 19228
+// Function ID: 19229
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 5083, 1072, 21, 5141, 6843, 575, 14300, 504, 1252, 1113, 8706, 6680, 1187, 2]
+// Dependencies: [19, 17, 5083, 1072, 21, 5141, 6858, 575, 14386, 504, 1252, 1113, 8723, 6695, 1187, 2]
 
-// Module 19125 (MessageRequestPreview)
+// Module 19228 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import Constants from "Constants" /* 1072 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import TextStyles_mod from "TextStyles" /* 6843 */;
+import TextStyles_mod from "TextStyles" /* 6858 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;
@@ -41,7 +41,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(14300);
+  let obj = channel(14386);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -91,7 +91,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8706)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8723)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -102,7 +102,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
         }
       }
       if (null != message) {
-        const tmp2Result = channel(6680);
+        const tmp2Result = channel(6695);
         if (tmp2Result.getMessageStickers(message).length > 0) {
           const intl5 = tmp2(1113).intl;
           let stringResult1 = intl5.string(tmp2(1113).t["zuI+by"]);

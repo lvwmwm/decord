@@ -1,18 +1,18 @@
-// Module ID: 16803
-// Function ID: 16804
+// Module ID: 16895
+// Function ID: 16896
 // Name: TwoFASetupLanding
-// Dependencies: [19, 17, 21, 5141, 16804, 16800, 7412, 5837, 16805, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 16896, 16892, 7428, 5851, 16897, 5761, 1113, 2]
 // Exports: default
 
-// Module 16803 (TwoFASetupLanding)
+// Module 16895 (TwoFASetupLanding)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 16800 */;
-import TwoFASetupStyles from "TwoFASetupStyles" /* 16804 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16805 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 16892 */;
+import TwoFASetupStyles from "TwoFASetupStyles" /* 16896 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16897 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -48,7 +48,7 @@ export default function TwoFASetupLanding() {
   const Heading = Text_Text.Heading;
   intl = intl3.intl;
   items[1] = React3(Heading, obj6);
-  const obj7 = { variant: "text-md/normal", style: items1, children: intl2.format(intl3.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" }) };
+  const obj7 = { variant: "body-md/normal", style: items1, children: intl2.format(intl3.t.A7Aehw, { googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en", authyURL: "https://www.authy.com/" }) };
   items1 = [, ];
   ({ modalBody: arr2[0], text: arr2[1] } = twoFASetupStyles);
   const Text = Text_Text.Text;

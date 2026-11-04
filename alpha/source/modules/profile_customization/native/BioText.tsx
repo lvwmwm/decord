@@ -1,18 +1,18 @@
-// Module ID: 11630
-// Function ID: 11631
+// Module ID: 11681
+// Function ID: 11682
 // Name: BioText
-// Dependencies: [19, 17, 1072, 5043, 21, 5141, 5829, 1252, 5747, 11631, 1377, 5042, 1113, 2]
+// Dependencies: [19, 17, 1072, 5043, 21, 5141, 5843, 1252, 5761, 11682, 1377, 5042, 1113, 2]
 // Exports: default
 
-// Module 11630 (BioText)
+// Module 11681 (BioText)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import ChangelogConstants from "ChangelogConstants" /* 5043 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11631 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11682 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -40,7 +40,7 @@ function LinkButton(arg0) {
     style: tmp.link,
     children: metroImportDefault(Text_Text.Text, obj2)
   };
-  obj2 = { variant: "text-md/normal", color: "text-link", lineClamp, style: tmp.link, children: items };
+  obj2 = { variant: "body-md/normal", color: "text-link", lineClamp, style: tmp.link, children: items };
   items = ["\n", text];
   return metroImportAll(Pressable, obj);
 }
@@ -67,7 +67,7 @@ export default function BioText(lineClamp) {
   ({ userId, guildId } = lineClamp);
   let str = lineClamp.textVariant;
   if (str === undefined) {
-    str = "text-md/normal";
+    str = "body-md/normal";
   }
   const tmp = closure_10();
   const items = [bio, guildId, str];

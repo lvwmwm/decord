@@ -1,14 +1,14 @@
-// Module ID: 19284
-// Function ID: 19285
+// Module ID: 19388
+// Function ID: 19389
 // Name: ActivityPanelUtils
-// Dependencies: [4990, 5044, 4989, 5777, 5062, 5798, 1093, 504, 2]
+// Dependencies: [4990, 5044, 4989, 5791, 5062, 5812, 1093, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText, useIsActivityPanelFullscreen, useIsConnectedToActivityInText
 
-// Module 19284 (ActivityPanelUtils)
+// Module 19388 (ActivityPanelUtils)
 import get_initialized from "get initialized" /* 504 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5062 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5777 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5798 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5812 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;

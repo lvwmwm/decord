@@ -1,16 +1,16 @@
-// Module ID: 18668
-// Function ID: 18669
+// Module ID: 18769
+// Function ID: 18770
 // Name: ActionStatusSubLabel
-// Dependencies: [19, 21, 5141, 5150, 1652, 5747, 5762, 5377, 1705, 2]
+// Dependencies: [19, 21, 5141, 5150, 1652, 5761, 5776, 5378, 1705, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 18668 (ActionStatusSubLabel)
+// Module 18769 (ActionStatusSubLabel)
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useFontScale from "useFontScale" /* 5762 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useFontScale from "useFontScale" /* 5776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -81,7 +81,7 @@ export function ActionStatusSubLabel(lineHeight) {
   }
   let str = lineHeight.textVariant;
   if (str === undefined) {
-    str = "text-xs/medium";
+    str = "body-xs/medium";
   }
   ({ actioned, secondaryLabel, maxFontSizeMultiplier, animate } = lineHeight);
   let tmp = null != secondaryLabel;

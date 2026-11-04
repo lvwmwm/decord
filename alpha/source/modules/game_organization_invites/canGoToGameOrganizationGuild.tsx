@@ -1,10 +1,10 @@
-// Module ID: 13331
-// Function ID: 13332
+// Module ID: 13414
+// Function ID: 13415
 // Name: canGoToGameOrganizationGuild
 // Dependencies: [5012, 2]
 // Exports: default
 
-// Module 13331 (canGoToGameOrganizationGuild)
+// Module 13414 (canGoToGameOrganizationGuild)
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;
 

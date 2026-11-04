@@ -1,17 +1,17 @@
-// Module ID: 11658
-// Function ID: 11659
+// Module ID: 11709
+// Function ID: 11710
 // Name: GiftCodeRedeemError
-// Dependencies: [19, 17, 21, 5141, 575, 1500, 7412, 5837, 11659, 11660, 5747, 1113, 5754, 6864, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1500, 7428, 5851, 11710, 11711, 5761, 1113, 5768, 6879, 2]
 // Exports: default
 
-// Module 11658 (GiftCodeRedeemError)
+// Module 11709 (GiftCodeRedeemError)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import Link from "Link" /* 1500 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -48,16 +48,16 @@ export default function GiftCodeRedeemError(message) {
   const tmp6 = React3;
   const tmp9 = FastImageDefault;
   if (theme.dark) {
-    tmp8Result = tmp8(11659);
+    tmp8Result = tmp8(11710);
   } else {
-    tmp8Result = tmp8(11660);
+    tmp8Result = tmp8(11711);
   }
   items = [hasOwnProperty(tmp9, { source: tmp8Result }), , ];
   const obj4 = { variant: "heading-xl/semibold", style: tmp.header, children: intl.formatToMarkdownString(intl3.t.JUvC0s, {}) };
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
   items[1] = hasOwnProperty(Text, obj4);
-  const obj5 = { variant: "text-lg/medium", style: tmp.message, children: message };
+  const obj5 = { variant: "body-lg/medium", style: tmp.message, children: message };
   items[2] = hasOwnProperty(Text_Text.Text, obj5);
   items1 = [metroRequire(tmp6, obj3), ];
   const obj6 = { style: tmp.footer, children: hasOwnProperty(Button, obj7) };
@@ -69,7 +69,7 @@ export default function GiftCodeRedeemError(message) {
       return arr.pop();
     }
   };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   intl2 = tmp2(1113).intl;
   items1[1] = hasOwnProperty(_false, obj6);
   return metroRequire(SafeAreaPaddingView, obj2);

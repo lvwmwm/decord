@@ -1,16 +1,16 @@
-// Module ID: 14072
-// Function ID: 14073
+// Module ID: 14158
+// Function ID: 14159
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 5142, 5396, 1388, 21, 5141, 1377, 575, 504, 7106, 7420, 1411, 10074, 1493, 5091, 8550, 10070, 5738, 9580, 2]
+// Dependencies: [19, 17, 5142, 5397, 1388, 21, 5141, 1377, 575, 504, 7121, 7436, 1411, 10122, 1493, 5091, 8567, 10118, 5752, 9599, 2]
 
-// Module 14072 (SelectDoubleTapEmojiRow)
+// Module 14158 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5738 */;
-import EmojiDefault from "Emoji" /* 7420 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10070 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5752 */;
+import EmojiDefault from "Emoji" /* 7436 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10118 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
@@ -89,7 +89,7 @@ let closure_13 = react.memo(function EmojiButton(emoji) {
   };
   items1 = [tmp.emojiPressable, ];
   let prop;
-  const PressableOpacity = emoji(7106).PressableOpacity;
+  const PressableOpacity = emoji(7121).PressableOpacity;
   if (selected) {
     prop = tmp.selectedEmojiPressable;
   }
@@ -146,8 +146,8 @@ const memoResult = react.memo(function SelectDoubleTapEmojiRow(selectedEmoji) {
   const items = [onPressEmoji];
   const stateFromStores = obj2.useStateFromStores(items, () => onPressEmoji.useReducedMotion);
   const found = frequentlyUsedReactionEmojis.filter((emoji) => {
-    const obj2 = { emoji, channel: "Array", intention: constants.DEFAULT_REACT_EMOJI };
     const obj = onPressEmoji(substr[15]);
+    const obj2 = { emoji, channel: "Array", intention: constants.DEFAULT_REACT_EMOJI };
     return !obj.isEmojiFilteredOrLocked(obj2);
   });
   substr = found.slice(0, rounded - 1);

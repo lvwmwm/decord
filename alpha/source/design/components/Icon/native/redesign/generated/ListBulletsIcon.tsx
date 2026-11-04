@@ -1,14 +1,14 @@
-// Module ID: 19867
-// Function ID: 19868
+// Module ID: 19983
+// Function ID: 19984
 // Name: ListBulletsIcon
-// Dependencies: [19, 21, 575, 5836, 19868, 2]
+// Dependencies: [19, 21, 575, 5850, 19984, 2]
 // Exports: ListBulletsIcon
 
-// Module 19867 (ListBulletsIcon)
+// Module 19983 (ListBulletsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 19868 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 19984 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

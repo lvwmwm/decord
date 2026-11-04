@@ -1,16 +1,16 @@
-// Module ID: 17431
-// Function ID: 17432
+// Module ID: 17522
+// Function ID: 17523
 // Name: HappeningNowCard
-// Dependencies: [19, 17, 17430, 21, 5141, 7238, 5317, 7103, 5747, 2]
+// Dependencies: [19, 17, 17521, 21, 5141, 7258, 5318, 7118, 5761, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 17431 (HappeningNowCard)
+// Module 17522 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7238 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7258 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17430 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17521 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let metroRequire;
 let obj2;
 let tmp;
 let unpackModuleId;
-const useColorThemeBackgroundDefault = tmp(5317);
+const useColorThemeBackgroundDefault = tmp(5318);
 const View = react_native.View;
 const HAPPENING_NOW_CARD_MARGIN_RIGHT = HappeningNowConstants.HAPPENING_NOW_CARD_MARGIN_RIGHT;
 ({ HAPPENING_NOW_CARD_PADDING: hasOwnProperty, HAPPENING_NOW_CARD_HEIGHT: metroRequire, HAPPENING_NOW_BADGE_SIZE } = HappeningNowConstants);
@@ -151,7 +151,7 @@ export function HappeningNowCardHeader(displayNameFont) {
     tmp5 = { fontFamily: displayNameFont };
     const obj = { fontFamily: displayNameFont };
   }
-  const obj2 = { variant: "text-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, maxFontSizeMultiplier: 2, style: items, children };
+  const obj2 = { variant: "body-md/medium", color: "mobile-text-heading-primary", lineClamp: 1, maxFontSizeMultiplier: 2, style: items, children };
   items[1] = tmp5;
   const merged1 = Object.assign(merged);
   return tmp3(Text, obj2);
@@ -163,7 +163,7 @@ export function HappeningNowCardSubtitle(variant) {
   const Text = Text_Text.Text;
   const tmp2 = authStore5;
   if (str == null) {
-    str = "text-sm/normal";
+    str = "body-sm/normal";
   }
   const obj = { variant: str, color: "text-subtle", lineClamp: 1, maxFontSizeMultiplier: 2, children };
   const merged1 = Object.assign(merged);

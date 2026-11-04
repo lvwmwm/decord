@@ -1,10 +1,10 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 12786
+// Function ID: 12787
 // Name: PollCreationInputError
-// Dependencies: [19, 17, 21, 5141, 575, 5150, 1187, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5150, 1187, 5761, 2]
 // Exports: default
 
-// Module 12705 (PollCreationInputError)
+// Module 12786 (PollCreationInputError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
@@ -37,6 +37,6 @@ export default function PollCreationInputError(message) {
   }, items);
   size = { width: 16, height: 16, style: tmp.icon };
   const obj = { style: tmp.container, children: items1 };
-  items1 = [closure_4(message(1187).WarningCircle, size), closure_4(message(5747).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children: message })];
+  items1 = [closure_4(message(1187).WarningCircle, size), closure_4(message(5761).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children: message })];
   return closure_5(View, obj);
 };

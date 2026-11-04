@@ -1,15 +1,15 @@
-// Module ID: 15367
-// Function ID: 15368
+// Module ID: 15454
+// Function ID: 15455
 // Name: PaymentFlowWarningMessage
-// Dependencies: [19, 17, 21, 5141, 575, 6898, 1187, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6913, 1187, 5761, 2]
 // Exports: default
 
-// Module 15367 (PaymentFlowWarningMessage)
+// Module 15454 (PaymentFlowWarningMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -33,7 +33,7 @@ export default function PaymentFlowWarningMessage(children) {
   size = { style: tmp.icon, color: nativeDefault.unsafe_rawColors.YELLOW_300, width: 16, height: 16 };
   const WarningCircle = native.WarningCircle;
   items = [React3(WarningCircle, size), ];
-  const obj2 = { variant: "text-sm/medium", style: tmp.text, children: children.message };
+  const obj2 = { variant: "body-sm/medium", style: tmp.text, children: children.message };
   items[1] = React3(Text_Text.Text, obj2);
   return hasOwnProperty(View, obj);
 };

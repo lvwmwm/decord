@@ -1,15 +1,15 @@
-// Module ID: 15207
-// Function ID: 15208
+// Module ID: 15290
+// Function ID: 15291
 // Name: ProductDetailsActionSheetSkeleton
-// Dependencies: [19, 17, 21, 5141, 575, 5760, 1652, 5377, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5774, 1652, 5378, 2]
 // Exports: default
 
-// Module 15207 (ProductDetailsActionSheetSkeleton)
+// Module 15290 (ProductDetailsActionSheetSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import ButtonConstants from "ButtonConstants" /* 5760 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import ButtonConstants from "ButtonConstants" /* 5774 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

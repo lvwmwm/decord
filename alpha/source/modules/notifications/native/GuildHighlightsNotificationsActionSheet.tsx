@@ -1,23 +1,23 @@
-// Module ID: 10287
-// Function ID: 10288
+// Module ID: 10335
+// Function ID: 10336
 // Name: GuildHighlightsNotificationsActionSheet
-// Dependencies: [32, 19, 17, 5012, 6895, 1072, 10288, 21, 5141, 575, 7083, 5747, 10289, 563, 1113, 10290, 1627, 5395, 5398, 2190, 7103, 8301, 7408, 7403, 5381, 2]
+// Dependencies: [32, 19, 17, 5012, 6910, 1072, 10336, 21, 5141, 575, 7098, 5761, 10337, 563, 1113, 10338, 1627, 5396, 5400, 2190, 7118, 8317, 7424, 7419, 5382, 2]
 // Exports: default
 
-// Module 10287 (GuildHighlightsNotificationsActionSheet)
+// Module 10335 (GuildHighlightsNotificationsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7403 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7408 */;
-import Constants2 from "Constants" /* 10288 */;
-import PushFeedbackActions from "PushFeedbackActions" /* 10289 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7419 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7424 */;
+import Constants2 from "Constants" /* 10336 */;
+import PushFeedbackActions from "PushFeedbackActions" /* 10337 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -40,7 +40,7 @@ function GuildPill(guild) {
   const obj2 = { guild, size: GuildIcon.GuildIconSizes.SMALL_32, animate: true };
   const tmp5 = GuildIconDefault;
   items = [unpackModuleId(tmp5, obj2), ];
-  const obj3 = { style: tmp.guildName, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: name };
+  const obj3 = { style: tmp.guildName, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: name };
   name = undefined;
   const Text = Text_Text.Text;
   const tmp2 = authStore2;
@@ -183,7 +183,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
     }
     const tmp19 = obj.rating === FeedbackRating.GOOD || null != obj.reason;
     if (tmp19) {
-      const obj3 = { style: items5, variant: "heading-md/semibold", color: "text-brand", children: intl3.string(guildId(ref[14]).t.kZbFIO) };
+      const obj3 = { style: items5, variant: "heading-sm/semibold", color: "text-brand", children: intl3.string(guildId(ref[14]).t.kZbFIO) };
       items5 = [, ];
       ({ centerText: arr7[0], thanks: arr7[1] } = tmp);
       const Text = tmp12(tmp13[11]).Text;
@@ -257,7 +257,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
   const Text2 = tmp12(tmp13[11]).Text;
   intl4 = tmp12(tmp13[14]).intl;
   items6[1] = closure_11(Text2, obj9);
-  const obj10 = { style: tmp.centerText, variant: "text-md/medium", color: "text-default", children: format(enfuur, obj11) };
+  const obj10 = { style: tmp.centerText, variant: "body-md/medium", color: "text-default", children: format(enfuur, obj11) };
   const Text3 = tmp12(tmp13[11]).Text;
   const intl5 = tmp12(tmp13[14]).intl;
   format = intl5.format;
@@ -301,7 +301,7 @@ export default function SummaryFeedbackActionSheet(guildId) {
   }
   obj15 = { children: items7 };
   items7[2] = tmp28Result2;
-  const obj16 = { style: tmp.centerText, variant: "text-sm/medium", color: "text-default", children: intl7.format(guildId(ref[14]).t.F9rfLX, obj17) };
+  const obj16 = { style: tmp.centerText, variant: "body-sm/medium", color: "text-default", children: intl7.format(guildId(ref[14]).t.F9rfLX, obj17) };
   const Text4 = tmp12(tmp13[11]).Text;
   intl7 = tmp12(tmp13[14]).intl;
   obj17 = {

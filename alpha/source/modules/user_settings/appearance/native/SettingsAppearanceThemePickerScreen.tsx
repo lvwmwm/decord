@@ -1,27 +1,27 @@
-// Module ID: 17402
-// Function ID: 17403
+// Module ID: 17493
+// Function ID: 17494
 // Name: SettingsAppearanceThemePickerScreen
-// Dependencies: [5, 32, 19, 17, 5165, 1238, 1385, 1193, 1192, 1194, 1195, 5166, 1083, 21, 5141, 575, 1377, 1113, 17403, 11326, 17405, 1493, 563, 5373, 1196, 1241, 5163, 5735, 17152, 5168, 1500, 7446, 7471, 7131, 9108, 1652, 1705, 5138, 5315, 5377, 5380, 17151, 16608, 16609, 6904, 5832, 5207, 9950, 5747, 7080, 7106, 7130, 17153, 17407, 9342, 17413, 17425, 17434, 7412, 11349, 2]
+// Dependencies: [5, 32, 19, 17, 5165, 1238, 1385, 1193, 1192, 1194, 1195, 5166, 1083, 21, 5141, 575, 1377, 1113, 17494, 11376, 17496, 1493, 563, 5374, 1196, 1241, 5163, 5749, 17244, 5168, 1500, 7462, 7487, 7146, 9125, 1652, 1705, 5138, 5316, 5378, 5381, 17243, 16698, 16699, 6919, 5846, 5207, 9968, 5761, 7095, 7121, 7145, 17245, 17498, 9359, 17504, 17516, 17525, 7428, 11399, 2]
 // Exports: default
 
-// Module 17402 (SettingsAppearanceThemePickerScreen)
+// Module 17493 (SettingsAppearanceThemePickerScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl4 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5373 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import QuestTypes from "QuestTypes" /* 6904 */;
-import ThemeDarkIcon from "ThemeDarkIcon" /* 11326 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 16608 */;
-import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16609 */;
-import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 17151 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17152 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 17153 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 17403 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17405 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5374 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import QuestTypes from "QuestTypes" /* 6919 */;
+import ThemeDarkIcon from "ThemeDarkIcon" /* 11376 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 16698 */;
+import HexagonCampaignAnalytics from "HexagonCampaignAnalytics" /* 16699 */;
+import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 17243 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 17244 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 17245 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 17494 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -737,7 +737,7 @@ function ThemePicker(defaultIndex) {
       },
       headerTitle() {
         let stringResult;
-        const obj = { animated: true, variant: "redesign/heading-18/semibold", style: textNormal.textNormal, children: stringResult };
+        const obj = { animated: true, variant: "heading-md/semibold", style: textNormal.textNormal, children: stringResult };
         stringResult = headerTitle;
         const Text = defaultIndex(isPreview[48]).Text;
         const tmp = activeIndex2;
@@ -759,11 +759,11 @@ function ThemePicker(defaultIndex) {
         let tmp5;
         let tmpResult;
         if (first1) {
-          tmpResult = tmp(tmp2(7080).ActivityIndicator, { size: "small" });
+          tmpResult = tmp(tmp2(7095).ActivityIndicator, { size: "small" });
         } else {
           let obj2 = result;
           const obj = { hitSlop: 8, disabled: result, onPress: callback3, children: tmp5(Text, obj3) };
-          const PressableOpacity = tmp2(7106).PressableOpacity;
+          const PressableOpacity = tmp2(7121).PressableOpacity;
           items = [obj4.textBrand, ];
           Text = Text_Text.Text;
           tmp5 = closure_17;
@@ -771,7 +771,7 @@ function ThemePicker(defaultIndex) {
             obj2 = { opacity: 0.4 };
           }
           items[1] = obj2;
-          obj3 = { animated: true, variant: "text-md/semibold", style: items, children: intl.string(intl4.t.i4jeWR) };
+          obj3 = { animated: true, variant: "body-md/semibold", style: items, children: intl.string(intl4.t.i4jeWR) };
           intl = intl4.intl;
           tmpResult = tmp(PressableOpacity, obj);
         }
@@ -813,7 +813,7 @@ function ThemePicker(defaultIndex) {
     let ThemeContextProvider = tmp3(tmp4[46]).ThemeContextProvider;
     obj8 = { variant: "experimental_Large", state: segmentedControlState };
     items15 = [activeIndex2(ThemeContextProvider, obj7), ];
-    const obj9 = { animated: true, variant: "text-xs/medium", style: items16, children: intl.string(tmp3(tmp4[17]).t.d5Gu9A) };
+    const obj9 = { animated: true, variant: "body-xs/medium", style: items16, children: intl.string(tmp3(tmp4[17]).t.d5Gu9A) };
     items16 = [obj4.headerSecondary, tmp.textCentered];
     let Text = tmp3(tmp4[48]).Text;
     intl = tmp3(tmp4[17]).intl;

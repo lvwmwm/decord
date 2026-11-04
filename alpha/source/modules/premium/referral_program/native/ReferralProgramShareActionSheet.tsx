@@ -1,23 +1,23 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15555
+// Function ID: 15556
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1385, 7756, 1072, 21, 5141, 575, 504, 15469, 38, 1380, 10860, 15470, 1113, 5150, 15471, 7446, 7471, 1252, 7757, 5381, 15472, 2123, 5831, 7441, 5747, 5837, 15477, 15478, 10861, 7080, 5754, 5395, 9190, 10863, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7772, 1072, 21, 5141, 575, 504, 15556, 38, 1380, 10908, 15557, 1113, 5150, 15558, 7462, 7487, 1252, 7773, 5382, 15559, 2123, 5845, 7457, 5761, 5851, 15564, 15565, 10909, 7095, 5768, 5396, 9207, 10911, 2]
 // Exports: default
 
-// Module 15468 (ReferralProgramShareActionSheet)
+// Module 15555 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10860 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15471 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10908 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 15558 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7756 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7772 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -283,7 +283,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
     return stringResult;
   }, items10);
   items11 = [isFetching(str(stateFromStores[27]).BottomSheetTitleHeader, { title: memo5 }), ];
-  let obj5 = { variant: "text-xs/medium", color: "text-default", lineClamp: 2, style: tmp.subtitle, children: stringResult };
+  let obj5 = { variant: "body-xs/medium", color: "text-default", lineClamp: 2, style: tmp.subtitle, children: stringResult };
   items11[1] = isFetching(str(stateFromStores[28]).Text, obj5);
   if (hasError) {
     let obj6 = { style: tmp.centeredContainer, children: items12 };
@@ -295,7 +295,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
     const Text3 = tmp3(tmp4[28]).Text;
     intl4 = tmp3(tmp4[16]).intl;
     items12[1] = isFetching(Text3, obj9);
-    const obj10 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle, children: intl5.string(tmp3(tmp4[16]).t.JjjeZb) };
+    const obj10 = { variant: "body-md/medium", color: "text-default", style: tmp.subtitle, children: intl5.string(tmp3(tmp4[16]).t.JjjeZb) };
     const Text4 = tmp3(tmp4[28]).Text;
     intl5 = tmp3(tmp4[16]).intl;
     items12[2] = isFetching(Text4, obj10);
@@ -313,7 +313,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
       const Text = tmp3(tmp4[28]).Text;
       intl2 = tmp3(tmp4[16]).intl;
       items13[1] = isFetching(Text, obj14);
-      const obj15 = { variant: "text-md/medium", color: "text-default", style: tmp.subtitle, children: intl3.string(tmp3(tmp4[16]).t.eBIGB4) };
+      const obj15 = { variant: "body-md/medium", color: "text-default", style: tmp.subtitle, children: intl3.string(tmp3(tmp4[16]).t.eBIGB4) };
       const Text2 = tmp3(tmp4[28]).Text;
       intl3 = tmp3(tmp4[16]).intl;
       items13[2] = isFetching(Text2, obj15);

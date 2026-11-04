@@ -1,23 +1,23 @@
-// Module ID: 15405
-// Function ID: 15406
+// Module ID: 15492
+// Function ID: 15493
 // Name: PremiumPlanWhatYouLoseActionSheet
-// Dependencies: [19, 17, 1387, 21, 5141, 575, 5837, 5747, 2176, 7446, 15406, 38, 15410, 1113, 15411, 14735, 15412, 15413, 5381, 5395, 7740, 5754, 10690, 2]
+// Dependencies: [19, 17, 1387, 21, 5141, 575, 5851, 5761, 2176, 7462, 15493, 38, 15497, 1113, 15498, 14815, 15499, 15500, 5382, 5396, 7756, 5768, 10738, 2]
 // Exports: default
 
-// Module 15405 (PremiumPlanWhatYouLoseActionSheet)
+// Module 15492 (PremiumPlanWhatYouLoseActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10690 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14735 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15410 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15411 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15412 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 15413 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10738 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14815 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15497 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15498 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15499 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 15500 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -39,7 +39,7 @@ function WhatYouLoseItem(arg0) {
   const tmp = closure_8();
   const obj = { style: tmp.item, children: items };
   items = [metroRequire(FastImageDefault, { source: imageSource }), ];
-  const obj2 = { variant: "text-md/medium", style: tmp.itemLabel, children: text };
+  const obj2 = { variant: "body-md/medium", style: tmp.itemLabel, children: text };
   items[1] = metroRequire(Text_Text.Text, obj2);
   return metroImportDefault(View, obj);
 }
@@ -137,7 +137,7 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
     stringResult = intl.string(tmp2(tmp3[13]).t["7VcWW0"]);
   }
   items2 = [tmp8(Text, obj4), , ];
-  let obj5 = { variant: "text-md/medium", style: tmp.subtitle, children: format2Result };
+  let obj5 = { variant: "body-md/medium", style: tmp.subtitle, children: format2Result };
   const Text2 = tmp2(tmp3[7]).Text;
   if (mode === tmp10.CANCEL) {
     let intl4 = tmp2(tmp3[13]).intl;
@@ -177,7 +177,7 @@ export default function PremiumPlanWhatYouLoseActionSheet(arg0) {
   intl5 = tmp2(tmp3[13]).intl;
   items3 = [tmp8(tmp9, obj10), ];
   const obj12 = {
-    variant: "text-sm/medium",
+    variant: "body-sm/medium",
     style: tmp.keepText,
     onPress: function onCloseWithTracking() {
       const trackPremiumSubscriptionCancellationFlowStep = PremiumAnalyticsUtils.trackPremiumSubscriptionCancellationFlowStep;

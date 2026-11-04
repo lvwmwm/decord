@@ -1,10 +1,26 @@
 // Module ID: 9022
 // Function ID: 9023
-// Dependencies: [5180]
+// Dependencies: []
 
 // Module 9022
-import module_5180 from "module_5180" /* 5180 */;
 
-const point = { x: module_5180.number, y: module_5180.number };
-
-export default module_5180.shape(point);
+export default (obj) => {
+  if (obj instanceof Object) {
+    const _Array = Array;
+    if (!Array.isArray(obj)) {
+      obj = {};
+      for (const key10010 in obj) {
+        if (!obj.hasOwnProperty(key10010)) {
+          continue;
+        } else {
+          obj[key10010] = key10010;
+          continue;
+        }
+        continue;
+      }
+      return obj;
+    }
+  }
+  const error = new Error("keyMirror(...): Argument must be an object.");
+  throw error;
+};

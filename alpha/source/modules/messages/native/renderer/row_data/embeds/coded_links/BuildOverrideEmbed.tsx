@@ -1,22 +1,22 @@
-// Module ID: 15266
-// Function ID: 15267
+// Module ID: 15349
+// Function ID: 15350
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 11499, 8003, 8518, 13328, 15267, 1376, 1113, 8505, 575, 5148, 13371, 13372, 15265, 2]
+// Dependencies: [17, 11549, 8019, 8535, 13411, 15350, 1376, 1113, 8522, 575, 5148, 13454, 13455, 15348, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 15266 (BuildOverrideEmbed)
+// Module 15349 (BuildOverrideEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import react_nativeAll from "react-native" /* 1376 */;
 import shared from "shared" /* 5148 */;
-import Constants from "Constants" /* 8003 */;
-import react_native2 from "react-native" /* 8505 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8518 */;
-import BuildOverrideStore2 from "BuildOverrideStore" /* 11499 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13328 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15265 */;
-import validateBuildOverrideDefault from "validateBuildOverride" /* 15267 */;
+import Constants from "Constants" /* 8019 */;
+import react_native2 from "react-native" /* 8522 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8535 */;
+import BuildOverrideStore2 from "BuildOverrideStore" /* 11549 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13411 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15348 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 15350 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;
@@ -142,9 +142,9 @@ export function createBuildOverrideEmbed(code, arg1) {
     resolveAssetSource = Image.resolveAssetSource;
     const tmp20Result = shared;
     if (tmp20Result.isThemeDark(arg1)) {
-      tmpResult2 = tmp(13371);
+      tmpResult2 = tmp(13454);
     } else {
-      tmpResult2 = tmp(13372);
+      tmpResult2 = tmp(13455);
     }
   }
 }

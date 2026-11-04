@@ -1,17 +1,17 @@
-// Module ID: 19562
-// Function ID: 19563
+// Module ID: 19666
+// Function ID: 19667
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1072, 21, 8501, 5141, 575, 1113, 6183, 7486, 7441, 10016, 5747, 2]
+// Dependencies: [19, 17, 1072, 21, 8518, 5141, 575, 1113, 6198, 7502, 7457, 10064, 5761, 2]
 // Exports: default
 
-// Module 19562 (AutomodRemovedContentSheet)
+// Module 19666 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6183 */;
-import RowGeneratorDefault from "RowGenerator" /* 8501 */;
-import ChatItemDefault from "ChatItem" /* 10016 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
+import RowGeneratorDefault from "RowGenerator" /* 8518 */;
+import ChatItemDefault from "ChatItem" /* 10064 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -72,8 +72,8 @@ export default function AutomodRemovedContentSheet(action) {
     return messageRecord;
   }, items);
   const tmp5 = message;
-  const ActionSheet = message(7486).ActionSheet;
-  const BottomSheetTitleHeader = message(7441).BottomSheetTitleHeader;
+  const ActionSheet = message(7502).ActionSheet;
+  const BottomSheetTitleHeader = message(7457).BottomSheetTitleHeader;
   let intl = message(1113).intl;
   const string = intl.string;
   if (null != thread) {
@@ -93,8 +93,8 @@ export default function AutomodRemovedContentSheet(action) {
     obj5 = { rowGenerator, message: memo, modifyRow: callback, pointerEvents: "none" };
     tmp4Result = tmp4(tmp8, obj4);
   } else {
-    const obj6 = { variant: "text-md/normal", color: "text-default", children: notice };
-    tmp4Result = tmp4(tmp5(5747).Text, obj6);
+    const obj6 = { variant: "body-md/normal", color: "text-default", children: notice };
+    tmp4Result = tmp4(tmp5(5761).Text, obj6);
   }
   return jsx(ActionSheet, obj2);
 };

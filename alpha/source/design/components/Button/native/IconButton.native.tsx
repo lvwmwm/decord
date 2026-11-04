@@ -1,14 +1,14 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8168
+// Function ID: 8169
 // Name: IconButton
-// Dependencies: [19, 21, 5141, 575, 5763, 8153, 5747, 2]
+// Dependencies: [19, 21, 5141, 575, 5777, 8169, 5761, 2]
 // Exports: IconButton
 
-// Module 8152 (IconButton)
+// Module 8168 (IconButton)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Button_BaseButton from "Button/BaseButton" /* 5763 */;
-import BaseIconButton3 from "BaseIconButton" /* 8153 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Button_BaseButton from "Button/BaseButton" /* 5777 */;
+import BaseIconButton3 from "BaseIconButton" /* 8169 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -48,7 +48,7 @@ export function IconButton(grow) {
     const BaseIconButton2 = BaseIconButton3.BaseIconButton;
     const merged2 = Object.assign(merged);
     items = [_false(BaseIconButton2, obj3), ];
-    const obj4 = { style: tmp2.label, variant: "text-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
+    const obj4 = { style: tmp2.label, variant: "body-xs/medium", color: "interactive-text-default", maxFontSizeMultiplier, children: label };
     items[1] = _false(Text_Text.Text, obj4);
     tmp9 = React3(BaseButton, obj2);
   } else {

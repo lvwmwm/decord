@@ -1,10 +1,10 @@
-// Module ID: 16631
-// Function ID: 16632
+// Module ID: 16721
+// Function ID: 16722
 // Name: HexagonCampaignDaysLeftBadge
-// Dependencies: [19, 17, 1385, 5166, 21, 1089, 5141, 575, 504, 5168, 7748, 5207, 5148, 5747, 5860, 1113, 4412, 2]
+// Dependencies: [19, 17, 1385, 5166, 21, 1089, 5141, 575, 504, 5168, 7764, 5207, 5148, 5761, 5874, 1113, 4412, 2]
 // Exports: default, useHexagonCampaignDaysLeft
 
-// Module 16631 (HexagonCampaignDaysLeftBadge)
+// Module 16721 (HexagonCampaignDaysLeftBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -28,8 +28,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5747);
-const f109955 = () => {
+const Text_Text = tmp2(5761);
+const f110694 = () => {
   currentUser = currentUser.getCurrentUser();
   let premiumType;
   if (currentUser != null) {
@@ -81,7 +81,7 @@ function HexagonCampaignBadge(variant) {
   const obj7 = { style: items, children: items1 };
   const tmp11 = "expressive" === str && (isThemeDarkResult ? tmp.badgeExpressiveDark : tmp.badgeExpressiveLight);
   items[2] = tmp11;
-  items1 = [renderIcon(iconColor), metroRequire(Text_Text.Text, { variant: "text-xxs/semibold", color: textColor, children: text })];
+  items1 = [renderIcon(iconColor), metroRequire(Text_Text.Text, { variant: "footnote/semibold", color: textColor, children: text })];
   return tmp9(tmp10, obj7);
 }
 const View = react_native.View;
@@ -107,7 +107,7 @@ export default function HexagonCampaignDaysLeftBadge(perk) {
   const variant = perk.variant;
   let obj = perk(504);
   let items = [UserStore];
-  const stateFromStores = obj.useStateFromStores(items, f109955);
+  const stateFromStores = obj.useStateFromStores(items, f110694);
   const items1 = [perk, stateFromStores];
   const memo = react.useMemo(() => {
     let hexagonCampaignPerkCutoffMs;
@@ -126,7 +126,7 @@ export default function HexagonCampaignDaysLeftBadge(perk) {
     }
     return hexagonCampaignPerkCutoffMs;
   }, items1);
-  const tmp6 = stateFromStores(7748)(memo, closure_8);
+  const tmp6 = stateFromStores(7764)(memo, closure_8);
   let num = 0;
   const days = tmp6.days;
   let _Math = Math;
@@ -152,7 +152,7 @@ export function useHexagonCampaignDaysLeft(arg0) {
   _require = arg0;
   const items = [UserStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f109955);
+  const stateFromStores = obj.useStateFromStores(items, f110694);
   const items1 = [arg0, stateFromStores];
   const memo = react.useMemo(() => {
     let hexagonCampaignPerkCutoffMs;
@@ -171,7 +171,7 @@ export function useHexagonCampaignDaysLeft(arg0) {
     }
     return hexagonCampaignPerkCutoffMs;
   }, items1);
-  const tmp3 = stateFromStores(7748)(memo, closure_8);
+  const tmp3 = stateFromStores(7764)(memo, closure_8);
   let num = 0;
   const days = tmp3.days;
   const _Math = Math;

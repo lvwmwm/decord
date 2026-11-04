@@ -1,12 +1,12 @@
-// Module ID: 14330
-// Function ID: 14331
+// Module ID: 12572
+// Function ID: 12573
 // Name: UserProfileConfirmVideoUnstableConnection
-// Dependencies: [19, 21, 6084, 1113, 6084, 2]
+// Dependencies: [19, 21, 6099, 1113, 6099, 2]
 // Exports: default
 
-// Module 14330 (UserProfileConfirmVideoUnstableConnection)
+// Module 12572 (UserProfileConfirmVideoUnstableConnection)
 import intl5 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 6084 */;
+import AlertModal2 from "AlertModal" /* 6099 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 11042
-// Function ID: 11043
+// Module ID: 11091
+// Function ID: 11092
 // Name: SuccessResultModal
-// Dependencies: [19, 17, 4990, 5073, 5044, 1072, 1498, 21, 5141, 575, 9027, 1113, 6864, 7646, 1252, 504, 5381, 5330, 1625, 7412, 5837, 11043, 5747, 5754, 2]
+// Dependencies: [19, 17, 4990, 5073, 5044, 1072, 1498, 21, 5141, 575, 9044, 1113, 6879, 7662, 1252, 504, 5382, 5331, 1625, 7428, 5851, 11092, 5761, 5768, 2]
 // Exports: default
 
-// Module 11042 (SuccessResultModal)
+// Module 11091 (SuccessResultModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import transitionToGuild2 from "transitionToGuild" /* 7646 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import transitionToGuild2 from "transitionToGuild" /* 7662 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -221,14 +221,14 @@ export default function SuccessResultModal(guild) {
   const obj6 = { source: application(stateFromStores[21]) };
   const tmp18 = application(stateFromStores[20]);
   items8 = [closure_12(tmp18, obj6), , ];
-  const obj7 = { style: tmp.text, variant: "text-lg/medium", children: intl.string(tmp2(stateFromStores[11]).t.se5gLj) };
+  const obj7 = { style: tmp.text, variant: "body-lg/medium", children: intl.string(tmp2(stateFromStores[11]).t.se5gLj) };
   const Text = tmp2(tmp3[22]).Text;
   intl = tmp2(tmp3[11]).intl;
   items8[1] = closure_12(Text, obj7);
   let tmp15Result = null;
   const tmp16 = closure_5;
   if (null != memo) {
-    const obj8 = { style: tmp.text, variant: "text-sm/normal", children: memo };
+    const obj8 = { style: tmp.text, variant: "body-sm/normal", children: memo };
     tmp15Result = tmp15(tmp2(tmp3[22]).Text, obj8);
   }
   items8[2] = tmp15Result;

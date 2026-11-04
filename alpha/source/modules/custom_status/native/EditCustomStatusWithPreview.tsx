@@ -1,10 +1,10 @@
-// Module ID: 11536
-// Function ID: 11537
+// Module ID: 11586
+// Function ID: 11587
 // Name: EditCustomStatusWithPreview
-// Dependencies: [32, 19, 17, 1385, 11537, 1072, 1388, 21, 5141, 575, 7106, 1113, 1187, 7232, 11538, 1252, 11532, 504, 11539, 11540, 5148, 11542, 6141, 10070, 5730, 11543, 11545, 11547, 7682, 7124, 5747, 10896, 8309, 7186, 7101, 5330, 5381, 11623, 2123, 11625, 5858, 1357, 1641, 9943, 6864, 7290, 2]
+// Dependencies: [32, 19, 17, 1385, 11587, 1072, 1388, 21, 5141, 575, 7121, 1113, 1187, 7252, 11588, 1252, 11582, 504, 11589, 11590, 5148, 11592, 6156, 10118, 5743, 11593, 11595, 11597, 7698, 7139, 5761, 10944, 8325, 7201, 7116, 5331, 5382, 11674, 2123, 11676, 5872, 1357, 1641, 9961, 6879, 7306, 2]
 // Exports: default
 
-// Module 11536 (EditCustomStatusWithPreview)
+// Module 11586 (EditCustomStatusWithPreview)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -12,19 +12,19 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import shared from "shared" /* 5148 */;
-import ChatInputUtils from "ChatInputUtils" /* 5330 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import react_native from "react-native" /* 6141 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import Pressables from "Pressables" /* 7106 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7232 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10070 */;
-import Constants2 from "Constants" /* 11537 */;
-import setCustomStatusDefault from "setCustomStatus" /* 11540 */;
-import removeCustomStatusDefault from "removeCustomStatus" /* 11542 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11545 */;
-import CustomStatusPreviewDefault from "CustomStatusPreview" /* 11547 */;
+import ChatInputUtils from "ChatInputUtils" /* 5331 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import react_native from "react-native" /* 6156 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import Pressables from "Pressables" /* 7121 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7252 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10118 */;
+import Constants2 from "Constants" /* 11587 */;
+import setCustomStatusDefault from "setCustomStatus" /* 11590 */;
+import removeCustomStatusDefault from "removeCustomStatus" /* 11592 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11595 */;
+import CustomStatusPreviewDefault from "CustomStatusPreview" /* 11597 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
@@ -287,7 +287,7 @@ function EditCustomStatusWithPreview(navigation) {
     items13 = [callback1(closure_6, obj6), , , ];
     const obj7 = { style: tmp5.statusSection, children: items14 };
     const obj8 = { style: tmp5.statusSectionHeader, children: callback1(Text2, obj9) };
-    obj9 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", children: intl5.string(navigation(analyticsLocations[11]).t.zOdg0A) };
+    obj9 = { accessibilityRole: "header", variant: "body-sm/semibold", color: "text-default", children: intl5.string(navigation(analyticsLocations[11]).t.zOdg0A) };
     Text2 = tmp6(tmp7[30]).Text;
     intl5 = tmp6(tmp7[11]).intl;
     items14 = [callback1(closure_6, obj8), ];
@@ -329,13 +329,13 @@ function EditCustomStatusWithPreview(navigation) {
           obj.dismissKeyboard();
           const obj2 = ActionSheetActionCreatorsDefault;
           const obj3 = { initialValue: first2, onChange };
-          obj2.openLazy(asyncRequire(11623, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
+          obj2.openLazy(asyncRequire(11674, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
         },
       trailing: callback1(Text, obj19)
     };
     TableRow = tmp6(tmp7[34]).TableRow;
     intl3 = tmp6(tmp7[11]).intl;
-    obj19 = { variant: "text-sm/medium", children: onClose(analyticsLocations[39])(first2) };
+    obj19 = { variant: "body-sm/medium", children: onClose(analyticsLocations[39])(first2) };
     Text = tmp6(tmp7[30]).Text;
     items13[2] = callback1(TableRowGroup, obj17);
     let tmp49Result3 = null != customStatusActivity;
@@ -412,7 +412,7 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     return obj;
   }, items);
   let obj = { initialRouteName: "root", screens: memo, headerStatusBarHeight: 12, headerStyle: obj3 };
-  const Navigator = analyticsLocations(7290).Navigator;
+  const Navigator = analyticsLocations(7306).Navigator;
   let obj2 = analyticsLocations(1357);
   obj3 = undefined;
   const tmp2 = closure_13;

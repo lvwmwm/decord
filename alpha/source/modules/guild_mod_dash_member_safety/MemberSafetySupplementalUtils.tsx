@@ -1,15 +1,15 @@
-// Module ID: 7805
-// Function ID: 7806
+// Module ID: 7821
+// Function ID: 7822
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1072, 1113, 6694, 7806, 5376, 5148, 1282, 2]
+// Dependencies: [5, 1072, 1113, 6709, 7822, 5377, 5148, 1282, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 7805 (MemberSafetySupplementalUtils)
+// Module 7821 (MemberSafetySupplementalUtils)
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import PlatformsDefault from "Platforms" /* 6694 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 7806 */;
+import PlatformsDefault from "Platforms" /* 6709 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 7822 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

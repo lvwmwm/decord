@@ -1,21 +1,21 @@
-// Module ID: 11444
-// Function ID: 11445
+// Module ID: 11494
+// Function ID: 11495
 // Name: VibingWumpusModal
-// Dependencies: [32, 19, 17, 5142, 11393, 11445, 1072, 21, 5141, 575, 563, 11115, 1252, 5837, 11446, 5741, 11447, 5747, 1113, 5754, 6864, 8972, 8974, 7290, 2]
+// Dependencies: [32, 19, 17, 5142, 11443, 11495, 1072, 21, 5141, 575, 563, 11163, 1252, 5851, 11496, 5755, 11497, 5761, 1113, 5768, 6879, 8989, 8991, 7306, 2]
 // Exports: default
 
-// Module 11444 (VibingWumpusModal)
+// Module 11494 (VibingWumpusModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Navigator from "Navigator" /* 7290 */;
-import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 11115 */;
-import Constants2 from "Constants" /* 11393 */;
+import Navigator from "Navigator" /* 7306 */;
+import InappropriateConversationsActionCreators from "InappropriateConversationsActionCreators" /* 11163 */;
+import Constants2 from "Constants" /* 11443 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import InappropriateConversationsConstants from "InappropriateConversationsConstants" /* 11445 */;
+import InappropriateConversationsConstants from "InappropriateConversationsConstants" /* 11495 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -95,7 +95,7 @@ class VibingWumpusScreen {
     const Text = tmp5(tmp6[17]).Text;
     intl = tmp5(tmp6[18]).intl;
     items3 = [tmp11(Text, obj6), ];
-    const obj7 = { variant: "text-md/medium", style: tmp.takeoverDescription, children: intl2.string(first(ref[18]).t.R8LCMZ) };
+    const obj7 = { variant: "body-md/medium", style: tmp.takeoverDescription, children: intl2.string(first(ref[18]).t.R8LCMZ) };
     const Text2 = tmp5(tmp6[17]).Text;
     intl2 = tmp5(tmp6[18]).intl;
     items3[1] = closure_11(Text2, obj7);

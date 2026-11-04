@@ -1,8 +1,8 @@
-// Module ID: 8043
-// Function ID: 8044
+// Module ID: 8059
+// Function ID: 8060
 // Dependencies: [2]
 
-// Module 8043
+// Module 8059
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/test-background/Duck.png.js");

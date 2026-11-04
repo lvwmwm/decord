@@ -1,10 +1,10 @@
-// Module ID: 17496
-// Function ID: 17497
+// Module ID: 17586
+// Function ID: 17587
 // Name: CustomTypingIndicatorTypingSuggestionPickerSheet
-// Dependencies: [32, 19, 21, 5141, 575, 7486, 7441, 1113, 3997, 7184, 13864, 7187, 2]
+// Dependencies: [32, 19, 21, 5141, 575, 7502, 7457, 1113, 3997, 7199, 13950, 7202, 2]
 // Exports: default
 
-// Module 17496 (CustomTypingIndicatorTypingSuggestionPickerSheet)
+// Module 17586 (CustomTypingIndicatorTypingSuggestionPickerSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3997 from "module_3997" /* 3997 */;
@@ -32,9 +32,9 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChang
   const initialValue = onChange.initialValue;
   const tmp = closure_6();
   [first, importDefault] = react.useState(initialValue);
-  const ActionSheet = onChange(7486).ActionSheet;
+  const ActionSheet = onChange(7502).ActionSheet;
   let obj2 = { title: intl.string(_modDef3997["X+ijyw"]) };
-  const BottomSheetTitleHeader = onChange(7441).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = onChange(7457).BottomSheetTitleHeader;
   intl = onChange(1113).intl;
   const intl2 = onChange(1113).intl;
   ({
@@ -52,8 +52,8 @@ export default function CustomTypingIndicatorTypingSuggestionPickerSheet(onChang
       return <TableRadioRow key={arg0} value={arg0} label={string(obj2.getCustomTypingIndicatorSuggestionMessage(arg0))} />;
     })
   });
-  const TableRadioGroup = onChange(7184).TableRadioGroup;
-  const obj4 = onChange(13864);
+  const TableRadioGroup = onChange(7199).TableRadioGroup;
+  const obj4 = onChange(13950);
   customTypingIndicatorSuggestionPresets = obj4.getCustomTypingIndicatorSuggestionPresets();
   return <ActionSheet contentStyles={tmp.content} header={null} dismissAccessibilityLabel={intl2.string(_modDef3997.hrl2cG)}>{null}</ActionSheet>;
 };

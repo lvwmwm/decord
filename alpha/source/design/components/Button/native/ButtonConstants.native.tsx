@@ -1,12 +1,12 @@
-// Module ID: 5760
-// Function ID: 5761
+// Module ID: 5774
+// Function ID: 5775
 // Name: ButtonConstants
-// Dependencies: [5756, 575, 2]
+// Dependencies: [5770, 575, 2]
 // Exports: getButtonBorderRadius, getButtonDefaultTextVariant, getButtonPadding
 
-// Module 5760 (ButtonConstants)
+// Module 5774 (ButtonConstants)
 import nativeDefault from "native" /* 575 */;
-import Icon_mod from "Icon" /* 5756 */;
+import Icon_mod from "Icon" /* 5770 */;
 import size from "module_2" /* 2 */;
 
 let Icon;
@@ -41,9 +41,9 @@ export const MEDIUM_BUTTON_PADDING = (diff1 - 2) / 2;
 export const LARGE_BUTTON_PADDING = (diff2 - 2) / 2;
 export const BUTTON_DEFAULT_MAX_FONT_SIZE_MULTIPLIER = 3;
 export function getButtonDefaultTextVariant(size) {
-  let str = "text-sm/semibold";
+  let str = "body-sm/semibold";
   if ("lg" === size) {
-    str = "text-md/semibold";
+    str = "body-md/semibold";
   }
   return str;
 }

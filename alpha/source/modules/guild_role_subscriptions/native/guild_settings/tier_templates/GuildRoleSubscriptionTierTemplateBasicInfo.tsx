@@ -1,17 +1,17 @@
-// Module ID: 20151
-// Function ID: 20152
+// Module ID: 20267
+// Function ID: 20268
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 21, 5141, 575, 5837, 5747, 17363, 5754, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5851, 5761, 17454, 5768, 1113, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 20151 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 20267 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17363 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 17454 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -62,14 +62,14 @@ export function GuildRoleSubscriptionTierTemplateBasicInfo(template) {
   const obj3 = { source: { uri: image }, style: tmp.image };
   items[0] = React3(FastImageDefault, obj3);
   const obj4 = { style: tmp.headerText, children: items1 };
-  items1 = [React3(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), ];
-  const obj5 = { variant: "heading-md/medium", style: subscriptionPlanTextStyle, children: obj6.formatMonthlyPriceLabel(price_tier) };
+  items1 = [React3(Text_Text.Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: { flexWrap: "wrap" }, children: name }), ];
+  const obj5 = { variant: "heading-sm/medium", style: subscriptionPlanTextStyle, children: obj6.formatMonthlyPriceLabel(price_tier) };
   const Text = Text_Text.Text;
   obj6 = GuildRoleSubscriptionTypeUtils;
   items1[1] = React3(Text, obj5);
   items[1] = hasOwnProperty(View, obj4);
   items2 = [hasOwnProperty(View, obj2), , ];
-  const obj7 = { variant: "text-sm/normal", style: descriptionTextStyle, children: description };
+  const obj7 = { variant: "body-sm/normal", style: descriptionTextStyle, children: description };
   const Text2 = Text_Text.Text;
   const merged = Object.assign(descriptionTextProps);
   items2[1] = React3(Text2, obj7);

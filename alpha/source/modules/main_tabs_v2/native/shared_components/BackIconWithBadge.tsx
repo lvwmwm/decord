@@ -1,18 +1,18 @@
-// Module ID: 18632
-// Function ID: 18633
+// Module ID: 18733
+// Function ID: 18734
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7006, 21, 5141, 575, 504, 18623, 1187, 9637, 1357, 7128, 7180, 10898, 2]
+// Dependencies: [19, 17, 7021, 21, 5141, 575, 504, 18724, 1187, 9656, 1357, 7143, 7195, 10946, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 18632 (BackIconWithBadge)
+// Module 18733 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7128 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import ClipView from "ClipView" /* 9637 */;
-import XLargeIcon from "XLargeIcon" /* 10898 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7143 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import ClipView from "ClipView" /* 9656 */;
+import XLargeIcon from "XLargeIcon" /* 10946 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7006 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7021 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ function IconWithBadge(includeNotificationsCount) {
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(18623)().value;
+  const value = memo(18724)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;
@@ -83,7 +83,7 @@ function IconWithBadge(includeNotificationsCount) {
   const obj2 = { style: size, children: tmp11(View, obj3) };
   obj3 = { style: tmp.backIcon, children: items5 };
   tmp11 = closure_7;
-  const tmp5Result = tmp5(9637);
+  const tmp5Result = tmp5(9656);
   if (null != memo1) {
     const items3 = [memo1];
     items4 = items3;

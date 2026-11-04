@@ -1,24 +1,24 @@
-// Module ID: 18986
-// Function ID: 18987
+// Module ID: 19089
+// Function ID: 19090
 // Name: FriendsNavigator
-// Dependencies: [19, 17, 21, 9987, 5141, 575, 9946, 9943, 14302, 1113, 7778, 7290, 18987, 18993, 18996, 18997, 18998, 19009, 19010, 19011, 19013, 19016, 19017, 5317, 1627, 7238, 5098, 5207, 2]
+// Dependencies: [19, 17, 21, 10035, 5141, 575, 9964, 9961, 14388, 1113, 7794, 7306, 19090, 19096, 19099, 19100, 19101, 19112, 19113, 19114, 19116, 19119, 19120, 5318, 1627, 7258, 5098, 5207, 2]
 // Exports: default
 
-// Module 18986 (FriendsNavigator)
+// Module 19089 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import DeviceUtils from "DeviceUtils" /* 5098 */;
 import native from "native" /* 5207 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5317 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7238 */;
-import HeaderShared from "HeaderShared" /* 9943 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9946 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14302 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5318 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7258 */;
+import HeaderShared from "HeaderShared" /* 9961 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9964 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14388 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9987 */;
+import NativeStackView from "NativeStackView" /* 10035 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 

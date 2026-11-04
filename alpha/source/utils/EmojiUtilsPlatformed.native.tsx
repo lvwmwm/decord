@@ -1,7 +1,7 @@
 // Module ID: 5097
 // Function ID: 5098
 // Name: EmojiUtilsPlatformed
-// Dependencies: [32, 5, 17, 5088, 5098, 1377, 12, 1411, 2022, 5099, 1490, 5138, 5140, 5768, 2]
+// Dependencies: [32, 5, 17, 5088, 5098, 1377, 12, 1411, 2022, 5099, 1490, 5138, 5140, 5782, 2]
 
 // Module 5097 (EmojiUtilsPlatformed)
 import _modDef12 from "module_12" /* 12 */;
@@ -15,7 +15,7 @@ import BurstReactionFirstSendActionSheet from "BurstReactionFirstSendActionSheet
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_5088 from "module_5088" /* 5088 */;
-import MemoizerUtils_mod from "MemoizerUtils" /* 5768 */;
+import MemoizerUtils_mod from "MemoizerUtils" /* 5782 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, unicodeVersion;

@@ -1,15 +1,15 @@
-// Module ID: 8814
-// Function ID: 8815
+// Module ID: 8831
+// Function ID: 8832
 // Name: RowGeneratorUtils
-// Dependencies: [5142, 4990, 5012, 5146, 8502, 1072, 5141, 5138, 575, 7565, 6183, 1441, 1492, 2]
+// Dependencies: [5142, 4990, 5012, 5146, 8519, 1072, 5141, 5138, 575, 7581, 6198, 1441, 1492, 2]
 
-// Module 8814 (RowGeneratorUtils)
+// Module 8831 (RowGeneratorUtils)
 import nativeDefault from "native" /* 575 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1492 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6183 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7565 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8502 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7581 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8519 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;

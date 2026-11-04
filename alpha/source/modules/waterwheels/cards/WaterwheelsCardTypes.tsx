@@ -1,11 +1,11 @@
-// Module ID: 9056
-// Function ID: 9057
+// Module ID: 9073
+// Function ID: 9074
 // Name: WaterwheelsCardTypes
 // Dependencies: [2]
 
-// Module 9056 (WaterwheelsCardTypes)
+// Module 9073 (WaterwheelsCardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/waterwheels/cards/WaterwheelsCardTypes.tsx");
 
-export const WaterwheelsActionType = { JOIN_GUILD: "join_guild", OPEN_GUILD: "open_guild", OPEN_GAME: "open_game", OPEN_URI: "open_uri", OPEN_NUDGE: "open_nudge" };
+export const WaterwheelsActionType = { JOIN_GUILD: "join_guild", OPEN_CONNECTION: "open_connection", OPEN_GUILD: "open_guild", OPEN_GAME: "open_game", OPEN_URI: "open_uri", OPEN_NUDGE: "open_nudge" };

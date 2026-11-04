@@ -1,16 +1,16 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7635
+// Function ID: 7636
 // Name: SafetyToastsUtils
-// Dependencies: [4990, 1385, 7614, 6161, 5195, 1113, 3223, 2801, 2]
+// Dependencies: [4990, 1385, 7630, 6176, 5195, 1113, 3223, 2801, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 7619 (SafetyToastsUtils)
+// Module 7635 (SafetyToastsUtils)
 import intl19 from "intl" /* 1113 */;
 import _modDef2801 from "module_2801" /* 2801 */;
 import _modDef3223 from "module_3223" /* 3223 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6161 */;
-import Constants from "Constants" /* 7614 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
+import Constants from "Constants" /* 7630 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -64,7 +64,7 @@ export function getSafetyToastTypeContent(BLOCK_SUCCESS, id, channelId) {
     const intl12 = intl19.intl;
     const obj7 = { username: name };
     return intl12.formatToPlainString(intl19.t.FOptFU, obj7);
-  } else if (SafetyToastType.TIGGER_PAWTECT_ERROR === BLOCK_SUCCESS) {
+  } else if (SafetyToastType.AGE_VERIFICATION_ERROR === BLOCK_SUCCESS) {
     const intl11 = intl19.intl;
     return intl11.string(intl19.t.c6kn6F);
   } else if (SafetyToastType.AGE_VERIFICATION_FAE_FAILED === BLOCK_SUCCESS) {
@@ -76,7 +76,7 @@ export function getSafetyToastTypeContent(BLOCK_SUCCESS, id, channelId) {
   } else if (SafetyToastType.AGE_VERIFICATION_UNDERAGE === BLOCK_SUCCESS) {
     const intl8 = intl19.intl;
     return intl8.string(_modDef3223.XBGt7g);
-  } else if (SafetyToastType.TIGGER_PAWTECT_VERIFIED === BLOCK_SUCCESS) {
+  } else if (SafetyToastType.AGE_VERIFICATION_VERIFIED === BLOCK_SUCCESS) {
     const intl7 = intl19.intl;
     return intl7.string(intl19.t["7nKAXx"]);
   } else if (SafetyToastType.GENERIC_ERROR === BLOCK_SUCCESS) {

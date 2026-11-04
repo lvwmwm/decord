@@ -1,28 +1,28 @@
-// Module ID: 13497
-// Function ID: 13498
+// Module ID: 13581
+// Function ID: 13582
 // Name: FamilyCenterDataConfirmation
-// Dependencies: [19, 21, 6147, 5747, 7186, 7101, 1113, 2667, 13498, 5841, 9890, 8784, 13499, 8139, 13501, 10214, 5860, 13502, 7685, 7180, 2]
+// Dependencies: [19, 21, 6162, 5761, 7201, 7116, 1113, 2667, 13582, 5855, 9908, 8801, 13583, 8155, 13585, 10262, 5874, 13586, 7701, 7195, 2]
 // Exports: default
 
-// Module 13497 (FamilyCenterDataConfirmation)
+// Module 13581 (FamilyCenterDataConfirmation)
 import intl37 from "intl" /* 1113 */;
 import _modDef2667 from "module_2667" /* 2667 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import UserPlusIcon from "UserPlusIcon" /* 5841 */;
-import ClockIcon from "ClockIcon" /* 5860 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import SettingsIcon from "SettingsIcon" /* 7685 */;
-import CreditCardIcon from "CreditCardIcon" /* 8139 */;
-import ForumIcon from "ForumIcon" /* 8784 */;
-import ServerIcon from "ServerIcon" /* 9890 */;
-import FlagIcon from "FlagIcon" /* 10214 */;
-import useAgeSpecificText12 from "useAgeSpecificText" /* 13498 */;
-import PhoneIcon from "PhoneIcon" /* 13499 */;
-import GiftIcon from "GiftIcon" /* 13501 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 13502 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import UserPlusIcon from "UserPlusIcon" /* 5855 */;
+import ClockIcon from "ClockIcon" /* 5874 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import SettingsIcon from "SettingsIcon" /* 7701 */;
+import CreditCardIcon from "CreditCardIcon" /* 8155 */;
+import ForumIcon from "ForumIcon" /* 8801 */;
+import ServerIcon from "ServerIcon" /* 9908 */;
+import FlagIcon from "FlagIcon" /* 10262 */;
+import useAgeSpecificText12 from "useAgeSpecificText" /* 13582 */;
+import PhoneIcon from "PhoneIcon" /* 13583 */;
+import GiftIcon from "GiftIcon" /* 13585 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 13586 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ function RowGroup(rows) {
   const title = rows.title;
   let obj = { spacing: 8, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [_false(Text_Text.Text, { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-muted", children: title }), ];
+  items = [_false(Text_Text.Text, { accessibilityRole: "header", variant: "body-sm/semibold", color: "text-muted", children: title }), ];
   const obj2 = {
     hasIcons: true,
     children: rows.map((header) => {

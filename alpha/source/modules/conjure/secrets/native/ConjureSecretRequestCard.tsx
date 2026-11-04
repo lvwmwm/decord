@@ -1,16 +1,16 @@
-// Module ID: 12904
-// Function ID: 12905
+// Module ID: 12985
+// Function ID: 12986
 // Name: ConjureSecretRequestCard
-// Dependencies: [19, 17, 5142, 21, 5141, 575, 5381, 12905, 7251, 12727, 504, 1652, 5757, 5758, 12272, 5747, 1113, 3995, 12321, 7460, 12794, 12273, 12277, 5754, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 5382, 12986, 7271, 12808, 504, 1652, 5771, 5772, 12333, 5761, 1113, 3995, 12386, 7476, 12875, 12334, 12338, 5768, 2]
 // Exports: default
 
-// Module 12904 (ConjureSecretRequestCard)
+// Module 12985 (ConjureSecretRequestCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import springPresets from "springPresets" /* 5758 */;
-import ConjureSecretsSheet from "ConjureSecretsSheet" /* 12905 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import springPresets from "springPresets" /* 5772 */;
+import ConjureSecretsSheet from "ConjureSecretsSheet" /* 12986 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -162,7 +162,7 @@ export default function ConjureSecretRequestCard(projectId) {
     const obj4 = { style: animatedStyle, children: closure_6(tmp11Result, obj5) };
     const View4 = tmp11(tmp5[11]).View;
     obj5 = { style: tmp.card, children: closure_6(Text5, obj6) };
-    obj6 = { variant: "text-xs/semibold", color: "text-muted", children: intl9.string(request(secretRequestStatusChanged[17]).CTxtdV) };
+    obj6 = { variant: "body-xs/semibold", color: "text-muted", children: intl9.string(request(secretRequestStatusChanged[17]).CTxtdV) };
     tmp11Result = request(secretRequestStatusChanged[14]);
     Text5 = tmp4(tmp5[15]).Text;
     intl9 = tmp4(tmp5[16]).intl;
@@ -171,7 +171,7 @@ export default function ConjureSecretRequestCard(projectId) {
     const obj7 = { style: animatedStyle, children: closure_7(tmp11Result5, obj8) };
     const View3 = tmp11(tmp5[11]).View;
     obj8 = { style: tmp.card, children: items8 };
-    const obj9 = { variant: "text-xs/semibold", color: "text-muted", children: intl7.string(request(secretRequestStatusChanged[17]).HCQvpO) };
+    const obj9 = { variant: "body-xs/semibold", color: "text-muted", children: intl7.string(request(secretRequestStatusChanged[17]).HCQvpO) };
     tmp11Result5 = request(secretRequestStatusChanged[14]);
     const Text4 = tmp4(tmp5[15]).Text;
     intl7 = tmp4(tmp5[16]).intl;
@@ -199,12 +199,12 @@ export default function ConjureSecretRequestCard(projectId) {
     obj17 = { size: "xs", color: request(secretRequestStatusChanged[5]).colors.ICON_FEEDBACK_POSITIVE };
     CircleCheckIcon = tmp4(tmp5[19]).CircleCheckIcon;
     items9 = [closure_6(View2, obj16), ];
-    const obj18 = { variant: "text-xs/semibold", color: "text-feedback-positive", children: intl5.string(request(secretRequestStatusChanged[17]).sfp7Up) };
+    const obj18 = { variant: "body-xs/semibold", color: "text-feedback-positive", children: intl5.string(request(secretRequestStatusChanged[17]).sfp7Up) };
     const Text2 = tmp4(tmp5[15]).Text;
     intl5 = tmp4(tmp5[16]).intl;
     items9[1] = closure_6(Text2, obj18);
     items10 = [closure_7(sharedValue, obj15), ];
-    const obj19 = { variant: "text-sm/normal", color: "text-default", children: tmp4Result2.conjureConnectedKeysSummary(fields.map((label) => label.label)) };
+    const obj19 = { variant: "body-sm/normal", color: "text-default", children: tmp4Result2.conjureConnectedKeysSummary(fields.map((label) => label.label)) };
     const Text3 = tmp4(tmp5[15]).Text;
     fields = request.fields;
     tmp4Result2 = projectId(secretRequestStatusChanged[20]);
@@ -230,7 +230,7 @@ export default function ConjureSecretRequestCard(projectId) {
     if (null != awaiting) {
       str = "text-brand";
     }
-    const obj21 = { variant: "text-xs/semibold", color: str, children: string(HCQvpO) };
+    const obj21 = { variant: "body-xs/semibold", color: str, children: string(HCQvpO) };
     const intl = tmp4(tmp5[16]).intl;
     string = intl.string;
     if (null != awaiting) {
@@ -244,7 +244,7 @@ export default function ConjureSecretRequestCard(projectId) {
       if ("" !== request.note) {
         note = request.note;
       }
-      const obj22 = { text: note, variant: "text-sm/normal", color: "text-default" };
+      const obj22 = { text: note, variant: "body-sm/normal", color: "text-default" };
       items12[2] = closure_6(tmp23, obj22);
       const obj23 = { label: intl3.string(request(secretRequestStatusChanged[17]).HCQvpO), size: "xs", items: memo };
       const TagGroup = tmp4(tmp5[18]).TagGroup;

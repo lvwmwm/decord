@@ -1,17 +1,17 @@
-// Module ID: 17599
-// Function ID: 17600
+// Module ID: 17689
+// Function ID: 17690
 // Name: UserSettingsText
-// Dependencies: [19, 17, 1385, 2181, 1193, 1194, 1072, 21, 5141, 575, 1252, 4966, 6052, 5719, 504, 2176, 1499, 7282, 1187, 10408, 5747, 1113, 8301, 6147, 7186, 7489, 7184, 7187, 2]
+// Dependencies: [19, 17, 1385, 2181, 1193, 1194, 1072, 21, 5141, 575, 1252, 4966, 6067, 5732, 504, 2176, 1499, 7298, 1187, 10456, 5761, 1113, 8317, 6162, 7201, 7505, 7199, 7202, 2]
 // Exports: default, setDataSavingMode, setImageDescriptions, setLowQualityImageMode, setStickerAutocomplete, setVideoUploadQuality
 
-// Module 17599 (UserSettingsText)
+// Module 17689 (UserSettingsText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UnsyncedUserSettingsStore2 from "UnsyncedUserSettingsStore" /* 1194 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import UserSettings from "UserSettings" /* 4966 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6052 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7282 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6067 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7298 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import SubscriptionStore from "SubscriptionStore" /* 2181 */;
@@ -120,7 +120,7 @@ export default function UserSettingsText() {
   const obj7 = require("useNavigation");
   closure_4 = obj7.useNavigation();
   const obj8 = { style: tmp5.flex, children: closure_12(Form, obj24) };
-  Form = require("module_8301").Form;
+  Form = require("module_8317").Form;
   const obj9 = { spacing: videoUploadQuality(dataSavingMode[9]).space.PX_24, style: { paddingHorizontal: token }, children: items6 };
   const Stack = require("Stack/Stack").Stack;
   const obj10 = { children: items5 };
@@ -193,7 +193,7 @@ export default function UserSettingsText() {
     const obj21 = { source: tmp3(dataSavingMode[19]), size: require("native").Icon.Sizes.SMALL, style: tmp5.nitroIcon };
     const Icon = tmp(tmp2[18]).Icon;
     items9 = [closure_12(Icon, obj21), ];
-    const obj22 = { variant: "text-sm/medium", color: "text-muted", style: { marginLeft: 4 }, children: intl12.format(require("intl").t.uW1zul, obj23) };
+    const obj22 = { variant: "body-sm/medium", color: "text-muted", style: { marginLeft: 4 }, children: intl12.format(require("intl").t.uW1zul, obj23) };
     const Text = tmp(tmp2[20]).Text;
     intl12 = tmp(tmp2[21]).intl;
     obj23 = {

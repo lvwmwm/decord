@@ -1,16 +1,16 @@
-// Module ID: 13542
-// Function ID: 13543
+// Module ID: 13626
+// Function ID: 13627
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 5141, 575, 5730, 1652, 5757, 5758, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5743, 1652, 5771, 5772, 5761, 2]
 // Exports: default
 
-// Module 13542 (ShareFooterLayout)
+// Module 13626 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import springPresets from "springPresets" /* 5758 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import springPresets from "springPresets" /* 5772 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -25,7 +25,7 @@ let obj4;
 let tmp2;
 let tmp5;
 const _modDef1652 = tmp2(1652);
-const Text_Text = tmp5(5747);
+const Text_Text = tmp5(5761);
 let View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -97,7 +97,7 @@ export default function ShareFooterLayout(arg0) {
   let tmp18 = null != warningText;
   const tmp17 = View;
   if (tmp18) {
-    const obj6 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
+    const obj6 = { variant: "body-sm/normal", color: "text-feedback-warning", children: warningText };
     tmp18 = React3(Text_Text.Text, obj6);
   }
   items6[1] = tmp18;

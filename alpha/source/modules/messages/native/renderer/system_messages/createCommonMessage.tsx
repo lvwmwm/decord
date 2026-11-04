@@ -1,17 +1,17 @@
-// Module ID: 8546
-// Function ID: 8547
+// Module ID: 8563
+// Function ID: 8564
 // Name: createCommonMessage
-// Dependencies: [4990, 5141, 5148, 5138, 575, 4963, 8520, 8547, 8548, 8549, 2]
+// Dependencies: [4990, 5141, 5148, 5138, 575, 4963, 8537, 8564, 8565, 8566, 2]
 // Exports: default
 
-// Module 8546 (createCommonMessage)
+// Module 8563 (createCommonMessage)
 import nativeDefault from "native" /* 575 */;
 import DateUtils from "DateUtils" /* 4963 */;
 import shared from "shared" /* 5148 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8520 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8547 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8548 */;
-import MessageAccessibilityActions from "MessageAccessibilityActions" /* 8549 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8537 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8564 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8565 */;
+import MessageAccessibilityActions from "MessageAccessibilityActions" /* 8566 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

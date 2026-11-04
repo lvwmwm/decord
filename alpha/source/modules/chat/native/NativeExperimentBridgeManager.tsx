@@ -1,24 +1,24 @@
-// Module ID: 20185
-// Function ID: 20186
+// Module ID: 20301
+// Function ID: 20302
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2191, 502, 8999, 1377, 20186, 6685, 7941, 1252, 20187, 1282, 7407, 2]
+// Dependencies: [17, 2191, 502, 9016, 1377, 20302, 6700, 7957, 1252, 20303, 1282, 7423, 2]
 
-// Module 20185 (NativeExperimentBridgeManager)
+// Module 20301 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6685 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 7941 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 20187 */;
+import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6700 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 7957 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 20303 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaPlaybackExperiment_mod from "MediaPlaybackExperiment" /* 8999 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7407 */;
+import MediaPlaybackExperiment_mod from "MediaPlaybackExperiment" /* 9016 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const YYTextReplacementExperiment = tmp(20186);
+const YYTextReplacementExperiment = tmp(20302);
 function syncYYTextReplacementExperiment() {
   const obj = PlatformUtils;
   if (obj.isIOS()) {

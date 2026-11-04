@@ -1,23 +1,23 @@
-// Module ID: 18386
-// Function ID: 18387
+// Module ID: 18480
+// Function ID: 18481
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 11186, 1072, 21, 1652, 5141, 575, 1377, 9953, 5762, 11182, 5880, 17220, 1705, 5757, 5758, 8786, 13182, 13180, 5747, 1113, 2]
+// Dependencies: [32, 19, 17, 11236, 1072, 21, 1652, 5141, 575, 1377, 9971, 5776, 11232, 5894, 17312, 1705, 5771, 5772, 8803, 13265, 13263, 5761, 1113, 2]
 
-// Module 18386 (ChannelsUnreadBar)
+// Module 18480 (ChannelsUnreadBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5880 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let textxssemibold;
+let bodyxssemibold;
 
 let c9;
 let hasOwnProperty;
@@ -51,7 +51,7 @@ let closure_11 = createStyles.createStyles((arg0, arg1) => {
   }
   return obj2;
 });
-let c12 = "text-xs/semibold";
+let c12 = "body-xs/semibold";
 let closure_13 = { code: "(function ChannelsUnreadBarTsx1(){let[shown,position,scrollPosition,listPaddingTop,searchBarHeight,justReachedEnd,scheduleOnRN,resetReachedEnd,height,MARGIN,guildChannelsListUnreadBarInsetEnd,width,withSpring,springStandard,interpolate,pressed,ON_PRESS_SPRING]=this.__closure;const animatedShown=shown&&(position==='top'?scrollPosition!=null&&listPaddingTop!=null&&scrollPosition.get()>listPaddingTop+searchBarHeight:!justReachedEnd);if(justReachedEnd){scheduleOnRN(resetReachedEnd);}const offsetBase=height.get()-MARGIN;const value=animatedShown?position==='bottom'&&guildChannelsListUnreadBarInsetEnd!=null?-guildChannelsListUnreadBarInsetEnd.get():0:offsetBase*(position==='bottom'?1:-1);const opacity=animatedShown?1:0;const scale=width.get()>0?(width.get()+5)/width.get():1;return{opacity:withSpring(opacity,springStandard,'animate-always'),transform:[{translateY:withSpring(value,springStandard)},{translateX:width.get()/2},{scale:withSpring(interpolate(pressed.get(),[0,1],[1,scale]),ON_PRESS_SPRING)}]};})" };
 const memoResult = react.memo(function ChannelsUnreadBar(position) {
   let ArrowSmallUpIcon;
@@ -95,7 +95,7 @@ const memoResult = react.memo(function ChannelsUnreadBar(position) {
   let sharedValue1;
   let sharedValue2;
   let youBarTotalHeight;
-  textxssemibold = undefined;
+  bodyxssemibold = undefined;
   let obj = endReachedCounter;
   let flag = isMention;
   ({ guildChannelsListUnreadBarInsetEnd, scrollPosition, listPaddingTop } = position);
@@ -117,7 +117,7 @@ const memoResult = react.memo(function ChannelsUnreadBar(position) {
   let obj2 = position(onPress[11]);
   const fontScale = obj2.useFontScale();
   const obj3 = position(onPress[12]);
-  let sum = obj3.scaleTextLineHeight(textxssemibold, fontScale) + 8;
+  let sum = obj3.scaleTextLineHeight(bodyxssemibold, fontScale) + 8;
   let obj4 = position(onPress[6]);
   sharedValue = obj4.useSharedValue(0);
   const obj5 = position(onPress[6]);
@@ -174,8 +174,8 @@ const memoResult = react.memo(function ChannelsUnreadBar(position) {
   }, items6);
   const tmp21 = headerHeight(fontScale);
   const tmp22 = isMention(obj.useState(false), 2);
-  const tmp9 = textxssemibold;
-  textxssemibold = tmp22[1];
+  const tmp9 = bodyxssemibold;
+  bodyxssemibold = tmp22[1];
   const items7 = [endReachedCounter];
   const first1 = tmp22[0];
   const effect2 = obj.useEffect(() => {

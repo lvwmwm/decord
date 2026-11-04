@@ -1,15 +1,15 @@
-// Module ID: 15860
-// Function ID: 15861
+// Module ID: 15948
+// Function ID: 15949
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 5141, 575, 15861, 5395, 7441, 15865, 5381, 5754, 38, 9202, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 15949, 5396, 7457, 15953, 5382, 5768, 38, 9219, 2]
 
-// Module 15860 (GuildSettingsPickerBottomSheet)
+// Module 15948 (GuildSettingsPickerBottomSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
-import GuildPickerDefault from "GuildPicker" /* 15865 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
+import GuildPickerDefault from "GuildPicker" /* 15953 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -38,11 +38,11 @@ class GuildSettingsPickerBottomSheet {
     feature = feature.feature;
     ({ section: importDefault, subsection: dependencyMap, guildId } = feature);
     const tmp = closure_6();
-    let obj = feature(15861);
+    let obj = feature(15949);
     const guildSettingsPickerFeature = obj.useGuildSettingsPickerFeature(feature);
     ({ selectGuildCta, title, description, isGuildSupported } = guildSettingsPickerFeature);
-    let obj2 = { startExpanded: true, header: closure_4(feature(7441).BottomSheetTitleHeader, { title, subtitle: description }), children: closure_5(guildId, obj3) };
-    const BottomSheet = feature(5395).BottomSheet;
+    let obj2 = { startExpanded: true, header: closure_4(feature(7457).BottomSheetTitleHeader, { title, subtitle: description }), children: closure_5(guildId, obj3) };
+    const BottomSheet = feature(5396).BottomSheet;
     obj3 = { style: tmp.content, children: items };
     items = [, ];
     const obj4 = {
@@ -67,7 +67,7 @@ class GuildSettingsPickerBottomSheet {
         obj2.hideActionSheet();
       }
     };
-    items[1] = closure_4(feature(5754).Button, obj5);
+    items[1] = closure_4(feature(5768).Button, obj5);
     return closure_4(BottomSheet, obj2);
   }
 }

@@ -1,21 +1,21 @@
-// Module ID: 17839
-// Function ID: 17840
+// Module ID: 17935
+// Function ID: 17936
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1387, 21, 5141, 12261, 1113, 14745, 8770, 5202, 2176, 17840, 5747, 17844, 5754, 9656, 575, 2]
+// Dependencies: [19, 17, 1387, 21, 5141, 12322, 1113, 14825, 8787, 5202, 2176, 17936, 5761, 17940, 5768, 9675, 575, 2]
 
-// Module 17839 (PremiumTrialOfferActionSheetContent)
+// Module 17935 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtils from "PremiumUtils" /* 2176 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5202 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FolderIcon from "FolderIcon" /* 8770 */;
-import UserIcon from "UserIcon" /* 12261 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14745 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17840 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 17844 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FolderIcon from "FolderIcon" /* 8787 */;
+import UserIcon from "UserIcon" /* 12322 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14825 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17936 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 17940 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -106,10 +106,10 @@ const memoResult = react.memo(function PremiumTrialOfferActionSheetContent(onCon
   items1[2] = hasOwnProperty(PremiumPerksListDefault, { perks: items });
   const obj10 = { style: tmp.buttonContainer, children: hasOwnProperty(Button, obj11) };
   obj11 = { size: "lg", text: intl9.formatToPlainString(intl10.t.xASjq5, { duration: intervalDuration }), onPress: onConfirm, grow: true, icon: hasOwnProperty(NitroWheelIcon, obj12) };
-  Button = tmp3(5754).Button;
+  Button = tmp3(5768).Button;
   intl9 = tmp3(1113).intl;
   obj12 = { size: "md", color: nativeDefault.unsafe_rawColors.WHITE };
-  NitroWheelIcon = tmp3(9656).NitroWheelIcon;
+  NitroWheelIcon = tmp3(9675).NitroWheelIcon;
   items1[3] = hasOwnProperty(View, obj10);
   return tmp6(View, obj7);
 });

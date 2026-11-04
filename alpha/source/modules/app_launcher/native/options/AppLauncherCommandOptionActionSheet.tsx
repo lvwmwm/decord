@@ -1,15 +1,15 @@
-// Module ID: 12634
-// Function ID: 12635
+// Module ID: 12715
+// Function ID: 12716
 // Name: AppLauncherCommandOptionActionSheet
-// Dependencies: [19, 17, 1498, 21, 5141, 575, 5395, 7441, 7487, 5381, 2]
+// Dependencies: [19, 17, 1498, 21, 5141, 575, 5396, 7457, 7503, 5382, 2]
 // Exports: AppLauncherCommandOptionActionSheet
 
-// Module 12634 (AppLauncherCommandOptionActionSheet)
+// Module 12715 (AppLauncherCommandOptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -39,9 +39,9 @@ export function AppLauncherCommandOptionActionSheet(startExpanded) {
   }
   const merged = Object.assign(startExpanded, Object.assign({ option: 0, children: 0, contentContainerStyles: 0, scrollable: 0, startExpanded: 0 }));
   const tmp2 = closure_5();
-  const BottomSheet = merged(5395).BottomSheet;
+  const BottomSheet = merged(5396).BottomSheet;
   const merged1 = Object.assign(merged);
-  const BottomSheetTitleHeader = merged(7441).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = merged(7457).BottomSheetTitleHeader;
   ({ displayName: obj2.title, displayDescription: obj2.subtitle } = option);
   const items = [tmp2.contentContainer, contentContainerStyles];
   return <BottomSheet key={option.name} backgroundStyles={tmp2.actionSheetBackground} scrollable={scrollable} startExpanded={flag} header={<BottomSheetTitleHeader leading={null} title={null} subtitle={null} />}><View style={items}>{children}</View></BottomSheet>;

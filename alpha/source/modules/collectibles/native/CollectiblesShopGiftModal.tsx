@@ -1,25 +1,25 @@
-// Module ID: 14559
-// Function ID: 14560
+// Module ID: 14639
+// Function ID: 14640
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7844, 1072, 1083, 21, 10040, 1377, 2188, 14560, 14558, 10819, 10806, 10823, 14561, 14564, 10740, 8892, 8879, 504, 7446, 7471, 2155, 7843, 10822, 1113, 2]
+// Dependencies: [19, 7860, 1072, 1083, 21, 10088, 1377, 2188, 14640, 14638, 10867, 10854, 10871, 14641, 14644, 10788, 8909, 8896, 504, 7462, 7487, 2155, 7859, 10870, 1113, 2]
 // Exports: default
 
-// Module 14559 (CollectiblesShopGiftModal)
+// Module 14639 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
 import StringUtils from "StringUtils" /* 2155 */;
-import BadgeId from "BadgeId" /* 8879 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8892 */;
-import openGiftModal from "openGiftModal" /* 14558 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14561 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14564 */;
+import BadgeId from "BadgeId" /* 8896 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8909 */;
+import openGiftModal from "openGiftModal" /* 14638 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14641 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14644 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7844 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7860 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesActionCreators = tmp(7843);
+const CollectiblesActionCreators = tmp(7859);
 function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;

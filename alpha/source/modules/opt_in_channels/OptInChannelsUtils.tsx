@@ -1,24 +1,24 @@
-// Module ID: 11724
-// Function ID: 11725
+// Module ID: 11779
+// Function ID: 11780
 // Name: OptInChannelsUtils
-// Dependencies: [19, 4990, 7400, 6962, 5083, 1385, 1072, 4997, 7837, 6896, 7521, 7019, 5772, 7401, 7831, 11725, 7399, 1099, 5171, 4974, 504, 1113, 2171, 11, 2]
+// Dependencies: [19, 4990, 7416, 6977, 5083, 1385, 1072, 4997, 7853, 6911, 7537, 7034, 5786, 7417, 7847, 11780, 7415, 1099, 5171, 4974, 504, 1113, 2171, 11, 2]
 // Exports: clearRecentChannels, getActiveAgoTimestamp, getFirstRouteFor, useChannelBrowserChannelCount, useChannelBrowserSections, useFilterCategoriesByQuery
 
-// Module 11724 (OptInChannelsUtils)
+// Module 11779 (OptInChannelsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2171 from "module_2171" /* 2171 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import fuzzysearchDefault from "fuzzysearch" /* 7019 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7399 */;
-import ChannelListState from "ChannelListState" /* 7831 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 7837 */;
-import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11725 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import ReadStateConstants from "ReadStateConstants" /* 6911 */;
+import fuzzysearchDefault from "fuzzysearch" /* 7034 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7415 */;
+import ChannelListState from "ChannelListState" /* 7847 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 7853 */;
+import RecentChannelsActionCreators from "RecentChannelsActionCreators" /* 11780 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7400 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7416 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;

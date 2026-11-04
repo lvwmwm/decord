@@ -1,30 +1,30 @@
-// Module ID: 17909
-// Function ID: 17910
+// Module ID: 18005
+// Function ID: 18006
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1072, 1240, 21, 17910, 5754, 17911, 8152, 7686, 9323, 15998, 8523, 12918, 11126, 12919, 9371, 5141, 575, 1499, 5381, 17912, 2123, 6147, 5747, 10679, 9313, 9319, 9321, 9320, 9318, 9317, 6887, 5207, 1090, 5710, 7103, 10866, 9127, 2]
+// Dependencies: [32, 19, 17, 1072, 1240, 21, 18006, 5768, 18007, 8168, 7702, 9340, 16088, 8540, 13000, 11174, 13001, 9388, 5141, 575, 1499, 5382, 18008, 2123, 6162, 5761, 10727, 9330, 9336, 9338, 9337, 9335, 9334, 6902, 5207, 1090, 5723, 7118, 10914, 9144, 2]
 // Exports: default
 
-// Module 17909 (UserSettingsDesignSystemButton)
+// Module 18005 (UserSettingsDesignSystemButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import IconButton4 from "IconButton" /* 8152 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8523 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 9313 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 9317 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 9318 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 9319 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 9320 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 9321 */;
-import ImageButton2 from "ImageButton" /* 9323 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 9371 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 10679 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 11126 */;
-import ToggleIconButton2 from "ToggleIconButton" /* 12918 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 12919 */;
-import ToggleButton2 from "ToggleButton" /* 15998 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17910 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import IconButton4 from "IconButton" /* 8168 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8540 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 9330 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 9334 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 9335 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 9336 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 9337 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 9338 */;
+import ImageButton2 from "ImageButton" /* 9340 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 9388 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 10727 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 11174 */;
+import ToggleIconButton2 from "ToggleIconButton" /* 13000 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 13001 */;
+import ToggleButton2 from "ToggleButton" /* 16088 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 18006 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -48,8 +48,8 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const AssetRegistryDefault = tmp(7686);
-const AssetRegistryDefault12 = tmp(17911);
+const AssetRegistryDefault = tmp(7702);
+const AssetRegistryDefault12 = tmp(18007);
 function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;
@@ -506,7 +506,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack10 = require("Stack/Stack").Stack;
   const obj19 = { style: tmp.container, children: items5 };
   const Stack11 = require("Stack/Stack").Stack;
-  items5 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Overlay buttons" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "Overlay buttons are meant to be used overlayed on top of an image or background color. They do not change colors with the theme." })];
+  items5 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Overlay buttons" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "Overlay buttons are meant to be used overlayed on top of an image or background color. They do not change colors with the theme." })];
   items6 = [closure_11(Stack11, obj19), ];
   const obj20 = {
     children: closure_14.map((variant) => {
@@ -525,7 +525,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack12 = require("Stack/Stack").Stack;
   const obj22 = { style: tmp.container, children: items7 };
   const Stack13 = require("Stack/Stack").Stack;
-  items7 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Custom color icons" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "If a button needs to have an icon which has its own custom color, then create your own Button.Icon to pass as the icon prop." })];
+  items7 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Custom color icons" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "If a button needs to have an icon which has its own custom color, then create your own Button.Icon to pass as the icon prop." })];
   items8 = [closure_11(Stack13, obj22), ];
   const obj23 = { children: items9 };
   const obj24 = { style: tmp.buttonContainer, children: closure_10(Button, obj25) };
@@ -615,7 +615,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack16 = require("Stack/Stack").Stack;
   const obj42 = { style: tmp.container, children: items12 };
   const Stack17 = require("Stack/Stack").Stack;
-  items12 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Toggling button states" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "Use ToggleButton for a controlled labeled toggle and ToggleIconButton for a controlled icon-only toggle. Use the lower-level toggle prop hooks when a custom control needs complete prop bags per state." }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "These APIs apply the selected presentation and add the accessibility attributes required for a toggle button." })];
+  items12 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Toggling button states" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "Use ToggleButton for a controlled labeled toggle and ToggleIconButton for a controlled icon-only toggle. Use the lower-level toggle prop hooks when a custom control needs complete prop bags per state." }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "These APIs apply the selected presentation and add the accessibility attributes required for a toggle button." })];
   items13 = [closure_11(Stack17, obj42), ];
   const obj43 = { children: items14 };
   items14 = [, , ];
@@ -634,7 +634,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack18 = require("Stack/Stack").Stack;
   const obj48 = { style: tmp.container, children: items17 };
   const Stack19 = require("Stack/Stack").Stack;
-  items17 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Hierarchical icon buttons" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "While the primary variants of IconButton are supported, these should be used very rarely." }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "An icon button usually has a secondary function and should use the secondary variants." })];
+  items17 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Hierarchical icon buttons" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "While the primary variants of IconButton are supported, these should be used very rarely." }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "An icon button usually has a secondary function and should use the secondary variants." })];
   items18 = [closure_11(Stack19, obj48), ];
   const obj49 = {
     children: closure_13.map((variant) => {
@@ -683,7 +683,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack24 = require("Stack/Stack").Stack;
   const obj57 = { style: tmp.container, children: items21 };
   const Stack25 = require("Stack/Stack").Stack;
-  items21 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Image buttons" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "Image buttons are rereserved for more branded buttons, like social media sharing buttons." })];
+  items21 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Image buttons" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "Image buttons are rereserved for more branded buttons, like social media sharing buttons." })];
   items22 = [closure_11(Stack25, obj57), ];
   const obj58 = { children: items23 };
   const obj59 = { style: tmp.buttonContainer, children: closure_10(ExampleImageButton, obj60) };
@@ -701,7 +701,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack26 = require("Stack/Stack").Stack;
   const obj66 = { style: tmp.container, children: items24 };
   const Stack27 = require("Stack/Stack").Stack;
-  items24 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "IconButton with a label" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "Icon buttons with a label require a different combination of props and will only appear in the 'lg' size." }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "It is highly recommended that a list of these buttons appear wrapped in a ScrollView, so that they will horizontally scroll when there are many buttons, when the text is longer through internationalization, or the text is larger through OS font size settings." })];
+  items24 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "IconButton with a label" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "Icon buttons with a label require a different combination of props and will only appear in the 'lg' size." }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "It is highly recommended that a list of these buttons appear wrapped in a ScrollView, so that they will horizontally scroll when there are many buttons, when the text is longer through internationalization, or the text is larger through OS font size settings." })];
   items25 = [closure_11(Stack27, obj66), , ];
   const obj67 = { horizontal: true, contentContainerStyle: { minWidth: "100%" }, children: closure_10(Stack28, obj68) };
   obj68 = {
@@ -793,7 +793,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack36 = require("Stack/Stack").Stack;
   const obj90 = { style: tmp.container, children: items32 };
   const Stack37 = require("Stack/Stack").Stack;
-  items32 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Light Profile Themes" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light profile theme" })];
+  items32 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Light Profile Themes" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "All buttons as they appear on a light profile theme" })];
   items33 = [closure_11(Stack37, obj90), ];
   const obj91 = { theme: ThemeTypes.LIGHT, primaryColor: obj93.hex2int("#ffae70"), secondaryColor: obj94.hex2int("#cc2300"), children: closure_10(tmp3, obj92) };
   const ThemeContextProvider = require("native").ThemeContextProvider;
@@ -821,7 +821,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack39 = require("Stack/Stack").Stack;
   const obj98 = { style: tmp.container, children: items35 };
   const Stack40 = require("Stack/Stack").Stack;
-  items35 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Dark Profile Themes" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark profile theme" })];
+  items35 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Dark Profile Themes" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "All buttons as they appear on a dark profile theme" })];
   items36 = [closure_11(Stack40, obj98), ];
   const obj99 = { theme: ThemeTypes.DARK, primaryColor: obj101.hex2int("#490000"), secondaryColor: obj102.hex2int("#cc2300"), children: closure_10(tmp4, obj100) };
   const ThemeContextProvider2 = require("native").ThemeContextProvider;
@@ -849,7 +849,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack42 = require("Stack/Stack").Stack;
   const obj106 = { style: tmp.container, children: items38 };
   const Stack43 = require("Stack/Stack").Stack;
-  items38 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Light Client Theme" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a light client theme" })];
+  items38 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Light Client Theme" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "All buttons as they appear on a light client theme" })];
   items39 = [closure_11(Stack43, obj106), ];
   const obj107 = { theme: closure_8[0].theme, gradient: closure_8[0], flags: obj109.setThemeFlag(0, require("native").ThemeContextFlags.MOBILE_LIGHT_GRADIENT_THEME_ENABLED), children: closure_11(closure_5, obj108) };
   const ThemeContextProvider3 = require("native").ThemeContextProvider;
@@ -880,7 +880,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack45 = require("Stack/Stack").Stack;
   const obj116 = { style: tmp.container, children: items42 };
   const Stack46 = require("Stack/Stack").Stack;
-  items42 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Dark Client Theme" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "All buttons as they appear on a dark client theme" })];
+  items42 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Dark Client Theme" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "All buttons as they appear on a dark client theme" })];
   items43 = [closure_11(Stack46, obj116), ];
   const obj117 = { theme: closure_9[0].theme, gradient: closure_9[0], flags: obj119.setThemeFlag(0, require("native").ThemeContextFlags.MOBILE_DARK_GRADIENT_THEME_ENABLED), children: closure_11(closure_5, obj118) };
   const ThemeContextProvider4 = require("native").ThemeContextProvider;
@@ -911,7 +911,7 @@ export default function UserSettingsDesignSystemButton() {
   const Stack48 = require("Stack/Stack").Stack;
   const obj126 = { style: tmp.container, children: items46 };
   const Stack49 = require("Stack/Stack").Stack;
-  items46 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Floating Action Button" }), closure_10(require("Text/Text").Text, { variant: "text-sm/normal", children: "An ever-present icon button, giving the most important call to action in a compact way." })];
+  items46 = [closure_10(require("Text/Text").Text, { variant: "heading-lg/semibold", children: "Floating Action Button" }), closure_10(require("Text/Text").Text, { variant: "body-sm/normal", children: "An ever-present icon button, giving the most important call to action in a compact way." })];
   items47 = [closure_11(Stack49, obj126), closure_10(closure_5, { style: { padding: 48 } })];
   items1[19] = closure_11(Stack48, obj125);
   items48 = [closure_10(closure_6, obj4), ];

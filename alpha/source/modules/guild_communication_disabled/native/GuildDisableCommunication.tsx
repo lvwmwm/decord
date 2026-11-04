@@ -1,21 +1,21 @@
-// Module ID: 13405
-// Function ID: 13406
+// Module ID: 13489
+// Function ID: 13490
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 5055, 1072, 21, 1113, 5141, 575, 5730, 11543, 5716, 1252, 13406, 5832, 6161, 5747, 7184, 7187, 7373, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 5055, 1072, 21, 1113, 5141, 575, 5743, 11593, 5729, 1252, 13490, 5846, 6176, 5761, 7199, 7202, 7389, 5768, 2]
 
-// Module 13405 (GuildDisableCommunication)
+// Module 13489 (GuildDisableCommunication)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import useMountEffectDefault from "useMountEffect" /* 5716 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7184 */;
-import TableRadioRow2 from "TableRadioRow" /* 7187 */;
-import TextArea2 from "TextArea" /* 7373 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11543 */;
+import useMountEffectDefault from "useMountEffect" /* 5729 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7199 */;
+import TableRadioRow2 from "TableRadioRow" /* 7202 */;
+import TextArea2 from "TextArea" /* 7389 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11593 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -207,7 +207,7 @@ const memoResult = react.memo(function GuildDisableCommunication(arg0) {
   let obj2 = { style: tmp.container, ref, contentContainerStyle: obj3, children: closure_13(closure_12, obj4) };
   obj3 = { paddingHorizontal: nativeDefault.space.PX_12, paddingBottom: insets.bottom };
   obj4 = { children: items1 };
-  let obj5 = { style: obj6, variant: "heading-md/semibold", children: intl.format(intl6.t.Ns83GT, obj7) };
+  let obj5 = { style: obj6, variant: "heading-sm/semibold", children: intl.format(intl6.t.Ns83GT, obj7) };
   obj6 = { marginVertical: nativeDefault.space.PX_16 };
   const Text = Text_Text.Text;
   intl = intl6.intl;

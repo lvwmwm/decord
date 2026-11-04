@@ -1,10 +1,10 @@
-// Module ID: 15830
-// Function ID: 15831
+// Module ID: 15918
+// Function ID: 15919
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1627, 7073, 5837, 15829, 5732, 1282, 12, 15831, 5747, 1113, 1187, 6887, 5754, 6864, 15835, 7080, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1627, 7088, 5851, 15917, 5745, 1282, 12, 15919, 5761, 1113, 1187, 6902, 5768, 6879, 15923, 7095, 2]
 // Exports: default
 
-// Module 15830 (RemoteAuthModal)
+// Module 15918 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,17 +13,17 @@ import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5732 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import ButtonGroup2 from "ButtonGroup" /* 6887 */;
-import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7073 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7080 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15829 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15831 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15835 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5745 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import ButtonGroup2 from "ButtonGroup" /* 6902 */;
+import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7088 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7095 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15917 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15919 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15923 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -140,7 +140,7 @@ function RemoteAuthLogin(arg0) {
   items = [, , , ];
   const obj3 = { style: tmp.mainImage, children: closure_7(QrLoginSpotIllustration.QrLoginSpotIllustration, { scale: 0.75 }) };
   items[0] = closure_7(View, obj3);
-  const obj4 = { variant: "heading-md/semibold", children: intl.string(intl5.t.jD2pqF) };
+  const obj4 = { variant: "heading-sm/semibold", children: intl.string(intl5.t.jD2pqF) };
   const Heading = Text_Text.Heading;
   intl = intl5.intl;
   items[1] = closure_7(Heading, obj4);
@@ -189,7 +189,7 @@ function RemoteAuthLoginSucceeded() {
   const Heading = Text_Text.Heading;
   intl = intl5.intl;
   items[1] = metroImportDefault(Heading, obj3);
-  const obj4 = { style: tmp.caption, variant: "text-md/medium", color: "text-muted", children: intl2.string(intl5.t.wKknJ0) };
+  const obj4 = { style: tmp.caption, variant: "body-md/medium", color: "text-muted", children: intl2.string(intl5.t.wKknJ0) };
   const Text = Text_Text.Text;
   intl2 = intl5.intl;
   items[2] = metroImportDefault(Text, obj4);
@@ -214,7 +214,7 @@ function RemoteAuthNotFound() {
   const Heading = Text_Text.Heading;
   intl = intl5.intl;
   items = [metroImportDefault(Heading, obj2), , ];
-  const obj3 = { style: tmp.caption, variant: "text-md/medium", color: "text-muted", children: intl2.string(intl5.t.Ygezov) };
+  const obj3 = { style: tmp.caption, variant: "body-md/medium", color: "text-muted", children: intl2.string(intl5.t.Ygezov) };
   const Text = Text_Text.Text;
   intl2 = intl5.intl;
   items[1] = metroImportDefault(Text, obj3);

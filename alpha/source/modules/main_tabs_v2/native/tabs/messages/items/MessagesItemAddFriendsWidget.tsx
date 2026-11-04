@@ -1,20 +1,20 @@
-// Module ID: 18301
-// Function ID: 18302
+// Module ID: 18398
+// Function ID: 18399
 // Name: MessagesItemAddFriendsWidget
-// Dependencies: [5, 19, 17, 1072, 21, 14686, 575, 5141, 9074, 5831, 1113, 9246, 9257, 5322, 7106, 5747, 15820, 18302, 2]
+// Dependencies: [5, 19, 17, 1072, 21, 14766, 575, 5141, 9091, 5845, 1113, 9263, 9274, 5323, 7121, 5761, 15908, 18399, 2]
 
-// Module 18301 (MessagesItemAddFriendsWidget)
+// Module 18398 (MessagesItemAddFriendsWidget)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9074 */;
-import IconActionButton from "IconActionButton" /* 14686 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15820 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18302 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9091 */;
+import IconActionButton from "IconActionButton" /* 14766 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15908 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18399 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -269,7 +269,7 @@ const memoResult = react.memo(function MessagesItemAddFriendsWidget() {
   let obj2 = { accessibilityLabel: intl.string(intl5.t.afcl67), accessibilityRole: "button", onPress: callback, style: tmp.title, children: metroImportDefault(Text, obj3) };
   const PressableHighlight = Pressables.PressableHighlight;
   intl = intl5.intl;
-  obj3 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
+  obj3 = { variant: "body-md/semibold", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: intl2.string(intl5.t.afcl67) };
   Text = Text_Text.Text;
   intl2 = intl5.intl;
   items = [metroImportDefault(PressableHighlight, obj2), ];

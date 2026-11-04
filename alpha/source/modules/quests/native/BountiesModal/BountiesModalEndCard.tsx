@@ -1,14 +1,14 @@
-// Module ID: 17121
-// Function ID: 17122
+// Module ID: 17213
+// Function ID: 17214
 // Name: BountiesModalEndCard
-// Dependencies: [17, 21, 5141, 1652, 5377, 5380, 5710, 17110, 2]
+// Dependencies: [17, 21, 5141, 1652, 5378, 5381, 5723, 17202, 2]
 // Exports: default
 
-// Module 17121 (BountiesModalEndCard)
+// Module 17213 (BountiesModalEndCard)
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import timingPresets from "timingPresets" /* 5380 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import timingPresets from "timingPresets" /* 5381 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

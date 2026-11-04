@@ -1,10 +1,10 @@
-// Module ID: 8995
-// Function ID: 8996
+// Module ID: 9012
+// Function ID: 9013
 // Name: MediaModalWebViewBase
-// Dependencies: [19, 17, 21, 1377, 5141, 1652, 5377, 5829, 8103, 2]
+// Dependencies: [19, 17, 21, 1377, 5141, 1652, 5378, 5843, 8119, 2]
 
-// Module 8995 (MediaModalWebViewBase)
-import LinkingDefault from "Linking" /* 5829 */;
+// Module 9012 (MediaModalWebViewBase)
+import LinkingDefault from "Linking" /* 5843 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

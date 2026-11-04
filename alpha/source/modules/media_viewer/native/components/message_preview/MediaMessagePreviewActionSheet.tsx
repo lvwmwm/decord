@@ -1,13 +1,13 @@
-// Module ID: 14917
-// Function ID: 14918
+// Module ID: 14997
+// Function ID: 14998
 // Name: MediaMessagePreviewActionSheet
-// Dependencies: [19, 21, 4966, 7584, 5381, 1099, 7478, 5831, 8476, 7486, 7488, 11307, 1113, 10654, 10214, 2]
+// Dependencies: [19, 21, 4966, 7600, 5382, 1099, 7494, 5845, 8492, 7502, 7504, 11357, 1113, 10702, 10262, 2]
 
-// Module 14917 (MediaMessagePreviewActionSheet)
+// Module 14997 (MediaMessagePreviewActionSheet)
 import router_utils from "router_utils" /* 1099 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
-import ReportModals from "ReportModals" /* 8476 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
+import ReportModals from "ReportModals" /* 8492 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -97,7 +97,7 @@ const memoResult = react.memo(function MediaMessagePreviewActionSheet(channel) {
     canReportUserResult = tmp10(ActionSheetRow3, obj5);
   }
   items3[2] = canReportUserResult;
-  const obj7 = { children: tmp11(Group, { hasIcons: true, children: items3 }) };
+  const obj7 = { resyncOnRotation: true, children: tmp11(Group, { hasIcons: true, children: items3 }) };
   return closure_4(ActionSheet, obj7);
 });
 let result = size.fileFinishedImporting("modules/media_viewer/native/components/message_preview/MediaMessagePreviewActionSheet.tsx");

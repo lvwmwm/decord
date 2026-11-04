@@ -1,20 +1,20 @@
-// Module ID: 10649
-// Function ID: 10650
+// Module ID: 10697
+// Function ID: 10698
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 5142, 5047, 5012, 5083, 1385, 1072, 21, 5141, 6843, 575, 1652, 5716, 5377, 504, 1187, 5747, 5195, 7476, 7494, 8832, 8727, 5772, 5837, 2]
+// Dependencies: [19, 17, 5142, 5047, 5012, 5083, 1385, 1072, 21, 5141, 6858, 575, 1652, 5729, 5378, 504, 1187, 5761, 5195, 7492, 7510, 8849, 8744, 5786, 5851, 2]
 
-// Module 10649 (HorizontalAutocomplete)
+// Module 10697 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import useMountEffectDefault from "useMountEffect" /* 5716 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import RoleIconUtils from "RoleIconUtils" /* 7476 */;
-import RoleIconDefault from "RoleIcon" /* 7494 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8832 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import useMountEffectDefault from "useMountEffect" /* 5729 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import RoleIconUtils from "RoleIconUtils" /* 7492 */;
+import RoleIconDefault from "RoleIcon" /* 7510 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8849 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -25,7 +25,7 @@ import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import TextStyles from "TextStyles" /* 6843 */;
+import TextStyles from "TextStyles" /* 6858 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -113,7 +113,7 @@ let obj5 = {
     const Avatar = native.Avatar;
     items1 = [unpackModuleId(Avatar, obj3), ];
     const obj4 = { style: { marginLeft: 8, height: 56, flexDirection: "column", justifyContent: "center" }, children: items2 };
-    const obj5 = { style: tmp.nickname, variant: "text-sm/semibold", children: nick };
+    const obj5 = { style: tmp.nickname, variant: "body-sm/semibold", children: nick };
     const Text = Text_Text.Text;
     const tmp6 = HorizontalAutocompleteOption;
     const tmp7 = unpackModuleId;
@@ -123,7 +123,7 @@ let obj5 = {
       nick = obj6.getName(user);
     }
     items2 = [tmp7(Text, obj5), ];
-    const obj7 = { variant: "text-xs/medium", color: "text-muted", children: items3 };
+    const obj7 = { variant: "body-xs/medium", color: "text-muted", children: items3 };
     const Text2 = Text_Text.Text;
     items3 = ["@"];
     const obj8 = UserUtilsDefault;
@@ -184,16 +184,16 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(8727);
+      const tmp2Result = channel(8744);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };
     items = [closure_11(channel(1187).Icon, { source: channelIconWithGuild }), ];
     const tmp8 = closure_11(channel(1187).Icon, { source: channelIconWithGuild });
-    const tmp2Result2 = channel(5772);
+    const tmp2Result2 = channel(5786);
     const channelName = tmp2Result2.computeChannelName(channel, UserStore, RelationshipStore);
-    const obj2 = { style: tmp.channelName, variant: "text-sm/semibold", children: channelName };
-    items[1] = closure_11(channel(5747).Text, obj2);
+    const obj2 = { style: tmp.channelName, variant: "body-sm/semibold", children: channelName };
+    items[1] = closure_11(channel(5761).Text, obj2);
     return closure_12(HorizontalAutocompleteOption, obj);
   },
   Emoji(url) {
@@ -225,7 +225,7 @@ let obj5 = {
     }
     const obj4 = { onPress, children: items2 };
     items2 = [tmp6(React3, { children: tmp5 }), ];
-    const obj5 = { style: tmp.emojiName, variant: "text-sm/semibold", children: ":" + name + ":" };
+    const obj5 = { style: tmp.emojiName, variant: "body-sm/semibold", children: ":" + name + ":" };
     const Text = Text_Text.Text;
     items2[1] = tmp6(Text, obj5);
     return authStore2(HorizontalAutocompleteOption, obj4);

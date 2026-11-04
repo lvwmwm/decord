@@ -1,22 +1,22 @@
-// Module ID: 9449
-// Function ID: 9450
+// Module ID: 9467
+// Function ID: 9468
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 9450, 21, 5141, 575, 5754, 1113, 8865, 9451, 5829, 9468, 7604, 8806, 1652, 9448, 9469, 5377, 1705, 9470, 9475, 9492, 5381, 9494, 5395, 5398, 9495, 9493, 9497, 9744, 9754, 9755, 5718, 2]
+// Dependencies: [32, 19, 17, 9468, 21, 5141, 575, 5768, 1113, 8882, 9469, 5843, 9486, 7620, 8823, 1652, 9466, 9487, 5378, 1705, 9488, 9493, 9510, 5382, 9512, 5396, 5400, 9513, 9511, 9515, 9762, 9772, 9773, 5731, 2]
 // Exports: default
 
-// Module 9449 (GameProfileScreen)
+// Module 9467 (GameProfileScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9448 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9475 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9494 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9466 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9493 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9512 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 9450 */;
+import GameProfileStore from "GameProfileStore" /* 9468 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

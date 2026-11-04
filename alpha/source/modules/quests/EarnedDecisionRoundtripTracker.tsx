@@ -1,14 +1,14 @@
-// Module ID: 9843
-// Function ID: 9844
+// Module ID: 9861
+// Function ID: 9862
 // Name: EarnedDecisionRoundtripTracker
-// Dependencies: [6021, 1072, 7763, 1252, 7943, 7766, 2]
+// Dependencies: [6036, 1072, 7779, 1252, 7959, 7782, 2]
 
-// Module 9843 (EarnedDecisionRoundtripTracker)
+// Module 9861 (EarnedDecisionRoundtripTracker)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NetStats from "NetStats" /* 7763 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7943 */;
-import NetworkStore from "NetworkStore" /* 6021 */;
+import NetStats from "NetStats" /* 7779 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7959 */;
+import NetworkStore from "NetworkStore" /* 6036 */;
 import size from "module_2" /* 2 */;
 
 function trackRoundtrip(apiResponseTimestamp) {
@@ -34,7 +34,7 @@ function trackRoundtrip(apiResponseTimestamp) {
     }
     const merged1 = Object.assign(tmp11);
     ({ callerSource: obj2.caller_source, requestId: obj2.request_id, fetchedAt: obj2.fetched_at } = apiResponseTimestamp);
-    tmp2Result = tmp2(7766);
+    tmp2Result = tmp2(7782);
     track(EARNED_DECISION_ROUNDTRIP, obj3);
   }
 }

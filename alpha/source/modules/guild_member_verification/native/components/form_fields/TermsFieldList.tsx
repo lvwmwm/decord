@@ -1,16 +1,16 @@
-// Module ID: 7097
-// Function ID: 7098
+// Module ID: 7112
+// Function ID: 7113
 // Name: TermsFieldList
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 5874, 7098, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 5888, 7113, 2]
 // Exports: default
 
-// Module 7097 (TermsFieldList)
+// Module 7112 (TermsFieldList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5874 */;
-import TableRowDivider from "TableRowDivider" /* 7098 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5888 */;
+import TableRowDivider from "TableRowDivider" /* 7113 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -35,11 +35,11 @@ function TermsFieldListItem(rowNumber) {
   ({ rowCount, rule, rulesChannelId } = rowNumber);
   const tmp = closure_8();
   const obj = { style: tmp.termsRow, children: items };
-  const obj2 = { style: tmp.termsRowNumber, variant: "text-sm/medium", color: "text-muted", accessibilityLabel: intl.formatToPlainString(intl2.t.XpgzeO, { number: rowNumber, total: rowCount }), children: "" + rowNumber + "." };
+  const obj2 = { style: tmp.termsRowNumber, variant: "body-sm/medium", color: "text-muted", accessibilityLabel: intl.formatToPlainString(intl2.t.XpgzeO, { number: rowNumber, total: rowCount }), children: "" + rowNumber + "." };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [hasOwnProperty(Text, obj2), ];
-  const obj3 = { style: tmp.termsRowContent, variant: "text-md/medium", children: obj4.parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
+  const obj3 = { style: tmp.termsRowContent, variant: "body-md/medium", children: obj4.parseGuildVerificationFormRule(rule, true, { channelId: rulesChannelId }) };
   const Text2 = Text_Text.Text;
   obj4 = MarkupUtilsDefault;
   items[1] = hasOwnProperty(Text2, obj3);
@@ -66,8 +66,8 @@ export default function TermsFieldList(rules) {
   let tmp = closure_8();
   dependencyMap = tmp;
   let obj = { children: items };
-  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1113).t.prJqwT) };
-  const Text = rules(5747).Text;
+  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1113).t.prJqwT) };
+  const Text = rules(5761).Text;
   intl = rules(1113).intl;
   items = [closure_5(Text, obj2), ];
   const obj3 = {

@@ -1,17 +1,17 @@
-// Module ID: 20195
-// Function ID: 20196
+// Module ID: 20311
+// Function ID: 20312
 // Name: GlobalDiscoveryServersUtils
-// Dependencies: [5, 2191, 9204, 1072, 1113, 1380, 7645, 1252, 1266, 2]
+// Dependencies: [5, 2191, 9221, 1072, 1113, 1380, 7661, 1252, 1266, 2]
 // Exports: fromDiscoverableGuildSearchResult, fromDiscoverableGuildServer, getCategoryIdFromServerTab, getGlobalDiscoveryServersBannerDescription, getGlobalDiscoveryServersBannerTitle, getGlobalDiscoveryServersTabSectionTitle, getGlobalDiscoveryServersTabTitle, getLanguageCodeFallback, isStaleFeaturedGuilds, makeAnalyticsID, navigateToGuild
 
-// Module 20195 (GlobalDiscoveryServersUtils)
+// Module 20311 (GlobalDiscoveryServersUtils)
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import v1 from "v1" /* 1266 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9204 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 9221 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -259,7 +259,7 @@ export function fromDiscoverableGuildServer(id) {
   return obj;
 }
 export function fromDiscoverableGuildSearchResult(id) {
-  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "id", discoverySplash: "loadingTextPlaceholderSmall", emojis: [] };
+  obj = { id: id.id, name: id.name, description: id.description, splash: id.splash, banner: id.banner, icon: id.icon, features: new Set(id.features), presenceCount: null, memberCount: null, premiumSubscriptionCount: "r", preferredLocale: "id", discoverySplash: "<string:3029090563>", emojis: [] };
   ({ approximate_presence_count: obj.presenceCount, approximate_member_count: obj.memberCount, discovery_splash: obj.discoverySplash } = id);
   new Set(id.features);
   return obj;

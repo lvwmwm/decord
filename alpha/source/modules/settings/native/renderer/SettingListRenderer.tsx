@@ -1,21 +1,21 @@
-// Module ID: 16732
-// Function ID: 16733
+// Module ID: 16824
+// Function ID: 16825
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 16733, 16581, 11678, 21, 5141, 575, 7186, 5747, 16734, 1627, 16735, 16740, 7414, 16741, 16744, 16745, 2017, 2]
+// Dependencies: [19, 17, 16825, 16672, 11729, 21, 5141, 575, 7201, 5761, 16826, 1627, 16827, 16832, 7430, 16833, 16836, 16837, 2017, 2]
 
-// Module 16732 (SettingListRenderer)
+// Module 16824 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TableRowGroup from "TableRowGroup" /* 7186 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11678 */;
-import SettingRenderer from "SettingRenderer" /* 16734 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16735 */;
-import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 16744 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TableRowGroup from "TableRowGroup" /* 7201 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11729 */;
+import SettingRenderer from "SettingRenderer" /* 16826 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16827 */;
+import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 16836 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16733 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 16581 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16825 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 16672 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ function SearchListSectionSubLabel(subLabel) {
   let tmpResult;
   subLabel = subLabel.subLabel;
   if (typeof subLabel === "string") {
-    const obj2 = { variant: "text-xs/normal", color: "text-muted", children: subLabel };
+    const obj2 = { variant: "body-xs/normal", color: "text-muted", children: subLabel };
     tmpResult = tmp(Text_Text.Text, obj2);
   } else {
     const _Array = Array;
@@ -118,10 +118,10 @@ const memoResult = react.memo(function SettingsList(node) {
     return obj.toSettingListItems(node, field);
   }, items);
   const ref = react.useRef(null);
-  let obj = node(16740);
+  let obj = node(16832);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   const obj4 = { paddingBottom: bottom + field(575).space.PX_16 };
-  const FlashList = node(7414).FlashList;
+  const FlashList = node(7430).FlashList;
   const merged = Object.assign(tmp.contentContainer);
   return <View style={tmp.container}>{null}</View>;
 });

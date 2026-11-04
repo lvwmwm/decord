@@ -1,18 +1,18 @@
-// Module ID: 7289
-// Function ID: 7290
+// Module ID: 7305
+// Function ID: 7306
 // Name: ChangeEmailComplete
-// Dependencies: [19, 17, 7123, 21, 5141, 575, 7121, 5837, 7204, 5747, 1113, 5754, 2]
+// Dependencies: [19, 17, 7138, 21, 5141, 575, 7136, 5851, 7219, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 7289 (ChangeEmailComplete)
+// Module 7305 (ChangeEmailComplete)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7121 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7123 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7204 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7136 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7138 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7219 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -60,12 +60,12 @@ export default function ChangeEmailComplete(email) {
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items1 = [metroRequire(Text, obj4), ];
-  const obj5 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: intl2.format(intl5.t.Zvx0O3, { email }) };
+  const obj5 = { style: tmp.body, variant: "body-sm/medium", color: "text-default", children: intl2.format(intl5.t.Zvx0O3, { email }) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items1[1] = metroRequire(Text2, obj5);
   items[1] = metroImportDefault(_false, obj3);
-  const obj6 = { style: tmp.tooltip, variant: "text-sm/normal", children: intl3.string(intl5.t.yb7itQ) };
+  const obj6 = { style: tmp.tooltip, variant: "body-sm/normal", children: intl3.string(intl5.t.yb7itQ) };
   const Text3 = Text_Text.Text;
   intl3 = intl5.intl;
   items[2] = metroRequire(Text3, obj6);

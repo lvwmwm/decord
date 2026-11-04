@@ -1,14 +1,14 @@
-// Module ID: 9864
-// Function ID: 9865
+// Module ID: 9882
+// Function ID: 9883
 // Name: XboxLinkPreConnect
-// Dependencies: [19, 9855, 1072, 21, 5141, 1499, 9865, 9866, 1113, 2]
+// Dependencies: [19, 9873, 1072, 21, 5141, 1499, 9883, 9884, 1113, 2]
 // Exports: default
 
-// Module 9864 (XboxLinkPreConnect)
+// Module 9882 (XboxLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9855 */;
-import _modDef9865 from "module_9865" /* 9865 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9873 */;
+import _modDef9883 from "module_9883" /* 9883 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -34,10 +34,10 @@ export default function XboxLinkPreConnect() {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef9865 };
+    const obj = { uri: _modDef9883 };
     return obj;
   }, []);
-  const TwoWayLinkPreConnect = navigation(9866).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(9884).TwoWayLinkPreConnect;
   const intl = navigation(1113).intl;
   const intl2 = navigation(1113).intl;
   return <TwoWayLinkPreConnect platformType={PlatformTypes.XBOX} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1113).t["e/z3na"])} body={intl2.string(navigation(1113).t["7tXu0i"])} />;

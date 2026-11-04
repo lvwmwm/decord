@@ -1,16 +1,16 @@
-// Module ID: 17475
-// Function ID: 17476
+// Module ID: 17565
+// Function ID: 17566
 // Name: DisplayNameStylesFontPickerSheet
-// Dependencies: [32, 19, 17, 1403, 5166, 1083, 21, 9418, 575, 5141, 8865, 17472, 17474, 5169, 16609, 6904, 5209, 1405, 1402, 5383, 5381, 5395, 17476, 1113, 3059, 5754, 5747, 4412, 16631, 5207, 16625, 16620, 16626, 5837, 17477, 7188, 16628, 6147, 5855, 2]
+// Dependencies: [32, 19, 17, 1403, 5166, 1083, 21, 9435, 575, 5141, 8882, 17563, 17564, 5169, 16699, 6919, 5208, 1404, 1402, 5384, 5382, 5396, 17566, 1113, 3059, 5768, 5761, 4412, 16721, 5207, 16715, 16710, 16716, 5851, 17567, 7203, 16718, 6162, 5869, 2]
 // Exports: default
 
-// Module 17475 (DisplayNameStylesFontPickerSheet)
+// Module 17565 (DisplayNameStylesFontPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1403 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9418 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9435 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -174,7 +174,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     const obj10 = { style: tmp.campaignSection, children: closure_15(first, obj11) };
     obj11 = { style: tmp.campaignContent, children: items3 };
     const obj12 = { style: tmp.campaignHeader, children: items2 };
-    const obj13 = { variant: "text-sm/semibold", color: "text-subtle", children: intl3.string(require("module_4412")["2UCcmW"]) };
+    const obj13 = { variant: "body-sm/semibold", color: "text-subtle", children: intl3.string(require("module_4412")["2UCcmW"]) };
     let Text = tmp2(tmp3[26]).Text;
     intl3 = tmp2(tmp3[23]).intl;
     items2 = [closure_14(Text, obj13), ];
@@ -206,14 +206,14 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
     const obj21 = { selected: first === closure_8 };
     items5[3] = closure_14(tmp2(tmp3[35]).FormRadio, obj21);
     items3[1] = closure_14(ThemeContextProvider, obj15);
-    const obj22 = { variant: "text-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(require("module_4412").y2YmJv, obj23) };
+    const obj22 = { variant: "body-xs/medium", color: "text-muted", style: tmp.campaignLegal, children: intl5.format(require("module_4412").y2YmJv, obj23) };
     const Text2 = tmp2(tmp3[26]).Text;
     intl5 = tmp2(tmp3[23]).intl;
     obj23 = {
       nonPremiumEndDate,
       premiumEndDate,
       learnMoreHook(children, arg1) {
-          const obj = { variant: "text-xs/medium", color: "text-link", accessibilityRole: "link", onPress: onSelectFont(visibleFontOrder[36]).openHexagonCampaignLearnMore, children };
+          const obj = { variant: "body-xs/medium", color: "text-link", accessibilityRole: "link", onPress: onSelectFont(visibleFontOrder[36]).openHexagonCampaignLearnMore, children };
           const Text = onSelectFont(visibleFontOrder[26]).Text;
           return closure_1_14(Text, obj, arg1);
         }
@@ -273,7 +273,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
       if (item === tmp) {
         str = "mobile-text-heading-primary";
       }
-      const obj3 = { variant: "text-lg/semibold", color: str, style: items1, children: "Gg" };
+      const obj3 = { variant: "body-lg/semibold", color: str, style: items1, children: "Gg" };
       items1 = [hasItem.fontText, { fontFamily: PRIMARY_SEMIBOLD }];
       items2 = [closure_1_14(Text, obj3), ];
       if (hasItem) {
@@ -292,7 +292,7 @@ export default function DisplayNameStylesFontPickerSheet(arg0) {
   if (tmp23Result) {
     const obj25 = { style: tmp.nonLatinDisclaimer, children: items7 };
     items7 = [closure_14(tmp2(tmp3[38]).CircleInformationIcon, { size: "sm" }), ];
-    const obj26 = { variant: "text-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(require("module_3059")["+O1xL2"]) };
+    const obj26 = { variant: "body-xs/normal", color: "text-subtle", style: tmp.disclaimerText, children: intl6.string(require("module_3059")["+O1xL2"]) };
     const Text3 = tmp2(tmp3[26]).Text;
     intl6 = tmp2(tmp3[23]).intl;
     items7[1] = closure_14(Text3, obj26);

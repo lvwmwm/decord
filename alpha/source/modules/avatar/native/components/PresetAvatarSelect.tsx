@@ -1,24 +1,24 @@
-// Module ID: 19704
-// Function ID: 19705
+// Module ID: 19809
+// Function ID: 19810
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 19705, 19706, 19707, 19708, 19709, 19710, 19711, 19712, 1113, 5141, 575, 5747, 7106, 5837, 2]
+// Dependencies: [19, 17, 21, 19810, 19811, 19812, 19813, 19814, 19815, 19816, 19817, 1113, 5141, 575, 5761, 7121, 5851, 2]
 // Exports: default
 
-// Module 19704 (PresetAvatarSelect)
+// Module 19809 (PresetAvatarSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import Pressables from "Pressables" /* 7106 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 19705 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 19706 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 19707 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 19708 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 19709 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 19710 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 19711 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 19712 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import Pressables from "Pressables" /* 7121 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 19810 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 19811 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 19812 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 19813 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 19814 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 19815 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 19816 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 19817 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -123,7 +123,7 @@ export default function PresetAvatarSelect(arg0) {
   ({ onAvatarSelect: require, selectedAvatar: importDefault } = arg0);
   const tmp = closure_7();
   let obj = { style: tmp.container, accessibilityRole: "list", children: items };
-  let obj2 = { variant: "text-sm/medium", color: "text-default", children: intl.string(intl2.t.yP28YL) };
+  let obj2 = { variant: "body-sm/medium", color: "text-default", children: intl.string(intl2.t.yP28YL) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [closure_4(Text, obj2), , ];

@@ -1,11 +1,11 @@
-// Module ID: 8936
-// Function ID: 8937
+// Module ID: 8953
+// Function ID: 8954
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 5142, 504, 5207, 7473, 8926, 2]
+// Dependencies: [19, 5142, 504, 5207, 7489, 8943, 2]
 // Exports: useUserProfileGradientColors
 
-// Module 8936 (useUserProfileGradientColors)
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8926 */;
+// Module 8953 (useUserProfileGradientColors)
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8943 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import size from "module_2" /* 2 */;

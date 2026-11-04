@@ -1,17 +1,17 @@
-// Module ID: 7378
-// Function ID: 7379
+// Module ID: 7394
+// Function ID: 7395
 // Name: MemberVerificationAlertUpdate
-// Dependencies: [19, 1072, 21, 5141, 6150, 1113, 5829, 5837, 7379, 5747, 2]
+// Dependencies: [19, 1072, 21, 5141, 6165, 1113, 5843, 5851, 7395, 5761, 2]
 // Exports: default
 
-// Module 7378 (MemberVerificationAlertUpdate)
+// Module 7394 (MemberVerificationAlertUpdate)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AlertDefault from "Alert" /* 6150 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7379 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AlertDefault from "Alert" /* 6165 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7395 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -52,7 +52,7 @@ export default function MemberVerificationAlertUpdate(onClose) {
   const Text = Text_Text.Text;
   intl3 = intl5.intl;
   items[1] = React3(Text, obj3);
-  const obj4 = { style: tmp.text, variant: "text-sm/medium", color: "text-default", children: intl4.string(intl5.t.gnkqzQ) };
+  const obj4 = { style: tmp.text, variant: "body-sm/medium", color: "text-default", children: intl4.string(intl5.t.gnkqzQ) };
   const Text2 = Text_Text.Text;
   intl4 = intl5.intl;
   items[2] = React3(Text2, obj4);

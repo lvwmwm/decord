@@ -1,10 +1,10 @@
-// Module ID: 19075
-// Function ID: 19076
+// Module ID: 19178
+// Function ID: 19179
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 5008, 4990, 5047, 5012, 5073, 5083, 1385, 1072, 21, 5141, 575, 1499, 1627, 504, 7544, 11783, 5078, 1084, 9161, 7609, 2121, 5195, 6078, 1113, 5829, 2190, 4998, 19076, 9943, 5747, 5772, 10949, 7101, 8149, 7186, 19080, 1377, 19081, 2]
+// Dependencies: [32, 5, 19, 17, 5008, 4990, 5047, 5012, 5073, 5083, 1385, 1072, 21, 5141, 575, 1499, 1627, 504, 7560, 11839, 5078, 1084, 9178, 7625, 2121, 5195, 6093, 1113, 5843, 2190, 4998, 19179, 9961, 5761, 5786, 10997, 7116, 8165, 7201, 19183, 1377, 19184, 2]
 // Exports: default
 
-// Module 19075 (ChannelSettingsPermissionsOverrides)
+// Module 19178 (ChannelSettingsPermissionsOverrides)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
@@ -12,10 +12,10 @@ import useNavigation from "useNavigation" /* 1499 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 4998 */;
 import GuildRecord from "GuildRecord" /* 5008 */;
 import PermissionUtils from "PermissionUtils" /* 5078 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 7544 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11783 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19076 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 7560 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11839 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19179 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -47,10 +47,10 @@ let obj3;
 let obj4;
 let tmp2;
 const intl5 = tmp2(1113);
-const Text_Text = tmp2(5747);
-const useChannelName = tmp2(5772);
-const TableRow2 = tmp2(7101);
-const InlineNotice2 = tmp2(8149);
+const Text_Text = tmp2(5761);
+const useChannelName = tmp2(5786);
+const TableRow2 = tmp2(7116);
+const InlineNotice2 = tmp2(8165);
 ({ View: metroImportDefault, ScrollView: metroImportAll } = react_native);
 const isGuildOwner = GuildRecord.isGuildOwner;
 ({ PermissionOverrideType: closure_16, HelpdeskArticles: closure_17, Permissions: closure_18 } = Constants);
@@ -345,13 +345,13 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
       navigation.setOptions(obj);
     }
   }, items4);
-  let obj5 = { variant: "text-md/medium", color: "text-muted", children: tmp2Result.computeChannelName(stateFromStores, UserStore, RelationshipStore, true) };
+  let obj5 = { variant: "body-md/medium", color: "text-muted", children: tmp2Result.computeChannelName(stateFromStores, UserStore, RelationshipStore, true) };
   let Text = Text_Text.Text;
   tmp2Result = useChannelName;
   const tmp13 = closure_19(Text, obj5);
   if (type === constants.MEMBER) {
     let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp13 };
-    tmp12Result = tmp12(tmp5(10949), obj6);
+    tmp12Result = tmp12(tmp5(10997), obj6);
   } else {
     let TableRow = TableRow2.TableRow;
     const role = GuildRoleStore.getRole(stateFromStores.guild_id, id);
@@ -407,7 +407,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         ({ title, flag } = description);
         description = description.description;
         const tmp = closure_8(flag);
-        const obj = { variant: "text-xs/medium", color: "text-subtle", children: obj2.renderDescription(description) };
+        const obj = { variant: "body-xs/medium", color: "text-subtle", children: obj2.renderDescription(description) };
         const Text = closure_1_0(section[33]).Text;
         obj2 = closure_1_0(section[39]);
         const items = [closure_1_19(Text, obj), ];
@@ -417,7 +417,7 @@ export default function ChannelSettingsPermissionsOverrides(fromCreate) {
         if (false !== tmp) {
           tmp5Result = null;
           if ("" !== tmp) {
-            const obj3 = { variant: "text-xs/medium", color: "text-feedback-critical", children: tmp };
+            const obj3 = { variant: "body-xs/medium", color: "text-feedback-critical", children: tmp };
             tmp5Result = tmp5(tmp6(tmp7[33]).Text, obj3);
           }
         }

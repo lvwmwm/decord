@@ -1,10 +1,10 @@
-// Module ID: 19322
-// Function ID: 19323
+// Module ID: 19426
+// Function ID: 19427
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 4990, 5044, 1072, 5062, 5798, 11887, 11835, 1108, 2]
+// Dependencies: [5, 19, 4990, 5044, 1072, 5062, 5812, 11946, 11894, 1108, 2]
 // Exports: default
 
-// Module 19322 (useTransitionToConnectedActivityInVoice)
+// Module 19426 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

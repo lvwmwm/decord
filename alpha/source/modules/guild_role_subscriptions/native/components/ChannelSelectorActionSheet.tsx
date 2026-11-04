@@ -1,24 +1,24 @@
-// Module ID: 20123
-// Function ID: 20124
+// Module ID: 20239
+// Function ID: 20240
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 4990, 7400, 5012, 5073, 5083, 1385, 1072, 21, 5141, 575, 5772, 17376, 5381, 7187, 7101, 1627, 504, 1113, 5395, 7441, 7339, 7414, 11621, 6864, 9154, 2123, 9157, 9162, 5747, 2]
+// Dependencies: [32, 19, 17, 4990, 7416, 5012, 5073, 5083, 1385, 1072, 21, 5141, 575, 5786, 17467, 5382, 7202, 7116, 1627, 504, 1113, 5396, 7457, 7355, 7430, 11672, 6879, 9171, 2123, 9174, 9179, 5761, 2]
 // Exports: default
 
-// Module 20123 (ChannelSelectorActionSheet)
+// Module 20239 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import useCreateChannelSubmit from "useCreateChannelSubmit" /* 9157 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9162 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import useCreateChannelSubmit from "useCreateChannelSubmit" /* 9174 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9179 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7400 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7416 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
@@ -40,8 +40,8 @@ function ChannelRow(channel) {
   channel = channel.channel;
   const onChannelSelected = channel.onChannelSelected;
   ({ selected, guild, start, end } = channel);
-  let str = onChannelSelected(5772)(channel);
-  let obj = channel(17376);
+  let str = onChannelSelected(5786)(channel);
+  let obj = channel(17467);
   const items = [onChannelSelected, channel];
   const channelIconComponentOrDefault = obj.getChannelIconComponentOrDefault(channel, guild);
   const callback = react.useCallback(() => {
@@ -49,8 +49,8 @@ function ChannelRow(channel) {
     obj.hideActionSheet();
     onChannelSelected(channel);
   }, items);
-  const obj2 = { value: channel.id, start, end, icon: closure_13(channel(7101).TableRow.Icon, { IconComponent: channelIconComponentOrDefault }), label: str, labelLineClamp: 1, legacyCompat_selected: selected, legacyCompat_onPress: callback };
-  const TableRadioRow = channel(7187).TableRadioRow;
+  const obj2 = { value: channel.id, start, end, icon: closure_13(channel(7116).TableRow.Icon, { IconComponent: channelIconComponentOrDefault }), label: str, labelLineClamp: 1, legacyCompat_selected: selected, legacyCompat_onPress: callback };
+  const TableRadioRow = channel(7202).TableRadioRow;
   const tmp3 = closure_13;
   if (str == null) {
     str = "";
@@ -149,8 +149,8 @@ export default function ChannelSelectorActionSheet(guildId) {
   const stringResult = intl2.string(tmp7(1113).t.UTYBjS);
   const obj3 = { scrollable: true, startExpanded: true, header: closure_14(stateFromStoresArray, obj4), children: closure_13(BottomSheetFlashList, obj5) };
   obj4 = { style: tmp.header, children: items4 };
-  const BottomSheet = tmp7(5395).BottomSheet;
-  items4 = [closure_13(tmp7(7441).BottomSheetTitleHeader, { title }), closure_13(tmp7(7339).SearchBar, { size: "md", placeholder: stringResult, accessibilityLabel: stringResult, onChange: tmp6 })];
+  const BottomSheet = tmp7(5396).BottomSheet;
+  items4 = [closure_13(tmp7(7457).BottomSheetTitleHeader, { title }), closure_13(tmp7(7355).SearchBar, { size: "md", placeholder: stringResult, accessibilityLabel: stringResult, onChange: tmp6 })];
   obj5 = {
     maintainVisibleContentPosition: { disabled: true },
     keyboardShouldPersistTaps: "handled",
@@ -172,7 +172,7 @@ export default function ChannelSelectorActionSheet(guildId) {
     ListEmptyComponent: closure_13(Text, obj10)
   };
   obj6 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: bottom };
-  BottomSheetFlashList = tmp7(7414).BottomSheetFlashList;
+  BottomSheetFlashList = tmp7(7430).BottomSheetFlashList;
   tmp10Result = null;
   const tmp11 = stateFromStoresArray;
   if (!hideCreateChannel) {
@@ -199,18 +199,18 @@ export default function ChannelSelectorActionSheet(guildId) {
             }
           };
           ModalActionCreatorsDefault;
-          const tmp3 = asyncRequire(9154, dependencyMap.paths);
+          const tmp3 = asyncRequire(9171, dependencyMap.paths);
           pushLazy(tmp3, obj2, CreateChannelModalActionCreatorsDefault.CREATE_CHANNEL_MODAL_KEY);
         }
     };
-    TableRow = tmp7(7101).TableRow;
-    obj9 = { IconComponent: tmp7(11621).PlusMediumIcon };
-    Icon = tmp7(7101).TableRow.Icon;
+    TableRow = tmp7(7116).TableRow;
+    obj9 = { IconComponent: tmp7(11672).PlusMediumIcon };
+    Icon = tmp7(7116).TableRow.Icon;
     intl3 = tmp7(1113).intl;
     tmp10Result = tmp10(tmp11, obj7);
   }
-  obj10 = { style: tmp.emptyState, variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp7(1113).t.V6nAfF) };
-  Text = tmp7(5747).Text;
+  obj10 = { style: tmp.emptyState, variant: "body-md/normal", color: "text-muted", children: intl4.string(tmp7(1113).t.V6nAfF) };
+  Text = tmp7(5761).Text;
   intl4 = tmp7(1113).intl;
   return closure_13(BottomSheet, obj3);
 };

@@ -1,10 +1,10 @@
-// Module ID: 5998
-// Function ID: 5999
+// Module ID: 6012
+// Function ID: 6013
 // Name: DesktopGamePerfExperiment
 // Dependencies: [1449, 1377, 2]
 // Exports: getDesktopGamePerfExperimentConfig, getIsFullscreenPopupOcclusionEnabled, getIsNativeSystemCpuTimesEnabled, getIsNotificationIconCpuCanvasEnabled, getIsOverlayHiddenWavePausedEnabled, getIsOverlayOnlyAnimatesItselfEnabled, getIsRenderOverlayWhileMinimizedEnabled
 
-// Module 5998 (DesktopGamePerfExperiment)
+// Module 6012 (DesktopGamePerfExperiment)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;

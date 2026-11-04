@@ -1,20 +1,20 @@
-// Module ID: 18876
-// Function ID: 18877
+// Module ID: 18979
+// Function ID: 18980
 // Name: SearchHistoryRow
-// Dependencies: [5, 19, 17, 4990, 6962, 1385, 9958, 21, 5141, 575, 14042, 7106, 7180, 18865, 14038, 18860, 5747, 7340, 563, 18875, 8876, 7609, 18874, 18877, 18890, 1113, 2]
+// Dependencies: [5, 19, 17, 4990, 6977, 1385, 9976, 21, 5141, 575, 14128, 7121, 7195, 18968, 14124, 18963, 5761, 7356, 563, 18978, 8893, 7625, 18977, 18980, 18993, 1113, 2]
 
-// Module 18876 (SearchHistoryRow)
+// Module 18979 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import UserActionCreators from "UserActionCreators" /* 8876 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 14038 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14042 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import UserActionCreators from "UserActionCreators" /* 8893 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
+import TrackingDefault from "Tracking" /* 14124 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14128 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -34,8 +34,8 @@ function SearchHistoryRemoveIcon(searchContext) {
     const obj = SearchPlatformActionCreatorsDefault;
     const result = obj.removeSearchHistoryItem(searchContext, searchHistoryItem);
   }, items);
-  let obj = { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: closure_10(searchContext(7180).XSmallIcon, { size: "sm", color: "interactive-text-default" }) };
-  const PressableHighlight = searchContext(7106).PressableHighlight;
+  let obj = { onPress: callback, accessibilityRole: "button", unstable_pressDelay: 130, style: { marginLeft: 16 }, hitSlop: { bottom: 16, left: 16, right: 16, top: 16 }, children: closure_10(searchContext(7195).XSmallIcon, { size: "sm", color: "interactive-text-default" }) };
+  const PressableHighlight = searchContext(7121).PressableHighlight;
   return closure_10(PressableHighlight, obj);
 }
 function SearchHistoryTextRow(searchContext) {
@@ -46,12 +46,12 @@ function SearchHistoryTextRow(searchContext) {
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_12();
   dependencyMap = tmp;
-  let obj = searchContext(18865);
+  let obj = searchContext(18968);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
   const callback = react.useCallback(() => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = TrackingDefault;
     const obj2 = { searchContext, searchHistoryItemType: searchHistoryItem.type };
     const result = obj.trackSearchHistoryClicked(obj2);
     onPressSearchHistoryText(searchHistoryItem.text, searchHistoryItem.tags);
@@ -59,21 +59,21 @@ function SearchHistoryTextRow(searchContext) {
   let obj2 = { style: tmp.textContainer, children: items1 };
   const tags = searchHistoryItem.tags;
   let mapped;
-  const SearchListRow = searchContext(18860).SearchListRow;
+  const SearchListRow = searchContext(18963).SearchListRow;
   const tmp7 = closure_11;
   if (tags != null) {
     mapped = tags.map((children) => {
       let obj2;
       const obj = { accessibilityRole: "button", style: tag.tag, children: authStore(Text_Text.Text, obj2) };
-      obj2 = { lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: children.text };
+      obj2 = { lineClamp: 1, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: children.text };
       return authStore(View, obj, children.text);
     });
   }
   items1 = [mapped, ];
   const obj3 = { label: tmp7(View, obj2), onPress: callback, trailing: closure_10(SearchHistoryRemoveIcon, { searchContext, searchHistoryItem }), iconContainerStyle: tmp.textIconContainer, icon: closure_10(View, obj5) };
-  const obj4 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text };
-  items1[1] = closure_10(searchContext(5747).Text, obj4);
-  obj5 = { style: tmp.iconContainer, children: closure_10(searchContext(7340).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) };
+  const obj4 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: searchHistoryItem.text };
+  items1[1] = closure_10(searchContext(5761).Text, obj4);
+  obj5 = { style: tmp.iconContainer, children: closure_10(searchContext(7356).MagnifyingGlassIcon, { size: "sm", color: "interactive-text-default" }) };
   return closure_10(SearchListRow, obj3);
 }
 function SearchHistoryGroupDMRow(searchContext) {
@@ -95,7 +95,7 @@ function SearchHistoryGroupDMRow(searchContext) {
   const onPressGroupDMItem = obj2.useOnPressGroupDMItem({ searchContext });
   const items2 = [onPressGroupDMItem, searchContext, searchHistoryItem.type];
   const callback = react.useCallback((channelId) => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = TrackingDefault;
     const obj2 = { searchContext, channelId, searchHistoryItemType: searchHistoryItem.type };
     const result = obj.trackSearchHistoryClicked(obj2);
     onPressGroupDMItem(channelId);
@@ -284,7 +284,7 @@ function SearchHistoryGuildTextChannelRow(searchContext) {
   const onPressGuildTextChannel = obj3.useOnPressGuildTextChannel({ searchContext });
   const items3 = [onPressGuildTextChannel, searchContext, searchHistoryItem.type];
   const callback = react.useCallback((channelId) => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = TrackingDefault;
     const obj2 = { searchContext, channelId, searchHistoryItemType: searchHistoryItem.type };
     const result = obj.trackSearchHistoryClicked(obj2);
     onPressGuildTextChannel(channelId);

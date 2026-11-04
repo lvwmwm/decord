@@ -1,14 +1,14 @@
-// Module ID: 12185
-// Function ID: 12186
+// Module ID: 12244
+// Function ID: 12245
 // Name: ParticipantTitle
-// Dependencies: [19, 21, 5141, 575, 1187, 12166, 2]
+// Dependencies: [19, 21, 5141, 575, 1187, 12225, 2]
 // Exports: default
 
-// Module 12185 (ParticipantTitle)
+// Module 12244 (ParticipantTitle)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import getParticipantTitleDefault from "getParticipantTitle" /* 12166 */;
+import getParticipantTitleDefault from "getParticipantTitle" /* 12225 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

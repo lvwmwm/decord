@@ -1,17 +1,17 @@
-// Module ID: 17429
-// Function ID: 17430
+// Module ID: 17520
+// Function ID: 17521
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2191, 17430, 21, 1652, 1187, 5141, 575, 563, 9637, 5837, 5747, 2024, 17431, 17432, 17433, 2]
+// Dependencies: [19, 17, 2191, 17521, 21, 1652, 1187, 5141, 575, 563, 9656, 5851, 5761, 2024, 17522, 17523, 17524, 2]
 // Exports: default
 
-// Module 17429 (SettingsAppearanceActivityCardItem)
+// Module 17520 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ClipView from "ClipView" /* 9637 */;
+import ClipView from "ClipView" /* 9656 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17430 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17521 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -145,7 +145,7 @@ export default function ActivityCardItem(arg0) {
     const obj7 = { style: items5, children: tmp6(Text, obj8) };
     items5 = [tmp4.userCounter, animatedStyles.bgModStrong];
     const View3 = tmp7(tmp2[5]).View;
-    obj8 = { animated: true, variant: "text-xxs/semibold", allowFontScaling: false, style: animatedStyles.textNormal, children: items6 };
+    obj8 = { animated: true, variant: "footnote/semibold", allowFontScaling: false, style: animatedStyles.textNormal, children: items6 };
     Text = tmp(tmp2[12]).Text;
     items6 = ["+"];
     const tmpResult = require("NumberUtils");

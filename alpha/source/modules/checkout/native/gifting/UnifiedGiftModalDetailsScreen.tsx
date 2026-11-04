@@ -1,11 +1,11 @@
-// Module ID: 10825
-// Function ID: 10826
+// Module ID: 10873
+// Function ID: 10874
 // Name: UnifiedGiftModalDetailsScreen
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1499, 10824, 10695, 10826, 5747, 1113, 10853, 10854, 10855, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1499, 10872, 10743, 10874, 5761, 1113, 10901, 10902, 10903, 2]
 
-// Module 10825 (UnifiedGiftModalDetailsScreen)
+// Module 10873 (UnifiedGiftModalDetailsScreen)
 import nativeDefault from "native" /* 575 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10824 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10872 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -121,7 +121,7 @@ const memoResult = react.memo(function UnifiedGiftModalDetailsScreen(recipientUs
     return obj;
   }, items3);
   const items4 = [first2(recipientUser(navigation[9]).GiftBackgroundSelect, { giftStyle: first1, setGiftStyle: tmp13, withConsistentHeight: false }), , , , , ];
-  const obj5 = { variant: "text-sm/semibold", style: tmp.sectionHeader, children: intl.string(recipientUser(navigation[11]).t.xFn72s) };
+  const obj5 = { variant: "body-sm/semibold", style: tmp.sectionHeader, children: intl.string(recipientUser(navigation[11]).t.xFn72s) };
   const Text = recipientUser(navigation[10]).Text;
   intl = recipientUser(navigation[11]).intl;
   items4[1] = first2(Text, obj5);
@@ -134,7 +134,7 @@ const memoResult = react.memo(function UnifiedGiftModalDetailsScreen(recipientUs
       tmp26Result = tmp26(validateRecipient(tmp3[12]), obj6);
     }
     items4[2] = tmp26Result;
-    const obj7 = { variant: "text-sm/semibold", style: tmp.sectionHeader, children: intl2.string(tmp2(navigation[11]).t.PpoJzt) };
+    const obj7 = { variant: "body-sm/semibold", style: tmp.sectionHeader, children: intl2.string(tmp2(navigation[11]).t.PpoJzt) };
     const Text2 = tmp2(tmp3[10]).Text;
     intl2 = tmp2(tmp3[11]).intl;
     items4[3] = first2(Text2, obj7);

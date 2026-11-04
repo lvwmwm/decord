@@ -1,16 +1,16 @@
-// Module ID: 10041
-// Function ID: 10042
+// Module ID: 10089
+// Function ID: 10090
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 502, 7721, 3, 504, 12, 10042, 4954, 2188, 2]
+// Dependencies: [5, 32, 19, 502, 7737, 3, 504, 12, 10090, 4954, 2188, 2]
 // Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useLoadedGoogleSkuIds, useMobileStoreFront, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 10041 (NativePaymentHooks)
+// Module 10089 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IAPStore from "IAPStore" /* 7721 */;
+import IAPStore from "IAPStore" /* 7737 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

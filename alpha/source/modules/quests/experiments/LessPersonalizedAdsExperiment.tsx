@@ -1,9 +1,9 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 9840
+// Function ID: 9841
 // Name: LessPersonalizedAdsExperiment
 // Dependencies: [1449, 2]
 
-// Module 9822 (LessPersonalizedAdsExperiment)
+// Module 9840 (LessPersonalizedAdsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

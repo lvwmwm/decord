@@ -1,15 +1,15 @@
-// Module ID: 12031
-// Function ID: 12032
+// Module ID: 12090
+// Function ID: 12091
 // Name: RequestToSpeakParticipantList
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 7446, 7106, 8874, 12032, 1187, 5747, 12033, 1113, 12034, 6168, 8483, 6885, 8069, 7361, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 7462, 7121, 8891, 12091, 1187, 5761, 12092, 1113, 12093, 6183, 8499, 6900, 8085, 7377, 2]
 // Exports: default
 
-// Module 12031 (RequestToSpeakParticipantList)
+// Module 12090 (RequestToSpeakParticipantList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8069 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8085 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -74,7 +74,7 @@ function RequestToSpeakParticipant(participant) {
   const obj7 = { style: items2, numberOfLines: 1, children: participant.user.username };
   items2[1] = { color: colorString };
   items3 = [closure_4(LegacyText, obj7), ];
-  const obj8 = { variant: "text-xs/medium", color: "text-default", children: tmp6Result.participantMemberInfo(participant) };
+  const obj8 = { variant: "body-xs/medium", color: "text-default", children: tmp6Result.participantMemberInfo(participant) };
   const Text = tmp6(tmp3[11]).Text;
   tmp6Result = participant(analyticsLocations[9]);
   items3[1] = closure_4(Text, obj8);
@@ -126,7 +126,7 @@ export default function RequestToSpeakParticipantList(channel) {
     const Text = tmp2(tmp3[11]).Text;
     intl = tmp2(tmp3[13]).intl;
     items = [closure_4(Text, obj4), ];
-    const obj5 = { style: tmp.emptyBody, variant: "text-sm/medium", color: "text-default", children: intl2.string(channel(sortedRequestToSpeakParticipants[13]).t.Rpr2s0) };
+    const obj5 = { style: tmp.emptyBody, variant: "body-sm/medium", color: "text-default", children: intl2.string(channel(sortedRequestToSpeakParticipants[13]).t.Rpr2s0) };
     const Text2 = tmp2(tmp3[11]).Text;
     intl2 = tmp2(tmp3[13]).intl;
     items[1] = closure_4(Text2, obj5);

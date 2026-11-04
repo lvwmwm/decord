@@ -1,25 +1,25 @@
-// Module ID: 10440
-// Function ID: 10441
+// Module ID: 10488
+// Function ID: 10489
 // Name: executeCommand
-// Dependencies: [5, 6916, 2191, 5012, 8332, 1385, 8470, 1072, 5146, 5803, 572, 8326, 7824, 2121, 10441, 10443, 38, 10444, 5880, 8468, 9910, 5087, 1380, 10445, 8825, 6190, 8508, 8824, 10446, 8876, 10449, 7760, 8355, 8340, 8336, 1113, 10347, 2]
+// Dependencies: [5, 6931, 2191, 5012, 8348, 1385, 8486, 1072, 5146, 5817, 572, 8342, 7840, 2121, 10489, 10491, 38, 10492, 5894, 8484, 9928, 5087, 1380, 10493, 8842, 6205, 8525, 8841, 10494, 8893, 10497, 7776, 8371, 8356, 8352, 1113, 10395, 2]
 // Exports: default, retryCommandMessage
 
-// Module 10440 (executeCommand)
+// Module 10488 (executeCommand)
 import MessageConstants from "MessageConstants" /* 5146 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5803 */;
-import UploadUtils from "UploadUtils" /* 8336 */;
-import FileUtils from "FileUtils" /* 8340 */;
-import UploadLimits from "UploadLimits" /* 8355 */;
-import MessageQueue from "MessageQueue" /* 8508 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8825 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10446 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5817 */;
+import UploadUtils from "UploadUtils" /* 8352 */;
+import FileUtils from "FileUtils" /* 8356 */;
+import UploadLimits from "UploadLimits" /* 8371 */;
+import MessageQueue from "MessageQueue" /* 8525 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 8842 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10494 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8332 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8348 */;
 import UserStore from "UserStore" /* 1385 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8470 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8486 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -753,12 +753,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     message = { applicationId, channelId: id, guildId: id1, data: tmp, nonce, attachments, maxSizeCallback, analytics_location: tmp2, sectionName: tmp3, source: tmp4 };
     nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      const obj2 = onMessageSuccess(10445);
+      const obj2 = onMessageSuccess(10493);
       nonce = obj2.createNonce();
     }
     const obj4 = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: obj5 };
     ({ messageId: obj3.messageId, onCreate: obj3.onCreate, onSuccess: obj3.onSuccess, onFailure: obj3.onFailure } = interactionLifecycleOptions);
-    obj5 = { interactionType: onMessageSuccess(6190).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj5 = { interactionType: onMessageSuccess(6205).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     const addQueued = InteractionActionCreatorsAll.addQueued;
     const nonce2 = message.nonce;
     InteractionActionCreatorsAll;
@@ -796,9 +796,9 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         });
       }
     }
-    const obj8 = { type: tmp11(8508).MessageDataType.COMMAND, message };
-    let enqueue = message(8508).enqueue;
-    message(8508);
+    const obj8 = { type: tmp11(8525).MessageDataType.COMMAND, message };
+    let enqueue = message(8525).enqueue;
+    message(8525);
     enqueue(obj8, (ok) => {
       let applicationId;
       let channelId;

@@ -1,21 +1,21 @@
-// Module ID: 14906
-// Function ID: 14907
+// Module ID: 14986
+// Function ID: 14987
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 9062, 21, 5141, 14903, 9029, 10324, 5321, 1652, 5377, 9066, 9067, 1113, 7180, 1187, 575, 5747, 14907, 10005, 1377, 14908, 9888, 2]
+// Dependencies: [19, 17, 9079, 21, 5141, 14983, 9046, 10372, 5322, 1652, 5378, 9083, 9084, 1113, 7195, 1187, 575, 5761, 14987, 10053, 1377, 14988, 9906, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 14906 (MediaModalOverlayHeader)
+// Module 14986 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5321 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import MediaShareActions from "MediaShareActions" /* 9029 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9062 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9067 */;
-import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10324 */;
-import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 14903 */;
-import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 14907 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5322 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import MediaShareActions from "MediaShareActions" /* 9046 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9079 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9084 */;
+import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10372 */;
+import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 14983 */;
+import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 14987 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -29,10 +29,10 @@ let metroRequire;
 let tmp2;
 const intl2 = tmp2(1113);
 const native = tmp2(1187);
-const Text_Text = tmp2(5747);
-const XSmallIcon = tmp2(7180);
-const MediaModalOverlayHeaderWrapper2 = tmp2(9066);
-const ContextMenu = tmp2(10005);
+const Text_Text = tmp2(5761);
+const XSmallIcon = tmp2(7195);
+const MediaModalOverlayHeaderWrapper2 = tmp2(9083);
+const ContextMenu = tmp2(10053);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const SHARE_PREPARING_MODAL_KEY = SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -132,7 +132,7 @@ export function MediaModalOverlayHeader(arg0) {
     }
     items4 = [tmp14Result, ];
     const obj13 = { style: tmp.navbarNameShrinkWrapper, children: metroRequire(Text_Text.Text, obj14) };
-    obj14 = { accessibilityRole: "header", variant: "heading-md/medium", lineClamp: 1, ellipsizeMode: "tail", color: "text-overlay-light", children: contextName };
+    obj14 = { accessibilityRole: "header", variant: "heading-sm/medium", lineClamp: 1, ellipsizeMode: "tail", color: "text-overlay-light", children: contextName };
     items4[1] = metroRequire(React3, obj13);
     tmp14Result3 = tmp14(tmp17, obj10);
   }

@@ -1,11 +1,11 @@
-// Module ID: 9184
-// Function ID: 9185
+// Module ID: 9201
+// Function ID: 9202
 // Name: useIsPinotNewChannelPrivate
-// Dependencies: [4990, 5047, 5012, 504, 9181, 2]
+// Dependencies: [4990, 5047, 5012, 504, 9198, 2]
 // Exports: useIsPinotNewChannelPrivate
 
-// Module 9184 (useIsPinotNewChannelPrivate)
-import PinotEligibility from "PinotEligibility" /* 9181 */;
+// Module 9201 (useIsPinotNewChannelPrivate)
+import PinotEligibility from "PinotEligibility" /* 9198 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;

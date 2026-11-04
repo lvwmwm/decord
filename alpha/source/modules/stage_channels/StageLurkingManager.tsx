@@ -1,12 +1,12 @@
-// Module ID: 8075
-// Function ID: 8076
+// Module ID: 8091
+// Function ID: 8092
 // Name: StageLurkingManager
-// Dependencies: [4990, 5172, 2125, 572, 7633, 1380, 2]
+// Dependencies: [4990, 5172, 2125, 572, 7649, 1380, 2]
 
-// Module 8075 (StageLurkingManager)
+// Module 8091 (StageLurkingManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import LurkerActionCreators from "LurkerActionCreators" /* 7633 */;
+import LurkerActionCreators from "LurkerActionCreators" /* 7649 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import LifecycleManager from "LifecycleManager" /* 2125 */;

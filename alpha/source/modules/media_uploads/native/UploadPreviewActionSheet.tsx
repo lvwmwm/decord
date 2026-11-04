@@ -1,20 +1,20 @@
-// Module ID: 10659
-// Function ID: 10660
+// Module ID: 10707
+// Function ID: 10708
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 7825, 1072, 5396, 21, 5141, 575, 38, 8335, 1493, 1627, 5716, 5381, 8345, 10660, 1252, 5832, 8344, 14651, 14652, 5395, 5398, 6147, 5747, 1377, 8997, 10678, 7186, 7101, 12646, 14653, 1113, 7100, 14656, 9910, 8783, 14658, 5754, 5858, 2]
+// Dependencies: [32, 19, 17, 7841, 1072, 5397, 21, 5141, 575, 38, 8351, 1493, 1627, 5729, 5382, 8361, 10708, 1252, 5846, 8360, 14731, 14732, 5396, 5400, 6162, 5761, 1377, 9014, 10726, 7201, 7116, 12727, 14733, 1113, 7115, 14736, 9928, 8800, 14738, 5768, 5872, 2]
 // Exports: default
 
-// Module 10659 (UploadPreviewActionSheet)
+// Module 10707 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
-import DraftStore from "DraftStore" /* 7825 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8344 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9910 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10660 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 14653 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
+import DraftStore from "DraftStore" /* 7841 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8360 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9928 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10708 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 14733 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -215,7 +215,7 @@ export default function UploadPreviewActionSheet(onAdd) {
   };
   const Stack = tmp6(tmp4[24]).Stack;
   const items5 = [, , , ];
-  const obj6 = { variant: "text-md/semibold", children: item.filename };
+  const obj6 = { variant: "body-md/semibold", children: item.filename };
   items5[0] = width(onAdd(tmp4[25]).Text, obj6);
   const obj7 = { style: tmp.imageWrap, children: null };
   const obj8 = { style: items6, children: null };

@@ -1,10 +1,10 @@
-// Module ID: 19923
-// Function ID: 19924
+// Module ID: 20039
+// Function ID: 20040
 // Name: GuildSettingsConstants
 // Dependencies: [1113, 2]
 // Exports: getSettingsErrorMessage
 
-// Module 19923 (GuildSettingsConstants)
+// Module 20039 (GuildSettingsConstants)
 import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

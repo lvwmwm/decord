@@ -1,10 +1,10 @@
-// Module ID: 11422
-// Function ID: 11423
+// Module ID: 11472
+// Function ID: 11473
 // Name: LikelyAtoMoreTipsModalActionItems
-// Dependencies: [19, 1385, 21, 504, 5195, 7186, 7101, 1113, 11125, 2]
+// Dependencies: [19, 1385, 21, 504, 5195, 7201, 7116, 1113, 11173, 2]
 // Exports: default
 
-// Module 11422 (LikelyAtoMoreTipsModalActionItems)
+// Module 11472 (LikelyAtoMoreTipsModalActionItems)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
 import react from "react" /* 19 */;
@@ -28,9 +28,9 @@ export default function LikelyAtoMoreTipsModalActionItems(senderId) {
     const obj = UserUtilsDefault;
     return obj.getName(stateFromStores);
   }, items2);
-  const TableRowGroup = senderId(7186).TableRowGroup;
+  const TableRowGroup = senderId(7201).TableRowGroup;
   ({ label: intl.formatToPlainString(senderId(1113).t["F/ID+9"], { username: memo }), subLabel: intl2.string(senderId(1113).t.w2ve0t), onPress: handleMutePressed, icon: null });
-  const TableRow = senderId(7101).TableRow;
+  const TableRow = senderId(7116).TableRow;
   intl = senderId(1113).intl;
   intl2 = senderId(1113).intl;
   return <TableRowGroup hasIcons>{null}</TableRowGroup>;

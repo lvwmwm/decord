@@ -1,9 +1,9 @@
-// Module ID: 19604
-// Function ID: 19605
+// Module ID: 19709
+// Function ID: 19710
 // Name: embeddedAppShimKeybinds
 // Dependencies: [2]
 
-// Module 19604 (embeddedAppShimKeybinds)
+// Module 19709 (embeddedAppShimKeybinds)
 import size from "module_2" /* 2 */;
 
 const obj = {

@@ -1,13 +1,13 @@
-// Module ID: 14565
-// Function ID: 14566
+// Module ID: 14645
+// Function ID: 14646
 // Name: useMobileCollectiblesPurchaseSKU
-// Dependencies: [1385, 504, 9679, 10812, 2]
+// Dependencies: [1385, 504, 9698, 10860, 2]
 // Exports: default
 
-// Module 14565 (useMobileCollectiblesPurchaseSKU)
+// Module 14645 (useMobileCollectiblesPurchaseSKU)
 import get_initialized from "get initialized" /* 504 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9679 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10812 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9698 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10860 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

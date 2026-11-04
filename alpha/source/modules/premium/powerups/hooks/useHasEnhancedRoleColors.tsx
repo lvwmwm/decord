@@ -1,10 +1,10 @@
-// Module ID: 6160
-// Function ID: 6161
+// Module ID: 6175
+// Function ID: 6176
 // Name: useHasEnhancedRoleColors
 // Dependencies: [5012, 1072, 504, 2]
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 6160 (useHasEnhancedRoleColors)
+// Module 6175 (useHasEnhancedRoleColors)
 import Constants from "Constants" /* 1072 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;

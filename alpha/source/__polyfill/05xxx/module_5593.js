@@ -1,13 +1,43 @@
 // Module ID: 5593
 // Function ID: 5594
-// Dependencies: [5594, 5596]
+// Dependencies: [19, 21, 5405, 1652, 5401, 5411]
+// Exports: default
 
 // Module 5593
-import BottomSheetFooter from "BottomSheetFooter" /* 5594 */;
-import BottomSheetFooterContainer from "BottomSheetFooterContainer" /* 5596 */;
+import react2 from "react" /* 19 */;
+import Fragment from "Fragment" /* 21 */;
+import _mod1652 from "module_1652" /* 1652 */;
+import GESTURE_SOURCE from "GESTURE_SOURCE" /* 5401 */;
+import _mod5405 from "module_5405" /* 5405 */;
+import BottomSheetContext from "BottomSheetContext" /* 5411 */;
 
-const BottomSheetFooter_export = BottomSheetFooter.BottomSheetFooter;
-const BottomSheetFooterContainer_export = BottomSheetFooterContainer.BottomSheetFooterContainer;
+const useMemo = react2.useMemo;
+const jsx = Fragment.jsx;
 
-export { BottomSheetFooter_export as BottomSheetFooter };
-export { BottomSheetFooterContainer_export as BottomSheetFooterContainer };
+export default function _default(gestureEventsHandlersHook) {
+  let animatedContentGestureState;
+  let animatedHandleGestureState;
+  let handleOnChange;
+  let handleOnEnd;
+  let handleOnFinalize;
+  let handleOnStart;
+  let useGestureEventsHandlersDefault = gestureEventsHandlersHook.gestureEventsHandlersHook;
+  if (useGestureEventsHandlersDefault === undefined) {
+    useGestureEventsHandlersDefault = _mod5405.useGestureEventsHandlersDefault;
+  }
+  const children = gestureEventsHandlersHook.children;
+  const obj = _mod1652;
+  const sharedValue = obj.useSharedValue(GESTURE_SOURCE.GESTURE_SOURCE.UNDETERMINED);
+  const obj2 = _mod5405;
+  const bottomSheetInternal = obj2.useBottomSheetInternal();
+  ({ animatedHandleGestureState, animatedContentGestureState } = bottomSheetInternal);
+  ({ handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize } = useGestureEventsHandlersDefault());
+  useGestureEventsHandlersDefault();
+  const obj3 = _mod5405;
+  const gestureHandler = obj3.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.CONTENT, animatedContentGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
+  const obj4 = _mod5405;
+  const gestureHandler1 = obj4.useGestureHandler(GESTURE_SOURCE.GESTURE_SOURCE.HANDLE, animatedHandleGestureState, sharedValue, handleOnStart, handleOnChange, handleOnEnd, handleOnFinalize);
+  const items = [gestureHandler, gestureHandler1, sharedValue];
+  const value = useMemo(() => ({ contentPanGestureHandler: gestureHandler, handlePanGestureHandler: gestureHandler1, animatedGestureSource: sharedValue }), items);
+  return jsx(BottomSheetContext.BottomSheetGestureHandlersContext.Provider, { value, children });
+};

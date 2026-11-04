@@ -1,19 +1,19 @@
-// Module ID: 7101
-// Function ID: 7102
+// Module ID: 7116
+// Function ID: 7117
 // Name: TableRow
-// Dependencies: [19, 17, 21, 5141, 575, 7102, 5719, 7103, 7098, 7109, 7110, 7112, 5762, 1377, 7113, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7117, 5732, 7118, 7113, 7124, 7125, 7127, 5776, 1377, 7128, 5761, 2]
 
-// Module 7101 (TableRow)
+// Module 7116 (TableRow)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useToken from "useToken" /* 5719 */;
-import useFontScale from "useFontScale" /* 5762 */;
-import TableRowDivider from "TableRowDivider" /* 7098 */;
-import react2 from "react" /* 7102 */;
-import TableRowIcon from "TableRowIcon" /* 7109 */;
-import TableRowArrow from "TableRowArrow" /* 7110 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 7112 */;
-import DragIcon from "DragIcon" /* 7113 */;
+import useToken from "useToken" /* 5732 */;
+import useFontScale from "useFontScale" /* 5776 */;
+import TableRowDivider from "TableRowDivider" /* 7113 */;
+import react2 from "react" /* 7117 */;
+import TableRowIcon from "TableRowIcon" /* 7124 */;
+import TableRowArrow from "TableRowArrow" /* 7125 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 7127 */;
+import DragIcon from "DragIcon" /* 7128 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -60,7 +60,7 @@ class TableRow {
     const token = tmp2Result.useToken(nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS);
     const obj = { radius: token, shadow: "none", border: "none", variant: "muted", start: tmp8, end: !context && true === end, onPress, disabled, style, children: metroRequire(TableRowInner, { height, label, subLabel, icon, trailing, arrow, disabled, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps }) };
     tmp8 = !context;
-    const InternalCard = tmp2(7103).InternalCard;
+    const InternalCard = tmp2(7118).InternalCard;
     if (!context) {
       tmp8 = true === start;
     }
@@ -158,7 +158,7 @@ class TableRowInner {
     if (!react.isValidElement(label)) {
       const obj10 = { variant: token, color: str2, lineClamp: labelLineClamp, includeFontPadding: true, children: label };
       str2 = "text-feedback-critical";
-      const Text = tmp4(5747).Text;
+      const Text = tmp4(5761).Text;
       const tmp22 = metroRequire;
       if ("danger" !== variant) {
         str2 = token1;
@@ -171,12 +171,12 @@ class TableRowInner {
       let tmp25Result = subLabel;
       if (!react.isValidElement(subLabel)) {
         let str4 = "text-subtle";
-        const Text2 = tmp4(5747).Text;
+        const Text2 = tmp4(5761).Text;
         const tmp25 = metroRequire;
         if ("danger" === variant) {
           str4 = "text-feedback-critical";
         }
-        const obj11 = { variant: "text-xs/medium", color: str4, lineClamp: subLabelLineClamp, includeFontPadding: true, children: subLabel };
+        const obj11 = { variant: "body-xs/medium", color: str4, lineClamp: subLabelLineClamp, includeFontPadding: true, children: subLabel };
         tmp25Result = tmp25(Text2, obj11);
       }
       tmp23 = tmp25Result;
@@ -199,7 +199,7 @@ class TableRowInner {
     }
     items1[3] = tmp28;
     if (arrow) {
-      arrow = metroRequire(tmp4(7110).TableRowArrow, {});
+      arrow = metroRequire(tmp4(7125).TableRowArrow, {});
     }
     items1[4] = arrow;
     return metroImportAll(hasOwnProperty, obj4);

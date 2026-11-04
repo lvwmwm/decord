@@ -1,11 +1,11 @@
-// Module ID: 12363
-// Function ID: 12364
+// Module ID: 12428
+// Function ID: 12429
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2167, 21, 504, 11079, 1113, 3995, 5832, 6084, 5747, 6080, 2]
+// Dependencies: [5, 32, 19, 2167, 21, 504, 11128, 1113, 3995, 5846, 6099, 5761, 6095, 2]
 // Exports: default
 
-// Module 12363 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 6080 */;
+// Module 12428 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 6095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -134,7 +134,7 @@ function ConjureUnpublishUserAppAlert(project) {
   tmp6Result = undefined;
   const tmp7 = importDefault;
   if (null != tmp2) {
-    let obj3 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp2 };
+    let obj3 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp2 };
     tmp6Result = tmp6(tmp3(tmp4[11]).Text, obj3);
   }
   obj4 = { children: items2 };

@@ -1,18 +1,18 @@
-// Module ID: 18488
-// Function ID: 18489
+// Module ID: 18582
+// Function ID: 18583
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 5008, 502, 5012, 5172, 1072, 21, 5141, 575, 5747, 14411, 18489, 1113, 6147, 5754, 1500, 563, 6148, 1260, 5015, 5323, 8897, 17220, 2]
+// Dependencies: [32, 19, 17, 5008, 502, 5012, 5172, 1072, 21, 5141, 575, 5761, 14491, 18583, 1113, 6162, 5768, 1500, 563, 6163, 1260, 5015, 5324, 8914, 17312, 2]
 
-// Module 18488 (GuildsEmpty)
+// Module 18582 (GuildsEmpty)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import GuildRecord from "GuildRecord" /* 5008 */;
 import FavoritesUtils from "FavoritesUtils" /* 5015 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14411 */;
-import CheersSpotIllustration from "CheersSpotIllustration" /* 18489 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 14491 */;
+import CheersSpotIllustration from "CheersSpotIllustration" /* 18583 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -71,13 +71,13 @@ class GuildsEmptyContent {
     const obj4 = { style: tmp.illustrationWrapper, children: map1(CheersSpotIllustration.CheersSpotIllustration, { width: 245, accessible: false }) };
     items1[0] = map1(hasOwnProperty, obj4);
     const obj5 = { style: tmp.textWrapper, children: items3 };
-    const obj6 = { color: "mobile-text-heading-primary", variant: "heading-md/semibold", style: items2, children: intl.string(intl5.t["Y7Ml/I"]) };
+    const obj6 = { color: "mobile-text-heading-primary", variant: "heading-sm/semibold", style: items2, children: intl.string(intl5.t["Y7Ml/I"]) };
     items2 = [, ];
     ({ text: arr3[0], headerText: arr3[1] } = tmp);
     const Heading = Text_Text.Heading;
     intl = intl5.intl;
     items3 = [map1(Heading, obj6), ];
-    const obj7 = { color: "text-default", variant: "text-md/medium", style: tmp.text, children: intl2.string(intl5.t.kuyE4r) };
+    const obj7 = { color: "text-default", variant: "body-md/medium", style: tmp.text, children: intl2.string(intl5.t.kuyE4r) };
     const Text = Text_Text.Text;
     intl2 = intl5.intl;
     items3[1] = map1(Text, obj7);
@@ -112,7 +112,7 @@ obj6 = { width: "100%", alignItems: "center", marginBottom: nativeDefault.space.
 obj7 = { paddingBottom: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj8 = { marginHorizontal: nativeDefault.space.PX_16, marginVertical: nativeDefault.space.PX_24 };
 obj9 = { fontSize: 18, marginBottom: 8 };
-const merged = Object.assign(Text_Text.TextStyleSheet["heading-md/semibold"]);
+const merged = Object.assign(Text_Text.TextStyleSheet["heading-sm/semibold"]);
 let closure_15 = createStyles(obj);
 const memoResult = react.memo(function GuildsEmpty(arg0) {
   let Text;
@@ -139,7 +139,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
   }
   selectedGuildId = tmp6;
   let obj3 = { type: tmp2(1260).ImpressionTypes.VIEW, name: tmp2(1260).ImpressionNames.GUILDS_EMPTY_NUX };
-  const tmp7 = selectedGuildId(6148);
+  const tmp7 = selectedGuildId(6163);
   tmp7(obj3);
   const items1 = [tmp6, navigation];
   const effect = react.useEffect(() => {
@@ -191,7 +191,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
                 found = guildsArray.find((item) => !closure_1_7(item));
               }
               if (null != found) {
-                const tmp23Result = tmp23(5323);
+                const tmp23Result = tmp23(5324);
                 let closure_0 = _slicedToArray(tmp23Result.getInitialGuildState(found.id, undefined, false), 2)[1];
                 obj2.dispatch(() => {
                   const CommonActions = navigation(closure_2_2[17]).CommonActions;
@@ -204,9 +204,9 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
       }
     }
   }, items1);
-  const tmp2Result = navigation(8897);
+  const tmp2Result = navigation(8914);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(17220);
+  navigation(17312);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };
@@ -215,7 +215,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
     let tmp15 = closure_5;
     obj6 = { style: tmp.headerInner, children: closure_13(Text, obj7) };
     obj7 = { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: intl.string(navigation(1113).t["7hB4kg"]) };
-    Text = tmp2(5747).Text;
+    Text = tmp2(5761).Text;
     intl = tmp2(1113).intl;
     items3 = [closure_13(closure_5, obj5), ];
     let tmp18;

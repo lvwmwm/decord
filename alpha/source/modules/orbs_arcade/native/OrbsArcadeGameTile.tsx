@@ -1,22 +1,22 @@
-// Module ID: 17174
-// Function ID: 17175
+// Module ID: 17266
+// Function ID: 17267
 // Name: OrbsArcadeGameTile
-// Dependencies: [32, 19, 17, 5142, 17166, 17169, 1072, 21, 5141, 575, 5138, 504, 9827, 17142, 1500, 7103, 8997, 5837, 5710, 5747, 17175, 6887, 17191, 8152, 17206, 1113, 17184, 5754, 17207, 5207, 2]
+// Dependencies: [32, 19, 17, 5142, 17258, 17261, 1072, 21, 5141, 575, 5138, 504, 9845, 17234, 1500, 7118, 9014, 5851, 5723, 5761, 17267, 6902, 17283, 8168, 17298, 1113, 17276, 5768, 17299, 5207, 2]
 // Exports: default
 
-// Module 17174 (OrbsArcadeGameTile)
+// Module 17266 (OrbsArcadeGameTile)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
 import native from "native" /* 5207 */;
-import AssetUtils from "AssetUtils" /* 9827 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17184 */;
+import AssetUtils from "AssetUtils" /* 9845 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17276 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17166 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17169 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17258 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 17261 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -126,8 +126,8 @@ function OrbsArcadeGameTileContent(game) {
   if (asset == null) {
     asset = memo;
   }
-  ({ isInView, containerRef } = heroVideoAsset(17142)());
-  heroVideoAsset(17142)();
+  ({ isInView, containerRef } = heroVideoAsset(17234)());
+  heroVideoAsset(17234)();
   let tmp17 = !isInView;
   const tmp10Result = game(1500);
   if (isInView) {
@@ -157,7 +157,7 @@ function OrbsArcadeGameTileContent(game) {
           importantForAccessibility: "no-hide-descendants"
         };
         obj8 = { uri: heroVideoAsset.url };
-        const VideoComponent = tmp10(8997).VideoComponent;
+        const VideoComponent = tmp10(9014).VideoComponent;
         tmp21Result = tmp21(VideoComponent, obj7);
       }
       obj6.children = tmp21Result;
@@ -165,41 +165,41 @@ function OrbsArcadeGameTileContent(game) {
       const obj9 = { style: tmp3.heroGradient, start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, locations: items5, colors: items6 };
       items5 = [0, num2];
       items6 = [gradientStart, gradientEnd];
-      items4[1] = closure_12(heroVideoAsset(5710), obj9);
+      items4[1] = closure_12(heroVideoAsset(5723), obj9);
       const obj10 = { style: tmp3.content, children: null };
       const obj11 = { style: tmp3.copy, children: items7 };
       const obj12 = { variant: "heading-lg/semibold", color: "text-default", children: name };
-      items7 = [closure_12(game(5747).Heading, obj12), ];
+      items7 = [closure_12(game(5761).Heading, obj12), ];
       let tmp21Result4 = null;
       if (null != tmp9) {
-        const obj13 = { variant: "text-xs/medium", color: "text-default", style: tmp3.description, children: tmp9 };
-        tmp21Result4 = tmp21(tmp10(5747).Text, obj13);
+        const obj13 = { variant: "body-xs/medium", color: "text-default", style: tmp3.description, children: tmp9 };
+        tmp21Result4 = tmp21(tmp10(5761).Text, obj13);
       }
       items7[1] = tmp21Result4;
       const items8 = [closure_13(closure_6, obj11), , ];
       const obj14 = { game };
-      items8[1] = closure_12(heroVideoAsset(17175), obj14);
+      items8[1] = closure_12(heroVideoAsset(17267), obj14);
       let str2 = "vertical";
-      const ButtonGroup = tmp10(6887).ButtonGroup;
+      const ButtonGroup = tmp10(6902).ButtonGroup;
       if (stateFromStores) {
         str2 = "horizontal";
       }
       const obj15 = { direction: str2, size: "md", style: tmp3.buttonGroup, children: null };
       const obj16 = { game, size: "md" };
-      const items9 = [closure_12(heroVideoAsset(17191), obj16), ];
+      const items9 = [closure_12(heroVideoAsset(17283), obj16), ];
       if (null != tmp9) {
         if (stateFromStores) {
           const obj17 = {
             variant: "secondary",
             size: "md",
-            icon: heroVideoAsset(17206),
+            icon: heroVideoAsset(17298),
             accessibilityLabel: intl2.string(game(1113).t["uz4M/z"]),
             onPress() {
                       const obj = openOrbsArcadeSheets;
                       return obj.openOrbsArcadeHowToPlaySheet(game.id);
                     }
           };
-          const IconButton = tmp10(8152).IconButton;
+          const IconButton = tmp10(8168).IconButton;
           intl2 = tmp10(1113).intl;
           tmp21Result5 = tmp21(IconButton, obj17);
         }
@@ -210,7 +210,7 @@ function OrbsArcadeGameTileContent(game) {
         items4[2] = closure_13(closure_6, obj10);
         obj5.children = items4;
         const items10 = [closure_13(closure_6, obj5), ];
-        const obj18 = { style: tmp3.overflowButton, children: closure_12(heroVideoAsset(17207), obj19) };
+        const obj18 = { style: tmp3.overflowButton, children: closure_12(heroVideoAsset(17299), obj19) };
         obj19 = { game };
         items10[1] = closure_12(closure_6, obj18);
         obj4.children = items10;
@@ -227,7 +227,7 @@ function OrbsArcadeGameTileContent(game) {
                   return obj.openOrbsArcadeHowToPlaySheet(game.id);
                 }
         };
-        const Button = tmp10(5754).Button;
+        const Button = tmp10(5768).Button;
         intl = tmp10(1113).intl;
         tmp21Result5 = tmp21(Button, obj20);
       }
@@ -237,7 +237,7 @@ function OrbsArcadeGameTileContent(game) {
   if (null != asset) {
     const obj21 = { source: obj22, style: tmp3.heroMedia, resizeMode: "cover", enableAnimation: !stateFromStores1, paused: tmp17, accessible: false };
     obj22 = { uri: asset };
-    tmp21Result6 = tmp21(tmp15(5837), obj21);
+    tmp21Result6 = tmp21(tmp15(5851), obj21);
   }
   tmp21Result = tmp21Result6;
 }

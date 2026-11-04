@@ -1,20 +1,20 @@
-// Module ID: 10813
-// Function ID: 10814
+// Module ID: 10861
+// Function ID: 10862
 // Name: SKUActionCreators
-// Dependencies: [5, 9609, 7016, 1072, 572, 6575, 1282, 4962, 9689, 7886, 6566, 4961, 4954, 6655, 6673, 1380, 2]
+// Dependencies: [5, 9628, 7031, 1072, 572, 6590, 1282, 4962, 9708, 7902, 6581, 4961, 4954, 6670, 6688, 1380, 2]
 // Exports: clearPurchaseError, fetchPublicSKU, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10813 (SKUActionCreators)
+// Module 10861 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import BillingUtils from "BillingUtils" /* 4954 */;
-import StoreUtils from "StoreUtils" /* 6575 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6673 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7886 */;
-import TestModeUtils from "TestModeUtils" /* 9689 */;
+import StoreUtils from "StoreUtils" /* 6590 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6688 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7902 */;
+import TestModeUtils from "TestModeUtils" /* 9708 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9609 */;
-import SKUStore from "SKUStore" /* 7016 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9628 */;
+import SKUStore from "SKUStore" /* 7031 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -694,8 +694,8 @@ obj = function _orderSKU() {
               const tmp40 = closure_4;
               if (closure_3) {
                 const obj8 = { is_gift: true, gift_customization: obj10 };
-                obj10 = { is_recurring: null, recipient_id: null, gift_style: null, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null, custom_message_contents: null };
-                ({ is_recurring: obj7.is_recurring, recipient_id: obj7.recipient_id, gift_style: obj7.gift_style, emoji_id: obj7.emoji_id, emoji_name: obj7.emoji_name, sound_id: obj7.sound_id, reward_sku_ids: obj7.reward_sku_ids, custom_message: obj7.custom_message_contents } = tmp40);
+                obj10 = { recipient_id: null, gift_style: null, emoji_id: null, emoji_name: null, sound_id: null, reward_sku_ids: null, custom_message_contents: null };
+                ({ recipient_id: obj7.recipient_id, gift_style: obj7.gift_style, emoji_id: obj7.emoji_id, emoji_name: obj7.emoji_name, sound_id: obj7.sound_id, reward_sku_ids: obj7.reward_sku_ids, custom_message: obj7.custom_message_contents } = tmp40);
                 result.gifting_facet = obj8;
               }
               const HTTP = HTTPUtils.HTTP;

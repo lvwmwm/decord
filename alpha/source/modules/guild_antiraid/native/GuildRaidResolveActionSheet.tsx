@@ -1,20 +1,20 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13510
+// Function ID: 13511
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [5, 32, 19, 17, 1072, 7614, 21, 5141, 575, 1113, 7821, 5381, 5880, 13393, 7620, 7486, 7081, 5747, 8301, 1187, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 1072, 7630, 21, 5141, 575, 1113, 7837, 5382, 5894, 13477, 7636, 7502, 7096, 5761, 8317, 1187, 5768, 2]
 // Exports: default
 
-// Module 13426 (GuildRaidResolveActionSheet)
+// Module 13510 (GuildRaidResolveActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl9 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7081 */;
-import ActionSheet2 from "ActionSheet" /* 7486 */;
-import Constants2 from "Constants" /* 7614 */;
-import AutomodFeedback from "AutomodFeedback" /* 7821 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7096 */;
+import ActionSheet2 from "ActionSheet" /* 7502 */;
+import Constants2 from "Constants" /* 7630 */;
+import AutomodFeedback from "AutomodFeedback" /* 7837 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -195,7 +195,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
   const Text = Text_Text.Text;
   intl5 = intl9.intl;
   items1 = [handleTextInputChange(Text, obj7), , , , ];
-  let obj8 = { style: tmp.subtitle, variant: "text-sm/normal", color: "text-default", children: intl6.string(intl9.t.nF79oO) };
+  let obj8 = { style: tmp.subtitle, variant: "body-sm/normal", color: "text-default", children: intl6.string(intl9.t.nF79oO) };
   const Text2 = Text_Text.Text;
   intl6 = intl9.intl;
   items1[1] = handleTextInputChange(Text2, obj8);
@@ -223,7 +223,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
       leading: handleTextInputChange(Checkbox, obj3),
       label: text
     };
-    const FormRow = require("module_8301").FormRow;
+    const FormRow = require("module_8317").FormRow;
     obj3 = { selected: _undefined.includes(value) };
     Checkbox = require("native").Checkbox;
     items = [handleTextInputChange(FormRow, obj2), ];

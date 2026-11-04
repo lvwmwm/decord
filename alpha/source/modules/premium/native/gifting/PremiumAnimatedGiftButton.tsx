@@ -1,10 +1,10 @@
-// Module ID: 13939
-// Function ID: 13940
+// Module ID: 14025
+// Function ID: 14026
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 5142, 21, 5141, 575, 5719, 504, 1377, 1652, 7106, 5741, 2]
+// Dependencies: [19, 5142, 21, 5141, 575, 5732, 504, 1377, 1652, 7121, 5755, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 13939 (PremiumAnimatedGiftButton)
+// Module 14025 (PremiumAnimatedGiftButton)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -86,14 +86,14 @@ export function PremiumAnimatedGiftButton(arg0) {
     FadeOut = tmp(1652).FadeOut;
   }
   const items2 = [tmp7.containerRefresh, style, ];
-  const PressableOpacity = tmp(7106).PressableOpacity;
+  const PressableOpacity = tmp(7121).PressableOpacity;
   if (active) {
     active = !disabled;
   }
   if (active) {
     active = activeStyle;
   }
-  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5741), obj8) });
+  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5755), obj8) });
   items2[2] = active;
   tmp14 = undefined;
   if (bound > 0) {

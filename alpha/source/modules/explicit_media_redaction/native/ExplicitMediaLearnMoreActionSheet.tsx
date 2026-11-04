@@ -1,19 +1,19 @@
-// Module ID: 13440
-// Function ID: 13441
+// Module ID: 13524
+// Function ID: 13525
 // Name: ExplicitMediaLearnMoreActionSheet
-// Dependencies: [19, 17, 7590, 1072, 21, 5141, 575, 13441, 6846, 8811, 1113, 7687, 5381, 5829, 2190, 8079, 13442, 2123, 5395, 8098, 5747, 5754, 2]
+// Dependencies: [19, 17, 7606, 1072, 21, 5141, 575, 13525, 6861, 8828, 1113, 7703, 5382, 5843, 2190, 8095, 13526, 2123, 5396, 8114, 5761, 5768, 2]
 // Exports: default
 
-// Module 13440 (ExplicitMediaLearnMoreActionSheet)
+// Module 13524 (ExplicitMediaLearnMoreActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7590 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8811 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7606 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8828 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -108,7 +108,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   const Text = channelId(attachmentId[20]).Text;
   intl2 = channelId(attachmentId[10]).intl;
   items5 = [closure_8(Text, obj6), ];
-  const obj7 = { style: tmp.infoDesc, variant: "text-md/medium", color: "text-default", children: stringResult };
+  const obj7 = { style: tmp.infoDesc, variant: "body-md/medium", color: "text-default", children: stringResult };
   const Text2 = channelId(attachmentId[20]).Text;
   if (!memo) {
     const intl3 = tmp4(tmp2[10]).intl;
@@ -134,7 +134,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
       const openUrl = AgeVerificationActionCreatorsDefault.openUrl;
       AgeVerificationActionCreatorsDefault;
       const obj = HelpdeskUtilsDefault;
-      openUrl(obj.getArticleURL(metroRequire.TIGGER_PAWTECT_LEARN_MORE));
+      openUrl(obj.getArticleURL(metroRequire.AGE_VERIFICATION_LEARN_MORE));
     }
     obj9.text = string(t.hvVgAZ);
     obj9.onPress = handleNavigateToAgeVerificationLearnMore;
@@ -178,7 +178,7 @@ export default function ExplicitMediaLearnMoreActionSheet(channelId) {
   items6[1] = closure_8(Button2, obj10);
   let tmp12Result = null != tmp11;
   if (tmp12Result) {
-    const obj11 = { style: tmp.linkSubtext, variant: "text-sm/medium", color: "text-muted", children: tmp11 };
+    const obj11 = { style: tmp.linkSubtext, variant: "body-sm/medium", color: "text-muted", children: tmp11 };
     tmp12Result = tmp12(tmp4(tmp2[20]).Text, obj11);
   }
   items6[2] = tmp12Result;

@@ -1,15 +1,15 @@
-// Module ID: 11806
-// Function ID: 11807
+// Module ID: 11863
+// Function ID: 11864
 // Name: SummaryActionSheetButton
-// Dependencies: [19, 17, 21, 5141, 575, 7106, 1187, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7121, 1187, 5761, 2]
 // Exports: SummaryActionSheetButton
 
-// Module 11806 (SummaryActionSheetButton)
+// Module 11863 (SummaryActionSheetButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -43,7 +43,7 @@ export function SummaryActionSheetButton(label) {
   const PressableOpacity = Pressables.PressableOpacity;
   obj3 = { style: tmp.icon, source: iconSource };
   items = [_false(View, obj2), ];
-  const obj4 = { style: tmp.name, variant: "text-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label };
+  const obj4 = { style: tmp.name, variant: "body-xs/medium", color: "interactive-text-default", lineClamp: 1, children: label };
   items[1] = _false(Text_Text.Text, obj4);
   return React3(PressableOpacity, obj);
 }

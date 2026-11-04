@@ -1,17 +1,17 @@
-// Module ID: 14083
-// Function ID: 14084
+// Module ID: 14169
+// Function ID: 14170
 // Name: useGameMentionSearchBarHeight
-// Dependencies: [17, 11182, 2]
+// Dependencies: [17, 11232, 2]
 // Exports: default
 
-// Module 14083 (useGameMentionSearchBarHeight)
+// Module 14169 (useGameMentionSearchBarHeight)
 import react_native from "react-native" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;
-let c3 = "text-sm/semibold";
-let c4 = "text-sm/medium";
+let c3 = "body-sm/semibold";
+let c4 = "body-sm/medium";
 const result = size.fileFinishedImporting("modules/game_mentions/hooks/native/useGameMentionSearchBarHeight.tsx");
 
 export default function useGameMentionSearchBarHeight() {
@@ -20,7 +20,7 @@ export default function useGameMentionSearchBarHeight() {
   const obj2 = useScaledTextLineHeight;
   return sum + obj2.useScaledTextLineHeight(c4) + 12 + StyleSheet.hairlineWidth;
 };
-export const GAME_MENTION_SEARCH_BAR_TITLE_VARIANT = "text-sm/semibold";
-export const GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT = "text-sm/medium";
+export const GAME_MENTION_SEARCH_BAR_TITLE_VARIANT = "body-sm/semibold";
+export const GAME_MENTION_SEARCH_BAR_DESCRIPTION_VARIANT = "body-sm/medium";
 export const GAME_MENTION_SEARCH_BAR_HEADER_PADDING_VERTICAL = 12;
 export const GAME_MENTION_SEARCH_BAR_DESCRIPTION_PADDING_BOTTOM = 12;

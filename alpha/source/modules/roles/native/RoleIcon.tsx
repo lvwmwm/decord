@@ -1,13 +1,13 @@
-// Module ID: 7494
-// Function ID: 7495
+// Module ID: 7510
+// Function ID: 7511
 // Name: RoleIcon
-// Dependencies: [19, 21, 1377, 5837, 5747, 2]
+// Dependencies: [19, 21, 1377, 5851, 5761, 2]
 // Exports: default
 
-// Module 7494 (RoleIcon)
+// Module 7510 (RoleIcon)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ export default function RoleIcon(arg0) {
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "channel_id", textAlign: -15731819779118550000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, width: size, marginBottom: 16247960436100152000000000000000000000000000000000000000000000000000000000000000000 };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "id", textAlign: false, width: size, marginBottom: false };
   if (null != src) {
     const obj3 = { uri: src };
     tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });
@@ -37,7 +37,7 @@ export default function RoleIcon(arg0) {
     tmp = null;
     if (null != unicodeEmoji) {
       const items = [size1, obj];
-      tmp = jsx(Text_Text.Text, { allowFontScaling: false, color: "none", style: items, variant: "text-lg/normal", children: unicodeEmoji.surrogates });
+      tmp = jsx(Text_Text.Text, { allowFontScaling: false, color: "none", style: items, variant: "body-lg/normal", children: unicodeEmoji.surrogates });
     }
   }
   return tmp;

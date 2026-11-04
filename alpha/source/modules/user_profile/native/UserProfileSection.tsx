@@ -1,16 +1,16 @@
-// Module ID: 11749
-// Function ID: 11750
+// Module ID: 11804
+// Function ID: 11805
 // Name: UserProfileSection
-// Dependencies: [19, 17, 21, 5141, 575, 5207, 7473, 5138, 8307, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5207, 7489, 5138, 8323, 5761, 2]
 // Exports: default
 
-// Module 11749 (UserProfileSection)
+// Module 11804 (UserProfileSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
 import native from "native" /* 5207 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7473 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7489 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -53,7 +53,7 @@ export default function UserProfileSection(title) {
     let borderColor;
     if (null != profileThemeValues) {
       const tmp3Result = ColorUtils;
-      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8307).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
+      borderColor = tmp3Result.hexOpacityToRgba(tmp3(8323).DIVIDER_COLORS[theme], profileThemeValues.dividerOpacity);
     }
     obj3.borderColor = borderColor;
     const obj4 = { style: items, children: items3 };
@@ -63,7 +63,7 @@ export default function UserProfileSection(title) {
     if (null != title) {
       const obj5 = { style: tmp2.titleContainer, children: items2 };
       const obj6 = { style: tmp2.title, children: items1 };
-      const obj7 = { variant: "eyebrow", accessibilityRole: "header", children: title };
+      const obj7 = { variant: "body-sm/medium", accessibilityRole: "header", children: title };
       items1 = [_false(Text_Text.Text, obj7), headerIcon];
       items2 = [React3(View, obj6), trailingIcon];
       tmp8Result = tmp8(tmp9, obj5);

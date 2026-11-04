@@ -1,22 +1,22 @@
-// Module ID: 14564
-// Function ID: 14565
+// Module ID: 14644
+// Function ID: 14645
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8887, 7733, 1072, 1387, 21, 5141, 575, 5730, 10740, 504, 8879, 7446, 14556, 1252, 14565, 572, 6864, 6079, 14566, 2123, 1377, 10758, 10746, 5747, 1113, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 8904, 7749, 1072, 1387, 21, 5141, 575, 5743, 10788, 504, 8896, 7462, 14636, 1252, 14645, 572, 6879, 6094, 14646, 2123, 1377, 10806, 10794, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 14564 (CollectiblesShopGiftPurchaseSection)
+// Module 14644 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 7733 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 7749 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8887 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
@@ -196,7 +196,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
     }
   }
   items2 = [tmp17Result, , ];
-  let obj5 = { variant: "text-xs/normal", style: tmp3.disclaimer, children: format(rsEdd2, obj6) };
+  let obj5 = { variant: "body-xs/normal", style: tmp3.disclaimer, children: format(rsEdd2, obj6) };
   const Text = tmp4(tmp2[27]).Text;
   const intl = tmp4(tmp2[28]).intl;
   format = intl.format;

@@ -1,15 +1,15 @@
-// Module ID: 14346
-// Function ID: 14347
+// Module ID: 14426
+// Function ID: 14427
 // Name: useChatPlaceholderAnimatedStyles
-// Dependencies: [5142, 1187, 504, 1652, 5377, 5380, 2]
+// Dependencies: [5142, 1187, 504, 1652, 5378, 5381, 2]
 // Exports: default
 
-// Module 14346 (useChatPlaceholderAnimatedStyles)
+// Module 14426 (useChatPlaceholderAnimatedStyles)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import timingPresets from "timingPresets" /* 5380 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import timingPresets from "timingPresets" /* 5381 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import size from "module_2" /* 2 */;
 

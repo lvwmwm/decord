@@ -1,12 +1,12 @@
-// Module ID: 15220
-// Function ID: 15221
+// Module ID: 15303
+// Function ID: 15304
 // Name: EditCollectiblesPickerList
-// Dependencies: [32, 19, 17, 21, 5141, 15215, 5747, 12, 7414, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 15298, 5761, 12, 7430, 2]
 // Exports: EditCollectiblesPickerList
 
-// Module 15220 (EditCollectiblesPickerList)
-import Text_Text from "Text/Text" /* 5747 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15215 */;
+// Module 15303 (EditCollectiblesPickerList)
+import Text_Text from "Text/Text" /* 5761 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15298 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -27,7 +27,7 @@ obj2 = { paddingHorizontal: useCollectibleListLayout.GUTTER_SIZE, paddingBottom:
 let closure_9 = createStyles.createStyles(obj);
 let closure_10 = react.memo(function DefaultHeader(header) {
   header = header.header;
-  const obj = { style: closure_9().header, children: metroRequire(Text_Text.Heading, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: header }) };
+  const obj = { style: closure_9().header, children: metroRequire(Text_Text.Heading, { variant: "heading-xs/medium", color: "mobile-text-heading-primary", children: header }) };
   return metroRequire(hasOwnProperty, obj);
 });
 const result = size.fileFinishedImporting("modules/collectibles/native/EditCollectiblesPickerList.tsx");

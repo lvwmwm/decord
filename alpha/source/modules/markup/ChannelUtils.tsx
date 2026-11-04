@@ -1,10 +1,10 @@
-// Module ID: 6174
-// Function ID: 6175
+// Module ID: 6189
+// Function ID: 6190
 // Name: markup/ChannelUtils
 // Dependencies: [4994, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 6174 (markup/ChannelUtils)
+// Module 6189 (markup/ChannelUtils)
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import size from "module_2" /* 2 */;
 

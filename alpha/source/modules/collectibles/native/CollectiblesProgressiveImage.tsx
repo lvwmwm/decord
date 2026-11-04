@@ -1,15 +1,15 @@
-// Module ID: 18028
-// Function ID: 18029
+// Module ID: 18126
+// Function ID: 18127
 // Name: CollectiblesProgressiveImage
-// Dependencies: [19, 17, 21, 1652, 5837, 5377, 2]
+// Dependencies: [19, 17, 21, 1652, 5851, 5378, 2]
 // Exports: CollectiblesProgressiveImage
 
-// Module 18028 (CollectiblesProgressiveImage)
+// Module 18126 (CollectiblesProgressiveImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

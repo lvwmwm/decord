@@ -1,17 +1,17 @@
-// Module ID: 18196
-// Function ID: 18197
+// Module ID: 18293
+// Function ID: 18294
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5141, 575, 5317, 9954, 1627, 5324, 5719, 5207, 10866, 18197, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5318, 9972, 1627, 5325, 5732, 5207, 10914, 18294, 2]
 
-// Module 18196 (MainTabs)
+// Module 18293 (MainTabs)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5317 */;
-import useChatLayoutDefault from "useChatLayout" /* 5324 */;
-import useToken from "useToken" /* 5719 */;
-import useActiveTheme from "useActiveTheme" /* 9954 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10866 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18197 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5318 */;
+import useChatLayoutDefault from "useChatLayout" /* 5325 */;
+import useToken from "useToken" /* 5732 */;
+import useActiveTheme from "useActiveTheme" /* 9972 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10914 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18294 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -76,7 +76,7 @@ const memoResult = react.memo(function MainTabs() {
   if (left > 0) {
     tmp8Result = null;
     if (!isChatLockedOpen) {
-      tmp8Result = tmp8(tmp(10866), { absolute: true, mix: true });
+      tmp8Result = tmp8(tmp(10914), { absolute: true, mix: true });
     }
   } else {
     tmp8Result = null;

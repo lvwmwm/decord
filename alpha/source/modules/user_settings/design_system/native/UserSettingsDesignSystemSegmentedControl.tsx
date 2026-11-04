@@ -1,10 +1,10 @@
-// Module ID: 17928
-// Function ID: 17929
+// Module ID: 18024
+// Function ID: 18025
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5141, 575, 5747, 9108, 6147, 9342, 14323, 5754, 5150, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5761, 9125, 6162, 9359, 14410, 5768, 5150, 2]
 // Exports: default
 
-// Module 17928 (UserSettingsDesignSystemSegmentedControl)
+// Module 18024 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 575 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

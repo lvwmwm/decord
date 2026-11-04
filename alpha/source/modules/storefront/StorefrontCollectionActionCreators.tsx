@@ -1,26 +1,26 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9733
+// Function ID: 9734
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2191, 9713, 7861, 1072, 8916, 572, 6575, 6567, 2]
+// Dependencies: [5, 2191, 9731, 7877, 1072, 8933, 572, 6590, 6582, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9715 (StorefrontCollectionActionCreators)
+// Module 9733 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import StoreUtils from "StoreUtils" /* 6575 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8916 */;
+import StoreUtils from "StoreUtils" /* 6590 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8933 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9713 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7861 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9731 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7877 */;
 import size from "module_2" /* 2 */;
 
-let collectionsAfterFetchState, requestKey;
+let collectionsAfterFetchState, fetchState, requestKey;
 
 let obj = function _maybeFetchCollectionsWithProducts() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let c0;
-    let closure_1;
+    let closure_4;
     let collections;
     let flag;
     let flag2;
@@ -28,71 +28,82 @@ let obj = function _maybeFetchCollectionsWithProducts() {
     let includeUnpublishedProducts;
     let length;
     let obj6;
-    let obj8;
+    let obj9;
     let tmp26;
     let closure_0 = arg0;
-    if (1 === tmp4) {
+    let closure_1 = value;
+    if (1 === c6) {
       if (arg0 === 1) {
-        let c6 = 3;
+        let c7 = 3;
         throw value;
       } else if (arg0 === 2) {
-        c6 = 3;
-        const obj5 = { value, done: true };
-        return obj5;
+        c7 = 3;
+        const obj7 = { value, done: true };
+        return obj7;
       } else {
         length = c0.filter((item) => {
-          let shouldRefetchEntryResult = Boolean(item);
-          if (shouldRefetchEntryResult) {
-            obj = { fetchState: c5.getFetchState(item), fetchedAt: c5.getFetchedAt(item), needsPricing, hasPricingCoverage: c5.hasPricingCoverage(item) };
-            const shouldRefetchEntry = closure_0(closure_2[5]).shouldRefetchEntry;
-            closure_0(closure_2[5]);
-            shouldRefetchEntryResult = shouldRefetchEntry(obj);
+          if (Boolean(item)) {
+            fetchState = fetchState.getFetchState(item);
+            let tmp3 = !closure_1_5;
+            if (closure_1_5) {
+              tmp3 = "error" !== fetchState;
+            }
+            let shouldRefetchEntryResult = !tmp3;
+            if (tmp3) {
+              const obj2 = { fetchState, fetchedAt: fetchState.getFetchedAt(item), needsPricing, hasPricingCoverage: fetchState.hasPricingCoverage(item) };
+              const shouldRefetchEntry = closure_0(closure_2[5]).shouldRefetchEntry;
+              closure_0(closure_2[5]);
+              shouldRefetchEntryResult = shouldRefetchEntry(obj2);
+            }
+            return shouldRefetchEntryResult;
+          } else {
+            return false;
           }
-          return shouldRefetchEntryResult;
         });
         if (0 !== length.length) {
-          let c4 = 1;
-          const obj7 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH", collectionIds: length, includePricing: flag3 };
-          const obj4 = closure_130_1(closure_130_2[6]);
-          obj4.dispatch(obj7);
-          const request = { url: closure_130_7.STOREFRONT_COLLECTIONS_WITH_PRODUCTS, query: obj8, rejectWithError: true };
-          obj8 = { collection_ids: length, locale: closure_130_4.locale, with_bundled_skus: true, include_pricing: flag3, include_google_sku_ids: true, include_unpublished_products: includeUnpublishedProducts, include_unpublished_collections: flag, ignore_cache: flag2 };
-          let c5 = 3;
-          c6 = 1;
-          const obj9 = { value: obj6.httpGetWithCountryCodeQuery(request), done: false };
-          obj6 = closure_130_0(closure_130_2[7]);
-          return obj9;
+          let c5 = 1;
+          const obj8 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH", collectionIds: length, includePricing: flag3 };
+          const obj4 = closure_131_1(closure_131_2[6]);
+          obj4.dispatch(obj8);
+          const request = { url: closure_131_7.STOREFRONT_COLLECTIONS_WITH_PRODUCTS, query: obj9, rejectWithError: true };
+          obj9 = { collection_ids: length, locale: closure_131_4.locale, with_bundled_skus: true, include_pricing: flag3, include_google_sku_ids: true, include_unpublished_products: includeUnpublishedProducts, include_unpublished_collections: flag, ignore_cache: flag2 };
+          c6 = 3;
+          c7 = 1;
+          const obj10 = { value: obj6.httpGetWithCountryCodeQuery(request), done: false };
+          obj6 = closure_131_0(closure_131_2[7]);
+          return obj10;
         }
       }
-    } else if (2 === tmp4) {
-      c4 = 0;
-      let closure_7 = closure_3;
-      const obj10 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_FAILURE", collectionIds: length, apiError: tmp26 };
-      const dispatch2 = closure_130_1(closure_130_2[6]).dispatch;
+    } else if (2 === c6) {
+      c5 = 0;
+      let closure_8 = needsPricing;
+      const obj11 = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_FAILURE", collectionIds: length, apiError: tmp26 };
+      const dispatch2 = closure_131_1(closure_131_2[6]).dispatch;
       const self = this;
       const self2 = this;
-      const tmp21 = closure_130_1(closure_130_2[6]);
-      tmp26 = new closure_130_1(closure_130_2[8])(closure_7);
-      dispatch2(obj10);
+      const tmp21 = closure_131_1(closure_131_2[6]);
+      tmp26 = new closure_131_1(closure_131_2[8])(closure_8);
+      dispatch2(obj11);
     } else if (arg0 === 1) {
-      c6 = 3;
+      c7 = 3;
       throw value;
     } else if (arg0 === 2) {
-      c4 = 0;
-      c6 = 3;
-      const obj11 = { value, done: true };
-      return obj11;
+      c5 = 0;
+      c7 = 3;
+      const obj12 = { value, done: true };
+      return obj12;
     } else {
       const body = value;
-      obj = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_SUCCESS", collectionIds: length, collections: collections.map(closure_130_6.fromServer), includePricing: flag3 };
+      obj = { type: "STOREFRONT_COLLECTIONS_WITH_PRODUCTS_FETCH_SUCCESS", collectionIds: length, collections: collections.map(closure_131_6.fromServer), includePricing: flag3 };
       collections = body.body.collections;
-      const dispatch = closure_130_1(closure_130_2[6]).dispatch;
-      const tmp9 = closure_130_1(closure_130_2[6]);
+      const dispatch = closure_131_1(closure_131_2[6]).dispatch;
+      const tmp9 = closure_131_1(closure_131_2[6]);
       dispatch(obj);
-      c4 = 0;
+      c5 = 0;
     }
     await "HermesInternal";
-    let closure_2 = tmp;
+    let closure_3 = tmp;
+    let closure_2 = tmp4;
     ({ collectionIds: c0, includeUnpublishedProducts } = closure_0);
     if (includeUnpublishedProducts === undefined) {
       includeUnpublishedProducts = false;
@@ -100,6 +111,11 @@ let obj = function _maybeFetchCollectionsWithProducts() {
     flag = tmp54.includeUnpublishedCollections ?? false;
     flag2 = tmp54.ignoreCache ?? false;
     flag3 = tmp54.includePricing ?? false;
+    let obj5 = closure_1;
+    if (closure_1 === undefined) {
+      obj5 = {};
+    }
+    const flag4 = obj5.retryAfterError ?? false;
     return "flexDirection";
   });
   return obj(...arguments);

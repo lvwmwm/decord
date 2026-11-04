@@ -1,20 +1,20 @@
-// Module ID: 13899
-// Function ID: 13900
+// Module ID: 13985
+// Function ID: 13986
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1187, 13900, 13901, 13902, 5747, 11692, 1380, 13903, 7580, 9054, 13907, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1187, 13986, 13987, 13988, 5761, 11743, 1380, 13989, 7596, 9071, 13993, 2]
 // Exports: default
 
-// Module 13899 (ForumPostGridBody)
+// Module 13985 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9054 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13900 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13901 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13902 */;
-import ForumPostMedia from "ForumPostMedia" /* 13903 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9071 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13986 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13987 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13988 */;
+import ForumPostMedia from "ForumPostMedia" /* 13989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -49,7 +49,7 @@ function ExtraMediaIcon(extraMediaCount) {
   const obj2 = { source: AssetRegistryDefault3, color: tmp.icon.color, size: native.Icon.Sizes.REFRESH_SMALL_16 };
   const Icon = native.Icon;
   items = [metroRequire(Icon, obj2), ];
-  const obj3 = { style: tmp.extraMediaCount, lineClamp: 1, variant: "text-xs/normal", color: "text-default", children: "+" + extraMediaCount };
+  const obj3 = { style: tmp.extraMediaCount, lineClamp: 1, variant: "body-xs/normal", color: "text-default", children: "+" + extraMediaCount };
   const Text = Text_Text.Text;
   items[1] = metroRequire(Text, obj3);
   return metroImportDefault(View, obj);
@@ -111,14 +111,14 @@ export default function ForumPostGridBody(thread) {
   const hasUnreads = thread.hasUnreads;
   let tmp = closure_8();
   let tmp2 = thread;
-  let obj = thread(7580);
+  let obj = thread(7596);
   [first, tmp5] = obj.useSomeAppliedTags(thread, 2);
   let tmp16Result = first.length > 0;
   items = [media];
   const memo = react.useMemo(() => media.slice(0, 4), items);
   const bound = Math.max(0, media.length - 4);
   const isMediaPostResult = thread.isMediaPost();
-  const tmp10 = media(11692)();
+  const tmp10 = media(11743)();
   dependencyMap = tmp10;
   const items1 = [memo];
   const memo1 = react.useMemo(() => {
@@ -186,7 +186,7 @@ export default function ForumPostGridBody(thread) {
   items5[1] = tmp17;
   items6 = [closure_6(View, obj3), , , ];
   if (tmp16Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(13907).ForumPostAppliedTagPills, obj5) };
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(13993).ForumPostAppliedTagPills, obj5) };
     obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
     tmp16Result = tmp16(tmp14, obj4);
   }

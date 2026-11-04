@@ -1,10 +1,10 @@
-// Module ID: 5877
-// Function ID: 5878
+// Module ID: 5891
+// Function ID: 5892
 // Name: useGuildIdForChannelRoute
 // Dependencies: [4993, 5172, 1072, 504, 5015, 2]
 // Exports: default, getGuildIdForGenericRedirect
 
-// Module 5877 (useGuildIdForChannelRoute)
+// Module 5891 (useGuildIdForChannelRoute)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import FavoritesUtils from "FavoritesUtils" /* 5015 */;

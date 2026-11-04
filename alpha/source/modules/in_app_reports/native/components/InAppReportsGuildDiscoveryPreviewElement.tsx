@@ -1,18 +1,18 @@
-// Module ID: 15304
-// Function ID: 15305
+// Module ID: 15391
+// Function ID: 15392
 // Name: InAppReportsGuildDiscoveryPreviewElement
-// Dependencies: [19, 17, 5142, 21, 5141, 575, 504, 5138, 5747, 1113, 7083, 5004, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 504, 5138, 5761, 1113, 7098, 5004, 2]
 // Exports: default
 
-// Module 15304 (InAppReportsGuildDiscoveryPreviewElement)
+// Module 15391 (InAppReportsGuildDiscoveryPreviewElement)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5004 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildIconDefault from "GuildIcon" /* 7083 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildIconDefault from "GuildIcon" /* 7098 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -63,7 +63,7 @@ export default function GuildDiscoveryPreviewElement(guild) {
   const tmp4 = GuildIconDefault;
   obj8 = GuildRecordUtils;
   items3 = [hasOwnProperty(tmp4, obj7), ];
-  const obj9 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: guild.name };
+  const obj9 = { style: tmp.guildName, variant: "body-sm/medium", color: "text-default", children: guild.name };
   items3[1] = hasOwnProperty(Text_Text.Text, obj9);
   items1[1] = hasOwnProperty(View, obj5);
   return metroRequire(View, obj3);

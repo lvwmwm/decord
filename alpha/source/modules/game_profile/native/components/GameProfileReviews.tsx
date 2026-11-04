@@ -1,18 +1,18 @@
-// Module ID: 9516
-// Function ID: 9517
+// Module ID: 9535
+// Function ID: 9536
 // Name: GameProfileReviews
-// Dependencies: [19, 17, 21, 5141, 575, 8137, 9517, 5155, 9451, 5829, 9519, 9520, 9468, 1113, 9476, 5747, 2164, 9522, 5837, 9528, 9472, 9529, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8153, 9536, 5155, 9469, 5843, 9538, 9539, 9486, 1113, 9494, 5761, 2164, 9541, 5851, 9547, 9490, 9548, 2]
 // Exports: default
 
-// Module 9516 (GameProfileReviews)
+// Module 9535 (GameProfileReviews)
 import nativeDefault from "native" /* 575 */;
 import react2 from "react" /* 5155 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import AppleNeutralIcon from "AppleNeutralIcon" /* 8137 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9451 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
-import GooglePlayNeutralIcon from "GooglePlayNeutralIcon" /* 9517 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import AppleNeutralIcon from "AppleNeutralIcon" /* 8153 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9469 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
+import GooglePlayNeutralIcon from "GooglePlayNeutralIcon" /* 9536 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -53,13 +53,13 @@ function SteamReviewRow(url) {
   ({ title, rating, isRecentRating } = url);
   const tmp = closure_8();
   const alwaysShowLinkDecorations = react.useContext(url(5155).AccessibilityPreferencesContext).alwaysShowLinkDecorations;
-  const tmp4 = trackAction(9451);
-  const tmp4Result = tmp4(trackAction(5829).openURL);
+  const tmp4 = trackAction(9469);
+  const tmp4Result = tmp4(trackAction(5843).openURL);
   dependencyMap = tmp4Result;
-  const obj = url(9519);
+  const obj = url(9538);
   const result = obj.calculateSteamReviewScoreDescription(rating, ratingCount, isRecentRating);
   const items = [tmp4Result, url, trackAction];
-  const obj2 = url(9520);
+  const obj2 = url(9539);
   const steamReviewScoreDescriptionColor = obj2.getSteamReviewScoreDescriptionColor(result);
   const obj3 = {
     onPress: react.useCallback(() => {
@@ -74,26 +74,26 @@ function SteamReviewRow(url) {
   intl = url(1113).intl;
   const obj4 = { style: tmp.reviewNameContainer, children: items1 };
   const obj5 = { size: "sm", color: trackAction(575).colors.ICON_STRONG };
-  const SteamNeutralIcon = url(9476).SteamNeutralIcon;
-  items1 = [closure_6(SteamNeutralIcon, obj5), closure_6(url(5747).Text, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: title })];
+  const SteamNeutralIcon = url(9494).SteamNeutralIcon;
+  items1 = [closure_6(SteamNeutralIcon, obj5), closure_6(url(5761).Text, { variant: "heading-xs/medium", color: "mobile-text-heading-primary", children: title })];
   items2 = [closure_7(closure_4, obj4), ];
   const obj6 = { style: tmp.ratingContainer, children: items4 };
-  const obj7 = { variant: "text-sm/medium", color: steamReviewScoreDescriptionColor, lineClamp: 1, style: items3, children: tmp2Result.getSteamReviewScoreDescriptionIntl(result) };
+  const obj7 = { variant: "body-sm/medium", color: steamReviewScoreDescriptionColor, lineClamp: 1, style: items3, children: tmp2Result.getSteamReviewScoreDescriptionIntl(result) };
   items3 = [tmp.ratingDescription, ];
   let linkText;
-  const Text = url(5747).Text;
+  const Text = url(5761).Text;
   const tmp10 = closure_4;
   const tmp9 = closure_5;
   if (alwaysShowLinkDecorations) {
     linkText = tmp.linkText;
   }
   items3[1] = linkText;
-  tmp2Result = url(9520);
+  tmp2Result = url(9539);
   items4 = [closure_6(Text, obj7), ];
   let tmp11Result = null != ratingCount && result !== tmp2(2164).SteamReviewScoreDescription.NO_USER_REVIEWS;
   if (tmp11Result) {
-    const obj8 = { variant: "text-sm/medium", color: "text-subtle", children: str.toString() };
-    const Text2 = tmp2(5747).Text;
+    const obj8 = { variant: "body-sm/medium", color: "text-subtle", children: str.toString() };
+    const Text2 = tmp2(5761).Text;
     const intl2 = tmp2(1113).intl;
     const format = intl2.format;
     const obj9 = { rating_count: ratingCount.toLocaleString() };
@@ -139,7 +139,7 @@ function OpenCriticReview(url) {
     opencritic = reviews.opencritic;
   }
   if (opencritic == null) {
-    opencritic = { topCriticRating: "replace", topCriticRatingCount: "r", tier: "isArray" };
+    opencritic = { topCriticRating: "Array", topCriticRatingCount: "id", tier: "error" };
   }
   ({ tier, topCriticRating } = opencritic);
   if (topCriticRating == null) {
@@ -149,8 +149,8 @@ function OpenCriticReview(url) {
   if (num == null) {
     num = -1;
   }
-  const tmp4 = trackAction(9451);
-  const tmp4Result = tmp4(trackAction(5829).openURL);
+  const tmp4 = trackAction(9469);
+  const tmp4Result = tmp4(trackAction(5843).openURL);
   dependencyMap = tmp4Result;
   const items = [tmp4Result, url, trackAction];
   let str = "";
@@ -159,11 +159,11 @@ function OpenCriticReview(url) {
     closure_2(url);
   }, items);
   if (null != tier) {
-    const obj2 = url(9522);
+    const obj2 = url(9541);
     str = obj2.getOpenCriticTierText(tier);
   }
   if (null != tier) {
-    const obj4 = url(9522);
+    const obj4 = url(9541);
     openCriticCircleRatingColor = obj4.getOpenCriticCircleRatingColor(tier);
   } else {
     openCriticCircleRatingColor = { foregroundColor: "", backgroundColor: "" };
@@ -171,8 +171,8 @@ function OpenCriticReview(url) {
   ({ foregroundColor, backgroundColor } = openCriticCircleRatingColor);
   const obj = { onPress: callback, accessibilityRole: "link", accessibilityLabel: intl.string(url(1113).t.aLNBAw), style: tmp.reviewRow, children: items1 };
   intl = url(1113).intl;
-  const obj3 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: intl2.string(url(1113).t["UxvER+"]) };
-  const Text = url(5747).Text;
+  const obj3 = { variant: "heading-xs/medium", color: "mobile-text-heading-primary", children: intl2.string(url(1113).t["UxvER+"]) };
+  const Text = url(5761).Text;
   intl2 = url(1113).intl;
   items1 = [closure_6(Text, obj3), ];
   let tmp12Result = null;
@@ -182,8 +182,8 @@ function OpenCriticReview(url) {
     const obj6 = { style: tmp.opencriticTopCriticContainer, accessibilityLabel: str, accessibilityRole: "image", children: closure_6(tmp2Result, obj7) };
     obj7 = { source: obj8, style: tmp.opencriticTopCriticImage, accessible: true, accessibilityLabel: str };
     obj8 = { uri: tmp11Result.getOpenCriticTierImage(tier) };
-    tmp2Result = trackAction(5837);
-    tmp11Result = url(9522);
+    tmp2Result = trackAction(5851);
+    tmp11Result = url(9541);
     tmp12Result = tmp12(tmp13, obj6);
   }
   items2 = [tmp12Result, , ];
@@ -199,11 +199,11 @@ function OpenCriticReview(url) {
         items3[1] = obj10;
         intl3 = tmp11(1113).intl;
         const obj11 = { rating: topCriticRating, strokeColor: foregroundColor, size: 32 };
-        items4 = [closure_6(tmp2(9528), obj11), ];
+        items4 = [closure_6(tmp2(9547), obj11), ];
         const obj12 = { style: tmp.opencriticTopCriticRatingContainer, children: closure_6(Text2, obj13) };
         const _Math = Math;
-        obj13 = { variant: "text-xs/semibold", color: "text-overlay-light", children: Math.floor(topCriticRating) };
-        Text2 = tmp11(5747).Text;
+        obj13 = { variant: "body-xs/semibold", color: "text-overlay-light", children: Math.floor(topCriticRating) };
+        Text2 = tmp11(5761).Text;
         items4[1] = closure_6(closure_4, obj12);
         tmp9Result = tmp9(tmp13, obj9);
       }
@@ -213,9 +213,9 @@ function OpenCriticReview(url) {
   if (topCriticRating <= 0) {
     tmp12Result2 = null;
     if (null == tier) {
-      const obj14 = { variant: "text-xs/medium", color: tmp11Result2.getSteamReviewScoreDescriptionColor(url(2164).SteamReviewScoreDescription.NO_USER_REVIEWS), children: intl4.string(url(1113).t["0xYzpO"]) };
-      const Text3 = tmp11(5747).Text;
-      tmp11Result2 = url(9520);
+      const obj14 = { variant: "body-xs/medium", color: tmp11Result2.getSteamReviewScoreDescriptionColor(url(2164).SteamReviewScoreDescription.NO_USER_REVIEWS), children: intl4.string(url(1113).t["0xYzpO"]) };
+      const Text3 = tmp11(5761).Text;
+      tmp11Result2 = url(9539);
       intl4 = tmp11(1113).intl;
       tmp12Result2 = tmp12(Text3, obj14);
     }
@@ -256,7 +256,7 @@ function MobileStoreReviewRow(arg0) {
   };
   const obj3 = { size: "sm", color: nativeDefault.colors.ICON_STRONG };
   items1[0] = metroRequire(tmp6, obj3);
-  const obj4 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: review.title };
+  const obj4 = { variant: "heading-xs/medium", color: "mobile-text-heading-primary", children: review.title };
   items1[1] = metroRequire(Text_Text.Text, obj4);
   items2 = [metroImportDefault(React3, obj2), ];
   const items3 = [tmp.ratingDescription, ];
@@ -268,10 +268,10 @@ function MobileStoreReviewRow(arg0) {
   if (alwaysShowLinkDecorations) {
     linkText = tmp.linkText;
   }
-  const obj6 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", lineClamp: 1, style: items3, children: review.ratingText };
+  const obj6 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", lineClamp: 1, style: items3, children: review.ratingText };
   items3[1] = linkText;
   items4 = [metroRequire(Text, obj6), ];
-  const obj7 = { variant: "text-sm/medium", color: "text-subtle", lineClamp: 1, children: review.ratingCountText };
+  const obj7 = { variant: "body-sm/medium", color: "text-subtle", lineClamp: 1, children: review.ratingCountText };
   items4[1] = metroRequire(Text_Text.Text, obj7);
   items2[1] = metroImportDefault(tmp9, obj5);
   return metroImportDefault(tmp8, obj);
@@ -376,7 +376,7 @@ export default function GameProfileReviews(arg0) {
   let tmp25 = null;
   if (0 !== items.length) {
     const obj12 = { style: tmp.container, children: items1 };
-    const obj13 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl3.string(require("intl").t.GaAQXP) };
+    const obj13 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: intl3.string(require("intl").t.GaAQXP) };
     const Text = require("Text/Text").Text;
     intl3 = require("intl").intl;
     items1 = [closure_6(Text, obj13), ];

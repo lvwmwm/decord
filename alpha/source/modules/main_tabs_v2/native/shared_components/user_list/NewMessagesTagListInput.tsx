@@ -1,16 +1,16 @@
-// Module ID: 14048
-// Function ID: 14049
+// Module ID: 14134
+// Function ID: 14135
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1385, 21, 5141, 575, 1377, 1380, 10860, 9190, 7106, 1113, 14049, 11626, 5747, 5150, 2]
+// Dependencies: [19, 17, 1385, 21, 5141, 575, 1377, 1380, 10908, 9207, 7121, 1113, 14135, 11677, 5761, 5150, 2]
 
-// Module 14048 (NewMessagesTagListInput)
+// Module 14134 (NewMessagesTagListInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10860 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10908 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -106,7 +106,7 @@ const memoResult = react.memo(function NewMessagesTagListInput(forceSearchResult
       tmp2Result = tmp2(PressableOpacity, obj3);
     }
   }
-  ({ style: tmp.header, variant: "text-sm/medium", color: "text-muted", accessible: false, children: intl2.string(require("intl").t.kHyiXs) });
+  ({ style: tmp.header, variant: "body-sm/medium", color: "text-muted", accessible: false, children: intl2.string(require("intl").t.kHyiXs) });
   const Text = require("Text/Text").Text;
   intl2 = require("intl").intl;
   intl3 = require("intl").intl;

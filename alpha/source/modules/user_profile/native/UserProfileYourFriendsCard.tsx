@@ -1,10 +1,10 @@
-// Module ID: 19043
-// Function ID: 19044
+// Module ID: 19146
+// Function ID: 19147
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7925, 5083, 1385, 1072, 21, 1187, 5141, 504, 15049, 9279, 12, 1380, 7101, 5747, 1113, 2]
+// Dependencies: [32, 19, 17, 7941, 5083, 1385, 1072, 21, 1187, 5141, 504, 15129, 9296, 12, 1380, 7116, 5761, 1113, 2]
 // Exports: default
 
-// Module 19043 (UserProfileYourFriendsCard)
+// Module 19146 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -13,7 +13,7 @@ import native from "native" /* 1187 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7925 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7941 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -108,7 +108,7 @@ export default function UserProfileYourFriendsCard(navigateToFriends) {
     return <View style={closure_0.facepile} accessibilityElementsHidden importantForAccessibility="no-hide-descendants">{null}</View>;
   }, items3);
   const TableRow = require("TableRow").TableRow;
-  ({ variant: "text-sm/semibold", color: "text-default", children: intl.string(require("intl").t.TdEu5X) });
+  ({ variant: "body-sm/semibold", color: "text-default", children: intl.string(require("intl").t.TdEu5X) });
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   const intl2 = require("intl").intl;

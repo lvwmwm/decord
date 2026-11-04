@@ -1,20 +1,20 @@
-// Module ID: 17495
-// Function ID: 17496
+// Module ID: 17585
+// Function ID: 17586
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5141, 575, 1393, 1113, 3997, 1500, 7446, 1499, 504, 2176, 7471, 1252, 13864, 1407, 5974, 5381, 17496, 2123, 17497, 8862, 8859, 7273, 6566, 16610, 13865, 10036, 13876, 6161, 5747, 17498, 7186, 7101, 2190, 6147, 5754, 9657, 10014, 17543, 10420, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5141, 575, 1393, 1113, 3997, 1500, 7462, 1499, 504, 2176, 7487, 1252, 13950, 1407, 5988, 5382, 17586, 2123, 17587, 8879, 8876, 7289, 6581, 16700, 13951, 10084, 13962, 6176, 5761, 17588, 7201, 7116, 2190, 6162, 5768, 9676, 10062, 17633, 10468, 2]
 // Exports: default
 
-// Module 17495 (CustomTypingIndicatorEditScreen)
+// Module 17585 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import user from "user" /* 1393 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1407 */;
 import Link from "Link" /* 1500 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7446 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10036 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13864 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7462 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10084 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13950 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -145,12 +145,12 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback1 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(17496, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17586, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
   }, items4);
   const callback2 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(17497, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17587, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
   ref = react.useRef(null);
   const items6 = [analyticsLocations];
@@ -328,7 +328,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   }
   items10 = [tmp38(tmp33, obj7), , , ];
   let obj9 = { style: tmp.section, children: items11 };
-  let obj10 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", children: intl.string(tmp7(tmp3[11])["l8CZ7+"]) };
+  let obj10 = { accessibilityRole: "header", variant: "body-sm/semibold", color: "text-default", children: intl.string(tmp7(tmp3[11])["l8CZ7+"]) };
   const Text = tmp2(tmp3[35]).Text;
   intl = tmp2(tmp3[10]).intl;
   items11 = [tmp38(Text, obj10), tmp38(tmp7(tmp3[36]), { emojis: first1, onChange: callback }), ];
@@ -354,7 +354,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   items11[2] = memo1(TableRowGroup, obj12);
   items10[1] = closure_13(onChange, obj9);
   const obj13 = { style: tmp.section, children: items12 };
-  const obj14 = { accessibilityRole: "header", variant: "text-sm/semibold", color: "text-default", children: intl6.string(nativeStackNavigation(tmp3[11]).BGCQqw) };
+  const obj14 = { accessibilityRole: "header", variant: "body-sm/semibold", color: "text-default", children: intl6.string(nativeStackNavigation(tmp3[11]).BGCQqw) };
   const Text2 = tmp2(tmp3[35]).Text;
   intl6 = tmp2(tmp3[10]).intl;
   items12 = [tmp38(Text2, obj14), , ];
@@ -369,7 +369,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   string = intl8.string;
   tmp2Result2 = mode(tmp3[19]);
   items12[1] = memo1(TableRowGroup2, obj15);
-  const obj18 = { style: tmp.description, variant: "text-xs/normal", color: "text-muted", includeFontPadding: true, children: format(k6c2yP, obj19) };
+  const obj18 = { style: tmp.description, variant: "body-xs/normal", color: "text-muted", includeFontPadding: true, children: format(k6c2yP, obj19) };
   const Text3 = tmp2(tmp3[35]).Text;
   const intl9 = tmp2(tmp3[10]).intl;
   format = intl9.format;
@@ -439,7 +439,7 @@ export default function CustomTypingIndicatorEditScreen() {
   ({ analyticsLocations, mode } = params);
   const tmpResult = useAnalyticsLocations;
   const locationStackFromLocationContext = tmpResult.useLocationStackFromLocationContext();
-  const AnalyticsLocationProvider = tmp(7446).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(7462).AnalyticsLocationProvider;
   if (analyticsLocations == null) {
     analyticsLocations = locationStackFromLocationContext;
   }

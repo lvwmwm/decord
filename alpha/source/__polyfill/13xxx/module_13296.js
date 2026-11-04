@@ -1,232 +1,150 @@
 // Module ID: 13296
 // Function ID: 13297
-// Dependencies: [5, 13186, 13189, 13190, 13218, 13204, 13214, 13238, 13217, 13235, 13224, 13205]
-// Exports: trpcMiddleware
+// Dependencies: [13272, 13273, 13297, 13287, 13284, 13279]
+// Exports: closeSession, makeSession
 
 // Module 13296
-import _mod13214 from "module_13214" /* 13214 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import registerSpanErrorInstrumentation from "module_13186" /* 13186 */;
-import "module_13189";
-import CONSOLE_LEVELS from "module_13190" /* 13190 */;
-import DEBUG_BUILD from "module_13218" /* 13218 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13204 */;
+import _mod13279 from "module_13279" /* 13279 */;
+import _mod13284 from "module_13284" /* 13284 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13287 */;
+import _mod13297 from "module_13297" /* 13297 */;
+import DEBUG_BUILD from "module_13272" /* 13272 */;
+import CONSOLE_LEVELS from "module_13273" /* 13273 */;
 
-let c5, c6;
-
-_mod13214;
-let obj = { mechanism: { handled: false, data: { function: "trpcMiddleware" } } };
-
-export function trpcMiddleware() {
-  obj = arg0;
-  if (arg0 === undefined) {
+function updateSession(ipAddress) {
+  let obj = arg1;
+  if (arg1 === undefined) {
     obj = {};
   }
-  let closure_0 = _asyncToGenerator(async (arg0, value) => {
-    let c1;
-    let fn;
-    let getRawInput;
-    let rawInput;
-    let tmp;
-    let tmp4;
-    closure_0 = arg0;
-    if (c6 === 2) {
-      c6 = 3;
-      let str = "Generator functions may not be called on executing generators";
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      let c4;
-      let closure_3;
-      try {
-        let closure_2;
-        let obj5;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            let obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_2 = tmp;
-            const tmp24 = closure_0;
-            c1 = undefined;
-            closure_3 = undefined;
-            const path = closure_0.path;
-            ({ next: c1, rawInput, getRawInput } = closure_0);
-            const type = closure_0.type;
-            const obj8 = closure_0(dependencyMap[8]);
-            const client = obj8.getClient();
-            const options = client && client.getOptions();
-            obj5 = { procedure_path: path, procedure_type: type };
-            value = closure_0.attachRpcInput;
-            if (undefined !== value) {
-              value = closure_0.attachRpcInput;
-            } else {
-              value = options && options.sendDefaultPii;
-            }
-            if (value) {
-              if (undefined !== rawInput) {
-                const normalizer2 = closure_0(dependencyMap[9]);
-                value = normalizer2.normalize(rawInput);
-                obj5.input = value;
-              }
-              if (undefined !== getRawInput) {
-                if (typeof getRawInput === "function") {
-                  c4 = 1;
-                  value = getRawInput();
-                  c5 = 2;
-                  c6 = 1;
-                  let obj6 = { value, done: false };
-                  return obj6;
-                }
-              }
-            }
-          }
-        } else if (1 === tmp4) {
-          c4 = 0;
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          let tmp6 = closure_2;
-          closure_3 = value;
-          value = obj5;
-          const normalizer = closure_0(dependencyMap[9]);
-          obj5.input = normalizer.normalize(closure_3);
-          c4 = 0;
-        }
-        let obj3 = closure_0(dependencyMap[8]);
-        value = (setContext) => {
-          setContext.setContext("trpc", closure_2);
-          const tmp2 = closure_1_0(fn[10]);
-          obj = { name: "trpc/" + closure_0, op: "rpc.server", attributes: { [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE]: "route", [closure_1_0(closure_1_1[11]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "auto.rpc.trpc" } };
-          const startSpanManual = tmp2.startSpanManual;
-          closure_0 = closure_1_2(function*(arg0, value) {
-            let tmp;
-            function captureIfError(ok) {
-              let tmp = typeof ok === "object";
-              if (typeof ok === "object") {
-                tmp = null !== ok;
-              }
-              if (tmp) {
-                tmp = "ok" in ok;
-              }
-              if (tmp) {
-                tmp = !ok.ok;
-              }
-              if (tmp) {
-                tmp = "error" in ok;
-              }
-              if (tmp) {
-                obj = closure_1_0(closure_1_1[7]);
-                obj.captureException(ok.error, closure_1_3);
-              }
-            }
-            closure_0 = arg0;
-            if (c6 === 2) {
-              c6 = 3;
-              const str = "Generator functions may not be called on executing generators";
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp3 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "HermesInternal", done: null };
-              }
-            } else {
-              try {
-                c6 = 2;
-                const tmp4 = c5;
-                if (0 === c5) {
-                  if (arg0 === 1) {
-                    c6 = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    c6 = 3;
-                    const obj4 = { value, done: true };
-                    return obj4;
-                  } else {
-                    closure_2 = tmp;
-                    value = undefined;
-                    c4 = 1;
-                    c5 = 2;
-                    c6 = 1;
-                    const obj5 = { value: value(), done: false };
-                    return obj5;
-                  }
-                } else if (1 === tmp4) {
-                  c4 = 0;
-                  closure_2 = closure_3;
-                  const obj3 = closure_0(fn[7]);
-                  const captureExceptionResult = obj3.captureException(closure_2, closure_2_3);
-                  closure_0.end();
-                  throw closure_2;
-                } else if (arg0 === 1) {
-                  c6 = 3;
-                  throw value;
-                } else if (arg0 === 2) {
-                  c4 = 0;
-                  c6 = 3;
-                  const obj6 = { value, done: true };
-                  return obj6;
-                } else {
-                  captureIfError(value);
-                  closure_0.end();
-                  c4 = 0;
-                  c6 = 3;
-                  obj = { value, done: true };
-                  return obj;
-                }
-              } catch (tmp24) {
-                closure_3 = tmp24;
-                if (0 === c4) {
-                  c6 = 3;
-                  throw tmp24;
-                } else {
-                  c5 = 1;
-                }
-              }
-            }
-          });
-          return startSpanManual(obj, function(arg0) {
-            return closure_0(...arguments);
-          });
-        };
-        c6 = 3;
-        const obj7 = { value: obj3.withScope(value), done: true };
-        return obj7;
-      } catch (tmp18) {
-        closure_3 = tmp18;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp18;
-        } else {
-          c5 = 1;
-        }
-      }
+  if (obj.user) {
+    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
+    if (tmp) {
+      ipAddress.ipAddress = obj.user.ip_address;
     }
-  });
-  return function(arg0) {
-    return closure_0(...arguments);
-  };
+    const tmp2 = ipAddress.did || obj.did;
+    if (!tmp2) {
+      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
+    }
+  }
+  let timestamp = obj.timestamp;
+  if (!timestamp) {
+    const obj2 = _browserPerformanceTimeOriginMode;
+    timestamp = obj2.timestampInSeconds();
+  }
+  ipAddress.timestamp = timestamp;
+  if (obj.abnormal_mechanism) {
+    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
+  }
+  if (obj.ignoreDuration) {
+    ipAddress.ignoreDuration = obj.ignoreDuration;
+  }
+  if (obj.sid) {
+    let sid;
+    if (32 === obj.sid.length) {
+      sid = obj.sid;
+    } else {
+      const obj3 = _mod13284;
+      sid = obj3.uuid4();
+    }
+    ipAddress.sid = sid;
+  }
+  if (undefined !== obj.init) {
+    ipAddress.init = obj.init;
+  }
+  const tmp7 = !ipAddress.did && obj.did;
+  if (tmp7) {
+    const _HermesInternal = HermesInternal;
+    ipAddress.did = "" + obj.did;
+  }
+  if (typeof obj.started === "number") {
+    ipAddress.started = obj.started;
+  }
+  if (ipAddress.ignoreDuration) {
+    ipAddress.duration = undefined;
+  } else if (typeof obj.duration === "number") {
+    ipAddress.duration = obj.duration;
+  } else {
+    const diff = ipAddress.timestamp - ipAddress.started;
+    let num2 = 0;
+    if (diff >= 0) {
+      num2 = diff;
+    }
+    ipAddress.duration = num2;
+  }
+  if (obj.release) {
+    ipAddress.release = obj.release;
+  }
+  if (obj.environment) {
+    ipAddress.environment = obj.environment;
+  }
+  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
+  if (tmp9) {
+    ipAddress.ipAddress = obj.ipAddress;
+  }
+  const tmp10 = !ipAddress.userAgent && obj.userAgent;
+  if (tmp10) {
+    ipAddress.userAgent = obj.userAgent;
+  }
+  if (typeof obj.errors === "number") {
+    ipAddress.errors = obj.errors;
+  }
+  if (obj.status) {
+    ipAddress.status = obj.status;
+  }
 }
+_mod13297;
+
+export function closeSession(status, status2) {
+  let obj;
+  const tmp = status2;
+  if (tmp) {
+    obj = { status: status2 };
+    const obj2 = { status: status2 };
+  } else {
+    obj = {};
+    if ("ok" === status.status) {
+      obj = { status: "exited" };
+    }
+  }
+  updateSession(status, obj);
+}
+export function makeSession(arg0) {
+  let obj2;
+  let obj3;
+  let obj = obj2(13287);
+  const timestampInSecondsResult = obj.timestampInSeconds();
+  obj2 = {
+    sid: obj3.uuid4(),
+    init: true,
+    timestamp: timestampInSecondsResult,
+    started: timestampInSecondsResult,
+    duration: 0,
+    status: "ok",
+    errors: 0,
+    ignoreDuration: false,
+    toJSON() {
+      let combined;
+      let date;
+      let date1;
+      const tmp2 = _mod13279;
+      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
+      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
+      date = new Date(1000 * obj2.started);
+      ({ status: obj.status, errors: obj.errors } = obj2);
+      date1 = new Date(1000 * obj2.timestamp);
+      if (typeof obj2.did === "number") {
+        const _HermesInternal = HermesInternal;
+        combined = "" + tmp.did;
+      }
+      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
+      return dropUndefinedKeys(obj);
+    }
+  };
+  obj3 = obj2(13284);
+  if (arg0) {
+    let tmp2 = updateSession;
+    updateSession(obj2, arg0);
+  }
+  return obj2;
+}
+export { updateSession };

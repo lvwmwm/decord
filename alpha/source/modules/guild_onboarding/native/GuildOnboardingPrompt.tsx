@@ -1,29 +1,29 @@
-// Module ID: 7413
-// Function ID: 7414
+// Module ID: 7429
+// Function ID: 7430
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 6916, 7068, 5012, 7388, 7385, 1388, 21, 5141, 5709, 575, 1499, 504, 1627, 5719, 671, 7412, 7414, 7097, 5747, 1113, 5754, 7042, 5710, 1092, 7394, 7415, 7416, 7420, 1411, 5381, 7425, 2123, 7106, 5837, 7442, 2]
+// Dependencies: [32, 19, 17, 6931, 7083, 5012, 7404, 7401, 1388, 21, 5141, 5722, 575, 1499, 504, 1627, 5732, 671, 7428, 7430, 7112, 5761, 1113, 5768, 7057, 5723, 1092, 7410, 7431, 7432, 7436, 1411, 5382, 7441, 2123, 7121, 5851, 7458, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 7413 (GuildOnboardingPrompt)
+// Module 7429 (GuildOnboardingPrompt)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7042 */;
-import TermsFieldListDefault from "TermsFieldList" /* 7097 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7385 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7394 */;
-import EmojiDefault from "Emoji" /* 7420 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7057 */;
+import TermsFieldListDefault from "TermsFieldList" /* 7112 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7401 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7410 */;
+import EmojiDefault from "Emoji" /* 7436 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7068 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7083 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7388 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7404 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ function PromptHeader(currentPrompt) {
   ({ numberOfPrompts, currentPromptIndex } = currentPrompt);
   const tmp = closure_16();
   const obj = { style: tmp.promptHeader, children: items };
-  const obj2 = { style: tmp.countText, variant: "text-sm/medium", color: "text-muted", children: intl.format(intl3.t.isV0NW, obj3) };
+  const obj2 = { style: tmp.countText, variant: "body-sm/medium", color: "text-muted", children: intl.format(intl3.t.isV0NW, obj3) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   obj3 = { currentQuestion: currentPromptIndex + 1, questionCount: numberOfPrompts };
@@ -71,8 +71,8 @@ function PromptHeader(currentPrompt) {
     const obj4 = { children: items1 };
     const obj5 = { style: tmp.requiredSeparator };
     items1 = [map1(hasOwnProperty, obj5), ];
-    const obj6 = { variant: "text-sm/medium", color: "text-brand", children: intl2.string(intl3.t.Ur8Vrt) };
-    const Text2 = tmp6(5747).Text;
+    const obj6 = { variant: "body-sm/medium", color: "text-brand", children: intl2.string(intl3.t.Ur8Vrt) };
+    const Text2 = tmp6(5761).Text;
     intl2 = tmp6(1113).intl;
     items1[1] = map1(Text2, obj6);
     tmp2Result = tmp2(tmp3, obj4);
@@ -184,14 +184,14 @@ function PromptFooter(lastPrompt) {
   let tmp20Result = null;
   const obj7 = { style: tmp.footerContent, children: items5 };
   if (tmp10) {
-    const obj8 = { style: tmp.helpText, variant: "text-xs/medium", color: "text-default", children: intl2.string(require("intl").t.dA1dSf) };
+    const obj8 = { style: tmp.helpText, variant: "body-xs/medium", color: "text-default", children: intl2.string(require("intl").t.dA1dSf) };
     const Text = tmp2(tmp3[21]).Text;
     intl2 = tmp2(tmp3[22]).intl;
     tmp20Result = tmp20(Text, obj8);
   }
   items5 = [tmp20Result, , ];
   if ("" !== helpText) {
-    const obj9 = { style: tmp.helpText, variant: "text-xs/medium", color: "text-default", children: items6 };
+    const obj9 = { style: tmp.helpText, variant: "body-xs/medium", color: "text-default", children: items6 };
     items6 = [helpText, " ", helpTextAdditional];
     tmp18Result = tmp18(tmp2(tmp3[21]).Text, obj9);
   } else {
@@ -211,7 +211,7 @@ function PromptFooter(lastPrompt) {
   return closure_14(closure_5, obj3);
 }
 function formattedNameHighlight(children, arg1) {
-  const obj = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children };
+  const obj = { variant: "body-xs/medium", color: "mobile-text-heading-primary", children };
   return map1(Text_Text.Text, obj, arg1);
 }
 function DropdownOption(option) {
@@ -265,8 +265,8 @@ function DropdownOption(option) {
     str = "";
   }
   items1 = [closure_13(closure_5, obj3), ];
-  const obj7 = { variant: "text-md/semibold", children: option.title };
-  items1[1] = closure_13(tmp2(5747).Text, obj7);
+  const obj7 = { variant: "body-md/semibold", children: option.title };
+  items1[1] = closure_13(tmp2(5761).Text, obj7);
   return tmp5(closure_5, obj2);
 }
 let _slicedToArray = _slicedToArray_mod;
@@ -388,7 +388,7 @@ export function RulesPrompt(guildId) {
     ({ footer: arr7[0], footerContent: arr7[1] } = tmp);
     const obj12 = { paddingBottom: bottom };
     items6[2] = obj12;
-    const obj13 = { style: tmp.footerText, variant: "text-xs/medium", children: stringResult };
+    const obj13 = { style: tmp.footerText, variant: "body-xs/medium", children: stringResult };
     const Text = tmp2(tmp3[21]).Text;
     const intl = tmp2(tmp3[22]).intl;
     const string = intl.string;
@@ -559,7 +559,7 @@ export function DropdownPrompt(guildId) {
         return tmp(id, id2, flag);
       }
     };
-    obj.openLazy(asyncRequire(7425, dependencyMap.paths), "DropdownOptions", obj2);
+    obj.openLazy(asyncRequire(7441, dependencyMap.paths), "DropdownOptions", obj2);
   }, items2);
   items4 = [closure_13(PromptHeader, { currentPrompt, numberOfPrompts, currentPromptIndex }), ];
   let tmp11Result = 0 === found.length;
@@ -568,7 +568,7 @@ export function DropdownPrompt(guildId) {
   const tmp10 = closure_6;
   const tmp9 = closure_15;
   if (tmp11Result) {
-    const obj5 = { style: tmp.emptyDropdownText, variant: "text-sm/normal", color: "text-muted", children: "No answers selected." };
+    const obj5 = { style: tmp.emptyDropdownText, variant: "body-sm/normal", color: "text-muted", children: "No answers selected." };
     tmp11Result = tmp11(tmp4(tmp3[21]).Text, obj5);
   }
   const obj6 = { children: items6 };

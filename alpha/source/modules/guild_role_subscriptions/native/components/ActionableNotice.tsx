@@ -1,13 +1,13 @@
-// Module ID: 20142
-// Function ID: 20143
+// Module ID: 20258
+// Function ID: 20259
 // Name: ActionableNotice
-// Dependencies: [19, 17, 21, 5141, 5747, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 5761, 5768, 2]
 // Exports: default
 
-// Module 20142 (ActionableNotice)
+// Module 20258 (ActionableNotice)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -40,7 +40,7 @@ export default function ActionableNotice(arg0) {
   const obj = { style: items, children: items1 };
   items = [style, tmp.container];
   items1 = [, ];
-  const obj2 = { style: tmp.message, variant: "text-sm/medium", color: "text-default", children: message };
+  const obj2 = { style: tmp.message, variant: "body-sm/medium", color: "text-default", children: message };
   items1[0] = _false(Text_Text.Text, obj2);
   const obj3 = { style: tmp.actionButton, children: _false(Button, obj4) };
   obj4 = { size: "sm", onPress: onClick, disabled: submitting, text: ctaMessage };

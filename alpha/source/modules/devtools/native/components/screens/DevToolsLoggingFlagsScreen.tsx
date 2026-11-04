@@ -1,16 +1,16 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 17825
+// Function ID: 17826
 // Name: DevToolsLoggingFlagsScreen
-// Dependencies: [17, 1359, 21, 5141, 575, 504, 7186, 7489, 1360, 2]
+// Dependencies: [17, 1359, 21, 5141, 575, 504, 7201, 7505, 1360, 2]
 // Exports: default
 
-// Module 17729 (DevToolsLoggingFlagsScreen)
+// Module 17825 (DevToolsLoggingFlagsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import DeveloperOptionsActionCreators from "DeveloperOptionsActionCreators" /* 1360 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import TableSwitchRow from "TableSwitchRow" /* 7489 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import TableSwitchRow from "TableSwitchRow" /* 7505 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1359 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

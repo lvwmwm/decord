@@ -1,10 +1,10 @@
-// Module ID: 9574
-// Function ID: 9575
+// Module ID: 9593
+// Function ID: 9594
 // Name: GameProfileSkeletonCardRow
 // Dependencies: [19, 17, 21, 5141, 575, 2]
 // Exports: default
 
-// Module 9574 (GameProfileSkeletonCardRow)
+// Module 9593 (GameProfileSkeletonCardRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

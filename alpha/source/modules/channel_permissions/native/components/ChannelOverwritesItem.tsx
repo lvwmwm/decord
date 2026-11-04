@@ -1,23 +1,23 @@
-// Module ID: 9186
-// Function ID: 9187
+// Module ID: 9203
+// Function ID: 9204
 // Name: ChannelOverwritesItem
-// Dependencies: [19, 17, 1385, 8071, 21, 5141, 6084, 1113, 7609, 5831, 7106, 7218, 7101, 9187, 9159, 5747, 1187, 9188, 9189, 5209, 7115, 2]
+// Dependencies: [19, 17, 1385, 8087, 21, 5141, 6099, 1113, 7625, 5845, 7121, 7233, 7116, 9204, 9176, 5761, 1187, 9205, 9206, 5208, 7130, 2]
 // Exports: ChannelOverwritesCheckboxItem
 
-// Module 9186 (ChannelOverwritesItem)
+// Module 9203 (ChannelOverwritesItem)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import react_native2 from "react-native" /* 5209 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AlertModal from "AlertModal" /* 6084 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import FormCheckbox from "FormCheckbox" /* 7115 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8071 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9159 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9188 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9189 */;
+import react_native2 from "react-native" /* 5208 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AlertModal from "AlertModal" /* 6099 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import FormCheckbox from "FormCheckbox" /* 7130 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8087 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9176 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9204 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9205 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9206 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -77,10 +77,10 @@ function RemoveIcon(item) {
         },
       children: tmp3(CircleXIcon, obj2)
     };
-    const PressableOpacity = item(7106).PressableOpacity;
+    const PressableOpacity = item(7121).PressableOpacity;
     intl = item(1113).intl;
     let prop;
-    CircleXIcon = item(7218).CircleXIcon;
+    CircleXIcon = item(7233).CircleXIcon;
     if (item.disabled) {
       prop = tmp.rowRemoveIconDisabled;
     }
@@ -139,7 +139,7 @@ function MemberItem(arg0) {
   ({ item, trailing } = arg0);
   ({ channelId, showRemove, onRemove, guildId, start, end, onPress, disabled, accessibilityRole, accessibilityState, accessible } = arg0);
   const tmp = closure_9();
-  const obj2 = { style: items, lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: item.name };
+  const obj2 = { style: items, lineClamp: 1, variant: "body-md/semibold", color: "interactive-text-active", children: item.name };
   items = [, ];
   const obj = { style: tmp.nameWrapper, children: items1 };
   ({ name: arr[0], memberName: arr[1] } = tmp);
@@ -154,7 +154,7 @@ function MemberItem(arg0) {
   }
   items1[1] = tmp4Result;
   const tmp2Result = tmp2(tmp3, obj);
-  const TableRow = tmp5(7101).TableRow;
+  const TableRow = tmp5(7116).TableRow;
   const Avatar = tmp5(1187).Avatar;
   const user = UserStore.getUser(item.id);
   let avatarSource;

@@ -1,13 +1,13 @@
-// Module ID: 12780
-// Function ID: 12781
+// Module ID: 12861
+// Function ID: 12862
 // Name: ConjureSelectedMention
-// Dependencies: [19, 21, 5141, 575, 5747, 2]
+// Dependencies: [19, 21, 5141, 575, 5761, 2]
 // Exports: default
 
-// Module 12780 (ConjureSelectedMention)
+// Module 12861 (ConjureSelectedMention)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

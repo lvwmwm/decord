@@ -1,24 +1,28 @@
-// Module ID: 11694
-// Function ID: 11695
+// Module ID: 11745
+// Function ID: 11746
 // Name: useDrawerWidth
-// Dependencies: [1072, 5326, 5324, 11695, 2]
+// Dependencies: [5172, 1072, 5327, 5325, 11746, 504, 2]
 // Exports: useDrawerWidth
 
-// Module 11694 (useDrawerWidth)
+// Module 11745 (useDrawerWidth)
+import get_initialized from "get initialized" /* 504 */;
+import useChatLayoutDefault from "useChatLayout" /* 5325 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5327 */;
+import useFoldSeamDefault from "useFoldSeam" /* 11746 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import Constants from "Constants" /* 1072 */;
-import useChatLayoutDefault from "useChatLayout" /* 5324 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5326 */;
-import useFoldSeamDefault from "useFoldSeam" /* 11695 */;
 import size from "module_2" /* 2 */;
 
 const DM_WIDTH = Constants.DM_WIDTH;
+const MOBILE_GUILD_UPSELL_LIST = Constants.MOBILE_GUILD_UPSELL_LIST;
 const sum = 260 + DM_WIDTH;
-let c3 = sum;
-let closure_4 = 300 + DM_WIDTH;
+const metroRequire = sum;
+let closure_7 = 300 + DM_WIDTH;
 const result = size.fileFinishedImporting("modules/screen/native/drawer/useDrawerWidth.tsx");
 
 export const DRAWER_LEFT_WIDTH_MIN = sum;
 export function useDrawerWidth(arg0) {
+  let guildId;
   let isChatBesideChannelList;
   let isChatLockedOpen;
   let obj = arg0;
@@ -30,55 +34,58 @@ export function useDrawerWidth(arg0) {
   ({ isChatLockedOpen, isChatBesideChannelList } = useChatLayoutDefault());
   useChatLayoutDefault();
   const tmp2 = useFoldSeamDefault();
+  const items = [SelectedGuildStore];
+  const obj2 = get_initialized;
   if (isChatBesideChannelList) {
-    let bound2;
-    let seam;
-    if (tmp2 != null) {
-      seam = tmp2.seam;
-    }
-    if (seam == null) {
-      seam = null;
-    }
-    if (null != seam) {
-      if (null == whileSliding) {
-        return seam;
-      } else {
-        let bound1;
-        let settledSeam;
-        if (tmp2 != null) {
-          settledSeam = tmp2.settledSeam;
-        }
-        if (settledSeam == null) {
-          settledSeam = null;
-        }
-        if (null != settledSeam) {
-          let bound;
-          if ("wider" === whileSliding) {
-            const _Math4 = Math;
-            bound = Math.max(seam, settledSeam);
-          } else {
-            const _Math3 = Math;
-            bound = Math.min(seam, settledSeam);
-          }
-          return bound;
-        }
-        if (isChatLockedOpen) {
-          bound1 = c3;
-        } else {
-          const _Math2 = Math;
-          bound1 = Math.min(closure_4, width - 32);
-        }
-        settledSeam = bound1;
+    if (!obj2.useStateFromStores(items, () => guildId.getGuildId() === MOBILE_GUILD_UPSELL_LIST)) {
+      let bound2;
+      let seam;
+      if (tmp2 != null) {
+        seam = tmp2.seam;
       }
+      if (seam == null) {
+        seam = null;
+      }
+      if (null != seam) {
+        if (null == whileSliding) {
+          return seam;
+        } else {
+          let bound1;
+          let settledSeam;
+          if (tmp2 != null) {
+            settledSeam = tmp2.settledSeam;
+          }
+          if (settledSeam == null) {
+            settledSeam = null;
+          }
+          if (null != settledSeam) {
+            let bound;
+            if ("wider" === whileSliding) {
+              const _Math4 = Math;
+              bound = Math.max(seam, settledSeam);
+            } else {
+              const _Math3 = Math;
+              bound = Math.min(seam, settledSeam);
+            }
+            return bound;
+          }
+          if (isChatLockedOpen) {
+            bound1 = metroRequire;
+          } else {
+            const _Math2 = Math;
+            bound1 = Math.min(closure_7, width - 32);
+          }
+          settledSeam = bound1;
+        }
+      }
+      if (isChatLockedOpen) {
+        bound2 = metroRequire;
+      } else {
+        const _Math = Math;
+        bound2 = Math.min(closure_7, width - 32);
+      }
+      seam = bound2;
     }
-    if (isChatLockedOpen) {
-      bound2 = c3;
-    } else {
-      const _Math = Math;
-      bound2 = Math.min(closure_4, width - 32);
-    }
-    seam = bound2;
-  } else {
-    return width;
   }
+  return width;
 }

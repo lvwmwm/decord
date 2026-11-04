@@ -1,13 +1,13 @@
-// Module ID: 13564
-// Function ID: 13565
+// Module ID: 13648
+// Function ID: 13649
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 5141, 575, 1377, 6177, 5395, 7420, 13565, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1377, 6192, 5396, 7436, 13649, 5761, 1113, 2]
 // Exports: default
 
-// Module 13564 (SoundmojiActionSheet)
+// Module 13648 (SoundmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 6177 */;
+import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 6192 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -72,9 +72,9 @@ export default function SoundmojiActionSheet(guildId) {
     }
     items1 = [tmp4Result, ];
     const obj5 = { style: tmp.textContainer, children: items2 };
-    const obj6 = { variant: "text-sm/semibold", children: memo.name };
+    const obj6 = { variant: "body-sm/semibold", children: memo.name };
     items2 = [closure_5(guildId(messageId[10]).Text, obj6), ];
-    const obj11 = { variant: "text-sm/normal", children: intl.string(guildId(messageId[11]).t.Tj5Nwi) };
+    const obj11 = { variant: "body-sm/normal", children: intl.string(guildId(messageId[11]).t.Tj5Nwi) };
     const Text = tmp5(tmp6[10]).Text;
     intl = tmp5(tmp6[11]).intl;
     items2[1] = closure_5(Text, obj11);

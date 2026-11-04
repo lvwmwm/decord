@@ -1,17 +1,17 @@
-// Module ID: 18496
-// Function ID: 18497
+// Module ID: 18591
+// Function ID: 18592
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 18497, 7925, 4990, 18406, 13521, 18499, 504, 9279, 14535, 13532, 9275, 9263, 2]
+// Dependencies: [19, 18592, 7941, 4990, 18500, 13605, 18594, 504, 9296, 14615, 13616, 9292, 9280, 2]
 // Exports: default
 
-// Module 18496 (useFavoritesGuildSuggestionCandidates)
-import _mod9263 from "module_9263" /* 9263 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9275 */;
-import ShareConstants from "ShareConstants" /* 13521 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18406 */;
+// Module 18591 (useFavoritesGuildSuggestionCandidates)
+import _mod9280 from "module_9280" /* 9280 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9292 */;
+import ShareConstants from "ShareConstants" /* 13605 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18500 */;
 import react from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18497 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7925 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18592 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7941 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
 
@@ -154,7 +154,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod9263.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod9280.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

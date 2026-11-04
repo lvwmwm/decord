@@ -1,14 +1,14 @@
-// Module ID: 17426
-// Function ID: 17427
+// Module ID: 17517
+// Function ID: 17518
 // Name: SettingsAppearanceChannelRowItem
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1187, 10929, 5747, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1187, 10977, 5761, 2]
 // Exports: default
 
-// Module 17426 (SettingsAppearanceChannelRowItem)
+// Module 17517 (SettingsAppearanceChannelRowItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import GroupDMAvatar from "GroupDMAvatar" /* 10929 */;
+import GroupDMAvatar from "GroupDMAvatar" /* 10977 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -94,15 +94,15 @@ export default function ChannelRowItem(isUnread) {
   const obj7 = { style: tmp2.channelItemTop, children: items3 };
   items3 = [, ];
   const obj6 = { style: tmp2.channelItemContent, children: items4 };
-  const obj8 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/channel-title/semibold", children: title };
-  items3[0] = React3(tmp6(5747).Text, obj8);
-  const obj9 = { animated: true, style: animatedStyles.textMuted, variant: "text-xs/medium", children: timestamp };
-  items3[1] = React3(tmp6(5747).Text, obj9);
+  const obj8 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "heading-sm/semibold", children: title };
+  items3[0] = React3(tmp6(5761).Text, obj8);
+  const obj9 = { animated: true, style: animatedStyles.textMuted, variant: "body-xs/medium", children: timestamp };
+  items3[1] = React3(tmp6(5761).Text, obj9);
   items4 = [hasOwnProperty(View, obj7), ];
   let tmp5Result2 = null;
   if (null != preview) {
-    const obj10 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "redesign/message-preview/medium", lineClamp: 1, children: preview };
-    tmp5Result2 = tmp5(tmp6(5747).Text, obj10);
+    const obj10 = { animated: true, style: flag ? animatedStyles.textNormal : animatedStyles.textMuted, variant: "heading-sm/medium", lineClamp: 1, children: preview };
+    tmp5Result2 = tmp5(tmp6(5761).Text, obj10);
   }
   items4[1] = tmp5Result2;
   items1[2] = hasOwnProperty(View, obj6);

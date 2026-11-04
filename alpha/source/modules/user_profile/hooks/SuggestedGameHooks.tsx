@@ -1,15 +1,15 @@
-// Module ID: 15099
-// Function ID: 15100
+// Module ID: 15176
+// Function ID: 15177
 // Name: SuggestedGameHooks
-// Dependencies: [32, 19, 2143, 15091, 15100, 7604, 504, 15098, 2]
+// Dependencies: [32, 19, 2143, 12564, 15177, 7620, 504, 12566, 2]
 // Exports: useFetchSuggestedGames, useSuggestedGames
 
-// Module 15099 (SuggestedGameHooks)
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 15098 */;
+// Module 15176 (SuggestedGameHooks)
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12566 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2143 */;
-import WidgetStore from "WidgetStore" /* 15091 */;
+import WidgetStore from "WidgetStore" /* 12564 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,20 +1,20 @@
-// Module ID: 18430
-// Function ID: 18431
+// Module ID: 18524
+// Function ID: 18525
 // Name: preloadChannelAppFrame
-// Dependencies: [4990, 5073, 6966, 6967, 1072, 6854, 6873, 5792, 11015, 6969, 11016, 7001, 2]
+// Dependencies: [4990, 5073, 6981, 6982, 1072, 6869, 6888, 5806, 11064, 6984, 11065, 7016, 2]
 // Exports: preloadChannelAppFrame
 
-// Module 18430 (preloadChannelAppFrame)
-import getURLForApplicationDefault from "getURLForApplication" /* 5792 */;
-import AgeGateUtils from "AgeGateUtils" /* 6854 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6873 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6969 */;
-import createProxyTicket from "createProxyTicket" /* 11015 */;
-import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 11016 */;
+// Module 18524 (preloadChannelAppFrame)
+import getURLForApplicationDefault from "getURLForApplication" /* 5806 */;
+import AgeGateUtils from "AgeGateUtils" /* 6869 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6888 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6984 */;
+import createProxyTicket from "createProxyTicket" /* 11064 */;
+import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 11065 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import FramesStore from "FramesStore" /* 6966 */;
-import FramesConstants from "FramesConstants" /* 6967 */;
+import FramesStore from "FramesStore" /* 6981 */;
+import FramesConstants from "FramesConstants" /* 6982 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ export function preloadChannelAppFrame(id) {
         tmp11Result2.prefetchProxyTicket(application_id, getChannelIdForEmbeddedSurfaceDefault(tmp4), tmp4.type);
         const promise = loadEmbeddedAppCSPForLaunchDefault(application_id);
         promise.catch(React4);
-        const useApplication = tmp11(7001).useApplication;
+        const useApplication = tmp11(7016).useApplication;
         const items = [application_id];
         const many = useApplication.fetchMany(items);
         many.catch(React4);

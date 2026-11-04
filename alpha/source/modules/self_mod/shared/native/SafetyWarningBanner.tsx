@@ -1,11 +1,11 @@
-// Module ID: 11408
-// Function ID: 11409
+// Module ID: 11458
+// Function ID: 11459
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 5141, 575, 6660, 6665, 11406, 1113, 1187, 11409, 5837, 11410, 5747, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6675, 6680, 11456, 1113, 1187, 11459, 5851, 11460, 5761, 5768, 2]
 
-// Module 11408 (SafetyWarningBanner)
+// Module 11458 (SafetyWarningBanner)
 import nativeDefault from "native" /* 575 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11406 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11456 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -73,9 +73,9 @@ class SafetyWarningBanner {
     items2 = [closure_6(closure_5, obj5), ];
     const obj7 = { style: tmp.textContainer, children: items3 };
     items3 = [, ];
-    const obj8 = { style: tmp.text, variant: "heading-md/semibold", children: header };
+    const obj8 = { style: tmp.text, variant: "heading-sm/semibold", children: header };
     items3[0] = closure_6(channelId(senderId[13]).Text, obj8);
-    const obj9 = { style: tmp.text, variant: "heading-sm/medium", children: description };
+    const obj9 = { style: tmp.text, variant: "heading-xs/medium", children: description };
     items3[1] = closure_6(channelId(senderId[13]).Text, obj9);
     items2[1] = closure_7(closure_5, obj7);
     items1[1] = closure_7(closure_5, obj4);

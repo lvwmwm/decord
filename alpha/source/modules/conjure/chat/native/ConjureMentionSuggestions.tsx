@@ -1,14 +1,14 @@
-// Module ID: 12953
-// Function ID: 12954
+// Module ID: 13035
+// Function ID: 13036
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 5141, 575, 7186, 1113, 3995, 7101, 1187, 5195, 12284, 2]
+// Dependencies: [19, 21, 5141, 575, 7201, 1113, 3995, 7116, 1187, 5195, 12345, 2]
 // Exports: default
 
-// Module 12953 (ConjureMentionSuggestions)
+// Module 13035 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import TableRowGroup3 from "TableRowGroup" /* 7186 */;
+import TableRowGroup3 from "TableRowGroup" /* 7201 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

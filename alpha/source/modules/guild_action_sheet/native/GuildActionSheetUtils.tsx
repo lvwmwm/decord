@@ -1,10 +1,10 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 16020
+// Function ID: 16021
 // Name: GuildActionSheetUtils
 // Dependencies: [5073, 1072, 504, 2]
 // Exports: useGuildActionSheetPermissions
 
-// Module 15932 (GuildActionSheetUtils)
+// Module 16020 (GuildActionSheetUtils)
 import Constants from "Constants" /* 1072 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import size from "module_2" /* 2 */;

@@ -13,10 +13,10 @@ import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const f87303 = (isLauncher) => true !== isLauncher.isLauncher;
+const f87638 = (isLauncher) => true !== isLauncher.isLauncher;
 function syncRunningGame() {
   const visibleRunningGames = RunningGameStore.getVisibleRunningGames();
-  const someResult = visibleRunningGames.some(f87303);
+  const someResult = visibleRunningGames.some(f87638);
   let flag = someResult !== c6;
   if (flag) {
     c6 = someResult;
@@ -66,7 +66,7 @@ class GameModeStore extends DeviceSettingsStore {
     const items1 = [ApexExperimentStore];
     this.syncWith(items1, syncExperimentAssignment);
     const visibleRunningGames = RunningGameStore.getVisibleRunningGames();
-    const someResult = visibleRunningGames.some(f87303);
+    const someResult = visibleRunningGames.some(f87638);
     let flag = someResult !== c6;
     if (flag) {
       c6 = someResult;

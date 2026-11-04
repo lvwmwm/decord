@@ -1,9 +1,9 @@
-// Module ID: 18809
-// Function ID: 18810
+// Module ID: 18910
+// Function ID: 18911
 // Name: MemberSafetyPageTypes
 // Dependencies: [5175, 2]
 
-// Module 18809 (MemberSafetyPageTypes)
+// Module 18910 (MemberSafetyPageTypes)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
 import size from "module_2" /* 2 */;
 

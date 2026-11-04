@@ -1,19 +1,19 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15799
+// Function ID: 15800
 // Name: settings/NotifSettingsUtils
-// Dependencies: [15712, 1233, 15713, 504, 2]
+// Dependencies: [15800, 1233, 15801, 504, 2]
 // Exports: b64ToDeclarativeSettingsProto, useNotifSettingRadioValue, useNotifSettingToggleValue, useNotifSettingValue
 
-// Module 15711 (settings/NotifSettingsUtils)
+// Module 15799 (settings/NotifSettingsUtils)
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
-import notification_settings from "notification_settings" /* 15713 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15712 */;
+import notification_settings from "notification_settings" /* 15801 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15800 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f108584 = () => NotifSettingsProtoStore.getSetting(closure_0);
+const f109301 = () => NotifSettingsProtoStore.getSetting(closure_0);
 const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsUtils.tsx");
 
 export function b64ToDeclarativeSettingsProto(declarative_settings_proto) {
@@ -26,14 +26,14 @@ export function useNotifSettingValue(arg0) {
   const items = [NotifSettingsProtoStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f108584, items1);
+  return obj.useStateFromStores(items, f109301, items1);
 }
 export function useNotifSettingToggleValue(CALLS) {
   _require = CALLS;
   const items = [NotifSettingsProtoStore];
   const items1 = [CALLS];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f108584, items1);
+  const stateFromStores = obj.useStateFromStores(items, f109301, items1);
   let flag;
   if (stateFromStores != null) {
     flag = stateFromStores.toggle;
@@ -49,7 +49,7 @@ export function useNotifSettingRadioValue(arg0) {
   const items = [NotifSettingsProtoStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f108584, items1);
+  const stateFromStores = obj.useStateFromStores(items, f109301, items1);
   let num;
   if (stateFromStores != null) {
     num = stateFromStores.radio;

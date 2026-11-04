@@ -1,19 +1,19 @@
-// Module ID: 17305
-// Function ID: 17306
+// Module ID: 17397
+// Function ID: 17398
 // Name: QuestDockEnrolledHeader
-// Dependencies: [32, 19, 17, 17215, 21, 575, 5141, 17243, 9813, 14827, 6904, 11182, 17253, 5747, 2]
+// Dependencies: [32, 19, 17, 17307, 21, 575, 5141, 17335, 9831, 14907, 6919, 11232, 17345, 5761, 2]
 
-// Module 17305 (QuestDockEnrolledHeader)
+// Module 17397 (QuestDockEnrolledHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import QuestTypes from "QuestTypes" /* 6904 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9813 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
-import QuestCopyHooks from "QuestCopyHooks" /* 14827 */;
-import QuestDockConstants from "QuestDockConstants" /* 17215 */;
-import QuestDockCreativeContext from "QuestDockCreativeContext" /* 17243 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 17253 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import QuestTypes from "QuestTypes" /* 6919 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9831 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
+import QuestCopyHooks from "QuestCopyHooks" /* 14907 */;
+import QuestDockConstants from "QuestDockConstants" /* 17307 */;
+import QuestDockCreativeContext from "QuestDockCreativeContext" /* 17335 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 17345 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,8 +26,8 @@ const View = react_native.View;
 const QUEST_DOCK_COLLAPSED_HEIGHT = QuestDockConstants.QUEST_DOCK_COLLAPSED_HEIGHT;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const PX_8 = nativeDefault.space.PX_8;
-let c7 = "heading-md/semibold";
-let c8 = "text-sm/medium";
+let c7 = "heading-sm/semibold";
+let c8 = "body-sm/medium";
 let closure_9 = QUEST_DOCK_COLLAPSED_HEIGHT - 2 * PX_8;
 let obj = { wrapper: { alignItems: "center", display: "flex", flexDirection: "row", flexGrow: 1, flexShrink: 1, gap: 8, justifyContent: "center", padding: PX_8 }, progressIndicatorWrapper: { flexGrow: 0, flexShrink: 0 }, copy: { flexGrow: 1, flexShrink: 1, minWidth: 0 } };
 let closure_10 = createStyles.createStyles(obj);

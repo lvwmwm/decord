@@ -1,18 +1,18 @@
-// Module ID: 9625
-// Function ID: 9626
+// Module ID: 9644
+// Function ID: 9645
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 5142, 2122, 21, 5141, 1493, 9626, 9627, 9628, 9630, 504, 1092, 9631, 9629, 5837, 8923, 2]
+// Dependencies: [32, 19, 17, 5142, 2122, 21, 5141, 1493, 9645, 9646, 9647, 9649, 504, 1092, 9650, 9648, 5851, 8940, 2]
 // Exports: default, usePreloadProfileEffect
 
-// Module 9625 (ProfileEffect)
+// Module 9644 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8923 */;
-import utils from "utils" /* 9626 */;
-import profile_effects_constants from "profile_effects/constants" /* 9627 */;
-import ProfileEffectUtils from "ProfileEffectUtils" /* 9628 */;
-import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9631 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8940 */;
+import utils from "utils" /* 9645 */;
+import profile_effects_constants from "profile_effects/constants" /* 9646 */;
+import ProfileEffectUtils from "ProfileEffectUtils" /* 9647 */;
+import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 9650 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -78,7 +78,7 @@ function StaticEffect(useThumbnail) {
     const obj2 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback };
   } else {
     obj3 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback, children: null };
-    tmp4(5837);
+    tmp4(5851);
     if (useThumbnail) {
       reducedMotionSrc = thumbnailUrlOverride;
     }

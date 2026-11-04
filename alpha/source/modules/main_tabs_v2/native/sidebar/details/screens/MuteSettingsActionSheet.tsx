@@ -1,15 +1,15 @@
-// Module ID: 11207
-// Function ID: 11208
+// Module ID: 11257
+// Function ID: 11258
 // Name: MuteSettingsActionSheet
-// Dependencies: [19, 4990, 5012, 5083, 1385, 1072, 21, 5747, 1113, 11208, 5381, 7186, 7101, 1187, 11210, 5772, 11211, 7486, 7441, 2]
+// Dependencies: [19, 4990, 5012, 5083, 1385, 1072, 21, 5761, 1113, 11258, 5382, 7201, 7116, 1187, 11260, 5786, 11261, 7502, 7457, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 11207 (MuteSettingsActionSheet)
+// Module 11257 (MuteSettingsActionSheet)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 11208 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 11258 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore_mod from "GuildStore" /* 5012 */;
@@ -141,28 +141,28 @@ export function MuteSettingsHint(guildMessageNotifications) {
   let tmp4Result;
   guildMessageNotifications = guildMessageNotifications.guildMessageNotifications;
   if (guildMessageNotifications.isMuted) {
-    const obj2 = { variant: "text-sm/medium", color: "text-default", children: intl5.string(intl6.t.t0mEt2) };
+    const obj2 = { variant: "body-sm/medium", color: "text-default", children: intl5.string(intl6.t.t0mEt2) };
     const Text4 = Text_Text.Text;
     intl5 = intl6.intl;
     tmp4Result = React4(Text4, obj2);
   } else if (tmp) {
-    const obj3 = { variant: "text-sm/medium", color: "text-default", children: intl4.format(intl6.t.O34r15, obj4) };
+    const obj3 = { variant: "body-sm/medium", color: "text-default", children: intl4.format(intl6.t.O34r15, obj4) };
     const Text3 = Text_Text.Text;
     intl4 = intl6.intl;
     obj4 = {
       mutedHook(children, arg1) {
-          const obj = { variant: "text-sm/medium", color: "text-feedback-critical", children };
+          const obj = { variant: "body-sm/medium", color: "text-feedback-critical", children };
           return closure_1_9(Text_Text.Text, obj, arg1);
         }
     };
     tmp4Result = React4(Text3, obj3);
   } else if (guildMessageNotifications === UserNotificationSettings.NO_MESSAGES) {
-    const obj5 = { variant: "text-sm/medium", color: "text-default", children: intl3.format(intl6.t.nRwUIL, obj6) };
+    const obj5 = { variant: "body-sm/medium", color: "text-default", children: intl3.format(intl6.t.nRwUIL, obj6) };
     const Text2 = Text_Text.Text;
     intl3 = intl6.intl;
     obj6 = {
       notificationHook(children, arg1) {
-          const obj = { variant: "text-sm/medium", color: "text-feedback-warning", children };
+          const obj = { variant: "body-sm/medium", color: "text-feedback-warning", children };
           return closure_1_9(Text_Text.Text, obj, arg1);
         }
     };
@@ -178,7 +178,7 @@ export function MuteSettingsHint(guildMessageNotifications) {
       const intl = tmp5(1113).intl;
       stringResult = intl.string(tmp5(1113).t.GGAdHV);
     }
-    let obj = { variant: "text-sm/medium", color: "text-default", children: stringResult };
+    let obj = { variant: "body-sm/medium", color: "text-default", children: stringResult };
     tmp4Result = tmp4(Text, obj);
   } else {
     tmp4Result = null;

@@ -9,13 +9,15 @@ import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
-import FavoritesConstants from "FavoritesConstants" /* 5003 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import FavoritesConstants from "FavoritesConstants" /* 5003 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let hasOwnProperty;
-let metroRequire;
+let FAVORITES_PRUNE_SCOPE_AUTO_ADDED;
+let c9;
+let closure_4;
+let metroImportAll;
 function initializeFromUserSettings() {
   let channelType;
   let nickname;
@@ -40,24 +42,24 @@ function initializeFromUserSettings() {
     const keys = Object.keys();
     if (keys !== undefined) {
       while (keys[tmp] !== undefined) {
-        let tmp22 = favoriteChannels[tmp7];
+        let tmp28 = favoriteChannels[tmp7];
         let sum = num4;
-        if (tmp22.type !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
+        if (tmp28.type !== preloaded_user_settings.FavoriteChannelType.CATEGORY) {
           sum = num4 + 1;
         }
-        let obj5 = { id: tmp7, nickname, type: null, channelType: value, order: tmp22.position, parentId };
+        let obj5 = { id: tmp7, nickname, type: null, channelType: value, order: tmp28.position, parentId };
         nickname = null;
-        if ("" !== tmp22.nickname) {
-          nickname = tmp22.nickname;
+        if ("" !== tmp28.nickname) {
+          nickname = tmp28.nickname;
         }
-        ({ type: obj2.type, channelType } = tmp22);
+        ({ type: obj2.type, channelType } = tmp28);
         value = undefined;
         if (channelType != null) {
           value = channelType.value;
         }
         parentId = null;
-        if (tmp22.parentId !== closure_4) {
-          parentId = tmp22.parentId;
+        if (tmp28.parentId !== FAVORITES_UNCATEGORIZED_PARENT_ID) {
+          parentId = tmp28.parentId;
         }
         num5 = num5 + 1;
         obj[tmp7] = obj5;
@@ -83,25 +85,51 @@ function initializeFromUserSettings() {
   if (flag2 == null) {
     flag2 = false;
   }
-  let flag3 = flag !== flag || value2 !== value2 || flag2 !== flag2;
-  if (!flag3) {
-    const obj4 = _mod12;
-    flag3 = !obj4.isEqual(obj, obj);
+  flag3 = undefined;
+  if (favorites != null) {
+    if (favorites.pruneInactiveThreads != null) {
+      flag3 = iter2.value;
+    }
   }
-  if (flag3) {
+  if (flag3 == null) {
     flag3 = true;
   }
-  return flag3;
+  let prop;
+  if (favorites != null) {
+    prop = favorites.pruneInactiveThreadsDays;
+  }
+  if (prop == null) {
+    prop = FAVORITES_PRUNE_WHEN_ARCHIVED;
+  }
+  let prop1;
+  if (favorites != null) {
+    prop1 = favorites.pruneAllFavoritedThreads;
+  }
+  const tmp18 = true === prop1 ? React3 : FAVORITES_PRUNE_SCOPE_AUTO_ADDED;
+  let flag4 = flag !== flag || value2 !== value2 || flag2 !== flag2 || flag3 !== flag3 || FAVORITES_PRUNE_WHEN_ARCHIVED !== prop || FAVORITES_PRUNE_SCOPE_AUTO_ADDED !== tmp18;
+  if (!flag4) {
+    const obj4 = _mod12;
+    flag4 = !obj4.isEqual(obj, obj);
+  }
+  if (flag4) {
+    FAVORITES_PRUNE_WHEN_ARCHIVED = prop;
+    FAVORITES_PRUNE_SCOPE_AUTO_ADDED = tmp18;
+    flag4 = true;
+  }
+  return flag4;
 }
 const createChannelRecord = ChannelRecord.createChannelRecord;
-let closure_4 = FavoritesConstants.FAVORITES_UNCATEGORIZED_PARENT_ID;
-({ ChannelTypes: hasOwnProperty, FAVORITES: metroRequire } = Constants);
+({ FAVORITES_PRUNE_SCOPE_ALL: closure_4, FAVORITES_PRUNE_SCOPE_AUTO_ADDED } = FavoritesConstants);
+let FAVORITES_PRUNE_WHEN_ARCHIVED = FavoritesConstants.FAVORITES_PRUNE_WHEN_ARCHIVED;
+const FAVORITES_UNCATEGORIZED_PARENT_ID = FavoritesConstants.FAVORITES_UNCATEGORIZED_PARENT_ID;
+({ ChannelTypes: metroImportAll, FAVORITES: c9 } = Constants);
 let obj = {};
 const num2 = 0;
 const num = 0;
 let flag = false;
 let value2 = false;
 let flag2 = false;
+let flag3 = true;
 const Store = get_initializedDefault.Store;
 class FavoriteStore extends Store {
   initialize() {
@@ -136,7 +164,7 @@ class FavoriteStore extends Store {
     if (categoryId in obj) {
       tmp = null;
       if (obj[categoryId].type === preloaded_user_settings.FavoriteChannelType.CATEGORY) {
-        obj = { id: null, name: nickname, type: hasOwnProperty.GUILD_CATEGORY, position: obj[categoryId].order, guild_id: metroRequire };
+        obj = { id: null, name: nickname, type: metroImportAll.GUILD_CATEGORY, position: obj[categoryId].order, guild_id };
         ({ id: obj.id, nickname } = obj[categoryId]);
         const tmp7 = createChannelRecord;
         if (nickname == null) {
@@ -182,6 +210,24 @@ Object.defineProperty(prototype, "favoriteGuildEnabled", {
 Object.defineProperty(prototype, "autoAddJoinedThreads", {
   get: function autoAddJoinedThreads() {
     return flag2 && value2;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "pruneInactiveThreads", {
+  get: function pruneInactiveThreads() {
+    return flag3 && value2;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "pruneInactiveThreadsDays", {
+  get: function pruneInactiveThreadsDays() {
+    return FAVORITES_PRUNE_WHEN_ARCHIVED;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "pruneInactiveThreadsScope", {
+  get: function pruneInactiveThreadsScope() {
+    return FAVORITES_PRUNE_SCOPE_AUTO_ADDED;
   },
   set: undefined
 });

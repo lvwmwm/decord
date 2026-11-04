@@ -1,19 +1,19 @@
-// Module ID: 13531
-// Function ID: 13532
+// Module ID: 13615
+// Function ID: 13616
 // Name: SearchableDestinationList
-// Dependencies: [32, 19, 17, 1072, 10857, 21, 5141, 575, 13532, 7328, 13520, 9263, 7927, 1380, 7338, 11182, 12547, 10863, 13539, 1113, 10866, 7339, 2]
+// Dependencies: [32, 19, 17, 1072, 10905, 21, 5141, 575, 13616, 7344, 13604, 9280, 7943, 1380, 7354, 11232, 12628, 10911, 13623, 1113, 10914, 7355, 2]
 // Exports: default
 
-// Module 13531 (SearchableDestinationList)
+// Module 13615 (SearchableDestinationList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7328 */;
-import UserSearchUtils from "UserSearchUtils" /* 7927 */;
-import _mod9263 from "module_9263" /* 9263 */;
-import UserRowConstants from "UserRowConstants" /* 10857 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 12547 */;
-import formatResults from "formatResults" /* 13520 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7344 */;
+import UserSearchUtils from "UserSearchUtils" /* 7943 */;
+import _mod9280 from "module_9280" /* 9280 */;
+import UserRowConstants from "UserRowConstants" /* 10905 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 12628 */;
+import formatResults from "formatResults" /* 13604 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -246,7 +246,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     let type;
     ({ type, record } = results[arg1]);
     const arr = results;
-    if (type !== _mod9263.AutocompleterResultTypes.HEADER) {
+    if (type !== _mod9280.AutocompleterResultTypes.HEADER) {
       const destinationKey = formatResults.destinationKey;
       formatResults;
       const tmp2Result4 = formatResults;
@@ -289,20 +289,20 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         const obj2 = { onLongPress: NOOP };
       }
       const merged = Object.assign(tmp17);
-      if (_mod9263.AutocompleterResultTypes.USER === type) {
+      if (_mod9280.AutocompleterResultTypes.USER === type) {
         const element = { type: "user", props: obj3 };
         obj3 = { user: record, type: tmp2Result5.getRelationshipType(record.id), onPress: callback3 };
         const merged1 = Object.assign(obj);
         tmp2Result5 = UserSearchUtils;
         return element;
-      } else if (_mod9263.AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (_mod9280.AutocompleterResultTypes.GROUP_DM === type) {
         const element1 = { type: "gdm", props: obj4 };
         obj4 = { channel: record, onPress: callback4 };
         const merged2 = Object.assign(obj);
         return element1;
       } else {
-        if (_mod9263.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (_mod9263.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+        if (_mod9280.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (_mod9280.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
             const tmp2Result6 = GlobalUtils;
             return tmp2Result6.assertNever(type);
           }
@@ -318,14 +318,14 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
   const tmp27 = getRowIsUnavailable(onSelectedDestinationChange[14])();
   closure_22 = tmp27;
   let obj4 = disabledDestinations(onSelectedDestinationChange[15]);
-  scaledTextLineHeight = obj4.useScaledTextLineHeight("text-xs/medium");
+  scaledTextLineHeight = obj4.useScaledTextLineHeight("body-xs/medium");
   const items9 = [results, getRowIsUnavailable, tmp27, scaledTextLineHeight];
   const callback6 = obj.useCallback((arg0, arg1) => {
     let record;
     let type;
     ({ type, record } = results[arg1]);
     let tmp2;
-    if (type !== _mod9263.AutocompleterResultTypes.HEADER) {
+    if (type !== _mod9280.AutocompleterResultTypes.HEADER) {
       let lineClamp;
       if (getRowIsUnavailable != null) {
         const tmp5 = getRowIsUnavailable(record);

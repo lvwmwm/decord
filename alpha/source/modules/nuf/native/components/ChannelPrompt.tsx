@@ -1,13 +1,13 @@
-// Module ID: 14490
-// Function ID: 14491
+// Module ID: 14570
+// Function ID: 14571
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 5071, 5012, 21, 5141, 5709, 504, 1499, 7124, 1113, 7609, 6566, 7412, 7083, 1411, 5747, 7207, 5754, 7233, 2]
+// Dependencies: [5, 32, 19, 17, 5071, 5012, 21, 5141, 5722, 504, 1499, 7139, 1113, 7625, 6581, 7428, 7098, 1411, 5761, 7222, 5768, 7253, 2]
 // Exports: default
 
-// Module 14490 (ChannelPrompt)
+// Module 14570 (ChannelPrompt)
 import intl5 from "intl" /* 1113 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -200,13 +200,13 @@ export default function ChannelPrompt(guildId) {
       guildIconURL = tmp18Result.getGuildIconURL(obj7);
     }
     items3 = [tmp15(tmp19, obj6), , , , , , ];
-    const obj9 = { style: tmp.guildName, lineClamp: 1, variant: "text-sm/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
+    const obj9 = { style: tmp.guildName, lineClamp: 1, variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: stateFromStores.name };
     items3[1] = closure_10(guildId(tmp3[18]).Text, obj9);
     const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(guildId(tmp3[12]).t["8VRa7d"]) };
     const Text = tmp2(tmp3[18]).Text;
     intl = tmp2(tmp3[12]).intl;
     items3[2] = closure_10(Text, obj10);
-    const obj11 = { style: tmp.subTitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(guildId(tmp3[12]).t["+855Pm"]) };
+    const obj11 = { style: tmp.subTitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(guildId(tmp3[12]).t["+855Pm"]) };
     const Text2 = tmp2(tmp3[18]).Text;
     intl2 = tmp2(tmp3[12]).intl;
     items3[3] = closure_10(Text2, obj11);

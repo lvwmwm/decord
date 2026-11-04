@@ -1,13 +1,13 @@
-// Module ID: 12670
-// Function ID: 12671
+// Module ID: 12751
+// Function ID: 12752
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1623, 1072, 8527, 12671, 7567, 9089, 10660, 2121, 2]
+// Dependencies: [19, 1623, 1072, 8544, 12752, 7583, 9106, 10708, 2121, 2]
 // Exports: default
 
-// Module 12670 (useMediaKeyboardConfig)
+// Module 12751 (useMediaKeyboardConfig)
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
 import Server from "Server" /* 2121 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 12671 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 12752 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -30,12 +30,12 @@ export default function useMediaKeyboardConfig(arg0) {
   MediaKeyboardTarget = undefined;
   let mediaKeyboardDraftType;
   const tmp = context.target === MediaKeyboardTarget.COMMAND;
-  let obj = context(8527);
+  let obj = context(8544);
   const tmp4 = obj.useCanPostPollsInChannel(channel) && !tmp;
   importDefault = tmp4;
   const tmp5 = useUploadDisabledDefault(channel);
   dependencyMap = tmp5;
-  const tmp2Result = context(7567);
+  const tmp2Result = context(7583);
   let canStartThread = tmp2Result.useCanStartThread(channel);
   if (canStartThread) {
     const GUILD_THREADS_ONLY = mediaKeyboardDraftType.GUILD_THREADS_ONLY;
@@ -47,10 +47,10 @@ export default function useMediaKeyboardConfig(arg0) {
   if (canStartThread) {
     canStartThread = !tmp;
   }
-  const tmp2Result3 = context(9089);
+  const tmp2Result3 = context(9106);
   const tmp8 = tmp2Result3.useIsAppLauncherEnabled(channel.id) && !tmp;
   MediaKeyboardTarget = tmp8;
-  const tmp2Result4 = context(10660);
+  const tmp2Result4 = context(10708);
   mediaKeyboardDraftType = tmp2Result4.getMediaKeyboardDraftType(context.target);
   let items = [context, tmp4, tmp5, mediaKeyboardDraftType, canStartThread, tmp8];
   return canStartThread.useMemo(function() {

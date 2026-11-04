@@ -1,10 +1,10 @@
-// Module ID: 14592
-// Function ID: 14593
+// Module ID: 14672
+// Function ID: 14673
 // Name: PremiumGiftCustomization
-// Dependencies: [32, 19, 17, 1387, 21, 5141, 575, 1499, 10692, 14593, 1113, 10826, 14594, 5747, 10853, 10855, 14595, 2]
+// Dependencies: [32, 19, 17, 1387, 21, 5141, 575, 1499, 10740, 14673, 1113, 10874, 14674, 5761, 10901, 10903, 14675, 2]
 // Exports: default
 
-// Module 14592 (PremiumGiftCustomization)
+// Module 14672 (PremiumGiftCustomization)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -100,7 +100,7 @@ export default function PremiumGiftCustomization() {
   const tmp17 = closure_6;
   if (tmp14Result) {
     const obj7 = { children: items3 };
-    const obj8 = { style: tmp4.senderHeaderTitle, variant: "text-md/semibold", children: intl3.string(navigation(ref[10]).t.NlkxGS) };
+    const obj8 = { style: tmp4.senderHeaderTitle, variant: "body-md/semibold", children: intl3.string(navigation(ref[10]).t.NlkxGS) };
     const Text = tmp(tmp2[13]).Text;
     intl3 = tmp(tmp2[10]).intl;
     items3 = [closure_8(Text, obj8), , ];

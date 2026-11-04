@@ -1,10 +1,10 @@
-// Module ID: 14071
-// Function ID: 14072
+// Module ID: 14157
+// Function ID: 14158
 // Name: DoubleTapToReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5142, 6916, 1072, 1388, 21, 5141, 1377, 575, 1652, 5377, 5716, 504, 5757, 4966, 5087, 8550, 1411, 7420, 1252, 7471, 10082, 1705, 5381, 7486, 5747, 1113, 13970, 14072, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 5142, 6931, 1072, 1388, 21, 5141, 1377, 575, 1652, 5378, 5729, 504, 5771, 4966, 5087, 8567, 1411, 7436, 1252, 7487, 10130, 1705, 5382, 7502, 5761, 1113, 14056, 14158, 5768, 2]
 // Exports: default
 
-// Module 14071 (DoubleTapToReactActionSheet)
+// Module 14157 (DoubleTapToReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,12 +14,12 @@ import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import UserSettings from "UserSettings" /* 4966 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5087 */;
-import timing_timing from "timing/timing" /* 5377 */;
+import timing_timing from "timing/timing" /* 5378 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
@@ -40,7 +40,7 @@ let obj7;
 let obj8;
 let tmp;
 let unpackModuleId;
-const DoubleTapToReactUtils = tmp(8550);
+const DoubleTapToReactUtils = tmp(8567);
 function EmojiConfetti(arg0) {
   let bottom;
   let emojiComponent;
@@ -483,7 +483,7 @@ export default function DoubleTapToReactActionSheet(emoji) {
       DoubleTapToReactActionSheetTsx4.__workletHash = 601184467601;
       DoubleTapToReactActionSheetTsx4.__initData = tmp14;
       const withTiming2Result = withTiming2(1, { duration: 100 }, undefined, DoubleTapToReactActionSheetTsx4);
-      const tmp4Result = tmp4(5757);
+      const tmp4Result = tmp4(5771);
       const result1 = set(withSequence(withTimingResult, withTimingResult1, withTiming2Result, tmp4Result.withSpring(0, { stiffness: 2000, damping: 70, mass: 3 })));
     }
     if (null != ref.current) {
@@ -528,19 +528,19 @@ export default function DoubleTapToReactActionSheet(emoji) {
   }
   items12[1] = tmp26Result2;
   items13 = [callback1(View, obj8), ];
-  const obj10 = { variant: "text-lg/semibold", style: tmp.selectedEmojiText, color: "interactive-text-default", children: "1" };
+  const obj10 = { variant: "body-lg/semibold", style: tmp.selectedEmojiText, color: "interactive-text-default", children: "1" };
   items13[1] = memo(tmp4(first1[28]).Text, obj10);
   items14 = [callback1(closure_6, obj7), , , , , ];
-  const obj11 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.emojiName, children: ":" + first1.name + ":" };
+  const obj11 = { variant: "body-sm/normal", color: "text-subtle", style: tmp.emojiName, children: ":" + first1.name + ":" };
   const Text = tmp4(tmp5[28]).Text;
   items14[1] = memo(Text, obj11);
   const obj12 = { style: tmp.header, children: items15 };
-  const obj13 = { style: tmp.alignCenter, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp4(first1[29]).t.F6lRAI) };
+  const obj13 = { style: tmp.alignCenter, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp4(first1[29]).t.F6lRAI) };
   const Text2 = tmp4(tmp5[28]).Text;
   intl = tmp4(tmp5[29]).intl;
   items15 = [tmp26(Text2, obj13), tmp26(tmp4(tmp5[30]).NewBadge, {})];
   items14[2] = callback1(closure_6, obj12);
-  const obj14 = { style: tmp.alignCenter, variant: "text-md/medium", color: "text-default", children: intl2.string(tmp4(first1[29]).t.yIax8g) };
+  const obj14 = { style: tmp.alignCenter, variant: "body-md/medium", color: "text-default", children: intl2.string(tmp4(first1[29]).t.yIax8g) };
   const Text3 = tmp4(tmp5[28]).Text;
   intl2 = tmp4(tmp5[29]).intl;
   items14[3] = memo(Text3, obj14);

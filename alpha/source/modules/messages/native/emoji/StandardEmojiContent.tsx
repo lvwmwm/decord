@@ -1,16 +1,16 @@
-// Module ID: 10182
-// Function ID: 10183
+// Module ID: 10230
+// Function ID: 10231
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 5172, 21, 5141, 575, 10183, 5091, 5837, 5747, 10184, 5087, 10074, 10185, 1113, 8301, 5754, 10187, 2]
+// Dependencies: [19, 17, 5172, 21, 5141, 575, 10231, 5091, 5851, 5761, 10232, 5087, 10122, 10233, 1113, 8317, 5768, 10235, 2]
 // Exports: default
 
-// Module 10182 (StandardEmojiContent)
+// Module 10230 (StandardEmojiContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5087 */;
 import EmojiUtilsDefault from "EmojiUtils" /* 5091 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10183 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10187 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10231 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10235 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,8 +23,8 @@ let metroRequire;
 let obj2;
 let tmp2;
 let tmp5;
-const Text_Text = tmp2(5747);
-const FastImageDefault = tmp5(5837);
+const Text_Text = tmp2(5761);
+const FastImageDefault = tmp5(5851);
 function Emoji(surrogate) {
   let obj5;
   let obj7;
@@ -42,7 +42,7 @@ function Emoji(surrogate) {
     tmp9 = metroRequire(FastImageDefault, obj4);
   } else {
     const obj6 = { style: obj.emojiWrapper, children: metroRequire(Text_Text.Text, obj7) };
-    obj7 = { style: obj.emojiSurrogate, variant: "text-md/medium", children: surrogate };
+    obj7 = { style: obj.emojiSurrogate, variant: "body-md/medium", children: surrogate };
     tmp9 = metroRequire(View, obj6);
   }
   return tmp9;
@@ -85,8 +85,8 @@ export default function StandardEmojiContent(emojiNode) {
   const tmp7 = memo(isFavoriteEmoji[13])(emojiNode.content);
   items1[0] = closure_6(Emoji, obj6);
   const obj7 = { style: obj.emojiDescriptionWrapper, children: items2 };
-  items2 = [closure_6(emojiNode(isFavoriteEmoji[9]).Text, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp7 }), ];
-  const obj8 = { variant: "text-sm/medium", children: intl.string(emojiNode(isFavoriteEmoji[14]).t.sXdH8c) };
+  items2 = [closure_6(emojiNode(isFavoriteEmoji[9]).Text, { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: tmp7 }), ];
+  const obj8 = { variant: "body-sm/medium", children: intl.string(emojiNode(isFavoriteEmoji[14]).t.sXdH8c) };
   const Text = emojiNode(isFavoriteEmoji[9]).Text;
   intl = emojiNode(isFavoriteEmoji[14]).intl;
   items2[1] = closure_6(Text, obj8);

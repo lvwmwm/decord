@@ -1,17 +1,17 @@
-// Module ID: 10854
-// Function ID: 10855
+// Module ID: 10902
+// Function ID: 10903
 // Name: SelectedUserField
-// Dependencies: [19, 17, 21, 5141, 575, 7223, 1113, 5195, 7340, 1187, 5747, 7218, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7243, 1113, 5195, 7356, 1187, 5761, 7233, 2]
 // Exports: default
 
-// Module 10854 (SelectedUserField)
+// Module 10902 (SelectedUserField)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import CircleXIcon from "CircleXIcon" /* 7218 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7223 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7340 */;
+import CircleXIcon from "CircleXIcon" /* 7233 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7243 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7356 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,14 +90,14 @@ export default function SelectedUserField(onPress) {
     const obj7 = { user: selectedUser, guildId: "Array", size: native.AvatarSizes.XSMALL_20 };
     const Avatar = tmp4(1187).Avatar;
     items2 = [hasOwnProperty(Avatar, obj7), ];
-    const obj8 = { variant: "text-md/medium", style: tmp.userPillText, children: obj10.getName(selectedUser) };
-    const Text2 = tmp4(5747).Text;
+    const obj8 = { variant: "body-md/medium", style: tmp.userPillText, children: obj10.getName(selectedUser) };
+    const Text2 = tmp4(5761).Text;
     obj10 = UserUtilsDefault;
     items2[1] = hasOwnProperty(Text2, obj8);
     tmp2Result1 = tmp6(tmp3, obj6);
   } else {
-    const obj9 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: intl4.string(intl6.t.R0vK0N) };
-    const Text = tmp4(5747).Text;
+    const obj9 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.userPillText, children: intl4.string(intl6.t.R0vK0N) };
+    const Text = tmp4(5761).Text;
     intl4 = tmp4(1113).intl;
     tmp2Result1 = tmp2(Text, obj9);
   }

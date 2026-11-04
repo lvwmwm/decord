@@ -1,24 +1,24 @@
-// Module ID: 18964
-// Function ID: 18965
+// Module ID: 19067
+// Function ID: 19068
 // Name: AutocompleteScreen
-// Dependencies: [32, 19, 4990, 5083, 1385, 18965, 14031, 9958, 1072, 21, 504, 18869, 14017, 14042, 14038, 5195, 5772, 14024, 18966, 14023, 14025, 18928, 18861, 1113, 18873, 2]
+// Dependencies: [32, 19, 4990, 5083, 1385, 19068, 14117, 9976, 1072, 21, 504, 18972, 14103, 14128, 14124, 5195, 5786, 14110, 19069, 14109, 14111, 19031, 18964, 1113, 18976, 2]
 
-// Module 18964 (AutocompleteScreen)
+// Module 19067 (AutocompleteScreen)
 import Fragment from "Fragment" /* 21 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import useChannelName from "useChannelName" /* 5772 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14017 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 14038 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14042 */;
-import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 18966 */;
+import useChannelName from "useChannelName" /* 5786 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14103 */;
+import TrackingDefault from "Tracking" /* 14124 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14128 */;
+import AutocompleteScreenUtils from "AutocompleteScreenUtils" /* 19069 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
-import SearchAutocompleteStore from "SearchAutocompleteStore" /* 18965 */;
-import SearchQueryStore from "SearchQueryStore" /* 14031 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
+import SearchAutocompleteStore from "SearchAutocompleteStore" /* 19068 */;
+import SearchQueryStore from "SearchQueryStore" /* 14117 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -79,7 +79,7 @@ const memoResult = react.memo(function AutocompleteScreen(searchContext) {
       });
       const obj4 = { searchContext, searchTokenType: null, location: null };
       ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
-      const obj2 = search_tracking_TrackingDefault;
+      const obj2 = TrackingDefault;
       obj2.trackSearchFilterAdd(obj4);
       callback();
     }
@@ -100,7 +100,7 @@ const memoResult = react.memo(function AutocompleteScreen(searchContext) {
           addTag(obj);
           const result = setTextInputValue.restoreDraftTextInputValue();
         });
-        let obj2 = search_tracking_TrackingDefault;
+        let obj2 = TrackingDefault;
         const obj4 = { searchContext, searchTokenType: null, location: null };
         ({ searchTokenType: obj3.searchTokenType, location: obj3.location } = prefixTag);
         obj2.trackSearchFilterAdd(obj4);
@@ -137,7 +137,7 @@ const memoResult = react.memo(function AutocompleteScreen(searchContext) {
         });
         let obj = { searchContext, searchTokenType: null, location: null };
         ({ searchTokenType: obj4.searchTokenType, location: obj4.location } = prefixTag);
-        const obj3 = search_tracking_TrackingDefault;
+        const obj3 = TrackingDefault;
         obj3.trackSearchFilterAdd(obj);
         callback();
       }

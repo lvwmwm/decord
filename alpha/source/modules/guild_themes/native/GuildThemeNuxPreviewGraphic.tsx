@@ -1,14 +1,14 @@
-// Module ID: 18366
-// Function ID: 18367
+// Module ID: 18460
+// Function ID: 18461
 // Name: GuildThemeNuxPreviewGraphic
-// Dependencies: [19, 17, 21, 5141, 575, 18367, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 18461, 2]
 // Exports: default
 
-// Module 18366 (GuildThemeNuxPreviewGraphic)
+// Module 18460 (GuildThemeNuxPreviewGraphic)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 18367 */;
+import GuildThemePreviewArtDefault from "GuildThemePreviewArt" /* 18461 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

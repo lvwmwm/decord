@@ -1,21 +1,21 @@
-// Module ID: 18243
-// Function ID: 18244
+// Module ID: 18340
+// Function ID: 18341
 // Name: MessagesItemSuggestedFriend
-// Dependencies: [32, 19, 17, 5083, 1072, 21, 5141, 575, 11182, 8874, 2123, 563, 1113, 5195, 18244, 18245, 1252, 7106, 1187, 5747, 5754, 5849, 7414, 14553, 2]
+// Dependencies: [32, 19, 17, 5083, 1072, 21, 5141, 575, 11232, 8891, 2123, 563, 1113, 5195, 18341, 18342, 1252, 7121, 1187, 5761, 5768, 5863, 7430, 14633, 2]
 // Exports: getMessagesItemSuggestedFriendHeight
 
-// Module 18243 (MessagesItemSuggestedFriend)
+// Module 18340 (MessagesItemSuggestedFriend)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7414 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11182 */;
-import LegendList from "LegendList" /* 14553 */;
-import FriendSuggestionUtils from "FriendSuggestionUtils" /* 18244 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18245 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7430 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
+import LegendList from "LegendList" /* 14633 */;
+import FriendSuggestionUtils from "FriendSuggestionUtils" /* 18341 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18342 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
@@ -69,7 +69,7 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
     return items;
   }, items);
   const callback = react.useCallback(() => {
-    const promise = asyncRequire(8874, dependencyMap.paths);
+    const promise = asyncRequire(8891, dependencyMap.paths);
     promise.then((result) => {
       const obj = { userId: suggestedFriend.user.id, localUser: suggestedFriend.user, location: "Messages Tab User Profile" };
       return result.default(obj);
@@ -138,14 +138,14 @@ let closure_12 = react.memo(function MessagesItemSuggestedFriendView(height) {
   const Avatar = tmp4(tmp5[18]).Avatar;
   items5 = [closure_9(Avatar, obj4), , ];
   let obj5 = { style: tmp.textContainer, children: items6 };
-  items6 = [closure_9(tmp4(tmp5[19]).Text, { lineClamp: 1, variant: "redesign/channel-title/semibold", maxFontSizeMultiplier: 2, color: "text-default", children: suggestionName }), ];
+  items6 = [closure_9(tmp4(tmp5[19]).Text, { lineClamp: 1, variant: "heading-sm/semibold", maxFontSizeMultiplier: 2, color: "text-default", children: suggestionName }), ];
   const Text = tmp4(tmp5[19]).Text;
   const tmp10 = View;
   if (addedPressed) {
     let intl = tmp4(tmp5[12]).intl;
     userStatusLabel = intl.string(tmp4(tmp5[12]).t.Kzyxm9);
   }
-  items6[1] = closure_9(Text, { variant: "text-xs/medium", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: userStatusLabel });
+  items6[1] = closure_9(Text, { variant: "body-xs/medium", color: "text-default", lineClamp: 1, maxFontSizeMultiplier: 2, children: userStatusLabel });
   items5[1] = closure_10(tmp10, obj5);
   if (addedPressed) {
     const obj6 = { style: { marginHorizontal: 8 } };
@@ -193,9 +193,9 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/mess
 
 export function getMessagesItemSuggestedFriendHeight(fontScale) {
   const obj = useScaledTextLineHeight;
-  const scaleTextLineHeightResult = obj.scaleTextLineHeight("redesign/channel-title/semibold", fontScale);
+  const scaleTextLineHeightResult = obj.scaleTextLineHeight("heading-sm/semibold", fontScale);
   const obj2 = useScaledTextLineHeight;
-  const sum = scaleTextLineHeightResult + obj2.scaleTextLineHeight("text-xs/medium", fontScale);
+  const sum = scaleTextLineHeightResult + obj2.scaleTextLineHeight("body-xs/medium", fontScale);
   return sum + nativeDefault.space.PX_16;
 }
 export const MessagesItemSuggestedFriendFast = memoResult;

@@ -1,21 +1,21 @@
-// Module ID: 15588
-// Function ID: 15589
+// Module ID: 15675
+// Function ID: 15676
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 6898, 5395, 7441, 1113, 5747, 5874, 5376, 9799, 15589, 6079, 15590, 2123, 9800, 5837, 5754, 5381, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 6913, 5396, 7457, 1113, 5761, 5888, 5377, 9817, 15676, 6094, 15677, 2123, 9818, 5851, 5768, 5382, 2]
 // Exports: default
 
-// Module 15588 (OutboundPromotionCard)
+// Module 15675 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5874 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7441 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5888 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7457 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -40,7 +40,7 @@ function TermsAndConditionsActionSheet(termsAndConditions) {
   obj2 = { title: intl.string(intl4.t.PdKWVT) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl4.intl;
-  obj3 = { style: tmp.termsAndConditionsText, variant: "text-sm/medium", children: obj4.parse(termsAndConditions, false, { allowLinks: true }) };
+  obj3 = { style: tmp.termsAndConditionsText, variant: "body-sm/medium", children: obj4.parse(termsAndConditions, false, { allowLinks: true }) };
   Text = Text_Text.Text;
   obj4 = MarkupUtilsDefault;
   return metroRequire(BottomSheet, obj);
@@ -142,9 +142,9 @@ export default function OutboundPromotionCard(outboundPromotion) {
   const obj8 = { style: tmp.textContainer, children: closure_7(View, obj9) };
   obj9 = { children: items2 };
   items2 = [, ];
-  const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: outboundPromotion.outboundTitle };
+  const obj10 = { style: tmp.title, accessibilityRole: "header", variant: "body-md/semibold", color: "mobile-text-heading-primary", children: outboundPromotion.outboundTitle };
   items2[0] = closure_6(outboundPromotion(first[11]).Text, obj10);
-  const obj11 = { style: tmp.subText, variant: "text-sm/medium", color: "text-default", children: formatToPlainStringResult };
+  const obj11 = { style: tmp.subText, variant: "body-sm/medium", color: "text-default", children: formatToPlainStringResult };
   items2[1] = closure_6(outboundPromotion(first[11]).Text, obj11);
   items1[1] = closure_6(View, obj8);
   const obj12 = { style: tmp.buttonContainer, children: closure_6(View, obj13) };
@@ -160,7 +160,7 @@ export default function OutboundPromotionCard(outboundPromotion) {
   items1[2] = closure_6(View, obj12);
   items3 = [closure_7(View, obj5), ];
   const obj15 = { children: closure_6(Text, obj16) };
-  obj16 = { style: tmp.moreDetails, variant: "text-sm/medium", children: intl3.format(outboundPromotion(first[10]).t.sCm3Zb, obj17) };
+  obj16 = { style: tmp.moreDetails, variant: "body-sm/medium", children: intl3.format(outboundPromotion(first[10]).t.sCm3Zb, obj17) };
   Text = tmp5(tmp3[11]).Text;
   intl3 = tmp5(tmp3[10]).intl;
   obj17 = {

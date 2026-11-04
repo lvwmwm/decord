@@ -1,18 +1,18 @@
-// Module ID: 11305
-// Function ID: 11306
+// Module ID: 11355
+// Function ID: 11356
 // Name: MessageRemindersCustomDurationModal
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1627, 5150, 2017, 5381, 9137, 2123, 1113, 7131, 9943, 1377, 7124, 7682, 7186, 7101, 5747, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1627, 5150, 2017, 5382, 9154, 2123, 1113, 7146, 9961, 1377, 7139, 7698, 7201, 7116, 5761, 2]
 
-// Module 11305 (MessageRemindersCustomDurationModal)
+// Module 11355 (MessageRemindersCustomDurationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7682 */;
-import HeaderShared from "HeaderShared" /* 9943 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7698 */;
+import HeaderShared from "HeaderShared" /* 9961 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -77,7 +77,7 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
     const result = obj.dismissGlobalKeyboard();
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(9137, dependencyMap.paths);
+    const tmp4 = asyncRequire(9154, dependencyMap.paths);
     const intl = intl5.intl;
     const string = intl.string;
     const t = intl5.t;
@@ -139,18 +139,18 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       return metroImportDefault(HeaderActionButton, obj);
     }
   };
-  const Header = onClose(7131).Header;
+  const Header = onClose(7146).Header;
   num = 0;
   const obj5 = onClose(1377);
   if (!obj5.isIOS()) {
     num = top;
   }
   ({ headerLeftContainer: obj4.headerLeftContainerStyle, headerRightContainer: obj4.headerRightContainerStyle } = tmp);
-  tmp11Result = onClose(7124);
+  tmp11Result = onClose(7139);
   items1 = [closure_7(Header, obj3), ];
   const obj6 = { style: tmp.container, children: items2 };
   const obj7 = { title: intl.string(onClose(1113).t.pSZKvM), hasIcons: false, children: closure_7(TableRow, obj8) };
-  const TableRowGroup = tmp11(7186).TableRowGroup;
+  const TableRowGroup = tmp11(7201).TableRowGroup;
   intl = tmp11(1113).intl;
   obj8 = {
     label: formatResult,
@@ -160,11 +160,11 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       handleOpenDatePicker("date");
     }
   };
-  TableRow = tmp11(7101).TableRow;
+  TableRow = tmp11(7116).TableRow;
   intl2 = tmp11(1113).intl;
   items2 = [closure_7(TableRowGroup, obj7), ];
   const obj9 = { title: intl3.string(onClose(1113).t.GOmEb8), hasIcons: false, children: closure_7(TableRow2, obj10) };
-  const TableRowGroup2 = tmp11(7186).TableRowGroup;
+  const TableRowGroup2 = tmp11(7201).TableRowGroup;
   intl3 = tmp11(1113).intl;
   obj10 = {
     label: formatResult1,
@@ -174,13 +174,13 @@ const memoResult = react.memo(function MessageRemindersCustomDurationScreen(onCl
       handleOpenDatePicker("time");
     }
   };
-  TableRow2 = tmp11(7101).TableRow;
+  TableRow2 = tmp11(7116).TableRow;
   intl4 = tmp11(1113).intl;
   const items3 = [closure_7(TableRowGroup2, obj9), ];
   let tmp10Result = null != error;
   if (tmp10Result) {
-    const obj11 = { style: tmp.error, variant: "text-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
-    tmp10Result = tmp10(tmp11(5747).Text, obj11);
+    const obj11 = { style: tmp.error, variant: "body-sm/medium", color: "text-feedback-critical", accessibilityRole: "alert", children: error };
+    tmp10Result = tmp10(tmp11(5761).Text, obj11);
   }
   items3[1] = tmp10Result;
   items2[1] = error(first, { children: items3 });

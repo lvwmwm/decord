@@ -1,19 +1,19 @@
-// Module ID: 19416
-// Function ID: 19417
+// Module ID: 19520
+// Function ID: 19521
 // Name: UserVideoFailed
-// Dependencies: [17, 1072, 21, 5141, 575, 6067, 5747, 1113, 5754, 11906, 5909, 6035, 2]
+// Dependencies: [17, 1072, 21, 5141, 575, 6082, 5761, 1113, 5768, 11965, 5923, 6050, 2]
 // Exports: default
 
-// Module 19416 (UserVideoFailed)
+// Module 19520 (UserVideoFailed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5909 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6035 */;
-import AVError from "AVError" /* 6067 */;
-import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11906 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5923 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6050 */;
+import AVError from "AVError" /* 6082 */;
+import VideoStreamReadyActionCreators from "VideoStreamReadyActionCreators" /* 11965 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -48,11 +48,11 @@ export default function UserVideoFailed(arg0) {
   const errorCode = obj.getErrorInfo(avError).errorCode;
   const merged1 = Object.assign(merged);
   items = [tmp2.container, style];
-  const obj3 = { variant: "text-md/semibold", color: "text-strong", style: tmp2.text, children: intl.string(intl4.t["z+mxvo"]) };
+  const obj3 = { variant: "body-md/semibold", color: "text-strong", style: tmp2.text, children: intl.string(intl4.t["z+mxvo"]) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items1 = [closure_5(Text, obj3), , ];
-  const obj4 = { variant: "text-sm/semibold", color: "text-muted", style: tmp2.text, selectable: true, children: intl2.formatToPlainString(intl4.t.ejOT95, { errorCode }) };
+  const obj4 = { variant: "body-sm/semibold", color: "text-muted", style: tmp2.text, selectable: true, children: intl2.formatToPlainString(intl4.t.ejOT95, { errorCode }) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items1[1] = closure_5(Text2, obj4);
@@ -75,7 +75,7 @@ export default function UserVideoFailed(arg0) {
           }, 1000);
         }
     };
-    const Button = tmp3(5754).Button;
+    const Button = tmp3(5768).Button;
     intl3 = tmp3(1113).intl;
     tmp8Result = tmp8(Button, obj6);
   }

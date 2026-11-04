@@ -1,14 +1,14 @@
-// Module ID: 17761
-// Function ID: 17762
+// Module ID: 17857
+// Function ID: 17858
 // Name: DoubleCheckmarkIcon
-// Dependencies: [19, 21, 575, 5836, 17762, 2]
+// Dependencies: [19, 21, 575, 5850, 17858, 2]
 // Exports: DoubleCheckmarkIcon
 
-// Module 17761 (DoubleCheckmarkIcon)
+// Module 17857 (DoubleCheckmarkIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 17762 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 17858 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

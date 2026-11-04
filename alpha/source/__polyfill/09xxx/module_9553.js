@@ -1,162 +1,142 @@
 // Module ID: 9553
 // Function ID: 9554
-// Dependencies: []
-// Exports: append, appendChild, prepend, prependChild, removeElement, replaceElement
+// Dependencies: [9554, 9560, 9555, 9562, 9563]
+// Exports: createDomStream, parseDOM, parseDocument, parseFeed
 
 // Module 9553
+import ElementType from "ElementType" /* 9562 */;
 
-export function removeElement(prev) {
-  if (prev.prev) {
-    prev.prev.next = prev.next;
-  }
-  if (prev.next) {
-    prev.next.prev = prev.prev;
-  }
-  if (prev.parent) {
-    const children = prev.parent.children;
-    const lastIndexOfResult = children.lastIndexOf(prev);
-    if (lastIndexOfResult >= 0) {
-      children.splice(lastIndexOfResult, 1);
+const require = globalThis.__r;
+let hasOwnProperty;
+
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_2 = tmp;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_3 = tmp3;
+let tmp5 = self && self.__importStar || ((__esModule) => {
+  const tmp = __esModule;
+  if (tmp) {
+    if (__esModule.__esModule) {
+      return __esModule;
     }
   }
-  prev.next = null;
-  prev.prev = null;
-  prev.parent = null;
-}
-export function replaceElement(prev, next) {
-  prev = prev.prev;
-  next.prev = prev;
-  if (prev) {
-    prev.next = next;
-  }
-  next = prev.next;
-  next.next = next;
-  if (next) {
-    next.prev = next;
-  }
-  const parent = prev.parent;
-  next.parent = parent;
-  if (parent) {
-    const children = parent.children;
-    children[children.lastIndexOf(prev)] = next;
-    prev.parent = null;
-  }
-}
-export function appendChild(element, node) {
-  if (node.prev) {
-    node.prev.next = node.next;
-  }
-  if (node.next) {
-    node.next.prev = node.prev;
-  }
-  if (node.parent) {
-    const children = node.parent.children;
-    const lastIndexOfResult = children.lastIndexOf(node);
-    if (lastIndexOfResult >= 0) {
-      children.splice(lastIndexOfResult, 1);
+  const obj = {};
+  if (null != __esModule) {
+    for (const key10009 in __esModule) {
+      let callResult = "default" !== key10009;
+      if (callResult) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        callResult = hasOwnProperty.call(__esModule, key10009);
+      }
+      if (!callResult) {
+        continue;
+      } else {
+        let tmp6 = closure_2(obj, __esModule, key10009);
+        continue;
+      }
+      continue;
     }
   }
-  node.next = null;
-  node.prev = null;
-  node.parent = null;
-  node.next = null;
-  node.parent = element;
-  const children1 = element.children;
-  if (children1.push(node) > 1) {
-    element.children[element.children.length - 2].next = node;
-    node.prev = element.children[element.children.length - 2];
+  closure_3(obj, __esModule);
+  return obj;
+});
+const fn = self && self.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
   } else {
-    node.prev = null;
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function parseDocument(arg0, fn) {
+  const domHandler = new require("DomHandler").DomHandler(undefined, fn);
+  const parser = new require("module_9554").Parser(domHandler, fn);
+  parser.end(arg0);
+  return domHandler.root;
 }
-export function append(prev, prev2) {
-  let next;
-  let parent;
-  if (prev2.prev) {
-    prev2.prev.next = prev2.next;
-  }
-  if (prev2.next) {
-    prev2.next.prev = prev2.prev;
-  }
-  if (prev2.parent) {
-    const children = prev2.parent.children;
-    const lastIndexOfResult = children.lastIndexOf(prev2);
-    if (lastIndexOfResult >= 0) {
-      children.splice(lastIndexOfResult, 1);
-    }
-  }
-  prev2.next = null;
-  prev2.prev = null;
-  prev2.parent = null;
-  ({ parent, next } = prev);
-  prev2.next = next;
-  prev2.prev = prev;
-  prev.next = prev2;
-  prev2.parent = parent;
-  if (next) {
-    next.prev = prev2;
-    if (parent) {
-      const children1 = parent.children;
-      children1.splice(children1.lastIndexOf(next), 0, prev2);
-    }
-  } else if (parent) {
-    const children2 = parent.children;
-    children2.push(prev2);
-  }
+function parseDOM(arg0, fn) {
+  const domHandler = new require("DomHandler").DomHandler(undefined, fn);
+  const parser = new require("module_9554").Parser(domHandler, fn);
+  parser.end(arg0);
+  return domHandler.root.children;
 }
-export function prependChild(parent, prev) {
-  if (prev.prev) {
-    prev.prev.next = prev.next;
-  }
-  if (prev.next) {
-    prev.next.prev = prev.prev;
-  }
-  if (prev.parent) {
-    const children = prev.parent.children;
-    const lastIndexOfResult = children.lastIndexOf(prev);
-    if (lastIndexOfResult >= 0) {
-      children.splice(lastIndexOfResult, 1);
-    }
-  }
-  prev.next = null;
-  prev.prev = null;
-  prev.parent = parent;
-  prev.prev = null;
-  const children1 = parent.children;
-  if (1 !== children1.unshift(prev)) {
-    parent.children[1].prev = prev;
-    prev.next = parent.children[1];
-  } else {
-    prev.next = null;
-  }
+let closure_5 = { xmlMode: true };
+const ElementType_export = tmp5(ElementType);
+
+export const Parser = require("module_9554").Parser;
+export const DomHandler = require("DomHandler").DomHandler;
+export const DefaultHandler = require("DomHandler").DomHandler;
+export { parseDocument };
+export { parseDOM };
+export function createDomStream(arg0, fn, arg2) {
+  const domHandler = new require("DomHandler").DomHandler(arg0, fn, arg2);
+  const parser = new require("module_9554").Parser(domHandler, fn);
+  return parser;
 }
-export function prepend(parent, next) {
-  if (next.prev) {
-    next.prev.next = next.next;
+export const Tokenizer = fn(require("QuoteType")).default;
+export { ElementType_export as ElementType };
+export const getFeed = require("module_9563").getFeed;
+export function parseFeed(arg0, fn) {
+  let tmp = fn;
+  if (undefined === fn) {
+    tmp = closure_5;
   }
-  if (next.next) {
-    next.next.prev = next.prev;
-  }
-  if (next.parent) {
-    const children = next.parent.children;
-    const lastIndexOfResult = children.lastIndexOf(next);
-    if (lastIndexOfResult >= 0) {
-      children.splice(lastIndexOfResult, 1);
-    }
-  }
-  next.next = null;
-  next.prev = null;
-  next.parent = null;
-  parent = parent.parent;
-  if (parent) {
-    const children1 = parent.children;
-    children1.splice(children1.indexOf(parent), 0, next);
-  }
-  if (parent.prev) {
-    parent.prev.next = next;
-  }
-  next.parent = parent;
-  next.prev = parent.prev;
-  next.next = parent;
-  parent.prev = next;
+  const getFeed = require("module_9563").getFeed;
+  const domHandler = new require("DomHandler").DomHandler(undefined, tmp);
+  const parser = new require("module_9554").Parser(domHandler, tmp);
+  parser.end(arg0);
+  return getFeed(domHandler.root.children);
 }
+export const DomUtils = tmp5(require("module_9563"));

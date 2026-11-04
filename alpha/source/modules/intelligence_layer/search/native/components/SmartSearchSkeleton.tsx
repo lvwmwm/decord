@@ -1,15 +1,15 @@
-// Module ID: 18912
-// Function ID: 18913
+// Module ID: 19015
+// Function ID: 19016
 // Name: SmartSearchSkeleton
-// Dependencies: [19, 17, 12381, 21, 4250, 5141, 575, 5155, 1113, 12380, 12921, 18900, 2]
+// Dependencies: [19, 17, 12446, 21, 4250, 5141, 575, 5155, 1113, 12445, 13003, 19003, 2]
 
-// Module 18912 (SmartSearchSkeleton)
+// Module 19015 (SmartSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4250 from "module_4250" /* 4250 */;
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 18900 */;
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 19003 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 12381 */;
+import AILoaderConstants from "AILoaderConstants" /* 12446 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -70,9 +70,9 @@ const memoResult = react.memo(function SmartSearchSkeleton(isCollapsed) {
   }, items);
   let obj = { style: tmp.block, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
-  items1 = [closure_7(reducedMotion(12380).AILoader, { size: 12, color: "interactive-text-default" }), ];
-  const obj3 = { text: memo, variant: "text-sm/semibold", color: "interactive-text-default", delay: memo1.shimmerDelayMs, initialDelay: memo1.shimmerInitialDelayMs, duration: memo1.shimmerDurationMs, style: tmp.label };
-  items1[1] = closure_7(reducedMotion(12921).AIShimmer, obj3);
+  items1 = [closure_7(reducedMotion(12445).AILoader, { size: 12, color: "interactive-text-default" }), ];
+  const obj3 = { text: memo, variant: "body-sm/semibold", color: "interactive-text-default", delay: memo1.shimmerDelayMs, initialDelay: memo1.shimmerInitialDelayMs, duration: memo1.shimmerDurationMs, style: tmp.label };
+  items1[1] = closure_7(reducedMotion(13003).AIShimmer, obj3);
   items2 = [closure_8(View, obj2), ];
   let num = 6;
   const _Array = Array;

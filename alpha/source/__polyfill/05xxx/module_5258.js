@@ -1,103 +1,380 @@
 // Module ID: 5258
 // Function ID: 5259
-// Dependencies: [32, 19, 5253]
-// Exports: useRiveTrigger
+// Dependencies: [32, 19, 5238, 5252]
+// Exports: useRiveList
 
 // Module 5258
-import react2 from "react" /* 5253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 
+const require = globalThis.__r;
+let _require, closure_0, dependencyMap;
+
 let c3;
 let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
+let useCallback;
+let useMemo;
+function _temp2(arg0) {
+  return arg0 + 1;
+}
+function _temp(dispose) {
+  let disposeResult;
+  if (dispose != null) {
+    disposeResult = dispose.dispose();
+  }
+  return disposeResult;
+}
+({ useCallback, useEffect: c3, useState: closure_4, useMemo } = react);
 
-export function useRiveTrigger(stateChange, instance, arg2) {
+export function useRiveList(arg0, arg1) {
+  let closure_1;
+  let closure_3;
+  let disposableMemo;
   let first;
-  let items4;
-  let closure_0 = stateChange;
-  let closure_1 = instance;
-  let obj = arg2;
-  if (arg2 == null) {
-    obj = {};
+  let tmp5;
+  _require = arg0;
+  dependencyMap = arg1;
+  let tmp = _require;
+  let obj = require("react");
+  const cResult = obj.c(39);
+  const tmp4 = _slicedToArray(disposableMemo(null), 2);
+  [tmp5, _slicedToArray] = tmp4;
+  [r10021, closure_3] = disposableMemo(0);
+  _slicedToArray(disposableMemo(0), 2);
+  if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function o() {
+      _slicedToArray(null);
+    };
+    cResult[0] = fn;
+    first = fn;
+  } else {
+    first = cResult[0];
   }
-  const onTrigger = obj.onTrigger;
-  let tmp = hasOwnProperty(undefined);
-  let closure_2 = tmp;
-  const tmp2 = hasOwnProperty(false);
-  let c3 = tmp2;
-  const tmp3 = hasOwnProperty(onTrigger);
-  let closure_4 = tmp3;
-  tmp3.current = onTrigger;
-  const items = [instance, stateChange];
-  const obj2 = react2;
-  const disposableMemo = obj2.useDisposableMemo(() => {
-    if (closure_1) {
-      return closure_1.triggerProperty(closure_0);
+  if (cResult[1] === arg0) {
+    let tmp8;
+    if (cResult[2] === arg1) {
+      tmp8 = cResult[3];
     }
-  }, (dispose) => {
-    let disposeResult;
-    if (dispose != null) {
-      disposeResult = dispose.dispose();
-    }
-    return disposeResult;
-  }, items, tmp);
-  if (tmp.current) {
-    tmp2.current = true;
-  }
-  [first, metroRequire] = metroRequire(null);
-  const items1 = [stateChange, instance];
-  React3(() => {
-    closure_6(null);
-  }, items1);
-  const items2 = [instance, disposableMemo, stateChange];
-  React3(function() {
-    const tmp = closure_1 && !disposableMemo;
-    if (tmp) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Property \"" + closure_0 + "\" not found in the ViewModel instance");
-      closure_6(error);
-    }
-  }, items2);
-  const items3 = [disposableMemo];
-  React3(() => {
-    if (disposableMemo) {
-      closure_0 = obj.addListener(() => {
-        const current = ref.current;
-        if (current != null) {
-          current();
-        }
-      });
-      return () => {
-        try {
-          closure_0();
-        } catch (err) {
-        }
-      };
-    }
-  }, items3);
-  const obj3 = {
-    trigger: _false(() => {
-      if (ref.current) {
-        const current = ref.current;
-        current.trigger();
-      } else {
-        const _console = console;
-        const _HermesInternal = HermesInternal;
-        if (ref2.current) {
-          warn(concat(closure_0, "') called after dispose. The property has been cleaned up \u2014 this is likely a stale closure from an async callback that fired after unmount."));
-        } else {
-          warn(concat(closure_0, "') called but the property is not available yet. The viewModelInstance may still be loading."));
-        }
+    closure_3(first, tmp8);
+    if (cResult[4] === arg0) {
+      let tmp11;
+      if (cResult[5] === arg1) {
+        tmp11 = cResult[6];
       }
-    }, items4),
-    error: first
-  };
-  items4 = [stateChange];
-  return obj3;
+      if (cResult[7] === arg0) {
+        let tmp12;
+        if (cResult[8] === arg1) {
+          tmp12 = cResult[9];
+        }
+        const tmpResult = tmp(5252);
+        disposableMemo = tmpResult.useDisposableMemo(tmp11, _temp, tmp12);
+        if (cResult[10] === arg0) {
+          if (cResult[11] === disposableMemo) {
+            let tmp15;
+            let tmp16;
+            let tmp19;
+            let tmp18;
+            if (cResult[12] === arg1) {
+              tmp15 = cResult[13];
+              tmp16 = cResult[14];
+            }
+            closure_3(tmp15, tmp16);
+            if (cResult[15] !== disposableMemo) {
+              class M {
+                constructor() {
+                  obj = closure_4;
+                  if (obj) {
+                    closure_0 = obj.addListener(() => {
+                      closure_1_3(_temp2);
+                    });
+                    return () => {
+                      try {
+                        closure_0();
+                        disposableMemo.removeListeners();
+                      } catch (err) {
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+              const items = [disposableMemo];
+              cResult[15] = disposableMemo;
+              cResult[16] = M;
+              cResult[17] = items;
+              tmp19 = items;
+              tmp18 = M;
+            } else {
+              class M {
+                constructor() {
+                  obj = closure_4;
+                  if (obj) {
+                    closure_0 = obj.addListener(() => {
+                      closure_1_3(_temp2);
+                    });
+                    return () => {
+                      try {
+                        closure_0();
+                        disposableMemo.removeListeners();
+                      } catch (err) {
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+              tmp19 = cResult[17];
+            }
+            closure_3(tmp18, tmp19);
+            if (disposableMemo != null) {
+              class M {
+                constructor() {
+                  obj = closure_4;
+                  if (obj) {
+                    closure_0 = obj.addListener(() => {
+                      closure_1_3(_temp2);
+                    });
+                    return () => {
+                      try {
+                        closure_0();
+                        disposableMemo.removeListeners();
+                      } catch (err) {
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+            }
+            if (undefined == null) {
+              class M {
+                constructor() {
+                  obj = closure_4;
+                  if (obj) {
+                    closure_0 = obj.addListener(() => {
+                      closure_1_3(_temp2);
+                    });
+                    return () => {
+                      try {
+                        closure_0();
+                        disposableMemo.removeListeners();
+                      } catch (err) {
+                      }
+                    };
+                  } else {
+                    return;
+                  }
+                }
+              }
+            }
+            if (cResult[18] !== disposableMemo) {
+              class R {
+                constructor(arg0) {
+                  let instanceAt;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    instanceAt = obj.getInstanceAt(arg0);
+                  }
+                  return instanceAt;
+                }
+              }
+              cResult[18] = disposableMemo;
+              cResult[19] = R;
+            } else {
+              class R {
+                constructor(arg0) {
+                  let instanceAt;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    instanceAt = obj.getInstanceAt(arg0);
+                  }
+                  return instanceAt;
+                }
+              }
+            }
+            if (cResult[20] !== disposableMemo) {
+              class R {
+                constructor(arg0) {
+                  let instanceAt;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    instanceAt = obj.getInstanceAt(arg0);
+                  }
+                  return instanceAt;
+                }
+              }
+              cResult[20] = disposableMemo;
+              cResult[21] = tmp24;
+            } else {
+              class R {
+                constructor(arg0) {
+                  let instanceAt;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    instanceAt = obj.getInstanceAt(arg0);
+                  }
+                  return instanceAt;
+                }
+              }
+            }
+            if (cResult[22] !== disposableMemo) {
+              class C {
+                constructor(arg0, arg1) {
+                  let flag;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    flag = obj.addInstanceAt(arg0, arg1);
+                  }
+                  if (flag == null) {
+                    flag = false;
+                  }
+                  return flag;
+                }
+              }
+              cResult[22] = disposableMemo;
+              cResult[23] = C;
+            } else {
+              class C {
+                constructor(arg0, arg1) {
+                  let flag;
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    flag = obj.addInstanceAt(arg0, arg1);
+                  }
+                  if (flag == null) {
+                    flag = false;
+                  }
+                  return flag;
+                }
+              }
+            }
+            if (cResult[24] !== disposableMemo) {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+              cResult[24] = disposableMemo;
+              cResult[25] = O;
+            } else {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+            }
+            if (cResult[26] !== disposableMemo) {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+              cResult[26] = disposableMemo;
+              cResult[27] = tmp28;
+            } else {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+            }
+            if (cResult[28] !== disposableMemo) {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+              cResult[28] = disposableMemo;
+              cResult[29] = tmp30;
+            } else {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+            }
+            if (cResult[30] === tmp23) {
+              class O {
+                constructor(arg0) {
+                  const obj = disposableMemo;
+                  if (disposableMemo != null) {
+                    obj.removeInstance(arg0);
+                  }
+                }
+              }
+            }
+            const obj2 = { length: undefined, getInstanceAt: tmp22, addInstance: tmp23, addInstanceAt: tmp25, removeInstance: tmp26, removeInstanceAt: tmp27, swap: tmp29, error: tmp5 };
+            cResult[30] = tmp23;
+            cResult[31] = tmp25;
+            cResult[32] = tmp5;
+            cResult[33] = tmp22;
+            cResult[34] = undefined;
+            cResult[35] = tmp26;
+            cResult[36] = tmp27;
+            cResult[37] = tmp29;
+            cResult[38] = obj2;
+          }
+        }
+        const fn3 = function b() {
+          const tmp = closure_1 && !disposableMemo;
+          if (tmp) {
+            const _Error = Error;
+            const _HermesInternal = HermesInternal;
+            const self = this;
+            const self2 = this;
+            const error = new Error("List property \"" + closure_0 + "\" not found in the ViewModel instance");
+            _slicedToArray(error);
+          }
+        };
+        const items1 = [arg1, disposableMemo, arg0];
+        cResult[10] = arg0;
+        cResult[11] = disposableMemo;
+        cResult[12] = arg1;
+        cResult[13] = fn3;
+        cResult[14] = items1;
+        tmp16 = items1;
+        tmp15 = fn3;
+      }
+      const items2 = [arg1, arg0];
+      cResult[7] = arg0;
+      cResult[8] = arg1;
+      cResult[9] = items2;
+      tmp12 = items2;
+    }
+    const fn2 = function v() {
+      if (closure_1) {
+        return closure_1.listProperty(closure_0);
+      }
+    };
+    cResult[4] = arg0;
+    cResult[5] = arg1;
+    cResult[6] = fn2;
+    tmp11 = fn2;
+  }
+  const items3 = [arg0, arg1];
+  cResult[1] = arg0;
+  cResult[2] = arg1;
+  cResult[3] = items3;
+  tmp8 = items3;
 }

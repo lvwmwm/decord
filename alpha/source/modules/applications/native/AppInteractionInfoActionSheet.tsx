@@ -1,16 +1,16 @@
-// Module ID: 14669
-// Function ID: 14670
+// Module ID: 14749
+// Function ID: 14750
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 1399, 5012, 1385, 21, 5141, 575, 7441, 1113, 7106, 7128, 5771, 504, 8876, 7101, 7083, 1187, 8874, 5395, 7186, 2]
+// Dependencies: [19, 1399, 5012, 1385, 21, 5141, 575, 7457, 1113, 7121, 7143, 5785, 504, 8893, 7116, 7098, 1187, 8891, 5396, 7201, 2]
 // Exports: default
 
-// Module 14669 (AppInteractionInfoActionSheet)
+// Module 14749 (AppInteractionInfoActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7128 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7441 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import UserActionCreators from "UserActionCreators" /* 8876 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7143 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7457 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import UserActionCreators from "UserActionCreators" /* 8893 */;
 import react_mod from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1399 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -72,7 +72,7 @@ export default function AppInteractionInfoActionSheet(message) {
     tmpResult = null != onBack;
     if (tmpResult) {
       const obj2 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl4.t["13/7kX"]), onPress: tmp4, children: metroImportDefault(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-      const PressableOpacity = tmp2(7106).PressableOpacity;
+      const PressableOpacity = tmp2(7121).PressableOpacity;
       intl2 = tmp2(1113).intl;
       tmpResult = tmp(PressableOpacity, obj2);
     }
@@ -80,13 +80,13 @@ export default function AppInteractionInfoActionSheet(message) {
   }, items);
   if (interactionMetadata != null) {
     const tmp4 = message;
-    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 5771).ApplicationIntegrationType.USER_INSTALL];
+    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 5785).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp3;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp6;
   if (interactionMetadata2 != null) {
-    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5771).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5785).ApplicationIntegrationType.GUILD_INSTALL];
   }
   react = tmp6;
   const interactionMetadata3 = message.interactionMetadata;
@@ -128,9 +128,9 @@ export default function AppInteractionInfoActionSheet(message) {
   }
   if (null != stateFromStores1) {
     const obj5 = { icon: closure_7(tmp26, obj6), label: stateFromStores1.name, subLabel: intl2.formatToPlainString(message(1113).t.ShLXXB, obj7) };
-    const TableRow2 = tmp10(7101).TableRow;
-    obj6 = { guild: stateFromStores1, size: message(7083).GuildIconSizes.SMALL_32 };
-    tmp26 = onBack(7083);
+    const TableRow2 = tmp10(7116).TableRow;
+    obj6 = { guild: stateFromStores1, size: message(7098).GuildIconSizes.SMALL_32 };
+    tmp26 = onBack(7098);
     intl2 = tmp10(1113).intl;
     obj7 = { application: message.author.username };
     tmp23 = closure_7(TableRow2, obj5);
@@ -147,7 +147,7 @@ export default function AppInteractionInfoActionSheet(message) {
             },
         arrow: true
       };
-      const TableRow = tmp10(7101).TableRow;
+      const TableRow = tmp10(7116).TableRow;
       obj9 = { user: stateFromStores, size: message(1187).AvatarSizes.REFRESH_MEDIUM_32, guildId };
       Avatar = tmp10(1187).Avatar;
       intl = tmp10(1113).intl;
@@ -156,10 +156,10 @@ export default function AppInteractionInfoActionSheet(message) {
     }
   }
   const obj11 = { header: memo, bodyStyles: tmp.body, children: tmp28(TableRowGroup, { hasIcons: true, children: items5 }) };
-  const BottomSheet = tmp10(5395).BottomSheet;
+  const BottomSheet = tmp10(5396).BottomSheet;
   items5 = [tmp23, ];
   let tmp27Result = null;
-  TableRowGroup = tmp10(7186).TableRowGroup;
+  TableRowGroup = tmp10(7201).TableRowGroup;
   tmp28 = closure_8;
   if (null != tmp16) {
     const obj12 = {
@@ -172,7 +172,7 @@ export default function AppInteractionInfoActionSheet(message) {
         },
       arrow: true
     };
-    const TableRow3 = tmp10(7101).TableRow;
+    const TableRow3 = tmp10(7116).TableRow;
     obj13 = { user: tmp16, size: message(1187).AvatarSizes.REFRESH_MEDIUM_32, guildId };
     Avatar2 = tmp10(1187).Avatar;
     intl3 = tmp10(1113).intl;

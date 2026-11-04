@@ -1,17 +1,17 @@
-// Module ID: 11469
-// Function ID: 11470
+// Module ID: 11519
+// Function ID: 11520
 // Name: useAttachPinotMemberCoachmark
-// Dependencies: [19, 1072, 4987, 21, 11470, 575, 11462, 11472, 1113, 3287, 5747, 7687, 5829, 2190, 10085, 2]
+// Dependencies: [19, 1072, 4987, 21, 11520, 575, 11512, 11522, 1113, 3287, 5761, 7703, 5843, 2190, 10133, 2]
 // Exports: useAttachPinotMemberCoachmark
 
-// Module 11469 (useAttachPinotMemberCoachmark)
+// Module 11519 (useAttachPinotMemberCoachmark)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3287 from "module_3287" /* 3287 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11470 */;
-import PinotAnalytics from "PinotAnalytics" /* 11472 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11520 */;
+import PinotAnalytics from "PinotAnalytics" /* 11522 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -94,7 +94,7 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
     const intl2 = intl5.intl;
     items = [intl2.string(_modDef3287.x9NGts), "\n", ];
     let obj3 = {
-      variant: "text-sm/medium",
+      variant: "body-sm/medium",
       color: "text-link",
       accessibilityRole: "link",
       onPress() {

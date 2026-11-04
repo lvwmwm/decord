@@ -1,13 +1,13 @@
-// Module ID: 15128
-// Function ID: 15129
+// Module ID: 15208
+// Function ID: 15209
 // Name: UserProfileGameFriendsCard
-// Dependencies: [19, 21, 5141, 7450, 1113, 14334, 7496, 5747, 2]
+// Dependencies: [19, 21, 5141, 7466, 1113, 14414, 7512, 5761, 2]
 // Exports: default
 
-// Module 15128 (UserProfileGameFriendsCard)
+// Module 15208 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7450 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14334 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7466 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14414 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let dependencyMap, importDefault;
 
 let tmp2;
-const UserProfileCardDefault = tmp2(7496);
+const UserProfileCardDefault = tmp2(7512);
 let jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles({ card: { flexDirection: "column" } });
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileGameFriendsCard.tsx");
@@ -37,7 +37,7 @@ export default function UserProfileGameFriendsCard(arg0) {
     return null;
   } else {
     let tmp6;
-    importDefault = "text-md/normal";
+    importDefault = "body-md/normal";
     if (1 === found.length) {
       const intl2 = found(1113).intl;
       const obj2 = {

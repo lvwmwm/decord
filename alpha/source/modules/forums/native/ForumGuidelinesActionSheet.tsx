@@ -1,19 +1,19 @@
-// Module ID: 10359
-// Function ID: 10360
+// Module ID: 10407
+// Function ID: 10408
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 7578, 21, 5141, 575, 9969, 1627, 10360, 1377, 10361, 5381, 7412, 5755, 1113, 5178, 5774, 8323, 5395, 5398, 7106, 5747, 10362, 5874, 10359, 2123, 2]
+// Dependencies: [32, 19, 17, 7594, 21, 5141, 575, 10017, 1627, 10408, 1377, 10409, 5382, 7428, 5769, 1113, 5178, 5788, 8339, 5396, 5400, 7121, 5761, 10410, 5888, 10407, 2123, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 10359 (ForumGuidelinesActionSheet)
+// Module 10407 (ForumGuidelinesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import LinkUtils from "LinkUtils" /* 5774 */;
-import ForumConstants from "ForumConstants" /* 7578 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8323 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10361 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import LinkUtils from "LinkUtils" /* 5788 */;
+import ForumConstants from "ForumConstants" /* 7594 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8339 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10409 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -175,7 +175,7 @@ export default function ForumGuidelinesActionSheet(channel) {
     const obj9 = { accessibilityLabel: intl2.string(channel(tmp3[15]).t.bt75uw), accessibilityRole: "button", style: tmp.editButton, onPress: callback1, children: items6 };
     const PressableOpacity = tmp2(tmp3[21]).PressableOpacity;
     intl2 = tmp2(tmp3[15]).intl;
-    const obj10 = { style: tmp.editText, variant: "text-sm/medium", color: "text-brand", children: intl3.string(channel(tmp3[15]).t.bt75uw) };
+    const obj10 = { style: tmp.editText, variant: "body-sm/medium", color: "text-brand", children: intl3.string(channel(tmp3[15]).t.bt75uw) };
     const Text = tmp2(tmp3[22]).Text;
     intl3 = tmp2(tmp3[15]).intl;
     items6 = [ref(Text, obj10), ];
@@ -190,7 +190,7 @@ export default function ForumGuidelinesActionSheet(channel) {
   items7[1] = ref(Text2, obj12);
   items8 = [closure_8(closure_5, obj8), ];
   const obj13 = { style: tmp.guidelinesContainer, children: ref(Text3, obj14) };
-  obj14 = { variant: "text-md/medium", color: "text-default", children: tmp5Result.parseForumPostGuidelines(channel.topic, true, obj15) };
+  obj14 = { variant: "body-md/medium", color: "text-default", children: tmp5Result.parseForumPostGuidelines(channel.topic, true, obj15) };
   Text3 = tmp2(tmp3[22]).Text;
   obj15 = { channelId: channel.id, allowHeading: true, allowList: true, allowLinks: true };
   tmp5Result = tmp5(tmp3[24]);
@@ -212,7 +212,7 @@ export function openForumGuidelinesActionSheet(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = {};
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10359, dependencyMap.paths);
+  const tmp2 = asyncRequire(10407, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, closure_6, obj);
 }

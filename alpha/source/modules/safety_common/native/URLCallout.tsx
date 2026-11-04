@@ -1,14 +1,14 @@
-// Module ID: 14892
-// Function ID: 14893
+// Module ID: 14972
+// Function ID: 14973
 // Name: URLCallout
-// Dependencies: [19, 17, 21, 5141, 575, 14893, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 14973, 5761, 2]
 // Exports: URLCallout
 
-// Module 14892 (URLCallout)
+// Module 14972 (URLCallout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import SharedStateUtils from "SharedStateUtils" /* 14893 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import SharedStateUtils from "SharedStateUtils" /* 14973 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -42,10 +42,10 @@ export function URLCallout(url) {
   const urlParts = obj.useUrlParts(url);
   ({ protocol, hostname, theRestOfTheUrl } = urlParts);
   const obj2 = { style: tmp.linkCalloutContainer, children: _false(Text, obj3) };
-  obj3 = { style: tmp.linkCalloutContainerText, variant: "text-md/normal", children: items1 };
+  obj3 = { style: tmp.linkCalloutContainerText, variant: "body-md/normal", children: items1 };
   Text = Text_Text.Text;
-  const obj4 = { variant: "text-md/normal", color: "text-muted", children: items };
+  const obj4 = { variant: "body-md/normal", color: "text-muted", children: items };
   items = [protocol, "//"];
-  items1 = [_false(Text_Text.Text, obj4), React3(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", children: hostname }), React3(Text_Text.Text, { variant: "text-md/normal", color: "text-muted", children: theRestOfTheUrl })];
+  items1 = [_false(Text_Text.Text, obj4), React3(Text_Text.Text, { variant: "body-md/semibold", color: "text-default", children: hostname }), React3(Text_Text.Text, { variant: "body-md/normal", color: "text-muted", children: theRestOfTheUrl })];
   return React3(ScrollView, obj2);
 }

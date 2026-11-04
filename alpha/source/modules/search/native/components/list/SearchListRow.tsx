@@ -1,13 +1,13 @@
-// Module ID: 18860
-// Function ID: 18861
+// Module ID: 18963
+// Function ID: 18964
 // Name: SearchListRow
-// Dependencies: [19, 17, 9958, 21, 5141, 575, 7106, 5747, 2]
+// Dependencies: [19, 17, 9976, 21, 5141, 575, 7121, 5761, 2]
 
-// Module 18860 (SearchListRow)
+// Module 18963 (SearchListRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 7106 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
+import Pressables from "Pressables" /* 7121 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let hasOwnProperty;
 let metroRequire;
 let tmp4;
-const Text_Text = tmp4(5747);
+const Text_Text = tmp4(5761);
 const View = react_native.View;
 const paddingVertical = SearchConstants.SEARCH_ROW_TAP_STATE_PADDING;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -79,7 +79,7 @@ const memoResult = react.memo(function SearchListRow(accessibilityRole) {
   let tmp7Result = label;
   const obj4 = { style: tmpResult.labels, children: items5 };
   if (typeof label === "string") {
-    const obj5 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", style: tmpResult.text, children: label };
+    const obj5 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmpResult.text, children: label };
     tmp7Result = tmp7(Text_Text.Text, obj5);
   }
   items5 = [tmp7Result, subLabel];

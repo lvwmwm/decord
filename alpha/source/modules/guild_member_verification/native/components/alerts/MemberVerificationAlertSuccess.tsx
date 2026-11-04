@@ -1,10 +1,10 @@
-// Module ID: 7029
-// Function ID: 7030
+// Module ID: 7044
+// Function ID: 7045
 // Name: MemberVerificationAlertSuccess
-// Dependencies: [19, 17, 5142, 5012, 21, 5141, 504, 6150, 1113, 5741, 7030, 5747, 2]
+// Dependencies: [19, 17, 5142, 5012, 21, 5141, 504, 6165, 1113, 5755, 7045, 5761, 2]
 // Exports: default
 
-// Module 7029 (MemberVerificationAlertSuccess)
+// Module 7044 (MemberVerificationAlertSuccess)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -62,7 +62,7 @@ export default function MemberVerificationAlertSuccess(guildId) {
     intl2 = tmp3(tmp4[8]).intl;
     obj6 = { guildName: stateFromStores.name };
     items2[1] = closure_6(Heading, obj5);
-    const obj7 = { style: tmp2.text, variant: "text-sm/medium", color: "text-default", children: intl3.string(guildId(merged[8]).t.nwpqyc) };
+    const obj7 = { style: tmp2.text, variant: "body-sm/medium", color: "text-default", children: intl3.string(guildId(merged[8]).t.nwpqyc) };
     const Text = tmp3(tmp4[11]).Text;
     intl3 = tmp3(tmp4[8]).intl;
     items2[2] = closure_6(Text, obj7);

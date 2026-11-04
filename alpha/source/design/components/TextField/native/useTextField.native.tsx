@@ -1,69 +1,96 @@
-// Module ID: 7216
-// Function ID: 7217
+// Module ID: 7231
+// Function ID: 7232
 // Name: useTextField
-// Dependencies: [32, 19, 6141, 2]
-// Exports: useTextField, useTextFieldState
+// Dependencies: [32, 19, 5148, 1113, 6156, 2]
+// Exports: useTextField
 
-// Module 7216 (useTextField)
-import react_native from "react-native" /* 6141 */;
+// Module 7231 (useTextField)
+import intl2 from "intl" /* 1113 */;
+import shared from "shared" /* 5148 */;
+import react_native from "react-native" /* 6156 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let result = size.fileFinishedImporting("design/components/TextField/native/useTextField.native.tsx");
-
-export function useTextFieldState(onClear) {
+function useTextFieldState(onClear) {
+  let closure_2;
   let first;
+  let first1;
   let onChange;
   let value;
   ({ value, onChange } = onClear);
   onClear = onClear.onClear;
-  let str = first;
-  const useState = react.useState;
-  if (first == null) {
+  let str = value;
+  const useState = first1.useState;
+  if (value == null) {
     str = onClear.defaultValue;
   }
   if (str == null) {
     str = "";
   }
-  const tmp = _slicedToArray(useState(str), 2);
-  let closure_2 = tmp[1];
-  if (first == null) {
-    first = tmp[0];
+  [first, _slicedToArray] = useState(str);
+  const tmp3 = _slicedToArray(first1.useState(false), 2);
+  first1 = tmp3[0];
+  let closure_4 = tmp5;
+  let tmp6 = !first1;
+  if (first1) {
+    tmp6 = !onClear.disabled && onClear.revealable && onClear.secureTextEntry;
+  }
+  if (!tmp6) {
+    tmp3[1](false);
+  }
+  if (value == null) {
+    value = first;
   }
   const items = [onChange];
-  const tmp2 = first.length > 0;
-  const callback = obj.useCallback((arg0) => {
+  const tmp9 = value.length > 0;
+  const setTextValue = obj.useCallback((arg0) => {
     closure_2(arg0);
     if (onChange != null) {
       onChange(arg0);
     }
   }, items);
-  const items1 = [callback, onClear];
+  const items1 = [setTextValue, onClear];
+  const items2 = [first1];
+  const callback1 = obj.useCallback(() => {
+    callback("");
+    if (onClear != null) {
+      onClear();
+    }
+  }, items1);
   const obj2 = {
-    value: first,
-    setTextValue: callback,
-    clear: react.useCallback(() => {
-      callback1("");
-      if (onClear != null) {
-        onClear();
+    value,
+    setTextValue,
+    clear: callback1,
+    hasValue: tmp9,
+    isRevealed: first1,
+    toggleRevealed: first1.useCallback(() => {
+      let stringResult;
+      closure_4(!first1);
+      const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
+      const announce = AccessibilityAnnouncer.announce;
+      const intl = intl2.intl;
+      const string = intl.string;
+      const t = intl2.t;
+      if (first1) {
+        stringResult = string(t.SHvAer);
+      } else {
+        stringResult = string(t.agstwg);
       }
-    }, items1),
-    hasValue: tmp2
+      announce(stringResult, "polite");
+    }, items2)
   };
   return obj2;
 }
+let result = size.fileFinishedImporting("design/components/TextField/native/useTextField.native.tsx");
+
+export { useTextFieldState };
 export function useTextField(merged, ref) {
   let callback;
-  let first;
   let obj3;
-  let obj5;
-  let onChange;
-  let value;
-  let obj = react;
   ref = react.useRef(null);
   const items = [ref, merged.onClear];
-  const obj2 = { onClear: callback };
+  let obj = { onClear: callback };
   callback = react.useCallback(() => {
     const current = ref.current;
     const tmp = ref;
@@ -78,46 +105,10 @@ export function useTextField(merged, ref) {
     const result = obj.setAccessibilityFocus({ ref: tmp });
   }, items);
   merged = Object.assign(merged);
-  onChange = undefined;
-  let closure_2;
-  let callback1;
-  ({ value, onChange } = obj2);
-  let onClear = obj2.onClear;
-  let str = first;
-  const useState = react.useState;
-  if (first == null) {
-    str = obj2.defaultValue;
-  }
-  if (str == null) {
-    str = "";
-  }
-  const tmp4 = obj3(useState(str), 2);
-  closure_2 = tmp4[1];
-  if (first == null) {
-    first = tmp4[0];
-  }
-  const items1 = [onChange];
-  const tmp5 = first.length > 0;
-  callback1 = obj.useCallback((arg0) => {
-    closure_2(arg0);
-    if (onChange != null) {
-      onChange(arg0);
-    }
-  }, items1);
-  const items2 = [callback1, onClear];
-  obj3 = {
-    value: first,
-    setTextValue: callback1,
-    clear: obj.useCallback(() => {
-      callback1("");
-      if (onClear != null) {
-        onClear();
-      }
-    }, items2),
-    hasValue: tmp5
-  };
-  const items3 = [ref, obj3];
-  const imperativeHandle = obj.useImperativeHandle(ref, () => {
+  const tmp4 = useTextFieldState(obj);
+  let closure_2 = tmp4;
+  const items1 = [ref, tmp4];
+  const imperativeHandle = react.useImperativeHandle(ref, () => {
     let obj = {
       blur() {
         const current = ref.current;
@@ -140,18 +131,18 @@ export function useTextField(merged, ref) {
         return true === isFocusedResult;
       },
       getText() {
-        return obj3.value;
+        return closure_1_2.value;
       },
       setText(text) {
         if ("" === text) {
-          obj3.clear();
+          closure_1_2.clear();
         } else {
           const current = ref.current;
           if (current != null) {
             const obj = { text };
             current.setNativeProps(obj);
           }
-          obj3.setTextValue(text);
+          closure_1_2.setTextValue(text);
         }
       },
       measure(arg0) {
@@ -174,10 +165,16 @@ export function useTextField(merged, ref) {
       }
     };
     return obj;
-  }, items3);
+  }, items1);
   const disabled = merged.disabled;
-  const obj4 = { innerRef: ref, state: obj3, inputProps: obj5 };
-  obj5 = { onChange: undefined, onChangeText: obj3.setTextValue, editable: !(undefined !== disabled && disabled), focusable: !(undefined !== disabled && disabled) && merged.focusable, "aria-disabled": undefined !== disabled && disabled };
+  const obj2 = { innerRef: ref, state: tmp4, inputProps: obj3 };
+  obj3 = { onChange: undefined, onChangeText: tmp4.setTextValue, editable: !(undefined !== disabled && disabled), focusable: !(undefined !== disabled && disabled) && merged.focusable, "aria-disabled": undefined !== disabled && disabled };
   const merged1 = Object.assign(merged);
-  return obj4;
+  let tmp8 = merged.revealable && merged.secureTextEntry;
+  if (tmp8) {
+    tmp8 = { secureTextEntry: !tmp4.isRevealed };
+    const obj4 = { secureTextEntry: !tmp4.isRevealed };
+  }
+  const merged2 = Object.assign(tmp8);
+  return obj2;
 }

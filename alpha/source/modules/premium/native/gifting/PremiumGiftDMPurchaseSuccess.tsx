@@ -1,17 +1,17 @@
-// Module ID: 14624
-// Function ID: 14625
+// Module ID: 14704
+// Function ID: 14705
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 5141, 575, 10692, 1499, 10740, 10689, 5754, 1113, 2731, 10827, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 10740, 1499, 10788, 10737, 5768, 1113, 2731, 10875, 5761, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 14624 (PremiumGiftDMPurchaseSuccess)
+// Module 14704 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 10689 */;
-import NativeGiftContext from "NativeGiftContext" /* 10692 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10827 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 10737 */;
+import NativeGiftContext from "NativeGiftContext" /* 10740 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 10875 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -48,7 +48,7 @@ export default function PremiumGiftDMSuccessBody() {
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items[1] = hasOwnProperty(Text, obj4);
-  const obj5 = { style: tmp.description, variant: "text-md/medium", children: intl2.string(intl3.t.Y1keV0) };
+  const obj5 = { style: tmp.description, variant: "body-md/medium", children: intl2.string(intl3.t.Y1keV0) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items[2] = hasOwnProperty(Text2, obj5);

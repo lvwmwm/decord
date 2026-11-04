@@ -1,10 +1,10 @@
-// Module ID: 20147
-// Function ID: 20148
+// Module ID: 20263
+// Function ID: 20264
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 5047, 21, 5141, 575, 1627, 7338, 17346, 504, 7106, 5747, 1113, 7441, 5395, 7344, 7100, 13401, 7426, 2]
+// Dependencies: [32, 19, 17, 5047, 21, 5141, 575, 1627, 7354, 17437, 504, 7121, 5761, 1113, 7457, 5396, 7360, 7115, 13485, 7442, 2]
 // Exports: default
 
-// Module 20147 (SelectEmojiRolesActionSheet)
+// Module 20263 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -83,7 +83,7 @@ export default function SelectEmojiRolesActionSheet(guildId) {
     accessibilityRole: "button",
     accessibilityState: { disabled: tmp10 },
     style: saveButtonDisabled,
-    children: tmp9(Text, { variant: "text-md/semibold", color: "text-brand", children: stringResult })
+    children: tmp9(Text, { variant: "body-md/semibold", color: "text-brand", children: stringResult })
   };
   tmp10 = !tmp7;
   saveButtonDisabled = undefined;
@@ -157,7 +157,7 @@ export default function SelectEmojiRolesActionSheet(guildId) {
         obj5 = { role: closure_7[arg1], children: subscriptionListingsForGuild[arg1].name };
         tmp7Result = tmp7(tmp8, obj4);
       } else {
-        const obj6 = { style: closure_3.roleName, lineClamp: 1, variant: "text-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
+        const obj6 = { style: closure_3.roleName, lineClamp: 1, variant: "body-md/medium", color: "interactive-text-active", children: subscriptionListingsForGuild[arg1].name };
         tmp7Result = tmp7(tmp4(tmp5[12]).Text, obj6);
       }
       items = [tmp7Result, ];

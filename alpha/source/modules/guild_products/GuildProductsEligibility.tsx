@@ -1,10 +1,10 @@
-// Module ID: 7556
-// Function ID: 7557
+// Module ID: 7572
+// Function ID: 7573
 // Name: GuildProductsEligibility
 // Dependencies: [5012, 1072, 504, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
-// Module 7556 (GuildProductsEligibility)
+// Module 7572 (GuildProductsEligibility)
 import Constants from "Constants" /* 1072 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;

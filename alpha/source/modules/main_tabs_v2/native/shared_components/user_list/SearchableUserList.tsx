@@ -1,17 +1,17 @@
-// Module ID: 10858
-// Function ID: 10859
+// Module ID: 10906
+// Function ID: 10907
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1385, 10857, 21, 5141, 575, 10859, 1380, 10860, 5148, 1113, 10861, 10863, 13539, 10866, 9190, 2]
+// Dependencies: [32, 19, 17, 1385, 10905, 21, 5141, 575, 10907, 1380, 10908, 5148, 1113, 10909, 10911, 13623, 10914, 9207, 2]
 // Exports: default
 
-// Module 10858 (SearchableUserList)
+// Module 10906 (SearchableUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import shared from "shared" /* 5148 */;
-import UserRowConstants from "UserRowConstants" /* 10857 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10860 */;
+import UserRowConstants from "UserRowConstants" /* 10905 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10908 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -29,7 +29,7 @@ const View = react_native.View;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { searchBarContainer: obj2, searchBar: { height: "disabled", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
+let obj = { searchBarContainer: obj2, searchBar: { height: "sa", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8 };

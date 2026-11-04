@@ -1,10 +1,10 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 17074
+// Function ID: 17075
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1072, 21, 5141, 575, 11146, 7101, 5747, 1113, 2667, 16940, 1499, 7186, 2]
+// Dependencies: [17, 1072, 21, 5141, 575, 11194, 7116, 5761, 1113, 2667, 17032, 1499, 7201, 2]
 // Exports: default
 
-// Module 16982 (FamilyCenterParentalControlsScreenTime)
+// Module 17074 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -31,12 +31,12 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(11146);
+  let obj = rule(11194);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(11146);
-  const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "text-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(7101).TableRow;
-  Text = rule(5747).Text;
+  let obj2 = rule(11194);
+  const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "body-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
+  const TableRow = rule(7116).TableRow;
+  Text = rule(5761).Text;
   const enabled = rule.enabled;
   const intl = rule(1113).intl;
   const string = intl.string;
@@ -103,7 +103,7 @@ export default function FamilyCenterParentalControlsScreenTime(readOnly) {
   const sortRulesByStartTimeResult = tmp2Result.sortRulesByStartTime(rules);
   if (null != id) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2667")["72CmJd"]) };
+    const obj4 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2667")["72CmJd"]) };
     const Text = tmp2(tmp3[7]).Text;
     intl = tmp2(tmp3[8]).intl;
     items = [closure_5(Text, obj4), ];

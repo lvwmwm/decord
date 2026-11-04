@@ -1,18 +1,18 @@
-// Module ID: 11371
-// Function ID: 11372
+// Module ID: 11421
+// Function ID: 11422
 // Name: isSelectedFromHomeChannel
-// Dependencies: [6982, 5044, 4997, 5322, 5321, 2]
+// Dependencies: [6997, 5044, 4997, 5323, 5322, 2]
 // Exports: default
 
-// Module 11371 (isSelectedFromHomeChannel)
+// Module 11421 (isSelectedFromHomeChannel)
 import ChannelConstants from "ChannelConstants" /* 4997 */;
-import RootNavigationRef from "RootNavigationRef" /* 5322 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6982 */;
+import RootNavigationRef from "RootNavigationRef" /* 5323 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6997 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationRouteUtils = tmp(5321);
+const NavigationRouteUtils = tmp(5322);
 const isGuildHomeChannel = ChannelConstants.isGuildHomeChannel;
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/isSelectedFromHomeChannel.native.tsx");
 
@@ -45,7 +45,7 @@ export default function isSelectedFromHomeChannel(id) {
                   let coerceChannelRouteResult = obj3.coerceChannelRoute(tmp4);
                   if (null != coerceChannelRouteResult) {
                     if (coerceChannelRouteResult.params.channelId === id.id) {
-                      let tmp6Result = tmp6(5321);
+                      let tmp6Result = tmp6(5322);
                       coerceChannelRouteResult1 = tmp6Result.coerceChannelRoute(state.routes[index - 1]);
                       if (null != coerceChannelRouteResult1) {
                         break;

@@ -1,20 +1,20 @@
-// Module ID: 18651
-// Function ID: 18652
+// Module ID: 18752
+// Function ID: 18753
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 5008, 5012, 1385, 18652, 21, 5141, 575, 6979, 9314, 18653, 18654, 18655, 18656, 5837, 18657, 1187, 18658, 18659, 7446, 504, 7106, 8874, 8944, 18660, 5747, 2]
+// Dependencies: [19, 17, 5008, 5012, 1385, 18753, 21, 5141, 575, 6994, 9331, 18754, 18755, 18756, 18757, 5851, 18758, 1187, 18759, 18760, 7462, 504, 7121, 8891, 8961, 18761, 5761, 2]
 
-// Module 18651 (ForYouItemImage)
+// Module 18752 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import GuildRecord from "GuildRecord" /* 5008 */;
-import Pressables from "Pressables" /* 7106 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8944 */;
+import Pressables from "Pressables" /* 7121 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8961 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 18652 */;
+import Constants from "Constants" /* 18753 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -194,11 +194,11 @@ const memoResult = react.memo(function ForYouItemImageWrapped(item) {
         if (obj14.icon === compactMode(tmp3[12])) {
           let tmp13Result;
           if (null != tmp10) {
-            let str2 = "text-lg/normal";
+            let str2 = "body-lg/normal";
             const Text = tmp6(tmp3[26]).Text;
             const tmp13 = jsx;
             if (tmp10.length > 4) {
-              str2 = "text-md/normal";
+              str2 = "body-md/normal";
             }
             const obj16 = { variant: str2, style: items2, children: tmp10 };
             items2 = [, ];

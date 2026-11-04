@@ -1,13 +1,13 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 10264
+// Function ID: 10265
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [19, 1072, 5141, 575, 7351, 2]
+// Dependencies: [19, 1072, 5141, 575, 7367, 2]
 // Exports: default
 
-// Module 10216 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 10264 (useExpressionPickerCategoriesPlaceholderConfig)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7351 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7367 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

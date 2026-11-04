@@ -1,10 +1,10 @@
-// Module ID: 7349
-// Function ID: 7350
+// Module ID: 7365
+// Function ID: 7366
 // Name: useFastestListPropsEstimatedListSize
 // Dependencies: [32, 19, 1493, 2]
 // Exports: default
 
-// Module 7349 (useFastestListPropsEstimatedListSize)
+// Module 7365 (useFastestListPropsEstimatedListSize)
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

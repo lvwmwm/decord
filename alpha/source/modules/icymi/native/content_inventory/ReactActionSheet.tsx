@@ -1,19 +1,19 @@
-// Module ID: 18737
-// Function ID: 18738
+// Module ID: 18838
+// Function ID: 18839
 // Name: ReactActionSheet
-// Dependencies: [5, 32, 19, 17, 5396, 1388, 21, 1113, 5141, 575, 10070, 5738, 7106, 9580, 8838, 9048, 10074, 5317, 9952, 1493, 7486, 5747, 10866, 5315, 5207, 18732, 5837, 1411, 7208, 5195, 8152, 5849, 18683, 2]
+// Dependencies: [5, 32, 19, 17, 5397, 1388, 21, 1113, 5141, 575, 10118, 5752, 7121, 9599, 8855, 9065, 10122, 5318, 9970, 1493, 7502, 5761, 10914, 5316, 5207, 18833, 5851, 1411, 7223, 5195, 8168, 5863, 18784, 2]
 // Exports: default, getStatusReplyContent
 
-// Module 18737 (ReactActionSheet)
+// Module 18838 (ReactActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5738 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9048 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10070 */;
-import ICYMIContext from "ICYMIContext" /* 18683 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5752 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10118 */;
+import ICYMIContext from "ICYMIContext" /* 18784 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -306,7 +306,7 @@ function ReactActionSheetBase(content) {
               children: callback1(content(sendMessage[21]).Text, obj12)
             };
             const PressableHighlight2 = content(sendMessage[12]).PressableHighlight;
-            obj12 = { variant: "text-md/medium", color: "interactive-text-default", style: items1, allowFontScaling: false, children: id.surrogates };
+            obj12 = { variant: "body-md/medium", color: "interactive-text-default", style: items1, allowFontScaling: false, children: id.surrogates };
             items1 = [, ];
             ({ defaultEmoji: arr2[0], emojiText: arr2[1] } = closure_3);
             tmp11 = callback1(PressableHighlight2, obj7, id.surrogates);

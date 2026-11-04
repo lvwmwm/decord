@@ -1,16 +1,16 @@
-// Module ID: 10758
-// Function ID: 10759
+// Module ID: 10806
+// Function ID: 10807
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 575, 5141, 7446, 6148, 1260, 10749, 5747, 1113, 2763, 2]
+// Dependencies: [19, 17, 21, 575, 5141, 7462, 6163, 1260, 10797, 5761, 1113, 2763, 2]
 // Exports: default
 
-// Module 10758 (GiftingBadgeProgressBanner)
+// Module 10806 (GiftingBadgeProgressBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import _modDef2763 from "module_2763" /* 2763 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 6148 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7446 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 6163 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7462 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -61,11 +61,11 @@ export default function GiftingBadgeProgressBanner(arg0) {
   const tmp8 = hasOwnProperty;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: PX_40 };
-    tmp10Result = tmp10(tmp2(10749), obj4);
+    tmp10Result = tmp10(tmp2(10797), obj4);
   }
   items2 = [React3(View, obj3), ];
-  const obj5 = { variant: "text-md/semibold", children: intl.formatToPlainString(_modDef2763["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };
-  const Text = tmp6(5747).Text;
+  const obj5 = { variant: "body-md/semibold", children: intl.formatToPlainString(_modDef2763["0+xfd9"], { giftsRemaining: giftsToNextTier, nextTier: nextTierName }) };
+  const Text = tmp6(5761).Text;
   intl = tmp6(1113).intl;
   items2[1] = React3(Text, obj5);
   return tmp8(View, obj2);

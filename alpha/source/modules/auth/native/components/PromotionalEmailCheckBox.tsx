@@ -1,13 +1,13 @@
-// Module ID: 18172
-// Function ID: 18173
+// Module ID: 18269
+// Function ID: 18270
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6861, 21, 5141, 5209, 18173, 1113, 7115, 5747, 2]
+// Dependencies: [19, 17, 6876, 21, 5141, 5208, 18270, 1113, 7130, 5761, 2]
 // Exports: default
 
-// Module 18172 (PromotionalEmailCheckBox)
+// Module 18269 (PromotionalEmailCheckBox)
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6861 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6876 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ export default function PromotionalEmailCheckBox(style) {
     };
     const obj5 = { checked: tmp3 };
     items = [closure_6(require("FormCheckbox").FormCheckbox, obj5), ];
-    const obj6 = { variant: "text-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: promoEmailOptInLabel };
+    const obj6 = { variant: "body-xs/medium", color: "text-muted", style: tmp.checkboxLabel, children: promoEmailOptInLabel };
     items[1] = closure_6(require("Text/Text").Text, obj6);
     tmp8 = closure_6(closure_2, obj3);
   }

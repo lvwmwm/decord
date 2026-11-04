@@ -1,21 +1,21 @@
-// Module ID: 17886
-// Function ID: 17887
+// Module ID: 17982
+// Function ID: 17983
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1385, 1403, 21, 1404, 10909, 1113, 10905, 3059, 5141, 575, 6147, 5747, 5754, 10902, 10903, 504, 17887, 7186, 7101, 14752, 6561, 2]
+// Dependencies: [32, 19, 17, 1385, 1403, 21, 1405, 10957, 1113, 10953, 3059, 5141, 575, 6162, 5761, 5768, 10950, 10951, 504, 17983, 7201, 7116, 14832, 6576, 2]
 // Exports: default
 
-// Module 17886 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 17982 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1403 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1404 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1405 */;
 import _modDef3059 from "module_3059" /* 3059 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10902 */;
-import types from "types" /* 10903 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10905 */;
-import _mod10909 from "module_10909" /* 10909 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10950 */;
+import types from "types" /* 10951 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10953 */;
+import _mod10957 from "module_10957" /* 10957 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -50,7 +50,7 @@ function OptionButtons(caption) {
   let tmp = closure_15();
   let obj = { spacing: 8, children: items };
   const Stack = Stack_Stack.Stack;
-  items = [closure_8(Text_Text.Text, { variant: "text-sm/semibold", color: "text-subtle", children: caption }), ];
+  items = [closure_8(Text_Text.Text, { variant: "body-sm/semibold", color: "text-subtle", children: caption }), ];
   const obj2 = {
     direction: "horizontal",
     spacing: 8,
@@ -89,17 +89,17 @@ function BenchmarkRow(arg0) {
   const obj2 = { style, children: metroImportAll(tmp2, obj3) };
   const obj = useDisplayNameStylesEffectConfigs;
   const displayNameStylesEffectConfig = obj.useDisplayNameStylesEffectConfig(effect);
-  obj3 = { userId, userName, effectDisplayType: types.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, variant: "text-md/semibold" };
+  obj3 = { userId, userName, effectDisplayType: types.EffectDisplayType.STATIC, pendingDisplayNameStyles: displayNameStylesEffectConfig.previewStyles, variant: "body-md/semibold" };
   tmp2 = UsernameWithEffectsDefault;
   return metroImportAll(metroRequire, obj2);
 }
 ({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
 const EFFECT_ORDER = DisplayNameStylesConstants.EFFECT_ORDER;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-let items = [...EFFECT_ORDER, DisplayNameEffect.DisplayNameEffect.GUMMY];
+let closure_10 = EFFECT_ORDER.filter((item) => item !== DisplayNameEffect.DisplayNameEffect.PRISM);
 let closure_12 = [10, 50, 100, 200];
 let closure_13 = { overrideSettings: true };
-let items1 = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
+let items = [{ key: "short", label: "Short", name: "Pixel7" }, { key: "medium", label: "Medium", name: "NebulaWanderer" }, { key: "long", label: "Long", name: "GalacticOverlord2049" }];
 let createStyles = createStyles_mod;
 let obj = { wrap: obj2, container: obj3, batchRow: { paddingVertical: 2 }, optionButtons: { flexWrap: "wrap" } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: nativeDefault.space.PX_16 };
@@ -160,25 +160,25 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   const run = mountTimer.run;
   const begin = mountTimer.begin;
   const measure = mountTimer.measure;
-  items1 = [addScroll];
+  const items1 = [addScroll];
   const cancel = mountTimer.cancel;
   const items2 = [first2];
   const callback = first1.useCallback((arg0) => {
     addScroll(arg0);
   }, items1);
-  const memo = first1.useMemo(() => items1.find((key) => key.key === first2).name, items2);
+  const memo = first1.useMemo(() => items.find((key) => key.key === first2).name, items2);
   const items3 = [memo];
   const memo1 = first1.useMemo(() => {
-    const obj = _mod10909;
+    const obj = _mod10957;
     return obj.splitGraphemes(memo).length;
   }, items3);
   const items4 = [first];
-  const memo2 = first1.useMemo(() => items.filter((item) => set.has(item)), items4);
+  const memo2 = first1.useMemo(() => measure.filter((item) => set.has(item)), items4);
   const items5 = [memo2];
   const memo3 = first1.useMemo(() => {
     let str = "All (rotation)";
     const arr = memo2;
-    if (memo2.length !== items.length) {
+    if (memo2.length !== measure.length) {
       const mapped = arr.map(effectName);
       str = mapped.join(" + ");
     }
@@ -222,7 +222,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
   const TableRow = tmp2(tmp3[21]).TableRow;
   obj7 = { spacing: 8, children: items8 };
   Stack2 = tmp2(tmp3[13]).Stack;
-  items8 = [run(tmp2(tmp3[14]).Text, { variant: "text-sm/semibold", color: "text-subtle", children: "Effects (checked render in rotation)" }), ];
+  items8 = [run(tmp2(tmp3[14]).Text, { variant: "body-sm/semibold", color: "text-subtle", children: "Effects (checked render in rotation)" }), ];
   const obj8 = {
     spacing: 4,
     children: measure.map((item) => {
@@ -296,7 +296,7 @@ export default function DevToolsDisplayNameEffectsBenchmarkScreen() {
               const length = String(Math.max(run.params.rowCount - 1, 0)).length;
               const StringResult = String(arg1);
               const padStartResult = StringResult.padStart(length, "0");
-              const obj3 = _mod10909;
+              const obj3 = _mod10957;
               const splitGraphemesResult = obj3.splitGraphemes(name);
               sum = padStartResult;
               const tmp = metroImportAll;

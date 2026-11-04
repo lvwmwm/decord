@@ -1,17 +1,17 @@
-// Module ID: 18995
-// Function ID: 18996
+// Module ID: 19098
+// Function ID: 19099
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1377, 11764, 5719, 1113, 5747, 9656, 12659, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1377, 11820, 5732, 1113, 5761, 9675, 12740, 2]
 // Exports: default
 
-// Module 18995 (GroupDMRecipientLimitTitle)
+// Module 19098 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11764 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12659 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11820 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12740 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -80,7 +80,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
   const obj6 = { style: tmp.subtitleRow, children: items1 };
   const tmp14 = metroImportAll;
   if ("entitled" === groupDMNitroAudience && recipientLimit > MAX_GROUP_DM_PARTICIPANTS) {
-    const NitroWheelIcon = tmp2(9656).NitroWheelIcon;
+    const NitroWheelIcon = tmp2(9675).NitroWheelIcon;
     if (memberCount > MAX_GROUP_DM_PARTICIPANTS) {
       token2 = token1;
     }
@@ -89,7 +89,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
   }
   items1 = [tmp15Result, ];
   const obj8 = { children: items };
-  const obj9 = { lineClamp: 1, variant: "text-xs/medium", color: str2, style: tmp.subtitle, maxFontSizeMultiplier: 2, children: formatToPlainStringResult };
+  const obj9 = { lineClamp: 1, variant: "body-xs/medium", color: str2, style: tmp.subtitle, maxFontSizeMultiplier: 2, children: formatToPlainStringResult };
   items1[1] = metroRequire(Text_Text.Text, obj9);
   items[1] = metroImportDefault(React3, obj6);
   const tmp13Result = metroImportDefault(tmp14, obj8);

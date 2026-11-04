@@ -1,12 +1,12 @@
-// Module ID: 18907
-// Function ID: 18908
+// Module ID: 19010
+// Function ID: 19011
 // Name: GenericTextRow
-// Dependencies: [5, 19, 17, 21, 5141, 5747, 18860, 2]
+// Dependencies: [5, 19, 17, 21, 5141, 5761, 18963, 2]
 
-// Module 18907 (GenericTextRow)
+// Module 19010 (GenericTextRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import SearchListRow2 from "SearchListRow" /* 18860 */;
+import SearchListRow2 from "SearchListRow" /* 18963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function GenericTextRow(text) {
       }
     }
   }), items);
-  let obj2 = { lineClamp: 1, variant: "text-md/medium", color: "mobile-text-heading-primary", style: tmp.container, children: text };
+  let obj2 = { lineClamp: 1, variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.container, children: text };
   const label = <View style={tmp.title}>{null}</View>;
   let icon1 = null != icon;
   const SearchListRow = SearchListRow2.SearchListRow;

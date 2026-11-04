@@ -1,25 +1,25 @@
-// Module ID: 17156
-// Function ID: 17157
+// Module ID: 17248
+// Function ID: 17249
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5142, 8855, 21, 5141, 575, 8861, 2113, 504, 8864, 11531, 1113, 3059, 11644, 17155, 6973, 8854, 4963, 1187, 8944, 10902, 10903, 5747, 2]
+// Dependencies: [19, 17, 5142, 8872, 21, 5141, 575, 8878, 2113, 504, 8881, 11581, 1113, 3059, 11695, 17247, 6988, 8871, 4963, 1187, 8961, 10950, 10951, 5761, 2]
 // Exports: default
 
-// Module 17156 (DisplayNameStylesEditPreview)
+// Module 17248 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import DateUtils from "DateUtils" /* 4963 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 6973 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8854 */;
-import RecentAvatarUtils from "RecentAvatarUtils" /* 8864 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8944 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10902 */;
-import types from "types" /* 10903 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 6988 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8871 */;
+import RecentAvatarUtils from "RecentAvatarUtils" /* 8881 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8961 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10950 */;
+import types from "types" /* 10951 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8855 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8872 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -81,14 +81,14 @@ function ChatPreview(chatMessage) {
   items1 = [metroImportDefault(Avatar, obj5), ];
   const obj6 = { style: tmp.chatContent, children: items3 };
   const obj7 = { style: tmp.chatHeader, children: items2 };
-  const obj8 = { userId: user.id, guildId, userName: displayName, variant: "text-md/semibold", effectDisplayType: types.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles, style: tmp.chatUsername };
+  const obj8 = { userId: user.id, guildId, userName: displayName, variant: "body-md/semibold", effectDisplayType: types.EffectDisplayType.PLAIN, lineClamp: 1, pendingDisplayNameStyles: displayNameStyles, style: tmp.chatUsername };
   const tmp5Result = UsernameWithEffectsDefault;
   items2 = [metroImportDefault(tmp5Result, obj8), ];
-  const obj9 = { variant: "text-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo };
+  const obj9 = { variant: "body-xs/medium", color: "text-muted", style: tmp.chatTimestamp, children: memo };
   items2[1] = metroImportDefault(Text_Text.Text, obj9);
   items3 = [metroImportAll(View, obj7), ];
-  const obj10 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: chatMessage };
-  const Text = tmp2(5747).Text;
+  const obj10 = { variant: "body-md/normal", color: "text-default", style: tmp.chatMessageText, children: chatMessage };
+  const Text = tmp2(5761).Text;
   if (chatMessage == null) {
     const intl = tmp2(1113).intl;
     chatMessage = intl.string(tmp5(3059).h5Cuej);

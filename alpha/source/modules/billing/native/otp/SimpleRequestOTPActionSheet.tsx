@@ -1,24 +1,24 @@
-// Module ID: 17848
-// Function ID: 17849
+// Module ID: 17944
+// Function ID: 17945
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1385, 7016, 1072, 1387, 21, 3, 1627, 10692, 504, 11524, 7843, 2112, 10042, 14565, 5381, 6079, 7856, 6147, 5747, 7103, 5754, 10826, 1266, 10690, 5395, 10819, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7031, 1072, 1387, 21, 3, 1627, 10740, 504, 11574, 7859, 2112, 10090, 14645, 5382, 6094, 7872, 6162, 5761, 7118, 5768, 10874, 1266, 10738, 5396, 10867, 2]
 // Exports: default
 
-// Module 17848 (SimpleRequestOTPActionSheet)
+// Module 17944 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7843 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7856 */;
-import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10690 */;
-import NativePaymentContext from "NativePaymentContext" /* 10819 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7872 */;
+import PremiumAnalyticsUtils from "PremiumAnalyticsUtils" /* 10738 */;
+import NativePaymentContext from "NativePaymentContext" /* 10867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import SKUStore from "SKUStore" /* 7016 */;
+import SKUStore from "SKUStore" /* 7031 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f112524 = () => {
+  const f113274 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -125,12 +125,12 @@ function GiftPurchaseSKUView(selectedSkuId) {
   [first, dependencyMap] = react.useState(false);
   const currentUser = memo1.getCurrentUser();
   _slicedToArray = react.useRef({});
-  let obj2 = selectedSkuId(10692);
+  let obj2 = selectedSkuId(10740);
   const giftStyle = obj2.useNativeGiftContext().giftStyle;
   let obj3 = selectedSkuId(504);
   let items = [closure_8];
   const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(selectedSkuId));
-  let obj4 = selectedSkuId(11524);
+  let obj4 = selectedSkuId(11574);
   const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   react = product;
@@ -280,10 +280,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(14565)(obj6);
+  closure_8 = tmp(14645)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f112524, items5), 2);
-  tmp3(obj.useMemo(f112524, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f113274, items5), 2);
+  tmp3(obj.useMemo(f113274, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }
@@ -291,9 +291,9 @@ function GiftPurchaseSKUView(selectedSkuId) {
     isFetching = null == product;
   }
   const obj8 = { spacing: 24, style: { paddingTop: rect.top, paddingBottom: rect.bottom, paddingHorizontal: 12 }, children: items7 };
-  const Stack = tmp7(6147).Stack;
+  const Stack = tmp7(6162).Stack;
   let name;
-  const Text = tmp7(5747).Text;
+  const Text = tmp7(5761).Text;
   if (stateFromStores != null) {
     name = stateFromStores.name;
   }
@@ -307,10 +307,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     }
   }
   items6[14] = str;
-  items7 = [tmp18(Text, { variant: "text-md/medium", color: "text-overlay-light", children: items6 }), , ];
-  const Card = tmp7(7103).Card;
+  items7 = [tmp18(Text, { variant: "body-md/medium", color: "text-overlay-light", children: items6 }), , ];
+  const Card = tmp7(7118).Card;
   let str4 = "Send Gift";
-  const Button = tmp7(5754).Button;
+  const Button = tmp7(5768).Button;
   if (isFetching) {
     str4 = "Loading...";
   }
@@ -325,10 +325,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
   };
   items7[1] = closure_12(Card, obj9);
   const obj11 = { children: items9 };
-  const Card2 = tmp7(7103).Card;
-  const obj12 = { variant: "text-md/medium", color: "text-overlay-light", children: items8 };
+  const Card2 = tmp7(7118).Card;
+  const obj12 = { variant: "body-md/medium", color: "text-overlay-light", children: items8 };
   items8 = ["Select style: ", giftStyle];
-  items9 = [tmp18(tmp7(5747).Text, obj12), tmp21(tmp(10826), {})];
+  items9 = [tmp18(tmp7(5761).Text, obj12), tmp21(tmp(10874), {})];
   items7[2] = closure_11(Card2, obj11);
   return closure_11(Stack, obj8);
 }
@@ -362,7 +362,7 @@ function SimpleRequestOTPActionSheet(giftMessage) {
           children: closure_12(GiftPurchaseSKUView, obj3)
         };
         obj3 = { selectedSkuId, giftRecipientId, giftMessage };
-        const NativeGiftContextProvider = tmp(10692).NativeGiftContextProvider;
+        const NativeGiftContextProvider = tmp(10740).NativeGiftContextProvider;
         tmp6Result = closure_12(NativeGiftContextProvider, obj2);
         tmp8 = closure_12;
       }
@@ -371,14 +371,14 @@ function SimpleRequestOTPActionSheet(giftMessage) {
     }
   }
   tmp8 = closure_12;
-  const items = [closure_12(require("Text/Text").Text, { variant: "text-lg/semibold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
+  const items = [closure_12(require("Text/Text").Text, { variant: "body-lg/semibold", color: "text-feedback-warning", children: "Gift purchasing is the only supported feature on Android in this version." }), ];
   let str = "none";
-  const Text = tmp(5747).Text;
+  const Text = tmp(5761).Text;
   const tmp7 = View;
   if (null != requestType) {
     str = requestType;
   }
-  const obj6 = { variant: "text-md/normal", color: "text-feedback-warning", children: items1 };
+  const obj6 = { variant: "body-md/normal", color: "text-feedback-warning", children: items1 };
   items1 = ["Request type: ", str];
   const obj5 = { children: items };
   items[1] = closure_11(Text, obj6);

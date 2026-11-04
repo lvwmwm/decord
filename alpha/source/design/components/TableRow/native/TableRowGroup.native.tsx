@@ -1,16 +1,16 @@
-// Module ID: 7186
-// Function ID: 7187
+// Module ID: 7201
+// Function ID: 7202
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 5719, 7098, 7102, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 5732, 7113, 7117, 2]
 // Exports: TableRowGroup
 
-// Module 7186 (TableRowGroup)
+// Module 7201 (TableRowGroup)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TableRowDivider from "TableRowDivider" /* 7098 */;
-import react2 from "react" /* 7102 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TableRowDivider from "TableRowDivider" /* 7113 */;
+import react2 from "react" /* 7117 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -30,7 +30,7 @@ class TableRowGroupTitle {
     let style;
     let title;
     ({ title, style, lineClamp } = arg0);
-    const obj = { accessibilityRole: "header", variant: "text-md/medium", color: "text-subtle", style: items, lineClamp, children: title };
+    const obj = { accessibilityRole: "header", variant: "body-md/medium", color: "text-subtle", style: items, lineClamp, children: title };
     items = [closure_8().title, style];
     closure_8();
     return hasOwnProperty(Text_Text.Text, obj);
@@ -101,7 +101,7 @@ export function TableRowGroup(children) {
   items = [tmp6Result, , , ];
   let tmp6Result3 = null != description;
   if (tmp6Result3) {
-    const obj4 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.description, children: description };
+    const obj4 = { variant: "body-sm/normal", color: "text-subtle", style: tmp.description, children: description };
     tmp6Result3 = tmp6(Text_Text.Text, obj4);
   }
   items[1] = tmp6Result3;

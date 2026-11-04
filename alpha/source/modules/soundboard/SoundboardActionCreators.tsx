@@ -1,18 +1,18 @@
-// Module ID: 7641
-// Function ID: 7642
+// Module ID: 7657
+// Function ID: 7658
 // Name: SoundboardActionCreators
-// Dependencies: [5, 6178, 6180, 1072, 1082, 1282, 7642, 572, 7643, 6567, 7644, 1252, 4971, 12, 6078, 1113, 7645, 2]
+// Dependencies: [5, 6193, 6195, 1072, 1082, 1282, 7658, 572, 7659, 6582, 7660, 1252, 4971, 12, 6093, 1113, 7661, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7641 (SoundboardActionCreators)
+// Module 7657 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4971 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
-import SoundboardConstants from "SoundboardConstants" /* 6180 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
+import SoundboardConstants from "SoundboardConstants" /* 6195 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 6178 */;
+import SoundboardStore from "SoundboardStore" /* 6193 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
@@ -141,7 +141,7 @@ function _maybeFetchDefaultSounds() {
 }
 function _maybeFetchGuildSoundboardSounds() {
   let SOUNDBOARD_SOUNDS_RECEIVED;
-  obj = SOUNDBOARD_SOUNDS_RECEIVED(7644);
+  obj = SOUNDBOARD_SOUNDS_RECEIVED(7660);
   const guildIdsToFetchSoundsFor = obj.getGuildIdsToFetchSoundsFor();
   if (0 === guildIdsToFetchSoundsFor.length) {
     return Promise.resolve();
@@ -561,7 +561,7 @@ export function addFavoriteSound(soundId) {
     obj = _modDef12;
     if (obj.size(soundIds.soundIds) >= metroImportAll) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp(6078).show;
+      const show = tmp(6093).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;

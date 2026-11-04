@@ -1,18 +1,18 @@
-// Module ID: 13445
-// Function ID: 13446
+// Module ID: 13529
+// Function ID: 13530
 // Name: ExplicitMediaFalsePositiveActionSheet
-// Dependencies: [19, 17, 21, 8344, 8998, 5837, 5141, 575, 1187, 5381, 5832, 1113, 11418, 5831, 8811, 5395, 5747, 5754, 2]
+// Dependencies: [19, 17, 21, 8360, 9015, 5851, 5141, 575, 1187, 5382, 5846, 1113, 11468, 5845, 8828, 5396, 5761, 5768, 2]
 // Exports: ExplicitMediaFalsePositiveActionSheet, handleError, handleSuccess
 
-// Module 13445 (ExplicitMediaFalsePositiveActionSheet)
+// Module 13529 (ExplicitMediaFalsePositiveActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8344 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8811 */;
-import ShieldIcon from "ShieldIcon" /* 11418 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8360 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8828 */;
+import ShieldIcon from "ShieldIcon" /* 11468 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -74,13 +74,13 @@ function ExplicitMediaFalsePositivePreview(url) {
   if (obj.isVideo(url)) {
     const obj3 = { volume: 0, resizeMode: "cover", repeat: true, style: tmp.media, source: obj4, controls: true, paused: true };
     obj4 = { uri: url };
-    tmp3Result = tmp3(tmp5(8998), obj3);
+    tmp3Result = tmp3(tmp5(9015), obj3);
   } else {
     const obj5 = { style: items1, source: obj6 };
     items1 = [, ];
     ({ media: arr2[0], image: arr2[1] } = tmp);
     obj6 = { uri: url };
-    tmp3Result = tmp3(tmp5(5837), obj5);
+    tmp3Result = tmp3(tmp5(5851), obj5);
   }
   return metroRequire(tmp4, obj2);
 }
@@ -161,7 +161,7 @@ export function ExplicitMediaFalsePositiveActionSheet(channelId) {
   const Text = channelId(onConfirmPress[16]).Text;
   intl = channelId(onConfirmPress[11]).intl;
   items3 = [closure_6(Text, obj2), , , ];
-  let obj3 = { variant: "text-sm/normal", children: intl2.string(channelId(onConfirmPress[11]).t["z4du/I"]) };
+  let obj3 = { variant: "body-sm/normal", children: intl2.string(channelId(onConfirmPress[11]).t["z4du/I"]) };
   const Text2 = channelId(onConfirmPress[16]).Text;
   intl2 = channelId(onConfirmPress[11]).intl;
   items3[1] = closure_6(Text2, obj3);

@@ -1,10 +1,10 @@
-// Module ID: 8969
-// Function ID: 8970
+// Module ID: 8986
+// Function ID: 8987
 // Name: computeGlobalSpoilerDisplay
 // Dependencies: [5073, 1072, 563, 4966, 2]
 // Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 8969 (computeGlobalSpoilerDisplay)
+// Module 8986 (computeGlobalSpoilerDisplay)
 import PermissionStore from "PermissionStore" /* 5073 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

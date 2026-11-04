@@ -1,22 +1,22 @@
-// Module ID: 18412
-// Function ID: 18413
+// Module ID: 18506
+// Function ID: 18507
 // Name: GuildActionRows
-// Dependencies: [19, 17, 7835, 6962, 11186, 7385, 6896, 21, 5141, 575, 7638, 5171, 4974, 563, 7831, 6864, 11714, 2123, 14068, 13970, 1113, 15808, 2]
+// Dependencies: [19, 17, 7851, 6977, 11236, 7401, 6911, 21, 5141, 575, 7654, 5171, 4974, 563, 7847, 6879, 11769, 2123, 14154, 14056, 1113, 15896, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 18412 (GuildActionRows)
+// Module 18506 (GuildActionRows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7385 */;
-import ChannelListState from "ChannelListState" /* 7831 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import ReadStateConstants from "ReadStateConstants" /* 6911 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7401 */;
+import ChannelListState from "ChannelListState" /* 7847 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7835 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+import NewChannelsStore from "NewChannelsStore" /* 7851 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export function GuildRolesAndChannelsRow(guild) {
   const selected = guild.selected;
   let id;
   const tmp = closure_10();
-  const tmp4 = id(7638)(guild);
+  const tmp4 = id(7654)(guild);
   const tmp2 = id;
   id = guild.id;
   let obj = guild(5171);
@@ -52,11 +52,11 @@ export function GuildRolesAndChannelsRow(guild) {
   const callback = react.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { guildId: id };
-    obj.pushLazy(asyncRequire(11714, dependencyMap.paths), obj2, closure_7);
+    obj.pushLazy(asyncRequire(11769, dependencyMap.paths), obj2, closure_7);
   }, items2);
-  let SELECTED = guild(14068).ChannelModes.DEFAULT;
+  let SELECTED = guild(14154).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = tmp5(14068).ChannelModes.SELECTED;
+    SELECTED = tmp5(14154).ChannelModes.SELECTED;
   }
   let tmp10 = !result;
   if (result) {
@@ -67,9 +67,9 @@ export function GuildRolesAndChannelsRow(guild) {
   }
   let tmp11 = null;
   if (tmp10) {
-    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(13970).NewBadge, {})}</View>;
+    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(14056).NewBadge, {})}</View>;
   }
-  tmp2(14068);
+  tmp2(14154);
   const intl = tmp5(1113).intl;
   const string = intl.string;
   const t = tmp5(1113).t;
@@ -78,7 +78,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     stringResult = string(t.et6wav);
   }
-  const BaseChannelName = tmp5(14068).BaseChannelName;
+  const BaseChannelName = tmp5(14154).BaseChannelName;
   const intl2 = tmp5(1113).intl;
   const string2 = intl2.string;
   const t2 = tmp5(1113).t;
@@ -87,7 +87,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     string2(t2.et6wav);
   }
-  ({ mode: SELECTED, IconComponent: guild(15808).ChannelListMagnifyingGlassIcon });
-  const BaseChannelIcon = tmp5(14068).BaseChannelIcon;
+  ({ mode: SELECTED, IconComponent: guild(15896).ChannelListMagnifyingGlassIcon });
+  const BaseChannelIcon = tmp5(14154).BaseChannelIcon;
   return <tmp2Result onPress={callback} style={tmp.container} accessible accessibilityLabel={stringResult} accessibilityState={{ selected }} mode={SELECTED} name={null} icon={null} channelInfo={tmp11} />;
 }

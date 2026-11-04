@@ -1,12 +1,12 @@
-// Module ID: 14791
-// Function ID: 14792
+// Module ID: 14871
+// Function ID: 14872
 // Name: FederatedSocialModal
-// Dependencies: [5, 32, 19, 1072, 21, 5141, 6694, 1113, 7467, 5829, 14792, 7412, 5747, 7207, 1187, 5754, 7124, 7290, 2]
+// Dependencies: [5, 32, 19, 1072, 21, 5141, 6709, 1113, 7483, 5843, 14872, 7428, 5761, 7222, 1187, 5768, 7139, 7306, 2]
 // Exports: default
 
-// Module 14791 (FederatedSocialModal)
+// Module 14871 (FederatedSocialModal)
 import Constants from "Constants" /* 1072 */;
-import PlatformsDefault from "Platforms" /* 6694 */;
+import PlatformsDefault from "Platforms" /* 6709 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -155,7 +155,7 @@ function FederatedSocialModalScreen(onClose) {
   let obj4 = { bottom: true, style: tmp.container, children: items };
   const validateHandleResult = obj3.validateHandle(first, platformType);
   const SafeAreaPaddingView = require("common/SafeAreaView").SafeAreaPaddingView;
-  let obj5 = { variant: "text-md/normal", color: "text-default", style: tmp.description, children: intl2.formatToPlainString(require("intl").t["7TByKh"], { serviceName: name }) };
+  let obj5 = { variant: "body-md/normal", color: "text-default", style: tmp.description, children: intl2.formatToPlainString(require("intl").t["7TByKh"], { serviceName: name }) };
   const Text = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items = [obj(Text, obj5), , ];

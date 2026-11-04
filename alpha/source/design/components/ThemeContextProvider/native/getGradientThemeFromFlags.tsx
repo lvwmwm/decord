@@ -1,10 +1,10 @@
-// Module ID: 5314
-// Function ID: 5315
+// Module ID: 5315
+// Function ID: 5316
 // Name: getGradientThemeFromFlags
 // Dependencies: [5207, 2]
 // Exports: getGradientThemeFromFlags
 
-// Module 5314 (getGradientThemeFromFlags)
+// Module 5315 (getGradientThemeFromFlags)
 import native from "native" /* 5207 */;
 import size from "module_2" /* 2 */;
 

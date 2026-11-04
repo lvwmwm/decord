@@ -1,14 +1,14 @@
-// Module ID: 13882
-// Function ID: 13883
+// Module ID: 13968
+// Function ID: 13969
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 4987, 7693, 4974, 1113, 5298, 10085, 2]
+// Dependencies: [32, 19, 4987, 7709, 4974, 1113, 5299, 10133, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 13882 (RefreshChatInputCoachmark)
+// Module 13968 (RefreshChatInputCoachmark)
 import intl3 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 5298 */;
-import useCoachmark from "useCoachmark" /* 10085 */;
+import OmnibuttonCoachmarkRive from "OmnibuttonCoachmarkRive" /* 5299 */;
+import useCoachmark from "useCoachmark" /* 10133 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

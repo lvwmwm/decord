@@ -1,9 +1,9 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9181
+// Function ID: 9182
 // Name: PinotConstants
 // Dependencies: [2]
 
-// Module 9164 (PinotConstants)
+// Module 9181 (PinotConstants)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ SWP_CHANNEL_SUMMARIES_DISABLED: "SWP_CHANNEL_SUMMARIES_DISABLED", SWP_CHANNEL_MESSAGES_DISABLED: "SWP_CHANNEL_MESSAGES_DISABLED" });

@@ -1,20 +1,20 @@
-// Module ID: 7472
-// Function ID: 7473
+// Module ID: 7488
+// Function ID: 7489
 // Name: GuildOnboardingCompleted
-// Dependencies: [19, 17, 5142, 5047, 5012, 1385, 7388, 21, 5141, 575, 1499, 504, 7417, 5207, 7473, 1411, 2021, 1380, 5397, 1652, 5377, 5837, 7412, 5747, 1113, 1187, 7474, 7083, 2171, 7499, 5754, 2]
+// Dependencies: [19, 17, 5142, 5047, 5012, 1385, 7404, 21, 5141, 575, 1499, 504, 7433, 5207, 7489, 1411, 2021, 1380, 5398, 1652, 5378, 5851, 7428, 5761, 1113, 1187, 7490, 7098, 2171, 7515, 5768, 2]
 // Exports: default
 
-// Module 7472 (GuildOnboardingCompleted)
+// Module 7488 (GuildOnboardingCompleted)
 import nativeDefault from "native" /* 575 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import UserProfileRolesCard from "UserProfileRolesCard" /* 7474 */;
+import UserProfileRolesCard from "UserProfileRolesCard" /* 7490 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7388 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7404 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -262,7 +262,7 @@ export default function GuildOnboardingCompleted(guildId) {
       }
       intl = tmp2(tmp3[24]).intl;
       const items14 = [isScreenReaderEnabled(Text, obj12), , , ];
-      const obj13 = { style: tmp.subtitle, accessibilityRole: "header", variant: "text-md/medium", color: str, children: intl2.string(tmp2(tmp3[24]).t.og4NNr) };
+      const obj13 = { style: tmp.subtitle, accessibilityRole: "header", variant: "body-md/medium", color: str, children: intl2.string(tmp2(tmp3[24]).t.og4NNr) };
       const Text2 = tmp2(tmp3[23]).Text;
       if (null == guildSplashURL) {
         str = "text-muted";
@@ -277,7 +277,7 @@ export default function GuildOnboardingCompleted(guildId) {
       items15[1] = isScreenReaderEnabled(tmp2(tmp3[23]).Text, obj16);
       let tmp29Result = null;
       if (numSharedRoleMembers > 0) {
-        const obj17 = { style: tmp.rolesHeader, variant: "text-sm/normal", color: "text-muted", children: intl3.format(tmp2(tmp3[24]).t.l1Jc1n, obj18) };
+        const obj17 = { style: tmp.rolesHeader, variant: "body-sm/normal", color: "text-muted", children: intl3.format(tmp2(tmp3[24]).t.l1Jc1n, obj18) };
         const Text3 = tmp2(tmp3[23]).Text;
         intl3 = tmp2(tmp3[24]).intl;
         obj18 = { numSharedRoleMembers };
@@ -300,7 +300,7 @@ export default function GuildOnboardingCompleted(guildId) {
         const obj20 = { style: items17, children: isScreenReaderEnabled(Text4, obj21) };
         items17 = [tmp.roleOverflow, { backgroundColor: rolePillBackgroundColor }];
         const _HermesInternal = HermesInternal;
-        obj21 = { variant: "heading-deprecated-12/semibold", color: "mobile-text-heading-primary", children: "+" + diff };
+        obj21 = { variant: "body-xs/semibold", color: "mobile-text-heading-primary", children: "+" + diff };
         Text4 = tmp2(tmp3[23]).Text;
         tmp29Result3 = tmp29(tmp40, obj20);
       }
@@ -313,12 +313,12 @@ export default function GuildOnboardingCompleted(guildId) {
       const tmp7Result3 = tmp7(tmp3[27]);
       items19 = [isScreenReaderEnabled(tmp7Result3, obj23), , ];
       const obj24 = { style: tmp.animationText, children: items20 };
-      const obj25 = { variant: "text-sm/medium", color: "mobile-text-heading-primary", children: intl4.format(tmp2(tmp3[24]).t.FXREhf, obj26) };
+      const obj25 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", children: intl4.format(tmp2(tmp3[24]).t.FXREhf, obj26) };
       const Text5 = tmp2(tmp3[23]).Text;
       intl4 = tmp2(tmp3[24]).intl;
       obj26 = { guildName: stateFromStores1.name };
       items20 = [isScreenReaderEnabled(Text5, obj25), ];
-      const obj27 = { variant: "text-xs/normal", color: "text-muted", children: "" + obj31.format("LL") };
+      const obj27 = { variant: "body-xs/normal", color: "text-muted", children: "" + obj31.format("LL") };
       const Text6 = tmp2(tmp3[23]).Text;
       const _HermesInternal2 = HermesInternal;
       obj31 = tmp7(tmp3[28])();

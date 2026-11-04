@@ -1,14 +1,14 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 12732
+// Function ID: 12733
 // Name: AppLauncherMentionableListActionSheet
-// Dependencies: [32, 19, 1072, 21, 7824, 6899, 5381, 12634, 12635, 10868, 5747, 5195, 12652, 7018, 12650, 10935, 7101, 2]
+// Dependencies: [32, 19, 1072, 21, 7840, 6914, 5382, 12715, 12716, 10916, 5761, 5195, 12733, 7033, 12731, 10983, 7116, 2]
 // Exports: default
 
-// Module 12651 (AppLauncherMentionableListActionSheet)
+// Module 12732 (AppLauncherMentionableListActionSheet)
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6899 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7824 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6914 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7840 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -100,7 +100,7 @@ export default function AppLauncherMentionableListActionSheet(channel) {
             const result3 = item.result;
             const user = result3.user;
             const obj3 = { type: closure_5.NONE, user, nickname: result3.nick, guildId: guild_id, subLabel: ref(Text, obj4) };
-            obj4 = { color: "text-subtle", variant: "text-xs/normal", children: obj9.getUserTag(user) };
+            obj4 = { color: "text-subtle", variant: "body-xs/normal", children: obj9.getUserTag(user) };
             const tmp25 = onActionSheetDismiss(channel[9]);
             Text = require("Text/Text").Text;
             obj9 = require("UserUtils");
@@ -133,7 +133,7 @@ export default function AppLauncherMentionableListActionSheet(channel) {
             }
             const obj7 = { label: tmp9(tmp8(channel[10]).Text, obj8), icon: tmp7 };
             const TableRow = tmp8(tmp3[16]).TableRow;
-            obj8 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: result.text };
+            obj8 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: result.text };
             const merged2 = Object.assign(obj);
             return tmp9(TableRow, obj7, result.text);
           }

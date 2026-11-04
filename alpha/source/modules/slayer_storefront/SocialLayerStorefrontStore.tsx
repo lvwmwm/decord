@@ -1,9 +1,9 @@
-// Module ID: 7530
-// Function ID: 7531
+// Module ID: 7546
+// Function ID: 7547
 // Name: SocialLayerStorefrontStore
 // Dependencies: [2191, 502, 504, 572, 2]
 
-// Module 7530 (SocialLayerStorefrontStore)
+// Module 7546 (SocialLayerStorefrontStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
@@ -58,19 +58,19 @@ class SocialLayerStorefrontStore extends Store {
   getLoadedStorefrontApplicationIds() {
     return Object.keys(obj12);
   }
-  getStorefrontFetchState(type) {
+  getStorefrontFetchState(guildOrApplication) {
     let applicationId;
     let guildId;
     let tmp3;
-    if ("guild" === type.type) {
-      guildId = type.guildId;
+    if ("guild" === guildOrApplication.type) {
+      guildId = guildOrApplication.guildId;
     } else {
-      guildId = closure_18[type.applicationId];
+      guildId = closure_18[guildOrApplication.applicationId];
     }
-    if ("guild" === type.type) {
-      applicationId = closure_17[type.guildId];
+    if ("guild" === guildOrApplication.type) {
+      applicationId = closure_17[guildOrApplication.guildId];
     } else {
-      applicationId = type.applicationId;
+      applicationId = guildOrApplication.applicationId;
     }
     if (null != guildId) {
       tmp3 = obj11[guildId];

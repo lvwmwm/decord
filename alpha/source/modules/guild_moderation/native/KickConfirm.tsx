@@ -1,12 +1,12 @@
-// Module ID: 13413
-// Function ID: 13414
+// Module ID: 13497
+// Function ID: 13498
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 5012, 1385, 21, 5141, 575, 5730, 11543, 504, 13414, 7022, 5837, 13415, 5747, 1113, 5195, 12360, 3995, 7373, 5754, 13416, 2]
+// Dependencies: [32, 19, 17, 5012, 1385, 21, 5141, 575, 5743, 11593, 504, 13498, 7037, 5851, 13499, 5761, 1113, 5195, 12425, 3995, 7389, 5768, 13500, 2]
 
-// Module 13413 (KickConfirm)
+// Module 13497 (KickConfirm)
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 7022 */;
-import removeConjureServerAppDefault from "removeConjureServerApp" /* 13416 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
+import removeConjureServerAppDefault from "removeConjureServerApp" /* 13500 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let tmp4Result6;
   let tmp7Result4;
   let v1Ie87p;
-  const f104289 = () => ({ kicking: false, kickError: false });
+  const f105025 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -131,9 +131,9 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   closure_8 = tmp18[1];
   const first1 = tmp18[0];
   ref = obj.useRef("");
-  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f104289), 2);
+  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f105025), 2);
   const items4 = [stateFromStores, onKick, stateFromStores1];
-  stateFromStores(stateFromStores1.useState(f104289), 2);
+  stateFromStores(stateFromStores1.useState(f105025), 2);
   closure_11 = obj.useCallback(() => {
     const tmp2 = null != stateFromStores && null != stateFromStores1;
     if (tmp2) {
@@ -169,7 +169,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
       const tmp24 = items3;
       if (null == conjureServerApp) {
         const obj9 = { children: items6 };
-        const obj10 = { style: tmp.redText, variant: "text-md/semibold", children: formatToPlainString(v1Ie87p, obj11) };
+        const obj10 = { style: tmp.redText, variant: "body-md/semibold", children: formatToPlainString(v1Ie87p, obj11) };
         const Text = tmp7(tmp5[15]).Text;
         const intl = tmp7(tmp5[16]).intl;
         formatToPlainString = intl.formatToPlainString;
@@ -177,21 +177,21 @@ const memoResult = react.memo(function KickConfirm(guildId) {
         v1Ie87p = tmp7(tmp5[16]).t["1Ie87p"];
         tmp4Result4 = tmp4(tmp5[17]);
         items6 = [ref(Text, obj10), ];
-        const obj12 = { variant: "text-lg/semibold", color: "text-feedback-warning", children: stateFromStores.name };
+        const obj12 = { variant: "body-lg/semibold", color: "text-feedback-warning", children: stateFromStores.name };
         items6[1] = ref(tmp7(tmp5[15]).Text, obj12);
         obj13 = obj9;
       } else {
         obj13 = { children: items7 };
-        const obj14 = { style: tmp.conjureTitle, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: tmp7Result4.formatWithAppTag(tmp4(tmp5[19]).wVNCN7, conjureServerApp.targetAppName) };
+        const obj14 = { style: tmp.conjureTitle, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: tmp7Result4.formatWithAppTag(tmp4(tmp5[19]).wVNCN7, conjureServerApp.targetAppName) };
         const Text5 = tmp7(tmp5[15]).Text;
         tmp7Result4 = tmp7(tmp5[18]);
         items7 = [ref(Text5, obj14), ];
-        const obj15 = { style: tmp.conjureServerName, variant: "text-md/semibold", color: "text-muted", children: stateFromStores.name };
+        const obj15 = { style: tmp.conjureServerName, variant: "body-md/semibold", color: "text-muted", children: stateFromStores.name };
         items7[1] = ref(tmp7(tmp5[15]).Text, obj15);
       }
       items5[1] = closure_11(c10, obj13);
       const items8 = [closure_11(conjureServerApp, obj7), , , , , , ];
-      const obj16 = { style: tmp.blurb, variant: "heading-md/medium", color: "text-feedback-warning", children: formatResult };
+      const obj16 = { style: tmp.blurb, variant: "heading-sm/medium", color: "text-feedback-warning", children: formatResult };
       const Text2 = tmp7(tmp5[15]).Text;
       if (null == conjureServerApp) {
         const intl3 = tmp7(tmp5[16]).intl;
@@ -261,7 +261,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
       items8[4] = ref(conjureServerApp, obj22);
       let tmp23Result4 = null;
       if (first1) {
-        const obj24 = { style: tmp.errorText, variant: "text-md/semibold", color: "input-text-error-default", children: intl6.string(tmp4(tmp5[19]).PJ2Fkn) };
+        const obj24 = { style: tmp.errorText, variant: "body-md/semibold", color: "input-text-error-default", children: intl6.string(tmp4(tmp5[19]).PJ2Fkn) };
         const Text3 = tmp7(tmp5[15]).Text;
         intl6 = tmp7(tmp5[16]).intl;
         tmp23Result4 = tmp23(Text3, obj24);
@@ -269,7 +269,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
       items8[5] = tmp23Result4;
       let tmp23Result5 = null;
       if (tmp21.kickError) {
-        const obj25 = { style: tmp.errorText, variant: "text-md/semibold", color: "input-text-error-default", children: format2(UktD5J, obj26) };
+        const obj25 = { style: tmp.errorText, variant: "body-md/semibold", color: "input-text-error-default", children: format2(UktD5J, obj26) };
         const Text4 = tmp7(tmp5[15]).Text;
         const intl7 = tmp7(tmp5[16]).intl;
         format2 = intl7.format;

@@ -1,15 +1,15 @@
-// Module ID: 11529
-// Function ID: 11530
+// Module ID: 11579
+// Function ID: 11580
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 5141, 575, 5855, 7212, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5869, 7227, 5761, 2]
 // Exports: default
 
-// Module 11529 (InfoBox)
+// Module 11579 (InfoBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5855 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7212 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5869 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7227 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -23,9 +23,9 @@ const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { infoBox: obj2, infoBoxWarning: obj3, infoText: { flex: 1 } };
-obj2 = { borderRadius: nativeDefault.radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO, flexDirection: "row", alignItems: "center", gap: 8 };
+obj2 = { borderRadius: nativeDefault.radii.xs, padding: 8, borderStyle: "solid", borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO, flexDirection: "row", alignItems: "center", gap: 8 };
 createStyles = createStyles.createStyles;
-obj3 = { borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
+obj3 = { borderColor: nativeDefault.colors.ICON_FEEDBACK_WARNING, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING };
 let closure_6 = createStyles(obj);
 let obj4 = { INFO: "info", WARNING: "warning" };
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/native/InfoBox.tsx");
@@ -56,7 +56,7 @@ export default function InfoBox(look) {
   obj4 = { style: items2, children: items3 };
   items2 = [style, ...{ [closure_1_7.INFO]: items, [closure_1_7.WARNING]: items1 }[INFO]];
   items3 = [obj[INFO], ];
-  const obj5 = { style: tmp2.infoText, variant: "text-sm/semibold", children };
+  const obj5 = { style: tmp2.infoText, variant: "body-sm/semibold", children };
   items3[1] = React3(Text_Text.Text, obj5);
   return hasOwnProperty(View, obj4);
 };

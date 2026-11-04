@@ -1,15 +1,15 @@
-// Module ID: 15125
-// Function ID: 15126
+// Module ID: 15205
+// Function ID: 15206
 // Name: UserProfilePrivateInfoBanner
-// Dependencies: [17, 21, 5141, 575, 5747, 1113, 2]
+// Dependencies: [17, 21, 5141, 575, 5761, 1113, 2]
 // Exports: default
 
-// Module 15125 (UserProfilePrivateInfoBanner)
+// Module 15205 (UserProfilePrivateInfoBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export default function UserProfilePrivateInfoBanner(containerBackground) {
     const obj = { backgroundColor: containerBackground };
   }
   items[1] = tmp3;
-  ({ variant: "text-sm/normal", children: intl.format(intl2.t.P8ij6Z, { username }) });
+  ({ variant: "body-sm/normal", children: intl.format(intl2.t.P8ij6Z, { username }) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <tmp2 style={items}>{null}</tmp2>;

@@ -1,22 +1,22 @@
-// Module ID: 7779
-// Function ID: 7780
+// Module ID: 7795
+// Function ID: 7796
 // Name: CacheStore
-// Dependencies: [32, 5, 6688, 502, 5044, 5172, 1072, 3, 510, 5041, 7780, 7791, 9, 10, 5040, 7792, 7793, 7794, 7795, 7796, 7910, 7931, 504, 572, 5039, 7916, 7922, 7920, 7914, 5016, 7932, 1377, 7934, 7936, 5036, 2]
+// Dependencies: [32, 5, 6703, 502, 5044, 5172, 1072, 3, 510, 5041, 7796, 7807, 9, 10, 5040, 7808, 7809, 7810, 7811, 7812, 7926, 7947, 504, 572, 5039, 7932, 7938, 7936, 7930, 5016, 7948, 1377, 7950, 7952, 5036, 2]
 
-// Module 7779 (CacheStore)
+// Module 7795 (CacheStore)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import TryLoad from "TryLoad" /* 5039 */;
-import modules_MessagesDefault from "modules/Messages" /* 7780 */;
-import timeRequireDefault from "timeRequire" /* 7795 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7922 */;
-import AuthenticationUtils from "AuthenticationUtils" /* 7934 */;
+import modules_MessagesDefault from "modules/Messages" /* 7796 */;
+import timeRequireDefault from "timeRequire" /* 7811 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7938 */;
+import AuthenticationUtils from "AuthenticationUtils" /* 7950 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6688 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
@@ -919,7 +919,7 @@ function resumeFluxAndSocket(arg0) {
     let dispatcher;
     let obj3;
     try {
-      f140311();
+      f141015();
       dispatcher = dispatcher.dispatcher;
       if (dispatcher.hasStuffToDispatchNow()) {
         let c2 = true;
@@ -1012,7 +1012,7 @@ class CacheStoreClass extends Store {
       }
       function dontLoadLateLazyCache() {
         let _true;
-        const f140311 = () => {
+        const f141015 = () => {
           obj = closure_1(c2[23]);
           return obj.dispatch({ type: "CACHE_LOADED_LAZY_NO_CACHE" });
         };
@@ -1023,7 +1023,7 @@ class CacheStoreClass extends Store {
           let dispatcher;
           let obj3;
           try {
-            f140311();
+            f141015();
             dispatcher = dispatcher.dispatcher;
             if (dispatcher.hasStuffToDispatchNow()) {
               let c2 = true;

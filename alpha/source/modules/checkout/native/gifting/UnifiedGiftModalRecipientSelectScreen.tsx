@@ -1,15 +1,15 @@
-// Module ID: 10856
-// Function ID: 10857
+// Module ID: 10904
+// Function ID: 10905
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 10857, 21, 5141, 575, 1499, 10858, 10824, 2]
+// Dependencies: [19, 17, 10905, 21, 5141, 575, 1499, 10906, 10872, 2]
 // Exports: default
 
-// Module 10856 (UnifiedGiftModalRecipientSelectScreen)
+// Module 10904 (UnifiedGiftModalRecipientSelectScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10824 */;
-import UserRowConstants from "UserRowConstants" /* 10857 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 10872 */;
+import UserRowConstants from "UserRowConstants" /* 10905 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

@@ -1,17 +1,17 @@
-// Module ID: 10383
-// Function ID: 10384
+// Module ID: 10431
+// Function ID: 10432
 // Name: GIFPickerHeader
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 10377, 7224, 1652, 5377, 5380, 8152, 7341, 1113, 7339, 10375, 7106, 10384, 5747, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 10425, 7244, 1652, 5378, 5381, 8168, 7357, 1113, 7355, 10423, 7121, 10432, 5761, 2]
 
-// Module 10383 (GIFPickerHeader)
+// Module 10431 (GIFPickerHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import InputTypes from "InputTypes" /* 7224 */;
-import GifProvider from "GifProvider" /* 10375 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10377 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import InputTypes from "InputTypes" /* 7244 */;
+import GifProvider from "GifProvider" /* 10423 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10425 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const timingPresets = tmp2(5380);
+const timingPresets = tmp2(5381);
 function FavoritesSearch(onQueryChange) {
   let IconButton;
   let accessibilityElementsHidden;
@@ -193,21 +193,21 @@ const memoResult = react.memo(function GIFPickerHeader(arg0) {
   const obj = { style: tmp.container, children: tmp13Result };
   if (categoryType === GIFPickerResultTypes.SEARCH) {
     const obj2 = { size: "md", onChange: onQueryChange, placeholder: tmp5, onClear: onQueryClear, ref: searchInputRef, round: true };
-    tmp13Result = tmp6(tmp2(7339).SearchBar, obj2);
+    tmp13Result = tmp6(tmp2(7355).SearchBar, obj2);
   } else {
     let stringResult;
     const obj3 = { style: tmp.headerContainer, children: items1 };
     const obj4 = { style: tmp.header, accessibilityRole: "button", onPress: onQueryClear, accessibilityLabel: formatToPlainString(UTypEu, obj5), children: items };
-    const PressableOpacity = tmp2(7106).PressableOpacity;
+    const PressableOpacity = tmp2(7121).PressableOpacity;
     const intl4 = tmp2(1113).intl;
     formatToPlainString = intl4.formatToPlainString;
     obj5 = { destination: intl5.string(intl6.t.ffgJrs) };
     UTypEu = tmp2(1113).t.UTypEu;
     intl5 = tmp2(1113).intl;
     const obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const ChevronLargeLeftIcon = tmp2(10384).ChevronLargeLeftIcon;
+    const ChevronLargeLeftIcon = tmp2(10432).ChevronLargeLeftIcon;
     items = [metroImportDefault(ChevronLargeLeftIcon, obj6), ];
-    const Text = tmp2(5747).Text;
+    const Text = tmp2(5761).Text;
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {
       const intl3 = tmp2(1113).intl;
       stringResult = intl3.string(tmp2(1113).t.TsWCdW);
@@ -218,7 +218,7 @@ const memoResult = react.memo(function GIFPickerHeader(arg0) {
       const intl = tmp2(1113).intl;
       stringResult = intl.string(tmp2(1113).t["5h0QOP"]);
     }
-    const obj7 = { variant: "text-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2, children: stringResult };
+    const obj7 = { variant: "body-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2, children: stringResult };
     items[1] = metroImportDefault(Text, obj7);
     items1 = [React4(PressableOpacity, obj4), ];
     let tmp6Result2 = categoryType === tmp8.FAVORITES;

@@ -1,15 +1,15 @@
-// Module ID: 18973
-// Function ID: 18974
+// Module ID: 19076
+// Function ID: 19077
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 7450, 5747, 1113, 2190, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 7466, 5761, 1113, 2190, 2]
 // Exports: default
 
-// Module 18973 (ChannelDetailsLinkedLobby)
+// Module 19076 (ChannelDetailsLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7450 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7466 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -50,7 +50,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
     let formatResult;
     const obj = { style: items, children: items2 };
     items = [tmp.container, containerStyle];
-    const Text = tmp2(5747).Text;
+    const Text = tmp2(5761).Text;
     const tmp11 = hasOwnProperty;
     if (null != getOrFetchApplication) {
       const intl2 = tmp2(1113).intl;
@@ -60,7 +60,7 @@ export default function ChannelDetailsLinkedLobby(channel) {
       const intl = tmp2(1113).intl;
       formatResult = intl.string(tmp2(1113).t.yQqVss);
     }
-    const obj3 = { variant: "text-sm/normal", color: "text-default", children: metroRequire(tmp11, obj4) };
+    const obj3 = { variant: "body-sm/normal", color: "text-default", children: metroRequire(tmp11, obj4) };
     obj4 = { children: items1 };
     items1 = [formatResult, "  \u2022  ", ];
     const intl3 = tmp2(1113).intl;

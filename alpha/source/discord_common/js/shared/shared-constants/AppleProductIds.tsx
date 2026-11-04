@@ -1,9 +1,9 @@
-// Module ID: 7725
-// Function ID: 7726
+// Module ID: 7741
+// Function ID: 7742
 // Name: AppleProductIds
 // Dependencies: [2]
 
-// Module 7725 (AppleProductIds)
+// Module 7741 (AppleProductIds)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AppleProductIds.tsx");

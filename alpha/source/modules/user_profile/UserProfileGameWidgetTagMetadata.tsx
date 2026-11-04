@@ -1,14 +1,17 @@
-// Module ID: 15081
-// Function ID: 15082
+// Module ID: 15161
+// Function ID: 15162
 // Name: UserProfileGameWidgetTagMetadata
-// Dependencies: [15082, 1113, 2]
-// Exports: buildWidgetGameTagMetadata
+// Dependencies: [12567, 1113, 2]
+// Exports: buildWidgetGameTagMetadata, clearWidgetGameTagSection, toggleWidgetGameTag
 
-// Module 15081 (UserProfileGameWidgetTagMetadata)
+// Module 15161 (UserProfileGameWidgetTagMetadata)
 import intl2 from "intl" /* 1113 */;
-import WidgetGameTag from "WidgetGameTag" /* 15082 */;
+import WidgetGameTag from "WidgetGameTag" /* 12567 */;
 import size from "module_2" /* 2 */;
 
+let items;
+let items1;
+let items2;
 let obj = { RIBBON: "ribbon", THUMBS_UP: "thumbsUp", THUMBS_DOWN: "thumbsDown", FRIENDS: "friends" };
 let obj2 = {
   getText() {
@@ -109,6 +112,42 @@ const obj9 = {
   iconRole: obj.THUMBS_DOWN
 };
 let closure_2 = { [WidgetGameTag.WidgetGameTag.BETTER_THAN_YOU]: obj2, [WidgetGameTag.WidgetGameTag.CASUAL]: obj3, [WidgetGameTag.WidgetGameTag.INTERMEDIATE]: obj4, [WidgetGameTag.WidgetGameTag.EXPERT]: obj5, [WidgetGameTag.WidgetGameTag.OBSESSED]: obj6, [WidgetGameTag.WidgetGameTag.LOVE_IT]: obj7, [WidgetGameTag.WidgetGameTag.KIND_OF_LOVE_IT]: obj8, [WidgetGameTag.WidgetGameTag.KIND_OF_HATE_IT]: obj9, [WidgetGameTag.WidgetGameTag.RAGE_QUITTING]: obj10, [WidgetGameTag.WidgetGameTag.OPEN_TO_PLAY]: obj11, [WidgetGameTag.WidgetGameTag.LOOKING_FOR_GROUP]: obj12, [WidgetGameTag.WidgetGameTag.LOOKING_FOR_TIPS]: obj13, [WidgetGameTag.WidgetGameTag.OPEN_TO_TEACH]: obj14, [WidgetGameTag.WidgetGameTag.LOOKING_TO_DISCUSS]: obj15 };
+const obj16 = { LOOKING_FOR: "looking_for", SKILL_LEVEL: "skill_level", RATING: "rating" };
+const obj17 = { RADIO: "radio", CHECKBOX: "checkbox" };
+const obj18 = {};
+const SKILL_LEVEL = obj16.SKILL_LEVEL;
+const obj19 = {
+  getLabel() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t.MKqADM);
+  },
+  type: obj17.RADIO,
+  tags: items
+};
+items = [WidgetGameTag.WidgetGameTag.CASUAL, WidgetGameTag.WidgetGameTag.INTERMEDIATE, WidgetGameTag.WidgetGameTag.EXPERT, WidgetGameTag.WidgetGameTag.BETTER_THAN_YOU];
+obj18[SKILL_LEVEL] = obj19;
+const RATING = obj16.RATING;
+const obj20 = {
+  getLabel() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["7/umul"]);
+  },
+  type: obj17.CHECKBOX,
+  tags: items1
+};
+items1 = [WidgetGameTag.WidgetGameTag.OBSESSED, WidgetGameTag.WidgetGameTag.LOVE_IT, WidgetGameTag.WidgetGameTag.KIND_OF_LOVE_IT, WidgetGameTag.WidgetGameTag.KIND_OF_HATE_IT, WidgetGameTag.WidgetGameTag.RAGE_QUITTING];
+obj18[RATING] = obj20;
+const LOOKING_FOR = obj16.LOOKING_FOR;
+const obj21 = {
+  getLabel() {
+    const intl = intl2.intl;
+    return intl.string(intl2.t["5Dez17"]);
+  },
+  type: obj17.CHECKBOX,
+  tags: items2
+};
+items2 = [WidgetGameTag.WidgetGameTag.LOOKING_FOR_GROUP, WidgetGameTag.WidgetGameTag.OPEN_TO_PLAY, WidgetGameTag.WidgetGameTag.LOOKING_FOR_TIPS, WidgetGameTag.WidgetGameTag.OPEN_TO_TEACH, WidgetGameTag.WidgetGameTag.LOOKING_TO_DISCUSS];
+obj18[LOOKING_FOR] = obj21;
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileGameWidgetTagMetadata.tsx");
 
 export const WidgetGameTagIconRole = obj;
@@ -127,4 +166,37 @@ export function buildWidgetGameTagMetadata(arg0) {
     continue;
   }
   return obj;
+}
+export const WidgetGameTagSection = obj16;
+export const WidgetGameTagSectionType = obj17;
+export const WIDGET_GAME_TAG_SECTION_METADATA = obj18;
+export function toggleWidgetGameTag(arr, arg1) {
+  let found1;
+  let closure_0 = arg1;
+  const values = Object.values(obj18);
+  const found = values.find((tags) => {
+    tags = tags.tags;
+    return tags.includes(closure_0);
+  });
+  let type;
+  if (found != null) {
+    type = found.type;
+  }
+  if (type === obj17.RADIO) {
+    const items = [];
+    items[HermesBuiltin.arraySpread(items, arr.filter((item) => {
+      tags = tags.tags;
+      return !tags.includes(item);
+    }), 0)] = arg1;
+    found1 = items;
+  } else if (arr.includes(arg1)) {
+    found1 = arr.filter((item) => item !== closure_0);
+  } else {
+    found1 = [];
+    found1[HermesBuiltin.arraySpread(found1, arr, 0)] = arg1;
+  }
+  return found1;
+}
+export function clearWidgetGameTagSection(arr, tags) {
+  return arr.filter((item) => !tags.includes(item));
 }

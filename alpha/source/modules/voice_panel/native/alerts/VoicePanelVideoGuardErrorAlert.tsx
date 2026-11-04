@@ -1,15 +1,15 @@
-// Module ID: 14702
-// Function ID: 14703
+// Module ID: 14782
+// Function ID: 14783
 // Name: VoicePanelVideoGuardErrorAlert
-// Dependencies: [19, 21, 6084, 6084, 1113, 5747, 14699, 2]
+// Dependencies: [19, 21, 6099, 6099, 1113, 5761, 14779, 2]
 // Exports: default
 
-// Module 14702 (VoicePanelVideoGuardErrorAlert)
+// Module 14782 (VoicePanelVideoGuardErrorAlert)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AlertModal2 from "AlertModal" /* 6084 */;
-import VideoGuardExperiment from "VideoGuardExperiment" /* 14699 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AlertModal2 from "AlertModal" /* 6099 */;
+import VideoGuardExperiment from "VideoGuardExperiment" /* 14779 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ export default function VoicePanelVideoGuardErrorAlert(title) {
   const dismissModalCallback = obj.useDismissModalCallback();
   const AlertModal = AlertModal2.AlertModal;
   const intl = intl4.intl;
-  ({ variant: "text-sm/normal", color: "text-subtle", children: format(BPDKoA, obj4) });
+  ({ variant: "body-sm/normal", color: "text-subtle", children: format(BPDKoA, obj4) });
   const Text = Text_Text.Text;
   const intl2 = intl4.intl;
   format = intl2.format;

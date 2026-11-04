@@ -1,18 +1,18 @@
-// Module ID: 17665
-// Function ID: 17666
+// Module ID: 17761
+// Function ID: 17762
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1385, 10111, 21, 5141, 10112, 7186, 1113, 17666, 15485, 504, 2112, 17667, 2]
+// Dependencies: [32, 19, 17, 1385, 10159, 21, 5141, 10160, 7201, 1113, 17762, 15572, 504, 2112, 17763, 2]
 // Exports: default
 
-// Module 17665 (AppIconRows)
+// Module 17761 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
-import AppIconConstants from "AppIconConstants" /* 10111 */;
-import AppIconUtils from "AppIconUtils" /* 15485 */;
-import AppIconRowDefault from "AppIconRow" /* 17666 */;
-import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 17667 */;
+import AppIconConstants from "AppIconConstants" /* 10159 */;
+import AppIconUtils from "AppIconUtils" /* 15572 */;
+import AppIconRowDefault from "AppIconRow" /* 17762 */;
+import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 17763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -27,7 +27,7 @@ let c9;
 let tmp2;
 let unpackModuleId;
 const intl4 = tmp2(1113);
-const AppIconTypes = tmp2(10112);
+const AppIconTypes = tmp2(10160);
 function BackwardsCompatibleAppIconRows(arg0) {
   let TableRowGroup;
   let _undefined;
@@ -66,7 +66,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(7186).TableRowGroup;
+    TableRowGroup = merged(7201).TableRowGroup;
     intl = merged(1113).intl;
     return closure_9(View, obj);
   }

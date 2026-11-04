@@ -1,13 +1,13 @@
-// Module ID: 11284
-// Function ID: 11285
+// Module ID: 11334
+// Function ID: 11335
 // Name: AnimatedCounter
-// Dependencies: [32, 19, 17, 21, 5141, 38, 1652, 5207, 5757, 1705, 5747, 5758, 11285, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 38, 1652, 5207, 5771, 1705, 5761, 5772, 11335, 2]
 
-// Module 11284 (AnimatedCounter)
+// Module 11334 (AnimatedCounter)
 import native from "native" /* 5207 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import springPresets from "springPresets" /* 5758 */;
-import AnimatedCounterUtils from "AnimatedCounterUtils" /* 11285 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import springPresets from "springPresets" /* 5772 */;
+import AnimatedCounterUtils from "AnimatedCounterUtils" /* 11335 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -297,7 +297,7 @@ const memoResult = react.memo(function AnimatedCounter(springConfig) {
   }
   let str2 = springConfig.textVariant;
   if (str2 === undefined) {
-    str2 = "text-sm/normal";
+    str2 = "body-sm/normal";
   }
   let defaultFormatter = springConfig.formatter;
   if (defaultFormatter === undefined) {

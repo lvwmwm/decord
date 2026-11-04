@@ -1,20 +1,20 @@
-// Module ID: 16810
-// Function ID: 16811
+// Module ID: 16902
+// Function ID: 16903
 // Name: TwoFASetupSuccess
-// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 6868, 1113, 16799, 7242, 16800, 5837, 16811, 5747, 1187, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 6883, 1113, 16891, 7262, 16892, 5851, 16903, 5761, 1187, 5768, 2]
 // Exports: default
 
-// Module 16810 (TwoFASetupSuccess)
+// Module 16902 (TwoFASetupSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7242 */;
-import TwoFASetupModal from "TwoFASetupModal" /* 16800 */;
-import AssetRegistry from "AssetRegistry" /* 16811 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7262 */;
+import TwoFASetupModal from "TwoFASetupModal" /* 16892 */;
+import AssetRegistry from "AssetRegistry" /* 16903 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -108,7 +108,7 @@ export default function TwoFASetupSuccess() {
   const obj3 = { source: AssetRegistry, style: tmp.image };
   const tmp12 = FastImageDefault;
   items[1] = closure_7(tmp12, obj3);
-  const obj4 = { style: tmp.success, variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
+  const obj4 = { style: tmp.success, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl5.t.Awk3Gw) };
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items[2] = closure_7(Text, obj4);

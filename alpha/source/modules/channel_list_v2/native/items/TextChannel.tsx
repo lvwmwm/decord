@@ -1,25 +1,25 @@
-// Module ID: 18429
-// Function ID: 18430
+// Module ID: 18523
+// Function ID: 18524
 // Name: TextChannel
-// Dependencies: [19, 17, 4989, 5045, 4990, 5073, 6962, 6895, 11186, 21, 5141, 575, 18319, 8771, 8727, 14068, 504, 6165, 7609, 18430, 5876, 1111, 10932, 18318, 9089, 14544, 18431, 11197, 5772, 9213, 5747, 7086, 14069, 9120, 18433, 18434, 2]
+// Dependencies: [19, 17, 4989, 5045, 4990, 5073, 6977, 6910, 11236, 21, 5141, 575, 18416, 8788, 8744, 14154, 504, 6180, 7625, 18524, 5890, 1111, 10980, 18415, 9106, 14624, 18525, 11247, 5786, 9230, 5761, 7101, 14155, 9137, 18527, 18528, 2]
 
-// Module 18429 (TextChannel)
+// Module 18523 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1111 */;
-import transitionToChannel2 from "transitionToChannel" /* 5876 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6165 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10932 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 18430 */;
+import transitionToChannel2 from "transitionToChannel" /* 5890 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6180 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10980 */;
+import preloadChannelAppFrame from "preloadChannelAppFrame" /* 18524 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import GatedChannelStore from "GatedChannelStore" /* 5045 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11186 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 17823
-// Function ID: 17824
+// Module ID: 17919
+// Function ID: 17920
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 2122, 1072, 21, 5141, 504, 7257, 7328, 7478, 7208, 2]
+// Dependencies: [5, 19, 17, 2122, 1072, 21, 5141, 504, 7277, 7344, 7494, 7223, 2]
 // Exports: default
 
-// Module 17823 (ClipboardCopyInput)
+// Module 17919 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

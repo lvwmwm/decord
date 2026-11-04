@@ -1,12 +1,12 @@
-// Module ID: 7899
-// Function ID: 7900
+// Module ID: 7915
+// Function ID: 7916
 // Name: UserProfileWidgetConstants
-// Dependencies: [2167, 7897, 1113, 2]
+// Dependencies: [2167, 7913, 1113, 2]
 // Exports: widgetSupportsComment, widgetSupportsTags
 
-// Module 7899 (UserProfileWidgetConstants)
+// Module 7915 (UserProfileWidgetConstants)
 import intl2 from "intl" /* 1113 */;
-import WidgetType from "WidgetType" /* 7897 */;
+import WidgetType from "WidgetType" /* 7913 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import size from "module_2" /* 2 */;
 
@@ -60,6 +60,6 @@ export const WIDGETS_SUPPORTING_TAGS = items2;
 export function widgetSupportsComment(arg0) {
   return items1.includes(arg0);
 }
-export function widgetSupportsTags(arg0) {
-  return items2.includes(arg0);
+export function widgetSupportsTags(type) {
+  return items2.includes(type);
 }

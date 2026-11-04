@@ -1,15 +1,15 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12325
+// Function ID: 12326
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 5047, 1072, 21, 5141, 575, 504, 6965, 5381, 1113, 3995, 7486, 5747, 7441, 9138, 7339, 7186, 7100, 12265, 12253, 7101, 12271, 2]
+// Dependencies: [5, 32, 19, 17, 5047, 1072, 21, 5141, 575, 504, 6980, 5382, 1113, 3995, 7502, 5761, 7457, 9155, 7355, 7201, 7115, 12326, 12314, 7116, 12332, 2]
 // Exports: default
 
-// Module 12264 (useConjureProjectSettingsForm)
+// Module 12325 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -125,7 +125,7 @@ function ConjureCollaboratorRolesSheet(guildId) {
   let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: intl2.string(require("module_3995").un99lK), footer: closure_9(closure_6, obj4), header: closure_9(BottomSheetTitleHeader, obj5), children: items4 };
   const ActionSheet = guildId(onSave[14]).ActionSheet;
   intl2 = guildId(onSave[12]).intl;
-  obj4 = { style: tmp.roleListFooter, children: closure_9(guildId(onSave[15]).Text, { variant: "text-xs/normal", color: "text-muted", children: formatToPlainStringResult }) };
+  obj4 = { style: tmp.roleListFooter, children: closure_9(guildId(onSave[15]).Text, { variant: "body-xs/normal", color: "text-muted", children: formatToPlainStringResult }) };
   obj5 = { title: intl3.string(require("module_3995")["pO3+p5"]), trailing: closure_9(ActionSheetHeaderPressableText, obj6) };
   BottomSheetTitleHeader = guildId(onSave[16]).BottomSheetTitleHeader;
   intl3 = guildId(onSave[12]).intl;
@@ -141,7 +141,7 @@ function ConjureCollaboratorRolesSheet(guildId) {
   const tmp12 = closure_10;
   if (0 === memo.length) {
     const obj9 = { style: tmp.roleListEmpty, children: closure_9(Text, obj10) };
-    obj10 = { variant: "text-md/normal", color: "text-muted", children: intl7.string(guildId(tmp3[12]).t.V6nAfF) };
+    obj10 = { variant: "body-md/normal", color: "text-muted", children: intl7.string(guildId(tmp3[12]).t.V6nAfF) };
     Text = tmp2(tmp3[15]).Text;
     intl7 = tmp2(tmp3[12]).intl;
     tmp13Result = tmp13(tmp14, obj9);
@@ -183,7 +183,7 @@ function ConjureCollaboratorRolesSheet(guildId) {
             }
           };
           items = [closure_1_9(tmp9, { color: primaryColor }), ];
-          const obj3 = { variant: "text-md/medium", children: children.name };
+          const obj3 = { variant: "body-md/medium", children: children.name };
           items[1] = closure_1_9(guildId(onSave[15]).Text, obj3);
           formatToPlainStringResult = undefined;
           if (tmp3) {
@@ -294,7 +294,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   handleRoleSelectionChange = undefined;
   const tmp = closure_12();
   const tmp3 = dependencyMap;
-  const tmp4 = selectedRoleIds(12265)(projectId, arg1);
+  const tmp4 = selectedRoleIds(12326)(projectId, arg1);
   ({ liveReload, isGuildCollaboration, selectedRoleIds } = tmp4);
   ({ supportsVisibility, saving, saveError, experimentalError, handleFlagChange: c2, handleRoleSelectionChange } = tmp4);
   const ensureAppInGuild = tmp4.ensureAppInGuild;
@@ -391,7 +391,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
     }
   }), items);
   if (flag) {
-    let obj3 = { variant: "text-sm/normal", color: "text-muted", children: intl.string(tmp2(3995).s7VnVF) };
+    let obj3 = { variant: "body-sm/normal", color: "text-muted", children: intl.string(tmp2(3995).s7VnVF) };
     const Text = require("Text/Text").Text;
     intl = require("intl").intl;
     tmp9 = closure_9(Text, obj3);
@@ -401,7 +401,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let tmp12Result = null;
   if (supportsVisibility) {
     let obj4 = { hasIcons: false, children: tmp12(TableCheckboxRow, obj5) };
-    const TableRowGroup = tmp13(7186).TableRowGroup;
+    const TableRowGroup = tmp13(7201).TableRowGroup;
     obj5 = {
       label: intl2.string(tmp2(3995).ujIxRm),
       subLabel: intl3.string(tmp2(3995).gT8zk1),
@@ -411,7 +411,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
           return c2(ConjureProjectTypes.ConjureProjectFlags.PUBLIC, arg0);
         }
     };
-    TableCheckboxRow = tmp13(7100).TableCheckboxRow;
+    TableCheckboxRow = tmp13(7115).TableCheckboxRow;
     intl2 = tmp13(1113).intl;
     intl3 = tmp13(1113).intl;
     tmp12Result = tmp12(TableRowGroup, obj4);
@@ -422,7 +422,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
     tmp12Result6 = null;
     if (supportsCollaboration) {
       let obj6 = { hasIcons: false, children: tmp12(TableCheckboxRow2, obj7) };
-      const TableRowGroup2 = tmp13(7186).TableRowGroup;
+      const TableRowGroup2 = tmp13(7201).TableRowGroup;
       obj7 = {
         label: intl4.string(selectedRoleIds(3995).lVvR4E),
         subLabel: intl5.string(selectedRoleIds(3995).SQZGoV),
@@ -432,7 +432,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
               return c2(ConjureProjectTypes.ConjureProjectFlags.GUILD_COLLABORATION, arg0);
             }
       };
-      TableCheckboxRow2 = tmp13(7100).TableCheckboxRow;
+      TableCheckboxRow2 = tmp13(7115).TableCheckboxRow;
       intl4 = tmp13(1113).intl;
       intl5 = tmp13(1113).intl;
       tmp12Result6 = tmp12(TableRowGroup2, obj6);
@@ -442,9 +442,9 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let tmp12Result7 = null;
   if (liveReload.available) {
     const obj8 = { hasIcons: false, children: closure_9(TableCheckboxRow3, obj10) };
-    const TableRowGroup3 = tmp13(7186).TableRowGroup;
+    const TableRowGroup3 = tmp13(7201).TableRowGroup;
     obj10 = { label: intl6.string(selectedRoleIds(3995).eEo0ye), subLabel: null, checked: null, disabled: tmp5, onPress: handleLiveReloadChange };
-    TableCheckboxRow3 = tmp13(7100).TableCheckboxRow;
+    TableCheckboxRow3 = tmp13(7115).TableCheckboxRow;
     intl6 = tmp13(1113).intl;
     ({ description: obj9.subLabel, checked: obj9.checked } = liveReload);
     tmp12Result7 = tmp12(TableRowGroup3, obj8);
@@ -452,9 +452,9 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   items1[4] = tmp12Result7;
   let tmp12Result8 = null;
   if (supportsCollaboratorRoles) {
-    const TableRowGroup4 = tmp13(7186).TableRowGroup;
+    const TableRowGroup4 = tmp13(7201).TableRowGroup;
     const obj11 = { label: intl7.string(selectedRoleIds(3995)["pO3+p5"]), subLabel: intl8.string(selectedRoleIds(3995)["9MdtK9"]), arrow: true, disabled: tmp5, accessibilityHint: stringResult, onPress: callback };
-    const TableRow = tmp13(7101).TableRow;
+    const TableRow = tmp13(7116).TableRow;
     intl7 = tmp13(1113).intl;
     intl8 = tmp13(1113).intl;
     if (!tmp5) {
@@ -475,21 +475,21 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let tmp12Result9 = null;
   if (null != saveError) {
     const obj13 = { accessibilityRole: "alert", children: closure_9(require("Text/Text").Text, obj14) };
-    obj14 = { variant: "text-xs/normal", color: "text-feedback-critical", children: saveError };
+    obj14 = { variant: "body-xs/normal", color: "text-feedback-critical", children: saveError };
     tmp12Result9 = tmp12(tmp8, obj13);
   }
   items1[6] = tmp12Result9;
   const obj15 = { fields: closure_10(View, obj2), experimentalFields: closure_10(View, obj16), canSave, saving, nameChanged, submit };
   obj16 = { style: tmp.content, children: items3 };
   const obj17 = { hasIcons: false, children: items2 };
-  const TableRowGroup5 = tmp13(7186).TableRowGroup;
+  const TableRowGroup5 = tmp13(7201).TableRowGroup;
   const obj18 = { label: intl10.string(selectedRoleIds(3995)["4liZ45"]), subLabel: intl11.string(selectedRoleIds(3995).I5cl7p), checked: smartContext.checked, disabled: saving, onPress: handleSmartContextChange };
-  const TableCheckboxRow4 = tmp13(7100).TableCheckboxRow;
+  const TableCheckboxRow4 = tmp13(7115).TableCheckboxRow;
   intl10 = tmp13(1113).intl;
   intl11 = tmp13(1113).intl;
   items2 = [tmp12(TableCheckboxRow4, obj18), ];
   const obj19 = { label: intl12.string(selectedRoleIds(3995).mpjaVm), subLabel: intl13.string(selectedRoleIds(3995)["2PxChh"]), checked: hostApproval.checked, disabled: saving, onPress: handleRequireHostApprovalChange };
-  const TableCheckboxRow5 = tmp13(7100).TableCheckboxRow;
+  const TableCheckboxRow5 = tmp13(7115).TableCheckboxRow;
   intl12 = tmp13(1113).intl;
   intl13 = tmp13(1113).intl;
   items2[1] = closure_9(TableCheckboxRow5, obj19);
@@ -499,7 +499,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let tmp12Result10 = null;
   if (null != experimentalError) {
     const obj21 = { accessibilityRole: "alert", children: closure_9(require("Text/Text").Text, obj41) };
-    obj41 = { variant: "text-xs/normal", color: "text-feedback-critical", children: experimentalError };
+    obj41 = { variant: "body-xs/normal", color: "text-feedback-critical", children: experimentalError };
     tmp12Result10 = tmp12(tmp8, obj21);
   }
   items3[2] = tmp12Result10;

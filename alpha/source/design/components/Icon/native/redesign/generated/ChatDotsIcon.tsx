@@ -1,14 +1,14 @@
-// Module ID: 17493
-// Function ID: 17494
+// Module ID: 17583
+// Function ID: 17584
 // Name: ChatDotsIcon
-// Dependencies: [19, 21, 575, 5836, 17494, 2]
+// Dependencies: [19, 21, 575, 5850, 17584, 2]
 // Exports: ChatDotsIcon
 
-// Module 17493 (ChatDotsIcon)
+// Module 17583 (ChatDotsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 17494 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 17584 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

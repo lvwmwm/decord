@@ -1,12 +1,11 @@
 // Module ID: 8392
 // Function ID: 8393
-// Dependencies: [8393, 8394, 8395, 8396]
+// Dependencies: [8393, 8405, 8413]
 
 // Module 8392
-import _mod8393 from "module_8393" /* 8393 */;
-import _mod8394 from "module_8394" /* 8394 */;
-import _mod8395 from "module_8395" /* 8395 */;
-import _mod8396 from "module_8396" /* 8396 */;
+import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 8393 */;
+import _mod8405 from "module_8405" /* 8405 */;
+import _mod8413 from "module_8413" /* 8413 */;
 
 let hasOwnProperty;
 
@@ -67,7 +66,6 @@ let tmp3 = self && self.__exportStar || ((obj, arg1) => {
     continue;
   }
 });
-tmp3(_mod8393, exports);
-tmp3(_mod8394, exports);
-tmp3(_mod8395, exports);
-tmp3(_mod8396, exports);
+tmp3(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
+tmp3(_mod8405, exports);
+tmp3(_mod8413, exports);

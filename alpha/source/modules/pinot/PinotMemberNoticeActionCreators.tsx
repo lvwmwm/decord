@@ -1,10 +1,10 @@
-// Module ID: 11466
-// Function ID: 11467
+// Module ID: 11516
+// Function ID: 11517
 // Name: PinotMemberNoticeActionCreators
 // Dependencies: [572, 2]
 // Exports: ackPinotMemberNotice
 
-// Module 11466 (PinotMemberNoticeActionCreators)
+// Module 11516 (PinotMemberNoticeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

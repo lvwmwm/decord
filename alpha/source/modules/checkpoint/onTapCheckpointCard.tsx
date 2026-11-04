@@ -1,20 +1,17 @@
-// Module ID: 13569
-// Function ID: 13570
+// Module ID: 13653
+// Function ID: 13654
 // Name: onTapCheckpointCard
-// Dependencies: [4990, 1072, 6208, 1252, 5880, 13570, 2]
+// Dependencies: [4990, 6223, 13654, 13657, 2]
 // Exports: onTapCheckpointCard
 
-// Module 13569 (onTapCheckpointCard)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6208 */;
-import openCheckpoint from "openCheckpoint" /* 13570 */;
+// Module 13653 (onTapCheckpointCard)
+import CheckpointExperiments from "CheckpointExperiments" /* 6223 */;
+import Tracking from "Tracking" /* 13654 */;
+import openCheckpoint from "openCheckpoint" /* 13657 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
 
-const AnalyticEvents = Constants.AnalyticEvents;
-const result = size.fileFinishedImporting("modules/checkpoint/onTapCheckpointCard.tsx");
+let result = size.fileFinishedImporting("modules/checkpoint/onTapCheckpointCard.tsx");
 
 export function onTapCheckpointCard(arg0) {
   let authorId;
@@ -22,22 +19,9 @@ export function onTapCheckpointCard(arg0) {
   ({ message, authorId } = arg0);
   const obj = CheckpointExperiments;
   if (obj.getIsCheckpointEnabled("onTapCheckpointCard")) {
-    const channel = ChannelStore.getChannel(message.channel_id);
-    const obj2 = { other_user_id: authorId };
-    const track = AnalyticsUtilsDefault.track;
-    const CHECKPOINT_CARD_CLICKED = AnalyticEvents.CHECKPOINT_CARD_CLICKED;
-    AnalyticsUtilsDefault;
-    const tmpResult = AppAnalyticsUtils;
-    const merged = Object.assign(tmpResult.collectChannelAnalyticsMetadata(channel));
-    let guild_id;
-    const collectGuildAnalyticsMetadata = AppAnalyticsUtils.collectGuildAnalyticsMetadata;
-    AppAnalyticsUtils;
-    if (channel != null) {
-      guild_id = channel.guild_id;
-    }
-    const merged1 = Object.assign(collectGuildAnalyticsMetadata(guild_id));
-    track(CHECKPOINT_CARD_CLICKED, obj2);
-    const tmpResult4 = openCheckpoint;
-    tmpResult4.openCheckpoint("message_component");
+    const tmpResult = Tracking;
+    const result = tmpResult.trackCheckpoint2026CardClicked(authorId, ChannelStore.getChannel(message.channel_id));
+    const tmpResult2 = openCheckpoint;
+    tmpResult2.openCheckpoint("message_component");
   }
 }

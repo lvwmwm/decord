@@ -1,15 +1,15 @@
-// Module ID: 9495
-// Function ID: 9496
+// Module ID: 9513
+// Function ID: 9514
 // Name: ObscuredSurface
-// Dependencies: [19, 17, 21, 5141, 575, 9496, 8777, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9514, 8794, 5761, 1113, 2]
 // Exports: default
 
-// Module 9495 (ObscuredSurface)
+// Module 9513 (ObscuredSurface)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ImageWarningIcon2 from "ImageWarningIcon" /* 8777 */;
-import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 9496 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ImageWarningIcon2 from "ImageWarningIcon" /* 8794 */;
+import ObscuredSurfaceContext from "ObscuredSurfaceContext" /* 9514 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -57,14 +57,14 @@ export default function ObscuredSurface(obscured) {
       const intl = tmp4(1113).intl;
       heading = intl.string(tmp4(1113).t.xC8Saf);
     }
-    const obj7 = { variant: "heading-md/semibold", color: "text-strong", children: heading };
+    const obj7 = { variant: "heading-sm/semibold", color: "text-strong", children: heading };
     items1[1] = React3(Text, obj7);
-    const Text2 = tmp4(5747).Text;
+    const Text2 = tmp4(5761).Text;
     if (description == null) {
       const intl2 = tmp4(1113).intl;
       description = intl2.string(tmp4(1113).t["0fc/DG"]);
     }
-    const obj8 = { variant: "text-sm/normal", color: "text-muted", children: description };
+    const obj8 = { variant: "body-sm/normal", color: "text-muted", children: description };
     items1[2] = React3(Text2, obj8);
     items[2] = hasOwnProperty(View, obj5);
     tmp3Result = tmp3(Provider, obj);

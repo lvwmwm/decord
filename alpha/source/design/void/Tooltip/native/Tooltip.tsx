@@ -1,10 +1,10 @@
-// Module ID: 16128
-// Function ID: 16129
+// Module ID: 16217
+// Function ID: 16218
 // Name: Tooltip
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1380, 5747, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1380, 5761, 1187, 2]
 // Exports: default
 
-// Module 16128 (Tooltip)
+// Module 16217 (Tooltip)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -104,7 +104,7 @@ export default function Tooltip(arrowHeight) {
   items3 = [tmp3.container, containerStyle];
   let tmp10 = null;
   if (null != title) {
-    const obj5 = { style: tmp3.title, variant: "text-md/semibold", color: "text-overlay-light", children: title };
+    const obj5 = { style: tmp3.title, variant: "body-md/semibold", color: "text-overlay-light", children: title };
     tmp10 = closure_4(num2(LEFT[7]).Heading, obj5);
   }
   items4 = [tmp10, , ];

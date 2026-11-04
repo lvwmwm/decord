@@ -1,13 +1,13 @@
 // Module ID: 5168
 // Function ID: 5169
 // Name: HexagonCampaignUtils
-// Dependencies: [5166, 2112, 1404, 1405, 1391, 1393, 2]
+// Dependencies: [5166, 2112, 1405, 1404, 1391, 1393, 2]
 // Exports: getHexagonCampaignPerkAvailability, getHexagonCampaignPerkCutoffMs, getHexagonCampaignRestoredDisplayNameStyles, hasHexagonCampaignDisplayNameFont, hasPerkOnlyFromHexagonCampaign, isEnrolledInHexagonCampaign, isHexagonCampaignClientThemePreset, isHexagonCampaignDisplayNameStyle, isHexagonCampaignOver, isHexagonCampaignPerkExpired, isHexagonCampaignPerkPremiumOnly, isHexagonCampaignTakeoverOver
 
 // Module 5168 (HexagonCampaignUtils)
 import PerksStateUtils from "PerksStateUtils" /* 1391 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1404 */;
-import DisplayNameFont from "DisplayNameFont" /* 1405 */;
+import DisplayNameFont from "DisplayNameFont" /* 1404 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1405 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
 import size from "module_2" /* 2 */;
@@ -121,7 +121,7 @@ export function getHexagonCampaignRestoredDisplayNameStyles(canUsePremiumProfile
       const tmp5 = require;
       if (obj.fontId === DisplayNameFont.DisplayNameFont.DEFAULT) {
         let tmp7;
-        if (obj.effectId === tmp5(1404).DisplayNameEffect.SOLID) {
+        if (obj.effectId === tmp5(1405).DisplayNameEffect.SOLID) {
           tmp7 = null;
         }
         return tmp7;

@@ -1,14 +1,14 @@
-// Module ID: 12488
-// Function ID: 12489
+// Module ID: 12553
+// Function ID: 12554
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 5141, 575, 12397, 12483, 5747, 12484, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 12462, 12548, 5761, 12549, 2]
 // Exports: default
 
-// Module 12488 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 12553 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod12397 from "module_12397" /* 12397 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12483 */;
+import _mod12462 from "module_12462" /* 12462 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12548 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -35,8 +35,8 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
   const stat = tmp;
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod12397.resolveStatComponentValues;
-    _mod12397;
+    const resolveStatComponentValues = _mod12462.resolveStatComponentValues;
+    _mod12462;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   let obj = {
@@ -47,17 +47,17 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
       if (tmp) {
         let tmp5Result;
         const obj = { style: stat.stat, children: items };
-        const obj2 = { field: value.value, variant: "text-sm/medium", color: "text-default", skeletonWidthChars: 8 };
+        const obj2 = { field: value.value, variant: "body-sm/medium", color: "text-default", skeletonWidthChars: 8 };
         items = [_false(UserProfileApplicationWidgetFieldUtils.FieldText, obj2), ];
         const tmp2 = React3;
         const tmp3 = View;
         if ("value" === value.label.status) {
-          const obj3 = { variant: "text-xs/normal", color: "text-muted", children: value.label.text };
-          tmp5Result = tmp5(tmp6(5747).Text, obj3);
+          const obj3 = { variant: "body-xs/normal", color: "text-muted", children: value.label.text };
+          tmp5Result = tmp5(tmp6(5761).Text, obj3);
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(12484).TextSkeleton, { variant: "text-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(12549).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

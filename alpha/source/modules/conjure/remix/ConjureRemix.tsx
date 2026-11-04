@@ -1,13 +1,13 @@
-// Module ID: 10979
-// Function ID: 10980
+// Module ID: 11027
+// Function ID: 11028
 // Name: ConjureRemix
-// Dependencies: [5, 10980, 6965, 572, 1113, 3995, 11010, 11096, 10445, 11005, 2]
+// Dependencies: [5, 11028, 6980, 572, 1113, 3995, 11059, 11144, 10493, 11054, 2]
 // Exports: copyProjectName, createConjureRemix, isValidCopyName
 
-// Module 10979 (ConjureRemix)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6965 */;
+// Module 11027 (ConjureRemix)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10980 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ export function createConjureRemix(project, arg1) {
       let v2;
       function startRemix(id, guild_id, name, arg3) {
         let str;
-        const f141772 = () => "rejected";
+        const f142512 = () => "rejected";
         closure_0 = guild_id;
         closure_1 = arg3;
         function accept(comma) {
@@ -54,7 +54,7 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             obj = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj.acceptRemix(closure_3, comma);
-            closure_5 = acceptRemixResult.catch(f141772);
+            closure_5 = acceptRemixResult.catch(f142512);
           }
           return closure_5;
         }
@@ -198,7 +198,7 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             const tmp2Result = tmp2(tmp3[7]);
             const acceptRemixResult = tmp2Result.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f141772);
+            closure_5 = acceptRemixResult.catch(f142512);
           }
         });
         let obj3 = { name, guild_id, install_scope: str, remix_source_project_id: id.id, nonce };
@@ -228,7 +228,7 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             const obj2 = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj2.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f141772);
+            closure_5 = acceptRemixResult.catch(f142512);
           }
           return remix_preview;
         }, () => {

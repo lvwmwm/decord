@@ -1,12 +1,12 @@
-// Module ID: 8019
-// Function ID: 8020
+// Module ID: 8035
+// Function ID: 8036
 // Name: DCDSendUtils
-// Dependencies: [17, 1377, 8020, 2]
+// Dependencies: [17, 1377, 8036, 2]
 // Exports: canOpenUrlScheme, canSendMail, canSendSMS, sendMail, sendSMS
 
-// Module 8019 (DCDSendUtils)
+// Module 8035 (DCDSendUtils)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import react_nativeDefault from "react-native" /* 8020 */;
+import react_nativeDefault from "react-native" /* 8036 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

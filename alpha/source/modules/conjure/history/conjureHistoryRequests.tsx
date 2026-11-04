@@ -1,11 +1,11 @@
-// Module ID: 12315
-// Function ID: 12316
+// Module ID: 12380
+// Function ID: 12381
 // Name: conjureHistoryRequests
-// Dependencies: [5, 11085, 11079, 12316, 11030, 2]
+// Dependencies: [5, 11134, 11128, 12381, 11079, 2]
 // Exports: createDatabaseRestorePoint, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchVersionHistory, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry
 
-// Module 12315 (conjureHistoryRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11085 */;
+// Module 12380 (conjureHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -661,7 +661,7 @@ obj = function _restoreDatabaseToTimestamp() {
     let c5 = 0;
     let c6 = 0;
     return (async (arg0, value, arg2) => {
-      let obj5;
+      let obj3;
       let obj6;
       if (c6 === 2) {
         c6 = 3;
@@ -687,12 +687,12 @@ obj = function _restoreDatabaseToTimestamp() {
             } else {
               closure_4 = settleDatabaseRestore;
               closure_3 = closure_0;
-              const obj4 = { method: "POST", json: obj5 };
+              const obj5 = { method: "POST", json: obj6 };
               c5 = 1;
               c6 = 1;
-              obj5 = { environment, timestampMs };
-              const obj7 = { value: obj6.fetchConjureWorker(closure_0, "/agent/database/restore", obj4), done: false };
-              obj6 = conjureWorkerFetch;
+              obj6 = { environment, timestampMs };
+              const obj7 = { value: obj3.fetchConjureWorker(closure_0, "/agent/database/restore", obj5), done: false };
+              obj3 = conjureWorkerFetch;
               return obj7;
             }
           } else if (arg0 === 1) {
@@ -706,9 +706,9 @@ obj = function _restoreDatabaseToTimestamp() {
             obj = { value: closure_4(closure_3, value), done: true };
             return obj;
           }
-        } catch (tmp6) {
+        } catch (tmp12) {
           c6 = 3;
-          throw tmp6;
+          throw tmp12;
         }
       }
     })();

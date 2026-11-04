@@ -1,28 +1,28 @@
-// Module ID: 20156
-// Function ID: 20157
+// Module ID: 20272
+// Function ID: 20273
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 7099, 5142, 5012, 9203, 5146, 1083, 21, 5141, 575, 1113, 17403, 11326, 17405, 1499, 504, 9202, 7124, 7682, 5381, 18512, 2123, 9108, 1652, 1705, 7101, 16595, 1090, 5747, 9342, 4963, 7565, 671, 1187, 17418, 2]
+// Dependencies: [32, 19, 17, 7114, 5142, 5012, 9220, 5146, 1083, 21, 5141, 575, 1113, 17494, 11376, 17496, 1499, 504, 9219, 7139, 7698, 5382, 18607, 2123, 9125, 1652, 1705, 7116, 16686, 1090, 5761, 9359, 4963, 7581, 671, 1187, 17509, 2]
 // Exports: default
 
-// Module 20156 (GuildSettingsModalOfficialMessages)
+// Module 20272 (GuildSettingsModalOfficialMessages)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1083 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TableRowConstants from "TableRowConstants" /* 7099 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7565 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7682 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17418 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TableRowConstants from "TableRowConstants" /* 7114 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7581 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7698 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17509 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9203 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9220 */;
 import MessageConstants from "MessageConstants" /* 5146 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -86,15 +86,15 @@ function MessagePreview(theme) {
   items2 = [authStore2(Avatar, obj5), ];
   const obj6 = { style: tmp.chatContent, children: items5 };
   const obj7 = { style: tmp.chatHeader, children: items3 };
-  const obj8 = { animated: true, style: animatedStyles.textStrong, variant: "text-md/semibold", lineClamp: 1, children: intl.string(intl4.t.cqpybK) };
+  const obj8 = { animated: true, style: animatedStyles.textStrong, variant: "body-md/semibold", lineClamp: 1, children: intl.string(intl4.t.cqpybK) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items3 = [authStore2(Text, obj8), ];
-  const obj9 = { animated: true, variant: "text-xs/medium", style: items4, children: memo };
+  const obj9 = { animated: true, variant: "body-xs/medium", style: items4, children: memo };
   items4 = [tmp.chatTimestamp, animatedStyles.textMuted];
   items3[1] = authStore2(Text_Text.Text, obj9);
   items5 = [map1(hasOwnProperty, obj7), ];
-  const obj10 = { animated: true, variant: "text-md/normal", style: { color: hexResult }, children: intl2.string(intl4.t.Mi9Kbe) };
+  const obj10 = { animated: true, variant: "body-md/normal", style: { color: hexResult }, children: intl2.string(intl4.t.Mi9Kbe) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items5[1] = authStore2(Text2, obj10);
@@ -236,7 +236,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(18512, dependencyMap.paths);
+    const tmp2 = asyncRequire(18607, dependencyMap.paths);
     intl = intl4.intl;
     openLazy(tmp2, "RoleColorPicker", obj);
   }, items5);
@@ -303,7 +303,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
   tmp2Result6 = tmp2(submitting[29]);
   items10 = [closure_12(TableRow, obj5), ];
   const obj8 = { style: tmp.chatSection, children: items11 };
-  const obj9 = { variant: "heading-md/semibold", children: intl2.string(tmp2(submitting[12]).t.VI0jGW) };
+  const obj9 = { variant: "heading-sm/semibold", children: intl2.string(tmp2(submitting[12]).t.VI0jGW) };
   const Text = tmp2(tmp3[30]).Text;
   intl2 = tmp2(tmp3[12]).intl;
   items11 = [closure_12(Text, obj9), , ];

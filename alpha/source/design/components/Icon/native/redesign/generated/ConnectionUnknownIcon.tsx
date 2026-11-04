@@ -1,14 +1,14 @@
-// Module ID: 18626
-// Function ID: 18627
+// Module ID: 18727
+// Function ID: 18728
 // Name: ConnectionUnknownIcon
-// Dependencies: [19, 21, 575, 5836, 18627, 2]
+// Dependencies: [19, 21, 575, 5850, 18728, 2]
 // Exports: ConnectionUnknownIcon
 
-// Module 18626 (ConnectionUnknownIcon)
+// Module 18727 (ConnectionUnknownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 18627 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 18728 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 16634
-// Function ID: 16635
+// Module ID: 16724
+// Function ID: 16725
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8855, 1385, 8887, 1072, 5396, 1387, 21, 5141, 575, 5383, 10007, 16635, 10005, 1113, 7263, 7261, 5855, 7103, 11588, 5747, 11597, 9120, 7257, 1652, 5377, 5380, 15121, 1705, 10006, 5426, 5150, 11590, 1627, 504, 2176, 7446, 7471, 5714, 10036, 10037, 8886, 1252, 8892, 5832, 5395, 12547, 16636, 7080, 7441, 5398, 2]
+// Dependencies: [19, 17, 8872, 1385, 8904, 1072, 5397, 1387, 21, 5141, 575, 5384, 10055, 16725, 10053, 1113, 7239, 7237, 5869, 7118, 11638, 5761, 11648, 9137, 7277, 1652, 5378, 5381, 15201, 1705, 10054, 5428, 5150, 11640, 1627, 504, 2176, 7462, 7487, 5727, 10084, 10085, 8903, 1252, 8909, 5846, 5396, 12628, 16726, 7095, 7457, 5400, 2]
 // Exports: default
 
-// Module 16634 (CustomizeBadgesSheet)
+// Module 16724 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,32 +12,32 @@ import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import timingPresets from "timingPresets" /* 5380 */;
-import HapticUtils from "HapticUtils" /* 5383 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5396 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5855 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import EyeSlashIcon2 from "EyeSlashIcon" /* 7261 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8886 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8892 */;
-import native from "native" /* 9120 */;
-import ContextMenu2 from "ContextMenu" /* 10005 */;
-import ContextMenuState from "ContextMenuState" /* 10006 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 10007 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10036 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10037 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11588 */;
-import BadgeUtils from "BadgeUtils" /* 11597 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 15121 */;
-import BadgeGrid from "BadgeGrid" /* 16635 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import timingPresets from "timingPresets" /* 5381 */;
+import HapticUtils from "HapticUtils" /* 5384 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5869 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import EyeSlashIcon2 from "EyeSlashIcon" /* 7237 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8903 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8909 */;
+import native from "native" /* 9137 */;
+import ContextMenu2 from "ContextMenu" /* 10053 */;
+import ContextMenuState from "ContextMenuState" /* 10054 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 10055 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10084 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10085 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11638 */;
+import BadgeUtils from "BadgeUtils" /* 11648 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 15201 */;
+import BadgeGrid from "BadgeGrid" /* 16725 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8855 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8872 */;
 import UserStore from "UserStore" /* 1385 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8887 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -92,13 +92,13 @@ function BadgeVisibilityMenu(badge) {
   };
   const tmp = authStore3;
   if (flag) {
-    EyeSlashIcon = tmp2(7263).EyeIcon;
+    EyeSlashIcon = tmp2(7239).EyeIcon;
   } else {
-    EyeSlashIcon = tmp2(7261).EyeSlashIcon;
+    EyeSlashIcon = tmp2(7237).EyeSlashIcon;
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(16635).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(16725).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";
@@ -144,7 +144,7 @@ function BadgeTileContent(badge) {
   if (flag) {
     str = "text-muted";
   }
-  const obj5 = { variant: "text-xs/medium", color: str, lineClamp: 1, style: tmp.name, "aria-hidden": true, children: badge.name };
+  const obj5 = { variant: "body-xs/medium", color: str, lineClamp: 1, style: tmp.name, "aria-hidden": true, children: badge.name };
   items1[1] = authStore3(Text, obj5);
   let tmp14Result = null != tmp2;
   if (tmp14Result) {
@@ -661,7 +661,7 @@ let closure_34 = react.memo(function DraggableBadgeTile(badge) {
       handleChange.__closure = items3;
       handleChange.__workletHash = 3274388629829;
       handleChange.__initData = tmp27;
-      const items4 = [closure_29, tmp2, autoScrollSpeed, tmp7, orderShared, badge_id, getSlotOffset, slotOffset, tileSize, sharedValue2, tmp3(5377).withTiming, tmp3(5380).timingStandard, tmp6, sharedValue5, isDragActive, tmp3(1705).scheduleOnRN, tmp3(5383).triggerHapticFeedback, tmp3(5383).HapticFeedbackTypes, onCommitOrder];
+      const items4 = [closure_29, tmp2, autoScrollSpeed, tmp7, orderShared, badge_id, getSlotOffset, slotOffset, tileSize, sharedValue2, tmp3(5378).withTiming, tmp3(5381).timingStandard, tmp6, sharedValue5, isDragActive, tmp3(1705).scheduleOnRN, tmp3(5384).triggerHapticFeedback, tmp3(5384).HapticFeedbackTypes, onCommitOrder];
       let c1;
       let c2;
       let c3;
@@ -703,7 +703,7 @@ let closure_34 = react.memo(function DraggableBadgeTile(badge) {
       handleFinalize.__closure = items5;
       handleFinalize.__workletHash = 3320936971344;
       handleFinalize.__initData = tmp36;
-      const Gesture = tmp3(5426).Gesture;
+      const Gesture = tmp3(5428).Gesture;
       const items6 = [closure_30, handleStart];
       let c0;
       [tmp55, tmp56] = items6;
@@ -1285,7 +1285,7 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
       const tmp2Result = tmp2(stateFromStores1[48]);
       intl2 = tmp5(tmp3[15]).intl;
       ({ upsellCard: obj20.cardStyle, upsellContent: obj20.contentStyle, upsellCta: obj20.ctaStyle } = tmp);
-      obj7 = { variant: "text-sm/normal", style: tmp.upsellText, children: intl3.string(tenureBadgeHideable(stateFromStores1[15]).t.JrOki0) };
+      obj7 = { variant: "body-sm/normal", style: tmp.upsellText, children: intl3.string(tenureBadgeHideable(stateFromStores1[15]).t.JrOki0) };
       Text2 = tmp5(tmp3[21]).Text;
       intl3 = tmp5(tmp3[15]).intl;
       tmp58 = memo2(tmp2Result, obj6);
@@ -1323,7 +1323,7 @@ export default function CustomizeBadgesSheet(analyticsLocations) {
     const tmp54 = context;
     if (hasCatalogError) {
       const obj10 = { style: tmp.message, accessibilityRole: "alert", children: memo2(Text, obj11) };
-      obj11 = { variant: "text-md/normal", color: "text-muted", style: tmp.messageText, children: intl.string(tenureBadgeHideable(stateFromStores1[15]).t["rTU7/z"]) };
+      obj11 = { variant: "body-md/normal", color: "text-muted", style: tmp.messageText, children: intl.string(tenureBadgeHideable(stateFromStores1[15]).t["rTU7/z"]) };
       Text = tmp5(tmp3[21]).Text;
       intl = tmp5(tmp3[15]).intl;
       obj12 = obj10;

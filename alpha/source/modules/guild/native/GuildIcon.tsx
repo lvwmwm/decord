@@ -1,13 +1,13 @@
-// Module ID: 7083
-// Function ID: 7084
+// Module ID: 7098
+// Function ID: 7099
 // Name: GuildIcon
-// Dependencies: [32, 19, 7084, 5008, 1072, 21, 5141, 575, 2155, 7085, 2022, 5837, 7086, 299, 2]
+// Dependencies: [32, 19, 7099, 5008, 1072, 21, 5141, 575, 2155, 7100, 2022, 5851, 7101, 299, 2]
 
-// Module 7083 (GuildIcon)
+// Module 7098 (GuildIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7084 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7099 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildRecord from "GuildRecord" /* 5008 */;

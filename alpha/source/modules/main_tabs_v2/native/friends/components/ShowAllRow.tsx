@@ -1,17 +1,17 @@
-// Module ID: 19000
-// Function ID: 19001
+// Module ID: 19103
+// Function ID: 19104
 // Name: ShowAllRow
-// Dependencies: [19, 17, 21, 5141, 575, 7101, 16017, 1187, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7116, 16107, 1187, 5761, 1113, 2]
 // Exports: default
 
-// Module 19000 (ShowAllRow)
+// Module 19103 (ShowAllRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 16017 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 16107 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -55,7 +55,7 @@ export default function ShowAllRow(users) {
   const AvatarDuoPile = AvatarDuoPile2.AvatarDuoPile;
   substr = users.slice(0, 2);
   items = [_false(AvatarDuoPile, obj3), ];
-  const obj4 = { style: tmp.showAllText, variant: "text-md/semibold", color: "text-brand", children: intl.format(intl2.t.NrzztX, { count }) };
+  const obj4 = { style: tmp.showAllText, variant: "body-md/semibold", color: "text-brand", children: intl.format(intl2.t.NrzztX, { count }) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = _false(Text, obj4);

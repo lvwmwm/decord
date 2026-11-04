@@ -1,13 +1,13 @@
-// Module ID: 15867
-// Function ID: 15868
+// Module ID: 15955
+// Function ID: 15956
 // Name: FormDropdown
-// Dependencies: [19, 21, 7101, 5747, 8791, 2]
+// Dependencies: [19, 21, 7116, 5761, 8808, 2]
 // Exports: default
 
-// Module 15867 (FormDropdown)
+// Module 15955 (FormDropdown)
 import Fragment from "Fragment" /* 21 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import LockIcon from "LockIcon" /* 8791 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import LockIcon from "LockIcon" /* 8808 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,13 +24,13 @@ export default function FormDropdown(arg0) {
   ({ leading, onPress, placeholder } = arg0);
   const TableRow = TableRow2.TableRow;
   if (label == null) {
-    const obj2 = { variant: "text-md/medium", color: "text-muted", children: placeholder };
-    label = tmp(tmp2(5747).Text, obj2);
+    const obj2 = { variant: "body-md/medium", color: "text-muted", children: placeholder };
+    label = tmp(tmp2(5761).Text, obj2);
   }
   let tmpResult;
   if (disabled) {
     const obj3 = { IconComponent: LockIcon.LockIcon };
-    const Icon = tmp2(7101).TableRow.Icon;
+    const Icon = tmp2(7116).TableRow.Icon;
     tmpResult = tmp(Icon, obj3);
   }
   return <TableRow start end icon={leading} label={label} trailing={tmpResult} arrow={!disabled} disabled={disabled} onPress={onPress} />;

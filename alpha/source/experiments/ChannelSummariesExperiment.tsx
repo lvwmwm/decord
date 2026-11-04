@@ -1,10 +1,10 @@
-// Module ID: 10254
-// Function ID: 10255
+// Module ID: 10302
+// Function ID: 10303
 // Name: ChannelSummariesExperiment
 // Dependencies: [5008, 5012, 1072, 4997, 5015, 563, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 10254 (ChannelSummariesExperiment)
+// Module 10302 (ChannelSummariesExperiment)
 import ChannelConstants from "ChannelConstants" /* 4997 */;
 import GuildRecord from "GuildRecord" /* 5008 */;
 import FavoritesUtils from "FavoritesUtils" /* 5015 */;

@@ -1,19 +1,19 @@
-// Module ID: 12000
-// Function ID: 12001
+// Module ID: 12059
+// Function ID: 12060
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 5382, 6963, 10334, 4990, 5884, 21, 11997, 504, 11139, 8063, 1113, 12001, 1652, 11995, 2]
+// Dependencies: [19, 17, 5383, 6978, 10382, 4990, 5898, 21, 12056, 504, 11187, 8079, 1113, 12060, 1652, 12054, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 12000 (GlobalStatusIndicator)
+// Module 12059 (GlobalStatusIndicator)
 import _mod1652 from "module_1652" /* 1652 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8063 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8079 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetStore from "ActionSheetStore" /* 5382 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6963 */;
-import NativeMenuStore from "NativeMenuStore" /* 10334 */;
+import ActionSheetStore from "ActionSheetStore" /* 5383 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
+import NativeMenuStore from "NativeMenuStore" /* 10382 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5884 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

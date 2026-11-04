@@ -1,33 +1,33 @@
-// Module ID: 7411
-// Function ID: 7412
+// Module ID: 7427
+// Function ID: 7428
 // Name: GuildOnboardingPrompts
-// Dependencies: [32, 5, 19, 17, 5142, 7068, 4990, 5012, 5044, 7388, 7389, 7385, 1072, 21, 1099, 5141, 5709, 575, 1490, 5138, 5837, 5710, 1092, 504, 1627, 1499, 1652, 7393, 7394, 1411, 2021, 1252, 5880, 5377, 7124, 7412, 7413, 1380, 5741, 5747, 1113, 2]
+// Dependencies: [32, 5, 19, 17, 5142, 7083, 4990, 5012, 5044, 7404, 7405, 7401, 1072, 21, 1099, 5141, 5722, 575, 1490, 5138, 5851, 5723, 1092, 504, 1627, 1499, 1652, 7409, 7410, 1411, 2021, 1252, 5894, 5378, 7139, 7428, 7429, 1380, 5755, 5761, 1113, 2]
 // Exports: default
 
-// Module 7411 (GuildOnboardingPrompts)
+// Module 7427 (GuildOnboardingPrompts)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7385 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7389 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7393 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7394 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7401 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7405 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7409 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7410 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7068 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7083 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7388 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7404 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -755,7 +755,7 @@ export default function GuildOnboardingPrompt(guildId) {
   const obj18 = { style: items34, children: items35 };
   items34 = [tmp.landingBody, animatedStyle2];
   const View4 = tmp6(tmp3[26]).View;
-  const obj19 = { style: tmp.subtitle, variant: "text-md/semibold", color: "text-overlay-light", children: format(O2bQlD, { guildName: str }) };
+  const obj19 = { style: tmp.subtitle, variant: "body-md/semibold", color: "text-overlay-light", children: format(O2bQlD, { guildName: str }) };
   const Text = tmp2(tmp3[39]).Text;
   const intl = tmp2(tmp3[40]).intl;
   format = intl.format;
@@ -777,7 +777,7 @@ export default function GuildOnboardingPrompt(guildId) {
   const obj21 = { style: items37, animatedProps, children: required2(Text3, obj22) };
   items37 = [tmp.onboardingPolicy, animatedStyle3, { bottom }];
   const View5 = tmp6(tmp3[26]).View;
-  obj22 = { style: tmp.onboardingPolicyText, variant: "heading-sm/medium", color: "text-default", children: intl3.format(tmp2(tmp3[40]).t.kI6UoD, obj23) };
+  obj22 = { style: tmp.onboardingPolicyText, variant: "heading-xs/medium", color: "text-default", children: intl3.format(tmp2(tmp3[40]).t.kI6UoD, obj23) };
   Text3 = tmp2(tmp3[39]).Text;
   intl3 = tmp2(tmp3[40]).intl;
   obj23 = { privacyLink: constants2.PRIVACY };

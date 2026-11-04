@@ -1,14 +1,14 @@
-// Module ID: 13131
-// Function ID: 13132
+// Module ID: 13214
+// Function ID: 13215
 // Name: ChatShieldIcon
-// Dependencies: [19, 21, 575, 5836, 13132, 2]
+// Dependencies: [19, 21, 575, 5850, 13215, 2]
 // Exports: ChatShieldIcon
 
-// Module 13131 (ChatShieldIcon)
+// Module 13214 (ChatShieldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 13132 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 13215 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

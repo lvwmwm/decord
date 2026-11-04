@@ -1,13 +1,13 @@
-// Module ID: 6970
-// Function ID: 6971
+// Module ID: 6985
+// Function ID: 6986
 // Name: VideoStreamStore
-// Dependencies: [1072, 5888, 504, 572, 2]
+// Dependencies: [1072, 5902, 504, 572, 2]
 
-// Module 6970 (VideoStreamStore)
+// Module 6985 (VideoStreamStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 5888 */;
+import Constants2 from "Constants" /* 5902 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;

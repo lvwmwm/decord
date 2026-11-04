@@ -1,14 +1,14 @@
-// Module ID: 7113
-// Function ID: 7114
+// Module ID: 7128
+// Function ID: 7129
 // Name: DragIcon
-// Dependencies: [19, 21, 575, 5836, 7114, 2]
+// Dependencies: [19, 21, 575, 5850, 7129, 2]
 // Exports: DragIcon
 
-// Module 7113 (DragIcon)
+// Module 7128 (DragIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 7114 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 7129 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

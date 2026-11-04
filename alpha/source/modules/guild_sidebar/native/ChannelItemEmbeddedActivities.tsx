@@ -1,13 +1,13 @@
-// Module ID: 18439
-// Function ID: 18440
+// Module ID: 18533
+// Function ID: 18534
 // Name: ChannelItemEmbeddedActivities
-// Dependencies: [19, 17, 21, 5141, 575, 7454, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7470, 5761, 2]
 // Exports: default
 
-// Module 18439 (ChannelItemEmbeddedActivities)
+// Module 18533 (ChannelItemEmbeddedActivities)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GameIcon from "GameIcon" /* 7454 */;
+import GameIcon from "GameIcon" /* 7470 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -62,15 +62,15 @@ export default function ChannelItemEmbeddedActivities(muted) {
     const tmp17 = importDefault;
     if (2 === embeddedApps.length) {
       const obj = { game: application2, size };
-      tmp16Result = tmp16(tmp17(7454), obj);
+      tmp16Result = tmp16(tmp17(7470), obj);
     } else {
       const obj5 = { style: items1, children: React3(Text, obj7) };
       items1 = [tmp3.overflowContainer, ];
       const obj6 = { height: tmp13, minWidth: tmp13 };
       items1[1] = obj6;
       const _HermesInternal = HermesInternal;
-      obj7 = { style: tmp3.overflow, variant: "text-xs/semibold", children: "+" + diff };
-      Text = tmp11(5747).Text;
+      obj7 = { style: tmp3.overflow, variant: "body-xs/semibold", children: "+" + diff };
+      Text = tmp11(5761).Text;
       tmp16Result = tmp16(tmp15, obj5);
     }
     items[1] = tmp16Result;

@@ -1,17 +1,17 @@
-// Module ID: 8842
-// Function ID: 8843
+// Module ID: 8859
+// Function ID: 8860
 // Name: utils
-// Dependencies: [1089, 11, 1113, 2171, 8843, 4567, 8838, 2]
+// Dependencies: [1089, 11, 1113, 2171, 8860, 4567, 8855, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 8842 (utils)
+// Module 8859 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import _mod4567 from "module_4567" /* 4567 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8838 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8843 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8855 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8860 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -466,13 +466,13 @@ export function getFullResurrectedBadgeText(start) {
 export function getEpisodeBadgeText(large_text) {
   if (null != large_text) {
     if ("" !== large_text) {
-      const obj2 = /\w+ (\d+), \w+ (\d+)/;
-      const match = obj2.exec(large_text);
+      const obj = /\w+ (\d+), \w+ (\d+)/;
+      const match = obj.exec(large_text);
       let formatToPlainStringResult = null;
       if (null != match) {
         const intl = intl4.intl;
-        const obj = { seasonNum: match[1], episodeNum: match[2] };
-        formatToPlainStringResult = intl.formatToPlainString(intl4.t.ijVm6y, obj);
+        const obj2 = { seasonNum: match[1], episodeNum: match[2] };
+        formatToPlainStringResult = intl.formatToPlainString(intl4.t.ijVm6y, obj2);
       }
       return formatToPlainStringResult;
     }

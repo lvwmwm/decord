@@ -1,12 +1,12 @@
-// Module ID: 9117
-// Function ID: 9118
+// Module ID: 9134
+// Function ID: 9135
 // Name: EditGuildEventStepContainer
-// Dependencies: [32, 19, 17, 21, 5141, 575, 5730, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 5743, 2]
 // Exports: default
 
-// Module 9117 (EditGuildEventStepContainer)
+// Module 9134 (EditGuildEventStepContainer)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,20 +1,20 @@
-// Module ID: 16510
-// Function ID: 16511
+// Module ID: 16602
+// Function ID: 16603
 // Name: conjureBackgroundFrameRules
-// Dependencies: [4989, 6966, 1194, 16511, 11056, 6967, 12229, 16436, 5795, 11013, 2]
+// Dependencies: [4989, 6981, 1194, 16603, 11105, 6982, 12288, 16528, 5809, 11062, 2]
 // Exports: isBuilderPreviewFrame, shouldRunInBackgroundOnRelease
 
-// Module 16510 (conjureBackgroundFrameRules)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5795 */;
-import FramesConstants from "FramesConstants" /* 6967 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11013 */;
-import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 12229 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 16436 */;
+// Module 16602 (conjureBackgroundFrameRules)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5809 */;
+import FramesConstants from "FramesConstants" /* 6982 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11062 */;
+import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 12288 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 16528 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import FramesStore from "FramesStore" /* 6966 */;
+import FramesStore from "FramesStore" /* 6981 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 16511 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11056 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 16603 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11105 */;
 import size from "module_2" /* 2 */;
 
 const FrameIntent = FramesConstants.FrameIntent;
@@ -37,7 +37,7 @@ export function shouldRunInBackgroundOnRelease(frame) {
     let tmp11 = frame.surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL;
     const tmp10 = require;
     if (tmp11) {
-      const tmp10Result = tmp10(11013);
+      const tmp10Result = tmp10(11062);
       tmp11 = !tmp10Result.isConjurePreviewSurface(frame.surface);
     }
     let isAppVisibleResult = !tmp11;

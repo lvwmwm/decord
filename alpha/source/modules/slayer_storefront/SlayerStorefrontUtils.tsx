@@ -1,24 +1,24 @@
-// Module ID: 7528
-// Function ID: 7529
+// Module ID: 7544
+// Function ID: 7545
 // Name: SlayerStorefrontUtils
-// Dependencies: [2167, 7529, 2145, 5012, 5172, 7530, 7531, 1072, 1074, 6575, 7532, 12, 7533, 1378, 6913, 504, 7450, 2]
-// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, isOwnsMinSkusRewardRequirement, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
+// Dependencies: [2167, 7545, 2145, 5012, 5172, 7546, 7547, 1072, 1074, 6590, 7548, 12, 7549, 1378, 6928, 504, 7466, 2]
+// Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontBackgroundImageURL, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, isOwnsMinSkusRewardRequirement, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 7528 (SlayerStorefrontUtils)
+// Module 7544 (SlayerStorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import StoreUtils from "StoreUtils" /* 6575 */;
-import _mod6913 from "module_6913" /* 6913 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7529 */;
-import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7532 */;
-import StorefrontUtils from "StorefrontUtils" /* 7533 */;
+import StoreUtils from "StoreUtils" /* 6590 */;
+import _mod6928 from "module_6928" /* 6928 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7545 */;
+import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 7548 */;
+import StorefrontUtils from "StorefrontUtils" /* 7549 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import ApplicationRecord from "ApplicationRecord" /* 2145 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7530 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7531 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7546 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7547 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -161,7 +161,7 @@ function getSKUShareURL(guildId, applicationId) {
     const _location2 = location;
     const _location3 = location;
     applicationId = applicationId.applicationId;
-    const obj = _mod6913;
+    const obj = _mod6928;
     const parsed = obj.parse(search);
     const skuId = parsed.skuId;
     ({ tab, applicationId: applicationId2 } = parsed);
@@ -203,7 +203,7 @@ function isOnCollectiblesShopGameShopPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let skuId;
   let tab;
-  const obj = _mod6913;
+  const obj = _mod6928;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId, skuId } = parsed);
   let tmp2 = arr.indexOf(authStore3.COLLECTIBLES_SHOP) >= 0;
@@ -240,6 +240,30 @@ function getStorefrontEmbedShareURL(applicationId, join) {
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/slayer_storefront/SlayerStorefrontUtils.tsx");
 
+export function getSocialLayerStorefrontBackgroundImageURL(storefront) {
+  const pages = storefront.pages;
+  const found = pages.find((leaderboard) => {
+    leaderboard = leaderboard.leaderboard;
+    let prop;
+    if (leaderboard != null) {
+      prop = leaderboard.backgroundImageAssetId;
+    }
+    return null != prop;
+  });
+  let prop;
+  if (found != null) {
+    let leaderboard = found.leaderboard;
+    if (leaderboard != null) {
+      prop = leaderboard.backgroundImageAssetId;
+    }
+  }
+  let assetURL = null;
+  if (null != prop) {
+    const obj = StoreUtils;
+    assetURL = obj.getAssetURL(storefront.applicationId, prop, 1024, str);
+  }
+  return assetURL;
+}
 export const LARGE_ASSET_FORMAT = str;
 export function getOrderedStorefrontSkuIds(arg0) {
   set = new Set();
@@ -426,7 +450,7 @@ export function transformSlayerApplicationStorefrontServer(body) {
   }
   return obj;
 }
-export function getPrimaryCarouselItemInfo(tenantMetadata, arg1) {
+export function getPrimaryCarouselItemInfo(tenantMetadata, id) {
   let obj = arg2;
   if (arg2 === undefined) {
     obj = {};
@@ -436,7 +460,7 @@ export function getPrimaryCarouselItemInfo(tenantMetadata, arg1) {
   if (undefined !== size) {
     num = size;
   }
-  if (null != arg1) {
+  if (null != id) {
     let carouselItems;
     if (tenantMetadata != null) {
       tenantMetadata = tenantMetadata.tenantMetadata;
@@ -452,19 +476,19 @@ export function getPrimaryCarouselItemInfo(tenantMetadata, arg1) {
         let obj3;
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj3 = { primaryIconAsset: "Array", primaryIconLabel: "flexDirection" };
+          obj3 = { primaryIconAsset: "PX_8", primaryIconLabel: "__closure" };
         } else {
           const toURLSafe = URLUtilsDefault.toURLSafe;
           URLUtilsDefault;
           const obj2 = StoreUtils;
-          obj3 = { primaryIconAsset: toURLSafe(obj2.getAssetURL(arg1, first.labelIconAssetId, num, "webp")), primaryIconLabel: first.label };
-          const toURLSafeResult = toURLSafe(obj2.getAssetURL(arg1, first.labelIconAssetId, num, "webp"));
+          obj3 = { primaryIconAsset: toURLSafe(obj2.getAssetURL(id, first.labelIconAssetId, num, "webp")), primaryIconLabel: first.label };
+          const toURLSafeResult = toURLSafe(obj2.getAssetURL(id, first.labelIconAssetId, num, "webp"));
         }
         return obj3;
       }
     }
   }
-  return { primaryIconAsset: "Array", primaryIconLabel: "flexDirection" };
+  return { primaryIconAsset: "PX_8", primaryIconLabel: "__closure" };
 }
 export function getGameItemThumbnailUrl(value2) {
   let obj = arg1;
@@ -636,7 +660,7 @@ export function getHasWishlistOrPopularRecommendations(arr, arg1, arg2) {
 export function isOnSocialLayerStorefrontPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let tab;
-  const obj = _mod6913;
+  const obj = _mod6928;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId } = parsed);
   let tmp2 = arr.indexOf(authStore3.COLLECTIBLES_SHOP) >= 0;
@@ -665,7 +689,7 @@ export function isOnSocialLayerStorefrontSkuPage(applicationId) {
   }
   ({ guildId, skuId } = applicationId);
   applicationId = applicationId.applicationId;
-  const obj = _mod6913;
+  const obj = _mod6928;
   const parsed = obj.parse(search);
   ({ tab, applicationId: applicationId2, skuId: skuId2 } = parsed);
   let tmp2 = pathname.indexOf(authStore3.COLLECTIBLES_SHOP) >= 0;

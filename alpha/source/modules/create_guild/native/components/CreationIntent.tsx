@@ -1,24 +1,24 @@
-// Module ID: 14442
-// Function ID: 14443
+// Module ID: 14522
+// Function ID: 14523
 // Name: CreationIntent
-// Dependencies: [19, 17, 7270, 1072, 21, 5141, 5709, 575, 1499, 5397, 6141, 14385, 1252, 7412, 5747, 1113, 7186, 14003, 14443, 14447, 2]
+// Dependencies: [19, 17, 7286, 1072, 21, 5141, 5722, 575, 1499, 5398, 6156, 14465, 1252, 7428, 5761, 1113, 7201, 14089, 14523, 14527, 2]
 // Exports: default
 
-// Module 14442 (CreationIntent)
+// Module 14522 (CreationIntent)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5397 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import react_native from "react-native" /* 6141 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14385 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5398 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import react_native from "react-native" /* 6156 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14465 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7270 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7286 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -39,8 +39,8 @@ let obj3;
 let obj4;
 let tmp2;
 let unpackModuleId;
-const ChairIllocon = tmp2(14443);
-const WorldIllocon = tmp2(14447);
+const ChairIllocon = tmp2(14523);
+const WorldIllocon = tmp2(14527);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native2);
 ({ CreateGuildModalStates: metroRequire, GuildTemplateTriggers: metroImportDefault, NUXGuildTemplatesAnalytics: metroImportAll } = CreateGuildConstants);
 ({ AnalyticEvents: c9, AnalyticsLocations: c10 } = Constants);
@@ -151,7 +151,7 @@ export default function CreationIntent(arg0) {
   const Text = Text_Text.Text;
   intl = intl8.intl;
   items2 = [closure_11(Text, obj5), ];
-  let obj6 = { style: tmp.headerDescription, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl8.t.nOzc7w) };
+  let obj6 = { style: tmp.headerDescription, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl8.t.nOzc7w) };
   const Text2 = Text_Text.Text;
   intl2 = intl8.intl;
   items2[1] = closure_11(Text2, obj6);
@@ -159,7 +159,7 @@ export default function CreationIntent(arg0) {
   const obj8 = { hasIcons: true, children: null };
   const obj7 = { style: tmp.sections, children: tmp9(TableRowGroup, tmp15) };
   TableRowGroup = TableRowGroup2.TableRowGroup;
-  const tmp13 = trigger(14003);
+  const tmp13 = trigger(14089);
   const obj9 = { Icon: null, message: null, onPress: null };
   tmp10 = onPress;
   const tmp11 = ref;
@@ -178,7 +178,7 @@ export default function CreationIntent(arg0) {
           onPress(true);
         }
     };
-    const tmp12Result = trigger(14003);
+    const tmp12Result = trigger(14089);
     intl6 = intl8.intl;
     items4[1] = tmp8(tmp12Result, obj10);
     obj8.children = items4;
@@ -198,14 +198,14 @@ export default function CreationIntent(arg0) {
           onPress(false);
         }
     };
-    const tmp12Result2 = trigger(14003);
+    const tmp12Result2 = trigger(14089);
     intl4 = intl8.intl;
     items5[1] = tmp8(tmp12Result2, obj11);
     obj8.children = items5;
     tmp15 = obj8;
   }
   items3[1] = tmp8(tmp11, obj7);
-  const obj12 = { style: tmp.skipDescription, variant: "text-sm/medium", color: "text-default", children: intl7.format(intl8.t["SMc+Gz"], obj13) };
+  const obj12 = { style: tmp.skipDescription, variant: "body-sm/medium", color: "text-default", children: intl7.format(intl8.t["SMc+Gz"], obj13) };
   const Text3 = Text_Text.Text;
   intl7 = intl8.intl;
   obj13 = {

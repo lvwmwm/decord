@@ -1,18 +1,18 @@
-// Module ID: 12795
-// Function ID: 12796
+// Module ID: 12876
+// Function ID: 12877
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 12789, 12796, 12797, 5747, 1113, 12715, 7646, 12798, 3995, 5381, 12799, 2]
+// Dependencies: [19, 21, 12870, 12877, 12878, 5761, 1113, 12796, 7662, 12879, 3995, 5382, 12880, 2]
 // Exports: default
 
-// Module 12795 (ConjurePublishNoticeLine)
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import transitionToGuild from "transitionToGuild" /* 7646 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12789 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12796 */;
-import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12797 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12798 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12799 */;
+// Module 12876 (ConjurePublishNoticeLine)
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import transitionToGuild from "transitionToGuild" /* 7662 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 12870 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 12877 */;
+import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 12878 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 12879 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 12880 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -42,7 +42,7 @@ function PatchNotesLink(projectId) {
         sentHook(children, arg1) {
               let sent;
               let obj = {
-                variant: "text-md/normal",
+                variant: "body-md/normal",
                 color: "text-muted",
                 accessibilityRole: "link",
                 onPress() {
@@ -133,7 +133,7 @@ export default function ConjurePublishNoticeLine(arg0) {
   const children = [format(publishNoticeMessageResult, obj), ];
   if (null != tmp4.guildId) {
     const obj2 = { guildId: tmp4.guildId, update: notice.update };
-    tmp10 = closure_3(tmp6(12797).ConjureAutomodSettingsLink, obj2);
+    tmp10 = closure_3(tmp6(12878).ConjureAutomodSettingsLink, obj2);
   } else {
     tmp10 = null;
     if (!tmp4.automod) {
@@ -148,5 +148,5 @@ export default function ConjurePublishNoticeLine(arg0) {
     }
   }
   children[1] = tmp10;
-  return tmp5(Text, { variant: "text-md/normal", color: "text-default", children });
+  return tmp5(Text, { variant: "body-md/normal", color: "text-default", children });
 };

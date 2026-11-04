@@ -1,10 +1,10 @@
-// Module ID: 6858
-// Function ID: 6859
+// Module ID: 6873
+// Function ID: 6874
 // Name: AgeNoticeExperiment
 // Dependencies: [1449, 2]
 // Exports: isTinyBroncoEnabled, useIsTinyBroncoEnabled
 
-// Module 6858 (AgeNoticeExperiment)
+// Module 6873 (AgeNoticeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

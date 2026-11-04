@@ -1,10 +1,10 @@
-// Module ID: 19919
-// Function ID: 19920
+// Module ID: 20035
+// Function ID: 20036
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 5083, 1385, 1072, 21, 1499, 7450, 7186, 7101, 5772, 8727, 5719, 575, 19808, 12, 8301, 6147, 5729, 2]
+// Dependencies: [19, 5083, 1385, 1072, 21, 1499, 7466, 7201, 7116, 5786, 8744, 5732, 575, 19924, 12, 8317, 6162, 5742, 2]
 // Exports: default
 
-// Module 19919 (GuildSettingsModalLobbiesLinked)
+// Module 20035 (GuildSettingsModalLobbiesLinked)
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
@@ -25,13 +25,13 @@ function SyncingToGamesItem(channels) {
   const applicationId = channels.applicationId;
   let obj = channels(1499);
   dependencyMap = obj.useNavigation();
-  let obj2 = channels(7450);
+  let obj2 = channels(7466);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
   let tmp5Result = null;
   const tmp = channels;
   if (0 !== channels.length) {
     let name;
-    const TableRowGroup = tmp(7186).TableRowGroup;
+    const TableRowGroup = tmp(7201).TableRowGroup;
     const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
@@ -109,7 +109,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   const obj4 = { children: items1 };
   const obj5 = { contentContainerStyle: items, children: closure_6(Stack, obj7) };
   const obj6 = { paddingTop: keys(575).space.PX_16 };
-  const Form = require("module_8301").Form;
+  const Form = require("module_8317").Form;
   items = [obj6, contentContainerStyle];
   obj7 = {
     style: { paddingHorizontal: token },

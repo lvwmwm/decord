@@ -1,13 +1,13 @@
-// Module ID: 12645
-// Function ID: 12646
+// Module ID: 12726
+// Function ID: 12727
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [19, 21, 5141, 575, 12637, 8301, 5747, 7110, 2]
+// Dependencies: [19, 21, 5141, 575, 12718, 8317, 5761, 7125, 2]
 // Exports: default
 
-// Module 12645 (AppLauncherSelectOptionFormRow)
+// Module 12726 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -35,22 +35,22 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   const tmp2 = closure_3();
   const obj = require("useAnimationDelayedAutoFocus");
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
-  const FormRow = require("module_8301").FormRow;
-  let str = "text-md/medium";
+  const FormRow = require("module_8317").FormRow;
+  let str = "body-md/medium";
   const Text = require("Text/Text").Text;
   if (selected) {
-    str = "text-sm/medium";
+    str = "body-sm/medium";
   }
   let str2 = "text-default";
   if (selected) {
     str2 = "interactive-text-default";
   }
   if (selected) {
-    fn = () => jsx(Text_Text.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 1, children: require });
+    fn = () => jsx(Text_Text.Text, { variant: "body-md/medium", color: "text-default", lineClamp: 1, children: require });
   } else {
     fn = null;
     if (null != unselectedSubLabel) {
-      fn = () => jsx(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
+      fn = () => jsx(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", lineClamp: 1, children: unselectedSubLabel });
     }
   }
   const merged1 = Object.assign(merged);

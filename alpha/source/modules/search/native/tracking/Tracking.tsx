@@ -1,18 +1,18 @@
-// Module ID: 14038
-// Function ID: 14039
-// Name: search/tracking/Tracking
-// Dependencies: [4990, 14031, 9957, 1072, 14039, 14024, 5880, 1266, 4966, 14041, 2]
+// Module ID: 14124
+// Function ID: 14125
+// Name: Tracking
+// Dependencies: [4990, 14117, 9975, 1072, 14125, 14110, 5894, 1266, 4966, 14127, 2]
 
-// Module 14038 (search/tracking/Tracking)
+// Module 14124 (Tracking)
 import v1 from "v1" /* 1266 */;
 import UserSettings from "UserSettings" /* 4966 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5880 */;
-import TrackingConstants from "TrackingConstants" /* 9957 */;
-import SearchUtils from "SearchUtils" /* 14024 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14039 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14041 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
+import TrackingConstants from "TrackingConstants" /* 9975 */;
+import SearchUtils from "SearchUtils" /* 14110 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14125 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 14127 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import SearchQueryStore from "SearchQueryStore" /* 14031 */;
+import SearchQueryStore from "SearchQueryStore" /* 14117 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

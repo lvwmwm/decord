@@ -1,19 +1,19 @@
-// Module ID: 18086
-// Function ID: 18087
+// Module ID: 18183
+// Function ID: 18184
 // Name: ParentalControlsGoreMediaFiltersFriendsDMsSetting
-// Dependencies: [7839, 8556, 16864, 8811, 16868, 16873, 1113, 1196, 11677, 2]
+// Dependencies: [7855, 8573, 16956, 8828, 16960, 16965, 1113, 1196, 11728, 2]
 
-// Module 18086 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
+// Module 18183 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16864 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16868 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7839 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16956 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16960 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7855 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ExplicitMediaRedactionUtils = tmp(8811);
+const ExplicitMediaRedactionUtils = tmp(8828);
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle: function getTitle() {
@@ -41,7 +41,7 @@ let obj = {
     let items;
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(16868);
+      let obj = selectedTeenId(16960);
       const goreContentFriendDm = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       let obj2 = {
         title: intl.string(selectedTeenId(1113).t["16/3Bi"]),
@@ -54,8 +54,8 @@ let obj = {
         currentValue: goreContentFriendDm,
         excluded: items
       };
-      const handleSensitiveMediaFilterPress = selectedTeenId(16873).handleSensitiveMediaFilterPress;
-      selectedTeenId(16873);
+      const handleSensitiveMediaFilterPress = selectedTeenId(16965).handleSensitiveMediaFilterPress;
+      selectedTeenId(16965);
       intl = selectedTeenId(1113).intl;
       intl2 = selectedTeenId(1113).intl;
       items = [selectedTeenId(1196).ExplicitContentRedaction.SHOW];

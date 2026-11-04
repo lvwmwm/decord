@@ -1,13 +1,13 @@
-// Module ID: 15879
-// Function ID: 15880
+// Module ID: 15967
+// Function ID: 15968
 // Name: useMessageRequestPrivacyOption
-// Dependencies: [19, 21, 4966, 7286, 7488, 1113, 14149, 2]
+// Dependencies: [19, 21, 4966, 7302, 7504, 1113, 14235, 2]
 // Exports: useMessageRequestPrivacyOption
 
-// Module 15879 (useMessageRequestPrivacyOption)
+// Module 15967 (useMessageRequestPrivacyOption)
 import Fragment from "Fragment" /* 21 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7286 */;
-import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 14149 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
+import useIsStricterMessageRequestsDefault from "useIsStricterMessageRequests" /* 14235 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ function MessageRequestRestrictedGuildPrivacyOption(guild) {
     MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
   }, items);
   let obj = { label: intl.string(id(1113).t["7UgSGP"]), subLabel: intl2.string(id(1113).t.INRaYb), value: !hasItem1 && !hasItem, onValueChange: callback, disabled: hasItem1 };
-  const ActionSheetSwitchRow = id(7488).ActionSheetSwitchRow;
+  const ActionSheetSwitchRow = id(7504).ActionSheetSwitchRow;
   intl = id(1113).intl;
   intl2 = id(1113).intl;
   return jsx(ActionSheetSwitchRow, obj);

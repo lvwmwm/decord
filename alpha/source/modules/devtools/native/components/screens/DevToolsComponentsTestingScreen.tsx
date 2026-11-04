@@ -1,28 +1,28 @@
-// Module ID: 17865
-// Function ID: 17866
+// Module ID: 17961
+// Function ID: 17962
 // Name: DevToolsComponentsTestingScreen
-// Dependencies: [32, 19, 17, 5044, 21, 5141, 575, 6185, 2121, 8820, 7103, 5747, 17866, 17869, 5754, 6147, 17870, 572, 2]
+// Dependencies: [32, 19, 17, 5044, 21, 5141, 575, 6200, 2121, 8837, 7118, 5761, 17962, 17965, 5768, 6162, 17966, 572, 2]
 // Exports: default
 
-// Module 17865 (DevToolsComponentsTestingScreen)
+// Module 17961 (DevToolsComponentsTestingScreen)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2121 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import ComponentStateContext from "ComponentStateContext" /* 8820 */;
-import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 17866 */;
-import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 17869 */;
-import TextDisplayComponentDefault from "TextDisplayComponent" /* 17870 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import ComponentStateContext from "ComponentStateContext" /* 8837 */;
+import StringSelectActionComponentDefault from "StringSelectActionComponent" /* 17962 */;
+import SearchableSelectActionComponentDefault from "SearchableSelectActionComponent" /* 17965 */;
+import TextDisplayComponentDefault from "TextDisplayComponent" /* 17966 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 6185 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 6200 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -74,22 +74,22 @@ function Select(type) {
   }
   if (type1 === obj.type) {
     let mapped;
-    const Text = tmp4(5747).Text;
+    const Text = tmp4(5761).Text;
     if ("values" in state) {
       mapped = state.values;
     } else {
       const selectedOptions = state.selectedOptions;
       mapped = selectedOptions.map((label) => label.label);
     }
-    const obj6 = { variant: "text-md/normal", children: items1 };
+    const obj6 = { variant: "body-md/normal", children: items1 };
     items1 = ["Selected values: ", mapped.join(", ")];
     tmp7Result1 = tmp6(Text, obj6);
   } else {
-    tmp7Result1 = tmp7(tmp4(5747).Text, { variant: "text-md/normal", children: "Nothing selected" });
+    tmp7Result1 = tmp7(tmp4(5761).Text, { variant: "body-md/normal", children: "Nothing selected" });
   }
   items[2] = tmp7Result1;
   let str3 = "off";
-  const Button = tmp4(5754).Button;
+  const Button = tmp4(5768).Button;
   if (tmp2) {
     str3 = "on";
   }
@@ -135,7 +135,7 @@ export default function DevToolsComponentsTestingScreen() {
   let obj = { style: tmp.wrap, contentContainerStyle: tmp.contentContainer, children: metroImportAll(Stack, obj2) };
   obj2 = { spacing: 16, children: items };
   Stack = Stack_Stack.Stack;
-  items = [metroImportDefault(Text_Text.Text, { variant: "text-md/normal", children: "Test screen for embedding native components in RN" }), , ];
+  items = [metroImportDefault(Text_Text.Text, { variant: "body-md/normal", children: "Test screen for embedding native components in RN" }), , ];
   const obj3 = { modal: obj4, children: items1 };
   obj4 = { customId: modal, channelId: SelectedChannelStore.getChannelId(), components };
   const ComponentStateContextProvider = ComponentStateContext.ComponentStateContextProvider;

@@ -1,18 +1,18 @@
-// Module ID: 14717
-// Function ID: 14718
+// Module ID: 14797
+// Function ID: 14798
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [19, 17, 7396, 1072, 21, 5141, 575, 504, 8874, 5381, 7687, 7452, 5395, 7186, 7101, 1113, 2]
+// Dependencies: [19, 17, 7412, 1072, 21, 5141, 575, 504, 8891, 5382, 7703, 7468, 5396, 7201, 7116, 1113, 2]
 // Exports: default
 
-// Module 14717 (AppDMOptionsBottomSheet)
+// Module 14797 (AppDMOptionsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
 import react from "react" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7396 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7412 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

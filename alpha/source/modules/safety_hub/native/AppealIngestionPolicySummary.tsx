@@ -1,16 +1,16 @@
-// Module ID: 13474
-// Function ID: 13475
+// Module ID: 13558
+// Function ID: 13559
 // Name: AppealIngestionPolicySummary
-// Dependencies: [19, 17, 21, 5141, 575, 8093, 5138, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8109, 5138, 5761, 1113, 2]
 // Exports: default
 
-// Module 13474 (AppealIngestionPolicySummary)
+// Module 13558 (AppealIngestionPolicySummary)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8093 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -45,12 +45,12 @@ export default function AppealIngestionPolicySummary(classification) {
   const capitalizeTextResult = capitalizeText(description);
   const obj = { style: tmp.policy, children: items };
   const tmp2Result = ColorUtils;
-  const obj2 = { style: tmp.sectionTitle, variant: "text-sm/semibold", children: intl.string(intl2.t.xsdcxh) };
+  const obj2 = { style: tmp.sectionTitle, variant: "body-sm/semibold", children: intl.string(intl2.t.xsdcxh) };
   const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-  const Text = tmp2(5747).Text;
+  const Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
   items = [_false(Text, obj2), ];
-  const obj3 = { style: items1, children: _false(Text_Text.Text, { variant: "text-md/semibold", children: capitalizeTextResult }) };
+  const obj3 = { style: items1, children: _false(Text_Text.Text, { variant: "body-md/semibold", children: capitalizeTextResult }) };
   items1 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
   items[1] = _false(View, obj3);
   return React3(View, obj);

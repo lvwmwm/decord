@@ -1,23 +1,23 @@
-// Module ID: 6207
-// Function ID: 6208
+// Module ID: 6222
+// Function ID: 6223
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [6186, 5892, 11, 6208, 6209, 6210, 6211, 6231, 6553, 1113, 3219, 6195, 5087, 6557, 3187, 2021, 2121, 2]
+// Dependencies: [6201, 5906, 11, 6223, 6224, 6225, 6226, 6246, 6568, 1113, 3219, 6210, 5087, 6572, 3187, 2021, 2121, 2]
 // Exports: formatCheckpoint2026PowerLevel, getCharacterLayerUrls, getCheckpoint2026PowerBarUnits, getCheckpointDataFromMessage, getCheckpointLabel, toCheckpointMessageComponentData, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 6207 (checkpoint/CheckpointMessageComponentUtils)
+// Module 6222 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl18 from "intl" /* 1113 */;
 import Server from "Server" /* 2121 */;
 import _modDef3187 from "module_3187" /* 3187 */;
 import _modDef3219 from "module_3219" /* 3219 */;
-import TimeUtils from "TimeUtils" /* 5892 */;
-import CheckpointUtils from "CheckpointUtils" /* 6195 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6208 */;
-import CheckpointCardTypes from "CheckpointCardTypes" /* 6210 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6211 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6231 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6557 */;
-import CheckpointConstants from "CheckpointConstants" /* 6186 */;
+import TimeUtils from "TimeUtils" /* 5906 */;
+import CheckpointUtils from "CheckpointUtils" /* 6210 */;
+import CheckpointExperiments from "CheckpointExperiments" /* 6223 */;
+import CheckpointCardTypes from "CheckpointCardTypes" /* 6225 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6226 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6246 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6572 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +29,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const CheckpointCardColorPalette = tmp(6209);
+const CheckpointCardColorPalette = tmp(6224);
 function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
   let formatToPlainString;
   let formatToPlainStringResult1;

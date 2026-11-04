@@ -1,15 +1,15 @@
-// Module ID: 14494
-// Function ID: 14495
+// Module ID: 14574
+// Function ID: 14575
 // Name: DiscoverabilityActionSheet
-// Dependencies: [19, 17, 14379, 1072, 21, 5141, 575, 8301, 1113, 5747, 14382, 7486, 2]
+// Dependencies: [19, 17, 14459, 1072, 21, 5141, 575, 8317, 1113, 5761, 14462, 7502, 2]
 // Exports: default
 
-// Module 14494 (DiscoverabilityActionSheet)
+// Module 14574 (DiscoverabilityActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import react_mod from "react" /* 19 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14379 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14459 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -102,7 +102,7 @@ export default function DiscoverabilityActionSheet() {
   intl4 = allowPhone(allowEmail[8]).intl;
   obj7 = {
     learnMoreHook: function LearnMore(children, arg1) {
-      const obj = { onPress: allowPhone(allowEmail[10]).handleOpenLearnMoreLink, variant: "text-sm/medium", color: "text-link", children };
+      const obj = { onPress: allowPhone(allowEmail[10]).handleOpenLearnMoreLink, variant: "body-sm/medium", color: "text-link", children };
       const Text = allowPhone(allowEmail[9]).Text;
       return closure_1_8(Text, obj, arg1);
     }
@@ -117,7 +117,7 @@ export default function DiscoverabilityActionSheet() {
   obj10 = { style: tmp.formText, text: intl6.string(allowPhone(allowEmail[8]).t["eJnn0+"]) };
   Label2 = allowPhone(allowEmail[7]).FormRow.Label;
   intl6 = allowPhone(allowEmail[8]).intl;
-  obj11 = { variant: "text-sm/medium", color: "text-default", children: intl7.string(allowPhone(allowEmail[8]).t.X7pIKN) };
+  obj11 = { variant: "body-sm/medium", color: "text-default", children: intl7.string(allowPhone(allowEmail[8]).t.X7pIKN) };
   Text = allowPhone(allowEmail[9]).Text;
   intl7 = allowPhone(allowEmail[8]).intl;
   items4[5] = closure_8(FormRow2, obj9);
@@ -126,7 +126,7 @@ export default function DiscoverabilityActionSheet() {
   obj13 = { style: tmp.formText, text: intl8.string(allowPhone(allowEmail[8]).t.dI4d4S) };
   Label3 = allowPhone(allowEmail[7]).FormRow.Label;
   intl8 = allowPhone(allowEmail[8]).intl;
-  obj14 = { variant: "text-sm/medium", color: "text-default", children: intl9.string(allowPhone(allowEmail[8]).t.ilGsHE) };
+  obj14 = { variant: "body-sm/medium", color: "text-default", children: intl9.string(allowPhone(allowEmail[8]).t.ilGsHE) };
   Text2 = allowPhone(allowEmail[9]).Text;
   intl9 = allowPhone(allowEmail[8]).intl;
   items4[6] = closure_8(FormRow3, obj12);

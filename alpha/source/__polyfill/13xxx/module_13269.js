@@ -1,85 +1,44 @@
 // Module ID: 13269
 // Function ID: 13270
-// Dependencies: [13191]
-// Exports: addMetadataToStackFrames, stripMetadataFromStackFrames
+// Dependencies: [13270, 13277, 13278, 13301, 13273, 13290]
+// Exports: registerSpanErrorInstrumentation
 
 // Module 13269
-import _mod13191 from "module_13191" /* 13191 */;
+import _mod13270 from "module_13270" /* 13270 */;
+import _mod13277 from "module_13277" /* 13277 */;
+import _mod13278 from "module_13278" /* 13278 */;
+import _mod13290 from "module_13290" /* 13290 */;
+import _mod13301 from "module_13301" /* 13301 */;
 
-function getMetadataForUrl(fn, arg1) {
-  function ensureMetadataStacksAreParsed(fn) {
-    const tmp2 = require;
-    const tmp4 = dependencyMap;
-    if (_mod13191.GLOBAL_OBJ._sentryModuleMetadata) {
-      const _Object = Object;
-      const keys = Object.keys(tmp2(tmp4[0]).GLOBAL_OBJ._sentryModuleMetadata);
-      for (const item10026 of keys) {
-        let tmp11 = item10026;
-        let tmp16 = _mod13191.GLOBAL_OBJ._sentryModuleMetadata[item10026];
-        let obj = set;
-        if (!set.has(item10026)) {
-          let addResult = obj.add(tmp11);
-          let obj2 = fn(tmp11);
-          let reversed = obj2.reverse();
-          for (const item10050 of reversed) {
-            if (item10050.filename) {
-              let result = map.set(tmp22.filename, tmp16);
-              obj3.return();
-              break;
-            }
-            continue;
-          }
-        }
-        continue;
-      }
+function errorCallback() {
+  const obj = _mod13278;
+  const activeSpan = obj.getActiveSpan();
+  let rootSpan = activeSpan;
+  if (rootSpan) {
+    const tmpResult = _mod13278;
+    rootSpan = tmpResult.getRootSpan(activeSpan);
+  }
+  if (rootSpan) {
+    if (_mod13301.DEBUG_BUILD) {
+      const logger = tmp(13273).logger;
+      const _HermesInternal = HermesInternal;
+      logger.log("[Tracing] Root span: " + "internal_error" + " -> Global error occurred");
     }
+    const setStatus = rootSpan.setStatus;
+    const obj2 = { code: _mod13290.SPAN_STATUS_ERROR, message: "internal_error" };
+    setStatus(obj2);
   }
-  const tmp = ensureMetadataStacksAreParsed(fn);
-  return map.get(arg1);
 }
-const map = new Map();
-const set = new Set();
+let c2 = false;
+errorCallback.tag = "sentry_tracingErrorCallback";
 
-export function addMetadataToStackFrames(arg0, exception) {
-  let closure_0 = arg0;
-  try {
-    let tmp = exception;
-    const values = exception.exception.values;
-    const item = values.forEach((stacktrace) => {
-      if (stacktrace.stacktrace) {
-        const tmp = stacktrace.stacktrace.frames || [];
-        for (const item10010 of tmp) {
-          let tmp4 = item10010;
-          if (item10010.filename) {
-            if (!tmp4.module_metadata) {
-              let tmp9 = getMetadataForUrl(closure_0, tmp4.filename);
-              if (tmp9) {
-                tmp4.module_metadata = tmp10;
-              }
-            }
-          }
-          continue;
-        }
-      }
-    });
-  } catch (err) {
-  }
-}
-export { getMetadataForUrl };
-export function stripMetadataFromStackFrames(exception) {
-  try {
-    let tmp = exception;
-    const values = exception.exception.values;
-    const item = values.forEach((stacktrace) => {
-      if (stacktrace.stacktrace) {
-        const tmp = stacktrace.stacktrace.frames || [];
-        const iter = tmp[Symbol.iterator]();
-        while (iter !== undefined) {
-          delete iter.next()[`module_metadata`];
-          continue;
-        }
-      }
-    });
-  } catch (err) {
+export function registerSpanErrorInstrumentation() {
+  const tmp = c2;
+  if (!tmp) {
+    c2 = true;
+    const obj = _mod13270;
+    const result = obj.addGlobalErrorInstrumentationHandler(errorCallback);
+    const obj2 = _mod13277;
+    const result1 = obj2.addGlobalUnhandledRejectionInstrumentationHandler(errorCallback);
   }
 }

@@ -1,18 +1,18 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14807
+// Function ID: 14808
 // Name: NitroLimitUpsellBar
-// Dependencies: [17, 21, 5141, 575, 8150, 5837, 10178, 5747, 1113, 10420, 5754, 2]
+// Dependencies: [17, 21, 5141, 575, 8166, 5851, 10226, 5761, 1113, 10468, 5768, 2]
 // Exports: default
 
-// Module 14727 (NitroLimitUpsellBar)
+// Module 14807 (NitroLimitUpsellBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import WarningIcon from "WarningIcon" /* 8150 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10178 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10420 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import WarningIcon from "WarningIcon" /* 8166 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10226 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10468 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -54,9 +54,9 @@ export default function NitroLimitUpsellBar(isAtLimit) {
     tmp9 = tmp4;
   }
   items = [tmp4Result, , ];
-  const obj4 = { variant: "text-xs/medium", color: "text-default", style: tmp.text, children: items1 };
+  const obj4 = { variant: "body-xs/medium", color: "text-default", style: tmp.text, children: items1 };
   const Text = Text_Text.Text;
-  const obj5 = { variant: "text-xs/semibold", color: "text-brand", children: str.toUpperCase() };
+  const obj5 = { variant: "body-xs/semibold", color: "text-brand", children: str.toUpperCase() };
   const Text2 = Text_Text.Text;
   const intl = intl3.intl;
   str = intl.string(intl3.t.oW0eUd);
@@ -65,7 +65,7 @@ export default function NitroLimitUpsellBar(isAtLimit) {
   if (isAtLimit) {
     Button = NitroUpsellButtonDefault;
   } else {
-    Button = tmp12(5754).Button;
+    Button = tmp12(5768).Button;
   }
   const obj6 = { size: "sm", text: intl2.string(intl3.t["8x0jKT"]), onPress, loading };
   intl2 = tmp12(1113).intl;

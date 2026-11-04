@@ -1,16 +1,16 @@
-// Module ID: 18286
-// Function ID: 18287
+// Module ID: 18383
+// Function ID: 18384
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2191, 15016, 21, 5141, 575, 1187, 1652, 563, 5757, 1705, 9637, 5747, 2024, 18287, 2]
+// Dependencies: [32, 19, 17, 2191, 15096, 21, 5141, 575, 1187, 1652, 563, 5771, 1705, 9656, 5761, 2024, 18384, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 18286 (HappeningNowAvatarStack)
+// Module 18383 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import ClipView from "ClipView" /* 9637 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 15016 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import ClipView from "ClipView" /* 9656 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 15096 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore_mod from "LocaleStore" /* 2191 */;
@@ -269,7 +269,7 @@ export function HappeningNowAvatarStack(userLimit) {
     let obj3 = { style: items7, children: mapped };
     items7 = [tmp3.avatars, animatedStyle2];
     const items8 = [sharedValue(isTyping(tmp7[9]).View, obj3), ];
-    const obj4 = { color: "text-default", variant: "text-xs/semibold", children: tmp6Result7.humanizeValue(userCount, stateFromStores) };
+    const obj4 = { color: "text-default", variant: "body-xs/semibold", children: tmp6Result7.humanizeValue(userCount, stateFromStores) };
     const Text2 = tmp6(tmp7[14]).Text;
     tmp6Result7 = tmp6(tmp7[15]);
     items8[1] = sharedValue(Text2, obj4);
@@ -287,7 +287,7 @@ export function HappeningNowAvatarStack(userLimit) {
     const tmp33 = isTyping;
     if (diff > 0) {
       const obj7 = { style: tmp3.userCounter, children: substr(Text, obj8) };
-      obj8 = { color: "text-default", variant: "text-xxs/semibold", allowFontScaling: false, children: items12 };
+      obj8 = { color: "text-default", variant: "footnote/semibold", allowFontScaling: false, children: items12 };
       Text = tmp6(tmp7[14]).Text;
       items12 = ["+"];
       const tmp6Result8 = tmp6(tmp7[15]);

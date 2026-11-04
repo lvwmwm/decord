@@ -1,16 +1,16 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13564
+// Function ID: 13565
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 8094, 21, 5141, 13457, 1113, 13455, 5837, 13481, 5747, 13475, 2]
+// Dependencies: [19, 17, 8110, 21, 5141, 13541, 1113, 13539, 5851, 13565, 5761, 13559, 2]
 // Exports: default
 
-// Module 13480 (AppealIngestionRequestSent)
+// Module 13564 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13475 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13481 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 13559 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13565 */;
 import react from "react" /* 19 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8094 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8110 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ export default function AppealIngestionRequestSent() {
   const obj4 = { source: AssetRegistryDefault, style: tmp.checkboxPng };
   const tmp4 = FastImageDefault;
   items = [closure_6(tmp4, obj4), closure_6(require("AppealIngestionModal").AppealIngestionModalHeader, { headerText: stringResult, subHeaderText: stringResult1 }), , , ];
-  const obj5 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: intl3.string(require("intl").t["9BRc1N"]) };
+  const obj5 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.actionsHeader, children: intl3.string(require("intl").t["9BRc1N"]) };
   const Text = require("Text/Text").Text;
   intl3 = require("intl").intl;
   items[2] = closure_6(Text, obj5);

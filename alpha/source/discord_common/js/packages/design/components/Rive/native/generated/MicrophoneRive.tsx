@@ -1,13 +1,13 @@
-// Module ID: 5294
-// Function ID: 5295
+// Module ID: 5295
+// Function ID: 5296
 // Name: MicrophoneRive
-// Dependencies: [109, 19, 21, 5216, 5295, 5269, 2]
+// Dependencies: [109, 19, 21, 5215, 5296, 5268, 2]
 // Exports: MicrophoneRive
 
-// Module 5294 (MicrophoneRive)
+// Module 5295 (MicrophoneRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5216 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5269 */;
+import BaseRive2 from "BaseRive" /* 5215 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5268 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -69,7 +69,7 @@ let closure_8 = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(5216).useBooleanBinding;
+    const useBooleanBinding = tmp(5215).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;
@@ -102,7 +102,7 @@ let closure_8 = {
     }
     const colorBinding = useColorBinding("fill", instance, fill, fill1, playIfNeeded);
     let on;
-    const useBooleanBinding = tmp(5216).useBooleanBinding;
+    const useBooleanBinding = tmp(5215).useBooleanBinding;
     BaseRive2;
     if (dataBinding != null) {
       on = dataBinding.on;

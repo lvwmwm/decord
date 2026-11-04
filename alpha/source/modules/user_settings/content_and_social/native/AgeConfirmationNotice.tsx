@@ -1,19 +1,19 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16961
+// Function ID: 16962
 // Name: AgeConfirmationNotice
-// Dependencies: [19, 17, 7614, 21, 7596, 16730, 5829, 2190, 8079, 6849, 575, 8149, 1113, 5747, 2]
+// Dependencies: [19, 17, 7630, 21, 7612, 16822, 5843, 2190, 8095, 6864, 575, 8165, 1113, 5761, 2]
 // Exports: default
 
-// Module 16869 (AgeConfirmationNotice)
+// Module 16961 (AgeConfirmationNotice)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16730 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16822 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7614 */;
+import Constants from "Constants" /* 7630 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -32,7 +32,7 @@ export default function AgeConfirmationNotice() {
   let obj6;
   let onPress;
   let sensitiveContentFilterHelpArticle;
-  let obj = sensitiveContentFilterHelpArticle(7596);
+  let obj = sensitiveContentFilterHelpArticle(7612);
   sensitiveContentFilterHelpArticle = obj.useSensitiveContentFilterHelpArticle();
   const effect = react.useEffect(() => {
     const obj = sensitiveContentFilterHelpArticle(dependencyMap[5]);
@@ -56,11 +56,11 @@ export default function AgeConfirmationNotice() {
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(constants2.AGE_CONFIRMATION_NOTICE, constants.CONFIRM_AGE);
   }, []);
   ({ type: "info", message: intl.format(sensitiveContentFilterHelpArticle(1113).t.mFgsfg, obj5), role: "status", action: obj6 });
-  const InlineNotice = sensitiveContentFilterHelpArticle(8149).InlineNotice;
+  const InlineNotice = sensitiveContentFilterHelpArticle(8165).InlineNotice;
   intl = sensitiveContentFilterHelpArticle(1113).intl;
   obj5 = {
     hook(children) {
-      return jsx(Text_Text.Text, { role: "link", variant: "text-sm/medium", color: "text-link", onPress, children });
+      return jsx(Text_Text.Text, { role: "link", variant: "body-sm/medium", color: "text-link", onPress, children });
     }
   };
   obj6 = { text: intl2.string(sensitiveContentFilterHelpArticle(1113).t.FDSSia), onPress: callback };

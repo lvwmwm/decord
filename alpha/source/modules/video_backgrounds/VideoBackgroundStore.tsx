@@ -1,12 +1,12 @@
-// Module ID: 6046
-// Function ID: 6047
+// Module ID: 6061
+// Function ID: 6062
 // Name: VideoBackgroundStore
-// Dependencies: [1194, 1231, 2135, 5044, 1385, 5909, 504, 572, 2]
+// Dependencies: [1194, 1231, 2135, 5044, 1385, 5923, 504, 572, 2]
 
-// Module 6046 (VideoBackgroundStore)
+// Module 6061 (VideoBackgroundStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5909 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5923 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
@@ -133,7 +133,7 @@ let obj = {
       if (tmp3 != null) {
         graph = tmp3.graph;
       }
-      c10 = graph !== tmp(5909).FilterSettingsGraph.NONE;
+      c10 = graph !== tmp(5923).FilterSettingsGraph.NONE;
     }
     if (BaseConnectionEvent.FilterSettingsKey.CAMERA_BACKGROUND_PREVIEW in settings) {
       c13 = false;

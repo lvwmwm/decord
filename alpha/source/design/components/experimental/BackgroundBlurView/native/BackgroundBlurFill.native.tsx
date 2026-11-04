@@ -1,21 +1,21 @@
-// Module ID: 8305
-// Function ID: 8306
+// Module ID: 8321
+// Function ID: 8322
 // Name: BackgroundBlurFill
-// Dependencies: [19, 17, 21, 575, 5138, 5207, 5723, 5719, 5722, 1652, 5757, 5758, 2]
+// Dependencies: [19, 17, 21, 575, 5138, 5207, 5736, 5732, 5735, 1652, 5771, 5772, 2]
 // Exports: BackgroundBlurFill, BackgroundBlurFillAnimated, BackgroundBlurFillWithPress
 
-// Module 8305 (BackgroundBlurFill)
+// Module 8321 (BackgroundBlurFill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import VisualEffectView from "VisualEffectView" /* 5723 */;
+import VisualEffectView from "VisualEffectView" /* 5736 */;
 import react from "react" /* 19 */;
 import ColorUtils_mod from "ColorUtils" /* 5138 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const VisualEffectViewAnimatedDefault = tmp4(5722);
-const VisualEffectViewDefault = tmp4(5723);
+const VisualEffectViewAnimatedDefault = tmp4(5735);
+const VisualEffectViewDefault = tmp4(5736);
 const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
 const BLACK = nativeDefault.unsafe_rawColors.BLACK;
@@ -66,10 +66,10 @@ export function BackgroundBlurFill(arg0) {
       return obj.isBlurThemeLight(blurTheme) ? closure_2_6 : closure_2_8;
     }, items1);
   }
-  const useToken = blurTheme(5719).useToken;
-  blurTheme(5719);
+  const useToken = blurTheme(5732).useToken;
+  blurTheme(5732);
   const BACKGROUND_SCRIM = nativeDefault.colors.BACKGROUND_SCRIM;
-  const tmpResult2 = blurTheme(5723);
+  const tmpResult2 = blurTheme(5736);
   if (android_fallbackColor == null) {
     android_fallbackColor = useToken(BACKGROUND_SCRIM, tmpResult2.normalizeBlurTheme(blurTheme));
   }
@@ -111,10 +111,10 @@ export function BackgroundBlurFillAnimated(arg0) {
       return obj.isBlurThemeLight(blurTheme) ? closure_2_6 : closure_2_8;
     }, items1);
   }
-  const useToken = blurTheme(5719).useToken;
-  blurTheme(5719);
+  const useToken = blurTheme(5732).useToken;
+  blurTheme(5732);
   const BACKGROUND_SCRIM = nativeDefault.colors.BACKGROUND_SCRIM;
-  const tmpResult2 = blurTheme(5723);
+  const tmpResult2 = blurTheme(5736);
   if (android_fallbackColor == null) {
     android_fallbackColor = useToken(BACKGROUND_SCRIM, tmpResult2.normalizeBlurTheme(blurTheme));
   }
@@ -165,27 +165,27 @@ export function BackgroundBlurFillWithPress(style) {
     }
     return str;
   }, items);
-  const tmp2Result = blurTheme(5723);
+  const tmp2Result = blurTheme(5736);
   const normalizeBlurThemeResult = tmp2Result.normalizeBlurTheme(blurTheme);
-  const tmp2Result8 = blurTheme(5723);
+  const tmp2Result8 = blurTheme(5736);
   const tmp6 = tmp2Result8.isBlurThemeLight(blurTheme) ? closure_6 : closure_8;
-  const tmp2Result9 = blurTheme(5723);
+  const tmp2Result9 = blurTheme(5736);
   const tmp7 = tmp2Result9.isBlurThemeLight(blurTheme) ? closure_7 : closure_9;
-  const tmp2Result10 = blurTheme(5719);
+  const tmp2Result10 = blurTheme(5732);
   const token = tmp2Result10.useToken(nativeDefault.colors.BACKGROUND_SCRIM, normalizeBlurThemeResult);
-  const tmp2Result11 = blurTheme(5719);
+  const tmp2Result11 = blurTheme(5732);
   const token1 = tmp2Result11.useToken(nativeDefault.colors.BACKGROUND_SCRIM_LIGHTBOX, normalizeBlurThemeResult);
-  const tmp2Result12 = blurTheme(5723);
+  const tmp2Result12 = blurTheme(5736);
   const isBlurDisabledResult = tmp2Result12.isBlurDisabled(merged);
   const items1 = [closure_10, , , , , , ];
   const useAnimatedStyle = tmp2(1652).useAnimatedStyle;
   blurTheme(1652);
-  items1[1] = blurTheme(5757).withSpring;
+  items1[1] = blurTheme(5771).withSpring;
   items1[2] = blurTheme(1652).interpolateColor;
   items1[3] = pressed;
   items1[4] = token;
   items1[5] = token1;
-  items1[6] = blurTheme(5758).ON_PRESS_SPRING;
+  items1[6] = blurTheme(5772).ON_PRESS_SPRING;
   let c0;
   let c1;
   let c2;
@@ -209,12 +209,12 @@ export function BackgroundBlurFillWithPress(style) {
   const items3 = [closure_11, isBlurDisabledResult, , , , , , ];
   const useAnimatedProps = tmp2(1652).useAnimatedProps;
   blurTheme(1652);
-  items3[2] = blurTheme(5757).withSpring;
+  items3[2] = blurTheme(5771).withSpring;
   items3[3] = blurTheme(1652).interpolateColor;
   items3[4] = pressed;
   items3[5] = tmp6;
   items3[6] = tmp7;
-  items3[7] = blurTheme(5758).ON_PRESS_SPRING;
+  items3[7] = blurTheme(5772).ON_PRESS_SPRING;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;

@@ -1,15 +1,15 @@
-// Module ID: 11490
-// Function ID: 11491
+// Module ID: 11540
+// Function ID: 11541
 // Name: UnreadSettingNotice
-// Dependencies: [19, 17, 1082, 21, 5141, 575, 11491, 5747, 1113, 7106, 11492, 2]
+// Dependencies: [19, 17, 1082, 21, 5141, 575, 11541, 5761, 1113, 7121, 11542, 2]
 // Exports: default
 
-// Module 11490 (UnreadSettingNotice)
+// Module 11540 (UnreadSettingNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11491 */;
-import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11492 */;
+import UnreadSettingNoticeImpressionTrackingDefault from "UnreadSettingNoticeImpressionTracking" /* 11541 */;
+import updateChannelUnreadSettingsDefault from "updateChannelUnreadSettings" /* 11542 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -49,7 +49,7 @@ export default function UnreadSettingNoticeConnected(channel) {
   const obj2 = { id: channel.channel.id };
   items[0] = closure_5(UnreadSettingNoticeImpressionTrackingDefault, obj2);
   const obj3 = { style: tmp.informations, children: closure_5(Text, obj4) };
-  obj4 = { variant: "text-md/semibold", children: intl.string(require("intl").t.i4xQ5o) };
+  obj4 = { variant: "body-md/semibold", children: intl.string(require("intl").t.i4xQ5o) };
   Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items[1] = closure_5(View, obj3);
@@ -64,7 +64,7 @@ export default function UnreadSettingNoticeConnected(channel) {
     children: closure_5(Text2, obj7)
   };
   PressableOpacity = require("Pressables").PressableOpacity;
-  obj7 = { variant: "text-xs/medium", color: "text-link", children: intl2.string(require("intl").t.KyUKhT) };
+  obj7 = { variant: "body-xs/medium", color: "text-link", children: intl2.string(require("intl").t.KyUKhT) };
   Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items[2] = closure_5(View, obj5);

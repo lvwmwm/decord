@@ -1,14 +1,14 @@
-// Module ID: 17330
-// Function ID: 17331
+// Module ID: 17421
+// Function ID: 17422
 // Name: QuestDockLimitedTimePill
-// Dependencies: [19, 17, 21, 575, 5141, 11778, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 575, 5141, 11834, 5761, 1113, 2]
 
-// Module 17330 (QuestDockLimitedTimePill)
+// Module 17421 (QuestDockLimitedTimePill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TimerIcon2 from "TimerIcon" /* 11778 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TimerIcon2 from "TimerIcon" /* 11834 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -31,7 +31,7 @@ const memoResult = react.memo(function QuestDockLimitedTimePill() {
   const obj2 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
   const TimerIcon = TimerIcon2.TimerIcon;
   items = [React3(TimerIcon, obj2), ];
-  const obj3 = { variant: "text-xs/semibold", color: "text-overlay-light", style: tmp.text, children: intl.string(intl2.t["h/uBCR"]) };
+  const obj3 = { variant: "body-xs/semibold", color: "text-overlay-light", style: tmp.text, children: intl.string(intl2.t["h/uBCR"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items[1] = React3(Text, obj3);

@@ -1,14 +1,14 @@
-// Module ID: 8775
-// Function ID: 8776
+// Module ID: 8792
+// Function ID: 8793
 // Name: TextControllerIcon
-// Dependencies: [19, 21, 575, 5836, 8759, 2]
+// Dependencies: [19, 21, 575, 5850, 8776, 2]
 // Exports: TextControllerIcon
 
-// Module 8775 (TextControllerIcon)
+// Module 8792 (TextControllerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 8759 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 8776 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

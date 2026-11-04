@@ -1,12 +1,12 @@
-// Module ID: 18427
-// Function ID: 18428
+// Module ID: 18521
+// Function ID: 18522
 // Name: useTotalPossibleBoostCount
-// Dependencies: [19, 5353, 1072, 2]
+// Dependencies: [19, 5354, 1072, 2]
 // Exports: default
 
-// Module 18427 (useTotalPossibleBoostCount)
+// Module 18521 (useTotalPossibleBoostCount)
 import react from "react" /* 19 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5353 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5354 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

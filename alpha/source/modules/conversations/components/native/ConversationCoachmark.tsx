@@ -1,17 +1,17 @@
-// Module ID: 14696
-// Function ID: 14697
+// Module ID: 14776
+// Function ID: 14777
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 4987, 21, 4974, 5141, 575, 5747, 1113, 7693, 10085, 2]
+// Dependencies: [32, 19, 17, 4987, 21, 4974, 5141, 575, 5761, 1113, 7709, 10133, 2]
 // Exports: ConversationCoachmark
 
-// Module 14696 (ConversationCoachmark)
+// Module 14776 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -23,7 +23,7 @@ let obj2;
 let obj3;
 function NewBadge() {
   let intl;
-  ({ variant: "text-sm/semibold", color: "text-default", children: intl.string(intl3.t.c2GSIl) });
+  ({ variant: "body-sm/semibold", color: "text-default", children: intl.string(intl3.t.c2GSIl) });
   const Text = Text_Text.Text;
   intl = intl3.intl;
   return <View style={closure_9().badge}>{null}</View>;
@@ -49,7 +49,7 @@ export function ConversationCoachmark(arg0) {
   ({ children, isLast } = arg0);
   const tmp = closure_9();
   const ref = react.useRef(null);
-  let obj = first(7693);
+  let obj = first(7709);
   const tmp3 = _slicedToArray(obj.useSelectedDismissibleContent(items), 2);
   first = tmp3[0];
   dependencyMap = tmp5;
@@ -73,7 +73,7 @@ export function ConversationCoachmark(arg0) {
     intl2 = intl3.intl;
     return obj;
   }, items);
-  const obj2 = first(10085);
+  const obj2 = first(10133);
   const coachmark = obj2.useCoachmark(ref, memo);
   const items1 = [tmp3[1]];
   let coachmarkWrapper;

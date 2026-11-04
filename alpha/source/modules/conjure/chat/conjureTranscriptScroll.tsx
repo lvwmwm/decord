@@ -1,10 +1,10 @@
-// Module ID: 12737
-// Function ID: 12738
+// Module ID: 12818
+// Function ID: 12819
 // Name: conjureTranscriptScroll
 // Dependencies: [2]
 // Exports: decideConjureTranscriptReveal, isNearBottom, keepsBottomOnShrink
 
-// Module 12737 (conjureTranscriptScroll)
+// Module 12818 (conjureTranscriptScroll)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/chat/conjureTranscriptScroll.tsx");

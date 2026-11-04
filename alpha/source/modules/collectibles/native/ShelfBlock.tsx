@@ -1,20 +1,20 @@
-// Module ID: 18018
-// Function ID: 18019
+// Module ID: 18114
+// Function ID: 18115
 // Name: ShelfBlock
-// Dependencies: [19, 17, 7844, 1074, 1072, 21, 5141, 575, 1499, 9590, 17990, 7446, 7471, 504, 17992, 17134, 7843, 9587, 5837, 5747, 5754, 1113, 5734, 7414, 2]
+// Dependencies: [19, 17, 7860, 1074, 1072, 21, 5141, 575, 1499, 9609, 18086, 7462, 7487, 504, 18088, 17226, 7859, 9606, 5851, 5761, 5768, 1113, 5748, 7430, 2]
 // Exports: default
 
-// Module 18018 (ShelfBlock)
+// Module 18114 (ShelfBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7843 */;
-import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9587 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9590 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
+import CollectiblesShopCardV2Default from "CollectiblesShopCardV2" /* 9606 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9609 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7844 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7860 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -148,7 +148,7 @@ export default function _default(block) {
       tmp18 = { color: str };
       const obj12 = { color: str };
     }
-    obj13 = { variant: "text-md/semibold", style: tmp18, children: block.name };
+    obj13 = { variant: "body-md/semibold", style: tmp18, children: block.name };
     items6 = [closure_8(stateFromStores, obj11), ];
     let tmp14Result2 = block.showButton && null != stateFromStores;
     if (tmp14Result2) {

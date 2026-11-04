@@ -1,20 +1,20 @@
-// Module ID: 14986
-// Function ID: 14987
+// Module ID: 15066
+// Function ID: 15067
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 21, 5141, 12495, 8007, 10887, 8802, 5882, 10882, 10888, 9859, 14987, 14988, 575, 14989, 8842, 8785, 5747, 11804, 2]
+// Dependencies: [19, 17, 21, 5141, 12576, 8023, 10935, 8819, 5896, 10930, 10936, 9877, 15067, 15068, 575, 15069, 8859, 8802, 5761, 11861, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 14986 (UserProfileActivityBadges)
+// Module 15066 (UserProfileActivityBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ActivityTypes from "ActivityTypes" /* 5882 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8007 */;
-import utils from "utils" /* 8842 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10887 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 14987 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 14988 */;
-import Badges from "Badges" /* 14989 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ActivityTypes from "ActivityTypes" /* 5896 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8023 */;
+import utils from "utils" /* 8859 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10935 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 15067 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 15068 */;
+import Badges from "Badges" /* 15069 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -63,21 +63,21 @@ export function TimestampBadge(activity) {
         flag2 = false;
       }
       if (flag2) {
-        AppsIcon = tmp2(12495).HourglassIcon;
+        AppsIcon = tmp2(12576).HourglassIcon;
       } else {
         if (!isEmbeddedActivityDefault(activity)) {
           const tmp2Result = conjurePresenceActivity;
           if (!tmp2Result.isConjurePresenceActivity(activity)) {
             if (activity.type === ActivityTypes.ActivityTypes.WATCHING) {
-              AppsIcon = tmp2(10882).TvIcon;
+              AppsIcon = tmp2(10930).TvIcon;
             } else if (activity.type === ActivityTypes.ActivityTypes.LISTENING) {
-              AppsIcon = tmp2(10888).MusicIcon;
+              AppsIcon = tmp2(10936).MusicIcon;
             } else {
-              AppsIcon = tmp2(9859).GameControllerIcon;
+              AppsIcon = tmp2(9877).GameControllerIcon;
             }
           }
         }
-        AppsIcon = tmp2(8802).AppsIcon;
+        AppsIcon = tmp2(8819).AppsIcon;
       }
       const obj2 = { style: tmp.container, children: items };
       const obj3 = { size: "xxs", color: nativeDefault.colors.TEXT_FEEDBACK_POSITIVE };
@@ -102,9 +102,9 @@ export function PartyBadge(activity) {
       if (null != richGameStateBadgeText) {
         const obj = { style: tmp.container, children: items };
         const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-        const GroupIcon = tmp9(8785).GroupIcon;
+        const GroupIcon = tmp9(8802).GroupIcon;
         items = [React3(GroupIcon, obj2), ];
-        const obj3 = { variant: "text-sm/medium", color: "text-muted", children: richGameStateBadgeText };
+        const obj3 = { variant: "body-sm/medium", color: "text-muted", children: richGameStateBadgeText };
         items[1] = React3(Text_Text.Text, obj3);
         tmp8 = hasOwnProperty(View, obj);
       }
@@ -129,9 +129,9 @@ export function EpisodeBadge(activity) {
   if (null != episodeBadgeText) {
     const obj = { style: tmp.container, children: items };
     const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const TopicsIcon = tmp2(11804).TopicsIcon;
+    const TopicsIcon = tmp2(11861).TopicsIcon;
     items = [React3(TopicsIcon, obj2), ];
-    const obj3 = { variant: "text-sm/medium", color: "text-muted", children: episodeBadgeText };
+    const obj3 = { variant: "body-sm/medium", color: "text-muted", children: episodeBadgeText };
     items[1] = React3(Text_Text.Text, obj3);
     tmp7 = hasOwnProperty(View, obj);
   }

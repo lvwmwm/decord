@@ -1,11 +1,11 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 8044
+// Function ID: 8045
 // Name: GuildRoomActionCreators
-// Dependencies: [5, 8029, 2]
+// Dependencies: [5, 8045, 2]
 // Exports: guildRoomConnect, guildRoomUpdate
 
-// Module 8028 (GuildRoomActionCreators)
-import guildRoomConnect2 from "guildRoomConnect" /* 8029 */;
+// Module 8044 (GuildRoomActionCreators)
+import guildRoomConnect2 from "guildRoomConnect" /* 8045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

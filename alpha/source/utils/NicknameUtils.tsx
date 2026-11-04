@@ -1,10 +1,10 @@
-// Module ID: 6161
-// Function ID: 6162
+// Module ID: 6176
+// Function ID: 6177
 // Name: NicknameUtils
 // Dependencies: [4990, 5053, 5083, 1113, 5195, 504, 2]
 // Exports: getNickname, useName
 
-// Module 6161 (NicknameUtils)
+// Module 6176 (NicknameUtils)
 import intl2 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

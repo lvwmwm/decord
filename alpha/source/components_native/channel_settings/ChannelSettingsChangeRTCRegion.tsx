@@ -1,23 +1,23 @@
-// Module ID: 19100
-// Function ID: 19101
+// Module ID: 19203
+// Function ID: 19204
 // Name: ChannelSettingsChangeRTCRegion
-// Dependencies: [717, 19, 4990, 19047, 21, 5141, 575, 5207, 1113, 8323, 7187, 7184, 8301, 504, 38, 2]
+// Dependencies: [717, 19, 4990, 19150, 21, 5141, 575, 5207, 1113, 8339, 7202, 7199, 8317, 504, 38, 2]
 // Exports: default
 
-// Module 19100 (ChannelSettingsChangeRTCRegion)
+// Module 19203 (ChannelSettingsChangeRTCRegion)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 5207 */;
-import TableRadioGroup from "TableRadioGroup" /* 7184 */;
-import TableRadioRow from "TableRadioRow" /* 7187 */;
-import _mod8301 from "module_8301" /* 8301 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8323 */;
+import TableRadioGroup from "TableRadioGroup" /* 7199 */;
+import TableRadioRow from "TableRadioRow" /* 7202 */;
+import _mod8317 from "module_8317" /* 8317 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8339 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import RegionStore from "RegionStore" /* 19047 */;
+import RegionStore from "RegionStore" /* 19150 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
       c0 = null;
       tmp = null;
     }
-    let obj = self(8323);
+    let obj = self(8339);
     obj.updateChannel({ rtcRegion: tmp });
     self.setState({ submitting: true }, () => {
       const obj = ChannelSettingsActionCreatorsDefault;
@@ -99,7 +99,7 @@ class ChannelSettingsChangeRTCRegion extends PureComponent {
     });
   }
   render() {
-    const Form = _mod8301.Form;
+    const Form = _mod8317.Form;
     return <Form style={closure_8(this.context).form}>{this.renderRegions()}</Form>;
   }
 }

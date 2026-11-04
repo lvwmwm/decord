@@ -1,14 +1,14 @@
-// Module ID: 14483
-// Function ID: 14484
+// Module ID: 14563
+// Function ID: 14564
 // Name: HubEmailConnectionPinVerify
-// Dependencies: [32, 5, 19, 17, 5012, 21, 5141, 5832, 7369, 14484, 11641, 12, 14473, 1113, 6566, 7646, 14468, 5837, 14485, 5747, 7368, 2]
+// Dependencies: [32, 5, 19, 17, 5012, 21, 5141, 5846, 7385, 14564, 11692, 12, 14553, 1113, 6581, 7662, 14548, 5851, 14565, 5761, 7384, 2]
 // Exports: default
 
-// Module 14483 (HubEmailConnectionPinVerify)
+// Module 14563 (HubEmailConnectionPinVerify)
 import react_native from "react-native" /* 17 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import EnvelopeIcon from "EnvelopeIcon" /* 7369 */;
-import HubJoinManagerDefault from "HubJoinManager" /* 14484 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import EnvelopeIcon from "EnvelopeIcon" /* 7385 */;
+import HubJoinManagerDefault from "HubJoinManager" /* 14564 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -240,11 +240,11 @@ export default function HubEmailConnectionPinVerify(email) {
   const Text = email(onClose[19]).Text;
   intl = email(onClose[13]).intl;
   items1[1] = closure_8(Text, obj5);
-  let obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.format(email(onClose[13]).t["b+W0oq"], { onClick: throttleResult, email }) };
+  let obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.format(email(onClose[13]).t["b+W0oq"], { onClick: throttleResult, email }) };
   const Text2 = email(onClose[19]).Text;
   intl2 = email(onClose[13]).intl;
   items1[2] = closure_8(Text2, obj6);
-  const obj7 = { style: tmp.label, variant: "text-sm/semibold", color: "text-muted", children: intl3.string(email(onClose[13]).t.rpWT1s) };
+  const obj7 = { style: tmp.label, variant: "body-sm/semibold", color: "text-muted", children: intl3.string(email(onClose[13]).t.rpWT1s) };
   const Text3 = email(onClose[19]).Text;
   intl3 = email(onClose[13]).intl;
   items1[3] = closure_8(Text3, obj7);
@@ -263,7 +263,7 @@ export default function HubEmailConnectionPinVerify(email) {
   const tmp8 = closure_9;
   const tmp9 = View;
   if (tmp6Result) {
-    const obj9 = { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp.error, children: obj2.getAnyErrorMessage() };
+    const obj9 = { variant: "body-sm/medium", color: "text-feedback-critical", style: tmp.error, children: obj2.getAnyErrorMessage() };
     const Text4 = tmp7(tmp3[19]).Text;
     tmp6Result = tmp6(Text4, obj9);
   }

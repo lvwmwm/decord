@@ -1,10 +1,10 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7346
+// Function ID: 7347
 // Name: useNavigationTheme
-// Dependencies: [19, 5719, 575, 5148, 1500, 2]
+// Dependencies: [19, 5732, 575, 5148, 1500, 2]
 // Exports: useNavigationTheme
 
-// Module 7330 (useNavigationTheme)
+// Module 7346 (useNavigationTheme)
 import Link from "Link" /* 1500 */;
 import shared from "shared" /* 5148 */;
 import react from "react" /* 19 */;

@@ -1,14 +1,14 @@
-// Module ID: 16921
-// Function ID: 16922
+// Module ID: 17013
+// Function ID: 17014
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 5141, 575, 8150, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8166, 5761, 2]
 // Exports: default
 
-// Module 16921 (FamilyCenterInlineWarningNotice)
+// Module 17013 (FamilyCenterInlineWarningNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import WarningIcon2 from "WarningIcon" /* 8150 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import WarningIcon2 from "WarningIcon" /* 8166 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -22,7 +22,7 @@ const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, text: obj3 };
-obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_WARNING, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_WARNING };
+obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_WARNING, borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_WARNING };
 createStyles = createStyles.createStyles;
 obj3 = { flex: 1, paddingRight: nativeDefault.space.PX_8 };
 let closure_6 = createStyles(obj);
@@ -40,7 +40,7 @@ export default function FamilyCenterInlineWarningNotice(arg0) {
   const obj2 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
   const WarningIcon = WarningIcon2.WarningIcon;
   items1 = [React3(WarningIcon, obj2), ];
-  const obj3 = { variant: "text-sm/medium", color: "text-strong", style: tmp.text, children: text };
+  const obj3 = { variant: "body-sm/medium", color: "text-strong", style: tmp.text, children: text };
   items1[1] = React3(Text_Text.Text, obj3);
   return hasOwnProperty(View, obj);
 };

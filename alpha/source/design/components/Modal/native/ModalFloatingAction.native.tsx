@@ -1,11 +1,11 @@
-// Module ID: 13555
-// Function ID: 13556
+// Module ID: 13639
+// Function ID: 13640
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 5141, 1652, 5155, 1627, 5757, 5758, 5710, 671, 13556, 2]
+// Dependencies: [19, 17, 21, 5141, 1652, 5155, 1627, 5771, 5772, 5723, 671, 13640, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 13555 (ModalFloatingAction)
-import spring_spring from "spring/spring" /* 5757 */;
+// Module 13639 (ModalFloatingAction)
+import spring_spring from "spring/spring" /* 5771 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const springPresets = tmp2(5758);
+const springPresets = tmp2(5772);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ floating: { position: "absolute", bottom: 0, width: "100%", paddingHorizontal: 16 }, spacer: { height: 96 } });
@@ -104,7 +104,7 @@ export function ModalFloatingAction(isVisible) {
     str = "auto";
   }
   let obj2 = { colors: items4, locations: [0, 0.5], style: absoluteFill.absoluteFill };
-  const tmp7Result = sharedValue(5710);
+  const tmp7Result = sharedValue(5723);
   items4 = [, ];
   const obj3 = sharedValue(671)(floatingBackgroundColor);
   const alphaResult = obj3.alpha(0);
@@ -112,7 +112,7 @@ export function ModalFloatingAction(isVisible) {
   items4[1] = floatingBackgroundColor;
   items5 = [closure_6(tmp7Result, obj2), ];
   const obj4 = { variant: "primary" };
-  const ModalActionButton = tmp3(13556).ModalActionButton;
+  const ModalActionButton = tmp3(13640).ModalActionButton;
   const merged1 = Object.assign(merged);
   items5[1] = closure_6(ModalActionButton, obj4);
   return tmp17(View, obj);

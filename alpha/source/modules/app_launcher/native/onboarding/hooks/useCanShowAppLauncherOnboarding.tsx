@@ -1,19 +1,19 @@
-// Module ID: 12507
-// Function ID: 12508
+// Module ID: 12588
+// Function ID: 12589
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 4990, 5365, 1385, 12508, 12509, 6155, 1089, 504, 11, 4974, 7693, 5171, 2]
+// Dependencies: [32, 4990, 5366, 1385, 12589, 12590, 6170, 1089, 504, 11, 4974, 7709, 5171, 2]
 // Exports: default
 
-// Module 12507 (useCanShowAppLauncherOnboarding)
+// Module 12588 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6155 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5365 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5366 */;
 import UserStore from "UserStore" /* 1385 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12508 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12509 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12589 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12590 */;
 import size from "module_2" /* 2 */;
 
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
@@ -70,7 +70,7 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   if (!tmp16) {
     items4.push(channelId(4974).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
   }
-  const tmp2Result11 = channelId(7693);
+  const tmp2Result11 = channelId(7709);
   const first = _slicedToArray(tmp2Result11.useSelectedDismissibleContent(items4), 1)[0];
   const APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING = tmp2(4974).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING;
   const items5 = [AppLauncherOnboardingStore];

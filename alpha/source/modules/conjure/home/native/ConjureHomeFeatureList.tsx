@@ -1,18 +1,18 @@
-// Module ID: 13116
-// Function ID: 13117
+// Module ID: 13199
+// Function ID: 13200
 // Name: ConjureHomeFeatureList
-// Dependencies: [19, 17, 21, 5141, 575, 7460, 5710, 9506, 5747, 9596, 12241, 1113, 3995, 5719, 5860, 11418, 671, 13117, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7476, 5723, 9524, 5761, 9615, 12302, 1113, 3995, 5732, 5874, 11468, 671, 13200, 2]
 
-// Module 13116 (ConjureHomeFeatureList)
+// Module 13199 (ConjureHomeFeatureList)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7460 */;
-import ShieldIcon2 from "ShieldIcon" /* 11418 */;
-import RobotIcon2 from "RobotIcon" /* 12241 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7476 */;
+import ShieldIcon2 from "ShieldIcon" /* 11468 */;
+import RobotIcon2 from "RobotIcon" /* 12302 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -70,7 +70,7 @@ function ShowcaseVisual(styles) {
 ({ StyleSheet, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { list: obj2, card: obj3, visual: { height: 132, alignItems: "center", justifyContent: "center" }, caption: obj4, window: obj5, line: obj6, lineTitle: size, lineName: obj7, lineShort: { width: "40%" }, lineMedium: { width: "64%" }, lineLong: { width: "92%" }, windowBar: obj8, windowDot: size1, pollOption: obj9, pollFill: obj10, pollFillWinner: obj11, pollLabel: { width: "40%" }, pollLabelWinner: obj12, gameCanvas: size2, cloud: obj13, pipe: obj14, player: size3, pill: { position: "absolute", top: nativeDefault.space.PX_6, flexDirection: "row", alignItems: "center", gap: 2, paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM }, joinRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_8 }, joinArrow: size4, message: { flexDirection: "row", gap: nativeDefault.space.PX_8 }, messageBody: { flex: 1, gap: nativeDefault.space.PX_6, paddingTop: nativeDefault.space.PX_4 }, messageHeader: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_6 }, avatar: size5, avatarBrand: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, botTag: { paddingHorizontal: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, profile: { padding: 0, gap: 0, overflow: "hidden" }, profileBanner: { height: nativeDefault.space.PX_24 }, profileBody: { gap: nativeDefault.space.PX_6, paddingHorizontal: nativeDefault.space.PX_10, paddingBottom: nativeDefault.space.PX_10 }, profileAvatar: size6, statsWidget: { flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE }, stats: { flexDirection: "row", gap: nativeDefault.space.PX_12 }, stat: { gap: nativeDefault.space.PX_4 }, statValue: size7, statLabel: size8, chart: { flexDirection: "row", alignItems: "flex-end", gap: 2, height: nativeDefault.space.PX_24 }, chartBar: { width: 5, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }, chartBarDown: { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL }, scene: size9, sceneHills: rect, sceneScrim: obj30, crosshair: size10, overlayPanel: rect1, overlayMember: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, overlayAvatar: size11, speaking: { borderWidth: 2, borderColor: nativeDefault.colors.STATUS_ONLINE, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, overlayName: size12, overlayTimer: rect2, overlayTimerValue: size13, redacted: { opacity: 0.4 }, blockedNotice: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL }, blockedText: { flex: 1, gap: nativeDefault.space.PX_6 }, lineCritical: { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, opacity: 0.6 } };
+let obj = { list: obj2, card: obj3, visual: { height: 132, alignItems: "center", justifyContent: "center" }, caption: obj4, window: obj5, line: obj6, lineTitle: size, lineName: obj7, lineShort: { width: "40%" }, lineMedium: { width: "64%" }, lineLong: { width: "92%" }, windowBar: obj8, windowDot: size1, pollOption: obj9, pollFill: obj10, pollFillWinner: obj11, pollLabel: { width: "40%" }, pollLabelWinner: obj12, gameCanvas: size2, cloud: obj13, pipe: obj14, player: size3, pill: { position: "absolute", top: nativeDefault.space.PX_6, flexDirection: "row", alignItems: "center", gap: 2, paddingVertical: 2, paddingHorizontal: nativeDefault.space.PX_6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM }, joinRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_8 }, joinArrow: size4, message: { flexDirection: "row", gap: nativeDefault.space.PX_8 }, messageBody: { flex: 1, gap: nativeDefault.space.PX_6, paddingTop: nativeDefault.space.PX_4 }, messageHeader: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_6 }, avatar: size5, avatarBrand: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, botTag: { paddingHorizontal: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, profile: { padding: 0, gap: 0, overflow: "hidden" }, profileBanner: { height: nativeDefault.space.PX_24 }, profileBody: { gap: nativeDefault.space.PX_6, paddingHorizontal: nativeDefault.space.PX_10, paddingBottom: nativeDefault.space.PX_10 }, profileAvatar: size6, statsWidget: { flexDirection: "row", alignItems: "flex-end", justifyContent: "space-between", padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE }, stats: { flexDirection: "row", gap: nativeDefault.space.PX_12 }, stat: { gap: nativeDefault.space.PX_4 }, statValue: size7, statLabel: size8, chart: { flexDirection: "row", alignItems: "flex-end", gap: 2, height: nativeDefault.space.PX_24 }, chartBar: { width: 5, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.ICON_FEEDBACK_POSITIVE }, chartBarDown: { backgroundColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL }, scene: size9, sceneHills: rect, sceneScrim: obj30, crosshair: size10, overlayPanel: rect1, overlayMember: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, overlayAvatar: size11, speaking: { borderWidth: 2, borderColor: nativeDefault.colors.STATUS_ONLINE, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND }, overlayName: size12, overlayTimer: rect2, overlayTimerValue: size13, redacted: { opacity: 0.4 }, blockedNotice: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL }, blockedText: { flex: 1, gap: nativeDefault.space.PX_6 }, lineCritical: { backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, opacity: 0.6 } };
 obj2 = { gap: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_24, padding: nativeDefault.space.PX_24, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.lg };
@@ -122,7 +122,7 @@ size11 = { width: nativeDefault.space.PX_12, height: nativeDefault.space.PX_12, 
 size12 = { width: 36, height: nativeDefault.space.PX_4 };
 rect2 = { top: "r", bottom: nativeDefault.space.PX_6, left: nativeDefault.space.PX_6 };
 size13 = { width: 20, height: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.TEXT_OVERLAY_LIGHT };
-({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_CRITICAL });
+({ flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_6, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_CRITICAL, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_CRITICAL });
 ({ flex: 1, gap: nativeDefault.space.PX_6 });
 ({ backgroundColor: nativeDefault.colors.TEXT_FEEDBACK_CRITICAL, opacity: 0.6 });
 let closure_7 = createStyles(obj);
@@ -196,20 +196,20 @@ let closure_14 = {
     items3 = [styles.pill, { left: nativeDefault.space.PX_6 }];
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_WARNING };
     ({ left: nativeDefault.space.PX_6 });
-    const TrophyIcon = styles(9506).TrophyIcon;
-    items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5747).Text, { variant: "text-xxs/semibold", color: "text-overlay-light", children: 128 })];
+    const TrophyIcon = styles(9524).TrophyIcon;
+    items4 = [closure_5(TrophyIcon, obj7), closure_5(styles(5761).Text, { variant: "footnote/semibold", color: "text-overlay-light", children: 128 })];
     items1[4] = closure_6(closure_4, obj5);
     const obj8 = { style: items5, children: items6 };
     items5 = [styles.pill, { right: nativeDefault.space.PX_6 }];
     const obj10 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
     ({ right: nativeDefault.space.PX_6 });
-    const HeartIcon = styles(9596).HeartIcon;
+    const HeartIcon = styles(9615).HeartIcon;
     items6 = [closure_5(HeartIcon, obj10), , ];
     const obj11 = { size: "xxs", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    const HeartIcon2 = styles(9596).HeartIcon;
+    const HeartIcon2 = styles(9615).HeartIcon;
     items6[1] = closure_5(HeartIcon2, obj11);
     const obj12 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const HeartIcon3 = styles(9596).HeartIcon;
+    const HeartIcon3 = styles(9615).HeartIcon;
     items6[2] = closure_5(HeartIcon3, obj12);
     items1[5] = closure_6(closure_4, obj8);
     return closure_6(tmp, obj);
@@ -244,7 +244,7 @@ let closure_14 = {
     const obj8 = { style: styles.messageBody, children: items5 };
     items4[0] = hasOwnProperty(Line, obj10);
     const obj11 = { style: styles.botTag, children: hasOwnProperty(Text, obj12) };
-    obj12 = { variant: "text-xxs/semibold", color: "text-overlay-light", children: intl.string(_modDef3995.VlgiLf) };
+    obj12 = { variant: "footnote/semibold", color: "text-overlay-light", children: intl.string(_modDef3995.VlgiLf) };
     Text = Text_Text.Text;
     intl = intl3.intl;
     items4[1] = hasOwnProperty(React3, obj11);
@@ -263,7 +263,7 @@ let closure_14 = {
     let items6;
     styles = styles.styles;
     let token;
-    let obj = styles(5719);
+    let obj = styles(5732);
     token = obj.useToken(token(575).colors.BACKGROUND_BRAND);
     items = [token];
     let obj2 = { style: items1, children: items2 };
@@ -274,7 +274,7 @@ let closure_14 = {
       return items;
     }, items);
     let obj3 = { style: styles.profileBanner, colors: memo, start: { x: 0, y: 0.5 }, end: { x: 1, y: 0.5 } };
-    items2 = [closure_5(token(5710), obj3), ];
+    items2 = [closure_5(token(5723), obj3), ];
     const obj5 = { style: items3 };
     items3 = [, ];
     const obj4 = { style: styles.profileBody, children: items4 };
@@ -349,7 +349,7 @@ let closure_14 = {
     items2 = [, ];
     ({ pill: arr3[0], overlayTimer: arr3[1] } = styles);
     const obj7 = { size: "xxs", color: nativeDefault.colors.ICON_OVERLAY_LIGHT };
-    const ClockIcon = styles(5860).ClockIcon;
+    const ClockIcon = styles(5874).ClockIcon;
     items3 = [closure_5(ClockIcon, obj7), ];
     const obj8 = { style: styles.overlayTimerValue };
     items3[1] = closure_5(Line, obj8);
@@ -434,11 +434,11 @@ const memoResult = react.memo(function ConjureHomeFeatureList() {
       ({ title, description } = id);
       items = [hasOwnProperty(React3, obj2), ];
       const obj4 = { style: styles.caption, children: items1 };
-      const obj5 = { variant: "text-md/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(title) };
+      const obj5 = { variant: "body-md/semibold", color: "text-strong", accessibilityRole: "header", children: intl.string(title) };
       const Text = Text_Text.Text;
       intl = intl3.intl;
       items1 = [hasOwnProperty(Text, obj5), ];
-      const obj6 = { variant: "text-sm/normal", color: "text-subtle", children: intl2.string(description) };
+      const obj6 = { variant: "body-sm/normal", color: "text-subtle", children: intl2.string(description) };
       const Text2 = Text_Text.Text;
       intl2 = intl3.intl;
       items1[1] = hasOwnProperty(Text2, obj6);

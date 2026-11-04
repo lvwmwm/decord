@@ -1,23 +1,23 @@
-// Module ID: 14409
-// Function ID: 14410
+// Module ID: 14489
+// Function ID: 14490
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 5176, 1072, 14410, 7270, 21, 7022, 14178, 11641, 14411, 14489, 1252, 1260, 7124, 14385, 1099, 14413, 14442, 14012, 1113, 14456, 14457, 14490, 14468, 7290, 2]
+// Dependencies: [5, 19, 17, 5176, 1072, 14490, 7286, 21, 7037, 14264, 11692, 14491, 14569, 1252, 1260, 7139, 14465, 1099, 14493, 14522, 14098, 1113, 14536, 14537, 14570, 14548, 7306, 2]
 // Exports: default
 
-// Module 14409 (NUFGuildTemplates)
+// Module 14489 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 7022 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import Navigator2 from "Navigator" /* 7290 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14410 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import Navigator2 from "Navigator" /* 7306 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 14490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 5176 */;
 import Constants from "Constants" /* 1072 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7270 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7286 */;
 import size from "module_2" /* 2 */;
 
 let c9;

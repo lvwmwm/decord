@@ -1,10 +1,10 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12403
+// Function ID: 12404
 // Name: useConjureDebugAccess
 // Dependencies: [4966, 2]
 // Exports: useConjureDebugPaneEnabled, useConjureTraceTabEnabled
 
-// Module 12338 (useConjureDebugAccess)
+// Module 12403 (useConjureDebugAccess)
 import UserSettings from "UserSettings" /* 4966 */;
 import size from "module_2" /* 2 */;
 

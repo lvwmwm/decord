@@ -1,12 +1,12 @@
-// Module ID: 12025
-// Function ID: 12026
+// Module ID: 12084
+// Function ID: 12085
 // Name: useRequestToSpeakPermission
-// Dependencies: [32, 19, 4990, 1072, 504, 5078, 8069, 2]
+// Dependencies: [32, 19, 4990, 1072, 504, 5078, 8085, 2]
 // Exports: useRequestToSpeakPermission
 
-// Module 12025 (useRequestToSpeakPermission)
+// Module 12084 (useRequestToSpeakPermission)
 import Constants from "Constants" /* 1072 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8069 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

@@ -1,20 +1,20 @@
-// Module ID: 9587
-// Function ID: 9588
+// Module ID: 9606
+// Function ID: 9607
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1192, 7844, 1074, 21, 5141, 575, 9588, 7855, 9589, 8873, 9591, 9592, 1113, 5832, 7446, 9651, 9653, 504, 5148, 7106, 7856, 5747, 9654, 9657, 9659, 9656, 9660, 9662, 9667, 9678, 9590, 5381, 8871, 2176, 9665, 9706, 9707, 9709, 1266, 2]
+// Dependencies: [19, 17, 1192, 7860, 1074, 21, 5141, 575, 9607, 7871, 9608, 8890, 9610, 9611, 1113, 5846, 7462, 9670, 9672, 504, 5148, 7121, 7872, 5761, 9673, 9676, 9678, 9675, 9679, 9681, 9686, 9697, 9609, 5382, 8888, 2176, 9684, 9724, 9725, 9727, 1266, 2]
 
-// Module 9587 (CollectiblesShopCardV2)
+// Module 9606 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import v1 from "v1" /* 1266 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8871 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9590 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8888 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9609 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7844 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7860 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -211,7 +211,7 @@ function CollectiblesShopCardInternalV2(product) {
       if (stateFromStores) {
         str2 = "text-overlay-dark";
       }
-      obj10 = { variant: "text-xs/semibold", color: str2, allowFontScaling: false, style: tmp.badgeOverrideText, lineClamp: 1, children: badgeOverride };
+      obj10 = { variant: "body-xs/semibold", color: str2, allowFontScaling: false, style: tmp.badgeOverrideText, lineClamp: 1, children: badgeOverride };
       tmp34Result = tmp34(tmp35, obj9);
     } else {
       const tmp2Result15 = require("CollectiblesProductUtils");

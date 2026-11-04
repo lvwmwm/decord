@@ -1,20 +1,20 @@
-// Module ID: 17042
-// Function ID: 17043
+// Module ID: 17134
+// Function ID: 17135
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 6901, 1072, 1074, 21, 5141, 575, 14849, 5747, 1113, 9686, 17043, 1252, 7471, 5381, 7843, 14632, 17062, 2123, 8153, 12942, 1499, 14889, 2]
+// Dependencies: [19, 17, 6916, 1072, 1074, 21, 5141, 575, 14929, 5761, 1113, 9705, 17135, 1252, 7487, 5382, 7859, 14712, 17154, 2123, 8169, 13024, 1499, 14969, 2]
 // Exports: default
 
-// Module 17042 (useQuestHomeHeader)
+// Module 17134 (useQuestHomeHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import QuestsIcon from "QuestsIcon" /* 14849 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import QuestsIcon from "QuestsIcon" /* 14929 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -35,7 +35,7 @@ function QuestHomeHeaderTitle() {
   const tmp = closure_11();
   const obj = { style: tmp.headerTitleContainer, children: items };
   items = [React4(QuestsIcon.QuestsIcon, { size: "md", color: "icon-strong" }), ];
-  const obj2 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: intl.string(intl3.t.JALI2K) };
+  const obj2 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", maxFontSizeMultiplier: 2, lineClamp: 1, style: tmp.headerTitle, children: intl.string(intl3.t.JALI2K) };
   const Heading = Text_Text.Heading;
   intl = intl3.intl;
   items[1] = React4(Heading, obj2);
@@ -49,9 +49,9 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let balance;
   const tmp3 = balance;
   const tmp2 = closure_11();
-  let obj = balance(9686);
+  let obj = balance(9705);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
-  let obj2 = balance(17043);
+  let obj2 = balance(17135);
   const orbBalanceEntrypoint = obj2.useOrbBalanceEntrypoint({ location: "MobileQuestHomeHeader" });
   const openBalanceWidgetActionSheet = orbBalanceEntrypoint.openBalanceWidgetActionSheet;
   let items = [balance, openBalanceWidgetActionSheet];
@@ -61,7 +61,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   const tmp8 = View;
   if (isVirtualCurrencyEnabled) {
     let obj4 = { balance, onPress: tmp6, showNotificationBadge: hasUnreadUpdate };
-    isVirtualCurrencyEnabled = closure_9(tmp3(14632).BalanceWidgetPillButton, obj4);
+    isVirtualCurrencyEnabled = closure_9(tmp3(14712).BalanceWidgetPillButton, obj4);
   }
   items1 = [isVirtualCurrencyEnabled, ];
   const obj5 = {};
@@ -93,7 +93,7 @@ function FiltersButton(setSelectedSortMethod) {
   const callback = selectedSortMethod.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters };
-    obj.openLazy(asyncRequire(17062, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
+    obj.openLazy(asyncRequire(17154, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
   }, items);
   let obj = { icon: closure_9(setSelectedSortMethod(tmp3[21]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: intl.string(setSelectedSortMethod(tmp3[10]).t.UdhTtk), scaleAmountInPx: 4 };
   const BaseIconButton = setSelectedSortMethod(tmp3[20]).BaseIconButton;

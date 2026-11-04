@@ -1,23 +1,10 @@
 // Module ID: 7172
 // Function ID: 7173
 // Name: react
-// Dependencies: [19, 7171]
-// Exports: useHeaderHeight
+// Dependencies: [7173]
 
 // Module 7172 (react)
-import react2 from "react" /* 7171 */;
-import react from "react" /* 19 */;
+import react from "react" /* 7173 */;
 
 
-export function useHeaderHeight() {
-  const context = react.useContext(react2.HeaderHeightContext);
-  if (undefined === context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't find the header height. Are you inside a screen in a navigator with a header?");
-    throw error;
-  } else {
-    return context;
-  }
-}
+export default react;

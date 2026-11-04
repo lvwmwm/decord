@@ -1,11 +1,11 @@
-// Module ID: 9607
-// Function ID: 9608
+// Module ID: 9626
+// Function ID: 9627
 // Name: useGetOrFetchStorefrontPrices
-// Dependencies: [19, 9608, 2]
+// Dependencies: [19, 9627, 2]
 // Exports: useGetOrFetchStorefrontPricesForApplicationId, useGetOrFetchStorefrontPricesForSkuIds
 
-// Module 9607 (useGetOrFetchStorefrontPrices)
-import StorefrontActionCreators from "StorefrontActionCreators" /* 9608 */;
+// Module 9626 (useGetOrFetchStorefrontPrices)
+import StorefrontActionCreators from "StorefrontActionCreators" /* 9627 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

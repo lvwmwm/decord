@@ -98,7 +98,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "Array", customTheme: "flexDirection" };
+      obj = { theme: "PX_8", customTheme: "__closure" };
     }
     return obj;
   }

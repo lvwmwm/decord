@@ -7,19 +7,17 @@
 // Module 1877 (react)
 import react from "react" /* 19 */;
 
-let fn;
 
-
-export function assignRef(forwardedRef, current) {
-  if (typeof forwardedRef === "function") {
-    const tmp = forwardedRef(current);
+export function assignRef(fn, current) {
+  if (typeof fn === "function") {
+    const tmp = fn(current);
     let tmp2;
     if (typeof tmp === "function") {
       tmp2 = tmp;
     }
     return tmp2;
-  } else if (forwardedRef) {
-    forwardedRef.current = current;
+  } else if (fn) {
+    fn.current = current;
   }
 }
 export function mergeRefs() {

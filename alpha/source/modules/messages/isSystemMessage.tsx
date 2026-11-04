@@ -1,10 +1,10 @@
-// Module ID: 7008
-// Function ID: 7009
+// Module ID: 7023
+// Function ID: 7024
 // Name: isSystemMessage
 // Dependencies: [1088, 2]
 // Exports: default
 
-// Module 7008 (isSystemMessage)
+// Module 7023 (isSystemMessage)
 import MessageTypes from "MessageTypes" /* 1088 */;
 import size from "module_2" /* 2 */;
 

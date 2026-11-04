@@ -1,26 +1,26 @@
-// Module ID: 15090
-// Function ID: 15091
+// Module ID: 15172
+// Function ID: 15173
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 15091, 8878, 21, 5141, 575, 7101, 5730, 7338, 504, 15092, 7898, 15093, 9743, 15099, 15094, 15095, 15096, 5150, 1113, 6141, 8886, 7635, 5381, 15089, 5395, 7441, 7339, 7080, 5747, 7344, 2]
+// Dependencies: [32, 19, 17, 502, 12564, 8895, 21, 5141, 575, 7116, 5743, 7354, 504, 15166, 7914, 15173, 9761, 15176, 15174, 15175, 12563, 5150, 1113, 6156, 8903, 7651, 5382, 15171, 5396, 7457, 7355, 7095, 5761, 7360, 2]
 // Exports: default
 
-// Module 15090 (UserProfileAddGameActionSheet)
+// Module 15172 (UserProfileAddGameActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import TableRow from "TableRow" /* 7101 */;
-import _extends from "_extends" /* 7635 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7898 */;
-import Constants from "Constants" /* 8878 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8886 */;
-import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 15089 */;
-import WidgetUtils from "WidgetUtils" /* 15096 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import TableRow from "TableRow" /* 7116 */;
+import _extends from "_extends" /* 7651 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7914 */;
+import Constants from "Constants" /* 8895 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8903 */;
+import WidgetUtils from "WidgetUtils" /* 12563 */;
+import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 15171 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WidgetStore from "WidgetStore" /* 15091 */;
+import WidgetStore from "WidgetStore" /* 12564 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -316,7 +316,7 @@ export default function UserProfileAddGameActionSheet(widgetType) {
     tmp35Result = tmp35(tmp36, obj10);
   } else if (tmp16) {
     const obj11 = { style: tmp.emptyState, children: isLoading(Text, obj12) };
-    obj12 = { variant: "text-md/medium", color: "text-subtle", style: tmp.emptyStateText, children: intl3.string(widgetType(tmp3[22]).t.jkk7t9) };
+    obj12 = { variant: "body-md/medium", color: "text-subtle", style: tmp.emptyStateText, children: intl3.string(widgetType(tmp3[22]).t.jkk7t9) };
     Text = tmp8(tmp3[32]).Text;
     intl3 = tmp8(tmp3[22]).intl;
     tmp35Result = tmp35(tmp36, obj11);

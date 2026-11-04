@@ -1,14 +1,14 @@
-// Module ID: 17964
-// Function ID: 17965
+// Module ID: 18060
+// Function ID: 18061
 // Name: UserSettingsDesignSystemAILoader
-// Dependencies: [19, 17, 21, 5141, 5747, 6147, 7103, 12380, 2]
+// Dependencies: [19, 17, 21, 5141, 5761, 6162, 7118, 12445, 2]
 // Exports: default
 
-// Module 17964 (UserSettingsDesignSystemAILoader)
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import Card_Card from "Card/Card" /* 7103 */;
-import AILoader from "AILoader" /* 12380 */;
+// Module 18060 (UserSettingsDesignSystemAILoader)
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import Card_Card from "Card/Card" /* 7118 */;
+import AILoader from "AILoader" /* 12445 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -24,7 +24,7 @@ function DemoRow(arg0) {
   let label;
   ({ label, children } = arg0);
   const obj = { style: closure_6().row, children: items };
-  items = [React3(Text_Text.Text, { variant: "text-sm/medium", color: "text-subtle", children: label }), children];
+  items = [React3(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", children: label }), children];
   return hasOwnProperty(_false, obj);
 }
 ({ ScrollView: c2, View: c3 } = react_native);
@@ -51,8 +51,8 @@ export default function UserSettingsDesignSystemAILoader() {
   obj4 = { children: items };
   Stack2 = Stack_Stack.Stack;
   items = [
-    React3(Text_Text.Text, { variant: "text-lg/semibold", children: "Sizes" }),
-    React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
+    React3(Text_Text.Text, { variant: "body-lg/semibold", children: "Sizes" }),
+    React3(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "`size` is the glyph size in pixels; the gap between slots scales with it. Default 16." }),
     closure_7.map((size) => {
       let obj2;
       const obj = { label: "" + size + "px", children: closure_1_4(AILoader.AILoader, obj2) };
@@ -66,8 +66,8 @@ export default function UserSettingsDesignSystemAILoader() {
   obj6 = { children: items2 };
   Stack3 = Stack_Stack.Stack;
   items2 = [
-    React3(Text_Text.Text, { variant: "text-lg/semibold", children: "Colors" }),
-    React3(Text_Text.Text, { variant: "text-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),
+    React3(Text_Text.Text, { variant: "body-lg/semibold", children: "Colors" }),
+    React3(Text_Text.Text, { variant: "body-md/medium", color: "text-subtle", children: "Any semantic text token. Defaults to `text-default`." }),
     items.map((color) => {
       const label = color.label;
       const obj = { label, children: closure_1_4(AILoader.AILoader, { color: color.color }) };

@@ -1,21 +1,21 @@
-// Module ID: 15606
-// Function ID: 15607
+// Module ID: 15693
+// Function ID: 15694
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 5352, 21, 5141, 575, 671, 5747, 15607, 14195, 14218, 1113, 2699, 15608, 2]
+// Dependencies: [19, 17, 5353, 21, 5141, 575, 671, 5761, 15694, 14281, 14304, 1113, 2699, 15695, 2]
 // Exports: default
 
-// Module 15606 (GuildPowerupsMarketingHeader)
+// Module 15693 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14195 */;
-import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14218 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 15607 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 15608 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14281 */;
+import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 14304 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 15694 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 15695 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5352 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5353 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ let alphaResult1;
 let obj2;
 let obj4;
 function PerkText(children) {
-  return jsx(Text_Text.Text, { color: "text-overlay-light", variant: "text-sm/semibold", children: children.powerup.title });
+  return jsx(Text_Text.Text, { color: "text-overlay-light", variant: "body-sm/semibold", children: children.powerup.title });
 }
 const View = react_native.View;
 const jsx = Fragment.jsx;
@@ -63,8 +63,8 @@ export default function GuildPowerupsMarketingHeader(guild) {
       num = 0;
     }
     if (0 !== num) {
-      ({ style: tmp.text, variant: "text-sm/semibold", children: format(v7lwpzR, obj7) });
-      const Text = guild(5747).Text;
+      ({ style: tmp.text, variant: "body-sm/semibold", children: format(v7lwpzR, obj7) });
+      const Text = guild(5761).Text;
       const intl = guild(1113).intl;
       format = intl.format;
       let str2 = "";

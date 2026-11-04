@@ -1,16 +1,16 @@
-// Module ID: 8296
-// Function ID: 8297
+// Module ID: 8312
+// Function ID: 8313
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1072, 7614, 1089, 1282, 572, 8093, 8079, 7620, 2]
+// Dependencies: [5, 502, 1072, 7630, 1089, 1282, 572, 8109, 8095, 7636, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 8296 (ManualReviewActionCreators)
+// Module 8312 (ManualReviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Constants2 from "Constants" /* 7614 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8093 */;
+import Constants2 from "Constants" /* 7630 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -141,7 +141,7 @@ obj = function _handleManualReviewCta() {
         } else if (2 === c4) {
           c3 = 1;
           let obj2 = closure_129_1(closure_129_2[9]);
-          obj2.showFailedToast(constants.TIGGER_PAWTECT_ERROR);
+          obj2.showFailedToast(constants.AGE_VERIFICATION_ERROR);
         } else if (arg0 === 1) {
           c5 = 3;
           throw value;

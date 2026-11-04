@@ -1,18 +1,18 @@
-// Module ID: 12660
-// Function ID: 12661
+// Module ID: 12741
+// Function ID: 12742
 // Name: GroupDMNitroCapInfoActionSheet
-// Dependencies: [19, 17, 11766, 21, 5141, 575, 5381, 5395, 5747, 1113, 5754, 2]
+// Dependencies: [19, 17, 11822, 21, 5141, 575, 5382, 5396, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 12660 (GroupDMNitroCapInfoActionSheet)
+// Module 12741 (GroupDMNitroCapInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import GroupDMConstants from "GroupDMConstants" /* 11766 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import GroupDMConstants from "GroupDMConstants" /* 11822 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -58,7 +58,7 @@ export default function GroupDMNitroCapInfoActionSheet() {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [metroRequire(Text, obj3), , ];
-  const obj4 = { style: tmp.body, variant: "text-md/medium", color: "text-muted", children: intl2.formatToPlainString(intl4.t["mr27w/"], obj5) };
+  const obj4 = { style: tmp.body, variant: "body-md/medium", color: "text-muted", children: intl2.formatToPlainString(intl4.t["mr27w/"], obj5) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   obj5 = { number };

@@ -1,18 +1,18 @@
-// Module ID: 10309
-// Function ID: 10310
+// Module ID: 10357
+// Function ID: 10358
 // Name: FeedbackActionSheet
-// Dependencies: [32, 19, 17, 10288, 21, 5141, 575, 5381, 6852, 12, 10291, 5716, 6864, 10310, 2123, 1627, 5395, 7441, 7487, 5398, 5747, 10292, 7186, 7101, 7100, 1113, 2]
+// Dependencies: [32, 19, 17, 10336, 21, 5141, 575, 5382, 6867, 12, 10339, 5729, 6879, 10358, 2123, 1627, 5396, 7457, 7503, 5400, 5761, 10340, 7201, 7116, 7115, 1113, 2]
 // Exports: default
 
-// Module 10309 (FeedbackActionSheet)
+// Module 10357 (FeedbackActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import Constants from "Constants" /* 10288 */;
-import FeedbackUtils from "FeedbackUtils" /* 10291 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import Constants from "Constants" /* 10336 */;
+import FeedbackUtils from "FeedbackUtils" /* 10339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -128,7 +128,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
       tmp16 = undefined;
       obj3 = { rating, reason, dontShowAgain: first1 };
       ModalActionCreatorsDefault;
-      const tmp11 = asyncRequire(10310, dependencyMap.paths);
+      const tmp11 = asyncRequire(10358, dependencyMap.paths);
       if (View != null) {
         tmp16 = View(reason);
       }
@@ -192,7 +192,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
   BottomSheetScrollView = tmp15(tmp4[19]).BottomSheetScrollView;
   tmp25 = c8;
   if (null != ratingsBodyLabel) {
-    const obj7 = { style: tmp.ratingsHeader, variant: "text-md/medium", color: "text-default", children: ratingsBodyLabel };
+    const obj7 = { style: tmp.ratingsHeader, variant: "body-md/medium", color: "text-default", children: ratingsBodyLabel };
     tmp21Result4 = tmp21(tmp15(tmp4[20]).Text, obj7);
   }
   items3 = [tmp21Result4, closure_7(tmp3(tmp4[21]), { ratingOptions, textLabels: ratingTextLabels, selectedRating, onChangeRating: callback }), , ];

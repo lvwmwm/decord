@@ -1,8 +1,8 @@
-// Module ID: 6489
-// Function ID: 6490
+// Module ID: 6504
+// Function ID: 6505
 // Dependencies: [2]
 
-// Module 6489
+// Module 6504
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/hat/brain.png.js");

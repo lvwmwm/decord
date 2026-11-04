@@ -1,24 +1,24 @@
-// Module ID: 19859
-// Function ID: 19860
+// Module ID: 19975
+// Function ID: 19976
 // Name: GuildSettingsModalAuditLog
-// Dependencies: [32, 19, 17, 4990, 5012, 5044, 1385, 19860, 1072, 21, 5141, 575, 1499, 504, 19862, 5195, 1113, 7483, 19864, 19874, 7682, 19865, 7080, 7101, 5747, 7110, 1187, 19875, 7414, 5729, 2]
+// Dependencies: [32, 19, 17, 4990, 5012, 5044, 1385, 19976, 1072, 21, 5141, 575, 1499, 504, 19978, 5195, 1113, 7499, 19980, 19990, 7698, 19981, 7095, 7116, 5761, 7125, 1187, 19991, 7430, 5742, 2]
 // Exports: default
 
-// Module 19859 (GuildSettingsModalAuditLog)
+// Module 19975 (GuildSettingsModalAuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7483 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 19862 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 19865 */;
-import AuditLogDefault from "AuditLog" /* 19874 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7499 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 19978 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 19981 */;
+import AuditLogDefault from "AuditLog" /* 19990 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19860 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 19976 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -236,15 +236,15 @@ export default function ConnectedGuildSettingsModalAuditLog(guildId) {
       const obj6 = { style: tmp.filtersWrapper, children: closure_14(TableRow, obj7) };
       obj7 = { start: true, end: true, icon: closure_14(Text, obj8), label: closure_15(_logs, obj9), onPress, trailing: closure_14(tmp2(tmp3[25]).TableRowArrow, {}) };
       TableRow = tmp2(tmp3[23]).TableRow;
-      obj8 = { variant: "text-md/semibold", children: intl.string(tmp2(tmp3[16]).t.kP6oFy) };
+      obj8 = { variant: "body-md/semibold", children: intl.string(tmp2(tmp3[16]).t.kP6oFy) };
       Text = tmp2(tmp3[24]).Text;
       intl = tmp2(tmp3[16]).intl;
       obj9 = { style: tmp.filterTrailing, children: items8 };
       const obj10 = { style: tmp.filterTextWrapper, children: closure_14(tmp2(tmp3[24]).Text, obj11) };
-      obj11 = { variant: "text-sm/semibold", children: userIdFilterLabel };
+      obj11 = { variant: "body-sm/semibold", children: userIdFilterLabel };
       items8 = [closure_14(_logs, obj10), ];
       const obj12 = { style: tmp.filterTextWrapper, children: closure_14(tmp2(tmp3[24]).Text, obj13) };
-      obj13 = { variant: "text-sm/semibold", children: actionFilterLabel };
+      obj13 = { variant: "body-sm/semibold", children: actionFilterLabel };
       items8[1] = closure_14(_logs, obj12);
       const items9 = [closure_14(_logs, obj6), , ];
       if (0 === memo.length) {

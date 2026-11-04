@@ -1,12 +1,12 @@
-// Module ID: 10877
-// Function ID: 10878
+// Module ID: 10925
+// Function ID: 10926
 // Name: useDiscoverableApplicationStream
-// Dependencies: [6834, 5083, 1072, 504, 2]
+// Dependencies: [6849, 5083, 1072, 504, 2]
 // Exports: default
 
-// Module 10877 (useDiscoverableApplicationStream)
+// Module 10925 (useDiscoverableApplicationStream)
 import Constants from "Constants" /* 1072 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import size from "module_2" /* 2 */;
 

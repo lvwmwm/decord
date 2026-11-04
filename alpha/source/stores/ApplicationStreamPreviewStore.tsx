@@ -1,14 +1,14 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8043
+// Function ID: 8044
 // Name: ApplicationStreamPreviewStore
-// Dependencies: [6835, 12, 6837, 504, 572, 2]
+// Dependencies: [6850, 12, 6852, 504, 572, 2]
 
-// Module 8027 (ApplicationStreamPreviewStore)
+// Module 8043 (ApplicationStreamPreviewStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 6835 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6837 */;
+import Constants from "Constants" /* 6850 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6852 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5;

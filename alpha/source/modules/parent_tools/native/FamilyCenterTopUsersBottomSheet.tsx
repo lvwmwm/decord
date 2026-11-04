@@ -1,19 +1,19 @@
-// Module ID: 16944
-// Function ID: 16945
+// Module ID: 17036
+// Function ID: 17037
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1385, 21, 5141, 8496, 7101, 5195, 1187, 7486, 5747, 1113, 2667, 7186, 2]
+// Dependencies: [19, 1385, 21, 5141, 8513, 7116, 5195, 1187, 7502, 5761, 1113, 2667, 7201, 2]
 // Exports: default
 
-// Module 16944 (FamilyCenterTopUsersBottomSheet)
+// Module 17036 (FamilyCenterTopUsersBottomSheet)
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import _modDef2667 from "module_2667" /* 2667 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import TableRow2 from "TableRow" /* 7101 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import ActionSheet2 from "ActionSheet" /* 7486 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8496 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import TableRow2 from "TableRow" /* 7116 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import ActionSheet2 from "ActionSheet" /* 7502 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8513 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -52,7 +52,7 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "text-md/semibold", style: tmp.header, children: intl.string(_modDef2667.BxbvS7) };
+  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2667.BxbvS7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

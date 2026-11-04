@@ -1,9 +1,9 @@
-// Module ID: 15369
-// Function ID: 15370
+// Module ID: 15456
+// Function ID: 15457
 // Name: VirtualCurrencyConstants
 // Dependencies: [2]
 
-// Module 15369 (VirtualCurrencyConstants)
+// Module 15456 (VirtualCurrencyConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/VirtualCurrencyConstants.tsx");

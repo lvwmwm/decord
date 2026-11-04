@@ -1,19 +1,19 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14947
+// Function ID: 14948
 // Name: GuildTagCreateGuildListBottomSheet
-// Dependencies: [19, 5365, 21, 504, 7101, 1113, 7083, 5381, 14186, 5356, 7486, 7441, 7186, 2]
+// Dependencies: [19, 5366, 21, 504, 7116, 1113, 7098, 5382, 14272, 5357, 7502, 7457, 7201, 2]
 // Exports: default
 
-// Module 14866 (GuildTagCreateGuildListBottomSheet)
+// Module 14947 (GuildTagCreateGuildListBottomSheet)
 import intl3 from "intl" /* 1113 */;
-import Powerups from "Powerups" /* 5356 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import TableRowGroup2 from "TableRowGroup" /* 7186 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7441 */;
-import ActionSheet2 from "ActionSheet" /* 7486 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14186 */;
+import Powerups from "Powerups" /* 5357 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7457 */;
+import ActionSheet2 from "ActionSheet" /* 7502 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14272 */;
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5365 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5366 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -43,14 +43,14 @@ function GuildRow(guild) {
     }
   };
   formatToPlainStringResult = null;
-  const TableRow = guild(7101).TableRow;
+  const TableRow = guild(7116).TableRow;
   if (null != stateFromStores) {
     const intl = tmp(1113).intl;
     const obj3 = { count: stateFromStores };
     formatToPlainStringResult = intl.formatToPlainString(tmp(1113).t.zRl6XR, obj3);
   }
-  obj4 = { guild, size: guild(7083).GuildIconSizes.SMALL_32 };
-  tmp6 = analyticsLocation(7083);
+  obj4 = { guild, size: guild(7098).GuildIconSizes.SMALL_32 };
+  tmp6 = analyticsLocation(7098);
   return closure_4(TableRow, obj2);
 }
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);

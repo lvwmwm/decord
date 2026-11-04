@@ -1,13 +1,13 @@
-// Module ID: 15111
-// Function ID: 15112
+// Module ID: 15191
+// Function ID: 15192
 // Name: maybeFetchContentInventoryOutbox
-// Dependencies: [9615, 1089, 15112, 2]
+// Dependencies: [9634, 1089, 15192, 2]
 // Exports: default
 
-// Module 15111 (maybeFetchContentInventoryOutbox)
+// Module 15191 (maybeFetchContentInventoryOutbox)
 import DurationsDefault from "Durations" /* 1089 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 15112 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9615 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 15192 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9634 */;
 import size from "module_2" /* 2 */;
 
 const MINUTE = DurationsDefault.Millis.MINUTE;

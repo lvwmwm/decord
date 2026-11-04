@@ -1,15 +1,15 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 12840
+// Function ID: 12841
 // Name: ConjureTipHint
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 12760, 8152, 7180, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 12841, 8168, 7195, 1113, 2]
 // Exports: default
 
-// Module 12759 (ConjureTipHint)
+// Module 12840 (ConjureTipHint)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12760 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ConjureTipGutterRowDefault from "ConjureTipGutterRow" /* 12841 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -21,12 +21,12 @@ let obj2;
 let obj3;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let c6 = "text-sm/normal";
+let c6 = "body-sm/normal";
 let createStyles = createStyles_mod;
 let obj = { line: obj2, text: { flexShrink: 1 }, dismiss: obj3 };
 obj2 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_4 };
 createStyles = createStyles.createStyles;
-obj3 = { height: Text_Text.TextStyleSheet["text-sm/normal"].lineHeight, justifyContent: "center" };
+obj3 = { height: Text_Text.TextStyleSheet["body-sm/normal"].lineHeight, justifyContent: "center" };
 let closure_7 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/conjure/tips/native/ConjureTipHint.tsx");
 
@@ -45,10 +45,10 @@ export default function ConjureTipHint(onDismiss) {
   onDismiss = onDismiss.onDismiss;
   ({ icon, children } = onDismiss);
   const tmp = closure_7();
-  const obj = { icon, tone: "muted", firstLine: textsmnormal, children: tmp6(View, obj2) };
+  const obj = { icon, tone: "muted", firstLine: bodysmnormal, children: tmp6(View, obj2) };
   obj2 = { style: tmp.line, children: items };
   const obj3 = { style: tmp.text, children: React3(Text_Text.Text, obj4) };
-  obj4 = { variant: textsmnormal, color: "text-muted", children };
+  obj4 = { variant: bodysmnormal, color: "text-muted", children };
   const tmp5 = ConjureTipGutterRowDefault;
   items = [React3(View, obj3), ];
   let tmp2Result = null;
@@ -56,9 +56,9 @@ export default function ConjureTipHint(onDismiss) {
   if (null != onDismiss) {
     const obj5 = { style: tmp.dismiss, children: React3(IconButton, obj6) };
     obj6 = { variant: "tertiary", size: "sm", icon: React3(XSmallIcon, obj7), onPress: onDismiss, accessibilityLabel: intl.string(intl2.t.WAI6xu) };
-    IconButton = tmp8(8152).IconButton;
+    IconButton = tmp8(8168).IconButton;
     obj7 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    XSmallIcon = tmp8(7180).XSmallIcon;
+    XSmallIcon = tmp8(7195).XSmallIcon;
     intl = tmp8(1113).intl;
     tmp2Result = tmp2(tmp7, obj5);
   }

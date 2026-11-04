@@ -1,14 +1,14 @@
-// Module ID: 9198
-// Function ID: 9199
+// Module ID: 9215
+// Function ID: 9216
 // Name: AddModerators
-// Dependencies: [32, 19, 17, 5012, 8071, 21, 5141, 575, 1499, 38, 9157, 6830, 2121, 1113, 7124, 7682, 5747, 8149, 9199, 4998, 2]
+// Dependencies: [32, 19, 17, 5012, 8087, 21, 5141, 575, 1499, 38, 9174, 6845, 2121, 1113, 7139, 7698, 5761, 8165, 9216, 4998, 2]
 // Exports: default
 
-// Module 9198 (AddModerators)
+// Module 9215 (AddModerators)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import HeaderActionButton from "HeaderActionButton" /* 7682 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8071 */;
+import HeaderActionButton from "HeaderActionButton" /* 7698 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 8087 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -106,7 +106,7 @@ export default function AddModerators(guildId) {
   }, items1);
   let obj2 = { style: tmp3.addMembersContainer, children: items2 };
   const obj3 = { style: tmp3.moderatorDescriptionContainer, children: closure_8(Text, obj4) };
-  obj4 = { variant: "text-sm/medium", color: "text-default", children: intl.string(guildId(navigation[13]).t.f7VbhF) };
+  obj4 = { variant: "body-sm/medium", color: "text-default", children: intl.string(guildId(navigation[13]).t.f7VbhF) };
   Text = guildId(navigation[16]).Text;
   intl = guildId(navigation[13]).intl;
   items2 = [closure_8(first1, obj3), , ];

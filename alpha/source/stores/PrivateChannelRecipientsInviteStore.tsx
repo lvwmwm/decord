@@ -1,20 +1,20 @@
-// Module ID: 15788
-// Function ID: 15789
+// Module ID: 15876
+// Function ID: 15877
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [5361, 7925, 4994, 4990, 6862, 7015, 5053, 5012, 5083, 1385, 1072, 2155, 5195, 9266, 504, 572, 2]
+// Dependencies: [5362, 7941, 4994, 4990, 6877, 7030, 5053, 5012, 5083, 1385, 1072, 2155, 5195, 9283, 504, 572, 2]
 
-// Module 15788 (PrivateChannelRecipientsInviteStore)
+// Module 15876 (PrivateChannelRecipientsInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import StringUtils from "StringUtils" /* 2155 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9266 */;
-import ExperimentStore from "ExperimentStore" /* 5361 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7925 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9283 */;
+import ExperimentStore from "ExperimentStore" /* 5362 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7941 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import ConsentStore from "ConsentStore" /* 6862 */;
-import FrecencyStore from "FrecencyStore" /* 7015 */;
+import ConsentStore from "ConsentStore" /* 6877 */;
+import FrecencyStore from "FrecencyStore" /* 7030 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;

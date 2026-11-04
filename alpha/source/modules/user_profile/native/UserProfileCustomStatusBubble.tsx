@@ -1,23 +1,23 @@
-// Module ID: 11534
-// Function ID: 11535
+// Module ID: 11584
+// Function ID: 11585
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 7497, 1388, 1083, 21, 1377, 5141, 575, 8155, 4966, 5837, 1411, 5747, 7420, 5719, 8885, 10879, 11182, 5381, 11535, 7471, 1113, 7106, 11626, 2]
+// Dependencies: [32, 19, 17, 7513, 1388, 1083, 21, 1377, 5141, 575, 8171, 4966, 5851, 1411, 5761, 7436, 5732, 8902, 10927, 11232, 5382, 11585, 7487, 1113, 7121, 11677, 2]
 // Exports: default
 
-// Module 11534 (UserProfileCustomStatusBubble)
+// Module 11584 (UserProfileCustomStatusBubble)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import UserSettings from "UserSettings" /* 4966 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import EmojiDefault from "Emoji" /* 7420 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import Constants2 from "Constants" /* 7497 */;
-import inlineStyles from "inlineStyles" /* 8155 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 11535 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import EmojiDefault from "Emoji" /* 7436 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import Constants2 from "Constants" /* 7513 */;
+import inlineStyles from "inlineStyles" /* 8171 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 11585 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -219,8 +219,8 @@ let closure_13 = createStyles.createStyles((arg0) => {
   const merged1 = Object.assign(tmp4(575).shadows.SHADOW_LOW);
   return obj;
 });
-let closure_15 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_16 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+let closure_15 = { textVariant: "body-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
+let closure_16 = { [UserProfileThemeTypes.PREVIEW]: { textVariant: "body-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
 createStyles = createStyles_mod;
 let closure_19 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));
 let size = size_mod;
@@ -451,10 +451,10 @@ export default function UserProfileCustomStatusBubble(ref) {
       const obj11 = { prompt: placeholderText };
       formatToPlainStringResult = intl5.formatToPlainString(tmp5(tmp6[23]).t.ioWOMP, obj11);
     }
-    let str7 = "text-md/medium";
+    let str7 = "body-md/medium";
     Text = tmp5(tmp6[14]).Text;
     if (!tmp19 && !tmp21 && undefined !== placeholderText && "" !== placeholderText) {
-      str7 = "text-md/normal";
+      str7 = "body-md/normal";
     }
     let _Math = Math;
     obj12 = { variant: str7, color: "control-secondary-text-default", lineClamp: Math.ceil(2 * previewEmoji.getFontScale()), style: obj13, children: items7 };

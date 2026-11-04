@@ -1,8 +1,8 @@
-// Module ID: 6279
-// Function ID: 6280
+// Module ID: 6294
+// Function ID: 6295
 // Dependencies: [2]
 
-// Module 6279
+// Module 6294
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/shoes/western_boots.png.js");

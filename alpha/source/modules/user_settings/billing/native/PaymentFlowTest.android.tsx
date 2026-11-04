@@ -1,15 +1,15 @@
-// Module ID: 17847
-// Function ID: 17848
+// Module ID: 17943
+// Function ID: 17944
 // Name: PaymentFlowTest
-// Dependencies: [32, 19, 17, 1385, 21, 5141, 575, 563, 6147, 5747, 7103, 7208, 5754, 5381, 17848, 2123, 5730, 10819, 2]
+// Dependencies: [32, 19, 17, 1385, 21, 5141, 575, 563, 6162, 5761, 7118, 7223, 5768, 5382, 17944, 2123, 5743, 10867, 2]
 
-// Module 17847 (PaymentFlowTest)
+// Module 17943 (PaymentFlowTest)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
-import NativePaymentContext from "NativePaymentContext" /* 10819 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
+import NativePaymentContext from "NativePaymentContext" /* 10867 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -48,10 +48,10 @@ function TestView() {
   let obj3 = { spacing: 16, style: tmp.container, children: items1 };
   const tmp14 = tmp2Result2[1];
   const Stack = tmp5(tmp6[8]).Stack;
-  items1 = [closure_7(tmp5(tmp6[9]).Text, { variant: "text-lg/semibold", children: "Android Payment Flow Test" }), ];
+  items1 = [closure_7(tmp5(tmp6[9]).Text, { variant: "body-lg/semibold", children: "Android Payment Flow Test" }), ];
   const Card = tmp5(tmp6[10]).Card;
   const items2 = [, , , , ];
-  const obj4 = { style: tmp.title, variant: "text-md/semibold", children: "Gift Purchase SKU" };
+  const obj4 = { style: tmp.title, variant: "body-md/semibold", children: "Gift Purchase SKU" };
   items2[0] = closure_7(value(first1[9]).Text, obj4);
   const obj5 = {
     containerStyle: tmp.textInput,
@@ -89,7 +89,7 @@ function TestView() {
         const obj2 = ActionSheetActionCreatorsDefault;
         obj2.hideActionSheet();
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(17848, dependencyMap.paths), "SimpleRequestOTPActionSheet", obj);
+        obj3.openLazy(asyncRequire(17944, dependencyMap.paths), "SimpleRequestOTPActionSheet", obj);
       }
     }
   };

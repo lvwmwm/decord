@@ -1,17 +1,17 @@
-// Module ID: 13983
-// Function ID: 13984
+// Module ID: 14069
+// Function ID: 14070
 // Name: GuildDirectoryUtils
-// Dependencies: [13984, 38, 12, 2]
+// Dependencies: [14070, 38, 12, 2]
 // Exports: guildDirectoryEntryFromServer, orderByDateAdded, orderByTotalMemberCount, rankByDateAdded, rankGuildEntries
 
-// Module 13983 (GuildDirectoryUtils)
+// Module 14069 (GuildDirectoryUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13984 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 14070 */;
 import size from "module_2" /* 2 */;
 
-const f105126 = (approximateMemberCount) => approximateMemberCount.approximateMemberCount;
-const f105127 = (createdAt) => createdAt.createdAt;
+const f105861 = (approximateMemberCount) => approximateMemberCount.approximateMemberCount;
+const f105862 = (createdAt) => createdAt.createdAt;
 const DirectoryEntryTypes = GuildDirectoryConstants.DirectoryEntryTypes;
 const result = size.fileFinishedImporting("modules/directory_channels/GuildDirectoryUtils.tsx");
 
@@ -73,24 +73,24 @@ export function guildDirectoryEntryFromServer(entry) {
 }
 export const MAX_CATEGORY_SERVERS = 5;
 export function orderByTotalMemberCount(found) {
-  const items = [f105126];
+  const items = [f105861];
   const obj = _modDef12;
   return obj.orderBy(found, items, ["desc"]);
 }
 export function orderByDateAdded(reactions) {
-  const items = [f105127];
+  const items = [f105862];
   const obj = _modDef12;
   return obj.orderBy(reactions, items, ["desc"]);
 }
 export function rankByDateAdded(arr) {
   const found = arr.filter((featurableInDirectory) => featurableInDirectory.featurableInDirectory);
-  const items = [f105127];
+  const items = [f105862];
   const obj = _modDef12;
   const orderByResult = obj.orderBy(found, items, ["desc"]);
   return orderByResult.slice(0, 5);
 }
 export function rankGuildEntries(arr) {
-  const items = [f105126];
+  const items = [f105861];
   const obj = _modDef12;
   return obj.orderBy(arr, items, ["desc"]);
 }

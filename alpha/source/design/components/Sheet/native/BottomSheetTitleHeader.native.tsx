@@ -1,16 +1,16 @@
-// Module ID: 7441
-// Function ID: 7442
+// Module ID: 7457
+// Function ID: 7458
 // Name: BottomSheetTitleHeader
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1493, 5719, 5747, 7125, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1493, 5732, 5761, 7140, 2]
 // Exports: BottomSheetTitleHeader
 
-// Module 7441 (BottomSheetTitleHeader)
+// Module 7457 (BottomSheetTitleHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7125 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7140 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -132,14 +132,14 @@ function RedesignBottomSheetTitleHeaderComplex(subtitle) {
   return metroImportDefault(View, obj2);
 }
 function Title(arg0) {
-  const obj = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: closure_8().title };
+  const obj = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: closure_8().title };
   const Text = Text_Text.Text;
   const merged = Object.assign(arg0);
   return metroRequire(Text, obj);
 }
 function Subtitle(children) {
   children = children.children;
-  const obj = { variant: "text-sm/medium", color: "text-muted", style: closure_8().subtitle, textBreakStrategy: "balanced", lineBreakStrategyIOS: "push-out", children };
+  const obj = { variant: "body-sm/medium", color: "text-muted", style: closure_8().subtitle, textBreakStrategy: "balanced", lineBreakStrategyIOS: "push-out", children };
   return metroRequire(Text_Text.Text, obj);
 }
 const View = react_native.View;

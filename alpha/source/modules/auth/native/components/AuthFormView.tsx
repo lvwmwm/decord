@@ -1,14 +1,14 @@
-// Module ID: 7265
-// Function ID: 7266
+// Module ID: 7281
+// Function ID: 7282
 // Name: AuthFormView
-// Dependencies: [19, 17, 21, 5141, 575, 7237, 7266, 7267, 7075, 7268, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7257, 7282, 7283, 7090, 7284, 2]
 // Exports: default
 
-// Module 7265 (AuthFormView)
+// Module 7281 (AuthFormView)
 import nativeDefault from "native" /* 575 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7237 */;
-import react2 from "react" /* 7266 */;
-import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7268 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7257 */;
+import react2 from "react" /* 7282 */;
+import AuthNavbarPlaceholderDefault from "AuthNavbarPlaceholder" /* 7284 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -93,7 +93,7 @@ export default function AuthFormView(arg0) {
     const tmp14 = hasOwnProperty;
     if (null != headerText) {
       const obj3 = { children: headerText };
-      tmp16 = metroRequire(tmp(7267), obj3);
+      tmp16 = metroRequire(tmp(7283), obj3);
     }
     items1 = [tmp16, , ];
     let tmp18 = null;
@@ -110,7 +110,7 @@ export default function AuthFormView(arg0) {
     ({ container: arr[0], flex: arr[1] } = tmp4);
     if (background == null) {
       const obj5 = { backgroundImageSource, backgroundImageCover };
-      background = metroRequire(tmp(7075), obj5);
+      background = metroRequire(tmp(7090), obj5);
     }
     items3 = [background, metroRequire(AuthNavbarPlaceholderDefault, {}), ];
     const obj6 = { contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, style: tmp4.flex, contentContainerStyle: items4, children: items5 };
@@ -121,7 +121,7 @@ export default function AuthFormView(arg0) {
     const tmp10 = hasOwnProperty;
     if (null != headerText) {
       const obj7 = { children: headerText };
-      tmp9Result = tmp9(tmp(7267), obj7);
+      tmp9Result = tmp9(tmp(7283), obj7);
     }
     items5 = [tmp9Result, , ];
     let tmp9Result2 = null;

@@ -1,15 +1,15 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7428
+// Function ID: 7429
 // Name: common/SafeAreaView
-// Dependencies: [19, 17, 21, 1627, 7085, 1342, 2]
+// Dependencies: [19, 17, 21, 1627, 7100, 1342, 2]
 // Exports: SafeAreaPaddingView
 
-// Module 7412 (common/SafeAreaView)
+// Module 7428 (common/SafeAreaView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _modDef1342 from "module_1342" /* 1342 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useRefValueDefault from "useRefValue" /* 7085 */;
+import useRefValueDefault from "useRefValue" /* 7100 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

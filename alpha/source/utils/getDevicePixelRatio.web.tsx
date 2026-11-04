@@ -1,10 +1,10 @@
-// Module ID: 9428
-// Function ID: 9429
+// Module ID: 9446
+// Function ID: 9447
 // Name: getDevicePixelRatio
 // Dependencies: [2]
 // Exports: default
 
-// Module 9428 (getDevicePixelRatio)
+// Module 9446 (getDevicePixelRatio)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/getDevicePixelRatio.web.tsx");

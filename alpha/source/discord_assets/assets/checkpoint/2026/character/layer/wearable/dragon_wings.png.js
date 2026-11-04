@@ -1,8 +1,8 @@
-// Module ID: 6522
-// Function ID: 6523
+// Module ID: 6537
+// Function ID: 6538
 // Dependencies: [2]
 
-// Module 6522
+// Module 6537
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/wearable/dragon_wings.png.js");

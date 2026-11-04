@@ -1,18 +1,18 @@
-// Module ID: 14728
-// Function ID: 14729
+// Module ID: 14808
+// Function ID: 14809
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 4990, 21, 5141, 575, 1627, 9907, 504, 7948, 9939, 9938, 6864, 1113, 7131, 9943, 1377, 7124, 7106, 5747, 7373, 2]
+// Dependencies: [5, 32, 19, 17, 4990, 21, 5141, 575, 1627, 9925, 504, 7964, 9957, 9956, 6879, 1113, 7146, 9961, 1377, 7139, 7121, 5761, 7389, 2]
 // Exports: default
 
-// Module 14728 (ScheduledMessageEditContentModal)
+// Module 14808 (ScheduledMessageEditContentModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import MessageParserDefault from "MessageParser" /* 7948 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9939 */;
-import HeaderShared from "HeaderShared" /* 9943 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import MessageParserDefault from "MessageParser" /* 7964 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 9957 */;
+import HeaderShared from "HeaderShared" /* 9961 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -149,7 +149,7 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
       let obj2;
       const obj = { accessibilityRole: "button", onPress, children: metroImportAll(Text, obj2) };
       const PressableOpacity = Pressables.PressableOpacity;
-      obj2 = { variant: "text-md/semibold", color: "control-brand-foreground", children: intl.string(intl2.t["R3BPH+"]) };
+      obj2 = { variant: "body-md/semibold", color: "control-brand-foreground", children: intl.string(intl2.t["R3BPH+"]) };
       Text = Text_Text.Text;
       intl = intl2.intl;
       return metroImportAll(PressableOpacity, obj);

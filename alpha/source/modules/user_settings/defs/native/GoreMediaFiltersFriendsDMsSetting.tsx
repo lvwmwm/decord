@@ -1,17 +1,17 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16970
+// Function ID: 16971
 // Name: GoreMediaFiltersFriendsDMsSetting
-// Dependencies: [8556, 16872, 8811, 7596, 16873, 1113, 11677, 16875, 2]
+// Dependencies: [8573, 16964, 8828, 7612, 16965, 1113, 11728, 16967, 2]
 
-// Module 16878 (GoreMediaFiltersFriendsDMsSetting)
+// Module 16970 (GoreMediaFiltersFriendsDMsSetting)
 import intl4 from "intl" /* 1113 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7596 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8811 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16872 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16873 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16875 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7612 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8828 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16964 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16965 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16967 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

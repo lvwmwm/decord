@@ -1,18 +1,18 @@
-// Module ID: 19143
-// Function ID: 19144
+// Module ID: 19246
+// Function ID: 19247
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 14147, 21, 5141, 575, 7446, 5195, 8874, 7478, 5831, 5381, 14310, 2123, 8886, 7646, 6864, 7106, 1113, 1187, 5747, 19126, 7083, 19144, 2]
+// Dependencies: [19, 17, 14233, 21, 5141, 575, 7462, 5195, 8891, 7494, 5845, 5382, 14397, 2123, 8903, 7662, 6879, 7121, 1113, 1187, 5761, 19229, 7098, 19247, 2]
 // Exports: default
 
-// Module 19143 (RestrictedMessagePreviewHeader)
+// Module 19246 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 14147 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 14233 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -80,7 +80,7 @@ export default function RestrictedMessagePreviewHeader(channel) {
         obj4.popWithKey(closure_1_5);
       }
     };
-    obj.openLazy(asyncRequire(14310, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
+    obj.openLazy(asyncRequire(14397, dependencyMap.paths), "MutualGuildsActionSheet", obj2);
   }, items2);
   let obj4 = { accessibilityRole: "button", accessibilityLabel: intl.string(channel(analyticsLocations[18]).t.iXAna6), onPress: callback, children: closure_6(Avatar, obj5) };
   const PressableOpacity = channel(analyticsLocations[17]).PressableOpacity;
@@ -103,11 +103,11 @@ export default function RestrictedMessagePreviewHeader(channel) {
     tmp11Result = tmp11(PressableOpacity3, obj7);
   }
   items3[2] = tmp11Result;
-  const obj9 = { variant: "text-md/medium", color: "text-default", children: intl4.formatToPlainString(channel(analyticsLocations[18]).t["Qvg+6+"], { username: name }) };
+  const obj9 = { variant: "body-md/medium", color: "text-default", children: intl4.formatToPlainString(channel(analyticsLocations[18]).t["Qvg+6+"], { username: name }) };
   const Text = tmp12(tmp3[20]).Text;
   intl4 = tmp12(tmp3[18]).intl;
   items3[3] = closure_6(Text, obj9);
-  const obj10 = { userId: user.id, onPress: callback2, iconSize: channel(analyticsLocations[22]).GuildIconSizes.XSMALL, textVariant: "text-md/medium" };
+  const obj10 = { userId: user.id, onPress: callback2, iconSize: channel(analyticsLocations[22]).GuildIconSizes.XSMALL, textVariant: "body-md/medium" };
   const tmp2Result = user(analyticsLocations[21]);
   items3[4] = closure_6(tmp2Result, obj10);
   items3[5] = closure_6(user(analyticsLocations[23]), { channel, user });

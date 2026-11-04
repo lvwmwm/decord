@@ -1,27 +1,27 @@
-// Module ID: 17252
-// Function ID: 17253
+// Module ID: 17344
+// Function ID: 17345
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [32, 19, 17, 6901, 1083, 21, 671, 575, 17253, 5141, 1377, 9827, 1652, 5377, 1627, 7412, 5207, 17254, 17269, 17270, 17249, 17271, 6147, 7106, 5747, 17272, 5837, 5754, 9837, 8152, 1113, 9292, 10942, 9813, 14815, 17216, 8965, 5710, 17273, 10941, 17096, 17092, 17094, 14898, 9888, 17248, 5381, 17274, 2123, 9849, 7990, 9816, 9819, 6908, 7995, 6904, 9059, 17275, 9810, 17276, 6909, 2]
+// Dependencies: [32, 19, 17, 6916, 1083, 21, 671, 575, 17345, 5141, 1377, 9845, 1652, 5378, 1627, 7428, 5207, 17346, 17361, 17362, 17341, 17363, 6162, 7121, 5761, 17364, 5851, 5768, 9855, 8168, 1113, 9309, 10990, 9831, 14895, 17308, 8982, 5723, 17365, 10989, 17188, 17184, 17186, 14978, 9906, 17340, 5382, 17366, 2123, 9867, 8006, 9834, 9837, 6923, 8011, 6919, 9076, 17367, 9828, 17368, 6924, 2]
 
-// Module 17252 (VideoQuestModalContentInProgress)
+// Module 17344 (VideoQuestModalContentInProgress)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import QuestTypes from "QuestTypes" /* 6904 */;
-import AdCreativeType from "AdCreativeType" /* 6908 */;
-import Pressables from "Pressables" /* 7106 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7995 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 9059 */;
-import QuestUtils from "QuestUtils" /* 9810 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9816 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9819 */;
-import AssetUtils from "AssetUtils" /* 9827 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9837 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import QuestTypes from "QuestTypes" /* 6919 */;
+import AdCreativeType from "AdCreativeType" /* 6923 */;
+import Pressables from "Pressables" /* 7121 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8011 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 9076 */;
+import QuestUtils from "QuestUtils" /* 9828 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9834 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9837 */;
+import AssetUtils from "AssetUtils" /* 9845 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9855 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
 import Fragment from "Fragment" /* 21 */;
 import module_671_mod from "module_671" /* 671 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -389,7 +389,7 @@ let closure_24 = react.memo(function LandscapeLayout(quest) {
     const PressableOpacity = tmp(tmp2[23]).PressableOpacity;
     const obj23 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: quest.config.messages.gameTitle };
     items23 = [closure_11(tmp(tmp2[24]).Text, obj23), ];
-    const obj24 = { variant: "heading-sm/semibold", color: "text-subtle", children: quest.config.messages.gamePublisher };
+    const obj24 = { variant: "heading-xs/semibold", color: "text-subtle", children: quest.config.messages.gamePublisher };
     items23[1] = closure_11(tmp(tmp2[24]).Text, obj24);
     items24 = [closure_12(PressableOpacity, obj22), ];
     const obj25 = { style: tmp3.questDetailsSecondary, children: closure_11(isFullscreen(tmp2[25]), obj26) };
@@ -559,7 +559,7 @@ let closure_25 = react.memo(function PortraitLayout(arg0) {
   items7 = [, ];
   const obj14 = { variant: "heading-lg/semibold", color: "text-overlay-light", style: tmp15.textShadow, accessibilityRole: "header", children: quest.config.messages.gameTitle };
   items7[0] = closure_11(contentWidth(memo[24]).Text, obj14);
-  const obj15 = { variant: "heading-sm/semibold", color: "text-overlay-light", style: items8, children: quest.config.messages.gamePublisher };
+  const obj15 = { variant: "heading-xs/semibold", color: "text-overlay-light", style: items8, children: quest.config.messages.gamePublisher };
   items8 = [, ];
   ({ textShadow: arr9[0], questDetailsSubheader: arr9[1] } = tmp15);
   items7[1] = closure_11(contentWidth(memo[24]).Text, obj15);
@@ -666,7 +666,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
   let tmp = sourceQuestContent;
   let tmp2 = dependencyMap;
-  let obj = sourceQuestContent(17248);
+  let obj = sourceQuestContent(17340);
   const quest = obj.useVideoQuestModalContext().quest;
   items = [quest];
   items1 = [quest];
@@ -686,14 +686,14 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { quest };
-    const tmp2 = asyncRequire(17274, dependencyMap.paths);
+    const tmp2 = asyncRequire(17366, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
-  let obj2 = sourceQuestContent(9849);
+  let obj2 = sourceQuestContent(9867);
   getQuestImpressionId = obj2.useGetQuestImpressionId();
   const tmp10 = getQuestImpressionId(react.useState(false), 2);
   [tmp11, react] = tmp10;
-  let obj3 = sourceQuestContent(7990);
+  let obj3 = sourceQuestContent(8006);
   const isShareableQuestResult = obj3.isShareableQuest(quest.config);
   let closure_5 = isShareableQuestResult;
   const items3 = [isShareableQuestResult, quest.id, getQuestImpressionId, sourceQuestContent];
@@ -719,7 +719,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
       showShareActionSheet(obj2, "Video Quest Modal - " + quest.id);
     }
   }, items3);
-  const obj4 = sourceQuestContent(17275);
+  const obj4 = sourceQuestContent(17367);
   const videoQuestClickCtaAndMaybeCloseModal = obj4.useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const items4 = [videoQuestClickCtaAndMaybeCloseModal];
   const items5 = [videoQuestClickCtaAndMaybeCloseModal];
@@ -731,12 +731,12 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const obj2 = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj2);
   }, items6);
-  const obj5 = sourceQuestContent(17276);
+  const obj5 = sourceQuestContent(17368);
   const videoExternallyPaused = obj5.useVideoExternallyPaused(quest.id, tmp11);
-  const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 6909).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
+  const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 6924).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp20 = null == tmp19;
   if (!tmp20) {
-    const tmpResult = tmp(14815);
+    const tmpResult = tmp(14895);
     tmp20 = "portrait" === tmpResult.getVideoOrientation(tmp19);
   }
   const obj6 = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handleAdvertiserDetailsPress: callback3, handlePrimaryCtaPress: callback4, handleRewardDetailsPress: callback5, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };

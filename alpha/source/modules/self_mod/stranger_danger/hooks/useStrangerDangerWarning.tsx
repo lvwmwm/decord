@@ -1,21 +1,21 @@
-// Module ID: 11394
-// Function ID: 11395
+// Module ID: 11444
+// Function ID: 11445
 // Name: useStrangerDangerWarning
-// Dependencies: [1385, 10934, 504, 11395, 11396, 11397, 8492, 11398, 2]
+// Dependencies: [1385, 10982, 504, 11445, 11446, 11447, 8509, 11448, 2]
 // Exports: useStrangerDangerWarning
 
-// Module 11394 (useStrangerDangerWarning)
+// Module 11444 (useStrangerDangerWarning)
 import get_initialized from "get initialized" /* 504 */;
-import useUserIsTeen from "useUserIsTeen" /* 8492 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10934 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11395 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 11396 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11397 */;
+import useUserIsTeen from "useUserIsTeen" /* 8509 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10982 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11445 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 11446 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11447 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useInappropriateConversationWarningsForChannel = tmp(11398);
+const useInappropriateConversationWarningsForChannel = tmp(11448);
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;
 const result = size.fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
 

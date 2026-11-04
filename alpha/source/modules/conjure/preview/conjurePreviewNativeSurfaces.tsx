@@ -1,13 +1,13 @@
-// Module ID: 11054
-// Function ID: 11055
+// Module ID: 11103
+// Function ID: 11104
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [6966, 1072, 11055, 11059, 11060, 9466, 2]
+// Dependencies: [6981, 1072, 11104, 11108, 11109, 9484, 2]
 // Exports: beginNativeSurfaceSessionForFrame, holdPreviewGameCaptureAnswers
 
-// Module 11054 (conjurePreviewNativeSurfaces)
+// Module 11103 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1072 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9466 */;
-import FramesStore from "FramesStore" /* 6966 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9484 */;
+import FramesStore from "FramesStore" /* 6981 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,7 +96,7 @@ function answerFor(cmd) {
                       return conjureDevicePermissionStatus;
                     })
           };
-          prop = tmp9(11059).CONJURE_DEVICE_PERMISSION_NAMES;
+          prop = tmp9(11108).CONJURE_DEVICE_PERMISSION_NAMES;
         }
         tmp8 = obj3;
       }
@@ -215,15 +215,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f98698 = (permission) => ({ permission, state: "denied" });
+    const f99334 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f98698) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f98698) });
+    obj = { result: { permissions: found.map(f99334) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f99334) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -244,8 +244,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel_id", answered: "<string:2672367698>" }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel_id", answered: "<string:2672367698>" })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "id", answered: 10275480959958475000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "id", answered: 10275480959958475000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 })
 };
 let closure_7 = {
   drain() {
@@ -281,8 +281,8 @@ export function beginNativeSurfaceSessionForFrame(iframeId, beneathBatches) {
       arr = closure_8;
     }
     let tmp7 = dependencyMap;
-    let setRpcCommandInterceptor = obj2(9466).setRpcCommandInterceptor;
-    obj2(9466);
+    let setRpcCommandInterceptor = obj2(9484).setRpcCommandInterceptor;
+    obj2(9484);
     if (arr.length > 0) {
       tmp10 = answerFor;
     } else {

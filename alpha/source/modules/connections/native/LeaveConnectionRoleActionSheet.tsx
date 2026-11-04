@@ -1,15 +1,15 @@
-// Module ID: 11738
-// Function ID: 11739
+// Module ID: 11793
+// Function ID: 11794
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 5141, 5395, 5747, 1113, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 5396, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 11738 (LeaveConnectionRoleActionSheet)
+// Module 11793 (LeaveConnectionRoleActionSheet)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -39,7 +39,7 @@ export default function LeaveConnectionRoleActionSheet(onLeaveRolePressed) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [_false(Text, obj3), , ];
-  const obj4 = { style: tmp.marginTop, variant: "text-md/normal", color: "text-default", children: intl2.string(intl4.t.caJwb5) };
+  const obj4 = { style: tmp.marginTop, variant: "body-md/normal", color: "text-default", children: intl2.string(intl4.t.caJwb5) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = _false(Text2, obj4);

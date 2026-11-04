@@ -1,10 +1,10 @@
-// Module ID: 8970
-// Function ID: 8971
+// Module ID: 8987
+// Function ID: 8988
 // Name: MediaSlider
-// Dependencies: [32, 19, 17, 21, 5141, 1377, 8971, 5735, 12, 671, 8362, 7106, 1113, 8972, 8974, 5747, 8976, 8985, 575, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 1377, 8988, 5749, 12, 671, 8378, 7121, 1113, 8989, 8991, 5761, 8993, 9002, 575, 2]
 // Exports: default
 
-// Module 8970 (MediaSlider)
+// Module 8987 (MediaSlider)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -167,7 +167,7 @@ export default function MediaSlider(controls) {
     PauseIcon = tmp11(tmp12[14]).PauseIcon;
   }
   items6 = [closure_6(PressableOpacity, obj4), , , ];
-  const obj5 = { style: items7, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "text-xs/medium", children: timeFormat };
+  const obj5 = { style: items7, tabularNumbers: true, lineClamp: 1, color: "text-overlay-light", variant: "body-xs/medium", children: timeFormat };
   items7 = [tmp.centerText, { width: first1 }];
   items6[1] = closure_6(controls(setPaused[15]).Text, obj5);
   const obj6 = { style: tmp.sliderContainer, children: items9 };
@@ -195,7 +195,7 @@ export default function MediaSlider(controls) {
   items6[2] = c7(c5, obj6);
   const obj13 = {
     style: tmp.centerText,
-    variant: "text-xs/medium",
+    variant: "body-xs/medium",
     color: "text-overlay-light",
     tabularNumbers: true,
     lineClamp: 1,

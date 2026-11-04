@@ -1,19 +1,19 @@
-// Module ID: 18425
-// Function ID: 18426
+// Module ID: 18519
+// Function ID: 18520
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 18426, 5012, 21, 575, 1652, 5710, 5141, 563, 18427, 18428, 5377, 14186, 7471, 1113, 2699, 9120, 5747, 7498, 2]
+// Dependencies: [19, 17, 18520, 5012, 21, 575, 1652, 5723, 5141, 563, 18521, 18522, 5378, 14272, 7487, 1113, 2699, 9137, 5761, 7514, 2]
 // Exports: default
 
-// Module 18425 (GuildPowerupsProgressBar)
+// Module 18519 (GuildPowerupsProgressBar)
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14186 */;
-import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 18428 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14272 */;
+import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 18522 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 18426 */;
+import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 18520 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
@@ -175,7 +175,7 @@ export default function GuildPowerupsProgressBar(guildId) {
   items9[2] = animatedStyle;
   items10 = [closure_7(sharedValue, obj8), ];
   const obj10 = { style: tmp.textContainer, children: items11 };
-  const obj11 = { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, style: tmp.headerText, children: combined };
+  const obj11 = { variant: "body-xs/semibold", color: "text-default", lineClamp: 1, style: tmp.headerText, children: combined };
   const Text = tmp2(tmp3[18]).Text;
   if (num >= tmp6) {
     const intl5 = tmp2(tmp3[15]).intl;
@@ -188,7 +188,7 @@ export default function GuildPowerupsProgressBar(guildId) {
   items11 = [closure_7(Text, obj11), ];
   const obj12 = { style: tmp.rightContent, children: items12 };
   items12 = [, ];
-  const obj13 = { variant: "text-xs/semibold", color: "text-default", lineClamp: 1, style: tmp.descriptionText, children: formatToPlainStringResult };
+  const obj13 = { variant: "body-xs/semibold", color: "text-default", lineClamp: 1, style: tmp.descriptionText, children: formatToPlainStringResult };
   items12[0] = closure_7(guildId(tmp3[18]).Text, obj13);
   const obj14 = { size: "sm", color: stateFromStores1(tmp3[5]).colors.TEXT_DEFAULT };
   const ChevronSmallRightIcon = tmp2(tmp3[19]).ChevronSmallRightIcon;

@@ -1,12 +1,12 @@
-// Module ID: 11356
-// Function ID: 11357
+// Module ID: 11406
+// Function ID: 11407
 // Name: GatedContent
-// Dependencies: [19, 21, 5141, 575, 6849, 5754, 6147, 5747, 6887, 2]
+// Dependencies: [19, 21, 5141, 575, 6864, 5768, 6162, 5761, 6902, 2]
 // Exports: default
 
-// Module 11356 (GatedContent)
+// Module 11406 (GatedContent)
 import nativeDefault from "native" /* 575 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6849 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -76,7 +76,7 @@ export default function GatedContent(onAgree) {
   const obj4 = { variant: "heading-xxl/semibold", maxFontSizeMultiplier: 2, style: tmp.title, children: title };
   items3[0] = channelId(onAgree(onDisagree[7]).Heading, obj4);
   items3[1] = subtitle;
-  const obj5 = { color: "text-muted", variant: "text-md/medium", style: tmp.description, maxFontSizeMultiplier: 2, children: description };
+  const obj5 = { color: "text-muted", variant: "body-md/medium", style: tmp.description, maxFontSizeMultiplier: 2, children: description };
   items3[2] = channelId(onAgree(onDisagree[7]).Text, obj5);
   const items4 = [guildId(Stack2, obj3), ];
   const obj6 = { style: tmp.buttonGroup, children: null };

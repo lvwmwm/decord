@@ -1,14 +1,14 @@
-// Module ID: 13571
-// Function ID: 13572
+// Module ID: 13656
+// Function ID: 13657
 // Name: CheckpointStore
-// Dependencies: [1385, 2112, 6232, 6231, 504, 572, 2]
+// Dependencies: [1385, 2112, 6247, 6246, 504, 572, 2]
 
-// Module 13571 (CheckpointStore)
+// Module 13656 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6231 */;
-import CheckpointTrait from "CheckpointTrait" /* 6232 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6246 */;
+import CheckpointTrait from "CheckpointTrait" /* 6247 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

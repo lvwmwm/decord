@@ -1,22 +1,22 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 11894
+// Function ID: 11895
 // Name: transitionToActivity
-// Dependencies: [11133, 4989, 5777, 11134, 5062, 5321, 11836, 5798, 13320, 5879, 6971, 5381, 11863, 2]
+// Dependencies: [11181, 4989, 5791, 11182, 5062, 5322, 11895, 5812, 13403, 5893, 6986, 5382, 11922, 2]
 // Exports: default
 
-// Module 11835 (transitionToActivity)
+// Module 11894 (transitionToActivity)
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5062 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5321 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5777 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5798 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5879 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6971 */;
-import ChannelCallStore from "ChannelCallStore" /* 11133 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 11134 */;
-import ChannelCallModalDefault from "ChannelCallModal" /* 11836 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11863 */;
-import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 13320 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5322 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5812 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6986 */;
+import ChannelCallStore from "ChannelCallStore" /* 11181 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 11182 */;
+import ChannelCallModalDefault from "ChannelCallModal" /* 11895 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11922 */;
+import openChannelCallModalForChannelIdDefault from "openChannelCallModalForChannelId" /* 13403 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import size from "module_2" /* 2 */;
 

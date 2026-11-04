@@ -1,14 +1,14 @@
-// Module ID: 12179
-// Function ID: 12180
+// Module ID: 12238
+// Function ID: 12239
 // Name: useFetchStreamPreview
-// Dependencies: [19, 8027, 4990, 5073, 5044, 1083, 504, 8025, 2]
+// Dependencies: [19, 8043, 4990, 5073, 5044, 1083, 504, 8041, 2]
 // Exports: default
 
-// Module 12179 (useFetchStreamPreview)
+// Module 12238 (useFetchStreamPreview)
 import Constants from "Constants" /* 1083 */;
-import StreamActionCreators from "StreamActionCreators" /* 8025 */;
+import StreamActionCreators from "StreamActionCreators" /* 8041 */;
 import react_mod from "react" /* 19 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 8027 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 8043 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;

@@ -1,21 +1,21 @@
-// Module ID: 18062
-// Function ID: 18063
+// Module ID: 18159
+// Function ID: 18160
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [5012, 18054, 8556, 11678, 16864, 18057, 4966, 6078, 1113, 6150, 7286, 18063, 11677, 2]
+// Dependencies: [5012, 18151, 8573, 11729, 16956, 18154, 4966, 6093, 1113, 6165, 7302, 18160, 11728, 2]
 
-// Module 18062 (SafetyGuildSettingDirectMessages)
+// Module 18159 (SafetyGuildSettingDirectMessages)
 import intl5 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4966 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
-import AlertDefault from "Alert" /* 6150 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11678 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16864 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18057 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 18063 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
+import AlertDefault from "Alert" /* 6165 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11729 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16956 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18154 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 18160 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18054 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18151 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

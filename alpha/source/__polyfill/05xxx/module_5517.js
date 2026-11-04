@@ -1,52 +1,37 @@
 // Module ID: 5517
 // Function ID: 5518
-// Dependencies: [5494, 5509, 5485]
-// Exports: useRotationGesture
+// Dependencies: [5499, 5518, 5472, 5520]
+// Exports: useGestureCallbacks
 
 // Module 5517
-import ComposedGestureName from "ComposedGestureName" /* 5485 */;
-import _mod5494 from "module_5494" /* 5494 */;
-import _mod5509 from "module_5509" /* 5509 */;
+import _mod5499 from "module_5499" /* 5499 */;
+import react from "react" /* 5518 */;
+import useReanimatedEventHandler from "useReanimatedEventHandler" /* 5520 */;
 
-let tmp2;
-let tmp3;
-function transformRotationProps(arg0) {
-  const obj = _mod5494;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-const items = [{ code: "(function diffCalculator_Pnpm_useRotationGestureTs1(current,previous){return{rotationChange:previous?current.rotation-previous.rotation:current.rotation};})" }];
-[tmp2] = items;
-function diffCalculator(rotation, rotation2) {
-  let rotationChange;
-  rotation = rotation.rotation;
-  if (rotation2) {
-    rotationChange = rotation - rotation2.rotation;
-  } else {
-    rotationChange = rotation;
-  }
-  return { rotationChange };
-}
-diffCalculator.__workletHash = 4592561053326;
-diffCalculator.__initData = tmp2;
-const items1 = [{ code: "(function fillInDefaultValues_Pnpm_useRotationGestureTs2(event){event.rotationChange=0;})" }];
-[tmp3] = items1;
-function fillInDefaultValues(arg0) {
-  arg0.rotationChange = 0;
-}
-fillInDefaultValues.__workletHash = 4459233048852;
-fillInDefaultValues.__initData = tmp3;
-const map = new Map();
-let closure_6 = {};
+let closure_2 = {};
 
-export function useRotationGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_6;
+export function useGestureCallbacks(arg0, disableReanimated) {
+  const obj = _mod5499;
+  const memoizedGestureCallbacks = obj.useMemoizedGestureCallbacks(disableReanimated);
+  let reanimatedEventHandler;
+  const obj2 = react;
+  const jsEventHandler = obj2.useGestureEventHandler(arg0, memoizedGestureCallbacks, disableReanimated);
+  if (!disableReanimated.disableReanimated) {
+    let tmp6 = memoizedGestureCallbacks;
+    if (true === disableReanimated.runOnJS) {
+      tmp6 = closure_2;
+    }
+    const Reanimated = tmp(5472).Reanimated;
+    let handler;
+    if (Reanimated != null) {
+      handler = Reanimated.useHandler(tmp6);
+    }
+    const tmpResult = useReanimatedEventHandler;
+    reanimatedEventHandler = tmpResult.useReanimatedEventHandler(arg0, tmp6, handler, disableReanimated.changeEventCalculator, disableReanimated.fillInDefaultValues);
   }
-  const obj = _mod5494;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformRotationProps);
-  const obj2 = _mod5509;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Rotation, clonedAndRemappedConfig);
+  let animatedEventHandler;
+  if (disableReanimated.dispatchesAnimatedEvents) {
+    animatedEventHandler = disableReanimated.onUpdate;
+  }
+  return { jsEventHandler, reanimatedEventHandler, animatedEventHandler };
 }

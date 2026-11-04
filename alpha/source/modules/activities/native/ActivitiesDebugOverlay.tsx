@@ -1,15 +1,15 @@
-// Module ID: 19420
-// Function ID: 19421
+// Module ID: 19524
+// Function ID: 19525
 // Name: ActivitiesDebugOverlay
-// Dependencies: [19, 17, 21, 5141, 5138, 575, 16441, 16442, 1627, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 5138, 575, 16533, 16534, 1627, 5761, 2]
 // Exports: default
 
-// Module 19420 (ActivitiesDebugOverlay)
+// Module 19524 (ActivitiesDebugOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useThermalStateDefault from "useThermalState" /* 16441 */;
-import ThermalStates from "ThermalStates" /* 16442 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useThermalStateDefault from "useThermalState" /* 16533 */;
+import ThermalStates from "ThermalStates" /* 16534 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -64,6 +64,6 @@ export default function ActivitiesDebugOverlay() {
   const obj2 = { paddingTop: rect.top + 16, paddingLeft: rect.left + 16 };
   items[1] = obj2;
   obj3 = { style: tmp.row, children: items1 };
-  items1 = [React3(Text_Text.Text, { variant: "text-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), hasOwnProperty(Text_Text.Text, { variant: "text-md/normal", color: str, children: str2 })];
+  items1 = [React3(Text_Text.Text, { variant: "body-md/normal", color: "text-overlay-light", children: ["thermal state:", " "] }), hasOwnProperty(Text_Text.Text, { variant: "body-md/normal", color: str, children: str2 })];
   return hasOwnProperty(View, obj);
 };

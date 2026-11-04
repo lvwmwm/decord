@@ -97,17 +97,17 @@ class BaseInvoiceRecord extends Record {
       }
     }
   }
-  getInvoicePreviewLineItemForSku(arg0) {
-    let closure_0 = arg0;
+  getInvoicePreviewLineItemForSku(skuId) {
+    let closure_0 = skuId;
     const invoiceItems = this.invoiceItems;
-    let found = invoiceItems.find((skuId) => skuId.skuId === closure_0);
+    let found = invoiceItems.find((skuId) => skuId.skuId === skuId);
     if (found == null) {
       found = null;
     }
     return found;
   }
-  getInvoicePreviewLineItemUnitPriceForSku(arg0) {
-    const invoicePreviewLineItemForSku = this.getInvoicePreviewLineItemForSku(arg0);
+  getInvoicePreviewLineItemUnitPriceForSku(skuId) {
+    const invoicePreviewLineItemForSku = this.getInvoicePreviewLineItemForSku(skuId);
     let amount = null;
     if (null != invoicePreviewLineItemForSku) {
       amount = null;

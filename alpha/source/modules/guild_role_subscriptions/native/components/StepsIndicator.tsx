@@ -1,10 +1,10 @@
-// Module ID: 20139
-// Function ID: 20140
+// Module ID: 20255
+// Function ID: 20256
 // Name: StepsIndicator
-// Dependencies: [19, 17, 5142, 21, 5141, 575, 1652, 5377, 5747, 504, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 1652, 5378, 5761, 504, 2]
 // Exports: default
 
-// Module 20139 (StepsIndicator)
+// Module 20255 (StepsIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -20,8 +20,8 @@ let set;
 let obj2;
 let obj3;
 let tmp2;
-const timing_timing = tmp2(5377);
-const Text_Text = tmp2(5747);
+const timing_timing = tmp2(5378);
+const Text_Text = tmp2(5761);
 function StepNode(isCurrent) {
   let isDone;
   let label;
@@ -100,7 +100,7 @@ function StepNode(isCurrent) {
     const items3 = [tmp.node, animatedStyle, filledNode];
     View = _modDef1652.View;
     if (isCurrent) {
-      let obj2 = { variant: "heading-deprecated-12/semibold", color: "interactive-text-active", children: label };
+      let obj2 = { variant: "body-xs/semibold", color: "interactive-text-active", children: label };
       isCurrent = tmp15(Text_Text.Text, obj2);
     }
     return <View style={items3}>{isCurrent}</View>;

@@ -1,14 +1,14 @@
-// Module ID: 8773
-// Function ID: 8774
+// Module ID: 8790
+// Function ID: 8791
 // Name: TextSpoilerIcon
-// Dependencies: [19, 21, 575, 5836, 8744, 2]
+// Dependencies: [19, 21, 575, 5850, 8761, 2]
 // Exports: TextSpoilerIcon
 
-// Module 8773 (TextSpoilerIcon)
+// Module 8790 (TextSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 8744 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 8761 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

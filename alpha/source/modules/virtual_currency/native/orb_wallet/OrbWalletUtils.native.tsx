@@ -1,16 +1,16 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17138
+// Function ID: 17139
 // Name: OrbWalletUtils
-// Dependencies: [19, 1074, 1387, 7471, 7446, 7731, 5381, 7843, 2]
+// Dependencies: [19, 1074, 1387, 7487, 7462, 7747, 5382, 7859, 2]
 // Exports: navigateToShopFromOrbWallet, useOpenNitroCheckoutFromOrbWallet, useOrbWalletAnalyticsPage
 
-// Module 17046 (OrbWalletUtils)
+// Module 17138 (OrbWalletUtils)
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7731 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7843 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7747 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

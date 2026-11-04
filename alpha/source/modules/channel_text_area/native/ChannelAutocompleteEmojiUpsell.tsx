@@ -1,14 +1,14 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14163
+// Function ID: 14164
 // Name: ChannelAutocompleteEmojiUpsell
-// Dependencies: [19, 17, 1388, 21, 5141, 575, 5837, 1411, 5747, 1113, 2]
+// Dependencies: [19, 17, 1388, 21, 5141, 575, 5851, 1411, 5761, 1113, 2]
 // Exports: default
 
-// Module 14077 (ChannelAutocompleteEmojiUpsell)
+// Module 14163 (ChannelAutocompleteEmojiUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -65,7 +65,7 @@ export default function ChannelAutocompleteEmojiUpsell(results) {
     return hasOwnProperty(tmp2, obj, id.id);
   });
   const result = 24 * substr.length;
-  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "text-sm/medium", children: intl.format(require("intl").t.uEky42, obj3) };
+  let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "body-sm/medium", children: intl.format(require("intl").t.uEky42, obj3) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   obj3 = { count: results.length };

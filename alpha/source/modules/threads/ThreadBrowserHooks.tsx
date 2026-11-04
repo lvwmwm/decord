@@ -1,23 +1,23 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14585
+// Function ID: 14586
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 14506, 4990, 5073, 6962, 6981, 8327, 5075, 1083, 8471, 504, 12, 1380, 11, 8326, 9971, 2]
+// Dependencies: [32, 19, 14586, 4990, 5073, 6977, 6996, 8343, 5075, 1083, 8487, 504, 12, 1380, 11, 8342, 10019, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 14505 (ThreadBrowserHooks)
+// Module 14585 (ThreadBrowserHooks)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1083 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8326 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9971 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 14506 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8342 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 10019 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 14586 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import ReadStateStore from "ReadStateStore" /* 6962 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6981 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8327 */;
+import ReadStateStore from "ReadStateStore" /* 6977 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6996 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8343 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5075 */;
 import size from "module_2" /* 2 */;
 

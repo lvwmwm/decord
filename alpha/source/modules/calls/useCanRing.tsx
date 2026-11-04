@@ -1,13 +1,13 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7637
+// Function ID: 7638
 // Name: useCanRing
-// Dependencies: [502, 6689, 4990, 5083, 1072, 504, 2]
+// Dependencies: [502, 6704, 4990, 5083, 1072, 504, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 7621 (useCanRing)
+// Module 7637 (useCanRing)
 import Constants from "Constants" /* 1072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6689 */;
+import CallStore from "CallStore" /* 6704 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import size from "module_2" /* 2 */;

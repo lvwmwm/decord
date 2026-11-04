@@ -1,13 +1,13 @@
-// Module ID: 18587
-// Function ID: 18588
+// Module ID: 18688
+// Function ID: 18689
 // Name: HomeDrawerTTIFirstContentfulPaint
-// Dependencies: [19, 21, 7778, 13471, 2]
+// Dependencies: [19, 21, 7794, 13555, 2]
 // Exports: default
 
-// Module 18587 (HomeDrawerTTIFirstContentfulPaint)
+// Module 18688 (HomeDrawerTTIFirstContentfulPaint)
 import Fragment from "Fragment" /* 21 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7778 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13471 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7794 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13555 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

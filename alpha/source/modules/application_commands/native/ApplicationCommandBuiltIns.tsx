@@ -1,14 +1,14 @@
-// Module ID: 9904
-// Function ID: 9905
+// Module ID: 9922
+// Function ID: 9923
 // Name: application_commands/ApplicationCommandBuiltIns
-// Dependencies: [5083, 1385, 6155, 2121, 5803, 1113, 5772, 9905, 7609, 7760, 2]
+// Dependencies: [5083, 1385, 6170, 2121, 5817, 1113, 5786, 9923, 7625, 7776, 2]
 
-// Module 9904 (application_commands/ApplicationCommandBuiltIns)
+// Module 9922 (application_commands/ApplicationCommandBuiltIns)
 import Server from "Server" /* 2121 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5803 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6155 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7760 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5817 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6170 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let obj = {
     let intl4;
     channel = channel.channel;
     if (null != channel) {
-      const obj4 = channel(5772);
+      const obj4 = channel(5786);
       const channelName = obj4.computeChannelName(channel, UserStore, RelationshipStore);
       const intl5 = channel(1113).intl;
       const obj2 = { name: channelName };
@@ -69,8 +69,8 @@ let obj = {
             }
           }
       };
-      const openLeaveGroupDMConfirmationAlert = channel(9905).openLeaveGroupDMConfirmationAlert;
-      channel(9905);
+      const openLeaveGroupDMConfirmationAlert = channel(9923).openLeaveGroupDMConfirmationAlert;
+      channel(9923);
       intl3 = tmp5(1113).intl;
       intl4 = tmp5(1113).intl;
       const result = openLeaveGroupDMConfirmationAlert(obj6);

@@ -1,15 +1,15 @@
-// Module ID: 15426
-// Function ID: 15427
+// Module ID: 15513
+// Function ID: 15514
 // Name: PremiumReferralTrialPill
-// Dependencies: [17, 21, 5141, 575, 5747, 1113, 2]
+// Dependencies: [17, 21, 5141, 575, 5761, 1113, 2]
 // Exports: PremiumReferralTrialPill
 
-// Module 15426 (PremiumReferralTrialPill)
+// Module 15513 (PremiumReferralTrialPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export const PremiumReferralTrialPill = (hasExtraMargin) => {
   let str;
   hasExtraMargin = hasExtraMargin.hasExtraMargin;
   const tmp = closure_4();
-  ({ variant: "text-xs/semibold", style: tmp.text, children: str.toUpperCase() });
+  ({ variant: "body-xs/semibold", style: tmp.text, children: str.toUpperCase() });
   const Text = Text_Text.Text;
   const intl = intl2.intl;
   str = intl.string(intl2.t.Y1q7js);

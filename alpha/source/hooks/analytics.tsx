@@ -1,10 +1,10 @@
-// Module ID: 10179
-// Function ID: 10180
+// Module ID: 10227
+// Function ID: 10228
 // Name: analytics
 // Dependencies: [19, 1252, 2]
 // Exports: useAnalyticsContext
 
-// Module 10179 (analytics)
+// Module 10227 (analytics)
 import AnalyticsUtils from "AnalyticsUtils" /* 1252 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

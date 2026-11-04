@@ -1,18 +1,18 @@
-// Module ID: 13346
-// Function ID: 13347
+// Module ID: 13429
+// Function ID: 13430
 // Name: GameOrganizationLinkedServerCard
-// Dependencies: [19, 17, 21, 7083, 5141, 575, 1411, 7103, 6147, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 7098, 5141, 575, 1411, 7118, 6162, 5761, 1113, 2]
 // Exports: default
 
-// Module 13346 (GameOrganizationLinkedServerCard)
+// Module 13429 (GameOrganizationLinkedServerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import Card_Card from "Card/Card" /* 7103 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import Card_Card from "Card/Card" /* 7118 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -77,19 +77,19 @@ export default function GameOrganizationLinkedServerCard(linkedGuild) {
   items[0] = React3(GuildIconDefault, obj5);
   const obj6 = { spacing: nativeDefault.space.PX_4, style: tmp.info, children: items1 };
   const Stack2 = Stack_Stack.Stack;
-  items1 = [React3(Text_Text.Text, { variant: "text-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name }), ];
+  items1 = [React3(Text_Text.Text, { variant: "body-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name }), ];
   const obj7 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_20, style: tmp.autoWidth, children: items4 };
   const Stack3 = Stack_Stack.Stack;
   let tmp7Result = null;
   if (null != presenceCount) {
     const obj8 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_6, style: tmp.autoWidth, children: items3 };
-    const Stack4 = tmp4(6147).Stack;
+    const Stack4 = tmp4(6162).Stack;
     const obj9 = { style: items2 };
     items2 = [, ];
     ({ dot: arr3[0], onlineDot: arr3[1] } = tmp);
     items3 = [React3(View, obj9), ];
-    const obj10 = { variant: "text-md/medium", color: "text-muted", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj11) };
-    const Text = tmp4(5747).Text;
+    const obj10 = { variant: "body-md/medium", color: "text-muted", children: intl.formatToPlainString(intl3.t["LC+S+m"], obj11) };
+    const Text = tmp4(5761).Text;
     intl = tmp4(1113).intl;
     obj11 = { membersOnline: presenceCount };
     items3[1] = React3(Text, obj10);
@@ -99,13 +99,13 @@ export default function GameOrganizationLinkedServerCard(linkedGuild) {
   let tmp7Result2 = null;
   if (null != memberCount) {
     const obj12 = { direction: "horizontal", align: "center", spacing: nativeDefault.space.PX_6, style: tmp.autoWidth, children: items6 };
-    const Stack5 = tmp4(6147).Stack;
+    const Stack5 = tmp4(6162).Stack;
     const obj13 = { style: items5 };
     items5 = [, ];
     ({ dot: arr6[0], membersDot: arr6[1] } = tmp);
     items6 = [React3(View, obj13), ];
-    const obj14 = { variant: "text-md/medium", color: "text-muted", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj15) };
-    const Text2 = tmp4(5747).Text;
+    const obj14 = { variant: "body-md/medium", color: "text-muted", children: intl2.formatToPlainString(intl3.t.zRl6XR, obj15) };
+    const Text2 = tmp4(5761).Text;
     intl2 = tmp4(1113).intl;
     obj15 = { count: memberCount };
     items6[1] = React3(Text2, obj14);

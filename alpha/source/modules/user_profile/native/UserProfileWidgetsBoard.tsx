@@ -1,40 +1,41 @@
-// Module ID: 15079
-// Function ID: 15080
+// Module ID: 15159
+// Function ID: 15160
 // Name: UserProfileWidgetsBoard
-// Dependencies: [32, 19, 17, 8878, 21, 5141, 575, 9444, 9468, 8885, 15080, 5747, 15085, 15086, 2155, 15087, 8152, 9704, 1113, 15089, 12, 7897, 15101, 15096, 7901, 12394, 7902, 15104, 15108, 2]
+// Dependencies: [19, 17, 8895, 7915, 21, 5141, 575, 9462, 9486, 8902, 15160, 5761, 15164, 1113, 15167, 15168, 2155, 15169, 8168, 9722, 15171, 15178, 12, 15179, 7913, 15180, 15181, 12563, 12560, 7917, 12459, 7918, 15184, 15188, 2]
 // Exports: default
 
-// Module 15079 (UserProfileWidgetsBoard)
+// Module 15159 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
+import intl3 from "intl" /* 1113 */;
 import StringUtils from "StringUtils" /* 2155 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7901 */;
-import Constants from "Constants" /* 8878 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9444 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12394 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15085 */;
-import GameCoverImageDefault from "GameCoverImage" /* 15086 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15089 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 15104 */;
-import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7915 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7917 */;
+import Constants from "Constants" /* 8895 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9462 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12459 */;
+import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 15164 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15167 */;
+import GameCoverImageDefault from "GameCoverImage" /* 15168 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15171 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 15184 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-let meta;
+const require = globalThis.__r;
+let dependencyMap, meta, tag;
 
 let c10;
 let c9;
+let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-let metroRequire;
 let obj10;
-let obj11;
-let obj12;
 let obj2;
 let obj3;
 let obj4;
@@ -44,7 +45,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp;
-const UserProfilePersonalWidget = tmp(7902);
+const UserProfilePersonalWidget = tmp(7918);
 function AddGameButton(widgetType) {
   let PlusSmallIcon;
   let intl;
@@ -64,24 +65,24 @@ function AddGameButton(widgetType) {
       return openUserProfileAddGameActionSheetDefault(obj);
     }
   };
-  const IconButton = widgetType(8152).IconButton;
+  const IconButton = widgetType(8168).IconButton;
   obj2 = { size: "sm", color: ref(575).colors.ICON_DEFAULT };
-  PlusSmallIcon = widgetType(9704).PlusSmallIcon;
+  PlusSmallIcon = widgetType(9722).PlusSmallIcon;
   intl = widgetType(1113).intl;
   return closure_8(IconButton, obj);
 }
-function WidgetRenderer(isEditing) {
+function WidgetRenderer(arg0) {
   let cardStyle;
+  let isEditing;
   let tmp3Result;
   let userId;
   let widget;
-  ({ userId, widget, cardStyle } = isEditing);
-  isEditing = isEditing.isEditing;
+  ({ userId, widget, cardStyle, isEditing } = arg0);
   if (widget instanceof UserProfileApplicationWidgetTypes.ApplicationWidget) {
-    const obj2 = { userId, widget, cardStyle };
+    const obj2 = { userId, widget, cardStyle, isEditing };
     tmp3Result = metroImportAll(UserProfileApplicationWidgetCardDefault, obj2);
   } else if (widget instanceof UserProfilePersonalWidget.UserProfilePersonalWidget) {
-    const obj3 = { userId, widget, cardStyle };
+    const obj3 = { userId, widget, cardStyle, isEditing };
     tmp3Result = tmp3(UserProfilePersonalWidgetCardDefault, obj3);
   } else {
     const obj = { userId, widget, cardStyle, isEditing };
@@ -89,14 +90,13 @@ function WidgetRenderer(isEditing) {
   }
   return tmp3Result;
 }
-let _slicedToArray = _slicedToArray_mod;
-let react = react_mod;
-({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
+({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 const UserProfileSections = Constants.UserProfileSections;
+const widgetSupportsTags = UserProfileWidgetConstants.widgetSupportsTags;
 ({ jsx: metroImportAll, jsxs: c9, Fragment: c10 } = Fragment);
-const hitSlop = { top: 8, bottom: 8, left: 8, right: 8 };
+const hitSlop = { top: 10, bottom: 10 };
 let createStyles = createStyles_mod;
-let obj = { board: obj2, favoriteRow: obj3, favoriteDetails: obj4, list: obj5, listRow: obj6, listDetails: obj7, comment: obj8, commentText: { flex: 1 }, grid: obj9, tags: obj10, tag: obj11, viewMore: obj12 };
+let obj = { board: obj2, favoriteRow: obj3, favoriteDetails: obj4, list: obj5, listRow: obj6, listDetails: obj7, comment: obj8, commentText: { flex: 1 }, tags: obj9, tag: obj10, addTag: { paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "dashed", borderColor: nativeDefault.colors.BORDER_SUBTLE } };
 obj2 = { gap: nativeDefault.space.PX_16 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12 };
@@ -105,21 +105,31 @@ obj5 = { gap: nativeDefault.space.PX_16 };
 obj6 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
 obj7 = { flex: 1, gap: nativeDefault.space.PX_8 };
 obj8 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_4 };
-obj9 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_16 };
-obj10 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
-obj11 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
-obj12 = { marginTop: nativeDefault.space.PX_12 };
+obj9 = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
+obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
+({ paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "dashed", borderColor: nativeDefault.colors.BORDER_SUBTLE });
 let closure_12 = createStyles(obj);
-let closure_13 = react.memo(function WidgetTags(tags) {
-  tags = tags.tags;
+let closure_13 = react.memo(function WidgetTags(gameName) {
+  let Text;
+  let editableTagsWidgetType;
+  let gameId;
+  let intl;
+  let intl2;
+  let items;
+  let obj3;
+  let obj4;
+  let tags;
+  let tmp3Result;
+  ({ tags, gameId: require, editableTagsWidgetType } = gameName);
+  gameName = gameName.gameName;
   const tmp = closure_12();
-  let closure_0 = tmp;
+  dependencyMap = tmp;
   if (tags == null) {
     tags = [];
   }
   const flatMapResult = tags.flatMap((tag) => {
     let items1;
-    const obj = closure_0(dependencyMap[10]);
+    const obj = require("UserProfileGameWidgetConstants");
     const widgetGameTagMetadata = obj.getWidgetGameTagMetadata(tag);
     if (null != widgetGameTagMetadata) {
       const items = [{ tag, meta: widgetGameTagMetadata }];
@@ -130,31 +140,57 @@ let closure_13 = react.memo(function WidgetTags(tags) {
     }
     return items1;
   });
-  let tmp2 = null;
   if (0 !== flatMapResult.length) {
-    let obj = {
-      style: tmp.tags,
-      children: flatMapResult.map((meta) => {
+    let obj = { style: tmp.tags, children: items };
+    items = [
+      flatMapResult.map((meta) => {
           let items;
           meta = meta.meta;
-          const tag = meta.tag;
-          const obj = { style: closure_0.tag, children: items };
+          const obj = { style: tag.tag, children: items };
+          tag = meta.tag;
           items = [, ];
           const obj2 = { size: "xs", color: nativeDefault.colors.TEXT_MUTED };
           items[0] = metroImportAll(meta.icon, obj2);
-          const obj3 = { variant: "text-xs/medium", color: "text-muted", children: meta.getText() };
+          const obj3 = { variant: "body-xs/medium", color: "text-muted", children: meta.getText() };
           const Text = Text_Text.Text;
           items[1] = metroImportAll(Text, obj3);
-          return React4(metroRequire, obj, tag);
-        })
-    };
-    tmp2 = closure_8(closure_6, obj);
+          return React4(hasOwnProperty, obj, tag);
+        }),
+
+    ];
+    let tmp5 = null != editableTagsWidgetType;
+    const tmp3 = closure_9;
+    const tmp4 = closure_5;
+    if (tmp5) {
+      let obj2 = {
+        style: tmp.addTag,
+        onPress() {
+              const obj = { widgetType: editableTagsWidgetType, gameId: require };
+              return openUserProfileAddTagActionSheetDefault(obj);
+            },
+        accessibilityRole: "button",
+        hitSlop,
+        accessibilityLabel: intl.formatToPlainString(intl3.t.uLUHj4, obj3),
+        children: closure_8(Text, obj4)
+      };
+      intl = intl3.intl;
+      obj3 = { gameName };
+      obj4 = { variant: "body-xs/medium", color: "text-muted", children: intl2.string(intl3.t.fZSejy) };
+      Text = Text_Text.Text;
+      intl2 = intl3.intl;
+      tmp5 = closure_8(closure_4, obj2);
+    }
+    items[1] = tmp5;
+    tmp3Result = tmp3(tmp4, obj);
+  } else {
+    tmp3Result = null;
   }
-  return tmp2;
+  return tmp3Result;
 });
 let closure_14 = react.memo(function FavoriteGameItem(game) {
   let coverWidth;
   let disableInteraction;
+  let editableTagsWidgetType;
   let items;
   let items1;
   let items2;
@@ -163,7 +199,7 @@ let closure_14 = react.memo(function FavoriteGameItem(game) {
   let userId;
   game = game.game;
   let closure_0;
-  ({ userId, coverWidth, disableInteraction } = game);
+  ({ userId, coverWidth, disableInteraction, editableTagsWidgetType } = game);
   let tmp = closure_12();
   const tmp4 = useGameNameAndCoverImageDefault(game.gameId);
   const gameName = tmp4.gameName;
@@ -191,7 +227,7 @@ let closure_14 = react.memo(function FavoriteGameItem(game) {
   obj4 = { width: coverWidth };
   tmp2Result = GameCoverImageDefault;
   const merged = Object.assign(tmp4);
-  items = [metroImportAll(hasOwnProperty, obj3), ];
+  items = [metroImportAll(React3, obj3), ];
   const obj5 = { style: tmp.favoriteDetails, children: items1 };
   items1 = [, , ];
   const obj6 = {
@@ -205,9 +241,9 @@ let closure_14 = react.memo(function FavoriteGameItem(game) {
     disabled: null == tmp5Result,
     accessibilityRole: "button",
     accessibilityLabel: gameName,
-    children: metroImportAll(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
+    children: metroImportAll(Text_Text.Text, { variant: "body-md/semibold", color: "text-default", lineClamp: 2, children: gameName })
   };
-  items1[0] = metroImportAll(hasOwnProperty, obj6);
+  items1[0] = metroImportAll(React3, obj6);
   let trimmed;
   const isNullOrEmpty = StringUtils.isNullOrEmpty;
   StringUtils;
@@ -219,21 +255,22 @@ let closure_14 = react.memo(function FavoriteGameItem(game) {
   if (tmp8Result) {
     const obj7 = { style: tmp.comment, children: items2 };
     const obj8 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const QuoteIcon = tmp6(15087).QuoteIcon;
+    const QuoteIcon = tmp6(15169).QuoteIcon;
     items2 = [metroImportAll(QuoteIcon, obj8), ];
-    const obj9 = { variant: "text-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
+    const obj9 = { variant: "body-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
     items2[1] = metroImportAll(Text_Text.Text, obj9);
     tmp8Result = tmp8(tmp9, obj7);
   }
   items1[1] = tmp8Result;
-  const obj10 = { tags: game.tags };
+  const obj10 = { tags: game.tags, gameId: game.gameId, gameName, editableTagsWidgetType };
   items1[2] = metroImportAll(closure_13, obj10);
-  items[1] = React4(metroRequire, obj5);
-  return React4(metroRequire, obj2);
+  items[1] = React4(hasOwnProperty, obj5);
+  return React4(hasOwnProperty, obj2);
 });
 let closure_15 = react.memo(function GameListRow(game) {
   let coverWidth;
   let disableInteraction;
+  let editableTagsWidgetType;
   let items;
   let items1;
   let obj4;
@@ -241,7 +278,7 @@ let closure_15 = react.memo(function GameListRow(game) {
   let userId;
   game = game.game;
   let closure_0;
-  ({ userId, coverWidth, disableInteraction } = game);
+  ({ userId, coverWidth, disableInteraction, editableTagsWidgetType } = game);
   let tmp = closure_12();
   const tmp4 = useGameNameAndCoverImageDefault(game.gameId);
   const gameName = tmp4.gameName;
@@ -269,7 +306,7 @@ let closure_15 = react.memo(function GameListRow(game) {
   obj4 = { width: coverWidth };
   tmp2Result = GameCoverImageDefault;
   const merged = Object.assign(tmp4);
-  items = [metroImportAll(hasOwnProperty, obj3), ];
+  items = [metroImportAll(React3, obj3), ];
   const obj5 = { style: tmp.listDetails, children: items1 };
   items1 = [, ];
   const obj6 = {
@@ -283,13 +320,13 @@ let closure_15 = react.memo(function GameListRow(game) {
     disabled: null == tmp5Result,
     accessibilityRole: "button",
     accessibilityLabel: gameName,
-    children: metroImportAll(Text_Text.Text, { variant: "text-md/medium", color: "text-default", lineClamp: 2, children: gameName })
+    children: metroImportAll(Text_Text.Text, { variant: "body-md/medium", color: "text-default", lineClamp: 2, children: gameName })
   };
-  items1[0] = metroImportAll(hasOwnProperty, obj6);
-  const obj7 = { tags: game.tags };
+  items1[0] = metroImportAll(React3, obj6);
+  const obj7 = { tags: game.tags, gameId: game.gameId, gameName, editableTagsWidgetType };
   items1[1] = metroImportAll(closure_13, obj7);
-  items[1] = React4(metroRequire, obj5);
-  return React4(metroRequire, obj2);
+  items[1] = React4(hasOwnProperty, obj5);
+  return React4(hasOwnProperty, obj2);
 });
 let closure_16 = react.memo(function GameGridCover(game) {
   let coverWidth;
@@ -326,26 +363,22 @@ let closure_16 = react.memo(function GameGridCover(game) {
   obj3 = { width: coverWidth };
   tmpResult = GameCoverImageDefault;
   const merged = Object.assign(tmp3);
-  return metroImportAll(hasOwnProperty, obj2);
+  return metroImportAll(React3, obj2);
 });
 const memoResult = react.memo(function WidgetSection(userId) {
-  let Text;
-  let Text2;
-  let _undefined;
-  let _undefined2;
-  let c3;
-  let c4;
+  let columns;
   let coverWidth;
+  let expanded;
+  let hiddenCount;
+  let isMeasured;
+  let items1;
   let mapped;
-  let mapped1;
-  let obj10;
-  let obj14;
-  let obj6;
-  let tmp12Result;
-  let tmp3;
-  let tmp35;
-  let tmp5;
-  let tmp9Result;
+  let onLayout;
+  let ref;
+  let tmp13Result;
+  let tmp22;
+  let tmp8Result;
+  let toggleExpanded;
   userId = userId.userId;
   const widget = userId.widget;
   const disableInteraction = userId.disableInteraction;
@@ -354,141 +387,83 @@ const memoResult = react.memo(function WidgetSection(userId) {
   if (flag === undefined) {
     flag = false;
   }
-  _slicedToArray = undefined;
-  react = undefined;
+  coverWidth = undefined;
   const tmp = closure_12();
-  [tmp3, c3] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
-  [tmp5, c4] = react.useState(0);
-  _slicedToArray(react.useState(0), 2);
-  const result = (tmp5 - 2 * widget(disableInteraction[6]).space.PX_16) / 3;
-  let c5 = result;
+  const tmp4 = widget(disableInteraction[21])();
+  ({ isMeasured, coverWidth } = tmp4);
   const items = [widget.games];
-  const memo = react.useMemo(() => {
+  ({ ref, onLayout, columns } = tmp4);
+  const memo = coverWidth.useMemo(() => {
     const obj = _modDef12;
     return obj.uniqBy(widget.games, "gameId");
   }, items);
+  let type1;
+  if (flag) {
+    if (widgetSupportsTags(widget.type)) {
+      type1 = widget.type;
+    }
+  }
+  let obj = userId(tmp3[23]);
+  const expandableItems = obj.useExpandableItems(memo, 2);
+  const visibleItems = expandableItems.visibleItems;
   const type = widget.type;
-  const tmp6 = widget;
-  if (userId(disableInteraction[21]).WidgetType.FAVORITE_GAMES === type) {
-    let tmp30 = tmp5 > 0;
-    if (tmp30) {
-      const obj2 = { userId, game: memo[0], coverWidth: result, disableInteraction };
-      tmp30 = closure_8(closure_14, obj2);
+  ({ hiddenCount, expanded, toggleExpanded } = expandableItems);
+  if (userId(disableInteraction[24]).WidgetType.FAVORITE_GAMES === type) {
+    if (isMeasured) {
+      const obj2 = { userId, game: memo[0], coverWidth, disableInteraction, editableTagsWidgetType: type1 };
+      isMeasured = closure_8(closure_14, obj2);
     }
-    tmp12Result = tmp30;
-  } else if (userId(disableInteraction[21]).WidgetType.CURRENT_GAMES === type) {
-    let tmp24Result = memo.length > 2;
-    let substr = memo;
-    if (!tmp3) {
-      substr = memo.slice(0, 2);
-    }
+    tmp13Result = isMeasured;
+  } else if (userId(disableInteraction[24]).WidgetType.CURRENT_GAMES === type) {
     const obj3 = { style: tmp.list, children: mapped };
-    mapped = tmp5 > 0;
-    const tmp22 = closure_9;
-    const tmp23 = closure_10;
-    const tmp25 = closure_6;
-    if (mapped) {
-      mapped = substr.map((game) => {
-        const obj = { userId, game, coverWidth, disableInteraction };
+    mapped = isMeasured;
+    const tmp13 = closure_9;
+    const tmp14 = closure_10;
+    const tmp16 = closure_5;
+    if (isMeasured) {
+      mapped = visibleItems.map((game) => {
+        const obj = { userId, game, coverWidth, disableInteraction, editableTagsWidgetType: type1 };
         return metroImportAll(closure_15, obj, game.gameId);
       });
     }
-    const items1 = [closure_8(tmp25, obj3), ];
-    if (tmp24Result) {
-      let stringResult;
-      const obj4 = {
-        style: tmp.viewMore,
-        hitSlop,
-        onPress() {
-              return _undefined((arg0) => !arg0);
-            },
-        accessibilityRole: "button",
-        children: closure_8(Text2, obj6)
-      };
-      Text2 = tmp9(tmp7[11]).Text;
-      const intl2 = tmp9(tmp7[18]).intl;
-      const tmp27 = c5;
-      if (tmp3) {
-        stringResult = intl2.string(tmp9(tmp7[18]).t["6MwJo/"]);
-      } else {
-        const obj5 = { numberOfItems: memo.length - 2 };
-        stringResult = intl2.formatToPlainString(tmp9(tmp7[18]).t.zr0Y5R, obj5);
-      }
-      obj6 = { variant: "text-sm/medium", color: "text-muted", children: stringResult };
-      tmp24Result = tmp24(tmp27, obj4);
-    }
-    const obj7 = { children: items1 };
-    items1[1] = tmp24Result;
-    tmp12Result = tmp22(tmp23, obj7);
+    const obj4 = { children: items1 };
+    items1 = [closure_8(tmp16, obj3), ];
+    const obj5 = { expanded, hiddenCount, onPress: toggleExpanded };
+    items1[1] = closure_8(userId(disableInteraction[23]).WidgetViewMoreButton, obj5);
+    tmp13Result = tmp13(tmp14, obj4);
   } else {
-    if (userId(disableInteraction[21]).WidgetType.WANT_TO_PLAY_GAMES !== type) {
-      if (userId(disableInteraction[21]).WidgetType.PLAYED_GAMES !== type) {
+    if (userId(disableInteraction[24]).WidgetType.WANT_TO_PLAY_GAMES !== type) {
+      if (userId(disableInteraction[24]).WidgetType.PLAYED_GAMES !== type) {
         return null;
       }
     }
-    let tmp14Result = memo.length > 6;
-    let substr1 = memo;
-    if (!tmp3) {
-      substr1 = memo.slice(0, 6);
-    }
-    let obj = { style: tmp.grid, children: mapped1 };
-    mapped1 = tmp5 > 0;
-    const tmp12 = closure_9;
-    const tmp13 = closure_10;
-    const tmp15 = closure_6;
-    if (mapped1) {
-      mapped1 = substr1.map((game) => {
-        const obj = { userId, game, coverWidth, disableInteraction };
-        return metroImportAll(closure_16, obj, game.gameId);
-      });
-    }
-    const items2 = [closure_8(tmp15, obj), ];
-    if (tmp14Result) {
-      let stringResult1;
-      const obj8 = {
-        style: tmp.viewMore,
-        hitSlop,
-        onPress() {
-              return _undefined((arg0) => !arg0);
-            },
-        accessibilityRole: "button",
-        children: closure_8(Text, obj10)
+    tmp13Result = isMeasured;
+    if (tmp13Result) {
+      const obj6 = {
+        games: memo,
+        columns,
+        renderCover(game) {
+              const obj = { userId, game, coverWidth, disableInteraction };
+              return metroImportAll(closure_16, obj, game.gameId);
+            }
       };
-      Text = tmp9(tmp7[11]).Text;
-      const intl = tmp9(tmp7[18]).intl;
-      const tmp17 = c5;
-      if (tmp3) {
-        stringResult1 = intl.string(tmp9(tmp7[18]).t["6MwJo/"]);
-      } else {
-        const obj9 = { numberOfItems: memo.length - 6 };
-        stringResult1 = intl.formatToPlainString(tmp9(tmp7[18]).t.zr0Y5R, obj9);
-      }
-      obj10 = { variant: "text-sm/medium", color: "text-muted", children: stringResult1 };
-      tmp14Result = tmp14(tmp17, obj8);
+      tmp13Result = closure_8(tmp2(tmp3[25]), obj6);
     }
-    const obj11 = { children: items2 };
-    items2[1] = tmp14Result;
-    tmp12Result = tmp12(tmp13, obj11);
   }
-  const obj12 = { userId, widget, style: cardStyle, disableInteraction, actionButtons: tmp35, children: closure_8(closure_6, obj14) };
-  tmp35 = undefined;
-  const tmp6Result = tmp6(disableInteraction[22]);
+  const obj7 = { userId, widget, style: cardStyle, disableInteraction, actionButtons: tmp22, children: closure_8(closure_5, { ref, onLayout, children: tmp13Result }) };
+  tmp22 = undefined;
+  const tmp2Result = widget(disableInteraction[26]);
   if (flag) {
-    const obj13 = { widgetType: widget.type, disabled: tmp9Result.isGameLimitReached(widget) };
-    tmp9Result = userId(disableInteraction[23]);
-    const items3 = [closure_8(AddGameButton, obj13, "add-game")];
-    tmp35 = items3;
+    const obj8 = { widgetType: widget.type, disabled: tmp8Result.isGameLimitReached(widget) };
+    tmp8Result = userId(disableInteraction[27]);
+    const items2 = [closure_8(AddGameButton, obj8, "add-game"), ];
+    const obj9 = { widget };
+    items2[1] = closure_8(widget(disableInteraction[28]), obj9, "edit-options");
+    tmp22 = items2;
   }
-  obj14 = {
-    onLayout(nativeEvent) {
-      return _undefined2(nativeEvent.nativeEvent.layout.width);
-    },
-    children: tmp12Result
-  };
-  return closure_8(tmp6Result, obj12);
+  return closure_8(tmp2Result, obj7);
 });
-let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoard.tsx");
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetsBoard.tsx");
 
 export default function UserProfileWidgetsBoard(userId) {
   let isEditing;
@@ -499,10 +474,10 @@ export default function UserProfileWidgetsBoard(userId) {
   }
   ({ cardStyle: importDefault, isEditing: dependencyMap } = userId);
   let tmp = closure_12();
-  let obj = userId(15108);
+  let obj = userId(15188);
   const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId);
   const cardStyle = tmp2;
-  const obj2 = userId(8885);
+  const obj2 = userId(8902);
   const trackUserProfileAction = obj2.useUserProfileAnalyticsContext().trackUserProfileAction;
   let closure_3 = react.useRef(false);
   const items = [flag, tmp2, trackUserProfileAction];
@@ -528,7 +503,7 @@ export default function UserProfileWidgetsBoard(userId) {
           return metroImportAll(WidgetRenderer, obj, widget.getUniqueKey());
         })
     };
-    tmp4 = closure_8(closure_6, obj3);
+    tmp4 = closure_8(closure_5, obj3);
   }
   return tmp4;
 };

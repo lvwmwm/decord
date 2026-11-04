@@ -1,23 +1,23 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17441
+// Function ID: 17442
 // Name: ManageSubscriptionCard
-// Dependencies: [32, 5, 19, 17, 1072, 4997, 21, 5141, 575, 1113, 5747, 7106, 7083, 11552, 17351, 6079, 17352, 2123, 10041, 7446, 6655, 7212, 1187, 17354, 5855, 5831, 7186, 7101, 5829, 2176, 1099, 10108, 17355, 1499, 7103, 2]
+// Dependencies: [32, 5, 19, 17, 1072, 4997, 21, 5141, 575, 1113, 5761, 7121, 7098, 11602, 17442, 6094, 17443, 2123, 10089, 7462, 6670, 7227, 1187, 17445, 5869, 5845, 7201, 7116, 5843, 2176, 1099, 10156, 17446, 1499, 7118, 2]
 // Exports: default
 
-// Module 17350 (ManageSubscriptionCard)
+// Module 17441 (ManageSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import intl9 from "intl" /* 1113 */;
 import PremiumUtils from "PremiumUtils" /* 2176 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
-import GuildIconDefault from "GuildIcon" /* 7083 */;
-import Pressables from "Pressables" /* 7106 */;
-import FormSeparatorDefault from "FormSeparator" /* 17351 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17355 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
+import GuildIconDefault from "GuildIcon" /* 7098 */;
+import Pressables from "Pressables" /* 7121 */;
+import FormSeparatorDefault from "FormSeparator" /* 17442 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 17446 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -84,7 +84,7 @@ function HeaderStatus(arg0) {
     if (flag) {
       str2 = "text-overlay-light";
     }
-    obj2 = { variant: "text-xs/semibold", color: str2, children: str };
+    obj2 = { variant: "body-xs/semibold", color: str2, children: str };
     tmp9Result = tmp9(tmp10, obj);
   }
   return tmp9Result;
@@ -109,7 +109,7 @@ function Header(guild) {
   items1 = [unpackModuleId(GuildIconDefault, { guild }), , ];
   const obj3 = { style: tmp.headerTitlesContainer, children: items2 };
   items2 = [, ];
-  const obj4 = { ellipsizeMode: "tail", lineClamp: 2, variant: "text-md/semibold", color: "interactive-text-active", children: listing.name };
+  const obj4 = { ellipsizeMode: "tail", lineClamp: 2, variant: "body-md/semibold", color: "interactive-text-active", children: listing.name };
   items2[0] = unpackModuleId(Text_Text.Text, obj4);
   let name;
   const Text = Text_Text.Text;
@@ -120,10 +120,10 @@ function Header(guild) {
     const intl = tmp3(1113).intl;
     name = intl.string(tmp3(1113).t["He+cmd"]);
   }
-  items2[1] = unpackModuleId(Text, { variant: "text-sm/medium", color: "interactive-text-default", children: name });
+  items2[1] = unpackModuleId(Text, { variant: "body-sm/medium", color: "interactive-text-default", children: name });
   items1[1] = authStore2(View, obj3);
   let expandIconExpanded;
-  const ChevronSmallDownIcon = tmp3(11552).ChevronSmallDownIcon;
+  const ChevronSmallDownIcon = tmp3(11602).ChevronSmallDownIcon;
   if (expanded) {
     expandIconExpanded = tmp.expandIconExpanded;
   }
@@ -329,7 +329,7 @@ function CardBody(isTrial) {
     let obj5 = { size: "xs", color: tmp2(tmp3[8]).unsafe_rawColors.YELLOW_300 };
     const CircleErrorIcon = isTrial(tmp3[21]).CircleErrorIcon;
     items = [closure_11(CircleErrorIcon, obj5), ];
-    let obj6 = { variant: "text-sm/medium", color: "interactive-text-active", children: intl.string(isTrial(tmp3[9]).t.eaqlau) };
+    let obj6 = { variant: "body-sm/medium", color: "interactive-text-active", children: intl.string(isTrial(tmp3[9]).t.eaqlau) };
     const Text = isTrial(tmp3[10]).Text;
     intl = isTrial(tmp3[9]).intl;
     items[1] = closure_11(Text, obj6);
@@ -469,7 +469,7 @@ export default function ManageSubscriptionCard(subscription) {
         const obj2 = { variant: "primary", style: tmp.container, children: items };
         const obj4 = { expanded, guild, isCancelled: null, isTrial: null, isPastDue: null, listing, onToggleExpanded: handleToggleExpanded };
         ({ isCancelled: obj3.isCancelled, isTrial: obj3.isTrial, isPastDue: obj3.isPastDue } = subscriptionInfo);
-        const Card = tmp4(7103).Card;
+        const Card = tmp4(7118).Card;
         items = [closure_11(Header, obj4), ];
         if (expanded) {
           const items1 = [closure_11(Separator, {}), ];

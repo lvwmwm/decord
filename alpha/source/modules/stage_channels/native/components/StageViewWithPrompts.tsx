@@ -1,16 +1,16 @@
-// Module ID: 11991
-// Function ID: 11992
+// Module ID: 12050
+// Function ID: 12051
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 21, 11992, 5141, 575, 1627, 11993, 12006, 5747, 2]
+// Dependencies: [19, 17, 21, 12051, 5141, 575, 1627, 12052, 12065, 5761, 2]
 // Exports: default
 
-// Module 11991 (StageViewWithPrompts)
+// Module 12050 (StageViewWithPrompts)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import StageChannelHeightHooks from "StageChannelHeightHooks" /* 11992 */;
-import FocusedControls from "FocusedControls" /* 11993 */;
-import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 12006 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import StageChannelHeightHooks from "StageChannelHeightHooks" /* 12051 */;
+import FocusedControls from "FocusedControls" /* 12052 */;
+import MicrophoneSpotIllustration from "MicrophoneSpotIllustration" /* 12065 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -51,7 +51,7 @@ export default function StageViewWithPrompts(arg0) {
   items1[0] = hasOwnProperty(React3, obj3);
   const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "text-overlay-light", children: title };
   items1[1] = hasOwnProperty(Text_Text.Text, obj4);
-  const obj5 = { style: tmp.body, variant: "text-sm/medium", color: "text-overlay-light", children: body };
+  const obj5 = { style: tmp.body, variant: "body-sm/medium", color: "text-overlay-light", children: body };
   items1[2] = hasOwnProperty(Text_Text.Text, obj5);
   const obj6 = { style: tmp.prompts, children };
   items1[3] = hasOwnProperty(React3, obj6);

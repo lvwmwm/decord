@@ -1,21 +1,21 @@
-// Module ID: 18933
-// Function ID: 18934
+// Module ID: 19036
+// Function ID: 19037
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 5142, 11766, 21, 575, 5141, 1627, 12211, 5719, 1652, 671, 5757, 5710, 504, 11767, 11764, 11771, 18934, 5754, 1113, 8643, 5747, 2]
+// Dependencies: [32, 19, 17, 5142, 11822, 21, 575, 5141, 1627, 12270, 5732, 1652, 671, 5771, 5723, 504, 11823, 11820, 11827, 19037, 5768, 1113, 8660, 5761, 2]
 // Exports: default
 
-// Module 18933 (GroupDMNitroUpsellBanner)
+// Module 19036 (GroupDMNitroUpsellBanner)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl4 from "intl" /* 1113 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8643 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11764 */;
-import GroupDMConstants from "GroupDMConstants" /* 11766 */;
-import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11767 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11771 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 18934 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8660 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11820 */;
+import GroupDMConstants from "GroupDMConstants" /* 11822 */;
+import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 11823 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 11827 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 19037 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -132,7 +132,7 @@ function FloatingBanner(visible) {
     const result2 = set(withSpring(num2, closure_16));
     let num3 = 0;
     set2 = sharedValue1.set;
-    const withSpring2 = tmp8(5757).withSpring;
+    const withSpring2 = tmp8(5771).withSpring;
     spring_spring;
     const tmp11 = closure_16;
     if (!visible) {
@@ -265,16 +265,16 @@ export default function GroupDMNitroUpsellBanner(wrapperStyle) {
   }
   const obj6 = { showLeadingIcon: false, wrapperStyle: tmp13, trailing: React4(Button, obj7), children: items2 };
   obj7 = { text: string(tmp2Result.getGroupDMNitroCapCTAMessage(groupDMNitroAudience)), size: "sm", variant: "experimental_premium-primary", shiny: tmp9 && !stateFromStores, icon: AssetRegistryDefault, onPress: tmp7Result };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   const intl = tmp2(1113).intl;
   string = intl.string;
   tmp2Result = GroupDMNitroUpsellModel;
-  const obj8 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.KCD0Hp) };
-  const Text = tmp2(5747).Text;
+  const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.KCD0Hp) };
+  const Text = tmp2(5761).Text;
   intl2 = tmp2(1113).intl;
   items2 = [React4(Text, obj8), ];
-  const obj9 = { variant: "text-xs/medium", color: "mobile-text-heading-primary", children: intl3.formatToPlainString(intl4.t["8o8Zk5"], obj10) };
-  const Text2 = tmp2(5747).Text;
+  const obj9 = { variant: "body-xs/medium", color: "mobile-text-heading-primary", children: intl3.formatToPlainString(intl4.t["8o8Zk5"], obj10) };
+  const Text2 = tmp2(5761).Text;
   intl3 = tmp2(1113).intl;
   obj10 = { number };
   items2[1] = React4(Text2, obj9);

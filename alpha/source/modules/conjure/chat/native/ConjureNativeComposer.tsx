@@ -1,44 +1,44 @@
-// Module ID: 12931
-// Function ID: 12932
+// Module ID: 13013
+// Function ID: 13014
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 5142, 10995, 12720, 10657, 21, 575, 5141, 1113, 3995, 5719, 10656, 8150, 12932, 11107, 12721, 1377, 12934, 12933, 12722, 12281, 12773, 12936, 12254, 12283, 504, 12900, 11236, 12939, 10888, 11237, 12361, 11307, 5381, 12300, 12941, 12802, 12942, 5849, 12944, 10005, 10958, 12947, 5207, 12953, 5747, 2]
+// Dependencies: [5, 32, 19, 17, 5142, 11043, 12801, 10705, 21, 575, 5141, 1113, 3995, 5732, 10704, 8166, 13014, 11155, 12802, 1377, 13016, 13015, 12803, 12342, 12854, 13018, 12315, 12344, 504, 12981, 11286, 13021, 10936, 11287, 12426, 11357, 5382, 12365, 13023, 12883, 13024, 5863, 13026, 10053, 11006, 13029, 5207, 13035, 5761, 2]
 // Exports: default
 
-// Module 12931 (ConjureNativeComposer)
+// Module 13013 (ConjureNativeComposer)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import useToken from "useToken" /* 5719 */;
-import SendMessageIcon from "SendMessageIcon" /* 5849 */;
-import ImageCarousel from "ImageCarousel" /* 10656 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 10657 */;
-import MusicIcon from "MusicIcon" /* 10888 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 10958 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11307 */;
-import conjureStoredAttachments2 from "conjureStoredAttachments" /* 12281 */;
-import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 12300 */;
-import FileUpIcon from "FileUpIcon" /* 12361 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12721 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12722 */;
-import conjureMentions from "conjureMentions" /* 12773 */;
-import StopIcon from "StopIcon" /* 12802 */;
-import conjurePickedFiles from "conjurePickedFiles" /* 12900 */;
-import conjureComposerPills from "conjureComposerPills" /* 12932 */;
-import ChatInputParser from "ChatInputParser" /* 12933 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12934 */;
-import ImagesIcon from "ImagesIcon" /* 12939 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12941 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 12942 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 12944 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import useToken from "useToken" /* 5732 */;
+import SendMessageIcon from "SendMessageIcon" /* 5863 */;
+import ImageCarousel from "ImageCarousel" /* 10704 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 10705 */;
+import MusicIcon from "MusicIcon" /* 10936 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 11006 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11357 */;
+import conjureStoredAttachments2 from "conjureStoredAttachments" /* 12342 */;
+import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 12365 */;
+import FileUpIcon from "FileUpIcon" /* 12426 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12802 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12803 */;
+import conjureMentions from "conjureMentions" /* 12854 */;
+import StopIcon from "StopIcon" /* 12883 */;
+import conjurePickedFiles from "conjurePickedFiles" /* 12981 */;
+import conjureComposerPills from "conjureComposerPills" /* 13014 */;
+import ChatInputParser from "ChatInputParser" /* 13015 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 13016 */;
+import ImagesIcon from "ImagesIcon" /* 13021 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13023 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 13024 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 10995 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12720 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 11043 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12801 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -120,7 +120,7 @@ function ConjureNativeDraftTile(draft) {
     if ("error" === draft.status) {
       const obj19 = { style: tmp.draftOverlay, children: authStore2(WarningIcon, obj20) };
       obj20 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-      WarningIcon = tmp2(8150).WarningIcon;
+      WarningIcon = tmp2(8166).WarningIcon;
       tmp7Result = tmp7(metroImportAll, obj19);
     }
   }
@@ -1107,7 +1107,7 @@ export default function ConjureNativeComposer(projectId) {
   items33 = [closure_12(tmp36(tmp6[47]), { projectId, suggestions: memo2, onSelect: callback5 }), , , , ];
   let tmp76Result7 = null;
   if (null != tmp26) {
-    const obj11 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp26 };
+    const obj11 = { variant: "body-xs/normal", color: "text-feedback-critical", children: tmp26 };
     tmp76Result7 = tmp76(tmp5(tmp6[48]).Text, obj11);
   }
   items33[1] = tmp76Result7;
@@ -1116,7 +1116,7 @@ export default function ConjureNativeComposer(projectId) {
     let obj3;
     let tmp = null;
     if (null != errorText.errorText) {
-      const obj = { variant: "text-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: intl.formatToPlainString(running(onSend[12]).U2WbGx, obj3) };
+      const obj = { variant: "body-xs/normal", color: "text-feedback-critical", lineClamp: 2, children: intl.formatToPlainString(running(onSend[12]).U2WbGx, obj3) };
       const Text = projectId(onSend[48]).Text;
       intl = projectId(onSend[11]).intl;
       obj3 = { name: null, error: null };

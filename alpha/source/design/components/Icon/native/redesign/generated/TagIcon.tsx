@@ -1,14 +1,14 @@
-// Module ID: 9698
-// Function ID: 9699
+// Module ID: 9716
+// Function ID: 9717
 // Name: TagIcon
-// Dependencies: [19, 21, 575, 5836, 9699, 2]
+// Dependencies: [19, 21, 575, 5850, 9717, 2]
 // Exports: TagIcon
 
-// Module 9698 (TagIcon)
+// Module 9716 (TagIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5836 */;
-import AssetRegistry from "AssetRegistry" /* 9699 */;
+import BaseIconImage2 from "BaseIconImage" /* 5850 */;
+import AssetRegistry from "AssetRegistry" /* 9717 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

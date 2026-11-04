@@ -1,31 +1,31 @@
-// Module ID: 12680
-// Function ID: 12681
+// Module ID: 12761
+// Function ID: 12762
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 5142, 6916, 4990, 6181, 1385, 21, 5141, 575, 504, 1411, 7420, 1113, 7106, 5747, 8527, 5426, 12681, 7446, 12687, 10224, 5738, 6161, 5195, 7101, 1187, 9329, 8874, 1652, 5377, 7414, 5376, 5837, 5148, 12688, 12689, 7471, 5381, 5395, 2]
+// Dependencies: [32, 5, 19, 17, 5142, 6931, 4990, 6196, 1385, 21, 5141, 575, 504, 1411, 7436, 1113, 7121, 5761, 8544, 5428, 12762, 7462, 12768, 10272, 5752, 6176, 5195, 7116, 1187, 9346, 8891, 1652, 5378, 7430, 5377, 5851, 5148, 12769, 12770, 7487, 5382, 5396, 2]
 // Exports: default
 
-// Module 12680 (PollVotesActionSheet)
+// Module 12761 (PollVotesActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import timing_timing from "timing/timing" /* 5377 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import Pressables from "Pressables" /* 7106 */;
-import EmojiDefault from "Emoji" /* 7420 */;
-import PollsUtils from "PollsUtils" /* 8527 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 12681 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import timing_timing from "timing/timing" /* 5378 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import Pressables from "Pressables" /* 7121 */;
+import EmojiDefault from "Emoji" /* 7436 */;
+import PollsUtils from "PollsUtils" /* 8544 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 12762 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import EmojiStore from "EmojiStore" /* 6916 */;
+import EmojiStore from "EmojiStore" /* 6931 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -116,12 +116,12 @@ function PollAnswerButton(answer) {
   items2 = [tmp8, , ];
   let tmp11 = null;
   if (null != answer.poll_media.text) {
-    const obj4 = { style: tmp.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp11 = map1(tmp3(5747).Text, obj4);
+    const obj4 = { style: tmp.answerText, variant: "body-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
+    tmp11 = map1(tmp3(5761).Text, obj4);
   }
   items2[1] = tmp11;
-  const obj5 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: items3 };
-  const Text = tmp3(5747).Text;
+  const obj5 = { variant: "body-sm/semibold", color: str, lineClamp: 1, children: items3 };
+  const Text = tmp3(5761).Text;
   items3 = [" ", "(", num.toLocaleString(), ")"];
   items2[2] = authStore3(Text, obj5);
   return authStore3(PressableHighlight, obj2);
@@ -290,9 +290,9 @@ function PollVotesHeader(message) {
   let tmp9 = null;
   if (null != message.poll) {
     let obj = { children: items2 };
-    let obj2 = { style: tmp.headerText, variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: message.poll.question.text };
+    let obj2 = { style: tmp.headerText, variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: message.poll.question.text };
     items2 = [closure_13(tmp5(tmp6[17]).Text, obj2), , ];
-    let obj3 = { style: tmp.subheaderText, variant: "text-md/medium", color: "text-default", children: intl.format(tmp5(tmp6[15]).t.XRkuof, obj4) };
+    let obj3 = { style: tmp.subheaderText, variant: "body-md/medium", color: "text-default", children: intl.format(tmp5(tmp6[15]).t.XRkuof, obj4) };
     const Text = tmp5(tmp6[17]).Text;
     intl = tmp5(tmp6[15]).intl;
     obj4 = { count: memo };
@@ -462,17 +462,17 @@ function NoResults() {
   const tmp5 = authStore3;
   const tmp6 = metroRequire;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(12688);
+    tmp2Result = tmp2(12769);
   } else {
-    tmp2Result = tmp2(12689);
+    tmp2Result = tmp2(12770);
   }
   items = [map1(tmp8, obj2), , ];
-  const obj4 = { style: tmp.noResultsTitle, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };
-  const Text = tmp9(5747).Text;
+  const obj4 = { style: tmp.noResultsTitle, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };
+  const Text = tmp9(5761).Text;
   intl = tmp9(1113).intl;
   items[1] = map1(Text, obj4);
-  const obj5 = { style: tmp.noResultsSubtitle, variant: "text-sm/semibold", color: "text-default", children: intl2.string(intl3.t.bwytdh) };
-  const Text2 = tmp9(5747).Text;
+  const obj5 = { style: tmp.noResultsSubtitle, variant: "body-sm/semibold", color: "text-default", children: intl2.string(intl3.t.bwytdh) };
+  const Text2 = tmp9(5761).Text;
   intl2 = tmp9(1113).intl;
   items[2] = map1(Text2, obj5);
   return tmp5(tmp6, obj);
@@ -557,7 +557,7 @@ export default function PollVotesActionSheet(channelId) {
     obj5 = { message: stateFromStores, selectedAnswerId, setSelectedAnswerId: tmp6 };
     const BottomSheet = tmp7(tmp2[41]).BottomSheet;
     let text;
-    const obj6 = { style: tmp.answerName, variant: "text-sm/semibold", color: "text-default", children: items3 };
+    const obj6 = { style: tmp.answerName, variant: "body-sm/semibold", color: "text-default", children: items3 };
     const Text = tmp7(tmp2[17]).Text;
     if (found != null) {
       text = found.poll_media.text;

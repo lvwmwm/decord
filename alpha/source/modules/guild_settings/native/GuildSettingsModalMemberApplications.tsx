@@ -1,18 +1,18 @@
-// Module ID: 18817
-// Function ID: 18818
+// Module ID: 18918
+// Function ID: 18919
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 7037, 21, 5141, 575, 5195, 5747, 18818, 1411, 7101, 1187, 1627, 18823, 5175, 18824, 504, 1113, 7414, 8929, 5729, 2]
+// Dependencies: [19, 17, 7052, 21, 5141, 575, 5195, 5761, 18919, 1411, 7116, 1187, 1627, 18924, 5175, 18925, 504, 1113, 7430, 8946, 5742, 2]
 
-// Module 18817 (GuildSettingsModalMemberApplications)
+// Module 18918 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18818 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18919 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7037 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7052 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -46,10 +46,10 @@ const memoResult = react.memo(function MemberApplicationUser(user) {
   if (globalName == null) {
     username = user.username;
   }
-  const children = [metroImportDefault(Text, { variant: "text-md/semibold", children: username }), ];
+  const children = [metroImportDefault(Text, { variant: "body-md/semibold", children: username }), ];
   let tmp5Result = null != globalName;
   if (tmp5Result) {
-    const obj2 = { variant: "text-xs/medium", children: user.username };
+    const obj2 = { variant: "body-xs/medium", children: user.username };
     tmp5Result = tmp5(Text_Text.Text, obj2);
   }
   children[1] = tmp5Result;
@@ -78,7 +78,7 @@ let closure_12 = react.memo(function GuildSettingsModalMemberApplication(joinReq
         userAvatarSource = obj.getUserAvatarSource(user);
       }
       const obj2 = { arrow: true, icon: closure_7(Avatar, obj3), label: closure_7(closure_11, obj4), onPress: tmp, start, end };
-      const TableRow = joinRequest(7101).TableRow;
+      const TableRow = joinRequest(7116).TableRow;
       obj3 = { source: userAvatarSource, size: joinRequest(1187).AvatarSizes.SMALL };
       Avatar = joinRequest(1187).Avatar;
       obj4 = { user };

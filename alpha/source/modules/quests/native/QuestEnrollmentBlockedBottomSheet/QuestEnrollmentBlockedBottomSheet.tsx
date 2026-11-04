@@ -1,19 +1,19 @@
-// Module ID: 17286
-// Function ID: 17287
+// Module ID: 17378
+// Function ID: 17379
 // Name: QuestEnrollmentBlockedBottomSheet
-// Dependencies: [19, 17, 7970, 21, 5141, 575, 504, 14830, 6904, 7748, 5395, 5747, 1113, 2]
+// Dependencies: [19, 17, 7986, 21, 5141, 575, 504, 14910, 6919, 7764, 5396, 5761, 1113, 2]
 // Exports: default
 
-// Module 17286 (QuestEnrollmentBlockedBottomSheet)
+// Module 17378 (QuestEnrollmentBlockedBottomSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useCountdownDefault from "useCountdown" /* 7748 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useCountdownDefault from "useCountdown" /* 7764 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 7970 */;
+import QuestStore from "QuestStore" /* 7986 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ function QuestEnrollmentBlockedBottomSheet(questEnrollmentBlockedUntil) {
     ({ variant: "heading-xl/semibold", children: intl.string(intl3.t["XEHDT/"]) });
     const Text = Text_Text.Text;
     intl = intl3.intl;
-    ({ variant: "text-md/normal", children: formatToPlainString(prop, obj6) });
+    ({ variant: "body-md/normal", children: formatToPlainString(prop, obj6) });
     const Text2 = Text_Text.Text;
     const intl2 = intl3.intl;
     formatToPlainString = intl2.formatToPlainString;

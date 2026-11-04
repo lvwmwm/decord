@@ -1,19 +1,19 @@
-// Module ID: 18922
-// Function ID: 18923
+// Module ID: 19025
+// Function ID: 19026
 // Name: SmartSearchFeedback
-// Dependencies: [32, 19, 17, 14021, 21, 5141, 575, 14056, 14039, 504, 7414, 5747, 1113, 4250, 14686, 10001, 10003, 2]
+// Dependencies: [32, 19, 17, 14107, 21, 5141, 575, 14142, 14125, 504, 7430, 5761, 1113, 4250, 14766, 10049, 10051, 2]
 // Exports: SmartSearchFeedback
 
-// Module 18922 (SmartSearchFeedback)
+// Module 19025 (SmartSearchFeedback)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4250 from "module_4250" /* 4250 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14039 */;
-import SmartSearchActionCreators from "SmartSearchActionCreators" /* 14056 */;
-import IconActionButtonDefault from "IconActionButton" /* 14686 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 14125 */;
+import SmartSearchActionCreators from "SmartSearchActionCreators" /* 14142 */;
+import IconActionButtonDefault from "IconActionButton" /* 14766 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SmartSearchResultsStore from "SmartSearchResultsStore" /* 14021 */;
+import SmartSearchResultsStore from "SmartSearchResultsStore" /* 14107 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -40,13 +40,13 @@ export function SmartSearchFeedback(smartSearchQuery) {
   const items1 = [, ];
   ({ guildId: arr2[0], requestKey: arr2[1] } = smartSearchQuery);
   const stateFromStores = obj.useStateFromStores(items, () => SmartSearchResultsStore.getResultFeedback(smartSearchQuery.guildId, smartSearchQuery.requestKey), items1);
-  let obj2 = smartSearchQuery(7414);
+  let obj2 = smartSearchQuery(7430);
   const items2 = [smartSearchQuery.requestKey];
   let tmp7Result2 = null;
   if (!_slicedToArray(obj2.useRecyclingState(null !== stateFromStores, items2), 1)[0]) {
     let stringResult;
     const obj3 = { style: tmp.feedbackContainer, children: items3 };
-    const Text = tmp2(5747).Text;
+    const Text = tmp2(5761).Text;
     const intl = tmp2(1113).intl;
     const string = intl.string;
     if (null !== stateFromStores) {
@@ -54,13 +54,13 @@ export function SmartSearchFeedback(smartSearchQuery) {
     } else {
       stringResult = string(_modDef4250.uij9Dy);
     }
-    const obj4 = { variant: "text-sm/medium", color: "text-muted", children: stringResult };
+    const obj4 = { variant: "body-sm/medium", color: "text-muted", children: stringResult };
     items3 = [closure_6(Text, obj4), ];
     let tmp7Result = null === stateFromStores;
     if (tmp7Result) {
       const obj5 = { style: tmp.buttonContainer, children: items4 };
       const obj6 = {
-        IconComponent: smartSearchQuery(10001).ThumbsUpIcon,
+        IconComponent: smartSearchQuery(10049).ThumbsUpIcon,
         onPress() {
               const obj = SmartSearchActionCreators;
               const obj2 = { smartSearchQuery, hasPositiveFeedback: true, SearchSessionAnalyticsManager: SearchSessionAnalyticsManagerDefault };
@@ -72,7 +72,7 @@ export function SmartSearchFeedback(smartSearchQuery) {
       intl2 = tmp2(1113).intl;
       items4 = [closure_6(tmp14, obj6), ];
       const obj7 = {
-        IconComponent: smartSearchQuery(10003).ThumbsDownIcon,
+        IconComponent: smartSearchQuery(10051).ThumbsDownIcon,
         noMargin: true,
         onPress() {
               const obj = SmartSearchActionCreators;

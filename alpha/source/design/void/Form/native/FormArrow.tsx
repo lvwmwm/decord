@@ -1,15 +1,15 @@
-// Module ID: 7433
-// Function ID: 7434
+// Module ID: 7449
+// Function ID: 7450
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1187, 7434, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1187, 7450, 2]
 // Exports: default
 
-// Module 7433 (FormArrow)
+// Module 7449 (FormArrow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7434 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7450 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -36,7 +36,7 @@ export default function FormArrow(arg0) {
   const tmp = closure_6();
   if (null != label) {
     const obj2 = { style: tmp.wrapper, children: items };
-    const obj3 = { maxFontSizeMultiplier: 1.5, variant: "text-md/medium", color: "text-muted", children: label };
+    const obj3 = { maxFontSizeMultiplier: 1.5, variant: "body-md/medium", color: "text-muted", children: label };
     items = [React3(Text_Text.Text, obj3), ];
     const obj4 = { style: items1, source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM };
     items1 = [tmp.icon, style];

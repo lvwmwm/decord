@@ -1,77 +1,65 @@
-// Module ID: 9691
-// Function ID: 9692
+// Module ID: 9710
+// Function ID: 9711
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 9692, 9693, 7542, 9688, 1113, 2]
+// Dependencies: [5, 32, 19, 9711, 7558, 9707, 1113, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9691 (useRedeemVirtualCurrency)
+// Module 9710 (useRedeemVirtualCurrency)
 import intl3 from "intl" /* 1113 */;
-import useOrderSigning from "useOrderSigning" /* 9693 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let closure_2, closure_3, closure_5, length, sku, v0, v3;
+let closure_2, closure_3, closure_5, sku, v0, v3;
 
+let closure_4;
 let hasOwnProperty;
-let metroImportDefault;
 let metroRequire;
-({ useState: hasOwnProperty, useEffect: metroRequire, useCallback: metroImportDefault } = react);
-const result = size.fileFinishedImporting("modules/virtual_currency/hooks/useRedeemVirtualCurrency.tsx");
+({ useState: closure_4, useEffect: hasOwnProperty, useCallback: metroRequire } = react);
+let result = size.fileFinishedImporting("modules/virtual_currency/hooks/useRedeemVirtualCurrency.tsx");
 
-export function useRedeemVirtualCurrency(order) {
+export function useRedeemVirtualCurrency(useOrdersAPI) {
   let closure_4;
-  let enabled;
   let entitlements;
   let error;
   let isSubmitting;
   let tmp2;
-  let tmp = _slicedToArray(enabled(""), 2);
+  let tmp = _slicedToArray(closure_4(""), 2);
   [tmp2, require] = tmp;
-  [entitlements, dependencyMap] = enabled([]);
-  [error, _asyncToGenerator] = _slicedToArray(enabled(null), 2);
-  const tmp5 = _slicedToArray(enabled(null), 2);
-  [isSubmitting, _slicedToArray] = enabled(false);
-  let obj = entitlements(9692);
-  enabled = obj.useConfig({ location: "orb_checkout_modal" }).enabled;
-  order = undefined;
-  if (order != null) {
-    order = order.order;
-  }
+  [entitlements, _asyncToGenerator] = closure_4([]);
+  const tmp5 = _slicedToArray(closure_4(null), 2);
+  [error, _slicedToArray] = tmp5;
+  [isSubmitting, closure_4] = closure_4(false);
+  useOrdersAPI = useOrdersAPI.useOrdersAPI;
+  let order = useOrdersAPI.order;
   if (order == null) {
     order = null;
   }
-  let onSignFailure;
-  if (order != null) {
-    onSignFailure = order.onSignFailure;
-  }
-  let obj2 = useOrderSigning;
-  const orderSigning = obj2.useOrderSigning({ order, errorSource: "orb_redeem_orders_api", onSignFailure });
+  const onSignFailure = useOrdersAPI.onSignFailure;
+  let obj = require("useOrderSigning");
+  const orderSigning = obj.useOrderSigning({ order, errorSource: "orb_redeem_orders_api", onSignFailure });
   const signOrder = orderSigning.signOrder;
   const _reportError = orderSigning.reportError;
-  if (enabled) {
+  if (useOrdersAPI) {
     error = orderSigning.error;
   }
-  let onSetIsSubmitting = null;
-  if (null != order) {
-    onSetIsSubmitting = order.onSetIsSubmitting;
-  }
+  const onSetIsSubmitting = useOrdersAPI.onSetIsSubmitting;
   const items = [onSetIsSubmitting];
-  const tmp13 = _reportError((arg0) => {
+  const tmp10 = signOrder((arg0) => {
     closure_4(arg0);
     if (null != onSetIsSubmitting) {
       onSetIsSubmitting(arg0);
     }
   }, items);
-  let closure_10 = tmp13;
+  let closure_10 = tmp10;
   let closure_0 = _asyncToGenerator(async (skuId, loadId, arg2) => {
     closure_2 = arg2;
     let c7 = 0;
     let c8 = 0;
     let c6 = 0;
     return (async function(arg0, value, arg2) {
-      let obj3;
+      let obj5;
       let obj6;
       if (c8 === 2) {
         c8 = 3;
@@ -96,13 +84,13 @@ export function useRedeemVirtualCurrency(order) {
               return { value, done: true };
             } else {
               closure_3 = undefined;
-              length = undefined;
+              entitlements = undefined;
               closure_1_10(true);
-              const obj5 = { loadId, errorExtra: obj6 };
+              const obj4 = { loadId, errorExtra: obj6 };
               v3 = 1;
               c8 = 1;
               obj6 = { skuId, loadId };
-              const obj7 = { value: v0(obj5), done: false };
+              const obj7 = { value: v0(obj4), done: false };
               return obj7;
             }
           } else {
@@ -119,8 +107,8 @@ export function useRedeemVirtualCurrency(order) {
                   v0 = 2;
                   v3 = 4;
                   c8 = 1;
-                  const obj9 = { value: obj3.fetchOrderEntitlementsWithRetry(closure_3.order.id), done: false };
-                  obj3 = skuId(closure_2_2[5]);
+                  const obj9 = { value: obj5.fetchOrderEntitlementsWithRetry(closure_3.order.id), done: false };
+                  obj5 = skuId(closure_2_1[4]);
                   return obj9;
                 } else {
                   closure_1_10(false);
@@ -144,16 +132,19 @@ export function useRedeemVirtualCurrency(order) {
                 c8 = 3;
                 return { value, done: true };
               } else {
-                length = value;
-                if (0 === length.length) {
+                entitlements = value;
+                if (0 === entitlements.length) {
                   const self = this;
                   const self2 = this;
-                  const orderProcessingPendingError = new skuId(closure_2_2[5]).OrderProcessingPendingError();
+                  const orderProcessingPendingError = new skuId(closure_2_1[4]).OrderProcessingPendingError();
                   throw orderProcessingPendingError;
                 } else {
-                  closure_2(length);
+                  closure_2(entitlements);
+                  const obj12 = { skuId, entitlements };
+                  const obj = skuId(closure_2_1[5]);
+                  const result = obj.dispatchVirtualCurrencyRedeemSuccess(obj12);
                   if (closure_2 != null) {
-                    tmp10(length);
+                    tmp15(entitlements);
                   }
                   v0 = 1;
                 }
@@ -164,12 +155,12 @@ export function useRedeemVirtualCurrency(order) {
             c8 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp47) {
-          closure_5 = tmp47;
+        } catch (tmp58) {
+          closure_5 = tmp58;
           if (0 === v0) {
             c8 = 3;
-            throw tmp47;
-          } else if (1 === tmp49) {
+            throw tmp58;
+          } else if (1 === tmp60) {
             v3 = 2;
           } else {
             v3 = 3;
@@ -178,13 +169,13 @@ export function useRedeemVirtualCurrency(order) {
       }
     })();
   });
-  const items1 = [signOrder, _reportError, tmp13];
-  const tmp14 = _reportError(function() {
+  const items1 = [signOrder, _reportError, tmp10];
+  const tmp11 = signOrder(function() {
     return closure_0(...arguments);
   }, items1);
-  let closure_11 = tmp14;
-  const items2 = [tmp13];
-  const tmp15 = _reportError((skuId, loadId, arg2) => {
+  let closure_11 = tmp11;
+  const items2 = [tmp10];
+  const tmp12 = signOrder((skuId, loadId, arg2) => {
     let closure_0;
     require = arg2;
     const obj = require("VirtualCurrencyActionCreators");
@@ -209,18 +200,18 @@ export function useRedeemVirtualCurrency(order) {
     };
     return obj.redeemVirtualCurrencyForSKU(obj2);
   }, items2);
-  let closure_12 = tmp15;
-  const items3 = [enabled, tmp14, tmp15];
+  let closure_12 = tmp12;
+  const items3 = [useOrdersAPI, tmp11, tmp12];
   const items4 = [entitlements, error];
-  const redeemVirtualCurrency = _reportError((arg0, arg1, arg2) => {
-    const tmp = enabled;
+  const redeemVirtualCurrency = signOrder((arg0, arg1, arg2) => {
+    const tmp = useOrdersAPI;
     if (tmp) {
       closure_11(arg0, arg1, arg2);
     } else {
       closure_12(arg0, arg1, arg2);
     }
   }, items3);
-  signOrder(() => {
+  useOrdersAPI(() => {
     let mapped1;
     if (null == error) {
       if (null != entitlements) {

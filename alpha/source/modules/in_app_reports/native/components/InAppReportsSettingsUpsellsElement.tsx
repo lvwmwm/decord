@@ -1,18 +1,18 @@
-// Module ID: 15314
-// Function ID: 15315
+// Module ID: 15401
+// Function ID: 15402
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 4990, 1072, 21, 5141, 575, 5716, 8480, 15308, 7685, 504, 8488, 7186, 1113, 5747, 7687, 5880, 2]
+// Dependencies: [32, 19, 17, 4990, 1072, 21, 5141, 575, 5729, 8496, 15395, 7701, 504, 8505, 7201, 1113, 5761, 7703, 5894, 2]
 // Exports: default
 
-// Module 15314 (InAppReportsSettingsUpsellsElement)
+// Module 15401 (InAppReportsSettingsUpsellsElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useMountEffectDefault from "useMountEffect" /* 5716 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5880 */;
-import SettingsIcon from "SettingsIcon" /* 7685 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8480 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15308 */;
+import useMountEffectDefault from "useMountEffect" /* 5729 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
+import SettingsIcon from "SettingsIcon" /* 7701 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8496 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -116,7 +116,7 @@ export default function SettingsUpsellElement(settingsUpsells) {
     TableRowGroup = tmp2(tmp3[14]).TableRowGroup;
     intl = tmp2(tmp3[15]).intl;
     items1 = [closure_9(closure_5, obj3), ];
-    const obj5 = { variant: "text-sm/medium", style: tmp.goToSettingsText, children: intl2.format(settingsUpsells(reportId[15]).t["u7mo+k"], obj6) };
+    const obj5 = { variant: "body-sm/medium", style: tmp.goToSettingsText, children: intl2.format(settingsUpsells(reportId[15]).t["u7mo+k"], obj6) };
     const Text = tmp2(tmp3[16]).Text;
     intl2 = tmp2(tmp3[15]).intl;
     obj6 = {

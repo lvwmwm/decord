@@ -1,20 +1,20 @@
-// Module ID: 9608
-// Function ID: 9609
+// Module ID: 9627
+// Function ID: 9628
 // Name: StorefrontActionCreators
-// Dependencies: [5, 2177, 7534, 9609, 9610, 9611, 1072, 1089, 572, 1282, 6567, 7533, 2]
+// Dependencies: [5, 2177, 7550, 9628, 9629, 9630, 1072, 1089, 572, 1282, 6582, 7549, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9608 (StorefrontActionCreators)
+// Module 9627 (StorefrontActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import BillingInfoStore from "BillingInfoStore" /* 2177 */;
-import SKUPricesStore from "SKUPricesStore" /* 7534 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9609 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9610 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9611 */;
+import SKUPricesStore from "SKUPricesStore" /* 7550 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9628 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9629 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9630 */;
 import size from "module_2" /* 2 */;
 
 let apiError, c1, closure_4, promotions;

@@ -1,13 +1,13 @@
-// Module ID: 18879
-// Function ID: 18880
+// Module ID: 18982
+// Function ID: 18983
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 5141, 575, 11177, 5747, 1187, 18880, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 11227, 5761, 1187, 18983, 2]
 
-// Module 18879 (guild_channels/VoiceOrStageSummaryRow)
+// Module 18982 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -78,7 +78,7 @@ const memoResult = react.memo(function VoiceOrStageSummaryRow(layout) {
             const obj3 = { style: items, children: React3(View, obj4) };
             obj4 = { style: tmp15.overflowCircle, children: React3(Text, obj5) };
             const _HermesInternal = HermesInternal;
-            obj5 = { variant: "text-xs/medium", children: "+" + tmp2 + 1 };
+            obj5 = { variant: "body-xs/medium", children: "+" + tmp2 + 1 };
             Text = Text_Text.Text;
             tmp3Result = tmp13(tmp14, obj3, "overflow");
           }
@@ -111,7 +111,7 @@ const memoResult = react.memo(function VoiceOrStageSummaryRow(layout) {
     let obj6 = { size: tmp(tmp2[7]).Icon.Sizes.CUSTOM, style: { height: 14, width: 14 }, source: require("AssetRegistry") };
     const Icon = tmp(tmp2[7]).Icon;
     items4 = [tmp8(Icon, obj6), ];
-    let obj7 = { variant: "text-sm/semibold", style: { marginLeft: 4 }, children: audienceCount };
+    let obj7 = { variant: "body-sm/semibold", style: { marginLeft: 4 }, children: audienceCount };
     items4[1] = closure_4(tmp(tmp2[6]).Text, obj7);
     tmp8Result = tmp8(tmp6, obj4);
   }

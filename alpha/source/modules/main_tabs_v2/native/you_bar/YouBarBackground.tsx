@@ -1,20 +1,20 @@
-// Module ID: 18611
-// Function ID: 18612
+// Module ID: 18712
+// Function ID: 18713
 // Name: YouBarBackground
-// Dependencies: [19, 17, 17218, 21, 5141, 575, 7164, 5710, 671, 5719, 17299, 1652, 5757, 2]
+// Dependencies: [19, 17, 17310, 21, 5141, 575, 7179, 5723, 671, 5732, 17391, 1652, 5771, 2]
 
-// Module 18611 (YouBarBackground)
+// Module 18712 (YouBarBackground)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import useToken2 from "useToken" /* 5719 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import _modDef7164 from "module_7164" /* 7164 */;
-import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 17299 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import useToken2 from "useToken" /* 5732 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import _modDef7179 from "module_7179" /* 7179 */;
+import useQuestDockAnimatedBorderRadiusDefault from "useQuestDockAnimatedBorderRadius" /* 17391 */;
 import react from "react" /* 19 */;
-import YouBarConstants from "YouBarConstants" /* 17218 */;
+import YouBarConstants from "YouBarConstants" /* 17310 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ function YouBarMaskedBackground(barWidth) {
   rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: YOU_BAR_HEIGHT / 2 - 1, backgroundColor: "black" };
   items = [, , ];
   const tmp = closure_8();
-  const tmp3 = _modDef7164;
+  const tmp3 = _modDef7179;
   items[0] = metroRequire(View, obj3);
   const obj4 = { style: { position: "absolute", top: YOU_BAR_HEIGHT / 2, left: diff - 1, right: 0, bottom: 0, backgroundColor: "black" } };
   items[1] = metroRequire(View, obj4);

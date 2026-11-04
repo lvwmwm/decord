@@ -1,16 +1,16 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 7756
+// Function ID: 7757
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1387, 7741, 21, 5141, 7742, 7743, 2176, 5710, 1092, 5837, 7744, 7745, 7746, 7747, 10061, 10715, 10066, 2]
+// Dependencies: [19, 17, 1387, 7757, 21, 5141, 7758, 7759, 2176, 5723, 1092, 5851, 7760, 7761, 7762, 7763, 10109, 10763, 10114, 2]
 // Exports: default
 
-// Module 7740 (PremiumPlanActionSheetHeader)
+// Module 7756 (PremiumPlanActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import PremiumUtils from "PremiumUtils" /* 2176 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import ColorConstants from "ColorConstants" /* 7741 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import ColorConstants from "ColorConstants" /* 7757 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
@@ -71,12 +71,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp14 = LinearGradientDefault;
   tmp6Result = PremiumUtils;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp17Result = tmp13(7742);
+    tmp17Result = tmp13(7758);
   } else {
     tmp17Result = null;
     if (TIER_0.TIER_1 !== premiumType) {
       if (TIER_0.TIER_2 === premiumType) {
-        tmp17Result = tmp13(7743);
+        tmp17Result = tmp13(7759);
       }
     }
   }
@@ -85,12 +85,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     const tmp13Result7 = FastImageDefault;
     const tmp17 = metroImportDefault;
     if (TIER_0.TIER_0 === premiumType) {
-      tmp13Result8 = tmp13(7742);
+      tmp13Result8 = tmp13(7758);
     } else {
       tmp13Result8 = null;
       if (TIER_0.TIER_1 !== premiumType) {
         if (TIER_0.TIER_2 === premiumType) {
-          tmp13Result8 = tmp13(7743);
+          tmp13Result8 = tmp13(7759);
         }
       }
     }
@@ -102,33 +102,33 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp13Result9 = FastImageDefault;
   const tmp20 = View;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result10 = tmp13(7744);
+    tmp13Result10 = tmp13(7760);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result10 = tmp13(7745);
+    tmp13Result10 = tmp13(7761);
   } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result10 = tmp13(7746);
+    tmp13Result10 = tmp13(7762);
   }
   items1 = [metroImportDefault(tmp13Result9, { source: tmp13Result10, resizeMode: "contain" }), , ];
   let tmp21Result = null;
   if (tmp2) {
     const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-    tmp21Result = tmp21(tmp6(7747).PremiumPill, obj5);
+    tmp21Result = tmp21(tmp6(7763).PremiumPill, obj5);
   }
   items1[1] = tmp21Result;
   let tmp21Result2 = null;
   if (tmp10) {
     const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-    tmp21Result2 = tmp21(tmp6(7747).PremiumPill, obj6);
+    tmp21Result2 = tmp21(tmp6(7763).PremiumPill, obj6);
   }
   items1[2] = tmp21Result2;
   items[1] = metroImportAll(tmp20, obj4);
   const tmp13Result11 = FastImageDefault;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result12 = tmp13(10061);
+    tmp13Result12 = tmp13(10109);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result12 = tmp13(10715);
+    tmp13Result12 = tmp13(10763);
   } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result12 = tmp13(10066);
+    tmp13Result12 = tmp13(10114);
   }
   const obj7 = { source: tmp13Result12, style: null, resizeMode: "contain" };
   const items2 = [tmp.imgWumpus, ];

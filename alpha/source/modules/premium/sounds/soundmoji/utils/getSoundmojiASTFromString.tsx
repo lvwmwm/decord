@@ -1,17 +1,17 @@
-// Module ID: 6177
-// Function ID: 6178
+// Module ID: 6192
+// Function ID: 6193
 // Name: getSoundmojiASTFromString
-// Dependencies: [6178, 6181, 1072, 13563, 7647, 15799, 15800, 1411, 2]
+// Dependencies: [6193, 6196, 1072, 13647, 7663, 15887, 15888, 1411, 2]
 // Exports: default, getSoundmojiFromMessage
 
-// Module 6177 (getSoundmojiASTFromString)
+// Module 6192 (getSoundmojiASTFromString)
 import Constants from "Constants" /* 1072 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import isSoundValidDefault from "isSoundValid" /* 7647 */;
-import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 13563 */;
-import getSoundStringDefault from "getSoundString" /* 15800 */;
-import SoundboardStore from "SoundboardStore" /* 6178 */;
-import MessageStore from "MessageStore" /* 6181 */;
+import isSoundValidDefault from "isSoundValid" /* 7663 */;
+import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 13647 */;
+import getSoundStringDefault from "getSoundString" /* 15888 */;
+import SoundboardStore from "SoundboardStore" /* 6193 */;
+import MessageStore from "MessageStore" /* 6196 */;
 import size from "module_2" /* 2 */;
 
 const MessageStates = Constants.MessageStates;
@@ -34,7 +34,7 @@ export default function getSoundmojiASTFromString(soundId, guildId) {
     const tmp8 = importDefault;
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(15799)(channelId, messageId, soundId[2], soundboardSounds);
+        const tmp16 = tmp8(15887)(channelId, messageId, soundId[2], soundboardSounds);
         tmp5 = tmp16;
         if (tmp9) {
           tmp5 = tmp16;
@@ -108,7 +108,7 @@ export function getSoundmojiFromMessage(guildId, channelId, messageId, soundId, 
     const tmp8 = importDefault;
     if (null != messageId) {
       if (null != channelId) {
-        const tmp16 = tmp8(15799)(channelId, messageId, soundId, arg4);
+        const tmp16 = tmp8(15887)(channelId, messageId, soundId, arg4);
         if (tmp9) {
           if (null == tmp16) {
             const message = MessageStore.getMessage(channelId, messageId);

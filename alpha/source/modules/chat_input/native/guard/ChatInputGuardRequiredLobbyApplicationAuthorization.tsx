@@ -1,14 +1,14 @@
-// Module ID: 14164
-// Function ID: 14165
+// Module ID: 14250
+// Function ID: 14251
 // Name: ChatInputGuardRequiredLobbyApplicationAuthorization
-// Dependencies: [19, 21, 5141, 575, 14152, 5837, 1113, 5829, 2]
+// Dependencies: [19, 21, 5141, 575, 14238, 5851, 1113, 5843, 2]
 
-// Module 14164 (ChatInputGuardRequiredLobbyApplicationAuthorization)
+// Module 14250 (ChatInputGuardRequiredLobbyApplicationAuthorization)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14152 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14238 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

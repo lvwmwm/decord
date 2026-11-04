@@ -1,10 +1,10 @@
-// Module ID: 8866
-// Function ID: 8867
+// Module ID: 8883
+// Function ID: 8884
 // Name: useShopProductItems
 // Dependencies: [19, 2116, 2]
 // Exports: getProductItems, getPurchasedItem, useShopProductItems
 
-// Module 8866 (useShopProductItems)
+// Module 8883 (useShopProductItems)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

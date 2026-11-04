@@ -1,17 +1,17 @@
-// Module ID: 7376
-// Function ID: 7377
+// Module ID: 7392
+// Function ID: 7393
 // Name: MultipleChoiceField
-// Dependencies: [19, 17, 1083, 21, 5141, 6843, 575, 5747, 7184, 7187, 2]
+// Dependencies: [19, 17, 1083, 21, 5141, 6858, 575, 5761, 7199, 7202, 2]
 // Exports: default
 
-// Module 7376 (MultipleChoiceField)
+// Module 7392 (MultipleChoiceField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import TextStyles from "TextStyles" /* 6843 */;
+import TextStyles from "TextStyles" /* 6858 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ export default function MultipleChoiceField(hasIcons) {
   const memo = react.useMemo(() => choices.map((name, value) => ({ name, value })), items);
   let obj = { style: tmp.container, children: items1 };
   items1 = [, ];
-  const obj2 = { style: tmp.formHeader, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: label };
+  const obj2 = { style: tmp.formHeader, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: label };
   items1[0] = closure_4(require("Text/Text").Text, obj2);
   const TableRadioGroup = require("TableRadioGroup").TableRadioGroup;
   const tmp2 = closure_5;

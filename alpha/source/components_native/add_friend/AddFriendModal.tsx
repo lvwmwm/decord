@@ -1,18 +1,18 @@
-// Module ID: 15819
-// Function ID: 15820
+// Module ID: 15907
+// Function ID: 15908
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1385, 1072, 14380, 21, 5141, 6843, 575, 14382, 5716, 1252, 1377, 1502, 6864, 5195, 1113, 9059, 7682, 15820, 7124, 5747, 15821, 15822, 1627, 7290, 2]
+// Dependencies: [32, 19, 17, 1385, 1072, 14460, 21, 5141, 6858, 575, 14462, 5729, 1252, 1377, 1502, 6879, 5195, 1113, 9076, 7698, 15908, 7139, 5761, 15909, 15910, 1627, 7306, 2]
 // Exports: default
 
-// Module 15819 (AddFriendModal)
+// Module 15907 (AddFriendModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14380 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14382 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14460 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14462 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -20,7 +20,7 @@ import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
-import TextStyles from "TextStyles" /* 6843 */;
+import TextStyles from "TextStyles" /* 6858 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -120,14 +120,14 @@ function AddFriendModalScene(onSkip) {
   const Text = onSkip(contactSyncAccount[22]).Text;
   intl = onSkip(contactSyncAccount[17]).intl;
   const items2 = [closure_10(Text, obj4), , , ];
-  const obj5 = { style: tmp.subheaderText, variant: "text-sm/medium", color: "text-default", children: intl2.string(onSkip(contactSyncAccount[17]).t["Rn/sLl"]) };
+  const obj5 = { style: tmp.subheaderText, variant: "body-sm/medium", color: "text-default", children: intl2.string(onSkip(contactSyncAccount[17]).t["Rn/sLl"]) };
   const Text2 = onSkip(contactSyncAccount[22]).Text;
   intl2 = onSkip(contactSyncAccount[17]).intl;
   items2[1] = closure_10(Text2, obj5);
   const obj6 = { style: tmp.input, autoFocusInput: false };
   items2[2] = closure_10(sourceMetadata(contactSyncAccount[23]), obj6);
   const obj7 = { style: tmp.otherOptionsContainer, children: items3 };
-  const obj8 = { accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: intl3.string(onSkip(contactSyncAccount[17]).t.dukg0Z) };
+  const obj8 = { accessibilityRole: "header", variant: "body-sm/medium", color: "text-default", children: intl3.string(onSkip(contactSyncAccount[17]).t.dukg0Z) };
   const Text3 = onSkip(contactSyncAccount[22]).Text;
   intl3 = onSkip(contactSyncAccount[17]).intl;
   items3 = [closure_10(Text3, obj8), ];

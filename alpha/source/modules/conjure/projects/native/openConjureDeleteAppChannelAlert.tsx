@@ -1,11 +1,11 @@
-// Module ID: 19051
-// Function ID: 19052
+// Module ID: 19154
+// Function ID: 19155
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 13414, 13416, 1113, 3995, 6084, 12360, 6147, 5747, 6080, 2]
+// Dependencies: [5, 32, 19, 21, 13498, 13500, 1113, 3995, 6099, 12425, 6162, 5761, 6095, 2]
 // Exports: default
 
-// Module 19051 (openConjureDeleteAppChannelAlert)
-import useAlertStore from "useAlertStore" /* 6080 */;
+// Module 19154 (openConjureDeleteAppChannelAlert)
+import useAlertStore from "useAlertStore" /* 6095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -143,7 +143,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
     const items1 = [tmp9Result, ];
     let tmp9Result2 = null;
     if (null != tmp8) {
-      let obj4 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp8 };
+      let obj4 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp8 };
       tmp9Result2 = tmp9(tmp(tmp2[11]).Text, obj4);
     }
     const obj5 = { spacing: 12, children: items1 };

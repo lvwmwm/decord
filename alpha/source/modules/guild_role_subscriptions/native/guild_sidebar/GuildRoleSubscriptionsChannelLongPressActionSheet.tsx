@@ -1,21 +1,21 @@
-// Module ID: 18410
-// Function ID: 18411
+// Module ID: 18504
+// Function ID: 18505
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 4997, 21, 5141, 575, 7486, 7441, 1187, 14523, 1113, 8301, 18302, 11114, 2]
+// Dependencies: [19, 17, 4997, 21, 5141, 575, 7502, 7457, 1187, 14603, 1113, 8317, 18399, 11162, 2]
 // Exports: default
 
-// Module 18410 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 18504 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7441 */;
-import ActionSheet2 from "ActionSheet" /* 7486 */;
-import _mod8301 from "module_8301" /* 8301 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 11114 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14523 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18302 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7457 */;
+import ActionSheet2 from "ActionSheet" /* 7502 */;
+import _mod8317 from "module_8317" /* 8317 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 11162 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14603 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18399 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -64,11 +64,11 @@ export default function GuildRoleSubscriptionsChannelLongPressActionSheet(arg0) 
       const result = obj.copyGuildChannelOrThreadLink(require, StaticChannelRoute.ROLE_SUBSCRIPTIONS);
     }
   };
-  const FormRow = _mod8301.FormRow;
+  const FormRow = _mod8317.FormRow;
   obj6 = { source: AssetRegistryDefault2 };
   Icon2 = native.Icon;
   obj7 = { text: intl2.string(intl3.t.WqhZss) };
-  FormLabel = _mod8301.FormLabel;
+  FormLabel = _mod8317.FormLabel;
   intl2 = intl3.intl;
   items[1] = closure_5(FormRow, obj5);
   return closure_6(ActionSheet, obj);

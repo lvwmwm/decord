@@ -1,32 +1,34 @@
-// Module ID: 16555
-// Function ID: 16556
+// Module ID: 16647
+// Function ID: 16648
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 5084, 502, 4990, 6181, 1072, 16556, 3, 1089, 510, 2171, 4963, 10449, 7760, 11810, 14667, 2123, 2125, 572, 6683, 9961, 2]
+// Dependencies: [5, 32, 5084, 502, 4990, 6196, 10378, 1072, 16648, 3, 1089, 510, 2171, 4963, 10497, 7776, 11867, 14747, 2123, 2125, 572, 6698, 9979, 2]
 
-// Module 16555 (LocalMessageCacheManager)
+// Module 16647 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import DateUtils from "DateUtils" /* 4963 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7760 */;
-import createMessageDefault from "createMessage" /* 10449 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
+import createMessageDefault from "createMessage" /* 10497 */;
+import UploadActionCreatorsDefault from "UploadActionCreators" /* 11867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MessageRecord from "MessageRecord" /* 5084 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
-import MessageStore from "MessageStore" /* 6181 */;
-import MutexUtils from "MutexUtils" /* 16556 */;
+import MessageStore from "MessageStore" /* 6196 */;
+import SendMessageOptionsStore from "SendMessageOptionsStore" /* 10378 */;
+import Constants from "Constants" /* 1072 */;
+import MutexUtils from "MutexUtils" /* 16648 */;
 import LifecycleManager from "LifecycleManager" /* 2125 */;
 import size from "module_2" /* 2 */;
 
 let _self, channel, closure_8, set;
 
-let tmp;
-const UploadActionCreatorsDefault = tmp(11810);
+let c10;
+let c9;
 function _getKeyForFileId(arg0) {
   const entries = Object.entries(_getMessages());
   obj = entries[Symbol.iterator]();
@@ -46,10 +48,10 @@ function _getKeyForFileId(arg0) {
 }
 function removeCachedMessage(arg0) {
   let closure_0 = arg0;
-  return closure_10(() => closure_2_17(id, null));
+  return closure_11(() => closure_2_18(id, null));
 }
 function getAllCachedMessages() {
-  return closure_10(_getMessages);
+  return closure_11(_getMessages);
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
@@ -61,22 +63,40 @@ function messageTimestampIsInInterval(arg0, arg1) {
     return false;
   }
 }
-function createFailedMessage(channel_id) {
+function createFailedMessage(arg0) {
+  let DEFAULT;
+  let channel_id;
   let content;
   let file;
+  let flags;
+  let sendMessageOptions;
   let state;
   let tts;
-  channel_id = channel_id.channel_id;
-  ({ content, tts, state } = channel_id);
-  obj = { channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED };
-  const tmp3 = createMessageDefault(obj);
-  ({ timestamp: tmp3.timestamp, file } = channel_id);
-  const obj2 = MessageActionCreatorsDefault;
-  const obj3 = { isHydratingExpiredPendingMessage: state === MessageStates.SENDING };
-  obj2.receiveMessage(channel_id, tmp3, true, obj3);
+  ({ channel_id, sendMessageOptions } = arg0);
+  let messageReference;
+  ({ content, tts, flags, state } = arg0);
+  if (sendMessageOptions != null) {
+    messageReference = sendMessageOptions.messageReference;
+  }
+  let allowedMentions;
+  if (sendMessageOptions != null) {
+    allowedMentions = sendMessageOptions.allowedMentions;
+  }
+  obj = { channelId: channel_id, content, tts, type: DEFAULT, messageReference, allowedMentions, flags, state: constants.SEND_FAILED };
+  const tmp5 = createMessageDefault;
+  if (null != messageReference) {
+    DEFAULT = constants2.REPLY;
+  } else {
+    DEFAULT = constants2.DEFAULT;
+  }
+  const tmp5Result = tmp5(obj);
+  ({ timestamp: tmp8.timestamp, file } = arg0);
+  const obj2 = { isHydratingExpiredPendingMessage: state === constants.SENDING, messageReference, allowedMentions };
+  const tmp3Result = MessageActionCreatorsDefault;
+  tmp3Result.receiveMessage(channel_id, tmp5Result, true, obj2);
   if (null != file) {
-    const tmpResult = UploadActionCreatorsDefault;
-    tmpResult.restoreFailedUpload(tmp3.id, file);
+    const tmp3Result2 = UploadActionCreatorsDefault;
+    tmp3Result2.restoreFailedUpload(tmp5Result.id, file);
   }
 }
 function resumeSendingMessage() {
@@ -106,7 +126,7 @@ let obj = function _resumeSendingMessage() {
         c1 = undefined;
       }
       closure_3 = c1;
-      await require("asyncRequire")(paths[16], paths.paths);
+      await require("asyncRequire")(paths[17], paths.paths);
       const _default = value.default;
       obj = {};
       const merged = Object.assign(channel_id);
@@ -176,7 +196,7 @@ obj = function _rehydrateFailedMessages() {
               closure_1 = value;
               const _Object = Object;
               const _HermesInternal4 = HermesInternal;
-              closure_135_11.verbose("rehydrateFailedMessages with " + Object.keys(closure_1).length + " messagess");
+              closure_135_12.verbose("rehydrateFailedMessages with " + Object.keys(closure_1).length + " messagess");
               closure_2 = closure_1;
               const keys = Object.keys();
               const tmp63 = closure_1;
@@ -211,23 +231,23 @@ obj = function _rehydrateFailedMessages() {
             if (closure_3.channel_id !== closure_0) {
               continue;
             } else {
-              let tmp16 = closure_135_19(closure_2);
+              let tmp16 = closure_135_20(closure_2);
               if (null != closure_135_8.getMessage(closure_0, closure_3.id)) {
                 continue;
               } else {
                 timestamp = closure_3.timestamp;
                 state = closure_3.state;
-                if (closure_135_21(timestamp, closure_135_14)) {
+                if (closure_135_22(timestamp, closure_135_15)) {
                   if (state === closure_135_9.SENDING) {
-                    if (closure_135_21(timestamp, closure_135_13)) {
+                    if (closure_135_22(timestamp, closure_135_14)) {
                       let tmp44 = globalThis;
                       let _JSON2 = JSON;
                       let _HermesInternal3 = HermesInternal;
                       let str3 = "sending message with data ";
-                      let verboseResult1 = closure_135_11.verbose("sending message with data " + JSON.stringify(closure_3));
+                      let verboseResult1 = closure_135_12.verbose("sending message with data " + JSON.stringify(closure_3));
                       c8 = 2;
                       c9 = 1;
-                      let obj6 = { value: closure_135_23(closure_3), done: false };
+                      let obj6 = { value: closure_135_24(closure_3), done: false };
                       return obj6;
                     }
                   }
@@ -235,14 +255,14 @@ obj = function _rehydrateFailedMessages() {
                   let _JSON = JSON;
                   let _HermesInternal2 = HermesInternal;
                   let str2 = "failed message with data ";
-                  let infoResult = closure_135_11.info("failed message with data " + JSON.stringify(closure_3));
-                  let tmp40 = closure_135_22(closure_3);
+                  let infoResult = closure_135_12.info("failed message with data " + JSON.stringify(closure_3));
+                  let tmp40 = closure_135_23(closure_3);
                   continue;
                 } else {
                   let tmp23 = globalThis;
                   let _HermesInternal = HermesInternal;
                   let str = "dropping stale message, timestamp ";
-                  let verboseResult2 = closure_135_11.verbose("dropping stale message, timestamp " + timestamp);
+                  let verboseResult2 = closure_135_12.verbose("dropping stale message, timestamp " + timestamp);
                   continue;
                 }
                 continue;
@@ -265,13 +285,13 @@ obj = function _rehydrateFailedMessages() {
   });
   return obj(...arguments);
 };
-const MessageStates = Constants.MessageStates;
-let closure_10 = MutexUtils.createLock();
-let tmp2 = new LoggerDefault("LocalMessageCacheManager");
-const unpackModuleId = tmp2;
+({ MessageStates: c9, MessageTypes: c10 } = Constants);
+let closure_11 = MutexUtils.createLock();
+let tmp4 = new LoggerDefault("LocalMessageCacheManager");
+const authStore2 = tmp4;
 const LocalMessageCacheManagerMessageCacheKey = "LocalMessageCacheManagerMessageCacheKey";
-let closure_13 = 5 * DurationsDefault.Millis.MINUTE;
-let closure_14 = 14 * DurationsDefault.Millis.DAY;
+let closure_14 = 5 * DurationsDefault.Millis.MINUTE;
+let closure_15 = 14 * DurationsDefault.Millis.DAY;
 function _getMessages() {
   const Storage = Storage3.Storage;
   obj = Storage.get(LocalMessageCacheManagerMessageCacheKey);
@@ -286,8 +306,8 @@ function _getMessage(arg0) {
 function _writeMessage(arg0, id) {
   let str;
   id = undefined;
-  const verbose = closure_11.verbose;
-  obj = closure_11;
+  const verbose = closure_12.verbose;
+  obj = closure_12;
   if (id != null) {
     id = id.id;
   }
@@ -421,7 +441,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                           if (state === constants.SENDING) {
                             const _setTimeout = setTimeout;
                             const timerId = setTimeout(() => {
-                              obj = closure_2_1(closure_2_2[21]);
+                              obj = closure_2_1(closure_2_2[22]);
                               const obj2 = { channelId };
                               const messages = obj.fetchMessages(obj2);
                             }, 0);
@@ -546,9 +566,9 @@ class LocalMessageCacheManager extends LifecycleManager {
       });
       applyArgumentsResult.handleMessageDelete = function handleMessageDelete(id) {
         id = id.id;
-        let tmp = closure_10(() => {
+        let tmp = closure_11(() => {
           function _getKeyForMessageId(id) {
-            const entries = Object.entries(closure_1_15());
+            const entries = Object.entries(closure_1_16());
             obj = entries[Symbol.iterator]();
             while (obj !== undefined) {
               let tmp4 = closure_1_4(tmp2, 2);
@@ -566,9 +586,9 @@ class LocalMessageCacheManager extends LifecycleManager {
         });
       };
       applyArgumentsResult.handleLogout = function handleLogout() {
-        !closure_1_10(() => {
-          const Storage = closure_1_0(closure_1_2[10]).Storage;
-          return Storage.remove(closure_1_12);
+        !closure_1_11(() => {
+          const Storage = closure_1_0(closure_1_2[11]).Storage;
+          return Storage.remove(closure_1_13);
         });
       };
       applyArgumentsResult.handleMessageCreate = function handleMessageCreate(message) {
@@ -597,9 +617,9 @@ class LocalMessageCacheManager extends LifecycleManager {
           if (id == null) {
             id = message.id;
           }
-          if (message.state !== MessageStates.SENDING) {
+          if (message.state !== constants.SENDING) {
             if (message.state !== tmp2.SEND_FAILED) {
-              closure_10(() => closure_2_17(id, null));
+              closure_11(() => closure_2_18(id, null));
             }
           }
           obj = require.#e;
@@ -619,7 +639,7 @@ class LocalMessageCacheManager extends LifecycleManager {
           c10 = undefined;
           c11 = undefined;
           ({ content: c3, id: c4, channel_id: c5, tts: c6, nonce: c7, timestamp: c8, type: c9, flags: c10, state: c11 } = message2);
-          closure_10(() => {
+          closure_11(() => {
             let SENDING;
             let sendMessageOptions;
             let tmp18;
@@ -687,7 +707,7 @@ class LocalMessageCacheManager extends LifecycleManager {
       };
       applyArgumentsResult = _asyncToGenerator(async (arg0, value) => {
         function rehydrateFailedMessages() {
-          return closure_1_25(...arguments);
+          return closure_1_26(...arguments);
         }
         closure_0 = arg0;
         if (c1 === 2) {
@@ -713,8 +733,8 @@ class LocalMessageCacheManager extends LifecycleManager {
                 c1 = 3;
                 const obj4 = { value, done: true };
                 return obj4;
-              } else if (!applyArgumentsResult[closure_1_26].has(closure_0)) {
-                applyArgumentsResult[closure_1_26].add(closure_0);
+              } else if (!applyArgumentsResult[closure_1_27].has(closure_0)) {
+                applyArgumentsResult[closure_1_27].add(closure_0);
                 c2 = 1;
                 c1 = 1;
                 const obj5 = { value: rehydrateFailedMessages(closure_0), done: false };
@@ -777,7 +797,7 @@ class LocalMessageCacheManager extends LifecycleManager {
           c10 = undefined;
           c11 = undefined;
           ({ content: c3, id: c4, channel_id: c5, tts: c6, nonce: c7, timestamp: c8, type: c9, flags: c10, state: c11 } = message2);
-          c10(() => {
+          c11(() => {
             let SENDING;
             let sendMessageOptions;
             let tmp18;
@@ -831,17 +851,17 @@ class LocalMessageCacheManager extends LifecycleManager {
       };
       applyArgumentsResult.handleUploadProgress = function handleUploadProgress(file) {
         file = file.file;
-        let tmp = closure_10(() => {
+        let tmp = closure_11(() => {
           const tmp2 = _getKeyForFileId(file.id);
           const tmp = file;
           if (null != tmp2) {
             obj = { file: tmp };
             let closure_0 = tmp2;
-            closure_2_10(() => {
-              if (typeof closure_2_16 === "function") {
-                if (typeof closure_2_15 === "function") {
-                  const Storage = file(closure_2_2[10]).Storage;
-                  obj = Storage.get(closure_2_12);
+            closure_2_11(() => {
+              if (typeof closure_2_17 === "function") {
+                if (typeof closure_2_16 === "function") {
+                  const Storage = file(closure_2_2[11]).Storage;
+                  obj = Storage.get(closure_2_13);
                   if (null == obj) {
                     obj = {};
                   }
@@ -849,7 +869,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                     const obj2 = {};
                     const merged = Object.assign(tmp7);
                     const merged1 = Object.assign(obj);
-                    closure_2_17(closure_0, obj2);
+                    closure_2_18(closure_0, obj2);
                   }
                 } else {
                   throw new TypeError("Trying to call a non-function");
@@ -864,8 +884,8 @@ class LocalMessageCacheManager extends LifecycleManager {
       applyArgumentsResult.handleUploadComplete = function handleUploadComplete(aborted) {
         if (aborted.aborted) {
           const file = aborted.file;
-          let tmp = closure_10;
-          closure_10(() => {
+          let tmp = closure_11;
+          closure_11(() => {
             const tmp = _getKeyForFileId(file.id);
             if (null != tmp) {
               _writeMessage(tmp, null);
@@ -875,11 +895,11 @@ class LocalMessageCacheManager extends LifecycleManager {
       };
       applyArgumentsResult.handleRestoreFailedUpload = function handleRestoreFailedUpload(file) {
         const messageId = file.messageId;
-        closure_10(() => {
-          if (typeof closure_2_16 === "function") {
-            if (typeof closure_2_15 === "function") {
-              const Storage = file(closure_2_2[10]).Storage;
-              obj = Storage.get(closure_2_12);
+        closure_11(() => {
+          if (typeof closure_2_17 === "function") {
+            if (typeof closure_2_16 === "function") {
+              const Storage = file(closure_2_2[11]).Storage;
+              obj = Storage.get(closure_2_13);
               if (null == obj) {
                 obj = {};
               }
@@ -887,7 +907,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                 const obj2 = {};
                 const merged = Object.assign(tmp7);
                 const merged1 = Object.assign(obj);
-                closure_2_17(closure_0, obj2);
+                closure_2_18(closure_0, obj2);
               }
             } else {
               throw new TypeError("Trying to call a non-function");
@@ -899,11 +919,11 @@ class LocalMessageCacheManager extends LifecycleManager {
       };
       applyArgumentsResult.handleTextMessageFailed = function handleTextMessageFailed(messageId) {
         messageId = messageId.messageId;
-        closure_10(() => {
-          if (typeof closure_2_16 === "function") {
-            if (typeof closure_2_15 === "function") {
-              const Storage = file(closure_2_2[10]).Storage;
-              obj = Storage.get(closure_2_12);
+        closure_11(() => {
+          if (typeof closure_2_17 === "function") {
+            if (typeof closure_2_16 === "function") {
+              const Storage = file(closure_2_2[11]).Storage;
+              obj = Storage.get(closure_2_13);
               if (null == obj) {
                 obj = {};
               }
@@ -911,7 +931,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                 const obj2 = {};
                 const merged = Object.assign(tmp7);
                 const merged1 = Object.assign(obj);
-                closure_2_17(closure_0, obj2);
+                closure_2_18(closure_0, obj2);
               }
             } else {
               throw new TypeError("Trying to call a non-function");
@@ -950,7 +970,7 @@ class LocalMessageCacheManager extends LifecycleManager {
   }
   _initialize() {
     const self = this;
-    let verboseResult = closure_11.verbose("cache manager initialize");
+    let verboseResult = closure_12.verbose("cache manager initialize");
     obj = DispatcherDefault;
     let subscription = obj.subscribe("LOGOUT", this.handleLogout);
     let obj2 = DispatcherDefault;
@@ -1026,14 +1046,14 @@ class LocalMessageCacheManager extends LifecycleManager {
                 _self = value;
                 let _Object = Object;
                 let _HermesInternal2 = HermesInternal;
-                let verboseResult = closure_1_11.verbose("initialized with " + Object.keys(_self).length + " messages in local cache");
+                let verboseResult = closure_1_12.verbose("initialized with " + Object.keys(_self).length + " messages in local cache");
                 let _Object2 = Object;
                 values = Object.values(_self);
                 _self = values[Symbol.iterator]();
                 if (_self === undefined) {
-                  let obj3 = values(closure_2[19]);
+                  let obj3 = values(closure_2[20]);
                   let subscription = obj3.subscribe("LOAD_MESSAGES_SUCCESS", closure_132_0.handleLoadMessagesSuccess);
-                  let obj4 = values(closure_2[19]);
+                  let obj4 = values(closure_2[20]);
                   let subscription1 = obj4.subscribe("CACHE_LOADED", closure_132_0.handleCacheLoaded);
                   c8 = 3;
                   return { value: "HermesInternal", done: null };
@@ -1041,7 +1061,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   let c6 = 1;
                   values = tmp10;
                   channel_id = values.channel_id;
-                  let obj9 = values(closure_2[20]);
+                  let obj9 = values(closure_2[21]);
                   value = obj9.get(channel_id);
                   closure_2 = value;
                   if (value == null) {
@@ -1055,10 +1075,10 @@ class LocalMessageCacheManager extends LifecycleManager {
                   let str2 = " {ready: ";
                   let str3 = ", cached: ";
                   let str4 = "}";
-                  let verboseResult1 = closure_1_11.verbose("rehydrating cached messages " + channel_id + " {ready: " + ready + ", cached: " + cached + "}");
+                  let verboseResult1 = closure_1_12.verbose("rehydrating cached messages " + channel_id + " {ready: " + ready + ", cached: " + cached + "}");
                   let tmp21 = ready;
                   if (tmp21) {
-                    let verboseResult2 = closure_1_11.verbose("manually invoking handleChannelLoaded");
+                    let verboseResult2 = closure_1_12.verbose("manually invoking handleChannelLoaded");
                     c7 = 3;
                     c8 = 1;
                     let obj8 = { value: closure_132_0.handleChannelLoaded(channel_id), done: false };

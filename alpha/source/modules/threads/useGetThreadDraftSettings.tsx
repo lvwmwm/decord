@@ -1,12 +1,12 @@
-// Module ID: 10335
-// Function ID: 10336
+// Module ID: 10383
+// Function ID: 10384
 // Name: useGetThreadDraftSettings
-// Dependencies: [7825, 504, 11, 2]
+// Dependencies: [7841, 504, 11, 2]
 // Exports: default, useHasThreadDraft
 
-// Module 10335 (useGetThreadDraftSettings)
+// Module 10383 (useGetThreadDraftSettings)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DraftStore from "DraftStore" /* 7825 */;
+import DraftStore from "DraftStore" /* 7841 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

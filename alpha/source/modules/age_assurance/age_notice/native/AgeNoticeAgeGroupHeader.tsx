@@ -1,21 +1,21 @@
-// Module ID: 16769
-// Function ID: 16770
+// Module ID: 16861
+// Function ID: 16862
 // Name: AgeNoticeAgeGroupHeader
-// Dependencies: [32, 19, 17, 6857, 4987, 21, 5141, 575, 4974, 10262, 3255, 8079, 16759, 7693, 5855, 5747, 1113, 7106, 7180, 16770, 5754, 2]
+// Dependencies: [32, 19, 17, 6872, 4987, 21, 5141, 575, 4974, 10310, 3255, 8095, 16851, 7709, 5869, 5761, 1113, 7121, 7195, 16862, 5768, 2]
 // Exports: TinyBroncoAgeGroupHeader
 
-// Module 16769 (AgeNoticeAgeGroupHeader)
+// Module 16861 (AgeNoticeAgeGroupHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3255 from "module_3255" /* 3255 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6857 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10262 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16770 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10310 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16862 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -54,13 +54,13 @@ function AccountStatusNotice(ageGroup) {
       const obj3 = { style: tmp.notice, children: items };
       const obj4 = { style: tmp.noticeIcon, children: closure_8(require("CircleInformationIcon").CircleInformationIcon, { size: "xs", color: "text-link" }) };
       items = [closure_8(View, obj4), , ];
-      obj5 = { style: tmp.noticeBody, variant: "text-sm/normal", color: "text-default", children: intl.format(obj5[ageGroup], obj6) };
-      const Text = tmp2(5747).Text;
+      obj5 = { style: tmp.noticeBody, variant: "body-sm/normal", color: "text-default", children: intl.format(obj5[ageGroup], obj6) };
+      const Text = tmp2(5761).Text;
       intl = tmp2(1113).intl;
       obj6 = { handleOnBlogHook: handleOpenBlog };
       items[1] = closure_8(Text, obj5);
       const obj7 = { style: tmp.noticeDismiss, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(require("intl").t.WAI6xu), hitSlop: 12, onPress: tmp8, children: closure_8(require("XSmallIcon").XSmallIcon, { size: "sm", color: "icon-strong" }) };
-      const PressableOpacity = tmp2(7106).PressableOpacity;
+      const PressableOpacity = tmp2(7121).PressableOpacity;
       intl2 = tmp2(1113).intl;
       items[2] = closure_8(PressableOpacity, obj7);
       tmp9 = closure_9(View, obj3);
@@ -78,24 +78,24 @@ function AgeGroupDescription(ageGroup) {
   let v221iML;
   ageGroup = ageGroup.ageGroup;
   if (useAgeGroupPresentation.AgeGroupState.ADULT === ageGroup) {
-    const obj2 = { variant: "text-sm/normal", color: "text-default", children: format3(gi4ulu, obj3) };
-    const Text3 = tmp(5747).Text;
+    const obj2 = { variant: "body-sm/normal", color: "text-default", children: format3(gi4ulu, obj3) };
+    const Text3 = tmp(5761).Text;
     const intl3 = tmp(1113).intl;
     format3 = intl3.format;
     obj3 = { handleOnAgeGatedContentHook: useAgeGroupPresentation.handleOpenAgeGatedContentArticle };
     gi4ulu = _modDef3255.gi4ulu;
     return metroImportAll(Text3, obj2);
   } else if (useAgeGroupPresentation.AgeGroupState.TEEN === ageGroup) {
-    const obj4 = { variant: "text-sm/normal", color: "text-default", children: format2(v221iML, obj5) };
-    const Text2 = tmp(5747).Text;
+    const obj4 = { variant: "body-sm/normal", color: "text-default", children: format2(v221iML, obj5) };
+    const Text2 = tmp(5761).Text;
     const intl2 = tmp(1113).intl;
     format2 = intl2.format;
     obj5 = { handleOnAgeGatedContentHook: useAgeGroupPresentation.handleOpenAgeGatedContentArticle, handleOnConfirmAgeHook: useAgeGroupPresentation.handleShowAgeVerification };
     v221iML = _modDef3255["221iML"];
     return metroImportAll(Text2, obj4);
   } else if (useAgeGroupPresentation.AgeGroupState.UNVERIFIED === ageGroup) {
-    const obj = { variant: "text-sm/normal", color: "text-default", children: format(prop, obj6) };
-    const Text = tmp(5747).Text;
+    const obj = { variant: "body-sm/normal", color: "text-default", children: format(prop, obj6) };
+    const Text = tmp(5761).Text;
     const intl = tmp(1113).intl;
     format = intl.format;
     obj6 = { handleOnAgeGatedContentHook: handleOpenUnconfirmedAgeGroupSupportArticle.handleOpenUnconfirmedAgeGroupSupportArticle, handleOnConfirmAgeHook: useAgeGroupPresentation.handleShowAgeVerification };
@@ -111,12 +111,12 @@ function AgeGroupCallToAction(ageGroup) {
     return null;
   } else if (useAgeGroupPresentation.AgeGroupState.TEEN === ageGroup) {
     const obj2 = { grow: true, variant: "secondary", size: "md", text: intl2.string(_modDef3255["+7NlgO"]), onPress: useAgeGroupPresentation.handleOpenAgeGatedContentArticle };
-    const Button2 = tmp(5754).Button;
+    const Button2 = tmp(5768).Button;
     intl2 = tmp(1113).intl;
     return metroImportAll(Button2, obj2);
   } else if (useAgeGroupPresentation.AgeGroupState.UNVERIFIED === ageGroup) {
     const obj = { grow: true, variant: "secondary", size: "md", text: intl.string(_modDef3255["cI+bc/"]), onPress: useAgeGroupPresentation.handleShowAgeVerification };
-    const Button = tmp(5754).Button;
+    const Button = tmp(5768).Button;
     intl = tmp(1113).intl;
     return metroImportAll(Button, obj);
   }
@@ -129,7 +129,7 @@ let createStyles = createStyles_mod;
 let obj = { header: obj2, notice: obj3, noticeIcon: { flexShrink: 0 }, noticeBody: { flex: 1 }, noticeDismiss: { flexShrink: 0 }, description: obj4 };
 obj2 = { gap: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_24 };
 createStyles = createStyles.createStyles;
-obj3 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+obj3 = { flexDirection: "row", alignItems: "flex-start", gap: nativeDefault.space.PX_8, padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, borderWidth: 1, borderColor: nativeDefault.colors.TEXT_LINK, backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
 obj4 = { gap: nativeDefault.space.PX_8 };
 let closure_10 = createStyles(obj);
 let items = [dismissible_content.DismissibleContent.TINY_BRONCO_NOTICE];

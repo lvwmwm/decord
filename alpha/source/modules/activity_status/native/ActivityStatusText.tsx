@@ -1,12 +1,12 @@
-// Module ID: 10884
-// Function ID: 10885
+// Module ID: 10932
+// Function ID: 10933
 // Name: ActivityStatusText
-// Dependencies: [19, 21, 5141, 5747, 2]
+// Dependencies: [19, 21, 5141, 5761, 2]
 // Exports: default
 
-// Module 10884 (ActivityStatusText)
+// Module 10932 (ActivityStatusText)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ export default function ActivityStatusText(variant) {
   let str = variant.variant;
   ({ children, style } = variant);
   if (str === undefined) {
-    str = "text-xs/medium";
+    str = "body-xs/medium";
   }
   const merged = Object.assign(variant, Object.assign({ children: 0, style: 0, variant: 0 }));
   const items = [closure_3().text, style];

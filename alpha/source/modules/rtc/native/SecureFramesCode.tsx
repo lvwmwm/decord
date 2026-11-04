@@ -1,13 +1,13 @@
-// Module ID: 9407
-// Function ID: 9408
+// Module ID: 9424
+// Function ID: 9425
 // Name: SecureFramesCode
-// Dependencies: [19, 17, 1083, 21, 5141, 575, 5747, 2]
+// Dependencies: [19, 17, 1083, 21, 5141, 575, 5761, 2]
 // Exports: default
 
-// Module 9407 (SecureFramesCode)
+// Module 9424 (SecureFramesCode)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -48,7 +48,7 @@ function SecureFramesCodeGrid(chunks) {
       let obj = {
         style: row.row,
         children: join.map((children, index) => {
-          const obj = { style: codeText.codeText, variant: "text-md/normal", color: "text-default", children };
+          const obj = { style: codeText.codeText, variant: "body-md/normal", color: "text-default", children };
           return closure_2_5(chunks(columns[6]).Text, obj, "" + children + "-" + index);
         })
       };
@@ -90,7 +90,7 @@ export default function SecureFramesCode(chunks) {
   ({ title, trailing, columns } = chunks);
   const tmp = closure_8();
   const obj = { style: tmp.codeHeader, children: items };
-  items = [hasOwnProperty(Text_Text.Text, { color: "mobile-text-heading-primary", variant: "heading-md/semibold", children: title }), trailing];
+  items = [hasOwnProperty(Text_Text.Text, { color: "mobile-text-heading-primary", variant: "heading-sm/semibold", children: title }), trailing];
   const items1 = [metroRequire(React3, obj), ];
   const obj2 = { style: tmp.code, children: tmp5Result };
   const tmp2 = metroRequire;

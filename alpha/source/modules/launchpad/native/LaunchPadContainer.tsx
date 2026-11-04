@@ -1,20 +1,20 @@
-// Module ID: 19222
-// Function ID: 19223
+// Module ID: 19326
+// Function ID: 19327
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 11673, 21, 5141, 11674, 19223, 19225, 12950, 1652, 5757, 5327, 18202, 5426, 19226, 2]
+// Dependencies: [19, 17, 11724, 21, 5141, 11725, 19327, 19329, 13032, 1652, 5771, 5328, 18299, 5428, 19330, 2]
 // Exports: default
 
-// Module 19222 (LaunchPadContainer)
+// Module 19326 (LaunchPadContainer)
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11674 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12950 */;
-import useLaunchPadStateDefault from "useLaunchPadState" /* 19223 */;
-import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19225 */;
-import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19226 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11725 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13032 */;
+import useLaunchPadStateDefault from "useLaunchPadState" /* 19327 */;
+import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19329 */;
+import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19330 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11673 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11724 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -148,13 +148,13 @@ export default function LaunchPadContainer(children) {
   LaunchPadContainerTsx3.__workletHash = 13015105508497;
   LaunchPadContainerTsx3.__initData = tmp15;
   const animatedStyle = useAnimatedStyle(LaunchPadContainerTsx3);
-  const MobileHomeDrawerExperiment = tmp8(5327).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = tmp8(5328).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
   let obj2 = { value: gestureRef, children: metroRequire(GestureDetector, obj3) };
-  const Provider = tmp2(18202).Provider;
+  const Provider = tmp2(18299).Provider;
   obj3 = { gesture, children: tmp23(tmp24, obj4) };
   obj4 = { style: tmp.wrapper, children: items7 };
-  GestureDetector = tmp8(5426).GestureDetector;
+  GestureDetector = tmp8(5428).GestureDetector;
   const obj5 = { style: items6, children };
   items6 = [tmp.container, animatedStyle];
   items7 = [metroRequire(tmp2(1652).View, obj5), ];

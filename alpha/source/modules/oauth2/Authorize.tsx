@@ -1,15 +1,15 @@
-// Module ID: 9874
-// Function ID: 9875
+// Module ID: 9892
+// Function ID: 9893
 // Name: Authorize
-// Dependencies: [4990, 5172, 1072, 9875, 9034, 6913, 5078, 1084, 5871, 2]
+// Dependencies: [4990, 5172, 1072, 9893, 9051, 6928, 5078, 1084, 5885, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 9874 (Authorize)
+// Module 9892 (Authorize)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5078 */;
-import _mod6913 from "module_6913" /* 6913 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 9034 */;
-import scopes from "scopes" /* 9875 */;
+import _mod6928 from "module_6928" /* 6928 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 9051 */;
+import scopes from "scopes" /* 9893 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import Constants from "Constants" /* 1072 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const QueryStringUtils = tmp(5871);
+const QueryStringUtils = tmp(5885);
 ({ EMPTY_NUX_SERVER: hasOwnProperty, FAVORITES: metroRequire, ME: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/oauth2/Authorize.tsx");
 
@@ -28,7 +28,7 @@ export function filterScopes(items) {
     const RemovedScopes = scopes.RemovedScopes;
     return !RemovedScopes.includes(item);
   });
-  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(9034).OAuth2Scopes.APPLICATIONS_COMMANDS);
+  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(9051).OAuth2Scopes.APPLICATIONS_COMMANDS);
   if (hasItem) {
     found.push(OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
@@ -44,7 +44,7 @@ export function parseOAuth2AuthorizeProps(query) {
       return guild_id;
     }
   }
-  const obj = _mod6913;
+  const obj = _mod6928;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {

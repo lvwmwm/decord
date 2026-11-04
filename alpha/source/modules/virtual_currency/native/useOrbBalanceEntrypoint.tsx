@@ -1,12 +1,12 @@
-// Module ID: 17043
-// Function ID: 17044
+// Module ID: 17135
+// Function ID: 17136
 // Name: useOrbBalanceEntrypoint
-// Dependencies: [5, 19, 17044, 5381, 17045, 2123, 14643, 14889, 17061, 17047, 2]
+// Dependencies: [5, 19, 17136, 5382, 17137, 2123, 14723, 14969, 17153, 17139, 2]
 // Exports: useOrbBalanceEntrypoint
 
-// Module 17043 (useOrbBalanceEntrypoint)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import OrbWalletConstants from "OrbWalletConstants" /* 17044 */;
+// Module 17135 (useOrbBalanceEntrypoint)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import OrbWalletConstants from "OrbWalletConstants" /* 17136 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ export function useOrbBalanceEntrypoint(location) {
   let obj2 = require("OrbchievementsExperiment");
   const tmp3 = obj2.useIsOrbchievementsMobileEnabled({ location: _location }) && enabled;
   _require = tmp3;
-  const tmpResult = tmp(17047);
+  const tmpResult = tmp(17139);
   const orbChallengeUnreadState = tmpResult.useOrbChallengeUnreadState({ enabled: tmp3 });
   const items = [tmp3];
   ({ hasUnreadUpdate, notificationType } = orbChallengeUnreadState);

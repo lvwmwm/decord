@@ -1,30 +1,30 @@
-// Module ID: 15528
-// Function ID: 15529
+// Module ID: 15615
+// Function ID: 15616
 // Name: UserSettingsPremiumGuildSubscriptions
-// Dependencies: [19, 17, 1385, 2177, 7709, 2180, 2181, 1072, 1387, 21, 5141, 6898, 5207, 8589, 7555, 6655, 7282, 7286, 5747, 1113, 2190, 15529, 1393, 15543, 15545, 15547, 15551, 15428, 7702, 8657, 15491, 504, 1499, 7711, 1624, 2]
+// Dependencies: [19, 17, 1385, 2177, 7725, 2180, 2181, 1072, 1387, 21, 5141, 6913, 5207, 8606, 7571, 6670, 7298, 7302, 5761, 1113, 2190, 15616, 1393, 15630, 15632, 15634, 15638, 15515, 7718, 8674, 15578, 504, 1499, 7727, 1624, 2]
 // Exports: default
 
-// Module 15528 (UserSettingsPremiumGuildSubscriptions)
+// Module 15615 (UserSettingsPremiumGuildSubscriptions)
 import intl3 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import user from "user" /* 1393 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
 import native from "native" /* 5207 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6655 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7282 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7286 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7555 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8589 */;
-import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 15543 */;
-import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 15545 */;
-import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 15551 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6670 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7298 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7571 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8606 */;
+import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 15630 */;
+import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 15632 */;
+import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 15638 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
 import BillingInfoStore from "BillingInfoStore" /* 2177 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7709 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7725 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2180 */;
 import SubscriptionStore from "SubscriptionStore" /* 2181 */;
 import Constants from "Constants" /* 1072 */;
@@ -42,7 +42,7 @@ let hasOwnProperty;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const TopPattern = tmp2(15547);
+const TopPattern = tmp2(15634);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 ({ HelpdeskArticles: unpackModuleId, UserSettingsSections: closure_12 } = Constants);
 const FractionalPremiumStates = PremiumConstants.FractionalPremiumStates;
@@ -106,13 +106,13 @@ class UserSettingsPremiumGuildSubscriptions extends PureComponent {
     if (props.hasSlots) {
       const Fragment = react.Fragment;
       const obj = { style: tmp.subscriptionHeader, children: items1 };
-      const obj2 = { style: items, variant: "text-sm/medium", color: "interactive-text-default", children: intl.string(intl3.t.GwnFO5) };
+      const obj2 = { style: items, variant: "body-sm/medium", color: "interactive-text-default", children: intl.string(intl3.t.GwnFO5) };
       items = [, ];
       ({ blurb: arr[0], blurbNotLast: arr[1] } = tmp);
       const Text = Text_Text.Text;
       intl = intl3.intl;
       items1 = [authStore3(Text, obj2), , ];
-      const obj3 = { style: tmp.blurb, variant: "text-sm/medium", color: "interactive-text-default", children: format(A4UTjH, obj4) };
+      const obj3 = { style: tmp.blurb, variant: "body-sm/medium", color: "interactive-text-default", children: format(A4UTjH, obj4) };
       const Text2 = Text_Text.Text;
       const intl2 = intl3.intl;
       format = intl2.format;
@@ -125,12 +125,12 @@ class UserSettingsPremiumGuildSubscriptions extends PureComponent {
       const tmp7 = require;
       const tmp9 = importDefault;
       if (tmp6Result) {
-        const obj6 = { style: tmp.externalManagement, variant: "text-sm/medium", color: "text-default", children: externalManagementMessage };
-        tmp6Result = tmp6(tmp7(5747).Text, obj6);
+        const obj6 = { style: tmp.externalManagement, variant: "body-sm/medium", color: "text-default", children: externalManagementMessage };
+        tmp6Result = tmp6(tmp7(5761).Text, obj6);
       }
       const obj7 = { children: items2 };
       items1[2] = tmp6Result;
-      items2 = [closure_15(tmp5, obj), authStore3(tmp9(15529), {})];
+      items2 = [closure_15(tmp5, obj), authStore3(tmp9(15616), {})];
       tmp3Result = tmp3(Fragment, obj7);
     }
     return tmp3Result;
@@ -207,12 +207,12 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   if (flag == null) {
     flag = true;
   }
-  ({ fractionalState: c2, endsAt } = flag(7702)({ forceFetch: true }));
-  flag(7702)({ forceFetch: true });
+  ({ fractionalState: c2, endsAt } = flag(7718)({ forceFetch: true }));
+  flag(7718)({ forceFetch: true });
   const tmpResult = require("ReverseTrialUtils");
   isInReverseTrial = tmpResult.useIsInReverseTrial();
-  const tmp4 = flag(15491);
-  fpDurationText = tmp4(endsAt, tmp(15491).CountDownMessageTypes.LONG_TIME_LEFT);
+  const tmp4 = flag(15578);
+  fpDurationText = tmp4(endsAt, tmp(15578).CountDownMessageTypes.LONG_TIME_LEFT);
   const items = [GuildBoostSlotStore, BillingInfoStore, SubscriptionPlanStore, UserStore];
   const tmpResult6 = require("get initialized");
   const stateFromStoresObject = tmpResult6.useStateFromStoresObject(items, () => {

@@ -1,22 +1,22 @@
-// Module ID: 17146
-// Function ID: 17147
+// Module ID: 17238
+// Function ID: 17239
 // Name: QuestHomeOrbShopRewardCardAssetTile
-// Dependencies: [32, 19, 17, 1074, 21, 9587, 575, 5141, 9634, 38, 2116, 5837, 9635, 9636, 8866, 9621, 9668, 1075, 9669, 9623, 9646, 9648, 9588, 7855, 5138, 5719, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 9606, 575, 5141, 9653, 38, 2116, 5851, 9654, 9655, 8883, 9640, 9687, 1075, 9688, 9642, 9665, 9667, 9607, 7871, 5138, 5732, 2]
 
-// Module 17146 (QuestHomeOrbShopRewardCardAssetTile)
+// Module 17238 (QuestHomeOrbShopRewardCardAssetTile)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import useToken from "useToken" /* 5719 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7855 */;
-import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9587 */;
-import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9588 */;
-import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9634 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9635 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9636 */;
+import useToken from "useToken" /* 5732 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7871 */;
+import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9606 */;
+import useDefaultVariantIndex from "useDefaultVariantIndex" /* 9607 */;
+import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9653 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9654 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -70,10 +70,10 @@ function ProductPreviewInner(cardHeight) {
     flag = false;
   }
   let tmp = closure_15();
-  const obj = cardWidth(8866);
+  const obj = cardWidth(8883);
   const shopProductItems = obj.useShopProductItems(product);
   ({ firstProfileEffect, firstAvatarDecoration, firstNameplate } = shopProductItems);
-  const tmp5 = cardWidth < cardWidth(9587).COLLECTIBLES_SHOP_CARD_WIDTH || cardHeight < cardWidth(9587).COLLECTIBLES_SHOP_CARD_HEIGHT;
+  const tmp5 = cardWidth < cardWidth(9606).COLLECTIBLES_SHOP_CARD_WIDTH || cardHeight < cardWidth(9606).COLLECTIBLES_SHOP_CARD_HEIGHT;
   dependencyMap = tmp5;
   const items = [cardHeight, cardWidth, tmp5];
   const memo = react.useMemo(() => {
@@ -101,17 +101,17 @@ function ProductPreviewInner(cardHeight) {
   }, items1);
   if (product.type === cardWidth(2116).CollectiblesItemType.BUNDLE) {
     const obj2 = { deco: firstAvatarDecoration, pfx: firstProfileEffect, nameplate: firstNameplate, size: "small", previewAssets: product.previewAssets, disableStaticBackground: true, targetSize: memo1 };
-    return closure_7(cardHeight(9621), obj2);
+    return closure_7(cardHeight(9640), obj2);
   } else if (product.skuId === EXTERNAL_PRODUCT_SKU_IDS.ORB_PROFILE_BADGE) {
     const obj3 = { source: obj4, style: tmp.externalProductImage };
-    obj4 = { uri: cardHeight(9668) };
-    const tmp33 = cardHeight(5837);
+    obj4 = { uri: cardHeight(9687) };
+    const tmp33 = cardHeight(5851);
     return closure_7(tmp33, obj3);
   } else {
     const ALL = tmp2(1075).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      size = { skuId: product.skuId, width: tmp2(9669).FRACTIONAL_NITRO_COIN_SIZE.CARD, height: tmp2(9669).FRACTIONAL_NITRO_COIN_SIZE.CARD };
-      const FractionalNitroCoinIllustration = tmp2(9669).FractionalNitroCoinIllustration;
+      size = { skuId: product.skuId, width: tmp2(9688).FRACTIONAL_NITRO_COIN_SIZE.CARD, height: tmp2(9688).FRACTIONAL_NITRO_COIN_SIZE.CARD };
+      const FractionalNitroCoinIllustration = tmp2(9688).FractionalNitroCoinIllustration;
       return closure_7(FractionalNitroCoinIllustration, size);
     } else {
       const first = memo(product.items, 1)[0];
@@ -134,11 +134,11 @@ function ProductPreviewInner(cardHeight) {
           tmp24Result = tmp24(tmp28, obj5);
         } else {
           const obj6 = { item: first, size };
-          tmp24Result = tmp24(cardHeight(9634), obj6);
+          tmp24Result = tmp24(cardHeight(9653), obj6);
         }
         return tmp24Result;
       } else if (cardWidth(2116).CollectiblesItemType.PROFILE_EFFECT === type) {
-        const obj7 = { style: tmp.profileEffectContainer, children: closure_7(cardHeight(9623), obj8) };
+        const obj7 = { style: tmp.profileEffectContainer, children: closure_7(cardHeight(9642), obj8) };
         obj8 = { item: first, hideBackground: true };
         return closure_7(closure_5, obj7);
       } else if (cardWidth(2116).CollectiblesItemType.PROFILE_FRAME === type) {
@@ -153,12 +153,12 @@ function ProductPreviewInner(cardHeight) {
           obj10 = { profileFrame: first, previewWidth: prop, previewHeight: prop1, profileBackgroundColor: tmp16(575).colors.BACKGROUND_BASE_LOW };
           prop = undefined;
           tmp16 = cardHeight;
-          tmp17 = cardHeight(9646);
+          tmp17 = cardHeight(9665);
           if (memo != null) {
             prop = memo.profileFramePreviewWidth;
           }
           if (prop == null) {
-            prop = tmp2(9587).COLLECTIBLES_SHOP_CARD_WIDTH - PX_32;
+            prop = tmp2(9606).COLLECTIBLES_SHOP_CARD_WIDTH - PX_32;
           }
           prop1 = undefined;
           if (memo != null) {
@@ -172,7 +172,7 @@ function ProductPreviewInner(cardHeight) {
         profileFrameContainer = tmp.profileFrameContainer;
       } else if (cardWidth(2116).CollectiblesItemType.NAMEPLATE === type) {
         const obj11 = { item: first };
-        return closure_7(cardHeight(9648), obj11);
+        return closure_7(cardHeight(9667), obj11);
       } else {
         return null;
       }

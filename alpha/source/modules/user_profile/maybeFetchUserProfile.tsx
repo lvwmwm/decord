@@ -1,18 +1,18 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 8899
+// Function ID: 8900
 // Name: maybeFetchUserProfile
-// Dependencies: [4990, 5053, 7896, 7843, 8839, 7468, 8876, 8883, 2]
+// Dependencies: [4990, 5053, 7912, 7859, 8856, 7484, 8893, 8900, 2]
 // Exports: default
 
-// Module 8882 (maybeFetchUserProfile)
-import ConnectionsUtils from "ConnectionsUtils" /* 7468 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7843 */;
-import useAvatarColor from "useAvatarColor" /* 8839 */;
-import UserActionCreators from "UserActionCreators" /* 8876 */;
-import preloadUserBannerImageDefault from "preloadUserBannerImage" /* 8883 */;
+// Module 8899 (maybeFetchUserProfile)
+import ConnectionsUtils from "ConnectionsUtils" /* 7484 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
+import useAvatarColor from "useAvatarColor" /* 8856 */;
+import UserActionCreators from "UserActionCreators" /* 8893 */;
+import preloadUserBannerImageDefault from "preloadUserBannerImage" /* 8900 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import UserProfileStore from "UserProfileStore" /* 7896 */;
+import UserProfileStore from "UserProfileStore" /* 7912 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/user_profile/maybeFetchUserProfile.tsx");

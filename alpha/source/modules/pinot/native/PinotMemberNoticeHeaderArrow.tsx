@@ -1,10 +1,10 @@
-// Module ID: 11483
-// Function ID: 11484
+// Module ID: 11533
+// Function ID: 11534
 // Name: PinotMemberNoticeHeaderArrow
-// Dependencies: [19, 17, 4990, 21, 5141, 575, 504, 11484, 11459, 11468, 2]
+// Dependencies: [19, 17, 4990, 21, 5141, 575, 504, 11534, 11509, 11518, 2]
 // Exports: PinotMemberNoticeHeaderArrow
 
-// Module 11483 (PinotMemberNoticeHeaderArrow)
+// Module 11533 (PinotMemberNoticeHeaderArrow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
@@ -26,7 +26,7 @@ let obj = { anchor: { position: "absolute", top: 0, right: 0, bottom: 0, left: 0
 size = { position: "absolute", top: 9 - result / 2, left: (16 - result) / 2, width: result, height: result, transform: items, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_FEEDBACK_INFO, backgroundColor: nativeDefault.colors.STANDALONE_CHANNEL_CONTENT_BACKGROUND };
 items = [{ rotate: "45deg" }];
 createStyles = createStyles.createStyles;
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_INFO };
+obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_MOD_INFO };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 let closure_6 = createStyles(obj);
 size = size_mod;
@@ -42,11 +42,11 @@ export function PinotMemberNoticeHeaderArrow(channelId) {
   const items1 = [channelId];
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const obj2 = channelId(11484);
+  const obj2 = channelId(11534);
   const isForumChannelSearchActive = obj2.useIsForumChannelSearchActive(channelId);
-  const obj3 = channelId(11459);
+  const obj3 = channelId(11509);
   const visible = obj3.usePinotMemberNotice(stateFromStores, "mobile_channel_header").visible;
-  const obj4 = channelId(11468);
+  const obj4 = channelId(11518);
   const pinotChannelLabelCenter = obj4.usePinotChannelLabelCenter(channelId, ref);
   const center = pinotChannelLabelCenter.center;
   let tmp9Result2 = null;

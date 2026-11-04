@@ -1,15 +1,15 @@
-// Module ID: 14338
-// Function ID: 14339
+// Module ID: 14418
+// Function ID: 14419
 // Name: ChatBeginningRowJoinApplication
-// Dependencies: [19, 17, 5073, 1385, 1072, 21, 5141, 575, 14339, 504, 14340, 7083, 5747, 1113, 5175, 6887, 5754, 2]
+// Dependencies: [19, 17, 5073, 1385, 1072, 21, 5141, 575, 14419, 504, 14420, 7098, 5761, 1113, 5175, 6902, 5768, 2]
 // Exports: default
 
-// Module 14338 (ChatBeginningRowJoinApplication)
+// Module 14418 (ChatBeginningRowJoinApplication)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -84,7 +84,7 @@ export default function ChatBeginningRowJoinRequest(channelId) {
         const obj6 = { guild: joinRequestGuild, size: require("GuildIcon").GuildIconSizes.XXSMALL };
         const tmp2Result = tmp2(joinRequestGuild[11]);
         items2 = [closure_7(tmp2Result, obj6), ];
-        const obj7 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: joinRequestGuild.name };
+        const obj7 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", children: joinRequestGuild.name };
         items2[1] = closure_7(require("Text/Text").Text, obj7);
         tmp10Result = tmp10(tmp12, obj5);
       }
@@ -110,9 +110,9 @@ export default function ChatBeginningRowJoinRequest(channelId) {
           const obj = { children: items };
           const obj2 = { style: closure_0.divider };
           items = [metroImportDefault(View, obj2), , ];
-          const obj3 = { style: closure_0.formQuestion, variant: "text-xs/semibold", color: "text-muted", children: field_type.label };
+          const obj3 = { style: closure_0.formQuestion, variant: "body-xs/semibold", color: "text-muted", children: field_type.label };
           items[1] = metroImportDefault(Text_Text.Text, obj3);
-          const obj4 = { variant: "text-md/medium", color: "text-strong", children: response };
+          const obj4 = { variant: "body-md/medium", color: "text-strong", children: response };
           items[2] = metroImportDefault(Text_Text.Text, obj4);
           const _HermesInternal = HermesInternal;
           return metroImportAll(View, obj, "form-response-" + index);

@@ -1,19 +1,19 @@
-// Module ID: 15042
-// Function ID: 15043
+// Module ID: 15122
+// Function ID: 15123
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 1499, 6864, 7290, 1357, 1113, 5747, 7124, 15043, 2]
+// Dependencies: [32, 19, 21, 1499, 6879, 7306, 1357, 1113, 5761, 7139, 15123, 2]
 // Exports: default
 
-// Module 15042 (UserProfileEditNoteModal)
+// Module 15122 (UserProfileEditNoteModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
-import Navigator2 from "Navigator" /* 7290 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 15043 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import Navigator2 from "Navigator" /* 7306 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 15123 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ export default function UserProfileEditNoteModal(arg0) {
     headerTitle() {
       const Text = Text_Text.Text;
       const intl = intl2.intl;
-      return <Text variant="redesign/heading-18/semibold" accessibilityRole="header">{intl.string(intl2.t.sHHsOM)}</Text>;
+      return <Text variant="heading-md/semibold" accessibilityRole="header">{intl.string(intl2.t.sHHsOM)}</Text>;
     },
     headerLeft: tmpResult2.getHeaderCloseButton(handleClose),
     render() {

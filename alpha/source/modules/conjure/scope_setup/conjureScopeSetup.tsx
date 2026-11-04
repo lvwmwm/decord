@@ -1,24 +1,24 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12800
+// Function ID: 12801
 // Name: conjureScopeSetup
-// Dependencies: [109, 5, 10981, 12720, 10980, 6964, 1072, 510, 10445, 12721, 12722, 1113, 3995, 1282, 572, 11005, 11004, 2]
+// Dependencies: [109, 5, 11029, 12801, 11028, 6979, 1072, 510, 10493, 12802, 12803, 1113, 3995, 1282, 572, 11054, 11053, 2]
 // Exports: getHeldConjurePromptGuildId, keepConjureInstallScope, ownerOnlyClarification, reconcileHeldConjurePrompt, serverQuestionFields, settleConjureInstallScope, startConjurePrompt, switchConjureInstallScope
 
-// Module 12719 (conjureScopeSetup)
+// Module 12800 (conjureScopeSetup)
 import Storage6 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11004 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12721 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12722 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11053 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 12802 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12803 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureChatStore from "ConjureChatStore" /* 10981 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12720 */;
-import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 10980 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjureChatStore from "ConjureChatStore" /* 11029 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 12801 */;
+import ConjureConnectionStore_mod from "ConjureConnectionStore" /* 11028 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import size from "module_2" /* 2 */;
 
 let c2, c4, closure_3, closure_4, set;
@@ -27,7 +27,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f102658 = function*(arg0, value) {
+const f103390 = function*(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -117,27 +117,27 @@ function _toPropertyKey(obj) {
   }
   return text;
 }
-function restoreToComposer(projectId, nonce, fn) {
+function restoreToComposer(CONJURE_HOME_DRAFT_KEY, nonce, fn) {
   const Storage = Storage6.Storage;
   obj = Storage.get(ConjureHeldPrompts);
   const tmp3 = ConjureHeldPrompts;
   if (obj == null) {
     obj = {};
   }
-  const items = [projectId];
+  const items = [CONJURE_HOME_DRAFT_KEY];
   const tmp4 = _objectWithoutProperties(obj, items.map(_toPropertyKey));
   const Storage2 = tmp(510).Storage;
   const result = Storage2.set(tmp3, tmp4);
-  authStore(projectId, nonce.nonce);
-  if ("" === ConjureComposerDraftStore.getDraft(projectId)) {
+  authStore(CONJURE_HOME_DRAFT_KEY, nonce.nonce);
+  if ("" === ConjureComposerDraftStore.getDraft(CONJURE_HOME_DRAFT_KEY)) {
     const tmpResult = ConjureChatActionCreators;
-    tmpResult.setComposerDraft(projectId, nonce.message);
+    tmpResult.setComposerDraft(CONJURE_HOME_DRAFT_KEY, nonce.message);
   }
   const tmpResult3 = conjureAttachmentDrafts;
-  if (0 === tmpResult3.getConjureAttachmentDrafts(projectId, "chat").length) {
+  if (0 === tmpResult3.getConjureAttachmentDrafts(CONJURE_HOME_DRAFT_KEY, "chat").length) {
     const attachments = nonce.attachments;
     const tmpResult4 = conjureAttachmentDrafts;
-    const result1 = tmpResult4.addConjureAttachmentDrafts(projectId, "chat", attachments.map((name) => ({ draft: { name: name.name, contentType: name.content_type, status: "ready", ref: name } })));
+    const result1 = tmpResult4.addConjureAttachmentDrafts(CONJURE_HOME_DRAFT_KEY, "chat", attachments.map((name) => ({ draft: { name: name.name, contentType: name.content_type, status: "ready", ref: name } })));
   }
   fn();
 }
@@ -265,7 +265,7 @@ export function startConjurePrompt(value, trimmed, arg2, guildId) {
     const merged = Object.assign(obj);
     const obj3 = { message: trimmed, attachments: items, nonce: tmp5Result.createNonce(), guildId };
     obj2[value] = obj3;
-    tmp5Result = tmp5(10445);
+    tmp5Result = tmp5(10493);
     const result = set(tmp7, obj2);
   } else {
     metroImportAll(value, trimmed, items);
@@ -474,7 +474,7 @@ export function settleConjureInstallScope(arg0, arg1, arg2) {
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f102658)();
+    value = tmp2(f103390)();
   }
   const result = obj.set(combined, value);
   return value;
@@ -550,7 +550,7 @@ export function switchConjureInstallScope(arg0, id, arg2, arg3) {
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f102658)();
+    value = tmp2(f103390)();
   }
   const result = obj.set(combined, value);
   return value;

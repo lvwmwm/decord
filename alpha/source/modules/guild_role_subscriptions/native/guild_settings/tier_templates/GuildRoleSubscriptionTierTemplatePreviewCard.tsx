@@ -1,20 +1,20 @@
-// Module ID: 20149
-// Function ID: 20150
+// Module ID: 20265
+// Function ID: 20266
 // Name: GuildRoleSubscriptionTierTemplatePreviewCard
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 5747, 5381, 20150, 2123, 20154, 1187, 20153, 1113, 15603, 1499, 17359, 20155, 1252, 5880, 17365, 20151, 17370, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5761, 5382, 20266, 2123, 20270, 1187, 20269, 1113, 15690, 1499, 17450, 20271, 1252, 5894, 17456, 20267, 17461, 2]
 // Exports: default
 
-// Module 20149 (GuildRoleSubscriptionTierTemplatePreviewCard)
+// Module 20265 (GuildRoleSubscriptionTierTemplatePreviewCard)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15603 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20153 */;
-import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20155 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ChevronSmallUpIcon from "ChevronSmallUpIcon" /* 15690 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20269 */;
+import GuildRoleSubscriptionTierTemplateActionCreators from "GuildRoleSubscriptionTierTemplateActionCreators" /* 20271 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -39,7 +39,7 @@ let obj7;
 let rect;
 let size;
 let tmp;
-const AppAnalyticsUtils = tmp(5880);
+const AppAnalyticsUtils = tmp(5894);
 function ContentHeader(arg0) {
   let count;
   let items;
@@ -62,11 +62,11 @@ function BenefitShowCase(title) {
   const tmp = authStore;
   const tmp2 = metroRequire;
   if (typeof title === "string") {
-    const obj2 = { variant: "text-md/semibold", color: "text-default", children: title };
+    const obj2 = { variant: "body-md/semibold", color: "text-default", children: title };
     tmp3 = React4(Text_Text.Text, obj2);
   }
   const obj = { children: items };
-  items = [tmp3, React4(native.Spacer, { size: 2 }), React4(Text_Text.Text, { variant: "text-sm/medium", color: "interactive-text-default", children: description })];
+  items = [tmp3, React4(native.Spacer, { size: 2 }), React4(Text_Text.Text, { variant: "body-sm/medium", color: "interactive-text-default", children: description })];
   return tmp(tmp2, obj);
 }
 function ChannelBenefitShowCase(channel) {
@@ -80,7 +80,7 @@ function ChannelBenefitShowCase(channel) {
   items = [, ];
   const obj = GuildRoleSubscriptionTierTemplateUtils;
   items[0] = React4(obj.getPrivateChannelIconComponent(type), { size: "xs" });
-  items[1] = React4(Text_Text.Text, { variant: "text-md/semibold", color: "text-default", children: name });
+  items[1] = React4(Text_Text.Text, { variant: "body-md/semibold", color: "text-default", children: name });
   const obj3 = { title: authStore(metroRequire, obj2), description };
   return React4(BenefitShowCase, obj3);
 }
@@ -91,7 +91,7 @@ function ViewEntireTemplateFooter() {
   const tmp = closure_11();
   const obj = { style: tmp.viewEntireTemplateFooter, children: items1 };
   const obj2 = { children: items };
-  const obj3 = { variant: "text-sm/semibold", color: "interactive-text-hover", style: tmp.viewEntireTemplateText, children: intl.string(intl3.t.kejaOD) };
+  const obj3 = { variant: "body-sm/semibold", color: "interactive-text-hover", style: tmp.viewEntireTemplateText, children: intl.string(intl3.t.kejaOD) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [React4(Text, obj3), React4(native.Spacer, { size: 3 }), ];
@@ -178,7 +178,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     if (closure_7) {
       const obj2 = { selectedTemplate, handleCreateFromTemplate, newPricesToPick: suggestedUnusedPrices };
       const obj = ActionSheetActionCreatorsDefault;
-      obj.openLazy(asyncRequire(20154, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
+      obj.openLazy(asyncRequire(20270, dependencyMap.paths), "TierTemplatePriceReselectionCard", obj2);
     } else {
       handleCreateFromTemplate(selectedTemplate, arg1);
     }
@@ -192,7 +192,7 @@ export default function GuildRoleSubscriptionTierTemplatePreviewCard(template) {
     onPress: function handleViewEntireTemplate() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { template, guildId, handleSelectTemplateInPreview: callback1 };
-      obj.openLazy(asyncRequire(20150, dependencyMap.paths), "TierTemplateCard", obj2);
+      obj.openLazy(asyncRequire(20266, dependencyMap.paths), "TierTemplateCard", obj2);
     },
     children: items6
   };

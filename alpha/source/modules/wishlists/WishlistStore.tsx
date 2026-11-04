@@ -1,14 +1,14 @@
-// Module ID: 9599
-// Function ID: 9600
+// Module ID: 9618
+// Function ID: 9619
 // Name: WishlistStore
-// Dependencies: [9600, 1242, 7896, 504, 572, 2]
+// Dependencies: [9619, 1242, 7912, 504, 572, 2]
 
-// Module 9599 (WishlistStore)
+// Module 9618 (WishlistStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import UserProfileStore from "UserProfileStore" /* 7896 */;
-import WishlistRecord_mod from "WishlistRecord" /* 9600 */;
+import UserProfileStore from "UserProfileStore" /* 7912 */;
+import WishlistRecord_mod from "WishlistRecord" /* 9619 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -39,9 +39,9 @@ class WishlistStore extends Store {
     }
     return items;
   }
-  hasSkuId(arg0, arg1) {
-    const data = this.get(arg0).data;
-    const tmp = null != data && React3(data, arg1);
+  hasSkuId(firstWishlistId, id) {
+    const data = this.get(firstWishlistId).data;
+    const tmp = null != data && React3(data, id);
     return tmp;
   }
   getStatus(arg0) {

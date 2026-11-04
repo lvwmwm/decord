@@ -1,10 +1,10 @@
-// Module ID: 13913
-// Function ID: 13914
+// Module ID: 13999
+// Function ID: 14000
 // Name: ForumPostTypingUsers
-// Dependencies: [19, 17, 21, 5141, 575, 9969, 13863, 13914, 1652, 1187, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 10017, 13949, 14000, 1652, 1187, 5761, 2]
 // Exports: default
 
-// Module 13913 (ForumPostTypingUsers)
+// Module 13999 (ForumPostTypingUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -110,7 +110,7 @@ export default function ForumPostTypingUsers(hasUnreads) {
       items3 = [tmp.dots, animatedStyle];
       View = tmp4(tmp3[8]).View;
       items2[1] = closure_4(View, obj6);
-      const obj7 = { variant: "text-sm/semibold", color: str, style: tmp.typingText, lineClamp: 1, children: tmp5Result };
+      const obj7 = { variant: "body-sm/semibold", color: str, style: tmp.typingText, lineClamp: 1, children: tmp5Result };
       items2[2] = closure_4(require("Text/Text").Text, obj7);
       tmp14 = closure_5(guildId, obj5);
     }

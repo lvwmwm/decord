@@ -1,36 +1,27 @@
 // Module ID: 16388
 // Function ID: 16389
-// Dependencies: []
-// Exports: default
+// Dependencies: [16386, 16360]
 
 // Module 16388
-let closure_0 = { url: "http://localhost:8081" };
+import _mod16360 from "module_16360" /* 16360 */;
+import _mod16386 from "module_16386" /* 16386 */;
 
-export default () => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+
+export default function(arg0, arg1) {
+  let tmp3;
+  if (arguments.length < 2) {
+    const tmp7 = _mod16360[arg0];
+    let tmp8;
+    if (_mod16386(tmp7)) {
+      tmp8 = tmp7;
+    }
+    tmp3 = tmp8;
+  } else {
+    tmp3 = _mod16360[arg0];
+    const tmp = require;
+    if (tmp3) {
+      tmp3 = tmp(16360)[arg0][arg1];
+    }
   }
-  return () => {
-    closure_0 = Object.assign({}, closure_0, obj);
-    obj = {
-      onCommand(type) {
-        if ("editor.open" === type.type) {
-          const payload = type.payload;
-          let num = payload.lineNumber;
-          const _HermesInternal = HermesInternal;
-          obj = { file: payload.file, lineNumber: num };
-          const combined = "" + url.url + "/open-stack-frame";
-          if (!num) {
-            num = 1;
-          }
-          const _fetch = fetch;
-          const request = { method: "POST", body: JSON.stringify(obj) };
-          const _JSON = JSON;
-          const response = fetch(combined, request);
-        }
-      }
-    };
-    return obj;
-  };
+  return tmp3;
 };

@@ -1,15 +1,15 @@
-// Module ID: 8513
-// Function ID: 8514
+// Module ID: 8530
+// Function ID: 8531
 // Name: InteractionStore
-// Dependencies: [32, 502, 4990, 1089, 6191, 6190, 7760, 504, 572, 2]
+// Dependencies: [32, 502, 4990, 1089, 6206, 6205, 7776, 504, 572, 2]
 
-// Module 8513 (InteractionStore)
+// Module 8530 (InteractionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import InteractionTypes from "InteractionTypes" /* 6190 */;
-import interactions_InteractionTypes from "interactions/InteractionTypes" /* 6191 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7760 */;
+import InteractionTypes from "InteractionTypes" /* 6205 */;
+import interactions_InteractionTypes from "interactions/InteractionTypes" /* 6206 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -140,7 +140,7 @@ obj = {
       if (null != closure_8[nonce]) {
         const tmp4 = require;
         if (closure_8[nonce].state === interactions_InteractionTypes.InteractionState.QUEUED) {
-          closure_8[nonce].state = tmp4(6191).InteractionState.CREATED;
+          closure_8[nonce].state = tmp4(6206).InteractionState.CREATED;
           const onCreate = tmp3.onCreate;
           if (onCreate != null) {
             onCreate(tmp);
@@ -206,7 +206,7 @@ obj = {
           delete closure_12[nonce];
         }
       } else {
-        obj = { state: tmp7(6191).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
+        obj = { state: tmp7(6206).InteractionState.FAILED, errorCode, errorMessage, reasonCode };
         const merged = Object.assign(tmp21);
         closure_8[nonce] = obj;
       }
@@ -258,7 +258,7 @@ obj = {
   },
   INTERACTION_IFRAME_MODAL_CREATE: function handleIFrameModalCreate(applicationId) {
     const nonce = applicationId.nonce;
-    obj = { applicationId: applicationId.application.id, interactionId: applicationId.id, customId: applicationId.customId, channelId: applicationId.channelId, modalKey: "fill" };
+    obj = { applicationId: applicationId.application.id, interactionId: applicationId.id, customId: applicationId.customId, channelId: applicationId.channelId, modalKey: "filter" };
     if (null != nonce) {
       if (null != closure_8[nonce]) {
         const onSuccess = tmp10.onSuccess;

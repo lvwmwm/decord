@@ -1,16 +1,16 @@
-// Module ID: 14001
-// Function ID: 14002
+// Module ID: 14087
+// Function ID: 14088
 // Name: GuildDirectoryAddAlert
-// Dependencies: [19, 17, 21, 5141, 575, 6150, 1113, 7083, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6165, 1113, 7098, 5761, 2]
 // Exports: default
 
-// Module 14001 (GuildDirectoryAddAlert)
+// Module 14087 (GuildDirectoryAddAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import AlertDefault from "Alert" /* 6150 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import AlertDefault from "Alert" /* 6165 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -46,11 +46,11 @@ export default function GuildDirectoryAddAlert(arg0) {
   const obj3 = { style: tmp.guildIcon, guild, size: GuildIcon.GuildIconSizes.XLARGE };
   const tmp3 = GuildIconDefault;
   items = [React3(tmp3, obj3), , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "text-lg/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.CueiPY) };
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.CueiPY) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items[1] = React3(Text, obj4);
-  const obj5 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl3.format(intl4.t.R7Pqn5, { guildName: directoryGuildName }) };
+  const obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl3.format(intl4.t.R7Pqn5, { guildName: directoryGuildName }) };
   const Text2 = Text_Text.Text;
   intl3 = intl4.intl;
   items[2] = React3(Text2, obj5);

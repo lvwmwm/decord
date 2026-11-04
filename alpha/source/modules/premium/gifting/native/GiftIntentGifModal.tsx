@@ -1,17 +1,17 @@
-// Module ID: 13379
-// Function ID: 13380
+// Module ID: 13463
+// Function ID: 13464
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 4990, 1072, 5146, 21, 5141, 575, 7760, 7948, 1252, 7471, 5730, 504, 7373, 1113, 13380, 10372, 5754, 6864, 5735, 7124, 7290, 2]
+// Dependencies: [32, 5, 19, 17, 4990, 1072, 5146, 21, 5141, 575, 7776, 7964, 1252, 7487, 5743, 504, 7389, 1113, 13464, 10420, 5768, 6879, 5749, 7139, 7306, 2]
 // Exports: default
 
-// Module 13379 (GiftIntentGifModal)
+// Module 13463 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import MessageConstants from "MessageConstants" /* 5146 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6864 */;
-import NavigatorHeader from "NavigatorHeader" /* 7124 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
+import NavigatorHeader from "NavigatorHeader" /* 7139 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f104159 = () => {
+  const f104895 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f104159) };
-  require("react")(f104159);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f104895) };
+  require("react")(f104895);
   return closure_10(require("Navigator").Navigator, obj);
 };

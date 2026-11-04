@@ -1,16 +1,16 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 11871
+// Function ID: 11872
 // Name: SpotifyActionCreators
-// Dependencies: [11813, 9035, 1072, 4985, 1282, 572, 1089, 1377, 9452, 2]
+// Dependencies: [11870, 9052, 1072, 4985, 1282, 572, 1089, 1377, 9470, 2]
 // Exports: fetchIsSpotifyProtocolRegistered, getAccessToken, getDevices, getProfile, pause, play, setActiveDevice, subscribePlayerStateNotifications
 
-// Module 11814 (SpotifyActionCreators)
+// Module 11871 (SpotifyActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import GameUtilsDefault from "GameUtils" /* 9452 */;
-import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11813 */;
-import SpotifyConstants from "SpotifyConstants" /* 9035 */;
+import GameUtilsDefault from "GameUtils" /* 9470 */;
+import SpotifyProtocolStore from "SpotifyProtocolStore" /* 11870 */;
+import SpotifyConstants from "SpotifyConstants" /* 9052 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -24,14 +24,14 @@ let metroImportDefault;
 let metroRequire;
 function apiRequest(fn, arg1, arg2, arg3) {
   let num;
-  const f100175 = (status) => {
+  const f100834 = (status) => {
     let rejectResult = status;
     if (202 === status.status) {
       rejectResult = Promise.reject(status);
     }
     return rejectResult;
   };
-  const f100176 = (error) => {
+  const f100835 = (error) => {
     let tmp = true !== obj.onlyRetryOnAuthorizationErrors;
     if (tmp) {
       let num = 202;
@@ -56,7 +56,7 @@ function apiRequest(fn, arg1, arg2, arg3) {
           timeoutPromiseResult = Promise.resolve();
         }
         let nextPromise = timeoutPromiseResult.then(() => {
-          const f100177 = (error) => {
+          const f100836 = (error) => {
             let body = error.body;
             let code;
             if (body != null) {
@@ -89,12 +89,12 @@ function apiRequest(fn, arg1, arg2, arg3) {
                 let tmp2 = closure_2_0;
                 let obj = closure_2_0(tmp8[3]);
                 let timeoutPromiseResult = obj.timeoutPromise(num2);
-                return timeoutPromiseResult.then(f126721);
+                return timeoutPromiseResult.then(f127524);
               }
             }
             return Promise.reject(error);
           };
-          const f100178 = (body) => {
+          const f100837 = (body) => {
             const access_token = body.body.access_token;
             const obj = closure_2_1(closure_2_2[5]);
             const obj2 = { type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN", accountId, accessToken: access_token };
@@ -105,10 +105,10 @@ function apiRequest(fn, arg1, arg2, arg3) {
           const HTTP = closure_0(obj[4]).HTTP;
           obj = { url: closure_2_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, closure_1_1), oldFormErrors: true, rejectWithError: false };
           const value = HTTP.get(obj);
-          const catchPromise = value.catch(f100177);
-          return catchPromise.then(f100178);
+          const catchPromise = value.catch(f100836);
+          return catchPromise.then(f100837);
         });
-        let nextPromise1 = nextPromise.then(f126719);
+        let nextPromise1 = nextPromise.then(f127522);
         nextPromise2 = nextPromise1.then((result) => {
           closure_0 = result;
           const promise = new Promise((arg0) => {
@@ -128,8 +128,8 @@ function apiRequest(fn, arg1, arg2, arg3) {
   const merged = Object.assign(arg3);
   ({ authorization: "Bearer " + arg2 });
   const promise = fn(obj);
-  const nextPromise = promise.then(f100175);
-  return nextPromise.catch(f100176);
+  const nextPromise = promise.then(f100834);
+  return nextPromise.catch(f100835);
 }
 ({ SPOTIFY_APP_PROTOCOL: closure_4, SpotifyEndpoints: hasOwnProperty } = SpotifyConstants);
 ({ AbortCodes: metroRequire, Endpoints: metroImportDefault, PlatformTypes: metroImportAll } = Constants);
@@ -138,7 +138,7 @@ const result = size.fileFinishedImporting("modules/spotify/SpotifyActionCreators
 
 export { SpotifyAPI };
 export function getAccessToken(id) {
-  const f100177 = (error) => {
+  const f100836 = (error) => {
     let body = error.body;
     let code;
     if (body != null) {
@@ -171,12 +171,12 @@ export function getAccessToken(id) {
         let tmp2 = closure_2_0;
         let obj = closure_2_0(tmp8[3]);
         let timeoutPromiseResult = obj.timeoutPromise(num2);
-        return timeoutPromiseResult.then(f126721);
+        return timeoutPromiseResult.then(f127524);
       }
     }
     return Promise.reject(error);
   };
-  const f100178 = (body) => {
+  const f100837 = (body) => {
     const access_token = body.body.access_token;
     const obj = closure_2_1(closure_2_2[5]);
     const obj2 = { type: "SPOTIFY_ACCOUNT_ACCESS_TOKEN", accountId, accessToken: access_token };
@@ -187,12 +187,12 @@ export function getAccessToken(id) {
   const HTTP = require("HTTPUtils").HTTP;
   obj = { url: closure_7.CONNECTION_ACCESS_TOKEN(constants.SPOTIFY, id), oldFormErrors: true, rejectWithError: false };
   const value = HTTP.get(obj);
-  const catchPromise = value.catch(f100177);
-  return catchPromise.then(f100178);
+  const catchPromise = value.catch(f100836);
+  return catchPromise.then(f100837);
 }
 export function subscribePlayerStateNotifications(accountId, accessToken, connectionId) {
   let num;
-  const f100179 = (error) => {
+  const f100838 = (error) => {
     let rejectResult;
     if (closure_3 <= 0) {
       let tmp4 = error;
@@ -205,7 +205,7 @@ export function subscribePlayerStateNotifications(accountId, accessToken, connec
       let obj = closure_2_0(connection_id[3]);
       let num = 5000;
       let timeoutPromiseResult = obj.timeoutPromise(5000);
-      rejectResult = timeoutPromiseResult.then(f126722);
+      rejectResult = timeoutPromiseResult.then(f127525);
     }
     return rejectResult;
   };
@@ -214,7 +214,7 @@ export function subscribePlayerStateNotifications(accountId, accessToken, connec
   let closure_2 = connectionId;
   const request = { url: closure_5.NOTIFICATIONS_PLAYER, query: { connection_id: connectionId } };
   const putResult = obj.put(accountId, accessToken, request);
-  return putResult.catch(f100179);
+  return putResult.catch(f100838);
 }
 export function getProfile(accountId, arg1) {
   obj = { url: closure_5.PROFILE };

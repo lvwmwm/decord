@@ -1,20 +1,20 @@
-// Module ID: 10709
-// Function ID: 10710
+// Module ID: 10757
+// Function ID: 10758
 // Name: PremiumActivatedAlert
-// Dependencies: [19, 17, 1072, 21, 5141, 6898, 2176, 10710, 10711, 10712, 10713, 10714, 10061, 10715, 10716, 10717, 10718, 10719, 10720, 8659, 10721, 5148, 10722, 10723, 10724, 10725, 10726, 10727, 10728, 10729, 10730, 1113, 5376, 6150, 5837, 10731, 10732, 1187, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 6913, 2176, 10758, 10759, 10760, 10761, 10762, 10109, 10763, 10764, 10765, 10766, 10767, 10768, 8676, 10769, 5148, 10770, 10771, 10772, 10773, 10774, 10775, 10776, 10777, 10778, 1113, 5377, 6165, 5851, 10779, 10780, 1187, 2]
 // Exports: default
 
-// Module 10709 (PremiumActivatedAlert)
+// Module 10757 (PremiumActivatedAlert)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumUtils from "PremiumUtils" /* 2176 */;
 import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5376 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AlertDefault from "Alert" /* 6150 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10731 */;
-import ShineAnimationDefault from "ShineAnimation" /* 10732 */;
+import useThemeDefault from "useTheme" /* 5377 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AlertDefault from "Alert" /* 6165 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10779 */;
+import ShineAnimationDefault from "ShineAnimation" /* 10780 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -127,33 +127,33 @@ export default function PremiumActivatedAlert(subscription) {
   const obj7 = { style: tmp.header, children: items };
   const tmp4Result14 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result15 = tmp4(10710);
+    tmp4Result15 = tmp4(10758);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result15 = tmp4(10711);
+    tmp4Result15 = tmp4(10759);
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    tmp4Result15 = tmp4(10712);
+    tmp4Result15 = tmp4(10760);
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    tmp4Result15 = tmp4(10713);
+    tmp4Result15 = tmp4(10761);
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result15 = tmp4(10714);
+    tmp4Result15 = tmp4(10762);
   }
   items = [, , , ];
   const obj8 = { source: tmp4Result15, style: tmp.headerBackground };
   items[0] = hasOwnProperty(tmp4Result14, obj8);
   const tmp4Result16 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result17 = tmp4(10719);
+    tmp4Result17 = tmp4(10767);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result17 = tmp4(10720);
+    tmp4Result17 = tmp4(10768);
   } else {
     if (PremiumUtils.Branding.BUNDLE !== premiumBranding) {
       if (PremiumUtils.Branding.TIER_2 !== premiumBranding) {
         if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-          tmp4Result17 = tmp4(10721);
+          tmp4Result17 = tmp4(10769);
         }
       }
     }
-    tmp4Result17 = tmp4(8659);
+    tmp4Result17 = tmp4(8676);
   }
   const obj9 = { source: tmp4Result17, style: tmp9.logo };
   items[1] = hasOwnProperty(tmp4Result16, obj9);
@@ -166,15 +166,15 @@ export default function PremiumActivatedAlert(subscription) {
   items[2] = tmp15Result;
   const tmp4Result19 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
-    tmp4Result20 = tmp4(10061);
+    tmp4Result20 = tmp4(10109);
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
-    tmp4Result20 = tmp4(10715);
+    tmp4Result20 = tmp4(10763);
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-    tmp4Result20 = tmp4(10716);
+    tmp4Result20 = tmp4(10764);
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-    tmp4Result20 = tmp4(10717);
+    tmp4Result20 = tmp4(10765);
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result20 = tmp4(10718);
+    tmp4Result20 = tmp4(10766);
   }
   const obj11 = { source: tmp4Result20, style: items1 };
   items1 = [tmp10.headerImage, tmp.headerImage];
@@ -186,40 +186,40 @@ export default function PremiumActivatedAlert(subscription) {
     let tmp4Result22;
     const tmp7Result = shared;
     if (tmp7Result.isThemeDark(tmp6)) {
-      tmp4Result22 = tmp4(10722);
+      tmp4Result22 = tmp4(10770);
     } else {
-      tmp4Result22 = tmp4(10723);
+      tmp4Result22 = tmp4(10771);
     }
     tmp4Result26 = tmp4Result22;
   } else if (PremiumUtils.Branding.TIER_1 === premiumBranding) {
     let tmp4Result23;
     const tmp7Result5 = shared;
     if (tmp7Result5.isThemeDark(tmp6)) {
-      tmp4Result23 = tmp4(10724);
+      tmp4Result23 = tmp4(10772);
     } else {
-      tmp4Result23 = tmp4(10725);
+      tmp4Result23 = tmp4(10773);
     }
     tmp4Result26 = tmp4Result23;
   } else if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
     let tmp4Result24;
     const tmp7Result6 = shared;
     if (tmp7Result6.isThemeDark(tmp6)) {
-      tmp4Result24 = tmp4(10726);
+      tmp4Result24 = tmp4(10774);
     } else {
-      tmp4Result24 = tmp4(10727);
+      tmp4Result24 = tmp4(10775);
     }
     tmp4Result26 = tmp4Result24;
   } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
     let tmp4Result25;
     const tmp7Result7 = shared;
     if (tmp7Result7.isThemeDark(tmp6)) {
-      tmp4Result25 = tmp4(10728);
+      tmp4Result25 = tmp4(10776);
     } else {
-      tmp4Result25 = tmp4(10729);
+      tmp4Result25 = tmp4(10777);
     }
     tmp4Result26 = tmp4Result25;
   } else if (PremiumUtils.Branding.PREMIUM_GUILD === premiumBranding) {
-    tmp4Result26 = tmp4(10730);
+    tmp4Result26 = tmp4(10778);
   }
   const items3 = [, ];
   const obj13 = { source: tmp4Result26, style: tmp11.animation };

@@ -1,17 +1,17 @@
-// Module ID: 9443
-// Function ID: 9444
+// Module ID: 9461
+// Function ID: 9462
 // Name: GuildProfileGames
-// Dependencies: [19, 17, 21, 5141, 575, 9444, 9468, 14854, 5747, 14858, 5832, 5381, 14859, 2123, 7106, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9462, 9486, 14934, 5761, 14938, 5846, 5382, 14939, 2123, 7121, 2]
 // Exports: default
 
-// Module 9443 (GuildProfileGames)
+// Module 9461 (GuildProfileGames)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9444 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9468 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9462 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -21,7 +21,7 @@ let hasOwnProperty;
 let metroRequire;
 let rect;
 let tmp;
-const GameIconDefault = tmp(14854);
+const GameIconDefault = tmp(14934);
 function ClickableGameIcon(game) {
   let activityLevel;
   let onPress;
@@ -55,7 +55,7 @@ function FavoriteGame(game) {
   const activityLevel = game.activityLevel;
   const obj = { style: styles().favoriteGame, children: items };
   items = [hasOwnProperty(ClickableGameIcon, { game, activityLevel }), ];
-  const obj2 = { variant: "text-sm/medium", color: "text-subtle", children: game.name };
+  const obj2 = { variant: "body-sm/medium", color: "text-subtle", children: game.name };
   items[1] = hasOwnProperty(Text_Text.Text, obj2);
   return metroRequire(View, obj);
 }
@@ -113,7 +113,7 @@ export default function GuildProfileGames(profile) {
           items[1] = hasOwnProperty(View, obj4);
           const obj5 = { style: closure_3.lastItemText, children: hasOwnProperty(Text, obj6) };
           const _HermesInternal = HermesInternal;
-          obj6 = { variant: "text-xs/medium", color: "text-overlay-light", children: "+" + arr.length };
+          obj6 = { variant: "body-xs/medium", color: "text-overlay-light", children: "+" + arr.length };
           Text = Text_Text.Text;
           items[2] = hasOwnProperty(View, obj5);
           tmp8 = metroRequire(View, obj2);

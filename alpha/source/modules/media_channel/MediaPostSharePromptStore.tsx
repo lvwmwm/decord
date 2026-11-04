@@ -1,13 +1,13 @@
-// Module ID: 8514
-// Function ID: 8515
+// Module ID: 8531
+// Function ID: 8532
 // Name: MediaPostSharePromptStore
-// Dependencies: [5045, 502, 4990, 8515, 11, 504, 572, 2]
+// Dependencies: [5045, 502, 4990, 8532, 11, 504, 572, 2]
 
-// Module 8514 (MediaPostSharePromptStore)
+// Module 8531 (MediaPostSharePromptStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 8515 */;
+import useIsFirstMessageInMediaPost from "useIsFirstMessageInMediaPost" /* 8532 */;
 import GatedChannelStore from "GatedChannelStore" /* 5045 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

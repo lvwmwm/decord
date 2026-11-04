@@ -1,10 +1,10 @@
-// Module ID: 14546
-// Function ID: 14547
+// Module ID: 14626
+// Function ID: 14627
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 17, 6964, 21, 5141, 575, 11477, 5837, 1411, 7544, 504, 14547, 1113, 3995, 5195, 2]
+// Dependencies: [19, 17, 6979, 21, 5141, 575, 11527, 5851, 1411, 7560, 504, 14627, 1113, 3995, 5195, 2]
 // Exports: default
 
-// Module 14546 (useConjureAppChannelSheet)
+// Module 14626 (useConjureAppChannelSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,9 +12,9 @@ import intl2 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import _modDef3995 from "module_3995" /* 3995 */;
 import UserUtils from "UserUtils" /* 5195 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6964 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 12628
-// Function ID: 12629
+// Module ID: 12709
+// Function ID: 12710
 // Name: CommandOptionView
-// Dependencies: [19, 17, 5142, 21, 2121, 5141, 575, 504, 1652, 12629, 12630, 5747, 12631, 7212, 2]
+// Dependencies: [19, 17, 5142, 21, 2121, 5141, 575, 504, 1652, 12710, 12711, 5761, 12712, 7227, 2]
 // Exports: default
 
-// Module 12628 (CommandOptionView)
+// Module 12709 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import Server from "Server" /* 2121 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12631 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12712 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -58,7 +58,7 @@ export default function CommandOptionView(option) {
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
   const ReduceMotion = option(1652).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(12629);
+  const tmp2Result = option(12710);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -85,12 +85,12 @@ export default function CommandOptionView(option) {
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
     const LayoutAnimationConfig = tmp2(1652).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(12630).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(12711).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(12629).ExitingAnimation,
-      layout: option(12629).LayoutAnimation,
+      exiting: option(12710).ExitingAnimation,
+      layout: option(12710).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },
@@ -100,8 +100,8 @@ export default function CommandOptionView(option) {
     obj6 = { collapsable: false, style, children: items2 };
     tmp21 = View;
     if (hasItem1) {
-      const obj7 = { style: tmp.labelText, variant: "text-sm/semibold", color: "text-subtle", children: option.displayName };
-      hasItem1 = tmp18(tmp2(5747).Text, obj7);
+      const obj7 = { style: tmp.labelText, variant: "body-sm/semibold", color: "text-subtle", children: option.displayName };
+      hasItem1 = tmp18(tmp2(5761).Text, obj7);
     }
     items2 = [hasItem1, , , ];
     const obj8 = {
@@ -126,14 +126,14 @@ export default function CommandOptionView(option) {
       hasError: hasItem
     };
     items2[1] = closure_5(AppLauncherCommandOptionDefault, obj8);
-    const obj9 = { style: tmp.optionDescription, variant: "text-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = closure_5(option(5747).Text, obj9);
+    const obj9 = { style: tmp.optionDescription, variant: "body-xs/medium", color: "text-muted", children: option.displayDescription };
+    items2[2] = closure_5(option(5761).Text, obj9);
     if (hasItem) {
       const obj10 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer, children: items3 };
       const View2 = tmp19(1652).View;
-      items3 = [closure_5(option(7212).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
-      const obj11 = { variant: "text-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = closure_5(option(5747).Text, obj11);
+      items3 = [closure_5(option(7227).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
+      const obj11 = { variant: "body-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
+      items3[1] = closure_5(option(5761).Text, obj11);
       hasItem = tmp20(View2, obj10);
     }
     items2[3] = hasItem;

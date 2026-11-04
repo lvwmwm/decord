@@ -1,10 +1,10 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8957
+// Function ID: 8958
 // Name: useUserProfileOverscrollStyles
 // Dependencies: [32, 19, 5142, 1493, 504, 1652, 1705, 2]
 // Exports: default
 
-// Module 8940 (useUserProfileOverscrollStyles)
+// Module 8957 (useUserProfileOverscrollStyles)
 import get_initialized from "get initialized" /* 504 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;

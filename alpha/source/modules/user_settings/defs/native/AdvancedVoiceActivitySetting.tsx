@@ -1,15 +1,15 @@
-// Module ID: 17394
-// Function ID: 17395
+// Module ID: 17485
+// Function ID: 17486
 // Name: AdvancedVoiceActivitySetting
-// Dependencies: [2135, 8556, 504, 6035, 1113, 11677, 2]
+// Dependencies: [2135, 8573, 504, 6050, 1113, 11728, 2]
 
-// Module 17394 (AdvancedVoiceActivitySetting)
+// Module 17485 (AdvancedVoiceActivitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6035 */;
-import SettingsConstants from "SettingsConstants" /* 8556 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6050 */;
+import SettingsConstants from "SettingsConstants" /* 8573 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,19 +1,19 @@
-// Module ID: 19406
-// Function ID: 19407
+// Module ID: 19510
+// Function ID: 19511
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 11360, 11358, 19273, 11361, 21, 1652, 11910, 5141, 11359, 5757, 10219, 1705, 5383, 5426, 6008, 19362, 11905, 11903, 19352, 11364, 19270, 5994, 5719, 575, 5377, 11907, 2]
+// Dependencies: [32, 19, 17, 11410, 11408, 19377, 11411, 21, 1652, 11969, 5141, 11409, 5771, 10267, 1705, 5384, 5428, 6023, 19466, 11964, 11962, 19456, 11414, 19374, 6008, 5732, 575, 5378, 11966, 2]
 
-// Module 19406 (VoicePanelVideoRenderer)
+// Module 19510 (VoicePanelVideoRenderer)
 import react_native from "react-native" /* 17 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11358 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11361 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11364 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11910 */;
-import VideoActionCreators from "VideoActionCreators" /* 19270 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19273 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11408 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11411 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11414 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 11969 */;
+import VideoActionCreators from "VideoActionCreators" /* 19374 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19377 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
 import createStyles from "createStyles" /* 5141 */;

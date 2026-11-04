@@ -1,14 +1,14 @@
-// Module ID: 20126
-// Function ID: 20127
+// Module ID: 20242
+// Function ID: 20243
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 5096, 21, 5141, 575, 20118, 504, 5837, 1411, 20124, 1113, 6078, 6150, 7100, 20114, 5747, 2]
+// Dependencies: [5, 32, 19, 17, 5096, 21, 5141, 575, 20234, 504, 5851, 1411, 20240, 1113, 6093, 6165, 7115, 20230, 5761, 2]
 // Exports: default
 
-// Module 20126 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 20242 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
-import AlertDefault from "Alert" /* 6150 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
+import AlertDefault from "Alert" /* 6165 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -234,11 +234,11 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
       obj6 = { children: item.name };
       if (hasItem1) {
         const obj7 = { children: items };
-        const obj8 = { variant: "text-sm/normal", color: "interactive-text-active", children: intl.string(guildId(onClose[13]).t["1GlN06"]) };
+        const obj8 = { variant: "body-sm/normal", color: "interactive-text-active", children: intl.string(guildId(onClose[13]).t["1GlN06"]) };
         const Text = tmp4(tmp5[18]).Text;
         intl = tmp4(tmp5[13]).intl;
         items = [tmp3(Text, obj8), ];
-        const obj9 = { variant: "text-sm/normal", color: "text-feedback-critical", children: intl2.string(guildId(onClose[13]).t.J0XdJ4) };
+        const obj9 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl2.string(guildId(onClose[13]).t.J0XdJ4) };
         const Text2 = tmp4(tmp5[18]).Text;
         intl2 = tmp4(tmp5[13]).intl;
         items[1] = set(Text2, obj9);

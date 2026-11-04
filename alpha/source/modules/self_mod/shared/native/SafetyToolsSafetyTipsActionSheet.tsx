@@ -1,18 +1,18 @@
-// Module ID: 11450
-// Function ID: 11451
+// Module ID: 11500
+// Function ID: 11501
 // Name: SafetyToolsSafetyTipsActionSheet
-// Dependencies: [19, 17, 11393, 21, 5141, 575, 11441, 1113, 11412, 5747, 2]
+// Dependencies: [19, 17, 11443, 21, 5141, 575, 11491, 1113, 11462, 5761, 2]
 // Exports: default
 
-// Module 11450 (SafetyToolsSafetyTipsActionSheet)
+// Module 11500 (SafetyToolsSafetyTipsActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Constants from "Constants" /* 11393 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11412 */;
-import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11441 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Constants from "Constants" /* 11443 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11462 */;
+import SafetyToolsActionSheetWrapperDefault from "SafetyToolsActionSheetWrapper" /* 11491 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function SafetyToolsSafetyTipsActionSheet(arg0) {
   const tmp = closure_6();
   SafetyToolsActionSheetWrapperDefault;
   const intl = intl3.intl;
-  ({ description: intl2.string(intl3.t.DJMZX6), safetyTips: arr.map((children, index) => jsx(Text_Text.Text, { variant: "text-sm/medium", children }, index)) });
+  ({ description: intl2.string(intl3.t.DJMZX6), safetyTips: arr.map((children, index) => jsx(Text_Text.Text, { variant: "body-sm/medium", children }, index)) });
   SafetyTipsSectionDefault;
   intl2 = intl3.intl;
   arr = closure_4();

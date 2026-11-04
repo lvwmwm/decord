@@ -1,26 +1,26 @@
-// Module ID: 12175
-// Function ID: 12176
+// Module ID: 12234
+// Function ID: 12235
 // Name: TouchableStreamPreview
-// Dependencies: [19, 17, 5885, 6834, 502, 4990, 5012, 5073, 5799, 1072, 21, 5141, 5138, 575, 6166, 504, 1113, 6826, 8025, 8062, 5879, 6837, 5716, 12176, 5747, 2]
+// Dependencies: [19, 17, 5899, 6849, 502, 4990, 5012, 5073, 5813, 1072, 21, 5141, 5138, 575, 6181, 504, 1113, 6841, 8041, 8078, 5893, 6852, 5729, 12235, 5761, 2]
 // Exports: default
 
-// Module 12175 (TouchableStreamPreview)
+// Module 12234 (TouchableStreamPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5879 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6826 */;
-import StreamActionCreators from "StreamActionCreators" /* 8025 */;
-import transitionToStreamDefault from "transitionToStream" /* 8062 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6841 */;
+import StreamActionCreators from "StreamActionCreators" /* 8041 */;
+import transitionToStreamDefault from "transitionToStream" /* 8078 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleStore from "GameConsoleStore" /* 5885 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
+import GameConsoleStore from "GameConsoleStore" /* 5899 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import VoiceStateStore from "VoiceStateStore" /* 5799 */;
+import VoiceStateStore from "VoiceStateStore" /* 5813 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import ColorUtils_mod from "ColorUtils" /* 5138 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let closure_4;
 let obj2;
 let obj3;
 let tmp5;
-const StreamKeyUtils = tmp5(6837);
+const StreamKeyUtils = tmp5(6852);
 function StreamPreviewContainer(disableTransition) {
   let flag;
   let remoteSessionId;

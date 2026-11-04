@@ -1,23 +1,23 @@
-// Module ID: 18318
-// Function ID: 18319
+// Module ID: 18415
+// Function ID: 18416
 // Name: ChannelItem
-// Dependencies: [109, 19, 17, 5881, 5083, 1385, 1072, 4997, 6896, 21, 5141, 575, 6898, 14068, 1411, 5837, 18319, 8771, 8727, 504, 1187, 6165, 18320, 5772, 1099, 2]
+// Dependencies: [109, 19, 17, 5895, 5083, 1385, 1072, 4997, 6911, 21, 5141, 575, 6913, 14154, 1411, 5851, 18416, 8788, 8744, 504, 1187, 6180, 18417, 5786, 1099, 2]
 
-// Module 18318 (ChannelItem)
+// Module 18415 (ChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
-import ReadStateConstants from "ReadStateConstants" /* 6896 */;
-import LegacyTokens from "LegacyTokens" /* 6898 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8727 */;
-import BookCheckIcon2 from "BookCheckIcon" /* 8771 */;
-import BaseChannelItem from "BaseChannelItem" /* 14068 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18319 */;
+import ReadStateConstants from "ReadStateConstants" /* 6911 */;
+import LegacyTokens from "LegacyTokens" /* 6913 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8744 */;
+import BookCheckIcon2 from "BookCheckIcon" /* 8788 */;
+import BaseChannelItem from "BaseChannelItem" /* 14154 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18416 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5881 */;
+import PresenceStore from "PresenceStore" /* 5895 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
@@ -94,7 +94,7 @@ function ChannelIcon(arg0) {
       const tmp5 = importDefault;
       if (null != channelIconSource) {
         const obj5 = { style: tmp.groupDmAvatar, source: channelIconSource };
-        return map1(tmp5(5837), obj5);
+        return map1(tmp5(5851), obj5);
       }
     }
     if (tmp2) {
@@ -113,7 +113,7 @@ function ChannelIcon(arg0) {
     }
     const obj8 = { mode: tmp3, source: tmp13, isChannelLive, style: channelIconLive };
     channelIconLive = undefined;
-    const BaseChannelIcon = tmp10(14068).BaseChannelIcon;
+    const BaseChannelIcon = tmp10(14154).BaseChannelIcon;
     const tmp17 = map1;
     if (isChannelLive) {
       channelIconLive = tmp.channelIconLive;

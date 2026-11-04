@@ -1,20 +1,20 @@
-// Module ID: 10057
-// Function ID: 10058
+// Module ID: 10105
+// Function ID: 10106
 // Name: PremiumGroupWordmark
-// Dependencies: [19, 21, 5719, 575, 8155, 2]
+// Dependencies: [19, 21, 5732, 575, 8171, 2]
 // Exports: default
 
-// Module 10057 (PremiumGroupWordmark)
+// Module 10105 (PremiumGroupWordmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken2 from "useToken" /* 5719 */;
+import useToken2 from "useToken" /* 5732 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
 let tmp5;
-const inlineStyles = tmp2(8155);
-const inlineStylesDefault = tmp5(8155);
+const inlineStyles = tmp2(8171);
+const inlineStylesDefault = tmp5(8171);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/premium/premium_group/native/PremiumGroupWordmark.tsx");
 

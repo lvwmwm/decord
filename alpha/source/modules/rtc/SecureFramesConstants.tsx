@@ -1,9 +1,9 @@
-// Module ID: 9394
-// Function ID: 9395
+// Module ID: 9411
+// Function ID: 9412
 // Name: SecureFramesConstants
 // Dependencies: [2]
 
-// Module 9394 (SecureFramesConstants)
+// Module 9411 (SecureFramesConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rtc/SecureFramesConstants.tsx");

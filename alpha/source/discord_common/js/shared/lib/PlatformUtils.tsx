@@ -1,9 +1,9 @@
-// Module ID: 6072
-// Function ID: 6073
+// Module ID: 6087
+// Function ID: 6088
 // Name: shared/PlatformUtils
 // Dependencies: [1353, 2]
 
-// Module 6072 (shared/PlatformUtils)
+// Module 6087 (shared/PlatformUtils)
 import module_1353_mod from "module_1353" /* 1353 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 11038
-// Function ID: 11039
+// Module ID: 11087
+// Function ID: 11088
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1493, 1627, 7081, 9495, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1493, 1627, 7096, 9513, 2]
 // Exports: default
 
-// Module 11038 (OAuth2AuthorizeContent)
+// Module 11087 (OAuth2AuthorizeContent)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7081 */;
-import ObscuredSurfaceDefault from "ObscuredSurface" /* 9495 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 7096 */;
+import ObscuredSurfaceDefault from "ObscuredSurface" /* 9513 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

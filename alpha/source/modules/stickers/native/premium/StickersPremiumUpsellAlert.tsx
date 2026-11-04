@@ -1,22 +1,22 @@
-// Module ID: 10422
-// Function ID: 10423
+// Module ID: 10470
+// Function ID: 10471
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 7721, 1072, 1387, 21, 10423, 1113, 575, 10424, 10425, 5141, 1187, 5747, 7728, 10039, 1493, 7446, 6150, 1252, 10036, 7106, 8483, 5837, 10426, 2]
+// Dependencies: [19, 17, 7737, 1072, 1387, 21, 10471, 1113, 575, 10472, 10473, 5141, 1187, 5761, 7744, 10087, 1493, 7462, 6165, 1252, 10084, 7121, 8499, 5851, 10474, 2]
 // Exports: default
 
-// Module 10422 (StickersPremiumUpsellAlert)
+// Module 10470 (StickersPremiumUpsellAlert)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10036 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10423 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10424 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10425 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10084 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10471 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10472 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10473 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 7721 */;
+import IAPStore from "IAPStore" /* 7737 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
@@ -52,7 +52,7 @@ function PerkRow(perk) {
   items1 = [, ];
   const obj2 = { style: tmp.perkIcon, source: perk.icon, disableColor: null == perk.color, color: perk.color };
   items1[0] = map1(native.Icon, obj2);
-  const obj3 = { style: tmp.perkText, variant: "text-md/medium", color: "interactive-text-active", children: perk.description() };
+  const obj3 = { style: tmp.perkText, variant: "body-md/medium", color: "interactive-text-active", children: perk.description() };
   const Text = Text_Text.Text;
   items1[1] = map1(Text, obj3);
   return tmp2(tmp3, obj);
@@ -119,13 +119,13 @@ export default function StickersPremiumUpsellAlert(arg0) {
       const products = obj.loadProducts();
     }
   }, []);
-  const tmp5 = analyticsLocations(10039)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
+  const tmp5 = analyticsLocations(10087)(PREMIUM_MONTH_TIER_2.PREMIUM_MONTH_TIER_2);
   let priceString;
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
   const height = tmp3(1493)().height;
-  analyticsLocations = tmp3(7446)().analyticsLocations;
+  analyticsLocations = tmp3(7462)().analyticsLocations;
   let obj = {
     cancelText: intl.string(intl4.t.f3Pet9),
     confirmColor: native.ButtonColors.GREEN,
@@ -147,7 +147,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: items,
     children: items1
   };
-  const tmp3Result = analyticsLocations(6150);
+  const tmp3Result = analyticsLocations(6165);
   intl = intl4.intl;
   intl2 = intl4.intl;
   items = [tmp.alert, ];
@@ -158,8 +158,8 @@ export default function StickersPremiumUpsellAlert(arg0) {
   items[1] = shortHeightAlert;
   let obj2 = { style: tmp.closeContainer, children: closure_13(PressableOpacity, obj3) };
   obj3 = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: closure_13(Icon, obj4) };
-  PressableOpacity = tmp9(7106).PressableOpacity;
-  obj4 = { source: analyticsLocations(8483) };
+  PressableOpacity = tmp9(7121).PressableOpacity;
+  obj4 = { source: analyticsLocations(8499) };
   Icon = tmp9(1187).Icon;
   items1 = [closure_13(closure_4, obj2), ];
   const obj5 = {
@@ -169,11 +169,11 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: items2
   };
-  const obj6 = { source: analyticsLocations(10426), style: tmp.imageHeader };
-  const tmp3Result2 = analyticsLocations(5837);
+  const obj6 = { source: analyticsLocations(10474), style: tmp.imageHeader };
+  const tmp3Result2 = analyticsLocations(5851);
   items2 = [closure_13(tmp3Result2, obj6), , ];
-  const obj7 = { style: tmp.description, variant: "text-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
-  const Text = tmp9(5747).Text;
+  const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
+  const Text = tmp9(5761).Text;
   const intl3 = tmp9(1113).intl;
   format = intl3.format;
   TBsJfQ = tmp9(1113).t.TBsJfQ;

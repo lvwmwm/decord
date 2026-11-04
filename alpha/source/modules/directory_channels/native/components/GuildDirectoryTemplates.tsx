@@ -1,16 +1,16 @@
-// Module ID: 14002
-// Function ID: 14003
+// Module ID: 14088
+// Function ID: 14089
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 13984, 13989, 21, 5141, 14003, 1187, 14004, 1499, 1627, 13988, 5747, 1113, 7186, 7230, 2]
+// Dependencies: [19, 17, 14070, 14075, 21, 5141, 14089, 1187, 14090, 1499, 1627, 14074, 5761, 1113, 7201, 7250, 2]
 // Exports: default
 
-// Module 14002 (GuildDirectoryTemplates)
+// Module 14088 (GuildDirectoryTemplates)
 import native from "native" /* 1187 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13989 */;
-import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 14004 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 14075 */;
+import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 14090 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13984 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 14070 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -39,7 +39,7 @@ class GuildTemplatesItem {
         return onGuildTemplatePress(guildTemplate);
       }
     };
-    return closure_9(onGuildTemplatePress(14003), obj);
+    return closure_9(onGuildTemplatePress(14089), obj);
   }
 }
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
@@ -93,7 +93,7 @@ export default function GuildDirectoryTemplates(directoryGuildName) {
   intl = require("intl").intl;
   obj7 = { guildName: directoryGuildName.directoryGuildName };
   items1 = [closure_9(Text, obj6), ];
-  const obj8 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t["RA+St6"]) };
+  const obj8 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(require("intl").t["RA+St6"]) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items1[1] = closure_9(Text2, obj8);

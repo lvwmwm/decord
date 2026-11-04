@@ -1,19 +1,19 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 17081
+// Function ID: 17082
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 5141, 16990, 1113, 1187, 5747, 11529, 6078, 16997, 6150, 1411, 5756, 11083, 8152, 9415, 7102, 7101, 7489, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 17082, 1113, 1187, 5761, 11579, 6093, 17089, 6165, 1411, 5770, 11132, 8168, 9432, 7117, 7116, 7505, 2]
 // Exports: default
 
-// Module 16989 (ConnectedApplicationIdentity)
+// Module 17081 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Icon from "Icon" /* 5756 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6078 */;
-import AlertDefault from "Alert" /* 6150 */;
-import InfoBoxDefault from "InfoBox" /* 11529 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Icon from "Icon" /* 5770 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
+import AlertDefault from "Alert" /* 6165 */;
+import InfoBoxDefault from "InfoBox" /* 11579 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -25,7 +25,7 @@ let closure_1, v3;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const IconDefault = tmp(5756);
+const IconDefault = tmp(5770);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -93,7 +93,7 @@ export default function ConnectedApplicationIdentity(identity) {
     let obj7;
     let obj = { children: items };
     items = [metroImportDefault(native.Spacer, { size: 8 }), , , ];
-    const obj2 = { variant: "text-md/medium", children: intl.format(intl6.t.VgqIPj, obj3) };
+    const obj2 = { variant: "body-md/medium", children: intl.format(intl6.t.VgqIPj, obj3) };
     const Text = Text_Text.Text;
     intl = intl6.intl;
     obj3 = { provider: str };

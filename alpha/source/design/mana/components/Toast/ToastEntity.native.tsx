@@ -1,16 +1,16 @@
-// Module ID: 16007
-// Function ID: 16008
+// Module ID: 16097
+// Function ID: 16098
 // Name: ToastEntity
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 5837, 2156, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 5851, 2156, 2]
 // Exports: ToastEntity
 
-// Module 16007 (ToastEntity)
+// Module 16097 (ToastEntity)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import utils_StringUtils from "utils/StringUtils" /* 2156 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +27,7 @@ function ToastEntityContent(arg0) {
   if ("emoji" === type) {
     let tmp14Result;
     if ("unicode" in entity) {
-      const obj2 = { variant: "text-lg/normal", color: "text-default", style: styles.glyph, lineClamp: 1, children: entity.unicode };
+      const obj2 = { variant: "body-lg/normal", color: "text-default", style: styles.glyph, lineClamp: 1, children: entity.unicode };
       tmp14Result = tmp14(Text_Text.Text, obj2);
     } else {
       const obj3 = { style: styles.image, source: obj4, accessibilityLabel: entity.alt };
@@ -42,13 +42,13 @@ function ToastEntityContent(arg0) {
     if (null == entity.src) {
       const obj5 = utils_StringUtils;
       const acronym = obj5.getAcronym(entity.name);
-      let str2 = "text-md/semibold";
+      let str2 = "body-md/semibold";
       const Text = Text_Text.Text;
       const tmp10 = jsx;
       if (acronym.length > 2) {
-        let str3 = "text-xs/semibold";
+        let str3 = "body-xs/semibold";
         if (acronym.length <= 4) {
-          str3 = "text-sm/semibold";
+          str3 = "body-sm/semibold";
         }
         str2 = str3;
       }

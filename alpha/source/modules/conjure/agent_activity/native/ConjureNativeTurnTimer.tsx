@@ -1,14 +1,14 @@
-// Module ID: 12928
-// Function ID: 12929
+// Module ID: 13010
+// Function ID: 13011
 // Name: ConjureNativeTurnTimer
-// Dependencies: [19, 21, 5141, 12929, 5747, 12237, 2]
+// Dependencies: [19, 21, 5141, 13011, 5761, 12298, 2]
 // Exports: default
 
-// Module 12928 (ConjureNativeTurnTimer)
+// Module 13010 (ConjureNativeTurnTimer)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ConjureDuration from "ConjureDuration" /* 12237 */;
-import useConjureElapsedMs from "useConjureElapsedMs" /* 12929 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ConjureDuration from "ConjureDuration" /* 12298 */;
+import useConjureElapsedMs from "useConjureElapsedMs" /* 13011 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ export default function ConjureNativeTurnTimer(variant) {
   let str = variant.variant;
   const startedAt = variant.startedAt;
   if (str === undefined) {
-    str = "text-sm/normal";
+    str = "body-sm/normal";
   }
   const tmp = closure_3();
   const obj = useConjureElapsedMs;

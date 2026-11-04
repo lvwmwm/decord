@@ -1,10 +1,10 @@
-// Module ID: 11146
-// Function ID: 11147
+// Module ID: 11194
+// Function ID: 11195
 // Name: FamilyCenterRestrictedHoursUtils
 // Dependencies: [1393, 1113, 2667, 2]
-// Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, formatTime, getShortDayLabels, sortRulesByStartTime, timeToMinutes, toTimeProto
+// Exports: computeOverlappingInfo, formatDuration, formatRestrictedScheduleInAppSubtitle, formatTime, getDayLabels, sortRulesByStartTime, timeToMinutes, toTimeProto
 
-// Module 11146 (FamilyCenterRestrictedHoursUtils)
+// Module 11194 (FamilyCenterRestrictedHoursUtils)
 import intl4 from "intl" /* 1113 */;
 import user from "user" /* 1393 */;
 import _modDef2667 from "module_2667" /* 2667 */;
@@ -99,8 +99,8 @@ const set2 = new Set(items);
 let result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterRestrictedHoursUtils.tsx");
 
 export const DAYS_ORDERED = items;
-export function getShortDayLabels(narrow) {
-  const obj = { weekday: narrow };
+export function getDayLabels(long) {
+  const obj = { weekday: long };
   const dateTimeFormat = new Intl.DateTimeFormat(intl4.intl.currentLocale, obj);
   return items.map((item, index) => {
     const format = dateTimeFormat.format;

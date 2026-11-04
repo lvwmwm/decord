@@ -1,10 +1,10 @@
-// Module ID: 9461
-// Function ID: 9462
+// Module ID: 9479
+// Function ID: 9480
 // Name: RPCError
-// Dependencies: [2, 9462]
+// Dependencies: [2, 9480]
 
-// Module 9461 (RPCError)
-import shared_RPCError from "shared/RPCError" /* 9462 */;
+// Module 9479 (RPCError)
+import shared_RPCError from "shared/RPCError" /* 9480 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/RPCError.tsx");

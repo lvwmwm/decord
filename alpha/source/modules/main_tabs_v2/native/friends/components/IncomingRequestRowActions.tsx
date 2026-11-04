@@ -1,12 +1,12 @@
-// Module ID: 19002
-// Function ID: 19003
+// Module ID: 19105
+// Function ID: 19106
 // Name: IncomingRequestRowActions
-// Dependencies: [19, 17, 21, 5141, 1652, 5377, 18245, 6147, 8152, 16972, 15259, 5754, 1113, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 1652, 5378, 18342, 6162, 8168, 17064, 15342, 5768, 1113, 5761, 2]
 // Exports: IncomingRequestRowActions
 
-// Module 19002 (IncomingRequestRowActions)
+// Module 19105 (IncomingRequestRowActions)
 import react_native from "react-native" /* 17 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18245 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18342 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -333,7 +333,7 @@ export function IncomingRequestRowActions(user) {
       const result = sharedValue2.set(nativeEvent.nativeEvent.layout.width);
       const result1 = sharedValue3.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: sharedValue(tmp2(tmp3[13]).Text, { maxFontSizeMultiplier: 2, variant: "text-sm/normal", children: "\u{1F44B}" })
+    children: sharedValue(tmp2(tmp3[13]).Text, { maxFontSizeMultiplier: 2, variant: "body-sm/normal", children: "\u{1F44B}" })
   };
   items14[1] = sharedValue(View2, obj10);
   return tmp42(tmp43, obj5);

@@ -1,15 +1,15 @@
-// Module ID: 15195
-// Function ID: 15196
+// Module ID: 15275
+// Function ID: 15276
 // Name: OrbCheckoutHooks
-// Dependencies: [19, 1385, 7016, 504, 2176, 7533, 9820, 11524, 7855, 4954, 9691, 2]
+// Dependencies: [19, 1385, 7031, 504, 2176, 7549, 9838, 11574, 7871, 4954, 9710, 2]
 // Exports: useOrbCheckoutRedemption, useOrbProductContext
 
-// Module 15195 (OrbCheckoutHooks)
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7855 */;
-import useRedeemVirtualCurrency from "useRedeemVirtualCurrency" /* 9691 */;
+// Module 15275 (OrbCheckoutHooks)
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7871 */;
+import useRedeemVirtualCurrency from "useRedeemVirtualCurrency" /* 9710 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import SKUStore from "SKUStore" /* 7016 */;
+import SKUStore from "SKUStore" /* 7031 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -92,12 +92,13 @@ export function useOrbCheckoutRedemption(skuId) {
   let onSetIsSubmitting;
   let onSignFailure;
   let order;
+  let useOrdersAPI;
   skuId = skuId.skuId;
   const loadId = skuId.loadId;
   const onCheckoutSuccess = skuId.onCheckoutSuccess;
-  ({ onSignFailure, order, onSetIsSubmitting } = skuId);
+  ({ useOrdersAPI, onSignFailure, order, onSetIsSubmitting } = skuId);
   let obj = useRedeemVirtualCurrency;
-  const redeemVirtualCurrency1 = obj.useRedeemVirtualCurrency({ skuId, loadId, order, onSignFailure, onSetIsSubmitting });
+  const redeemVirtualCurrency1 = obj.useRedeemVirtualCurrency({ skuId, loadId, useOrdersAPI, order, onSignFailure, onSetIsSubmitting });
   const redeemVirtualCurrency = redeemVirtualCurrency1.redeemVirtualCurrency;
   const obj2 = {
     onRedeemVirtualCurrency: _false((arg0) => {

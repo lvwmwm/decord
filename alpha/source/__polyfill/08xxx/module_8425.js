@@ -1,220 +1,398 @@
 // Module ID: 8425
 // Function ID: 8426
-// Dependencies: [8426]
+// Dependencies: [8422, 8419]
 
 // Module 8425
-const require = globalThis.__r;
+import _mod8419 from "module_8419" /* 8419 */;
+import _modDef8422 from "module_8422" /* 8422 */;
 
-function decodeXPValue(arg0) {
-  const textDecoder = new TextDecoder("utf-16");
-  const decode = textDecoder.decode;
-  const uint8Array = new Uint8Array(arg0);
-  const str = decode(uint8Array);
-  return str.replace(/\u0000+$/, "");
-}
-const obj = { 11: "ProcessingSoftware", 254: null, 255: null, 256: "ImageWidth", 257: "ImageLength", 258: "BitsPerSample", 259: "Compression", 262: "PhotometricInterpretation", 263: null, 264: "CellWidth", 265: "CellLength", 266: null, 269: "DocumentName", 270: "ImageDescription", 271: "Make", 272: "Model", 273: "StripOffsets", 274: null, 277: "SamplesPerPixel", 278: "RowsPerStrip", 279: "StripByteCounts", 280: "MinSampleValue", 281: "MaxSampleValue", 282: null, 283: null, 284: "PlanarConfiguration", 285: "PageName", 286: null, 287: null, 290: null, 296: null, 297: "PageNumber", 301: "TransferFunction", 305: "Software", 306: "DateTime", 315: "Artist", 316: "HostComputer", 317: "Predictor", 318: null, 319: null, 321: "HalftoneHints", 322: "TileWidth", 323: "TileLength", 330: "A100DataOffset", 332: null, 337: "TargetPrinter", 338: null, 339: null, 513: "JPEGInterchangeFormat", 514: "JPEGInterchangeFormatLength", 529: null, 530: "YCbCrSubSampling", 531: null, 532: null, 700: "ApplicationNotes", 18246: "Rating", 18249: "RatingPercent", 33432: null, 33550: "PixelScale", 33723: "IPTC-NAA", 33920: "IntergraphMatrix", 33922: "ModelTiePoint", 34118: "SEMInfo", 34264: "ModelTransform", 34377: "PhotoshopSettings", 34665: "Exif IFD Pointer", 34675: "ICC_Profile", 34735: "GeoTiffDirectory", 34736: "GeoTiffDoubleParams", 34737: "GeoTiffAsciiParams", 34853: "GPS Info IFD Pointer", 40091: null, 40092: null, 40093: null, 40094: null, 40095: null, 42112: "GDALMetadata", 42113: "GDALNoData", 50341: "PrintIM", 50707: "DNGBackwardVersion", 50708: "UniqueCameraModel", 50709: "LocalizedCameraModel", 50721: "ColorMatrix1", 50722: "ColorMatrix2", 50723: "CameraCalibration1", 50724: "CameraCalibration2", 50725: "ReductionMatrix1", 50726: "ReductionMatrix2", 50727: "AnalogBalance", 50728: "AsShotNeutral", 50729: "AsShotWhiteXY", 50730: "BaselineExposure", 50731: "BaselineNoise", 50732: "BaselineSharpness", 50734: "LinearResponseLimit", 50735: "CameraSerialNumber", 50736: "DNGLensInfo", 50739: "ShadowScale", 50741: null, 50778: null, 50779: null, 50781: "RawDataUniqueID", 50827: "OriginalRawFileName", 50828: "OriginalRawFileData", 50831: "AsShotICCProfile", 50832: "AsShotPreProfileMatrix", 50833: "CurrentICCProfile", 50834: "CurrentPreProfileMatrix", 50879: "ColorimetricReference", 50885: "SRawType", 50898: "PanasonicTitle", 50899: "PanasonicTitle2", 50931: "CameraCalibrationSig", 50932: "ProfileCalibrationSig", 50933: "ProfileIFD", 50934: "AsShotProfileName", 50936: "ProfileName", 50937: "ProfileHueSatMapDims", 50938: "ProfileHueSatMapData1", 50939: "ProfileHueSatMapData2", 50940: "ProfileToneCurve", 50941: null, 50942: "ProfileCopyright", 50964: "ForwardMatrix1", 50965: "ForwardMatrix2", 50966: "PreviewApplicationName", 50967: "PreviewApplicationVersion", 50968: "PreviewSettingsName", 50969: "PreviewSettingsDigest", 50970: null, 50971: "PreviewDateTime", 50972: "RawImageDigest", 50973: "OriginalRawFileDigest", 50981: "ProfileLookTableDims", 50982: "ProfileLookTableData", 51043: "TimeCodes", 51044: "FrameRate", 51058: "TStop", 51081: "ReelName", 51089: "OriginalDefaultFinalSize", 51090: "OriginalBestQualitySize", 51091: "OriginalDefaultCropSize", 51105: "CameraLabel", 51107: null, 51108: null, 51109: "BaselineExposureOffset", 51110: null, 51111: "NewRawImageDigest", 51112: "RawToPreviewGain" };
-obj[254] = {
-  name: "SubfileType",
-  description(arg0) {
-    return { 0: "Full-resolution image", 1: "Reduced-resolution image", 2: "Single page of multi-page image", 3: "Single page of multi-page reduced-resolution image", 4: "Transparency mask", 5: "Transparency mask of reduced-resolution image", 6: "Transparency mask of multi-page image", 7: "Transparency mask of reduced-resolution multi-page image", 65537: "Alternate reduced-resolution image", "4294967295": "Invalid" }[arg0] || "Unknown";
-  }
-};
-obj[255] = {
-  name: "OldSubfileType",
-  description(arg0) {
-    return { 0: "Full-resolution image", 1: "Reduced-resolution image", 2: "Single page of multi-page image" }[arg0] || "Unknown";
-  }
-};
-obj[263] = {
-  name: "Thresholding",
-  description(arg0) {
-    return { 1: "No dithering or halftoning", 2: "Ordered dither or halfton", 3: "Randomized dither" }[arg0] || "Unknown";
-  }
-};
-obj[266] = {
-  name: "FillOrder",
-  description(arg0) {
-    return { 1: "Normal", 2: "Reversed" }[arg0] || "Unknown";
-  }
-};
-obj[274] = {
-  name: "Orientation",
-  description(arg0) {
-    let str = "top-left";
-    if (1 !== arg0) {
-      let str2 = "top-right";
-      if (2 !== arg0) {
-        let str3 = "bottom-right";
-        if (3 !== arg0) {
-          let str4 = "bottom-left";
-          if (4 !== arg0) {
-            let str5 = "left-top";
-            if (5 !== arg0) {
-              let str6 = "right-top";
-              if (6 !== arg0) {
-                let str7 = "right-bottom";
-                if (7 !== arg0) {
-                  let str8 = "Undefined";
-                  if (8 === arg0) {
-                    str8 = "left-bottom";
-                  }
-                  str7 = str8;
-                }
-                str6 = str7;
-              }
-              str5 = str6;
+let length, length2, length3, length4, length5;
+
+let obj = {
+  isJpegFile(byteLength) {
+    const tmp = byteLength && byteLength.byteLength >= c3 && byteLength.getUint16(0) === c4;
+    return tmp;
+  },
+  findJpegOffsets(byteLength) {
+    let tmp17;
+    let tmp2;
+    let tmp3;
+    let tmp4;
+    let tmp5;
+    let tmp6;
+    let tmp7;
+    let tmp8;
+    let tmp = c5;
+    let tmp10 = c5;
+    let tmp11;
+    let tmp12;
+    let tmp13;
+    let tmp14;
+    let tmp15;
+    let tmp16;
+    let tmp18;
+    if (c5 + c6 + 5 <= byteLength.byteLength) {
+      while (true) {
+        let tmp9;
+        let uint16;
+        let sum6;
+        let tmp85;
+        let tmp86;
+        let sum5;
+        let sum4;
+        let sum3;
+        let tmp90;
+        let tmp91;
+        let tmp82;
+        let sum1;
+        let tmp122;
+        let tmp123;
+        let tmp124;
+        let tmp125;
+        let tmp126;
+        let tmp127;
+        let tmp128;
+        let tmp129;
+        let tmp19 = importDefault;
+        if (_modDef8422.USE_FILE) {
+          if (byteLength.getUint16(tmp) === c19) {
+            sum = tmp + c7;
+            uint16 = byteLength.getUint16(sum);
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = sum;
+            tmp82 = c7;
+            sum1 = tmp + (tmp82 + uint16);
+            tmp122 = sum6;
+            tmp123 = tmp85;
+            tmp124 = tmp86;
+            tmp125 = sum5;
+            tmp126 = sum4;
+            tmp127 = sum3;
+            tmp128 = tmp90;
+            tmp129 = tmp91;
+            tmp = sum1;
+            tmp2 = tmp122;
+            tmp3 = tmp123;
+            tmp4 = tmp124;
+            tmp5 = tmp125;
+            tmp6 = tmp126;
+            tmp7 = tmp127;
+            tmp8 = tmp128;
+            tmp9 = tmp129;
+            tmp10 = sum1;
+            tmp11 = tmp122;
+            tmp12 = tmp123;
+            tmp13 = tmp124;
+            tmp14 = tmp125;
+            tmp15 = tmp126;
+            tmp16 = tmp127;
+            tmp17 = tmp128;
+            tmp18 = tmp129;
+            if (sum1 + c6 + 5 > byteLength.byteLength) {
+              break;
             }
-            str4 = str5;
           }
-          str3 = str4;
         }
-        str2 = str3;
+        if (tmp19(8422).USE_FILE) {
+          if (byteLength.getUint16(tmp) === c20) {
+            let sum2 = tmp + c7;
+            uint16 = byteLength.getUint16(sum2);
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = sum2;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(8422).USE_JFIF) {
+          length = JFIF.length;
+          let tmp32 = JFIF;
+          let tmp34 = byteLength.getUint16(tmp) === c25;
+          if (tmp34) {
+            let obj = _mod8419;
+            tmp34 = obj.getStringFromDataView(byteLength, tmp + c6, length) === tmp32;
+          }
+          if (tmp34) {
+            tmp34 = 0 === byteLength.getUint8(tmp + c6 + length);
+          }
+          if (tmp34) {
+            uint16 = byteLength.getUint16(tmp + c7);
+            sum3 = tmp + c8;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(8422).USE_EXIF) {
+          length2 = Exif.length;
+          let tmp38 = Exif;
+          let tmp40 = byteLength.getUint16(tmp) === c26;
+          if (tmp40) {
+            let obj2 = _mod8419;
+            tmp40 = obj2.getStringFromDataView(byteLength, tmp + c6, length2) === tmp38;
+          }
+          if (tmp40) {
+            tmp40 = 0 === byteLength.getUint8(tmp + c6 + length2);
+          }
+          if (tmp40) {
+            uint16 = byteLength.getUint16(tmp + c7);
+            sum4 = tmp + c9;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(8422).USE_XMP) {
+          let tmp45 = byteLength.getUint16(tmp) === c26;
+          if (tmp45) {
+            length3 = length3.length;
+            let obj3 = _mod8419;
+            tmp45 = obj3.getStringFromDataView(byteLength, tmp + c6, length3) === length3;
+          }
+          if (tmp45) {
+            let arr3 = tmp4 || [];
+            let uint161 = byteLength.getUint16(tmp + c7);
+            let obj8 = { dataOffset: tmp + c11, length: uint161 - 31 };
+            let arr = arr3.push(obj8);
+            tmp86 = arr3;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            uint16 = uint161;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(8422).USE_XMP) {
+          let tmp50 = byteLength.getUint16(tmp) === c26;
+          if (tmp50) {
+            length4 = length4.length;
+            let obj4 = _mod8419;
+            tmp50 = obj4.getStringFromDataView(byteLength, tmp + c6, length4) === length4;
+          }
+          if (tmp50) {
+            let arr2 = tmp4 || [];
+            let uint162 = byteLength.getUint16(tmp + c7);
+            let obj9 = { dataOffset: tmp + c12, length: uint162 - 77 };
+            let arr6 = arr2.push(obj9);
+            tmp86 = arr2;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            uint16 = uint162;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(8422).USE_IPTC) {
+          length5 = length5.length;
+          let tmp54 = length5;
+          let tmp56 = byteLength.getUint16(tmp) === c28;
+          if (tmp56) {
+            let obj5 = _mod8419;
+            tmp56 = obj5.getStringFromDataView(byteLength, tmp + c6, length5) === tmp54;
+          }
+          if (tmp56) {
+            tmp56 = 0 === byteLength.getUint8(tmp + c6 + length5);
+          }
+          if (tmp56) {
+            uint16 = byteLength.getUint16(tmp + c7);
+            sum5 = tmp + c10;
+            sum6 = tmp2;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        if (tmp19(8422).USE_ICC) {
+          let tmp60 = length;
+          let length6 = length.length;
+          let tmp62 = byteLength.getUint16(tmp) === c27;
+          if (tmp62) {
+            let obj6 = _mod8419;
+            tmp62 = obj6.getStringFromDataView(byteLength, tmp + c6, length6) === tmp60;
+          }
+          if (tmp62) {
+            let tmp94 = c7;
+            let uint163 = byteLength.getUint16(tmp + c7);
+            let tmp96 = c13;
+            let diff = uint163 - 16;
+            let uint8 = byteLength.getUint8(tmp + sum);
+            let items = tmp3;
+            let uint81 = byteLength.getUint8(tmp + closure_17);
+            if (!tmp3) {
+              items = [];
+            }
+            let obj10 = { offset: tmp + tmp96, length: diff, chunkNumber: uint8, chunksTotal: uint81 };
+            let arr7 = items.push(obj10);
+            tmp85 = items;
+            sum6 = tmp2;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            uint16 = uint163;
+            tmp82 = tmp94;
+          }
+        }
+        if (tmp19(8422).USE_MPF) {
+          let tmp65 = length2;
+          let length7 = length2.length;
+          let tmp67 = byteLength.getUint16(tmp) === c27;
+          if (tmp67) {
+            let obj7 = _mod8419;
+            tmp67 = obj7.getStringFromDataView(byteLength, tmp + c6, length7) === tmp65;
+          }
+          if (tmp67) {
+            uint16 = byteLength.getUint16(tmp + c7);
+            sum6 = tmp + c14;
+            tmp85 = tmp3;
+            tmp86 = tmp4;
+            sum5 = tmp5;
+            sum4 = tmp6;
+            sum3 = tmp7;
+            tmp90 = tmp8;
+            tmp91 = tmp9;
+            tmp82 = c7;
+          }
+        }
+        let uint164 = byteLength.getUint16(tmp);
+        let tmp72 = uint164 >= c25;
+        if (tmp72) {
+          tmp72 = uint164 <= c29;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c30;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c19;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c20;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c21;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c22;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c23;
+        }
+        if (!tmp72) {
+          tmp72 = uint164 === c24;
+        }
+        let getUint16 = byteLength.getUint16;
+        if (tmp72) {
+          tmp82 = c7;
+          uint16 = getUint16(tmp + c7);
+          sum6 = tmp2;
+          tmp85 = tmp3;
+          tmp86 = tmp4;
+          sum5 = tmp5;
+          sum4 = tmp6;
+          sum3 = tmp7;
+          tmp90 = tmp8;
+          tmp91 = tmp9;
+        } else {
+          tmp10 = tmp;
+          tmp11 = tmp2;
+          tmp12 = tmp3;
+          tmp13 = tmp4;
+          tmp14 = tmp5;
+          tmp15 = tmp6;
+          tmp16 = tmp7;
+          tmp17 = tmp8;
+          tmp18 = tmp9;
+          if (getUint16(tmp) !== c31) {
+            break;
+          } else {
+            sum1 = tmp + 1;
+            tmp122 = tmp2;
+            tmp123 = tmp3;
+            tmp124 = tmp4;
+            tmp125 = tmp5;
+            tmp126 = tmp6;
+            tmp127 = tmp7;
+            tmp128 = tmp8;
+            tmp129 = tmp9;
+          }
+        }
+        break;
       }
-      str = str2;
     }
-    return str;
-  }
-};
-obj[282] = { name: "XResolution", description: require("module_8426").XResolution };
-({ name: "XResolution", description: require("module_8426").XResolution });
-obj[283] = { name: "YResolution", description: require("module_8426").YResolution };
-obj[286] = {
-  name: "XPosition",
-  description(arg0) {
-    return "" + Math.round(arg0[0] / arg0[1]);
-  }
-};
-obj[287] = {
-  name: "YPosition",
-  description(arg0) {
-    return "" + Math.round(arg0[0] / arg0[1]);
-  }
-};
-obj[290] = {
-  name: "GrayResponseUnit",
-  description(arg0) {
-    return { 1: "0.1", 2: "0.001", 3: "0.0001", 4: "1e-05", 5: "1e-06" }[arg0] || "Unknown";
-  }
-};
-({ name: "YResolution", description: require("module_8426").YResolution });
-obj[296] = { name: "ResolutionUnit", description: require("module_8426").ResolutionUnit };
-obj[318] = {
-  name: "WhitePoint",
-  description(arr) {
-    const mapped = arr.map((item) => "" + item[0] + "/" + item[1]);
-    return mapped.join(", ");
-  }
-};
-obj[319] = {
-  name: "PrimaryChromaticities",
-  description(arr) {
-    const mapped = arr.map((item) => "" + item[0] + "/" + item[1]);
-    return mapped.join(", ");
-  }
-};
-obj[332] = {
-  name: "InkSet",
-  description(arg0) {
-    return { 1: "CMYK", 2: "Not CMYK" }[arg0] || "Unknown";
-  }
-};
-obj[338] = {
-  name: "ExtraSamples",
-  description(arg0) {
-    return { 0: "Unspecified", 1: "Associated Alpha", 2: "Unassociated Alpha" }[arg0] || "Unknown";
-  }
-};
-obj[339] = {
-  name: "SampleFormat",
-  description(arr) {
-    let closure_0 = { 1: "Unsigned", 2: "Signed", 3: "Float", 4: "Undefined", 5: "Complex int", 6: "Complex float" };
-    let str = "Unknown";
-    if (Array.isArray(arr)) {
-      const mapped = arr.map((item) => closure_0[item] || "Unknown");
-      str = mapped.join(", ");
+    const obj11 = { hasAppMarkers: tmp10 > c5, fileDataOffset: tmp18, jfifDataOffset: tmp16, tiffHeaderOffset: tmp15, iptcDataOffset: tmp14, xmpChunks: tmp13, iccChunks: tmp12, mpfDataOffset: tmp11 };
+    if (!tmp18) {
+      tmp18 = tmp17;
     }
-    return str;
+    return obj11;
   }
 };
-obj[529] = {
-  name: "YCbCrCoefficients",
-  description(arr) {
-    const mapped = arr.map((item) => "" + item[0] / item[1]);
-    return mapped.join("/");
-  }
-};
-obj[531] = {
-  name: "YCbCrPositioning",
-  description(arg0) {
-    let str = "centered";
-    if (1 !== arg0) {
-      let str2 = "co-sited";
-      if (2 !== arg0) {
-        str2 = `undefined ${arg0}`;
-      }
-      str = str2;
-    }
-    return str;
-  }
-};
-obj[532] = {
-  name: "ReferenceBlackWhite",
-  description(arr) {
-    const mapped = arr.map((item) => "" + item[0] / item[1]);
-    return mapped.join(", ");
-  }
-};
-obj[33432] = {
-  name: "Copyright",
-  description(join) {
-    return join.join("; ");
-  }
-};
-obj[40091] = { name: "XPTitle", description: decodeXPValue };
-obj[40092] = { name: "XPComment", description: decodeXPValue };
-obj[40093] = { name: "XPAuthor", description: decodeXPValue };
-obj[40094] = { name: "XPKeywords", description: decodeXPValue };
-obj[40095] = { name: "XPSubject", description: decodeXPValue };
-obj[50741] = {
-  name: "MakerNoteSafety",
-  description(arg0) {
-    return { 0: "Unsafe", 1: "Safe" }[arg0] || "Unknown";
-  }
-};
-({ name: "ResolutionUnit", description: require("module_8426").ResolutionUnit });
-obj[50778] = { name: "CalibrationIlluminant1", description: require("module_8426").LightSource };
-({ name: "CalibrationIlluminant1", description: require("module_8426").LightSource });
-obj[50779] = { name: "CalibrationIlluminant2", description: require("module_8426").LightSource };
-obj[50941] = {
-  name: "ProfileEmbedPolicy",
-  description(arg0) {
-    return { 0: "Allow Copying", 1: "Embed if Used", 2: "Never Embed", 3: "No Restrictions" }[arg0] || "Unknown";
-  }
-};
-obj[50970] = {
-  name: "PreviewColorSpace",
-  description(arg0) {
-    return { 1: "Gray Gamma 2.2", 2: "sRGB", 3: "Adobe RGB", 4: "ProPhoto RGB" }[arg0] || "Unknown";
-  }
-};
-obj[51107] = {
-  name: "ProfileHueSatMapEncoding",
-  description(arg0) {
-    return { 0: "Linear", 1: "sRGB" }[arg0] || "Unknown";
-  }
-};
-obj[51108] = {
-  name: "ProfileLookTableEncoding",
-  description(arg0) {
-    return { 0: "Linear", 1: "sRGB" }[arg0] || "Unknown";
-  }
-};
-obj[51110] = {
-  name: "DefaultBlackRender",
-  description(arg0) {
-    return { 0: "Auto", 1: "None" }[arg0] || "Unknown";
-  }
-};
-({ name: "CalibrationIlluminant2", description: require("module_8426").LightSource });
+let c3 = 2;
+let c4 = 65496;
+let c5 = 2;
+let c6 = 4;
+let c7 = 2;
+let c8 = 2;
+let c9 = 10;
+let c10 = 18;
+let c11 = 33;
+let c12 = 79;
+let c13 = 18;
+let c14 = 8;
+let c15 = "ICC_PROFILE\0";
+let sum = 4 + "ICC_PROFILE\0".length;
+let closure_17 = sum + 1;
+let c18 = "MPF\0";
+let c19 = 65472;
+let c20 = 65474;
+let c21 = 65476;
+let c22 = 65499;
+let c23 = 65501;
+let c24 = 65498;
+let c25 = 65504;
+let c26 = 65505;
+let c27 = 65506;
+let c28 = 65517;
+let c29 = 65519;
+let c30 = 65534;
+let c31 = 65535;
+const JFIF = "JFIF";
+const Exif = "Exif";
+let c34 = "http://ns.adobe.com/xap/1.0/\0";
+let c35 = "http://ns.adobe.com/xmp/extension/\0";
+let c36 = "Photoshop 3.0";
 
 export default obj;

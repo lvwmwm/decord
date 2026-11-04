@@ -1,13 +1,13 @@
-// Module ID: 12373
-// Function ID: 12374
+// Module ID: 12438
+// Function ID: 12439
 // Name: ConjureModeTabBar
-// Dependencies: [19, 17, 21, 5141, 575, 5719, 1652, 5757, 1377, 8965, 1113, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5732, 1652, 5771, 1377, 8982, 1113, 5761, 2]
 // Exports: default
 
-// Module 12373 (ConjureModeTabBar)
+// Module 12438 (ConjureModeTabBar)
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 8965 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8982 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -26,8 +26,8 @@ let tmp2;
 const intl2 = tmp2(1113);
 const PlatformUtils = tmp2(1377);
 const _mod1652 = tmp2(1652);
-const Text_Text = tmp2(5747);
-const spring_spring = tmp2(5757);
+const Text_Text = tmp2(5761);
+const spring_spring = tmp2(5771);
 function ConjureModeTab(index) {
   let activeIndex;
   let closure_129_2;
@@ -181,11 +181,11 @@ function ConjureModeTab(index) {
   }
   let tmp20Result = null;
   if (null != prefix) {
-    const obj6 = { variant: "text-sm/medium", color: "text-muted", style: prefixStyle, children: extras.prefix };
+    const obj6 = { variant: "body-sm/medium", color: "text-muted", style: prefixStyle, children: extras.prefix };
     tmp20Result = tmp20(Text_Text.Text, obj6);
   }
   items4 = [tmp20Result, , ];
-  const obj7 = { animated: true, variant: "text-sm/semibold", style: items5, lineClamp: 1, children: label };
+  const obj7 = { animated: true, variant: "body-sm/semibold", style: items5, lineClamp: 1, children: label };
   items5 = [labelTextStyle, animatedStyle];
   items4[1] = metroImportDefault(Text_Text.Text, obj7);
   let renderTrailingIconResult;

@@ -1,17 +1,17 @@
-// Module ID: 18139
-// Function ID: 18140
+// Module ID: 18236
+// Function ID: 18237
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1399, 5196, 1385, 14108, 21, 5141, 504, 7460, 575, 5855, 5747, 1113, 7106, 5209, 1187, 5195, 2]
+// Dependencies: [19, 17, 1399, 5196, 1385, 14194, 21, 5141, 504, 7476, 575, 5869, 5761, 1113, 7121, 5208, 1187, 5195, 2]
 // Exports: default
 
-// Module 18139 (AccountSwitcherListItem)
+// Module 18236 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
-import react_native from "react-native" /* 5209 */;
-import MultiAccountStore from "MultiAccountStore" /* 14108 */;
+import react_native from "react-native" /* 5208 */;
+import MultiAccountStore from "MultiAccountStore" /* 14194 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1399 */;
@@ -40,13 +40,13 @@ class AccountStatusIcon {
     }
     if (id === id1) {
       const obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-      const CircleCheckIcon = tmp(7460).CircleCheckIcon;
+      const CircleCheckIcon = tmp(7476).CircleCheckIcon;
       tmp6 = React4(CircleCheckIcon, obj2);
     } else {
       tmp6 = null;
       if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
         const obj3 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-        const CircleInformationIcon = tmp(5855).CircleInformationIcon;
+        const CircleInformationIcon = tmp(5869).CircleInformationIcon;
         tmp6 = React4(CircleInformationIcon, obj3);
       }
     }
@@ -100,15 +100,15 @@ export default function AccountSwitcherListItem(arg0) {
   if (id === id1) {
     let PressableOpacity;
     if (showActiveAccountLabel) {
-      const obj4 = { variant: "text-sm/semibold", color: "text-brand", children: intl.string(intl4.t.seV8yt) };
-      const Text = tmp2(5747).Text;
+      const obj4 = { variant: "body-sm/semibold", color: "text-brand", children: intl.string(intl4.t.seV8yt) };
+      const Text = tmp2(5761).Text;
       intl = tmp2(1113).intl;
       tmp8 = React4(Text, obj4);
     }
     if (null == onPressUser) {
       PressableOpacity = _false;
     } else {
-      PressableOpacity = tmp2(7106).PressableOpacity;
+      PressableOpacity = tmp2(7121).PressableOpacity;
     }
     const obj5 = { selected: id === id1 };
     const tmp2Result = react_native;
@@ -123,12 +123,12 @@ export default function AccountSwitcherListItem(arg0) {
     const merged = Object.assign(sortHandlers);
     items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: items3 };
-    const obj9 = { user: obj3, guildId: "y" };
+    const obj9 = { user: obj3, guildId: "a" };
     items3 = [React4(native.Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: items5 };
     const obj11 = { style: tmp.tagContainer, children: items4 };
-    const obj12 = { variant: "text-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: getUserTag(obj3, obj13) };
-    const Text2 = tmp2(5747).Text;
+    const obj12 = { variant: "body-md/semibold", color: "text-default", style: tmp.username, lineClamp: 1, children: getUserTag(obj3, obj13) };
+    const Text2 = tmp2(5761).Text;
     let str = "always";
     getUserTag = UserUtilsDefault.getUserTag;
     UserUtilsDefault;
@@ -140,8 +140,8 @@ export default function AccountSwitcherListItem(arg0) {
     let tmp18Result = !stateFromStores && !obj3.hasUniqueUsername();
     if (tmp18Result) {
       const _HermesInternal = HermesInternal;
-      const obj14 = { variant: "text-md/normal", color: "text-muted", children: "#" + obj3.discriminator };
-      const Text3 = tmp2(5747).Text;
+      const obj14 = { variant: "body-md/normal", color: "text-muted", children: "#" + obj3.discriminator };
+      const Text3 = tmp2(5761).Text;
       tmp18Result = tmp18(Text3, obj14);
     }
     items4[1] = tmp18Result;
@@ -157,8 +157,8 @@ export default function AccountSwitcherListItem(arg0) {
   }
   tmp8 = null;
   if (user.tokenStatus === MultiAccountTokenStatus.INVALID) {
-    const obj16 = { variant: "text-sm/semibold", color: "text-feedback-critical", children: intl3.string(intl4.t.tYX2ps) };
-    const Text4 = tmp2(5747).Text;
+    const obj16 = { variant: "body-sm/semibold", color: "text-feedback-critical", children: intl3.string(intl4.t.tYX2ps) };
+    const Text4 = tmp2(5761).Text;
     intl3 = tmp2(1113).intl;
     tmp8 = React4(Text4, obj16);
   }

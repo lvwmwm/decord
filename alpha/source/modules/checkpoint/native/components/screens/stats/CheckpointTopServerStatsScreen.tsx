@@ -1,26 +1,26 @@
-// Module ID: 13802
-// Function ID: 13803
+// Module ID: 13888
+// Function ID: 13889
 // Name: CheckpointTopServerStatsScreen
-// Dependencies: [17, 13571, 6186, 21, 5141, 575, 504, 6557, 1113, 3219, 13777, 13800, 7083, 5747, 13799, 9890, 13779, 13792, 13793, 2]
+// Dependencies: [17, 13656, 6201, 21, 5141, 575, 504, 6572, 1113, 3219, 13863, 13886, 7098, 5761, 13885, 9908, 13865, 13878, 13879, 2]
 // Exports: default
 
-// Module 13802 (CheckpointTopServerStatsScreen)
+// Module 13888 (CheckpointTopServerStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3219 from "module_3219" /* 3219 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6557 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import ServerIcon from "ServerIcon" /* 9890 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 13777 */;
-import CheckpointTextDefault from "CheckpointText" /* 13779 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13792 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13793 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 13799 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 13800 */;
-import CheckpointStore from "CheckpointStore" /* 13571 */;
-import CheckpointConstants from "CheckpointConstants" /* 6186 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6572 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import ServerIcon from "ServerIcon" /* 9908 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 13863 */;
+import CheckpointTextDefault from "CheckpointText" /* 13865 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13878 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13879 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 13885 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 13886 */;
+import CheckpointStore from "CheckpointStore" /* 13656 */;
+import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -138,7 +138,7 @@ export default function CheckpointTopServerStatsScreen() {
   const obj11 = { style: tmp.copy, children: items6 };
   const obj13 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
   items5[0] = metroRequire(ServerIcon.ServerIcon, obj13);
-  const obj14 = { isStepHeading: true, variant: "heading-md/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
+  const obj14 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp9Result7 = CheckpointTextDefault;
   items5[1] = metroRequire(tmp9Result7, obj14);
   items6 = [metroImportDefault(View, obj12), , ];

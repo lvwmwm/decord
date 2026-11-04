@@ -1,14 +1,14 @@
-// Module ID: 19912
-// Function ID: 19913
+// Module ID: 20028
+// Function ID: 20029
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 8517, 21, 575, 5141, 1113, 6147, 5747, 19910, 19913, 15886, 12355, 17487, 2]
+// Dependencies: [19, 17, 8534, 21, 575, 5141, 1113, 6162, 5761, 20026, 20029, 15974, 12420, 17577, 2]
 // Exports: default
 
-// Module 19912 (GuildSettingsServerTagColorGrid)
+// Module 20028 (GuildSettingsServerTagColorGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import GuildTagConstants from "GuildTagConstants" /* 8517 */;
+import GuildTagConstants from "GuildTagConstants" /* 8534 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -98,7 +98,7 @@ export default function GuildSettingsServerTagColorGrid(badge) {
   }
   const obj3 = { spacing: primary(tmp12[4]).space.PX_8, children: items };
   const Stack = tmp13(tmp12[7]).Stack;
-  const obj4 = { variant: "text-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl2.string(tmp13(tmp12[6]).t["Fg/TNW"]) };
+  const obj4 = { variant: "body-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl2.string(tmp13(tmp12[6]).t["Fg/TNW"]) };
   const Text = tmp13(tmp12[8]).Text;
   intl2 = tmp13(tmp12[6]).intl;
   items = [closure_7(Text, obj4), ];

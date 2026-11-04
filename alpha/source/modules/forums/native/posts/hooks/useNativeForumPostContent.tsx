@@ -1,14 +1,14 @@
-// Module ID: 13918
-// Function ID: 13919
+// Module ID: 14004
+// Function ID: 14005
 // Name: useNativeForumPostContent
-// Dependencies: [1072, 5141, 1113, 7008, 6680, 2]
+// Dependencies: [1072, 5141, 1113, 7023, 6695, 2]
 // Exports: default
 
-// Module 13918 (useNativeForumPostContent)
+// Module 14004 (useNativeForumPostContent)
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
-import StickersUtils from "StickersUtils" /* 6680 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7008 */;
+import StickersUtils from "StickersUtils" /* 6695 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7023 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -27,13 +27,13 @@ export default function useNativeForumPostContent(arg0) {
   ({ messageLoaded, isMessageDeleted } = arg0);
   const tmp = closure_4();
   if (isMessageDeleted) {
-    const obj2 = { content: intl9.string(intl10.t.U8Rr2l), style: tmp.italics, variant: "text-sm/normal" };
+    const obj2 = { content: intl9.string(intl10.t.U8Rr2l), style: tmp.italics, variant: "body-sm/normal" };
     intl9 = intl10.intl;
     return obj2;
   } else {
     if (null != message) {
       if (isSystemMessageDefault(message)) {
-        return { content: messageContent, style: tmp.italics, variant: "text-sm/normal" };
+        return { content: messageContent, style: tmp.italics, variant: "body-sm/normal" };
       }
     }
     const tmp6 = null != message && message.ignored;
@@ -105,7 +105,7 @@ export default function useNativeForumPostContent(arg0) {
             if (tmp9) {
               tmp19 = tmp13;
             }
-            return { content: tmp19, style: null, variant: "text-sm/medium" };
+            return { content: tmp19, style: null, variant: "body-sm/medium" };
           }
         }
       }
@@ -116,7 +116,7 @@ export default function useNativeForumPostContent(arg0) {
         const intl7 = intl10.intl;
         stringResult1 = intl7.string(intl10.t.yWK7ZM);
       }
-      return { content: stringResult1, style: tmp.italics, variant: "text-sm/normal" };
+      return { content: stringResult1, style: tmp.italics, variant: "body-sm/normal" };
     }
     const intl8 = intl10.intl;
     stringResult1 = intl8.string(intl10.t.Lkp2fB);

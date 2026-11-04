@@ -1,21 +1,21 @@
-// Module ID: 7234
-// Function ID: 7235
+// Module ID: 7254
+// Function ID: 7255
 // Name: Login
-// Dependencies: [5, 32, 19, 17, 7235, 502, 1072, 21, 5141, 7106, 5747, 6079, 1113, 1377, 7236, 7237, 1499, 504, 1502, 6860, 7239, 6080, 7240, 7241, 7242, 6566, 7243, 7247, 7248, 7250, 7244, 5754, 7251, 1624, 7253, 7255, 7208, 7261, 7263, 7265, 6147, 7269, 7233, 2]
+// Dependencies: [5, 32, 19, 17, 7255, 502, 1072, 21, 5141, 7121, 5761, 6094, 1113, 1377, 7256, 7257, 1499, 504, 1502, 6875, 7259, 6095, 7260, 7261, 7262, 6581, 7263, 7267, 7268, 7270, 7264, 5768, 7271, 1624, 7273, 7275, 7223, 7237, 7239, 7281, 6162, 7285, 7253, 2]
 // Exports: default
 
-// Module 7234 (Login)
+// Module 7254 (Login)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
-import Pressables from "Pressables" /* 7106 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
+import Pressables from "Pressables" /* 7121 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7235 */;
+import PhoneStore from "PhoneStore" /* 7255 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -35,7 +35,7 @@ class LinkButton {
     let str = variant.variant;
     ({ onPress, text, containerStyle, textStyle } = variant);
     if (str === undefined) {
-      str = "text-xs/medium";
+      str = "body-xs/medium";
     }
     let str2 = variant.textColor;
     if (str2 === undefined) {
@@ -631,7 +631,7 @@ export default function Login(isMultiAccount) {
   const obj13 = { headerText: intl9.string(tmp4(ref[12]).t["7fNJgA"]), subHeader: closure_10(Text, obj14), children: ref(first1, obj15) };
   const tmpResult2 = tmp(ref[39]);
   intl9 = tmp4(tmp2[12]).intl;
-  obj14 = { variant: "text-sm/medium", color: "text-default", children: intl10.string(tmp4(ref[12]).t.euS7r4) };
+  obj14 = { variant: "body-sm/medium", color: "text-default", children: intl10.string(tmp4(ref[12]).t.euS7r4) };
   Text = tmp4(tmp2[10]).Text;
   intl10 = tmp4(tmp2[12]).intl;
   let tmp43 = tmp33Result;

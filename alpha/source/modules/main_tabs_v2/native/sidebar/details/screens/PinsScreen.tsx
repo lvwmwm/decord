@@ -1,13 +1,13 @@
-// Module ID: 19108
-// Function ID: 19109
+// Module ID: 19211
+// Function ID: 19212
 // Name: PinsScreen
-// Dependencies: [19, 17, 4990, 9958, 21, 5141, 575, 1502, 504, 13978, 18956, 2]
+// Dependencies: [19, 17, 4990, 9976, 21, 5141, 575, 1502, 504, 14064, 19059, 2]
 
-// Module 19108 (PinsScreen)
+// Module 19211 (PinsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -34,7 +34,7 @@ const memoResult = react.memo(function PinsScreen() {
     }
     return guild_id;
   });
-  const obj3 = channelId(13978);
+  const obj3 = channelId(14064);
   const channelDetailsSearchContext = obj3.useChannelDetailsSearchContext(channelId, stateFromStores);
   return <View style={closure_7().container}>{null}</View>;
 });

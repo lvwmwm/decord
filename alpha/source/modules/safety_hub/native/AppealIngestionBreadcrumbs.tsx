@@ -1,13 +1,13 @@
-// Module ID: 13479
-// Function ID: 13480
+// Module ID: 13563
+// Function ID: 13564
 // Name: AppealIngestionBreadcrumbs
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 2]
 // Exports: default
 
-// Module 13479 (AppealIngestionBreadcrumbs)
+// Module 13563 (AppealIngestionBreadcrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
+import Text_Text from "Text/Text" /* 5761 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -41,7 +41,7 @@ export default function AppealIngestionBreadcrumbs(reasons) {
   let tmp2 = null;
   if (0 !== reasons.length) {
     let obj = { style: tmp.container, children: items };
-    let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/semibold", children: intl.string(require("intl").t.eQg0Ck) };
+    let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "body-xs/semibold", children: intl.string(require("intl").t.eQg0Ck) };
     const Text = require("Text/Text").Text;
     intl = require("intl").intl;
     items = [
@@ -54,7 +54,7 @@ export default function AppealIngestionBreadcrumbs(reasons) {
           items[0] = _false(View, obj2);
           const obj3 = { style: closure_0.breadCrumbDot };
           items[1] = _false(View, obj3);
-          const obj4 = { lineClamp: 2, ellipsizeMode: "tail", style: closure_0.breadCrumbText, variant: "text-md/medium", children };
+          const obj4 = { lineClamp: 2, ellipsizeMode: "tail", style: closure_0.breadCrumbText, variant: "body-md/medium", children };
           items[2] = _false(Text_Text.Text, obj4);
           return React3(View, obj, "" + children + "+" + index);
         })

@@ -1,17 +1,17 @@
-// Module ID: 20150
-// Function ID: 20151
+// Module ID: 20266
+// Function ID: 20267
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 5141, 575, 18320, 5747, 17369, 1627, 5395, 20151, 5398, 1113, 1187, 20152, 20153, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 18417, 5761, 17460, 1627, 5396, 20267, 5400, 1113, 1187, 20268, 20269, 2]
 // Exports: default
 
-// Module 20150 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 20266 (GuildRoleSubscriptionTierTemplateFullCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17369 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 18320 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20153 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17460 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 18417 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 20269 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -54,7 +54,7 @@ function BenefitRow(description) {
   let tmp4Result = null;
   const tmp4 = React3;
   if (null != description) {
-    const obj4 = { style: tmp.benefitDescription, variant: "text-sm/normal", color: "interactive-text-default", children: description };
+    const obj4 = { style: tmp.benefitDescription, variant: "body-sm/normal", color: "interactive-text-default", children: description };
     tmp4Result = tmp4(Text_Text.Text, obj4);
   }
   items1[1] = tmp4Result;
@@ -127,11 +127,11 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   const obj7 = { paddingBottom: nativeDefault.space.PX_32 + nativeDefault.space.PX_16 + bottom };
   const BottomSheetScrollView = require("BottomSheetModal").BottomSheetScrollView;
   items1[1] = obj7;
-  const obj8 = { variant: "text-sm/semibold", color: "text-default", children: intl.string(require("intl").t.CjC5XZ) };
+  const obj8 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(require("intl").t.CjC5XZ) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items2 = [closure_4(Text, obj8), closure_4(require("native").Spacer, { size: 4 }), , , , , , , , , ];
-  const obj9 = { variant: "text-sm/normal", color: "text-muted", children: intl2.string(require("intl").t.bCb3c8) };
+  const obj9 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(require("intl").t.bCb3c8) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   items2[2] = closure_4(Text2, obj9);
@@ -152,7 +152,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
       const obj = GuildRoleSubscriptionTierTemplateUtils;
       const obj3 = { style: closure_0.channelIcon, size: "xs" };
       items[0] = React3(obj.getPrivateChannelIconComponent(children.type), obj3);
-      const obj4 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.name };
+      const obj4 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: children.name };
       items[1] = React3(Text_Text.Text, obj4);
       const obj5 = { title: hasOwnProperty(View, obj2), description: children.description };
       return React3(BenefitRow, obj5, children.id);
@@ -164,7 +164,7 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   const obj12 = {
     sectionTitle: intl5.string(require("intl").t.w7KA8R),
     children: additional_perks.map((children, index) => {
-      const obj = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.name };
+      const obj = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: children.name };
       const obj2 = { title: closure_1_4(closure_0(dependencyMap[6]).Text, obj) };
       return closure_1_4(BenefitRow, obj2, index);
     })

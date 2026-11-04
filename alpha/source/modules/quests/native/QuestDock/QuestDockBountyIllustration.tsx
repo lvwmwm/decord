@@ -1,24 +1,24 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17418
+// Function ID: 17419
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5142, 6901, 17215, 21, 5141, 17323, 17212, 9632, 17328, 504, 1377, 5837, 5207, 9823, 2]
+// Dependencies: [19, 17, 5142, 6916, 17307, 21, 5141, 17414, 17304, 9651, 17419, 504, 1377, 5851, 5207, 9841, 2]
 
-// Module 17327 (QuestDockBountyIllustration)
+// Module 17418 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import native from "native" /* 5207 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
-import APNGPlayer2 from "APNGPlayer" /* 9632 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9823 */;
-import QuestDockHooks from "QuestDockHooks" /* 17212 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17323 */;
-import _modDef17328 from "module_17328" /* 17328 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
+import APNGPlayer2 from "APNGPlayer" /* 9651 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9841 */;
+import QuestDockHooks from "QuestDockHooks" /* 17304 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17414 */;
+import _modDef17419 from "module_17419" /* 17419 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import QuestDockConstants from "QuestDockConstants" /* 17215 */;
+import QuestDockConstants from "QuestDockConstants" /* 17307 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ function QuestDock3DOrbsAPNGPlayer(shouldAnimate) {
     }
   }, items);
   const APNGPlayer = APNGPlayer2.APNGPlayer;
-  return <APNGPlayer ref={ref} url={_modDef17328} style={tmp.fill} autoplay={false} />;
+  return <APNGPlayer ref={ref} url={_modDef17419} style={tmp.fill} autoplay={false} />;
 }
 function QuestDock3DOrbsIllustration() {
   let obj5;
@@ -122,7 +122,7 @@ function QuestDock3DOrbsIllustration() {
     tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
   } else {
     const obj4 = { source: obj5, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp7, accessible: false };
-    obj5 = { uri: _modDef17328 };
+    obj5 = { uri: _modDef17419 };
     const tmp5Result = FastImageDefault;
     tmp8Result = tmp8(tmp5Result, obj4);
   }

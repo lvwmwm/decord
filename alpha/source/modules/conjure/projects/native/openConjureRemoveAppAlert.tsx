@@ -1,11 +1,11 @@
-// Module ID: 12359
-// Function ID: 12360
+// Module ID: 12424
+// Function ID: 12425
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 5141, 12348, 1113, 3995, 12360, 11005, 11079, 5832, 6084, 5747, 6147, 6080, 2]
+// Dependencies: [5, 32, 19, 21, 5141, 12413, 1113, 3995, 12425, 11054, 11128, 5846, 6099, 5761, 6162, 6095, 2]
 // Exports: default
 
-// Module 12359 (openConjureRemoveAppAlert)
-import useAlertStore from "useAlertStore" /* 6080 */;
+// Module 12424 (openConjureRemoveAppAlert)
+import useAlertStore from "useAlertStore" /* 6095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -208,13 +208,13 @@ function ConjureRemoveAppAlert(action) {
   items = [tmp18Result, , ];
   let tmp18Result3 = null;
   if (null != result2) {
-    let obj7 = { variant: "text-sm/normal", color: "text-muted", children: result2 };
+    let obj7 = { variant: "body-sm/normal", color: "text-muted", children: result2 };
     tmp18Result3 = tmp18(tmp10(tmp9[13]).Text, obj7);
   }
   items[1] = tmp18Result3;
   let tmp18Result4 = null;
   if (null != tmp5) {
-    const obj8 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp5 };
+    const obj8 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp5 };
     tmp18Result4 = tmp18(tmp10(tmp9[13]).Text, obj8);
   }
   items[2] = tmp18Result4;

@@ -1,15 +1,15 @@
-// Module ID: 7873
-// Function ID: 7874
+// Module ID: 7889
+// Function ID: 7890
 // Name: FeaturedBlockRecord
-// Dependencies: [7874, 5809, 7875, 2]
+// Dependencies: [7890, 5823, 7891, 2]
 
-// Module 7873 (FeaturedBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 5809 */;
-import FeaturedCategorySubblockRecord from "FeaturedCategorySubblockRecord" /* 7874 */;
-import FeaturedSubblockType from "FeaturedSubblockType" /* 7875 */;
+// Module 7889 (FeaturedBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 5823 */;
+import FeaturedCategorySubblockRecord from "FeaturedCategorySubblockRecord" /* 7890 */;
+import FeaturedSubblockType from "FeaturedSubblockType" /* 7891 */;
 import size from "module_2" /* 2 */;
 
-const f91910 = (type) => {
+const f92282 = (type) => {
   let fromServerResult;
   if (type.type === FeaturedSubblockType.FeaturedSubblockType.CATEGORY) {
     fromServerResult = closure_1_2.fromServer(type);
@@ -25,7 +25,7 @@ class FeaturedBlockRecord {
     const obj = Object.create(new.target.prototype);
     obj.type = ShopBlockType.ShopBlockType.FEATURED;
     subblocks = subblocks.subblocks;
-    obj.subblocks = subblocks.map(f91910);
+    obj.subblocks = subblocks.map(f92282);
     return obj;
   }
   static fromServer(subblocks) {
@@ -33,7 +33,7 @@ class FeaturedBlockRecord {
       const obj = Object.create(tmp.prototype);
       obj.type = ShopBlockType.ShopBlockType.FEATURED;
       subblocks = subblocks.subblocks;
-      obj.subblocks = subblocks.map(f91910);
+      obj.subblocks = subblocks.map(f92282);
       return obj;
     } else {
       throw new TypeError("Trying to call a non-function");

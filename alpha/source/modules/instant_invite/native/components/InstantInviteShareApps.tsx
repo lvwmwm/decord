@@ -1,15 +1,15 @@
-// Module ID: 9287
-// Function ID: 9288
+// Module ID: 9304
+// Function ID: 9305
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 9288, 21, 5141, 575, 5762, 5426, 9323, 8152, 9292, 2]
+// Dependencies: [32, 19, 17, 9305, 21, 5141, 575, 5776, 5428, 9340, 8168, 9309, 2]
 
-// Module 9287 (InstantInviteShareApps)
+// Module 9304 (InstantInviteShareApps)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InstantInviteConstants from "components/InstantInviteConstants" /* 9288 */;
+import InstantInviteConstants from "components/InstantInviteConstants" /* 9305 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -34,11 +34,11 @@ const memoResult = react.memo(function InstantInviteShareApps(onItemPressed) {
   dependencyMap = undefined;
   const contentContainerStyle = onItemPressed.contentContainerStyle;
   let tmp = closure_10();
-  const obj = onItemPressed(5762);
+  const obj = onItemPressed(5776);
   let closure_1 = obj.useFontScale();
   const tmp2 = _slicedToArray(react.useState(closure_8), 2);
   [arr, c2] = tmp2;
-  let obj2 = onItemPressed(5426);
+  let obj2 = onItemPressed(5428);
   const gesture = obj2.useNativeGesture({ disallowInterruption: true });
   const effect = react.useEffect(() => {
     const allPromises = Promise.all(metroImportDefault.map((isAvailable) => isAvailable.isAvailable));
@@ -96,7 +96,7 @@ const memoResult = react.memo(function InstantInviteShareApps(onItemPressed) {
     }
     return <tmp2 key={type} style={obj2}>{tmpResult}</tmp2>;
   })}</closure_6>;
-  return jsx(onItemPressed(5426).GestureDetector, { gesture, children });
+  return jsx(onItemPressed(5428).GestureDetector, { gesture, children });
 });
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/InstantInviteShareApps.tsx");
 

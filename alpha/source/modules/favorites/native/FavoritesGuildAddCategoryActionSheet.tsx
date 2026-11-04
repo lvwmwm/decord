@@ -1,14 +1,14 @@
-// Module ID: 18357
-// Function ID: 18358
+// Module ID: 18451
+// Function ID: 18452
 // Name: FavoritesGuildAddCategoryActionSheet
-// Dependencies: [32, 19, 5003, 21, 5141, 575, 5015, 10961, 5381, 5395, 7441, 1113, 7208, 5754, 2]
+// Dependencies: [32, 19, 5003, 21, 5141, 575, 5015, 11009, 5382, 5396, 7457, 1113, 7223, 5768, 2]
 // Exports: openFavoritesGuildAddCategoryActionSheet
 
-// Module 18357 (FavoritesGuildAddCategoryActionSheet)
+// Module 18451 (FavoritesGuildAddCategoryActionSheet)
 import nativeDefault from "native" /* 575 */;
 import FavoritesConstants from "FavoritesConstants" /* 5003 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10961 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 11009 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -48,17 +48,17 @@ function FavoritesGuildAddCategoryActionSheet() {
     }
   }, items);
   let obj2 = { contentStyles: tmp.content, bodyStyles: tmp.body, keyboardShouldPersistTaps: "always", header: closure_6(BottomSheetTitleHeader, obj3), children: items1 };
-  const BottomSheet = value(5395).BottomSheet;
+  const BottomSheet = value(5396).BottomSheet;
   obj3 = { title: intl.string(value(1113).t["ISN+NM"]) };
-  BottomSheetTitleHeader = value(7441).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = value(7457).BottomSheetTitleHeader;
   intl = value(1113).intl;
   const obj4 = { label: intl2.string(value(1113).t.OCAkGP), placeholder: intl3.string(value(1113).t.eTVbtx), value, onChange: tmp4, maxLength, autoFocus: true, clearable: true, returnKeyType: "done", onSubmitEditing: callback };
-  const TextInput = value(7208).TextInput;
+  const TextInput = value(7223).TextInput;
   intl2 = value(1113).intl;
   intl3 = value(1113).intl;
   items1 = [closure_6(TextInput, obj4), ];
   const obj5 = { text: intl4.string(value(1113).t.CumH4u), onPress: callback, disabled: !result };
-  const Button = value(5754).Button;
+  const Button = value(5768).Button;
   intl4 = value(1113).intl;
   items1[1] = closure_6(Button, obj5);
   return closure_7(BottomSheet, obj2);

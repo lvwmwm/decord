@@ -1,19 +1,19 @@
-// Module ID: 15113
-// Function ID: 15114
+// Module ID: 15193
+// Function ID: 15194
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1072, 21, 1113, 5141, 575, 5747, 6161, 12, 7609, 5381, 5754, 7687, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 1113, 5141, 575, 5761, 6176, 12, 7625, 5382, 5768, 7703, 2]
 
-// Module 15113 (UserProfileActivityEmptyStates)
+// Module 15193 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7609 */;
-import openUserSettings from "openUserSettings" /* 7687 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
+import openUserSettings from "openUserSettings" /* 7703 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -35,9 +35,9 @@ function EmptyState(arg0) {
   const obj2 = { style: tmp.text, children: items };
   items = [, ];
   const obj = { style: tmp.container, children: items1 };
-  const obj3 = { variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.centeredText, children: heading };
+  const obj3 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.centeredText, children: heading };
   items[0] = metroImportDefault(Text_Text.Text, obj3);
-  const obj4 = { variant: "text-sm/normal", style: tmp.centeredText, children: bodyText };
+  const obj4 = { variant: "body-sm/normal", style: tmp.centeredText, children: bodyText };
   items[1] = metroImportDefault(Text_Text.Text, obj4);
   items1 = [metroImportAll(View, obj2), children];
   return metroImportAll(View, obj);
@@ -130,7 +130,7 @@ const memoResult = react.memo(function UserProfileActivityEmptyOtherUser(user) {
   let name;
   ({ guildId, channelId } = user);
   let tmp = closure_10();
-  let obj = name(6161);
+  let obj = name(6176);
   name = obj.getName(guildId, channelId, user);
   const intl = user(1113).intl;
   items = [user.id];
@@ -157,7 +157,7 @@ const memoResult = react.memo(function UserProfileActivityEmptyOtherUser(user) {
     obj3.hideAllActionSheets();
   }, items);
   obj4 = { size: "sm", variant: "secondary", text: intl2.string(user(1113).t["g33r/P"]), onPress: callback };
-  Button = user(5754).Button;
+  Button = user(5768).Button;
   intl2 = user(1113).intl;
   return closure_7(EmptyState, obj2);
 });

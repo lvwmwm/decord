@@ -1,15 +1,15 @@
-// Module ID: 18543
-// Function ID: 18544
+// Module ID: 18638
+// Function ID: 18639
 // Name: MentionSubtitle
-// Dependencies: [19, 17, 21, 18544, 8727, 8776, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 18639, 8744, 8793, 5761, 1113, 2]
 // Exports: default
 
-// Module 18543 (MentionSubtitle)
+// Module 18638 (MentionSubtitle)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8727 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 18544 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8744 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 18639 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,20 +37,20 @@ export default function MentionSubtitle(channel) {
     channelIconComponentWithGuild = tmpResult.getChannelIconComponentWithGuild(channel, guild);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(8776).TextIcon;
+    channelIconComponentWithGuild = tmp(8793).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: items };
   items = [, ];
   const obj3 = { size: "xxs", color: "icon-muted", style: subtitleStyles.channelIcon };
   items[0] = _false(channelIconComponentWithGuild, obj3);
-  const obj4 = { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
-  const Text = tmp(5747).Text;
+  const obj4 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, style: subtitleStyles.subtitleText, children: intl.format(intl2.t.L9YdGH, obj5) };
+  const Text = tmp(5761).Text;
   intl = tmp(1113).intl;
   obj5 = {
     channelName,
     count: count - 1,
     channelHook(children, arg1) {
-      const obj = { variant: "text-xs/medium", children };
+      const obj = { variant: "body-xs/medium", children };
       return closure_1_3(Text_Text.Text, obj, arg1);
     }
   };

@@ -1,30 +1,30 @@
-// Module ID: 18863
-// Function ID: 18864
+// Module ID: 18966
+// Function ID: 18967
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6983, 14044, 18864, 14031, 9958, 14033, 1072, 21, 7106, 14042, 1113, 5747, 10859, 18865, 7609, 14038, 14024, 504, 14020, 18858, 1500, 18868, 14017, 16873, 8079, 6849, 18869, 18870, 18873, 2]
+// Dependencies: [32, 5, 19, 6998, 14130, 18967, 14117, 9976, 14119, 1072, 21, 7121, 14128, 1113, 5761, 10907, 18968, 7625, 14124, 14110, 504, 14106, 18961, 1500, 18971, 14103, 16965, 8095, 6864, 18972, 18973, 18976, 2]
 
-// Module 18863 (RecentScreen)
+// Module 18966 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8079 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14017 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 14020 */;
-import SearchUtils from "SearchUtils" /* 14024 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 14033 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 14038 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14042 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16873 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14103 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 14106 */;
+import SearchUtils from "SearchUtils" /* 14110 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 14119 */;
+import TrackingDefault from "Tracking" /* 14124 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14128 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6983 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14044 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 18864 */;
-import SearchQueryStore from "SearchQueryStore" /* 14031 */;
-import SearchConstants from "SearchConstants" /* 9958 */;
+import SearchMessageStore from "SearchMessageStore" /* 6998 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14130 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 18967 */;
+import SearchQueryStore from "SearchQueryStore" /* 14117 */;
+import SearchConstants from "SearchConstants" /* 9976 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,14 +35,14 @@ let closure_12;
 let map1;
 let tmp2;
 let unpackModuleId;
-const AgeVerificationAnalyticsUtils = tmp2(6849);
+const AgeVerificationAnalyticsUtils = tmp2(6864);
 function ClearAllHistory(searchContext) {
   let intl2;
   searchContext = searchContext.searchContext;
-  const PressableHighlight = searchContext(7106).PressableHighlight;
+  const PressableHighlight = searchContext(7121).PressableHighlight;
   const intl = searchContext(1113).intl;
-  ({ variant: "text-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1113).t.LFTAUp) });
-  const Text = searchContext(5747).Text;
+  ({ variant: "body-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1113).t.LFTAUp) });
+  const Text = searchContext(5761).Text;
   intl2 = searchContext(1113).intl;
   return <PressableHighlight onPress={function onPress() {
     const obj = SearchPlatformActionCreatorsDefault;
@@ -53,7 +53,7 @@ function ViewAll(onJumpToMedia) {
   let intl2;
   const PressableHighlight = Pressables.PressableHighlight;
   const intl = intl3.intl;
-  ({ variant: "text-sm/semibold", color: "text-brand", children: intl2.string(intl3.t.Ofpgwh) });
+  ({ variant: "body-sm/semibold", color: "text-brand", children: intl2.string(intl3.t.Ofpgwh) });
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   return <PressableHighlight onPress={arg0.onJumpToMedia} accessibilityRole="button" unstable_pressDelay={130} accessibilityLabel={intl.string(intl3.t.Ofpgwh)}>{null}</PressableHighlight>;
@@ -66,7 +66,7 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let _undefined;
   let c1;
   let tmp4;
-  const f132054 = () => memo.getSearchHistory(searchContextId);
+  const f132905 = () => memo.getSearchHistory(searchContextId);
   searchContext = searchContext.searchContext;
   const onJumpToMedia = searchContext.onJumpToMedia;
   const suggestedData = searchContext.suggestedData;
@@ -89,8 +89,8 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let obj2 = searchContext(suggestedData[19]);
   const searchContextId = obj2.getSearchContextId(searchContext);
   c1 = undefined;
-  [tmp4, c1] = messages(isInitialSearchQuery.useState(f132054), 2);
-  const tmp3 = messages(isInitialSearchQuery.useState(f132054), 2);
+  [tmp4, c1] = messages(isInitialSearchQuery.useState(f132905), 2);
+  const tmp3 = messages(isInitialSearchQuery.useState(f132905), 2);
   const obj3 = searchContext(suggestedData[23]);
   let items1 = [searchContextId];
   const focusEffect = obj3.useFocusEffect(isInitialSearchQuery.useCallback(() => {
@@ -344,7 +344,7 @@ let closure_21 = react.memo(function RecentGuildScreen(searchContext) {
   isLoadingSuggestedSearches = suggestedSearches1.isLoadingSuggestedSearches;
   const items3 = [onPressGuildTextChannel, searchContext];
   const onPress = memo1.useCallback((channelId) => {
-    const obj = search_tracking_TrackingDefault;
+    const obj = TrackingDefault;
     const obj2 = { searchContext, channelId };
     const result = obj.trackSuggestedSearchClicked(obj2);
     onPressGuildTextChannel(channelId);

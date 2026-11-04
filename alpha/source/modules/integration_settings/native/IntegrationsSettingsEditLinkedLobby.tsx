@@ -1,14 +1,14 @@
-// Module ID: 19098
-// Function ID: 19099
+// Module ID: 19201
+// Function ID: 19202
 // Name: IntegrationsSettingsEditLinkedLobby
-// Dependencies: [19, 17, 1385, 21, 5141, 575, 5719, 1499, 7446, 7471, 7450, 5772, 504, 10940, 8874, 1113, 5747, 8301, 6147, 1187, 1411, 7186, 7101, 2]
+// Dependencies: [19, 17, 1385, 21, 5141, 575, 5732, 1499, 7462, 7487, 7466, 5786, 504, 10988, 8891, 1113, 5761, 8317, 6162, 1187, 1411, 7201, 7116, 2]
 // Exports: default
 
-// Module 19098 (IntegrationsSettingsEditLinkedLobby)
+// Module 19201 (IntegrationsSettingsEditLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -123,7 +123,7 @@ export default function EditLinkedLobby(channel) {
         const obj2 = {
           username: tmp15.username,
           usernameHook(children, arg1) {
-                const obj = { onPress, variant: "text-sm/semibold", color: "text-strong", children };
+                const obj = { onPress, variant: "body-sm/semibold", color: "text-strong", children };
                 return callback1(channel(navigation[16]).Text, obj, arg1);
               },
           linkedAtDate: date
@@ -151,20 +151,20 @@ export default function EditLinkedLobby(channel) {
     ({ id: obj11.id, icon: obj11.icon } = getOrFetchApplication);
     tmp3Result2 = numScreensToPop(navigation[20]);
     items4 = [callback1(Avatar, obj8), , ];
-    const obj10 = { variant: "text-md/medium", color: "mobile-text-heading-primary", children: getOrFetchApplication.name };
+    const obj10 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: getOrFetchApplication.name };
     items4[1] = callback1(tmp(navigation[16]).Text, obj10);
     let tmp21Result = null != memo;
     if (tmp21Result) {
       const obj12 = { children: items5 };
       const obj13 = { style: tmp5.divider };
       items5 = [callback1(linked_at, obj13), ];
-      const obj14 = { variant: "text-sm/medium", color: "text-subtle", children: memo };
+      const obj14 = { variant: "body-sm/medium", color: "text-subtle", children: memo };
       items5[1] = callback1(tmp(navigation[16]).Text, obj14);
       tmp21Result = tmp21(closure_7, obj12);
     }
     items4[2] = tmp21Result;
     items6 = [closure_8(linked_at, obj7), , ];
-    const obj15 = { variant: "text-sm/normal", color: "text-default", children: intl.format(tmp(navigation[15]).t.DA9v5F, obj16) };
+    const obj15 = { variant: "body-sm/normal", color: "text-default", children: intl.format(tmp(navigation[15]).t.DA9v5F, obj16) };
     const Text = tmp(tmp2[16]).Text;
     intl = tmp(tmp2[15]).intl;
     obj16 = { channelName: tmp11 };

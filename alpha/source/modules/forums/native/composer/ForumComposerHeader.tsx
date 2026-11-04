@@ -1,18 +1,18 @@
-// Module ID: 10358
-// Function ID: 10359
+// Module ID: 10406
+// Function ID: 10407
 // Name: ForumComposerHeader
-// Dependencies: [19, 17, 21, 5141, 575, 5772, 7106, 1113, 7180, 8784, 5747, 8771, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5786, 7121, 1113, 7195, 8801, 5761, 8788, 2]
 // Exports: default
 
-// Module 10358 (ForumComposerHeader)
+// Module 10406 (ForumComposerHeader)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import useChannelNameDefault from "useChannelName" /* 5772 */;
-import Pressables from "Pressables" /* 7106 */;
-import XSmallIcon from "XSmallIcon" /* 7180 */;
-import BookCheckIcon from "BookCheckIcon" /* 8771 */;
-import ForumIcon from "ForumIcon" /* 8784 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import useChannelNameDefault from "useChannelName" /* 5786 */;
+import Pressables from "Pressables" /* 7121 */;
+import XSmallIcon from "XSmallIcon" /* 7195 */;
+import BookCheckIcon from "BookCheckIcon" /* 8788 */;
+import ForumIcon from "ForumIcon" /* 8801 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -75,7 +75,7 @@ export default function ForumComposerHeader(height) {
     const intl2 = tmp7(1113).intl;
     title = intl2.string(tmp7(1113).t["7EjFCk"]);
   }
-  items2 = [hasOwnProperty(Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title }), hasOwnProperty(Text_Text.Text, { variant: "text-xs/medium", color: "text-default", children: tmp3 })];
+  items2 = [hasOwnProperty(Text, { lineClamp: 1, ellipsizeMode: "tail", variant: "body-md/semibold", color: "mobile-text-heading-primary", children: title }), hasOwnProperty(Text_Text.Text, { variant: "body-xs/medium", color: "text-default", children: tmp3 })];
   items1[1] = metroRequire(React3, obj4);
   items[1] = metroRequire(React3, obj3);
   let length;
@@ -85,7 +85,7 @@ export default function ForumComposerHeader(height) {
   let tmp6Result = null;
   if (length > 0) {
     const obj5 = { accessibilityRole: "button", accessibilityLabel: intl3.string(intl4.t.yR6HwZ), style: tmp.button, onPress: onGuidelinesPress, children: hasOwnProperty(BookCheckIcon.BookCheckIcon, {}) };
-    const PressableOpacity2 = tmp7(7106).PressableOpacity;
+    const PressableOpacity2 = tmp7(7121).PressableOpacity;
     intl3 = tmp7(1113).intl;
     tmp6Result = tmp6(PressableOpacity2, obj5);
   }

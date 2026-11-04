@@ -1,17 +1,17 @@
-// Module ID: 17760
-// Function ID: 17761
+// Module ID: 17856
+// Function ID: 17857
 // Name: toggleDismissibleContentDismissState
-// Dependencies: [19, 5172, 5810, 4988, 4975, 4971, 11, 504, 5171, 1089, 4981, 2]
+// Dependencies: [19, 5172, 5824, 4988, 4975, 4971, 11, 504, 5171, 1089, 4981, 2]
 // Exports: default
 
-// Module 17760 (toggleDismissibleContentDismissState)
+// Module 17856 (toggleDismissibleContentDismissState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4971 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 4975 */;
 import DismissibleContentTypes from "DismissibleContentTypes" /* 4981 */;
 import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4988 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5810 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5824 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,28 @@
-// Module ID: 7443
-// Function ID: 7444
+// Module ID: 7459
+// Function ID: 7460
 // Name: GuildOnboardingConnectionPrompt
-// Dependencies: [19, 17, 7068, 7396, 6692, 5012, 7388, 7389, 7385, 1072, 21, 5141, 5709, 575, 1499, 1627, 504, 7394, 1252, 5880, 7387, 7412, 5747, 1113, 7444, 7471, 5754, 2]
+// Dependencies: [19, 17, 7083, 7412, 6707, 5012, 7404, 7405, 7401, 1072, 21, 5141, 5722, 575, 1499, 1627, 504, 7410, 1252, 5894, 7403, 7428, 5761, 1113, 7460, 7487, 5768, 2]
 // Exports: default
 
-// Module 7443 (GuildOnboardingConnectionPrompt)
+// Module 7459 (GuildOnboardingConnectionPrompt)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NavigatorConstants from "NavigatorConstants" /* 5709 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5880 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7385 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7387 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7389 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7394 */;
-import ConnectionCardDefault from "ConnectionCard" /* 7444 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7471 */;
+import NavigatorConstants from "NavigatorConstants" /* 5722 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7401 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7403 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7405 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7410 */;
+import ConnectionCardDefault from "ConnectionCard" /* 7460 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7068 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7396 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6692 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7083 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7412 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6707 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7388 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7404 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -197,7 +197,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
   if (stateFromStores3) {
     const obj9 = { style: items10, children: tmp13(Text3, obj10) };
     items10 = [tmp.flex, { justifyContent: "center", alignItems: "center" }];
-    obj10 = { variant: "text-md/normal", color: "text-muted", children: intl4.string(tmp2(tmp3[23]).t.ZTNur7) };
+    obj10 = { variant: "body-md/normal", color: "text-muted", children: intl4.string(tmp2(tmp3[23]).t.ZTNur7) };
     Text3 = tmp2(tmp3[22]).Text;
     intl4 = tmp2(tmp3[23]).intl;
     obj8.children = tmp13(ref, obj9);
@@ -216,7 +216,7 @@ export default function GuildOnboardingConnectionPrompt(guildId) {
     const Text = tmp2(tmp3[22]).Text;
     intl = tmp2(tmp3[23]).intl;
     items12 = [tmp13(Text, obj15), ];
-    const obj16 = { style: tmp.description, variant: "text-md/normal", color: "text-muted", children: intl2.string(tmp2(tmp3[23]).t.BozOXu) };
+    const obj16 = { style: tmp.description, variant: "body-md/normal", color: "text-muted", children: intl2.string(tmp2(tmp3[23]).t.BozOXu) };
     const Text2 = tmp2(tmp3[22]).Text;
     intl2 = tmp2(tmp3[23]).intl;
     items12[1] = tmp13(Text2, obj16);

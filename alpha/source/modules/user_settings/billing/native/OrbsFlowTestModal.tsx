@@ -1,25 +1,25 @@
-// Module ID: 17849
-// Function ID: 17850
+// Module ID: 17945
+// Function ID: 17946
 // Name: OrbsFlowTestModal
-// Dependencies: [32, 19, 17, 21, 9987, 7290, 9943, 10274, 5141, 575, 6147, 5747, 17850, 5381, 14643, 2123, 1113, 7208, 5754, 14633, 14642, 5730, 5734, 17853, 2]
+// Dependencies: [32, 19, 17, 21, 10035, 7306, 9961, 10322, 5141, 575, 6162, 5761, 17946, 5382, 14723, 2123, 1113, 7223, 5768, 14713, 14722, 5743, 5748, 17949, 2]
 
-// Module 17849 (OrbsFlowTestModal)
+// Module 17945 (OrbsFlowTestModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
-import LayerScope2 from "LayerScope" /* 5734 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import HeaderShared from "HeaderShared" /* 9943 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10274 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17850 */;
-import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 17853 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
+import LayerScope2 from "LayerScope" /* 5748 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import HeaderShared from "HeaderShared" /* 9961 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10322 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17946 */;
+import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 17949 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9987 */;
+import NativeStackView from "NativeStackView" /* 10035 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ function BalanceWidgetMenuSection() {
   const obj = { spacing: 16, style: tmp.container, children: items };
   const Stack = Stack_Stack.Stack;
   items = [, ];
-  const obj2 = { variant: "text-lg/semibold", style: tmp.title, children: "Balance Widget Menu" };
+  const obj2 = { variant: "body-lg/semibold", style: tmp.title, children: "Balance Widget Menu" };
   items[0] = metroImportDefault(Text_Text.Text, obj2);
   items[1] = metroImportDefault(BalanceWidgetMenuDefault, {});
   return metroImportAll(Stack, obj);
@@ -101,7 +101,7 @@ function BalanceWidgetPillSection() {
   }, items1);
   let obj = { spacing: 16, style: tmp.container, children: items2 };
   const Stack = balance(first1[10]).Stack;
-  let obj2 = { variant: "text-lg/semibold", style: tmp.title, children: "Balance Widget Pill" };
+  let obj2 = { variant: "body-lg/semibold", style: tmp.title, children: "Balance Widget Pill" };
   items2 = [closure_7(balance(first1[11]).Text, obj2), closure_7(balance(first1[17]).TextInput, { value: first1, onChange: callback, placeholder: "Enter balance amount", keyboardType: "numeric" }), closure_7(balance(first1[18]).Button, { text: "Apply Balance", variant: "primary", onPress: callback1 }), ];
   let obj3 = { style: tmp.balancePillContainer, children: items3 };
   items3 = [closure_7(balance(first1[19]).BalanceWidgetPill, { balance }), closure_7(balance(first1[20]).BalanceWidgetPillButton, { balance, onPress: callback2 })];

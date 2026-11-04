@@ -1,17 +1,17 @@
-// Module ID: 8500
-// Function ID: 8501
+// Module ID: 8517
+// Function ID: 8518
 // Name: InAppReportsMessagePreview
-// Dependencies: [19, 17, 21, 5141, 575, 8501, 5138, 5747, 1113, 10016, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8518, 5138, 5761, 1113, 10064, 2]
 // Exports: default
 
-// Module 8500 (InAppReportsMessagePreview)
+// Module 8517 (InAppReportsMessagePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import RowGeneratorDefault from "RowGenerator" /* 8501 */;
-import ChatItemDefault from "ChatItem" /* 10016 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import RowGeneratorDefault from "RowGenerator" /* 8518 */;
+import ChatItemDefault from "ChatItem" /* 10064 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -42,7 +42,7 @@ export default function MessagePreview(message) {
   const tmp = closure_6();
   const obj2 = { style: tmp.container, children: items };
   const obj = ColorUtils;
-  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/semibold", children: intl.string(intl2.t.iouM3a) };
+  const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "body-xs/semibold", children: intl.string(intl2.t.iouM3a) };
   const hexWithOpacityResult = obj.hexWithOpacity(tmp.borderColor.color, 0.08);
   const Text = Text_Text.Text;
   intl = intl2.intl;

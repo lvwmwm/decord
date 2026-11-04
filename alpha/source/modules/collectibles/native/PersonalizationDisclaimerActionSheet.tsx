@@ -1,21 +1,21 @@
-// Module ID: 18013
-// Function ID: 18014
+// Module ID: 18109
+// Function ID: 18110
 // Name: PersonalizationDisclaimerActionSheet
-// Dependencies: [19, 1072, 21, 5141, 575, 5829, 2190, 5395, 5747, 1113, 6887, 5754, 8285, 5381, 2]
+// Dependencies: [19, 1072, 21, 5141, 575, 5843, 2190, 5396, 5761, 1113, 6902, 5768, 8301, 5382, 2]
 // Exports: default
 
-// Module 18013 (PersonalizationDisclaimerActionSheet)
+// Module 18109 (PersonalizationDisclaimerActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5395 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import ButtonGroup2 from "ButtonGroup" /* 6887 */;
-import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8285 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import ButtonGroup2 from "ButtonGroup" /* 6902 */;
+import LinkExternalSmallIcon2 from "LinkExternalSmallIcon" /* 8301 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -52,7 +52,7 @@ export default function PersonalizationDisclaimerActionSheet() {
   }, []);
   let obj = { contentStyles: tmp.container, children: items };
   const BottomSheet = Sheet_BottomSheet.BottomSheet;
-  const obj2 = { variant: "heading-md/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: intl.string(intl4.t.euks4U) };
+  const obj2 = { variant: "heading-sm/medium", color: "mobile-text-heading-primary", accessibilityRole: "header", style: tmp.header, children: intl.string(intl4.t.euks4U) };
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items = [hasOwnProperty(Text, obj2), ];

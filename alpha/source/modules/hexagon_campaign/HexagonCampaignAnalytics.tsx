@@ -1,16 +1,16 @@
-// Module ID: 16609
-// Function ID: 16610
+// Module ID: 16699
+// Function ID: 16700
 // Name: HexagonCampaignAnalytics
-// Dependencies: [19, 5166, 1072, 7986, 6908, 7995, 7943, 1252, 2]
+// Dependencies: [19, 5166, 1072, 8002, 6923, 8011, 7959, 1252, 2]
 // Exports: trackHexagonCampaignContentViewed, trackHexagonCampaignPerkAction, useTrackHexagonCampaignContentViewed
 
-// Module 16609 (HexagonCampaignAnalytics)
+// Module 16699 (HexagonCampaignAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import AdCreativeType from "AdCreativeType" /* 6908 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7943 */;
-import AnalyticsActions from "AnalyticsActions" /* 7986 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7995 */;
+import AdCreativeType from "AdCreativeType" /* 6923 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7959 */;
+import AnalyticsActions from "AnalyticsActions" /* 8002 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8011 */;
 import react from "react" /* 19 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
 import size from "module_2" /* 2 */;

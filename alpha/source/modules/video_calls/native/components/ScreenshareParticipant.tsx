@@ -1,15 +1,15 @@
-// Module ID: 12146
-// Function ID: 12147
+// Module ID: 12205
+// Function ID: 12206
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 6834, 1072, 21, 5141, 575, 11892, 504, 5426, 5747, 1113, 5754, 12057, 2]
+// Dependencies: [19, 17, 6849, 1072, 21, 5141, 575, 11951, 504, 5428, 5761, 1113, 5768, 12116, 2]
 // Exports: default
 
-// Module 12146 (ScreenshareParticipant)
+// Module 12205 (ScreenshareParticipant)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6834 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -85,7 +85,7 @@ export default function ScreenshareParticipant(participant) {
     stringResult = string(t.gMOwov);
   }
   items4 = [closure_7(Text, obj4), , ];
-  const obj5 = { style: tmp5.description, variant: "text-sm/medium", color: "interactive-text-default", children: string2Result };
+  const obj5 = { style: tmp5.description, variant: "body-sm/medium", color: "interactive-text-default", children: string2Result };
   const Text2 = tmp6(tmp3[10]).Text;
   const intl2 = tmp6(tmp3[11]).intl;
   const string2 = intl2.string;

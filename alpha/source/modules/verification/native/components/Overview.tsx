@@ -1,10 +1,10 @@
-// Module ID: 19798
-// Function ID: 19799
+// Module ID: 19914
+// Function ID: 19915
 // Name: Overview
-// Dependencies: [19, 17, 4984, 1385, 1072, 21, 5141, 575, 2190, 504, 7197, 1499, 6142, 5754, 1113, 19534, 1282, 7273, 1500, 5747, 17677, 2]
+// Dependencies: [19, 17, 4984, 1385, 1072, 21, 5141, 575, 2190, 504, 7212, 1499, 6157, 5768, 1113, 19638, 1282, 7289, 1500, 5761, 17773, 2]
 // Exports: default
 
-// Module 19798 (Overview)
+// Module 19914 (Overview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
@@ -134,7 +134,7 @@ export default function Overview() {
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items2 = [closure_10(Text, obj5), , ];
-  const obj6 = { variant: "text-sm/medium", style: tmp.body, children: intl2.format(require("intl").t["0rqMV5"], obj7) };
+  const obj6 = { variant: "body-sm/medium", style: tmp.body, children: intl2.format(require("intl").t["0rqMV5"], obj7) };
   const Text2 = require("Text/Text").Text;
   intl2 = require("intl").intl;
   obj7 = { helpCenterURL };

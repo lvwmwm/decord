@@ -1,21 +1,21 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13516
+// Function ID: 13517
 // Name: AutomodSubmitFeedbackModal
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 7412, 7682, 1113, 8483, 7821, 1627, 5747, 8301, 1187, 5754, 5880, 13433, 7820, 5831, 7290, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 7428, 7698, 1113, 8499, 7837, 1627, 5761, 8317, 1187, 5768, 5894, 13517, 7836, 5845, 7306, 2]
 // Exports: default
 
-// Module 13432 (AutomodSubmitFeedbackModal)
+// Module 13516 (AutomodSubmitFeedbackModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7412 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7682 */;
-import AutomodFeedback from "AutomodFeedback" /* 7821 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8483 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7698 */;
+import AutomodFeedback from "AutomodFeedback" /* 7837 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8499 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -74,7 +74,7 @@ function SubmitFeedbackScreen(onSubmit) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items1 = [closure_7(Text, obj4), , , ];
-  const obj5 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: intl2.string(intl4.t.Lbpk6m) };
+  const obj5 = { style: tmp.headerSubtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(intl4.t.Lbpk6m) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items1[1] = closure_7(Text2, obj5);
@@ -94,11 +94,11 @@ function SubmitFeedbackScreen(onSubmit) {
         trailing: closure_1_7(require("native").RadioIndicator, obj2),
         label: closure_1_7(require("Text/Text").Text, obj3)
       };
-      const FormRow = require("module_8301").FormRow;
+      const FormRow = require("module_8317").FormRow;
       obj2 = { active: require === value, style: closure_2.radioIndicator };
-      obj3 = { style: closure_2.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: name };
-      const children = [closure_1_7(FormRow, obj), index < feedbackOptions.length - 1 && closure_1_7(require("module_8301").FormDivider, {})];
-      index < feedbackOptions.length - 1 && closure_1_7(require("module_8301").FormDivider, {});
+      obj3 = { style: closure_2.formRow, variant: "body-md/semibold", color: "interactive-text-active", children: name };
+      const children = [closure_1_7(FormRow, obj), index < feedbackOptions.length - 1 && closure_1_7(require("module_8317").FormDivider, {})];
+      index < feedbackOptions.length - 1 && closure_1_7(require("module_8317").FormDivider, {});
       return closure_1_8(Fragment, { children }, value);
     })
   };

@@ -1,13 +1,13 @@
-// Module ID: 11143
-// Function ID: 11144
+// Module ID: 11191
+// Function ID: 11192
 // Name: GuildIncidentsStore
-// Dependencies: [5361, 1231, 5012, 5073, 8606, 504, 572, 2]
+// Dependencies: [5362, 1231, 5012, 5073, 8623, 504, 572, 2]
 
-// Module 11143 (GuildIncidentsStore)
+// Module 11191 (GuildIncidentsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8606 */;
-import ExperimentStore from "ExperimentStore" /* 5361 */;
+import GuildAntiRaidUtils from "GuildAntiRaidUtils" /* 8623 */;
+import ExperimentStore from "ExperimentStore" /* 5362 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
@@ -45,7 +45,7 @@ function updateGuildIncident(id) {
     let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
     const tmp6 = require;
     if (!hasDetectedActivityResult) {
-      const tmp6Result = tmp6(8606);
+      const tmp6Result = tmp6(8623);
       hasDetectedActivityResult = tmp6Result.isUnderLockdown(incidentsData);
     }
     if (hasDetectedActivityResult) {
@@ -108,7 +108,7 @@ let obj = {
       let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
       const tmp5 = require;
       if (!hasDetectedActivityResult) {
-        const tmp5Result = tmp5(8606);
+        const tmp5Result = tmp5(8623);
         hasDetectedActivityResult = tmp5Result.isUnderLockdown(incidentsData);
       }
       if (hasDetectedActivityResult) {
@@ -141,7 +141,7 @@ let obj = {
       let hasDetectedActivityResult = obj.hasDetectedActivity(incidentsData);
       const tmp5 = require;
       if (!hasDetectedActivityResult) {
-        const tmp5Result = tmp5(8606);
+        const tmp5Result = tmp5(8623);
         hasDetectedActivityResult = tmp5Result.isUnderLockdown(incidentsData);
       }
       if (hasDetectedActivityResult) {

@@ -1,16 +1,16 @@
-// Module ID: 11852
-// Function ID: 11853
+// Module ID: 11911
+// Function ID: 11912
 // Name: CallBarAction
-// Dependencies: [19, 17, 11133, 21, 5138, 575, 5141, 11853, 7106, 11854, 5837, 5747, 2]
+// Dependencies: [19, 17, 11181, 21, 5138, 575, 5141, 11912, 7121, 11913, 5851, 5761, 2]
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 11852 (CallBarAction)
+// Module 11911 (CallBarAction)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import ChannelCallStore from "ChannelCallStore" /* 11133 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11854 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import ChannelCallStore from "ChannelCallStore" /* 11181 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
@@ -108,7 +108,7 @@ class ActionButton {
       cloneElementResult = tmp10(IconComponent, obj6);
     } else {
       const obj7 = { source, style: imageStyle };
-      cloneElementResult = tmp10(tmp2(5837), obj7);
+      cloneElementResult = tmp10(tmp2(5851), obj7);
     }
     items1[1] = closure_6(View, obj4);
     let tmp10Result = null;
@@ -219,7 +219,7 @@ export function NotifiedActionButton(isMentioned) {
     const obj2 = { children: metroRequire(tmp5, obj) };
     items[1] = notificationAreaMentioned;
     const obj3 = { style: items, children: metroRequire(Text_Text.Text, obj4) };
-    obj4 = { style: tmp2.notificationText, variant: "text-xs/semibold", color: "text-overlay-light", children: notifications };
+    obj4 = { style: tmp2.notificationText, variant: "body-xs/semibold", color: "text-overlay-light", children: notifications };
     obj.children = metroRequire(View, obj3);
     return metroRequire(View, obj2);
   }

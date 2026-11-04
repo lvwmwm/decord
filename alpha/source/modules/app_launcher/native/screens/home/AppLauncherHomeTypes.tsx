@@ -1,9 +1,9 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12634
+// Function ID: 12635
 // Name: AppLauncherHomeTypes
 // Dependencies: [2]
 
-// Module 12553 (AppLauncherHomeTypes)
+// Module 12634 (AppLauncherHomeTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/native/screens/home/AppLauncherHomeTypes.tsx");

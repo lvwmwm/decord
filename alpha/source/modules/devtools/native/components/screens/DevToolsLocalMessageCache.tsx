@@ -1,17 +1,17 @@
-// Module ID: 17730
-// Function ID: 17731
+// Module ID: 17826
+// Function ID: 17827
 // Name: DevToolsLocalMessageCache
-// Dependencies: [17, 4990, 21, 5141, 575, 7101, 6147, 7186, 7791, 5747, 2]
+// Dependencies: [17, 4990, 21, 5141, 575, 7116, 6162, 7201, 7807, 5761, 2]
 // Exports: default
 
-// Module 17730 (DevToolsLocalMessageCache)
+// Module 17826 (DevToolsLocalMessageCache)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Stack_Stack from "Stack/Stack" /* 6147 */;
-import TableRow5 from "TableRow" /* 7101 */;
-import TableRowGroup3 from "TableRowGroup" /* 7186 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7791 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Stack_Stack from "Stack/Stack" /* 6162 */;
+import TableRow5 from "TableRow" /* 7116 */;
+import TableRowGroup3 from "TableRowGroup" /* 7201 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7807 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -109,7 +109,7 @@ export default function DevToolsLocalMessageCache() {
   const obj7 = { label: "Incomplete Fetches", subLabel: MessageCacheStatsDefault.channelsFetchStarted.size - MessageCacheStatsDefault.channelsFetchedNetwork.size };
   const TableRow4 = TableRow5.TableRow;
   items[3] = hasOwnProperty(TableRow4, obj7);
-  items1 = [metroRequire(TableRowGroup, obj3), hasOwnProperty(Text_Text.Text, { variant: "text-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
+  items1 = [metroRequire(TableRowGroup, obj3), hasOwnProperty(Text_Text.Text, { variant: "body-sm/normal", color: "text-muted", children: "Cumulative since app launch. Does not update dynamically." }), ];
   const obj8 = {
     title: "Fetch Log (Reversed)",
     hasIcons: false,

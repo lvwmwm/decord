@@ -1,13 +1,13 @@
-// Module ID: 9796
-// Function ID: 9797
+// Module ID: 9814
+// Function ID: 9815
 // Name: nitro_perk_card
-// Dependencies: [32, 1197, 9763, 9765, 9773, 2]
+// Dependencies: [32, 1197, 9781, 9783, 9791, 2]
 
-// Module 9796 (nitro_perk_card)
+// Module 9814 (nitro_perk_card)
 import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9763 */;
-import cta_button from "cta_button" /* 9765 */;
-import theme_aware_asset from "theme_aware_asset" /* 9773 */;
+import localized_string from "localized_string" /* 9781 */;
+import cta_button from "cta_button" /* 9783 */;
+import theme_aware_asset from "theme_aware_asset" /* 9791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

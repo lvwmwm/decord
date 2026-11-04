@@ -1,13 +1,13 @@
-// Module ID: 18051
-// Function ID: 18052
+// Module ID: 18148
+// Function ID: 18149
 // Name: ContentAndSocialSetting
-// Dependencies: [1072, 11677, 1113, 5835, 18052, 2]
+// Dependencies: [1072, 11728, 1113, 5849, 18149, 2]
 
-// Module 18051 (ContentAndSocialSetting)
+// Module 18148 (ContentAndSocialSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import FriendsIcon from "FriendsIcon" /* 5835 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
+import FriendsIcon from "FriendsIcon" /* 5849 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

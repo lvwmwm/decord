@@ -1,9 +1,9 @@
-// Module ID: 19543
-// Function ID: 19544
+// Module ID: 19647
+// Function ID: 19648
 // Name: logThirdPartyImportsDone
 // Dependencies: [3, 2]
 
-// Module 19543 (logThirdPartyImportsDone)
+// Module 19647 (logThirdPartyImportsDone)
 import LoggerDefault from "Logger" /* 3 */;
 import size from "module_2" /* 2 */;
 

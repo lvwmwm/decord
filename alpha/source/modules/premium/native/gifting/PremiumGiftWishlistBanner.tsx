@@ -1,17 +1,17 @@
-// Module ID: 10793
-// Function ID: 10794
+// Module ID: 10841
+// Function ID: 10842
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7529, 1387, 1072, 1074, 8878, 21, 575, 5141, 9587, 9598, 10794, 10798, 7446, 7471, 1252, 8874, 10742, 10799, 5322, 5832, 1113, 7843, 14558, 5195, 5747, 14583, 14588, 2]
+// Dependencies: [5, 19, 17, 7545, 1387, 1072, 1074, 8895, 21, 575, 5141, 9606, 9617, 10842, 10846, 7462, 7487, 1252, 8891, 10790, 10847, 5323, 5846, 1113, 7859, 14638, 5195, 5761, 14663, 14668, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10793 (PremiumGiftWishlistBanner)
+// Module 10841 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7529 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8874 */;
-import Constants2 from "Constants" /* 8878 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10798 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7545 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import Constants2 from "Constants" /* 8895 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -267,9 +267,9 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
       tmp16 = memo[WISHLIST_IN_DM_LENGTH_MOBILE - 1];
     }
     closure_15 = tmp16;
-    let obj6 = { style: tmp12.title, variant: "text-lg/semibold", accessibilityRole: "header", children: title };
+    let obj6 = { style: tmp12.title, variant: "body-lg/semibold", accessibilityRole: "header", children: title };
     const items5 = [closure_14(tmp(tmp2[27]).Text, obj6), , ];
-    let obj7 = { style: tmp12.subtitle, variant: "text-sm/medium", color: "text-muted", children: subtitle };
+    let obj7 = { style: tmp12.subtitle, variant: "body-sm/medium", color: "text-muted", children: subtitle };
     items5[1] = closure_14(tmp(tmp2[27]).Text, obj7);
     if (tmp13) {
       let obj8 = {

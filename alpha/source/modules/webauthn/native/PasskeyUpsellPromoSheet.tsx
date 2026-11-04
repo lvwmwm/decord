@@ -1,16 +1,16 @@
-// Module ID: 17828
-// Function ID: 17829
+// Module ID: 17924
+// Function ID: 17925
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1072, 4987, 21, 5837, 17829, 10967, 1113, 1377, 17830, 6887, 5754, 17827, 7242, 7687, 2]
+// Dependencies: [19, 1072, 4987, 21, 5851, 17925, 11015, 1113, 1377, 17926, 6902, 5768, 17923, 7262, 7703, 2]
 // Exports: default
 
-// Module 17828 (PasskeyUpsellPromoSheet)
+// Module 17924 (PasskeyUpsellPromoSheet)
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7242 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 17827 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 17830 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7262 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 17923 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 17926 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ export default function PasswordlessUpsellPromoSheet() {
     stringResult = string(t.d6uxJy);
   }
   obj4 = { children: items };
-  ButtonGroup = tmp4(6887).ButtonGroup;
+  ButtonGroup = tmp4(6902).ButtonGroup;
   const obj5 = {
     size: "lg",
     onPress: function registerPasskey() {
@@ -99,7 +99,7 @@ export default function PasswordlessUpsellPromoSheet() {
     },
     text: intl3.string(require("intl").t.NIFmCJ)
   };
-  const Button = tmp4(5754).Button;
+  const Button = tmp4(5768).Button;
   intl3 = tmp4(1113).intl;
   items = [tmp(Button, obj5), ];
   const obj6 = {
@@ -113,7 +113,7 @@ export default function PasswordlessUpsellPromoSheet() {
     },
     text: intl4.string(require("intl").t["7J6/nG"])
   };
-  const Button2 = tmp4(5754).Button;
+  const Button2 = tmp4(5768).Button;
   intl4 = tmp4(1113).intl;
   items[1] = tmp(Button2, obj6);
   return tmp(PromoSheet, obj2);

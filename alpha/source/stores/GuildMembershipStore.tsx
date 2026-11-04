@@ -53,10 +53,10 @@ class GuildMembershipStore extends Store {
     new Set(items);
   }
   handleCacheLoaded(guilds) {
-    const f87040 = (id) => id.id;
+    const f87375 = (id) => id.id;
     guilds = guilds.guilds;
-    this.guildIds = new Set(guilds.map(f87040));
-    new Set(guilds.map(f87040));
+    this.guildIds = new Set(guilds.map(f87375));
+    new Set(guilds.map(f87375));
   }
   handleCacheLoadedLazy(guilds) {
     guilds = guilds.guilds;

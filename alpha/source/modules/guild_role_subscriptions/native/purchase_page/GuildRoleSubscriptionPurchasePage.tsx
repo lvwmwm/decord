@@ -1,18 +1,18 @@
-// Module ID: 18775
-// Function ID: 18776
+// Module ID: 18876
+// Function ID: 18877
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1192, 4990, 5012, 1072, 21, 5141, 575, 5747, 1113, 1187, 12048, 17344, 17346, 17347, 563, 18776, 5772, 18778, 18779, 18780, 8727, 5837, 7083, 18781, 6147, 18783, 18784, 5829, 18785, 2]
+// Dependencies: [19, 17, 1192, 4990, 5012, 1072, 21, 5141, 575, 5761, 1113, 1187, 12107, 17435, 17437, 17438, 563, 18877, 5786, 18879, 18880, 18881, 8744, 5851, 7098, 18882, 6162, 18884, 18885, 5843, 18886, 2]
 // Exports: default
 
-// Module 18775 (GuildRoleSubscriptionPurchasePage)
+// Module 18876 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import LinkingDefault from "Linking" /* 5829 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8727 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12048 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 18785 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import LinkingDefault from "Linking" /* 5843 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 8744 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12107 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 18886 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
@@ -51,7 +51,7 @@ function Separator() {
 function LegalDisclaimer() {
   let intl;
   let obj2;
-  const obj = { variant: "text-xs/normal", color: "text-muted", children: intl.format(intl6.t.FSPTDI, obj2) };
+  const obj = { variant: "body-xs/normal", color: "text-muted", children: intl.format(intl6.t.FSPTDI, obj2) };
   const Text = Text_Text.Text;
   intl = intl6.intl;
   obj2 = { termsURL: map1.TERMS, paidURL: map1.PAID_TERMS };
@@ -76,7 +76,7 @@ function SocialBadge(onPress) {
   items = [, , ];
   const obj2 = { source: iconSource, style: tmp.socialBadgeIcon, resizeMode: "contain", disableColor: true };
   items[0] = authStore3(native.Icon, obj2);
-  items[1] = authStore3(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: text });
+  items[1] = authStore3(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: text });
   const tmp5 = authStore3;
   if (tmp5Result) {
     const obj3 = { source: AssetRegistryDefault, style: tmp.socialBadgeArrow };
@@ -184,7 +184,7 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
                               const Icon = native.Icon;
                               obj3 = utils_ChannelUtils;
                               items = [authStore3(Icon, obj2), ];
-                              const obj4 = { variant: "text-xs/semibold", color: "text-default", children };
+                              const obj4 = { variant: "body-xs/semibold", color: "text-default", children };
                               items[1] = authStore3(Text_Text.Text, obj4);
                               return closure_15(metroRequire, obj);
                             }
@@ -205,7 +205,7 @@ export default function GuildRoleSubscriptionPurchasePage(guildId) {
             obj13 = { serverName: stateFromStores.name };
             items4[1] = closure_14(Text, obj12);
             items4[2] = closure_14(guildId(stateFromStores1[11]).Spacer, { size: 8 });
-            const obj14 = { variant: "text-sm/normal", color: "text-default", lineClamp: 3, children: description };
+            const obj14 = { variant: "body-sm/normal", color: "text-default", lineClamp: 3, children: description };
             items4[3] = closure_14(guildId(stateFromStores1[25]).TruncatedText, obj14);
             let tmp21Result = hasItem || null != store_page_trailer_url;
             const tmp22 = closure_7;

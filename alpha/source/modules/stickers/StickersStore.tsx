@@ -1,9 +1,9 @@
-// Module ID: 6957
-// Function ID: 6958
+// Module ID: 6972
+// Function ID: 6973
 // Name: StickersStore
-// Dependencies: [5, 4992, 5012, 6958, 6959, 5019, 5039, 10, 6960, 572, 504, 2]
+// Dependencies: [5, 4992, 5012, 6973, 6974, 5019, 5039, 10, 6975, 572, 504, 2]
 
-// Module 6957 (StickersStore)
+// Module 6972 (StickersStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 5019 */;
@@ -11,8 +11,8 @@ import TryLoad from "TryLoad" /* 5039 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildMembershipStore from "GuildMembershipStore" /* 4992 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildStickersStore from "GuildStickersStore" /* 6958 */;
-import StickersPackStore from "StickersPackStore" /* 6959 */;
+import GuildStickersStore from "GuildStickersStore" /* 6973 */;
+import StickersPackStore from "StickersPackStore" /* 6974 */;
 import size from "module_2" /* 2 */;
 
 let Loaded, c2, c3;

@@ -1,16 +1,16 @@
-// Module ID: 14750
-// Function ID: 14751
+// Module ID: 14830
+// Function ID: 14831
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 4994, 5083, 1385, 21, 5141, 575, 5381, 9130, 2123, 1113, 5772, 9881, 5747, 1187, 8301, 2]
+// Dependencies: [5, 32, 19, 17, 4994, 5083, 1385, 21, 5141, 575, 5382, 9147, 2123, 1113, 5786, 9899, 5761, 1187, 8317, 2]
 // Exports: default
 
-// Module 14750 (WebhookGuildChannelSelector)
+// Module 14830 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5381 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(9130, dependencyMap.paths);
+      const tmp8 = asyncRequire(9147, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);
@@ -196,7 +196,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
     let tmp10 = closure_10;
     let tmp8 = closure_11;
     let tmp9 = View;
-    let obj2 = { variant: "eyebrow", color: "text-default", children: intl.string(selectedGuildId(onChannelChange[13]).t["8qKd+J"]) };
+    let obj2 = { variant: "body-sm/medium", color: "text-default", children: intl.string(selectedGuildId(onChannelChange[13]).t["8qKd+J"]) };
     const Text = selectedGuildId(onChannelChange[16]).Text;
     intl = selectedGuildId(onChannelChange[13]).intl;
     items3 = [closure_10(Text, obj2), , , ];

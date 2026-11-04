@@ -1,15 +1,13 @@
-// Module ID: 15146
-// Function ID: 15147
+// Module ID: 15226
+// Function ID: 15227
 // Name: UserProfileTabPages
-// Dependencies: [32, 19, 17, 21, 1652, 1493, 1627, 5397, 1705, 5426, 14323, 2]
+// Dependencies: [32, 19, 17, 21, 1652, 1493, 1627, 5398, 1705, 14410, 2]
 // Exports: useMeasuredTabItems
 
-// Module 15146 (UserProfileTabPages)
+// Module 15226 (UserProfileTabPages)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5426 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -17,8 +15,6 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, set;
 
-let tmp;
-const _modDef1652 = tmp(1652);
 const ScrollView = react_native.ScrollView;
 const jsx = Fragment.jsx;
 let closure_7 = { code: "(function UserProfileTabPagesTsx1(){let[isDragging,activeIndex,pageHeights]=this.__closure;if(isDragging.get())return-1;const index=Math.round(activeIndex.get());return pageHeights.get()[index]==null?-1:index;})" };
@@ -32,9 +28,9 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
   let activeIndex;
   let c3;
   let pageHeights;
-  let parentPagerGesture;
   let scrollPosition;
   let scrollViewRef;
+  let sharedValue1;
   let state;
   let tmp14;
   let tmp15;
@@ -66,13 +62,14 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
   let tmp43;
   let tmp45;
   let tmp46;
+  let useReducedMotion;
   let visiblePageRange;
-  ({ state, pageHeights, scrollPosition, scrollViewRef, parentPagerGesture } = arg0);
+  ({ state, pageHeights, scrollPosition, scrollViewRef } = arg0);
   c3 = undefined;
-  let tmp2 = dependencyMap;
-  const tmp = importDefault;
-  const height = useWindowDimensionsDefault().height;
-  const bottom = useSafeAreaInsetsDefault().bottom;
+  let tmp2 = useReducedMotion;
+  const tmp = sharedValue1;
+  const height = sharedValue1(useReducedMotion[5])().height;
+  const bottom = sharedValue1(useReducedMotion[6])().bottom;
   let obj = react;
   let tmp3 = _slicedToArray(react.useState(0), 2);
   [tmp4, c3] = tmp3;
@@ -101,15 +98,15 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
     }
   }, items);
   ({ activeIndex, visiblePageRange } = state);
-  let obj2 = parentPagerGesture(1652);
+  let obj2 = scrollViewRef(useReducedMotion[4]);
   const sharedValue = obj2.useSharedValue(0);
-  const obj3 = parentPagerGesture(1652);
-  const sharedValue1 = obj3.useSharedValue(-1);
-  const obj4 = parentPagerGesture(1652);
+  const obj3 = scrollViewRef(useReducedMotion[4]);
+  sharedValue1 = obj3.useSharedValue(-1);
+  const obj4 = scrollViewRef(useReducedMotion[4]);
   const sharedValue2 = obj4.useSharedValue(false);
-  const useReducedMotion = state.useReducedMotion;
+  const obj5 = scrollViewRef(useReducedMotion[4]);
+  useReducedMotion = state.useReducedMotion;
   const items1 = [scrollViewRef, sharedValue1, useReducedMotion];
-  const obj5 = parentPagerGesture(1652);
   const sharedValue3 = obj5.useSharedValue(-1);
   const callback1 = react.useCallback((arg0, arg1) => {
     scrollViewRef = arg0;
@@ -139,7 +136,7 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
             tmp5 = !useReducedMotion;
             const scrollTo = current.scrollTo;
             if (!useReducedMotion) {
-              const obj2 = parentPagerGesture(dependencyMap[7]);
+              const obj2 = useIsScreenReaderEnabled;
               tmp5 = !obj2.getIsScreenReaderEnabled();
             }
             scrollTo(obj);
@@ -153,7 +150,7 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
   let c1;
   let c2;
   [tmp14, tmp15, tmp16, tmp17] = items2;
-  const tmp13 = parentPagerGesture(1652);
+  const tmp13 = scrollViewRef(useReducedMotion[4]);
   class UserProfileTabPagesTsx1 {
     constructor() {
       if (_undefined.get()) {
@@ -175,7 +172,7 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
   UserProfileTabPagesTsx1.__initData = tmp14;
   const items4 = [closure_8, sharedValue3, scrollPosition, tmp4, sharedValue, pageHeights, , ];
   const useAnimatedReaction = tmp13.useAnimatedReaction;
-  items4[6] = parentPagerGesture(1705).scheduleOnRN;
+  items4[6] = scrollViewRef(tmp2[8]).scheduleOnRN;
   items4[7] = callback1;
   c0 = undefined;
   c1 = undefined;
@@ -220,7 +217,7 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
   c3 = undefined;
   c4 = undefined;
   [tmp27, tmp28, tmp29, tmp30, tmp31, tmp32] = items6;
-  const tmp7Result = parentPagerGesture(1652);
+  const tmp7Result = scrollViewRef(tmp2[4]);
   class UserProfileTabPagesTsx3 {
     constructor() {
       const value = _undefined.get();
@@ -301,7 +298,7 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
   const items10 = [closure_11, sharedValue];
   c0 = undefined;
   [tmp39, tmp40] = items10;
-  const tmp7Result2 = parentPagerGesture(1652);
+  const tmp7Result2 = scrollViewRef(tmp2[4]);
   class UserProfileTabPagesTsx5 {
     constructor() {
       let obj;
@@ -347,18 +344,8 @@ const memoResult = react.memo(function UserProfileTabPages(arg0) {
   UserProfileTabPagesTsx7.__initData = tmp45;
   const items17 = [sharedValue2];
   const callback2 = obj.useCallback(UserProfileTabPagesTsx6, items14);
-  const items18 = [parentPagerGesture];
   const callback3 = obj.useCallback(UserProfileTabPagesTsx7, items17);
-  const memo = obj.useMemo(() => {
-    let result;
-    if (null != parentPagerGesture) {
-      const Gesture = LegacyBaseButton.Gesture;
-      const NativeResult = Gesture.Native();
-      result = NativeResult.blocksExternalGesture(tmp);
-    }
-    return result;
-  }, items18);
-  const View = _modDef1652.View;
+  const View = tmp(tmp2[4]).View;
   return <View ref={ref} onLayout={callback} style={animatedStyle}>{null}</View>;
 });
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileTabPages.tsx");

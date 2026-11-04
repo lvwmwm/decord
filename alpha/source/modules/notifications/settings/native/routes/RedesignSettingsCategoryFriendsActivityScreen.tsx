@@ -1,13 +1,13 @@
-// Module ID: 18113
-// Function ID: 18114
+// Module ID: 18210
+// Function ID: 18211
 // Name: RedesignSettingsCategoryFriendsActivityScreen
-// Dependencies: [19, 21, 11677, 18106, 16731, 2]
+// Dependencies: [19, 21, 11728, 18203, 16823, 2]
 
-// Module 18113 (RedesignSettingsCategoryFriendsActivityScreen)
+// Module 18210 (RedesignSettingsCategoryFriendsActivityScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11677 */;
-import SettingLayoutDefault from "SettingLayout" /* 16731 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18106 */;
+import SettingBuilders from "SettingBuilders" /* 11728 */;
+import SettingLayoutDefault from "SettingLayout" /* 16823 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18203 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 15026
-// Function ID: 15027
+// Module ID: 15106
+// Function ID: 15107
 // Name: GroupAvatar
-// Dependencies: [19, 17, 5142, 21, 5141, 575, 5148, 7085, 563, 1652, 5377, 5757, 5747, 5837, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 575, 5148, 7100, 563, 1652, 5378, 5771, 5761, 5851, 2]
 // Exports: default
 
-// Module 15026 (GroupAvatar)
+// Module 15106 (GroupAvatar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import FastImageDefault from "FastImage" /* 5837 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import FastImageDefault from "FastImage" /* 5851 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -147,7 +147,7 @@ function GroupMemberCount(count) {
   count = count.count;
   const tmp = closure_12();
   const obj = { style: tmp.avatarWrapper, children: metroRequire(View, obj2) };
-  let str = "text-sm/semibold";
+  let str = "body-sm/semibold";
   obj2 = { style: tmp.overflowCount, children: tmp4(Text, obj3) };
   Text = Text_Text.Text;
   tmp4 = metroImportDefault;

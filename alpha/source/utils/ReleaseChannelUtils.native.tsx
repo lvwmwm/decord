@@ -1,9 +1,9 @@
-// Module ID: 6661
-// Function ID: 6662
+// Module ID: 6676
+// Function ID: 6677
 // Name: ReleaseChannelUtils
 // Dependencies: [1376, 1377, 2]
 
-// Module 6661 (ReleaseChannelUtils)
+// Module 6676 (ReleaseChannelUtils)
 import react_native from "react-native" /* 1376 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;

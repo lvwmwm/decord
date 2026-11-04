@@ -16,23 +16,24 @@ import GuildStore from "GuildStore" /* 5012 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 function handleConnectionOpen() {
-  const tmp = null != selectedGuildId && null == GuildStore.getGuild(selectedGuildId) && null == UserGuildJoinRequestStore.getRequest(selectedGuildId);
+  const tmp = null != selectedGuildId && selectedGuildId !== metroImportDefault && null == GuildStore.getGuild(selectedGuildId) && null == UserGuildJoinRequestStore.getRequest(selectedGuildId);
   if (tmp) {
     selectedGuildId = null;
   }
-  const tmp6 = null != lastSelectedGuildId && null == GuildStore.getGuild(lastSelectedGuildId) && null == UserGuildJoinRequestStore.getRequest(lastSelectedGuildId);
-  if (tmp6) {
+  const tmp8 = null != lastSelectedGuildId && lastSelectedGuildId !== metroImportDefault && null == GuildStore.getGuild(lastSelectedGuildId) && null == UserGuildJoinRequestStore.getRequest(lastSelectedGuildId);
+  if (tmp8) {
     lastSelectedGuildId = null;
   }
   if (null != selectedGuildId) {
     const _Date = Date;
-    prop[tmp11] = Date.now();
+    prop[tmp15] = Date.now();
   }
 }
-({ ME: metroRequire, Routes: metroImportDefault } = Constants);
+({ ME: metroRequire, MOBILE_GUILD_UPSELL_LIST: metroImportDefault, Routes: metroImportAll } = Constants);
 let selectedGuildId = null;
 let lastSelectedGuildId = null;
 let prop = {};
@@ -68,7 +69,7 @@ class SelectedGuildStore extends PersistedStore {
     const lastNonVoiceRoute = tmp2.lastNonVoiceRoute;
     const obj = { path: CHANNEL(RouteParam.guildId()) };
     const matchPath = matchPathCompat.matchPath;
-    CHANNEL = metroImportDefault.CHANNEL;
+    CHANNEL = metroImportAll.CHANNEL;
     matchPathCompat;
     RouteParam = RouteUtils.RouteParam;
     const matchPathResult = matchPath(lastNonVoiceRoute, obj);
@@ -191,12 +192,12 @@ let obj = {
         if (null != tmp5) {
           selectedGuildId = tmp5;
           const obj2 = router_utils;
-          obj2.replaceWith(metroImportDefault.CHANNEL(tmp5));
+          obj2.replaceWith(metroImportAll.CHANNEL(tmp5));
           flag = true;
         } else {
           selectedGuildId = null;
           const obj = router_utils;
-          obj.replaceWith(metroImportDefault.ME);
+          obj.replaceWith(metroImportAll.ME);
           flag = true;
         }
       }
@@ -263,17 +264,17 @@ let obj = {
           selectedGuildId = tmp5;
           let tmp11 = require;
           let tmp12 = dependencyMap;
-          let tmp13 = metroImportDefault;
+          let tmp13 = metroImportAll;
           const obj2 = router_utils;
-          obj2.replaceWith(metroImportDefault.CHANNEL(tmp5));
+          obj2.replaceWith(metroImportAll.CHANNEL(tmp5));
           flag = true;
         } else {
           selectedGuildId = null;
           let tmp7 = require;
           let tmp8 = dependencyMap;
-          let tmp9 = metroImportDefault;
+          let tmp9 = metroImportAll;
           const obj = router_utils;
-          obj.replaceWith(metroImportDefault.ME);
+          obj.replaceWith(metroImportAll.ME);
           flag = true;
         }
       }

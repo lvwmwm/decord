@@ -1,18 +1,18 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16731
+// Function ID: 16732
 // Name: UserProfileThemePicker
-// Dependencies: [19, 17, 21, 575, 5141, 1090, 7493, 7106, 1113, 10362, 5747, 2]
+// Dependencies: [19, 17, 21, 575, 5141, 1090, 7509, 7121, 1113, 10410, 5761, 2]
 // Exports: default
 
-// Module 16641 (UserProfileThemePicker)
+// Module 16731 (UserProfileThemePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 7493 */;
-import PencilIcon from "PencilIcon" /* 10362 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 7509 */;
+import PencilIcon from "PencilIcon" /* 10410 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -48,7 +48,7 @@ function ColorButton(arg0) {
   intl = intl5.intl;
   items1 = [tmp.colorButton, { backgroundColor: int2hexResult }];
   obj6 = { size: "xs", color: higherContrastColor, style: tmp.editIcon };
-  items2 = [_false(PressableOpacity, obj5), _false(Text_Text.Text, { variant: "text-sm/normal", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: label })];
+  items2 = [_false(PressableOpacity, obj5), _false(Text_Text.Text, { variant: "body-sm/normal", color: "text-default", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: label })];
   return React3(View, obj4);
 }
 const View = react_native.View;

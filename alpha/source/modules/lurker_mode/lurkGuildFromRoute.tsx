@@ -1,12 +1,12 @@
-// Module ID: 10316
-// Function ID: 10317
+// Module ID: 10364
+// Function ID: 10365
 // Name: lurkGuildFromRoute
-// Dependencies: [5, 502, 5012, 7022, 5190, 2]
+// Dependencies: [5, 502, 5012, 7037, 5190, 2]
 // Exports: default
 
-// Module 10316 (lurkGuildFromRoute)
+// Module 10364 (lurkGuildFromRoute)
 import RouteUtils from "RouteUtils" /* 5190 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 7022 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 5012 */;

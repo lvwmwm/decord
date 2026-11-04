@@ -1,23 +1,23 @@
-// Module ID: 9126
-// Function ID: 9127
+// Module ID: 9143
+// Function ID: 9144
 // Name: CollapsibleFloatingActionButton
-// Dependencies: [19, 21, 5760, 5141, 1652, 5757, 5758, 5755, 9127, 575, 2]
+// Dependencies: [19, 21, 5774, 5141, 1652, 5771, 5772, 5769, 9144, 575, 2]
 // Exports: CollapsibleFloatingActionButton
 
-// Module 9126 (CollapsibleFloatingActionButton)
+// Module 9143 (CollapsibleFloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import springPresets from "springPresets" /* 5758 */;
-import FloatingActionButton from "FloatingActionButton" /* 9127 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import springPresets from "springPresets" /* 5772 */;
+import FloatingActionButton from "FloatingActionButton" /* 9144 */;
 import react from "react" /* 19 */;
-import ButtonConstants from "ButtonConstants" /* 5760 */;
+import ButtonConstants from "ButtonConstants" /* 5774 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const BaseTextButton2 = tmp2(5755);
+const BaseTextButton2 = tmp2(5769);
 function CollapsableButton(arg0) {
   let state;
   let style;
@@ -67,7 +67,7 @@ function CollapsableButton(arg0) {
   const animatedStyle = useAnimatedStyle(CollapsibleFloatingActionButtonNativeTsx1);
   const BaseTextButton = BaseTextButton2.BaseTextButton;
   const merged1 = Object.assign(merged);
-  return <BaseTextButton size="lg" variant="primary" textVariant="text-md/semibold" collapseText={collapseText} style={style} pillStyle={animatedStyle} />;
+  return <BaseTextButton size="lg" variant="primary" textVariant="body-md/semibold" collapseText={collapseText} style={style} pillStyle={animatedStyle} />;
 }
 const jsx = Fragment.jsx;
 const getButtonPadding = ButtonConstants.getButtonPadding;
@@ -98,20 +98,20 @@ export function CollapsibleFloatingActionButton(arg0) {
   }
   const items = [styles.button, ];
   if (positionRight == null) {
-    positionRight = tmp3(9127).DEFAULT_POSITION_OFFSET;
+    positionRight = tmp3(9144).DEFAULT_POSITION_OFFSET;
   }
   const rect = { position: "absolute", right: positionRight, bottom: positionBottom };
   if (positionBottom == null) {
-    positionBottom = tmp3(9127).DEFAULT_POSITION_OFFSET;
+    positionBottom = tmp3(9144).DEFAULT_POSITION_OFFSET;
   }
   items[1] = rect;
   if (null != state) {
     const merged1 = Object.assign(merged);
     tmp13 = <CollapsableButton state={state} text={text} style={items} icon={cloneElementResult} />;
   } else {
-    const BaseTextButton = tmp3(5755).BaseTextButton;
+    const BaseTextButton = tmp3(5769).BaseTextButton;
     const merged2 = Object.assign(merged);
-    tmp13 = <BaseTextButton text={text} size="lg" variant="primary" textVariant="text-md/semibold" icon={cloneElementResult} style={items} pillStyle={tmp2.textButtonPill} />;
+    tmp13 = <BaseTextButton text={text} size="lg" variant="primary" textVariant="body-md/semibold" icon={cloneElementResult} style={items} pillStyle={tmp2.textButtonPill} />;
   }
   return tmp13;
 }

@@ -1,11 +1,11 @@
-// Module ID: 19403
-// Function ID: 19404
+// Module ID: 19507
+// Function ID: 19508
 // Name: useChatBadge
-// Dependencies: [6962, 504, 2]
+// Dependencies: [6977, 504, 2]
 // Exports: default
 
-// Module 19403 (useChatBadge)
-import ReadStateStore from "ReadStateStore" /* 6962 */;
+// Module 19507 (useChatBadge)
+import ReadStateStore from "ReadStateStore" /* 6977 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

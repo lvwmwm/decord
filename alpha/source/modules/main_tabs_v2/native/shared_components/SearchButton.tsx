@@ -1,15 +1,15 @@
-// Module ID: 14059
-// Function ID: 14060
+// Module ID: 14145
+// Function ID: 14146
 // Name: SearchButton
-// Dependencies: [19, 17, 21, 5141, 575, 7340, 5747, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7356, 5761, 1113, 2]
 // Exports: SearchButtonContent
 
-// Module 14059 (SearchButton)
+// Module 14145 (SearchButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7340 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7356 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -40,7 +40,7 @@ export function SearchButtonContent(panelVariant) {
   const merged1 = Object.assign(merged);
   items = [tmp2.searchButton, panelVariant ? tmp2.roundedCornersAlt : tmp2.roundedCorners, merged.style];
   items1 = [_false(MagnifyingGlassIcon.MagnifyingGlassIcon, { size: "xs" }), ];
-  const obj2 = { variant: "text-sm/medium", color: "text-muted", style: tmp2.text, maxFontSizeMultiplier: 2, children: intl.string(intl2.t["5h0QOP"]) };
+  const obj2 = { variant: "body-sm/medium", color: "text-muted", style: tmp2.text, maxFontSizeMultiplier: 2, children: intl.string(intl2.t["5h0QOP"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1[1] = _false(Text, obj2);

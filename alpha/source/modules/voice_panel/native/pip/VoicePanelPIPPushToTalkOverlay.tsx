@@ -1,19 +1,19 @@
-// Module ID: 19451
-// Function ID: 19452
+// Module ID: 19555
+// Function ID: 19556
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [32, 19, 17, 2135, 11360, 21, 1652, 7086, 1187, 5141, 575, 11348, 19362, 5757, 19272, 5426, 1705, 19452, 2]
+// Dependencies: [32, 19, 17, 2135, 11410, 21, 1652, 7101, 1187, 5141, 575, 11398, 19466, 5771, 19376, 5428, 1705, 19556, 2]
 // Exports: default
 
-// Module 19451 (VoicePanelPIPPushToTalkOverlay)
+// Module 19555 (VoicePanelPIPPushToTalkOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import NativeViewDefault from "NativeView" /* 7086 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11360 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19362 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import NativeViewDefault from "NativeView" /* 7101 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19466 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
@@ -31,9 +31,9 @@ let obj2;
 let size;
 let tmp;
 let tmp9;
-const LegacyBaseButton = tmp(5426);
-const VoicePanelPIPUtils = tmp(19272);
-const AssetRegistryDefault = tmp9(19452);
+const LegacyBaseButton = tmp(5428);
+const VoicePanelPIPUtils = tmp(19376);
+const AssetRegistryDefault = tmp9(19556);
 const StyleSheet = react_native.StyleSheet;
 const PUSH_TO_TALK_PIP_PHYSICS = VoicePanelConstants.PUSH_TO_TALK_PIP_PHYSICS;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);

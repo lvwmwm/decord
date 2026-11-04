@@ -1,20 +1,20 @@
-// Module ID: 19979
-// Function ID: 19980
+// Module ID: 20095
+// Function ID: 20096
 // Name: GuildSettingsModalCommunityIntro
-// Dependencies: [19, 17, 5012, 5073, 9203, 1072, 21, 5141, 575, 10393, 1113, 5747, 10204, 5855, 1499, 504, 9202, 19980, 5837, 2190, 5754, 19984, 5831, 5729, 2]
+// Dependencies: [19, 17, 5012, 5073, 9220, 1072, 21, 5141, 575, 10441, 1113, 5761, 10252, 5869, 1499, 504, 9219, 20096, 5851, 2190, 5768, 20100, 5845, 5742, 2]
 // Exports: default
 
-// Module 19979 (GuildSettingsModalCommunityIntro)
+// Module 20095 (GuildSettingsModalCommunityIntro)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9202 */;
-import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 19984 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
+import EnableCommunityModalActionCreatorsDefault from "EnableCommunityModalActionCreators" /* 20100 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9203 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9220 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -47,7 +47,7 @@ function FeatureCard(arg0) {
   const obj2 = { style: tmp.featureIcon, children: icon() };
   items[0] = map1(React3, obj2);
   const obj3 = { style: tmp.featureDescription, children: items1 };
-  items1 = [map1(Text_Text.Heading, { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: header }), map1(Text_Text.Text, { variant: "text-sm/medium", color: "text-default", children: body })];
+  items1 = [map1(Text_Text.Heading, { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: header }), map1(Text_Text.Text, { variant: "body-sm/medium", color: "text-default", children: body })];
   items[1] = authStore3(React3, obj3);
   return authStore3(React3, obj);
 }
@@ -132,7 +132,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   const Heading = require("Text/Text").Heading;
   intl = require("intl").intl;
   items5[1] = closure_13(Heading, obj9);
-  const obj10 = { style: tmp.body, variant: "text-md/medium", color: "text-default", children: format(v52EgsM, obj11) };
+  const obj10 = { style: tmp.body, variant: "body-md/medium", color: "text-default", children: format(v52EgsM, obj11) };
   const Text = require("Text/Text").Text;
   const intl2 = require("intl").intl;
   format = intl2.format;
@@ -157,7 +157,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   const Button = require("components/Button/Button").Button;
   intl3 = require("intl").intl;
   items5[3] = closure_13(Button, obj13);
-  const obj14 = { style: tmp.details, variant: "text-sm/medium", color: "text-default", children: intl4.string(require("intl").t.HgTI2N) };
+  const obj14 = { style: tmp.details, variant: "body-sm/medium", color: "text-default", children: intl4.string(require("intl").t.HgTI2N) };
   const Text2 = require("Text/Text").Text;
   intl4 = require("intl").intl;
   items5[4] = closure_13(Text2, obj14);
@@ -183,7 +183,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
   items6 = [obj16, , ];
   obj17 = {
     featureHook(children, arg1) {
-      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      const obj = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children };
       return closure_1_13(require("Text/Text").Text, obj, arg1);
     }
   };
@@ -203,7 +203,7 @@ export default function GuildSettingsModalCommunityIntro(contentContainerStyle) 
       return null;
     },
     featureHook(children, arg1) {
-      const obj = { variant: "text-sm/semibold", color: "mobile-text-heading-primary", children };
+      const obj = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children };
       return closure_1_13(require("Text/Text").Text, obj, arg1);
     }
   };

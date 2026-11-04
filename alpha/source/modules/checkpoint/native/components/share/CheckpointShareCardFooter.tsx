@@ -1,15 +1,15 @@
-// Module ID: 13585
-// Function ID: 13586
+// Module ID: 13671
+// Function ID: 13672
 // Name: CheckpointShareCardFooter
-// Dependencies: [19, 17, 21, 5141, 575, 13582, 5719, 8155, 5747, 13586, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 13668, 5732, 8171, 5761, 13672, 2]
 // Exports: default
 
-// Module 13585 (CheckpointShareCardFooter)
+// Module 13671 (CheckpointShareCardFooter)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5719 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import inlineStylesDefault from "inlineStyles" /* 8155 */;
-import CheckpointShareCardContext from "CheckpointShareCardContext" /* 13582 */;
+import useToken from "useToken" /* 5732 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import inlineStylesDefault from "inlineStyles" /* 8171 */;
+import CheckpointShareCardContext from "CheckpointShareCardContext" /* 13668 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -65,7 +65,7 @@ export default function CheckpointShareCardFooter(isCharacterAndStats) {
   size = { style: absoluteFill.absoluteFill, width, height, children: metroRequire(Path, obj3) };
   obj3 = { d: "M0 0H" + width - 13 + "L" + width + " 12V" + height + "H0Z", fill: primaryBackgroundColor };
   const tmp5Result = inlineStylesDefault;
-  Path = tmp2(8155).Path;
+  Path = tmp2(8171).Path;
   items1 = [metroRequire(tmp5Result, size), , ];
   const obj4 = { variant: "display-sm", style: tmp.footerTitle, allowFontScaling: false, children: "CHECKPOINT" };
   items1[1] = metroRequire(Text_Text.Text, obj4);
@@ -85,7 +85,7 @@ export default function CheckpointShareCardFooter(isCharacterAndStats) {
   items2[2] = obj5;
   const obj7 = { style: items2, children: metroRequire(ArrowLargeRightIcon, obj8) };
   obj8 = { size: "xxs", color: nativeDefault.colors.BLACK };
-  ArrowLargeRightIcon = tmp2(13586).ArrowLargeRightIcon;
+  ArrowLargeRightIcon = tmp2(13672).ArrowLargeRightIcon;
   items1[2] = metroRequire(hasOwnProperty, obj7);
   return tmp7(hasOwnProperty, obj2);
 };

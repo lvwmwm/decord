@@ -1,22 +1,22 @@
-// Module ID: 7990
-// Function ID: 7991
+// Module ID: 8006
+// Function ID: 8007
 // Name: utils/QuestUtils
-// Dependencies: [32, 5885, 5012, 5073, 5799, 7991, 6901, 7992, 7993, 6844, 7994, 7995, 2]
+// Dependencies: [32, 5899, 5012, 5073, 5813, 8007, 6916, 8008, 8009, 6859, 8010, 8011, 2]
 // Exports: canLaunchActivity, filterQuestsForSocialEntrypoints, getQuestType, isPlayAnyActivityQuest, isQuestFeaturedByHero, isShareableQuest, isStreamingAndCanWatch, setQuestHomeUtmContext, shouldShowBountiesGivenFilters
 
-// Module 7990 (utils/QuestUtils)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6844 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7992 */;
-import QuestSharePolicy from "QuestSharePolicy" /* 7993 */;
-import QuestType2 from "QuestType" /* 7994 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7995 */;
+// Module 8006 (utils/QuestUtils)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6859 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8008 */;
+import QuestSharePolicy from "QuestSharePolicy" /* 8009 */;
+import QuestType2 from "QuestType" /* 8010 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8011 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GameConsoleStore from "GameConsoleStore" /* 5885 */;
+import GameConsoleStore from "GameConsoleStore" /* 5899 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import PermissionStore from "PermissionStore" /* 5073 */;
-import VoiceStateStore from "VoiceStateStore" /* 5799 */;
-import QuestUtmStore from "QuestUtmStore" /* 7991 */;
-import QuestConstants from "QuestConstants" /* 6901 */;
+import VoiceStateStore from "VoiceStateStore" /* 5813 */;
+import QuestUtmStore from "QuestUtmStore" /* 8007 */;
+import QuestConstants from "QuestConstants" /* 6916 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -114,13 +114,13 @@ export function isQuestFeaturedByHero(questHomeHero, id) {
 }
 export function shouldShowBountiesGivenFilters(filters) {
   let constants2;
-  const f92156 = (item) => item.filter === constants.VIRTUAL_CURRENCY;
+  const f92528 = (item) => item.filter === constants.VIRTUAL_CURRENCY;
   const found = filters.filter((group) => "task" === group.group);
   const found1 = filters.filter((group) => "reward" === group.group);
   let tmp = 0 === found.length || found.some((item) => item.filter === constants2.VIDEO);
   if (tmp) {
-    tmp = 0 === found1.length || found1.some(f92156);
-    0 === found1.length || found1.some(f92156);
+    tmp = 0 === found1.length || found1.some(f92528);
+    0 === found1.length || found1.some(f92528);
   }
   return tmp;
 }

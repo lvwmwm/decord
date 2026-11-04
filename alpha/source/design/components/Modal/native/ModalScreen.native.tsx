@@ -1,14 +1,14 @@
-// Module ID: 8096
-// Function ID: 8097
+// Module ID: 8112
+// Function ID: 8113
 // Name: ModalScreen
-// Dependencies: [19, 17, 21, 5141, 575, 5730, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5743, 2]
 // Exports: ModalScreen
 
-// Module 8096 (ModalScreen)
+// Module 8112 (ModalScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5730 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

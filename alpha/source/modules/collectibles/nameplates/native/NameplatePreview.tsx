@@ -1,10 +1,10 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 11695
+// Function ID: 11696
 // Name: NameplatePreview
-// Dependencies: [19, 17, 5142, 5053, 21, 5141, 575, 2113, 6973, 8854, 504, 5195, 6559, 1187, 8944, 9642, 10902, 10903, 5747, 2]
+// Dependencies: [19, 17, 5142, 5053, 21, 5141, 575, 2113, 6988, 8871, 504, 5195, 6574, 1187, 8961, 9661, 10950, 10951, 5761, 2]
 // Exports: NameplatePreview
 
-// Module 11644 (NameplatePreview)
+// Module 11695 (NameplatePreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const profile_customization_ProfileCustomizationUtils = tmp(8944);
+const profile_customization_ProfileCustomizationUtils = tmp(8961);
 let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -142,14 +142,14 @@ export function NameplatePreview(hasRoundedCorners) {
   let tmp20Result = null != tmp16;
   const obj10 = { style: tmp2.content, children: items4 };
   if (tmp20Result) {
-    const obj11 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "text-md/semibold", effectDisplayType: user(pendingAvatarSrc[17]).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
+    const obj11 = { userId: user.id, guildId, userName: pendingGlobalName, variant: "body-md/semibold", effectDisplayType: user(pendingAvatarSrc[17]).EffectDisplayType.STATIC, lineClamp: 1, pendingDisplayNameStyles };
     const tmp8Result = guildId(pendingAvatarSrc[16]);
     tmp20Result = tmp20(tmp8Result, obj11);
   }
   items4 = [tmp20Result, ];
   let tmp20Result2 = null == tmp16;
   if (tmp20Result2) {
-    const obj12 = { lineClamp: 1, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: pendingGlobalName };
+    const obj12 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: pendingGlobalName };
     tmp20Result2 = tmp20(tmp5(tmp6[18]).Text, obj12);
   }
   items4[1] = tmp20Result2;

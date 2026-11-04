@@ -1,16 +1,16 @@
-// Module ID: 16928
-// Function ID: 16929
+// Module ID: 17020
+// Function ID: 17021
 // Name: ConnectGuardianCard
-// Dependencies: [19, 17, 1385, 7840, 21, 5141, 575, 563, 7748, 16924, 16925, 7478, 5831, 1113, 2667, 6147, 9297, 5747, 8362, 5754, 14898, 6887, 2]
+// Dependencies: [19, 17, 1385, 7856, 21, 5141, 575, 563, 7764, 17016, 17017, 7494, 5845, 1113, 2667, 6162, 9314, 5761, 8378, 5768, 14978, 6902, 2]
 // Exports: ConnectGuardianCard
 
-// Module 16928 (ConnectGuardianCard)
+// Module 17020 (ConnectGuardianCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5831 */;
-import ClipboardUtils from "ClipboardUtils" /* 7478 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7840 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 16925 */;
+import ToastUtils from "ToastUtils" /* 5845 */;
+import ClipboardUtils from "ClipboardUtils" /* 7494 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7856 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17017 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
@@ -107,7 +107,7 @@ export function ConnectGuardianCard(linkCode) {
     Stack2 = tmp2(tmp3[15]).Stack;
     const obj4 = { size: 160, text: tmp17 };
     items3 = [closure_7(tmp2(tmp3[16]).QRCodeWithOverlay, obj4), ];
-    const obj5 = { style: tmp.countdown, variant: "text-xs/normal", children: "" + stringResult + " " + tmp2Result.getTimeFormat(86400 * days + 3600 * hours + 60 * minutes + seconds) };
+    const obj5 = { style: tmp.countdown, variant: "body-xs/normal", children: "" + stringResult + " " + tmp2Result.getTimeFormat(86400 * days + 3600 * hours + 60 * minutes + seconds) };
     const Text2 = tmp2(tmp3[17]).Text;
     const _HermesInternal = HermesInternal;
     tmp2Result = tmp2(id[18]);
@@ -123,7 +123,7 @@ export function ConnectGuardianCard(linkCode) {
       items4[1] = tmp11;
       const obj7 = { style: tmp.dividerLine };
       items5 = [closure_7(View, obj7), , ];
-      const obj8 = { style: tmp.dividerText, variant: "text-sm/medium", color: "text-muted", children: string("compact" === shareActions ? tmp6Result.XhROZk : tmp6Result.lggBOi) };
+      const obj8 = { style: tmp.dividerText, variant: "body-sm/medium", color: "text-muted", children: string("compact" === shareActions ? tmp6Result.XhROZk : tmp6Result.lggBOi) };
       const Text = tmp2(tmp3[17]).Text;
       const intl = tmp2(tmp3[13]).intl;
       string = intl.string;

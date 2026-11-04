@@ -1,14 +1,14 @@
-// Module ID: 7459
-// Function ID: 7460
+// Module ID: 7475
+// Function ID: 7476
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 5141, 575, 5747, 1113, 7460, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 7476, 5768, 2]
 // Exports: default
 
-// Module 7459 (ConnectionCardView)
+// Module 7475 (ConnectionCardView)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7460 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7476 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -59,11 +59,11 @@ export default function ConnectionCardView(description) {
   const obj3 = { style: tmp.icon, children: icon };
   items[0] = React3(React2, obj3);
   const obj4 = { style: tmp.textContent, children: items1 };
-  items1 = [React3(Text_Text.Text, { variant: "text-md/medium", color: "text-strong", children: displayName }), ];
+  items1 = [React3(Text_Text.Text, { variant: "body-md/medium", color: "text-strong", children: displayName }), ];
   let tmp4Result = null != description && description.length > 0;
   if (tmp4Result) {
-    const obj5 = { variant: "text-sm/normal", color: "text-subtle", children: description };
-    tmp4Result = tmp4(tmp5(5747).Text, obj5);
+    const obj5 = { variant: "body-sm/normal", color: "text-subtle", children: description };
+    tmp4Result = tmp4(tmp5(5761).Text, obj5);
   }
   items1[1] = tmp4Result;
   items[1] = hasOwnProperty(React2, obj4);
@@ -72,14 +72,14 @@ export default function ConnectionCardView(description) {
     tmp4Result2 = tmp4(_false, { size: "small" });
   } else if (isConnected) {
     const obj6 = { style: tmp.connectedStatus, children: items3 };
-    const obj7 = { variant: "text-sm/medium", color: "text-feedback-positive", children: intl2.string(intl3.t["LV+CXH"]) };
-    const Text = tmp5(5747).Text;
+    const obj7 = { variant: "body-sm/medium", color: "text-feedback-positive", children: intl2.string(intl3.t["LV+CXH"]) };
+    const Text = tmp5(5761).Text;
     intl2 = tmp5(1113).intl;
     items3 = [React3(Text, obj7), React3(CircleCheckIcon.CircleCheckIcon, { size: "sm", color: "status-positive" })];
     tmp4Result2 = tmp2(tmp3, obj6);
   } else {
     const obj8 = { variant: "primary", size: "sm", onPress: onConnect, text: intl.string(intl3.t.S0W8Z5), disabled: !canConnect };
-    const Button = tmp5(5754).Button;
+    const Button = tmp5(5768).Button;
     intl = tmp5(1113).intl;
     tmp4Result2 = tmp4(Button, obj8);
   }

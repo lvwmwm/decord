@@ -1,17 +1,17 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12434
+// Function ID: 12435
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 5141, 575, 7106, 1113, 3995, 12258, 5747, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7121, 1113, 3995, 12319, 5761, 2]
 // Exports: default
 
-// Module 12369 (ConjureProjectHeaderTitle)
+// Module 12434 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import Pressables from "Pressables" /* 7106 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12258 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import Pressables from "Pressables" /* 7121 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12319 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -48,7 +48,7 @@ export default function ConjureProjectHeaderTitle(project) {
     tmp4 = React3(PressableOpacity, obj2);
   }
   items = [tmp4, ];
-  const obj4 = { style: tmp.titles, children: React3(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, maxFontSizeMultiplier: 2, variant: "redesign/heading-18/semibold", color: "mobile-text-heading-primary", children: title }) };
+  const obj4 = { style: tmp.titles, children: React3(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, maxFontSizeMultiplier: 2, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: title }) };
   items[1] = React3(View, obj4);
   return tmp2(View, obj);
 };

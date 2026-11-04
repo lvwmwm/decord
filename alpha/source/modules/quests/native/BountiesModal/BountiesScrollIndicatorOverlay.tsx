@@ -1,16 +1,16 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 17196
+// Function ID: 17197
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 5380, 5141, 575, 1652, 5377, 1705, 5710, 17105, 5747, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5381, 5141, 575, 1652, 5378, 1705, 5723, 17197, 5761, 1113, 2]
 // Exports: default
 
-// Module 17104 (BountiesScrollIndicatorOverlay)
+// Module 17196 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import timingPresets from "timingPresets" /* 5380 */;
-import LinearGradientDefault from "LinearGradient" /* 5710 */;
-import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17105 */;
+import timingPresets from "timingPresets" /* 5381 */;
+import LinearGradientDefault from "LinearGradient" /* 5723 */;
+import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17197 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,7 +90,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   let items = [enabled];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f140896 = () => {
+    const f141670 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -98,13 +98,13 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
       if (closure_0) {
         num = closure_2_9;
       }
-      enabled = _setTimeout(f140896, num);
+      enabled = _setTimeout(f141670, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f140896, closure_1_9);
+      timeout = setTimeout(f141670, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
@@ -262,8 +262,8 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   items10[1] = items11;
   const View3 = _modDef1652.View;
   items12 = [closure_6(BountiesScrollIndicatorAnimationDefault, { visible: enabled && first, isFadingInContent: first1 }), ];
-  const obj6 = { variant: "text-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText, children: intl.string(require("intl").t.eafsh4) };
-  const Text = tmp18(5747).Text;
+  const obj6 = { variant: "body-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText, children: intl.string(require("intl").t.eafsh4) };
+  const Text = tmp18(5761).Text;
   intl = tmp18(1113).intl;
   items12[1] = closure_6(Text, obj6);
   items9[1] = closure_7(View3, obj5);

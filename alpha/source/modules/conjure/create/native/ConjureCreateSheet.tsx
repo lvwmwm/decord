@@ -1,16 +1,16 @@
-// Module ID: 13124
-// Function ID: 13125
+// Module ID: 13207
+// Function ID: 13208
 // Name: ConjureCreateSheet
-// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 11107, 13125, 12735, 13114, 13126, 13113, 5381, 11009, 12719, 12358, 1113, 3995, 11005, 13127, 7484, 12302, 13129, 13130, 7486, 7441, 7373, 7186, 7101, 5747, 12303, 13138, 5754, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 11155, 13208, 12816, 13197, 13209, 13196, 5382, 11058, 12800, 12423, 1113, 3995, 11054, 13210, 7500, 12367, 13212, 13213, 7502, 7457, 7389, 7201, 7116, 5761, 12368, 13221, 5768, 2]
 // Exports: default
 
-// Module 13124 (ConjureCreateSheet)
+// Module 13207 (ConjureCreateSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5381 */;
-import ConjureEffortPicker from "ConjureEffortPicker" /* 12302 */;
-import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 13114 */;
-import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 13130 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
+import ConjureEffortPicker from "ConjureEffortPicker" /* 12367 */;
+import ConjureLandingModelChoices from "ConjureLandingModelChoices" /* 13197 */;
+import ConjureTemplateWizardSheet from "ConjureTemplateWizardSheet" /* 13213 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -670,7 +670,7 @@ export default function ConjureCreateSheet(guildId) {
   obj10 = { label: intl6.string(initialInstallScope(tmp6[18]).aBPQxX), trailing: CONJURE_DEFAULT_TIER_SETTINGS(Text, obj11), arrow: true, disabled, onPress: callback1 };
   TableRow = tmp5(tmp6[29]).TableRow;
   intl6 = tmp5(tmp6[17]).intl;
-  obj11 = { variant: "text-md/normal", color: "text-muted", children: tmp5Result5.conjureTierDescription(CONJURE_DEFAULT_TIER_SETTINGS.tier) };
+  obj11 = { variant: "body-md/normal", color: "text-muted", children: tmp5Result5.conjureTierDescription(CONJURE_DEFAULT_TIER_SETTINGS.tier) };
   Text = tmp5(tmp6[30]).Text;
   tmp5Result5 = guildId(tmp6[31]);
   items8[1] = CONJURE_DEFAULT_TIER_SETTINGS(TableRowGroup, obj9);
@@ -681,18 +681,18 @@ export default function ConjureCreateSheet(guildId) {
     if (0 === tmp17) {
       str3 = "text-feedback-warning";
     }
-    let obj12 = { variant: "text-sm/normal", color: str3, children: tmp5Result6.conjureAppSlotsLeftLabel(tmp17) };
+    let obj12 = { variant: "body-sm/normal", color: str3, children: tmp5Result6.conjureAppSlotsLeftLabel(tmp17) };
     tmp5Result6 = guildId(tmp6[32]);
     tmp23Result = tmp23(Text2, obj12);
   }
   items8[2] = tmp23Result;
   let tmp23Result2 = null;
   if (null != tmp15) {
-    let obj13 = { variant: "text-xs/normal", color: "text-feedback-critical", children: tmp15 };
+    let obj13 = { variant: "body-xs/normal", color: "text-feedback-critical", children: tmp15 };
     tmp23Result2 = tmp23(tmp5(tmp6[30]).Text, obj13);
   }
   items8[3] = tmp23Result2;
-  let obj14 = { variant: "text-xs/normal", color: "text-muted", children: intl7.string(tmp16(tmp6[18]).NvvCzX) };
+  let obj14 = { variant: "body-xs/normal", color: "text-muted", children: intl7.string(tmp16(tmp6[18]).NvvCzX) };
   const Text3 = tmp5(tmp6[30]).Text;
   intl7 = tmp5(tmp6[17]).intl;
   items8[4] = tmp23(Text3, obj14);
@@ -711,11 +711,11 @@ export default function ConjureCreateSheet(guildId) {
   items9 = [tmp24(tmp25, obj7), , , ];
   const obj16 = { style: tmp.section, children: items11 };
   const obj17 = { style: tmp.sectionHeading, children: items10 };
-  const obj18 = { variant: "text-md/medium", color: "text-default", children: intl9.string(initialInstallScope(tmp6[18]).I7nPgX) };
+  const obj18 = { variant: "body-md/medium", color: "text-default", children: intl9.string(initialInstallScope(tmp6[18]).I7nPgX) };
   const Text4 = tmp5(tmp6[30]).Text;
   intl9 = tmp5(tmp6[17]).intl;
   items10 = [tmp23(Text4, obj18), ];
-  const obj19 = { variant: "text-sm/normal", color: "text-muted", children: intl10.string(initialInstallScope(tmp6[18]).FXB8wQ) };
+  const obj19 = { variant: "body-sm/normal", color: "text-muted", children: intl10.string(initialInstallScope(tmp6[18]).FXB8wQ) };
   const Text5 = tmp5(tmp6[30]).Text;
   intl10 = tmp5(tmp6[17]).intl;
   items10[1] = tmp23(Text5, obj19);
@@ -739,11 +739,11 @@ export default function ConjureCreateSheet(guildId) {
   items9[1] = disabled(c6, obj16);
   const obj22 = { style: tmp.section, children: items13 };
   const obj23 = { style: tmp.sectionHeading, children: items12 };
-  const obj24 = { variant: "text-md/medium", color: "text-default", children: intl12.string(initialInstallScope(tmp6[18]).zzYLlW) };
+  const obj24 = { variant: "body-md/medium", color: "text-default", children: intl12.string(initialInstallScope(tmp6[18]).zzYLlW) };
   const Text6 = tmp5(tmp6[30]).Text;
   intl12 = tmp5(tmp6[17]).intl;
   items12 = [tmp23(Text6, obj24), ];
-  const obj25 = { variant: "text-sm/normal", color: "text-muted", children: intl13.string(initialInstallScope(tmp6[18])["N88+Ld"]) };
+  const obj25 = { variant: "body-sm/normal", color: "text-muted", children: intl13.string(initialInstallScope(tmp6[18])["N88+Ld"]) };
   const Text7 = tmp5(tmp6[30]).Text;
   intl13 = tmp5(tmp6[17]).intl;
   items12[1] = tmp23(Text7, obj25);
@@ -775,11 +775,11 @@ export default function ConjureCreateSheet(guildId) {
   items9[2] = disabled(c6, obj22);
   const obj27 = { style: tmp.section, children: items15 };
   const obj28 = { style: tmp.sectionHeading, children: items14 };
-  const obj29 = { variant: "text-md/medium", color: "text-default", children: intl14.string(initialInstallScope(tmp6[18])["2XcV3x"]) };
+  const obj29 = { variant: "body-md/medium", color: "text-default", children: intl14.string(initialInstallScope(tmp6[18])["2XcV3x"]) };
   const Text8 = tmp5(tmp6[30]).Text;
   intl14 = tmp5(tmp6[17]).intl;
   items14 = [tmp23(Text8, obj29), ];
-  const obj30 = { variant: "text-sm/normal", color: "text-muted", children: intl15.string(initialInstallScope(tmp6[18]).JnJOAn) };
+  const obj30 = { variant: "body-sm/normal", color: "text-muted", children: intl15.string(initialInstallScope(tmp6[18]).JnJOAn) };
   const Text9 = tmp5(tmp6[30]).Text;
   intl15 = tmp5(tmp6[17]).intl;
   items14[1] = tmp23(Text9, obj30);

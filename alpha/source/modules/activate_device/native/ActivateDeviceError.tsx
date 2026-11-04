@@ -1,17 +1,17 @@
-// Module ID: 15857
-// Function ID: 15858
+// Module ID: 15945
+// Function ID: 15946
 // Name: ActivateDeviceError
-// Dependencies: [19, 17, 21, 5141, 5837, 14765, 15855, 5747, 1113, 5754, 2]
+// Dependencies: [19, 17, 21, 5141, 5851, 14845, 15943, 5761, 1113, 5768, 2]
 // Exports: ActivateDeviceError
 
-// Module 15857 (ActivateDeviceError)
+// Module 15945 (ActivateDeviceError)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import components_Button_Button from "components/Button/Button" /* 5754 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14765 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15855 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import components_Button_Button from "components/Button/Button" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14845 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15943 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -43,7 +43,7 @@ export function ActivateDeviceError(onRetry) {
   const Text = Text_Text.Text;
   intl = intl4.intl;
   items1 = [React3(Text, obj4), ];
-  const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
+  const obj5 = { variant: "body-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: intl2.string(intl4.t["/GAO1P"]) };
   const Text2 = Text_Text.Text;
   intl2 = intl4.intl;
   items1[1] = React3(Text2, obj5);

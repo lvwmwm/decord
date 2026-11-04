@@ -1,21 +1,21 @@
-// Module ID: 11721
-// Function ID: 11722
+// Module ID: 11776
+// Function ID: 11777
 // Name: ChannelBrowser
-// Dependencies: [32, 19, 17, 7835, 7400, 5071, 5012, 6895, 1072, 4987, 21, 5141, 575, 5730, 11722, 504, 11724, 5171, 4974, 11720, 7339, 7414, 7103, 7106, 1113, 7218, 5837, 11726, 5747, 5772, 5209, 7186, 7115, 5719, 8727, 7100, 7109, 1187, 5874, 2]
+// Dependencies: [32, 19, 17, 7851, 7416, 5071, 5012, 6910, 1072, 4987, 21, 5141, 575, 5743, 11777, 504, 11779, 5171, 4974, 11775, 7355, 7430, 7118, 7121, 1113, 7233, 5851, 11781, 5761, 5786, 5208, 7201, 7130, 5732, 8744, 7115, 7124, 1187, 5888, 2]
 // Exports: default
 
-// Module 11721 (ChannelBrowser)
+// Module 11776 (ChannelBrowser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7835 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7400 */;
+import NewChannelsStore from "NewChannelsStore" /* 7851 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7416 */;
 import GuildChannelStore from "GuildChannelStore" /* 5071 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6895 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -64,10 +64,10 @@ let closure_17 = react.memo(function CategoryRow(channel) {
   const onChannelClick = channel.onChannelClick;
   const tmp = closure_15();
   const items = [UserGuildSettingsStore];
-  const tmp3 = onChannelClick(5772)(channel);
+  const tmp3 = onChannelClick(5786)(channel);
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserGuildSettingsStore.isChannelOptedIn(channel.guild_id, channel.id));
-  const obj2 = channel(5209);
+  const obj2 = channel(5208);
   const checkboxA11yNative = obj2.useCheckboxA11yNative({ checked: stateFromStores });
   const obj3 = {
     style: tmp.categoryContainer,
@@ -79,7 +79,7 @@ let closure_17 = react.memo(function CategoryRow(channel) {
     children: closure_13(tmp11, { children: items1 })
   };
   str = "text";
-  const PressableOpacity = channel(7106).PressableOpacity;
+  const PressableOpacity = channel(7121).PressableOpacity;
   if ("null" !== channel.id) {
     str = checkboxA11yNative.accessibilityRole;
   }
@@ -89,16 +89,16 @@ let closure_17 = react.memo(function CategoryRow(channel) {
   }
   items1 = [, ];
   const obj4 = { style: tmp.categoryTitle, title: tmp3, lineClamp: 1 };
-  items1[0] = closure_12(channel(7186).TableRowGroupTitle, obj4);
+  items1[0] = closure_12(channel(7201).TableRowGroupTitle, obj4);
   let tmp10Result = null;
   tmp11 = closure_14;
   if ("null" !== channel.id) {
     const obj5 = { style: tmp.selectAllContainer, children: items2 };
-    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(7115).FormCheckbox, obj7) };
+    const obj6 = { style: tmp.selectAllCheckbox, children: closure_12(channel(7130).FormCheckbox, obj7) };
     obj7 = { checked: stateFromStores };
     items2 = [closure_12(View, obj6), ];
-    const obj8 = { variant: "text-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1113).t.mSQwnW) };
-    const Text = tmp4(5747).Text;
+    const obj8 = { variant: "body-xs/semibold", color: "interactive-text-default", children: intl.string(channel(1113).t.mSQwnW) };
+    const Text = tmp4(5761).Text;
     intl = tmp4(1113).intl;
     items2[1] = closure_12(Text, obj8);
     tmp10Result = tmp10(View, obj5);
@@ -364,11 +364,11 @@ export default function ChannelBrowser(guildId) {
     Text = tmp6(tmp5[28]).Text;
     intl2 = tmp6(tmp5[24]).intl;
     items7 = [closure_12(channelBrowserSections, obj15), , ];
-    const obj17 = { variant: "text-sm/normal", color: "text-default", style: tmp.nuxBody, children: intl3.string(guildId(tmp5[24]).t["+9etcM"]) };
+    const obj17 = { variant: "body-sm/normal", color: "text-default", style: tmp.nuxBody, children: intl3.string(guildId(tmp5[24]).t["+9etcM"]) };
     const Text2 = tmp6(tmp5[28]).Text;
     intl3 = tmp6(tmp5[24]).intl;
     items7[1] = closure_12(Text2, obj17);
-    const obj18 = { variant: "text-sm/normal", color: "text-default", style: tmp.nuxBody, children: intl4.format(guildId(tmp5[24]).t.Z0axjk, {}) };
+    const obj18 = { variant: "body-sm/normal", color: "text-default", style: tmp.nuxBody, children: intl4.format(guildId(tmp5[24]).t.Z0axjk, {}) };
     const Text3 = tmp6(tmp5[28]).Text;
     intl4 = tmp6(tmp5[24]).intl;
     items7[2] = closure_12(Text3, obj18);

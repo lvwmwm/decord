@@ -1,22 +1,22 @@
-// Module ID: 11986
-// Function ID: 11987
+// Module ID: 12045
+// Function ID: 12046
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1083, 21, 11987, 1652, 5757, 575, 11988, 12049, 11990, 11137, 11136, 9961, 11365, 5879, 12050, 12135, 5207, 11838, 12143, 12144, 11993, 12149, 12157, 12159, 12192, 12193, 5141, 12194, 12011, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 12046, 1652, 5771, 575, 12047, 12108, 12049, 11185, 11184, 9979, 11415, 5893, 12109, 12194, 5207, 11897, 12202, 12203, 12052, 12208, 12216, 12218, 12251, 12252, 5141, 12253, 12070, 2]
 // Exports: default
 
-// Module 11986 (StageChannelCallNavigator)
+// Module 12045 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5757 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5879 */;
-import MessageManagerDefault from "MessageManager" /* 9961 */;
-import participantHasVideoDefault from "participantHasVideo" /* 11365 */;
-import ModeratorOverlayState from "ModeratorOverlayState" /* 11987 */;
-import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 11988 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 12011 */;
-import JoinStageViewDefault from "JoinStageView" /* 12049 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12194 */;
+import spring_spring from "spring/spring" /* 5771 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
+import MessageManagerDefault from "MessageManager" /* 9979 */;
+import participantHasVideoDefault from "participantHasVideo" /* 11415 */;
+import ModeratorOverlayState from "ModeratorOverlayState" /* 12046 */;
+import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 12047 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 12070 */;
+import JoinStageViewDefault from "JoinStageView" /* 12108 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 12253 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

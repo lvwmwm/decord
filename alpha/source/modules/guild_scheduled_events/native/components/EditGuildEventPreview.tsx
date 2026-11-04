@@ -1,18 +1,18 @@
-// Module ID: 9211
-// Function ID: 9212
+// Module ID: 9228
+// Function ID: 9229
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 4990, 1072, 21, 5141, 575, 1377, 504, 5772, 9100, 9212, 5747, 1113, 9213, 1187, 9214, 9096, 7412, 9109, 5754, 9097, 6079, 9215, 2123, 2]
+// Dependencies: [19, 17, 4990, 1072, 21, 5141, 575, 1377, 504, 5786, 9117, 9229, 5761, 1113, 9230, 1187, 9231, 9113, 7428, 9126, 5768, 9114, 6094, 9232, 2123, 2]
 // Exports: default
 
-// Module 9211 (EditGuildEventPreview)
+// Module 9228 (EditGuildEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6079 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9096 */;
-import ScheduleUtils from "ScheduleUtils" /* 9097 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9113 */;
+import ScheduleUtils from "ScheduleUtils" /* 9114 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp9;
-const guildEventDetailsParser = tmp9(9214);
+const guildEventDetailsParser = tmp9(9231);
 function PreviewBody(event) {
   let channelContainer;
   let closure_2;
@@ -54,7 +54,7 @@ function PreviewBody(event) {
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel_id), items1);
   const tmp5 = channel_id;
-  const tmp6 = channel_id(5772)(stateFromStores);
+  const tmp6 = channel_id(5786)(stateFromStores);
   dependencyMap = tmp6;
   let obj2 = require("EntityUtils");
   let locationFromEvent = obj2.getLocationFromEvent(event);
@@ -63,23 +63,23 @@ function PreviewBody(event) {
     tmp8 = locationFromEvent;
   }
   locationFromEvent = tmp8;
-  let tmp2Result = tmp2(9212);
+  let tmp2Result = tmp2(9229);
   eventLocationIconSource = tmp2Result.getEventLocationIconSource(event, stateFromStores, true);
   let obj3 = { style: tmp.header, children: items2 };
   let tmp9 = closure_7;
   let tmp11 = closure_6;
   const obj4 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1113).t.yBsFE3) };
-  let Text = tmp2(5747).Text;
+  let Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
   items2 = [closure_6(Text, obj4), ];
-  const obj5 = { style: tmp.headerSubtitle, accessibilityLabel: formatToPlainStringResult, variant: "text-sm/medium", color: "text-default", children: formatResult };
+  const obj5 = { style: tmp.headerSubtitle, accessibilityLabel: formatToPlainStringResult, variant: "body-sm/medium", color: "text-default", children: formatResult };
   formatToPlainStringResult = undefined;
-  const Text2 = tmp2(5747).Text;
+  const Text2 = tmp2(5761).Text;
   const tmp10 = locationFromEvent;
   if (null != stateFromStores) {
     const intl2 = tmp2(1113).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const obj6 = { channelName: tmp5(9213)(obj7) };
+    const obj6 = { channelName: tmp5(9230)(obj7) };
     const sxcQPE = tmp2(1113).t.sxcQPE;
     obj7 = { channel: stateFromStores };
     formatToPlainStringResult = formatToPlainString(sxcQPE, obj6);
@@ -112,7 +112,7 @@ function PreviewBody(event) {
             tmp11 = result;
           }
           const obj3 = { children: items };
-          items[1] = metroRequire(Text, { accessibilityElementsHidden: true, importantForAccessibility: "no", variant: "text-sm/medium", color: "text-default", children: tmp11 });
+          items[1] = metroRequire(Text, { accessibilityElementsHidden: true, importantForAccessibility: "no", variant: "body-sm/medium", color: "text-default", children: tmp11 });
           let str = locationFromEvent;
           if (locationFromEvent == null) {
             str = "preview-body";

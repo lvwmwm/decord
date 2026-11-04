@@ -1,28 +1,28 @@
-// Module ID: 15586
-// Function ID: 15587
+// Module ID: 15673
+// Function ID: 15674
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8887, 7703, 1072, 1387, 21, 5141, 575, 7186, 7723, 1499, 1627, 504, 12, 6564, 7726, 9757, 10740, 8879, 15428, 7706, 7728, 8892, 7282, 7286, 10037, 5837, 15587, 5747, 1113, 15588, 15594, 15596, 15599, 15601, 11514, 7288, 2763, 15602, 7080, 2]
+// Dependencies: [32, 19, 17, 8904, 7719, 1072, 1387, 21, 5141, 575, 7201, 7739, 1499, 1627, 504, 12, 6579, 7742, 9775, 10788, 8896, 15515, 7722, 7744, 8909, 7298, 7302, 10085, 5851, 15674, 5761, 1113, 15675, 15681, 15683, 15686, 15688, 11564, 7304, 2763, 15689, 7095, 2]
 // Exports: default
 
-// Module 15586 (UserSettingsPremiumGifting)
+// Module 15673 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6564 */;
-import TableRowGroup from "TableRowGroup" /* 7186 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7282 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7286 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 7706 */;
-import BillingActionCreatorsDefault from "BillingActionCreators" /* 7728 */;
-import BadgeId from "BadgeId" /* 8879 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8892 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10037 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 15588 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 15594 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6579 */;
+import TableRowGroup from "TableRowGroup" /* 7201 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7298 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 7722 */;
+import BillingActionCreatorsDefault from "BillingActionCreators" /* 7744 */;
+import BadgeId from "BadgeId" /* 8896 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8909 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10085 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 15675 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 15681 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8887 */;
-import EntitlementStore from "EntitlementStore" /* 7703 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
+import EntitlementStore from "EntitlementStore" /* 7719 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
@@ -196,11 +196,11 @@ export default function UserSettingsPremiumGifting(ref) {
                 const tmp3Result = stateFromStoresArray(memo[28]);
                 items7 = [closure_13(tmp3Result, obj18), ];
                 const obj19 = { style: tmp2.emptyGiftDescription, accessible: true, children: items8 };
-                const obj20 = { style: tmp2.emptyGiftHeader, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: intl3.string(require("intl").t.B1qgZn) };
+                const obj20 = { style: tmp2.emptyGiftHeader, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl3.string(require("intl").t.B1qgZn) };
                 const Text = tmp6(tmp4[30]).Text;
                 intl3 = tmp6(tmp4[31]).intl;
                 items8 = [closure_13(Text, obj20), ];
-                const obj21 = { style: tmp2.emptyGiftInformation, variant: "text-sm/medium", color: "text-default", children: intl4.string(require("intl").t["OV/u0n"]) };
+                const obj21 = { style: tmp2.emptyGiftInformation, variant: "body-sm/medium", color: "text-default", children: intl4.string(require("intl").t["OV/u0n"]) };
                 const Text2 = tmp6(tmp4[30]).Text;
                 intl4 = tmp6(tmp4[31]).intl;
                 items8[1] = closure_13(Text2, obj21);
@@ -281,7 +281,7 @@ export default function UserSettingsPremiumGifting(ref) {
           intl5 = tmp6(tmp4[31]).intl;
           items12 = [closure_13(GiftingSectionTitle, obj31), , , ];
           const obj32 = { premiumType: closure_11.TIER_2, style: tmp2.tierCard, children: items13 };
-          const obj33 = { style: tmp2.cardText, variant: "text-sm/medium", color: "text-default", children: intl6.format(require("intl").t.thORji, obj34) };
+          const obj33 = { style: tmp2.cardText, variant: "body-sm/medium", color: "text-default", children: intl6.format(require("intl").t.thORji, obj34) };
           const tmp3Result3 = stateFromStoresArray(memo[34]);
           const Text3 = tmp6(tmp4[30]).Text;
           intl6 = tmp6(tmp4[31]).intl;
@@ -298,7 +298,7 @@ export default function UserSettingsPremiumGifting(ref) {
           items12[2] = closure_13(stateFromStoresArray(memo[36]), obj38);
           const obj39 = { children: items17 };
           const obj40 = { premiumType: closure_11.TIER_0, style: tmp2.tierCard, children: items15 };
-          const obj41 = { style: tmp2.cardText, variant: "text-sm/medium", color: "text-default", children: intl7.format(require("intl").t.NmpnsP, obj42) };
+          const obj41 = { style: tmp2.cardText, variant: "body-sm/medium", color: "text-default", children: intl7.format(require("intl").t.NmpnsP, obj42) };
           const tmp3Result4 = stateFromStoresArray(memo[34]);
           const Text4 = tmp6(tmp4[30]).Text;
           intl7 = tmp6(tmp4[31]).intl;

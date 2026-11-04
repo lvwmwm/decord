@@ -1,29 +1,29 @@
-// Module ID: 19337
-// Function ID: 19338
+// Module ID: 19441
+// Function ID: 19442
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1385, 19332, 21, 5141, 575, 7642, 1113, 10199, 504, 2176, 10104, 10153, 19338, 5762, 12, 7083, 1187, 19346, 10401, 5860, 9506, 10152, 7361, 5747, 2]
+// Dependencies: [19, 17, 1385, 19436, 21, 5141, 575, 7658, 1113, 10247, 504, 2176, 10152, 10201, 19442, 5776, 12, 7098, 1187, 19450, 10449, 5874, 9524, 10200, 7377, 5761, 2]
 
-// Module 19337 (SoundboardSoundPickerList)
+// Module 19441 (SoundboardSoundPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import ClockIcon from "ClockIcon" /* 5860 */;
-import GuildIcon from "GuildIcon" /* 7083 */;
-import FastListDefault from "FastList" /* 7361 */;
-import SoundboardTypes from "SoundboardTypes" /* 7642 */;
-import TrophyIcon from "TrophyIcon" /* 9506 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10104 */;
-import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10152 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10153 */;
-import chunkDefault from "chunk" /* 10199 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10401 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19346 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import ClockIcon from "ClockIcon" /* 5874 */;
+import GuildIcon from "GuildIcon" /* 7098 */;
+import FastListDefault from "FastList" /* 7377 */;
+import SoundboardTypes from "SoundboardTypes" /* 7658 */;
+import TrophyIcon from "TrophyIcon" /* 9524 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10152 */;
+import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 10200 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10201 */;
+import chunkDefault from "chunk" /* 10247 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10449 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19450 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19332 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19436 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -101,7 +101,7 @@ function SoundPickerButtonRow(row) {
         const obj = { sound, channel, soundGridLocation: obj2, style: soundButtonNotFirst, isSectionLocked };
         soundButtonNotFirst = null;
         obj2 = { section: importDefault, item: row };
-        const SoundButton = tmp(19338).SoundButton;
+        const SoundButton = tmp(19442).SoundButton;
         const tmp7 = metroImportDefault;
         if (index > 0) {
           soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;
@@ -197,7 +197,7 @@ const memoResult = react.memo(function SoundboardSoundPickerListComponent(channe
   }
   const listRef = channel.listRef;
   const currentUser = closure_10();
-  let obj = channel(5762);
+  let obj = channel(5776);
   const fontScale = obj.useFontScale();
   let tmp2 = calculateRowsPerSection(categories, closure_6);
   let tmp3 = getFastListSectionsFromCategories(categories, closure_6, fontScale);
@@ -350,7 +350,7 @@ const memoResult = react.memo(function SoundboardSoundPickerListComponent(channe
       }
       items[1] = tmp8Result;
       const obj8 = { children: tmp10(View, obj2) };
-      const obj9 = { accessibilityRole: "header", lineClamp: 1, variant: "heading-sm/semibold", children: getSectionLabel(closure_6[arg0]) };
+      const obj9 = { accessibilityRole: "header", lineClamp: 1, variant: "heading-xs/semibold", children: getSectionLabel(closure_6[arg0]) };
       const Text = Text_Text.Text;
       items[2] = metroImportDefault(Text, obj9);
       return metroImportDefault(View, obj8, closure_6[arg0].category.key);

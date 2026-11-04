@@ -1,24 +1,21 @@
-// Module ID: 17472
-// Function ID: 17473
+// Module ID: 17563
+// Function ID: 17564
 // Name: DisplayNameStylesFontOrder
-// Dependencies: [19, 1403, 5166, 1405, 5169, 2]
+// Dependencies: [19, 1403, 5166, 5169, 2]
 // Exports: useVisibleFontOrder
 
-// Module 17472 (DisplayNameStylesFontOrder)
-import DisplayNameFont from "DisplayNameFont" /* 1405 */;
+// Module 17563 (DisplayNameStylesFontOrder)
 import react from "react" /* 19 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1403 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
 import size from "module_2" /* 2 */;
 
-let FLYWHEEL_FONTS;
 let c3;
 let closure_4;
 let hasOwnProperty;
-({ FLYWHEEL_FONTS, HEXAGON_CAMPAIGN_FONTS: c3 } = DisplayNameStylesConstants);
-({ HexagonCampaignPerk: closure_4, HexagonCampaignPerkAvailability: hasOwnProperty } = HexagonCampaignConstants);
-let items = [DisplayNameFont.DisplayNameFont.DEFAULT, DisplayNameFont.DisplayNameFont.ZILLA_SLAB, DisplayNameFont.DisplayNameFont.CHERRY_BOMB, DisplayNameFont.DisplayNameFont.CHICLE, DisplayNameFont.DisplayNameFont.MUSEO_MODERNO, DisplayNameFont.DisplayNameFont.NEO_CASTEL, DisplayNameFont.DisplayNameFont.PIXELIFY, DisplayNameFont.DisplayNameFont.SINISTRE];
-const items1 = [...FLYWHEEL_FONTS];
+let metroRequire;
+({ FONT_ORDER: c3, HEXAGON_CAMPAIGN_FONTS: closure_4 } = DisplayNameStylesConstants);
+({ HexagonCampaignPerk: hasOwnProperty, HexagonCampaignPerkAvailability: metroRequire } = HexagonCampaignConstants);
 const result = size.fileFinishedImporting("modules/display_name_styles/DisplayNameStylesFontOrder.tsx");
 
 export function useVisibleFontOrder(arg0) {
@@ -41,7 +38,7 @@ export function useVisibleFontOrder(arg0) {
     let tmp3;
     if (flag) {
       const items = [];
-      HermesBuiltin.arraySpread(items, _false, HermesBuiltin.arraySpread(items, items1, 0));
+      HermesBuiltin.arraySpread(items, React3, HermesBuiltin.arraySpread(items, _false, 0));
       tmp3 = items;
     } else {
       tmp3 = tmp2;

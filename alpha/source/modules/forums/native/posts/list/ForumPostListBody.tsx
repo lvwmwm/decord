@@ -1,17 +1,17 @@
-// Module ID: 13916
-// Function ID: 13917
+// Module ID: 14002
+// Function ID: 14003
 // Name: ForumPostListBody
-// Dependencies: [19, 17, 7578, 21, 5141, 7577, 13909, 13898, 13908, 13910, 13917, 13903, 2]
+// Dependencies: [19, 17, 7594, 21, 5141, 7593, 13995, 13984, 13994, 13996, 14003, 13989, 2]
 // Exports: default
 
-// Module 13916 (ForumPostListBody)
+// Module 14002 (ForumPostListBody)
 import react_native from "react-native" /* 17 */;
-import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7577 */;
-import ForumConstants from "ForumConstants" /* 7578 */;
-import ForumPostUsername from "ForumPostUsername" /* 13898 */;
-import ForumPostTimestampDefault from "ForumPostTimestamp" /* 13908 */;
-import ForumPostNewTagDefault from "ForumPostNewTag" /* 13909 */;
-import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 13917 */;
+import GameInvitesChannelUtils from "GameInvitesChannelUtils" /* 7593 */;
+import ForumConstants from "ForumConstants" /* 7594 */;
+import ForumPostUsername from "ForumPostUsername" /* 13984 */;
+import ForumPostTimestampDefault from "ForumPostTimestamp" /* 13994 */;
+import ForumPostNewTagDefault from "ForumPostNewTag" /* 13995 */;
+import ForumPostMessageContentDefault from "ForumPostMessageContent" /* 14003 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -62,7 +62,7 @@ export default function ForumPostListBody(arg0) {
   let tmp9Result = !isGameInvitesPost;
   if (tmp9Result) {
     const obj7 = { title: thread.name, lineClamp: 2, ellipsizeMode: "tail", hasUnreads };
-    tmp9Result = tmp9(tmp10(13910), obj7);
+    tmp9Result = tmp9(tmp10(13996), obj7);
   }
   items2[1] = tmp9Result;
   items2[2] = hasOwnProperty(ForumPostMessageContentDefault, { messageContent, message: firstMessage, isMessageDeleted: false, messageLoaded: firstMessageLoaded, hasUnreads, senderModifier });
@@ -77,7 +77,7 @@ export default function ForumPostListBody(arg0) {
     if (null != media) {
       const obj8 = { channel: thread, media, isEmbed, isLocalDeviceMedia, firstMessageId: id, containerStyle: tmp.thumbnailContainer };
       id = undefined;
-      const ForumPostMediaThumbnail = tmp2(13903).ForumPostMediaThumbnail;
+      const ForumPostMediaThumbnail = tmp2(13989).ForumPostMediaThumbnail;
       if (firstMessage != null) {
         id = firstMessage.id;
       }

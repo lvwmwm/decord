@@ -1,18 +1,18 @@
-// Module ID: 13903
-// Function ID: 13904
+// Module ID: 13989
+// Function ID: 13990
 // Name: ForumPostMedia
-// Dependencies: [32, 19, 17, 1192, 1191, 21, 5141, 575, 5837, 5723, 13904, 8811, 13905, 1377, 7592, 7106, 8079, 6849, 13906, 5148, 4966, 11269, 1492, 2]
+// Dependencies: [32, 19, 17, 1192, 1191, 21, 5141, 575, 5851, 5736, 13990, 8828, 13991, 1377, 7608, 7121, 8095, 6864, 13992, 5148, 4966, 11319, 1492, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
-// Module 13903 (ForumPostMedia)
+// Module 13989 (ForumPostMedia)
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import utils_ImageUtils from "utils/ImageUtils" /* 1492 */;
 import shared from "shared" /* 5148 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5723 */;
-import FastImageDefault from "FastImage" /* 5837 */;
-import SpoilerIconDefault from "SpoilerIcon" /* 13904 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13906 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5736 */;
+import FastImageDefault from "FastImage" /* 5851 */;
+import SpoilerIconDefault from "SpoilerIcon" /* 13990 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 13992 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -108,7 +108,7 @@ function ForumPostMedia(obscureReason) {
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     let obj2 = {};
-    const tmp19 = ref(13905);
+    const tmp19 = ref(13991);
     const merged = Object.assign(obscureReason);
     tmp6Result = closure_9(tmp19, obj2);
     tmp12 = closure_9;
@@ -127,7 +127,7 @@ function ForumPostMedia(obscureReason) {
     }
   }
   if (null != obscureReason.obscureReason) {
-    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(7592).AGE_VERIFICATION_OBSCURABLE_REASONS;
+    const AGE_VERIFICATION_OBSCURABLE_REASONS = tmp3(7608).AGE_VERIFICATION_OBSCURABLE_REASONS;
     if (AGE_VERIFICATION_OBSCURABLE_REASONS.has(obscureReason.obscureReason)) {
       if (shouldAgeVerifyForReason) {
         const obj5 = { style: items, ref, children: tmp12(require("Pressables").PressableOpacity, obj6) };

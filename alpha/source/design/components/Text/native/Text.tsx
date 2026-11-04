@@ -1,24 +1,24 @@
-// Module ID: 5747
-// Function ID: 5748
+// Module ID: 5761
+// Function ID: 5762
 // Name: Text/Text
-// Dependencies: [109, 19, 17, 1083, 21, 1652, 575, 12, 5748, 5749, 5141, 5751, 5752, 1357, 5753, 299, 2]
+// Dependencies: [109, 19, 17, 1083, 21, 1652, 575, 12, 5762, 5763, 5141, 5765, 5766, 1357, 5767, 299, 2]
 // Exports: Heading
 
-// Module 5747 (Text/Text)
+// Module 5761 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import TextVariants from "TextVariants" /* 5748 */;
-import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5751 */;
-import PlainTextEligibility from "PlainTextEligibility" /* 5752 */;
-import _modDef5753 from "module_5753" /* 5753 */;
+import TextVariants from "TextVariants" /* 5762 */;
+import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5765 */;
+import PlainTextEligibility from "PlainTextEligibility" /* 5766 */;
+import _modDef5767 from "module_5767" /* 5767 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import module_1652 from "module_1652" /* 1652 */;
-import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5749 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5763 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ class Text {
       StringResult = undefined;
       tmp20 = _objectWithoutProperties(plainTextEligibility, closure_3);
       const tmp21 = jsx;
-      const tmp23 = _modDef5753;
+      const tmp23 = _modDef5767;
       if (null != fontWeight) {
         const _String = String;
         StringResult = String(fontWeight);
@@ -149,55 +149,50 @@ let obj3 = { 700: null };
 obj3[700] = Fonts.GINTO_DISCORD_NORD_BOLD;
 const obj6 = { 400: null, 700: null };
 ({ CODE_NORMAL: obj4[400], CODE_BOLD: obj4[700] } = Fonts);
-let obj7 = { 700: null, 900: null };
+const obj7 = { 700: null, 900: null };
 ({ GINTO_DISCORD_NORD_BOLD_ITALIC: obj5[700], GINTO_DISCORD_NORD_BLACK_ITALIC: obj5[900] } = Fonts);
 let closure_13 = { nitro: obj3, primary: obj, code: obj6 };
 let closure_14 = { nitro: obj7 };
 const fromEntries2 = Object.fromEntries;
 const TextVariantsFlat = TextVariants.TextVariantsFlat;
-const mapped = TextVariantsFlat.map((name) => {
+const mapped = TextVariantsFlat.map((fontSize) => {
   let fontStack;
+  let obj4;
   let result;
   let str;
   let weight;
-  if ("code" === name.name) {
-    return null;
-  } else {
-    let obj;
-    const letterSpacing = name.letterSpacing;
-    items = [name.name, ];
-    const obj2 = { fontSize: null, lineHeight: null, textTransform: str, includeFontPadding: false, letterSpacing: result };
-    ({ size: obj4.fontSize, lineHeight: obj4.lineHeight } = name);
-    str = "none";
-    if (name.uppercase) {
-      str = "uppercase";
-    }
-    ({ fontStack, weight } = name);
-    const str1 = weight.toString();
-    if (name.italic) {
-      let obj7;
-      let tmp6;
-      if (closure_14[fontStack] != null) {
-        tmp6 = tmp4[str1];
-      }
-      if (null != tmp6) {
-        obj7 = { fontFamily: tmp6, fontStyle: "normal" };
-        const obj3 = { fontFamily: tmp6, fontStyle: "normal" };
-      } else {
-        obj7 = { fontFamily: closure_13[fontStack][str1], fontStyle: "italic" };
-      }
-      obj = obj7;
-    } else {
-      obj = { fontFamily: closure_13[fontStack][str1] };
-    }
-    const merged = Object.assign(obj);
-    result = undefined;
-    if (null != letterSpacing) {
-      result = letterSpacing / 10;
-    }
-    items[1] = obj2;
-    return items;
+  const letterSpacing = fontSize.letterSpacing;
+  items = [fontSize.name, ];
+  const obj = { fontSize: fontSize.size, lineHeight: fontSize.lineHeight, textTransform: str, includeFontPadding: false, letterSpacing: result };
+  str = "none";
+  if (fontSize.uppercase) {
+    str = "uppercase";
   }
+  ({ fontStack, weight } = fontSize);
+  const str1 = weight.toString();
+  if (fontSize.italic) {
+    let obj3;
+    let tmp6;
+    if (closure_14[fontStack] != null) {
+      tmp6 = tmp4[str1];
+    }
+    if (null != tmp6) {
+      obj3 = { fontFamily: tmp6, fontStyle: "normal" };
+      const obj2 = { fontFamily: tmp6, fontStyle: "normal" };
+    } else {
+      obj3 = { fontFamily: closure_13[fontStack][str1], fontStyle: "italic" };
+    }
+    obj4 = obj3;
+  } else {
+    obj4 = { fontFamily: closure_13[fontStack][str1] };
+  }
+  const merged = Object.assign(obj4);
+  result = undefined;
+  if (null != letterSpacing) {
+    result = letterSpacing / 10;
+  }
+  items[1] = obj;
+  return items;
 });
 const fromEntries2Result = fromEntries2(mapped.filter(Boolean));
 let result = useManaTextMigrationHighlight.withManaTextMigrationHighlight(fromEntries2Result);

@@ -1,16 +1,16 @@
-// Module ID: 10755
-// Function ID: 10756
+// Module ID: 10803
+// Function ID: 10804
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [32, 19, 17, 5142, 21, 575, 5141, 5747, 504, 9632, 1357, 10756, 5837, 2116, 9594, 2]
+// Dependencies: [32, 19, 17, 5142, 21, 575, 5141, 5761, 504, 9651, 1357, 10804, 5851, 2116, 9613, 2]
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
-// Module 10755 (PremiumGiftPromotionDetails)
+// Module 10803 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
-import Text_Text from "Text/Text" /* 5747 */;
-import SKUPreview from "SKUPreview" /* 9594 */;
+import Text_Text from "Text/Text" /* 5761 */;
+import SKUPreview from "SKUPreview" /* 9613 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -45,7 +45,7 @@ function PremiumGiftPromotionDetailsBase(arg0) {
   items2 = [topContent, , ];
   const Text = Text_Text.Text;
   if (titleVariant == null) {
-    titleVariant = "text-md/semibold";
+    titleVariant = "body-md/semibold";
   }
   const obj3 = { variant: titleVariant, color: titleColor, children: title };
   if (titleColor == null) {
@@ -54,7 +54,7 @@ function PremiumGiftPromotionDetailsBase(arg0) {
   items2[1] = metroImportDefault(Text, obj3);
   const Text2 = Text_Text.Text;
   if (subtitleVariant == null) {
-    subtitleVariant = "text-sm/medium";
+    subtitleVariant = "body-sm/medium";
   }
   const obj4 = { variant: subtitleVariant, color: subtitleColor, children: subtitle };
   if (subtitleColor == null) {

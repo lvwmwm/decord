@@ -1,16 +1,16 @@
-// Module ID: 7196
-// Function ID: 7197
+// Module ID: 7211
+// Function ID: 7212
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 4984, 1385, 1072, 21, 5141, 1499, 504, 38, 7197, 7121, 7198, 5747, 1113, 5754, 6860, 5832, 2]
+// Dependencies: [32, 19, 17, 4984, 1385, 1072, 21, 5141, 1499, 504, 38, 7212, 7136, 7213, 5761, 1113, 5768, 6875, 5846, 2]
 // Exports: default
 
-// Module 7196 (ResendEmail)
+// Module 7211 (ResendEmail)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5832 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6860 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7121 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6875 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7136 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 4984 */;
@@ -58,7 +58,7 @@ export default function ResendEmail() {
   const items1 = [UserRequiredActionStore];
   const obj3 = navigation(504);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => action.getAction());
-  const obj4 = verified(7197);
+  const obj4 = verified(7212);
   const result = obj4.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = react.useState(false);
@@ -80,13 +80,13 @@ export default function ResendEmail() {
   const callback = react.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  items4 = [closure_9(navigation(7198).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  items4 = [closure_9(navigation(7213).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1113).t.fUtddV) };
-  const Text = navigation(5747).Text;
+  const Text = navigation(5761).Text;
   intl = navigation(1113).intl;
   items4[1] = closure_9(Text, obj6);
-  const obj7 = { style: tmp.body, variant: "text-sm/medium", color: "text-default", children: formatResult };
-  const Text2 = navigation(5747).Text;
+  const obj7 = { style: tmp.body, variant: "body-sm/medium", color: "text-default", children: formatResult };
+  const Text2 = navigation(5761).Text;
   const intl2 = navigation(1113).intl;
   const tmp14 = closure_10;
   if (tmp10) {
@@ -113,13 +113,13 @@ export default function ResendEmail() {
     },
     grow: true
   };
-  Button = tmp2(5754).Button;
+  Button = tmp2(5768).Button;
   intl3 = tmp2(1113).intl;
   items4[3] = closure_9(View, obj9);
   if (!result) {
     const obj11 = { style: tmp.change, children: closure_9(Button2, obj12) };
     obj12 = { text: intl4.string(navigation(1113).t.Vm8akB), variant: "secondary", onPress: callback, grow: true };
-    Button2 = tmp2(5754).Button;
+    Button2 = tmp2(5768).Button;
     intl4 = tmp2(1113).intl;
     tmp16Result = tmp16(tmp15, obj11);
   }
