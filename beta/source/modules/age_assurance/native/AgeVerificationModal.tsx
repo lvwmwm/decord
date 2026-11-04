@@ -116,7 +116,7 @@ function AgeVerifyScreen(onComplete) {
     }
     return tmp2;
   }, []);
-  return jsx(onClose(isExpressiveModalV2[6]), { allowsInlineMediaPlayback: true, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true, source: { uri: webviewUrl }, onMessage: callback2, onShouldStartLoadWithRequest: callback3, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n", injectedJavaScriptBeforeContentLoaded: "\n  window.open = function(url) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({type: 'AGEKEY_BREAKOUT', url: url}));\n    return null;\n  };\n" });
+  return jsx(onClose(isExpressiveModalV2[6]), { allowsInlineMediaPlayback: true, mediaPlaybackRequiresUserAction: false, domStorageEnabled: true, javaScriptEnabled: true, javaScriptCanOpenWindowsAutomatically: true, source: { uri: webviewUrl }, onMessage: callback2, onShouldStartLoadWithRequest: callback3, injectedJavaScript: "\n  window.addEventListener('message', function(event) {\n    window.ReactNativeWebView.postMessage(event.data);\n  }, true);\n", injectedJavaScriptBeforeContentLoaded: "\n  window.open = function(url) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({type: 'AGEKEY_BREAKOUT', url: url}));\n    return null;\n  };\n" });
 }
 let closure_4 = AgeVerificationConstants.AGE_VERIFICATION_MODAL_KEY;
 let jsx = Fragment.jsx;

@@ -112,8 +112,8 @@ export function useCardLayout() {
     if (result3 + (bound + tmp15(9459).COLLECTIBLES_SHOP_CARD_GAP * diff2) > tmp3) {
       let obj;
       if (1 < tmp17) {
-        obj = { columns: 1, cardWidth: "r", rowWidth: "children", ref: callback, onLayout: callback1 };
-        const obj3 = { columns: 1, cardWidth: "r", rowWidth: "children", ref: callback, onLayout: callback1 };
+        obj = { columns: 1, cardWidth: "r", rowWidth: "ti", ref: callback, onLayout: callback1 };
+        const obj3 = { columns: 1, cardWidth: "r", rowWidth: "ti", ref: callback, onLayout: callback1 };
       }
       return obj;
     }

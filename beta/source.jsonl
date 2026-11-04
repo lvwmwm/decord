@@ -435,7 +435,7 @@
 { "file": "__polyfill/00xxx/module_820.js", "size": 15193 }
 { "file": "__polyfill/00xxx/module_83.js", "size": 351 }
 { "file": "__polyfill/00xxx/module_841.js", "size": 40219 }
-{ "file": "__polyfill/00xxx/module_842.js", "size": 11500 }
+{ "file": "__polyfill/00xxx/module_842.js", "size": 11493 }
 { "file": "__polyfill/00xxx/module_848.js", "size": 505 }
 { "file": "__polyfill/00xxx/module_85.js", "size": 6561 }
 { "file": "__polyfill/00xxx/module_850.js", "size": 17560 }
@@ -7263,7 +7263,7 @@
 { "file": "__vendor/14xxx/14391_AssetRegistry.js", "size": 415 }
 { "file": "__vendor/14xxx/14392_AssetRegistry.js", "size": 456 }
 { "file": "__vendor/14xxx/14421_AnimatedLegendList.js", "size": 19951 }
-{ "file": "__vendor/14xxx/14422_LegendList.js", "size": 1026998 }
+{ "file": "__vendor/14xxx/14422_LegendList.js", "size": 1027746 }
 { "file": "__vendor/14xxx/14438_AssetRegistry.js", "size": 422 }
 { "file": "__vendor/14xxx/14439_AssetRegistry.js", "size": 423 }
 { "file": "__vendor/14xxx/14440_AssetRegistry.js", "size": 424 }
@@ -8154,7 +8154,7 @@
 { "file": "components_native/channel_settings/ChannelSettingsPermissionsOverview.tsx", "size": 19471 }
 { "file": "components_native/channel_settings/ChannelSettingsUtils.tsx", "size": 782 }
 { "file": "components_native/ChannelContainer.tsx", "size": 5099 }
-{ "file": "components_native/chat/ChatBeginningRow.tsx", "size": 64749 }
+{ "file": "components_native/chat/ChatBeginningRow.tsx", "size": 64754 }
 { "file": "components_native/chat/ChatItem.tsx", "size": 8390 }
 { "file": "components_native/chat/contentHandlers.tsx", "size": 8586 }
 { "file": "components_native/chat/getMessageJumpData.tsx", "size": 4375 }
@@ -8165,7 +8165,7 @@
 { "file": "components_native/common/Alert.tsx", "size": 13275 }
 { "file": "components_native/common/Alerts.tsx", "size": 12010 }
 { "file": "components_native/common/Carousel.tsx", "size": 4938 }
-{ "file": "components_native/common/ChatPreview.tsx", "size": 26889 }
+{ "file": "components_native/common/ChatPreview.tsx", "size": 26890 }
 { "file": "components_native/common/color_picker/ColorBlock.tsx", "size": 3296 }
 { "file": "components_native/common/color_picker/RoleColorPickerActionSheet.tsx", "size": 5129 }
 { "file": "components_native/common/CountDown.tsx", "size": 4155 }
@@ -11098,7 +11098,7 @@
 { "file": "modules/age_assurance/native/AgeVerificationIncodeModal.tsx", "size": 3462 }
 { "file": "modules/age_assurance/native/AgeVerificationIntroScreen.tsx", "size": 8545 }
 { "file": "modules/age_assurance/native/AgeVerificationMethodsContainer.tsx", "size": 4795 }
-{ "file": "modules/age_assurance/native/AgeVerificationModal.tsx", "size": 6435 }
+{ "file": "modules/age_assurance/native/AgeVerificationModal.tsx", "size": 6500 }
 { "file": "modules/age_assurance/native/AgeVerificationOtherWindowScreen.tsx", "size": 2721 }
 { "file": "modules/age_assurance/native/AgeVerificationQuestUnsupportedAlertModal.tsx", "size": 1472 }
 { "file": "modules/age_assurance/native/AgeVerificationRetryScreen.tsx", "size": 7631 }
@@ -12245,7 +12245,7 @@
 { "file": "modules/collectibles/native/headless_components/HeadlessCollectiblesPurchaseFlow.tsx", "size": 2942 }
 { "file": "modules/collectibles/native/headless_components/HeadlessCollectiblesPurchaseRunner.tsx", "size": 1771 }
 { "file": "modules/collectibles/native/HeroBlock.tsx", "size": 16137 }
-{ "file": "modules/collectibles/native/hooks/useCardLayout.tsx", "size": 4117 }
+{ "file": "modules/collectibles/native/hooks/useCardLayout.tsx", "size": 4105 }
 { "file": "modules/collectibles/native/hooks/useCollectiblesExternalGatewayFacet.android.tsx", "size": 1334 }
 { "file": "modules/collectibles/native/hooks/useFeedBlockSkuIds.tsx", "size": 1901 }
 { "file": "modules/collectibles/native/hooks/useFilteredAndSortedProducts.tsx", "size": 2772 }
@@ -13518,7 +13518,7 @@
 { "file": "modules/fastest_list/placeholders/useFastestListTableRowPlaceholderConfig.native.tsx", "size": 3662 }
 { "file": "modules/fastest_list/props/FastestListPropsPlaceholder.tsx", "size": 417 }
 { "file": "modules/fastest_list/props/useFastestListPropsEstimatedListSize.native.tsx", "size": 970 }
-{ "file": "modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx", "size": 7364 }
+{ "file": "modules/fastest_list/props/useFastestListPropsPlaceholder.android.tsx", "size": 7360 }
 { "file": "modules/fastest_list/props/useFastestListPropsScrollReporting.native.tsx", "size": 1842 }
 { "file": "modules/fastest_list/useFastestListComputedStyles.android.tsx", "size": 4344 }
 { "file": "modules/fastest_list/useFastestListSections.android.tsx", "size": 4979 }
@@ -13807,7 +13807,7 @@
 { "file": "modules/game_console/useConsoleConnectedAccountForVoiceUpsell.tsx", "size": 2338 }
 { "file": "modules/game_console/useGameConsoleAccounts.tsx", "size": 1032 }
 { "file": "modules/game_detection/calculateSteamReviewScoreDescription.tsx", "size": 2312 }
-{ "file": "modules/game_detection/GameAnalyticsUtils.tsx", "size": 3711 }
+{ "file": "modules/game_detection/GameAnalyticsUtils.tsx", "size": 3703 }
 { "file": "modules/game_detection/GameDetectionDebugLevel.tsx", "size": 397 }
 { "file": "modules/game_detection/GameDetectionTypes.tsx", "size": 2554 }
 { "file": "modules/game_detection/native/GameIcon.tsx", "size": 3647 }
@@ -14061,7 +14061,7 @@
 { "file": "modules/global_discovery_servers/GlobalDiscoveryServersSearchCountsStore.tsx", "size": 4403 }
 { "file": "modules/global_discovery_servers/GlobalDiscoveryServersSearchLayoutStore.tsx", "size": 1702 }
 { "file": "modules/global_discovery_servers/GlobalDiscoveryServersSearchResultsStore.tsx", "size": 9086 }
-{ "file": "modules/global_discovery_servers/GlobalDiscoveryServersUtils.tsx", "size": 10745 }
+{ "file": "modules/global_discovery_servers/GlobalDiscoveryServersUtils.tsx", "size": 10766 }
 { "file": "modules/global_discovery_servers/GuildDiscoveryCategoryActionCreators.tsx", "size": 16050 }
 { "file": "modules/global_discovery_servers/GuildDiscoveryCategoryStore.tsx", "size": 4069 }
 { "file": "modules/go_live/ApplicationStreamingManager.tsx", "size": 18203 }
@@ -14502,7 +14502,7 @@
 { "file": "modules/guild_role_subscriptions/native/components/FormTrialIntervalPicker.tsx", "size": 2565 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildPremiumRoleSubscribeButton.tsx", "size": 1077 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModal.tsx", "size": 12311 }
-{ "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx", "size": 3689 }
+{ "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitEditorModalStateStore.tsx", "size": 3694 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitModalHeader.tsx", "size": 3596 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitPreview.tsx", "size": 6735 }
 { "file": "modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitTableRow.tsx", "size": 3581 }
@@ -14792,7 +14792,7 @@
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleCreateModalActionCreators.tsx", "size": 896 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleEdit.tsx", "size": 29587 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditConnectionConfiguration.tsx", "size": 33658 }
-{ "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditConnectionsControls.tsx", "size": 18660 }
+{ "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditConnectionsControls.tsx", "size": 18818 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditDisplay.tsx", "size": 13136 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleEditPermissions.tsx", "size": 9837 }
 { "file": "modules/guild_settings/roles/native/GuildSettingsRoleItem.tsx", "size": 13380 }
@@ -14993,9 +14993,9 @@
 { "file": "modules/guilds_bar/native/GuildsBarActivityIndicator.tsx", "size": 6812 }
 { "file": "modules/guilds_bar/native/GuildsBarAnimatedItemWrapper.tsx", "size": 18677 }
 { "file": "modules/guilds_bar/native/GuildsBarConstants.tsx", "size": 1460 }
-{ "file": "modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx", "size": 6056 }
+{ "file": "modules/guilds_bar/native/GuildsBarCreateJoinButton.tsx", "size": 6059 }
 { "file": "modules/guilds_bar/native/GuildsBarDirectMessage.tsx", "size": 5479 }
-{ "file": "modules/guilds_bar/native/GuildsBarDnDStore.tsx", "size": 8448 }
+{ "file": "modules/guilds_bar/native/GuildsBarDnDStore.tsx", "size": 8449 }
 { "file": "modules/guilds_bar/native/GuildsBarDragPreview.tsx", "size": 16922 }
 { "file": "modules/guilds_bar/native/GuildsBarFavorites.tsx", "size": 3287 }
 { "file": "modules/guilds_bar/native/GuildsBarFolderMenuItems.tsx", "size": 4621 }
@@ -15003,15 +15003,15 @@
 { "file": "modules/guilds_bar/native/GuildsBarFolderSettingsModalActionCreators.tsx", "size": 980 }
 { "file": "modules/guilds_bar/native/GuildsBarFooterWrapper.tsx", "size": 1732 }
 { "file": "modules/guilds_bar/native/GuildsBarGeoRestrictedBadge.tsx", "size": 1775 }
-{ "file": "modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx", "size": 4212 }
+{ "file": "modules/guilds_bar/native/GuildsBarGeoRestrictedGuild.tsx", "size": 4215 }
 { "file": "modules/guilds_bar/native/GuildsBarGuild.tsx", "size": 13926 }
 { "file": "modules/guilds_bar/native/GuildsBarGuildFolder.tsx", "size": 25319 }
 { "file": "modules/guilds_bar/native/GuildsBarGuildJoinRequestBadge.tsx", "size": 2563 }
 { "file": "modules/guilds_bar/native/GuildsBarItemEmptyNUX.tsx", "size": 6795 }
 { "file": "modules/guilds_bar/native/GuildsBarItemUnavailableGuilds.tsx", "size": 2570 }
-{ "file": "modules/guilds_bar/native/GuildsBarMessages.tsx", "size": 2192 }
+{ "file": "modules/guilds_bar/native/GuildsBarMessages.tsx", "size": 2200 }
 { "file": "modules/guilds_bar/native/GuildsBarPendingGuild.tsx", "size": 7197 }
-{ "file": "modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx", "size": 3594 }
+{ "file": "modules/guilds_bar/native/GuildsBarPendingGuildFolder.tsx", "size": 3592 }
 { "file": "modules/guilds_bar/native/GuildsBarSeparator.tsx", "size": 2829 }
 { "file": "modules/guilds_bar/native/GuildsBarUnreadBars.tsx", "size": 12730 }
 { "file": "modules/guilds_bar/native/hooks/useGuildsBarBadges.tsx", "size": 7166 }
@@ -15665,7 +15665,7 @@
 { "file": "modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowConstants.tsx", "size": 3416 }
 { "file": "modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCustomStatus.tsx", "size": 12342 }
 { "file": "modules/main_tabs_v2/native/shared_components/happening_now/happeningNowRankingUtils.tsx", "size": 6963 }
-{ "file": "modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowData.tsx", "size": 35857 }
+{ "file": "modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowData.tsx", "size": 35922 }
 { "file": "modules/main_tabs_v2/native/shared_components/happening_now/useHappeningNowScrollBehavior.tsx", "size": 1785 }
 { "file": "modules/main_tabs_v2/native/shared_components/happening_now/useLiveStageData.tsx", "size": 3731 }
 { "file": "modules/main_tabs_v2/native/shared_components/HeaderShared.tsx", "size": 12941 }
@@ -15957,7 +15957,7 @@
 { "file": "modules/media_uploads/UploadLimits.tsx", "size": 447 }
 { "file": "modules/media_uploads/uploadMessageAttachments.native.tsx", "size": 6013 }
 { "file": "modules/media_uploads/UploadPlatform.tsx", "size": 336 }
-{ "file": "modules/media_viewer/MediaViewerAnalyticsManager.tsx", "size": 6016 }
+{ "file": "modules/media_viewer/MediaViewerAnalyticsManager.tsx", "size": 6322 }
 { "file": "modules/media_viewer/native/components/MediaModal.tsx", "size": 13695 }
 { "file": "modules/media_viewer/native/components/MediaModalLoadingOverlay.tsx", "size": 2658 }
 { "file": "modules/media_viewer/native/components/MediaModalSheetWrapper.tsx", "size": 1514 }
@@ -16188,7 +16188,7 @@
 { "file": "modules/messages/native/renderer/resolveMessageContentColors.tsx", "size": 2963 }
 { "file": "modules/messages/native/renderer/row_data/ConnectionsRoleTag.tsx", "size": 1320 }
 { "file": "modules/messages/native/renderer/row_data/CtaButton.tsx", "size": 3280 }
-{ "file": "modules/messages/native/renderer/row_data/embeds/ActivityRichPresenceInviteEmbed.tsx", "size": 30727 }
+{ "file": "modules/messages/native/renderer/row_data/embeds/ActivityRichPresenceInviteEmbed.tsx", "size": 31289 }
 { "file": "modules/messages/native/renderer/row_data/embeds/coded_links/BuildOverrideEmbed.tsx", "size": 6149 }
 { "file": "modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinks.tsx", "size": 10836 }
 { "file": "modules/messages/native/renderer/row_data/embeds/coded_links/CodedLinksConstants.tsx", "size": 786 }
@@ -17617,7 +17617,7 @@
 { "file": "modules/roblox_subgame_detection/RobloxSubgamePlatformUtils.native.tsx", "size": 899 }
 { "file": "modules/roblox_subgame_detection/RobloxSubgameTypes.tsx", "size": 1488 }
 { "file": "modules/roblox_subgame_detection/RobloxSubgameUtils.tsx", "size": 7665 }
-{ "file": "modules/roles/native/RoleIcon.tsx", "size": 1395 }
+{ "file": "modules/roles/native/RoleIcon.tsx", "size": 1387 }
 { "file": "modules/roles/native/RoleName.tsx", "size": 3026 }
 { "file": "modules/roles/useRoleIconProps.tsx", "size": 5039 }
 { "file": "modules/routing/convertRouteToNavigation.native.tsx", "size": 7725 }
@@ -18554,7 +18554,7 @@
 { "file": "modules/user_profile/experiments/UserProfilePremiumTryItOutMobileRefreshExperiment.tsx", "size": 1020 }
 { "file": "modules/user_profile/experiments/UserProfileRecentActivityMobileExperiment.tsx", "size": 848 }
 { "file": "modules/user_profile/experiments/UserProfileWYSIWYGEditingExperiment.tsx", "size": 1048 }
-{ "file": "modules/user_profile/hooks/native/useCardGridLayout.tsx", "size": 2178 }
+{ "file": "modules/user_profile/hooks/native/useCardGridLayout.tsx", "size": 2188 }
 { "file": "modules/user_profile/hooks/native/useOpenChangeAvatarActionSheet.tsx", "size": 3544 }
 { "file": "modules/user_profile/hooks/native/useOpenChangeBannerActionSheet.tsx", "size": 2369 }
 { "file": "modules/user_profile/hooks/native/useOpenThemeColorPickerActionSheet.tsx", "size": 2110 }
@@ -19533,7 +19533,7 @@
 { "file": "modules/virtual_currency/OrbChallengeTypes.tsx", "size": 482 }
 { "file": "modules/virtual_currency/shared/AnimationUtils.tsx", "size": 1009 }
 { "file": "modules/virtual_currency/stores/OrbChallengeActionCreators.tsx", "size": 5075 }
-{ "file": "modules/virtual_currency/stores/OrbChallengesStore.tsx", "size": 13069 }
+{ "file": "modules/virtual_currency/stores/OrbChallengesStore.tsx", "size": 13045 }
 { "file": "modules/virtual_currency/stores/VirtualCurrencyStore.tsx", "size": 7680 }
 { "file": "modules/virtual_currency/types.tsx", "size": 396 }
 { "file": "modules/virtual_currency/VirtualCurrencyActionCreators.tsx", "size": 9895 }
@@ -19619,7 +19619,7 @@
 { "file": "modules/voice_messages/native/components/VoiceMessageOverlay.tsx", "size": 42443 }
 { "file": "modules/voice_messages/native/useVoiceMessageTooltip.tsx", "size": 2159 }
 { "file": "modules/voice_messages/native/VoiceMessagesPlaybackManager.tsx", "size": 4432 }
-{ "file": "modules/voice_messages/native/VoiceMessagesUIStore.tsx", "size": 5444 }
+{ "file": "modules/voice_messages/native/VoiceMessagesUIStore.tsx", "size": 5006 }
 { "file": "modules/voice_messages/native/VoiceMessageUtils.tsx", "size": 12520 }
 { "file": "modules/voice_messages/VoiceMessageAnalytics.tsx", "size": 2331 }
 { "file": "modules/voice_messages/VoiceMessageConstants.tsx", "size": 951 }
@@ -19757,7 +19757,7 @@
 { "file": "modules/voice_panel/native/utils/triggerIOSHaptic.tsx", "size": 664 }
 { "file": "modules/voice_panel/native/utils/useIsVoicePanelParticipantFocusable.tsx", "size": 3260 }
 { "file": "modules/voice_panel/native/utils/useSelfHasVideo.tsx", "size": 1138 }
-{ "file": "modules/voice_panel/native/utils/useStableParticipant.tsx", "size": 6601 }
+{ "file": "modules/voice_panel/native/utils/useStableParticipant.tsx", "size": 6596 }
 { "file": "modules/voice_panel/native/utils/VoicePanelControlsUtils.tsx", "size": 2141 }
 { "file": "modules/voice_panel/native/utils/VoiceStateIconUtils.tsx", "size": 5078 }
 { "file": "modules/voice_panel/native/voiceChannelAppLayerLayout.tsx", "size": 2647 }
@@ -19979,7 +19979,7 @@
 { "file": "stores/PresenceStore.tsx", "size": 24280 }
 { "file": "stores/PrivateChannelReadStateStore.tsx", "size": 6766 }
 { "file": "stores/PrivateChannelRecipientsInviteStore.tsx", "size": 11737 }
-{ "file": "stores/ReadStateStore.tsx", "size": 148167 }
+{ "file": "stores/ReadStateStore.tsx", "size": 148158 }
 { "file": "stores/RegionStore.tsx", "size": 2600 }
 { "file": "stores/RelationshipStore.tsx", "size": 19538 }
 { "file": "stores/RTCConnectionDesyncStore.tsx", "size": 7644 }
@@ -20031,7 +20031,7 @@
 { "file": "utils/callOnce.tsx", "size": 608 }
 { "file": "utils/ChangeLogUtils.tsx", "size": 7274 }
 { "file": "utils/ChannelUtils.tsx", "size": 20812 }
-{ "file": "utils/ChatRestrictions.tsx", "size": 2683 }
+{ "file": "utils/ChatRestrictions.tsx", "size": 2688 }
 { "file": "utils/checkEnv.tsx", "size": 4781 }
 { "file": "utils/ClipboardUtils.native.tsx", "size": 2112 }
 { "file": "utils/Color.tsx", "size": 9215 }
