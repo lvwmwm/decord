@@ -1,10 +1,10 @@
-// Module ID: 18504
-// Function ID: 18505
+// Module ID: 18518
+// Function ID: 18519
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 4997, 21, 5141, 575, 7502, 7457, 1187, 14603, 1113, 8317, 18399, 11162, 2]
+// Dependencies: [19, 17, 4997, 21, 5141, 575, 7502, 7457, 1187, 14604, 1113, 8317, 18413, 11162, 2]
 // Exports: default
 
-// Module 18504 (GuildRoleSubscriptionsChannelLongPressActionSheet)
+// Module 18518 (GuildRoleSubscriptionsChannelLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -14,8 +14,8 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7457 */;
 import ActionSheet2 from "ActionSheet" /* 7502 */;
 import _mod8317 from "module_8317" /* 8317 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 11162 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14603 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18399 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14604 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18413 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

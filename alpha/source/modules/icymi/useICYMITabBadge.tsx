@@ -1,10 +1,10 @@
-// Module ID: 18722
-// Function ID: 18723
+// Module ID: 18736
+// Function ID: 18737
 // Name: useICYMITabBadge
 // Dependencies: [9047, 504, 2]
 // Exports: default, icymiTabBadgeShown
 
-// Module 18722 (useICYMITabBadge)
+// Module 18736 (useICYMITabBadge)
 import get_initialized from "get initialized" /* 504 */;
 import ICYMIStore from "ICYMIStore" /* 9047 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 12451
-// Function ID: 12452
+// Module ID: 12452
+// Function ID: 12453
 // Name: FrameRenderTarget
-// Dependencies: [19, 17, 21, 5141, 12452, 12453, 8119, 2]
+// Dependencies: [19, 17, 21, 5141, 12453, 12454, 8119, 2]
 // Exports: default
 
-// Module 12451 (FrameRenderTarget)
-import FramePoolManagerDefault from "FramePoolManager" /* 12453 */;
+// Module 12452 (FrameRenderTarget)
+import FramePoolManagerDefault from "FramePoolManager" /* 12454 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -45,7 +45,7 @@ export default function FrameRenderTarget(frameId) {
   const landscapeSafeAreasConfig = presentation.landscapeSafeAreasConfig;
   const items = [layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig];
   const memo = react.useMemo(() => ({ layoutMode, portraitSafeAreasConfig, landscapeSafeAreasConfig }), items);
-  const tmp4 = webViewKey(12452)(frameId, level, memo);
+  const tmp4 = webViewKey(12453)(frameId, level, memo);
   webViewKey = tmp4.webViewKey;
   const temporaryParentNodeTag = tmp4.temporaryParentNodeTag;
   if (null == webViewKey) {

@@ -1,10 +1,10 @@
-// Module ID: 13403
-// Function ID: 13404
+// Module ID: 13404
+// Function ID: 13405
 // Name: openChannelCallModalForChannelId
 // Dependencies: [4990, 8090, 8079, 2]
 // Exports: default
 
-// Module 13403 (openChannelCallModalForChannelId)
+// Module 13404 (openChannelCallModalForChannelId)
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8079 */;
 import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8090 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

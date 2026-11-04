@@ -1,10 +1,10 @@
-// Module ID: 20049
-// Function ID: 20050
+// Module ID: 20063
+// Function ID: 20064
 // Name: AddMembersActionSheet
-// Dependencies: [32, 19, 17, 20043, 21, 5141, 575, 5208, 10997, 7130, 5743, 5790, 1187, 5150, 1113, 7430, 9207, 7036, 20048, 11, 9212, 7622, 5396, 7457, 5768, 9219, 5382, 5761, 2]
+// Dependencies: [32, 19, 17, 20057, 21, 5141, 575, 5208, 10997, 7130, 5743, 5790, 1187, 5150, 1113, 7430, 9207, 7036, 20062, 11, 9212, 7622, 5396, 7457, 5768, 9219, 5382, 5761, 2]
 // Exports: default
 
-// Module 20049 (AddMembersActionSheet)
+// Module 20063 (AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,8 +17,8 @@ import GuildUtilsDefault from "GuildUtils" /* 7036 */;
 import FormCheckbox from "FormCheckbox" /* 7130 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10997 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20043 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20048 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20057 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 20062 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

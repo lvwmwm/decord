@@ -1,17 +1,17 @@
-// Module ID: 16985
-// Function ID: 16986
+// Module ID: 16997
+// Function ID: 16998
 // Name: SyncContactsNameSetting
-// Dependencies: [8573, 1072, 1252, 6879, 16984, 2123, 14462, 11728, 1113, 2]
+// Dependencies: [8573, 1072, 1252, 6879, 16996, 2123, 14463, 11729, 1113, 2]
 
-// Module 16985 (SyncContactsNameSetting)
+// Module 16997 (SyncContactsNameSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14462 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14463 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -26,7 +26,7 @@ let obj = {
     const obj = AnalyticsUtilsDefault;
     obj.track(AnalyticEvents.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(16984, dependencyMap.paths), "Contact Sync Name Update Modal");
+    obj2.pushLazy(asyncRequire(16996, dependencyMap.paths), "Contact Sync Name Update Modal");
   },
   withArrow: true,
   usePredicate: function useHasContactSyncAccount() {

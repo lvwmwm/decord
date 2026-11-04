@@ -1,10 +1,10 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13478
+// Function ID: 13479
 // Name: GuildAntiRaidActionCreators
 // Dependencies: [5, 5012, 8624, 1072, 1252, 5894, 9219, 2171, 1282, 11208, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 13477 (GuildAntiRaidActionCreators)
+// Module 13478 (GuildAntiRaidActionCreators)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _modDef2171 from "module_2171" /* 2171 */;

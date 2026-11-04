@@ -1,10 +1,10 @@
-// Module ID: 11537
-// Function ID: 11538
+// Module ID: 11538
+// Function ID: 11539
 // Name: ForumPostReactions
 // Dependencies: [19, 17, 21, 5141, 11332, 10017, 11318, 2]
 // Exports: ForumPostActionBarReactions, MaxForumPostReactions, MostCommonForumPostReaction
 
-// Module 11537 (ForumPostReactions)
+// Module 11538 (ForumPostReactions)
 import react_native from "react-native" /* 17 */;
 import ForumHooks from "ForumHooks" /* 10017 */;
 import useReactionPermissionsDefault from "useReactionPermissions" /* 11332 */;

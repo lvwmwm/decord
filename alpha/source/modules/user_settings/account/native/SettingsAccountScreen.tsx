@@ -1,9 +1,9 @@
-// Module ID: 16815
-// Function ID: 16816
+// Module ID: 16827
+// Function ID: 16828
 // Name: SettingsAccountScreen
-// Dependencies: [32, 19, 17, 16816, 8573, 1072, 21, 5141, 575, 1499, 7118, 5851, 16817, 5761, 1113, 5768, 504, 16818, 7264, 6883, 7201, 16819, 11728, 16820, 16823, 5729, 13534, 2]
+// Dependencies: [32, 19, 17, 16828, 8573, 1072, 21, 5141, 575, 1499, 7118, 5851, 16829, 5761, 1113, 5768, 504, 16830, 7264, 6883, 7201, 16831, 11729, 16832, 16835, 5729, 13535, 2]
 
-// Module 16815 (SettingsAccountScreen)
+// Module 16827 (SettingsAccountScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,13 +14,13 @@ import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6883 */;
 import TableRowGroup from "TableRowGroup" /* 7201 */;
 import MFAUtils from "MFAUtils" /* 7264 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13534 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16819 */;
-import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16820 */;
-import SettingLayoutDefault from "SettingLayout" /* 16823 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 13535 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16831 */;
+import SettingsAccountHeaderDefault from "SettingsAccountHeader" /* 16832 */;
+import SettingLayoutDefault from "SettingLayout" /* 16835 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 16816 */;
+import WebAuthnStore from "WebAuthnStore" /* 16828 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -95,7 +95,7 @@ function AccountTwoFALabel() {
   }), 2);
   first = tmp3[0];
   let closure_1 = tmp5;
-  const obj2 = first(16818);
+  const obj2 = first(16830);
   const isUserVerified = obj2.useIsUserVerified();
   const items1 = [tmp3[1], first, isUserVerified];
   const memo = react.useMemo(() => {

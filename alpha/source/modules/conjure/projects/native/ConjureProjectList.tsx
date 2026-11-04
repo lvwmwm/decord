@@ -1,10 +1,10 @@
-// Module ID: 13202
-// Function ID: 13203
+// Module ID: 13203
+// Function ID: 13204
 // Name: ConjureProjectList
-// Dependencies: [19, 17, 1231, 6979, 21, 5141, 575, 1627, 1499, 13203, 13206, 12282, 5382, 13207, 11026, 12422, 11057, 12413, 12324, 7500, 7146, 11672, 1113, 5761, 3995, 5768, 11054, 13222, 7201, 7116, 13224, 11056, 504, 6995, 12319, 13232, 12435, 9906, 2]
+// Dependencies: [19, 17, 1231, 6979, 21, 5141, 575, 1627, 1499, 13204, 13207, 12283, 5382, 13208, 11026, 12423, 11057, 12414, 12325, 7500, 7146, 11673, 1113, 5761, 3995, 5768, 11054, 13223, 7201, 7116, 13225, 11056, 504, 6995, 12320, 13233, 12436, 9906, 2]
 // Exports: default
 
-// Module 13202 (ConjureProjectList)
+// Module 13203 (ConjureProjectList)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
@@ -13,12 +13,12 @@ import Text_Text from "Text/Text" /* 5761 */;
 import TableRowGroup2 from "TableRowGroup" /* 7201 */;
 import ConjureRemixSheet from "ConjureRemixSheet" /* 11026 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 11054 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12282 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12319 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12324 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 12435 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 13207 */;
-import openConjureProjectsSheet from "openConjureProjectsSheet" /* 13224 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 12283 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12320 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12325 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 12436 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 13208 */;
+import openConjureProjectsSheet from "openConjureProjectsSheet" /* 13225 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -87,7 +87,7 @@ function ProjectRow(project) {
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { value: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(13232), obj6);
+      tmp14Result3 = tmp14(tmp18(13233), obj6);
     }
     items2 = [tmp14Result3, ];
     const obj7 = { IconComponent: project(9906).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1113).t["UKOtz+"]) };

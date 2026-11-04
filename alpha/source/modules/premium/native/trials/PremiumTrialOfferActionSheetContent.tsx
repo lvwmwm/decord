@@ -1,9 +1,9 @@
-// Module ID: 17935
-// Function ID: 17936
+// Module ID: 17947
+// Function ID: 17948
 // Name: PremiumTrialOfferActionSheetContent
-// Dependencies: [19, 17, 1387, 21, 5141, 12322, 1113, 14825, 8787, 5202, 2176, 17936, 5761, 17940, 5768, 9675, 575, 2]
+// Dependencies: [19, 17, 1387, 21, 5141, 12323, 1113, 14826, 8787, 5202, 2176, 17948, 5761, 17952, 5768, 9675, 575, 2]
 
-// Module 17935 (PremiumTrialOfferActionSheetContent)
+// Module 17947 (PremiumTrialOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -12,10 +12,10 @@ import PremiumUtils from "PremiumUtils" /* 2176 */;
 import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5202 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import FolderIcon from "FolderIcon" /* 8787 */;
-import UserIcon from "UserIcon" /* 12322 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14825 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17936 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 17940 */;
+import UserIcon from "UserIcon" /* 12323 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14826 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17948 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 17952 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

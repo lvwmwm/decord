@@ -1,26 +1,26 @@
-// Module ID: 18286
-// Function ID: 18287
+// Module ID: 18300
+// Function ID: 18301
 // Name: BellSpotIllustration
-// Dependencies: [19, 21, 18287, 18288, 18289, 7210, 5851, 2]
+// Dependencies: [19, 21, 18301, 18302, 18303, 7210, 5851, 2]
 // Exports: BellSpotIllustration
 
-// Module 18286 (BellSpotIllustration)
+// Module 18300 (BellSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7210 */;
-import _modDef18287 from "module_18287" /* 18287 */;
-import _modDef18288 from "module_18288" /* 18288 */;
-import _modDef18289 from "module_18289" /* 18289 */;
+import _modDef18301 from "module_18301" /* 18301 */;
+import _modDef18302 from "module_18302" /* 18302 */;
+import _modDef18303 from "module_18303" /* 18303 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef18287 };
+let obj2 = { uri: _modDef18301 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef18288 };
+let obj3 = { uri: _modDef18302 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef18289 };
-({ uri: _modDef18289 });
+obj[3] = { uri: _modDef18303 };
+({ uri: _modDef18303 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BellSpotIllustration.native.tsx");
 

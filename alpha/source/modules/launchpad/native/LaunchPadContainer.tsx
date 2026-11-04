@@ -1,20 +1,20 @@
-// Module ID: 19326
-// Function ID: 19327
+// Module ID: 19340
+// Function ID: 19341
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 11724, 21, 5141, 11725, 19327, 19329, 13032, 1652, 5771, 5328, 18299, 5428, 19330, 2]
+// Dependencies: [19, 17, 11725, 21, 5141, 11726, 19341, 19343, 13033, 1652, 5771, 5328, 18313, 5428, 19344, 2]
 // Exports: default
 
-// Module 19326 (LaunchPadContainer)
+// Module 19340 (LaunchPadContainer)
 import _mod1652 from "module_1652" /* 1652 */;
 import spring_spring from "spring/spring" /* 5771 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11725 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13032 */;
-import useLaunchPadStateDefault from "useLaunchPadState" /* 19327 */;
-import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19329 */;
-import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19330 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11726 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13033 */;
+import useLaunchPadStateDefault from "useLaunchPadState" /* 19341 */;
+import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19343 */;
+import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19344 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11724 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11725 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -151,7 +151,7 @@ export default function LaunchPadContainer(children) {
   const MobileHomeDrawerExperiment = tmp8(5328).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
   let obj2 = { value: gestureRef, children: metroRequire(GestureDetector, obj3) };
-  const Provider = tmp2(18299).Provider;
+  const Provider = tmp2(18313).Provider;
   obj3 = { gesture, children: tmp23(tmp24, obj4) };
   obj4 = { style: tmp.wrapper, children: items7 };
   GestureDetector = tmp8(5428).GestureDetector;

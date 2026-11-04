@@ -1,18 +1,18 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15380
+// Function ID: 15381
 // Name: SafetyPolicyNoticeEmbed
-// Dependencies: [17, 1072, 8110, 1113, 8537, 8167, 15380, 15381, 2]
+// Dependencies: [17, 1072, 8110, 1113, 8537, 8167, 15381, 15382, 2]
 // Exports: createSafetyPolicyNoticeEmbed
 
-// Module 15379 (SafetyPolicyNoticeEmbed)
+// Module 15380 (SafetyPolicyNoticeEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 8110 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8167 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8537 */;
-import SafetyWarningAgeUtils from "SafetyWarningAgeUtils" /* 15380 */;
-import SafetyWarningAgeTextExperiment from "SafetyWarningAgeTextExperiment" /* 15381 */;
+import SafetyWarningAgeUtils from "SafetyWarningAgeUtils" /* 15381 */;
+import SafetyWarningAgeTextExperiment from "SafetyWarningAgeTextExperiment" /* 15382 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;

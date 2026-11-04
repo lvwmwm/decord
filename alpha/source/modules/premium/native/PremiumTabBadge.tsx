@@ -1,10 +1,10 @@
-// Module ID: 17118
-// Function ID: 17119
+// Module ID: 17130
+// Function ID: 17131
 // Name: PremiumTabBadge
-// Dependencies: [32, 19, 17, 2181, 1387, 7757, 21, 5141, 575, 5148, 5377, 5761, 6163, 1260, 10787, 1187, 17119, 7767, 8669, 2176, 5171, 4974, 504, 7709, 8665, 8664, 15535, 17120, 1113, 5723, 1092, 1377, 2]
+// Dependencies: [32, 19, 17, 2181, 1387, 7757, 21, 5141, 575, 5148, 5377, 5761, 6163, 1260, 10788, 1187, 17131, 7767, 8669, 2176, 5171, 4974, 504, 7709, 8665, 8664, 15536, 17132, 1113, 5723, 1092, 1377, 2]
 // Exports: default
 
-// Module 17118 (PremiumTabBadge)
+// Module 17130 (PremiumTabBadge)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -28,9 +28,9 @@ import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7767 */;
 import ReferralProgramUtils from "ReferralProgramUtils" /* 8664 */;
 import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8665 */;
 import usePremiumDiscountOffer from "usePremiumDiscountOffer" /* 8669 */;
-import MarketingComponentType from "MarketingComponentType" /* 10787 */;
-import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15535 */;
-import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 17120 */;
+import MarketingComponentType from "MarketingComponentType" /* 10788 */;
+import usePromotionMarketingComponent from "usePromotionMarketingComponent" /* 15536 */;
+import PremiumTabBadgeCopy from "PremiumTabBadgeCopy" /* 17132 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SubscriptionStore from "SubscriptionStore" /* 2181 */;
@@ -49,7 +49,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp2;
-const AssetRegistryDefault = tmp2(17119);
+const AssetRegistryDefault = tmp2(17131);
 function ThemedTabBadge(label) {
   let Text;
   let items1;
@@ -182,7 +182,7 @@ export default function PremiumTabBadge() {
       const tmp2Result13 = ReferralProgramUtils;
       const isReferralProgramEntrypointBadgeAcknowledged = tmp2Result13.useIsReferralProgramEntrypointBadgeAcknowledged();
       const tmp2Result14 = usePromotionMarketingComponent;
-      const promotionMarketingComponent = tmp2Result14.usePromotionMarketingComponent(tmp2(10787).MarketingComponentType.PREMIUM_TAB);
+      const promotionMarketingComponent = tmp2Result14.usePromotionMarketingComponent(tmp2(10788).MarketingComponentType.PREMIUM_TAB);
       let prop = null;
       const useSelectedSnowflakeBoundDismissibleContent = useSelectedDismissibleContent.useSelectedSnowflakeBoundDismissibleContent;
       const tmp2Result15 = useSelectedDismissibleContent;

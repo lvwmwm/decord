@@ -1,23 +1,23 @@
 // Module ID: 13104
 // Function ID: 13105
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055]
 
 // Module 13104 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import tokenize from "tokenize" /* 13055 */;
 
-const CDO = tokenize.TYPE.CDO;
+const CDC = tokenize.TYPE.CDC;
 let obj = {
-  name: "CDO",
+  name: "CDC",
   structure: [],
   parse() {
     const tokenStart = this.scanner.tokenStart;
-    this.eat(CDO);
-    const obj = { type: "CDO", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
+    this.eat(CDC);
+    const obj = { type: "CDC", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
     return obj;
   },
   generate() {
-    this.chunk("<!--");
+    this.chunk("-->");
   }
 };
 

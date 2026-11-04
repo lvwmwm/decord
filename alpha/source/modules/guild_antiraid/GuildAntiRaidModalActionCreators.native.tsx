@@ -1,10 +1,10 @@
-// Module ID: 16027
-// Function ID: 16028
+// Module ID: 16040
+// Function ID: 16041
 // Name: GuildAntiRaidModalActionCreators
-// Dependencies: [8624, 6879, 16028, 2123, 2]
+// Dependencies: [8624, 6879, 16041, 2123, 2]
 // Exports: openReportRaidModal
 
-// Module 16027 (GuildAntiRaidModalActionCreators)
+// Module 16040 (GuildAntiRaidModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import GuildAntiRaidConstants from "GuildAntiRaidConstants" /* 8624 */;
@@ -22,5 +22,5 @@ export function openReportRaidModal(id) {
     },
     guildId: id
   };
-  obj.pushLazy(asyncRequire(16028, dependencyMap.paths), obj2, closure_3);
+  obj.pushLazy(asyncRequire(16041, dependencyMap.paths), obj2, closure_3);
 }

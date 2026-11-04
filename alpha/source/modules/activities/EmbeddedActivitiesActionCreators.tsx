@@ -1,10 +1,10 @@
-// Module ID: 11922
-// Function ID: 11923
+// Module ID: 11923
+// Function ID: 11924
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 9912, 2167, 6978, 8042, 502, 4990, 5012, 5073, 1385, 5813, 4989, 2147, 1072, 1362, 4987, 11923, 10493, 11114, 11924, 11925, 11929, 11930, 572, 11064, 11065, 11931, 11069, 6582, 6204, 2153, 5809, 9106, 11932, 2121, 11933, 11935, 10488, 1252, 11936, 11944, 6869, 11945, 6093, 1113, 5812, 11946, 1260, 6882, 5062, 6986, 5893, 1282, 9091, 8020, 7776, 7625, 7964, 4975, 4974, 2]
+// Dependencies: [32, 5, 9912, 2167, 6978, 8042, 502, 4990, 5012, 5073, 1385, 5813, 4989, 2147, 1072, 1362, 4987, 11924, 10493, 11114, 11925, 11926, 11930, 11931, 572, 11064, 11065, 11932, 11069, 6582, 6204, 2153, 5809, 9106, 11933, 2121, 11934, 11936, 10488, 1252, 11937, 11945, 6869, 11946, 6093, 1113, 5812, 11947, 1260, 6882, 5062, 6986, 5893, 1282, 9091, 8020, 7776, 7625, 7964, 4975, 4974, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 11922 (EmbeddedActivitiesActionCreators)
+// Module 11923 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
@@ -153,7 +153,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
               PRIVATE_CHANNEL = undefined;
               c16 = 1;
               c17 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c16) {
             if (arg0 === 1) {
@@ -514,7 +514,7 @@ obj = function _maybeSendPrimaryAppCommand() {
               user = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -834,7 +834,7 @@ obj = function _joinEmbeddedActivity() {
             obj33 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -1192,25 +1192,88 @@ obj = function _uploadImageAttachment() {
   return obj(...arguments);
 };
 obj = function _sendEmbeddedActivityInvite() {
-  obj = _asyncToGenerator(async (arg0) => {
+  obj = _asyncToGenerator(async (arg0, value) => {
     let c0;
     let c1;
     let c2;
     let c3;
     let c4;
-    let closure_1;
     let closure_0 = arg0;
-    const obj5 = { target_type: closure_130_0(closure_130_2[55]).InviteTargetTypes.EMBEDDED_APPLICATION, target_application_id };
-    const createInvite = closure_130_1(closure_130_2[54]).createInvite;
-    const tmp29 = closure_130_1(closure_130_2[54]);
-    const code = await createInvite(c0, obj5, c3);
-    if (null != closure_130_10.getChannel(c1)) {
-      obj = closure_130_1(closure_130_2[56]);
-      obj.sendInvite(c1, code.code, c3, c4);
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let target_application_id;
+        let code;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_2 = tmp4;
+            let closure_1 = tmp;
+            c0 = undefined;
+            c1 = undefined;
+            target_application_id = undefined;
+            ({ activityChannelId: c0, invitedChannelId: c1, applicationId: c2, location: c3, inviteAnalyticsMetadata: c4 } = closure_0);
+            code = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "flexDirection", done: null };
+          }
+        } else if (1 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            const obj5 = { target_type: closure_130_0(closure_130_2[55]).InviteTargetTypes.EMBEDDED_APPLICATION, target_application_id };
+            const createInvite = closure_130_1(closure_130_2[54]).createInvite;
+            const tmp29 = closure_130_1(closure_130_2[54]);
+            c3 = 2;
+            c4 = 1;
+            const obj6 = { value: createInvite(c0, obj5, c3), done: false };
+            return obj6;
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } else {
+          code = value;
+          if (null != closure_130_10.getChannel(c1)) {
+            obj = closure_130_1(closure_130_2[56]);
+            obj.sendInvite(c1, code.code, c3, c4);
+          }
+          c4 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp21) {
+        c4 = 3;
+        throw tmp21;
+      }
     }
-    await "HermesInternal";
-    ({ activityChannelId: c0, invitedChannelId: c1, applicationId: c2, location: c3, inviteAnalyticsMetadata: c4 } = closure_0);
-    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -1266,7 +1329,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
             content = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

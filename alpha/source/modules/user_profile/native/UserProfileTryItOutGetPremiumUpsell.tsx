@@ -1,15 +1,15 @@
-// Module ID: 16789
-// Function ID: 16790
+// Module ID: 16801
+// Function ID: 16802
 // Name: UserProfileTryItOutGetPremiumUpsell
-// Dependencies: [19, 1072, 21, 7766, 7462, 10084, 10085, 16786, 1113, 2]
+// Dependencies: [19, 1072, 21, 7766, 7462, 10084, 10085, 16798, 1113, 2]
 // Exports: default
 
-// Module 16789 (UserProfileTryItOutGetPremiumUpsell)
+// Module 16801 (UserProfileTryItOutGetPremiumUpsell)
 import Fragment from "Fragment" /* 21 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7462 */;
 import openPremiumModalDefault from "openPremiumModal" /* 10084 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10085 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16786 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16798 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

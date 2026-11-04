@@ -1,11 +1,11 @@
-// Module ID: 12869
-// Function ID: 12870
+// Module ID: 12870
+// Function ID: 12871
 // Name: useConjureProjectEventLine
-// Dependencies: [19, 5012, 1385, 12853, 504, 5195, 12870, 1113, 3995, 2]
+// Dependencies: [19, 5012, 1385, 12854, 504, 5195, 12871, 1113, 3995, 2]
 // Exports: default
 
-// Module 12869 (useConjureProjectEventLine)
-import conjureMessageAuthors from "conjureMessageAuthors" /* 12853 */;
+// Module 12870 (useConjureProjectEventLine)
+import conjureMessageAuthors from "conjureMessageAuthors" /* 12854 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -119,18 +119,18 @@ export default function useConjureProjectEventLine(arg0, actor_user_id, arg2) {
     return formatResult2;
   } else if ("app_channel_deleted" === type) {
     let formatResult3;
-    let str2 = actor_user_id.channel_name;
-    if (str2 == null) {
-      str2 = "";
+    let str3 = actor_user_id.channel_name;
+    if (str3 == null) {
+      str3 = "";
     }
     if (null == tmp9) {
       const intl5 = tmp2(tmp3[7]).intl;
-      const obj11 = { channel: str2, server: stateFromStores1 };
+      const obj11 = { channel: str3, server: stateFromStores1 };
       formatResult3 = intl5.format(tmp6(tmp3[8])["4VQfid"], obj11);
     } else {
       const intl4 = tmp2(tmp3[7]).intl;
       const format = intl4.format;
-      const obj12 = { channel: str2, server: stateFromStores1 };
+      const obj12 = { channel: str3, server: stateFromStores1 };
       const RlMIJN = tmp6(tmp3[8]).RlMIJN;
       const merged3 = Object.assign(tmp9);
       formatResult3 = format(RlMIJN, obj12);
@@ -143,5 +143,7 @@ export default function useConjureProjectEventLine(arg0, actor_user_id, arg2) {
   } else if ("voice_channel_pin" === type) {
     const intl2 = tmp2(tmp3[7]).intl;
     return intl2.string(require("module_3995").UGAfl9);
+  } else {
+    return "staff_notice" === type ? actor_user_id.message : undefined;
   }
 };

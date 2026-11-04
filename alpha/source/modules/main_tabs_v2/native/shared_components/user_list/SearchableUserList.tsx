@@ -1,7 +1,7 @@
 // Module ID: 10906
 // Function ID: 10907
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1385, 10905, 21, 5141, 575, 10907, 1380, 10908, 5148, 1113, 10909, 10911, 13623, 10914, 9207, 2]
+// Dependencies: [32, 19, 17, 1385, 10905, 21, 5141, 575, 10907, 1380, 10908, 5148, 1113, 10909, 10911, 13624, 10914, 9207, 2]
 // Exports: default
 
 // Module 10906 (SearchableUserList)
@@ -29,7 +29,7 @@ const View = react_native.View;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { searchBarContainer: obj2, searchBar: { height: "sa", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
+let obj = { searchBarContainer: obj2, searchBar: { height: "dispatch", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8 };

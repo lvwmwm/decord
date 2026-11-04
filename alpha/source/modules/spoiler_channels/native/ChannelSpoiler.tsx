@@ -1,10 +1,10 @@
-// Module ID: 11407
-// Function ID: 11408
+// Module ID: 11408
+// Function ID: 11409
 // Name: ChannelSpoiler
-// Dependencies: [32, 19, 17, 6978, 4990, 5012, 11408, 21, 5141, 575, 504, 5786, 11409, 5893, 7037, 5323, 8744, 5761, 1113, 6162, 5888, 7121, 11406, 6864, 2]
+// Dependencies: [32, 19, 17, 6978, 4990, 5012, 11409, 21, 5141, 575, 504, 5786, 11410, 5893, 7037, 5323, 8744, 5761, 1113, 6162, 5888, 7121, 11407, 6864, 2]
 // Exports: default
 
-// Module 11407 (ChannelSpoiler)
+// Module 11408 (ChannelSpoiler)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import RootNavigationRef from "RootNavigationRef" /* 5323 */;
@@ -12,8 +12,8 @@ import useChannelNameDefault from "useChannelName" /* 5786 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5888 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
-import GatedContentDefault from "GatedContent" /* 11406 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11408 */;
+import GatedContentDefault from "GatedContent" /* 11407 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11409 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
@@ -75,7 +75,7 @@ export default function ChannelSpoiler(channelId) {
     isVocalResult = stateFromStores1.isVocal();
   }
   dependencyMap = isVocalResult;
-  setControlsMode = obj4.useContext(tmp7(11409)).setControlsMode;
+  setControlsMode = obj4.useContext(tmp7(11410)).setControlsMode;
   const items2 = [, , , ];
   ({ guildId: arr3[0], channelId: arr3[1] } = channelId);
   items2[2] = setControlsMode;

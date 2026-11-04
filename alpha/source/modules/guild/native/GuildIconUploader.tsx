@@ -1,9 +1,9 @@
-// Module ID: 13444
-// Function ID: 13445
+// Module ID: 13445
+// Function ID: 13446
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1192, 21, 5141, 575, 5207, 5851, 5148, 13445, 13446, 5761, 1113, 13447, 13448, 7121, 2]
+// Dependencies: [19, 17, 1192, 21, 5141, 575, 5207, 5851, 5148, 13446, 13447, 5761, 1113, 13448, 13449, 7121, 2]
 
-// Module 13444 (GuildIconUploader)
+// Module 13445 (GuildIconUploader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -11,8 +11,8 @@ import shared from "shared" /* 5148 */;
 import native from "native" /* 5207 */;
 import FastImageDefault from "FastImage" /* 5851 */;
 import Pressables from "Pressables" /* 7121 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13447 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13448 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13448 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13449 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
@@ -61,9 +61,9 @@ class GuildIconUploader extends PureComponent {
       const tmp7 = metroRequire;
       const tmp8 = View;
       if (obj6.isThemeDark(ThemeStore.theme)) {
-        tmp10Result = tmp10(13445);
-      } else {
         tmp10Result = tmp10(13446);
+      } else {
+        tmp10Result = tmp10(13447);
       }
       const obj = { source: tmp10Result };
       items2 = [hasOwnProperty(tmp12, obj), ];

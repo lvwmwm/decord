@@ -1,9 +1,9 @@
-// Module ID: 19452
-// Function ID: 19453
+// Module ID: 19466
+// Function ID: 19467
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 19435, 1385, 1072, 21, 5141, 575, 7658, 7098, 1113, 10449, 5874, 19450, 9524, 7121, 1187, 8808, 5428, 5384, 5385, 504, 2176, 10152, 1627, 5338, 8959, 7430, 2]
+// Dependencies: [19, 17, 19449, 1385, 1072, 21, 5141, 575, 7658, 7098, 1113, 10449, 5874, 19464, 9524, 7121, 1187, 8808, 5428, 5384, 5385, 504, 2176, 10152, 1627, 5338, 8959, 7430, 2]
 
-// Module 19452 (SoundboardSoundPickerCategories)
+// Module 19466 (SoundboardSoundPickerCategories)
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5384 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5385 */;
@@ -13,8 +13,8 @@ import SoundboardTypes from "SoundboardTypes" /* 7658 */;
 import LockIcon from "LockIcon" /* 8808 */;
 import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10152 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10449 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 19435 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19450 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 19449 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19464 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;

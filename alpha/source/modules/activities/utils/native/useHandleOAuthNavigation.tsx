@@ -1,10 +1,10 @@
-// Module ID: 19392
-// Function ID: 19393
+// Module ID: 19406
+// Function ID: 19407
 // Name: useHandleOAuthNavigation
 // Dependencies: [19, 1072, 11089, 6879, 11084, 2123, 1108, 2]
 // Exports: default
 
-// Module 19392 (useHandleOAuthNavigation)
+// Module 19406 (useHandleOAuthNavigation)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import Constants2 from "Constants" /* 11089 */;

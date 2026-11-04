@@ -1,10 +1,10 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16058
+// Function ID: 16059
 // Name: openActivityDMLauncher
-// Dependencies: [5, 1498, 14964, 11887, 7487, 5817, 7016, 7625, 5331, 1625, 2]
+// Dependencies: [5, 1498, 14965, 11888, 7487, 5817, 7016, 7625, 5331, 1625, 2]
 // Exports: default
 
-// Module 16045 (openActivityDMLauncher)
+// Module 16058 (openActivityDMLauncher)
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -67,7 +67,7 @@ let obj = function _openActivityDMLauncher() {
               id = undefined;
               c3 = 1;
               linkChannelId = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

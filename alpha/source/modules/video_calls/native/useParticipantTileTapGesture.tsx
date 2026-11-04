@@ -1,10 +1,10 @@
-// Module ID: 11951
-// Function ID: 11952
+// Module ID: 11952
+// Function ID: 11953
 // Name: useParticipantTileTapGesture
 // Dependencies: [5428, 2]
 // Exports: default
 
-// Module 11951 (useParticipantTileTapGesture)
+// Module 11952 (useParticipantTileTapGesture)
 import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
 import size from "module_2" /* 2 */;
 

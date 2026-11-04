@@ -1,10 +1,10 @@
-// Module ID: 11739
-// Function ID: 11740
+// Module ID: 11740
+// Function ID: 11741
 // Name: useApexExperiments
-// Dependencies: [32, 19, 1246, 8729, 5367, 1452, 11740, 504, 2]
+// Dependencies: [32, 19, 1246, 8729, 5367, 1452, 11741, 504, 2]
 // Exports: getApexExperiments, useApexExperiments
 
-// Module 11739 (useApexExperiments)
+// Module 11740 (useApexExperiments)
 import apex_ApexTypes from "apex/ApexTypes" /* 1452 */;
 import ExperimentManager from "ExperimentManager" /* 5367 */;
 import experiment from "experiment" /* 8729 */;

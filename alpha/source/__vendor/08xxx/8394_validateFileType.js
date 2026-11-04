@@ -80,7 +80,7 @@ tmp3(_mod8399, exports);
 
 export function validateFileType(fileChunk, arr, chunkSize) {
   let combined;
-  const f93323 = (item) => {
+  const f93454 = (item) => {
     const parts = item.split(".");
     const str = parts.join("");
     const formatted = str.toUpperCase();
@@ -100,8 +100,8 @@ export function validateFileType(fileChunk, arr, chunkSize) {
     return items;
   }
   let items = [];
-  const items1 = [...new Set(arr.map(f93323))];
-  new Set(arr.map(f93323));
+  const items1 = [...new Set(arr.map(f93454))];
+  new Set(arr.map(f93454));
   for (const item10023 of items1) {
     let str = item10023;
     let _Object = Object;

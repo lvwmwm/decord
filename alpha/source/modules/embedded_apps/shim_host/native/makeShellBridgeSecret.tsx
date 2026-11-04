@@ -1,10 +1,10 @@
-// Module ID: 12016
-// Function ID: 12017
+// Module ID: 12017
+// Function ID: 12018
 // Name: makeShellBridgeSecret
 // Dependencies: [1266, 2]
 // Exports: default
 
-// Module 12016 (makeShellBridgeSecret)
+// Module 12017 (makeShellBridgeSecret)
 import v1 from "v1" /* 1266 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11448
-// Function ID: 11449
+// Module ID: 11449
+// Function ID: 11450
 // Name: useInappropriateConversationWarningsForChannel
 // Dependencies: [10982, 504, 2]
 // Exports: useInappropriateConversationWarningsForChannel
 
-// Module 11448 (useInappropriateConversationWarningsForChannel)
+// Module 11449 (useInappropriateConversationWarningsForChannel)
 import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10982 */;
 import size from "module_2" /* 2 */;
 

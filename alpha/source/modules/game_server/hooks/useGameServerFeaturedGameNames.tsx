@@ -1,10 +1,10 @@
-// Module ID: 14368
-// Function ID: 14369
+// Module ID: 14369
+// Function ID: 14370
 // Name: useGameServerFeaturedGameNames
 // Dependencies: [5355, 7620, 2]
 // Exports: default
 
-// Module 14368 (useGameServerFeaturedGameNames)
+// Module 14369 (useGameServerFeaturedGameNames)
 import useGame from "useGame" /* 7620 */;
 import GameServerConstants from "GameServerConstants" /* 5355 */;
 import size from "module_2" /* 2 */;

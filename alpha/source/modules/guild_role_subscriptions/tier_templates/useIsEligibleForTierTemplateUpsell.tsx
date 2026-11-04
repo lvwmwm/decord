@@ -1,10 +1,10 @@
-// Module ID: 18554
-// Function ID: 18555
+// Module ID: 18568
+// Function ID: 18569
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [5012, 1072, 504, 15952, 7574, 2]
+// Dependencies: [5012, 1072, 504, 15965, 7574, 2]
 // Exports: default
 
-// Module 18554 (useIsEligibleForTierTemplateUpsell)
+// Module 18568 (useIsEligibleForTierTemplateUpsell)
 import Constants from "Constants" /* 1072 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;

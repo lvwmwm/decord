@@ -1,10 +1,10 @@
-// Module ID: 13976
-// Function ID: 13977
+// Module ID: 13977
+// Function ID: 13978
 // Name: ChatInputSendUtils
-// Dependencies: [5, 7841, 7970, 8348, 1385, 1072, 5146, 1387, 9928, 8483, 1242, 13975, 13972, 7964, 7776, 10379, 9930, 9925, 2176, 9935, 6093, 1113, 1252, 10397, 9071, 5382, 13977, 2123, 8356, 7487, 11933, 10488, 12652, 5817, 2]
+// Dependencies: [5, 7841, 7970, 8348, 1385, 1072, 5146, 1387, 9928, 8483, 1242, 13976, 13973, 7964, 7776, 10379, 9930, 9925, 2176, 9935, 6093, 1113, 1252, 10397, 9071, 5382, 13978, 2123, 8356, 7487, 11934, 10488, 12653, 5817, 2]
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
-// Module 13976 (ChatInputSendUtils)
+// Module 13977 (ChatInputSendUtils)
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -22,7 +22,7 @@ import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreator
 import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 9930 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9935 */;
 import ChatRestrictions from "ChatRestrictions" /* 10397 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 13972 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 13973 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SlowmodeStore from "SlowmodeStore" /* 7970 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8348 */;
@@ -99,7 +99,7 @@ function chatInputSendMessage(params) {
   if (current2 != null) {
     current2.showSideActions();
   }
-  let obj3 = channel(13975);
+  let obj3 = channel(13976);
   const handleLegacyCommandsResult = obj3.handleLegacyCommands(text, { channel, isEdit: false });
   let tmp15 = tts;
   parsed = parsedMessage;
@@ -131,7 +131,7 @@ function chatInputSendMessage(params) {
   if (null != mentionTimestamps) {
     result = tmp17;
     if (mentionTimestamps.size > 0) {
-      const tmp13Result = channel(13972);
+      const tmp13Result = channel(13973);
       result = tmp13Result.serializeComposerTimestampMentions(tmp17, mentionTimestamps);
     }
   }
@@ -343,7 +343,7 @@ let obj = function _chatInputSendApplicationCommand() {
               closure_5 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {
@@ -447,7 +447,7 @@ export function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "ao", source: "<string:1359020034>", params };
+                          obj = { text: require, parsedMessage, tts: "ti", source: "_applicationResults", params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,15 +470,15 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "ao", source: "r", params };
+                          obj = { text: require, parsedMessage, tts: "ti", source: "isSelf", params };
                           chatInputSendMessage(obj);
                         }
             };
             const obj5 = params(5382);
-            obj5.openLazy(tmp20(2123)(13977, tmp21.paths), "add-media-to-original-forum-post", obj4);
+            obj5.openLazy(tmp20(2123)(13978, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "ao", source: false, params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "ti", source: 311985332449583600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, params };
         chatInputSendMessage(obj6);
       }
     }

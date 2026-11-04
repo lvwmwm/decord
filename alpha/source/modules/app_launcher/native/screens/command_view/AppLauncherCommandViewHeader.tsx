@@ -1,17 +1,17 @@
-// Module ID: 12702
-// Function ID: 12703
+// Module ID: 12703
+// Function ID: 12704
 // Name: AppLauncherCommandViewHeader
-// Dependencies: [19, 17, 1498, 21, 12678, 5141, 575, 12596, 1652, 5732, 8856, 5851, 5761, 12703, 2]
+// Dependencies: [19, 17, 1498, 21, 12679, 5141, 575, 12597, 1652, 5732, 8856, 5851, 5761, 12704, 2]
 // Exports: AppLauncherCommandViewHeader
 
-// Module 12702 (AppLauncherCommandViewHeader)
+// Module 12703 (AppLauncherCommandViewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import useAvatarColorDefault from "useAvatarColor" /* 8856 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12596 */;
-import AppLauncherBackButton from "AppLauncherBackButton" /* 12678 */;
-import CommandDetailsOverflowMenuDefault from "CommandDetailsOverflowMenu" /* 12703 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12597 */;
+import AppLauncherBackButton from "AppLauncherBackButton" /* 12679 */;
+import CommandDetailsOverflowMenuDefault from "CommandDetailsOverflowMenu" /* 12704 */;
 import react from "react" /* 19 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import Fragment from "Fragment" /* 21 */;

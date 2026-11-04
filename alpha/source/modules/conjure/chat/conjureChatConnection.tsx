@@ -39,7 +39,7 @@ function handleProjectEvent(event, projectId) {
   const obj = DispatcherDefault;
   const obj2 = { type: "CONJURE_CHAT_PROJECT_EVENT", projectId, event };
   obj.dispatch(obj2);
-  const tmp3 = "app_channel_deleted" !== event.type && "remixed" !== event.type && "voice_channel_pin" !== event.type;
+  const tmp3 = "app_channel_deleted" !== event.type && "remixed" !== event.type && "voice_channel_pin" !== event.type && "staff_notice" !== event.type;
   if (tmp3) {
     obj3 = ConjureActionCreators;
     const result = obj3.refreshConjureInstallState(projectId);
@@ -68,6 +68,7 @@ let obj = {
   app_channel_deleted: handleProjectEvent,
   remixed: handleProjectEvent,
   voice_channel_pin: handleProjectEvent,
+  staff_notice: handleProjectEvent,
   side_reply(id, projectId) {
     projectId = projectId.projectId;
     const obj = DispatcherDefault;

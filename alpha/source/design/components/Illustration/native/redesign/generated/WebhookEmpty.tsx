@@ -1,10 +1,10 @@
-// Module ID: 19195
-// Function ID: 19196
+// Module ID: 19209
+// Function ID: 19210
 // Name: WebhookEmpty
-// Dependencies: [19, 21, 8947, 19196, 19197, 19198, 5148, 5851, 2]
+// Dependencies: [19, 21, 8947, 19210, 19211, 19212, 5148, 5851, 2]
 // Exports: WebhookEmpty, getWebhookEmptySource, useWebhookEmptySource
 
-// Module 19195 (WebhookEmpty)
+// Module 19209 (WebhookEmpty)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5148 */;
 import FastImageDefault from "FastImage" /* 5851 */;

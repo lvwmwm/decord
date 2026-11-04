@@ -1,10 +1,10 @@
-// Module ID: 14133
-// Function ID: 14134
+// Module ID: 14134
+// Function ID: 14135
 // Name: NewMessageUserList
-// Dependencies: [32, 19, 17, 4990, 5083, 1385, 10905, 21, 5141, 575, 7034, 5195, 5786, 12, 10907, 1113, 5761, 10909, 10911, 13623, 14134, 2]
+// Dependencies: [32, 19, 17, 4990, 5083, 1385, 10905, 21, 5141, 575, 7034, 5195, 5786, 12, 10907, 1113, 5761, 10909, 10911, 13624, 14135, 2]
 // Exports: default, useSearchGDMNames
 
-// Module 14133 (NewMessageUserList)
+// Module 14134 (NewMessageUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

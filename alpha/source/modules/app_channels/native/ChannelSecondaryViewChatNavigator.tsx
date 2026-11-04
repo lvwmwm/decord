@@ -1,16 +1,16 @@
-// Module ID: 19213
-// Function ID: 19214
+// Module ID: 19227
+// Function ID: 19228
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 10035, 5141, 575, 9961, 1377, 11188, 11401, 12578, 5318, 7306, 14783, 9973, 5207, 2]
+// Dependencies: [19, 21, 10035, 5141, 575, 9961, 1377, 11188, 11402, 12579, 5318, 7306, 14784, 9973, 5207, 2]
 // Exports: default
 
-// Module 19213 (ChannelSecondaryViewChatNavigator)
+// Module 19227 (ChannelSecondaryViewChatNavigator)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import HeaderShared from "HeaderShared" /* 9961 */;
 import ChannelContainer2 from "ChannelContainer" /* 11188 */;
-import ChatViewDefault from "ChatView" /* 11401 */;
-import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12578 */;
+import ChatViewDefault from "ChatView" /* 11402 */;
+import PortalKeyboardRenderer from "PortalKeyboardRenderer" /* 12579 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 10035 */;

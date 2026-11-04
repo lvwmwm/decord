@@ -1,14 +1,14 @@
-// Module ID: 18672
-// Function ID: 18673
+// Module ID: 18686
+// Function ID: 18687
 // Name: InterestGameCover
-// Dependencies: [32, 19, 17, 18671, 21, 575, 5141, 18673, 5851, 18674, 2]
+// Dependencies: [32, 19, 17, 18685, 21, 575, 5141, 18687, 5851, 18688, 2]
 // Exports: default
 
-// Module 18672 (InterestGameCover)
+// Module 18686 (InterestGameCover)
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 5851 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18671 */;
-import useInterestCoverColor from "useInterestCoverColor" /* 18673 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18685 */;
+import useInterestCoverColor from "useInterestCoverColor" /* 18687 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -70,7 +70,7 @@ function NoCover(arg0) {
   if (tmp13) {
     tmp13 = iconURL !== tmp9;
   }
-  const tmp14 = tmp4(18673)(game.id, iconURL);
+  const tmp14 = tmp4(18687)(game.id, iconURL);
   const tmp16 = closure_14(width, minResult, Math.max(width / TILE_ASPECT_RATIO - width + closure_12, tmp11 + PX_6 + PX_8), tmp14);
   const items = [tmp6.fallback, , ];
   let titleOnly = tmp19;
@@ -140,7 +140,7 @@ function NoCover(arg0) {
     const _Math2 = Math;
     obj10 = { name: game.name, width: Math.max(0, width - tmp4(575).space.PX_16), alignLastBaseline: !compact && tmp13, onHeightChange: tmp30 };
     tmp30 = undefined;
-    tmp4Result = tmp4(18674);
+    tmp4Result = tmp4(18688);
     if (!compact && tmp13) {
       tmp30 = tmp12;
     }

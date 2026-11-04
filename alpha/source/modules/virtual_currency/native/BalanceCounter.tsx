@@ -1,9 +1,9 @@
-// Module ID: 14720
-// Function ID: 14721
+// Module ID: 14721
+// Function ID: 14722
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 1652, 5155, 5771, 1705, 14721, 5761, 2]
+// Dependencies: [32, 19, 21, 1652, 5155, 5771, 1705, 14722, 5761, 2]
 
-// Module 14720 (BalanceCounter)
+// Module 14721 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;

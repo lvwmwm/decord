@@ -1,7 +1,7 @@
 // Module ID: 9365
 // Function ID: 9366
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 4996, 1072, 21, 5141, 575, 9235, 5382, 9366, 14954, 1187, 1113, 5761, 5768, 9112, 2]
+// Dependencies: [19, 17, 4996, 1072, 21, 5141, 575, 9235, 5382, 9366, 14955, 1187, 1113, 5761, 5768, 9112, 2]
 // Exports: default
 
 // Module 9365 (EndEventActionSheet)
@@ -55,7 +55,7 @@ export default function EndEventActionSheet(channel) {
     }
     let obj2 = { children: closure_6(View, obj3) };
     obj3 = { style: tmp.container, children: items };
-    const tmp7 = activeEvent(14954);
+    const tmp7 = activeEvent(14955);
     const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1113).t["4Ao8LC"]) };
     const LegacyText = tmp2(1187).LegacyText;
     intl = tmp2(1113).intl;

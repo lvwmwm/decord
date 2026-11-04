@@ -1,47 +1,62 @@
 // Module ID: 13126
 // Function ID: 13127
 // Name: tokenize
-// Dependencies: [13054, 13098]
+// Dependencies: [13055]
 
 // Module 13126 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
-import tokenize2 from "tokenize" /* 13098 */;
+import tokenize from "tokenize" /* 13055 */;
 
-function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
-}
-function consumePrelude() {
+let rect;
+function consumeNumber() {
+  let num;
   const self = this;
-  const SelectorListResult = this.SelectorList();
-  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
-  if (tmp2) {
-    self.error();
+  const scanner = this.scanner;
+  scanner.skipWS();
+  const consumeResult = this.consume(Number);
+  for (let num = 0; num < consumeResult.length; num = num + 1) {
+    let charCodeAtResult = consumeResult.charCodeAt(num);
+    let obj = tokenize;
+    let isDigitResult = obj.isDigit(charCodeAtResult);
+    if (!isDigitResult) {
+      isDigitResult = 46 === charCodeAtResult;
+    }
+    if (!isDigitResult) {
+      let errorResult = self.error("Unsigned number is expected", self.scanner.tokenStart - consumeResult.length + num);
+    }
   }
-  return SelectorListResult;
+  if (0 === Number(consumeResult)) {
+    self.error("Zero number is not allowed", self.scanner.tokenStart - consumeResult.length);
+  }
+  return consumeResult;
 }
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+const Number = tokenize.TYPE.Number;
+const Delim = tokenize.TYPE.Delim;
 let obj = {
-  name: "Rule",
-  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
+  name: "Ratio",
+  structure: rect,
   parse() {
-    let BlockResult;
-    let parseWithFallbackResult;
+    let callResult1;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    if (this.parseRulePrelude) {
-      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
-    } else {
-      parseWithFallbackResult = consumeRaw.call(self, tmp);
+    const scanner = self.scanner;
+    const callResult = consumeNumber.call(self);
+    scanner.skipWS();
+    const scanner2 = self.scanner;
+    const obj = consumeNumber;
+    if (!scanner2.isDelim(47)) {
+      self.error("Solidus is expected");
     }
-    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
-    BlockResult = self.Block(true);
-    return obj;
+    self.eat(Delim);
+    const rect = { type: "Ratio", loc: self.getLocation(tokenStart, self.scanner.tokenStart), left: callResult, right: callResult1 };
+    callResult1 = obj.call(self);
+    return rect;
   },
-  generate(prelude) {
-    this.node(prelude.prelude);
-    this.node(prelude.block);
-  },
-  walkContext: "rule"
+  generate(left) {
+    this.chunk(left.left);
+    this.chunk("/");
+    this.chunk(left.right);
+  }
 };
+rect = { left: String, right: String };
 
 export default obj;

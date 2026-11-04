@@ -1,10 +1,10 @@
-// Module ID: 15041
-// Function ID: 15042
+// Module ID: 15042
+// Function ID: 15043
 // Name: BotReportChooser
 // Dependencies: [19, 2167, 21, 7502, 5761, 1113, 7504, 5382, 8492, 504, 7016, 2]
 // Exports: default
 
-// Module 15041 (BotReportChooser)
+// Module 15042 (BotReportChooser)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;

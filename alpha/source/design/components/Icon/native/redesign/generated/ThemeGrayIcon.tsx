@@ -1,14 +1,14 @@
-// Module ID: 18701
-// Function ID: 18702
+// Module ID: 18715
+// Function ID: 18716
 // Name: ThemeGrayIcon
-// Dependencies: [19, 21, 575, 5850, 18702, 2]
+// Dependencies: [19, 21, 575, 5850, 18716, 2]
 // Exports: ThemeGrayIcon
 
-// Module 18701 (ThemeGrayIcon)
+// Module 18715 (ThemeGrayIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 18702 */;
+import AssetRegistry from "AssetRegistry" /* 18716 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

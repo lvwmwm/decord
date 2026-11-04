@@ -1,177 +1,139 @@
 // Module ID: 13364
 // Function ID: 13365
-// Dependencies: [13329, 13274, 13365]
-// Exports: generateIteratee
+// Dependencies: [13330, 13281, 13319, 13280, 13283, 13302, 13274]
 
 // Module 13364
-import _mod13365 from "module_13365" /* 13365 */;
-import module_13329 from "module_13329" /* 13329 */;
-
-const require = globalThis.__r;
-let _require, stacktrace;
+import _mod13280 from "module_13280" /* 13280 */;
+import _mod13281 from "module_13281" /* 13281 */;
+import module_13330 from "module_13330" /* 13330 */;
 
 
-export function generateIteratee(arg0) {
-  let closure_2;
-  let require;
-  ({ isBrowser: require, root: dependencyMap, prefix: closure_2 } = arg0);
-  return (filename) => {
-    if (filename.filename) {
-      const obj = /^[a-zA-Z]:\\/;
-      let isMatch = obj.test(filename.filename);
-      if (!isMatch) {
-        filename = filename.filename;
-        let hasItem = filename.includes("\\");
-        if (hasItem) {
-          const filename2 = filename.filename;
-          hasItem = !filename2.includes("/");
-        }
-        isMatch = hasItem;
-      }
-      const tmp5 = closure_0;
-      if (tmp5) {
-        if (root) {
-          const filename1 = filename.filename;
-          if (0 === filename1.indexOf(root)) {
-            filename.filename = filename1.replace(root, prefix);
-          }
-        }
-      } else if (isMatch) {
-        let replaced;
-        let relativeResult;
-        if (isMatch) {
-          const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-          replaced = str5.replace(/\\/g, "/");
-        } else {
-          replaced = str3;
-        }
-        const obj2 = _mod13365;
-        if (root) {
-          relativeResult = obj2.relative(tmp7, replaced);
-        } else {
-          relativeResult = obj2.basename(replaced);
-        }
-        const _HermesInternal = HermesInternal;
-        filename.filename = "" + prefix + relativeResult;
-      }
-      return filename;
-    } else {
-      return filename;
-    }
-  };
-}
-export const rewriteFramesIntegration = module_13329.defineIntegration(() => {
-  let closure_0;
-  let prefix;
-  let root;
+export const extraErrorDataIntegration = module_13330.defineIntegration(() => {
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let fn;
-  ({ prefix, root } = obj);
-  if (!prefix) {
-    prefix = "app:///";
+  let closure_1;
+  const depth = obj.depth;
+  let num = 3;
+  if (undefined !== depth) {
+    num = depth;
   }
-  const tmp = _require;
-  let tmp2 = root;
-  fn = obj.iteratee;
-  const tmp3 = "window" in require("module_13274").GLOBAL_OBJ && undefined !== tmp(tmp2[1]).GLOBAL_OBJ.window;
-  if (!fn) {
-    _require = tmp3;
-    fn = (filename) => {
-      if (filename.filename) {
-        const obj = /^[a-zA-Z]:\\/;
-        let isMatch = obj.test(filename.filename);
-        if (!isMatch) {
-          filename = filename.filename;
-          let hasItem = filename.includes("\\");
-          if (hasItem) {
-            const filename2 = filename.filename;
-            hasItem = !filename2.includes("/");
+  const captureErrorCause = obj.captureErrorCause;
+  closure_1 = undefined === captureErrorCause || captureErrorCause;
+  let obj2 = {
+    name: "ExtraErrorData",
+    processEvent(contexts, arg1, getOptions) {
+      function _extractErrorData(originalException, arg1, maxValueLength) {
+        try {
+          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
+          const obj = {};
+          const _Object = Object;
+          const keys = Object.keys(originalException);
+          const iter = keys[Symbol.iterator]();
+          const nextResult = iter.next();
+          while (iter !== undefined) {
+            let tmp8 = nextResult;
+            if (-1 === items.indexOf(nextResult)) {
+              let tmp11 = originalException[tmp8];
+              let tmp12 = tmp11;
+              let tmp15 = num;
+              let tmp17 = closure_1_1;
+              let obj2 = num(closure_1_1[1]);
+              if (!obj2.isError(tmp11)) {
+                let truncateResult;
+                if (typeof tmp12 !== "string") {
+                  truncateResult = tmp11;
+                }
+                obj[tmp8] = truncateResult;
+              }
+              let tmp15Result = tmp15(tmp17[4]);
+              let _HermesInternal = HermesInternal;
+              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
+            }
+            continue;
           }
-          isMatch = hasItem;
-        }
-        const tmp5 = closure_0;
-        if (tmp5) {
-          if (root) {
-            const filename1 = filename.filename;
-            if (0 === filename1.indexOf(root)) {
-              filename.filename = filename1.replace(root, prefix);
+          const tmp23 = arg1 && undefined !== originalException.cause;
+          if (tmp23) {
+            let str1;
+            const obj4 = -1(closure_1_1[1]);
+            if (obj4.isError(originalException.cause)) {
+              str1 = str2.toString();
+            } else {
+              str1 = str2;
+            }
+            obj.cause = str1;
+          }
+          if (typeof originalException.toJSON === "function") {
+            const toJSONResult = originalException.toJSON();
+            const _Object2 = Object;
+            const keys1 = Object.keys(toJSONResult);
+            const tmp48 = toJSONResult;
+            for (const item10067 of keys1) {
+              let str5;
+              let tmp32 = tmp48[item10067];
+              let str3 = tmp32;
+              let obj5 = num(closure_1_1[1]);
+              if (obj5.isError(tmp32)) {
+                str5 = str3.toString();
+              } else {
+                str5 = str3;
+              }
+              obj[item10067] = str5;
+              continue;
             }
           }
-        } else if (isMatch) {
-          let replaced;
-          let relativeResult;
-          if (isMatch) {
-            const str5 = filename.filename.replace(/^[a-zA-Z]:/, "");
-            replaced = str5.replace(/\\/g, "/");
-          } else {
-            replaced = str3;
-          }
-          const obj2 = _mod13365;
-          if (root) {
-            relativeResult = obj2.relative(tmp7, replaced);
-          } else {
-            relativeResult = obj2.basename(replaced);
-          }
-          const _HermesInternal = HermesInternal;
-          filename.filename = "" + prefix + relativeResult;
-        }
-        return filename;
-      } else {
-        return filename;
-      }
-    };
-  }
-  let obj2 = {
-    name: "RewriteFrames",
-    processEvent(exception) {
-      function _processExceptionsEvent(exception) {
-        let obj2;
-        let values;
-        try {
-          let obj = { exception: obj2 };
-          let merged = Object.assign(exception);
-          obj2 = {
-            values: values.map((stacktrace) => {
-                let mapped;
-                const obj = {};
-                const merged = Object.assign(stacktrace);
-                stacktrace = stacktrace.stacktrace;
-                if (stacktrace) {
-                  const stacktrace2 = stacktrace.stacktrace;
-                  const obj2 = { frames: mapped };
-                  const merged1 = Object.assign(stacktrace2);
-                  mapped = stacktrace2 && stacktrace2.frames;
-                  if (mapped) {
-                    const frames = stacktrace2.frames;
-                    mapped = frames.map((item) => closure_1_0(item));
-                  }
-                  stacktrace = { stacktrace: obj2 };
-                  const obj3 = { stacktrace: obj2 };
-                }
-                const merged2 = Object.assign(stacktrace);
-                return obj;
-              })
-          };
-          let merged1 = Object.assign(exception.exception);
-          values = exception.exception.values;
           return obj;
-        } catch (err) {
-          return exception;
+        } catch (tmp40) {
+          const tmp41 = num;
+          const tmp43 = closure_1_1;
+          if (num(closure_1_1[5]).DEBUG_BUILD) {
+            const logger = tmp41(tmp43[6]).logger;
+            logger.error("Unable to extract extra data from the Error object:", tmp40);
+          }
+          return null;
         }
       }
-      exception = exception.exception;
-      if (exception) {
-        const _Array = Array;
-        exception = Array.isArray(exception.exception.values);
+      const maxValueLength = getOptions.getOptions().maxValueLength;
+      num = 250;
+      const tmp = num;
+      const tmp2 = closure_1;
+      if (undefined !== maxValueLength) {
+        num = maxValueLength;
       }
-      let tmp2 = exception;
-      if (exception) {
-        tmp2 = _processExceptionsEvent(exception);
+      let obj = arg1;
+      if (arg1 === undefined) {
+        obj = {};
       }
-      return tmp2;
+      let tmp3 = contexts;
+      if (obj.originalException) {
+        let obj2 = _mod13281;
+        tmp3 = contexts;
+        if (obj2.isError(obj.originalException)) {
+          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
+          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
+          tmp3 = contexts;
+          if (tmp7) {
+            const obj3 = {};
+            let tmp8 = obj3;
+            const merged = Object.assign(contexts.contexts);
+            const normalizer = tmp4(13319);
+            const normalizeResult = normalizer.normalize(tmp7, tmp);
+            const tmp4Result = _mod13281;
+            if (tmp4Result.isPlainObject(normalizeResult)) {
+              const tmp4Result2 = _mod13280;
+              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
+              obj3[tmp6] = normalizeResult;
+            }
+            let obj4 = { contexts: obj3 };
+            let tmp12 = obj4;
+            let tmp13 = contexts;
+            const merged1 = Object.assign(contexts);
+            tmp3 = obj4;
+          }
+        }
+      }
+      return tmp3;
     }
   };
   return obj2;

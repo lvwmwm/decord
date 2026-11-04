@@ -1,10 +1,10 @@
-// Module ID: 12768
-// Function ID: 12769
+// Module ID: 12769
+// Function ID: 12770
 // Name: useVoteReactors
 // Dependencies: [8545, 1072, 504, 5752, 1342, 2]
 // Exports: default
 
-// Module 12768 (useVoteReactors)
+// Module 12769 (useVoteReactors)
 import Constants from "Constants" /* 1072 */;
 import MessageReactionsTypes from "MessageReactionsTypes" /* 5752 */;
 import MessageReactionsStore from "MessageReactionsStore" /* 8545 */;

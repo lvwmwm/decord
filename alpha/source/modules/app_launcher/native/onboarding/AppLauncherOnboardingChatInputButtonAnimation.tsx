@@ -1,10 +1,10 @@
-// Module ID: 14019
-// Function ID: 14020
+// Module ID: 14020
+// Function ID: 14021
 // Name: AppLauncherOnboardingChatInputButtonAnimation
-// Dependencies: [19, 17, 5142, 21, 5141, 5774, 575, 5378, 5381, 504, 9970, 12582, 1652, 5755, 14020, 12607, 2]
+// Dependencies: [19, 17, 5142, 21, 5141, 5774, 575, 5378, 5381, 504, 9970, 12583, 1652, 5755, 14021, 12608, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 14019 (AppLauncherOnboardingChatInputButtonAnimation)
+// Module 14020 (AppLauncherOnboardingChatInputButtonAnimation)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
@@ -13,9 +13,9 @@ import timingPresets from "timingPresets" /* 5381 */;
 import LottieAnimationViewDefault from "LottieAnimationView" /* 5755 */;
 import ButtonConstants from "ButtonConstants" /* 5774 */;
 import ClientThemesOverrides from "ClientThemesOverrides" /* 9970 */;
-import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12582 */;
-import _mod12607 from "module_12607" /* 12607 */;
-import _mod14020 from "module_14020" /* 14020 */;
+import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12583 */;
+import _mod12608 from "module_12608" /* 12608 */;
+import _mod14021 from "module_14021" /* 14021 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -96,7 +96,7 @@ export function AppLauncherOnboardingChatInputButtonAnimation(channelId) {
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
   const obj3 = { children: items4 };
   const View = _modDef1652.View;
-  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod14020, autoPlay: !stateFromStores };
+  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod14021, autoPlay: !stateFromStores };
   const tmp5 = LottieAnimationViewDefault;
   items2 = [metroRequire(tmp5, obj5), , ];
   const obj6 = { collapsable: false, style: items3 };
@@ -105,7 +105,7 @@ export function AppLauncherOnboardingChatInputButtonAnimation(channelId) {
   const obj7 = { collapsable: false, style: tmp.fakeButton };
   items2[2] = metroRequire(_false, obj7);
   items4 = [metroImportDefault(View, obj4), ];
-  const obj8 = { collapsable: false, style: tmp.trinketsLottie, source: _mod12607, autoPlay: !stateFromStores };
+  const obj8 = { collapsable: false, style: tmp.trinketsLottie, source: _mod12608, autoPlay: !stateFromStores };
   const tmp6 = LottieAnimationViewDefault;
   items4[1] = metroRequire(tmp6, obj8);
   return metroImportDefault(metroImportAll, obj3);

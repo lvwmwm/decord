@@ -1,10 +1,10 @@
-// Module ID: 13857
-// Function ID: 13858
+// Module ID: 13858
+// Function ID: 13859
 // Name: useCheckpointCharacterTextureManager
 // Dependencies: [5, 19, 5216, 2]
 // Exports: useCheckpointCharacterTextureManager
 
-// Module 13857 (useCheckpointCharacterTextureManager)
+// Module 13858 (useCheckpointCharacterTextureManager)
 import DataBindByName from "DataBindByName" /* 5216 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

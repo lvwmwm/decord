@@ -1,10 +1,10 @@
-// Module ID: 19835
-// Function ID: 19836
+// Module ID: 19849
+// Function ID: 19850
 // Name: InterestGuildRecommendations
-// Dependencies: [32, 19, 17, 1072, 21, 7139, 5141, 575, 5761, 1113, 18677, 5732, 1411, 7121, 2537, 5382, 19836, 9656, 7098, 6162, 9452, 5004, 7514, 19839, 18676, 7428, 9961, 19840, 5768, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 7139, 5141, 575, 5761, 1113, 18691, 5732, 1411, 7121, 2537, 5382, 19850, 9656, 7098, 6162, 9452, 5004, 7514, 19853, 18690, 7428, 9961, 19854, 5768, 2]
 // Exports: default
 
-// Module 19835 (InterestGuildRecommendations)
+// Module 19849 (InterestGuildRecommendations)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
@@ -13,10 +13,10 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382
 import Text_Text from "Text/Text" /* 5761 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
 import HeaderShared from "HeaderShared" /* 9961 */;
-import InterestScrollHeader from "InterestScrollHeader" /* 18676 */;
-import InterestGhostDefault from "InterestGhost" /* 18677 */;
-import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 19836 */;
-import InterestPickedGamesDefault from "InterestPickedGames" /* 19840 */;
+import InterestScrollHeader from "InterestScrollHeader" /* 18690 */;
+import InterestGhostDefault from "InterestGhost" /* 18691 */;
+import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 19850 */;
+import InterestPickedGamesDefault from "InterestPickedGames" /* 19854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -284,7 +284,7 @@ let closure_14 = react.memo(function InterestGuildRow(guild) {
   const obj23 = { children: items7 };
   items6[1] = tmp10Result;
   items7 = [closure_9(PressableHighlight, obj5), ];
-  const obj24 = { style: tmp.joinTarget, children: closure_8(joins(19839), obj45) };
+  const obj24 = { style: tmp.joinTarget, children: closure_8(joins(19853), obj45) };
   obj45 = { guildId: guild.id, guildName: guild.name, joins };
   items7[1] = closure_8(closure_6, obj24);
   return closure_9(closure_6, obj23);

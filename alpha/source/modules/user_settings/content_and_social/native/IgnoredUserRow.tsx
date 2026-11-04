@@ -1,10 +1,10 @@
-// Module ID: 16946
-// Function ID: 16947
+// Module ID: 16958
+// Function ID: 16959
 // Name: IgnoredUserRow
-// Dependencies: [5, 19, 1385, 21, 7628, 7462, 1113, 8891, 7116, 1187, 16943, 5768, 504, 8893, 2]
+// Dependencies: [5, 19, 1385, 21, 7628, 7462, 1113, 8891, 7116, 1187, 16955, 5768, 504, 8893, 2]
 // Exports: default
 
-// Module 16946 (IgnoredUserRow)
+// Module 16958 (IgnoredUserRow)
 import Fragment from "Fragment" /* 21 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7628 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;

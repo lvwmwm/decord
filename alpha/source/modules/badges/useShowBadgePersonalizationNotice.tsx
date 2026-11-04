@@ -1,13 +1,13 @@
-// Module ID: 11655
-// Function ID: 11656
+// Module ID: 11656
+// Function ID: 11657
 // Name: useShowBadgePersonalizationNotice
-// Dependencies: [6877, 1072, 504, 11648, 2]
+// Dependencies: [6877, 1072, 504, 11649, 2]
 // Exports: default
 
-// Module 11655 (useShowBadgePersonalizationNotice)
+// Module 11656 (useShowBadgePersonalizationNotice)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import BadgeUtils from "BadgeUtils" /* 11648 */;
+import BadgeUtils from "BadgeUtils" /* 11649 */;
 import ConsentStore from "ConsentStore" /* 6877 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 11666
-// Function ID: 11667
+// Module ID: 11667
+// Function ID: 11668
 // Name: badgeDetailsCtas
 // Dependencies: [1072, 1074, 5323, 1500, 8896, 1113, 5839, 7703, 7859, 7487, 9828, 6921, 9823, 10736, 2]
 // Exports: getBadgeDetailsCta
 
-// Module 11666 (badgeDetailsCtas)
+// Module 11667 (badgeDetailsCtas)
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl2 from "intl" /* 1113 */;

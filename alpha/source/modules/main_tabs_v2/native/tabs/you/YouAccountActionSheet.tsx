@@ -1,9 +1,9 @@
-// Module ID: 18700
-// Function ID: 18701
+// Module ID: 18714
+// Function ID: 18715
 // Name: YouAccountActionSheet
-// Dependencies: [19, 17, 14194, 1192, 1399, 8004, 5196, 1385, 1072, 1388, 14195, 21, 5141, 575, 5761, 7124, 16228, 16225, 16226, 16227, 4966, 11200, 5382, 1113, 7199, 7202, 9230, 504, 17245, 13929, 6067, 17494, 1239, 18701, 11376, 17496, 5195, 1187, 18235, 18703, 1252, 7487, 14198, 7121, 11199, 7201, 7505, 11173, 18708, 2123, 18698, 11582, 1411, 10927, 5732, 7118, 11585, 7436, 9599, 11592, 5851, 7393, 7141, 7502, 7457, 6162, 18709, 17996, 2]
+// Dependencies: [19, 17, 14195, 1192, 1399, 8004, 5196, 1385, 1072, 1388, 14196, 21, 5141, 575, 5761, 7124, 16241, 16238, 16239, 16240, 4966, 11200, 5382, 1113, 7199, 7202, 9230, 504, 17257, 13930, 6067, 17506, 1239, 18715, 11376, 17508, 5195, 1187, 18249, 18717, 1252, 7487, 14199, 7121, 11199, 7201, 7505, 11173, 18722, 2123, 18712, 11583, 1411, 10927, 5732, 7118, 11586, 7436, 9599, 11593, 5851, 7393, 7141, 7502, 7457, 6162, 18723, 18008, 2]
 
-// Module 18700 (YouAccountActionSheet)
+// Module 18714 (YouAccountActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -28,20 +28,20 @@ import getChannelA11yLabel from "getChannelA11yLabel" /* 9230 */;
 import FocusModeUtils from "FocusModeUtils" /* 11199 */;
 import setUserStatusDefault from "setUserStatus" /* 11200 */;
 import ThemeDarkIcon from "ThemeDarkIcon" /* 11376 */;
-import userSettingToActivity from "userSettingToActivity" /* 11582 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 11585 */;
-import removeCustomStatusDefault from "removeCustomStatus" /* 11592 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 13929 */;
-import MultiAccountStore2 from "MultiAccountStore" /* 14194 */;
-import Constants2 from "Constants" /* 14195 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14198 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 17245 */;
-import ThemeLightIcon from "ThemeLightIcon" /* 17494 */;
-import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17496 */;
-import DevToolsContentDefault from "DevToolsContent" /* 17996 */;
-import ThemeGrayIcon from "ThemeGrayIcon" /* 18701 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 18703 */;
-import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 18709 */;
+import userSettingToActivity from "userSettingToActivity" /* 11583 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 11586 */;
+import removeCustomStatusDefault from "removeCustomStatus" /* 11593 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 13930 */;
+import MultiAccountStore2 from "MultiAccountStore" /* 14195 */;
+import Constants2 from "Constants" /* 14196 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14199 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 17257 */;
+import ThemeLightIcon from "ThemeLightIcon" /* 17506 */;
+import ThemeMidnightIcon from "ThemeMidnightIcon" /* 17508 */;
+import DevToolsContentDefault from "DevToolsContent" /* 18008 */;
+import ThemeGrayIcon from "ThemeGrayIcon" /* 18715 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 18717 */;
+import YouSwitchClientsRadioGroupDefault from "YouSwitchClientsRadioGroup" /* 18723 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UserRecord from "UserRecord" /* 1399 */;
@@ -224,7 +224,7 @@ function YouAccountRadioGroup() {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = stateFromStores(18235);
+  let obj2 = stateFromStores(18249);
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
   let obj3 = stateFromStores(504);
   const items1 = [StreamerModeStore];

@@ -1,14 +1,14 @@
-// Module ID: 14611
-// Function ID: 14612
+// Module ID: 14612
+// Function ID: 14613
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1385, 10982, 11450, 504, 11449, 2]
+// Dependencies: [1385, 10982, 11451, 504, 11450, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 14611 (useInappropriateConversationsTiers)
+// Module 14612 (useInappropriateConversationsTiers)
 import get_initialized from "get initialized" /* 504 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10982 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 11449 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11450 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 11450 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11451 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

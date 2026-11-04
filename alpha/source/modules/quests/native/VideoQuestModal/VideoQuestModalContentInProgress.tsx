@@ -1,9 +1,9 @@
-// Module ID: 17344
-// Function ID: 17345
+// Module ID: 17356
+// Function ID: 17357
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [32, 19, 17, 6916, 1083, 21, 671, 575, 17345, 5141, 1377, 9845, 1652, 5378, 1627, 7428, 5207, 17346, 17361, 17362, 17341, 17363, 6162, 7121, 5761, 17364, 5851, 5768, 9855, 8168, 1113, 9309, 10990, 9831, 14895, 17308, 8982, 5723, 17365, 10989, 17188, 17184, 17186, 14978, 9906, 17340, 5382, 17366, 2123, 9867, 8006, 9834, 9837, 6923, 8011, 6919, 9076, 17367, 9828, 17368, 6924, 2]
+// Dependencies: [32, 19, 17, 6916, 1083, 21, 671, 575, 17357, 5141, 1377, 9845, 1652, 5378, 1627, 7428, 5207, 17358, 17373, 17374, 17353, 17375, 6162, 7121, 5761, 17376, 5851, 5768, 9855, 8168, 1113, 9309, 10990, 9831, 14896, 17320, 8982, 5723, 17377, 10989, 17200, 17196, 17198, 14979, 9906, 17352, 5382, 17378, 2123, 9867, 8006, 9834, 9837, 6923, 8011, 6919, 9076, 17379, 9828, 17380, 6924, 2]
 
-// Module 17344 (VideoQuestModalContentInProgress)
+// Module 17356 (VideoQuestModalContentInProgress)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
@@ -666,7 +666,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
   ({ contentWidth, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen } = arg0);
   let tmp = sourceQuestContent;
   let tmp2 = dependencyMap;
-  let obj = sourceQuestContent(17340);
+  let obj = sourceQuestContent(17352);
   const quest = obj.useVideoQuestModalContext().quest;
   items = [quest];
   items1 = [quest];
@@ -686,7 +686,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { quest };
-    const tmp2 = asyncRequire(17366, dependencyMap.paths);
+    const tmp2 = asyncRequire(17378, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
   let obj2 = sourceQuestContent(9867);
@@ -719,7 +719,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
       showShareActionSheet(obj2, "Video Quest Modal - " + quest.id);
     }
   }, items3);
-  const obj4 = sourceQuestContent(17367);
+  const obj4 = sourceQuestContent(17379);
   const videoQuestClickCtaAndMaybeCloseModal = obj4.useVideoQuestClickCtaAndMaybeCloseModal({ quest, onClose, sourceQuestContent });
   const items4 = [videoQuestClickCtaAndMaybeCloseModal];
   const items5 = [videoQuestClickCtaAndMaybeCloseModal];
@@ -731,12 +731,12 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const obj2 = { questId: quest.id };
     const result = obj.openRewardDetailsBottomSheet(obj2);
   }, items6);
-  const obj5 = sourceQuestContent(17368);
+  const obj5 = sourceQuestContent(17380);
   const videoExternallyPaused = obj5.useVideoExternallyPaused(quest.id, tmp11);
   const tmp19 = quest.config.taskConfigV2.tasks[sourceQuestContent(undefined, 6924).FirstPartyQuestTaskTypes.WATCH_VIDEO_ON_MOBILE];
   let tmp20 = null == tmp19;
   if (!tmp20) {
-    const tmpResult = tmp(14895);
+    const tmpResult = tmp(14896);
     tmp20 = "portrait" === tmpResult.getVideoOrientation(tmp19);
   }
   const obj6 = { quest, captionsEnabled: tmp6, contentWidth, handleClose: onClose, handleAdvertiserDetailsPress: callback3, handlePrimaryCtaPress: callback4, handleRewardDetailsPress: callback5, handleShareQuest: callback2, handleOpenTranscript: callback1, handleToggleCaptions: callback, isFullscreen, onNavigateToPostWatchVideo, onEnd, setIsFullscreen, externallyPaused: videoExternallyPaused, sourceQuestContent, hasCaptionAsset: null != memo, hasTranscriptAsset: null != memo1, isShareable: isShareableQuestResult };

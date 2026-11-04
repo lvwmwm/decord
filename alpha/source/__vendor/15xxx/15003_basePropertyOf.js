@@ -1,17 +1,10 @@
 // Module ID: 15003
 // Function ID: 15004
 // Name: basePropertyOf
-// Dependencies: []
+// Dependencies: [15004]
 
 // Module 15003 (basePropertyOf)
+import basePropertyOf from "basePropertyOf" /* 15004 */;
 
-export default function basePropertyOf(arg0) {
-  let closure_0 = arg0;
-  return (arg0) => {
-    let tmp2;
-    if (null != closure_0) {
-      tmp2 = tmp[arg0];
-    }
-    return tmp2;
-  };
-};
+
+export default basePropertyOf({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" });

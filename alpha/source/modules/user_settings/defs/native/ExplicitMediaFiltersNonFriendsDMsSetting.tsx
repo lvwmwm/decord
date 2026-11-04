@@ -1,18 +1,18 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 16980
+// Function ID: 16981
 // Name: ExplicitMediaFiltersNonFriendsDMsSetting
-// Dependencies: [8573, 16964, 8828, 7610, 1113, 16965, 11728, 16967, 2]
+// Dependencies: [8573, 16976, 8828, 7610, 1113, 16977, 11729, 16979, 2]
 // Exports: onObscuredContentNonFriendsDmOnPress, useObscuredContentNonFriendsDmSettingValue
 
-// Module 16968 (ExplicitMediaFiltersNonFriendsDMsSetting)
+// Module 16980 (ExplicitMediaFiltersNonFriendsDMsSetting)
 import intl4 from "intl" /* 1113 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7610 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8828 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16964 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16965 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16967 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16976 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16977 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16979 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 function useObscuredContentNonFriendsDmSettingValue() {

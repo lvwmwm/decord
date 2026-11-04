@@ -1,10 +1,10 @@
-// Module ID: 14426
-// Function ID: 14427
+// Module ID: 14427
+// Function ID: 14428
 // Name: useChatPlaceholderAnimatedStyles
 // Dependencies: [5142, 1187, 504, 1652, 5378, 5381, 2]
 // Exports: default
 
-// Module 14426 (useChatPlaceholderAnimatedStyles)
+// Module 14427 (useChatPlaceholderAnimatedStyles)
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;

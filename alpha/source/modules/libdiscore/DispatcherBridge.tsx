@@ -1,9 +1,9 @@
-// Module ID: 20413
-// Function ID: 20414
+// Module ID: 20426
+// Function ID: 20427
 // Name: DispatcherBridge
-// Dependencies: [5764, 6932, 6973, 15120, 502, 5047, 5012, 1072, 3, 5018, 5016, 1252, 572, 2122, 1242, 2]
+// Dependencies: [5764, 6932, 6973, 15121, 502, 5047, 5012, 1072, 3, 5018, 5016, 1252, 572, 2122, 1242, 2]
 
-// Module 20413 (DispatcherBridge)
+// Module 20426 (DispatcherBridge)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -11,7 +11,7 @@ import libdiscoreExperiments from "libdiscoreExperiments" /* 5016 */;
 import DevSettingsStore from "DevSettingsStore" /* 5764 */;
 import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6932 */;
 import GuildStickersStore from "GuildStickersStore" /* 6973 */;
-import NoteStore from "NoteStore" /* 15120 */;
+import NoteStore from "NoteStore" /* 15121 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;

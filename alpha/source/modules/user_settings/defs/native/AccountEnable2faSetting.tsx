@@ -1,16 +1,16 @@
-// Module ID: 16890
-// Function ID: 16891
+// Module ID: 16902
+// Function ID: 16903
 // Name: AccountEnable2faSetting
-// Dependencies: [1385, 8573, 16818, 16891, 6093, 1113, 11728, 2]
+// Dependencies: [1385, 8573, 16830, 16903, 6093, 1113, 11729, 2]
 
-// Module 16890 (AccountEnable2faSetting)
+// Module 16902 (AccountEnable2faSetting)
 import intl3 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 16818 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16891 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 16830 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16903 */;
 import UserStore from "UserStore" /* 1385 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

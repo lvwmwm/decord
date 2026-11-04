@@ -1,10 +1,10 @@
-// Module ID: 16212
-// Function ID: 16213
+// Module ID: 16225
+// Function ID: 16226
 // Name: Collapsible
 // Dependencies: [32, 19, 17, 21, 5141, 575, 1652, 5771, 2]
 // Exports: default
 
-// Module 16212 (Collapsible)
+// Module 16225 (Collapsible)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;

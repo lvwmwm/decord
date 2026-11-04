@@ -1,16 +1,16 @@
-// Module ID: 17473
-// Function ID: 17474
+// Module ID: 17485
+// Function ID: 17486
 // Name: InputModeSetting
-// Dependencies: [2135, 8573, 5902, 504, 1113, 11728, 12142, 2]
+// Dependencies: [2135, 8573, 5902, 504, 1113, 11729, 12143, 2]
 
-// Module 17473 (InputModeSetting)
+// Module 17485 (InputModeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
 import Constants from "Constants" /* 5902 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
-import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 12142 */;
+import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 12143 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

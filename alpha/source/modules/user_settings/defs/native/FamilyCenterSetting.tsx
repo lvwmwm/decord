@@ -1,19 +1,19 @@
-// Module ID: 17003
-// Function ID: 17004
+// Module ID: 17015
+// Function ID: 17016
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1072, 21, 17004, 17005, 8166, 575, 1113, 2667, 11728, 8802, 17008, 2]
+// Dependencies: [19, 1072, 21, 17016, 17017, 8166, 575, 1113, 2667, 11729, 8802, 17020, 2]
 
-// Module 17003 (FamilyCenterSetting)
+// Module 17015 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2667 from "module_2667" /* 2667 */;
 import GroupIcon from "GroupIcon" /* 8802 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 17004 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 17005 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 17016 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 17017 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

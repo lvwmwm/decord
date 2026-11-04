@@ -1,10 +1,10 @@
-// Module ID: 17944
-// Function ID: 17945
+// Module ID: 17956
+// Function ID: 17957
 // Name: SimpleRequestOTPActionSheet
-// Dependencies: [5, 32, 19, 17, 1385, 7031, 1072, 1387, 21, 3, 1627, 10740, 504, 11574, 7859, 2112, 10090, 14645, 5382, 6094, 7872, 6162, 5761, 7118, 5768, 10874, 1266, 10738, 5396, 10867, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 7031, 1072, 1387, 21, 3, 1627, 10740, 504, 11575, 7859, 2112, 10090, 14646, 5382, 6094, 7872, 6162, 5761, 7118, 5768, 10874, 1266, 10738, 5396, 10867, 2]
 // Exports: default
 
-// Module 17944 (SimpleRequestOTPActionSheet)
+// Module 17956 (SimpleRequestOTPActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -42,7 +42,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj7;
   let tmp16;
   let tmp17;
-  const f113274 = () => {
+  const f113716 = () => {
     let items;
     if (null == c5) {
       items = ["Loading...", "Loading..."];
@@ -130,7 +130,7 @@ function GiftPurchaseSKUView(selectedSkuId) {
   let obj3 = selectedSkuId(504);
   let items = [closure_8];
   const stateFromStores = obj3.useStateFromStores(items, () => SKUStore.get(selectedSkuId));
-  let obj4 = selectedSkuId(11574);
+  let obj4 = selectedSkuId(11575);
   const fetchCollectiblesProduct = obj4.useFetchCollectiblesProduct(selectedSkuId);
   const product = fetchCollectiblesProduct.product;
   react = product;
@@ -280,10 +280,10 @@ function GiftPurchaseSKUView(selectedSkuId) {
     giftParams: obj7
   };
   obj7 = { isGift: true, options: { recipient_id: giftRecipientId, custom_message: giftMessage, gift_style: giftStyle } };
-  closure_8 = tmp(14645)(obj6);
+  closure_8 = tmp(14646)(obj6);
   const items5 = [product];
-  [tmp16, tmp17] = tmp3(obj.useMemo(f113274, items5), 2);
-  tmp3(obj.useMemo(f113274, items5), 2);
+  [tmp16, tmp17] = tmp3(obj.useMemo(f113716, items5), 2);
+  tmp3(obj.useMemo(f113716, items5), 2);
   if (!isFetching) {
     isFetching = first;
   }

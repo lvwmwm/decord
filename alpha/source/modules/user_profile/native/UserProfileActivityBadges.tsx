@@ -1,10 +1,10 @@
-// Module ID: 15066
-// Function ID: 15067
+// Module ID: 15067
+// Function ID: 15068
 // Name: UserProfileActivityBadges
-// Dependencies: [19, 17, 21, 5141, 12576, 8023, 10935, 8819, 5896, 10930, 10936, 9877, 15067, 15068, 575, 15069, 8859, 8802, 5761, 11861, 2]
+// Dependencies: [19, 17, 21, 5141, 12577, 8023, 10935, 8819, 5896, 10930, 10936, 9877, 15068, 15069, 575, 15070, 8859, 8802, 5761, 11862, 2]
 // Exports: EpisodeBadge, PartyBadge, TimestampBadge
 
-// Module 15066 (UserProfileActivityBadges)
+// Module 15067 (UserProfileActivityBadges)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5761 */;
@@ -12,9 +12,9 @@ import ActivityTypes from "ActivityTypes" /* 5896 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8023 */;
 import utils from "utils" /* 8859 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 10935 */;
-import useTimestampTickedNow from "useTimestampTickedNow" /* 15067 */;
-import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 15068 */;
-import Badges from "Badges" /* 15069 */;
+import useTimestampTickedNow from "useTimestampTickedNow" /* 15068 */;
+import shouldShowActivityTimeBarDefault from "shouldShowActivityTimeBar" /* 15069 */;
+import Badges from "Badges" /* 15070 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -63,7 +63,7 @@ export function TimestampBadge(activity) {
         flag2 = false;
       }
       if (flag2) {
-        AppsIcon = tmp2(12576).HourglassIcon;
+        AppsIcon = tmp2(12577).HourglassIcon;
       } else {
         if (!isEmbeddedActivityDefault(activity)) {
           const tmp2Result = conjurePresenceActivity;
@@ -129,7 +129,7 @@ export function EpisodeBadge(activity) {
   if (null != episodeBadgeText) {
     const obj = { style: tmp.container, children: items };
     const obj2 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const TopicsIcon = tmp2(11861).TopicsIcon;
+    const TopicsIcon = tmp2(11862).TopicsIcon;
     items = [React3(TopicsIcon, obj2), ];
     const obj3 = { variant: "body-sm/medium", color: "text-muted", children: episodeBadgeText };
     items[1] = React3(Text_Text.Text, obj3);

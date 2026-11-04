@@ -1,20 +1,20 @@
-// Module ID: 11467
-// Function ID: 11468
+// Module ID: 11468
+// Function ID: 11469
 // Name: WasThisHelpfulSection
-// Dependencies: [19, 17, 10982, 11443, 21, 5141, 575, 563, 11457, 5846, 1113, 11468, 11456, 5761, 1187, 11470, 11471, 2]
+// Dependencies: [19, 17, 10982, 11444, 21, 5141, 575, 563, 11458, 5846, 1113, 11469, 11457, 5761, 1187, 11471, 11472, 2]
 // Exports: default
 
-// Module 11467 (WasThisHelpfulSection)
+// Module 11468 (WasThisHelpfulSection)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
 import ChannelSafetyWarningsStore2 from "ChannelSafetyWarningsStore" /* 10982 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11456 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11457 */;
-import ShieldIcon from "ShieldIcon" /* 11468 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11457 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11458 */;
+import ShieldIcon from "ShieldIcon" /* 11469 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 11443 */;
+import Constants from "Constants" /* 11444 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 11820
+// Function ID: 11821
 // Name: openGroupDMAddMembers
-// Dependencies: [4990, 1385, 11820, 11821, 11823, 11824, 5845, 5322, 2]
+// Dependencies: [4990, 1385, 11821, 11822, 11824, 11825, 5845, 5322, 2]
 // Exports: default, showGroupDMAddMembersRoadblock
 
-// Module 11819 (openGroupDMAddMembers)
+// Module 11820 (openGroupDMAddMembers)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5322 */;
 import ToastUtils from "ToastUtils" /* 5845 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11820 */;
-import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11821 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11824 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11821 */;
+import getGroupDMRecipientLimitDefault from "getGroupDMRecipientLimit" /* 11822 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 11825 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
       }
       const obj = { memberCount: num + 1, recipientLimit: getGroupDMRecipientLimitDefault({ useNitroCapExperiment: true }), audience: getGroupDMNitroAudience(premiumType, flag), showUpsell: tmp5Result.getConfig(obj2).enabled };
       premiumType = undefined;
-      getGroupDMNitroAudience = tmp2(11820).getGroupDMNitroAudience;
+      getGroupDMNitroAudience = tmp2(11821).getGroupDMNitroAudience;
       GroupDMNitroUpsellModel;
       const tmp5 = importDefault;
       if (currentUser != null) {
@@ -50,7 +50,7 @@ function getGroupDMAddMembersAction(id, CHANNEL_TEXT_AREA) {
         flag = false;
       }
       obj2 = { location: CHANNEL_TEXT_AREA };
-      tmp5Result = tmp5(11823);
+      tmp5Result = tmp5(11824);
       return getGroupDMAddMembersEntryAction(obj);
     }
   }

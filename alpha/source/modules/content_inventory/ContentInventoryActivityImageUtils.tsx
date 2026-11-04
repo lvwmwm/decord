@@ -1,10 +1,10 @@
-// Module ID: 15056
-// Function ID: 15057
+// Module ID: 15057
+// Function ID: 15058
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 2167, 1072, 2147, 9053, 8862, 1113, 15057, 7620, 15059, 10941, 1411, 15063, 6709, 15064, 10935, 7466, 504, 1252, 9056, 2]
+// Dependencies: [19, 2167, 1072, 2147, 9053, 8862, 1113, 15058, 7620, 15060, 10941, 1411, 15064, 6709, 15065, 10935, 7466, 504, 1252, 9056, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 15056 (ContentInventoryActivityImageUtils)
+// Module 15057 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -18,9 +18,9 @@ import ContentInventoryTypes from "ContentInventoryTypes" /* 9053 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 9056 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 10935 */;
 import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10941 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 15057 */;
-import isOnXboxDefault from "isOnXbox" /* 15063 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 15064 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 15058 */;
+import isOnXboxDefault from "isOnXbox" /* 15064 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 15065 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -239,7 +239,7 @@ function useRichImageForActivity(activity, activityApplication) {
   }
   const data = useGame(canonicalGameId).data;
   if (null == activity) {
-    return { largeImage: "PX_8", smallImage: "__closure" };
+    return { largeImage: "Object", smallImage: "Array" };
   } else {
     let large_image;
     if (activity != null) {

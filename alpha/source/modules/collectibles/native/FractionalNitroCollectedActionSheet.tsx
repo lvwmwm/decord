@@ -1,10 +1,10 @@
-// Module ID: 15282
-// Function ID: 15283
+// Module ID: 15283
+// Function ID: 15284
 // Name: FractionalNitroCollectedActionSheet
-// Dependencies: [19, 17, 1072, 1387, 21, 5141, 575, 9688, 5851, 15283, 5377, 7901, 5148, 10772, 10773, 5761, 1113, 2190, 5843, 5396, 7756, 7121, 14727, 5768, 5382, 5731, 2]
+// Dependencies: [19, 17, 1072, 1387, 21, 5141, 575, 9688, 5851, 15284, 5377, 7901, 5148, 10773, 10774, 5761, 1113, 2190, 5843, 5396, 7756, 7121, 14728, 5768, 5382, 5731, 2]
 // Exports: default
 
-// Module 15282 (FractionalNitroCollectedActionSheet)
+// Module 15283 (FractionalNitroCollectedActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import shared from "shared" /* 5148 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import FastImageDefault from "FastImage" /* 5851 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9688 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15283 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15284 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -109,9 +109,9 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
       const tmp11 = FastImageDefault;
       const obj2 = shared;
       if (obj2.isThemeDark(closure_3)) {
-        tmp9Result = tmp9(10772);
-      } else {
         tmp9Result = tmp9(10773);
+      } else {
+        tmp9Result = tmp9(10774);
       }
       const obj3 = { source: tmp9Result };
       tmpResult = tmp(tmp11, obj3);
@@ -178,7 +178,7 @@ export default function FractionalNitroCollectedActionSheet(skuId) {
   const obj5 = { style: tmp.questionIconContainer, onPress: callback, children: tmp15(CircleQuestionIcon, obj6) };
   const PressableOpacity = tmp5(7121).PressableOpacity;
   obj6 = { style: tmp.questionIcon, color: tmp2(575).colors.WHITE };
-  CircleQuestionIcon = tmp5(14727).CircleQuestionIcon;
+  CircleQuestionIcon = tmp5(14728).CircleQuestionIcon;
   items2[1] = tmp15(PressableOpacity, obj5);
   const items3 = [tmp10(tmp11, obj4), , ];
   const obj7 = { style: tmp.body, children: tmp10Result };

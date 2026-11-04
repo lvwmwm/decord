@@ -1,11 +1,11 @@
-// Module ID: 11435
-// Function ID: 11436
+// Module ID: 11436
+// Function ID: 11437
 // Name: useIsChannelFullyOpen
-// Dependencies: [19, 11430, 2]
+// Dependencies: [19, 11431, 2]
 // Exports: default
 
-// Module 11435 (useIsChannelFullyOpen)
-import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11430 */;
+// Module 11436 (useIsChannelFullyOpen)
+import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11431 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

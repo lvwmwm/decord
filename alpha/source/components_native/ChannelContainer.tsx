@@ -1,7 +1,7 @@
 // Module ID: 11188
 // Function ID: 11189
 // Name: ChannelContainer
-// Dependencies: [19, 17, 5074, 4990, 5044, 1072, 4987, 21, 5141, 5325, 11189, 504, 11379, 6867, 5171, 4974, 11380, 11381, 11397, 2]
+// Dependencies: [19, 17, 5074, 4990, 5044, 1072, 4987, 21, 5141, 5325, 11189, 504, 11380, 6867, 5171, 4974, 11381, 11382, 11398, 2]
 // Exports: ChannelContainer
 
 // Module 11188 (ChannelContainer)
@@ -27,7 +27,7 @@ let tmp;
 let tmp2;
 let unpackModuleId;
 const NotificationsDefault = tmp2(11189);
-const useChannelStylesShared = tmp(11380);
+const useChannelStylesShared = tmp(11381);
 function NotificationsContainer() {
   let tmp4 = null;
   const tmp = closure_12();
@@ -79,7 +79,7 @@ export function ChannelContainer(children) {
   let voiceChannelId = stateFromStoresObject.voiceChannelId;
   let tmp5 = !isStageChannel;
   if (isStageChannel) {
-    tmp5 = channelId(11379)(voiceChannelId);
+    tmp5 = channelId(11380)(voiceChannelId);
   }
   const items1 = [LurkingStore];
   let isPrivateResult = null != channel;
@@ -128,13 +128,13 @@ export function ChannelContainer(children) {
     tmp15 = null;
     if (stateFromStores) {
       const obj4 = { channel };
-      tmp15 = closure_10(tmp4(11381), obj4);
+      tmp15 = closure_10(tmp4(11382), obj4);
     }
   }
   items3 = [tmp15, children, ];
   if (tmp5) {
     const obj5 = { style: channelStyles.callPTTButton };
-    tmp5 = closure_10(tmp4(11397), obj5);
+    tmp5 = closure_10(tmp4(11398), obj5);
   }
   items3[2] = tmp5;
   items4 = [closure_11(closure_4, obj3), closure_10(NotificationsContainer, {})];

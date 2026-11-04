@@ -1,10 +1,10 @@
-// Module ID: 19885
-// Function ID: 19886
+// Module ID: 19899
+// Function ID: 19900
 // Name: BlockedUserInGdmActionSheet
-// Dependencies: [19, 17, 4990, 1385, 15855, 1072, 21, 5141, 575, 5761, 6176, 1113, 504, 1380, 1187, 12322, 10977, 7476, 5869, 1252, 7502, 5851, 11460, 7201, 7116, 5768, 5382, 19886, 7625, 2]
+// Dependencies: [19, 17, 4990, 1385, 15868, 1072, 21, 5141, 575, 5761, 6176, 1113, 504, 1380, 1187, 12323, 10977, 7476, 5869, 1252, 7502, 5851, 11461, 7201, 7116, 5768, 5382, 19900, 7625, 2]
 // Exports: default
 
-// Module 19885 (BlockedUserInGdmActionSheet)
+// Module 19899 (BlockedUserInGdmActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,11 +15,11 @@ import Text_Text from "Text/Text" /* 5761 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
 import TableRow2 from "TableRow" /* 7116 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
-import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19886 */;
+import SharedSpacesWarningActionCreators from "SharedSpacesWarningActionCreators" /* 19900 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import UserStore from "UserStore" /* 1385 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15855 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15868 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -146,7 +146,7 @@ function UserCalloutAvatars(userIds) {
       const Avatar = tmp(1187).Avatar;
       tmp8 = closure_10(Avatar, obj3);
     } else {
-      tmp8 = closure_10(tmp(12322).UserIcon, {});
+      tmp8 = closure_10(tmp(12323).UserIcon, {});
     }
     tmp5 = tmp8;
   } else {

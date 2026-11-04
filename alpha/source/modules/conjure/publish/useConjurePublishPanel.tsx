@@ -1,10 +1,10 @@
-// Module ID: 12308
-// Function ID: 12309
+// Module ID: 12309
+// Function ID: 12310
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 5012, 5073, 6979, 1072, 6980, 3995, 1113, 12309, 12310, 12312, 11052, 12313, 504, 9176, 11054, 2]
+// Dependencies: [5, 32, 19, 5012, 5073, 6979, 1072, 6980, 3995, 1113, 12310, 12311, 12313, 11052, 12314, 504, 9176, 11054, 2]
 // Exports: conjurePublishComponents, default
 
-// Module 12308 (useConjurePublishPanel)
+// Module 12309 (useConjurePublishPanel)
 import _modDef3995 from "module_3995" /* 3995 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
@@ -22,7 +22,7 @@ let _require, c1, c4, closure_2, importDefault;
 
 let c10;
 let c9;
-const f101601 = (item) => {
+const f101733 = (item) => {
   let intl;
   let tmp;
   let tmp2;
@@ -242,7 +242,7 @@ export default function useConjurePublishPanel(id, guildId) {
     initialChannelNames: arr4,
     channels,
     appChannelsPrivate: tmp25,
-    components: found.map(f101601),
+    components: found.map(f101733),
     devicePermissions: items4,
     note: stringResult,
     sharing: tmp27,
@@ -323,6 +323,6 @@ export function conjurePublishComponents(arg0) {
     [tmp] = item;
     return items.includes(tmp);
   });
-  return found.map(f101601);
+  return found.map(f101733);
 }
 export const CONJURE_PUBLISH_PERMISSION_LABELS = obj;

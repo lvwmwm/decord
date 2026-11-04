@@ -1,16 +1,16 @@
-// Module ID: 16670
-// Function ID: 16671
+// Module ID: 16682
+// Function ID: 16683
 // Name: DevToolsNavigator
-// Dependencies: [19, 17, 21, 10035, 7306, 16671, 9961, 17996, 13216, 5761, 575, 17818, 16827, 5382, 6879, 5330, 2]
+// Dependencies: [19, 17, 21, 10035, 7306, 16683, 9961, 18008, 13217, 5761, 575, 17830, 16839, 5382, 6879, 5330, 2]
 // Exports: navigateToDevTools
 
-// Module 16670 (DevToolsNavigator)
+// Module 16682 (DevToolsNavigator)
 import react_native from "react-native" /* 17 */;
 import Types from "Types" /* 5330 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import HeaderShared from "HeaderShared" /* 9961 */;
-import SettingHookHarnessDefault from "SettingHookHarness" /* 16671 */;
+import SettingHookHarnessDefault from "SettingHookHarness" /* 16683 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 10035 */;
@@ -23,7 +23,7 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 let tmp6;
-const DevToolsContentDefault = tmp6(17996);
+const DevToolsContentDefault = tmp6(18008);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
 let Navigator = NativeStackView.createNativeStackNavigator();
@@ -93,8 +93,8 @@ let closure_8 = react.memo(function DevToolsNavigator(screenKey) {
   };
   items1[0] = tmp5(tmp7.Screen, obj4);
   const obj5 = {};
-  let merged = Object.assign(tmp(17818).DevToolsScreens);
-  let merged1 = Object.assign(tmp(17818).PerformanceTestingScreens);
+  let merged = Object.assign(tmp(17830).DevToolsScreens);
+  let merged1 = Object.assign(tmp(17830).PerformanceTestingScreens);
   const entries1 = entries(obj5);
   items1[1] = entries1.map((item) => {
     let tmp;
@@ -108,7 +108,7 @@ let closure_8 = react.memo(function DevToolsNavigator(screenKey) {
     };
     return closure_1_4(Navigator.Screen, obj, tmp);
   });
-  let tmpResult = tmp(16827);
+  let tmpResult = tmp(16839);
   const designSystemScreens = tmpResult.getDesignSystemScreens();
   items1[2] = designSystemScreens.map((item) => {
     let tmp;

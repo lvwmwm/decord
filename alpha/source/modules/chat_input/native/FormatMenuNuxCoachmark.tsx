@@ -1,10 +1,10 @@
-// Module ID: 14210
-// Function ID: 14211
+// Module ID: 14211
+// Function ID: 14212
 // Name: FormatMenuNuxCoachmark
-// Dependencies: [32, 19, 17, 4987, 21, 5141, 575, 1377, 13034, 7247, 7709, 4974, 14211, 1113, 5761, 10133, 2]
+// Dependencies: [32, 19, 17, 4987, 21, 5141, 575, 1377, 13035, 7247, 7709, 4974, 14212, 1113, 5761, 10133, 2]
 // Exports: default
 
-// Module 14210 (FormatMenuNuxCoachmark)
+// Module 14211 (FormatMenuNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -22,7 +22,7 @@ let _require, dependencyMap, importDefault;
 
 let num;
 let tmp5;
-const useChatInputKeyboardOffsetDefault = tmp5(14211);
+const useChatInputKeyboardOffsetDefault = tmp5(14212);
 let _slicedToArray = _slicedToArray_mod;
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;

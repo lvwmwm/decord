@@ -1,10 +1,10 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14775
+// Function ID: 14776
 // Name: showAppChannelReportErrorToast
 // Dependencies: [5845, 1113, 2]
 // Exports: default
 
-// Module 14774 (showAppChannelReportErrorToast)
+// Module 14775 (showAppChannelReportErrorToast)
 import intl2 from "intl" /* 1113 */;
 import ToastUtils from "ToastUtils" /* 5845 */;
 import size from "module_2" /* 2 */;

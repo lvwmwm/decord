@@ -1,15 +1,15 @@
-// Module ID: 14785
-// Function ID: 14786
+// Module ID: 14786
+// Function ID: 14787
 // Name: HomeChannelHeader
-// Dependencies: [19, 17, 21, 5141, 575, 1187, 14601, 5761, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 1187, 14602, 5761, 1113, 2]
 
-// Module 14785 (HomeChannelHeader)
+// Module 14786 (HomeChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5761 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14601 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14602 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

@@ -13,11 +13,11 @@ import ConnectedAppsStore from "ConnectedAppsStore" /* 7413 */;
 import MessageStore from "MessageStore" /* 6196 */;
 import size from "module_2" /* 2 */;
 
-const f90976 = (application) => null == application.application.parent_id;
+const f91107 = (application) => null == application.application.parent_id;
 function recomputeFromAppTokens() {
   const items = [...map.values()];
   closure_8 = items;
-  closure_9 = items.filter(f90976);
+  closure_9 = items.filter(f91107);
 }
 function updateFetchStates(FETCHED, applicationIds) {
   if (null == applicationIds) {
@@ -153,7 +153,7 @@ const obj2 = {
     const result = map.set(application.id, obj);
     const items = [...map.values()];
     closure_8 = items;
-    closure_9 = items.filter(f90976);
+    closure_9 = items.filter(f91107);
   },
   OAUTH2_TOKEN_DELETE: function handleOAuth2TokenDelete(id) {
     id = id.id;
@@ -164,7 +164,7 @@ const obj2 = {
         const items = [];
         HermesBuiltin.arraySpread(items, map.values(), 0);
         closure_8 = items;
-        closure_9 = items.filter(f90976);
+        closure_9 = items.filter(f91107);
       }
     }
     return false;

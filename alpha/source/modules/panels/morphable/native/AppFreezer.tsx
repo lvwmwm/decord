@@ -1,10 +1,10 @@
-// Module ID: 18855
-// Function ID: 18856
+// Module ID: 18869
+// Function ID: 18870
 // Name: AppFreezer
 // Dependencies: [19, 9005, 21, 7101, 6124, 2]
 // Exports: default
 
-// Module 18855 (AppFreezer)
+// Module 18869 (AppFreezer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 6124 */;
 import NativeViewDefault from "NativeView" /* 7101 */;

@@ -1,14 +1,14 @@
-// Module ID: 12101
-// Function ID: 12102
+// Module ID: 12102
+// Function ID: 12103
 // Name: HandRequestDenyIcon
-// Dependencies: [19, 21, 575, 5850, 12102, 2]
+// Dependencies: [19, 21, 575, 5850, 12103, 2]
 // Exports: HandRequestDenyIcon
 
-// Module 12101 (HandRequestDenyIcon)
+// Module 12102 (HandRequestDenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 12102 */;
+import AssetRegistry from "AssetRegistry" /* 12103 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

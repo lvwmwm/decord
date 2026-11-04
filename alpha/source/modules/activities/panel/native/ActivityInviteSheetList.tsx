@@ -1,10 +1,10 @@
-// Module ID: 19405
-// Function ID: 19406
+// Module ID: 19419
+// Function ID: 19420
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1072, 21, 5141, 6858, 575, 1187, 1113, 7121, 5382, 5323, 5761, 19406, 5743, 7430, 2]
+// Dependencies: [19, 1072, 21, 5141, 6858, 575, 1187, 1113, 7121, 5382, 5323, 5761, 19420, 5743, 7430, 2]
 // Exports: default
 
-// Module 19405 (ActivityInviteSheetList)
+// Module 19419 (ActivityInviteSheetList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import RootNavigationRef from "RootNavigationRef" /* 5323 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import Pressables from "Pressables" /* 7121 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 19406 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 19420 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

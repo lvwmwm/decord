@@ -1,9 +1,9 @@
-// Module ID: 12789
-// Function ID: 12790
+// Module ID: 12790
+// Function ID: 12791
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1623, 1072, 21, 1624, 1377, 5141, 575, 1113, 12624, 5207, 5318, 5400, 1652, 5384, 5385, 1252, 5398, 6156, 1705, 5729, 1627, 6153, 5331, 2]
+// Dependencies: [32, 19, 17, 1623, 1072, 21, 1624, 1377, 5141, 575, 1113, 12625, 5207, 5318, 5400, 1652, 5384, 5385, 1252, 5398, 6156, 1705, 5729, 1627, 6153, 5331, 2]
 
-// Module 12789 (MediaKeyboardBottomSheet)
+// Module 12790 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -92,7 +92,7 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
   let tmp2 = onClose;
   const tmp3 = dependencyMap;
   let tmp = closure_13();
-  let tmp4 = onClose(12624)({ forceMaxHeight: false });
+  let tmp4 = onClose(12625)({ forceMaxHeight: false });
   let tmp6 = transitionState === bottomSheetRef(5207).TransitionStates.YEETED;
   _slicedToArray = tmp6;
   let obj = isScreenReaderEnabled;

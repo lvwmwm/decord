@@ -1,10 +1,10 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 16740
+// Function ID: 16741
 // Name: UserProfileEditTheme
-// Dependencies: [19, 17, 21, 5141, 575, 8898, 8941, 8856, 5988, 16729, 5761, 1113, 7121, 5382, 16730, 2123, 9906, 16731, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8898, 8941, 8856, 5988, 16741, 5761, 1113, 7121, 5382, 16742, 2123, 9906, 16743, 2]
 // Exports: default
 
-// Module 16728 (UserProfileEditTheme)
+// Module 16740 (UserProfileEditTheme)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
@@ -109,7 +109,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
                       return onChangeColors([null, null]);
                     }
                   };
-                  obj.openLazy(asyncRequire(16730, dependencyMap.paths), "Profile Theme", obj2);
+                  obj.openLazy(asyncRequire(16742, dependencyMap.paths), "Profile Theme", obj2);
                 },
           children: closure_5(onProfileThemeColorsChanged(tmp3[16]).MoreHorizontalIcon, obj6)
         };

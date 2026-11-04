@@ -1,10 +1,10 @@
-// Module ID: 15276
-// Function ID: 15277
+// Module ID: 15277
+// Function ID: 15278
 // Name: OrbCheckoutModalComponents
-// Dependencies: [19, 17, 7860, 7031, 1072, 1074, 21, 5141, 575, 6162, 7227, 5761, 1113, 9613, 14643, 15274, 563, 15277, 14641, 7556, 5377, 15278, 5768, 5148, 9679, 2]
+// Dependencies: [19, 17, 7860, 7031, 1072, 1074, 21, 5141, 575, 6162, 7227, 5761, 1113, 9613, 14644, 15275, 563, 15278, 14642, 7556, 5377, 15279, 5768, 5148, 9679, 2]
 // Exports: OrbCheckoutErrorCard, OrbCheckoutLegalFinePrint, OrbCheckoutOrderSummary, OrbCheckoutPaymentSourceDetails, OrbCheckoutPurchaseButton
 
-// Module 15276 (OrbCheckoutModalComponents)
+// Module 15277 (OrbCheckoutModalComponents)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -15,10 +15,10 @@ import Stack_Stack from "Stack/Stack" /* 6162 */;
 import CircleErrorIcon from "CircleErrorIcon" /* 7227 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7556 */;
 import SKUPreviewDefault from "SKUPreview" /* 9613 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14641 */;
-import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 14643 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15274 */;
-import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 15278 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14642 */;
+import OrbCheckoutAmountTagDefault from "OrbCheckoutAmountTag" /* 14644 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15275 */;
+import useVirtualCurrencyBalance from "useVirtualCurrencyBalance" /* 15279 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7860 */;
@@ -101,7 +101,7 @@ export function OrbCheckoutOrderSummary(skuId) {
   skuId = skuId.skuId;
   const orbPriceAmount = skuId.orbPriceAmount;
   const tmp = closure_12();
-  const obj = skuId(15274);
+  const obj = skuId(15275);
   if (obj.useOrbCheckoutModalContext().isOrdersCheckout) {
     tmp4 = orbPriceAmount;
   }
@@ -118,7 +118,7 @@ export function OrbCheckoutOrderSummary(skuId) {
     productLine = stateFromStores.productLine;
   }
   const tmp8 = productLine === SKUProductLines.COLLECTIBLES || isFractionalPremiumSku(skuId);
-  const tmp2Result4 = skuId(15277);
+  const tmp2Result4 = skuId(15278);
   const mobileCheckoutFlow = tmp2Result4.getMobileCheckoutFlow({ sku: stateFromStores, product: stateFromStores1, usesCollectiblesDetails: tmp8 });
   const obj2 = { style: tmp.topRowWrapper, children: items4 };
   const obj3 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", style: tmp.sectionTitle, children: intl.string(skuId(1113).t.hws7bC) };
@@ -171,7 +171,7 @@ export function OrbCheckoutPaymentSourceDetails(orbBalance) {
 export function OrbCheckoutLegalFinePrint() {
   let skuId;
   const tmp = closure_12();
-  let obj = skuId(15274);
+  let obj = skuId(15275);
   skuId = obj.useOrbCheckoutModalContext().skuId;
   const items = [skuId];
   const memo = react.useMemo(() => {

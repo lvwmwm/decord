@@ -1,16 +1,16 @@
-// Module ID: 19420
-// Function ID: 19421
+// Module ID: 19434
+// Function ID: 19435
 // Name: FramePanelFocusedView
-// Dependencies: [19, 6981, 6982, 5791, 21, 504, 19400, 19417, 19421, 11114, 18935, 12451, 12455, 2]
+// Dependencies: [19, 6981, 6982, 5791, 21, 504, 19414, 19431, 19435, 11114, 18949, 12452, 12456, 2]
 
-// Module 19420 (FramePanelFocusedView)
+// Module 19434 (FramePanelFocusedView)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 11114 */;
-import FrameRenderTargetDefault from "FrameRenderTarget" /* 12451 */;
-import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 18935 */;
-import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19400 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19417 */;
+import FrameRenderTargetDefault from "FrameRenderTarget" /* 12452 */;
+import ConjureFrameUpdateBarDefault from "ConjureFrameUpdateBar" /* 18949 */;
+import ActivityPanelFocusedView from "ActivityPanelFocusedView" /* 19414 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19431 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6981 */;
 import FramesConstants from "FramesConstants" /* 6982 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const FrameStackLevel = tmp2(12455);
+const FrameStackLevel = tmp2(12456);
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const jsx = Fragment.jsx;

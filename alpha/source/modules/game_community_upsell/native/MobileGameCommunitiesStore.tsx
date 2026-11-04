@@ -1,9 +1,9 @@
-// Module ID: 17860
-// Function ID: 17861
+// Module ID: 17872
+// Function ID: 17873
 // Name: MobileGameCommunitiesStore
 // Dependencies: [7661, 504, 572, 2]
 
-// Module 17860 (MobileGameCommunitiesStore)
+// Module 17872 (MobileGameCommunitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7661 */;

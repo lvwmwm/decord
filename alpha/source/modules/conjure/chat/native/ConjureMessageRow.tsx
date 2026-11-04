@@ -1,23 +1,23 @@
-// Module ID: 12850
-// Function ID: 12851
+// Module ID: 12851
+// Function ID: 12852
 // Name: ConjureMessageRow
-// Dependencies: [19, 17, 1385, 21, 5141, 12842, 12851, 12852, 575, 12807, 11030, 12821, 12416, 12854, 12340, 504, 12862, 12863, 12857, 12797, 12391, 12281, 12855, 5761, 1113, 12861, 12864, 12865, 12866, 12867, 12868, 12876, 3995, 12883, 12885, 12886, 12398, 12887, 12936, 12333, 12937, 12806, 12939, 12967, 12975, 12983, 12985, 12873, 12988, 12993, 12994, 12995, 2]
+// Dependencies: [19, 17, 1385, 21, 5141, 12843, 12852, 12853, 575, 12808, 11030, 12822, 12417, 12855, 12341, 504, 12863, 12864, 12858, 12798, 12392, 12282, 12856, 5761, 1113, 12862, 12865, 12866, 12867, 12868, 12869, 12877, 3995, 12884, 12886, 12887, 12399, 12888, 12937, 12334, 12938, 12807, 12940, 12968, 12976, 12984, 12986, 12874, 12989, 12994, 12995, 12996, 2]
 
-// Module 12850 (ConjureMessageRow)
+// Module 12851 (ConjureMessageRow)
 import nativeDefault from "native" /* 575 */;
 import conjureChatTurns from "conjureChatTurns" /* 11030 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12391 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12398 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12416 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 12797 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12807 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12821 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12842 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12851 */;
-import ConjureRepliedMessage from "ConjureRepliedMessage" /* 12852 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12857 */;
-import ConjureChatRestore from "ConjureChatRestore" /* 12862 */;
-import ConjureActivityBox from "ConjureActivityBox" /* 12887 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 12392 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12399 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12417 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 12798 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12808 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12822 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12843 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 12852 */;
+import ConjureRepliedMessage from "ConjureRepliedMessage" /* 12853 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 12858 */;
+import ConjureChatRestore from "ConjureChatRestore" /* 12863 */;
+import ConjureActivityBox from "ConjureActivityBox" /* 12888 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;

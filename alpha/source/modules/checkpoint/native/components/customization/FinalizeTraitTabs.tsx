@@ -1,17 +1,17 @@
-// Module ID: 13915
-// Function ID: 13916
+// Module ID: 13916
+// Function ID: 13917
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 6201, 21, 6569, 5382, 13916, 2123, 5141, 575, 1377, 1113, 13893, 5761, 5732, 13917, 3219, 11602, 2]
+// Dependencies: [19, 17, 6201, 21, 6569, 5382, 13917, 2123, 5141, 575, 1377, 1113, 13894, 5761, 5732, 13918, 3219, 11603, 2]
 // Exports: FinalizeTraitTabs
 
-// Module 13915 (FinalizeTraitTabs)
+// Module 13916 (FinalizeTraitTabs)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6569 */;
-import CheckpointPressable from "CheckpointPressable" /* 13893 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13917 */;
+import CheckpointPressable from "CheckpointPressable" /* 13894 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13918 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 6201 */;
@@ -209,7 +209,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
         } else {
           const obj = { selectedOption: activeCustomizationOption, onSelectOption: importDefault };
           const obj2 = ActionSheetActionCreatorsDefault;
-          obj2.openLazy(asyncRequire(13916, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+          obj2.openLazy(asyncRequire(13917, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
         }
       }
     },

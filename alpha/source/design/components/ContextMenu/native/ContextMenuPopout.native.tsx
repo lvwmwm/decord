@@ -1,10 +1,10 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 16106
+// Function ID: 16107
 // Name: ContextMenuPopout
-// Dependencies: [32, 19, 17, 21, 5141, 575, 10055, 1652, 5207, 5743, 1493, 1377, 5771, 1705, 10054, 5428, 6157, 5761, 16091, 5398, 5734, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 10055, 1652, 5207, 5743, 1493, 1377, 5771, 1705, 10054, 5428, 6157, 5761, 16104, 5398, 5734, 1113, 2]
 // Exports: ContextMenuPopout
 
-// Module 16093 (ContextMenuPopout)
+// Module 16106 (ContextMenuPopout)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1652 from "module_1652" /* 1652 */;

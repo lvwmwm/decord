@@ -1,10 +1,10 @@
-// Module ID: 17347
-// Function ID: 17348
+// Module ID: 17359
+// Function ID: 17360
 // Name: useVideoQuestPlayerAnalytics
-// Dependencies: [5, 19, 17, 6036, 1072, 9867, 8012, 8011, 6921, 17178, 8002, 7959, 1377, 7982, 7993, 14895, 17348, 17168, 7989, 6919, 17179, 6675, 6680, 6923, 2]
+// Dependencies: [5, 19, 17, 6036, 1072, 9867, 8012, 8011, 6921, 17190, 8002, 7959, 1377, 7982, 7993, 14896, 17360, 17180, 7989, 6919, 17191, 6675, 6680, 6923, 2]
 // Exports: default
 
-// Module 17347 (useVideoQuestPlayerAnalytics)
+// Module 17359 (useVideoQuestPlayerAnalytics)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6675 */;
@@ -16,9 +16,9 @@ import DiscordVideoPlayerTypes from "DiscordVideoPlayerTypes" /* 7989 */;
 import AnalyticsActions from "AnalyticsActions" /* 8002 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8011 */;
 import AdDataUtils from "AdDataUtils" /* 8012 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 14895 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17168 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 17179 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 14896 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17180 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 17191 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import NetworkStore from "NetworkStore" /* 6036 */;

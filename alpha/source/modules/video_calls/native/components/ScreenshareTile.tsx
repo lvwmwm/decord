@@ -1,10 +1,10 @@
-// Module ID: 11950
-// Function ID: 11951
+// Module ID: 11951
+// Function ID: 11952
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 11951, 5428, 1187, 5851, 11952, 5761, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 11952, 5428, 1187, 5851, 11953, 5761, 1113, 2]
 // Exports: default
 
-// Module 11950 (ScreenshareTile)
+// Module 11951 (ScreenshareTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,8 +13,8 @@ import native from "native" /* 1187 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import FastImageDefault from "FastImage" /* 5851 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11951 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11952 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 11952 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11953 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

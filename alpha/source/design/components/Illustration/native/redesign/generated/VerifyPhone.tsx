@@ -1,10 +1,10 @@
-// Module ID: 19910
-// Function ID: 19911
+// Module ID: 19924
+// Function ID: 19925
 // Name: VerifyPhone
-// Dependencies: [19, 21, 8947, 19911, 19912, 19913, 5148, 5851, 2]
+// Dependencies: [19, 21, 8947, 19925, 19926, 19927, 5148, 5851, 2]
 // Exports: VerifyPhone, getVerifyPhoneSource, useVerifyPhoneSource
 
-// Module 19910 (VerifyPhone)
+// Module 19924 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5148 */;
 import FastImageDefault from "FastImage" /* 5851 */;

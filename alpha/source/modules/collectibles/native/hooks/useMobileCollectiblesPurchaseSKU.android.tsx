@@ -1,10 +1,10 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14646
+// Function ID: 14647
 // Name: useMobileCollectiblesPurchaseSKU
 // Dependencies: [1385, 504, 9698, 10860, 2]
 // Exports: default
 
-// Module 14645 (useMobileCollectiblesPurchaseSKU)
+// Module 14646 (useMobileCollectiblesPurchaseSKU)
 import get_initialized from "get initialized" /* 504 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9698 */;
 import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10860 */;

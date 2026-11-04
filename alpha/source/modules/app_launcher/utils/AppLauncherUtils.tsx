@@ -1,7 +1,7 @@
 // Module ID: 9911
 // Function ID: 9912
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9912, 2145, 12633, 1072, 6170, 5146, 1113, 2153, 5809, 7018, 5816, 1377, 2121, 5817, 10488, 7964, 7776, 6093, 1411, 11690, 12669, 7840, 11934, 2]
+// Dependencies: [109, 5, 9912, 2145, 12634, 1072, 6170, 5146, 1113, 2153, 5809, 7018, 5816, 1377, 2121, 5817, 10488, 7964, 7776, 6093, 1411, 11691, 12670, 7840, 11935, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isConjureAppWithoutIcon, isPartnerApplication, isPromotedApplication, isRealApplication
 
 // Module 9911 (AppLauncherUtils)
@@ -17,14 +17,14 @@ import getPlatformDefault from "getPlatform" /* 5816 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6170 */;
 import ApplicationFlagUtils from "ApplicationFlagUtils" /* 7018 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7840 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 11690 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11934 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12669 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11691 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11935 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12670 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9912 */;
 import ApplicationRecord from "ApplicationRecord" /* 2145 */;
-import AppLauncherStore from "AppLauncherStore" /* 12633 */;
+import AppLauncherStore from "AppLauncherStore" /* 12634 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

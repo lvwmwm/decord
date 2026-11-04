@@ -1,10 +1,10 @@
-// Module ID: 18386
-// Function ID: 18387
+// Module ID: 18400
+// Function ID: 18401
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1385, 17521, 1072, 21, 5141, 575, 563, 18387, 7466, 1252, 7487, 13403, 2123, 18359, 1652, 1705, 6163, 1260, 18370, 17522, 8819, 5851, 18383, 2]
+// Dependencies: [32, 19, 17, 1385, 17533, 1072, 21, 5141, 575, 563, 18401, 7466, 1252, 7487, 13404, 2123, 18373, 1652, 1705, 6163, 1260, 18384, 17534, 8819, 5851, 18397, 2]
 // Exports: default
 
-// Module 18386 (HappeningNowCardEmbeddedActivity)
+// Module 18400 (HappeningNowCardEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17521 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17533 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -137,7 +137,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
     items1 = [userId];
     track(ACTIVITY_CARD_CLICKED, obj);
-    const promise = asyncRequire(13403, tmp.paths);
+    const promise = asyncRequire(13404, tmp.paths);
     promise.then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);

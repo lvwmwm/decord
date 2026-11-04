@@ -1,10 +1,10 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15445
+// Function ID: 15446
 // Name: maybeConvertPrivateChannel
 // Dependencies: [4990, 7536, 7625, 2]
 // Exports: default
 
-// Module 15444 (maybeConvertPrivateChannel)
+// Module 15445 (maybeConvertPrivateChannel)
 import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7536 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

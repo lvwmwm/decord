@@ -1,7 +1,7 @@
 // Module ID: 7756
 // Function ID: 7757
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1387, 7757, 21, 5141, 7758, 7759, 2176, 5723, 1092, 5851, 7760, 7761, 7762, 7763, 10109, 10763, 10114, 2]
+// Dependencies: [19, 17, 1387, 7757, 21, 5141, 7758, 7759, 2176, 5723, 1092, 5851, 7760, 7761, 7762, 7763, 10109, 10764, 10114, 2]
 // Exports: default
 
 // Module 7756 (PremiumPlanActionSheetHeader)
@@ -126,7 +126,7 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   if (TIER_0.TIER_0 === premiumType) {
     tmp13Result12 = tmp13(10109);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result12 = tmp13(10763);
+    tmp13Result12 = tmp13(10764);
   } else if (TIER_0.TIER_2 === premiumType) {
     tmp13Result12 = tmp13(10114);
   }

@@ -1,10 +1,10 @@
-// Module ID: 14055
-// Function ID: 14056
+// Module ID: 14056
+// Function ID: 14057
 // Name: DoubleTapToReactChatInputBanner
-// Dependencies: [32, 19, 17, 5142, 4987, 1388, 21, 5141, 575, 1377, 563, 7436, 1411, 5761, 1113, 14056, 7121, 7195, 6163, 1260, 1652, 5378, 1187, 5382, 14157, 2123, 6867, 5730, 9137, 4966, 8570, 8567, 10698, 4974, 2]
+// Dependencies: [32, 19, 17, 5142, 4987, 1388, 21, 5141, 575, 1377, 563, 7436, 1411, 5761, 1113, 14057, 7121, 7195, 6163, 1260, 1652, 5378, 1187, 5382, 14158, 2123, 6867, 5730, 9137, 4966, 8570, 8567, 10698, 4974, 2]
 // Exports: DoubleTapToReactChatInputBanner
 
-// Module 14055 (DoubleTapToReactChatInputBanner)
+// Module 14056 (DoubleTapToReactChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -19,7 +19,7 @@ import Text_Text from "Text/Text" /* 5761 */;
 import XSmallIcon from "XSmallIcon" /* 7195 */;
 import EmojiDefault from "Emoji" /* 7436 */;
 import canAddNewReactionsDefault from "canAddNewReactions" /* 8570 */;
-import _mod14056 from "module_14056" /* 14056 */;
+import _mod14057 from "module_14057" /* 14057 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -84,7 +84,7 @@ function DoubleTapToReactChatInputBannerInner(emoji) {
   const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl.string(intl4.t["6RUX7d"]) };
   const Text = tmp2(5761).Text;
   intl = tmp2(1113).intl;
-  items3 = [React4(Text, obj8), React4(_mod14056.NewBadge, {})];
+  items3 = [React4(Text, obj8), React4(_mod14057.NewBadge, {})];
   items4 = [authStore(View, obj7), ];
   const obj9 = { variant: "body-xs/medium", color: "text-default", children: intl2.format(intl4.t["5/l2rR"], obj10) };
   const Text2 = tmp2(5761).Text;
@@ -192,7 +192,7 @@ function DoubleTapToReactChatInputBannerAnimationContainer(channel) {
   const callback1 = obj.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emoji };
-    obj.openLazy(asyncRequire(14157, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
+    obj.openLazy(asyncRequire(14158, dependencyMap.paths), "DoubleTapToReactActionSheet", obj2);
     markAsDismissed(ContentDismissActionType.TAKE_ACTION);
   }, items4);
   const callback2 = obj.useCallback(() => {

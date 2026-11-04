@@ -1,10 +1,10 @@
-// Module ID: 13879
-// Function ID: 13880
+// Module ID: 13880
+// Function ID: 13881
 // Name: CheckpointEmphasis
 // Dependencies: [19, 17, 6201, 21, 1357, 6569, 5141, 575, 5776, 11232, 8171, 5761, 2]
 // Exports: default
 
-// Module 13879 (CheckpointEmphasis)
+// Module 13880 (CheckpointEmphasis)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import useFontScale from "useFontScale" /* 5776 */;

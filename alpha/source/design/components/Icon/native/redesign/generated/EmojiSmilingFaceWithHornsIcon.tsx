@@ -1,14 +1,14 @@
-// Module ID: 17617
-// Function ID: 17618
+// Module ID: 17629
+// Function ID: 17630
 // Name: EmojiSmilingFaceWithHornsIcon
-// Dependencies: [19, 21, 575, 5850, 17618, 2]
+// Dependencies: [19, 21, 575, 5850, 17630, 2]
 // Exports: EmojiSmilingFaceWithHornsIcon
 
-// Module 17617 (EmojiSmilingFaceWithHornsIcon)
+// Module 17629 (EmojiSmilingFaceWithHornsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 17618 */;
+import AssetRegistry from "AssetRegistry" /* 17630 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

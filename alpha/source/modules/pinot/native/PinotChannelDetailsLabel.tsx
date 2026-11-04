@@ -1,10 +1,10 @@
-// Module ID: 19075
-// Function ID: 19076
+// Module ID: 19089
+// Function ID: 19090
 // Name: PinotChannelDetailsLabel
-// Dependencies: [19, 21, 5141, 575, 11507, 1113, 3287, 7121, 5846, 5761, 2]
+// Dependencies: [19, 21, 5141, 575, 11508, 1113, 3287, 7121, 5846, 5761, 2]
 // Exports: PinotChannelDetailsLabel
 
-// Module 19075 (PinotChannelDetailsLabel)
+// Module 19089 (PinotChannelDetailsLabel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3287 from "module_3287" /* 3287 */;
@@ -29,7 +29,7 @@ export function PinotChannelDetailsLabel(channel) {
   let stringResult1;
   channel = channel.channel;
   const tmp = closure_5();
-  let obj = stringResult1(11507);
+  let obj = stringResult1(11508);
   if (obj.useIsPinotChannelLabelVisible(channel, "mobile_channel_details_label")) {
     const intl = tmp2(1113).intl;
     const stringResult = intl.string(_modDef3287.uneDIi);

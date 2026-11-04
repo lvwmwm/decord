@@ -1,10 +1,10 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 14994
+// Function ID: 14995
 // Name: useMediaModalFooterBackground
 // Dependencies: [32, 671, 5732, 575, 2]
 // Exports: default
 
-// Module 14993 (useMediaModalFooterBackground)
+// Module 14994 (useMediaModalFooterBackground)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import useToken from "useToken" /* 5732 */;

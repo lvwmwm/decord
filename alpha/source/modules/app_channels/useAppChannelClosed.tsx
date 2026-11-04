@@ -1,10 +1,10 @@
-// Module ID: 18940
-// Function ID: 18941
+// Module ID: 18954
+// Function ID: 18955
 // Name: useAppChannelClosed
-// Dependencies: [32, 19, 6982, 12405, 2]
+// Dependencies: [32, 19, 6982, 12406, 2]
 // Exports: default
 
-// Module 18940 (useAppChannelClosed)
+// Module 18954 (useAppChannelClosed)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FramesConstants from "FramesConstants" /* 6982 */;
@@ -27,7 +27,7 @@ export default function useAppChannelClosed(shouldStartClosed) {
   let first;
   shouldStartClosed = shouldStartClosed.shouldStartClosed;
   let tmp = closure_5(applicationId, surface);
-  const tmp2 = first(12405)(applicationId, surface);
+  const tmp2 = first(12406)(applicationId, surface);
   let obj = react;
   const tmp3 = _slicedToArray(react.useState(null), 2);
   first = tmp3[0];

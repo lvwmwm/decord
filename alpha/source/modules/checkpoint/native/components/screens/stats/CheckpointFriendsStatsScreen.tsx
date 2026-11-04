@@ -1,10 +1,10 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13899
+// Function ID: 13900
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5142, 1385, 13656, 6201, 21, 1357, 5141, 575, 1411, 504, 13899, 13900, 1493, 5195, 6570, 13863, 5283, 13865, 1113, 3219, 3187, 5849, 13884, 8784, 13868, 12168, 13901, 13658, 5845, 1187, 13654, 10736, 7487, 13585, 5863, 2]
+// Dependencies: [5, 32, 19, 17, 5142, 1385, 13657, 6201, 21, 1357, 5141, 575, 1411, 504, 13900, 13901, 1493, 5195, 6570, 13864, 5283, 13866, 1113, 3219, 3187, 5849, 13885, 8784, 13869, 12169, 13902, 13659, 5845, 1187, 13655, 10736, 7487, 13586, 5863, 2]
 // Exports: default
 
-// Module 13898 (CheckpointFriendsStatsScreen)
+// Module 13899 (CheckpointFriendsStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import _modDef3187 from "module_3187" /* 3187 */;
@@ -12,18 +12,18 @@ import FriendsIcon from "FriendsIcon" /* 5849 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
 import ChatIcon from "ChatIcon" /* 8784 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10736 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12168 */;
-import Tracking from "Tracking" /* 13654 */;
-import CheckpointTextDefault from "CheckpointText" /* 13865 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13868 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13884 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12169 */;
+import Tracking from "Tracking" /* 13655 */;
+import CheckpointTextDefault from "CheckpointText" /* 13866 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13869 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13885 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import UserStore from "UserStore" /* 1385 */;
-import CheckpointStore from "CheckpointStore" /* 13656 */;
+import CheckpointStore from "CheckpointStore" /* 13657 */;
 import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
@@ -220,7 +220,7 @@ function SidekickMessageInput(user) {
   [tmp7, c4] = _slicedToArray(react.useState(false), 2);
   let tmp10 = null != value;
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = value(13901)(user.id);
+  const tmp9 = value(13902)(user.id);
   if (tmp10) {
     tmp10 = value.length > 0;
   }
@@ -267,7 +267,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp15(1113).t.Ve9Ge6),
-      children: tmp14(tmp15(13585).GiftIcon, obj6)
+      children: tmp14(tmp15(13586).GiftIcon, obj6)
     };
     intl2 = tmp15(1113).intl;
     obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };

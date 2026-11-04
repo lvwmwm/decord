@@ -1,9 +1,9 @@
-// Module ID: 14792
-// Function ID: 14793
+// Module ID: 14793
+// Function ID: 14794
 // Name: GuildChannelHeader
-// Dependencies: [32, 19, 17, 14793, 6703, 4994, 7586, 4990, 5366, 5012, 5083, 1385, 1072, 4987, 21, 5732, 575, 504, 11524, 7242, 10151, 1113, 5786, 14788, 11506, 5761, 7709, 4974, 2190, 8744, 10133, 10383, 7560, 7559, 14794, 14783, 2]
+// Dependencies: [32, 19, 17, 14794, 6703, 4994, 7586, 4990, 5366, 5012, 5083, 1385, 1072, 4987, 21, 5732, 575, 504, 11525, 7242, 10151, 1113, 5786, 14789, 11507, 5761, 7709, 4974, 2190, 8744, 10133, 10383, 7560, 7559, 14795, 14784, 2]
 
-// Module 14792 (GuildChannelHeader)
+// Module 14793 (GuildChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -12,11 +12,11 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import useChannelName from "useChannelName" /* 5786 */;
 import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 10151 */;
-import ChannelHeader from "ChannelHeader" /* 14783 */;
-import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 14794 */;
+import ChannelHeader from "ChannelHeader" /* 14784 */;
+import openConjureAppChannelSheetDefault from "openConjureAppChannelSheet" /* 14795 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14793 */;
+import ChannelMemberCountStore from "ChannelMemberCountStore" /* 14794 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
 import ChannelMemberStore from "ChannelMemberStore" /* 7586 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -98,7 +98,7 @@ function GuildChannelMemberCount(channel) {
     if (null != online) {
       let num2 = 500;
     }
-    const tmpResult = tmp(11524);
+    const tmpResult = tmp(11525);
     let tmp6 = tmpResult;
     let tmp7 = online;
     let tmp8 = total;

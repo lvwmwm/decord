@@ -1,9 +1,9 @@
-// Module ID: 17230
-// Function ID: 17231
+// Module ID: 17242
+// Function ID: 17243
 // Name: BountiesCtaHeader
-// Dependencies: [19, 17, 5142, 9822, 6916, 21, 575, 5774, 5141, 504, 9014, 17209, 5768, 1113, 5761, 17217, 17231, 6923, 8002, 6919, 8011, 17156, 17158, 1187, 17232, 17233, 17234, 17235, 5207, 16715, 14910, 2]
+// Dependencies: [19, 17, 5142, 9822, 6916, 21, 575, 5774, 5141, 504, 9014, 17221, 5768, 1113, 5761, 17229, 17243, 6923, 8002, 6919, 8011, 17168, 17170, 1187, 17244, 17245, 17246, 17247, 5207, 16727, 14911, 2]
 
-// Module 17230 (BountiesCtaHeader)
+// Module 17242 (BountiesCtaHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -14,12 +14,12 @@ import AdCreativeType from "AdCreativeType" /* 6923 */;
 import AnalyticsActions from "AnalyticsActions" /* 8002 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8011 */;
 import common_Video from "common/Video" /* 9014 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17156 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 17158 */;
-import _modDef17209 from "module_17209" /* 17209 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 17217 */;
-import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 17232 */;
-import _modDef17233 from "module_17233" /* 17233 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17168 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 17170 */;
+import _modDef17221 from "module_17221" /* 17221 */;
+import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 17229 */;
+import BountiesBannerBackgroundDefault from "BountiesBannerBackground" /* 17244 */;
+import _modDef17245 from "module_17245" /* 17245 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -45,7 +45,7 @@ function StarfieldBackground() {
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj2 = { source: obj3, style: absoluteFillObject.absoluteFillObject, resizeMode: "cover", muted: true, disableFocus: true, paused: stateFromStores, importantForAccessibility: "no-hide-descendants" };
-  obj3 = { uri: _modDef17209 };
+  obj3 = { uri: _modDef17221 };
   const VideoComponent = common_Video.VideoComponent;
   return authStore(VideoComponent, obj2);
 }
@@ -138,7 +138,7 @@ function BountiesCtaHeaderInner(bounties) {
   const tmp = closure_16();
   let tmp9Result2 = null != footer;
   let tmp11Result6 = !flag;
-  let obj = bounties(17231);
+  let obj = bounties(17243);
   const bountiesEntryPointButtonVariant = obj.getBountiesEntryPointButtonVariant(shopCarouselButtonVariant);
   let obj2 = bounties(504);
   const items = [AdContentSeenStore];
@@ -196,7 +196,7 @@ function BountiesCtaHeaderInner(bounties) {
     items5[3] = tmp11Result;
     tmp9Result = tmp9(tmp10, obj6);
   } else {
-    const obj15 = { uri: _modDef17233, style: items7, children: items8 };
+    const obj15 = { uri: _modDef17245, style: items7, children: items8 };
     items7 = [tmp.header, tmp9Result2 && tmp.headerWithFooter, ];
     let headerRoundedBottom2 = tmp12;
     const tmp26 = BountiesBannerBackgroundDefault;
@@ -278,7 +278,7 @@ const memoResult = react.memo(function BountiesCtaHeader(isEmptyOrCompleted) {
   let containerRef;
   let tmp9Result;
   _require = isEmptyOrCompleted;
-  const tmp2 = containerRef(17234)();
+  const tmp2 = containerRef(17246)();
   containerRef = tmp2.containerRef;
   isEmptyOrCompleted = isEmptyOrCompleted.isEmptyOrCompleted;
   let tmp3 = undefined !== isEmptyOrCompleted;
@@ -319,7 +319,7 @@ const memoResult = react.memo(function BountiesCtaHeader(isEmptyOrCompleted) {
           return authStore(BountiesCtaHeaderInner, obj);
         }
     };
-    const QuestContentImpressionTrackerNative = tmp7(14910).QuestContentImpressionTrackerNative;
+    const QuestContentImpressionTrackerNative = tmp7(14911).QuestContentImpressionTrackerNative;
     tmp9Result = tmp9(QuestContentImpressionTrackerNative, obj4);
   }
   return closure_10(ThemeContextProvider, obj2);

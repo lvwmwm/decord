@@ -1,20 +1,20 @@
-// Module ID: 11412
-// Function ID: 11413
+// Module ID: 11413
+// Function ID: 11414
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 6978, 11410, 11413, 5815, 1652, 11414, 558, 11415, 11416, 11417, 1259, 2]
+// Dependencies: [32, 19, 17, 6978, 11411, 11414, 5815, 1652, 11415, 558, 11416, 11417, 11418, 1259, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 11412 (VoicePanelCardLayoutManager)
+// Module 11413 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import react_native2 from "react-native" /* 1259 */;
 import CallConstants from "CallConstants" /* 5815 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11414 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11415 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11413 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11414 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

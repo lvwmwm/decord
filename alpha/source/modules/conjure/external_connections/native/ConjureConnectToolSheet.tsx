@@ -1,10 +1,10 @@
-// Module ID: 12374
-// Function ID: 12375
+// Module ID: 12375
+// Function ID: 12376
 // Name: ConjureConnectToolSheet
-// Dependencies: [19, 17, 21, 5141, 575, 12375, 7494, 5845, 6099, 1113, 3995, 7502, 7457, 5761, 7118, 5768, 12376, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 12376, 7494, 5845, 6099, 1113, 3995, 7502, 7457, 5761, 7118, 5768, 12377, 2]
 // Exports: default
 
-// Module 12374 (ConjureConnectToolSheet)
+// Module 12375 (ConjureConnectToolSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -69,7 +69,7 @@ export default function ConjureConnectToolSheet(projectId) {
   mint = undefined;
   projectId = projectId.projectId;
   let tmp = closure_7();
-  let obj = connection(12375);
+  let obj = connection(12376);
   const mcpConnectionPanel = obj.useMcpConnectionPanel(projectId);
   connection = mcpConnectionPanel.connection;
   ({ loading, mint } = mcpConnectionPanel);
@@ -142,7 +142,7 @@ export default function ConjureConnectToolSheet(projectId) {
     format = intl7.format;
     obj16 = { time: tmp2Result.formatMcpConnectionExpiry(connection) };
     EQ8k1i = tmp8(3995).EQ8k1i;
-    tmp2Result = connection(12376);
+    tmp2Result = connection(12377);
     items3[3] = closure_5(Text4, obj15);
     tmp7Result = tmp9(tmp10, obj6);
   } else {

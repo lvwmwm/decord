@@ -1,18 +1,18 @@
-// Module ID: 19702
-// Function ID: 19703
+// Module ID: 19716
+// Function ID: 19717
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 19699, 19703, 7502, 5851, 11460, 5761, 1113, 7098, 5768, 7302, 4966, 5846, 5382, 15965, 2]
+// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 19713, 19717, 7502, 5851, 11461, 5761, 1113, 7098, 5768, 7302, 4966, 5846, 5382, 15978, 2]
 // Exports: default
 
-// Module 19702 (DmSettingsUpsellActionSheet)
+// Module 19716 (DmSettingsUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettings from "UserSettings" /* 4966 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15965 */;
-import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 19699 */;
-import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19703 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15978 */;
+import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 19713 */;
+import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19717 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
@@ -67,7 +67,7 @@ export default function DmSettingsUpsellActionSheet(guildId) {
     let obj2 = { startExpanded: true, children: closure_7(View, obj3) };
     obj3 = { style: tmp.container, children: items2 };
     const ActionSheet = tmp2(7502).ActionSheet;
-    let obj4 = { source: stateFromStores(11460), style: tmp.headerImage };
+    let obj4 = { source: stateFromStores(11461), style: tmp.headerImage };
     const tmp11 = stateFromStores(5851);
     items2 = [closure_6(tmp11, obj4), , , , , , ];
     const obj5 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(guildId(1113).t.w2BvnL) };

@@ -1,13 +1,13 @@
-// Module ID: 18816
-// Function ID: 18817
+// Module ID: 18830
+// Function ID: 18831
 // Name: useWaterwheelsCardEligibility
-// Dependencies: [19, 14190, 504, 18817, 2]
+// Dependencies: [19, 14191, 504, 18831, 2]
 // Exports: default
 
-// Module 18816 (useWaterwheelsCardEligibility)
-import WaterwheelsCard from "WaterwheelsCard" /* 18817 */;
+// Module 18830 (useWaterwheelsCardEligibility)
+import WaterwheelsCard from "WaterwheelsCard" /* 18831 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14190 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14191 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/waterwheels/cards/native/useWaterwheelsCardEligibility.tsx");

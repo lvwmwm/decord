@@ -1,10 +1,10 @@
-// Module ID: 13558
-// Function ID: 13559
+// Module ID: 13559
+// Function ID: 13560
 // Name: AppealIngestionPolicySummary
 // Dependencies: [19, 17, 21, 5141, 575, 8109, 5138, 5761, 1113, 2]
 // Exports: default
 
-// Module 13558 (AppealIngestionPolicySummary)
+// Module 13559 (AppealIngestionPolicySummary)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

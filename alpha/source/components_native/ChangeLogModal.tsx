@@ -1,10 +1,10 @@
-// Module ID: 17778
-// Function ID: 17779
+// Module ID: 17790
+// Function ID: 17791
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1072, 5043, 21, 5141, 575, 5207, 1252, 8974, 17779, 5851, 9014, 1113, 7121, 9254, 10455, 1187, 8706, 1493, 8707, 1500, 7139, 2171, 8708, 5761, 6879, 7306, 2]
+// Dependencies: [19, 17, 1072, 5043, 21, 5141, 575, 5207, 1252, 8974, 17791, 5851, 9014, 1113, 7121, 9254, 10455, 1187, 8706, 1493, 8707, 1500, 7139, 2171, 8708, 5761, 6879, 7306, 2]
 // Exports: default
 
-// Module 17778 (ChangeLogModal)
+// Module 17790 (ChangeLogModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -19,7 +19,7 @@ import openMediaModal2 from "openMediaModal" /* 8974 */;
 import common_VideoDefault from "common/Video" /* 9014 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 9254 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10455 */;
-import _modDef17779 from "module_17779" /* 17779 */;
+import _modDef17791 from "module_17791" /* 17791 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -306,7 +306,7 @@ class ChangeLog extends PureComponent2 {
               },
           useLocalHTML: true
         };
-        items = [closure_7(_modDef17779, obj4), ];
+        items = [closure_7(_modDef17791, obj4), ];
         let tmp6Result = null;
         const tmp4 = closure_8;
         const tmp5 = View;

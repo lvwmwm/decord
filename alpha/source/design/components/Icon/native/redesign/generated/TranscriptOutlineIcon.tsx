@@ -1,14 +1,14 @@
-// Module ID: 17188
-// Function ID: 17189
+// Module ID: 17200
+// Function ID: 17201
 // Name: TranscriptOutlineIcon
-// Dependencies: [19, 21, 575, 5850, 17189, 2]
+// Dependencies: [19, 21, 575, 5850, 17201, 2]
 // Exports: TranscriptOutlineIcon
 
-// Module 17188 (TranscriptOutlineIcon)
+// Module 17200 (TranscriptOutlineIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 17189 */;
+import AssetRegistry from "AssetRegistry" /* 17201 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

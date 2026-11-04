@@ -1,10 +1,10 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15684
+// Function ID: 15685
 // Name: PremiumTierCard
-// Dependencies: [19, 17, 7757, 1387, 21, 5141, 575, 5723, 1092, 5851, 2176, 15684, 15685, 8676, 10109, 10763, 10764, 7118, 2]
+// Dependencies: [19, 17, 7757, 1387, 21, 5141, 575, 5723, 1092, 5851, 2176, 15685, 15686, 8676, 10109, 10764, 10765, 7118, 2]
 // Exports: default
 
-// Module 15683 (PremiumTierCard)
+// Module 15684 (PremiumTierCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
@@ -61,9 +61,9 @@ export default function _default(premiumType) {
     textLogoTier2 = tmp.textLogoTier2;
   }
   if (PremiumTypes.TIER_0 === premiumType) {
-    tmp5Result = tmp5(15684);
-  } else if (PremiumTypes.TIER_1 === premiumType) {
     tmp5Result = tmp5(15685);
+  } else if (PremiumTypes.TIER_1 === premiumType) {
+    tmp5Result = tmp5(15686);
   } else if (PremiumTypes.TIER_2 === premiumType) {
     tmp5Result = tmp5(8676);
   }
@@ -82,9 +82,9 @@ export default function _default(premiumType) {
   if (PremiumTypes.TIER_0 === premiumType) {
     tmp5Result4 = tmp5(10109);
   } else if (PremiumTypes.TIER_1 === premiumType) {
-    tmp5Result4 = tmp5(10763);
-  } else if (PremiumTypes.TIER_2 === premiumType) {
     tmp5Result4 = tmp5(10764);
+  } else if (PremiumTypes.TIER_2 === premiumType) {
+    tmp5Result4 = tmp5(10765);
   }
   const obj5 = { children: items };
   items[1] = metroRequire(tmp5Result3, obj4);

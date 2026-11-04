@@ -1,9 +1,9 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16684
+// Function ID: 16685
 // Name: SettingBlocklistStore
 // Dependencies: [5335, 2]
 
-// Module 16672 (SettingBlocklistStore)
+// Module 16684 (SettingBlocklistStore)
 import ZustandStore from "ZustandStore" /* 5335 */;
 import size from "module_2" /* 2 */;
 

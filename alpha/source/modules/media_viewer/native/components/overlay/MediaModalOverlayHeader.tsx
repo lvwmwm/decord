@@ -1,10 +1,10 @@
-// Module ID: 14986
-// Function ID: 14987
+// Module ID: 14987
+// Function ID: 14988
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 9079, 21, 5141, 14983, 9046, 10372, 5322, 1652, 5378, 9083, 9084, 1113, 7195, 1187, 575, 5761, 14987, 10053, 1377, 14988, 9906, 2]
+// Dependencies: [19, 17, 9079, 21, 5141, 14984, 9046, 10372, 5322, 1652, 5378, 9083, 9084, 1113, 7195, 1187, 575, 5761, 14988, 10053, 1377, 14989, 9906, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 14986 (MediaModalOverlayHeader)
+// Module 14987 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -14,8 +14,8 @@ import MediaShareActions from "MediaShareActions" /* 9046 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9079 */;
 import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9084 */;
 import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10372 */;
-import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 14983 */;
-import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 14987 */;
+import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 14984 */;
+import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 14988 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

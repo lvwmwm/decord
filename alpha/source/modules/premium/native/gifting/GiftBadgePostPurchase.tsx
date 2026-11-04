@@ -1,10 +1,10 @@
-// Module ID: 14659
-// Function ID: 14660
+// Module ID: 14660
+// Function ID: 14661
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8904, 14660, 4987, 21, 5141, 575, 1627, 6879, 5323, 5768, 13585, 1113, 2763, 14661, 5761, 10794, 5384, 5385, 10797, 14662, 5171, 4974, 504, 8896, 2]
+// Dependencies: [19, 17, 8904, 14661, 4987, 21, 5141, 575, 1627, 6879, 5323, 5768, 13586, 1113, 2763, 14662, 5761, 10795, 5384, 5385, 10797, 14663, 5171, 4974, 504, 8896, 2]
 // Exports: default
 
-// Module 14659 (GiftBadgePostPurchase)
+// Module 14660 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,12 +18,12 @@ import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 
 import Text_Text from "Text/Text" /* 5761 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import BadgeId from "BadgeId" /* 8896 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10794 */;
-import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14661 */;
-import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 14662 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10795 */;
+import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14662 */;
+import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 14663 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14660 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14661 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ function PostPurchaseFooter(onSendGift) {
   const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2763.g86YiI), onPress: callback };
   const Button = onSendGift(5768).Button;
   obj3 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = onSendGift(13585).GiftIcon;
+  GiftIcon = onSendGift(13586).GiftIcon;
   intl = onSendGift(1113).intl;
   items1 = [closure_10(Button, obj2), ];
   const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2763["sa/cfM"]), onPress: callback1 };

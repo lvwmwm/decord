@@ -1,10 +1,10 @@
-// Module ID: 18600
-// Function ID: 18601
+// Module ID: 18614
+// Function ID: 18615
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 5012, 6907, 18601, 18598, 1652, 551, 5384, 5148, 12, 1242, 1113, 7377, 18321, 5732, 575, 5056, 12628, 1259, 7037, 6067, 10054, 1377, 1627, 5398, 18602, 18603, 10054, 17311, 5428, 1705, 2]
+// Dependencies: [5, 19, 17, 5012, 6907, 18615, 18612, 1652, 551, 5384, 5148, 12, 1242, 1113, 7377, 18335, 5732, 575, 5056, 12629, 1259, 7037, 6067, 10054, 1377, 1627, 5398, 18616, 18617, 10054, 17323, 5428, 1705, 2]
 // Exports: default
 
-// Module 18600 (useGuildsBarGesture)
+// Module 18614 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -20,8 +20,8 @@ import ContextMenuState from "ContextMenuState" /* 10054 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18601 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18598 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18615 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18612 */;
 import "module_1652";
 import module_1652_mod from "module_1652" /* 1652 */;
 import debounce from "debounce" /* 551 */;
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "sa", positionPercentage: false };
+    sectionItemFromPosition = { item: "dispatch", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;
@@ -703,7 +703,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "PX_8", overSpecs: "__closure" });
+    setStateShallow({ dragSpecs: "Object", overSpecs: "Array" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };

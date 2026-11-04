@@ -1,10 +1,10 @@
-// Module ID: 15158
-// Function ID: 15159
+// Module ID: 15159
+// Function ID: 15160
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 11028, 21, 5141, 575, 7559, 1113, 3995, 11054, 15157, 11157, 11058, 7502, 7457, 7389, 5768, 2]
+// Dependencies: [5, 32, 19, 17, 11028, 21, 5141, 575, 7559, 1113, 3995, 11054, 15158, 11157, 11058, 7502, 7457, 7389, 5768, 2]
 // Exports: default
 
-// Module 15158 (ConjureCustomWidgetSheet)
+// Module 15159 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3995 from "module_3995" /* 3995 */;
@@ -165,12 +165,12 @@ export default function ConjureCustomWidgetSheet() {
         }
         c5 = 3;
         return { value: "HermesInternal", done: null };
-      } catch (tmp55) {
-        dependencyMap = tmp55;
+      } catch (tmp54) {
+        dependencyMap = tmp54;
         if (0 === c3) {
           c5 = 3;
-          throw tmp55;
-        } else if (1 === tmp57) {
+          throw tmp54;
+        } else if (1 === tmp56) {
           c4 = 1;
         } else {
           c4 = 2;
@@ -184,7 +184,7 @@ export default function ConjureCustomWidgetSheet() {
   BottomSheetTitleHeader = value(7457).BottomSheetTitleHeader;
   intl = value(1113).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3995["09BSx3"]), placeholder: intl3.string(_modDef3995.K7zdCZ), description: intl4.string(_modDef3995.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15157).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  let obj4 = { label: intl2.string(_modDef3995["09BSx3"]), placeholder: intl3.string(_modDef3995.K7zdCZ), description: intl4.string(_modDef3995.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15158).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
   const TextArea = value(7389).TextArea;
   intl2 = value(1113).intl;
   intl3 = value(1113).intl;

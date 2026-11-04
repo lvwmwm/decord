@@ -1,15 +1,15 @@
-// Module ID: 12709
-// Function ID: 12710
+// Module ID: 12710
+// Function ID: 12711
 // Name: CommandOptionView
-// Dependencies: [19, 17, 5142, 21, 2121, 5141, 575, 504, 1652, 12710, 12711, 5761, 12712, 7227, 2]
+// Dependencies: [19, 17, 5142, 21, 2121, 5141, 575, 504, 1652, 12711, 12712, 5761, 12713, 7227, 2]
 // Exports: default
 
-// Module 12709 (CommandOptionView)
+// Module 12710 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import Server from "Server" /* 2121 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12712 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12713 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
@@ -58,7 +58,7 @@ export default function CommandOptionView(option) {
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
   const ReduceMotion = option(1652).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(12710);
+  const tmp2Result = option(12711);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -85,12 +85,12 @@ export default function CommandOptionView(option) {
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
     const LayoutAnimationConfig = tmp2(1652).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(12711).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(12712).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(12710).ExitingAnimation,
-      layout: option(12710).LayoutAnimation,
+      exiting: option(12711).ExitingAnimation,
+      layout: option(12711).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },

@@ -152,7 +152,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
   let unstable_headerInsets;
   let unstable_headerLeftItems;
   let unstable_headerRightItems;
-  const f96720 = function(type, index) {
+  const f96852 = function(type, index) {
     let badge;
     let icon;
     let items;
@@ -284,7 +284,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
       }
     }
   };
-  const f96721 = (item) => null != item;
+  const f96853 = (item) => null != item;
   ({ headerBackIcon, headerBackImageSource, headerBackTitle, headerBackVisible, headerShadowVisible, headerLargeTitleEnabled } = headerLargeTitle);
   ({ headerBackButtonDisplayMode, headerBackButtonMenuEnabled, headerBackTitleStyle, headerLargeStyle } = headerLargeTitle);
   if (headerLargeTitleEnabled === undefined) {
@@ -489,7 +489,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
     tmp47 = closure_10(ScreenStackHeaderSearchBarView, obj19);
   }
   items7[3] = tmp47;
-  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "filter", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp53, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp55, disableLeftInsetApplication: tmp57, disableRightInsetApplication: tmp59, disableBottomInsetApplication: tmp61, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: "bb90c4b064a38745e740b0a8c7189a45", headerRightBarButtonItems: "cs.messages.bb90c4b064a38745e740b0a8c7189a45.compiled.messages", experimental_userInterfaceStyle: "jsona" };
+  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "find", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp53, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp55, disableLeftInsetApplication: tmp57, disableRightInsetApplication: tmp59, disableBottomInsetApplication: tmp61, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: true, headerRightBarButtonItems: true, experimental_userInterfaceStyle: true };
   tmp53 = false === headerShadowVisible;
   tmp34Result2 = closure_12(closure_11, { children: items7 });
   if (!tmp53) {
@@ -537,15 +537,15 @@ export function useHeaderConfigProps(headerLargeTitle) {
   if (typeof processBarButtonItems === "function") {
     let found;
     if (result != null) {
-      const mapped = result.map(f96720);
-      found = mapped.filter(f96721);
+      const mapped = result.map(f96852);
+      found = mapped.filter(f96853);
     }
     obj21.headerLeftBarButtonItems = found;
     if (typeof tmp62 === "function") {
       let found1;
       if (reversed != null) {
-        const mapped1 = reversed.map(f96720);
-        found1 = mapped1.filter(f96721);
+        const mapped1 = reversed.map(f96852);
+        found1 = mapped1.filter(f96853);
       }
       obj21.headerRightBarButtonItems = found1;
       let str3 = "light";

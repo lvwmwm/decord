@@ -1,12 +1,12 @@
-// Module ID: 10784
-// Function ID: 10785
+// Module ID: 10785
+// Function ID: 10786
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [5764, 504, 10785, 2]
+// Dependencies: [5764, 504, 10786, 2]
 // Exports: default
 
-// Module 10784 (useMaybeFetchCollectiblesCategories)
+// Module 10785 (useMaybeFetchCollectiblesCategories)
 import get_initialized from "get initialized" /* 504 */;
-import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 10785 */;
+import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 10786 */;
 import DevSettingsStore from "DevSettingsStore" /* 5764 */;
 import size from "module_2" /* 2 */;
 

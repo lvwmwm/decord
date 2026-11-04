@@ -1,10 +1,10 @@
-// Module ID: 14414
-// Function ID: 14415
+// Module ID: 14415
+// Function ID: 14416
 // Name: ApplicationIconAndName
 // Dependencies: [21, 5141, 575, 1187, 5761, 2]
 // Exports: default
 
-// Module 14414 (ApplicationIconAndName)
+// Module 14415 (ApplicationIconAndName)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import Fragment from "Fragment" /* 21 */;

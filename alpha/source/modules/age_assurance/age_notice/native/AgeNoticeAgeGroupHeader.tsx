@@ -1,10 +1,10 @@
-// Module ID: 16861
-// Function ID: 16862
+// Module ID: 16873
+// Function ID: 16874
 // Name: AgeNoticeAgeGroupHeader
-// Dependencies: [32, 19, 17, 6872, 4987, 21, 5141, 575, 4974, 10310, 3255, 8095, 16851, 7709, 5869, 5761, 1113, 7121, 7195, 16862, 5768, 2]
+// Dependencies: [32, 19, 17, 6872, 4987, 21, 5141, 575, 4974, 10310, 3255, 8095, 16863, 7709, 5869, 5761, 1113, 7121, 7195, 16874, 5768, 2]
 // Exports: TinyBroncoAgeGroupHeader
 
-// Module 16861 (AgeNoticeAgeGroupHeader)
+// Module 16873 (AgeNoticeAgeGroupHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 5761 */;
 import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
 import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10310 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16862 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16874 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

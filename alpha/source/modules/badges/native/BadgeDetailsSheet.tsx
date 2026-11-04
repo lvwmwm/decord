@@ -1,10 +1,10 @@
-// Module ID: 11652
-// Function ID: 11653
+// Module ID: 11653
+// Function ID: 11654
 // Name: BadgeDetailsSheet
-// Dependencies: [19, 17, 5142, 1385, 8904, 1072, 5397, 21, 5141, 575, 5869, 5761, 504, 11653, 11654, 11655, 11648, 11656, 2155, 1389, 11657, 11666, 11667, 5382, 11651, 11644, 7703, 1113, 11639, 11668, 5768, 11669, 1627, 11642, 8909, 11649, 5396, 5400, 2]
+// Dependencies: [19, 17, 5142, 1385, 8904, 1072, 5397, 21, 5141, 575, 5869, 5761, 504, 11654, 11655, 11656, 11649, 11657, 2155, 1389, 11658, 11667, 11668, 5382, 11652, 11645, 7703, 1113, 11640, 11669, 5768, 11670, 1627, 11643, 8909, 11650, 5396, 5400, 2]
 // Exports: default
 
-// Module 11652 (BadgeDetailsSheet)
+// Module 11653 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
@@ -12,8 +12,8 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import CircleInformationIcon2 from "CircleInformationIcon" /* 5869 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8909 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11651 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11667 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11652 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11668 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;

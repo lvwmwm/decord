@@ -1,9 +1,9 @@
-// Module ID: 17238
-// Function ID: 17239
+// Module ID: 17250
+// Function ID: 17251
 // Name: QuestHomeOrbShopRewardCardAssetTile
 // Dependencies: [32, 19, 17, 1074, 21, 9606, 575, 5141, 9653, 38, 2116, 5851, 9654, 9655, 8883, 9640, 9687, 1075, 9688, 9642, 9665, 9667, 9607, 7871, 5138, 5732, 2]
 
-// Module 17238 (QuestHomeOrbShopRewardCardAssetTile)
+// Module 17250 (QuestHomeOrbShopRewardCardAssetTile)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;

@@ -1,563 +1,271 @@
 // Module ID: 13294
 // Function ID: 13295
-// Dependencies: [32, 41, 42, 13283, 13295, 13296, 13280, 13287, 13298, 13284, 13273]
+// Dependencies: [41, 42, 13295, 13281, 13292, 13300]
+// Exports: getStackAsyncContextStrategy
 
 // Module 13294
-import _mod13273 from "module_13273" /* 13273 */;
-import _mod13280 from "module_13280" /* 13280 */;
-import generatePropagationContext from "generatePropagationContext" /* 13283 */;
-import _mod13284 from "module_13284" /* 13284 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13287 */;
+import _mod13281 from "module_13281" /* 13281 */;
+import _mod13292 from "module_13292" /* 13292 */;
 import _mod13295 from "module_13295" /* 13295 */;
-import _mod13296 from "module_13296" /* 13296 */;
-import _mod13298 from "module_13298" /* 13298 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod13300 from "module_13300" /* 13300 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-class ScopeClass {
-  constructor() {
-    let obj2;
-    let obj3;
-    _classCallCheck(this, ScopeClass);
-    this._notifyingListeners = false;
-    this._scopeListeners = [];
-    this._eventProcessors = [];
-    this._breadcrumbs = [];
-    this._attachments = [];
-    this._user = {};
-    this._tags = {};
-    this._extra = {};
-    this._contexts = {};
-    this._sdkProcessingMetadata = {};
-    const obj = { traceId: obj2.generateTraceId(), spanId: obj3.generateSpanId() };
-    obj2 = generatePropagationContext;
-    this._propagationContext = obj;
-    obj3 = generatePropagationContext;
+const require = globalThis.__r;
+let _require;
+
+function withScope(arg0) {
+  const obj = _mod13292;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13292;
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = _mod13300;
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = _mod13300;
+    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(arg0);
+}
+function withSetScope(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  const obj = _mod13292;
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = _mod13292;
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = _mod13300;
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = _mod13300;
+    stack = new c3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(() => {
+    stack.getStackTop().scope = scope;
+    return closure_1(scope);
+  });
+}
+function withIsolationScope(arg0) {
+  let closure_0;
+  _require = arg0;
+  const obj = require("module_13292");
+  const mainCarrier = obj.getMainCarrier();
+  const obj2 = require("module_13292");
+  const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+  let stack = sentryCarrier.stack;
+  if (!stack) {
+    const tmpResult = require("module_13300");
+    const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+    const self = this;
+    const self2 = this;
+    const tmpResult2 = require("module_13300");
+    stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+  }
+  sentryCarrier.stack = stack;
+  return stack.withScope(function() {
+    const obj = require("module_13292");
+    const mainCarrier = obj.getMainCarrier();
+    const obj2 = require("module_13292");
+    const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+    let stack = sentryCarrier.stack;
+    const tmp = closure_0;
+    if (!stack) {
+      const tmp2Result = require("module_13300");
+      const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
+      const self = this;
+      const self2 = this;
+      const tmp2Result2 = require("module_13300");
+      stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
+    }
+    sentryCarrier.stack = stack;
+    return tmp(stack.getIsolationScope());
+  });
+}
+class AsyncContextStack {
+  constructor(arg0, arg1) {
+    const self = this;
+    let scope = arg0;
+    _classCallCheck(this, AsyncContextStack);
+    if (!arg0) {
+      const self2 = this;
+      const self3 = this;
+      scope = new _mod13295.Scope();
+    }
+    let scope1 = arg1;
+    if (!scope1) {
+      const self4 = this;
+      const self5 = this;
+      scope1 = new _mod13295.Scope();
+    }
+    const items = [{ scope }];
+    self._stack = items;
+    self._isolationScope = scope1;
   }
 }
 const entry = {
-  key: "clone",
-  value: function clone() {
-    let items1;
-    let obj2;
-    let obj3;
+  key: "withScope",
+  value: function withScope(fn) {
     const self = this;
-    const obj4 = Object.create(ScopeClass.prototype);
-    _classCallCheck(obj4, ScopeClass);
-    obj4._notifyingListeners = false;
-    obj4._scopeListeners = [];
-    obj4._eventProcessors = [];
-    obj4._breadcrumbs = [];
-    obj4._attachments = [];
-    obj4._user = {};
-    obj4._tags = {};
-    obj4._extra = {};
-    obj4._contexts = {};
-    obj4._sdkProcessingMetadata = {};
-    const obj = { traceId: obj2.generateTraceId(), spanId: obj3.generateSpanId() };
-    obj2 = generatePropagationContext;
-    obj4._propagationContext = obj;
-    const items = [...this._breadcrumbs];
-    obj4._breadcrumbs = items;
-    obj3 = generatePropagationContext;
-    const obj5 = {};
-    const merged = Object.assign(this._tags);
-    obj4._tags = obj5;
-    const obj6 = {};
-    const merged1 = Object.assign(this._extra);
-    obj4._extra = obj6;
-    const obj7 = {};
-    const merged2 = Object.assign(this._contexts);
-    obj4._contexts = obj7;
-    if (this._contexts.flags) {
-      const obj8 = { values: items1 };
-      items1 = [];
-      const _contexts = obj4._contexts;
-      HermesBuiltin.arraySpread(items1, self._contexts.flags.values, 0);
-      _contexts.flags = obj8;
+    try {
+      let nextPromise;
+      const promise = fn(tmp);
+      const obj = _mod13281;
+      if (obj.isThenable(promise)) {
+        nextPromise = promise.then((result) => {
+          self._popScope();
+          return result;
+        }, (arg0) => {
+          self._popScope();
+          throw arg0;
+        });
+      } else {
+        self._popScope();
+        nextPromise = promise;
+      }
+      return nextPromise;
+    } catch (tmp9) {
+      self._popScope();
+      throw tmp9;
     }
-    ({ _user: tmp2._user, _level: tmp2._level, _session: tmp2._session, _transactionName: tmp2._transactionName, _fingerprint: tmp2._fingerprint } = self);
-    const items2 = [...self._eventProcessors];
-    obj4._eventProcessors = items2;
-    obj4._requestSession = self._requestSession;
-    obj4._attachments = [...self._attachments];
-    const obj9 = {};
-    const merged3 = Object.assign(self._sdkProcessingMetadata);
-    obj4._sdkProcessingMetadata = obj9;
-    const obj10 = {};
-    const merged4 = Object.assign(self._propagationContext);
-    obj4._propagationContext = obj10;
-    ({ _client: tmp2._client, _lastEventId: tmp2._lastEventId } = self);
-    const _setSpanForScope = _mod13295._setSpanForScope;
-    _mod13295;
-    const tmp4Result2 = _mod13295;
-    _setSpanForScope(obj4, tmp4Result2._getSpanForScope(self));
-    return obj4;
   }
 };
 let items = [
   entry,
   {
-    key: "setClient",
-    value: function setClient(_client) {
-      this._client = _client;
-    }
-  },
-  {
-    key: "setLastEventId",
-    value: function setLastEventId(_lastEventId) {
-      this._lastEventId = _lastEventId;
-    }
-  },
-  {
     key: "getClient",
     value: function getClient() {
-      return this._client;
+      return this.getStackTop().client;
     }
   },
   {
-    key: "lastEventId",
-    value: function lastEventId() {
-      return this._lastEventId;
+    key: "getScope",
+    value: function getScope() {
+      return this.getStackTop().scope;
     }
   },
   {
-    key: "addScopeListener",
-    value: function addScopeListener(arg0) {
-      const _scopeListeners = this._scopeListeners;
-      _scopeListeners.push(arg0);
+    key: "getIsolationScope",
+    value: function getIsolationScope() {
+      return this._isolationScope;
     }
   },
   {
-    key: "addEventProcessor",
-    value: function addEventProcessor(arg0) {
-      const _eventProcessors = this._eventProcessors;
-      _eventProcessors.push(arg0);
-      return this;
+    key: "getStackTop",
+    value: function getStackTop() {
+      return this._stack[this._stack.length - 1];
     }
   },
   {
-    key: "setUser",
-    value: function setUser(user) {
-      const self = this;
-      const tmp = user || { email: "cix", id: "construct", ip_address: "Button", username: "c" };
-      this._user = tmp;
-      if (this._session) {
-        const obj2 = { user };
-        const obj = _mod13296;
-        obj.updateSession(self._session, obj2);
+    key: "_pushScope",
+    value: function _pushScope() {
+      const scope = this.getScope();
+      const cloneResult = scope.clone();
+      const _stack = this._stack;
+      const obj = { client: this.getClient(), scope: cloneResult };
+      _stack.push(obj);
+      return cloneResult;
+    }
+  },
+  {
+    key: "_popScope",
+    value: function _popScope() {
+      let arr = this._stack.length > 1;
+      if (arr) {
+        const _stack = this._stack;
+        arr = _stack.pop();
       }
-      const result = self._notifyScopeListeners();
-      return self;
-    }
-  },
-  {
-    key: "getUser",
-    value: function getUser() {
-      return this._user;
-    }
-  },
-  {
-    key: "getRequestSession",
-    value: function getRequestSession() {
-      return this._requestSession;
-    }
-  },
-  {
-    key: "setRequestSession",
-    value: function setRequestSession(_requestSession) {
-      this._requestSession = _requestSession;
-      return this;
-    }
-  },
-  {
-    key: "setTags",
-    value: function setTags(arg0) {
-      const obj = {};
-      const merged = Object.assign(this._tags);
-      const merged1 = Object.assign(arg0);
-      this._tags = obj;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setTag",
-    value: function setTag(arg0, arg1) {
-      const obj = {};
-      const merged = Object.assign(this._tags);
-      obj[arg0] = arg1;
-      this._tags = obj;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setExtras",
-    value: function setExtras(arg0) {
-      const obj = {};
-      const merged = Object.assign(this._extra);
-      const merged1 = Object.assign(arg0);
-      this._extra = obj;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setExtra",
-    value: function setExtra(arg0, arg1) {
-      const obj = {};
-      const merged = Object.assign(this._extra);
-      obj[arg0] = arg1;
-      this._extra = obj;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setFingerprint",
-    value: function setFingerprint(_fingerprint) {
-      this._fingerprint = _fingerprint;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setLevel",
-    value: function setLevel(_level) {
-      this._level = _level;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setTransactionName",
-    value: function setTransactionName(_transactionName) {
-      this._transactionName = _transactionName;
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "setContext",
-    value: function setContext(arg0, arg1) {
-      const self = this;
-      if (null === arg1) {
-        delete self._contexts[tmp];
-      } else {
-        self._contexts[arg0] = arg1;
-      }
-      const result = self._notifyScopeListeners();
-      return self;
-    }
-  },
-  {
-    key: "setSession",
-    value: function setSession(_session) {
-      const self = this;
-      const tmp = _session;
-      if (tmp) {
-        self._session = _session;
-      } else {
-        delete self["_session"];
-      }
-      const result = self._notifyScopeListeners();
-      return self;
-    }
-  },
-  {
-    key: "getSession",
-    value: function getSession() {
-      return this._session;
-    }
-  },
-  {
-    key: "update",
-    value: function update(requestSession) {
-      let contexts;
-      let extra;
-      let fingerprint;
-      let level;
-      let obj3;
-      let obj4;
-      let tags;
-      let tmp7;
-      let user;
-      const self = this;
-      const tmp = requestSession;
-      if (tmp) {
-        let items2;
-        let obj = requestSession;
-        if (typeof requestSession === "function") {
-          obj = requestSession(self);
-        }
-        if (obj instanceof _moduleResult) {
-          const items = [obj.getScopeData(), obj.getRequestSession()];
-          items2 = items;
-        } else {
-          const obj2 = _mod13280;
-          if (obj2.isPlainObject(obj)) {
-            const items1 = [requestSession, requestSession.requestSession];
-            items2 = items1;
-          } else {
-            items2 = [];
-          }
-        }
-        [obj3, tmp7] = items2;
-        _slicedToArray(items2, 2);
-        if (!obj4) {
-          obj4 = {};
-        }
-        ({ tags, extra, user, contexts, level, fingerprint } = obj4);
-        if (undefined === fingerprint) {
-          fingerprint = [];
-        }
-        const propagationContext = obj4.propagationContext;
-        const obj5 = {};
-        const merged = Object.assign(self._tags);
-        const merged1 = Object.assign(tags);
-        self._tags = obj5;
-        const obj6 = {};
-        const merged2 = Object.assign(self._extra);
-        const merged3 = Object.assign(extra);
-        self._extra = obj6;
-        const obj10 = {};
-        const merged4 = Object.assign(self._contexts);
-        const merged5 = Object.assign(contexts);
-        self._contexts = obj10;
-        let length = user;
-        if (length) {
-          const _Object = Object;
-          length = Object.keys(user).length;
-        }
-        if (length) {
-          self._user = user;
-        }
-        if (level) {
-          self._level = level;
-        }
-        if (fingerprint.length) {
-          self._fingerprint = fingerprint;
-        }
-        if (propagationContext) {
-          self._propagationContext = propagationContext;
-        }
-        if (tmp7) {
-          self._requestSession = tmp7;
-        }
-        return self;
-      } else {
-        return self;
-      }
-    }
-  },
-  {
-    key: "clear",
-    value: function clear() {
-      let obj4;
-      const obj = { _breadcrumbs: [], _tags: {}, _extra: {}, _user: {}, _contexts: {}, _level: undefined, _transactionName: undefined, _fingerprint: undefined, _requestSession: undefined, _session: undefined, _attachments: [] };
-      const obj2 = _mod13295;
-      obj2._setSpanForScope(obj, undefined);
-      const setPropagationContext = obj.setPropagationContext;
-      const obj3 = { traceId: obj4.generateTraceId() };
-      obj4 = generatePropagationContext;
-      const result = setPropagationContext(obj3);
-      const result1 = obj._notifyScopeListeners();
-      return obj;
-    }
-  },
-  {
-    key: "addBreadcrumb",
-    value: function addBreadcrumb(arg0, num) {
-      let obj2;
-      num = 100;
-      const self = this;
-      if (num <= 0) {
-        return self;
-      } else {
-        const obj = { timestamp: obj2.dateTimestampInSeconds() };
-        obj2 = _browserPerformanceTimeOriginMode;
-        const merged = Object.assign(arg0);
-        const _breadcrumbs = self._breadcrumbs;
-        _breadcrumbs.push(obj);
-        if (self._breadcrumbs.length > num) {
-          const _breadcrumbs1 = self._breadcrumbs;
-          self._breadcrumbs = _breadcrumbs1.slice(-num);
-          if (self._client) {
-            const _client = self._client;
-            _client.recordDroppedEvent("buffer_overflow", "log_item");
-          }
-        }
-        const result = self._notifyScopeListeners();
-        return self;
-      }
-    }
-  },
-  {
-    key: "getLastBreadcrumb",
-    value: function getLastBreadcrumb() {
-      return this._breadcrumbs[this._breadcrumbs.length - 1];
-    }
-  },
-  {
-    key: "clearBreadcrumbs",
-    value: function clearBreadcrumbs() {
-      this._breadcrumbs = [];
-      const result = this._notifyScopeListeners();
-      return this;
-    }
-  },
-  {
-    key: "addAttachment",
-    value: function addAttachment(arg0) {
-      const _attachments = this._attachments;
-      _attachments.push(arg0);
-      return this;
-    }
-  },
-  {
-    key: "clearAttachments",
-    value: function clearAttachments() {
-      this._attachments = [];
-      return this;
-    }
-  },
-  {
-    key: "getScopeData",
-    value: function getScopeData() {
-      let obj2;
-      const self = this;
-      const obj = { breadcrumbs: this._breadcrumbs, attachments: this._attachments, contexts: this._contexts, tags: this._tags, extra: this._extra, user: this._user, level: this._level, fingerprint: this._fingerprint || [], eventProcessors: self._eventProcessors, propagationContext: self._propagationContext, sdkProcessingMetadata: self._sdkProcessingMetadata, transactionName: self._transactionName, span: obj2._getSpanForScope(self) };
-      obj2 = _mod13295;
-      return obj;
-    }
-  },
-  {
-    key: "setSDKProcessingMetadata",
-    value: function setSDKProcessingMetadata(arg0) {
-      const obj = _mod13298;
-      this._sdkProcessingMetadata = obj.merge(this._sdkProcessingMetadata, arg0, 2);
-      return this;
-    }
-  },
-  {
-    key: "setPropagationContext",
-    value: function setPropagationContext(arg0) {
-      let obj2;
-      const obj = { spanId: obj2.generateSpanId() };
-      obj2 = generatePropagationContext;
-      const merged = Object.assign(arg0);
-      this._propagationContext = obj;
-      return this;
-    }
-  },
-  {
-    key: "getPropagationContext",
-    value: function getPropagationContext() {
-      return this._propagationContext;
-    }
-  },
-  {
-    key: "captureException",
-    value: function captureException(originalException, event_id) {
-      const tmp = event_id;
-      if (tmp) {
-        if (event_id.event_id) {
-          event_id = event_id.event_id;
-        }
-        const self = this;
-        if (this._client) {
-          const _Error = Error;
-          const self2 = this;
-          const self3 = this;
-          const error = new Error("Sentry syntheticException");
-          const _client = self._client;
-          const captureException = _client.captureException;
-          const obj2 = { originalException, syntheticException: error, event_id };
-          const merged = Object.assign(event_id);
-          captureException(originalException, obj2, self);
-          return event_id;
-        } else {
-          const logger = _mod13273.logger;
-          logger.warn("No client configured on scope - will not capture exception!");
-          return event_id;
-        }
-      }
-      const obj = _mod13284;
-      event_id = obj.uuid4();
-    }
-  },
-  {
-    key: "captureMessage",
-    value: function captureMessage(originalException, arg1, event_id) {
-      const tmp = event_id;
-      if (tmp) {
-        if (event_id.event_id) {
-          event_id = event_id.event_id;
-        }
-        const self = this;
-        if (this._client) {
-          const _Error = Error;
-          const self2 = this;
-          const self3 = this;
-          const error = new Error(originalException);
-          const _client = self._client;
-          const captureMessage = _client.captureMessage;
-          const obj2 = { originalException, syntheticException: error, event_id };
-          const merged = Object.assign(event_id);
-          captureMessage(originalException, arg1, obj2, self);
-          return event_id;
-        } else {
-          const logger = _mod13273.logger;
-          logger.warn("No client configured on scope - will not capture message!");
-          return event_id;
-        }
-      }
-      const obj = _mod13284;
-      event_id = obj.uuid4();
-    }
-  },
-  {
-    key: "captureEvent",
-    value: function captureEvent(arg0, event_id) {
-      const tmp = event_id;
-      if (tmp) {
-        if (event_id.event_id) {
-          event_id = event_id.event_id;
-        }
-        const self = this;
-        if (this._client) {
-          const _client = self._client;
-          const captureEvent = _client.captureEvent;
-          const obj2 = { event_id };
-          const merged = Object.assign(event_id);
-          captureEvent(arg0, obj2, self);
-        } else {
-          const logger = _mod13273.logger;
-          logger.warn("No client configured on scope - will not capture event!");
-        }
-        return event_id;
-      }
-      const obj = _mod13284;
-      event_id = obj.uuid4();
-    }
-  },
-  {
-    key: "_notifyScopeListeners",
-    value: function _notifyScopeListeners() {
-      const self = this;
-      if (!this._notifyingListeners) {
-        self._notifyingListeners = true;
-        const _scopeListeners = self._scopeListeners;
-        const item = _scopeListeners.forEach((fn) => {
-          fn(self);
-        });
-        self._notifyingListeners = false;
-      }
+      return arr;
     }
   }
 ];
-const _moduleResult = _createClass(ScopeClass, items);
+const _moduleResult = _createClass(AsyncContextStack, items);
+let c3 = _moduleResult;
+const AsyncContextStack_export = _moduleResult;
 
-export const Scope = _moduleResult;
+export { AsyncContextStack_export as AsyncContextStack };
+export function getStackAsyncContextStrategy() {
+  let obj = {
+    withIsolationScope,
+    withScope,
+    withSetScope,
+    withSetIsolationScope(arg0, arg1) {
+      let closure_0 = arg1;
+      let tmp = closure_0;
+      let obj = closure_0(closure_1[4]);
+      let mainCarrier = obj.getMainCarrier();
+      let obj2 = closure_0(closure_1[4]);
+      let sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = tmp(closure_1[5]);
+        let defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        let self = this;
+        let self2 = this;
+        const tmpResult2 = tmp(closure_1[5]);
+        stack = new closure_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.withScope(function() {
+        const obj = require("module_13292");
+        const mainCarrier = obj.getMainCarrier();
+        const obj2 = require("module_13292");
+        const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+        let stack = sentryCarrier.stack;
+        const tmp = closure_0;
+        if (!stack) {
+          const tmp2Result = require("module_13300");
+          const defaultCurrentScope = tmp2Result.getDefaultCurrentScope();
+          const self = this;
+          const self2 = this;
+          const tmp2Result2 = require("module_13300");
+          stack = new closure_2_3(defaultCurrentScope, tmp2Result2.getDefaultIsolationScope());
+        }
+        sentryCarrier.stack = stack;
+        return tmp(stack.getIsolationScope());
+      });
+    },
+    getCurrentScope() {
+      const obj = require("module_13292");
+      const mainCarrier = obj.getMainCarrier();
+      const obj2 = require("module_13292");
+      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = require("module_13300");
+        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        const self = this;
+        const self2 = this;
+        const tmpResult2 = require("module_13300");
+        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.getScope();
+    },
+    getIsolationScope() {
+      const obj = require("module_13292");
+      const mainCarrier = obj.getMainCarrier();
+      const obj2 = require("module_13292");
+      const sentryCarrier = obj2.getSentryCarrier(mainCarrier);
+      let stack = sentryCarrier.stack;
+      if (!stack) {
+        const tmpResult = require("module_13300");
+        const defaultCurrentScope = tmpResult.getDefaultCurrentScope();
+        const self = this;
+        const self2 = this;
+        const tmpResult2 = require("module_13300");
+        stack = new closure_1_3(defaultCurrentScope, tmpResult2.getDefaultIsolationScope());
+      }
+      sentryCarrier.stack = stack;
+      return stack.getIsolationScope();
+    }
+  };
+  return obj;
+}

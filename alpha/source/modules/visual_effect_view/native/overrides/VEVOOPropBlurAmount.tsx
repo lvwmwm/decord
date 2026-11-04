@@ -1,9 +1,9 @@
-// Module ID: 18218
-// Function ID: 18219
+// Module ID: 18232
+// Function ID: 18233
 // Name: VEVOOPropBlurAmount
-// Dependencies: [32, 19, 5737, 21, 5141, 8317, 7506, 18219, 2]
+// Dependencies: [32, 19, 5737, 21, 5141, 8317, 7506, 18233, 2]
 
-// Module 18218 (VEVOOPropBlurAmount)
+// Module 18232 (VEVOOPropBlurAmount)
 import Fragment from "Fragment" /* 21 */;
 import _mod8317 from "module_8317" /* 8317 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

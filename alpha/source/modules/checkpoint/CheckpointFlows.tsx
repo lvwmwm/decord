@@ -1,10 +1,10 @@
-// Module ID: 13675
-// Function ID: 13676
+// Module ID: 13676
+// Function ID: 13677
 // Name: CheckpointFlows
-// Dependencies: [6570, 6572, 13676, 13677, 2]
+// Dependencies: [6570, 6572, 13677, 13678, 2]
 // Exports: getAdjacentCheckpointRoute, getCheckpointFlow, getCheckpointRoutes
 
-// Module 13675 (CheckpointFlows)
+// Module 13676 (CheckpointFlows)
 import CheckpointNavigation from "CheckpointNavigation" /* 6570 */;
 import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6572 */;
 import size from "module_2" /* 2 */;
@@ -47,9 +47,9 @@ export function getCheckpointRoutes(stats) {
   let prop;
   stats = stats.stats;
   if (stats.flow === stats(6570).CheckpointFlow.SHARED_DATA) {
-    prop = tmp(13676).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp(13677).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(13677).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(13678).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   return prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
@@ -76,9 +76,9 @@ export function getAdjacentCheckpointRoute(stats) {
   stats = stats.stats;
   ({ flow, currentRoute, direction } = stats);
   if (flow === stats(6570).CheckpointFlow.SHARED_DATA) {
-    prop = tmp(13676).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp(13677).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(13677).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(13678).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   const found = prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {

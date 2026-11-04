@@ -1,17 +1,17 @@
-// Module ID: 17011
-// Function ID: 17012
+// Module ID: 17023
+// Function ID: 17024
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 5141, 575, 8510, 7428, 17012, 17014, 17024, 13581, 17028, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 8510, 7428, 17024, 17026, 17036, 13582, 17040, 2]
 // Exports: default
 
-// Module 17011 (FamilyCenterActivityPage)
+// Module 17023 (FamilyCenterActivityPage)
 import nativeDefault from "native" /* 575 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
 import useUserLinks from "useUserLinks" /* 8510 */;
-import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 13581 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 17012 */;
-import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 17014 */;
-import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 17024 */;
+import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 13582 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 17024 */;
+import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 17026 */;
+import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 17036 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -56,7 +56,7 @@ export default function FamilyCenterActivityPage() {
     items1[2] = hasOwnProperty(_false, obj5);
     tmp3Result = tmp5(metroRequire, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(17028), {});
+    tmp3Result = tmp3(tmp7(17040), {});
   }
   items[1] = tmp3Result;
   obj6 = { bottom: true, children: metroImportDefault(_false, obj3) };

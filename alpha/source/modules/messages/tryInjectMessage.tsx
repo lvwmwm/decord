@@ -1,14 +1,14 @@
-// Module ID: 13933
-// Function ID: 13934
+// Module ID: 13934
+// Function ID: 13935
 // Name: tryInjectMessage
-// Dependencies: [502, 1072, 10497, 6198, 1398, 13934, 13935, 2]
+// Dependencies: [502, 1072, 10497, 6198, 1398, 13935, 13936, 2]
 // Exports: tryCreateInjectedMessage
 
-// Module 13933 (tryInjectMessage)
+// Module 13934 (tryInjectMessage)
 import FlagUtils from "FlagUtils" /* 1398 */;
 import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
 import createMessageDefault from "createMessage" /* 10497 */;
-import ChannelRecipientPrivateUserDataFlags from "ChannelRecipientPrivateUserDataFlags" /* 13934 */;
+import ChannelRecipientPrivateUserDataFlags from "ChannelRecipientPrivateUserDataFlags" /* 13935 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ export function tryCreateInjectedMessage(id, id2) {
                     num2 = 0;
                   }
                   const setFlagResult = setFlag(num2, ChannelRecipientPrivateUserDataFlags.ChannelRecipientPrivateUserDataFlags.DISMISSED_IN_GAME_MESSAGE_NUX, true);
-                  const tmp7Result = tmp7(13935);
+                  const tmp7Result = tmp7(13936);
                   const result1 = tmp7Result.updatePrivateChannelRecipientFlags(id2.id, setFlagResult);
                   tmp4 = messageRecord1;
                 }

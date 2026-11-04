@@ -1,10 +1,10 @@
-// Module ID: 16735
-// Function ID: 16736
+// Module ID: 16747
+// Function ID: 16748
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 7860, 7875, 563, 7872, 1113, 15292, 2]
+// Dependencies: [32, 19, 7860, 7875, 563, 7872, 1113, 15293, 2]
 // Exports: default
 
-// Module 16735 (useProfileEffectSections)
+// Module 16747 (useProfileEffectSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1113 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7872 */;
@@ -80,7 +80,7 @@ export default function useProfileEffectSections() {
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(15292)(tmp5, obj.PREVIEW);
+  return first(15293)(tmp5, obj.PREVIEW);
 };
 export { Section };
 export const NONE_ITEM = obj2;

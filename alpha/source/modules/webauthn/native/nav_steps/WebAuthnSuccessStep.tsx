@@ -1,13 +1,13 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 16947
+// Function ID: 16948
 // Name: WebAuthnSuccessStep
-// Dependencies: [19, 21, 16910, 1113, 2]
+// Dependencies: [19, 21, 16922, 1113, 2]
 // Exports: default
 
-// Module 16935 (WebAuthnSuccessStep)
+// Module 16947 (WebAuthnSuccessStep)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 16910 */;
+import UserSettingsAccountBackupCodesDefault from "UserSettingsAccountBackupCodes" /* 16922 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

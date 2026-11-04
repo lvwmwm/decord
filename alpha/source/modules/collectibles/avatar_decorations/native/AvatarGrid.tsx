@@ -1,10 +1,10 @@
-// Module ID: 15304
-// Function ID: 15305
+// Module ID: 15305
+// Function ID: 15306
 // Name: AvatarGrid
 // Dependencies: [19, 17, 5142, 5895, 21, 5141, 575, 504, 1187, 8961, 2]
 // Exports: default
 
-// Module 15304 (AvatarGrid)
+// Module 15305 (AvatarGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

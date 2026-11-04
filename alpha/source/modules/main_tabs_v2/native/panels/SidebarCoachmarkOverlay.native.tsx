@@ -1,10 +1,10 @@
-// Module ID: 18309
-// Function ID: 18310
+// Module ID: 18323
+// Function ID: 18324
 // Name: SidebarCoachmarkOverlay
 // Dependencies: [32, 19, 17, 1072, 21, 5749, 5750, 2]
 // Exports: SidebarCoachmarkOverlay
 
-// Module 18309 (SidebarCoachmarkOverlay)
+// Module 18323 (SidebarCoachmarkOverlay)
 import Constants from "Constants" /* 1072 */;
 import reactDefault from "react" /* 5749 */;
 import LayerContext from "LayerContext" /* 5750 */;

@@ -1,10 +1,10 @@
-// Module ID: 19069
-// Function ID: 19070
+// Module ID: 19083
+// Function ID: 19084
 // Name: AutocompleteScreenUtils
-// Dependencies: [5053, 5083, 1385, 14117, 9976, 1072, 1113, 13611, 5861, 14834, 10711, 10713, 11223, 8800, 14319, 11225, 12322, 12302, 19070, 14110, 5195, 2]
+// Dependencies: [5053, 5083, 1385, 14118, 9976, 1072, 1113, 13612, 5861, 14835, 10711, 10713, 11223, 8800, 14320, 11225, 12323, 12303, 19084, 14111, 5195, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 19069 (AutocompleteScreenUtils)
+// Module 19083 (AutocompleteScreenUtils)
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
@@ -15,17 +15,17 @@ import PollsIcon from "PollsIcon" /* 10711 */;
 import AttachmentIcon from "AttachmentIcon" /* 10713 */;
 import VideoIcon from "VideoIcon" /* 11223 */;
 import StickerIcon from "StickerIcon" /* 11225 */;
-import RobotIcon from "RobotIcon" /* 12302 */;
-import UserIcon from "UserIcon" /* 12322 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 13611 */;
-import SearchUtils from "SearchUtils" /* 14110 */;
-import SoundboardIcon from "SoundboardIcon" /* 14319 */;
-import EmbedIcon from "EmbedIcon" /* 14834 */;
-import WebhookIcon from "WebhookIcon" /* 19070 */;
+import RobotIcon from "RobotIcon" /* 12303 */;
+import UserIcon from "UserIcon" /* 12323 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 13612 */;
+import SearchUtils from "SearchUtils" /* 14111 */;
+import SoundboardIcon from "SoundboardIcon" /* 14320 */;
+import EmbedIcon from "EmbedIcon" /* 14835 */;
+import WebhookIcon from "WebhookIcon" /* 19084 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
-import SearchQueryStore from "SearchQueryStore" /* 14117 */;
+import SearchQueryStore from "SearchQueryStore" /* 14118 */;
 import size from "module_2" /* 2 */;
 
 let set;

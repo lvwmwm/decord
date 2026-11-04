@@ -1,15 +1,15 @@
-// Module ID: 20023
-// Function ID: 20024
+// Module ID: 20037
+// Function ID: 20038
 // Name: GuildSettingsServerTagColorPickerActionSheet
-// Dependencies: [32, 19, 17, 8534, 21, 575, 5141, 16687, 5138, 1493, 1652, 12250, 1113, 9125, 5382, 5396, 7457, 6162, 9440, 15974, 5761, 9359, 16688, 9208, 5768, 2]
+// Dependencies: [32, 19, 17, 8534, 21, 575, 5141, 16699, 5138, 1493, 1652, 12251, 1113, 9125, 5382, 5396, 7457, 6162, 9440, 15987, 5761, 9359, 16700, 9208, 5768, 2]
 // Exports: default
 
-// Module 20023 (GuildSettingsServerTagColorPickerActionSheet)
+// Module 20037 (GuildSettingsServerTagColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16687 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16699 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildTagConstants from "GuildTagConstants" /* 8534 */;

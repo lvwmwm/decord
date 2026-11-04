@@ -1,17 +1,17 @@
-// Module ID: 15723
-// Function ID: 15724
+// Module ID: 15724
+// Function ID: 15725
 // Name: GuildBoostingMarketingFaq
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 7723, 575, 1113, 2190, 5761, 7121, 1187, 15724, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 7723, 575, 1113, 2190, 5761, 7121, 1187, 15725, 2]
 // Exports: default
 
-// Module 15723 (GuildBoostingMarketingFaq)
+// Module 15724 (GuildBoostingMarketingFaq)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
 import GuildBoostingMarketingPersistentCta from "GuildBoostingMarketingPersistentCta" /* 7723 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15724 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15725 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

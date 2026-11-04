@@ -1,12 +1,12 @@
-// Module ID: 19684
-// Function ID: 19685
+// Module ID: 19698
+// Function ID: 19699
 // Name: ChannelSafetyWarningsManager
-// Dependencies: [4990, 5044, 11450, 11489, 19685, 7423, 2]
+// Dependencies: [4990, 5044, 11451, 11490, 19699, 7423, 2]
 
-// Module 19684 (ChannelSafetyWarningsManager)
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11450 */;
-import InappropriateConversationUtils from "InappropriateConversationUtils" /* 11489 */;
-import showTakeoverModal2 from "showTakeoverModal" /* 19685 */;
+// Module 19698 (ChannelSafetyWarningsManager)
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11451 */;
+import InappropriateConversationUtils from "InappropriateConversationUtils" /* 11490 */;
+import showTakeoverModal2 from "showTakeoverModal" /* 19699 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;

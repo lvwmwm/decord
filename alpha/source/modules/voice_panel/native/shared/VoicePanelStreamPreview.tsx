@@ -1,14 +1,14 @@
-// Module ID: 15105
-// Function ID: 15106
+// Module ID: 15106
+// Function ID: 15107
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 6849, 502, 21, 1652, 5768, 5141, 575, 12238, 504, 6852, 5378, 5851, 5761, 1113, 2]
+// Dependencies: [19, 17, 6849, 502, 21, 1652, 5768, 5141, 575, 12239, 504, 6852, 5378, 5851, 5761, 1113, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 15105 (VoicePanelStreamPreview)
+// Module 15106 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
 import components_Button_Button from "components/Button/Button" /* 5768 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6852 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12238 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 12239 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;

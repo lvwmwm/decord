@@ -1,26 +1,26 @@
-// Module ID: 19843
-// Function ID: 19844
+// Module ID: 19857
+// Function ID: 19858
 // Name: LanternSpotIllustration
-// Dependencies: [19, 21, 19844, 19845, 19846, 7210, 5851, 2]
+// Dependencies: [19, 21, 19858, 19859, 19860, 7210, 5851, 2]
 // Exports: LanternSpotIllustration
 
-// Module 19843 (LanternSpotIllustration)
+// Module 19857 (LanternSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7210 */;
-import _modDef19844 from "module_19844" /* 19844 */;
-import _modDef19845 from "module_19845" /* 19845 */;
-import _modDef19846 from "module_19846" /* 19846 */;
+import _modDef19858 from "module_19858" /* 19858 */;
+import _modDef19859 from "module_19859" /* 19859 */;
+import _modDef19860 from "module_19860" /* 19860 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19844 };
+let obj2 = { uri: _modDef19858 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19845 };
+let obj3 = { uri: _modDef19859 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19846 };
-({ uri: _modDef19846 });
+obj[3] = { uri: _modDef19860 };
+({ uri: _modDef19860 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/LanternSpotIllustration.native.tsx");
 

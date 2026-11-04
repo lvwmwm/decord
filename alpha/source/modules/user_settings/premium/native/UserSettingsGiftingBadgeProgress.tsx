@@ -1,17 +1,17 @@
-// Module ID: 15689
-// Function ID: 15690
+// Module ID: 15690
+// Function ID: 15691
 // Name: UserSettingsGiftingBadgeProgress
-// Dependencies: [32, 19, 17, 8904, 21, 5141, 575, 7462, 7487, 504, 8896, 5761, 1113, 2763, 10794, 10797, 5768, 13585, 10736, 15690, 11602, 2]
+// Dependencies: [32, 19, 17, 8904, 21, 5141, 575, 7462, 7487, 504, 8896, 5761, 1113, 2763, 10795, 10797, 5768, 13586, 10736, 15691, 11603, 2]
 // Exports: default
 
-// Module 15689 (UserSettingsGiftingBadgeProgress)
+// Module 15690 (UserSettingsGiftingBadgeProgress)
 import nativeDefault from "native" /* 575 */;
 import _modDef2763 from "module_2763" /* 2763 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7462 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
 import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8904 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10736 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10794 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10795 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10797 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -216,11 +216,11 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     let ChevronSmallDownIcon;
     let tmp19 = closure_8(currentTier);
     const tmp25 = closure_8(nextTier);
-    const tmp7Result = analyticsLocation(10794);
+    const tmp7Result = analyticsLocation(10795);
     const giftingBadgeProgressPercent = tmp7Result.getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier);
-    const tmp7Result3 = analyticsLocation(10794);
+    const tmp7Result3 = analyticsLocation(10795);
     let giftingBadgeTierIconUrl = tmp7Result3.getGiftingBadgeTierIconUrl(currentTier);
-    const tmp7Result4 = analyticsLocation(10794);
+    const tmp7Result4 = analyticsLocation(10795);
     const giftingBadgeTierIconUrl1 = tmp7Result4.getGiftingBadgeTierIconUrl(nextTier);
     if (null != nextTier) {
       const intl2 = tmp7(1113).intl;
@@ -305,7 +305,7 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     };
     const Button = tmp7(5768).Button;
     obj19 = { size: "sm", color: nativeDefault.unsafe_rawColors.WHITE };
-    GiftIcon = tmp7(13585).GiftIcon;
+    GiftIcon = tmp7(13586).GiftIcon;
     intl4 = tmp7(1113).intl;
     items5[1] = closure_9(Button, obj18);
     const obj20 = { style: tmp.divider };
@@ -323,9 +323,9 @@ export default function UserSettingsGiftingBadgeProgress(analyticsLocation) {
     items6 = [closure_9(Text2, obj22), ];
     const tmp20 = closure_5;
     if (tmp11Result) {
-      ChevronSmallDownIcon = tmp7(15690).ChevronSmallUpIcon;
+      ChevronSmallDownIcon = tmp7(15691).ChevronSmallUpIcon;
     } else {
-      ChevronSmallDownIcon = tmp7(11602).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp7(11603).ChevronSmallDownIcon;
     }
     const obj23 = { color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
     items6[1] = closure_9(ChevronSmallDownIcon, obj23);

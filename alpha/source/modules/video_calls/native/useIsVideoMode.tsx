@@ -1,10 +1,10 @@
-// Module ID: 12134
-// Function ID: 12135
+// Module ID: 12135
+// Function ID: 12136
 // Name: useIsVideoMode
 // Dependencies: [6849, 4990, 2135, 5044, 5813, 504, 2]
 // Exports: default, isVideoMode
 
-// Module 12134 (useIsVideoMode)
+// Module 12135 (useIsVideoMode)
 import get_initialized from "get initialized" /* 504 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

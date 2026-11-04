@@ -1,44 +1,60 @@
 // Module ID: 13107
 // Function ID: 13108
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055]
 
 // Module 13107 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import tokenize from "tokenize" /* 13055 */;
 
 let obj2;
-const Comment = tokenize.TYPE.Comment;
+const Ident = tokenize.TYPE.Ident;
 let obj = {
-  name: "Comment",
+  name: "Combinator",
   structure: obj2,
   parse() {
+    let scanner3;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const tokenEnd = this.scanner.tokenEnd;
-    this.eat(Comment);
-    const sum = tokenEnd - tokenStart + 2;
-    let tmp3 = sum >= 2;
-    if (2 <= sum) {
-      const source = self.scanner.source;
-      tmp3 = 42 === source.charCodeAt(tokenEnd - 2);
+    const source = this.scanner.source;
+    const charCodeAtResult = source.charCodeAt(this.scanner.tokenStart);
+    if (62 !== charCodeAtResult) {
+      if (43 !== charCodeAtResult) {
+        if (126 !== charCodeAtResult) {
+          if (47 === charCodeAtResult) {
+            const iter = self.scanner;
+            iter.next();
+            let tmp5 = self.scanner.tokenType === Ident;
+            if (tmp5) {
+              const scanner = self.scanner;
+              tmp5 = false !== scanner.lookupValue(0, "deep");
+            }
+            if (!tmp5) {
+              self.error("Identifier `deep` is expected");
+            }
+            const iter2 = self.scanner;
+            iter2.next();
+            const scanner2 = self.scanner;
+            if (!scanner2.isDelim(47)) {
+              self.error("Solidus is expected");
+            }
+            const iter3 = self.scanner;
+            iter3.next();
+          } else {
+            self.error("Combinator is expected");
+          }
+        }
+        const obj = { type: "Combinator", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
+        scanner3 = self.scanner;
+        return obj;
+      }
     }
-    if (tmp3) {
-      const source2 = self.scanner.source;
-      tmp3 = 47 === source2.charCodeAt(tokenEnd - 1);
-    }
-    let diff = tokenEnd;
-    if (tmp3) {
-      diff = tokenEnd - 2;
-    }
-    const obj = { type: "Comment", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: str.substring(tokenStart + 2, diff) };
-    return obj;
+    const iter4 = self.scanner;
+    iter4.next();
   },
-  generate(value) {
-    this.chunk("/*");
-    this.chunk(value.value);
-    this.chunk("*/");
+  generate(name) {
+    this.chunk(name.name);
   }
 };
-obj2 = { value: String };
+obj2 = { name: String };
 
 export default obj;

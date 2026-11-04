@@ -1,10 +1,10 @@
-// Module ID: 14710
-// Function ID: 14711
+// Module ID: 14711
+// Function ID: 14712
 // Name: useAvatarDecorationPreviewSizes
 // Dependencies: [1493, 9653, 2]
 // Exports: useAvatarDecorationPreviewSizes
 
-// Module 14710 (useAvatarDecorationPreviewSizes)
+// Module 14711 (useAvatarDecorationPreviewSizes)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import AvatarDecorationSampleV2 from "AvatarDecorationSampleV2" /* 9653 */;
 import size_mod from "module_2" /* 2 */;

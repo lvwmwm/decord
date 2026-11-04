@@ -1,12 +1,12 @@
-// Module ID: 15978
-// Function ID: 15979
+// Module ID: 15991
+// Function ID: 15992
 // Name: GuildBadgeWaterDrop
-// Dependencies: [19, 21, 15976, 8171, 2]
+// Dependencies: [19, 21, 15989, 8171, 2]
 // Exports: GuildBadgeWaterDrop
 
-// Module 15978 (GuildBadgeWaterDrop)
+// Module 15991 (GuildBadgeWaterDrop)
 import inlineStyles from "inlineStyles" /* 8171 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15976 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15989 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

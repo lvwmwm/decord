@@ -1,10 +1,10 @@
-// Module ID: 16231
-// Function ID: 16232
+// Module ID: 16244
+// Function ID: 16245
 // Name: SpeakerPulse
 // Dependencies: [19, 17, 5142, 21, 5141, 575, 504, 1652, 5378, 2]
 // Exports: default
 
-// Module 16231 (SpeakerPulse)
+// Module 16244 (SpeakerPulse)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;

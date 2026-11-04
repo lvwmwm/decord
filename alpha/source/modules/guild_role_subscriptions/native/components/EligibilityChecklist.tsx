@@ -1,10 +1,10 @@
-// Module ID: 20152
-// Function ID: 20153
+// Module ID: 20166
+// Function ID: 20167
 // Name: EligibilityChecklist
-// Dependencies: [19, 17, 21, 5141, 7476, 575, 7233, 5761, 5768, 17442, 2]
+// Dependencies: [19, 17, 21, 5141, 7476, 575, 7233, 5761, 5768, 17454, 2]
 // Exports: default
 
-// Module 20152 (EligibilityChecklist)
+// Module 20166 (EligibilityChecklist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
@@ -70,7 +70,7 @@ function EligibilityChecklistRow(item) {
     tmp13Result2 = tmp13(tmp4, obj17);
   } else {
     obj17.style = tmp.divider;
-    tmp13Result2 = tmp13(tmp12(17442), obj17);
+    tmp13Result2 = tmp13(tmp12(17454), obj17);
   }
   children[1] = tmp13Result2;
   return hasOwnProperty(tmp3, { children });

@@ -1,10 +1,10 @@
-// Module ID: 15386
-// Function ID: 15387
+// Module ID: 15387
+// Function ID: 15388
 // Name: InAppReportsUserPreview
 // Dependencies: [19, 17, 21, 5141, 575, 5138, 5761, 1113, 1187, 2]
 // Exports: default
 
-// Module 15386 (InAppReportsUserPreview)
+// Module 15387 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

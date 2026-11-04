@@ -1,10 +1,10 @@
-// Module ID: 14962
-// Function ID: 14963
+// Module ID: 14963
+// Function ID: 14964
 // Name: getDescription
 // Dependencies: [2]
 // Exports: default
 
-// Module 14962 (getDescription)
+// Module 14963 (getDescription)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/dynamic-links/getDescription.tsx");

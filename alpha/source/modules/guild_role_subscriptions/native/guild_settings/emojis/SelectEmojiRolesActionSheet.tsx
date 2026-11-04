@@ -1,10 +1,10 @@
-// Module ID: 20263
-// Function ID: 20264
+// Module ID: 20277
+// Function ID: 20278
 // Name: SelectEmojiRolesActionSheet
-// Dependencies: [32, 19, 17, 5047, 21, 5141, 575, 1627, 7354, 17437, 504, 7121, 5761, 1113, 7457, 5396, 7360, 7115, 13485, 7442, 2]
+// Dependencies: [32, 19, 17, 5047, 21, 5141, 575, 1627, 7354, 17449, 504, 7121, 5761, 1113, 7457, 5396, 7360, 7115, 13486, 7442, 2]
 // Exports: default
 
-// Module 20263 (SelectEmojiRolesActionSheet)
+// Module 20277 (SelectEmojiRolesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

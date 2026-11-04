@@ -1,10 +1,10 @@
-// Module ID: 19299
-// Function ID: 19300
+// Module ID: 19313
+// Function ID: 19314
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8904, 4987, 21, 5141, 575, 10794, 5382, 5323, 5396, 10797, 5761, 1113, 2763, 5768, 10736, 7487, 5851, 19300, 13585, 504, 8896, 2]
+// Dependencies: [19, 17, 8904, 4987, 21, 5141, 575, 10795, 5382, 5323, 5396, 10797, 5761, 1113, 2763, 5768, 10736, 7487, 5851, 19314, 13586, 504, 8896, 2]
 // Exports: default
 
-// Module 19299 (GiftingBadgesCoachmarkActionSheet)
+// Module 19313 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,7 +17,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
 import BadgeId from "BadgeId" /* 8896 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10736 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10797 */;
-import _modDef19300 from "module_19300" /* 19300 */;
+import _modDef19314 from "module_19314" /* 19314 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
 import Fragment from "Fragment" /* 21 */;
@@ -47,7 +47,7 @@ function HasBadgeCoachmark(markAsDismissed) {
   ({ currentTier, giftCount } = markAsDismissed);
   const variant = markAsDismissed.variant;
   const tmp = closure_9();
-  let obj = markAsDismissed(10794);
+  let obj = markAsDismissed(10795);
   const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(currentTier);
   const items = [markAsDismissed];
   const items1 = [markAsDismissed];
@@ -147,7 +147,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   const obj3 = { style: tmp.graphicContainer, children: closure_7(tmp4, obj4) };
   const BottomSheet = markAsDismissed(5396).BottomSheet;
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef19300 };
+  obj5 = { uri: _modDef19314 };
   tmp4 = FastImageDefault;
   items2 = [closure_7(View, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };
@@ -165,7 +165,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   Button = markAsDismissed(5768).Button;
   intl3 = markAsDismissed(1113).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(13585).GiftIcon;
+  GiftIcon = markAsDismissed(13586).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 }

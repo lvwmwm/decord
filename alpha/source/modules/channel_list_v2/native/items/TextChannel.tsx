@@ -1,9 +1,9 @@
-// Module ID: 18523
-// Function ID: 18524
+// Module ID: 18537
+// Function ID: 18538
 // Name: TextChannel
-// Dependencies: [19, 17, 4989, 5045, 4990, 5073, 6977, 6910, 11236, 21, 5141, 575, 18416, 8788, 8744, 14154, 504, 6180, 7625, 18524, 5890, 1111, 10980, 18415, 9106, 14624, 18525, 11247, 5786, 9230, 5761, 7101, 14155, 9137, 18527, 18528, 2]
+// Dependencies: [19, 17, 4989, 5045, 4990, 5073, 6977, 6910, 11236, 21, 5141, 575, 18430, 8788, 8744, 14155, 504, 6180, 7625, 18538, 5890, 1111, 10980, 18429, 9106, 14625, 18539, 11247, 5786, 9230, 5761, 7101, 14156, 9137, 18541, 18542, 2]
 
-// Module 18523 (TextChannel)
+// Module 18537 (TextChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import RoutingSourcesDefault from "RoutingSources" /* 1111 */;
@@ -11,7 +11,7 @@ import transitionToChannel2 from "transitionToChannel" /* 5890 */;
 import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6180 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10980 */;
-import preloadChannelAppFrame from "preloadChannelAppFrame" /* 18524 */;
+import preloadChannelAppFrame from "preloadChannelAppFrame" /* 18538 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import GatedChannelStore from "GatedChannelStore" /* 5045 */;

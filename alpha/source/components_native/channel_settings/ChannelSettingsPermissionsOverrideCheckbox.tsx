@@ -1,9 +1,9 @@
-// Module ID: 19184
-// Function ID: 19185
+// Module ID: 19198
+// Function ID: 19199
 // Name: ChannelSettingsPermissionsOverrideCheckbox
-// Dependencies: [19, 17, 21, 575, 5141, 5078, 1113, 10062, 9430, 19185, 5208, 2]
+// Dependencies: [19, 17, 21, 575, 5141, 5078, 1113, 10062, 9430, 19199, 5208, 2]
 
-// Module 19184 (ChannelSettingsPermissionsOverrideCheckbox)
+// Module 19198 (ChannelSettingsPermissionsOverrideCheckbox)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import PermissionUtils from "PermissionUtils" /* 5078 */;

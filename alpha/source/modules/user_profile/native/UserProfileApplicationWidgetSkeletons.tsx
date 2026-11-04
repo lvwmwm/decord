@@ -1,10 +1,10 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12550
+// Function ID: 12551
 // Name: UserProfileApplicationWidgetSkeletons
 // Dependencies: [19, 17, 21, 5141, 575, 5761, 2]
 // Exports: ImageSkeleton, TextSkeleton
 
-// Module 12549 (UserProfileApplicationWidgetSkeletons)
+// Module 12550 (UserProfileApplicationWidgetSkeletons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

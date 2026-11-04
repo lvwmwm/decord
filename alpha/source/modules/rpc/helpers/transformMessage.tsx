@@ -1,16 +1,16 @@
-// Module ID: 12010
-// Function ID: 12011
+// Module ID: 12011
+// Function ID: 12012
 // Name: transformMessage
-// Dependencies: [1399, 4990, 5083, 1385, 1072, 12011, 2121, 1380, 5888, 6573, 9477, 2]
+// Dependencies: [1399, 4990, 5083, 1385, 1072, 12012, 2121, 1380, 5888, 6573, 9477, 2]
 // Exports: transformMessageRecord, transformServerMessage
 
-// Module 12010 (transformMessage)
+// Module 12011 (transformMessage)
 import Constants from "Constants" /* 1072 */;
 import Server from "Server" /* 2121 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5888 */;
 import useMessageAuthor from "useMessageAuthor" /* 6573 */;
 import transformUserDefault from "transformUser" /* 9477 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 12011 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 12012 */;
 import UserRecord from "UserRecord" /* 1399 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
@@ -21,7 +21,7 @@ let images, results;
 
 let tmp;
 const GlobalUtils = tmp(1380);
-const f101064 = (emoji) => {
+const f101196 = (emoji) => {
   let id;
   let obj2;
   const obj = { emoji: obj2 };
@@ -369,7 +369,7 @@ export function transformMessageRecord(id) {
       return items;
     }),
     components: found1,
-    reactions: mapped2.map(f101064),
+    reactions: mapped2.map(f101196),
     nonce: null,
     pinned: null,
     webhook_id: null,
@@ -612,7 +612,7 @@ export function transformServerMessage(message) {
   mapped1 = undefined;
   if (null != message.reactions) {
     const reactions = message.reactions;
-    mapped1 = reactions.map(f101064);
+    mapped1 = reactions.map(f101196);
   }
   ({ nonce: obj.nonce, pinned: obj.pinned, webhook_id: obj.webhook_id, type: obj.type, activity: obj.activity, application: obj.application, application_id: obj.application_id, message_reference: obj.message_reference, flags: obj.flags, sticker_items: obj.sticker_items, poll: obj.poll } = message);
   tmp12 = undefined;

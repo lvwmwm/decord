@@ -1,9 +1,9 @@
-// Module ID: 18388
-// Function ID: 18389
+// Module ID: 18402
+// Function ID: 18403
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2191, 1385, 17521, 1072, 21, 5141, 575, 1187, 9656, 504, 7622, 9114, 9110, 1252, 9107, 1411, 9351, 17522, 8802, 5761, 2024, 5851, 1113, 2]
+// Dependencies: [19, 17, 2191, 1385, 17533, 1072, 21, 5141, 575, 1187, 9656, 504, 7622, 9114, 9110, 1252, 9107, 1411, 9351, 17534, 8802, 5761, 2024, 5851, 1113, 2]
 
-// Module 18388 (HappeningNowCardEvent)
+// Module 18402 (HappeningNowCardEvent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import ClipView from "ClipView" /* 9656 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import UserStore from "UserStore" /* 1385 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17521 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17533 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

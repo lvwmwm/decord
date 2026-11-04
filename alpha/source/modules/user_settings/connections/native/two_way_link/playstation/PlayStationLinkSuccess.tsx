@@ -1,10 +1,10 @@
-// Module ID: 14856
-// Function ID: 14857
+// Module ID: 14857
+// Function ID: 14858
 // Name: PlayStationLinkSuccess
-// Dependencies: [19, 17, 21, 5141, 9880, 14841, 5851, 5761, 1113, 7428, 5768, 2]
+// Dependencies: [19, 17, 21, 5141, 9880, 14842, 5851, 5761, 1113, 7428, 5768, 2]
 // Exports: PlayStationLinkSuccess
 
-// Module 14856 (PlayStationLinkSuccess)
+// Module 14857 (PlayStationLinkSuccess)
 import react_native from "react-native" /* 17 */;
 import intl4 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5761 */;
@@ -12,7 +12,7 @@ import components_Button_Button from "components/Button/Button" /* 5768 */;
 import FastImageDefault from "FastImage" /* 5851 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
 import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9880 */;
-import _modDef14841 from "module_14841" /* 14841 */;
+import _modDef14842 from "module_14842" /* 14842 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -41,7 +41,7 @@ export function PlayStationLinkSuccess(onClose) {
   const obj2 = { style: twoWayLinkStyles.container, children: items1 };
   const obj3 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14841 };
+    const obj = { uri: _modDef14842 };
     return obj;
   }, []);
   items = [, , ];

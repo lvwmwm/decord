@@ -1,18 +1,18 @@
-// Module ID: 18258
-// Function ID: 18259
+// Module ID: 18272
+// Function ID: 18273
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 18229, 18230, 1072, 21, 18226, 18247, 5729, 7350, 1113, 7383, 18259, 7384, 2]
+// Dependencies: [5, 32, 19, 18243, 18244, 1072, 21, 18240, 18261, 5729, 7350, 1113, 7383, 18273, 7384, 2]
 // Exports: default
 
-// Module 18258 (VerifyPhone)
+// Module 18272 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18229 */;
-import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 18259 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 18243 */;
+import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 18273 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationConstants from "RegistrationConstants" /* 18230 */;
+import RegistrationConstants from "RegistrationConstants" /* 18244 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4, closure_3;
@@ -53,8 +53,8 @@ export default function VerifyPhone(phone) {
   [tmp6, c6] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
   let closure_7 = react.useRef(false);
-  const context = react.useContext(phone(18226).TrackRegistrationContext);
-  const tmp8 = onPhoneTokenReceived(18247);
+  const context = react.useContext(phone(18240).TrackRegistrationContext);
+  const tmp8 = onPhoneTokenReceived(18261);
   tmp8(closure_7(sourceState));
   const items = [context];
   const effect = react.useEffect(() => {

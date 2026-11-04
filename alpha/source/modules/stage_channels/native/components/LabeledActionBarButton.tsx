@@ -1,10 +1,10 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12192
+// Function ID: 12193
 // Name: LabeledActionBarButton
 // Dependencies: [19, 17, 1083, 21, 5141, 6913, 575, 7121, 5851, 1187, 2]
 // Exports: LabeledActionButton
 
-// Module 12191 (LabeledActionBarButton)
+// Module 12192 (LabeledActionBarButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;

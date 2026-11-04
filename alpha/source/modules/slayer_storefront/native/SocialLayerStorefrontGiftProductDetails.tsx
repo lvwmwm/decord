@@ -1,10 +1,10 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14635
+// Function ID: 14636
 // Name: SocialLayerStorefrontGiftProductDetails
 // Dependencies: [19, 17, 1072, 21, 5141, 575, 7466, 10852, 1411, 9668, 5851, 5761, 2]
 // Exports: default
 
-// Module 14634 (SocialLayerStorefrontGiftProductDetails)
+// Module 14635 (SocialLayerStorefrontGiftProductDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

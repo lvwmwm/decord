@@ -1,11 +1,11 @@
-// Module ID: 13657
-// Function ID: 13658
+// Module ID: 13658
+// Function ID: 13659
 // Name: openCheckpoint
-// Dependencies: [5, 13656, 13658, 5845, 1113, 13655, 13654, 6879, 13660, 2123, 2]
+// Dependencies: [5, 13657, 13659, 5845, 1113, 13656, 13655, 6879, 13661, 2123, 2]
 // Exports: openCheckpoint
 
-// Module 13657 (openCheckpoint)
-import CheckpointStore from "CheckpointStore" /* 13656 */;
+// Module 13658 (openCheckpoint)
+import CheckpointStore from "CheckpointStore" /* 13657 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ let obj = function _openCheckpoint() {
             closure_3 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

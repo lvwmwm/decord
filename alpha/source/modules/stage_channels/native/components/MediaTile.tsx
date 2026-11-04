@@ -1,9 +1,9 @@
-// Module ID: 12232
-// Function ID: 12233
+// Module ID: 12233
+// Function ID: 12234
 // Name: MediaTile
-// Dependencies: [19, 17, 6978, 5815, 21, 5141, 575, 12223, 1493, 8914, 504, 12233, 1187, 2]
+// Dependencies: [19, 17, 6978, 5815, 21, 5141, 575, 12224, 1493, 8914, 504, 12234, 1187, 2]
 
-// Module 12232 (MediaTile)
+// Module 12233 (MediaTile)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -25,7 +25,7 @@ const memoResult = react.memo(function MediaTile(channel) {
   const participant = channel.participant;
   size = channel.size;
   const tmp = closure_7();
-  const obj = channel(12223);
+  const obj = channel(12224);
   const speakerTileStyles = obj.useSpeakerTileStyles();
   const width = participant(1493)().width;
   const obj2 = channel(8914);
@@ -40,12 +40,12 @@ const memoResult = react.memo(function MediaTile(channel) {
     tmp8 = null;
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
       const items2 = [tmp.container, , ];
-      const tmp2Result = channel(12223);
+      const tmp2Result = channel(12224);
       items2[1] = tmp2Result.getSizeStyle(size, speakerTileStyles);
-      const tmp2Result2 = channel(12223);
+      const tmp2Result2 = channel(12224);
       items2[2] = tmp2Result2.getTileWidthStyle(size, width, isScreenLandscape);
       ({ hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: channel(1187).AvatarSizes.XLARGE, channel, shrinkStreamEmptyState: false, contentStyle: tmp.media });
-      tmp5(12233);
+      tmp5(12234);
       tmp8 = <View style={items2}>{null}</View>;
     }
   }

@@ -1,10 +1,10 @@
-// Module ID: 13585
-// Function ID: 13586
+// Module ID: 13586
+// Function ID: 13587
 // Name: GiftIcon
 // Dependencies: [19, 21, 575, 5850, 8690, 2]
 // Exports: GiftIcon
 
-// Module 13585 (GiftIcon)
+// Module 13586 (GiftIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;

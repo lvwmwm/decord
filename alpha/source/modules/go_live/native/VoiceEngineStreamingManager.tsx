@@ -1,7 +1,7 @@
 // Module ID: 8039
 // Function ID: 8040
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6849, 4990, 5044, 1072, 2147, 3, 4985, 4966, 572, 1282, 8040, 2125, 2137, 38, 8041, 5893, 6852, 1493, 1377, 12116, 11093, 1113, 2]
+// Dependencies: [5, 17, 6849, 4990, 5044, 1072, 2147, 3, 4985, 4966, 572, 1282, 8040, 2125, 2137, 38, 8041, 5893, 6852, 1493, 1377, 12117, 11093, 1113, 2]
 
 // Module 8039 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(12116);
+const useScreenshareUtils = tmp2(12117);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }

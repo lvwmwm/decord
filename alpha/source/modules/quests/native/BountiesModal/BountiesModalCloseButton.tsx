@@ -1,10 +1,10 @@
-// Module ID: 17211
-// Function ID: 17212
+// Module ID: 17223
+// Function ID: 17224
 // Name: BountiesModalCloseButton
 // Dependencies: [19, 21, 5141, 575, 7121, 1113, 7195, 2]
 // Exports: default
 
-// Module 17211 (BountiesModalCloseButton)
+// Module 17223 (BountiesModalCloseButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

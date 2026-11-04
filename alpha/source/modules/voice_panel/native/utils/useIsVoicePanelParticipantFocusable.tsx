@@ -1,12 +1,12 @@
-// Module ID: 19455
-// Function ID: 19456
+// Module ID: 19469
+// Function ID: 19470
 // Name: useIsVoicePanelParticipantFocusable
-// Dependencies: [4989, 6978, 6849, 2135, 5815, 11415, 1380, 504, 2]
+// Dependencies: [4989, 6978, 6849, 2135, 5815, 11416, 1380, 504, 2]
 // Exports: default
 
-// Module 19455 (useIsVoicePanelParticipantFocusable)
+// Module 19469 (useIsVoicePanelParticipantFocusable)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import participantHasVideo from "participantHasVideo" /* 11415 */;
+import participantHasVideo from "participantHasVideo" /* 11416 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;

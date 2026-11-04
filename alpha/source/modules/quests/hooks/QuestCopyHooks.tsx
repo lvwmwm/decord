@@ -1,10 +1,10 @@
-// Module ID: 14907
-// Function ID: 14908
+// Module ID: 14908
+// Function ID: 14909
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2191, 1385, 6916, 1072, 1387, 1113, 9850, 8008, 8006, 2190, 14908, 2112, 504, 9831, 14909, 9462, 9486, 6919, 9855, 2024, 11987, 14896, 9869, 8011, 8010, 2]
+// Dependencies: [5, 32, 19, 2191, 1385, 6916, 1072, 1387, 1113, 9850, 8008, 8006, 2190, 14909, 2112, 504, 9831, 14910, 9462, 9486, 6919, 9855, 2024, 11988, 14897, 9869, 8011, 8010, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePremiumExtendableCopy, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription
 
-// Module 14907 (QuestCopyHooks)
+// Module 14908 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -18,8 +18,8 @@ import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9462 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9831 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9850 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9855 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11987 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14909 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11988 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ let tmp2;
 const intl13 = tmp(1113);
 const utils_QuestUtils = tmp(8006);
 const GameProfileAnalyticUtils = tmp2(9486);
-const SponsoredQuestUtils = tmp(14908);
+const SponsoredQuestUtils = tmp(14909);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -857,7 +857,7 @@ export function usePrimaryCtaCopy(arg0) {
     const intl3 = tmp2(1113).intl;
     return intl3.string(quest(1113).t.l7E81v);
   } else if (constants3.WATCH_VIDEO === memo) {
-    const tmp2Result3 = quest(14896);
+    const tmp2Result3 = quest(14897);
     return tmp2Result3.getVideoQuestWatchCtaText(tmp5);
   } else if (constants3.IN_GAME === memo) {
     let tmp2Result4 = tmp2(8006);

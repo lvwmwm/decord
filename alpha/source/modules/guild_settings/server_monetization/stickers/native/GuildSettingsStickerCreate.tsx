@@ -1,10 +1,10 @@
-// Module ID: 20014
-// Function ID: 20015
+// Module ID: 20028
+// Function ID: 20029
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 6931, 6972, 1072, 1388, 4969, 21, 5141, 575, 5743, 11593, 5749, 5087, 8360, 20015, 10445, 6695, 5761, 1113, 6586, 2190, 5768, 6162, 7121, 10460, 20016, 10118, 7436, 1411, 9599, 7223, 7389, 2]
+// Dependencies: [5, 32, 19, 17, 6931, 6972, 1072, 1388, 4969, 21, 5141, 575, 5743, 11594, 5749, 5087, 8360, 20029, 10445, 6695, 5761, 1113, 6586, 2190, 5768, 6162, 7121, 10460, 20030, 10118, 7436, 1411, 9599, 7223, 7389, 2]
 // Exports: default
 
-// Module 20014 (GuildSettingsStickerCreate)
+// Module 20028 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
@@ -15,7 +15,7 @@ import reactDefault from "react" /* 5749 */;
 import EmojiDefault from "Emoji" /* 7436 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10118 */;
 import StickerDefault from "Sticker" /* 10460 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11593 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11594 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -594,7 +594,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     obj19 = { uri: first1 };
     tmp35Result = tmp35(first, obj18);
   } else {
-    tmp35Result = tmp35(tmp34(20016).StickerPlusIcon, { size: "lg" });
+    tmp35Result = tmp35(tmp34(20030).StickerPlusIcon, { size: "lg" });
   }
   items4[1] = onPressEmoji(PressableHighlight, obj16);
   const obj20 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1113).t["3BQmiC"]) };

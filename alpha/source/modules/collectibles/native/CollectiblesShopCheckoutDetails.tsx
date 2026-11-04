@@ -1,10 +1,10 @@
-// Module ID: 14641
-// Function ID: 14642
+// Module ID: 14642
+// Function ID: 14643
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1074, 9641, 21, 5141, 575, 8940, 5851, 14642, 8915, 9665, 8883, 9640, 2113, 9661, 2116, 1075, 9688, 9687, 9653, 1113, 5761, 7871, 9698, 14643, 8890, 2176, 9718, 2]
+// Dependencies: [19, 17, 1074, 9641, 21, 5141, 575, 8940, 5851, 14643, 8915, 9665, 8883, 9640, 2113, 9661, 2116, 1075, 9688, 9687, 9653, 1113, 5761, 7871, 9698, 14644, 8890, 2176, 9718, 2]
 // Exports: default
 
-// Module 14641 (CollectiblesShopCheckoutDetails)
+// Module 14642 (CollectiblesShopCheckoutDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -26,7 +26,7 @@ import _modDef9687 from "module_9687" /* 9687 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9688 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9698 */;
 import getProductName from "getProductName" /* 9718 */;
-import _modDef14642 from "module_14642" /* 14642 */;
+import _modDef14643 from "module_14643" /* 14643 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9641 */;
 import Fragment from "Fragment" /* 21 */;
@@ -55,7 +55,7 @@ function ProfileEffectAssetPreview(item) {
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: items };
     const obj2 = { source: obj3, accessibilityLabel: tmp4.accessibilityLabel, style: tmp.profileEffect, resizeMode: "cover" };
-    obj3 = { uri: _modDef14642 };
+    obj3 = { uri: _modDef14643 };
     const tmp2Result = FastImageDefault;
     items = [metroImportDefault(tmp2Result, obj2), ];
     const obj4 = { style: tmp.profileEffect, source: obj5, accessibilityLabel: tmp4.title, resizeMode: "cover" };
@@ -320,8 +320,8 @@ let closure_10 = createStyles.createStyles((arg0) => {
     BORDER_FEEDBACK_CRITICAL = colors.BORDER_FEEDBACK_CRITICAL;
     tmp5 = tmp;
   }
-  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "children" } };
-  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "children" });
+  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "dispatch" } };
+  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "dispatch" });
   return obj;
 });
 createStyles = createStyles_mod;

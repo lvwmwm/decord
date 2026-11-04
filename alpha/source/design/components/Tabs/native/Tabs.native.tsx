@@ -1,10 +1,10 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12372
+// Function ID: 12373
 // Name: Tabs
-// Dependencies: [19, 17, 2191, 21, 1652, 5141, 575, 5771, 10267, 1705, 12372, 5428, 1377, 2]
+// Dependencies: [19, 17, 2191, 21, 1652, 5141, 575, 5771, 10267, 1705, 12373, 5428, 1377, 2]
 // Exports: Tabs
 
-// Module 12371 (Tabs)
+// Module 12372 (Tabs)
 import nativeDefault from "native" /* 575 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
 import react from "react" /* 19 */;

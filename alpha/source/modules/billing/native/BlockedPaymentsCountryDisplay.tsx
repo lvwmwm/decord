@@ -1,10 +1,10 @@
-// Module ID: 11564
-// Function ID: 11565
+// Module ID: 11565
+// Function ID: 11566
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 5377, 1187, 1113, 2190, 5851, 5148, 11565, 11566, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5377, 1187, 1113, 2190, 5851, 5148, 11566, 11567, 2]
 // Exports: default
 
-// Module 11564 (BlockedPaymentsCountryDisplay)
+// Module 11565 (BlockedPaymentsCountryDisplay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -60,9 +60,9 @@ export default function BlockedPaymentsCountryDisplay() {
   const tmp6 = View;
   const tmp7 = hasOwnProperty;
   if (obj7.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(11565);
-  } else {
     tmp2Result = tmp2(11566);
+  } else {
+    tmp2Result = tmp2(11567);
   }
   items[2] = tmp7(tmp8, obj6);
   return tmp5(tmp6, obj);

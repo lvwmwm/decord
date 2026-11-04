@@ -1,10 +1,10 @@
-// Module ID: 11987
-// Function ID: 11988
+// Module ID: 11988
+// Function ID: 11989
 // Name: isActivitySupportedOnClientPlatform
 // Dependencies: [1377, 2149, 2]
 // Exports: default
 
-// Module 11987 (isActivitySupportedOnClientPlatform)
+// Module 11988 (isActivitySupportedOnClientPlatform)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

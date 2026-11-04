@@ -1,13 +1,13 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16037
+// Function ID: 16038
 // Name: GameOrganizationInviteList
-// Dependencies: [19, 21, 5141, 575, 5743, 16025, 7430, 1187, 1113, 2]
+// Dependencies: [19, 21, 5141, 575, 5743, 16038, 7430, 1187, 1113, 2]
 // Exports: default
 
-// Module 16024 (GameOrganizationInviteList)
+// Module 16037 (GameOrganizationInviteList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 16025 */;
+import GameOrganizationInviteRowDefault from "GameOrganizationInviteRow" /* 16038 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

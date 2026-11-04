@@ -1,10 +1,10 @@
-// Module ID: 19137
-// Function ID: 19138
+// Module ID: 19151
+// Function ID: 19152
 // Name: BadgeCustomizationProfileCoachmark
 // Dependencies: [32, 19, 1385, 4987, 575, 1493, 1627, 9774, 504, 2176, 5155, 1113, 5214, 10133, 2]
 // Exports: default
 
-// Module 19137 (BadgeCustomizationProfileCoachmark)
+// Module 19151 (BadgeCustomizationProfileCoachmark)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;

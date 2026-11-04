@@ -1,13 +1,13 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12874
+// Function ID: 12875
 // Name: ConjureSettingsRequestCard
-// Dependencies: [19, 21, 5141, 575, 12874, 5382, 12324, 12333, 5761, 1113, 3995, 12338, 5768, 2]
+// Dependencies: [19, 21, 5141, 575, 12875, 5382, 12325, 12334, 5761, 1113, 3995, 12339, 5768, 2]
 // Exports: default
 
-// Module 12873 (ConjureSettingsRequestCard)
+// Module 12874 (ConjureSettingsRequestCard)
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12324 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 12325 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

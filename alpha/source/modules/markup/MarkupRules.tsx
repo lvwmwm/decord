@@ -1,7 +1,7 @@
 // Module ID: 6169
 // Function ID: 6170
 // Name: MarkupRules
-// Dependencies: [32, 717, 4990, 5047, 5012, 1385, 1072, 6170, 6171, 6172, 1113, 6175, 5050, 6176, 5195, 6177, 2072, 6178, 6179, 6190, 5087, 6192, 8741, 15889, 8715, 8716, 6168, 8743, 12, 8712, 2]
+// Dependencies: [32, 717, 4990, 5047, 5012, 1385, 1072, 6170, 6171, 6172, 1113, 6175, 5050, 6176, 5195, 6177, 2072, 6178, 6179, 6190, 5087, 6192, 8741, 15902, 8715, 8716, 6168, 8743, 12, 8712, 2]
 // Exports: hydrateCommandMention
 
 // Module 6169 (MarkupRules)
@@ -22,7 +22,7 @@ import MarkupListRuleDefault from "MarkupListRule" /* 8715 */;
 import MarkupSubtextRuleDefault from "MarkupSubtextRule" /* 8716 */;
 import TimestampUtils from "TimestampUtils" /* 8741 */;
 import PlatformMarkupRulesDefault from "PlatformMarkupRules" /* 8743 */;
-import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 15889 */;
+import MarkupHeadingRuleDefault from "MarkupHeadingRule" /* 15902 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -145,7 +145,7 @@ const parse6 = function parse(arg0, arg1, returnMentionIds) {
     const items = [];
     const arr = _toArray(arg0[1].split(" "));
     HermesBuiltin.arraySpread(items, arr.slice(1), 0);
-    const mapped = items.map(f89459);
+    const mapped = items.map(f89589);
     const _HermesInternal = HermesInternal;
     obj2 = { type: "commandMention", channelId: returnMentionIds.channelId, commandId: arg0[2], commandName: arg0[1], commandKey: "" + arg0[2] + mapped.join(""), content: items1 };
     const _HermesInternal2 = HermesInternal;
@@ -245,7 +245,7 @@ const parse14 = function parse(arg0, arg1, guildId) {
   const tmp = _slicedToArray(arg0, 3);
   return hydrateStaticRouteLink(tmp[1], tmp[2], guildId);
 };
-const f89459 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
+const f89589 = (item) => "" + SUB_COMMAND_KEY_SEPARATOR + item;
 function parseLink(arg0) {
   let items;
   let obj3;
@@ -255,7 +255,7 @@ function parseLink(arg0) {
     obj3 = { type: "text", content: arg0[1] };
     const obj2 = { type: "text", content: arg0[1] };
   } else {
-    obj3 = { type: "link", content: items, target: punycodeLinkResult.target, title: "id" };
+    obj3 = { type: "link", content: items, target: punycodeLinkResult.target, title: "children" };
     items = [{ type: "text", content: punycodeLinkResult.displayTarget }];
     const obj4 = { type: "text", content: punycodeLinkResult.displayTarget };
   }
@@ -764,7 +764,7 @@ export function hydrateCommandMention(name, commandId, channelId) {
   let items1;
   const items = [..._toArray(name.split(" ")).slice(1)];
   _toArray(name.split(" "));
-  const mapped = items.map(f89459);
+  const mapped = items.map(f89589);
   const obj = { type: "commandMention", channelId: channelId.channelId, commandId, commandName: name, commandKey: "" + commandId + mapped.join(""), content: items1 };
   items1 = [{ type: "text", content: "" + name }];
   ({ type: "text", content: "" + name });

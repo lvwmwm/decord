@@ -1,9 +1,9 @@
-// Module ID: 14722
-// Function ID: 14723
+// Module ID: 14723
+// Function ID: 14724
 // Name: BalanceWidgetPillButton
 // Dependencies: [19, 17, 21, 5141, 5768, 9680, 1113, 9638, 2]
 
-// Module 14722 (BalanceWidgetPillButton)
+// Module 14723 (BalanceWidgetPillButton)
 import react_native from "react-native" /* 17 */;
 import components_Button_Button from "components/Button/Button" /* 5768 */;
 import IndicatorDot from "IndicatorDot" /* 9638 */;

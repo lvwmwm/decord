@@ -1,9 +1,9 @@
-// Module ID: 19272
-// Function ID: 19273
+// Module ID: 19286
+// Function ID: 19287
 // Name: ModalRegistry
 // Dependencies: [2]
 
-// Module 19272 (ModalRegistry)
+// Module 19286 (ModalRegistry)
 import size from "module_2" /* 2 */;
 
 let set;

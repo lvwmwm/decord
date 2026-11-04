@@ -1,96 +1,140 @@
 // Module ID: 13181
 // Function ID: 13182
-// Dependencies: [13167]
-// Exports: compile, generate
+// Dependencies: []
+// Exports: parse
 
 // Module 13181
-import _mod13167 from "module_13167" /* 13167 */;
+new Set([9, 10, 12, 13, 32]);
+let closure_1 = "0".charCodeAt(0);
+let closure_2 = "9".charCodeAt(0);
 
-let fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
+export function parse(str) {
+  str = str.trim();
+  const str2 = str.toLowerCase();
+  if ("even" === str2) {
+    return [2, 0];
+  } else if ("odd" === str2) {
+    return [2, 1];
   } else {
-    tmp2 = __esModule;
-  }
-  return tmp2;
-});
-const module_13167 = fn(_mod13167);
-
-export function compile(arg0) {
-  const first = arg0[0];
-  const diff = arg0[1] - 1;
-  if (diff < 0) {
-    if (first <= 0) {
-      return module_13167.default.falseFunc;
-    }
-  }
-  if (-1 === first) {
-    return (arg0) => arg0 <= diff;
-  } else if (0 === first) {
-    return (arg0) => arg0 === diff;
-  } else if (1 === first) {
-    let fn;
-    if (diff < 0) {
-      fn = module_13167.default.trueFunc;
+    let num2;
+    let sum1 = 0;
+    if ("-" === str2.charAt(sum1)) {
+      sum1 = sum1 + 1;
+      num2 = -1;
     } else {
-      fn = (arg0) => arg0 >= diff;
-    }
-    return fn;
-  } else {
-    const _Math = Math;
-    const absolute = Math.abs(first);
-    let closure_2 = (diff % absolute + absolute) % absolute;
-    return first > 1 ? ((arg0) => arg0 >= diff && arg0 % absolute === closure_2) : ((arg0) => arg0 <= diff && arg0 % absolute === closure_2);
-  }
-}
-export function generate(arg0) {
-  const first = arg0[0];
-  const diff = arg0[1] - 1;
-  let closure_1 = diff;
-  let closure_2 = 0;
-  if (first < 0) {
-    let closure_3 = tmp4;
-    let closure_4 = (diff % tmp4 + tmp4) % tmp4;
-    return () => {
-      closure_2 = tmp + 1;
-      const sum = closure_4 + closure_3 * tmp;
-      let tmp3 = null;
-      if (sum <= closure_1) {
-        tmp3 = sum;
+      let tmp = sum1;
+      let num = 1;
+      num2 = 1;
+      if ("+" === str2.charAt(sum1)) {
+        sum1 = sum1 + 1;
+        num2 = 1;
       }
-      return tmp3;
-    };
-  } else {
-    let fn;
-    if (0 === first) {
-      let fn2;
-      if (diff < 0) {
-        fn2 = () => null;
-      } else {
-        fn2 = () => {
-          closure_2 = tmp + 1;
-          let tmp2 = null;
-          if (0 == +closure_2) {
-            tmp2 = closure_1;
+    }
+    function readNumber() {
+      let num = 0;
+      const tmp = sum1;
+      if (sum1 < str2.length) {
+        num = 0;
+        if (str2.charCodeAt(sum1) >= closure_1) {
+          let num3 = 0;
+          num = 0;
+          if (str2.charCodeAt(sum1) <= closure_2) {
+            const sum = 10 * num3 + (str2.charCodeAt(sum1) - closure_1);
+            sum1 = sum1 + 1;
+            num = sum;
+            while (sum1 < str2.length) {
+              num = sum;
+              if (obj2.charCodeAt(sum1) < tmp7) {
+                break;
+              } else {
+                num3 = sum;
+                num = sum;
+                if (obj2.charCodeAt(sum1) > closure_2) {
+                  break;
+                }
+              }
+            }
           }
-          return tmp2;
-        };
+        }
       }
-      fn = fn2;
-    } else {
-      if (diff < 0) {
-        let tmp3 = globalThis;
-        const _Math = Math;
-        closure_1 = diff + first * Math.ceil(-diff / first);
+      let tmp14 = null;
+      if (sum1 !== tmp) {
+        tmp14 = num;
       }
-      fn = () => {
-        closure_2 = tmp + 1;
-        return first * +closure_2 + closure_1;
-      };
+      return tmp14;
     }
-    return fn;
+    const number = readNumber();
+    let tmp6 = sum1 < str2.length;
+    if (tmp6) {
+      const tmp7 = sum1;
+      tmp6 = "n" === str2.charAt(sum1);
+    }
+    let tmp8 = number;
+    let tmp9 = num2;
+    let num3 = 0;
+    if (tmp6) {
+      let sum = sum1 + 1;
+      sum1 = sum;
+      let tmp12 = null;
+      let num5 = 1;
+      if (null != number) {
+        num5 = number;
+      }
+      if (sum < str2.length) {
+        let tmp13 = str2;
+        let tmp14 = sum1;
+        if (str2.has(str2.charCodeAt(sum1))) {
+          sum1 = sum1 + 1;
+          while (sum1 < str2.length) {
+            if (!str2.has(str2.charCodeAt(sum1))) {
+              break;
+            }
+          }
+        }
+      }
+      let num6 = 0;
+      let num7 = 0;
+      if (sum1 < str2.length) {
+        let num8;
+        if ("-" === str2.charAt(sum1)) {
+          sum1 = sum1 + 1;
+          num8 = -1;
+        } else {
+          num8 = 1;
+          if ("+" === str2.charAt(sum1)) {
+            sum1 = sum1 + 1;
+            num8 = 1;
+          }
+        }
+        if (sum1 < str2.length) {
+          if (str2.has(str2.charCodeAt(sum1))) {
+            const sum2 = sum1 + 1;
+            sum1 = sum2;
+            while (sum2 < str2.length) {
+              if (!str2.has(str2.charCodeAt(sum1))) {
+                break;
+              }
+            }
+          }
+        }
+        num6 = readNumber();
+        num7 = num8;
+      }
+      num3 = num2 * num5;
+      tmp8 = num6;
+      tmp9 = num7;
+    }
+    if (null !== tmp8) {
+      if (sum1 >= str2.length) {
+        const items = [num3, tmp9 * tmp8];
+        return items;
+      }
+    }
+    const _Error = Error;
+    const concat = "n-th rule couldn't be parsed ('".concat;
+    const self = this;
+    const self2 = this;
+    const error = new Error("n-th rule couldn't be parsed ('".concat(str2, "')"));
+    throw error;
   }
 }

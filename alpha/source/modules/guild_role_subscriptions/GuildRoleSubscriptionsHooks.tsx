@@ -1,15 +1,15 @@
-// Module ID: 17437
-// Function ID: 17438
+// Module ID: 17449
+// Function ID: 17450
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 6703, 5066, 504, 7569, 7100, 17438, 17439, 12758, 1380, 2]
+// Dependencies: [5, 32, 19, 6703, 5066, 504, 7569, 7100, 17450, 17451, 12759, 1380, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 17437 (GuildRoleSubscriptionsHooks)
+// Module 17449 (GuildRoleSubscriptionsHooks)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5066 */;
 import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7569 */;
-import useRequestDefault from "useRequest" /* 12758 */;
-import subscriptionUtils from "subscriptionUtils" /* 17439 */;
+import useRequestDefault from "useRequest" /* 12759 */;
+import subscriptionUtils from "subscriptionUtils" /* 17451 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -588,7 +588,7 @@ export function usePublishSubscriptionListing() {
                 ({ guildId: c0, groupListingId: c1, listingId: c2 } = closure_0);
                 c5 = 1;
                 c6 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

@@ -1,10 +1,10 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 19075
+// Function ID: 19076
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 4966, 12371, 1652, 5207, 5771, 5772, 1705, 14215, 2]
+// Dependencies: [19, 21, 4966, 12372, 1652, 5207, 5771, 5772, 1705, 14216, 2]
 // Exports: default
 
-// Module 19061 (SearchTabsTransitionGroup)
+// Module 19075 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 5207 */;
 import react from "react" /* 19 */;
@@ -146,7 +146,7 @@ function AnimatedTabs(cleanUp) {
     const obj2 = transitionState(dependencyMap[3]);
     combined = "(" + obj2.defaultCountFormatter(toLocaleString) + ")";
   }, items3);
-  const context = react.useContext(tmp(14215).SwipeForMemberListContext);
+  const context = react.useContext(tmp(14216).SwipeForMemberListContext);
   const items4 = [closure_8, context];
   c0 = undefined;
   [tmp21, tmp22] = items4;
@@ -199,7 +199,7 @@ function AnimatedTabs(cleanUp) {
   const View = sharedValue(1652).View;
   let obj2 = { state, grow: false, formatCount: callback, simultaneousHandlers: gesture, onEndDrag: tmp31 };
   gesture = undefined;
-  const Tabs = tmp(12371).Tabs;
+  const Tabs = tmp(12372).Tabs;
   if (context != null) {
     gesture = context.gesture;
   }

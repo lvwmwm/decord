@@ -1,10 +1,10 @@
-// Module ID: 15904
-// Function ID: 15905
+// Module ID: 15917
+// Function ID: 15918
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7067, 6990, 7746, 15512, 502, 1072, 4997, 6850, 8080, 11089, 7856, 5881, 15905, 8573, 14458, 6879, 5323, 15906, 8891, 7703, 11644, 9591, 13438, 2017, 11559, 1252, 11561, 7562, 10360, 10847, 10848, 15912, 7031, 7487, 13576, 15914, 14491, 11084, 2123, 11090, 11088, 15916, 15918, 1624, 8097, 15927, 5843, 15929, 5012, 7662, 9112, 9107, 7643, 8078, 12175, 5322, 6928, 1099, 572, 7483, 1378, 9219, 15932, 15947, 1377, 6094, 15956, 9263, 13568, 15964, 6670, 15965, 7859, 9414, 16044, 8002, 6921, 9828, 14902, 6922, 10736, 16045, 6903, 11115, 16046, 9486, 9466, 11157, 5876, 2]
+// Dependencies: [109, 5, 7067, 6990, 7746, 15513, 502, 1072, 4997, 6850, 8080, 11089, 7856, 5881, 15918, 8573, 14459, 6879, 5323, 15919, 8891, 7703, 11645, 9591, 13439, 2017, 11560, 1252, 11562, 7562, 10360, 10847, 10848, 15925, 7031, 7487, 13577, 15927, 14492, 11084, 2123, 11090, 11088, 15929, 15931, 1624, 8097, 15940, 5843, 15942, 5012, 7662, 9112, 9107, 7643, 8078, 12176, 5322, 6928, 1099, 572, 7483, 1378, 9219, 15945, 15960, 1377, 6094, 15969, 9263, 13569, 15977, 6670, 15978, 7859, 9414, 16057, 8002, 6921, 9828, 14903, 6922, 10736, 16058, 6903, 11115, 16059, 9486, 9466, 11157, 5876, 2]
 // Exports: default
 
-// Module 15904 (handleSupportedURL)
+// Module 15917 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
@@ -35,16 +35,16 @@ import QuestUtils from "QuestUtils" /* 9828 */;
 import ApplicationUtils from "ApplicationUtils" /* 11088 */;
 import Constants3 from "Constants" /* 11089 */;
 import closeVoicePanelsDefault from "closeVoicePanels" /* 11115 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 13438 */;
-import BountyActionCreators from "BountyActionCreators" /* 14902 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15905 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15914 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15947 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 16044 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 13439 */;
+import BountyActionCreators from "BountyActionCreators" /* 14903 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15918 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15927 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15960 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 16057 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6990 */;
-import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 15512 */;
+import PremiumNitroNavigationStore from "PremiumNitroNavigationStore" /* 15513 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -60,8 +60,8 @@ let map1;
 let tmp;
 let tmp3;
 const authorizeCallbackDefault = tmp(11090);
-const FamilyCenterNativeUtils = tmp3(13576);
-const CreateGuildModalActionCreatorsDefault = tmp(14491);
+const FamilyCenterNativeUtils = tmp3(13577);
+const CreateGuildModalActionCreatorsDefault = tmp(14492);
 let closure_4 = ["code", "state"];
 PostConnectionCallbackStore.addPostConnectionCallback;
 let closure_9 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
@@ -431,7 +431,7 @@ export default function handleSupportedURL(payload) {
           pathname(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(15918, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(15931, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;

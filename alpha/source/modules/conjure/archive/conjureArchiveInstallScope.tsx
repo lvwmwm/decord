@@ -1,10 +1,10 @@
-// Module ID: 13210
-// Function ID: 13211
+// Module ID: 13211
+// Function ID: 13212
 // Name: conjureArchiveInstallScope
-// Dependencies: [5, 13211, 2123, 2]
+// Dependencies: [5, 13212, 2123, 2]
 // Exports: importedConjureInstallScope, readConjureArchiveInstallScope
 
-// Module 13210 (conjureArchiveInstallScope)
+// Module 13211 (conjureArchiveInstallScope)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12677
-// Function ID: 12678
+// Module ID: 12678
+// Function ID: 12679
 // Name: Header
-// Dependencies: [19, 17, 1385, 12633, 1498, 1072, 21, 575, 5141, 1652, 504, 12596, 5732, 8856, 12601, 9911, 2153, 5809, 12678, 5761, 1187, 8168, 5862, 1252, 7494, 12679, 5845, 1113, 12680, 2]
+// Dependencies: [19, 17, 1385, 12634, 1498, 1072, 21, 575, 5141, 1652, 504, 12597, 5732, 8856, 12602, 9911, 2153, 5809, 12679, 5761, 1187, 8168, 5862, 1252, 7494, 12680, 5845, 1113, 12681, 2]
 // Exports: default
 
-// Module 12677 (Header)
+// Module 12678 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,10 +13,10 @@ import ToastUtils from "ToastUtils" /* 5845 */;
 import ClipboardUtils from "ClipboardUtils" /* 7494 */;
 import useAvatarColorDefault from "useAvatarColor" /* 8856 */;
 import AppLauncherUtils from "AppLauncherUtils" /* 9911 */;
-import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12679 */;
+import getApplicationInstallURL2 from "getApplicationInstallURL" /* 12680 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import AppLauncherStore from "AppLauncherStore" /* 12633 */;
+import AppLauncherStore from "AppLauncherStore" /* 12634 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -35,9 +35,9 @@ let size;
 let tmp5;
 const _modDef1652 = tmp5(1652);
 const AssetRegistryDefault = tmp5(5862);
-const EntityBorderAppIconDefault = tmp5(12601);
-const AppLauncherBackButtonDefault = tmp5(12678);
-const AppDetailsOverflowMenuDefault = tmp5(12680);
+const EntityBorderAppIconDefault = tmp5(12602);
+const AppLauncherBackButtonDefault = tmp5(12679);
+const AppDetailsOverflowMenuDefault = tmp5(12681);
 let View = react_native.View;
 ({ DEFAULT_CONTENT_PADDING, SCREEN_BACKGROUND_COLOR } = AppLauncherNativeConstants);
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -103,7 +103,7 @@ export default function Header(application) {
   const tmp3 = closure_11();
   let appLauncherIconSource = null;
   if (null != application) {
-    const tmpResult = application(12596);
+    const tmpResult = application(12597);
     appLauncherIconSource = tmpResult.getAppLauncherIconSource(application);
   }
   const tmpResult9 = application(5732);

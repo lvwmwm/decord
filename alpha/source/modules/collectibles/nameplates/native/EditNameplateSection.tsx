@@ -1,16 +1,16 @@
-// Module ID: 16745
-// Function ID: 16746
+// Module ID: 16757
+// Function ID: 16758
 // Name: EditNameplateSection
-// Dependencies: [19, 17, 2114, 21, 5141, 15298, 16744, 15299, 7487, 2113, 9661, 2]
+// Dependencies: [19, 17, 2114, 21, 5141, 15299, 16756, 15300, 7487, 2113, 9661, 2]
 
-// Module 16745 (EditNameplateSection)
+// Module 16757 (EditNameplateSection)
 import react_native from "react-native" /* 17 */;
 import utils from "utils" /* 2113 */;
 import NameplateRecord from "NameplateRecord" /* 2114 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 15298 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15299 */;
-import useNameplateSections from "useNameplateSections" /* 16744 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 15299 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 15300 */;
+import useNameplateSections from "useNameplateSections" /* 16756 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -53,7 +53,7 @@ const memoResult = react.memo((arg0) => {
         return metroRequire(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (nameplate === useNameplateSections.SHOP_ITEM) {
         const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_NAMEPLATE_SHEET };
-        const EditCollectiblesListItemShop = tmp(15299).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(15300).EditCollectiblesListItemShop;
         return metroRequire(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isNameplateRecord(nameplate)) {
         const obj4 = { nameplate, isSelected: require === nameplate.skuId, setSelectedNameplate, size: width };
@@ -91,7 +91,7 @@ const memoResult1 = react.memo((nameplate) => {
     setSelectedNameplate(nameplate);
   }, items1);
   let obj = { skuId: nameplate.skuId, isSelected, onPress: callback, size, accessibilityLabel: nameplate.label, children: closure_6(setSelectedNameplate(9661), obj2) };
-  const EditCollectiblesListItemProduct = nameplate(15299).EditCollectiblesListItemProduct;
+  const EditCollectiblesListItemProduct = nameplate(15300).EditCollectiblesListItemProduct;
   obj2 = { nameplate: memo, fullOpacity: true, isSquarePreview: true, style: items2 };
   items2 = [tmp.nameplate, { borderRadius: 6 }];
   return closure_6(EditCollectiblesListItemProduct, obj);

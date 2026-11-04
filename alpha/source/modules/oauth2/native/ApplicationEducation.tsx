@@ -1,10 +1,10 @@
-// Module ID: 14824
-// Function ID: 14825
+// Module ID: 14825
+// Function ID: 14826
 // Name: ApplicationEducation
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 9898, 9051, 1113, 5849, 14825, 9877, 7701, 5761, 14827, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 9898, 9051, 1113, 5849, 14826, 9877, 7701, 5761, 14828, 2]
 // Exports: default
 
-// Module 14824 (ApplicationEducation)
+// Module 14825 (ApplicationEducation)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,8 +14,8 @@ import SettingsIcon from "SettingsIcon" /* 7701 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 9051 */;
 import GameControllerIcon from "GameControllerIcon" /* 9877 */;
 import useIsSocialLayerParentApplicationDefault from "useIsSocialLayerParentApplication" /* 9898 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14825 */;
-import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 14827 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14826 */;
+import AuthorizeFormSeparator from "AuthorizeFormSeparator" /* 14828 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

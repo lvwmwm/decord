@@ -1,10 +1,10 @@
-// Module ID: 19973
-// Function ID: 19974
+// Module ID: 19987
+// Function ID: 19988
 // Name: ExemptionActionSheet
 // Dependencies: [32, 19, 17, 21, 5141, 575, 7354, 7034, 7115, 5396, 7457, 9155, 1113, 5382, 7355, 7360, 2]
 // Exports: default
 
-// Module 19973 (ExemptionActionSheet)
+// Module 19987 (ExemptionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;

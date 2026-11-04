@@ -1,16 +1,16 @@
-// Module ID: 11700
-// Function ID: 11701
+// Module ID: 11701
+// Function ID: 11702
 // Name: GiftCodeRedeemSuccess
-// Dependencies: [32, 19, 17, 7031, 21, 5141, 575, 504, 11570, 7466, 11574, 7872, 2116, 8883, 11701, 7428, 7544, 9668, 7470, 9640, 6691, 1187, 11580, 11694, 11695, 11696, 5761, 1113, 6579, 5768, 6879, 2]
+// Dependencies: [32, 19, 17, 7031, 21, 5141, 575, 504, 11571, 7466, 11575, 7872, 2116, 8883, 11702, 7428, 7544, 9668, 7470, 9640, 6691, 1187, 11581, 11695, 11696, 11697, 5761, 1113, 6579, 5768, 6879, 2]
 // Exports: default
 
-// Module 11700 (GiftCodeRedeemSuccess)
+// Module 11701 (GiftCodeRedeemSuccess)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11580 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11694 */;
-import NameplatePreview from "NameplatePreview" /* 11695 */;
-import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11696 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11581 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11695 */;
+import NameplatePreview from "NameplatePreview" /* 11696 */;
+import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11697 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -75,12 +75,12 @@ export default function GiftCodeRedeemSuccess(giftCode) {
   let obj = giftCode(504);
   const items = [SKUStore];
   const stateFromStores = obj.useStateFromStores(items, () => SKUStore.get(giftCode.skuId));
-  let obj2 = giftCode(11570);
+  let obj2 = giftCode(11571);
   const getOrFetchSubscriptionPlan = obj2.useGetOrFetchSubscriptionPlan(giftCode.subscriptionPlanId);
   const obj3 = giftCode(7466);
   const getOrFetchApplication = obj3.useGetOrFetchApplication(giftCode.applicationId);
-  const useFetchCollectiblesProduct = giftCode(11574).useFetchCollectiblesProduct;
-  giftCode(11574);
+  const useFetchCollectiblesProduct = giftCode(11575).useFetchCollectiblesProduct;
+  giftCode(11575);
   let skuId = null;
   const obj4 = giftCode(7872);
   if (obj4.isCollectiblesGiftCode(giftCode)) {
@@ -106,8 +106,8 @@ export default function GiftCodeRedeemSuccess(giftCode) {
   const shopProductItems = useShopProductItems(tmp12);
   ({ firstAvatarDecoration, firstProfileEffect, firstNameplate } = shopProductItems);
   let tmp15 = product;
-  const useHandleUseNow = tmp2(11701).useHandleUseNow;
-  tmp2(11701);
+  const useHandleUseNow = tmp2(11702).useHandleUseNow;
+  tmp2(11702);
   if (product == null) {
     tmp15 = { skuId: "", type: tmp2(2116).CollectiblesItemType.BUNDLE, items: [] };
     const obj6 = { skuId: "", type: tmp2(2116).CollectiblesItemType.BUNDLE, items: [] };

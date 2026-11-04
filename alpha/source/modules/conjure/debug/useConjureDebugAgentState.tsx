@@ -1,10 +1,10 @@
-// Module ID: 13253
-// Function ID: 13254
+// Module ID: 13254
+// Function ID: 13255
 // Name: useConjureDebugAgentState
 // Dependencies: [19, 11029, 11035, 504, 11072, 2]
 // Exports: default
 
-// Module 13253 (useConjureDebugAgentState)
+// Module 13254 (useConjureDebugAgentState)
 import conjureDebugConnection from "conjureDebugConnection" /* 11072 */;
 import react from "react" /* 19 */;
 import ConjureChatStore from "ConjureChatStore" /* 11029 */;

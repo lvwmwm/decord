@@ -7,7 +7,7 @@
 // Module 64 (sizesDiffer)
 let size;
 
-let closure_0 = { width: "PX_8", height: "__closure" };
+let closure_0 = { width: "Object", height: "Array" };
 
 export default function sizesDiffer(arg0, arg1) {
   size = arg0 || closure_0;

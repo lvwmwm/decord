@@ -1,10 +1,10 @@
-// Module ID: 19839
-// Function ID: 19840
+// Module ID: 19853
+// Function ID: 19854
 // Name: InterestGuildJoinButton
 // Dependencies: [19, 17, 21, 5141, 575, 5768, 1113, 2537, 2]
 // Exports: default
 
-// Module 19839 (InterestGuildJoinButton)
+// Module 19853 (InterestGuildJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

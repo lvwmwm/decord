@@ -1,7 +1,7 @@
 // Module ID: 9920
 // Function ID: 9921
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 4990, 5073, 1385, 6170, 1072, 9921, 5055, 5146, 5817, 1113, 9922, 2121, 4966, 9924, 9925, 7583, 9926, 1093, 9927, 7776, 7964, 7037, 5195, 1089, 13482, 2171, 7625, 38, 7562, 14823, 2]
+// Dependencies: [5, 4990, 5073, 1385, 6170, 1072, 9921, 5055, 5146, 5817, 1113, 9922, 2121, 4966, 9924, 9925, 7583, 9926, 1093, 9927, 7776, 7964, 7037, 5195, 1089, 13483, 2171, 7625, 38, 7562, 14824, 2]
 // Exports: getBuiltInCommands
 
 // Module 9920 (ApplicationCommandBuiltIns)
@@ -615,7 +615,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
             id = undefined;
             c6 = 1;
             c7 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c6) {
           if (arg0 === 1) {

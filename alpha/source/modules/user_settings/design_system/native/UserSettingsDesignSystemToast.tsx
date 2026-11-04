@@ -1,10 +1,10 @@
-// Module ID: 18032
-// Function ID: 18033
+// Module ID: 18044
+// Function ID: 18045
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 5141, 575, 7118, 6162, 5761, 5768, 5847, 5846, 5869, 5865, 5091, 16095, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 7118, 6162, 5761, 5768, 5847, 5846, 5869, 5865, 5091, 16108, 2]
 // Exports: default
 
-// Module 18032 (UserSettingsDesignSystemToast)
+// Module 18044 (UserSettingsDesignSystemToast)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import EmojiUtils from "EmojiUtils" /* 5091 */;
@@ -16,7 +16,7 @@ import CopyIcon from "CopyIcon" /* 5865 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5869 */;
 import Stack_Stack from "Stack/Stack" /* 6162 */;
 import Card_Card from "Card/Card" /* 7118 */;
-import Toast4 from "Toast" /* 16095 */;
+import Toast4 from "Toast" /* 16108 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

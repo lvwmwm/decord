@@ -62,17 +62,17 @@ const memoResult = react.memo(function MediaModalWebVideoFile(visible) {
     props1 = controls.props;
   }
   const items = [props1];
-  const callback = useCallback((value) => {
-    function safeParse(value) {
+  const callback = useCallback((arg0) => {
+    function safeParse(arg0) {
       try {
         const _JSON = JSON;
-        return JSON.parse(value);
+        return JSON.parse(arg0);
       } catch (err) {
         return {};
       }
     }
-    const iter = safeParse(value);
-    value = iter.value;
+    const iter = safeParse(arg0);
+    const value = iter.value;
     switch (iter.type) {
       case "loaded":
       {

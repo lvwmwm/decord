@@ -41,7 +41,7 @@ function MeasuredParagraph(leadingContent) {
   const tmp7 = closure_8();
   const tmp8 = fontScale(first);
   const memo = variant.useMemo(() => {
-    const f127094 = (node, index) => {
+    const f127550 = (node, index) => {
       let tmp15;
       let tmp16;
       const items = [node.node, ];
@@ -84,8 +84,8 @@ function MeasuredParagraph(leadingContent) {
       items[1] = tmp4;
       return items;
     };
-    let obj = { variant, maxFontSizeMultiplier, widths: new Map(mentions.map(f127094)) };
-    new Map(mentions.map(f127094));
+    let obj = { variant, maxFontSizeMultiplier, widths: new Map(mentions.map(f127550)) };
+    new Map(mentions.map(f127550));
     return obj;
   }, items);
   let tmp10 = closure_6;

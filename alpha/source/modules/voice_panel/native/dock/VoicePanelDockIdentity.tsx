@@ -1,9 +1,9 @@
-// Module ID: 19472
-// Function ID: 19473
+// Module ID: 19486
+// Function ID: 19487
 // Name: VoicePanelDockIdentity
-// Dependencies: [19, 17, 4990, 5012, 5083, 1385, 11428, 21, 5141, 575, 19473, 11409, 504, 7098, 1187, 7411, 5786, 8811, 8814, 5761, 2]
+// Dependencies: [19, 17, 4990, 5012, 5083, 1385, 11429, 21, 5141, 575, 19487, 11410, 504, 7098, 1187, 7411, 5786, 8811, 8814, 5761, 2]
 
-// Module 19472 (VoicePanelDockIdentity)
+// Module 19486 (VoicePanelDockIdentity)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
@@ -11,14 +11,14 @@ import native2 from "native" /* 1187 */;
 import useChannelName from "useChannelName" /* 5786 */;
 import GuildIcon from "GuildIcon" /* 7098 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 7411 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11409 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19473 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11410 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19487 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11428 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11429 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 11750
-// Function ID: 11751
+// Module ID: 11751
+// Function ID: 11752
 // Name: socialLayerStorefrontEmbedPrice
 // Dependencies: [19, 502, 7031, 1072, 7737, 504, 2188, 10090, 2]
 // Exports: getSocialLayerStorefrontEmbedPrice, useFetchSocialLayerStorefrontEmbedPrices
 
-// Module 11750 (socialLayerStorefrontEmbedPrice)
+// Module 11751 (socialLayerStorefrontEmbedPrice)
 import Constants from "Constants" /* 1072 */;
 import IAPStoreDefault from "IAPStore" /* 7737 */;
 import GPlayActionCreators from "GPlayActionCreators" /* 10090 */;
@@ -51,7 +51,7 @@ export function useFetchSocialLayerStorefrontEmbedPrices(singleSkuIds) {
   let items = [SKUStore];
   let items1 = [singleSkuIds];
   const stateFromStoresArray = obj.useStateFromStoresArray(items, () => {
-    const f127393 = (item) => {
+    const f127849 = (item) => {
       let items1;
       const value = closure_1_5.get(item);
       let tmp2;
@@ -69,8 +69,8 @@ export function useFetchSocialLayerStorefrontEmbedPrices(singleSkuIds) {
       }
       return items1;
     };
-    let items = [...new Set(singleSkuIds.flatMap(f127393))];
-    new Set(singleSkuIds.flatMap(f127393));
+    let items = [...new Set(singleSkuIds.flatMap(f127849))];
+    new Set(singleSkuIds.flatMap(f127849));
     return items;
   }, items1);
   let tmp2 = require("get initialized");

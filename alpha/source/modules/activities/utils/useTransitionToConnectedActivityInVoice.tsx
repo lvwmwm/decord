@@ -1,10 +1,10 @@
-// Module ID: 19426
-// Function ID: 19427
+// Module ID: 19440
+// Function ID: 19441
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 4990, 5044, 1072, 5062, 5812, 11946, 11894, 1108, 2]
+// Dependencies: [5, 19, 4990, 5044, 1072, 5062, 5812, 11947, 11895, 1108, 2]
 // Exports: default
 
-// Module 19426 (useTransitionToConnectedActivityInVoice)
+// Module 19440 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -61,7 +61,7 @@ export default function useTransitionToConnectedActivityInVoice(onTransition) {
                   guild_id = undefined;
                   c3 = 1;
                   c4 = 1;
-                  return { value: "flexDirection", done: true };
+                  return { value: "flexDirection", done: null };
                 }
               } else {
                 if (1 === c3) {

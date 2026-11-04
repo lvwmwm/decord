@@ -1,10 +1,10 @@
-// Module ID: 15050
-// Function ID: 15051
+// Module ID: 15051
+// Function ID: 15052
 // Name: useIsUserProfileObfuscated
 // Dependencies: [7912, 504, 2]
 // Exports: default
 
-// Module 15050 (useIsUserProfileObfuscated)
+// Module 15051 (useIsUserProfileObfuscated)
 import UserProfileStore from "UserProfileStore" /* 7912 */;
 import size from "module_2" /* 2 */;
 

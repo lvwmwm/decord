@@ -1,15 +1,15 @@
-// Module ID: 17277
-// Function ID: 17278
+// Module ID: 17289
+// Function ID: 17290
 // Name: OrbsArcadeHowToPlaySheet
-// Dependencies: [19, 17258, 21, 504, 11015, 17278, 1113, 17279, 2]
+// Dependencies: [19, 17270, 21, 504, 11015, 17290, 1113, 17291, 2]
 // Exports: default
 
-// Module 17277 (OrbsArcadeHowToPlaySheet)
+// Module 17289 (OrbsArcadeHowToPlaySheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17278 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17279 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17290 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17291 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17258 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17270 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -37,7 +37,7 @@ export default function OrbsArcadeHowToPlaySheet(gameId) {
     if (str == null) {
       str = "";
     }
-    ({ game: stateFromStores, sheetKey: "OrbsArcadeHowToPlaySheet", secondaryAction: gameId(17279).OrbsArcadeSheetSecondaryAction.CLOSE, direction: "vertical" });
+    ({ game: stateFromStores, sheetKey: "OrbsArcadeHowToPlaySheet", secondaryAction: gameId(17291).OrbsArcadeSheetSecondaryAction.CLOSE, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
     tmp5Result2 = tmp5(PromoSheet, obj3);
   }

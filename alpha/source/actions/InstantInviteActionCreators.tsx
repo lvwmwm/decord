@@ -1,7 +1,7 @@
 // Module ID: 9091
 // Function ID: 9092
 // Name: InstantInviteActionCreators
-// Dependencies: [5, 7067, 6990, 4994, 502, 4990, 5071, 5053, 5012, 9092, 5883, 5073, 5083, 5172, 1385, 1072, 1097, 4997, 6850, 6844, 8020, 1398, 9104, 7537, 1111, 1099, 6841, 2123, 6050, 8090, 5923, 8041, 9105, 5817, 8773, 7079, 9106, 7399, 9107, 572, 14955, 6869, 14956, 7037, 1252, 1282, 6582, 1089, 6882, 1260, 5002, 5884, 7039, 6874, 7522, 4962, 14958, 14959, 11560, 6006, 6087, 14960, 14961, 1265, 14963, 2]
+// Dependencies: [5, 7067, 6990, 4994, 502, 4990, 5071, 5053, 5012, 9092, 5883, 5073, 5083, 5172, 1385, 1072, 1097, 4997, 6850, 6844, 8020, 1398, 9104, 7537, 1111, 1099, 6841, 2123, 6050, 8090, 5923, 8041, 9105, 5817, 8773, 7079, 9106, 7399, 9107, 572, 14956, 6869, 14957, 7037, 1252, 1282, 6582, 1089, 6882, 1260, 5002, 5884, 7039, 6874, 7522, 4962, 14959, 14960, 11561, 6006, 6087, 14961, 14962, 1265, 14964, 2]
 // Exports: trackInviteEmbedActioned, trackInviteServerClicked, transitionToGuildFromEventInvite
 
 // Module 9091 (InstantInviteActionCreators)
@@ -23,9 +23,9 @@ import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7067 */
 import showNSFWGuildJoinGate2 from "showNSFWGuildJoinGate" /* 7522 */;
 import InviteTargetTypes from "InviteTargetTypes" /* 8020 */;
 import GuildInviteFlags from "GuildInviteFlags" /* 9104 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11560 */;
-import generateDynamicLinkDefault from "generateDynamicLink" /* 14961 */;
-import ProtocolUtilsDefault from "ProtocolUtils" /* 14963 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11561 */;
+import generateDynamicLinkDefault from "generateDynamicLink" /* 14962 */;
+import ProtocolUtilsDefault from "ProtocolUtils" /* 14964 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -63,8 +63,8 @@ let tmp;
 let tmp13;
 let unpackModuleId;
 const errors_V6OrEarlierAPIErrorDefault = tmp13(4962);
-const resolveInviteDefault = tmp(14955);
-const f94337 = () => {
+const resolveInviteDefault = tmp(14956);
+const f94469 = () => {
   let c4;
   let guildScheduledEvent;
   let intent;
@@ -507,7 +507,7 @@ function generateAcceptInviteOptions(target_type) {
 function transitionToInviteChannelSync(arg0, arg1) {
   let closure_0 = arg0;
   const items = [];
-  const result = ChannelStore.addConditionalChangeListener(f94337);
+  const result = ChannelStore.addConditionalChangeListener(f94469);
 }
 let body = function _transitionToGuildFromEventInvite() {
   let obj = _asyncToGenerator(async (arg0, value) => {
@@ -593,7 +593,7 @@ body = {
   resolveInvite(code, arg1, arg2) {
     let closure_1;
     let nextPromise;
-    const f94339 = () => {
+    const f94471 = () => {
       let nextPromise;
       const tmp = code;
       let obj = DispatcherDefault;
@@ -601,7 +601,7 @@ body = {
       const tmp3 = closure_2;
       if (obj.isDispatching()) {
         const resolved = Promise.resolve();
-        nextPromise = resolved.then(f94339);
+        nextPromise = resolved.then(f94471);
       } else {
         let obj2 = { type: "INVITE_RESOLVE", code: tmp };
         const tmp4Result = DispatcherDefault;
@@ -632,7 +632,7 @@ body = {
     if (obj.isDispatching()) {
       const tmp5 = globalThis;
       let resolved = Promise.resolve();
-      nextPromise = resolved.then(f94339);
+      nextPromise = resolved.then(f94471);
     } else {
       let obj2 = { type: "INVITE_RESOLVE", code };
       const tmpResult = DispatcherDefault;
@@ -1305,7 +1305,7 @@ body = {
           if (items === undefined) {
             items = [];
           }
-          let result = ChannelStore.addConditionalChangeListener(f94337);
+          let result = ChannelStore.addConditionalChangeListener(f94469);
         }
         if (null != importDefault) {
           tmp7(channel);
@@ -1338,7 +1338,7 @@ body = {
           }
           if (null != dMFromUserId) {
             let closure_2 = [];
-            const result = ChannelStore.addConditionalChangeListener(f94337);
+            const result = ChannelStore.addConditionalChangeListener(f94469);
           }
         }
       }
@@ -1350,7 +1350,7 @@ body = {
         hasItem = features.includes(constants2.HUB);
       }
       if (hasItem) {
-        const obj6 = obj(14958);
+        const obj6 = obj(14959);
         obj6.onOpenHubInvite(flags);
       }
     }
@@ -1367,9 +1367,9 @@ body = {
     if (null != guild) {
       if (!hasFlagResult) {
         if (flags.new_member) {
-          const tmp6Result3 = dMFromUserId(14959);
+          const tmp6Result3 = dMFromUserId(14960);
           if (tmp6Result3.inviteGuildHasPendingMemberDisabledVerification(guild)) {
-            const tmp6Result4 = dMFromUserId(14959);
+            const tmp6Result4 = dMFromUserId(14960);
             const result1 = tmp6Result4.openVerificationModalOrTransitionToApplication(guild.id);
           }
         }
@@ -1392,7 +1392,7 @@ body = {
       const id = channel.id;
       let closure_1 = tmp18;
       closure_2 = [];
-      const result2 = ChannelStore.addConditionalChangeListener(f94337);
+      const result2 = ChannelStore.addConditionalChangeListener(f94469);
     }
   },
   openNativeAppModal(inviteKey) {
@@ -1520,7 +1520,7 @@ body = {
       const obj4 = require("DynamicLinkTemplates");
       inviteDynamicLinkTemplate = obj4.getDefaultDynamicLinkTemplate();
     }
-    const tmp18Result = tmp18(14961);
+    const tmp18Result = tmp18(14962);
     const attemptId = tmp18Result.generateAttemptId();
     inviteType = undefined;
     const tmp7Result5 = generateDynamicLinkDefault;

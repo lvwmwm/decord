@@ -1,10 +1,10 @@
-// Module ID: 15401
-// Function ID: 15402
+// Module ID: 15402
+// Function ID: 15403
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 4990, 1072, 21, 5141, 575, 5729, 8496, 15395, 7701, 504, 8505, 7201, 1113, 5761, 7703, 5894, 2]
+// Dependencies: [32, 19, 17, 4990, 1072, 21, 5141, 575, 5729, 8496, 15396, 7701, 504, 8505, 7201, 1113, 5761, 7703, 5894, 2]
 // Exports: default
 
-// Module 15401 (InAppReportsSettingsUpsellsElement)
+// Module 15402 (InAppReportsSettingsUpsellsElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useMountEffectDefault from "useMountEffect" /* 5729 */;
@@ -12,7 +12,7 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
 import SettingsIcon from "SettingsIcon" /* 7701 */;
 import openUserSettings from "openUserSettings" /* 7703 */;
 import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8496 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15395 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15396 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

@@ -1,10 +1,10 @@
-// Module ID: 19371
-// Function ID: 19372
+// Module ID: 19385
+// Function ID: 19386
 // Name: ExternalPipAutoEnterExperiment
 // Dependencies: [1449, 2]
 // Exports: isExternalPipAutoEnterEnabled
 
-// Module 19371 (ExternalPipAutoEnterExperiment)
+// Module 19385 (ExternalPipAutoEnterExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

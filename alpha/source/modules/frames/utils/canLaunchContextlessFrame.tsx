@@ -1,12 +1,12 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11924
+// Function ID: 11925
 // Name: canLaunchContextlessFrame
-// Dependencies: [11883, 5809, 2]
+// Dependencies: [11884, 5809, 2]
 // Exports: canLaunchContextlessFrame
 
-// Module 11923 (canLaunchContextlessFrame)
+// Module 11924 (canLaunchContextlessFrame)
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5809 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11883 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11884 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/utils/canLaunchContextlessFrame.tsx");

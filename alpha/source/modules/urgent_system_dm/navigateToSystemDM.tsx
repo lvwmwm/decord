@@ -1,12 +1,12 @@
-// Module ID: 19900
-// Function ID: 19901
+// Module ID: 19914
+// Function ID: 19915
 // Name: navigateToSystemDM
-// Dependencies: [4990, 19899, 6841, 2]
+// Dependencies: [4990, 19913, 6841, 2]
 // Exports: default
 
-// Module 19900 (navigateToSystemDM)
+// Module 19914 (navigateToSystemDM)
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6841 */;
-import Constants from "Constants" /* 19899 */;
+import Constants from "Constants" /* 19913 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
 

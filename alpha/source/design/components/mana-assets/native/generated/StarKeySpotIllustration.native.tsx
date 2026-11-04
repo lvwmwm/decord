@@ -1,26 +1,26 @@
-// Module ID: 20183
-// Function ID: 20184
+// Module ID: 20197
+// Function ID: 20198
 // Name: StarKeySpotIllustration
-// Dependencies: [19, 21, 20184, 20185, 20186, 7210, 5851, 2]
+// Dependencies: [19, 21, 20198, 20199, 20200, 7210, 5851, 2]
 // Exports: StarKeySpotIllustration
 
-// Module 20183 (StarKeySpotIllustration)
+// Module 20197 (StarKeySpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7210 */;
-import _modDef20184 from "module_20184" /* 20184 */;
-import _modDef20185 from "module_20185" /* 20185 */;
-import _modDef20186 from "module_20186" /* 20186 */;
+import _modDef20198 from "module_20198" /* 20198 */;
+import _modDef20199 from "module_20199" /* 20199 */;
+import _modDef20200 from "module_20200" /* 20200 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20184 };
+let obj2 = { uri: _modDef20198 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef20185 };
+let obj3 = { uri: _modDef20199 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef20186 };
-({ uri: _modDef20186 });
+obj[3] = { uri: _modDef20200 };
+({ uri: _modDef20200 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/StarKeySpotIllustration.native.tsx");
 

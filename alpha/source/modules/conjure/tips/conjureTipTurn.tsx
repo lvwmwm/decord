@@ -1,10 +1,10 @@
-// Module ID: 12832
-// Function ID: 12833
+// Module ID: 12833
+// Function ID: 12834
 // Name: conjureTipTurn
 // Dependencies: [11030, 2]
 // Exports: entryActivityAt, hasNoTurns, hasOpenAsk, hasRunningTurn, newestPublish, newestSettledTurn
 
-// Module 12832 (conjureTipTurn)
+// Module 12833 (conjureTipTurn)
 import conjureChatTurns from "conjureChatTurns" /* 11030 */;
 import size from "module_2" /* 2 */;
 

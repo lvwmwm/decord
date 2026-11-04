@@ -1,10 +1,10 @@
-// Module ID: 17685
-// Function ID: 17686
+// Module ID: 17697
+// Function ID: 17698
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1385, 2181, 8573, 1072, 21, 5141, 575, 1499, 563, 2176, 5761, 1113, 7118, 1187, 10456, 7298, 11728, 16823, 2]
+// Dependencies: [19, 17, 1385, 2181, 8573, 1072, 21, 5141, 575, 1499, 563, 2176, 5761, 1113, 7118, 1187, 10456, 7298, 11729, 16835, 2]
 // Exports: default
 
-// Module 17685 (SettingsChatScreen)
+// Module 17697 (SettingsChatScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,8 +12,8 @@ import intl14 from "intl" /* 1113 */;
 import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7298 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10456 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
-import SettingLayoutDefault from "SettingLayout" /* 16823 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
+import SettingLayoutDefault from "SettingLayout" /* 16835 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import SubscriptionStore from "SubscriptionStore" /* 2181 */;

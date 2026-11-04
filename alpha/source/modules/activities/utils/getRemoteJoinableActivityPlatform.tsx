@@ -1,14 +1,14 @@
-// Module ID: 11881
-// Function ID: 11882
+// Module ID: 11882
+// Function ID: 11883
 // Name: getRemoteJoinableActivityPlatform
-// Dependencies: [7413, 5900, 1072, 1357, 9888, 1398, 11722, 2]
+// Dependencies: [7413, 5900, 1072, 1357, 9888, 1398, 11723, 2]
 // Exports: getRemoteJoinableActivityPlatform
 
-// Module 11881 (getRemoteJoinableActivityPlatform)
+// Module 11882 (getRemoteJoinableActivityPlatform)
 import Constants from "Constants" /* 1072 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
-import ActivityFlagUtils from "ActivityFlagUtils" /* 11722 */;
+import ActivityFlagUtils from "ActivityFlagUtils" /* 11723 */;
 import ConnectedAppsStore from "ConnectedAppsStore" /* 7413 */;
 import SessionsStore from "SessionsStore" /* 5900 */;
 import size from "module_2" /* 2 */;

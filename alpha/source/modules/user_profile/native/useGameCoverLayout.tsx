@@ -1,10 +1,10 @@
-// Module ID: 15178
-// Function ID: 15179
+// Module ID: 15179
+// Function ID: 15180
 // Name: useGameCoverLayout
 // Dependencies: [575, 9531, 2]
 // Exports: default
 
-// Module 15178 (useGameCoverLayout)
+// Module 15179 (useGameCoverLayout)
 import nativeDefault from "native" /* 575 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9531 */;
 import size from "module_2" /* 2 */;

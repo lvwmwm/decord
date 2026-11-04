@@ -1,10 +1,10 @@
-// Module ID: 19138
-// Function ID: 19139
+// Module ID: 19152
+// Function ID: 19153
 // Name: useOwnsAnyBadge
 // Dependencies: [1385, 8904, 504, 8898, 8956, 2]
 // Exports: default
 
-// Module 19138 (useOwnsAnyBadge)
+// Module 19152 (useOwnsAnyBadge)
 import useDisplayProfileDefault from "useDisplayProfile" /* 8898 */;
 import useBadgesDefault from "useBadges" /* 8956 */;
 import UserStore from "UserStore" /* 1385 */;

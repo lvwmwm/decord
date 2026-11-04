@@ -1,10 +1,10 @@
-// Module ID: 14038
-// Function ID: 14039
+// Module ID: 14039
+// Function ID: 14040
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6972, 6196, 1385, 21, 5141, 575, 5316, 5732, 5138, 5846, 14039, 7776, 1113, 504, 1088, 5195, 14040, 10445, 1652, 5378, 1187, 10444, 5723, 7121, 10460, 5761, 5768, 2]
+// Dependencies: [5, 32, 19, 17, 6972, 6196, 1385, 21, 5141, 575, 5316, 5732, 5138, 5846, 14040, 7776, 1113, 504, 1088, 5195, 14041, 10445, 1652, 5378, 1187, 10444, 5723, 7121, 10460, 5761, 5768, 2]
 // Exports: default
 
-// Module 14038 (DMMessageStickerGreeting)
+// Module 14039 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5316 */;
@@ -85,7 +85,7 @@ export default function DMMessageStickerGreeting(channel) {
   }
   const intl2 = tmp(1113).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1113).t.m0zYbV, { username: name });
-  const tmpResult = tmp(14040);
+  const tmpResult = tmp(14041);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];
@@ -119,7 +119,7 @@ export default function DMMessageStickerGreeting(channel) {
   const callback = react.useCallback(_asyncToGenerator(async (arg0, value) => {
     let closure_0;
     let closure_1;
-    let obj7;
+    let obj4;
     let tmp;
     if (c5 === 2) {
       c5 = 3;
@@ -128,8 +128,8 @@ export default function DMMessageStickerGreeting(channel) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
         return { value: "HermesInternal", done: null };
       }
@@ -144,8 +144,8 @@ export default function DMMessageStickerGreeting(channel) {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            const obj5 = { value, done: true };
+            return obj5;
           } else {
             channel = tmp4;
             showErrorToast = function showErrorToast(intl) {
@@ -156,8 +156,8 @@ export default function DMMessageStickerGreeting(channel) {
               const obj2 = { text: intl, variant: "critical" };
               obj.open("HANDLE_WAVE_PRESS_TOAST", obj2);
             };
-            const tmp35 = first1;
-            if (!tmp35) {
+            const tmp42 = first1;
+            if (!tmp42) {
               v1(true);
               if (null !== first) {
                 v1(false);
@@ -166,14 +166,14 @@ export default function DMMessageStickerGreeting(channel) {
                 return { value: "HermesInternal", done: null };
               } else {
                 c3 = 1;
-                const obj4 = { channelId: channel.id, source: "In-channel greet" };
-                const obj5 = channel(closure_2[14]);
-                obj5.trackWaveCtaClicked(obj4);
+                let obj2 = channel(closure_2[14]);
+                const obj6 = { channelId: channel.id, source: "In-channel greet" };
+                obj2.trackWaveCtaClicked(obj6);
                 c4 = 2;
                 c5 = 1;
-                const obj6 = { value: obj7.sendGreetMessage(channel.id, closure_1_14), done: false };
-                obj7 = tmp(closure_2[15]);
-                return obj6;
+                const obj7 = { value: obj4.sendGreetMessage(channel.id, closure_1_14), done: false };
+                obj4 = tmp(closure_2[15]);
+                return obj7;
               }
             }
           }
@@ -201,11 +201,11 @@ export default function DMMessageStickerGreeting(channel) {
         }
         c5 = 3;
         return { value: "HermesInternal", done: null };
-      } catch (tmp28) {
-        closure_2 = tmp28;
+      } catch (tmp35) {
+        closure_2 = tmp35;
         if (0 === c3) {
           c5 = 3;
-          throw tmp28;
+          throw tmp35;
         } else {
           c4 = 1;
         }
@@ -290,7 +290,7 @@ export default function DMMessageStickerGreeting(channel) {
       tmp39Result = tmp39(PressableOpacity, obj8);
     } else {
       let tmp40Result2 = null;
-      const tmp42 = closure_12;
+      let tmp42 = closure_12;
       if (null != stateFromStores2) {
         const obj11 = { style: tmp4.stickerContainer, children: closure_10(showConvoStarterInDM(10460), obj12) };
         obj12 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };

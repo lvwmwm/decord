@@ -166,7 +166,7 @@ export function getVideoBackgroundProtoFromOption(type) {
   let obj;
   let obj3;
   if (null == type) {
-    obj = { oneofKind: "r" };
+    obj = { oneofKind: "Array" };
   } else {
     let tmp = null != type && typeof type === "object" && "id" in type;
     if (tmp) {

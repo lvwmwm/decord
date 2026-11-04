@@ -1,7 +1,7 @@
 // Module ID: 10708
 // Function ID: 10709
 // Name: MediaKeyboardUtils
-// Dependencies: [5, 1194, 4990, 7841, 5044, 8348, 1623, 1072, 8080, 8350, 9928, 8358, 8360, 8097, 1252, 8361, 8351, 1377, 5098, 10709, 1108, 10736, 6156, 14229, 11286, 12, 2]
+// Dependencies: [5, 1194, 4990, 7841, 5044, 8348, 1623, 1072, 8080, 8350, 9928, 8358, 8360, 8097, 1252, 8361, 8351, 1377, 5098, 10709, 1108, 10736, 6156, 14230, 11286, 12, 2]
 // Exports: addAttachmentForCommand, addImagesFromPicker, animatedIndexThreshold, cropResultToUploadItem, getMediaKeyboardDraftType, handleCameraDialog, handleSelectGift, handleSelectThread, handleViewAllDialog, mediaNodeToUploadItem
 
 // Module 10708 (MediaKeyboardUtils)
@@ -43,7 +43,7 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const DeviceUtils = tmp(5098);
-const f98517 = (item) => {
+const f98649 = (item) => {
   obj = { origin };
   const merged = Object.assign(item);
   return obj;
@@ -87,7 +87,7 @@ let obj = function _handleLimitedPickerDialog() {
             ({ onDismissKeyboard: c0, onRestoreKeyboard: c1 } = closure_0);
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -181,7 +181,7 @@ obj = function _handleAttachFile() {
             closure_7 = undefined;
             v3 = 1;
             v32 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -362,7 +362,7 @@ function addImagesFromPicker(id, items, IMAGE_PICKER) {
       }
       return tmp2;
     });
-    const mapped = found.map(f98517);
+    const mapped = found.map(f98649);
     const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
     const obj3 = UploadAttachmentActionCreatorsDefault;
     obj3.addFiles(obj2);
@@ -648,7 +648,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f98517);
+            const mapped = found.map(f98649);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -705,7 +705,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f98517);
+            const mapped = found.map(f98649);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -859,7 +859,7 @@ function showSimpleMediaKeyboard(channel) {
               }
               return tmp2;
             });
-            const mapped = found.map(f98517);
+            const mapped = found.map(f98649);
             const obj2 = { files: mapped, channelId: id, draftType: DraftType.ChannelMessage };
             const obj3 = UploadAttachmentActionCreatorsDefault;
             obj3.addFiles(obj2);
@@ -1116,7 +1116,7 @@ export function handleSelectThread(channel, chatInput) {
       const current2 = chatInput.current;
       current2.blur();
     }
-    const tmp7Result = tmp7(14229);
+    const tmp7Result = tmp7(14230);
     const result = tmp7Result.navigateToThreadCreation(channel, "Plus Button");
   }
 }

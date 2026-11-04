@@ -1,10 +1,10 @@
-// Module ID: 11850
-// Function ID: 11851
+// Module ID: 11851
+// Function ID: 11852
 // Name: useCanInviteGuildIds
-// Dependencies: [5053, 5047, 5012, 5073, 11817, 504, 11818, 2]
+// Dependencies: [5053, 5047, 5012, 5073, 11818, 504, 11819, 2]
 // Exports: default
 
-// Module 11850 (useCanInviteGuildIds)
+// Module 11851 (useCanInviteGuildIds)
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/use
 
 export default function useCanInviteGuildIds(location) {
   let linkedGameOrgInvitesEnabled;
-  let obj = linkedGameOrgInvitesEnabled(11817);
+  let obj = linkedGameOrgInvitesEnabled(11818);
   linkedGameOrgInvitesEnabled = obj.useLinkedGameOrgInvitesEnabled(location);
   const items = [GuildStore, GuildMemberStore, GuildRoleStore, PermissionStore];
   const items1 = [linkedGameOrgInvitesEnabled];

@@ -1,10 +1,10 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12353
+// Function ID: 12354
 // Name: conjureGuildPickerSources
 // Dependencies: [19, 5053, 5047, 1385, 504, 1380, 5195, 7036, 7037, 2]
 // Exports: conjureMemberUsername, useConjureGuildMemberUsers, useConjureGuildRoles, useConjureMemberRequests
 
-// Module 12352 (conjureGuildPickerSources)
+// Module 12353 (conjureGuildPickerSources)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import UserUtils from "UserUtils" /* 5195 */;
 import GuildUtilsDefault from "GuildUtils" /* 7036 */;

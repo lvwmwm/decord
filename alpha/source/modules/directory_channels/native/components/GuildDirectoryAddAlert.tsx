@@ -1,10 +1,10 @@
-// Module ID: 14087
-// Function ID: 14088
+// Module ID: 14088
+// Function ID: 14089
 // Name: GuildDirectoryAddAlert
 // Dependencies: [19, 17, 21, 5141, 575, 6165, 1113, 7098, 5761, 2]
 // Exports: default
 
-// Module 14087 (GuildDirectoryAddAlert)
+// Module 14088 (GuildDirectoryAddAlert)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;

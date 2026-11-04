@@ -1,10 +1,10 @@
-// Module ID: 13227
-// Function ID: 13228
+// Module ID: 13228
+// Function ID: 13229
 // Name: useConjureProjectShareTarget
 // Dependencies: [5012, 504, 1113, 3995, 2]
 // Exports: default, isConjureProjectWithoutServer
 
-// Module 13227 (useConjureProjectShareTarget)
+// Module 13228 (useConjureProjectShareTarget)
 import _modDef3995 from "module_3995" /* 3995 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;

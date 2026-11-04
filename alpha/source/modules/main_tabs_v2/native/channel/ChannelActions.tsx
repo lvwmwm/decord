@@ -1,7 +1,7 @@
 // Module ID: 9973
 // Function ID: 9974
 // Name: ChannelActions
-// Dependencies: [19, 17, 6996, 4994, 4990, 5813, 9974, 1072, 9975, 21, 5141, 9977, 8784, 9978, 1113, 10012, 575, 10014, 8814, 10016, 10017, 10023, 504, 7583, 10024, 10025, 7593, 14763, 14765, 8079, 14775, 7356, 14065, 10019, 1377, 5331, 14064, 14124, 11726, 1108, 5323, 11864, 8786, 11177, 14776, 14766, 6869, 14777, 14778, 2]
+// Dependencies: [19, 17, 6996, 4994, 4990, 5813, 9974, 1072, 9975, 21, 5141, 9977, 8784, 9978, 1113, 10012, 575, 10014, 8814, 10016, 10017, 10023, 504, 7583, 10024, 10025, 7593, 14764, 14766, 8079, 14776, 7356, 14066, 10019, 1377, 5331, 14065, 14125, 11727, 1108, 5323, 11865, 8786, 11177, 14777, 14767, 6869, 14778, 14779, 2]
 // Exports: default
 
 // Module 9973 (ChannelActions)
@@ -19,13 +19,13 @@ import PhoneCallIcon2 from "PhoneCallIcon" /* 10012 */;
 import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 10014 */;
 import ForumActionCreatorsDefault from "ForumActionCreators" /* 10019 */;
 import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 11177 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11726 */;
-import useSearchContext from "useSearchContext" /* 14064 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14065 */;
-import TrackingDefault from "Tracking" /* 14124 */;
-import IconActionButtonDefault from "IconActionButton" /* 14766 */;
-import ConversationCoachmark from "ConversationCoachmark" /* 14776 */;
-import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14778 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11727 */;
+import useSearchContext from "useSearchContext" /* 14065 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14066 */;
+import TrackingDefault from "Tracking" /* 14125 */;
+import IconActionButtonDefault from "IconActionButton" /* 14767 */;
+import ConversationCoachmark from "ConversationCoachmark" /* 14777 */;
+import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14779 */;
 import ActiveThreadsStore from "ActiveThreadsStore" /* 6996 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -435,7 +435,7 @@ export default function ChannelActions(channelId) {
   const tmp5 = View;
   if (obj2.useHasForumSearchQuery(channelId)) {
     const obj4 = { channelId };
-    tmp4Result = tmp4(tmp(14777).ForumChannelCloseSearchButton, obj4);
+    tmp4Result = tmp4(tmp(14778).ForumChannelCloseSearchButton, obj4);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {

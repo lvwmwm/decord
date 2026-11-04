@@ -1,10 +1,10 @@
-// Module ID: 19621
-// Function ID: 19622
+// Module ID: 19635
+// Function ID: 19636
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 19622, 19624, 17, 19647, 2192, 5044, 2122, 7780, 19648, 1072, 9, 3, 20384, 1377, 7811, 20385, 10, 20387, 20388, 13413, 504, 1259, 1244, 20389, 2126, 20390, 16627, 572, 20391, 7794, 1242, 20392, 20393, 11093, 510, 1252, 16256, 5036, 9981, 9915, 2203, 1152, 20394, 2123, 9044, 20396, 16453, 7955, 20413, 20414, 20415, 9979, 7807, 7795, 5324, 1192, 5142, 16503, 19324, 19325, 1098, 16253, 7779, 16510, 16525, 7021, 20416, 5428, 7781, 7795, 2]
+// Dependencies: [32, 5, 19636, 19638, 17, 19661, 2192, 5044, 2122, 7780, 19662, 1072, 9, 3, 20397, 1377, 7811, 20398, 10, 20400, 20401, 13414, 504, 1259, 1244, 20402, 2126, 20403, 16639, 572, 20404, 7794, 1242, 20405, 20406, 11093, 510, 1252, 16269, 5036, 9981, 9915, 2203, 1152, 20407, 2123, 9044, 20409, 16466, 7955, 20426, 20427, 20428, 9979, 7807, 7795, 5324, 1192, 5142, 16516, 19338, 19339, 1098, 16266, 7779, 16523, 16537, 7021, 20429, 5428, 7781, 7795, 2]
 // Exports: init, initHeadlessTask
 
-// Module 19621 (NativeAppStartup)
+// Module 19635 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
@@ -17,19 +17,19 @@ import IntlLoaderStore from "IntlLoaderStore" /* 2192 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 5036 */;
 import timeRequireDefault from "timeRequire" /* 7811 */;
 import Future from "Future" /* 9915 */;
-import react_nativeDefault from "react-native" /* 16256 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20387 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20388 */;
+import react_nativeDefault from "react-native" /* 16269 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20400 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20401 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_19622 from "module_19622" /* 19622 */;
-import superagentPatch from "superagentPatch" /* 19624 */;
+import module_19636 from "module_19636" /* 19636 */;
+import superagentPatch from "superagentPatch" /* 19638 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19647 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19661 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
 import AppStateStore from "AppStateStore" /* 2122 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7780 */;
-import ManagerRegistry from "ManagerRegistry" /* 19648 */;
+import ManagerRegistry from "ManagerRegistry" /* 19662 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f134582 = () => _true(handleNotification[33]);
+  const f135120 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f134582).default(arg0, false);
+      timeRequireDefault("receiveNotification", f135120).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f134582).default(arg0, false);
+        timeRequireDefault("receiveNotification", f135120).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -535,7 +535,7 @@ obj = function _initializeIntl() {
               tmp = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c3) {
             if (arg0 === 1) {

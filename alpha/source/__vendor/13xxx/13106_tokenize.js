@@ -1,57 +1,29 @@
 // Module ID: 13106
 // Function ID: 13107
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055]
 
 // Module 13106 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import tokenize from "tokenize" /* 13055 */;
 
 let obj2;
 const Ident = tokenize.TYPE.Ident;
 let obj = {
-  name: "Combinator",
+  name: "ClassSelector",
   structure: obj2,
   parse() {
-    let scanner3;
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const source = this.scanner.source;
-    const charCodeAtResult = source.charCodeAt(this.scanner.tokenStart);
-    if (62 !== charCodeAtResult) {
-      if (43 !== charCodeAtResult) {
-        if (126 !== charCodeAtResult) {
-          if (47 === charCodeAtResult) {
-            const iter = self.scanner;
-            iter.next();
-            let tmp5 = self.scanner.tokenType === Ident;
-            if (tmp5) {
-              const scanner = self.scanner;
-              tmp5 = false !== scanner.lookupValue(0, "deep");
-            }
-            if (!tmp5) {
-              self.error("Identifier `deep` is expected");
-            }
-            const iter2 = self.scanner;
-            iter2.next();
-            const scanner2 = self.scanner;
-            if (!scanner2.isDelim(47)) {
-              self.error("Solidus is expected");
-            }
-            const iter3 = self.scanner;
-            iter3.next();
-          } else {
-            self.error("Combinator is expected");
-          }
-        }
-        const obj = { type: "Combinator", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-        scanner3 = self.scanner;
-        return obj;
-      }
+    const scanner = this.scanner;
+    if (!scanner.isDelim(46)) {
+      self.error("Full stop is expected");
     }
-    const iter4 = self.scanner;
-    iter4.next();
+    const iter = self.scanner;
+    iter.next();
+    const obj = { type: "ClassSelector", loc: self.getLocation(self.scanner.tokenStart - 1, self.scanner.tokenEnd), name: self.consume(Ident) };
+    return obj;
   },
   generate(name) {
+    this.chunk(".");
     this.chunk(name.name);
   }
 };

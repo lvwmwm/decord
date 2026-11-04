@@ -1,17 +1,49 @@
 // Module ID: 13388
 // Function ID: 13389
-// Dependencies: []
-// Exports: getSDKSource, isBrowserBundle
+// Dependencies: [13389]
+// Exports: isNodeEnv, loadModule
 
 // Module 13388
+import _mod13389 from "module_13389" /* 13389 */;
 
-export function getSDKSource() {
-  return "npm";
+function dynamicRequire(require, arg1) {
+  return require.require(arg1);
 }
-export function isBrowserBundle() {
-  let prop = typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined";
-  if (typeof globalThis.__SENTRY_BROWSER_BUNDLE__ !== "undefined") {
-    prop = globalThis.__SENTRY_BROWSER_BUNDLE__;
+
+export { dynamicRequire };
+export function isNodeEnv() {
+  const obj = _mod13389;
+  let tmp2 = !obj.isBrowserBundle();
+  obj.isBrowserBundle();
+  if (tmp2) {
+    const _Object = Object;
+    const _process = process;
+    let num = 0;
+    const call = toString.call;
+    if (typeof process !== "undefined") {
+      num = process;
+    }
+    tmp2 = "[object process]" === call(num);
   }
-  return prop;
+  return tmp2;
+}
+export function loadModule(arg0) {
+  let tmp = arg1;
+  if (arg1 === undefined) {
+    tmp = module;
+  }
+  let tmp2;
+  try {
+    tmp2 = dynamicRequire(tmp, arg0);
+  } catch (err) {
+  }
+  const tmp4 = tmp2;
+  if (!tmp4) {
+    try {
+      const _HermesInternal = HermesInternal;
+      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
+    } catch (err) {
+    }
+  }
+  return tmp2;
 }

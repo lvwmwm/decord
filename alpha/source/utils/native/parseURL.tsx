@@ -1,7 +1,7 @@
 // Module ID: 5879
 // Function ID: 5880
 // Name: parseURL
-// Dependencies: [32, 1072, 1074, 5789, 5880, 5881, 1487, 2072, 1381, 5882, 5886, 14969, 6579, 15902, 1378, 5788, 11, 9892, 7729, 1624, 1377, 9420, 1252, 1265, 15903, 2]
+// Dependencies: [32, 1072, 1074, 5789, 5880, 5881, 1487, 2072, 1381, 5882, 5886, 14970, 6579, 15915, 1378, 5788, 11, 9892, 7729, 1624, 1377, 9420, 1252, 1265, 15916, 2]
 // Exports: default
 
 // Module 5879 (parseURL)
@@ -22,9 +22,9 @@ import GiftCodeUtils from "GiftCodeUtils" /* 6579 */;
 import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7729 */;
 import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9420 */;
 import Authorize from "Authorize" /* 9892 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14969 */;
-import QRLoginUtils from "QRLoginUtils" /* 15902 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 15903 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14970 */;
+import QRLoginUtils from "QRLoginUtils" /* 15915 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 15916 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;

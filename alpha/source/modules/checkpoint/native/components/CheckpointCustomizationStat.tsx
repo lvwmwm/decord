@@ -1,10 +1,10 @@
-// Module ID: 13904
-// Function ID: 13905
+// Module ID: 13905
+// Function ID: 13906
 // Name: CheckpointCustomizationStat
-// Dependencies: [19, 17, 13656, 6201, 21, 5141, 575, 6569, 12168, 1113, 3219, 8784, 3187, 9908, 13665, 9877, 9260, 504, 6572, 13887, 13868, 13865, 2]
+// Dependencies: [19, 17, 13657, 6201, 21, 5141, 575, 6569, 12169, 1113, 3219, 8784, 3187, 9908, 13666, 9877, 9260, 504, 6572, 13888, 13869, 13866, 2]
 // Exports: default
 
-// Module 13904 (CheckpointCustomizationStat)
+// Module 13905 (CheckpointCustomizationStat)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,13 +18,13 @@ import ChatIcon from "ChatIcon" /* 8784 */;
 import CalendarIcon from "CalendarIcon" /* 9260 */;
 import GameControllerIcon from "GameControllerIcon" /* 9877 */;
 import ServerIcon from "ServerIcon" /* 9908 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12168 */;
-import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 13665 */;
-import CheckpointTextDefault from "CheckpointText" /* 13865 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13868 */;
-import CheckpointTagDefault from "CheckpointTag" /* 13887 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12169 */;
+import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 13666 */;
+import CheckpointTextDefault from "CheckpointText" /* 13866 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13869 */;
+import CheckpointTagDefault from "CheckpointTag" /* 13888 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 13656 */;
+import CheckpointStore from "CheckpointStore" /* 13657 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

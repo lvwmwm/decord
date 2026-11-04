@@ -1,13 +1,13 @@
-// Module ID: 15998
-// Function ID: 15999
+// Module ID: 16011
+// Function ID: 16012
 // Name: GuildBadgeBunny
-// Dependencies: [19, 21, 1266, 15976, 8171, 2]
+// Dependencies: [19, 21, 1266, 15989, 8171, 2]
 // Exports: GuildBadgeBunny
 
-// Module 15998 (GuildBadgeBunny)
+// Module 16011 (GuildBadgeBunny)
 import v1 from "v1" /* 1266 */;
 import inlineStyles from "inlineStyles" /* 8171 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15976 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15989 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

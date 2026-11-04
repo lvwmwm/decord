@@ -1,10 +1,10 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15391
+// Function ID: 15392
 // Name: InAppReportsGuildScheduledEventPreview
 // Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 5138, 5761, 1113, 7098, 2]
 // Exports: default
 
-// Module 15390 (InAppReportsGuildScheduledEventPreview)
+// Module 15391 (InAppReportsGuildScheduledEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildIconDefault from "GuildIcon" /* 7098 */;

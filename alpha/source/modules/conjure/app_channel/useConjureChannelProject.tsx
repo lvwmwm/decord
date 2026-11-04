@@ -1,10 +1,10 @@
-// Module ID: 14623
-// Function ID: 14624
+// Module ID: 14624
+// Function ID: 14625
 // Name: useConjureChannelProject
 // Dependencies: [19, 5053, 5012, 5073, 6979, 1072, 7559, 504, 11054, 11, 6980, 2]
 // Exports: default
 
-// Module 14623 (useConjureChannelProject)
+// Module 14624 (useConjureChannelProject)
 import Constants from "Constants" /* 1072 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6979 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 11054 */;

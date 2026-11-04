@@ -1,10 +1,10 @@
-// Module ID: 12760
-// Function ID: 12761
+// Module ID: 12761
+// Function ID: 12762
 // Name: PollInteractionUtils
-// Dependencies: [5382, 12761, 2123, 2]
+// Dependencies: [5382, 12762, 2123, 2]
 // Exports: showVotesForAnswer
 
-// Module 12760 (PollInteractionUtils)
+// Module 12761 (PollInteractionUtils)
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import size from "module_2" /* 2 */;
@@ -16,5 +16,5 @@ export function showVotesForAnswer(message) {
   const initialAnswerId = message.initialAnswerId;
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channelId: message.channel_id, messageId: message.id, initialAnswerId };
-  obj.openLazy(asyncRequire(12761, dependencyMap.paths), "PollVotesActionSheet", obj2);
+  obj.openLazy(asyncRequire(12762, dependencyMap.paths), "PollVotesActionSheet", obj2);
 }

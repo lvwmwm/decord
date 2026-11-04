@@ -24,7 +24,7 @@ let Component;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f93076 = (item) => item.trim();
+const f93207 = (item) => item.trim();
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -119,13 +119,13 @@ function astToReact(Tag, arg1) {
     return Tag;
   }
 }
-function _parse($ZodRealError, fn) {
+function _parse(arg0, fn) {
   let element;
   let sum;
-  const ZodRealError = $ZodRealError;
+  let closure_0 = arg0;
   function error(arg0) {
     let tmp11;
-    const parts = ZodRealError.split("\n");
+    const parts = closure_0.split("\n");
     let num = 0;
     let diff = sum1;
     let num2 = 0;
@@ -144,7 +144,7 @@ function _parse($ZodRealError, fn) {
       }
     }
     const obj = /(^|\n).*$/;
-    const str = ZodRealError.slice(0, sum1);
+    const str = closure_0.slice(0, sum1);
     const match = obj.exec(str.replace(/^\t+/, toSpaces));
     const obj2 = /.*(\n|$)/;
     const match1 = obj2.exec(arr.slice(tmp));
@@ -168,14 +168,14 @@ function _parse($ZodRealError, fn) {
     let str = "";
     if (sum1 < length) {
       str = "";
-      if ("<" !== ZodRealError[sum1]) {
+      if ("<" !== closure_0[sum1]) {
         const text = `${tmp3}`;
         const sum = sum1 + 1;
         sum1 = sum;
         str = text;
         while (sum < length) {
           str = text;
-          if ("<" === ZodRealError[sum1]) {
+          if ("<" === closure_0[sum1]) {
             break;
           }
         }
@@ -185,31 +185,31 @@ function _parse($ZodRealError, fn) {
     if (obj.test(str)) {
       children.push(str);
     }
-    return "<" === ZodRealError[sum1] ? openingTag : neutral;
+    return "<" === closure_0[sum1] ? openingTag : neutral;
   }
   function openingTag() {
     let str16;
     let str17;
-    if ("?" === ZodRealError[sum1]) {
+    if ("?" === closure_0[sum1]) {
       return neutral;
     } else {
-      if ("!" === ZodRealError[sum1]) {
+      if ("!" === closure_0[sum1]) {
         const sum = sum1 + 1;
-        if ("--" === ZodRealError.slice(sum, sum1 + 3)) {
+        if ("--" === closure_0.slice(sum, sum1 + 3)) {
           return comment;
         } else {
           sum1 = sum1 + 8;
-          if ("[CDATA[" === ZodRealError.slice(sum, sum1)) {
+          if ("[CDATA[" === closure_0.slice(sum, sum1)) {
             return cdata;
           } else {
             const obj4 = /doctype/i;
-            if (obj4.test(ZodRealError.slice(sum, sum1))) {
+            if (obj4.test(closure_0.slice(sum, sum1))) {
               return neutral;
             }
           }
         }
       }
-      if ("/" !== ZodRealError[sum1]) {
+      if ("/" !== closure_0[sum1]) {
         let tmp5 = length;
         let str3 = "";
         if (sum1 < length) {
@@ -223,7 +223,7 @@ function _parse($ZodRealError, fn) {
             tmp5 = length;
             str3 = text;
             while (sum2 < length) {
-              let tmp13 = ZodRealError[sum1];
+              let tmp13 = closure_0[sum1];
               tmp4 = tmp13;
               tmp5 = tmp9;
               str3 = text;
@@ -242,8 +242,8 @@ function _parse($ZodRealError, fn) {
         }
         if (sum1 < tmp5) {
           const obj3 = re22;
-          const tmp23 = ZodRealError;
-          while (re22.test(ZodRealError[sum1])) {
+          const tmp23 = closure_0;
+          while (re22.test(closure_0[sum1])) {
             let tmp27 = length;
             if (sum1 < length) {
               tmp27 = tmp26;
@@ -253,7 +253,7 @@ function _parse($ZodRealError, fn) {
                 tmp27 = length;
                 while (sum3 < length) {
                   tmp27 = tmp31;
-                  if (!re22.test(ZodRealError[sum1])) {
+                  if (!re22.test(closure_0[sum1])) {
                     break;
                   }
                 }
@@ -262,7 +262,7 @@ function _parse($ZodRealError, fn) {
             let tmp36 = tmp27;
             let str9 = "";
             if (sum1 < tmp27) {
-              let tmp40 = ZodRealError[sum1];
+              let tmp40 = closure_0[sum1];
               let str10 = "";
               tmp36 = tmp27;
               str9 = "";
@@ -273,7 +273,7 @@ function _parse($ZodRealError, fn) {
                 tmp36 = length;
                 str9 = text1;
                 while (sum4 < length) {
-                  let tmp48 = ZodRealError[sum1];
+                  let tmp48 = closure_0[sum1];
                   tmp40 = tmp48;
                   tmp36 = tmp44;
                   str9 = text1;
@@ -289,20 +289,20 @@ function _parse($ZodRealError, fn) {
               let tmp50 = tmp36;
               if (sum1 < tmp36) {
                 tmp50 = tmp36;
-                if (re22.test(ZodRealError[sum1])) {
+                if (re22.test(closure_0[sum1])) {
                   let sum5 = sum1 + 1;
                   sum1 = sum5;
                   tmp50 = length;
                   while (sum5 < length) {
                     tmp50 = tmp56;
-                    if (!re22.test(ZodRealError[sum1])) {
+                    if (!re22.test(closure_0[sum1])) {
                       break;
                     }
                   }
                 }
               }
               let flag = true;
-              if ("=" === ZodRealError[sum1]) {
+              if ("=" === closure_0[sum1]) {
                 let str12;
                 let sum6 = sum1 + 1;
                 sum1 = sum6;
@@ -315,14 +315,14 @@ function _parse($ZodRealError, fn) {
                     tmp64 = length;
                     while (sum7 < length) {
                       tmp64 = tmp67;
-                      if (!re22.test(ZodRealError[sum1])) {
+                      if (!re22.test(closure_0[sum1])) {
                         break;
                       }
                     }
                   }
                 }
                 let str11 = "";
-                if (re23.test(ZodRealError[sum1])) {
+                if (re23.test(closure_0[sum1])) {
                   let tmp90;
                   let tmp82 = +sum1;
                   sum1 = tmp82 + 1;
@@ -333,7 +333,7 @@ function _parse($ZodRealError, fn) {
                   } else {
                     let tmp87 = +sum1;
                     sum1 = tmp87 + 1;
-                    let tmp88 = ZodRealError[tmp87];
+                    let tmp88 = closure_0[tmp87];
                     tmp90 = str13;
                     while (tmp88 !== tmp83) {
                       let tmp91 = "\\" !== tmp88 || false;
@@ -352,7 +352,7 @@ function _parse($ZodRealError, fn) {
                   }
                   str12 = tmp90;
                 } else {
-                  let tmp76 = ZodRealError[sum1];
+                  let tmp76 = closure_0[sum1];
                   str12 = str11;
                   while (" " !== tmp76) {
                     str12 = str11;
@@ -404,7 +404,7 @@ function _parse($ZodRealError, fn) {
           element.styles = obj.style;
           const obj2 = {};
           const parts = str15.split(";");
-          const found = parts.filter(f93076);
+          const found = parts.filter(f93207);
           let num3 = 0;
           if (0 < found.length) {
             while (true) {
@@ -427,11 +427,11 @@ function _parse($ZodRealError, fn) {
           obj.style = obj2;
         }
         let flag3 = false;
-        if ("/" === ZodRealError[sum1]) {
+        if ("/" === closure_0[sum1]) {
           sum1 = sum1 + 1;
           flag3 = true;
         }
-        if (">" !== ZodRealError[sum1]) {
+        if (">" !== closure_0[sum1]) {
           error("Expected >");
         } else {
           if (!flag3) {
@@ -446,7 +446,7 @@ function _parse($ZodRealError, fn) {
     }
   }
   function comment() {
-    const index = ZodRealError.indexOf("-->", sum1);
+    const index = closure_0.indexOf("-->", sum1);
     if (!(~index)) {
       error("expected -->");
     }
@@ -454,8 +454,8 @@ function _parse($ZodRealError, fn) {
     return neutral;
   }
   function cdata() {
-    const index = ZodRealError.indexOf("]]>", sum1);
-    const arr = ZodRealError;
+    const index = closure_0.indexOf("]]>", sum1);
+    const arr = closure_0;
     if (!(~index)) {
       error("expected ]]>");
     }
@@ -467,7 +467,7 @@ function _parse($ZodRealError, fn) {
     let tmp2 = length;
     let str = "";
     if (sum1 < length) {
-      let tmp6 = ZodRealError[sum1];
+      let tmp6 = closure_0[sum1];
       tmp2 = tmp;
       str = "";
       if (re20.test(tmp6)) {
@@ -477,7 +477,7 @@ function _parse($ZodRealError, fn) {
         tmp2 = length;
         str = text;
         while (sum < length) {
-          let tmp14 = ZodRealError[sum1];
+          let tmp14 = closure_0[sum1];
           tmp6 = tmp14;
           tmp2 = tmp10;
           str = text;
@@ -493,16 +493,16 @@ function _parse($ZodRealError, fn) {
     const tmp17 = parent && str !== parent.tag;
     if (!tmp17) {
       if (sum1 < tmp2) {
-        if (re22.test(ZodRealError[sum1])) {
+        if (re22.test(closure_0[sum1])) {
           sum1 = sum1 + 1;
           while (sum1 < length) {
-            if (!re22.test(ZodRealError[sum1])) {
+            if (!re22.test(closure_0[sum1])) {
               break;
             }
           }
         }
       }
-      if (">" !== ZodRealError[sum1]) {
+      if (">" !== closure_0[sum1]) {
         error("Expected >");
       } else {
         closure_5.pop();
@@ -515,18 +515,18 @@ function _parse($ZodRealError, fn) {
     }
     error("Expected closing tag </" + str + "> to match opening tag <" + parent.tag + ">");
   }
-  const length = $ZodRealError.length;
+  const length = arg0.length;
   let parent = null;
   function metadata() {
     let tmp2 = length;
     if (sum1 + 1 < length) {
-      if ("<" !== ZodRealError[sum1]) {
+      if ("<" !== closure_0[sum1]) {
         const sum = sum1 + 1;
         sum1 = sum;
         tmp2 = length;
         while (sum + 1 < length) {
-          let arr = ZodRealError;
-          if ("<" !== ZodRealError[sum1]) {
+          let arr = closure_0;
+          if ("<" !== closure_0[sum1]) {
             continue;
           } else {
             tmp2 = tmp9;
@@ -543,7 +543,7 @@ function _parse($ZodRealError, fn) {
         }
       } else {
         tmp2 = tmp;
-        if (!re20.test(ZodRealError[sum1 + 1])) {
+        if (!re20.test(closure_0[sum1 + 1])) {
           tmp2 = tmp;
         }
       }
@@ -551,13 +551,13 @@ function _parse($ZodRealError, fn) {
     let str = "";
     if (sum1 < tmp2) {
       str = "";
-      if ("<" !== ZodRealError[sum1]) {
+      if ("<" !== closure_0[sum1]) {
         const text = `${tmp17}`;
         sum1 = sum1 + 1;
         str = text;
         while (sum1 < length) {
           str = text;
-          if ("<" === ZodRealError[sum1]) {
+          if ("<" === closure_0[sum1]) {
             break;
           }
         }
@@ -567,7 +567,7 @@ function _parse($ZodRealError, fn) {
     if (obj.test(str)) {
       children.push(str);
     }
-    return "<" === ZodRealError[sum1] ? openingTag : neutral;
+    return "<" === closure_0[sum1] ? openingTag : neutral;
   }
   let children = null;
   let closure_5 = [];
@@ -654,7 +654,7 @@ let items = [
   },
   {
     key: "parse",
-    value: function parse($ZodRealError) {
+    value: function parse(arg0) {
       const self = this;
       let onError = this.props.onError;
       if (undefined === onError) {
@@ -663,8 +663,8 @@ let items = [
       try {
         let tmp2 = null;
         const setState = self.setState;
-        if ($ZodRealError) {
-          tmp2 = _parse($ZodRealError);
+        if (arg0) {
+          tmp2 = _parse(arg0);
         }
         const obj = { ast: tmp2 };
         setState(obj);
@@ -915,7 +915,7 @@ export function getStyle(str) {
   let str2;
   const obj = {};
   const parts = str.split(";");
-  const found = parts.filter(f93076);
+  const found = parts.filter(f93207);
   let num = 0;
   if (0 < found.length) {
     while (true) {

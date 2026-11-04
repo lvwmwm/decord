@@ -1,14 +1,14 @@
-// Module ID: 15111
-// Function ID: 15112
+// Module ID: 15112
+// Function ID: 15113
 // Name: SoundboardSlashIcon
-// Dependencies: [19, 21, 575, 5850, 15112, 2]
+// Dependencies: [19, 21, 575, 5850, 15113, 2]
 // Exports: SoundboardSlashIcon
 
-// Module 15111 (SoundboardSlashIcon)
+// Module 15112 (SoundboardSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 15112 */;
+import AssetRegistry from "AssetRegistry" /* 15113 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12345
+// Function ID: 12346
 // Name: conjureAttachmentRequests
 // Dependencies: [5, 11134, 11107, 2]
 // Exports: deleteStagedAttachment, importAttachmentFromUrl, isAttachmentAvailable, listStoredAttachments, uploadAttachment
 
-// Module 12344 (conjureAttachmentRequests)
+// Module 12345 (conjureAttachmentRequests)
 import conjureWorkerFetch from "conjureWorkerFetch" /* 11134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -350,7 +350,7 @@ obj = function _getAttachmentUrl() {
             uRLSearchParams = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

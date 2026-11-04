@@ -1,13 +1,13 @@
-// Module ID: 16688
-// Function ID: 16689
+// Module ID: 16700
+// Function ID: 16701
 // Name: HSVColorPicker
-// Dependencies: [19, 17, 21, 5141, 1652, 16689, 16690, 2]
+// Dependencies: [19, 17, 21, 5141, 1652, 16701, 16702, 2]
 // Exports: default
 
-// Module 16688 (HSVColorPicker)
+// Module 16700 (HSVColorPicker)
 import react_native from "react-native" /* 17 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 16689 */;
+import SaturationValueColorPickerDefault from "SaturationValueColorPicker" /* 16701 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp9;
-const HuePickerDefault = tmp9(16690);
+const HuePickerDefault = tmp9(16702);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ hsvColorPicker: { alignItems: "center" } });

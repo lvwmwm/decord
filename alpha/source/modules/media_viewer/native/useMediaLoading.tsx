@@ -1,10 +1,10 @@
-// Module ID: 15006
-// Function ID: 15007
+// Module ID: 15007
+// Function ID: 15008
 // Name: useMediaLoading
 // Dependencies: [32, 19, 7278, 2]
 // Exports: default
 
-// Module 15006 (useMediaLoading)
+// Module 15007 (useMediaLoading)
 import reactDefault from "react" /* 7278 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

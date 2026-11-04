@@ -1,21 +1,21 @@
-// Module ID: 18852
-// Function ID: 18853
+// Module ID: 18866
+// Function ID: 18867
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 4990, 5012, 21, 18783, 575, 504, 7037, 9065, 18824, 10980, 18814, 5786, 18826, 1113, 11, 7121, 5761, 5888, 18830, 18832, 2]
+// Dependencies: [19, 17, 4990, 5012, 21, 18797, 575, 504, 7037, 9065, 18838, 10980, 18828, 5786, 18840, 1113, 11, 7121, 5761, 5888, 18844, 18846, 2]
 // Exports: default
 
-// Module 18852 (ICYMIForumThreadRow)
+// Module 18866 (ICYMIForumThreadRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10980 */;
-import ICYMIShared from "ICYMIShared" /* 18824 */;
+import ICYMIShared from "ICYMIShared" /* 18838 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18783 */;
+import createICYMIStyles from "createICYMIStyles" /* 18797 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

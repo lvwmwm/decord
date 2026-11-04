@@ -1,10 +1,10 @@
-// Module ID: 19006
-// Function ID: 19007
+// Module ID: 19020
+// Function ID: 19021
 // Name: MarkupSearchResultLinkPreviewReactRules
 // Dependencies: [11235, 2]
 // Exports: createSearchResultLinkPreviewReactRules
 
-// Module 19006 (MarkupSearchResultLinkPreviewReactRules)
+// Module 19020 (MarkupSearchResultLinkPreviewReactRules)
 import MarkupMessagePreviewReactRules from "MarkupMessagePreviewReactRules" /* 11235 */;
 import size from "module_2" /* 2 */;
 

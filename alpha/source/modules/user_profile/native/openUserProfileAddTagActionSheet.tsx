@@ -1,10 +1,10 @@
-// Module ID: 15164
-// Function ID: 15165
+// Module ID: 15165
+// Function ID: 15166
 // Name: openUserProfileAddTagActionSheet
-// Dependencies: [502, 8895, 6098, 8903, 5382, 15165, 2123, 2]
+// Dependencies: [502, 8895, 6098, 8903, 5382, 15166, 2123, 2]
 // Exports: default
 
-// Module 15164 (openUserProfileAddTagActionSheet)
+// Module 15165 (openUserProfileAddTagActionSheet)
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import react_nativeDefault from "react-native" /* 6098 */;
@@ -23,6 +23,6 @@ export default function openUserProfileAddTagActionSheet(widgetEdited) {
   const obj2 = { userId: AuthenticationStore.getId(), action: constants.PRESS_ADD_TAG, widgetEdited: widgetEdited.widgetType };
   const result = obj.trackUserProfileEditAction(obj2);
   const obj3 = ActionSheetActionCreatorsDefault;
-  obj3.openLazy(asyncRequire(15165, dependencyMap.paths), UserProfileAddTagActionSheet, widgetEdited);
+  obj3.openLazy(asyncRequire(15166, dependencyMap.paths), UserProfileAddTagActionSheet, widgetEdited);
 };
 export const USER_PROFILE_ADD_TAG_ACTION_SHEET_KEY = "UserProfileAddTagActionSheet";

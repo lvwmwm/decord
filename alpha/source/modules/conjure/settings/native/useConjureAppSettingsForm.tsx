@@ -1,18 +1,18 @@
-// Module ID: 12335
-// Function ID: 12336
+// Module ID: 12336
+// Function ID: 12337
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 5071, 5012, 5083, 1385, 11047, 21, 5141, 575, 504, 12336, 1113, 3995, 11146, 11145, 12337, 7201, 12338, 7115, 7199, 7202, 12349, 7389, 7223, 5761, 5768, 12351, 7559, 7116, 7127, 5786, 5382, 11387, 12352, 12356, 2]
+// Dependencies: [5, 32, 19, 17, 5071, 5012, 5083, 1385, 11047, 21, 5141, 575, 504, 12337, 1113, 3995, 11146, 11145, 12338, 7201, 12339, 7115, 7199, 7202, 12350, 7389, 7223, 5761, 5768, 12352, 7559, 7116, 7127, 5786, 5382, 11388, 12353, 12357, 2]
 // Exports: default
 
-// Module 12335 (useConjureAppSettingsForm)
+// Module 12336 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
 import conjureSettingValues from "conjureSettingValues" /* 11146 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11387 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 12356 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11388 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 12357 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -36,7 +36,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const useConjureSettingPickerOptions = tmp(12351);
+const useConjureSettingPickerOptions = tmp(12352);
 function ConjureChannelSettingRow(def) {
   let TableRowTrailingText;
   let disabled;
@@ -54,7 +54,7 @@ function ConjureChannelSettingRow(def) {
   let tmp = def;
   let tmp2 = dependencyMap;
   ({ projectId, isPreview, disabled, fallback } = def);
-  let obj = def(12351);
+  let obj = def(12352);
   const conjureSettingsGuildId = obj.useConjureSettingsGuildId(projectId, isPreview);
   let obj2 = def(504);
   const items = [GuildChannelStore];
@@ -121,7 +121,7 @@ function ConjureChannelSettingRow(def) {
         const obj4 = { variant: "body-xs/medium", color: "text-subtle", children: tmpResult3.conjureLinkedNodes(hint, "body-xs/medium") };
         const Text = tmp(5761).Text;
         let str = "body-xs/medium";
-        tmpResult3 = tmp(12338);
+        tmpResult3 = tmp(12339);
         tmp6Result = tmp6(Text, obj4);
       }
       TableRowTrailingText = tmp(7127).TableRowTrailingText;

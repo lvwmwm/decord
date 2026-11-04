@@ -1,10 +1,10 @@
-// Module ID: 19600
-// Function ID: 19601
+// Module ID: 19614
+// Function ID: 19615
 // Name: VoicePanelVoiceControlsButtons
-// Dependencies: [32, 19, 4989, 6978, 1194, 11901, 6849, 502, 2135, 5813, 1072, 19601, 5902, 21, 6094, 19602, 2123, 1113, 12172, 7201, 12105, 504, 5846, 14952, 14953, 7116, 7124, 11409, 19559, 8819, 8784, 19587, 14319, 12116, 1252, 12198, 12145, 1377, 575, 6050, 7505, 9383, 19493, 9366, 9373, 7125, 19478, 19431, 11158, 12164, 5893, 11223, 12115, 19603, 10101, 11459, 11118, 19604, 8490, 572, 12135, 7701, 19492, 2]
+// Dependencies: [32, 19, 4989, 6978, 1194, 11902, 6849, 502, 2135, 5813, 1072, 19615, 5902, 21, 6094, 19616, 2123, 1113, 12173, 7201, 12106, 504, 5846, 14953, 14954, 7116, 7124, 11410, 19573, 8819, 8784, 19601, 14320, 12117, 1252, 12199, 12146, 1377, 575, 6050, 7505, 9383, 19507, 9366, 9373, 7125, 19492, 19445, 11158, 12165, 5893, 11223, 12116, 19617, 10101, 11460, 11118, 19618, 8490, 572, 12136, 7701, 19506, 2]
 // Exports: ActivitiesButton, AudioRouteButton, ChatButton, DeafenSwitch, GameConsoles, HideNonVideoParticipants, HideSelfVideo, InviteButton, LeaveActivitiesButton, RTCDebugPanelButton, ReportStreamIssueButton, ScreenshareButton, ShareActivityLogsButton, SoundboardButton, StreamVolumeItem, ToggleShowActivitiesDebugOverlay, VoiceSettingsButton
 
-// Module 19600 (VoicePanelVoiceControlsButtons)
+// Module 19614 (VoicePanelVoiceControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -25,26 +25,26 @@ import CallsUtils from "CallsUtils" /* 9366 */;
 import showAudioOutputSelector from "showAudioOutputSelector" /* 9373 */;
 import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9383 */;
 import GroupPlusIcon from "GroupPlusIcon" /* 11158 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11459 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12105 */;
-import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12135 */;
-import VolumeSliderDefault from "VolumeSlider" /* 12145 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12198 */;
-import SoundboardIcon from "SoundboardIcon" /* 14319 */;
-import useInviteMembersCallback from "useInviteMembersCallback" /* 19431 */;
-import useCanInviteMembers from "useCanInviteMembers" /* 19478 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19492 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 19493 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 19587 */;
-import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19601 */;
-import useHideSelfVideoDefault from "useHideSelfVideo" /* 19603 */;
-import ChannelCallUtils from "ChannelCallUtils" /* 19604 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11460 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12106 */;
+import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12136 */;
+import VolumeSliderDefault from "VolumeSlider" /* 12146 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12199 */;
+import SoundboardIcon from "SoundboardIcon" /* 14320 */;
+import useInviteMembersCallback from "useInviteMembersCallback" /* 19445 */;
+import useCanInviteMembers from "useCanInviteMembers" /* 19492 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19506 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 19507 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 19601 */;
+import HideSelfStreamAndVideoConstants from "HideSelfStreamAndVideoConstants" /* 19615 */;
+import useHideSelfVideoDefault from "useHideSelfVideo" /* 19617 */;
+import ChannelCallUtils from "ChannelCallUtils" /* 19618 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11901 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11902 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
@@ -59,7 +59,7 @@ let _require, closure_0, currentEmbeddedActivity, dependencyMap, importDefault, 
 let closure_14;
 let map1;
 let tmp4;
-const AssetRegistryDefault3 = tmp4(12164);
+const AssetRegistryDefault3 = tmp4(12165);
 class GameConsoleAccountButton {
   constructor(channel) {
     let account;
@@ -179,7 +179,7 @@ let result = size.fileFinishedImporting("modules/voice_panel/native/controls/Voi
 export function GameConsoles(channel) {
   channel = channel.channel;
   const connected = channel.connected;
-  const arr = connected(12172)();
+  const arr = connected(12173)();
   let tmp2 = null;
   if (!channel.isGuildStageVoice()) {
     let tmp3 = null;
@@ -196,7 +196,7 @@ export { GameConsoleAccountButton };
 export function ActivitiesButton(openTab) {
   openTab = openTab.openTab;
   let dismissPanel;
-  dismissPanel = react.useContext(dismissPanel(11409)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(11410)).dismissPanel;
   const items = [dismissPanel, openTab];
   const callback = react.useCallback(() => {
     dismissPanel();
@@ -214,7 +214,7 @@ export function ActivitiesButton(openTab) {
 export function ChatButton(openTab) {
   openTab = openTab.openTab;
   let dismissPanel;
-  dismissPanel = react.useContext(dismissPanel(11409)).dismissPanel;
+  dismissPanel = react.useContext(dismissPanel(11410)).dismissPanel;
   const items = [dismissPanel, openTab];
   const callback = react.useCallback(() => {
     dismissPanel();
@@ -248,7 +248,7 @@ export function ScreenshareButton(channel) {
   let isFeatureEnabled;
   let text;
   let isActive;
-  const tmp = isActive(12116)(channel.channel);
+  const tmp = isActive(12117)(channel.channel);
   const onPress = tmp.onPress;
   isActive = tmp.isActive;
   const items = [isActive, onPress];
@@ -364,7 +364,7 @@ export function HideNonVideoParticipants(channelId) {
     const result = obj.toggleVoiceParticipantsHidden(channelId, !stateFromStores);
   }, items1);
   const TableSwitchRow = channelId(7505).TableSwitchRow;
-  ({ IconComponent: channelId(11223).VideoIcon, source: stateFromStores(12115) });
+  ({ IconComponent: channelId(11223).VideoIcon, source: stateFromStores(12116) });
   const TableRowIcon = channelId(7124).TableRowIcon;
   const intl = channelId(1113).intl;
   const intl2 = channelId(1113).intl;
@@ -395,7 +395,7 @@ export function HideSelfVideo() {
         const tmp2 = closure_0;
         if (!tmp2) {
           const VIDEO = constants.VIDEO;
-          const f134553 = () => f134553(!VIDEO);
+          const f135091 = () => f135091(!VIDEO);
           let obj = actions_AlertActionCreatorsDefault;
           const obj2 = {
             importer() {

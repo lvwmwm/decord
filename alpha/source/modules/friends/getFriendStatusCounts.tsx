@@ -1,10 +1,10 @@
-// Module ID: 19094
-// Function ID: 19095
+// Module ID: 19108
+// Function ID: 19109
 // Name: getFriendStatusCounts
 // Dependencies: [5895, 5083, 1072, 2]
 // Exports: default
 
-// Module 19094 (getFriendStatusCounts)
+// Module 19108 (getFriendStatusCounts)
 import Constants from "Constants" /* 1072 */;
 import PresenceStore from "PresenceStore" /* 5895 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;

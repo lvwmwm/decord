@@ -1,10 +1,10 @@
-// Module ID: 15618
-// Function ID: 15619
+// Module ID: 15619
+// Function ID: 15620
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 21, 8947, 15619, 15620, 15621, 5148, 5851, 2]
+// Dependencies: [19, 21, 8947, 15620, 15621, 15622, 5148, 5851, 2]
 // Exports: SubscriptionPlaceholderPattern, getSubscriptionPlaceholderPatternSource, useSubscriptionPlaceholderPatternSource
 
-// Module 15618 (SubscriptionPlaceholderPattern)
+// Module 15619 (SubscriptionPlaceholderPattern)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5148 */;
 import FastImageDefault from "FastImage" /* 5851 */;

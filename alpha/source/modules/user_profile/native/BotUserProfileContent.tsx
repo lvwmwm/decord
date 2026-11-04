@@ -1,9 +1,9 @@
-// Module ID: 15022
-// Function ID: 15023
+// Module ID: 15023
+// Function ID: 15024
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1385, 7513, 5397, 21, 8955, 8944, 8957, 1627, 8902, 504, 6176, 5195, 7622, 8956, 11599, 8941, 8952, 7494, 5845, 8958, 1652, 15023, 8969, 11584, 5382, 11598, 2123, 11601, 1113, 15048, 15051, 11934, 15052, 5768, 8784, 575, 6879, 7625, 15053, 11680, 7490, 15115, 15118, 2]
+// Dependencies: [19, 17, 1385, 7513, 5397, 21, 8955, 8944, 8957, 1627, 8902, 504, 6176, 5195, 7622, 8956, 11600, 8941, 8952, 7494, 5845, 8958, 1652, 15024, 8969, 11585, 5382, 11599, 2123, 11602, 1113, 15049, 15052, 11935, 15053, 5768, 8784, 575, 6879, 7625, 15054, 11681, 7490, 15116, 15119, 2]
 
-// Module 15022 (BotUserProfileContent)
+// Module 15023 (BotUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
@@ -120,7 +120,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
   const tmp7Result = user(7622);
   const subscribeGuildMembers = tmp7Result.useSubscribeGuildMembers(memo, "BotUserProfileContent");
   const tmp16 = tmp(8956)(displayProfile);
-  const tmp17 = tmp(11599)(user.id);
+  const tmp17 = tmp(11600)(user.id);
   ({ primaryColor, theme, secondaryColor } = tmp(8941)({ user, displayProfile }));
   tmp(8941)({ user, displayProfile });
   const tmp7Result3 = user(8952);
@@ -130,7 +130,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
     if (null != stateFromStores) {
       let obj3 = { user, displayProfile, bannerHeight: tmp5, bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur };
       const items2 = [closure_9(tmp(8958), obj3), , ];
-      let obj4 = { style: items3, children: closure_9(tmp(15023), obj5) };
+      let obj4 = { style: items3, children: closure_9(tmp(15024), obj5) };
       items3 = [tmp3.bannerButtons, bannerAnimatedStyle];
       View = tmp(1652).View;
       obj5 = { user, currentUser: stateFromStores, application, displayProfile, channel };
@@ -163,7 +163,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
               ActionSheetActionCreatorsDefault;
               const obj = { user, guildId: guild_id, channelId: id };
               id = undefined;
-              const tmp2 = asyncRequire(11598, dependencyMap.paths);
+              const tmp2 = asyncRequire(11599, dependencyMap.paths);
               if (channel != null) {
                 id = channel.id;
               }
@@ -173,11 +173,11 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         emojiOnlyStyle: null
       };
       ({ customStatusBubble: obj9.style, emojiOnlyCustomStatusBubble: obj9.emojiOnlyStyle } = tmp3);
-      items6 = [closure_9(tmp(11584), obj12), , ];
+      items6 = [closure_9(tmp(11585), obj12), , ];
       const obj13 = { style: tmp3.primaryInfo, children: items7 };
       const obj14 = { user, guildId: guild_id, displayName: name, pronouns, badges: tmp16, badgeContainerBackground: containerBackground, displayNameAccessibilityHint: intl.string(user(1113).t.y5MwJy), onPressDisplayName: handleCopyUsername, onPressUserTag: handleCopyUsername, onPressPronouns: handlePressPronouns, showBadgeToastOnPress: true };
       pronouns = undefined;
-      const tmpResult6 = tmp(11601);
+      const tmpResult6 = tmp(11602);
       if (displayProfile != null) {
         pronouns = displayProfile.pronouns;
       }
@@ -196,15 +196,15 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
       intl = tmp7(1113).intl;
       items7 = [closure_9(tmpResult6, obj14), , ];
       const obj15 = { user };
-      items7[1] = closure_9(tmp(15048), obj15);
+      items7[1] = closure_9(tmp(15049), obj15);
       const obj16 = { style: tmp3.primaryButtons, maxWidth: tmp4, primaryButton: tmp38Result, secondaryButton: closure_9(Button, obj18) };
       tmp38Result = undefined;
-      const tmpResult7 = tmp(15051);
+      const tmpResult7 = tmp(15052);
       if (null != application) {
-        const tmp7Result4 = user(11934);
+        const tmp7Result4 = user(11935);
         if (tmp7Result4.canInstallApplication(application)) {
           const obj17 = { application, botUserId: user.id, channel: tmp30, guildId: tmp31 };
-          const tmpResult8 = tmp(15052);
+          const tmpResult8 = tmp(15053);
           tmp38Result = tmp38(tmpResult8, obj17);
           tmp30 = channel;
           tmp31 = guild_id;
@@ -246,16 +246,16 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         items8[1] = obj21;
         const obj22 = { style: tmp3.cards, children: items9 };
         const obj23 = { user, currentUser: stateFromStores, guildId: guild_id, style: items8 };
-        items9 = [closure_9(tmp(15053), obj23), , , ];
+        items9 = [closure_9(tmp(15054), obj23), , , ];
         const obj24 = { userId: user.id, displayProfile, channel, style: items8 };
-        items9[1] = closure_9(tmp(11680), obj24);
+        items9[1] = closure_9(tmp(11681), obj24);
         let tmp36Result = null != guild_id;
         if (tmp36Result) {
           const obj25 = { userId: user.id, guildId: guild_id, style: items8 };
           const items10 = [closure_9(tmp(7490), obj25), ];
           const obj26 = { user, currentUser: stateFromStores, guildId: guild_id, channelId: id1, showUserProfile: showUserProfileActionSheet, style: items8 };
           id1 = undefined;
-          const tmpResult10 = tmp(15115);
+          const tmpResult10 = tmp(15116);
           if (channel != null) {
             id1 = channel.id;
           }
@@ -265,7 +265,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         }
         items9[2] = tmp36Result;
         const obj28 = { userId: user.id, onBack: showUserProfileActionSheet };
-        items9[3] = closure_9(tmp(15118), obj28);
+        items9[3] = closure_9(tmp(15119), obj28);
         tmp36Result2 = tmp36(tmp23, obj22);
       }
       const obj29 = { children: items2 };

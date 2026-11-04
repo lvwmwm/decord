@@ -1,12 +1,12 @@
-// Module ID: 12831
-// Function ID: 12832
+// Module ID: 12832
+// Function ID: 12833
 // Name: useConjureTipContext
-// Dependencies: [1385, 11047, 12294, 504, 12832, 12833, 12830, 12834, 11074, 12810, 12836, 2]
+// Dependencies: [1385, 11047, 12295, 504, 12833, 12834, 12831, 12835, 11074, 12811, 12837, 2]
 // Exports: default
 
-// Module 12831 (useConjureTipContext)
-import conjureTipImpressions from "conjureTipImpressions" /* 12830 */;
-import conjureTipDismissals from "conjureTipDismissals" /* 12836 */;
+// Module 12832 (useConjureTipContext)
+import conjureTipImpressions from "conjureTipImpressions" /* 12831 */;
+import conjureTipDismissals from "conjureTipDismissals" /* 12837 */;
 import UserStore from "UserStore" /* 1385 */;
 import ConjureSettingsStore from "ConjureSettingsStore" /* 11047 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 11767
-// Function ID: 11768
+// Module ID: 11768
+// Function ID: 11769
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 4994, 5008, 4990, 5012, 5073, 1072, 7661, 7041, 9089, 8712, 11768, 7561, 5879, 10362, 5788, 8079, 6841, 2]
+// Dependencies: [5, 4994, 5008, 4990, 5012, 5073, 1072, 7661, 7041, 9089, 8712, 11769, 7561, 5879, 10362, 5788, 8079, 6841, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11767 (handleMessagesTapChannel)
+// Module 11768 (handleMessagesTapChannel)
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import GuildRecord from "GuildRecord" /* 5008 */;
 import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7661 */;
@@ -162,7 +162,7 @@ obj = function _handleMessagesTapChannel() {
             conversationId = undefined;
             v3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else {
           if (1 === v3) {

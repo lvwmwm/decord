@@ -1,10 +1,10 @@
-// Module ID: 18305
-// Function ID: 18306
+// Module ID: 18319
+// Function ID: 18320
 // Name: getScreenAnalyticsName
 // Dependencies: [4990, 7953, 4997, 5323, 5322, 2]
 // Exports: default, getChannelScreenName
 
-// Module 18305 (getScreenAnalyticsName)
+// Module 18319 (getScreenAnalyticsName)
 import ChannelConstants from "ChannelConstants" /* 4997 */;
 import RootNavigationRef from "RootNavigationRef" /* 5323 */;
 import AcceptInviteConstants from "AcceptInviteConstants" /* 7953 */;

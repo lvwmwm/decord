@@ -1,10 +1,10 @@
-// Module ID: 15355
-// Function ID: 15356
+// Module ID: 15356
+// Function ID: 15357
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [17, 2167, 7912, 9618, 502, 1385, 7031, 8019, 10295, 1387, 8535, 1113, 14390, 7549, 7544, 3865, 15353, 11750, 2176, 7556, 9680, 15354, 9616, 9683, 11752, 2]
+// Dependencies: [17, 2167, 7912, 9618, 502, 1385, 7031, 8019, 10295, 1387, 8535, 1113, 14391, 7549, 7544, 3865, 15354, 11751, 2176, 7556, 9680, 15355, 9616, 9683, 11753, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed
 
-// Module 15355 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 15356 (createSocialLayerStorefrontProductDetailsEmbed)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -15,11 +15,11 @@ import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7556 */;
 import Constants from "Constants" /* 8019 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8535 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10295 */;
-import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11750 */;
-import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11752 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14390 */;
-import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15353 */;
-import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 15354 */;
+import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11751 */;
+import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11753 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14391 */;
+import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15354 */;
+import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 15355 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import UserProfileStore from "UserProfileStore" /* 7912 */;
 import WishlistStore from "WishlistStore" /* 9618 */;

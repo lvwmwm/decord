@@ -1,9 +1,9 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17501
+// Function ID: 17502
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 5165, 1193, 1192, 17490, 8573, 1072, 21, 1499, 1377, 9961, 1113, 11233, 1259, 3577, 2190, 5729, 17491, 563, 11728, 16823, 2]
+// Dependencies: [19, 5165, 1193, 1192, 17502, 8573, 1072, 21, 1499, 1377, 9961, 1113, 11233, 1259, 3577, 2190, 5729, 17503, 563, 11729, 16835, 2]
 
-// Module 17489 (SettingsAppearanceScreen)
+// Module 17501 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5165 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import FontScaleStore from "FontScaleStore" /* 17490 */;
+import FontScaleStore from "FontScaleStore" /* 17502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,7 +67,7 @@ const memoResult = react.memo(function SettingsAppearanceScreen() {
     if (obj.isAndroid()) {
       if (closure_0.persistedFontScale === closure_0.fontScale) {
         if (closure_0.persistedIsClassicChatFontScaleEnabled === closure_0.isClassicChatFontScaleEnabled) {
-          nativeStackNavigation.setOptions({ headerRight: "r" });
+          nativeStackNavigation.setOptions({ headerRight: "Array" });
         }
       }
       const setOptions = nativeStackNavigation.setOptions;
@@ -150,7 +150,7 @@ const memoResult = react.memo(function SettingsAppearanceScreen() {
     items1[8] = obj12;
     return createList(obj);
   }, []);
-  nativeStackNavigation(16823);
+  nativeStackNavigation(16835);
   return <tmp8 key={"" + theme + "-" + gradientPresetId} node={node} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 17047
-// Function ID: 17048
+// Module ID: 17059
+// Function ID: 17060
 // Name: ChangeSpendingLimitFormState
-// Dependencies: [5, 32, 19, 7855, 16957, 504, 7554, 16959, 2]
+// Dependencies: [5, 32, 19, 7855, 16969, 504, 7554, 16971, 2]
 // Exports: useChangeSpendingLimitFormState
 
-// Module 17047 (ChangeSpendingLimitFormState)
-import SpendingLimitUtils from "SpendingLimitUtils" /* 16959 */;
+// Module 17059 (ChangeSpendingLimitFormState)
+import SpendingLimitUtils from "SpendingLimitUtils" /* 16971 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,21 +1,21 @@
-// Module ID: 18214
-// Function ID: 18215
+// Module ID: 18228
+// Function ID: 18229
 // Name: NotifSettingsActionCreators
-// Dependencies: [5, 15800, 1072, 3, 572, 1233, 15801, 1282, 1089, 2]
+// Dependencies: [5, 15801, 1072, 3, 572, 1233, 15802, 1282, 15804, 1089, 15815, 15800, 2]
 // Exports: schedulePersistPendingEditsIfNeeded, updateNotifSettingRadioValue, updateNotifSettingToggleValue
 
-// Module 18214 (NotifSettingsActionCreators)
+// Module 18228 (NotifSettingsActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import notification_settings from "notification_settings" /* 15801 */;
+import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 15800 */;
+import notification_settings from "notification_settings" /* 15802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15800 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15801 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let c6, c7, constants;
+const require = globalThis.__r;
+let _require, c5, c6, c8, c9, dependencyMap, logger;
 
 let hasOwnProperty;
 let metroRequire;
@@ -28,14 +28,14 @@ function persistPendingEdit() {
   return obj(...arguments);
 }
 let obj = function _persistPendingEdit() {
-  let logger;
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj6;
+    let obj3;
+    let obj7;
     function reload() {
       return closure_1_11(...arguments);
     }
-    if (c7 === 2) {
-      c7 = 3;
+    if (c9 === 2) {
+      c9 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -47,33 +47,34 @@ let obj = function _persistPendingEdit() {
         return { value: "HermesInternal", done: null };
       }
     } else {
-      let c5;
-      let resetAnyPending;
+      let c7;
+      let versions;
       try {
-        let dataVersion;
+        let offlineEditDataVersion;
         let minRescheduleDelayMillis;
-        let body2;
-        let versions;
+        let effectiveAssignment;
+        let status;
+        let resetAnyPending;
         let shouldAbandonEdit;
         let pendingEdit2;
         let pendingEdit;
-        c7 = 2;
-        if (0 === c6) {
+        c9 = 2;
+        if (0 === c8) {
           if (arg0 === 1) {
-            c7 = 3;
+            c9 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c7 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            c9 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
-            let closure_3 = tmp;
-            dataVersion = undefined;
+            offlineEditDataVersion = undefined;
             minRescheduleDelayMillis = undefined;
-            body2 = undefined;
+            effectiveAssignment = undefined;
+            status = undefined;
             resetAnyPending = undefined;
             versions = undefined;
-            constants = undefined;
+            logger = undefined;
             shouldAbandonEdit = undefined;
             pendingEdit2 = undefined;
             pendingEdit = NotifSettingsProtoStore.pendingEdit;
@@ -81,137 +82,178 @@ let obj = function _persistPendingEdit() {
               const _clearTimeout = clearTimeout;
               clearTimeout(pendingEdit.timeout);
               pendingEdit.timeout = undefined;
-              const obj5 = { type: "DECLARATIVE_NOTIFICATION_SETTINGS_EDIT", edit: pendingEdit, isApplying: true };
-              const obj7 = DispatcherDefault;
-              obj7.dispatch(obj5);
+              const obj6 = { type: "DECLARATIVE_NOTIFICATION_SETTINGS_EDIT", edit: pendingEdit, isApplying: true };
+              const obj8 = DispatcherDefault;
+              obj8.dispatch(obj6);
               if (NotifSettingsProtoStore.applyingEdit !== pendingEdit) {
-                logger.log("Failed to take ownership of apply; current is", NotifSettingsProtoStore.applyingEdit);
+                status = logger;
+                logger.log("Unable to take ownership of notification settings apply");
                 skipEdit(pendingEdit);
-                c7 = 3;
+                c9 = 3;
                 return { value: "HermesInternal", done: null };
               } else {
-                const obj14 = user_settings_UserSettingsUtils;
-                const protoToB64Result = obj14.protoToB64(notification_settings.DeclarativeSettings, pendingEdit.partialSettings);
+                const obj13 = require("user_settings/UserSettingsUtils");
+                const protoToB64Result = obj13.protoToB64(require("notification_settings").DeclarativeSettings, pendingEdit.partialSettings);
                 if (null != protoToB64Result) {
                   if ("" !== protoToB64Result) {
                     minRescheduleDelayMillis = 0;
-                    c5 = 1;
-                    const HTTP = HTTPUtils.HTTP;
-                    const request = { url: constants.ACCOUNT_NOTIFICATION_SETTINGS, body: obj6, rejectWithError: true };
-                    obj6 = { declarative_settings_proto: protoToB64Result, required_data_version: pendingEdit.offlineEditDataVersion };
-                    c6 = 2;
+                    effectiveAssignment = NotifSettingsProtoStore.effectiveAssignment;
                     c7 = 1;
-                    const obj8 = { value: HTTP.patch(request), done: false };
-                    return obj8;
+                    const HTTP = require("HTTPUtils").HTTP;
+                    const request = { url: constants.ACCOUNT_NOTIFICATION_SETTINGS, body: obj7, rejectWithError: true };
+                    obj7 = { declarative_settings_proto: protoToB64Result, required_data_version: pendingEdit.offlineEditDataVersion };
+                    c8 = 2;
+                    c9 = 1;
+                    const obj9 = { value: HTTP.patch(request), done: false };
+                    return obj9;
                   }
                 }
+                status = logger;
                 logger.log("Not persisting proto because there is nothing to change");
                 skipEdit(pendingEdit);
-                c7 = 3;
+                c9 = 3;
                 return { value: "HermesInternal", done: null };
               }
             }
           }
         } else {
-          if (1 === c6) {
-            c5 = 0;
-            let body = resetAnyPending;
-            let tmp34;
-            if (body instanceof closure_131_0(closure_131_2[7]).HTTPResponseError) {
-              tmp34 = body;
-            }
-            constants = tmp34;
-            let status;
-            if (constants != null) {
-              status = constants.status;
-            }
-            shouldAbandonEdit = 400 === status;
-            const obj9 = { type: "DECLARATIVE_NOTIFICATION_SETTINGS_EDIT_APPLY_FAILED", edit: pendingEdit, shouldAbandonEdit };
-            const obj4 = closure_131_1(closure_131_2[4]);
-            obj4.dispatch(obj9);
-            let status1;
-            if (constants != null) {
-              status1 = constants.status;
-            }
-            if (429 !== status1) {
-              const tmp65 = shouldAbandonEdit;
-              if (tmp65) {
-                let tmp75;
-                body = body.body;
-                let code;
-                if (body != null) {
-                  code = body.code;
-                }
-                if (code === closure_131_5.INVALID_USER_SETTINGS_BYTES) {
-                  closure_131_7.log("Reloading due to invalid data");
-                  reload();
-                  tmp75 = body;
-                }
-                throw tmp75;
-              }
-              closure_131_7.log("Unknown notif settings error %s", body);
-              tmp75 = body;
+          if (1 === tmp4) {
+            status = versions;
+            c7 = 0;
+            let body = versions;
+            if (closure_133_4.applyingEdit !== pendingEdit) {
+              c9 = 3;
+              return { value: "HermesInternal", done: null };
             } else {
-              closure_131_7.log("Rate limited, scheduling retry");
-              const retryAfter = constants.retryAfter;
-              let c1 = retryAfter;
-              if (retryAfter == null) {
-                c1 = 60;
+              status = closure_133_0;
+              let tmp45;
+              if (body instanceof closure_133_0(closure_133_2[7]).HTTPResponseError) {
+                tmp45 = body;
               }
-              minRescheduleDelayMillis = c1 * closure_131_1(closure_131_2[8]).Millis.SECOND;
+              logger = tmp45;
+              status = undefined;
+              if (logger != null) {
+                status = logger.status;
+              }
+              shouldAbandonEdit = 400 === status;
+              const obj10 = { type: "DECLARATIVE_NOTIFICATION_SETTINGS_EDIT_APPLY_FAILED", edit: pendingEdit, shouldAbandonEdit };
+              const obj5 = closure_133_1(closure_133_2[4]);
+              obj5.dispatch(obj10);
+              status = logger == null;
+              let status1;
+              if (!status) {
+                status1 = logger.status;
+              }
+              if (429 !== status1) {
+                const tmp76 = shouldAbandonEdit;
+                if (tmp76) {
+                  let tmp84;
+                  body = body.body;
+                  status = body == null;
+                  let code;
+                  if (!status) {
+                    code = body.code;
+                  }
+                  if (code === closure_133_5.INVALID_USER_SETTINGS_BYTES) {
+                    closure_133_7.log("Reloading due to invalid data");
+                    status = reload();
+                    tmp84 = body;
+                  }
+                  throw tmp84;
+                }
+                status = closure_133_7;
+                closure_133_7.log("Unable to save notification settings");
+                tmp84 = body;
+              } else {
+                status = closure_133_7;
+                closure_133_7.log("Rate limited, scheduling retry");
+                const retryAfter = logger.retryAfter;
+                let c3 = retryAfter;
+                if (retryAfter == null) {
+                  c3 = 60;
+                }
+                status = c3;
+                minRescheduleDelayMillis = c3 * closure_133_1(closure_133_2[9]).Millis.SECOND;
+              }
             }
           } else if (arg0 === 1) {
-            c7 = 3;
+            c9 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 0;
-            c7 = 3;
-            const obj10 = { value, done: true };
-            return obj10;
+            c7 = 0;
+            c9 = 3;
+            const obj11 = { value, done: true };
+            return obj11;
           } else {
-            body2 = value.body;
-            resetAnyPending = body2.declarative_settings_out_of_date;
-            const tmp108 = resetAnyPending;
-            if (tmp108) {
-              closure_131_7.log("Proto was out of date, discarding changes");
-            }
-            obj = closure_131_0(closure_131_2[5]);
-            versions = obj.b64ToProto(closure_131_0(closure_131_2[6]).DeclarativeSettings, body2.declarative_settings_proto);
-            dataVersion = undefined;
-            if (versions != null) {
-              versions = versions.versions;
+            status = value.body;
+            if (closure_133_4.applyingEdit !== pendingEdit) {
+              c7 = 0;
+              c9 = 3;
+              return { value: "HermesInternal", done: null };
+            } else {
+              resetAnyPending = status.declarative_settings_out_of_date;
+              const tmp114 = resetAnyPending;
+              if (tmp114) {
+                closure_133_7.log("Proto was out of date, discarding changes");
+              }
+              obj = closure_133_0(closure_133_2[5]);
+              versions = obj.b64ToProto(closure_133_0(closure_133_2[6]).DeclarativeSettings, status.declarative_settings_proto);
+              status = undefined;
               if (versions != null) {
-                dataVersion = versions.dataVersion;
+                versions = versions.versions;
+                if (versions != null) {
+                  status = versions.dataVersion;
+                }
+              }
+              offlineEditDataVersion = status;
+              status = closure_133_1(closure_133_2[4]).dispatch;
+              let declarativeSettings = versions;
+              const tmp20 = closure_133_1(closure_133_2[4]);
+              if (versions == null) {
+                declarativeSettings = undefined;
+              }
+              const obj12 = { type: "DECLARATIVE_NOTIFICATION_SETTINGS_UPDATE", declarativeSettings, resetApplyingEdit: pendingEdit, resetAnyPending, effectiveSettings: obj3.parseEffectiveNotifSettings(status.effective_settings), effectiveSettingsAssignment: effectiveAssignment };
+              obj3 = closure_133_0(closure_133_2[8]);
+              status(obj12);
+              let c1 = offlineEditDataVersion;
+              const _Math = Math;
+              if (offlineEditDataVersion == null) {
+                c1 = 0;
+              }
+              status = closure_133_4.dataVersion;
+              const effectiveDataVersion = closure_133_4.effectiveDataVersion;
+              let c2 = effectiveDataVersion;
+              const tmp34 = c1;
+              if (effectiveDataVersion == null) {
+                c2 = 0;
+              }
+              offlineEditDataVersion = max(tmp34, status, c2);
+              c7 = 0;
+            }
+          }
+          pendingEdit2 = closure_133_4.pendingEdit;
+          if (null != pendingEdit2) {
+            if (null != offlineEditDataVersion) {
+              status = offlineEditDataVersion;
+              pendingEdit2.offlineEditDataVersion = offlineEditDataVersion;
+              if (offlineEditDataVersion > closure_133_4.dataVersion) {
+                pendingEdit2.versionSource = "effective";
               }
             }
-            let declarativeSettings = versions;
-            const dispatch = closure_131_1(closure_131_2[4]).dispatch;
-            const tmp20 = closure_131_1(closure_131_2[4]);
-            if (versions == null) {
-              declarativeSettings = undefined;
-            }
-            const obj11 = { type: "DECLARATIVE_NOTIFICATION_SETTINGS_UPDATE", declarativeSettings, resetApplyingEdit: pendingEdit, resetAnyPending };
-            dispatch(obj11);
-            c5 = 0;
-          }
-          pendingEdit2 = closure_131_4.pendingEdit;
-          if (null != pendingEdit2) {
-            if (null != dataVersion) {
-              pendingEdit2.offlineEditDataVersion = dataVersion;
-            }
-            const obj12 = { minRescheduleDelayMillis };
-            closure_131_12(pendingEdit2, obj12);
+            status = closure_133_12;
+            const obj14 = { minRescheduleDelayMillis };
+            closure_133_12(pendingEdit2, obj14);
           }
         }
-        c7 = 3;
+        c9 = 3;
         return { value: "HermesInternal", done: null };
-      } catch (tmp98) {
-        resetAnyPending = tmp98;
-        if (0 === c5) {
-          c7 = 3;
-          throw tmp98;
+      } catch (tmp100) {
+        versions = tmp100;
+        if (0 === c7) {
+          c9 = 3;
+          throw tmp100;
         } else {
-          c6 = 1;
+          c8 = 1;
         }
       }
     }
@@ -254,7 +296,7 @@ obj = function _reload() {
             const obj12 = DispatcherDefault;
             obj12.dispatch(obj4);
             c4 = 1;
-            const HTTP = HTTPUtils.HTTP;
+            const HTTP = require("HTTPUtils").HTTP;
             const obj5 = { url: constants.ACCOUNT_NOTIFICATION_DECLARATIVE_SETTINGS, rejectWithError: true };
             c5 = 2;
             c6 = 1;
@@ -332,12 +374,11 @@ function scheduleEditIfNeeded(timeout, minRescheduleDelayMillis) {
     timeout.timeout = _setTimeout(tmp4, num);
   }
 }
-function updateNotifSettingValue(updatedSettingId, arg1) {
+function updateNotifSettingValue(updatedSettingId, createNew, arg2) {
   let cloneResult;
-  let createNew;
-  let update;
-  ({ createNew, update } = arg1);
-  const orCreatePendingEdit = NotifSettingsProtoStore.getOrCreatePendingEdit();
+  createNew = createNew.createNew;
+  const update = createNew.update;
+  const orCreatePendingEdit = NotifSettingsProtoStore.getOrCreatePendingEdit(arg2);
   const setting = NotifSettingsProtoStore.getSetting(updatedSettingId);
   const tmp = NotifSettingsProtoStore;
   if (null != setting) {
@@ -371,9 +412,9 @@ function updateNotifSettingValue(updatedSettingId, arg1) {
   }
 }
 ({ AbortCodes: hasOwnProperty, Endpoints: metroRequire } = Constants);
-const tmp3 = new LoggerDefault("NotifSettingsActionCreators");
+let tmp3 = new LoggerDefault("NotifSettingsActionCreators");
 let closure_7 = tmp3;
-const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsActionCreators.tsx");
+let result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsActionCreators.tsx");
 
 export function schedulePersistPendingEditsIfNeeded() {
   const pendingEdit = NotifSettingsProtoStore.pendingEdit;
@@ -391,19 +432,47 @@ export function schedulePersistPendingEditsIfNeeded() {
   }
 }
 export function updateNotifSettingToggleValue(CALLS, toggle) {
-  obj = {
+  _require = CALLS;
+  obj = require("DeclarativeNotificationSettingsRedesignExperiment");
+  const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("updateNotifSettingToggleValue");
+  dependencyMap = result;
+  if (dependencyMap) {
+    let tmp2 = NotifSettingsProtoStore;
+  }
+  let closure_3 = null != NotifSettingsProtoStore.getSetting(CALLS);
+  let obj2 = {
     createNew() {
-      const DeclarativeNotifSetting = toggle(dependencyMap[6]).DeclarativeNotifSetting;
-      obj = DeclarativeNotifSetting.create();
-      obj.toggle = true;
-      return obj;
+      const DeclarativeNotifSetting = notification_settings.DeclarativeNotifSetting;
+      const obj2 = DeclarativeNotifSetting.create();
+      obj = settings_NotifSettingsUtils;
+      let flag = obj.getNotifSettingToggleValue(CALLS, dependencyMap);
+      if (flag == null) {
+        flag = false;
+      }
+      obj2.toggle = flag;
+      return obj2;
     },
     update(toggle) {
       toggle.toggle = toggle;
-      return toggle.toggle !== toggle;
+      let tmp2 = dependencyMap;
+      toggle = toggle.toggle;
+      const tmp = toggle;
+      if (dependencyMap) {
+        tmp2 = !closure_3;
+      }
+      if (!tmp2) {
+        tmp2 = toggle !== tmp;
+      }
+      return tmp2;
     }
   };
-  updateNotifSettingValue(CALLS, obj);
+  let effectiveDataVersion;
+  const tmp3 = NotifSettingsProtoStore;
+  const tmp4 = updateNotifSettingValue;
+  if (result) {
+    effectiveDataVersion = tmp3.effectiveDataVersion;
+  }
+  tmp4(CALLS, obj2, effectiveDataVersion);
 }
 export function updateNotifSettingRadioValue(updatedSettingId, arg1) {
   let closure_0 = arg1;

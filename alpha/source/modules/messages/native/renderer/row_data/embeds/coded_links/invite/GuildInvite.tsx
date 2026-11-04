@@ -1,10 +1,10 @@
-// Module ID: 15337
-// Function ID: 15338
+// Module ID: 15338
+// Function ID: 15339
 // Name: GuildInvite
-// Dependencies: [17, 5008, 6849, 4990, 5053, 5012, 5883, 5083, 1385, 10295, 1072, 8019, 8535, 1113, 8522, 575, 5195, 5148, 13454, 13455, 5004, 2190, 8537, 14546, 14545, 10297, 10296, 8020, 15338, 1398, 9104, 1411, 2021, 8744, 9456, 5786, 2]
+// Dependencies: [17, 5008, 6849, 4990, 5053, 5012, 5883, 5083, 1385, 10295, 1072, 8019, 8535, 1113, 8522, 575, 5195, 5148, 13455, 13456, 5004, 2190, 8537, 14547, 14546, 10297, 10296, 8020, 15339, 1398, 9104, 1411, 2021, 8744, 9456, 5786, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 15337 (GuildInvite)
+// Module 15338 (GuildInvite)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
@@ -26,9 +26,9 @@ import GuildInviteFlags from "GuildInviteFlags" /* 9104 */;
 import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9456 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10295 */;
 import GuestUtilsDefault from "GuestUtils" /* 10297 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 14545 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14546 */;
-import getHeaderTextForInvite2 from "getHeaderTextForInvite" /* 15338 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 14546 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14547 */;
+import getHeaderTextForInvite2 from "getHeaderTextForInvite" /* 15339 */;
 import GuildRecord from "GuildRecord" /* 5008 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -113,9 +113,9 @@ export function createExpiredGuildInvite(author, arg1, theme) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp6Result2 = tmp6(5148);
   if (tmp6Result2.isThemeDark(theme)) {
-    tmpResult2 = tmp(13454);
-  } else {
     tmpResult2 = tmp(13455);
+  } else {
+    tmpResult2 = tmp(13456);
   }
   ({ thumbnailBackgroundColor: obj.thumbnailBackgroundColor, subtitleColor: obj.subtitleColor } = colors);
   return obj;
@@ -238,9 +238,9 @@ export function createErroredGuildInvite(code, arg1, theme) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp5Result2 = shared;
   if (tmp5Result2.isThemeDark(theme)) {
-    tmpResult = tmp(13454);
-  } else {
     tmpResult = tmp(13455);
+  } else {
+    tmpResult = tmp(13456);
   }
   ({ thumbnailBackgroundColor: obj.thumbnailBackgroundColor, subtitleColor: obj.subtitleColor } = colors);
   return obj;

@@ -1,10 +1,10 @@
-// Module ID: 14180
-// Function ID: 14181
+// Module ID: 14181
+// Function ID: 14182
 // Name: ApplicationCommandLoadingItem
 // Dependencies: [19, 17, 10403, 21, 5141, 575, 5776, 2]
 // Exports: default
 
-// Module 14180 (ApplicationCommandLoadingItem)
+// Module 14181 (ApplicationCommandLoadingItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useFontScale from "useFontScale" /* 5776 */;

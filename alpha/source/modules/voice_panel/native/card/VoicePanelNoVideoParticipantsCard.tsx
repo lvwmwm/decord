@@ -1,14 +1,14 @@
-// Module ID: 19518
-// Function ID: 19519
+// Module ID: 19532
+// Function ID: 19533
 // Name: VoicePanelNoVideoParticipantsCard
-// Dependencies: [19, 17, 21, 5141, 575, 11409, 5893, 7101, 5761, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 11410, 5893, 7101, 5761, 1113, 2]
 
-// Module 19518 (VoicePanelNoVideoParticipantsCard)
+// Module 19532 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
 import NativeViewDefault from "NativeView" /* 7101 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11409 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11410 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

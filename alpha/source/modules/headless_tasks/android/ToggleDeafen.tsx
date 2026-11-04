@@ -1,12 +1,12 @@
-// Module ID: 20425
-// Function ID: 20426
+// Module ID: 20438
+// Function ID: 20439
 // Name: ToggleDeafen
-// Dependencies: [4990, 20422, 12199, 12166, 2]
+// Dependencies: [4990, 20435, 12200, 12167, 2]
 
-// Module 20425 (ToggleDeafen)
-import VoiceActionUtils from "VoiceActionUtils" /* 12166 */;
-import useDeafStates from "useDeafStates" /* 12199 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20422 */;
+// Module 20438 (ToggleDeafen)
+import VoiceActionUtils from "VoiceActionUtils" /* 12167 */;
+import useDeafStates from "useDeafStates" /* 12200 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20435 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import size from "module_2" /* 2 */;
 

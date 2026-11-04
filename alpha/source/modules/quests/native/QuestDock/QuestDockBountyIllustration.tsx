@@ -1,9 +1,9 @@
-// Module ID: 17418
-// Function ID: 17419
+// Module ID: 17430
+// Function ID: 17431
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5142, 6916, 17307, 21, 5141, 17414, 17304, 9651, 17419, 504, 1377, 5851, 5207, 9841, 2]
+// Dependencies: [19, 17, 5142, 6916, 17319, 21, 5141, 17426, 17316, 9651, 17431, 504, 1377, 5851, 5207, 9841, 2]
 
-// Module 17418 (QuestDockBountyIllustration)
+// Module 17430 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -13,12 +13,12 @@ import FastImageDefault from "FastImage" /* 5851 */;
 import QuestConstants from "QuestConstants" /* 6916 */;
 import APNGPlayer2 from "APNGPlayer" /* 9651 */;
 import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9841 */;
-import QuestDockHooks from "QuestDockHooks" /* 17304 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17414 */;
-import _modDef17419 from "module_17419" /* 17419 */;
+import QuestDockHooks from "QuestDockHooks" /* 17316 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17426 */;
+import _modDef17431 from "module_17431" /* 17431 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import QuestDockConstants from "QuestDockConstants" /* 17307 */;
+import QuestDockConstants from "QuestDockConstants" /* 17319 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -103,7 +103,7 @@ function QuestDock3DOrbsAPNGPlayer(shouldAnimate) {
     }
   }, items);
   const APNGPlayer = APNGPlayer2.APNGPlayer;
-  return <APNGPlayer ref={ref} url={_modDef17419} style={tmp.fill} autoplay={false} />;
+  return <APNGPlayer ref={ref} url={_modDef17431} style={tmp.fill} autoplay={false} />;
 }
 function QuestDock3DOrbsIllustration() {
   let obj5;
@@ -122,7 +122,7 @@ function QuestDock3DOrbsIllustration() {
     tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
   } else {
     const obj4 = { source: obj5, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp7, accessible: false };
-    obj5 = { uri: _modDef17419 };
+    obj5 = { uri: _modDef17431 };
     const tmp5Result = FastImageDefault;
     tmp8Result = tmp8(tmp5Result, obj4);
   }

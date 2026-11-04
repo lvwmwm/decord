@@ -1,10 +1,10 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17058
+// Function ID: 17059
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 5141, 575, 8166, 5761, 1113, 2667, 17047, 5846, 6879, 5845, 7553, 8112, 8113, 6162, 7223, 13427, 6902, 5768, 7139, 11670, 2]
+// Dependencies: [5, 19, 17, 21, 5141, 575, 8166, 5761, 1113, 2667, 17059, 5846, 6879, 5845, 7553, 8112, 8113, 6162, 7223, 13428, 6902, 5768, 7139, 11671, 2]
 // Exports: default
 
-// Module 17046 (ChangeSpendingLimitModal)
+// Module 17058 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import NavigatorHeader from "NavigatorHeader" /* 7139 */;
@@ -216,7 +216,7 @@ function ChangeSpendingLimitScreen(teenId) {
   const obj14 = { children: tmp8(Stack, obj2) };
   items[1] = tmp8(Stack2, obj4);
   const items4 = [tmp9(ModalContent, obj14), ];
-  const ModalFooter = tmp2(13427).ModalFooter;
+  const ModalFooter = tmp2(13428).ModalFooter;
   const ButtonGroup = tmp2(6902).ButtonGroup;
   const Button = tmp2(5768).Button;
   if (isClearingCap) {
@@ -281,7 +281,7 @@ export default function ChangeSpendingLimitModal(teenId) {
     return obj;
   }, items);
   let obj = { initialRouteName: "CHANGE_SPENDING_LIMIT", screens: memo, headerBackTitle: intl.string(teenId(1113).t["13/7kX"]) };
-  const Modal = teenId(11670).Modal;
+  const Modal = teenId(11671).Modal;
   intl = teenId(1113).intl;
   return closure_6(Modal, obj);
 };

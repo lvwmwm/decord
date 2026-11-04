@@ -28,7 +28,7 @@ let c10;
 let c9;
 let metroImportAll;
 let unpackModuleId;
-const f93530 = (rawName) => "poll_question_text" === rawName.rawName;
+const f93661 = (rawName) => "poll_question_text" === rawName.rawName;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   let blockedOrIgnored;
   let channel;
@@ -277,7 +277,7 @@ export function getPollResultsReplyPreview(message) {
   if (first != null) {
     const fields = first.fields;
     if (fields != null) {
-      const found = fields.find(f93530);
+      const found = fields.find(f93661);
       if (found != null) {
         str = found.rawValue;
       }
@@ -304,7 +304,7 @@ export function getPollResultsReplyPreviewMobile(message5) {
     if (first != null) {
       const fields = first.fields;
       if (fields != null) {
-        const found = fields.find(f93530);
+        const found = fields.find(f93661);
         if (found != null) {
           str = found.rawValue;
         }

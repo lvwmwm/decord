@@ -1,10 +1,10 @@
-// Module ID: 19118
-// Function ID: 19119
+// Module ID: 19132
+// Function ID: 19133
 // Name: getPendingRelationshipIds
 // Dependencies: [5083, 1072, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 19118 (getPendingRelationshipIds)
+// Module 19132 (getPendingRelationshipIds)
 import Constants from "Constants" /* 1072 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import size from "module_2" /* 2 */;

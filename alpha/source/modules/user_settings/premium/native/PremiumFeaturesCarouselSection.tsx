@@ -1,10 +1,10 @@
-// Module ID: 15586
-// Function ID: 15587
+// Module ID: 15587
+// Function ID: 15588
 // Name: PremiumFeaturesCarouselSection
-// Dependencies: [32, 19, 17, 1072, 7757, 1387, 21, 575, 5141, 5723, 1092, 5761, 5851, 1113, 15587, 15588, 15589, 15590, 5398, 1624, 10807, 1187, 7462, 9531, 1493, 1252, 2]
+// Dependencies: [32, 19, 17, 1072, 7757, 1387, 21, 575, 5141, 5723, 1092, 5761, 5851, 1113, 15588, 15589, 15590, 15591, 5398, 1624, 10807, 1187, 7462, 9531, 1493, 1252, 2]
 // Exports: default
 
-// Module 15586 (PremiumFeaturesCarouselSection)
+// Module 15587 (PremiumFeaturesCarouselSection)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;

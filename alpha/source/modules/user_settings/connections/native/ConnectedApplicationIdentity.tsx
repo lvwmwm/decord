@@ -1,10 +1,10 @@
-// Module ID: 17081
-// Function ID: 17082
+// Module ID: 17093
+// Function ID: 17094
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 5141, 17082, 1113, 1187, 5761, 11579, 6093, 17089, 6165, 1411, 5770, 11132, 8168, 9432, 7117, 7116, 7505, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 17094, 1113, 1187, 5761, 11580, 6093, 17101, 6165, 1411, 5770, 11132, 8168, 9432, 7117, 7116, 7505, 2]
 // Exports: default
 
-// Module 17081 (ConnectedApplicationIdentity)
+// Module 17093 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5761 */;
 import Icon from "Icon" /* 5770 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
 import AlertDefault from "Alert" /* 6165 */;
-import InfoBoxDefault from "InfoBox" /* 11579 */;
+import InfoBoxDefault from "InfoBox" /* 11580 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

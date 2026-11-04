@@ -1,19 +1,19 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12595
+// Function ID: 12596
 // Name: ActivitiesBanner
-// Dependencies: [32, 19, 21, 12583, 12595, 12606, 1113, 2]
+// Dependencies: [32, 19, 21, 12584, 12596, 12607, 1113, 2]
 // Exports: default
 
-// Module 12594 (ActivitiesBanner)
+// Module 12595 (ActivitiesBanner)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import useActivityApplications from "useActivityApplications" /* 12583 */;
+import useActivityApplications from "useActivityApplications" /* 12584 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp7;
-const BannerBaseDefault = tmp7(12606);
+const BannerBaseDefault = tmp7(12607);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/ActivitiesBanner.tsx");
 

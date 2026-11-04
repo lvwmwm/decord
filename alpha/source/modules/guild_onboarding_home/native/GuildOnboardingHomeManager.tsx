@@ -1,9 +1,9 @@
-// Module ID: 19740
-// Function ID: 19741
+// Module ID: 19754
+// Function ID: 19755
 // Name: GuildOnboardingHomeManager
-// Dependencies: [32, 5, 5046, 502, 4990, 5053, 5012, 5172, 7538, 8480, 5059, 7423, 1398, 6879, 19741, 2123, 7539, 1092, 14050, 7537, 7540, 2]
+// Dependencies: [32, 5, 5046, 502, 4990, 5053, 5012, 5172, 7538, 8480, 5059, 7423, 1398, 6879, 19755, 2123, 7539, 1092, 14051, 7537, 7540, 2]
 
-// Module 19740 (GuildOnboardingHomeManager)
+// Module 19754 (GuildOnboardingHomeManager)
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
@@ -22,7 +22,7 @@ import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" 
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, c5;
+let c2, c3, c4, c5;
 
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;
 class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
@@ -105,7 +105,7 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
             if (0 !== num) {
               const pushLazy = ModalActionCreatorsDefault.pushLazy;
               const obj = { initialPercent: (num - 1) / num, numActions: num };
-              const tmp11 = asyncRequire(19741, tmp2.paths);
+              const tmp11 = asyncRequire(19755, tmp2.paths);
               const obj2 = { animation: ConstantsIOS.ModalAnimation.FADE };
               const NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY = tmp(7539).NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY;
               pushLazy(tmp11, obj, NEW_MEMBER_ACTION_COMPLETE_MODAL_KEY, obj2);
@@ -122,54 +122,98 @@ class GuildOnboardingHomeManager extends AutomaticLifecycleManager {
     _asyncToGenerator(async (arg0, value) => {
       let c0;
       let c1;
-      let closure_1;
       closure_0 = arg0;
-      if (1 === c3) {
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
-          let c4 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 3;
-          const obj4 = { value, done: true };
-          return obj4;
-        } else if (null != c0) {
-          if (null != c1) {
-            c3 = 2;
-            c4 = 1;
-            const obj5 = { value: closure_130_1._getOrLoadOnboardingMemberActions(c0), done: false };
-            return obj5;
-          }
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
-        c4 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c4 = 3;
-        const obj6 = { value, done: true };
-        return obj6;
       } else {
-        let closure_2 = value;
-        const memberActions = closure_2.memberActions;
-        const completedActions = closure_2.completedActions;
-        let found;
-        const arr = memberActions;
-        if (memberActions != null) {
-          found = arr.find((channelId) => channelId.channelId === closure_1_1);
-        }
-        let tmp9;
-        if (completedActions != null) {
-          tmp9 = tmp8[c1];
-        }
-        const tmp12 = true !== tmp9 && null != found && found.actionType === closure_0(closure_2[16]).NewMemberActionTypes.VIEW;
-        if (tmp12) {
-          const obj = closure_0(closure_2[18]);
-          const result = obj.completeNewMemberAction(c0, c1);
+        try {
+          let closure_2;
+          let memberActions;
+          let completedActions;
+          let found;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              let closure_1 = tmp;
+              c0 = undefined;
+              c1 = undefined;
+              ({ guildId: c0, channelId: c1 } = closure_0);
+              closure_2 = undefined;
+              memberActions = undefined;
+              completedActions = undefined;
+              found = undefined;
+              c3 = 1;
+              c4 = 1;
+              return { value: "flexDirection", done: null };
+            }
+          } else {
+            if (1 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                const obj4 = { value, done: true };
+                return obj4;
+              } else if (null != c0) {
+                if (null != c1) {
+                  c3 = 2;
+                  c4 = 1;
+                  const obj5 = { value: closure_130_1._getOrLoadOnboardingMemberActions(c0), done: false };
+                  return obj5;
+                }
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              closure_2 = value;
+              memberActions = closure_2.memberActions;
+              completedActions = closure_2.completedActions;
+              found = undefined;
+              const arr = memberActions;
+              if (memberActions != null) {
+                found = arr.find((channelId) => channelId.channelId === closure_1_1);
+              }
+              let tmp9;
+              if (completedActions != null) {
+                tmp9 = tmp8[c1];
+              }
+              const tmp12 = true !== tmp9 && null != found && found.actionType === closure_0(closure_2[16]).NewMemberActionTypes.VIEW;
+              if (tmp12) {
+                const obj = closure_0(closure_2[18]);
+                const result = obj.completeNewMemberAction(c0, c1);
+              }
+            }
+            c4 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        } catch (tmp37) {
+          c4 = 3;
+          throw tmp37;
         }
       }
-      await "HermesInternal";
-      closure_2 = tmp4;
-      ({ guildId: c0, channelId: c1 } = closure_0);
-      return "flexDirection";
     });
     applyArgumentsResult.handleChannelSelect = function() {
       return closure_0(...arguments);

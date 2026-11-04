@@ -87,7 +87,7 @@ export function useReanimatedEventHandler(current, arg1, handler, changeEventCal
       const value = iter.value;
       let value2 = value.get(handlerTag.handlerTag);
       if (undefined === value2) {
-        const obj = { lastUpdateEvent: "r" };
+        const obj = { lastUpdateEvent: "Array" };
         const value4 = iter.value;
         const result = value4.set(handlerTag.handlerTag, obj);
         value2 = obj;

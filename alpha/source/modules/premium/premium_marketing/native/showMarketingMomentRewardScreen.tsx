@@ -1,10 +1,10 @@
-// Module ID: 15541
-// Function ID: 15542
+// Module ID: 15542
+// Function ID: 15543
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 7860, 7859, 14706, 2]
+// Dependencies: [5, 7860, 7859, 14707, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 15541 (showMarketingMomentRewardScreen)
+// Module 15542 (showMarketingMomentRewardScreen)
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7860 */;

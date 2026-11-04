@@ -1,10 +1,10 @@
-// Module ID: 11856
-// Function ID: 11857
+// Module ID: 11857
+// Function ID: 11858
 // Name: handleMessagesTapGameMention
 // Dependencies: [9466, 9486, 2]
 // Exports: handleMessagesTapGameMention
 
-// Module 11856 (handleMessagesTapGameMention)
+// Module 11857 (handleMessagesTapGameMention)
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9466 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
 import size from "module_2" /* 2 */;

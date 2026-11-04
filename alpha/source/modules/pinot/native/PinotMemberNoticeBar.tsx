@@ -1,17 +1,17 @@
-// Module ID: 11532
-// Function ID: 11533
+// Module ID: 11533
+// Function ID: 11534
 // Name: PinotMemberNoticeBar
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 11522, 5843, 2190, 5761, 1113, 3287, 7121, 7195, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 11523, 5843, 2190, 5761, 1113, 3287, 7121, 7195, 2]
 // Exports: PinotMemberNoticeBar
 
-// Module 11532 (PinotMemberNoticeBar)
+// Module 11533 (PinotMemberNoticeBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import LinkingDefault from "Linking" /* 5843 */;
-import PinotAnalytics from "PinotAnalytics" /* 11522 */;
+import PinotAnalytics from "PinotAnalytics" /* 11523 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

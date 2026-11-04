@@ -1,10 +1,10 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12326
+// Function ID: 12327
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 5047, 1072, 21, 5141, 575, 504, 6980, 5382, 1113, 3995, 7502, 5761, 7457, 9155, 7355, 7201, 7115, 12326, 12314, 7116, 12332, 2]
+// Dependencies: [5, 32, 19, 17, 5047, 1072, 21, 5141, 575, 504, 6980, 5382, 1113, 3995, 7502, 5761, 7457, 9155, 7355, 7201, 7115, 12327, 12315, 7116, 12333, 2]
 // Exports: default
 
-// Module 12325 (useConjureProjectSettingsForm)
+// Module 12326 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -294,7 +294,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   handleRoleSelectionChange = undefined;
   const tmp = closure_12();
   const tmp3 = dependencyMap;
-  const tmp4 = selectedRoleIds(12326)(projectId, arg1);
+  const tmp4 = selectedRoleIds(12327)(projectId, arg1);
   ({ liveReload, isGuildCollaboration, selectedRoleIds } = tmp4);
   ({ supportsVisibility, saving, saveError, experimentalError, handleFlagChange: c2, handleRoleSelectionChange } = tmp4);
   const ensureAppInGuild = tmp4.ensureAppInGuild;

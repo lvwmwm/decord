@@ -1,7 +1,7 @@
 // Module ID: 8889
 // Function ID: 8890
 // Name: ProductDetailsActionSheet
-// Dependencies: [32, 19, 17, 7860, 1074, 1072, 1083, 21, 3, 5141, 575, 5774, 5207, 5148, 1113, 7239, 2116, 8890, 8891, 8888, 7871, 10088, 15242, 15243, 7462, 7487, 15244, 15245, 9609, 6163, 1260, 1252, 504, 15246, 9673, 9676, 7872, 9678, 9679, 15247, 15250, 5400, 9681, 9716, 15251, 15261, 15271, 1187, 15272, 15287, 5396, 9730, 10782, 8946, 5768, 15290, 8886, 2]
+// Dependencies: [32, 19, 17, 7860, 1074, 1072, 1083, 21, 3, 5141, 575, 5774, 5207, 5148, 1113, 7239, 2116, 8890, 8891, 8888, 7871, 10088, 15243, 15244, 7462, 7487, 15245, 15246, 9609, 6163, 1260, 1252, 504, 15247, 9673, 9676, 7872, 9678, 9679, 15248, 15251, 5400, 9681, 9716, 15252, 15262, 15272, 1187, 15273, 15288, 5396, 9730, 10783, 8946, 5768, 15291, 8886, 2]
 // Exports: default
 
 // Module 8889 (ProductDetailsActionSheet)
@@ -116,7 +116,7 @@ function ProductDetailsActionSheetContent(product) {
   let tmp55;
   let tmp57;
   let type;
-  const f93927 = () => {
+  const f94059 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -257,8 +257,8 @@ function ProductDetailsActionSheetContent(product) {
   }, items3);
   const tmp39 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   closure_6 = tmp39;
-  [type, c7] = selectedProduct(obj2.useState(f93927), 2);
-  selectedProduct(obj2.useState(f93927), 2);
+  [type, c7] = selectedProduct(obj2.useState(f94059), 2);
+  selectedProduct(obj2.useState(f94059), 2);
   const tmp41 = c5((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -466,7 +466,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  const obj2 = skuId(10782);
+  const obj2 = skuId(10783);
   const getOrFetchPurchases = obj2.useGetOrFetchPurchases();
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
   const ref = react.useRef(null);
@@ -517,7 +517,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
     tmp11 = closure_14;
   } else {
     tmp11 = closure_14;
-    tmp13 = closure_14(initialVariantIndex(15290), {});
+    tmp13 = closure_14(initialVariantIndex(15291), {});
   }
   tmp8 = tmp11;
   tmp10 = tmp13;

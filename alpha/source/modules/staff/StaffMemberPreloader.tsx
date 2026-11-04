@@ -1,12 +1,12 @@
-// Module ID: 19891
-// Function ID: 19892
+// Module ID: 19905
+// Function ID: 19906
 // Name: StaffMemberPreloader
-// Dependencies: [5012, 1385, 19892, 7037, 2]
+// Dependencies: [5012, 1385, 19906, 7037, 2]
 // Exports: preloadStaffMembers
 
-// Module 19891 (StaffMemberPreloader)
+// Module 19905 (StaffMemberPreloader)
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
-import StaffMemberConstants from "StaffMemberConstants" /* 19892 */;
+import StaffMemberConstants from "StaffMemberConstants" /* 19906 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

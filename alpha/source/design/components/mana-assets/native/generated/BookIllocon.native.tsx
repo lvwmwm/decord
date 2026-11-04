@@ -1,27 +1,27 @@
-// Module ID: 14510
-// Function ID: 14511
+// Module ID: 14511
+// Function ID: 14512
 // Name: BookIllocon
-// Dependencies: [19, 21, 14511, 14512, 14513, 7210, 5851, 2]
+// Dependencies: [19, 21, 14512, 14513, 14514, 7210, 5851, 2]
 // Exports: BookIllocon
 
-// Module 14510 (BookIllocon)
+// Module 14511 (BookIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5851 */;
 import react_native from "react-native" /* 7210 */;
-import _modDef14511 from "module_14511" /* 14511 */;
 import _modDef14512 from "module_14512" /* 14512 */;
 import _modDef14513 from "module_14513" /* 14513 */;
+import _modDef14514 from "module_14514" /* 14514 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14511 };
+let obj2 = { uri: _modDef14512 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef14512 };
-({ uri: _modDef14512 });
-obj[3] = { uri: _modDef14513 };
+obj[2] = { uri: _modDef14513 };
 ({ uri: _modDef14513 });
+obj[3] = { uri: _modDef14514 };
+({ uri: _modDef14514 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BookIllocon.native.tsx");
 

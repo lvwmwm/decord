@@ -1,10 +1,10 @@
-// Module ID: 18241
-// Function ID: 18242
+// Module ID: 18255
+// Function ID: 18256
 // Name: register
-// Dependencies: [5, 18242, 502, 1072, 1097, 2171, 1252, 6882, 1260, 6582, 6673, 572, 18243, 18244, 18245, 2]
+// Dependencies: [5, 18256, 502, 1072, 1097, 2171, 1252, 6882, 1260, 6582, 6673, 572, 18257, 18258, 18259, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 18241 (register)
+// Module 18255 (register)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
@@ -12,10 +12,10 @@ import _modDef2171 from "module_2171" /* 2171 */;
 import APIErrorDefault from "APIError" /* 6582 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6673 */;
 import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6882 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18243 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 18245 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 18257 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 18259 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 18242 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 18256 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1072 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
@@ -142,7 +142,7 @@ obj = function _registerPhone() {
               phone = phone.phone;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(18244)(birthday);
+    tmp9 = tmp4(18258)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

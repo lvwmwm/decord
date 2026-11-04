@@ -1,10 +1,10 @@
 // Module ID: 13124
 // Function ID: 13125
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055]
 
 // Module 13124 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import tokenize from "tokenize" /* 13055 */;
 
 let items;
 let obj2;
@@ -13,14 +13,13 @@ const Function = tokenize.TYPE.Function;
 const Colon = tokenize.TYPE.Colon;
 const RightParenthesis = tokenize.TYPE.RightParenthesis;
 let obj = {
-  name: "PseudoElementSelector",
+  name: "PseudoClassSelector",
   structure: obj2,
   parse() {
     let consumeResult;
-    let tmp5;
+    let tmp4;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(Colon);
     this.eat(Colon);
     if (this.scanner.tokenType === Function) {
       let list;
@@ -40,18 +39,18 @@ let obj = {
         list.push(self.Raw(self.scanner.tokenIndex, null, false));
       }
       self.eat(RightParenthesis);
-      tmp5 = list;
+      tmp4 = list;
       consumeResult = str;
     } else {
       consumeResult = self.consume(Ident);
-      tmp5 = null;
+      tmp4 = null;
     }
-    const element = { type: "PseudoElementSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp5 };
+    const element = { type: "PseudoClassSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp4 };
     return element;
   },
   generate(name) {
     const self = this;
-    this.chunk("::");
+    this.chunk(":");
     this.chunk(name.name);
     if (null !== name.children) {
       self.chunk("(");

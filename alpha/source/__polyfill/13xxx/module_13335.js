@@ -1,39 +1,35 @@
 // Module ID: 13335
 // Function ID: 13336
-// Dependencies: [13301, 13273, 13300]
-// Exports: initAndBind, setCurrentClient
+// Dependencies: [13321, 13280, 13318]
+// Exports: createCheckInEnvelope
 
 // Module 13335
-import _mod13273 from "module_13273" /* 13273 */;
-import _mod13300 from "module_13300" /* 13300 */;
-import _mod13301 from "module_13301" /* 13301 */;
+import _mod13280 from "module_13280" /* 13280 */;
+import _mod13318 from "module_13318" /* 13318 */;
+import _mod13321 from "module_13321" /* 13321 */;
 
 
-export function initAndBind(arg0, debug) {
-  if (true === debug.debug) {
-    const DEBUG_BUILD = _mod13301.DEBUG_BUILD;
-    const obj = _mod13273;
-    if (DEBUG_BUILD) {
-      const logger = obj.logger;
-      logger.enable();
-    } else {
-      obj.consoleSandbox(() => {
-        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
-      });
-    }
+export function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
+  let date;
+  const obj = { sent_at: date.toISOString() };
+  date = new Date();
+  const tmp = sdk && sdk.sdk;
+  if (tmp) {
+    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
+    obj.sdk = obj2;
   }
-  const obj2 = _mod13300;
-  const currentScope = obj2.getCurrentScope();
-  currentScope.update(debug.initialScope);
-  const obj4 = new arg0(debug);
-  const obj5 = _mod13300;
-  const currentScope1 = obj5.getCurrentScope();
-  currentScope1.setClient(obj4);
-  obj4.init();
-  return obj4;
-}
-export function setCurrentClient(arg0) {
-  const obj = _mod13300;
-  const currentScope = obj.getCurrentScope();
-  currentScope.setClient(arg0);
+  const tmp2 = arg3 && arg4;
+  if (tmp2) {
+    const obj4 = _mod13321;
+    obj.dsn = obj4.dsnToString(arg4);
+  }
+  const tmp5 = arg1;
+  if (tmp5) {
+    const obj5 = _mod13280;
+    obj.trace = obj5.dropUndefinedKeys(arg1);
+  }
+  const items = [{ type: "check_in" }, arg0];
+  const items1 = [items];
+  const obj6 = _mod13318;
+  return obj6.createEnvelope(obj, items1);
 }

@@ -1,10 +1,10 @@
-// Module ID: 13892
-// Function ID: 13893
+// Module ID: 13893
+// Function ID: 13894
 // Name: EmojiCube
 // Dependencies: [32, 17, 5142, 6201, 21, 5141, 1357, 575, 504, 1493, 1411, 7436, 2]
 // Exports: default
 
-// Module 13892 (EmojiCube)
+// Module 13893 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

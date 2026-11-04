@@ -1,14 +1,14 @@
-// Module ID: 18657
-// Function ID: 18658
+// Module ID: 18671
+// Function ID: 18672
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 5141, 575, 18321, 1652, 5732, 7101, 2]
+// Dependencies: [19, 21, 5141, 575, 18335, 1652, 5732, 7101, 2]
 
-// Module 18657 (GuildsBarSeparator)
+// Module 18671 (GuildsBarSeparator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import useToken from "useToken" /* 5732 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18321 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18335 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;

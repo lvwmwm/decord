@@ -1,10 +1,10 @@
-// Module ID: 16721
-// Function ID: 16722
+// Module ID: 16733
+// Function ID: 16734
 // Name: HexagonCampaignDaysLeftBadge
 // Dependencies: [19, 17, 1385, 5166, 21, 1089, 5141, 575, 504, 5168, 7764, 5207, 5148, 5761, 5874, 1113, 4412, 2]
 // Exports: default, useHexagonCampaignDaysLeft
 
-// Module 16721 (HexagonCampaignDaysLeftBadge)
+// Module 16733 (HexagonCampaignDaysLeftBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -29,7 +29,7 @@ let obj4;
 let obj5;
 let tmp2;
 const Text_Text = tmp2(5761);
-const f110694 = () => {
+const f111136 = () => {
   currentUser = currentUser.getCurrentUser();
   let premiumType;
   if (currentUser != null) {
@@ -107,7 +107,7 @@ export default function HexagonCampaignDaysLeftBadge(perk) {
   const variant = perk.variant;
   let obj = perk(504);
   let items = [UserStore];
-  const stateFromStores = obj.useStateFromStores(items, f110694);
+  const stateFromStores = obj.useStateFromStores(items, f111136);
   const items1 = [perk, stateFromStores];
   const memo = react.useMemo(() => {
     let hexagonCampaignPerkCutoffMs;
@@ -152,7 +152,7 @@ export function useHexagonCampaignDaysLeft(arg0) {
   _require = arg0;
   const items = [UserStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f110694);
+  const stateFromStores = obj.useStateFromStores(items, f111136);
   const items1 = [arg0, stateFromStores];
   const memo = react.useMemo(() => {
     let hexagonCampaignPerkCutoffMs;

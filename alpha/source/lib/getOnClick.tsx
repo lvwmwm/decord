@@ -1,7 +1,7 @@
 // Module ID: 9090
 // Function ID: 9091
 // Name: getOnClick
-// Dependencies: [32, 5, 2167, 6990, 7546, 502, 5053, 5012, 5883, 6196, 5044, 5172, 6907, 1072, 1074, 7547, 572, 5884, 9091, 9112, 2123, 7037, 7561, 9107, 5882, 5886, 7974, 5839, 1252, 13925, 11883, 14964, 11887, 7975, 14968, 11751, 10847, 9823, 1378, 9828, 6921, 14969, 7859, 5894, 5788, 8852, 11809, 2]
+// Dependencies: [32, 5, 2167, 6990, 7546, 502, 5053, 5012, 5883, 6196, 5044, 5172, 6907, 1072, 1074, 7547, 572, 5884, 9091, 9112, 2123, 7037, 7561, 9107, 5882, 5886, 7974, 5839, 1252, 13926, 11884, 14965, 11888, 7975, 14969, 11752, 10847, 9823, 1378, 9828, 6921, 14970, 7859, 5894, 5788, 8852, 11810, 2]
 // Exports: default
 
 // Module 9090 (getOnClick)
@@ -18,9 +18,9 @@ import _slicedToArray2 from "_slicedToArray" /* 7974 */;
 import activityBookmarkUtils from "activityBookmarkUtils" /* 7975 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 9091 */;
 import QuestUtils from "QuestUtils" /* 9828 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11751 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11809 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 11887 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11752 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 11810 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 11888 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
@@ -86,7 +86,7 @@ let obj = function _openInviteModal() {
             } else {
               c3 = 1;
               c2 = 1;
-              const obj5 = { type: "DISPLAYED_INVITE_SHOW", code, username: "Array", deeplinkAttemptId: "ao", invite_instance_id };
+              const obj5 = { type: "DISPLAYED_INVITE_SHOW", code, username: "Array", deeplinkAttemptId: "ti", invite_instance_id };
               const obj6 = { value: obj2.dispatch(obj5), done: false };
               obj2 = DispatcherDefault;
               return obj6;
@@ -322,7 +322,7 @@ export default function getOnClick(assetURL) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "PX_8", skuId: "__closure" };
+            result = { applicationId: "Object", skuId: "Array" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -414,7 +414,7 @@ export default function getOnClick(assetURL) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(14968, dependencyMap.paths);
+        const promise = asyncRequire(14969, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });

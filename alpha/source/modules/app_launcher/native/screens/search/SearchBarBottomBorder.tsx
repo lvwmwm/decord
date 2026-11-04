@@ -1,10 +1,10 @@
-// Module ID: 12643
-// Function ID: 12644
+// Module ID: 12644
+// Function ID: 12645
 // Name: SearchBarBottomBorder
 // Dependencies: [19, 21, 5141, 575, 1652, 5771, 5772, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 12643 (SearchBarBottomBorder)
+// Module 12644 (SearchBarBottomBorder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;

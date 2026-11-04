@@ -1,16 +1,16 @@
-// Module ID: 19338
-// Function ID: 19339
+// Module ID: 19352
+// Function ID: 19353
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 5141, 9966, 18645, 575, 19337, 5732, 19339, 1652, 5771, 2]
+// Dependencies: [19, 17, 21, 5141, 9966, 18659, 575, 19351, 5732, 19353, 1652, 5771, 2]
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 19338 (SimpleGuildContainer)
+// Module 19352 (SimpleGuildContainer)
 import _mod1652 from "module_1652" /* 1652 */;
 import spring_spring from "spring/spring" /* 5771 */;
 import MaskedBadgeDefault from "MaskedBadge" /* 9966 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18645 */;
-import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 19337 */;
-import CutoutImageDefault from "CutoutImage" /* 19339 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 18659 */;
+import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 19351 */;
+import CutoutImageDefault from "CutoutImage" /* 19353 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

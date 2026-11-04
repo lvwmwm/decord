@@ -1,10 +1,10 @@
-// Module ID: 13995
-// Function ID: 13996
+// Module ID: 13996
+// Function ID: 13997
 // Name: ForumPostNewTag
 // Dependencies: [19, 21, 5141, 575, 1187, 2]
 // Exports: default
 
-// Module 13995 (ForumPostNewTag)
+// Module 13996 (ForumPostNewTag)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

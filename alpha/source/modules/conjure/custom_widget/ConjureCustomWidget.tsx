@@ -1,10 +1,10 @@
-// Module ID: 15157
-// Function ID: 15158
+// Module ID: 15158
+// Function ID: 15159
 // Name: ConjureCustomWidget
 // Dependencies: [5012, 504, 1449, 7559, 2]
 // Exports: composeConjureCustomWidgetPrompt, useCanConjureCustomWidget
 
-// Module 15157 (ConjureCustomWidget)
+// Module 15158 (ConjureCustomWidget)
 import ConjureUtils from "ConjureUtils" /* 7559 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import size from "module_2" /* 2 */;

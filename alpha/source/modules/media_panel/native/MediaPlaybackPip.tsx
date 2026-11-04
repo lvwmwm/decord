@@ -1,16 +1,16 @@
-// Module ID: 19615
-// Function ID: 19616
+// Module ID: 19629
+// Function ID: 19630
 // Name: MediaPlaybackPip
-// Dependencies: [32, 19, 17, 4990, 6196, 5083, 1385, 1072, 19377, 21, 5141, 575, 5732, 504, 5786, 8981, 5761, 19616, 5723, 7776, 7561, 1652, 5378, 1113, 9137, 7143, 10946, 1252, 16632, 5058, 19613, 8991, 8989, 19617, 2]
+// Dependencies: [32, 19, 17, 4990, 6196, 5083, 1385, 1072, 19391, 21, 5141, 575, 5732, 504, 5786, 8981, 5761, 19630, 5723, 7776, 7561, 1652, 5378, 1113, 9137, 7143, 10946, 1252, 16644, 5058, 19627, 8991, 8989, 19631, 2]
 // Exports: default
 
-// Module 19615 (MediaPlaybackPip)
+// Module 19629 (MediaPlaybackPip)
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import useChannelName from "useChannelName" /* 5786 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 16632 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19377 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 16644 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19391 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -124,7 +124,7 @@ function MediaInfo(message) {
         if (memo) {
           const obj6 = { style: { flex: 1 }, children: items3 };
           const obj7 = { spacing: 20, speed: 0.2, children: tmp14 };
-          items3 = [closure_15(message(19616).Marquee, obj7), ];
+          items3 = [closure_15(message(19630).Marquee, obj7), ];
           const obj8 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.1, 0.2, 0.8, 0.9, 1], colors: items4, style: tmp.infoContainerGradient };
           items4 = [token, `${tmp5}CC`, `${tmp5}00`, `${tmp5}00`, `${tmp5}CC`, token];
           items3[1] = closure_15(first(5723), obj8);

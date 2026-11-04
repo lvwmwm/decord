@@ -1,10 +1,10 @@
-// Module ID: 11969
-// Function ID: 11970
+// Module ID: 11970
+// Function ID: 11971
 // Name: DCDVideoRenderer
-// Dependencies: [5739, 11970, 2]
+// Dependencies: [5739, 11971, 2]
 
-// Module 11969 (DCDVideoRenderer)
-import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 11970 */;
+// Module 11970 (DCDVideoRenderer)
+import VideoRendererNativeComponentDefault from "VideoRendererNativeComponent" /* 11971 */;
 import requireNativeComponentOrDefault from "requireNativeComponentOrDefault" /* 5739 */;
 import size from "module_2" /* 2 */;
 

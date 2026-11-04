@@ -1,10 +1,10 @@
-// Module ID: 17803
-// Function ID: 17804
+// Module ID: 17815
+// Function ID: 17816
 // Name: UserSettingsStartupTimings
-// Dependencies: [5, 32, 19, 17, 1359, 1072, 21, 5141, 575, 5761, 5329, 1627, 11282, 504, 9, 7794, 9076, 7430, 6162, 7201, 7115, 1360, 7116, 14978, 2]
+// Dependencies: [5, 32, 19, 17, 1359, 1072, 21, 5141, 575, 5761, 5329, 1627, 11282, 504, 9, 7794, 9076, 7430, 6162, 7201, 7115, 1360, 7116, 14979, 2]
 // Exports: default
 
-// Module 17803 (UserSettingsStartupTimings)
+// Module 17815 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import TableCheckboxRow from "TableCheckboxRow" /* 7115 */;
 import TableRow4 from "TableRow" /* 7116 */;
 import TableRowGroup6 from "TableRowGroup" /* 7201 */;
 import serializeAppStartLogsDefault from "serializeAppStartLogs" /* 11282 */;
-import ShareIcon from "ShareIcon" /* 14978 */;
+import ShareIcon from "ShareIcon" /* 14979 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

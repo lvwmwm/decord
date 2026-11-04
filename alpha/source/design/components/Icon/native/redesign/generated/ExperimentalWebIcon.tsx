@@ -1,14 +1,14 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11521
+// Function ID: 11522
 // Name: ExperimentalWebIcon
-// Dependencies: [19, 21, 575, 5850, 11521, 2]
+// Dependencies: [19, 21, 575, 5850, 11522, 2]
 // Exports: ExperimentalWebIcon
 
-// Module 11520 (ExperimentalWebIcon)
+// Module 11521 (ExperimentalWebIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 11521 */;
+import AssetRegistry from "AssetRegistry" /* 11522 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

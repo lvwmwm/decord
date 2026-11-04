@@ -1,10 +1,10 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 15905
+// Function ID: 15906
 // Name: trackVideoToggle
 // Dependencies: [1072, 6086, 1252, 2]
 // Exports: default, setVideoToggleAnalyticsParams
 
-// Module 15892 (trackVideoToggle)
+// Module 15905 (trackVideoToggle)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import VideoHealthManager from "VideoHealthManager" /* 6086 */;

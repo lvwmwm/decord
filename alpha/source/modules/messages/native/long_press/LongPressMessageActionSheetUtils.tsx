@@ -1,7 +1,7 @@
 // Module ID: 10377
 // Function ID: 10378
 // Name: LongPressMessageActionSheetUtils
-// Dependencies: [19, 7962, 5084, 7963, 8533, 1385, 10378, 1072, 4997, 7606, 21, 5195, 11, 10379, 10380, 7487, 1252, 7776, 6093, 1113, 14741, 14744, 14745, 5150, 8525, 14747, 8342, 5322, 1099, 6200, 7494, 5845, 6181, 7625, 11172, 6186, 1378, 10010, 8980, 9085, 9088, 7603, 5382, 13526, 2123, 7600, 8492, 2801, 7597, 5890, 8891, 14748, 5894, 10075, 11865, 1108, 13599, 2121, 11346, 11356, 11353, 12759, 14749, 2]
+// Dependencies: [19, 7962, 5084, 7963, 8533, 1385, 10378, 1072, 4997, 7606, 21, 5195, 11, 10379, 10380, 7487, 1252, 7776, 6093, 1113, 14742, 14745, 14746, 5150, 8525, 14748, 8342, 5322, 1099, 6200, 7494, 5845, 6181, 7625, 11172, 6186, 1378, 10010, 8980, 9085, 9088, 7603, 5382, 13527, 2123, 7600, 8492, 2801, 7597, 5890, 8891, 14749, 5894, 10075, 11866, 1108, 13600, 2121, 11346, 11356, 11353, 12760, 14750, 2]
 // Exports: getContextBarCancelReason, handleCopyId, handleCopyMessageLink, handleCreateThread, longPressMessageOptionHandler
 
 // Module 10377 (LongPressMessageActionSheetUtils)
@@ -330,7 +330,7 @@ export function longPressMessageOptionHandler(analyticsLocations) {
                         if ("attachment" === sourceType) {
                           let obj3 = { message, attachment: selectedMedia.source };
                           const tmp144Result30 = id(5382);
-                          tmp144Result30.openLazy(tmp(2123)(14748, dependencyMap.paths), "EditAttachmentActionSheet", obj3);
+                          tmp144Result30.openLazy(tmp(2123)(14749, dependencyMap.paths), "EditAttachmentActionSheet", obj3);
                         }
                       } else {
                         const intl35 = tmp(1113).intl;
@@ -474,7 +474,7 @@ export function longPressMessageOptionHandler(analyticsLocations) {
                                       if (uploaderFileForMessageId != null) {
                                         items = uploaderFileForMessageId.items;
                                       }
-                                      const tmp144Result41 = id(14747);
+                                      const tmp144Result41 = id(14748);
                                       tmp144Result41(channel, message, items, SendMessageOptionsStore.getOptions(message.id));
                                       const obj17 = { channel_id: id, guild_id, action_sheet_option: "retry", message_state: message.state };
                                       const tmp144Result42 = id(5894);
@@ -665,7 +665,7 @@ export function longPressMessageOptionHandler(analyticsLocations) {
                                                               const intl54 = tmp(1113).intl;
                                                               if (intl54.string(tmp(1113).t["5IEsGx"]) === label) {
                                                                 const obj23 = { message, channel, chatInputRef, actionSource: "action_sheet" };
-                                                                id(11865)(obj23);
+                                                                id(11866)(obj23);
                                                                 if ("Preview" === actionSheetSource) {
                                                                   const tmpResult53 = tmp(5890);
                                                                   tmpResult53.transitionToMessage(channel.id, message.id);
@@ -680,7 +680,7 @@ export function longPressMessageOptionHandler(analyticsLocations) {
                                                                 const intl55 = tmp(1113).intl;
                                                                 if (intl55.string(tmp(1113).t.I3ltXO) === label) {
                                                                   const obj24 = { message, source: "long-press-sheet" };
-                                                                  const tmpResult54 = tmp(13599);
+                                                                  const tmpResult54 = tmp(13600);
                                                                   tmpResult54.openForwardModal(obj24);
                                                                 } else {
                                                                   const intl56 = tmp(1113).intl;
@@ -795,7 +795,7 @@ export function longPressMessageOptionHandler(analyticsLocations) {
                                                                                       const obj30 = { channelId: null, messageId: null, attachmentId: id5, embedId: id4 };
                                                                                       ({ channel_id: obj10.channelId, id: obj10.messageId } = message);
                                                                                       const tmp144Result53 = id(5382);
-                                                                                      tmp144Result53.openLazy(tmp(2123)(13526, dependencyMap.paths), closure_20, obj30);
+                                                                                      tmp144Result53.openLazy(tmp(2123)(13527, dependencyMap.paths), closure_20, obj30);
                                                                                     }
                                                                                   }
                                                                                 } else {
@@ -803,14 +803,14 @@ export function longPressMessageOptionHandler(analyticsLocations) {
                                                                                   if (intl64.string(tmp(1113).t.grdwwt) === label) {
                                                                                     const obj32 = { channelId: null, messageId: null };
                                                                                     ({ channel_id: obj7.channelId, id: obj7.messageId } = message);
-                                                                                    const tmp144Result54 = id(12759);
+                                                                                    const tmp144Result54 = id(12760);
                                                                                     tmp144Result54.endPollEarly(obj32);
                                                                                   } else {
                                                                                     const intl65 = tmp(1113).intl;
                                                                                     if (intl65.string(tmp(1113).t.Rjezbz) === label) {
                                                                                       const obj33 = { message, guildId: guild_id, onBack };
                                                                                       const tmp144Result55 = id(5382);
-                                                                                      tmp144Result55.openLazy(tmp(2123)(14749, dependencyMap.paths), "AppInteractionInfoActionSheet", obj33);
+                                                                                      tmp144Result55.openLazy(tmp(2123)(14750, dependencyMap.paths), "AppInteractionInfoActionSheet", obj33);
                                                                                     } else {
                                                                                       const intl66 = tmp(1113).intl;
                                                                                       if (intl66.string(tmp(1113).t["4sxKOb"]) !== label) {

@@ -1,25 +1,25 @@
-// Module ID: 18223
-// Function ID: 18224
+// Module ID: 18237
+// Function ID: 18238
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 18224, 1072, 21, 5141, 1377, 5098, 16104, 18225, 18226, 18293, 19082, 19089, 19121, 19147, 10034, 19213, 19214, 19217, 19221, 19223, 19252, 19258, 19259, 5331, 1497, 1625, 19260, 5894, 9961, 19264, 19323, 563, 11899, 5325, 7306, 11755, 19129, 19326, 19357, 12059, 19359, 10322, 2]
+// Dependencies: [32, 19, 17, 502, 18238, 1072, 21, 5141, 1377, 5098, 16117, 18239, 18240, 18307, 19096, 19103, 19135, 19161, 10034, 19227, 19228, 19231, 19235, 19237, 19266, 19272, 19273, 5331, 1497, 1625, 19274, 5894, 9961, 19278, 19337, 563, 11900, 5325, 7306, 11756, 19143, 19340, 19371, 12060, 19373, 10322, 2]
 // Exports: getChannelScreen
 
-// Module 18223 (MainNavigator)
+// Module 18237 (MainNavigator)
 import react_native from "react-native" /* 17 */;
 import KeyboardUIStore from "KeyboardUIStore" /* 1497 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import DeviceUtils from "DeviceUtils" /* 5098 */;
 import ChatInputUtils from "ChatInputUtils" /* 5331 */;
-import StartupProfiler from "StartupProfiler" /* 11755 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 12059 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 16104 */;
-import NavigationConstants from "NavigationConstants" /* 18224 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 18225 */;
-import AutoAnalytics from "AutoAnalytics" /* 19082 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19129 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 19326 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19357 */;
-import AppComponents from "AppComponents" /* 19359 */;
+import StartupProfiler from "StartupProfiler" /* 11756 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 12060 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 16117 */;
+import NavigationConstants from "NavigationConstants" /* 18238 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 18239 */;
+import AutoAnalytics from "AutoAnalytics" /* 19096 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 19143 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 19340 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19371 */;
+import AppComponents from "AppComponents" /* 19373 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

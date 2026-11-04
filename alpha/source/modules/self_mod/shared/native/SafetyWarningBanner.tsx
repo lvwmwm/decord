@@ -1,11 +1,11 @@
-// Module ID: 11458
-// Function ID: 11459
+// Module ID: 11459
+// Function ID: 11460
 // Name: SafetyWarningBanner
-// Dependencies: [19, 17, 21, 5141, 575, 6675, 6680, 11456, 1113, 1187, 11459, 5851, 11460, 5761, 5768, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 6675, 6680, 11457, 1113, 1187, 11460, 5851, 11461, 5761, 5768, 2]
 
-// Module 11458 (SafetyWarningBanner)
+// Module 11459 (SafetyWarningBanner)
 import nativeDefault from "native" /* 575 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11456 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11457 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

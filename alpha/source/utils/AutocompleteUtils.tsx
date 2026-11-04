@@ -73,8 +73,8 @@ let closure_42;
 let hasOwnProperty;
 let map1;
 let metroRequire;
-const f90026 = (author) => author.author.id;
-const f90027 = (author) => user.getUser(author.author.id);
+const f90157 = (author) => author.author.id;
+const f90158 = (author) => user.getUser(author.author.id);
 function NOOP() {
   return true;
 }
@@ -740,8 +740,8 @@ let obj = {
                   const messages = MessageStore.getMessages(id);
                   const tmp16Result = tmp16(messages.toArray());
                   const reversed = tmp16Result.reverse();
-                  const uniqByResult = reversed.uniqBy(f90026);
-                  const mapped1 = uniqByResult.map(f90027);
+                  const uniqByResult = reversed.uniqBy(f90157);
+                  const mapped1 = uniqByResult.map(f90158);
                   const found = mapped1.filter((isNonUserBot) => {
                     if (null == isNonUserBot) {
                       return false;
@@ -852,8 +852,8 @@ let obj = {
               const messages = MessageStore.getMessages(channelId);
               const tmp14Result = tmp14(messages.toArray());
               const reversed = tmp14Result.reverse();
-              const uniqByResult = reversed.uniqBy(f90026);
-              const mapped = uniqByResult.map(f90027);
+              const uniqByResult = reversed.uniqBy(f90157);
+              const mapped = uniqByResult.map(f90158);
               const found = mapped.filter((isNonUserBot) => {
                 if (null == isNonUserBot) {
                   return false;
@@ -1591,8 +1591,8 @@ let obj = {
         const messages = MessageStore.getMessages(channelId1);
         const tmp6Result = tmp6(messages.toArray());
         const reversed = tmp6Result.reverse();
-        const uniqByResult = reversed.uniqBy(f90026);
-        const mapped = uniqByResult.map(f90027);
+        const uniqByResult = reversed.uniqBy(f90157);
+        const mapped = uniqByResult.map(f90158);
         const found = mapped.filter((isNonUserBot) => {
           if (null == isNonUserBot) {
             return false;

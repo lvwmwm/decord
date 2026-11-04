@@ -1,10 +1,10 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 14933
+// Function ID: 14934
 // Name: MobileShopButtonCoachmark
 // Dependencies: [19, 4987, 21, 5141, 575, 5851, 1113, 10133, 2]
 // Exports: default
 
-// Module 14932 (MobileShopButtonCoachmark)
+// Module 14933 (MobileShopButtonCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

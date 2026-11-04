@@ -1,9 +1,9 @@
-// Module ID: 15950
-// Function ID: 15951
+// Module ID: 15963
+// Function ID: 15964
 // Name: RoleSubscriptionsOnboardingGuildPickerFeatureSpec
 // Dependencies: [5362, 5008, 1113, 504, 7574, 7575, 5065, 2]
 
-// Module 15950 (RoleSubscriptionsOnboardingGuildPickerFeatureSpec)
+// Module 15963 (RoleSubscriptionsOnboardingGuildPickerFeatureSpec)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import GuildRecord from "GuildRecord" /* 5008 */;

@@ -1,27 +1,21 @@
 // Module ID: 16388
 // Function ID: 16389
-// Dependencies: [16386, 16360]
+// Dependencies: [16389]
 
 // Module 16388
-import _mod16360 from "module_16360" /* 16360 */;
-import _mod16386 from "module_16386" /* 16386 */;
+import _mod16389 from "module_16389" /* 16389 */;
 
 
-export default function(arg0, arg1) {
-  let tmp3;
-  if (arguments.length < 2) {
-    const tmp7 = _mod16360[arg0];
-    let tmp8;
-    if (_mod16386(tmp7)) {
-      tmp8 = tmp7;
+export default (arg0, arg1) => {
+  let tmp3 = _mod16389[arg0];
+  if (!tmp3) {
+    let obj = arg1;
+    const tmpResult = _mod16389;
+    if (!arg1) {
+      obj = {};
     }
-    tmp3 = tmp8;
-  } else {
-    tmp3 = _mod16360[arg0];
-    const tmp = require;
-    if (tmp3) {
-      tmp3 = tmp(16360)[arg0][arg1];
-    }
+    tmpResult[arg0] = obj;
+    tmp3 = obj;
   }
   return tmp3;
 };

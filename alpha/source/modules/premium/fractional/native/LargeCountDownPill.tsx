@@ -1,10 +1,10 @@
-// Module ID: 15580
-// Function ID: 15581
+// Module ID: 15581
+// Function ID: 15582
 // Name: LargeCountDownPill
 // Dependencies: [17, 21, 5141, 575, 5846, 1113, 5869, 5761, 2]
 // Exports: default
 
-// Module 15580 (LargeCountDownPill)
+// Module 15581 (LargeCountDownPill)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5761 */;

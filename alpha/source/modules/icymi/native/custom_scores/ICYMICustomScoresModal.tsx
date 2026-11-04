@@ -1,10 +1,10 @@
-// Module ID: 18786
-// Function ID: 18787
+// Module ID: 18800
+// Function ID: 18801
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 10035, 5141, 575, 7306, 9961, 1113, 10322, 18787, 18788, 2]
+// Dependencies: [19, 21, 10035, 5141, 575, 7306, 9961, 1113, 10322, 18801, 18802, 2]
 // Exports: default
 
-// Module 18786 (ICYMICustomScoresModal)
+// Module 18800 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

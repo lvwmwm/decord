@@ -1,10 +1,10 @@
-// Module ID: 18085
-// Function ID: 18086
+// Module ID: 18097
+// Function ID: 18098
 // Name: HeroBlock
-// Dependencies: [19, 17, 7860, 1074, 1072, 21, 9606, 5141, 575, 9728, 18086, 1499, 9609, 504, 9823, 5377, 18087, 5732, 5138, 18088, 17226, 7462, 7487, 18098, 1252, 5148, 18100, 18101, 18102, 5723, 5851, 5761, 5768, 1113, 9828, 6921, 7121, 7514, 5748, 18103, 7430, 2]
+// Dependencies: [19, 17, 7860, 1074, 1072, 21, 9606, 5141, 575, 9728, 18098, 1499, 9609, 504, 9823, 5377, 18099, 5732, 5138, 18100, 17238, 7462, 7487, 18110, 1252, 5148, 18112, 18113, 18114, 5723, 5851, 5761, 5768, 1113, 9828, 6921, 7121, 7514, 5748, 18115, 7430, 2]
 // Exports: default
 
-// Module 18085 (HeroBlock)
+// Module 18097 (HeroBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -33,7 +33,7 @@ let rect;
 let size;
 let tmp2;
 let unpackModuleId;
-const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(18098);
+const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(18110);
 function SkeletonLoading(accessibilityLabel) {
   let arr;
   let obj = {
@@ -109,7 +109,7 @@ export default function _default(heroBlock) {
   let tmp = heroBlock;
   let tmp2 = dependencyMap;
   const screen = heroBlock.screen;
-  let obj = heroBlock(18086);
+  let obj = heroBlock(18098);
   const handleDismissCoachmarkOnScroll = obj.useCollectiblesCoachmarkScrollDismissContext().handleDismissCoachmarkOnScroll;
   let obj2 = heroBlock(1499);
   dependencyMap = obj2.useNavigation();
@@ -127,7 +127,7 @@ export default function _default(heroBlock) {
   const tmpResult9 = tmp(9823);
   let isEligibleForQuests = tmpResult9.getIsEligibleForQuests();
   const tmp7 = preferVCPrice(5377)();
-  const tmpResult10 = tmp(18087);
+  const tmpResult10 = tmp(18099);
   const handleCardVisibilityChange = tmpResult10.useTrackProductCardImpression(heroBlock.categoryStoreListingId, "mobile_home", "hero_block").handleCardVisibilityChange;
   const tmp8 = closure_13();
   const tmpResult11 = tmp(5732);
@@ -138,11 +138,11 @@ export default function _default(heroBlock) {
   const hexToRgbaStringResult = hexToRgbaString(tmpResult13.hexWithOpacity(token, 0));
   const tmpResult14 = tmp(5732);
   const token1 = tmpResult14.useToken(preferVCPrice(575).colors.BACKGROUND_BASE_LOWEST);
-  const tmp13 = preferVCPrice(18088)();
+  const tmp13 = preferVCPrice(18100)();
   closure_5 = tmp13;
   const items1 = [heroBlock.rankedSkuIds, tmp13];
   const memo = react.useMemo(() => closure_5(heroBlock.rankedSkuIds), items1);
-  const tmpResult15 = tmp(17226);
+  const tmpResult15 = tmp(17238);
   const filteredAndSortedProducts = tmpResult15.useFilteredAndSortedProducts({ products: memo, bypassAndroidUnsyncedFilter: tmp4 });
   constants = tmp15;
   let unpublishedAt;
@@ -162,9 +162,9 @@ export default function _default(heroBlock) {
       let tmp6Result;
       const tmpResult16 = tmp(5148);
       if (tmpResult16.isThemeDark(tmp7)) {
-        tmp6Result = tmp6(18100);
+        tmp6Result = tmp6(18112);
       } else {
-        tmp6Result = tmp6(18101);
+        tmp6Result = tmp6(18113);
       }
       heroBannerUrl = tmp6Result;
     }
@@ -174,7 +174,7 @@ export default function _default(heroBlock) {
     const obj7 = { style: tmp8.heroBannerContainer, children: tmp24Result };
     tmp24Result = null != heroBannerUrl;
     obj6 = { style: tmp8.heroContainer, children: items5 };
-    tmp6Result3 = preferVCPrice(18102);
+    tmp6Result3 = preferVCPrice(18114);
     if (tmp24Result) {
       let tmp22Result = tmp4;
       const tmp27 = closure_11;
@@ -295,7 +295,7 @@ export default function _default(heroBlock) {
     if (tmp4) {
       const obj30 = { products: filteredAndSortedProducts, loadingCardsNum: num, preferVCPrice, accessibilityLabel: intl5.formatToPlainString(tmp(1113).t.FNtLb3, obj31) };
       num = 4;
-      const tmp6Result4 = preferVCPrice(18103);
+      const tmp6Result4 = preferVCPrice(18115);
       if (0 !== filteredAndSortedProducts.length) {
         num = filteredAndSortedProducts.length;
       }

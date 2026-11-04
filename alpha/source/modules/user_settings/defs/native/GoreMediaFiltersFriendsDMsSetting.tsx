@@ -1,17 +1,17 @@
-// Module ID: 16970
-// Function ID: 16971
+// Module ID: 16982
+// Function ID: 16983
 // Name: GoreMediaFiltersFriendsDMsSetting
-// Dependencies: [8573, 16964, 8828, 7612, 16965, 1113, 11728, 16967, 2]
+// Dependencies: [8573, 16976, 8828, 7612, 16977, 1113, 11729, 16979, 2]
 
-// Module 16970 (GoreMediaFiltersFriendsDMsSetting)
+// Module 16982 (GoreMediaFiltersFriendsDMsSetting)
 import intl4 from "intl" /* 1113 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7612 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8828 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16964 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16965 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16967 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16976 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16977 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16979 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

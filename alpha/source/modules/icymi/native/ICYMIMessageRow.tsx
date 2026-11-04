@@ -1,10 +1,10 @@
-// Module ID: 18828
-// Function ID: 18829
+// Module ID: 18842
+// Function ID: 18843
 // Name: ICYMIMessageRow
-// Dependencies: [19, 17, 4990, 5053, 5012, 5083, 6910, 1385, 18823, 1072, 21, 575, 18783, 1377, 18784, 8980, 9060, 504, 18829, 18830, 5761, 1113, 1187, 6176, 7037, 18814, 9065, 10980, 10366, 18824, 18826, 11, 7121, 9230, 18832, 2]
+// Dependencies: [19, 17, 4990, 5053, 5012, 5083, 6910, 1385, 18837, 1072, 21, 575, 18797, 1377, 18798, 8980, 9060, 504, 18843, 18844, 5761, 1113, 1187, 6176, 7037, 18828, 9065, 10980, 10366, 18838, 18840, 11, 7121, 9230, 18846, 2]
 // Exports: default
 
-// Module 18828 (ICYMIMessageRow)
+// Module 18842 (ICYMIMessageRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -12,8 +12,8 @@ import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
 import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 10366 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10980 */;
-import DesignConstants from "DesignConstants" /* 18823 */;
-import ICYMIShared from "ICYMIShared" /* 18824 */;
+import DesignConstants from "DesignConstants" /* 18837 */;
+import ICYMIShared from "ICYMIShared" /* 18838 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
@@ -23,7 +23,7 @@ import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18783 */;
+import createICYMIStyles from "createICYMIStyles" /* 18797 */;
 import size from "module_2" /* 2 */;
 
 let content_type;
@@ -56,7 +56,7 @@ class MessageRowContent {
     const tmp = closure_18();
     let tmp2 = message;
     let tmp3 = dependencyMap;
-    const context = react.useContext(message(18784).ICYMIContext);
+    const context = react.useContext(message(18798).ICYMIContext);
     const obj = message(8980);
     const result = obj.extractMediaSourcesFromMessage(message, message, channel.guild_id, message(9060).GRAVITY_VALID_EMBED_TYPES);
     const items = [UserGuildSettingsStore];
@@ -94,7 +94,7 @@ class MessageRowContent {
     if (tmp12Result) {
       const obj5 = { message, muted: stateFromStores, lineClamp: num, messageOptions: obj6, pointerEvents: str };
       obj6 = undefined;
-      const MessageRowPreview = tmp2(18829).MessageRowPreview;
+      const MessageRowPreview = tmp2(18843).MessageRowPreview;
       const tmp12 = closure_14;
       if (0 === result.length) {
         if (message.attachments.length > 0) {
@@ -112,14 +112,14 @@ class MessageRowContent {
     items3 = [tmp12Result, , ];
     let tmp13 = result.length > 0;
     if (tmp13) {
-      const obj7 = { style: tmp.media, children: closure_14(channel(18830), obj8) };
+      const obj7 = { style: tmp.media, children: closure_14(channel(18844), obj8) };
       obj8 = { message, visible: flag2, itemType: "message" };
       tmp13 = closure_14(tmp9, obj7);
     }
     items3[1] = tmp13;
     let tmp16 = 0 === result.length && message.embeds.length > 0;
     if (tmp16) {
-      const obj9 = { style: tmp.media, children: closure_14(tmp2(18829).NonMediaEmbedsRowPreview, obj10) };
+      const obj9 = { style: tmp.media, children: closure_14(tmp2(18843).NonMediaEmbedsRowPreview, obj10) };
       obj10 = { message, muted: stateFromStores, lineClamp: 3 };
       tmp16 = closure_14(tmp9, obj9);
     }
@@ -332,7 +332,7 @@ export default function MessageRowWrapper(arg0) {
   let visible;
   let gravityMessage;
   ({ message, messageContext, visible } = arg0);
-  const obj = gravityMessage(18814);
+  const obj = gravityMessage(18828);
   gravityMessage = obj.useGravityMessage(message);
   const items = [ChannelStore];
   const obj2 = gravityMessage(504);

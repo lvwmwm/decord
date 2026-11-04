@@ -1,15 +1,15 @@
-// Module ID: 17763
-// Function ID: 17764
+// Module ID: 17775
+// Function ID: 17776
 // Name: HexagonCampaignAppIconSection
-// Dependencies: [19, 17, 5166, 21, 5141, 575, 5169, 16699, 6919, 10160, 5208, 1113, 4412, 5732, 5761, 16721, 5207, 16715, 16716, 17247, 7095, 7203, 16718, 2]
+// Dependencies: [19, 17, 5166, 21, 5141, 575, 5169, 16711, 6919, 10160, 5208, 1113, 4412, 5732, 5761, 16733, 5207, 16727, 16728, 17259, 7095, 7203, 16730, 2]
 // Exports: default
 
-// Module 17763 (HexagonCampaignAppIconSection)
+// Module 17775 (HexagonCampaignAppIconSection)
 import nativeDefault from "native" /* 575 */;
 import _modDef4412 from "module_4412" /* 4412 */;
 import AppIconTypes from "AppIconTypes" /* 10160 */;
-import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16716 */;
-import AppIconDefault from "AppIcon" /* 17247 */;
+import HexagonCampaignPromoGradientDefault from "HexagonCampaignPromoGradient" /* 16728 */;
+import AppIconDefault from "AppIcon" /* 17259 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5166 */;
@@ -66,9 +66,9 @@ export default function HexagonCampaignAppIconSection(isPending) {
   const tmp = closure_11();
   let obj = onSelect(5169);
   const hexagonCampaignPerkAvailability = obj.useHexagonCampaignPerkAvailability(constants.APP_ICON, "HexagonCampaignAppIconSection");
-  const useTrackHexagonCampaignContentViewed = onSelect(16699).useTrackHexagonCampaignContentViewed;
-  onSelect(16699);
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(onSelect(6919).QuestContent.APP_ICON_SETTINGS, onSelect(16699).HexagonCampaignContentSurface.APP_ICON_PICKER, true);
+  const useTrackHexagonCampaignContentViewed = onSelect(16711).useTrackHexagonCampaignContentViewed;
+  onSelect(16711);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(onSelect(6919).QuestContent.APP_ICON_SETTINGS, onSelect(16711).HexagonCampaignContentSurface.APP_ICON_PICKER, true);
   const tmp8 = currentAppIcon === onSelect(10160).LimitedTimeAppIconIds.HEXAGON;
   const obj2 = onSelect(5208);
   const radioA11yNative = obj2.useRadioA11yNative({ selected: tmp8, busy: flag });
@@ -86,11 +86,11 @@ export default function HexagonCampaignAppIconSection(isPending) {
   const tmp4 = constants;
   if (tmp15Result) {
     const obj7 = { perk: tmp4.APP_ICON };
-    tmp15Result = tmp15(tmp10(16721), obj7);
+    tmp15Result = tmp15(tmp10(16733), obj7);
   }
   items[1] = tmp15Result;
   items1 = [closure_10(closure_4, obj5), ];
-  const obj8 = { theme: onSelect(16715).ThemeTypes.DARK, children: closure_10(tmp17, obj9) };
+  const obj8 = { theme: onSelect(16727).ThemeTypes.DARK, children: closure_10(tmp17, obj9) };
   const ThemeContextProvider = tmp2(5207).ThemeContextProvider;
   obj9 = {
     onPress() {

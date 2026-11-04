@@ -1,13 +1,13 @@
-// Module ID: 12194
-// Function ID: 12195
+// Module ID: 12195
+// Function ID: 12196
 // Name: StageChannelExpandedControls
-// Dependencies: [19, 17, 6849, 502, 5012, 21, 5141, 5138, 575, 11379, 11185, 504, 6847, 9369, 12195, 2]
+// Dependencies: [19, 17, 6849, 502, 5012, 21, 5141, 5138, 575, 11380, 11185, 504, 6847, 9369, 12196, 2]
 
-// Module 12194 (StageChannelExpandedControls)
+// Module 12195 (StageChannelExpandedControls)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11379 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 11380 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -61,12 +61,12 @@ const memoResult = react.memo(function StageChannelExpandedControls(channel) {
   const stageHasMedia = tmp5Result.useStageHasMedia(channel.id);
   const items5 = [];
   const reachedLimit = useChannelVideoLimitDefault(channel).reachedLimit;
-  items5.push(jsx(channel(12195).StreamVolumeItem, {}));
+  items5.push(jsx(channel(12196).StreamVolumeItem, {}));
   const tmp11 = num > 0 && tmp4;
   if (tmp11) {
     const push = items5.push;
     let tmp12 = stateFromStoresArray.length > 0;
-    const ScreenshareButton = tmp5(12195).ScreenshareButton;
+    const ScreenshareButton = tmp5(12196).ScreenshareButton;
     if (tmp12) {
       tmp12 = null == stateFromStoresArray.find((ownerId) => ownerId.ownerId === closure_1);
     }
@@ -75,8 +75,8 @@ const memoResult = react.memo(function StageChannelExpandedControls(channel) {
     }
     push(<ScreenshareButton channel={channel} disabled={tmp12} />);
   }
-  items5.push(jsx(channel(12195).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
-  items5.push(jsx(channel(12195).DeafenButton, { channel }));
+  items5.push(jsx(channel(12196).AudioRouteButton, { channelId: channel.id, isConnectedToVoiceChannel }));
+  items5.push(jsx(channel(12196).DeafenButton, { channel }));
   return <View style={tmp.container}>{items5.map((children, index) => <View key={arg1}>{arg0}</View>)}</View>;
 });
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageChannelExpandedControls.tsx");

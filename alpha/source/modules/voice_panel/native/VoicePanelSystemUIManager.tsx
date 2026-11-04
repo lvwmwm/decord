@@ -1,14 +1,14 @@
-// Module ID: 19545
-// Function ID: 19546
+// Module ID: 19559
+// Function ID: 19560
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 6978, 11410, 11408, 5815, 21, 11409, 1259, 1377, 551, 1652, 10267, 1705, 11399, 11899, 2]
+// Dependencies: [32, 19, 6978, 11411, 11409, 5815, 21, 11410, 1259, 1377, 551, 1652, 10267, 1705, 11400, 11900, 2]
 
-// Module 19545 (VoicePanelSystemUIManager)
+// Module 19559 (VoicePanelSystemUIManager)
 import react_native from "react-native" /* 1259 */;
 import CallConstants from "CallConstants" /* 5815 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11408 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11409 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11409 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11410 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
@@ -22,8 +22,8 @@ let c10;
 let c9;
 let tmp;
 let unpackModuleId;
-const StatusBarDefault = tmp(11399);
-const HomeIndicatorDefault = tmp(11899);
+const StatusBarDefault = tmp(11400);
+const HomeIndicatorDefault = tmp(11900);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const ParticipantTypes = CallConstants.ParticipantTypes;

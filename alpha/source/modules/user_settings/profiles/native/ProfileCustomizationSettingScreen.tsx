@@ -1,26 +1,26 @@
-// Module ID: 16675
-// Function ID: 16676
+// Module ID: 16687
+// Function ID: 16688
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 11647, 8872, 12564, 6907, 1082, 1072, 21, 5141, 1113, 16676, 16800, 7289, 12566, 16809, 16695, 5732, 575, 1499, 7301, 9125, 11595, 16697, 16801, 504, 5894, 11708, 7139, 7698, 1500, 16811, 12371, 14410, 2]
+// Dependencies: [5, 109, 32, 19, 17, 11648, 8872, 12565, 6907, 1082, 1072, 21, 5141, 1113, 16688, 16812, 7289, 12567, 16821, 16707, 5732, 575, 1499, 7301, 9125, 11596, 16709, 16813, 504, 5894, 11709, 7139, 7698, 1500, 16823, 12372, 14411, 2]
 
-// Module 16675 (ProfileCustomizationSettingScreen)
+// Module 16687 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl2 from "intl" /* 1113 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7289 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11595 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11708 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12566 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16676 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16800 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11596 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11709 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12567 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 16688 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 16812 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11647 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11648 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8872 */;
-import WidgetStore from "WidgetStore" /* 12564 */;
+import WidgetStore from "WidgetStore" /* 12565 */;
 import SortedGuildStore from "SortedGuildStore" /* 6907 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;

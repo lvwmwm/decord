@@ -1,17 +1,17 @@
-// Module ID: 11990
-// Function ID: 11991
+// Module ID: 11991
+// Function ID: 11992
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 4989, 2147, 1362, 11888, 21, 5141, 11988, 1493, 572, 11991, 11992, 11994, 12017, 11984, 504, 12033, 11118, 12034, 5893, 12036, 2]
+// Dependencies: [109, 32, 19, 17, 4989, 2147, 1362, 11889, 21, 5141, 11989, 1493, 572, 11992, 11993, 11995, 12018, 11985, 504, 12034, 11118, 12035, 5893, 12037, 2]
 
-// Module 11990 (EmbeddedActivityView)
+// Module 11991 (EmbeddedActivityView)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
 import Constants from "Constants" /* 2147 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
 import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11118 */;
-import Constants2 from "Constants" /* 11888 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11991 */;
-import activityWebViewController from "activityWebViewController" /* 11994 */;
+import Constants2 from "Constants" /* 11889 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 11992 */;
+import activityWebViewController from "activityWebViewController" /* 11995 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -124,7 +124,7 @@ function EmbeddedActivityWebView(applicationId) {
     return obj.getOrCreateActivityWebViewController(applicationId);
   }), 1)[0]);
   let obj = { iframeId, shellBridgeSecret, deepLinkQueryParams, applicationId };
-  const BaseEmbeddedAppWebView = applicationId(12017).BaseEmbeddedAppWebView;
+  const BaseEmbeddedAppWebView = applicationId(12018).BaseEmbeddedAppWebView;
   const merged1 = Object.assign(merged);
   return closure_13(BaseEmbeddedAppWebView, obj);
 }

@@ -1,9 +1,9 @@
-// Module ID: 11782
-// Function ID: 11783
+// Module ID: 11783
+// Function ID: 11784
 // Name: GuildRoleConnectionsConnectAccountsActionSheet
-// Dependencies: [5, 32, 19, 17, 7412, 2191, 1399, 502, 4990, 6707, 5053, 5073, 7485, 1072, 21, 5141, 575, 5377, 6709, 1411, 5148, 1187, 8744, 5786, 5761, 1113, 7484, 11783, 7463, 9347, 11784, 11785, 12, 5732, 11786, 38, 5846, 5869, 11789, 5729, 8317, 7483, 504, 7486, 7037, 1252, 5894, 5382, 7703, 11790, 9870, 572, 6879, 11084, 2123, 5785, 11795, 5396, 11796, 7508, 5768, 2]
+// Dependencies: [5, 32, 19, 17, 7412, 2191, 1399, 502, 4990, 6707, 5053, 5073, 7485, 1072, 21, 5141, 575, 5377, 6709, 1411, 5148, 1187, 8744, 5786, 5761, 1113, 7484, 11784, 7463, 9347, 11785, 11786, 12, 5732, 11787, 38, 5846, 5869, 11790, 5729, 8317, 7483, 504, 7486, 7037, 1252, 5894, 5382, 7703, 11791, 9870, 572, 6879, 11084, 2123, 5785, 11796, 5396, 11797, 7508, 5768, 2]
 
-// Module 11782 (GuildRoleConnectionsConnectAccountsActionSheet)
+// Module 11783 (GuildRoleConnectionsConnectAccountsActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -29,7 +29,7 @@ import ConnectionsUtils from "ConnectionsUtils" /* 7484 */;
 import getConnectionsRolesDefault from "getConnectionsRoles" /* 7486 */;
 import openUserSettings from "openUserSettings" /* 7703 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8744 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11795 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11796 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -939,7 +939,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f100706 = () => {
+    const f100838 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -1046,8 +1046,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f100706);
-    _slicedToArray(react.useState(f100706), 2);
+    [tmp27, c16] = react.useState(f100838);
+    _slicedToArray(react.useState(f100838), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[17])();

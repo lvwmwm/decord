@@ -1,10 +1,10 @@
-// Module ID: 13463
-// Function ID: 13464
+// Module ID: 13464
+// Function ID: 13465
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 4990, 1072, 5146, 21, 5141, 575, 7776, 7964, 1252, 7487, 5743, 504, 7389, 1113, 13464, 10420, 5768, 6879, 5749, 7139, 7306, 2]
+// Dependencies: [32, 5, 19, 17, 4990, 1072, 5146, 21, 5141, 575, 7776, 7964, 1252, 7487, 5743, 504, 7389, 1113, 13465, 10420, 5768, 6879, 5749, 7139, 7306, 2]
 // Exports: default
 
-// Module 13463 (GiftIntentGifModal)
+// Module 13464 (GiftIntentGifModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -72,7 +72,7 @@ let obj = function _sendGiftIntentGif() {
               is_custom_message = undefined;
               url = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else {
             if (1 === url) {
@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f104895 = () => {
+  const f105027 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f104895) };
-  require("react")(f104895);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f105027) };
+  require("react")(f105027);
   return closure_10(require("Navigator").Navigator, obj);
 };

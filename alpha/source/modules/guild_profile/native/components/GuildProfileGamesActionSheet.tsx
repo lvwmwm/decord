@@ -1,10 +1,10 @@
-// Module ID: 14939
-// Function ID: 14940
+// Module ID: 14940
+// Function ID: 14941
 // Name: GuildProfileGamesActionSheet
-// Dependencies: [19, 17, 21, 9462, 9486, 7116, 14934, 5141, 14938, 8882, 1113, 5382, 9441, 2123, 5396, 5400, 7201, 2]
+// Dependencies: [19, 17, 21, 9462, 9486, 7116, 14935, 5141, 14939, 8882, 1113, 5382, 9441, 2123, 5396, 5400, 7201, 2]
 // Exports: default
 
-// Module 14939 (GuildProfileGamesActionSheet)
+// Module 14940 (GuildProfileGamesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
@@ -43,7 +43,7 @@ export default function GuildProfileGamesActionSheet(profile) {
   const id = profile.id;
   const gameActivity = profile.gameActivity;
   const tmp = closure_7();
-  let obj = id(14938);
+  let obj = id(14939);
   const allGuildProfileGames = obj.useAllGuildProfileGames(profile);
   const obj2 = id(8882);
   const bottomSheetRef = obj2.useBottomSheetRef().bottomSheetRef;

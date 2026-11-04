@@ -1,13 +1,13 @@
-// Module ID: 11749
-// Function ID: 11750
+// Module ID: 11750
+// Function ID: 11751
 // Name: SocialLayerStorefrontEmbedStore
-// Dependencies: [32, 7912, 9618, 502, 7031, 11750, 558, 504, 572, 2]
+// Dependencies: [32, 7912, 9618, 502, 7031, 11751, 558, 504, 572, 2]
 
-// Module 11749 (SocialLayerStorefrontEmbedStore)
+// Module 11750 (SocialLayerStorefrontEmbedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11750 */;
+import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserProfileStore from "UserProfileStore" /* 7912 */;
 import WishlistStore from "WishlistStore" /* 9618 */;

@@ -1,7 +1,7 @@
 // Module ID: 9375
 // Function ID: 9376
 // Name: VoicePanelAudioOutputActionSheet
-// Dependencies: [19, 17, 5899, 9367, 4990, 5900, 9374, 1072, 21, 5141, 5382, 563, 9376, 9377, 1113, 7199, 7202, 7124, 9366, 12172, 12056, 14952, 5171, 4974, 14953, 5396, 7457, 7101, 2]
+// Dependencies: [19, 17, 5899, 9367, 4990, 5900, 9374, 1072, 21, 5141, 5382, 563, 9376, 9377, 1113, 7199, 7202, 7124, 9366, 12173, 12057, 14953, 5171, 4974, 14954, 5396, 7457, 7101, 2]
 
 // Module 9375 (VoicePanelAudioOutputActionSheet)
 import react_native from "react-native" /* 17 */;
@@ -13,7 +13,7 @@ import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 517
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import NativeViewDefault from "NativeView" /* 7101 */;
 import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9374 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 14952 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 14953 */;
 import react from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5899 */;
 import AudioManagerStore from "AudioManagerStore" /* 9367 */;
@@ -102,8 +102,8 @@ function VoicePanelAudioConsoleSection(channel) {
   let awaitingRemoteSessionInfo;
   let tmp2 = dependencyMap;
   let tmp = closure_13();
-  arr = arr(12172)();
-  dependencyMap = arr(12056)();
+  arr = arr(12173)();
+  dependencyMap = arr(12057)();
   let obj = channel(563);
   const items = [awaitingRemoteSessionInfo];
   const stateFromStores = obj.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());

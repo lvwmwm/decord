@@ -1,17 +1,17 @@
-// Module ID: 11892
-// Function ID: 11893
+// Module ID: 11893
+// Function ID: 11894
 // Name: tryJoinAsFrame
-// Dependencies: [5, 4989, 6978, 4990, 5895, 1072, 6982, 7623, 11883, 11889, 11893, 5062, 13405, 2153, 5809, 11925, 11924, 11114, 6986, 13408, 13409, 7625, 2]
+// Dependencies: [5, 4989, 6978, 4990, 5895, 1072, 6982, 7623, 11884, 11890, 11894, 5062, 13406, 2153, 5809, 11926, 11925, 11114, 6986, 13409, 13410, 7625, 2]
 // Exports: tryJoinAsFrame, tryStartAsEmbeddedApp
 
-// Module 11892 (tryJoinAsFrame)
+// Module 11893 (tryJoinAsFrame)
 import Constants from "Constants" /* 1072 */;
 import FramesConstants from "FramesConstants" /* 6982 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11883 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11889 */;
-import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11893 */;
-import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 13409 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11884 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 11890 */;
+import handleJoinEmbeddedActivityDefault from "handleJoinEmbeddedActivity" /* 11894 */;
+import handleUsePrimaryEntryPointAppCommandDefault from "handleUsePrimaryEntryPointAppCommand" /* 13410 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
@@ -241,7 +241,7 @@ obj = function _startFrame() {
               frameParticipantId = undefined;
               referrerId = 1;
               source = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === referrerId) {
             if (arg0 === 1) {

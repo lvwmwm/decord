@@ -1,12 +1,12 @@
-// Module ID: 11381
-// Function ID: 11382
+// Module ID: 11382
+// Function ID: 11383
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 5768, 11382, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 5768, 11383, 2]
 
-// Module 11381 (AnnouncementChannelLurkerBar)
+// Module 11382 (AnnouncementChannelLurkerBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11382 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11383 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;

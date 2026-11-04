@@ -1,17 +1,17 @@
-// Module ID: 17280
-// Function ID: 17281
+// Module ID: 17292
+// Function ID: 17293
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 17258, 21, 5846, 1113, 504, 17265, 17264, 17281, 5768, 2]
+// Dependencies: [5, 19, 17270, 21, 5846, 1113, 504, 17277, 17276, 17293, 5768, 2]
 // Exports: default
 
-// Module 17280 (OrbsArcadeClaimRewardButton)
+// Module 17292 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17265 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17277 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17258 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17270 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c4;

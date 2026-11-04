@@ -14,9 +14,9 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f95497 = () => id.getId();
-const f95498 = () => UserProfileStore.getFirstWishlistId(closure_0);
-const f95499 = () => {
+const f95629 = () => id.getId();
+const f95630 = () => UserProfileStore.getFirstWishlistId(closure_0);
+const f95631 = () => {
   const userProfile = UserProfileStore.getUserProfile(closure_0);
   return null != userProfile && userProfile.fetchEndedAt > 0;
 };
@@ -29,13 +29,13 @@ export default function useWishlistNUXActionSheet() {
   let paths;
   let obj = require("get initialized");
   const items = [AuthenticationStore];
-  _require = obj.useStateFromStores(items, f95497);
+  _require = obj.useStateFromStores(items, f95629);
   let obj2 = require("get initialized");
   const items1 = [UserProfileStore];
-  const stateFromStores = obj2.useStateFromStores(items1, f95498);
+  const stateFromStores = obj2.useStateFromStores(items1, f95630);
   let obj3 = require("get initialized");
   const items2 = [UserProfileStore];
-  let stateFromStores1 = obj3.useStateFromStores(items2, f95499) && null == stateFromStores;
+  let stateFromStores1 = obj3.useStateFromStores(items2, f95631) && null == stateFromStores;
   const useIsDismissibleContentDismissed_UNSAFE = require("DismissibleContentUnsafeUtils").useIsDismissibleContentDismissed_UNSAFE;
   require("DismissibleContentUnsafeUtils");
   if (stateFromStores1) {
@@ -60,12 +60,12 @@ export function useHasNeverWishlisted() {
   let closure_0;
   const items = [AuthenticationStore];
   const obj = require("get initialized");
-  _require = obj.useStateFromStores(items, f95497);
+  _require = obj.useStateFromStores(items, f95629);
   const items1 = [UserProfileStore];
   const obj2 = require("get initialized");
-  const stateFromStores = obj2.useStateFromStores(items1, f95498);
+  const stateFromStores = obj2.useStateFromStores(items1, f95630);
   const items2 = [UserProfileStore];
   const obj3 = require("get initialized");
-  const stateFromStores1 = obj3.useStateFromStores(items2, f95499) && null == stateFromStores;
+  const stateFromStores1 = obj3.useStateFromStores(items2, f95631) && null == stateFromStores;
   return stateFromStores1;
 }

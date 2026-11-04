@@ -1,17 +1,17 @@
-// Module ID: 17912
-// Function ID: 17913
+// Module ID: 17924
+// Function ID: 17925
 // Name: WebAuthnScreen
-// Dependencies: [32, 19, 21, 5141, 575, 6886, 1113, 1187, 1377, 1282, 7264, 17913, 16925, 7262, 17916, 2]
+// Dependencies: [32, 19, 21, 5141, 575, 6886, 1113, 1187, 1377, 1282, 7264, 17925, 16937, 7262, 17928, 2]
 // Exports: default
 
-// Module 17912 (WebAuthnScreen)
+// Module 17924 (WebAuthnScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import react_nativeDefault from "react-native" /* 6886 */;
 import NativeCeremoniesDefault from "NativeCeremonies" /* 7262 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 17913 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 17925 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -23,7 +23,7 @@ let ANDROID_PASSKEY;
 let AUTHENTICATE;
 let obj2;
 let tmp17;
-const buttonDefault = tmp17(17916);
+const buttonDefault = tmp17(17928);
 function AndroidAuthRadioGroup(setAuthenticator) {
   let authenticatorSelection;
   let inProgress;
@@ -114,7 +114,7 @@ export default function WebAuthnScreen(arg0) {
     });
     catchPromise.finally(() => _undefined(false));
   }, items1);
-  obj3 = { headerText: intl.string(finish(1113).t.saHocI), subtitle: intl2.string(finish(1113).t.YpMrqM), headerImage: challenge(finish(16925).KeyImage, {}), content: shouldDisplayAndroidFidoSelector, submit: challenge(tmp17Result, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "webauthn", error: first };
+  obj3 = { headerText: intl.string(finish(1113).t.saHocI), subtitle: intl2.string(finish(1113).t.YpMrqM), headerImage: challenge(finish(16937).KeyImage, {}), content: shouldDisplayAndroidFidoSelector, submit: challenge(tmp17Result, obj5), screenProps: { mfaChallenge, finish }, mfaMethod: "webauthn", error: first };
   const tmp18 = MfaOptionScreenDefault;
   intl = tmp6(1113).intl;
   intl2 = tmp6(1113).intl;

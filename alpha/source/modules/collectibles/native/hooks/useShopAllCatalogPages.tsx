@@ -1,10 +1,10 @@
-// Module ID: 18072
-// Function ID: 18073
+// Module ID: 18084
+// Function ID: 18085
 // Name: useShopAllCatalogPages
 // Dependencies: [32, 19, 9731, 7861, 1072, 9733, 504, 559, 7859, 2]
 // Exports: default
 
-// Module 18072 (useShopAllCatalogPages)
+// Module 18084 (useShopAllCatalogPages)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9733 */;

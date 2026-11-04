@@ -1,32 +1,24 @@
 // Module ID: 13105
 // Function ID: 13106
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055]
 
 // Module 13105 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import tokenize from "tokenize" /* 13055 */;
 
-let obj2;
-const Ident = tokenize.TYPE.Ident;
+const CDO = tokenize.TYPE.CDO;
 let obj = {
-  name: "ClassSelector",
-  structure: obj2,
+  name: "CDO",
+  structure: [],
   parse() {
-    const self = this;
-    const scanner = this.scanner;
-    if (!scanner.isDelim(46)) {
-      self.error("Full stop is expected");
-    }
-    const iter = self.scanner;
-    iter.next();
-    const obj = { type: "ClassSelector", loc: self.getLocation(self.scanner.tokenStart - 1, self.scanner.tokenEnd), name: self.consume(Ident) };
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(CDO);
+    const obj = { type: "CDO", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
     return obj;
   },
-  generate(name) {
-    this.chunk(".");
-    this.chunk(name.name);
+  generate() {
+    this.chunk("<!--");
   }
 };
-obj2 = { name: String };
 
 export default obj;

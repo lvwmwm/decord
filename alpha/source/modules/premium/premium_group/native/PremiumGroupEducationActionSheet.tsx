@@ -1,10 +1,10 @@
-// Module ID: 15631
-// Function ID: 15632
+// Module ID: 15632
+// Function ID: 15633
 // Name: PremiumGroupEducationActionSheet
 // Dependencies: [17, 2189, 21, 5141, 575, 5396, 7227, 5761, 1113, 3415, 2]
 // Exports: default
 
-// Module 15631 (PremiumGroupEducationActionSheet)
+// Module 15632 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;

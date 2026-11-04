@@ -1,7 +1,7 @@
 // Module ID: 7776
 // Function ID: 7777
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 6703, 7052, 7777, 7778, 7960, 7962, 7906, 6972, 6849, 502, 4990, 7963, 5012, 5883, 6196, 5073, 5895, 6977, 7970, 1385, 1072, 7972, 7641, 5146, 17, 3, 5882, 7973, 5886, 7976, 7977, 5894, 7982, 6921, 8002, 1252, 5884, 8018, 8022, 6579, 8024, 1113, 2190, 8352, 572, 10497, 6691, 10493, 8828, 1282, 6198, 7536, 9, 7807, 6698, 11, 5019, 5039, 7796, 6700, 15444, 10388, 9274, 15445, 2176, 7966, 1398, 7581, 8544, 15446, 8525, 11875, 15450, 9932, 14803, 14809, 7053, 1089, 8528, 2121, 8342, 5148, 10789, 6093, 2]
+// Dependencies: [32, 5, 6703, 7052, 7777, 7778, 7960, 7962, 7906, 6972, 6849, 502, 4990, 7963, 5012, 5883, 6196, 5073, 5895, 6977, 7970, 1385, 1072, 7972, 7641, 5146, 17, 3, 5882, 7973, 5886, 7976, 7977, 5894, 7982, 6921, 8002, 1252, 5884, 8018, 8022, 6579, 8024, 1113, 2190, 8352, 572, 10497, 6691, 10493, 8828, 1282, 6198, 7536, 9, 7807, 6698, 11, 5019, 5039, 7796, 6700, 15445, 10388, 9274, 15446, 2176, 7966, 1398, 7581, 8544, 15447, 8525, 11876, 15451, 9932, 14804, 14810, 7053, 1089, 8528, 2121, 8342, 5148, 10790, 6093, 2]
 
 // Module 7776 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
@@ -28,8 +28,8 @@ import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8828 */
 import getInviteURLDefault from "getInviteURL" /* 9274 */;
 import createNonce from "createNonce" /* 10493 */;
 import createMessage from "createMessage" /* 10497 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10789 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15445 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10790 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
@@ -445,7 +445,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f91888 = () => {
+    const f92019 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -469,8 +469,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f91888));
-      withResult1.otherwise(f91888);
+      ({ message, messageName } = withResult1.otherwise(f92019));
+      withResult1.otherwise(f92019);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -2678,9 +2678,9 @@ let obj17 = {
         const obj = id(c3[46]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f140993);
+        dispatchResult.then(f141548);
       }
-      const f140993 = () => {
+      const f141548 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[43]).intl;
@@ -2741,7 +2741,7 @@ let obj17 = {
               const obj = id(c3[46]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f140993);
+              dispatchResult.then(f141548);
             });
           }
           c3 = 3;

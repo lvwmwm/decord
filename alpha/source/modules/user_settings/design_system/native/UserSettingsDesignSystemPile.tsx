@@ -1,10 +1,10 @@
-// Module ID: 18047
-// Function ID: 18048
+// Module ID: 18059
+// Function ID: 18060
 // Name: UserSettingsDesignSystemPile
-// Dependencies: [19, 17, 21, 5141, 1187, 7098, 6162, 7118, 5761, 15094, 1414, 16107, 14412, 13644, 13020, 9656, 2]
+// Dependencies: [19, 17, 21, 5141, 1187, 7098, 6162, 7118, 5761, 15095, 1414, 16120, 14413, 13645, 13021, 9656, 2]
 // Exports: default
 
-// Module 18047 (UserSettingsDesignSystemPile)
+// Module 18059 (UserSettingsDesignSystemPile)
 import native from "native" /* 1187 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
 import Text_Text from "Text/Text" /* 5761 */;
@@ -12,8 +12,8 @@ import Stack_Stack from "Stack/Stack" /* 6162 */;
 import GuildIcon from "GuildIcon" /* 7098 */;
 import Card_Card from "Card/Card" /* 7118 */;
 import ClipView from "ClipView" /* 9656 */;
-import ListUtils from "ListUtils" /* 13020 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 16107 */;
+import ListUtils from "ListUtils" /* 13021 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 16120 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

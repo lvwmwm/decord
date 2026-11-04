@@ -1,10 +1,10 @@
-// Module ID: 14061
-// Function ID: 14062
+// Module ID: 14062
+// Function ID: 14063
 // Name: NewBadge
 // Dependencies: [19, 17, 21, 5141, 1377, 575, 5148, 9971, 5377, 5761, 1113, 2]
 // Exports: default
 
-// Module 14061 (NewBadge)
+// Module 14062 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -27,7 +27,7 @@ let closure_5 = createStyles.createStyles((arg0, arg1) => {
   if (obj.isIOS()) {
     num = 1;
   }
-  const obj2 = { text: { textAlign: "center", textTransform: "uppercase", marginTop: num }, base: null };
+  const obj2 = { text: { textAlign: "center", marginTop: num }, base: null };
   const obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round, paddingHorizontal: 6, paddingVertical: 3, backgroundColor: null };
   const tmpResult = shared;
   if (tmpResult.isThemeLight(arg1)) {
@@ -45,12 +45,12 @@ let closure_5 = createStyles.createStyles((arg0, arg1) => {
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/components/NewBadge.tsx");
 
 export default function NewBadge() {
-  let intl;
   let str;
+  let stringResult;
   const tmp2 = useIsUsingClientThemeDefault();
   const tmp3 = useThemeDefault();
   const tmp4 = closure_5(tmp2, tmp3);
-  ({ variant: "footnote/semibold", style: tmp4.text, color: str, children: intl.string(intl2.t.y2b7CA) });
+  ({ variant: "footnote/semibold", style: tmp4.text, color: str, children: stringResult.toLocaleUpperCase(intl2.intl.currentLocale) });
   const Text = Text_Text.Text;
   const obj3 = shared;
   if (obj3.isThemeLight(tmp3)) {
@@ -58,6 +58,7 @@ export default function NewBadge() {
   } else {
     str = "text-brand";
   }
-  intl = tmp7(1113).intl;
+  const intl = tmp7(1113).intl;
+  stringResult = intl.string(intl2.t.y2b7CA);
   return <tmp6 style={tmp4.base}>{null}</tmp6>;
 };

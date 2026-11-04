@@ -1,10 +1,10 @@
-// Module ID: 18005
-// Function ID: 18006
+// Module ID: 18017
+// Function ID: 18018
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1072, 1240, 21, 18006, 5768, 18007, 8168, 7702, 9340, 16088, 8540, 13000, 11174, 13001, 9388, 5141, 575, 1499, 5382, 18008, 2123, 6162, 5761, 10727, 9330, 9336, 9338, 9337, 9335, 9334, 6902, 5207, 1090, 5723, 7118, 10914, 9144, 2]
+// Dependencies: [32, 19, 17, 1072, 1240, 21, 18018, 5768, 18019, 8168, 7702, 9340, 16101, 8540, 13001, 11174, 13002, 9388, 5141, 575, 1499, 5382, 18020, 2123, 6162, 5761, 10727, 9330, 9336, 9338, 9337, 9335, 9334, 6902, 5207, 1090, 5723, 7118, 10914, 9144, 2]
 // Exports: default
 
-// Module 18005 (UserSettingsDesignSystemButton)
+// Module 18017 (UserSettingsDesignSystemButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import LinearGradientDefault from "LinearGradient" /* 5723 */;
@@ -21,10 +21,10 @@ import ImageButton2 from "ImageButton" /* 9340 */;
 import AssetRegistryDefault9 from "AssetRegistry" /* 9388 */;
 import AssetRegistryDefault10 from "AssetRegistry" /* 10727 */;
 import AssetRegistryDefault11 from "AssetRegistry" /* 11174 */;
-import ToggleIconButton2 from "ToggleIconButton" /* 13000 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 13001 */;
-import ToggleButton2 from "ToggleButton" /* 16088 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 18006 */;
+import ToggleIconButton2 from "ToggleIconButton" /* 13001 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 13002 */;
+import ToggleButton2 from "ToggleButton" /* 16101 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 18018 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -49,7 +49,7 @@ let obj5;
 let tmp;
 let unpackModuleId;
 const AssetRegistryDefault = tmp(7702);
-const AssetRegistryDefault12 = tmp(18007);
+const AssetRegistryDefault12 = tmp(18019);
 function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;

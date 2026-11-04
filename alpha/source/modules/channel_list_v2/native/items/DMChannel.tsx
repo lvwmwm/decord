@@ -1,9 +1,9 @@
-// Module ID: 18540
-// Function ID: 18541
+// Module ID: 18554
+// Function ID: 18555
 // Name: DMChannel
-// Dependencies: [19, 6977, 6910, 11236, 6911, 21, 5141, 575, 10980, 5890, 504, 18331, 18415, 9230, 2]
+// Dependencies: [19, 6977, 6910, 11236, 6911, 21, 5141, 575, 10980, 5890, 504, 18345, 18429, 9230, 2]
 
-// Module 18540 (DMChannel)
+// Module 18554 (DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import transitionToChannel from "transitionToChannel" /* 5890 */;
@@ -11,8 +11,8 @@ import ReadStateConstants from "ReadStateConstants" /* 6911 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9230 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10980 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
-import useCallA11yStateDefault from "useCallA11yState" /* 18331 */;
-import ChannelItemDefault from "ChannelItem" /* 18415 */;
+import useCallA11yStateDefault from "useCallA11yState" /* 18345 */;
+import ChannelItemDefault from "ChannelItem" /* 18429 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6977 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;

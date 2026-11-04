@@ -1,9 +1,9 @@
-// Module ID: 19169
-// Function ID: 19170
+// Module ID: 19183
+// Function ID: 19184
 // Name: InstantInviteSelfMeasurer
 // Dependencies: [19, 17, 21, 5141, 10986, 2]
 
-// Module 19169 (InstantInviteSelfMeasurer)
+// Module 19183 (InstantInviteSelfMeasurer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import InstantInvite from "InstantInvite" /* 10986 */;

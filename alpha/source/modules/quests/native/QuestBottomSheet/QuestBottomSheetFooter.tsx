@@ -1,10 +1,10 @@
-// Module ID: 17336
-// Function ID: 17337
+// Module ID: 17348
+// Function ID: 17349
 // Name: QuestBottomSheetFooter
-// Dependencies: [32, 19, 17, 5142, 1385, 7986, 5397, 21, 575, 5141, 6919, 9831, 9850, 9855, 11574, 504, 5732, 7870, 9828, 17337, 5768, 14896, 9869, 17303, 14907, 17331, 17333, 8168, 1113, 7143, 9867, 12420, 9834, 9837, 6923, 8011, 1627, 1493, 1652, 5378, 5774, 2]
+// Dependencies: [32, 19, 17, 5142, 1385, 7986, 5397, 21, 575, 5141, 6919, 9831, 9850, 9855, 11575, 504, 5732, 7870, 9828, 17349, 5768, 14897, 9869, 17315, 14908, 17343, 17345, 8168, 1113, 7143, 9867, 12421, 9834, 9837, 6923, 8011, 1627, 1493, 1652, 5378, 5774, 2]
 // Exports: default
 
-// Module 17336 (QuestBottomSheetFooter)
+// Module 17348 (QuestBottomSheetFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -20,9 +20,9 @@ import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9837 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9855 */;
 import ContentImpressionTrackerHooks from "ContentImpressionTrackerHooks" /* 9867 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9869 */;
-import RefreshIcon from "RefreshIcon" /* 12420 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14896 */;
-import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 17337 */;
+import RefreshIcon from "RefreshIcon" /* 12421 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14897 */;
+import QuestBottomSheetHooks from "QuestBottomSheetHooks" /* 17349 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -406,16 +406,16 @@ export default function QuestBottomSheetFooter(quest) {
       return null != xboxAndPlaystationAccounts.find((type) => type.type === closure_0);
     });
   }, items);
-  const obj5 = quest(17303);
+  const obj5 = quest(17315);
   const hasWatchVideoOnMobileTasks = obj5.useHasWatchVideoOnMobileTasks(quest.config);
-  const obj6 = quest(17303);
+  const obj6 = quest(17315);
   const mobileActivityQuest = obj6.useMobileActivityQuest(quest);
   ({ isMobileActivityQuest, launchMobileActivity, questApplication } = mobileActivityQuest);
-  const obj7 = quest(14907);
+  const obj7 = quest(14908);
   const primaryCtaCopy = obj7.usePrimaryCtaCopy({ quest, application: questApplication });
   const userStatus = quest.userStatus;
   let completedAt;
-  const obj8 = quest(17337);
+  const obj8 = quest(17349);
   const obj9 = { questId: quest.id, sourceQuestContent, launchMobileActivity };
   const mobileActivityPressHandler = obj8.useMobileActivityPressHandler(obj9);
   if (userStatus != null) {
@@ -429,17 +429,17 @@ export default function QuestBottomSheetFooter(quest) {
   }
   const tmp2Result = quest(9831);
   const isQuestAccessSuspended = tmp2Result.useIsQuestAccessSuspended();
-  const obj10 = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(17331) };
+  const obj10 = { disabled: true, onPressDisabled: xboxAndPlaystationAccounts(17343) };
   let tmp41Result6 = null;
-  if (step !== quest(17333).QuestBottomSheetStep.TASK_SELECT) {
+  if (step !== quest(17345).QuestBottomSheetStep.TASK_SELECT) {
     const obj11 = { onLayout, ctaButton: tmp41Result, backButton: tmp41Result5, style, withSafeArea };
     const tmp42 = AnimatedFooter;
-    if (quest(17333).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
+    if (quest(17345).QuestBottomSheetStep.CONSOLE_CONNECT === step) {
       const obj12 = { onPress: onConnectConsoleNext, disabled: 0 === memo.length };
       tmp41Result = tmp41(NextButton, obj12);
     } else {
       tmp41Result = null;
-      if (quest(17333).QuestBottomSheetStep.TASK_STATUS === step) {
+      if (quest(17345).QuestBottomSheetStep.TASK_STATUS === step) {
         let tmp41Result4;
         if (tmp12) {
           const obj13 = { questId: quest.id, onPress: tmp.claim, disabled: null != claimedAt, loading: isClaiming, sourceQuestContent };

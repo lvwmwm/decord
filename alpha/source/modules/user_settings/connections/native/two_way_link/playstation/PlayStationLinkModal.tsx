@@ -1,16 +1,16 @@
-// Module ID: 14848
-// Function ID: 14849
+// Module ID: 14849
+// Function ID: 14850
 // Name: PlayStationLinkModal
-// Dependencies: [19, 14849, 21, 7698, 8499, 14847, 1113, 14850, 9881, 14852, 14854, 14856, 14857, 9880, 14846, 7306, 2]
+// Dependencies: [19, 14850, 21, 7698, 8499, 14848, 1113, 14851, 9881, 14853, 14855, 14857, 14858, 9880, 14847, 7306, 2]
 // Exports: default
 
-// Module 14848 (PlayStationLinkModal)
+// Module 14849 (PlayStationLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7698 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8499 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14847 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14849 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14848 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14850 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ export default function PlayStationLinkModal(platformType) {
       }
     };
   }, items);
-  const obj2 = platformType(14846);
+  const obj2 = platformType(14847);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(platformType, locationStack);
   const Navigator = platformType(7306).Navigator;
   const intl = platformType(1113).intl;

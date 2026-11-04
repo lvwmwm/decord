@@ -1,10 +1,10 @@
-// Module ID: 19551
-// Function ID: 19552
+// Module ID: 19565
+// Function ID: 19566
 // Name: StreamEnded
-// Dependencies: [19, 21, 8947, 19552, 19553, 5148, 5851, 2]
+// Dependencies: [19, 21, 8947, 19566, 19567, 5148, 5851, 2]
 // Exports: StreamEnded, getStreamEndedSource, useStreamEndedSource
 
-// Module 19551 (StreamEnded)
+// Module 19565 (StreamEnded)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5148 */;
 import FastImageDefault from "FastImage" /* 5851 */;

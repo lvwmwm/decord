@@ -1,10 +1,10 @@
-// Module ID: 11748
-// Function ID: 11749
+// Module ID: 11749
+// Function ID: 11750
 // Name: useSocialLayerStorefrontEmbedData
-// Dependencies: [32, 5, 19, 7031, 7546, 11749, 5886, 11751, 11752, 11753, 504, 1380, 558, 7016, 11754, 11750, 2]
+// Dependencies: [32, 5, 19, 7031, 7546, 11750, 5886, 11752, 11753, 11754, 504, 1380, 558, 7016, 11755, 11751, 2]
 // Exports: collectSocialLayerStorefrontEmbedLinks, shouldRefreshSocialLayerStorefrontEmbed, useSocialLayerStorefrontEmbedData
 
-// Module 11748 (useSocialLayerStorefrontEmbedData)
+// Module 11749 (useSocialLayerStorefrontEmbedData)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import CodedLink from "CodedLink" /* 5886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -12,7 +12,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SKUStore from "SKUStore" /* 7031 */;
 import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7546 */;
-import SocialLayerStorefrontEmbedStore from "SocialLayerStorefrontEmbedStore" /* 11749 */;
+import SocialLayerStorefrontEmbedStore from "SocialLayerStorefrontEmbedStore" /* 11750 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -255,11 +255,11 @@ export function useSocialLayerStorefrontEmbedData(stateFromStores) {
   const items7 = [tmp14];
   const tmp9Result = tmp9(tmp10[10]);
   const stateFromStoresArray = tmp9Result.useStateFromStoresArray(items6, () => {
-    const f127385 = (applicationId) => applicationId.applicationId;
+    const f127841 = (applicationId) => applicationId.applicationId;
     const mapped = closure_7.map((item) => stateFromStoresObject1.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f127385))];
-    new Set(found.map(f127385));
+    const items = [...new Set(found.map(f127841))];
+    new Set(found.map(f127841));
     return items;
   }, items7);
   const items8 = [stateFromStoresArray, stateFromStoresObject, stateFromStoresObject1];

@@ -1,10 +1,10 @@
-// Module ID: 14042
-// Function ID: 14043
+// Module ID: 14043
+// Function ID: 14044
 // Name: ChatFloatingNavButton
 // Dependencies: [19, 17, 21, 5141, 575, 1652, 5732, 5771, 5772, 5851, 2]
 // Exports: default
 
-// Module 14042 (ChatFloatingNavButton)
+// Module 14043 (ChatFloatingNavButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,9 +1,9 @@
-// Module ID: 19663
-// Function ID: 19664
+// Module ID: 19677
+// Function ID: 19678
 // Name: AppIconPremiumManager
-// Dependencies: [5, 1385, 10159, 1072, 5166, 3, 10160, 7423, 1377, 15572, 5169, 14819, 1252, 2]
+// Dependencies: [5, 1385, 10159, 1072, 5166, 3, 10160, 7423, 1377, 15573, 5169, 14820, 1252, 2]
 
-// Module 19663 (AppIconPremiumManager)
+// Module 19677 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

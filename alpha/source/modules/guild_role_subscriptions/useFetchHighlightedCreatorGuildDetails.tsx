@@ -1,10 +1,10 @@
-// Module ID: 20193
-// Function ID: 20194
+// Module ID: 20207
+// Function ID: 20208
 // Name: useFetchHighlightedCreatorGuildDetails
 // Dependencies: [5, 32, 19, 7570, 2]
 // Exports: default
 
-// Module 20193 (useFetchHighlightedCreatorGuildDetails)
+// Module 20207 (useFetchHighlightedCreatorGuildDetails)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

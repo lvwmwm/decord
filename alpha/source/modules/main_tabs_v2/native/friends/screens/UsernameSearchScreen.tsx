@@ -1,10 +1,10 @@
-// Module ID: 19112
-// Function ID: 19113
+// Module ID: 19126
+// Function ID: 19127
 // Name: UsernameSearchScreen
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1252, 5743, 5398, 9970, 1377, 7096, 10914, 15909, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1252, 5743, 5398, 9970, 1377, 7096, 10914, 15922, 1113, 2]
 // Exports: default
 
-// Module 19112 (UsernameSearchScreen)
+// Module 19126 (UsernameSearchScreen)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -95,7 +95,7 @@ export default function UsernameSearchScreen(navigation) {
   items3 = [tmp.container, prop, { paddingBottom: insets.bottom + tmp3(575).space.PX_16 }];
   obj7 = { style: tmp.inputContainer, autoFocusInput: false, headerText: intl.string(navigation(1113).t.YEOwDM), headerTextStyle: tmp.headerText, ref };
   ({ paddingBottom: insets.bottom + ref(575).space.PX_16 });
-  tmp3Result2 = ref(15909);
+  tmp3Result2 = ref(15922);
   intl = tmp7(1113).intl;
   items2[1] = closure_8(closure_4, obj5);
   return closure_8(closure_5, obj3);

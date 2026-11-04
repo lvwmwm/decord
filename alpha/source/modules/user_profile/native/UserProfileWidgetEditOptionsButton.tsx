@@ -1,12 +1,12 @@
-// Module ID: 12560
-// Function ID: 12561
+// Module ID: 12561
+// Function ID: 12562
 // Name: UserProfileWidgetEditOptionsButton
-// Dependencies: [19, 21, 8168, 9906, 575, 1113, 12561, 2]
+// Dependencies: [19, 21, 8168, 9906, 575, 1113, 12562, 2]
 // Exports: default
 
-// Module 12560 (UserProfileWidgetEditOptionsButton)
+// Module 12561 (UserProfileWidgetEditOptionsButton)
 import Fragment from "Fragment" /* 21 */;
-import openUserProfileWidgetEditOptionsActionSheetDefault from "openUserProfileWidgetEditOptionsActionSheet" /* 12561 */;
+import openUserProfileWidgetEditOptionsActionSheetDefault from "openUserProfileWidgetEditOptionsActionSheet" /* 12562 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

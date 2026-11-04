@@ -1,10 +1,10 @@
-// Module ID: 12018
-// Function ID: 12019
+// Module ID: 12019
+// Function ID: 12020
 // Name: useEmbeddedAppCSP
 // Dependencies: [5, 11066, 504, 11068, 11067, 5806, 2]
 // Exports: default
 
-// Module 12018 (useEmbeddedAppCSP)
+// Module 12019 (useEmbeddedAppCSP)
 import EmbeddedAppFramePolicyExperiment from "EmbeddedAppFramePolicyExperiment" /* 11067 */;
 import EmbeddedAppCSPActionCreators from "EmbeddedAppCSPActionCreators" /* 11068 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

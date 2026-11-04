@@ -1,9 +1,9 @@
-// Module ID: 14158
-// Function ID: 14159
+// Module ID: 14159
+// Function ID: 14160
 // Name: SelectDoubleTapEmojiRow
 // Dependencies: [19, 17, 5142, 5397, 1388, 21, 5141, 1377, 575, 504, 7121, 7436, 1411, 10122, 1493, 5091, 8567, 10118, 5752, 9599, 2]
 
-// Module 14158 (SelectDoubleTapEmojiRow)
+// Module 14159 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
@@ -146,8 +146,8 @@ const memoResult = react.memo(function SelectDoubleTapEmojiRow(selectedEmoji) {
   const items = [onPressEmoji];
   const stateFromStores = obj2.useStateFromStores(items, () => onPressEmoji.useReducedMotion);
   const found = frequentlyUsedReactionEmojis.filter((emoji) => {
-    const obj = onPressEmoji(substr[15]);
     const obj2 = { emoji, channel: "Array", intention: constants.DEFAULT_REACT_EMOJI };
+    const obj = onPressEmoji(substr[15]);
     return !obj.isEmojiFilteredOrLocked(obj2);
   });
   substr = found.slice(0, rounded - 1);

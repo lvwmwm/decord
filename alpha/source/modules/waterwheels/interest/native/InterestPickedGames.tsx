@@ -1,15 +1,15 @@
-// Module ID: 19840
-// Function ID: 19841
+// Module ID: 19854
+// Function ID: 19855
 // Name: InterestPickedGames
-// Dependencies: [19, 17, 21, 575, 5141, 15174, 13644, 1113, 2537, 9656, 5851, 5761, 2]
+// Dependencies: [19, 17, 21, 575, 5141, 15175, 13645, 1113, 2537, 9656, 5851, 5761, 2]
 // Exports: default
 
-// Module 19840 (InterestPickedGames)
+// Module 19854 (InterestPickedGames)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import FastImageDefault from "FastImage" /* 5851 */;
-import useGameRecordsDefault from "useGameRecords" /* 15174 */;
+import useGameRecordsDefault from "useGameRecords" /* 15175 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -52,9 +52,9 @@ export default function InterestPickedGames(gameIds) {
     return null;
   } else {
     const _Math = Math;
-    let tmp7 = closure_3;
     importDefault = Math.ceil(PX_24 * closure_3.get());
-    let obj2 = {
+    let tmp9 = closure_4;
+    ({
       "aria-label": formatToPlainString(z5uqej, obj3),
       shape: require("ClipView").CutoutShape.RoundedRect,
       size: PX_24,
@@ -62,24 +62,24 @@ export default function InterestPickedGames(gameIds) {
       depthX: 0.25,
       children: arr.map((getIconURL) => {
           let name;
-          let tmp7;
+          let tmp9;
           let iconURL = getIconURL.getIconURL(closure_1);
           const tmp = closure_1;
           if (iconURL == null) {
             iconURL = getIconURL.getCoverURL(tmp);
           }
           if (null != iconURL) {
-            const obj2 = { uri: iconURL };
-            tmp7 = jsx(FastImageDefault, { accessible: false, source: obj2, style: icon.icon, resizeMode: "cover" }, getIconURL.id);
+            const obj3 = { uri: iconURL };
+            tmp9 = jsx(FastImageDefault, { accessible: false, source: obj3, style: icon.icon, resizeMode: "cover" }, getIconURL.id);
           } else {
             ({ variant: "body-xs/semibold", lineClamp: 1, children: name.slice(0, 1) });
             name = getIconURL.name;
             const Text = Text_Text.Text;
-            tmp7 = <React3 key={arg0.id} accessible={false} style={closure_0.fallback}>{null}</React3>;
+            tmp9 = <React3 key={arg0.id} accessible={false} style={closure_0.fallback}>{null}</React3>;
           }
-          return tmp7;
+          return tmp9;
         })
-    };
+    });
     const Pile = require("Pile").Pile;
     const intl = require("intl").intl;
     formatToPlainString = intl.formatToPlainString;

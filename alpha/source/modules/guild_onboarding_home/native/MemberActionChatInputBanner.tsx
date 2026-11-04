@@ -1,9 +1,9 @@
-// Module ID: 14052
-// Function ID: 14053
+// Module ID: 14053
+// Function ID: 14054
 // Name: MemberActionChatInputBanner
-// Dependencies: [32, 19, 17, 5142, 6931, 4990, 5053, 1072, 1388, 21, 5141, 575, 563, 5786, 5761, 1113, 1187, 13450, 5851, 1411, 5087, 14053, 7539, 1652, 5378, 14054, 7121, 1099, 14051, 7537, 2]
+// Dependencies: [32, 19, 17, 5142, 6931, 4990, 5053, 1072, 1388, 21, 5141, 575, 563, 5786, 5761, 1113, 1187, 13451, 5851, 1411, 5087, 14054, 7539, 1652, 5378, 14055, 7121, 1099, 14052, 7537, 2]
 
-// Module 14052 (MemberActionChatInputBanner)
+// Module 14053 (MemberActionChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -16,10 +16,10 @@ import Text_Text from "Text/Text" /* 5761 */;
 import useChannelNameDefault from "useChannelName" /* 5786 */;
 import FastImageDefault from "FastImage" /* 5851 */;
 import Pressables from "Pressables" /* 7121 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13450 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14051 */;
-import MemberActionUtils from "MemberActionUtils" /* 14053 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14054 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13451 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14052 */;
+import MemberActionUtils from "MemberActionUtils" /* 14054 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14055 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -444,7 +444,7 @@ const memoResult = react.memo(function MemberActionChatInputBannerGuarded(channe
     return true === isPending;
   });
   let tmp3 = null;
-  const obj3 = channel(14053);
+  const obj3 = channel(14054);
   if (!obj3.useAllActionsCompleted(channel.guild_id)) {
     tmp3 = null;
     if (!stateFromStores) {

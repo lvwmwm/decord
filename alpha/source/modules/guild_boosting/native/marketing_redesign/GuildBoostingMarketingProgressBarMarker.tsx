@@ -1,20 +1,20 @@
-// Module ID: 15700
-// Function ID: 15701
+// Module ID: 15701
+// Function ID: 15702
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1072, 21, 15701, 15702, 15703, 5141, 575, 5377, 1652, 5138, 5148, 5771, 14375, 5851, 11784, 5761, 8604, 2]
+// Dependencies: [19, 17, 1072, 21, 15702, 15703, 15704, 5141, 575, 5377, 1652, 5138, 5148, 5771, 14376, 5851, 11785, 5761, 8604, 2]
 // Exports: default
 
-// Module 15700 (GuildBoostingMarketingProgressBarMarker)
+// Module 15701 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useThemeDefault from "useTheme" /* 5377 */;
 import spring_spring from "spring/spring" /* 5771 */;
 import FastImageDefault from "FastImage" /* 5851 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11784 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15701 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 15702 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 15703 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11785 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15702 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 15703 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 15704 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -116,7 +116,7 @@ function ProgressBarMarkerInnerContent(arg0) {
   if (tier !== BoostedGuildTiers.NONE) {
     let tmp23Result;
     if (isDisabled) {
-      tmp23Result = tmp23(tmp5(14375).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
+      tmp23Result = tmp23(tmp5(14376).BoostGemSlashIcon, { size: "xxs", color: "currentColor" });
     } else {
       obj2 = { source: obj2[tier], style: items3 };
       items3 = [isTierUnlocked ? tmp.progressBarMarkerInnerCircleIconUnlocked : tmp.progressBarMarkerInnerCircleIcon, ];

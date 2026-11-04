@@ -1,10 +1,10 @@
-// Module ID: 12872
-// Function ID: 12873
+// Module ID: 12873
+// Function ID: 12874
 // Name: useConjureVoiceChannelPin
 // Dependencies: [5, 32, 19, 4990, 5071, 5073, 5083, 1385, 6979, 11049, 1072, 504, 5786, 11141, 2]
 // Exports: useConjureVoiceChannelPinForm, useConjureVoiceChannelPinOutcome
 
-// Module 12872 (useConjureVoiceChannelPin)
+// Module 12873 (useConjureVoiceChannelPin)
 import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
 import useChannelName from "useChannelName" /* 5786 */;
 import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 11141 */;

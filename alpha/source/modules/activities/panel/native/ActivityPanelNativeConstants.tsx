@@ -1,9 +1,9 @@
-// Module ID: 19261
-// Function ID: 19262
+// Module ID: 19275
+// Function ID: 19276
 // Name: ActivityPanelNativeConstants
 // Dependencies: [5791, 2]
 
-// Module 19261 (ActivityPanelNativeConstants)
+// Module 19275 (ActivityPanelNativeConstants)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
 import size from "module_2" /* 2 */;
 

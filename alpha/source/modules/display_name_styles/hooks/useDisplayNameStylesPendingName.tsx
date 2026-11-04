@@ -1,10 +1,10 @@
-// Module ID: 16720
-// Function ID: 16721
+// Module ID: 16732
+// Function ID: 16733
 // Name: useDisplayNameStylesPendingName
 // Dependencies: [8872, 5053, 5195, 504, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 16720 (useDisplayNameStylesPendingName)
+// Module 16732 (useDisplayNameStylesPendingName)
 import UserUtilsDefault from "UserUtils" /* 5195 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8872 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;

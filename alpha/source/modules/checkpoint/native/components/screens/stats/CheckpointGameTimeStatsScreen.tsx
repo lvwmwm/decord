@@ -1,10 +1,10 @@
-// Module ID: 13895
-// Function ID: 13896
+// Module ID: 13896
+// Function ID: 13897
 // Name: CheckpointGameTimeStatsScreen
-// Dependencies: [17, 13656, 6201, 21, 5141, 575, 504, 6572, 1113, 3219, 13863, 13870, 13896, 13897, 9260, 13865, 13877, 13878, 13879, 2]
+// Dependencies: [17, 13657, 6201, 21, 5141, 575, 504, 6572, 1113, 3219, 13864, 13871, 13897, 13898, 9260, 13866, 13878, 13879, 13880, 2]
 // Exports: default
 
-// Module 13895 (CheckpointGameTimeStatsScreen)
+// Module 13896 (CheckpointGameTimeStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,8 +12,8 @@ import _modDef3219 from "module_3219" /* 3219 */;
 import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6572 */;
 import CalendarIcon from "CalendarIcon" /* 9260 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13879 */;
-import CheckpointStore from "CheckpointStore" /* 13656 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13880 */;
+import CheckpointStore from "CheckpointStore" /* 13657 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -107,9 +107,9 @@ export default function CheckpointGameTimeStatsScreen() {
   }
   const obj4 = { style: tmp.container, children: items2 };
   const obj5 = { style: tmp.imageContainer, children: metroRequire(tmp13Result4, obj6) };
-  obj6 = { animatedUri: tmp13(13896), staticUri: tmp13(13897), style: tmp.image };
-  const tmp13Result = tmp13(13863);
-  tmp13Result4 = tmp13(13870);
+  obj6 = { animatedUri: tmp13(13897), staticUri: tmp13(13898), style: tmp.image };
+  const tmp13Result = tmp13(13864);
+  tmp13Result4 = tmp13(13871);
   items2 = [metroRequire(View, obj5), ];
   const obj8 = { style: tmp.title, children: items3 };
   items3 = [, ];
@@ -117,21 +117,21 @@ export default function CheckpointGameTimeStatsScreen() {
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
   items3[0] = metroRequire(CalendarIcon.CalendarIcon, obj9);
   const obj10 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp13Result5 = tmp13(13865);
+  const tmp13Result5 = tmp13(13866);
   items3[1] = metroRequire(tmp13Result5, obj10);
   items4 = [metroImportDefault(View, obj8), , ];
   if (roundResult <= 0 && null != stateFromStores1) {
     const obj11 = { value: stateFromStores1 };
-    tmp15Result = tmp15(tmp13(13877), obj11);
+    tmp15Result = tmp15(tmp13(13878), obj11);
   } else {
     const _HermesInternal = HermesInternal;
-    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp13(13878), obj13) };
+    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp13(13879), obj13) };
     obj13 = { end: roundResult };
     tmp15Result = tmp15(tmp18, obj12);
   }
   items4[1] = tmp15Result;
   const obj14 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatToPlainStringResult1 };
-  const tmp13Result6 = tmp13(13865);
+  const tmp13Result6 = tmp13(13866);
   if (roundResult <= 0 && null != stateFromStores1) {
     const intl5 = tmp2(1113).intl;
     const formatToPlainString = intl5.formatToPlainString;

@@ -1,16 +1,16 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17208
+// Function ID: 17209
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 5381, 5141, 575, 1652, 5378, 1705, 5723, 17197, 5761, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5381, 5141, 575, 1652, 5378, 1705, 5723, 17209, 5761, 1113, 2]
 // Exports: default
 
-// Module 17196 (BountiesScrollIndicatorOverlay)
+// Module 17208 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
 import timingPresets from "timingPresets" /* 5381 */;
 import LinearGradientDefault from "LinearGradient" /* 5723 */;
-import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17197 */;
+import BountiesScrollIndicatorAnimationDefault from "BountiesScrollIndicatorAnimation" /* 17209 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -90,7 +90,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   let items = [enabled];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f141670 = () => {
+    const f142231 = () => {
       importDefault(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -98,13 +98,13 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
       if (closure_0) {
         num = closure_2_9;
       }
-      enabled = _setTimeout(f141670, num);
+      enabled = _setTimeout(f142231, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f141670, closure_1_9);
+      timeout = setTimeout(f142231, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);

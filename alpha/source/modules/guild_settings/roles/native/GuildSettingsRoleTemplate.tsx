@@ -1,10 +1,10 @@
-// Module ID: 20047
-// Function ID: 20048
+// Module ID: 20061
+// Function ID: 20062
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 5142, 5012, 20043, 1072, 21, 5141, 575, 7258, 1493, 5398, 1652, 1252, 5894, 8993, 7121, 5761, 10807, 1187, 11784, 5768, 1113, 2]
+// Dependencies: [32, 19, 17, 5142, 5012, 20057, 1072, 21, 5141, 575, 7258, 1493, 5398, 1652, 1252, 5894, 8993, 7121, 5761, 10807, 1187, 11785, 5768, 1113, 2]
 // Exports: default
 
-// Module 20047 (GuildSettingsRoleTemplate)
+// Module 20061 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -13,13 +13,13 @@ import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5398 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7258 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11784 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11785 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20043 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20057 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;

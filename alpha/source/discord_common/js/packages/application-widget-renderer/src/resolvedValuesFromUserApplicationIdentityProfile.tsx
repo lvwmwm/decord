@@ -1,12 +1,12 @@
-// Module ID: 12546
-// Function ID: 12547
+// Module ID: 12547
+// Function ID: 12548
 // Name: resolvedValuesFromUserApplicationIdentityProfile
-// Dependencies: [32, 12465, 12547, 2]
+// Dependencies: [32, 12466, 12548, 2]
 // Exports: default
 
-// Module 12546 (resolvedValuesFromUserApplicationIdentityProfile)
-import resolvedValues from "resolvedValues" /* 12465 */;
-import ProfileDataDynamicType from "ProfileDataDynamicType" /* 12547 */;
+// Module 12547 (resolvedValuesFromUserApplicationIdentityProfile)
+import resolvedValues from "resolvedValues" /* 12466 */;
+import ProfileDataDynamicType from "ProfileDataDynamicType" /* 12548 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -74,16 +74,16 @@ function resolvedValuesFromDynamic(data) {
       let iter = nextResult;
       let tmp5 = require;
       if (nextResult.type === ProfileDataDynamicType.ProfileDataDynamicType.STRING) {
-        let obj2 = { type: tmp5(12465).ResolvedValueType.STRING, value: iter.value };
+        let obj2 = { type: tmp5(12466).ResolvedValueType.STRING, value: iter.value };
         let name3 = iter.name;
         obj[name3] = obj2;
-      } else if (iter.type === tmp5(12547).ProfileDataDynamicType.NUMBER) {
-        let obj3 = { type: tmp5(12465).ResolvedValueType.NUMBER, value: iter.value };
+      } else if (iter.type === tmp5(12548).ProfileDataDynamicType.NUMBER) {
+        let obj3 = { type: tmp5(12466).ResolvedValueType.NUMBER, value: iter.value };
         let name2 = iter.name;
         obj[name2] = obj3;
-      } else if (iter.type === tmp5(12547).ProfileDataDynamicType.MEDIA) {
+      } else if (iter.type === tmp5(12548).ProfileDataDynamicType.MEDIA) {
         if (isVisualUnfurledMedia(iter.value)) {
-          let obj4 = { type: tmp5(12465).ResolvedValueType.MEDIA, media: size };
+          let obj4 = { type: tmp5(12466).ResolvedValueType.MEDIA, media: size };
           let name = iter.name;
           size = { url: iter.value.proxy_url, width: iter.value.width, height: iter.value.height };
           obj[name] = obj4;

@@ -1,17 +1,17 @@
-// Module ID: 13480
-// Function ID: 13481
+// Module ID: 13481
+// Function ID: 13482
 // Name: ModerateUserActionSheet
-// Dependencies: [19, 5053, 5012, 5073, 1385, 1072, 21, 5141, 504, 13481, 13482, 6176, 5382, 7504, 1113, 7701, 6879, 13483, 2123, 13479, 5060, 13503, 13487, 5859, 13505, 13216, 13507, 5396, 7457, 13509, 7201, 2]
+// Dependencies: [19, 5053, 5012, 5073, 1385, 1072, 21, 5141, 504, 13482, 13483, 6176, 5382, 7504, 1113, 7701, 6879, 13484, 2123, 13480, 5060, 13504, 13488, 5859, 13506, 13217, 13508, 5396, 7457, 13510, 7201, 2]
 
-// Module 13480 (ModerateUserActionSheet)
+// Module 13481 (ModerateUserActionSheet)
 import Constants from "Constants" /* 1072 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
-import GuildMemberUtils from "GuildMemberUtils" /* 13481 */;
-import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 13482 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 13487 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 13505 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 13507 */;
+import GuildMemberUtils from "GuildMemberUtils" /* 13482 */;
+import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 13483 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 13488 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 13506 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 13508 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -129,7 +129,7 @@ const memoResult = react.memo(function ModerateUserActionSheet(user) {
                       arr.pop();
                     }
                   };
-                  obj.pushLazy(asyncRequire(13483, dependencyMap.paths), obj2);
+                  obj.pushLazy(asyncRequire(13484, dependencyMap.paths), obj2);
                 }
         };
         const ActionSheetRow = tmp2(tmp3[13]).ActionSheetRow;

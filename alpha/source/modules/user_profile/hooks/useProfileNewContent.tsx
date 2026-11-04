@@ -1,10 +1,10 @@
-// Module ID: 15195
-// Function ID: 15196
+// Module ID: 15196
+// Function ID: 15197
 // Name: useProfileNewContent
-// Dependencies: [9618, 1385, 7912, 15196, 15197, 504, 7924, 7923, 9617, 2]
+// Dependencies: [9618, 1385, 7912, 15197, 15198, 504, 7924, 7923, 9617, 2]
 // Exports: default
 
-// Module 15195 (useProfileNewContent)
+// Module 15196 (useProfileNewContent)
 import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7923 */;
 import ProfileReadStateSection from "ProfileReadStateSection" /* 7924 */;
 import WishlistStore from "WishlistStore" /* 9618 */;

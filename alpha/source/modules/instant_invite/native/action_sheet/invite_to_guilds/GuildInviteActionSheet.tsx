@@ -1,10 +1,10 @@
-// Module ID: 15026
-// Function ID: 15027
+// Module ID: 15027
+// Function ID: 15028
 // Name: GuildInviteActionSheet
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1187, 1113, 15027, 15028, 15024, 5761, 5743, 11600, 15029, 7457, 5396, 7355, 9265, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1187, 1113, 15028, 15029, 15025, 5761, 5743, 11601, 15030, 7457, 5396, 7355, 9265, 2]
 // Exports: default
 
-// Module 15026 (GuildInviteActionSheet)
+// Module 15027 (GuildInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -14,9 +14,9 @@ import Text_Text from "Text/Text" /* 5761 */;
 import SearchBar2 from "SearchBar" /* 7355 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7457 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 9265 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15027 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15028 */;
-import GuildInviteRowDefault from "GuildInviteRow" /* 15029 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15028 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15029 */;
+import GuildInviteRowDefault from "GuildInviteRow" /* 15030 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -55,7 +55,7 @@ function GuildList(recipientId) {
   dependencyMap = closure_8();
   let tmp = recipientId;
   let tmp2 = dependencyMap;
-  let obj = recipientId(15024);
+  let obj = recipientId(15025);
   [arr, arr2] = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   const tmp3 = _slicedToArray(obj.useServerInviteRows(recipientId, query), 2);
   if (0 === arr.length) {
@@ -100,7 +100,7 @@ function GuildList(recipientId) {
         },
       ListEmptyComponent: EmptyGuildList
     };
-    const UserProfileStackedActionSheetSectionList = tmp(11600).UserProfileStackedActionSheetSectionList;
+    const UserProfileStackedActionSheetSectionList = tmp(11601).UserProfileStackedActionSheetSectionList;
     const tmp6 = closure_6;
     if (tmp5) {
       num = 24;

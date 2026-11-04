@@ -1,10 +1,10 @@
-// Module ID: 20069
-// Function ID: 20070
+// Module ID: 20083
+// Function ID: 20084
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1252, 5382, 5845, 7457, 1113, 7502, 20047, 6093, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1252, 5382, 5845, 7457, 1113, 7502, 20061, 6093, 2]
 // Exports: default
 
-// Module 20069 (RolePermissionTemplatesActionSheet)
+// Module 20083 (RolePermissionTemplatesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

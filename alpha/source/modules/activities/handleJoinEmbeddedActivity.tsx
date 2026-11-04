@@ -1,10 +1,10 @@
-// Module ID: 11893
-// Function ID: 11894
+// Module ID: 11894
+// Function ID: 11895
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 2167, 4990, 5044, 1385, 4989, 2147, 5811, 5062, 11894, 11936, 11935, 5812, 11946, 9106, 13404, 11922, 2]
+// Dependencies: [5, 2167, 4990, 5044, 1385, 4989, 2147, 5811, 5062, 11895, 11937, 11936, 5812, 11947, 9106, 13405, 11923, 2]
 // Exports: default
 
-// Module 11893 (handleJoinEmbeddedActivity)
+// Module 11894 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2147 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
@@ -80,7 +80,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

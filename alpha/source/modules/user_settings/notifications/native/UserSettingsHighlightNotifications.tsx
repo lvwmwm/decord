@@ -1,10 +1,10 @@
-// Module ID: 17757
-// Function ID: 17758
+// Module ID: 17769
+// Function ID: 17770
 // Name: UserSettingsHighlightNotifications
 // Dependencies: [19, 5012, 6907, 6910, 1072, 21, 7424, 7419, 504, 7098, 7505, 8317, 2]
 // Exports: default
 
-// Module 17757 (UserSettingsHighlightNotifications)
+// Module 17769 (UserSettingsHighlightNotifications)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import GuildIconDefault from "GuildIcon" /* 7098 */;

@@ -1,7 +1,7 @@
 // Module ID: 9926
 // Function ID: 9927
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7616, 502, 4990, 7841, 6196, 7970, 1112, 1072, 5146, 7583, 7964, 7595, 1113, 9927, 11, 1282, 8483, 9928, 7966, 1398, 8352, 9930, 8344, 5894, 7776, 6093, 572, 5148, 1089, 10493, 14821, 2]
+// Dependencies: [32, 5, 19, 7616, 502, 4990, 7841, 6196, 7970, 1112, 1072, 5146, 7583, 7964, 7595, 1113, 9927, 11, 1282, 8483, 9928, 7966, 1398, 8352, 9930, 8344, 5894, 7776, 6093, 572, 5148, 1089, 10493, 14822, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
 // Module 9926 (ThreadCreationHooks)

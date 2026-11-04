@@ -1,10 +1,10 @@
-// Module ID: 15194
-// Function ID: 15195
+// Module ID: 15195
+// Function ID: 15196
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 15069, 8859, 15074, 5141, 575, 9053, 5207, 8283, 5148, 5851, 1411, 2155, 5761, 15056, 7462, 7487, 15081, 15082, 9462, 9486, 7121, 1113, 2]
+// Dependencies: [19, 17, 21, 15070, 8859, 15075, 5141, 575, 9053, 5207, 8283, 5148, 5851, 1411, 2155, 5761, 15057, 7462, 7487, 15082, 15083, 9462, 9486, 7121, 1113, 2]
 // Exports: default
 
-// Module 15194 (UserProfileRecentActivityCard)
+// Module 15195 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
@@ -17,11 +17,11 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
 import utils from "utils" /* 8859 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 9053 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 15056 */;
-import BadgesAll from "Badges" /* 15069 */;
-import TrendingType from "TrendingType" /* 15074 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 15081 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 15082 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 15057 */;
+import BadgesAll from "Badges" /* 15070 */;
+import TrendingType from "TrendingType" /* 15075 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 15082 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 15083 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -306,7 +306,7 @@ export default function UserProfileRecentActivityCard(style) {
           obj8 = { title: entry.extra.activity_name };
           const obj7 = { title: entry.extra.activity_name };
         } else {
-          obj8 = { title: "r" };
+          obj8 = { title: "Array" };
         }
       }
     }

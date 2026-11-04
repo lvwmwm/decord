@@ -1,9 +1,9 @@
-// Module ID: 16977
-// Function ID: 16978
+// Module ID: 16989
+// Function ID: 16990
 // Name: HighlightedSettingsTypes
 // Dependencies: [2]
 
-// Module 16977 (HighlightedSettingsTypes)
+// Module 16989 (HighlightedSettingsTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/safety/HighlightedSettingsTypes.tsx");

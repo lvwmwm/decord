@@ -1,10 +1,10 @@
-// Module ID: 15394
-// Function ID: 15395
+// Module ID: 15395
+// Function ID: 15396
 // Name: InAppReportsIgnoreUserElement
-// Dependencies: [19, 4990, 5083, 1072, 21, 504, 6176, 5894, 7628, 15395, 1113, 7237, 2]
+// Dependencies: [19, 4990, 5083, 1072, 21, 504, 6176, 5894, 7628, 15396, 1113, 7237, 2]
 // Exports: default
 
-// Module 15394 (InAppReportsIgnoreUserElement)
+// Module 15395 (InAppReportsIgnoreUserElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;

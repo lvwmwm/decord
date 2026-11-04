@@ -1,9 +1,9 @@
-// Module ID: 20286
-// Function ID: 20287
+// Module ID: 20300
+// Function ID: 20301
 // Name: clips/ClipsManager
-// Dependencies: [5, 5917, 1231, 502, 4990, 2135, 5898, 8025, 1385, 2141, 8354, 1072, 6850, 5902, 7423, 15443, 5923, 6852, 1252, 4966, 572, 20287, 20288, 4952, 1377, 15442, 2]
+// Dependencies: [5, 5917, 1231, 502, 4990, 2135, 5898, 8025, 1385, 2141, 8354, 1072, 6850, 5902, 7423, 15444, 5923, 6852, 1252, 4966, 572, 20301, 20302, 4952, 1377, 15443, 2]
 
-// Module 20286 (clips/ClipsManager)
+// Module 20300 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -14,8 +14,8 @@ import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5917 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 5923 */;
 import Constants3 from "Constants" /* 6850 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6852 */;
-import ClipsExperiment from "ClipsExperiment" /* 15443 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20287 */;
+import ClipsExperiment from "ClipsExperiment" /* 15444 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20301 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -42,7 +42,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(15442);
+const isClipsEnabled = tmp(15443);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_14, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: closure_15, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_16, CLIPS_DEFAULT_SETTINGS_VERSION: closure_17, ClipsHardwareClassification: closure_18, CLIP_RUNTIME: closure_19 } = ClipsConstants);
 ({ AnalyticEvents: closure_20, RTCConnectionStates: closure_21 } = Constants);
@@ -395,7 +395,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp6 = tmp5 && hardwareClassification === constants.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmpResult = tmp(20288);
+            const tmpResult = tmp(20302);
             allowDefaultOn = tmpResult.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp6, enableAutoclipping: tmp6, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };

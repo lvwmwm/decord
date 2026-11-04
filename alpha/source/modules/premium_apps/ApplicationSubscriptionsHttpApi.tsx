@@ -1,10 +1,10 @@
-// Module ID: 11938
-// Function ID: 11939
+// Module ID: 11939
+// Function ID: 11940
 // Name: ApplicationSubscriptionsHttpApi
 // Dependencies: [5, 1072, 1282, 572, 6582, 2]
 // Exports: fetchApplication, fetchEligibleApplicationSubscriptionGuilds, getApplicationSubscriptionGroupListingsForApplication, getEntitlementsForGuild, getSubscriptionGroupForSubscriptionPlan
 
-// Module 11938 (ApplicationSubscriptionsHttpApi)
+// Module 11939 (ApplicationSubscriptionsHttpApi)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import APIErrorDefault from "APIError" /* 6582 */;

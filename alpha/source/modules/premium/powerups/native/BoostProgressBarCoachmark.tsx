@@ -1,10 +1,10 @@
-// Module ID: 18465
-// Function ID: 18466
+// Module ID: 18479
+// Function ID: 18480
 // Name: BoostProgressBarCoachmark
 // Dependencies: [19, 17, 4987, 21, 5141, 9219, 1113, 2699, 5271, 10133, 2]
 // Exports: default
 
-// Module 18465 (BoostProgressBarCoachmark)
+// Module 18479 (BoostProgressBarCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;

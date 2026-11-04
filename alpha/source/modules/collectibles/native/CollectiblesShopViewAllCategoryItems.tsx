@@ -1,9 +1,9 @@
-// Module ID: 18123
-// Function ID: 18124
+// Module ID: 18135
+// Function ID: 18136
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [5, 32, 19, 17, 5764, 9731, 7737, 1074, 1072, 21, 5141, 575, 1499, 18124, 504, 2188, 9698, 10090, 7487, 9719, 18125, 1113, 5761, 5768, 18080, 14708, 7462, 1627, 17226, 1652, 5771, 5772, 1252, 7903, 9609, 10867, 18126, 18105, 2]
+// Dependencies: [5, 32, 19, 17, 5764, 9731, 7737, 1074, 1072, 21, 5141, 575, 1499, 18136, 504, 2188, 9698, 10090, 7487, 9719, 18137, 1113, 5761, 5768, 18092, 14709, 7462, 1627, 17238, 1652, 5771, 5772, 1252, 7903, 9609, 10867, 18138, 18117, 2]
 
-// Module 18123 (CollectiblesShopViewAllCategoryItems)
+// Module 18135 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

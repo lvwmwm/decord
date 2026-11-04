@@ -1,17 +1,17 @@
-// Module ID: 18717
-// Function ID: 18718
+// Module ID: 18731
+// Function ID: 18732
 // Name: YouBarName
-// Dependencies: [19, 17, 6849, 4990, 5073, 5895, 5083, 6705, 5813, 21, 5141, 575, 10950, 9440, 11602, 504, 11582, 10927, 5896, 10925, 10926, 18718, 10923, 10944, 5761, 5195, 2]
+// Dependencies: [19, 17, 6849, 4990, 5073, 5895, 5083, 6705, 5813, 21, 5141, 575, 10950, 9440, 11603, 504, 11583, 10927, 5896, 10925, 10926, 18732, 10923, 10944, 5761, 5195, 2]
 
-// Module 18717 (YouBarName)
+// Module 18731 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildTagDefault from "GuildTag" /* 9440 */;
 import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10925 */;
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10926 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10950 */;
-import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11602 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 18718 */;
+import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11603 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 18732 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -58,7 +58,7 @@ const memoResult = react.memo(function YouName(userId) {
   let obj = userId(504);
   let items = [SelfPresenceStore];
   const stateFromStores = obj.useStateFromStores(items, () => status.getStatus());
-  let obj2 = userId(11582);
+  let obj2 = userId(11583);
   const customStatusActivity = obj2.useCustomStatusActivity();
   let state;
   const useGameMentionsAsPlainText = userId(10927).useGameMentionsAsPlainText;

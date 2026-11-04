@@ -1,9 +1,9 @@
-// Module ID: 20420
-// Function ID: 20421
+// Module ID: 20433
+// Function ID: 20434
 // Name: TTITestAction
-// Dependencies: [5, 19621, 5362, 7067, 502, 4990, 5176, 5012, 1072, 3, 572, 5329, 11283, 19781, 1371, 1376, 1252, 5322, 7776, 13552, 9979, 5890, 6875, 9091, 5891, 12261, 17810, 1197, 2]
+// Dependencies: [5, 19635, 5362, 7067, 502, 4990, 5176, 5012, 1072, 3, 572, 5329, 11283, 19795, 1371, 1376, 1252, 5322, 7776, 13553, 9979, 5890, 6875, 9091, 5891, 12262, 17822, 1197, 2]
 
-// Module 20420 (TTITestAction)
+// Module 20433 (TTITestAction)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtils from "AnalyticsUtils" /* 1252 */;
 import ProcessUtilsDefault from "ProcessUtils" /* 1371 */;
@@ -13,8 +13,8 @@ import react_nativeDefault from "react-native" /* 5329 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6875 */;
 import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7067 */;
 import ComponentProfiler from "ComponentProfiler" /* 11283 */;
-import NativeAppStartup from "NativeAppStartup" /* 19621 */;
-import react_nativeDefault2 from "react-native" /* 19781 */;
+import NativeAppStartup from "NativeAppStartup" /* 19635 */;
+import react_nativeDefault2 from "react-native" /* 19795 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ExperimentStore from "ExperimentStore" /* 5362 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -433,7 +433,7 @@ obj = function _setupTTITest() {
               error2 = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
             break;
           }
@@ -1034,13 +1034,13 @@ obj = function _apiLogin() {
             closure_0 = iter;
             obj = password(closure_2_2[10]);
             closure_1 = iter;
-            const f142412 = () => {
+            const f142974 = () => {
               const error = new Error("Unable to login " + closure_0 + ". Login failed with action '" + obj + "'");
               closure_2_1(error);
             };
             function handler(arg0) {
               obj.unsubscribe(closure_1, handler);
-              return f142412(arg0);
+              return f142974(arg0);
             }
             const subscription = obj.subscribe(iter, handler);
           }
@@ -1072,7 +1072,7 @@ function subscribeOnce(subscribe, arg1, arg2) {
   let closure_2 = arg2;
   function handler(arg0) {
     obj.unsubscribe(closure_1, handler);
-    return f142412(arg0);
+    return f142974(arg0);
   }
   return subscribe.subscribe("LOGIN_SUCCESS", handler);
 }

@@ -1,17 +1,17 @@
 // Module ID: 2141
 // Function ID: 2142
 // Name: ClipsStore
-// Dependencies: [5, 2142, 502, 8354, 1072, 5998, 16111, 4952, 16112, 1398, 16113, 16115, 16116, 504, 572, 2]
+// Dependencies: [5, 2142, 502, 8354, 1072, 5998, 16124, 4952, 16125, 1398, 16126, 16128, 16129, 504, 572, 2]
 
 // Module 2141 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
 import DiscordNativeDefault from "DiscordNative" /* 4952 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16111 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 16113 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16115 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16116 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16124 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 16126 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16128 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16129 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2142 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

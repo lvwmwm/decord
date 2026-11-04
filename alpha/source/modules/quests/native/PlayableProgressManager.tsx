@@ -1,11 +1,11 @@
-// Module ID: 20377
-// Function ID: 20378
+// Module ID: 20390
+// Function ID: 20391
 // Name: PlayableProgressManager
-// Dependencies: [20378, 3, 7423, 2]
+// Dependencies: [20391, 3, 7423, 2]
 
-// Module 20377 (PlayableProgressManager)
+// Module 20390 (PlayableProgressManager)
 import LoggerDefault from "Logger" /* 3 */;
-import PlayableStore_mod from "PlayableStore" /* 20378 */;
+import PlayableStore_mod from "PlayableStore" /* 20391 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 

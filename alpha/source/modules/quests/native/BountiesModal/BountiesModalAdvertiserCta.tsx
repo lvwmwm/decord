@@ -1,10 +1,10 @@
-// Module ID: 17198
-// Function ID: 17199
+// Module ID: 17210
+// Function ID: 17211
 // Name: BountiesModalAdvertiserCta
-// Dependencies: [109, 19, 17, 5142, 6916, 21, 1652, 5141, 575, 5378, 5381, 17199, 9845, 5775, 9867, 9869, 6923, 8011, 6921, 8320, 5851, 5761, 5768, 17162, 504, 17163, 10139, 2]
+// Dependencies: [109, 19, 17, 5142, 6916, 21, 1652, 5141, 575, 5378, 5381, 17211, 9845, 5775, 9867, 9869, 6923, 8011, 6921, 8320, 5851, 5761, 5768, 17174, 504, 17175, 10139, 2]
 // Exports: default
 
-// Module 17198 (BountiesModalAdvertiserCta)
+// Module 17210 (BountiesModalAdvertiserCta)
 import nativeDefault from "native" /* 575 */;
 import timing_timing from "timing/timing" /* 5378 */;
 import timingPresets from "timingPresets" /* 5381 */;
@@ -169,7 +169,7 @@ export default function BountiesModalAdvertiserCta(visible) {
   visible = visible.visible;
   let merged = Object.assign(visible, Object.assign({ visible: 0 }));
   let animatedStyle;
-  let obj = animatedStyle(17162);
+  let obj = animatedStyle(17174);
   const isBountiesModalTransitionsRefactorEnabled = obj.useIsBountiesModalTransitionsRefactorEnabled(QuestsExperimentLocations.VIDEO_MODAL_MOBILE);
   const obj2 = animatedStyle(504);
   let items = [AccessibilityStore];
@@ -214,7 +214,7 @@ export default function BountiesModalAdvertiserCta(visible) {
     const merged = Object.assign(arg0);
     return authStore(BountiesModalAdvertiserCtaContent, obj);
   }, items3);
-  const tmp2Result2 = animatedStyle(17163);
+  const tmp2Result2 = animatedStyle(17175);
   const obj3 = { visible, entranceTiming: animatedStyle(5381).timingStandard, exitTiming: animatedStyle(5381).timingFast };
   const visibilityTransition = tmp2Result2.useVisibilityTransition(obj3);
   let shouldRender = visibilityTransition.shouldRender;

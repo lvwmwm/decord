@@ -1,17 +1,17 @@
-// Module ID: 16868
-// Function ID: 16869
+// Module ID: 16880
+// Function ID: 16881
 // Name: AgeGroupResetSetting
-// Dependencies: [8573, 21, 11728, 1113, 3223, 16869, 6095, 16865, 2]
+// Dependencies: [8573, 21, 11729, 1113, 3223, 16881, 6095, 16877, 2]
 
-// Module 16868 (AgeGroupResetSetting)
+// Module 16880 (AgeGroupResetSetting)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3223 from "module_3223" /* 3223 */;
 import useAlertStore from "useAlertStore" /* 6095 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16865 */;
-import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 16869 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16877 */;
+import SettingsAgeGroupResetAlert from "SettingsAgeGroupResetAlert" /* 16881 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

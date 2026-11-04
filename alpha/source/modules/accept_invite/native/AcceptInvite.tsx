@@ -1,10 +1,10 @@
-// Module ID: 14538
-// Function ID: 14539
+// Module ID: 14539
+// Function ID: 14540
 // Name: AcceptInvite
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1380, 5732, 5745, 14539, 14542, 1411, 1446, 14547, 1493, 5851, 7118, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1380, 5732, 5745, 14540, 14543, 1411, 1446, 14548, 1493, 5851, 7118, 2]
 // Exports: default
 
-// Module 14538 (AcceptInvite)
+// Module 14539 (AcceptInvite)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
@@ -103,12 +103,12 @@ function AcceptInviteCardComponent(invite) {
     return closure_8(InviteResolving, {});
   } else if (constants.DETAILS === first) {
     const obj2 = { invite };
-    const tmp16 = first(14539);
+    const tmp16 = first(14540);
     const merged = Object.assign(invite);
     return closure_8(tmp16, obj2);
   } else if (tmp22.ERROR === first) {
     let obj = { invite };
-    const tmp9 = first(14542);
+    const tmp9 = first(14543);
     const merged1 = Object.assign(invite);
     return closure_8(tmp9, obj);
   } else {
@@ -155,7 +155,7 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(14547);
+    guildSplashSource = tmp3(14548);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };

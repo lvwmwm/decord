@@ -1,10 +1,10 @@
-// Module ID: 16734
-// Function ID: 16735
+// Module ID: 16746
+// Function ID: 16747
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7875, 7866, 1072, 21, 5141, 575, 8898, 8882, 7462, 7487, 1252, 8883, 8879, 8876, 5396, 7457, 1113, 8884, 10782, 504, 16735, 15296, 8878, 8899, 16736, 15302, 15303, 8885, 11580, 5723, 2]
+// Dependencies: [32, 19, 17, 7875, 7866, 1072, 21, 5141, 575, 8898, 8882, 7462, 7487, 1252, 8883, 8879, 8876, 5396, 7457, 1113, 8884, 10783, 504, 16747, 15297, 8878, 8899, 16748, 15303, 15304, 8885, 11581, 5723, 2]
 // Exports: default
 
-// Module 16734 (EditProfileEffectActionSheet)
+// Module 16746 (EditProfileEffectActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -14,7 +14,7 @@ import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators
 import UserProfileActionCreators from "UserProfileActionCreators" /* 8879 */;
 import useShopProductItems from "useShopProductItems" /* 8883 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8899 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 16736 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 16748 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -163,7 +163,7 @@ function ProfileEffectSectionPreview(arg0) {
     }
     return tmp3;
   }, items);
-  items1 = [closure_9(purchase(11580), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
+  items1 = [closure_9(purchase(11581), { user, guildId, profileEffect: memo, maxWidth: 250 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
   const tmp4 = purchase(5723);

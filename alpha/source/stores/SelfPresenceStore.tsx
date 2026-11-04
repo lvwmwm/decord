@@ -1,7 +1,7 @@
 // Module ID: 6705
 // Function ID: 6706
 // Name: SelfPresenceStore
-// Dependencies: [4989, 6706, 1231, 4990, 2161, 6840, 2165, 11713, 5895, 5900, 1072, 5896, 7720, 4966, 15753, 10940, 1342, 12, 504, 572, 2]
+// Dependencies: [4989, 6706, 1231, 4990, 2161, 6840, 2165, 11714, 5895, 5900, 1072, 5896, 7720, 4966, 15754, 10940, 1342, 12, 504, 572, 2]
 
 // Module 6705 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,7 +11,7 @@ import UserSettings from "UserSettings" /* 4966 */;
 import PresenceStore2 from "PresenceStore" /* 5895 */;
 import ActivityTypes from "ActivityTypes" /* 5896 */;
 import LibraryApplicationUtils from "LibraryApplicationUtils" /* 7720 */;
-import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 15753 */;
+import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 15754 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import SpotifyStore from "SpotifyStore" /* 6706 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -19,7 +19,7 @@ import ChannelStore from "ChannelStore" /* 4990 */;
 import DetectableGameStore from "DetectableGameStore" /* 2161 */;
 import IdleStore from "IdleStore" /* 6840 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2165 */;
-import LocalActivityStore from "LocalActivityStore" /* 11713 */;
+import LocalActivityStore from "LocalActivityStore" /* 11714 */;
 import SessionsStore from "SessionsStore" /* 5900 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

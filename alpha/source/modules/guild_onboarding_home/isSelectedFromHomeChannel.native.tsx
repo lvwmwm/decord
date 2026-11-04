@@ -1,10 +1,10 @@
-// Module ID: 11421
-// Function ID: 11422
+// Module ID: 11422
+// Function ID: 11423
 // Name: isSelectedFromHomeChannel
 // Dependencies: [6997, 5044, 4997, 5323, 5322, 2]
 // Exports: default
 
-// Module 11421 (isSelectedFromHomeChannel)
+// Module 11422 (isSelectedFromHomeChannel)
 import ChannelConstants from "ChannelConstants" /* 4997 */;
 import RootNavigationRef from "RootNavigationRef" /* 5323 */;
 import ChannelSectionStore from "ChannelSectionStore" /* 6997 */;

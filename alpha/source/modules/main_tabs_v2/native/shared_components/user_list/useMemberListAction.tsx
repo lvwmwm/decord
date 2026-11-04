@@ -1,14 +1,14 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 11815
+// Function ID: 11816
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4990, 5073, 5083, 1385, 10912, 1072, 21, 5141, 563, 11815, 11816, 9176, 7354, 11819, 11828, 11829, 1113, 11159, 11158, 5171, 4974, 11831, 11836, 7701, 11837, 2017, 9263, 6162, 8319, 9877, 11841, 2533, 2]
+// Dependencies: [32, 19, 17, 4990, 5073, 5083, 1385, 10912, 1072, 21, 5141, 563, 11816, 11817, 9176, 7354, 11820, 11829, 11830, 1113, 11159, 11158, 5171, 4974, 11832, 11837, 7701, 11838, 2017, 9263, 6162, 8319, 9877, 11842, 2533, 2]
 // Exports: default
 
-// Module 11814 (useMemberListAction)
+// Module 11815 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
 import UsersFastListConstants from "UsersFastListConstants" /* 10912 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11815 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11819 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11816 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11820 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -34,7 +34,7 @@ let PermissionStore = PermissionStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "PX_8", listActionHeight: "__closure" };
+let closure_16 = { listActionRenderer: "Object", listActionHeight: "Array" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_17 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 11672
-// Function ID: 11673
+// Module ID: 11673
+// Function ID: 11674
 // Name: PlusMediumIcon
-// Dependencies: [19, 21, 575, 5850, 11673, 2]
+// Dependencies: [19, 21, 575, 5850, 11674, 2]
 // Exports: PlusMediumIcon
 
-// Module 11672 (PlusMediumIcon)
+// Module 11673 (PlusMediumIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 11673 */;
+import AssetRegistry from "AssetRegistry" /* 11674 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

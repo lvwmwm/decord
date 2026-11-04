@@ -1,10 +1,10 @@
-// Module ID: 13577
-// Function ID: 13578
+// Module ID: 13578
+// Function ID: 13579
 // Name: FamilyCenterModalRequest
-// Dependencies: [5, 19, 17, 1385, 7856, 21, 5141, 575, 1499, 563, 7857, 13578, 8513, 13579, 8112, 8113, 1187, 1411, 1113, 2667, 5761, 5851, 13580, 13581, 13427, 6902, 5768, 6879, 13588, 8511, 38, 11784, 8499, 7095, 6867, 2121, 8095, 6864, 13592, 6861, 7139, 11670, 2]
+// Dependencies: [5, 19, 17, 1385, 7856, 21, 5141, 575, 1499, 563, 7857, 13579, 8513, 13580, 8112, 8113, 1187, 1411, 1113, 2667, 5761, 5851, 13581, 13582, 13428, 6902, 5768, 6879, 13589, 8511, 38, 11785, 8499, 7095, 6867, 2121, 8095, 6864, 13593, 6861, 7139, 11671, 2]
 // Exports: default
 
-// Module 13577 (FamilyCenterModalRequest)
+// Module 13578 (FamilyCenterModalRequest)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
@@ -23,10 +23,10 @@ import ModalScreen2 from "ModalScreen" /* 8112 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8499 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8511 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 8513 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11784 */;
-import ModalFooter2 from "ModalFooter" /* 13427 */;
-import FamilyCenterModalRequestRouting from "FamilyCenterModalRequestRouting" /* 13578 */;
-import EnvelopeSpotIllustration from "EnvelopeSpotIllustration" /* 13588 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11785 */;
+import ModalFooter2 from "ModalFooter" /* 13428 */;
+import FamilyCenterModalRequestRouting from "FamilyCenterModalRequestRouting" /* 13579 */;
+import EnvelopeSpotIllustration from "EnvelopeSpotIllustration" /* 13589 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -63,7 +63,7 @@ let size;
 let size1;
 let size2;
 let unpackModuleId;
-const f105231 = () => {
+const f105363 = () => {
   currentUser = currentUser.getCurrentUser();
   let prop;
   if (currentUser != null) {
@@ -293,7 +293,7 @@ class FamilyCenterModalRequestSuccess {
     items1[2] = unpackModuleId(Text2, obj6);
     items2 = [unpackModuleId(ModalContent, obj8), ];
     const obj9 = { children: unpackModuleId(Button, obj10) };
-    const ModalFooter = tmp2(13427).ModalFooter;
+    const ModalFooter = tmp2(13428).ModalFooter;
     obj10 = { size: "lg", text: intl3.string(intl8.t.cpT0Cq), onPress: callback };
     Button = tmp2(5768).Button;
     intl3 = tmp2(1113).intl;
@@ -358,7 +358,7 @@ class FamilyCenterModalRequestError {
     items3[2] = unpackModuleId(Text_Text.Text, obj12);
     items4 = [authStore2(ModalContent, obj10), ];
     const obj13 = { children: unpackModuleId(Button, obj14) };
-    const ModalFooter = tmp2(13427).ModalFooter;
+    const ModalFooter = tmp2(13428).ModalFooter;
     obj14 = { text: intl.string(intl8.t.cpT0Cq), onPress: callback };
     Button = tmp2(5768).Button;
     intl = tmp2(1113).intl;
@@ -501,7 +501,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [UserStore];
-  const stateFromStores = obj2.useStateFromStores(items, f105231);
+  const stateFromStores = obj2.useStateFromStores(items, f105363);
   const tmp7 = stateFromStores(6867)(stateFromStores);
   dependencyMap = tmp7;
   const items1 = [stateFromStores, tmp7, navigation];
@@ -517,7 +517,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
     const result = obj.showAgeVerificationGetStartedModal(obj2);
   }, []);
   const obj3 = { style: tmp.content, children: items2 };
-  const obj4 = { style: tmp.art, children: closure_11(navigation(13592).FamilyShieldSpotIllustration, {}) };
+  const obj4 = { style: tmp.art, children: closure_11(navigation(13593).FamilyShieldSpotIllustration, {}) };
   const ModalScreen = navigation(8112).ModalScreen;
   items2 = [closure_11(View, obj4), , ];
   const obj5 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: formatToPlainString(pQQMJ7, { username: str }) };
@@ -548,7 +548,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   items2[2] = closure_11(Text2, obj7);
   items3 = [closure_12(tmp11, obj3), ];
   const obj8 = { children: closure_12(ButtonGroup, obj9) };
-  const ModalFooter = tmp2(13427).ModalFooter;
+  const ModalFooter = tmp2(13428).ModalFooter;
   obj9 = { children: items4 };
   ButtonGroup = tmp2(6902).ButtonGroup;
   const obj10 = { variant: "primary", text: intl3.string(stateFromStores(2667)["3oUE4o"]), onPress: callback };
@@ -638,7 +638,7 @@ function FamilyCenterPrereqMustBeAdultScreen() {
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [UserStore];
-  const stateFromStores = obj2.useStateFromStores(items, f105231);
+  const stateFromStores = obj2.useStateFromStores(items, f105363);
   const tmp3 = stateFromStores(6867)(stateFromStores);
   dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];
@@ -821,8 +821,8 @@ export default function FamilyCenterRequestModal(userId) {
     obj12 = NavigatorHeader;
     return obj;
   }, items);
-  let obj = { initialRouteName: userId(13578).FamilyCenterModalRequestSections.PREREQ_LOADING, screens: memo, headerBackTitle: intl.string(userId(1113).t["13/7kX"]) };
-  const Modal = userId(11670).Modal;
+  let obj = { initialRouteName: userId(13579).FamilyCenterModalRequestSections.PREREQ_LOADING, screens: memo, headerBackTitle: intl.string(userId(1113).t["13/7kX"]) };
+  const Modal = userId(11671).Modal;
   intl = userId(1113).intl;
   return closure_11(Modal, obj);
 };

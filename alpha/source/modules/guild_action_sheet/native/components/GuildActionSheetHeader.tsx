@@ -1,18 +1,18 @@
-// Module ID: 16031
-// Function ID: 16032
+// Module ID: 16044
+// Function ID: 16045
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 16032, 5012, 7585, 1072, 21, 5141, 575, 1357, 9450, 1113, 11520, 7121, 5846, 9453, 1187, 9457, 5761, 7258, 504, 5004, 16033, 16034, 1493, 7098, 1411, 5851, 1446, 9970, 5732, 9452, 11526, 2]
+// Dependencies: [19, 17, 16045, 5012, 7585, 1072, 21, 5141, 575, 1357, 9450, 1113, 11521, 7121, 5846, 9453, 1187, 9457, 5761, 7258, 504, 5004, 16046, 16047, 1493, 7098, 1411, 5851, 1446, 9970, 5732, 9452, 11527, 2]
 // Exports: default
 
-// Module 16031 (GuildActionSheetHeader)
+// Module 16044 (GuildActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 5004 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 16033 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 16046 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 16032 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 16045 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 7585 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ function CommunityPill(guildVisibility) {
   _require = string(tmp4 ? t.op2cJ6 : t.TME4LJ);
   let ExperimentalWebIcon;
   if (tmp4) {
-    ExperimentalWebIcon = tmp2(11520).ExperimentalWebIcon;
+    ExperimentalWebIcon = tmp2(11521).ExperimentalWebIcon;
   }
   let obj = {
     style: tmp.communityPill,

@@ -1,14 +1,14 @@
-// Module ID: 14290
-// Function ID: 14291
+// Module ID: 14291
+// Function ID: 14292
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [5353, 14291, 4974, 1113, 2699, 504, 5357, 14292, 2]
+// Dependencies: [5353, 14292, 4974, 1113, 2699, 504, 5357, 14293, 2]
 // Exports: default, getGuildThemeRollbackNotificationConfig
 
-// Module 14290 (useGuildPowerupRollbackNotificationConfig)
+// Module 14291 (useGuildPowerupRollbackNotificationConfig)
 import intl3 from "intl" /* 1113 */;
 import _modDef2699 from "module_2699" /* 2699 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14291 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 14292 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5353 */;
 import size from "module_2" /* 2 */;
 

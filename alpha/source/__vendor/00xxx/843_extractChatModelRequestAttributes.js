@@ -13,7 +13,7 @@ import LANGCHAIN_INTEGRATION_NAME from "LANGCHAIN_INTEGRATION_NAME" /* 844 */;
 
 let generationInfo, text;
 
-const f79949 = (_getType) => {
+const f80079 = (_getType) => {
   let content;
   let tmp30;
   _getType = _getType._getType;
@@ -343,7 +343,7 @@ export function extractChatModelRequestAttributes(id, arr, arg2, invocationParam
     if (Array.isArray(arr)) {
       if (arr.length > 0) {
         const flatResult = arr.flat();
-        const mapped = flatResult.map(f79949);
+        const mapped = flatResult.map(f80079);
         let obj2 = extractSystemInstructions;
         const result = obj2.extractSystemInstructions(mapped);
         ({ systemInstructions, filteredMessages } = result);
@@ -748,5 +748,5 @@ export function getInvocationParams(invocation_params) {
   }
 }
 export function normalizeLangChainMessages(items) {
-  return items.map(f79949);
+  return items.map(f80079);
 }

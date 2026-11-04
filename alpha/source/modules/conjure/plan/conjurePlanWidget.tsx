@@ -1,13 +1,13 @@
-// Module ID: 12950
-// Function ID: 12951
+// Module ID: 12951
+// Function ID: 12952
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2191, 6979, 12462, 12951, 12952, 12280, 12344, 504, 2]
+// Dependencies: [32, 19, 2191, 6979, 12463, 12952, 12953, 12281, 12345, 504, 2]
 // Exports: useConjurePlanWidget
 
-// Module 12950 (conjurePlanWidget)
-import _mod12462 from "module_12462" /* 12462 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 12951 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12952 */;
+// Module 12951 (conjurePlanWidget)
+import _mod12463 from "module_12463" /* 12463 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 12952 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12953 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
@@ -119,7 +119,7 @@ function sampleValues(surfaces, sample_data, arg2) {
       let _String = String;
       let tmp15 = arg2[String(undefined, tmp8)];
       if (null != tmp15) {
-        let obj3 = { type: _mod12462.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod12463.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp16, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
@@ -127,11 +127,11 @@ function sampleValues(surfaces, sample_data, arg2) {
       let obj5;
       let tmp10 = tmp8;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod12462.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod12463.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp11 = require;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod12462.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod12463.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }

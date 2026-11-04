@@ -1,11 +1,11 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12273
+// Function ID: 12274
 // Name: AnimatedKeyboardProviderController
-// Dependencies: [19, 21, 1652, 12273, 1641, 2]
+// Dependencies: [19, 21, 1652, 12274, 1641, 2]
 
-// Module 12272 (AnimatedKeyboardProviderController)
+// Module 12273 (AnimatedKeyboardProviderController)
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
-import KeyboardPreloadExperiment2 from "KeyboardPreloadExperiment" /* 12273 */;
+import KeyboardPreloadExperiment2 from "KeyboardPreloadExperiment" /* 12274 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652_mod from "module_1652" /* 1652 */;

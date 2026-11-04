@@ -1,8 +1,8 @@
-// Module ID: 19302
-// Function ID: 19303
+// Module ID: 19316
+// Function ID: 19317
 // Dependencies: [2]
 
-// Module 19302
+// Module 19316
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/collectibles/frames/announcement_sheet_frame.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 19710
-// Function ID: 19711
+// Module ID: 19724
+// Function ID: 19725
 // Name: createEmbeddedAppShimHost
-// Dependencies: [19711, 12, 19706, 2]
+// Dependencies: [19725, 12, 19720, 2]
 // Exports: createEmbeddedAppShimHost
 
-// Module 19710 (createEmbeddedAppShimHost)
+// Module 19724 (createEmbeddedAppShimHost)
 import _mod12 from "module_12" /* 12 */;
-import protocol from "protocol" /* 19706 */;
+import protocol from "protocol" /* 19720 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

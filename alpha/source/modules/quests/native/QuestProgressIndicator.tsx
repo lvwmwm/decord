@@ -1,9 +1,9 @@
-// Module ID: 17345
-// Function ID: 17346
+// Module ID: 17357
+// Function ID: 17358
 // Name: QuestProgressIndicator
-// Dependencies: [19, 17, 5142, 21, 1652, 8171, 5141, 575, 504, 5378, 7121, 1113, 5755, 17291, 14903, 2]
+// Dependencies: [19, 17, 5142, 21, 1652, 8171, 5141, 575, 504, 5378, 7121, 1113, 5755, 17303, 14904, 2]
 
-// Module 17345 (QuestProgressIndicator)
+// Module 17357 (QuestProgressIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import timing_timing from "timing/timing" /* 5378 */;

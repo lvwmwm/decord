@@ -1,13 +1,13 @@
-// Module ID: 18208
-// Function ID: 18209
+// Module ID: 18222
+// Function ID: 18223
 // Name: RedesignSettingsCategoryCallsMessagesScreen
-// Dependencies: [19, 21, 11728, 18203, 16823, 2]
+// Dependencies: [19, 21, 11729, 18215, 18220, 2]
 
-// Module 18208 (RedesignSettingsCategoryCallsMessagesScreen)
+// Module 18222 (RedesignSettingsCategoryCallsMessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
-import SettingLayoutDefault from "SettingLayout" /* 16823 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18203 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18215 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18220 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const memoResult = react.memo(function RedesignSettingsCategoryCallsMessagesScre
     items[0] = obj2.buildCategoryCallsMessagesSettingsSection();
     return createList(obj);
   }, []);
-  return jsx(SettingLayoutDefault, { node });
+  return jsx(EffectiveNotifSettingsLayoutDefault, { node });
 });
 const result = size.fileFinishedImporting("modules/notifications/settings/native/routes/RedesignSettingsCategoryCallsMessagesScreen.tsx");
 

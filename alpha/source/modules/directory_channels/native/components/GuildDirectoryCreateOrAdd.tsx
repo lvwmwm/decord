@@ -1,10 +1,10 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14077
+// Function ID: 14078
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 14077, 14075, 21, 5141, 575, 504, 7116, 7098, 14078, 9125, 1113, 5761, 9359, 1627, 5768, 1499, 7100, 14083, 14074, 7430, 2]
+// Dependencies: [32, 19, 17, 14078, 14076, 21, 5141, 575, 504, 7116, 7098, 14079, 9125, 1113, 5761, 9359, 1627, 5768, 1499, 7100, 14084, 14075, 7430, 2]
 // Exports: default
 
-// Module 14076 (GuildDirectoryCreateOrAdd)
+// Module 14077 (GuildDirectoryCreateOrAdd)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
@@ -14,11 +14,11 @@ import GuildIconDefault from "GuildIcon" /* 7098 */;
 import TableRow2 from "TableRow" /* 7116 */;
 import SegmentedControlState from "SegmentedControlState" /* 9125 */;
 import SegmentedControl from "SegmentedControl" /* 9359 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 14075 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 14076 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 14077 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 14078 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -107,7 +107,7 @@ let closure_12 = react.memo(function GuildDirectoryEntryEditRow(guild) {
   const tmp = closure_11();
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(7098), obj3), trailing: closure_9(directoryChannelId(14078), { entry: stateFromStores }), start, end };
+  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(7098), obj3), trailing: closure_9(directoryChannelId(14079), { entry: stateFromStores }), start, end };
   const TableRow = guild(7116).TableRow;
   obj3 = { style: tmp.guildIcon, guild };
   return closure_9(TableRow, obj2);

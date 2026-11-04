@@ -9,8 +9,8 @@ import _createClass from "_createClass" /* 42 */;
 let _TransformStream, _undefined, asyncIterator, hasOwnProperty, set;
 
 let _self;
-const f126054 = () => 1;
-const f126072 = () => {
+const f126510 = () => 1;
+const f126528 = () => {
   self._pulling = false;
   if (self._pullAgain) {
     self._pullAgain = false;
@@ -19,13 +19,13 @@ const f126072 = () => {
         self._pullAgain = true;
       } else {
         self._pulling = true;
-        then.call(then.call(self._pullAlgorithm(), f126072, f126073), undefined, fn);
+        then.call(then.call(self._pullAlgorithm(), f126528, f126529), undefined, fn);
       }
     }
   }
   return null;
 };
-const f126073 = function(arg0) {
+const f126529 = function(arg0) {
   const _controlledReadableStream = self._controlledReadableStream;
   if ("readable" === _controlledReadableStream._state) {
     self = this;
@@ -2019,15 +2019,15 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
     let no;
     let tmp3;
     let typeError;
-    const f141230 = () => {
+    const f141785 = () => {
       let callResult;
       if (closure_0 !== closure_9) {
         closure_0 = closure_1_9;
-        callResult = fn.call(closure_1_9, f141230, undefined);
+        callResult = fn.call(closure_1_9, f141785, undefined);
       }
       return callResult;
     };
-    const f141238 = () => {
+    const f141793 = () => {
       _ownerWritableStream = _ownerWritableStream._ownerWritableStream;
       const _state = _ownerWritableStream._state;
       let tmp2 = undefined !== _ownerWritableStream._closeRequest;
@@ -2051,7 +2051,7 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
     _self = arg0;
     writable = arg1;
     fn = function q(fn, arg1, _storedError) {
-      const f142189 = () => {
+      const f142750 = () => {
         closure_2_75(closure_1_7);
         closure_2_22(closure_1_6);
         const obj = closure_1_5;
@@ -2067,7 +2067,7 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
         }
         return null;
       };
-      const f142190 = (arg0) => {
+      const f142751 = (arg0) => {
         closure_3_75(_readyPromise);
         closure_3_22(closure_2_6);
         const obj = closure_2_5;
@@ -2088,14 +2088,14 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
           const tmp3 = undefined !== tmp2._closeRequest || undefined !== tmp2._inFlightCloseRequest;
           if (!tmp3) {
             closure_0 = closure_1_9;
-            then.call(then.call(then.call(closure_1_9, f141230, undefined), function n() {
+            then.call(then.call(then.call(closure_1_9, f141785, undefined), function n() {
               let obj = then;
-              obj.call(then.call(closure_0(), f142189, f142190), undefined, fn);
+              obj.call(then.call(closure_0(), f142750, f142751), undefined, fn);
               return null;
             }, undefined), undefined, fn);
           }
         }
-        then.call(then.call(fn(), f142189, f142190), undefined, fn);
+        then.call(then.call(fn(), f142750, f142751), undefined, fn);
       }
     };
     class E {
@@ -2111,7 +2111,7 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
             if (!tmp3) {
               closure_0 = closure_1_9;
               let obj = then;
-              let callResult = obj.call(obj.call(then.call(closure_1_9, f141230, undefined), () => {
+              let callResult = obj.call(obj.call(then.call(closure_1_9, f141785, undefined), () => {
                 closure_2_75(_readyPromise);
                 closure_2_22(closure_1_6);
                 const obj = closure_1_5;
@@ -2225,7 +2225,7 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
                 if (!tmp3) {
                   closure_0 = closure_1_9;
                   let obj = then;
-                  let callResult = obj.call(obj.call(then.call(closure_1_9, f141230, undefined), () => {
+                  let callResult = obj.call(obj.call(then.call(closure_1_9, f141785, undefined), () => {
                     closure_2_75(_readyPromise);
                     closure_2_22(closure_1_6);
                     const obj = closure_1_5;
@@ -2322,7 +2322,7 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
       if (tmp13) {
         E();
       } else {
-        fn(f141238);
+        fn(f141793);
       }
     } else {
       then.call(then.call(tmp12, function lo() {
@@ -2332,7 +2332,7 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
           E();
         } else {
           let tmp2 = fn;
-          fn(f141238);
+          fn(f141793);
         }
         return null;
       }, undefined), undefined, closure_1_2);
@@ -2356,7 +2356,7 @@ function ir(self, arg1, preventClose, preventAbort, preventCancel, signal) {
               if (!tmp3) {
                 closure_0 = closure_1_9;
                 let obj = then;
-                let callResult = obj.call(obj.call(then.call(closure_1_9, f141230, undefined), () => {
+                let callResult = obj.call(obj.call(then.call(closure_1_9, f141785, undefined), () => {
                   closure_2_75(_readyPromise);
                   closure_2_22(closure_1_6);
                   const obj = closure_1_5;
@@ -2453,7 +2453,7 @@ function sr(_pulling) {
       _pulling._pullAgain = true;
     } else {
       _pulling._pulling = true;
-      then.call(then.call(_pulling._pullAlgorithm(), f126072, f126073), undefined, fn);
+      then.call(then.call(_pulling._pullAlgorithm(), f126528, f126529), undefined, fn);
     }
   }
 }
@@ -2550,7 +2550,7 @@ function _r(_controlledReadableStream, _readableStreamController, S, fn, _cancel
         _readableStreamController._pullAgain = true;
       } else {
         _readableStreamController._pulling = true;
-        then.call(then.call(_readableStreamController._pullAlgorithm(), f126072, f126073), undefined, fn);
+        then.call(then.call(_readableStreamController._pullAlgorithm(), f126528, f126529), undefined, fn);
       }
     }
     return null;
@@ -4613,7 +4613,7 @@ class WritableStream {
     } else {
       const highWaterMark = tmp7.highWaterMark;
       let num = 1;
-      const tmp30 = tmp7.size || f126054;
+      const tmp30 = tmp7.size || f126510;
       if (undefined !== highWaterMark) {
         if (!closure_2_41(highWaterMark)) {
           num = highWaterMark;
@@ -5795,7 +5795,7 @@ const items9 = [
             self._pullAgain = true;
           } else {
             self._pulling = true;
-            then.call(then.call(self._pullAlgorithm(), f126072, f126073), undefined, fn);
+            then.call(then.call(self._pullAlgorithm(), f126528, f126529), undefined, fn);
           }
         }
       } else {
@@ -5807,7 +5807,7 @@ const items9 = [
           } else {
             self._pulling = true;
             const obj = then;
-            obj.call(then.call(self._pullAlgorithm(), f126072, f126073), undefined, fn);
+            obj.call(then.call(self._pullAlgorithm(), f126528, f126529), undefined, fn);
           }
         }
       }
@@ -6089,7 +6089,7 @@ class ReadableStream {
     } else {
       const highWaterMark = tmp7.highWaterMark;
       let num4 = 1;
-      const tmp40 = tmp7.size || f126054;
+      const tmp40 = tmp7.size || f126510;
       if (undefined !== highWaterMark) {
         if (!closure_2_41(highWaterMark)) {
           num4 = highWaterMark;
@@ -6423,15 +6423,15 @@ const items10 = [
                       let no;
                       let tmp3;
                       let typeError;
-                      const f141230 = () => {
+                      const f141785 = () => {
                         let callResult;
                         if (closure_0 !== closure_9) {
                           closure_0 = closure_1_9;
-                          callResult = fn.call(closure_1_9, f141230, undefined);
+                          callResult = fn.call(closure_1_9, f141785, undefined);
                         }
                         return callResult;
                       };
-                      const f141238 = () => {
+                      const f141793 = () => {
                         _ownerWritableStream = _ownerWritableStream._ownerWritableStream;
                         const _state = _ownerWritableStream._state;
                         let tmp2 = undefined !== _ownerWritableStream._closeRequest;
@@ -6455,7 +6455,7 @@ const items10 = [
                       _self = arg0;
                       writable = arg1;
                       fn = function q(fn, arg1, _storedError) {
-                        const f142189 = () => {
+                        const f142750 = () => {
                           closure_2_75(closure_1_7);
                           closure_2_22(closure_1_6);
                           const obj = closure_1_5;
@@ -6471,7 +6471,7 @@ const items10 = [
                           }
                           return null;
                         };
-                        const f142190 = (arg0) => {
+                        const f142751 = (arg0) => {
                           closure_3_75(_readyPromise);
                           closure_3_22(closure_2_6);
                           const obj = closure_2_5;
@@ -6492,14 +6492,14 @@ const items10 = [
                             const tmp3 = undefined !== tmp2._closeRequest || undefined !== tmp2._inFlightCloseRequest;
                             if (!tmp3) {
                               closure_0 = closure_1_9;
-                              then.call(then.call(then.call(closure_1_9, f141230, undefined), function n() {
+                              then.call(then.call(then.call(closure_1_9, f141785, undefined), function n() {
                                 let obj = then;
-                                obj.call(then.call(closure_0(), f142189, f142190), undefined, fn);
+                                obj.call(then.call(closure_0(), f142750, f142751), undefined, fn);
                                 return null;
                               }, undefined), undefined, fn);
                             }
                           }
-                          then.call(then.call(fn(), f142189, f142190), undefined, fn);
+                          then.call(then.call(fn(), f142750, f142751), undefined, fn);
                         }
                       };
                       class E {
@@ -6515,7 +6515,7 @@ const items10 = [
                               if (!tmp3) {
                                 closure_0 = closure_1_9;
                                 let obj = then;
-                                let callResult = obj.call(obj.call(then.call(closure_1_9, f141230, undefined), () => {
+                                let callResult = obj.call(obj.call(then.call(closure_1_9, f141785, undefined), () => {
                                   closure_2_75(_readyPromise);
                                   closure_2_22(closure_1_6);
                                   const obj = closure_1_5;
@@ -6629,7 +6629,7 @@ const items10 = [
                                   if (!tmp3) {
                                     closure_0 = closure_1_9;
                                     let obj = then;
-                                    let callResult = obj.call(obj.call(then.call(closure_1_9, f141230, undefined), () => {
+                                    let callResult = obj.call(obj.call(then.call(closure_1_9, f141785, undefined), () => {
                                       closure_2_75(_readyPromise);
                                       closure_2_22(closure_1_6);
                                       const obj = closure_1_5;
@@ -6726,7 +6726,7 @@ const items10 = [
                         if (tmp13) {
                           E();
                         } else {
-                          fn(f141238);
+                          fn(f141793);
                         }
                       } else {
                         then.call(then.call(tmp12, function lo() {
@@ -6736,7 +6736,7 @@ const items10 = [
                             E();
                           } else {
                             let tmp2 = fn;
-                            fn(f141238);
+                            fn(f141793);
                           }
                           return null;
                         }, undefined), undefined, closure_1_2);
@@ -6760,7 +6760,7 @@ const items10 = [
                                 if (!tmp3) {
                                   closure_0 = closure_1_9;
                                   let obj = then;
-                                  let callResult = obj.call(obj.call(then.call(closure_1_9, f141230, undefined), () => {
+                                  let callResult = obj.call(obj.call(then.call(closure_1_9, f141785, undefined), () => {
                                     closure_2_75(_readyPromise);
                                     closure_2_22(closure_1_6);
                                     const obj = closure_1_5;
@@ -6936,7 +6936,7 @@ const items10 = [
       let obj8;
       let obj9;
       let tmp6;
-      const f142198 = (arg0) => {
+      const f142759 = (arg0) => {
         let closure_1_5 = arg0;
       };
       let self = this;
@@ -7473,9 +7473,9 @@ const items10 = [
           const self10 = this;
           const self11 = this;
           const tmp34 = new c29(self);
-          let closure_12 = new obj8(f142198);
+          let closure_12 = new obj8(f142759);
           const _Object7 = Object;
-          const tmp37 = new obj8(f142198);
+          const tmp37 = new obj8(f142759);
           const obj6 = Object.create(_moduleResult8.prototype);
           obj6._state = "readable";
           obj6._reader = undefined;
@@ -8308,7 +8308,7 @@ class TransformStream {
     let fn2;
     let fn3;
     let fn4;
-    const f137866 = (arg0) => {
+    const f138404 = (arg0) => {
       c0 = arg0;
     };
     let obj2 = arg0;
@@ -8470,7 +8470,7 @@ class TransformStream {
         const rangeError2 = new RangeError("Invalid highWaterMark");
         throw rangeError2;
       }
-      let te = tmp4.size || f126054;
+      let te = tmp4.size || f126510;
       const highWaterMark = tmp3.highWaterMark;
       let num3 = 1;
       if (undefined !== highWaterMark) {
@@ -8483,12 +8483,12 @@ class TransformStream {
         const rangeError3 = new RangeError("Invalid highWaterMark");
         throw rangeError3;
       }
-      let oe = tmp3.size || f126054;
+      let oe = tmp3.size || f126510;
       const self14 = this;
       const self15 = this;
-      let closure_1 = new _false(f137866);
+      let closure_1 = new _false(f138404);
       const tmp35 = _false;
-      const tmp36 = new _false(f137866);
+      const tmp36 = new _false(f138404);
       if (num3 === undefined) {
         num3 = 1;
       }
@@ -8503,7 +8503,7 @@ class TransformStream {
       const _Object = Object;
       const fn6 = function l(arg0) {
         let callResult;
-        const f126088 = function(arg0) {
+        const f126544 = function(arg0) {
           const _controlledTransformStream = closure_0._controlledTransformStream;
           const _readableStreamController = _controlledTransformStream._readable._readableStreamController;
           const _controlledReadableStream = _readableStreamController._controlledReadableStream;
@@ -8532,11 +8532,11 @@ class TransformStream {
             } else {
               let tmp2 = closure_1;
               _writable = _transformStreamController;
-              return closure_2_4.call(_transformStreamController._transformAlgorithm(closure_1), undefined, f126088);
+              return closure_2_4.call(_transformStreamController._transformAlgorithm(closure_1), undefined, f126544);
             }
           }, undefined);
         } else {
-          callResult = closure_2_4.call(_transformStreamController._transformAlgorithm(arg0), undefined, f126088);
+          callResult = closure_2_4.call(_transformStreamController._transformAlgorithm(arg0), undefined, f126544);
         }
         return callResult;
       };

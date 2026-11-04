@@ -1,7 +1,7 @@
 // Module ID: 9831
 // Function ID: 9832
 // Name: hooks/QuestHooks
-// Dependencies: [5, 32, 19, 7983, 2191, 4990, 6707, 1385, 7985, 7987, 7986, 6916, 1072, 1387, 504, 9823, 9832, 1377, 7007, 7992, 1089, 8006, 8008, 8010, 9850, 12, 1251, 9864, 9865, 7982, 9853, 9867, 2190, 9869, 6924, 14895, 8011, 7466, 14898, 6923, 14899, 1113, 2024, 6691, 6919, 8002, 5377, 5148, 9845, 2176, 14900, 9855, 1252, 1380, 14901, 14902, 4966, 8075, 8068, 2]
+// Dependencies: [5, 32, 19, 7983, 2191, 4990, 6707, 1385, 7985, 7987, 7986, 6916, 1072, 1387, 504, 9823, 9832, 1377, 7007, 7992, 1089, 8006, 8008, 8010, 9850, 12, 1251, 9864, 9865, 7982, 9853, 9867, 2190, 9869, 6924, 14896, 8011, 7466, 14899, 6923, 14900, 1113, 2024, 6691, 6919, 8002, 5377, 5148, 9845, 2176, 14901, 9855, 1252, 1380, 14902, 14903, 4966, 8075, 8068, 2]
 // Exports: useClaimedCollectibleRewardMessage, useClaimedQuests, useConnectedAccounts, useConnectedConsoleLinkOnClick, useCosponsoredLogotypeAsset, useFetchQuestHomeBounties, useFilteredQuests, useGetOrFetchApplicationForConsoleQuests, useIsPreviewerOnAnyQuest, useIsQuestAccessSuspended, useIsQuestEligibleForMembersListPopout, useIsQuestExpired, useIsQuestProgressingOnConsole, useIsQuestProgressingOnDesktop, useIsQuestProgressingVideoQuest, useLaunchInGameActivityQuest, useManuallyStartConsoleQuest, useNonNullableQuest, useOnOpenGameClick, useProgressState, useQuest, useQuestBarImpressionSurvey, useQuestBarOrDockModeChangeTracking, useQuestCompletionDetails, useQuestForMemberListSocialEntryPoint, useQuestFormattedDate, useQuestHomeBounties, useQuestHomeFilterOptions, useQuestHomeHeroShelf, useQuestHomeSortOptions, useQuestHomeSortingFilteringAnalytics, useQuestHowToHelpArticle, useQuestOrbRewardMultiplier, useQuestPreviewActions, useQuestWarningTips, useQuestsWithPreviewAccess, useSelectedTaskPlatform, useShouldShowBonusOrbsUX, useShouldShowPreviewToolTab, useShouldShowQuestPreviewOverrides, useShouldShowQuestsActivityPanelItem, useThirdPartyTaskDetails, useWaitingForConsoleConnection
 
 // Module 9831 (hooks/QuestHooks)
@@ -33,9 +33,9 @@ import QuestActionCreators from "QuestActionCreators" /* 9832 */;
 import AssetUtils from "AssetUtils" /* 9845 */;
 import QuestRewardUtils from "QuestRewardUtils" /* 9850 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9869 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 14898 */;
-import QuestConsoleStartError from "QuestConsoleStartError" /* 14899 */;
-import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 14900 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 14899 */;
+import QuestConsoleStartError from "QuestConsoleStartError" /* 14900 */;
+import useRefocusOrLaunchActivityDefault from "useRefocusOrLaunchActivity" /* 14901 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -69,34 +69,34 @@ let closure_26;
 let closure_27;
 let tmp;
 const QuestDataUtils = tmp(7982);
-const f96009 = () => {
+const f96141 = () => {
   const isQuestExpiredResult = null != c0 && QuestStore.isQuestExpired(tmp.id);
   return isQuestExpiredResult;
 };
-const f96011 = () => {
+const f96143 = () => {
   const obj = quest(first[22]);
   return obj.isQuestProgressingOnConsole(quest);
 };
-const f96012 = () => optimisticProgress.getOptimisticProgress(closure_0.id, closure_0(dependencyMap[34]).FirstPartyQuestTaskTypes.WATCH_VIDEO);
-const f96013 = () => {
+const f96144 = () => optimisticProgress.getOptimisticProgress(closure_0.id, closure_0(dependencyMap[34]).FirstPartyQuestTaskTypes.WATCH_VIDEO);
+const f96145 = () => {
   const obj = quest(dependencyMap[35]);
   return obj.isVideoQuestProgressing(quest);
 };
-const f96014 = () => {
+const f96146 = () => {
   const obj = quest(closure_2[22]);
   return obj.getThirdPartyTaskDetails(quest);
 };
-const f96016 = () => {
+const f96148 = () => {
   const obj = { fetching: ConnectedAccountsStore.isFetching(), accounts: ConnectedAccountsStore.getAccounts() };
   return obj;
 };
-const f96023 = () => {
+const f96155 = () => {
   quests = quests.quests;
   const items = [...quests.values()];
   return items;
 };
-const f96024 = (preview) => preview.preview;
-const f96025 = () => quests.quests;
+const f96156 = (preview) => preview.preview;
+const f96157 = () => quests.quests;
 function useQuests(arg0) {
   let closure_2;
   let obj = arg0;
@@ -645,7 +645,7 @@ function useAllQuests(quests, sortMethod) {
   const stateFromStores = obj.useStateFromStores(items, () => null);
   const items1 = [QuestStore];
   obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items1, f96025);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f96157);
   let questIds;
   if (stateFromStores != null) {
     questIds = stateFromStores.questIds;
@@ -742,12 +742,12 @@ function useIsQuestProgressing(quest) {
   let stateFromStores = obj.useStateFromStores(items, () => QuestStore.isProgressingOnDesktop(id.id));
   const items1 = [quest];
   _require = quest;
-  const memo = react.useMemo(f96011, items1);
+  const memo = react.useMemo(f96143, items1);
   const items2 = [QuestStore];
   const items3 = [quest, ];
   obj2 = require("get initialized");
-  items3[1] = obj2.useStateFromStores(items2, f96012);
-  const memo1 = react.useMemo(f96013, items3);
+  items3[1] = obj2.useStateFromStores(items2, f96144);
+  const memo1 = react.useMemo(f96145, items3);
   if (!stateFromStores) {
     stateFromStores = memo;
   }
@@ -790,7 +790,7 @@ function useTaskPlatformScreen(quest, questTaskDetails) {
   const items5 = [quest];
   const stateFromStores = obj4.useStateFromStores(items4, () => QuestStore.isProgressingOnDesktop(id.id));
   const items6 = [questTaskDetails];
-  const memo1 = memo2.useMemo(f96011, items5);
+  const memo1 = memo2.useMemo(f96143, items5);
   memo2 = memo2.useMemo(() => {
     const str = merged5;
     const match = str.match(questTaskDetails);
@@ -1071,7 +1071,7 @@ export function useShouldShowBonusOrbsUX(quest, questOrbMultiplierEligibility) {
   const items = [QuestStore];
   const items1 = [quest];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f96009, items1);
+  const stateFromStores = obj.useStateFromStores(items, f96141, items1);
   obj2 = require("QuestRewardUtils");
   const result = obj2.hasVirtualCurrencyReward(quest.config);
   const obj3 = require("QuestRewardUtils");
@@ -1109,7 +1109,7 @@ export function useIsQuestExpired(questDockQuest) {
   const items = [QuestStore];
   const items1 = [questDockQuest];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f96009, items1);
+  return obj.useStateFromStores(items, f96141, items1);
 }
 export function useIsQuestAccessSuspended() {
   const items = [QuestStore];
@@ -1229,7 +1229,7 @@ export function useIsQuestProgressingOnDesktop(arg0) {
 export function useIsQuestProgressingOnConsole(arg0) {
   let closure_0 = arg0;
   const items = [arg0];
-  return react.useMemo(f96011, items);
+  return react.useMemo(f96143, items);
 }
 export function useIsQuestProgressingVideoQuest(arg0) {
   let closure_0;
@@ -1237,15 +1237,15 @@ export function useIsQuestProgressingVideoQuest(arg0) {
   const items = [QuestStore];
   const items1 = [arg0, ];
   const obj = require("get initialized");
-  items1[1] = obj.useStateFromStores(items, f96012);
-  return react.useMemo(f96013, items1);
+  items1[1] = obj.useStateFromStores(items, f96144);
+  return react.useMemo(f96145, items1);
 }
 export { useIsQuestProgressing };
 export { useQuestTaskDetails };
 export function useThirdPartyTaskDetails(quest) {
   let closure_0 = quest;
   const items = [quest];
-  return react.useMemo(f96014, items);
+  return react.useMemo(f96146, items);
 }
 export function useConnectedConsoleLinkOnClick(quest) {
   let accounts;
@@ -1260,7 +1260,7 @@ export function useConnectedConsoleLinkOnClick(quest) {
   let tmp = quest;
   let obj = quest(504);
   const items = [ConnectedAccountsStore];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f96016);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f96148);
   ({ fetching, accounts } = stateFromStoresObject);
   const items1 = [accounts];
   const memo = react.useMemo(() => {
@@ -1345,7 +1345,7 @@ export function useQuestForMemberListSocialEntryPoint(arg0) {
   const items4 = [memo1];
   let tmp4 = null;
   const obj3 = require("get initialized");
-  if (!obj3.useStateFromStores(items3, f96009, items4)) {
+  if (!obj3.useStateFromStores(items3, f96141, items4)) {
     tmp4 = memo1;
   }
   return tmp4;
@@ -1388,7 +1388,7 @@ export function useConnectedAccounts() {
   let accounts;
   const items = [ConnectedAccountsStore];
   const obj = accounts(504);
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f96016);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f96148);
   accounts = stateFromStoresObject.accounts;
   const items1 = [accounts];
   const fetching = stateFromStoresObject.fetching;
@@ -1530,7 +1530,7 @@ export function useWaitingForConsoleConnection(quest) {
   accounts = undefined;
   const items = [ConnectedAccountsStore];
   const obj = accounts(504);
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f96016);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f96148);
   ({ fetching, accounts } = stateFromStoresObject);
   const items1 = [accounts];
   const memo = react.useMemo(() => {
@@ -1553,7 +1553,7 @@ export function useQuestHowToHelpArticle() {
   let fetching;
   let obj = accounts(504);
   const items = [ConnectedAccountsStore];
-  const stateFromStoresObject = obj.useStateFromStoresObject(items, f96016);
+  const stateFromStoresObject = obj.useStateFromStoresObject(items, f96148);
   ({ fetching, accounts } = stateFromStoresObject);
   const items1 = [accounts];
   const memo = react.useMemo(() => {
@@ -1736,7 +1736,7 @@ export function useQuestCompletionDetails(quest) {
     let percentComplete = first.percentComplete;
     _require = quest;
     const items3 = [quest];
-    const memo = react.useMemo(f96014, items3);
+    const memo = react.useMemo(f96146, items3);
     if (null != memo) {
       percentComplete = memo.percentComplete;
     }
@@ -1841,7 +1841,7 @@ export function useQuestWarningTips(userStatus) {
     userStatus = userStatus.userStatus;
     let enrolledAt;
     obj2 = require("get initialized");
-    const stateFromStores = obj2.useStateFromStores(items3, f96009, items4);
+    const stateFromStores = obj2.useStateFromStores(items3, f96141, items4);
     if (userStatus != null) {
       enrolledAt = userStatus.enrolledAt;
     }
@@ -2085,14 +2085,14 @@ export function useLaunchInGameActivityQuest(quest) {
 export function useIsPreviewerOnAnyQuest() {
   const items = [QuestStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f96023);
-  return stateFromStoresArray.some(f96024);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f96155);
+  return stateFromStoresArray.some(f96156);
 }
 export function useShouldShowPreviewToolTab() {
   let items = [QuestStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f96023);
-  return stateFromStoresArray.some(f96024);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f96155);
+  return stateFromStoresArray.some(f96156);
 }
 export function useShouldShowQuestsActivityPanelItem(userStatus) {
   let c0;
@@ -2114,7 +2114,7 @@ export function useShouldShowQuestsActivityPanelItem(userStatus) {
   const items1 = [tmp5];
   let claimedAt;
   obj2 = require("get initialized");
-  const stateFromStores = obj2.useStateFromStores(items, f96009, items1);
+  const stateFromStores = obj2.useStateFromStores(items, f96141, items1);
   const tmp6 = _require;
   const tmp8 = QuestStore;
   if (userStatus != null) {
@@ -2218,7 +2218,7 @@ export function useQuestHomeHeroShelf(questIds) {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [QuestStore];
-  stateFromStores = obj.useStateFromStores(items, f96025);
+  stateFromStores = obj.useStateFromStores(items, f96157);
   questIds = undefined;
   if (questIds != null) {
     questIds = questIds.questIds;

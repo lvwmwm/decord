@@ -1,9 +1,9 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16638
+// Function ID: 16639
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 4990, 5898, 4989, 1072, 1377, 16627, 16628, 1108, 6089, 5062, 1252, 572, 16533, 16534, 11922, 5331, 6094, 1113, 5846, 1380, 11994, 2]
+// Dependencies: [17, 4990, 5898, 4989, 1072, 1377, 16639, 16640, 1108, 6089, 5062, 1252, 572, 16545, 16546, 11923, 5331, 6094, 1113, 5846, 1380, 11995, 2]
 
-// Module 16626 (EmbeddedActivitiesNativeManager)
+// Module 16638 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
@@ -14,15 +14,15 @@ import ChatInputUtils from "ChatInputUtils" /* 5331 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 6089 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11922 */;
-import activityWebViewController from "activityWebViewController" /* 11994 */;
-import react_nativeDefault from "react-native" /* 16627 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11923 */;
+import activityWebViewController from "activityWebViewController" /* 11995 */;
+import react_nativeDefault from "react-native" /* 16639 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 16628 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 16640 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;

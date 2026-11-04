@@ -1,10 +1,10 @@
-// Module ID: 15616
-// Function ID: 15617
+// Module ID: 15617
+// Function ID: 15618
 // Name: GuildBoostSlotsInventory
-// Dependencies: [19, 17, 1192, 5012, 7725, 2181, 1072, 21, 5141, 575, 6858, 7764, 5761, 1113, 11, 7121, 6903, 7098, 5851, 15617, 504, 1411, 15618, 15622, 6670, 8606, 12, 2]
+// Dependencies: [19, 17, 1192, 5012, 7725, 2181, 1072, 21, 5141, 575, 6858, 7764, 5761, 1113, 11, 7121, 6903, 7098, 5851, 15618, 504, 1411, 15619, 15623, 6670, 8606, 12, 2]
 // Exports: default
 
-// Module 15616 (GuildBoostSlotsInventory)
+// Module 15617 (GuildBoostSlotsInventory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -19,7 +19,7 @@ import BoostingActionCreators from "BoostingActionCreators" /* 6903 */;
 import GuildIcon from "GuildIcon" /* 7098 */;
 import useCountdownDefault from "useCountdown" /* 7764 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8606 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15617 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15618 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -44,7 +44,7 @@ let size;
 let size1;
 let tmp2;
 let unpackModuleId;
-const SubscriptionPlaceholderPattern = tmp2(15618);
+const SubscriptionPlaceholderPattern = tmp2(15619);
 function GuildBoostSlotCooldown(cooldownEndsAt) {
   let days;
   let hours;
@@ -323,7 +323,7 @@ function BoostedGuild(arg0) {
     tmp11Result = tmp11(tmp10, obj8);
   }
   items3[1] = tmp11Result;
-  items3[2] = closure_10(tmp12(15622), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = closure_10(tmp12(15623), { guild: stateFromStores, theme: stateFromStores1 });
   items4 = [closure_11(View, obj6), ];
   const obj9 = { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length };
   items4[1] = closure_10(BoostedGuildInfo, obj9);

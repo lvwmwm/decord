@@ -1,10 +1,10 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16890
+// Function ID: 16891
 // Name: useShouldShowInitialGoogleWalletBanner
 // Dependencies: [5, 32, 19, 8134, 8110, 504, 1377, 8109, 8141, 1393, 8144, 2]
 // Exports: useShouldShowInitialGoogleWalletBanner
 
-// Module 16878 (useShouldShowInitialGoogleWalletBanner)
+// Module 16890 (useShouldShowInitialGoogleWalletBanner)
 import SafetyHubConstants from "SafetyHubConstants" /* 8110 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

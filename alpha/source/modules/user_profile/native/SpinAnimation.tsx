@@ -1,10 +1,10 @@
-// Module ID: 16788
-// Function ID: 16789
+// Module ID: 16800
+// Function ID: 16801
 // Name: SpinAnimation
 // Dependencies: [19, 21, 1652, 5378, 2]
 // Exports: default
 
-// Module 16788 (SpinAnimation)
+// Module 16800 (SpinAnimation)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5378 */;

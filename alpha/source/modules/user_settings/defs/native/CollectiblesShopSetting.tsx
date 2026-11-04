@@ -1,15 +1,15 @@
-// Module ID: 18065
-// Function ID: 18066
+// Module ID: 18077
+// Function ID: 18078
 // Name: CollectiblesShopSetting
-// Dependencies: [1072, 11728, 1113, 12685, 18066, 7859, 7487, 2]
+// Dependencies: [1072, 11729, 1113, 12686, 18078, 7859, 7487, 2]
 
-// Module 18065 (CollectiblesShopSetting)
+// Module 18077 (CollectiblesShopSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
-import ShopIcon from "ShopIcon" /* 12685 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import ShopIcon from "ShopIcon" /* 12686 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

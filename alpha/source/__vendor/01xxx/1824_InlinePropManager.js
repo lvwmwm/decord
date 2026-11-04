@@ -14,17 +14,17 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 let tmp3;
 let tmp4;
 function isInlineStyleTransform(arr) {
-  const f82806 = (item) => {
+  const f82936 = (item) => {
     let someResult = item;
     if (someResult) {
       let tmp2 = globalThis;
       let _Object = Object;
       let keys = Object.keys(item);
-      someResult = keys.some(f82807);
+      someResult = keys.some(f82937);
     }
     return someResult;
   };
-  const tmp = Array.isArray(arr) && arr.some(f82806);
+  const tmp = Array.isArray(arr) && arr.some(f82936);
   return tmp;
 }
 function inlinePropsHasChanged(arg0, _inlineStyleProps) {
@@ -244,7 +244,7 @@ let items2 = [
 const InlinePropManager_export = _createClass(InlinePropManager, items2);
 
 export function hasInlineStyles(viewDescriptors) {
-  const f82807 = (item) => {
+  const f82937 = (item) => {
     let obj = item[item];
     let obj2 = closure_2_0(closure_2_1[3]);
     let isSharedValueResult = obj2.isSharedValue(obj);
@@ -254,7 +254,7 @@ export function hasInlineStyles(viewDescriptors) {
       if (tmp2) {
         let tmp3 = globalThis;
         let _Array = Array;
-        let tmp4 = Array.isArray(obj) && obj.some(f82806);
+        let tmp4 = Array.isArray(obj) && obj.some(f82936);
         tmp2 = tmp4;
       }
       isSharedValueResult = tmp2;
@@ -266,7 +266,7 @@ export function hasInlineStyles(viewDescriptors) {
   if (someResult) {
     const _Object = Object;
     const keys = Object.keys(viewDescriptors);
-    someResult = keys.some(f82807);
+    someResult = keys.some(f82937);
   }
   return someResult;
 }

@@ -1,10 +1,10 @@
-// Module ID: 13453
-// Function ID: 13454
+// Module ID: 13454
+// Function ID: 13455
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 5363, 8019, 21, 8535, 8726, 11738, 11739, 5163, 13454, 13455, 13456, 8537, 13457, 8728, 5382, 5367, 5396, 7457, 13458, 11737, 2]
+// Dependencies: [19, 17, 502, 5363, 8019, 21, 8535, 8726, 11739, 11740, 5163, 13455, 13456, 13457, 8537, 13458, 8728, 5382, 5367, 5396, 7457, 13459, 11738, 2]
 // Exports: createExperimentEmbed, default
 
-// Module 13453 (ExperimentEmbed)
+// Module 13454 (ExperimentEmbed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import themes from "themes" /* 5163 */;
@@ -14,11 +14,11 @@ import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8535 */;
 import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8537 */;
 import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8726 */;
 import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8728 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11737 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11738 */;
-import useApexExperiments from "useApexExperiments" /* 11739 */;
-import useExperimentAssignments from "useExperimentAssignments" /* 13456 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13457 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11738 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11739 */;
+import useApexExperiments from "useApexExperiments" /* 11740 */;
+import useExperimentAssignments from "useExperimentAssignments" /* 13457 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13458 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -239,9 +239,9 @@ export function createExperimentEmbed(url, arg1) {
   resolveAssetSource = Image.resolveAssetSource;
   const tmp4Result10 = themes;
   if (tmp4Result10.isThemeDark(arg1)) {
-    tmpResult = tmp(13454);
-  } else {
     tmpResult = tmp(13455);
+  } else {
+    tmpResult = tmp(13456);
   }
   return obj7;
 }

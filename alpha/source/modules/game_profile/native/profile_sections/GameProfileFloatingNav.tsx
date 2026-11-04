@@ -1,7 +1,7 @@
 // Module ID: 9773
 // Function ID: 9774
 // Name: GameProfileFloatingNav
-// Dependencies: [32, 19, 17, 21, 575, 1652, 5141, 9774, 14926, 9137, 5761, 1627, 14933, 5732, 671, 5378, 9511, 9877, 1113, 8802, 5723, 2]
+// Dependencies: [32, 19, 17, 21, 575, 1652, 5141, 9774, 14927, 9137, 5761, 1627, 14934, 5732, 671, 5378, 9511, 9877, 1113, 8802, 5723, 2]
 // Exports: default
 
 // Module 9773 (GameProfileFloatingNav)
@@ -11,7 +11,7 @@ import _mod1652 from "module_1652" /* 1652 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import native from "native" /* 9137 */;
 import YouBannerDecorations from "YouBannerDecorations" /* 9774 */;
-import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 14926 */;
+import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 14927 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -83,7 +83,7 @@ function FloatingNav(navigation) {
   const onLayout = navigation.onLayout;
   const tmp3 = closure_14(selectTab(1627)().bottom);
   dependencyMap = tmp3;
-  let obj = selectedTab(14933);
+  let obj = selectedTab(14934);
   const isGameProfileCommunitiesMobileEnabled = obj.useIsGameProfileCommunitiesMobileEnabled({ location: "GameProfileFloatingNav" });
   let obj2 = selectedTab(5732);
   const token = obj2.useToken(selectTab(575).colors.BACKGROUND_BASE_LOWEST);
@@ -189,7 +189,7 @@ function FloatingNav(navigation) {
           return closure_1_7(NavItem, obj, tab);
         })
     };
-    const YouScreenNavIconMeasurer = tmp4(14926).YouScreenNavIconMeasurer;
+    const YouScreenNavIconMeasurer = tmp4(14927).YouScreenNavIconMeasurer;
     items7[1] = closure_7(YouScreenNavIconMeasurer, obj11);
     items5[1] = closure_8(closure_5, obj9);
     items4[1] = closure_8(closure_5, obj7);

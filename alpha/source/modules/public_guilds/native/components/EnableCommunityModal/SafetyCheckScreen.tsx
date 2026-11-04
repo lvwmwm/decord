@@ -1,10 +1,10 @@
-// Module ID: 20103
-// Function ID: 20104
+// Module ID: 20117
+// Function ID: 20118
 // Name: SafetyCheckScreen
-// Dependencies: [32, 19, 17, 9220, 1072, 21, 5732, 575, 20104, 504, 20105, 20102, 5761, 1113, 5851, 6162, 7201, 20114, 7505, 9219, 2]
+// Dependencies: [32, 19, 17, 9220, 1072, 21, 5732, 575, 20118, 504, 20119, 20116, 5761, 1113, 5851, 6162, 7201, 20128, 7505, 9219, 2]
 // Exports: default
 
-// Module 20103 (SafetyCheckScreen)
+// Module 20117 (SafetyCheckScreen)
 import react_native from "react-native" /* 17 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

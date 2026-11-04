@@ -1,9 +1,9 @@
-// Module ID: 19775
-// Function ID: 19776
+// Module ID: 19789
+// Function ID: 19790
 // Name: InstantInviteManager
 // Dependencies: [7423, 5846, 1113, 2]
 
-// Module 19775 (InstantInviteManager)
+// Module 19789 (InstantInviteManager)
 import intl2 from "intl" /* 1113 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;

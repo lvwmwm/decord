@@ -1,16 +1,16 @@
-// Module ID: 17299
-// Function ID: 17300
+// Module ID: 17311
+// Function ID: 17312
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [5, 19, 1385, 21, 17264, 5846, 1113, 504, 14727, 17276, 12420, 10053, 8168, 9352, 2]
+// Dependencies: [5, 19, 1385, 21, 17276, 5846, 1113, 504, 14728, 17288, 12421, 10053, 8168, 9352, 2]
 // Exports: default
 
-// Module 17299 (OrbsArcadeGameContextMenu)
+// Module 17311 (OrbsArcadeGameContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9352 */;
-import RefreshIcon from "RefreshIcon" /* 12420 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 14727 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17264 */;
+import RefreshIcon from "RefreshIcon" /* 12421 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 14728 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17276 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;

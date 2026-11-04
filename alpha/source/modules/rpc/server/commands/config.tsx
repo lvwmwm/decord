@@ -1,14 +1,14 @@
-// Module ID: 16550
-// Function ID: 16551
+// Module ID: 16562
+// Function ID: 16563
 // Name: commands/config
-// Dependencies: [6585, 1072, 16536, 9479, 572, 2]
+// Dependencies: [6585, 1072, 16548, 9479, 572, 2]
 
-// Module 16550 (commands/config)
+// Module 16562 (commands/config)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import RPCErrorDefault from "RPCError" /* 9479 */;
 import Constants_mod from "Constants" /* 6585 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16536 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16548 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

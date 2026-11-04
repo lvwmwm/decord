@@ -324,97 +324,40 @@ obj = function _fetchPublishedSKU() {
   return obj(...arguments);
 };
 obj = function _fetchTestSKUsForApplication() {
-  obj = _asyncToGenerator(async function(arg0, value) {
+  obj = _asyncToGenerator(async function(arg0) {
+    let c4;
+    let c5;
+    let closure_2;
+    let closure_3;
     let obj6;
     let closure_0 = arg0;
-    let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let flag;
-        let body;
-        c5 = 2;
-        if (0 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_3 = tmp4;
-            let closure_2 = tmp;
-            flag = closure_1;
-            if (closure_1 === undefined) {
-              flag = true;
-            }
-            body = undefined;
-            c4 = 1;
-            c5 = 1;
-            return { value: "flexDirection", done: true };
-          }
-        } else if (1 === c4) {
-          if (arg0 === 1) {
-            c5 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c5 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const obj11 = closure_131_0(closure_131_2[8]);
-            if (!obj11.isTestModeForApplication(closure_0)) {
-              const tmp12 = flag;
-              if (tmp12) {
-                const _Error = Error;
-                const self = this;
-                const self2 = this;
-                const error = new Error("this should only be used in test mode");
-                throw error;
-              }
-            }
-            const obj5 = { url: closure_131_7.APPLICATION_SKUS(closure_0), rejectWithError: obj6.rejectWithMigratedError() };
-            const httpGetWithCountryCodeQuery = closure_131_0(closure_131_2[5]).httpGetWithCountryCodeQuery;
-            const tmp20 = closure_131_0(closure_131_2[5]);
-            obj6 = closure_131_0(closure_131_2[6]);
-            c4 = 2;
-            c5 = 1;
-            const obj7 = { value: httpGetWithCountryCodeQuery(obj5), done: false };
-            return obj7;
-          }
-        } else if (arg0 === 1) {
-          c5 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c5 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
-        } else {
-          body = value.body;
-          const obj9 = { type: "SKUS_FETCH_SUCCESS", skus: body };
-          obj = closure_131_1(closure_131_2[4]);
-          obj.dispatch(obj9);
-          c5 = 3;
-          const obj10 = { value: body, done: true };
-          return obj10;
-        }
-      } catch (tmp26) {
-        c5 = 3;
-        throw tmp26;
+    let closure_1 = arg1;
+    let flag = closure_1;
+    if (closure_1 === undefined) {
+      flag = true;
+    }
+    await "flexDirection";
+    const obj11 = closure_131_0(closure_131_2[8]);
+    if (!obj11.isTestModeForApplication(closure_0)) {
+      const tmp12 = flag;
+      if (tmp12) {
+        const _Error = Error;
+        const self = this;
+        const self2 = this;
+        const error = new Error("this should only be used in test mode");
+        throw error;
       }
     }
+    const obj5 = { url: closure_131_7.APPLICATION_SKUS(closure_0), rejectWithError: obj6.rejectWithMigratedError() };
+    const httpGetWithCountryCodeQuery = closure_131_0(closure_131_2[5]).httpGetWithCountryCodeQuery;
+    const tmp20 = closure_131_0(closure_131_2[5]);
+    obj6 = closure_131_0(closure_131_2[6]);
+    await httpGetWithCountryCodeQuery(obj5);
+    const body = arg1.body;
+    const obj9 = { type: "SKUS_FETCH_SUCCESS", skus: body };
+    obj = closure_131_1(closure_131_2[4]);
+    obj.dispatch(obj9);
+    return body;
   });
   return obj(...arguments);
 };
@@ -474,7 +417,7 @@ obj = function _previewPurchaseSku() {
             billingError = undefined;
             apply_wallet_balance = 1;
             previous_total = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === apply_wallet_balance) {
           if (arg0 === 1) {

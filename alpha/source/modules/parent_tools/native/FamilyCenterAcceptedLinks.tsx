@@ -1,10 +1,10 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17069
+// Function ID: 17070
 // Name: FamilyCenterAcceptedLinks
-// Dependencies: [19, 17, 7856, 21, 5141, 575, 8511, 8510, 13582, 1113, 2667, 5761, 17058, 17059, 7121, 6879, 17062, 2123, 1187, 17064, 2]
+// Dependencies: [19, 17, 7856, 21, 5141, 575, 8511, 8510, 13583, 1113, 2667, 5761, 17070, 17071, 7121, 6879, 17074, 2123, 1187, 17076, 2]
 // Exports: default
 
-// Module 17057 (FamilyCenterAcceptedLinks)
+// Module 17069 (FamilyCenterAcceptedLinks)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
@@ -13,9 +13,9 @@ import Text_Text from "Text/Text" /* 5761 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import useUserLinks from "useUserLinks" /* 8510 */;
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8511 */;
-import useAgeSpecificText2 from "useAgeSpecificText" /* 13582 */;
-import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 17058 */;
-import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 17059 */;
+import useAgeSpecificText2 from "useAgeSpecificText" /* 13583 */;
+import FamilyCenterEmptyDefault from "FamilyCenterEmpty" /* 17070 */;
+import FamilyCenterLinkRowDefault from "FamilyCenterLinkRow" /* 17071 */;
 import react from "react" /* 19 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 7856 */;
 import Fragment from "Fragment" /* 21 */;
@@ -54,13 +54,13 @@ function FamilyCenterAcceptedLinkRow(otherUser) {
       onPress: function handleDisconnect() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { otherUser: str };
-          obj.pushLazy(asyncRequire(17062, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(17074, dependencyMap.paths), obj2);
         },
       style: tmp.actionButton,
       children: closure_6(Icon, obj4)
     };
     obj3 = { name: str1 };
-    obj4 = { size: str(1187).Icon.Sizes.SMALL, disableColor: true, source: tmp5(17064) };
+    obj4 = { size: str(1187).Icon.Sizes.SMALL, disableColor: true, source: tmp5(17076) };
     Icon = tmp8(1187).Icon;
     tmp4Result = tmp4(tmp7, obj2);
   }

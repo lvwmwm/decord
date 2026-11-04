@@ -1,15 +1,15 @@
-// Module ID: 17722
-// Function ID: 17723
+// Module ID: 17734
+// Function ID: 17735
 // Name: SettingsEmailNotificationsScreen
-// Dependencies: [19, 15858, 8573, 21, 17723, 16515, 17725, 11728, 1113, 5729, 16823, 2]
+// Dependencies: [19, 15871, 8573, 21, 17735, 16528, 17737, 11729, 1113, 5729, 16835, 2]
 
-// Module 17722 (SettingsEmailNotificationsScreen)
+// Module 17734 (SettingsEmailNotificationsScreen)
 import Fragment from "Fragment" /* 21 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
-import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17723 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
+import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17735 */;
 import react from "react" /* 19 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15858 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15871 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -31,9 +31,9 @@ items1 = [, , , , ];
 const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
   let enabled;
   let isDeclarativeSettingsUIAvailable;
-  obj = isDeclarativeSettingsUIAvailable(16515);
+  obj = isDeclarativeSettingsUIAvailable(16528);
   isDeclarativeSettingsUIAvailable = obj.useIsDeclarativeSettingsUIAvailable("SettingsEmailNotificationsScreen");
-  obj2 = enabled(17725);
+  obj2 = enabled(17737);
   enabled = obj2.useConfig({ location: "SettingsEmailNotificationsScreen" }).enabled;
   let items = [isDeclarativeSettingsUIAvailable, enabled];
   const node = react.useMemo(() => {
@@ -57,7 +57,7 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
     return createList(obj2);
   }, items);
   enabled(5729)(initializeEmailSettings);
-  return jsx(enabled(16823), { node });
+  return jsx(enabled(16835), { node });
 });
 const result = size.fileFinishedImporting("modules/user_settings/notifications/native/SettingsEmailNotificationsScreen.tsx");
 

@@ -1,39 +1,35 @@
-// Module ID: 13919
-// Function ID: 13920
+// Module ID: 13920
+// Function ID: 13921
 // Name: CheckpointButton
-// Dependencies: [19, 17, 6201, 21, 5141, 13893, 575, 5732, 13865, 2]
+// Dependencies: [19, 17, 6201, 21, 5141, 13894, 575, 5732, 13866, 2]
 // Exports: default
 
-// Module 13919 (CheckpointButton)
+// Module 13920 (CheckpointButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5732 */;
-import CheckpointPressable from "CheckpointPressable" /* 13893 */;
+import CheckpointPressable from "CheckpointPressable" /* 13894 */;
 import react from "react" /* 19 */;
 import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
-const CheckpointPressableDefault = CheckpointPressable;
-
+let c9;
 let hasOwnProperty;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let obj3;
-let tmp13;
-const CheckpointTextDefault = tmp13(13865);
 const ActivityIndicator = react_native.ActivityIndicator;
-({ CHECKPOINT_DARK_CYAN: hasOwnProperty, CHECKPOINT_PRIMARY: metroRequire } = CheckpointConstants);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ CHECKPOINT_DARK_CYAN: hasOwnProperty, CHECKPOINT_BUTTON_DISABLED_BORDER_MOBILE: metroRequire, CHECKPOINT_PRIMARY: metroImportDefault } = CheckpointConstants);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, button: obj3, label: { textTransform: "uppercase" } };
 obj2 = { justifyContent: "center", marginRight: -CheckpointPressable.SHADOW_OFFSET, marginBottom: -CheckpointPressable.SHADOW_OFFSET };
 createStyles = createStyles.createStyles;
 obj3 = { backgroundColor: nativeDefault.colors.BLACK, borderWidth: 2 };
-let closure_9 = createStyles(obj);
+let closure_10 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointButton.tsx");
 
 export default function CheckpointButton(loading) {
@@ -49,7 +45,7 @@ export default function CheckpointButton(loading) {
   let onPress;
   let shadowColor;
   let style;
-  let tmp8;
+  let tmp6;
   ({ Icon, label, accessibilityLabel, disabled } = loading);
   ({ onPress, accessibilityHint, accessibilityState } = loading);
   if (disabled === undefined) {
@@ -69,54 +65,52 @@ export default function CheckpointButton(loading) {
   }
   let color = loading.color;
   if (color === undefined) {
-    color = metroRequire;
+    color = closure_7;
   }
   let borderColor = loading.borderColor;
   if (borderColor === undefined) {
-    borderColor = hasOwnProperty;
+    borderColor = closure_5;
   }
   color = undefined;
   ({ shadowColor, style } = loading);
-  const tmp = closure_9();
-  const obj = useToken;
-  const token = obj.useToken("text-subtle");
-  const obj2 = useToken;
-  const token1 = obj2.useToken("border-normal");
+  const tmp = closure_10();
+  const obj = disabled(color[7]);
   if (disabled) {
-    color = token;
+    color = obj.useToken("text-subtle");
   }
-  const items = [disabled, token1, borderColor];
+  const items = [disabled, borderColor];
   const items1 = [color];
-  const memo = react.useMemo(() => ({ borderColor: disabled ? token1 : borderColor }), items);
+  const memo = react.useMemo(() => ({ borderColor: disabled ? metroRequire : borderColor }), items);
   const memo1 = react.useMemo(() => ({ color }), items1);
   if (flag) {
-    const obj3 = { color };
-    tmp8 = metroImportDefault(ActivityIndicator, obj3);
+    const obj2 = { color };
+    tmp6 = closure_8(ActivityIndicator, obj2);
   } else {
-    tmp8 = null;
+    tmp6 = null;
     if (null != Icon) {
-      const obj4 = { color, size: str2 };
-      tmp8 = metroImportDefault(Icon, obj4);
+      const obj3 = { color, size: str2 };
+      tmp6 = closure_8(Icon, obj3);
     }
   }
-  const obj5 = { size: "lg", containerStyle: tmp.container, style: items2, shadowColor, onPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityHint, accessibilityState, children: items3 };
+  const obj4 = { size: "lg", containerStyle: tmp.container, style: items2, shadowColor, onPress, disabled, accessibilityRole: "button", accessibilityLabel, accessibilityHint, accessibilityState, children: items3 };
   items2 = [tmp.button, memo, style];
-  const tmp12 = metroImportAll;
-  const tmp14 = CheckpointPressableDefault;
+  const tmp10 = closure_9;
+  const tmp11 = borderColor;
+  const tmp12 = borderColor(color[5]);
   if (accessibilityLabel == null) {
     accessibilityLabel = label;
   }
   items3 = [, , ];
-  const tmp15 = "start" === str && tmp8;
-  items3[0] = tmp15;
-  let tmp16 = null != label;
-  if (tmp16) {
-    const obj6 = { variant: CheckpointPressable.CHECKPOINT_PRESSABLE_SIZES.lg.textVariant, style: items4, children: label };
+  const tmp13 = "start" === str && tmp6;
+  items3[0] = tmp13;
+  let tmp14 = null != label;
+  if (tmp14) {
+    const obj5 = { variant: disabled(color[5]).CHECKPOINT_PRESSABLE_SIZES.lg.textVariant, style: items4, children: label };
     items4 = [tmp.label, memo1];
-    const tmp13Result = CheckpointTextDefault;
-    tmp16 = metroImportDefault(tmp13Result, obj6);
+    const tmp11Result = tmp11(color[8]);
+    tmp14 = closure_8(tmp11Result, obj5);
   }
-  items3[1] = tmp16;
-  items3[2] = "end" === str && tmp8;
-  return tmp12(tmp14, obj5);
+  items3[1] = tmp14;
+  items3[2] = "end" === str && tmp6;
+  return tmp10(tmp12, obj4);
 };

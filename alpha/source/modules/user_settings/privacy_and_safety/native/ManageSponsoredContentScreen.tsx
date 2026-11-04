@@ -1,10 +1,10 @@
-// Module ID: 18144
-// Function ID: 18145
+// Module ID: 18156
+// Function ID: 18157
 // Name: ManageSponsoredContentScreen
 // Dependencies: [19, 17, 1072, 21, 1196, 2236, 4966, 7505, 1113, 5141, 575, 7201, 2190, 2]
 // Exports: default
 
-// Module 18144 (ManageSponsoredContentScreen)
+// Module 18156 (ManageSponsoredContentScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

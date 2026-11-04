@@ -1,10 +1,10 @@
-// Module ID: 15250
-// Function ID: 15251
+// Module ID: 15251
+// Function ID: 15252
 // Name: CollectiblesPromotionBadgeUtils
 // Dependencies: [9631, 7551, 2]
 // Exports: shouldShowPromotionBadge
 
-// Module 15250 (CollectiblesPromotionBadgeUtils)
+// Module 15251 (CollectiblesPromotionBadgeUtils)
 import StorefrontTypes from "StorefrontTypes" /* 7551 */;
 import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9631 */;
 import size from "module_2" /* 2 */;

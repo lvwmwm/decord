@@ -1,14 +1,14 @@
-// Module ID: 19062
-// Function ID: 19063
+// Module ID: 19076
+// Function ID: 19077
 // Name: SearchTabsGradient
-// Dependencies: [19, 21, 5732, 575, 5138, 14583, 2]
+// Dependencies: [19, 21, 5732, 575, 5138, 14584, 2]
 // Exports: default
 
-// Module 19062 (SearchTabsGradient)
+// Module 19076 (SearchTabsGradient)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ColorUtils from "ColorUtils" /* 5138 */;
-import TabsGradientDefault from "TabsGradient" /* 14583 */;
+import TabsGradientDefault from "TabsGradient" /* 14584 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

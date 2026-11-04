@@ -1,12 +1,12 @@
-// Module ID: 11972
-// Function ID: 11973
+// Module ID: 11973
+// Function ID: 11974
 // Name: useStreamError
-// Dependencies: [11955, 6082, 504, 2]
+// Dependencies: [11956, 6082, 504, 2]
 // Exports: default
 
-// Module 11972 (useStreamError)
+// Module 11973 (useStreamError)
 import AVError from "AVError" /* 6082 */;
-import AVErrorStore from "AVErrorStore" /* 11955 */;
+import AVErrorStore from "AVErrorStore" /* 11956 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = { [AVError.AVError.STREAM_SOUNDSHARE_FAILED]: 0, [AVError.AVError.STREAM_SEND_HIGH_PACKET_LOSS]: 1, [AVError.AVError.STREAM_VIEW_HIGH_PACKET_LOSS]: 1, [AVError.AVError.STREAM_SEND_LOW_FPS]: 2, [AVError.AVError.STREAM_VIEW_LOW_FPS]: 2, [AVError.AVError.STREAM_BAD_NETWORK_QUALITY]: 3 };

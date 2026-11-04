@@ -1,10 +1,10 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 15160
+// Function ID: 15161
 // Name: UserProfileWidgetsBoard
-// Dependencies: [19, 17, 8895, 7915, 21, 5141, 575, 9462, 9486, 8902, 15160, 5761, 15164, 1113, 15167, 15168, 2155, 15169, 8168, 9722, 15171, 15178, 12, 15179, 7913, 15180, 15181, 12563, 12560, 7917, 12459, 7918, 15184, 15188, 2]
+// Dependencies: [19, 17, 8895, 7915, 21, 5141, 575, 9462, 9486, 8902, 15161, 5761, 15165, 1113, 15168, 15169, 2155, 15170, 8168, 9722, 15172, 15179, 12, 15180, 7913, 15181, 15182, 12564, 12561, 7917, 12460, 7918, 15185, 15189, 2]
 // Exports: default
 
-// Module 15159 (UserProfileWidgetsBoard)
+// Module 15160 (UserProfileWidgetsBoard)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -15,12 +15,12 @@ import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes
 import Constants from "Constants" /* 8895 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9462 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
-import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12459 */;
-import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 15164 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15167 */;
-import GameCoverImageDefault from "GameCoverImage" /* 15168 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15171 */;
-import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 15184 */;
+import UserProfileApplicationWidgetCardDefault from "UserProfileApplicationWidgetCard" /* 12460 */;
+import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 15165 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15168 */;
+import GameCoverImageDefault from "GameCoverImage" /* 15169 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 15172 */;
+import UserProfilePersonalWidgetCardDefault from "UserProfilePersonalWidgetCard" /* 15185 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -255,7 +255,7 @@ let closure_14 = react.memo(function FavoriteGameItem(game) {
   if (tmp8Result) {
     const obj7 = { style: tmp.comment, children: items2 };
     const obj8 = { size: "xxs", color: nativeDefault.colors.TEXT_MUTED };
-    const QuoteIcon = tmp6(15169).QuoteIcon;
+    const QuoteIcon = tmp6(15170).QuoteIcon;
     items2 = [metroImportAll(QuoteIcon, obj8), ];
     const obj9 = { variant: "body-sm/normal", color: "text-muted", lineClamp: 3, style: tmp.commentText, children: game.comment };
     items2[1] = metroImportAll(Text_Text.Text, obj9);
@@ -474,7 +474,7 @@ export default function UserProfileWidgetsBoard(userId) {
   }
   ({ cardStyle: importDefault, isEditing: dependencyMap } = userId);
   let tmp = closure_12();
-  let obj = userId(15188);
+  let obj = userId(15189);
   const displayableBoardWidgets = obj.useDisplayableBoardWidgets(userId);
   const cardStyle = tmp2;
   const obj2 = userId(8902);

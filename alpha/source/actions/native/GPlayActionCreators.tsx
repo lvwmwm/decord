@@ -36,96 +36,34 @@ let closure_15;
 let closure_18;
 let closure_19;
 let map1;
-const f96852 = async () => {
+const f96984 = async () => {
+  let closure_2;
   closure_0 = [...arguments];
   let c5 = 0;
   let c6 = 0;
   let c4 = 0;
-  const iter = (async (arg0, value) => {
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            closure_2 = tmp;
-            c5 = 1;
-            c6 = 1;
-            return { value: "flexDirection", done: true };
-          }
-        } else if (1 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            c4 = 1;
-            const items = [];
-            HermesBuiltin.arraySpread(items, closure_0, 0);
-            applyResult = HermesBuiltin.apply(closure_130_0, items, undefined);
-            c5 = 3;
-            c6 = 1;
-            return { value: applyResult, done: false };
-          }
-        } else if (2 === c5) {
-          c4 = 0;
-          let closure_1 = closure_3;
-          let tmp12;
-          const tmp10 = closure_1;
-          const tmp9 = closure_1_44;
-          if (null != closure_130_2) {
-            applyResult = { source: tmp11 };
-            tmp12 = applyResult;
-          }
-          const obj6 = { tags: tmp12 };
-          applyResult = tmp9(tmp10, obj6);
-          const tmp13 = closure_130_1;
-          if (tmp13) {
-            throw closure_1;
-          } else {
-            c6 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
-          return { value, done: true };
-        } else {
-          c4 = 0;
-          c6 = 3;
-          return { value, done: true };
-        }
-      } catch (tmp25) {
-        closure_3 = tmp25;
-        if (0 === c4) {
-          c6 = 3;
-          throw tmp25;
-        } else {
-          c5 = 2;
-        }
-      }
+  const iter = (async () => {
+    let tmp12;
+    await "flexDirection";
+    const items = [];
+    HermesBuiltin.arraySpread(items, closure_0, 0);
+    applyResult = HermesBuiltin.apply(closure_130_0, items, undefined);
+    await applyResult;
+    let closure_1 = closure_3;
+    const tmp10 = closure_1;
+    const tmp9 = closure_1_44;
+    if (null != closure_130_2) {
+      applyResult = { source: tmp11 };
+      tmp12 = applyResult;
     }
+    const obj6 = { tags: tmp12 };
+    applyResult = tmp9(tmp10, obj6);
+    const tmp13 = closure_130_1;
+    if (tmp13) {
+      throw closure_1;
+    }
+    await "HermesInternal";
+    return value;
   })();
   iter.next();
   return iter;
@@ -235,7 +173,7 @@ let obj = function _fetchDesktopSubscriptionSkus() {
             user = undefined;
             c21 = 1;
             c22 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {
@@ -892,7 +830,7 @@ _asyncToGenerator(async (arg0, value) => {
           value = undefined;
           c5 = 1;
           c6 = 1;
-          return { value: "flexDirection", done: true };
+          return { value: "flexDirection", done: null };
         }
       } else if (1 === c5) {
         if (arg0 === 1) {
@@ -975,7 +913,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSubscriptionSkus = "loadSubscriptionSkus";
-const importDefaultResultResult = _asyncToGenerator(f96852);
+const importDefaultResultResult = _asyncToGenerator(f96984);
 _asyncToGenerator(async () => {
   let closure_0 = arg0;
   let c5 = 0;
@@ -1036,7 +974,7 @@ _asyncToGenerator(async () => {
             value = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -1118,7 +1056,7 @@ _asyncToGenerator(async () => {
   return iter;
 });
 const loadInAppSkus = "loadInAppSkus";
-const importDefaultResultResult1 = _asyncToGenerator(f96852);
+const importDefaultResultResult1 = _asyncToGenerator(f96984);
 _asyncToGenerator(async (arg0, value) => {
   if (c0 === 2) {
     c0 = 3;
@@ -1168,7 +1106,7 @@ _asyncToGenerator(async (arg0, value) => {
   }
 });
 const loadSkus = "loadSkus";
-const importDefaultResultResult2 = _asyncToGenerator(f96852);
+const importDefaultResultResult2 = _asyncToGenerator(f96984);
 let tmp11 = new BackoffDefault(5000, 300000, true);
 let closure_29 = tmp11;
 let c30 = 0;
@@ -1375,7 +1313,7 @@ let _require = _asyncToGenerator(async (arg0, value) => {
 });
 let c1 = true;
 const getUserCountry = "getUserCountry";
-const importDefaultResultResult3 = _asyncToGenerator(f96852);
+const importDefaultResultResult3 = _asyncToGenerator(f96984);
 const items1 = [, , , , ];
 ({ SERVICE_DISCONNECTED: arr2[0], SERVICE_TIMEOUT: arr2[1], BILLING_UNAVAILABLE: arr2[2], BILLING_CLIENT_NOT_READY: arr2[3], DEVELOPER_ERROR: arr2[4] } = Constants.GPlayBillingResult);
 const set2 = new Set(items1.map(String));
@@ -1422,7 +1360,7 @@ export function ensureSkusLoaded(items) {
         }
         if (isOnlineResult) {
           const tmp13 = (async (arg0, value) => {
-            const f137907 = (item) => null != product.getProduct(item);
+            const f138445 = (item) => null != product.getProduct(item);
             if (c5 === 2) {
               c5 = 3;
               throw new TypeError("Generator functions may not be called on executing generators");
@@ -1460,7 +1398,7 @@ export function ensureSkusLoaded(items) {
                   c3 = 0;
                   c31 = null;
                   const tmp19 = closure_2;
-                  if (closure_129_0.every(f137907)) {
+                  if (closure_129_0.every(f138445)) {
                     closure_1_29.succeed();
                     let closure_30 = 0;
                   } else {
@@ -1475,7 +1413,7 @@ export function ensureSkusLoaded(items) {
                 } else if (arg0 === 2) {
                   c3 = 0;
                   c31 = null;
-                  if (closure_129_0.every(f137907)) {
+                  if (closure_129_0.every(f138445)) {
                     closure_1_29.succeed();
                     closure_30 = 0;
                   } else {
@@ -1489,7 +1427,7 @@ export function ensureSkusLoaded(items) {
                 } else {
                   c3 = 0;
                   c31 = null;
-                  if (closure_129_0.every(f137907)) {
+                  if (closure_129_0.every(f138445)) {
                     closure_1_29.succeed();
                     closure_30 = 0;
                   } else {

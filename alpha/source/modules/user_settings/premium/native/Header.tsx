@@ -1,10 +1,10 @@
-// Module ID: 15583
-// Function ID: 15584
+// Module ID: 15584
+// Function ID: 15585
 // Name: Header
-// Dependencies: [19, 17, 21, 5141, 5377, 5851, 1113, 5148, 15584, 15585, 5761, 2]
+// Dependencies: [19, 17, 21, 5141, 5377, 5851, 1113, 5148, 15585, 15586, 5761, 2]
 // Exports: default
 
-// Module 15583 (Header)
+// Module 15584 (Header)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5148 */;
@@ -40,9 +40,9 @@ export default function Header(style) {
   const tmp5 = hasOwnProperty;
   const tmp6 = View;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(15584);
-  } else {
     tmp2Result = tmp2(15585);
+  } else {
+    tmp2Result = tmp2(15586);
   }
   items1 = [React3(tmp8, obj2), ];
   const obj4 = { style: tmp.headerText, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.SD5MJW) };

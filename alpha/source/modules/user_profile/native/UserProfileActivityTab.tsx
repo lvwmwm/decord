@@ -1,15 +1,15 @@
-// Module ID: 15189
-// Function ID: 15190
+// Module ID: 15190
+// Function ID: 15191
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 5761, 1113, 9085, 2190, 15190, 15193, 15053, 15194, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 5761, 1113, 9085, 2190, 15191, 15194, 15054, 15195, 2]
 // Exports: default
 
-// Module 15189 (UserProfileActivityTab)
+// Module 15190 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5761 */;
-import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 15194 */;
+import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 15195 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -129,8 +129,8 @@ export default function UserProfileActivityTab(user) {
   ({ currentUser, guildId, cardStyle } = user);
   const channelId = user.channelId;
   let obj = { userId: user.id, currentUserId: currentUser.id, guildId };
-  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(15190)(obj));
-  cardStyle(15190)(obj);
+  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(15191)(obj));
+  cardStyle(15191)(obj);
   const tmp = cardStyle;
   if (!hasCurrentActivity) {
     let tmp10Result;
@@ -138,7 +138,7 @@ export default function UserProfileActivityTab(user) {
       if (tmp4) {
         tmp10Result = tmp5(UserProfileActivityTabSkeleton, {});
       } else {
-        const tmp7 = user(15193);
+        const tmp7 = user(15194);
         if (isCurrentUser) {
           tmp10Result = tmp5(tmp7.UserProfileActivityEmptyCurrentUser, {});
         } else {
@@ -152,7 +152,7 @@ export default function UserProfileActivityTab(user) {
   const tmp10 = closure_6;
   const tmp11 = closure_7;
   if (hasCurrentActivity) {
-    const obj3 = { heading: intl.string(user(1113).t.J6STd9), children: closure_5(tmp(15053), obj4) };
+    const obj3 = { heading: intl.string(user(1113).t.J6STd9), children: closure_5(tmp(15054), obj4) };
     intl = user(1113).intl;
     obj4 = { user, currentUser, guildId, style: cardStyle };
     hasCurrentActivity = closure_5(Section, obj3);

@@ -2368,13 +2368,13 @@ let fn = () => {
             }
             return [];
           };
-          closure_0.contain = function(buffer, buffer2, arg2) {
+          closure_0.contain = function(headers, buffer, arg2) {
             let length;
             let combined = buffer;
             let str = "undefined";
             let str2 = "undefined";
-            if (undefined !== buffer) {
-              str2 = fn(buffer);
+            if (undefined !== headers) {
+              str2 = fn(headers);
             }
             if ("object" === str2) {
               let tmp3 = str;
@@ -2383,7 +2383,7 @@ let fn = () => {
               }
               if ("object" === tmp3) {
                 const _Array = Array;
-                if (!Array.isArray(buffer)) {
+                if (!Array.isArray(headers)) {
                   let tmp7;
                   let arr;
                   let compare;
@@ -2398,11 +2398,11 @@ let fn = () => {
                   }
                   obj = arg2 || {};
                   closure_0.assert(arguments.length >= 2, "Insufficient arguments");
-                  let tmp10 = typeof buffer === "string";
+                  let tmp10 = typeof headers === "string";
                   const assert = closure_0.assert;
-                  if (typeof buffer !== "string") {
-                    if (undefined !== buffer) {
-                      str = fn(buffer);
+                  if (typeof headers !== "string") {
+                    if (undefined !== headers) {
+                      str = fn(headers);
                     }
                     tmp10 = "object" === str;
                   }
@@ -2443,7 +2443,7 @@ let fn = () => {
                       length = array.length;
                     } while (num4 < length);
                   }
-                  if (typeof buffer === "string") {
+                  if (typeof headers === "string") {
                     let str8 = "(";
                     let num9 = 0;
                     let str12 = "(";
@@ -2465,24 +2465,24 @@ let fn = () => {
                     const self3 = this;
                     const self4 = this;
                     const regExp = new RegExp(str12 + ")", "g");
-                    flag3 = buffer.replace(regExp, (arg0, arg1) => {
+                    flag3 = headers.replace(regExp, (arg0, arg1) => {
                       const index = combined.indexOf(arg1);
                       array[index] = array[index] + 1;
                       return "";
                     });
                   } else {
                     const _Array4 = Array;
-                    if (Array.isArray(buffer)) {
+                    if (Array.isArray(headers)) {
                       let num7 = 0;
                       let flag6 = false;
                       flag3 = false;
-                      if (0 < buffer.length) {
+                      if (0 < headers.length) {
                         do {
                           let num8 = 0;
                           let flag7 = false;
                           if (0 < arr.length) {
                             while (true) {
-                              let compareResult = compare(arr[num8], buffer[num7], tmp14);
+                              let compareResult = compare(arr[num8], headers[num7], tmp14);
                               if (compareResult) {
                                 compareResult = num8;
                               }
@@ -2507,11 +2507,11 @@ let fn = () => {
                           num7 = num7 + 1;
                           flag6 = flag8;
                           flag3 = flag8;
-                        } while (num7 < buffer.length);
+                        } while (num7 < headers.length);
                       }
                     } else {
                       const _Object2 = Object;
-                      const ownPropertyNames = Object.getOwnPropertyNames(buffer);
+                      const ownPropertyNames = Object.getOwnPropertyNames(headers);
                       let num6 = 0;
                       let flag2 = false;
                       flag3 = false;
@@ -2522,7 +2522,7 @@ let fn = () => {
                           let flag4 = true;
                           if (-1 !== index) {
                             if (tmp7) {
-                              if (!compare(tmp7[tmp19], buffer[tmp19], tmp14)) {
+                              if (!compare(tmp7[tmp19], headers[tmp19], tmp14)) {
                                 break;
                               }
                             }
@@ -20262,7 +20262,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("min", arg0, function() { /* body not rendered: F142183 */ });
+            return this._test("min", arg0, function() { /* body not rendered: F142744 */ });
           }
           max(arg0) {
             closure_0 = arg0;
@@ -20274,7 +20274,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("max", arg0, function() { /* body not rendered: F142184 */ });
+            return this._test("max", arg0, function() { /* body not rendered: F142745 */ });
           }
           length(arg0) {
             closure_0 = arg0;
@@ -20286,7 +20286,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("length", arg0, function() { /* body not rendered: F142185 */ });
+            return this._test("length", arg0, function() { /* body not rendered: F142746 */ });
           }
         }
         if (typeof tmp !== "function") {

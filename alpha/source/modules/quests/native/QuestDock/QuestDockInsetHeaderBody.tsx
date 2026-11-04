@@ -1,21 +1,21 @@
-// Module ID: 17407
-// Function ID: 17408
+// Module ID: 17419
+// Function ID: 17420
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 17307, 21, 575, 5141, 14904, 14903, 17304, 1627, 17374, 17371, 5761, 5768, 1187, 2]
+// Dependencies: [19, 17, 17319, 21, 575, 5141, 14905, 14904, 17316, 1627, 17386, 17383, 5761, 5768, 1187, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 17407 (QuestDockInsetHeaderBody)
+// Module 17419 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import Text_Text from "Text/Text" /* 5761 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 14903 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14904 */;
-import QuestDockHooks from "QuestDockHooks" /* 17304 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17371 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 17374 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 14904 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14905 */;
+import QuestDockHooks from "QuestDockHooks" /* 17316 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17383 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 17386 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 17307 */;
+import QuestDockConstants from "QuestDockConstants" /* 17319 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

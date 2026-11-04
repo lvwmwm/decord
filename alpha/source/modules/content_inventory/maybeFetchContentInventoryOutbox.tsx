@@ -1,12 +1,12 @@
-// Module ID: 15191
-// Function ID: 15192
+// Module ID: 15192
+// Function ID: 15193
 // Name: maybeFetchContentInventoryOutbox
-// Dependencies: [9634, 1089, 15192, 2]
+// Dependencies: [9634, 1089, 15193, 2]
 // Exports: default
 
-// Module 15191 (maybeFetchContentInventoryOutbox)
+// Module 15192 (maybeFetchContentInventoryOutbox)
 import DurationsDefault from "Durations" /* 1089 */;
-import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 15192 */;
+import ContentInventoryHttpApi from "ContentInventoryHttpApi" /* 15193 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9634 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 17300
-// Function ID: 17301
+// Module ID: 17312
+// Function ID: 17313
 // Name: QuestHomeOpenTriggerPoint
 // Dependencies: [5363, 10856, 2]
 
-// Module 17300 (QuestHomeOpenTriggerPoint)
+// Module 17312 (QuestHomeOpenTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 5363 */;
 import Helpers from "Helpers" /* 10856 */;
 import size from "module_2" /* 2 */;

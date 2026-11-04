@@ -1,10 +1,10 @@
-// Module ID: 11595
-// Function ID: 11596
+// Module ID: 11596
+// Function ID: 11597
 // Name: maybeShowUnsavedChangesAlert
-// Dependencies: [5, 32, 19, 21, 6095, 6099, 1113, 5331, 11596, 5382, 6094, 2]
+// Dependencies: [5, 32, 19, 21, 6095, 6099, 1113, 5331, 11597, 5382, 6094, 2]
 // Exports: default
 
-// Module 11595 (maybeShowUnsavedChangesAlert)
+// Module 11596 (maybeShowUnsavedChangesAlert)
 import intl5 from "intl" /* 1113 */;
 import AlertModal2 from "AlertModal" /* 6099 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -156,7 +156,7 @@ export default function maybeShowUnsavedChangesAlert(onReset) {
   if (onReset.hasUnsavedChanges) {
     let obj = onReset(5331);
     obj.dismissKeyboard();
-    const obj2 = onReset(11596);
+    const obj2 = onReset(11597);
     if (obj2.getIsUserProfileMobileSavePromptEnabled(tmp)) {
       const tmp7Result = onContinue(5382);
       tmp7Result.hideActionSheet();

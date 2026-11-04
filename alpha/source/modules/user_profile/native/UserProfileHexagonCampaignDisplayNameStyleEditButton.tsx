@@ -1,10 +1,10 @@
-// Module ID: 16719
-// Function ID: 16720
+// Module ID: 16731
+// Function ID: 16732
 // Name: UserProfileHexagonCampaignDisplayNameStyleEditButton
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 5166, 21, 5141, 575, 16720, 1113, 3059, 16699, 6919, 8878, 6574, 5168, 10950, 5729, 8876, 16698, 5846, 7462, 7487, 10084, 10085, 7224, 16721, 7121, 7179, 5723, 7125, 7506, 16714, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 5166, 21, 5141, 575, 16732, 1113, 3059, 16711, 6919, 8878, 6574, 5168, 10950, 5729, 8876, 16710, 5846, 7462, 7487, 10084, 10085, 7224, 16733, 7121, 7179, 5723, 7125, 7506, 16726, 2]
 // Exports: default
 
-// Module 16719 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
+// Module 16731 (UserProfileHexagonCampaignDisplayNameStyleEditButton)
 import nativeDefault from "native" /* 575 */;
 import _modDef3059 from "module_3059" /* 3059 */;
 import LinearGradientDefault from "LinearGradient" /* 5723 */;
@@ -288,7 +288,7 @@ export default function UserProfileHexagonCampaignDisplayNameStyleEditButton(ava
   tmp18Result = undefined;
   const Input = tmp3(7224).Input;
   if (availability !== constants5.LOCKED) {
-    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16721), obj8) };
+    let obj7 = { style: tmp.labelBadge, children: tmp18(tmp6(16733), obj8) };
     obj8 = { perk: constants4.DISPLAY_NAME_STYLE };
     tmp18Result = tmp18(closure_6, obj7);
   }
@@ -334,6 +334,6 @@ export default function UserProfileHexagonCampaignDisplayNameStyleEditButton(ava
     tmp18Result4 = tmp18(tmp3(7506).FormSwitch, obj20);
   }
   items4[1] = tmp18Result4;
-  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16714), { showLearnMore: true })];
+  items5 = [tmp31(PressableHighlight, obj10), tmp18(tmp6(16726), { showLearnMore: true })];
   return tmp18(Input, obj6);
 };

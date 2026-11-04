@@ -1,44 +1,30 @@
 // Module ID: 13111
 // Function ID: 13112
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055, 13051]
 
 // Module 13111 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import _mod13051 from "module_13051" /* 13051 */;
+import tokenize from "tokenize" /* 13055 */;
 
-let items;
 let obj2;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const Dimension = tokenize.TYPE.Dimension;
 let obj = {
-  name: "Function",
+  name: "Dimension",
   structure: obj2,
-  parse(call, arg1) {
-    let callResult;
-    const self = this;
+  parse() {
     const tokenStart = this.scanner.tokenStart;
-    const str = this.consumeFunctionName();
-    const formatted = str.toLowerCase();
-    if (arg1.hasOwnProperty(formatted)) {
-      const obj = arg1[formatted];
-      callResult = obj.call(self, arg1);
-    } else {
-      callResult = call.call(self, arg1);
-    }
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
-    }
-    const element = { type: "Function", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, children: callResult };
-    return element;
+    const obj = _mod13051;
+    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
+    this.eat(Dimension);
+    const obj2 = { type: "Dimension", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult), unit: str2.substring(consumeNumberResult, this.scanner.tokenStart) };
+    return obj2;
   },
-  generate(name) {
-    this.chunk(name.name);
-    this.chunk("(");
-    this.children(name);
-    this.chunk(")");
-  },
-  walkContext: "function"
+  generate(value) {
+    this.chunk(value.value);
+    this.chunk(value.unit);
+  }
 };
-obj2 = { name: String, children: items };
-items = [[]];
+obj2 = { value: String, unit: String };
 
 export default obj;

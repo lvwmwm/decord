@@ -1,17 +1,17 @@
-// Module ID: 16743
-// Function ID: 16744
+// Module ID: 16755
+// Function ID: 16756
 // Name: EditNameplateActionSheet
-// Dependencies: [32, 19, 17, 7875, 2114, 5053, 1072, 21, 5141, 575, 8882, 7462, 7487, 1252, 8876, 8883, 5396, 7457, 1113, 8884, 10782, 504, 16744, 15296, 8878, 16745, 15302, 15303, 8885, 9660, 5723, 11695, 2]
+// Dependencies: [32, 19, 17, 7875, 2114, 5053, 1072, 21, 5141, 575, 8882, 7462, 7487, 1252, 8876, 8883, 5396, 7457, 1113, 8884, 10783, 504, 16756, 15297, 8878, 16757, 15303, 15304, 8885, 9660, 5723, 11696, 2]
 // Exports: default
 
-// Module 16743 (EditNameplateActionSheet)
+// Module 16755 (EditNameplateActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import NameplateRecord from "NameplateRecord" /* 2114 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8876 */;
 import useShopProductItems from "useShopProductItems" /* 8883 */;
-import EditNameplateSection from "EditNameplateSection" /* 16745 */;
+import EditNameplateSection from "EditNameplateSection" /* 16757 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7875 */;
@@ -179,7 +179,7 @@ function NameplateActionSheetPreview(arg0) {
   const tmp2Result = purchase(5723);
   items2[1] = "" + tmp.nameplatePreviewGradient.color + "00";
   items1[2] = closure_10(tmp2Result, obj4);
-  items3 = [closure_11(View, obj3), closure_10(tmp10(11695).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
+  items3 = [closure_11(View, obj3), closure_10(tmp10(11696).NameplatePreview, { nameplate: memo, user, guildId, animate: true, "aria-hidden": true }), ];
   const obj5 = { style: tmp.nameplateGradientContainer, children: items4 };
   items4 = [closure_10(tmp10(9660).NameplateDummyUserPreview, { width: 140 }), closure_10(tmp10(9660).NameplateDummyUserPreview, { width: 100 }), ];
   const obj6 = { style: tmp.nameplatePreviewGradient, start: { x: 0, y: 0.2 }, end: { x: 0, y: 0.9 }, colors: items5 };

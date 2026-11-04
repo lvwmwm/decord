@@ -1,33 +1,20 @@
 // Module ID: 16496
 // Function ID: 16497
-// Dependencies: [16479]
+// Dependencies: []
 // Exports: default
 
 // Module 16496
-import ArgType from "ArgType" /* 16479 */;
+let size;
 
 
 export default () => (arg0) => {
-  const result = ArgType.assertHasLoggerPlugin(arg0);
   let closure_0 = arg0;
   return {
-    onConnect() {
-      console.log = () => {
-        const items = [...arguments];
-        log(...items);
-        const items1 = [...items];
-        log.log.apply(items1);
-      };
-      console.warn = () => {
-        const items = [...arguments];
-        warn(...items);
-        log.warn(items[0]);
-      };
-      console.debug = () => {
-        const items = [...arguments];
-        debug(...items);
-        log.debug(items[0]);
-      };
+    features: {
+      image(dependencyMap) {
+        size = { uri: dependencyMap.uri, preview: dependencyMap.preview, filename: dependencyMap.filename, width: dependencyMap.width, height: dependencyMap.height, caption: dependencyMap.caption };
+        return closure_0.send("image", size);
+      }
     }
   };
 };

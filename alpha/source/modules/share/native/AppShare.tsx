@@ -1,10 +1,10 @@
-// Module ID: 20417
-// Function ID: 20418
+// Module ID: 20430
+// Function ID: 20431
 // Name: AppShare
-// Dependencies: [32, 19, 17, 7780, 16459, 502, 1072, 14195, 21, 504, 6875, 1377, 8103, 16499, 14198, 7794, 1252, 5729, 6094, 16649, 15957, 1624, 9077, 7345, 19264, 19322, 6099, 2]
+// Dependencies: [32, 19, 17, 7780, 16472, 502, 1072, 14196, 21, 504, 6875, 1377, 8103, 16512, 14199, 7794, 1252, 5729, 6094, 16661, 15970, 1624, 9077, 7345, 19278, 19336, 6099, 2]
 // Exports: default
 
-// Module 20417 (AppShare)
+// Module 20430 (AppShare)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -12,15 +12,15 @@ import useMountEffectDefault from "useMountEffect" /* 5729 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6875 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7794 */;
-import Constants2 from "Constants" /* 14195 */;
-import ShareScreenDefault from "ShareScreen" /* 15957 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 16499 */;
-import AppContainerDefault from "AppContainer" /* 16649 */;
-import AppToastContainerDefault from "AppToastContainer" /* 19322 */;
+import Constants2 from "Constants" /* 14196 */;
+import ShareScreenDefault from "ShareScreen" /* 15970 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 16512 */;
+import AppContainerDefault from "AppContainer" /* 16661 */;
+import AppToastContainerDefault from "AppToastContainer" /* 19336 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7780 */;
-import ShareStore from "ShareStore" /* 16459 */;
+import ShareStore from "ShareStore" /* 16472 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

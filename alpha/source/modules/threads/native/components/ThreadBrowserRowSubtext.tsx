@@ -1,10 +1,10 @@
-// Module ID: 19053
-// Function ID: 19054
+// Module ID: 19067
+// Function ID: 19068
 // Name: ThreadBrowserRowSubtext
 // Dependencies: [19, 17, 5142, 5053, 1385, 7617, 1072, 1083, 21, 5141, 575, 504, 8487, 6175, 7037, 5761, 1113, 5195, 7622, 6573, 11, 1187, 8723, 8560, 2]
 // Exports: ThreadSubtext
 
-// Module 19053 (ThreadBrowserRowSubtext)
+// Module 19067 (ThreadBrowserRowSubtext)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;

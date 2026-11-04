@@ -1,10 +1,10 @@
-// Module ID: 12061
-// Function ID: 12062
+// Module ID: 12062
+// Function ID: 12063
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5383, 4995, 1072, 21, 1113, 5141, 575, 5786, 504, 5729, 11093, 8315, 12051, 6893, 8095, 6864, 8085, 8081, 1187, 5761, 5769, 5768, 12053, 11379, 5377, 5163, 11399, 8744, 2]
+// Dependencies: [5, 32, 19, 17, 5383, 4995, 1072, 21, 1113, 5141, 575, 5786, 504, 5729, 11093, 8315, 12052, 6893, 8095, 6864, 8085, 8081, 1187, 5761, 5769, 5768, 12054, 11380, 5377, 5163, 11400, 8744, 2]
 // Exports: default
 
-// Module 12061 (GlobalStageChannelStatus)
+// Module 12062 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,8 +12,8 @@ import intl8 from "intl" /* 1113 */;
 import useChannelNameDefault from "useChannelName" /* 5786 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 8085 */;
 import PushNotificationDefault from "PushNotification" /* 11093 */;
-import StatusBarDefault from "StatusBar" /* 11399 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 12053 */;
+import StatusBarDefault from "StatusBar" /* 11400 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 12054 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -189,7 +189,7 @@ class StageChannelRaiseHandAck {
       id2 = channel.id;
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-    channel(12051);
+    channel(12052);
     if (channel != null) {
       let id = channel.id;
     }
@@ -310,7 +310,7 @@ export default function GlobalStageChannelStatus(arg0) {
     stringResult = intl.string(id(1113).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(11379)(id);
+  let invitedHeaderText = tmp3(11380)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);

@@ -1,18 +1,18 @@
-// Module ID: 19471
-// Function ID: 19472
+// Module ID: 19485
+// Function ID: 19486
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 11410, 11428, 11429, 21, 5141, 575, 1627, 11409, 1652, 11436, 1705, 6008, 5384, 11414, 5428, 5378, 1113, 19472, 19474, 2]
+// Dependencies: [19, 17, 11411, 11429, 11430, 21, 5141, 575, 1627, 11410, 1652, 11437, 1705, 6008, 5384, 11415, 5428, 5378, 1113, 19486, 19488, 2]
 
-// Module 19471 (VoicePanelDock)
+// Module 19485 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5384 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11414 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11415 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11428 */;
-import GestureConstants from "GestureConstants" /* 11429 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11429 */;
+import GestureConstants from "GestureConstants" /* 11430 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size_mod from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ let tmp;
 let unpackModuleId;
 const _mod1705 = tmp(1705);
 const timing_timing = tmp(5378);
-const VoicePanelSheetMorph = tmp(11436);
+const VoicePanelSheetMorph = tmp(11437);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ DOCK_EXPAND_GESTURE_CANCEL_DISTANCE: metroImportDefault, DOCK_PULL_SNAP_DISTANCE: metroImportAll, DOCK_PULL_SNAP_GIVE: c9, DOCK_TAP_MAX_MOVEMENT: c10, getDockInset: unpackModuleId, DOCK_DRAG_HANDLE_TOP, DOCK_DRAG_HANDLE_WIDTH, DOCK_GAP, DOCK_PADDING_TOP, DOCK_ROW_HEIGHT } = VoicePanelDockConstants);

@@ -1,16 +1,16 @@
-// Module ID: 19372
-// Function ID: 19373
+// Module ID: 19386
+// Function ID: 19387
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 4990, 1385, 21, 5141, 575, 5869, 5761, 1113, 504, 6988, 19373, 5723, 1187, 6023, 6008, 5732, 19374, 11969, 19375, 2]
+// Dependencies: [32, 19, 17, 4990, 1385, 21, 5141, 575, 5869, 5761, 1113, 504, 6988, 19387, 5723, 1187, 6023, 6008, 5732, 19388, 11970, 19389, 2]
 
-// Module 19372 (ExternalPipViewVideo)
+// Module 19386 (ExternalPipViewVideo)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5869 */;
 import ExternalPipDefault from "ExternalPip" /* 6008 */;
-import VideoActionCreators from "VideoActionCreators" /* 19374 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19375 */;
+import VideoActionCreators from "VideoActionCreators" /* 19388 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19389 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -77,7 +77,7 @@ function ExternalPipViewVideoUser(userId) {
   const avatarDecoration = obj4.useAvatarDecoration(stateFromStores, stateFromStores1);
   const obj2 = { userId, guildId: stateFromStores1, avatarURI: avatarURL, location: "ExternalPipViewVideo-native" };
   avatarURL = undefined;
-  const tmp7 = channelId(19373);
+  const tmp7 = channelId(19387);
   const tmp6 = channelId;
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(stateFromStores1, 80, false);
@@ -180,7 +180,7 @@ function ExternalPipViewVideoStream(streamId) {
       obj.updateVideoSize(tmp, size, 1);
     }
   }, items4);
-  const children = [closure_11(first(11969), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(11970), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp16Result = null;
   const tmp14 = closure_12;
   const tmp15 = closure_13;

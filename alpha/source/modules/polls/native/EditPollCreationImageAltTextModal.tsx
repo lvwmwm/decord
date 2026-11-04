@@ -1,13 +1,13 @@
-// Module ID: 12785
-// Function ID: 12786
+// Module ID: 12786
+// Function ID: 12787
 // Name: EditPollCreationImageAltTextModal
-// Dependencies: [32, 19, 17, 8547, 21, 5141, 575, 12782, 12784, 7428, 1113, 1187, 8499, 5761, 7096, 9257, 8317, 2]
+// Dependencies: [32, 19, 17, 8547, 21, 5141, 575, 12783, 12785, 7428, 1113, 1187, 8499, 5761, 7096, 9257, 8317, 2]
 // Exports: default
 
-// Module 12785 (EditPollCreationImageAltTextModal)
+// Module 12786 (EditPollCreationImageAltTextModal)
 import nativeDefault from "native" /* 575 */;
 import PollsConstants from "PollsConstants" /* 8547 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12784 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12785 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -59,7 +59,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   imageSize = imageSize.imageSize;
   value = undefined;
   const tmp = closure_10();
-  const tmp4 = value(12782)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
+  const tmp4 = value(12783)(channelId, answer.localCreationAnswerId, answer.image, imageSize, imageSize);
   const upload = tmp4.upload;
   let obj = react;
   let str;
@@ -82,7 +82,7 @@ export default function EditPollCreationImageAltTextModal(imageSize) {
   }, items);
   const obj2 = { top: true, style: tmp.container, children: items2 };
   const obj3 = { style: tmp.header, children: items1 };
-  const obj4 = { onPress: onSave(12784).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(onSave(1113).t.cpT0Cq), children: closure_8(Icon, obj5) };
+  const obj4 = { onPress: onSave(12785).closeEditPollCreationImageAltTextModal, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl.string(onSave(1113).t.cpT0Cq), children: closure_8(Icon, obj5) };
   const SafeAreaPaddingView = onSave(7428).SafeAreaPaddingView;
   intl = onSave(1113).intl;
   obj5 = { source: value(8499) };

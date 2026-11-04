@@ -1,9 +1,9 @@
-// Module ID: 20297
-// Function ID: 20298
+// Module ID: 20311
+// Function ID: 20312
 // Name: QuestFetchManager
-// Dependencies: [5, 7986, 1089, 7423, 9823, 1242, 9832, 1377, 7007, 20298, 2]
+// Dependencies: [5, 7986, 1089, 7423, 9823, 1242, 9832, 1377, 7007, 20312, 2]
 
-// Module 20297 (QuestFetchManager)
+// Module 20311 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;

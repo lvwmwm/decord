@@ -1,10 +1,10 @@
-// Module ID: 12754
-// Function ID: 12755
+// Module ID: 12755
+// Function ID: 12756
 // Name: PollCreation
-// Dependencies: [19, 17, 8547, 21, 5141, 575, 1377, 6099, 1113, 7223, 1187, 11673, 5761, 12755, 5382, 12756, 2123, 7116, 5331, 6163, 1260, 5743, 9957, 12753, 5846, 10711, 5150, 12757, 12775, 7145, 8544, 6095, 12776, 7698, 7196, 12777, 9956, 9958, 12779, 8317, 12781, 7115, 2]
+// Dependencies: [19, 17, 8547, 21, 5141, 575, 1377, 6099, 1113, 7223, 1187, 11674, 5761, 12756, 5382, 12757, 2123, 7116, 5331, 6163, 1260, 5743, 9957, 12754, 5846, 10711, 5150, 12758, 12776, 7145, 8544, 6095, 12777, 7698, 7196, 12778, 9956, 9958, 12780, 8317, 12782, 7115, 2]
 // Exports: default
 
-// Module 12754 (PollCreation)
+// Module 12755 (PollCreation)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
@@ -20,9 +20,9 @@ import TextInput_TextInput from "TextInput/TextInput" /* 7223 */;
 import PollsUtils from "PollsUtils" /* 8544 */;
 import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 9956 */;
 import PollsIcon from "PollsIcon" /* 10711 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11673 */;
-import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12753 */;
-import PollAnswerInputDefault from "PollAnswerInput" /* 12781 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11674 */;
+import PollCreationModalActionCreators from "PollCreationModalActionCreators" /* 12754 */;
+import PollAnswerInputDefault from "PollAnswerInput" /* 12782 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PollsConstants from "PollsConstants" /* 8547 */;
@@ -126,7 +126,7 @@ function PollDurationSelectionRow(selectedDuration) {
   let intl3;
   selectedDuration = selectedDuration.selectedDuration;
   const onChange = selectedDuration.onChange;
-  const tmp = onChange(12755)()[selectedDuration];
+  const tmp = onChange(12756)()[selectedDuration];
   let obj = {
     label: intl.string(selectedDuration(1113).t.bGHzxb),
     accessibilityLabel: "" + intl2.string(selectedDuration(1113).t.bGHzxb) + " " + tmp,
@@ -136,7 +136,7 @@ function PollDurationSelectionRow(selectedDuration) {
       obj.dismissKeyboard();
       const obj2 = ActionSheetActionCreatorsDefault;
       const obj3 = { selectedDuration, onChange };
-      obj2.openLazy(asyncRequire(12756, dependencyMap.paths), metroImportAll, obj3);
+      obj2.openLazy(asyncRequire(12757, dependencyMap.paths), metroImportAll, obj3);
     },
     trailing: closure_9(selectedDuration(5761).Text, { variant: "body-md/normal", color: "text-muted", children: tmp }),
     arrow: true
@@ -279,7 +279,7 @@ export default function PollCreation(channel) {
     const obj = { number: indexToRemove + 1 };
     announce(intl.formatToPlainString(channel(closure_2[8]).t.BByGU4, obj));
   }, []);
-  const tmp11 = onCancel(12757)(channel, callback, callback1);
+  const tmp11 = onCancel(12758)(channel, callback, callback1);
   answers = tmp11.answers;
   ({ question: c4, allowMultiSelect } = tmp11);
   ({ setAllowMultiSelect: c6, canAddMoreAnswers, canRemoveMoreAnswers: c7, handleAnswerTextChange: c8, handleEmojiSelect: c9, handleAddAnswer } = tmp11);
@@ -288,7 +288,7 @@ export default function PollCreation(channel) {
   ({ createPollError, submitting, shouldFocusOnInvalidField } = tmp11);
   const setShouldFocusOnInvalidField = tmp11.setShouldFocusOnInvalidField;
   ({ handleQuestionChange, handleSubmitPoll, duration, setDuration } = tmp11);
-  const obj3 = channel(12775);
+  const obj3 = channel(12776);
   let closure_18 = obj3.useTrackPollCreationEvents(answers, allowMultiSelect).trackPollCreationCancelled;
   const obj4 = channel(7145);
   obj4.useNavigatorBackPressHandler(() => {
@@ -314,7 +314,7 @@ export default function PollCreation(channel) {
       handleAddAnswer();
     }
   };
-  const obj6 = onCancel(12776)(obj5);
+  const obj6 = onCancel(12777)(obj5);
   const items1 = [fieldErrors, obj6, setShouldFocusOnInvalidField, shouldFocusOnInvalidField];
   const effect1 = answers.useEffect(() => {
     const keys = Object.keys(fieldErrors);
@@ -384,7 +384,7 @@ export default function PollCreation(channel) {
     const HeaderActionButton2 = tmp4(7698).HeaderActionButton;
     intl3 = tmp4(1113).intl;
     let TEXT_BRAND;
-    CalendarPlusIcon = tmp4(12777).CalendarPlusIcon;
+    CalendarPlusIcon = tmp4(12778).CalendarPlusIcon;
     if (null != scheduledTimestamp) {
       TEXT_BRAND = tmp(575).colors.TEXT_BRAND;
     }
@@ -404,7 +404,7 @@ export default function PollCreation(channel) {
   const tmp20 = c6;
   if (tmp14Result) {
     let anyErrorMessage;
-    let tmpResult = tmp(12779);
+    let tmpResult = tmp(12780);
     if (createPollError != null) {
       anyErrorMessage = createPollError.getAnyErrorMessage();
     }

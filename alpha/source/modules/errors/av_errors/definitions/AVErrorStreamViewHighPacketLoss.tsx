@@ -1,13 +1,13 @@
-// Module ID: 20321
-// Function ID: 20322
+// Module ID: 20334
+// Function ID: 20335
 // Name: AVErrorStreamViewHighPacketLoss
-// Dependencies: [6849, 502, 8025, 20320, 6852, 6082, 20317, 2]
+// Dependencies: [6849, 502, 8025, 20333, 6852, 6082, 20330, 2]
 
-// Module 20321 (AVErrorStreamViewHighPacketLoss)
+// Module 20334 (AVErrorStreamViewHighPacketLoss)
 import AVError from "AVError" /* 6082 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6852 */;
-import AVErrorContext from "AVErrorContext" /* 20317 */;
-import AVErrorUtils from "AVErrorUtils" /* 20320 */;
+import AVErrorContext from "AVErrorContext" /* 20330 */;
+import AVErrorUtils from "AVErrorUtils" /* 20333 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8025 */;

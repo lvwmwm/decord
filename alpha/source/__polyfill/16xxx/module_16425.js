@@ -1,14 +1,18 @@
 // Module ID: 16425
 // Function ID: 16426
-// Dependencies: [16404, 16403]
+// Dependencies: [16398]
 
 // Module 16425
-import _mod16403 from "module_16403" /* 16403 */;
-import _mod16404 from "module_16404" /* 16404 */;
+import _mod16398 from "module_16398" /* 16398 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod16404;
-  return tmp(arg0, _mod16403);
-});
 
-export default tmp;
+export default function(arg0) {
+  if (_mod16398(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp3 = new TypeError(String(arg0) + " is not an object");
+    throw tmp3;
+  }
+};

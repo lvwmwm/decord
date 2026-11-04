@@ -1,10 +1,10 @@
-// Module ID: 19655
-// Function ID: 19656
+// Module ID: 19669
+// Function ID: 19670
 // Name: ageGateNavigationCallbacks
 // Dependencies: [5172, 1097, 1072, 6874, 7037, 6879, 1252, 2]
 // Exports: generateOnBack, onGateClose, renderHeaderTitle
 
-// Module 19655 (ageGateNavigationCallbacks)
+// Module 19669 (ageGateNavigationCallbacks)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6874 */;

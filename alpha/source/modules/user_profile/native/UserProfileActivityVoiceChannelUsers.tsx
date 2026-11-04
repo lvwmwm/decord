@@ -1,14 +1,14 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15094
+// Function ID: 15095
 // Name: UserProfileActivityVoiceChannelUsers
-// Dependencies: [19, 5895, 21, 6988, 504, 7116, 6176, 1187, 11600, 1113, 2]
+// Dependencies: [19, 5895, 21, 6988, 504, 7116, 6176, 1187, 11601, 1113, 2]
 // Exports: default
 
-// Module 15093 (UserProfileActivityVoiceChannelUsers)
+// Module 15094 (UserProfileActivityVoiceChannelUsers)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11600 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 11601 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5895 */;
 import size from "module_2" /* 2 */;

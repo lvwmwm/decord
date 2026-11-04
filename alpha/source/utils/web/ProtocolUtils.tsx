@@ -1,9 +1,9 @@
-// Module ID: 14963
-// Function ID: 14964
+// Module ID: 14964
+// Function ID: 14965
 // Name: ProtocolUtils
 // Dependencies: [6006, 2]
 
-// Module 14963 (ProtocolUtils)
+// Module 14964 (ProtocolUtils)
 import _modDef6006 from "module_6006" /* 6006 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 14661
-// Function ID: 14662
+// Module ID: 14662
+// Function ID: 14663
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8904, 21, 5141, 575, 10794, 10797, 5761, 1113, 2763, 2]
+// Dependencies: [19, 17, 8904, 21, 5141, 575, 10795, 10797, 5761, 1113, 2763, 2]
 // Exports: default
 
-// Module 14661 (GiftingBadgeProgress)
+// Module 14662 (GiftingBadgeProgress)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2763 from "module_2763" /* 2763 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10794 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10795 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10797 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

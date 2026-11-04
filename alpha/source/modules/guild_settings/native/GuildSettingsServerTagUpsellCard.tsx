@@ -1,16 +1,16 @@
-// Module ID: 20021
-// Function ID: 20022
+// Module ID: 20035
+// Function ID: 20036
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 5353, 1072, 21, 5141, 575, 504, 5357, 14311, 14281, 5207, 5723, 6162, 14314, 5761, 1113, 5768, 18517, 2]
+// Dependencies: [19, 17, 5353, 1072, 21, 5141, 575, 504, 5357, 14312, 14282, 5207, 5723, 6162, 14315, 5761, 1113, 5768, 18531, 2]
 // Exports: default
 
-// Module 20021 (GuildSettingsServerTagUpsellCard)
+// Module 20035 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Powerups from "Powerups" /* 5357 */;
 import LinearGradientDefault from "LinearGradient" /* 5723 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14281 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14311 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 14282 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 14312 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5353 */;
@@ -87,7 +87,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   tmp8Result = null != tmp6;
   if (tmp8Result) {
     const obj9 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp8Result = tmp8(tmp5(14314), obj9);
+    tmp8Result = tmp8(tmp5(14315), obj9);
   }
   items5 = [closure_7(closure_4, obj8), , ];
   const obj10 = { spacing: nativeDefault.space.PX_8, style: tmp.textBlock, children: items6 };
@@ -103,7 +103,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   intl2 = tmp2(1113).intl;
   items6[1] = closure_7(Text2, obj12);
   items5[1] = closure_8(Stack2, obj10);
-  const obj13 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1113).t.kMRDWs), icon: closure_7(tmp2(18517).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
+  const obj13 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1113).t.kMRDWs), icon: closure_7(tmp2(18531).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
   const Button = tmp2(5768).Button;
   intl3 = tmp2(1113).intl;
   items5[2] = closure_7(Button, obj13);

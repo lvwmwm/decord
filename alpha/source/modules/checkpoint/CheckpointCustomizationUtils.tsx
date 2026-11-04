@@ -2,7 +2,7 @@
 // Function ID: 6570
 // Name: CheckpointCustomizationUtils
 // Dependencies: [6201, 3219, 1113, 6247, 6570, 6246, 6202, 6248, 6245, 2]
-// Exports: getAssetAccessibilityLabel, getChamferedRectPoints, getCustomizationOptionForCharacterStage, getCustomizationOptionName, getIsTraitRarityVisible, getNitroLockedMessage, getTraitOptionShapePoints, isCheckpointRouteBlocked, isNoneOption, makeTraitRaritySorter
+// Exports: getAssetAccessibilityLabel, getChamferedRectPoints, getCheckpointRouteBlockedTrait, getCustomizationOptionForCharacterStage, getCustomizationOptionName, getIsTraitRarityVisible, getNitroLockedMessage, getTraitOptionShapePoints, isNoneOption, makeTraitRaritySorter
 
 // Module 6569 (CheckpointCustomizationUtils)
 import intl7 from "intl" /* 1113 */;
@@ -16,7 +16,8 @@ import CheckpointNavigation from "CheckpointNavigation" /* 6570 */;
 import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import size from "module_2" /* 2 */;
 
-let map;
+const require = globalThis.__r;
+let _require, map;
 
 let AURA;
 let AURA2;
@@ -36,7 +37,7 @@ let WEARABLE;
 let WEARABLE2;
 let c3;
 let closure_4;
-const f89538 = (item) => {
+const f89668 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -213,18 +214,19 @@ export function getNitroLockedMessage(nextBlockedTrait) {
   }
   return stringResult;
 }
-export function isCheckpointRouteBlocked(activeRoute, arr) {
-  if (activeRoute === CheckpointNavigation.CheckpointRoute.FINALIZE_CHARACTER) {
-    return arr.length > 0;
+export function getCheckpointRouteBlockedTrait(activeRoute, arr) {
+  let closure_0;
+  if (activeRoute === require("CheckpointNavigation").CheckpointRoute.FINALIZE_CHARACTER) {
+    return arr[0];
   } else {
-    const tmpResult = CheckpointNavigation;
+    const tmpResult = require("CheckpointNavigation");
     if (tmpResult.isCheckpointCustomizationRoute(activeRoute)) {
-      const tmpResult2 = CheckpointNavigation;
+      const tmpResult2 = require("CheckpointNavigation");
       const tmp4 = obj4[tmpResult2.getCheckpointRoutePresentation(tmpResult2, activeRoute).characterStage];
-      const hasItem = null != tmp4 && arr.includes(obj3[tmp4]);
-      return hasItem;
-    } else {
-      return false;
+      _require = tmp4;
+      if (null != tmp4) {
+        return arr.find((item) => item === obj3[closure_0]);
+      }
     }
   }
 }
@@ -243,7 +245,7 @@ export function getChamferedRectPoints(width, height, arg2) {
   items1[3] = items4;
   const items5 = [num, height - num];
   items1[4] = items5;
-  const mapped = items1.map(f89538);
+  const mapped = items1.map(f89668);
   return mapped.join(" ");
 }
 export const TRAIT_OPTION_STROKE_WIDTH = 2;
@@ -259,6 +261,6 @@ export function getTraitOptionShapePoints(width, height) {
   items1[3] = items4;
   const items5 = [1, height - 1];
   items1[4] = items5;
-  const mapped = items1.map(f89538);
+  const mapped = items1.map(f89668);
   return mapped.join(" ");
 }

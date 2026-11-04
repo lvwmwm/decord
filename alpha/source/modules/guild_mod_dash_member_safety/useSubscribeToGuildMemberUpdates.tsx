@@ -1,10 +1,10 @@
-// Module ID: 18912
-// Function ID: 18913
+// Module ID: 18926
+// Function ID: 18927
 // Name: useSubscribeToGuildMemberUpdates
 // Dependencies: [19, 7591, 2]
 // Exports: useSubscribeToGuildMemberUpdates
 
-// Module 18912 (useSubscribeToGuildMemberUpdates)
+// Module 18926 (useSubscribeToGuildMemberUpdates)
 import GuildSubscriptionsActionCreatorsAll from "GuildSubscriptionsActionCreators" /* 7591 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

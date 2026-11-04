@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const GuildChannelStore = GuildChannelStore2;
 let c3, c4, c5;
 
-const f99188 = (channel) => channel.channel;
+const f99320 = (channel) => channel.channel;
 function conjureProductionBotUserId(project) {
   const application = ApplicationStore.getApplication(project.application_id);
   let id;
@@ -205,7 +205,7 @@ export function canRemoveConjureBot(guild, id) {
 export function findConjureAppChannels(id, application_id) {
   let closure_0 = application_id;
   const arr = GuildChannelStore.getChannels(id)[closure_6];
-  const mapped = arr.map(f99188);
+  const mapped = arr.map(f99320);
   return mapped.filter((item) => {
     obj = ConjureUtils;
     return obj.conjureChannelAppId(item) === application_id;
@@ -243,7 +243,7 @@ export function readConjureAppServerPresence(install_scope) {
         if (true !== tmp6) {
           const application_id = install_scope.application_id;
           const arr2 = GuildChannelStore.getChannels(install_scope.guild_id)[closure_6];
-          const mapped = arr2.map(f99188);
+          const mapped = arr2.map(f99320);
           str2 = "in_server";
           if (mapped.filter((item) => {
             obj = ConjureUtils;

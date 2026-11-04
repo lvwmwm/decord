@@ -1,10 +1,10 @@
-// Module ID: 18481
-// Function ID: 18482
+// Module ID: 18495
+// Function ID: 18496
 // Name: channel_list_v2/ChannelListUtils
 // Dependencies: [1072, 7847, 5894, 2]
 // Exports: isFavoritesSection, isNamedCategorySection, isRecentsSection, isVoiceChannelsSection, logChannelListEndReached
 
-// Module 18481 (channel_list_v2/ChannelListUtils)
+// Module 18495 (channel_list_v2/ChannelListUtils)
 import Constants from "Constants" /* 1072 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
 import ChannelListState from "ChannelListState" /* 7847 */;

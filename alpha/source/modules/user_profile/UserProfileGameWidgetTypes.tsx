@@ -51,7 +51,7 @@ class BaseGameWidget {
     return tmp;
   }
   isEqual(type) {
-    const f124636 = (gameId, index) => {
+    const f125092 = (gameId, index) => {
       let c0;
       let flag = false;
       if (gameId.gameId === games1[index].gameId) {
@@ -128,8 +128,8 @@ class BaseGameWidget {
         const games = self.games;
         const games1 = type.games;
         type = self.type;
-        tmp2 = games.length === games1.length && games.every(f124636);
-        const tmp3 = games.length === games1.length && games.every(f124636);
+        tmp2 = games.length === games1.length && games.every(f125092);
+        const tmp3 = games.length === games1.length && games.every(f125092);
       }
       tmp = tmp2;
     }

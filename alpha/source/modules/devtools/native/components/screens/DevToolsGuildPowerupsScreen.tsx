@@ -1,10 +1,10 @@
-// Module ID: 17953
-// Function ID: 17954
+// Module ID: 17965
+// Function ID: 17966
 // Name: DevToolsGuildPowerupsScreen
-// Dependencies: [5, 19, 17, 1231, 14353, 5012, 5172, 17954, 1072, 21, 5141, 575, 1282, 2171, 8606, 14281, 17856, 7505, 14287, 4971, 4974, 1627, 504, 5761, 7201, 7116, 2]
+// Dependencies: [5, 19, 17, 1231, 14354, 5012, 5172, 17966, 1072, 21, 5141, 575, 1282, 2171, 8606, 14282, 17868, 7505, 14288, 4971, 4974, 1627, 504, 5761, 7201, 7116, 2]
 // Exports: default
 
-// Module 17953 (DevToolsGuildPowerupsScreen)
+// Module 17965 (DevToolsGuildPowerupsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
@@ -13,16 +13,16 @@ import _modDef2171 from "module_2171" /* 2171 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4971 */;
 import dismissible_content from "dismissible_content" /* 4974 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7505 */;
-import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 14287 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17856 */;
+import GuildDismissibleContentUtils from "GuildDismissibleContentUtils" /* 14288 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17868 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14353 */;
+import AppliedGuildBoostStore from "AppliedGuildBoostStore" /* 14354 */;
 import GuildStore from "GuildStore" /* 5012 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
-import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 17954 */;
+import DevToolsGuildPowerupsConstants from "DevToolsGuildPowerupsConstants" /* 17966 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

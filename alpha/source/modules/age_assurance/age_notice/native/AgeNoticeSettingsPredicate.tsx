@@ -1,10 +1,10 @@
-// Module ID: 16819
-// Function ID: 16820
+// Module ID: 16831
+// Function ID: 16832
 // Name: AgeNoticeSettingsPredicate
 // Dependencies: [6872, 6873, 2]
 // Exports: useIsTinyBroncoSettingsEnabled
 
-// Module 16819 (AgeNoticeSettingsPredicate)
+// Module 16831 (AgeNoticeSettingsPredicate)
 import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
 import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6873 */;
 import size from "module_2" /* 2 */;

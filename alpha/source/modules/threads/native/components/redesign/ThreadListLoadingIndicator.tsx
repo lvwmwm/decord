@@ -1,11 +1,11 @@
-// Module ID: 19055
-// Function ID: 19056
+// Module ID: 19069
+// Function ID: 19070
 // Name: ThreadListLoadingIndicator
-// Dependencies: [19, 21, 5141, 11966, 2]
+// Dependencies: [19, 21, 5141, 11967, 2]
 
-// Module 19055 (ThreadListLoadingIndicator)
+// Module 19069 (ThreadListLoadingIndicator)
 import Fragment from "Fragment" /* 21 */;
-import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 11966 */;
+import MessageLoadingSpinnerDefault from "MessageLoadingSpinner" /* 11967 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;

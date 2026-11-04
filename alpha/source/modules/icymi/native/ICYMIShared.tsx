@@ -1,10 +1,10 @@
-// Module ID: 18824
-// Function ID: 18825
+// Module ID: 18838
+// Function ID: 18839
 // Name: ICYMIShared
-// Dependencies: [19, 17, 7617, 4990, 5053, 5073, 1385, 1072, 21, 9060, 14936, 8800, 9528, 10252, 7415, 7561, 7344, 7776, 5373, 18783, 1377, 575, 1187, 9656, 7098, 5776, 7121, 5761, 6995, 18825, 9906, 504, 6176, 9065, 8891, 8807, 9064, 7622, 9260, 1113, 18784, 5377, 5732, 5138, 1652, 5378, 7625, 8784, 7514, 5888, 2]
+// Dependencies: [19, 17, 7617, 4990, 5053, 5073, 1385, 1072, 21, 9060, 14937, 8800, 9528, 10252, 7415, 7561, 7344, 7776, 5373, 18797, 1377, 575, 1187, 9656, 7098, 5776, 7121, 5761, 6995, 18839, 9906, 504, 6176, 9065, 8891, 8807, 9064, 7622, 9260, 1113, 18798, 5377, 5732, 5138, 1652, 5378, 7625, 8784, 7514, 5888, 2]
 // Exports: AnnouncementContentPost, GuildEventPost, MessageContentPost, SimplePost, ThreadAsComments, navigateToPost, truncateUsername
 
-// Module 18824 (ICYMIShared)
+// Module 18838 (ICYMIShared)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -22,7 +22,7 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 88
 import ICYMIUtils from "ICYMIUtils" /* 9064 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
 import ClipView from "ClipView" /* 9656 */;
-import openDetailsActionSheet2 from "openDetailsActionSheet" /* 18825 */;
+import openDetailsActionSheet2 from "openDetailsActionSheet" /* 18839 */;
 import react from "react" /* 19 */;
 import ThreadMessageStore from "ThreadMessageStore" /* 7617 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
@@ -31,7 +31,7 @@ import PermissionStore from "PermissionStore" /* 5073 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18783 */;
+import createICYMIStyles from "createICYMIStyles" /* 18797 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

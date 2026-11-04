@@ -1,10 +1,10 @@
-// Module ID: 11415
-// Function ID: 11416
+// Module ID: 11416
+// Function ID: 11417
 // Name: participantHasVideo
 // Dependencies: [502, 2135, 5815, 5902, 504, 2]
 // Exports: default, useCanRenderParticipantVideo
 
-// Module 11415 (participantHasVideo)
+// Module 11416 (participantHasVideo)
 import Constants from "Constants" /* 5902 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;

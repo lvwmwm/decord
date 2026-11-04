@@ -5,7 +5,7 @@
 // Module 13152
 const obj = {
   parse() {
-    return this.createSingleNodeList(this.SelectorList());
+    return this.createSingleNodeList(this.Identifier());
   }
 };
 

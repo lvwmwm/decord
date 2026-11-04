@@ -1,10 +1,10 @@
-// Module ID: 20212
-// Function ID: 20213
+// Module ID: 20226
+// Function ID: 20227
 // Name: CreatorMonetizationSettingsDisabledContext
 // Dependencies: [19, 21, 7567, 2]
 // Exports: CreatorMonetizationSettingsDisabledContextProvider, useCreatorMonetizationSettingsDisabled
 
-// Module 20212 (CreatorMonetizationSettingsDisabledContext)
+// Module 20226 (CreatorMonetizationSettingsDisabledContext)
 import Fragment from "Fragment" /* 21 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7567 */;
 import react from "react" /* 19 */;

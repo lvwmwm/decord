@@ -1,16 +1,16 @@
-// Module ID: 18436
-// Function ID: 18437
+// Module ID: 18450
+// Function ID: 18451
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 4993, 21, 18437, 18438, 504, 7502, 7457, 1113, 7504, 3577, 8786, 6879, 18439, 2123, 12699, 18441, 7237, 5872, 2]
+// Dependencies: [19, 4993, 21, 18451, 18452, 504, 7502, 7457, 1113, 7504, 3577, 8786, 6879, 18453, 2123, 12700, 18455, 7237, 5872, 2]
 // Exports: default
 
-// Module 18436 (FavoritesGuildActionSheet)
+// Module 18450 (FavoritesGuildActionSheet)
 import asyncRequire from "asyncRequire" /* 2123 */;
 import _modDef3577 from "module_3577" /* 3577 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 18437 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 18438 */;
-import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 18441 */;
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 18451 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 18452 */;
+import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 18455 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4993 */;
 import Fragment from "Fragment" /* 21 */;
@@ -65,7 +65,7 @@ export default function FavoritesGuildActionSheet(onClose) {
     onPress() {
       onClose();
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(18439, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
+      obj.pushLazy(asyncRequire(18453, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
     }
   };
   ActionSheetRow = onClose(7504).ActionSheetRow;
@@ -87,7 +87,7 @@ export default function FavoritesGuildActionSheet(onClose) {
     };
     ActionSheetRow2 = tmp4(7504).ActionSheetRow;
     intl3 = tmp4(1113).intl;
-    obj9 = { IconComponent: onClose(12699).ArrowsUpDownIcon };
+    obj9 = { IconComponent: onClose(12700).ArrowsUpDownIcon };
     Icon2 = tmp4(7504).ActionSheetRow.Icon;
     tmp7Result = tmp7(Group2, obj7);
   }

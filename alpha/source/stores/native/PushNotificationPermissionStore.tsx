@@ -1,9 +1,9 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 14191
+// Function ID: 14192
 // Name: PushNotificationPermissionStore
 // Dependencies: [504, 11093, 572, 2]
 
-// Module 14190 (PushNotificationPermissionStore)
+// Module 14191 (PushNotificationPermissionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import PushNotificationDefault from "PushNotification" /* 11093 */;

@@ -1,16 +1,16 @@
-// Module ID: 11402
-// Function ID: 11403
+// Module ID: 11403
+// Function ID: 11404
 // Name: useChannelContentGate
-// Dependencies: [19, 21, 6869, 6888, 10151, 11403, 11405, 11407, 2]
+// Dependencies: [19, 21, 6869, 6888, 10151, 11404, 11406, 11408, 2]
 // Exports: renderChannelContentGate, useChannelContentGate
 
-// Module 11402 (useChannelContentGate)
+// Module 11403 (useChannelContentGate)
 import Fragment from "Fragment" /* 21 */;
 import AgeGateUtils from "AgeGateUtils" /* 6869 */;
 import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6888 */;
-import NsfwGateChatDefault from "NsfwGateChat" /* 11403 */;
-import GuildNSFWDefault from "GuildNSFW" /* 11405 */;
-import ChannelSpoilerDefault from "ChannelSpoiler" /* 11407 */;
+import NsfwGateChatDefault from "NsfwGateChat" /* 11404 */;
+import GuildNSFWDefault from "GuildNSFW" /* 11406 */;
+import ChannelSpoilerDefault from "ChannelSpoiler" /* 11408 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

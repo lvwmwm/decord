@@ -1,9 +1,9 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19164
+// Function ID: 19165
 // Name: RegionStore
 // Dependencies: [5012, 12, 504, 572, 2]
 
-// Module 19150 (RegionStore)
+// Module 19164 (RegionStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

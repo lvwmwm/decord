@@ -1,10 +1,10 @@
-// Module ID: 12574
-// Function ID: 12575
+// Module ID: 12575
+// Function ID: 12576
 // Name: UserProfileConfirmThreadRemove
 // Dependencies: [19, 21, 5195, 6099, 1113, 6099, 2]
 // Exports: default
 
-// Module 12574 (UserProfileConfirmThreadRemove)
+// Module 12575 (UserProfileConfirmThreadRemove)
 import intl5 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5195 */;
 import AlertModal2 from "AlertModal" /* 6099 */;

@@ -9,7 +9,7 @@ import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/findComponentMedia.tsx");
 function findComponentMedia(arg0) {
-  const f91478 = (type) => {
+  const f91609 = (type) => {
     type = type.type;
     if (Server.ComponentType.MEDIA_GALLERY === type) {
       const items = type.items;
@@ -29,8 +29,8 @@ function findComponentMedia(arg0) {
         const items2 = [accessory];
         obj = items2;
       }
-      const flatMapResult = obj.flatMap(f91478);
-      HermesBuiltin.arraySpread(items1, flatMapResult.map(f91479), arraySpreadResult);
+      const flatMapResult = obj.flatMap(f91609);
+      HermesBuiltin.arraySpread(items1, flatMapResult.map(f91610), arraySpreadResult);
       return items1;
     } else {
       if (Server.ComponentType.ACTION_ROW !== type) {
@@ -42,7 +42,7 @@ function findComponentMedia(arg0) {
       return components.flatMap(findComponentMedia);
     }
   };
-  const f91479 = (item) => {
+  const f91610 = (item) => {
     let toUnfurledMediaItemResult = item;
     if ("proxy_url" in item) {
       const obj = closure_1_0(closure_1_1[1]);
@@ -55,8 +55,8 @@ function findComponentMedia(arg0) {
     let items = [arg0];
     obj = items;
   }
-  let flatMapResult = obj.flatMap(f91478);
-  return flatMapResult.map(f91479);
+  let flatMapResult = obj.flatMap(f91609);
+  return flatMapResult.map(f91610);
 }
 
 export default findComponentMedia;

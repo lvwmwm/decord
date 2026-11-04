@@ -1,10 +1,10 @@
-// Module ID: 12011
-// Function ID: 12012
+// Module ID: 12012
+// Function ID: 12013
 // Name: getRemoteIconURL
 // Dependencies: [2]
 // Exports: default
 
-// Module 12011 (getRemoteIconURL)
+// Module 12012 (getRemoteIconURL)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/getRemoteIconURL.tsx");

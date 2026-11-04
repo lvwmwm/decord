@@ -1,14 +1,14 @@
 // Module ID: 9910
 // Function ID: 9911
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 5141, 575, 1652, 9911, 11682, 8914, 6867, 7100, 5761, 1113, 5378, 5381, 1705, 7179, 5723, 1092, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 1652, 9911, 11683, 8914, 6867, 7100, 5761, 1113, 5378, 5381, 1705, 7179, 5723, 1092, 2]
 
 // Module 9910 (DetailsHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1705 from "module_1705" /* 1705 */;
 import timing_timing from "timing/timing" /* 5378 */;
 import timingPresets from "timingPresets" /* 5381 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 11682 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 11683 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

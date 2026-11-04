@@ -1,10 +1,10 @@
-// Module ID: 17982
-// Function ID: 17983
+// Module ID: 17994
+// Function ID: 17995
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1385, 1403, 21, 1405, 10957, 1113, 10953, 3059, 5141, 575, 6162, 5761, 5768, 10950, 10951, 504, 17983, 7201, 7116, 14832, 6576, 2]
+// Dependencies: [32, 19, 17, 1385, 1403, 21, 1405, 10957, 1113, 10953, 3059, 5141, 575, 6162, 5761, 5768, 10950, 10951, 504, 17995, 7201, 7116, 14833, 6576, 2]
 // Exports: default
 
-// Module 17982 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 17994 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1403 */;

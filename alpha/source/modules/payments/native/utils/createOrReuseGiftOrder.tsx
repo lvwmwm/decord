@@ -1,10 +1,10 @@
-// Module ID: 10791
-// Function ID: 10792
+// Module ID: 10792
+// Function ID: 10793
 // Name: createOrReuseGiftOrder
 // Dependencies: [5, 19, 5881, 1387, 1083, 3, 7754, 1377, 2171, 4954, 2]
 // Exports: useCreateOrReuseGiftOrder
 
-// Module 10791 (createOrReuseGiftOrder)
+// Module 10792 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1083 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -72,7 +72,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
             skuId = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: true };
+            return { value: "flexDirection", done: null };
           }
         } else {
           let error;

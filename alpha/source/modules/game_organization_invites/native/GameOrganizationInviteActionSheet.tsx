@@ -1,10 +1,10 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16034
+// Function ID: 16035
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [19, 17, 21, 5141, 575, 9273, 16022, 16023, 1113, 2533, 7502, 6162, 5761, 7355, 16024, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 9273, 16035, 16036, 1113, 2533, 7502, 6162, 5761, 7355, 16037, 2]
 // Exports: default
 
-// Module 16021 (GameOrganizationInviteActionSheet)
+// Module 16034 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -14,8 +14,8 @@ import Stack_Stack from "Stack/Stack" /* 6162 */;
 import SearchBar2 from "SearchBar" /* 7355 */;
 import ActionSheet2 from "ActionSheet" /* 7502 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9273 */;
-import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16022 */;
-import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16023 */;
+import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16035 */;
+import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16036 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
@@ -25,7 +25,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp2;
-const GameOrganizationInviteListDefault = tmp2(16024);
+const GameOrganizationInviteListDefault = tmp2(16037);
 function Loading() {
   let tmp;
   const children = [];

@@ -1,10 +1,10 @@
-// Module ID: 14559
-// Function ID: 14560
+// Module ID: 14560
+// Function ID: 14561
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1499, 7698, 1113, 5851, 14560, 1187, 5761, 5768, 2]
+// Dependencies: [19, 17, 1072, 21, 5141, 575, 1499, 7698, 1113, 5851, 14561, 1187, 5761, 5768, 2]
 // Exports: default
 
-// Module 14559 (HubEmailConnectionWaitlist)
+// Module 14560 (HubEmailConnectionWaitlist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -53,7 +53,7 @@ export default function HubEmailConnectionWaitlist(onClose) {
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { source: navigation(14560), style: tmp.header };
+  const obj3 = { source: navigation(14561), style: tmp.header };
   const tmp4 = navigation(5851);
   items1 = [closure_5(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1113).t.OaloU5) };

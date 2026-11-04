@@ -1,325 +1,382 @@
 // Module ID: 13322
 // Function ID: 13323
-// Dependencies: [13284, 13287, 13300, 13323, 13324, 13310, 13282, 13325, 13318, 13294]
-// Exports: parseEventHintOrCaptureContext, prepareEvent
+// Dependencies: [5, 13301, 13323, 13302, 13274, 13285, 13288, 13281, 13311, 13275, 13297]
+// Exports: addEventProcessor, captureCheckIn, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
 
 // Module 13322
-import _mod13282 from "module_13282" /* 13282 */;
-import _mod13294 from "module_13294" /* 13294 */;
-import _mod13310 from "module_13310" /* 13310 */;
-import _mod13318 from "module_13318" /* 13318 */;
-import _mod13325 from "module_13325" /* 13325 */;
+import _mod13275 from "module_13275" /* 13275 */;
+import _mod13281 from "module_13281" /* 13281 */;
+import _mod13285 from "module_13285" /* 13285 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13288 */;
+import _mod13297 from "module_13297" /* 13297 */;
+import _mod13301 from "module_13301" /* 13301 */;
+import _mod13302 from "module_13302" /* 13302 */;
+import _mod13323 from "module_13323" /* 13323 */;
+import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
-let breadcrumbs, data, filename, integrations;
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
-function applyClientOptions(environment, environment2) {
-  let dist;
-  let maxValueLength;
-  let release;
-  ({ release, dist, maxValueLength } = environment2);
-  let num = 250;
-  environment = environment2.environment;
-  if (undefined !== maxValueLength) {
-    num = maxValueLength;
-  }
-  const DEFAULT_ENVIRONMENT = environment.environment || environment || _mod13310.DEFAULT_ENVIRONMENT;
-  environment.environment = DEFAULT_ENVIRONMENT;
-  const tmp3 = !environment.release && release;
-  if (tmp3) {
-    environment.release = release;
-  }
-  const tmp4 = !environment.dist && dist;
-  if (tmp4) {
-    environment.dist = dist;
-  }
-  if (environment.message) {
-    const obj = _mod13282;
-    environment.message = obj.truncate(environment.message, num);
-  }
-  const tmp7 = environment.exception && environment.exception.values && environment.exception.values[0] && (environment.exception && environment.exception.values && environment.exception.values[0]).value;
-  if (tmp7) {
-    const obj2 = _mod13282;
-    (environment.exception && environment.exception.values && environment.exception.values[0]).value = obj2.truncate((environment.exception && environment.exception.values && environment.exception.values[0]).value, num);
-  }
-  const request = environment.request;
-  const tmp10 = request && request.url;
-  if (tmp10) {
-    const obj3 = _mod13282;
-    request.url = obj3.truncate(request.url, num);
-  }
-}
-function applyDebugIds(exception, arg1) {
-  const obj = _mod13325;
-  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
-  try {
-    const values = exception.exception.values;
-    let item = values.forEach((stacktrace) => {
-      const frames = stacktrace.stacktrace.frames;
-      const item = frames.forEach((filename) => {
-        filename = closure_1_0 && filename.filename;
-        if (filename) {
-          filename.debug_id = closure_1_0[filename.filename];
-        }
-      });
-    });
-  } catch (err) {
-  }
-}
-function applyDebugMeta(exception) {
-  const obj = {};
-  try {
-    const values = exception.exception.values;
-    let item = values.forEach((stacktrace) => {
-      const frames = stacktrace.stacktrace.frames;
-      const item = frames.forEach((debug_id) => {
-        if (debug_id.debug_id) {
-          if (debug_id.abs_path) {
-            obj[debug_id.abs_path] = debug_id.debug_id;
-          } else if (debug_id.filename) {
-            obj[debug_id.filename] = debug_id.debug_id;
-          }
-          delete tmp["debug_id"];
-        }
-      });
-    });
-  } catch (err) {
-  }
-  if (0 !== Object.keys(obj).length) {
-    exception.debug_meta = exception.debug_meta || {};
-    let images = exception.debug_meta.images;
-    const debug_meta = exception.debug_meta;
-    if (!images) {
-      images = [];
-    }
-    debug_meta.images = images;
-    images = exception.debug_meta.images;
-    const _Object = Object;
-    const entries = Object.entries(obj);
-    const item1 = entries.forEach((item) => {
-      let tmp;
-      let tmp2;
-      [tmp, tmp2] = item;
-      images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
-    });
-  }
-}
-let closure_5 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "requestSession", "propagationContext"];
-
-export { applyClientOptions };
-export { applyDebugIds };
-export { applyDebugMeta };
-export function parseEventHintOrCaptureContext(captureContext) {
-  if (captureContext) {
-    let tmp5;
-    const tmp3 = captureContext instanceof _mod13294.Scope || typeof captureContext === "function";
-    if (tmp3) {
-      tmp5 = { captureContext };
-      const obj = { captureContext };
+let obj = function _flush() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
     } else {
-      const _Object = Object;
-      const keys = Object.keys(captureContext);
-      tmp5 = captureContext;
-    }
-    return tmp5;
-  }
-}
-export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, getScopeData) {
-  let timestamp;
-  let uuid4Result;
-  normalizeDepth = normalizeDepth.normalizeDepth;
-  let num = 3;
-  if (undefined !== normalizeDepth) {
-    num = normalizeDepth;
-  }
-  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
-  let num2 = 1000;
-  if (undefined !== normalizeMaxBreadth) {
-    num2 = normalizeMaxBreadth;
-  }
-  let obj = { event_id: uuid4Result, timestamp };
-  let merged = Object.assign(event_id);
-  uuid4Result = event_id.event_id || event_id2.event_id;
-  if (!uuid4Result) {
-    const tmp4 = num;
-    let tmp5 = num2;
-    let obj2 = num(num2[0]);
-    uuid4Result = obj2.uuid4();
-  }
-  timestamp = event_id.timestamp;
-  if (!timestamp) {
-    let obj3 = num(num2[1]);
-    timestamp = obj3.dateTimestampInSeconds();
-  }
-  integrations = event_id2.integrations;
-  if (!integrations) {
-    const integrations1 = normalizeDepth.integrations;
-    integrations = integrations1.map((name) => name.name);
-  }
-  applyClientOptions(obj, normalizeDepth);
-  if (integrations.length > 0) {
-    obj.sdk = obj.sdk || {};
-    let integrations2 = obj.sdk.integrations;
-    const sdk = obj.sdk;
-    if (!integrations2) {
-      integrations2 = [];
-    }
-    const items = [];
-    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
-    sdk.integrations = items;
-  }
-  const tmp14 = emit;
-  if (tmp14) {
-    emit.emit("applyFrameMetadata", event_id);
-  }
-  if (undefined === event_id.type) {
-    applyDebugIds(obj, normalizeDepth.stackParser);
-  }
-  const captureContext = event_id2.captureContext;
-  let obj4 = clone;
-  if (captureContext) {
-    let cloneResult;
-    if (clone) {
-      cloneResult = clone.clone();
-    } else {
-      const self = this;
-      const self2 = this;
-      cloneResult = new num(num2[9]).Scope();
-    }
-    cloneResult.update(captureContext);
-    obj4 = cloneResult;
-  }
-  if (event_id2.mechanism) {
-    const obj6 = num(num2[0]);
-    const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
-  }
-  if (emit) {
-    let eventProcessors = emit.getEventProcessors();
-  } else {
-    eventProcessors = [];
-  }
-  const obj7 = num(num2[2]);
-  const globalScope = obj7.getGlobalScope();
-  const scopeData = globalScope.getScopeData();
-  if (getScopeData) {
-    const scopeData1 = getScopeData.getScopeData();
-    const tmp24Result = num(num2[3]);
-    tmp24Result.mergeScopeData(scopeData, scopeData1);
-  }
-  if (obj4) {
-    const scopeData2 = obj4.getScopeData();
-    const tmp24Result4 = num(num2[3]);
-    tmp24Result4.mergeScopeData(scopeData, scopeData2);
-  }
-  let tmp31 = event_id2.attachments || [];
-  const items1 = [...scopeData.attachments];
-  if (items1.length) {
-    event_id2.attachments = items1;
-  }
-  const tmp24Result5 = num(num2[3]);
-  const result1 = tmp24Result5.applyScopeDataToEvent(obj, scopeData);
-  const items2 = [...scopeData.eventProcessors];
-  const tmp24Result6 = num(num2[4]);
-  const result2 = tmp24Result6.notifyEventProcessors(items2, obj, event_id2);
-  return result2.then((breadcrumbs) => {
-    let breadcrumbs1;
-    let normalizer;
-    let normalizer2;
-    let normalizer3;
-    const tmp = breadcrumbs;
-    if (tmp) {
-      applyDebugMeta(breadcrumbs);
-    }
-    let tmp5 = breadcrumbs;
-    if (typeof num === "number") {
-      num2 = 0;
-      tmp5 = breadcrumbs;
-      if (num > 0) {
-        let closure_0 = tmp4;
-        let closure_1 = num2;
-        let tmp31 = null;
-        if (breadcrumbs) {
-          let obj = {};
-          let merged = Object.assign(breadcrumbs);
-          breadcrumbs = breadcrumbs.breadcrumbs;
-          if (breadcrumbs) {
-            let obj2 = {
-              breadcrumbs: breadcrumbs1.map((data) => {
-                        let normalizer;
-                        const obj = {};
-                        const merged = Object.assign(data);
-                        data = data.data;
-                        if (data) {
-                          const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
-                          normalizer = num(num2[8]);
-                          data = obj2;
-                        }
-                        const merged1 = Object.assign(data);
-                        return obj;
-                      })
-            };
-            breadcrumbs1 = breadcrumbs.breadcrumbs;
-            breadcrumbs = obj2;
-          }
-          let merged1 = Object.assign(breadcrumbs);
-          let user = breadcrumbs.user;
-          if (user) {
-            const obj3 = { user: normalizer.normalize(breadcrumbs.user, num, num2) };
-            normalizer = _mod13318;
-            user = obj3;
-          }
-          const merged2 = Object.assign(user);
-          let contexts = breadcrumbs.contexts;
-          if (contexts) {
-            const obj4 = { contexts: normalizer2.normalize(breadcrumbs.contexts, num, num2) };
-            normalizer2 = _mod13318;
-            contexts = obj4;
-          }
-          const merged3 = Object.assign(contexts);
-          let extra = breadcrumbs.extra;
-          if (extra) {
-            const obj5 = { extra: normalizer3.normalize(breadcrumbs.extra, num, num2) };
-            normalizer3 = _mod13318;
-            extra = obj5;
-          }
-          const merged4 = Object.assign(extra);
-          const tmp27 = breadcrumbs.contexts && breadcrumbs.contexts.trace && obj.contexts;
-          if (tmp27) {
-            obj.contexts.trace = breadcrumbs.contexts.trace;
-            if (breadcrumbs.contexts.trace.data) {
-              const trace = obj.contexts.trace;
-              const normalizer4 = _mod13318;
-              trace.data = normalizer4.normalize(breadcrumbs.contexts.trace.data, num, num2);
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let flushResult;
+          const obj4 = require("module_13301");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            flushResult = client.flush(tmp10);
+          } else {
+            if (require("module_13302").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events. No client defined.");
             }
+            flushResult = Promise.resolve(false);
           }
-          if (breadcrumbs.spans) {
-            const spans = breadcrumbs.spans;
-            obj.spans = spans.map((data) => {
-              let normalizer;
-              const obj = {};
-              const merged = Object.assign(data);
-              data = data.data;
-              if (data) {
-                const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
-                normalizer = num(num2[8]);
-                data = obj2;
-              }
-              const merged1 = Object.assign(data);
-              return obj;
-            });
-          }
-          tmp31 = obj;
-          const tmp30 = breadcrumbs.contexts && breadcrumbs.contexts.flags && obj.contexts;
-          if (tmp30) {
-            const contexts2 = obj.contexts;
-            const normalizer5 = _mod13318;
-            num = 3;
-            contexts2.flags = normalizer5.normalize(breadcrumbs.contexts.flags, 3, num2);
-            tmp31 = obj;
-          }
+          c1 = 3;
+          obj = { value: flushResult, done: true };
+          return obj;
         }
-        tmp5 = tmp31;
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
       }
     }
-    return tmp5;
   });
+  return obj(...arguments);
+};
+obj = function _close() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_0 = arg0;
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          const obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closeResult;
+          const obj4 = require("module_13301");
+          const client = obj4.getClient();
+          const tmp10 = closure_0;
+          if (client) {
+            closeResult = client.close(tmp10);
+          } else {
+            if (require("module_13302").DEBUG_BUILD) {
+              const logger = tmp11(tmp12[4]).logger;
+              logger.warn("Cannot flush events and disable SDK. No client defined.");
+            }
+            closeResult = Promise.resolve(false);
+          }
+          c1 = 3;
+          obj = { value: closeResult, done: true };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
+    }
+  });
+  return obj(...arguments);
+};
+function endSession() {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  const obj3 = _mod13301;
+  const currentScope = obj3.getCurrentScope();
+  const tmp3 = currentScope.getSession() || isolationScope.getSession();
+  if (tmp3) {
+    const tmpResult = _mod13297;
+    tmpResult.closeSession(tmp3);
+  }
+  const tmpResult4 = _mod13301;
+  const isolationScope1 = tmpResult4.getIsolationScope();
+  const tmpResult5 = _mod13301;
+  const currentScope1 = tmpResult5.getCurrentScope();
+  const tmpResult6 = _mod13301;
+  const client = tmpResult6.getClient();
+  const tmp5 = currentScope1.getSession() || isolationScope1.getSession();
+  const tmp6 = tmp5 && client;
+  if (tmp6) {
+    client.captureSession(tmp5);
+  }
+  isolationScope.setSession();
+  currentScope.setSession();
+}
+let _asyncToGenerator = _asyncToGenerator_mod;
+
+export function addEventProcessor(arg0) {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.addEventProcessor(arg0);
+}
+export function captureCheckIn(arg0, arg1) {
+  obj = _mod13301;
+  const currentScope = obj.getCurrentScope();
+  const obj2 = _mod13301;
+  const client = obj2.getClient();
+  if (client) {
+    if (client.captureCheckIn) {
+      return client.captureCheckIn(arg0, arg1, currentScope);
+    } else if (_mod13302.DEBUG_BUILD) {
+      const logger2 = tmp(13274).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+  } else if (_mod13302.DEBUG_BUILD) {
+    const logger = tmp(13274).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult = _mod13285;
+  return tmpResult.uuid4();
+}
+export function captureEvent(arg0, arg1) {
+  obj = _mod13301;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureEvent(arg0, arg1);
+}
+export function captureException(arg0, arg1) {
+  obj = _mod13301;
+  const currentScope = obj.getCurrentScope();
+  const captureException = currentScope.captureException;
+  const obj2 = _mod13323;
+  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
+}
+export function captureMessage(arg0, captureContext) {
+  let tmp;
+  if (typeof captureContext === "string") {
+    tmp = captureContext;
+  }
+  let tmp2;
+  if (typeof captureContext !== "string") {
+    tmp2 = { captureContext };
+    const obj2 = { captureContext };
+  }
+  obj = _mod13301;
+  const currentScope = obj.getCurrentScope();
+  return currentScope.captureMessage(arg0, tmp, tmp2);
+}
+export function captureSession() {
+  let flag = arg0;
+  if (arg0 === undefined) {
+    flag = false;
+  }
+  if (flag) {
+    endSession();
+  } else {
+    obj = _mod13301;
+    const isolationScope = obj.getIsolationScope();
+    const obj3 = _mod13301;
+    const currentScope = obj3.getCurrentScope();
+    const obj5 = _mod13301;
+    const client = obj5.getClient();
+    const tmp3 = currentScope.getSession() || isolationScope.getSession();
+    const tmp4 = tmp3 && client;
+    if (tmp4) {
+      client.captureSession(tmp3);
+    }
+  }
+}
+export function close(arg0) {
+  return obj(...arguments);
+}
+export { endSession };
+export function flush(arg0) {
+  return obj(...arguments);
+}
+export function isEnabled() {
+  obj = _mod13301;
+  const client = obj.getClient();
+  const transport = client && false !== client.getOptions().enabled && client.getTransport();
+  return transport;
+}
+export function isInitialized() {
+  obj = _mod13301;
+  return obj.getClient();
+}
+export function lastEventId() {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  return isolationScope.lastEventId();
+}
+export function setContext(arg0, arg1) {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setContext(arg0, arg1);
+}
+export function setExtra(arg0, arg1) {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtra(arg0, arg1);
+}
+export function setExtras(arg0) {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setExtras(arg0);
+}
+export function setTag(arg0, arg1) {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTag(arg0, arg1);
+}
+export function setTags(arg0) {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setTags(arg0);
+}
+export function setUser(arg0) {
+  obj = _mod13301;
+  const isolationScope = obj.getIsolationScope();
+  isolationScope.setUser(arg0);
+}
+export function startSession(arg0) {
+  let environment;
+  let release;
+  obj = _mod13301;
+  const client = obj.getClient();
+  const obj3 = _mod13301;
+  const isolationScope = obj3.getIsolationScope();
+  const obj5 = _mod13301;
+  const currentScope = obj5.getCurrentScope();
+  ({ environment, release } = client && client.getOptions() || {});
+  client && client.getOptions() || {};
+  if (undefined === environment) {
+    environment = tmp(13311).DEFAULT_ENVIRONMENT;
+  }
+  const userAgent = (_mod13275.GLOBAL_OBJ.navigator || {}).userAgent;
+  _mod13275.GLOBAL_OBJ.navigator || {};
+  const obj2 = { release, environment, user: currentScope.getUser() || isolationScope.getUser() };
+  const makeSession = _mod13297.makeSession;
+  _mod13297;
+  let tmp7 = userAgent;
+  currentScope.getUser() || isolationScope.getUser();
+  if (tmp7) {
+    tmp7 = { userAgent };
+    const obj4 = { userAgent };
+  }
+  const merged = Object.assign(tmp7);
+  const merged1 = Object.assign(arg0);
+  const session = makeSession(obj2);
+  const session1 = isolationScope.getSession();
+  const tmp12 = session1 && "ok" === session1.status;
+  if (tmp12) {
+    const tmpResult2 = _mod13297;
+    tmpResult2.updateSession(session1, { status: "exited" });
+  }
+  endSession();
+  isolationScope.setSession(session);
+  currentScope.setSession(session);
+  return session;
+}
+export function withMonitor(monitorSlug, arg1, arg2) {
+  let closure_1;
+  _require = monitorSlug;
+  dependencyMap = arg1;
+  function finishCheckIn(status) {
+    let obj2;
+    obj = { monitorSlug, status, checkInId: _asyncToGenerator, duration: obj2.timestampInSeconds() - closure_3 };
+    obj2 = _browserPerformanceTimeOriginMode;
+    const obj3 = _mod13301;
+    const currentScope = obj3.getCurrentScope();
+    const obj4 = _mod13301;
+    const client = obj4.getClient();
+    if (client) {
+      if (client.captureCheckIn) {
+        _asyncToGenerator = client.captureCheckIn(obj, undefined, currentScope);
+      } else if (_mod13302.DEBUG_BUILD) {
+        const logger2 = tmp(13274).logger;
+        logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+      }
+    } else if (_mod13302.DEBUG_BUILD) {
+      const logger = tmp(13274).logger;
+      logger.warn("Cannot capture check-in. No client defined.");
+    }
+    const tmpResult = _mod13285;
+    tmpResult.uuid4();
+  }
+  obj = { monitorSlug, status: "in_progress" };
+  const tmp = _require;
+  let tmp2 = dependencyMap;
+  let obj2 = require("module_13301");
+  let currentScope = obj2.getCurrentScope();
+  let obj3 = require("module_13301");
+  let client = obj3.getClient();
+  if (client) {
+    let captureCheckInResult;
+    if (client.captureCheckIn) {
+      captureCheckInResult = client.captureCheckIn(obj, arg2, currentScope);
+    } else if (tmp(13302).DEBUG_BUILD) {
+      let logger2 = tmp(13274).logger;
+      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+    }
+    _asyncToGenerator = captureCheckInResult;
+    let tmpResult = tmp(13288);
+    let closure_3 = tmpResult.timestampInSeconds();
+    const tmpResult3 = tmp(13301);
+    return tmpResult3.withIsolationScope(() => {
+      try {
+        const tmp2 = closure_1();
+        obj = _mod13281;
+        if (obj.isThenable(tmp2)) {
+          const resolved = Promise.resolve(tmp2);
+          resolved.then(() => {
+            finishCheckIn("ok");
+          }, (arg0) => {
+            finishCheckIn("error");
+            throw arg0;
+          });
+        } else {
+          finishCheckIn("ok");
+        }
+        return tmp2;
+      } catch (tmp11) {
+        finishCheckIn("error");
+        throw tmp11;
+      }
+    });
+  } else if (tmp(13302).DEBUG_BUILD) {
+    let logger = tmp(13274).logger;
+    logger.warn("Cannot capture check-in. No client defined.");
+  }
+  const tmpResult4 = tmp(13285);
+  captureCheckInResult = tmpResult4.uuid4();
 }

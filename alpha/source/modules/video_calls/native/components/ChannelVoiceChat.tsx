@@ -1,7 +1,7 @@
 // Module ID: 11180
 // Function ID: 11181
 // Name: ChannelVoiceChat
-// Dependencies: [19, 17, 11181, 21, 5141, 575, 9979, 1627, 11187, 12, 11185, 5377, 10914, 11188, 11399, 5148, 11401, 7121, 1113, 1187, 11801, 14598, 2]
+// Dependencies: [19, 17, 11181, 21, 5141, 575, 9979, 1627, 11187, 12, 11185, 5377, 10914, 11188, 11400, 5148, 11402, 7121, 1113, 1187, 11802, 14599, 2]
 
 // Module 11180 (ChannelVoiceChat)
 import react_native from "react-native" /* 17 */;
@@ -95,7 +95,7 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   if (!flag) {
     const tmp19 = !tmp2;
     const obj6 = { hidden: tmp19, animated: true, barStyle: str2 };
-    const tmp4Result = guild_id(11399);
+    const tmp4Result = guild_id(11400);
     if (isConnectedToVoiceChannel) {
       str2 = "light-content";
     } else {
@@ -120,7 +120,7 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   }
   items5[1] = { display: str4 };
   items3[2] = closure_6(View, { style: items5 });
-  items3[3] = closure_6(guild_id(11401), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
+  items3[3] = closure_6(guild_id(11402), { guildId: guild_id, channelId: id, chatInputRef: ref, screenIndex: "voice-panel" });
   const items6 = [tmp.chatHeader, ];
   const obj8 = { top, display: str5 };
   str5 = undefined;
@@ -132,10 +132,10 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   const obj10 = { accessibilityRole: "button", onPress: openVoice, accessibilityLabel: intl.string(id(1113).t["13/7kX"]), style: tmp.chatHeaderBackIconContainer, children: closure_6(Icon, obj11) };
   const PressableOpacity = tmp7(7121).PressableOpacity;
   intl = tmp7(1113).intl;
-  obj11 = { source: guild_id(11801), size: id(1187).Icon.Sizes.MEDIUM };
+  obj11 = { source: guild_id(11802), size: id(1187).Icon.Sizes.MEDIUM };
   Icon = tmp7(1187).Icon;
   items7 = [closure_6(PressableOpacity, obj10), ];
-  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(14598).ChannelTitle, { guildId: guild_id, channelId: id }) };
+  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(14599).ChannelTitle, { guildId: guild_id, channelId: id }) };
   items7[1] = closure_6(View, obj12);
   items3[4] = closure_7(View, obj9);
   items2[1] = closure_7(ChannelContainer, obj5);

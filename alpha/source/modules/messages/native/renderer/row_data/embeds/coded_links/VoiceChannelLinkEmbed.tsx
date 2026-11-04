@@ -1,10 +1,10 @@
-// Module ID: 15351
-// Function ID: 15352
+// Module ID: 15352
+// Function ID: 15353
 // Name: VoiceChannelLinkEmbed
 // Dependencies: [32, 17, 5008, 4990, 5012, 5073, 5083, 1385, 1072, 8019, 8535, 1411, 1377, 1113, 8744, 5786, 2]
 // Exports: createVoiceChannelLinkEmbed
 
-// Module 15351 (VoiceChannelLinkEmbed)
+// Module 15352 (VoiceChannelLinkEmbed)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;

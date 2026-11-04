@@ -12,7 +12,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 let tmp;
 const RiveColor2 = tmp(5246);
 react.useCallback;
-const f34594 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
+const f34607 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
 
 export function useRiveColor(FillColor, instance) {
   let closure_0;
@@ -23,7 +23,7 @@ export function useRiveColor(FillColor, instance) {
   const obj = react2;
   const cResult = obj.c(8);
   const obj2 = _mod5251;
-  const tmp4 = _slicedToArray(obj2.useRiveProperty(instance, FillColor, f34594), 3);
+  const tmp4 = _slicedToArray(obj2.useRiveProperty(instance, FillColor, f34607), 3);
   [tmp5, tmp6] = tmp4;
   require = tmp6;
   if (cResult[0] !== tmp5) {

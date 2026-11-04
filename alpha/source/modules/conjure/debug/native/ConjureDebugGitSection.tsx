@@ -1,10 +1,10 @@
-// Module ID: 13254
-// Function ID: 13255
+// Module ID: 13255
+// Function ID: 13256
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 5141, 575, 8787, 10410, 13255, 13257, 9260, 13259, 9908, 13261, 12123, 11249, 7476, 8166, 7233, 13263, 13265, 13267, 13249, 5761, 5208, 6099, 6162, 7130, 5768, 11270, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 575, 8787, 10410, 13256, 13258, 9260, 13260, 9908, 13262, 12124, 11249, 7476, 8166, 7233, 13264, 13266, 13268, 13250, 5761, 5208, 6099, 6162, 7130, 5768, 11270, 2]
 // Exports: ConjureDebugGitSection, ConjureDebugRestartAgent
 
-// Module 13254 (ConjureDebugGitSection)
+// Module 13255 (ConjureDebugGitSection)
 import nativeDefault from "native" /* 575 */;
 import AlertModal from "AlertModal" /* 6099 */;
 import CircleXIcon from "CircleXIcon" /* 7233 */;
@@ -15,15 +15,15 @@ import CalendarIcon from "CalendarIcon" /* 9260 */;
 import ServerIcon from "ServerIcon" /* 9908 */;
 import PencilIcon from "PencilIcon" /* 10410 */;
 import FileIcon from "FileIcon" /* 11249 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 12123 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 13249 */;
-import CloudIcon from "CloudIcon" /* 13255 */;
-import ListNumberedIcon from "ListNumberedIcon" /* 13257 */;
-import SaveIcon from "SaveIcon" /* 13259 */;
-import CloudDownloadIcon from "CloudDownloadIcon" /* 13261 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13263 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13265 */;
-import ConjureDebugGit from "ConjureDebugGit" /* 13267 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 12124 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 13250 */;
+import CloudIcon from "CloudIcon" /* 13256 */;
+import ListNumberedIcon from "ListNumberedIcon" /* 13258 */;
+import SaveIcon from "SaveIcon" /* 13260 */;
+import CloudDownloadIcon from "CloudDownloadIcon" /* 13262 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 13264 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 13266 */;
+import ConjureDebugGit from "ConjureDebugGit" /* 13268 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

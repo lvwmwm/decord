@@ -1,9 +1,9 @@
-// Module ID: 16647
-// Function ID: 16648
+// Module ID: 16659
+// Function ID: 16660
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 5084, 502, 4990, 6196, 10378, 1072, 16648, 3, 1089, 510, 2171, 4963, 10497, 7776, 11867, 14747, 2123, 2125, 572, 6698, 9979, 2]
+// Dependencies: [5, 32, 5084, 502, 4990, 6196, 10378, 1072, 16660, 3, 1089, 510, 2171, 4963, 10497, 7776, 11868, 14748, 2123, 2125, 572, 6698, 9979, 2]
 
-// Module 16647 (LocalMessageCacheManager)
+// Module 16659 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -12,7 +12,7 @@ import _modDef2171 from "module_2171" /* 2171 */;
 import DateUtils from "DateUtils" /* 4963 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
 import createMessageDefault from "createMessage" /* 10497 */;
-import UploadActionCreatorsDefault from "UploadActionCreators" /* 11867 */;
+import UploadActionCreatorsDefault from "UploadActionCreators" /* 11868 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MessageRecord from "MessageRecord" /* 5084 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4990 */;
 import MessageStore from "MessageStore" /* 6196 */;
 import SendMessageOptionsStore from "SendMessageOptionsStore" /* 10378 */;
 import Constants from "Constants" /* 1072 */;
-import MutexUtils from "MutexUtils" /* 16648 */;
+import MutexUtils from "MutexUtils" /* 16660 */;
 import LifecycleManager from "LifecycleManager" /* 2125 */;
 import size from "module_2" /* 2 */;
 

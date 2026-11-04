@@ -1,9 +1,9 @@
-// Module ID: 19508
-// Function ID: 19509
+// Module ID: 19522
+// Function ID: 19523
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6978, 5898, 11410, 11408, 19377, 11413, 5815, 21, 19509, 1652, 10267, 1705, 11409, 504, 5732, 575, 11416, 12628, 5771, 11436, 19466, 7100, 6124, 19457, 12, 5150, 1113, 5207, 2]
+// Dependencies: [32, 19, 17, 6978, 5898, 11411, 11409, 19391, 11414, 5815, 21, 19523, 1652, 10267, 1705, 11410, 504, 5732, 575, 11417, 12629, 5771, 11437, 19480, 7100, 6124, 19471, 12, 5150, 1113, 5207, 2]
 
-// Module 19508 (VoicePanelCardView)
+// Module 19522 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
@@ -11,16 +11,16 @@ import _modDef1652 from "module_1652" /* 1652 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
 import CallConstants from "CallConstants" /* 5815 */;
 import react2 from "react" /* 6124 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11408 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11413 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19377 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 19509 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11409 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11414 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19391 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 19523 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

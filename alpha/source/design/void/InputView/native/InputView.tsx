@@ -1,9 +1,9 @@
-// Module ID: 16242
-// Function ID: 16243
+// Module ID: 16255
+// Function ID: 16256
 // Name: InputView
-// Dependencies: [109, 19, 17, 1072, 21, 5141, 575, 6913, 5207, 1187, 5761, 1113, 7233, 5148, 12722, 1377, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5141, 575, 6913, 5207, 1187, 5761, 1113, 7233, 5148, 12723, 1377, 2]
 
-// Module 16242 (InputView)
+// Module 16255 (InputView)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import native2 from "native" /* 5207 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import LegacyTokens from "LegacyTokens" /* 6913 */;
 import CircleXIcon from "CircleXIcon" /* 7233 */;
-import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 12722 */;
+import components_BottomSheetTextInputDefault from "components/BottomSheetTextInput" /* 12723 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,9 +1,9 @@
-// Module ID: 11901
-// Function ID: 11902
+// Module ID: 11902
+// Function ID: 11903
 // Name: ChannelCallLifecycleStore
 // Dependencies: [5044, 11182, 9044, 1342, 504, 572, 2]
 
-// Module 11901 (ChannelCallLifecycleStore)
+// Module 11902 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1342 from "module_1342" /* 1342 */;
@@ -20,10 +20,10 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "Path", width: "dispatch", height: "t", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: true };
+let size = { x: "Array", y: "Path", width: "children", height: "guildId", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "<string:3264175145>", isInitialized: "<string:1070344437>", isVisible: "2QmKZ2" };
 const VOICE_CONTROLS_TOGGLE_BUTTON = VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON;
 obj[VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "Path", width: "dispatch", height: "t", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: true };
+const size1 = { x: "Array", y: "Path", width: "children", height: "guildId", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: "<string:3264175145>", isInitialized: "<string:1070344437>", isVisible: "2QmKZ2" };
 const CAMERA_PREVIEW_PICTURE_IN_PICTURE = VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE;
 obj[CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;

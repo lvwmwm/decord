@@ -1,9 +1,9 @@
-// Module ID: 20300
-// Function ID: 20301
+// Module ID: 20314
+// Function ID: 20315
 // Name: MessageSendFailureNotificationManager
 // Dependencies: [5044, 5172, 1385, 2122, 1072, 11082, 11203, 11205, 11093, 1113, 7423, 2]
 
-// Module 20300 (MessageSendFailureNotificationManager)
+// Module 20314 (MessageSendFailureNotificationManager)
 import intl3 from "intl" /* 1113 */;
 import Constants2 from "Constants" /* 11082 */;
 import PushNotificationDefault from "PushNotification" /* 11093 */;

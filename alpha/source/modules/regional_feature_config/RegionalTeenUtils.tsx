@@ -1,10 +1,10 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14201
+// Function ID: 14202
 // Name: RegionalTeenUtils
 // Dependencies: [19, 5828, 5831, 504, 11166, 8509, 2]
 // Exports: useIsTeenInCountrySet, useIsTeenInStrictCountry, useUserCountryCode
 
-// Module 14200 (RegionalTeenUtils)
+// Module 14201 (RegionalTeenUtils)
 import CountryCodes from "CountryCodes" /* 5831 */;
 import MessageRequestActionCreators from "MessageRequestActionCreators" /* 11166 */;
 import react from "react" /* 19 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let userCountryCode;
 
-const f106264 = () => userCountryCode.getUserCountryCode();
+const f106395 = () => userCountryCode.getUserCountryCode();
 let items = ["GB", "AU", ...CountryCodes.CountryCodesSets.EU_COUNTRIES];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/regional_feature_config/RegionalTeenUtils.tsx");
@@ -22,7 +22,7 @@ export function useUserCountryCode() {
   let stateFromStores;
   const items = [RegionalFeatureConfigStore];
   const obj = stateFromStores(504);
-  stateFromStores = obj.useStateFromStores(items, f106264);
+  stateFromStores = obj.useStateFromStores(items, f106395);
   const items1 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (null == stateFromStores) {
@@ -36,7 +36,7 @@ export function useIsTeenInCountrySet(set) {
   let stateFromStores;
   const items = [RegionalFeatureConfigStore];
   const obj = stateFromStores(504);
-  stateFromStores = obj.useStateFromStores(items, f106264);
+  stateFromStores = obj.useStateFromStores(items, f106395);
   const items1 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (null == stateFromStores) {
@@ -53,7 +53,7 @@ export function useIsTeenInStrictCountry() {
   let obj = set;
   const items = [RegionalFeatureConfigStore];
   const obj2 = stateFromStores(504);
-  stateFromStores = obj2.useStateFromStores(items, f106264);
+  stateFromStores = obj2.useStateFromStores(items, f106395);
   const items1 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (null == stateFromStores) {

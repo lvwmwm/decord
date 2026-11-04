@@ -1,8 +1,8 @@
-// Module ID: 14913
-// Function ID: 14914
+// Module ID: 14914
+// Function ID: 14915
 // Dependencies: [2]
 
-// Module 14913
+// Module 14914
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/orbs/static_idle_orb.png.js");

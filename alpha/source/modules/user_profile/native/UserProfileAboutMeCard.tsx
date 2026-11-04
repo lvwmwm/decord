@@ -1,10 +1,10 @@
-// Module ID: 11680
-// Function ID: 11681
+// Module ID: 11681
+// Function ID: 11682
 // Name: UserProfileAboutMeCard
-// Dependencies: [19, 17, 2191, 5053, 5012, 7513, 1072, 1498, 21, 5141, 5732, 575, 5761, 8902, 1113, 11681, 504, 7484, 11, 10863, 7098, 11683, 1187, 9085, 7462, 11684, 5382, 5323, 1099, 7344, 5331, 1625, 8891, 11685, 5768, 7512, 2]
+// Dependencies: [19, 17, 2191, 5053, 5012, 7513, 1072, 1498, 21, 5141, 5732, 575, 5761, 8902, 1113, 11682, 504, 7484, 11, 10863, 7098, 11684, 1187, 9085, 7462, 11685, 5382, 5323, 1099, 7344, 5331, 1625, 8891, 11686, 5768, 7512, 2]
 // Exports: default
 
-// Module 11680 (UserProfileAboutMeCard)
+// Module 11681 (UserProfileAboutMeCard)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,9 +18,9 @@ import Text_Text from "Text/Text" /* 5761 */;
 import UserProfileCardDefault from "UserProfileCard" /* 7512 */;
 import UserProfileAnalyticsContext from "UserProfileAnalyticsContext" /* 8902 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 9085 */;
-import BioTextDefault from "BioText" /* 11681 */;
-import useFriendsSinceDate from "useFriendsSinceDate" /* 11683 */;
-import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 11685 */;
+import BioTextDefault from "BioText" /* 11682 */;
+import useFriendsSinceDate from "useFriendsSinceDate" /* 11684 */;
+import UserProfileAboutMeCardCommandDefault from "UserProfileAboutMeCardCommand" /* 11686 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;

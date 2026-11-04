@@ -1,16 +1,16 @@
-// Module ID: 20219
-// Function ID: 20220
+// Module ID: 20233
+// Function ID: 20234
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 5012, 1072, 21, 5141, 504, 20194, 12779, 20144, 1113, 17438, 20211, 2]
+// Dependencies: [19, 17, 5012, 1072, 21, 5141, 504, 20208, 12780, 20158, 1113, 17450, 20225, 2]
 // Exports: default
 
-// Module 20219 (GuildSettingsRoleSubscriptionContainer)
+// Module 20233 (GuildSettingsRoleSubscriptionContainer)
 import Constants from "Constants" /* 1072 */;
-import ErrorBlockDefault from "ErrorBlock" /* 12779 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17438 */;
-import WarningNoticeDefault from "WarningNotice" /* 20144 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 20194 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20211 */;
+import ErrorBlockDefault from "ErrorBlock" /* 12780 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17450 */;
+import WarningNoticeDefault from "WarningNotice" /* 20158 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 20208 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20225 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -54,7 +54,7 @@ function ApplicationRejectedNotice(guildId) {
     tmp14 = closure_7(tmp9Result, obj2);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(20144), obj3);
+    tmp14 = closure_7(tmp9(20158), obj3);
   } else if (tmp13) {
     const obj4 = { notice: intl3.string(guildId(1113).t.MyJpJT) };
     const tmp9Result5 = WarningNoticeDefault;

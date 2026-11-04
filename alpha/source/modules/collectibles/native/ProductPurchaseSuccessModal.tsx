@@ -1,10 +1,10 @@
-// Module ID: 14707
-// Function ID: 14708
+// Module ID: 14708
+// Function ID: 14709
 // Name: ProductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5142, 1072, 21, 5141, 575, 2116, 14706, 7146, 7195, 1113, 1652, 5771, 5378, 5384, 7870, 14708, 5732, 5723, 8890, 14710, 504, 14711, 11701, 9705, 9044, 8883, 5851, 7428, 14712, 9640, 9653, 11580, 11694, 11695, 5761, 7872, 5768, 2]
+// Dependencies: [32, 717, 19, 17, 5142, 1072, 21, 5141, 575, 2116, 14707, 7146, 7195, 1113, 1652, 5771, 5378, 5384, 7870, 14709, 5732, 5723, 8890, 14711, 504, 14712, 11702, 9705, 9044, 8883, 5851, 7428, 14713, 9640, 9653, 11581, 11695, 11696, 5761, 7872, 5768, 2]
 // Exports: default
 
-// Module 14707 (ProductPurchaseSuccessModal)
+// Module 14708 (ProductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
@@ -12,7 +12,7 @@ import HapticUtils from "HapticUtils" /* 5384 */;
 import _mod7146 from "module_7146" /* 7146 */;
 import XSmallIcon from "XSmallIcon" /* 7195 */;
 import _modDef7870 from "module_7870" /* 7870 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14706 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14707 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
@@ -247,7 +247,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
   const stageCollectibleChangeForEditProfile = orbBalancePriorToPurchase.stageCollectibleChangeForEditProfile;
   let obj = require("useCurrentUser");
   const currentUser = obj.useCurrentUser();
-  const backgroundColors = callback(14708)(product.styles).backgroundColors;
+  const backgroundColors = callback(14709)(product.styles).backgroundColors;
   let tertiary;
   if (backgroundColors != null) {
     tertiary = backgroundColors.tertiary;
@@ -446,7 +446,7 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
     const obj8 = { style: tmp6.headerLeading, children: showOrbBalancePill };
     if (showOrbBalancePill) {
       const obj9 = { initialRenderedBalance: prop, balance };
-      showOrbBalancePill = tmp44(tmp2(14712).BalanceWidgetPill, obj9);
+      showOrbBalancePill = tmp44(tmp2(14713).BalanceWidgetPill, obj9);
     }
     items11 = [tmp44(closure_7, obj8), ];
     let toHexStringResult;
@@ -481,15 +481,15 @@ export default function ProductPurchaseSuccessModal(orbBalancePriorToPurchase) {
       tmp43Result2 = tmp43(tmp4(9653), obj15);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_EFFECT === type) {
       const obj16 = { user: currentUser, profileEffect: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(11580), obj16);
+      tmp43Result2 = tmp43(tmp4(11581), obj16);
     } else if (require("CollectiblesItemType").CollectiblesItemType.PROFILE_FRAME === type) {
       const obj17 = { user: currentUser, profileFrame: product.items[0] };
-      tmp43Result2 = tmp43(tmp4(11694), obj17);
+      tmp43Result2 = tmp43(tmp4(11695), obj17);
     } else {
       tmp43Result2 = null;
       if (require("CollectiblesItemType").CollectiblesItemType.NAMEPLATE === type) {
         const obj18 = { user: currentUser, nameplate: product.items[0], animate: true };
-        tmp43Result2 = tmp43(tmp2(11695).NameplatePreview, obj18);
+        tmp43Result2 = tmp43(tmp2(11696).NameplatePreview, obj18);
       }
     }
     items14 = [tmp44(View, obj12), ];

@@ -1,30 +1,10 @@
 // Module ID: 16352
 // Function ID: 16353
-// Dependencies: [16263, 16353]
-// Exports: getSupportedUnits
+// Dependencies: [16353, 16354]
 
 // Module 16352
 const require = globalThis.__r;
-let _require;
 
 
-export function getSupportedUnits(locale) {
-  _require = locale;
-  const units = require("module_16353").units;
-  return units.filter((item) => {
-    function isSupported(unit, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
-      }
-      try {
-        const obj = { style: "unit", unit };
-        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-        return memoizedNumberFormat.resolvedOptions().unit === unit;
-      } catch (err) {
-        return false;
-      }
-    }
-    return isSupported(item, locale);
-  });
-}
+export const shouldPolyfill = require("module_16353").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

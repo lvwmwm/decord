@@ -1,10 +1,10 @@
-// Module ID: 13429
-// Function ID: 13430
+// Module ID: 13430
+// Function ID: 13431
 // Name: GameOrganizationLinkedServerCard
 // Dependencies: [19, 17, 21, 7098, 5141, 575, 1411, 7118, 6162, 5761, 1113, 2]
 // Exports: default
 
-// Module 13429 (GameOrganizationLinkedServerCard)
+// Module 13430 (GameOrganizationLinkedServerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

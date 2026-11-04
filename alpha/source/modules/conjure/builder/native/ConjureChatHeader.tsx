@@ -1,10 +1,10 @@
-// Module ID: 12433
-// Function ID: 12434
+// Module ID: 12434
+// Function ID: 12435
 // Name: ConjureChatHeader
 // Dependencies: [19, 17, 9962, 21, 5141, 575, 1627, 9970, 9963, 2]
 // Exports: default
 
-// Module 12433 (ConjureChatHeader)
+// Module 12434 (ConjureChatHeader)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import react_native from "react-native" /* 9962 */;

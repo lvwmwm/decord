@@ -1,24 +1,24 @@
-// Module ID: 14647
-// Function ID: 14648
+// Module ID: 14648
+// Function ID: 14649
 // Name: PremiumGiftBackgroundSelectTile
-// Dependencies: [19, 17, 1387, 14648, 21, 14649, 14650, 14651, 14652, 14653, 14654, 14655, 14656, 14657, 5141, 575, 1113, 2731, 5851, 2]
+// Dependencies: [19, 17, 1387, 14649, 21, 14650, 14651, 14652, 14653, 14654, 14655, 14656, 14657, 14658, 5141, 575, 1113, 2731, 5851, 2]
 // Exports: default
 
-// Module 14647 (PremiumGiftBackgroundSelectTile)
+// Module 14648 (PremiumGiftBackgroundSelectTile)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _modDef2731 from "module_2731" /* 2731 */;
-import PremiumGiftingConstants from "PremiumGiftingConstants" /* 14648 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14649 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14650 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14651 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14652 */;
-import _modDef14653 from "module_14653" /* 14653 */;
+import PremiumGiftingConstants from "PremiumGiftingConstants" /* 14649 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14650 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14651 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14652 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14653 */;
 import _modDef14654 from "module_14654" /* 14654 */;
 import _modDef14655 from "module_14655" /* 14655 */;
 import _modDef14656 from "module_14656" /* 14656 */;
 import _modDef14657 from "module_14657" /* 14657 */;
+import _modDef14658 from "module_14658" /* 14658 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -39,19 +39,19 @@ const GIFT_STYLE_DESCRIPTIONS = PremiumGiftingConstants.GIFT_STYLE_DESCRIPTIONS;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const GIFT_STYLE_IMG = { [STANDARD_BOX]: AssetRegistryDefault, [CAKE]: AssetRegistryDefault2, [CHEST]: AssetRegistryDefault3, [COFFEE]: AssetRegistryDefault4 };
 ({ STANDARD_BOX, CAKE, CHEST, COFFEE } = PremiumGiftStyles);
-let obj2 = { uri: _modDef14653 };
+let obj2 = { uri: _modDef14654 };
 GIFT_STYLE_IMG[PremiumGiftStyles.NITROWEEN_STANDARD] = obj2;
 GIFT_STYLE_IMG[PremiumGiftStyles.SNOWGLOBE] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.BOX] = null;
 GIFT_STYLE_IMG[PremiumGiftStyles.CUP] = null;
-let obj3 = { uri: _modDef14654 };
+let obj3 = { uri: _modDef14655 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CAKE] = obj3;
-let obj4 = { uri: _modDef14655 };
+let obj4 = { uri: _modDef14656 };
 GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_CHEST] = obj4;
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: _modDef14656 };
-({ uri: _modDef14656 });
-GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef14657 };
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_COFFEE] = { uri: _modDef14657 };
 ({ uri: _modDef14657 });
+GIFT_STYLE_IMG[PremiumGiftStyles.SEASONAL_STANDARD_BOX] = { uri: _modDef14658 };
+({ uri: _modDef14658 });
 let closure_9 = createStyles.createStyles((arg0) => {
   let num;
   let size1;

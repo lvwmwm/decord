@@ -1,10 +1,10 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 14363
+// Function ID: 14364
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 5141, 575, 5377, 5148, 14359, 14314, 5723, 5761, 14315, 1187, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5377, 5148, 14360, 14315, 5723, 5761, 14316, 1187, 1113, 2]
 // Exports: default
 
-// Module 14362 (GuildPowerupsPerkCard)
+// Module 14363 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -13,8 +13,8 @@ import shared from "shared" /* 5148 */;
 import useThemeDefault from "useTheme" /* 5377 */;
 import LinearGradientDefault from "LinearGradient" /* 5723 */;
 import Text_Text from "Text/Text" /* 5761 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 14314 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 14359 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 14315 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 14360 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -89,7 +89,7 @@ export default function GuildPowerupsPerkCard(arg0) {
   items3 = [React3(Text_Text.Text, { color: "text-strong", variant: "heading-md/semibold", children: title }), React3(Text_Text.Text, { variant: "body-sm/normal", children: description })];
   items4 = [hasOwnProperty(View, obj7), ];
   const obj8 = { status };
-  const GuildPowerupsCardFooter = tmp6(14315).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(14316).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
   items4[1] = React3(GuildPowerupsCardFooter, obj8);
   items2[1] = hasOwnProperty(View, obj6);

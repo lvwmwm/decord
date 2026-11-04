@@ -1,7 +1,7 @@
 // Module ID: 10798
 // Function ID: 10799
 // Name: PremiumGiftFeaturesCard
-// Dependencies: [19, 17, 9776, 1387, 1083, 21, 575, 5141, 6858, 504, 10787, 10094, 10799, 10800, 9674, 10108, 10106, 5761, 1113, 10115, 5768, 10801, 10786, 10802, 5207, 5723, 10803, 10805, 5874, 2155, 2]
+// Dependencies: [19, 17, 9776, 1387, 1083, 21, 575, 5141, 6858, 504, 10788, 10094, 10799, 10800, 9674, 10108, 10106, 5761, 1113, 10115, 5768, 10801, 10787, 10802, 5207, 5723, 10803, 10805, 5874, 2155, 2]
 
 // Module 10798 (PremiumGiftFeaturesCard)
 import react_native from "react-native" /* 17 */;
@@ -16,8 +16,8 @@ import usePremiumFeaturesDefault from "usePremiumFeatures" /* 10094 */;
 import PremiumFeaturesLogoDefault from "PremiumFeaturesLogo" /* 10106 */;
 import PremiumFeaturesWumpusDefault from "PremiumFeaturesWumpus" /* 10108 */;
 import PremiumFeatureListDefault from "PremiumFeatureList" /* 10115 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10786 */;
-import MarketingComponentType from "MarketingComponentType" /* 10787 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10787 */;
+import MarketingComponentType from "MarketingComponentType" /* 10788 */;
 import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 10799 */;
 import useShouldShowGiftingPromotionDecoDefault from "useShouldShowGiftingPromotionDeco" /* 10800 */;
 import MarketingComponentHooks from "MarketingComponentHooks" /* 10801 */;

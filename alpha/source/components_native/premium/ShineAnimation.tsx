@@ -1,9 +1,9 @@
-// Module ID: 10780
-// Function ID: 10781
+// Module ID: 10781
+// Function ID: 10782
 // Name: ShineAnimation
 // Dependencies: [19, 17, 21, 5141, 575, 1652, 5378, 671, 5851, 2]
 
-// Module 10780 (ShineAnimation)
+// Module 10781 (ShineAnimation)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import _mod1652 from "module_1652" /* 1652 */;

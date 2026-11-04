@@ -1,10 +1,10 @@
-// Module ID: 20050
-// Function ID: 20051
+// Module ID: 20064
+// Function ID: 20065
 // Name: actions/GuildActionCreators
 // Dependencies: [1072, 572, 1282, 2]
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 20050 (actions/GuildActionCreators)
+// Module 20064 (actions/GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;

@@ -1,14 +1,14 @@
-// Module ID: 18729
-// Function ID: 18730
+// Module ID: 18743
+// Function ID: 18744
 // Name: ConnectionFineIcon
-// Dependencies: [19, 21, 575, 5850, 18730, 2]
+// Dependencies: [19, 21, 575, 5850, 18744, 2]
 // Exports: ConnectionFineIcon
 
-// Module 18729 (ConnectionFineIcon)
+// Module 18743 (ConnectionFineIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 18730 */;
+import AssetRegistry from "AssetRegistry" /* 18744 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

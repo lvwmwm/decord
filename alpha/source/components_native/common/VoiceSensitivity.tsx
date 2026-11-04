@@ -1,10 +1,10 @@
-// Module ID: 12143
-// Function ID: 12144
+// Module ID: 12144
+// Function ID: 12145
 // Name: VoiceSensitivity
 // Dependencies: [5, 32, 19, 17, 2135, 6891, 2122, 1072, 8080, 21, 5141, 575, 5138, 1493, 504, 8097, 5923, 5150, 1113, 1187, 8317, 8993, 1377, 2]
 // Exports: default
 
-// Module 12143 (VoiceSensitivity)
+// Module 12144 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

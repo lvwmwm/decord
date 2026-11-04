@@ -1,14 +1,14 @@
-// Module ID: 16800
-// Function ID: 16801
+// Module ID: 16812
+// Function ID: 16813
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8872, 1385, 21, 5141, 575, 7462, 7487, 504, 16801, 11708, 8899, 16803, 7116, 7098, 11595, 5382, 16805, 2123, 16806, 2]
+// Dependencies: [19, 17, 8872, 1385, 21, 5141, 575, 7462, 7487, 504, 16813, 11709, 8899, 16815, 7116, 7098, 11596, 5382, 16817, 2123, 16818, 2]
 // Exports: default
 
-// Module 16800 (UserSettingsEditGuildProfile)
+// Module 16812 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 575 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8899 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11595 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11708 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11596 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11709 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8872 */;
@@ -63,7 +63,7 @@ export default function UserSettingsEditGuildProfile(showGuildSelector) {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp7 = guild(16801)();
+  const tmp7 = guild(16813)();
   guild = tmp7.guild;
   ({ resetPending: c2, handleSubmit: c3 } = tmp7);
   let obj2 = stateFromStores(504);
@@ -125,10 +125,10 @@ export default function UserSettingsEditGuildProfile(showGuildSelector) {
       items3 = [flag, ];
       const _HermesInternal = HermesInternal;
       const obj7 = { currentUser: stateFromStores };
-      const tmp2Result2 = tmp2(16806);
+      const tmp2Result2 = tmp2(16818);
       items3[1] = tmp11(tmp2Result2, obj7, "" + stateFromStores.id + "-" + guild.id);
       return tmp15(AnalyticsLocationProvider, obj6);
     }
   }
-  return closure_7(tmp2(16803), {});
+  return closure_7(tmp2(16815), {});
 };

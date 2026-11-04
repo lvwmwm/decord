@@ -1,15 +1,15 @@
-// Module ID: 13913
-// Function ID: 13914
+// Module ID: 13914
+// Function ID: 13915
 // Name: useTraitPickerOptions
-// Dependencies: [19, 1385, 13656, 504, 2112, 6569, 6571, 6246, 6248, 6202, 1113, 2]
+// Dependencies: [19, 1385, 13657, 504, 2112, 6569, 6571, 6246, 6248, 6202, 1113, 2]
 // Exports: useTraitPickerOptions
 
-// Module 13913 (useTraitPickerOptions)
+// Module 13914 (useTraitPickerOptions)
 import intl2 from "intl" /* 1113 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6569 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import CheckpointStore from "CheckpointStore" /* 13656 */;
+import CheckpointStore from "CheckpointStore" /* 13657 */;
 import size from "module_2" /* 2 */;
 
 let closure_4, closure_5, earnedCount, set, totalCount;
@@ -69,11 +69,16 @@ export function useTraitPickerOptions(customizationOption) {
           if (CHECKPOINT_OUTFIT_TO_COLOR_NAME !== item10034) {
             NITRO_LOCKED = tmp(tmp2[8]).CheckpointTraitOptionStatus.LOCKED;
           }
+          let tmp8 = NITRO_LOCKED === tmp(tmp2[8]).CheckpointTraitOptionStatus.UNLOCKED;
+          if (tmp8) {
+            tmp8 = traitOptionRarity !== tmp(tmp2[9]).CheckpointTraitRarity.NITRO || c5;
+            traitOptionRarity !== tmp(savedOptionId[9]).CheckpointTraitRarity.NITRO || c5;
+          }
           if (null != traitOptionRarity) {
             closure_4 = closure_4 + 1;
           }
-          const tmp9 = null != traitOptionRarity && NITRO_LOCKED === tmp(savedOptionId[8]).CheckpointTraitOptionStatus.UNLOCKED;
-          if (tmp9) {
+          const tmp11 = null != traitOptionRarity && tmp8;
+          if (tmp11) {
             closure_5 = closure_5 + 1;
           }
           const push = items.push;
@@ -92,16 +97,16 @@ export function useTraitPickerOptions(customizationOption) {
                   return str;
                 }
           };
-          const tmp12 = tmp(savedOptionId[7]).CHECKPOINT_TRAIT_TO_OPTION_ASSETS[trait][item10034];
+          const tmp14 = tmp(savedOptionId[7]).CHECKPOINT_TRAIT_TO_OPTION_ASSETS[trait][item10034];
           thumbnail = undefined;
-          if (tmp12 != null) {
-            thumbnail = tmp12.thumbnail;
+          if (tmp14 != null) {
+            thumbnail = tmp14.thumbnail;
           }
           push(obj2);
         }
       }
       NITRO_LOCKED = UNLOCKED;
-      const tmp7 = traitOptionRarity !== tmp(savedOptionId[9]).CheckpointTraitRarity.NITRO || c5;
+      const tmp7 = traitOptionRarity !== tmp(savedOptionId[9]).CheckpointTraitRarity.NITRO || c5 || CHECKPOINT_OUTFIT_TO_COLOR_NAME === item10034;
       if (!tmp7) {
         NITRO_LOCKED = tmp(tmp2[8]).CheckpointTraitOptionStatus.NITRO_LOCKED;
       }

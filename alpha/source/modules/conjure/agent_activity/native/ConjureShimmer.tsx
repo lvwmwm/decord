@@ -1,10 +1,10 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12844
+// Function ID: 12845
 // Name: ConjureShimmer
 // Dependencies: [32, 19, 17, 5142, 21, 5141, 504, 1652, 5378, 671, 7179, 5723, 2]
 // Exports: default
 
-// Module 12843 (ConjureShimmer)
+// Module 12844 (ConjureShimmer)
 import _modDef671 from "module_671" /* 671 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5378 */;

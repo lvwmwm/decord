@@ -1,17 +1,17 @@
-// Module ID: 16984
-// Function ID: 16985
+// Module ID: 16996
+// Function ID: 16997
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 14460, 21, 6879, 5141, 575, 5722, 14462, 14466, 5846, 1113, 14480, 7139, 7306, 2]
+// Dependencies: [5, 32, 19, 17, 14461, 21, 6879, 5141, 575, 5722, 14463, 14467, 5846, 1113, 14481, 7139, 7306, 2]
 // Exports: default
 
-// Module 16984 (ContactSyncNameUpdateModal)
+// Module 16996 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorConstants from "NavigatorConstants" /* 5722 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import Navigator from "Navigator" /* 7306 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14460 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14461 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

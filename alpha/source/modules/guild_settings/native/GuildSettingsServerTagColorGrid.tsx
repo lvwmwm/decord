@@ -1,10 +1,10 @@
-// Module ID: 20028
-// Function ID: 20029
+// Module ID: 20042
+// Function ID: 20043
 // Name: GuildSettingsServerTagColorGrid
-// Dependencies: [19, 17, 8534, 21, 575, 5141, 1113, 6162, 5761, 20026, 20029, 15974, 12420, 17577, 2]
+// Dependencies: [19, 17, 8534, 21, 575, 5141, 1113, 6162, 5761, 20040, 20043, 15987, 12421, 17589, 2]
 // Exports: default
 
-// Module 20028 (GuildSettingsServerTagColorGrid)
+// Module 20042 (GuildSettingsServerTagColorGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;

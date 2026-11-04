@@ -1,10 +1,10 @@
-// Module ID: 16739
-// Function ID: 16740
+// Module ID: 16751
+// Function ID: 16752
 // Name: useProfileFrameSections
-// Dependencies: [32, 19, 7860, 7875, 563, 7872, 1113, 15292, 2]
+// Dependencies: [32, 19, 7860, 7875, 563, 7872, 1113, 15293, 2]
 // Exports: default
 
-// Module 16739 (useProfileFrameSections)
+// Module 16751 (useProfileFrameSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1113 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 7872 */;
@@ -79,7 +79,7 @@ export default function useProfileFrameSections() {
     items1[2] = obj3;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(15292)(tmp5, obj.PREVIEW);
+  return first(15293)(tmp5, obj.PREVIEW);
 };
 export { Section };
 export const NONE_ITEM = obj2;

@@ -1,14 +1,14 @@
-// Module ID: 13018
-// Function ID: 13019
+// Module ID: 13019
+// Function ID: 13020
 // Name: useConjureMentionCandidates
-// Dependencies: [19, 502, 5053, 5012, 1385, 6979, 1072, 504, 13019, 6980, 7036, 12854, 11, 5078, 2]
+// Dependencies: [19, 502, 5053, 5012, 1385, 6979, 1072, 504, 13020, 6980, 7036, 12855, 11, 5078, 2]
 // Exports: default
 
-// Module 13018 (useConjureMentionCandidates)
+// Module 13019 (useConjureMentionCandidates)
 import Constants from "Constants" /* 1072 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5078 */;
 import GuildUtilsDefault from "GuildUtils" /* 7036 */;
-import conjureMentions from "conjureMentions" /* 12854 */;
+import conjureMentions from "conjureMentions" /* 12855 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;

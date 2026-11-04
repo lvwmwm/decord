@@ -1,15 +1,15 @@
-// Module ID: 18368
-// Function ID: 18369
+// Module ID: 18382
+// Function ID: 18383
 // Name: happeningNowRankingUtils
-// Dependencies: [5083, 5813, 17521, 1380, 12, 2]
+// Dependencies: [5083, 5813, 17533, 1380, 12, 2]
 // Exports: cardSize, filterHappeningNowCards, sortHappeningNowCards
 
-// Module 18368 (happeningNowRankingUtils)
+// Module 18382 (happeningNowRankingUtils)
 import _mod12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import RelationshipStore from "RelationshipStore" /* 5083 */;
 import VoiceStateStore from "VoiceStateStore" /* 5813 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17521 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17533 */;
 import size from "module_2" /* 2 */;
 
 const _modDef12 = _mod12;
@@ -87,7 +87,7 @@ export const HAPPENING_NOW_OFFLINE_PENALTY = -1000;
 export function filterHappeningNowCards(arr) {
   return arr.filter((voiceState) => {
     let blockedOrIgnored;
-    const f139599 = (discoverable) => false === discoverable.discoverable;
+    const f140154 = (discoverable) => false === discoverable.discoverable;
     let flag = false;
     if ("voiceState" in voiceState) {
       flag = false;
@@ -97,8 +97,8 @@ export function filterHappeningNowCards(arr) {
         if (null != channelId) {
           const _Object = Object;
           const values = Object.values(VoiceStateStore.getVoiceStatesForChannel(channelId));
-          flag = values.length > 0 && values.every(f139599);
-          const everyResult = values.length > 0 && values.every(f139599);
+          flag = values.length > 0 && values.every(f140154);
+          const everyResult = values.length > 0 && values.every(f140154);
         }
       }
     }

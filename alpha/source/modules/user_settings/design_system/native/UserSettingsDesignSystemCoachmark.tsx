@@ -1,13 +1,13 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18050
+// Function ID: 18051
 // Name: UserSettingsDesignSystemCoachmark
-// Dependencies: [32, 19, 17, 21, 5141, 18036, 18039, 10133, 5768, 5723, 7201, 7505, 7199, 7202, 7428, 5748, 2]
+// Dependencies: [32, 19, 17, 21, 5141, 18048, 18051, 10133, 5768, 5723, 7201, 7505, 7199, 7202, 7428, 5748, 2]
 // Exports: default
 
-// Module 18038 (UserSettingsDesignSystemCoachmark)
+// Module 18050 (UserSettingsDesignSystemCoachmark)
 import LayerScope2 from "LayerScope" /* 5748 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
-import _modDef18039 from "module_18039" /* 18039 */;
+import _modDef18051 from "module_18051" /* 18051 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -100,8 +100,8 @@ function Content() {
       gradientColor: tmp
     };
     str2 = undefined;
-    obj2 = { type: "image", src: { uri: _modDef18039 }, aspectRatio: first5 };
-    ({ uri: _modDef18039 });
+    obj2 = { type: "image", src: { uri: _modDef18051 }, aspectRatio: first5 };
+    ({ uri: _modDef18051 });
     if (first3) {
       str2 = "Button";
     }

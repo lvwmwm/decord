@@ -1,18 +1,12 @@
 // Module ID: 16163
 // Function ID: 16164
-// Dependencies: [16161]
+// Dependencies: [16162]
 
 // Module 16163
-import _mod16161 from "module_16161" /* 16161 */;
+import _mod16162 from "module_16162" /* 16162 */;
 
 
-export default function(arg0, arg1, arg2) {
-  try {
-    const self = this;
-    const self2 = this;
-    const tmp5 = new _mod16161(arg1, arg2);
-    return tmp5.test(arg0);
-  } catch (err) {
-    return false;
-  }
+export default (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod16162(arg0, arg1, closure_0));
 };

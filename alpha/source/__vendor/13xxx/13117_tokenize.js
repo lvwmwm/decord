@@ -1,45 +1,82 @@
 // Module ID: 13117
 // Function ID: 13118
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055]
 
 // Module 13117 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import tokenize from "tokenize" /* 13055 */;
 
 let items;
 let obj2;
-const Comma = tokenize.TYPE.Comma;
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const Comment = tokenize.TYPE.Comment;
+const Ident = tokenize.TYPE.Ident;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
 const obj = {
-  name: "MediaQueryList",
+  name: "MediaQuery",
   structure: obj2,
-  parse(arg0) {
+  parse() {
     const self = this;
-    const list = this.createList();
     const scanner = this.scanner;
     scanner.skipSC();
+    const list = this.createList();
+    let tmp2 = null;
+    let tmp3 = null;
+    let tmp4 = null;
     if (!this.scanner.eof) {
-      list.push(self.MediaQuery(arg0));
-      if (self.scanner.tokenType === Comma) {
-        const iter = self.scanner;
-        iter.next();
-        while (!self.scanner.eof) {
-          let arr3 = list.push(self.MediaQuery(arg0));
-          if (self.scanner.tokenType !== Comma) {
+      while (true) {
+        let WhiteSpaceResult;
+        let IdentifierResult;
+        let tokenType = self.scanner.tokenType;
+        if (Comment === tokenType) {
+          let iter = self.scanner;
+          let nextResult = iter.next();
+          WhiteSpaceResult = tmp2;
+          IdentifierResult = tmp3;
+        } else {
+          if (WhiteSpace === tokenType) {
+            WhiteSpaceResult = self.WhiteSpace();
+            IdentifierResult = tmp3;
+          } else {
+            if (Ident === tokenType) {
+              IdentifierResult = self.Identifier();
+              WhiteSpaceResult = tmp2;
+              if (null !== tmp2) {
+                let arr = list.push(tmp2);
+                WhiteSpaceResult = null;
+              }
+              let arr3 = list.push(IdentifierResult);
+            } else {
+              tmp4 = tmp3;
+              if (LeftParenthesis !== tokenType) {
+                break;
+              } else {
+                IdentifierResult = self.MediaFeature();
+              }
+            }
             break;
           }
+          break;
+        }
+        tmp2 = WhiteSpaceResult;
+        tmp3 = IdentifierResult;
+        tmp4 = IdentifierResult;
+        if (self.scanner.eof) {
+          break;
         }
       }
     }
-    const element = { type: "MediaQueryList", loc: self.getLocationFromList(list), children: list };
+    if (null === tmp4) {
+      self.error("Identifier or parenthesis is expected");
+    }
+    const element = { type: "MediaQuery", loc: self.getLocationFromList(list), children: list };
     return element;
   },
   generate(arg0) {
-    this.children(arg0, function() {
-      this.chunk(",");
-    });
+    this.children(arg0);
   }
 };
 obj2 = { children: items };
-items = [["MediaQuery"]];
+items = [["Identifier", "MediaFeature", "WhiteSpace"]];
 
 export default obj;

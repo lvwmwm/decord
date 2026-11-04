@@ -1,7 +1,7 @@
 // Module ID: 9935
 // Function ID: 9936
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1385, 1072, 1387, 21, 9936, 1113, 9937, 9938, 9939, 2176, 9940, 9941, 9942, 6094, 10158, 2123, 14819, 7767, 10085, 5331, 1252, 5382, 10084, 2]
+// Dependencies: [19, 1385, 1072, 1387, 21, 9936, 1113, 9937, 9938, 9939, 2176, 9940, 9941, 9942, 6094, 10158, 2123, 14820, 7767, 10085, 5331, 1252, 5382, 10084, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
 // Module 9935 (PremiumUpsellUtils)

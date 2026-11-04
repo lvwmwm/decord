@@ -1,10 +1,10 @@
-// Module ID: 13909
-// Function ID: 13910
+// Module ID: 13910
+// Function ID: 13911
 // Name: TraitOptionList
-// Dependencies: [32, 19, 17, 5142, 6201, 21, 575, 5141, 13910, 8171, 6569, 504, 5398, 1652, 5749, 1493, 5378, 1705, 5384, 2]
+// Dependencies: [32, 19, 17, 5142, 6201, 21, 575, 5141, 13911, 8171, 6569, 504, 5398, 1652, 5749, 1493, 5378, 1705, 5384, 2]
 // Exports: default
 
-// Module 13909 (TraitOptionList)
+// Module 13910 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
@@ -12,7 +12,7 @@ import HapticUtils from "HapticUtils" /* 5384 */;
 import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6569 */;
 import inlineStyles from "inlineStyles" /* 8171 */;
-import TraitOptionItem from "TraitOptionItem" /* 13910 */;
+import TraitOptionItem from "TraitOptionItem" /* 13911 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
@@ -108,7 +108,7 @@ export default function TraitOptionList(size) {
   const tmp8Result = tmp8(bound);
   [tmp11, c13] = disabled(obj4.useState(tmp7(1493)().width), 2);
   const tmp10 = disabled(obj4.useState(tmp7(1493)().width), 2);
-  const width = tmp2(13910).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
+  const width = tmp2(13911).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
   const sum = width + animatedRef;
   c14 = sum;
   const bound1 = Math.max(ref, tmp11 - ref - width);

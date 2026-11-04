@@ -1,10 +1,10 @@
-// Module ID: 20030
-// Function ID: 20031
+// Module ID: 20044
+// Function ID: 20045
 // Name: GuildSettingsModalIntegrationSettings
-// Dependencies: [19, 17, 5047, 9220, 21, 20031, 1113, 5141, 575, 7202, 7121, 7116, 20032, 7201, 7505, 5207, 5761, 6709, 5851, 1411, 5148, 8317, 6162, 2171, 7199, 20033, 5742, 9219, 504, 5377, 19995, 2]
+// Dependencies: [19, 17, 5047, 9220, 21, 20045, 1113, 5141, 575, 7202, 7121, 7116, 20046, 7201, 7505, 5207, 5761, 6709, 5851, 1411, 5148, 8317, 6162, 2171, 7199, 20047, 5742, 9219, 504, 5377, 20009, 2]
 // Exports: default
 
-// Module 20030 (GuildSettingsModalIntegrationSettings)
+// Module 20044 (GuildSettingsModalIntegrationSettings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -16,7 +16,7 @@ import TableRowGroup4 from "TableRowGroup" /* 7201 */;
 import TableRadioRow3 from "TableRadioRow" /* 7202 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7505 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9219 */;
-import AssetRegistryDefault from "AssetRegistry" /* 20032 */;
+import AssetRegistryDefault from "AssetRegistry" /* 20046 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 9220 */;
@@ -195,7 +195,7 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
       tmp15Result2 = tmp15(5148);
       tmp19Result = closure_6(tmp16Result, obj5);
     }
-    const values = Object.values(tmp12(20031).IntegrationExpireGracePeriodTypes);
+    const values = Object.values(tmp12(20045).IntegrationExpireGracePeriodTypes);
     const found = values.filter(function isInteger(item) {
       return Number.isInteger(item);
     });
@@ -247,11 +247,11 @@ class GuildSettingsModalIntegrationSettings extends PureComponent {
     items1[1] = closure_7(TableRowGroup2, obj9);
     const obj15 = { title: stringResult, value: integration.expire_behavior, onChange: self.handleExpireBehaviorChange, hasIcons: false, children: items3 };
     const TableRadioGroup = tmp15(7199).TableRadioGroup;
-    const obj16 = { value: tmp15(20033).IntegrationExpireBehaviorTypes.REMOVE_ROLE, label: intl6.string(tmp15(1113).t["6kpw4i"]) };
+    const obj16 = { value: tmp15(20047).IntegrationExpireBehaviorTypes.REMOVE_ROLE, label: intl6.string(tmp15(1113).t["6kpw4i"]) };
     const TableRadioRow = tmp15(7202).TableRadioRow;
     intl6 = tmp15(1113).intl;
     items3 = [closure_6(TableRadioRow, obj16), ];
-    const obj17 = { value: tmp15(20033).IntegrationExpireBehaviorTypes.KICK, label: intl7.string(tmp15(1113).t.fQUQIJ) };
+    const obj17 = { value: tmp15(20047).IntegrationExpireBehaviorTypes.KICK, label: intl7.string(tmp15(1113).t.fQUQIJ) };
     const TableRadioRow2 = tmp15(7202).TableRadioRow;
     intl7 = tmp15(1113).intl;
     items3[1] = closure_6(TableRadioRow2, obj17);

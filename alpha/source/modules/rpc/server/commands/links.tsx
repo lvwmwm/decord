@@ -1,29 +1,29 @@
-// Module ID: 16556
-// Function ID: 16557
+// Module ID: 16568
+// Function ID: 16569
 // Name: links
-// Dependencies: [5, 4989, 2167, 6585, 1072, 2147, 1252, 5062, 1377, 16557, 16529, 16558, 5147, 16559, 5839, 9085, 16560, 9479, 16536, 12009, 12006, 7703, 2153, 16561, 16564, 2]
+// Dependencies: [5, 4989, 2167, 6585, 1072, 2147, 1252, 5062, 1377, 16569, 16541, 16570, 5147, 16571, 5839, 9085, 16572, 9479, 16548, 12010, 12007, 7703, 2153, 16573, 16576, 2]
 
-// Module 16556 (links)
+// Module 16568 (links)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5062 */;
 import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5147 */;
 import RPCErrorDefault from "RPCError" /* 9479 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12006 */;
-import RPCHelpers from "RPCHelpers" /* 12009 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 16529 */;
-import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 16557 */;
-import internalDeepLinks from "internalDeepLinks" /* 16558 */;
-import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 16559 */;
-import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 16561 */;
-import getFrameChannelIdDefault from "getFrameChannelId" /* 16564 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12007 */;
+import RPCHelpers from "RPCHelpers" /* 12010 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 16541 */;
+import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 16569 */;
+import internalDeepLinks from "internalDeepLinks" /* 16570 */;
+import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 16571 */;
+import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 16573 */;
+import getFrameChannelIdDefault from "getFrameChannelId" /* 16576 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import Constants_mod from "Constants" /* 6585 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Constants_mod3 from "Constants" /* 2147 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16536 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16548 */;
 import size from "module_2" /* 2 */;
 
 let c2, currentEmbeddedActivity, getApplication;
@@ -424,9 +424,9 @@ let obj4 = {
     ({ custom_id: importDefault, message: dependencyMap, link_id: _asyncToGenerator } = socket.args);
     let tmp2 = dependencyMap;
     let tmp = socket;
-    obj = socket(12009);
+    obj = socket(12010);
     let result = obj.validatePostMessageTransport(socket.transport);
-    let obj2 = socket(12009);
+    let obj2 = socket(12010);
     const validateApplicationResult = obj2.validateApplication(socket.application);
     let c4 = validateApplicationResult;
     if (null == validateApplicationResult) {

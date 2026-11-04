@@ -1,10 +1,10 @@
-// Module ID: 13899
-// Function ID: 13900
+// Module ID: 13900
+// Function ID: 13901
 // Name: useFriendsAnimationState
 // Dependencies: [32, 19, 6570, 2]
 // Exports: useFriendsAnimationState
 
-// Module 13899 (useFriendsAnimationState)
+// Module 13900 (useFriendsAnimationState)
 import CheckpointNavigation from "CheckpointNavigation" /* 6570 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

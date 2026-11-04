@@ -1,18 +1,18 @@
-// Module ID: 19474
-// Function ID: 19475
+// Module ID: 19488
+// Function ID: 19489
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4990, 7010, 11428, 21, 5141, 575, 504, 12166, 7666, 5732, 5384, 8168, 1113, 9385, 12167, 6841, 10015, 11409, 19473, 2]
+// Dependencies: [19, 17, 4990, 7010, 11429, 21, 5141, 575, 504, 12167, 7666, 5732, 5384, 8168, 1113, 9385, 12168, 6841, 10015, 11410, 19487, 2]
 
-// Module 19474 (VoicePanelDockControls)
+// Module 19488 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5384 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6841 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10015 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11409 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11428 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 12166 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19473 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11410 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11429 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 12167 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19487 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import VoicePanelStore from "VoicePanelStore" /* 7010 */;

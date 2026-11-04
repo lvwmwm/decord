@@ -1,13 +1,13 @@
-// Module ID: 14294
-// Function ID: 14295
+// Module ID: 14295
+// Function ID: 14296
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [7709, 4974, 14288, 14295, 2]
+// Dependencies: [7709, 4974, 14289, 14296, 2]
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 14294 (GuildPowerupsNotificationsDCF)
+// Module 14295 (GuildPowerupsNotificationsDCF)
 import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 7709 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14288 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 14295 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 14289 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 14296 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

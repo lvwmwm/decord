@@ -1,9 +1,9 @@
-// Module ID: 18480
-// Function ID: 18481
+// Module ID: 18494
+// Function ID: 18495
 // Name: ChannelsUnreadBar
-// Dependencies: [32, 19, 17, 11236, 1072, 21, 1652, 5141, 575, 1377, 9971, 5776, 11232, 5894, 17312, 1705, 5771, 5772, 8803, 13265, 13263, 5761, 1113, 2]
+// Dependencies: [32, 19, 17, 11236, 1072, 21, 1652, 5141, 575, 1377, 9971, 5776, 11232, 5894, 17324, 1705, 5771, 5772, 8803, 13266, 13264, 5761, 1113, 2]
 
-// Module 18480 (ChannelsUnreadBar)
+// Module 18494 (ChannelsUnreadBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -43,7 +43,7 @@ let closure_11 = createStyles.createStyles((arg0, arg1) => {
     const colors = tmp3.colors;
     RED_400 = arg1 ? colors.MOBILE_ACTIONSHEET_GRADIENT_BACKGROUND_DEFAULT : colors.BACKGROUND_SURFACE_HIGHEST;
   }
-  const obj2 = { unreadBar: obj, text: { textTransform: "uppercase", marginTop: num2, marginLeft: 2, marginRight: 0 } };
+  const obj2 = { unreadBar: obj, text: { marginTop: num2, marginLeft: 2, marginRight: 0 } };
   num2 = 0;
   const obj3 = PlatformUtils;
   if (obj3.isAndroid()) {
@@ -58,13 +58,13 @@ const memoResult = react.memo(function ChannelsUnreadBar(position) {
   let MOBILE_UNREADBAR_TEXT_DEFAULT;
   let closure_12;
   let guildChannelsListUnreadBarInsetEnd;
-  let intl;
   let items10;
   let items11;
   let listPaddingTop;
   let scrollPosition;
   let str2;
   let str3;
+  let stringResult;
   let tmp27;
   let tmp28;
   let tmp29;
@@ -312,13 +312,14 @@ const memoResult = react.memo(function ChannelsUnreadBar(position) {
     str2 = "auto";
   }
   items11 = [tmp46Result, ];
-  const obj9 = { style: tmp6.text, variant: tmp9, color: str3, maxFontSizeMultiplier: 1.5, children: intl.string(position(onPress[22]).t.y2b7CA) };
+  const obj9 = { style: tmp6.text, variant: tmp9, color: str3, maxFontSizeMultiplier: 1.5, children: stringResult.toLocaleUpperCase(position(onPress[22]).intl.currentLocale) };
   str3 = "mobile-unreadbar-text-default";
   const Text = tmp7(tmp5[21]).Text;
   if (is_mention) {
     str3 = "text-overlay-light";
   }
-  intl = tmp7(tmp5[22]).intl;
+  const intl = tmp7(tmp5[22]).intl;
+  stringResult = intl.string(position(onPress[22]).t.y2b7CA);
   items11[1] = sharedValue(Text, obj9);
   return tmp49(tmp50, obj8);
 });

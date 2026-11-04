@@ -1,9 +1,9 @@
-// Module ID: 18293
-// Function ID: 18294
+// Module ID: 18307
+// Function ID: 18308
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5141, 575, 5318, 9972, 1627, 5325, 5732, 5207, 10914, 18294, 2]
+// Dependencies: [19, 17, 21, 5141, 575, 5318, 9972, 1627, 5325, 5732, 5207, 10914, 18308, 2]
 
-// Module 18293 (MainTabs)
+// Module 18307 (MainTabs)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5318 */;
@@ -11,7 +11,7 @@ import useChatLayoutDefault from "useChatLayout" /* 5325 */;
 import useToken from "useToken" /* 5732 */;
 import useActiveTheme from "useActiveTheme" /* 9972 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10914 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18294 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18308 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

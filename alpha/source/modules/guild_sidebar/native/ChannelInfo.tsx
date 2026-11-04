@@ -1,17 +1,17 @@
-// Module ID: 18528
-// Function ID: 18529
+// Module ID: 18542
+// Function ID: 18543
 // Name: ChannelInfo
-// Dependencies: [19, 7851, 5012, 5073, 6977, 5813, 1072, 21, 5141, 504, 12604, 10017, 18529, 18530, 6182, 1187, 18532, 18533, 18417, 6847, 14059, 18418, 18534, 15069, 2]
+// Dependencies: [19, 7851, 5012, 5073, 6977, 5813, 1072, 21, 5141, 504, 12605, 10017, 18543, 18544, 6182, 1187, 18546, 18547, 18431, 6847, 14060, 18432, 18548, 15070, 2]
 // Exports: default
 
-// Module 18528 (ChannelInfo)
+// Module 18542 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
 import StageMediaHooks from "StageMediaHooks" /* 6847 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12604 */;
-import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 14059 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 18529 */;
-import ChannelBadgeDefault from "ChannelBadge" /* 18530 */;
-import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 18534 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12605 */;
+import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 14060 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 18543 */;
+import ChannelBadgeDefault from "ChannelBadge" /* 18544 */;
+import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 18548 */;
 import react from "react" /* 19 */;
 import NewChannelsStore from "NewChannelsStore" /* 7851 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -26,7 +26,7 @@ let Fonts;
 let c9;
 let metroImportAll;
 let tmp2;
-const Badges = tmp2(15069);
+const Badges = tmp2(15070);
 function LimitAndDurationInfo(channel) {
   let hasMedia;
   let hasVideo;
@@ -58,7 +58,7 @@ function LimitAndDurationInfo(channel) {
   }
   if (tmp4(obj2)) {
     const obj3 = { userCount: voiceStatesCount, video: hasVideo, channel };
-    const ConnectedUserLimit = tmp(18418).ConnectedUserLimit;
+    const ConnectedUserLimit = tmp(18432).ConnectedUserLimit;
     if (!hasVideo) {
       hasVideo = hasMedia;
     }
@@ -142,16 +142,16 @@ export default function ChannelInfo(channel) {
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        const tmpResult2 = channel(18532);
+        const tmpResult2 = channel(18546);
         if (tmpResult2.showChannelItemEmbeddedActivities(tmp5)) {
-          tmp11Result = jsx(tmp4(18533), { embeddedApps: tmp5, muted });
+          tmp11Result = jsx(tmp4(18547), { embeddedApps: tmp5, muted });
         }
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
-          tmp11Result = jsx(tmp4(18417), { locked: needSubscriptionToAccess });
+          tmp11Result = jsx(tmp4(18431), { locked: needSubscriptionToAccess });
         }
       }
     }

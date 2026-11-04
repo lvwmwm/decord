@@ -1,10 +1,10 @@
-// Module ID: 19314
-// Function ID: 19315
+// Module ID: 19328
+// Function ID: 19329
 // Name: ReferralProgramEntryPointActionSheet
-// Dependencies: [19, 17, 4987, 21, 5141, 575, 5382, 15555, 2123, 5396, 5851, 8663, 5761, 1113, 5768, 2]
+// Dependencies: [19, 17, 4987, 21, 5141, 575, 5382, 15556, 2123, 5396, 5851, 8663, 5761, 1113, 5768, 2]
 // Exports: default
 
-// Module 19314 (ReferralProgramEntryPointActionSheet)
+// Module 19328 (ReferralProgramEntryPointActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
@@ -53,7 +53,7 @@ export default function ReferralProgramEntryPointActionSheet(markAsDismissed) {
   const callback = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.PRIMARY);
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(15555, dependencyMap.paths), "referral-program-share-action-sheet");
+    obj.openLazy(asyncRequire(15556, dependencyMap.paths), "referral-program-share-action-sheet");
   }, items);
   const callback1 = react.useCallback(() => {
     markAsDismissed(ContentDismissActionType.USER_DISMISS);

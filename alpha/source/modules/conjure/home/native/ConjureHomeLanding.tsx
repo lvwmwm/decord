@@ -1,12 +1,12 @@
-// Module ID: 13037
-// Function ID: 13038
+// Module ID: 13038
+// Function ID: 13039
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 11029, 21, 575, 5141, 13038, 1499, 1627, 12270, 1652, 13194, 12816, 12802, 13195, 13196, 12981, 11054, 12800, 1500, 12282, 1113, 3995, 11058, 5846, 13198, 7442, 5761, 13199, 13013, 13201, 2]
+// Dependencies: [5, 32, 19, 17, 11029, 21, 575, 5141, 13039, 1499, 1627, 12271, 1652, 13195, 12817, 12803, 13196, 13197, 12982, 11054, 12801, 1500, 12283, 1113, 3995, 11058, 5846, 13199, 7442, 5761, 13200, 13014, 13202, 2]
 // Exports: default
 
-// Module 13037 (ConjureHomeLanding)
+// Module 13038 (ConjureHomeLanding)
 import nativeDefault from "native" /* 575 */;
-import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13038 */;
+import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13039 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -182,12 +182,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f142589 = (role) => "user" === role.role;
+        const f143152 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = closure_3_8.getMessages(closure_0);
           const obj = closure_3_8;
-          if (messages.some(f142589)) {
+          if (messages.some(f143152)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -202,7 +202,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f142589)) {
+        if (messages.some(f143152)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);

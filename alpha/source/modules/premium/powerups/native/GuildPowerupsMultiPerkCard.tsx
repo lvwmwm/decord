@@ -1,12 +1,12 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14364
+// Function ID: 14365
 // Name: GuildPowerupsMultiPerkCard
-// Dependencies: [19, 5142, 21, 14340, 504, 14364, 14337, 14362, 2]
+// Dependencies: [19, 5142, 21, 14341, 504, 14365, 14338, 14363, 2]
 // Exports: default
 
-// Module 14363 (GuildPowerupsMultiPerkCard)
+// Module 14364 (GuildPowerupsMultiPerkCard)
 import Fragment from "Fragment" /* 21 */;
-import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 14337 */;
+import openGuildPowerupsMultiPerkBottomSheetDefault from "openGuildPowerupsMultiPerkBottomSheet" /* 14338 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
 import size from "module_2" /* 2 */;
@@ -18,12 +18,12 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
   let useReducedMotion;
   guildId = guildId.guildId;
   const listing = guildId.listing;
-  const tmp3 = listing(14340)(guildId, listing);
+  const tmp3 = listing(14341)(guildId, listing);
   let obj = guildId(504);
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const obj2 = { guildId, powerups: listing.powerups };
-  const tmp5 = listing(14364)(obj2);
+  const tmp5 = listing(14365)(obj2);
   const items1 = [guildId, listing];
   let tmp8Result = null;
   const tmp = listing;
@@ -33,7 +33,7 @@ export default function GuildPowerupsMultiPerkCard(guildId) {
       ({ title: obj3.title, description: obj3.description } = tmp3);
       const image = tmp3.image;
       ({ status: obj3.status, costDecorator: obj3.costDecorator } = tmp5);
-      tmp8Result = jsx(tmp(14362), { title: null, description: null, cost: tmp5.cost, imageUrl: stateFromStores ? image.staticUrl : image.animatedUrl, status: null, costDecorator: null, onPress: tmp6, badge: tmp3.badge });
+      tmp8Result = jsx(tmp(14363), { title: null, description: null, cost: tmp5.cost, imageUrl: stateFromStores ? image.staticUrl : image.animatedUrl, status: null, costDecorator: null, onPress: tmp6, badge: tmp3.badge });
     }
   }
   return tmp8Result;

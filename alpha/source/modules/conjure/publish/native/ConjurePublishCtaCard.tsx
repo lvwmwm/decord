@@ -1,16 +1,16 @@
-// Module ID: 12988
-// Function ID: 12989
+// Module ID: 12989
+// Function ID: 12990
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 12299, 6162, 5768, 12294, 12796, 12989, 5761, 12990, 2]
+// Dependencies: [19, 21, 12300, 6162, 5768, 12295, 12797, 12990, 5761, 12991, 2]
 // Exports: default
 
-// Module 12988 (ConjurePublishCtaCard)
+// Module 12989 (ConjurePublishCtaCard)
 import components_Button_Button from "components/Button/Button" /* 5768 */;
 import Stack_Stack from "Stack/Stack" /* 6162 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12294 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 12299 */;
-import conjurePublishCard from "conjurePublishCard" /* 12796 */;
-import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12989 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12295 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 12300 */;
+import conjurePublishCard from "conjurePublishCard" /* 12797 */;
+import ConjureTipInlineCalloutDefault from "ConjureTipInlineCallout" /* 12990 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ export default function ConjurePublishCtaCard(arg0) {
       let tmp6Result3 = null;
       if (null != turnId) {
         const obj4 = { projectId, turnId, cta, status: tmp3.status, placement: "publish_card" };
-        tmp6Result3 = tmp6(tmp(12990), obj4, turnId);
+        tmp6Result3 = tmp6(tmp(12991), obj4, turnId);
       }
       const obj5 = { children: tmp8(Stack, obj6) };
       obj6 = { spacing: 12, children: items };

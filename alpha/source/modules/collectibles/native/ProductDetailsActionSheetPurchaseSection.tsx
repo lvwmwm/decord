@@ -1,10 +1,10 @@
-// Module ID: 15272
-// Function ID: 15273
+// Module ID: 15273
+// Function ID: 15274
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7875, 1074, 1072, 11702, 1387, 21, 5141, 575, 8168, 13585, 5382, 14638, 1113, 9703, 9724, 9684, 5775, 1499, 7462, 6879, 15273, 2123, 7859, 15281, 1075, 15282, 14706, 9679, 5761, 5769, 2116, 8890, 504, 11605, 2176, 7872, 7871, 9704, 10089, 8886, 9700, 11701, 15284, 15285, 1627, 9702, 5768, 15286, 1242, 1377, 6676, 6094, 2]
+// Dependencies: [32, 19, 17, 7875, 1074, 1072, 11703, 1387, 21, 5141, 575, 8168, 13586, 5382, 14639, 1113, 9703, 9724, 9684, 5775, 1499, 7462, 6879, 15274, 2123, 7859, 15282, 1075, 15283, 14707, 9679, 5761, 5769, 2116, 8890, 504, 11606, 2176, 7872, 7871, 9704, 10089, 8886, 9700, 11702, 15285, 15286, 1627, 9702, 5768, 15287, 1242, 1377, 6676, 6094, 2]
 // Exports: default
 
-// Module 15272 (ProductDetailsActionSheetPurchaseSection)
+// Module 15273 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -20,9 +20,9 @@ import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6676 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7462 */;
 import OrbsIcon from "OrbsIcon" /* 9679 */;
-import MainTabsConstants from "MainTabsConstants" /* 11702 */;
-import openGiftModal from "openGiftModal" /* 14638 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14706 */;
+import MainTabsConstants from "MainTabsConstants" /* 11703 */;
+import openGiftModal from "openGiftModal" /* 14639 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 14707 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7875 */;
@@ -197,7 +197,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(15273, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(15274, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;

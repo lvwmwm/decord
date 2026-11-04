@@ -1,18 +1,18 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14487
+// Function ID: 14488
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1385, 14459, 21, 5141, 5722, 575, 1499, 5761, 1113, 7349, 7350, 14458, 563, 7344, 38, 7382, 7300, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 14460, 21, 5141, 5722, 575, 1499, 5761, 1113, 7349, 7350, 14459, 563, 7344, 38, 7382, 7300, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 14486 (AddPhoneScreens)
+// Module 14487 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import NavigatorConstants from "NavigatorConstants" /* 5722 */;
 import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7344 */;
 import AddPhoneDefault from "AddPhone" /* 7349 */;
 import PhoneActionCreators from "PhoneActionCreators" /* 7350 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14458 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14459 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14459 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14460 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

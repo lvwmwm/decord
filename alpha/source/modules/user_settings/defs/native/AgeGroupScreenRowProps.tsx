@@ -1,16 +1,16 @@
-// Module ID: 16865
-// Function ID: 16866
+// Module ID: 16877
+// Function ID: 16878
 // Name: AgeGroupScreenRowProps
-// Dependencies: [8095, 6864, 1113, 3223, 6861, 16819, 2]
+// Dependencies: [8095, 6864, 1113, 3223, 6861, 16831, 2]
 // Exports: useShowAccountStatusAgeGroupRow, useShowAssignedAdultAgeGroupRow
 
-// Module 16865 (AgeGroupScreenRowProps)
+// Module 16877 (AgeGroupScreenRowProps)
 import intl2 from "intl" /* 1113 */;
 import _modDef3223 from "module_3223" /* 3223 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6861 */;
 import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16819 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16831 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

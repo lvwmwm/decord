@@ -1,10 +1,10 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 16753
+// Function ID: 16754
 // Name: UserProfileNameplateEditButton
-// Dependencies: [19, 17, 5053, 7513, 1083, 21, 5141, 575, 504, 8878, 16742, 5382, 16743, 2123, 16713, 1113, 9661, 1187, 15300, 2]
+// Dependencies: [19, 17, 5053, 7513, 1083, 21, 5141, 575, 504, 8878, 16754, 5382, 16755, 2123, 16725, 1113, 9661, 1187, 15301, 2]
 // Exports: default
 
-// Module 16741 (UserProfileNameplateEditButton)
+// Module 16753 (UserProfileNameplateEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -79,8 +79,8 @@ export default function UserProfileNameplateEditButton(user) {
   }
   const profilePreviewValue = getProfilePreviewValue(obj2);
   let skuId;
-  const useFetchNameplate = tmp3(16742).useFetchNameplate;
-  user(16742);
+  const useFetchNameplate = tmp3(16754).useFetchNameplate;
+  user(16754);
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
@@ -106,7 +106,7 @@ export default function UserProfileNameplateEditButton(user) {
   }
   const items1 = [user, nameplate, guildId];
   if (isFetching) {
-    const UserProfileEditFormButton2 = tmp3(16713).UserProfileEditFormButton;
+    const UserProfileEditFormButton2 = tmp3(16725).UserProfileEditFormButton;
     const intl4 = tmp3(1113).intl;
     const intl5 = tmp3(1113).intl;
     return <UserProfileEditFormButton2 label={intl4.string(user(1113).t.x5CoXR)} buttonText={intl5.string(user(1113).t.MKDeyL)} onPress={NOOP} leading={null} loading disabled hideArrow />;
@@ -129,7 +129,7 @@ export default function UserProfileNameplateEditButton(user) {
       }
     }
     const obj5 = { label: intl3.string(user(1113).t.x5CoXR), buttonText: formatToPlainStringResult, accessibilityValue: obj6, onPress: tmp14, leading: null };
-    const UserProfileEditFormButton = tmp3(16713).UserProfileEditFormButton;
+    const UserProfileEditFormButton = tmp3(16725).UserProfileEditFormButton;
     intl3 = tmp3(1113).intl;
     obj6 = { text: formatToPlainStringResult };
     if (null != nameplateData) {
@@ -143,7 +143,7 @@ export default function UserProfileNameplateEditButton(user) {
         return <UserProfileEditFormButton {...obj5} />;
       }
     }
-    const obj9 = { source: guildId(15300), style: tmp.noneIcon };
+    const obj9 = { source: guildId(15301), style: tmp.noneIcon };
     const Icon = tmp3(1187).Icon;
     tmp17Result = tmp17(Icon, obj9);
   }

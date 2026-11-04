@@ -1,10 +1,10 @@
-// Module ID: 14753
-// Function ID: 14754
+// Module ID: 14754
+// Function ID: 14755
 // Name: EmojiReactionRowButton
 // Dependencies: [19, 17, 1388, 21, 5141, 575, 5148, 7121, 1113, 9599, 7436, 1411, 5090, 2]
 // Exports: EmojiPickerRowButton, EmojiReactionRowButton, getEmojiKey
 
-// Module 14753 (EmojiReactionRowButton)
+// Module 14754 (EmojiReactionRowButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

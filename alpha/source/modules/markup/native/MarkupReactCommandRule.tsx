@@ -1,10 +1,10 @@
-// Module ID: 11686
-// Function ID: 11687
+// Module ID: 11687
+// Function ID: 11688
 // Name: MarkupReactCommandRule
-// Dependencies: [19, 4990, 1498, 6170, 6171, 21, 5817, 5323, 5382, 1625, 6094, 1113, 1187, 11687, 5845, 7494, 4966, 10702, 7499, 11689, 5761, 5331, 11692, 8712, 2]
+// Dependencies: [19, 4990, 1498, 6170, 6171, 21, 5817, 5323, 5382, 1625, 6094, 1113, 1187, 11688, 5845, 7494, 4966, 10702, 7499, 11690, 5761, 5331, 11693, 8712, 2]
 // Exports: default
 
-// Module 11686 (MarkupReactCommandRule)
+// Module 11687 (MarkupReactCommandRule)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
@@ -13,7 +13,7 @@ import ToastUtils from "ToastUtils" /* 5845 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6170 */;
 import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6171 */;
 import ClipboardUtils from "ClipboardUtils" /* 7494 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11692 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11693 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1498 */;
@@ -175,7 +175,7 @@ export default function MarkupReactCommandRule(node) {
   let style;
   node = node.node;
   ({ output, state, style } = node);
-  let closure_1 = null != react.useContext(node(11689).AppLauncherContext);
+  let closure_1 = null != react.useContext(node(11690).AppLauncherContext);
   dependencyMap = closure_6();
   const Text = node(5761).Text;
   let obj2 = node(8712);

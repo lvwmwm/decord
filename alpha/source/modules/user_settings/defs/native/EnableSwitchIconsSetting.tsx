@@ -1,16 +1,16 @@
-// Module ID: 17638
-// Function ID: 17639
+// Module ID: 17650
+// Function ID: 17651
 // Name: EnableSwitchIconsSetting
-// Dependencies: [5142, 8573, 504, 11728, 1113, 16502, 2]
+// Dependencies: [5142, 8573, 504, 11729, 1113, 16515, 2]
 // Exports: useEnableSwitchIconsSettingValue
 
-// Module 17638 (EnableSwitchIconsSetting)
+// Module 17650 (EnableSwitchIconsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8573 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16502 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16515 */;
 import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import SettingBuilders from "SettingBuilders" /* 11728 */;
+import SettingBuilders from "SettingBuilders" /* 11729 */;
 import size from "module_2" /* 2 */;
 
 function useEnableSwitchIconsSettingValue() {

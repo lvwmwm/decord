@@ -1,10 +1,10 @@
-// Module ID: 12238
-// Function ID: 12239
+// Module ID: 12239
+// Function ID: 12240
 // Name: useFetchStreamPreview
 // Dependencies: [19, 8043, 4990, 5073, 5044, 1083, 504, 8041, 2]
 // Exports: default
 
-// Module 12238 (useFetchStreamPreview)
+// Module 12239 (useFetchStreamPreview)
 import Constants from "Constants" /* 1083 */;
 import StreamActionCreators from "StreamActionCreators" /* 8041 */;
 import react_mod from "react" /* 19 */;
@@ -84,5 +84,5 @@ export default function useFetchStreamPreview(arg0, arg1, arg2) {
     }
     return obj5;
   }
-  obj5 = { previewUrl: "flexDirection", isLoading: true };
+  obj5 = { previewUrl: "flexDirection", isLoading: null };
 };

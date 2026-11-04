@@ -1,10 +1,10 @@
-// Module ID: 19582
-// Function ID: 19583
+// Module ID: 19596
+// Function ID: 19597
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 4989, 6849, 7010, 11410, 21, 5141, 575, 11409, 6986, 1652, 1705, 11118, 5893, 8041, 6841, 12080, 19583, 10014, 19573, 1113, 2]
+// Dependencies: [32, 19, 4989, 6849, 7010, 11411, 21, 5141, 575, 11410, 6986, 1652, 1705, 11118, 5893, 8041, 6841, 12081, 19597, 10014, 19587, 1113, 2]
 // Exports: default
 
-// Module 19582 (VoicePanelDisconnectCancelButton)
+// Module 19596 (VoicePanelDisconnectCancelButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
@@ -12,7 +12,7 @@ import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators"
 import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6986 */;
 import StreamActionCreators from "StreamActionCreators" /* 8041 */;
 import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 11118 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;

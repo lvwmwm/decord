@@ -1,10 +1,10 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12423
+// Function ID: 12424
 // Name: conjureProjectActions
-// Dependencies: [5, 11028, 11045, 6979, 4997, 12423, 5845, 6099, 1113, 3995, 7494, 6181, 5846, 5865, 12413, 12424, 11054, 9353, 11173, 11057, 11024, 5867, 12426, 5861, 10702, 7701, 12080, 7237, 12428, 5872, 2]
+// Dependencies: [5, 11028, 11045, 6979, 4997, 12424, 5845, 6099, 1113, 3995, 7494, 6181, 5846, 5865, 12414, 12425, 11054, 9353, 11173, 11057, 11024, 5867, 12427, 5861, 10702, 7701, 12081, 7237, 12429, 5872, 2]
 // Exports: canUnpublishConjureUserApp, conjureProjectActions, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject
 
-// Module 12422 (conjureProjectActions)
+// Module 12423 (conjureProjectActions)
 import intl11 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
@@ -15,9 +15,9 @@ import ChannelUtils from "ChannelUtils" /* 6181 */;
 import ClipboardUtils from "ClipboardUtils" /* 7494 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 11054 */;
 import conjureProjectMute from "conjureProjectMute" /* 11057 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 12413 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12424 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12428 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 12414 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 12425 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 12429 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11045 */;

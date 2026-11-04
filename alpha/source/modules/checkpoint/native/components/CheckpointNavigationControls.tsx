@@ -1,14 +1,14 @@
-// Module ID: 13918
-// Function ID: 13919
+// Module ID: 13919
+// Function ID: 13920
 // Name: CheckpointNavigationControls
-// Dependencies: [17, 6201, 1072, 21, 5141, 575, 6569, 13917, 1627, 5732, 1113, 6570, 13919, 8989, 13865, 3219, 5843, 2190, 10410, 11085, 10989, 2]
+// Dependencies: [17, 6201, 1072, 21, 5141, 575, 6569, 13918, 1627, 5732, 1113, 6570, 13920, 8989, 13866, 3219, 5843, 2190, 10410, 11085, 10989, 2]
 // Exports: default
 
-// Module 13918 (CheckpointNavigationControls)
+// Module 13919 (CheckpointNavigationControls)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import CheckpointTextDefault from "CheckpointText" /* 13865 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 13917 */;
+import CheckpointTextDefault from "CheckpointText" /* 13866 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 13918 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 6201 */;
 import Fragment from "Fragment" /* 21 */;
@@ -155,7 +155,7 @@ export default function CheckpointNavigationControls(onShare) {
   } else if (activeRoute === require("CheckpointNavigation").CheckpointRoute.SUMMARY) {
     const obj8 = { style: items3, children: items5 };
     items3 = [items, tmp.routeControls];
-    const obj9 = { style: items4, onPress: onBack, accessibilityRole: "button", accessibilityLabel: intl4.string(require("intl").t.bt75uw), children: closure_7(require("PencilIcon").PencilIcon, obj11) };
+    const obj9 = { style: items4, onPress: onBack, accessibilityRole: "button", accessibilityLabel: intl4.string(tmp5(flag2[15]).Iyyy9s), children: closure_7(require("PencilIcon").PencilIcon, obj11) };
     items4 = [, , ];
     ({ control: arr4[0], editControl: arr4[1] } = tmp);
     const obj10 = { borderColor: color };

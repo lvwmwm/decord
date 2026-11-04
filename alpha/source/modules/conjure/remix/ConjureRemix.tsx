@@ -46,7 +46,7 @@ export function createConjureRemix(project, arg1) {
       let v2;
       function startRemix(id, guild_id, name, arg3) {
         let str;
-        const f142512 = () => "rejected";
+        const f143075 = () => "rejected";
         closure_0 = guild_id;
         closure_1 = arg3;
         function accept(comma) {
@@ -54,7 +54,7 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             obj = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj.acceptRemix(closure_3, comma);
-            closure_5 = acceptRemixResult.catch(f142512);
+            closure_5 = acceptRemixResult.catch(f143075);
           }
           return closure_5;
         }
@@ -198,7 +198,7 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             const tmp2Result = tmp2(tmp3[7]);
             const acceptRemixResult = tmp2Result.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f142512);
+            closure_5 = acceptRemixResult.catch(f143075);
           }
         });
         let obj3 = { name, guild_id, install_scope: str, remix_source_project_id: id.id, nonce };
@@ -228,7 +228,7 @@ export function createConjureRemix(project, arg1) {
           if (closure_5 == null) {
             const obj2 = closure_2_0(closure_2_2[7]);
             const acceptRemixResult = obj2.acceptRemix(closure_3, id);
-            closure_5 = acceptRemixResult.catch(f142512);
+            closure_5 = acceptRemixResult.catch(f143075);
           }
           return remix_preview;
         }, () => {
@@ -302,7 +302,7 @@ export function createConjureRemix(project, arg1) {
                 value = undefined;
                 c6 = 1;
                 c7 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
             } else if (1 === tmp4) {
               if (arg0 === 1) {

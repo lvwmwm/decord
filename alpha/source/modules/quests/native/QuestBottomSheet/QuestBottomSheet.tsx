@@ -1,10 +1,10 @@
-// Module ID: 17333
-// Function ID: 17334
+// Module ID: 17345
+// Function ID: 17346
 // Name: QuestBottomSheet
-// Dependencies: [32, 19, 17, 7986, 6916, 21, 5141, 575, 7993, 9832, 5846, 1113, 9831, 9869, 6919, 17303, 504, 14910, 8008, 5396, 17334, 17336, 9867, 8011, 9834, 9837, 6923, 17370, 17372, 17373, 8006, 8166, 5761, 2]
+// Dependencies: [32, 19, 17, 7986, 6916, 21, 5141, 575, 7993, 9832, 5846, 1113, 9831, 9869, 6919, 17315, 504, 14911, 8008, 5396, 17346, 17348, 9867, 8011, 9834, 9837, 6923, 17382, 17384, 17385, 8006, 8166, 5761, 2]
 // Exports: default
 
-// Module 17333 (QuestBottomSheet)
+// Module 17345 (QuestBottomSheet)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,9 +14,9 @@ import utils_QuestUtils from "utils/QuestUtils" /* 8006 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 8008 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8011 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9831 */;
-import QuestHooks from "QuestHooks" /* 17303 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 17334 */;
-import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 17370 */;
+import QuestHooks from "QuestHooks" /* 17315 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 17346 */;
+import QuestBottomSheetProgressCard from "QuestBottomSheetProgressCard" /* 17382 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import QuestStore from "QuestStore" /* 7986 */;
 import QuestConstants from "QuestConstants" /* 6916 */;
@@ -37,7 +37,7 @@ let obj4;
 let obj5;
 let tmp11;
 let unpackModuleId;
-const QuestBottomSheetFooterDefault = tmp11(17336);
+const QuestBottomSheetFooterDefault = tmp11(17348);
 function QuestBottomSheet(initialStep) {
   let BottomSheet;
   let closure_0;
@@ -152,7 +152,7 @@ function useEnrolledQuestContentProps(quest) {
   }
   const userStatus = quest.userStatus;
   let completedAt;
-  const obj5 = quest(17303);
+  const obj5 = quest(17315);
   const hasWatchVideoOnMobileTasks = obj5.useHasWatchVideoOnMobileTasks(quest.config);
   if (userStatus != null) {
     completedAt = userStatus.completedAt;
@@ -246,9 +246,9 @@ function useEnrolledQuestContentProps(quest) {
     items[2] = obj3;
     return items;
   }, items3);
-  const tmpResult10 = tmp(17303);
+  const tmpResult10 = tmp(17315);
   hasWatchVideoOnMobileTasks1 = tmpResult10.useHasWatchVideoOnMobileTasks(quest.config);
-  const tmpResult11 = tmp(17303);
+  const tmpResult11 = tmp(17315);
   isMobileActivityQuest = tmpResult11.useMobileActivityQuest(quest).isMobileActivityQuest;
   const items4 = [tmp5Result[1], memo3, memo1, memo2, hasWatchVideoOnMobileTasks1, isMobileActivityQuest];
   const memo4 = obj7.useMemo(() => {

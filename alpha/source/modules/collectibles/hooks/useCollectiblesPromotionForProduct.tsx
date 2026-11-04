@@ -1,12 +1,12 @@
-// Module ID: 15247
-// Function ID: 15248
+// Module ID: 15248
+// Function ID: 15249
 // Name: useCollectiblesPromotionForProduct
-// Dependencies: [1072, 9701, 15248, 2]
+// Dependencies: [1072, 9701, 15249, 2]
 // Exports: useCollectiblesPromotionForProduct
 
-// Module 15247 (useCollectiblesPromotionForProduct)
+// Module 15248 (useCollectiblesPromotionForProduct)
 import Constants from "Constants" /* 1072 */;
-import CollectiblesPromotionUtils from "CollectiblesPromotionUtils" /* 15248 */;
+import CollectiblesPromotionUtils from "CollectiblesPromotionUtils" /* 15249 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = Constants.COLLECTIBLES_APPLICATION_ID;

@@ -1,18 +1,9 @@
 // Module ID: 16168
 // Function ID: 16169
-// Dependencies: [16161]
+// Dependencies: [16159]
 
 // Module 16168
-import _mod16161 from "module_16161" /* 16161 */;
+import _mod16159 from "module_16159" /* 16159 */;
 
 
-export default function(arg0, arg1) {
-  try {
-    const self = this;
-    const self2 = this;
-    const str = new _mod16161(arg0, arg1).range || "*";
-    return str;
-  } catch (err) {
-    return null;
-  }
-};
+export default (arg0, arg1, arg2) => 0 !== _mod16159(arg0, arg1, arg2);

@@ -1,15 +1,15 @@
-// Module ID: 19716
-// Function ID: 19717
+// Module ID: 19730
+// Function ID: 19731
 // Name: KvBackgroundManager
-// Dependencies: [32, 5, 14194, 7797, 7798, 1089, 3, 7423, 19717, 10388, 1377, 5019, 5020, 5036, 2]
+// Dependencies: [32, 5, 14195, 7797, 7798, 1089, 3, 7423, 19731, 10388, 1377, 5019, 5020, 5036, 2]
 
-// Module 19716 (KvBackgroundManager)
+// Module 19730 (KvBackgroundManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 19717 */;
+import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 19731 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 14194 */;
+import MultiAccountStore from "MultiAccountStore" /* 14195 */;
 import SaveableChannelsStore_mod from "SaveableChannelsStore" /* 7797 */;
 import FileSystemStore from "FileSystemStore" /* 7798 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;

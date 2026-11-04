@@ -1,10 +1,10 @@
-// Module ID: 13232
-// Function ID: 13233
+// Module ID: 13233
+// Function ID: 13234
 // Name: ConjureNumberBadge
 // Dependencies: [19, 17, 21, 575, 5141, 5723, 1187, 2]
 // Exports: default
 
-// Module 13232 (ConjureNumberBadge)
+// Module 13233 (ConjureNumberBadge)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import LinearGradientDefault from "LinearGradient" /* 5723 */;

@@ -1,10 +1,10 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17258
+// Function ID: 17259
 // Name: SameAsDeviceThemeUtils
 // Dependencies: [5165, 1192, 1195, 6067, 1239, 5148, 5168, 5206, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme
 
-// Module 17246 (SameAsDeviceThemeUtils)
+// Module 17258 (SameAsDeviceThemeUtils)
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
 import shared from "shared" /* 5148 */;
 import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5168 */;

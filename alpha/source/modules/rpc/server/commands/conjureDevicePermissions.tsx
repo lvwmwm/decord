@@ -1,15 +1,15 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16598
+// Function ID: 16599
 // Name: commands/conjureDevicePermissions
-// Dependencies: [5, 6585, 1072, 16536, 16528, 11108, 11109, 2]
+// Dependencies: [5, 6585, 1072, 16548, 16540, 11108, 11109, 2]
 
-// Module 16586 (commands/conjureDevicePermissions)
+// Module 16598 (commands/conjureDevicePermissions)
 import Constants2 from "Constants" /* 1072 */;
 import requestConjureDevicePermissions from "requestConjureDevicePermissions" /* 11109 */;
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16528 */;
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16540 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 6585 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16536 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16548 */;
 import size from "module_2" /* 2 */;
 
 let RPC_AUTHENTICATED_SCOPE;

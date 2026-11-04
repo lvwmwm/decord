@@ -1,23 +1,23 @@
-// Module ID: 17909
-// Function ID: 17910
+// Module ID: 17921
+// Function ID: 17922
 // Name: MFAModal
-// Dependencies: [5, 19, 17, 21, 7264, 6879, 1113, 17910, 7698, 8499, 7139, 17911, 17912, 17917, 17920, 17921, 17922, 7306, 6094, 2]
+// Dependencies: [5, 19, 17, 21, 7264, 6879, 1113, 17922, 7698, 8499, 7139, 17923, 17924, 17929, 17932, 17933, 17934, 7306, 6094, 2]
 // Exports: openMFAModal
 
-// Module 17909 (MFAModal)
+// Module 17921 (MFAModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import NavigatorHeader from "NavigatorHeader" /* 7139 */;
 import MFAUtils from "MFAUtils" /* 7264 */;
-import MfaStepsTypes from "MfaStepsTypes" /* 17910 */;
+import MfaStepsTypes from "MfaStepsTypes" /* 17922 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-let data;
+let closure_2, data, mfaType;
 
 let LogBox;
 let hasOwnProperty;
@@ -48,21 +48,73 @@ class MFAModal {
     }, items);
     const useCallback = flag.useCallback;
     let closure_0 = handleOnClose((mfaType) => {
-      let closure_2;
       let ticket;
       let c3 = 0;
       let c4 = 0;
-      const iter = (function*(arg0) {
+      const iter = (function*(arg0, value) {
         let c0;
         let c1;
-        const obj5 = { mfaType, data, ticket: ticket.ticket };
-        yield data(obj5);
-        const obj = finish(cancel[5]);
-        obj.popWithKey(callback1);
-        yield "HermesInternal";
-        data = tmp;
-        ({ mfaType: c0, data: c1 } = closure_0);
-        return "flexDirection";
+        if (c4 === 2) {
+          c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                closure_2 = tmp4;
+                mfaType = undefined;
+                data = undefined;
+                ({ mfaType: c0, data: c1 } = closure_0);
+                c3 = 1;
+                c4 = 1;
+                return { value: "flexDirection", done: null };
+              }
+            } else if (1 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                c3 = 2;
+                c4 = 1;
+                const obj5 = { mfaType, data, ticket: ticket.ticket };
+                const obj6 = { value: data(obj5), done: false };
+                return obj6;
+              }
+            } else if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              const obj = finish(cancel[5]);
+              obj.popWithKey(callback1);
+              c4 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp17) {
+            c4 = 3;
+            throw tmp17;
+          }
+        }
       })();
       iter.next();
       return iter;

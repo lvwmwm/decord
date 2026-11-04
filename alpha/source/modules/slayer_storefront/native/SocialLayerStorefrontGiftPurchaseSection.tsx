@@ -1,10 +1,10 @@
-// Module ID: 14635
-// Function ID: 14636
+// Module ID: 14636
+// Function ID: 14637
 // Name: SocialLayerStorefrontGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 7749, 1385, 1072, 1387, 21, 5141, 575, 5743, 7466, 504, 1252, 14636, 10859, 1377, 572, 10847, 1113, 10865, 5761, 5768, 2]
+// Dependencies: [5, 32, 19, 17, 7749, 1385, 1072, 1387, 21, 5141, 575, 5743, 7466, 504, 1252, 14637, 10859, 1377, 572, 10847, 1113, 10865, 5761, 5768, 2]
 // Exports: default
 
-// Module 14635 (SocialLayerStorefrontGiftPurchaseSection)
+// Module 14636 (SocialLayerStorefrontGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,8 +1,8 @@
-// Module ID: 17937
-// Function ID: 17938
+// Module ID: 17949
+// Function ID: 17950
 // Dependencies: [2]
 
-// Module 17937
+// Module 17949
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/NitroWumpusFlightRight3dIllustration-1x.png.js");

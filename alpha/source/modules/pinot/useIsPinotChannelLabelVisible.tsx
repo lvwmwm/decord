@@ -1,12 +1,12 @@
-// Module ID: 11507
-// Function ID: 11508
+// Module ID: 11508
+// Function ID: 11509
 // Name: useIsPinotChannelLabelVisible
-// Dependencies: [11508, 9200, 2]
+// Dependencies: [11509, 9200, 2]
 // Exports: useIsPinotChannelLabelVisible
 
-// Module 11507 (useIsPinotChannelLabelVisible)
+// Module 11508 (useIsPinotChannelLabelVisible)
 import PinotExperiment from "PinotExperiment" /* 9200 */;
-import useIsChannelPinotPromotable from "useIsChannelPinotPromotable" /* 11508 */;
+import useIsChannelPinotPromotable from "useIsChannelPinotPromotable" /* 11509 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/pinot/useIsPinotChannelLabelVisible.tsx");

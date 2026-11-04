@@ -1,10 +1,10 @@
-// Module ID: 14843
-// Function ID: 14844
+// Module ID: 14844
+// Function ID: 14845
 // Name: react
 // Dependencies: [19, 2]
 // Exports: useConnectRetry
 
-// Module 14843 (react)
+// Module 14844 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

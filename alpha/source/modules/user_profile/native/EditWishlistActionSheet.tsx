@@ -1,10 +1,10 @@
-// Module ID: 15219
-// Function ID: 15220
+// Module ID: 15220
+// Function ID: 15221
 // Name: EditWishlistActionSheet
-// Dependencies: [32, 19, 17, 5142, 9618, 9619, 1385, 7912, 8895, 5397, 21, 5141, 575, 1652, 5378, 504, 1627, 7462, 7487, 15038, 15198, 15126, 9625, 8903, 11600, 1113, 5400, 7201, 7505, 14663, 8168, 5872, 2]
+// Dependencies: [32, 19, 17, 5142, 9618, 9619, 1385, 7912, 8895, 5397, 21, 5141, 575, 1652, 5378, 504, 1627, 7462, 7487, 15039, 15199, 15127, 9625, 8903, 11601, 1113, 5400, 7201, 7505, 14664, 8168, 5872, 2]
 // Exports: default
 
-// Module 15219 (EditWishlistActionSheet)
+// Module 15220 (EditWishlistActionSheet)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import timing_timing from "timing/timing" /* 5378 */;
@@ -13,7 +13,7 @@ import Constants from "Constants" /* 8895 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8903 */;
 import WishlistRecord from "WishlistRecord" /* 9619 */;
 import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9625 */;
-import WishlistVisibility2 from "WishlistVisibility" /* 15198 */;
+import WishlistVisibility2 from "WishlistVisibility" /* 15199 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -119,8 +119,8 @@ export default function EditWishlistActionSheet(wishlistId) {
   }
   analyticsLocations = tmp5(analyticsLocations1, tmp4(7487).USER_PROFILE_EDIT_WISHLIST_ACTION_SHEET).analyticsLocations;
   let obj2 = { maxWidth: ACTION_SHEET_MAX_WIDTH };
-  ({ cardWidth: c5, rowWidth } = tmp4(15038)(obj2));
-  const tmp6 = tmp4(15038)(obj2);
+  ({ cardWidth: c5, rowWidth } = tmp4(15039)(obj2));
+  const tmp6 = tmp4(15039)(obj2);
   if (null != rowWidth) {
     let obj3 = { width: rowWidth };
     tmp7 = obj3;
@@ -196,7 +196,7 @@ export default function EditWishlistActionSheet(wishlistId) {
     const result = obj.removeSkuFromWishlist(wishlistId, skuId, analyticsLocations);
   }, items7);
   let obj4 = { scrollable: true, startExpanded: true, title: intl.string(tmp2(1113).t["OEgx/4"]), children: null };
-  const tmp4Result = tmp4(11600);
+  const tmp4Result = tmp4(11601);
   intl = tmp2(1113).intl;
   let obj5 = { contentContainerStyle: { paddingBottom: bottom }, children: null };
   let obj6 = { style: tmp.container, children: null };

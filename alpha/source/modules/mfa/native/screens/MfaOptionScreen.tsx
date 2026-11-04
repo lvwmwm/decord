@@ -1,17 +1,17 @@
-// Module ID: 17913
-// Function ID: 17914
+// Module ID: 17925
+// Function ID: 17926
 // Name: MfaOptionScreen
-// Dependencies: [19, 17, 21, 7257, 17914, 7428, 6162, 5761, 17915, 7090, 2]
+// Dependencies: [19, 17, 21, 7257, 17926, 7428, 6162, 5761, 17927, 7090, 2]
 // Exports: default
 
-// Module 17913 (MfaOptionScreen)
+// Module 17925 (MfaOptionScreen)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import Stack_Stack from "Stack/Stack" /* 6162 */;
 import BackgroundImageDefault from "BackgroundImage" /* 7090 */;
 import useWideAuthViewDefault from "useWideAuthView" /* 7257 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 17914 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 17926 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -80,7 +80,7 @@ export default function MFAOptionScreen(arg0) {
   const Stack3 = tmp8(6162).Stack;
   if (tmp10Result5) {
     const obj8 = { props: screenProps };
-    tmp10Result5 = tmp10(tmp(17915), obj8);
+    tmp10Result5 = tmp10(tmp(17927), obj8);
   }
   items3[1] = tmp10Result5;
   items2[2] = hasOwnProperty(Stack3, obj7);

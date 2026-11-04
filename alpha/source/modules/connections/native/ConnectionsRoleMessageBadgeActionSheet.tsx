@@ -1,10 +1,10 @@
-// Module ID: 13468
-// Function ID: 13469
+// Module ID: 13469
+// Function ID: 13470
 // Name: ConnectionsRoleMessageBadgeActionSheet
-// Dependencies: [32, 19, 17, 1399, 502, 5053, 5047, 5012, 13469, 7485, 1072, 21, 5141, 575, 1113, 7484, 7134, 5761, 5377, 12, 5732, 6709, 11786, 9347, 1187, 1411, 5148, 38, 7462, 7487, 504, 1252, 5894, 7037, 5396, 7508, 5768, 5382, 11790, 8891, 2]
+// Dependencies: [32, 19, 17, 1399, 502, 5053, 5047, 5012, 13470, 7485, 1072, 21, 5141, 575, 1113, 7484, 7134, 5761, 5377, 12, 5732, 6709, 11787, 9347, 1187, 1411, 5148, 38, 7462, 7487, 504, 1252, 5894, 7037, 5396, 7508, 5768, 5382, 11791, 8891, 2]
 // Exports: default
 
-// Module 13468 (ConnectionsRoleMessageBadgeActionSheet)
+// Module 13469 (ConnectionsRoleMessageBadgeActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -22,7 +22,7 @@ import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7134 */;
 import ConnectionsUtils from "ConnectionsUtils" /* 7484 */;
 import Constants2 from "Constants" /* 7485 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11790 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -31,7 +31,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 5053 */;
 import GuildRoleStore from "GuildRoleStore" /* 5047 */;
 import GuildStore from "GuildStore" /* 5012 */;
-import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13469 */;
+import GuildRoleConnectionEligibilityStore from "GuildRoleConnectionEligibilityStore" /* 13470 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5141 */;
@@ -158,7 +158,7 @@ class PopoutChecks {
         }
         if (includes(str)) {
           const obj2 = { style: closure_1.botTag, guildId, roleColor, size: 16 };
-          tmp10 = authStore4(tmp2(11786), obj2);
+          tmp10 = authStore4(tmp2(11787), obj2);
         } else if (null != tmp7) {
           const obj3 = { style: closure_1.botTag, verified: false };
           tmp10 = authStore4(tmp2(9347), obj3);

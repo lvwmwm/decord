@@ -1,14 +1,14 @@
-// Module ID: 13428
-// Function ID: 13429
+// Module ID: 13429
+// Function ID: 13430
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 13420, 21, 5141, 13422, 1499, 11849, 5846, 1113, 8112, 8113, 6162, 575, 5761, 2533, 13429, 13430, 13427, 6902, 5768, 2]
+// Dependencies: [5, 32, 19, 13421, 21, 5141, 13423, 1499, 11850, 5846, 1113, 8112, 8113, 6162, 575, 5761, 2533, 13430, 13431, 13428, 6902, 5768, 2]
 // Exports: AcceptStep
 
-// Module 13428 (AcceptStep)
+// Module 13429 (AcceptStep)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13420 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13421 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -158,7 +158,7 @@ export function AcceptStep(code) {
   };
   const tmp = closure_10();
   const tmp3 = dependencyMap;
-  const tmp4 = character(13422)(code);
+  const tmp4 = character(13423)(code);
   obj = code(1499);
   dependencyMap = obj.useNavigation();
   [tmp7, c3] = obj(react.useState(false), 2);
@@ -187,18 +187,18 @@ export function AcceptStep(code) {
     obj7 = { displayNoun: str };
     items = [tmp10(Text2, obj4), ];
     const obj8 = { linkedGuild };
-    items[1] = closure_8(character(13429), obj8);
+    items[1] = closure_8(character(13430), obj8);
     items1 = [tmp9(Stack3, obj3), ];
     const obj9 = { spacing: character(575).space.PX_24, children: items2 };
     const Stack = tmp5(6162).Stack;
     const obj10 = { variant: "heading-lg/semibold", children: intl.string(character(2533).yFqGy8) };
     const Text = tmp5(5761).Text;
     intl = tmp5(1113).intl;
-    items2 = [tmp10(Text, obj10), tmp10(tmp2(13430), {})];
+    items2 = [tmp10(Text, obj10), tmp10(tmp2(13431), {})];
     items1[1] = closure_9(Stack, obj9);
     items3 = [tmp10(ModalContent, obj6), ];
     const obj11 = { children: closure_9(ButtonGroup, obj12) };
-    const ModalFooter = tmp5(13427).ModalFooter;
+    const ModalFooter = tmp5(13428).ModalFooter;
     obj12 = { style: tmp.buttonGroup, children: items4 };
     ButtonGroup = tmp5(6902).ButtonGroup;
     const obj13 = {

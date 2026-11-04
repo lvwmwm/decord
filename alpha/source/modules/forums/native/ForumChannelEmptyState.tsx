@@ -1,9 +1,9 @@
-// Module ID: 14590
-// Function ID: 14591
+// Module ID: 14591
+// Function ID: 14592
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 5141, 5148, 1627, 5851, 14591, 14592, 5761, 1113, 2]
+// Dependencies: [19, 17, 21, 5141, 5148, 1627, 5851, 14592, 14593, 5761, 1113, 2]
 
-// Module 14590 (ForumChannelEmptyState)
+// Module 14591 (ForumChannelEmptyState)
 import react_native from "react-native" /* 17 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import shared from "shared" /* 5148 */;
@@ -41,9 +41,9 @@ const memoResult = react.memo(function ForumChannelEmptyState(topViewHeight) {
   const tmp6 = hasOwnProperty;
   const tmp7 = View;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(14591);
-  } else {
     tmp4Result = tmp4(14592);
+  } else {
+    tmp4Result = tmp4(14593);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };

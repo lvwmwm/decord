@@ -1,10 +1,10 @@
-// Module ID: 11508
-// Function ID: 11509
+// Module ID: 11509
+// Function ID: 11510
 // Name: useIsChannelPinotPromotable
 // Dependencies: [4994, 4990, 5047, 5012, 1072, 9200, 504, 9198, 2]
 // Exports: useIsChannelPinotPromotable, usePinotPromotableChannelId
 
-// Module 11508 (useIsChannelPinotPromotable)
+// Module 11509 (useIsChannelPinotPromotable)
 import Constants from "Constants" /* 1072 */;
 import ChannelRecord from "ChannelRecord" /* 4994 */;
 import PinotEligibility from "PinotEligibility" /* 9198 */;

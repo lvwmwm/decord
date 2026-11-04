@@ -1,10 +1,10 @@
-// Module ID: 18733
-// Function ID: 18734
+// Module ID: 18747
+// Function ID: 18748
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7021, 21, 5141, 575, 504, 18724, 1187, 9656, 1357, 7143, 7195, 10946, 2]
+// Dependencies: [19, 17, 7021, 21, 5141, 575, 504, 18738, 1187, 9656, 1357, 7143, 7195, 10946, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 18733 (BackIconWithBadge)
+// Module 18747 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7143 */;
@@ -46,7 +46,7 @@ function IconWithBadge(includeNotificationsCount) {
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(18724)().value;
+  const value = memo(18738)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;

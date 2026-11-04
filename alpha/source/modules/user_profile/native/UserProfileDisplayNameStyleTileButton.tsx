@@ -1,10 +1,10 @@
-// Module ID: 16781
-// Function ID: 16782
+// Module ID: 16793
+// Function ID: 16794
 // Name: UserProfileDisplayNameStyleTileButton
-// Dependencies: [19, 17, 5142, 8872, 21, 5141, 575, 504, 8878, 4966, 7121, 1113, 16782, 10950, 10951, 7125, 2]
+// Dependencies: [19, 17, 5142, 8872, 21, 5141, 575, 504, 8878, 4966, 7121, 1113, 16794, 10950, 10951, 7125, 2]
 // Exports: default
 
-// Module 16781 (UserProfileDisplayNameStyleTileButton)
+// Module 16793 (UserProfileDisplayNameStyleTileButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8878 */;
@@ -60,7 +60,7 @@ export default function UserProfileDisplayNameStyleTileButton(user) {
   const PressableHighlight = user(7121).PressableHighlight;
   intl = user(1113).intl;
   obj4 = { text: obj5.getDisplayNameStyleAccessibleValue(displayNameStyles) };
-  obj5 = user(16782);
+  obj5 = user(16794);
   intl2 = user(1113).intl;
   const obj6 = { style: tmp.previewContainer, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const obj7 = { userId: user.id, userName: displayName, pendingDisplayNameStyles: displayNameStyles, ignoreDisabledStylesSetting: true, effectDisplayType: null, variant: "heading-xl/semibold", defaultColor: "text-muted", lineClamp: 1 };

@@ -1,10 +1,10 @@
-// Module ID: 13977
-// Function ID: 13978
+// Module ID: 13978
+// Function ID: 13979
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 4990, 7841, 5012, 6196, 1072, 21, 5141, 575, 10386, 8356, 8371, 5382, 9931, 9928, 11, 8352, 9930, 8342, 1282, 13978, 7776, 8828, 6094, 1113, 504, 7462, 8344, 8360, 5396, 13979, 5761, 5769, 2]
+// Dependencies: [32, 5, 19, 17, 4990, 7841, 5012, 6196, 1072, 21, 5141, 575, 10386, 8356, 8371, 5382, 9931, 9928, 11, 8352, 9930, 8342, 1282, 13979, 7776, 8828, 6094, 1113, 504, 7462, 8344, 8360, 5396, 13980, 5761, 5769, 2]
 // Exports: default
 
-// Module 13977 (AddMediaToOriginalForumPostActionSheet)
+// Module 13978 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -92,7 +92,7 @@ let obj = function _upload2() {
               anyErrorMessage = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {

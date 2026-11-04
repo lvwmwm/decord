@@ -1,10 +1,10 @@
-// Module ID: 14481
-// Function ID: 14482
+// Module ID: 14482
+// Function ID: 14483
 // Name: ContactSyncSuggestions
-// Dependencies: [32, 19, 17, 1072, 14482, 21, 5141, 575, 5722, 5776, 5761, 5195, 1411, 7115, 1187, 1113, 5732, 5138, 11, 8317, 7430, 5723, 1092, 5768, 1252, 2]
+// Dependencies: [32, 19, 17, 1072, 14483, 21, 5141, 575, 5722, 5776, 5761, 5195, 1411, 7115, 1187, 1113, 5732, 5138, 11, 8317, 7430, 5723, 1092, 5768, 1252, 2]
 // Exports: default
 
-// Module 14481 (ContactSyncSuggestions)
+// Module 14482 (ContactSyncSuggestions)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,7 +16,7 @@ import UserUtils from "UserUtils" /* 5195 */;
 import NavigatorConstants from "NavigatorConstants" /* 5722 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import _mod8317 from "module_8317" /* 8317 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 14482 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 14483 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;

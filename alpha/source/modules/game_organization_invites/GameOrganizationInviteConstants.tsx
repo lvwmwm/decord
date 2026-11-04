@@ -1,9 +1,9 @@
-// Module ID: 11551
-// Function ID: 11552
+// Module ID: 11552
+// Function ID: 11553
 // Name: GameOrganizationInviteConstants
 // Dependencies: [2]
 
-// Module 11551 (GameOrganizationInviteConstants)
+// Module 11552 (GameOrganizationInviteConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/GameOrganizationInviteConstants.tsx");

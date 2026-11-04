@@ -1,10 +1,10 @@
-// Module ID: 15671
-// Function ID: 15672
+// Module ID: 15672
+// Function ID: 15673
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2191, 7737, 15658, 1387, 1083, 21, 5141, 6858, 6913, 7732, 504, 2024, 6165, 5851, 15672, 1187, 1113, 2176, 5768, 2]
+// Dependencies: [32, 19, 17, 2191, 7737, 15659, 1387, 1083, 21, 5141, 6858, 6913, 7732, 504, 2024, 6165, 5851, 15673, 1187, 1113, 2176, 5768, 2]
 // Exports: default
 
-// Module 15671 (PremiumPlanSelectYearlyUpsellModal)
+// Module 15672 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
@@ -12,8 +12,8 @@ import FastImageDefault from "FastImage" /* 5851 */;
 import AlertDefault from "Alert" /* 6165 */;
 import TextStylesDefault from "TextStyles" /* 6858 */;
 import LegacyTokens from "LegacyTokens" /* 6913 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15658 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15672 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 15659 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15673 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;

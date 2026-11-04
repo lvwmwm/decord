@@ -1,9 +1,9 @@
-// Module ID: 14282
-// Function ID: 14283
+// Module ID: 14283
+// Function ID: 14284
 // Name: GuildPowerupMocks
 // Dependencies: [5354, 2]
 
-// Module 14282 (GuildPowerupMocks)
+// Module 14283 (GuildPowerupMocks)
 import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5354 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 14045
-// Function ID: 14046
+// Module ID: 14046
+// Function ID: 14047
 // Name: VoicePanelControlsUtils
-// Dependencies: [11410, 11413, 11408, 2]
+// Dependencies: [11411, 11414, 11409, 2]
 // Exports: getControlsDefaultWidth, getControlsDrawerOpenWidth
 
-// Module 14045 (VoicePanelControlsUtils)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11408 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11410 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11413 */;
+// Module 14046 (VoicePanelControlsUtils)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11409 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11414 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,10 +1,10 @@
-// Module ID: 16022
-// Function ID: 16023
+// Module ID: 16035
+// Function ID: 16036
 // Name: useGameOrganizationInviteSuggestions
-// Dependencies: [5, 32, 19, 9278, 5083, 1385, 9265, 504, 11815, 9295, 2]
+// Dependencies: [5, 32, 19, 9278, 5083, 1385, 9265, 504, 11816, 9295, 2]
 // Exports: default
 
-// Module 16022 (useGameOrganizationInviteSuggestions)
+// Module 16035 (useGameOrganizationInviteSuggestions)
 import InstantInviteUtils from "InstantInviteUtils" /* 9265 */;
 import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 9295 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

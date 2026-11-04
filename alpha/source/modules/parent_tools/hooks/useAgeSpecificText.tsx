@@ -1,10 +1,10 @@
-// Module ID: 13582
-// Function ID: 13583
+// Module ID: 13583
+// Function ID: 13584
 // Name: useAgeSpecificText
 // Dependencies: [8511, 2]
 // Exports: useAgeSpecificText
 
-// Module 13582 (useAgeSpecificText)
+// Module 13583 (useAgeSpecificText)
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8511 */;
 import size from "module_2" /* 2 */;
 

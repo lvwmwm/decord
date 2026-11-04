@@ -1,27 +1,27 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14524
+// Function ID: 14525
 // Name: ChairIllocon
-// Dependencies: [19, 21, 14524, 14525, 14526, 7210, 5851, 2]
+// Dependencies: [19, 21, 14525, 14526, 14527, 7210, 5851, 2]
 // Exports: ChairIllocon
 
-// Module 14523 (ChairIllocon)
+// Module 14524 (ChairIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 5851 */;
 import react_native from "react-native" /* 7210 */;
-import _modDef14524 from "module_14524" /* 14524 */;
 import _modDef14525 from "module_14525" /* 14525 */;
 import _modDef14526 from "module_14526" /* 14526 */;
+import _modDef14527 from "module_14527" /* 14527 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14524 };
+let obj2 = { uri: _modDef14525 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef14525 };
-({ uri: _modDef14525 });
-obj[3] = { uri: _modDef14526 };
+obj[2] = { uri: _modDef14526 };
 ({ uri: _modDef14526 });
+obj[3] = { uri: _modDef14527 };
+({ uri: _modDef14527 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ChairIllocon.native.tsx");
 

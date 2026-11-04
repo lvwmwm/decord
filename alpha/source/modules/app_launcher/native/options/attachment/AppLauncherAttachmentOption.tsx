@@ -1,10 +1,10 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 12726
+// Function ID: 12727
 // Name: AppLauncherAttachmentOption
-// Dependencies: [19, 17, 7841, 8348, 21, 5141, 575, 11298, 11249, 2121, 12707, 504, 9928, 12726, 1113, 8351, 12727, 2]
+// Dependencies: [19, 17, 7841, 8348, 21, 5141, 575, 11298, 11249, 2121, 12708, 504, 9928, 12727, 1113, 8351, 12728, 2]
 // Exports: default
 
-// Module 12725 (AppLauncherAttachmentOption)
+// Module 12726 (AppLauncherAttachmentOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

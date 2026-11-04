@@ -1,10 +1,10 @@
-// Module ID: 13225
-// Function ID: 13226
+// Module ID: 13226
+// Function ID: 13227
 // Name: ConjureProjectsSheet
-// Dependencies: [32, 19, 17, 5012, 11045, 21, 5141, 575, 5761, 13226, 504, 13227, 6211, 1113, 3995, 7116, 7098, 12322, 12319, 7095, 11157, 13228, 7201, 13203, 13231, 13204, 5768, 11054, 1627, 9824, 5729, 7502, 7457, 8168, 11161, 5400, 7355, 2]
+// Dependencies: [32, 19, 17, 5012, 11045, 21, 5141, 575, 5761, 13227, 504, 13228, 6211, 1113, 3995, 7116, 7098, 12323, 12320, 7095, 11157, 13229, 7201, 13204, 13232, 13205, 5768, 11054, 1627, 9824, 5729, 7502, 7457, 8168, 11161, 5400, 7355, 2]
 // Exports: default
 
-// Module 13225 (ConjureProjectsSheet)
+// Module 13226 (ConjureProjectsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -21,10 +21,10 @@ import useConjureEntryPointPlacementDefault from "useConjureEntryPointPlacement"
 import ConjureActionCreators from "ConjureActionCreators" /* 11054 */;
 import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 11157 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11161 */;
-import ConjureProjectIcon from "ConjureProjectIcon" /* 12319 */;
-import useConjureServerProjects from "useConjureServerProjects" /* 13203 */;
-import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 13228 */;
-import useConjureOwnProjectListStateDefault from "useConjureOwnProjectListState" /* 13231 */;
+import ConjureProjectIcon from "ConjureProjectIcon" /* 12320 */;
+import useConjureServerProjects from "useConjureServerProjects" /* 13204 */;
+import confirmConjureYouBarPinDefault from "confirmConjureYouBarPin" /* 13229 */;
+import useConjureOwnProjectListStateDefault from "useConjureOwnProjectListState" /* 13232 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5012 */;
@@ -138,7 +138,7 @@ function ProjectList(arg0) {
   let conjureSharedWithMeProjects;
   const tmp = closure_11(0);
   const tmp4 = useConjureOwnProjectListStateDefault(query);
-  let obj = conjureSharedWithMeProjects(13204);
+  let obj = conjureSharedWithMeProjects(13205);
   conjureSharedWithMeProjects = obj.useConjureSharedWithMeProjects();
   const trimmed = query.trim();
   let toLocaleLowerCaseResult = trimmed.toLocaleLowerCase();
@@ -242,7 +242,7 @@ let closure_13 = react.memo(function ProjectRow(project) {
   let tmp25Result8;
   project = project.project;
   const tmp = closure_11(0);
-  const obj = project(13226);
+  const obj = project(13227);
   const conjureHomeProjectState = obj.useConjureHomeProjectState(project.id);
   const items = [ConjurePublishStatusStore];
   const items1 = [project.id];
@@ -258,11 +258,11 @@ let closure_13 = react.memo(function ProjectRow(project) {
     }
     return publishState;
   }, items1);
-  const obj3 = project(13226);
+  const obj3 = project(13227);
   const result = obj3.conjureHomeProjectShowsDraft(conjureHomeProjectState, stateFromStores);
-  const obj4 = project(13226);
+  const obj4 = project(13227);
   const result1 = obj4.conjureProjectLastActivityTime(project);
-  const obj5 = project(13227);
+  const obj5 = project(13228);
   const conjureProjectShareTargetDetails = obj5.useConjureProjectShareTargetDetails(project);
   let tmp11Result = null;
   if (null != result1) {
@@ -289,7 +289,7 @@ let closure_13 = react.memo(function ProjectRow(project) {
     }
     if (label == null) {
       let stringResult2 = null;
-      const tmp2Result = project(13227);
+      const tmp2Result = project(13228);
       if (tmp2Result.isConjureProjectWithoutServer(project)) {
         const intl2 = tmp2(1113).intl;
         stringResult2 = intl2.string(_modDef3995.poYQxw);
@@ -332,7 +332,7 @@ let closure_13 = react.memo(function ProjectRow(project) {
         } else {
           const obj11 = { style: tmp.userIconWrapper, children: closure_8(UserIcon, obj12) };
           obj12 = { size: "xxs", color: nativeDefault.colors.TEXT_SUBTLE };
-          UserIcon = tmp2(12322).UserIcon;
+          UserIcon = tmp2(12323).UserIcon;
           tmp25Result5 = tmp25(tmp44, obj11);
         }
         items4[1] = tmp25Result5;

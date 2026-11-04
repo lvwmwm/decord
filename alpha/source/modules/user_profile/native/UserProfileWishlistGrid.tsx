@@ -1,10 +1,10 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15215
+// Function ID: 15216
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 32, 19, 17, 7860, 14665, 9618, 9621, 9619, 1385, 7031, 7912, 8895, 1072, 1074, 1387, 21, 3, 5141, 575, 5207, 5148, 5761, 1113, 15038, 8902, 7462, 10791, 10089, 504, 15198, 8886, 15126, 15215, 15218, 5323, 5846, 5382, 11826, 2176, 7733, 6094, 10736, 7487, 1357, 10848, 7549, 10847, 8891, 2188, 7859, 14638, 7643, 4954, 8888, 15219, 2123, 5869, 5768, 11672, 8168, 10410, 14663, 7923, 2]
+// Dependencies: [5, 32, 19, 17, 7860, 14666, 9618, 9621, 9619, 1385, 7031, 7912, 8895, 1072, 1074, 1387, 21, 3, 5141, 575, 5207, 5148, 5761, 1113, 15039, 8902, 7462, 10792, 10089, 504, 15199, 8886, 15127, 15216, 15219, 5323, 5846, 5382, 11827, 2176, 7733, 6094, 10736, 7487, 1357, 10848, 7549, 10847, 8891, 2188, 7859, 14639, 7643, 4954, 8888, 15220, 2123, 5869, 5768, 11673, 8168, 10410, 14664, 7923, 2]
 // Exports: default
 
-// Module 15214 (UserProfileWishlistGrid)
+// Module 15215 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -22,7 +22,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7860 */;
-import SentGiftsStore from "SentGiftsStore" /* 14665 */;
+import SentGiftsStore from "SentGiftsStore" /* 14666 */;
 import WishlistStore from "WishlistStore" /* 9618 */;
 import UserStore from "UserStore" /* 1385 */;
 import SKUStore from "SKUStore" /* 7031 */;
@@ -125,7 +125,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
   let stringResult;
   let tmp31;
   let tmp5;
-  const f108524 = () => {
+  const f108655 = () => {
     set = new Set();
     return set;
   };
@@ -284,10 +284,10 @@ export default function UserProfileWishlistGrid(wishlistId) {
     userId1 = stateFromStores.userId;
   }
   closure_14 = tmp2Result3({ ownerId: userId1, wishlistId, isVisible });
-  [c15, c16] = analyticsLocations(obj12.useState(f108524), 2);
+  [c15, c16] = analyticsLocations(obj12.useState(f108655), 2);
   let obj4 = { wishlistId, onAction: trackUserProfileWishlistAction, productLines: tmp31, isVisible };
   tmp31 = null;
-  analyticsLocations(obj12.useState(f108524), 2);
+  analyticsLocations(obj12.useState(f108655), 2);
   const tmp2Result4 = tmp2(tmp3[34]);
   if (null != stateFromStores) {
     tmp31 = memo1(stateFromStores);
@@ -646,7 +646,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     tmp(obj);
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { wishlistId: tmp2, analyticsContext: context, analyticsLocations };
-    obj2.openLazy(asyncRequire(15219, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(15220, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
   }, items14);
   const callback1 = obj12.useCallback(() => {
     let items;

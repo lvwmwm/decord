@@ -1,10 +1,10 @@
-// Module ID: 18421
-// Function ID: 18422
+// Module ID: 18435
+// Function ID: 18436
 // Name: VoiceUser
-// Dependencies: [19, 4989, 6849, 502, 2135, 5900, 5813, 21, 504, 18422, 2]
+// Dependencies: [19, 4989, 6849, 502, 2135, 5900, 5813, 21, 504, 18436, 2]
 // Exports: default
 
-// Module 18421 (VoiceUser)
+// Module 18435 (VoiceUser)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;

@@ -1,15 +1,15 @@
-// Module ID: 13932
-// Function ID: 13933
+// Module ID: 13933
+// Function ID: 13934
 // Name: createChannelStream
-// Dependencies: [11557, 7963, 8533, 8519, 1072, 11, 10298, 13933, 1113, 4963, 8574, 11866, 7583, 13936, 2]
+// Dependencies: [11558, 7963, 8533, 8519, 1072, 11, 10298, 13934, 1113, 4963, 8574, 11867, 7583, 13937, 2]
 // Exports: default
 
-// Module 13932 (createChannelStream)
+// Module 13933 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import isNewMessageGroupDefault from "isNewMessageGroup" /* 10298 */;
-import tryInjectMessage from "tryInjectMessage" /* 13933 */;
-import PushFeedbackStore_mod from "PushFeedbackStore" /* 11557 */;
+import tryInjectMessage from "tryInjectMessage" /* 13934 */;
+import PushFeedbackStore_mod from "PushFeedbackStore" /* 11558 */;
 import EditMessageStore from "EditMessageStore" /* 7963 */;
 import UploadStore from "UploadStore" /* 8533 */;
 import RowGeneratorConstants from "RowGeneratorConstants" /* 8519 */;
@@ -151,7 +151,7 @@ export default function createChannelStream(forceRender) {
     let isSystemDMResult;
     let obj22;
     let pushType;
-    let str2;
+    let stringResult;
     let tmp162;
     let tmp8;
     let tmp85;
@@ -397,9 +397,9 @@ export default function createChannelStream(forceRender) {
     }
     if (tmp20) {
       const push6 = items.push;
-      const obj23 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: str2.toUpperCase() };
+      const obj23 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: stringResult.toLocaleUpperCase(require("intl").intl.currentLocale) };
       const intl5 = require("intl").intl;
-      str2 = intl5.string(require("intl").t.q7hm3m);
+      stringResult = intl5.string(require("intl").t.q7hm3m);
       push6(obj23);
     }
     if (tmp19) {

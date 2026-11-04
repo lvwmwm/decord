@@ -1,16 +1,16 @@
-// Module ID: 17148
-// Function ID: 17149
+// Module ID: 17160
+// Function ID: 17161
 // Name: OrbChallengeListItem
-// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 15860, 1113, 2301, 14904, 9857, 5768, 7514, 5761, 9679, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5141, 575, 15873, 1113, 2301, 14905, 9857, 5768, 7514, 5761, 9679, 2]
 // Exports: OrbChallengeListItem
 
-// Module 17148 (OrbChallengeListItem)
+// Module 17160 (OrbChallengeListItem)
 import nativeDefault from "native" /* 575 */;
 import _modDef2301 from "module_2301" /* 2301 */;
 import OrbsIcon2 from "OrbsIcon" /* 9679 */;
 import _modDef9857 from "module_9857" /* 9857 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14904 */;
-import OrbChallengeTypes from "OrbChallengeTypes" /* 15860 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 14905 */;
+import OrbChallengeTypes from "OrbChallengeTypes" /* 15873 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

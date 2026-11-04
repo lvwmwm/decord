@@ -1,24 +1,24 @@
-// Module ID: 19849
-// Function ID: 19850
+// Module ID: 19863
+// Function ID: 19864
 // Name: NotificationsManager
-// Dependencies: [5, 5075, 502, 4990, 6910, 14190, 1072, 8080, 14191, 5382, 19850, 2123, 1260, 2171, 8103, 14193, 11196, 1252, 1377, 7423, 17710, 1092, 2]
+// Dependencies: [5, 5075, 502, 4990, 6910, 14191, 1072, 8080, 14192, 5382, 19864, 2123, 1260, 2171, 8103, 14194, 11196, 1252, 1377, 7423, 17722, 1092, 2]
 
-// Module 19849 (NotificationsManager)
+// Module 19863 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 8080 */;
 import react_nativeDefault from "react-native" /* 8103 */;
-import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 14190 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14193 */;
+import PushNotificationPermissionStore2 from "PushNotificationPermissionStore" /* 14191 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14194 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 5075 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14191 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14192 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
 import size from "module_2" /* 2 */;
 
@@ -180,7 +180,7 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(19850, dependencyMap.paths);
+    const tmp3 = asyncRequire(19864, dependencyMap.paths);
     openLazy(tmp3, authStore3, obj2);
   }, arg2);
 }
@@ -392,7 +392,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 ({ message: c0, optimistic: c1, isPushNotification: c2, sendMessageOptions: c3 } = closure_0);
                 c3 = 1;
                 c4 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
             } else {
               let tmp5;
@@ -485,7 +485,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
                 invite = invite.invite;
                 c4 = 1;
                 c5 = 1;
-                return { value: "flexDirection", done: true };
+                return { value: "flexDirection", done: null };
               }
             } else {
               let tmp5;
@@ -561,63 +561,97 @@ class NotificationsManager extends AutomaticLifecycleManager {
       return closure_0(...arguments);
     };
     _asyncToGenerator(async (arg0) => {
-      let closure_1;
-      let closure_2;
       let constants2;
       let constants3;
       let relationship = arg0;
       let c3 = 0;
       let c4 = 0;
       const iter = (async (arg0, value) => {
-        let tmp5;
-        if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            tmp5 = relationship.type === constants2.PENDING_OUTGOING;
-            if (tmp5) {
-              c3 = 2;
-              c4 = 1;
-              const obj5 = { value: closure_1_18(constants.FRIEND_REQUEST_SENT), done: false };
-              return obj5;
-            }
-          }
-        } else if (2 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            tmp5 = value;
-            if (!tmp5) {
-              c3 = 3;
-              c4 = 1;
-              const obj7 = { value: closure_1_20(constants.FRIEND_REQUEST_SENT), done: false };
-              return obj7;
-            }
-          }
-        } else if (arg0 === 1) {
+        if (c4 === 2) {
           c4 = 3;
-          throw value;
-        } else {
-          tmp5 = value;
-          if (arg0 === 2) {
-            c4 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
             return { value, done: true };
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c4 = 2;
+            if (0 === c3) {
+              if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c4 = 3;
+                return { value, done: true };
+              } else {
+                closure_2 = tmp4;
+                closure_1 = tmp;
+                relationship = undefined;
+                relationship = relationship.relationship;
+                c3 = 1;
+                c4 = 1;
+                return { value: "flexDirection", done: null };
+              }
+            } else {
+              let tmp5;
+              if (1 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  return { value, done: true };
+                } else {
+                  tmp5 = relationship.type === constants2.PENDING_OUTGOING;
+                  if (tmp5) {
+                    c3 = 2;
+                    c4 = 1;
+                    const obj5 = { value: closure_1_18(constants.FRIEND_REQUEST_SENT), done: false };
+                    return obj5;
+                  }
+                }
+              } else if (2 === c3) {
+                if (arg0 === 1) {
+                  c4 = 3;
+                  throw value;
+                } else if (arg0 === 2) {
+                  c4 = 3;
+                  return { value, done: true };
+                } else {
+                  tmp5 = value;
+                  if (!tmp5) {
+                    c3 = 3;
+                    c4 = 1;
+                    const obj7 = { value: closure_1_20(constants.FRIEND_REQUEST_SENT), done: false };
+                    return obj7;
+                  }
+                }
+              } else if (arg0 === 1) {
+                c4 = 3;
+                throw value;
+              } else {
+                tmp5 = value;
+                if (arg0 === 2) {
+                  c4 = 3;
+                  return { value, done: true };
+                }
+              }
+              if (tmp5) {
+                closure_1_23(constants.FRIEND_REQUEST_SENT, constants3.FRIEND_REQUEST_SENT, 100);
+              }
+              c4 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp18) {
+            c4 = 3;
+            throw tmp18;
           }
         }
-        if (tmp5) {
-          closure_1_23(constants.FRIEND_REQUEST_SENT, constants3.FRIEND_REQUEST_SENT, 100);
-        }
-        await "HermesInternal";
-        relationship = relationship.relationship;
-        return "flexDirection";
       })();
       iter.next();
       return iter;
@@ -659,7 +693,7 @@ class NotificationsManager extends AutomaticLifecycleManager {
               closure_2 = undefined;
               c3 = 1;
               c4 = 1;
-              return { value: "flexDirection", done: true };
+              return { value: "flexDirection", done: null };
             }
           } else {
             if (1 === c3) {

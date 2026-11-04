@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["_state", "_version"];
 const Store = Store2.Store;
-let closure_6 = { _state: "PX_8", _version: "__closure" };
+let closure_6 = { _state: "Object", _version: "Array" };
 let c7 = null;
 class PersistedStore extends Store {
   constructor(arg0, arg1, arg2) {
@@ -229,7 +229,7 @@ class PersistedStore extends Store {
       if (PersistedStore.shouldClear(c7, EmojiStore)) {
         const Storage2 = Storage3.Storage;
         Storage2.remove(EmojiStore);
-        return { state: "flexDirection", requiresPersist: true };
+        return { state: "flexDirection", requiresPersist: null };
       }
     }
     let value = null;

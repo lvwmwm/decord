@@ -1,9 +1,9 @@
-// Module ID: 11454
-// Function ID: 11455
+// Module ID: 11455
+// Function ID: 11456
 // Name: LikelyAtoWarningBanner
-// Dependencies: [19, 10982, 11455, 1072, 1082, 21, 5141, 575, 11456, 11457, 6879, 11258, 7636, 5843, 11458, 1113, 11461, 2123, 5761, 11472, 2]
+// Dependencies: [19, 10982, 11456, 1072, 1082, 21, 5141, 575, 11457, 11458, 6879, 11258, 7636, 5843, 11459, 1113, 11462, 2123, 5761, 11473, 2]
 
-// Module 11454 (LikelyAtoWarningBanner)
+// Module 11455 (LikelyAtoWarningBanner)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
@@ -15,11 +15,11 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
 import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7636 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10982 */;
 import MuteSettingsUtils from "MuteSettingsUtils" /* 11258 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11456 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11457 */;
-import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 11472 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11457 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11458 */;
+import LikelyAtoMoreTipsModalActionItemsDefault from "LikelyAtoMoreTipsModalActionItems" /* 11473 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 11455 */;
+import Constants from "Constants" /* 11456 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
@@ -113,7 +113,7 @@ class LikelyAtoWarningBanner {
           learnMore: authStore(Text, obj3)
         };
         ModalActionCreatorsDefault;
-        const tmp2 = asyncRequire(11461, dependencyMap.paths);
+        const tmp2 = asyncRequire(11462, dependencyMap.paths);
         intl = intl5.intl;
         obj2 = {
           senderId,

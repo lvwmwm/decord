@@ -1,66 +1,30 @@
 // Module ID: 13123
 // Function ID: 13124
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055, 13051]
 
 // Module 13123 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import _mod13051 from "module_13051" /* 13051 */;
+import tokenize from "tokenize" /* 13055 */;
 
-let items;
 let obj2;
-const Ident = tokenize.TYPE.Ident;
-const Function = tokenize.TYPE.Function;
-const Colon = tokenize.TYPE.Colon;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const Percentage = tokenize.TYPE.Percentage;
 let obj = {
-  name: "PseudoClassSelector",
+  name: "Percentage",
   structure: obj2,
   parse() {
-    let consumeResult;
-    let tmp4;
-    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(Colon);
-    if (this.scanner.tokenType === Function) {
-      let list;
-      const str = self.consumeFunctionName();
-      const formatted = str.toLowerCase();
-      const pseudo = self.pseudo;
-      if (pseudo.hasOwnProperty(formatted)) {
-        const scanner = self.scanner;
-        scanner.skipSC();
-        const scanner2 = self.scanner;
-        const obj = self.pseudo[formatted];
-        const callResult = obj.call(self);
-        scanner2.skipSC();
-        list = callResult;
-      } else {
-        list = self.createList();
-        list.push(self.Raw(self.scanner.tokenIndex, null, false));
-      }
-      self.eat(RightParenthesis);
-      tmp4 = list;
-      consumeResult = str;
-    } else {
-      consumeResult = self.consume(Ident);
-      tmp4 = null;
-    }
-    const element = { type: "PseudoClassSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp4 };
-    return element;
+    const obj = _mod13051;
+    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
+    this.eat(Percentage);
+    const obj2 = { type: "Percentage", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult) };
+    return obj2;
   },
-  generate(name) {
-    const self = this;
-    this.chunk(":");
-    this.chunk(name.name);
-    if (null !== name.children) {
-      self.chunk("(");
-      self.children(name);
-      self.chunk(")");
-    }
-  },
-  walkContext: "function"
+  generate(value) {
+    this.chunk(value.value);
+    this.chunk("%");
+  }
 };
-obj2 = { name: String, children: items };
-items = [["Raw"], null];
+obj2 = { value: String };
 
 export default obj;

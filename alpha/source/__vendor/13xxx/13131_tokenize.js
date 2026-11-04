@@ -1,56 +1,66 @@
 // Module ID: 13131
 // Function ID: 13132
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055]
 
 // Module 13131 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import tokenize from "tokenize" /* 13055 */;
 
+let items;
 let obj2;
-function eatIdentifierOrAsterisk() {
-  const self = this;
-  let tmp = this.scanner.tokenType !== Ident;
-  if (tmp) {
-    const scanner = self.scanner;
-    tmp = false === scanner.isDelim(42);
-  }
-  if (tmp) {
-    self.error("Identifier or asterisk is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
+function consumeRaw(arg0) {
+  return this.Raw(arg0, null, false);
 }
-const Ident = tokenize.TYPE.Ident;
-let obj = {
-  name: "TypeSelector",
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const Comment = tokenize.TYPE.Comment;
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const CDO = tokenize.TYPE.CDO;
+const CDC = tokenize.TYPE.CDC;
+const obj = {
+  name: "StyleSheet",
   structure: obj2,
   parse() {
-    let scanner3;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const scanner = this.scanner;
-    if (scanner.isDelim(124)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      eatIdentifierOrAsterisk.call(self);
-    } else {
-      eatIdentifierOrAsterisk.call(self);
-      const scanner2 = self.scanner;
-      const obj = eatIdentifierOrAsterisk;
-      if (scanner2.isDelim(124)) {
-        const iter = self.scanner;
-        iter.next();
-        obj.call(self);
-      }
+    const list = this.createList();
+    if (!this.scanner.eof) {
+      do {
+        let tokenType = self.scanner.tokenType;
+        if (WhiteSpace === tokenType) {
+          let iter2 = self.scanner;
+          let nextResult = iter2.next();
+        } else {
+          let CommentResult;
+          if (Comment === tokenType) {
+            let source = self.scanner.source;
+            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
+              let iter = self.scanner;
+              let nextResult1 = iter.next();
+            } else {
+              CommentResult = self.Comment();
+            }
+          } else if (CDO === tokenType) {
+            CommentResult = self.CDO();
+          } else if (CDC === tokenType) {
+            CommentResult = self.CDC();
+          } else if (AtKeyword === tokenType) {
+            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
+          } else {
+            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
+          }
+          let arr = list.push(CommentResult);
+        }
+      } while (!self.scanner.eof);
     }
-    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-    scanner3 = self.scanner;
-    return obj2;
+    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
+    return element;
   },
-  generate(name) {
-    this.chunk(name.name);
-  }
+  generate(arg0) {
+    this.children(arg0);
+  },
+  walkContext: "stylesheet"
 };
-obj2 = { name: String };
+obj2 = { children: items };
+items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
 
 export default obj;

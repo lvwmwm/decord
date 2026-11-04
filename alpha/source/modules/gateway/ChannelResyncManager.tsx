@@ -1,9 +1,9 @@
-// Module ID: 19683
-// Function ID: 19684
+// Module ID: 19697
+// Function ID: 19698
 // Name: ChannelResyncManager
-// Dependencies: [5, 502, 4990, 6909, 5012, 6703, 1072, 4997, 3, 1089, 7423, 1252, 572, 7934, 15791, 1398, 1266, 2]
+// Dependencies: [5, 502, 4990, 6909, 5012, 6703, 1072, 4997, 3, 1089, 7423, 1252, 572, 7934, 15792, 1398, 1266, 2]
 
-// Module 19683 (ChannelResyncManager)
+// Module 19697 (ChannelResyncManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -11,7 +11,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
 import ChannelConstants from "ChannelConstants" /* 4997 */;
 import GuildsRequiringChannelSyncDefault from "GuildsRequiringChannelSync" /* 7934 */;
-import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15791 */;
+import PrivateChannelHidingExperiment from "PrivateChannelHidingExperiment" /* 15792 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4990 */;

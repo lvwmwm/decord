@@ -1,10 +1,10 @@
-// Module ID: 12195
-// Function ID: 12196
+// Module ID: 12196
+// Function ID: 12197
 // Name: FocusedExpandedControls
-// Dependencies: [19, 17, 6849, 502, 5902, 21, 5141, 575, 1187, 5851, 12196, 12197, 8317, 504, 12198, 1113, 12145, 1377, 9366, 9373, 12116, 12199, 12166, 12200, 12201, 2]
+// Dependencies: [19, 17, 6849, 502, 5902, 21, 5141, 575, 1187, 5851, 12197, 12198, 8317, 504, 12199, 1113, 12146, 1377, 9366, 9373, 12117, 12200, 12167, 12201, 12202, 2]
 // Exports: AudioRouteButton, DeafenButton, ScreenshareButton, StreamVolumeItem
 
-// Module 12195 (FocusedExpandedControls)
+// Module 12196 (FocusedExpandedControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,13 +14,13 @@ import Constants from "Constants" /* 5902 */;
 import _mod8317 from "module_8317" /* 8317 */;
 import CallsUtils from "CallsUtils" /* 9366 */;
 import showAudioOutputSelector from "showAudioOutputSelector" /* 9373 */;
-import useScreenshareUtilsDefault from "useScreenshareUtils" /* 12116 */;
-import VolumeSliderDefault from "VolumeSlider" /* 12145 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 12166 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12196 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12197 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12198 */;
-import useDeafStatesDefault from "useDeafStates" /* 12199 */;
+import useScreenshareUtilsDefault from "useScreenshareUtils" /* 12117 */;
+import VolumeSliderDefault from "VolumeSlider" /* 12146 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 12167 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12197 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12198 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 12199 */;
+import useDeafStatesDefault from "useDeafStates" /* 12200 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -200,7 +200,7 @@ export function DeafenButton(disabled) {
   const tmp3 = useDeafStatesDefault(channel);
   const obj = VoiceActionUtils;
   const deafHandler = obj.createDeafHandler(tmp3);
-  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 12200 : 12201), label: intl.string(intl3.t.wjcRFX) };
+  const obj2 = { disabled: flag, onPress: deafHandler.onPress, iconSource: importDefault(deafHandler.deaf ? 12201 : 12202), label: intl.string(intl3.t.wjcRFX) };
   intl = tmp4(1113).intl;
   return metroImportDefault(ExpandedControlItem, obj2);
 }

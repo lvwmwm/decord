@@ -1,10 +1,10 @@
-// Module ID: 16955
-// Function ID: 16956
+// Module ID: 16967
+// Function ID: 16968
 // Name: AgeNoticeSettingsNotices
-// Dependencies: [19, 17, 1385, 6872, 7630, 21, 5141, 575, 16822, 10310, 8095, 6864, 8165, 1113, 3255, 16862, 6873, 5827, 6861, 16956, 8509, 2]
+// Dependencies: [19, 17, 1385, 6872, 7630, 21, 5141, 575, 16834, 10310, 8095, 6864, 8165, 1113, 3255, 16874, 6873, 5827, 6861, 16968, 8509, 2]
 // Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled, useMessageRequestsNoticeVariant
 
-// Module 16955 (AgeNoticeSettingsNotices)
+// Module 16967 (AgeNoticeSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,9 +16,9 @@ import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
 import useUserIsTeen from "useUserIsTeen" /* 8509 */;
 import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10310 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16822 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16862 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16956 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16834 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16874 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16968 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 7630 */;

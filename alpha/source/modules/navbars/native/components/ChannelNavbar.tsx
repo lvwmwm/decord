@@ -1,10 +1,10 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14599
+// Function ID: 14600
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 6703, 4994, 4990, 5012, 5895, 5083, 1385, 1072, 4997, 4987, 21, 5141, 6858, 575, 504, 1113, 8744, 5786, 10923, 14599, 14600, 1187, 14601, 14602, 5851, 14603, 10151, 7121, 5761, 5195, 8972, 9254, 5171, 4974, 10698, 14604, 2]
+// Dependencies: [19, 17, 6703, 4994, 4990, 5012, 5895, 5083, 1385, 1072, 4997, 4987, 21, 5141, 6858, 575, 504, 1113, 8744, 5786, 10923, 14600, 14601, 1187, 14602, 14603, 5851, 14604, 10151, 7121, 5761, 5195, 8972, 9254, 5171, 4974, 10698, 14605, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 14598 (ChannelNavbar)
+// Module 14599 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

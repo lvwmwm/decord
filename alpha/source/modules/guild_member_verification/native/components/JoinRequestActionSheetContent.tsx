@@ -1,9 +1,9 @@
-// Module ID: 18921
-// Function ID: 18922
+// Module ID: 18935
+// Function ID: 18936
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 4990, 5397, 7513, 21, 5141, 575, 8955, 8944, 8941, 8952, 8891, 18919, 8960, 8969, 11583, 15125, 15228, 504, 14420, 5174, 5768, 8784, 1113, 5175, 12576, 5761, 7233, 4963, 11, 7476, 6902, 8168, 7134, 10946, 1627, 18922, 2]
+// Dependencies: [19, 17, 4990, 5397, 7513, 21, 5141, 575, 8955, 8944, 8941, 8952, 8891, 18933, 8960, 8969, 11584, 15126, 15229, 504, 14421, 5174, 5768, 8784, 1113, 5175, 12577, 5761, 7233, 4963, 11, 7476, 6902, 8168, 7134, 10946, 1627, 18936, 2]
 
-// Module 18921 (JoinRequestActionSheetContent)
+// Module 18935 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
 import Text_Text from "Text/Text" /* 5761 */;
 import Constants from "Constants" /* 7513 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18919 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18933 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4990 */;
 import Fragment from "Fragment" /* 21 */;
@@ -50,7 +50,7 @@ function OpenInterviewButton(arg0) {
     const tmp2 = null != interviewChannelId && null != ChannelStore.getChannel(tmp);
     return tmp2;
   }, items1);
-  const obj2 = interviewChannelId(14420);
+  const obj2 = interviewChannelId(14421);
   const joinRequestButtonActions = obj2.useJoinRequestButtonActions(joinRequest, interviewChannelId);
   ({ handleOpenInterview, submitting } = joinRequestButtonActions);
   const obj3 = interviewChannelId(5174);
@@ -129,10 +129,10 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
     obj9 = { style: tmp3.primaryInfo, children: items4 };
     items4 = [, ];
     const obj10 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
-    const tmpResult = tmp(11583);
-    items4[0] = closure_8(tmp6(15125).PrimaryInfo, obj10);
+    const tmpResult = tmp(11584);
+    items4[0] = closure_8(tmp6(15126).PrimaryInfo, obj10);
     const obj11 = { user };
-    items4[1] = closure_8(tmp(15228), obj11);
+    items4[1] = closure_8(tmp(15229), obj11);
     items2[1] = closure_8(tmpResult, obj7);
     items1[1] = closure_9(View, obj4);
     tmp9 = closure_9(closure_10, obj2);
@@ -175,7 +175,7 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
       const obj2 = { style: tmp.statusContainer, children: items1 };
       const obj3 = { style: tmp.statusRow, children: items };
       const obj4 = { size: "lg", color: nativeDefault.colors.STATUS_WARNING };
-      const HourglassIcon = tmp2(12576).HourglassIcon;
+      const HourglassIcon = tmp2(12577).HourglassIcon;
       items = [metroImportAll(HourglassIcon, obj4), ];
       const obj5 = { children: metroImportAll(Text8, obj6) };
       obj6 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl6.string(intl8.t["Vr+7eO"]) };
@@ -319,7 +319,7 @@ let closure_15 = react.memo(function JoinRequestActionSheetApplicationActions(jo
   const callback = react.useCallback(() => {
     openJoinRequestActionSheetDefault(joinRequest);
   }, items);
-  const obj = joinRequest(14420);
+  const obj = joinRequest(14421);
   const joinRequestButtonActions = obj.useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, callback);
   ({ submitting, approveRequest, rejectRequest, handleOpenInterview } = joinRequestButtonActions);
   const ButtonGroup = joinRequest(6902).ButtonGroup;
@@ -523,7 +523,7 @@ const memoResult = react.memo(function JoinRequestActionSheetContent(displayProf
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
   const obj7 = { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId };
-  items1[4] = closure_8(tmp2(18922), obj7);
+  items1[4] = closure_8(tmp2(18936), obj7);
   return closure_9(View, obj);
 });
 size = size_mod;

@@ -1,10 +1,10 @@
-// Module ID: 17971
-// Function ID: 17972
+// Module ID: 17983
+// Function ID: 17984
 // Name: SlayerStorefrontDevTools
 // Dependencies: [32, 5, 19, 17, 1385, 7031, 7737, 1072, 21, 5141, 575, 1282, 5743, 504, 10848, 1377, 10847, 10090, 6162, 7201, 7223, 7116, 2]
 // Exports: default
 
-// Module 17971 (SlayerStorefrontDevTools)
+// Module 17983 (SlayerStorefrontDevTools)
 import nativeDefault from "native" /* 575 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import GPlayActionCreators from "GPlayActionCreators" /* 10090 */;

@@ -1,75 +1,29 @@
 // Module ID: 13115
 // Function ID: 13116
 // Name: tokenize
-// Dependencies: [13054]
+// Dependencies: [13055]
 
 // Module 13115 (tokenize)
-import tokenize from "tokenize" /* 13054 */;
+import tokenize from "tokenize" /* 13055 */;
 
 let obj2;
-const Ident = tokenize.TYPE.Ident;
-const Number = tokenize.TYPE.Number;
-const Dimension = tokenize.TYPE.Dimension;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-const Colon = tokenize.TYPE.Colon;
-const Delim = tokenize.TYPE.Delim;
+const Hash = tokenize.TYPE.Hash;
 let obj = {
-  name: "MediaFeature",
+  name: "IdSelector",
   structure: obj2,
   parse() {
-    const self = this;
+    let scanner;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftParenthesis);
-    const scanner = this.scanner;
-    scanner.skipSC();
-    const scanner2 = this.scanner;
-    const consumeResult = this.consume(Ident);
-    scanner2.skipSC();
-    let tmp7 = null;
-    const tmp3 = Ident;
-    const tmp6 = RightParenthesis;
-    if (this.scanner.tokenType !== RightParenthesis) {
-      let DimensionResult;
-      self.eat(Colon);
-      const scanner4 = self.scanner;
-      scanner4.skipSC();
-      const tokenType = self.scanner.tokenType;
-      if (Number === tokenType) {
-        let RatioResult;
-        if (self.lookupNonWSType(1) === Delim) {
-          RatioResult = self.Ratio();
-        } else {
-          RatioResult = self.Number();
-        }
-        DimensionResult = RatioResult;
-      } else if (Dimension === tokenType) {
-        DimensionResult = self.Dimension();
-      } else if (tmp3 === tokenType) {
-        DimensionResult = self.Identifier();
-      } else {
-        self.error("Number, dimension, ratio or identifier is expected");
-        DimensionResult = null;
-      }
-      const scanner3 = self.scanner;
-      scanner3.skipSC();
-      tmp7 = DimensionResult;
-    }
-    self.eat(tmp6);
-    const obj = { type: "MediaFeature", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, value: tmp7 };
+    this.eat(Hash);
+    const obj = { type: "IdSelector", loc: this.getLocation(tokenStart, this.scanner.tokenStart), name: scanner.substrToCursor(tokenStart + 1) };
+    scanner = this.scanner;
     return obj;
   },
   generate(name) {
-    const self = this;
-    this.chunk("(");
+    this.chunk("#");
     this.chunk(name.name);
-    if (null !== name.value) {
-      self.chunk(":");
-      self.node(name.value);
-    }
-    self.chunk(")");
   }
 };
-obj2 = { name: String, value: ["Identifier", "Number", "Dimension", "Ratio", null] };
+obj2 = { name: String };
 
 export default obj;

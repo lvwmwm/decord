@@ -1,10 +1,10 @@
-// Module ID: 15694
-// Function ID: 15695
+// Module ID: 15695
+// Function ID: 15696
 // Name: useMarketablePowerupPerks
-// Dependencies: [19, 5353, 5354, 5357, 504, 14367, 5359, 2]
+// Dependencies: [19, 5353, 5354, 5357, 504, 14368, 5359, 2]
 // Exports: default
 
-// Module 15694 (useMarketablePowerupPerks)
+// Module 15695 (useMarketablePowerupPerks)
 import Powerups from "Powerups" /* 5357 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5353 */;
@@ -37,7 +37,7 @@ export default function useMarketablePowerupPerks(guildId) {
     }
     return tmp2;
   });
-  let tmp2 = stateFromStores(14367)(guildId);
+  let tmp2 = stateFromStores(14368)(guildId);
   dependencyMap = tmp2;
   const obj2 = require("ServerThemeExperiment");
   const serverThemeRollbackEnabled = obj2.useServerThemeRollbackEnabled(guildId, "useMarketablePowerupPerks");

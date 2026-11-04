@@ -7,10 +7,10 @@ let obj2;
 const obj = { parse: obj2 };
 obj2 = {
   prelude() {
-    return this.createSingleNodeList(this.SelectorList());
+    return this.createSingleNodeList(this.MediaQueryList());
   },
   block() {
-    return this.Block(true);
+    return this.Block(false);
   }
 };
 
