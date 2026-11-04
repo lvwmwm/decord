@@ -1,12 +1,12 @@
-// Module ID: 6560
-// Function ID: 6561
+// Module ID: 7037
+// Function ID: 7038
 // Name: ConfirmEmailChangeCode
-// Dependencies: [5, 19, 6477, 21, 558, 576, 1505, 1107, 6558, 1128, 6561, 2]
+// Dependencies: [5, 19, 6955, 21, 558, 576, 1505, 1107, 7035, 1128, 7038, 2]
 
-// Module 6560 (ConfirmEmailChangeCode)
+// Module 7037 (ConfirmEmailChangeCode)
 import Fragment from "Fragment" /* 21 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6477 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6955 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -66,7 +66,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -95,7 +95,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
               return obj;
             } else {
               c0 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp6) {
             c0 = 3;
@@ -122,7 +122,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
       tmp11 = cResult[6];
     }
     if (cResult[7] !== tmp5) {
-      const tmp18 = jsx(navigation(6561), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
+      const tmp18 = jsx(navigation(7038), { onFormSubmit: tmp7, onSuccess: tmp5, onResend: tmp9, headerText: tmp10, confirmButtonText: tmp11 });
       cResult[7] = tmp5;
       cResult[8] = tmp18;
       tmp15 = tmp18;
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
       push(VerificationModalScenes.ENTER_EMAIL);
     }
   }, items);
-  navigation(6561);
+  navigation(7038);
   isChangeEmail = _asyncToGenerator(async (arg0) => {
     let c1;
     closure_0 = arg0;
@@ -194,7 +194,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -223,7 +223,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConfirmEmail
           return obj;
         } else {
           isChangeEmail = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp6) {
         isChangeEmail = 3;

@@ -1,10 +1,10 @@
-// Module ID: 12631
-// Function ID: 12632
+// Module ID: 12881
+// Function ID: 12882
 // Name: useNavigationTTIContentPainted
-// Dependencies: [19, 558, 576, 12632, 12633, 2]
+// Dependencies: [19, 558, 576, 12882, 12883, 2]
 
-// Module 12631 (useNavigationTTIContentPainted)
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12633 */;
+// Module 12881 (useNavigationTTIContentPainted)
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 12883 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigat
   let tmp4;
   let obj = navTTISurface(576);
   const cResult = obj.c(14);
-  let obj2 = navTTISurface(12632);
+  let obj2 = navTTISurface(12882);
   navTTISurface = obj2.useNavTTISurface();
   const ref = react.useRef(null);
   let navigationKey;
@@ -187,7 +187,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useNavigat
   let navTTISurface;
   let ref2;
   let ref3;
-  let obj = navTTISurface(12632);
+  let obj = navTTISurface(12882);
   navTTISurface = obj.useNavTTISurface();
   let obj2 = react;
   const ref = react.useRef(null);

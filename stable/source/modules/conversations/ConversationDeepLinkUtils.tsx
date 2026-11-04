@@ -1,14 +1,14 @@
-// Module ID: 9975
-// Function ID: 9976
+// Module ID: 10104
+// Function ID: 10105
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 6412, 7584, 5169, 9637, 5522, 11, 2]
+// Dependencies: [5, 6891, 7733, 5639, 9768, 5638, 11, 2]
 // Exports: consumeConversationFocusParam
 
-// Module 9975 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5169 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6412 */;
+// Module 10104 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5639 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6891 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7584 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7733 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, conversationId, dependencyMap;
@@ -33,7 +33,7 @@ let obj = function _resolveConversationFocusLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -128,7 +128,7 @@ export const consumeConversationFocusParam = function consumeConversationFocusPa
   } else {
     let sum;
     str.delete(tmp);
-    let obj4 = channelId(5522);
+    let obj4 = channelId(5638);
     const tryParseChannelPathResult = obj4.tryParseChannelPath(pathname);
     channelId = undefined;
     if (tryParseChannelPathResult != null) {
@@ -157,7 +157,7 @@ export const consumeConversationFocusParam = function consumeConversationFocusPa
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -190,7 +190,7 @@ export const consumeConversationFocusParam = function consumeConversationFocusPa
                     const conversationFocus = obj.requestConversationFocus();
                   }
                   conversationId = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp12) {
                 conversationId = 3;

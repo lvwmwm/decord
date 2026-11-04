@@ -1,19 +1,19 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 12829
+// Function ID: 12830
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 2090, 1392, 21, 5191, 587, 558, 576, 6942, 10849, 504, 12579, 6377, 12580, 5128, 12581, 5187, 1128, 5057, 11642, 3883, 7051, 5479, 2]
+// Dependencies: [32, 19, 17, 4877, 1392, 21, 5003, 587, 558, 576, 5625, 11101, 504, 12830, 6862, 12831, 5701, 12832, 5266, 1128, 5057, 11831, 3862, 7212, 5276, 2]
 
-// Module 12578 (KickConfirm)
+// Module 12829 (KickConfirm)
 import nativeDefault from "native" /* 587 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import removeConjureServerAppDefault from "removeConjureServerApp" /* 12580 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6862 */;
+import removeConjureServerAppDefault from "removeConjureServerApp" /* 12831 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore_mod from "GuildStore" /* 2090 */;
+import GuildStore_mod from "GuildStore" /* 4877 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -272,7 +272,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           kickUserResult = kickUser(id, id1, closure_9.current);
           tmp12 = onKick;
           nextPromise = kickUserResult.then(onKick);
-          catchPromise = nextPromise.catch(() => { /* body not rendered: F146760 */ });
+          catchPromise = nextPromise.catch(() => { /* body not rendered: F149786 */ });
         }
         return;
       }
@@ -336,7 +336,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let tmp4Result6;
   let tmp7Result4;
   let v1Ie87p;
-  const f113714 = () => ({ kicking: false, kickError: false });
+  const f116023 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -392,9 +392,9 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   closure_8 = tmp18[1];
   const first1 = tmp18[0];
   ref = obj.useRef("");
-  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f113714), 2);
+  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f116023), 2);
   const items4 = [stateFromStores, onKick, stateFromStores1];
-  stateFromStores(stateFromStores1.useState(f113714), 2);
+  stateFromStores(stateFromStores1.useState(f116023), 2);
   closure_11 = obj.useCallback(() => {
     const tmp2 = null != stateFromStores && null != stateFromStores1;
     if (tmp2) {

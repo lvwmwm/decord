@@ -728,8 +728,8 @@ let obj = {
     const tmp = new _modDef368(arg0, arg1);
     return tmp;
   },
-  divide(absResult, arg1) {
-    const tmp = new _modDef369(absResult, arg1);
+  divide(arg0, arg1) {
+    const tmp = new _modDef369(arg0, arg1);
     return tmp;
   },
   multiply(arg0, arg1) {

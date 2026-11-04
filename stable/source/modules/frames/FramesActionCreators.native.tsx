@@ -1,12 +1,12 @@
-// Module ID: 11042
-// Function ID: 11043
+// Module ID: 10799
+// Function ID: 10800
 // Name: FramesActionCreators
-// Dependencies: [5, 5212, 11043, 11044, 6297, 2]
+// Dependencies: [5, 5662, 10800, 10801, 5658, 2]
 
-// Module 11042 (FramesActionCreators)
-import launchFrameAll from "launchFrame" /* 11044 */;
+// Module 10799 (FramesActionCreators)
+import launchFrameAll from "launchFrame" /* 10801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+import VoiceStateStore from "VoiceStateStore" /* 5662 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -33,7 +33,7 @@ let obj = function _launchFrameOnNative() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

@@ -1,19 +1,19 @@
-// Module ID: 2095
-// Function ID: 2096
-// Dependencies: [2096, 2, 2098, 2102, 2105, 2106, 2107, 2108, 2109, 2110, 2099, 2101]
+// Module ID: 4882
+// Function ID: 4883
+// Dependencies: [4883, 2, 4885, 4889, 4892, 4893, 4894, 4895, 4896, 4897, 4886, 4888]
 
-// Module 2095
-import Dao from "Dao" /* 2098 */;
-import Table from "Table" /* 2099 */;
-import TableId from "TableId" /* 2101 */;
-import Database from "Database" /* 2102 */;
-import EntityDao from "EntityDao" /* 2105 */;
-import GuildDao from "GuildDao" /* 2106 */;
-import GuildEntityDao from "GuildEntityDao" /* 2107 */;
-import Kv from "Kv" /* 2108 */;
-import MessageDao from "MessageDao" /* 2109 */;
-import api_Stats from "api/Stats" /* 2110 */;
-import "module_2096";
+// Module 4882
+import Dao from "Dao" /* 4885 */;
+import Table from "Table" /* 4886 */;
+import TableId from "TableId" /* 4888 */;
+import Database from "Database" /* 4889 */;
+import EntityDao from "EntityDao" /* 4892 */;
+import GuildDao from "GuildDao" /* 4893 */;
+import GuildEntityDao from "GuildEntityDao" /* 4894 */;
+import Kv from "Kv" /* 4895 */;
+import MessageDao from "MessageDao" /* 4896 */;
+import api_Stats from "api/Stats" /* 4897 */;
+import "module_4883";
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/index.tsx");

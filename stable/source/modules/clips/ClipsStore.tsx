@@ -1,21 +1,21 @@
 // Module ID: 2020
 // Function ID: 2021
 // Name: ClipsStore
-// Dependencies: [5, 2021, 502, 8029, 1087, 5311, 4826, 15076, 1405, 15077, 15079, 504, 584, 2]
+// Dependencies: [5, 2021, 502, 8180, 1087, 5846, 4817, 15332, 1405, 15333, 15335, 504, 584, 2]
 
 // Module 2020 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import DiscordNativeDefault from "DiscordNative" /* 4826 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15077 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15079 */;
+import DiscordNativeDefault from "DiscordNative" /* 4817 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15333 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15335 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8029 */;
+import ClipsConstants from "ClipsConstants" /* 8180 */;
 import Constants from "Constants" /* 1087 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5311 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5846 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_18, closure_2;
@@ -47,7 +47,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -117,7 +117,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_40.emitChange();
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {
@@ -286,7 +286,7 @@ function trackClipMessage(message) {
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);
 let c16 = "default";
 let c17 = "Discord Clips";
-const authStore5 = {};
+const authStore4 = {};
 let closure_19 = {};
 let closure_20 = [];
 let closure_21 = 0;

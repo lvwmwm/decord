@@ -1,27 +1,27 @@
-// Module ID: 10015
-// Function ID: 10016
+// Module ID: 10144
+// Function ID: 10145
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 2072, 4843, 4855, 1392, 1087, 10016, 5504, 21, 5191, 587, 5521, 8428, 6226, 5057, 558, 576, 8859, 2]
+// Dependencies: [19, 17, 4859, 4933, 4945, 1392, 1087, 10145, 6016, 21, 5003, 587, 5636, 8531, 6740, 5057, 558, 576, 8987, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10015 (autocompleter/AutocompleteUtils)
+// Module 10144 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import useChannelName from "useChannelName" /* 5521 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6226 */;
-import TimestampUtils from "TimestampUtils" /* 8428 */;
-import FormDividerDefault from "FormDivider" /* 8859 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import useChannelName from "useChannelName" /* 5636 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6740 */;
+import TimestampUtils from "TimestampUtils" /* 8531 */;
+import FormDividerDefault from "FormDivider" /* 8987 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import GuildChannelStore from "GuildChannelStore" /* 4933 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10016 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5504 */;
-import createStyles from "createStyles" /* 5191 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10145 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6016 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,28 +1,28 @@
-// Module ID: 17143
-// Function ID: 17144
+// Module ID: 17477
+// Function ID: 17478
 // Name: guilds/Guilds
-// Dependencies: [32, 19, 6013, 10963, 1087, 21, 558, 576, 5075, 9, 5078, 5072, 5073, 584, 1123, 17144, 5068, 9468, 17145, 16141, 17146, 17506, 16225, 4922, 2]
+// Dependencies: [32, 19, 6528, 11215, 1087, 21, 558, 576, 5185, 9, 5188, 5182, 5183, 584, 1123, 17478, 5178, 9597, 17479, 16479, 17480, 17845, 16558, 5069, 2]
 
-// Module 17143 (guilds/Guilds)
+// Module 17477 (guilds/Guilds)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
-import native from "native" /* 4922 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5068 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
-import RootNavigationRef from "RootNavigationRef" /* 5073 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5078 */;
-import QuestsEligibility from "QuestsEligibility" /* 9468 */;
-import MainTabsConstants from "MainTabsConstants" /* 10963 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17144 */;
-import GuildsRenderExperiment2 from "GuildsRenderExperiment" /* 17145 */;
-import MainChannelsDefault from "MainChannels" /* 17146 */;
-import YouBarDefault from "YouBar" /* 17506 */;
+import native from "native" /* 5069 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5178 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
+import RootNavigationRef from "RootNavigationRef" /* 5183 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5188 */;
+import QuestsEligibility from "QuestsEligibility" /* 9597 */;
+import MainTabsConstants from "MainTabsConstants" /* 11215 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17478 */;
+import GuildsRenderExperiment2 from "GuildsRenderExperiment" /* 17479 */;
+import MainChannelsDefault from "MainChannels" /* 17480 */;
+import YouBarDefault from "YouBar" /* 17845 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
   _require = arg0;
   let obj = require("react");
   const cResult = obj.c(5);
-  const isChatBesideChannelList = first(5075)().isChatBesideChannelList;
+  const isChatBesideChannelList = first(5185)().isChatBesideChannelList;
   if (cResult[0] !== arg0) {
     const fn = function u() {
       const tmp = closure_0;
@@ -162,7 +162,7 @@ let closure_11 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSho
   let connected;
   let first;
   let closure_0 = arg0;
-  const isChatBesideChannelList = first(5075)().isChatBesideChannelList;
+  const isChatBesideChannelList = first(5185)().isChatBesideChannelList;
   [first, dependencyMap] = react.useState(() => {
     const tmp = closure_0;
     if (tmp) {
@@ -274,18 +274,18 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   } else {
     tmp9 = cResult[1];
   }
-  const GuildsRenderExperiment = tmp(17145).GuildsRenderExperiment;
+  const GuildsRenderExperiment = tmp(17479).GuildsRenderExperiment;
   if (!GuildsRenderExperiment.useConfig(tmp9).enabled) {
     let tmp12;
     let tmp16;
     const _Symbol = Symbol;
     if (cResult[2] === Symbol.for("react.memo_cache_sentinel")) {
-      const QuestDockExternalCoordinationContextProvider = tmp(16141).QuestDockExternalCoordinationContextProvider;
+      const QuestDockExternalCoordinationContextProvider = tmp(16479).QuestDockExternalCoordinationContextProvider;
       const items = [metroImportAll(MainChannelsDefault, {}), metroImportAll(YouBarDefault, {}), ];
       const tmp13 = React4;
       const tmp14 = metroImportAll;
       if (first) {
-        first = tmp14(tmp5(16225), {});
+        first = tmp14(tmp5(16558), {});
       }
       const obj4 = { children: items };
       items[2] = first;
@@ -322,12 +322,12 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const GuildsRenderExperiment = GuildsRenderExperiment2.GuildsRenderExperiment;
   if (!GuildsRenderExperiment.useConfig({ location: "GuildsOnly" }).enabled) {
     const obj3 = { gradient: tmp5, children: tmp10(QuestDockExternalCoordinationContextProvider, obj4) };
-    const ThemeContextProvider = tmp(4922).ThemeContextProvider;
-    QuestDockExternalCoordinationContextProvider = tmp(16141).QuestDockExternalCoordinationContextProvider;
+    const ThemeContextProvider = tmp(5069).ThemeContextProvider;
+    QuestDockExternalCoordinationContextProvider = tmp(16479).QuestDockExternalCoordinationContextProvider;
     const items = [metroImportAll(MainChannelsDefault, {}), metroImportAll(YouBarDefault, {}), ];
     tmp10 = React4;
     if (isEligibleForQuests) {
-      isEligibleForQuests = tmp9(tmp4(16225), {});
+      isEligibleForQuests = tmp9(tmp4(16558), {});
     }
     obj4 = { children: items };
     items[2] = isEligibleForQuests;

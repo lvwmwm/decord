@@ -1,17 +1,17 @@
-// Module ID: 12963
-// Function ID: 12964
+// Module ID: 13235
+// Function ID: 13236
 // Name: useAvailableAndAddedGuilds
-// Dependencies: [5, 32, 19, 2090, 4845, 6219, 12957, 1087, 558, 576, 504, 12961, 5496, 2]
+// Dependencies: [5, 32, 19, 4877, 4935, 6733, 13229, 1087, 558, 576, 504, 13233, 5295, 2]
 
-// Module 12963 (useAvailableAndAddedGuilds)
+// Module 13235 (useAvailableAndAddedGuilds)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import SortedGuildStore from "SortedGuildStore" /* 6219 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12957 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import SortedGuildStore from "SortedGuildStore" /* 6733 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13229 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -200,7 +200,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailab
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -232,7 +232,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailab
             } else {
               closure_128_2(false);
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp14) {
             c2 = 3;
@@ -288,7 +288,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailab
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -320,7 +320,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAvailab
           } else {
             closure_128_2(false);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp14) {
           c2 = 3;

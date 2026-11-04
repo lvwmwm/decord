@@ -1,12 +1,12 @@
-// Module ID: 16915
-// Function ID: 16916
+// Module ID: 17245
+// Function ID: 17246
 // Name: useGetProductsFromSkus
-// Dependencies: [19, 7530, 558, 576, 504, 16916, 2]
+// Dependencies: [19, 7682, 558, 576, 504, 17246, 2]
 
-// Module 16915 (useGetProductsFromSkus)
+// Module 17245 (useGetProductsFromSkus)
 import react from "react" /* 19 */;
-import uniqByDefault from "uniqBy" /* 16916 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import uniqByDefault from "uniqBy" /* 17246 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7682 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

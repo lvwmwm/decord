@@ -1,26 +1,26 @@
-// Module ID: 11883
-// Function ID: 11884
+// Module ID: 12083
+// Function ID: 12084
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 5190, 2132, 1372, 6358, 11884, 11885, 11880, 11886, 11887, 1087, 584, 569, 1297, 11881, 1384, 11888, 11889, 11890, 2]
+// Dependencies: [5, 5269, 2068, 1372, 6842, 12084, 12085, 12080, 12086, 12087, 1087, 584, 569, 1297, 12081, 1384, 12088, 12089, 12090, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 11883 (ApplicationDirectoryActionCreators)
+// Module 12083 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 569 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6358 */;
-import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 11880 */;
-import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 11885 */;
-import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 11886 */;
-import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 11887 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 11889 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 11890 */;
+import ApplicationDirectoryApplicationsStore2 from "ApplicationDirectoryApplicationsStore" /* 6842 */;
+import ApplicationDirectorySearchStore2 from "ApplicationDirectorySearchStore" /* 12080 */;
+import ApplicationDirectoryCollectionsStore2 from "ApplicationDirectoryCollectionsStore" /* 12085 */;
+import ApplicationDirectorySimilarApplicationsStore2 from "ApplicationDirectorySimilarApplicationsStore" /* 12086 */;
+import MyGuildApplicationsStore2 from "MyGuildApplicationsStore" /* 12087 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12089 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5190 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
+import DevSettingsStore from "DevSettingsStore" /* 5269 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1372 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 11884 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12084 */;
 import size from "module_2" /* 2 */;
 
 const MyGuildApplicationsStore = MyGuildApplicationsStore2;
@@ -42,7 +42,7 @@ let obj = function _getEmbedApplication() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -129,7 +129,7 @@ let obj = function _getEmbedApplication() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp21) {
           closure_4 = tmp21;
           if (0 === c5) {
@@ -236,7 +236,7 @@ obj = function _getCategories() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -280,7 +280,7 @@ obj = function _getCategories() {
           obj.dispatch(obj8);
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp17) {
         c3 = 3;
         throw tmp17;
@@ -576,7 +576,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -654,7 +654,7 @@ obj = function _fetchIntegrationApplicationIdsForMyGuilds() {
           c3 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp32) {
         if (0 === c3) {
           c5 = 3;

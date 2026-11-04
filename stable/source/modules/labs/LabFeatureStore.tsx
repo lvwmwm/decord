@@ -1,12 +1,12 @@
-// Module ID: 8747
-// Function ID: 8748
+// Module ID: 8875
+// Function ID: 8876
 // Name: LabFeatureStore
-// Dependencies: [504, 8748, 584, 2]
+// Dependencies: [504, 8876, 584, 2]
 
-// Module 8747 (LabFeatureStore)
+// Module 8875 (LabFeatureStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LabFeaturesDefault from "LabFeatures" /* 8748 */;
+import LabFeaturesDefault from "LabFeatures" /* 8876 */;
 import size from "module_2" /* 2 */;
 
 const React2 = {};

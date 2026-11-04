@@ -1,14 +1,14 @@
-// Module ID: 10676
-// Function ID: 10677
+// Module ID: 10928
+// Function ID: 10929
 // Name: GatedContent
-// Dependencies: [19, 21, 5191, 587, 558, 576, 6174, 5479, 5187, 5477, 6214, 2]
+// Dependencies: [19, 21, 5003, 587, 558, 576, 6689, 5276, 5266, 6009, 6728, 2]
 
-// Module 10676 (GatedContent)
+// Module 10928 (GatedContent)
 import nativeDefault from "native" /* 587 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6689 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

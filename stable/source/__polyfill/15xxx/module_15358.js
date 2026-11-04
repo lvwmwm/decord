@@ -1,42 +1,74 @@
 // Module ID: 15358
 // Function ID: 15359
-// Dependencies: [15350, 15349, 15357]
+// Dependencies: []
 
 // Module 15358
-import _mod15349 from "module_15349" /* 15349 */;
-import _mod15350 from "module_15350" /* 15350 */;
-import _mod15357 from "module_15357" /* 15357 */;
-
-
-export default (arg0, arg1) => {
-  if ("string" === arg1) {
-    const toString = arg0.toString;
-    if (_mod15350(toString)) {
-      const tmpResult = _mod15349;
-      const tmp4 = _mod15357(toString, arg0);
-      if (!tmpResult(tmp4)) {
-        return tmp4;
+const re0 = /^[0-9]+$/;
+const obj = {
+  compareIdentifiers(major, major2) {
+    const isMatch = re0.test(major);
+    const isMatch1 = re0.test(major2);
+    let tmp4 = major2;
+    let tmp5 = major;
+    const tmp3 = isMatch && isMatch1;
+    if (tmp3) {
+      tmp5 = +major;
+      tmp4 = +major2;
+    }
+    let num = 0;
+    if (tmp5 !== tmp4) {
+      let num2;
+      if (!isMatch) {
+        let num3;
+        if (!isMatch1) {
+          let num4 = 1;
+          if (tmp5 < tmp4) {
+            num4 = -1;
+          }
+          num3 = num4;
+        } else {
+          num3 = 1;
+        }
+        num2 = num3;
+      } else {
+        num2 = -1;
       }
+      num = num2;
     }
-  }
-  const valueOf = arg0.valueOf;
-  if (_mod15350(valueOf)) {
-    const tmp5Result = _mod15349;
-    const tmp8 = _mod15357(valueOf, arg0);
-    if (!tmp5Result(tmp8)) {
-      return tmp8;
+    return num;
+  },
+  rcompareIdentifiers(arg0, arg1) {
+    const isMatch = re0.test(arg1);
+    const isMatch1 = re0.test(arg0);
+    let tmp4 = arg0;
+    let tmp5 = arg1;
+    const tmp3 = isMatch && isMatch1;
+    if (tmp3) {
+      tmp5 = +arg1;
+      tmp4 = +arg0;
     }
-  }
-  if ("string" !== arg1) {
-    const toString2 = arg0.toString;
-    if (_mod15350(toString2)) {
-      const tmp5Result2 = _mod15349;
-      const tmp10 = _mod15357(toString2, arg0);
-      if (!tmp5Result2(tmp10)) {
-        return tmp10;
+    let num = 0;
+    if (tmp5 !== tmp4) {
+      let num2;
+      if (!isMatch) {
+        let num3;
+        if (!isMatch1) {
+          let num4 = 1;
+          if (tmp5 < tmp4) {
+            num4 = -1;
+          }
+          num3 = num4;
+        } else {
+          num3 = 1;
+        }
+        num2 = num3;
+      } else {
+        num2 = -1;
       }
+      num = num2;
     }
+    return num;
   }
-  const tmp11 = new TypeError("Can't convert object to primitive value");
-  throw tmp11;
 };
+
+export default obj;

@@ -1,17 +1,17 @@
-// Module ID: 16634
-// Function ID: 16635
+// Module ID: 16964
+// Function ID: 16965
 // Name: DiskUsageManager
-// Dependencies: [5, 1392, 1087, 3, 1369, 510, 10001, 1384, 16635, 1267, 7463, 7085, 13573, 13574, 2]
+// Dependencies: [5, 1392, 1087, 3, 1369, 510, 10130, 1384, 16965, 1267, 7616, 7246, 13827, 13828, 2]
 
-// Module 16634 (DiskUsageManager)
+// Module 16964 (DiskUsageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1369 */;
-import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10001 */;
-import react_nativeDefault from "react-native" /* 16635 */;
+import BackgroundTaskManagerDefault from "BackgroundTaskManager" /* 10130 */;
+import react_nativeDefault from "react-native" /* 16965 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c5, c6, closure_3;
@@ -41,7 +41,7 @@ let obj = function _measureAndReportInstallSize() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -147,7 +147,7 @@ let obj = function _measureAndReportInstallSize() {
             obj3.endBackgroundTask(caches_directory_bytes);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp55) {
         closure_3 = tmp55;
@@ -199,7 +199,7 @@ class DiskUsageManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

@@ -1,18 +1,18 @@
-// Module ID: 8361
-// Function ID: 8362
+// Module ID: 8465
+// Function ID: 8466
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8362, 7443, 7439, 1394, 1087, 1384, 584, 1267, 1297, 8363, 1257, 5033, 2052, 2049, 2]
+// Dependencies: [5, 8466, 7596, 7592, 1394, 1087, 1384, 584, 1267, 1297, 8467, 1257, 5033, 4839, 4836, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8361 (UserOfferActionCreators)
+// Module 8465 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8362 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7443 */;
-import UserOfferStore from "UserOfferStore" /* 7439 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8466 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7596 */;
+import UserOfferStore from "UserOfferStore" /* 7592 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c11;

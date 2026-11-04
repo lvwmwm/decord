@@ -1,16 +1,16 @@
-// Module ID: 11598
-// Function ID: 11599
+// Module ID: 11793
+// Function ID: 11794
 // Name: ConjureArchivePicker
-// Dependencies: [5, 10978, 11599, 11611, 1128, 3883, 11612, 2]
+// Dependencies: [5, 10730, 11794, 11792, 1128, 3862, 11791, 2]
 // Exports: describeConjureArchiveRejection, pickConjureArchive, sendConjureArchiveImport
 
-// Module 11598 (ConjureArchivePicker)
-import _modDef3883 from "module_3883" /* 3883 */;
-import FilePickerUtils from "FilePickerUtils" /* 11599 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11611 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11612 */;
+// Module 11793 (ConjureArchivePicker)
+import _modDef3862 from "module_3862" /* 3862 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 11791 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 11792 */;
+import FilePickerUtils from "FilePickerUtils" /* 11794 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 10978 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10730 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, c6;
@@ -31,7 +31,7 @@ let obj = function _pickConjureArchive() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -145,7 +145,7 @@ obj = function _sendConjureArchiveImport() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -182,7 +182,7 @@ obj = function _sendConjureArchiveImport() {
           const items = [closure_2];
           closure_132_5(closure_0, closure_1, items);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp13) {
         c6 = 3;
@@ -208,7 +208,7 @@ export const describeConjureArchiveRejection = function describeConjureArchiveRe
     const intl = tmp(1128).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj2 = { size: formatConjureAttachmentLimit(tmpResult2.conjureAttachmentLimit(bytes.contentType)) };
-    const ThxcOX = _modDef3883.ThxcOX;
+    const ThxcOX = _modDef3862.ThxcOX;
     formatConjureAttachmentLimit = ConjureAttachmentTypes.formatConjureAttachmentLimit;
     ConjureAttachmentTypes;
     tmpResult2 = ConjureAttachmentTypes;

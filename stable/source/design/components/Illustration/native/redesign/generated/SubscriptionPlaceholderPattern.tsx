@@ -1,15 +1,15 @@
-// Module ID: 14578
-// Function ID: 14579
+// Module ID: 14845
+// Function ID: 14846
 // Name: SubscriptionPlaceholderPattern
-// Dependencies: [19, 21, 8633, 14579, 14580, 14581, 558, 576, 5065, 5128, 2]
+// Dependencies: [19, 21, 8756, 14846, 14847, 14848, 558, 576, 5010, 5701, 2]
 // Exports: getSubscriptionPlaceholderPatternSource
 
-// Module 14578 (SubscriptionPlaceholderPattern)
+// Module 14845 (SubscriptionPlaceholderPattern)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import shared from "shared" /* 5065 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import _mod8633 from "module_8633" /* 8633 */;
+import shared from "shared" /* 5010 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import _mod8756 from "module_8756" /* 8756 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscript
   const theme = obj2.useThemeContext().theme;
   if (cResult[0] !== theme) {
     const obj3 = { dark, darker, light };
-    const tmpResult = _mod8633;
+    const tmpResult = _mod8756;
     const illustrationSource = tmpResult.getIllustrationSource(theme, obj3);
     cResult[0] = theme;
     cResult[1] = illustrationSource;
@@ -47,7 +47,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSubscript
 }) : (function useSubscriptionPlaceholderPatternSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8633;
+  const obj2 = _mod8756;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 });
@@ -78,7 +78,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function Subscription
   return <tmp2 source={tmp} />;
 });
 function getSubscriptionPlaceholderPatternSource(theme) {
-  const obj = _mod8633;
+  const obj = _mod8756;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }

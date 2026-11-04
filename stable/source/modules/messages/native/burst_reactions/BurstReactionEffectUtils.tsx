@@ -1,12 +1,12 @@
-// Module ID: 8193
-// Function ID: 8194
+// Module ID: 4961
+// Function ID: 4962
 // Name: burst_reactions/BurstReactionEffectUtils
-// Dependencies: [5, 32, 19, 17, 558, 576, 4863, 8194, 1901, 1384, 8231, 2]
+// Dependencies: [5, 32, 19, 17, 558, 576, 4953, 4962, 1901, 1384, 4999, 2]
 
-// Module 8193 (burst_reactions/BurstReactionEffectUtils)
+// Module 4961 (burst_reactions/BurstReactionEffectUtils)
 import react_native from "react-native" /* 17 */;
-import EmojiUtils from "EmojiUtils" /* 4863 */;
-import getBurstAnimation from "getBurstAnimation" /* 8194 */;
+import EmojiUtils from "EmojiUtils" /* 4953 */;
+import getBurstAnimation from "getBurstAnimation" /* 4962 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -39,7 +39,7 @@ let obj = function _generateAnimationSource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c9;
@@ -233,7 +233,7 @@ obj = function _generateAnimationSourceFromLocalImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -397,7 +397,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstRe
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -432,7 +432,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstRe
             closure_1_4(closure_0);
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp17) {
           c3 = 3;
           throw tmp17;
@@ -476,7 +476,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstRe
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -512,7 +512,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBurstRe
               closure_1_4(closure_0);
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp17) {
             c3 = 3;
             throw tmp17;
@@ -560,7 +560,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperRe
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -593,7 +593,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperRe
             animationSource = value;
             c2(animationSource);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp13) {
           c3 = 3;
@@ -635,7 +635,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperRe
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -668,7 +668,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSuperRe
               animationSource = value;
               c2(animationSource);
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp13) {
             c3 = 3;

@@ -1,9 +1,9 @@
-// Module ID: 5594
-// Function ID: 5595
+// Module ID: 6104
+// Function ID: 6105
 // Name: CheckpointCharacterShoes
 // Dependencies: [2]
 
-// Module 5594 (CheckpointCharacterShoes)
+// Module 6104 (CheckpointCharacterShoes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointCharacterShoes.tsx");

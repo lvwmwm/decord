@@ -1,13 +1,13 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 12120
+// Function ID: 12121
 // Name: TrackSectionHeader
-// Dependencies: [11911, 558, 576, 1275, 9263, 2]
+// Dependencies: [12111, 558, 576, 1275, 9393, 2]
 
-// Module 11920 (TrackSectionHeader)
+// Module 12120 (TrackSectionHeader)
 import react from "react" /* 576 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 9263 */;
-import AppLauncherStore from "AppLauncherStore" /* 11911 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9393 */;
+import AppLauncherStore from "AppLauncherStore" /* 12111 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

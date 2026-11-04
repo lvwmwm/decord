@@ -9,7 +9,7 @@ import user_settings_shared from "user_settings_shared" /* 1240 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
-let internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
+let internalBinaryWrite10, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
 
 let tmp;
 let tmp2;
@@ -245,14 +245,14 @@ class FrecencyUserSettings$Type extends MessageType {
       const joined7 = internalBinaryWrite8Result.join();
     }
     if (versions.applicationFrecency) {
-      const internalBinaryWrite9 = playedSoundFrecencyType.internalBinaryWrite;
+      internalBinaryWrite9 = playedSoundFrecencyType.internalBinaryWrite;
       const applicationFrecency = versions.applicationFrecency;
       const tagResult8 = tag.tag(9, _mod1212.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(applicationFrecency, tagResult8.fork(), writeUnknownFields);
       const joined8 = internalBinaryWrite9Result.join();
     }
     if (versions.heardSoundFrecency) {
-      const internalBinaryWrite10 = object20.internalBinaryWrite;
+      internalBinaryWrite10 = object20.internalBinaryWrite;
       const heardSoundFrecency = versions.heardSoundFrecency;
       const tagResult9 = tag.tag(10, _mod1212.WireType.LengthDelimited);
       const result = internalBinaryWrite10(heardSoundFrecency, tagResult9.fork(), writeUnknownFields);

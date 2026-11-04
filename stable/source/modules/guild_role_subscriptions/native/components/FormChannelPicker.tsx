@@ -1,16 +1,16 @@
-// Module ID: 18976
-// Function ID: 18977
+// Module ID: 19338
+// Function ID: 19339
 // Name: FormChannelPicker
-// Dependencies: [19, 2068, 21, 5191, 14912, 504, 5521, 8946, 5155, 18977, 2002, 8431, 8480, 5187, 1128, 1202, 11410, 2]
+// Dependencies: [19, 4855, 21, 5003, 15179, 504, 5636, 9073, 5242, 19339, 2002, 8534, 8583, 5266, 1128, 7337, 2]
 // Exports: default
 
-// Module 18976 (FormChannelPicker)
+// Module 19338 (FormChannelPicker)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,8 +31,8 @@ export default function FormChannelPicker(channelId) {
   ({ guildId: importDefault, onChange } = channelId);
   let stateFromStores;
   onChange = undefined;
-  const tmp = importDefault;
   let tmp2 = stateFromStores;
+  const tmp = importDefault;
   const tmp3 = require("FormStyles")();
   const tmp4 = closure_6();
   let obj = channelId(stateFromStores[5]);
@@ -54,7 +54,7 @@ export default function FormChannelPicker(channelId) {
       const obj = { guildId: importDefault, selectedChannelId: id, onChannelSelected: onChange };
       id = undefined;
       ActionSheetActionCreatorsDefault;
-      const tmp2 = asyncRequire(18977, dependencyMap.paths);
+      const tmp2 = asyncRequire(19339, dependencyMap.paths);
       if (stateFromStores != null) {
         id = stateFromStores.id;
       }
@@ -86,8 +86,6 @@ export default function FormChannelPicker(channelId) {
     stringResult = intl.string(tmp5(tmp2[14]).t.r2ptsz);
   }
   items3[1] = closure_4(Text, obj3);
-  const obj4 = { size: channelId(tmp2[15]).Icon.Sizes.MEDIUM, source: tmp(tmp2[16]) };
-  const Icon = tmp5(tmp2[15]).Icon;
-  items3[2] = closure_4(Icon, obj4);
+  items3[2] = closure_4(channelId(tmp2[15]).ChevronSmallRightIcon, { size: "md" });
   return tmp8(tmpResult, obj2);
 };

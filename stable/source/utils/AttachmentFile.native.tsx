@@ -1,14 +1,14 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 8185
+// Function ID: 8186
 // Name: AttachmentFile
-// Dependencies: [5, 3, 38, 8025, 8035, 8026, 2]
+// Dependencies: [5, 3, 38, 8177, 8186, 8178, 2]
 // Exports: cancelGetAttachmentFile, fileIsInAppDir, getAttachmentFile
 
-// Module 8034 (AttachmentFile)
+// Module 8185 (AttachmentFile)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
-import UploadPlatform from "UploadPlatform" /* 8025 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8035 */;
+import UploadPlatform from "UploadPlatform" /* 8177 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8186 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _getAttachmentFile() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _cancelGetAttachmentFile() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ obj = function _cancelGetAttachmentFile() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp7) {
         c1 = 3;
@@ -193,7 +193,7 @@ export const fileIsInAppDir = function fileIsInAppDir(uri) {
     const tmp2 = require;
     if (startsWithResult) {
       const startsWith = replaced.startsWith;
-      const tmp2Result = tmp2(8035);
+      const tmp2Result = tmp2(8186);
       startsWithResult = startsWith(tmp2Result.getAppDir());
     }
     return startsWithResult;

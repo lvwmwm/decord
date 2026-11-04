@@ -203,14 +203,6 @@ class UserRecord extends Record {
       displayNameStyles = tmp12Result.parseServerDisplayNameStyles(user.display_name_styles);
     }
     tmp6.displayNameStyles = displayNameStyles;
-    let vadColors = user.vadColors;
-    if (vadColors == null) {
-      vadColors = user.vad_colors;
-    }
-    if (vadColors == null) {
-      vadColors = null;
-    }
-    tmp6.vadColors = vadColors;
     let typingIndicatorStyle = user.typingIndicatorStyle;
     if (typingIndicatorStyle == null) {
       const tmp12Result6 = require("CustomTypingIndicatorTypes");

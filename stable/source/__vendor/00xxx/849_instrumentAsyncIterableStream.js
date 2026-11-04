@@ -263,6 +263,7 @@ let obj = function _instrumentAsyncIterableStream() {
       throw new TypeError("Generator functions may not be called on executing generators");
     } else {
       let str2 = "";
+      const flag = true;
       if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
@@ -270,7 +271,7 @@ let obj = function _instrumentAsyncIterableStream() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c9;
@@ -303,7 +304,7 @@ let obj = function _instrumentAsyncIterableStream() {
                 closure_3 = undefined;
                 value4 = undefined;
                 value5 = undefined;
-                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "tag", cacheReadInputTokens: "right", toolCalls: [], activeToolBlocks: {} };
+                obj5 = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "lineClamp", cacheReadInputTokens: "justifyContent", toolCalls: [], activeToolBlocks: {} };
                 closure_4 = false;
                 c5 = false;
                 c9 = 4;
@@ -450,7 +451,7 @@ let obj = function _instrumentAsyncIterableStream() {
                   }
                   closure_0.end();
                   c12 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               }
               break;
@@ -1062,7 +1063,7 @@ export const instrumentAsyncIterableStream = function instrumentAsyncIterableStr
 export const instrumentMessageStream = function instrumentMessageStream(applyResult, arg1, flag) {
   let closure_0 = arg1;
   let closure_1 = flag;
-  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "tag", cacheReadInputTokens: "right", toolCalls: [], activeToolBlocks: {} };
+  obj = { responseTexts: [], finishReasons: [], responseId: "", responseModel: "", promptTokens: "r", completionTokens: "__initData", cacheCreationInputTokens: "lineClamp", cacheReadInputTokens: "justifyContent", toolCalls: [], activeToolBlocks: {} };
   applyResult.on("streamEvent", (arg0) => {
     processEvent(arg0, obj, flag, closure_0);
   });

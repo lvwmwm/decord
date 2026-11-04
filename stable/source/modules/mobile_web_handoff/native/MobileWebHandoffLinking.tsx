@@ -1,13 +1,13 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7461
+// Function ID: 7462
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1087, 6190, 7310, 7312, 1267, 1280, 7313, 1386, 4901, 2]
+// Dependencies: [5, 502, 1087, 6704, 7462, 7464, 1267, 1280, 7465, 1386, 5692, 2]
 
-// Module 7309 (MobileWebHandoffLinking)
+// Module 7461 (MobileWebHandoffLinking)
 import FingerprintUtils from "FingerprintUtils" /* 1280 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 7310 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 7312 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 7462 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 7464 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 1087 */;
@@ -141,7 +141,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
             const obj5 = closure_131_1(closure_131_2[10]);
             obj5.performURLNavigation(uRL.href);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp6) {
           c5 = 3;

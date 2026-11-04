@@ -1,14 +1,14 @@
 // Module ID: 6755
 // Function ID: 6756
 // Dependencies: []
-// Exports: clamp
 
 // Module 6755
-const fn = function n(arg0, arg1, arg2) {
-  return Math.min(Math.max(arg1, arg0), arg2);
-};
-fn.__closure = {};
-fn.__workletHash = 4405247003092;
-fn.__initData = { code: "function pnpm_clampTs1(value,lowerBound,upperBound){return Math.min(Math.max(lowerBound,value),upperBound);}" };
 
-export const clamp = fn;
+export default (arg0) => {
+  let str = encodeURIComponent(arg0);
+  return str.replace(/[!'()*]/g, (str) => {
+    str = str.charCodeAt(0);
+    const str2 = str.toString(16);
+    return "%" + str2.toUpperCase();
+  });
+};

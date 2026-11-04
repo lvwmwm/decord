@@ -1,13 +1,13 @@
-// Module ID: 12537
-// Function ID: 12538
+// Module ID: 12788
+// Function ID: 12789
 // Name: useExperimentAssignments
-// Dependencies: [32, 5112, 1261, 558, 576, 5117, 504, 2]
+// Dependencies: [32, 5222, 1261, 558, 576, 5227, 504, 2]
 // Exports: getExperimentServerAssignment
 
-// Module 12537 (useExperimentAssignments)
-import ExperimentManager from "ExperimentManager" /* 5117 */;
+// Module 12788 (useExperimentAssignments)
+import ExperimentManager from "ExperimentManager" /* 5227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 5112 */;
+import ExperimentStore from "ExperimentStore" /* 5222 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1261 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

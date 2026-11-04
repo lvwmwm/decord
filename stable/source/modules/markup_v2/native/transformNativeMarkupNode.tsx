@@ -1,10 +1,10 @@
-// Module ID: 8423
-// Function ID: 8424
+// Module ID: 8527
+// Function ID: 8528
 // Name: transformNativeMarkupNode
-// Dependencies: [32, 5500, 8424, 8425, 8426, 8427, 8429, 8512, 2]
+// Dependencies: [32, 6012, 8503, 8528, 8529, 8530, 8532, 8615, 2]
 
-// Module 8423 (transformNativeMarkupNode)
-import MarkupTypes from "MarkupTypes" /* 5500 */;
+// Module 8527 (transformNativeMarkupNode)
+import MarkupTypes from "MarkupTypes" /* 6012 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ function transformNode(type, channelId) {
     }
     case "spoiler":
     {
-      const obj11 = { type: require("MarkupTypes").AST_KEY.SPOILER, content: transformNativeInline(type.value, channelId), channelId: channelId.channelId };
+      const obj11 = { type: require("MarkupTypes").AST_KEY.SPOILER, id: type.value.id, content: transformNativeInline(type.value.content, channelId), channelId: channelId.channelId };
       return obj11;
     }
     case "code":
@@ -67,7 +67,7 @@ function transformNode(type, channelId) {
       const replaced = str4.replace(/^\n+|\n+$/g, "");
       let replaced1 = replaced;
       if ("ansi" === (type.value.language ?? "").toLowerCase()) {
-        replaced1 = replaced.replaceAll(require("HighlightJsAnsiLanguage").ANSI_CONTROL_SEQUENCE_RE_GLOBAL, "");
+        replaced1 = replaced.replaceAll(require("MarkupRulesUtils").ANSI_CONTROL_SEQUENCE_RE_GLOBAL, "");
       }
       if (true === channelId.formatInline) {
         obj14 = { type: require("MarkupTypes").AST_KEY.INLINE_CODE, content: replaced1 };
@@ -104,9 +104,9 @@ function transformNode(type, channelId) {
         arr2 = transformNativeBlocks(value2, obj18, "quote");
         const tmp52 = _require;
         if (arr2.length <= 0) {
-          const items1 = [{ type: tmp52(5500).AST_KEY.TEXT, content: " " }];
+          const items1 = [{ type: tmp52(6012).AST_KEY.TEXT, content: " " }];
           arr2 = items1;
-          const obj19 = { type: tmp52(5500).AST_KEY.TEXT, content: " " };
+          const obj19 = { type: tmp52(6012).AST_KEY.TEXT, content: " " };
         }
       }
       return obj17;

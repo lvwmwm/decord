@@ -1,17 +1,17 @@
-// Module ID: 13320
-// Function ID: 13321
+// Module ID: 13591
+// Function ID: 13592
 // Name: useJoinRequestButtonActions
-// Dependencies: [5, 32, 19, 2068, 1087, 4904, 1128, 7224, 5155, 6396, 5037, 13321, 2002, 2]
+// Dependencies: [5, 32, 19, 4855, 1087, 5695, 1128, 7379, 5242, 6875, 5037, 13592, 2002, 2]
 // Exports: useJoinRequestButtonActions
 
-// Module 13320 (useJoinRequestButtonActions)
+// Module 13591 (useJoinRequestButtonActions)
 import Constants from "Constants" /* 1087 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -59,7 +59,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -126,7 +126,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
             obj4.hideActionSheet();
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp49) {
           onDismiss = tmp49;
           if (0 === c3) {
@@ -157,7 +157,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { joinRequest: tmp, onError, onDismiss };
-        const tmp10 = asyncRequire(13321, dependencyMap.paths);
+        const tmp10 = asyncRequire(13592, dependencyMap.paths);
         openLazy(tmp10, "RejectionReason-" + joinRequestId, obj);
       }
     }, items2),
@@ -181,7 +181,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -292,7 +292,7 @@ export const useJoinRequestButtonActions = function useJoinRequestButtonActions(
           obj6.hideActionSheet();
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp56) {
         onDismiss = tmp56;
         if (0 === c3) {

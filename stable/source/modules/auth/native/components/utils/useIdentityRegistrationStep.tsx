@@ -1,18 +1,18 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 17409
+// Function ID: 17410
 // Name: useIdentityRegistrationStep
-// Dependencies: [5, 32, 19, 17065, 17066, 1087, 558, 576, 1505, 17062, 1128, 17076, 5983, 6907, 17073, 1107, 17064, 1506, 6922, 6916, 7299, 2]
+// Dependencies: [5, 32, 19, 17399, 17400, 1087, 558, 576, 1505, 17396, 1128, 17410, 6498, 7073, 17407, 1107, 17398, 1506, 7088, 7082, 7452, 2]
 
-// Module 17075 (useIdentityRegistrationStep)
+// Module 17409 (useIdentityRegistrationStep)
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 6922 */;
-import ValidationUtilsDefault from "ValidationUtils" /* 7299 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7088 */;
+import ValidationUtilsDefault from "ValidationUtils" /* 7452 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17065 */;
-import RegistrationConstants from "RegistrationConstants" /* 17066 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17399 */;
+import RegistrationConstants from "RegistrationConstants" /* 17400 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -138,7 +138,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIdentityR
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let tmp51;
@@ -175,7 +175,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIdentityR
             found = closure_3;
             if (closure_3 instanceof sourceState(context[12]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               let obj3 = sourceState(context[13]);
               tmp51 = obj3.getAuthenticationErrorsFromAPIError(closure_3);
@@ -250,7 +250,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIdentityR
             obj13 = { phone };
             push(VERIFY_PHONE, obj12);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp51) {
           if (0 === c5) {
@@ -325,7 +325,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIdentityR
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -361,7 +361,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIdentityR
             found = closure_5;
             if (closure_5 instanceof sourceState(navigation[12]).CaptchaCancelError) {
               c7 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               let obj3 = sourceState(navigation[13]);
               tmp = obj3.getAuthenticationErrorsFromAPIError(closure_5);
@@ -436,7 +436,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useIdentityR
             obj13 = { phone };
             push(VERIFY_PHONE, obj12);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp51) {
           closure_4 = tmp51;

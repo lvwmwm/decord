@@ -9,7 +9,7 @@ import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("../discord_common/js/packages/flux/BatchedStoreListener.tsx");
 class BatchedStoreListener {
-  constructor(items, memo) {
+  constructor(items, update) {
     let obj = Object.create(new.target.prototype);
     obj.handleStoreChange = function handleStoreChange() {
       obj = EmitterDefault;
@@ -20,7 +20,7 @@ class BatchedStoreListener {
       }
     };
     obj.stores = items;
-    obj.changeCallback = memo;
+    obj.changeCallback = update;
     return obj;
   }
   attach(arg0) {

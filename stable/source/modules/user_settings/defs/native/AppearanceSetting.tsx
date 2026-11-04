@@ -1,27 +1,27 @@
-// Module ID: 16319
-// Function ID: 16320
+// Module ID: 16652
+// Function ID: 16653
 // Name: AppearanceSetting
-// Dependencies: [5032, 1210, 1087, 558, 576, 5127, 504, 1254, 9610, 1128, 2821, 11084, 16320, 16322, 2]
+// Dependencies: [5027, 1210, 1087, 558, 576, 5237, 504, 1254, 9742, 1128, 2768, 11240, 16653, 16655, 2]
 
-// Module 16319 (AppearanceSetting)
+// Module 16652 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import ThemeConstants from "ThemeConstants" /* 1210 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1254 */;
-import useThemeDefault from "useTheme" /* 5127 */;
-import useActiveTheme from "useActiveTheme" /* 9610 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16320 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5032 */;
+import useThemeDefault from "useTheme" /* 5237 */;
+import useActiveTheme from "useActiveTheme" /* 9742 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16653 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5027 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp4;
-const _modDef2821 = tmp4(2821);
+const _modDef2768 = tmp4(2768);
 const ActiveThemeType = ThemeConstants.ActiveThemeType;
 const UserSettingsSections = Constants.UserSettingsSections;
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppearanceSettingTrailing() {
@@ -62,7 +62,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppeara
     const _Symbol2 = Symbol;
     if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
       const intl2 = tmp(1128).intl;
-      const stringResult = intl2.string(_modDef2821.KSBBpC);
+      const stringResult = intl2.string(_modDef2768.KSBBpC);
       cResult[4] = stringResult;
       tmp19 = stringResult;
     } else {
@@ -118,7 +118,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAppeara
   const activeThemeType = obj3.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
     const intl2 = tmp4(1128).intl;
-    return intl2.string(_modDef2821.KSBBpC);
+    return intl2.string(_modDef2768.KSBBpC);
   } else if (ActiveThemeType.CLIENT === activeThemeType) {
     let name;
     if (stateFromStores != null) {

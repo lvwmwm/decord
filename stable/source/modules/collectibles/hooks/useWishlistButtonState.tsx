@@ -1,14 +1,14 @@
-// Module ID: 9324
-// Function ID: 9325
+// Module ID: 9454
+// Function ID: 9455
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 7586, 7130, 2034, 504, 9271, 9279, 5065, 1128, 2]
+// Dependencies: [5, 32, 19, 7735, 7285, 2033, 504, 9401, 9409, 5010, 1128, 2]
 // Exports: useWishlistButtonState
 
-// Module 9324 (useWishlistButtonState)
+// Module 9454 (useWishlistButtonState)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7586 */;
+import UserProfileStore from "UserProfileStore" /* 7735 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -84,7 +84,7 @@ export const useWishlistButtonState = function useWishlistButtonState(onRemoveSu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -200,7 +200,7 @@ export const useWishlistButtonState = function useWishlistButtonState(onRemoveSu
             closure_129_10(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp81) {
           onAddSuccess = tmp81;
           if (0 === c3) {

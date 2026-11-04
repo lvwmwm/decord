@@ -1,23 +1,23 @@
-// Module ID: 11022
-// Function ID: 11023
-// Dependencies: [19, 17, 2068, 4845, 2119, 1087, 1504, 21, 5191, 587, 558, 576, 8724, 1128, 6190, 7329, 1267, 504, 5155, 5081, 1631, 5128, 11023, 5187, 5479, 7092, 2]
+// Module ID: 10779
+// Function ID: 10780
+// Dependencies: [19, 17, 4855, 4935, 4906, 1087, 1504, 21, 5003, 587, 558, 576, 8852, 1128, 6704, 7481, 1267, 504, 5242, 5191, 1631, 5701, 10780, 5266, 5276, 7253, 2]
 
-// Module 11022
+// Module 10779
 import nativeDefault from "native" /* 587 */;
 import intl5 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1504 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import transitionToGuild2 from "transitionToGuild" /* 7329 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import transitionToGuild2 from "transitionToGuild" /* 7481 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

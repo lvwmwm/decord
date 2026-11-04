@@ -1,17 +1,17 @@
-// Module ID: 7442
-// Function ID: 7443
+// Module ID: 7595
+// Function ID: 7596
 // Name: ReferralTrialActionCreators
-// Dependencies: [5, 7443, 1406, 2119, 1087, 1297, 569, 1104, 584, 1257, 7445, 2]
+// Dependencies: [5, 7596, 1406, 4906, 1087, 1297, 569, 1104, 584, 1257, 7598, 2]
 // Exports: createReferralTrial, createReferralTrials, fetchReferralEligibleUsers, fetchReferralsRemaining, maybeFetchRecipientEligibility, resolveReferralTrialOffer
 
-// Module 7442 (ReferralTrialActionCreators)
+// Module 7595 (ReferralTrialActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7443 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7596 */;
 import UserRecord from "UserRecord" /* 1406 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import Constants from "Constants" /* 1087 */;
 import Backoff from "Backoff" /* 569 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ obj = function _maybeFetchRecipientEligibility() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -136,7 +136,7 @@ obj = function _maybeFetchRecipientEligibility() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp23) {
           if (0 === c3) {
             c5 = 3;
@@ -166,7 +166,7 @@ obj = function _createReferralTrials() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {

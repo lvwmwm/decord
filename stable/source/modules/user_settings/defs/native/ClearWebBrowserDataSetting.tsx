@@ -1,16 +1,16 @@
-// Module ID: 16540
-// Function ID: 16541
+// Module ID: 16870
+// Function ID: 16871
 // Name: ClearWebBrowserDataSetting
-// Dependencies: [5, 8260, 5405, 1128, 5152, 4904, 11084, 1384, 1107, 2]
+// Dependencies: [5, 8364, 5946, 1128, 5725, 5695, 11240, 1384, 1107, 2]
 
-// Module 16540 (ClearWebBrowserDataSetting)
+// Module 16870 (ClearWebBrowserDataSetting)
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import BrowserManager from "BrowserManager" /* 5152 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
+import BrowserManager from "BrowserManager" /* 5725 */;
+import SettingsConstants from "SettingsConstants" /* 8364 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SettingBuilders from "SettingBuilders" /* 11084 */;
+import SettingBuilders from "SettingBuilders" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -56,7 +56,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -90,7 +90,7 @@ let obj = {
             intl = tmp3(c2[3]).intl;
             open("web-browser-data-cleared", obj6);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp6) {
           c2 = 3;

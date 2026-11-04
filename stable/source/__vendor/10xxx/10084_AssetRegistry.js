@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/perks", width: 24, height: 24, scales: [2, 3], hash: "e1a87d01a93be51b22f843cb3d1f52e8", name: "img_nitro_sticker_yellow_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/stream_feedback/dark-theme-desaturated", width: 64, height: 64, scales: [2, 3], hash: "8c873b9cb75ee33da36a337b20746c97", name: "feedback-modal-sad-desaturated", type: "png" });

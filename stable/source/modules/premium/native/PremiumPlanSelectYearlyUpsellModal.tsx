@@ -1,24 +1,24 @@
-// Module ID: 14631
-// Function ID: 14632
+// Module ID: 14898
+// Function ID: 14899
 // Name: PremiumPlanSelectYearlyUpsellModal
-// Dependencies: [32, 19, 17, 2132, 7403, 14618, 1394, 1098, 21, 5191, 6162, 6225, 558, 576, 7397, 504, 1903, 5128, 14632, 1202, 1128, 5479, 5498, 4864, 2]
+// Dependencies: [32, 19, 17, 2068, 7556, 14885, 1394, 1098, 21, 5003, 6683, 6739, 558, 576, 7550, 504, 1903, 5701, 14899, 1202, 1128, 5276, 6010, 2053, 2]
 
-// Module 14631 (PremiumPlanSelectYearlyUpsellModal)
+// Module 14898 (PremiumPlanSelectYearlyUpsellModal)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1098 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import AlertDefault from "Alert" /* 5498 */;
-import TextStylesDefault from "TextStyles" /* 6162 */;
-import LegacyTokens from "LegacyTokens" /* 6225 */;
-import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14618 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14632 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import AlertDefault from "Alert" /* 6010 */;
+import TextStylesDefault from "TextStyles" /* 6683 */;
+import LegacyTokens from "LegacyTokens" /* 6739 */;
+import PremiumPlanSelectStore from "PremiumPlanSelectStore" /* 14885 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14899 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
-import IAPStore from "IAPStore" /* 7403 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
+import IAPStore from "IAPStore" /* 7556 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -266,7 +266,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
   const tmp2 = usePremiumPlanSelectStore((isPurchasing) => isPurchasing.isPurchasing);
   [tmp4, c3] = _slicedToArray(react.useState(null), 2);
   const tmp3 = _slicedToArray(react.useState(null), 2);
-  const obj2 = productId(7397);
+  const obj2 = productId(7550);
   const premiumBundledItemsFromProductId = obj2.getPremiumBundledItemsFromProductId(productId);
   let items = [LocaleStore];
   const obj3 = productId(504);
@@ -311,7 +311,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
     format = intl.format;
     obj9 = { discountPercentage: formatPercentResult, planName: tmp5Result2.getPremiumTypeDisplayName(premiumTier) };
     LQCVfK = tmp5(1128).t.LQCVfK;
-    tmp5Result2 = productId(4864);
+    tmp5Result2 = productId(2053);
     items2[1] = closure_10(LegacyText, obj8);
     const obj10 = { style: tmp.description, children: intl2.format(productId(1128).t["7chOVL"], obj11) };
     const LegacyText2 = tmp5(1202).LegacyText;
@@ -329,7 +329,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
       disabled: tmp2 || tmp9[1],
       loading: "upsell" === tmp4 && tmp2
     };
-    Button = tmp5(5479).Button;
+    Button = tmp5(5276).Button;
     intl3 = tmp5(1128).intl;
     obj14 = { price: orderPriceString };
     items2[3] = closure_10(View, obj12);
@@ -344,12 +344,12 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPla
       disabled: tmp2 || tmp9[1],
       loading: "default" === tmp4 && tmp2
     };
-    Button2 = tmp5(5479).Button;
+    Button2 = tmp5(5276).Button;
     intl4 = tmp5(1128).intl;
     items2[4] = closure_10(View, obj15);
     const obj17 = { style: tmp.cancelButton, children: closure_10(Button3, obj18) };
     obj18 = { variant: "tertiary", text: intl5.string(productId(1128).t.cpT0Cq), onPress: onClose };
-    Button3 = tmp5(5479).Button;
+    Button3 = tmp5(5276).Button;
     intl5 = tmp5(1128).intl;
     items2[5] = closure_10(View, obj17);
     return closure_10(tmp19, obj5);

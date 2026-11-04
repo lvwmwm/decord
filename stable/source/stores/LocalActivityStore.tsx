@@ -1,28 +1,28 @@
-// Module ID: 10974
-// Function ID: 10975
+// Module ID: 11226
+// Function ID: 11227
 // Name: LocalActivityStore
-// Dependencies: [32, 2067, 5540, 2021, 10975, 10976, 6016, 1246, 6153, 2068, 2040, 11075, 2119, 5211, 1087, 2044, 10837, 12, 11076, 11077, 7701, 1357, 11078, 1405, 504, 584, 2]
+// Dependencies: [32, 4854, 2045, 2021, 11227, 11228, 6531, 1246, 6674, 4855, 2039, 11231, 4906, 5748, 1087, 4831, 11089, 12, 11232, 11233, 7852, 1357, 11234, 1405, 504, 584, 2]
 
-// Module 10974 (LocalActivityStore)
+// Module 11226 (LocalActivityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _modDef1357 from "module_1357" /* 1357 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import ActivityFlagUtils from "ActivityFlagUtils" /* 11078 */;
+import ActivityFlagUtils from "ActivityFlagUtils" /* 11234 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import RunningGameStore from "RunningGameStore" /* 2021 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 10975 */;
-import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 10976 */;
-import SpotifyStore from "SpotifyStore" /* 6016 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 11227 */;
+import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 11228 */;
+import SpotifyStore from "SpotifyStore" /* 6531 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import DetectableGameStore from "DetectableGameStore" /* 2040 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 11075 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
-import SessionsStore from "SessionsStore" /* 5211 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6674 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import DetectableGameStore from "DetectableGameStore" /* 2039 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 11231 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
+import SessionsStore from "SessionsStore" /* 5748 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 

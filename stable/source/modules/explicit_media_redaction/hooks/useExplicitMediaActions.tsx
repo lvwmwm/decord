@@ -1,10 +1,10 @@
-// Module ID: 12613
-// Function ID: 12614
+// Module ID: 12863
+// Function ID: 12864
 // Name: useExplicitMediaActions
-// Dependencies: [5, 32, 19, 5891, 2]
+// Dependencies: [5, 32, 19, 6406, 2]
 // Exports: useExplicitMediaActions
 
-// Module 12613 (useExplicitMediaActions)
+// Module 12863 (useExplicitMediaActions)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -43,7 +43,7 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ export const useExplicitMediaActions = function useExplicitMediaActions(onError)
             closure_129_3(false);
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp35) {
           closure_2 = tmp35;
           if (0 === v0) {

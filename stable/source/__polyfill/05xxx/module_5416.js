@@ -1,50 +1,106 @@
 // Module ID: 5416
 // Function ID: 5417
-// Dependencies: [19, 17, 5412]
-// Exports: useTabsHost
+// Dependencies: [19, 5372, 5415]
+// Exports: useReanimatedEventHandler
 
 // Module 5416
-import react_native from "react-native" /* 17 */;
-import RNSLog2 from "RNSLog" /* 5412 */;
-import react_mod from "react" /* 19 */;
+import Reanimated2 from "Reanimated" /* 5372 */;
+import eventHandler from "eventHandler" /* 5415 */;
+import react from "react" /* 19 */;
 
-let react = react_mod;
-const findNodeHandle = react_native.findNodeHandle;
+const require = globalThis.__r;
+let _require, dependencyMap;
 
-export const useTabsHost = function useTabsHost(arg0) {
-  let items;
-  let onTabSelected;
-  let ref;
-  let ref2;
-  ({ componentNodeRef: require, onTabSelected } = arg0);
-  react = undefined;
-  react = react.useRef(-1);
-  const effect = react.useEffect(() => {
-    if (null != require.current) {
-      let num2 = findNodeHandle(tmp.current);
-      const tmp3 = ref2;
-      if (num2 == null) {
-        num2 = -1;
-      }
-      tmp3.current = num2;
-    } else {
-      ref2.current = -1;
+let c2;
+let c3;
+let closure_4;
+({ useEffect: c2, useMemo: c3, useRef: closure_4 } = react);
+let closure_5 = ["onGestureHandlerReanimatedEvent", "onGestureHandlerReanimatedStateChange", "onGestureHandlerReanimatedTouchEvent"];
+const onUpdate = function n() {
+
+};
+onUpdate.__closure = {};
+onUpdate.__workletHash = 763644533783;
+onUpdate.__initData = { code: "function pnpm_useReanimatedEventHandlerTs1(){}" };
+let Reanimated = Reanimated2.Reanimated;
+let mutable;
+if (Reanimated != null) {
+  mutable = Reanimated.makeMutable({});
+}
+function deleteHandlerEventEntry(arg0) {
+  delete mutable.value[arg0];
+}
+deleteHandlerEventEntry.__closure = { lastUpdateEventMap: mutable };
+deleteHandlerEventEntry.__workletHash = 8348834805583;
+deleteHandlerEventEntry.__initData = { code: "function deleteHandlerEventEntry_Pnpm_useReanimatedEventHandlerTs2(handlerTag){const{lastUpdateEventMap}=this.__closure;delete lastUpdateEventMap.value[handlerTag];}" };
+const __initData = { code: "function pnpm_useReanimatedEventHandlerTs3(event){const{lastUpdateEventMap,eventHandler,handlerTag,workletizedHandlers,changeEventCalculator,fillInDefaultValues}=this.__closure;let context=lastUpdateEventMap.value[event.handlerTag];if(context===undefined){context={lastUpdateEvent:undefined};lastUpdateEventMap.value[event.handlerTag]=context;}eventHandler(handlerTag,event,workletizedHandlers,changeEventCalculator,context,false,fillInDefaultValues);}" };
+
+export const useReanimatedEventHandler = function useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, changeEventCalculator, fillInDefaultValues) {
+  _require = handlerTag;
+  dependencyMap = memoizedGestureCallbacks;
+  let closure_2 = changeEventCalculator;
+  let closure_3 = fillInDefaultValues;
+  const items = [memoizedGestureCallbacks];
+  let tmp = closure_3(() => {
+    let obj;
+    const Reanimated = Reanimated2.Reanimated;
+    let isWorkletFunctionResult;
+    if (Reanimated != null) {
+      isWorkletFunctionResult = Reanimated.isWorkletFunction(memoizedGestureCallbacks.onUpdate);
     }
-  }, []);
-  const obj = {
-    onTabSelected: react.useCallback((nativeEvent) => {
-      const RNSLog = RNSLog2.RNSLog;
-      let num = ref2.current;
-      const log = RNSLog.log;
-      if (num == null) {
-        num = -1;
-      }
-      log("TabsHost [" + num + "] onTabSelected: " + JSON.stringify(nativeEvent.nativeEvent));
-      if (onTabSelected != null) {
-        onTabSelected(nativeEvent);
-      }
-    }, items)
+    if (isWorkletFunctionResult) {
+      obj = tmp3;
+    } else {
+      obj = { onUpdate };
+      const merged = Object.assign(tmp3);
+    }
+    return obj;
+  }, items);
+  let closure_4 = tmp;
+  const fn = function h(handlerTag) {
+    let tmp = mutable.value[handlerTag.handlerTag];
+    if (undefined === tmp) {
+      const obj = { lastUpdateEvent: "r" };
+      iter.value[handlerTag.handlerTag] = obj;
+      tmp = obj;
+    }
+    const obj2 = eventHandler;
+    obj2.eventHandler(current, handlerTag, closure_4, changeEventCalculator, tmp, false, fillInDefaultValues);
   };
-  items = [onTabSelected];
-  return obj;
+  let obj = { lastUpdateEventMap: mutable, eventHandler: require("eventHandler").eventHandler, handlerTag, workletizedHandlers: tmp, changeEventCalculator, fillInDefaultValues };
+  fn.__closure = obj;
+  fn.__workletHash = 3272953373395;
+  fn.__initData = __initData;
+  const tmp2 = closure_4(handlerTag);
+  closure_5 = tmp2;
+  const items1 = [handlerTag];
+  const current = tmp2.current;
+  const tmp3 = closure_2(() => {
+    closure_5.current = current;
+    return () => {
+      const Reanimated = closure_0(memoizedGestureCallbacks[1]).Reanimated;
+      if (Reanimated != null) {
+        const runOnUI = Reanimated.runOnUI;
+        if (runOnUI != null) {
+          runOnUI(deleteHandlerEventEntry)(closure_1_0);
+        }
+      }
+    };
+  }, items1);
+  let Reanimated = require("Reanimated").Reanimated;
+  let event;
+  if (Reanimated != null) {
+    let tmp5 = current !== handlerTag;
+    const useEvent = Reanimated.useEvent;
+    const tmp6 = closure_5;
+    if (!tmp5) {
+      let doDependenciesDiffer;
+      if (handler != null) {
+        doDependenciesDiffer = handler.doDependenciesDiffer;
+      }
+      tmp5 = doDependenciesDiffer;
+    }
+    event = useEvent(fn, tmp6, tmp5);
+  }
+  return event;
 };

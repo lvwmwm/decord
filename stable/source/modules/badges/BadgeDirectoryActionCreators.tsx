@@ -1,10 +1,10 @@
-// Module ID: 8595
-// Function ID: 8596
+// Module ID: 8718
+// Function ID: 8719
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1392, 1087, 584, 1297, 5985, 5990, 1257, 569, 1104, 2]
+// Dependencies: [5, 1392, 1087, 584, 1297, 6500, 6505, 1257, 569, 1104, 2]
 // Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8595 (BadgeDirectoryActionCreators)
+// Module 8718 (BadgeDirectoryActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -158,7 +158,7 @@ obj = function _fetchBadge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -216,7 +216,7 @@ obj = function _fetchBadge() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp28) {
           closure_5 = tmp28;
           if (0 === c6) {
@@ -249,7 +249,7 @@ obj = function _requestBadgeSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -316,7 +316,7 @@ obj = function _requestBadgeSummary() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp47) {
           closure_6 = tmp47;

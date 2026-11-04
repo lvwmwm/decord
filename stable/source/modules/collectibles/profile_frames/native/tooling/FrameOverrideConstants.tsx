@@ -1,9 +1,9 @@
-// Module ID: 8604
-// Function ID: 8605
+// Module ID: 8727
+// Function ID: 8728
 // Name: FrameOverrideConstants
 // Dependencies: [2]
 
-// Module 8604 (FrameOverrideConstants)
+// Module 8727 (FrameOverrideConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/tooling/FrameOverrideConstants.tsx");

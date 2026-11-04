@@ -1,12 +1,12 @@
-// Module ID: 18959
-// Function ID: 18960
+// Module ID: 19322
+// Function ID: 19323
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 558, 576, 16270, 16285, 1128, 5400, 1202, 38, 4903, 2]
+// Dependencies: [5, 32, 19, 558, 576, 16603, 16618, 1128, 5941, 1202, 38, 5694, 2]
 
-// Module 18959 (useArchiveOrDelete)
+// Module 19322 (useArchiveOrDelete)
 import intl13 from "intl" /* 1128 */;
-import ToastUtilsAll from "ToastUtils" /* 4903 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16285 */;
+import ToastUtilsAll from "ToastUtils" /* 5694 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16618 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -188,7 +188,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -261,7 +261,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
                 navigation.goBack();
               }
               c2 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp30) {
             c2 = 3;
@@ -505,7 +505,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -578,7 +578,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useArchive
               closure_128_3.goBack();
             }
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp30) {
           c2 = 3;

@@ -1,26 +1,26 @@
-// Module ID: 5528
-// Function ID: 5529
+// Module ID: 6038
+// Function ID: 6039
 // Name: SoundboardStore
-// Dependencies: [32, 1246, 5209, 1392, 5529, 5530, 1087, 1097, 5228, 4797, 12, 2044, 1267, 5351, 11, 504, 5531, 584, 2]
+// Dependencies: [32, 1246, 5746, 1392, 6039, 6040, 1087, 1097, 5762, 2049, 12, 4831, 1267, 5891, 11, 504, 6041, 584, 2]
 
-// Module 5528 (SoundboardStore)
+// Module 6038 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import FrecencyDefault from "Frecency" /* 5228 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5351 */;
-import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5531 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import FrecencyDefault from "Frecency" /* 5762 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5891 */;
+import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 6041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
 import UserStore from "UserStore" /* 1392 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5529 */;
-import SoundboardConstants from "SoundboardConstants" /* 5530 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6039 */;
+import SoundboardConstants from "SoundboardConstants" /* 6040 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ let obj2 = {
     return 100;
   },
   computeWeight(arg0) {
-    const obj = _modDef4797();
+    const obj = _modDef2049();
     if (arg0 > obj.diff(closure_22, "days")) {
       return 0;
     } else {
@@ -223,8 +223,8 @@ class SoundboardStore extends Store {
   hasFetchedDefaultSounds() {
     return FETCHED === obj.FETCHED;
   }
-  isUserPlayingSounds(userId) {
-    const value = map3.get(userId);
+  isUserPlayingSounds(id) {
+    const value = map3.get(id);
     return null != value && value > 0;
   }
   isPlayingSound(soundId) {
@@ -510,7 +510,7 @@ const obj3 = {
     const guildId = topSoundsMetadata.guildId;
     const obj = { soundIds: topSoundsMetadata.map((soundId) => soundId.soundId), topSoundsTTL: addResult.valueOf() };
     set = map1.set;
-    const obj2 = _modDef4797();
+    const obj2 = _modDef2049();
     addResult = obj2.add(1, "days");
     const result = set(guildId, obj);
   }

@@ -1,21 +1,21 @@
-// Module ID: 7465
-// Function ID: 7466
+// Module ID: 7618
+// Function ID: 7619
 // Name: modules/Messages
-// Dependencies: [5, 32, 6013, 2068, 7466, 3, 6012, 2094, 7472, 7475, 2095, 11, 2]
+// Dependencies: [5, 32, 6528, 4855, 7619, 3, 6527, 4881, 7625, 7628, 4882, 11, 2]
 // Exports: isLikelyNotDelta
 
-// Module 7465 (modules/Messages)
+// Module 7618 (modules/Messages)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
-import _mod2095 from "module_2095" /* 2095 */;
-import requireSortedDescending from "requireSortedDescending" /* 6012 */;
-import isReadableChannel from "isReadableChannel" /* 7472 */;
-import KvMessage2 from "KvMessage" /* 7475 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4881 */;
+import _mod4882 from "module_4882" /* 4882 */;
+import requireSortedDescending from "requireSortedDescending" /* 6527 */;
+import isReadableChannel from "isReadableChannel" /* 7625 */;
+import KvMessage2 from "KvMessage" /* 7628 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import SaveableChannelsStore from "SaveableChannelsStore" /* 7466 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import SaveableChannelsStore from "SaveableChannelsStore" /* 7619 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, importDefault;
@@ -140,7 +140,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -200,7 +200,7 @@ class Messages {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -351,7 +351,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channel_id, item10009, result);
-    put(guildId, channel_id, fromMessageResult, _mod2095.ConflictOptions.Skip);
+    put(guildId, channel_id, fromMessageResult, _mod4882.ConflictOptions.Skip);
   }
   upsertOne(guildId, channelId, message, database) {
     const obj = DatabaseDaosDefault;
@@ -360,7 +360,7 @@ class Messages {
     const put = messagesTransactionResult.put;
     const KvMessage = KvMessage2.KvMessage;
     const fromMessageResult = KvMessage.fromMessage(guildId, channelId, message, result);
-    put(guildId, channelId, fromMessageResult, _mod2095.ConflictOptions.Replace);
+    put(guildId, channelId, fromMessageResult, _mod4882.ConflictOptions.Replace);
     messagesTransactionResult.trimChannel(guildId, channelId, SaveableChannelsStore.saveLimit(channelId));
   }
   upsertMany(guild_id, channelId, messages, database) {
@@ -416,7 +416,7 @@ class Messages {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -468,7 +468,7 @@ class Messages {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp13) {
           c3 = 3;
           throw tmp13;

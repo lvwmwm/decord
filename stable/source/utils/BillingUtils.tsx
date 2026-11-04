@@ -1,15 +1,15 @@
-// Module ID: 4879
-// Function ID: 4880
+// Module ID: 4819
+// Function ID: 4820
 // Name: BillingUtils
-// Dependencies: [5, 1098, 4880, 1257, 1297, 4886, 2]
+// Dependencies: [5, 1098, 4820, 1257, 1297, 4826, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError
 
-// Module 4879 (BillingUtils)
+// Module 4819 (BillingUtils)
 import Constants from "Constants" /* 1098 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import BraintreeUtils from "BraintreeUtils" /* 4880 */;
-import BillingErrorDefault from "BillingError" /* 4886 */;
+import BraintreeUtils from "BraintreeUtils" /* 4820 */;
+import BillingErrorDefault from "BillingError" /* 4826 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _createGatewayCheckoutContext() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

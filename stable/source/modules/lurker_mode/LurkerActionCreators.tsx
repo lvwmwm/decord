@@ -1,15 +1,15 @@
-// Module ID: 7315
-// Function ID: 7316
+// Module ID: 7467
+// Function ID: 7468
 // Name: LurkerActionCreators
-// Dependencies: [5, 5209, 4846, 1087, 584, 1297, 1388, 2]
+// Dependencies: [5, 5746, 4936, 1087, 584, 1297, 1388, 2]
 // Exports: stopLurking
 
-// Module 7315 (LurkerActionCreators)
+// Module 7467 (LurkerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
-import LurkingStore from "LurkingStore" /* 4846 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
+import LurkingStore from "LurkingStore" /* 4936 */;
 import size from "module_2" /* 2 */;
 
 let c0, c2, c3, closure_3, closure_4, length, lurkingSource, map;
@@ -31,7 +31,7 @@ let obj = function _stopLurkingAll() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -80,7 +80,7 @@ let obj = function _stopLurkingAll() {
                                   } else if (arg0 === 2) {
                                     return { value, done: true };
                                   } else {
-                                    return { value: "IconComponent", done: null };
+                                    return { value: "IconComponent", done: "+352" };
                                   }
                                 } else {
                                   try {
@@ -127,7 +127,7 @@ let obj = function _stopLurkingAll() {
                                         c5 = 0;
                                       }
                                       c7 = 3;
-                                      return { value: "IconComponent", done: null };
+                                      return { value: "IconComponent", done: "+352" };
                                     }
                                   } catch (tmp18) {
                                     closure_4 = tmp18;
@@ -159,7 +159,7 @@ let obj = function _stopLurkingAll() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp10) {
         c1 = 3;
         throw tmp10;

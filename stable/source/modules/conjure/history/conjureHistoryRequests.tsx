@@ -1,19 +1,16 @@
-// Module ID: 12095
-// Function ID: 12096
+// Module ID: 12296
+// Function ID: 12297
 // Name: conjureHistoryRequests
-// Dependencies: [5, 11063, 11057, 12096, 11015, 2]
-// Exports: createDatabaseRestorePoint, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchSourceHistory, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry
+// Dependencies: [5, 10826, 10818, 12297, 10772, 2]
+// Exports: createDatabaseRestorePoint, fetchDatabaseRestorePoints, fetchDatabaseRestoreWindow, fetchVersionHistory, restoreDatabaseToPoint, restoreDatabaseToTimestamp, restoreSourceHistoryEntry
 
-// Module 12095 (conjureHistoryRequests)
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11063 */;
+// Module 12296 (conjureHistoryRequests)
+import conjureWorkerFetch from "conjureWorkerFetch" /* 10826 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c7, label;
+let c2, c7, label;
 
-function fetchVersionHistory() {
-  return obj(...arguments);
-}
 let obj = function _fetchVersionHistory() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_1;
@@ -31,7 +28,7 @@ let obj = function _fetchVersionHistory() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -115,16 +112,6 @@ let obj = function _fetchVersionHistory() {
   });
   return obj(...arguments);
 };
-obj = function _fetchSourceHistory() {
-  obj = _asyncToGenerator(async (arg0) => {
-    let c1;
-    let c2;
-    let closure_0 = arg0;
-    await fetchVersionHistory(closure_0);
-    return arg1.entries;
-  });
-  return obj(...arguments);
-};
 obj = function _restoreSourceHistoryEntry() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let obj12;
@@ -140,7 +127,7 @@ obj = function _restoreSourceHistoryEntry() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -265,7 +252,7 @@ obj = function _fetchDatabaseRestorePoints() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -356,7 +343,7 @@ obj = function _fetchDatabaseRestoreWindow() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -438,7 +425,7 @@ obj = function _createDatabaseRestorePoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -541,7 +528,7 @@ obj = function _settleDatabaseRestore() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c5;
@@ -622,7 +609,7 @@ obj = function _restoreDatabaseToPoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -685,7 +672,7 @@ obj = function _restoreDatabaseToTimestamp() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -730,8 +717,7 @@ obj = function _restoreDatabaseToTimestamp() {
 };
 let result = size.fileFinishedImporting("modules/conjure/history/conjureHistoryRequests.tsx");
 
-export { fetchVersionHistory };
-export const fetchSourceHistory = function fetchSourceHistory() {
+export const fetchVersionHistory = function fetchVersionHistory() {
   return obj(...arguments);
 };
 export const restoreSourceHistoryEntry = function restoreSourceHistoryEntry() {

@@ -1,21 +1,21 @@
-// Module ID: 8787
-// Function ID: 8788
+// Module ID: 8915
+// Function ID: 8916
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 2074, 8788, 5155, 8789, 2002, 8794, 9057, 2]
+// Dependencies: [5, 4861, 8916, 5242, 8917, 2002, 8922, 9184, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 8787 (GuildScheduledEventModalActionCreators)
+// Module 8915 (GuildScheduledEventModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2002 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 8788 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4861 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 8916 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(8794);
+const ScheduleUtils = tmp3(8922);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(8789, dependencyMap.paths);
+  const tmp4 = asyncRequire(8917, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -49,7 +49,7 @@ let obj = function _transitionToEventDetailsFromInvite() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -84,7 +84,7 @@ let obj = function _transitionToEventDetailsFromInvite() {
             }
             tmp7(obj);
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp16) {
           c5 = 3;
@@ -106,5 +106,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
 export const openEndEventModal = function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(9057, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(9184, dependencyMap.paths), closure_4, obj2);
 };

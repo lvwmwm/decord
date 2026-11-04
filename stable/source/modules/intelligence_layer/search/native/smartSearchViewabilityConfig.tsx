@@ -1,24 +1,22 @@
-// Module ID: 17839
-// Function ID: 17840
+// Module ID: 18210
+// Function ID: 18211
 // Name: smartSearchViewabilityConfig
-// Dependencies: [9614, 13007, 13005, 2]
+// Dependencies: [9746, 13279, 13277, 2]
 
-// Module 17839 (smartSearchViewabilityConfig)
-import SearchConstants from "SearchConstants" /* 9614 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13005 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13007 */;
+// Module 18210 (smartSearchViewabilityConfig)
+import SearchConstants from "SearchConstants" /* 9746 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13277 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13279 */;
 import size from "module_2" /* 2 */;
 
 const SearchListItemTypes = SearchConstants.SearchListItemTypes;
 let obj = {
   viewabilityConfig: { viewAreaCoveragePercentThreshold: 33, waitForInteraction: false },
-  onViewableItemsChanged(changed) {
-    changed = changed.changed;
-    const found = changed.find((item) => item.item.type === constants.SMART_SEARCH);
-    if (null != found) {
-      const obj = SmartSearchAnalyticsManagerDefault;
-      obj.setIsRowViewable(found.isViewable, SearchSessionAnalyticsManagerDefault);
-    }
+  onViewableItemsChanged(viewableItems) {
+    viewableItems = viewableItems.viewableItems;
+    const someResult = viewableItems.some((item) => item.item.type === constants.SMART_SEARCH);
+    const obj = SmartSearchAnalyticsManagerDefault;
+    obj.setIsRowViewable(someResult, SearchSessionAnalyticsManagerDefault);
   }
 };
 const items = [obj];

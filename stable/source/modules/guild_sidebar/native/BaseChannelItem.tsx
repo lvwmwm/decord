@@ -1,24 +1,24 @@
-// Module ID: 13034
-// Function ID: 13035
+// Module ID: 13306
+// Function ID: 13307
 // Name: BaseChannelItem
-// Dependencies: [109, 19, 17, 11895, 6223, 21, 5191, 587, 558, 576, 1385, 5187, 1202, 13035, 8817, 13036, 2]
+// Dependencies: [109, 19, 17, 12095, 6737, 21, 5003, 587, 558, 576, 1385, 5266, 1202, 13307, 8945, 13308, 2]
 // Exports: getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 13034 (BaseChannelItem)
+// Module 13306 (BaseChannelItem)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import ReadStateConstants from "ReadStateConstants" /* 6223 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13035 */;
-import TouchableBackgroundDefault from "TouchableBackground" /* 13036 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import ReadStateConstants from "ReadStateConstants" /* 6737 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 13307 */;
+import TouchableBackgroundDefault from "TouchableBackground" /* 13308 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12095 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp;
 let unpackModuleId;
-const native2 = tmp(8817);
+const native2 = tmp(8945);
 let closure_3 = ["icon", "name", "mode", "hideIcon", "disableHighlightOnPress", "channelInfo", "children", "unread"];
 const View = react_native.View;
 ({ CHANNEL_SUBTITLE_TEXT_VARIANT: metroImportDefault, CHANNEL_TITLE_LINE_HEIGHT: metroImportAll } = RedesignChannelListConstants);
@@ -109,7 +109,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelS
       }
     }
     const obj4 = { experimental_useNativeText: tmp9, lineClamp: 1, children: subtitle };
-    const Text = tmp(5187).Text;
+    const Text = tmp(5266).Text;
     const merged = Object.assign(tmp4);
     const tmp17 = authStore(Text, obj4);
     cResult[4] = tmp4;
@@ -628,7 +628,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelI
   if (!hideIcon) {
     const obj2 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: ALL_MESSAGES };
     const tmp6 = closure_10;
-    const tmp9 = hideIcon(13035);
+    const tmp9 = hideIcon(13307);
     if (mode === obj.UNREAD_LESS_IMPORTANT) {
       ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
     } else {
@@ -639,9 +639,9 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function BaseChannelI
   items1 = [tmp6Result, !hideIcon && icon, name, channelInfo];
   const tmp3Result = closure_11(tmp4, obj);
   if (flag) {
-    AnimatedPressableHighlight = hideIcon(13036);
+    AnimatedPressableHighlight = hideIcon(13308);
   } else {
-    AnimatedPressableHighlight = mode(8817).AnimatedPressableHighlight;
+    AnimatedPressableHighlight = mode(8945).AnimatedPressableHighlight;
   }
   const obj3 = { children: items2 };
   const merged1 = Object.assign(merged);

@@ -1,24 +1,24 @@
-// Module ID: 9562
-// Function ID: 9563
+// Module ID: 9695
+// Function ID: 9696
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 7281, 502, 2068, 7510, 5532, 7640, 1127, 1087, 5185, 558, 7246, 7635, 7258, 576, 1128, 9563, 11, 1297, 8186, 9564, 7637, 1405, 8026, 9566, 8171, 5206, 7445, 5399, 584, 5065, 1104, 10106, 13823, 2]
+// Dependencies: [32, 5, 19, 7434, 502, 4855, 7663, 6042, 7792, 1127, 1087, 5008, 558, 7401, 7787, 7413, 576, 1128, 9696, 11, 1297, 8336, 9697, 7789, 1405, 8178, 9699, 8321, 5743, 7598, 5940, 584, 5010, 1104, 10235, 14085, 2]
 // Exports: createThread
 
-// Module 9562 (ThreadCreationHooks)
+// Module 9695 (ThreadCreationHooks)
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import MessageConstants from "MessageConstants" /* 5185 */;
-import ThreadHooks from "ThreadHooks" /* 7246 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
-import DraftStore from "DraftStore" /* 7510 */;
-import MessageParserDefault from "MessageParser" /* 7635 */;
-import SlowmodeStore from "SlowmodeStore" /* 7640 */;
+import MessageConstants from "MessageConstants" /* 5008 */;
+import ThreadHooks from "ThreadHooks" /* 7401 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
+import DraftStore from "DraftStore" /* 7663 */;
+import MessageParserDefault from "MessageParser" /* 7787 */;
+import SlowmodeStore from "SlowmodeStore" /* 7792 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7281 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7434 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5532 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import MessageStore from "MessageStore" /* 6042 */;
 import ThreadConstants from "ThreadConstants" /* 1127 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
@@ -105,7 +105,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(7258);
+    const tmp17Result = tmp17(7413);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -228,7 +228,7 @@ let obj = function _createThread_() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -642,7 +642,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -741,7 +741,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -791,7 +791,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -890,7 +890,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateT
             obj = parentMessageId(threadSettings[22]);
             obj.clearAll(user.id, closure_2_9.FirstThreadMessage);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp42) {
           c7 = 3;
@@ -958,7 +958,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let tmp91;
@@ -1208,7 +1208,7 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCreateFor
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let tmp91;

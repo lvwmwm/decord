@@ -1,19 +1,19 @@
-// Module ID: 16556
-// Function ID: 16557
+// Module ID: 16886
+// Function ID: 16887
 // Name: AndroidNotificationLightsSetting
-// Dependencies: [16543, 8260, 558, 576, 1384, 16545, 1128, 11084, 15477, 16549, 2]
+// Dependencies: [16873, 8364, 558, 576, 1384, 16875, 1128, 11240, 15732, 16879, 2]
 
-// Module 16556 (AndroidNotificationLightsSetting)
+// Module 16886 (AndroidNotificationLightsSetting)
 import react from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import SettingsConstants from "SettingsConstants" /* 8260 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15477 */;
-import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16545 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16549 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16543 */;
+import SettingsConstants from "SettingsConstants" /* 8364 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15732 */;
+import SettingsNotificationUtils from "SettingsNotificationUtils" /* 16875 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16879 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16873 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11084 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 let c2;

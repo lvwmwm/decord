@@ -1,12 +1,12 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 18170
+// Function ID: 18171
 // Name: SmartSearchCitation
-// Dependencies: [5, 19, 9614, 21, 558, 576, 17777, 13007, 13005, 17828, 17808, 2]
+// Dependencies: [5, 19, 9746, 21, 558, 576, 18120, 13279, 13277, 18171, 18151, 2]
 
-// Module 17827 (SmartSearchCitation)
+// Module 18170 (SmartSearchCitation)
 import Fragment from "Fragment" /* 21 */;
-import SearchConstants from "SearchConstants" /* 9614 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 17828 */;
+import SearchConstants from "SearchConstants" /* 9746 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 18171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -121,7 +121,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -165,7 +165,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
         }
         onPressMessageItem(citation.channelId, citation.messageId);
         numCitationsPresented = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp12) {
         if (0 === index) {
           numCitationsPresented = 3;
@@ -214,7 +214,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -258,7 +258,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function SmartSearc
         }
         closure_128_4(closure_128_1.channelId, closure_128_1.messageId);
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp12) {
         if (0 === index) {
           c3 = 3;

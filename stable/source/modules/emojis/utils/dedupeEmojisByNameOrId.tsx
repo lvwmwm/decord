@@ -1,11 +1,11 @@
-// Module ID: 6250
-// Function ID: 6251
+// Module ID: 6762
+// Function ID: 6763
 // Name: dedupeEmojisByNameOrId
-// Dependencies: [4859, 2]
+// Dependencies: [4949, 2]
 // Exports: default
 
-// Module 6250 (dedupeEmojisByNameOrId)
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
+// Module 6762 (dedupeEmojisByNameOrId)
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4949 */;
 import size from "module_2" /* 2 */;
 
 let map;

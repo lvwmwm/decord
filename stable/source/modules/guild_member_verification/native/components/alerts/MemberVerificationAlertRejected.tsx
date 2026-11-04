@@ -1,13 +1,13 @@
-// Module ID: 6399
-// Function ID: 6400
+// Module ID: 6878
+// Function ID: 6879
 // Name: MemberVerificationAlertRejected
-// Dependencies: [5, 109, 19, 2128, 1392, 5035, 21, 558, 576, 6400, 504, 6401, 6396, 6424, 1128, 5479, 6392, 6485, 2]
+// Dependencies: [5, 109, 19, 4915, 1392, 5035, 21, 558, 576, 6879, 504, 6880, 6875, 6903, 1128, 5276, 6871, 6963, 2]
 
-// Module 6399 (MemberVerificationAlertRejected)
+// Module 6878 (MemberVerificationAlertRejected)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
 import UserStore from "UserStore" /* 1392 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
 import Fragment from "Fragment" /* 21 */;
@@ -218,7 +218,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
             const obj2 = tmp(stateFromStores[13]);
             const result = obj2.openMemberVerificationModal(tmp);
             c2 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp19) {
           c2 = 3;
@@ -379,7 +379,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -435,7 +435,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function MemberVerifi
           const obj2 = guildId(stateFromStores[13]);
           const result = obj2.openMemberVerificationModal(closure_128_0);
           stateFromStores = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp18) {
         stateFromStores = 3;

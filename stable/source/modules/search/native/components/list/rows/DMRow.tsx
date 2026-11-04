@@ -1,28 +1,28 @@
-// Module ID: 17786
-// Function ID: 17787
+// Module ID: 18129
+// Function ID: 18130
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 5181, 5207, 4855, 1087, 21, 5191, 587, 558, 576, 5057, 5187, 10538, 504, 9039, 1202, 8896, 14577, 17772, 2]
+// Dependencies: [5, 32, 19, 17, 5004, 5744, 4945, 1087, 21, 5003, 587, 558, 576, 5057, 5266, 10666, 504, 9166, 1202, 9023, 14844, 18115, 2]
 
-// Module 17786 (DMRow)
+// Module 18129 (DMRow)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import UserUtils from "UserUtils" /* 5057 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8896 */;
-import BotTagDefault from "BotTag" /* 9039 */;
-import ActivityStatusDefault from "ActivityStatus" /* 10538 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14577 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9023 */;
+import BotTagDefault from "BotTag" /* 9166 */;
+import ActivityStatusDefault from "ActivityStatus" /* 10666 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
+import PresenceStore from "PresenceStore" /* 5744 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -175,7 +175,7 @@ const memoResult = react.memo(function DMRow(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -215,7 +215,7 @@ const memoResult = react.memo(function DMRow(user) {
           c3 = 0;
           closure_128_8(false);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp20) {
         closure_2 = tmp20;

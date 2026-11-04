@@ -1,10 +1,10 @@
-// Module ID: 19148
-// Function ID: 19149
+// Module ID: 19522
+// Function ID: 19523
 // Name: libDiscoreSmokeTest
 // Dependencies: [5, 1087, 3, 566, 562, 559, 1267, 2]
 // Exports: default, formatErrorMessage, libDiscoreSmokeTest
 
-// Module 19148 (libDiscoreSmokeTest)
+// Module 19522 (libDiscoreSmokeTest)
 import LoggerDefault from "Logger" /* 3 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
 import initLibdiscore from "initLibdiscore" /* 566 */;
@@ -31,7 +31,7 @@ let obj = function _libDiscoreSmokeTest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ let obj = function _libDiscoreSmokeTest() {
           c6 = true;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp23) {
         closure_2 = tmp23;
         if (0 === c3) {

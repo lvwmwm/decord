@@ -1,14 +1,14 @@
-// Module ID: 9164
-// Function ID: 9165
+// Module ID: 9291
+// Function ID: 9292
 // Name: NativeRPCServer
-// Dependencies: [9165, 9166, 2]
+// Dependencies: [9292, 9293, 2]
 
-// Module 9164 (NativeRPCServer)
-import _mod9165 from "module_9165" /* 9165 */;
-import RPCServerDefault from "RPCServer" /* 9166 */;
+// Module 9291 (NativeRPCServer)
+import _mod9292 from "module_9292" /* 9292 */;
+import RPCServerDefault from "RPCServer" /* 9293 */;
 import size from "module_2" /* 2 */;
 
-const tmp2 = new RPCServerDefault(() => Promise.resolve(_mod9165));
+const tmp2 = new RPCServerDefault(() => Promise.resolve(_mod9292));
 const result = size.fileFinishedImporting("modules/rpc/native/NativeRPCServer.tsx");
 
 export default tmp2;

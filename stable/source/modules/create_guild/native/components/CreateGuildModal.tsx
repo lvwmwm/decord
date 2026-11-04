@@ -1,22 +1,22 @@
-// Module ID: 13375
-// Function ID: 13376
+// Module ID: 13646
+// Function ID: 13647
 // Name: CreateGuildModal
-// Dependencies: [19, 17, 4843, 6939, 1087, 21, 13157, 8962, 1267, 6377, 13374, 1275, 6478, 13376, 13405, 12978, 1128, 13414, 9599, 13419, 13420, 13432, 558, 576, 9632, 6965, 2]
+// Dependencies: [19, 17, 4933, 7105, 1087, 21, 13427, 9089, 1267, 6862, 13645, 1275, 6956, 13647, 13676, 13250, 1128, 13685, 9731, 13690, 13691, 13703, 558, 576, 9763, 7127, 2]
 
-// Module 13375 (CreateGuildModal)
+// Module 13646 (CreateGuildModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import Navigator2 from "Navigator" /* 6965 */;
-import useIsWindowSmall from "useIsWindowSmall" /* 9632 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13374 */;
-import components_JoinServerDefault from "components/JoinServer" /* 13419 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6862 */;
+import Navigator2 from "Navigator" /* 7127 */;
+import useIsWindowSmall from "useIsWindowSmall" /* 9763 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13645 */;
+import components_JoinServerDefault from "components/JoinServer" /* 13690 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6939 */;
+import GuildChannelStore from "GuildChannelStore" /* 4933 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7105 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

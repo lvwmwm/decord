@@ -1,15 +1,15 @@
-// Module ID: 8561
-// Function ID: 8562
+// Module ID: 8684
+// Function ID: 8685
 // Name: useTrackCollectiblesItemTryOut
-// Dependencies: [19, 7530, 1087, 1394, 1995, 558, 576, 573, 1267, 7542, 2]
+// Dependencies: [19, 7682, 1087, 1394, 1995, 558, 576, 573, 1267, 7694, 2]
 
-// Module 8561 (useTrackCollectiblesItemTryOut)
+// Module 8684 (useTrackCollectiblesItemTryOut)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1995 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7694 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7682 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

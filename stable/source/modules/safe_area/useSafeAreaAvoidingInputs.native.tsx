@@ -1,13 +1,13 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 11101
+// Function ID: 11102
 // Name: useSafeAreaAvoidingInputs
-// Dependencies: [5, 19, 1499, 587, 10850, 558, 576, 6943, 2]
+// Dependencies: [5, 19, 1499, 587, 11102, 558, 576, 5626, 2]
 
-// Module 10849 (useSafeAreaAvoidingInputs)
+// Module 11101 (useSafeAreaAvoidingInputs)
 import nativeDefault from "native" /* 587 */;
 import useWindowDimensions from "useWindowDimensions" /* 1499 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6943 */;
-import ViewMeasureUtils from "ViewMeasureUtils" /* 10850 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 5626 */;
+import ViewMeasureUtils from "ViewMeasureUtils" /* 11102 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -48,7 +48,7 @@ let obj = function _calculateScrollOffset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -85,7 +85,7 @@ let obj = function _calculateScrollOffset() {
                   return { value: Number.MAX_SAFE_INTEGER, done: true };
                 } else {
                   c6 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               }
             }
@@ -222,7 +222,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaA
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -342,7 +342,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaA
           }
         }
         inputInScrollView = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp35) {
         inputInScrollView = 3;
         throw tmp35;
@@ -380,7 +380,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaA
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -501,7 +501,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSafeAreaA
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp35) {
         c3 = 3;
         throw tmp35;

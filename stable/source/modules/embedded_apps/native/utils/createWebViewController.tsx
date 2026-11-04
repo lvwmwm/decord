@@ -1,16 +1,16 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11497
+// Function ID: 11498
 // Name: createWebViewController
-// Dependencies: [5, 1087, 2026, 5895, 7788, 11035, 1257, 11326, 1123, 11342, 2]
+// Dependencies: [5, 1087, 2026, 6410, 7939, 10791, 1257, 11498, 11501, 1123, 11517, 2]
 // Exports: default
 
-// Module 11325 (createWebViewController)
+// Module 11497 (createWebViewController)
 import Constants from "Constants" /* 1087 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import Constants2 from "Constants" /* 2026 */;
-import Constants3 from "Constants" /* 5895 */;
-import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11326 */;
-import createWebViewHtmlFile from "createWebViewHtmlFile" /* 11342 */;
+import Constants3 from "Constants" /* 6410 */;
+import WebViewPostMessageTransportDefault from "WebViewPostMessageTransport" /* 11501 */;
+import createWebViewHtmlFile from "createWebViewHtmlFile" /* 11517 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -23,8 +23,9 @@ const TransportTypes = Constants3.TransportTypes;
 let result = size.fileFinishedImporting("modules/embedded_apps/native/utils/createWebViewController.tsx");
 
 export default function createWebViewController(id, contextSource) {
+  let shellBridgeSecret;
   _require = id;
-  ({ getOrigin: importDefault, onDisallowedNavigation: dependencyMap } = contextSource);
+  ({ getOrigin: importDefault, onDisallowedNavigation: dependencyMap, shellBridgeSecret } = contextSource);
   function postMessageToWebView(arg0, arg1) {
     return obj(...arguments);
   }
@@ -42,7 +43,7 @@ export default function createWebViewController(id, contextSource) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c5;
@@ -84,7 +85,7 @@ export default function createWebViewController(id, contextSource) {
               c5 = 0;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp18) {
           closure_4 = tmp18;
@@ -102,46 +103,54 @@ export default function createWebViewController(id, contextSource) {
   contextSource = contextSource.contextSource;
   obj = require("WebView");
   const webViewProxy = obj.getWebViewProxy(id);
-  let closure_6 = webViewProxy.addOnMessageListener((data) => {
+  let obj3 = require("createEmbeddedAppShimMessageHandler");
+  let closure_6 = obj3.createEmbeddedAppShimMessageHandler(id, shellBridgeSecret, (PLAYER_FUNCTIONS) => {
+    const injectJavaScriptResult = webViewProxy.injectJavaScript(PLAYER_FUNCTIONS);
+    injectJavaScriptResult.catch((error) => {
+      obj = closure_1_1(closure_1_2[6]);
+      return obj.captureException(error);
+    });
+  });
+  let closure_7 = webViewProxy.addOnMessageListener((data) => {
     try {
       const _JSON = JSON;
       const parsed = JSON.parse(data.data);
-      const tmp5 = importDefault();
-      let tmp6 = typeof parsed === "object";
-      const tmp3 = parsed;
-      if (tmp6) {
-        tmp6 = null != tmp5;
+      if (!closure_6.handleMessage(parsed)) {
+        const tmp6 = importDefault();
+        const tmp8 = typeof tmp3 === "object" && null != tmp6;
+        if (tmp8) {
+          const obj2 = { type: TransportTypes.POST_MESSAGE, origin: tmp6, iframeId: id };
+          obj = WebViewPostMessageTransportDefault;
+          obj.handleMessage(parsed, obj2, postMessageToWebView);
+        }
       }
-      if (tmp6) {
-        const obj2 = { type: TransportTypes.POST_MESSAGE, origin: tmp5, iframeId: id };
-        obj = WebViewPostMessageTransportDefault;
-        obj.handleMessage(tmp3, obj2, postMessageToWebView);
-      }
-    } catch (tmp14) {
+    } catch (tmp16) {
       const _SyntaxError = SyntaxError;
-      if (tmp14 instanceof SyntaxError) {
+      if (tmp16 instanceof SyntaxError) {
         if (data.data === closure_5) {
           dependencyMap();
         }
       } else {
-        throw tmp14;
+        throw tmp16;
       }
     }
   });
   let ComponentDispatch = require("ComponentDispatchUtils").ComponentDispatch;
   let obj2 = { id, data: { contextSource } };
   ComponentDispatch.dispatch(postMessageToWebView.IFRAME_MOUNT, obj2);
-  let obj3 = {
+  let obj4 = {
     iframeId: id,
+    shellBridgeSecret,
     release() {
-      closure_6.remove();
+      closure_7.remove();
       const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
       obj = { id };
       ComponentDispatch.dispatch(ComponentActions.IFRAME_UNMOUNT, obj);
+      closure_6.close();
       webViewProxy.releaseWebView();
       const obj2 = createWebViewHtmlFile;
       const result = obj2.deleteWebViewHtmlFile(id);
     }
   };
-  return obj3;
+  return obj4;
 };

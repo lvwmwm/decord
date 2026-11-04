@@ -1,9 +1,9 @@
-// Module ID: 8092
-// Function ID: 8093
+// Module ID: 8243
+// Function ID: 8244
 // Name: DiscordImagePng
-// Dependencies: [5, 1998, 8093, 2]
+// Dependencies: [5, 1998, 8244, 2]
 
-// Module 8092 (DiscordImagePng)
+// Module 8243 (DiscordImagePng)
 import _modDef1998 from "module_1998" /* 1998 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -65,7 +65,7 @@ class DiscordImagePng {
           const obj = { value, done: true };
           return obj;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {

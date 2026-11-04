@@ -1,9 +1,9 @@
-// Module ID: 14469
-// Function ID: 14470
+// Module ID: 14736
+// Function ID: 14737
 // Name: BillingInformation
-// Dependencies: [5, 1087, 558, 576, 14461, 4864, 1385, 13684, 1128, 2]
+// Dependencies: [5, 1087, 558, 576, 14728, 2053, 1385, 13945, 1128, 2]
 
-// Module 14469 (BillingInformation)
+// Module 14736 (BillingInformation)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -70,7 +70,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBillingIn
                               const obj3 = { value, done: true };
                               return obj3;
                             } else {
-                              return { value: "IconComponent", done: null };
+                              return { value: "IconComponent", done: "+352" };
                             }
                           } else {
                             try {
@@ -99,7 +99,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBillingIn
                                 return obj;
                               } else {
                                 c0 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "+352" };
                               }
                             } catch (tmp6) {
                               c0 = 3;
@@ -165,7 +165,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBillingIn
   if (null == subscriptionPeriodStart) {
     return null;
   } else {
-    const tmp2Result = tmp2(4864);
+    const tmp2Result = tmp2(2053);
     const billingInformationString = tmp2Result.getBillingInformationString(isPurchasedViaApple, subscriptionPeriodStart, tmp, flag, fractionalPremiumInfo);
     let formatResult = billingInformationString;
     const tmp2Result2 = tmp2(1385);
@@ -198,7 +198,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBillingIn
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } else {
                 try {
@@ -227,7 +227,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useBillingIn
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 } catch (tmp6) {
                   c0 = 3;

@@ -1,12 +1,12 @@
-// Module ID: 5999
-// Function ID: 6000
+// Module ID: 6514
+// Function ID: 6515
 // Name: HandleConfirmPaymentRegistry
-// Dependencies: [5, 1087, 1098, 5981, 5995, 1297, 2]
+// Dependencies: [5, 1087, 1098, 6496, 6510, 1297, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 5999 (HandleConfirmPaymentRegistry)
+// Module 6514 (HandleConfirmPaymentRegistry)
 import Constants2 from "Constants" /* 1098 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 5981 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -162,7 +162,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -289,7 +289,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -340,7 +340,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
             closure_1 = value;
             closure_129_2.performRedirect(closure_1);
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp19) {
           c3 = 3;
@@ -391,7 +391,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

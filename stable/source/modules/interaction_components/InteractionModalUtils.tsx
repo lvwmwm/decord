@@ -1,9 +1,9 @@
-// Module ID: 18528
-// Function ID: 18529
+// Module ID: 18871
+// Function ID: 18872
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 2068, 7510, 2128, 5034, 8175, 15425, 8523, 1087, 558, 8522, 2000, 576, 1417, 6299, 7231, 504, 6447, 11, 584, 9564, 1128, 38, 5536, 10008, 8527, 5542, 8026, 1297, 1104, 2]
+// Dependencies: [5, 32, 19, 502, 4855, 7663, 4915, 5034, 8325, 15680, 8628, 1087, 558, 8627, 2000, 576, 1417, 5655, 7386, 504, 5631, 11, 584, 9697, 1128, 38, 6046, 10137, 8632, 6051, 8178, 1297, 1104, 2]
 
-// Module 18528 (InteractionModalUtils)
+// Module 18871 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
@@ -11,20 +11,20 @@ import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import Server from "Server" /* 2000 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 6299 */;
-import DraftStore from "DraftStore" /* 7510 */;
-import ComponentStateContext from "ComponentStateContext" /* 8522 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9564 */;
-import InteractionModalStore2 from "InteractionModalStore" /* 15425 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 5655 */;
+import DraftStore from "DraftStore" /* 7663 */;
+import ComponentStateContext from "ComponentStateContext" /* 8627 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9697 */;
+import InteractionModalStore2 from "InteractionModalStore" /* 15680 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8175 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8523 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8325 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8628 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -42,7 +42,7 @@ function validate(arr) {
   return c0;
 }
 function getData(arg0, arr, arg2) {
-  const f135373 = (type) => {
+  const f138146 = (type) => {
     let components;
     let items;
     let mapped;
@@ -54,7 +54,7 @@ function getData(arg0, arr, arg2) {
     let values2;
     type = type.type;
     if (Server.ComponentType.ACTION_ROW === type) {
-      const obj4 = { type: type.type, components: components.map(f135373) };
+      const obj4 = { type: type.type, components: components.map(f138146) };
       components = type.components;
       return obj4;
     } else if (Server.ComponentType.TEXT_INPUT === type) {
@@ -115,7 +115,7 @@ function getData(arg0, arr, arg2) {
               if (Server.ComponentType.TEXT_DISPLAY === type) {
                 return { type: type.type };
               } else if (Server.ComponentType.LABEL === type) {
-                const obj21 = { type: type.type, component: items.map(f135373)[0] };
+                const obj21 = { type: type.type, component: items.map(f138146)[0] };
                 items = [type.component];
                 return obj21;
               } else if (Server.ComponentType.RADIO_GROUP === type) {
@@ -177,7 +177,7 @@ function getData(arg0, arr, arg2) {
   };
   let closure_0 = arg0;
   let closure_1 = arg2;
-  return arr.map(f135373);
+  return arr.map(f138146);
 }
 function getUploadsForModal(id, arg1) {
   let closure_0 = arg1;
@@ -214,7 +214,7 @@ let obj = function _submitModal() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -306,7 +306,7 @@ let obj = function _submitModal() {
             }
             send();
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp10) {
           c6 = 3;
@@ -583,7 +583,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalStat
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -620,7 +620,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalStat
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;
@@ -678,7 +678,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalStat
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -715,7 +715,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function useModalStat
           return obj;
         }
         c0 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp12) {
         c0 = 3;
         throw tmp12;

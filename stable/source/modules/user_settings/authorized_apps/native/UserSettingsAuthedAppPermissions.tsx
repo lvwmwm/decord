@@ -1,16 +1,16 @@
-// Module ID: 15992
-// Function ID: 15993
+// Module ID: 16272
+// Function ID: 16273
 // Name: UserSettingsAuthedAppPermissions
-// Dependencies: [19, 17, 21, 5191, 558, 576, 9529, 8731, 1128, 5187, 7144, 587, 9531, 15986, 2]
+// Dependencies: [19, 17, 21, 5003, 558, 576, 9663, 8859, 1128, 5266, 7299, 587, 9665, 16266, 2]
 
-// Module 15992 (UserSettingsAuthedAppPermissions)
-import Text_Text from "Text/Text" /* 5187 */;
-import disclosures2 from "disclosures" /* 9531 */;
-import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 15986 */;
+// Module 16272 (UserSettingsAuthedAppPermissions)
+import Text_Text from "Text/Text" /* 5266 */;
+import disclosures2 from "disclosures" /* 9665 */;
+import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 16266 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

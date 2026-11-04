@@ -1,19 +1,41 @@
 // Module ID: 15387
 // Function ID: 15388
-// Dependencies: [15339, 15346]
+// Dependencies: [15382, 15353]
 
 // Module 15387
-import _mod15339 from "module_15339" /* 15339 */;
-import _mod15346 from "module_15346" /* 15346 */;
+import _mod15353 from "module_15353" /* 15353 */;
 
-let closure_2 = _mod15339("keys");
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
-export default (arg0) => {
-  let tmp2 = closure_2[arg0];
-  if (!tmp2) {
-    const tmp5 = _mod15346(arg0);
-    tmp[arg0] = tmp5;
-    tmp2 = tmp5;
+
+export default function(arr, arg1, arg2) {
+  let closure_0;
+  _require = arg2;
+  dependencyMap = null;
+  let closure_2 = null;
+  let regex = null;
+  try {
+    let tmp = arg1;
+    let self = this;
+    let self2 = this;
+    const tmp6 = new require("module_15382")(arg1, arg2);
+    let tmp7 = tmp6;
+    regex = tmp6;
+    const item = arr.forEach(function(item) {
+      if (regex.test(item)) {
+        const tmp = c1 && 1 !== closure_2.compare(item);
+        if (!tmp) {
+          c1 = item;
+          const self = this;
+          const self2 = this;
+          closure_2 = new _mod15353(c1, closure_0);
+          const tmp7 = new _mod15353(c1, closure_0);
+        }
+      }
+    });
+    return dependencyMap;
+  } catch (err) {
+    return null;
   }
-  return tmp2;
 };

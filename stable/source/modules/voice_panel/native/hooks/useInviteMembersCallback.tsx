@@ -1,13 +1,13 @@
-// Module ID: 18198
-// Function ID: 18199
+// Module ID: 18539
+// Function ID: 18540
 // Name: useInviteMembersCallback
-// Dependencies: [19, 2068, 1087, 558, 576, 11165, 8955, 2]
+// Dependencies: [19, 4855, 1087, 558, 576, 11323, 9082, 2]
 
-// Module 18198 (useInviteMembersCallback)
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11165 */;
+// Module 18539 (useInviteMembersCallback)
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9082 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11323 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

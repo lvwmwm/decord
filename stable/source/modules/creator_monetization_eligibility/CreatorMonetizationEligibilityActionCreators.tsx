@@ -1,10 +1,10 @@
-// Module ID: 18909
-// Function ID: 18910
+// Module ID: 19247
+// Function ID: 19248
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1087, 1375, 1297, 584, 6357, 2]
+// Dependencies: [5, 1087, 1375, 1297, 584, 6841, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 18909 (CreatorMonetizationEligibilityActionCreators)
+// Module 19247 (CreatorMonetizationEligibilityActionCreators)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ApplicationConstants from "ApplicationConstants" /* 1375 */;
@@ -27,7 +27,7 @@ let obj = function _createCreatorMonetizationEnableRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -59,7 +59,7 @@ let obj = function _createCreatorMonetizationEnableRequest() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -99,7 +99,7 @@ obj = function _acceptCreatorMonetizationTerms() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -131,7 +131,7 @@ obj = function _acceptCreatorMonetizationTerms() {
           return obj;
         } else {
           c2 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp4) {
         c2 = 3;
@@ -155,7 +155,7 @@ obj = function _acceptCreatorMonetizationTermsV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -187,7 +187,7 @@ obj = function _acceptCreatorMonetizationTermsV() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -253,7 +253,7 @@ obj = function _requestRemoveMonetization() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ obj = function _requestRemoveMonetization() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp4) {
         c1 = 3;
@@ -312,7 +312,7 @@ obj = function _removeMonetization() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {

@@ -1,23 +1,23 @@
-// Module ID: 14370
-// Function ID: 14371
+// Module ID: 14637
+// Function ID: 14638
 // Name: NUFChannelsManager
-// Dependencies: [2128, 2090, 5034, 1392, 1087, 4831, 510, 5057, 7085, 5073, 5072, 1405, 5155, 14371, 2002, 2]
+// Dependencies: [4915, 4877, 5034, 1392, 1087, 4921, 510, 5057, 7246, 5183, 5182, 1405, 5242, 14638, 2002, 2]
 
-// Module 14370 (NUFChannelsManager)
+// Module 14637 (NUFChannelsManager)
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1087 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
 import asyncRequire from "asyncRequire" /* 2002 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4921 */;
 import UserUtils from "UserUtils" /* 5057 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
-import RootNavigationRef from "RootNavigationRef" /* 5073 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
+import RootNavigationRef from "RootNavigationRef" /* 5183 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import UserStore from "UserStore" /* 1392 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;
@@ -96,7 +96,7 @@ class NUFChannelsManager extends AutomaticLifecycleManager {
           }
           if (isNewUserResult) {
             const obj3 = ActionSheetActionCreatorsDefault;
-            obj3.openLazy(asyncRequire(14371, tmp2.paths), "NUFChannelsActionSheet");
+            obj3.openLazy(asyncRequire(14638, tmp2.paths), "NUFChannelsActionSheet");
             const Storage2 = tmp(510).Storage;
             const result = Storage2.set(tmp14, true);
           }

@@ -1,9 +1,9 @@
-// Module ID: 7617
-// Function ID: 7618
+// Module ID: 7768
+// Function ID: 7769
 // Name: FriendSuggestionActionCreators
 // Dependencies: [5, 1087, 1297, 584, 2]
 
-// Module 7617 (FriendSuggestionActionCreators)
+// Module 7768 (FriendSuggestionActionCreators)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -25,7 +25,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -72,7 +72,7 @@ let obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp19) {
           let closure_2 = tmp19;

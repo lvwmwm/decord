@@ -1,16 +1,16 @@
-// Module ID: 11640
-// Function ID: 11641
+// Module ID: 11829
+// Function ID: 11830
 // Name: openConjureRemoveAppAlert
-// Dependencies: [5, 32, 19, 21, 5191, 558, 576, 11641, 1128, 3883, 11642, 10999, 11057, 4904, 5187, 5477, 5405, 5401, 2]
+// Dependencies: [5, 32, 19, 21, 5003, 558, 576, 11830, 1128, 3862, 11831, 10752, 10818, 5695, 5266, 6009, 5946, 5942, 2]
 // Exports: default
 
-// Module 11640 (openConjureRemoveAppAlert)
-import useAlertStore from "useAlertStore" /* 5401 */;
+// Module 11829 (openConjureRemoveAppAlert)
+import useAlertStore from "useAlertStore" /* 5942 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -264,7 +264,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -337,7 +337,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                       open("CONJURE_APP_REMOVED", obj);
                     }
                     c3 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 }
               } catch (tmp36) {
@@ -435,7 +435,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -508,7 +508,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function Conjur
                 open("CONJURE_APP_REMOVED", obj);
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           }
         } catch (tmp36) {

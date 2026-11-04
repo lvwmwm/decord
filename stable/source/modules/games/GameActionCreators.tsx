@@ -1,14 +1,14 @@
-// Module ID: 7286
-// Function ID: 7287
+// Module ID: 7439
+// Function ID: 7440
 // Name: GameActionCreators
-// Dependencies: [5, 2022, 1087, 1297, 584, 2063, 12, 2]
+// Dependencies: [5, 2022, 1087, 1297, 584, 4850, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7286 (GameActionCreators)
+// Module 7439 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import Timers from "Timers" /* 2063 */;
+import Timers from "Timers" /* 4850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameStore from "GameStore" /* 2022 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ let obj = function _requestGames() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _requestGames() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp18) {
         if (0 === c3) {
@@ -111,7 +111,7 @@ obj = function _fetchGamesWithSupplementalData() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -137,7 +137,7 @@ obj = function _fetchGamesWithSupplementalData() {
             return { value, done: true };
           }
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp6) {
           c1 = 3;
           throw tmp6;
@@ -163,7 +163,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+352" };
     }
   } else {
     try {
@@ -193,7 +193,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } catch (tmp9) {
       c1 = 3;

@@ -1,14 +1,14 @@
-// Module ID: 8149
-// Function ID: 8150
+// Module ID: 8300
+// Function ID: 8301
 // Name: AutomodErrorUtils
-// Dependencies: [2068, 1087, 1128, 8020, 2]
+// Dependencies: [4855, 1087, 1128, 8172, 2]
 // Exports: getAutomodErrorMessage
 
-// Module 8149 (AutomodErrorUtils)
+// Module 8300 (AutomodErrorUtils)
 import Constants from "Constants" /* 1087 */;
 import intl5 from "intl" /* 1128 */;
-import MessageQueue from "MessageQueue" /* 8020 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import MessageQueue from "MessageQueue" /* 8172 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import size from "module_2" /* 2 */;
 
 function getAutomodErrorMessageFromErrorResponse(errorResponseBody, id) {

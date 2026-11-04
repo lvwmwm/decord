@@ -1,10 +1,10 @@
-// Module ID: 16287
-// Function ID: 16288
+// Module ID: 16620
+// Function ID: 16621
 // Name: useSubscriptionRole
-// Dependencies: [2122, 558, 576, 16270, 504, 2]
+// Dependencies: [4909, 558, 576, 16603, 504, 2]
 
-// Module 16287 (useSubscriptionRole)
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
+// Module 16620 (useSubscriptionRole)
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

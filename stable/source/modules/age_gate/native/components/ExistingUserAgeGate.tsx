@@ -1,21 +1,21 @@
-// Module ID: 18438
-// Function ID: 18439
+// Module ID: 18776
+// Function ID: 18777
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 2062, 1392, 1112, 18437, 1087, 21, 5191, 558, 576, 1505, 504, 1267, 1128, 2131, 38, 17080, 6190, 4797, 17102, 5187, 18439, 5479, 7092, 2]
+// Dependencies: [5, 32, 19, 17, 4849, 1392, 1112, 18775, 1087, 21, 5003, 558, 576, 1505, 504, 1267, 1128, 2067, 38, 17414, 6704, 2049, 17436, 5266, 18777, 5276, 7253, 2]
 
-// Module 18438 (ExistingUserAgeGate)
+// Module 18776 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 18437 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 18775 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 2062 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4849 */;
 import UserStore from "UserStore" /* 1392 */;
 import AgeGateConstants from "AgeGateConstants" /* 1112 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -356,7 +356,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                             const obj2 = { value, done: true };
                             return obj2;
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+352" };
                           }
                         } else {
                           try {
@@ -399,7 +399,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                               return obj;
                             }
                             c0 = 3;
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+352" };
                           } catch (tmp9) {
                             c0 = 3;
                             throw tmp9;
@@ -455,7 +455,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+352" };
                           }
                         } else {
                           try {
@@ -737,7 +737,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -837,7 +837,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -880,7 +880,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function ExistingUs
             return obj;
           }
           c0 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp9) {
           c0 = 3;
           throw tmp9;

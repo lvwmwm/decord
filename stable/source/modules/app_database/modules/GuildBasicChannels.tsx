@@ -1,23 +1,23 @@
-// Module ID: 7602
-// Function ID: 7603
+// Module ID: 7753
+// Function ID: 7754
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 6013, 2072, 502, 2068, 2122, 2090, 4845, 2069, 3, 2094, 7603, 1099, 4854, 2]
+// Dependencies: [32, 5, 6528, 4859, 502, 4855, 4909, 4877, 4935, 4856, 3, 4881, 7754, 1099, 4944, 2]
 
-// Module 7602 (GuildBasicChannels)
+// Module 7753 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import ChannelStore2 from "ChannelStore" /* 2068 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4854 */;
+import ChannelStore2 from "ChannelStore" /* 4855 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4881 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4944 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2069 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4856 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStore = ChannelStore2;
@@ -41,7 +41,7 @@ function hasBasicChannelChanged(basicChannel, nextResult) {
 let closure_7 = ChannelRecord.createChannelRecordFromServer;
 const ChannelLoader = ChannelStore2.ChannelLoader;
 let tmp2 = new LoggerDefault("GuildBasicChannels");
-const authStore3 = tmp2;
+let closure_15 = tmp2;
 class GuildBasicChannels {
   constructor() {
     const obj = Object.create(new.target.prototype);
@@ -233,7 +233,7 @@ class GuildBasicChannels {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c7;
@@ -288,7 +288,7 @@ class GuildBasicChannels {
                           } else if (arg0 === 2) {
                             return { value, done: true };
                           } else {
-                            return { value: "IconComponent", done: null };
+                            return { value: "IconComponent", done: "+352" };
                           }
                         } else {
                           try {
@@ -342,7 +342,7 @@ class GuildBasicChannels {
                                 return { value, done: true };
                               } else {
                                 c6 = 3;
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "+352" };
                               }
                             } else if (3 === c5) {
                               if (arg0 === 1) {
@@ -400,7 +400,7 @@ class GuildBasicChannels {
                 }
               }
               c10 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else if (1 === tmp3) {
             c7 = 0;

@@ -1,13 +1,13 @@
-// Module ID: 10983
-// Function ID: 10984
+// Module ID: 10736
+// Function ID: 10737
 // Name: ConjureDebugStore
-// Dependencies: [504, 10984, 10985, 584, 2]
+// Dependencies: [504, 10737, 10738, 584, 2]
 
-// Module 10983 (ConjureDebugStore)
+// Module 10736 (ConjureDebugStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ConjurePerfTraceBatches from "ConjurePerfTraceBatches" /* 10984 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 10985 */;
+import ConjurePerfTraceBatches from "ConjurePerfTraceBatches" /* 10737 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 10738 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, set3, set4;
@@ -63,15 +63,15 @@ class ConjureDebugStore extends Store {
     }
     return value;
   }
-  getForceCompactionState(projectId) {
-    let str = map2.get(projectId);
+  getForceCompactionState(arg0) {
+    let str = map2.get(arg0);
     if (str == null) {
       str = "idle";
     }
     return str;
   }
-  getSandboxRestartState(projectId) {
-    let str = map3.get(projectId);
+  getSandboxRestartState(arg0) {
+    let str = map3.get(arg0);
     if (str == null) {
       str = "idle";
     }

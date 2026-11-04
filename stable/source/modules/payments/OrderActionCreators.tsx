@@ -1,15 +1,15 @@
-// Module ID: 7221
-// Function ID: 7222
+// Module ID: 7376
+// Function ID: 7377
 // Name: OrderActionCreators
-// Dependencies: [5, 1087, 3, 4886, 1297, 4879, 2]
+// Dependencies: [5, 1087, 3, 4826, 1297, 4819, 2]
 // Exports: fetchOrderEntitlementsWithRetry, getOrder, signOrder
 
-// Module 7221 (OrderActionCreators)
+// Module 7376 (OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BillingError_mod from "BillingError" /* 4886 */;
+import BillingError_mod from "BillingError" /* 4826 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12;
@@ -37,7 +37,7 @@ let obj = function _signOrder() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let gateway_checkout_context;
@@ -171,7 +171,7 @@ obj = function _getOrder() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ obj = function _fetchOrderEntitlements() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -327,7 +327,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c9;
@@ -380,7 +380,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                 } else {
                   try {
@@ -433,7 +433,7 @@ obj = function _fetchOrderEntitlementsWithRetry() {
                     } else {
                       length = value;
                       c3 = 3;
-                      return { value: "IconComponent", done: null };
+                      return { value: "IconComponent", done: "+352" };
                     }
                   } catch (tmp13) {
                     c3 = 3;

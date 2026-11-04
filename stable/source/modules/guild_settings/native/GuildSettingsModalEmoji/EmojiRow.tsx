@@ -1,28 +1,28 @@
-// Module ID: 18761
-// Function ID: 18762
+// Module ID: 19100
+// Function ID: 19101
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 2090, 1392, 21, 5191, 587, 1384, 558, 576, 7091, 504, 8848, 9845, 4863, 18762, 5462, 5187, 1202, 4904, 1128, 5128, 1417, 5509, 5057, 6462, 18764, 6457, 2]
+// Dependencies: [32, 19, 17, 4877, 1392, 21, 5003, 587, 1384, 558, 576, 7252, 504, 8976, 9975, 4953, 19101, 5299, 5266, 1202, 5695, 1128, 5701, 1417, 6021, 5057, 6940, 19103, 6935, 2]
 
-// Module 18761 (GuildSettingsModalEmoji/EmojiRow)
+// Module 19100 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4863 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4953 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5509 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 9845 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18762 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18764 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5299 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6021 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 9975 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 19101 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19103 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore_mod from "GuildStore" /* 2090 */;
+import GuildStore_mod from "GuildStore" /* 4877 */;
 import UserStore_mod from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

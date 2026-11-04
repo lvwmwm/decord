@@ -1,17 +1,17 @@
-// Module ID: 7389
-// Function ID: 7390
+// Module ID: 7542
+// Function ID: 7543
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 7390, 1087, 6217, 1394, 21, 7391, 6190, 6215, 558, 576, 14651, 1505, 7130, 573, 1400, 13224, 1128, 8495, 5479, 2]
+// Dependencies: [5, 19, 17, 7543, 1087, 6731, 1394, 21, 7544, 6704, 6729, 558, 576, 14918, 1505, 7285, 573, 1400, 13494, 1128, 8598, 5276, 2]
 
-// Module 7389 (GuildBoostingSubscribeButton)
+// Module 7542 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6217 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7391 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6731 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 7544 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7390 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7543 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -81,7 +81,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp9) {
           c5 = 3;

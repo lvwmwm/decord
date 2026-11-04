@@ -1,9 +1,9 @@
-// Module ID: 7009
-// Function ID: 7010
+// Module ID: 7170
+// Function ID: 7171
 // Name: PhoneConstants
 // Dependencies: [2]
 
-// Module 7009 (PhoneConstants)
+// Module 7170 (PhoneConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/phone/PhoneConstants.tsx");

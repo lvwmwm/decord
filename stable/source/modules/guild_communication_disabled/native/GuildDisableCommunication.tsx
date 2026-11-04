@@ -1,28 +1,28 @@
-// Module ID: 12570
-// Function ID: 12571
+// Module ID: 12821
+// Function ID: 12822
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 2130, 1087, 21, 1128, 5191, 587, 558, 576, 6942, 10849, 1267, 5496, 12571, 4904, 5509, 5187, 6540, 6539, 7051, 5479, 2]
+// Dependencies: [5, 32, 19, 17, 4917, 1087, 21, 1128, 5003, 587, 558, 576, 5625, 11101, 1267, 5295, 12822, 5695, 6021, 5266, 7017, 7016, 7212, 5276, 2]
 
-// Module 12570 (GuildDisableCommunication)
+// Module 12821 (GuildDisableCommunication)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl6 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import useMountEffectDefault from "useMountEffect" /* 5496 */;
-import TableRadioRow2 from "TableRadioRow" /* 6539 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 6540 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6942 */;
-import TextArea2 from "TextArea" /* 7051 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 10849 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import useMountEffectDefault from "useMountEffect" /* 5295 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5625 */;
+import TableRadioRow2 from "TableRadioRow" /* 7016 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7017 */;
+import TextArea2 from "TextArea" /* 7212 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11101 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2130 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4917 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -404,7 +404,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -450,7 +450,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             open("GUILD_COMMUNICATION_DISABLED_SUCCESS", obj);
             c2();
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp17) {
           c3 = 3;
@@ -518,7 +518,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -562,7 +562,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
             open("GUILD_COMMUNICATION_DISABLED_SUCCESS", obj);
             closure_129_2();
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp17) {
           c3 = 3;

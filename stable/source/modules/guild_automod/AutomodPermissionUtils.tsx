@@ -1,13 +1,13 @@
-// Module ID: 4851
-// Function ID: 4852
+// Module ID: 4941
+// Function ID: 4942
 // Name: AutomodPermissionUtils
-// Dependencies: [2128, 4831, 1405, 558, 576, 504, 2]
+// Dependencies: [4915, 4921, 1405, 558, 576, 504, 2]
 // Exports: getAutomodQuarantinedGuildMemberFlags, getAutomodQuarantinedProfileFlags, getAutomodReason, hasAutomodQuarantinedProfile
 
-// Module 4851 (AutomodPermissionUtils)
+// Module 4941 (AutomodPermissionUtils)
 import FlagUtils from "FlagUtils" /* 1405 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4921 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

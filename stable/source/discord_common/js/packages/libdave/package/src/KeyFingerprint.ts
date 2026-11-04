@@ -1,10 +1,10 @@
-// Module ID: 9089
-// Function ID: 9090
+// Module ID: 9216
+// Function ID: 9217
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: generateKeyFingerprint
 
-// Module 9089 (_asyncToGenerator)
+// Module 9216 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let obj = function _generateKeyFingerprint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {

@@ -1,17 +1,17 @@
-// Module ID: 11588
-// Function ID: 11589
+// Module ID: 11773
+// Function ID: 11774
 // Name: convertRouteToNavigation
-// Dependencies: [1087, 9617, 11589, 5075, 5072, 5073, 5039, 5052, 2]
+// Dependencies: [1087, 9748, 11774, 5185, 5182, 5183, 5039, 5052, 2]
 // Exports: convertRouteToNavigation
 
-// Module 11588 (convertRouteToNavigation)
+// Module 11773 (convertRouteToNavigation)
 import Constants from "Constants" /* 1087 */;
 import matchPathCompat from "matchPathCompat" /* 5039 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5072 */;
-import RootNavigationRef from "RootNavigationRef" /* 5073 */;
-import useChatLayout from "useChatLayout" /* 5075 */;
-import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9617 */;
-import handleConjureRouteDefault from "handleConjureRoute" /* 11589 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5182 */;
+import RootNavigationRef from "RootNavigationRef" /* 5183 */;
+import useChatLayout from "useChatLayout" /* 5185 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9748 */;
+import handleConjureRouteDefault from "handleConjureRoute" /* 11774 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

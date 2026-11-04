@@ -1,11 +1,11 @@
-// Module ID: 17113
-// Function ID: 17114
+// Module ID: 17447
+// Function ID: 17448
 // Name: RemoteAuthUtils
-// Dependencies: [32, 5, 1406, 17111, 2]
+// Dependencies: [32, 5, 1406, 17445, 2]
 // Exports: decodeEncodedUserRecord
 
-// Module 17113 (RemoteAuthUtils)
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17111 */;
+// Module 17447 (RemoteAuthUtils)
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1406 */;
@@ -29,7 +29,7 @@ let obj = function _decodeEncodedUserRecord() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {

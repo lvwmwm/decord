@@ -1,17 +1,18 @@
-// Module ID: 15074
-// Function ID: 15075
+// Module ID: 5674
+// Function ID: 5675
 // Name: trackDismissibleContentActioned
-// Dependencies: [32, 2055, 2060, 1087, 1267, 2052, 2056, 2]
+// Dependencies: [32, 4842, 4847, 1087, 5673, 1267, 4839, 4843, 2]
 // Exports: trackDismissibleContentActioned
 
-// Module 15074 (trackDismissibleContentActioned)
+// Module 5674 (trackDismissibleContentActioned)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 2056 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2060 */;
+import dismissible_content from "dismissible_content" /* 4839 */;
+import DismissibleContentFatigueConfig from "DismissibleContentFatigueConfig" /* 4843 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4847 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5673 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2055 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4842 */;
 import size from "module_2" /* 2 */;
 
 const getCurrentlyShownCounts = DismissibleContentShownStateStore.getCurrentlyShownCounts;
@@ -20,23 +21,28 @@ const result = size.fileFinishedImporting("modules/dismissible_content/trackDism
 
 export const trackDismissibleContentActioned = function trackDismissibleContentActioned(content, dismissAction) {
   let diff;
-  let obj3;
+  let obj5;
   let obj = dismissAction;
   if (dismissAction === undefined) {
     obj = {};
   }
-  const first = _slicedToArray(getCurrentlyShownCounts(), 1)[0];
-  const renderedAtTimestamp = DismissibleContentFrameworkStore.getRenderedAtTimestamp(content);
-  const tmp3 = AnalyticsUtilsDefault;
-  const track = tmp3.track;
-  const DISMISSIBLE_CONTENT_ACTIONED = AnalyticEvents.DISMISSIBLE_CONTENT_ACTIONED;
-  const obj4 = { type: dismissible_content.DismissibleContent[content], content_count: first, group_name: obj.groupName, bypass_fatigue: obj3.bypassesFatigue(content), guild_id: obj.guildId, shown_duration: diff, version: null, snowflake_id: null };
-  diff = null;
-  obj3 = DismissibleContentFatigueConfig;
-  if (null != renderedAtTimestamp) {
-    const _Date = Date;
-    diff = Date.now() - renderedAtTimestamp;
+  const obj2 = DismissibleContentFrameworkStore;
+  if (!DismissibleContentFrameworkStore.hasTrackedActionedEvent(content)) {
+    const obj3 = DismissibleContentFrameworkActionCreators;
+    obj3.handleDCActioned(content);
+    const first = _slicedToArray(getCurrentlyShownCounts(), 1)[0];
+    const renderedAtTimestamp = obj2.getRenderedAtTimestamp(content);
+    const obj6 = { type: dismissible_content.DismissibleContent[content], content_count: first, group_name: obj.groupName, bypass_fatigue: obj5.bypassesFatigue(content), guild_id: obj.guildId, shown_duration: diff, version: null, snowflake_id: null };
+    const track = AnalyticsUtilsDefault.track;
+    const DISMISSIBLE_CONTENT_ACTIONED = AnalyticEvents.DISMISSIBLE_CONTENT_ACTIONED;
+    AnalyticsUtilsDefault;
+    diff = null;
+    obj5 = DismissibleContentFatigueConfig;
+    if (null != renderedAtTimestamp) {
+      const _Date = Date;
+      diff = Date.now() - renderedAtTimestamp;
+    }
+    ({ version: obj4.version, snowflakeId: obj4.snowflake_id } = obj);
+    track(DISMISSIBLE_CONTENT_ACTIONED, obj6);
   }
-  ({ version: obj2.version, snowflakeId: obj2.snowflake_id } = obj);
-  track(DISMISSIBLE_CONTENT_ACTIONED, obj4);
 };

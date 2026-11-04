@@ -1,32 +1,32 @@
-// Module ID: 18454
-// Function ID: 18455
+// Module ID: 18792
+// Function ID: 18793
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 2072, 2068, 6291, 2001, 7467, 1087, 6286, 6243, 2090, 3, 1104, 510, 10001, 1384, 584, 1257, 1267, 2094, 1297, 11, 12, 7607, 7610, 7608, 14750, 16637, 7465, 1388, 7475, 2]
+// Dependencies: [32, 5, 4859, 4855, 6803, 2001, 7620, 1087, 6798, 6757, 4877, 3, 1104, 510, 10130, 1384, 584, 1257, 1267, 4881, 1297, 11, 12, 7758, 7761, 7759, 15017, 16967, 7618, 1388, 7628, 2]
 // Exports: backgroundSync
 
-// Module 18454 (background_sync/BackgroundSync)
+// Module 18792 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
-import modules_Messages from "modules/Messages" /* 7465 */;
-import GuildVersionsDefault from "GuildVersions" /* 7607 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 7608 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 7610 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4881 */;
+import modules_Messages from "modules/Messages" /* 7618 */;
+import GuildVersionsDefault from "GuildVersions" /* 7758 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 7759 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 7761 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 6291 */;
+import ReadStateStore from "ReadStateStore" /* 6803 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import FileSystemStore from "FileSystemStore" /* 7467 */;
+import FileSystemStore from "FileSystemStore" /* 7620 */;
 import Constants from "Constants" /* 1087 */;
-import StickersStore from "StickersStore" /* 6286 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import EmojiStore from "EmojiStore" /* 6243 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import StickersStore from "StickersStore" /* 6798 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import EmojiStore from "EmojiStore" /* 6757 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, c1, c11, c21, c22, closure_13, config, readStatesByChannel;
@@ -224,7 +224,7 @@ obj = function _backgroundSyncPrivateChannels() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -321,7 +321,7 @@ obj = function _backgroundSyncPrivateChannels() {
           closure_1.time_save_private_channel_messages = Date.now() - closure_2;
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp41) {
         c6 = 3;
         throw tmp41;
@@ -351,7 +351,7 @@ obj = function _backgroundSyncGuildData() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -554,7 +554,7 @@ obj = function _backgroundSyncGuildData() {
             closure_0.time_save_guild_data = Date.now() - closure_1;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp45) {
         c6 = 3;
@@ -584,7 +584,7 @@ obj = function _backgroundSyncGuildChannels() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       while (true) {
@@ -870,7 +870,7 @@ obj = function _backgroundSyncGuildChannels() {
           }
         }
         c22 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     }
   });
@@ -896,7 +896,7 @@ obj = function _processChannelChanges() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       while (true) {
@@ -959,7 +959,7 @@ obj = function _processChannelChanges() {
               }
             }
             c12 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let closure_5;

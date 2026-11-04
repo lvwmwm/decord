@@ -1,50 +1,32 @@
 // Module ID: 5413
 // Function ID: 5414
-// Dependencies: [5414]
+// Dependencies: [5397, 5414, 5372, 5416]
+// Exports: useGestureCallbacks
 
 // Module 5413
-import get_synchronousScreenUpdatesEnabled from "get synchronousScreenUpdatesEnabled" /* 5414 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5397 */;
+import react from "react" /* 5414 */;
+import _mod5416 from "module_5416" /* 5416 */;
 
 
-export const RNSLog = {
-  log(arg0) {
-    const substr = [...arguments].slice();
-    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
-      const _console = console;
-      const items = [arg0];
-      HermesBuiltin.arraySpread(items, substr, 1);
-      const _console2 = console;
-      HermesBuiltin.apply(log, items, console);
+export const useGestureCallbacks = function useGestureCallbacks(handlerTag, disableReanimated) {
+  const obj = maybeExtractNativeEvent;
+  const memoizedGestureCallbacks = obj.useMemoizedGestureCallbacks(disableReanimated);
+  let reanimatedEventHandler;
+  const obj2 = react;
+  const jsEventHandler = obj2.useGestureEventHandler(handlerTag, memoizedGestureCallbacks, disableReanimated);
+  if (!disableReanimated.disableReanimated) {
+    const Reanimated = tmp(5372).Reanimated;
+    let handler;
+    if (Reanimated != null) {
+      handler = Reanimated.useHandler(memoizedGestureCallbacks);
     }
-  },
-  warn(arg0) {
-    const substr = [...arguments].slice();
-    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
-      const _console = console;
-      const items = [arg0];
-      HermesBuiltin.arraySpread(items, substr, 1);
-      const _console2 = console;
-      HermesBuiltin.apply(warn, items, console);
-    }
-  },
-  error(arg0) {
-    const substr = [...arguments].slice();
-    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
-      const _console = console;
-      const items = [arg0];
-      HermesBuiltin.arraySpread(items, substr, 1);
-      const _console2 = console;
-      HermesBuiltin.apply(error, items, console);
-    }
-  },
-  info(arg0) {
-    const substr = [...arguments].slice();
-    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
-      const _console = console;
-      const items = [arg0];
-      HermesBuiltin.arraySpread(items, substr, 1);
-      const _console2 = console;
-      HermesBuiltin.apply(info, items, console);
-    }
+    const tmpResult = _mod5416;
+    reanimatedEventHandler = tmpResult.useReanimatedEventHandler(handlerTag, memoizedGestureCallbacks, handler, disableReanimated.changeEventCalculator, disableReanimated.fillInDefaultValues);
   }
+  let animatedEventHandler;
+  if (disableReanimated.dispatchesAnimatedEvents) {
+    animatedEventHandler = disableReanimated.onUpdate;
+  }
+  return { jsEventHandler, reanimatedEventHandler, animatedEventHandler };
 };

@@ -1,18 +1,18 @@
-// Module ID: 16011
-// Function ID: 16012
+// Module ID: 16291
+// Function ID: 16292
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 558, 576, 5191, 16012, 1128, 1202, 5187, 10834, 5399, 15989, 5498, 1417, 5481, 11707, 9123, 7840, 6457, 7172, 6458, 2]
+// Dependencies: [5, 32, 19, 17, 21, 558, 576, 5003, 16292, 1128, 1202, 5266, 11086, 5940, 16269, 6010, 1417, 5278, 10823, 9250, 7991, 6935, 7327, 6936, 2]
 
-// Module 16011 (ConnectedApplicationIdentity)
+// Module 16291 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import Icon from "Icon" /* 5481 */;
-import AlertDefault from "Alert" /* 5498 */;
-import InfoBoxDefault from "InfoBox" /* 10834 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import Icon from "Icon" /* 5278 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
+import AlertDefault from "Alert" /* 6010 */;
+import InfoBoxDefault from "InfoBox" /* 11086 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -25,7 +25,7 @@ let closure_1, v0, v3;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const IconDefault = tmp(5481);
+const IconDefault = tmp(5278);
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
@@ -271,7 +271,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
               } else if (arg0 === 2) {
                 return { value, done: true };
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -315,7 +315,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
                     v0 = 0;
                   }
                   c4 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp17) {
                 if (0 === v0) {
@@ -539,7 +539,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -583,7 +583,7 @@ let tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConnectedApp
               c3 = 0;
             }
             v3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp17) {
           if (0 === c3) {

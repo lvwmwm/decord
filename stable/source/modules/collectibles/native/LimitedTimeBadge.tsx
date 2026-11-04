@@ -1,22 +1,22 @@
-// Module ID: 9330
-// Function ID: 9331
+// Module ID: 9460
+// Function ID: 9461
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2132, 1207, 21, 5191, 587, 1128, 558, 576, 5065, 504, 7433, 5187, 2]
+// Dependencies: [19, 17, 2068, 1207, 21, 5003, 587, 1128, 558, 576, 5010, 504, 7586, 5266, 2]
 
-// Module 9330 (LimitedTimeBadge)
+// Module 9460 (LimitedTimeBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl7 from "intl" /* 1128 */;
-import shared from "shared" /* 5065 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import useCountdownDefault from "useCountdown" /* 7433 */;
+import shared from "shared" /* 5010 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import useCountdownDefault from "useCountdown" /* 7586 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2132 */;
+import LocaleStore from "LocaleStore" /* 2068 */;
 import ThemeStore from "ThemeStore" /* 1207 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -218,7 +218,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function LimitedTimeB
   items3[2] = style;
   let str = "text-overlay-light";
   const tmp7 = getBadgeString(hasItem, days, tmp6.hours);
-  const Text = tmp2(5187).Text;
+  const Text = tmp2(5266).Text;
   if (stateFromStores) {
     str = "text-overlay-dark";
   }

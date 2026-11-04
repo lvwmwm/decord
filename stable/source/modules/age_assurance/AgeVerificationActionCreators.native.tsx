@@ -1,23 +1,23 @@
-// Module ID: 7764
-// Function ID: 7765
+// Module ID: 7915
+// Function ID: 7916
 // Name: AgeVerificationActionCreators
-// Dependencies: [5, 1392, 6173, 7765, 7749, 7295, 21, 7766, 6190, 7775, 2002, 7301, 7797, 7798, 1630, 5401, 7799, 1400, 1384, 7800, 7801, 6165, 6177, 584, 7802, 7808, 7815, 7967, 7968, 4901, 6174, 7979, 7981, 7982, 2]
+// Dependencies: [5, 1392, 6688, 7916, 7900, 7448, 21, 7917, 6704, 7926, 2002, 7454, 7948, 7949, 1630, 5942, 7950, 1400, 1384, 7951, 7952, 6686, 5676, 584, 7953, 7959, 7966, 8119, 8120, 5692, 6689, 8131, 8133, 8134, 2]
 
-// Module 7764 (AgeVerificationActionCreators)
+// Module 7915 (AgeVerificationActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import LinkingDefault from "Linking" /* 4901 */;
-import useAlertStore from "useAlertStore" /* 5401 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6174 */;
-import Constants from "Constants" /* 7295 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 7749 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7765 */;
-import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 7979 */;
-import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 7981 */;
-import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 7982 */;
+import LinkingDefault from "Linking" /* 5692 */;
+import useAlertStore from "useAlertStore" /* 5942 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6689 */;
+import Constants from "Constants" /* 7448 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 7900 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7916 */;
+import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 8131 */;
+import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 8133 */;
+import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 8134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore_mod from "UserStore" /* 1392 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6173 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6688 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,28 +44,28 @@ function openIncodeAgeVerificationModal(arg0) {
     combined = null;
     if ("" !== WEBAPP_ENDPOINT) {
       const _URL = URL;
-      const _HermesInternal2 = HermesInternal;
-      let str3 = "https:";
+      const _HermesInternal = HermesInternal;
+      let str2 = "https:";
       const self = this;
       const self2 = this;
       const uRL = new URL("https:" + WEBAPP_ENDPOINT);
-      let tmp7 = uRL;
+      let tmp4 = uRL;
       const hostname = uRL.hostname;
       if ("localhost" !== hostname) {
         if ("127.0.0.1" !== hostname) {
           let obj = /^(10\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/;
         }
-        const tmp3 = closure_12;
-        const _HermesInternal = HermesInternal;
-        combined = "" + str3 + WEBAPP_ENDPOINT + closure_12;
+        let tmp5 = closure_12;
+        const _HermesInternal2 = HermesInternal;
+        combined = "" + str2 + WEBAPP_ENDPOINT + closure_12;
       }
-      str3 = "http:";
+      str2 = "http:";
     }
   }
   let flag = null != combined;
   if (flag) {
-    let tmp4 = _asyncToGenerator;
-    let tmp5 = (async (arg0, value) => {
+    let tmp6 = _asyncToGenerator;
+    let tmp7 = (async (arg0, value) => {
       let c2;
       let closure_1;
       let obj6;
@@ -82,7 +82,7 @@ function openIncodeAgeVerificationModal(arg0) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ function openIncodeAgeVerificationModal(arg0) {
               combined = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp21) {
           if (0 === combined) {
@@ -193,7 +193,7 @@ function showAgeVerification(onClose) {
     return true;
   } else {
     let flag2;
-    if (method === onClose(tmp3[17]).AgeAssuranceMethod.NEW_METHOD) {
+    if (method === onClose(tmp3[17]).AgeAssuranceMethod.AGE_KEY) {
       if (null != webviewUrl) {
         if ("" !== webviewUrl) {
           const tmp2Result6 = onClose(tmp3[18]);
@@ -304,17 +304,17 @@ let obj = {
     let obj = entryPoint(1630);
     if (obj.isMetaQuest()) {
       const tmp19 = closure_7;
-      const tmpResult = tmp(5401);
-      tmpResult.openAlert(closure_7, jsx(onClose(7799), {}), onClose);
+      const tmpResult = tmp(5942);
+      tmpResult.openAlert(closure_7, jsx(onClose(7950), {}), onClose);
     } else {
-      const tmpResult6 = tmp(6165);
+      const tmpResult6 = tmp(6686);
       let isAgeVerifiedResult = tmpResult6.isAgeVerified();
       if (isAgeVerifiedResult) {
-        const tmpResult7 = tmp(6177);
+        const tmpResult7 = tmp(5676);
         isAgeVerifiedResult = tmpResult7.hasAgeGatedFeatures();
       }
       dependencyMap = isAgeVerifiedResult;
-      const tmpResult8 = tmp(7800);
+      const tmpResult8 = tmp(7951);
       if (tmpResult8.isAgeVerificationIncodeEnabled(entryPoint)) {
         const currentUser = UserStore.getCurrentUser();
         prop = undefined;
@@ -348,7 +348,7 @@ let obj = {
           }
         }
       } else {
-        const tmpResult9 = tmp(7802);
+        const tmpResult9 = tmp(7953);
         if (tmpResult9.isExpressiveModalV2Enabled(entryPoint)) {
           let tmp8 = prop;
           let tmp9 = prop(function*(arg0, value) {
@@ -367,7 +367,7 @@ let obj = {
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -423,7 +423,7 @@ let obj = {
                     }), {}, closure_1_6);
                   }
                   prop = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } catch (tmp19) {
                 prop = 3;
@@ -432,12 +432,12 @@ let obj = {
             }
           })();
         } else {
-          const tmpResult10 = tmp(7967);
+          const tmpResult10 = tmp(8119);
           UserStore = tmpResult10.isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
           let tmp4 = onClose;
           let tmp5 = prop;
           let tmp6 = closure_6;
-          const obj7 = onClose(6190);
+          const obj7 = onClose(6704);
           obj7.pushLazy(prop(function*() {
             let c1;
             let closure_0;

@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "c364bdc09e68c8671cb945823ae941ea", name: "fr.messages.c364bdc09e68c8671cb945823ae941ea.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/pinot", scales: [1], hash: "b1b570faf8b1c76219f4b55f4441f99e", name: "Pinot.compiled.messages", type: "jsona" });

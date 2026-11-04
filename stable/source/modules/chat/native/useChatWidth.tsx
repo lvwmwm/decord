@@ -1,14 +1,14 @@
-// Module ID: 11099
-// Function ID: 11100
+// Module ID: 11255
+// Function ID: 11256
 // Name: useChatWidth
-// Dependencies: [19, 5075, 5077, 11100, 558, 11101, 2]
+// Dependencies: [19, 5185, 5187, 11256, 558, 11257, 2]
 // Exports: getChatWidth
 
-// Module 11099 (useChatWidth)
-import useChatLayout from "useChatLayout" /* 5075 */;
-import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 5077 */;
-import useDrawerWidth from "useDrawerWidth" /* 11100 */;
-import reactDefault from "react" /* 11101 */;
+// Module 11255 (useChatWidth)
+import useChatLayout from "useChatLayout" /* 5185 */;
+import useBaseAppContainerDimensions from "useBaseAppContainerDimensions" /* 5187 */;
+import useDrawerWidth from "useDrawerWidth" /* 11256 */;
+import reactDefault from "react" /* 11257 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

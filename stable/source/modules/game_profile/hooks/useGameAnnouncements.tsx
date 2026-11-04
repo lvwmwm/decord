@@ -1,12 +1,12 @@
-// Module ID: 9254
-// Function ID: 9255
+// Module ID: 9384
+// Function ID: 9385
 // Name: useGameAnnouncements
-// Dependencies: [19, 9158, 558, 576, 504, 9255, 2]
+// Dependencies: [19, 9285, 558, 576, 504, 9385, 2]
 
-// Module 9254 (useGameAnnouncements)
+// Module 9384 (useGameAnnouncements)
 import react from "react" /* 19 */;
-import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9255 */;
-import GameProfileStore from "GameProfileStore" /* 9158 */;
+import GameProfileHttpUtils from "GameProfileHttpUtils" /* 9385 */;
+import GameProfileStore from "GameProfileStore" /* 9285 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

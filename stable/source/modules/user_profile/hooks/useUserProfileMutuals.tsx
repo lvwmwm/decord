@@ -1,16 +1,16 @@
-// Module ID: 13294
-// Function ID: 13295
+// Module ID: 13564
+// Function ID: 13565
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 7613, 6219, 7586, 558, 576, 504, 12, 8935, 2]
+// Dependencies: [32, 19, 7764, 6733, 7735, 558, 576, 504, 12, 9062, 2]
 
-// Module 13294 (useUserProfileMutuals)
+// Module 13564 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 8935 */;
+import reactDefault from "react" /* 9062 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7613 */;
-import SortedGuildStore from "SortedGuildStore" /* 6219 */;
-import UserProfileStore from "UserProfileStore" /* 7586 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7764 */;
+import SortedGuildStore from "SortedGuildStore" /* 6733 */;
+import UserProfileStore from "UserProfileStore" /* 7735 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
   let tmp9;
   let user;
   let userAffinitiesMap;
-  const f116364 = (arg0) => {
+  const f118758 = (arg0) => {
     let length = closure_3[arg0.guild.id];
     if (length == null) {
       length = stateFromStores1.length;
@@ -212,8 +212,8 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserPro
       const tmpResult8 = require("module_12");
       cResult[12] = arr3;
       cResult[13] = stateFromStores1;
-      cResult[14] = tmpResult8.sortBy(arr3, f116364);
-      const sortByResult = tmpResult8.sortBy(arr3, f116364);
+      cResult[14] = tmpResult8.sortBy(arr3, f118758);
+      const sortByResult = tmpResult8.sortBy(arr3, f118758);
     }
   }
   stateFromStores(stateFromStores1[9])(tmp8);

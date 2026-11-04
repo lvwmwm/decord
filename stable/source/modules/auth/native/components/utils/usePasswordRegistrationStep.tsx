@@ -1,11 +1,11 @@
-// Module ID: 17088
-// Function ID: 17089
+// Module ID: 17422
+// Function ID: 17423
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 17065, 558, 576, 6916, 17089, 1128, 17076, 2]
+// Dependencies: [5, 32, 19, 17399, 558, 576, 7082, 17423, 1128, 17410, 2]
 
-// Module 17088 (usePasswordRegistrationStep)
-import getErrorDefault from "getError" /* 6916 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17065 */;
+// Module 17422 (usePasswordRegistrationStep)
+import getErrorDefault from "getError" /* 7082 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17399 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -61,7 +61,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordR
     tmp11 = cResult[3];
   }
   importDefault = tmp11;
-  const tmpResult = tmp(17089);
+  const tmpResult = tmp(17423);
   const passwordScore1 = tmpResult.usePasswordScore(first1);
   const passwordScore = passwordScore1.passwordScore;
   let tmp15 = null == first1;
@@ -112,7 +112,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordR
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -243,7 +243,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePasswordR
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;

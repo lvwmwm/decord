@@ -1,10 +1,10 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 12129
+// Function ID: 12130
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 11930, 9548, 11931, 7513, 558, 576, 6466, 5479, 1128, 5139, 2]
+// Dependencies: [5, 32, 19, 21, 12130, 9681, 12131, 5666, 558, 576, 6944, 5276, 1128, 5712, 2]
 // Exports: useCommandRowSend
 
-// Module 11929 (CommandRowButton)
+// Module 12129 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
@@ -36,10 +36,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
     }
   }
   if (hasOptions) {
-    tmp5Result = tmp5(tmp(6466).TableRowArrow, {});
+    tmp5Result = tmp5(tmp(6944).TableRowArrow, {});
   } else {
     const obj2 = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: onPressSend, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: sending };
-    const Button = tmp(5479).Button;
+    const Button = tmp(5276).Button;
     intl = tmp(1128).intl;
     tmp5Result = tmp5(Button, obj2);
   }
@@ -52,10 +52,10 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function CommandRowIc
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(6466).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6944).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5479).Button;
+    const Button = tmp4(5276).Button;
     intl = tmp4(1128).intl;
     tmp3Result = tmp3(Button, obj);
   }
@@ -100,7 +100,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -149,7 +149,7 @@ export const useCommandRowSend = function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp25) {
         closure_2 = tmp25;

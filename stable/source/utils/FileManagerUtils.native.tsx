@@ -1,10 +1,10 @@
-// Module ID: 8605
-// Function ID: 8606
+// Module ID: 8728
+// Function ID: 8729
 // Name: FileManagerUtils
 // Dependencies: [5, 3, 1164, 1384, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8605 (FileManagerUtils)
+// Module 8728 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_nativeDefault from "react-native" /* 1164 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -49,7 +49,7 @@ let obj = function _readFile() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c6;
@@ -169,9 +169,9 @@ export const removeFile = function removeFile(cache, combined) {
   obj = react_nativeDefault;
   return obj.removeFile(cache, combined);
 };
-export const clearFolder = function clearFolder(cache, c3) {
+export const clearFolder = function clearFolder(cache, c5) {
   obj = react_nativeDefault;
-  return obj.clearFolder(cache, c3);
+  return obj.clearFolder(cache, c5);
 };
 export const readFile = function readFile() {
   return obj(...arguments);

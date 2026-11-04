@@ -1,25 +1,25 @@
-// Module ID: 12855
-// Function ID: 12856
+// Module ID: 13127
+// Function ID: 13128
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 2068, 7510, 2090, 5532, 1087, 21, 5191, 587, 9999, 8031, 8047, 5155, 9567, 9564, 11, 8026, 9566, 8169, 1297, 12856, 7445, 8515, 5400, 1128, 558, 576, 504, 7130, 8171, 8035, 12857, 5187, 5480, 7118, 2]
+// Dependencies: [32, 5, 19, 17, 4855, 7663, 4877, 6042, 1087, 21, 5003, 587, 10128, 8182, 8198, 5242, 9700, 9697, 11, 8178, 9699, 8319, 1297, 13128, 7598, 8618, 5941, 1128, 558, 576, 504, 7285, 8321, 8186, 13129, 5266, 5277, 5297, 2]
 
-// Module 12855 (AddMediaToOriginalForumPostActionSheet)
+// Module 13127 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import DraftStore from "DraftStore" /* 7510 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8035 */;
-import Tracking from "Tracking" /* 8171 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import DraftStore from "DraftStore" /* 7663 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8186 */;
+import Tracking from "Tracking" /* 8321 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import MessageStore from "MessageStore" /* 5532 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import MessageStore from "MessageStore" /* 6042 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ let obj = function _upload2() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c7;
@@ -264,7 +264,7 @@ let obj = function _upload2() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp72) {
           closure_6 = tmp72;

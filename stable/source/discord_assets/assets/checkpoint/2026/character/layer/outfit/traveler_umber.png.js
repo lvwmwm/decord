@@ -1,8 +1,8 @@
-// Module ID: 5666
-// Function ID: 5667
+// Module ID: 6176
+// Function ID: 6177
 // Dependencies: [2]
 
-// Module 5666
+// Module 6176
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/traveler_umber.png.js");

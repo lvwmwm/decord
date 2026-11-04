@@ -1,10 +1,10 @@
-// Module ID: 5385
-// Function ID: 5386
+// Module ID: 5925
+// Function ID: 5926
 // Name: device/DeviceState
-// Dependencies: [5, 3, 1447, 5386, 2]
+// Dependencies: [5, 3, 1447, 5926, 2]
 // Exports: getDeviceState
 
-// Module 5385 (device/DeviceState)
+// Module 5925 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let obj = function _getDeviceState() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;

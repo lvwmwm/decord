@@ -1,17 +1,17 @@
-// Module ID: 9107
-// Function ID: 9108
+// Module ID: 9234
+// Function ID: 9235
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 2014, 5209, 9102, 5216, 206, 558, 576, 504, 38, 9108, 2]
+// Dependencies: [32, 5, 19, 502, 2014, 5746, 9229, 5750, 206, 558, 576, 504, 38, 9235, 2]
 
-// Module 9107 (useSecureFramesPairwiseFingerprint)
-import Constants from "Constants" /* 5216 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9102 */;
+// Module 9234 (useSecureFramesPairwiseFingerprint)
+import Constants from "Constants" /* 5750 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9229 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import RTCConnectionStore_mod from "RTCConnectionStore" /* 5209 */;
+import RTCConnectionStore_mod from "RTCConnectionStore" /* 5746 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let SecureFramesPairwiseFingerprintMode = function _computeNativeDisplayPair() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -242,7 +242,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -346,7 +346,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
             closure_9.current = setTimeout(() => {
               _asyncToGenerator(true);
               const promise = t8();
-              promise.then(() => { /* body not rendered: F156362 */ });
+              promise.then(() => { /* body not rendered: F159496 */ });
             }, 0);
           } else {
             tmp4 = closure_10;
@@ -405,7 +405,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useSecureFra
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {

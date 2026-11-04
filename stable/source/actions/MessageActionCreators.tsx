@@ -1,57 +1,57 @@
-// Module ID: 7445
-// Function ID: 7446
+// Module ID: 7598
+// Function ID: 7599
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 6013, 6397, 7446, 7447, 7631, 7633, 7579, 6286, 6153, 502, 2068, 7634, 2090, 5173, 5532, 4845, 5207, 6291, 7640, 1392, 1087, 7642, 7306, 5185, 17, 3, 5172, 7643, 5177, 7646, 7647, 5206, 7652, 6233, 7672, 1267, 5174, 7688, 7691, 5889, 7693, 1128, 2131, 8026, 584, 10111, 6001, 10106, 8515, 1297, 5534, 7200, 9, 7476, 6008, 11, 2094, 2114, 7465, 6011, 14404, 10001, 8966, 14405, 4864, 7637, 1405, 7244, 8165, 14406, 8020, 11208, 14410, 9568, 13806, 13812, 6398, 1104, 8149, 2000, 8169, 5065, 10401, 5399, 2]
+// Dependencies: [32, 5, 6528, 6876, 7599, 7600, 7783, 7785, 7728, 6798, 6674, 502, 4855, 7786, 4877, 5732, 6042, 4935, 5744, 6803, 7792, 1392, 1087, 7794, 7459, 5008, 17, 3, 5731, 7795, 5735, 7798, 7799, 5743, 7804, 6747, 7824, 1267, 5733, 7840, 7843, 6404, 7845, 1128, 2067, 8178, 584, 10239, 6516, 10235, 8618, 1297, 6044, 7355, 9, 7629, 6523, 11, 4881, 4901, 7618, 6526, 14671, 10130, 9093, 14672, 2053, 7789, 1405, 7399, 8316, 14673, 8172, 11380, 14677, 9701, 14067, 14073, 6877, 1104, 8300, 2000, 8319, 5010, 10529, 5940, 2]
 
-// Module 7445 (MessageActionCreators)
+// Module 7598 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl5 from "intl" /* 1128 */;
 import FlagUtils from "FlagUtils" /* 1405 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4864 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5174 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
-import merged5 from "merged5" /* 6001 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7306 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 7476 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7579 */;
-import SlowmodeStore from "SlowmodeStore" /* 7640 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 7642 */;
-import appMessageEmbedTracking from "appMessageEmbedTracking" /* 7647 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7688 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7691 */;
-import UploadUtils from "UploadUtils" /* 8026 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8515 */;
-import getInviteURLDefault from "getInviteURL" /* 8966 */;
-import createNonce from "createNonce" /* 10106 */;
-import createMessage from "createMessage" /* 10111 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10401 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14405 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2053 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5733 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
+import merged5 from "merged5" /* 6516 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7459 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 7629 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7728 */;
+import SlowmodeStore from "SlowmodeStore" /* 7792 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 7794 */;
+import appMessageEmbedTracking from "appMessageEmbedTracking" /* 7799 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7840 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7843 */;
+import UploadUtils from "UploadUtils" /* 8178 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8618 */;
+import getInviteURLDefault from "getInviteURL" /* 9093 */;
+import createNonce from "createNonce" /* 10235 */;
+import createMessage from "createMessage" /* 10239 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10529 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 14672 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6397 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7446 */;
-import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 7447 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7631 */;
-import PendingReplyStore from "PendingReplyStore" /* 7633 */;
-import StickersStore from "StickersStore" /* 6286 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6153 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6876 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 7599 */;
+import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 7600 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 7783 */;
+import PendingReplyStore from "PendingReplyStore" /* 7785 */;
+import StickersStore from "StickersStore" /* 6798 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6674 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import EditMessageStore from "EditMessageStore" /* 7634 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import InviteStore from "InviteStore" /* 5173 */;
-import MessageStore from "MessageStore" /* 5532 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import PresenceStore from "PresenceStore" /* 5207 */;
-import ReadStateStore from "ReadStateStore" /* 6291 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import EditMessageStore from "EditMessageStore" /* 7786 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import InviteStore from "InviteStore" /* 5732 */;
+import MessageStore from "MessageStore" /* 6042 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import PresenceStore from "PresenceStore" /* 5744 */;
+import ReadStateStore from "ReadStateStore" /* 6803 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import MessageConstants from "MessageConstants" /* 5185 */;
+import MessageConstants from "MessageConstants" /* 5008 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -454,7 +454,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f97166 = () => {
+    const f99085 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -478,8 +478,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f97166));
-      withResult1.otherwise(f97166);
+      ({ message, messageName } = withResult1.otherwise(f99085));
+      withResult1.otherwise(f99085);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -582,7 +582,7 @@ let obj17 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -625,7 +625,7 @@ let obj17 = {
               return obj7;
             } else {
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           }
         } catch (tmp10) {
@@ -830,7 +830,7 @@ let obj17 = {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -915,7 +915,7 @@ let obj17 = {
             }
           }
           after = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp63) {
           after = 3;
           throw tmp63;
@@ -938,7 +938,7 @@ let obj17 = {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -1025,7 +1025,7 @@ let obj17 = {
             }
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp26) {
           c3 = 3;
           throw tmp26;
@@ -1428,7 +1428,7 @@ let obj17 = {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c7;
@@ -1517,7 +1517,7 @@ let obj17 = {
                   attachmentsToUpload = guildId.attachmentsToUpload;
                   onAttachmentUploadError = guildId.onAttachmentUploadError;
                   const announcementSendOptions = guildId.announcementSendOptions;
-                  const withCheckpoint = guildId.withCheckpoint;
+                  const checkpointCardType = guildId.checkpointCardType;
                   const mediaMention = guildId.mediaMention;
                   scheduledTimestamp = guildId.scheduledTimestamp;
                   const flags = guildId.flags;
@@ -1564,7 +1564,7 @@ let obj17 = {
                             if (null == contentInventoryEntry) {
                               if (type !== constants3.FORWARD) {
                                 if (null == attachments) {
-                                  if (!withCheckpoint) {
+                                  if (null == checkpointCardType) {
                                     if (null == emojiUsed.components) {
                                       if (null != attachmentsToUpload) {
                                         if (attachmentsToUpload.length > 0) {
@@ -1731,8 +1731,8 @@ let obj17 = {
                   if (enabled.isEnabled()) {
                     obj10.message.has_poggermode_enabled = true;
                   }
-                  if (withCheckpoint) {
-                    obj10.message.with_checkpoint = true;
+                  if (null != checkpointCardType) {
+                    obj10.message.checkpoint_card_type = checkpointCardType;
                   }
                   if (null != contentInventoryEntry) {
                     obj10.message.content_inventory_entry = contentInventoryEntry;
@@ -1795,7 +1795,7 @@ let obj17 = {
                 if (null == closure_18) {
                   c7 = 0;
                   c9 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 } else {
                   attachments2 = closure_18.attachments;
                   uploader = closure_18.uploader;
@@ -1803,7 +1803,7 @@ let obj17 = {
                   if (tmp204) {
                     c7 = 0;
                     c9 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   }
                   let tmp45 = attachments2;
                   if (null != attachments2) {
@@ -2408,7 +2408,7 @@ let obj17 = {
             let obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -2486,7 +2486,7 @@ let obj17 = {
                 obj5.focusMessage(obj6);
               });
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } catch (tmp12) {
             c3 = 3;
@@ -2515,7 +2515,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -2556,7 +2556,7 @@ let obj17 = {
               patch(request);
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp8) {
           c3 = 3;
@@ -2585,7 +2585,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -2626,7 +2626,7 @@ let obj17 = {
               patch(request);
             }
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp8) {
           c3 = 3;
@@ -2667,9 +2667,9 @@ let obj17 = {
         const obj = id(c3[46]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f159286);
+        dispatchResult.then(f162517);
       }
-      const f159286 = () => {
+      const f162517 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[43]).intl;
@@ -2685,7 +2685,7 @@ let obj17 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -2730,11 +2730,11 @@ let obj17 = {
               const obj = id(c3[46]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f159286);
+              dispatchResult.then(f162517);
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp9) {
           c3 = 3;
           throw tmp9;

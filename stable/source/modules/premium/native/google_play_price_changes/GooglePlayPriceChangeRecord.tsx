@@ -1,9 +1,9 @@
-// Module ID: 4872
-// Function ID: 4873
+// Module ID: 2060
+// Function ID: 2061
 // Name: GooglePlayPriceChangeRecord
 // Dependencies: [1407, 2]
 
-// Module 4872 (GooglePlayPriceChangeRecord)
+// Module 2060 (GooglePlayPriceChangeRecord)
 import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;
 

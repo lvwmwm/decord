@@ -1,16 +1,16 @@
-// Module ID: 8541
-// Function ID: 8542
+// Module ID: 8646
+// Function ID: 8647
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 5181, 570, 1274, 1496, 5063, 558, 576, 504, 7540, 2]
+// Dependencies: [32, 5, 19, 5004, 570, 1274, 1496, 5000, 558, 576, 504, 7692, 2]
 // Exports: maybeFetchColors
 
-// Module 8541 (useAvatarColor)
+// Module 8646 (useAvatarColor)
 import react2 from "react" /* 576 */;
-import _modDef7540 from "module_7540" /* 7540 */;
+import _modDef7692 from "module_7692" /* 7692 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import module_570 from "module_570" /* 570 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let obj = function _maybeFetchColors() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -65,7 +65,7 @@ let obj = function _maybeFetchColors() {
           return obj;
         }
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp7) {
         c1 = 3;
         throw tmp7;
@@ -93,7 +93,7 @@ obj = function _fetchColors() {
         let obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -173,7 +173,7 @@ obj = function _fetchColors() {
           c4 = 0;
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp24) {
         let closure_3 = tmp24;
         if (0 === c4) {

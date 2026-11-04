@@ -1,15 +1,15 @@
-// Module ID: 7391
-// Function ID: 7392
+// Module ID: 7544
+// Function ID: 7545
 // Name: GuildBoostPurchasingUtils
-// Dependencies: [5, 4870, 1087, 1394, 5400, 1128, 1267, 5980, 7392, 7397, 7398, 7399, 7400, 4864, 2]
+// Dependencies: [5, 2058, 1087, 1394, 5941, 1128, 1267, 6495, 7545, 7550, 7551, 7552, 7553, 2053, 2]
 // Exports: launchGuildBoostFlowOrAlert
 
-// Module 7391 (GuildBoostPurchasingUtils)
+// Module 7544 (GuildBoostPurchasingUtils)
 import intl3 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SubscriptionStore from "SubscriptionStore" /* 4870 */;
+import SubscriptionStore from "SubscriptionStore" /* 2058 */;
 import Constants from "Constants" /* 1087 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import size from "module_2" /* 2 */;
@@ -57,7 +57,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -144,7 +144,7 @@ let obj = function _launchGuildBoostFlowOrAlert() {
                   closure_131_11(intl.string(closure_131_0(closure_131_2[5]).t.npfhh0), analyticsLocation);
                 }
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else {
                 let obj2 = closure_131_0(closure_131_2[7]);
                 onPaymentDismiss = 2;

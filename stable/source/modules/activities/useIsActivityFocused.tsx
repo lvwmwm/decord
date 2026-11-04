@@ -1,13 +1,13 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11400
+// Function ID: 11401
 // Name: useIsActivityFocused
-// Dependencies: [6292, 2067, 6315, 558, 576, 504, 2]
+// Dependencies: [6804, 4854, 6812, 558, 576, 504, 2]
 // Exports: isActivityFocused
 
-// Module 11229 (useIsActivityFocused)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6315 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+// Module 11400 (useIsActivityFocused)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6812 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

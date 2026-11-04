@@ -1,14 +1,14 @@
-// Module ID: 18358
-// Function ID: 18359
+// Module ID: 18696
+// Function ID: 18697
 // Name: calculatePIPState
-// Dependencies: [6292, 10680, 5214, 18186, 2]
+// Dependencies: [6804, 10932, 5664, 18483, 2]
 // Exports: default
 
-// Module 18358 (calculatePIPState)
-import CallConstants from "CallConstants" /* 5214 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18186 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
+// Module 18696 (calculatePIPState)
+import CallConstants from "CallConstants" /* 5664 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10932 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 18483 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
@@ -30,7 +30,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   const obj = VoicePanelPIPUtils;
   const pIPBlockList = obj.createPIPBlockList(focusedId.mode, focusedId.focusedId);
   const obj2 = VoicePanelPIPUtils;
-  const obj3 = { channelId, lastParticipantId, speakingUserId, focusedParticipantId: focusedId.focusedId, blockList: pIPBlockList, panelMode: focusedId.mode, showSecondaryPIP: focusedId.showSecondaryPIP };
+  const obj3 = { channelId, lastParticipantId, speakingUserId, focusedParticipantId: focusedId.focusedId, blockList: pIPBlockList, panelMode: focusedId.mode, showSecondaryPIP: focusedId.showSecondaryPIP, canShowActivities: true };
   const pIPParticipantToShow = obj2.computePIPParticipantToShow(obj3);
   let type1;
   if (pIPParticipantToShow != null) {
@@ -64,7 +64,7 @@ export default function calculatePIPState(channelId, getTargetDimensions, lastPa
   }
   let SquarePIPReferenceDimensions = getTargetDimensions(id1);
   if (SquarePIPReferenceDimensions == null) {
-    SquarePIPReferenceDimensions = tmp6(18186).SquarePIPReferenceDimensions;
+    SquarePIPReferenceDimensions = tmp6(18483).SquarePIPReferenceDimensions;
   }
   const tmp18 = mode === PANEL && tmp;
   const obj4 = { participant: pIPParticipantToShow, dimensions: computePIPSize(SquarePIPReferenceDimensions, tmp12, tmp18, focusedId.showSecondaryPIP) };

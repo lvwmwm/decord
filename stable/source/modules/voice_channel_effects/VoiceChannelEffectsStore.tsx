@@ -1,16 +1,16 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11476
+// Function ID: 11477
 // Name: VoiceChannelEffectsStore
-// Dependencies: [5214, 584, 1104, 12, 7337, 5065, 504, 2]
+// Dependencies: [5664, 584, 1104, 12, 7489, 5010, 504, 2]
 // Exports: clearVoiceChannelEffectForUser
 
-// Module 11301 (VoiceChannelEffectsStore)
+// Module 11476 (VoiceChannelEffectsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import shared from "shared" /* 5065 */;
-import CallConstants from "CallConstants" /* 5214 */;
-import VoiceChannelEffectsUtils from "VoiceChannelEffectsUtils" /* 7337 */;
+import shared from "shared" /* 5010 */;
+import CallConstants from "CallConstants" /* 5664 */;
+import VoiceChannelEffectsUtils from "VoiceChannelEffectsUtils" /* 7489 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

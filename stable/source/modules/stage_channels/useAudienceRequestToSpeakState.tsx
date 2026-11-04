@@ -1,11 +1,11 @@
-// Module ID: 5516
-// Function ID: 5517
+// Module ID: 6028
+// Function ID: 6029
 // Name: useAudienceRequestToSpeakState
-// Dependencies: [5212, 558, 576, 504, 2]
+// Dependencies: [5662, 558, 576, 504, 2]
 // Exports: getAudienceRequestToSpeakState
 
-// Module 5516 (useAudienceRequestToSpeakState)
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
+// Module 6028 (useAudienceRequestToSpeakState)
+import VoiceStateStore from "VoiceStateStore" /* 5662 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

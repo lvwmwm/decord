@@ -1,13 +1,13 @@
-// Module ID: 17432
-// Function ID: 17433
+// Module ID: 17771
+// Function ID: 17772
 // Name: GuildsBarDnDStore
-// Dependencies: [6219, 1269, 4945, 1274, 1257, 558, 576, 4828, 2]
+// Dependencies: [6733, 1269, 5084, 1274, 1257, 558, 576, 4918, 2]
 
-// Module 17432 (GuildsBarDnDStore)
+// Module 17771 (GuildsBarDnDStore)
 import react from "react" /* 576 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import react_native from "react-native" /* 1274 */;
-import SortedGuildStore from "SortedGuildStore" /* 6219 */;
+import SortedGuildStore from "SortedGuildStore" /* 6733 */;
 import module_1269 from "module_1269" /* 1269 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, set;
 
 let tmp;
-const _slicedToArray = tmp(4828);
+const _slicedToArray = tmp(4918);
 const GuildsNodeType = SortedGuildStore.GuildsNodeType;
 const INITIAL_GESTURE_STATE = { mode: null, initialX: 0, initialY: 0, absoluteX: 0, absoluteY: 0 };
 let c5 = -1;
@@ -39,7 +39,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: null,
+    windowSize: 60000,
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();
@@ -79,7 +79,7 @@ const withEqualityFn = module_1269.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "options" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "ix" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;

@@ -1,16 +1,16 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 9006
+// Function ID: 9007
 // Name: DefaultChannelThresholdUtils
-// Dependencies: [5, 2090, 7066, 7067, 1087, 7065, 7072, 1099, 5399, 1128, 2]
+// Dependencies: [5, 4877, 7227, 7228, 1087, 7226, 7233, 1099, 5940, 1128, 2]
 // Exports: checkChattableChannelThresholdMetAfterChannelPermissionDeny, isDefaultChannelThresholdMetAfterDelete
 
-// Module 8879 (DefaultChannelThresholdUtils)
+// Module 9006 (DefaultChannelThresholdUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7065 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7067 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7226 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 7228 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7066 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7227 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -33,7 +33,7 @@ let obj = function _isDefaultChannelThresholdMetAfterDelete() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = function _isChattableChannelThresholdMetAfterChannelChange() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {

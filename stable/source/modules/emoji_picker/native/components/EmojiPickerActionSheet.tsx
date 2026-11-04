@@ -1,27 +1,27 @@
-// Module ID: 9728
-// Function ID: 9729
+// Module ID: 9859
+// Function ID: 9860
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1392, 9729, 1087, 1395, 21, 5191, 587, 8168, 4945, 9730, 6942, 1633, 1384, 7130, 7155, 9737, 5155, 9726, 9738, 5187, 1128, 7016, 9740, 4864, 9685, 2002, 5156, 5157, 9754, 7118, 5088, 9755, 9838, 9860, 2]
+// Dependencies: [32, 19, 17, 1392, 9860, 1087, 1395, 21, 5003, 587, 5257, 5084, 9861, 5625, 1633, 1384, 7285, 7310, 9867, 5242, 9857, 9868, 5266, 1128, 7177, 9870, 2053, 9816, 2002, 5244, 5245, 9884, 5297, 5198, 9885, 9968, 9990, 2]
 // Exports: default
 
-// Module 9728 (EmojiPickerActionSheet)
+// Module 9859 (EmojiPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
 import EmojiConstants from "EmojiConstants" /* 1395 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import SearchField2 from "SearchField" /* 7016 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9726 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9729 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 9730 */;
-import BurstReactionToggleDefault from "BurstReactionToggle" /* 9740 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import SearchBar2 from "SearchBar" /* 7177 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 9857 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9860 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 9861 */;
+import BurstReactionToggleDefault from "BurstReactionToggle" /* 9870 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 let BottomSheet;
@@ -35,7 +35,7 @@ let obj6;
 let obj7;
 let tmp5;
 let unpackModuleId;
-const DoubleTapReminderToast = tmp5(9738);
+const DoubleTapReminderToast = tmp5(9868);
 let react = react_mod;
 const View = react_native.View;
 const EmojiPickerSource = EmojiPickerListConstants.EmojiPickerSource;
@@ -218,9 +218,9 @@ export default function EmojiPickerActionSheet(onClose) {
     let obj2 = { style: items1, children: items2 };
     items1[1] = headerSpacer;
     const obj3 = { ref, size: "md", round: true, onChange: handleTextChange, placeholder: obj4.getSearchPlaceholder(pickerIntention, currentUser) };
-    const SearchField = SearchField2.SearchField;
+    const SearchBar = SearchBar2.SearchBar;
     obj4 = EmojiPickerUtils;
-    items2 = [authStore(SearchField, obj3), ];
+    items2 = [authStore(SearchBar, obj3), ];
     let tmp4Result = pickerIntention === EmojiIntention.REACTION && source !== EmojiPickerSource.NOTIFICATION;
     const tmp4 = authStore;
     const tmp6 = currentUser;

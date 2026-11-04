@@ -1,15 +1,15 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 9541
+// Function ID: 9542
 // Name: DiscoverableGuildsActionCreators
-// Dependencies: [5, 9409, 1087, 584, 1297, 2]
+// Dependencies: [5, 9540, 1087, 584, 1297, 2]
 // Exports: fetchDiscoverableGuilds
 
-// Module 9410 (DiscoverableGuildsActionCreators)
+// Module 9541 (DiscoverableGuildsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9409 */;
+import DiscoverableGuildsStore from "DiscoverableGuildsStore" /* 9540 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, closure_4, set, staleGuildIds;
@@ -28,7 +28,7 @@ let obj = function _requestGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c5;
@@ -93,7 +93,7 @@ let obj = function _requestGuilds() {
           obj.dispatch(obj11);
           c5 = 0;
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp23) {
         closure_4 = tmp23;
@@ -125,7 +125,7 @@ obj = function _fetchDiscoverableGuilds() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       while (true) {
@@ -198,7 +198,7 @@ obj = function _fetchDiscoverableGuilds() {
             return obj;
           } else {
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           c8 = 0;

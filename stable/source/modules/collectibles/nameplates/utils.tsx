@@ -8,7 +8,7 @@
 import Constants from "Constants" /* 1098 */;
 import intl6 from "intl" /* 1128 */;
 import NameplateRecord from "NameplateRecord" /* 1993 */;
-import nameplates_constants from "nameplates/constants" /* 1996 */;
+import constants from "constants" /* 1996 */;
 import _modDef1998 from "module_1998" /* 1998 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ export const getNameplateData = function getNameplateData(nameplate) {
   if (null != nameplate) {
     const obj = { skuId: null, src: null, imgAlt: null, palette: INVALID_NAMEPLATE_PALETTE };
     ({ skuId: obj.skuId, asset: obj.src, label: obj.imgAlt } = nameplate);
-    INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[nameplate.palette];
+    INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[nameplate.palette];
     const tmp2 = require;
     if (INVALID_NAMEPLATE_PALETTE == null) {
       INVALID_NAMEPLATE_PALETTE = tmp2(1996).INVALID_NAMEPLATE_PALETTE;
@@ -45,7 +45,7 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
       if (null != first) {
         const obj = { skuId: null, src: null, imgAlt: null, palette: INVALID_NAMEPLATE_PALETTE };
         ({ skuId: obj.skuId, asset: obj.src, label: obj.imgAlt, palette } = first);
-        INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[palette];
+        INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[palette];
         const tmp2 = require;
         if (INVALID_NAMEPLATE_PALETTE == null) {
           INVALID_NAMEPLATE_PALETTE = tmp2(1996).INVALID_NAMEPLATE_PALETTE;
@@ -58,9 +58,9 @@ export const getNameplateDataFromProductRecord = function getNameplateDataFromPr
   }
 };
 export const getBackgroundGradientColors = function getBackgroundGradientColors(palette, arg1) {
-  let tmp3 = palette.name !== nameplates_constants.INVALID_PALETTE_KEY;
+  let tmp3 = palette.name !== constants.INVALID_PALETTE_KEY;
   if (tmp3) {
-    let tmp4 = palette.name !== nameplates_constants.CUSTOM_PALETTE_KEY;
+    let tmp4 = palette.name !== constants.CUSTOM_PALETTE_KEY;
     if (!tmp4) {
       const obj = /^#([0-9a-fA-F]{6})$/;
       let isMatch = obj.test(palette.darkBackground);
@@ -81,9 +81,9 @@ export const getBackgroundGradientColors = function getBackgroundGradientColors(
   }
 };
 export const isValidPalette = function isValidPalette(name) {
-  let tmp3 = name.name !== nameplates_constants.INVALID_PALETTE_KEY;
+  let tmp3 = name.name !== constants.INVALID_PALETTE_KEY;
   if (tmp3) {
-    let tmp4 = name.name !== nameplates_constants.CUSTOM_PALETTE_KEY;
+    let tmp4 = name.name !== constants.CUSTOM_PALETTE_KEY;
     if (!tmp4) {
       const obj = /^#([0-9a-fA-F]{6})$/;
       let isMatch = obj.test(name.darkBackground);
@@ -98,9 +98,9 @@ export const isValidPalette = function isValidPalette(name) {
   return tmp3;
 };
 export const getNameplatePalette = function getNameplatePalette(arg0) {
-  let INVALID_NAMEPLATE_PALETTE = nameplates_constants.NAMEPLATE_PALETTES[arg0];
+  let INVALID_NAMEPLATE_PALETTE = constants.NAMEPLATE_PALETTES[arg0];
   if (INVALID_NAMEPLATE_PALETTE == null) {
-    INVALID_NAMEPLATE_PALETTE = nameplates_constants.INVALID_NAMEPLATE_PALETTE;
+    INVALID_NAMEPLATE_PALETTE = constants.INVALID_NAMEPLATE_PALETTE;
   }
   return INVALID_NAMEPLATE_PALETTE;
 };

@@ -1,20 +1,20 @@
-// Module ID: 10682
-// Function ID: 10683
+// Module ID: 10934
+// Function ID: 10935
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 6292, 10680, 10683, 5214, 558, 576, 4945, 10684, 568, 10685, 10686, 10687, 1274, 2]
+// Dependencies: [32, 19, 17, 6804, 10932, 10935, 5664, 558, 576, 5084, 10936, 568, 10937, 10938, 10939, 1274, 2]
 
-// Module 10682 (VoicePanelCardLayoutManager)
+// Module 10934 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 568 */;
 import react2 from "react" /* 576 */;
 import react_native2 from "react-native" /* 1274 */;
-import CallConstants from "CallConstants" /* 5214 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10684 */;
+import CallConstants from "CallConstants" /* 5664 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 10936 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6292 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 10680 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10683 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6804 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 10932 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10935 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -966,14 +966,14 @@ class VoicePanelCardLayoutManager {
       }
     }
   }
-  subscribeFromItem(arg0) {
+  subscribeFromItem(update) {
     const self = this;
-    let closure_0 = arg0;
+    let closure_0 = update;
     let layoutCallbacks = this.layoutCallbacks;
-    layoutCallbacks.add(arg0);
+    layoutCallbacks.add(update);
     return () => {
       const layoutCallbacks = self.layoutCallbacks;
-      layoutCallbacks.delete(closure_0);
+      layoutCallbacks.delete(update);
     };
   }
   subscribeToManager(arg0) {

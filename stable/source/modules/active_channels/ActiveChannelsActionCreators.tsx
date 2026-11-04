@@ -1,10 +1,10 @@
-// Module ID: 17191
-// Function ID: 17192
+// Module ID: 17525
+// Function ID: 17526
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1087, 584, 1297, 5892, 2]
+// Dependencies: [5, 1087, 584, 1297, 6407, 2]
 // Exports: fetchActiveChannels
 
-// Module 17191 (ActiveChannelsActionCreators)
+// Module 17525 (ActiveChannelsActionCreators)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _fetchActiveChannels() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

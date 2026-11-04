@@ -1,14 +1,14 @@
-// Module ID: 8626
-// Function ID: 8627
+// Module ID: 8749
+// Function ID: 8750
 // Name: useProfileEffect
-// Dependencies: [19, 7530, 7546, 7536, 558, 576, 504, 7529, 2]
+// Dependencies: [19, 7682, 7697, 7688, 558, 576, 504, 7681, 2]
 
-// Module 8626 (useProfileEffect)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7529 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7536 */;
+// Module 8749 (useProfileEffect)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7681 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7688 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7546 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7682 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7697 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

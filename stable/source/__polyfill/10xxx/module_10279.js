@@ -1,12 +1,14 @@
 // Module ID: 10279
 // Function ID: 10280
-// Dependencies: [41, 42, 93, 95, 98, 10137]
+// Dependencies: [41, 42, 93, 95, 98, 10246, 10249, 10250, 10266]
 
 // Module 10279
-import _mod10137 from "module_10137" /* 10137 */;
+import _mod10246 from "module_10246" /* 10246 */;
+import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 10250 */;
+import _mod10266 from "module_10266" /* 10266 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +27,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class UKMergeDateRangeRefiner {
+class ENMergeRelativeFollowByDateRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKMergeDateRangeRefiner);
-    const obj = _getPrototypeOf(UKMergeDateRangeRefiner);
+    _classCallCheck(this, ENMergeRelativeFollowByDateRefiner);
+    const obj = _getPrototypeOf(ENMergeRelativeFollowByDateRefiner);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,13 +44,65 @@ class UKMergeDateRangeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKMergeDateRangeRefiner, fn(_mod10137).default);
+_inherits(ENMergeRelativeFollowByDateRefiner, _mod10266.MergingRefiner);
 const entry = {
   key: "patternBetween",
   value: function patternBetween() {
-    return /^\s*(і до|і по|до|по|-)\s*$/i;
+    return /^\s*$/i;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "shouldMergeResults",
+    value: function shouldMergeResults(str, text, start) {
+      let match = str.match(this.patternBetween());
+      if (match) {
+        let tmp5 = null == str.match(/\s+(before|from)$/i);
+        null != text.text.match(/\s+(before|from)$/i);
+        if (tmp5) {
+          const str2 = text.text;
+          tmp5 = null == str2.match(/\s+(after|since)$/i);
+        }
+        let tmp6 = !tmp5;
+        if (tmp6) {
+          start = start.start;
+          let value = start.get("day");
+          if (value) {
+            const start2 = start.start;
+            value = start2.get("month");
+          }
+          if (value) {
+            const start3 = start.start;
+            value = start3.get("year");
+          }
+          tmp6 = value;
+        }
+        match = tmp6;
+      }
+      return match;
+    }
+  },
+  {
+    key: "mergeResults",
+    value: function mergeResults(arg0, text, start) {
+      const parseDurationResult = _mod10246.parseDuration(text.text);
+      let reverseDurationResult = parseDurationResult;
+      const str = text.text;
+      if (null != str.match(/\s+(before|from)$/i)) {
+        reverseDurationResult = tmp(10249).reverseDuration(parseDurationResult);
+      }
+      const ParsingComponents = tmp(10250).ParsingComponents;
+      const createRelativeFromReference = ParsingComponents.createRelativeFromReference;
+      const ReferenceWithTimezone = tmp(10250).ReferenceWithTimezone;
+      start = start.start;
+      const relativeFromReference = createRelativeFromReference(ReferenceWithTimezone.fromDate(start.date()), reverseDurationResult);
+      const reference = start.reference;
+      const index = text.index;
+      const parsingResult = new ReferenceWithTimezone2.ParsingResult(reference, index, "" + text.text + arg0 + start.text, relativeFromReference);
+      return parsingResult;
+    }
+  }
+];
 
-export default _createClass(UKMergeDateRangeRefiner, items);
+export default _createClass(ENMergeRelativeFollowByDateRefiner, items);

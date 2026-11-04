@@ -1,16 +1,16 @@
-// Module ID: 8547
-// Function ID: 8548
+// Module ID: 8652
+// Function ID: 8653
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8548, 1087, 38, 3, 1297, 584, 1452, 2]
+// Dependencies: [32, 5, 8653, 1087, 38, 3, 1297, 584, 1452, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8547 (ApplicationAssetUtils)
+// Module 8652 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1452 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8548 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8653 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f99371 = (item) => {
+const f101281 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -104,7 +104,7 @@ obj = function _resolveExternalAssets() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       while (true) {
@@ -175,7 +175,7 @@ obj = function _resolveExternalAssets() {
           }
         }
         c9 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     }
   });
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f99371).length > 0) {
+  if (arr.filter(f101281).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -522,7 +522,7 @@ export { fetchAssetIds };
 export const getAssetIds = function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f99371).length > 0) {
+  if (arr.filter(f101281).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

@@ -1,16 +1,12 @@
 // Module ID: 15372
 // Function ID: 15373
-// Dependencies: [15373]
+// Dependencies: [15370]
 
 // Module 15372
-import _mod15373 from "module_15373" /* 15373 */;
+import _mod15370 from "module_15370" /* 15370 */;
 
 
-export default (arg0) => {
-  const tmp = _mod15373(arg0);
-  let num = 0;
-  if (tmp > 0) {
-    num = min(tmp, 9007199254740991);
-  }
-  return num;
+export default (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod15370(arg1, arg0, closure_0));
 };

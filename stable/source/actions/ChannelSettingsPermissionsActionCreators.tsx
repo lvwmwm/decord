@@ -1,13 +1,13 @@
-// Module ID: 8878
-// Function ID: 8879
+// Module ID: 9005
+// Function ID: 9006
 // Name: ChannelSettingsPermissionsActionCreators
-// Dependencies: [5, 8879, 584, 7290, 2]
+// Dependencies: [5, 9006, 584, 7443, 2]
 // Exports: init, saveAndClearPermissionUpdates, savePermissionUpdates, selectPermission, setAdvancedMode, updatePermission
 
-// Module 8878 (ChannelSettingsPermissionsActionCreators)
+// Module 9005 (ChannelSettingsPermissionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
-import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 8879 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7443 */;
+import DefaultChannelThresholdUtils from "DefaultChannelThresholdUtils" /* 9006 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _updatePermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _updatePermission() {
           const obj2 = closure_133_1(closure_133_2[2]);
           obj2.dispatch(obj7);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp15) {
           c7 = 3;
           throw tmp15;

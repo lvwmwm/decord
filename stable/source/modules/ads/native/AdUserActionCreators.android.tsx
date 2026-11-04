@@ -1,15 +1,15 @@
-// Module ID: 7685
-// Function ID: 7686
+// Module ID: 7837
+// Function ID: 7838
 // Name: AdUserActionCreators
-// Dependencies: [5, 7683, 1087, 1267, 584, 7686, 2]
+// Dependencies: [5, 7835, 1087, 1267, 584, 7838, 2]
 // Exports: fetchAdUser
 
-// Module 7685 (AdUserActionCreators)
+// Module 7837 (AdUserActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import react_nativeDefault from "react-native" /* 7686 */;
+import react_nativeDefault from "react-native" /* 7838 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdUserStore from "AdUserStore" /* 7683 */;
+import AdUserStore from "AdUserStore" /* 7835 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ let obj = function _fetchAdUser() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c4;
@@ -126,7 +126,7 @@ let obj = function _fetchAdUser() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp54) {
           duration_ms = tmp54;
           if (0 === c4) {

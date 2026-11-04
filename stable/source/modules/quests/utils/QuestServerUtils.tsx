@@ -1,17 +1,17 @@
-// Module ID: 7664
-// Function ID: 7665
+// Module ID: 7816
+// Function ID: 7817
 // Name: QuestServerUtils
-// Dependencies: [32, 6001, 7665, 7661, 2]
+// Dependencies: [32, 6516, 7817, 7813, 2]
 // Exports: excludedQuestFromServer, getClaimedQuestWithUserStatusFromServer, isQuestWithKnownConfigVersion, questConfigFromServer, questUserStatusFromServer, questWithUserStatusFromServer, questsEntitlementsFromServer, questsRewardCodeFromServer
 
-// Module 7664 (QuestServerUtils)
-import merged5 from "merged5" /* 6001 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7661 */;
-import Quest from "Quest" /* 7665 */;
+// Module 7816 (QuestServerUtils)
+import merged5 from "merged5" /* 6516 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7813 */;
+import Quest from "Quest" /* 7817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-const f97814 = (id) => {
+const f99732 = (id) => {
   const obj = Quest;
   return obj.questFromServerV2(id);
 };
@@ -72,7 +72,7 @@ function _questsEntitlementFromServer(skuId) {
       obj3 = { reward: obj4 };
       tmp2 = obj2;
       obj4 = { tag: quest_rewards.reward.tag };
-    } else if (tmp3(7661).QuestRewardTypes.REWARD_CODE === tag) {
+    } else if (tmp3(7813).QuestRewardTypes.REWARD_CODE === tag) {
       const obj5 = { tag: quest_rewards.reward.tag, rewardCode: obj6 };
       obj6 = { userId: null, questId: null, code: null, platform: null, claimedAt: null, tier };
       ({ user_id: obj8.userId, quest_id: obj8.questId, code: obj8.code, platform: obj8.platform, claimed_at: obj8.claimedAt, tier } = quest_rewards.reward.reward_code);
@@ -101,7 +101,7 @@ export const isQuestWithKnownConfigVersion = function isQuestWithKnownConfigVers
 export const questConfigFromServer = function questConfigFromServer(body) {
   const str = merged5;
   const match = str.match(body);
-  const withResult = match.with({ config_version: 2 }, f97814);
+  const withResult = match.with({ config_version: 2 }, f99732);
   return withResult.exhaustive();
 };
 export const questUserStatusFromServer = function questUserStatusFromServer(body) {
@@ -129,7 +129,7 @@ export const questWithUserStatusFromServer = function questWithUserStatusFromSer
   const str = merged5;
   const match = str.match(config);
   tmp = null;
-  withResult = match.with({ config_version: 2 }, f97814);
+  withResult = match.with({ config_version: 2 }, f99732);
   if (null != body.user_status) {
     const user_status = body.user_status;
     const obj2 = { userId: null, questId: null, enrolledAt: null, completedAt: null, claimedAt: null, claimedTier: claimed_tier, orbQuantityClaimed: orb_quantity_claimed, lastStreamHeartbeatAt: null, streamProgressSeconds: null, dismissedQuestContent: null, progress: progressFromServer(user_status.progress) };

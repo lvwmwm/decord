@@ -1,11 +1,11 @@
-// Module ID: 12587
-// Function ID: 12588
+// Module ID: 12838
+// Function ID: 12839
 // Name: KickConfirmModal
-// Dependencies: [19, 21, 558, 576, 9932, 1128, 9933, 12578, 2]
+// Dependencies: [19, 21, 558, 576, 10061, 1128, 10062, 12829, 2]
 
-// Module 12587 (KickConfirmModal)
+// Module 12838 (KickConfirmModal)
 import Fragment from "Fragment" /* 21 */;
-import KickConfirmDefault from "KickConfirm" /* 12578 */;
+import KickConfirmDefault from "KickConfirm" /* 12829 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

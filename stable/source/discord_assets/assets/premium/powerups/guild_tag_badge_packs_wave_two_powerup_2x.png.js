@@ -1,8 +1,8 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 17641
+// Function ID: 17642
 // Dependencies: [2]
 
-// Module 17303
+// Module 17641
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/powerups/guild_tag_badge_packs_wave_two_powerup_2x.png.js");

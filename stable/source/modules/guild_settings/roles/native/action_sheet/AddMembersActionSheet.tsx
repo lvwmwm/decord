@@ -1,29 +1,29 @@
-// Module ID: 18811
-// Function ID: 18812
+// Module ID: 19150
+// Function ID: 19151
 // Name: AddMembersActionSheet
-// Dependencies: [32, 19, 17, 18805, 21, 5191, 587, 558, 576, 4927, 6455, 10612, 6942, 5176, 1202, 11, 4923, 1128, 6376, 18810, 7091, 8898, 8903, 7287, 8910, 5155, 5479, 7117, 5187, 7118, 2]
+// Dependencies: [32, 19, 17, 19144, 21, 5003, 587, 558, 576, 5071, 6933, 10864, 5625, 5640, 1202, 11, 5012, 1128, 6861, 19149, 7252, 9025, 9030, 7440, 9037, 5242, 5276, 7280, 5266, 5297, 2]
 
-// Module 18811 (AddMembersActionSheet)
+// Module 19150 (AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
-import react_native2 from "react-native" /* 4927 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import RegexUtilsDefault from "RegexUtils" /* 5176 */;
-import GuildUtilsDefault from "GuildUtils" /* 6376 */;
-import FormCheckbox from "FormCheckbox" /* 6455 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8910 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10612 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 18805 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18810 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5012 */;
+import react_native2 from "react-native" /* 5071 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import RegexUtilsDefault from "RegexUtils" /* 5640 */;
+import GuildUtilsDefault from "GuildUtils" /* 6861 */;
+import FormCheckbox from "FormCheckbox" /* 6933 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9037 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10864 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19144 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19149 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

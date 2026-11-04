@@ -1,14 +1,14 @@
-// Module ID: 7479
-// Function ID: 7480
+// Module ID: 7632
+// Function ID: 7633
 // Name: UserGuildSettings
-// Dependencies: [5, 6222, 3, 2094, 12, 2]
+// Dependencies: [5, 6736, 3, 4881, 12, 2]
 
-// Module 7479 (UserGuildSettings)
+// Module 7632 (UserGuildSettings)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4881 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6222 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6736 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -45,7 +45,7 @@ class UserGuildSettings {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

@@ -1,21 +1,21 @@
-// Module ID: 13454
-// Function ID: 13455
+// Module ID: 13725
+// Function ID: 13726
 // Name: ChannelPrompt
-// Dependencies: [5, 32, 19, 17, 4843, 2090, 21, 5191, 6536, 504, 1505, 6478, 1128, 7290, 5891, 7092, 6436, 1417, 5187, 6562, 5479, 6899, 2]
+// Dependencies: [5, 32, 19, 17, 4933, 4877, 21, 5003, 5300, 504, 1505, 6956, 1128, 7443, 6406, 7253, 6915, 1417, 5266, 7039, 5276, 7065, 2]
 // Exports: default
 
-// Module 13454 (ChannelPrompt)
+// Module 13725 (ChannelPrompt)
 import intl5 from "intl" /* 1128 */;
-import NavigatorHeader from "NavigatorHeader" /* 6478 */;
-import NavigatorConstants from "NavigatorConstants" /* 6536 */;
+import NavigatorConstants from "NavigatorConstants" /* 5300 */;
+import NavigatorHeader from "NavigatorHeader" /* 6956 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildChannelStore from "GuildChannelStore" /* 4933 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, navigation;
@@ -114,7 +114,7 @@ export default function ChannelPrompt(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -170,7 +170,7 @@ export default function ChannelPrompt(guildId) {
           }
           closure_129_6(false);
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp28) {
         hasSkip = tmp28;

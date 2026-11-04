@@ -1,14 +1,14 @@
-// Module ID: 10541
-// Function ID: 10542
+// Module ID: 10669
+// Function ID: 10670
 // Name: useUserVoiceActivity
-// Dependencies: [2068, 4845, 5212, 1098, 558, 576, 504, 2]
+// Dependencies: [4855, 4935, 5662, 1098, 558, 576, 504, 2]
 // Exports: canViewUserVoiceChannel, getUserVoiceState
 
-// Module 10541 (useUserVoiceActivity)
+// Module 10669 (useUserVoiceActivity)
 import Constants from "Constants" /* 1098 */;
-import ChannelStore_mod from "ChannelStore" /* 2068 */;
-import PermissionStore_mod from "PermissionStore" /* 4845 */;
-import VoiceStateStore_mod from "VoiceStateStore" /* 5212 */;
+import ChannelStore_mod from "ChannelStore" /* 4855 */;
+import PermissionStore_mod from "PermissionStore" /* 4935 */;
+import VoiceStateStore_mod from "VoiceStateStore" /* 5662 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

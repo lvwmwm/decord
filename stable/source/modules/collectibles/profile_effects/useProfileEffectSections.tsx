@@ -1,15 +1,15 @@
-// Module ID: 15654
-// Function ID: 15655
+// Module ID: 15928
+// Function ID: 15929
 // Name: useProfileEffectSections
-// Dependencies: [32, 19, 7530, 7546, 558, 576, 573, 7542, 1128, 14253, 2]
+// Dependencies: [32, 19, 7682, 7697, 558, 576, 573, 7694, 1128, 14521, 2]
 
-// Module 15654 (useProfileEffectSections)
+// Module 15928 (useProfileEffectSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1128 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7542 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7694 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7546 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7682 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7697 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -187,7 +187,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
       tmp27 = obj4;
     }
   }
-  const tmp2Result4 = stateFromStores(7542);
+  const tmp2Result4 = stateFromStores(7694);
   const profileEffects = tmp2Result4.getProfileEffects(stateFromStores, tmp13);
   if (cResult[10] === tmp14) {
     let tmp18;
@@ -326,7 +326,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useProfile
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14253)(tmp5, obj.PREVIEW);
+  return first(14521)(tmp5, obj.PREVIEW);
 });
 let result = size.fileFinishedImporting("modules/collectibles/profile_effects/useProfileEffectSections.tsx");
 

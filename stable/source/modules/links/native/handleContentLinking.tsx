@@ -1,12 +1,12 @@
-// Module ID: 9972
-// Function ID: 9973
+// Module ID: 10101
+// Function ID: 10102
 // Name: handleContentLinking
-// Dependencies: [5, 6412, 1087, 6190, 7224, 1114, 9973, 9974, 2]
+// Dependencies: [5, 6891, 1087, 6704, 7379, 1114, 10102, 10103, 2]
 // Exports: default
 
-// Module 9972 (handleContentLinking)
+// Module 10101 (handleContentLinking)
 import Constants from "Constants" /* 1087 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6412 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 6891 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj = function _handleContentLinking() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -140,7 +140,7 @@ let obj = function _handleContentLinking() {
                 }
               }
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
             if (safe) {
               messageId = 3;

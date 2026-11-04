@@ -1,18 +1,18 @@
-// Module ID: 6286
-// Function ID: 6287
+// Module ID: 6798
+// Function ID: 6799
 // Name: StickersStore
-// Dependencies: [5, 2070, 2090, 6287, 6288, 2094, 2114, 10, 6289, 584, 504, 2]
+// Dependencies: [5, 4857, 4877, 6799, 6800, 4881, 4901, 10, 6801, 584, 504, 2]
 
-// Module 6286 (StickersStore)
+// Module 6798 (StickersStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2094 */;
-import TryLoad from "TryLoad" /* 2114 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4881 */;
+import TryLoad from "TryLoad" /* 4901 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 2070 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import GuildStickersStore from "GuildStickersStore" /* 6287 */;
-import StickersPackStore from "StickersPackStore" /* 6288 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4857 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import GuildStickersStore from "GuildStickersStore" /* 6799 */;
+import StickersPackStore from "StickersPackStore" /* 6800 */;
 import size from "module_2" /* 2 */;
 
 let Loaded, c2, c3;
@@ -33,7 +33,7 @@ let obj = function _loadSavedGuildStickers() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ let obj = function _loadSavedGuildStickers() {
           }
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp14) {
         c3 = 3;
         throw tmp14;

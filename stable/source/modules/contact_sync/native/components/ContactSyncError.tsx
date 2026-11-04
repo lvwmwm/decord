@@ -1,14 +1,14 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13631
+// Function ID: 13632
 // Name: ContactSyncError
-// Dependencies: [19, 21, 5191, 558, 576, 4945, 5192, 5187, 2]
+// Dependencies: [19, 21, 5003, 558, 576, 5084, 5238, 5266, 2]
 
-// Module 13360 (ContactSyncError)
+// Module 13631 (ContactSyncError)
 import Fragment from "Fragment" /* 21 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -39,11 +39,11 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyn
     const obj = { height: withTiming(num) };
     return obj;
   };
-  const tmpResult = tmp(4945);
-  fn.__closure = { withTiming: tmp(5192).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 };
+  const tmpResult = tmp(5084);
+  fn.__closure = { withTiming: tmp(5238).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 };
   fn.__workletHash = 14558247431913;
   fn.__initData = __initData;
-  ({ withTiming: tmp(5192).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 });
+  ({ withTiming: tmp(5238).withTiming, hasError: null != error && "" !== error, ERROR_HEIGHT: 44 });
   const animatedStyle = tmpResult.useAnimatedStyle(fn);
   if (cResult[0] === animatedStyle) {
     if (cResult[1] === style) {
@@ -69,7 +69,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ContactSyn
         cResult[9] = tmp14;
         tmp11 = tmp14;
       }
-      const tmp10 = jsx(tmp(5187).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error });
+      const tmp10 = jsx(tmp(5266).Text, { variant: "text-sm/medium", color: "text-feedback-critical", style: tmp4.error, children: error });
       let num = 4;
       cResult[4] = error;
       cResult[5] = tmp4.error;

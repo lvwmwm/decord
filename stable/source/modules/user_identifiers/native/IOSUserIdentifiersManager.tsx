@@ -1,16 +1,16 @@
-// Module ID: 18542
-// Function ID: 18543
+// Module ID: 18885
+// Function ID: 18886
 // Name: IOSUserIdentifiersManager
-// Dependencies: [5, 17, 1392, 1087, 7085, 1384, 18543, 1297, 1257, 1267, 2]
+// Dependencies: [5, 17, 1392, 1087, 7246, 1384, 18886, 1297, 1257, 1267, 2]
 
-// Module 18542 (IOSUserIdentifiersManager)
+// Module 18885 (IOSUserIdentifiersManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1392 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
 import size from "module_2" /* 2 */;
 
 let _self, c1, c4;
@@ -45,7 +45,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -89,7 +89,7 @@ class IOSUserIdentifiersManager extends AutomaticLifecycleManager {
             return obj;
           }
           _self = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp8) {
           _self = 3;
           throw tmp8;

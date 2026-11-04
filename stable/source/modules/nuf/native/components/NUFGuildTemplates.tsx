@@ -1,31 +1,31 @@
-// Module ID: 13372
-// Function ID: 13373
+// Module ID: 13643
+// Function ID: 13644
 // Name: NUFGuildTemplates
-// Dependencies: [5, 19, 17, 5038, 1087, 13373, 6939, 21, 6377, 13157, 10951, 13374, 13453, 1267, 1275, 6478, 13348, 1114, 13376, 13405, 12978, 1128, 13419, 13420, 13454, 13432, 558, 576, 6965, 2]
+// Dependencies: [5, 19, 17, 5038, 1087, 13644, 7105, 21, 6862, 13427, 11203, 13645, 13724, 1267, 1275, 6956, 13619, 1114, 13647, 13676, 13250, 1128, 13690, 13691, 13725, 13703, 558, 576, 7127, 2]
 
-// Module 13372 (NUFGuildTemplates)
+// Module 13643 (NUFGuildTemplates)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1114 */;
 import intl2 from "intl" /* 1128 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6377 */;
-import NavigatorHeader from "NavigatorHeader" /* 6478 */;
-import Navigator2 from "Navigator" /* 6965 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13348 */;
-import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 13373 */;
-import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13374 */;
-import GuildTemplatesDefault from "GuildTemplates" /* 13376 */;
-import CreationIntentDefault from "CreationIntent" /* 13405 */;
-import components_JoinServerDefault from "components/JoinServer" /* 13419 */;
-import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 13420 */;
-import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 13432 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6862 */;
+import NavigatorHeader from "NavigatorHeader" /* 6956 */;
+import Navigator2 from "Navigator" /* 7127 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13619 */;
+import create_guild_CreateGuildConstants from "create_guild/CreateGuildConstants" /* 13644 */;
+import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13645 */;
+import GuildTemplatesDefault from "GuildTemplates" /* 13647 */;
+import CreationIntentDefault from "CreationIntent" /* 13676 */;
+import components_JoinServerDefault from "components/JoinServer" /* 13690 */;
+import AcceptInviteContainerDefault from "AcceptInviteContainer" /* 13691 */;
+import HubEmailConnectionModalDefault from "HubEmailConnectionModal" /* 13703 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 5038 */;
 import Constants from "Constants" /* 1087 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 6939 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7105 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -52,7 +52,7 @@ let obj = function _onCreateGuild() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -93,7 +93,7 @@ let obj = function _onCreateGuild() {
           const obj9 = closure_130_1(closure_130_2[13]);
           obj9.track(closure_130_7.USER_FLOW_TRANSITION, obj10);
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp8) {
         c4 = 3;
@@ -120,7 +120,7 @@ obj = function _onCreateServer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -152,7 +152,7 @@ obj = function _onCreateServer() {
             return { value, done: true };
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp7) {
           c3 = 3;
           throw tmp7;
@@ -301,7 +301,7 @@ const tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function NUFGuildTe
     first = cResult[0];
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
-    const Navigator = tmp(6965).Navigator;
+    const Navigator = tmp(7127).Navigator;
     const intl = tmp(1128).intl;
     const tmp11 = <Navigator screens={first} onWillFocus={Keyboard.dismiss} headerBackTitle={intl.string(intl2.t["13/7kX"])} initialRouteName={unpackModuleId.GUILD_TEMPLATES} />;
     cResult[1] = tmp11;

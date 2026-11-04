@@ -1,28 +1,28 @@
-// Module ID: 13087
-// Function ID: 13088
+// Module ID: 13359
+// Function ID: 13360
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 5181, 1087, 21, 1202, 558, 576, 4945, 5478, 4922, 5192, 504, 7130, 7155, 13052, 13088, 12088, 9805, 9571, 2]
+// Dependencies: [32, 19, 5004, 1087, 21, 1202, 558, 576, 5084, 5279, 5069, 5238, 504, 7285, 7310, 13324, 13360, 12287, 9935, 9704, 2]
 // Exports: getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay
 
-// Module 13087 (EmojiSuggestionBarUtils)
+// Module 13359 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
-import native2 from "native" /* 4922 */;
-import spring from "spring" /* 5478 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9571 */;
+import native2 from "native" /* 5069 */;
+import spring from "spring" /* 5279 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5181 */;
+import AccessibilityStore from "AccessibilityStore" /* 5004 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let dependencyMap, obj, obj1, obj5, replaceRangeResult, set, set2;
+let dependencyMap, obj, obj1, obj5, replaceRangeResult, set, set2, str3, tmp10, tmp16;
 
 let tmp;
-const ReanimatedRexport = tmp(4945);
-const timing = tmp(5192);
+const ReanimatedRexport = tmp(5084);
+const timing = tmp(5238);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
@@ -261,7 +261,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   let tmp15;
   let tmp7;
   let tmp8;
-  let tmp2 = dependencyMap;
+  const tmp2 = dependencyMap;
   const tmp = chatInputRef;
   obj = chatInputRef(576);
   const cResult = obj.c(29);
@@ -269,7 +269,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   chatInputStateRef = chatInputStateRef.chatInputStateRef;
   obj2 = setData;
   const suppressed = chatInputStateRef.suppressed;
-  const tmp4 = analyticsLocations(setData.useState(clear), 2);
+  let tmp4 = analyticsLocations(setData.useState(clear), 2);
   const first = tmp4[0];
   ({ focused, text } = first);
   dependencyMap = text;
@@ -289,9 +289,9 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   }
   const tmpResult = tmp(504);
   const stateFromStores = tmpResult.useStateFromStores(tmp7, tmp8);
-  const tmp12 = chatInputStateRef(7130);
-  analyticsLocations = tmp12(chatInputStateRef(7155).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp13 = chatInputStateRef(13052)(tmp6, 16);
+  const tmp12 = chatInputStateRef(7285);
+  analyticsLocations = tmp12(chatInputStateRef(7310).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp13 = chatInputStateRef(13324)(tmp6, 16);
   setData = tmp13.setData;
   setDataImmediate = tmp13.setDataImmediate;
   const tmp11 = chatInputStateRef;
@@ -323,7 +323,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
               if (cResult[11] === text) {
                 tmp17 = cResult[12];
               }
-              const tmp18 = tmp11(13088)(tmp17);
+              const tmp18 = tmp11(13360)(tmp17);
               const unlockedEmojis = tmp18.unlockedEmojis;
               ({ lockedEmojis, queryEnd } = tmp18);
               clear = tmp18.clear;
@@ -368,42 +368,61 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
                           let obj3 = { unlockedEmojis, lockedEmojis, reducedMotion: stateFromStores, handlePress: tmp19, handlePressEmojiUnavailable: tmp20 };
                           class C {
                             constructor(arg0) {
-                              obj = /\s/;
-                              str = closure_2;
                               tmp = queryEnd;
-                              str2 = " ";
-                              str3 = " ";
-                              if (obj.test(closure_2.charAt(queryEnd - 1))) {
+                              if (queryEnd > closure_1.current.text.length) {
+                                tmp16 = clear;
+                                tmp17 = clear();
+                              } else {
+                                obj4 = /\s/;
+                                str4 = closure_2;
+                                num = 1;
+                                str2 = " ";
+                                str = " ";
+                                if (obj4.test(closure_2.charAt(tmp - 1))) {
+                                  str = "";
+                                }
+                                obj = /\s/;
+                                if (obj.test(str4.charAt(tmp))) {
+                                  str2 = "";
+                                }
+                                tmp3 = chatInputStateRef;
+                                tmp4 = chatInputStateRef;
+                                tmp5 = text;
+                                tmp6 = globalThis;
+                                _HermesInternal = HermesInternal;
                                 str3 = "";
+                                combined = "" + str + chatInputStateRef(text[17])(chatInputStateRef) + str2;
+                                closure_0 = combined;
+                                tmp7 = closure_0;
+                                current = closure_0.current;
+                                obj1 = { location: null, length: 0, text: null, editId: null };
+                                obj1.location = tmp;
+                                obj1.text = combined;
+                                editId = tmp2.current.editId;
+                                tmp8 = null;
+                                replaceRange = current.replaceRange;
+                                obj1.editId = editId;
+                                replaceRangeResult = replaceRange(obj1);
+                                closure_1 = tmp + combined.length;
+                                tmp10 = setDataImmediate;
+                                tmp11 = setDataImmediate((text) => {
+                                  let sum;
+                                  let text1;
+                                  obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
+                                  const merged = Object.assign(text);
+                                  text = text.text;
+                                  text1 = text.text;
+                                  sum = text.slice(0, queryEnd) + combined;
+                                  return obj;
+                                });
+                                tmp12 = clear;
+                                tmp13 = clear();
+                                obj5 = { emoji: null, displayedSuggestions: null };
+                                obj5.emoji = chatInputStateRef;
+                                tmp14 = unlockedEmojis;
+                                obj5.displayedSuggestions = unlockedEmojis;
+                                tmp15 = tmp4(tmp5[18])(obj5);
                               }
-                              obj2 = /\s/;
-                              if (obj2.test(str.charAt(tmp))) {
-                                str2 = "";
-                              }
-                              tmp2 = chatInputStateRef;
-                              tmp3 = text;
-                              combined = "" + str3 + chatInputStateRef(text[17])(chatInputStateRef) + str2;
-                              closure_0 = combined;
-                              current = closure_0.current;
-                              obj1 = { location: tmp, length: 0, text: combined, editId: null };
-                              editId = closure_1.current.editId;
-                              replaceRange = current.replaceRange;
-                              obj1.editId = editId;
-                              replaceRangeResult = replaceRange(obj1);
-                              closure_1 = tmp + combined.length;
-                              tmp5 = setDataImmediate((text) => {
-                                let sum;
-                                let text1;
-                                obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
-                                const merged = Object.assign(text);
-                                text = text.text;
-                                text1 = text.text;
-                                sum = text.slice(0, queryEnd) + combined;
-                                return obj;
-                              });
-                              tmp6 = clear();
-                              obj5 = { emoji: chatInputStateRef, displayedSuggestions: unlockedEmojis };
-                              tmp7 = tmp2(tmp3[18])(obj5);
                               return;
                             }
                           }
@@ -420,42 +439,61 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
               }
               class C {
                 constructor(arg0) {
-                  obj = /\s/;
-                  str = closure_2;
                   tmp = queryEnd;
-                  str2 = " ";
-                  str3 = " ";
-                  if (obj.test(closure_2.charAt(queryEnd - 1))) {
+                  if (queryEnd > closure_1.current.text.length) {
+                    tmp16 = clear;
+                    tmp17 = clear();
+                  } else {
+                    obj4 = /\s/;
+                    str4 = closure_2;
+                    num = 1;
+                    str2 = " ";
+                    str = " ";
+                    if (obj4.test(closure_2.charAt(tmp - 1))) {
+                      str = "";
+                    }
+                    obj = /\s/;
+                    if (obj.test(str4.charAt(tmp))) {
+                      str2 = "";
+                    }
+                    tmp3 = chatInputStateRef;
+                    tmp4 = chatInputStateRef;
+                    tmp5 = text;
+                    tmp6 = globalThis;
+                    _HermesInternal = HermesInternal;
                     str3 = "";
+                    combined = "" + str + chatInputStateRef(text[17])(chatInputStateRef) + str2;
+                    closure_0 = combined;
+                    tmp7 = closure_0;
+                    current = closure_0.current;
+                    obj1 = { location: null, length: 0, text: null, editId: null };
+                    obj1.location = tmp;
+                    obj1.text = combined;
+                    editId = tmp2.current.editId;
+                    tmp8 = null;
+                    replaceRange = current.replaceRange;
+                    obj1.editId = editId;
+                    replaceRangeResult = replaceRange(obj1);
+                    closure_1 = tmp + combined.length;
+                    tmp10 = setDataImmediate;
+                    tmp11 = setDataImmediate((text) => {
+                      let sum;
+                      let text1;
+                      obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
+                      const merged = Object.assign(text);
+                      text = text.text;
+                      text1 = text.text;
+                      sum = text.slice(0, queryEnd) + combined;
+                      return obj;
+                    });
+                    tmp12 = clear;
+                    tmp13 = clear();
+                    obj5 = { emoji: null, displayedSuggestions: null };
+                    obj5.emoji = chatInputStateRef;
+                    tmp14 = unlockedEmojis;
+                    obj5.displayedSuggestions = unlockedEmojis;
+                    tmp15 = tmp4(tmp5[18])(obj5);
                   }
-                  obj2 = /\s/;
-                  if (obj2.test(str.charAt(tmp))) {
-                    str2 = "";
-                  }
-                  tmp2 = chatInputStateRef;
-                  tmp3 = text;
-                  combined = "" + str3 + chatInputStateRef(text[17])(chatInputStateRef) + str2;
-                  closure_0 = combined;
-                  current = closure_0.current;
-                  obj1 = { location: tmp, length: 0, text: combined, editId: null };
-                  editId = closure_1.current.editId;
-                  replaceRange = current.replaceRange;
-                  obj1.editId = editId;
-                  replaceRangeResult = replaceRange(obj1);
-                  closure_1 = tmp + combined.length;
-                  tmp5 = setDataImmediate((text) => {
-                    let sum;
-                    let text1;
-                    obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
-                    const merged = Object.assign(text);
-                    text = text.text;
-                    text1 = text.text;
-                    sum = text.slice(0, queryEnd) + combined;
-                    return obj;
-                  });
-                  tmp6 = clear();
-                  obj5 = { emoji: chatInputStateRef, displayedSuggestions: unlockedEmojis };
-                  tmp7 = tmp2(tmp3[18])(obj5);
                   return;
                 }
               }
@@ -507,19 +545,19 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   ({ focused, text } = first);
   dependencyMap = text;
   ({ selectionStart, selectionEnd } = first);
-  let tmp3 = tmp[1];
+  const tmp3 = tmp[1];
   obj2 = chatInputRef(504);
   const items = [setDataImmediate];
   const stateFromStores = obj2.useStateFromStores(items, () => setDataImmediate.useReducedMotion);
-  const tmp5 = chatInputStateRef(7130);
-  analyticsLocations = tmp5(chatInputStateRef(7155).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp6 = chatInputStateRef(13052)(tmp3, 16);
+  let tmp5 = chatInputStateRef(7285);
+  analyticsLocations = tmp5(chatInputStateRef(7310).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp6 = chatInputStateRef(13324)(tmp3, 16);
   setData = tmp6.setData;
   setDataImmediate = tmp6.setDataImmediate;
   const items1 = [setData];
   const imperativeHandle = setData.useImperativeHandle(ref, () => ({ setData }), items1);
   let obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount, minUnlockedEmojis };
-  const tmp8 = chatInputStateRef(13088);
+  const tmp8 = chatInputStateRef(13360);
   if (focused) {
     focused = !suppressed;
   }
@@ -533,38 +571,43 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function useEmojiSugg
   const callback = obj.useCallback((emoji) => {
     let closure_1;
     let editId;
-    obj = /\s/;
-    let str2 = " ";
-    let str3 = " ";
-    const str = _undefined;
-    if (obj.test(_undefined.charAt(queryEnd - 1))) {
-      str3 = "";
+    if (queryEnd > chatInputStateRef.current.text.length) {
+      clear();
+    } else {
+      let str2 = " ";
+      let str = " ";
+      const obj4 = /\s/;
+      const str4 = _undefined;
+      if (obj4.test(_undefined.charAt(queryEnd - 1))) {
+        str = "";
+      }
+      obj = /\s/;
+      if (obj.test(str4.charAt(queryEnd))) {
+        str2 = "";
+      }
+      const _HermesInternal = HermesInternal;
+      const combined = "" + str + chatInputStateRef(_undefined[17])(emoji) + str2;
+      const current = combined.current;
+      obj2 = { location: queryEnd, length: 0, text: combined, editId };
+      editId = tmp2.current.editId;
+      const replaceRange = current.replaceRange;
+      replaceRange(obj2);
+      const tmp4 = chatInputStateRef;
+      chatInputStateRef = tmp + combined.length;
+      setDataImmediate((text) => {
+        let sum;
+        let text1;
+        obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
+        const merged = Object.assign(text);
+        text = text.text;
+        text1 = text.text;
+        sum = text.slice(0, queryEnd) + combined;
+        return obj;
+      });
+      clear();
+      const obj3 = { emoji, displayedSuggestions: unlockedEmojis };
+      tmp4(_undefined[18])(obj3);
     }
-    obj2 = /\s/;
-    if (obj2.test(str.charAt(queryEnd))) {
-      str2 = "";
-    }
-    const combined = "" + str3 + chatInputStateRef(_undefined[17])(emoji) + str2;
-    const current = combined.current;
-    const obj3 = { location: queryEnd, length: 0, text: combined, editId };
-    editId = chatInputStateRef.current.editId;
-    const replaceRange = current.replaceRange;
-    replaceRange(obj3);
-    const tmp2 = chatInputStateRef;
-    chatInputStateRef = tmp + combined.length;
-    setDataImmediate((text) => {
-      let sum;
-      let text1;
-      obj = { text: sum + text1.slice(queryEnd), selectionStart: selectionEnd, selectionEnd };
-      const merged = Object.assign(text);
-      text = text.text;
-      text1 = text.text;
-      sum = text.slice(0, queryEnd) + combined;
-      return obj;
-    });
-    clear();
-    const obj4 = { emoji, displayedSuggestions: unlockedEmojis };
-    tmp2(_undefined[18])(obj4);
   }, items2);
   let obj4 = {
     unlockedEmojis,

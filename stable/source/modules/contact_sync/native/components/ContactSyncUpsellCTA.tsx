@@ -1,18 +1,18 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 15134
+// Function ID: 15135
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 13344, 1087, 21, 5191, 587, 558, 576, 1267, 13341, 7167, 1128, 8855, 14867, 2]
+// Dependencies: [19, 13615, 1087, 21, 5003, 587, 558, 576, 1267, 13612, 7322, 1128, 8983, 15135, 2]
 
-// Module 14866 (ContactSyncUpsellCTA)
+// Module 15134 (ContactSyncUpsellCTA)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13341 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13344 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14867 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13612 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13615 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15135 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -111,7 +111,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
       }
       return tmp12;
     }
-    const FormCTA = tmp(8855).FormCTA;
+    const FormCTA = tmp(8983).FormCTA;
     const tmp15 = <FormCTA onPress={tmp5} onLongPress={tmp6} style={tmp7} iconSource={AssetRegistryDefault} title={tmp8} subtitle={tmp9} />;
     cResult[8] = tmp5;
     cResult[9] = tmp7;
@@ -128,7 +128,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   const style = location.style;
   let tmp = closure_7();
   let items = [tmp.container, style];
-  const FormCTA = location(8855).FormCTA;
+  const FormCTA = location(8983).FormCTA;
   let intl = location(1128).intl;
   const intl2 = location(1128).intl;
   return <FormCTA onPress={function handleOpen() {

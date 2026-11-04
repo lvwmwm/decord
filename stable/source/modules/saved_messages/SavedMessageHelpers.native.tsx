@@ -1,13 +1,13 @@
-// Module ID: 13590
-// Function ID: 13591
+// Module ID: 13844
+// Function ID: 13845
 // Name: SavedMessageHelpers
-// Dependencies: [5, 1087, 13591, 13587, 5399, 1128, 13581, 9981, 4904, 5150, 13592, 2]
+// Dependencies: [5, 1087, 13845, 13841, 5940, 1128, 13835, 10110, 5695, 5723, 13846, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 13590 (SavedMessageHelpers)
+// Module 13844 (SavedMessageHelpers)
 import Constants from "Constants" /* 1087 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 13591 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 13845 */;
 import size from "module_2" /* 2 */;
 
 let text;
@@ -32,7 +32,7 @@ let obj = function _addOrUpdateSavedMessage() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -170,7 +170,7 @@ let obj = function _addOrUpdateSavedMessage() {
               }
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp40) {
           c4 = 3;
@@ -199,7 +199,7 @@ obj = function _removeSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -296,7 +296,7 @@ obj = function _removeSavedMessage() {
             }
           }
           c4 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp44) {
         c4 = 3;

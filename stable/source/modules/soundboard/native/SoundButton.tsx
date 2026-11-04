@@ -1,22 +1,22 @@
-// Module ID: 18216
-// Function ID: 18217
+// Module ID: 18557
+// Function ID: 18558
 // Name: SoundButton
-// Dependencies: [19, 17, 18210, 21, 4945, 5191, 587, 1384, 6462, 558, 576, 5478, 12730, 7098, 18217, 18218, 7130, 7155, 18220, 18207, 18222, 5187, 8495, 2]
+// Dependencies: [19, 17, 18551, 21, 5084, 5003, 587, 1384, 6940, 558, 576, 5279, 12979, 7259, 18558, 18559, 7285, 7310, 18561, 18548, 18563, 5266, 8598, 2]
 
-// Module 18216 (SoundButton)
+// Module 18557 (SoundButton)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4945 */;
-import spring from "spring" /* 5478 */;
-import Pressables from "Pressables" /* 6462 */;
-import EmojiDefault from "Emoji" /* 7098 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12730 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18210 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 18222 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 5084 */;
+import spring from "spring" /* 5279 */;
+import Pressables from "Pressables" /* 6940 */;
+import EmojiDefault from "Emoji" /* 7259 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12979 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18551 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 18563 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ obj2 = { marginTop: 4, height: SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefau
 createStyles = createStyles.createStyles;
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj3 = { backgroundColor: nativeDefault.colors.CARD_PRIMARY_PRESSED_BG };
-obj4 = { borderStyle: "solid", borderWidth: 2, borderColor: nativeDefault.colors.STATUS_SPEAKING };
+obj4 = { borderStyle: "solid", borderWidth: 2, borderColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED };
 rect = { position: "absolute", top: 0, bottom: 0, start: 0, end: 0, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG, borderRadius: nativeDefault.radii.lg - 2 };
 num = undefined;
 if (PlatformUtils.isIOS()) {

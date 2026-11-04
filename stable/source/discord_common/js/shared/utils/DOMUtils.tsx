@@ -1,10 +1,10 @@
-// Module ID: 2037
-// Function ID: 2038
+// Module ID: 2036
+// Function ID: 2037
 // Name: DOMUtils
 // Dependencies: [2]
 // Exports: clickedOnVisibleImage, cssValueToNumber, eventOwnerDocument, getParentElementByAttribute, getParentElementByClassName, isElement, isInputLikeElement, removeNode
 
-// Module 2037 (DOMUtils)
+// Module 2036 (DOMUtils)
 import size from "module_2" /* 2 */;
 
 const re0 = /input/i;

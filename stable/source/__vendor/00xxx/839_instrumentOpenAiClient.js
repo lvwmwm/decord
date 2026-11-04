@@ -138,7 +138,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                 obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -210,7 +210,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                                 obj2 = { value, done: true };
                                 return obj2;
                               } else {
-                                return { value: "IconComponent", done: null };
+                                return { value: "IconComponent", done: "+352" };
                               }
                             } else {
                               let c5;
@@ -387,7 +387,7 @@ export const instrumentOpenAiClient = function instrumentOpenAiClient(arg0, arg1
                           obj2 = { value, done: true };
                           return obj2;
                         } else {
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "+352" };
                         }
                       } else {
                         let c4;

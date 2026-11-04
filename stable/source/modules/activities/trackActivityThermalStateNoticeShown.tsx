@@ -1,16 +1,16 @@
-// Module ID: 18354
-// Function ID: 18355
+// Module ID: 18692
+// Function ID: 18693
 // Name: trackActivityThermalStateNoticeShown
-// Dependencies: [2068, 5209, 2067, 1087, 4834, 1267, 2]
+// Dependencies: [4855, 5746, 4854, 1087, 4924, 1267, 2]
 // Exports: trackActivityThermalStateNoticeShown
 
-// Module 18354 (trackActivityThermalStateNoticeShown)
+// Module 18692 (trackActivityThermalStateNoticeShown)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4924 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

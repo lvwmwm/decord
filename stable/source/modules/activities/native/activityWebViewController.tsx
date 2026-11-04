@@ -1,17 +1,18 @@
-// Module ID: 11323
-// Function ID: 11324
+// Module ID: 11495
+// Function ID: 11496
 // Name: activityWebViewController
-// Dependencies: [2067, 11324, 11325, 6312, 11046, 5400, 1128, 2]
+// Dependencies: [4854, 11496, 11497, 6809, 11519, 10803, 5941, 1128, 2]
 // Exports: getOrCreateActivityWebViewController, releaseActivityWebView
 
-// Module 11323 (activityWebViewController)
+// Module 11495 (activityWebViewController)
 import intl3 from "intl" /* 1128 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6312 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 11046 */;
-import makeIframeIdDefault from "makeIframeId" /* 11324 */;
-import createWebViewControllerDefault from "createWebViewController" /* 11325 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
+import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6809 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10803 */;
+import makeIframeIdDefault from "makeIframeId" /* 11496 */;
+import createWebViewControllerDefault from "createWebViewController" /* 11497 */;
+import makeShellBridgeSecretDefault from "makeShellBridgeSecret" /* 11519 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
 import size from "module_2" /* 2 */;
 
 let _undefined;
@@ -19,14 +20,19 @@ let _undefined;
 let result = size.fileFinishedImporting("modules/activities/native/activityWebViewController.tsx");
 
 export const getOrCreateActivityWebViewController = function getOrCreateActivityWebViewController(applicationId) {
-  let obj2;
+  let obj4;
+  let tmp7Result;
   if (null != _undefined) {
-    return _undefined.iframeId;
+    let obj = { iframeId: _undefined.iframeId, shellBridgeSecret: _undefined.shellBridgeSecret };
+    let tmp2 = _undefined;
+    return obj;
   } else {
-    let tmp2 = applicationId;
-    let tmp5 = makeIframeIdDefault();
-    let obj = {
-      contextSource: obj2,
+    let tmp5 = dependencyMap;
+    let obj2 = { iframeId: tmp7Result.iframeId, shellBridgeSecret: _undefined.shellBridgeSecret };
+    const tmp6 = makeIframeIdDefault();
+    let obj3 = {
+      contextSource: obj4,
+      shellBridgeSecret: makeShellBridgeSecretDefault(),
       getOrigin() {
           const connectedActivityLocation = EmbeddedActivitiesStore.getConnectedActivityLocation();
           let tmp2;
@@ -69,10 +75,11 @@ export const getOrCreateActivityWebViewController = function getOrCreateActivity
           }
         }
     };
-    obj2 = { type: EmbeddedAppTypes.EmbeddedContextSourceType.ACTIVITY, applicationId };
-    const tmp6 = createWebViewControllerDefault;
-    _undefined = tmp6(tmp5, obj);
-    return tmp5;
+    obj4 = { type: EmbeddedAppTypes.EmbeddedContextSourceType.ACTIVITY, applicationId };
+    const tmp7 = createWebViewControllerDefault;
+    tmp7Result = tmp7(tmp6, obj3);
+    _undefined = tmp7Result;
+    return obj2;
   }
 };
 export const releaseActivityWebView = function releaseActivityWebView() {

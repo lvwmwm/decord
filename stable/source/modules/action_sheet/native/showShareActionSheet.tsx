@@ -1,14 +1,14 @@
-// Module ID: 8755
-// Function ID: 8756
+// Module ID: 8883
+// Function ID: 8884
 // Name: showShareActionSheet
-// Dependencies: [17, 1385, 8756, 8757, 8760, 1257, 2]
+// Dependencies: [17, 1385, 8884, 8885, 8888, 1257, 2]
 // Exports: showShareActionSheet
 
-// Module 8755 (showShareActionSheet)
+// Module 8883 (showShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import react_nativeDefault from "react-native" /* 8756 */;
-import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8757 */;
+import react_nativeDefault from "react-native" /* 8884 */;
+import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8885 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import size from "module_2" /* 2 */;
 

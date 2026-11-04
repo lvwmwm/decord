@@ -1,11 +1,11 @@
-// Module ID: 14897
-// Function ID: 14898
+// Module ID: 15165
+// Function ID: 15166
 // Name: useUserCodeSubmit
-// Dependencies: [5, 32, 19, 14896, 1128, 558, 576, 9535, 2]
+// Dependencies: [5, 32, 19, 15164, 1128, 558, 576, 9669, 2]
 
-// Module 14897 (useUserCodeSubmit)
+// Module 15165 (useUserCodeSubmit)
 import intl4 from "intl" /* 1128 */;
-import OAuthConstants2 from "OAuthConstants" /* 14896 */;
+import OAuthConstants2 from "OAuthConstants" /* 15164 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -110,7 +110,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCodeS
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -172,7 +172,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCodeS
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp36) {
         if (0 === c3) {
@@ -217,7 +217,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCodeS
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -276,7 +276,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUserCodeS
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp36) {
         closure_2 = tmp36;

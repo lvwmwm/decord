@@ -1,9 +1,9 @@
-// Module ID: 2043
-// Function ID: 2044
+// Module ID: 2042
+// Function ID: 2043
 // Name: GameDetectionTypes
 // Dependencies: [1407, 2024, 2]
 
-// Module 2043 (GameDetectionTypes)
+// Module 2042 (GameDetectionTypes)
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
 import Record from "Record" /* 1407 */;
 import size from "module_2" /* 2 */;

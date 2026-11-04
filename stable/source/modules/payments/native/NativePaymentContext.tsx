@@ -1,16 +1,16 @@
-// Module ID: 10479
-// Function ID: 10480
+// Module ID: 10607
+// Function ID: 10608
 // Name: NativePaymentContext
-// Dependencies: [32, 19, 4869, 1098, 21, 7419, 558, 576, 9698, 7234, 10480, 504, 2]
+// Dependencies: [32, 19, 2057, 1098, 21, 7572, 558, 576, 9829, 7389, 10608, 504, 2]
 
-// Module 10479 (NativePaymentContext)
+// Module 10607 (NativePaymentContext)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1098 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7234 */;
-import ContextUtilsDefault from "ContextUtils" /* 7419 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7389 */;
+import ContextUtilsDefault from "ContextUtils" /* 7572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4869 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2057 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 8838
-// Function ID: 8839
+// Module ID: 8966
+// Function ID: 8967
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [21, 5191, 558, 576, 5187, 6462, 2]
+// Dependencies: [21, 5003, 558, 576, 5266, 6940, 2]
 
-// Module 8838 (ActionSheetHeaderPressableText)
+// Module 8966 (ActionSheetHeaderPressableText)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 576 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Pressables from "Pressables" /* 6462 */;
-import createStyles from "createStyles" /* 5191 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import Pressables from "Pressables" /* 6940 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 7280
-// Function ID: 7281
+// Module ID: 7433
+// Function ID: 7434
 // Name: ForumPostDataLoader
-// Dependencies: [5, 2068, 7281, 7261, 7284, 1087, 12, 11, 558, 576, 504, 1297, 584, 2]
+// Dependencies: [5, 4855, 7434, 7416, 7437, 1087, 12, 11, 558, 576, 504, 1297, 584, 2]
 // Exports: preloadForumThreads
 
-// Module 7280 (ForumPostDataLoader)
+// Module 7433 (ForumPostDataLoader)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1087 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 7281 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 7434 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7261 */;
-import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7284 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7416 */;
+import ForumPostRecentMessageStore from "ForumPostRecentMessageStore" /* 7437 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ let obj = function _loadForumPostData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -59,7 +59,7 @@ let obj = function _loadForumPostData() {
               c3 = 0;
               c11 = null;
               c4 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           }
         } else if (1 === tmp4) {
@@ -110,7 +110,7 @@ obj = function _loadForumPostDataForChannelId() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -139,7 +139,7 @@ obj = function _loadForumPostDataForChannelId() {
               postResult = closure_2_10;
               closure_2_10.finishRequesting(closure_0, nextBatch);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else {
               channel = channel.getChannel(tmp44);
               guild_id = undefined;
@@ -151,7 +151,7 @@ obj = function _loadForumPostDataForChannelId() {
                 postResult = closure_2_10;
                 closure_2_10.finishRequesting(closure_0, nextBatch);
                 c6 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else {
                 const HTTP = require("HTTPUtils").HTTP;
                 const request = { url: Endpoints.FORUM_POSTS(closure_0), body: obj4, rejectWithError: true };
@@ -193,7 +193,7 @@ obj = function _loadForumPostDataForChannelId() {
           postResult = closure_0;
           closure_130_10.finishRequesting(closure_0, nextBatch);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp37) {
         closure_3 = tmp37;

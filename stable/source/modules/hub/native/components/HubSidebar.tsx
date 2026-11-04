@@ -1,23 +1,23 @@
-// Module ID: 17339
-// Function ID: 17340
+// Module ID: 17677
+// Function ID: 17678
 // Name: HubSidebar
-// Dependencies: [19, 17, 4843, 2119, 1087, 11895, 21, 5191, 587, 558, 576, 13034, 1202, 504, 17340, 17341, 1128, 5202, 16660, 10931, 12953, 5131, 8955, 2]
+// Dependencies: [19, 17, 4933, 4906, 1087, 12095, 21, 5003, 587, 558, 576, 13306, 1202, 504, 17678, 17679, 1128, 5739, 16990, 11183, 13225, 5704, 9082, 2]
 
-// Module 17339 (HubSidebar)
+// Module 17677 (HubSidebar)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import transitionToChannel from "transitionToChannel" /* 5202 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11895 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 12953 */;
-import BaseChannelItem from "BaseChannelItem" /* 13034 */;
+import transitionToChannel from "transitionToChannel" /* 5739 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9082 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 12095 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13225 */;
+import BaseChannelItem from "BaseChannelItem" /* 13306 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4843 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import GuildChannelStore from "GuildChannelStore" /* 4933 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -131,7 +131,7 @@ let closure_10 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubIte
     DEFAULT = ChannelModes.DEFAULT;
     tmp5 = tmp2;
   }
-  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(13034).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(13034).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
+  const obj = { style: tmp.container, accessibilityLabel: label, accessibilityRole: "menuitem", onPress: handleItemClick, disableHighlightOnPress: true, mode: DEFAULT, name: metroImportDefault(tmp5(13306).BaseChannelName, { name: label, mode: DEFAULT }), icon: metroImportDefault(tmp5(13306).BaseChannelIcon, { mode: DEFAULT, IconComponent }), channelInfo: tmp6Result };
   tmp6Result = null;
   const tmp7 = BaseChannelItemDefault;
   if (null != unreadCount) {
@@ -346,7 +346,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubSidebar(g
     const tmp2 = null != stateFromStores && SelectedChannelStore.getChannelId() === tmp.id;
     return tmp2;
   });
-  guild(17340);
+  guild(17678);
   let tmp9Result = null;
   if (null != stateFromStores) {
     let row = null;
@@ -357,10 +357,10 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubSidebar(g
     }
     const obj4 = { style: row, children: items4 };
     const obj5 = { guild };
-    items4 = [closure_7(stateFromStores(17341), obj5), , , ];
+    items4 = [closure_7(stateFromStores(17679), obj5), , , ];
     const obj6 = {
       active: stateFromStores1,
-      IconComponent: tmp(16660).CompassIcon,
+      IconComponent: tmp(16990).CompassIcon,
       label: intl.string(tmp(1128).t.K50GHd),
       handleItemClick() {
           const obj = transitionToChannel;
@@ -371,7 +371,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubSidebar(g
     intl = tmp(1128).intl;
     items4[1] = closure_7(closure_10, obj6);
     const obj7 = {
-      IconComponent: tmp(10931).PlusMediumIcon,
+      IconComponent: tmp(11183).PlusMediumIcon,
       label: intl2.string(tmp(1128).t.emRpdS),
       handleItemClick() {
           const obj = GuildDirectoryAddModalActionCreatorsDefault;
@@ -382,7 +382,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function HubSidebar(g
     intl2 = tmp(1128).intl;
     items4[2] = closure_7(closure_10, obj7);
     const obj8 = {
-      IconComponent: tmp(5131).UserPlusIcon,
+      IconComponent: tmp(5704).UserPlusIcon,
       label: intl3.string(tmp(1128).t.MJQOuJ),
       handleItemClick() {
           const obj = instant_invite_InstantInviteUtils;

@@ -1,14 +1,14 @@
-// Module ID: 13966
-// Function ID: 13967
+// Module ID: 14225
+// Function ID: 14226
 // Name: CustomActivityLinkUtils
-// Dependencies: [5, 13967, 1087, 13969, 1297, 584, 2]
+// Dependencies: [5, 14226, 1087, 14228, 1297, 584, 2]
 // Exports: getCustomActivityLinkParams, getOrFetchCustomActivityLink
 
-// Module 13966 (CustomActivityLinkUtils)
+// Module 14225 (CustomActivityLinkUtils)
 import Constants from "Constants" /* 1087 */;
-import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 13969 */;
+import utils_CustomActivityLinkUtils from "utils/CustomActivityLinkUtils" /* 14228 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CustomActivityLinksStore from "CustomActivityLinksStore" /* 13967 */;
+import CustomActivityLinksStore from "CustomActivityLinksStore" /* 14226 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_4, customId;
@@ -30,7 +30,7 @@ let obj = function _fetchCustomActivityLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -132,7 +132,7 @@ obj = function _getCustomActivityLinkParams() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

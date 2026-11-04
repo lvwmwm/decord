@@ -1,14 +1,14 @@
-// Module ID: 10685
-// Function ID: 10686
+// Module ID: 10937
+// Function ID: 10938
 // Name: participantHasVideo
-// Dependencies: [502, 2014, 5214, 5216, 558, 576, 504, 2]
+// Dependencies: [502, 2014, 5664, 5750, 558, 576, 504, 2]
 // Exports: default
 
-// Module 10685 (participantHasVideo)
-import Constants from "Constants" /* 5216 */;
+// Module 10937 (participantHasVideo)
+import Constants from "Constants" /* 5750 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2014 */;
-import CallConstants from "CallConstants" /* 5214 */;
+import CallConstants from "CallConstants" /* 5664 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

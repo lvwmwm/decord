@@ -1,13 +1,13 @@
-// Module ID: 18291
-// Function ID: 18292
+// Module ID: 18629
+// Function ID: 18630
 // Name: voiceChannelAppLayerLayout
-// Dependencies: [10683, 10678, 10686, 2]
+// Dependencies: [10935, 10930, 10938, 2]
 // Exports: getVoiceChannelAppLayerInsets, shouldRestoreVoiceChannelAppControls
 
-// Module 18291 (voiceChannelAppLayerLayout)
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10678 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10683 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10686 */;
+// Module 18629 (voiceChannelAppLayerLayout)
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 10930 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 10935 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 10938 */;
 import size from "module_2" /* 2 */;
 
 const EDGE_GUTTER = VoicePanelCardConstants.EDGE_GUTTER;

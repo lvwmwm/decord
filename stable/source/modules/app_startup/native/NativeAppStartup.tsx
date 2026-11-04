@@ -1,10 +1,10 @@
-// Module ID: 18404
-// Function ID: 18405
+// Module ID: 18742
+// Function ID: 18743
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 18405, 18407, 17, 18430, 2133, 2119, 2001, 7449, 18431, 1087, 9, 3, 19117, 1384, 7480, 19118, 10, 19120, 19121, 12516, 504, 1274, 1259, 19122, 2005, 19123, 15568, 584, 19124, 7463, 1257, 19125, 19126, 11028, 510, 1267, 15220, 2111, 9552, 2144, 1167, 19127, 2002, 8724, 19129, 15417, 7627, 19147, 19148, 19149, 9618, 7476, 7464, 5074, 1207, 5181, 15467, 18122, 18123, 1113, 15217, 7448, 15471, 15484, 6362, 19150, 6612, 7450, 7464, 2]
+// Dependencies: [32, 5, 18743, 18745, 17, 18768, 2069, 4906, 2001, 7602, 18769, 1087, 9, 3, 19491, 1384, 7633, 19492, 10, 19494, 19495, 12751, 504, 1274, 1259, 19496, 2005, 19497, 15831, 584, 19498, 7616, 1257, 19499, 19500, 10785, 510, 1267, 15475, 4898, 9685, 2080, 1167, 19501, 2002, 8852, 19503, 15672, 7778, 19521, 19522, 19523, 9749, 7629, 7617, 5184, 1207, 5004, 15722, 18465, 18466, 1113, 15472, 7601, 15726, 15740, 6846, 19524, 5329, 7603, 7617, 2]
 // Exports: init, initHeadlessTask
 
-// Module 18404 (NativeAppStartup)
+// Module 18742 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
@@ -12,22 +12,22 @@ import Storage4 from "Storage" /* 510 */;
 import TokenManagerAll from "TokenManager" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 2111 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2133 */;
-import Future from "Future" /* 9552 */;
-import react_nativeDefault from "react-native" /* 15220 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 19120 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 19121 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2069 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4898 */;
+import Future from "Future" /* 9685 */;
+import react_nativeDefault from "react-native" /* 15475 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 19494 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 19495 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_18405 from "module_18405" /* 18405 */;
-import superagentPatch from "superagentPatch" /* 18407 */;
+import module_18743 from "module_18743" /* 18743 */;
+import superagentPatch from "superagentPatch" /* 18745 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18430 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 18768 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import AppStateStore from "AppStateStore" /* 2001 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7449 */;
-import ManagerRegistry from "ManagerRegistry" /* 18431 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7602 */;
+import ManagerRegistry from "ManagerRegistry" /* 18769 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -46,7 +46,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp3;
-const timeRequireDefault = tmp3(7480);
+const timeRequireDefault = tmp3(7633);
 function handleLinkingEventURL(url, arg1) {
   let logger;
   let closure_1 = arg1;
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f153354 = () => _true(handleNotification[33]);
+  const f156488 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f153354).default(arg0, false);
+      timeRequireDefault("receiveNotification", f156488).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f153354).default(arg0, false);
+        timeRequireDefault("receiveNotification", f156488).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -326,7 +326,7 @@ obj = function _trackFirstLaunched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -382,7 +382,7 @@ obj = function _trackFirstLaunched() {
           const result = Storage.set(closure_130_15.APP_FIRST_LAUNCHED, false);
         }
         c6 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp25) {
         c6 = 3;
         throw tmp25;
@@ -406,7 +406,7 @@ obj = function _loadStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -430,7 +430,7 @@ obj = function _loadStorage() {
             let Storage = require("Storage").Storage;
             c4 = 2;
             c5 = 1;
-            const obj4 = { value: Storage.refresh([], authStore5), done: false };
+            const obj4 = { value: Storage.refresh([], authStore4), done: false };
             return obj4;
           }
         } else {
@@ -458,7 +458,7 @@ obj = function _loadStorage() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -505,7 +505,7 @@ obj = function _initializeIntl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -584,7 +584,7 @@ obj = function _initializeIntl() {
             tmp();
             closure_130_11(() => closure_1_1());
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp28) {
           c4 = 3;
@@ -613,7 +613,7 @@ obj = function _init() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -658,7 +658,7 @@ obj = function _init() {
           closure_128_25.finishInitialUrls();
         }
         c4 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -687,7 +687,7 @@ obj = function _initializeApp() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -834,7 +834,7 @@ obj = function _initializeApp() {
             obj = closure_129_0(closure_129_3[69]);
             const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
           const tmp20 = closure_0;
           if (tmp20) {
@@ -966,7 +966,7 @@ obj = function _initHeadlessTask() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -1038,7 +1038,7 @@ obj = function _initHeadlessTask() {
           closure_129_1(closure_129_3[50])();
         }
         c3 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp19) {
         c3 = 3;
         throw tmp19;

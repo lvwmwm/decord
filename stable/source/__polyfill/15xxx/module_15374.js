@@ -1,10 +1,9 @@
 // Module ID: 15374
 // Function ID: 15375
-// Dependencies: []
+// Dependencies: [15367]
 
 // Module 15374
-const tmp = Math.trunc || (function trunc(arg0) {
-  return 0 < +arg0 ? floor : ceil(+arg0);
-});
+import _mod15367 from "module_15367" /* 15367 */;
 
-export default tmp;
+
+export default (arg0, arg1, arg2) => _mod15367(arg0, arg1, arg2) < 0;

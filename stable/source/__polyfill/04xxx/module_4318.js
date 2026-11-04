@@ -1,42 +1,50 @@
 // Module ID: 4318
 // Function ID: 4319
-// Dependencies: [2140]
+// Dependencies: [2071, 2074, 2075, 2077, 4319]
 
 // Module 4318
-import buildLocalizeFn from "buildLocalizeFn" /* 2140 */;
+import formatDistance from "formatDistance" /* 2071 */;
+import formatRelative from "formatRelative" /* 2074 */;
+import date_mod from "module_2075" /* 2075 */;
+import date_mod2 from "module_2077" /* 2077 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 4319 */;
 
-let obj;
-let obj5;
-let obj6;
-let obj7;
-let obj8;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
+let tmp11;
+let tmp3;
+let tmp5;
+let tmp7;
+let tmp9;
+if (!formatDistance) {
+  tmp3 = { default: formatDistance };
+  const obj = { default: formatDistance };
 } else {
-  obj = buildLocalizeFn;
+  tmp3 = formatDistance;
 }
-const obj3 = { narrow: ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"], abbreviated: ["Jan", "Feb", "M\u00E4r", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"], wide: ["Januar", "Februar", "M\u00E4rz", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"] };
-const obj4 = { narrow: obj3.narrow, abbreviated: ["Jan.", "Feb.", "M\u00E4rz", "Apr.", "Mai", "Juni", "Juli", "Aug.", "Sep.", "Okt.", "Nov.", "Dez."], wide: obj3.wide };
-const date = {
-  ordinalNumber(arg0) {
-    return Number(arg0) + ".";
-  },
-  era: obj.default(obj5),
-  quarter: obj.default(obj6),
-  month: obj.default({ values: obj3, formattingValues: obj4, defaultWidth: "wide" }),
-  day: obj.default(obj7),
-  dayPeriod: obj.default(obj8)
-};
-obj5 = { values: { narrow: ["v.Chr.", "n.Chr."], abbreviated: ["v.Chr.", "n.Chr."], wide: ["vor Christus", "nach Christus"] }, defaultWidth: "wide" };
-obj6 = {
-  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["Q1", "Q2", "Q3", "Q4"], wide: ["1. Quartal", "2. Quartal", "3. Quartal", "4. Quartal"] },
-  defaultWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
-  }
-};
-obj7 = { values: { narrow: ["S", "M", "D", "M", "D", "F", "S"], short: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"], abbreviated: ["So.", "Mo.", "Di.", "Mi.", "Do.", "Fr.", "Sa."], wide: ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"] }, defaultWidth: "wide" };
-obj8 = { values: { narrow: { am: "vm.", pm: "nm.", midnight: "Mitternacht", noon: "Mittag", morning: "Morgen", afternoon: "Nachm.", evening: "Abend", night: "Nacht" }, abbreviated: { am: "vorm.", pm: "nachm.", midnight: "Mitternacht", noon: "Mittag", morning: "Morgen", afternoon: "Nachmittag", evening: "Abend", night: "Nacht" }, wide: { am: "vormittags", pm: "nachmittags", midnight: "Mitternacht", noon: "Mittag", morning: "Morgen", afternoon: "Nachmittag", evening: "Abend", night: "Nacht" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "vm.", pm: "nm.", midnight: "Mitternacht", noon: "Mittag", morning: "morgens", afternoon: "nachm.", evening: "abends", night: "nachts" }, abbreviated: { am: "vorm.", pm: "nachm.", midnight: "Mitternacht", noon: "Mittag", morning: "morgens", afternoon: "nachmittags", evening: "abends", night: "nachts" }, wide: { am: "vormittags", pm: "nachmittags", midnight: "Mitternacht", noon: "Mittag", morning: "morgens", afternoon: "nachmittags", evening: "abends", night: "nachts" } }, defaultFormattingWidth: "wide" };
+if (!formatRelative) {
+  tmp5 = { default: formatRelative };
+  const obj2 = { default: formatRelative };
+} else {
+  tmp5 = formatRelative;
+}
+let date = date_mod2;
+if (!date) {
+  tmp7 = { default: date };
+  const obj3 = { default: date };
+} else {
+  tmp7 = date;
+}
+date = date_mod2;
+if (!date) {
+  tmp9 = { default: date };
+  const obj4 = { default: date };
+} else {
+  tmp9 = date;
+}
+if (!buildFormatLongFn) {
+  tmp11 = { default: buildFormatLongFn };
+  const obj5 = { default: buildFormatLongFn };
+} else {
+  tmp11 = buildFormatLongFn;
+}
 
-export default date;
+export default { code: "en-GB", formatDistance: tmp3.default, formatLong: tmp11.default, formatRelative: tmp5.default, localize: tmp7.default, match: tmp9.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };

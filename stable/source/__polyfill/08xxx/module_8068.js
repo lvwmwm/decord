@@ -1,71 +1,16 @@
 // Module ID: 8068
 // Function ID: 8069
-// Dependencies: [8069, 8081, 8089]
+// Dependencies: [26, 106, 65]
 
 // Module 8068
-import FILE_TYPES_REQUIRED_ADDITIONAL_CHECK from "FILE_TYPES_REQUIRED_ADDITIONAL_CHECK" /* 8069 */;
-import _mod8081 from "module_8081" /* 8081 */;
-import _mod8089 from "module_8089" /* 8089 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
-let hasOwnProperty;
+let obj2;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGLine", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: obj2 };
+obj2 = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, x1: true, y1: true, x2: true, y2: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
-    }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
-  }
-});
-tmp3(FILE_TYPES_REQUIRED_ADDITIONAL_CHECK, exports);
-tmp3(_mod8081, exports);
-tmp3(_mod8089, exports);
+export default module_65.get("RNSVGLine", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

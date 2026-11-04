@@ -1,26 +1,29 @@
-// Module ID: 18562
-// Function ID: 18563
+// Module ID: 18905
+// Function ID: 18906
 // Name: useGameOrganizationInviteFetch
-// Dependencies: [5, 10809, 10810, 1087, 504, 1104, 18563, 2]
+// Dependencies: [5, 11060, 11061, 1087, 504, 1104, 11351, 11352, 2]
 
-// Module 18562 (useGameOrganizationInviteFetch)
+// Module 18905 (useGameOrganizationInviteFetch)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 10810 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 18563 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11061 */;
+import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11351 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11352 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 10809 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11060 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
 
+let obj2;
 const constants = GameOrganizationInviteConstants.GameOrganizationInviteStates;
 const QueryIds = Constants.QueryIds;
 let obj = {
   getQueryId: QueryIds.GAME_ORGANIZATION_INVITE,
   staleAfter: 5 * DurationsDefault.Seconds.MINUTE,
   failureStaleAfter: 5 * DurationsDefault.Seconds.MINUTE,
+  retryConfig: obj2,
   get(arg0) {
     const invite = GameOrganizationInviteStore.getInvite(arg0);
     let state;
@@ -38,6 +41,7 @@ let obj = {
   }
 };
 const createFetchStore = get_initialized.createFetchStore;
+obj2 = { retryableErrors: isRetryableFetchErrorDefault };
 let closure_2 = _asyncToGenerator(async (arg0, value) => {
   let obj2;
   let closure_0 = arg0;
@@ -51,7 +55,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+352" };
     }
   } else {
     try {
@@ -80,7 +84,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } catch (tmp7) {
       c1 = 3;

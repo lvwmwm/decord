@@ -1,12 +1,12 @@
-// Module ID: 13263
-// Function ID: 13264
+// Module ID: 13533
+// Function ID: 13534
 // Name: useGameServerFeaturedGameNames
-// Dependencies: [5105, 558, 576, 7285, 2]
+// Dependencies: [5215, 558, 576, 7438, 2]
 
-// Module 13263 (useGameServerFeaturedGameNames)
+// Module 13533 (useGameServerFeaturedGameNames)
 import react from "react" /* 576 */;
-import useGame from "useGame" /* 7285 */;
-import GameServerConstants from "GameServerConstants" /* 5105 */;
+import useGame from "useGame" /* 7438 */;
+import GameServerConstants from "GameServerConstants" /* 5215 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 19091
-// Function ID: 19092
+// Module ID: 19463
+// Function ID: 19464
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1392, 19085, 19087, 6190, 19086, 4904, 1128, 2885, 558, 576, 1505, 19090, 2]
+// Dependencies: [5, 19, 1392, 19457, 19459, 6704, 19458, 5695, 1128, 2832, 558, 576, 1505, 19462, 2]
 // Exports: getScreensForTaskType
 
-// Module 19091 (SafetyFlowsUtils)
+// Module 19463 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1128 */;
-import _modDef2885 from "module_2885" /* 2885 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import types from "types" /* 19085 */;
-import constants from "constants" /* 19086 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 19087 */;
+import _modDef2832 from "module_2832" /* 2832 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import types from "types" /* 19457 */;
+import constants from "constants" /* 19458 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 19459 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
@@ -37,7 +37,7 @@ let obj = function _fetchAndUpdateTask() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -86,7 +86,7 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { text: intl.string(_modDef2885["/fHz9S"]), variant: "success" };
+    const obj2 = { text: intl.string(_modDef2832["/fHz9S"]), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;
@@ -174,7 +174,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -220,7 +220,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp14) {
           c4 = 3;
@@ -261,7 +261,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -307,7 +307,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useOnTaskC
             data = value;
             closure_2_8(data, data);
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp14) {
           c4 = 3;

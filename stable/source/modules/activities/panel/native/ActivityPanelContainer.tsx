@@ -1,13 +1,13 @@
-// Module ID: 18140
-// Function ID: 18141
+// Module ID: 18485
+// Function ID: 18486
 // Name: ActivityPanelContainer
-// Dependencies: [19, 21, 558, 576, 18141, 18142, 18150, 2]
+// Dependencies: [19, 21, 558, 576, 18486, 18487, 18495, 2]
 
-// Module 18140 (ActivityPanelContainer)
+// Module 18485 (ActivityPanelContainer)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import ActivityPanelUtils from "ActivityPanelUtils" /* 18141 */;
-import ActivityPanelControllerDefault from "ActivityPanelController" /* 18142 */;
+import ActivityPanelUtils from "ActivityPanelUtils" /* 18486 */;
+import ActivityPanelControllerDefault from "ActivityPanelController" /* 18487 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

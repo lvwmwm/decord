@@ -1,55 +1,14 @@
 // Module ID: 15370
 // Function ID: 15371
-// Dependencies: [15329, 15371, 15375]
+// Dependencies: [15353]
 
 // Module 15370
-import _mod15329 from "module_15329" /* 15329 */;
-import _mod15371 from "module_15371" /* 15371 */;
+import _mod15353 from "module_15353" /* 15353 */;
 
-let tmp;
-const _mod15375 = tmp(15375);
-const f121778 = (arg0, arg1, arg2) => {
-  const tmp3 = _mod15329(arg0);
-  const tmp4 = _mod15371(tmp3);
-  if (0 === tmp4) {
-    return !c0 && -1;
-  } else {
-    let sum = _mod15375(arg2, tmp4);
-    const tmp16 = c0;
-    if (tmp16) {
-      if (arg1 != arg1) {
-        if (tmp4 > sum) {
-          while (tmp3[+sum] == tmp3[+sum]) {
-            sum = tmp7 + 1;
-          }
-          return true;
-        }
-      }
-      return !c0 && -1;
-    }
-    let sum1 = sum;
-    if (tmp4 > sum) {
-      let num;
-      while (true) {
-        num = c0;
-        if (c0) {
-          if (tmp3[sum1] === arg1) {
-            break;
-          }
-        }
-        sum1 = sum1 + 1;
-      }
-      if (!num) {
-        num = sum1;
-      }
-      if (!num) {
-        num = 0;
-      }
-      return num;
-    }
-  }
+
+export default (arg0, arg1, arg2) => {
+  const obj = new _mod15353(arg0, arg2);
+  const tmp = new _mod15353(arg1, arg2);
+  const tmp2 = obj.compare(tmp) || obj.compareBuild(tmp);
+  return tmp2;
 };
-let c0 = false;
-const obj = { includes: f121778, indexOf: f121778 };
-
-export default obj;

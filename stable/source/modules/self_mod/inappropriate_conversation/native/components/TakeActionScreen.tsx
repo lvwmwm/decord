@@ -1,23 +1,23 @@
-// Module ID: 16801
-// Function ID: 16802
+// Module ID: 17131
+// Function ID: 17132
 // Name: TakeActionScreen
-// Dependencies: [5, 32, 19, 17, 4855, 1392, 10706, 21, 5191, 587, 558, 576, 504, 10747, 10750, 1505, 7293, 7301, 10719, 7988, 4904, 1128, 4903, 5479, 10758, 9874, 8451, 7973, 4901, 5187, 2]
+// Dependencies: [5, 32, 19, 17, 4945, 1392, 10958, 21, 5003, 587, 558, 576, 504, 10999, 11002, 1505, 7446, 7454, 10971, 8140, 5695, 1128, 5694, 5276, 11010, 10004, 8554, 8125, 5692, 5266, 2]
 
-// Module 16801 (TakeActionScreen)
+// Module 17131 (TakeActionScreen)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 587 */;
-import LinkingDefault from "Linking" /* 4901 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7293 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7301 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 10719 */;
+import LinkingDefault from "Linking" /* 5692 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7446 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7454 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 10971 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 10706 */;
+import Constants from "Constants" /* 10958 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -284,7 +284,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeAction
                 const obj2 = { value, done: true };
                 return obj2;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               try {
@@ -335,7 +335,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeAction
                   trackAnalyticsEvent(tmp3(setReported[18]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
                 }
                 c2 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } catch (tmp21) {
                 c2 = 3;
                 throw tmp21;
@@ -458,7 +458,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeAction
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -509,7 +509,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TakeAction
           closure_128_3(tmp3(setReported[18]).CtaEventTypes.USER_TAKEOVER_MODAL_REPORT);
         }
         setReported = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp21) {
         setReported = 3;
         throw tmp21;

@@ -1,9 +1,9 @@
-// Module ID: 13791
-// Function ID: 13792
+// Module ID: 14052
+// Function ID: 14053
 // Name: ChatLoadingIndicatorExperiment
 // Dependencies: [1455, 2]
 
-// Module 13791 (ChatLoadingIndicatorExperiment)
+// Module 14052 (ChatLoadingIndicatorExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

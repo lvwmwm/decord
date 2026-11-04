@@ -1,22 +1,22 @@
-// Module ID: 10108
-// Function ID: 10109
+// Module ID: 10237
+// Function ID: 10238
 // Name: CommandPermissionUtils
-// Dependencies: [2072, 2090, 5503, 1087, 10109, 9554, 7513, 2000, 1099, 9536, 38, 7509, 7512, 2]
+// Dependencies: [4859, 4877, 6015, 1087, 10238, 9687, 5666, 2000, 1099, 5635, 38, 7662, 7665, 2]
 // Exports: computeAllowedForChannel, hasAccess
 
-// Module 10108 (CommandPermissionUtils)
+// Module 10237 (CommandPermissionUtils)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1087 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
 import Server from "Server" /* 2000 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
-import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7512 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7513 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9536 */;
-import CommandPermissionContext from "CommandPermissionContext" /* 9554 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5635 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7662 */;
+import IntegrationPermissionUtils from "IntegrationPermissionUtils" /* 7665 */;
+import CommandPermissionContext from "CommandPermissionContext" /* 9687 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import size from "module_2" /* 2 */;
 
 function computeAllowedForUser(permissions, guild_id, userId, roleIds, isImpersonating) {

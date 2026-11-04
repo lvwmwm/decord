@@ -1,12 +1,12 @@
-// Module ID: 5309
-// Function ID: 5310
+// Module ID: 5844
+// Function ID: 5845
 // Name: MediaEngineDummy
-// Dependencies: [5216, 5239, 5245, 2]
+// Dependencies: [5750, 5774, 5780, 2]
 
-// Module 5309 (MediaEngineDummy)
-import MediaEngineEvent from "MediaEngineEvent" /* 5245 */;
-import Constants from "Constants" /* 5216 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 5239 */;
+// Module 5844 (MediaEngineDummy)
+import MediaEngineEvent from "MediaEngineEvent" /* 5780 */;
+import Constants from "Constants" /* 5750 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5774 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -52,6 +52,9 @@ class MediaEngineDummy extends TypedEventEmitter {
   }
   setAudioMixerOptions() {
 
+  }
+  getSpatialAudioHrtfFiles() {
+    return { directory: null, files: [] };
   }
   setInputVolume() {
 
@@ -101,6 +104,18 @@ class MediaEngineDummy extends TypedEventEmitter {
   }
   setClipsSource() {
 
+  }
+  startSnapshotCapture() {
+
+  }
+  stopSnapshotCapture() {
+
+  }
+  setSnapshotSource() {
+
+  }
+  getSnapshotStats() {
+    return Promise.resolve(null);
   }
   setClipsQualitySettings() {
     return false;

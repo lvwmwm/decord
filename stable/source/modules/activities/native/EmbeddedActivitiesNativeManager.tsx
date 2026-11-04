@@ -1,28 +1,28 @@
-// Module ID: 15567
-// Function ID: 15568
+// Module ID: 15830
+// Function ID: 15831
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 2068, 5209, 2067, 1087, 1384, 15568, 15569, 1123, 5396, 4834, 1267, 584, 15492, 11254, 5081, 5400, 1128, 4904, 1388, 11323, 2]
+// Dependencies: [17, 4855, 5746, 4854, 1087, 1384, 15831, 15832, 1123, 5936, 4924, 1267, 584, 15748, 11425, 5191, 5941, 1128, 5695, 1388, 11495, 2]
 
-// Module 15567 (EmbeddedActivitiesNativeManager)
+// Module 15830 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1123 */;
 import intl2 from "intl" /* 1128 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4904 */;
-import ChatInputUtils from "ChatInputUtils" /* 5081 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 5396 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11254 */;
-import activityWebViewController from "activityWebViewController" /* 11323 */;
-import react_nativeDefault from "react-native" /* 15568 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5209 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import ChatInputUtils from "ChatInputUtils" /* 5191 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5695 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5936 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11425 */;
+import activityWebViewController from "activityWebViewController" /* 11495 */;
+import react_nativeDefault from "react-native" /* 15831 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5746 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
 import Constants from "Constants" /* 1087 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15569 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15832 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;

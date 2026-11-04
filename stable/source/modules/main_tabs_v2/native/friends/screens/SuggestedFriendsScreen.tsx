@@ -1,17 +1,17 @@
-// Module ID: 17920
-// Function ID: 17921
+// Module ID: 18263
+// Function ID: 18264
 // Name: SuggestedFriendsScreen
-// Dependencies: [19, 17, 1087, 21, 5191, 587, 558, 576, 7130, 7155, 1267, 17175, 17909, 8577, 17913, 10529, 10526, 12707, 1128, 2]
+// Dependencies: [19, 17, 1087, 21, 5003, 587, 558, 576, 7285, 7310, 1267, 17509, 18252, 8700, 18256, 10657, 10654, 12956, 1128, 2]
 
-// Module 17920 (SuggestedFriendsScreen)
+// Module 18263 (SuggestedFriendsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 17913 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18256 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -155,7 +155,7 @@ let tmp4 = ReactCompilerGating.isReactCompilerEnabled() ? (function SuggestedFri
         itemType: str,
         key: tmp.user.id,
         component() {
-              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F158440 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
+              const obj = { added: added.includes(suggestedFriend), suggestedFriend, start: 0 === closure_0, end, onPress, onAddSuggestion() { /* body not rendered: F161665 */ }, location: metroRequire.FRIENDS_SUGGESTED_FRIENDS_MODAL };
               const ContactSuggestionRow = ContactSuggestionRow2.ContactSuggestionRow;
               return metroImportDefault(ContactSuggestionRow, obj);
             }

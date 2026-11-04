@@ -1,85 +1,13 @@
 // Module ID: 8074
 // Function ID: 8075
-// Dependencies: [8067, 8068]
-// Exports: isBLEND, isDOC, isELF, isEXE, isINDD, isMACHO, isORC, isPARQUET, isPCAP, isPDF, isPS, isRTF, isSQLITE, isSTL, isTTF
+// Dependencies: [26, 65]
 
 // Module 8074
-import _mod8067 from "module_8067" /* 8067 */;
-import _mod8068 from "module_8068" /* 8068 */;
+import _mod26 from "module_26" /* 26 */;
+import module_65 from "module_65" /* 65 */;
 
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGMarker", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, refX: true, refY: true, markerHeight: true, markerWidth: true, markerUnits: true, orient: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true } };
+({ name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, refX: true, refY: true, markerHeight: true, markerWidth: true, markerUnits: true, orient: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true });
 
-export const isBLEND = function isBLEND(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "blend");
-};
-export const isELF = function isELF(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "elf");
-};
-export const isEXE = function isEXE(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "exe");
-};
-export const isMACHO = function isMACHO(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "macho");
-};
-export const isINDD = function isINDD(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "indd");
-};
-export const isORC = function isORC(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "orc");
-};
-export const isPARQUET = function isPARQUET(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "parquet");
-};
-export const isPDF = function isPDF(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "pdf");
-};
-export const isPS = function isPS(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ps");
-};
-export const isRTF = function isRTF(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "rtf");
-};
-export const isSQLITE = function isSQLITE(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "sqlite");
-};
-export const isSTL = function isSTL(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "stl");
-};
-export const isTTF = function isTTF(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "ttf");
-};
-export const isDOC = function isDOC(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "doc");
-};
-export const isPCAP = function isPCAP(fileChunk) {
-  fileChunk = _mod8067.getFileChunk(fileChunk);
-  const FileTypes = _mod8068.FileTypes;
-  return FileTypes.checkByFileType(fileChunk, "pcap");
-};
+export default module_65.get("RNSVGMarker", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

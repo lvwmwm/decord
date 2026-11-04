@@ -1,11 +1,11 @@
-// Module ID: 15782
-// Function ID: 15783
+// Module ID: 16062
+// Function ID: 16063
 // Name: useSafetyHubFetchError
-// Dependencies: [7803, 558, 576, 504, 2]
+// Dependencies: [7954, 558, 576, 504, 2]
 
-// Module 15782 (useSafetyHubFetchError)
+// Module 16062 (useSafetyHubFetchError)
 import react from "react" /* 576 */;
-import SafetyHubStore from "SafetyHubStore" /* 7803 */;
+import SafetyHubStore from "SafetyHubStore" /* 7954 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

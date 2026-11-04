@@ -1,17 +1,17 @@
-// Module ID: 11223
-// Function ID: 11224
+// Module ID: 11395
+// Function ID: 11396
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5540, 2068, 2119, 1392, 2067, 2026, 11224, 4834, 11225, 11264, 11263, 10805, 11274, 8786, 12512, 11254, 2]
+// Dependencies: [5, 2045, 4855, 4906, 1392, 4854, 2026, 5660, 4924, 11396, 11439, 11438, 5661, 11449, 8914, 12742, 11425, 2]
 // Exports: default
 
-// Module 11223 (handleJoinEmbeddedActivity)
+// Module 11395 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2119 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4906 */;
 import UserStore from "UserStore" /* 1392 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {

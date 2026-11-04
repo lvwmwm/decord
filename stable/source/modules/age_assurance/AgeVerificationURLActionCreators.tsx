@@ -1,15 +1,15 @@
-// Module ID: 7777
-// Function ID: 7778
+// Module ID: 7928
+// Function ID: 7929
 // Name: AgeVerificationURLActionCreators
-// Dependencies: [5, 502, 6173, 1087, 7778, 1297, 584, 2]
+// Dependencies: [5, 502, 6688, 1087, 7929, 1297, 584, 2]
 // Exports: getAgeVerificationMethods, registerIncodeInterview, requestAgeVerificationV2, requestIncodeMethodSession, requestIncodeSessionBootstrap
 
-// Module 7777 (AgeVerificationURLActionCreators)
+// Module 7928 (AgeVerificationURLActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6173 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 7778 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6688 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7929 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ let obj = function _requestAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -217,7 +217,7 @@ obj = function _requestAgeVerificationV() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -294,7 +294,7 @@ obj = function _initiateSuspendedUserAgeVerification() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -369,7 +369,7 @@ obj = function _registerIncodeInterview() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -398,7 +398,7 @@ obj = function _registerIncodeInterview() {
             return { value, done: true };
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -422,7 +422,7 @@ obj = function _requestIncodeSessionBootstrap() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {

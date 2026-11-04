@@ -1,11 +1,11 @@
-// Module ID: 9110
-// Function ID: 9111
+// Module ID: 9237
+// Function ID: 9238
 // Name: useIsPersistentSecureFramesFingerprint
-// Dependencies: [5, 32, 19, 9102, 9101, 2]
+// Dependencies: [5, 32, 19, 9229, 9228, 2]
 // Exports: useIsPersistentSecureFramesFingerprint
 
-// Module 9110 (useIsPersistentSecureFramesFingerprint)
-import SecureFramesConstants from "SecureFramesConstants" /* 9102 */;
+// Module 9237 (useIsPersistentSecureFramesFingerprint)
+import SecureFramesConstants from "SecureFramesConstants" /* 9229 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -52,7 +52,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let tmp47;
@@ -126,7 +126,7 @@ export const useIsPersistentSecureFramesFingerprint = function useIsPersistentSe
           c5 = 0;
           closure_2(false);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp47) {
         if (0 === c5) {

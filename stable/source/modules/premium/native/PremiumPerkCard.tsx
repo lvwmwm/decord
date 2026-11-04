@@ -1,45 +1,45 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14742
+// Function ID: 14743
 // Name: PremiumPerkCard
-// Dependencies: [19, 17, 1394, 1087, 21, 558, 5486, 14476, 4864, 7370, 7155, 1128, 14477, 14478, 14479, 14480, 14481, 14482, 14483, 14484, 14485, 14486, 14487, 14488, 14489, 14490, 14491, 14492, 14493, 5187, 2131, 5191, 587, 576, 5128, 14494, 5479, 2]
+// Dependencies: [19, 17, 1394, 1087, 21, 558, 5285, 14743, 2053, 7522, 7310, 1128, 14744, 14745, 14746, 14747, 14748, 14749, 14750, 14751, 14752, 14753, 14754, 14755, 14756, 14757, 14758, 14759, 14760, 5266, 2067, 5003, 587, 576, 5701, 14761, 5276, 2]
 // Exports: usePremiumPerkCard
 
-// Module 14475 (PremiumPerkCard)
+// Module 14742 (PremiumPerkCard)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl37 from "intl" /* 1128 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2131 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import components_Button_Button from "components/Button/Button" /* 5479 */;
-import useFontScale from "useFontScale" /* 5486 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import openUserSettings from "openUserSettings" /* 7370 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14477 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14478 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14479 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14480 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14481 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14482 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14483 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 14484 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 14485 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 14486 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 14487 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 14488 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 14489 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 14490 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 14491 */;
-import AssetRegistryDefault16 from "AssetRegistry" /* 14492 */;
-import _modDef14493 from "module_14493" /* 14493 */;
-import PillTextDefault from "PillText" /* 14494 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2067 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import components_Button_Button from "components/Button/Button" /* 5276 */;
+import useFontScale from "useFontScale" /* 5285 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
+import openUserSettings from "openUserSettings" /* 7522 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14744 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14745 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14746 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14747 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14748 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14749 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14750 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 14751 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 14752 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 14753 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 14754 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 14755 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 14756 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 14757 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 14758 */;
+import AssetRegistryDefault16 from "AssetRegistry" /* 14759 */;
+import _modDef14760 from "module_14760" /* 14760 */;
+import PillTextDefault from "PillText" /* 14761 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -558,9 +558,9 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   let obj9;
   let prop;
   let subscriptionPlansLoaded;
-  let obj = subscriptionPlansLoaded(14476);
+  let obj = subscriptionPlansLoaded(14743);
   subscriptionPlansLoaded = obj.useSubscriptionPlansLoaded();
-  let obj2 = subscriptionPlansLoaded(4864);
+  let obj2 = subscriptionPlansLoaded(2053);
   const maxFileSizeForPremiumType = obj2.getMaxFileSizeForPremiumType(PremiumTypes.TIER_2);
   const callback = react.useCallback(() => {
     const obj2 = { screen: constants.COLLECTIBLES_SHOP, params: { analyticsSource: AnalyticsLocationDefault.PREMIUM_MARKETING_PERK_CARD } };
@@ -642,11 +642,11 @@ export const usePremiumPerkCard = function usePremiumPerkCard() {
   intl32 = subscriptionPlansLoaded(1128).intl;
   intl33 = subscriptionPlansLoaded(1128).intl;
   intl34 = subscriptionPlansLoaded(1128).intl;
-  obj20 = { title: intl35.string(subscriptionPlansLoaded(1128).t.aJE9i1), imageSrc: { uri: _modDef14493 }, imageStyle: { aspectRatio: 1.9789473684210526 }, bodyComponent: closure_9(Text, obj22) };
+  obj20 = { title: intl35.string(subscriptionPlansLoaded(1128).t.aJE9i1), imageSrc: { uri: _modDef14760 }, imageStyle: { aspectRatio: 1.9789473684210526 }, bodyComponent: closure_9(Text, obj22) };
   intl35 = subscriptionPlansLoaded(1128).intl;
   obj22 = { variant: "text-sm/normal", children: format(prop, obj23) };
-  ({ uri: _modDef14493 });
-  Text = subscriptionPlansLoaded(5187).Text;
+  ({ uri: _modDef14760 });
+  Text = subscriptionPlansLoaded(5266).Text;
   const intl36 = subscriptionPlansLoaded(1128).intl;
   format = intl36.format;
   obj23 = { termsLink: obj24.getArticleURL(NITRO_2_POINT_0.NITRO_2_POINT_0) };

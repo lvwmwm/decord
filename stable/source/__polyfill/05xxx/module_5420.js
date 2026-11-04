@@ -1,73 +1,48 @@
 // Module ID: 5420
 // Function ID: 5421
-// Dependencies: [19, 17, 5412]
-// Exports: useTabsScreen
+// Dependencies: [5397, 5412, 5388]
+// Exports: useRotationGesture
 
 // Module 5420
-import react_native from "react-native" /* 17 */;
-import RNSLog2 from "RNSLog" /* 5412 */;
-import react from "react" /* 19 */;
+import ComposedGestureName from "ComposedGestureName" /* 5388 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5397 */;
+import _mod5412 from "module_5412" /* 5412 */;
 
-const findNodeHandle = react_native.findNodeHandle;
-
-export const useTabsScreen = function useTabsScreen(componentNodeRef) {
-  componentNodeRef = componentNodeRef.componentNodeRef;
-  const onDidAppear = componentNodeRef.onDidAppear;
-  const onDidDisappear = componentNodeRef.onDidDisappear;
-  const onWillAppear = componentNodeRef.onWillAppear;
-  const onWillDisappear = componentNodeRef.onWillDisappear;
-  const screenKey = componentNodeRef.screenKey;
-  const ref = onDidDisappear.useRef(-1);
-  const effect = onDidDisappear.useEffect(() => {
-    if (null != componentNodeRef.current) {
-      let num2 = findNodeHandle(tmp.current);
-      const tmp3 = ref;
-      if (num2 == null) {
-        num2 = -1;
-      }
-      tmp3.current = num2;
-    } else {
-      ref.current = -1;
-    }
-  }, []);
-  const items = [onWillAppear];
-  const items1 = [onDidAppear];
-  const callback = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onWillAppear received");
-    if (onWillAppear != null) {
-      tmp2(arg0);
-    }
-  }, items);
-  const items2 = [onWillDisappear];
-  const callback1 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onDidAppear received");
-    if (onDidAppear != null) {
-      tmp2(arg0);
-    }
-  }, items1);
-  const items3 = [onDidDisappear];
-  const callback2 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onWillDisappear received");
-    if (onWillDisappear != null) {
-      tmp2(arg0);
-    }
-  }, items2);
-  const callback3 = onDidDisappear.useCallback((arg0) => {
-    const RNSLog = RNSLog2.RNSLog;
-    RNSLog.log("TabsScreen [" + ref.current + "] onDidDisappear received");
-    if (onDidDisappear != null) {
-      tmp2(arg0);
-    }
-  }, items3);
-  let RNSLog = componentNodeRef(onDidAppear[2]).RNSLog;
-  let num = ref.current;
-  const log = RNSLog.log;
-  if (num == null) {
-    num = -1;
+function transformRotationProps(arg0) {
+  const obj = maybeExtractNativeEvent;
+  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  arg0.fillInDefaultValues = fillInDefaultValues;
+  return arg0;
+}
+function diffCalculator(rotation, rotation2) {
+  let rotationChange;
+  rotation = rotation.rotation;
+  if (rotation2) {
+    rotationChange = rotation - rotation2.rotation;
+  } else {
+    rotationChange = rotation;
   }
-  log("TabsScreen [" + num + "] render; screenKey: " + screenKey);
-  return { componentNodeRef, lifecycleCallbacks: { onWillAppear: callback, onDidAppear: callback1, onWillDisappear: callback2, onDidDisappear: callback3 } };
+  return { rotationChange };
+}
+diffCalculator.__closure = {};
+diffCalculator.__workletHash = 14071129947311;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useRotationGestureTs1(current,previous){return{rotationChange:previous?current.rotation-previous.rotation:current.rotation};}" };
+function fillInDefaultValues(arg0) {
+  arg0.rotationChange = 0;
+}
+fillInDefaultValues.__closure = {};
+fillInDefaultValues.__workletHash = 2470118803733;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useRotationGestureTs2(event){event.rotationChange=0;}" };
+const map = new Map();
+let closure_6 = {};
+
+export const useRotationGesture = function useRotationGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_6;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformRotationProps);
+  const obj2 = _mod5412;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Rotation, clonedAndRemappedConfig);
 };

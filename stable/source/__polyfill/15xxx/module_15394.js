@@ -1,8 +1,88 @@
 // Module ID: 15394
 // Function ID: 15395
-// Dependencies: []
+// Dependencies: [32, 15367, 15384]
 
 // Module 15394
-const obj = { name: "react-native-url-polyfill", version: "2.0.0", description: "A lightweight and trustworthy URL polyfill for React Native", keywords: ["URL", "URLSearchParams", "polyfill", "react native", "whatwg-url"], bugs: { url: "https://github.com/charpeni/react-native-url-polyfill/issues" }, homepage: "https://github.com/charpeni/react-native-url-polyfill", readme: "https://github.com/charpeni/react-native-url-polyfill#readme", repository: { type: "git", url: "https://github.com/charpeni/react-native-url-polyfill.git" }, main: "index.js", types: "index.d.ts", scripts: { test: "jest", lint: "eslint .", prepare: "husky install", "bundle-size": "node scripts/bundle-size" }, author: "Nicolas Charpentier <nicolas.charpentier079@gmail.com>", license: "MIT", dependencies: { "whatwg-url-without-unicode": "8.0.0-3" }, devDependencies: { "@react-native-community/eslint-config": "3.2.0", detox: "20.9.1", eslint: "8.44.0", "eslint-plugin-prettier": "4.2.1", husky: "8.0.3", jest: "29.5.0", "lint-staged": "13.2.3", "metro-react-native-babel-preset": "0.76.7", nanoid: "3.3.6", prettier: "2.8.8", react: "18.2.0", "react-native": "0.72.1", "react-native-bundle-scale": "1.1.0", typescript: "5.1.6" }, peerDependencies: { "react-native": "*" }, jest: { preset: "react-native", testPathIgnorePatterns: ["/node_modules/", "./platforms/"] }, "lint-staged": { "*.js": ["eslint --fix"] } };
+import _mod15367 from "module_15367" /* 15367 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-export default obj;
+const require = globalThis.__r;
+let _require;
+
+
+export default (arr, arg1, arg2) => {
+  let closure_0;
+  let first;
+  let raw;
+  let tmp22;
+  let tmp = arg1;
+  _require = arg2;
+  const items = [];
+  let tmp2 = null;
+  let tmp3 = null;
+  const sorted = arr.sort((arg0, arg1) => _mod15367(arg0, arg1, closure_0));
+  for (const item10017 of sorted) {
+    if (require("module_15384")(item10017, tmp, arg2)) {
+      tmp3 = item10017;
+      let tmp12 = tmp2;
+      if (!tmp12) {
+        tmp2 = item10017;
+      }
+    } else {
+      let tmp8 = tmp3;
+      if (tmp8) {
+        let items1 = [tmp2, ];
+        items1[1] = tmp3;
+        arr = items.push(items1);
+      }
+      tmp3 = null;
+      tmp2 = null;
+    }
+    continue;
+  }
+  const tmp13 = tmp2;
+  if (tmp13) {
+    const items2 = [tmp2, null];
+    items.push(items2);
+  }
+  const items3 = [];
+  const tmp16 = items[Symbol.iterator]();
+  while (tmp16 !== undefined) {
+    [first, tmp22] = tmp17;
+    let tmp21 = first;
+    let tmp23 = tmp22;
+    if (first === tmp22) {
+      let arr3 = items3.push(tmp21);
+    } else {
+      if (!tmp23) {
+        if (tmp21 === sorted[0]) {
+          let arr4 = items3.push("*");
+        }
+      }
+      if (tmp23) {
+        if (tmp21 === sorted[0]) {
+          let _HermesInternal3 = HermesInternal;
+          let arr5 = items3.push("<=" + tmp23);
+        } else {
+          let _HermesInternal2 = HermesInternal;
+          let arr6 = items3.push("" + tmp21 + " - " + tmp23);
+        }
+      } else {
+        let _HermesInternal = HermesInternal;
+        let arr13 = items3.push(">=" + tmp21);
+      }
+    }
+    continue;
+  }
+  const joined = items3.join(" || ");
+  if (typeof tmp.raw === "string") {
+    raw = tmp.raw;
+  } else {
+    const _String = String;
+    raw = String(tmp);
+  }
+  if (joined.length < raw.length) {
+    tmp = joined;
+  }
+  return tmp;
+};

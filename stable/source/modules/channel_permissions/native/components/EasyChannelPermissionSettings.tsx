@@ -1,32 +1,32 @@
-// Module ID: 17970
-// Function ID: 17971
+// Module ID: 18313
+// Function ID: 18314
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 17971, 2068, 2128, 2122, 2090, 4845, 4855, 1392, 7756, 1087, 21, 5191, 587, 558, 576, 1505, 11185, 504, 8877, 8878, 8879, 1128, 5521, 5399, 8894, 4850, 5477, 7172, 6542, 7834, 10936, 6457, 11183, 6484, 5206, 8805, 9051, 17972, 17974, 2]
+// Dependencies: [32, 5, 19, 17, 18314, 4855, 4915, 4909, 4877, 4935, 4945, 1392, 7907, 1087, 21, 5003, 587, 558, 576, 1505, 11343, 504, 9004, 9005, 9006, 1128, 5636, 5940, 9021, 4940, 6009, 7327, 7019, 7985, 11188, 6935, 11341, 6962, 5743, 8933, 9178, 18315, 18317, 2]
 
-// Module 17970 (EasyChannelPermissionSettings)
+// Module 18313 (EasyChannelPermissionSettings)
 import nativeDefault from "native" /* 587 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7756 */;
-import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 8877 */;
-import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 8878 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 8894 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11183 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 7907 */;
+import ChannelPermissionsUtilsAll from "ChannelPermissionsUtils" /* 9004 */;
+import ChannelSettingsPermissionsActionCreators from "ChannelSettingsPermissionsActionCreators" /* 9005 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9021 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11341 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 17971 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ChannelSettingsPermissionsStore from "ChannelSettingsPermissionsStore" /* 18314 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -195,7 +195,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
             return obj;
           } else {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
           const items = [tmp];
           c2 = 2;
@@ -283,7 +283,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -324,7 +324,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
             return obj;
           } else if (!value) {
             c3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
           const intl = title(c3[25]).intl;
           const string = intl.string;
@@ -368,7 +368,7 @@ let closure_27 = ReactCompilerGating.isReactCompilerEnabled() ? (function Channe
           intl4 = title(c3[25]).intl;
           show(obj9);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp54) {
           c3 = 3;
           throw tmp54;

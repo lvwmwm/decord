@@ -1,23 +1,23 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 7529
+// Function ID: 7530
 // Name: useGetDismissibleContent
-// Dependencies: [32, 19, 1246, 5034, 2055, 2060, 1087, 1097, 1267, 2052, 7378, 2053, 504, 558, 576, 5055, 2051, 5033, 11, 2]
+// Dependencies: [32, 19, 1246, 5034, 4842, 4847, 1087, 1097, 1267, 4839, 7530, 4840, 504, 558, 576, 5055, 4838, 5033, 11, 2]
 
-// Module 7377 (useGetDismissibleContent)
+// Module 7529 (useGetDismissibleContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1087 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 2051 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 2053 */;
-import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 2060 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4838 */;
+import dismissible_content from "dismissible_content" /* 4839 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4840 */;
+import DismissibleContentShownStateStore2 from "DismissibleContentShownStateStore" /* 4847 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1246 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2055 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4842 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -48,7 +48,7 @@ function useGetVisibleContent(found1, stateFromStores, groupName, version, snowf
   let closure_6 = tmp6;
   let result = null != found1;
   if (result) {
-    const tmp2Result = tmp2(2053);
+    const tmp2Result = tmp2(4840);
     result = tmp2Result.isDismissibleContentBlockedByOverlay(found1, first, tmp6);
   }
   const items = [ref];
@@ -943,26 +943,26 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSnowfl
       if (cResult[5] === arg1) {
         let closure_3 = cResult[6];
       }
-      const tmp27 = useGetVisibleContent(tmp12, stateFromStores, groupName, undefined, arg1);
+      const tmp23 = useGetVisibleContent(tmp12, stateFromStores, groupName, undefined, arg1);
       if (cResult[7] === tmp12) {
         if (cResult[8] === groupName) {
           if (cResult[9] === stateFromStores) {
-            let tmp28;
+            let tmp24;
             if (cResult[10] === arg1) {
-              tmp28 = cResult[11];
+              tmp24 = cResult[11];
             }
-            if (cResult[12] === tmp28) {
-              let tmp29;
-              if (cResult[13] === tmp27) {
-                tmp29 = cResult[14];
+            if (cResult[12] === tmp24) {
+              let tmp25;
+              if (cResult[13] === tmp23) {
+                tmp25 = cResult[14];
               }
-              return tmp29;
+              return tmp25;
             }
-            const items1 = [tmp27, tmp28];
-            cResult[12] = tmp28;
-            cResult[13] = tmp27;
+            const items1 = [tmp23, tmp24];
+            cResult[12] = tmp24;
+            cResult[13] = tmp23;
             cResult[14] = items1;
-            tmp29 = items1;
+            tmp25 = items1;
           }
         }
       }
@@ -978,39 +978,42 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSnowfl
       cResult[9] = stateFromStores;
       cResult[10] = arg1;
       cResult[11] = fn2;
-      tmp28 = fn2;
+      tmp24 = fn2;
     }
   }
   closure_3 = null;
   let tmp13 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult2 = tmp(5055);
-    let result = tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
-    if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
-      let tmp20 = null;
-      if (!result) {
-        if (null == prop) {
-          tmp20 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
-        } else {
-          tmp20 = null;
-          SnowflakeUtilsDefault;
-        }
-      }
-      closure_3 = tmp20;
-      tmp13 = tmp20;
-    } else {
-      tmp13 = null;
-      if (null != prop) {
-        let tmp18 = null;
+    tmp13 = null;
+    if ("" !== arg1) {
+      const tmpResult2 = tmp(5055);
+      let result = tmpResult2.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
+      if (UserSettingsProtoStore.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
+        let tmp16 = null;
         if (!result) {
-          tmp18 = null;
-          const obj4 = SnowflakeUtilsDefault;
-          if (1 === obj4.compare(arg1, prop)) {
-            tmp18 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+          if (null == prop) {
+            tmp16 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+          } else {
+            tmp16 = null;
+            SnowflakeUtilsDefault;
           }
         }
-        closure_3 = tmp18;
-        tmp13 = tmp18;
+        closure_3 = tmp16;
+        tmp13 = tmp16;
+      } else {
+        tmp13 = null;
+        if (null != prop) {
+          let tmp14 = null;
+          if (!result) {
+            tmp14 = null;
+            const obj3 = SnowflakeUtilsDefault;
+            if (1 === obj3.compare(arg1, prop)) {
+              tmp14 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+            }
+          }
+          closure_3 = tmp14;
+          tmp13 = tmp14;
+        }
       }
     }
   }
@@ -1047,33 +1050,36 @@ let tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetSnowfl
   let closure_3 = null;
   let tmp7 = null;
   if (null != PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE) {
-    const tmpResult = tmp(5055);
-    let result = tmpResult.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
-    if (obj2.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
-      let tmp13 = null;
-      if (!result) {
-        if (null == lastDismissedObjectId) {
-          tmp13 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
-        } else {
-          tmp13 = null;
-          SnowflakeUtilsDefault;
-        }
-      }
-      closure_3 = tmp13;
-      tmp7 = tmp13;
-    } else {
-      tmp7 = null;
-      if (null != lastDismissedObjectId) {
-        let tmp11 = null;
+    tmp7 = null;
+    if ("" !== arg1) {
+      const tmpResult = tmp(5055);
+      let result = tmpResult.disableNewUserDismissibleContent(PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE);
+      if (obj2.hasLoaded(UserSettingsTypes.PRELOADED_USER_SETTINGS)) {
+        let tmp10 = null;
         if (!result) {
-          tmp11 = null;
-          const obj4 = SnowflakeUtilsDefault;
-          if (1 === obj4.compare(arg1, lastDismissedObjectId)) {
-            tmp11 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+          if (null == lastDismissedObjectId) {
+            tmp10 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+          } else {
+            tmp10 = null;
+            SnowflakeUtilsDefault;
           }
         }
-        closure_3 = tmp11;
-        tmp7 = tmp11;
+        closure_3 = tmp10;
+        tmp7 = tmp10;
+      } else {
+        tmp7 = null;
+        if (null != lastDismissedObjectId) {
+          let tmp8 = null;
+          if (!result) {
+            tmp8 = null;
+            const obj3 = SnowflakeUtilsDefault;
+            if (1 === obj3.compare(arg1, lastDismissedObjectId)) {
+              tmp8 = PREMIUM_TAB_MARKETING_MOMENT_OFFER_BADGE;
+            }
+          }
+          closure_3 = tmp8;
+          tmp7 = tmp8;
+        }
       }
     }
   }
@@ -1156,7 +1162,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useGetTimeRe
   dependencyMap = null;
   let result = null == THIRD_PARTY_OUTBOUND_PROMO_NAGBAR;
   if (!result) {
-    const tmpResult2 = tmp(2053);
+    const tmpResult2 = tmp(4840);
     result = tmpResult2.isTimeRecurringSnowflakeBoundDismissibleContentDismissed(THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, id, cooldownDurationMs);
   }
   let tmp10 = null;

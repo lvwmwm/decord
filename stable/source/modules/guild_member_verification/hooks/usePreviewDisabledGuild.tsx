@@ -1,13 +1,13 @@
-// Module ID: 6432
-// Function ID: 6433
+// Module ID: 6911
+// Function ID: 6912
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 2090, 6428, 558, 576, 504, 6402, 2082, 2]
+// Dependencies: [19, 4877, 6907, 558, 576, 504, 6881, 4869, 2]
 
-// Module 6432 (usePreviewDisabledGuild)
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6402 */;
+// Module 6911 (usePreviewDisabledGuild)
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 6881 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6428 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 6907 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -98,7 +98,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreview
   if (stateFromStores == null) {
     let result = null;
     if (null != stateFromStores1) {
-      const tmpResult4 = tmp(2082);
+      const tmpResult4 = tmp(4869);
       result = tmpResult4.fromVerificationGateGuild(stateFromStores1);
     }
     tmp16 = result;
@@ -134,7 +134,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function usePreview
   if (stateFromStores == null) {
     let result = null;
     if (null != stateFromStores1) {
-      const tmpResult = tmp(2082);
+      const tmpResult = tmp(4869);
       result = tmpResult.fromVerificationGateGuild(stateFromStores1);
     }
     stateFromStores = result;

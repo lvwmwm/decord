@@ -1,8 +1,8 @@
-// Module ID: 5769
-// Function ID: 5770
+// Module ID: 6279
+// Function ID: 6280
 // Dependencies: [2]
 
-// Module 5769
+// Module 6279
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/face/bored.png.js");

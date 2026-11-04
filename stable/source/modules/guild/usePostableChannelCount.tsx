@@ -1,13 +1,13 @@
-// Module ID: 17894
-// Function ID: 17895
+// Module ID: 18237
+// Function ID: 18238
 // Name: usePostableChannelCount
-// Dependencies: [4843, 4845, 1087, 558, 576, 504, 1099, 2]
+// Dependencies: [4933, 4935, 1087, 558, 576, 504, 1099, 2]
 
-// Module 17894 (usePostableChannelCount)
+// Module 18237 (usePostableChannelCount)
 import Constants from "Constants" /* 1087 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4933 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,31 +1,31 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9690
+// Function ID: 9691
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 2068, 4845, 1392, 5503, 1087, 9558, 2130, 5185, 7513, 1128, 9559, 2000, 2044, 9560, 9561, 7246, 9562, 1108, 9563, 7445, 7635, 6377, 5057, 1104, 12563, 4797, 7290, 38, 7225, 13825, 2]
+// Dependencies: [5, 4855, 4935, 1392, 6015, 1087, 9691, 4917, 5008, 5666, 1128, 9692, 2000, 4831, 9693, 9694, 7401, 9695, 1108, 9696, 7598, 7787, 6862, 5057, 1104, 12814, 2049, 7443, 38, 7380, 14087, 2]
 // Exports: getBuiltInCommands
 
-// Module 9557 (ApplicationCommandBuiltIns)
+// Module 9690 (ApplicationCommandBuiltIns)
 import Server from "Server" /* 2000 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 2130 */;
-import MessageConstants from "MessageConstants" /* 5185 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7225 */;
-import ThreadHooks from "ThreadHooks" /* 7246 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7513 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9559 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9560 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4917 */;
+import MessageConstants from "MessageConstants" /* 5008 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7380 */;
+import ThreadHooks from "ThreadHooks" /* 7401 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 9692 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 9693 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import UserStore from "UserStore" /* 1392 */;
 import Constants from "Constants" /* 1087 */;
-import DiceRollConstants from "DiceRollConstants" /* 9558 */;
+import DiceRollConstants from "DiceRollConstants" /* 9691 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c0, c2, c4, c5, closure_5, importDefault, recipientIds;
+let _require, c2, c4, c5, closure_5, importDefault;
 
 let ALLOWED_DICE_SIDES;
 let DISPLAY_NAME_MAX_LENGTH;
@@ -592,7 +592,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -661,7 +661,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
           const obj7 = closure_133_1(closure_133_2[21]);
           sendMessage(id, obj7.parse(id, closure_3), true, obj8);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp27) {
         c7 = 3;
@@ -707,7 +707,7 @@ const obj21 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -772,7 +772,7 @@ const obj21 = {
               sendBotMessage(id2, formatToPlainString(v9wzHDV, obj5));
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp20) {
             c4 = 3;
             throw tmp20;
@@ -894,7 +894,7 @@ const obj24 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -971,7 +971,7 @@ const obj24 = {
               sendBotMessage(id, formatToPlainString(YflWdM, obj7));
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;
@@ -1159,7 +1159,7 @@ const obj28 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -1237,7 +1237,7 @@ const obj28 = {
               sendBotMessage(id, formatToPlainString(BbRV6o, obj7));
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp19) {
             c5 = 3;
             throw tmp19;
@@ -1370,74 +1370,74 @@ const obj32 = {
     let c1;
     let str2;
     let obj = function _handler4() {
+      let recipientIds;
       obj = _asyncToGenerator(async (arg0, value) => {
-        let openPrivateChannelResult;
-        let v1;
-        if (c0 === 2) {
-          c0 = 3;
+        let closure_1;
+        if (c3 === 2) {
+          c3 = 3;
           throw new TypeError("Generator functions may not be called on executing generators");
-        } else if (tmp2 === 3) {
+        } else if (tmp3 === 3) {
           if (arg0 === 1) {
             throw value;
           } else if (arg0 === 2) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
-            c0 = 2;
-            if (0 === recipientIds) {
+            let closure_0;
+            let tmp;
+            c3 = 2;
+            if (0 === c2) {
               if (arg0 === 1) {
-                c0 = 3;
+                c3 = 3;
                 throw value;
               } else if (arg0 === 2) {
-                c0 = 3;
+                c3 = 3;
                 const obj4 = { value, done: true };
                 return obj4;
               } else {
-                let obj2 = recipientIds(str2[27]);
+                closure_0 = undefined;
+                tmp = undefined;
                 const obj5 = { recipientIds };
-                recipientIds = 1;
-                c0 = 1;
-                const obj6 = {
-                  value: openPrivateChannelResult.then((result) => {
-                            channel = channel.getChannel(result);
-                            c1(closure_2_2[28])(null != channel, "Newly created PrivateChannel is null");
-                            const id = channel.id;
-                            const sendMessage = c1(closure_2_2[20]).sendMessage;
-                            c1(closure_2_2[20]);
-                            obj = c1(closure_2_2[21]);
-                            const obj2 = { location: constants.PRIVATE_MESSAGE_COMMAND };
-                            sendMessage(id, obj.parse(channel, closure_1_2), true, obj2);
-                          }),
-                  done: false
-                };
-                openPrivateChannelResult = obj2.openPrivateChannel(obj5);
+                const obj2 = tmp(c2[27]);
+                c2 = 1;
+                c3 = 1;
+                const obj6 = { value: obj2.openPrivateChannel(obj5), done: false };
                 return obj6;
               }
             } else if (arg0 === 1) {
-              c0 = 3;
+              c3 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c0 = 3;
+              c3 = 3;
               obj = { value, done: true };
               return obj;
             } else {
-              c0 = 3;
-              return { value: "IconComponent", done: null };
+              closure_0 = value;
+              tmp = channel.getChannel(closure_0);
+              tmp(c2[28])(null != tmp, "Newly created PrivateChannel is null");
+              const tmp23 = tmp(c2[20]);
+              const id = tmp.id;
+              const sendMessage = tmp23.sendMessage;
+              const obj8 = { location: constants.PRIVATE_MESSAGE_COMMAND };
+              const obj7 = tmp(c2[21]);
+              sendMessage(id, obj7.parse(tmp, closure_129_2), true, obj8);
+              c3 = 3;
+              return { value: "IconComponent", done: "+352" };
             }
-          } catch (tmp7) {
-            c0 = 3;
-            throw tmp7;
+          } catch (tmp8) {
+            c3 = 3;
+            throw tmp8;
           }
         }
       });
       return obj(...arguments);
     };
     if (null != channel) {
-      let tmp3 = arr;
+      const tmp3 = arr;
       const user = "user";
       const iter2 = arr.find((name) => name.name === size_str);
       let value;

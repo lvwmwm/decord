@@ -1,21 +1,21 @@
-// Module ID: 10625
-// Function ID: 10626
+// Module ID: 10877
+// Function ID: 10878
 // Name: FavoritesHooks
-// Dependencies: [5034, 1392, 2071, 2081, 1394, 10626, 558, 576, 504, 1991, 11, 1211, 2093, 2]
+// Dependencies: [5034, 1392, 4858, 4868, 1394, 10878, 558, 576, 504, 1991, 11, 1211, 4880, 2]
 // Exports: getFavoritesCategories, getFavoritesLimits
 
-// Module 10625 (FavoritesHooks)
+// Module 10877 (FavoritesHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import PremiumTypeUtilsDefault from "PremiumTypeUtils" /* 1991 */;
-import FavoritesConstants from "FavoritesConstants" /* 2081 */;
-import FavoritesUtils from "FavoritesUtils" /* 2093 */;
+import FavoritesConstants from "FavoritesConstants" /* 4868 */;
+import FavoritesUtils from "FavoritesUtils" /* 4880 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import UserStore from "UserStore" /* 1392 */;
-import FavoriteStore from "FavoriteStore" /* 2071 */;
+import FavoriteStore from "FavoriteStore" /* 4858 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const FavoritesLimits = tmp(10626);
+const FavoritesLimits = tmp(10878);
 const MAX_FAVORITE_CHANNELS = FavoritesConstants.MAX_FAVORITE_CHANNELS;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 let ReactCompilerGating = ReactCompilerGating_mod;
@@ -55,7 +55,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavo
     if (isPremiumExactlyResult) {
       FREE_FAVORITE_LIMIT = MAX_FAVORITE_CHANNELS;
     } else {
-      FREE_FAVORITE_LIMIT = tmp(10626).FREE_FAVORITE_LIMIT;
+      FREE_FAVORITE_LIMIT = tmp(10878).FREE_FAVORITE_LIMIT;
     }
     const obj2 = { favoriteLimit: FREE_FAVORITE_LIMIT, canUpsellFavoriteLimit: !isPremiumExactlyResult };
     cResult[2] = stateFromStores;

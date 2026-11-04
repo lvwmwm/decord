@@ -1,16 +1,16 @@
-// Module ID: 5499
-// Function ID: 5500
+// Module ID: 6011
+// Function ID: 6012
 // Name: CustomMarkup
-// Dependencies: [5500, 5180, 5501, 5179, 1951, 5502, 2]
+// Dependencies: [6012, 5738, 6013, 5737, 1951, 6014, 2]
 // Exports: createWidgetMessageRules, getNotifCenterV2MessagePreviewParser, getParser, getParserWithoutLinks, getWidgetMessageRules
 
-// Module 5499 (CustomMarkup)
+// Module 6011 (CustomMarkup)
 import _modDef1951 from "module_1951" /* 1951 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5179 */;
-import MarkupReactRules from "MarkupReactRules" /* 5180 */;
-import MarkupTypes from "MarkupTypes" /* 5500 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5501 */;
-import MarkupRulesDefault from "MarkupRules" /* 5502 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5737 */;
+import MarkupReactRules from "MarkupReactRules" /* 5738 */;
+import MarkupTypes from "MarkupTypes" /* 6012 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 6013 */;
+import MarkupRulesDefault from "MarkupRules" /* 6014 */;
 import size from "module_2" /* 2 */;
 
 const MarkupReactRulesDefault = MarkupReactRules;

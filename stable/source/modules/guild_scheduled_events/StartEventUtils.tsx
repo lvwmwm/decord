@@ -1,16 +1,16 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 9067
+// Function ID: 9068
 // Name: StartEventUtils
-// Dependencies: [5, 2072, 2068, 2090, 2074, 1087, 8876, 38, 7762, 8792, 2]
+// Dependencies: [5, 4859, 4855, 4877, 4861, 1087, 9003, 38, 7913, 8920, 2]
 // Exports: preStartEventActions, setEventAsActive
 
-// Module 8940 (StartEventUtils)
+// Module 9067 (StartEventUtils)
 import Constants from "Constants" /* 1087 */;
-import ChannelRecord from "ChannelRecord" /* 2072 */;
+import ChannelRecord from "ChannelRecord" /* 4859 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2074 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4861 */;
 import size from "module_2" /* 2 */;
 
 let permissionOverwrites;
@@ -37,7 +37,7 @@ let obj = function _createStageChannelForEvent() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -148,7 +148,7 @@ obj = function _preStartEventActions() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -182,7 +182,7 @@ obj = function _preStartEventActions() {
             closure_131_1(closure_131_2[7])(null != entity_type, "could not find or create channel");
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp16) {
           c5 = 3;
           throw tmp16;

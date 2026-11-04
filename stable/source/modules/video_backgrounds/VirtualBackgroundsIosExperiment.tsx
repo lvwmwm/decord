@@ -1,9 +1,9 @@
-// Module ID: 5369
-// Function ID: 5370
+// Module ID: 5909
+// Function ID: 5910
 // Name: VirtualBackgroundsIosExperiment
 // Dependencies: [1455, 2]
 
-// Module 5369 (VirtualBackgroundsIosExperiment)
+// Module 5909 (VirtualBackgroundsIosExperiment)
 import ApexExperiment from "ApexExperiment" /* 1455 */;
 import size from "module_2" /* 2 */;
 

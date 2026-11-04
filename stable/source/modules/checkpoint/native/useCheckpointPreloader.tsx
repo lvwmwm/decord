@@ -1,22 +1,29 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 13069
+// Function ID: 13070
 // Name: useCheckpointPreloader
-// Dependencies: [32, 19, 12737, 5004, 5008, 5010, 12755, 12780, 12768, 12764, 12775, 12748, 12746, 558, 576, 12795, 1297, 2]
+// Dependencies: [32, 19, 12986, 5144, 5148, 5150, 13000, 8661, 13019, 13010, 13015, 13046, 8657, 8660, 8663, 8666, 8669, 8672, 12996, 12994, 558, 576, 13070, 1297, 2]
 
-// Module 12794 (useCheckpointPreloader)
+// Module 13069 (useCheckpointPreloader)
 import react2 from "react" /* 19 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import _modDef5004 from "module_5004" /* 5004 */;
-import _modDef5008 from "module_5008" /* 5008 */;
-import _modDef5010 from "module_5010" /* 5010 */;
-import CheckpointStore from "CheckpointStore" /* 12737 */;
-import _modDef12746 from "module_12746" /* 12746 */;
-import _modDef12748 from "module_12748" /* 12748 */;
-import _modDef12755 from "module_12755" /* 12755 */;
-import _modDef12764 from "module_12764" /* 12764 */;
-import _modDef12768 from "module_12768" /* 12768 */;
-import _modDef12775 from "module_12775" /* 12775 */;
-import _modDef12780 from "module_12780" /* 12780 */;
+import _modDef5144 from "module_5144" /* 5144 */;
+import _modDef5148 from "module_5148" /* 5148 */;
+import _modDef5150 from "module_5150" /* 5150 */;
+import _modDef8657 from "module_8657" /* 8657 */;
+import _modDef8660 from "module_8660" /* 8660 */;
+import _modDef8661 from "module_8661" /* 8661 */;
+import _modDef8663 from "module_8663" /* 8663 */;
+import _modDef8666 from "module_8666" /* 8666 */;
+import _modDef8669 from "module_8669" /* 8669 */;
+import _modDef8672 from "module_8672" /* 8672 */;
+import CheckpointStore from "CheckpointStore" /* 12986 */;
+import _modDef12994 from "module_12994" /* 12994 */;
+import _modDef12996 from "module_12996" /* 12996 */;
+import _modDef13000 from "module_13000" /* 13000 */;
+import _modDef13010 from "module_13010" /* 13010 */;
+import _modDef13015 from "module_13015" /* 13015 */;
+import _modDef13019 from "module_13019" /* 13019 */;
+import _modDef13046 from "module_13046" /* 13046 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -27,7 +34,7 @@ let _require, dependencyMap;
 
 const useEffect = react2.useEffect;
 const CheckpointFetchStates = CheckpointStore.CheckpointFetchStates;
-let items = [_modDef5004, _modDef5008, _modDef5010, _modDef12755, _modDef12780, _modDef12768, _modDef12764, _modDef12775, _modDef12748, _modDef12746];
+let items = [_modDef5144, _modDef5148, _modDef5150, _modDef13000, _modDef8661, _modDef13019, _modDef13010, _modDef13015, _modDef13046, _modDef8657, _modDef8660, _modDef8663, _modDef8666, _modDef8669, _modDef8672, _modDef12996, _modDef12994];
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useCheckpointPreloader() {
   let closure_0;
   let closure_1;

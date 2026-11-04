@@ -1,17 +1,17 @@
-// Module ID: 17269
-// Function ID: 17270
+// Module ID: 17603
+// Function ID: 17604
 // Name: useFavoritesGuildResetAction
-// Dependencies: [19, 5034, 1087, 558, 576, 2044, 2093, 1114, 10624, 1128, 3465, 2]
+// Dependencies: [19, 5034, 1087, 558, 576, 4831, 4880, 1114, 10876, 1128, 3444, 2]
 
-// Module 17269 (useFavoritesGuildResetAction)
+// Module 17603 (useFavoritesGuildResetAction)
 import react2 from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
 import router_utils from "router_utils" /* 1114 */;
 import intl3 from "intl" /* 1128 */;
-import UserSettings from "UserSettings" /* 2044 */;
-import FavoritesUtils from "FavoritesUtils" /* 2093 */;
-import _modDef3465 from "module_3465" /* 3465 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 10624 */;
+import _modDef3444 from "module_3444" /* 3444 */;
+import UserSettings from "UserSettings" /* 4831 */;
+import FavoritesUtils from "FavoritesUtils" /* 4880 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 10876 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -45,9 +45,9 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   }
   if (cResult[1] === Symbol.for("react.memo_cache_sentinel")) {
     const intl = tmp(1128).intl;
-    const stringResult = intl.string(_modDef3465.YkET6R);
+    const stringResult = intl.string(_modDef3444.YkET6R);
     const intl2 = tmp(1128).intl;
-    const stringResult1 = intl2.string(_modDef3465.ZzcwNk);
+    const stringResult1 = intl2.string(_modDef3444.ZzcwNk);
     cResult[1] = stringResult;
     cResult[2] = stringResult1;
     tmp7 = stringResult1;
@@ -72,7 +72,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFavorit
   let intl2;
   const DeveloperMode = UserSettings.DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = { isAvailable: setting, label: intl.string(_modDef3465.YkET6R), subLabel: intl2.string(_modDef3465.ZzcwNk), perform: callback };
+  let obj = { isAvailable: setting, label: intl.string(_modDef3444.YkET6R), subLabel: intl2.string(_modDef3444.ZzcwNk), perform: callback };
   callback = react.useCallback(() => {
     const obj = FavoritesUtils;
     if (obj.isFavoritesGuildId(guildId.getGuildId())) {

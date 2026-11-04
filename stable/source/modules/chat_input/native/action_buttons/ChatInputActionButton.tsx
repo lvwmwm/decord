@@ -1,17 +1,17 @@
-// Module ID: 12330
-// Function ID: 12331
+// Module ID: 12558
+// Function ID: 12559
 // Name: ChatInputActionButton
-// Dependencies: [19, 17, 21, 5191, 587, 558, 576, 4913, 6462, 2]
+// Dependencies: [19, 17, 21, 5003, 587, 558, 576, 5284, 6940, 2]
 
-// Module 12330 (ChatInputActionButton)
+// Module 12558 (ChatInputActionButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4913 */;
-import Pressables from "Pressables" /* 6462 */;
+import useToken from "useToken" /* 5284 */;
+import Pressables from "Pressables" /* 6940 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

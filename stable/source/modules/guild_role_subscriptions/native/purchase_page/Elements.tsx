@@ -1,23 +1,23 @@
-// Module ID: 17692
-// Function ID: 17693
+// Module ID: 18031
+// Function ID: 18032
 // Name: Elements
-// Dependencies: [32, 109, 19, 17, 4869, 21, 5191, 587, 558, 576, 5187, 1128, 1202, 17693, 6462, 9698, 16285, 573, 9701, 7216, 2]
+// Dependencies: [32, 109, 19, 17, 2057, 21, 5003, 587, 558, 576, 5266, 1128, 1202, 18032, 6940, 9829, 16618, 573, 9832, 7371, 2]
 
-// Module 17692 (Elements)
+// Module 18031 (Elements)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import Pressables from "Pressables" /* 6462 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9698 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16285 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17693 */;
+import Pressables from "Pressables" /* 6940 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9829 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16618 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18032 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4869 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2057 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -34,8 +34,8 @@ let tmp;
 let tmp4;
 let unpackModuleId;
 const intl2 = tmp(1128);
-const Text_Text = tmp(5187);
-const useStoreFrontPriceDefault = tmp4(9701);
+const Text_Text = tmp(5266);
+const useStoreFrontPriceDefault = tmp4(9832);
 let closure_4 = ["lineClamp"];
 ({ TouchableOpacity: metroImportAll, View: c9 } = react_native);
 ({ jsx: unpackModuleId, jsxs: closure_12 } = Fragment);
@@ -56,10 +56,11 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
   let tmp4;
   let tmp5;
   let tmp = require;
-  const obj = react2;
+  let obj = react2;
   const cResult = obj.c(20);
   if (cResult[0] !== lineClamp) {
     lineClamp = lineClamp.lineClamp;
+    let tmp6 = _objectWithoutProperties;
     const tmp8 = _objectWithoutProperties(lineClamp, closure_4);
     cResult[0] = lineClamp;
     cResult[1] = tmp8;
@@ -75,8 +76,8 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
     num4 = tmp5;
   }
   const tmp9 = closure_13();
-  [tmp11, closure_129_1] = react.useState(false);
-  _slicedToArray(react.useState(false), 2);
+  [tmp11, closure_129_1] = _slicedToArray(react.useState(false), 2);
+  const tmp10 = _slicedToArray(react.useState(false), 2);
   [first, dependencyMap] = react.useState(false);
   closure_4 = react.useRef(false);
   if (cResult[3] !== first) {
@@ -126,14 +127,14 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
           }
         }
       }
-      const obj2 = { lineClamp: tmp20, onTextLayout: tmp21 };
+      let obj2 = { lineClamp: tmp20, onTextLayout: tmp21 };
       const Text2 = Text_Text.Text;
       const merged = Object.assign(tmp4);
+      const tmp27 = unpackModuleId(Text2, obj2);
       cResult[11] = tmp4;
       cResult[12] = tmp20;
       cResult[13] = tmp21;
-      cResult[14] = unpackModuleId(Text2, obj2);
-      const tmp27 = unpackModuleId(Text2, obj2);
+      cResult[14] = tmp27;
     }
   }
   let tmp17Result = first;
@@ -146,7 +147,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function TruncatedTex
         }
       }
     }
-    const obj3 = { style: tmp9.toggleTruncateButton, children: tmp17(Text, obj4) };
+    let obj3 = { style: tmp9.toggleTruncateButton, children: tmp17(Text, obj4) };
     Text = Text_Text.Text;
     const string = intl2.intl.string;
     const t = intl2.t;
@@ -362,7 +363,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
       const _HermesInternal = HermesInternal;
       str = "" + tmp11 + "/mo.";
     }
-    const tmpResult2 = first(7216);
+    const tmpResult2 = first(7371);
     const formatPriceResult = tmpResult2.formatPrice(price.amount, price.currency);
     cResult[3] = price.amount;
     cResult[4] = price.currency;
@@ -384,7 +385,7 @@ let tmp7 = ReactCompilerGating.isReactCompilerEnabled() ? (function useFormatted
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7216);
+    const tmp3Result = tmp3(7371);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

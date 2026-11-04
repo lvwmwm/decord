@@ -1,11 +1,11 @@
-// Module ID: 9981
-// Function ID: 9982
+// Module ID: 10110
+// Function ID: 10111
 // Name: SavedMessagesTypes
-// Dependencies: [5534, 2]
+// Dependencies: [6044, 2]
 // Exports: savedMessageCreateObjectToClient, savedMessageDataToClient, savedMessageDeleteObjectToClient
 
-// Module 9981 (SavedMessagesTypes)
-import MessageRecordUtils from "MessageRecordUtils" /* 5534 */;
+// Module 10110 (SavedMessagesTypes)
+import MessageRecordUtils from "MessageRecordUtils" /* 6044 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/saved_messages/SavedMessagesTypes.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 15216
-// Function ID: 15217
+// Module ID: 15471
+// Function ID: 15472
 // Name: fetchExperiments
 // Dependencies: [1087, 1297, 2]
 // Exports: fetchExperiments
 
-// Module 15216 (fetchExperiments)
+// Module 15471 (fetchExperiments)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import size from "module_2" /* 2 */;

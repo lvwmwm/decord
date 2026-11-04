@@ -1,15 +1,15 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 18208
+// Function ID: 18209
 // Name: MessagesScreen
-// Dependencies: [19, 12997, 9614, 21, 17850, 504, 17777, 17852, 17828, 17851, 17867, 17856, 17843, 17784, 2]
+// Dependencies: [19, 13269, 9746, 21, 18192, 504, 18120, 18194, 18171, 18193, 18209, 18198, 18185, 18127, 18210, 2]
 
-// Module 17866 (MessagesScreen)
+// Module 18208 (MessagesScreen)
 import Fragment from "Fragment" /* 21 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 17828 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 17852 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 18171 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 18194 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 12997 */;
-import SearchConstants from "SearchConstants" /* 9614 */;
+import SearchQueryStore from "SearchQueryStore" /* 13269 */;
+import SearchConstants from "SearchConstants" /* 9746 */;
 import size from "module_2" /* 2 */;
 
 let Pins;
@@ -116,7 +116,7 @@ const memoResult = react.memo(function MessagesScreen(searchContext) {
   const tmpResult4 = tmp(stateFromStores[12]);
   const contentContainerStyles = tmpResult4.useContentContainerStyles();
   searchMessages(stateFromStores[7]);
-  return <tmp14 data={memo1} searchContext={searchContext} tab={tab} isFocused={isFocused} contentContainerStyle={contentContainerStyles.messagesContentContainer} ItemSeparatorComponent={tmp(stateFromStores[13]).MessageVerticalSeparator} isFirstPageLoading={isFirstPageLoading} isNextPageLoading={isNextPageLoading} keywordResultCount={length} smartSearchStatus={status} />;
+  return <tmp14 data={memo1} searchContext={searchContext} tab={tab} isFocused={isFocused} contentContainerStyle={contentContainerStyles.messagesContentContainer} ItemSeparatorComponent={tmp(stateFromStores[13]).MessageVerticalSeparator} viewabilityConfigCallbackPairs={tmp(stateFromStores[14]).smartSearchViewabilityConfig} isFirstPageLoading={isFirstPageLoading} isNextPageLoading={isNextPageLoading} keywordResultCount={length} smartSearchStatus={status} />;
 });
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/MessagesScreen.tsx");
 

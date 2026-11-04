@@ -1,21 +1,21 @@
-// Module ID: 15863
-// Function ID: 15864
+// Module ID: 16143
+// Function ID: 16144
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 7528, 7295, 558, 576, 8007, 15864, 15867, 1211, 7276, 6961, 8005, 504, 7527, 7301, 2]
+// Dependencies: [5, 19, 7680, 7448, 558, 576, 8159, 16144, 16147, 1211, 7430, 7123, 8157, 504, 7679, 7454, 2]
 // Exports: useIsParentallyControlled
 
-// Module 15863 (useParentalControlSettings)
+// Module 16143 (useParentalControlSettings)
 import react2 from "react" /* 576 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7276 */;
-import Constants from "Constants" /* 7295 */;
-import useUserLinks from "useUserLinks" /* 8005 */;
-import useSelectedTeen from "useSelectedTeen" /* 8007 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15864 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15867 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7430 */;
+import Constants from "Constants" /* 7448 */;
+import useUserLinks from "useUserLinks" /* 8157 */;
+import useSelectedTeen from "useSelectedTeen" /* 8159 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16144 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16147 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7528 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7680 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 let _require, c2, c5;
 
 let tmp;
-const UserSettingsUtils = tmp(6961);
+const UserSettingsUtils = tmp(7123);
 const SafetyToastType = Constants.SafetyToastType;
 let ReactCompilerGating = ReactCompilerGating_mod;
 let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useParentalControlledExplicitContentSettings() {
@@ -314,9 +314,9 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function useAllowFr
   return tmp7.mutualGuilds && !tmp7.all;
 }) : (function useAllowFriendsFromMutualGuildsOnlyForTeen() {
   let controlledSetting;
-  let obj = controlledSetting(8007);
+  let obj = controlledSetting(8159);
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(15864).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(16144).ParentalControlledFriendSourceFlags;
   let id;
   const useControlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting;
   if (selectedTeen != null) {
@@ -400,7 +400,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpda
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -454,7 +454,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpda
           c4 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp15) {
         let closure_3 = tmp15;
         if (0 === c4) {
@@ -491,7 +491,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpda
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -545,7 +545,7 @@ let closure_8 = ReactCompilerGating.isReactCompilerEnabled() ? (function useUpda
           c4 = 0;
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp15) {
         let closure_3 = tmp15;
         if (0 === c4) {

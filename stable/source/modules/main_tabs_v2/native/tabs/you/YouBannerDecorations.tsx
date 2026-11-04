@@ -1,28 +1,28 @@
-// Module ID: 9419
-// Function ID: 9420
+// Module ID: 9550
+// Function ID: 9551
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2133, 1392, 2065, 1394, 21, 1385, 587, 5191, 558, 9420, 7438, 5033, 2052, 1128, 504, 8584, 8627, 8638, 5065, 683, 4864, 9462, 9468, 6356, 9469, 9470, 6231, 5155, 13925, 2002, 13926, 12158, 3883, 13929, 13931, 9327, 7368, 13928, 5491, 2]
+// Dependencies: [19, 17, 2069, 1392, 4852, 1394, 21, 1385, 587, 5003, 558, 9551, 7591, 5033, 4839, 1128, 504, 8707, 8750, 8761, 5010, 683, 2053, 9595, 9597, 6840, 9598, 9599, 6745, 5242, 14185, 2002, 14186, 12377, 3862, 14189, 14191, 9457, 7520, 14188, 5290, 2]
 // Exports: getFloatingNavBottomMargin
 
-// Module 9419 (YouBannerDecorations)
+// Module 9550 (YouBannerDecorations)
 import nativeDefault from "native" /* 587 */;
 import _modDef683 from "module_683" /* 683 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import dismissible_content from "dismissible_content" /* 2052 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 2065 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2133 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2069 */;
+import dismissible_content from "dismissible_content" /* 4839 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4852 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5033 */;
-import QuestTypes from "QuestTypes" /* 6231 */;
-import useTrialOffer from "useTrialOffer" /* 7438 */;
-import PromotionsHooks from "PromotionsHooks" /* 9420 */;
-import tracking_Tracking from "tracking/Tracking" /* 9469 */;
-import QuestUtils from "QuestUtils" /* 9470 */;
+import QuestTypes from "QuestTypes" /* 6745 */;
+import useTrialOffer from "useTrialOffer" /* 7591 */;
+import PromotionsHooks from "PromotionsHooks" /* 9551 */;
+import tracking_Tracking from "tracking/Tracking" /* 9598 */;
+import QuestUtils from "QuestUtils" /* 9599 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -206,11 +206,11 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
     let tmp5 = currentUser;
     if (tmp5) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(2052).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4839).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
     if (tmp5) {
       const tmpResult2 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(2052).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4839).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];
@@ -254,7 +254,7 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
     tmp29Result = tmp29(tmp5Result6, obj5, "nitro");
   }
   items5[3] = tmp29Result;
-  const obj6 = { ref: settingsButtonRef, IconComponent: navigateToSettings(gradientSecondaryBackground[38]).SettingsIcon, accessibilityLabel: intl5.string(navigateToSettings(gradientSecondaryBackground[15]).t["3D5yo/"]), onPress: callback, showRedDot: tmp14 };
+  const obj6 = { ref: settingsButtonRef, IconComponent: navigateToSettings(gradientSecondaryBackground[38]).SettingsIcon, accessibilityLabel: intl5.string(navigateToSettings(gradientSecondaryBackground[15]).t["3D5yo/"]), onPress: callback, showRedDot: tmp14, testID: "you_tab_settings_button" };
   const tmp5Result7 = tmp5(gradientSecondaryBackground[32]);
   intl5 = tmp2(tmp3[15]).intl;
   items5[4] = closure_10(tmp5Result7, obj6, "settings");

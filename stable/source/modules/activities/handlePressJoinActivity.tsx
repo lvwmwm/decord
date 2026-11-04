@@ -1,22 +1,22 @@
-// Module ID: 11318
-// Function ID: 11319
+// Module ID: 11490
+// Function ID: 11491
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2024, 2068, 2090, 4845, 1392, 5212, 2067, 11315, 11273, 5399, 1128, 6357, 6180, 11247, 11223, 2]
+// Dependencies: [5, 2024, 4855, 4877, 4935, 1392, 5662, 4854, 11487, 11448, 5940, 1128, 6841, 6694, 11418, 11395, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 11318 (handlePressJoinActivity)
+// Module 11490 (handlePressJoinActivity)
 import intl11 from "intl" /* 1128 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5399 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11273 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11315 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5940 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11448 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11487 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import UserStore from "UserStore" /* 1392 */;
-import VoiceStateStore from "VoiceStateStore" /* 5212 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2067 */;
+import VoiceStateStore from "VoiceStateStore" /* 5662 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4854 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;
@@ -182,7 +182,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             try {
@@ -211,7 +211,7 @@ let obj = function _maybeJoinEmbeddedActivity() {
                 return obj;
               }
               c0 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } catch (tmp12) {
               c0 = 3;
               throw tmp12;

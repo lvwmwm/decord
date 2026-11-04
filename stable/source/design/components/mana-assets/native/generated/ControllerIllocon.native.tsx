@@ -1,28 +1,28 @@
-// Module ID: 13381
-// Function ID: 13382
+// Module ID: 13652
+// Function ID: 13653
 // Name: ControllerIllocon
-// Dependencies: [19, 21, 13382, 13383, 13384, 558, 576, 6550, 5128, 2]
+// Dependencies: [19, 21, 13653, 13654, 13655, 558, 576, 7027, 5701, 2]
 
-// Module 13381 (ControllerIllocon)
+// Module 13652 (ControllerIllocon)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import react_native from "react-native" /* 6550 */;
-import _modDef13382 from "module_13382" /* 13382 */;
-import _modDef13383 from "module_13383" /* 13383 */;
-import _modDef13384 from "module_13384" /* 13384 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import react_native from "react-native" /* 7027 */;
+import _modDef13653 from "module_13653" /* 13653 */;
+import _modDef13654 from "module_13654" /* 13654 */;
+import _modDef13655 from "module_13655" /* 13655 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13382 };
+let obj2 = { uri: _modDef13653 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13383 };
-({ uri: _modDef13383 });
-obj[3] = { uri: _modDef13384 };
-({ uri: _modDef13384 });
+obj[2] = { uri: _modDef13654 };
+({ uri: _modDef13654 });
+obj[3] = { uri: _modDef13655 };
+({ uri: _modDef13655 });
 const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ControllerIllocon(arg0) {
   let accessibilityLabel;
   let accessible;
@@ -90,7 +90,7 @@ const tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function Controller
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(6550);
+  obj2 = num(7027);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 });
 let size = size_mod;

@@ -29,8 +29,8 @@ function isPremium(premiumType, arg1) {
   }
   return tmp;
 }
-function isPremiumExactly(stateFromStores, TIER_2) {
-  return null != stateFromStores && stateFromStores.premiumType === TIER_2;
+function isPremiumExactly(currentUser, TIER_2) {
+  return null != currentUser && currentUser.premiumType === TIER_2;
 }
 const PremiumTypeOrder = PremiumConstants.PremiumTypeOrder;
 const result = size.fileFinishedImporting("utils/PremiumTypeUtils.tsx");

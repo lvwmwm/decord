@@ -1,12 +1,12 @@
-// Module ID: 7285
-// Function ID: 7286
+// Module ID: 7438
+// Function ID: 7439
 // Name: useGame
-// Dependencies: [5, 19, 2022, 1087, 504, 1104, 7286, 558, 576, 2]
+// Dependencies: [5, 19, 2022, 1087, 504, 1104, 7439, 558, 576, 2]
 
-// Module 7285 (useGame)
+// Module 7438 (useGame)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import GameActionCreators from "GameActionCreators" /* 7286 */;
+import GameActionCreators from "GameActionCreators" /* 7439 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2022 */;
@@ -21,15 +21,15 @@ const QueryIds = Constants.QueryIds;
 let obj = {
   getQueryId: QueryIds.GAME,
   failureStaleAfter: 15 * DurationsDefault.Seconds.SECOND,
-  get(gameId) {
+  get(item) {
     let tmp = null;
-    if (null != gameId) {
+    if (null != item) {
       let NO_DATA;
       const obj = GameStore;
-      if (GameStore.hasNoData(gameId)) {
+      if (GameStore.hasNoData(item)) {
         NO_DATA = require("get initialized").NO_DATA;
       } else {
-        NO_DATA = obj.getGame(gameId);
+        NO_DATA = obj.getGame(item);
         if (NO_DATA == null) {
           NO_DATA = null;
         }
@@ -73,7 +73,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+352" };
     }
   } else {
     try {
@@ -103,7 +103,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       }
       c1 = 3;
-      return { value: "IconComponent", done: null };
+      return { value: "IconComponent", done: "+352" };
     } catch (tmp8) {
       c1 = 3;
       throw tmp8;

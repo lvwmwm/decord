@@ -1,19 +1,19 @@
-// Module ID: 6561
-// Function ID: 6562
+// Module ID: 7038
+// Function ID: 7039
 // Name: ConfirmEmailCode
-// Dependencies: [5, 32, 19, 17, 1392, 6477, 21, 5191, 587, 504, 5892, 5187, 1128, 6562, 6900, 4904, 5479, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 6955, 21, 5003, 587, 504, 6407, 5266, 1128, 7039, 7066, 5695, 5276, 2]
 // Exports: default
 
-// Module 6561 (ConfirmEmailCode)
+// Module 7038 (ConfirmEmailCode)
 import nativeDefault from "native" /* 587 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1392 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 6477 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 6955 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, c4;
@@ -87,7 +87,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -148,7 +148,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
           c3 = 0;
           closure_129_5(false);
           _undefined = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp39) {
         onResend = tmp39;
@@ -197,7 +197,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             let c3;
@@ -251,7 +251,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
                   c3 = 0;
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp29) {
               onResend = tmp29;

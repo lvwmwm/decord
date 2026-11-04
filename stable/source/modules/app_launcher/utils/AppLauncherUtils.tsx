@@ -1,30 +1,30 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9681
+// Function ID: 9682
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9549, 2024, 11911, 1087, 5503, 5185, 1128, 2032, 6297, 6359, 11850, 1384, 2000, 7513, 10101, 7635, 7445, 5399, 1417, 10949, 11948, 7509, 11262, 2]
+// Dependencies: [109, 5, 9682, 2024, 12111, 1087, 6015, 5008, 1128, 2031, 5658, 6843, 5665, 1384, 2000, 5666, 10230, 7787, 7598, 5940, 1417, 11201, 12147, 7662, 11437, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isActivityApp, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 9548 (AppLauncherUtils)
+// Module 9681 (AppLauncherUtils)
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
 import Server from "Server" /* 2000 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2032 */;
-import MessageConstants from "MessageConstants" /* 5185 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6359 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7509 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10949 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11262 */;
-import getPlatformDefault from "getPlatform" /* 11850 */;
-import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 11948 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2031 */;
+import MessageConstants from "MessageConstants" /* 5008 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
+import getPlatformDefault from "getPlatform" /* 5665 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6843 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7662 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 11201 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 11437 */;
+import ApplicationDirectoryCollectionItemType from "ApplicationDirectoryCollectionItemType" /* 12147 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9549 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9682 */;
 import ApplicationRecord from "ApplicationRecord" /* 2024 */;
-import AppLauncherStore from "AppLauncherStore" /* 11911 */;
+import AppLauncherStore from "AppLauncherStore" /* 12111 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -187,7 +187,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -263,7 +263,7 @@ export const executeAppLauncherCommand = function executeAppLauncherCommand(arg0
           }
           maxSizeCallback = 0;
           commandOrigin = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp37) {
         commandTargetId = tmp37;

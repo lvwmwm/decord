@@ -1,55 +1,55 @@
-// Module ID: 10864
-// Function ID: 10865
+// Module ID: 11116
+// Function ID: 11117
 // Name: useMobileTenureBadgeImages
-// Dependencies: [1394, 10865, 10866, 10867, 10868, 10869, 10870, 10871, 10872, 10873, 10874, 10875, 10876, 10877, 10878, 10879, 10880, 10881, 10882, 10883, 10884, 10885, 10886, 10887, 10888, 2]
+// Dependencies: [1394, 11117, 11118, 11119, 11120, 11121, 11122, 11123, 11124, 11125, 11126, 11127, 11128, 11129, 11130, 11131, 11132, 11133, 11134, 11135, 11136, 11137, 11138, 11139, 11140, 2]
 // Exports: getMobileTenureBadgeImages, useMobileTenureBadgeImages
 
-// Module 10864 (useMobileTenureBadgeImages)
+// Module 11116 (useMobileTenureBadgeImages)
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10865 */;
-import _modDef10866 from "module_10866" /* 10866 */;
-import _modDef10867 from "module_10867" /* 10867 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10868 */;
-import _modDef10869 from "module_10869" /* 10869 */;
-import _modDef10870 from "module_10870" /* 10870 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10871 */;
-import _modDef10872 from "module_10872" /* 10872 */;
-import _modDef10873 from "module_10873" /* 10873 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10874 */;
-import _modDef10875 from "module_10875" /* 10875 */;
-import _modDef10876 from "module_10876" /* 10876 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10877 */;
-import _modDef10878 from "module_10878" /* 10878 */;
-import _modDef10879 from "module_10879" /* 10879 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 10880 */;
-import _modDef10881 from "module_10881" /* 10881 */;
-import _modDef10882 from "module_10882" /* 10882 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 10883 */;
-import _modDef10884 from "module_10884" /* 10884 */;
-import _modDef10885 from "module_10885" /* 10885 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 10886 */;
-import _modDef10887 from "module_10887" /* 10887 */;
-import _modDef10888 from "module_10888" /* 10888 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11117 */;
+import _modDef11118 from "module_11118" /* 11118 */;
+import _modDef11119 from "module_11119" /* 11119 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11120 */;
+import _modDef11121 from "module_11121" /* 11121 */;
+import _modDef11122 from "module_11122" /* 11122 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11123 */;
+import _modDef11124 from "module_11124" /* 11124 */;
+import _modDef11125 from "module_11125" /* 11125 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11126 */;
+import _modDef11127 from "module_11127" /* 11127 */;
+import _modDef11128 from "module_11128" /* 11128 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11129 */;
+import _modDef11130 from "module_11130" /* 11130 */;
+import _modDef11131 from "module_11131" /* 11131 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 11132 */;
+import _modDef11133 from "module_11133" /* 11133 */;
+import _modDef11134 from "module_11134" /* 11134 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 11135 */;
+import _modDef11136 from "module_11136" /* 11136 */;
+import _modDef11137 from "module_11137" /* 11137 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 11138 */;
+import _modDef11139 from "module_11139" /* 11139 */;
+import _modDef11140 from "module_11140" /* 11140 */;
 import size from "module_2" /* 2 */;
 
 const TieredTenureBadge = PremiumConstants.TieredTenureBadge;
 const obj = {};
-obj[TieredTenureBadge.PREMIUM_TENURE_1_MONTH] = { small: AssetRegistryDefault, medium: _modDef10866, large: _modDef10867 };
-({ small: AssetRegistryDefault, medium: _modDef10866, large: _modDef10867 });
-obj[TieredTenureBadge.PREMIUM_TENURE_3_MONTH] = { small: AssetRegistryDefault2, medium: _modDef10869, large: _modDef10870 };
-({ small: AssetRegistryDefault2, medium: _modDef10869, large: _modDef10870 });
-obj[TieredTenureBadge.PREMIUM_TENURE_6_MONTH] = { small: AssetRegistryDefault3, medium: _modDef10872, large: _modDef10873 };
-({ small: AssetRegistryDefault3, medium: _modDef10872, large: _modDef10873 });
-obj[TieredTenureBadge.PREMIUM_TENURE_12_MONTH] = { small: AssetRegistryDefault4, medium: _modDef10875, large: _modDef10876 };
-({ small: AssetRegistryDefault4, medium: _modDef10875, large: _modDef10876 });
-obj[TieredTenureBadge.PREMIUM_TENURE_24_MONTH] = { small: AssetRegistryDefault5, medium: _modDef10878, large: _modDef10879 };
-({ small: AssetRegistryDefault5, medium: _modDef10878, large: _modDef10879 });
-obj[TieredTenureBadge.PREMIUM_TENURE_36_MONTH] = { small: AssetRegistryDefault6, medium: _modDef10881, large: _modDef10882 };
-({ small: AssetRegistryDefault6, medium: _modDef10881, large: _modDef10882 });
-obj[TieredTenureBadge.PREMIUM_TENURE_60_MONTH] = { small: AssetRegistryDefault7, medium: _modDef10884, large: _modDef10885 };
-({ small: AssetRegistryDefault7, medium: _modDef10884, large: _modDef10885 });
-obj[TieredTenureBadge.PREMIUM_TENURE_72_MONTH] = { small: AssetRegistryDefault8, medium: _modDef10887, large: _modDef10888 };
-({ small: AssetRegistryDefault8, medium: _modDef10887, large: _modDef10888 });
+obj[TieredTenureBadge.PREMIUM_TENURE_1_MONTH] = { small: AssetRegistryDefault, medium: _modDef11118, large: _modDef11119 };
+({ small: AssetRegistryDefault, medium: _modDef11118, large: _modDef11119 });
+obj[TieredTenureBadge.PREMIUM_TENURE_3_MONTH] = { small: AssetRegistryDefault2, medium: _modDef11121, large: _modDef11122 };
+({ small: AssetRegistryDefault2, medium: _modDef11121, large: _modDef11122 });
+obj[TieredTenureBadge.PREMIUM_TENURE_6_MONTH] = { small: AssetRegistryDefault3, medium: _modDef11124, large: _modDef11125 };
+({ small: AssetRegistryDefault3, medium: _modDef11124, large: _modDef11125 });
+obj[TieredTenureBadge.PREMIUM_TENURE_12_MONTH] = { small: AssetRegistryDefault4, medium: _modDef11127, large: _modDef11128 };
+({ small: AssetRegistryDefault4, medium: _modDef11127, large: _modDef11128 });
+obj[TieredTenureBadge.PREMIUM_TENURE_24_MONTH] = { small: AssetRegistryDefault5, medium: _modDef11130, large: _modDef11131 };
+({ small: AssetRegistryDefault5, medium: _modDef11130, large: _modDef11131 });
+obj[TieredTenureBadge.PREMIUM_TENURE_36_MONTH] = { small: AssetRegistryDefault6, medium: _modDef11133, large: _modDef11134 };
+({ small: AssetRegistryDefault6, medium: _modDef11133, large: _modDef11134 });
+obj[TieredTenureBadge.PREMIUM_TENURE_60_MONTH] = { small: AssetRegistryDefault7, medium: _modDef11136, large: _modDef11137 };
+({ small: AssetRegistryDefault7, medium: _modDef11136, large: _modDef11137 });
+obj[TieredTenureBadge.PREMIUM_TENURE_72_MONTH] = { small: AssetRegistryDefault8, medium: _modDef11139, large: _modDef11140 };
+({ small: AssetRegistryDefault8, medium: _modDef11139, large: _modDef11140 });
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/native/hooks/useMobileTenureBadgeImages.tsx");
 
 export const useMobileTenureBadgeImages = function useMobileTenureBadgeImages(id) {

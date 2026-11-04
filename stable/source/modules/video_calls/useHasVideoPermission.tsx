@@ -1,13 +1,13 @@
-// Module ID: 11435
-// Function ID: 11436
+// Module ID: 11620
+// Function ID: 11621
 // Name: useHasVideoPermission
-// Dependencies: [2090, 4845, 558, 576, 6163, 504, 2]
+// Dependencies: [4877, 4935, 558, 576, 6684, 504, 2]
 // Exports: getVideoPermission
 
-// Module 11435 (useHasVideoPermission)
-import StreamPermissionUtils from "StreamPermissionUtils" /* 6163 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+// Module 11620 (useHasVideoPermission)
+import StreamPermissionUtils from "StreamPermissionUtils" /* 6684 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,25 @@
-// Module ID: 17458
-// Function ID: 17459
+// Module ID: 17797
+// Function ID: 17798
 // Name: GuildsBarFavorites
-// Dependencies: [19, 2071, 1087, 21, 558, 576, 17441, 10625, 504, 17459, 17444, 17456, 17266, 1128, 17460, 587, 9851, 2]
+// Dependencies: [19, 4858, 1087, 21, 558, 576, 17780, 10877, 504, 17798, 17783, 17795, 17600, 1128, 17799, 587, 9981, 2]
 
-// Module 17458 (GuildsBarFavorites)
+// Module 17797 (GuildsBarFavorites)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl3 from "intl" /* 1128 */;
-import StarIcon2 from "StarIcon" /* 9851 */;
-import FavoritesHooks from "FavoritesHooks" /* 10625 */;
-import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17266 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17441 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17444 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17456 */;
-import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17459 */;
-import HomeDrawerFavoritesRow from "HomeDrawerFavoritesRow" /* 17460 */;
+import StarIcon2 from "StarIcon" /* 9981 */;
+import FavoritesHooks from "FavoritesHooks" /* 10877 */;
+import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17600 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17780 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17783 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17795 */;
+import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17798 */;
+import HomeDrawerFavoritesRow from "HomeDrawerFavoritesRow" /* 17799 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2071 */;
+import FavoriteStore from "FavoriteStore" /* 4858 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -207,7 +207,7 @@ const memoResult = react.memo(ReactCompilerGating.isReactCompilerEnabled() ? (fu
   let intl = intl3.intl;
   const StarIcon = StarIcon2.StarIcon;
   const colors = nativeDefault.colors;
-  return <tmp9 selected={isFavoritesGuildSelected} circle={false} unread={unread} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} overState="l" config={memo} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} label={intl.string(intl3.t.wMWyci)} externalChildren={badge2} expandedChildren="LOAD_PINNED_MESSAGES_SUCCESS">{"SEARCH_MESSAGES_SUCCESS"}</tmp9>;
+  return <tmp9 selected={isFavoritesGuildSelected} circle={false} unread={unread} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} overState="l" config={memo} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} label={intl.string(intl3.t.wMWyci)} externalChildren={badge2} expandedChildren={null}>{null}</tmp9>;
 }));
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFavorites.tsx");
 

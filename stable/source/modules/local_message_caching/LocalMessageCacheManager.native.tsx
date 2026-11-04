@@ -1,32 +1,32 @@
-// Module ID: 15588
-// Function ID: 15589
+// Module ID: 15851
+// Function ID: 15852
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4856, 502, 2068, 5532, 1087, 15589, 3, 1104, 510, 4797, 4888, 10111, 7445, 11200, 13754, 2002, 2004, 584, 6008, 9618, 2]
+// Dependencies: [5, 32, 4946, 502, 4855, 6042, 1087, 15852, 3, 1104, 510, 2049, 4828, 10239, 7598, 11372, 14015, 2002, 2004, 584, 6523, 9749, 2]
 
-// Module 15588 (LocalMessageCacheManager)
+// Module 15851 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import DateUtils from "DateUtils" /* 4888 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7445 */;
-import createMessageDefault from "createMessage" /* 10111 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import DateUtils from "DateUtils" /* 4828 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7598 */;
+import createMessageDefault from "createMessage" /* 10239 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4856 */;
+import MessageRecord from "MessageRecord" /* 4946 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import MessageStore from "MessageStore" /* 5532 */;
-import MutexUtils from "MutexUtils" /* 15589 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import MessageStore from "MessageStore" /* 6042 */;
+import MutexUtils from "MutexUtils" /* 15852 */;
 import LifecycleManager from "LifecycleManager" /* 2004 */;
 import size from "module_2" /* 2 */;
 
 let _self, channel, closure_8, set;
 
 let tmp;
-const UploadActionCreatorsDefault = tmp(11200);
+const UploadActionCreatorsDefault = tmp(11372);
 function _getKeyForFileId(arg0) {
   const entries = Object.entries(_getMessages());
   obj = entries[Symbol.iterator]();
@@ -53,8 +53,8 @@ function getAllCachedMessages() {
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
-    const tmp4 = _modDef4797();
-    const tmp5 = _modDef4797(arg0);
+    const tmp4 = _modDef2049();
+    const tmp5 = _modDef2049(arg0);
     obj = DateUtils;
     return obj.isWithinInterval(tmp4, tmp5, arg1);
   } else {
@@ -132,7 +132,7 @@ obj = function _rehydrateFailedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -192,7 +192,7 @@ obj = function _rehydrateFailedMessages() {
                 closure_1 = keys;
               }
               c9 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else if (arg0 === 1) {
             c9 = 3;
@@ -349,7 +349,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c7;
@@ -405,7 +405,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                         let obj2 = { value, done: true };
                         return obj2;
                       } else {
-                        return { value: "IconComponent", done: null };
+                        return { value: "IconComponent", done: "+352" };
                       }
                     } else {
                       try {
@@ -427,7 +427,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                             }, 0);
                           }
                           c1 = 3;
-                          return { value: "IconComponent", done: null };
+                          return { value: "IconComponent", done: "+352" };
                         }
                       } catch (tmp8) {
                         c1 = 3;
@@ -440,7 +440,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   applyArgumentsResult = values[Symbol.iterator]();
                   if (applyArgumentsResult === undefined) {
                     c10 = 3;
-                    return { value: "IconComponent", done: null };
+                    return { value: "IconComponent", done: "+352" };
                   } else {
                     c7 = 1;
                     _undefined = tmp29;
@@ -700,7 +700,7 @@ class LocalMessageCacheManager extends LifecycleManager {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -729,7 +729,7 @@ class LocalMessageCacheManager extends LifecycleManager {
               return obj;
             }
             c1 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp8) {
             c1 = 3;
             throw tmp8;
@@ -981,7 +981,7 @@ class LocalMessageCacheManager extends LifecycleManager {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {
@@ -1036,7 +1036,7 @@ class LocalMessageCacheManager extends LifecycleManager {
                   let obj4 = values(closure_2[19]);
                   let subscription1 = obj4.subscribe("CACHE_LOADED", closure_132_0.handleCacheLoaded);
                   c8 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 } else {
                   let c6 = 1;
                   values = tmp10;

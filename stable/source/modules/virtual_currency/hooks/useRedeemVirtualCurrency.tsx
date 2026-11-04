@@ -1,12 +1,12 @@
-// Module ID: 9358
-// Function ID: 9359
+// Module ID: 9488
+// Function ID: 9489
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 9359, 9360, 7221, 9355, 1128, 2]
+// Dependencies: [5, 32, 19, 9489, 9490, 7376, 9485, 1128, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9358 (useRedeemVirtualCurrency)
+// Module 9488 (useRedeemVirtualCurrency)
 import intl3 from "intl" /* 1128 */;
-import useOrderSigning from "useOrderSigning" /* 9360 */;
+import useOrderSigning from "useOrderSigning" /* 9490 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -33,7 +33,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   [error, _asyncToGenerator] = _slicedToArray(enabled(null), 2);
   const tmp5 = _slicedToArray(enabled(null), 2);
   [isSubmitting, _slicedToArray] = enabled(false);
-  let obj = entitlements(9359);
+  let obj = entitlements(9489);
   enabled = obj.useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {
@@ -70,7 +70,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -151,7 +151,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
               tmp(false);
             }
             c8 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp47) {
           closure_5 = tmp47;

@@ -1,14 +1,14 @@
-// Module ID: 13587
-// Function ID: 13588
+// Module ID: 13841
+// Function ID: 13842
 // Name: SavedMessagesActions
-// Dependencies: [5, 9980, 1087, 1297, 9981, 584, 2]
+// Dependencies: [5, 10109, 1087, 1297, 10110, 584, 2]
 // Exports: deleteSavedMessage, fetchAndUpdateSavedMessages, fetchBookmarks, upsertSavedMessage
 
-// Module 13587 (SavedMessagesActions)
+// Module 13841 (SavedMessagesActions)
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 9980 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10109 */;
 import size from "module_2" /* 2 */;
 
 let bookmarksFetchState, c3, c4, c8, results;
@@ -28,7 +28,7 @@ let obj = function _upsertSavedMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -108,7 +108,7 @@ obj = function _fetchSavedMessages() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c2;
@@ -167,7 +167,7 @@ obj = function _fetchSavedMessages() {
             return obj10;
           } else {
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else if (arg0 === 1) {
           c4 = 3;

@@ -1,15 +1,15 @@
-// Module ID: 11058
-// Function ID: 11059
+// Module ID: 10819
+// Function ID: 10820
 // Name: ApplicationWidgetConfigActions
-// Dependencies: [5, 11059, 1087, 11060, 569, 1104, 584, 1297, 1257, 2]
+// Dependencies: [5, 10820, 1087, 10821, 569, 1104, 584, 1297, 1257, 2]
 // Exports: fetchDeveloperWidgetConfigs, fetchFeaturedWidgetConfigs, fetchWidgetConfigs
 
-// Module 11058 (ApplicationWidgetConfigActions)
+// Module 10819 (ApplicationWidgetConfigActions)
 import Constants from "Constants" /* 1087 */;
 import DurationsDefault from "Durations" /* 1104 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11059 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 11060 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 10820 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 10821 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Backoff from "Backoff" /* 569 */;
 import Dispatcher from "Dispatcher" /* 584 */;
@@ -46,7 +46,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -107,7 +107,7 @@ let obj = function _fetchFeaturedWidgetConfigsFromApi() {
           closure_129_9.succeed();
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -137,7 +137,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -189,7 +189,7 @@ obj = function _fetchDeveloperWidgetConfigsFromApi() {
           obj.dispatch(obj10);
           c3 = 0;
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp24) {
         closure_2 = tmp24;
@@ -219,7 +219,7 @@ obj = function _fetchWidgetConfigsFromApi() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -272,7 +272,7 @@ obj = function _fetchWidgetConfigsFromApi() {
             dispatch(obj);
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp28) {
           closure_3 = tmp28;

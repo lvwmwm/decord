@@ -1,20 +1,20 @@
-// Module ID: 6446
-// Function ID: 6447
+// Module ID: 6925
+// Function ID: 6926
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 6428, 1087, 21, 5191, 4904, 1128, 558, 576, 6430, 5037, 6447, 504, 6448, 6402, 6449, 6899, 5479, 2]
+// Dependencies: [5, 32, 19, 17, 6907, 1087, 21, 5003, 5695, 1128, 558, 576, 6909, 5037, 5631, 504, 6926, 6881, 6927, 7065, 5276, 2]
 // Exports: default
 
-// Module 6446 (MemberVerificationForm)
+// Module 6925 (MemberVerificationForm)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1087 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
-import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6428 */;
-import useInitialValueDefault from "useInitialValue" /* 6447 */;
+import useInitialValueDefault from "useInitialValue" /* 5631 */;
+import MemberVerificationFormStore2 from "MemberVerificationFormStore" /* 6907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -50,7 +50,7 @@ let closure_13 = ReactCompilerGating.isReactCompilerEnabled() ? (function useReq
     if (tmp4 === phone) {
       tmp7 = cResult[2];
     }
-    return initialVerification(6447)(tmp7);
+    return initialVerification(5631)(tmp7);
   }
   cResult[0] = id.verificationLevel;
   let phone1;
@@ -418,7 +418,7 @@ export default function MemberVerificationForm(guild) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c4;
@@ -444,7 +444,7 @@ export default function MemberVerificationForm(guild) {
                 if (tmp33) {
                   showIncompleteToast();
                   c6 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 } else {
                   _undefined2(null);
                   _undefined(true);
@@ -517,7 +517,7 @@ export default function MemberVerificationForm(guild) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp49) {
           body = tmp49;
           if (0 === c4) {

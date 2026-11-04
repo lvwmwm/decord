@@ -1,14 +1,14 @@
-// Module ID: 13437
-// Function ID: 13438
+// Module ID: 13708
+// Function ID: 13709
 // Name: HubActionCreators
-// Dependencies: [5, 1087, 6194, 1275, 2080, 1297, 584, 2]
+// Dependencies: [5, 1087, 6708, 1275, 4867, 1297, 584, 2]
 
-// Module 13437 (HubActionCreators)
+// Module 13708 (HubActionCreators)
 import Constants from "Constants" /* 1087 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1275 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import TypeUtils from "TypeUtils" /* 2080 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6194 */;
+import TypeUtils from "TypeUtils" /* 4867 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6708 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -147,7 +147,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp29) {
           body = tmp29;
           if (0 === c3) {
@@ -179,7 +179,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -213,7 +213,7 @@ let obj = {
                 return obj7;
               } else {
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             }
           } else if (1 === constants) {

@@ -1,19 +1,19 @@
-// Module ID: 18599
-// Function ID: 18600
+// Module ID: 18941
+// Function ID: 18942
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8558, 1087, 21, 5191, 587, 558, 576, 1633, 504, 15611, 18581, 8567, 8648, 8035, 8562, 8564, 1128, 5187, 18590, 18578, 5479, 2]
+// Dependencies: [5, 32, 19, 17, 8681, 1087, 21, 5003, 587, 558, 576, 1633, 504, 15874, 18923, 8690, 8771, 8186, 8685, 8687, 1128, 5266, 18932, 18920, 5276, 2]
 
-// Module 18599 (RedesignAddAvatarModal)
+// Module 18941 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 18578 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 18920 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8558 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8681 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -146,7 +146,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddA
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -186,7 +186,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddA
                 tmp4(true);
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
             pendingImage = undefined;
             if (null != base64) {
@@ -581,7 +581,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddA
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -621,7 +621,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function RedesignAddA
                 closure_129_1(true);
               }
               c3 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
             pendingImage = undefined;
             if (null != base64) {

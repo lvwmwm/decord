@@ -1,11 +1,11 @@
-// Module ID: 10006
-// Function ID: 10007
+// Module ID: 10135
+// Function ID: 10136
 // Name: getPreCompressionFileSize
-// Dependencies: [5, 8035, 2]
+// Dependencies: [5, 8186, 2]
 // Exports: getPreCompressionFileSize
 
-// Module 10006 (getPreCompressionFileSize)
-import utils_UploadUtils from "utils/UploadUtils" /* 8035 */;
+// Module 10135 (getPreCompressionFileSize)
+import utils_UploadUtils from "utils/UploadUtils" /* 8186 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _getPreCompressionFileSize() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {

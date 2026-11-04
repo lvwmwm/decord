@@ -1,20 +1,20 @@
-// Module ID: 10816
-// Function ID: 10817
+// Module ID: 11068
+// Function ID: 11069
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 5540, 7530, 7538, 1087, 1394, 584, 5889, 6357, 7529, 5891, 4887, 1257, 1297, 10817, 10818, 2]
+// Dependencies: [5, 2045, 7682, 7690, 1087, 1394, 584, 6404, 6841, 7681, 6406, 4827, 1257, 1297, 11069, 11070, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 10816 (GiftCodeActionCreators)
+// Module 11068 (GiftCodeActionCreators)
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4887 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7538 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 10817 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 10818 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4827 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7690 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11069 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11070 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7530 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7682 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let obj = function _resolveGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -263,7 +263,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -314,7 +314,7 @@ obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp20) {
           closure_2 = tmp20;
@@ -379,7 +379,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -428,7 +428,7 @@ obj = {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp16) {
           closure_2 = tmp16;

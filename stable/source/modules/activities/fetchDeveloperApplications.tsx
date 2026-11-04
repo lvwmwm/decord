@@ -1,10 +1,10 @@
-// Module ID: 11051
-// Function ID: 11052
+// Module ID: 10812
+// Function ID: 10813
 // Name: fetchDeveloperApplications
 // Dependencies: [5, 2024, 1087, 584, 1297, 2]
 // Exports: fetchDeveloperApplications
 
-// Module 11051 (fetchDeveloperApplications)
+// Module 10812 (fetchDeveloperApplications)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
@@ -26,7 +26,7 @@ let obj = function _fetchDeveloperApplications() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -82,7 +82,7 @@ let obj = function _fetchDeveloperApplications() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp10) {
         applications = tmp10;

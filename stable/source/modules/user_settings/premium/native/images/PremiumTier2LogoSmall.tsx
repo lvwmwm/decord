@@ -1,21 +1,21 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14822
+// Function ID: 14823
 // Name: PremiumTier2LogoSmall
-// Dependencies: [19, 21, 558, 576, 4913, 587, 7843, 2]
+// Dependencies: [19, 21, 558, 576, 5284, 587, 7994, 2]
 
-// Module 14555 (PremiumTier2LogoSmall)
+// Module 14822 (PremiumTier2LogoSmall)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import useToken from "useToken" /* 4913 */;
+import useToken from "useToken" /* 5284 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const inlineStyles = tmp(7843);
-const inlineStylesDefault = tmp4(7843);
+const inlineStyles = tmp(7994);
+const inlineStylesDefault = tmp4(7994);
 const jsx = Fragment.jsx;
 const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumTier2LogoSmall(arg0) {
   let height;

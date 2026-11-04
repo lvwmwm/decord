@@ -1,15 +1,15 @@
-// Module ID: 12516
-// Function ID: 12517
+// Module ID: 12751
+// Function ID: 12752
 // Name: BundleUpdater
-// Dependencies: [5, 17, 1087, 3, 1384, 81, 2002, 6001, 1267, 5985, 2]
+// Dependencies: [5, 17, 1087, 3, 1384, 81, 2002, 6516, 1267, 6500, 2]
 
-// Module 12516 (BundleUpdater)
+// Module 12751 (BundleUpdater)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5985 */;
-import merged5 from "merged5" /* 6001 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6500 */;
+import merged5 from "merged5" /* 6516 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -68,7 +68,7 @@ class BundleUpdater {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ class BundleUpdater {
             });
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp15) {
           c3 = 3;
           throw tmp15;

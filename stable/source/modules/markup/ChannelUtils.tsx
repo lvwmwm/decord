@@ -1,11 +1,11 @@
-// Module ID: 5524
-// Function ID: 5525
+// Module ID: 6034
+// Function ID: 6035
 // Name: markup/ChannelUtils
-// Dependencies: [2072, 2]
+// Dependencies: [4859, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 5524 (markup/ChannelUtils)
-import ChannelRecord from "ChannelRecord" /* 2072 */;
+// Module 6034 (markup/ChannelUtils)
+import ChannelRecord from "ChannelRecord" /* 4859 */;
 import size from "module_2" /* 2 */;
 
 let _window;

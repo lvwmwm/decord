@@ -1,29 +1,29 @@
-// Module ID: 8964
-// Function ID: 8965
+// Module ID: 9091
+// Function ID: 9092
 // Name: InstantInviteActionSheet
-// Dependencies: [32, 19, 17, 2073, 8956, 2090, 4845, 7689, 1087, 21, 5191, 587, 558, 576, 8965, 1633, 7130, 7155, 7134, 5174, 504, 8966, 8955, 5155, 8577, 8967, 1211, 8969, 1128, 7117, 1202, 8990, 8994, 8996, 7016, 8987, 9033, 9034, 7118, 2]
+// Dependencies: [32, 19, 17, 4860, 9083, 4877, 4935, 7841, 1087, 21, 5003, 587, 558, 576, 9092, 1633, 7285, 7310, 7289, 5733, 504, 9093, 9082, 5242, 8700, 9094, 1211, 9096, 1128, 7280, 1202, 9117, 9121, 9123, 7177, 9114, 9160, 9161, 5297, 2]
 
-// Module 8964 (InstantInviteActionSheet)
+// Module 9091 (InstantInviteActionSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1211 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5174 */;
-import Constants2 from "Constants" /* 7689 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8955 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8965 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 8967 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5733 */;
+import Constants2 from "Constants" /* 7841 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9082 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9092 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 9094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import StageInstanceStore from "StageInstanceStore" /* 2073 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8956 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import StageInstanceStore from "StageInstanceStore" /* 4860 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 9083 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -99,7 +99,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Loadin
   }
   const obj5 = { children: items1 };
   items1 = [tmp8, tmp12, first];
-  const tmp17 = authStore3(syncedClientThemes, obj5);
+  const tmp17 = closure_15(syncedClientThemes, obj5);
   cResult[5] = tmp8;
   cResult[6] = tmp12;
   cResult[7] = tmp17;
@@ -123,7 +123,7 @@ let closure_17 = ReactCompilerGating.isReactCompilerEnabled() ? (function Loadin
   const obj4 = { style: tmp.placeholderLabel };
   items1[1] = tmp2(hasOwnProperty, obj4);
   items1[2] = items;
-  return authStore3(syncedClientThemes, obj2);
+  return closure_15(syncedClientThemes, obj2);
 });
 ReactCompilerGating = ReactCompilerGating_mod;
 let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInviteActionSheet(channel) {
@@ -185,32 +185,34 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
         if (cResult[8] === Symbol.for("react.memo_cache_sentinel")) {
           const tmp17 = CreateInviteModalStore;
           const items3 = [CreateInviteModalStore];
-          const fn = function x() {
-            return error.getError();
-          };
+          class U {
+            constructor() {
+              return error.getError();
+            }
+          }
           cResult[8] = items3;
-          cResult[9] = fn;
-          tmp16 = fn;
+          cResult[9] = U;
+          tmp16 = U;
           tmp15 = items3;
         } else {
           tmp15 = cResult[8];
           tmp16 = cResult[9];
         }
-        const tmpResult3 = tmp(vanityURLCode[20]);
-        const stateFromStores1 = tmpResult3.useStateFromStores(tmp15, tmp16);
+        const tmpResult2 = tmp(vanityURLCode[20]);
+        const stateFromStores1 = tmpResult2.useStateFromStores(tmp15, tmp16);
         if (cResult[10] !== stateFromStores) {
           let tmp21 = null;
           if (null != stateFromStores) {
             tmp21 = tmp5(tmp2[21])(stateFromStores);
           }
-          let str = "";
-          if (null != tmp21) {
-            const tmpResult4 = tmp(vanityURLCode[22]);
-            str = tmpResult4.getShareMessage(tmp21);
+          class U {
+            constructor() {
+              return error.getError();
+            }
           }
           cResult[10] = stateFromStores;
           cResult[11] = tmp21;
-          cResult[12] = str;
+          cResult[12] = "";
           tmp20 = str;
         } else {
           tmp20 = cResult[12];
@@ -299,13 +301,18 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
               }
             }
           }
+          class U {
+            constructor() {
+              return error.getError();
+            }
+          }
           cResult[16] = channel;
           cResult[17] = stateFromStores;
           cResult[18] = tmp20;
           cResult[19] = source;
           cResult[20] = W;
         }
-        const fn2 = function z(userId) {
+        const fn = function z(userId) {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
           const obj2 = { userId, channelId: channel.id, sourceAnalyticsLocations: analyticsLocations };
@@ -313,7 +320,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
         };
         cResult[13] = analyticsLocations;
         cResult[14] = channel.id;
-        cResult[15] = fn2;
+        cResult[15] = fn;
       }
     }
   }
@@ -560,7 +567,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
     const items10 = [closure_13(tmp2(tmp3[33]), obj10), ];
     const obj11 = { style: tmp.searchAndShareContainer, children: items11 };
     const obj12 = { size: "md", round: true, onChange: channel(vanityURLCode[35]).searchInviteSuggestions, placeholder: stringResult1 };
-    const SearchField = tmp8(tmp3[34]).SearchField;
+    const SearchBar = tmp8(tmp3[34]).SearchBar;
     const tmp31 = closure_14;
     if (null != targetApplicationId) {
       const intl5 = tmp8(tmp3[28]).intl;
@@ -577,7 +584,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function InstantInvit
       const obj13 = { groupname: name };
       stringResult1 = formatToPlainString(v1UgGdm, obj13);
     }
-    items11 = [closure_13(SearchField, obj12), ];
+    items11 = [closure_13(SearchBar, obj12), ];
     let tmp26Result2 = null == vanityURLCode;
     if (tmp26Result2) {
       const obj14 = { style: tmp.inviteAgeText, channel, canEditInvite: null == code };

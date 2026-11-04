@@ -1,14 +1,14 @@
-// Module ID: 6397
-// Function ID: 6398
+// Module ID: 6876
+// Function ID: 6877
 // Name: GuildJoinRequestStore
-// Dependencies: [1392, 5035, 4797, 5037, 4840, 5036, 1104, 504, 584, 2]
+// Dependencies: [1392, 5035, 2049, 5037, 4930, 5036, 1104, 504, 584, 2]
 
-// Module 6397 (GuildJoinRequestStore)
+// Module 6876 (GuildJoinRequestStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import DurationsDefault from "Durations" /* 1104 */;
-import _modDef4797 from "module_4797" /* 4797 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 4840 */;
+import _modDef2049 from "module_2049" /* 2049 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4930 */;
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5035 */;
 import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5036 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5037 */;
@@ -21,12 +21,12 @@ function updateSubmittedGuildJoinRequestTotal(guildId, DELETED, applicationStatu
       const tmp12 = require;
       if (DELETED === MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED) {
         closure_6[guildId] = closure_6[guildId] + 1;
-        const result = map.set(guildId, _modDef4797());
+        const result = map.set(guildId, _modDef2049());
       }
       if (applicationStatus === tmp12(5037).GuildJoinRequestApplicationStatuses.SUBMITTED) {
         const _Math = Math;
         closure_6[guildId] = Math.max(0, closure_6[guildId] - 1);
-        const result1 = map.set(guildId, _modDef4797());
+        const result1 = map.set(guildId, _modDef2049());
       }
     }
   }
@@ -106,9 +106,9 @@ function StaticGuildJoinRequestIndexes_GUILD_JOIN_REQUESTS_BY_STATUS(arg0, arg1)
 const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(guildJoinRequestsIndex, (joinRequestId) => "" + joinRequestId.joinRequestId);
 const secondaryIndexMap1 = new SecondaryIndexMap.SecondaryIndexMap(guildJoinRequestsIndex, (joinRequestId) => "" + joinRequestId.joinRequestId);
 const secondaryIndexMap2 = new SecondaryIndexMap.SecondaryIndexMap(guildJoinRequestsIndex, (actionedAt) => "" + actionedAt.actionedAt);
-const authStore4 = {};
+const authStore3 = {};
 let closure_17 = {};
-const authStore5 = {};
+const authStore4 = {};
 let closure_19 = {};
 let closure_20 = 10 * DurationsDefault.Seconds.MINUTE;
 const Store = get_initializedDefault.Store;
@@ -153,7 +153,7 @@ class GuildJoinRequestStoreV2 extends Store {
       const value = obj.get(arg0);
       let tmp3 = null != value;
       if (tmp3) {
-        const obj2 = _modDef4797();
+        const obj2 = _modDef2049();
         tmp3 = obj2.diff(value, "seconds") < closure_20;
       }
       return tmp3;
@@ -232,7 +232,7 @@ let obj = {
       let tmp2 = closure_6;
       closure_6[guildId] = total;
       let tmp3 = map;
-      let result = map.set(guildId, _modDef4797());
+      let result = map.set(guildId, _modDef2049());
     }
     const item = requests.forEach((joinRequestId) => {
       closure_1_19[joinRequestId.joinRequestId] = joinRequestId;

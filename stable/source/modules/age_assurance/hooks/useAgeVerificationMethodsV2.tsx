@@ -1,15 +1,15 @@
-// Module ID: 7827
-// Function ID: 7828
+// Module ID: 7978
+// Function ID: 7979
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 6172, 7778, 7810, 584, 2]
+// Dependencies: [5, 32, 19, 6687, 7929, 7961, 584, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 7827 (useAgeVerificationMethodsV2)
+// Module 7978 (useAgeVerificationMethodsV2)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 6172 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 6687 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, c6;
@@ -27,7 +27,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
   let tmp2;
   let tmp4;
   let tmp6;
-  const f98119 = () => callback.methodsV2OutageBannerMessage;
+  const f100038 = () => callback.methodsV2OutageBannerMessage;
   const tmp = _slicedToArray(react.useState(() => {
     let methodsV2 = callback.methodsV2;
     if (methodsV2 == null) {
@@ -38,8 +38,8 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
   [tmp2, require] = tmp;
   const tmp3 = _slicedToArray(react.useState(() => callback.methodsV2FooterMessage), 2);
   [tmp4, importDefault] = tmp3;
-  [tmp6, dependencyMap] = _slicedToArray(react.useState(f98119), 2);
-  const tmp5 = _slicedToArray(react.useState(f98119), 2);
+  [tmp6, dependencyMap] = _slicedToArray(react.useState(f100038), 2);
+  const tmp5 = _slicedToArray(react.useState(f100038), 2);
   [first, _asyncToGenerator] = react.useState(() => null == callback.methodsV2);
   [first1, _slicedToArray] = react.useState(false);
   react = react.useRef(true);
@@ -58,7 +58,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -164,7 +164,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
             tmp66(false);
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp66) {
         if (0 === c4) {

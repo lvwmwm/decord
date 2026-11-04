@@ -1,35 +1,51 @@
-// Module ID: 11256
-// Function ID: 11257
+// Module ID: 11428
+// Function ID: 11429
 // Name: tryLaunchAsFrame
-// Dependencies: [5540, 6296, 11220, 11042, 2]
+// Dependencies: [2045, 6808, 11388, 5658, 11429, 10799, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 11256 (tryLaunchAsFrame)
-import FramesConstants from "FramesConstants" /* 6296 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11042 */;
-import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11220 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
+// Module 11428 (tryLaunchAsFrame)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
+import FramesConstants from "FramesConstants" /* 6808 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 10799 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11388 */;
+import openFrameInAppChannelDefault from "openFrameInAppChannel" /* 11429 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
 import size from "module_2" /* 2 */;
 
 const MAIN_SURFACE = FramesConstants.MAIN_SURFACE;
 const result = size.fileFinishedImporting("modules/activities/utils/tryLaunchAsFrame.tsx");
 
-export const tryLaunchAsFrame = function tryLaunchAsFrame(applicationId) {
+export const tryLaunchAsFrame = function tryLaunchAsFrame(channelId) {
   let analyticsContext;
+  let application;
+  let applicationId;
+  let flag;
   let launch;
-  applicationId = applicationId.applicationId;
-  ({ launch, analyticsContext } = applicationId);
-  const application = ApplicationStore.getApplication(applicationId);
-  let tmp2 = null == application;
-  if (!tmp2) {
-    const obj = canLaunchContextlessFrame;
-    tmp2 = !obj.canLaunchContextlessFrame(application);
+  let preferAppChannel;
+  ({ applicationId, application } = channelId);
+  if (application === undefined) {
+    application = ApplicationStore.getApplication(applicationId);
   }
-  let flag = !tmp2;
-  if (flag) {
-    const obj3 = { applicationId, surface: MAIN_SURFACE, launch, analyticsContext };
-    const obj2 = FramesActionCreatorsDefault;
-    obj2.launchFrame(obj3);
+  ({ launch, analyticsContext, preferAppChannel } = channelId);
+  if (preferAppChannel === undefined) {
+    preferAppChannel = false;
+  }
+  channelId = channelId.channelId;
+  const obj = getFrameSurfaces;
+  const frameSurfaces = obj.getFrameSurfaces(application);
+  const hasItem = frameSurfaces.has(EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN);
+  if (!frameSurfaces.has(EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL)) {
+    flag = hasItem;
+    if (flag) {
+      const obj2 = { applicationId, surface: MAIN_SURFACE, launch, analyticsContext };
+      const obj3 = FramesActionCreatorsDefault;
+      obj3.launchFrame(obj2);
+      flag = true;
+    }
+  } else {
+    const obj4 = { applicationId, channelId, launch, analyticsContext };
+    openFrameInAppChannelDefault(obj4);
     flag = true;
   }
   return flag;

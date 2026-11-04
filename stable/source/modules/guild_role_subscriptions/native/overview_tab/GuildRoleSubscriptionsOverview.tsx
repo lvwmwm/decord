@@ -1,28 +1,28 @@
-// Module ID: 17684
-// Function ID: 17685
+// Module ID: 18023
+// Function ID: 18024
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 6013, 5038, 2090, 21, 5187, 558, 576, 1128, 17685, 9698, 17686, 16271, 573, 7228, 6283, 5400, 1114, 2]
+// Dependencies: [19, 6528, 5038, 4877, 21, 5266, 558, 576, 1128, 18024, 9829, 18025, 16604, 573, 7383, 6795, 5941, 1114, 2]
 
-// Module 17684 (GuildRoleSubscriptionsOverview)
+// Module 18023 (GuildRoleSubscriptionsOverview)
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import router_utils from "router_utils" /* 1114 */;
 import intl4 from "intl" /* 1128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5400 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9698 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 17685 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5941 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9829 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 18024 */;
 import react_mod from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
 import DefaultRouteStore from "DefaultRouteStore" /* 5038 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp4;
-const GroupListingsFetchContext = tmp(16271);
-const GuildRoleSubscriptionPurchasePageDefault = tmp4(17686);
+const GroupListingsFetchContext = tmp(16604);
+const GuildRoleSubscriptionPurchasePageDefault = tmp4(18025);
 function serverNameHook(children) {
   return jsx(Text_Text.Text, { variant: "heading-lg/extrabold", color: "interactive-text-active", children });
 }

@@ -1,14 +1,14 @@
-// Module ID: 14517
-// Function ID: 14518
+// Module ID: 14784
+// Function ID: 14785
 // Name: useReferralProgramEligibleUsers
-// Dependencies: [5, 32, 19, 7441, 504, 38, 7442, 8579, 2]
+// Dependencies: [5, 32, 19, 7594, 504, 38, 7595, 8702, 2]
 // Exports: useReferralProgramEligibleUsers
 
-// Module 14517 (useReferralProgramEligibleUsers)
+// Module 14784 (useReferralProgramEligibleUsers)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7441 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7594 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {
@@ -69,7 +69,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
                 let _Array = Array;
                 let tmp34 = closure_131_7(Array.from(map.values()));
                 c7 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } else {
                 c5 = 1;
                 c1 = tmp17;
@@ -126,7 +126,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         while (true) {
@@ -265,7 +265,7 @@ export const useReferralProgramEligibleUsers = function useReferralProgramEligib
             let tmp36 = closure_134_9(false);
           }
           c10 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       }
     });

@@ -1,27 +1,27 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9768
+// Function ID: 9769
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7580, 7584, 9638, 9639, 5169, 1087, 9635, 584, 1297, 7445, 9640, 7737, 7744, 2]
+// Dependencies: [5, 7729, 7733, 9769, 9770, 5639, 1087, 9766, 584, 1297, 7598, 9771, 7888, 7895, 2]
 // Exports: clearConversationSelection, fetchChannelConversations, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 9637 (ConversationsActionCreators)
+// Module 9768 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import ConversationConstants from "ConversationConstants" /* 5169 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7737 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9640 */;
+import ConversationConstants from "ConversationConstants" /* 5639 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7888 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9771 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7580 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7584 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9638 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9639 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7729 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7733 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 9769 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 9770 */;
 import size from "module_2" /* 2 */;
 
 let _false, _undefined, isJump, requestKey;
 
 let tmp;
-const SurveyActionTypes = tmp(7744);
+const SurveyActionTypes = tmp(7895);
 let obj = function _fetchChannelConversations() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_4;
@@ -165,7 +165,7 @@ obj = function _fetchConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -211,7 +211,7 @@ obj = function _fetchConversation() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp15) {
           if (0 === c4) {
             c6 = 3;
@@ -241,7 +241,7 @@ obj = function _hydrateSelectedConversation() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -273,7 +273,7 @@ obj = function _hydrateSelectedConversation() {
           const obj5 = { includeReactions: true, includeMessageReferences: true, cacheType };
           closure_132_14(closure_0, closure_1, obj5);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp13) {
           c6 = 3;
           throw tmp13;
@@ -309,7 +309,7 @@ obj = function _fetchConversationMessages() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -339,7 +339,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (isFullyHydratedResult) {
                   c7 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               } else {
                 let hydratedMessages;
@@ -350,7 +350,7 @@ obj = function _fetchConversationMessages() {
                 }
                 if (null != hydratedMessages) {
                   c7 = 3;
-                  return { value: "IconComponent", done: null };
+                  return { value: "IconComponent", done: "+352" };
                 }
               }
               if ("preview" === cacheType) {
@@ -393,7 +393,7 @@ obj = function _fetchConversationMessages() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp29) {
           if (0 === c5) {
             c7 = 3;
@@ -443,7 +443,7 @@ export const setSelectedConversation = function setSelectedConversation(channelI
       }
       if (null != startMessageId) {
         const obj2 = { channelId, messageId: startMessageId, flash: false };
-        const tmp6Result = tmp6(7445);
+        const tmp6Result = tmp6(7598);
         tmp6Result.jumpToMessage(obj2);
       }
     }

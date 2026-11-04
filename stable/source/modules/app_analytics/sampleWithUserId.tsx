@@ -1,10 +1,10 @@
-// Module ID: 7459
-// Function ID: 7460
+// Module ID: 7612
+// Function ID: 7613
 // Name: sampleWithUserId
 // Dependencies: [1266, 2]
 // Exports: sampleWithUserId
 
-// Module 7459 (sampleWithUserId)
+// Module 7612 (sampleWithUserId)
 import _modDef1266 from "module_1266" /* 1266 */;
 import size from "module_2" /* 2 */;
 

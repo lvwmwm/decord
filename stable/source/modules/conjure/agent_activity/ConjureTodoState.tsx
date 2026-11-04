@@ -1,12 +1,12 @@
-// Module ID: 12125
-// Function ID: 12126
+// Module ID: 12343
+// Function ID: 12344
 // Name: ConjureTodoState
-// Dependencies: [10980, 12126, 2]
-// Exports: checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, todoProgress, unfinishedTodoCount
+// Dependencies: [10732, 12344, 2]
+// Exports: checklistLive, messageChecklist, supersededChecklists, todoLabel, todoMark, todoProgress
 
-// Module 12125 (ConjureTodoState)
-import conjureChatTurns from "conjureChatTurns" /* 10980 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 12126 */;
+// Module 12343 (ConjureTodoState)
+import conjureChatTurns from "conjureChatTurns" /* 10732 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 12344 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -46,9 +46,6 @@ export const checklistLive = function checklistLive(memo) {
 export const todoProgress = function todoProgress(todos) {
   const obj = { completed: todos.filter((status) => "completed" === status.status).length, total: todos.length };
   return obj;
-};
-export const unfinishedTodoCount = function unfinishedTodoCount(arr) {
-  return arr.filter((status) => "completed" !== status.status).length;
 };
 export const messageChecklist = function messageChecklist(role) {
   if ("assistant" !== role.role) {

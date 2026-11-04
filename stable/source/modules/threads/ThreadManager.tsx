@@ -1,14 +1,14 @@
-// Module ID: 18656
-// Function ID: 18657
+// Module ID: 18997
+// Function ID: 18998
 // Name: ThreadManager
-// Dependencies: [502, 2068, 7085, 504, 584, 9628, 2]
+// Dependencies: [502, 4855, 7246, 504, 584, 9759, 2]
 
-// Module 18656 (ThreadManager)
+// Module 18997 (ThreadManager)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9628 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9759 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
 import size from "module_2" /* 2 */;
 
 class ThreadManager extends AutomaticLifecycleManager {

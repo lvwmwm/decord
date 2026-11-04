@@ -1,10 +1,10 @@
-// Module ID: 7041
-// Function ID: 7042
+// Module ID: 7202
+// Function ID: 7203
 // Name: refObjectUnionAsProp
 // Dependencies: [2]
 // Exports: default
 
-// Module 7041 (refObjectUnionAsProp)
+// Module 7202 (refObjectUnionAsProp)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/typescript/refObjectUnionAsProp.tsx");

@@ -1,12 +1,12 @@
 // Module ID: 5052
 // Function ID: 5053
 // Name: RouteUtils
-// Dependencies: [1088, 2075, 2, 5053]
+// Dependencies: [1088, 4862, 2, 5053]
 // Exports: isPseudoGuildId, isValidChannelId, isValidGuildId
 
 // Module 5052 (RouteUtils)
 import RouteConstants from "RouteConstants" /* 1088 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
+import ChannelConstants from "ChannelConstants" /* 4862 */;
 import RouteParam from "RouteParam" /* 5053 */;
 import size from "module_2" /* 2 */;
 

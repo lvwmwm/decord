@@ -1,25 +1,25 @@
-// Module ID: 12042
-// Function ID: 12043
+// Module ID: 12241
+// Function ID: 12242
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 9993, 21, 1384, 5191, 587, 8817, 558, 576, 5462, 4945, 12043, 4922, 7121, 12044, 504, 6584, 5156, 6350, 1896, 5496, 4913, 1633, 1499, 5088, 5068, 5459, 9754, 7005, 2]
+// Dependencies: [32, 19, 17, 10122, 21, 1384, 5003, 587, 8945, 558, 576, 5299, 5084, 12242, 5069, 5613, 12243, 504, 5301, 5244, 6834, 1896, 5295, 5284, 1633, 1499, 5198, 5178, 6000, 9884, 5624, 2]
 
-// Module 12042 (PortalKeyboardBottomSheet)
+// Module 12241 (PortalKeyboardBottomSheet)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1896 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import HapticUtils from "HapticUtils" /* 5156 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5462 */;
-import isChannelFocused from "isChannelFocused" /* 6350 */;
-import BottomSheetModal from "BottomSheetModal" /* 6584 */;
-import native from "native" /* 8817 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import HapticUtils from "HapticUtils" /* 5244 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5299 */;
+import BottomSheetModal from "BottomSheetModal" /* 5301 */;
+import isChannelFocused from "isChannelFocused" /* 6834 */;
+import native from "native" /* 8945 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import NativeMenuStore from "NativeMenuStore" /* 9993 */;
+import NativeMenuStore from "NativeMenuStore" /* 10122 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 13041
-// Function ID: 13042
+// Module ID: 13313
+// Function ID: 13314
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 8189, 6243, 6013, 6286, 1087, 5503, 10016, 5504, 10100, 1395, 21, 8509, 7003, 10112, 5191, 1384, 587, 13042, 558, 576, 1499, 6942, 6536, 504, 4913, 10839, 13049, 13050, 2044, 6541, 10099, 13051, 7320, 10015, 6373, 9727, 13052, 7509, 12850, 2000, 7636, 1631, 5206, 8980, 9406, 8981, 13053, 13054, 9571, 8428, 12888, 4945, 13055, 7513, 13062, 5187, 1128, 7091, 8859, 13063, 13064, 2]
+// Dependencies: [32, 19, 17, 8339, 6757, 6528, 6798, 1087, 6015, 10145, 6016, 10229, 1395, 21, 8612, 7165, 10240, 5003, 1384, 587, 13314, 558, 576, 1499, 5625, 5300, 504, 5284, 11091, 13321, 13322, 4831, 7018, 10228, 13323, 7472, 10144, 6858, 9858, 13324, 7662, 13122, 2000, 7788, 1631, 5743, 9107, 9537, 9108, 13325, 13326, 9704, 8531, 13160, 5084, 13327, 5666, 13334, 5266, 1128, 7252, 8987, 13335, 13336, 2]
 
-// Module 13041 (AutocompleteWrapper)
+// Module 13313 (AutocompleteWrapper)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
@@ -11,32 +11,32 @@ import EmojiConstants from "EmojiConstants" /* 1395 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1499 */;
 import KeyboardTypes from "KeyboardTypes" /* 1631 */;
 import Server from "Server" /* 2000 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5206 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6373 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7003 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7513 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8509 */;
-import GameSearchSession from "GameSearchSession" /* 8980 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9571 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10015 */;
-import AutocompleteOptions from "AutocompleteOptions" /* 10099 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10100 */;
-import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10112 */;
-import Autocomplete from "Autocomplete" /* 13042 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 13053 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5666 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5743 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6858 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7165 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8612 */;
+import GameSearchSession from "GameSearchSession" /* 9107 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9704 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10144 */;
+import AutocompleteOptions from "AutocompleteOptions" /* 10228 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10229 */;
+import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10240 */;
+import Autocomplete from "Autocomplete" /* 13314 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 13325 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8189 */;
-import EmojiStore from "EmojiStore" /* 6243 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
-import StickersStore from "StickersStore" /* 6286 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8339 */;
+import EmojiStore from "EmojiStore" /* 6757 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
+import StickersStore from "StickersStore" /* 6798 */;
 import Constants from "Constants" /* 1087 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10016 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5504 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10145 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6016 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -59,9 +59,9 @@ let map1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const NavigatorConstants = tmp(6536);
-const useSafeAreaInsetsKeyboardAwareDefault = tmp5(6942);
-const application_commands_ApplicationCommandUtils = tmp(12888);
+const NavigatorConstants = tmp(5300);
+const useSafeAreaInsetsKeyboardAwareDefault = tmp5(5625);
+const application_commands_ApplicationCommandUtils = tmp(13160);
 function getItemKey(type, arg1) {
   type = type.type;
   if (constants.USER === type) {
@@ -406,7 +406,7 @@ class ACWrapper {
                       const tmp33Result2 = autocompleter_AutocompleteUtils;
                       if (tmp33Result2.isSpaceJustTypedAtCaret(text, selectionEnd, text, selectionEnd)) {
                         const current = chatInputRef.current;
-                        current.insertText(authStore6, result.tokenStart, false, undefined, selectionEnd);
+                        current.insertText(authStore5, result.tokenStart, false, undefined, selectionEnd);
                         beginSearch2(result.tokenStart);
                       }
                     }
@@ -875,7 +875,7 @@ class ACWrapper {
         let num7 = 0;
         if (0 !== nonStickerResults.length) {
           if (!context) {
-            tmp13 = tmp === tmp2.EMOJIS_AND_STICKERS ? authStore3 : authStore4;
+            tmp13 = tmp === tmp2.EMOJIS_AND_STICKERS ? closure_15 : authStore3;
           }
           num7 = length * tmp13 + (length - 1) * hairlineWidth;
         }
@@ -917,7 +917,7 @@ class ACWrapper {
                 let num4 = 0;
                 if (0 !== resultCount) {
                   if (!context) {
-                    tmp7 = tmp === tmp2.EMOJIS_AND_STICKERS ? authStore3 : authStore4;
+                    tmp7 = tmp === tmp2.EMOJIS_AND_STICKERS ? closure_15 : authStore3;
                   }
                   num4 = tmp5 * tmp7 + (tmp5 - 1) * hairlineWidth;
                 }
@@ -1002,7 +1002,7 @@ class ACWrapper {
         if (type.type === token.GLOBAL) {
           if ("timestampMentionInput" === type.inlineAutocompleteType) {
             const current4 = chatInputRef.current;
-            current4.insertText(authStore6, tokenStart, false);
+            current4.insertText(authStore5, tokenStart, false);
             beginSearch2(tokenStart);
           }
         }
@@ -1034,7 +1034,7 @@ class ACWrapper {
           tmp18 = autocompleteResultText;
           tmp19 = tmp13;
           if (null != applicationCommandManager) {
-            const tmp8Result = tmp8(8428);
+            const tmp8Result = tmp8(8531);
             const result = tmp8Result.formatTimestampMention(type.mention);
             tmp18 = autocompleteResultText;
             tmp19 = tmp13;
@@ -1116,7 +1116,7 @@ class ACWrapper {
         if (type.type === token.GAME_MENTION) {
           const getGameSearchSession = GameSearchSession.getGameSearchSession;
           GameSearchSession;
-          const gameSearchSession = getGameSearchSession(tmp2(9406).GameSearchSurface.CHAT_MENTION, tmp2(8981).GameSearchFilterGroup.DEFAULT);
+          const gameSearchSession = getGameSearchSession(tmp2(9537).GameSearchSurface.CHAT_MENTION, tmp2(9108).GameSearchFilterGroup.DEFAULT);
           gameSearchSession.select(type.game.id);
         }
         let num = autocompleteSelectionStart;
@@ -1322,7 +1322,7 @@ class ACWrapper {
                 const tmp = closure_54;
                 if (0 !== commands) {
                   if (!context) {
-                    tmp3 = tmp2 === AutocompleteTypes.EMOJIS_AND_STICKERS ? authStore3 : authStore4;
+                    tmp3 = tmp2 === AutocompleteTypes.EMOJIS_AND_STICKERS ? closure_15 : authStore3;
                   }
                   num = commands * tmp3 + (commands - 1) * hairlineWidth;
                 }

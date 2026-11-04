@@ -1,21 +1,21 @@
-// Module ID: 12602
-// Function ID: 12603
+// Module ID: 12853
+// Function ID: 12854
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 10904, 502, 2128, 2090, 4845, 5034, 1087, 4831, 1097, 558, 576, 4851, 573, 1128, 10968, 10969, 7370, 2]
+// Dependencies: [19, 11156, 502, 4915, 4877, 4935, 5034, 1087, 4921, 1097, 558, 576, 4941, 573, 1128, 11220, 11221, 7522, 2]
 
-// Module 12602 (AutomodQuarantineUtils)
+// Module 12853 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1097 */;
 import intl4 from "intl" /* 1128 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
-import openUserSettings2 from "openUserSettings" /* 7370 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10969 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4921 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4941 */;
+import openUserSettings2 from "openUserSettings" /* 7522 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11221 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10904 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11156 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import PermissionStore from "PermissionStore" /* 4935 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import Constants from "Constants" /* 1087 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;

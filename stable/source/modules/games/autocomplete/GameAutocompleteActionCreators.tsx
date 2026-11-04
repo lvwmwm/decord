@@ -1,15 +1,15 @@
-// Module ID: 8979
-// Function ID: 8980
+// Module ID: 9106
+// Function ID: 9107
 // Name: GameAutocompleteActionCreators
-// Dependencies: [5, 8508, 1087, 8509, 584, 1297, 2]
+// Dependencies: [5, 8611, 1087, 8612, 584, 1297, 2]
 // Exports: fetchGameAutocomplete
 
-// Module 8979 (GameAutocompleteActionCreators)
+// Module 9106 (GameAutocompleteActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import Constants from "Constants" /* 1087 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8509 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8612 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8508 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8611 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4, closure_5, filterGroup, results;
@@ -30,7 +30,7 @@ let obj = function _fetchGameAutocomplete() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -102,7 +102,7 @@ let obj = function _fetchGameAutocomplete() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp28) {
           closure_5 = tmp28;
           if (0 === c6) {

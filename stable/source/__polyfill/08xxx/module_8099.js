@@ -1,26 +1,16 @@
 // Module ID: 8099
 // Function ID: 8100
-// Dependencies: [8100, 8098]
+// Dependencies: [26, 106, 65]
 
 // Module 8099
-import _modDef8098 from "module_8098" /* 8098 */;
-import _modDef8100 from "module_8100" /* 8100 */;
+import _mod26 from "module_26" /* 26 */;
+import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
+import module_65 from "module_65" /* 65 */;
 
+let size;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGUse", directEventTypes: { topSvgLayout: { registrationName: "onSvgLayout" } }, validAttributes: size };
+size = { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, href: true, x: true, y: true, height: true, width: true };
+const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onSvgLayout: true }));
 
-export default {
-  isTiffFile(byteLength) {
-    let tmp = byteLength && byteLength.byteLength >= 4;
-    if (tmp) {
-      const uint16 = byteLength.getUint16(0);
-      tmp = byteLength.getUint16(2, uint16 === _modDef8100.LITTLE_ENDIAN) === 42;
-    }
-    return tmp;
-  },
-  findTiffOffsets() {
-    if (_modDef8098.USE_EXIF) {
-      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
-    } else {
-      return {};
-    }
-  }
-};
+export default module_65.get("RNSVGUse", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

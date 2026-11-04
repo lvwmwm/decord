@@ -1,9 +1,9 @@
-// Module ID: 11416
-// Function ID: 11417
+// Module ID: 11601
+// Function ID: 11602
 // Name: ConnectivityConstants
 // Dependencies: [2]
 
-// Module 11416 (ConnectivityConstants)
+// Module 11601 (ConnectivityConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/connectivity/native/ConnectivityConstants.tsx");

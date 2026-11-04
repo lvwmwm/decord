@@ -1,22 +1,22 @@
-// Module ID: 6160
-// Function ID: 6161
+// Module ID: 6681
+// Function ID: 6682
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 2090, 6161, 1087, 21, 5191, 6162, 587, 558, 576, 1128, 1202, 5187, 5498, 2]
+// Dependencies: [19, 4877, 6682, 1087, 21, 5003, 6683, 587, 558, 576, 1128, 1202, 5266, 6010, 2]
 
-// Module 6160 (GuildLimitedAccessInfoAlert)
+// Module 6681 (GuildLimitedAccessInfoAlert)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl4 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import AlertDefault from "Alert" /* 5498 */;
-import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6161 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import AlertDefault from "Alert" /* 6010 */;
+import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6682 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
-import TextStyles from "TextStyles" /* 6162 */;
+import createStyles_mod from "createStyles" /* 5003 */;
+import TextStyles from "TextStyles" /* 6683 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

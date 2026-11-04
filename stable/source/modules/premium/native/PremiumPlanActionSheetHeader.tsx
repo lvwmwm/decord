@@ -1,27 +1,27 @@
-// Module ID: 7422
-// Function ID: 7423
+// Module ID: 7575
+// Function ID: 7576
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1394, 7423, 21, 5191, 558, 576, 7424, 7425, 7426, 7427, 7428, 7429, 7430, 7431, 4864, 5128, 7432, 5491, 1107, 2]
+// Dependencies: [19, 17, 1394, 7576, 21, 5003, 558, 576, 7577, 7578, 7579, 7580, 7581, 7582, 7583, 7584, 2053, 5701, 7585, 5290, 1107, 2]
 
-// Module 7422 (PremiumPlanActionSheetHeader)
+// Module 7575 (PremiumPlanActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import ConstantsIOS from "ConstantsIOS" /* 1107 */;
-import PremiumUtils from "PremiumUtils" /* 4864 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import LinearGradientDefault from "LinearGradient" /* 5491 */;
-import ColorConstants from "ColorConstants" /* 7423 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7424 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7425 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 7426 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 7427 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 7428 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 7429 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 7430 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 7431 */;
+import PremiumUtils from "PremiumUtils" /* 2053 */;
+import LinearGradientDefault from "LinearGradient" /* 5290 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import ColorConstants from "ColorConstants" /* 7576 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7577 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7578 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 7579 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 7580 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 7581 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 7582 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 7583 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 7584 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -136,7 +136,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanA
             tmp21 = cResult[17];
           }
           if (cResult[18] !== premiumType) {
-            const tmpResult = premiumType(4864);
+            const tmpResult = premiumType(2053);
             const premiumTypeDisplayName = tmpResult.getPremiumTypeDisplayName(premiumType);
             cResult[18] = premiumType;
             cResult[19] = premiumTypeDisplayName;
@@ -283,7 +283,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanA
                 let tmp41 = null;
                 if (tmp14) {
                   const obj8 = { style: tmp4.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-                  tmp41 = closure_7(tmp(7432).PremiumPill, obj8);
+                  tmp41 = closure_7(tmp(7585).PremiumPill, obj8);
                 }
                 cResult[31] = discountOffer;
                 cResult[32] = tmp14;
@@ -297,7 +297,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanA
           let tmp38 = null;
           if (tmp9) {
             const obj9 = { style: tmp4.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-            tmp38 = closure_7(tmp(7432).PremiumPill, obj9);
+            tmp38 = closure_7(tmp(7585).PremiumPill, obj9);
           }
           cResult[26] = tmp9;
           cResult[27] = premiumType;
@@ -306,7 +306,7 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanA
           cResult[30] = tmp38;
           tmp37 = tmp38;
         }
-        premiumType(4864);
+        premiumType(2053);
         let tmp19 = null != discountOffer;
         if (tmp19) {
           const discount = discountOffer.discount;
@@ -389,12 +389,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanA
   const tmp14 = LinearGradientDefault;
   tmp6Result = PremiumUtils;
   if (React3.TIER_0 === premiumType) {
-    tmp17Result = tmp13(7430);
+    tmp17Result = tmp13(7583);
   } else {
     tmp17Result = null;
     if (React3.TIER_1 !== premiumType) {
       if (React3.TIER_2 === premiumType) {
-        tmp17Result = tmp13(7431);
+        tmp17Result = tmp13(7584);
       }
     }
   }
@@ -403,12 +403,12 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanA
     const tmp13Result7 = FastImageDefault;
     const tmp17 = metroImportDefault;
     if (React3.TIER_0 === premiumType) {
-      tmp13Result8 = tmp13(7430);
+      tmp13Result8 = tmp13(7583);
     } else {
       tmp13Result8 = null;
       if (React3.TIER_1 !== premiumType) {
         if (React3.TIER_2 === premiumType) {
-          tmp13Result8 = tmp13(7431);
+          tmp13Result8 = tmp13(7584);
         }
       }
     }
@@ -420,33 +420,33 @@ let tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PremiumPlanA
   const tmp13Result9 = FastImageDefault;
   const tmp20 = View;
   if (React3.TIER_0 === premiumType) {
-    tmp13Result10 = tmp13(7424);
+    tmp13Result10 = tmp13(7577);
   } else if (React3.TIER_1 === premiumType) {
-    tmp13Result10 = tmp13(7425);
+    tmp13Result10 = tmp13(7578);
   } else if (React3.TIER_2 === premiumType) {
-    tmp13Result10 = tmp13(7426);
+    tmp13Result10 = tmp13(7579);
   }
   items1 = [metroImportDefault(tmp13Result9, { source: tmp13Result10, resizeMode: "contain" }), , ];
   let tmp21Result = null;
   if (tmp2) {
     const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-    tmp21Result = tmp21(tmp6(7432).PremiumPill, obj5);
+    tmp21Result = tmp21(tmp6(7585).PremiumPill, obj5);
   }
   items1[1] = tmp21Result;
   let tmp21Result2 = null;
   if (tmp10) {
     const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-    tmp21Result2 = tmp21(tmp6(7432).PremiumPill, obj6);
+    tmp21Result2 = tmp21(tmp6(7585).PremiumPill, obj6);
   }
   items1[2] = tmp21Result2;
   items[1] = metroImportAll(tmp20, obj4);
   const tmp13Result11 = FastImageDefault;
   if (React3.TIER_0 === premiumType) {
-    tmp13Result12 = tmp13(7427);
+    tmp13Result12 = tmp13(7580);
   } else if (React3.TIER_1 === premiumType) {
-    tmp13Result12 = tmp13(7428);
+    tmp13Result12 = tmp13(7581);
   } else if (React3.TIER_2 === premiumType) {
-    tmp13Result12 = tmp13(7429);
+    tmp13Result12 = tmp13(7582);
   }
   const obj7 = { source: tmp13Result12, style: null, resizeMode: "contain" };
   const items2 = [tmp.imgWumpus, ];

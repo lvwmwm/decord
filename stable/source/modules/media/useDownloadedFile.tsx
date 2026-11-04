@@ -1,12 +1,12 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 11316
+// Function ID: 11317
 // Name: useDownloadedFile
-// Dependencies: [5, 32, 19, 1128, 5896, 5506, 2]
+// Dependencies: [5, 32, 19, 1128, 6411, 6018, 2]
 // Exports: getBytesLeftNotice, useDownloadedFile
 
-// Module 11161 (useDownloadedFile)
+// Module 11316 (useDownloadedFile)
 import intl2 from "intl" /* 1128 */;
-import FileSizeUtils from "FileSizeUtils" /* 5896 */;
+import FileSizeUtils from "FileSizeUtils" /* 6411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -95,7 +95,7 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             let c6;
@@ -201,7 +201,7 @@ export const useDownloadedFile = function useDownloadedFile(url, arg1) {
                   c6 = 0;
                 }
                 c9 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } catch (tmp44) {
               let closure_7 = tmp44;

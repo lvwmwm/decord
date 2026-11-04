@@ -1,18 +1,18 @@
-// Module ID: 14913
-// Function ID: 14914
+// Module ID: 15180
+// Function ID: 15181
 // Name: ShareScreenModal
-// Dependencies: [5, 32, 19, 2068, 14860, 21, 3, 6190, 558, 576, 8756, 504, 7290, 1108, 14914, 2]
+// Dependencies: [5, 32, 19, 4855, 15128, 21, 3, 6704, 558, 576, 8884, 504, 7443, 1108, 15181, 2]
 
-// Module 14913 (ShareScreenModal)
+// Module 15180 (ShareScreenModal)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
 import ChannelTypes from "ChannelTypes" /* 1108 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6190 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 14860 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6704 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15128 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -169,7 +169,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
                 const obj3 = { value, done: true };
                 return obj3;
               } else {
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               }
             } else {
               let c3;
@@ -216,7 +216,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
                   c3 = 0;
                 }
                 c5 = 3;
-                return { value: "IconComponent", done: null };
+                return { value: "IconComponent", done: "+352" };
               } catch (tmp21) {
                 closure_2 = tmp21;
                 if (0 === c3) {
@@ -255,7 +255,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           } else {
             let c3;
@@ -302,7 +302,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } catch (tmp21) {
               closure_2 = tmp21;
               if (0 === c3) {
@@ -343,7 +343,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -390,7 +390,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp20) {
           closure_2 = tmp20;
           if (0 === c3) {
@@ -445,7 +445,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -492,7 +492,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp21) {
             closure_2 = tmp21;
             if (0 === c3) {
@@ -534,7 +534,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           let c3;
@@ -582,7 +582,7 @@ const tmp3 = ReactCompilerGating.isReactCompilerEnabled() ? (function ShareScree
               c3 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } catch (tmp21) {
             closure_2 = tmp21;
             if (0 === c3) {

@@ -1,19 +1,19 @@
-// Module ID: 7988
-// Function ID: 7989
+// Module ID: 8140
+// Function ID: 8141
 // Name: ReportModals
-// Dependencies: [5, 2073, 4856, 1406, 1087, 7989, 7990, 7992, 2082, 5206, 2]
+// Dependencies: [5, 4860, 4946, 1406, 1087, 8141, 8142, 8144, 4869, 5743, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 7988 (ReportModals)
+// Module 8140 (ReportModals)
 import Constants from "Constants" /* 1087 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2082 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
-import MenuTypes from "MenuTypes" /* 7989 */;
-import showReportModal2 from "showReportModal" /* 7990 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 7992 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4869 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
+import MenuTypes from "MenuTypes" /* 8141 */;
+import showReportModal2 from "showReportModal" /* 8142 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8144 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StageInstanceStore from "StageInstanceStore" /* 2073 */;
-import MessageRecord from "MessageRecord" /* 4856 */;
+import StageInstanceStore from "StageInstanceStore" /* 4860 */;
+import MessageRecord from "MessageRecord" /* 4946 */;
 import UserRecord from "UserRecord" /* 1406 */;
 import size from "module_2" /* 2 */;
 
@@ -35,7 +35,7 @@ let obj = function _submitHamReportForFirstDM() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -76,7 +76,7 @@ let obj = function _submitHamReportForFirstDM() {
               c4 = 0;
             }
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp7) {
           if (0 === c4) {
@@ -108,7 +108,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -153,7 +153,7 @@ obj = function _submitReportForInappropriateConversationSafetyAlert() {
               c5 = 0;
             }
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp9) {
           if (0 === c5) {

@@ -1,20 +1,20 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16603
+// Function ID: 16604
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 6013, 4838, 558, 576, 504, 7232, 6438, 16271, 16272, 12055, 1388, 2]
+// Dependencies: [5, 32, 19, 6528, 4928, 558, 576, 504, 7387, 6917, 16604, 16605, 12254, 1388, 2]
 // Exports: useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchSubscriptionsSettings, usePublishSubscriptionListing, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 16270 (GuildRoleSubscriptionsHooks)
+// Module 16603 (GuildRoleSubscriptionsHooks)
 import react2 from "react" /* 576 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4838 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7232 */;
-import useRequestDefault from "useRequest" /* 12055 */;
-import subscriptionUtils from "subscriptionUtils" /* 16272 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4928 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7387 */;
+import useRequestDefault from "useRequest" /* 12254 */;
+import subscriptionUtils from "subscriptionUtils" /* 16605 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6013 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6528 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -1026,7 +1026,7 @@ export const useCreateSubscriptionGroupListing = function useCreateSubscriptionG
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c5;
@@ -1059,7 +1059,7 @@ export const useCreateSubscriptionGroupListing = function useCreateSubscriptionG
             c5 = 0;
             closure_130_0(false);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -1126,7 +1126,7 @@ export const useUpdateSubscriptionGroupListing = function useUpdateSubscriptionG
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c6;
@@ -1160,7 +1160,7 @@ export const useUpdateSubscriptionGroupListing = function useUpdateSubscriptionG
           c6 = 0;
           closure_0(false);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } else if (arg0 === 1) {
           c7 = 3;
           throw value;
@@ -1224,7 +1224,7 @@ export const useDeleteSubscriptionListing = function useDeleteSubscriptionListin
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c6;
@@ -1258,7 +1258,7 @@ export const useDeleteSubscriptionListing = function useDeleteSubscriptionListin
             c6 = 0;
             closure_131_0(false);
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -1325,7 +1325,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } else {
           try {
@@ -1375,7 +1375,7 @@ export const usePublishSubscriptionListing = function usePublishSubscriptionList
               c4 = 0;
               closure_130_0(false);
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -1446,7 +1446,7 @@ export const useUpdateSubscriptionsSettings = function useUpdateSubscriptionsSet
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c5;
@@ -1494,7 +1494,7 @@ export const useUpdateSubscriptionsSettings = function useUpdateSubscriptionsSet
           c5 = 0;
           closure_0(false);
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp29) {
         closure_4 = tmp29;
@@ -1536,7 +1536,7 @@ export const useDeleteSubscriptionGroupListing = function useDeleteSubscriptionG
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c5;
@@ -1569,7 +1569,7 @@ export const useDeleteSubscriptionGroupListing = function useDeleteSubscriptionG
             c5 = 0;
             closure_130_0(false);
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -1634,7 +1634,7 @@ export const useFetchSubscriptionsSettings = function useFetchSubscriptionsSetti
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -1681,7 +1681,7 @@ export const useFetchSubscriptionsSettings = function useFetchSubscriptionsSetti
           c4 = 0;
           closure_0(false);
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp28) {
         closure_3 = tmp28;
@@ -1728,7 +1728,7 @@ export const useUpdateSubscriptionsTrial = function useUpdateSubscriptionsTrial(
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c6;
@@ -1776,7 +1776,7 @@ export const useUpdateSubscriptionsTrial = function useUpdateSubscriptionsTrial(
           c6 = 0;
           closure_0(false);
           c7 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp30) {
         closure_5 = tmp30;

@@ -1,14 +1,14 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 13072
+// Function ID: 13073
 // Name: ContentClassificationVisibility
-// Dependencies: [1392, 6320, 6322, 558, 576, 504, 2]
+// Dependencies: [1392, 5645, 5647, 558, 576, 504, 2]
 // Exports: getContentClassificationVisibility
 
-// Module 12797 (ContentClassificationVisibility)
+// Module 13072 (ContentClassificationVisibility)
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
-import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 6320 */;
-import AgeRestrictionStatus from "AgeRestrictionStatus" /* 6322 */;
+import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5645 */;
+import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5647 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;

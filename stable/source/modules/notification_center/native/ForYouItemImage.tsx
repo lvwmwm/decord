@@ -1,32 +1,32 @@
-// Module ID: 17567
-// Function ID: 17568
+// Module ID: 17906
+// Function ID: 17907
 // Name: ForYouItemImage
-// Dependencies: [19, 17, 2086, 2090, 1392, 17568, 21, 5191, 587, 6336, 9023, 17569, 17570, 17571, 17572, 5128, 17573, 1202, 17574, 17575, 558, 576, 7130, 504, 8577, 8647, 6462, 17576, 5187, 2]
+// Dependencies: [19, 17, 4873, 4877, 1392, 17907, 21, 5003, 587, 6820, 9150, 17908, 17909, 17910, 17911, 5701, 17912, 1202, 17913, 17914, 558, 576, 7285, 504, 8700, 8770, 6940, 17915, 5266, 2]
 
-// Module 17567 (ForYouItemImage)
+// Module 17906 (ForYouItemImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import GuildRecord from "GuildRecord" /* 2086 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6336 */;
-import Pressables from "Pressables" /* 6462 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8577 */;
-import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8647 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9023 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17569 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17570 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17571 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 17572 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 17573 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 17574 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 17575 */;
+import GuildRecord from "GuildRecord" /* 4873 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6820 */;
+import Pressables from "Pressables" /* 6940 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8700 */;
+import profile_customization_ProfileCustomizationUtils from "profile_customization/ProfileCustomizationUtils" /* 8770 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9150 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17908 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17909 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17910 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 17911 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 17912 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 17913 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 17914 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import UserStore from "UserStore" /* 1392 */;
-import Constants from "Constants" /* 17568 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import Constants from "Constants" /* 17907 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -158,7 +158,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       if (cResult[4] === item.message_id) {
         class F {
           constructor() {
-            const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+            const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
             showUserProfileActionSheetDefault(obj);
           }
         }
@@ -172,7 +172,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     class F {
       constructor() {
-        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
         showUserProfileActionSheetDefault(obj);
       }
     }
@@ -186,7 +186,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (cResult[18] !== item.icon_name) {
       class F {
         constructor() {
-          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
           showUserProfileActionSheetDefault(obj);
         }
       }
@@ -198,7 +198,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     class F {
       constructor() {
-        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
         showUserProfileActionSheetDefault(obj);
       }
     }
@@ -210,7 +210,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp18 = null;
     class F {
       constructor() {
-        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
         showUserProfileActionSheetDefault(obj);
       }
     }
@@ -220,7 +220,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
         const obj3 = { uri: null };
         class F {
           constructor() {
-            const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+            const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
             showUserProfileActionSheetDefault(obj);
           }
         }
@@ -232,7 +232,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
       }
       class F {
         constructor() {
-          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
           showUserProfileActionSheetDefault(obj);
         }
       }
@@ -245,14 +245,14 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     tmp18 = null;
     class F {
       constructor() {
-        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
         showUserProfileActionSheetDefault(obj);
       }
     }
     if (null == null) {
       class F {
         constructor() {
-          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+          const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
           showUserProfileActionSheetDefault(obj);
         }
       }
@@ -265,7 +265,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     }
     class F {
       constructor() {
-        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations };
+        const obj = { userId: stateFromStores.id, localUser: stateFromStores, messageId: item.message_id, sourceAnalyticsLocations: analyticsLocations, navigationReplace: false };
         showUserProfileActionSheetDefault(obj);
       }
     }
@@ -311,7 +311,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? (function
     if (null != stateFromStores) {
       let obj = {
         onPress() {
-            const obj = { userId: localUser.id, localUser, messageId: message_id.message_id, sourceAnalyticsLocations };
+            const obj = { userId: localUser.id, localUser, messageId: message_id.message_id, sourceAnalyticsLocations, navigationReplace: false };
             compactMode(analyticsLocations[24])(obj);
           },
         children: null

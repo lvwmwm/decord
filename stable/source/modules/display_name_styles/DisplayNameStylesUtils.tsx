@@ -2,7 +2,7 @@
 // Function ID: 1410
 // Name: DisplayNameStylesUtils
 // Dependencies: [32, 1410, 568, 1411, 683, 1105, 2]
-// Exports: areDisplayNameStylesEqual, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, parseServerDisplayNameStyles, rebuildGummySourceColor, resolveSolidColor, resolveSolidPresetSeed, toEditorDisplayNameStyles, wrapHue
+// Exports: areDisplayNameStylesEqual, buildGummyColors, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, normalizeDisplayNameStylesForApply, parseServerDisplayNameStyles, rebuildGummySourceColor, resolveSolidColor, resolveSolidPresetSeed, toEditorDisplayNameStyles, wrapHue
 
 // Module 1409 (DisplayNameStylesUtils)
 import shallowEqual from "shallowEqual" /* 568 */;
@@ -18,8 +18,9 @@ let _require;
 
 let closure_4;
 let hasOwnProperty;
+let metroImportDefault;
 let metroRequire;
-({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_4, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: hasOwnProperty, getColorPresetsForEffect: metroRequire } = DisplayNameStylesConstants);
+({ DISPLAY_NAME_STYLES_GUMMY_HUE_LIGHTNESS: closure_4, DISPLAY_NAME_STYLES_GUMMY_HUE_SATURATION: hasOwnProperty, getColorPresetsForEffect: metroRequire, HEXAGON_CAMPAIGN_FONTS: metroImportDefault } = DisplayNameStylesConstants);
 let items = [DisplayNameEffect.DisplayNameEffect.NEON, DisplayNameEffect.DisplayNameEffect.TOON, DisplayNameEffect.DisplayNameEffect.POP, DisplayNameEffect.DisplayNameEffect.GUMMY];
 const set = new Set(items);
 const items1 = [{ hueShift: -18, saturation: 0.54, lightness: 0.72 }, { hueShift: -5, saturation: 0.66, lightness: 0.6 }, { hueShift: 9, saturation: 0.56, lightness: 0.68 }, { hueShift: 22, saturation: 0.6, lightness: 0.63 }];
@@ -188,12 +189,32 @@ export const parseServerDisplayNameStyles = function parseServerDisplayNameStyle
 };
 export const generateRandomDisplayNameStyles = function generateRandomDisplayNameStyles(visibleFontOrder, visibleEffectOrder) {
   let items;
+  let arr = visibleFontOrder;
   const tmp = visibleEffectOrder[Math.floor(Math, Math.random(Math) * visibleEffectOrder.length)];
-  const tmp2 = visibleFontOrder[Math.floor(Math, Math.random(Math) * visibleFontOrder.length)];
-  const arr = metroRequire(tmp);
+  const found = visibleFontOrder.filter((item) => !closure_1_7.includes(item));
+  if (found.length > 0) {
+    arr = found;
+  }
+  const tmp2 = arr[Math.floor(Math, Math.random(Math) * arr.length)];
+  const arr3 = metroRequire(tmp);
   const obj = { fontId: tmp2, effectId: tmp, colors: items };
-  items = [...arr[floor(Math, Math.random(Math) * arr.length)]];
+  items = [...arr3[floor(Math, Math.random(Math) * arr3.length)]];
   return obj;
+};
+export const normalizeDisplayNameStylesForApply = function normalizeDisplayNameStylesForApply(effectId, defaultColor) {
+  let tmp = effectId;
+  if (effectId.effectId === DisplayNameEffect.DisplayNameEffect.SOLID) {
+    tmp = effectId;
+    if (effectId.colors.length > 0) {
+      tmp = effectId;
+      if (effectId.colors[0] === defaultColor) {
+        const obj = { colors: [] };
+        const merged = Object.assign(effectId);
+        tmp = obj;
+      }
+    }
+  }
+  return tmp;
 };
 export const hasNonLatinLetters = function hasNonLatinLetters(displayName) {
   if (null == displayName) {

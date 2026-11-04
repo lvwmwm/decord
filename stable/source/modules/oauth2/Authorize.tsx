@@ -1,16 +1,16 @@
-// Module ID: 9528
-// Function ID: 9529
+// Module ID: 9662
+// Function ID: 9663
 // Name: Authorize
-// Dependencies: [2068, 5034, 1087, 9529, 8731, 6240, 4850, 1099, 5175, 2]
+// Dependencies: [4855, 5034, 1087, 9663, 8859, 6754, 4940, 1099, 5734, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 9528 (Authorize)
+// Module 9662 (Authorize)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1099 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
-import _mod6240 from "module_6240" /* 6240 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8731 */;
-import scopes from "scopes" /* 9529 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4940 */;
+import _mod6754 from "module_6754" /* 6754 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8859 */;
+import scopes from "scopes" /* 9663 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5034 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const QueryStringUtils = tmp(5175);
+const QueryStringUtils = tmp(5734);
 ({ EMPTY_NUX_SERVER: hasOwnProperty, FAVORITES: metroRequire, ME: metroImportDefault } = Constants);
 const result = size.fileFinishedImporting("modules/oauth2/Authorize.tsx");
 
@@ -28,7 +28,7 @@ export const filterScopes = function filterScopes(items) {
     const RemovedScopes = scopes.RemovedScopes;
     return !RemovedScopes.includes(item);
   });
-  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(8731).OAuth2Scopes.APPLICATIONS_COMMANDS);
+  const hasItem = found.includes(OAuth2Scopes.OAuth2Scopes.BOT) && !found.includes(tmp(8859).OAuth2Scopes.APPLICATIONS_COMMANDS);
   if (hasItem) {
     found.push(OAuth2Scopes.OAuth2Scopes.APPLICATIONS_COMMANDS);
   }
@@ -44,7 +44,7 @@ export const parseOAuth2AuthorizeProps = function parseOAuth2AuthorizeProps(quer
       return guild_id;
     }
   }
-  const obj = _mod6240;
+  const obj = _mod6754;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {

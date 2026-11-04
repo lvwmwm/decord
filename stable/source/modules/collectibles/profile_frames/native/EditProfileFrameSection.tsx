@@ -1,21 +1,21 @@
-// Module ID: 15659
-// Function ID: 15660
+// Module ID: 15933
+// Function ID: 15934
 // Name: EditProfileFrameSection
-// Dependencies: [19, 17, 7537, 8621, 21, 587, 5191, 14258, 558, 576, 15658, 14259, 7155, 9317, 2]
+// Dependencies: [19, 17, 7689, 8744, 21, 587, 5003, 14527, 558, 576, 15932, 14528, 7310, 9447, 2]
 
-// Module 15659 (EditProfileFrameSection)
+// Module 15933 (EditProfileFrameSection)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7155 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7537 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8621 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9317 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14258 */;
-import useProfileFrameSections from "useProfileFrameSections" /* 15658 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7310 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7689 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8744 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9447 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14527 */;
+import useProfileFrameSections from "useProfileFrameSections" /* 15932 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp;
-const CollectiblesEditUserProfileListItems = tmp(14259);
+const CollectiblesEditUserProfileListItems = tmp(14528);
 const View = react_native.View;
 const isProfileFrameRecord = ProfileFrameRecord.isProfileFrameRecord;
 let closure_6 = ProfileFrameConstants.PROFILE_FRAME_ASPECT_RATIO;
@@ -128,7 +128,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
       return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
     } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-      const EditCollectiblesListItemShop = tmp(14259).EditCollectiblesListItemShop;
+      const EditCollectiblesListItemShop = tmp(14528).EditCollectiblesListItemShop;
       return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
     } else if (isProfileFrameRecord(profileFrame)) {
       const obj4 = { profileFrame, isSelected: selectedSkuId === profileFrame.skuId, setSelectedProfileFrame, size };
@@ -169,7 +169,7 @@ const memoResult = memo(ReactCompilerGating.isReactCompilerEnabled() ? ((setSele
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (profileFrame === useProfileFrameSections.SHOP_ITEM) {
         const obj3 = { size: width, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_FRAME_SHEET };
-        const EditCollectiblesListItemShop = tmp(14259).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(14528).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isProfileFrameRecord(profileFrame)) {
         const obj4 = { profileFrame, isSelected: require === profileFrame.skuId, setSelectedProfileFrame, size: width };

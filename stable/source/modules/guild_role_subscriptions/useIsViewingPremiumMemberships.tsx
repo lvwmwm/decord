@@ -1,12 +1,12 @@
-// Module ID: 13499
-// Function ID: 13500
+// Module ID: 13770
+// Function ID: 13771
 // Name: useIsViewingPremiumMemberships
-// Dependencies: [1087, 2075, 558, 576, 5052, 5045, 2]
+// Dependencies: [1087, 4862, 558, 576, 5052, 5045, 2]
 
-// Module 13499 (useIsViewingPremiumMemberships)
+// Module 13770 (useIsViewingPremiumMemberships)
 import react from "react" /* 576 */;
 import Constants from "Constants" /* 1087 */;
-import ChannelConstants from "ChannelConstants" /* 2075 */;
+import ChannelConstants from "ChannelConstants" /* 4862 */;
 import MemoryRouter from "MemoryRouter" /* 5045 */;
 import RouteUtils from "RouteUtils" /* 5052 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,9 +1,9 @@
-// Module ID: 11997
-// Function ID: 11998
+// Module ID: 12198
+// Function ID: 12199
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 8188, 2090, 1087, 5503, 21, 12, 10101, 5191, 587, 558, 576, 573, 5155, 1128, 11991, 11993, 38, 6457, 5187, 6001, 1202, 11992, 2]
+// Dependencies: [32, 19, 17, 8338, 4877, 1087, 6015, 21, 12, 10230, 5003, 587, 558, 576, 573, 5242, 1128, 12192, 12194, 38, 6935, 5266, 6516, 1202, 12193, 2]
 
-// Module 11997 (AppLauncherAutocompleteActionSheet)
+// Module 12198 (AppLauncherAutocompleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import react2 from "react" /* 576 */;
@@ -11,19 +11,19 @@ import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl2 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5155 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5503 */;
-import merged5 from "merged5" /* 6001 */;
-import TableRow from "TableRow" /* 6457 */;
-import executeCommandDefault from "executeCommand" /* 10101 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11992 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5242 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6015 */;
+import merged5 from "merged5" /* 6516 */;
+import TableRow from "TableRow" /* 6935 */;
+import executeCommandDefault from "executeCommand" /* 10230 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12193 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8188 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8338 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

@@ -492,9 +492,6 @@ const obj = {
   COLLECTIBLES_SHOP_PRODUCT_DETAIL(arg0) {
     return "/shop/product/" + arg0;
   },
-  COLLECTIBLES_SHOP_LAYOUT(arg0) {
-    return "/shop/layout/" + arg0;
-  },
   NITRO_HOME: "/store",
   ACCOUNT_STANDING: "/account-standing",
   CHANNEL_SUMMARIES(arg0) {

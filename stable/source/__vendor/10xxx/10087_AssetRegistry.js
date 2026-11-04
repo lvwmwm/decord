@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stickers/native/images", width: 250, height: 120, scales: [2, 3], hash: "97335968179b868ec33c96b39450902f", name: "img_premium_canvas_mobile", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/stream_feedback", width: 72, height: 72, scales: [1, 2, 3], hash: "a961e7716a9e5270654c872f10256829", name: "feedback-modal-neutral", type: "png" });

@@ -1,10 +1,10 @@
-// Module ID: 5511
-// Function ID: 5512
+// Module ID: 6023
+// Function ID: 6024
 // Name: MarkupTextRule
 // Dependencies: [1951, 2]
 // Exports: textMarkupPatternWithExclusions
 
-// Module 5511 (MarkupTextRule)
+// Module 6023 (MarkupTextRule)
 import _modDef1951 from "module_1951" /* 1951 */;
 import size from "module_2" /* 2 */;
 

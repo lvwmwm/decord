@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "b7959151112c46092618236391150e02", name: "ic_rulebook", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 375, height: 120, scales: [2, 3], hash: "5ac140c0ecf6d86d0e8c0b66480112aa", name: "IAP_feature_education", type: "png" });

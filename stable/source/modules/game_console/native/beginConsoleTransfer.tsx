@@ -1,13 +1,13 @@
-// Module ID: 11498
-// Function ID: 11499
+// Module ID: 11683
+// Function ID: 11684
 // Name: beginConsoleTransfer
-// Dependencies: [5, 1087, 11499, 11501, 5155, 11508, 2002, 1275, 11511, 2]
+// Dependencies: [5, 1087, 11684, 11686, 5242, 11693, 2002, 1275, 11696, 2]
 // Exports: beginConsoleTransfer
 
-// Module 11498 (beginConsoleTransfer)
+// Module 11683 (beginConsoleTransfer)
 import Constants from "Constants" /* 1087 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11499 */;
-import transferToXboxDefault from "transferToXbox" /* 11511 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 11684 */;
+import transferToXboxDefault from "transferToXbox" /* 11696 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let obj = function _beginConsoleTransfer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -92,7 +92,7 @@ let obj = function _beginConsoleTransfer() {
             return { value, done: true };
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp35) {
           c5 = 3;
           throw tmp35;

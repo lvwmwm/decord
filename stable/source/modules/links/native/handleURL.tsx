@@ -1,14 +1,14 @@
-// Module ID: 4896
-// Function ID: 4897
+// Module ID: 5689
+// Function ID: 5690
 // Name: handleURL
-// Dependencies: [5, 17, 4897, 1087, 3, 4898, 4900, 4901, 4902, 1951, 4903, 1128, 5152, 1384, 5155, 1389, 5168, 7314, 14859, 2]
+// Dependencies: [5, 17, 5243, 1087, 3, 5690, 5691, 5692, 5693, 1951, 5694, 1128, 5725, 1384, 5242, 1389, 5728, 7466, 15127, 2]
 // Exports: default
 
-// Module 4896 (handleURL)
+// Module 5689 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 4897 */;
+import ActionSheetStore from "ActionSheetStore" /* 5243 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -214,7 +214,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp57;
         c6 = 0;
         c8 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;

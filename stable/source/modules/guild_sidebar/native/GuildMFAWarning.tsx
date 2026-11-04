@@ -1,24 +1,24 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17665
+// Function ID: 17666
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1087, 21, 5191, 587, 10839, 2131, 2002, 4901, 558, 576, 5128, 17328, 1128, 5187, 1202, 6462, 2]
+// Dependencies: [5, 19, 1087, 21, 5003, 587, 11091, 2067, 2002, 5692, 558, 576, 5701, 17666, 1128, 5266, 1202, 6940, 2]
 // Exports: getScaledGuildMFAWarningHeight
 
-// Module 17327 (GuildMFAWarning)
+// Module 17665 (GuildMFAWarning)
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl3 from "intl" /* 1128 */;
 import native from "native" /* 1202 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Pressables from "Pressables" /* 6462 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17328 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import Pressables from "Pressables" /* 6940 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11091 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17666 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
@@ -47,7 +47,7 @@ let obj = function _handlePress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -81,7 +81,7 @@ let obj = function _handlePress() {
           obj = closure_129_1(closure_129_2[9]);
           obj.openURL(articleURL.getArticleURL(closure_129_4.SETTING_UP_TWO_FACTOR));
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp16) {
         c3 = 3;
@@ -141,7 +141,7 @@ const tmp6 = ReactCompilerGating.isReactCompilerEnabled() ? (function GuildMFAWa
   if (cResult[4] !== tmp4.MFAWarningLink) {
     const obj3 = { variant: "text-xs/medium", color: "text-default", children: items };
     items = [tmp10, ];
-    const Text = tmp(5187).Text;
+    const Text = tmp(5266).Text;
     const obj4 = { style: MFAWarningLink, children: items1 };
     items1 = [" ", tmp12];
     items[1] = metroRequire(native.LegacyText, obj4);

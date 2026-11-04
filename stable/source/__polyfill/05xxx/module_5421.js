@@ -1,26 +1,53 @@
 // Module ID: 5421
 // Function ID: 5422
-// Dependencies: [17, 81, 106, 65]
+// Dependencies: [5397, 5412, 5388]
+// Exports: useHoverGesture
 
 // Module 5421
-import react_native from "react-native" /* 17 */;
-import resolveAssetSource_mod from "resolveAssetSource" /* 81 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import ComposedGestureName from "ComposedGestureName" /* 5388 */;
+import maybeExtractNativeEvent from "maybeExtractNativeEvent" /* 5397 */;
+import _mod5412 from "module_5412" /* 5412 */;
 
-let obj2;
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSTabsScreenAndroid", directEventTypes: { topWillAppear: { registrationName: "onWillAppear" }, topDidAppear: { registrationName: "onDidAppear" }, topWillDisappear: { registrationName: "onWillDisappear" }, topDidDisappear: { registrationName: "onDidDisappear" } }, validAttributes: obj2 };
-let resolveAssetSource = resolveAssetSource_mod;
-if ("default" in resolveAssetSource) {
-  resolveAssetSource = resolveAssetSource.default;
+function transformHoverProps(arg0) {
+  const obj = maybeExtractNativeEvent;
+  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
+  arg0.fillInDefaultValues = fillInDefaultValues;
+  return arg0;
 }
-obj2 = { screenKey: true, preventNativeSelection: true, title: true, badgeValue: true, tabBarItemTestID: true, tabBarItemAccessibilityLabel: true, specialEffects: true, drawableIconResourceName: true, imageIconResource: { process: resolveAssetSource }, selectedDrawableIconResourceName: true, selectedImageIconResource: { process: resolveAssetSource }, standardAppearance: true };
-resolveAssetSource = resolveAssetSource_mod;
-if ("default" in resolveAssetSource) {
-  resolveAssetSource = resolveAssetSource.default;
+function diffCalculator(arg0, arg1) {
+  let num2;
+  let num = 0;
+  if (arg1) {
+    num = arg0.x - arg1.x;
+  }
+  const obj = { changeX: num, changeY: num2 };
+  num2 = 0;
+  if (arg1) {
+    num2 = arg0.y - arg1.y;
+  }
+  return obj;
 }
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onWillAppear: true, onDidAppear: true, onWillDisappear: true, onDidDisappear: true }));
+diffCalculator.__closure = {};
+diffCalculator.__workletHash = 622993324586;
+diffCalculator.__initData = { code: "function diffCalculator_Pnpm_useHoverGestureTs1(current,previous){return{changeX:previous?current.x-previous.x:0,changeY:previous?current.y-previous.y:0};}" };
+function fillInDefaultValues(arg0) {
+  arg0.changeX = 0;
+  arg0.changeY = 0;
+}
+fillInDefaultValues.__closure = {};
+fillInDefaultValues.__workletHash = 11545520927040;
+fillInDefaultValues.__initData = { code: "function fillInDefaultValues_Pnpm_useHoverGestureTs2(event){event.changeX=0;event.changeY=0;}" };
+const items = [["effect", "hoverEffect"]];
+const map = new Map(items);
+let closure_6 = {};
 
-export default module_65.get("RNSTabsScreenAndroid", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export const useHoverGesture = function useHoverGesture(cResult) {
+  let tmp = cResult;
+  if (cResult === undefined) {
+    tmp = closure_6;
+  }
+  const obj = maybeExtractNativeEvent;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformHoverProps);
+  const obj2 = _mod5412;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Hover, clonedAndRemappedConfig);
+};

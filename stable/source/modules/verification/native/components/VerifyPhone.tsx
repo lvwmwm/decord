@@ -1,10 +1,10 @@
-// Module ID: 7044
-// Function ID: 7045
+// Module ID: 7205
+// Function ID: 7206
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 21, 7011, 7045, 7046, 1128, 2]
+// Dependencies: [5, 32, 19, 21, 7172, 7206, 7207, 1128, 2]
 // Exports: default
 
-// Module 7044 (VerifyPhone)
+// Module 7205 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -59,7 +59,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c4;
@@ -120,10 +120,10 @@ export default function VerifyPhone(phone) {
           } else if (value) {
             c4 = 0;
             c6 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
           c6 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
         c5 = 2;
         c6 = 1;
@@ -158,7 +158,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -189,7 +189,7 @@ export default function VerifyPhone(phone) {
         } else {
           closure_1_4(false);
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp11) {
         c3 = 3;

@@ -1,24 +1,24 @@
-// Module ID: 13994
-// Function ID: 13995
+// Module ID: 14253
+// Function ID: 14254
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 5191, 587, 4945, 11109, 5192, 1202, 13995, 6612, 4946, 7092, 7122, 13996, 13986, 2]
+// Dependencies: [32, 19, 17, 21, 5003, 587, 5084, 11265, 5238, 1202, 14254, 5329, 5085, 7253, 5614, 14255, 14245, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 13994 (MediaModalOverlayFooter)
+// Module 14253 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import native from "native" /* 1202 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4945 */;
-import timing from "timing" /* 5192 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6612 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11109 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 5084 */;
+import timing from "timing" /* 5238 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5329 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 11265 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import size from "module_2" /* 2 */;
 
-let __initData4, __initData5, __initData6, set, set2, set3;
+let __initData4, __initData5, set, set2, set3;
 
 let metroImportDefault;
 let metroRequire;
@@ -233,7 +233,7 @@ export const MediaModalOverlayFooter = function MediaModalOverlayFooter(channelI
   const b = mediaModalFooterBackgroundColorRgba.b;
   __initData5 = b;
   const a = mediaModalFooterBackgroundColorRgba.a;
-  __initData6 = a;
+  const __initData6 = a;
   const MediaModalFooterUnderlay = tmp30.MediaModalFooterUnderlay;
   function ie() {
     let items;

@@ -1,12 +1,12 @@
-// Module ID: 14777
-// Function ID: 14778
+// Module ID: 15044
+// Function ID: 15045
 // Name: requestReviewModal
-// Dependencies: [5, 3, 14778, 2]
+// Dependencies: [5, 3, 15045, 2]
 // Exports: default
 
-// Module 14777 (requestReviewModal)
+// Module 15044 (requestReviewModal)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 14778 */;
+import react_nativeDefault from "react-native" /* 15045 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = function _requestReviewModal() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;

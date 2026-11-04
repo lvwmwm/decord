@@ -1,48 +1,88 @@
 // Module ID: 15388
 // Function ID: 15389
-// Dependencies: [15331, 15328, 15327, 15389, 15348, 15377, 15362, 15330, 15357]
+// Dependencies: [15382, 15353, 15373]
 
 // Module 15388
-import _mod15327 from "module_15327" /* 15327 */;
-import _mod15328 from "module_15328" /* 15328 */;
-import _mod15330 from "module_15330" /* 15330 */;
-import _mod15331 from "module_15331" /* 15331 */;
-import _mod15348 from "module_15348" /* 15348 */;
-import _mod15377 from "module_15377" /* 15377 */;
+import _mod15353 from "module_15353" /* 15353 */;
 
-let closure_4 = _mod15331([].concat);
-if (!assign) {
-  assign = function assign(arg0, arg1) {
-    let num;
-    const tmp = _mod15348(arg0);
-    const length = arguments.length;
-    const f = _mod15377.f;
-    for (let num = 1; length > num; num = num + 1) {
-      let arr;
-      let num2;
-      let tmp3 = require;
-      let tmp5 = _mod15330(arguments[num]);
-      if (f) {
-        let tmp8 = tmp3(15389)(tmp5);
-        arr = closure_4(tmp8, f(tmp5));
-      } else {
-        arr = tmp3(15389)(tmp5);
+let tmp;
+const _mod15373 = tmp(15373);
+
+export default function(arg0, arg1) {
+  let obj;
+  let tmp = obj;
+  obj = new obj(15382)(arg0, arg1);
+  const tmp3 = new obj(15353)("0.0.0");
+  if (obj.test(tmp3)) {
+    return tmp3;
+  } else {
+    let self = this;
+    let self2 = this;
+    const tmp4 = new tmp(15353)("0.0.0-0");
+    if (obj.test(tmp4)) {
+      return tmp4;
+    } else {
+      let num = 0;
+      let num3 = 0;
+      let tmp7 = null;
+      let tmp8 = null;
+      if (0 < obj.set.length) {
+        do {
+          let arr = obj.set[num3];
+          obj = null;
+          let item = arr.forEach(function(semver) {
+            obj = new _mod15353(semver.semver.version);
+            const operator = semver.operator;
+            if (">" === operator) {
+              if (0 === obj.prerelease.length) {
+                obj.patch = obj.patch + 1;
+              } else {
+                const prerelease = obj.prerelease;
+                prerelease.push(0);
+              }
+              obj.raw = obj.format();
+            } else if ("" !== operator) {
+              if (">=" !== operator) {
+                if ("<" !== operator) {
+                  if ("<=" !== operator) {
+                    const _Error = Error;
+                    const _HermesInternal = HermesInternal;
+                    const self = this;
+                    const self2 = this;
+                    const error = new Error("Unexpected operation: " + semver.operator);
+                    throw error;
+                  }
+                }
+              }
+            }
+            obj && !_mod15373(obj, obj);
+          });
+          let tmp11 = !obj;
+          let tmp12 = tmp7;
+          if (obj) {
+            let tmp14 = tmp12;
+            if (tmp14) {
+              tmp14 = !obj(15373)(tmp12, obj);
+            }
+            tmp11 = tmp14;
+          }
+          if (!tmp11) {
+            tmp12 = obj;
+          }
+          num3 = num + 1;
+          tmp7 = tmp12;
+          tmp8 = tmp12;
+          num = num3;
+        } while (num3 < obj.set.length);
       }
-      let length2 = arr.length;
-      for (let num2 = 0; length2 > num2; num2 = num2 + 1) {
-        let tmp9 = arr[num2];
-        let tmp10 = require;
-        let tmp12 = _mod15327;
-        if (tmp12) {
-          tmp12 = !tmp10(15357)(tmp2, tmp5, tmp9);
-        }
-        if (!tmp12) {
-          tmp[tmp9] = tmp5[tmp9];
+      let tmp18 = null;
+      if (tmp8) {
+        tmp18 = null;
+        if (obj.test(tmp8)) {
+          tmp18 = tmp8;
         }
       }
+      return tmp18;
     }
-    return tmp;
-  };
-}
-
-export default assign;
+  }
+};

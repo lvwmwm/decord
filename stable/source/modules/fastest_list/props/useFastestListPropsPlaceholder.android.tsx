@@ -1,13 +1,13 @@
-// Module ID: 7027
-// Function ID: 7028
+// Module ID: 7188
+// Function ID: 7189
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7028, 5063, 558, 576, 2]
+// Dependencies: [19, 17, 7189, 5000, 558, 576, 2]
 
-// Module 7027 (useFastestListPropsPlaceholder)
+// Module 7188 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
-import ColorUtils from "ColorUtils" /* 5063 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7028 */;
+import ColorUtils from "ColorUtils" /* 5000 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7189 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
@@ -26,7 +26,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "ix", borderBottomLeftRadius: "content", borderBottomRightRadius: "hd", divider: "end", dividerColor: "y", dividerPaddingLeft: "toCharArray$esjava$1", dividerPaddingRight: "toCharArray$esjava$1", placeholderShape: "toCharArray$esjava$1", placeholderShapeColor: "slice", placeholderShapeCount: "", placeholderShapeGap: "", placeholderShapePaddingHorizontal: "", placeholderShapePaddingVertical: "Icon", placeholderFeedBackgroundColor: "toCharArray$esjava$1", placeholderFeedColor: "toCharArray$esjava$1", placeholderFeedLabelPadding: "toCharArray$esjava$1", placeholderFeedLabelPaddingInnerRatio: "r", placeholderFeedLabelSize: "__initData", placeholderFeedLabelSecondarySize: "Icon", placeholderFeedPadding: "content", placeholderFeedShape: "accessible", placeholderFeedShapeSize: "mn", placeholderType: NONE, width: "<string:17955307>", height: "i96lO+", verticalAlignment: "<string:73027840>", horizontalAlignment: "<string:2577019138>" };
+  size = { borderRadius: "Array", borderTopLeftRadius: "defineProperty", borderTopRightRadius: "ix", borderBottomLeftRadius: "y", borderBottomRightRadius: "substring_i", divider: "ix", dividerColor: "replace", dividerPaddingLeft: "guildId", dividerPaddingRight: "ix", placeholderShape: "item", placeholderShapeColor: "limit", placeholderShapeCount: "ix", placeholderShapeGap: "__closure", placeholderShapePaddingHorizontal: "registerAsset", placeholderShapePaddingVertical: "ix", placeholderFeedBackgroundColor: "split", placeholderFeedColor: "T", placeholderFeedLabelPadding: "c", placeholderFeedLabelPaddingInnerRatio: "enabled", placeholderFeedLabelSize: "toCharArray$esjava$1", placeholderFeedLabelSecondarySize: "toCharArray$esjava$1", placeholderFeedPadding: "toCharArray$esjava$1", placeholderFeedShape: "toCharArray$esjava$1", placeholderFeedShapeSize: "toCharArray$esjava$1", placeholderType: NONE, width: "onLayout", height: "onTapClanTagChiplet", verticalAlignment: false, horizontalAlignment: null };
   if (null == listFooter) {
     return size;
   } else {

@@ -1,20 +1,20 @@
-// Module ID: 19147
-// Function ID: 19148
+// Module ID: 19521
+// Function ID: 19522
 // Name: DispatcherBridge
-// Dependencies: [5190, 6245, 6287, 14103, 502, 2122, 2090, 1087, 3, 561, 559, 1267, 584, 2001, 1257, 2]
+// Dependencies: [5269, 6758, 6799, 14371, 502, 4909, 4877, 1087, 3, 561, 559, 1267, 584, 2001, 1257, 2]
 
-// Module 19147 (DispatcherBridge)
+// Module 19521 (DispatcherBridge)
 import LoggerDefault from "Logger" /* 3 */;
 import libdiscoreExperiments from "libdiscoreExperiments" /* 559 */;
 import Constants from "Constants" /* 1087 */;
 import SentryUtilsDefault from "SentryUtils" /* 1257 */;
-import DevSettingsStore from "DevSettingsStore" /* 5190 */;
-import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6245 */;
-import GuildStickersStore from "GuildStickersStore" /* 6287 */;
-import NoteStore from "NoteStore" /* 14103 */;
+import DevSettingsStore from "DevSettingsStore" /* 5269 */;
+import RawGuildEmojiStore from "RawGuildEmojiStore" /* 6758 */;
+import GuildStickersStore from "GuildStickersStore" /* 6799 */;
+import NoteStore from "NoteStore" /* 14371 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import GuildStore from "GuildStore" /* 2090 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import GuildStore from "GuildStore" /* 4877 */;
 import size from "module_2" /* 2 */;
 
 let _instance_members_initializer_DispatcherBridge_, recordType;

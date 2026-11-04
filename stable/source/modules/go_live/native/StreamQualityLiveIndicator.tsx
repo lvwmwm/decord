@@ -1,21 +1,21 @@
-// Module ID: 11287
-// Function ID: 11288
+// Module ID: 11462
+// Function ID: 11463
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1087, 1394, 5216, 21, 5191, 587, 558, 576, 11228, 9837, 7130, 4945, 5192, 1202, 5370, 11288, 1267, 9693, 9694, 4864, 5128, 9803, 6462, 2]
+// Dependencies: [19, 17, 1087, 1394, 5750, 21, 5003, 587, 558, 576, 11399, 9967, 7285, 5084, 5238, 1202, 5910, 11463, 1267, 9824, 9825, 2053, 5701, 9933, 6940, 2]
 
-// Module 11287 (StreamQualityLiveIndicator)
+// Module 11462 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import timing from "timing" /* 5192 */;
-import Constants2 from "Constants" /* 5216 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9693 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9694 */;
+import timing from "timing" /* 5238 */;
+import Constants2 from "Constants" /* 5750 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9824 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9825 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1394 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 

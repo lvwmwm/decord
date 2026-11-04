@@ -1,15 +1,15 @@
-// Module ID: 11088
-// Function ID: 11089
+// Module ID: 11244
+// Function ID: 11245
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 2068, 1087, 5185, 584, 1297, 7635, 7445, 5206, 7290, 2]
+// Dependencies: [5, 4855, 1087, 5008, 584, 1297, 7787, 7598, 5743, 7443, 2]
 
-// Module 11088 (ActivitiesActionCreators)
+// Module 11244 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
-import MessageConstants from "MessageConstants" /* 5185 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5206 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7290 */;
+import MessageConstants from "MessageConstants" /* 5008 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5743 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7443 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
 
@@ -143,11 +143,11 @@ let obj = {
       return self.sendActivityInvite(obj);
     });
   },
-  getJoinSecret(arg0, arg1, arg2, channelId, c5) {
+  getJoinSecret(arg0, arg1, arg2, session_id, c5) {
     let closure_0 = arg0;
     let closure_1 = arg1;
     let closure_2 = arg2;
-    _asyncToGenerator = channelId;
+    _asyncToGenerator = session_id;
     let closure_4 = c5;
     return (async () => {
       let c1;

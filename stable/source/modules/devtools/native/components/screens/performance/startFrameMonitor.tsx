@@ -1,10 +1,10 @@
-// Module ID: 16812
-// Function ID: 16813
+// Module ID: 17142
+// Function ID: 17143
 // Name: startFrameMonitor
 // Dependencies: [2]
 // Exports: startFrameMonitor
 
-// Module 16812 (startFrameMonitor)
+// Module 17142 (startFrameMonitor)
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_4;

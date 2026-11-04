@@ -1,11 +1,11 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12531
+// Function ID: 12532
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6293, 558, 576, 504, 11066, 11067, 1128, 3883, 11676, 2]
+// Dependencies: [5, 32, 19, 6805, 558, 576, 504, 10838, 10839, 1128, 3862, 11880, 2]
 
-// Module 12305 (useConjurePublishScheduleProposal)
-import _modDef3883 from "module_3883" /* 3883 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6293 */;
+// Module 12531 (useConjurePublishScheduleProposal)
+import _modDef3862 from "module_3862" /* 3862 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6805 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -147,8 +147,8 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
       }
       const formatToPlainString = tmp19.formatToPlainString;
       let obj4 = { time: tmpResult2.formatPublishScheduleTime(trigger.next_run_at) };
-      const orZDqY = _modDef3883.orZDqY;
-      tmpResult2 = tmp(11676);
+      const orZDqY = _modDef3862.orZDqY;
+      tmpResult2 = tmp(11880);
       formatToPlainStringResult = formatToPlainString(orZDqY, obj4);
     }
     cResult[8] = trigger.next_run_at;
@@ -169,7 +169,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -221,7 +221,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp35) {
         if (0 === c3) {
@@ -276,7 +276,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       let c3;
@@ -328,7 +328,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
             c3 = 0;
           }
           c5 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp35) {
         dependencyMap = tmp35;
@@ -346,13 +346,13 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function useConjurePu
     let intl = tmp(1128).intl;
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
-    const orZDqY = _modDef3883.orZDqY;
-    tmpResult = tmp(11676);
+    const orZDqY = _modDef3862.orZDqY;
+    tmpResult = tmp(11880);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(11676);
+  tmpResult2 = tmp(11880);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

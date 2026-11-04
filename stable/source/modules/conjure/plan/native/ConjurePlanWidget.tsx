@@ -1,24 +1,24 @@
-// Module ID: 12269
-// Function ID: 12270
+// Module ID: 12490
+// Function ID: 12491
 // Name: ConjurePlanWidget
-// Dependencies: [19, 502, 21, 5191, 587, 558, 576, 8641, 504, 7591, 11735, 2]
+// Dependencies: [19, 502, 21, 5003, 587, 558, 576, 8764, 504, 7740, 11939, 2]
 
-// Module 12269 (ConjurePlanWidget)
+// Module 12490 (ConjurePlanWidget)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7591 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8641 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7740 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8764 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let tmp5;
-const UserProfileApplicationWidgetCardDefault = tmp5(11735);
+const UserProfileApplicationWidgetCardDefault = tmp5(11939);
 const jsx = Fragment.jsx;
 let obj = { card: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
@@ -53,7 +53,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ConjurePlanW
     const self = this;
     const self2 = this;
     const obj2 = { applicationId };
-    const applicationWidget = new tmp(7591).ApplicationWidget(obj2);
+    const applicationWidget = new tmp(7740).ApplicationWidget(obj2);
     cResult[2] = applicationId;
     cResult[3] = applicationWidget;
     tmp11 = applicationWidget;

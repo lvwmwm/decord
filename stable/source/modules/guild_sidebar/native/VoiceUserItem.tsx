@@ -1,30 +1,30 @@
-// Module ID: 17250
-// Function ID: 17251
+// Module ID: 17584
+// Function ID: 17585
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1087, 21, 1202, 10839, 5191, 587, 11896, 558, 576, 9127, 9129, 1267, 1417, 17251, 9076, 9078, 9072, 9074, 11187, 13955, 8436, 13953, 2]
+// Dependencies: [19, 17, 1087, 21, 1202, 11091, 5003, 587, 12096, 558, 576, 9254, 9256, 1267, 1417, 17585, 9203, 9205, 9199, 9201, 11359, 14214, 8539, 14212, 2]
 // Exports: getVoiceUserHeight
 
-// Module 17250 (VoiceUserItem)
+// Module 17584 (VoiceUserItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1417 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8436 */;
-import HeadphonesDenyIcon from "HeadphonesDenyIcon" /* 9072 */;
-import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9074 */;
-import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9076 */;
-import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9078 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 10839 */;
-import VideoIcon from "VideoIcon" /* 11187 */;
-import GameActivityIconDefault from "GameActivityIcon" /* 13953 */;
-import getConsoleIcon from "getConsoleIcon" /* 13955 */;
-import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 17251 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8539 */;
+import HeadphonesDenyIcon from "HeadphonesDenyIcon" /* 9199 */;
+import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9201 */;
+import MicrophoneDenyIcon from "MicrophoneDenyIcon" /* 9203 */;
+import MicrophoneSlashIcon from "MicrophoneSlashIcon" /* 9205 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11091 */;
+import VideoIcon from "VideoIcon" /* 11359 */;
+import GameActivityIconDefault from "GameActivityIcon" /* 14212 */;
+import getConsoleIcon from "getConsoleIcon" /* 14214 */;
+import VoiceUserNameItemDefault from "VoiceUserNameItem" /* 17585 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
-import ChannelListLayout from "ChannelListLayout" /* 11896 */;
+import createStyles_mod from "createStyles" /* 5003 */;
+import ChannelListLayout from "ChannelListLayout" /* 12096 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 

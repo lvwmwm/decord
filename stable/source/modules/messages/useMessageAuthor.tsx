@@ -1,19 +1,19 @@
-// Module ID: 5883
-// Function ID: 5884
+// Module ID: 6398
+// Function ID: 6399
 // Name: useMessageAuthor
-// Dependencies: [2068, 2128, 2122, 2090, 4855, 1392, 558, 38, 576, 504, 5057, 5884, 2]
+// Dependencies: [4855, 4915, 4909, 4877, 4945, 1392, 558, 38, 576, 504, 5057, 6399, 2]
 // Exports: getMessageAuthor
 
-// Module 5883 (useMessageAuthor)
+// Module 6398 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
 import react from "react" /* 576 */;
 import UserUtilsDefault from "UserUtils" /* 5057 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
-import GuildMemberStore from "GuildMemberStore" /* 2128 */;
-import GuildRoleStore from "GuildRoleStore" /* 2122 */;
-import GuildStore from "GuildStore" /* 2090 */;
-import RelationshipStore from "RelationshipStore" /* 4855 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
+import GuildMemberStore from "GuildMemberStore" /* 4915 */;
+import GuildRoleStore from "GuildRoleStore" /* 4909 */;
+import GuildStore from "GuildStore" /* 4877 */;
+import RelationshipStore from "RelationshipStore" /* 4945 */;
 import UserStore from "UserStore" /* 1392 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
@@ -256,7 +256,7 @@ function useNullableMessageAuthor(message) {
                 return guild.getGuild(guild_id);
               }
             }
-            const tmp65 = tmp47(5884)(tmp64);
+            const tmp65 = tmp47(6399)(tmp64);
             if (null != message) {
               class F {
                 constructor() {

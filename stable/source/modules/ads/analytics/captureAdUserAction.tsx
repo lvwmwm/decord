@@ -1,25 +1,25 @@
-// Module ID: 9477
-// Function ID: 9478
+// Module ID: 9605
+// Function ID: 9606
 // Name: captureAdUserAction
-// Dependencies: [5, 7656, 1087, 6235, 7672, 7652, 7681, 7687, 1267, 1281, 1384, 7630, 9478, 7682, 7663, 9480, 2]
+// Dependencies: [5, 7808, 1087, 6749, 7824, 7804, 7833, 7839, 1267, 1281, 1384, 7782, 9606, 7834, 7815, 9608, 2]
 // Exports: captureAdUserAction
 
-// Module 9477 (captureAdUserAction)
+// Module 9605 (captureAdUserAction)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
 import PlatformUtils from "PlatformUtils" /* 1384 */;
-import AdCreativeType from "AdCreativeType" /* 6235 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7630 */;
-import QuestDataUtils from "QuestDataUtils" /* 7652 */;
-import getQuestLogger from "getQuestLogger" /* 7663 */;
-import AnalyticsActions from "AnalyticsActions" /* 7672 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 7681 */;
-import AdDataUtils from "AdDataUtils" /* 7682 */;
-import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7687 */;
-import BrandSafetyContext from "BrandSafetyContext" /* 9478 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9480 */;
+import AdCreativeType from "AdCreativeType" /* 6749 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 7782 */;
+import QuestDataUtils from "QuestDataUtils" /* 7804 */;
+import getQuestLogger from "getQuestLogger" /* 7815 */;
+import AnalyticsActions from "AnalyticsActions" /* 7824 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7833 */;
+import AdDataUtils from "AdDataUtils" /* 7834 */;
+import QuestHomeSearchSession from "QuestHomeSearchSession" /* 7839 */;
+import BrandSafetyContext from "BrandSafetyContext" /* 9606 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9608 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 7656 */;
+import QuestStore from "QuestStore" /* 7808 */;
 import size from "module_2" /* 2 */;
 
 let c2, c5, c7, c8, click_id;
@@ -55,7 +55,7 @@ let obj = function _emitClickEventWithCreative() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -151,7 +151,7 @@ let obj = function _emitClickEventWithCreative() {
             trackQuestEvent(obj13);
           }
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp54) {
         c8 = 3;
@@ -180,7 +180,7 @@ obj = function _handleClickInternalAction() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ obj = function _handleClickInternalAction() {
             return { value, done: true };
           }
           c3 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } catch (tmp8) {
           c3 = 3;
           throw tmp8;
@@ -253,7 +253,7 @@ obj = function _handleClickExternalAdvertiserCtaAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -281,7 +281,7 @@ obj = function _handleClickExternalAdvertiserCtaAction() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } catch (tmp6) {
         c1 = 3;
@@ -385,7 +385,7 @@ obj = function _handleViewInternalSurfaceImpressionAction() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       try {
@@ -453,7 +453,7 @@ obj = function _handleViewInternalSurfaceImpressionAction() {
           track(QUEST_CONTENT_VIEWED, obj8);
         }
         c5 = 3;
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       } catch (tmp30) {
         c5 = 3;
         throw tmp30;

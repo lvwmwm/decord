@@ -1,15 +1,15 @@
-// Module ID: 13567
-// Function ID: 13568
+// Module ID: 13821
+// Function ID: 13822
 // Name: DebugUploadManager
-// Dependencies: [5, 2068, 3, 17, 5891, 5389, 13568, 7, 13569, 13570, 562, 5079, 13571, 13572, 13573, 13574, 2]
+// Dependencies: [5, 4855, 3, 17, 6406, 5929, 13822, 7, 13823, 13824, 562, 5189, 13825, 13826, 13827, 13828, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 13567 (DebugUploadManager)
+// Module 13821 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2068 */;
+import ChannelStore from "ChannelStore" /* 4855 */;
 import size from "module_2" /* 2 */;
 
 let appFirstVisibleTimestamp, body, message;
@@ -45,7 +45,7 @@ let obj = function _uploadDebugLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _uploadDebugLogFiles() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp33) {
           closure_4 = tmp33;
@@ -149,7 +149,7 @@ obj = function _uploadAppLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let tmp80;
@@ -308,7 +308,7 @@ obj = function _uploadAppLogFiles() {
               return obj13;
             }
             c7 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
           c5 = 3;
           appFirstVisibleTimestamp = closure_131_8;

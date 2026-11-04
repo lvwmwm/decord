@@ -18306,7 +18306,7 @@ let closure_210 = {
     }
     tmp3.memoizedState = obj2;
   },
-  useInsertionEffect(cResult, items) {
+  useInsertionEffect(R, items) {
     const next = { memoizedState: null, baseState: null, baseQueue: null, queue: null, next: null };
     if (null === next) {
       _null.memoizedState = next;
@@ -18319,7 +18319,7 @@ let closure_210 = {
     if (undefined !== items) {
       tmp4 = items;
     }
-    obj2 = { tag: 3, create: cResult, deps: tmp4, inst: { destroy: "r" }, next: null };
+    obj2 = { tag: 3, create: R, deps: tmp4, inst: { destroy: "r" }, next: null };
     let updateQueue = _null.updateQueue;
     if (null === updateQueue) {
       const obj3 = { lastEffect: null, events: null, stores: null, memoCache: null };

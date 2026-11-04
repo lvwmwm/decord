@@ -1,16 +1,16 @@
-// Module ID: 7147
-// Function ID: 7148
+// Module ID: 7302
+// Function ID: 7303
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1087, 21, 558, 576, 5127, 6019, 1128, 7148, 7149, 1267, 5206, 1417, 5065, 1202, 5137, 7143, 2]
+// Dependencies: [5, 19, 1087, 21, 558, 576, 5237, 6534, 1128, 7303, 7304, 1267, 5743, 1417, 5010, 1202, 5710, 7298, 2]
 
-// Module 7147 (ProviderConnectionCard)
+// Module 7302 (ProviderConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1087 */;
 import native from "native" /* 1202 */;
 import AvatarUtils from "AvatarUtils" /* 1417 */;
-import shared from "shared" /* 5065 */;
-import LinkIcon from "LinkIcon" /* 5137 */;
-import PlatformsDefault from "Platforms" /* 6019 */;
+import shared from "shared" /* 5010 */;
+import LinkIcon from "LinkIcon" /* 5710 */;
+import PlatformsDefault from "Platforms" /* 6534 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
@@ -170,7 +170,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConn
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -206,7 +206,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConn
             return obj;
           } else {
             c1 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp8) {
           c1 = 3;
@@ -287,7 +287,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConn
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -323,7 +323,7 @@ let tmp2 = ReactCompilerGating.isReactCompilerEnabled() ? (function ProviderConn
             return obj;
           } else {
             guildId = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp8) {
           guildId = 3;

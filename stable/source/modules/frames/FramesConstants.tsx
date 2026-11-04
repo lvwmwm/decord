@@ -1,13 +1,13 @@
-// Module ID: 6296
-// Function ID: 6297
+// Module ID: 6808
+// Function ID: 6809
 // Name: FramesConstants
-// Dependencies: [1087, 6297, 38, 2]
+// Dependencies: [1087, 5658, 38, 2]
 // Exports: asLaunched, getFrameHostWindowKey, getFrameIntentForSurface, getFrameLaunchChannelId, getFrameSurfaceForChannel, getPipOrientationLockStateForFrame, isLaunched, makeFrameId
 
-// Module 6296 (FramesConstants)
+// Module 6808 (FramesConstants)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1087 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 6297 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5658 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;
@@ -100,14 +100,14 @@ export const getFrameLaunchChannelId = function getFrameLaunchChannelId(surface)
   }
   return channelId;
 };
-export const asLaunched = function asLaunched(mainFrame) {
+export const asLaunched = function asLaunched(frame) {
   let state;
-  if (mainFrame != null) {
-    state = mainFrame.state;
+  if (frame != null) {
+    state = frame.state;
   }
   let tmp2 = null;
   if ("launched" === state) {
-    tmp2 = mainFrame;
+    tmp2 = frame;
   }
   return tmp2;
 };

@@ -1,15 +1,15 @@
-// Module ID: 9628
-// Function ID: 9629
+// Module ID: 9759
+// Function ID: 9760
 // Name: ForumActionCreators
-// Dependencies: [5, 1087, 5399, 1128, 584, 1297, 8169, 9629, 9630, 9631, 8171, 2]
+// Dependencies: [5, 1087, 5940, 1128, 584, 1297, 8319, 9760, 9761, 9762, 8321, 2]
 
-// Module 9628 (ForumActionCreators)
+// Module 9759 (ForumActionCreators)
 import DispatcherDefault from "Dispatcher" /* 584 */;
 import intl3 from "intl" /* 1128 */;
 import HTTPUtils from "HTTPUtils" /* 1297 */;
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9629 */;
-import ForumChannelSeenManager from "ForumChannelSeenManager" /* 9630 */;
-import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 9631 */;
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9760 */;
+import ForumChannelSeenManager from "ForumChannelSeenManager" /* 9761 */;
+import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 9762 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
 import size from "module_2" /* 2 */;
@@ -190,7 +190,7 @@ body = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -243,7 +243,7 @@ body = {
               c2 = 0;
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp10) {
           if (0 === c2) {

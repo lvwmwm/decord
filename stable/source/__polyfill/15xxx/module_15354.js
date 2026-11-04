@@ -1,17 +1,21 @@
 // Module ID: 15354
 // Function ID: 15355
-// Dependencies: [15335, 15355]
+// Dependencies: []
 
 // Module 15354
-import _mod15335 from "module_15335" /* 15335 */;
+let closure_0 = Object.freeze({ loose: true });
+let closure_1 = Object.freeze({});
 
-let tmp2;
-const _mod15355 = tmp2(15355);
-
-export default (arg0, arg1) => {
-  let tmp4;
-  if (!_mod15335(arg0[arg1])) {
-    tmp4 = _mod15355(tmp);
+export default (arg0) => {
+  let tmp2;
+  let tmp = arg0;
+  if (tmp) {
+    if (typeof tmp !== "object") {
+      tmp = closure_0;
+    }
+    tmp2 = tmp;
+  } else {
+    tmp2 = closure_1;
   }
-  return tmp4;
+  return tmp2;
 };

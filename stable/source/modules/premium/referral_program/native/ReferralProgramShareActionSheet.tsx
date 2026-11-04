@@ -1,25 +1,25 @@
-// Module ID: 14515
-// Function ID: 14516
+// Module ID: 14782
+// Function ID: 14783
 // Name: ReferralProgramShareActionSheet
-// Dependencies: [5, 32, 19, 17, 1392, 7441, 1087, 21, 5191, 587, 504, 14516, 38, 1388, 10523, 14517, 1128, 4923, 14518, 7130, 7155, 1267, 7442, 5155, 14519, 2002, 4903, 7117, 5187, 5128, 14524, 14525, 10524, 6433, 5479, 7118, 8898, 10526, 2]
+// Dependencies: [5, 32, 19, 17, 1392, 7594, 1087, 21, 5003, 587, 504, 14783, 38, 1388, 10651, 14784, 1128, 5012, 14785, 7285, 7310, 1267, 7595, 5242, 14786, 2002, 5694, 7280, 5266, 5701, 14791, 14792, 10652, 6912, 5276, 5297, 9025, 10654, 2]
 // Exports: default
 
-// Module 14515 (ReferralProgramShareActionSheet)
+// Module 14782 (ReferralProgramShareActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 587 */;
 import Constants from "Constants" /* 1087 */;
 import intl8 from "intl" /* 1128 */;
 import GlobalUtils from "GlobalUtils" /* 1388 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4923 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 10523 */;
-import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 14518 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5012 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 10651 */;
+import ReferralProgramShareActionSheetUtils from "ReferralProgramShareActionSheetUtils" /* 14785 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1392 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7441 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7594 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import size_mod from "module_2" /* 2 */;
 
 let BottomSheet, closure_2, trialCreationResult, v3;
@@ -202,7 +202,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -252,7 +252,7 @@ export default function ReferralProgramShareActionSheet(actionSheetKey) {
               c3 = 0;
             }
             v3 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp16) {
           if (0 === c3) {

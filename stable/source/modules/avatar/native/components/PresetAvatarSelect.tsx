@@ -1,27 +1,27 @@
-// Module ID: 18581
-// Function ID: 18582
+// Module ID: 18923
+// Function ID: 18924
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 18582, 18583, 18584, 18585, 18586, 18587, 18588, 18589, 1128, 5191, 587, 558, 576, 5187, 5128, 6462, 2]
+// Dependencies: [19, 17, 21, 18924, 18925, 18926, 18927, 18928, 18929, 18930, 18931, 1128, 5003, 587, 558, 576, 5266, 5701, 6940, 2]
 
-// Module 18581 (PresetAvatarSelect)
+// Module 18923 (PresetAvatarSelect)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 576 */;
 import nativeDefault from "native" /* 587 */;
 import intl2 from "intl" /* 1128 */;
-import FastImageDefault from "FastImage" /* 5128 */;
-import Text_Text from "Text/Text" /* 5187 */;
-import Pressables from "Pressables" /* 6462 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 18582 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 18583 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 18584 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 18585 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 18586 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 18587 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 18588 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 18589 */;
+import Text_Text from "Text/Text" /* 5266 */;
+import FastImageDefault from "FastImage" /* 5701 */;
+import Pressables from "Pressables" /* 6940 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 18924 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 18925 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 18926 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 18927 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 18928 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 18929 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 18930 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 18931 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5191 */;
+import createStyles_mod from "createStyles" /* 5003 */;
 import ReactCompilerGating_mod from "ReactCompilerGating" /* 558 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -110,7 +110,7 @@ const tmp5 = ReactCompilerGating.isReactCompilerEnabled() ? (function PresetAvat
   const container = tmp4.container;
   if (cResult[0] === Symbol.for("react.memo_cache_sentinel")) {
     let obj2 = { variant: "text-sm/medium", color: "text-default", children: intl.string(tmp(1128).t.yP28YL) };
-    const Text = tmp(5187).Text;
+    const Text = tmp(5266).Text;
     intl = tmp(1128).intl;
     const tmp7 = closure_4(Text, obj2);
     cResult[0] = tmp7;

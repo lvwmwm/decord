@@ -1,9 +1,9 @@
-// Module ID: 8902
-// Function ID: 8903
+// Module ID: 9029
+// Function ID: 9030
 // Name: useAccessibilityPress
 // Dependencies: [19, 558, 576, 2]
 
-// Module 8902 (useAccessibilityPress)
+// Module 9029 (useAccessibilityPress)
 import react2 from "react" /* 576 */;
 import react from "react" /* 19 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;

@@ -1,8 +1,8 @@
-// Module ID: 5622
-// Function ID: 5623
+// Module ID: 6132
+// Function ID: 6133
 // Dependencies: [2]
 
-// Module 5622
+// Module 6132
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/shoes/cyber_stompers.png.js");

@@ -1,11 +1,11 @@
-// Module ID: 11707
-// Function ID: 11708
+// Module ID: 10823
+// Function ID: 10824
 // Name: UserApplicationIdentityActionCreators
-// Dependencies: [5, 11705, 1087, 584, 1297, 504, 2]
+// Dependencies: [5, 10824, 1087, 584, 1297, 504, 2]
 
-// Module 11707 (UserApplicationIdentityActionCreators)
+// Module 10823 (UserApplicationIdentityActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 11705 */;
+import UserApplicationIdentityStore from "UserApplicationIdentityStore" /* 10824 */;
 import Constants from "Constants" /* 1087 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
@@ -14,8 +14,8 @@ let c1, c4, c5;
 
 const Endpoints = Constants.Endpoints;
 let obj = {
-  fetchUserApplicationIdentitiesWithProfiles(arg0, arg1) {
-    let closure_0 = arg0;
+  fetchUserApplicationIdentitiesWithProfiles(id, arg1) {
+    let closure_0 = id;
     let closure_1 = arg1;
     return (async (arg0, value) => {
       if (c5 === 2) {
@@ -28,7 +28,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c3;
@@ -81,7 +81,7 @@ let obj = {
             obj.dispatch(obj10);
             c3 = 0;
             c5 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp21) {
           closure_2 = tmp21;
@@ -110,7 +110,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -141,7 +141,7 @@ let obj = {
             return obj;
           } else {
             application_id = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp10) {
           application_id = 3;
@@ -157,8 +157,8 @@ let obj2 = {
   get(arg0) {
     return UserApplicationIdentityStore.getUserIdentities(arg0);
   },
-  load(arg0) {
-    return obj.fetchUserApplicationIdentitiesWithProfiles(arg0);
+  load(id) {
+    return obj.fetchUserApplicationIdentitiesWithProfiles(id);
   }
 };
 const fetchStore = get_initialized.createFetchStore(UserApplicationIdentityStore, obj2);

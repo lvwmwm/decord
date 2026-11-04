@@ -1,11 +1,11 @@
-// Module ID: 4921
-// Function ID: 4922
+// Module ID: 5175
+// Function ID: 5176
 // Name: getGradientThemeFromFlags
-// Dependencies: [4922, 2]
+// Dependencies: [5069, 2]
 // Exports: getGradientThemeFromFlags
 
-// Module 4921 (getGradientThemeFromFlags)
-import native from "native" /* 4922 */;
+// Module 5175 (getGradientThemeFromFlags)
+import native from "native" /* 5069 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/components/ThemeContextProvider/native/getGradientThemeFromFlags.tsx");

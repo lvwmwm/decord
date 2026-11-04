@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1134 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "ea3c9abdbf7b4bdacb76018f8790d9b4", name: "ic_caret_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 93.33333333333333, height: 65, scales: [3], hash: "c4946770ab3c50ce3672b0e2087496ae", name: "asset_ruby_badge_small", type: "png" });

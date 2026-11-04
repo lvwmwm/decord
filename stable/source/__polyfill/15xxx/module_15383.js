@@ -1,15 +1,65 @@
 // Module ID: 15383
 // Function ID: 15384
-// Dependencies: [15331, 15350, 15340]
+// Dependencies: [41, 42]
 
 // Module 15383
-import _mod15331 from "module_15331" /* 15331 */;
-import _mod15340 from "module_15340" /* 15340 */;
-import module_15350 from "module_15350" /* 15350 */;
+import _createClass from "_createClass" /* 42 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let closure_0 = _mod15331(Function.toString);
-if (!module_15350(_mod15340.inspectSource)) {
-  _mod15340.inspectSource = (arg0) => closure_0(arg0);
+let map;
+
+class LRUCache {
+  constructor() {
+    _classCallCheck(this, LRUCache);
+    this.max = 1000;
+    this.map = new Map();
+    new Map();
+  }
 }
+const entry = {
+  key: "get",
+  value: function get(arg0) {
+    const self = this;
+    map = this.map;
+    const value = map.get(arg0);
+    let tmp2;
+    if (undefined !== value) {
+      const map2 = self.map;
+      map2.delete(arg0);
+      const map3 = self.map;
+      const result = map3.set(arg0, value);
+      tmp2 = value;
+    }
+    return tmp2;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "delete",
+    value: function _delete(arg0) {
+      map = this.map;
+      return map.delete(arg0);
+    }
+  },
+  {
+    key: "set",
+    value: function set(arg0, arg1) {
+      const self = this;
+      if (!this.delete(arg0)) {
+        if (undefined !== arg1) {
+          if (self.map.size >= self.max) {
+            map = self.map;
+            const iter = map.keys();
+            self.delete(iter.next().value);
+          }
+          const map2 = self.map;
+          const result = map2.set(arg0, arg1);
+        }
+      }
+      return self;
+    }
+  }
+];
 
-export default _mod15340.inspectSource;
+export default _createClass(LRUCache, items);

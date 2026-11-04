@@ -1,10 +1,10 @@
-// Module ID: 13568
-// Function ID: 13569
+// Module ID: 13822
+// Function ID: 13823
 // Name: uploadRtcLogFiles
-// Dependencies: [5, 1087, 3, 8605, 5891, 1297, 2]
+// Dependencies: [5, 1087, 3, 8728, 6406, 1297, 2]
 // Exports: uploadRtcLogFiles
 
-// Module 13568 (uploadRtcLogFiles)
+// Module 13822 (uploadRtcLogFiles)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1087 */;
@@ -28,7 +28,7 @@ let obj = function _uploadRtcLogFiles() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "IconComponent", done: null };
+        return { value: "IconComponent", done: "+352" };
       }
     } else {
       while (true) {
@@ -124,7 +124,7 @@ let obj = function _uploadRtcLogFiles() {
         }
         if (closure_1 === undefined) {
           c8 = 3;
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         } else {
           c1 = tmp51;
           body = "";

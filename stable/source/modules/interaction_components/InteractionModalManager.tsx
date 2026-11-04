@@ -1,17 +1,17 @@
-// Module ID: 18526
-// Function ID: 18527
+// Module ID: 18869
+// Function ID: 18870
 // Name: InteractionModalManager
-// Dependencies: [5, 5540, 8151, 1087, 5542, 18527, 2002, 1267, 559, 1257, 18538, 15572, 6297, 18541, 7085, 2]
+// Dependencies: [5, 2045, 8302, 1087, 6051, 18870, 2002, 1267, 559, 1257, 18881, 15835, 5658, 18884, 7246, 2]
 
-// Module 18526 (InteractionModalManager)
+// Module 18869 (InteractionModalManager)
 import Constants from "Constants" /* 1087 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1267 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15572 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18538 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15835 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 18881 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5540 */;
-import InteractionStore from "InteractionStore" /* 8151 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7085 */;
+import ApplicationStore from "ApplicationStore" /* 2045 */;
+import InteractionStore from "InteractionStore" /* 8302 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7246 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, iFrameModal, interactionDebugContext;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "IconComponent", done: null };
+            return { value: "IconComponent", done: "+352" };
           }
         } catch (tmp18) {
           c4 = 3;

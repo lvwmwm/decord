@@ -1,22 +1,22 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16348
+// Function ID: 16349
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 5382, 1087, 9504, 1281, 7682, 7681, 6233, 16069, 7672, 6235, 7630, 1384, 7663, 13897, 16060, 16070, 5985, 5990, 2]
+// Dependencies: [5, 32, 19, 5922, 1087, 9637, 1281, 7834, 7833, 6747, 16349, 7824, 6749, 7782, 1384, 7815, 14159, 16340, 16350, 6500, 6505, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 16068 (useBountiesModalVideoAnalytics)
+// Module 16348 (useBountiesModalVideoAnalytics)
 import Constants from "Constants" /* 1087 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 5985 */;
-import MetricEvents from "MetricEvents" /* 5990 */;
-import AdCreativeType from "AdCreativeType" /* 6235 */;
-import AnalyticsActions from "AnalyticsActions" /* 7672 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 13897 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16060 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 16070 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6500 */;
+import MetricEvents from "MetricEvents" /* 6505 */;
+import AdCreativeType from "AdCreativeType" /* 6749 */;
+import AnalyticsActions from "AnalyticsActions" /* 7824 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 14159 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16340 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 16350 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NetworkStore from "NetworkStore" /* 5382 */;
+import NetworkStore from "NetworkStore" /* 5922 */;
 import size_mod from "module_2" /* 2 */;
 
 let c5, c6, closure_3, set;
@@ -136,7 +136,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "IconComponent", done: null };
+          return { value: "IconComponent", done: "+352" };
         }
       } else {
         let c4;
@@ -214,7 +214,7 @@ export const useBountiesModalVideoAnalytics = function useBountiesModalVideoAnal
               trackAdContentEvent(obj8);
               c4 = 0;
               c6 = 3;
-              return { value: "IconComponent", done: null };
+              return { value: "IconComponent", done: "+352" };
             }
           }
         } catch (tmp30) {

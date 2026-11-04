@@ -1,18 +1,18 @@
-// Module ID: 14224
-// Function ID: 14225
+// Module ID: 14492
+// Function ID: 14493
 // Name: OrbBadgePreview
-// Dependencies: [19, 17, 21, 5191, 558, 576, 8576, 9350, 1128, 10836, 2]
+// Dependencies: [19, 17, 21, 5003, 558, 576, 8699, 9480, 1128, 11088, 2]
 
-// Module 14224 (OrbBadgePreview)
+// Module 14492 (OrbBadgePreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react2 from "react" /* 576 */;
 import intl2 from "intl" /* 1128 */;
-import useCurrentUser from "useCurrentUser" /* 8576 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9350 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 10836 */;
+import useCurrentUser from "useCurrentUser" /* 8699 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9480 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11088 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5191 */;
+import createStyles from "createStyles" /* 5003 */;
 import ReactCompilerGating from "ReactCompilerGating" /* 558 */;
 import size from "module_2" /* 2 */;
 
