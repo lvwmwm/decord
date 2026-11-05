@@ -1,19 +1,19 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8336
+// Function ID: 8337
 // Name: FormRadioRow
-// Dependencies: [19, 21, 7200, 5208, 7202, 7445, 7451, 2]
+// Dependencies: [19, 21, 7203, 5210, 7205, 7448, 7454, 2]
 // Exports: default
 
-// Module 8331 (FormRadioRow)
+// Module 8336 (FormRadioRow)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 5208 */;
-import RedesignCompat from "RedesignCompat" /* 7200 */;
-import FormRowDefault from "FormRow" /* 7445 */;
+import react_native from "react-native" /* 5210 */;
+import RedesignCompat from "RedesignCompat" /* 7203 */;
+import FormRowDefault from "FormRow" /* 7448 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const TableRadioRow2 = tmp2(7202);
+const TableRadioRow2 = tmp2(7205);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/void/Form/native/FormRadioRow.tsx");
 
@@ -49,12 +49,12 @@ export default function FormRadioRow(arg0) {
     tmp8Result3 = null;
     if ("right" === align) {
       const obj4 = { selected };
-      tmp8Result3 = tmp8(tmp9(7451), obj4);
+      tmp8Result3 = tmp8(tmp9(7454), obj4);
     }
     tmp8Result4 = leading;
     if ("left" === align) {
       const obj5 = { selected };
-      tmp8Result4 = tmp8(tmp9(7451), obj5);
+      tmp8Result4 = tmp8(tmp9(7454), obj5);
     }
     tmp8Result = tmp8(tmp10, obj3);
   }

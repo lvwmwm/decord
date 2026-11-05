@@ -1,14 +1,14 @@
-// Module ID: 17635
-// Function ID: 17636
+// Module ID: 17662
+// Function ID: 17663
 // Name: EmojiUpsideDownFaceIcon
-// Dependencies: [19, 21, 575, 5850, 17636, 2]
+// Dependencies: [19, 21, 575, 5853, 17663, 2]
 // Exports: EmojiUpsideDownFaceIcon
 
-// Module 17635 (EmojiUpsideDownFaceIcon)
+// Module 17662 (EmojiUpsideDownFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 17636 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 17663 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 9057
-// Function ID: 9058
+// Module ID: 9062
+// Function ID: 9063
 // Name: GuildAffinitiesStore
-// Dependencies: [5012, 9058, 504, 572, 2]
+// Dependencies: [5014, 9063, 504, 572, 2]
 
-// Module 9057 (GuildAffinitiesStore)
+// Module 9062 (GuildAffinitiesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 9058 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import GuildAffinitiesActionCreators from "GuildAffinitiesActionCreators" /* 9063 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

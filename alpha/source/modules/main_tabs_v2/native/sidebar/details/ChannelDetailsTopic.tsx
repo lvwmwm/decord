@@ -1,21 +1,21 @@
-// Module ID: 19091
-// Function ID: 19092
+// Module ID: 19122
+// Function ID: 19123
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1385, 10315, 1072, 21, 5141, 1377, 19092, 1652, 5771, 5888, 11239, 7121, 5761, 1113, 5723, 504, 5195, 6181, 2]
+// Dependencies: [32, 19, 17, 1385, 10323, 1072, 21, 5143, 1377, 19123, 1652, 5773, 5891, 11247, 7124, 5763, 1113, 5725, 504, 5197, 6184, 2]
 
-// Module 19091 (ChannelDetailsTopic)
+// Module 19122 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5195 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5888 */;
-import ChannelUtils from "ChannelUtils" /* 6181 */;
-import MentionPillOffset from "MentionPillOffset" /* 11239 */;
+import UserUtilsDefault from "UserUtils" /* 5197 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5891 */;
+import ChannelUtils from "ChannelUtils" /* 6184 */;
+import MentionPillOffset from "MentionPillOffset" /* 11247 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10315 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10323 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,6 @@ let obj3;
 let unpackModuleId;
 function GuildChannelDetailsTopic(channel) {
   let PressableOpacity;
-  let Text;
   let _undefined;
   let c6;
   let closure_3;
@@ -44,8 +43,7 @@ function GuildChannelDetailsTopic(channel) {
   let items17;
   let obj12;
   let obj14;
-  let obj15;
-  let obj16;
+  let obj17;
   let obj19;
   let obj7;
   let obj9;
@@ -212,7 +210,7 @@ function GuildChannelDetailsTopic(channel) {
   let memo1 = obj2.useMemo(() => {
     const parseTopic = MarkupUtilsDefault.parseTopic;
     MarkupUtilsDefault;
-    const obj = { channelId: channel.id, shouldNavigateBack: true, mentionPillOffsetY: MentionPillOffset.MENTION_PILL_OFFSET_Y };
+    const obj = { channelId: channel.id, shouldNavigateBack: true, enableEmojiInteraction: true, textVariant: "heading-sm/normal", mentionPillOffsetY: MentionPillOffset.MENTION_PILL_OFFSET_Y };
     const str = "" + channel.topic;
     const replaced = str.replace(/(\r\n|\n|\r)/gm, " ");
     return parseTopic(replaced, true, obj);
@@ -221,7 +219,7 @@ function GuildChannelDetailsTopic(channel) {
   ({ id: arr12[0], topic: arr12[1] } = channel);
   const memo2 = obj2.useMemo(() => {
     const obj = MarkupUtilsDefault;
-    const obj2 = { channelId: channel.id, shouldNavigateBack: true, mentionPillOffsetY: MentionPillOffset.MENTION_PILL_OFFSET_Y };
+    const obj2 = { channelId: channel.id, shouldNavigateBack: true, enableEmojiInteraction: true, textVariant: "heading-sm/normal", mentionPillOffsetY: MentionPillOffset.MENTION_PILL_OFFSET_Y };
     return obj.parseTopic(channel.topic, true, obj2);
   }, items11);
   const items12 = [channel.id, sharedValue, sharedValue1, flag];
@@ -247,7 +245,7 @@ function GuildChannelDetailsTopic(channel) {
   const View = flag(tmp3[10]).View;
   const obj11 = { style: animatedStyle1, children: closure_11(PressableOpacity, obj12) };
   let tmp47 = null != memo;
-  obj12 = { onPress: memo, activeOpacity: 0.7, children: closure_11(tmp45, obj15) };
+  obj12 = { onPress: memo, activeOpacity: 0.7, children: closure_11(tmp45, obj17) };
   const View2 = flag(tmp3[10]).View;
   const tmp43 = closure_13;
   tmp45 = closure_5;
@@ -264,10 +262,9 @@ function GuildChannelDetailsTopic(channel) {
     obj14 = { expanded: first1 };
   }
   const merged = Object.assign(tmp47);
-  obj15 = { pointerEvents: str2, children: closure_11(Text, obj16) };
-  obj16 = { color: "interactive-text-default", variant: "heading-xs/medium", onLayout: callback3, lineClamp: tmp49, style: items15, children: memo1 };
+  const obj15 = { color: "interactive-text-default", variant: "heading-xs/medium", onLayout: callback3, lineClamp: tmp49, style: items15, children: memo1 };
   tmp49 = undefined;
-  Text = tmp2(tmp3[15]).Text;
+  const Text = tmp2(tmp3[15]).Text;
   if (!first1) {
     tmp49 = sharedValue1;
   }
@@ -280,7 +277,8 @@ function GuildChannelDetailsTopic(channel) {
   if (first1) {
     memo1 = memo2;
   }
-  const obj17 = { children: items13 };
+  const obj16 = { children: items13 };
+  obj17 = { children: closure_11(Text, obj15) };
   items16 = [closure_11(View2, obj11), ];
   const obj18 = { style: items17, pointerEvents: "none", children: closure_11(flag(tmp3[17]), obj19) };
   items17 = [absoluteFill.absoluteFill, animatedStyle2];
@@ -288,7 +286,7 @@ function GuildChannelDetailsTopic(channel) {
   obj19 = { style: tmp.gradient, start: VerticalGradient.START, end: VerticalGradient.END, colors: channelTopicGradientBackground };
   items16[1] = closure_11(View3, obj18);
   items13[2] = closure_12(View, obj10);
-  return closure_12(tmp43, obj17);
+  return closure_12(tmp43, obj16);
 }
 function PrivateChannelDetailsTopic(channel) {
   let obj3;
@@ -314,7 +312,7 @@ function PrivateChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5761).Text, obj2);
+    tmp4 = closure_11(tmp(5763).Text, obj2);
   }
   return tmp4;
 }
@@ -333,7 +331,7 @@ function GroupDMChannelDetailsTopic(channel) {
   if (null != stateFromStores) {
     const obj2 = { variant: "heading-xs/medium", color: "interactive-text-default", style: obj3, children: stateFromStores };
     obj3 = { textAlign };
-    tmp4 = closure_11(tmp(5761).Text, obj2);
+    tmp4 = closure_11(tmp(5763).Text, obj2);
   }
   return tmp4;
 }
@@ -347,7 +345,7 @@ let obj = { hidden: { flex: 1, flexGrow: 1, position: "absolute", opacity: 0 }, 
 createStyles = createStyles.createStyles;
 let obj2 = null;
 if (!PlatformUtils.isAndroid()) {
-  obj2 = { lineHeight: "Array" };
+  obj2 = { lineHeight: "ti" };
 }
 obj3 = { paddingVertical: 5 };
 let merged = Object.assign(obj2);

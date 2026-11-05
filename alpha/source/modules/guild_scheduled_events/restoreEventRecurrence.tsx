@@ -1,11 +1,11 @@
-// Module ID: 9350
-// Function ID: 9351
+// Module ID: 9357
+// Function ID: 9358
 // Name: restoreEventRecurrence
-// Dependencies: [9112, 2]
+// Dependencies: [9118, 2]
 // Exports: default
 
-// Module 9350 (restoreEventRecurrence)
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9112 */;
+// Module 9357 (restoreEventRecurrence)
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9118 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/restoreEventRecurrence.tsx");

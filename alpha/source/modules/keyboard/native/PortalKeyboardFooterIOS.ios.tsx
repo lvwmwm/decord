@@ -1,10 +1,10 @@
-// Module ID: 10145
-// Function ID: 10146
+// Module ID: 10153
+// Function ID: 10154
 // Name: PortalKeyboardFooterIOS
-// Dependencies: [19, 21, 5141, 575, 1627, 5396, 1493, 1641, 5333, 1652, 1625, 1092, 5338, 2]
+// Dependencies: [19, 21, 5143, 575, 1627, 5398, 1493, 1641, 5335, 1652, 1625, 1092, 5340, 2]
 // Exports: default
 
-// Module 10145 (PortalKeyboardFooterIOS)
+// Module 10153 (PortalKeyboardFooterIOS)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
@@ -13,10 +13,10 @@ import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import useKeyboardType from "useKeyboardType" /* 5333 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
+import useKeyboardType from "useKeyboardType" /* 5335 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5398 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let rect;

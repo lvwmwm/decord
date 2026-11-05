@@ -1,10 +1,10 @@
-// Module ID: 5816
-// Function ID: 5817
+// Module ID: 5818
+// Function ID: 5819
 // Name: getPlatform
 // Dependencies: [2149, 2]
 // Exports: default
 
-// Module 5816 (getPlatform)
+// Module 5818 (getPlatform)
 import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2149 */;
 import size from "module_2" /* 2 */;
 

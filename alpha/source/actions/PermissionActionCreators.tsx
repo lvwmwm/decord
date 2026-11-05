@@ -1,9 +1,9 @@
-// Module ID: 19288
-// Function ID: 19289
+// Module ID: 19319
+// Function ID: 19320
 // Name: PermissionActionCreators
 // Dependencies: [572, 2]
 
-// Module 19288 (PermissionActionCreators)
+// Module 19319 (PermissionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

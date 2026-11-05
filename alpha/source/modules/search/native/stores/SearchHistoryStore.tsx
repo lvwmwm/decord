@@ -1,13 +1,13 @@
-// Module ID: 18981
-// Function ID: 18982
+// Module ID: 19012
+// Function ID: 19013
 // Name: SearchHistoryStore
-// Dependencies: [9976, 5002, 12, 504, 572, 2]
+// Dependencies: [9982, 5004, 12, 504, 572, 2]
 
-// Module 18981 (SearchHistoryStore)
+// Module 19012 (SearchHistoryStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SearchConstants from "SearchConstants" /* 9976 */;
+import SearchConstants from "SearchConstants" /* 9982 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

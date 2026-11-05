@@ -1,12 +1,9 @@
 // Module ID: 13162
 // Function ID: 13163
-// Dependencies: []
+// Dependencies: [13163]
 
 // Module 13162
-const obj = {
-  parse: function nth() {
-    return this.createSingleNodeList(this.Nth(false));
-  }
-};
+import _mod13163 from "module_13163" /* 13163 */;
 
-export default obj;
+
+export default _mod13163;

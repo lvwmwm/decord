@@ -1,14 +1,14 @@
-// Module ID: 8796
-// Function ID: 8797
+// Module ID: 8801
+// Function ID: 8802
 // Name: ForumSpoilerIcon
-// Dependencies: [19, 21, 575, 5850, 8767, 2]
+// Dependencies: [19, 21, 575, 5853, 8772, 2]
 // Exports: ForumSpoilerIcon
 
-// Module 8796 (ForumSpoilerIcon)
+// Module 8801 (ForumSpoilerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 8767 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 8772 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

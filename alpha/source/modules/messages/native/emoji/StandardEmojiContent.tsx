@@ -1,20 +1,20 @@
-// Module ID: 10230
-// Function ID: 10231
+// Module ID: 10238
+// Function ID: 10239
 // Name: StandardEmojiContent
-// Dependencies: [19, 17, 5172, 21, 5141, 575, 10231, 5091, 5851, 5761, 10232, 5087, 10122, 10233, 1113, 8317, 5768, 10235, 2]
+// Dependencies: [19, 17, 5174, 21, 5143, 575, 10239, 5093, 5854, 5763, 10240, 5089, 10130, 10241, 1113, 8322, 5770, 10243, 2]
 // Exports: default
 
-// Module 10230 (StandardEmojiContent)
+// Module 10238 (StandardEmojiContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5087 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 5091 */;
-import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10231 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10235 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5089 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 5093 */;
+import useSharedMessageEmojiStyles from "useSharedMessageEmojiStyles" /* 10239 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10243 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -23,8 +23,8 @@ let metroRequire;
 let obj2;
 let tmp2;
 let tmp5;
-const Text_Text = tmp2(5761);
-const FastImageDefault = tmp5(5851);
+const Text_Text = tmp2(5763);
+const FastImageDefault = tmp5(5854);
 function Emoji(surrogate) {
   let obj5;
   let obj7;

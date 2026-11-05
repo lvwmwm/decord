@@ -1,44 +1,24 @@
 // Module ID: 13112
 // Function ID: 13113
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13112 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
-let items;
-let obj2;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const CDO = tokenize.TYPE.CDO;
 let obj = {
-  name: "Function",
-  structure: obj2,
-  parse(call, arg1) {
-    let callResult;
-    const self = this;
+  name: "CDO",
+  structure: [],
+  parse() {
     const tokenStart = this.scanner.tokenStart;
-    const str = this.consumeFunctionName();
-    const formatted = str.toLowerCase();
-    if (arg1.hasOwnProperty(formatted)) {
-      const obj = arg1[formatted];
-      callResult = obj.call(self, arg1);
-    } else {
-      callResult = call.call(self, arg1);
-    }
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
-    }
-    const element = { type: "Function", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, children: callResult };
-    return element;
+    this.eat(CDO);
+    const obj = { type: "CDO", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
+    return obj;
   },
-  generate(name) {
-    this.chunk(name.name);
-    this.chunk("(");
-    this.children(name);
-    this.chunk(")");
-  },
-  walkContext: "function"
+  generate() {
+    this.chunk("<!--");
+  }
 };
-obj2 = { name: String, children: items };
-items = [[]];
 
 export default obj;

@@ -1,10 +1,10 @@
-// Module ID: 9710
-// Function ID: 9711
+// Module ID: 9716
+// Function ID: 9717
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 9711, 7558, 9707, 1113, 2]
+// Dependencies: [5, 32, 19, 9717, 7560, 9713, 1113, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9710 (useRedeemVirtualCurrency)
+// Module 9716 (useRedeemVirtualCurrency)
 import intl3 from "intl" /* 1113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -155,12 +155,12 @@ export function useRedeemVirtualCurrency(useOrdersAPI) {
             c8 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp58) {
-          closure_5 = tmp58;
+        } catch (tmp52) {
+          closure_5 = tmp52;
           if (0 === v0) {
             c8 = 3;
-            throw tmp58;
-          } else if (1 === tmp60) {
+            throw tmp52;
+          } else if (1 === tmp54) {
             v3 = 2;
           } else {
             v3 = 3;

@@ -1,34 +1,35 @@
-// Module ID: 18876
-// Function ID: 18877
+// Module ID: 18907
+// Function ID: 18908
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 18877, 9962, 1072, 1083, 21, 5141, 1652, 1705, 18878, 18880, 5729, 5377, 5325, 5327, 18881, 5207, 6124, 11745, 18882, 1500, 18311, 5331, 11431, 5428, 5318, 18310, 19093, 572, 5332, 2]
+// Dependencies: [32, 19, 17, 18908, 9968, 1072, 1083, 21, 5143, 1652, 1705, 18909, 18911, 5731, 5379, 5327, 5329, 18912, 5209, 6127, 11753, 18913, 1500, 18341, 5333, 11439, 5430, 5320, 18339, 19124, 18340, 572, 5334, 2]
 
-// Module 18876 (MainTabsChannelScreenStack)
+// Module 18907 (MainTabsChannelScreenStack)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
 import Link from "Link" /* 1500 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import native from "native" /* 5207 */;
-import useChatLayoutDefault from "useChatLayout" /* 5325 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5327 */;
-import ChatInputUtils from "ChatInputUtils" /* 5331 */;
-import useThemeDefault from "useTheme" /* 5377 */;
-import react_native from "react-native" /* 9962 */;
-import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11431 */;
-import reactDefault from "react" /* 11745 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18310 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18311 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18877 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 18878 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 18880 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 18881 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 18882 */;
+import native from "native" /* 5209 */;
+import useChatLayoutDefault from "useChatLayout" /* 5327 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5329 */;
+import ChatInputUtils from "ChatInputUtils" /* 5333 */;
+import useThemeDefault from "useTheme" /* 5379 */;
+import react_native from "react-native" /* 9968 */;
+import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11439 */;
+import reactDefault from "react" /* 11753 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18339 */;
+import MainTabsBackgroundChat from "MainTabsBackgroundChat" /* 18340 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18341 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18908 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 18909 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 18911 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 18912 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 18913 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,9 +47,9 @@ let tmp4;
 let tmp5;
 let unpackModuleId;
 const _mod1705 = tmp4(1705);
-const LegacyBaseButton = tmp5(5428);
-const react2 = tmp5(6124);
-const MainTabsNavigatorPanelContext = tmp5(11431);
+const LegacyBaseButton = tmp5(5430);
+const react2 = tmp5(6127);
+const MainTabsNavigatorPanelContext = tmp5(11439);
 function EnabledChannelScreenNavigationTTIVisibility(children) {
   let alwaysVisible;
   let highestFullyRenderedScreenIndex;
@@ -195,7 +196,7 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   MainTabsChannelScreenStackTsx4.__workletHash = 15152975546238;
   MainTabsChannelScreenStackTsx4.__initData = tmp5;
   const animatedReaction = obj2.useAnimatedReaction(MainTabsChannelScreenStackTsx3, MainTabsChannelScreenStackTsx4);
-  const tmp2Result = tmp2(5729);
+  const tmp2Result = tmp2(5731);
   const unmountEffect = tmp2Result.useUnmountEffect(() => {
     let tmp;
     let tmp2;
@@ -544,11 +545,11 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
   let tmp7 = screens;
   [tmp5, tmp6] = navigationTTIStackVisible(translateX.useState(translateX.get() === maxWidth), 2);
   const tmp4 = navigationTTIStackVisible(translateX.useState(translateX.get() === maxWidth), 2);
+  const tmp8 = screens(screenStackVisible[9]);
   const items = [closure_30, translateX, maxWidth];
   let c0;
   let c1;
   [tmp9, tmp10, tmp11] = items;
-  const tmp8 = screens(screenStackVisible[9]);
   class MainTabsChannelScreenStackTsx9 {
     constructor() {
       return _undefined.get() === c1;
@@ -638,34 +639,32 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
   const callback = obj.useCallback((arg0, channelId, transitionState, cleanup) => {
     let showCreateThread;
     let showCreateThread2;
-    let tmp15;
-    let tmp19;
-    let tmp26Result;
+    let tmp14;
+    let tmp18;
     let tmp5;
     const NumberResult = Number(arg0);
     if (0 === NumberResult) {
-      const obj = { guildId: null, channelId: null, showCreateThread: showCreateThread2, focusChatPressableComponent, index: NumberResult, transitionState, cleanup, isDragging, translateX, isActive: tmp15, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp19, containerWidth: firstScreenWidth, frame: firstScreenFrame, parentFreezeValue: sharedValue, maxWidth, highestFullyRenderedScreenIndex };
+      const obj = { guildId: null, channelId: null, showCreateThread: showCreateThread2, focusChatPressableComponent, index: NumberResult, transitionState, cleanup, isDragging, translateX, isActive: tmp14, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp18, containerWidth: firstScreenWidth, frame: firstScreenFrame, parentFreezeValue: sharedValue, maxWidth, highestFullyRenderedScreenIndex };
       ({ guildId: obj.guildId, channelId: obj.channelId, showCreateThread: showCreateThread2 } = channelId);
-      const tmp10 = closure_25;
-      const tmp9 = map1;
       if (showCreateThread2 == null) {
         showCreateThread2 = false;
       }
-      tmp15 = screenStackActive && NumberResult === screens.length - 1;
-      tmp19 = NumberResult < screens.length - 2 && !closure_12.includes(channelId.channelId);
-      tmp26Result = tmp9(tmp10, obj, arg0);
+      tmp14 = screenStackActive && NumberResult === screens.length - 1;
+      tmp18 = NumberResult < screens.length - 2 && !closure_12.includes(channelId.channelId);
+      const obj2 = { screen: channelId, children: map1(closure_25, obj, arg0) };
+      map1(closure_25, obj, arg0);
+      return map1(MainTabsBackgroundChat.BackgroundChatPortal, obj2, arg0);
     } else {
-      const obj3 = { guildId: null, channelId: null, showCreateThread, index: NumberResult, transitionState, parentFreezeValue: sharedValue, cleanup, isActive: NumberResult === screens.length - 1, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp5, highestFullyRenderedScreenIndex };
-      ({ guildId: obj2.guildId, channelId: obj2.channelId, showCreateThread } = channelId);
-      const tmp26 = map1;
-      const tmp27 = closure_28;
+      const obj5 = { guildId: null, channelId: null, showCreateThread, index: NumberResult, transitionState, parentFreezeValue: sharedValue, cleanup, isActive: NumberResult === screens.length - 1, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp5, highestFullyRenderedScreenIndex };
+      ({ guildId: obj3.guildId, channelId: obj3.channelId, showCreateThread } = channelId);
+      const tmp29 = map1;
+      const tmp30 = closure_28;
       if (showCreateThread == null) {
         showCreateThread = false;
       }
       tmp5 = NumberResult < screens.length - 2 && !closure_12.includes(channelId.channelId);
-      tmp26Result = tmp26(tmp27, obj3, arg0);
+      return tmp29(tmp30, obj5, arg0);
     }
-    return tmp26Result;
   }, items8);
   const useRef = obj.useRef;
   if (first != null) {
@@ -700,7 +699,7 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         const tmp7 = require;
         if (!isChatLockedOpen) {
-          const tmp7Result = tmp7(5325);
+          const tmp7Result = tmp7(5327);
           isChatLockedOpen = tmp7Result.getChatLayout().isChatLockedOpen;
         }
         if (!isChatLockedOpen) {
@@ -714,7 +713,7 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
       }
     }
   }, items9);
-  const tmp7Result2 = tmp7(tmp2[31]);
+  const tmp7Result2 = tmp7(tmp2[32]);
   tmp7Result2.freezeScreenIndex(shouldFreeze, 0);
   if (!shouldFreeze) {
     let obj2 = { freeze: shouldFreeze, children: first(tmp35, obj3) };

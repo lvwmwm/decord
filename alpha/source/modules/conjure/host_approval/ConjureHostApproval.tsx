@@ -1,13 +1,13 @@
-// Module ID: 11074
-// Function ID: 11075
+// Module ID: 11083
+// Function ID: 11084
 // Name: ConjureHostApproval
-// Dependencies: [19, 504, 572, 11053, 11075, 2]
+// Dependencies: [19, 504, 572, 11059, 11084, 2]
 // Exports: answerHostApproval, removeAllowedHost, useConjureAllowedHosts, useConjureHostApprovals, useConjureRequireHostApprovalSetting
 
-// Module 11074 (ConjureHostApproval)
+// Module 11083 (ConjureHostApproval)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11053 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11059 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ let obj = {
     if (value == null) {
       value = closure_4;
     }
-    const f99349 = (id) => id.id;
+    const f99515 = (id) => id.id;
     let flag = !(value.length === asks.length && value.every((item, index) => {
       const tmp = o(item);
       return tmp === o(allowedHosts[index]);

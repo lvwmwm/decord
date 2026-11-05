@@ -1,17 +1,17 @@
-// Module ID: 20284
-// Function ID: 20285
+// Module ID: 20320
+// Function ID: 20321
 // Name: GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet
-// Dependencies: [32, 19, 17, 1083, 21, 5141, 575, 5396, 5400, 5761, 1113, 1187, 7553, 7199, 7202, 17466, 6902, 5768, 5382, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5143, 575, 5398, 5402, 5763, 1113, 1187, 7555, 7202, 7205, 17492, 6905, 5770, 5384, 2]
 // Exports: default
 
-// Module 20284 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
+// Module 20320 (GuildRoleSubscriptionTierTemplatePriceReselectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

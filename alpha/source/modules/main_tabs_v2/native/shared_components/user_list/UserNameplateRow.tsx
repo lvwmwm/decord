@@ -1,18 +1,18 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 10981
+// Function ID: 10982
 // Name: UserNameplateRow
-// Dependencies: [32, 19, 21, 5141, 575, 7117, 5732, 7118, 9661, 7116, 7113, 2]
+// Dependencies: [32, 19, 21, 5143, 575, 7120, 5734, 7121, 9667, 7119, 7116, 2]
 // Exports: UserNameplateRow
 
-// Module 10975 (UserNameplateRow)
+// Module 10981 (UserNameplateRow)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5732 */;
-import TableRowDivider from "TableRowDivider" /* 7113 */;
-import react2 from "react" /* 7117 */;
+import useToken from "useToken" /* 5734 */;
+import TableRowDivider from "TableRowDivider" /* 7116 */;
+import react2 from "react" /* 7120 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -20,7 +20,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp11;
-const NameplateDefault = tmp11(9661);
+const NameplateDefault = tmp11(9667);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
 const obj = { card: obj2 };
 obj2 = { padding: 0, paddingRight: nativeDefault.space.PX_40, overflow: "hidden" };
@@ -87,13 +87,13 @@ export function UserNameplateRow(onPressOut) {
   const token = tmp3Result.useToken(nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS);
   const obj2 = { shadow: "none", border: "none", radius: token, start: tmp14, end: !context && true === end, onPress, onPressIn: callback, onPressOut: callback1, disabled: flag, style: tmp2.card, children: items2 };
   tmp14 = !context;
-  const Card = tmp3(7118).Card;
+  const Card = tmp3(7121).Card;
   if (!context) {
     tmp14 = true === start;
   }
   const merged1 = Object.assign(merged);
   items2 = [hasOwnProperty(NameplateDefault, { nameplate, isPressed: first, invertPressOpacity: true, fullOpacity: isPreviewRow, animate: isPreviewRow }), ];
-  const TableRowInner = tmp3(7116).TableRowInner;
+  const TableRowInner = tmp3(7119).TableRowInner;
   items2[1] = hasOwnProperty(TableRowInner, { height: "100%", label, subLabel, icon, trailing, arrow, disabled: flag, labelLineClamp, subLabelLineClamp, variant, draggable, dragHandlePressableProps });
   const tmp13Result = metroRequire(Card, obj2);
   let tmp13Result2 = tmp13Result;

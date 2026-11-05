@@ -1,16 +1,16 @@
-// Module ID: 10959
-// Function ID: 10960
+// Module ID: 10965
+// Function ID: 10966
 // Name: LeaderboardWinnerBadge
-// Dependencies: [19, 17, 21, 5141, 10960, 10961, 10963, 10967, 10971, 2]
+// Dependencies: [19, 17, 21, 5143, 10966, 10967, 10969, 10973, 10977, 2]
 // Exports: default
 
-// Module 10959 (LeaderboardWinnerBadge)
+// Module 10965 (LeaderboardWinnerBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10960 */;
-import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10961 */;
+import useActiveLeaderboardWinnerData from "useActiveLeaderboardWinnerData" /* 10966 */;
+import GuildLeaderboardUtils from "GuildLeaderboardUtils" /* 10967 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const useActiveLeaderboardWinnerDataDefault = useActiveLeaderboardWinnerData;
@@ -41,9 +41,9 @@ export default function LeaderboardWinnerBadge(arg0) {
       num = 0;
     }
     if (num > 1) {
-      let WinnerTrophyBadge = tmp4(10967).StreakTrophyBadge;
+      let WinnerTrophyBadge = tmp4(10973).StreakTrophyBadge;
     } else {
-      WinnerTrophyBadge = tmp4(10971).WinnerTrophyBadge;
+      WinnerTrophyBadge = tmp4(10977).WinnerTrophyBadge;
     }
     const tmp4Result2 = GuildLeaderboardUtils;
     return <View style={tmp.container} accessible accessibilityLabel={tmp4Result2.getLeaderboardWinnerBadgeText(tmp3)}>{null}</View>;

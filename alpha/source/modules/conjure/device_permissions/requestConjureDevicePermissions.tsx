@@ -1,17 +1,17 @@
-// Module ID: 11109
-// Function ID: 11110
+// Module ID: 11118
+// Function ID: 11119
 // Name: requestConjureDevicePermissions
-// Dependencies: [5, 2167, 6981, 11110, 6982, 1089, 11108, 5906, 11111, 572, 2]
+// Dependencies: [5, 2167, 6984, 11119, 6985, 1089, 11117, 5909, 11120, 572, 2]
 // Exports: default, getConjureDevicePermissionStatus
 
-// Module 11109 (requestConjureDevicePermissions)
+// Module 11118 (requestConjureDevicePermissions)
 import DurationsDefault from "Durations" /* 1089 */;
-import FramesConstants from "FramesConstants" /* 6982 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 11108 */;
+import FramesConstants from "FramesConstants" /* 6985 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 11117 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import FramesStore from "FramesStore" /* 6981 */;
-import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 11110 */;
+import FramesStore from "FramesStore" /* 6984 */;
+import ConjureDevicePermissionStore from "ConjureDevicePermissionStore" /* 11119 */;
 import size from "module_2" /* 2 */;
 
 let application, c1, c5, c6, closure_3, frameByIframeId;
@@ -162,7 +162,7 @@ let obj = function _requestConjureDevicePermissions() {
             };
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

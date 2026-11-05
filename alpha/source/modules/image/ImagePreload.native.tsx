@@ -1,10 +1,10 @@
-// Module ID: 14630
-// Function ID: 14631
+// Module ID: 14643
+// Function ID: 14644
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: preloadImage
 
-// Module 14630 (react-native)
+// Module 14643 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

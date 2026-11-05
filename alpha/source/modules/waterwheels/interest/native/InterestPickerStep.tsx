@@ -1,10 +1,10 @@
-// Module ID: 19843
-// Function ID: 19844
+// Module ID: 19878
+// Function ID: 19879
 // Name: InterestPickerStep
-// Dependencies: [19, 21, 18680, 19841, 1242, 19844, 2]
+// Dependencies: [19, 21, 18711, 18710, 19876, 1242, 19879, 2]
 // Exports: default
 
-// Module 19843 (InterestPickerStep)
+// Module 19878 (InterestPickerStep)
 import Fragment from "Fragment" /* 21 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react from "react" /* 19 */;
@@ -19,14 +19,18 @@ export default function InterestPickerStep(navigation) {
   let closure_2;
   let ref;
   navigation = navigation.navigation;
+  dependencyMap = undefined;
   let onComplete = navigation.route.params.onComplete;
-  const tmp = onComplete;
-  const tmp3 = onComplete(18680)("InterestPickerStep");
-  dependencyMap = tmp3;
-  let obj = navigation(19841);
-  const setPicks = obj.useInterestPickerPicks().setPicks;
+  const tmp = dependencyMap;
+  let obj = navigation(18711);
+  const interestPickerGameList = obj.useInterestPickerGameList("InterestPickerStep");
+  const tmp4 = onComplete(18710)("InterestPickerStep");
+  dependencyMap = tmp4;
+  let obj2 = navigation(19876);
+  const setPicks = obj2.useInterestPickerPicks().setPicks;
   jsx = setPicks.useRef(false);
   const items = [navigation, onComplete, setPicks];
+  const tmp3 = onComplete;
   onComplete = setPicks.useCallback((arg0, arg1) => {
     if (!ref.current) {
       tmp.current = true;
@@ -41,15 +45,18 @@ export default function InterestPickerStep(navigation) {
       }
     }
   }, items);
-  const items1 = [tmp3, onComplete];
+  const items1 = [tmp4, onComplete];
   const effect = setPicks.useEffect(() => {
     if (null == closure_2) {
       callback([], true);
     }
   }, items1);
-  let tmp6 = null;
-  if (null != tmp3) {
-    tmp6 = jsx(tmp(19844), { catalog: tmp3, onComplete });
+  let tmp7 = null;
+  if (null != tmp4) {
+    tmp7 = null;
+    if (null != interestPickerGameList) {
+      tmp7 = jsx(tmp3(19879), { arm: interestPickerGameList, catalog: tmp4, onComplete });
+    }
   }
-  return tmp6;
+  return tmp7;
 };

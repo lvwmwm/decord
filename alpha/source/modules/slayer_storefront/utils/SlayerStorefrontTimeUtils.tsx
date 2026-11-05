@@ -1,15 +1,15 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 10808
+// Function ID: 10809
 // Name: SlayerStorefrontTimeUtils
-// Dependencies: [32, 19, 2171, 1089, 7765, 1113, 3865, 2]
+// Dependencies: [32, 19, 2171, 1089, 7770, 1113, 3865, 2]
 // Exports: useIsLimitedOfferExpired, useTickingFormattedLimitedOfferTimeLeft
 
-// Module 10802 (SlayerStorefrontTimeUtils)
+// Module 10808 (SlayerStorefrontTimeUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import _modDef3865 from "module_3865" /* 3865 */;
-import useIntervalDefault from "useInterval" /* 7765 */;
+import useIntervalDefault from "useInterval" /* 7770 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

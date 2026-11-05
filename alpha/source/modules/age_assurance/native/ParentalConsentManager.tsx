@@ -1,12 +1,13 @@
-// Module ID: 19867
-// Function ID: 19868
+// Module ID: 19901
+// Function ID: 19902
 // Name: ParentalConsentManager
-// Dependencies: [1072, 7423, 8295, 2]
+// Dependencies: [1072, 7426, 19902, 8300, 2]
 
-// Module 19867 (ParentalConsentManager)
+// Module 19901 (ParentalConsentManager)
 import Constants from "Constants" /* 1072 */;
-import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 8295 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
+import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 8300 */;
+import AppStoreConsentReinstatement from "AppStoreConsentReinstatement" /* 19902 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
 import size from "module_2" /* 2 */;
 
 const AppStates = Constants.AppStates;
@@ -16,11 +17,23 @@ class ParentalConsentManager extends AutomaticLifecycleManager {
     require = applyArgumentsResult;
     applyArgumentsResult.actions = {
       CONNECTION_OPEN_SUPPLEMENTAL() {
+        const obj = AppStoreConsentReinstatement;
+        const result = obj.isAppStoreConsentReinstatementEnabledForSession();
+        const obj2 = AppStoreAgeSignalReport;
+        const result1 = obj2.beginAppStoreAgeSignalReport(result);
+        const obj3 = AppStoreConsentReinstatement;
+        const result2 = obj3.beginAppStoreConsentReinstatement();
+      },
+      POST_CONNECTION_OPEN() {
         const obj = AppStoreAgeSignalReport;
-        return obj.beginAppStoreAgeSignalReport();
+        return obj.startPendingAppStoreAgeSignalReport();
       },
       APP_STATE_UPDATE(arg0) {
         return require.handleAppStateUpdate(arg0);
+      },
+      LOGOUT() {
+        const obj = AppStoreConsentReinstatement;
+        return obj.cancelAppStoreConsentReinstatement();
       }
     };
     return applyArgumentsResult;

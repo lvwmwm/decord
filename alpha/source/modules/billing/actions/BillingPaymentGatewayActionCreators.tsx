@@ -1,19 +1,19 @@
-// Module ID: 6682
-// Function ID: 6683
+// Module ID: 6685
+// Function ID: 6686
 // Name: BillingPaymentGatewayActionCreators
-// Dependencies: [5, 1072, 1083, 3, 1282, 1113, 6671, 6683, 572, 38, 6684, 6685, 4961, 6581, 2]
+// Dependencies: [5, 1072, 1083, 3, 1282, 1113, 6674, 6686, 572, 38, 6687, 6688, 4963, 6584, 2]
 // Exports: confirmCardPaymentSource, confirmEPS, confirmPaymentElementSource, confirmPrzelewy24, createAdyenPaymentSourceToken, createAdyenPrepaidPaymentSource, createAdyenVaultablePaymentSource, createBraintreePaymentSource, createCardToken, createExpressCheckoutPaymentMethod, createPaymentSourceToken, createStripePaymentSource, paymentIntentSucceeded, submitElementsAndCreateStripePaymentMethod
 
-// Module 6682 (BillingPaymentGatewayActionCreators)
+// Module 6685 (BillingPaymentGatewayActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6671 */;
-import react from "react" /* 6683 */;
-import StripeActionCreators from "StripeActionCreators" /* 6684 */;
-import StripeUtilsAll from "StripeUtils" /* 6685 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6674 */;
+import react from "react" /* 6686 */;
+import StripeActionCreators from "StripeActionCreators" /* 6687 */;
+import StripeUtilsAll from "StripeUtils" /* 6688 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants_mod from "Constants" /* 1072 */;
 import Constants_mod2 from "Constants" /* 1083 */;
@@ -153,10 +153,10 @@ obj = function _confirmEPS() {
       let c8;
       let c9;
       let name;
-      let obj10;
-      let obj11;
-      let obj15;
+      let obj14;
       let obj16;
+      let obj17;
+      let obj8;
       if (line2 === 2) {
         line2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -197,24 +197,24 @@ obj = function _confirmEPS() {
               paymentMethod = undefined;
               error = undefined;
               if (null == closure_0) {
-                const obj14 = BillingSharedActionCreators;
-                throw obj14.dispatchConfirmationError("Stripe not loaded");
+                const obj12 = BillingSharedActionCreators;
+                throw obj12.dispatchConfirmationError("Stripe not loaded");
               } else if (null == tmp59) {
-                const obj13 = BillingSharedActionCreators;
-                throw obj13.dispatchConfirmationError("Bank required for EPS");
+                const obj11 = BillingSharedActionCreators;
+                throw obj11.dispatchConfirmationError("Bank required for EPS");
               } else {
                 ({ email: c4, name } = closure_2);
                 ({ line1: c6, line2: c7, city: c8, state: c9, postalCode: c10, country: c11 } = closure_2);
                 if (null == name) {
-                  const obj12 = BillingSharedActionCreators;
-                  throw obj12.dispatchConfirmationError("Name required for EPS");
+                  const obj10 = BillingSharedActionCreators;
+                  throw obj10.dispatchConfirmationError("Name required for EPS");
                 } else {
-                  const obj9 = DispatcherDefault;
-                  obj9.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
+                  const obj7 = DispatcherDefault;
+                  obj7.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
                   line1 = 1;
                   line2 = 1;
-                  const obj6 = { value: obj10.validatePaymentSourceBillingAddress(closure_2), done: false };
-                  obj10 = BillingSharedActionCreators;
+                  const obj6 = { value: obj8.validatePaymentSourceBillingAddress(closure_2), done: false };
+                  obj8 = BillingSharedActionCreators;
                   return obj6;
                 }
               }
@@ -228,14 +228,14 @@ obj = function _confirmEPS() {
               return { value, done: true };
             } else {
               billingAddressToken = value;
-              const obj8 = { type: "eps", eps: obj11, billing_details: obj15 };
-              obj15 = { address: obj16, name, email };
-              obj16 = { line1, line2, city, state, postal_code, country };
+              const obj13 = { type: "eps", eps: obj14, billing_details: obj16 };
+              obj16 = { address: obj17, name, email };
+              obj17 = { line1, line2, city, state, postal_code, country };
               line1 = 2;
               line2 = 1;
-              obj11 = { bank };
-              const obj17 = { value: closure_0.createPaymentMethod(obj8), done: false };
-              return obj17;
+              obj14 = { bank };
+              const obj18 = { value: closure_0.createPaymentMethod(obj13), done: false };
+              return obj18;
             }
           } else if (arg0 === 1) {
             line2 = 3;
@@ -248,22 +248,22 @@ obj = function _confirmEPS() {
             paymentMethod = closure_13.paymentMethod;
             error = closure_13.error;
             if (null != error) {
-              const obj5 = closure_133_0(closure_133_3[6]);
-              throw obj5.dispatchConfirmationError(error);
+              const obj3 = closure_133_0(closure_133_3[6]);
+              throw obj3.dispatchConfirmationError(error);
             } else if (null == paymentMethod) {
-              const obj4 = closure_133_0(closure_133_3[6]);
-              throw obj4.dispatchConfirmationError("paymentMethod not available with successful stripe call");
+              const obj2 = closure_133_0(closure_133_3[6]);
+              throw obj2.dispatchConfirmationError("paymentMethod not available with successful stripe call");
             } else {
               line2 = 3;
-              obj = closure_133_0(closure_133_3[6]);
-              const obj19 = { billingAddressToken, analyticsLocation, bank };
-              const obj20 = { value: obj.createPaymentSource(closure_133_6.STRIPE, paymentMethod.id, closure_2, obj19), done: true };
-              return obj20;
+              const obj15 = closure_133_0(closure_133_3[6]);
+              const obj20 = { billingAddressToken, analyticsLocation, bank };
+              obj = { value: obj15.createPaymentSource(closure_133_6.STRIPE, paymentMethod.id, closure_2, obj20), done: true };
+              return obj;
             }
           }
-        } catch (tmp36) {
+        } catch (tmp24) {
           line2 = 3;
-          throw tmp36;
+          throw tmp24;
         }
       }
     })();
@@ -285,10 +285,10 @@ obj = function _confirmPrzelewy() {
       let c7;
       let c8;
       let c9;
-      let obj10;
-      let obj11;
-      let obj14;
+      let obj13;
       let obj15;
+      let obj16;
+      let obj8;
       if (line2 === 2) {
         line2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -330,21 +330,21 @@ obj = function _confirmPrzelewy() {
               paymentMethod = undefined;
               error = undefined;
               if (null == closure_0) {
-                const obj13 = BillingSharedActionCreators;
-                throw obj13.dispatchConfirmationError("Stripe not loaded");
+                const obj11 = BillingSharedActionCreators;
+                throw obj11.dispatchConfirmationError("Stripe not loaded");
               } else {
                 email = tmp59.email;
                 ({ name: c5, line1: c6, line2: c7, city: c8, state: c9, postalCode: c10, country: c11 } = closure_2);
                 if (null == email) {
-                  const obj12 = BillingSharedActionCreators;
-                  throw obj12.dispatchConfirmationError("Email required for Przelewy24");
+                  const obj10 = BillingSharedActionCreators;
+                  throw obj10.dispatchConfirmationError("Email required for Przelewy24");
                 } else {
-                  const obj9 = DispatcherDefault;
-                  obj9.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
+                  const obj7 = DispatcherDefault;
+                  obj7.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_START" });
                   line1 = 1;
                   line2 = 1;
-                  const obj6 = { value: obj10.validatePaymentSourceBillingAddress(closure_2), done: false };
-                  obj10 = BillingSharedActionCreators;
+                  const obj6 = { value: obj8.validatePaymentSourceBillingAddress(closure_2), done: false };
+                  obj8 = BillingSharedActionCreators;
                   return obj6;
                 }
               }
@@ -359,14 +359,14 @@ obj = function _confirmPrzelewy() {
             } else {
               billingAddressToken = value;
               p24Bank = p24Bank.p24Bank;
-              const obj8 = { type: "p24", p24: obj11, billing_details: obj14 };
-              obj14 = { address: obj15, name, email };
-              obj15 = { line1, line2, city, state, postal_code, country };
+              const obj12 = { type: "p24", p24: obj13, billing_details: obj15 };
+              obj15 = { address: obj16, name, email };
+              obj16 = { line1, line2, city, state, postal_code, country };
               line1 = 2;
               line2 = 1;
-              obj11 = { bank: p24Bank };
-              const obj16 = { value: closure_0.createPaymentMethod(obj8), done: false };
-              return obj16;
+              obj13 = { bank: p24Bank };
+              const obj17 = { value: closure_0.createPaymentMethod(obj12), done: false };
+              return obj17;
             }
           } else if (arg0 === 1) {
             line2 = 3;
@@ -379,22 +379,22 @@ obj = function _confirmPrzelewy() {
             paymentMethod = closure_14.paymentMethod;
             error = closure_14.error;
             if (null != error) {
-              const obj5 = closure_133_0(closure_133_3[6]);
-              throw obj5.dispatchConfirmationError(error);
+              const obj3 = closure_133_0(closure_133_3[6]);
+              throw obj3.dispatchConfirmationError(error);
             } else if (null == paymentMethod) {
-              const obj4 = closure_133_0(closure_133_3[6]);
-              throw obj4.dispatchConfirmationError("paymentMethod not available with successful stripe call");
+              const obj2 = closure_133_0(closure_133_3[6]);
+              throw obj2.dispatchConfirmationError("paymentMethod not available with successful stripe call");
             } else {
               line2 = 3;
-              obj = closure_133_0(closure_133_3[6]);
-              const obj18 = { billingAddressToken, analyticsLocation, bank: p24Bank };
-              const obj19 = { value: obj.createPaymentSource(closure_133_6.STRIPE, paymentMethod.id, closure_2, obj18), done: true };
-              return obj19;
+              const obj14 = closure_133_0(closure_133_3[6]);
+              const obj19 = { billingAddressToken, analyticsLocation, bank: p24Bank };
+              obj = { value: obj14.createPaymentSource(closure_133_6.STRIPE, paymentMethod.id, closure_2, obj19), done: true };
+              return obj;
             }
           }
-        } catch (tmp34) {
+        } catch (tmp22) {
           line2 = 3;
-          throw tmp34;
+          throw tmp22;
         }
       }
     })();
@@ -531,7 +531,7 @@ obj = function _createExpressCheckoutPaymentMethod() {
             billingAddressToken = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {
@@ -693,7 +693,7 @@ obj = function _confirmPaymentElementSource() {
                 billing_details = undefined;
                 c12 = 3;
                 c13 = 1;
-                return { value: "flexDirection", done: null };
+                return { value: "flexDirection", done: true };
               }
               break;
             }
@@ -1319,7 +1319,7 @@ obj = function _createAdyenVaultablePaymentSource() {
               adyen_redirect_url = undefined;
               c12 = 1;
               c13 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c12) {
             if (arg0 === 1) {

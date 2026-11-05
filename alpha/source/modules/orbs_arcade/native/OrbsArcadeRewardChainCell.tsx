@@ -1,10 +1,10 @@
-// Module ID: 17301
-// Function ID: 17302
+// Module ID: 17320
+// Function ID: 17321
 // Name: OrbsArcadeRewardChainCell
-// Dependencies: [32, 19, 17, 5142, 21, 5141, 575, 1652, 504, 5378, 5148, 5732, 17271, 1705, 671, 5723, 17302, 9689, 17280, 7476, 5755, 17303, 2]
+// Dependencies: [32, 19, 17, 5144, 21, 5143, 575, 1652, 504, 5380, 5150, 5734, 17295, 1705, 671, 5725, 17321, 9695, 17312, 7479, 5757, 17322, 2]
 // Exports: default, useOrbsArcadeRewardChainRowStyle, useOrbsArcadeRewardChainTimeline
 
-// Module 17301 (OrbsArcadeRewardChainCell)
+// Module 17320 (OrbsArcadeRewardChainCell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,9 +12,9 @@ import _mod1652 from "module_1652" /* 1652 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -131,13 +131,13 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   ({ status, isFocused, focusRingAtMs } = arg0);
   let tmp = closure_14();
   let tmp2 = token1;
-  let obj = token1(5148);
+  let obj = token1(5150);
   const theme = obj.useThemeContext().theme;
-  let obj2 = token1(5732);
+  let obj2 = token1(5734);
   const token = obj2.useToken(ref(575).colors.ICON_STRONG);
-  let obj3 = token1(5732);
+  let obj3 = token1(5734);
   token1 = obj3.useToken(ref(575).colors.STATUS_POSITIVE);
-  const LOCKED = token1(17271).OrbsArcadeRewardStatus.LOCKED;
+  const LOCKED = token1(17295).OrbsArcadeRewardStatus.LOCKED;
   ref = react.useRef(null);
   let sum = null;
   if (null != grantAtMs) {
@@ -354,7 +354,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     tmp61Result = null;
     if (!isStemTargetGranted) {
       const obj7 = { style: StyleSheet.absoluteFill, start, end, colors: memo1 };
-      tmp61Result = tmp61(tmp4(5723), obj7);
+      tmp61Result = tmp61(tmp4(5725), obj7);
     }
     tmp61Result2 = tmp61(View, obj6);
   }
@@ -365,7 +365,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   items19[1] = closure_8(View, obj8);
   if (isFocused) {
     const obj9 = { color: token, progress: derivedValue1, rewardSize: 50, strokeWidth };
-    tmp68Result = tmp68(tmp4(17302), obj9);
+    tmp68Result = tmp68(tmp4(17321), obj9);
   } else {
     tmp68Result = null;
   }
@@ -373,7 +373,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
   let tmp58Result = null;
   if (status !== LOCKED) {
     let tmp68Result5 = null;
-    const tmp2Result14 = tmp2(5148);
+    const tmp2Result14 = tmp2(5150);
     const tmp72 = closure_9;
     if (!tmp2Result14.isThemeLight(theme)) {
       const obj10 = { style: items21 };
@@ -383,15 +383,15 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     const obj11 = { children: items22 };
     items22 = [tmp68Result5, ];
     const obj12 = { color: token1, progress: derivedValue, rewardSize: 50, strokeWidth };
-    items22[1] = closure_8(ref(17302), obj12);
+    items22[1] = closure_8(ref(17321), obj12);
     tmp58Result = tmp58(tmp72, obj11);
   }
   items19[3] = tmp58Result;
-  if (reward.type === tmp2(17271).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
-    tmp68Result6 = tmp68(tmp2(9689).NitroCoinSpotIllustration, { height: 30 });
+  if (reward.type === tmp2(17295).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
+    tmp68Result6 = tmp68(tmp2(9695).NitroCoinSpotIllustration, { height: 30 });
   } else {
     const obj13 = { reward, size: 38 };
-    tmp68Result6 = tmp68(tmp4(17280), obj13);
+    tmp68Result6 = tmp68(tmp4(17312), obj13);
   }
   items19[4] = tmp68Result6;
   let tmp68Result7 = null;
@@ -400,7 +400,7 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     items23 = [tmp.checkBadge, animatedStyle1];
     const View2 = tmp4(1652).View;
     obj15 = { size: "xs", color: ref(575).colors.STATUS_POSITIVE, secondaryColor: ref(575).colors.WHITE };
-    CircleCheckIcon = tmp2(7476).CircleCheckIcon;
+    CircleCheckIcon = tmp2(7479).CircleCheckIcon;
     tmp68Result7 = tmp68(View2, obj14);
   }
   items19[5] = tmp68Result7;
@@ -409,8 +409,8 @@ export default function OrbsArcadeRewardChainCell(arg0) {
     tmp68Result8 = null;
     if (null != grantAtMs) {
       const obj16 = { pointerEvents: "none", style: tmp.confetti, children: closure_8(tmp4Result, obj17) };
-      obj17 = { ref, source: tmp2(17303), autoPlay: false, loop: false };
-      tmp4Result = ref(5755);
+      obj17 = { ref, source: tmp2(17322), autoPlay: false, loop: false };
+      tmp4Result = ref(5757);
       tmp68Result8 = tmp68(tmp59, obj16);
     }
   }

@@ -1,14 +1,14 @@
-// Module ID: 8789
-// Function ID: 8790
+// Module ID: 8794
+// Function ID: 8795
 // Name: TextWarningIcon
-// Dependencies: [19, 21, 575, 5850, 8760, 2]
+// Dependencies: [19, 21, 575, 5853, 8765, 2]
 // Exports: TextWarningIcon
 
-// Module 8789 (TextWarningIcon)
+// Module 8794 (TextWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 8760 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 8765 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

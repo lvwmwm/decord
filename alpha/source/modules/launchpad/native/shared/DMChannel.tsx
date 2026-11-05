@@ -1,16 +1,16 @@
-// Module ID: 19365
-// Function ID: 19366
+// Module ID: 19396
+// Function ID: 19397
 // Name: shared/DMChannel
-// Dependencies: [19, 6911, 21, 5890, 10980, 5141, 575, 19002, 18670, 17556, 11, 5776, 19357, 7121, 19001, 19358, 11222, 5826, 5786, 2]
+// Dependencies: [19, 6914, 21, 5893, 10986, 5143, 575, 19033, 18700, 17582, 11, 5778, 19388, 7124, 19032, 19389, 11230, 5828, 5788, 2]
 
-// Module 19365 (shared/DMChannel)
+// Module 19396 (shared/DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import transitionToChannel from "transitionToChannel" /* 5890 */;
-import ReadStateConstants from "ReadStateConstants" /* 6911 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10980 */;
+import transitionToChannel from "transitionToChannel" /* 5893 */;
+import ReadStateConstants from "ReadStateConstants" /* 6914 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10986 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -36,11 +36,11 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
     flag = false;
   }
   const tmp = closure_6();
-  const tmp4 = flag(19002)();
-  let obj = channel(18670);
+  const tmp4 = flag(19033)();
+  let obj = channel(18700);
   const baseChannelUnreadBadgeState = obj.useBaseChannelUnreadBadgeState(channel, muted);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
-  const tmp7 = flag(17556)(channel, { unread });
+  const tmp7 = flag(17582)(channel, { unread });
   let extractTimestampResult;
   if (null != tmp7) {
     const tmp2Result = flag(11);
@@ -53,10 +53,10 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
       str = "text-default";
     }
   }
-  const tmp5Result = channel(5776);
+  const tmp5Result = channel(5778);
   const fontScale = tmp5Result.useFontScale();
   const items = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
-  const tmp2Result3 = flag(19357);
+  const tmp2Result3 = flag(19388);
   const obj3 = {
     onPress: react.useCallback(() => {
       const obj = transitionToChannel;
@@ -69,15 +69,15 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
     }, items2)
   };
   items1 = [channel.id, flag];
-  const PressableHighlight = tmp5(7121).PressableHighlight;
+  const PressableHighlight = tmp5(7124).PressableHighlight;
   items2 = [channel.id];
   const merged = Object.assign(obj3);
-  const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: tmp11Result, latestMessageTimestamp: extractTimestampResult, channelName: flag(5786)(channel), fontScale };
+  const obj4 = { channel, unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES, muted, mentionCount, unreadBadge: null, subtitle: tmp11Result, latestMessageTimestamp: extractTimestampResult, channelName: flag(5788)(channel), fontScale };
   tmp11Result = null != tmp7;
-  const tmp2Result4 = flag(19001);
+  const tmp2Result4 = flag(19032);
   if (tmp11Result) {
-    const obj6 = { channel, message: tmp7, color: str, muted, layout: channel(5826).ChannelListLayoutTypes.COMPACT };
-    const ChannelRowPreview = tmp5(11222).ChannelRowPreview;
+    const obj6 = { channel, message: tmp7, color: str, muted, layout: channel(5828).ChannelListLayoutTypes.COMPACT };
+    const ChannelRowPreview = tmp5(11230).ChannelRowPreview;
     tmp11Result = tmp11(ChannelRowPreview, obj6);
   }
   return tmp2Result3(<PressableHighlight style={items} underlayColor={tmp.pressableUnderlayColor.backgroundColor}>{tmp2Result4(obj4)}</PressableHighlight>);

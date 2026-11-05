@@ -1,30 +1,30 @@
-// Module ID: 9762
-// Function ID: 9763
+// Module ID: 9768
+// Function ID: 9769
 // Name: GameProfileCommunities
-// Dependencies: [32, 5, 19, 17, 5012, 5044, 9516, 1072, 4997, 21, 5141, 575, 5004, 504, 9466, 9511, 9486, 7528, 7661, 7487, 7041, 9590, 1113, 9763, 9766, 5382, 9768, 5761, 8168, 9770, 12, 9585, 2]
+// Dependencies: [32, 5, 19, 17, 5014, 5046, 9523, 1072, 4999, 21, 5143, 575, 5006, 504, 9473, 9518, 9493, 7530, 7663, 7490, 7044, 9596, 1113, 9769, 9772, 5384, 9774, 5763, 8173, 9776, 12, 9591, 2]
 // Exports: default
 
-// Module 9762 (GameProfileCommunities)
+// Module 9768 (GameProfileCommunities)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4997 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5004 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9466 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
-import GameProfileNavTypes from "GameProfileNavTypes" /* 9511 */;
-import GameProfileConstants from "GameProfileConstants" /* 9516 */;
-import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9763 */;
-import useGameProfileCommunitiesLocaleFilterDefault from "useGameProfileCommunitiesLocaleFilter" /* 9766 */;
-import GameProfileCommunitiesLocaleFilterActionSheet from "GameProfileCommunitiesLocaleFilterActionSheet" /* 9768 */;
+import ChannelConstants from "ChannelConstants" /* 4999 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5006 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5384 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9473 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9493 */;
+import GameProfileNavTypes from "GameProfileNavTypes" /* 9518 */;
+import GameProfileConstants from "GameProfileConstants" /* 9523 */;
+import useGameProfileCommunitiesDefault from "useGameProfileCommunities" /* 9769 */;
+import useGameProfileCommunitiesLocaleFilterDefault from "useGameProfileCommunitiesLocaleFilter" /* 9772 */;
+import GameProfileCommunitiesLocaleFilterActionSheet from "GameProfileCommunitiesLocaleFilterActionSheet" /* 9774 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileCommunitiesLocaleFilterActionSheetDefault = GameProfileCommunitiesLocaleFilterActionSheet;
@@ -258,12 +258,12 @@ export default function GameProfileCommunities(game) {
   let obj = { style: tmp.container, children: items2 };
   let obj2 = { style: tmp.header, children: items1 };
   const obj3 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.heading, children: intl.string(game(1113).t.r6bvTh) };
-  const Heading = game(5761).Heading;
+  const Heading = game(5763).Heading;
   intl = game(1113).intl;
   items1 = [closure_11(Heading, obj3), ];
   if (showLocaleFilter) {
-    const obj4 = { size: "sm", variant: "secondary", icon: closure_11(game(9770).LanguageIcon, { size: "sm" }), accessibilityLabel: intl2.string(game(1113).t.OlOHDH), onPress: callback };
-    const IconButton = tmp12(8168).IconButton;
+    const obj4 = { size: "sm", variant: "secondary", icon: closure_11(game(9776).LanguageIcon, { size: "sm" }), accessibilityLabel: intl2.string(game(1113).t.OlOHDH), onPress: callback };
+    const IconButton = tmp12(8173).IconButton;
     intl2 = tmp12(1113).intl;
     showLocaleFilter = tmp11(IconButton, obj4);
   }

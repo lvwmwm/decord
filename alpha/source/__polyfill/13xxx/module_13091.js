@@ -1,148 +1,125 @@
 // Module ID: 13091
 // Function ID: 13092
-// Dependencies: [13092, 13093, 13094, 13095]
+// Dependencies: []
 
 // Module 13091
-import _mod13093 from "module_13093" /* 13093 */;
-import module_13092_mod from "module_13092" /* 13092 */;
-import module_13094 from "module_13094" /* 13094 */;
-import size_mod from "module_13095" /* 13095 */;
-
-let module_13092;
-let obj5;
-let size;
-function patchDictionary(descriptors, descriptors1) {
-  const obj = {};
-  for (const key10004 in descriptors) {
-    let syntax = descriptors[key10004].syntax || descriptors[key10004];
-    obj[key10004] = syntax;
-    continue;
-  }
-  for (const key10011 in descriptors1) {
-    let syntax3 = descriptors1[key10011].syntax;
-    if (key10011 in descriptors) {
-      if (syntax3) {
-        let syntax2;
-        if (re0.test(descriptors1[key10011].syntax)) {
-          let str2 = descriptors1[key10011].syntax;
-          let text = `${obj[key10011]} `;
-          syntax2 = `${obj[key10011]} ${str2.trim()}`;
-        } else {
-          syntax2 = descriptors1[key10011].syntax;
-        }
-        obj[key10011] = syntax2;
-        continue;
-      } else {
-        delete obj[tmp5];
-        continue;
-      }
-      continue;
+let closure_1 = Object.create(null);
+let closure_2 = Object.create(null);
+let obj = {
+  keyword: function getKeywordDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_1, str)) {
+      return closure_1[str];
     } else {
-      if (!syntax3) {
-        continue;
+      const formatted = str.toLowerCase();
+      if (obj.call(closure_1, formatted)) {
+        closure_1[str] = closure_1[formatted];
+        return closure_1[formatted];
       } else {
-        let str = descriptors1[key10011].syntax;
-        obj[key10011] = str.replace(re0, "");
-        continue;
-      }
-      continue;
-    }
-    continue;
-  }
-  return obj;
-}
-const re0 = /^\s*\|\s*/;
-let obj = { types: patchDictionary(module_13092, _mod13093.syntaxes), atrules: obj5, properties: patchDictionary(size, _mod13093.properties) };
-module_13092 = module_13092_mod;
-const obj2 = Object.create(null);
-for (const key10022 in module_13094) {
-  let tmp23 = module_13094[key10022];
-  let tmp7 = null;
-  if (tmp23.descriptors) {
-    let _Object = Object;
-    let obj3 = Object.create(null);
-    tmp7 = obj3;
-    let keys = Object.keys();
-    if (keys !== undefined) {
-      tmp7 = obj3;
-      let tmp9 = keys[tmp2];
-      while (tmp9 !== undefined) {
-        obj3[tmp9] = tmp23.descriptors[tmp9].syntax;
-        continue;
-      }
-    }
-  }
-  let str = tmp23.syntax;
-  let substr = key10022.substr(1);
-  let str2 = str.trim();
-  let str3 = str2.match(/^@\S+\s+([^;\{]*)/)[1];
-  let trimmed = str3.trim() || null;
-  let obj4 = { prelude: trimmed, descriptors: tmp7 };
-  obj2[substr] = obj4;
-  continue;
-}
-const atrules = _mod13093.atrules;
-obj5 = {};
-for (const key10049 in obj2) {
-  let descriptors1 = atrules[key10049] && atrules[key10049].descriptors || null;
-  if (key10049 in atrules) {
-    if ("prelude" in atrules[key10049]) {
-      let patchDictionaryResult;
-      let obj6 = { prelude: atrules[key10049].prelude, descriptors: patchDictionaryResult };
-      if (obj2[key10049].descriptors) {
-        let descriptors = obj2[key10049].descriptors;
-        if (!descriptors1) {
-          descriptors1 = {};
+        let tmp2 = length >= 2;
+        if (2 <= formatted.length) {
+          tmp2 = 45 === formatted.charCodeAt(0);
         }
-        patchDictionaryResult = patchDictionary(descriptors, descriptors1);
+        if (tmp2) {
+          tmp2 = 45 === formatted.charCodeAt(1);
+        }
+        let str2 = "";
+        if (!tmp2) {
+          let str3 = "";
+          if (3 <= formatted.length) {
+            str3 = "";
+            if (45 === formatted.charCodeAt(0)) {
+              str3 = "";
+              if (45 !== formatted.charCodeAt(1)) {
+                const index = formatted.indexOf("-", 2);
+                str3 = "";
+                if (-1 !== index) {
+                  str3 = formatted.substring(0, index + 1);
+                }
+              }
+            }
+          }
+          str2 = str3;
+        }
+        const _Object = Object;
+        const obj2 = { basename: formatted.substr(str2.length), name: formatted, vendor: str2, prefix: str2, custom: tmp2 };
+        const freezeResult = freeze(obj2);
+        closure_1[str] = freezeResult;
+        return freezeResult;
+      }
+    }
+  },
+  property: function getPropertyDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_2, str)) {
+      return closure_2[str];
+    } else {
+      str = str[0];
+      let str2 = "/";
+      if ("/" === str) {
+        if (`/` === str[1]) {
+          str2 = "//";
+        }
+        str = str2;
       } else {
-        patchDictionaryResult = descriptors1;
-        if (patchDictionaryResult) {
-          let obj7 = {};
-          patchDictionaryResult = obj7;
-          let keys1 = Object.keys();
-          if (keys1 !== undefined) {
-            patchDictionaryResult = obj7;
-            let tmp16 = keys1[tmp];
-            while (tmp16 !== undefined) {
-              obj7[tmp16] = descriptors1[tmp16].syntax;
-              continue;
+        const tmp2 = "_" !== str && "*" !== str && "$" !== str && "#" !== str && "+" !== str && "&" !== str;
+        if (tmp2) {
+          str = "";
+        }
+      }
+      const tmp4 = str.length - tmp3 >= 2 && 45 === str.charCodeAt(tmp3) && 45 === str.charCodeAt(tmp3 + 1);
+      let arr = str;
+      if (!tmp4) {
+        const formatted = str.toLowerCase();
+        arr = formatted;
+        if (obj.call(closure_2, formatted)) {
+          closure_2[str] = closure_2[formatted];
+          return closure_2[formatted];
+        }
+      }
+      let str10 = "";
+      if (!tmp4) {
+        let str11 = "";
+        if (arr.length - (str.length || 0) >= 3) {
+          str11 = "";
+          if (45 === arr.charCodeAt(str.length || 0)) {
+            str11 = "";
+            if (45 !== arr.charCodeAt((str.length || 0) + 1)) {
+              const index = arr.indexOf("-", tmp7 + 2);
+              str11 = "";
+              if (-1 !== index) {
+                str11 = arr.substring(tmp7, index + 1);
+              }
             }
           }
         }
+        str10 = str11;
       }
-      obj5[key10049] = obj6;
-      continue;
+      const substr = arr.substr(0, str.length + str10.length);
+      const _Object = Object;
+      const obj2 = { basename: arr.substr(substr.length), name: arr.substr(str.length), hack: str, vendor: str10, prefix: substr, custom: tmp4 };
+      const freezeResult = freeze(obj2);
+      closure_2[str] = freezeResult;
+      return freezeResult;
     }
-  }
-  let prelude = obj2[key10049].prelude || null;
-}
-for (const key10070 in atrules) {
-  if (globalThis.hasOwnProperty.call(obj2, key10070)) {
-    continue;
-  } else {
-    let prelude1 = atrules[key10070].prelude || null;
-    let obj8 = { prelude: prelude1, descriptors: descriptors2 };
-    let descriptors2 = atrules[key10070].descriptors;
-    if (descriptors2) {
-      let descriptors3 = atrules[key10070].descriptors;
-      let obj16 = {};
-      descriptors2 = obj16;
-      let keys2 = Object.keys();
-      if (keys2 !== undefined) {
-        descriptors2 = obj16;
-        let tmp20 = keys2[tmp];
-        while (tmp20 !== undefined) {
-          obj16[tmp20] = descriptors3[tmp20].syntax;
-          continue;
+  },
+  isCustomProperty(callResult, arg1) {
+    const tmp2 = callResult.length - tmp >= 2 && 45 === callResult.charCodeAt(tmp) && 45 === callResult.charCodeAt(tmp + 1);
+    return tmp2;
+  },
+  vendorPrefix: function getVendorPrefix(str, arg1) {
+    if (str.length - (arg1 || 0) >= 3) {
+      if (45 === str.charCodeAt(arg1 || 0)) {
+        if (45 !== str.charCodeAt((arg1 || 0) + 1)) {
+          const index = str.indexOf("-", tmp + 2);
+          if (-1 !== index) {
+            return str.substring(arg1 || 0, index + 1);
+          }
         }
       }
     }
-    obj5[key10070] = obj8;
-    continue;
+    return "";
   }
-  continue;
-}
-size = size_mod;
+};
 
 export default obj;

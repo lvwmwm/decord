@@ -1,9 +1,9 @@
-// Module ID: 18458
-// Function ID: 18459
+// Module ID: 18488
+// Function ID: 18489
 // Name: GuildSettingsModalChannelsActionCreators
 // Dependencies: [572, 2]
 
-// Module 18458 (GuildSettingsModalChannelsActionCreators)
+// Module 18488 (GuildSettingsModalChannelsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

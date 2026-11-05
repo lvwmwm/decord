@@ -1,31 +1,31 @@
-// Module ID: 6997
-// Function ID: 6998
+// Module ID: 7000
+// Function ID: 7001
 // Name: ChannelSectionStore
-// Dependencies: [2167, 5362, 6998, 4990, 5012, 5073, 5044, 5172, 1385, 1072, 4997, 1083, 6999, 7000, 7001, 1108, 11, 6087, 504, 1449, 572, 2]
+// Dependencies: [2167, 5364, 7001, 4992, 5014, 5075, 5046, 5174, 1385, 1072, 4999, 1083, 7002, 7003, 7004, 1108, 11, 6090, 504, 1449, 572, 2]
 // Exports: isViewChannelSidebar
 
-// Module 6997 (ChannelSectionStore)
+// Module 7000 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1083 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6087 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6999 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 7000 */;
-import FriendsSidebarTracking from "FriendsSidebarTracking" /* 7001 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6090 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 7002 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 7003 */;
+import FriendsSidebarTracking from "FriendsSidebarTracking" /* 7004 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import ExperimentStore from "ExperimentStore" /* 5362 */;
-import SearchMessageStore from "SearchMessageStore" /* 6998 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import ExperimentStore from "ExperimentStore" /* 5364 */;
+import SearchMessageStore from "SearchMessageStore" /* 7001 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4997 */;
+import ChannelConstants from "ChannelConstants" /* 4999 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -229,7 +229,7 @@ class ChannelSectionStore extends PersistedStore {
       const obj = FriendsSidebarExperimentDefault;
       const tmp11 = importDefault;
       if (obj.getConfig({ location: "ChannelSectionStore" }).appBarToggleEnabled ? flag5 : flag4) {
-        const tmp11Result = tmp11(7000);
+        const tmp11Result = tmp11(7003);
         if (tmp11Result.getConfig({ location: "ChannelSectionStore" }).sidebarEnabled) {
           NONE = constants.FRIENDS;
         }

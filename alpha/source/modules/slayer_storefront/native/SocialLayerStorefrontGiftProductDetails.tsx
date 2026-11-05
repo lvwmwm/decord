@@ -1,18 +1,18 @@
-// Module ID: 14635
-// Function ID: 14636
+// Module ID: 14648
+// Function ID: 14649
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 7466, 10852, 1411, 9668, 5851, 5761, 2]
+// Dependencies: [19, 17, 1072, 21, 5143, 575, 7469, 10858, 1411, 9674, 5854, 5763, 2]
 // Exports: default
 
-// Module 14635 (SocialLayerStorefrontGiftProductDetails)
+// Module 14648 (SocialLayerStorefrontGiftProductDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9668 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9674 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -22,7 +22,7 @@ let obj3;
 let obj4;
 let size;
 let tmp9;
-const FastImageDefault = tmp9(5851);
+const FastImageDefault = tmp9(5854);
 const View = react_native.View;
 const constants = Constants.PriceSetAssignmentPurchaseTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -44,9 +44,9 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
   let getOrFetchApplication;
   let tmp = closure_8();
-  let obj = getOrFetchApplication(7466);
+  let obj = getOrFetchApplication(7469);
   getOrFetchApplication = obj.useGetOrFetchApplication(sku.applicationId);
-  const obj2 = getOrFetchApplication(10852);
+  const obj2 = getOrFetchApplication(10858);
   let obj3 = { sku, priceSetAssignmentPurchaseType: constants.GIFT };
   const userPrice = obj2.useFormattedSKUPrice(obj3).userPrice;
   const items = [getOrFetchApplication];
@@ -74,17 +74,17 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     }
     items2 = [tmp8Result, ];
     const obj8 = { variant: "body-sm/medium", color: "text-muted", children: getOrFetchApplication.name };
-    items2[1] = closure_6(getOrFetchApplication(5761).Text, obj8);
+    items2[1] = closure_6(getOrFetchApplication(5763).Text, obj8);
     tmp6Result = tmp6(tmp7, obj6);
   }
   items3 = [tmp6Result, ];
   const obj9 = { variant: "body-md/semibold", children: sku.name };
-  items3[1] = closure_6(getOrFetchApplication(5761).Text, obj9);
+  items3[1] = closure_6(getOrFetchApplication(5763).Text, obj9);
   items1[1] = closure_7(View, obj5);
   let tmp8Result2 = null != userPrice;
   if (tmp8Result2) {
     const obj10 = { variant: "body-md/semibold", children: userPrice };
-    tmp8Result2 = tmp8(tmp2(5761).Text, obj10);
+    tmp8Result2 = tmp8(tmp2(5763).Text, obj10);
   }
   items1[2] = tmp8Result2;
   return closure_7(View, obj4);

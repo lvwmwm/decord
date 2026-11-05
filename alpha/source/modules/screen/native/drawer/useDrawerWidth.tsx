@@ -1,15 +1,15 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 11754
+// Function ID: 11755
 // Name: useDrawerWidth
-// Dependencies: [5172, 1072, 5327, 5325, 11747, 504, 2]
+// Dependencies: [5174, 1072, 5329, 5327, 11755, 504, 2]
 // Exports: useDrawerWidth
 
-// Module 11746 (useDrawerWidth)
+// Module 11754 (useDrawerWidth)
 import get_initialized from "get initialized" /* 504 */;
-import useChatLayoutDefault from "useChatLayout" /* 5325 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5327 */;
-import useFoldSeamDefault from "useFoldSeam" /* 11747 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import useChatLayoutDefault from "useChatLayout" /* 5327 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5329 */;
+import useFoldSeamDefault from "useFoldSeam" /* 11755 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

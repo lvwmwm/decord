@@ -1,17 +1,17 @@
-// Module ID: 18420
-// Function ID: 18421
+// Module ID: 18450
+// Function ID: 18451
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [4993, 5003, 1072, 504, 11010, 5015, 1113, 3577, 2]
+// Dependencies: [4995, 5005, 1072, 504, 11016, 5017, 1113, 3577, 2]
 // Exports: default
 
-// Module 18420 (useFavoritesGuildCategoryFullNotice)
+// Module 18450 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import _modDef3577 from "module_3577" /* 3577 */;
-import FavoritesConstants from "FavoritesConstants" /* 5003 */;
-import FavoritesUtils from "FavoritesUtils" /* 5015 */;
-import FavoritesHooks from "FavoritesHooks" /* 11010 */;
-import FavoriteStore from "FavoriteStore" /* 4993 */;
+import FavoritesConstants from "FavoritesConstants" /* 5005 */;
+import FavoritesUtils from "FavoritesUtils" /* 5017 */;
+import FavoritesHooks from "FavoritesHooks" /* 11016 */;
+import FavoriteStore from "FavoriteStore" /* 4995 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = FavoritesConstants.FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;

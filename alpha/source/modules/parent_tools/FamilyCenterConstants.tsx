@@ -1,10 +1,10 @@
-// Module ID: 7856
-// Function ID: 7857
+// Module ID: 7861
+// Function ID: 7862
 // Name: FamilyCenterConstants
 // Dependencies: [1089, 1081, 1113, 2667, 2]
 // Exports: ACCEPTED_LINK_REQUEST_TIMESTAMP_FORMATTER, FAMILY_CENTER_REQUEST_QR_CODE_URL, PENDING_LINK_REQUEST_TIMESTAMP_FORMATTER
 
-// Module 7856 (FamilyCenterConstants)
+// Module 7861 (FamilyCenterConstants)
 import DurationsDefault from "Durations" /* 1089 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2667 from "module_2667" /* 2667 */;

@@ -1,15 +1,16 @@
 // Module ID: 16394
 // Function ID: 16395
-// Dependencies: [16373]
+// Dependencies: [16390]
 
 // Module 16394
-import _mod16373 from "module_16373" /* 16373 */;
+import _mod16390 from "module_16390" /* 16390 */;
 
-const tmp = _mod16373.navigator && _mod16373.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
-}
 
-export default str;
+export default !_mod16390(() => {
+  const fn = () => {
+
+  };
+  const bindResult = fn.bind();
+  const hasOwnPropertyResult = typeof bindResult !== "function" || bindResult.hasOwnProperty("prototype");
+  return hasOwnPropertyResult;
+});

@@ -1,12 +1,12 @@
-// Module ID: 12547
-// Function ID: 12548
+// Module ID: 12554
+// Function ID: 12555
 // Name: resolvedValuesFromUserApplicationIdentityProfile
-// Dependencies: [32, 12466, 12548, 2]
+// Dependencies: [32, 12473, 12555, 2]
 // Exports: default
 
-// Module 12547 (resolvedValuesFromUserApplicationIdentityProfile)
-import resolvedValues from "resolvedValues" /* 12466 */;
-import ProfileDataDynamicType from "ProfileDataDynamicType" /* 12548 */;
+// Module 12554 (resolvedValuesFromUserApplicationIdentityProfile)
+import resolvedValues from "resolvedValues" /* 12473 */;
+import ProfileDataDynamicType from "ProfileDataDynamicType" /* 12555 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -74,16 +74,16 @@ function resolvedValuesFromDynamic(data) {
       let iter = nextResult;
       let tmp5 = require;
       if (nextResult.type === ProfileDataDynamicType.ProfileDataDynamicType.STRING) {
-        let obj2 = { type: tmp5(12466).ResolvedValueType.STRING, value: iter.value };
+        let obj2 = { type: tmp5(12473).ResolvedValueType.STRING, value: iter.value };
         let name3 = iter.name;
         obj[name3] = obj2;
-      } else if (iter.type === tmp5(12548).ProfileDataDynamicType.NUMBER) {
-        let obj3 = { type: tmp5(12466).ResolvedValueType.NUMBER, value: iter.value };
+      } else if (iter.type === tmp5(12555).ProfileDataDynamicType.NUMBER) {
+        let obj3 = { type: tmp5(12473).ResolvedValueType.NUMBER, value: iter.value };
         let name2 = iter.name;
         obj[name2] = obj3;
-      } else if (iter.type === tmp5(12548).ProfileDataDynamicType.MEDIA) {
+      } else if (iter.type === tmp5(12555).ProfileDataDynamicType.MEDIA) {
         if (isVisualUnfurledMedia(iter.value)) {
-          let obj4 = { type: tmp5(12466).ResolvedValueType.MEDIA, media: size };
+          let obj4 = { type: tmp5(12473).ResolvedValueType.MEDIA, media: size };
           let name = iter.name;
           size = { url: iter.value.proxy_url, width: iter.value.width, height: iter.value.height };
           obj[name] = obj4;
@@ -103,13 +103,13 @@ export default function resolvedValuesFromUserApplicationIdentityProfile(profile
   if (null == profile) {
     obj2 = {};
   } else {
-    const obj = {};
+    const obj3 = {};
     if (null != profile.username) {
-      obj.username = { type: resolvedValues.ResolvedValueType.STRING, value: profile.username };
-      const obj3 = { type: resolvedValues.ResolvedValueType.STRING, value: profile.username };
+      obj3.username = { type: resolvedValues.ResolvedValueType.STRING, value: profile.username };
+      const obj = { type: resolvedValues.ResolvedValueType.STRING, value: profile.username };
     }
     obj2 = {};
-    const merged = Object.assign(obj);
+    const merged = Object.assign(obj3);
     const merged1 = Object.assign(resolvedValuesFromPrimary(profile));
     const merged2 = Object.assign(resolvedValuesFromDynamic(profile));
   }

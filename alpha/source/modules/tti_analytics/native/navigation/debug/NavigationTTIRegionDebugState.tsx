@@ -1,10 +1,10 @@
-// Module ID: 18885
-// Function ID: 18886
+// Module ID: 18916
+// Function ID: 18917
 // Name: NavigationTTIRegionDebugState
 // Dependencies: [2]
 // Exports: getNavigationTTIRegionDebugMeasurement, recordNavigationTTIRegionDebugMeasurement, subscribeNavigationTTIRegionDebugMeasurements
 
-// Module 18885 (NavigationTTIRegionDebugState)
+// Module 18916 (NavigationTTIRegionDebugState)
 import size from "module_2" /* 2 */;
 
 let set = new Set();

@@ -1,20 +1,20 @@
-// Module ID: 18747
-// Function ID: 18748
+// Module ID: 18777
+// Function ID: 18778
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7021, 21, 5141, 575, 504, 18738, 1187, 9656, 1357, 7143, 7195, 10946, 2]
+// Dependencies: [19, 17, 7024, 21, 5143, 575, 504, 18768, 1187, 9662, 1357, 7146, 7198, 10952, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 18747 (BackIconWithBadge)
+// Module 18777 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7143 */;
-import XSmallIcon from "XSmallIcon" /* 7195 */;
-import ClipView from "ClipView" /* 9656 */;
-import XLargeIcon from "XLargeIcon" /* 10946 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7146 */;
+import XSmallIcon from "XSmallIcon" /* 7198 */;
+import ClipView from "ClipView" /* 9662 */;
+import XLargeIcon from "XLargeIcon" /* 10952 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7021 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7024 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ function IconWithBadge(includeNotificationsCount) {
   const obj = require("get initialized");
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   let num = 0;
-  const value = memo(18738)().value;
+  const value = memo(18768)().value;
   const tmp5 = memo;
   if (null != stateFromStores) {
     num = stateFromStores;
@@ -83,7 +83,7 @@ function IconWithBadge(includeNotificationsCount) {
   const obj2 = { style: size, children: tmp11(View, obj3) };
   obj3 = { style: tmp.backIcon, children: items5 };
   tmp11 = closure_7;
-  const tmp5Result = tmp5(9656);
+  const tmp5Result = tmp5(9662);
   if (null != memo1) {
     const items3 = [memo1];
     items4 = items3;

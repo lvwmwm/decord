@@ -1,20 +1,20 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9663
+// Function ID: 9664
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 671, 9658, 575, 5732, 2]
+// Dependencies: [19, 21, 671, 9664, 575, 5734, 2]
 // Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
-// Module 9657 (CutoutBackgroundContext)
+// Module 9663 (CutoutBackgroundContext)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5732 */;
+import useToken from "useToken" /* 5734 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
 let tmp6;
 const _modDef671 = tmp3(671);
-const shared_colors = tmp6(9658);
+const shared_colors = tmp6(9664);
 const jsx = Fragment.jsx;
 let context = react.createContext(undefined);
 const result = size.fileFinishedImporting("design/components/Icon/native/CutoutBackgroundContext.tsx");

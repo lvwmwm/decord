@@ -1,10 +1,10 @@
-// Module ID: 18376
-// Function ID: 18377
+// Module ID: 18406
+// Function ID: 18407
 // Name: ActiveChannelsActionCreators
-// Dependencies: [5, 1072, 572, 1282, 6582, 2]
+// Dependencies: [5, 1072, 572, 1282, 6585, 2]
 // Exports: fetchActiveChannels
 
-// Module 18376 (ActiveChannelsActionCreators)
+// Module 18406 (ActiveChannelsActionCreators)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ let obj = function _fetchActiveChannels() {
               channels = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {

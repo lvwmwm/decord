@@ -1,128 +1,84 @@
 // Module ID: 13281
 // Function ID: 13282
-// Dependencies: []
-// Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isString, isSyntheticEvent, isThenable, isVueViewModel
+// Dependencies: [13282, 13280]
 
 // Module 13281
-function isInstanceOf(arg0, arg1) {
-  try {
-    return arg0 instanceof arg1;
-  } catch (err) {
-    return false;
-  }
-}
+import GLOBAL_OBJ from "module_13282" /* 13282 */;
 
-export function isDOMError(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "DOMError" + "]";
-}
-export function isDOMException(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "DOMException" + "]";
-}
-export function isElement(arg0) {
-  let tmp = typeof globalThis.Element !== "undefined";
-  if (typeof globalThis.Element !== "undefined") {
-    tmp = isInstanceOf(arg0, globalThis.Element);
+const require = globalThis.__r;
+let _require, c0, dependencyMap;
+
+function consoleSandbox(fn) {
+  let closure_1;
+  let console;
+  const f104740 = (item) => {
+    console[item] = closure_1[item];
+  };
+  const tmp = console;
+  if ("console" in console(13282).GLOBAL_OBJ) {
+    console = tmp(13282).GLOBAL_OBJ.console;
+    dependencyMap = {};
+    const _Object = Object;
+    const keys = Object.keys(obj);
+    const item = keys.forEach((item) => {
+      closure_1[item] = console[item];
+      console[item] = obj[item];
+    });
+    try {
+      const tmp6 = fn();
+      const item1 = keys.forEach(f104740);
+      return tmp6;
+    } catch (tmp8) {
+      const item2 = keys.forEach(f104740);
+      throw tmp8;
+    }
+  } else {
+    return fn();
   }
-  return tmp;
 }
-export function isError(arg0) {
-  const callResult = toString.call(arg0);
-  if ("[object Error]" !== callResult) {
-    if ("[object Exception]" !== callResult) {
-      if ("[object DOMException]" !== callResult) {
-        if ("[object WebAssembly.Exception]" !== callResult) {
-          const _Error = Error;
-          return isInstanceOf(arg0, Error);
+let items = ["debug", "info", "warn", "error", "log", "assert", "trace"];
+const originalConsoleMethods = {};
+
+export const CONSOLE_LEVELS = items;
+export { consoleSandbox };
+export const logger = GLOBAL_OBJ.getGlobalSingleton("logger", function makeLogger() {
+  _require = false;
+  let obj = {
+    enable() {
+      c0 = true;
+    },
+    disable() {
+      c0 = false;
+    },
+    isEnabled() {
+      return c0;
+    }
+  };
+  let tmp = items;
+  const forEach = items.forEach;
+  if (require("module_13280").DEBUG_BUILD) {
+    const item = forEach((arg0) => {
+      let closure_0 = arg0;
+      obj[arg0] = () => {
+        const args = [...arguments];
+        const tmp = args;
+        if (tmp) {
+          consoleSandbox(() => {
+            const _console = GLOBAL_OBJ.GLOBAL_OBJ.console;
+            obj = _console[args];
+            items = ["Sentry Logger [" + args + "]:", ...closure_0];
+            obj.apply(items);
+          });
         }
-      }
-    }
+      };
+    });
+  } else {
+    const item1 = forEach((arg0) => {
+      obj[arg0] = () => {
+
+      };
+    });
   }
-  return true;
-}
-export function isErrorEvent(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "ErrorEvent" + "]";
-}
-export function isEvent(arg0) {
-  let tmp = typeof Event !== "undefined";
-  if (typeof Event !== "undefined") {
-    const _Event = Event;
-    tmp = isInstanceOf(arg0, Event);
-  }
-  return tmp;
-}
-export { isInstanceOf };
-export function isParameterizedString(obj) {
-  let tmp = typeof obj === "object";
-  if (typeof obj === "object") {
-    tmp = null !== obj;
-  }
-  if (tmp) {
-    tmp = "__sentry_template_string__" in obj;
-  }
-  if (tmp) {
-    tmp = "__sentry_template_values__" in obj;
-  }
-  return tmp;
-}
-export function isPlainObject(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "Object" + "]";
-}
-export function isPrimitive(obj) {
-  let tmp = null === obj;
-  if (!tmp) {
-    let tmp2 = typeof obj === "object";
-    if (typeof obj === "object") {
-      tmp2 = null !== obj;
-    }
-    if (tmp2) {
-      tmp2 = "__sentry_template_string__" in obj;
-    }
-    if (tmp2) {
-      tmp2 = "__sentry_template_values__" in obj;
-    }
-    tmp = tmp2;
-  }
-  if (!tmp) {
-    let tmp3 = typeof obj !== "object";
-    if (typeof obj !== "object") {
-      tmp3 = typeof obj !== "function";
-    }
-    tmp = tmp3;
-  }
-  return tmp;
-}
-export function isRegExp(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "RegExp" + "]";
-}
-export function isString(arg0) {
-  const callResult = toString.call(arg0);
-  return callResult === "[object " + "String" + "]";
-}
-export function isSyntheticEvent(arg0) {
-  const callResult = toString.call(arg0);
-  const tmp2 = callResult === "[object " + "Object" + "]" && "nativeEvent" in arg0 && "preventDefault" in arg0 && "stopPropagation" in arg0;
-  return tmp2;
-}
-export function isThenable(arg0) {
-  let then = arg0;
-  const _Boolean = Boolean;
-  if (arg0) {
-    then = arg0.then;
-  }
-  if (then) {
-    then = typeof arg0.then === "function";
-  }
-  return _Boolean(then);
-}
-export function isVueViewModel(__isVue) {
-  let tmp = typeof __isVue !== "object" || null === __isVue;
-  if (!tmp) {
-    tmp = !__isVue.__isVue && !__isVue._isVue;
-  }
-  return !tmp;
-}
+  return obj;
+});
+export { originalConsoleMethods };

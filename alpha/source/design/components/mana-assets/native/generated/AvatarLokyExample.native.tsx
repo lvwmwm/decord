@@ -1,26 +1,26 @@
-// Module ID: 20185
-// Function ID: 20186
+// Module ID: 20221
+// Function ID: 20222
 // Name: AvatarLokyExample
-// Dependencies: [19, 21, 20186, 20187, 20188, 7210, 5851, 2]
+// Dependencies: [19, 21, 20222, 20223, 20224, 7213, 5854, 2]
 // Exports: AvatarLokyExample
 
-// Module 20185 (AvatarLokyExample)
+// Module 20221 (AvatarLokyExample)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7210 */;
-import _modDef20186 from "module_20186" /* 20186 */;
-import _modDef20187 from "module_20187" /* 20187 */;
-import _modDef20188 from "module_20188" /* 20188 */;
+import react_native from "react-native" /* 7213 */;
+import _modDef20222 from "module_20222" /* 20222 */;
+import _modDef20223 from "module_20223" /* 20223 */;
+import _modDef20224 from "module_20224" /* 20224 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20186 };
+let obj2 = { uri: _modDef20222 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef20187 };
+let obj3 = { uri: _modDef20223 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef20188 };
-({ uri: _modDef20188 });
+obj[3] = { uri: _modDef20224 };
+({ uri: _modDef20224 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarLokyExample.native.tsx");
 

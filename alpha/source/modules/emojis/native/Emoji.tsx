@@ -1,16 +1,16 @@
-// Module ID: 7436
-// Function ID: 7437
+// Module ID: 7439
+// Function ID: 7440
 // Name: Emoji
-// Dependencies: [19, 17, 1192, 21, 1377, 5091, 1187, 5851, 5148, 7437, 7438, 2]
+// Dependencies: [19, 17, 1192, 21, 1377, 5093, 1187, 5854, 5150, 7440, 7441, 2]
 // Exports: default
 
-// Module 7436 (Emoji)
+// Module 7439 (Emoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 5091 */;
-import shared from "shared" /* 5148 */;
-import FastImageDefault from "FastImage" /* 5851 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 5093 */;
+import shared from "shared" /* 5150 */;
+import FastImageDefault from "FastImage" /* 5854 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import size from "module_2" /* 2 */;
@@ -50,9 +50,9 @@ export default function Emoji(arg0) {
         const tmp10 = FastImageDefault;
         const tmpResult = shared;
         if (tmpResult.isThemeDark(ThemeStore.theme)) {
-          tmp9Result = tmp9(7437);
+          tmp9Result = tmp9(7440);
         } else {
-          tmp9Result = tmp9(7438);
+          tmp9Result = tmp9(7441);
         }
         obj5 = { uri: uRL };
         tmp6Result = tmp6(tmp10, obj4);

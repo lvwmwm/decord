@@ -1,14 +1,14 @@
-// Module ID: 19692
-// Function ID: 19693
+// Module ID: 19727
+// Function ID: 19728
 // Name: ChangelogManager
-// Dependencies: [5, 32, 2191, 7626, 7423, 8708, 19693, 572, 11, 19695, 2]
+// Dependencies: [5, 32, 2191, 7628, 7426, 8713, 19728, 572, 11, 19730, 2]
 
-// Module 19692 (ChangelogManager)
+// Module 19727 (ChangelogManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import ChangelogStore from "ChangelogStore" /* 7626 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
+import ChangelogStore from "ChangelogStore" /* 7628 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

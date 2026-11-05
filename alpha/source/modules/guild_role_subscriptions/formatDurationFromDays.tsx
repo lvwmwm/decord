@@ -1,10 +1,10 @@
-// Module ID: 20165
-// Function ID: 20166
+// Module ID: 20201
+// Function ID: 20202
 // Name: formatDurationFromDays
 // Dependencies: [1113, 2]
 // Exports: default
 
-// Module 20165 (formatDurationFromDays)
+// Module 20201 (formatDurationFromDays)
 import intl3 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

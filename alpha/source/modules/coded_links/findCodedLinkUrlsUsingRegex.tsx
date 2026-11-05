@@ -1,10 +1,10 @@
-// Module ID: 15914
-// Function ID: 15915
+// Module ID: 15926
+// Function ID: 15927
 // Name: findCodedLinkUrlsUsingRegex
 // Dependencies: [1379, 2]
 // Exports: default
 
-// Module 15914 (findCodedLinkUrlsUsingRegex)
+// Module 15926 (findCodedLinkUrlsUsingRegex)
 import ip from "ip" /* 1379 */;
 import size from "module_2" /* 2 */;
 

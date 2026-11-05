@@ -1,14 +1,14 @@
-// Module ID: 19428
-// Function ID: 19429
+// Module ID: 19459
+// Function ID: 19460
 // Name: ActivityPanelSystemUIManager
-// Dependencies: [19, 5791, 21, 19407, 1377, 11400, 11900, 2]
+// Dependencies: [19, 5793, 21, 19438, 1377, 11408, 11909, 2]
 
-// Module 19428 (ActivityPanelSystemUIManager)
+// Module 19459 (ActivityPanelSystemUIManager)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
-import StatusBarDefault from "StatusBar" /* 11400 */;
-import HomeIndicatorDefault from "HomeIndicator" /* 11900 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19407 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5793 */;
+import StatusBarDefault from "StatusBar" /* 11408 */;
+import HomeIndicatorDefault from "HomeIndicator" /* 11909 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19438 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

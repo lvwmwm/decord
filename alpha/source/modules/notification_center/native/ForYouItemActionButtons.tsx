@@ -1,29 +1,29 @@
-// Module ID: 18764
-// Function ID: 18765
+// Module ID: 18794
+// Function ID: 18795
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 4990, 1385, 1072, 21, 5141, 1108, 1652, 5378, 6162, 5768, 1113, 5761, 563, 8574, 18356, 5879, 15917, 10918, 6994, 7625, 7628, 5846, 10379, 1252, 2]
+// Dependencies: [5, 19, 17, 4992, 1385, 1072, 21, 5143, 1108, 1652, 5380, 6165, 5770, 1113, 5763, 563, 8579, 18386, 5882, 15929, 10924, 6997, 7627, 7630, 5849, 10385, 1252, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
-// Module 18764 (ForYouItemActionButtons)
+// Module 18794 (ForYouItemActionButtons)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5378 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
-import parseURLDefault from "parseURL" /* 5879 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6994 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7628 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10918 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15917 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18356 */;
+import timing_timing from "timing/timing" /* 5380 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
+import parseURLDefault from "parseURL" /* 5882 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6997 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7627 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7630 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10924 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15929 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18386 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,9 +38,9 @@ let metroImportAll;
 let tmp2;
 let unpackModuleId;
 const intl23 = tmp2(1113);
-const Text_Text = tmp2(5761);
-const components_Button_Button = tmp2(5768);
-const Stack_Stack = tmp2(6162);
+const Text_Text = tmp2(5763);
+const components_Button_Button = tmp2(5770);
+const Stack_Stack = tmp2(6165);
 function focusChatInput(channelId) {
   let tmp;
   if (null != channelId) {
@@ -612,10 +612,10 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
     let obj3 = { actionButtons: [] };
     return obj3;
   } else {
-    if (other_user.type !== tmp2(6994).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
-      if (other_user.type !== tmp2(6994).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-        if (other_user.type !== tmp2(6994).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
-          if (other_user.type === tmp2(6994).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
+    if (other_user.type !== tmp2(6997).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS) {
+      if (other_user.type !== tmp2(6997).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+        if (other_user.type !== tmp2(6997).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS) {
+          if (other_user.type === tmp2(6997).NotificationCenterLocalItems.FRIEND_REQUESTS_GROUPED) {
             let obj4 = { actionButtons: items9, accessibilityActions: items10, onAccessibilityAction: callback3 };
             let obj5 = { id: "view_friend_requests", text: intl15.string(tmp2(1113).t["lMR96+"]), variant: "secondary", size: "md", onPress: callback3 };
             intl15 = tmp2(1113).intl;
@@ -624,7 +624,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
             intl16 = tmp2(1113).intl;
             items10 = [obj6];
             return obj4;
-          } else if (other_user.type === tmp2(6994).NotificationCenterItems.GO_LIVE_PUSH) {
+          } else if (other_user.type === tmp2(6997).NotificationCenterItems.GO_LIVE_PUSH) {
             const obj7 = { actionButtons: items11, accessibilityActions: items12, onAccessibilityAction: callback };
             const obj8 = { id: "join_stream", text: intl13.string(tmp2(1113).t["Pqj7h+"]), variant: "secondary", size: "md", onPress: callback };
             intl13 = tmp2(1113).intl;
@@ -634,11 +634,11 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
             items12 = [obj9];
             return obj7;
           } else {
-            if (other_user.type !== tmp2(6994).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
-              if (other_user.type !== tmp2(6994).NotificationCenterItems.DM_FRIEND_NUDGE) {
-                if (other_user.type !== tmp2(6994).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED) {
-                  if (other_user.type !== tmp2(6994).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED) {
-                    if (other_user.type === tmp2(6994).NotificationCenterItems.FRIEND_SUGGESTION_CREATED) {
+            if (other_user.type !== tmp2(6997).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+              if (other_user.type !== tmp2(6997).NotificationCenterItems.DM_FRIEND_NUDGE) {
+                if (other_user.type !== tmp2(6997).NotificationCenterItems.FRIEND_REQUEST_ACCEPTED) {
+                  if (other_user.type !== tmp2(6997).NotificationCenterItems.GAME_FRIEND_REQUEST_ACCEPTED) {
+                    if (other_user.type === tmp2(6997).NotificationCenterItems.FRIEND_SUGGESTION_CREATED) {
                       const obj10 = { actionButtons: items13, accessibilityActions: items14, onAccessibilityAction: callback5 };
                       const obj11 = { id: "add_friend", text: intl9.string(tmp2(1113).t["boL/YX"]), variant: "secondary", size: "md", onPress: callback5 };
                       intl9 = tmp2(1113).intl;
@@ -647,7 +647,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                       intl10 = tmp2(1113).intl;
                       items14 = [obj12];
                       return obj10;
-                    } else if (other_user.type === tmp2(6994).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED) {
+                    } else if (other_user.type === tmp2(6997).NotificationCenterItems.GUILD_SCHEDULED_EVENT_STARTED) {
                       const obj13 = { actionButtons: items15, accessibilityActions: items16, onAccessibilityAction: callback };
                       const obj14 = { id: "join_event", text: intl7.string(tmp2(1113).t.hRKdcn), variant: "secondary", size: "md", onPress: callback };
                       intl7 = tmp2(1113).intl;
@@ -656,26 +656,26 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                       intl8 = tmp2(1113).intl;
                       items16 = [obj15];
                       return obj13;
-                    } else if (other_user.type === tmp2(6994).NotificationCenterItems.LIFECYCLE_ITEM) {
+                    } else if (other_user.type === tmp2(6997).NotificationCenterItems.LIFECYCLE_ITEM) {
                       let stringResult;
                       let str2;
                       const item_enum = other_user.item_enum;
-                      if (tmp2(6994).ItemEnum.UPDATE_PROFILE === item_enum) {
+                      if (tmp2(6997).ItemEnum.UPDATE_PROFILE === item_enum) {
                         const intl6 = tmp2(1113).intl;
                         stringResult = intl6.string(tmp2(1113).t.zMRcWL);
                         str2 = "update_profile";
-                      } else if (tmp2(6994).ItemEnum.FIND_FRIENDS === item_enum) {
+                      } else if (tmp2(6997).ItemEnum.FIND_FRIENDS === item_enum) {
                         const intl5 = tmp2(1113).intl;
                         stringResult = intl5.string(tmp2(1113).t["vwL/4s"]);
                         str2 = "find_friends";
-                      } else if (tmp2(6994).ItemEnum.ADD_FRIEND === item_enum) {
+                      } else if (tmp2(6997).ItemEnum.ADD_FRIEND === item_enum) {
                         const intl4 = tmp2(1113).intl;
                         stringResult = intl4.string(tmp2(1113).t["boL/YX"]);
                         str2 = "add_friend";
                       } else {
                         str2 = null;
                         stringResult = null;
-                        if (tmp2(6994).ItemEnum.FIRST_MESSAGE === item_enum) {
+                        if (tmp2(6997).ItemEnum.FIRST_MESSAGE === item_enum) {
                           const intl20 = tmp2(1113).intl;
                           stringResult = intl20.string(tmp2(1113).t["GuUH7/"]);
                           str2 = "send_message";
@@ -695,9 +695,9 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                       obj16 = { actionButtons: [] };
                       const obj19 = { actionButtons: [] };
                     } else {
-                      if (other_user.type !== tmp2(6994).NotificationCenterItems.RECENT_MENTION) {
-                        if (other_user.type !== tmp2(6994).NotificationCenterItems.REPLY_MENTION) {
-                          if (other_user.type === tmp2(6994).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
+                      if (other_user.type !== tmp2(6997).NotificationCenterItems.RECENT_MENTION) {
+                        if (other_user.type !== tmp2(6997).NotificationCenterItems.REPLY_MENTION) {
+                          if (other_user.type === tmp2(6997).NotificationCenterItems.REFERRAL_PROGRAM_ENTRYPOINT_REMINDER) {
                             const intl3 = tmp2(1113).intl;
                             const stringResult1 = intl3.string(tmp2(1113).t.TI8qgg);
                             const obj20 = { id: "share_trials", text: stringResult1, variant: str, size: "md", onPress: callback };
@@ -712,7 +712,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
                             return obj21;
                           } else {
                             let obj26;
-                            if (other_user.type === tmp2(6994).NotificationCenterItems.TRENDING_CONTENT) {
+                            if (other_user.type === tmp2(6997).NotificationCenterItems.TRENDING_CONTENT) {
                               const obj23 = { actionButtons: items21, accessibilityActions: items22, onAccessibilityAction: callback7 };
                               const obj24 = { id: "read_summary", text: intl.string(tmp2(1113).t.k0Q31F), variant: "secondary", size: "md", onPress: callback7 };
                               intl = tmp2(1113).intl;
@@ -775,7 +775,7 @@ export function useItemActionButtonPropsV2(other_user, callback, navigation, for
         }
     };
     obj35 = { onWavePress: callback, onAccept: callback1, onIgnore: callback2, pressed: sharedValue, compactMode };
-    if (other_user.type === tmp2(6994).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
+    if (other_user.type === tmp2(6997).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED) {
       const obj36 = { name: constants2.WAVE, label: intl17.string(tmp2(1113).t.n8nU4W) };
       intl17 = tmp2(1113).intl;
       const items27 = [obj36];

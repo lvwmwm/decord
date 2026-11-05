@@ -1,16 +1,16 @@
-// Module ID: 12983
-// Function ID: 12984
+// Module ID: 12990
+// Function ID: 12991
 // Name: ConjureLinkedAppBuildRow
-// Dependencies: [19, 21, 1113, 3995, 7201, 7116, 12360, 5382, 12365, 2]
+// Dependencies: [19, 21, 1113, 3995, 7204, 7119, 12367, 5384, 12372, 2]
 // Exports: default
 
-// Module 12983 (ConjureLinkedAppBuildRow)
+// Module 12990 (ConjureLinkedAppBuildRow)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
-import TableRow2 from "TableRow" /* 7116 */;
-import TableRowGroup2 from "TableRowGroup" /* 7201 */;
-import conjureLinkedApps from "conjureLinkedApps" /* 12360 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5384 */;
+import TableRow2 from "TableRow" /* 7119 */;
+import TableRowGroup2 from "TableRowGroup" /* 7204 */;
+import conjureLinkedApps from "conjureLinkedApps" /* 12367 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

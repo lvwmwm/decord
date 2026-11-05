@@ -1,9 +1,9 @@
-// Module ID: 17722
-// Function ID: 17723
+// Module ID: 17749
+// Function ID: 17750
 // Name: ContextualOptInNudgeHoldoutExperiment
 // Dependencies: [1449, 2]
 
-// Module 17722 (ContextualOptInNudgeHoldoutExperiment)
+// Module 17749 (ContextualOptInNudgeHoldoutExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 12954
-// Function ID: 12955
+// Module ID: 12961
+// Function ID: 12962
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 2167, 4994, 1399, 1385, 6979, 1072, 504, 8893, 6198, 10497, 6205, 12955, 1113, 3995, 5195, 2]
+// Dependencies: [19, 2167, 4996, 1399, 1385, 6982, 1072, 504, 8898, 6201, 10503, 6208, 12962, 1113, 3995, 5197, 2]
 // Exports: useConjurePlanBotExchanges, useConjurePlanBotPreviewItems, useConjurePlanCommandExchanges
 
-// Module 12954 (useConjurePlanBotPreviewItems)
+// Module 12961 (useConjurePlanBotPreviewItems)
 import intl4 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ChannelRecord from "ChannelRecord" /* 4994 */;
-import UserActionCreators from "UserActionCreators" /* 8893 */;
-import conjurePlanBot from "conjurePlanBot" /* 12955 */;
+import ChannelRecord from "ChannelRecord" /* 4996 */;
+import UserActionCreators from "UserActionCreators" /* 8898 */;
+import conjurePlanBot from "conjurePlanBot" /* 12962 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import UserRecord from "UserRecord" /* 1399 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

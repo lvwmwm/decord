@@ -1,17 +1,17 @@
-// Module ID: 12439
-// Function ID: 12440
+// Module ID: 12446
+// Function ID: 12447
 // Name: ConjureModeTabBar
-// Dependencies: [19, 17, 21, 5141, 575, 5732, 1652, 5771, 1377, 8982, 1113, 5761, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 5734, 1652, 5773, 1377, 8987, 1113, 5763, 2]
 // Exports: default
 
-// Module 12439 (ConjureModeTabBar)
+// Module 12446 (ConjureModeTabBar)
 import nativeDefault from "native" /* 575 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 8982 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 8987 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,8 +26,8 @@ let tmp2;
 const intl2 = tmp2(1113);
 const PlatformUtils = tmp2(1377);
 const _mod1652 = tmp2(1652);
-const Text_Text = tmp2(5761);
-const spring_spring = tmp2(5771);
+const Text_Text = tmp2(5763);
+const spring_spring = tmp2(5773);
 function ConjureModeTab(index) {
   let activeIndex;
   let closure_129_2;

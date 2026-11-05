@@ -1,18 +1,18 @@
-// Module ID: 15820
-// Function ID: 15821
+// Module ID: 15833
+// Function ID: 15834
 // Name: ConnectivityIndicatorStateStore
-// Dependencies: [7795, 502, 6196, 5044, 2122, 1072, 3, 15821, 504, 1477, 572, 2]
+// Dependencies: [7800, 502, 6199, 5046, 2122, 1072, 3, 15834, 504, 1477, 572, 2]
 
-// Module 15820 (ConnectivityIndicatorStateStore)
+// Module 15833 (ConnectivityIndicatorStateStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import NetworkUtilsDefault from "NetworkUtils" /* 1477 */;
-import CacheStore from "CacheStore" /* 7795 */;
+import CacheStore from "CacheStore" /* 7800 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 6196 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import MessageStore from "MessageStore" /* 6199 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
 import AppStateStore from "AppStateStore" /* 2122 */;
 import size from "module_2" /* 2 */;
 
@@ -60,7 +60,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj4 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp24 };
             if (CacheStore.hasCache()) {
-              const obj16 = state(15821);
+              const obj16 = state(15834);
               let num2 = obj16.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num2 == null) {
                 num2 = 10000;
@@ -85,7 +85,7 @@ function updateState() {
           } else if (tmp10.CONNECTING === UNKNOWN) {
             const obj8 = { state: obj.WAITING_FOR_NETWORK, delayMs: tmp19 };
             if (CacheStore.hasCache()) {
-              const obj11 = state(15821);
+              const obj11 = state(15834);
               let num = obj11.getConfig({ location: "ConnectivityIndicatorStateStore" }).timeoutMs;
               if (num == null) {
                 num = 10000;

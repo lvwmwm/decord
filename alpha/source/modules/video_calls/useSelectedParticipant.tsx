@@ -1,11 +1,11 @@
-// Module ID: 11184
-// Function ID: 11185
+// Module ID: 11192
+// Function ID: 11193
 // Name: useSelectedParticipant
-// Dependencies: [6978, 504, 2]
+// Dependencies: [6981, 504, 2]
 // Exports: default
 
-// Module 11184 (useSelectedParticipant)
-import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
+// Module 11192 (useSelectedParticipant)
+import ChannelRTCStore from "ChannelRTCStore" /* 6981 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

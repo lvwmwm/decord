@@ -1,10 +1,10 @@
-// Module ID: 7874
-// Function ID: 7875
+// Module ID: 7879
+// Function ID: 7880
 // Name: CollectiblesDebugStore
 // Dependencies: [560, 2]
 // Exports: addDebugLog
 
-// Module 7874 (CollectiblesDebugStore)
+// Module 7879 (CollectiblesDebugStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

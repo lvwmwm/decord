@@ -1,9 +1,9 @@
-// Module ID: 10030
-// Function ID: 10031
+// Module ID: 10036
+// Function ID: 10037
 // Name: TopicalNavigationSurveyStore
 // Dependencies: [504, 572, 2]
 
-// Module 10030 (TopicalNavigationSurveyStore)
+// Module 10036 (TopicalNavigationSurveyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

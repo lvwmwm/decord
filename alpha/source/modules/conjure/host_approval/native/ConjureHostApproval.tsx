@@ -1,21 +1,21 @@
-// Module ID: 12333
-// Function ID: 12334
+// Module ID: 12340
+// Function ID: 12341
 // Name: host_approval/ConjureHostApproval
-// Dependencies: [19, 17, 21, 5141, 575, 12334, 12335, 5761, 1113, 3995, 6162, 5768, 11074, 7201, 7116, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 12341, 12342, 5763, 1113, 3995, 6165, 5770, 11083, 7204, 7119, 2]
 // Exports: ConjureAllowedHostsSetting, ConjureHostApprovalCards
 
-// Module 12333 (host_approval/ConjureHostApproval)
+// Module 12340 (host_approval/ConjureHostApproval)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import ConjureHostApproval from "ConjureHostApproval" /* 11074 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12334 */;
-import ConjureAwaitingUser from "ConjureAwaitingUser" /* 12335 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import ConjureHostApproval from "ConjureHostApproval" /* 11083 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12341 */;
+import ConjureAwaitingUser from "ConjureAwaitingUser" /* 12342 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -57,14 +57,14 @@ function ConjureHostApprovalCard(arg0) {
   let tmp6Result = null;
   if ("" !== reason) {
     const obj4 = { variant: "body-sm/normal", color: "text-muted", children: intl3.format(_modDef3995["5poqiN"], obj5) };
-    const Text3 = tmp7(5761).Text;
+    const Text3 = tmp7(5763).Text;
     intl3 = tmp7(1113).intl;
     obj5 = { reason };
     tmp6Result = tmp6(Text3, obj4);
   }
   items[3] = tmp6Result;
   const obj6 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = tmp7(6162).Stack;
+  const Stack = tmp7(6165).Stack;
   const obj7 = {
     variant: "primary",
     size: "sm",
@@ -74,7 +74,7 @@ function ConjureHostApprovalCard(arg0) {
     },
     text: intl4.string(_modDef3995.B05C3K)
   };
-  const Button = tmp7(5768).Button;
+  const Button = tmp7(5770).Button;
   intl4 = tmp7(1113).intl;
   items1 = [closure_4(Button, obj7), , ];
   const obj8 = {
@@ -86,7 +86,7 @@ function ConjureHostApprovalCard(arg0) {
     },
     text: intl5.string(_modDef3995["rGv+om"])
   };
-  const Button2 = tmp7(5768).Button;
+  const Button2 = tmp7(5770).Button;
   intl5 = tmp7(1113).intl;
   items1[1] = closure_4(Button2, obj8);
   const obj9 = {
@@ -98,7 +98,7 @@ function ConjureHostApprovalCard(arg0) {
     },
     text: intl6.string(_modDef3995.vWkaSE)
   };
-  const Button3 = tmp7(5768).Button;
+  const Button3 = tmp7(5770).Button;
   intl6 = tmp7(1113).intl;
   items1[2] = closure_4(Button3, obj9);
   items[4] = closure_5(Stack, obj6);
@@ -117,7 +117,7 @@ const result = size.fileFinishedImporting("modules/conjure/host_approval/native/
 export function ConjureHostApprovalCards(projectId) {
   projectId = projectId.projectId;
   const tmp = closure_6();
-  let obj = projectId(11074);
+  let obj = projectId(11083);
   const conjureHostApprovals = obj.useConjureHostApprovals(projectId);
   let tmp2 = null;
   if (0 !== conjureHostApprovals.length) {
@@ -138,18 +138,18 @@ export function ConjureAllowedHostsSetting(projectId) {
   let intl3;
   let mapped;
   projectId = projectId.projectId;
-  let obj = projectId(11074);
+  let obj = projectId(11083);
   const conjureAllowedHosts = obj.useConjureAllowedHosts(projectId);
   let tmp4Result2 = null;
   if (null != conjureAllowedHosts) {
     let obj2 = { title: intl.string(_modDef3995.Ufr2wk), description: intl2.string(_modDef3995.wremls), hasIcons: false, children: mapped };
-    const TableRowGroup = tmp(7201).TableRowGroup;
+    const TableRowGroup = tmp(7204).TableRowGroup;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     const tmp5 = importDefault;
     if (0 === conjureAllowedHosts.length) {
       let obj3 = { label: intl3.string(tmp5(3995).AweHIi) };
-      let TableRow = tmp(7116).TableRow;
+      let TableRow = tmp(7119).TableRow;
       intl3 = tmp(1113).intl;
       mapped = tmp4(TableRow, obj3);
     } else {

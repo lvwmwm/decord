@@ -1,29 +1,44 @@
 // Module ID: 13115
 // Function ID: 13116
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13115 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
 let obj2;
-const Hash = tokenize.TYPE.Hash;
+const Comment = tokenize.TYPE.Comment;
 let obj = {
-  name: "IdSelector",
+  name: "Comment",
   structure: obj2,
   parse() {
-    let scanner;
+    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(Hash);
-    const obj = { type: "IdSelector", loc: this.getLocation(tokenStart, this.scanner.tokenStart), name: scanner.substrToCursor(tokenStart + 1) };
-    scanner = this.scanner;
+    const tokenEnd = this.scanner.tokenEnd;
+    this.eat(Comment);
+    const sum = tokenEnd - tokenStart + 2;
+    let tmp3 = sum >= 2;
+    if (2 <= sum) {
+      const source = self.scanner.source;
+      tmp3 = 42 === source.charCodeAt(tokenEnd - 2);
+    }
+    if (tmp3) {
+      const source2 = self.scanner.source;
+      tmp3 = 47 === source2.charCodeAt(tokenEnd - 1);
+    }
+    let diff = tokenEnd;
+    if (tmp3) {
+      diff = tokenEnd - 2;
+    }
+    const obj = { type: "Comment", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: str.substring(tokenStart + 2, diff) };
     return obj;
   },
-  generate(name) {
-    this.chunk("#");
-    this.chunk(name.name);
+  generate(value) {
+    this.chunk("/*");
+    this.chunk(value.value);
+    this.chunk("*/");
   }
 };
-obj2 = { name: String };
+obj2 = { value: String };
 
 export default obj;

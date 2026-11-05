@@ -1,10 +1,10 @@
-// Module ID: 12071
-// Function ID: 12072
+// Module ID: 12080
+// Function ID: 12081
 // Name: StageActionBarButtons
-// Dependencies: [32, 19, 17, 5142, 6977, 12072, 6844, 1072, 21, 5141, 575, 11912, 1113, 12073, 8085, 504, 12074, 12075, 12076, 12077, 10936, 12079, 12080, 12081, 12083, 8081, 9366, 7462, 6900, 6894, 5382, 12084, 2123, 12095, 12096, 1627, 7502, 7206, 5761, 5768, 8095, 6864, 12098, 12099, 6893, 12100, 12101, 12102, 12104, 12106, 11187, 8784, 12107, 1652, 5771, 12050, 8317, 8753, 8090, 9252, 7121, 1187, 12108, 2]
+// Dependencies: [32, 19, 17, 5144, 6980, 12081, 6847, 1072, 21, 5143, 575, 11921, 1113, 12082, 8090, 504, 12083, 12084, 12085, 12086, 10942, 12088, 12089, 12090, 12092, 8086, 9373, 7465, 6903, 6897, 5384, 12093, 2123, 12104, 12105, 1627, 7504, 7209, 5763, 5770, 8100, 6867, 12107, 12108, 6896, 12109, 12110, 12111, 12113, 12115, 11195, 8789, 12116, 1652, 5773, 12059, 8322, 8758, 8095, 9259, 7124, 1187, 12117, 2]
 // Exports: AnimatedStartStagePrompt, ChatButton, ContinueToStagePrompt, DisconnectStageButton, JoinStagePrompt, MoveToAudienceButton, MusicMuteButton, RequestToSpeakButton, RequestToSpeakListButton
 
-// Module 12071 (StageActionBarButtons)
+// Module 12080 (StageActionBarButtons)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,32 +14,32 @@ import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
-import spring_spring from "spring/spring" /* 5771 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6844 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
-import Pressables from "Pressables" /* 7121 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8081 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8085 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8090 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
-import _mod8317 from "module_8317" /* 8317 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9252 */;
-import CallsUtils from "CallsUtils" /* 9366 */;
-import CallBarActionAll from "CallBarAction" /* 11912 */;
-import useStageChannelConnectAction from "useStageChannelConnectAction" /* 12050 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12073 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 12079 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 12080 */;
-import shouldShowEndStageModalDefault from "shouldShowEndStageModal" /* 12083 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12108 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5384 */;
+import spring_spring from "spring/spring" /* 5773 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6847 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6867 */;
+import Pressables from "Pressables" /* 7124 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 8086 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8090 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8095 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8100 */;
+import _mod8322 from "module_8322" /* 8322 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9259 */;
+import CallsUtils from "CallsUtils" /* 9373 */;
+import CallBarActionAll from "CallBarAction" /* 11921 */;
+import useStageChannelConnectAction from "useStageChannelConnectAction" /* 12059 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12082 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 12088 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 12089 */;
+import shouldShowEndStageModalDefault from "shouldShowEndStageModal" /* 12092 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12117 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import ReadStateStore from "ReadStateStore" /* 6977 */;
-import StageMusicStore from "StageMusicStore" /* 12072 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import ReadStateStore from "ReadStateStore" /* 6980 */;
+import StageMusicStore from "StageMusicStore" /* 12081 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,11 +73,11 @@ class AgeVerificationSpeakerActionSheet {
     }
     const tmp = closure_15();
     let obj = { startExpanded: true, onDismiss: handleDismiss, contentStyles: { paddingBottom: useSafeAreaInsetsDefault().bottom }, header: closure_12(View2, obj2), children: closure_13(View2, obj3) };
-    obj2 = { style: tmp.header, children: closure_12(onClose(7206).TrafficConeSpotIllustration, { width: 120, height: 120 }) };
-    const ActionSheet = onClose(7502).ActionSheet;
+    obj2 = { style: tmp.header, children: closure_12(onClose(7209).TrafficConeSpotIllustration, { width: 120, height: 120 }) };
+    const ActionSheet = onClose(7504).ActionSheet;
     obj3 = { style: tmp.container, children: items };
     const obj4 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl.string(onClose(1113).t.zvubnM) };
-    const Text = onClose(5761).Text;
+    const Text = onClose(5763).Text;
     intl = onClose(1113).intl;
     items = [closure_12(Text, obj4), ];
     const obj5 = { style: tmp.footer, children: items1 };
@@ -93,11 +93,11 @@ class AgeVerificationSpeakerActionSheet {
       },
       text: intl2.string(onClose(1113).t.KXVgjt)
     };
-    const Button = onClose(5768).Button;
+    const Button = onClose(5770).Button;
     intl2 = onClose(1113).intl;
     items1 = [closure_12(Button, obj6), ];
     const obj7 = { size: "lg", onPress: handleDismiss, text: intl3.string(onClose(1113).t.WAI6xu), variant: "secondary" };
-    const Button2 = onClose(5768).Button;
+    const Button2 = onClose(5770).Button;
     intl3 = onClose(1113).intl;
     items1[1] = closure_12(Button2, obj7);
     items[1] = closure_13(View2, obj5);
@@ -179,14 +179,14 @@ class StartStagePrompt {
           const result = obj.openStageChannelSettings(_require);
         }
       },
-      iconSource: isLive(8753),
+      iconSource: isLive(8758),
       iconStyle: tmp.promptIconStyle,
       style,
       completed: isLive,
       title: intl.string(intl4.t.OYbHfv),
       subtitle: intl2.string(intl4.t.yXwLMQ)
     };
-    const FormCTA = _mod8317.FormCTA;
+    const FormCTA = _mod8322.FormCTA;
     intl = intl4.intl;
     intl2 = intl4.intl;
     return closure_12(FormCTA, obj);
@@ -246,7 +246,7 @@ export function MusicMuteButton(arg0) {
   const items = [StageMusicStore];
   stateFromStores = obj.useStateFromStores(items, () => muted.isMuted());
   let tmp6Result = null;
-  const obj2 = stateFromStores(12074);
+  const obj2 = stateFromStores(12083);
   if (obj2.useShowStageMusicMuteButton(channel.id)) {
     let stringResult;
     const ActionButton = CallBarActionAll.ActionButton;
@@ -261,7 +261,7 @@ export function MusicMuteButton(arg0) {
     }
     const obj3 = {
       accessibilityLabel: stringResult,
-      source: importDefault(stateFromStores ? 12075 : 12076),
+      source: importDefault(stateFromStores ? 12084 : 12085),
       IconComponent: MusicIcon,
       imageStyle: tmp.imageStyle,
       onPress() {
@@ -271,9 +271,9 @@ export function MusicMuteButton(arg0) {
       isSmallSize
     };
     if (stateFromStores) {
-      MusicIcon = tmp2(12077).MusicSlashIcon;
+      MusicIcon = tmp2(12086).MusicSlashIcon;
     } else {
-      MusicIcon = tmp2(10936).MusicIcon;
+      MusicIcon = tmp2(10942).MusicIcon;
     }
     tmp6Result = tmp6(ActionButton, obj3);
   }
@@ -286,7 +286,7 @@ export function DisconnectStageButton(channel) {
   const obj = {
     accessibilityLabel: intl.string(channel(1113).t.SMKyih),
     source: AssetRegistryDefault3,
-    IconComponent: channel(12081).DoorExitIcon,
+    IconComponent: channel(12090).DoorExitIcon,
     onPress: function handleStageDisconnect() {
       if (shouldShowEndStageModalDefault(channel)) {
         const tmp3Result = StageChannelActionCreatorExtras;
@@ -315,20 +315,20 @@ export function RequestToSpeakListButton(channel) {
   function handleOpenAudienceList() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { channelId: channel.id, analyticsLocations };
-    obj.openLazy(asyncRequire(12084, dependencyMap.paths), closure_10, obj2);
+    obj.openLazy(asyncRequire(12093, dependencyMap.paths), closure_10, obj2);
   }
-  analyticsLocations = analyticsLocations(7462)().analyticsLocations;
-  let obj = channel(6900);
-  const stageParticipantsCount = obj.useStageParticipantsCount(channel.id, channel(6894).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
+  analyticsLocations = analyticsLocations(7465)().analyticsLocations;
+  let obj = channel(6903);
+  const stageParticipantsCount = obj.useStageParticipantsCount(channel.id, channel(6897).StageChannelParticipantNamedIndex.REQUESTED_TO_SPEAK_ONLY);
   if (stageParticipantsCount > 0) {
-    let obj2 = { accessibilityLabel: intl.formatToPlainString(channel(1113).t.OhK58v, obj3), source: analyticsLocations(12095), imageStyle: obj4, IconComponent: channel(12096).HandRequestSpeakListIcon, onPress: handleOpenAudienceList, notifications: stageParticipantsCount, isSmallSize };
+    let obj2 = { accessibilityLabel: intl.formatToPlainString(channel(1113).t.OhK58v, obj3), source: analyticsLocations(12104), imageStyle: obj4, IconComponent: channel(12105).HandRequestSpeakListIcon, onPress: handleOpenAudienceList, notifications: stageParticipantsCount, isSmallSize };
     const NotifiedActionButton = CallBarActionAll.NotifiedActionButton;
     intl = tmp3(1113).intl;
     obj3 = { count: stageParticipantsCount };
     obj4 = { tintColor: analyticsLocations(575).unsafe_rawColors.WHITE };
     tmp7 = closure_12(NotifiedActionButton, obj2);
   } else {
-    const obj5 = { accessibilityLabel: intl2.string(channel(1113).t.KJnyvh), source: analyticsLocations(12095), imageStyle: obj6, IconComponent: channel(12096).HandRequestSpeakListIcon, onPress: handleOpenAudienceList, isSmallSize };
+    const obj5 = { accessibilityLabel: intl2.string(channel(1113).t.KJnyvh), source: analyticsLocations(12104), imageStyle: obj6, IconComponent: channel(12105).HandRequestSpeakListIcon, onPress: handleOpenAudienceList, isSmallSize };
     const ActionButton = CallBarActionAll.ActionButton;
     intl2 = tmp3(1113).intl;
     obj6 = { tintColor: analyticsLocations(575).unsafe_rawColors.WHITE };
@@ -434,9 +434,9 @@ export function ChatButton(channel) {
     return obj;
   }, items1);
   ({ unreadCount, mentionCount } = stateFromStoresObject);
-  const obj2 = channel(12106);
+  const obj2 = channel(12115);
   const isVoiceChannelLocked = obj2.useIsVoiceChannelLocked(channel);
-  const obj3 = channel(11187);
+  const obj3 = channel(11195);
   const voiceChatNavigationContext = obj3.useVoiceChatNavigationContext();
   let openChat;
   if (voiceChatNavigationContext != null) {
@@ -453,20 +453,20 @@ export function ChatButton(channel) {
   if (mentionCount <= 0) {
     let tmp7Result;
     if (unreadCount <= 0) {
-      const obj4 = { imageStyle: obj5, accessibilityLabel: intl2.string(tmp(1113).t.ZXxLQg), IconComponent: tmp(8784).ChatIcon, source: isVoiceChannelLocked(12107), onPress, appearsDisabled: isVoiceChannelLocked, isSmallSize };
+      const obj4 = { imageStyle: obj5, accessibilityLabel: intl2.string(tmp(1113).t.ZXxLQg), IconComponent: tmp(8789).ChatIcon, source: isVoiceChannelLocked(12116), onPress, appearsDisabled: isVoiceChannelLocked, isSmallSize };
       obj5 = { tintColor: isVoiceChannelLocked(575).unsafe_rawColors.WHITE };
-      const ActionButton = openChat(11912).ActionButton;
+      const ActionButton = openChat(11921).ActionButton;
       intl2 = tmp(1113).intl;
       tmp7Result = closure_12(ActionButton, obj4);
     }
     return tmp7Result;
   }
-  const NotifiedActionButton = openChat(11912).NotifiedActionButton;
+  const NotifiedActionButton = openChat(11921).NotifiedActionButton;
   const tmp7 = closure_12;
   if (mentionCount > 0) {
     unreadCount = mentionCount;
   }
-  const obj6 = { notifications: unreadCount, isMentioned: mentionCount > 0, imageStyle: { tintColor: isVoiceChannelLocked(575).unsafe_rawColors.WHITE }, accessibilityLabel: intl.string(tmp(1113).t.ZXxLQg), IconComponent: tmp(8784).ChatIcon, source: isVoiceChannelLocked(12107), onPress, appearsDisabled: isVoiceChannelLocked, isSmallSize };
+  const obj6 = { notifications: unreadCount, isMentioned: mentionCount > 0, imageStyle: { tintColor: isVoiceChannelLocked(575).unsafe_rawColors.WHITE }, accessibilityLabel: intl.string(tmp(1113).t.ZXxLQg), IconComponent: tmp(8789).ChatIcon, source: isVoiceChannelLocked(12116), onPress, appearsDisabled: isVoiceChannelLocked, isSmallSize };
   ({ tintColor: isVoiceChannelLocked(575).unsafe_rawColors.WHITE });
   intl = tmp(1113).intl;
   tmp7Result = tmp7(NotifiedActionButton, obj6);
@@ -569,7 +569,7 @@ export function JoinStagePrompt(channel) {
     subtitle: intl2.string(channel(1113).t.lyCW4E)
   };
   const tmp = closure_14();
-  const FormCTA = channel(8317).FormCTA;
+  const FormCTA = channel(8322).FormCTA;
   ({ iconStyle: obj.iconStyle, iconContainerStyle: obj.iconContainerStyle } = tmp);
   intl = channel(1113).intl;
   intl2 = channel(1113).intl;

@@ -1,35 +1,35 @@
-// Module ID: 16967
-// Function ID: 16968
+// Module ID: 16990
+// Function ID: 16991
 // Name: AgeNoticeSettingsNotices
-// Dependencies: [19, 17, 1385, 6872, 7630, 21, 5141, 575, 16834, 10310, 8095, 6864, 8165, 1113, 3255, 16874, 6873, 5827, 6861, 16968, 8509, 2]
+// Dependencies: [19, 17, 1385, 6875, 7632, 21, 5143, 575, 16857, 10318, 8100, 6867, 8170, 1113, 3255, 16897, 6876, 5829, 6864, 16991, 8514, 2]
 // Exports: ContentFiltersTeenNotice, ContentFiltersUnconfirmedNotice, MessageRequestsNotice, shouldShowTeenNotice, shouldShowUnconfirmedNotice, useIsEnabled, useMessageRequestsNoticeVariant
 
-// Module 16967 (AgeNoticeSettingsNotices)
+// Module 16990 (AgeNoticeSettingsNotices)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3255 from "module_3255" /* 3255 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5827 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6861 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
-import useUserIsTeen from "useUserIsTeen" /* 8509 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10310 */;
-import SafetySettingsUtils from "SafetySettingsUtils" /* 16834 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16874 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16968 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5829 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6864 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6867 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6875 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8100 */;
+import useUserIsTeen from "useUserIsTeen" /* 8514 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10318 */;
+import SafetySettingsUtils from "SafetySettingsUtils" /* 16857 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16897 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16991 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import Constants from "Constants" /* 7630 */;
-import createStyles from "createStyles" /* 5141 */;
+import Constants from "Constants" /* 7632 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const AgeNoticeExperiment = tmp(6873);
+const AgeNoticeExperiment = tmp(6876);
 function TeenNotice(noticeType) {
   let intl;
   let intl2;
@@ -58,7 +58,7 @@ function TeenNotice(noticeType) {
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(noticeType, metroImportDefault.CONFIRM_AGE);
   }, items2);
   let obj2 = { type: "info", message: intl.format(message, { handleOnConfirmAgeHook: callback1 }), role: "status", action: obj3 };
-  const InlineNotice = noticeType(8165).InlineNotice;
+  const InlineNotice = noticeType(8170).InlineNotice;
   intl = noticeType(1113).intl;
   obj3 = { text: intl2.string(noticeType(1113).t.hvVgAZ), onPress: callback };
   intl2 = noticeType(1113).intl;
@@ -97,7 +97,7 @@ function UnconfirmedNotice(message) {
     const result1 = obj3.trackSafetySettingsNoticeAnalytics(AGE_CONFIRMATION_NOTICE, metroImportDefault.CONFIRM_AGE);
   }, items2);
   let obj2 = { type: "info", message: intl.format(message, { handleOnAgeGatedContentHook: callback }), role: "status", action: obj3 };
-  const InlineNotice = AGE_CONFIRMATION_NOTICE(8165).InlineNotice;
+  const InlineNotice = AGE_CONFIRMATION_NOTICE(8170).InlineNotice;
   intl = AGE_CONFIRMATION_NOTICE(1113).intl;
   obj3 = { text: intl2.string(AGE_CONFIRMATION_NOTICE(1113).t.FDSSia), onPress: callback1 };
   intl2 = AGE_CONFIRMATION_NOTICE(1113).intl;
@@ -127,7 +127,7 @@ export function ContentFiltersUnconfirmedNotice() {
 export { MessageRequestsUnconfirmedNotice };
 export function useIsEnabled() {
   const obj = AgeNoticeExperiment;
-  return obj.useIsTinyBroncoEnabled(closure_6);
+  return obj.useIsAgeNoticeEnabled(closure_6);
 }
 export function shouldShowUnconfirmedNotice() {
   const obj = RegionalFeatureConfigUtils;
@@ -138,7 +138,7 @@ export function shouldShowUnconfirmedNotice() {
   }
   if (hasAgeGatedFeaturesResult) {
     const tmpResult2 = AgeNoticeExperiment;
-    hasAgeGatedFeaturesResult = tmpResult2.isTinyBroncoEnabled(closure_6);
+    hasAgeGatedFeaturesResult = tmpResult2.isAgeNoticeEnabled(closure_6);
   }
   return hasAgeGatedFeaturesResult;
 }
@@ -148,12 +148,12 @@ export function shouldShowTeenNotice() {
   if (currentUser != null) {
     nsfwAllowed = currentUser.nsfwAllowed;
   }
-  let isTinyBroncoEnabledResult = false === nsfwAllowed;
-  if (isTinyBroncoEnabledResult) {
+  let isAgeNoticeEnabledResult = false === nsfwAllowed;
+  if (isAgeNoticeEnabledResult) {
     const obj = AgeNoticeExperiment;
-    isTinyBroncoEnabledResult = obj.isTinyBroncoEnabled(closure_6);
+    isAgeNoticeEnabledResult = obj.isAgeNoticeEnabled(closure_6);
   }
-  return isTinyBroncoEnabledResult;
+  return isAgeNoticeEnabledResult;
 }
 export function useMessageRequestsNoticeVariant() {
   const obj = useParentalControlSettings;
@@ -174,7 +174,7 @@ export function useMessageRequestsNoticeVariant() {
     }
     if (null != str) {
       const tmpResult = AgeNoticeExperiment;
-      if (tmpResult.isTinyBroncoEnabled(closure_6)) {
+      if (tmpResult.isAgeNoticeEnabled(closure_6)) {
         return str;
       }
     }
@@ -200,7 +200,7 @@ export function MessageRequestsNotice() {
     }
     if (null != str) {
       const tmpResult = AgeNoticeExperiment;
-      if (tmpResult.isTinyBroncoEnabled(closure_6)) {
+      if (tmpResult.isAgeNoticeEnabled(closure_6)) {
         tmp8 = str;
       }
     }

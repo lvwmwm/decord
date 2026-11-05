@@ -1,30 +1,30 @@
-// Module ID: 14638
-// Function ID: 14639
+// Module ID: 14651
+// Function ID: 14652
 // Name: SocialLayerStorefrontPoductPurchaseSuccessModal
-// Dependencies: [32, 717, 19, 17, 5142, 7031, 7547, 1072, 21, 5141, 575, 1652, 5771, 5378, 5384, 1493, 504, 8914, 7544, 5761, 5768, 1113, 5851, 5723, 7428, 7146, 7195, 9668, 7466, 7463, 11576, 7487, 1252, 5729, 10847, 3865, 9587, 5195, 2]
+// Dependencies: [32, 717, 19, 17, 5144, 7034, 7549, 1072, 21, 5143, 575, 1652, 5773, 5380, 5386, 1493, 504, 8919, 7546, 5763, 5770, 1113, 5854, 5725, 7431, 7149, 7198, 9674, 7469, 7466, 11584, 7490, 1252, 5731, 10853, 3865, 9593, 5197, 2]
 // Exports: SocialLayerStorefrontProductGiftPurchaseSuccessModal, SocialLayerStorefrontProductSelfPurchaseSuccessModal
 
-// Module 14638 (SocialLayerStorefrontPoductPurchaseSuccessModal)
+// Module 14651 (SocialLayerStorefrontPoductPurchaseSuccessModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _modDef3865 from "module_3865" /* 3865 */;
-import UserUtilsDefault from "UserUtils" /* 5195 */;
-import HapticUtils from "HapticUtils" /* 5384 */;
-import XSmallIcon from "XSmallIcon" /* 7195 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7544 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7547 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10847 */;
+import UserUtilsDefault from "UserUtils" /* 5197 */;
+import HapticUtils from "HapticUtils" /* 5386 */;
+import XSmallIcon from "XSmallIcon" /* 7198 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7546 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 7549 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 10853 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import SKUStore from "SKUStore" /* 7031 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import SKUStore from "SKUStore" /* 7034 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

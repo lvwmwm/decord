@@ -1,23 +1,23 @@
-// Module ID: 12804
-// Function ID: 12805
+// Module ID: 12811
+// Function ID: 12812
 // Name: conjureAttachmentDrafts
-// Dependencies: [109, 5335, 11028, 12345, 1113, 3995, 12316, 572, 2]
+// Dependencies: [109, 5337, 11034, 12352, 1113, 3995, 12323, 572, 2]
 // Exports: addConjureAttachmentDrafts, clearConjureAttachmentDrafts, conjureAttachmentTooLargeText, removeConjureAttachmentDraft, sendConjureCardReply, uploadConjureAttachment, useConjureAttachmentDraftList
 
-// Module 12804 (conjureAttachmentDrafts)
+// Module 12811 (conjureAttachmentDrafts)
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ZustandStore from "ZustandStore" /* 5335 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
-import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 12316 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12345 */;
+import ZustandStore from "ZustandStore" /* 5337 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
+import ConjureAttachmentTypes from "ConjureAttachmentTypes" /* 12323 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 12352 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 let closure_8;
 
-const f103534 = () => {
+const f103703 = () => {
 
 };
 function _toPropertyKey(obj) {
@@ -81,7 +81,7 @@ function discardDraft(projectId, item10010) {
     const id = item10010.ref.id;
     const obj = conjureAttachmentRequests;
     const result = obj.deleteStagedAttachment(projectId, id);
-    result.catch(f103534);
+    result.catch(f103703);
   }
 }
 function discardProject(projectId, deleteFromWorker) {
@@ -263,7 +263,7 @@ export function removeConjureAttachmentDraft(projectId, chat, arg2) {
       const id = found.ref.id;
       const obj2 = conjureAttachmentRequests;
       const result = obj2.deleteStagedAttachment(projectId, id);
-      result.catch(f103534);
+      result.catch(f103703);
     }
     const found1 = tmp2.filter((localId) => localId.localId !== closure_0);
     const draftsByProject = obj.getState().draftsByProject;

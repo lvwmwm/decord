@@ -1,18 +1,18 @@
-// Module ID: 11051
-// Function ID: 11052
+// Module ID: 11057
+// Function ID: 11058
 // Name: ConjureAnalytics
-// Dependencies: [6979, 1072, 7559, 5894, 1377, 6980, 11052, 1252, 2]
+// Dependencies: [6982, 1072, 7561, 5897, 1377, 6983, 11058, 1252, 2]
 // Exports: trackConjureBuilderOpened, trackConjureErrored, trackConjurePublishActionClicked, trackConjureRatingFeedbackSubmitted, trackConjureRatingSubmitted, trackConjureRatingViewed, trackConjureTurnResulted
 
-// Module 11051 (ConjureAnalytics)
+// Module 11057 (ConjureAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6979 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
-import ConjureUtils from "ConjureUtils" /* 7559 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 11052 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5897 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6982 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
+import ConjureUtils from "ConjureUtils" /* 7561 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11058 */;
 import size from "module_2" /* 2 */;
 
 const ConjureProjectStore = ConjureProjectStore2;
@@ -105,7 +105,7 @@ function ratingPromptFields(projectId) {
   let surface;
   let tmp11;
   let turnId;
-  const f99270 = (item) => null != item;
+  const f99436 = (item) => null != item;
   projectId = projectId.projectId;
   const obj = { turn_id: turnId, publish_reason: publishReason, surface, client_platform: str };
   ({ turnId, publishReason, surface } = projectId);
@@ -147,8 +147,8 @@ function ratingPromptFields(projectId) {
   }
   HermesBuiltin.arraySpread(items, prop, tmp8);
   const mapped = items.map((item) => closure_1_8[item]);
-  items1 = [...new Set(mapped.filter(f99270))];
-  new Set(mapped.filter(f99270));
+  items1 = [...new Set(mapped.filter(f99436))];
+  new Set(mapped.filter(f99436));
   const publishState = projectId.publishState;
   tmp11 = null == publishState;
   const projectId2 = projectId.projectId;

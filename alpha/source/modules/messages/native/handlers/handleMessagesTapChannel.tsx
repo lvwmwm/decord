@@ -1,17 +1,17 @@
-// Module ID: 11768
-// Function ID: 11769
+// Module ID: 11776
+// Function ID: 11777
 // Name: handleMessagesTapChannel
-// Dependencies: [5, 4994, 5008, 4990, 5012, 5073, 1072, 7661, 7041, 9089, 8712, 11769, 7561, 5879, 10362, 5788, 8079, 6841, 2]
+// Dependencies: [5, 4996, 5010, 4992, 5014, 5075, 1072, 7663, 7044, 9095, 8717, 11777, 7563, 5882, 10370, 5790, 8084, 6844, 2]
 // Exports: handleMessagesTapChannel
 
-// Module 11768 (handleMessagesTapChannel)
-import ChannelRecord from "ChannelRecord" /* 4994 */;
-import GuildRecord from "GuildRecord" /* 5008 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7661 */;
+// Module 11776 (handleMessagesTapChannel)
+import ChannelRecord from "ChannelRecord" /* 4996 */;
+import GuildRecord from "GuildRecord" /* 5010 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7663 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -162,7 +162,7 @@ obj = function _handleMessagesTapChannel() {
             conversationId = undefined;
             v3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else {
           if (1 === v3) {

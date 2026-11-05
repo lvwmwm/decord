@@ -1,11 +1,11 @@
-// Module ID: 19269
-// Function ID: 19270
+// Module ID: 19300
+// Function ID: 19301
 // Name: OpenUserSettingsTriggerPoint
-// Dependencies: [5363, 10856, 2]
+// Dependencies: [5365, 10862, 2]
 
-// Module 19269 (OpenUserSettingsTriggerPoint)
-import ExperimentConstants from "ExperimentConstants" /* 5363 */;
-import Helpers from "Helpers" /* 10856 */;
+// Module 19300 (OpenUserSettingsTriggerPoint)
+import ExperimentConstants from "ExperimentConstants" /* 5365 */;
+import Helpers from "Helpers" /* 10862 */;
 import size from "module_2" /* 2 */;
 
 const commonTriggerPointConfiguration = new Helpers.CommonTriggerPointConfiguration([], ExperimentConstants.CommonTriggerPoints.OPEN_USER_SETTINGS, { location: "open user settings" });

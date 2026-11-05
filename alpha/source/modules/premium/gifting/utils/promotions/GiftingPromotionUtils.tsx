@@ -1,17 +1,17 @@
-// Module ID: 10782
-// Function ID: 10783
+// Module ID: 10789
+// Function ID: 10790
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 9776, 1387, 504, 10783, 10787, 10788, 5171, 4974, 2]
+// Dependencies: [32, 19, 9782, 1387, 504, 10790, 10794, 10795, 5173, 4976, 2]
 // Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
 
-// Module 10782 (GiftingPromotionUtils)
+// Module 10789 (GiftingPromotionUtils)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10787 */;
-import MarketingComponentType from "MarketingComponentType" /* 10788 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5173 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 10794 */;
+import MarketingComponentType from "MarketingComponentType" /* 10795 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9776 */;
+import PromotionsStore from "PromotionsStore" /* 9782 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -200,10 +200,10 @@ export function shouldShowGiftPromotionReminderNotice() {
       let tmp5 = null != id;
       if (tmp5) {
         const tmpResult = DismissibleContentUnsafeUtils;
-        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4974).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4976).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
           const tmpResult2 = DismissibleContentUnsafeUtils;
-          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4974).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
+          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4976).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
         tmp5 = isDismissed;
       }

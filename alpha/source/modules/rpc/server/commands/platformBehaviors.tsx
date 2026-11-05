@@ -1,11 +1,11 @@
-// Module ID: 16596
-// Function ID: 16597
+// Module ID: 16609
+// Function ID: 16610
 // Name: platformBehaviors
-// Dependencies: [1083, 16548, 2]
+// Dependencies: [1083, 16561, 2]
 
-// Module 16596 (platformBehaviors)
+// Module 16609 (platformBehaviors)
 import Constants from "Constants" /* 1083 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16548 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16561 */;
 import size from "module_2" /* 2 */;
 
 const RPCCommands = Constants.RPCCommands;

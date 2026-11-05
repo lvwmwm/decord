@@ -1,14 +1,14 @@
-// Module ID: 9298
-// Function ID: 9299
+// Module ID: 9305
+// Function ID: 9306
 // Name: AppCrash
-// Dependencies: [19, 21, 8947, 9299, 9300, 9301, 5148, 5851, 2]
+// Dependencies: [19, 21, 8952, 9306, 9307, 9308, 5150, 5854, 2]
 // Exports: AppCrash, getAppCrashSource, useAppCrashSource
 
-// Module 9298 (AppCrash)
+// Module 9305 (AppCrash)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 5148 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import _mod8947 from "module_8947" /* 8947 */;
+import shared from "shared" /* 5150 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import _mod8952 from "module_8952" /* 8952 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/AppCrash.tsx");
 
 export function getAppCrashSource(theme) {
-  const obj = _mod8947;
+  const obj = _mod8952;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useAppCrashSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8947;
+  const obj2 = _mod8952;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function AppCrash(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod8947;
+  const obj2 = _mod8952;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

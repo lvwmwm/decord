@@ -1,17 +1,17 @@
-// Module ID: 7479
-// Function ID: 7480
+// Module ID: 7482
+// Function ID: 7483
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1072, 21, 5377, 6709, 1113, 7480, 7481, 1252, 5894, 1411, 5148, 1187, 5861, 7475, 2]
+// Dependencies: [5, 19, 1072, 21, 5379, 6712, 1113, 7483, 7484, 1252, 5897, 1411, 5150, 1187, 5864, 7478, 2]
 // Exports: default
 
-// Module 7479 (ProviderConnectionCard)
+// Module 7482 (ProviderConnectionCard)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import shared from "shared" /* 5148 */;
-import LinkIcon from "LinkIcon" /* 5861 */;
-import PlatformsDefault from "Platforms" /* 6709 */;
+import shared from "shared" /* 5150 */;
+import LinkIcon from "LinkIcon" /* 5864 */;
+import PlatformsDefault from "Platforms" /* 6712 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

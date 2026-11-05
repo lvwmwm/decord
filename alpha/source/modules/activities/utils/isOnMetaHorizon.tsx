@@ -1,12 +1,12 @@
-// Module ID: 15080
-// Function ID: 15081
+// Module ID: 15093
+// Function ID: 15094
 // Name: isOnMetaHorizon
-// Dependencies: [2147, 9888, 2]
+// Dependencies: [2147, 9894, 2]
 // Exports: default
 
-// Module 15080 (isOnMetaHorizon)
+// Module 15093 (isOnMetaHorizon)
 import Constants from "Constants" /* 2147 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9888 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 9894 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = Constants.META_PRESENCE_APPLICATION_ID;
@@ -30,7 +30,7 @@ export default function isOnMetaHorizon(application_id) {
       if (application_id != null) {
         platform1 = application_id.platform;
       }
-      tmp6 = platform1 === tmp4(9888).ActivityGamePlatforms.IOS;
+      tmp6 = platform1 === tmp4(9894).ActivityGamePlatforms.IOS;
     }
     tmp2 = tmp6;
   }

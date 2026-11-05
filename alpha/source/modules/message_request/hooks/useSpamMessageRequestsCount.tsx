@@ -1,12 +1,12 @@
-// Module ID: 19249
-// Function ID: 19250
+// Module ID: 19280
+// Function ID: 19281
 // Name: useSpamMessageRequestsCount
-// Dependencies: [6992, 504, 2]
+// Dependencies: [6995, 504, 2]
 // Exports: useSpamMessageRequestCount
 
-// Module 19249 (useSpamMessageRequestsCount)
+// Module 19280 (useSpamMessageRequestsCount)
 import get_initialized from "get initialized" /* 504 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6992 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6995 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/hooks/useSpamMessageRequestsCount.tsx");

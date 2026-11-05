@@ -1,10 +1,10 @@
-// Module ID: 17370
-// Function ID: 17371
+// Module ID: 17396
+// Function ID: 17397
 // Name: useVideoQuestCaptions
-// Dependencies: [32, 19, 9845, 1282, 17371, 2]
+// Dependencies: [32, 19, 9851, 1282, 17397, 2]
 // Exports: useVideoQuestCaptions
 
-// Module 17370 (useVideoQuestCaptions)
+// Module 17396 (useVideoQuestCaptions)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -18,8 +18,8 @@ export const useVideoQuestCaptions = (quest) => {
   let closure_2;
   let tmp4;
   let url;
-  let obj = url(9845);
-  const questAsset = obj.getQuestAsset(quest, url(9845).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
+  let obj = url(9851);
+  const questAsset = obj.getQuestAsset(quest, url(9851).QuestAssetType.VIDEO_PLAYER_CAPTION, undefined, true);
   url = undefined;
   if (questAsset != null) {
     url = questAsset.url;

@@ -1,13 +1,13 @@
-// Module ID: 6085
-// Function ID: 6086
+// Module ID: 6088
+// Function ID: 6089
 // Name: VideoQualityStats
-// Dependencies: [32, 6029, 6037, 5906, 2]
+// Dependencies: [32, 6032, 6040, 5909, 2]
 // Exports: parseCodecType
 
-// Module 6085 (VideoQualityStats)
-import TimeUtils from "TimeUtils" /* 5906 */;
-import Histogram from "Histogram" /* 6029 */;
-import SystemResourcesDefault from "SystemResources" /* 6037 */;
+// Module 6088 (VideoQualityStats)
+import TimeUtils from "TimeUtils" /* 5909 */;
+import Histogram from "Histogram" /* 6032 */;
+import SystemResourcesDefault from "SystemResources" /* 6040 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -33,13 +33,14 @@ function parseDecoder(decoderImplementationName) {
     return obj3.UNKNOWN;
   } else {
     const _Object = Object;
+    const str2 = decoderImplementationName.replace(/\s+\(fallback from:.*\)$/i, "");
     const keys = Object.keys(closure_14);
-    for (const item10012 of keys) {
-      let formatted = decoderImplementationName.toLowerCase();
-      if (formatted.includes(item10012)) {
-        let tmp8 = closure_14[item10012];
-        obj.return();
-        return tmp8;
+    for (const item10005 of keys) {
+      let formatted = str2.toLowerCase();
+      if (formatted.includes(item10005)) {
+        let tmp4 = closure_14[item10005];
+        obj2.return();
+        return tmp4;
       }
     }
     return obj3.UNCATEGORIZED;

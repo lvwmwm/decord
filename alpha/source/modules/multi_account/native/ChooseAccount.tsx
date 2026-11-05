@@ -1,22 +1,22 @@
-// Module ID: 18248
-// Function ID: 18249
+// Module ID: 18276
+// Function ID: 18277
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 14195, 14196, 1072, 21, 5141, 575, 1499, 18249, 1252, 14199, 6094, 1113, 1187, 5382, 7499, 7281, 5761, 7088, 18250, 7121, 9245, 8317, 18251, 2]
+// Dependencies: [5, 19, 17, 14208, 14209, 1072, 21, 5143, 575, 1499, 18277, 1252, 14212, 6097, 1113, 1187, 5384, 7501, 7284, 5763, 7091, 18278, 7124, 9252, 8322, 18279, 2]
 // Exports: default
 
-// Module 18248 (ChooseAccount)
+// Module 18276 (ChooseAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
-import MultiAccountStore from "MultiAccountStore" /* 14195 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6097 */;
+import MultiAccountStore from "MultiAccountStore" /* 14208 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import Constants_mod from "Constants" /* 14196 */;
+import Constants_mod from "Constants" /* 14209 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -145,8 +145,8 @@ export default function ChooseAccount() {
   _require = obj.useNavigation();
   let obj2 = require("useMultiAccount");
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
-  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), background: closure_11(multiAccountUsers(7088), {}), contentStyle: tmp.container, children: closure_12(View, obj5) };
-  let tmp2 = multiAccountUsers(7281);
+  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), background: closure_11(multiAccountUsers(7091), {}), contentStyle: tmp.container, children: closure_12(View, obj5) };
+  let tmp2 = multiAccountUsers(7284);
   intl = require("intl").intl;
   obj4 = { variant: "body-sm/medium", color: "text-default", children: intl2.string(require("intl").t["0M5fN7"]) };
   Text = require("Text/Text").Text;
@@ -249,9 +249,9 @@ export default function ChooseAccount() {
       }
     }
   };
-  const FormRow = require("module_8317").FormRow;
-  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18251) };
-  Icon = require("module_8317").FormRow.Icon;
+  const FormRow = require("module_8322").FormRow;
+  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(18279) };
+  Icon = require("module_8322").FormRow.Icon;
   intl3 = require("intl").intl;
   items[1] = closure_11(FormRow, obj6);
   return closure_11(tmp2, obj3);

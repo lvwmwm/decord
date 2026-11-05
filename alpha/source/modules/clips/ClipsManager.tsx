@@ -1,33 +1,33 @@
-// Module ID: 20300
-// Function ID: 20301
+// Module ID: 20336
+// Function ID: 20337
 // Name: clips/ClipsManager
-// Dependencies: [5, 5917, 1231, 502, 4990, 2135, 5898, 8025, 1385, 2141, 8354, 1072, 6850, 5902, 7423, 15444, 5923, 6852, 1252, 4966, 572, 20301, 20302, 4952, 1377, 15443, 2]
+// Dependencies: [5, 5920, 1231, 502, 4992, 2135, 5901, 8030, 1385, 2141, 8359, 1072, 6853, 5905, 7426, 15457, 5926, 6855, 1252, 4968, 572, 20337, 20338, 4954, 1377, 15456, 2]
 
-// Module 20300 (clips/ClipsManager)
+// Module 20336 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import DiscordNativeDefault from "DiscordNative" /* 4952 */;
-import UserSettings from "UserSettings" /* 4966 */;
-import Constants2 from "Constants" /* 5902 */;
-import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5917 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5923 */;
-import Constants3 from "Constants" /* 6850 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6852 */;
-import ClipsExperiment from "ClipsExperiment" /* 15444 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20301 */;
+import DiscordNativeDefault from "DiscordNative" /* 4954 */;
+import UserSettings from "UserSettings" /* 4968 */;
+import Constants2 from "Constants" /* 5905 */;
+import SystemAnalyticsStore from "SystemAnalyticsStore" /* 5920 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5926 */;
+import Constants3 from "Constants" /* 6853 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6855 */;
+import ClipsExperiment from "ClipsExperiment" /* 15457 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20337 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8025 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5901 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 8030 */;
 import UserStore from "UserStore" /* 1385 */;
 import ClipsStore from "ClipsStore" /* 2141 */;
-import ClipsConstants from "ClipsConstants" /* 8354 */;
+import ClipsConstants from "ClipsConstants" /* 8359 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
 import size from "module_2" /* 2 */;
 
 const StreamKeyUtilsAll = StreamKeyUtils;
@@ -42,7 +42,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(15443);
+const isClipsEnabled = tmp(15456);
 const getSystemAnalyticsInfo = SystemAnalyticsStore.getSystemAnalyticsInfo;
 ({ WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX: closure_14, WINDOWS_HARDWARE_MINIMUM_GPU_REGEX: closure_15, CLIPS_HARDWARE_CLASSIFICATION_VERSION: closure_16, CLIPS_DEFAULT_SETTINGS_VERSION: closure_17, ClipsHardwareClassification: closure_18, CLIP_RUNTIME: closure_19 } = ClipsConstants);
 ({ AnalyticEvents: closure_20, RTCConnectionStates: closure_21 } = Constants);
@@ -395,7 +395,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp6 = tmp5 && hardwareClassification === constants.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmpResult = tmp(20302);
+            const tmpResult = tmp(20338);
             allowDefaultOn = tmpResult.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp6, enableAutoclipping: tmp6, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };

@@ -470,14 +470,14 @@ class BaseApexExperimentStore extends PersistedStore {
     if (null != closure_10[name]) {
       const self = this;
       if ("user" === closure_10[name].kind) {
-        const obj2 = { experiment: name, unit_type: closure_10[name].kind, suppression_source: client_override };
-        self.track(WebAnalyticsEvents.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, obj2, { flush: true });
+        obj = { experiment: name, unit_type: closure_10[name].kind, suppression_source: client_override };
+        self.track(WebAnalyticsEvents.EXPERIMENT_USER_EXPOSURE_SUPPRESSED, obj, { flush: true });
       } else if ("installation" === closure_10[name].kind) {
         const _Object = Object;
         const first = Object.keys(obj.installation)[0];
         if (null != first) {
-          obj = { experiment: name, unit_type: closure_10[name].kind, suppression_source: client_override, installation_id: first };
-          self.track(WebAnalyticsEvents.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED, obj, { flush: true });
+          const obj2 = { experiment: name, unit_type: closure_10[name].kind, suppression_source: client_override, installation_id: first };
+          self.track(WebAnalyticsEvents.EXPERIMENT_INSTALLATION_EXPOSURE_SUPPRESSED, obj2, { flush: true });
         }
       } else if ("guild" === closure_10[name].kind) {
         const _Object2 = Object;

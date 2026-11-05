@@ -1,10 +1,10 @@
-// Module ID: 9008
-// Function ID: 9009
+// Module ID: 9013
+// Function ID: 9014
 // Name: MediaViewerDimensionsContext
 // Dependencies: [19, 21, 1493, 38, 2]
 // Exports: MediaViewerDimensionsProvider, useMediaViewerDimensions
 
-// Module 9008 (MediaViewerDimensionsContext)
+// Module 9013 (MediaViewerDimensionsContext)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;

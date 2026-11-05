@@ -1,12 +1,12 @@
-// Module ID: 5807
-// Function ID: 5808
+// Module ID: 5809
+// Function ID: 5810
 // Name: TestModeStore
-// Dependencies: [1193, 1231, 2165, 504, 4966, 572, 2]
+// Dependencies: [1193, 1231, 2165, 504, 4968, 572, 2]
 
-// Module 5807 (TestModeStore)
+// Module 5809 (TestModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import UserSettings from "UserSettings" /* 4966 */;
+import UserSettings from "UserSettings" /* 4968 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2165 */;

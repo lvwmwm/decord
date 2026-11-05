@@ -1,21 +1,21 @@
-// Module ID: 9107
-// Function ID: 9108
+// Module ID: 9113
+// Function ID: 9114
 // Name: GuildScheduledEventModalActionCreators
-// Dependencies: [5, 4996, 9108, 5382, 9109, 2123, 9114, 9365, 2]
+// Dependencies: [5, 4998, 9114, 5384, 9115, 2123, 9120, 9372, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 9107 (GuildScheduledEventModalActionCreators)
+// Module 9113 (GuildScheduledEventModalActionCreators)
 import asyncRequire from "asyncRequire" /* 2123 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 9108 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4998 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 9114 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
 
 let tmp3;
-const ScheduleUtils = tmp3(9114);
+const ScheduleUtils = tmp3(9120);
 function openGuildEventDetails(arg0) {
   let event;
   let eventId;
@@ -26,7 +26,7 @@ function openGuildEventDetails(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   ActionSheetActionCreatorsDefault;
   obj = { eventId, event, onCloseActionSheet: onClose, recurrenceId };
-  const tmp4 = asyncRequire(9109, dependencyMap.paths);
+  const tmp4 = asyncRequire(9115, dependencyMap.paths);
   const tmp5 = closure_5;
   if (recurrenceId == null) {
     const tmp3Result = ScheduleUtils;
@@ -106,5 +106,5 @@ export function transitionToEventDetailsFromInvite() {
 export function openEndEventModal(channel) {
   obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(9365, dependencyMap.paths), closure_4, obj2);
+  obj.openLazy(asyncRequire(9372, dependencyMap.paths), closure_4, obj2);
 }

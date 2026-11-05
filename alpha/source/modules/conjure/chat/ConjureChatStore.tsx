@@ -1,25 +1,25 @@
-// Module ID: 11029
-// Function ID: 11030
+// Module ID: 11035
+// Function ID: 11036
 // Name: ConjureChatStore
-// Dependencies: [109, 6979, 11030, 11032, 11031, 504, 11033, 11034, 1113, 3995, 572, 2]
+// Dependencies: [109, 6982, 11036, 11038, 11037, 504, 11039, 11040, 1113, 3995, 572, 2]
 // Exports: getOlderHistoryCursor
 
-// Module 11029 (ConjureChatStore)
+// Module 11035 (ConjureChatStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import conjureChatTurns from "conjureChatTurns" /* 11030 */;
-import conjureStepTimeline from "conjureStepTimeline" /* 11031 */;
-import conjureChatHistory from "conjureChatHistory" /* 11032 */;
-import conjureAgentReaction from "conjureAgentReaction" /* 11033 */;
-import conjureAgentHiddenMessages from "conjureAgentHiddenMessages" /* 11034 */;
+import conjureChatTurns from "conjureChatTurns" /* 11036 */;
+import conjureStepTimeline from "conjureStepTimeline" /* 11037 */;
+import conjureChatHistory from "conjureChatHistory" /* 11038 */;
+import conjureAgentReaction from "conjureAgentReaction" /* 11039 */;
+import conjureAgentHiddenMessages from "conjureAgentHiddenMessages" /* 11040 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
 import size from "module_2" /* 2 */;
 
 let set3;
 
-const f99214 = (kind) => "preview_ready" === kind.kind;
+const f99380 = (kind) => "preview_ready" === kind.kind;
 function patchTurn(projectId, turnId, fn) {
   const value = map.get(projectId);
   if (null != value) {
@@ -203,7 +203,7 @@ function applyAgentReactions(arr) {
         let tmp4 = item10022;
         if ("reaction" === item10022.kind) {
           if (null != tmp4.message_id) {
-            let obj2 = map(11033);
+            let obj2 = map(11039);
             let result = obj2.agentReactionFromStep(tmp4);
             if (null != result) {
               let result1 = map.set(tmp4.message_id, tmp10);
@@ -434,7 +434,7 @@ let obj = {
     }
     let tmp23 = messagesFromHistoryResult;
     const set4 = map.set;
-    const foldDividers = tmp17(11032).foldDividers;
+    const foldDividers = tmp17(11038).foldDividers;
     conjureChatHistory;
     const tmp21 = applyAgentReactions;
     if (-1 !== num3) {
@@ -662,7 +662,7 @@ let obj = {
             }
             if (everyResult) {
               const steps = tmp53.steps;
-              everyResult = steps.every(f99214);
+              everyResult = steps.every(f99380);
             }
             if (everyResult) {
               const obj5 = conjureChatTurns;
@@ -720,7 +720,7 @@ let obj = {
         if (!obj2.sameAgentReaction(value[findIndexResult].agentReaction, reaction)) {
           const obj = { agentReaction: reaction };
           set = tmp.set;
-          const replaceAt = tmp2(11030).replaceAt;
+          const replaceAt = tmp2(11036).replaceAt;
           conjureChatTurns;
           const merged = Object.assign(value[findIndexResult]);
           const result = set(projectId, replaceAt(value, findIndexResult, obj));
@@ -802,7 +802,7 @@ let obj = {
           let everyResult = null != tmp10 && "assistant" === tmp10.role && null == tmp10.turn_id;
           if (everyResult) {
             const steps = tmp10.steps;
-            everyResult = steps.every(f99214);
+            everyResult = steps.every(f99380);
           }
           if (everyResult) {
             const tmp2Result = conjureChatTurns;
@@ -854,7 +854,7 @@ let obj = {
       return false;
     } else {
       const obj3 = { ts: timestamp, id };
-      const obj2 = id(11032);
+      const obj2 = id(11038);
       const newMessageResult = obj2.newMessage("assistant", content, obj3);
       newMessageResult.kind = "publish_notice";
       newMessageResult.publishNotice = publishNotice;
@@ -870,7 +870,7 @@ let obj = {
       let tmp6 = null;
       if (-1 !== findLastIndexResult) {
         tmp6 = null;
-        const tmp2Result = id(11030);
+        const tmp2Result = id(11036);
         if (!tmp2Result.turnSettled(value[findLastIndexResult])) {
           tmp6 = value[findLastIndexResult];
         }
@@ -891,8 +891,8 @@ let obj = {
           items[arraySpreadResult] = obj4;
           const arraySpreadResult4 = HermesBuiltin.arraySpread(items, value.slice(findLastIndexResult + 1), arraySpreadResult + 1);
           items[arraySpreadResult4] = newMessageResult;
-          const newMessage = tmp2(11032).newMessage;
-          id(11032);
+          const newMessage = tmp2(11038).newMessage;
+          id(11038);
           if (null != tmp6.turn_id) {
             obj6 = { turnId: tmp6.turn_id };
             const obj5 = { turnId: tmp6.turn_id };
@@ -1019,7 +1019,7 @@ let obj = {
     if (!tmp2) {
       let tmp5 = null != value;
       if (tmp5) {
-        let obj2 = step(11030);
+        let obj2 = step(11036);
         tmp5 = -1 !== obj2.resolveTurnIndex(value, undefined);
       }
       tmp2 = tmp5;
@@ -1139,7 +1139,7 @@ let obj = {
       if (flag2) {
         const obj2 = { provisionalTodo: text };
         set = tmp.set;
-        const replaceAt = tmp3(11030).replaceAt;
+        const replaceAt = tmp3(11036).replaceAt;
         conjureChatTurns;
         const merged = Object.assign(value[findTurnSegmentResult]);
         const result = set(projectId, replaceAt(value, findTurnSegmentResult, obj2));

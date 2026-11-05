@@ -1,10 +1,10 @@
-// Module ID: 5203
-// Function ID: 5204
+// Module ID: 5205
+// Function ID: 5206
 // Name: SKUListing
 // Dependencies: [2]
 // Exports: default
 
-// Module 5203 (SKUListing)
+// Module 5205 (SKUListing)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/SKUListing.tsx");

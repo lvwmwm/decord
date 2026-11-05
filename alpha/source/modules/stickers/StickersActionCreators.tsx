@@ -1,22 +1,22 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 10451
+// Function ID: 10452
 // Name: StickersActionCreators
-// Dependencies: [5, 6703, 2191, 6909, 1385, 6972, 1072, 1082, 6590, 1282, 572, 6695, 7290, 4971, 12, 6093, 1113, 2]
+// Dependencies: [5, 6706, 2191, 6912, 1385, 6975, 1072, 1082, 6593, 1282, 572, 6698, 7293, 4973, 12, 6096, 1113, 2]
 // Exports: addStickerPreview, clearStickerPreview, createGuildSticker, deleteGuildSticker, favoriteSticker, fetchGuildStickersWithCreator, fetchSticker, fetchStickerPack, fetchStickerPacks, unfavoriteSticker, updateGuildSticker
 
-// Module 10445 (StickersActionCreators)
+// Module 10451 (StickersActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
-import InlineUploaderDefault from "InlineUploader" /* 7290 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6096 */;
+import InlineUploaderDefault from "InlineUploader" /* 7293 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6909 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6912 */;
 import UserStore from "UserStore" /* 1385 */;
-import StickersStore from "StickersStore" /* 6972 */;
+import StickersStore from "StickersStore" /* 6975 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let _require, c1, c2, locale, stickerIds;
 
 let c10;
 let unpackModuleId;
-const f97626 = (item) => null != stickerById.getStickerById(item);
+const f97792 = (item) => null != stickerById.getStickerById(item);
 let obj = function _fetchStickerPack() {
   obj = _asyncToGenerator(async (packId, ingestStickers) => {
     let closure_2;
@@ -50,92 +50,54 @@ let obj = function _fetchStickerPack() {
 };
 obj = function _fetchStickerPacks() {
   obj = _asyncToGenerator(async (arg0, value) => {
+    let closure_1;
+    let closure_2;
     let obj7;
     let obj8;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
+    if (1 === tmp5) {
       if (arg0 === 1) {
+        let c4 = 3;
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let sticker_packs;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp2;
-            let closure_1 = tmp;
-            locale = undefined;
-            let obj5 = closure_0;
-            if (closure_0 === undefined) {
-              obj5 = {};
-            }
-            locale = obj5.locale ?? locale.locale;
-            sticker_packs = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else {
-          if (1 === tmp5) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else if (!closure_130_8.isFetchingStickerPacks) {
-              if (!closure_130_8.hasLoadedStickerPacks) {
-                const obj4 = closure_130_1(closure_130_2[10]);
-                obj4.dispatch({ type: "STICKER_PACKS_FETCH_START" });
-                const HTTP = closure_130_0(closure_130_2[9]).HTTP;
-                const request = { url: closure_130_9.STICKER_PACKS, query: obj8, rejectWithError: obj7.rejectWithMigratedError() };
-                obj8 = { locale };
-                const get = HTTP.get;
-                obj7 = closure_130_0(closure_130_2[9]);
-                c3 = 2;
-                c4 = 1;
-                const obj9 = { value: get(request), done: false };
-                return obj9;
-              }
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj10 = { value, done: true };
-            return obj10;
-          } else {
-            sticker_packs = value.body.sticker_packs;
-            const obj11 = { type: "STICKER_PACKS_FETCH_SUCCESS", packs: sticker_packs };
-            obj = closure_130_1(closure_130_2[10]);
-            obj.dispatch(obj11);
-          }
-          c4 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp25) {
         c4 = 3;
-        throw tmp25;
+        const obj6 = { value, done: true };
+        return obj6;
+      } else if (!closure_130_8.isFetchingStickerPacks) {
+        if (!closure_130_8.hasLoadedStickerPacks) {
+          const obj4 = closure_130_1(closure_130_2[10]);
+          obj4.dispatch({ type: "STICKER_PACKS_FETCH_START" });
+          const HTTP = closure_130_0(closure_130_2[9]).HTTP;
+          const request = { url: closure_130_9.STICKER_PACKS, query: obj8, rejectWithError: obj7.rejectWithMigratedError() };
+          obj8 = { locale };
+          const get = HTTP.get;
+          obj7 = closure_130_0(closure_130_2[9]);
+          let c3 = 2;
+          c4 = 1;
+          const obj9 = { value: get(request), done: false };
+          return obj9;
+        }
       }
+    } else if (arg0 === 1) {
+      c4 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 3;
+      const obj10 = { value, done: true };
+      return obj10;
+    } else {
+      const sticker_packs = value.body.sticker_packs;
+      const obj11 = { type: "STICKER_PACKS_FETCH_SUCCESS", packs: sticker_packs };
+      obj = closure_130_1(closure_130_2[10]);
+      obj.dispatch(obj11);
     }
+    await "HermesInternal";
+    let obj5 = closure_0;
+    if (closure_0 === undefined) {
+      obj5 = {};
+    }
+    locale = obj5.locale ?? locale.locale;
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -475,7 +437,7 @@ export function favoriteSticker(id) {
     if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
       let found = stickerIds1;
       if (GatewayConnectionStore.isConnected()) {
-        found = stickerIds1.filter(f97626);
+        found = stickerIds1.filter(f97792);
       }
       tmp = found;
     }
@@ -483,7 +445,7 @@ export function favoriteSticker(id) {
     obj = _modDef12;
     if (obj.size(stickerIds.stickerIds) >= authStore) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp4(6093).show;
+      const show = tmp4(6096).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;
@@ -515,7 +477,7 @@ export function unfavoriteSticker(id) {
     if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
       let found = stickerIds1;
       if (GatewayConnectionStore.isConnected()) {
-        found = stickerIds1.filter(f97626);
+        found = stickerIds1.filter(f97792);
       }
       tmp = found;
     }

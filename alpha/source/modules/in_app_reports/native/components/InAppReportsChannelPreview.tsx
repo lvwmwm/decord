@@ -1,17 +1,17 @@
-// Module ID: 15389
-// Function ID: 15390
+// Module ID: 15402
+// Function ID: 15403
 // Name: InAppReportsChannelPreview
-// Dependencies: [19, 17, 5012, 21, 5141, 575, 504, 5138, 5761, 1113, 7098, 2]
+// Dependencies: [19, 17, 5014, 21, 5143, 575, 504, 5140, 5763, 1113, 7101, 2]
 // Exports: default
 
-// Module 15389 (InAppReportsChannelPreview)
+// Module 15402 (InAppReportsChannelPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildIconDefault from "GuildIcon" /* 7098 */;
+import GuildIconDefault from "GuildIcon" /* 7101 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -42,10 +42,10 @@ export default function ChannelPreview(stageInstance) {
   if (null != stateFromStores) {
     if (null != stageInstance) {
       const obj2 = { style: tmp.container, children: items1 };
-      const tmp2Result = stageInstance(5138);
+      const tmp2Result = stageInstance(5140);
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "body-xs/semibold", children: intl.string(stageInstance(1113).t.InbJ8x) };
       const hexWithOpacityResult = tmp2Result.hexWithOpacity(tmp.borderColor.color, 0.08);
-      const Text = tmp2(5761).Text;
+      const Text = tmp2(5763).Text;
       intl = tmp2(1113).intl;
       items1 = [closure_5(Text, obj3), ];
       const obj4 = { style: items2, children: items4 };
@@ -53,14 +53,14 @@ export default function ChannelPreview(stageInstance) {
       const obj5 = { borderColor: hexWithOpacityResult };
       items2[1] = obj5;
       const obj6 = { style: tmp.guildInfo, children: items3 };
-      const obj7 = { guild: stateFromStores, size: stageInstance(7098).GuildIconSizes.XXSMALL, selected: false };
+      const obj7 = { guild: stateFromStores, size: stageInstance(7101).GuildIconSizes.XXSMALL, selected: false };
       const tmp10 = GuildIconDefault;
       items3 = [closure_5(tmp10, obj7), ];
       const obj8 = { style: tmp.guildName, variant: "body-sm/medium", color: "text-default", children: stateFromStores.name };
-      items3[1] = closure_5(stageInstance(5761).Text, obj8);
+      items3[1] = closure_5(stageInstance(5763).Text, obj8);
       items4 = [closure_6(View, obj6), ];
       const obj9 = { style: tmp.topic, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: stageInstance.topic };
-      items4[1] = closure_5(stageInstance(5761).Text, obj9);
+      items4[1] = closure_5(stageInstance(5763).Text, obj9);
       items1[1] = closure_6(View, obj4);
       return closure_6(View, obj2);
     }

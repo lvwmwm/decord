@@ -1,23 +1,23 @@
-// Module ID: 11815
-// Function ID: 11816
+// Module ID: 11823
+// Function ID: 11824
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4990, 5073, 5083, 1385, 10912, 1072, 21, 5141, 563, 11816, 11817, 9176, 7354, 11820, 11829, 11830, 1113, 11159, 11158, 5171, 4974, 11832, 11837, 7701, 11838, 2017, 9263, 6162, 8319, 9877, 11842, 2533, 2]
+// Dependencies: [32, 19, 17, 4992, 5075, 5085, 1385, 10918, 1072, 21, 5143, 563, 11824, 11825, 9183, 7357, 11828, 11837, 11838, 1113, 11167, 11166, 5173, 4976, 11840, 11845, 7703, 11846, 2017, 9270, 6165, 8324, 9883, 11850, 2533, 2]
 // Exports: default
 
-// Module 11815 (useMemberListAction)
+// Module 11823 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10912 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11816 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11820 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10918 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11824 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11828 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import PermissionStore_mod from "PermissionStore" /* 5073 */;
-import RelationshipStore from "RelationshipStore" /* 5083 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import PermissionStore_mod from "PermissionStore" /* 5075 */;
+import RelationshipStore from "RelationshipStore" /* 5085 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ let PermissionStore = PermissionStore_mod;
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 ({ Permissions: unpackModuleId, AnalyticsSections: closure_12, InstantInviteSources: map1 } = Constants);
 ({ jsx: closure_14, jsxs: closure_15 } = Fragment);
-let closure_16 = { listActionRenderer: "Object", listActionHeight: "Array" };
+let closure_16 = { listActionRenderer: "Path", listActionHeight: "count" };
 let obj = { wrapper: { paddingTop: USERS_LIST_PADDING_BETWEEN_SECTIONS } };
 let closure_17 = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");

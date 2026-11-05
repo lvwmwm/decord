@@ -1,18 +1,18 @@
-// Module ID: 4963
-// Function ID: 4964
+// Module ID: 4965
+// Function ID: 4966
 // Name: DateUtils
-// Dependencies: [2191, 3, 4964, 4966, 1196, 5835, 1113, 572, 5837, 2171, 2]
+// Dependencies: [2191, 3, 4966, 4968, 1196, 5838, 1113, 572, 5840, 2171, 2]
 // Exports: accessibilityLabelCalendarFormat, calendarFormat, calendarFormatCompact, dateStringToMoment, diffAsUnits, differenceInDays, formatDateForDatetimeLocal, getDaysRemainingInMonth, getESTDate, getMonthlyProgressPercentage, isSameDay, isSameHourMoment, isWithinInterval, unitsAsStrings
 
-// Module 4963 (DateUtils)
+// Module 4965 (DateUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import intl4 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import _modDef2171 from "module_2171" /* 2171 */;
-import react_nativeDefault from "react-native" /* 4964 */;
-import UserSettings from "UserSettings" /* 4966 */;
-import SystemDateFormatter from "SystemDateFormatter" /* 5835 */;
-import makeDateFormatterDefault from "makeDateFormatter" /* 5837 */;
+import react_nativeDefault from "react-native" /* 4966 */;
+import UserSettings from "UserSettings" /* 4968 */;
+import SystemDateFormatter from "SystemDateFormatter" /* 5838 */;
+import makeDateFormatterDefault from "makeDateFormatter" /* 5840 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

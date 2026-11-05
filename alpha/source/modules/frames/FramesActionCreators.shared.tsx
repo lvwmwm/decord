@@ -1,20 +1,20 @@
-// Module ID: 11116
-// Function ID: 11117
+// Module ID: 11125
+// Function ID: 11126
 // Name: launchFrame
-// Dependencies: [32, 5, 6981, 6982, 5791, 11117, 572, 11064, 6984, 11065, 11119, 11124, 11125, 2]
+// Dependencies: [32, 5, 6984, 6985, 5793, 11126, 572, 11070, 6987, 11071, 11128, 11133, 11078, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 11116 (launchFrame)
+// Module 11125 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6984 */;
-import createProxyTicket from "createProxyTicket" /* 11064 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11117 */;
-import leaveFrame from "leaveFrame" /* 11125 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5793 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6987 */;
+import createProxyTicket from "createProxyTicket" /* 11070 */;
+import leaveFrame from "leaveFrame" /* 11078 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 11126 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6981 */;
-import FramesConstants from "FramesConstants" /* 6982 */;
+import FramesStore from "FramesStore" /* 6984 */;
+import FramesConstants from "FramesConstants" /* 6985 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -86,7 +86,7 @@ let obj = function _launchFrame() {
               message = undefined;
               c6 = 1;
               c7 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c6) {
             if (arg0 === 1) {
@@ -244,7 +244,7 @@ function promoteFrame(frameId) {
     const tmp4 = require;
     if (null != mainFrame1) {
       if (mainFrame1.intent === metroRequire.MAIN) {
-        const tmp4Result = tmp4(11125);
+        const tmp4Result = tmp4(11078);
         tmp4Result.leaveFrame(mainFrame1.id);
       } else {
         demoteMainFrame(mainFrame1.id);

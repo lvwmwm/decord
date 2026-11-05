@@ -1,21 +1,21 @@
-// Module ID: 17591
-// Function ID: 17592
+// Module ID: 17617
+// Function ID: 17618
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 17582, 1072, 21, 5141, 575, 1405, 10953, 1402, 17583, 5384, 1252, 5382, 16696, 5396, 17578, 5768, 1113, 5723, 1090, 17592, 12, 7121, 2]
+// Dependencies: [32, 19, 17, 17608, 1072, 21, 5143, 575, 1405, 10959, 1402, 17609, 5386, 1252, 5384, 16709, 5398, 17604, 5770, 1113, 5725, 1090, 17618, 12, 7124, 2]
 // Exports: default
 
-// Module 17591 (DisplayNameStylesGradientPickerSheet)
+// Module 17617 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import HapticUtils from "HapticUtils" /* 5384 */;
-import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17582 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import HapticUtils from "HapticUtils" /* 5386 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 17608 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -39,7 +39,7 @@ let closure_12 = createStyles.createStyles((arg0) => {
   ({ paddingTop: nativeDefault.space.PX_4, paddingBottom: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, flexGrow: 1, justifyContent: "center", alignItems: "center" });
   ({ marginBottom: nativeDefault.space.PX_24, flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH });
   rect = { left: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8, position: "absolute", flexDirection: "row", justifyContent: "space-between" };
-  size = { borderColor: "white", width: 28, height: 28, borderRadius: nativeDefault.radii.sm, borderWidth: 1 };
+  size = { borderColor: "white", width: 28, height: 28, borderRadius: nativeDefault.radii.sm, borderWidth: nativeDefault.space.PX_4 };
   size1 = { height: 50, width: "100%", borderRadius: nativeDefault.radii.sm };
   space = nativeDefault.space;
   ({ marginBottom: arg0 ? space.PX_24 : space.PX_20, justifyContent: "center", flexDirection: "row", width: "100%", maxWidth: SHEET_CONTENT_MAX_WIDTH, flexWrap: "wrap", columnGap: nativeDefault.space.PX_24, rowGap: nativeDefault.space.PX_16 });

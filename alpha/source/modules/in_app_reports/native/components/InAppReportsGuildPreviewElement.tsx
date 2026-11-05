@@ -1,19 +1,19 @@
-// Module ID: 15390
-// Function ID: 15391
+// Module ID: 15403
+// Function ID: 15404
 // Name: InAppReportsGuildPreviewElement
-// Dependencies: [19, 17, 21, 5141, 575, 5138, 5761, 1113, 7098, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 5140, 5763, 1113, 7101, 2]
 // Exports: default
 
-// Module 15390 (InAppReportsGuildPreviewElement)
+// Module 15403 (InAppReportsGuildPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import ColorUtils from "ColorUtils" /* 5138 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import GuildIcon from "GuildIcon" /* 7098 */;
+import ColorUtils from "ColorUtils" /* 5140 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import GuildIcon from "GuildIcon" /* 7101 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

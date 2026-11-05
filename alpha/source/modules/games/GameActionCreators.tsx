@@ -1,14 +1,14 @@
-// Module ID: 7621
-// Function ID: 7622
+// Module ID: 7623
+// Function ID: 7624
 // Name: GameActionCreators
-// Dependencies: [5, 2143, 1072, 1282, 572, 4985, 12, 2]
+// Dependencies: [5, 2143, 1072, 1282, 572, 4987, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 7621 (GameActionCreators)
+// Module 7623 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Timers from "Timers" /* 4985 */;
+import Timers from "Timers" /* 4987 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GameStore from "GameStore" /* 2143 */;
 import size from "module_2" /* 2 */;

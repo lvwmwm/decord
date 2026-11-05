@@ -1,13 +1,13 @@
-// Module ID: 5299
-// Function ID: 5300
+// Module ID: 5301
+// Function ID: 5302
 // Name: OmnibuttonCoachmarkRive
-// Dependencies: [109, 19, 21, 5215, 5300, 5268, 2]
+// Dependencies: [109, 19, 21, 5217, 5302, 5270, 2]
 // Exports: OmnibuttonCoachmarkRive
 
-// Module 5299 (OmnibuttonCoachmarkRive)
+// Module 5301 (OmnibuttonCoachmarkRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5215 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5268 */;
+import BaseRive2 from "BaseRive" /* 5217 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5270 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

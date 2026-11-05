@@ -1,66 +1,66 @@
 // Module ID: 13131
 // Function ID: 13132
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13131 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
 let items;
 let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, null, false);
-}
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const AtKeyword = tokenize.TYPE.AtKeyword;
-const CDO = tokenize.TYPE.CDO;
-const CDC = tokenize.TYPE.CDC;
-const obj = {
-  name: "StyleSheet",
+const Ident = tokenize.TYPE.Ident;
+const Function = tokenize.TYPE.Function;
+const Colon = tokenize.TYPE.Colon;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
+let obj = {
+  name: "PseudoClassSelector",
   structure: obj2,
   parse() {
+    let consumeResult;
+    let tmp4;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      do {
-        let tokenType = self.scanner.tokenType;
-        if (WhiteSpace === tokenType) {
-          let iter2 = self.scanner;
-          let nextResult = iter2.next();
-        } else {
-          let CommentResult;
-          if (Comment === tokenType) {
-            let source = self.scanner.source;
-            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
-              let iter = self.scanner;
-              let nextResult1 = iter.next();
-            } else {
-              CommentResult = self.Comment();
-            }
-          } else if (CDO === tokenType) {
-            CommentResult = self.CDO();
-          } else if (CDC === tokenType) {
-            CommentResult = self.CDC();
-          } else if (AtKeyword === tokenType) {
-            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
-          } else {
-            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
-          }
-          let arr = list.push(CommentResult);
-        }
-      } while (!self.scanner.eof);
+    this.eat(Colon);
+    if (this.scanner.tokenType === Function) {
+      let list;
+      const str = self.consumeFunctionName();
+      const formatted = str.toLowerCase();
+      const pseudo = self.pseudo;
+      if (pseudo.hasOwnProperty(formatted)) {
+        const scanner = self.scanner;
+        scanner.skipSC();
+        const scanner2 = self.scanner;
+        const obj = self.pseudo[formatted];
+        const callResult = obj.call(self);
+        scanner2.skipSC();
+        list = callResult;
+      } else {
+        list = self.createList();
+        list.push(self.Raw(self.scanner.tokenIndex, null, false));
+      }
+      self.eat(RightParenthesis);
+      tmp4 = list;
+      consumeResult = str;
+    } else {
+      consumeResult = self.consume(Ident);
+      tmp4 = null;
     }
-    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
+    const element = { type: "PseudoClassSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp4 };
     return element;
   },
-  generate(arg0) {
-    this.children(arg0);
+  generate(name) {
+    const self = this;
+    this.chunk(":");
+    this.chunk(name.name);
+    if (null !== name.children) {
+      self.chunk("(");
+      self.children(name);
+      self.chunk(")");
+    }
   },
-  walkContext: "stylesheet"
+  walkContext: "function"
 };
-obj2 = { children: items };
-items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
+obj2 = { name: String, children: items };
+items = [["Raw"], null];
 
 export default obj;

@@ -1,13 +1,13 @@
-// Module ID: 18995
-// Function ID: 18996
+// Module ID: 19026
+// Function ID: 19027
 // Name: guild_channels/ChannelSubtitle
-// Dependencies: [19, 21, 11227, 5761, 18541, 11234, 11245, 2]
+// Dependencies: [19, 21, 11235, 5763, 18571, 11242, 11253, 2]
 // Exports: renderChannelSubtitle
 
-// Module 18995 (guild_channels/ChannelSubtitle)
+// Module 19026 (guild_channels/ChannelSubtitle)
 import Fragment from "Fragment" /* 21 */;
-import ChannelListLayout from "ChannelListLayout" /* 11227 */;
-import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11234 */;
+import ChannelListLayout from "ChannelListLayout" /* 11235 */;
+import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11242 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -76,7 +76,7 @@ export function renderChannelSubtitle(arg0) {
     obj3 = ChannelListLayout;
     const tmp10 = require;
     if (typeof subtitle === "string") {
-      const Text = tmp10(5761).Text;
+      const Text = tmp10(5763).Text;
       const merged = Object.assign(obj2);
       tmp9 = <Text>{subtitle}</Text>;
     } else {

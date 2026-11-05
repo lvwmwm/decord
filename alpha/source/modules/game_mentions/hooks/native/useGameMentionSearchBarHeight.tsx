@@ -1,12 +1,12 @@
-// Module ID: 14170
-// Function ID: 14171
+// Module ID: 14183
+// Function ID: 14184
 // Name: useGameMentionSearchBarHeight
-// Dependencies: [17, 11232, 2]
+// Dependencies: [17, 11240, 2]
 // Exports: default
 
-// Module 14170 (useGameMentionSearchBarHeight)
+// Module 14183 (useGameMentionSearchBarHeight)
 import react_native from "react-native" /* 17 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11240 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;

@@ -1,25 +1,25 @@
-// Module ID: 18896
-// Function ID: 18897
+// Module ID: 18927
+// Function ID: 18928
 // Name: Elements
-// Dependencies: [32, 19, 17, 2180, 21, 5141, 575, 5761, 1113, 7121, 1187, 18897, 10089, 17462, 563, 10092, 7553, 2]
+// Dependencies: [32, 19, 17, 2180, 21, 5143, 575, 5763, 1113, 7124, 1187, 18928, 10097, 17488, 563, 10100, 7555, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 18896 (Elements)
+// Module 18927 (Elements)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Pressables from "Pressables" /* 7121 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 10089 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10092 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17462 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18897 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Pressables from "Pressables" /* 7124 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 10097 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10100 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17488 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18928 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2180 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -149,7 +149,7 @@ export function useFormattedSubscriptionPlan(listingId) {
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7553);
+    const tmp3Result = tmp3(7555);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

@@ -1,19 +1,19 @@
-// Module ID: 8492
-// Function ID: 8493
+// Module ID: 8497
+// Function ID: 8498
 // Name: ReportModals
-// Dependencies: [5, 4995, 5084, 1399, 1072, 8493, 8494, 8496, 5004, 5894, 2]
+// Dependencies: [5, 4997, 5086, 1399, 1072, 8498, 8499, 8501, 5006, 5897, 2]
 // Exports: showReportModalForApp, showReportModalForFirstDM, showReportModalForGuild, showReportModalForGuildDirectoryEntry, showReportModalForGuildScheduledEvent, showReportModalForInappropriateConversationSafetyAlert, showReportModalForMessage, showReportModalForStageChannel, showReportModalForUser, showReportModalForWidget, showReportToModMessageModal, showStaffTestReportModalForGuild, showStaffTestReportModalForMessage, showStaffTestReportModalForUser, showUnauthenticatedReportModalForGuild, showUnauthenticatedReportModalForMessage, showUnauthenticatedReportModalForTida, showUnauthenticatedReportModalForUser, submitHamReportForFirstDM, submitReportForInappropriateConversationSafetyAlert
 
-// Module 8492 (ReportModals)
+// Module 8497 (ReportModals)
 import Constants from "Constants" /* 1072 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5004 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
-import MenuTypes from "MenuTypes" /* 8493 */;
-import showReportModal2 from "showReportModal" /* 8494 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8496 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5006 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5897 */;
+import MenuTypes from "MenuTypes" /* 8498 */;
+import showReportModal2 from "showReportModal" /* 8499 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8501 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StageInstanceStore from "StageInstanceStore" /* 4995 */;
-import MessageRecord from "MessageRecord" /* 5084 */;
+import StageInstanceStore from "StageInstanceStore" /* 4997 */;
+import MessageRecord from "MessageRecord" /* 5086 */;
 import UserRecord from "UserRecord" /* 1399 */;
 import size from "module_2" /* 2 */;
 
@@ -372,7 +372,7 @@ export function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
   obj = { report_type: MESSAGE };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "Object", channel_id: "Array" });
+  const merged = Object.assign({ message_id: "Path", channel_id: "count" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };

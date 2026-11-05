@@ -1,28 +1,28 @@
-// Module ID: 14111
-// Function ID: 14112
+// Module ID: 14124
+// Function ID: 14125
 // Name: SearchUtils
-// Dependencies: [32, 4990, 5071, 6870, 5012, 5083, 5044, 1385, 9976, 1072, 2171, 1113, 14112, 11, 14110, 12, 572, 5786, 5195, 14115, 2]
+// Dependencies: [32, 4992, 5073, 6873, 5014, 5085, 5046, 1385, 9982, 1072, 2171, 1113, 14125, 11, 14123, 12, 572, 5788, 5197, 14128, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchAnalyticsIds, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 14111 (SearchUtils)
+// Module 14124 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl11 from "intl" /* 1113 */;
 import _modDef2171 from "module_2171" /* 2171 */;
-import UserUtilsDefault from "UserUtils" /* 5195 */;
-import useChannelName from "useChannelName" /* 5786 */;
-import SearchConstants from "SearchConstants" /* 9976 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 14110 */;
-import SearchTokens from "SearchTokens" /* 14112 */;
-import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 14115 */;
+import UserUtilsDefault from "UserUtils" /* 5197 */;
+import useChannelName from "useChannelName" /* 5788 */;
+import SearchConstants from "SearchConstants" /* 9982 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 14123 */;
+import SearchTokens from "SearchTokens" /* 14125 */;
+import isGuildLikeSearchContext from "isGuildLikeSearchContext" /* 14128 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildChannelStore from "GuildChannelStore" /* 5071 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6870 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import RelationshipStore from "RelationshipStore" /* 5083 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildChannelStore from "GuildChannelStore" /* 5073 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6873 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import RelationshipStore from "RelationshipStore" /* 5085 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ let closure_16;
 let closure_17;
 let map1;
 let unpackModuleId;
-const f106081 = (arg0, arg1) => "\\" + arg1;
+const f106257 = (arg0, arg1) => "\\" + arg1;
 const SearchTabs = SearchConstants.SearchTabs;
 ({ SearchTypes: unpackModuleId, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: map1, IS_SEARCH_ANSWER_TOKEN: closure_14, IS_SEARCH_FILTER_TOKEN: closure_15, SearchModes: closure_16, ME, GuildFeatures: closure_17 } = Constants);
@@ -504,7 +504,7 @@ export function getAutocompleteMode(cursorScope, tokens) {
     if (currentToken.type === QueryTokenizerDefault.NON_TOKEN_TYPE) {
       if (null != previousToken) {
         let obj7;
-        const tmp10Result = tmp10(14112);
+        const tmp10Result = tmp10(14125);
         if (tmp10Result.isSearchFilterTokenType(previousToken.type)) {
           obj7 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
           const obj6 = { type: map1.FILTER, filter: previousToken.type, token: currentToken };
@@ -513,7 +513,7 @@ export function getAutocompleteMode(cursorScope, tokens) {
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(14110).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(14123).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj7 = { type: map1.FILTER_ALL, filter: null, token: tmp4 };
@@ -523,7 +523,7 @@ export function quoteChannelName(channelName) {
   let combined = channelName;
   if (null != channelName.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + channelName.replaceAll(/([\\"])/g, f106081) + "\"";
+    combined = "\"" + channelName.replaceAll(/([\\"])/g, f106257) + "\"";
   }
   return combined;
 }
@@ -544,7 +544,7 @@ export function getFlattenedAutocompleteResults(arg0, arg1) {
             let combined = str;
             if (null != text.text.match(/([\\" ])/g)) {
               const _HermesInternal = HermesInternal;
-              combined = "\"" + str.replaceAll(/([\\"])/g, f106081) + "\"";
+              combined = "\"" + str.replaceAll(/([\\"])/g, f106257) + "\"";
             }
             tmp = combined;
           }
@@ -675,7 +675,7 @@ export function getChannelDisplayName(isDM) {
   let combined = str;
   if (null != str.match(/([\\" ])/g)) {
     const _HermesInternal = HermesInternal;
-    combined = "\"" + str.replaceAll(/([\\"])/g, f106081) + "\"";
+    combined = "\"" + str.replaceAll(/([\\"])/g, f106257) + "\"";
   }
   let combined1 = combined;
   if (flag) {

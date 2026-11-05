@@ -1,24 +1,24 @@
-// Module ID: 10306
-// Function ID: 10307
+// Module ID: 10314
+// Function ID: 10315
 // Name: handleNSFWGuildInvite
-// Dependencies: [5008, 5012, 1072, 6872, 1377, 10307, 5827, 6873, 10308, 2]
+// Dependencies: [5010, 5014, 1072, 6875, 1377, 10315, 5829, 6876, 10316, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 10306 (handleNSFWGuildInvite)
+// Module 10314 (handleNSFWGuildInvite)
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import GuildRecord from "GuildRecord" /* 5008 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5827 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
-import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6873 */;
-import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10307 */;
-import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10308 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import GuildRecord from "GuildRecord" /* 5010 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5829 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6875 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6876 */;
+import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10315 */;
+import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10316 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const isGuildLurker = GuildRecord.isGuildLurker;
 const GuildNSFWContentLevel = Constants.GuildNSFWContentLevel;
-let closure_5 = AgeNoticeConstants.TINY_BRONCO_NSFW_SERVER_LOCATION;
+let closure_5 = AgeNoticeConstants.AGE_NOTICE_NSFW_SERVER_LOCATION;
 const items = [, ];
 ({ EXPLICIT: arr[0], AGE_RESTRICTED: arr[1] } = GuildNSFWContentLevel);
 const set = new Set(items);
@@ -84,7 +84,7 @@ export function handleNSFWGuildInvite(invite, arg1) {
       const tmp6Result4 = RegionalFeatureConfigUtils;
       if (tmp6Result4.hasAgeGatedFeatures()) {
         const tmp6Result5 = AgeNoticeExperiment;
-        if (tmp6Result5.isTinyBroncoEnabled(closure_5)) {
+        if (tmp6Result5.isAgeNoticeEnabled(closure_5)) {
           c2 = false;
           const obj2 = {
             onConfirm() {

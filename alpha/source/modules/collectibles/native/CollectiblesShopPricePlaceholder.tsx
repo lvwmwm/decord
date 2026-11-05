@@ -1,16 +1,16 @@
-// Module ID: 9715
-// Function ID: 9716
+// Module ID: 9721
+// Function ID: 9722
 // Name: CollectiblesShopPricePlaceholder
-// Dependencies: [19, 21, 5141, 575, 1652, 5378, 2]
+// Dependencies: [19, 21, 5143, 575, 1652, 5380, 2]
 // Exports: CollectiblesShopPricePlaceholder
 
-// Module 9715 (CollectiblesShopPricePlaceholder)
+// Module 9721 (CollectiblesShopPricePlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5378 */;
+import timing_timing from "timing/timing" /* 5380 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;

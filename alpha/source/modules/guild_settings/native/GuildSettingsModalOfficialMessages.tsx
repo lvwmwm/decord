@@ -1,31 +1,31 @@
-// Module ID: 20286
-// Function ID: 20287
+// Module ID: 20322
+// Function ID: 20323
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 7114, 5142, 5012, 9220, 5146, 1083, 21, 5141, 575, 1113, 17506, 11376, 17508, 1499, 504, 9219, 7139, 7698, 5382, 18621, 2123, 9125, 1652, 1705, 7116, 16698, 1090, 5761, 9359, 4963, 7581, 671, 1187, 17521, 2]
+// Dependencies: [32, 19, 17, 7117, 5144, 5014, 9227, 5148, 1083, 21, 5143, 575, 1113, 17532, 11384, 17534, 1499, 504, 9226, 7142, 7700, 5384, 18651, 2123, 9141, 9131, 1652, 1705, 7119, 16711, 1090, 5763, 9366, 4965, 7583, 671, 1187, 17547, 2]
 // Exports: default
 
-// Module 20286 (GuildSettingsModalOfficialMessages)
+// Module 20322 (GuildSettingsModalOfficialMessages)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1083 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import TableRowConstants from "TableRowConstants" /* 7114 */;
-import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7581 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7698 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17521 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import TableRowConstants from "TableRowConstants" /* 7117 */;
+import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 7583 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7700 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17547 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9220 */;
-import MessageConstants from "MessageConstants" /* 5146 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9227 */;
+import MessageConstants from "MessageConstants" /* 5148 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -132,27 +132,25 @@ let closure_20 = { code: "(function GuildSettingsModalOfficialMessagesTsx2(activ
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalOfficialMessages.tsx");
 
 export default function GuildSettingsModalOfficialMessages(guildId) {
-  let _undefined;
-  let c6;
   let guild;
   let intl;
   let intl2;
   let items10;
   let items11;
-  let obj6;
   let obj7;
+  let obj8;
+  let onLayout;
+  let ref;
   let submitting;
-  let tmp15;
+  let tmp19;
   let tmp20;
   let tmp21;
   let tmp22;
   let tmp23;
-  let tmp24;
   let tmp2Result6;
   guildId = guildId.guildId;
   submitting = undefined;
   let stateFromStores;
-  c6 = undefined;
   const tmp = closure_14();
   let tmp2 = guildId;
   let obj = guildId(submitting[16]);
@@ -236,16 +234,20 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(18621, dependencyMap.paths);
+    const tmp2 = asyncRequire(18651, dependencyMap.paths);
     intl = intl4.intl;
     openLazy(tmp2, "RoleColorPicker", obj);
   }, items5);
-  [tmp15, c6] = hasChanges(officialMessageColor.useState(0), 2);
-  hasChanges(officialMessageColor.useState(0), 2);
-  const callback1 = officialMessageColor.useCallback((nativeEvent) => {
-    _undefined(nativeEvent.nativeEvent.layout.width);
-  }, []);
-  const memo = officialMessageColor.useMemo(() => {
+  const tmp15 = navigation(submitting[24])();
+  const width = tmp15.width;
+  let num = 0;
+  ({ ref, onLayout } = tmp15);
+  const obj4 = officialMessageColor;
+  const tmp14 = navigation;
+  if (undefined !== width) {
+    num = width;
+  }
+  const memo = obj4.useMemo(() => {
     let intl;
     let intl2;
     let intl3;
@@ -260,57 +262,57 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
     items[2] = obj3;
     return items;
   }, []);
-  const tmp2Result4 = tmp2(submitting[24]);
-  const segmentedControlState = tmp2Result4.useSegmentedControlState({ items: memo, pageWidth: tmp15, defaultIndex: first });
+  const tmp2Result4 = tmp2(submitting[25]);
+  const segmentedControlState = tmp2Result4.useSegmentedControlState({ items: memo, pageWidth: num, defaultIndex: first });
   const activeIndex = segmentedControlState.activeIndex;
   const items6 = [closure_19, activeIndex];
   let c0;
-  [tmp20, tmp21] = items6;
-  const tmp2Result5 = tmp2(submitting[25]);
+  [tmp19, tmp20] = items6;
+  const tmp2Result5 = tmp2(submitting[26]);
   class GuildSettingsModalOfficialMessagesTsx1 {
     constructor() {
       return _undefined.get();
     }
   }
-  const items7 = [tmp21];
+  const items7 = [tmp20];
   GuildSettingsModalOfficialMessagesTsx1.__closure = items7;
   GuildSettingsModalOfficialMessagesTsx1.__workletHash = 403406940357;
-  GuildSettingsModalOfficialMessagesTsx1.__initData = tmp20;
+  GuildSettingsModalOfficialMessagesTsx1.__initData = tmp19;
   const items8 = [closure_20, , ];
   const useAnimatedReaction = tmp2Result5.useAnimatedReaction;
-  items8[1] = tmp2(submitting[26]).scheduleOnRN;
+  items8[1] = tmp2(submitting[27]).scheduleOnRN;
   items8[2] = tmp10;
   c0 = undefined;
   let c1;
-  [tmp22, tmp23, tmp24] = items8;
+  [tmp21, tmp22, tmp23] = items8;
   class GuildSettingsModalOfficialMessagesTsx2 {
     constructor(arg0) {
       _undefined(c1, Math.round(arg0));
     }
   }
-  const items9 = [tmp23, tmp24];
+  const items9 = [tmp22, tmp23];
   GuildSettingsModalOfficialMessagesTsx2.__closure = items9;
   GuildSettingsModalOfficialMessagesTsx2.__workletHash = 12682943328745;
-  GuildSettingsModalOfficialMessagesTsx2.__initData = tmp22;
+  GuildSettingsModalOfficialMessagesTsx2.__initData = tmp21;
   const animatedReaction = useAnimatedReaction(GuildSettingsModalOfficialMessagesTsx1, GuildSettingsModalOfficialMessagesTsx2);
   let obj3 = { bgBaseLow: closure_15(activeIndex), borderStrong: closure_16(activeIndex), textStrong: closure_17(activeIndex), textMuted: closure_18(activeIndex) };
-  const obj4 = { style: tmp.container, children: items10 };
-  const obj5 = { label: intl.string(tmp2(submitting[12]).t["2uQ6wZ"]), onPress: callback, arrow: true, trailing: closure_12(stateFromStores, obj6), subLabel: tmp2Result6.int2hex(officialMessageColor) };
-  const TableRow = tmp2(tmp3[27]).TableRow;
+  const obj5 = { style: tmp.container, children: items10 };
+  const obj6 = { label: intl.string(tmp2(submitting[12]).t["2uQ6wZ"]), onPress: callback, arrow: true, trailing: closure_12(stateFromStores, obj7), subLabel: tmp2Result6.int2hex(officialMessageColor) };
+  const TableRow = tmp2(tmp3[28]).TableRow;
   intl = tmp2(tmp3[12]).intl;
-  obj6 = { style: tmp.trailingColorContainer, children: closure_12(navigation(submitting[28]), obj7) };
-  obj7 = { color: officialMessageColor, style: tmp.colorBlock };
-  tmp2Result6 = tmp2(submitting[29]);
-  items10 = [closure_12(TableRow, obj5), ];
-  const obj8 = { style: tmp.chatSection, children: items11 };
-  const obj9 = { variant: "heading-sm/semibold", children: intl2.string(tmp2(submitting[12]).t.VI0jGW) };
-  const Text = tmp2(tmp3[30]).Text;
+  obj7 = { style: tmp.trailingColorContainer, children: closure_12(tmp14(submitting[29]), obj8) };
+  obj8 = { color: officialMessageColor, style: tmp.colorBlock };
+  tmp2Result6 = tmp2(submitting[30]);
+  items10 = [closure_12(TableRow, obj6), ];
+  const obj9 = { style: tmp.chatSection, children: items11 };
+  const obj10 = { variant: "heading-sm/semibold", children: intl2.string(tmp2(submitting[12]).t.VI0jGW) };
+  const Text = tmp2(tmp3[31]).Text;
   intl2 = tmp2(tmp3[12]).intl;
-  items11 = [closure_12(Text, obj9), , ];
-  const obj10 = { animatedStyles: obj3, selectedColor: officialMessageColor, theme: memo[first].id };
-  items11[1] = closure_12(MessagePreview, obj10);
-  const obj11 = { style: tmp.segmentedControlContainer, onLayout: callback1, children: closure_12(tmp2(submitting[31]).SegmentedControl, { variant: "experimental_Large", state: segmentedControlState }) };
-  items11[2] = closure_12(stateFromStores, obj11);
-  items10[1] = closure_13(stateFromStores, obj8);
-  return closure_13(stateFromStores, obj4);
+  items11 = [closure_12(Text, obj10), , ];
+  const obj11 = { animatedStyles: obj3, selectedColor: officialMessageColor, theme: memo[first].id };
+  items11[1] = closure_12(MessagePreview, obj11);
+  const obj12 = { style: tmp.segmentedControlContainer, ref, onLayout, children: closure_12(tmp2(submitting[32]).SegmentedControl, { variant: "experimental_Large", state: segmentedControlState }) };
+  items11[2] = closure_12(stateFromStores, obj12);
+  items10[1] = closure_13(stateFromStores, obj9);
+  return closure_13(stateFromStores, obj5);
 };

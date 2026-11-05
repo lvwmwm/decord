@@ -1,36 +1,29 @@
 // Module ID: 13122
 // Function ID: 13123
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13122 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
-let items;
 let obj2;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-const obj = {
-  name: "Parentheses",
+const Hash = tokenize.TYPE.Hash;
+let obj = {
+  name: "IdSelector",
   structure: obj2,
-  parse(call, arg1) {
-    const self = this;
+  parse() {
+    let scanner;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftParenthesis);
-    const callResult = call.call(self, arg1);
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
-    }
-    const element = { type: "Parentheses", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
-    return element;
+    this.eat(Hash);
+    const obj = { type: "IdSelector", loc: this.getLocation(tokenStart, this.scanner.tokenStart), name: scanner.substrToCursor(tokenStart + 1) };
+    scanner = this.scanner;
+    return obj;
   },
-  generate(arg0) {
-    this.chunk("(");
-    this.children(arg0);
-    this.chunk(")");
+  generate(name) {
+    this.chunk("#");
+    this.chunk(name.name);
   }
 };
-obj2 = { children: items };
-items = [[]];
+obj2 = { name: String };
 
 export default obj;

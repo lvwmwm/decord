@@ -1,16 +1,16 @@
-// Module ID: 15393
-// Function ID: 15394
+// Module ID: 15406
+// Function ID: 15407
 // Name: InAppReportsBreadCrumbs
-// Dependencies: [19, 17, 21, 5141, 575, 12, 5761, 8495, 1113, 2801, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 12, 5763, 8500, 1113, 2801, 2]
 // Exports: default
 
-// Module 15393 (InAppReportsBreadCrumbs)
+// Module 15406 (InAppReportsBreadCrumbs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
+import Text_Text from "Text/Text" /* 5763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

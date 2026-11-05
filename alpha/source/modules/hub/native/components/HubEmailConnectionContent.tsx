@@ -1,23 +1,23 @@
-// Module ID: 14553
-// Function ID: 14554
+// Module ID: 14566
+// Function ID: 14567
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 4990, 14541, 1072, 21, 5141, 575, 1499, 5743, 14554, 6581, 1113, 14549, 14555, 5761, 5382, 14559, 2123, 7222, 1187, 5768, 2]
+// Dependencies: [5, 32, 19, 17, 4992, 14554, 1072, 21, 5143, 575, 1499, 5745, 14567, 6584, 1113, 14562, 14568, 5763, 5384, 14572, 2123, 7225, 1187, 5770, 2]
 // Exports: default
 
-// Module 14553 (HubEmailConnectionContent)
+// Module 14566 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1499 */;
-import Text_Text from "Text/Text" /* 5761 */;
+import Text_Text from "Text/Text" /* 5763 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import HubConstants from "HubConstants" /* 14541 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import HubConstants from "HubConstants" /* 14554 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -241,7 +241,7 @@ export default function HubEmailConnectionContent(arg0) {
   [first1, _slicedToArray] = react.useState(false);
   [obj2, c5] = _slicedToArray(react.useState(null), 2);
   const tmp9 = _slicedToArray(react.useState(null), 2);
-  const insets = invite(5743)().insets;
+  const insets = invite(5745)().insets;
   const ref = react.useRef(null);
   const intl = intl8.intl;
   const stringResult = intl.string(intl8.t.H1jCHH);
@@ -269,15 +269,15 @@ export default function HubEmailConnectionContent(arg0) {
   let obj4 = { ref, contentContainerStyle: items, children: items2 };
   items = [tmp.scrollViewContainer, ];
   let obj5 = { paddingBottom: insets.bottom + tmp10(575).space.PX_16 };
-  const HubEmailConnectionScreen = tmp2(14549).HubEmailConnectionScreen;
+  const HubEmailConnectionScreen = tmp2(14562).HubEmailConnectionScreen;
   items[1] = obj5;
   let obj6 = { style: tmp.container, children: items1 };
-  let obj7 = { style: tmp.header, children: closure_12(tmp2(14555).InkQuillSpotIllustration, { scale: 0.75 }) };
+  let obj7 = { style: tmp.header, children: closure_12(tmp2(14568).InkQuillSpotIllustration, { scale: 0.75 }) };
   items1 = [closure_12(ref, obj7), , , ];
   let obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, accessibilityRole: "header", children: formatToPlainStringResult };
   items1[1] = closure_12(Text_Text.Text, obj8);
   let obj9 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl3.format(tmp2(1113).t["6kzaqs"], obj10) };
-  const Text = tmp2(5761).Text;
+  const Text = tmp2(5763).Text;
   intl3 = tmp2(1113).intl;
   obj10 = {
     onClick() {
@@ -316,19 +316,19 @@ export default function HubEmailConnectionContent(arg0) {
       }, 100);
     }
   };
-  const tmp10Result = invite(7222);
+  const tmp10Result = invite(7225);
   intl4 = tmp2(1113).intl;
   intl5 = tmp2(1113).intl;
   intl6 = tmp2(1113).intl;
   obj12 = { termsURL: MarketingURLs.TERMS, privacyURL: MarketingURLs.PRIVACY };
   anyErrorMessage = undefined;
-  const tmp19 = obj;
+  const tmp18 = obj;
   if (obj2 != null) {
     anyErrorMessage = obj2.getAnyErrorMessage();
   }
-  const obj13 = { children: closure_13(tmp19, obj4) };
+  const obj13 = { children: closure_13(tmp18, obj4) };
   items1[3] = closure_12(tmp10Result, obj11);
-  items2 = [tmp18(tmp20, obj6), , ];
+  items2 = [tmp17(tmp19, obj6), , ];
   const obj14 = { style: tmp.growSpacing };
   items2[1] = closure_12(ref, obj14);
   const obj15 = { style: tmp.buttonContainer, children: closure_12(Button, obj16) };
@@ -340,7 +340,7 @@ export default function HubEmailConnectionContent(arg0) {
     },
     loading: first1
   };
-  Button = tmp2(5768).Button;
+  Button = tmp2(5770).Button;
   intl7 = tmp2(1113).intl;
   items2[2] = closure_12(ref, obj15);
   return closure_12(HubEmailConnectionScreen, obj13);

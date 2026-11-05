@@ -1,15 +1,15 @@
-// Module ID: 11278
-// Function ID: 11279
+// Module ID: 11286
+// Function ID: 11287
 // Name: DebugUploadManager
-// Dependencies: [5, 4990, 3, 17, 6581, 6082, 11279, 7, 11280, 11281, 1363, 5329, 11282, 11283, 11284, 11285, 2]
+// Dependencies: [5, 4992, 3, 17, 6584, 6085, 11287, 7, 11288, 11289, 1363, 5331, 11290, 11291, 11292, 11293, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 11278 (DebugUploadManager)
+// Module 11286 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import size from "module_2" /* 2 */;
 
 let appFirstVisibleTimestamp, body, message;

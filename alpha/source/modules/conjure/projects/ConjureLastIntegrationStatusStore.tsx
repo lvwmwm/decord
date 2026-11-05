@@ -1,9 +1,9 @@
-// Module ID: 11055
-// Function ID: 11056
+// Module ID: 11061
+// Function ID: 11062
 // Name: ConjureLastIntegrationStatusStore
 // Dependencies: [504, 572, 2]
 
-// Module 11055 (ConjureLastIntegrationStatusStore)
+// Module 11061 (ConjureLastIntegrationStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

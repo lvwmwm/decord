@@ -1,12 +1,12 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17086
+// Function ID: 17087
 // Name: useUserIsTeenAgeGroup
-// Dependencies: [7855, 504, 2]
+// Dependencies: [7860, 504, 2]
 // Exports: default
 
-// Module 17062 (useUserIsTeenAgeGroup)
+// Module 17086 (useUserIsTeenAgeGroup)
 import get_initialized from "get initialized" /* 504 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7855 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7860 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/parent_tools/hooks/useUserIsTeenAgeGroup.tsx");

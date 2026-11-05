@@ -1,17 +1,17 @@
-// Module ID: 15444
-// Function ID: 15445
+// Module ID: 15457
+// Function ID: 15458
 // Name: ClipsExperiment
-// Dependencies: [5764, 8004, 2135, 1385, 1387, 5902, 504, 2176, 1377, 2]
+// Dependencies: [5766, 8009, 2135, 1385, 1387, 5905, 504, 2176, 1377, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useScreenshotKeybindEnabled
 
-// Module 15444 (ClipsExperiment)
+// Module 15457 (ClipsExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1377 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
-import Constants from "Constants" /* 5902 */;
-import DevSettingsStore from "DevSettingsStore" /* 5764 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8004 */;
+import Constants from "Constants" /* 5905 */;
+import DevSettingsStore from "DevSettingsStore" /* 5766 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8009 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,16 @@
-// Module ID: 18188
-// Function ID: 18189
+// Module ID: 18216
+// Function ID: 18217
 // Name: ParentalControlsDirectMessages
-// Dependencies: [7855, 8573, 16968, 16969, 11729, 1113, 2]
+// Dependencies: [7860, 8578, 16991, 16996, 16992, 11737, 1113, 2]
 
-// Module 18188 (ParentalControlsDirectMessages)
+// Module 18216 (ParentalControlsDirectMessages)
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8573 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16968 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16969 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7855 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
+import SettingsConstants from "SettingsConstants" /* 8578 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16991 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16992 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16996 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7860 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -30,14 +31,16 @@ let obj = {
   onValueChange: function onAllowDirectMessagesFromServerMembersValueChange(arg0) {
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
+      const showToastIfSaveFails = FamilyCenterSaveErrorUtils.showToastIfSaveFails;
+      FamilyCenterSaveErrorUtils;
       const ParentalControlledDefaultGuildsRestrictedV2 = ParentalControlledUserSettings.ParentalControlledDefaultGuildsRestrictedV2;
-      const result = ParentalControlledDefaultGuildsRestrictedV2.updateControlledSetting(selectedTeenId, !arg0);
+      showToastIfSaveFails(ParentalControlledDefaultGuildsRestrictedV2.updateControlledSetting(selectedTeenId, !arg0));
     }
   },
   unsearchable: true
 };
 const toggle = SettingBuilders.createToggle(obj);
-let result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/ParentalControlsDirectMessages.tsx");
 
 export default toggle;
 export const ParentalControlsDirectMessages = toggle;

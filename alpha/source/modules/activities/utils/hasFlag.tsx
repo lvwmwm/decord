@@ -1,10 +1,10 @@
-// Module ID: 7623
-// Function ID: 7624
+// Module ID: 7625
+// Function ID: 7626
 // Name: hasFlag
 // Dependencies: [1072, 1398, 2]
 // Exports: default
 
-// Module 7623 (hasFlag)
+// Module 7625 (hasFlag)
 import Constants from "Constants" /* 1072 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
 import size from "module_2" /* 2 */;

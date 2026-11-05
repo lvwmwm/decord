@@ -1,21 +1,21 @@
-// Module ID: 11219
-// Function ID: 11220
+// Module ID: 11227
+// Function ID: 11228
 // Name: MessageNotification
-// Dependencies: [19, 5142, 11204, 21, 5141, 11220, 504, 1187, 1113, 6573, 11253, 7964, 5150, 6879, 5890, 11254, 2123, 11263, 11267, 2]
+// Dependencies: [19, 5144, 11212, 21, 5143, 11228, 504, 1187, 1113, 6576, 11261, 7969, 5152, 6882, 5893, 11262, 2123, 11271, 11275, 2]
 
-// Module 11219 (MessageNotification)
+// Module 11227 (MessageNotification)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import transitionToChannel from "transitionToChannel" /* 5890 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
-import MessageParserDefault from "MessageParser" /* 7964 */;
-import MessagePreviewTextDefault from "MessagePreviewText" /* 11220 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5152 */;
+import transitionToChannel from "transitionToChannel" /* 5893 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
+import MessageParserDefault from "MessageParser" /* 7969 */;
+import MessagePreviewTextDefault from "MessagePreviewText" /* 11228 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11204 */;
-import createStyles from "createStyles" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11212 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -113,7 +113,7 @@ const memoResult = react.memo(function MessageNotification(notification) {
   const callback1 = guild.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { channelId: channel.id };
-    return obj.pushLazy(asyncRequire(11254, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
+    return obj.pushLazy(asyncRequire(11262, dependencyMap.paths), obj2, "in-app-notification-settings-modal");
   }, items3);
   const memo = guild.useMemo(() => ({ type: "message", channel, parentChannel, guild, author: nullableMessageAuthor, onDismiss: handleDismissNotification }), items4);
   const NotificationPressable = tmp11(tmp12[17]).NotificationPressable;

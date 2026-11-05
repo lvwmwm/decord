@@ -1,12 +1,12 @@
-// Module ID: 12751
-// Function ID: 12752
+// Module ID: 12758
+// Function ID: 12759
 // Name: getAppDMApplication
-// Dependencies: [2167, 7912, 1385, 2]
+// Dependencies: [2167, 7917, 1385, 2]
 // Exports: getAppDMApplication
 
-// Module 12751 (getAppDMApplication)
+// Module 12758 (getAppDMApplication)
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import UserProfileStore from "UserProfileStore" /* 7912 */;
+import UserProfileStore from "UserProfileStore" /* 7917 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

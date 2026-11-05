@@ -1,103 +1,39 @@
 // Module ID: 5257
 // Function ID: 5258
-// Dependencies: [32, 19, 5252]
-// Exports: useRiveTrigger
+// Dependencies: [32, 5240, 5253]
+// Exports: useRiveEnum
 
 // Module 5257
-import react2 from "react" /* 5252 */;
+import react from "react" /* 5240 */;
+import _mod5253 from "module_5253" /* 5253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ useCallback: c3, useEffect: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
+function getEnumProperty(enumProperty, arg1) {
+  return enumProperty.enumProperty(arg1);
+}
 
-export function useRiveTrigger(stateChange, instance, arg2) {
-  let first;
-  let items4;
-  let closure_0 = stateChange;
-  let closure_1 = instance;
-  let obj = arg2;
-  if (arg2 == null) {
-    obj = {};
-  }
-  const onTrigger = obj.onTrigger;
-  let tmp = hasOwnProperty(undefined);
-  let closure_2 = tmp;
-  const tmp2 = hasOwnProperty(false);
-  let c3 = tmp2;
-  const tmp3 = hasOwnProperty(onTrigger);
-  let closure_4 = tmp3;
-  tmp3.current = onTrigger;
-  const items = [instance, stateChange];
-  const obj2 = react2;
-  const disposableMemo = obj2.useDisposableMemo(() => {
-    if (closure_1) {
-      return closure_1.triggerProperty(closure_0);
-    }
-  }, (dispose) => {
-    let disposeResult;
-    if (dispose != null) {
-      disposeResult = dispose.dispose();
-    }
-    return disposeResult;
-  }, items, tmp);
-  if (tmp.current) {
-    tmp2.current = true;
-  }
-  [first, metroRequire] = metroRequire(null);
-  const items1 = [stateChange, instance];
-  React3(() => {
-    closure_6(null);
-  }, items1);
-  const items2 = [instance, disposableMemo, stateChange];
-  React3(function() {
-    const tmp = closure_1 && !disposableMemo;
-    if (tmp) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error = new Error("Property \"" + closure_0 + "\" not found in the ViewModel instance");
-      closure_6(error);
-    }
-  }, items2);
-  const items3 = [disposableMemo];
-  React3(() => {
-    if (disposableMemo) {
-      closure_0 = obj.addListener(() => {
-        const current = ref.current;
-        if (current != null) {
-          current();
-        }
-      });
-      return () => {
-        try {
-          closure_0();
-        } catch (err) {
-        }
-      };
-    }
-  }, items3);
-  const obj3 = {
-    trigger: _false(() => {
-      if (ref.current) {
-        const current = ref.current;
-        current.trigger();
-      } else {
-        const _console = console;
-        const _HermesInternal = HermesInternal;
-        if (ref2.current) {
-          warn(concat(closure_0, "') called after dispose. The property has been cleaned up \u2014 this is likely a stale closure from an async callback that fired after unmount."));
-        } else {
-          warn(concat(closure_0, "') called but the property is not available yet. The viewModelInstance may still be loading."));
-        }
+export function useRiveEnum(device, instance) {
+  let tmp3;
+  let tmp4;
+  let tmp5;
+  const obj = react;
+  const cResult = obj.c(4);
+  const obj2 = _mod5253;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(instance, device, getEnumProperty);
+  _slicedToArray(obj2.useRiveProperty(instance, device, getEnumProperty), 3);
+  if (cResult[0] === tmp5) {
+    if (cResult[1] === tmp4) {
+      let tmp6;
+      if (cResult[2] === tmp3) {
+        tmp6 = cResult[3];
       }
-    }, items4),
-    error: first
-  };
-  items4 = [stateChange];
-  return obj3;
+      return tmp6;
+    }
+  }
+  const obj3 = { value: tmp3, setValue: tmp4, error: tmp5 };
+  cResult[0] = tmp5;
+  cResult[1] = tmp4;
+  cResult[2] = tmp3;
+  cResult[3] = obj3;
+  tmp6 = obj3;
 }

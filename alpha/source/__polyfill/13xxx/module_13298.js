@@ -1,202 +1,91 @@
 // Module ID: 13298
 // Function ID: 13299
-// Dependencies: [41, 42, 13281]
-// Exports: rejectedSyncPromise, resolvedSyncPromise
+// Dependencies: []
+// Exports: getSpanStatusFromHttpCode, setHttpStatus
 
 // Module 13298
-import _mod13281 from "module_13281" /* 13281 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
 
-let c3;
-
-let obj = { PENDING: 0, RESOLVED: 1, REJECTED: 2 };
-obj[0] = "PENDING";
-obj[1] = "RESOLVED";
-obj[2] = "REJECTED";
-class SyncPromise {
-  constructor(fn) {
-    const self = this;
-    _classCallCheck(this, SyncPromise);
-    const __init = SyncPromise.prototype.__init;
-    __init.call(self);
-    const __init2 = tmp.prototype.__init2;
-    __init2.call(self);
-    const __init3 = tmp.prototype.__init3;
-    __init3.call(self);
-    const __init4 = tmp.prototype.__init4;
-    __init4.call(self);
-    self._state = obj.PENDING;
-    self._handlers = [];
-    try {
-      fn(self._resolve, self._reject);
-    } catch (tmp5) {
-      self._reject(tmp5);
+export const SPAN_STATUS_ERROR = 2;
+export const SPAN_STATUS_OK = 1;
+export const SPAN_STATUS_UNSET = 0;
+export function getSpanStatusFromHttpCode(arg0) {
+  if (arg0 < 400) {
+    if (arg0 >= 100) {
+      return { code: 1 };
     }
   }
+  if (arg0 >= 400) {
+    if (arg0 < 500) {
+      if (401 === arg0) {
+        return { code: 2, message: "unauthenticated" };
+      } else if (403 === arg0) {
+        return { code: 2, message: "permission_denied" };
+      } else if (404 === arg0) {
+        return { code: 2, message: "not_found" };
+      } else if (409 === arg0) {
+        return { code: 2, message: "already_exists" };
+      } else if (413 === arg0) {
+        return { code: 2, message: "failed_precondition" };
+      } else if (429 === arg0) {
+        return { code: 2, message: "resource_exhausted" };
+      } else {
+        return 499 === arg0 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
+      }
+    }
+  }
+  if (arg0 >= 500) {
+    if (arg0 < 600) {
+      if (501 === arg0) {
+        return { code: 2, message: "unimplemented" };
+      } else if (503 === arg0) {
+        return { code: 2, message: "unavailable" };
+      } else {
+        return 504 === arg0 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
+      }
+    }
+  }
+  return { code: 2, message: "unknown_error" };
 }
-const entry = {
-  key: "then",
-  value: function then(arg0, arg1) {
-    const self = this;
-    let closure_1 = arg0;
-    let closure_0 = arg1;
-    obj = Object.create(SyncPromise.prototype);
-    SyncPromise((arg0, arg1) => {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      const _handlers = self._handlers;
-      const items = [
-        false,
-        (arg0) => {
-          if (closure_1) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_0(arg0);
-          }
-        },
-        (arg0) => {
-          if (closure_0) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_1(arg0);
-          }
-        }
-      ];
-      _handlers.push(items);
-      self._executeHandlers();
-    });
-    return obj;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "catch",
-    value: function _catch(arg0) {
-      return this.then((result) => result, arg0);
+export function setHttpStatus(setAttribute, arg1) {
+  let obj;
+  const attr = setAttribute.setAttribute("http.response.status_code", arg1);
+  if (arg1 < 400) {
+    if (arg1 >= 100) {
+      obj = { code: 1 };
     }
-  },
-  {
-    key: "finally",
-    value: function _finally(arg0) {
-      const self = this;
-      let closure_0 = arg0;
-      obj = Object.create(SyncPromise.prototype);
-      SyncPromise((arg0, arg1) => {
-        let closure_1;
-        closure_0 = arg0;
-        const nextPromise = arg1.then((result) => {
-          c3 = false;
-          let closure_1_2 = result;
-          if (closure_0) {
-            tmp();
-          }
-        }, (arg0) => {
-          c3 = true;
-          let closure_1_2 = arg0;
-          if (closure_0) {
-            tmp();
-          }
-        });
-        return nextPromise.then(() => {
-          const tmp = c3;
-          if (tmp) {
-            closure_1(closure_1_2);
-          } else {
-            closure_0(closure_1_2);
-          }
-        });
-      });
-      return obj;
-    }
-  },
-  {
-    key: "__init",
-    value: function __init() {
-      const self = this;
-      this._resolve = (arg0) => {
-        self._setResult(obj.RESOLVED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init2",
-    value: function __init2() {
-      const self = this;
-      this._reject = (arg0) => {
-        self._setResult(obj.REJECTED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init3",
-    value: function __init3() {
-      const self = this;
-      this._setResult = (_state, _value) => {
-        if (self._state === self.PENDING) {
-          const obj2 = _mod13281;
-          if (obj2.isThenable(_value)) {
-            _value.then(self._resolve, self._reject);
-          } else {
-            self._state = _state;
-            self._value = _value;
-            self._executeHandlers();
-          }
-        }
-      };
-    }
-  },
-  {
-    key: "__init4",
-    value: function __init4() {
-      const self = this;
-      this._executeHandlers = () => {
-        let _state;
-        if (self._state !== obj.PENDING) {
-          const _handlers = tmp._handlers;
-          const substr = _handlers.slice();
-          self._handlers = [];
-          const item = substr.forEach((item) => {
-            if (!item[0]) {
-              const tmp2 = constants;
-              if (_state._state === constants.RESOLVED) {
-                item[1](_state._value);
-              }
-              if (_state._state === tmp2.REJECTED) {
-                item[2](_state._value);
-              }
-              item[0] = true;
-            }
-          });
-        }
-      };
+    if ("unknown_error" !== obj.message) {
+      setAttribute.setStatus(obj);
     }
   }
-];
-const _moduleResult = _createClass(SyncPromise, items);
-const SyncPromise_export = _moduleResult;
-
-export { SyncPromise_export as SyncPromise };
-export function rejectedSyncPromise(arg0) {
-  let closure_0 = arg0;
-  const tmp = new _moduleResult((arg0, fn) => {
-    fn(closure_0);
-  });
-  return tmp;
-}
-export function resolvedSyncPromise(arg0) {
-  let closure_0 = arg0;
-  const tmp = new _moduleResult((fn) => {
-    fn(closure_0);
-  });
-  return tmp;
+  if (arg1 >= 400) {
+    if (arg1 < 500) {
+      if (401 === arg1) {
+        obj = { code: 2, message: "unauthenticated" };
+      } else if (403 === arg1) {
+        obj = { code: 2, message: "permission_denied" };
+      } else if (404 === arg1) {
+        obj = { code: 2, message: "not_found" };
+      } else if (409 === arg1) {
+        obj = { code: 2, message: "already_exists" };
+      } else if (413 === arg1) {
+        obj = { code: 2, message: "failed_precondition" };
+      } else if (429 === arg1) {
+        obj = { code: 2, message: "resource_exhausted" };
+      } else {
+        obj = 499 === arg1 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
+      }
+    }
+  }
+  if (arg1 >= 500) {
+    if (arg1 < 600) {
+      if (501 === arg1) {
+        obj = { code: 2, message: "unimplemented" };
+      } else if (503 === arg1) {
+        obj = { code: 2, message: "unavailable" };
+      } else {
+        obj = 504 === arg1 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
+      }
+    }
+  }
+  obj = { code: 2, message: "unknown_error" };
 }

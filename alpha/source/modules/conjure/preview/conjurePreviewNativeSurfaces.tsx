@@ -1,13 +1,13 @@
-// Module ID: 11103
-// Function ID: 11104
+// Module ID: 11112
+// Function ID: 11113
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [6981, 1072, 11104, 11108, 11109, 9484, 2]
+// Dependencies: [6984, 1072, 11113, 11117, 11118, 9491, 2]
 // Exports: beginNativeSurfaceSessionForFrame, holdPreviewGameCaptureAnswers
 
-// Module 11103 (conjurePreviewNativeSurfaces)
+// Module 11112 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1072 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 9484 */;
-import FramesStore from "FramesStore" /* 6981 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 9491 */;
+import FramesStore from "FramesStore" /* 6984 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,7 +96,7 @@ function answerFor(cmd) {
                       return conjureDevicePermissionStatus;
                     })
           };
-          prop = tmp9(11108).CONJURE_DEVICE_PERMISSION_NAMES;
+          prop = tmp9(11117).CONJURE_DEVICE_PERMISSION_NAMES;
         }
         tmp8 = obj3;
       }
@@ -215,15 +215,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f99466 = (permission) => ({ permission, state: "denied" });
+    const f99632 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f99466) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f99466) });
+    obj = { result: { permissions: found.map(f99632) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f99632) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -244,8 +244,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "children", answered: 66330913196960510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "children", answered: 66330913196960510000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "id", answered: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000406775211 }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "id", answered: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000406775211 })
 };
 let closure_7 = {
   drain() {
@@ -281,8 +281,8 @@ export function beginNativeSurfaceSessionForFrame(iframeId, beneathBatches) {
       arr = closure_8;
     }
     let tmp7 = dependencyMap;
-    let setRpcCommandInterceptor = obj2(9484).setRpcCommandInterceptor;
-    obj2(9484);
+    let setRpcCommandInterceptor = obj2(9491).setRpcCommandInterceptor;
+    obj2(9491);
     if (arr.length > 0) {
       tmp10 = answerFor;
     } else {

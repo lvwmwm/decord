@@ -1,13 +1,13 @@
-// Module ID: 17469
-// Function ID: 17470
+// Module ID: 17495
+// Function ID: 17496
 // Name: GuildRoleSubscriptionTierTemplatesStore
-// Dependencies: [4994, 4990, 504, 572, 2]
+// Dependencies: [4996, 4992, 504, 572, 2]
 
-// Module 17469 (GuildRoleSubscriptionTierTemplatesStore)
+// Module 17495 (GuildRoleSubscriptionTierTemplatesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelRecord from "ChannelRecord" /* 4994 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelRecord from "ChannelRecord" /* 4996 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import size from "module_2" /* 2 */;
 
 let channels;

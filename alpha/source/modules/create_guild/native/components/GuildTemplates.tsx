@@ -1,26 +1,26 @@
-// Module ID: 14494
-// Function ID: 14495
+// Module ID: 14507
+// Function ID: 14508
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 14491, 7286, 1072, 21, 5141, 5722, 575, 5761, 1113, 1499, 1627, 5768, 14466, 1252, 14090, 14495, 7428, 7201, 2]
+// Dependencies: [32, 19, 17, 14504, 7289, 1072, 21, 5143, 5724, 575, 5763, 1113, 1499, 1627, 5770, 14479, 1252, 14103, 14508, 7431, 7204, 2]
 // Exports: default
 
-// Module 14494 (GuildTemplates)
+// Module 14507 (GuildTemplates)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import NavigatorConstants from "NavigatorConstants" /* 5722 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import ListSelectionItemDefault from "ListSelectionItem" /* 14090 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14466 */;
-import CreateGuildIcons from "CreateGuildIcons" /* 14495 */;
+import NavigatorConstants from "NavigatorConstants" /* 5724 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import ListSelectionItemDefault from "ListSelectionItem" /* 14103 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14479 */;
+import CreateGuildIcons from "CreateGuildIcons" /* 14508 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 14491 */;
-import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 7286 */;
+import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 14504 */;
+import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 7289 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -88,7 +88,7 @@ function GuildTemplatesJoinFooter(trigger) {
   items1 = [tmp.footerSafeAreaContainer, { paddingBottom: bottom }];
   obj3 = { style: tmp.footerContainer, children: items2 };
   let obj4 = { style: tmp.footerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1113).t["N+Mi/U"]) };
-  const Text = tmp2(5761).Text;
+  const Text = tmp2(5763).Text;
   intl3 = tmp2(1113).intl;
   items2 = [closure_14(Text, obj4), ];
   const obj5 = {
@@ -109,7 +109,7 @@ function GuildTemplatesJoinFooter(trigger) {
       closure_2.push(constants.JOIN_SERVER, {});
     }
   };
-  items2[1] = closure_14(tmp2(5768).Button, obj5);
+  items2[1] = closure_14(tmp2(5770).Button, obj5);
   return closure_14(closure_5, obj2);
 }
 function GuildTemplatesItem(guildTemplate) {

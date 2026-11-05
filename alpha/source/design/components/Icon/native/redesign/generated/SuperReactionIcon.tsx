@@ -1,14 +1,14 @@
-// Module ID: 10097
-// Function ID: 10098
+// Module ID: 10105
+// Function ID: 10106
 // Name: SuperReactionIcon
-// Dependencies: [19, 21, 575, 5850, 10098, 2]
+// Dependencies: [19, 21, 575, 5853, 10106, 2]
 // Exports: SuperReactionIcon
 
-// Module 10097 (SuperReactionIcon)
+// Module 10105 (SuperReactionIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 10098 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 10106 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

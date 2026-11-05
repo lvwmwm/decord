@@ -1,26 +1,26 @@
-// Module ID: 12062
-// Function ID: 12063
+// Module ID: 12071
+// Function ID: 12072
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5383, 4995, 1072, 21, 1113, 5141, 575, 5786, 504, 5729, 11093, 8315, 12052, 6893, 8095, 6864, 8085, 8081, 1187, 5761, 5769, 5768, 12054, 11380, 5377, 5163, 11400, 8744, 2]
+// Dependencies: [5, 32, 19, 17, 5385, 4997, 1072, 21, 1113, 5143, 575, 5788, 504, 5731, 11102, 8320, 12061, 6896, 8100, 6867, 8090, 8086, 1187, 5763, 5771, 5770, 12063, 11388, 5379, 5165, 11408, 8749, 2]
 // Exports: default
 
-// Module 12062 (GlobalStageChannelStatus)
+// Module 12071 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
-import useChannelNameDefault from "useChannelName" /* 5786 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8085 */;
-import PushNotificationDefault from "PushNotification" /* 11093 */;
-import StatusBarDefault from "StatusBar" /* 11400 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 12054 */;
+import useChannelNameDefault from "useChannelName" /* 5788 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8090 */;
+import PushNotificationDefault from "PushNotification" /* 11102 */;
+import StatusBarDefault from "StatusBar" /* 11408 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 12063 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 5383 */;
-import StageInstanceStore from "StageInstanceStore" /* 4995 */;
+import ActionSheetStore from "ActionSheetStore" /* 5385 */;
+import StageInstanceStore from "StageInstanceStore" /* 4997 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap, importDefault;
@@ -39,7 +39,7 @@ let obj8;
 let obj9;
 let tmp2;
 let unpackModuleId;
-const useMountEffectDefault = tmp2(5729);
+const useMountEffectDefault = tmp2(5731);
 class StageChannelRaiseHandAck {
   constructor(channel) {
     let BaseTextButton;
@@ -176,20 +176,20 @@ class StageChannelRaiseHandAck {
     [tmp10, c3] = _slicedToArray(react.useState(false), 2);
     const tmp9 = _slicedToArray(react.useState(false), 2);
     let id1;
-    const useStageBlockedUsersCount = channel(8315).useStageBlockedUsersCount;
-    const tmp11 = channel(8315);
+    const useStageBlockedUsersCount = channel(8320).useStageBlockedUsersCount;
+    const tmp11 = channel(8320);
     if (channel != null) {
       id1 = channel.id;
     }
     const stageBlockedUsersCount = useStageBlockedUsersCount(id1);
     let id2;
-    const useStageIgnoredUsersCount = tmp6(8315).useStageIgnoredUsersCount;
-    channel(8315);
+    const useStageIgnoredUsersCount = tmp6(8320).useStageIgnoredUsersCount;
+    channel(8320);
     if (channel != null) {
       id2 = channel.id;
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-    channel(12052);
+    channel(12061);
     if (channel != null) {
       let id = channel.id;
     }
@@ -247,7 +247,7 @@ class StageChannelRaiseHandAck {
         text: intl6.string(channel(1113).t["1YDv7a"]),
         grow: true
       };
-      BaseTextButton = tmp6(5769).BaseTextButton;
+      BaseTextButton = tmp6(5771).BaseTextButton;
       intl6 = tmp6(1113).intl;
       items4 = [tmp22(tmp21, obj12), ];
       const obj14 = { style: tmp.buttonWrapper, children: tmp22(Button, obj15) };
@@ -262,7 +262,7 @@ class StageChannelRaiseHandAck {
         disabled: tmp10,
         grow: true
       };
-      Button = tmp6(5768).Button;
+      Button = tmp6(5770).Button;
       intl7 = tmp6(1113).intl;
       items4[1] = tmp22(View, obj14);
       items3[2] = closure_11(View, obj11);
@@ -310,7 +310,7 @@ export default function GlobalStageChannelStatus(arg0) {
     stringResult = intl.string(id(1113).t["/YzI63"]);
   }
   const tmp7 = useIsInvitedToSpeakDefault();
-  let invitedHeaderText = tmp3(11380)(id);
+  let invitedHeaderText = tmp3(11388)(id);
   const items = [StageInstanceStore];
   const items1 = [id];
   const obj = id(504);
@@ -324,7 +324,7 @@ export default function GlobalStageChannelStatus(arg0) {
     let str;
     if (!tmp7) {
       str = "dark-content";
-      id(5163);
+      id(5165);
     }
     if (null != channel) {
       if (null != guild) {
@@ -348,7 +348,7 @@ export default function GlobalStageChannelStatus(arg0) {
           items2 = [closure_10(StatusBarDefault, obj4), , ];
           const obj5 = { style: activeSpeakerIcon, size: id(1187).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result2.getChannelIconWithGuild(channel, guild) };
           const Icon = tmp8(1187).Icon;
-          tmp8Result2 = id(8744);
+          tmp8Result2 = id(8749);
           items2[1] = closure_10(Icon, obj5);
           let tmp13Result = "" !== str2;
           const LegacyText = tmp8(1187).LegacyText;

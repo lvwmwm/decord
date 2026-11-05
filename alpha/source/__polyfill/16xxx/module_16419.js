@@ -1,55 +1,17 @@
 // Module ID: 16419
 // Function ID: 16420
-// Dependencies: [16378, 16420, 16424]
+// Dependencies: [16394]
 
 // Module 16419
-import _mod16378 from "module_16378" /* 16378 */;
-import _mod16420 from "module_16420" /* 16420 */;
+import _mod16394 from "module_16394" /* 16394 */;
 
-let tmp;
-const _mod16424 = tmp(16424);
-const f110465 = (arg0, arg1, arg2) => {
-  const tmp3 = _mod16378(arg0);
-  const tmp4 = _mod16420(tmp3);
-  if (0 === tmp4) {
-    return !c0 && -1;
-  } else {
-    let sum = _mod16424(arg2, tmp4);
-    const tmp16 = c0;
-    if (tmp16) {
-      if (arg1 != arg1) {
-        if (tmp4 > sum) {
-          while (tmp3[+sum] == tmp3[+sum]) {
-            sum = tmp7 + 1;
-          }
-          return true;
-        }
-      }
-      return !c0 && -1;
-    }
-    let sum1 = sum;
-    if (tmp4 > sum) {
-      let num;
-      while (true) {
-        num = c0;
-        if (c0) {
-          if (tmp3[sum1] === arg1) {
-            break;
-          }
-        }
-        sum1 = sum1 + 1;
-      }
-      if (!num) {
-        num = sum1;
-      }
-      if (!num) {
-        num = 0;
-      }
-      return num;
-    }
-  }
-};
-let c0 = false;
-const obj = { includes: f110465, indexOf: f110465 };
+let fn;
+if (_mod16394) {
+  fn = call.bind(call);
+} else {
+  fn = function() {
+    return call(...arguments);
+  };
+}
 
-export default obj;
+export default fn;

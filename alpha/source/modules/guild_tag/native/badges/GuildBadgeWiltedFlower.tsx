@@ -1,12 +1,12 @@
-// Module ID: 16025
-// Function ID: 16026
+// Module ID: 16037
+// Function ID: 16038
 // Name: GuildBadgeWiltedFlower
-// Dependencies: [19, 21, 15989, 8171, 2]
+// Dependencies: [19, 21, 16001, 8176, 2]
 // Exports: GuildBadgeWiltedFlower
 
-// Module 16025 (GuildBadgeWiltedFlower)
-import inlineStyles from "inlineStyles" /* 8171 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15989 */;
+// Module 16037 (GuildBadgeWiltedFlower)
+import inlineStyles from "inlineStyles" /* 8176 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16001 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ export function GuildBadgeWiltedFlower(width) {
   const obj6 = { d: "M14 10v-1h1v2H12v-1h2ZM11 6h-1v2h-1v1h-1v-2h1V4h1v-1h1v3ZM13 4h1v5h-2v-1h-1v-2h1V3h1v1Z", fill: primaryColorsTransformed[2] };
   items[4] = React2(inlineStyles.Path, obj6);
   let first;
-  const Path2 = tmp2(8171).Path;
+  const Path2 = tmp2(8176).Path;
   if (secondaryColorsTransformed != null) {
     first = secondaryColorsTransformed[0];
   }

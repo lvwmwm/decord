@@ -1,22 +1,22 @@
-// Module ID: 19864
-// Function ID: 19865
+// Module ID: 19898
+// Function ID: 19899
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 14192, 1072, 21, 5141, 575, 1252, 14193, 5382, 5396, 5851, 19865, 5761, 1113, 6902, 5768, 2]
+// Dependencies: [19, 17, 14205, 1072, 21, 5143, 575, 1252, 14206, 5384, 5398, 5854, 19899, 5763, 1113, 6905, 5770, 2]
 // Exports: default
 
-// Module 19864 (NotificationReactivationActionSheet)
+// Module 19898 (NotificationReactivationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14192 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14193 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19865 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14205 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14206 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19899 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -68,26 +68,26 @@ export default function NotificationReactivationActionSheet(location) {
   }, items1);
   let obj = { children: closure_8(View, obj2) };
   obj2 = { style: tmp.container, children: items2 };
-  const BottomSheet = _location(5396).BottomSheet;
+  const BottomSheet = _location(5398).BottomSheet;
   let obj3 = { style: tmp.image, source: AssetRegistryDefault, resizeMode: "contain" };
   const tmp4 = FastImageDefault;
   items2 = [closure_7(tmp4, obj3), , , ];
   const obj4 = { style: tmp.title, variant: "heading-xl/semibold", accessibilityRole: "header", children: intl.string(_location(1113).t.a4bgO0) };
-  const Text = _location(5761).Text;
+  const Text = _location(5763).Text;
   intl = _location(1113).intl;
   items2[1] = closure_7(Text, obj4);
   const obj5 = { style: tmp.subtitle, variant: "body-sm/medium", color: "text-default", children: intl2.string(_location(1113).t["rW5gw/"]) };
-  const Text2 = _location(5761).Text;
+  const Text2 = _location(5763).Text;
   intl2 = _location(1113).intl;
   items2[2] = closure_7(Text2, obj5);
   const obj6 = { style: tmp.buttons, children: items3 };
-  const ButtonGroup = _location(6902).ButtonGroup;
+  const ButtonGroup = _location(6905).ButtonGroup;
   const obj7 = { text: intl3.string(_location(1113).t.a4bgO0), onPress: callback };
-  const Button = _location(5768).Button;
+  const Button = _location(5770).Button;
   intl3 = _location(1113).intl;
   items3 = [closure_7(Button, obj7), ];
   const obj8 = { text: intl4.string(_location(1113).t["/L3kom"]), onPress: callback1, variant: "secondary" };
-  const Button2 = _location(5768).Button;
+  const Button2 = _location(5770).Button;
   intl4 = _location(1113).intl;
   items3[1] = closure_7(Button2, obj8);
   items2[3] = closure_8(ButtonGroup, obj6);

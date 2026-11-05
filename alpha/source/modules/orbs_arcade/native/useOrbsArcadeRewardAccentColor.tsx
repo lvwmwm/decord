@@ -1,14 +1,14 @@
-// Module ID: 17287
-// Function ID: 17288
+// Module ID: 17323
+// Function ID: 17324
 // Name: useOrbsArcadeRewardAccentColor
-// Dependencies: [32, 17271, 11575, 14709, 671, 2]
+// Dependencies: [32, 17295, 11583, 14722, 671, 2]
 // Exports: default
 
-// Module 17287 (useOrbsArcadeRewardAccentColor)
+// Module 17323 (useOrbsArcadeRewardAccentColor)
 import _modDef671 from "module_671" /* 671 */;
-import useFetchCollectiblesProduct2 from "useFetchCollectiblesProduct" /* 11575 */;
-import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 14709 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17271 */;
+import useFetchCollectiblesProduct2 from "useFetchCollectiblesProduct" /* 11583 */;
+import useCollectiblesShopStylesDefault from "useCollectiblesShopStyles" /* 14722 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

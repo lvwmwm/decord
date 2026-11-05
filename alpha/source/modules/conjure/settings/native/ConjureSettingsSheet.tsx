@@ -1,24 +1,25 @@
-// Module ID: 12325
-// Function ID: 12326
+// Module ID: 12332
+// Function ID: 12333
 // Name: ConjureSettingsSheet
-// Dependencies: [5, 32, 19, 17, 11028, 11043, 6979, 21, 3995, 5141, 575, 504, 12326, 12336, 12359, 7502, 1113, 7457, 7503, 6162, 12361, 12364, 12366, 5761, 7095, 5768, 9125, 12372, 9359, 2]
+// Dependencies: [5, 32, 19, 17, 11034, 11049, 6982, 21, 3995, 5143, 575, 504, 12333, 12343, 12366, 7504, 1113, 7460, 7505, 6165, 12368, 12371, 12373, 5763, 7098, 5770, 9141, 9131, 12379, 9366, 2]
 // Exports: default
 
-// Module 12325 (ConjureSettingsSheet)
+// Module 12332 (ConjureSettingsSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3995 from "module_3995" /* 3995 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 11043 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6979 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 11049 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6982 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
-let c3, closure_3, dependencyMap;
+const require = globalThis.__r;
+let c2, c3, closure_3;
 
 let c10;
 let c9;
@@ -26,31 +27,33 @@ let closure_12;
 let map1;
 let obj3;
 function SettingsTabStrip(tabs) {
-  let _undefined;
-  let c2;
+  let onLayout;
+  let ref;
   let selected;
-  let tmp11Result;
-  let tmp2;
+  let tmp9Result;
   tabs = tabs.tabs;
   ({ selected, onSelect: importDefault } = tabs);
-  dependencyMap = undefined;
+  let index;
   let setActiveIndex;
-  const tmp = setActiveIndex(react.useState(0), 2);
-  [tmp2, c2] = tmp;
+  const tmp = index;
+  const tmp2 = require("useMeasuredLayout")();
+  const width = tmp2.width;
+  let num = 0;
+  ({ ref, onLayout } = tmp2);
+  if (undefined !== width) {
+    num = width;
+  }
   const items = [tabs];
-  const callback = react.useCallback((nativeEvent) => {
-    _undefined(nativeEvent.nativeEvent.layout.width);
-  }, []);
   const memo = react.useMemo(() => tabs.map((id) => {
     let intl;
     obj = { id, label: intl.string(closure_1_14[id]), page: null };
-    intl = tabs(_undefined[16]).intl;
+    intl = tabs(index[16]).intl;
     return obj;
   }), items);
-  const tmp7 = tabs(9125);
+  const tmp5 = tabs(tmp[27]);
   obj = {
     items: memo,
-    pageWidth: tmp2,
+    pageWidth: num,
     defaultIndex: Math.max(0, tabs.indexOf(selected)),
     onSetActiveIndex(arg0) {
       if (null != tabs[arg0]) {
@@ -58,9 +61,9 @@ function SettingsTabStrip(tabs) {
       }
     }
   };
-  const useSegmentedControlState = tmp7.useSegmentedControlState;
+  const useSegmentedControlState = tmp5.useSegmentedControlState;
   const segmentedControlState = useSegmentedControlState(obj);
-  const index = tabs.indexOf(selected);
+  index = tabs.indexOf(selected);
   setActiveIndex = segmentedControlState.setActiveIndex;
   const items1 = [index, setActiveIndex];
   const effect = react.useEffect(() => {
@@ -68,16 +71,16 @@ function SettingsTabStrip(tabs) {
       setActiveIndex(tmp, false);
     }
   }, items1);
-  const obj2 = { onLayout: callback, children: tmp11Result };
-  const tmp12 = View;
+  const obj2 = { ref, onLayout, children: tmp9Result };
+  const tmp10 = View;
   if (tabs.length > 3) {
     const obj3 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(12372).Tabs, obj3);
+    tmp9Result = tmp9(tmp4(tmp[28]).Tabs, obj3);
   } else {
     const obj4 = { state: segmentedControlState };
-    tmp11Result = tmp11(tmp5(9359).SegmentedControl, obj4);
+    tmp9Result = tmp9(tmp4(tmp[29]).SegmentedControl, obj4);
   }
-  return closure_12(tmp12, obj2);
+  return closure_12(tmp10, obj2);
 }
 let _asyncToGenerator = _asyncToGenerator_mod;
 let _slicedToArray = _slicedToArray_mod;

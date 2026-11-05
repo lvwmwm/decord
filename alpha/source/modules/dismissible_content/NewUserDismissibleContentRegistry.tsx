@@ -1,15 +1,15 @@
-// Module ID: 5193
-// Function ID: 5194
+// Module ID: 5195
+// Function ID: 5196
 // Name: NewUserDismissibleContentRegistry
-// Dependencies: [502, 4977, 4974, 5194, 563, 11, 2]
+// Dependencies: [502, 4979, 4976, 5196, 563, 11, 2]
 // Exports: disableNewUserDismissibleContent, isUserAccountOldEnough, useNewUserDismissibleContent
 
-// Module 5193 (NewUserDismissibleContentRegistry)
+// Module 5195 (NewUserDismissibleContentRegistry)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 5194 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 5196 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4977 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4979 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,14 +52,14 @@ export function useNewUserDismissibleContent(arr) {
   }
   return found;
 }
-export function disableNewUserDismissibleContent(prop) {
+export function disableNewUserDismissibleContent(content) {
   let tmp = !DismissibleContentFrameworkStore.newUserMinAgeRequiredOverridden;
   if (tmp) {
     const id = AuthenticationStore.getId();
     DcfNewUserCooldownExperiment;
     let tmp9 = null != id;
     if (tmp9) {
-      let tmp14 = closure_5[prop];
+      let tmp14 = closure_5[content];
       const obj = SnowflakeUtilsDefault;
       const ageResult = obj.age(id);
       if (tmp14 == null) {

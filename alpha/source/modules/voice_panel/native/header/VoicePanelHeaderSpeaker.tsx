@@ -1,27 +1,27 @@
-// Module ID: 19508
-// Function ID: 19509
+// Module ID: 19543
+// Function ID: 19544
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 19509, 5899, 5918, 19510, 4990, 5900, 1072, 21, 19511, 19482, 9366, 12135, 12057, 563, 14954, 12173, 19515, 1377, 9373, 5919, 1113, 9370, 9372, 19516, 14953, 5171, 4974, 7101, 19426, 16069, 2]
+// Dependencies: [109, 19, 17, 19544, 5902, 5921, 19545, 4992, 5903, 1072, 21, 19546, 19513, 9373, 12144, 12066, 563, 14967, 12182, 19550, 1377, 9380, 5922, 1113, 9377, 9379, 19551, 14966, 5173, 4976, 7104, 19457, 16082, 2]
 
-// Module 19508 (VoicePanelHeaderSpeaker)
+// Module 19543 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import NativeViewDefault from "NativeView" /* 7101 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 14954 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19426 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19509 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19511 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5173 */;
+import NativeViewDefault from "NativeView" /* 7104 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 14967 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19457 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19544 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19546 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 5899 */;
-import AudioRouteStore from "AudioRouteStore" /* 5918 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19510 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import SessionsStore from "SessionsStore" /* 5900 */;
+import GameConsoleStore from "GameConsoleStore" /* 5902 */;
+import AudioRouteStore from "AudioRouteStore" /* 5921 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19545 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import SessionsStore from "SessionsStore" /* 5903 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let closure_14;
 let closure_15;
 let closure_16;
 let tmp;
-const showAudioOutputSelector = tmp(9373);
+const showAudioOutputSelector = tmp(9380);
 let closure_3 = ["ref"];
 let react = react_mod;
 const NativeModules = react_native.NativeModules;

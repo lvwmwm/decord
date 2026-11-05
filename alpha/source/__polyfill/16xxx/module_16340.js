@@ -1,54 +1,23 @@
 // Module ID: 16340
 // Function ID: 16341
-// Dependencies: [16341, 16342, 16344, 1159, 16346, 16345]
-// Exports: getCanonicalLocales
+// Dependencies: [16330, 16333]
+// Exports: LookupSupportedLocales
 
 // Module 16340
-import emitUnicodeLanguageId from "emitUnicodeLanguageId" /* 16341 */;
-import canonicalizeUnicodeLanguageId from "canonicalizeUnicodeLanguageId" /* 16342 */;
-import likelySubtags from "likelySubtags" /* 16345 */;
-import _mod16346 from "module_16346" /* 16346 */;
-import module_1159_mod from "module_1159" /* 1159 */;
+import _mod16330 from "module_16330" /* 16330 */;
+import BestAvailableLocale from "BestAvailableLocale" /* 16333 */;
 
-const require = globalThis.__r;
 
-let module_1159 = module_1159_mod;
-module_1159.__exportStar(emitUnicodeLanguageId, exports);
-module_1159 = module_1159_mod;
-module_1159.__exportStar(_mod16346, exports);
-module_1159 = module_1159_mod;
-module_1159.__exportStar(likelySubtags, exports);
-
-export function getCanonicalLocales(items) {
-  if (undefined === items) {
-    items = [];
-  } else {
-    let arr3 = items;
-    if (typeof items === "string") {
-      const items1 = [items];
-      arr3 = items1;
-    }
-    const items2 = [];
-    let num3 = 0;
-    items = items2;
-    if (0 < arr3.length) {
-      do {
-        let tmp = arr3[num3];
-        let emitUnicodeLocaleId = emitUnicodeLanguageId.emitUnicodeLocaleId;
-        let emitUnicodeLocaleIdResult = emitUnicodeLocaleId(canonicalizeUnicodeLanguageId.CanonicalizeUnicodeLocaleId(require("SEPARATOR").parseUnicodeLocaleId(tmp)));
-        if (items2.indexOf(emitUnicodeLocaleIdResult) < 0) {
-          let arr = items2.push(emitUnicodeLocaleIdResult);
-        }
-        num3 = num3 + 1;
-        items = items2;
-      } while (num3 < arr3.length);
+export function LookupSupportedLocales(arg0, arg1) {
+  let num;
+  const items = [];
+  for (let num = 0; num < arg1.length; num = num + 1) {
+    let str = arg1[num];
+    let replaced = str.replace(_mod16330.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
+    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
+    if (BestAvailableLocaleResult) {
+      let arr = items.push(BestAvailableLocaleResult);
     }
   }
   return items;
 }
-export const isStructurallyValidLanguageTag = require("SEPARATOR").isStructurallyValidLanguageTag;
-export const isUnicodeLanguageSubtag = require("SEPARATOR").isUnicodeLanguageSubtag;
-export const isUnicodeRegionSubtag = require("SEPARATOR").isUnicodeRegionSubtag;
-export const isUnicodeScriptSubtag = require("SEPARATOR").isUnicodeScriptSubtag;
-export const parseUnicodeLanguageId = require("SEPARATOR").parseUnicodeLanguageId;
-export const parseUnicodeLocaleId = require("SEPARATOR").parseUnicodeLocaleId;

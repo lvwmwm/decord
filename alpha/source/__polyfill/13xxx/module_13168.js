@@ -1,15 +1,9 @@
 // Module ID: 13168
 // Function ID: 13169
-// Dependencies: []
+// Dependencies: [13169]
 
 // Module 13168
-const obj = {
-  trueFunc() {
-    return true;
-  },
-  falseFunc() {
-    return false;
-  }
-};
+import _mod13169 from "module_13169" /* 13169 */;
 
-export default obj;
+
+export default _mod13169;

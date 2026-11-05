@@ -1,18 +1,18 @@
-// Module ID: 14888
-// Function ID: 14889
+// Module ID: 14901
+// Function ID: 14902
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 575, 5141, 1113, 5761, 2]
+// Dependencies: [32, 19, 17, 21, 575, 5143, 1113, 5763, 2]
 // Exports: default
 
-// Module 14888 (AppStoreOverlayAboutSection)
+// Module 14901 (AppStoreOverlayAboutSection)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5761 */;
+import Text_Text from "Text/Text" /* 5763 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -70,10 +70,10 @@ export default function AppStoreOverlayAboutSection(onSeeMorePress) {
   const stringResult = string(tmp3 ? t["6MwJo/"] : t.lBeKY2);
   const obj = { style: tmp.aboutSection, children: items2 };
   const obj2 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t.CI0vSJ) };
-  const Text = tmp8(5761).Text;
+  const Text = tmp8(5763).Text;
   intl2 = tmp8(1113).intl;
   items2 = [metroRequire(Text, obj2), , ];
-  const Text2 = tmp8(5761).Text;
+  const Text2 = tmp8(5763).Text;
   const tmp11 = metroImportDefault;
   const tmp12 = hasOwnProperty;
   items2[1] = metroRequire(Text2, { variant: "body-sm/medium", color: "text-default", lineClamp: num, onTextLayout: callback, children: description });

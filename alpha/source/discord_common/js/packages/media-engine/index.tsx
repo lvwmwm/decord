@@ -1,15 +1,15 @@
-// Module ID: 5923
-// Function ID: 5924
+// Module ID: 5926
+// Function ID: 5927
 // Name: BaseConnectionEvent
-// Dependencies: [5902, 5924, 5996, 2, 5936, 5932]
+// Dependencies: [5905, 5927, 5999, 2, 5939, 5935]
 // Exports: determineMediaEngine, initializeMediaEngine
 
-// Module 5923 (BaseConnectionEvent)
-import MediaEngineNative from "MediaEngineNative" /* 5924 */;
-import MediaEngineEvent from "MediaEngineEvent" /* 5932 */;
-import BaseConnection from "BaseConnection" /* 5936 */;
-import MediaEngineDummy from "MediaEngineDummy" /* 5996 */;
-import Constants from "Constants" /* 5902 */;
+// Module 5926 (BaseConnectionEvent)
+import MediaEngineNative from "MediaEngineNative" /* 5927 */;
+import MediaEngineEvent from "MediaEngineEvent" /* 5935 */;
+import BaseConnection from "BaseConnection" /* 5939 */;
+import MediaEngineDummy from "MediaEngineDummy" /* 5999 */;
+import Constants from "Constants" /* 5905 */;
 import size from "module_2" /* 2 */;
 
 const MediaEngineImplementations = Constants.MediaEngineImplementations;

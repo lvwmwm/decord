@@ -3,25 +3,23 @@
 // Dependencies: []
 
 // Module 13128
-let items;
 let obj2;
-const obj = {
-  name: "Selector",
+let obj = {
+  name: "Operator",
   structure: obj2,
   parse() {
-    const self = this;
-    const sequence = this.readSequence(this.scope.Selector);
-    if (null === this.getFirstListNode(sequence)) {
-      self.error("Selector is expected");
-    }
-    const element = { type: "Selector", loc: self.getLocationFromList(sequence), children: sequence };
-    return element;
+    let scanner;
+    const tokenStart = this.scanner.tokenStart;
+    const iter = this.scanner;
+    iter.next();
+    const obj = { type: "Operator", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: scanner.substrToCursor(tokenStart) };
+    scanner = this.scanner;
+    return obj;
   },
-  generate(arg0) {
-    this.children(arg0);
+  generate(value) {
+    this.chunk(value.value);
   }
 };
-obj2 = { children: items };
-items = [["TypeSelector", "IdSelector", "ClassSelector", "AttributeSelector", "PseudoClassSelector", "PseudoElementSelector", "Combinator", "WhiteSpace"]];
+obj2 = { value: String };
 
 export default obj;

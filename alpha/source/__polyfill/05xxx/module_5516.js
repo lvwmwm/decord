@@ -1,115 +1,25 @@
 // Module ID: 5516
 // Function ID: 5517
-// Dependencies: [19, 5450, 5432, 5517, 5499, 5474, 5459, 5431]
-// Exports: useGesture
+// Dependencies: [5517, 5524, 5525, 5526, 5527, 5528, 5529, 5530, 5531]
 
 // Module 5516
-import handlerIDToTag from "handlerIDToTag" /* 5431 */;
-import selectProperties from "selectProperties" /* 5459 */;
-import NativeProxy2 from "NativeProxy" /* 5474 */;
-import _mod5499 from "module_5499" /* 5499 */;
-import react from "react" /* 19 */;
+import _mod5517 from "module_5517" /* 5517 */;
+import _mod5524 from "module_5524" /* 5524 */;
+import _mod5525 from "module_5525" /* 5525 */;
+import _mod5526 from "module_5526" /* 5526 */;
+import _mod5527 from "module_5527" /* 5527 */;
+import _mod5528 from "module_5528" /* 5528 */;
+import _mod5529 from "module_5529" /* 5529 */;
+import _mod5530 from "module_5530" /* 5530 */;
+import _mod5531 from "module_5531" /* 5531 */;
 
-const require = globalThis.__r;
-let _require, c0, dependencyMap;
 
-let c2;
-let c3;
-({ useEffect: c2, useMemo: c3 } = react);
-
-export function useGesture(Fling, clonedAndRemappedConfig) {
-  let config;
-  let jsEventHandler;
-  let type;
-  _require = Fling;
-  dependencyMap = clonedAndRemappedConfig;
-  let tmp = jsEventHandler;
-  const tmp2 = jsEventHandler(() => {
-    const obj = type(config[1]);
-    return obj.getNextHandlerTag();
-  }, []);
-  const handlerTag = tmp2;
-  if (clonedAndRemappedConfig.disableReanimated !== jsEventHandler(() => config.disableReanimated, [])) {
-    const _Error2 = Error;
-    let obj2 = require("tagMessage");
-    const self3 = this;
-    const self4 = this;
-    const error = new Error(obj2.tagMessage("The \"disableReanimated\" property must not be changed after the handler is created."));
-    throw error;
-  } else {
-    let obj3 = require("module_5517");
-    const gestureCallbacks = obj3.useGestureCallbacks(tmp2, clonedAndRemappedConfig);
-    jsEventHandler = gestureCallbacks.jsEventHandler;
-    const reanimatedEventHandler = gestureCallbacks.reanimatedEventHandler;
-    const animatedEventHandler = gestureCallbacks.animatedEventHandler;
-    const tmp16 = _require;
-    if (clonedAndRemappedConfig.shouldUseReanimatedDetector) {
-      if (!reanimatedEventHandler) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const tmp16Result = tmp16(5432);
-        const error1 = new Error(tmp16Result.tagMessage("Failed to create reanimated event handlers."));
-        throw error1;
-      }
-    }
-    const items = [tmp2, , , ];
-    ({ simultaneousWith: arr[1], requireToFail: arr[2], block: arr[3] } = clonedAndRemappedConfig);
-    const tmpResult = tmp(() => {
-      const obj = _mod5499;
-      const obj2 = { simultaneousWith: config.simultaneousWith, requireToFail: config.requireToFail, block: config.block };
-      return obj.prepareRelations(obj2, handlerTag);
-    }, items);
-    const gestureRelations = tmpResult;
-    const items1 = [tmp2, Fling, clonedAndRemappedConfig, jsEventHandler, reanimatedEventHandler, animatedEventHandler, tmpResult];
-    const tmpResult2 = tmp(() => {
-      let obj2;
-      const obj = { handlerTag, type, config, detectorCallbacks: obj2, gestureRelations };
-      obj2 = { jsEventHandler, animatedEventHandler, reanimatedEventHandler };
-      Object.defineProperties(obj, { type: { enumerable: false }, config: { enumerable: false }, detectorCallbacks: { enumerable: false }, gestureRelations: { enumerable: false } });
-      return obj;
-    }, items1);
-    let closure_7 = tmpResult2;
-    const items2 = [Fling, tmp2];
-    handlerTag(() => {
-      let NativeProxy = NativeProxy2.NativeProxy;
-      NativeProxy.createGestureHandler(type, handlerTag, {});
-      let obj = selectProperties;
-      let result = obj.scheduleFlushOperations();
-      return () => {
-        const NativeProxy = type(config[5]).NativeProxy;
-        NativeProxy.dropGestureHandler(handlerTag);
-        const obj = type(config[6]);
-        const result = obj.scheduleFlushOperations();
-      };
-    }, items2);
-    const items3 = [tmp2, clonedAndRemappedConfig, Fling, tmpResult2];
-    handlerTag(() => {
-      let obj = type(config[4]);
-      const result = obj.prepareConfigForNativeSide(c0, config);
-      const NativeProxy = type(config[5]).NativeProxy;
-      const result1 = NativeProxy.setGestureHandlerConfig(closure_2, result);
-      c0 = false;
-      let obj2 = type(config[6]);
-      const result2 = obj2.scheduleOperationToBeFlushed(() => {
-        const tmp = c0;
-        if (!tmp) {
-          const obj = _mod5499;
-          obj.bindSharedValues(config, handlerTag);
-        }
-      });
-      const obj3 = type(config[6]);
-      const result3 = obj3.scheduleFlushOperations();
-      const obj4 = type(config[7]);
-      obj4.registerGesture(closure_2, closure_7);
-      return () => {
-        c0 = true;
-        const obj = _mod5499;
-        obj.unbindSharedValues(config, handlerTag);
-        const obj2 = handlerIDToTag;
-        obj2.unregisterGesture(handlerTag);
-      };
-    }, items3);
-    return tmpResult2;
-  }
-}
+export const useTapGesture = _mod5517.useTapGesture;
+export const useFlingGesture = _mod5524.useFlingGesture;
+export const useLongPressGesture = _mod5525.useLongPressGesture;
+export const usePinchGesture = _mod5526.usePinchGesture;
+export const useRotationGesture = _mod5527.useRotationGesture;
+export const useHoverGesture = _mod5528.useHoverGesture;
+export const useManualGesture = _mod5529.useManualGesture;
+export const useNativeGesture = _mod5530.useNativeGesture;
+export const usePanGesture = _mod5531.usePanGesture;

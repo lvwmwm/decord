@@ -1,30 +1,60 @@
 // Module ID: 5515
 // Function ID: 5516
-// Dependencies: [5499, 5516, 5490]
-// Exports: useTapGesture
+// Dependencies: [19, 5434, 5478]
+// Exports: Wrap
 
 // Module 5515
-import ComposedGestureName from "ComposedGestureName" /* 5490 */;
-import _mod5499 from "module_5499" /* 5499 */;
-import _mod5516 from "module_5516" /* 5516 */;
+import react2 from "react" /* 19 */;
+import assignRef2 from "assignRef" /* 5478 */;
 
-function transformTapProps(shouldCancelWhenOutside) {
-  if (undefined === shouldCancelWhenOutside.shouldCancelWhenOutside) {
-    shouldCancelWhenOutside.shouldCancelWhenOutside = true;
-  }
-  return shouldCancelWhenOutside;
-}
-const items = [["maxDistance", "maxDist"], ["maxDuration", "maxDurationMs"], ["maxDelay", "maxDelayMs"]];
-const map = new Map(items);
-let closure_4 = {};
+const react = react2;
 
-export function useTapGesture(tmp82Result) {
-  let tmp = tmp82Result;
-  if (tmp82Result === undefined) {
-    tmp = closure_4;
+const useCallback = react2.useCallback;
+
+export const Wrap = function(ref) {
+  ref = ref.ref;
+  let ref2;
+  try {
+    let obj = react;
+    const Children = react.Children;
+    const onlyResult = Children.only(tmp);
+    const tmp3 = onlyResult;
+    ref2 = onlyResult.props.ref;
+    const items = [ref2, ref];
+    let obj2 = {
+      collapsable: false,
+      ref: useCallback((__internalInstanceHandle) => {
+          let assignRefResult1;
+          let obj = ref(ref2[2]);
+          let assignRefResult = obj.assignRef(assignRefResult1, __internalInstanceHandle);
+          ref = assignRefResult;
+          const assignRef = ref(ref2[2]).assignRef;
+          ref(ref2[2]);
+          let obj2 = ref(ref2[2]);
+          assignRefResult1 = assignRef(ref, obj2.preferHostInstance(__internalInstanceHandle));
+          return () => {
+            if (typeof assignRefResult === "function") {
+              tmp();
+            } else {
+              const obj = assignRef2;
+              assignRefResult = obj.assignRef(ref2, null);
+            }
+            if (typeof assignRefResult1 === "function") {
+              tmp3();
+            } else {
+              const obj2 = assignRef2;
+              assignRefResult1 = obj2.assignRef(ref, null);
+            }
+          };
+        }, items)
+    };
+    return obj.cloneElement(onlyResult, obj2, onlyResult.props.children);
+  } catch (err) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const obj3 = ref(ref2[1]);
+    const error = new Error(obj3.tagMessage("VirtualGestureDetector expects exactly one React element as its child. To use a gesture with multiple views, wrap them in a single parent view and attach the gesture to that."));
+    throw error;
   }
-  const obj = _mod5499;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformTapProps);
-  const obj2 = _mod5516;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Tap, clonedAndRemappedConfig);
-}
+};

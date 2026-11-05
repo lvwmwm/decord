@@ -1,29 +1,46 @@
 // Module ID: 13306
 // Function ID: 13307
-// Dependencies: [13301]
-// Exports: hasTracingEnabled
+// Dependencies: []
 
 // Module 13306
-import _mod13301 from "module_13301" /* 13301 */;
+let hasOwnProperty;
 
-
-export function hasTracingEnabled(tracesSampler) {
-  if (typeof globalThis.__SENTRY_TRACING__ === "boolean") {
-    if (!globalThis.__SENTRY_TRACING__) {
-      return false;
+function merge(arg0, obj) {
+  let num = arg2;
+  if (arg2 === undefined) {
+    num = 2;
+  }
+  const tmp = obj;
+  if (tmp) {
+    if (typeof obj === "object") {
+      if (num > 0) {
+        const tmp9 = arg0;
+        if (tmp9) {
+          if (obj) {
+            const _Object = Object;
+            if (0 === Object.keys(obj).length) {
+              return arg0;
+            }
+          }
+        }
+        obj = {};
+        const merged = Object.assign(arg0);
+        for (const key10016 in obj) {
+          let _Object2 = Object;
+          hasOwnProperty = Object.prototype.hasOwnProperty;
+          if (!hasOwnProperty.call(obj, key10016)) {
+            continue;
+          } else {
+            obj[key10016] = merge(obj[key10016], obj[key10016], num - 1);
+            continue;
+          }
+          continue;
+        }
+        return obj;
+      }
     }
   }
-  let tmp = tracesSampler;
-  const obj = _mod13301;
-  const client = obj.getClient();
-  if (!tracesSampler) {
-    tmp = client && client.getOptions();
-    client && client.getOptions();
-  }
-  let tmp3 = tmp;
-  if (tmp3) {
-    const enableTracing = tmp.enableTracing || "tracesSampleRate" in tmp || "tracesSampler" in tmp;
-    tmp3 = enableTracing;
-  }
-  return tmp3;
+  return obj;
 }
+
+export { merge };

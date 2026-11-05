@@ -1,12 +1,12 @@
-// Module ID: 13948
-// Function ID: 13949
+// Module ID: 13961
+// Function ID: 13962
 // Name: useTypingUsersIds
-// Dependencies: [5083, 13947, 1385, 504, 2]
+// Dependencies: [5085, 13960, 1385, 504, 2]
 // Exports: useTypingUserIds
 
-// Module 13948 (useTypingUsersIds)
-import RelationshipStore from "RelationshipStore" /* 5083 */;
-import TypingStore from "TypingStore" /* 13947 */;
+// Module 13961 (useTypingUsersIds)
+import RelationshipStore from "RelationshipStore" /* 5085 */;
+import TypingStore from "TypingStore" /* 13960 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

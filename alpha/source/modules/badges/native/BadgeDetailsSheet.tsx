@@ -1,26 +1,26 @@
-// Module ID: 11653
-// Function ID: 11654
+// Module ID: 11661
+// Function ID: 11662
 // Name: BadgeDetailsSheet
-// Dependencies: [19, 17, 5142, 1385, 8904, 1072, 5397, 21, 5141, 575, 5869, 5761, 504, 11654, 11655, 11656, 11649, 11657, 2155, 1389, 11658, 11667, 11668, 5382, 11652, 11645, 7703, 1113, 11640, 11669, 5768, 11670, 1627, 11643, 8909, 11650, 5396, 5400, 2]
+// Dependencies: [19, 17, 5144, 1385, 8909, 1072, 5399, 21, 5143, 575, 5872, 5763, 504, 11662, 11663, 11664, 11657, 11665, 2155, 1389, 11666, 11675, 11676, 5384, 11660, 11653, 7705, 1113, 11648, 11677, 5770, 11678, 1627, 11651, 8914, 11658, 5398, 5402, 2]
 // Exports: default
 
-// Module 11653 (BadgeDetailsSheet)
+// Module 11661 (BadgeDetailsSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5869 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8909 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11652 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11668 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5399 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5872 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8914 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 11660 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 11676 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import UserStore from "UserStore" /* 1385 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8904 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8909 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let currentUser;

@@ -1,32 +1,32 @@
-// Module ID: 8041
-// Function ID: 8042
+// Module ID: 8046
+// Function ID: 8047
 // Name: StreamActionCreators
-// Dependencies: [5, 5899, 8042, 8043, 6849, 502, 4990, 5012, 5044, 5813, 1072, 6850, 572, 6852, 38, 6181, 8044, 5893, 8078, 1282, 1089, 6882, 1260, 6077, 6841, 7625, 7627, 2]
+// Dependencies: [5, 5902, 8047, 8048, 6852, 502, 4992, 5014, 5046, 5815, 1072, 6853, 572, 6855, 38, 6184, 8049, 5896, 8083, 1282, 1089, 6885, 1260, 6080, 6844, 7627, 7629, 2]
 // Exports: changeStreamRegion, closeStream, fetchStreamPreview, joinPrivateChannelAndWatchStream, notifyStreamStart, setLayout, setStreamPaused, startStream, stopOwnStream, stopStream, toggleSelfStreamHidden, updateStreamSettings, watchStreamAndTransitionToStream
 
-// Module 8041 (StreamActionCreators)
+// Module 8046 (StreamActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 6077 */;
-import ChannelUtils from "ChannelUtils" /* 6181 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6841 */;
-import Constants2 from "Constants" /* 6850 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6852 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6882 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7627 */;
-import transitionToStreamDefault from "transitionToStream" /* 8078 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 6080 */;
+import ChannelUtils from "ChannelUtils" /* 6184 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6844 */;
+import Constants2 from "Constants" /* 6853 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6855 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6885 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7627 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7629 */;
+import transitionToStreamDefault from "transitionToStream" /* 8083 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameConsoleStore from "GameConsoleStore" /* 5899 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 8042 */;
-import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 8043 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6849 */;
+import GameConsoleStore from "GameConsoleStore" /* 5902 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 8047 */;
+import ApplicationStreamPreviewStore from "ApplicationStreamPreviewStore" /* 8048 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6852 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import VoiceStateStore from "VoiceStateStore" /* 5813 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
+import VoiceStateStore from "VoiceStateStore" /* 5815 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ function watchStream(stream, forceMultiple) {
       obj3.dispatch(obj4);
       const tmp18 = importDefault;
       if (null != guildId) {
-        const tmp12Result = tmp12(8044);
+        const tmp12Result = tmp12(8049);
         const result = tmp12Result.maybeSetGuildRoomVideoOverlay(true, guildId, channelId);
       }
       let forceFocus;
@@ -78,7 +78,7 @@ function watchStream(stream, forceMultiple) {
         tmp22 = forceMultiple;
       }
       if (!tmp22) {
-        const tmp18Result = tmp18(5893);
+        const tmp18Result = tmp18(5896);
         const participant = tmp18Result.selectParticipant(stream.channelId, encodeStreamKeyResult);
       }
     } else {

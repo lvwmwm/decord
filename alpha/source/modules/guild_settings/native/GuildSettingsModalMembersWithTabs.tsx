@@ -1,69 +1,73 @@
-// Module ID: 18923
-// Function ID: 18924
+// Module ID: 18954
+// Function ID: 18955
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [32, 19, 17, 5012, 5073, 1385, 21, 5141, 575, 18527, 504, 7579, 1113, 18924, 18925, 18932, 5175, 1499, 10053, 18927, 7698, 9245, 9125, 12372, 14411, 2]
+// Dependencies: [19, 17, 5014, 5075, 1385, 21, 5143, 575, 9141, 18557, 504, 7581, 1113, 18955, 18956, 18963, 5177, 1499, 10061, 18958, 7700, 9252, 9131, 12379, 14424, 2]
 
-// Module 18923 (GuildSettingsModalMembersWithTabs)
+// Module 18954 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7579 */;
-import ContextMenu2 from "ContextMenu" /* 10053 */;
-import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 18924 */;
-import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 18925 */;
-import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 18932 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5177 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7581 */;
+import ContextMenu2 from "ContextMenu" /* 10061 */;
+import MemberSafetyPageTypes from "MemberSafetyPageTypes" /* 18955 */;
+import GuildSettingsModalMembersDefault from "GuildSettingsModalMembers" /* 18956 */;
+import GuildSettingsModalMemberApplicationsDefault from "GuildSettingsModalMemberApplications" /* 18963 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
 
-let c10;
 let c9;
+let metroImportAll;
 let obj2;
 let tmp2;
-const showMembersManagementActionSheet = tmp2(18927);
+const showMembersManagementActionSheet = tmp2(18958);
 const View = react_native.View;
-({ jsx: c9, jsxs: c10 } = Fragment);
+({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { container: obj2, content: { flex: 1 }, tabContainer: { marginTop: 12, minHeight: 32 } };
 obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
-let closure_11 = createStyles.createStyles(obj);
+let closure_10 = createStyles.createStyles(obj);
 const memoResult = react.memo(function GuildSettingsModalMembersWithTabs(guildId) {
-  let callback3;
+  let callback2;
   let items8;
-  let num2;
+  let num3;
+  let onLayout;
+  let ref;
   guildId = guildId.guildId;
-  let num;
+  let num2;
   let stateFromStores;
   let stateFromStores1;
   navigation = undefined;
   let callback;
   let callback1;
   let segmentedControlState;
-  let obj = stateFromStores1;
-  let tmp = stateFromStores(stateFromStores1.useState(0), 2);
-  let closure_1 = tmp[1];
-  const tmp4 = num;
-  const first = tmp[0];
-  let obj2 = guildId(num[9]);
-  num = obj2.useSubmittedGuildJoinRequestTotal({ guildId });
-  if (num == null) {
-    num = 0;
+  let tmp = stateFromStores;
+  let tmp2 = num2(stateFromStores[8])();
+  const width = tmp2.width;
+  let num = 0;
+  ({ ref, onLayout } = tmp2);
+  if (undefined !== width) {
+    num = width;
   }
-  const tmp5 = closure_11();
+  let obj = guildId(tmp[9]);
+  num2 = obj.useSubmittedGuildJoinRequestTotal({ guildId });
+  if (num2 == null) {
+    num2 = 0;
+  }
+  const tmp4 = closure_10();
   let items = [callback];
   const items1 = [guildId];
-  const tmp3Result = guildId(tmp4[10]);
+  const tmp3Result = guildId(tmp[10]);
   stateFromStores = tmp3Result.useStateFromStores(items, () => GuildStore.getGuild(guildId), items1);
   const items2 = [callback1, segmentedControlState];
   const items3 = [stateFromStores];
-  const tmp3Result4 = guildId(tmp4[10]);
+  const tmp3Result4 = guildId(tmp[10]);
   stateFromStores1 = tmp3Result4.useStateFromStores(items2, () => {
     let canPruneGuildMembersResult = null != stateFromStores;
     if (canPruneGuildMembersResult) {
@@ -72,8 +76,9 @@ const memoResult = react.memo(function GuildSettingsModalMembersWithTabs(guildId
     }
     return canPruneGuildMembersResult;
   }, items3);
-  const items4 = [guildId, num];
-  const memo = obj.useMemo(() => {
+  let obj4 = stateFromStores1;
+  const items4 = [guildId, num2];
+  const memo = stateFromStores1.useMemo(() => {
     let intl;
     let intl2;
     let intl3;
@@ -86,38 +91,38 @@ const memoResult = react.memo(function GuildSettingsModalMembersWithTabs(guildId
     let tmp4Result3;
     let tmp4Result4;
     let tmp6;
-    const obj = { label: intl.string(intl5.t.NOOm1Z), id: MemberSafetyPageTypes.MemberSafetyPageTab.ALL_MEMBERS, page: React4(GuildSettingsModalMembersDefault, obj2) };
+    const obj = { label: intl.string(intl5.t.NOOm1Z), id: MemberSafetyPageTypes.MemberSafetyPageTab.ALL_MEMBERS, page: metroImportAll(GuildSettingsModalMembersDefault, obj2) };
     intl = intl5.intl;
     const items = [obj, , , ];
     obj2 = { guildId };
-    const obj3 = { label: intl2.string(intl5.t["4eQVBO"]), id: MemberSafetyPageTypes.MemberSafetyPageTab.PENDING, count: tmp6, page: React4(tmp4Result, obj4) };
+    const obj3 = { label: intl2.string(intl5.t["4eQVBO"]), id: MemberSafetyPageTypes.MemberSafetyPageTab.PENDING, count: tmp6, page: metroImportAll(tmp4Result, obj4) };
     intl2 = intl5.intl;
     tmp6 = undefined;
-    if (num > 0) {
-      tmp6 = num;
+    if (num2 > 0) {
+      tmp6 = num2;
     }
     obj4 = { guildId, applicationStatus: MemberVerificationTypes.GuildJoinRequestApplicationStatuses.SUBMITTED };
     items[1] = obj3;
     tmp4Result = GuildSettingsModalMemberApplicationsDefault;
-    const obj5 = { label: intl3.string(intl5.t.bSZkla), id: MemberSafetyPageTypes.MemberSafetyPageTab.REJECTED, page: React4(tmp4Result3, obj6) };
+    const obj5 = { label: intl3.string(intl5.t.bSZkla), id: MemberSafetyPageTypes.MemberSafetyPageTab.REJECTED, page: metroImportAll(tmp4Result3, obj6) };
     intl3 = tmp(1113).intl;
     obj6 = { guildId, applicationStatus: MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED };
     items[2] = obj5;
     tmp4Result3 = GuildSettingsModalMemberApplicationsDefault;
-    const obj7 = { label: intl4.string(intl5.t.aURgY2), id: MemberSafetyPageTypes.MemberSafetyPageTab.APPROVED, page: React4(tmp4Result4, obj8) };
+    const obj7 = { label: intl4.string(intl5.t.aURgY2), id: MemberSafetyPageTypes.MemberSafetyPageTab.APPROVED, page: metroImportAll(tmp4Result4, obj8) };
     intl4 = tmp(1113).intl;
     obj8 = { guildId, applicationStatus: MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED };
     items[3] = obj7;
     tmp4Result4 = GuildSettingsModalMemberApplicationsDefault;
     return items;
   }, items4);
-  const tmp3Result5 = guildId(tmp4[17]);
+  const tmp3Result5 = guildId(tmp[17]);
   navigation = tmp3Result5.useNavigation();
   const items5 = [stateFromStores1, stateFromStores];
-  callback = obj.useCallback(() => {
+  callback = stateFromStores1.useCallback(() => {
     let membersManagementActions;
     const ContextMenu = ContextMenu2.ContextMenu;
-    const tmp = React4;
+    const tmp = metroImportAll;
     if (null != stateFromStores) {
       let obj = { guild: tmp4, canPrune: stateFromStores1 };
       const tmp2Result = showMembersManagementActionSheet;
@@ -131,17 +136,17 @@ const memoResult = react.memo(function GuildSettingsModalMembersWithTabs(guildId
         let intl;
         ref = ref.ref;
         const merged = Object.assign(ref, Object.assign({ ref: 0 }));
-        const obj = { source: closure_1_1(num[21]), accessibilityLabel: intl.string(guildId(num[12]).t.ogxXGq), ref };
-        const HeaderActionButton = guildId(num[20]).HeaderActionButton;
-        intl = guildId(num[12]).intl;
+        const obj = { source: num2(stateFromStores[21]), accessibilityLabel: intl.string(guildId(stateFromStores[12]).t.ogxXGq), ref };
+        const HeaderActionButton = guildId(stateFromStores[20]).HeaderActionButton;
+        intl = guildId(stateFromStores[12]).intl;
         const merged1 = Object.assign(merged);
-        return closure_1_9(HeaderActionButton, obj);
+        return closure_1_8(HeaderActionButton, obj);
       }
     };
     return tmp(ContextMenu, obj2);
   }, items5);
   const items6 = [navigation, callback];
-  callback1 = obj.useCallback((arg0) => {
+  callback1 = stateFromStores1.useCallback((arg0) => {
     let closure_0 = arg0;
     const obj = {
       headerRight() {
@@ -154,32 +159,29 @@ const memoResult = react.memo(function GuildSettingsModalMembersWithTabs(guildId
     };
     navigation.setOptions(obj);
   }, items6);
-  const callback2 = obj.useCallback((nativeEvent) => {
-    closure_1(nativeEvent.nativeEvent.layout.width);
-  }, []);
-  let obj3 = { pageWidth: first, items: memo, defaultIndex: num2, onSetActiveIndex: callback1 };
-  num2 = 0;
-  const useSegmentedControlState = tmp3(tmp4[22]).useSegmentedControlState;
-  guildId(tmp4[22]);
-  if (num > 0) {
-    num2 = 1;
+  let obj2 = { pageWidth: num, items: memo, defaultIndex: num3, onSetActiveIndex: callback1 };
+  num3 = 0;
+  const useSegmentedControlState = tmp3(tmp[22]).useSegmentedControlState;
+  guildId(tmp[22]);
+  if (num2 > 0) {
+    num3 = 1;
   }
-  segmentedControlState = useSegmentedControlState(obj3);
+  segmentedControlState = useSegmentedControlState(obj2);
   const items7 = [segmentedControlState.activeIndex, callback1];
-  const effect = obj.useEffect(() => {
+  const effect = obj4.useEffect(() => {
     const activeIndex = segmentedControlState.activeIndex;
     callback1(activeIndex.get());
   }, items7);
-  let obj4 = { style: tmp5.container, children: items8 };
-  let obj5 = { style: tmp5.tabContainer, children: closure_9(tmp3(tmp4[23]).Tabs, { state: segmentedControlState, grow: true, formatCount: callback3 }) };
-  callback3 = obj.useCallback((toLocaleString) => {
-    const obj = guildId(num[23]);
+  let obj3 = { style: tmp4.container, children: items8 };
+  let obj5 = { style: tmp4.tabContainer, children: closure_8(tmp3(tmp[23]).Tabs, { state: segmentedControlState, grow: true, formatCount: callback2 }) };
+  callback2 = obj4.useCallback((toLocaleString) => {
+    const obj = guildId(stateFromStores[23]);
     return "(" + obj.defaultCountFormatter(toLocaleString) + ")";
   }, []);
-  items8 = [closure_9(navigation, obj5), ];
-  let obj6 = { style: tmp5.content, onLayout: callback2, children: closure_9(tmp3(tmp4[24]).SegmentedControlPages, { state: segmentedControlState }) };
-  items8[1] = closure_9(navigation, obj6);
-  return closure_10(navigation, obj4);
+  items8 = [closure_8(navigation, obj5), ];
+  let obj6 = { style: tmp4.content, ref, onLayout, children: closure_8(tmp3(tmp[24]).SegmentedControlPages, { state: segmentedControlState }) };
+  items8[1] = closure_8(navigation, obj6);
+  return closure_9(navigation, obj3);
 });
 const result = size.fileFinishedImporting("modules/guild_settings/native/GuildSettingsModalMembersWithTabs.tsx");
 

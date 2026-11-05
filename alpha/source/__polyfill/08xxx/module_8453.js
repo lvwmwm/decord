@@ -3,13 +3,13 @@
 // Dependencies: []
 
 // Module 8453
-const obj = {
-  get() {
-    if (typeof TextDecoder !== "undefined") {
-      const _TextDecoder = TextDecoder;
-      return TextDecoder;
-    }
+const obj = { 4: null };
+const obj2 = {
+  name: "ShotInfo",
+  description(arg0) {
+    return arg0;
   }
 };
+obj[4] = obj2;
 
 export default obj;

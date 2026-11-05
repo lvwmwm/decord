@@ -1,16 +1,16 @@
-// Module ID: 17781
-// Function ID: 17782
+// Module ID: 17809
+// Function ID: 17810
 // Name: IcymiTabSetting
-// Dependencies: [8573, 8705, 9066, 9065, 17782, 11729, 1113, 2]
+// Dependencies: [8578, 8710, 9074, 9070, 17810, 11737, 1113, 2]
 
-// Module 17781 (IcymiTabSetting)
+// Module 17809 (IcymiTabSetting)
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8573 */;
-import useLabFeatureDefault from "useLabFeature" /* 8705 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9065 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 9066 */;
-import LabFeatureActions from "LabFeatureActions" /* 17782 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
+import SettingsConstants from "SettingsConstants" /* 8578 */;
+import useLabFeatureDefault from "useLabFeature" /* 8710 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9070 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 9074 */;
+import LabFeatureActions from "LabFeatureActions" /* 17810 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

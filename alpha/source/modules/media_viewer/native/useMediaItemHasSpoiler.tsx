@@ -1,13 +1,13 @@
-// Module ID: 8979
-// Function ID: 8980
+// Module ID: 8984
+// Function ID: 8985
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 4990, 8975, 8980, 563, 8986, 2]
+// Dependencies: [19, 4992, 8980, 8985, 563, 8991, 2]
 // Exports: useMediaItemHasSpoiler
 
-// Module 8979 (useMediaItemHasSpoiler)
-import MediaSourceUtil from "MediaSourceUtil" /* 8980 */;
+// Module 8984 (useMediaItemHasSpoiler)
+import MediaSourceUtil from "MediaSourceUtil" /* 8985 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

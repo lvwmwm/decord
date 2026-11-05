@@ -1,15 +1,15 @@
-// Module ID: 11382
-// Function ID: 11383
+// Module ID: 11390
+// Function ID: 11391
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 5768, 11383, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 5763, 1113, 5770, 11391, 2]
 
-// Module 11382 (AnnouncementChannelLurkerBar)
+// Module 11390 (AnnouncementChannelLurkerBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11383 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11391 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -24,7 +24,7 @@ class AnnouncementChannelLurkerBar {
     const tmp = closure_5();
     let obj = { style: tmp.wrapper, children: items };
     const obj2 = { style: tmp.text, variant: "body-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1113).t.Hl0Mqh) };
-    const Text = channel(5761).Text;
+    const Text = channel(5763).Text;
     intl = channel(1113).intl;
     items = [closure_3(Text, obj2), ];
     const obj3 = {
@@ -41,7 +41,7 @@ class AnnouncementChannelLurkerBar {
       variant: "secondary",
       grow: true
     };
-    const Button = channel(5768).Button;
+    const Button = channel(5770).Button;
     intl2 = channel(1113).intl;
     items[1] = closure_3(Button, obj3);
     return closure_4(View, obj);

@@ -1,23 +1,22 @@
 // Module ID: 13303
 // Function ID: 13304
-// Dependencies: [13280]
-// Exports: getCapturedScopesOnSpan, setCapturedScopesOnSpan
+// Dependencies: [13287]
+// Exports: _getSpanForScope, _setSpanForScope
 
 // Module 13303
-import _mod13280 from "module_13280" /* 13280 */;
+import _mod13287 from "module_13287" /* 13287 */;
 
-const _sentryScope = "_sentryScope";
-const _sentryIsolationScope = "_sentryIsolationScope";
+const _sentrySpan = "_sentrySpan";
 
-export function getCapturedScopesOnSpan(scope) {
-  return { scope: scope[_sentryScope], isolationScope: scope[_sentryIsolationScope] };
+export function _getSpanForScope(arg0) {
+  return arg0[_sentrySpan];
 }
-export function setCapturedScopesOnSpan(arg0, arg1, arg2) {
-  const tmp = arg0;
-  if (tmp) {
-    const obj = _mod13280;
-    const result = obj.addNonEnumerableProperty(arg0, _sentryIsolationScope, arg2);
-    const obj2 = _mod13280;
-    const result1 = obj2.addNonEnumerableProperty(arg0, _sentryScope, arg1);
+export function _setSpanForScope(arg0, arg1) {
+  const tmp2 = arg1;
+  if (tmp2) {
+    const obj = _mod13287;
+    const result = obj.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
+  } else {
+    delete tmp[_sentrySpan];
   }
 }

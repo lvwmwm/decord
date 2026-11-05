@@ -1,17 +1,17 @@
-// Module ID: 12730
-// Function ID: 12731
+// Module ID: 12737
+// Function ID: 12738
 // Name: AppLauncherBooleanOption
-// Dependencies: [32, 19, 21, 5141, 575, 5208, 8317, 7130, 2]
+// Dependencies: [32, 19, 21, 5143, 575, 5210, 8322, 7133, 2]
 // Exports: default
 
-// Module 12730 (AppLauncherBooleanOption)
+// Module 12737 (AppLauncherBooleanOption)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import react_native from "react-native" /* 5208 */;
-import _mod8317 from "module_8317" /* 8317 */;
+import react_native from "react-native" /* 5210 */;
+import _mod8322 from "module_8322" /* 8322 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -39,7 +39,7 @@ export default function AppLauncherBooleanOption(arg0) {
   const obj = react_native;
   const checkboxA11yNative = obj.useCheckboxA11yNative({ checked: first });
   ({ accessibilityRole, accessibilityState } = checkboxA11yNative);
-  const FormRow = _mod8317.FormRow;
+  const FormRow = _mod8322.FormRow;
   return <FormRow start end style={tmp.container} hasError={hasError} label={option.displayName} accessibilityRole={accessibilityRole} accessibilityState={accessibilityState} trailing={null} trailingWrapperStyle={tmp.checkboxWrapper} onPress={function onPress() {
     closure_3(!first);
     closure_1_1(!first);

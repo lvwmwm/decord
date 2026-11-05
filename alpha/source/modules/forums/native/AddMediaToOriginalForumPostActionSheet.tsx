@@ -1,26 +1,26 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 13991
+// Function ID: 13992
 // Name: AddMediaToOriginalForumPostActionSheet
-// Dependencies: [32, 5, 19, 17, 4990, 7841, 5012, 6196, 1072, 21, 5141, 575, 10386, 8356, 8371, 5382, 9931, 9928, 11, 8352, 9930, 8342, 1282, 13979, 7776, 8828, 6094, 1113, 504, 7462, 8344, 8360, 5396, 13980, 5761, 5769, 2]
+// Dependencies: [32, 5, 19, 17, 4992, 7846, 5014, 6199, 1072, 21, 5143, 575, 10392, 8361, 8376, 5384, 9937, 9934, 11, 8357, 9936, 8347, 1282, 13992, 7781, 8833, 6097, 1113, 504, 7465, 8349, 8365, 5398, 13993, 5763, 5771, 2]
 // Exports: default
 
-// Module 13978 (AddMediaToOriginalForumPostActionSheet)
+// Module 13991 (AddMediaToOriginalForumPostActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import DraftStore from "DraftStore" /* 7841 */;
-import Tracking from "Tracking" /* 8344 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8360 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import DraftStore from "DraftStore" /* 7846 */;
+import Tracking from "Tracking" /* 8349 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8365 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import MessageStore from "MessageStore" /* 6196 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import MessageStore from "MessageStore" /* 6199 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9, closure_6;
@@ -92,7 +92,7 @@ let obj = function _upload2() {
               anyErrorMessage = undefined;
               c8 = 1;
               c9 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c8) {
             if (arg0 === 1) {

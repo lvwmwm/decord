@@ -1,12 +1,25 @@
 // Module ID: 13142
 // Function ID: 13143
-// Dependencies: [13140, 13143, 13144]
+// Dependencies: []
 
 // Module 13142
-import defaultRecognizer from "defaultRecognizer" /* 13140 */;
-import _mod13143 from "module_13143" /* 13143 */;
-import tokenize from "tokenize" /* 13144 */;
+let items;
+let obj2;
+const obj = {
+  name: "Value",
+  structure: obj2,
+  parse() {
+    let sequence;
+    const tokenStart = this.scanner.tokenStart;
+    const element = { type: "Value", loc: this.getLocation(tokenStart, this.scanner.tokenStart), children: sequence };
+    sequence = this.readSequence(this.scope.Value);
+    return element;
+  },
+  generate(arg0) {
+    this.children(arg0);
+  }
+};
+obj2 = { children: items };
+items = [[]];
 
-({ getNode: defaultRecognizer, expression: _mod13143, var: tokenize });
-
-export default { getNode: defaultRecognizer, expression: _mod13143, var: tokenize };
+export default obj;

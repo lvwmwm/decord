@@ -1,14 +1,14 @@
-// Module ID: 19199
-// Function ID: 19200
+// Module ID: 19230
+// Function ID: 19231
 // Name: SlashIcon
-// Dependencies: [19, 21, 575, 5850, 19200, 2]
+// Dependencies: [19, 21, 575, 5853, 19231, 2]
 // Exports: SlashIcon
 
-// Module 19199 (SlashIcon)
+// Module 19230 (SlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 19200 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 19231 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

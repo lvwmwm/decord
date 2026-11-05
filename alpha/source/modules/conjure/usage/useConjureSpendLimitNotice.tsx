@@ -1,13 +1,13 @@
-// Module ID: 12795
-// Function ID: 12796
+// Module ID: 12802
+// Function ID: 12803
 // Name: useConjureSpendLimitNotice
-// Dependencies: [11048, 504, 2190, 1113, 3995, 2]
+// Dependencies: [11054, 504, 2190, 1113, 3995, 2]
 // Exports: default
 
-// Module 12795 (useConjureSpendLimitNotice)
+// Module 12802 (useConjureSpendLimitNotice)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 11048 */;
+import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 11054 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,18 +1,18 @@
-// Module ID: 7449
-// Function ID: 7450
+// Module ID: 7452
+// Function ID: 7453
 // Name: FormArrow
-// Dependencies: [19, 17, 21, 5141, 575, 5761, 1187, 7450, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 5763, 1187, 7453, 2]
 // Exports: default
 
-// Module 7449 (FormArrow)
+// Module 7452 (FormArrow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7450 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7453 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,13 +1,13 @@
-// Module ID: 7712
-// Function ID: 7713
+// Module ID: 7717
+// Function ID: 7718
 // Name: useSelectedDismissibleContentShared
-// Dependencies: [19, 4977, 4987, 4978, 4981, 2]
+// Dependencies: [19, 4979, 4989, 4980, 4983, 2]
 // Exports: useSelectedDismissibleContentShared
 
-// Module 7712 (useSelectedDismissibleContentShared)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+// Module 7717 (useSelectedDismissibleContentShared)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
 import react_mod from "react" /* 19 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4977 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4979 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,24 +17,22 @@ let react = react_mod;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let result = size.fileFinishedImporting("modules/dismissible_content/useSelectedDismissibleContentShared.tsx");
 
-export function useSelectedDismissibleContentShared(arg0, arg1, flag, id) {
-  let closure_0;
-  let closure_1;
-  _require = arg0;
-  dependencyMap = arg1;
+export function useSelectedDismissibleContentShared(visibleContent, markAsDismissed, flag, guildId) {
+  _require = visibleContent;
+  dependencyMap = markAsDismissed;
   if (flag === undefined) {
     flag = false;
   }
-  react = id;
+  react = guildId;
   let closure_3;
-  let tmp = null != arg0 && !flag;
+  let tmp = null != visibleContent && !flag;
   if (tmp) {
     let tmp2 = _require;
     const CONTENT_TYPES_WITH_BYPASS_FATIGUE = require("DismissibleContentFatigueConfig").CONTENT_TYPES_WITH_BYPASS_FATIGUE;
-    tmp = !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(arg0);
+    tmp = !CONTENT_TYPES_WITH_BYPASS_FATIGUE.has(visibleContent);
   }
   closure_3 = tmp;
-  const items = [tmp, arg1, arg0, id];
+  const items = [tmp, markAsDismissed, visibleContent, guildId];
   const effect = react.useEffect(() => () => {
     let tmp = closure_1_3;
     if (tmp) {
@@ -50,11 +48,11 @@ export function useSelectedDismissibleContentShared(arg0, arg1, flag, id) {
         let result = obj.isGuildDismissibleContent(tmp5);
         if (result) {
           const lastDismissed2 = tmp2.lastDismissed;
-          let guildId;
+          guildId = undefined;
           if (lastDismissed2 != null) {
             guildId = lastDismissed2.guildId;
           }
-          result = guildId !== id;
+          result = guildId !== closure_1_2;
         }
         tmp6 = result;
       }

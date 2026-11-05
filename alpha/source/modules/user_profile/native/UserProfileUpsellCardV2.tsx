@@ -1,19 +1,19 @@
-// Module ID: 16786
-// Function ID: 16787
+// Module ID: 16799
+// Function ID: 16800
 // Name: UserProfileUpsellCardV2
-// Dependencies: [19, 17, 7757, 21, 5141, 575, 5723, 1092, 5761, 5768, 9675, 2]
+// Dependencies: [19, 17, 7762, 21, 5143, 575, 5725, 1092, 5763, 5770, 9681, 2]
 // Exports: default
 
-// Module 16786 (UserProfileUpsellCardV2)
+// Module 16799 (UserProfileUpsellCardV2)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinearGradientDefault from "LinearGradient" /* 5723 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import ColorConstants from "ColorConstants" /* 7757 */;
+import LinearGradientDefault from "LinearGradient" /* 5725 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import ColorConstants from "ColorConstants" /* 7762 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -84,9 +84,9 @@ export default function UserProfileUpsellCardV2(textAlign) {
   items2[1] = textCenter;
   items3 = [hasOwnProperty(Text, { style: items2, variant: "body-md/normal", color: "text-default", maxFontSizeMultiplier: 2.5, children: text }), , ];
   const obj3 = { icon: hasOwnProperty(NitroWheelIcon, obj4), text: buttonText, onPress: onButtonPress, variant: buttonVariant, loading: flag2, disabled: flag, grow: true };
-  const Button = tmp6(5768).Button;
+  const Button = tmp6(5770).Button;
   obj4 = { color: nativeDefault.colors.WHITE, size: "xs" };
-  NitroWheelIcon = tmp6(9675).NitroWheelIcon;
+  NitroWheelIcon = tmp6(9681).NitroWheelIcon;
   if (!flag) {
     flag = flag2;
   }

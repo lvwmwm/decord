@@ -1,17 +1,17 @@
-// Module ID: 14851
-// Function ID: 14852
+// Module ID: 14864
+// Function ID: 14865
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 14850, 1072, 21, 5141, 1113, 8814, 9877, 1499, 2190, 14852, 9879, 2]
+// Dependencies: [19, 14863, 1072, 21, 5143, 1113, 8819, 9883, 1499, 2190, 14865, 9885, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 14851 (PlayStationLinkLanding)
+// Module 14864 (PlayStationLinkLanding)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14850 */;
-import _modDef14852 from "module_14852" /* 14852 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14863 */;
+import _modDef14865 from "module_14865" /* 14865 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -50,10 +50,10 @@ export function PlayStationLinkLanding(platformType) {
     navigation.push(constants.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef14852 };
+    const obj = { uri: _modDef14865 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(9879).TwoWayLinkLanding;
+  const TwoWayLinkLanding = navigation(9885).TwoWayLinkLanding;
   let intl2 = navigation(1113).intl;
   let intl3 = navigation(1113).intl;
   return <TwoWayLinkLanding platformType={platformType} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1113).t.xAWHOy)} headerReconnect={intl3.string(navigation(1113).t["ZJ/vBh"])} body={formatResult} onNext={callback} valueProps={memo} />;

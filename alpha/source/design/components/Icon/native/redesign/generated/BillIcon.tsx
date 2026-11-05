@@ -1,14 +1,14 @@
-// Module ID: 12684
-// Function ID: 12685
+// Module ID: 12691
+// Function ID: 12692
 // Name: BillIcon
-// Dependencies: [19, 21, 575, 5850, 12685, 2]
+// Dependencies: [19, 21, 575, 5853, 12692, 2]
 // Exports: BillIcon
 
-// Module 12684 (BillIcon)
+// Module 12691 (BillIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 12685 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 12692 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

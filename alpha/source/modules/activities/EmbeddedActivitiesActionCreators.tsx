@@ -1,33 +1,33 @@
-// Module ID: 11923
-// Function ID: 11924
+// Module ID: 11932
+// Function ID: 11933
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 9912, 2167, 6978, 8042, 502, 4990, 5012, 5073, 1385, 5813, 4989, 2147, 1072, 1362, 4987, 11924, 10493, 11114, 11925, 11926, 11930, 11931, 572, 11064, 11065, 11932, 11069, 6582, 6204, 2153, 5809, 9106, 11933, 2121, 11934, 11936, 10488, 1252, 11937, 11945, 6869, 11946, 6093, 1113, 5812, 11947, 1260, 6882, 5062, 6986, 5893, 1282, 9091, 8020, 7776, 7625, 7964, 4975, 4974, 2]
+// Dependencies: [32, 5, 9918, 2167, 6981, 8047, 502, 4992, 5014, 5075, 1385, 5815, 4991, 2147, 1072, 1362, 4989, 11933, 10499, 11123, 11934, 11935, 11939, 11940, 572, 11070, 11071, 11941, 11075, 6585, 6207, 2153, 5811, 9112, 11942, 2121, 11943, 11945, 10494, 1252, 11946, 11954, 6872, 11955, 6096, 1113, 5814, 11956, 1260, 6885, 5064, 6989, 5896, 1282, 9097, 8025, 7781, 7627, 7969, 4977, 4976, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 11923 (EmbeddedActivitiesActionCreators)
+// Module 11932 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ApplicationConstants from "ApplicationConstants" /* 1362 */;
 import Constants2 from "Constants" /* 2147 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4975 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5062 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6986 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9912 */;
-import createProxyTicket2 from "createProxyTicket" /* 11064 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4977 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5064 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6989 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9918 */;
+import createProxyTicket2 from "createProxyTicket" /* 11070 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
-import PopoutWindowStore from "PopoutWindowStore" /* 8042 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6981 */;
+import PopoutWindowStore from "PopoutWindowStore" /* 8047 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5813 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
+import VoiceStateStore from "VoiceStateStore" /* 5815 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp2;
-const ChannelRTCActionCreatorsDefault = tmp2(5893);
+const ChannelRTCActionCreatorsDefault = tmp2(5896);
 let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
   obj = _asyncToGenerator(async (channelId) => {
     let closure_8;
@@ -153,7 +153,7 @@ let obj = function _runPrimaryAppCommandOrJoinEmbeddedActivity() {
               PRIVATE_CHANNEL = undefined;
               c16 = 1;
               c17 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c16) {
             if (arg0 === 1) {
@@ -514,7 +514,7 @@ obj = function _maybeSendPrimaryAppCommand() {
               user = undefined;
               c5 = 1;
               c6 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c5) {
             if (arg0 === 1) {
@@ -834,7 +834,7 @@ obj = function _joinEmbeddedActivity() {
             obj33 = undefined;
             c4 = 1;
             c5 = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c4) {
           if (arg0 === 1) {
@@ -1080,7 +1080,7 @@ function stopEmbeddedActivity(showFeedback) {
         if ("" !== id) {
           const obj4 = { applicationId, instanceId: compositeInstanceId };
           compositeInstanceId = undefined;
-          const getEmbeddedActivityParticipantId = tmp7(6986).getEmbeddedActivityParticipantId;
+          const getEmbeddedActivityParticipantId = tmp7(6989).getEmbeddedActivityParticipantId;
           ChannelRTCParticipants;
           if (found != null) {
             compositeInstanceId = found.compositeInstanceId;
@@ -1192,88 +1192,25 @@ obj = function _uploadImageAttachment() {
   return obj(...arguments);
 };
 obj = function _sendEmbeddedActivityInvite() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0) => {
     let c0;
     let c1;
     let c2;
     let c3;
     let c4;
+    let closure_1;
     let closure_0 = arg0;
-    if (c4 === 2) {
-      c4 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let target_application_id;
-        let code;
-        c4 = 2;
-        if (0 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_2 = tmp4;
-            let closure_1 = tmp;
-            c0 = undefined;
-            c1 = undefined;
-            target_application_id = undefined;
-            ({ activityChannelId: c0, invitedChannelId: c1, applicationId: c2, location: c3, inviteAnalyticsMetadata: c4 } = closure_0);
-            code = undefined;
-            c3 = 1;
-            c4 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else if (1 === c3) {
-          if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
-          } else {
-            const obj5 = { target_type: closure_130_0(closure_130_2[55]).InviteTargetTypes.EMBEDDED_APPLICATION, target_application_id };
-            const createInvite = closure_130_1(closure_130_2[54]).createInvite;
-            const tmp29 = closure_130_1(closure_130_2[54]);
-            c3 = 2;
-            c4 = 1;
-            const obj6 = { value: createInvite(c0, obj5, c3), done: false };
-            return obj6;
-          }
-        } else if (arg0 === 1) {
-          c4 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c4 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
-        } else {
-          code = value;
-          if (null != closure_130_10.getChannel(c1)) {
-            obj = closure_130_1(closure_130_2[56]);
-            obj.sendInvite(c1, code.code, c3, c4);
-          }
-          c4 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp21) {
-        c4 = 3;
-        throw tmp21;
-      }
+    const obj5 = { target_type: closure_130_0(closure_130_2[55]).InviteTargetTypes.EMBEDDED_APPLICATION, target_application_id };
+    const createInvite = closure_130_1(closure_130_2[54]).createInvite;
+    const tmp29 = closure_130_1(closure_130_2[54]);
+    const code = await createInvite(c0, obj5, c3);
+    if (null != closure_130_10.getChannel(c1)) {
+      obj = closure_130_1(closure_130_2[56]);
+      obj.sendInvite(c1, code.code, c3, c4);
     }
+    await "HermesInternal";
+    ({ activityChannelId: c0, invitedChannelId: c1, applicationId: c2, location: c3, inviteAnalyticsMetadata: c4 } = closure_0);
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -1329,7 +1266,7 @@ obj = function _sendEmbeddedActivityInviteUser() {
             content = undefined;
             c3 = 1;
             c4 = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c3) {
           if (arg0 === 1) {

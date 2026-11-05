@@ -1,18 +1,18 @@
-// Module ID: 15581
-// Function ID: 15582
+// Module ID: 15594
+// Function ID: 15595
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 5141, 575, 5846, 1113, 5869, 5761, 2]
+// Dependencies: [17, 21, 5143, 575, 5849, 1113, 5872, 5763, 2]
 // Exports: default
 
-// Module 15581 (LargeCountDownPill)
+// Module 15594 (LargeCountDownPill)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5869 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5872 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,20 +1,20 @@
-// Module ID: 8962
-// Function ID: 8963
+// Module ID: 8967
+// Function ID: 8968
 // Name: VideoBackground
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 12, 8963, 8964, 5138, 575, 2022, 8965, 1187, 5723, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5143, 12, 8968, 8969, 5140, 575, 2022, 8970, 1187, 5725, 2]
 // Exports: useDominantColorFromImage
 
-// Module 8962 (VideoBackground)
+// Module 8967 (VideoBackground)
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import react_nativeDefault from "react-native" /* 2022 */;
-import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8964 */;
-import useProfileTileGradientDefault from "useProfileTileGradient" /* 8965 */;
+import VideoBackgroundManagerDefault from "VideoBackgroundManager" /* 8969 */;
+import useProfileTileGradientDefault from "useProfileTileGradient" /* 8970 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp6;
-const LinearGradientDefault = tmp6(5723);
+const LinearGradientDefault = tmp6(5725);
 function useDominantRGBFromImage(arg0, arg1) {
   let closure_0;
   let closure_2;
@@ -40,13 +40,13 @@ function useDominantRGBFromImage(arg0, arg1) {
     tmp = first;
   }
   let tmp3 = first;
-  const tmp5 = first(8963)();
+  const tmp5 = first(8968)();
   dependencyMap = tmp5;
   let obj = react;
   let hexToRgbResult;
   const useState = react.useState;
   if (null != arg0) {
-    hexToRgbResult = tmp3(8964).cachedDominantColors[arg0];
+    hexToRgbResult = tmp3(8969).cachedDominantColors[arg0];
   }
   if (hexToRgbResult == null) {
     const obj2 = require("ColorUtils");

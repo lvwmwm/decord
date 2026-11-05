@@ -1,20 +1,20 @@
-// Module ID: 12435
-// Function ID: 12436
+// Module ID: 12442
+// Function ID: 12443
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 5141, 575, 7121, 1113, 3995, 12320, 5761, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 7124, 1113, 3995, 12327, 5763, 2]
 // Exports: default
 
-// Module 12435 (ConjureProjectHeaderTitle)
+// Module 12442 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Pressables from "Pressables" /* 7121 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12320 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Pressables from "Pressables" /* 7124 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 12327 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

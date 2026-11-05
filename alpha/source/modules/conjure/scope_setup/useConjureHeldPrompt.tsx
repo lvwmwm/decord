@@ -1,22 +1,22 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12807
+// Function ID: 12808
 // Name: useConjureHeldPrompt
-// Dependencies: [32, 19, 11029, 11028, 6979, 504, 12801, 2]
+// Dependencies: [32, 19, 11035, 11034, 6982, 504, 12808, 2]
 // Exports: useConjureHeldPrompt, useConjureScopeSetupPending
 
-// Module 12800 (useConjureHeldPrompt)
-import conjureScopeSetup from "conjureScopeSetup" /* 12801 */;
+// Module 12807 (useConjureHeldPrompt)
+import conjureScopeSetup from "conjureScopeSetup" /* 12808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 11029 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import ConjureChatStore from "ConjureChatStore" /* 11035 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, project;
 
-const f103516 = () => {
+const f103685 = () => {
   project = project.getProject(closure_0);
   let install_scope_setup;
   if (project != null) {
@@ -31,7 +31,7 @@ export function useConjureScopeSetupPending(projectId) {
   const items = [ConjureProjectStore];
   const items1 = [projectId];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f103516, items1);
+  return obj.useStateFromStores(items, f103685, items1);
 }
 export function useConjureHeldPrompt(projectId) {
   let closure_1;
@@ -40,7 +40,7 @@ export function useConjureHeldPrompt(projectId) {
   let obj = require("get initialized");
   const items = [ConjureProjectStore];
   const items1 = [projectId];
-  const stateFromStores = obj.useStateFromStores(items, f103516, items1);
+  const stateFromStores = obj.useStateFromStores(items, f103685, items1);
   const items2 = [ConjureProjectStore];
   const items3 = [projectId];
   const obj2 = require("get initialized");

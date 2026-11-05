@@ -1,18 +1,18 @@
-// Module ID: 17046
-// Function ID: 17047
+// Module ID: 17070
+// Function ID: 17071
 // Name: FamilyCenterActivityTotal
-// Dependencies: [19, 17, 21, 5141, 575, 17045, 8513, 5761, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 17069, 8518, 5763, 2]
 // Exports: default
 
-// Module 17046 (FamilyCenterActivityTotal)
+// Module 17070 (FamilyCenterActivityTotal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import FamilyCenterUtils from "FamilyCenterUtils" /* 8513 */;
-import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17045 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import FamilyCenterUtils from "FamilyCenterUtils" /* 8518 */;
+import useFamilyCenterActivities from "useFamilyCenterActivities" /* 17069 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -49,7 +49,7 @@ export default function FamilyCenterActivityTotal(displayType) {
   }
   const obj3 = { style: tmp.container, children: items };
   const obj4 = { variant: "heading-xxl/medium", color: str, children: num };
-  const Text = tmp2(5761).Text;
+  const Text = tmp2(5763).Text;
   const tmp6 = React3;
   const tmp7 = View;
   if (num == null) {

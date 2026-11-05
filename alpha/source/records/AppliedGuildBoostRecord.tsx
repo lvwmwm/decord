@@ -1,9 +1,9 @@
-// Module ID: 8607
-// Function ID: 8608
+// Module ID: 8612
+// Function ID: 8613
 // Name: AppliedGuildBoostRecord
 // Dependencies: [1400, 2]
 
-// Module 8607 (AppliedGuildBoostRecord)
+// Module 8612 (AppliedGuildBoostRecord)
 import Record from "Record" /* 1400 */;
 import size from "module_2" /* 2 */;
 

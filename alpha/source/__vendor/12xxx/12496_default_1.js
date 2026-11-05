@@ -1,11 +1,11 @@
 // Module ID: 12496
 // Function ID: 12497
 // Name: default_1
-// Dependencies: [12476]
+// Dependencies: [12483]
 // Exports: default
 
 // Module 12496 (default_1)
-import captureStackTrace2 from "captureStackTrace" /* 12476 */;
+import captureStackTrace2 from "captureStackTrace" /* 12483 */;
 
 let hasOwnProperty;
 
@@ -109,10 +109,10 @@ export default function default_1() {
               const obj = /^[A-Z]/;
               if (obj.test(code.expected)) {
                 const _HermesInternal17 = HermesInternal;
-                combined = "Entr\u00E9e invalide : instanceof " + code.expected + " attendu, " + tmp49 + " re\u00E7u";
+                combined = "Ugyldigt input: forventede instanceof " + code.expected + ", fik " + tmp49;
               } else {
                 const _HermesInternal16 = HermesInternal;
-                combined = "Entr\u00E9e invalide : " + expected + " attendu, " + tmp49 + " re\u00E7u";
+                combined = "Ugyldigt input: forventede " + expected + ", fik " + tmp49;
               }
               return combined;
             }
@@ -121,10 +121,10 @@ export default function default_1() {
               let combined1;
               if (1 === code.values.length) {
                 const _HermesInternal15 = HermesInternal;
-                combined1 = "Entr\u00E9e invalide : " + captureStackTrace.stringifyPrimitive(code.values[0]) + " attendu";
+                combined1 = "Ugyldig v\u00E6rdi: forventede " + captureStackTrace.stringifyPrimitive(code.values[0]);
               } else {
                 const _HermesInternal14 = HermesInternal;
-                combined1 = "Option invalide : une valeur parmi " + captureStackTrace.joinValues(code.values, "|") + " attendue";
+                combined1 = "Ugyldigt valg: forventede en af f\u00F8lgende " + captureStackTrace.joinValues(code.values, "|");
               }
               return combined1;
             }
@@ -135,44 +135,44 @@ export default function default_1() {
               if (code.inclusive) {
                 str31 = "<=";
               }
-              let str32 = code.origin;
+              let str32 = closure_2[code.origin] ?? code.origin;
               if (obj2[code.origin] ?? null) {
                 if (str32 == null) {
-                  str32 = "valeur";
+                  str32 = "value";
                 }
-                const verb = tmp27.verb;
-                const str37 = code.maximum;
+                const verb = tmp26.verb;
+                const str38 = code.maximum;
                 const _HermesInternal13 = HermesInternal;
-                const str1 = str37.toString();
-                const str38 = (obj2[code.origin] ?? null).unit ?? "\u00E9l\u00E9ment(s)";
-                combined2 = "Trop grand : " + str32 + " doit " + verb + " " + str31 + str1 + " " + str38;
+                const str1 = str38.toString();
+                const str39 = (obj2[code.origin] ?? null).unit ?? "elementer";
+                combined2 = "For stor: forventede " + str32 + " " + verb + " " + str31 + " " + str1 + " " + str39;
               } else {
                 let str33 = str32;
                 if (str32 == null) {
-                  str33 = "valeur";
+                  str33 = "value";
                 }
                 const _HermesInternal12 = HermesInternal;
                 const str34 = code.maximum;
-                combined2 = "Trop grand : " + str33 + " doit \u00EAtre " + str31 + str34.toString();
+                combined2 = "For stor: forventede " + str33 + " havde " + str31 + " " + str34.toString();
               }
               return combined2;
             }
             case "too_small":
             {
               let combined3;
-              let str21 = ">";
+              let str19 = ">";
               if (code.inclusive) {
-                str21 = ">=";
+                str19 = ">=";
               }
-              const origin = code.origin;
+              const origin = closure_2[code.origin] ?? code.origin;
               if (obj2[code.origin] ?? null) {
                 const _HermesInternal11 = HermesInternal;
-                const str25 = code.minimum;
-                combined3 = "Trop petit : " + origin + " doit " + tmp17.verb + " " + str21 + str25.toString() + " " + tmp17.unit;
+                const str24 = code.minimum;
+                combined3 = "For lille: forventede " + origin + " " + tmp15.verb + " " + str19 + " " + str24.toString() + " " + tmp15.unit;
               } else {
                 const _HermesInternal10 = HermesInternal;
-                const str22 = code.minimum;
-                combined3 = "Trop petit : " + origin + " doit \u00EAtre " + str21 + str22.toString();
+                const str20 = code.minimum;
+                combined3 = "For lille: forventede " + origin + " havde " + str19 + " " + str20.toString();
               }
               return combined3;
             }
@@ -181,65 +181,61 @@ export default function default_1() {
               let combined4;
               if ("starts_with" === code.format) {
                 const _HermesInternal9 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit commencer par \"" + code.prefix + "\"";
+                combined4 = "Ugyldig streng: skal starte med \"" + code.prefix + "\"";
               } else if ("ends_with" === code.format) {
                 const _HermesInternal8 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit se terminer par \"" + code.suffix + "\"";
+                combined4 = "Ugyldig streng: skal ende med \"" + code.suffix + "\"";
               } else if ("includes" === code.format) {
                 const _HermesInternal7 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit inclure \"" + code.includes + "\"";
+                combined4 = "Ugyldig streng: skal indeholde \"" + code.includes + "\"";
               } else if ("regex" === code.format) {
                 const _HermesInternal6 = HermesInternal;
-                combined4 = "Cha\u00EEne invalide : doit correspondre au mod\u00E8le " + code.pattern;
+                combined4 = "Ugyldig streng: skal matche m\u00F8nsteret " + code.pattern;
               } else {
                 const format = closure_1[code.format] ?? code.format;
                 const _HermesInternal5 = HermesInternal;
-                combined4 = "" + format + " invalide";
+                combined4 = "Ugyldig " + format;
               }
               return combined4;
             }
             case "not_multiple_of":
             {
               const _HermesInternal4 = HermesInternal;
-              return "Nombre invalide : doit \u00EAtre un multiple de " + code.divisor;
+              return "Ugyldigt tal: skal v\u00E6re deleligt med " + code.divisor;
             }
             case "unrecognized_keys":
             {
-              let str3 = "";
-              let str4 = "";
+              let str4 = "Ukendt n\u00F8gle";
               if (code.keys.length > 1) {
-                str4 = "s";
-              }
-              if (code.keys.length > 1) {
-                str3 = "s";
+                str4 = "Ukendte n\u00F8gler";
               }
               const _HermesInternal3 = HermesInternal;
-              return "Cl\u00E9" + str4 + " non reconnue" + str3 + " : " + captureStackTrace.joinValues(code.keys, ", ");
+              return "" + str4 + ": " + captureStackTrace.joinValues(code.keys, ", ");
             }
             case "invalid_key":
             {
               const _HermesInternal2 = HermesInternal;
-              return "Cl\u00E9 invalide dans " + code.origin;
+              return "Ugyldig n\u00F8gle i " + code.origin;
             }
             case "invalid_union":
             {
-              return "Entr\u00E9e invalide";
+              return "Ugyldigt input: matcher ingen af de tilladte typer";
             }
             case "invalid_element":
             {
               const _HermesInternal = HermesInternal;
-              return "Valeur invalide dans " + code.origin;
+              return "Ugyldig v\u00E6rdi i " + code.origin;
             }
             default:
             {
-              return "Entr\u00E9e invalide";
+              return "Ugyldigt input";
             }
           }
         }
     };
-    const obj2 = { string: { unit: "caract\u00E8res", verb: "avoir" }, file: { unit: "octets", verb: "avoir" }, array: { unit: "\u00E9l\u00E9ments", verb: "avoir" }, set: { unit: "\u00E9l\u00E9ments", verb: "avoir" } };
-    closure_1 = { regex: "entr\u00E9e", email: "adresse e-mail", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "date et heure ISO", date: "date ISO", time: "heure ISO", duration: "dur\u00E9e ISO", ipv4: "adresse IPv4", ipv6: "adresse IPv6", cidrv4: "plage IPv4", cidrv6: "plage IPv6", base64: "cha\u00EEne encod\u00E9e en base64", base64url: "cha\u00EEne encod\u00E9e en base64url", json_string: "cha\u00EEne JSON", e164: "num\u00E9ro E.164", jwt: "JWT", template_literal: "entr\u00E9e" };
-    let closure_2 = { nan: "NaN", number: "nombre", array: "tableau" };
+    const obj2 = { string: { unit: "tegn", verb: "havde" }, file: { unit: "bytes", verb: "havde" }, array: { unit: "elementer", verb: "indeholdt" }, set: { unit: "elementer", verb: "indeholdt" } };
+    closure_1 = { regex: "input", email: "e-mailadresse", url: "URL", emoji: "emoji", uuid: "UUID", uuidv4: "UUIDv4", uuidv6: "UUIDv6", nanoid: "nanoid", guid: "GUID", cuid: "cuid", cuid2: "cuid2", ulid: "ULID", xid: "XID", ksuid: "KSUID", datetime: "ISO dato- og klokkesl\u00E6t", date: "ISO-dato", time: "ISO-klokkesl\u00E6t", duration: "ISO-varighed", ipv4: "IPv4-omr\u00E5de", ipv6: "IPv6-omr\u00E5de", cidrv4: "IPv4-spektrum", cidrv6: "IPv6-spektrum", base64: "base64-kodet streng", base64url: "base64url-kodet streng", json_string: "JSON-streng", e164: "E.164-nummer", jwt: "JWT", template_literal: "input" };
+    let closure_2 = { nan: "NaN", string: "streng", number: "tal", boolean: "boolean", array: "liste", object: "objekt", set: "s\u00E6t", file: "fil" };
     return obj;
   } else {
     throw new TypeError("Trying to call a non-function");

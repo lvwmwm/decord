@@ -1,11 +1,11 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10337
+// Function ID: 10338
 // Name: ApplicationInteractionInfoUtils
-// Dependencies: [6205, 2121, 2]
+// Dependencies: [6208, 2121, 2]
 // Exports: canViewInteractionInfo, isPrimaryEntryPointCommandMessage
 
-// Module 10329 (ApplicationInteractionInfoUtils)
-import InteractionTypes from "InteractionTypes" /* 6205 */;
+// Module 10337 (ApplicationInteractionInfoUtils)
+import InteractionTypes from "InteractionTypes" /* 6208 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;

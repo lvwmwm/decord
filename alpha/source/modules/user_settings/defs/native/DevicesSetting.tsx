@@ -1,13 +1,13 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17134
+// Function ID: 17135
 // Name: DevicesSetting
-// Dependencies: [1072, 11729, 1113, 17111, 17113, 2]
+// Dependencies: [1072, 11737, 1113, 17135, 17137, 2]
 
-// Module 17110 (DevicesSetting)
+// Module 17134 (DevicesSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import LaptopPhoneIcon from "LaptopPhoneIcon" /* 17111 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
+import LaptopPhoneIcon from "LaptopPhoneIcon" /* 17135 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

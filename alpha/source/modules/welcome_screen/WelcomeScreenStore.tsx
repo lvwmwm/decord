@@ -1,9 +1,9 @@
-// Module ID: 14443
-// Function ID: 14444
+// Module ID: 14456
+// Function ID: 14457
 // Name: WelcomeScreenStore
 // Dependencies: [504, 572, 2]
 
-// Module 14443 (WelcomeScreenStore)
+// Module 14456 (WelcomeScreenStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

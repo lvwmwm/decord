@@ -1,24 +1,24 @@
-// Module ID: 11391
-// Function ID: 11392
+// Module ID: 11399
+// Function ID: 11400
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 21, 11392, 11393, 11394, 11395, 11396, 11397, 1113, 5141, 5377, 5148, 10751, 12, 6165, 5851, 5761, 2]
+// Dependencies: [19, 21, 11400, 11401, 11402, 11403, 11404, 11405, 1113, 5143, 5379, 5150, 10757, 12, 6168, 5854, 5763, 2]
 // Exports: default
 
-// Module 11391 (ChannelFollowSuccessAlert)
+// Module 11399 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
 import intl3 from "intl" /* 1113 */;
-import useThemeDefault from "useTheme" /* 5377 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import AlertDefault from "Alert" /* 6165 */;
-import AssetRegistry from "AssetRegistry" /* 11392 */;
-import AssetRegistry2 from "AssetRegistry" /* 11393 */;
-import AssetRegistry3 from "AssetRegistry" /* 11394 */;
-import AssetRegistry4 from "AssetRegistry" /* 11395 */;
-import AssetRegistry5 from "AssetRegistry" /* 11396 */;
-import AssetRegistry6 from "AssetRegistry" /* 11397 */;
+import useThemeDefault from "useTheme" /* 5379 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import AlertDefault from "Alert" /* 6168 */;
+import AssetRegistry from "AssetRegistry" /* 11400 */;
+import AssetRegistry2 from "AssetRegistry" /* 11401 */;
+import AssetRegistry3 from "AssetRegistry" /* 11402 */;
+import AssetRegistry4 from "AssetRegistry" /* 11403 */;
+import AssetRegistry5 from "AssetRegistry" /* 11404 */;
+import AssetRegistry6 from "AssetRegistry" /* 11405 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -84,12 +84,12 @@ export default function ChannelFollowSuccessAlert(arg0) {
   const tmp6 = obj.isThemeDark(tmp4) ? items1 : items;
   _require = tmp6;
   items = [tmp6];
-  const tmp5Result = require("module_10751");
+  const tmp5Result = require("module_10757");
   const stableMemo = tmp5Result.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(closure_0);
   }, items);
-  const tmp5Result2 = require("module_10751");
+  const tmp5Result2 = require("module_10757");
   const stableMemo1 = tmp5Result2.useStableMemo(() => {
     const obj = _modDef12;
     return obj.sample(items2);
@@ -102,10 +102,10 @@ export default function ChannelFollowSuccessAlert(arg0) {
   const obj3 = { source: stableMemo, style: tmp.image };
   items1[0] = closure_3(FastImageDefault, obj3);
   const obj4 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stableMemo1() };
-  const Text = tmp5(5761).Text;
+  const Text = tmp5(5763).Text;
   items1[1] = closure_3(Text, obj4);
   const obj5 = { style: tmp.text, variant: "body-md/medium", color: "text-muted", children: intl2.string(require("intl").t["2QbSea"]) };
-  const Text2 = tmp5(5761).Text;
+  const Text2 = tmp5(5763).Text;
   intl2 = tmp5(1113).intl;
   items1[2] = closure_3(Text2, obj5);
   return closure_4(tmp2Result, obj2);

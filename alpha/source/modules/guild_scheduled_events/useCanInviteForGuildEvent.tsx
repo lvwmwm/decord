@@ -1,20 +1,20 @@
-// Module ID: 9127
-// Function ID: 9128
+// Module ID: 9133
+// Function ID: 9134
 // Name: useCanInviteForGuildEvent
-// Dependencies: [4995, 4990, 5071, 5012, 5073, 6990, 4996, 1072, 5078, 9128, 504, 2]
+// Dependencies: [4997, 4992, 5073, 5014, 5075, 6993, 4998, 1072, 5080, 9134, 504, 2]
 // Exports: default
 
-// Module 9127 (useCanInviteForGuildEvent)
+// Module 9133 (useCanInviteForGuildEvent)
 import Constants from "Constants" /* 1072 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5078 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6990 */;
-import canViewInviteModal from "canViewInviteModal" /* 9128 */;
-import StageInstanceStore from "StageInstanceStore" /* 4995 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildChannelStore from "GuildChannelStore" /* 5071 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4998 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5080 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6993 */;
+import canViewInviteModal from "canViewInviteModal" /* 9134 */;
+import StageInstanceStore from "StageInstanceStore" /* 4997 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildChannelStore from "GuildChannelStore" /* 5073 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

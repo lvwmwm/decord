@@ -1,22 +1,22 @@
-// Module ID: 14262
-// Function ID: 14263
+// Module ID: 14275
+// Function ID: 14276
 // Name: ChannelAccessInfo
-// Dependencies: [19, 17, 5008, 5053, 5047, 21, 5141, 575, 1113, 504, 9176, 1380, 5761, 7121, 11838, 1187, 14261, 8802, 9206, 9204, 12108, 2]
+// Dependencies: [19, 17, 5010, 5055, 5049, 21, 5143, 575, 1113, 504, 9183, 1380, 5763, 7124, 11846, 1187, 14274, 8807, 9213, 9211, 12117, 2]
 // Exports: default
 
-// Module 14262 (ChannelAccessInfo)
+// Module 14275 (ChannelAccessInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import GuildRecord from "GuildRecord" /* 5008 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9176 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11838 */;
+import GuildRecord from "GuildRecord" /* 5010 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9183 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11846 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import GuildRoleStore from "GuildRoleStore" /* 5047 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import GuildRoleStore from "GuildRoleStore" /* 5049 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -64,7 +64,7 @@ export default function ChannelAccessInfo(guild) {
     id = guild.id;
   }
   const memberIds = getMemberIds(id);
-  const tmp2Result = guild(9176);
+  const tmp2Result = guild(9183);
   const existingMembers = tmp2Result.getExistingMembers(memberIds, channel, guild, channel.accessPermissions);
   const tmp8 = 0 === stateFromStoresArray.length && 1 === existingMembers.length && isGuildOwner(guild, existingMembers[0]);
   let first = null;
@@ -73,7 +73,7 @@ export default function ChannelAccessInfo(guild) {
   }
   const tmp12 = closure_10;
   let tmp13 = closure_8;
-  const items2 = [closure_8(tmp2(5761).Text, { variant: "body-sm/medium", children: stringResult }), ];
+  const items2 = [closure_8(tmp2(5763).Text, { variant: "body-sm/medium", children: stringResult }), ];
   let obj2 = {
     accessibilityLabel: stringResult,
     accessibilityRole: "button",
@@ -86,7 +86,7 @@ export default function ChannelAccessInfo(guild) {
   };
   const tmp14 = View;
   let obj3 = { style: tmp.sectionContent, children: tmp11(tmp12, obj9) };
-  const PressableOpacity = tmp2(7121).PressableOpacity;
+  const PressableOpacity = tmp2(7124).PressableOpacity;
   if (null != first) {
     let obj4 = { children: items3 };
     let obj5 = { style: tmp.avatar, user: first, guildId: guild.id, size: tmp2(1187).AvatarSizes.XSMALL };
@@ -94,9 +94,9 @@ export default function ChannelAccessInfo(guild) {
     items3 = [tmp13(Avatar, obj5), ];
     let obj6 = { children: items4 };
     let obj7 = { variant: "body-sm/semibold", children: first.tag };
-    items4 = [tmp13(tmp2(5761).Text, obj7), ];
+    items4 = [tmp13(tmp2(5763).Text, obj7), ];
     let obj8 = { variant: "body-xs/medium", children: intl2.string(tmp2(1113).t.rt0ERW) };
-    const Text = tmp2(5761).Text;
+    const Text = tmp2(5763).Text;
     intl2 = tmp2(1113).intl;
     items4[1] = tmp13(Text, obj8);
     items3[1] = closure_9(tmp14, obj6);
@@ -151,23 +151,23 @@ export default function ChannelAccessInfo(guild) {
         const obj7 = { size: "sm", style: closure_2.sectionIcon };
         items = [metroImportAll(GroupIcon, obj7), ];
         const obj8 = { style: closure_2.labelDetail, variant: "body-sm/medium", children: tmp5 };
-        items[1] = metroImportAll(tmp4(5761).Text, obj8);
+        items[1] = metroImportAll(tmp4(5763).Text, obj8);
         return React4(Fragment, obj6);
       }
     }
     obj9 = { children: items5 };
     const MEMBERS = constants.MEMBERS;
     const length = existingMembers.length;
-    channel(14261);
-    items5 = [renderCounts(MEMBERS, length, 0, tmp2(8802).GroupIcon), ];
+    channel(14274);
+    items5 = [renderCounts(MEMBERS, length, 0, tmp2(8807).GroupIcon), ];
     const ROLES = constants.ROLES;
     const length2 = stateFromStoresArray.length;
-    channel(9206);
-    items5[1] = renderCounts(ROLES, length2, 0, guild(9204).ShieldUserIcon);
+    channel(9213);
+    items5[1] = renderCounts(ROLES, length2, 0, guild(9211).ShieldUserIcon);
   }
   const obj10 = { children: items2 };
   items6 = [tmp13(tmp14, obj3), ];
-  const obj11 = { source: channel(12108), size: guild(1187).Icon.Sizes.SMALL };
+  const obj11 = { source: channel(12117), size: guild(1187).Icon.Sizes.SMALL };
   const Icon = tmp2(1187).Icon;
   items6[1] = tmp13(Icon, obj11);
   items2[1] = closure_9(PressableOpacity, obj2);

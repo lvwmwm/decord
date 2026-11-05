@@ -1,13 +1,13 @@
-// Module ID: 11929
-// Function ID: 11930
+// Module ID: 11938
+// Function ID: 11939
 // Name: resolveAppChannel
-// Dependencies: [5, 4990, 5073, 1072, 11054, 2]
+// Dependencies: [5, 4992, 5075, 1072, 11060, 2]
 // Exports: default
 
-// Module 11929 (resolveAppChannel)
+// Module 11938 (resolveAppChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ let obj = function _resolveAppChannel() {
             closure_7 = undefined;
             c5 = 1;
             c6 = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {

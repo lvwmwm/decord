@@ -1,0 +1,10 @@
+// Module ID: 8869
+// Function ID: 8870
+// Name: AssetRegistry
+// Dependencies: [1119]
+
+// Module 8869 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1119 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "24b237fc943d3bc35a4b3cb04c57b99f", name: "CrunchyrollNeutralIcon", type: "png" });

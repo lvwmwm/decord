@@ -1,27 +1,27 @@
-// Module ID: 18622
-// Function ID: 18623
+// Module ID: 18652
+// Function ID: 18653
 // Name: useGuildsBarProps
-// Dependencies: [19, 6703, 5074, 6991, 6992, 15880, 6909, 5053, 5012, 15888, 5172, 6907, 18615, 18612, 21, 18623, 18637, 18638, 18641, 18644, 18668, 18671, 18672, 18673, 18675, 18676, 18677, 18678, 18693, 18695, 5732, 575, 1627, 17315, 17324, 9068, 17564, 504, 7019, 18697, 18698, 5398, 1493, 18700, 7377, 2]
+// Dependencies: [19, 6706, 5076, 6994, 6995, 15892, 6912, 5055, 5014, 15900, 5174, 6910, 18645, 18642, 21, 18653, 18667, 18668, 18671, 18674, 18698, 18701, 18702, 18703, 18705, 18706, 18707, 18708, 18723, 18725, 5734, 575, 1627, 17341, 17350, 9072, 17590, 504, 7022, 18727, 18728, 5400, 1493, 18730, 7380, 2]
 // Exports: default
 
-// Module 18622 (useGuildsBarProps)
+// Module 18652 (useGuildsBarProps)
 import Fragment from "Fragment" /* 21 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6907 */;
-import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 18675 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6910 */;
+import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 18705 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
-import LurkingStore from "LurkingStore" /* 5074 */;
-import MessageRequestStore from "MessageRequestStore" /* 6991 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6992 */;
-import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 15880 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6909 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 15888 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18615 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18612 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
+import LurkingStore from "LurkingStore" /* 5076 */;
+import MessageRequestStore from "MessageRequestStore" /* 6994 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6995 */;
+import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 15892 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6912 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 15900 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18645 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18642 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -163,7 +163,7 @@ export default function useGuildsBarProps(arg0) {
   }, [], tmp4(tmp3[39]));
   const guildsNFolders = stateFromStores2.guildsNFolders;
   const version = stateFromStores2.version;
-  const tmp18 = tmp4(tmp3[40])();
+  let tmp18 = tmp4(tmp3[40])();
   const expanded = tmp18.expanded;
   pendingFolderNode = tmp18.pendingFolderNode;
   const items7 = [waterwheelsDiscoverEnabled];
@@ -274,6 +274,7 @@ export default function useGuildsBarProps(arg0) {
       }
       let tmp13 = stateFromStores;
       if (tmp13) {
+        let tmp14 = guildsNFolders;
         tmp13 = 0 === guildsNFolders.length;
       }
       if (tmp13) {
@@ -630,96 +631,96 @@ export default function useGuildsBarProps(arg0) {
             } else if (constants2.SEPARATOR === id) {
               return { section: constants.SEPARATOR };
             } else if (id.startsWith(constants2.LURKING_GUILDS)) {
-              let num13 = 0;
-              for (const item10168 of lurkingGuildsIds) {
-                if (closure_1_22(constants2.LURKING_GUILDS, id, item10168)) {
-                  let obj15 = { section: constants.LURKING_GUILDS, item: num13 };
-                  obj13.return();
+              let num12 = 0;
+              for (const item10164 of lurkingGuildsIds) {
+                if (closure_1_22(constants2.LURKING_GUILDS, id, item10164)) {
+                  let obj15 = { section: constants.LURKING_GUILDS, item: num12 };
+                  obj12.return();
                   return obj15;
                 } else {
-                  num13 = num13 + 1;
+                  num12 = num12 + 1;
                   continue;
                 }
               }
             } else {
               if (id.startsWith(constants2.PENDING_JOIN_REQUESTS)) {
                 if (null != pendingFolderNode) {
-                  let num2 = 0;
-                  const children = pendingFolderNode.children;
-                  for (const item10030 of children) {
-                    if (closure_1_22(constants2.PENDING_JOIN_REQUESTS, id, item10030.id)) {
-                      let obj16 = { section: constants.PENDING_JOIN_REQUESTS, item: num2 };
-                      obj.return();
-                      return obj16;
+                  num = 0;
+                  const children2 = pendingFolderNode.children;
+                  for (const item10025 of children2) {
+                    if (closure_1_22(constants2.PENDING_JOIN_REQUESTS, id, item10025.id)) {
+                      let obj = { section: constants.PENDING_JOIN_REQUESTS, item: num };
+                      obj21.return();
+                      return obj;
                     } else {
-                      num2 = num2 + 1;
+                      num = num + 1;
                       continue;
                     }
                   }
                 }
               }
-              const tmp15 = constants2;
+              const tmp14 = constants2;
               if (id.startsWith(constants2.GUEST_GUILDS)) {
-                let num11 = 0;
-                for (const item10150 of guestGuildIds) {
-                  if (closure_1_22(constants2.GUEST_GUILDS, id, item10150)) {
-                    let obj17 = { section: constants.GUEST_GUILDS, item: num11 };
-                    obj11.return();
-                    return obj17;
+                let num10 = 0;
+                for (const item10146 of guestGuildIds) {
+                  if (closure_1_22(constants2.GUEST_GUILDS, id, item10146)) {
+                    let obj16 = { section: constants.GUEST_GUILDS, item: num10 };
+                    obj10.return();
+                    return obj16;
                   } else {
-                    num11 = num11 + 1;
+                    num10 = num10 + 1;
                     continue;
                   }
                 }
               } else {
-                if (id.startsWith(tmp15.UNREAD_PRIVATE_CHANNELS)) {
-                  let num5 = 0;
-                  for (const item10061 of privateChannelIds) {
-                    if (closure_1_22(constants2.UNREAD_PRIVATE_CHANNELS, id, item10061)) {
-                      let obj18 = { section: constants.UNREAD_PRIVATE_CHANNELS, item: num5 };
-                      obj3.return();
-                      return obj18;
+                if (id.startsWith(tmp14.UNREAD_PRIVATE_CHANNELS)) {
+                  let num4 = 0;
+                  for (const item10057 of privateChannelIds) {
+                    if (closure_1_22(constants2.UNREAD_PRIVATE_CHANNELS, id, item10057)) {
+                      let obj17 = { section: constants.UNREAD_PRIVATE_CHANNELS, item: num4 };
+                      obj2.return();
+                      return obj17;
                     } else {
-                      num5 = num5 + 1;
+                      num4 = num4 + 1;
                       continue;
                     }
                   }
                 }
                 if (id.startsWith(constants2.GUILDS)) {
+                  let num6 = 0;
                   let num7 = 0;
-                  let num8 = 0;
-                  for (const item10085 of guildsNFolders) {
-                    let tmp29 = item10085;
-                    if (closure_1_22(constants2.GUILDS, id, item10085.id)) {
-                      let obj19 = { section: num7 + constants.GUILDS };
-                      obj5.return();
-                      return obj19;
+                  for (const item10081 of guildsNFolders) {
+                    let tmp28 = item10081;
+                    if (closure_1_22(constants2.GUILDS, id, item10081.id)) {
+                      let obj18 = { section: num6 + constants.GUILDS };
+                      obj4.return();
+                      return obj18;
                     } else {
-                      let children2 = tmp29.children;
-                      for (const item10099 of children2) {
-                        if (closure_1_22(constants2.GUILDS, id, item10099.id)) {
-                          let obj20 = { section: num7 + constants.GUILDS, item: num8 };
-                          obj6.return();
+                      let children = tmp28.children;
+                      for (const item10095 of children) {
+                        if (closure_1_22(constants2.GUILDS, id, item10095.id)) {
+                          let obj19 = { section: num6 + constants.GUILDS, item: num7 };
                           obj5.return();
-                          return obj20;
+                          obj4.return();
+                          return obj19;
                         } else {
-                          num8 = num8 + 1;
+                          num7 = num7 + 1;
                           continue;
                         }
                       }
-                      num7 = num7 + 1;
-                      num8 = 0;
+                      num6 = num6 + 1;
+                      num7 = 0;
                       continue;
                     }
                   }
-                  let num9 = 0;
-                  for (const item10129 of geoRestrictedGuilds) {
-                    if (closure_1_22(constants2.GUILDS, id, item10129.id)) {
-                      let obj21 = { section: num7 + constants.GUILDS, item: num9 };
-                      obj9.return();
-                      return obj21;
+                  let num8 = 0;
+                  for (const item10125 of geoRestrictedGuilds) {
+                    if (closure_1_22(constants2.GUILDS, id, item10125.id)) {
+                      let obj20 = { section: num6 + constants.GUILDS, item: num8 };
+                      obj8.return();
+                      return obj20;
                     } else {
-                      num9 = num9 + 1;
+                      num8 = num8 + 1;
                       continue;
                     }
                   }
@@ -727,7 +728,7 @@ export default function useGuildsBarProps(arg0) {
               }
             }
           }
-          const obj = { id, lurkingGuildsIds, guestGuildIds, privateChannelIds, guildsNFolders, pendingFolderNode, geoRestrictedGuilds };
+          let obj = { id, lurkingGuildsIds, guestGuildIds, privateChannelIds, guildsNFolders, pendingFolderNode, geoRestrictedGuilds };
           return getAnchorIndexFromId(obj);
         }
       };

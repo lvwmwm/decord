@@ -1,22 +1,22 @@
-// Module ID: 12873
-// Function ID: 12874
+// Module ID: 12880
+// Function ID: 12881
 // Name: useConjureVoiceChannelPin
-// Dependencies: [5, 32, 19, 4990, 5071, 5073, 5083, 1385, 6979, 11049, 1072, 504, 5786, 11141, 2]
+// Dependencies: [5, 32, 19, 4992, 5073, 5075, 5085, 1385, 6982, 11055, 1072, 504, 5788, 11149, 2]
 // Exports: useConjureVoiceChannelPinForm, useConjureVoiceChannelPinOutcome
 
-// Module 12873 (useConjureVoiceChannelPin)
-import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
-import useChannelName from "useChannelName" /* 5786 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 11141 */;
+// Module 12880 (useConjureVoiceChannelPin)
+import GuildChannelStore2 from "GuildChannelStore" /* 5073 */;
+import useChannelName from "useChannelName" /* 5788 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 11149 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
-import RelationshipStore from "RelationshipStore" /* 5083 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
+import RelationshipStore from "RelationshipStore" /* 5085 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
-import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 11049 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 11055 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

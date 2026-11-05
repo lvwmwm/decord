@@ -1,27 +1,27 @@
-// Module ID: 19267
-// Function ID: 19268
+// Module ID: 19298
+// Function ID: 19299
 // Name: SettingsNavigator
-// Dependencies: [19, 17, 2191, 16837, 1072, 21, 10035, 5141, 575, 19268, 1187, 5761, 1500, 15575, 19269, 7302, 563, 7462, 7487, 16839, 7794, 16840, 7306, 16116, 5732, 7121, 1113, 18747, 19270, 16683, 19271, 38, 2]
+// Dependencies: [19, 17, 2191, 16860, 1072, 21, 10041, 5143, 575, 19299, 1187, 5763, 1500, 15588, 19300, 7305, 563, 7465, 7490, 16862, 7799, 16863, 7309, 16129, 5734, 7124, 1113, 18777, 19301, 16696, 19302, 38, 2]
 
-// Module 19267 (SettingsNavigator)
+// Module 19298 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Pressables from "Pressables" /* 7121 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7302 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 16839 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 18747 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 19268 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Pressables from "Pressables" /* 7124 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7305 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 16862 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 18777 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 19299 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16837 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16860 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 10035 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import NativeStackView from "NativeStackView" /* 10041 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

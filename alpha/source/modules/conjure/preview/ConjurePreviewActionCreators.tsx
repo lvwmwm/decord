@@ -1,21 +1,21 @@
-// Module ID: 11079
-// Function ID: 11080
+// Module ID: 11088
+// Function ID: 11089
 // Name: ConjurePreviewActionCreators
-// Dependencies: [5, 4994, 6979, 11080, 1072, 11081, 6980, 572, 11125, 11126, 1282, 2]
+// Dependencies: [5, 4996, 6982, 11089, 1072, 11090, 6983, 572, 11078, 11134, 1282, 2]
 // Exports: loadConjurePreviewDm, pauseConjurePreview, reloadConjureAppFrames, reloadConjureProjectFrames, resumeConjurePreview, selectConjureGameCapture, setBuilderPreviewApplicationId, setBuilderPreviewLandscape, setBuilderPreviewMobile, wakeConjurePreview
 
-// Module 11079 (ConjurePreviewActionCreators)
+// Module 11088 (ConjurePreviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import ChannelRecord from "ChannelRecord" /* 4994 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11081 */;
-import leaveFrame from "leaveFrame" /* 11125 */;
-import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 11126 */;
+import ChannelRecord from "ChannelRecord" /* 4996 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
+import leaveFrame from "leaveFrame" /* 11078 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 11090 */;
+import conjurePausedPreviewViews from "conjurePausedPreviewViews" /* 11134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
-import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 11080 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import ConjurePreviewPauseStore from "ConjurePreviewPauseStore" /* 11089 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _loadConjurePreviewDm() {
@@ -53,12 +53,12 @@ export function reloadConjureProjectFrames(projectId) {
     obj.reloadAppFrames(application_id);
     const obj2 = ConjureProjectTypes;
     const tmp2 = importDefault;
-    if (!obj2.isPreviewlessProject(project)) {
+    if (obj2.usesPreviewApp(project)) {
       let prop = project.preview_application_id;
       if (prop == null) {
         prop = null;
       }
-      const tmp2Result = tmp2(11081);
+      const tmp2Result = tmp2(11090);
       tmp2Result.reloadAppFrames(prop);
     }
   }

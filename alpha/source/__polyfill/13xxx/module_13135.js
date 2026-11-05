@@ -6,13 +6,15 @@
 let items;
 let obj2;
 const obj = {
-  name: "Value",
+  name: "Selector",
   structure: obj2,
   parse() {
-    let sequence;
-    const tokenStart = this.scanner.tokenStart;
-    const element = { type: "Value", loc: this.getLocation(tokenStart, this.scanner.tokenStart), children: sequence };
-    sequence = this.readSequence(this.scope.Value);
+    const self = this;
+    const sequence = this.readSequence(this.scope.Selector);
+    if (null === this.getFirstListNode(sequence)) {
+      self.error("Selector is expected");
+    }
+    const element = { type: "Selector", loc: self.getLocationFromList(sequence), children: sequence };
     return element;
   },
   generate(arg0) {
@@ -20,6 +22,6 @@ const obj = {
   }
 };
 obj2 = { children: items };
-items = [[]];
+items = [["TypeSelector", "IdSelector", "ClassSelector", "AttributeSelector", "PseudoClassSelector", "PseudoElementSelector", "Combinator", "WhiteSpace"]];
 
 export default obj;

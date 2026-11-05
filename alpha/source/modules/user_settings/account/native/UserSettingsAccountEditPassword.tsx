@@ -1,33 +1,33 @@
-// Module ID: 16899
-// Function ID: 16900
+// Module ID: 16922
+// Function ID: 16923
 // Name: UserSettingsAccountEditPassword
-// Dependencies: [19, 17, 4983, 7704, 1385, 1072, 21, 5141, 575, 5207, 7289, 7299, 12, 1252, 7298, 7304, 5851, 16900, 5761, 1113, 6162, 7223, 5768, 7301, 504, 38, 1499, 2]
+// Dependencies: [19, 17, 4985, 7706, 1385, 1072, 21, 5143, 575, 5209, 7292, 7302, 12, 1252, 7301, 7307, 5854, 16923, 5763, 1113, 6165, 7226, 5770, 7304, 504, 38, 1499, 2]
 // Exports: default
 
-// Module 16899 (UserSettingsAccountEditPassword)
+// Module 16922 (UserSettingsAccountEditPassword)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import native from "native" /* 5207 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7223 */;
-import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7289 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7298 */;
-import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 7299 */;
-import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7304 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16900 */;
+import native from "native" /* 5209 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7226 */;
+import UserSettingsAccountActionCreatorsAll from "UserSettingsAccountActionCreators" /* 7292 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7301 */;
+import showInvalidUsernameToastNative from "showInvalidUsernameToastNative" /* 7302 */;
+import UserSettingsAccountUnverifiedHeader from "UserSettingsAccountUnverifiedHeader" /* 7307 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16923 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4983 */;
-import UserSettingsAccountStore from "UserSettingsAccountStore" /* 7704 */;
+import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4985 */;
+import UserSettingsAccountStore from "UserSettingsAccountStore" /* 7706 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const UserSettingsAccountUnverifiedHeaderDefault = UserSettingsAccountUnverifiedHeader;
@@ -211,18 +211,18 @@ class EditPassword extends Component {
     }
     items[2] = tmp4Result2;
     const Stack = Stack_Stack.Stack;
-    const obj10 = { label: passwordLabel, secureTextEntry: true, errorMessage: self.getError("password"), onChange: self.handlePasswordChange, value: password, onSubmitEditing: self.canSubmit() ? self.handleSubmit : self.handleFocusNewPassword, returnKeyType: "next", autoComplete: "current-password", required: true };
+    const obj10 = { label: passwordLabel, secureTextEntry: true, revealable: true, errorMessage: self.getError("password"), onChange: self.handlePasswordChange, value: password, onSubmitEditing: self.canSubmit() ? self.handleSubmit : self.handleFocusNewPassword, returnKeyType: "next", autoCapitalize: "none", autoComplete: "current-password", textContentType: "password", required: true };
     const TextInput = TextInput_TextInput.TextInput;
     const items3 = [unpackModuleId(TextInput, obj10), , ];
-    const obj11 = { label: newPasswordLabel, ref: self.handleSetNewPasswordRef, secureTextEntry: true, errorMessage: self.getError("new_password"), onChange: self.handleNewPasswordChange, value: newPassword, returnKeyType: "done", autoComplete: "new-password", onSubmitEditing: handleSubmit, required: true };
-    const TextInput2 = tmp16(7223).TextInput;
+    const obj11 = { label: newPasswordLabel, ref: self.handleSetNewPasswordRef, secureTextEntry: true, revealable: true, errorMessage: self.getError("new_password"), onChange: self.handleNewPasswordChange, value: newPassword, returnKeyType: "done", autoCapitalize: "none", autoComplete: "new-password", textContentType: "newPassword", onSubmitEditing: handleSubmit, required: true };
+    const TextInput2 = tmp16(7226).TextInput;
     handleSubmit = undefined;
     if (self.canSubmit()) {
       handleSubmit = self.handleSubmit;
     }
     items3[1] = unpackModuleId(TextInput2, obj11);
     const obj12 = { text: intl5.string(intl6.t["FRep5/"]), onPress: self.handleSubmit, loading: submitting, disabled: submitting };
-    const Button = tmp16(5768).Button;
+    const Button = tmp16(5770).Button;
     intl5 = tmp16(1113).intl;
     if (!submitting) {
       submitting = null == password;
@@ -230,7 +230,7 @@ class EditPassword extends Component {
     if (!submitting) {
       submitting = null == newPassword;
     }
-    const obj13 = { children: authStore2(React3, obj) };
+    const obj13 = { keyboardShouldPersistTaps: "handled", children: authStore2(React3, obj) };
     const obj14 = { spacing: 24, children: items3 };
     items3[2] = unpackModuleId(Button, obj12);
     items[3] = authStore2(Stack, obj14);
@@ -244,7 +244,7 @@ let result = size.fileFinishedImporting("modules/user_settings/account/native/Us
 export default function EditPasswordWrapper() {
   let flag;
   const tmp2 = dependencyMap;
-  let obj = flag(7301);
+  let obj = flag(7304);
   const params = obj.useSettingNavigationRoute().params;
   flag = undefined;
   if (params != null) {

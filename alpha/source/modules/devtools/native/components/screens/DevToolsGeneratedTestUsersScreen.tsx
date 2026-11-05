@@ -1,44 +1,44 @@
-// Module ID: 17839
-// Function ID: 17840
+// Module ID: 17867
+// Function ID: 17868
 // Name: DevToolsGeneratedTestUsersScreen
-// Dependencies: [5, 32, 19, 17, 17840, 502, 21, 12323, 11469, 13586, 17841, 13587, 17843, 12124, 17845, 15907, 17847, 17849, 17851, 17853, 10256, 17855, 17857, 17859, 17861, 7701, 5141, 575, 6162, 7223, 5768, 5382, 17863, 5396, 7457, 7201, 7116, 7134, 504, 5743, 2]
+// Dependencies: [5, 32, 19, 17, 17868, 502, 21, 12330, 11477, 13597, 17869, 13598, 17871, 12133, 17873, 15919, 17875, 17877, 17879, 17881, 10264, 17883, 17885, 17887, 17889, 7703, 5143, 575, 6165, 7226, 5770, 5384, 17891, 5398, 7460, 7204, 7119, 7137, 504, 5745, 2]
 // Exports: default
 
-// Module 17839 (DevToolsGeneratedTestUsersScreen)
+// Module 17867 (DevToolsGeneratedTestUsersScreen)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
-import components_Button_Button from "components/Button/Button" /* 5768 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7223 */;
-import SettingsIcon from "SettingsIcon" /* 7701 */;
-import FoodIcon from "FoodIcon" /* 10256 */;
-import ShieldIcon from "ShieldIcon" /* 11469 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 12124 */;
-import UserIcon from "UserIcon" /* 12323 */;
-import GiftIcon from "GiftIcon" /* 13586 */;
-import PiggyBankIcon from "PiggyBankIcon" /* 13587 */;
-import SignPostIcon from "SignPostIcon" /* 15907 */;
-import AchievementsIcon from "AchievementsIcon" /* 17841 */;
-import TreehouseIcon from "TreehouseIcon" /* 17843 */;
-import CompassIcon from "CompassIcon" /* 17845 */;
-import CarIcon from "CarIcon" /* 17847 */;
-import TrainIcon from "TrainIcon" /* 17849 */;
-import TeacupIcon from "TeacupIcon" /* 17851 */;
-import InventoryIcon from "InventoryIcon" /* 17853 */;
-import BurgerIcon from "BurgerIcon" /* 17855 */;
-import MagicDoorIcon from "MagicDoorIcon" /* 17857 */;
-import PawPrintIcon from "PawPrintIcon" /* 17859 */;
-import RecordPlayerIcon from "RecordPlayerIcon" /* 17861 */;
-import GeneratedTestUserActionCreators from "GeneratedTestUserActionCreators" /* 17863 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5745 */;
+import components_Button_Button from "components/Button/Button" /* 5770 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7226 */;
+import SettingsIcon from "SettingsIcon" /* 7703 */;
+import FoodIcon from "FoodIcon" /* 10264 */;
+import ShieldIcon from "ShieldIcon" /* 11477 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 12133 */;
+import UserIcon from "UserIcon" /* 12330 */;
+import GiftIcon from "GiftIcon" /* 13597 */;
+import PiggyBankIcon from "PiggyBankIcon" /* 13598 */;
+import SignPostIcon from "SignPostIcon" /* 15919 */;
+import AchievementsIcon from "AchievementsIcon" /* 17869 */;
+import TreehouseIcon from "TreehouseIcon" /* 17871 */;
+import CompassIcon from "CompassIcon" /* 17873 */;
+import CarIcon from "CarIcon" /* 17875 */;
+import TrainIcon from "TrainIcon" /* 17877 */;
+import TeacupIcon from "TeacupIcon" /* 17879 */;
+import InventoryIcon from "InventoryIcon" /* 17881 */;
+import BurgerIcon from "BurgerIcon" /* 17883 */;
+import MagicDoorIcon from "MagicDoorIcon" /* 17885 */;
+import PawPrintIcon from "PawPrintIcon" /* 17887 */;
+import RecordPlayerIcon from "RecordPlayerIcon" /* 17889 */;
+import GeneratedTestUserActionCreators from "GeneratedTestUserActionCreators" /* 17891 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17840 */;
+import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17868 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c4, dependencyMap, pools;
@@ -140,7 +140,7 @@ function PoolIdInput(onSubmit) {
   }), items);
   let obj = { spacing: 4, style: tmp.inputContainer, children: items1 };
   const Stack = Stack_Stack.Stack;
-  items1 = [authStore(TextInput_TextInput.TextInput, { size: "md", placeholder: "Enter Pool ID", onChange: tmp3, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true }), authStore(TextInput_TextInput.TextInput, { size: "md", secureTextEntry: true, placeholder: "Enter Password", onChange: tmp5, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true }), ];
+  items1 = [authStore(TextInput_TextInput.TextInput, { size: "md", placeholder: "Enter Pool ID", onChange: tmp3, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", clearable: true }), authStore(TextInput_TextInput.TextInput, { size: "md", secureTextEntry: true, revealable: true, placeholder: "Enter Password", onChange: tmp5, autoCapitalize: "none", autoCorrect: false, autoComplete: "off", textContentType: "none" }), ];
   let tmp11 = 0 === first.length;
   const Button = components_Button_Button.Button;
   const tmp10 = authStore;
@@ -172,9 +172,9 @@ function UserActionSheet(pool) {
     obj2.loginAsGeneratedUser(pool.id, arg0);
   }, items);
   let obj = { header: closure_10(BottomSheetTitleHeader, obj2), children: closure_10(closure_6, obj3) };
-  const BottomSheet = pool(5396).BottomSheet;
+  const BottomSheet = pool(5398).BottomSheet;
   obj2 = { title: pool.summary, subtitle: "" + usersForPool.length + " users" };
-  BottomSheetTitleHeader = pool(7457).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = pool(7460).BottomSheetTitleHeader;
   obj3 = { style: { paddingHorizontal: usersForPool(575).space.PX_12 }, children: closure_10(TableRowGroup, obj5) };
   obj5 = {
     title: "Select User to Login As",
@@ -205,7 +205,7 @@ function UserActionSheet(pool) {
     })
   };
   ({ paddingHorizontal: usersForPool(575).space.PX_12 });
-  TableRowGroup = pool(7201).TableRowGroup;
+  TableRowGroup = pool(7204).TableRowGroup;
   return closure_10(BottomSheet, obj);
 }
 function PoolUsers(pool) {
@@ -226,7 +226,7 @@ function PoolUsers(pool) {
     obj.openLazy(Promise.resolve(obj2), "generated-test-users", obj3);
   }, items);
   let obj = { icon: closure_10(tmp, { size: "md", color: tmp2 }), label: summary, subLabel: "" + usersForPool.length + " users", arrow: true, onPress: callback, start, end };
-  const TableRow = pool(7116).TableRow;
+  const TableRow = pool(7119).TableRow;
   return closure_10(TableRow, obj);
 }
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
@@ -315,7 +315,7 @@ export default function DevToolsGeneratedTestUsersScreen() {
     }
   });
   let obj2 = { style: tmp.container, children: tmp5(tmp7, obj3) };
-  obj3 = { contentContainerStyle: items1, children: tmp8(Stack, obj5) };
+  obj3 = { keyboardShouldPersistTaps: "handled", contentContainerStyle: items1, children: tmp8(Stack, obj5) };
   items1 = [tmp.contentContainer, ];
   let obj4 = { paddingBottom: nativeDefault.space.PX_16 + insets.bottom };
   const callback = useCallback(function() {
@@ -323,14 +323,14 @@ export default function DevToolsGeneratedTestUsersScreen() {
   }, []);
   items1[1] = obj4;
   tmp8 = closure_11;
-  Stack = stateFromStoresArray(6162).Stack;
+  Stack = stateFromStoresArray(6165).Stack;
   const items2 = [closure_10(PoolIdInput, { onSubmit: callback }), ];
   let tmp5Result = 0 === stateFromStoresArray.length;
-  const TableRowGroup = stateFromStoresArray(7201).TableRowGroup;
+  const TableRowGroup = stateFromStoresArray(7204).TableRowGroup;
   const tmp6 = closure_6;
   tmp7 = closure_7;
   if (tmp5Result) {
-    tmp5Result = tmp5(tmp2(7116).TableRow, { label: "No pools available." });
+    tmp5Result = tmp5(tmp2(7119).TableRow, { label: "No pools available." });
   }
   obj5 = { spacing: 16, children: items2 };
   const obj6 = { title: "Generated Test User Pools", hasIcons: true, children: items3 };

@@ -1,50 +1,50 @@
 // Module ID: 6110
 // Function ID: 6111
-// Dependencies: [19, 17, 6106]
-// Exports: useTabsHost
+// Dependencies: [6111]
 
 // Module 6110
-import react_native from "react-native" /* 17 */;
-import RNSLog2 from "RNSLog" /* 6106 */;
-import react_mod from "react" /* 19 */;
+import get_synchronousScreenUpdatesEnabled from "get synchronousScreenUpdatesEnabled" /* 6111 */;
 
-let react = react_mod;
-const findNodeHandle = react_native.findNodeHandle;
 
-export function useTabsHost(arg0) {
-  let items;
-  let onTabSelected;
-  let ref;
-  let ref2;
-  ({ componentNodeRef: require, onTabSelected } = arg0);
-  react = undefined;
-  react = react.useRef(-1);
-  const effect = react.useEffect(() => {
-    if (null != require.current) {
-      let num2 = findNodeHandle(tmp.current);
-      const tmp3 = ref2;
-      if (num2 == null) {
-        num2 = -1;
-      }
-      tmp3.current = num2;
-    } else {
-      ref2.current = -1;
+export const RNSLog = {
+  log(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(log, items, console);
     }
-  }, []);
-  const obj = {
-    onTabSelected: react.useCallback((nativeEvent) => {
-      const RNSLog = RNSLog2.RNSLog;
-      let num = ref2.current;
-      const log = RNSLog.log;
-      if (num == null) {
-        num = -1;
-      }
-      log("TabsHost [" + num + "] onTabSelected: " + JSON.stringify(nativeEvent.nativeEvent));
-      if (onTabSelected != null) {
-        onTabSelected(nativeEvent);
-      }
-    }, items)
-  };
-  items = [onTabSelected];
-  return obj;
-}
+  },
+  warn(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(warn, items, console);
+    }
+  },
+  error(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(error, items, console);
+    }
+  },
+  info(arg0) {
+    const substr = [...arguments].slice();
+    if (get_synchronousScreenUpdatesEnabled.featureFlags.stable.debugLogging) {
+      const _console = console;
+      const items = [arg0];
+      HermesBuiltin.arraySpread(items, substr, 1);
+      const _console2 = console;
+      HermesBuiltin.apply(info, items, console);
+    }
+  }
+};

@@ -1,17 +1,17 @@
-// Module ID: 19532
-// Function ID: 19533
+// Module ID: 19567
+// Function ID: 19568
 // Name: VoicePanelNoVideoParticipantsCard
-// Dependencies: [19, 17, 21, 5141, 575, 11410, 5893, 7101, 5761, 1113, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 11418, 5896, 7104, 5763, 1113, 2]
 
-// Module 19532 (VoicePanelNoVideoParticipantsCard)
+// Module 19567 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5893 */;
-import NativeViewDefault from "NativeView" /* 7101 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11410 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5896 */;
+import NativeViewDefault from "NativeView" /* 7104 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11418 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -45,13 +45,13 @@ const memoResult = react.memo(function VoicePanelNoVideoParticipantsCard() {
   let obj = { style: tmp.container, children: items1 };
   const obj2 = { style: tmp.label, variant: "body-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1113).t["8eBJ73"]) };
   const tmp3 = NativeViewDefault;
-  const Text = channelId(5761).Text;
+  const Text = channelId(5763).Text;
   intl = channelId(1113).intl;
   items1 = [closure_5(Text, obj2), ];
   const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(channelId(1113).t.kLQySL), children: closure_5(Text2, obj4) };
   intl2 = channelId(1113).intl;
   obj4 = { variant: "body-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1113).t.kLQySL) };
-  Text2 = channelId(5761).Text;
+  Text2 = channelId(5763).Text;
   intl3 = channelId(1113).intl;
   items1[1] = closure_5(Pressable, obj3);
   return closure_6(tmp3, obj);

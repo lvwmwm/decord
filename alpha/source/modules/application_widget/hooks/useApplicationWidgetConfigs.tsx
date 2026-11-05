@@ -1,13 +1,13 @@
-// Module ID: 12278
-// Function ID: 12279
+// Module ID: 12287
+// Function ID: 12288
 // Name: useApplicationWidgetConfigs
-// Dependencies: [19, 11130, 4966, 504, 1380, 11129, 2]
+// Dependencies: [19, 11138, 4968, 504, 1380, 11137, 2]
 // Exports: default
 
-// Module 12278 (useApplicationWidgetConfigs)
+// Module 12287 (useApplicationWidgetConfigs)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11129 */;
-import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11130 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11137 */;
+import ApplicationWidgetConfigStore2 from "ApplicationWidgetConfigStore" /* 11138 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

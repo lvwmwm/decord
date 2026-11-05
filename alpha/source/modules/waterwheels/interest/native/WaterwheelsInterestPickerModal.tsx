@@ -1,18 +1,22 @@
-// Module ID: 18679
-// Function ID: 18680
+// Module ID: 18709
+// Function ID: 18710
 // Name: WaterwheelsInterestPickerModal
-// Dependencies: [19, 17, 1072, 21, 5141, 5323, 18680, 18683, 6879, 18684, 1113, 2537, 2]
+// Dependencies: [19, 17, 1072, 21, 5143, 5325, 18710, 18713, 9070, 6882, 18714, 1113, 2537, 2]
 
-// Module 18679 (WaterwheelsInterestPickerModal)
+// Module 18709 (WaterwheelsInterestPickerModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
+import RootNavigationRef from "RootNavigationRef" /* 5325 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9070 */;
+import InterestPickerActionCreators from "InterestPickerActionCreators" /* 18713 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let _require, importDefault;
 
 class WaterwheelsInterestPickerModal {
   constructor() {
@@ -21,21 +25,28 @@ class WaterwheelsInterestPickerModal {
     let intl;
     let intl2;
     let onSkip;
+    let ref;
     const tmp = closure_7();
-    const tmp4 = onSkip(18680)("WaterwheelsInterestPickerModal");
+    const tmp4 = require("useInterestPickerCatalog")("WaterwheelsInterestPickerModal");
     _require = tmp4;
+    importDefault = react.useRef(false);
     onSkip = react.useCallback((gameIds) => {
-      const obj = closure_0(dependencyMap[7]);
-      const result = obj.setInterestPickerPicks(gameIds);
-      const obj2 = closure_0(dependencyMap[7]);
-      const result1 = obj2.markInterestPickerSeen();
-      const obj3 = callback(dependencyMap[8]);
-      obj3.popWithKey(closure_1_6);
-      const obj4 = closure_0(dependencyMap[5]);
-      const rootNavigationRef = obj4.getRootNavigationRef();
-      if (null != rootNavigationRef) {
-        const obj5 = { screen: "icymi-screen", params: { inNestedNavigator: true } };
-        rootNavigationRef.navigate("icymi", obj5);
+      if (!ref.current) {
+        tmp.current = true;
+        const obj = InterestPickerActionCreators;
+        const result = obj.setInterestPickerPicks(gameIds);
+        const obj2 = InterestPickerActionCreators;
+        const result1 = obj2.markInterestPickerSeen();
+        const obj3 = ICYMIActionCreatorsDefault;
+        const dehydrated = obj3.fetchDehydrated({ isDiscoverPickerCommit: true });
+        const obj4 = ModalActionCreatorsDefault;
+        obj4.popWithKey(c6);
+        const obj5 = RootNavigationRef;
+        const rootNavigationRef = obj5.getRootNavigationRef();
+        if (null != rootNavigationRef) {
+          const obj6 = { screen: "icymi-screen", params: { inNestedNavigator: true } };
+          rootNavigationRef.navigate("icymi", obj6);
+        }
       }
     }, []);
     const items = [tmp4, onSkip];
@@ -46,8 +57,8 @@ class WaterwheelsInterestPickerModal {
     }, items);
     let tmp7 = null;
     if (null != tmp4) {
-      let obj2 = { catalog: tmp4, title: intl.string(tmp2(2537)["5MUKTF"]), subtitle: intl2.string(tmp2(2537)["z/57xV"]), minSelection: 1, onContinue: onSkip, onSkip };
-      onSkip(18684);
+      let obj2 = { catalog: tmp4, title: intl.string(tmp2(tmp3[12])["5MUKTF"]), subtitle: intl2.string(tmp2(tmp3[12])["z/57xV"]), minSelection: 1, onContinue: onSkip, onSkip };
+      require("InterestGamePicker");
       intl = require("intl").intl;
       intl2 = require("intl").intl;
       tmp7 = <View style={tmp.screen}>{null}</View>;

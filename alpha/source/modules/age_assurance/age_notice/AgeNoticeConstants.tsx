@@ -1,9 +1,9 @@
-// Module ID: 6872
-// Function ID: 6873
+// Module ID: 6875
+// Function ID: 6876
 // Name: AgeNoticeConstants
 // Dependencies: [2]
 
-// Module 6872 (AgeNoticeConstants)
+// Module 6875 (AgeNoticeConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/AgeNoticeConstants.tsx");
@@ -17,4 +17,4 @@ export const AGE_NOTICE_AGE_GROUP_SUPPORT_ARTICLE_IDS_BY_COUNTRY = { AU: "388320
 export const AGE_NOTICE_SETTINGS_LOCATION = "AccountStatusSettings";
 export const AGE_NOTICE_CHANNEL_LOCATION = "ChannelWarning";
 export const AGE_NOTICE_SERVER_LOCATION = "ServerWarning";
-export const TINY_BRONCO_NSFW_SERVER_LOCATION = "NsfwServerWarning";
+export const AGE_NOTICE_NSFW_SERVER_LOCATION = "NsfwServerWarning";

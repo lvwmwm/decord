@@ -1,23 +1,23 @@
-// Module ID: 19866
-// Function ID: 19867
+// Module ID: 19900
+// Function ID: 19901
 // Name: NotifSettingsProtoManager
-// Dependencies: [15801, 16524, 18221, 15815, 18228, 16529, 572, 7423, 1449, 2]
+// Dependencies: [15814, 16537, 18249, 15828, 18256, 16542, 572, 7426, 1449, 2]
 
-// Module 19866 (NotifSettingsProtoManager)
+// Module 19900 (NotifSettingsProtoManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 15815 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16524 */;
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 16529 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 18221 */;
-import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 18228 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15801 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 15828 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16537 */;
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 16542 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 18249 */;
+import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 18256 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15814 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 
-const f118887 = () => {
+const f119101 = () => {
   c3 = undefined;
   const obj = closure_1_0(closure_1_2[2]);
   const effectiveNotifSettings = obj.fetchEffectiveNotifSettings();
@@ -37,7 +37,7 @@ function handleRemoteSettingsUpdate() {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
         const _setTimeout = setTimeout;
-        timeout = setTimeout(f118887, 250);
+        timeout = setTimeout(f119101, 250);
       }
     }
   }
@@ -55,7 +55,7 @@ function handleConnectionRestored() {
     const _clearTimeout = clearTimeout;
     clearTimeout(timeout);
     const _setTimeout = setTimeout;
-    timeout = setTimeout(f118887, 250);
+    timeout = setTimeout(f119101, 250);
   }
 }
 function handleAppStateUpdate(state) {
@@ -67,14 +67,14 @@ function handleAppStateUpdate(state) {
   }
 }
 function handleAssignmentChange() {
-  const f118889 = (item) => null != item;
+  const f119103 = (item) => null != item;
   let obj = DeclarativeNotificationSettingsRedesignExperiment;
   const result = obj.isDeclarativeNotificationSettingsRedesignEnabled("effectiveNotifSettingsAssignment");
   require = result;
   const mapped = NOTIF_SETTINGS.map((experiment) => experiment.experiment);
-  let items = [...new Set(mapped.filter(f118889))];
+  let items = [...new Set(mapped.filter(f119103))];
   const items1 = [result];
-  new Set(mapped.filter(f118889));
+  new Set(mapped.filter(f119103));
   const sorted = items.sort();
   HermesBuiltin.arraySpread(items1, sorted.map((item) => {
     const items = [item, ];
@@ -113,7 +113,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
             const _clearTimeout = clearTimeout;
             clearTimeout(timeout);
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f118887, 250);
+            timeout = setTimeout(f119101, 250);
           }
         }
       },
@@ -132,7 +132,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
             const _clearTimeout = clearTimeout;
             clearTimeout(timeout);
             const _setTimeout = setTimeout;
-            timeout = setTimeout(f118887, 250);
+            timeout = setTimeout(f119101, 250);
           }
         }
       },
@@ -154,7 +154,7 @@ class NotifSettingsProtoManager extends AutomaticLifecycleManager {
               const _clearTimeout = clearTimeout;
               clearTimeout(timeout);
               const _setTimeout = setTimeout;
-              timeout = setTimeout(f118887, 250);
+              timeout = setTimeout(f119101, 250);
             }
           }
         }

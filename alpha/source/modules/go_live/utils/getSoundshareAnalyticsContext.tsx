@@ -1,10 +1,10 @@
-// Module ID: 8037
-// Function ID: 8038
+// Module ID: 8042
+// Function ID: 8043
 // Name: getSoundshareAnalyticsContext
 // Dependencies: [2142, 2]
 // Exports: default
 
-// Module 8037 (getSoundshareAnalyticsContext)
+// Module 8042 (getSoundshareAnalyticsContext)
 import RunningGameStore from "RunningGameStore" /* 2142 */;
 import size from "module_2" /* 2 */;
 

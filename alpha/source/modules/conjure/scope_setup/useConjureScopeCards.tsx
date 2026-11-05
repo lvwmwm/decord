@@ -1,14 +1,14 @@
-// Module ID: 12969
-// Function ID: 12970
+// Module ID: 12976
+// Function ID: 12977
 // Name: useConjureScopeCards
-// Dependencies: [5, 32, 19, 6979, 1113, 3995, 12801, 504, 12817, 2]
+// Dependencies: [5, 32, 19, 6982, 1113, 3995, 12808, 504, 12824, 2]
 // Exports: useConjureScopeSetupCard, useConjureScopeSwitchCard
 
-// Module 12969 (useConjureScopeCards)
+// Module 12976 (useConjureScopeCards)
 import intl8 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6979 */;
-import conjureScopeSetup from "conjureScopeSetup" /* 12801 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6982 */;
+import conjureScopeSetup from "conjureScopeSetup" /* 12808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -276,7 +276,7 @@ export function useConjureScopeSetupCard(projectId) {
       }
     }
     let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-    tmpResult = tmp(12801);
+    tmpResult = tmp(12808);
     return obj5;
   }
 }
@@ -390,7 +390,7 @@ export function useConjureScopeSwitchCard(merged) {
   let items = [c6];
   let items1 = [projectId];
   const stateFromStores = obj.useStateFromStores(items, () => ConjureProjectStore.getProject(projectId), items1);
-  let obj2 = projectId(12817);
+  let obj2 = projectId(12824);
   const conjureEligibleGuilds = obj2.useConjureEligibleGuilds("ConjureScopeSwitchCard");
   let obj3 = conjureEligibleGuilds;
   [tmp6, c6] = feature(conjureEligibleGuilds.useState(false), 2);
@@ -510,6 +510,6 @@ export function useConjureScopeSwitchCard(merged) {
     }
   }
   let obj5 = { clarification: tmpResult.ownerOnlyClarification(memo), readOnly: true, hideSubmit: true, failure: null };
-  tmpResult = tmp(12801);
+  tmpResult = tmp(12808);
   return obj5;
 }

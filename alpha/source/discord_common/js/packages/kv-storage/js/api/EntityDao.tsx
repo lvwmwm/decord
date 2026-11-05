@@ -1,11 +1,11 @@
-// Module ID: 5030
-// Function ID: 5031
+// Module ID: 5032
+// Function ID: 5033
 // Name: EntityDao
-// Dependencies: [5024, 5026, 2]
+// Dependencies: [5026, 5028, 2]
 
-// Module 5030 (EntityDao)
-import Table from "Table" /* 5024 */;
-import TableId from "TableId" /* 5026 */;
+// Module 5032 (EntityDao)
+import Table from "Table" /* 5026 */;
+import TableId from "TableId" /* 5028 */;
 import size from "module_2" /* 2 */;
 
 class EntityDao {

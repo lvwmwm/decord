@@ -1,17 +1,17 @@
-// Module ID: 14860
-// Function ID: 14861
+// Module ID: 14873
+// Function ID: 14874
 // Name: CrunchyrollLinkModal
-// Dependencies: [19, 14861, 1072, 21, 7698, 8499, 14859, 1113, 14862, 9881, 14864, 14866, 14867, 14869, 9880, 14847, 7306, 2]
+// Dependencies: [19, 14874, 1072, 21, 7700, 8504, 14872, 1113, 14875, 9887, 14877, 14879, 14880, 14882, 9886, 14860, 7309, 2]
 // Exports: default
 
-// Module 14860 (CrunchyrollLinkModal)
+// Module 14873 (CrunchyrollLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7698 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8499 */;
-import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 14859 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14861 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7700 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8504 */;
+import CrunchyrollLinkModalActionCreatorsDefault from "CrunchyrollLinkModalActionCreators" /* 14872 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 14874 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 export default function CrunchyrollLinkModal(locationStack) {
   let twoWayLinkStyles;
   locationStack = locationStack.locationStack;
-  let obj = twoWayLinkStyles(9880);
+  let obj = twoWayLinkStyles(9886);
   twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles];
   const memo = react.useMemo(() => {
@@ -100,9 +100,9 @@ export default function CrunchyrollLinkModal(locationStack) {
       }
     };
   }, items);
-  const obj2 = twoWayLinkStyles(14847);
+  const obj2 = twoWayLinkStyles(14860);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(PlatformTypes.CRUNCHYROLL, locationStack);
-  const Navigator = twoWayLinkStyles(7306).Navigator;
+  const Navigator = twoWayLinkStyles(7309).Navigator;
   const intl = twoWayLinkStyles(1113).intl;
   return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={constants.LANDING} headerBackTitle={intl.string(twoWayLinkStyles(1113).t["13/7kX"])} />;
 };

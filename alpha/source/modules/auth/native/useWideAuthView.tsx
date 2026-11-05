@@ -1,12 +1,12 @@
-// Module ID: 7257
-// Function ID: 7258
+// Module ID: 7260
+// Function ID: 7261
 // Name: useWideAuthView
-// Dependencies: [7258, 1624, 2]
+// Dependencies: [7261, 1624, 2]
 // Exports: default
 
-// Module 7257 (useWideAuthView)
+// Module 7260 (useWideAuthView)
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7258 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7261 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/auth/native/useWideAuthView.tsx");

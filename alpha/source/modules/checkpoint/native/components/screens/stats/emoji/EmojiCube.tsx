@@ -1,18 +1,18 @@
-// Module ID: 13893
-// Function ID: 13894
+// Module ID: 13905
+// Function ID: 13906
 // Name: EmojiCube
-// Dependencies: [32, 17, 5142, 6201, 21, 5141, 1357, 575, 504, 1493, 1411, 7436, 2]
+// Dependencies: [32, 17, 5144, 6204, 21, 5143, 1357, 575, 504, 13876, 1411, 7439, 2]
 // Exports: default
 
-// Module 13893 (EmojiCube)
+// Module 13905 (EmojiCube)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
-import EmojiDefault from "Emoji" /* 7436 */;
+import CheckpointConstants from "CheckpointConstants" /* 6204 */;
+import EmojiDefault from "Emoji" /* 7439 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import PlatformUtils_mod from "utils/PlatformUtils" /* 1357 */;
 import size from "module_2" /* 2 */;
 
@@ -97,31 +97,31 @@ export default function EmojiCube(emoji) {
   let tmp7;
   let useReducedMotion;
   emoji = emoji.emoji;
-  let emojiURL;
   dependencyMap = undefined;
   const style = emoji.style;
   const tmp = dependencyMap;
   let items = [AccessibilityStore];
   const obj = emoji(504);
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const result = emojiURL(1493)().width / 392;
-  emojiURL = undefined;
+  const obj2 = emoji(13876);
+  const result = obj2.useCheckpointScreenFrame().width / 392;
+  let emojiURL;
   if (null != emoji.id) {
-    const obj2 = { id: emoji.id, animated: tmp7, size: 196 * result };
+    const obj3 = { id: emoji.id, animated: tmp7, size: 196 * result };
     tmp7 = !stateFromStores;
-    const getEmojiURL = tmp3(1411).getEmojiURL;
+    const getEmojiURL = emojiURL(1411).getEmojiURL;
     emojiURL(1411);
     if (!stateFromStores) {
       tmp7 = true === emoji.animated;
     }
-    emojiURL = getEmojiURL(obj2);
+    emojiURL = getEmojiURL(obj3);
   }
   const tmp8 = closure_7();
   dependencyMap = tmp8;
   let items1 = [tmp8.container, , ];
-  const obj4 = { transform: items2 };
+  const obj5 = { transform: items2 };
   items2 = [{ scale: result }];
-  items1[1] = obj4;
+  items1[1] = obj5;
   items1[2] = style;
   const items3 = [, ];
   ({ topFace: arr4[0], topEmoji: arr4[1] } = tmp8);

@@ -1,8 +1,8 @@
-// Module ID: 16785
-// Function ID: 16786
+// Module ID: 16798
+// Function ID: 16799
 // Dependencies: [2]
 
-// Module 16785
+// Module 16798
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/upsells/profiles/banners/neon_space_banner.gif.js");

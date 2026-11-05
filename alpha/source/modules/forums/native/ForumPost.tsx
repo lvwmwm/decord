@@ -1,17 +1,17 @@
-// Module ID: 13980
-// Function ID: 13981
+// Module ID: 13993
+// Function ID: 13994
 // Name: ForumPost
-// Dependencies: [19, 4990, 5083, 13981, 21, 13982, 13986, 13998, 504, 38, 7615, 10017, 14001, 14002, 9071, 14008, 5000, 2]
+// Dependencies: [19, 4992, 5085, 13994, 21, 13995, 13999, 14011, 504, 38, 7617, 10023, 14014, 14015, 9077, 14021, 5002, 2]
 // Exports: ForumPostListDisabled
 
-// Module 13980 (ForumPost)
-import ForumChannelStore from "ForumChannelStore" /* 13981 */;
-import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 13982 */;
-import ForumPostGridBodyDefault from "ForumPostGridBody" /* 13986 */;
-import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 13998 */;
+// Module 13993 (ForumPost)
+import ForumChannelStore from "ForumChannelStore" /* 13994 */;
+import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 13995 */;
+import ForumPostGridBodyDefault from "ForumPostGridBody" /* 13999 */;
+import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 14011 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import RelationshipStore from "RelationshipStore" /* 5083 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import RelationshipStore from "RelationshipStore" /* 5085 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -151,15 +151,15 @@ export function ForumPostListDisabled(threadId) {
   const items1 = [ChannelStore];
   const obj2 = threadId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(stateFromStores.parent_id));
-  const obj3 = threadId(7615);
+  const obj3 = threadId(7617);
   const firstForumPostMessage = obj3.useFirstForumPostMessage(stateFromStores);
   ({ firstMessage, loaded } = firstForumPostMessage);
-  threadId(10017);
+  threadId(10023);
   const tmp = threadId;
   const tmp4 = stateFromStores;
   if (loaded) {
-    const obj4 = { style, children: closure_6(tmp4(14002), obj5) };
-    const ForumPostDisabledContainer = tmp(14001).ForumPostDisabledContainer;
+    const obj4 = { style, children: closure_6(tmp4(14015), obj5) };
+    const ForumPostDisabledContainer = tmp(14014).ForumPostDisabledContainer;
     obj5 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: tmp10, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
     tmp5 = closure_6(ForumPostDisabledContainer, obj4);
   }

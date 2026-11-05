@@ -1,16 +1,16 @@
-// Module ID: 19042
-// Function ID: 19043
+// Module ID: 19073
+// Function ID: 19074
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 575, 5141, 19041, 11603, 15691, 5384, 1113, 4250, 2]
+// Dependencies: [19, 17, 21, 575, 5143, 19072, 11611, 15704, 5386, 1113, 4252, 2]
 
-// Module 19042 (SmartSearchExpandButton)
+// Module 19073 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 575 */;
-import _modDef4250 from "module_4250" /* 4250 */;
-import HapticUtils from "HapticUtils" /* 5384 */;
+import _modDef4252 from "module_4252" /* 4252 */;
+import HapticUtils from "HapticUtils" /* 5386 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -42,12 +42,12 @@ const memoResult = react.memo(function SmartSearchExpandButton(arg0) {
   let tmp7;
   let tmp8;
   ({ isCollapsed, onPress } = arg0);
-  let obj = onPress(19041);
+  let obj = onPress(19072);
   const tmp3 = closure_10(obj.useSearchHostSurfaceColor());
   if (isCollapsed) {
-    ChevronSmallUpIcon = tmp(11603).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp(11611).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp(15691).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp(15704).ChevronSmallUpIcon;
   }
   const items = [onPress];
   const obj2 = { style: tmp3.block, hitSlop: rect, children: tmp7(tmp8, obj3) };
@@ -59,7 +59,7 @@ const memoResult = react.memo(function SmartSearchExpandButton(arg0) {
   }, items);
   const intl = tmp(1113).intl;
   string = intl.string;
-  const tmp10 = _modDef4250;
+  const tmp10 = _modDef4252;
   tmp7 = closure_8;
   tmp8 = closure_4;
   if (isCollapsed) {

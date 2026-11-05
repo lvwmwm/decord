@@ -1,13 +1,13 @@
-// Module ID: 7638
-// Function ID: 7639
+// Module ID: 7640
+// Function ID: 7641
 // Name: GuildTemplateTooltipActionCreators
-// Dependencies: [5, 5073, 1072, 7639, 572, 2]
+// Dependencies: [5, 5075, 1072, 7641, 572, 2]
 
-// Module 7638 (GuildTemplateTooltipActionCreators)
+// Module 7640 (GuildTemplateTooltipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 let c1;

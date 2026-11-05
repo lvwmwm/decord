@@ -1,10 +1,10 @@
-// Module ID: 7501
-// Function ID: 7502
+// Module ID: 7503
+// Function ID: 7504
 // Name: SimpleActionSheet
-// Dependencies: [19, 21, 7502, 7457, 7503, 7504, 2]
+// Dependencies: [19, 21, 7504, 7460, 7505, 7506, 2]
 
-// Module 7501 (SimpleActionSheet)
-import ActionSheet2 from "ActionSheet" /* 7502 */;
+// Module 7503 (SimpleActionSheet)
+import ActionSheet2 from "ActionSheet" /* 7504 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -14,9 +14,9 @@ const require = globalThis.__r;
 let c2;
 let c3;
 let tmp2;
-const BottomSheetTitleHeader2 = tmp2(7457);
-const ActionSheetCloseButton = tmp2(7503);
-const ActionSheetRow2 = tmp2(7504);
+const BottomSheetTitleHeader2 = tmp2(7460);
+const ActionSheetCloseButton = tmp2(7505);
+const ActionSheetRow2 = tmp2(7506);
 class SimpleActionSheet {
   constructor(hasIcons) {
     let header;

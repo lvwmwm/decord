@@ -1,16 +1,16 @@
-// Module ID: 19417
-// Function ID: 19418
+// Module ID: 19448
+// Function ID: 19449
 // Name: InviteActivityButton
-// Dependencies: [19, 11714, 6705, 21, 5382, 19418, 2123, 504, 11883, 5768, 11159, 1113, 2]
+// Dependencies: [19, 11722, 6708, 21, 5384, 19449, 2123, 504, 11892, 5770, 11167, 1113, 2]
 
-// Module 19417 (InviteActivityButton)
+// Module 19448 (InviteActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11883 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 11892 */;
 import react from "react" /* 19 */;
-import LocalActivityStore from "LocalActivityStore" /* 11714 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6705 */;
+import LocalActivityStore from "LocalActivityStore" /* 11722 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6708 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -24,16 +24,16 @@ const memoResult = react.memo(function InviteActivityButton(applicationId) {
   const stateFromStores = obj.useStateFromStores(items, () => getCurrentUserPresenceActivityDefault(LocalActivityStore, SelfPresenceStore, applicationId), items1);
   let tmp4 = null;
   if (null != stateFromStores) {
-    const Button = tmp(5768).Button;
+    const Button = tmp(5770).Button;
     const intl = tmp(1113).intl;
     const intl2 = tmp(1113).intl;
     tmp4 = <Button onPress={function onPress() {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activity: stateFromStores };
-      const tmp2 = asyncRequire(19418, dependencyMap.paths);
+      const tmp2 = asyncRequire(19449, dependencyMap.paths);
       openLazy(tmp2, "ActivityInviteSheet-" + stateFromStores.session_id, obj);
-    }} icon={stateFromStores(11159)} text={intl.string(tmp(1113).t["OzOM/q"])} accessibilityLabel={intl2.string(tmp(1113).t["OzOM/q"])} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
+    }} icon={stateFromStores(11167)} text={intl.string(tmp(1113).t["OzOM/q"])} accessibilityLabel={intl2.string(tmp(1113).t["OzOM/q"])} variant="secondary-overlay" size="sm" shrink maxFontSizeMultiplier={1} />;
   }
   return tmp4;
 });

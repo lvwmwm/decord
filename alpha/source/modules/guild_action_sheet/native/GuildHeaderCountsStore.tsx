@@ -1,16 +1,16 @@
-// Module ID: 16048
-// Function ID: 16049
+// Module ID: 16061
+// Function ID: 16062
 // Name: GuildHeaderCountsStore
-// Dependencies: [7586, 4990, 5366, 1385, 5813, 504, 572, 2]
+// Dependencies: [7588, 4992, 5368, 1385, 5815, 504, 572, 2]
 
-// Module 16048 (GuildHeaderCountsStore)
+// Module 16061 (GuildHeaderCountsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7586 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5366 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 7588 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5368 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5813 */;
+import VoiceStateStore from "VoiceStateStore" /* 5815 */;
 import size from "module_2" /* 2 */;
 
 let closure_6;
@@ -63,7 +63,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "children", memberCount: "i" };
+      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "id", memberCount: "concat" };
     }
     closure_6[guildId].memberCount = count;
   },
@@ -71,7 +71,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "children", memberCount: "i" };
+      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "id", memberCount: "concat" };
     }
     closure_6[guildId].onlineCount = count;
   },
@@ -79,7 +79,7 @@ const obj2 = {
     guildId = guildId.guildId;
     const count = guildId.count;
     if (null == closure_6[guildId]) {
-      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "children", memberCount: "i" };
+      closure_6[guildId] = { activeChannelsCount: "Array", onlineCount: "id", memberCount: "concat" };
     }
     closure_6[guildId].activeChannelsCount = count;
   }

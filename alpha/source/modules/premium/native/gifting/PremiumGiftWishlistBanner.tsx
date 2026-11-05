@@ -1,24 +1,24 @@
-// Module ID: 10841
-// Function ID: 10842
+// Module ID: 10847
+// Function ID: 10848
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7545, 1387, 1072, 1074, 8895, 21, 575, 5141, 9606, 9617, 10842, 10846, 7462, 7487, 1252, 8891, 10791, 10847, 5323, 5846, 1113, 7859, 14639, 5195, 5761, 14664, 14669, 2]
+// Dependencies: [5, 19, 17, 7547, 1387, 1072, 1074, 8900, 21, 575, 5143, 9612, 9623, 10848, 10852, 7465, 7490, 1252, 8896, 10798, 10853, 5325, 5849, 1113, 7864, 14652, 5197, 5763, 14677, 14682, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 10841 (PremiumGiftWishlistBanner)
+// Module 10847 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7545 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
-import Constants2 from "Constants" /* 8895 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 10846 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7547 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8896 */;
+import Constants2 from "Constants" /* 8900 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 10852 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, sku;

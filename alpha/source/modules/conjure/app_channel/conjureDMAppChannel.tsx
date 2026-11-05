@@ -1,13 +1,13 @@
-// Module ID: 7013
-// Function ID: 7014
+// Module ID: 7016
+// Function ID: 7017
 // Name: conjureDMAppChannel
-// Dependencies: [2167, 5012, 1385, 1072, 504, 7014, 7016, 7018, 2]
+// Dependencies: [2167, 5014, 1385, 1072, 504, 7017, 7019, 7021, 2]
 // Exports: isDMAppChannel, useDMAppChannelApplicationId
 
-// Module 7013 (conjureDMAppChannel)
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7014 */;
+// Module 7016 (conjureDMAppChannel)
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7017 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ export function useDMAppChannelApplicationId(stateFromStores) {
   let id = null;
   if (null != data) {
     id = null;
-    const tmpResult = tmp(7018);
+    const tmpResult = tmp(7021);
     if (tmpResult.hasApplicationFlag(data, constants.DM_OPENS_ACTIVITY)) {
       id = data.id;
     }
@@ -87,7 +87,7 @@ export function isDMAppChannel(channel) {
             id = user.id;
           }
           const application = getApplication(id);
-          const tmp8Result = tmp8(7018);
+          const tmp8Result = tmp8(7021);
           return tmp8Result.hasApplicationFlag(application, hasOwnProperty.DM_OPENS_ACTIVITY);
         }
       }

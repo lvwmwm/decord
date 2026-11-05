@@ -1,14 +1,14 @@
-// Module ID: 18603
-// Function ID: 18604
+// Module ID: 18633
+// Function ID: 18634
 // Name: useFavoritesPruneInactiveThreads
-// Dependencies: [5, 19, 6703, 4993, 504, 11009, 2]
+// Dependencies: [5, 19, 6706, 4995, 504, 11015, 2]
 // Exports: default
 
-// Module 18603 (useFavoritesPruneInactiveThreads)
+// Module 18633 (useFavoritesPruneInactiveThreads)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
-import FavoriteStore from "FavoriteStore" /* 4993 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
+import FavoriteStore from "FavoriteStore" /* 4995 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;

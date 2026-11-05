@@ -1,17 +1,17 @@
-// Module ID: 18553
-// Function ID: 18554
+// Module ID: 18583
+// Function ID: 18584
 // Name: useStageChannelSpeakerVoiceStates
-// Dependencies: [32, 4993, 4990, 5901, 6848, 504, 5015, 11, 1380, 6894, 6901, 2]
+// Dependencies: [32, 4995, 4992, 5904, 6851, 504, 5017, 11, 1380, 6897, 6904, 2]
 // Exports: default
 
-// Module 18553 (useStageChannelSpeakerVoiceStates)
+// Module 18583 (useStageChannelSpeakerVoiceStates)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import FavoritesUtils from "FavoritesUtils" /* 5015 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5901 */;
+import FavoritesUtils from "FavoritesUtils" /* 5017 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5904 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FavoriteStore from "FavoriteStore" /* 4993 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6848 */;
+import FavoriteStore from "FavoriteStore" /* 4995 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6851 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

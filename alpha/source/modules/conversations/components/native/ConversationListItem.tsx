@@ -1,22 +1,22 @@
-// Module ID: 10059
-// Function ID: 10060
+// Module ID: 10067
+// Function ID: 10068
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7907, 5789, 1072, 21, 5141, 575, 1499, 504, 10028, 10046, 10031, 7118, 5761, 1113, 7179, 5723, 10060, 10061, 10063, 2]
+// Dependencies: [19, 17, 7912, 5791, 1072, 21, 5143, 575, 1499, 504, 10034, 10052, 10037, 7121, 5763, 1113, 7182, 5725, 10068, 10069, 10071, 2]
 
-// Module 10059 (ConversationListItem)
+// Module 10067 (ConversationListItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ConversationConstants from "ConversationConstants" /* 5789 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 10028 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10031 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 10046 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10061 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10063 */;
+import ConversationConstants from "ConversationConstants" /* 5791 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 10034 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 10037 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 10052 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 10069 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 10071 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 7907 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 7912 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

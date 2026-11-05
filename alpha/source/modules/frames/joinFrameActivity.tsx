@@ -1,18 +1,18 @@
-// Module ID: 13406
-// Function ID: 13407
+// Module ID: 13413
+// Function ID: 13414
 // Name: joinFrameActivity
-// Dependencies: [5, 2167, 4990, 5813, 6982, 1072, 11889, 572, 11928, 11884, 5809, 11929, 11124, 1113, 11947, 13407, 11733, 11119, 6582, 13408, 9470, 7625, 11873, 2]
+// Dependencies: [5, 2167, 4992, 5815, 6985, 1072, 11898, 572, 11937, 11893, 5811, 11938, 11133, 1113, 11956, 13414, 11741, 11128, 6585, 13415, 9477, 7627, 11882, 2]
 // Exports: default
 
-// Module 13406 (joinFrameActivity)
-import FramesConstants from "FramesConstants" /* 6982 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7625 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 11873 */;
-import Constants2 from "Constants" /* 11889 */;
+// Module 13413 (joinFrameActivity)
+import FramesConstants from "FramesConstants" /* 6985 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7627 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 11882 */;
+import Constants2 from "Constants" /* 11898 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import VoiceStateStore from "VoiceStateStore" /* 5813 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import VoiceStateStore from "VoiceStateStore" /* 5815 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -28,8 +28,8 @@ let obj = function _joinFrameActivity() {
     let c10 = 0;
     let c8 = 0;
     const iter = (async function(arg0, value) {
-      let obj21;
-      let tmp122;
+      let obj20;
+      let tmp117;
       function getActivityChannelId() {
         return closure_1_14(...arguments);
       }
@@ -105,7 +105,7 @@ let obj = function _joinFrameActivity() {
                 };
                 preferredChannelId = 1;
                 c10 = 1;
-                return { value: "flexDirection", done: null };
+                return { value: "flexDirection", done: true };
               }
               break;
             }
@@ -161,8 +161,8 @@ let obj = function _joinFrameActivity() {
                   session_id = null;
                   if (null == channel) {
                     session_id = undefined;
-                    const tmp176 = idValue;
-                    const tmp177 = c1;
+                    const tmp169 = idValue;
+                    const tmp170 = c1;
                     if (session_id2 != null) {
                       session_id = session_id2.session_id;
                     }
@@ -170,7 +170,7 @@ let obj = function _joinFrameActivity() {
                     if (session_id == null) {
                       closure_2 = session_id;
                     }
-                    session_id = getVoiceChannelAppChannelId(tmp176, tmp177, closure_2);
+                    session_id = getVoiceChannelAppChannelId(tmp169, tmp170, closure_2);
                     preferredChannelId = 4;
                     c10 = 1;
                     return { value: session_id, done: false };
@@ -210,7 +210,7 @@ let obj = function _joinFrameActivity() {
                         c8 = 1;
                         session_id = closure_134_2[16];
                         const getJoinSecret = closure_134_1(session_id).getJoinSecret;
-                        const tmp150 = closure_134_1(session_id);
+                        const tmp143 = closure_134_1(session_id);
                         if (null != messageId) {
                           session_id = channelId;
                         } else {
@@ -228,23 +228,23 @@ let obj = function _joinFrameActivity() {
                           }
                           session_id = closure_3;
                         }
-                        session_id = getJoinSecret(tmp151, tmp152, tmp153, session_id, messageId);
+                        session_id = getJoinSecret(tmp144, tmp145, tmp146, session_id, messageId);
                         preferredChannelId = 9;
                         c10 = 1;
                         return { value: session_id, done: false };
                       } else {
                         if (null != session_id) {
-                          const obj18 = { frameId: closure_134_7(id, obj21.voiceChannelAppSurface(session_id)), launched: Promise.resolve() };
+                          const obj18 = { frameId: closure_134_7(id, obj20.voiceChannelAppSurface(session_id)), launched: Promise.resolve() };
                           session_id = obj18;
-                          obj21 = closure_134_0(closure_134_2[19]);
+                          obj20 = closure_134_0(closure_134_2[19]);
                         } else {
                           session_id = closure_134_1(closure_134_2[8]);
-                          const obj19 = { applicationId: id, channel, invite: tmp122 };
-                          tmp122 = undefined;
+                          const obj19 = { applicationId: id, channel, invite: tmp117 };
+                          tmp117 = undefined;
                           if (null != channelId) {
                             if (null != messageId) {
-                              tmp122 = { channelId, messageId };
-                              const obj20 = { channelId, messageId };
+                              tmp117 = { channelId, messageId };
+                              const obj22 = { channelId, messageId };
                             }
                           }
                           session_id = session_id(obj19);
@@ -256,8 +256,8 @@ let obj = function _joinFrameActivity() {
                           return { value: true, done: true };
                         } else {
                           const obj23 = { type: "ACTIVITY_JOIN_NAVIGATION_COMPLETE", applicationId: id };
-                          const obj22 = closure_134_1(closure_134_2[7]);
-                          obj22.dispatch(obj23);
+                          const obj21 = closure_134_1(closure_134_2[7]);
+                          obj21.dispatch(obj23);
                           c8 = 2;
                           preferredChannelId = 11;
                           c10 = 1;
@@ -368,14 +368,14 @@ let obj = function _joinFrameActivity() {
               } else {
                 closure_16 = value;
                 session_id = closure_16.errorCode;
-                const tmp212 = closure_134_1(closure_134_2[12]);
+                const tmp205 = closure_134_1(closure_134_2[12]);
                 if (session_id === closure_134_8.UNKNOWN_SESSION) {
                   const intl = closure_134_0(closure_134_2[13]).intl;
                   session_id = intl.string(closure_134_0(closure_134_2[13]).t["7XR9+7"]);
                 } else {
                   session_id = closure_16.message;
                 }
-                session_id = tmp212(session_id);
+                session_id = tmp205(session_id);
                 fail();
                 c10 = 3;
                 return { value: false, done: true };
@@ -434,20 +434,20 @@ let obj = function _joinFrameActivity() {
               } else {
                 c8 = 0;
                 const obj37 = { type: "ACTIVITY_JOIN", applicationId: id, parentApplicationId: null, frameId, secret, intent, embedded: true };
-                const obj34 = closure_134_1(closure_134_2[7]);
-                obj34.dispatch(obj37);
+                const obj33 = closure_134_1(closure_134_2[7]);
+                obj33.dispatch(obj37);
                 c10 = 3;
                 return { value: true, done: true };
               }
               break;
             }
           }
-        } catch (tmp200) {
-          closure_7 = tmp200;
+        } catch (tmp193) {
+          closure_7 = tmp193;
           if (0 === c8) {
             c10 = 3;
-            throw tmp200;
-          } else if (1 === tmp202) {
+            throw tmp193;
+          } else if (1 === tmp195) {
             preferredChannelId = 7;
           } else {
             preferredChannelId = 10;

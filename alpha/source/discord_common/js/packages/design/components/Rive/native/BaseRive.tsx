@@ -1,18 +1,18 @@
-// Module ID: 5215
-// Function ID: 5216
+// Module ID: 5217
+// Function ID: 5218
 // Name: BaseRive
-// Dependencies: [5, 19, 17, 21, 5216, 5155, 5263, 5264, 5265, 5266, 2]
+// Dependencies: [5, 19, 17, 21, 5218, 5157, 5265, 5266, 5267, 5268, 2]
 // Exports: BaseRive, useArtboardBinding, useBooleanBinding, useColorBinding, useEnumBinding, useImageBinding, useNumberBinding, useStringBinding, useTriggerBinding
 
-// Module 5215 (BaseRive)
-import DataBindByName from "DataBindByName" /* 5216 */;
+// Module 5217 (BaseRive)
+import DataBindByName from "DataBindByName" /* 5218 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, current;
+let c4, c5, current;
 
 let Platform;
 let StyleSheet;
@@ -22,11 +22,11 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const react2 = tmp(5155);
-const ManaContext = tmp(5263);
-const useRivePlayback2 = tmp(5264);
-const RiveTypes = tmp(5265);
-const f87850 = () => {
+const react2 = tmp(5157);
+const ManaContext = tmp(5265);
+const useRivePlayback2 = tmp(5266);
+const RiveTypes = tmp(5267);
+const f88021 = () => {
   ref.current = current;
 };
 function disposeRiveImageLater(arg0) {
@@ -254,7 +254,7 @@ export function useNumberBinding(chapterID, instance, chapterID2, chapterID1, pl
   let closure_1 = chapterID1;
   let closure_2 = react.useRef(chapterID1);
   const items1 = [chapterID1];
-  const effect1 = react.useEffect(f87850, items1);
+  const effect1 = react.useEffect(f88021, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -284,7 +284,7 @@ export function useStringBinding(LVL, instance, LVL2, LVL1, playIfNeeded) {
   let closure_1 = LVL1;
   let closure_2 = react.useRef(LVL1);
   const items1 = [LVL1];
-  const effect1 = react.useEffect(f87850, items1);
+  const effect1 = react.useEffect(f88021, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -314,7 +314,7 @@ export function useBooleanBinding(reducedMotion, instance, reducedMotionEnabled,
   let closure_1 = on1;
   let closure_2 = react.useRef(on1);
   const items1 = [on1];
-  const effect1 = react.useEffect(f87850, items1);
+  const effect1 = react.useEffect(f88021, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -378,7 +378,7 @@ export function useEnumBinding(device, instance, device2, device1, playIfNeeded)
   let closure_1 = device1;
   let closure_2 = react.useRef(device1);
   const items1 = [device1];
-  const effect1 = react.useEffect(f87850, items1);
+  const effect1 = react.useEffect(f88021, items1);
   const items2 = [value];
   const effect2 = react.useEffect(() => {
     if (undefined !== value) {
@@ -417,7 +417,7 @@ export function useTriggerBinding(stateChange, instance, stateChange2, stateChan
 }
 export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit01Image1, playIfNeeded) {
   react = outfit01Image1;
-  const current2 = playIfNeeded;
+  let current2 = playIfNeeded;
   let closure_5 = react.useRef(null);
   const effect = react.useEffect(() => {
     let ref;
@@ -436,8 +436,13 @@ export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit0
     closure_6.current = current2;
   }, items);
   let closure_7 = react.useRef(null);
-  const items1 = [outfit01Image, instance, outfit01Image2];
+  let closure_8 = react.useRef(outfit01Image1);
+  const items1 = [outfit01Image1];
   const effect2 = react.useEffect(() => {
+    closure_8.current = current;
+  }, items1);
+  const items2 = [outfit01Image, instance, outfit01Image2];
+  const effect3 = react.useEffect(() => {
     let isCancelled;
     function loadImage() {
       return closure_0(...arguments);
@@ -450,7 +455,8 @@ export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit0
           return c0;
         };
         outfit01Image = outfit01Image2(function*(arg0, value) {
-          let obj5;
+          let closure_1;
+          let obj6;
           function ensureImageUri(channelIcon) {
             if (typeof channelIcon === "number") {
               return closure_1_5.resolveAssetSource(channelIcon).uri;
@@ -458,8 +464,8 @@ export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit0
               return channelIcon;
             }
           }
-          if (c3 === 2) {
-            c3 = 3;
+          if (c5 === 2) {
+            c5 = 3;
             throw new TypeError("Generator functions may not be called on executing generators");
           } else if (tmp3 === 3) {
             if (arg0 === 1) {
@@ -471,57 +477,91 @@ export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit0
               return { value: "HermesInternal", done: null };
             }
           } else {
+            let c3;
             try {
               let tmp;
-              c3 = 2;
-              if (0 === c2) {
+              let loaded;
+              c5 = 2;
+              if (0 === c4) {
                 if (arg0 === 1) {
-                  c3 = 3;
+                  c5 = 3;
                   throw value;
                 } else if (arg0 === 2) {
-                  c3 = 3;
+                  c5 = 3;
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
+                  closure_0 = undefined;
                   tmp = undefined;
+                  loaded = undefined;
                   current = undefined;
-                  c2 = 1;
-                  c3 = 1;
-                  const obj3 = { value: obj5.ignoreErrors(ref3.current), done: false };
-                  obj5 = tmp(isCancelled[9]);
+                  c4 = 1;
+                  c5 = 1;
+                  const obj3 = { value: obj6.ignoreErrors(ref3.current), done: false };
+                  obj6 = c0(isCancelled[9]);
                   return obj3;
                 }
               } else {
-                if (1 === c2) {
+                if (1 === c4) {
                   if (arg0 === 1) {
-                    c3 = 3;
+                    c5 = 3;
                     throw value;
                   } else if (arg0 === 2) {
-                    c3 = 3;
+                    c5 = 3;
                     const obj4 = { value, done: true };
                     return obj4;
-                  } else if (!current()) {
-                    const RiveImages = tmp(isCancelled[4]).RiveImages;
-                    tmp = RiveImages.loadFromURLAsync(ensureImageUri(outfit01Image2));
+                  } else if (!tmp()) {
+                    closure_0 = ensureImageUri(outfit01Image2);
+                    const RiveImages = c0(isCancelled[4]).RiveImages;
+                    tmp = RiveImages.loadFromURLAsync(closure_0);
                     ref3.current = tmp;
-                    c2 = 2;
+                    loaded = "failed";
                     c3 = 1;
-                    const obj6 = { value: tmp, done: false };
-                    return obj6;
+                    c4 = 3;
+                    c5 = 1;
+                    const obj5 = { value: tmp, done: false };
+                    return obj5;
                   }
+                } else if (2 === c4) {
+                  c3 = 0;
+                  const tmp47 = closure_2;
+                  if (!tmp()) {
+                    const current5 = closure_2_8.current;
+                    if (current5 != null) {
+                      current5(closure_0, loaded);
+                    }
+                  }
+                  throw tmp47;
                 } else if (arg0 === 1) {
-                  c3 = 3;
+                  c5 = 3;
                   throw value;
                 } else if (arg0 === 2) {
-                  c3 = 3;
+                  c3 = 0;
+                  if (!tmp()) {
+                    const current4 = closure_2_8.current;
+                    if (current4 != null) {
+                      current4(closure_0, loaded);
+                    }
+                  }
+                  c5 = 3;
                   const obj7 = { value, done: true };
                   return obj7;
                 } else {
                   current = value;
-                  if (current()) {
+                  if (tmp()) {
                     current.dispose();
+                    c3 = 0;
+                    if (!tmp()) {
+                      const current3 = closure_2_8.current;
+                      if (current3 != null) {
+                        current3(closure_0, loaded);
+                      }
+                    }
+                    c5 = 3;
+                    const obj8 = { value: undefined, done: true };
+                    return obj8;
                   } else {
-                    const imagePropertyResult = isCancelled.imageProperty(tmp);
+                    const imagePropertyResult = isCancelled.imageProperty(closure_0);
                     if (imagePropertyResult != null) {
                       const result = imagePropertyResult.set(current);
                     }
@@ -533,14 +573,27 @@ export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit0
                     if (current != null) {
                       current();
                     }
+                    loaded = "loaded";
+                    c3 = 0;
+                    if (!tmp()) {
+                      current2 = closure_2_8.current;
+                      if (current2 != null) {
+                        current2(closure_0, loaded);
+                      }
+                    }
                   }
                 }
-                c3 = 3;
+                c5 = 3;
                 return { value: "HermesInternal", done: null };
               }
-            } catch (tmp35) {
-              c3 = 3;
-              throw tmp35;
+            } catch (tmp68) {
+              closure_2 = tmp68;
+              if (0 === c3) {
+                c5 = 3;
+                throw tmp68;
+              } else {
+                c4 = 2;
+              }
             }
           }
         });
@@ -553,30 +606,7 @@ export function useImageBinding(outfit01Image, instance, outfit01Image2, outfit0
         };
       }
     }
-  }, items1);
-  let closure_8 = react.useRef(outfit01Image1);
-  const items2 = [outfit01Image1];
-  const effect3 = react.useEffect(() => {
-    closure_8.current = current;
   }, items2);
-  const items3 = [outfit01Image, instance];
-  const effect4 = react.useEffect(() => {
-    let ref;
-    const obj = instance;
-    if (null != instance) {
-      const imagePropertyResult = obj.imageProperty(outfit01Image);
-      if (null != imagePropertyResult) {
-        return imagePropertyResult.addListener(() => {
-          current = ref.current;
-          let currentResult;
-          if (current != null) {
-            currentResult = current();
-          }
-          return currentResult;
-        });
-      }
-    }
-  }, items3);
 }
 export function useArtboardBinding(Icon, instance, file, Icon2, playIfNeeded) {
   let closure_0 = Icon;

@@ -1,13 +1,13 @@
-// Module ID: 18226
-// Function ID: 18227
+// Module ID: 18254
+// Function ID: 18255
 // Name: RedesignSettingsCategoryServersScreen
-// Dependencies: [19, 21, 11729, 18215, 18220, 2]
+// Dependencies: [19, 21, 11737, 18243, 18248, 2]
 
-// Module 18226 (RedesignSettingsCategoryServersScreen)
+// Module 18254 (RedesignSettingsCategoryServersScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18215 */;
-import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18220 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18243 */;
+import EffectiveNotifSettingsLayoutDefault from "EffectiveNotifSettingsLayout" /* 18248 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

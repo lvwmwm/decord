@@ -1,56 +1,67 @@
 // Module ID: 13132
 // Function ID: 13133
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13132 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
+let items;
 let obj2;
-function eatIdentifierOrAsterisk() {
-  const self = this;
-  let tmp = this.scanner.tokenType !== Ident;
-  if (tmp) {
-    const scanner = self.scanner;
-    tmp = false === scanner.isDelim(42);
-  }
-  if (tmp) {
-    self.error("Identifier or asterisk is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
-}
 const Ident = tokenize.TYPE.Ident;
+const Function = tokenize.TYPE.Function;
+const Colon = tokenize.TYPE.Colon;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
 let obj = {
-  name: "TypeSelector",
+  name: "PseudoElementSelector",
   structure: obj2,
   parse() {
-    let scanner3;
+    let consumeResult;
+    let tmp5;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const scanner = this.scanner;
-    if (scanner.isDelim(124)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      eatIdentifierOrAsterisk.call(self);
-    } else {
-      eatIdentifierOrAsterisk.call(self);
-      const scanner2 = self.scanner;
-      const obj = eatIdentifierOrAsterisk;
-      if (scanner2.isDelim(124)) {
-        const iter = self.scanner;
-        iter.next();
-        obj.call(self);
+    this.eat(Colon);
+    this.eat(Colon);
+    if (this.scanner.tokenType === Function) {
+      let list;
+      const str = self.consumeFunctionName();
+      const formatted = str.toLowerCase();
+      const pseudo = self.pseudo;
+      if (pseudo.hasOwnProperty(formatted)) {
+        const scanner = self.scanner;
+        scanner.skipSC();
+        const scanner2 = self.scanner;
+        const obj = self.pseudo[formatted];
+        const callResult = obj.call(self);
+        scanner2.skipSC();
+        list = callResult;
+      } else {
+        list = self.createList();
+        list.push(self.Raw(self.scanner.tokenIndex, null, false));
       }
+      self.eat(RightParenthesis);
+      tmp5 = list;
+      consumeResult = str;
+    } else {
+      consumeResult = self.consume(Ident);
+      tmp5 = null;
     }
-    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-    scanner3 = self.scanner;
-    return obj2;
+    const element = { type: "PseudoElementSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp5 };
+    return element;
   },
   generate(name) {
+    const self = this;
+    this.chunk("::");
     this.chunk(name.name);
-  }
+    if (null !== name.children) {
+      self.chunk("(");
+      self.children(name);
+      self.chunk(")");
+    }
+  },
+  walkContext: "function"
 };
-obj2 = { name: String };
+obj2 = { name: String, children: items };
+items = [["Raw"], null];
 
 export default obj;

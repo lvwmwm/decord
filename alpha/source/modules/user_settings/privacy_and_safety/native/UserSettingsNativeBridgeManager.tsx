@@ -1,13 +1,13 @@
-// Module ID: 20319
-// Function ID: 20320
+// Module ID: 20355
+// Function ID: 20356
 // Name: UserSettingsNativeBridgeManager
-// Dependencies: [17, 1231, 7423, 1377, 2]
+// Dependencies: [17, 1231, 7426, 1377, 2]
 
-// Module 20319 (UserSettingsNativeBridgeManager)
+// Module 20355 (UserSettingsNativeBridgeManager)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
 import size from "module_2" /* 2 */;
 
 let NSUserDefaultsBridge, settings;

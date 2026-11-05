@@ -1,23 +1,23 @@
-// Module ID: 9627
-// Function ID: 9628
+// Module ID: 9633
+// Function ID: 9634
 // Name: StorefrontActionCreators
-// Dependencies: [5, 2177, 7550, 9628, 9629, 9630, 1072, 1089, 572, 1282, 6582, 7549, 2]
+// Dependencies: [5, 2177, 7552, 9634, 9635, 9636, 1072, 1089, 572, 1282, 6585, 7551, 2]
 // Exports: claimStorefrontPromotion, fetchStorefrontPricesForApplicationId, fetchStorefrontPricesForSkuIds, maybeFetchStorefrontPromotions, setStorefrontPromotionIdOverride
 
-// Module 9627 (StorefrontActionCreators)
+// Module 9633 (StorefrontActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import BillingInfoStore from "BillingInfoStore" /* 2177 */;
-import SKUPricesStore from "SKUPricesStore" /* 7550 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9628 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9629 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9630 */;
+import SKUPricesStore from "SKUPricesStore" /* 7552 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9634 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9635 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 9636 */;
 import size from "module_2" /* 2 */;
 
-let apiError, c1, closure_2, closure_4, promotions;
+let apiError, c1, closure_4, promotions;
 
 function shouldFetchStorefrontPromotions(arg0) {
   const fetchState = StorefrontPromotionStore.getFetchState(arg0);
@@ -282,69 +282,17 @@ obj = function _claimStorefrontPromotion() {
 };
 obj = function _fetchStorefrontPricesForApplicationId() {
   obj = _asyncToGenerator(async (arg0) => {
+    let closure_1;
+    let closure_2;
     let applicationId = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0, value) => {
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp4;
-              closure_1 = tmp;
-              applicationId = undefined;
-              applicationId = applicationId.applicationId;
-              c3 = 1;
-              c4 = 1;
-              return { value: "flexDirection", done: null };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              c3 = 2;
-              c4 = 1;
-              const obj5 = { type: "application", applicationId };
-              const obj6 = { value: closure_130_18(obj5), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            c4 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } catch (tmp10) {
-          c4 = 3;
-          throw tmp10;
-        }
-      }
+    const iter = (async (arg0) => {
+      const obj5 = { type: "application", applicationId };
+      await closure_130_18(obj5);
+      await "HermesInternal";
+      applicationId = applicationId.applicationId;
+      return "flexDirection";
     })();
     iter.next();
     return iter;
@@ -353,69 +301,17 @@ obj = function _fetchStorefrontPricesForApplicationId() {
 };
 obj = function _fetchStorefrontPricesForSkuIds() {
   obj = _asyncToGenerator(async (arg0) => {
+    let closure_1;
+    let closure_2;
     let skuIds = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0, value) => {
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              closure_2 = tmp4;
-              closure_1 = tmp;
-              skuIds = undefined;
-              skuIds = skuIds.skuIds;
-              c3 = 1;
-              c4 = 1;
-              return { value: "flexDirection", done: null };
-            }
-          } else if (1 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              c3 = 2;
-              c4 = 1;
-              const obj5 = { type: "skus", skuIds };
-              const obj6 = { value: closure_130_18(obj5), done: false };
-              return obj6;
-            }
-          } else if (arg0 === 1) {
-            c4 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c4 = 3;
-            return { value, done: true };
-          } else {
-            c4 = 3;
-            return { value: "HermesInternal", done: null };
-          }
-        } catch (tmp10) {
-          c4 = 3;
-          throw tmp10;
-        }
-      }
+    const iter = (async (arg0) => {
+      const obj5 = { type: "skus", skuIds };
+      await closure_130_18(obj5);
+      await "HermesInternal";
+      skuIds = skuIds.skuIds;
+      return "flexDirection";
     })();
     iter.next();
     return iter;

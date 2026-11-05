@@ -1,17 +1,17 @@
-// Module ID: 7822
-// Function ID: 7823
+// Module ID: 7827
+// Function ID: 7828
 // Name: ConnectionsHooks
-// Dependencies: [32, 19, 6707, 1385, 1072, 7823, 1089, 504, 7825, 12, 6709, 2]
+// Dependencies: [32, 19, 6710, 1385, 1072, 7828, 1089, 504, 7830, 12, 6712, 2]
 // Exports: useEmptyStatePlatforms, useLegacyPlatformType, usePlatformAllowed, usePlatforms
 
-// Module 7822 (ConnectionsHooks)
+// Module 7827 (ConnectionsHooks)
 import _modDef12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import PlatformsDefault from "Platforms" /* 6709 */;
-import KeyboardConstants from "KeyboardConstants" /* 7823 */;
+import PlatformsDefault from "Platforms" /* 6712 */;
+import KeyboardConstants from "KeyboardConstants" /* 7828 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6707 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6710 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let set;
 
 let PlatformTypes;
 let metroImportDefault;
-const f92151 = () => currentUser.getCurrentUser();
+const f92310 = () => currentUser.getCurrentUser();
 ({ ACTIVITY_PLATFORM_TYPES: metroImportDefault, PlatformTypes } = Constants);
 const KeyboardKeysUpdated = KeyboardConstants.KeyboardKeysUpdated;
 let closure_10 = { [PlatformTypes.INSTAGRAM]: ["1036753656588017764"] };
@@ -49,7 +49,7 @@ export function usePlatformAllowed(forUserProfile) {
   let allowPlayStationStaging;
   const items = [UserStore];
   const obj = forUserProfile(allowPlayStationStaging[7]);
-  let closure_1 = obj.useStateFromStores(items, f92151);
+  let closure_1 = obj.useStateFromStores(items, f92310);
   const PlayStationVoiceExperiment = forUserProfile(allowPlayStationStaging[8]).PlayStationVoiceExperiment;
   allowPlayStationStaging = PlayStationVoiceExperiment.useConfig({ location: "f2f7ef_1" }).allowPlayStationStaging;
   return (dependencyMap) => {
@@ -87,7 +87,7 @@ export function usePlatforms() {
   let c0 = false;
   const items1 = [UserStore];
   const obj2 = stateFromStores(memo[7]);
-  let closure_1 = obj2.useStateFromStores(items1, f92151);
+  let closure_1 = obj2.useStateFromStores(items1, f92310);
   const PlayStationVoiceExperiment = stateFromStores(memo[8]).PlayStationVoiceExperiment;
   const allowPlayStationStaging = PlayStationVoiceExperiment.useConfig({ location: "f2f7ef_1" }).allowPlayStationStaging;
   const fn = (dependencyMap) => {
@@ -154,8 +154,8 @@ export function useEmptyStatePlatforms() {
   let c0 = false;
   const obj = fn(504);
   let items = [UserStore];
-  let closure_1 = obj.useStateFromStores(items, f92151);
-  const PlayStationVoiceExperiment = fn(7825).PlayStationVoiceExperiment;
+  let closure_1 = obj.useStateFromStores(items, f92310);
+  const PlayStationVoiceExperiment = fn(7830).PlayStationVoiceExperiment;
   const allowPlayStationStaging = PlayStationVoiceExperiment.useConfig({ location: "f2f7ef_1" }).allowPlayStationStaging;
   fn = (dependencyMap) => {
     let tmp6;

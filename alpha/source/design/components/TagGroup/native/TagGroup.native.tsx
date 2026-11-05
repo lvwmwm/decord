@@ -1,16 +1,16 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12394
+// Function ID: 12395
 // Name: TagGroup
-// Dependencies: [19, 17, 21, 5141, 575, 12388, 12390, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 12395, 12397, 2]
 // Exports: TagGroup
 
-// Module 12387 (TagGroup)
+// Module 12394 (TagGroup)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Tag from "Tag" /* 12390 */;
+import Tag from "Tag" /* 12397 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;

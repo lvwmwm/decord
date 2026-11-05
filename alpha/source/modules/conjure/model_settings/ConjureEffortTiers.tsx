@@ -1,20 +1,31 @@
-// Module ID: 12369
-// Function ID: 12370
+// Module ID: 12376
+// Function ID: 12377
 // Name: ConjureEffortTiers
-// Dependencies: [109, 12370, 1113, 3995, 2]
-// Exports: conjureCanPickModel, conjureCeilingSupportsFast, conjureCustomizeMessage, conjureNormalizeFast, conjurePickTierModel, conjureTierDescription, conjureTierLabel, conjureTierModel, conjureWithTier
+// Dependencies: [109, 12377, 1113, 3995, 12378, 2]
+// Exports: conjureCanPickModel, conjureCeilingSupportsFast, conjureNormalizeFast, conjurePickTierModel, conjureTierAvailable, conjureTierDescription, conjureTierLabel, conjureTierModel, conjureTierStopLabel, conjureWithTier
 
-// Module 12369 (ConjureEffortTiers)
+// Module 12376 (ConjureEffortTiers)
 import _modDef3995 from "module_3995" /* 3995 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 12370 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 12377 */;
+import ConjureModelSettingsTypes from "ConjureModelSettingsTypes" /* 12378 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const intl2 = tmp2(1113);
+const intl3 = tmp2(1113);
 let closure_3 = ["thinking"];
 let closure_4 = ["fast"];
 let obj = { simple: _modDef3995.Mqb8mc, balanced: _modDef3995.zCZfA6, complex: _modDef3995["8l2atm"] };
+const CONJURE_MODEL_TIERS = ConjureModelSettingsTypes.CONJURE_MODEL_TIERS;
+const flatMapResult = CONJURE_MODEL_TIERS.flatMap((item, index) => {
+  let items;
+  if ("complex" !== item) {
+    items = [];
+  } else {
+    items = [index];
+  }
+  return items;
+});
 const result = size.fileFinishedImporting("modules/conjure/model_settings/ConjureEffortTiers.tsx");
 
 export function conjureTierLabel(value) {
@@ -22,13 +33,13 @@ export function conjureTierLabel(value) {
   obj = ConjureModelLabels;
   const modelTierMessageResult = obj.modelTierMessage(value);
   if (null != modelTierMessageResult) {
-    const intl = intl2.intl;
+    const intl = intl3.intl;
     stringResult = intl.string(modelTierMessageResult);
   }
   return stringResult;
 }
 export function conjureTierDescription(tier) {
-  const intl = intl2.intl;
+  const intl = intl3.intl;
   return intl.string(obj[tier]);
 }
 export function conjureTierModel(settings, tiers, tier) {
@@ -51,12 +62,12 @@ export function conjureTierModel(settings, tiers, tier) {
   }
   return tmp;
 }
-export function conjureWithTier(tier, tier2) {
-  let tmp = tier;
-  if (tier2 !== tier.tier) {
-    const thinking = tier.thinking;
+export function conjureWithTier(settings, tier2) {
+  let tmp = settings;
+  if (tier2 !== settings.tier) {
+    const thinking = settings.thinking;
     obj = { tier: tier2 };
-    const merged = Object.assign(_objectWithoutProperties(tier, closure_3));
+    const merged = Object.assign(_objectWithoutProperties(settings, closure_3));
     tmp = obj;
   }
   return tmp;
@@ -116,12 +127,23 @@ export function conjureNormalizeFast(conjurePickTierModelResult) {
 export function conjureCanPickModel(choices) {
   return choices.main.length > 0;
 }
-export function conjureCustomizeMessage(choices) {
-  let qSViP4;
-  if (choices.main.length > 0) {
-    qSViP4 = _modDef3995.eGqPbV;
-  } else {
-    qSViP4 = _modDef3995.qSViP4;
+export function conjureTierAvailable(value) {
+  return "complex" !== value;
+}
+export const CONJURE_UNAVAILABLE_TIER_STOPS = flatMapResult;
+export function conjureTierStopLabel(value) {
+  obj = ConjureModelLabels;
+  const modelTierMessageResult = obj.modelTierMessage(value);
+  let stringResult = value;
+  if (null != modelTierMessageResult) {
+    const intl = tmp(1113).intl;
+    stringResult = intl.string(modelTierMessageResult);
   }
-  return qSViP4;
+  let combined = stringResult;
+  if ("complex" === value) {
+    const intl2 = tmp(1113).intl;
+    const _HermesInternal = HermesInternal;
+    combined = "" + stringResult + ", " + intl2.string(_modDef3995["17yEQw"]);
+  }
+  return combined;
 }

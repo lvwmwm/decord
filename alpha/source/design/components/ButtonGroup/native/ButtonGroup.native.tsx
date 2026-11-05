@@ -1,14 +1,14 @@
-// Module ID: 6902
-// Function ID: 6903
+// Module ID: 6905
+// Function ID: 6906
 // Name: ButtonGroup
-// Dependencies: [19, 21, 5141, 6162, 2]
+// Dependencies: [19, 21, 5143, 6165, 2]
 // Exports: ButtonGroup
 
-// Module 6902 (ButtonGroup)
+// Module 6905 (ButtonGroup)
 import Fragment from "Fragment" /* 21 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

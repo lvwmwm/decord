@@ -1,13 +1,13 @@
-// Module ID: 16619
-// Function ID: 16620
+// Module ID: 16632
+// Function ID: 16633
 // Name: isLeftBuilderPreviewFrame
-// Dependencies: [11105, 11062, 6989, 2]
+// Dependencies: [11114, 11068, 6992, 2]
 // Exports: default
 
-// Module 16619 (isLeftBuilderPreviewFrame)
-import isConjureApplicationDefault from "isConjureApplication" /* 6989 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11062 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11105 */;
+// Module 16632 (isLeftBuilderPreviewFrame)
+import isConjureApplicationDefault from "isConjureApplication" /* 6992 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11068 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11114 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/background_frames/isLeftBuilderPreviewFrame.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 11126
-// Function ID: 11127
+// Module ID: 11134
+// Function ID: 11135
 // Name: conjurePausedPreviewViews
 // Dependencies: [19, 2]
 // Exports: isConjurePausedPreviewMounted, registerConjurePausedPreview, useConjurePausedPreviewView
 
-// Module 11126 (conjurePausedPreviewViews)
+// Module 11134 (conjurePausedPreviewViews)
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

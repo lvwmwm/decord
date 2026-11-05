@@ -1,24 +1,24 @@
-// Module ID: 10361
-// Function ID: 10362
+// Module ID: 10369
+// Function ID: 10370
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 6703, 4990, 10300, 1072, 1089, 572, 1282, 6581, 12, 10302, 563, 2]
+// Dependencies: [5, 19, 6706, 4992, 10308, 1072, 1089, 572, 1282, 6584, 12, 10310, 563, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 10361 (SummaryActionCreators)
+// Module 10369 (SummaryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import SummaryStore from "SummaryStore" /* 10300 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import SummaryStore from "SummaryStore" /* 10308 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
 
-const f97394 = () => connected.isConnected();
+const f97564 = () => connected.isConnected();
 function fetchSummary() {
   return obj(...arguments);
 }
@@ -398,164 +398,96 @@ function fetchSummariesBulk() {
 }
 obj = function _fetchSummariesBulk() {
   obj = _asyncToGenerator(async function(arg0, value) {
+    let aPIError;
+    let body;
+    let closure_4;
+    let flag;
+    let flag2;
     let obj13;
     let obj9;
+    let substr;
+    let summaries;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (c8 === 2) {
-      c8 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      let c6;
-      let body;
-      try {
-        let requestedAt;
-        let flag;
-        let flag2;
-        let substr;
-        let aPIError;
-        let summaries;
-        c8 = 2;
-        if (0 === c7) {
-          if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_4 = tmp;
-            requestedAt = tmp4;
-            flag = undefined;
-            flag2 = undefined;
-            substr = closure_0;
-            let obj4 = closure_1;
-            if (closure_1 === undefined) {
-              obj4 = {};
-            }
-            flag = obj4.useQuickSwitcher ?? true;
-            flag2 = obj4.useChannelAffinities ?? true;
-            requestedAt = undefined;
-            aPIError = undefined;
-            body = undefined;
-            summaries = undefined;
-            c7 = 1;
-            c8 = 1;
-            return { value: "flexDirection", done: null };
-          }
-        } else if (1 === c7) {
-          if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c8 = 3;
-            const obj5 = { value, done: true };
-            return obj5;
-          } else {
-            let closure_2 = substr;
-            if (substr == null) {
-              closure_2 = [];
-            }
-            substr = closure_2;
-            const _Date2 = Date;
-            requestedAt = Date.now();
-            const obj6 = { withQuickSwitcher: flag, withChannelAffinities: flag2 };
-            const combined = substr.concat(closure_132_7.defaultChannelIds(obj6));
-            const found = combined.filter((item) => {
-              channel = channel.getChannel(item);
-              obj = closure_1_0(closure_1_2[11]);
-              return obj.canSeeChannelSummaries(channel, false, true);
-            });
-            const found1 = found.filter((item) => {
-              const timestamp = Date.now();
-              const statusResult = closure_1_7.status(item);
-              let fetching;
-              if (statusResult != null) {
-                fetching = statusResult.fetching;
-              }
-              if (fetching) {
-                return false;
-              } else {
-                let lastReceivedAt;
-                if (statusResult != null) {
-                  lastReceivedAt = statusResult.lastReceivedAt;
-                }
-                return null == lastReceivedAt || timestamp - lastReceivedAt > closure_1_9;
-              }
-            });
-            substr = found1.slice(0, 50);
-            if (0 === substr.length) {
-              c8 = 3;
-              const obj7 = { value: Promise.resolve(null), done: true };
-              return obj7;
-            } else {
-              const obj8 = { type: "REQUEST_CHANNEL_SUMMARIES_BULK", channelIds: substr, requestedAt };
-              const obj11 = closure_132_1(closure_132_2[7]);
-              obj11.dispatch(obj8);
-              aPIError = undefined;
-              body = undefined;
-              c6 = 1;
-              const HTTP = closure_132_0(closure_132_2[8]).HTTP;
-              const request = { url: closure_132_8.USER_SUMMARIES, body: obj9, rejectWithError: false };
-              obj9 = { channel_ids: substr };
-              c7 = 3;
-              c8 = 1;
-              const obj10 = { value: HTTP.post(request), done: false };
-              return obj10;
-            }
-          }
-        } else {
-          if (2 === c7) {
-            c6 = 0;
-            let closure_7 = body;
-            const self = this;
-            const self2 = this;
-            aPIError = new closure_132_0(closure_132_2[9]).APIError(closure_7);
-          } else if (arg0 === 1) {
-            c8 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 0;
-            c8 = 3;
-            obj = { value, done: true };
-            return obj;
-          } else {
-            body = value;
-            c6 = 0;
-          }
-          summaries = undefined;
-          if (body != null) {
-            summaries = body.body.summaries;
-          }
-          const obj12 = { type: "RECEIVE_CHANNEL_SUMMARIES_BULK", requestedAt, receivedAt: Date.now(), summaries, requestArgs: obj13, error: aPIError };
-          const _Date = Date;
-          const dispatch = closure_132_1(closure_132_2[7]).dispatch;
-          const tmp21 = closure_132_1(closure_132_2[7]);
-          obj13 = { channelIds: substr };
-          dispatch(obj12);
-          c8 = 3;
-          return { value: "HermesInternal", done: null };
-        }
-      } catch (tmp35) {
-        body = tmp35;
-        if (0 === c6) {
-          c8 = 3;
-          throw tmp35;
-        } else {
-          c7 = 2;
-        }
-      }
+    let closure_2 = substr;
+    if (substr == null) {
+      closure_2 = [];
     }
+    substr = closure_2;
+    const _Date2 = Date;
+    let requestedAt = Date.now();
+    const obj6 = { withQuickSwitcher: flag, withChannelAffinities: flag2 };
+    const combined = substr.concat(closure_132_7.defaultChannelIds(obj6));
+    const found = combined.filter((item) => {
+      channel = channel.getChannel(item);
+      obj = closure_1_0(closure_1_2[11]);
+      return obj.canSeeChannelSummaries(channel, false, true);
+    });
+    const found1 = found.filter((item) => {
+      const timestamp = Date.now();
+      const statusResult = closure_1_7.status(item);
+      let fetching;
+      if (statusResult != null) {
+        fetching = statusResult.fetching;
+      }
+      if (fetching) {
+        return false;
+      } else {
+        let lastReceivedAt;
+        if (statusResult != null) {
+          lastReceivedAt = statusResult.lastReceivedAt;
+        }
+        return null == lastReceivedAt || timestamp - lastReceivedAt > closure_1_9;
+      }
+    });
+    substr = found1.slice(0, 50);
+    if (0 === substr.length) {
+      return Promise.resolve(null);
+    }
+    const obj8 = { type: "REQUEST_CHANNEL_SUMMARIES_BULK", channelIds: substr, requestedAt };
+    const obj11 = closure_132_1(closure_132_2[7]);
+    obj11.dispatch(obj8);
+    const HTTP = closure_132_0(closure_132_2[8]).HTTP;
+    const request = { url: closure_132_8.USER_SUMMARIES, body: obj9, rejectWithError: false };
+    obj9 = { channel_ids: substr };
+    await HTTP.post(request);
+    if (2 === c7) {
+      let c6 = 0;
+      let closure_7 = body;
+      const self = this;
+      const self2 = this;
+      aPIError = new closure_132_0(closure_132_2[9]).APIError(closure_7);
+    } else if (arg0 === 1) {
+      let c8 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c6 = 0;
+      c8 = 3;
+      obj = { value, done: true };
+      return obj;
+    } else {
+      body = value;
+      c6 = 0;
+    }
+    if (body != null) {
+      summaries = body.body.summaries;
+    }
+    const obj12 = { type: "RECEIVE_CHANNEL_SUMMARIES_BULK", requestedAt, receivedAt: Date.now(), summaries, requestArgs: obj13, error: aPIError };
+    const _Date = Date;
+    const dispatch = closure_132_1(closure_132_2[7]).dispatch;
+    const tmp21 = closure_132_1(closure_132_2[7]);
+    obj13 = { channelIds: substr };
+    dispatch(obj12);
+    await "HermesInternal";
+    requestedAt = tmp4;
+    substr = closure_0;
+    let obj4 = closure_1;
+    if (closure_1 === undefined) {
+      obj4 = {};
+    }
+    flag = obj4.useQuickSwitcher ?? true;
+    flag2 = obj4.useChannelAffinities ?? true;
+    return "flexDirection";
   });
   return obj(...arguments);
 };
@@ -571,7 +503,7 @@ function useChannelSummaries(channelIds) {
   let memo;
   obj = channelIds(memo[12]);
   const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f97394);
+  const stateFromStores = obj.useStateFromStores(items, f97564);
   const items1 = [channelIds];
   memo = react.useMemo(() => channelIds.join(","), items1);
   const items2 = [memo, stateFromStores];
@@ -785,7 +717,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
   let memo;
   const items1 = [GatewayConnectionStore];
   obj = items(memo[12]);
-  const stateFromStores = obj.useStateFromStores(items1, f97394);
+  const stateFromStores = obj.useStateFromStores(items1, f97564);
   const items2 = [items];
   memo = react.useMemo(() => channelIds.join(","), items2);
   const items3 = [memo, stateFromStores];

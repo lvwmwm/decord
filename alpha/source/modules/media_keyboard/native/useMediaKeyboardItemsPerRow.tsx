@@ -1,11 +1,11 @@
-// Module ID: 10722
-// Function ID: 10723
+// Module ID: 10728
+// Function ID: 10729
 // Name: useMediaKeyboardItemsPerRow
-// Dependencies: [19, 5326, 2]
+// Dependencies: [19, 5328, 2]
 // Exports: useMediaKeyboardItemsPerRow
 
-// Module 10722 (useMediaKeyboardItemsPerRow)
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5326 */;
+// Module 10728 (useMediaKeyboardItemsPerRow)
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5328 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,20 @@
-// Module ID: 10298
-// Function ID: 10299
+// Module ID: 10306
+// Function ID: 10307
 // Name: isNewMessageGroup
-// Dependencies: [1072, 1089, 7023, 11, 4963, 2]
+// Dependencies: [1072, 1089, 7026, 11, 4965, 2]
 // Exports: isNewGroupItem
 
-// Module 10298 (isNewMessageGroup)
+// Module 10306 (isNewMessageGroup)
 import DurationsDefault from "Durations" /* 1089 */;
-import DateUtils from "DateUtils" /* 4963 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7023 */;
+import DateUtils from "DateUtils" /* 4965 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7026 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
+let metroRequire;
 function isNewMessageGroup(isForumPost, content, hasFlag) {
   const hasFlagResult = hasFlag.hasFlag(hasOwnProperty.HAS_THREAD);
   const tmp3 = !hasFlagResult && !hasFlag.isCommandType();
@@ -21,18 +22,18 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
   if (tmp3) {
     let tmp6 = content.blocked !== hasFlag.blocked || content.ignored !== hasFlag.ignored;
     if (!tmp6) {
-      let tmp33;
+      let tmp36;
       if (hasFlag.type > constants.DEFAULT) {
-        const tmp36 = isSystemMessageDefault(content);
-        let tmp37 = !tmp36;
-        if (tmp36) {
-          tmp37 = hasFlag.type === tmp7.REPLY;
+        const tmp39 = isSystemMessageDefault(content);
+        let tmp40 = !tmp39;
+        if (tmp39) {
+          tmp40 = hasFlag.type === tmp7.REPLY;
         }
-        tmp33 = tmp37;
+        tmp36 = tmp40;
       } else {
-        tmp33 = isSystemMessageDefault(content);
-        const tmp38 = importDefault;
-        if (!tmp33) {
+        tmp36 = isSystemMessageDefault(content);
+        const tmp41 = importDefault;
+        if (!tmp36) {
           let tmp8 = content.author.id !== hasFlag.author.id;
           if (!tmp8) {
             const hasFlagResult1 = content.hasFlag(hasOwnProperty.EPHEMERAL);
@@ -47,8 +48,8 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                 let tmp15 = !isForumPostResult;
                 if (isForumPostResult) {
                   const id = content.id;
-                  const tmp38Result = tmp38(11);
-                  tmp15 = id !== tmp38Result.castChannelIdAsMessageId(isForumPost.id);
+                  const tmp41Result = tmp41(11);
+                  tmp15 = id !== tmp41Result.castChannelIdAsMessageId(isForumPost.id);
                 }
                 let tmp16 = !tmp15;
                 if (tmp15) {
@@ -57,8 +58,8 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                   let tmp19 = !isSameDayResult;
                   const tmp17 = require;
                   if (isSameDayResult) {
-                    const tmp17Result = tmp17(4963);
-                    const isWithinIntervalResult = tmp17Result.isWithinInterval(content.timestamp, hasFlag.timestamp, closure_6);
+                    const tmp17Result = tmp17(4965);
+                    const isWithinIntervalResult = tmp17Result.isWithinInterval(content.timestamp, hasFlag.timestamp, closure_7);
                     let tmp22 = !isWithinIntervalResult;
                     if (isWithinIntervalResult) {
                       const hasFlagResult2 = hasFlag.hasFlag(hasOwnProperty.SUPPRESS_NOTIFICATIONS);
@@ -78,27 +79,35 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
                         }
                         let tmp29 = !hasFlagResult5;
                         if (hasFlagResult5) {
-                          let tmp30 = hasFlag.applicationId !== content.applicationId;
-                          if (!tmp30) {
-                            const additionalName = hasFlag.additionalName;
-                            let tmp31 = null;
-                            if (null != additionalName) {
-                              tmp31 = null;
-                              if ("" !== additionalName) {
-                                tmp31 = additionalName;
-                              }
-                            }
-                            const additionalName2 = content.additionalName;
-                            let tmp32 = null;
-                            if (null != additionalName2) {
-                              tmp32 = null;
-                              if ("" !== additionalName2) {
-                                tmp32 = additionalName2;
-                              }
-                            }
-                            tmp30 = tmp31 !== tmp32;
+                          let linkedLobby;
+                          if (isForumPost != null) {
+                            linkedLobby = isForumPost.linkedLobby;
                           }
-                          tmp29 = tmp30;
+                          let tmp31 = null == linkedLobby || hasFlag.state !== metroRequire.SENDING;
+                          if (tmp31) {
+                            let tmp33 = hasFlag.applicationId !== content.applicationId;
+                            if (!tmp33) {
+                              const additionalName = hasFlag.additionalName;
+                              let tmp34 = null;
+                              if (null != additionalName) {
+                                tmp34 = null;
+                                if ("" !== additionalName) {
+                                  tmp34 = additionalName;
+                                }
+                              }
+                              const additionalName2 = content.additionalName;
+                              let tmp35 = null;
+                              if (null != additionalName2) {
+                                tmp35 = null;
+                                if ("" !== additionalName2) {
+                                  tmp35 = additionalName2;
+                                }
+                              }
+                              tmp33 = tmp34 !== tmp35;
+                            }
+                            tmp31 = tmp33;
+                          }
+                          tmp29 = tmp31;
                         }
                         tmp25 = tmp29;
                       }
@@ -114,17 +123,17 @@ function isNewMessageGroup(isForumPost, content, hasFlag) {
             }
             tmp8 = tmp10;
           }
-          tmp33 = tmp8;
+          tmp36 = tmp8;
         }
       }
-      tmp6 = tmp33;
+      tmp6 = tmp36;
     }
     tmp4 = tmp6;
   }
   return tmp4;
 }
-({ MessageTypes: c3, ChannelStreamTypes: closure_4, MessageFlags: hasOwnProperty } = Constants);
-let closure_6 = 7 * DurationsDefault.Millis.MINUTE;
+({ MessageTypes: c3, ChannelStreamTypes: closure_4, MessageFlags: hasOwnProperty, MessageStates: metroRequire } = Constants);
+let closure_7 = 7 * DurationsDefault.Millis.MINUTE;
 const result = size.fileFinishedImporting("modules/messages/isNewMessageGroup.tsx");
 
 export default isNewMessageGroup;

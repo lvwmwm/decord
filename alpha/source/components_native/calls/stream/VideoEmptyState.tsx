@@ -1,20 +1,20 @@
-// Module ID: 11957
-// Function ID: 11958
+// Module ID: 11966
+// Function ID: 11967
 // Name: VideoEmptyState
-// Dependencies: [19, 17, 4990, 1072, 21, 5141, 575, 11958, 1187, 1113, 6082, 504, 5729, 8041, 6852, 5761, 5768, 2]
+// Dependencies: [19, 17, 4992, 1072, 21, 5143, 575, 11967, 1187, 1113, 6085, 504, 5731, 8046, 6855, 5763, 5770, 2]
 // Exports: default
 
-// Module 11957 (VideoEmptyState)
+// Module 11966 (VideoEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import useMountEffectDefault from "useMountEffect" /* 5729 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6852 */;
-import StreamActionCreators from "StreamActionCreators" /* 8041 */;
+import useMountEffectDefault from "useMountEffect" /* 5731 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6855 */;
+import StreamActionCreators from "StreamActionCreators" /* 8046 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -68,7 +68,7 @@ export default function VideoEmptyState(style) {
     const tmp8 = closure_7;
     const tmp9 = closure_6;
     if (!removeSplashImage) {
-      let obj2 = { style: tmp2.placeholderImage, children: closure_5(stream(11958).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
+      let obj2 = { style: tmp2.placeholderImage, children: closure_5(stream(11967).CouchSpotIllustration, { accessible: false, width: "100%", height: "100%" }) };
       tmp10 = closure_5(View, obj2);
     }
     const obj3 = { children: items };
@@ -87,13 +87,13 @@ export default function VideoEmptyState(style) {
     tmp8Result = null;
   }
   if (null != avError) {
-    const obj6 = stream(6082);
+    const obj6 = stream(6085);
     errorCode = obj6.getErrorInfo(avError).errorCode;
   } else {
     errorCode = null;
     if (type === obj.STREAM_FAILED) {
-      const obj5 = stream(6082);
-      errorCode = obj5.getErrorInfo(stream(6082).AVError.STREAM_FAILED_TO_START).errorCode;
+      const obj5 = stream(6085);
+      errorCode = obj5.getErrorInfo(stream(6085).AVError.STREAM_FAILED_TO_START).errorCode;
     }
   }
   const items1 = [ChannelStore];
@@ -121,7 +121,7 @@ export default function VideoEmptyState(style) {
   const tmp26 = closure_7;
   if (tmp29) {
     const obj9 = { variant: "body-sm/semibold", color: "text-muted", selectable: true, children: intl3.formatToPlainString(stream(1113).t.ejOT95, obj10) };
-    const Text = tmp23(5761).Text;
+    const Text = tmp23(5763).Text;
     intl3 = tmp23(1113).intl;
     obj10 = { errorCode };
     tmp29 = closure_5(Text, obj9);
@@ -143,7 +143,7 @@ export default function VideoEmptyState(style) {
           stopStream(obj.encodeStreamKey(stream));
         }
     };
-    Button = tmp23(5768).Button;
+    Button = tmp23(5770).Button;
     intl4 = tmp23(1113).intl;
     tmp31 = closure_5(tmp27, obj11);
   }

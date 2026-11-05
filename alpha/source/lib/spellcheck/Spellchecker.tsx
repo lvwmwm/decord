@@ -1,18 +1,18 @@
-// Module ID: 7069
-// Function ID: 7070
+// Module ID: 7072
+// Function ID: 7073
 // Name: Spellchecker
-// Dependencies: [5, 32, 2191, 3, 4952, 7070, 7071, 7072, 7073, 1380, 12, 2158, 2]
+// Dependencies: [5, 32, 2191, 3, 4954, 7073, 7074, 7075, 7076, 1380, 12, 2158, 2]
 // Exports: install
 
-// Module 7069 (Spellchecker)
+// Module 7072 (Spellchecker)
 import LoggerDefault from "Logger" /* 3 */;
 import DOMUtils from "DOMUtils" /* 2158 */;
-import fallbackLocalesDefault from "fallbackLocales" /* 7070 */;
-import _mod7071 from "module_7071" /* 7071 */;
+import fallbackLocalesDefault from "fallbackLocales" /* 7073 */;
+import _mod7074 from "module_7074" /* 7074 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
-import DiscordNative from "DiscordNative" /* 4952 */;
+import DiscordNative from "DiscordNative" /* 4954 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -71,7 +71,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod7071;
+      obj = _mod7074;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {
@@ -203,7 +203,7 @@ class Spellchecker {
       if (str2 == null) {
         str2 = str;
       }
-      obj = _mod7071;
+      obj = _mod7074;
       const parsed = obj.parse(str2.replace(/[_-]/g, "-"));
       if (null != parsed) {
         if (null != parsed.langtag.language) {

@@ -1,9 +1,9 @@
-// Module ID: 18685
-// Function ID: 18686
+// Module ID: 18715
+// Function ID: 18716
 // Name: InterestGamePickerConstants
 // Dependencies: [575, 2]
 
-// Module 18685 (InterestGamePickerConstants)
+// Module 18715 (InterestGamePickerConstants)
 import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export const THUMBNAIL_HIT_SLOP = rect;
 export const FOOTER_BORDER_WIDTH = 1;
 export const SELECTED_BORDER_WIDTH = 2;
 export const SELECTED_GAP_WIDTH = result;
-export const MAX_SELECTIONS = 5;
+export const MAX_SELECTIONS = 10;
 export const GRID_COVER_HAIRLINE_WIDTH = 1;
 export const MIN_SELECTIONS = 1;
 export const TRAY_ENTER_MS = 300;

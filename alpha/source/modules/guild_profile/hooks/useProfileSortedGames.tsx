@@ -1,14 +1,14 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15187
+// Function ID: 15188
 // Name: useProfileSortedGames
-// Dependencies: [19, 9443, 15175, 15176, 12, 1380, 12564, 9286, 9289, 8822, 2]
+// Dependencies: [19, 9450, 15188, 15189, 12, 1380, 12571, 9293, 9296, 8827, 2]
 // Exports: useProfileSortedGames
 
-// Module 15174 (useProfileSortedGames)
+// Module 15187 (useProfileSortedGames)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import react from "react" /* 19 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 9443 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9450 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

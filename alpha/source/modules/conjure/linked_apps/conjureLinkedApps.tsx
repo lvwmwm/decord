@@ -1,13 +1,13 @@
-// Module ID: 12360
-// Function ID: 12361
+// Module ID: 12367
+// Function ID: 12368
 // Name: conjureLinkedApps
-// Dependencies: [5, 3995, 1113, 11134, 2]
+// Dependencies: [5, 3995, 1113, 11142, 2]
 // Exports: fetchLinkedAppCallers, linkConjureApp, linkedAppBuildDescription, linkedAppBuildLabel, unlinkConjureApp
 
-// Module 12360 (conjureLinkedApps)
+// Module 12367 (conjureLinkedApps)
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 11134 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 11142 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

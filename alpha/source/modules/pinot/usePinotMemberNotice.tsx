@@ -1,13 +1,13 @@
-// Module ID: 11510
-// Function ID: 11511
+// Module ID: 11518
+// Function ID: 11519
 // Name: usePinotMemberNotice
-// Dependencies: [19, 11511, 11509, 9200, 11512, 11513, 504, 11517, 2]
+// Dependencies: [19, 11519, 11517, 9207, 11520, 11521, 504, 11525, 2]
 // Exports: usePinotMemberNotice
 
-// Module 11510 (usePinotMemberNotice)
-import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 11517 */;
+// Module 11518 (usePinotMemberNotice)
+import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 11525 */;
 import react from "react" /* 19 */;
-import PinotMemberNoticeAckStore from "PinotMemberNoticeAckStore" /* 11511 */;
+import PinotMemberNoticeAckStore from "PinotMemberNoticeAckStore" /* 11519 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = { visible: false };

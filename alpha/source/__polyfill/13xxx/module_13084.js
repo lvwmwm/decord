@@ -1,125 +1,103 @@
 // Module ID: 13084
 // Function ID: 13085
-// Dependencies: []
+// Dependencies: [13057, 13062]
 
 // Module 13084
-let closure_1 = Object.create(null);
-let closure_2 = Object.create(null);
-let obj = {
-  keyword: function getKeywordDescriptor(str) {
-    const obj = hasOwnProperty;
-    if (hasOwnProperty.call(closure_1, str)) {
-      return closure_1[str];
-    } else {
-      const formatted = str.toLowerCase();
-      if (obj.call(closure_1, formatted)) {
-        closure_1[str] = closure_1[formatted];
-        return closure_1[formatted];
-      } else {
-        let tmp2 = length >= 2;
-        if (2 <= formatted.length) {
-          tmp2 = 45 === formatted.charCodeAt(0);
-        }
-        if (tmp2) {
-          tmp2 = 45 === formatted.charCodeAt(1);
-        }
-        let str2 = "";
-        if (!tmp2) {
-          let str3 = "";
-          if (3 <= formatted.length) {
-            str3 = "";
-            if (45 === formatted.charCodeAt(0)) {
-              str3 = "";
-              if (45 !== formatted.charCodeAt(1)) {
-                const index = formatted.indexOf("-", 2);
-                str3 = "";
-                if (-1 !== index) {
-                  str3 = formatted.substring(0, index + 1);
-                }
-              }
-            }
-          }
-          str2 = str3;
-        }
-        const _Object = Object;
-        const obj2 = { basename: formatted.substr(str2.length), name: formatted, vendor: str2, prefix: str2, custom: tmp2 };
-        const freezeResult = freeze(obj2);
-        closure_1[str] = freezeResult;
-        return freezeResult;
-      }
-    }
-  },
-  property: function getPropertyDescriptor(str) {
-    const obj = hasOwnProperty;
-    if (hasOwnProperty.call(closure_2, str)) {
-      return closure_2[str];
-    } else {
-      str = str[0];
-      let str2 = "/";
-      if ("/" === str) {
-        if (`/` === str[1]) {
-          str2 = "//";
-        }
-        str = str2;
-      } else {
-        const tmp2 = "_" !== str && "*" !== str && "$" !== str && "#" !== str && "+" !== str && "&" !== str;
-        if (tmp2) {
-          str = "";
-        }
-      }
-      const tmp4 = str.length - tmp3 >= 2 && 45 === str.charCodeAt(tmp3) && 45 === str.charCodeAt(tmp3 + 1);
-      let arr = str;
-      if (!tmp4) {
-        const formatted = str.toLowerCase();
-        arr = formatted;
-        if (obj.call(closure_2, formatted)) {
-          closure_2[str] = closure_2[formatted];
-          return closure_2[formatted];
-        }
-      }
-      let str10 = "";
-      if (!tmp4) {
-        let str11 = "";
-        if (arr.length - (str.length || 0) >= 3) {
-          str11 = "";
-          if (45 === arr.charCodeAt(str.length || 0)) {
-            str11 = "";
-            if (45 !== arr.charCodeAt((str.length || 0) + 1)) {
-              const index = arr.indexOf("-", tmp7 + 2);
-              str11 = "";
-              if (-1 !== index) {
-                str11 = arr.substring(tmp7, index + 1);
-              }
+import TokenStream from "TokenStream" /* 13057 */;
+import tokenize from "tokenize" /* 13062 */;
+
+function prepareTokens(arg0, items) {
+  let node1 = null;
+  if (items) {
+    node1 = items[0].node;
+  }
+  items = [];
+  tokenize(arg0, closure_2);
+  let num = 0;
+  let num2 = 0;
+  while (!closure_2.eof) {
+    let tmp6 = node1;
+    let tmp7 = num;
+    let tmp8 = num2;
+    if (items) {
+      tmp6 = node1;
+      tmp7 = num;
+      tmp8 = num2;
+      if (num < items.length) {
+        let tmp12 = num;
+        let tmp13 = num2;
+        tmp6 = node1;
+        tmp7 = num;
+        tmp8 = num2;
+        if (num2 + items[num].len <= closure_2.tokenStart) {
+          let sum = tmp12 + 1;
+          let sum1 = tmp13 + items[tmp12].len;
+          let node = items[sum].node;
+          tmp6 = node;
+          tmp8 = sum1;
+          tmp7 = sum;
+          while (sum < items.length) {
+            tmp12 = sum;
+            tmp13 = sum1;
+            tmp6 = node;
+            tmp7 = sum;
+            tmp8 = sum1;
+            if (sum1 + items[sum].len > closure_2.tokenStart) {
+              break;
             }
           }
         }
-        str10 = str11;
       }
-      const substr = arr.substr(0, str.length + str10.length);
-      const _Object = Object;
-      const obj2 = { basename: arr.substr(substr.length), name: arr.substr(str.length), hack: str, vendor: str10, prefix: substr, custom: tmp4 };
-      const freezeResult = freeze(obj2);
-      closure_2[str] = freezeResult;
-      return freezeResult;
     }
-  },
-  isCustomProperty(callResult, arg1) {
-    const tmp2 = callResult.length - tmp >= 2 && 45 === callResult.charCodeAt(tmp) && 45 === callResult.charCodeAt(tmp + 1);
-    return tmp2;
-  },
-  vendorPrefix: function getVendorPrefix(str, arg1) {
-    if (str.length - (arg1 || 0) >= 3) {
-      if (45 === str.charCodeAt(arg1 || 0)) {
-        if (45 !== str.charCodeAt((arg1 || 0) + 1)) {
-          const index = str.indexOf("-", tmp + 2);
-          if (-1 !== index) {
-            return str.substring(arg1 || 0, index + 1);
-          }
+    let obj = { type: closure_2.tokenType, value: closure_2.getTokenValue(), index: closure_2.tokenIndex, balance: closure_2.balance[closure_2.tokenIndex], node: tmp6 };
+    let push = items.push;
+    let arr = push(obj);
+    let nextResult = closure_2.next();
+    node1 = tmp6;
+    num = tmp7;
+    num2 = tmp8;
+  }
+  return items;
+}
+let tmp = new TokenStream();
+let closure_2 = tmp;
+let closure_3 = {
+  decorator(children) {
+    let node = null;
+    let obj = { len: 0, node: null };
+    const items = [obj];
+    let closure_4 = "";
+    return {
+      children: children.children,
+      node(arg0) {
+        let closure_1 = arg0;
+        node = children.node;
+        node.call(this, arg0);
+        const tmp = closure_1;
+        closure_1 = tmp;
+      },
+      chunk(arg0) {
+        closure_4 = closure_4 + arg0;
+        if (obj.node !== node) {
+          obj = { len: arg0.length, node };
+          items.push(obj);
+        } else {
+          obj.len = obj.len + arg0.length;
         }
+      },
+      result() {
+        return prepareTokens(closure_4, items);
       }
-    }
-    return "";
+    };
   }
 };
 
-export default obj;
+export default (str, generate) => {
+  let generateResult;
+  if (typeof str === "string") {
+    generateResult = prepareTokens(str, null);
+  } else {
+    generateResult = generate.generate(str, closure_3);
+  }
+  return generateResult;
+};

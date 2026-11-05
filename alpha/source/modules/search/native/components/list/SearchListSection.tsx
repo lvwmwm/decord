@@ -1,15 +1,15 @@
-// Module ID: 19025
-// Function ID: 19026
+// Module ID: 19056
+// Function ID: 19057
 // Name: SearchListSection
-// Dependencies: [19, 17, 9976, 21, 5141, 5761, 2]
+// Dependencies: [19, 17, 9982, 21, 5143, 5763, 2]
 
-// Module 19025 (SearchListSection)
+// Module 19056 (SearchListSection)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import SearchConstants from "SearchConstants" /* 9976 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import SearchConstants from "SearchConstants" /* 9982 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c3;

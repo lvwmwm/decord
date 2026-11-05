@@ -1,18 +1,18 @@
-// Module ID: 18015
-// Function ID: 18016
+// Module ID: 18043
+// Function ID: 18044
 // Name: UserSettingsDesignSystemText
-// Dependencies: [19, 17, 21, 5732, 575, 6162, 7201, 5762, 7116, 5761, 2]
+// Dependencies: [19, 17, 21, 5734, 575, 6165, 7204, 5764, 7119, 5763, 2]
 // Exports: default
 
-// Module 18015 (UserSettingsDesignSystemText)
+// Module 18043 (UserSettingsDesignSystemText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5732 */;
-import TextVariants from "TextVariants" /* 5762 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
-import TableRow2 from "TableRow" /* 7116 */;
-import TableRowGroup2 from "TableRowGroup" /* 7201 */;
+import useToken from "useToken" /* 5734 */;
+import TextVariants from "TextVariants" /* 5764 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
+import TableRow2 from "TableRow" /* 7119 */;
+import TableRowGroup2 from "TableRowGroup" /* 7204 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

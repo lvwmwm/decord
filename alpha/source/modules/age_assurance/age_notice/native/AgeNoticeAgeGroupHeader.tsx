@@ -1,25 +1,25 @@
-// Module ID: 16873
-// Function ID: 16874
+// Module ID: 16896
+// Function ID: 16897
 // Name: AgeNoticeAgeGroupHeader
-// Dependencies: [32, 19, 17, 6872, 4987, 21, 5141, 575, 4974, 10310, 3255, 8095, 16863, 7709, 5869, 5761, 1113, 7121, 7195, 16874, 5768, 2]
-// Exports: TinyBroncoAgeGroupHeader
+// Dependencies: [32, 19, 17, 6875, 4989, 21, 5143, 575, 4976, 10318, 3255, 8100, 16886, 7711, 5872, 5763, 1113, 7124, 7198, 16897, 5770, 2]
+// Exports: AgeNoticeAgeGroupHeader
 
-// Module 16873 (AgeNoticeAgeGroupHeader)
+// Module 16896 (AgeNoticeAgeGroupHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3255 from "module_3255" /* 3255 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10310 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16874 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6875 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8100 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10318 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16897 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,12 +55,12 @@ function AccountStatusNotice(ageGroup) {
       const obj4 = { style: tmp.noticeIcon, children: closure_8(require("CircleInformationIcon").CircleInformationIcon, { size: "xs", color: "text-link" }) };
       items = [closure_8(View, obj4), , ];
       obj5 = { style: tmp.noticeBody, variant: "body-sm/normal", color: "text-default", children: intl.format(obj5[ageGroup], obj6) };
-      const Text = tmp2(5761).Text;
+      const Text = tmp2(5763).Text;
       intl = tmp2(1113).intl;
       obj6 = { handleOnBlogHook: handleOpenBlog };
       items[1] = closure_8(Text, obj5);
       const obj7 = { style: tmp.noticeDismiss, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(require("intl").t.WAI6xu), hitSlop: 12, onPress: tmp8, children: closure_8(require("XSmallIcon").XSmallIcon, { size: "sm", color: "icon-strong" }) };
-      const PressableOpacity = tmp2(7121).PressableOpacity;
+      const PressableOpacity = tmp2(7124).PressableOpacity;
       intl2 = tmp2(1113).intl;
       items[2] = closure_8(PressableOpacity, obj7);
       tmp9 = closure_9(View, obj3);
@@ -79,7 +79,7 @@ function AgeGroupDescription(ageGroup) {
   ageGroup = ageGroup.ageGroup;
   if (useAgeGroupPresentation.AgeGroupState.ADULT === ageGroup) {
     const obj2 = { variant: "body-sm/normal", color: "text-default", children: format3(gi4ulu, obj3) };
-    const Text3 = tmp(5761).Text;
+    const Text3 = tmp(5763).Text;
     const intl3 = tmp(1113).intl;
     format3 = intl3.format;
     obj3 = { handleOnAgeGatedContentHook: useAgeGroupPresentation.handleOpenAgeGatedContentArticle };
@@ -87,7 +87,7 @@ function AgeGroupDescription(ageGroup) {
     return metroImportAll(Text3, obj2);
   } else if (useAgeGroupPresentation.AgeGroupState.TEEN === ageGroup) {
     const obj4 = { variant: "body-sm/normal", color: "text-default", children: format2(v221iML, obj5) };
-    const Text2 = tmp(5761).Text;
+    const Text2 = tmp(5763).Text;
     const intl2 = tmp(1113).intl;
     format2 = intl2.format;
     obj5 = { handleOnAgeGatedContentHook: useAgeGroupPresentation.handleOpenAgeGatedContentArticle, handleOnConfirmAgeHook: useAgeGroupPresentation.handleShowAgeVerification };
@@ -95,7 +95,7 @@ function AgeGroupDescription(ageGroup) {
     return metroImportAll(Text2, obj4);
   } else if (useAgeGroupPresentation.AgeGroupState.UNVERIFIED === ageGroup) {
     const obj = { variant: "body-sm/normal", color: "text-default", children: format(prop, obj6) };
-    const Text = tmp(5761).Text;
+    const Text = tmp(5763).Text;
     const intl = tmp(1113).intl;
     format = intl.format;
     obj6 = { handleOnAgeGatedContentHook: handleOpenUnconfirmedAgeGroupSupportArticle.handleOpenUnconfirmedAgeGroupSupportArticle, handleOnConfirmAgeHook: useAgeGroupPresentation.handleShowAgeVerification };
@@ -111,12 +111,12 @@ function AgeGroupCallToAction(ageGroup) {
     return null;
   } else if (useAgeGroupPresentation.AgeGroupState.TEEN === ageGroup) {
     const obj2 = { grow: true, variant: "secondary", size: "md", text: intl2.string(_modDef3255["+7NlgO"]), onPress: useAgeGroupPresentation.handleOpenAgeGatedContentArticle };
-    const Button2 = tmp(5768).Button;
+    const Button2 = tmp(5770).Button;
     intl2 = tmp(1113).intl;
     return metroImportAll(Button2, obj2);
   } else if (useAgeGroupPresentation.AgeGroupState.UNVERIFIED === ageGroup) {
     const obj = { grow: true, variant: "secondary", size: "md", text: intl.string(_modDef3255["cI+bc/"]), onPress: useAgeGroupPresentation.handleShowAgeVerification };
-    const Button = tmp(5768).Button;
+    const Button = tmp(5770).Button;
     intl = tmp(1113).intl;
     return metroImportAll(Button, obj);
   }
@@ -144,7 +144,7 @@ obj6[useAgeGroupPresentation.AgeGroupState.TEEN] = _modDef3255["41MDhK"];
 obj6[useAgeGroupPresentation.AgeGroupState.UNVERIFIED] = _modDef3255.m95jW8;
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/native/AgeNoticeAgeGroupHeader.tsx");
 
-export function TinyBroncoAgeGroupHeader() {
+export function AgeNoticeAgeGroupHeader() {
   let intl;
   let items1;
   const tmp = closure_10();

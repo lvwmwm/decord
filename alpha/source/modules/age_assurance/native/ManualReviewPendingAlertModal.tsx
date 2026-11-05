@@ -1,15 +1,15 @@
-// Module ID: 8310
-// Function ID: 8311
+// Module ID: 8315
+// Function ID: 8316
 // Name: ManualReviewPendingAlertModal
-// Dependencies: [19, 21, 6099, 1113, 3319, 6099, 1260, 2]
+// Dependencies: [19, 21, 6102, 1113, 3319, 6102, 1260, 2]
 // Exports: default
 
-// Module 8310 (ManualReviewPendingAlertModal)
+// Module 8315 (ManualReviewPendingAlertModal)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import _modDef3319 from "module_3319" /* 3319 */;
-import AlertModal2 from "AlertModal" /* 6099 */;
+import AlertModal2 from "AlertModal" /* 6102 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

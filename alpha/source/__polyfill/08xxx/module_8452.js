@@ -1,45 +1,17 @@
 // Module ID: 8452
 // Function ID: 8453
-// Dependencies: [8453]
+// Dependencies: [8449]
 
 // Module 8452
-import _modDef8453 from "module_8453" /* 8453 */;
+import _mod8449 from "module_8449" /* 8449 */;
 
-
-export default {
-  decode(arg0, buffer) {
-    function decodeAsciiValue(arg0) {
-      try {
-        const _decodeURIComponent = decodeURIComponent;
-        const _escape = escape;
-        return decodeURIComponent(escape(arg0));
-      } catch (err) {
-        return arg0;
-      }
-    }
-    const obj = _modDef8453;
-    const value = obj.get();
-    if (undefined !== value) {
-      if (undefined !== arg0) {
-        try {
-          const self = this;
-          const self2 = this;
-          const value1 = new value(arg0);
-          const _DataView = DataView;
-          const decode = value1.decode;
-          if (buffer instanceof DataView) {
-            buffer = buffer.buffer;
-          } else {
-            const _Uint8Array = Uint8Array;
-            buffer = Uint8Array.from(buffer);
-          }
-          return decode(buffer);
-        } catch (err) {
-        }
-      }
-    }
-    const mapped = buffer.map((item) => String.fromCharCode(item));
-    return decodeAsciiValue(mapped.join(""));
-  },
-  TAG_HEADER_SIZE: 5
+let obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
+obj[45056] = {
+  name: "MPFVersion",
+  description(value) {
+    const obj = _mod8449;
+    return obj.getStringValue(value);
+  }
 };
+
+export default obj;

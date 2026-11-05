@@ -1,16 +1,16 @@
-// Module ID: 9266
-// Function ID: 9267
+// Module ID: 9273
+// Function ID: 9274
 // Name: utils/InstantInviteUtils
-// Dependencies: [4990, 5071, 5073, 1072, 1113, 9128, 504, 2]
+// Dependencies: [4992, 5073, 5075, 1072, 1113, 9134, 504, 2]
 // Exports: getInviteChannelId, shouldRenderInvite, useShouldShowInviteInActionBar
 
-// Module 9266 (utils/InstantInviteUtils)
+// Module 9273 (utils/InstantInviteUtils)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import canViewInviteModal from "canViewInviteModal" /* 9128 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 5071 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import canViewInviteModal from "canViewInviteModal" /* 9134 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 5073 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,157 +18,157 @@ let _require;
 
 let c3;
 let closure_4;
-const f94917 = () => f49776();
-const f94918 = () => f49777();
+const f95084 = () => f49854();
+const f95085 = () => f49855();
 let GuildChannelStore = GuildChannelStore_mod;
 ({ GUILD_SELECTABLE_CHANNELS_KEY: c3, GUILD_VOCAL_CHANNELS_KEY: closure_4 } = GuildChannelStore);
 GuildChannelStore = GuildChannelStore_mod;
 const Permissions = Constants.Permissions;
-const f49751 = () => {
-  const intl = f49751(f49752[4]).intl;
-  return intl.string(f49751(f49752[4]).t.PqEzn8);
+const f49829 = () => {
+  const intl = f49829(f49830[4]).intl;
+  return intl.string(f49829(f49830[4]).t.PqEzn8);
 };
-const f49752 = () => {
-  const intl = f49751(f49752[4]).intl;
-  return intl.string(f49751(f49752[4]).t["5u4A6V"]);
+const f49830 = () => {
+  const intl = f49829(f49830[4]).intl;
+  return intl.string(f49829(f49830[4]).t["5u4A6V"]);
 };
 let obj = { value: 0 };
-Object.defineProperty(obj, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj, "descriptiveLabel", { get: f95085, set: undefined });
 const fn = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t["k2UNz+"], { days: 7 });
 };
 let obj2 = { value: 604800 };
-Object.defineProperty(obj2, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj2, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj2, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj2, "descriptiveLabel", { get: f95085, set: undefined });
 const fn2 = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t["k2UNz+"], { days: 14 });
 };
 const obj3 = { value: 1209600 };
-Object.defineProperty(obj3, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj3, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj3, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj3, "descriptiveLabel", { get: f95085, set: undefined });
 const fn3 = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t["k2UNz+"], { days: 30 });
 };
 const obj4 = { value: 2592000 };
-Object.defineProperty(obj4, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj4, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj4, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj4, "descriptiveLabel", { get: f95085, set: undefined });
 const fn4 = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t["k2UNz+"], { days: 60 });
 };
 const obj5 = { value: 5184000 };
-Object.defineProperty(obj5, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj5, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj5, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj5, "descriptiveLabel", { get: f95085, set: undefined });
 const fn5 = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t["k2UNz+"], { days: 1 });
 };
 const obj6 = { value: 86400 };
-Object.defineProperty(obj6, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj6, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj6, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj6, "descriptiveLabel", { get: f95085, set: undefined });
 const fn6 = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t.xCjYxK, { hours: 12 });
 };
 const obj7 = { value: 43200 };
-Object.defineProperty(obj7, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj7, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj7, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj7, "descriptiveLabel", { get: f95085, set: undefined });
 const fn7 = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t.xCjYxK, { hours: 6 });
 };
 const obj8 = { value: 21600 };
-Object.defineProperty(obj8, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj8, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj8, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj8, "descriptiveLabel", { get: f95085, set: undefined });
 const fn8 = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t.xCjYxK, { hours: 8 });
 };
 const obj9 = { value: 28800 };
-Object.defineProperty(obj9, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj9, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj9, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj9, "descriptiveLabel", { get: f95085, set: undefined });
 const fn9 = () => {
   const intl = intl2.intl;
   return intl.formatToPlainString(intl2.t.xCjYxK, { hours: 1 });
 };
 const obj10 = { value: 3600 };
-Object.defineProperty(obj10, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj10, "descriptiveLabel", { get: f94918, set: undefined });
-const f49762 = () => {
-  const intl = f49762(f49763[4]).intl;
-  return intl.formatToPlainString(f49762(f49763[4]).t.opVZ9q, { mins: 30 });
+Object.defineProperty(obj10, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj10, "descriptiveLabel", { get: f95085, set: undefined });
+const f49840 = () => {
+  const intl = f49840(f49841[4]).intl;
+  return intl.formatToPlainString(f49840(f49841[4]).t.opVZ9q, { mins: 30 });
 };
-const f49763 = () => {
-  const intl = f49762(f49763[4]).intl;
-  return intl.formatToPlainString(f49762(f49763[4]).t.iXLF9W, { minutes: 30 });
+const f49841 = () => {
+  const intl = f49840(f49841[4]).intl;
+  return intl.formatToPlainString(f49840(f49841[4]).t.iXLF9W, { minutes: 30 });
 };
 const obj11 = { value: 1800 };
-Object.defineProperty(obj11, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj11, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj11, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj11, "descriptiveLabel", { get: f95085, set: undefined });
 let items = [obj, obj5, obj4, obj3, obj2, obj6, obj7, obj8, obj10, obj11];
-const f49764 = () => {
-  const intl = f49764(f49765[4]).intl;
-  return intl.formatToPlainString(f49764(f49765[4]).t["r/IcuP"], { maxUses: 0 });
+const f49842 = () => {
+  const intl = f49842(f49843[4]).intl;
+  return intl.formatToPlainString(f49842(f49843[4]).t["r/IcuP"], { maxUses: 0 });
 };
-const f49765 = () => {
-  const intl = f49764(f49765[4]).intl;
-  return intl.formatToPlainString(f49764(f49765[4]).t.gPl14C, { maxUses: 0 });
+const f49843 = () => {
+  const intl = f49842(f49843[4]).intl;
+  return intl.formatToPlainString(f49842(f49843[4]).t.gPl14C, { maxUses: 0 });
 };
 const obj12 = { value: 0 };
-Object.defineProperty(obj12, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj12, "descriptiveLabel", { get: f94918, set: undefined });
-const f49766 = () => "1";
-const f49767 = () => {
-  const intl = f49766(f49767[4]).intl;
-  return intl.formatToPlainString(f49766(f49767[4]).t.gPl14C, { maxUses: 1 });
+Object.defineProperty(obj12, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj12, "descriptiveLabel", { get: f95085, set: undefined });
+const f49844 = () => "1";
+const f49845 = () => {
+  const intl = f49844(f49845[4]).intl;
+  return intl.formatToPlainString(f49844(f49845[4]).t.gPl14C, { maxUses: 1 });
 };
 const obj13 = { value: 1 };
-Object.defineProperty(obj13, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj13, "descriptiveLabel", { get: f94918, set: undefined });
-const f49768 = () => "5";
-const f49769 = () => {
-  const intl = f49768(f49769[4]).intl;
-  return intl.formatToPlainString(f49768(f49769[4]).t.gPl14C, { maxUses: 5 });
+Object.defineProperty(obj13, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj13, "descriptiveLabel", { get: f95085, set: undefined });
+const f49846 = () => "5";
+const f49847 = () => {
+  const intl = f49846(f49847[4]).intl;
+  return intl.formatToPlainString(f49846(f49847[4]).t.gPl14C, { maxUses: 5 });
 };
 const obj14 = { value: 5 };
-Object.defineProperty(obj14, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj14, "descriptiveLabel", { get: f94918, set: undefined });
-const f49770 = () => "10";
-const f49771 = () => {
-  const intl = f49770(f49771[4]).intl;
-  return intl.formatToPlainString(f49770(f49771[4]).t.gPl14C, { maxUses: 10 });
+Object.defineProperty(obj14, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj14, "descriptiveLabel", { get: f95085, set: undefined });
+const f49848 = () => "10";
+const f49849 = () => {
+  const intl = f49848(f49849[4]).intl;
+  return intl.formatToPlainString(f49848(f49849[4]).t.gPl14C, { maxUses: 10 });
 };
 const obj15 = { value: 10 };
-Object.defineProperty(obj15, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj15, "descriptiveLabel", { get: f94918, set: undefined });
-const f49772 = () => "25";
-const f49773 = () => {
-  const intl = f49772(f49773[4]).intl;
-  return intl.formatToPlainString(f49772(f49773[4]).t.gPl14C, { maxUses: 25 });
+Object.defineProperty(obj15, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj15, "descriptiveLabel", { get: f95085, set: undefined });
+const f49850 = () => "25";
+const f49851 = () => {
+  const intl = f49850(f49851[4]).intl;
+  return intl.formatToPlainString(f49850(f49851[4]).t.gPl14C, { maxUses: 25 });
 };
 const obj16 = { value: 25 };
-Object.defineProperty(obj16, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj16, "descriptiveLabel", { get: f94918, set: undefined });
-const f49774 = () => "50";
-const f49775 = () => {
-  const intl = f49774(f49775[4]).intl;
-  return intl.formatToPlainString(f49774(f49775[4]).t.gPl14C, { maxUses: 50 });
+Object.defineProperty(obj16, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj16, "descriptiveLabel", { get: f95085, set: undefined });
+const f49852 = () => "50";
+const f49853 = () => {
+  const intl = f49852(f49853[4]).intl;
+  return intl.formatToPlainString(f49852(f49853[4]).t.gPl14C, { maxUses: 50 });
 };
 const obj17 = { value: 50 };
-Object.defineProperty(obj17, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj17, "descriptiveLabel", { get: f94918, set: undefined });
-const f49776 = () => "100";
-const f49777 = () => {
-  const intl = f49776(f49777[4]).intl;
-  return intl.formatToPlainString(f49776(f49777[4]).t.gPl14C, { maxUses: 100 });
+Object.defineProperty(obj17, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj17, "descriptiveLabel", { get: f95085, set: undefined });
+const f49854 = () => "100";
+const f49855 = () => {
+  const intl = f49854(f49855[4]).intl;
+  return intl.formatToPlainString(f49854(f49855[4]).t.gPl14C, { maxUses: 100 });
 };
 const obj18 = { value: 100 };
-Object.defineProperty(obj18, "label", { get: f94917, set: undefined });
-Object.defineProperty(obj18, "descriptiveLabel", { get: f94918, set: undefined });
+Object.defineProperty(obj18, "label", { get: f95084, set: undefined });
+Object.defineProperty(obj18, "descriptiveLabel", { get: f95085, set: undefined });
 let items1 = [obj12, obj13, obj14, obj15, obj16, obj17, obj18];
 let result = size.fileFinishedImporting("utils/native/InstantInviteUtils.tsx");
 
@@ -266,7 +266,7 @@ export function useShouldShowInviteInActionBar(id) {
   }
   let tmp5 = null == vanityURLCode;
   if (!tmp5) {
-    const tmpResult = tmp(9128);
+    const tmpResult = tmp(9134);
     tmp5 = !tmpResult.canViewInviteModal(PermissionStore, id);
   }
   let tmp7 = !tmp5;

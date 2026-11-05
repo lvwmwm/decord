@@ -1,11 +1,11 @@
-// Module ID: 14359
-// Function ID: 14360
+// Module ID: 14372
+// Function ID: 14373
 // Name: useGuildPowerupOnShowMore
-// Dependencies: [19, 14309, 2]
+// Dependencies: [19, 14322, 2]
 // Exports: default
 
-// Module 14359 (useGuildPowerupOnShowMore)
-import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 14309 */;
+// Module 14372 (useGuildPowerupOnShowMore)
+import openGuildPowerupsBottomSheetDefault from "openGuildPowerupsBottomSheet" /* 14322 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

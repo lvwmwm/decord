@@ -1,19 +1,19 @@
-// Module ID: 14714
-// Function ID: 14715
+// Module ID: 14727
+// Function ID: 14728
 // Name: virtual_currency/BalanceWidgetPill
-// Dependencies: [19, 17, 21, 5141, 5774, 575, 1377, 14715, 1113, 14716, 14721, 14722, 2]
+// Dependencies: [19, 17, 21, 5143, 5776, 575, 1377, 14728, 1113, 14729, 14734, 14735, 2]
 
-// Module 14714 (virtual_currency/BalanceWidgetPill)
+// Module 14727 (virtual_currency/BalanceWidgetPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import ButtonConstants from "ButtonConstants" /* 5774 */;
-import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 14715 */;
-import OrbLottieAnimation from "OrbLottieAnimation" /* 14716 */;
-import AnimationUtils from "AnimationUtils" /* 14722 */;
+import ButtonConstants from "ButtonConstants" /* 5776 */;
+import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 14728 */;
+import OrbLottieAnimation from "OrbLottieAnimation" /* 14729 */;
+import AnimationUtils from "AnimationUtils" /* 14735 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ class BalanceWidgetPill {
     const obj4 = { style: tmp6.orbsLottieContainer, children: _false(OrbLottieAnimation.OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };
     items1[0] = _false(View, obj4);
     const obj5 = { style: tmp6.balanceCounterContainer, children: _false(BalanceCounter, obj6) };
-    BalanceCounter = tmp3(14721).BalanceCounter;
+    BalanceCounter = tmp3(14734).BalanceCounter;
     if (showInitialRenderedBalance) {
       balance = prop;
     }

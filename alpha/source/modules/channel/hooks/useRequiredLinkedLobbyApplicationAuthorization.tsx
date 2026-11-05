@@ -1,14 +1,14 @@
-// Module ID: 14227
-// Function ID: 14228
+// Module ID: 14240
+// Function ID: 14241
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: [19, 2167, 7412, 504, 7468, 7016, 2]
+// Dependencies: [19, 2167, 7415, 504, 7471, 7019, 2]
 // Exports: default
 
-// Module 14227 (useRequiredLinkedLobbyApplicationAuthorization)
+// Module 14240 (useRequiredLinkedLobbyApplicationAuthorization)
 import react from "react" /* 19 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7016 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7412 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7468 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7019 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7415 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7471 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import size from "module_2" /* 2 */;
 

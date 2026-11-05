@@ -1,0 +1,14 @@
+// Module ID: 16828
+// Function ID: 16829
+// Name: UserProfilePersonalWidgetExperiment
+// Dependencies: [1449, 2]
+
+// Module 16828 (UserProfilePersonalWidgetExperiment)
+import ApexExperiment from "ApexExperiment" /* 1449 */;
+import size from "module_2" /* 2 */;
+
+const obj = { name: "2026-07-personal-widget", kind: "user", defaultConfig: { enabled: false, showCreateEntrypoint: false }, variations: { 0: { enabled: false, showCreateEntrypoint: false }, 1: { enabled: true, showCreateEntrypoint: false }, 2: { enabled: true, showCreateEntrypoint: true } } };
+const apexExperiment = ApexExperiment.createApexExperiment(obj);
+const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfilePersonalWidgetExperiment.tsx");
+
+export default apexExperiment;

@@ -1,23 +1,23 @@
-// Module ID: 18907
-// Function ID: 18908
+// Module ID: 18938
+// Function ID: 18939
 // Name: GuildFeedBanner
-// Dependencies: [19, 17, 16045, 5012, 18908, 1072, 21, 5141, 575, 1652, 1493, 5377, 16046, 1377, 1411, 7102, 504, 7258, 11746, 5851, 5148, 18909, 18910, 5378, 5381, 7098, 5761, 1187, 7121, 5846, 1113, 11521, 9453, 2]
+// Dependencies: [19, 17, 16058, 5014, 18939, 1072, 21, 5143, 575, 1652, 1493, 5379, 16059, 1377, 1411, 7105, 504, 7261, 11754, 5854, 5150, 18940, 18941, 5380, 5383, 7101, 5763, 1187, 7124, 5849, 1113, 11529, 9460, 2]
 
-// Module 18907 (GuildFeedBanner)
+// Module 18938 (GuildFeedBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import timing_timing from "timing/timing" /* 5378 */;
-import timingPresets from "timingPresets" /* 5381 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 16046 */;
+import timing_timing from "timing/timing" /* 5380 */;
+import timingPresets from "timingPresets" /* 5383 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 16059 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 16045 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import GuildFeedConstants from "GuildFeedConstants" /* 18908 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 16058 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import GuildFeedConstants from "GuildFeedConstants" /* 18939 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -82,7 +82,7 @@ function GuildFeedBanner(guild) {
   let bound = Math.max(0.22 * sharedValue(1493)().height, GUILD_FEED_MIN_BANNER_HEIGHT);
   const obj3 = width;
   const items2 = [guild];
-  const tmp10 = sharedValue(5377)();
+  const tmp10 = sharedValue(5379)();
   const effect = width.useEffect(() => {
     const obj = GuildPopoutActionCreators;
     const guildForPopout = obj.fetchGuildForPopout(guild.id);
@@ -118,7 +118,7 @@ function GuildFeedBanner(guild) {
   if (description == null) {
     description = guild.description;
   }
-  const tmp2Result = tmp2(7102);
+  const tmp2Result = tmp2(7105);
   const guildBadgeSource = tmp2Result.getGuildBadgeSource(guild);
   const items4 = [drawerWidth];
   const items5 = [guild];
@@ -127,12 +127,12 @@ function GuildFeedBanner(guild) {
     const obj = { discoverableGuild: GuildPopoutStore.getGuild(guild.id) };
     return obj;
   }, items5).discoverableGuild;
-  const tmp14 = sharedValue(7258)();
+  const tmp14 = sharedValue(7261)();
   dependencyMap = tmp14;
   size = tmp8(1493)();
   width = size.width;
   height = size.height;
-  const tmp2Result5 = tmp2(11746);
+  const tmp2Result5 = tmp2(11754);
   drawerWidth = tmp2Result5.useDrawerWidth();
   const items6 = [width, height, tmp14, drawerWidth];
   let obj4 = { style: tmp.container, children: items8 };
@@ -161,14 +161,14 @@ function GuildFeedBanner(guild) {
       const result = set(obj.withTiming(1, timingPresets.timingSlow));
     }
   };
-  tmp8Result = sharedValue(5851);
+  tmp8Result = sharedValue(5854);
   if (memo == null) {
     let tmp8Result3;
-    const tmp2Result6 = tmp2(5148);
+    const tmp2Result6 = tmp2(5150);
     if (tmp2Result6.isThemeDark(tmp10)) {
-      tmp8Result3 = tmp8(18909);
+      tmp8Result3 = tmp8(18940);
     } else {
-      tmp8Result3 = tmp8(18910);
+      tmp8Result3 = tmp8(18941);
     }
     memo = tmp8Result3;
   }
@@ -179,13 +179,13 @@ function GuildFeedBanner(guild) {
   obj8 = { style: items10, children: items11 };
   items10 = [tmp.content, { width: memo1, marginTop: -32 }];
   const obj9 = { style: tmp.guildIconContainer, children: closure_10(tmp8Result4, obj10) };
-  obj10 = { style: tmp.avatar, guild, size: tmp2(7098).GuildIconSizes.XLARGE, animate: true };
-  tmp8Result4 = sharedValue(7098);
+  obj10 = { style: tmp.avatar, guild, size: tmp2(7101).GuildIconSizes.XLARGE, animate: true };
+  tmp8Result4 = sharedValue(7101);
   items11 = [closure_10(height, obj9), , , ];
   const obj11 = { style: tmp.textContainer, children: items12 };
   items12 = [, ];
   const obj12 = { lineClamp: 1, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: name };
-  items12[0] = closure_10(tmp2(5761).Text, obj12);
+  items12[0] = closure_10(tmp2(5763).Text, obj12);
   let tmp19Result = null;
   if (null != guildBadgeSource) {
     const obj13 = { style: tmp.icon, source: guildBadgeSource, disableColor: true };
@@ -196,7 +196,7 @@ function GuildFeedBanner(guild) {
   let tmp19Result2 = null;
   if (null != description) {
     const obj14 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: description };
-    tmp19Result2 = tmp19(tmp2(5761).Text, obj14);
+    tmp19Result2 = tmp19(tmp2(5763).Text, obj14);
   }
   items11[2] = tmp19Result2;
   let tmp17Result4 = null != discoverableGuild && !hideMemberCount;
@@ -218,12 +218,12 @@ function GuildFeedBanner(guild) {
             },
         children: items13
       };
-      const PressableOpacity = tmp2(7121).PressableOpacity;
+      const PressableOpacity = tmp2(7124).PressableOpacity;
       const obj17 = { size: "custom", color: sharedValue(575).colors.BADGE_INVERTED_BACKGROUND, secondaryColor: sharedValue(575).colors.BADGE_INVERTED_TEXT, style: tmp.publicIcon };
-      const ExperimentalWebBadgeIcon = tmp2(9453).ExperimentalWebBadgeIcon;
+      const ExperimentalWebBadgeIcon = tmp2(9460).ExperimentalWebBadgeIcon;
       items13 = [closure_10(ExperimentalWebBadgeIcon, obj17), ];
       const obj18 = { variant: "body-xs/medium", color: "text-default", children: intl.string(tmp2(1113).t["B/vjCu"]) };
-      const Text = tmp2(5761).Text;
+      const Text = tmp2(5763).Text;
       intl = tmp2(1113).intl;
       items13[1] = closure_10(Text, obj18);
       tmp17Result = tmp17(PressableOpacity, obj16);
@@ -238,7 +238,7 @@ function GuildFeedBanner(guild) {
         const obj20 = { style: tmp.dotOnline };
         items15 = [closure_10(height, obj20), ];
         const obj21 = { variant: "body-xs/medium", color: "text-default", children: intl2.format(tmp2(1113).t.QCNv6P, obj22) };
-        const Text2 = tmp2(5761).Text;
+        const Text2 = tmp2(5763).Text;
         intl2 = tmp2(1113).intl;
         obj22 = { online: null, offline: null };
         ({ presenceCount: obj26.online, memberCount: obj26.offline } = discoverableGuild);

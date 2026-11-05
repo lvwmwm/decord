@@ -1,9 +1,12 @@
 // Module ID: 13161
 // Function ID: 13162
-// Dependencies: [13162]
+// Dependencies: []
 
 // Module 13161
-import _mod13162 from "module_13162" /* 13162 */;
+const obj = {
+  parse() {
+    return this.createSingleNodeList(this.Identifier());
+  }
+};
 
-
-export default _mod13162;
+export default obj;

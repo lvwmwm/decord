@@ -1,16 +1,16 @@
-// Module ID: 8324
-// Function ID: 8325
+// Module ID: 8329
+// Function ID: 8330
 // Name: FormHint
-// Dependencies: [19, 17, 21, 5141, 575, 7200, 5761, 1187, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 7203, 5763, 1187, 2]
 // Exports: default
 
-// Module 8324 (FormHint)
+// Module 8329 (FormHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RedesignCompat from "RedesignCompat" /* 7200 */;
+import RedesignCompat from "RedesignCompat" /* 7203 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -34,7 +34,7 @@ export default function FormHint(inset) {
   const tmp = closure_4();
   if (react.useContext(RedesignCompat.RedesignCompatContext)) {
     let redesignHorizontalPadding = !flag;
-    const Text = tmp2(5761).Text;
+    const Text = tmp2(5763).Text;
     if (!flag) {
       redesignHorizontalPadding = tmp.redesignHorizontalPadding;
     }

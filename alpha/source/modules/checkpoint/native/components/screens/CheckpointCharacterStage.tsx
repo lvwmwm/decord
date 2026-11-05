@@ -1,18 +1,18 @@
-// Module ID: 13686
-// Function ID: 13687
+// Module ID: 13697
+// Function ID: 13698
 // Name: CheckpointCharacterStage
-// Dependencies: [32, 19, 17, 13657, 21, 5141, 13687, 1493, 5749, 13688, 504, 13854, 13856, 13858, 13859, 6568, 5213, 2]
+// Dependencies: [32, 19, 17, 13668, 21, 5143, 13698, 1493, 5751, 13699, 504, 13865, 13867, 13869, 13870, 13871, 6570, 5215, 2]
 // Exports: default
 
-// Module 13686 (CheckpointCharacterStage)
+// Module 13697 (CheckpointCharacterStage)
 import Fragment from "Fragment" /* 21 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13688 */;
-import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 13854 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13699 */;
+import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 13865 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 13657 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import CheckpointStore from "CheckpointStore" /* 13668 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -31,8 +31,10 @@ const result = size.fileFinishedImporting("modules/checkpoint/native/components/
 
 export default function CheckpointCharacterStage(stage) {
   let c4;
+  let dataBinding;
   let height;
-  let obj7;
+  let obj8;
+  let onDataBindingChange;
   let tmp10;
   let tmp11;
   let tmp15;
@@ -87,8 +89,17 @@ export default function CheckpointCharacterStage(stage) {
   const obj4 = stage(isHidden[13]);
   const checkpointCharacterTextureManager = obj4.useCheckpointCharacterTextureManager(tmp15);
   const obj5 = stage(isHidden[14]);
-  const tmp18 = obj5.useCheckpointCharacterTextureSwaps({ textureManager: checkpointCharacterTextureManager, referencedAssets: checkpointCharacterReferencedAssets, initialReferencedAssets: tmp13 }) && tmp10 !== memo;
-  if (tmp18) {
+  let isOutfitPreloaded = obj5.useCheckpointCharacterTextureSwaps({ textureManager: checkpointCharacterTextureManager, referencedAssets: checkpointCharacterReferencedAssets, initialReferencedAssets: tmp13 });
+  const obj6 = stage(isHidden[15]);
+  const checkpointCharacterOutfitPreload = obj6.useCheckpointCharacterOutfitPreload({ visibleDataBinding: tmp10, requestedDataBinding: memo });
+  ({ dataBinding, onDataBindingChange } = checkpointCharacterOutfitPreload);
+  if (isOutfitPreloaded) {
+    isOutfitPreloaded = checkpointCharacterOutfitPreload.isOutfitPreloaded;
+  }
+  if (isOutfitPreloaded) {
+    isOutfitPreloaded = tmp10 !== memo;
+  }
+  if (isOutfitPreloaded) {
     tmp11(memo);
   }
   ref = obj.useRef(null);
@@ -108,8 +119,8 @@ export default function CheckpointCharacterStage(stage) {
   if (isActive) {
     tmp24 = context;
   }
-  const obj6 = { ref: tmp24, style: tmp.container, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp6Result.getCheckpointCharacterAccessibilityLabel(stateFromStores), children: stateFromStores(stage(tmp2[16]).CheckpointCharacterRive, obj7) };
-  obj7 = { ref, artboard: "AB_Master", stateMachine: "SM_Master", fit: "layout", alignment: "center", referencedAssets: tmp13, onRiveFileChange: tmp16, dataBinding: tmp10, style: tmp.rive };
-  tmp6Result = stage(tmp2[15]);
-  return stateFromStores(tmp23, obj6);
+  const obj7 = { ref: tmp24, style: tmp.container, accessible: true, accessibilityRole: "image", accessibilityLabel: tmp6Result.getCheckpointCharacterAccessibilityLabel(stateFromStores), children: stateFromStores(stage(tmp2[17]).CheckpointCharacterRive, obj8) };
+  obj8 = { ref, artboard: "AB_Master", stateMachine: "SM_Master", fit: "layout", alignment: "center", referencedAssets: tmp13, onRiveFileChange: tmp16, dataBinding, onDataBindingChange, style: tmp.rive };
+  tmp6Result = stage(tmp2[16]);
+  return stateFromStores(tmp23, obj7);
 };

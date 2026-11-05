@@ -1,9 +1,9 @@
-// Module ID: 16063
-// Function ID: 16064
+// Module ID: 16076
+// Function ID: 16077
 // Name: Easing/Easing
 // Dependencies: [1652, 2]
 
-// Module 16063 (Easing/Easing)
+// Module 16076 (Easing/Easing)
 import _mod1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 9467
-// Function ID: 9468
+// Module ID: 9474
+// Function ID: 9475
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 9468, 21, 5141, 575, 5768, 1113, 8882, 9469, 5843, 9486, 7620, 8823, 1652, 9466, 9487, 5378, 1705, 9488, 9493, 9510, 5382, 9512, 5396, 5400, 9513, 9511, 9515, 9762, 9772, 9773, 5731, 2]
+// Dependencies: [32, 19, 17, 9475, 21, 5143, 575, 5770, 1113, 8887, 9476, 5846, 9493, 7622, 8828, 1652, 9473, 9494, 5380, 1705, 9495, 9500, 9517, 5384, 9519, 5398, 5402, 9520, 9518, 9522, 9768, 9778, 9779, 5733, 2]
 // Exports: default
 
-// Module 9467 (GameProfileScreen)
+// Module 9474 (GameProfileScreen)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
-import components_Button_Button from "components/Button/Button" /* 5768 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9466 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
-import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9493 */;
-import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9512 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5384 */;
+import components_Button_Button from "components/Button/Button" /* 5770 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9473 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9493 */;
+import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9500 */;
+import GameProfileStoreLinksActionSheet from "GameProfileStoreLinksActionSheet" /* 9519 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameProfileStore from "GameProfileStore" /* 9468 */;
+import GameProfileStore from "GameProfileStore" /* 9475 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;

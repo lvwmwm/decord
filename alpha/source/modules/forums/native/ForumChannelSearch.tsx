@@ -1,17 +1,17 @@
-// Module ID: 14778
-// Function ID: 14779
+// Module ID: 14791
+// Function ID: 14792
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 4990, 8345, 21, 5141, 1500, 11536, 9961, 5768, 1113, 10019, 504, 7355, 8344, 2]
+// Dependencies: [19, 17, 4992, 8350, 21, 5143, 1500, 11544, 9967, 5770, 1113, 10025, 504, 7358, 8349, 2]
 
-// Module 14778 (ForumChannelSearch)
+// Module 14791 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Tracking from "Tracking" /* 8344 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 10019 */;
+import Tracking from "Tracking" /* 8349 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 10025 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import ForumSearchStore from "ForumSearchStore" /* 8345 */;
-import createStyles from "createStyles" /* 5141 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import ForumSearchStore from "ForumSearchStore" /* 8350 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -65,7 +65,7 @@ const memoResult1 = react.memo(function SearchInput(channelId) {
   ({ guildId: importDefault, placeholder } = channelId);
   let tmp2 = channelId;
   let tmp = closure_8();
-  let obj = channelId(11536);
+  let obj = channelId(11544);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   let obj2 = channelId(504);
   const items = [ForumSearchStore];
@@ -114,7 +114,7 @@ const memoResult1 = react.memo(function SearchInput(channelId) {
             },
         grow: false
       };
-      SearchBar = tmp2(7355).SearchBar;
+      SearchBar = tmp2(7358).SearchBar;
       const tmp9 = View;
       if (null == placeholder) {
         const intl = tmp2(1113).intl;

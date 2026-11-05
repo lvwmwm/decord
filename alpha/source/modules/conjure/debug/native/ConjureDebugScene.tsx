@@ -1,26 +1,26 @@
-// Module ID: 13234
-// Function ID: 13235
+// Module ID: 13241
+// Function ID: 13242
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 11028, 11035, 21, 5141, 575, 1113, 3995, 1499, 1627, 12404, 9125, 504, 11072, 12282, 13235, 7494, 13244, 5846, 5865, 12436, 9359, 13245, 13251, 13253, 2]
+// Dependencies: [32, 19, 17, 11034, 11041, 21, 5143, 575, 1113, 3995, 1499, 1627, 12411, 9131, 504, 11081, 12291, 13242, 7496, 13251, 5849, 5868, 12443, 9366, 13252, 13258, 13260, 2]
 // Exports: default
 
-// Module 13234 (ConjureDebugScene)
+// Module 13241 (ConjureDebugScene)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
-import CopyIcon from "CopyIcon" /* 5865 */;
-import ClipboardUtils from "ClipboardUtils" /* 7494 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 11072 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 12282 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 13244 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
+import CopyIcon from "CopyIcon" /* 5868 */;
+import ClipboardUtils from "ClipboardUtils" /* 7496 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 11081 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 12291 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 13251 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 11035 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 11041 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -129,7 +129,7 @@ export default function ConjureDebugScene(projectId) {
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(13235);
+        const tmp2Result = tmp2(13242);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }

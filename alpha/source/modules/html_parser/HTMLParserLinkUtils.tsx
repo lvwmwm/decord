@@ -1,14 +1,14 @@
-// Module ID: 9578
-// Function ID: 9579
+// Module ID: 9584
+// Function ID: 9585
 // Name: HTMLParserLinkUtils
-// Dependencies: [109, 9552, 6173, 2072, 6172, 9577, 2]
+// Dependencies: [109, 9558, 6176, 2072, 6175, 9583, 2]
 // Exports: addTextLinks
 
-// Module 9578 (HTMLParserLinkUtils)
-import MarkupLinkRuleDefault from "MarkupLinkRule" /* 6172 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9577 */;
+// Module 9584 (HTMLParserLinkUtils)
+import MarkupLinkRuleDefault from "MarkupLinkRule" /* 6175 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9583 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 9552 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 9558 */;
 import module_2072_mod from "module_2072" /* 2072 */;
 import size from "module_2" /* 2 */;
 
@@ -212,13 +212,13 @@ export function addTextLinks(items1) {
             } while (sum2 < tmp5);
           }
           let tmp9 = link;
-          let obj2 = link(6173);
+          let obj2 = link(6176);
           let str3 = obj2.sanitizeWhitespace(str2);
           let trimmed = str3.trim();
           let str4 = "";
           if (0 !== trimmed.length) {
             link = tmp.link;
-            let tmp9Result = tmp9(6173);
+            let tmp9Result = tmp9(6176);
             let result = tmp9Result.sanitizeUnicodeConfusables(trimmed);
             let _Array = Array;
             let arr = Array.from(result.matchAll(closure_10));
@@ -275,11 +275,11 @@ export function addTextLinks(items1) {
         if ("" === tmp23.link) {
           let link2 = tmp23.link;
           let tmp48 = _objectWithoutProperties(tmp23, closure_4);
-          let obj11 = link(9577);
+          let obj11 = link(9583);
           let mergeRunResult = obj11.mergeRun(items1, tmp23.text, tmp48);
           flag2 = false;
         } else {
-          let obj10 = link(9577);
+          let obj10 = link(9583);
           let mergeRunResult1 = obj10.mergeRun(items1, tmp23.text, tmp23);
           flag2 = false;
         }
@@ -312,12 +312,12 @@ export function addTextLinks(items1) {
               let tmp39 = appendParsedNode(items1, closure_13(tmp23.text, obj3), tmp23);
               flag2 = isMatch;
             }
-            let obj7 = link(9577);
+            let obj7 = link(9583);
             let mergeRunResult2 = obj7.mergeRun(items1, tmp23.text, tmp23);
             flag2 = isMatch;
           }
         }
-        let obj9 = link(9577);
+        let obj9 = link(9583);
         let mergeRunResult3 = obj9.mergeRun(items1, tmp23.text, tmp23);
         flag2 = isMatch;
       }

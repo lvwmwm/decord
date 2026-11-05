@@ -1,14 +1,14 @@
-// Module ID: 14835
-// Function ID: 14836
+// Module ID: 14848
+// Function ID: 14849
 // Name: EmbedIcon
-// Dependencies: [19, 21, 575, 5850, 14836, 2]
+// Dependencies: [19, 21, 575, 5853, 14849, 2]
 // Exports: EmbedIcon
 
-// Module 14835 (EmbedIcon)
+// Module 14848 (EmbedIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 14836 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 14849 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

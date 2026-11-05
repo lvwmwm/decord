@@ -1,13 +1,13 @@
-// Module ID: 18937
-// Function ID: 18938
+// Module ID: 18968
+// Function ID: 18969
 // Name: useOtherGuildJoinRequestsForUser
-// Dependencies: [19, 7052, 504, 7051, 2]
+// Dependencies: [19, 7055, 504, 7054, 2]
 // Exports: useOtherGuildJoinRequestsForUser
 
-// Module 18937 (useOtherGuildJoinRequestsForUser)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 7051 */;
+// Module 18968 (useOtherGuildJoinRequestsForUser)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 7054 */;
 import react from "react" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7052 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 7055 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useOtherGuildJoinRequestsForUser.tsx");

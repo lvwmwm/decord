@@ -1,18 +1,13 @@
 // Module ID: 16391
 // Function ID: 16392
-// Dependencies: [16392]
+// Dependencies: [16392, 16396]
 
 // Module 16391
-import prop_mod from "module_16392" /* 16392 */;
+import _mod16392 from "module_16392" /* 16392 */;
+import _mod16396 from "module_16396" /* 16396 */;
 
-let prop = prop_mod;
-if (prop) {
-  const _Symbol = Symbol;
-  prop = !Symbol.sham;
-}
-if (prop) {
-  const _Symbol2 = Symbol;
-  prop = typeof Symbol.iterator === "symbol";
-}
 
-export default prop;
+export default (arg0) => {
+  const tmp = _mod16392;
+  return tmp(_mod16396(arg0));
+};

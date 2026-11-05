@@ -1,25 +1,21 @@
 // Module ID: 10044
 // Function ID: 10045
 // Dependencies: []
-// Exports: getModalRouteKeys
+// Exports: debounce
 
 // Module 10044
 
-export const getModalRouteKeys = (arr, arg1) => {
-  let closure_0 = arg1;
-  return arr.reduce((arr, key) => {
-    let options;
-    if (closure_0[key.key] != null) {
-      options = tmp.options;
-    }
-    if (options == null) {
-      options = {};
-    }
-    const presentation = options.presentation;
-    const tmp2 = arr.length && !presentation || "modal" === presentation || "transparentModal" === presentation || "containedModal" === presentation || "containedTransparentModal" === presentation || "fullScreenModal" === presentation || "formSheet" === presentation || "pageSheet" === presentation;
-    if (tmp2) {
-      arr.push(key.key);
-    }
-    return arr;
-  }, []);
-};
+export function debounce(arg0, arg1) {
+  let closure_0 = arg0;
+  let closure_1 = arg1;
+  return function() {
+    let closure_2;
+    let timeout;
+    const self = this;
+    closure_0 = [...arguments];
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      closure_0.apply(self, closure_0);
+    }, self);
+  };
+}

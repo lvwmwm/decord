@@ -1,26 +1,26 @@
-// Module ID: 9689
-// Function ID: 9690
+// Module ID: 9695
+// Function ID: 9696
 // Name: NitroCoinSpotIllustration
-// Dependencies: [19, 21, 9690, 9691, 9692, 7210, 5851, 2]
+// Dependencies: [19, 21, 9696, 9697, 9698, 7213, 5854, 2]
 // Exports: NitroCoinSpotIllustration
 
-// Module 9689 (NitroCoinSpotIllustration)
+// Module 9695 (NitroCoinSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7210 */;
-import _modDef9690 from "module_9690" /* 9690 */;
-import _modDef9691 from "module_9691" /* 9691 */;
-import _modDef9692 from "module_9692" /* 9692 */;
+import react_native from "react-native" /* 7213 */;
+import _modDef9696 from "module_9696" /* 9696 */;
+import _modDef9697 from "module_9697" /* 9697 */;
+import _modDef9698 from "module_9698" /* 9698 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef9690 };
+let obj2 = { uri: _modDef9696 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef9691 };
+let obj3 = { uri: _modDef9697 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef9692 };
-({ uri: _modDef9692 });
+obj[3] = { uri: _modDef9698 };
+({ uri: _modDef9698 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/NitroCoinSpotIllustration.native.tsx");
 

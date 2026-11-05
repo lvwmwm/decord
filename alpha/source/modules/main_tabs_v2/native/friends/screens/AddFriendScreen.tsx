@@ -1,20 +1,20 @@
-// Module ID: 19114
-// Function ID: 19115
+// Module ID: 19145
+// Function ID: 19146
 // Name: AddFriendScreen
-// Dependencies: [32, 19, 17, 1385, 1072, 14461, 21, 5141, 575, 14463, 5195, 1252, 1113, 9076, 9961, 1377, 10914, 5761, 15922, 15923, 2]
+// Dependencies: [32, 19, 17, 1385, 1072, 14474, 21, 5143, 575, 14476, 5197, 1252, 1113, 9082, 9967, 1377, 10920, 5763, 15934, 15935, 2]
 // Exports: default
 
-// Module 19114 (AddFriendScreen)
+// Module 19145 (AddFriendScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14461 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14463 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14474 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14476 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, dependencyMap;
@@ -54,10 +54,10 @@ export default function AddFriendScreen(navigation) {
   const sourcePage = navigation.route.params.sourcePage;
   const tmp = closure_13();
   let tmp2 = dependencyMap;
-  let obj = navigation(14463);
+  let obj = navigation(14476);
   const contactSyncAccount = obj.useContactSyncAccount();
   const useState = react.useState;
-  let obj2 = navigation(14463);
+  let obj2 = navigation(14476);
   const tmp4 = callback(useState(!obj2.isContactSyncEnabled(contactSyncAccount)), 2);
   [tmp5, c2] = tmp4;
   callback = react.useCallback(() => {
@@ -107,21 +107,21 @@ export default function AddFriendScreen(navigation) {
       _undefined(tmp5);
     });
   }, items);
-  const items1 = [closure_10(contactSyncAccount(10914), { absolute: true }), ];
+  const items1 = [closure_10(contactSyncAccount(10920), { absolute: true }), ];
   let obj3 = { keyboardShouldPersistTaps: "handled", style: tmp.background, children: items2 };
   let obj4 = { style: tmp.headerText, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1113).t.GWMTSE) };
-  const Text = navigation(5761).Text;
+  const Text = navigation(5763).Text;
   intl = navigation(1113).intl;
   items2 = [closure_10(Text, obj4), , , ];
   const obj5 = { style: tmp.subheaderText, variant: "body-sm/medium", color: "text-default", children: intl2.string(navigation(1113).t["Rn/sLl"]) };
-  const Text2 = navigation(5761).Text;
+  const Text2 = navigation(5763).Text;
   intl2 = navigation(1113).intl;
   items2[1] = closure_10(Text2, obj5);
   const obj6 = { style: tmp.input, autoFocusInput: false, sourcePage };
-  items2[2] = closure_10(contactSyncAccount(15922), obj6);
+  items2[2] = closure_10(contactSyncAccount(15934), obj6);
   const obj7 = { style: tmp.otherOptionsContainer, children: items3 };
   const obj8 = { accessibilityRole: "header", variant: "body-sm/medium", color: "text-default", children: intl3.string(navigation(1113).t.dukg0Z) };
-  const Text3 = navigation(5761).Text;
+  const Text3 = navigation(5763).Text;
   intl3 = navigation(1113).intl;
   items3 = [closure_10(Text3, obj8), ];
   let tmp10Result = null;
@@ -132,7 +132,7 @@ export default function AddFriendScreen(navigation) {
   const tmp9 = closure_12;
   if (tmp5) {
     const obj9 = { style: tmp.rowContainer, location: "Add Friend Modal" };
-    tmp10Result = tmp10(tmp11(15923), obj9);
+    tmp10Result = tmp10(tmp11(15935), obj9);
   }
   const obj10 = { children: items1 };
   items3[1] = tmp10Result;

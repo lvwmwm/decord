@@ -1,19 +1,19 @@
-// Module ID: 8664
-// Function ID: 8665
+// Module ID: 8669
+// Function ID: 8670
 // Name: ReferralProgramUtils
-// Dependencies: [1231, 7772, 4987, 1089, 1113, 5171, 4974, 11, 4975, 8665, 504, 2]
+// Dependencies: [1231, 7777, 4989, 1089, 1113, 5173, 4976, 11, 4977, 8670, 504, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralIncentivePopoverSeen, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 8664 (ReferralProgramUtils)
+// Module 8669 (ReferralProgramUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import intl4 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4975 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4977 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5173 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7772 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7777 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -101,7 +101,7 @@ export function markReferralIncentivePopoverSeen() {
 }
 export function useIsReferralProgramPopoverShowable() {
   let stateFromStores1;
-  let obj = stateFromStores1(8665);
+  let obj = stateFromStores1(8670);
   let isEligibleSenderForReferralProgram = obj.useIsEligibleSenderForReferralProgram(false);
   const items = [ReferralTrialStore];
   const obj2 = stateFromStores1(504);

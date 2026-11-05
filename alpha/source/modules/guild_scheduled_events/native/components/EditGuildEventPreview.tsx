@@ -1,22 +1,22 @@
-// Module ID: 9228
-// Function ID: 9229
+// Module ID: 9235
+// Function ID: 9236
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 4990, 1072, 21, 5141, 575, 1377, 504, 5786, 9117, 9229, 5761, 1113, 9230, 1187, 9231, 9113, 7428, 9126, 5768, 9114, 6094, 9232, 2123, 2]
+// Dependencies: [19, 17, 4992, 1072, 21, 5143, 575, 1377, 504, 5788, 9123, 9236, 5763, 1113, 9237, 1187, 9238, 9119, 7431, 9132, 5770, 9120, 6097, 9239, 2123, 2]
 // Exports: default
 
-// Module 9228 (EditGuildEventPreview)
+// Module 9235 (EditGuildEventPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9113 */;
-import ScheduleUtils from "ScheduleUtils" /* 9114 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6097 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9119 */;
+import ScheduleUtils from "ScheduleUtils" /* 9120 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp9;
-const guildEventDetailsParser = tmp9(9231);
+const guildEventDetailsParser = tmp9(9238);
 function PreviewBody(event) {
   let channelContainer;
   let closure_2;
@@ -54,7 +54,7 @@ function PreviewBody(event) {
   const items1 = [channel_id];
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channel_id), items1);
   const tmp5 = channel_id;
-  const tmp6 = channel_id(5786)(stateFromStores);
+  const tmp6 = channel_id(5788)(stateFromStores);
   dependencyMap = tmp6;
   let obj2 = require("EntityUtils");
   let locationFromEvent = obj2.getLocationFromEvent(event);
@@ -63,23 +63,23 @@ function PreviewBody(event) {
     tmp8 = locationFromEvent;
   }
   locationFromEvent = tmp8;
-  let tmp2Result = tmp2(9229);
+  let tmp2Result = tmp2(9236);
   eventLocationIconSource = tmp2Result.getEventLocationIconSource(event, stateFromStores, true);
   let obj3 = { style: tmp.header, children: items2 };
   let tmp9 = closure_7;
   let tmp11 = closure_6;
   const obj4 = { style: tmp.headerTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp2(1113).t.yBsFE3) };
-  let Text = tmp2(5761).Text;
+  let Text = tmp2(5763).Text;
   intl = tmp2(1113).intl;
   items2 = [closure_6(Text, obj4), ];
   const obj5 = { style: tmp.headerSubtitle, accessibilityLabel: formatToPlainStringResult, variant: "body-sm/medium", color: "text-default", children: formatResult };
   formatToPlainStringResult = undefined;
-  const Text2 = tmp2(5761).Text;
+  const Text2 = tmp2(5763).Text;
   const tmp10 = locationFromEvent;
   if (null != stateFromStores) {
     const intl2 = tmp2(1113).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const obj6 = { channelName: tmp5(9230)(obj7) };
+    const obj6 = { channelName: tmp5(9237)(obj7) };
     const sxcQPE = tmp2(1113).t.sxcQPE;
     obj7 = { channel: stateFromStores };
     formatToPlainStringResult = formatToPlainString(sxcQPE, obj6);

@@ -1,67 +1,45 @@
 // Module ID: 13125
 // Function ID: 13126
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13125 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
 let items;
 let obj2;
-const Ident = tokenize.TYPE.Ident;
-const Function = tokenize.TYPE.Function;
-const Colon = tokenize.TYPE.Colon;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-let obj = {
-  name: "PseudoElementSelector",
+const Comma = tokenize.TYPE.Comma;
+const obj = {
+  name: "MediaQueryList",
   structure: obj2,
-  parse() {
-    let consumeResult;
-    let tmp5;
+  parse(arg0) {
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    this.eat(Colon);
-    this.eat(Colon);
-    if (this.scanner.tokenType === Function) {
-      let list;
-      const str = self.consumeFunctionName();
-      const formatted = str.toLowerCase();
-      const pseudo = self.pseudo;
-      if (pseudo.hasOwnProperty(formatted)) {
-        const scanner = self.scanner;
-        scanner.skipSC();
-        const scanner2 = self.scanner;
-        const obj = self.pseudo[formatted];
-        const callResult = obj.call(self);
-        scanner2.skipSC();
-        list = callResult;
-      } else {
-        list = self.createList();
-        list.push(self.Raw(self.scanner.tokenIndex, null, false));
+    const list = this.createList();
+    const scanner = this.scanner;
+    scanner.skipSC();
+    if (!this.scanner.eof) {
+      list.push(self.MediaQuery(arg0));
+      if (self.scanner.tokenType === Comma) {
+        const iter = self.scanner;
+        iter.next();
+        while (!self.scanner.eof) {
+          let arr3 = list.push(self.MediaQuery(arg0));
+          if (self.scanner.tokenType !== Comma) {
+            break;
+          }
+        }
       }
-      self.eat(RightParenthesis);
-      tmp5 = list;
-      consumeResult = str;
-    } else {
-      consumeResult = self.consume(Ident);
-      tmp5 = null;
     }
-    const element = { type: "PseudoElementSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp5 };
+    const element = { type: "MediaQueryList", loc: self.getLocationFromList(list), children: list };
     return element;
   },
-  generate(name) {
-    const self = this;
-    this.chunk("::");
-    this.chunk(name.name);
-    if (null !== name.children) {
-      self.chunk("(");
-      self.children(name);
-      self.chunk(")");
-    }
-  },
-  walkContext: "function"
+  generate(arg0) {
+    this.children(arg0, function() {
+      this.chunk(",");
+    });
+  }
 };
-obj2 = { name: String, children: items };
-items = [["Raw"], null];
+obj2 = { children: items };
+items = [["MediaQuery"]];
 
 export default obj;

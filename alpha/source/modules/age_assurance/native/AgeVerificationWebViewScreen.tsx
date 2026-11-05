@@ -1,22 +1,22 @@
-// Module ID: 8118
-// Function ID: 8119
+// Module ID: 8123
+// Function ID: 8124
 // Name: AgeVerificationWebViewScreen
-// Dependencies: [32, 19, 17, 6863, 8096, 21, 3, 5141, 575, 5322, 6861, 8108, 5843, 8119, 1377, 7095, 2]
+// Dependencies: [32, 19, 17, 6866, 8101, 21, 3, 5143, 575, 5324, 6864, 8113, 5846, 8124, 1113, 3223, 1377, 7098, 2]
 // Exports: default
 
-// Module 8118 (AgeVerificationWebViewScreen)
+// Module 8123 (AgeVerificationWebViewScreen)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5322 */;
-import LinkingDefault from "Linking" /* 5843 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6863 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8108 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5324 */;
+import LinkingDefault from "Linking" /* 5846 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6866 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8113 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 8096 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 8101 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let incode_parameters;
@@ -30,7 +30,7 @@ let obj3;
 let rect;
 let tmp;
 let unpackModuleId;
-const AgeVerificationUtils = tmp(6861);
+const AgeVerificationUtils = tmp(6864);
 let react = react_mod;
 const View = react_native.View;
 let closure_6 = AgeVerificationConstants.AGE_VERIFICATION_MODAL_KEY;
@@ -50,6 +50,7 @@ let result = size.fileFinishedImporting("modules/age_assurance/native/AgeVerific
 export default function AgeVerificationWebViewScreen(webviewUrl) {
   let _undefined;
   let c6;
+  let intl;
   let items6;
   let logger;
   let tmp18Result;
@@ -209,6 +210,7 @@ export default function AgeVerificationWebViewScreen(webviewUrl) {
   let obj2 = { style: tmp15.container, children: items6 };
   const obj5 = {
     ref,
+    accessibilityLabel: intl.string(onComplete(onClose[15]).eKo6mw),
     allowsInlineMediaPlayback: true,
     mediaCapturePermissionGrantType: "grant",
     javaScriptEnabled: true,
@@ -228,7 +230,8 @@ export default function AgeVerificationWebViewScreen(webviewUrl) {
     containerStyle: null
   };
   const tmp19 = onComplete(onClose[13]);
-  let obj4 = webviewUrl(onClose[14]);
+  intl = webviewUrl(onClose[14]).intl;
+  let obj4 = webviewUrl(onClose[16]);
   tmp20 = undefined;
   const tmp16 = closure_11;
   const tmp9 = onClose;
@@ -238,7 +241,7 @@ export default function AgeVerificationWebViewScreen(webviewUrl) {
   ({ webView: obj3.style, webView: obj3.containerStyle } = tmp15);
   items6 = [tmp18(tmp19, obj5), ];
   if (tmp18Result) {
-    const obj8 = { style: tmp15.loadingOverlay, children: memo(tmp8(tmp9[15]).ActivityIndicator, {}) };
+    const obj8 = { style: tmp15.loadingOverlay, children: memo(tmp8(tmp9[17]).ActivityIndicator, {}) };
     tmp18Result = memo(ref2, obj8);
   }
   items6[1] = tmp18Result;

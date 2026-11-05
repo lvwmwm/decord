@@ -1,10 +1,10 @@
-// Module ID: 19431
-// Function ID: 19432
+// Module ID: 19462
+// Function ID: 19463
 // Name: FramePanelStateContext
-// Dependencies: [19, 19407, 2]
+// Dependencies: [19, 19438, 2]
 
-// Module 19431 (FramePanelStateContext)
-import ActivityPanelStateContext from "ActivityPanelStateContext" /* 19407 */;
+// Module 19462 (FramePanelStateContext)
+import ActivityPanelStateContext from "ActivityPanelStateContext" /* 19438 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

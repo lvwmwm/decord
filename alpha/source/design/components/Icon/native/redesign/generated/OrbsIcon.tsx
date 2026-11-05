@@ -1,14 +1,14 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9685
+// Function ID: 9686
 // Name: OrbsIcon
-// Dependencies: [19, 21, 575, 5850, 9680, 2]
+// Dependencies: [19, 21, 575, 5853, 9686, 2]
 // Exports: OrbsIcon
 
-// Module 9679 (OrbsIcon)
+// Module 9685 (OrbsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 9680 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 9686 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

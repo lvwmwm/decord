@@ -1,23 +1,23 @@
-// Module ID: 13522
-// Function ID: 13523
+// Module ID: 13533
+// Function ID: 13534
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 11648, 502, 5053, 5012, 5073, 5172, 1072, 5059, 1082, 563, 5079, 1113, 11708, 11709, 7703, 2]
+// Dependencies: [19, 11656, 502, 5055, 5014, 5075, 5174, 1072, 5061, 1082, 563, 5081, 1113, 11716, 11717, 7705, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 13522 (AutomodQuarantineUtils)
+// Module 13533 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl4 from "intl" /* 1113 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5059 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5079 */;
-import openUserSettings2 from "openUserSettings" /* 7703 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11709 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5061 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5081 */;
+import openUserSettings2 from "openUserSettings" /* 7705 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11717 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11648 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11656 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -58,7 +58,7 @@ export function useGuildAutomodProfileQuarantineErrors(id) {
     if (id == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Object", bio: "Array" };
+    const obj = { nick: "Path", bio: "count" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

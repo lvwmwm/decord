@@ -1,7 +1,9 @@
 // Module ID: 5182
 // Function ID: 5183
-// Dependencies: []
+// Dependencies: [5183]
 
 // Module 5182
+import _mod5183 from "module_5183" /* 5183 */;
 
-export default "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+
+export default _mod5183();

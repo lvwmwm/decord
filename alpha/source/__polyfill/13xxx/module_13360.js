@@ -1,48 +1,85 @@
 // Module ID: 13360
 // Function ID: 13361
-// Dependencies: [13272, 13275, 13274, 13280]
-// Exports: addConsoleInstrumentationHandler
+// Dependencies: [13282]
+// Exports: addMetadataToStackFrames, stripMetadataFromStackFrames
 
 // Module 13360
-import _mod13272 from "module_13272" /* 13272 */;
-import _mod13275 from "module_13275" /* 13275 */;
+import _mod13282 from "module_13282" /* 13282 */;
 
-let tmp;
-const _mod13274 = tmp(13274);
-function instrumentConsole() {
-  let tmp = require;
-  let tmp2 = dependencyMap;
-  if ("console" in _mod13275.GLOBAL_OBJ) {
-    const CONSOLE_LEVELS = _mod13274.CONSOLE_LEVELS;
-    const item = CONSOLE_LEVELS.forEach((item) => {
-      let closure_0 = item;
-      let tmp = closure_0;
-      let tmp2 = closure_1;
-      if (item in closure_0(closure_1[1]).GLOBAL_OBJ.console) {
-        const tmpResult = tmp(tmp2[3]);
-        tmpResult.fill(tmp(tmp2[1]).GLOBAL_OBJ.console, item, (arg0) => {
-          _mod13274.originalConsoleMethods[level] = arg0;
-          return () => {
-            const items = [...arguments];
-            const obj = { args: items, level };
-            const obj2 = level(closure_2_1[0]);
-            obj2.triggerHandlers("console", obj);
-            const obj3 = level(closure_2_1[2]).originalConsoleMethods[level];
-            const tmp = level;
-            const tmp2 = closure_2_1;
-            if (obj3) {
-              obj3.apply(tmp(tmp2[1]).GLOBAL_OBJ.console, items);
+function getMetadataForUrl(fn, arg1) {
+  function ensureMetadataStacksAreParsed(fn) {
+    const tmp2 = require;
+    const tmp4 = dependencyMap;
+    if (_mod13282.GLOBAL_OBJ._sentryModuleMetadata) {
+      const _Object = Object;
+      const keys = Object.keys(tmp2(tmp4[0]).GLOBAL_OBJ._sentryModuleMetadata);
+      for (const item10026 of keys) {
+        let tmp11 = item10026;
+        let tmp16 = _mod13282.GLOBAL_OBJ._sentryModuleMetadata[item10026];
+        let obj = set;
+        if (!set.has(item10026)) {
+          let addResult = obj.add(tmp11);
+          let obj2 = fn(tmp11);
+          let reversed = obj2.reverse();
+          for (const item10050 of reversed) {
+            if (item10050.filename) {
+              let result = map.set(tmp22.filename, tmp16);
+              obj3.return();
+              break;
             }
-          };
-        });
+            continue;
+          }
+        }
+        continue;
+      }
+    }
+  }
+  const tmp = ensureMetadataStacksAreParsed(fn);
+  return map.get(arg1);
+}
+const map = new Map();
+const set = new Set();
+
+export function addMetadataToStackFrames(arg0, exception) {
+  let closure_0 = arg0;
+  try {
+    let tmp = exception;
+    const values = exception.exception.values;
+    const item = values.forEach((stacktrace) => {
+      if (stacktrace.stacktrace) {
+        const tmp = stacktrace.stacktrace.frames || [];
+        for (const item10010 of tmp) {
+          let tmp4 = item10010;
+          if (item10010.filename) {
+            if (!tmp4.module_metadata) {
+              let tmp9 = getMetadataForUrl(closure_0, tmp4.filename);
+              if (tmp9) {
+                tmp4.module_metadata = tmp10;
+              }
+            }
+          }
+          continue;
+        }
       }
     });
+  } catch (err) {
   }
 }
-
-export function addConsoleInstrumentationHandler(arg0) {
-  const obj = _mod13272;
-  obj.addHandler("console", arg0);
-  const obj2 = _mod13272;
-  obj2.maybeInstrument("console", instrumentConsole);
+export { getMetadataForUrl };
+export function stripMetadataFromStackFrames(exception) {
+  try {
+    let tmp = exception;
+    const values = exception.exception.values;
+    const item = values.forEach((stacktrace) => {
+      if (stacktrace.stacktrace) {
+        const tmp = stacktrace.stacktrace.frames || [];
+        const iter = tmp[Symbol.iterator]();
+        while (iter !== undefined) {
+          delete iter.next()[`module_metadata`];
+          continue;
+        }
+      }
+    });
+  } catch (err) {
+  }
 }

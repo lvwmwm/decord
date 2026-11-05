@@ -1,26 +1,26 @@
-// Module ID: 20180
-// Function ID: 20181
+// Module ID: 20216
+// Function ID: 20217
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 17442, 21, 5141, 575, 5148, 5377, 5761, 1113, 20181, 20185, 20189, 20193, 20197, 20201, 2]
+// Dependencies: [19, 17, 17468, 21, 5143, 575, 5150, 5379, 5763, 1113, 20217, 20221, 20225, 20229, 20233, 20237, 2]
 // Exports: default
 
-// Module 20180 (CreatorBenefitsSection)
+// Module 20216 (CreatorBenefitsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import shared from "shared" /* 5148 */;
-import useThemeDefault from "useTheme" /* 5377 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17442 */;
-import AvatarRoseExample from "AvatarRoseExample" /* 20181 */;
-import AvatarLokyExample from "AvatarLokyExample" /* 20185 */;
-import AvatarGraggleExample from "AvatarGraggleExample" /* 20189 */;
-import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 20193 */;
-import StarKeySpotIllustration from "StarKeySpotIllustration" /* 20197 */;
-import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 20201 */;
+import shared from "shared" /* 5150 */;
+import useThemeDefault from "useTheme" /* 5379 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17468 */;
+import AvatarRoseExample from "AvatarRoseExample" /* 20217 */;
+import AvatarLokyExample from "AvatarLokyExample" /* 20221 */;
+import AvatarGraggleExample from "AvatarGraggleExample" /* 20225 */;
+import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 20229 */;
+import StarKeySpotIllustration from "StarKeySpotIllustration" /* 20233 */;
+import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 20237 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -48,10 +48,10 @@ function EarningPreview() {
   const tmp6Result = shared;
   items1[2] = tmp6Result.isThemeDark(tmp2) ? tmp3.earningMetricsDarkMode : tmp3.earningMetricsLightMode;
   const obj4 = { variant: "body-sm/normal", color: "mobile-text-heading-primary", children: intl.string(intl3.t.TXPK7B) };
-  const Text = tmp6(5761).Text;
+  const Text = tmp6(5763).Text;
   intl = tmp6(1113).intl;
   const items2 = [hasOwnProperty(Text, obj4), ];
-  const Text2 = tmp6(5761).Text;
+  const Text2 = tmp6(5763).Text;
   const obj5 = { children: items2 };
   const tmp6Result2 = shared;
   const obj6 = { style: tmp6Result2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode, variant: "heading-lg/semibold", children: intl2.string(intl3.t.LdjJG5) };
@@ -113,7 +113,7 @@ function RevenueShareBenefit() {
   items1[1] = obj2.isThemeDark(tmp2) ? tmp3.greenTextDarkMode : tmp3.greenTextLightMode;
   items2 = [hasOwnProperty(Text, obj3), , ];
   const obj4 = { style: tmp3.revenueShareDescription, variant: "heading-sm/medium", color: "text-default", children: intl.string(intl3.t.AewsXD) };
-  const Text2 = tmp7(5761).Text;
+  const Text2 = tmp7(5763).Text;
   intl = tmp7(1113).intl;
   items2[1] = hasOwnProperty(Text2, obj4);
   const obj5 = { style: tmp3.revenueShareIllo, children: hasOwnProperty(StarCoinsSpotIllustration.StarCoinsSpotIllustration, { width: 128 }) };

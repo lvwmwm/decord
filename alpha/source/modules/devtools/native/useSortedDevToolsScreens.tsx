@@ -1,18 +1,18 @@
-// Module ID: 18009
-// Function ID: 18010
+// Module ID: 18037
+// Function ID: 18038
 // Name: useSortedDevToolsScreens
-// Dependencies: [32, 8003, 17830, 17826, 504, 2]
+// Dependencies: [32, 8008, 17858, 17854, 504, 2]
 // Exports: default, updateSortOrder
 
-// Module 18009 (useSortedDevToolsScreens)
+// Module 18037 (useSortedDevToolsScreens)
 import get_initialized from "get initialized" /* 504 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 17826 */;
-import DevToolsScreens from "DevToolsScreens" /* 17830 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 17854 */;
+import DevToolsScreens from "DevToolsScreens" /* 17858 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8003 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8008 */;
 import size from "module_2" /* 2 */;
 
-const f113897 = (item) => {
+const f114080 = (item) => {
   let obj;
   [, obj] = item;
   const tmp = null == obj.predicate || obj.predicate();
@@ -24,7 +24,7 @@ function getSortedDevToolsScreens() {
     sortedScreenKeys = DevToolsSettingsStore.sortedScreenKeys;
   }
   const entries = Object.entries(DevToolsScreens.DevToolsScreens);
-  const found = entries.filter(f113897);
+  const found = entries.filter(f114080);
   return found.sort((arg0, arg1) => {
     let num2;
     let tmp;
@@ -63,7 +63,7 @@ export default function useSortedDevToolsScreens() {
     sortedScreenKeys = tmp3.sortedScreenKeys;
   }
   const entries = Object.entries(DevToolsScreens.DevToolsScreens);
-  const found = entries.filter(f113897);
+  const found = entries.filter(f114080);
   return found.sort((arg0, arg1) => {
     let num2;
     let tmp;

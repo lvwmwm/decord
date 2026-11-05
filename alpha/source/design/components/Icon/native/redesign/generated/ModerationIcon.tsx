@@ -1,14 +1,14 @@
-// Module ID: 19936
-// Function ID: 19937
+// Module ID: 19972
+// Function ID: 19973
 // Name: ModerationIcon
-// Dependencies: [19, 21, 575, 5850, 19937, 2]
+// Dependencies: [19, 21, 575, 5853, 19973, 2]
 // Exports: ModerationIcon
 
-// Module 19936 (ModerationIcon)
+// Module 19972 (ModerationIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 19937 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 19973 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

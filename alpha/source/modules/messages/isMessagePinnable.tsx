@@ -1,13 +1,13 @@
-// Module ID: 10374
-// Function ID: 10375
+// Module ID: 10380
+// Function ID: 10381
 // Name: isMessagePinnable
-// Dependencies: [5073, 1072, 7023, 7583, 2]
+// Dependencies: [5075, 1072, 7026, 7585, 2]
 // Exports: default
 
-// Module 10374 (isMessagePinnable)
-import isSystemMessageDefault from "isSystemMessage" /* 7023 */;
-import ThreadHooks from "ThreadHooks" /* 7583 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+// Module 10380 (isMessagePinnable)
+import isSystemMessageDefault from "isSystemMessage" /* 7026 */;
+import ThreadHooks from "ThreadHooks" /* 7585 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

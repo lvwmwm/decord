@@ -1,16 +1,16 @@
-// Module ID: 8574
-// Function ID: 8575
+// Module ID: 8579
+// Function ID: 8580
 // Name: canReplyToMessage
-// Dependencies: [32, 5073, 1385, 1072, 1083, 1088, 7583, 8575, 504, 2]
+// Dependencies: [32, 5075, 1385, 1072, 1083, 1088, 7585, 8580, 504, 2]
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 8574 (canReplyToMessage)
+// Module 8579 (canReplyToMessage)
 import Constants2 from "Constants" /* 1083 */;
 import MessageTypes from "MessageTypes" /* 1088 */;
-import ThreadHooks from "ThreadHooks" /* 7583 */;
-import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8575 */;
+import ThreadHooks from "ThreadHooks" /* 7585 */;
+import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8580 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

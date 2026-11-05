@@ -1,17 +1,17 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 11903
+// Function ID: 11904
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 2167, 4990, 5044, 1385, 4989, 2147, 5811, 5062, 11895, 11937, 11936, 5812, 11947, 9106, 13405, 11923, 2]
+// Dependencies: [5, 2167, 4992, 5046, 1385, 4991, 2147, 5813, 5064, 11904, 11946, 11945, 5814, 11956, 9112, 13412, 11932, 2]
 // Exports: default
 
-// Module 11894 (handleJoinEmbeddedActivity)
+// Module 11903 (handleJoinEmbeddedActivity)
 import Constants from "Constants" /* 2147 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
 import UserStore from "UserStore" /* 1385 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ let obj = function _handleJoinEmbeddedActivityInternal() {
               let closure_17;
               analyticsLocations = 1;
               componentId = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === analyticsLocations) {
             if (arg0 === 1) {

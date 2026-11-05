@@ -1,31 +1,31 @@
-// Module ID: 12940
-// Function ID: 12941
+// Module ID: 12947
+// Function ID: 12948
 // Name: ConjurePlanProposalCard
-// Dependencies: [32, 19, 17, 6979, 21, 5141, 575, 12941, 12946, 12947, 5851, 12347, 12348, 1113, 3995, 12948, 5761, 12943, 5888, 12399, 12949, 12951, 12954, 504, 12955, 12334, 12939, 12956, 12960, 12961, 12962, 12964, 5768, 2]
+// Dependencies: [32, 19, 17, 6982, 21, 5143, 575, 12948, 12953, 12954, 5854, 12354, 12355, 1113, 3995, 12955, 5763, 12950, 5891, 12406, 12956, 12958, 12961, 504, 12962, 12341, 12946, 12963, 12967, 12968, 12969, 12971, 5770, 2]
 // Exports: default
 
-// Module 12940 (ConjurePlanProposalCard)
+// Module 12947 (ConjurePlanProposalCard)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5888 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12347 */;
-import openConjureNativeImages from "openConjureNativeImages" /* 12348 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12399 */;
-import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12941 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12943 */;
-import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12946 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12947 */;
-import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12961 */;
-import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12962 */;
-import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12964 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5891 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 12354 */;
+import openConjureNativeImages from "openConjureNativeImages" /* 12355 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 12406 */;
+import conjurePlanOverlayDesign from "conjurePlanOverlayDesign" /* 12948 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12950 */;
+import useConjureOverlayBackgroundDefault from "useConjureOverlayBackground" /* 12953 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12954 */;
+import ConjurePlanWidgetDefault from "ConjurePlanWidget" /* 12968 */;
+import ConjurePlanAutomodExamplesDefault from "ConjurePlanAutomodExamples" /* 12969 */;
+import ConjurePlanBotPreviewDefault from "ConjurePlanBotPreview" /* 12971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -163,10 +163,10 @@ function PlanOverlayDesign(projectId) {
   dependencyMap = tmp;
   let tmp2 = projectId;
   const tmp3 = dependencyMap;
-  let obj = projectId(12347);
+  let obj = projectId(12354);
   const conjureAttachmentImage = obj.useConjureAttachmentImage(projectId, design.id);
   ({ src, handleError, gone } = conjureAttachmentImage);
-  let obj2 = projectId(12948);
+  let obj2 = projectId(12955);
   const obj3 = { ready: null != src };
   const conjurePlanOverlaySlides = obj2.useConjurePlanOverlaySlides(obj3);
   const slide = conjurePlanOverlaySlides.slide;
@@ -207,7 +207,7 @@ function PlanOverlayDesign(projectId) {
       ({ overlayDesign: arr2[0], overlayWidgetSlide: arr2[1] } = tmp);
       tmp12Result = tmp12(tmp11, obj6);
     } else if (0 === slide) {
-      const obj7 = { style: items1, children: closure_10(design(5851), obj8) };
+      const obj7 = { style: items1, children: closure_10(design(5854), obj8) };
       items1 = [, ];
       ({ overlayDesign: arr[0], overlayWidgetSlide: arr[1] } = tmp);
       obj8 = { source: obj9, style: tmp.overlayFullWidget, resizeMode: "contain", onError: handleError };
@@ -323,14 +323,14 @@ function PlanReferences(projectId) {
   projectId = projectId.projectId;
   const proposal = projectId.proposal;
   const tmp = closure_13();
-  let obj = projectId(12943);
+  let obj = projectId(12950);
   const result = obj.conjurePlanReferenceImages(proposal);
   importDefault = result;
   let tmp4 = null;
   if (0 !== result.length) {
     const obj2 = { style: tmp.stack, children: items };
     const obj3 = { variant: "body-xs/medium", color: "text-muted", children: intl.string(_modDef3995.ubBJcy) };
-    const Text = tmp2(5761).Text;
+    const Text = tmp2(5763).Text;
     intl = tmp2(1113).intl;
     items = [closure_10(Text, obj3), ];
     const obj4 = {
@@ -433,15 +433,15 @@ export default function ConjurePlanProposalCard(projectId) {
     const obj = MarkupUtilsDefault;
     return obj.parse(trimmed, true, ConjureNativeMarkdown.CONJURE_MARKUP_OPTIONS);
   }, items);
-  let obj = projectId(12949);
+  let obj = projectId(12956);
   const conjurePlanSlashCommandNames = obj.useConjurePlanSlashCommandNames(proposal.commands);
-  let obj2 = projectId(12951);
+  let obj2 = projectId(12958);
   react = obj2.useConjurePlanWidget(projectId, proposal);
-  let obj3 = projectId(12954);
+  let obj3 = projectId(12961);
   botExchanges = obj3.useConjurePlanBotExchanges(proposal).botExchanges;
-  let obj4 = projectId(12954);
+  let obj4 = projectId(12961);
   conjurePlanCommandExchanges = obj4.useConjurePlanCommandExchanges(proposal);
-  let obj5 = projectId(12941);
+  let obj5 = projectId(12948);
   ui = obj5.conjurePlanDesignPreviews(proposal);
   let obj6 = projectId(504);
   let items1 = [ConjureProjectStore];
@@ -476,7 +476,7 @@ export default function ConjurePlanProposalCard(projectId) {
   let tmp10 = proposal;
   let obj7 = { style: tmp.surface, children: null };
   const obj8 = { style: tmp.content, children: null };
-  const tmp11 = proposal(12334);
+  const tmp11 = proposal(12341);
   if (superseded) {
     let formatToPlainStringResult;
     if (null != version) {
@@ -488,14 +488,14 @@ export default function ConjurePlanProposalCard(projectId) {
     tmp12Result = null;
     if (superseded) {
       const obj11 = { children: intl3.string(tmp10(3995).hF2c41) };
-      const ConjureNativeCollapsibleMeta = tmp4(12939).ConjureNativeCollapsibleMeta;
+      const ConjureNativeCollapsibleMeta = tmp4(12946).ConjureNativeCollapsibleMeta;
       intl3 = tmp4(1113).intl;
       tmp12Result = tmp12(ConjureNativeCollapsibleMeta, obj11);
     }
     intl4 = tmp4(1113).intl;
     intl5 = tmp4(1113).intl;
     let str4 = stateFromStores;
-    tmp10Result = tmp10(12956);
+    tmp10Result = tmp10(12963);
     if (stateFromStores == null) {
       let experiences = proposal.experiences;
       let name;
@@ -594,8 +594,8 @@ export default function ConjurePlanProposalCard(projectId) {
     };
     tmp20 = closure_12;
     if ("" !== trimmed) {
-      const obj13 = { variant: "body-md/normal", color: "text-default", children: closure_10(projectId(12960).ConjurePlanCommandMarkup, obj14) };
-      const Text = tmp4(5761).Text;
+      const obj13 = { variant: "body-md/normal", color: "text-default", children: closure_10(projectId(12967).ConjurePlanCommandMarkup, obj14) };
+      const Text = tmp4(5763).Text;
       obj14 = { markup: memo, commandNames: conjurePlanSlashCommandNames, size: "body-md" };
       tmp12Result2 = tmp12(Text, obj13);
     }
@@ -606,11 +606,11 @@ export default function ConjurePlanProposalCard(projectId) {
     if ("" !== str3) {
       const obj16 = { style: tmp.whatChanged, children: items5 };
       const obj17 = { variant: "body-xs/medium", color: "text-muted", children: intl8.string(tmp10(3995).iNS4dl) };
-      const Text3 = tmp4(5761).Text;
+      const Text3 = tmp4(5763).Text;
       intl8 = tmp4(1113).intl;
       items5 = [tmp12(Text3, obj17), ];
-      const obj18 = { variant: "body-md/normal", color: "text-default", children: closure_10(projectId(12960).ConjurePlanCommandText, obj19) };
-      const Text4 = tmp4(5761).Text;
+      const obj18 = { variant: "body-md/normal", color: "text-default", children: closure_10(projectId(12967).ConjurePlanCommandText, obj19) };
+      const Text4 = tmp4(5763).Text;
       obj19 = { text: str3, commandNames: conjurePlanSlashCommandNames, size: "body-md" };
       items5[1] = closure_10(Text4, obj18);
       tmp9Result = tmp9(tmp13, obj16);
@@ -625,11 +625,11 @@ export default function ConjurePlanProposalCard(projectId) {
       if (!superseded) {
         const obj21 = { style: tmp.footer, children: items7 };
         const obj22 = { text: intl6.string(tmp10(3995)["6S+wRM"]), variant: "primary", size: "sm", onPress: onApprove };
-        const Button = tmp4(5768).Button;
+        const Button = tmp4(5770).Button;
         intl6 = tmp4(1113).intl;
         items7 = [tmp12(Button, obj22), ];
         const obj23 = { variant: "body-sm/normal", color: "text-subtle", style: tmp.replyHint, children: intl7.string(tmp10(3995).IZoqbR) };
-        const Text2 = tmp4(5761).Text;
+        const Text2 = tmp4(5763).Text;
         intl7 = tmp4(1113).intl;
         items7[1] = closure_10(Text2, obj23);
         tmp9Result2 = tmp9(tmp13, obj21);

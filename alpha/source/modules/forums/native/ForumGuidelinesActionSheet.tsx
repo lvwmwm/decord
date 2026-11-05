@@ -1,23 +1,23 @@
-// Module ID: 10407
-// Function ID: 10408
+// Module ID: 10413
+// Function ID: 10414
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 7594, 21, 5141, 575, 10017, 1627, 10408, 1377, 10409, 5382, 7428, 5769, 1113, 5178, 5788, 8339, 5396, 5400, 7121, 5761, 10410, 5888, 10407, 2123, 2]
+// Dependencies: [32, 19, 17, 7596, 21, 5143, 575, 10023, 1627, 10414, 1377, 10415, 5384, 7431, 5771, 1113, 5180, 5790, 8344, 5398, 5402, 7124, 5763, 10416, 5891, 10413, 2123, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 10407 (ForumGuidelinesActionSheet)
+// Module 10413 (ForumGuidelinesActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import LinkUtils from "LinkUtils" /* 5788 */;
-import ForumConstants from "ForumConstants" /* 7594 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8339 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10409 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import LinkUtils from "LinkUtils" /* 5790 */;
+import ForumConstants from "ForumConstants" /* 7596 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8344 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10415 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -212,7 +212,7 @@ export function openForumGuidelinesActionSheet(arg0) {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = {};
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(10407, dependencyMap.paths);
+  const tmp2 = asyncRequire(10413, dependencyMap.paths);
   const merged = Object.assign(arg0);
   openLazy(tmp2, closure_6, obj);
 }

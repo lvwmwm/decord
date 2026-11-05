@@ -1,14 +1,14 @@
-// Module ID: 16563
-// Function ID: 16564
+// Module ID: 16576
+// Function ID: 16577
 // Name: context
-// Dependencies: [6585, 1072, 5809, 16548, 9473, 9479, 2]
+// Dependencies: [6588, 1072, 5811, 16561, 9480, 9486, 2]
 
-// Module 16563 (context)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5809 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9473 */;
-import Constants_mod from "Constants" /* 6585 */;
+// Module 16576 (context)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5811 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9480 */;
+import Constants_mod from "Constants" /* 6588 */;
 import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16548 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16561 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -17,7 +17,7 @@ let RPC_SCOPE_CONFIG;
 let c3;
 let items;
 let tmp;
-const RPCErrorDefault = tmp(9479);
+const RPCErrorDefault = tmp(9486);
 let Constants = Constants_mod2;
 ({ RPC_EMBEDDED_APP_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = Constants_mod2;

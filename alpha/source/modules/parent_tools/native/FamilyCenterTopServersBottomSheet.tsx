@@ -1,20 +1,20 @@
-// Module ID: 17049
-// Function ID: 17050
+// Module ID: 17073
+// Function ID: 17074
 // Name: FamilyCenterTopServersBottomSheet
-// Dependencies: [7855, 21, 5141, 575, 504, 8513, 7116, 7098, 7502, 5761, 1113, 2667, 7201, 2]
+// Dependencies: [7860, 21, 5143, 575, 504, 8518, 7119, 7101, 7504, 5763, 1113, 2667, 7204, 2]
 // Exports: default
 
-// Module 17049 (FamilyCenterTopServersBottomSheet)
+// Module 17073 (FamilyCenterTopServersBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2667 from "module_2667" /* 2667 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import GuildIconDefault from "GuildIcon" /* 7098 */;
-import TableRowGroup2 from "TableRowGroup" /* 7201 */;
-import ActionSheet2 from "ActionSheet" /* 7502 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7855 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import GuildIconDefault from "GuildIcon" /* 7101 */;
+import TableRowGroup2 from "TableRowGroup" /* 7204 */;
+import ActionSheet2 from "ActionSheet" /* 7504 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7860 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,10 +30,10 @@ function GuildRow(guildActivity) {
   if (null == stateFromStores) {
     return null;
   } else {
-    const tmp2Result = guildActivity(8513);
+    const tmp2Result = guildActivity(8518);
     const topUserOrGuildDescription = tmp2Result.getTopUserOrGuildDescription(guildActivity.messages_sent, guildActivity.call_count);
     const obj2 = { label: stateFromStores.name, subLabel: topUserOrGuildDescription, icon: closure_4(GuildIconDefault, obj3) };
-    const TableRow = tmp2(7116).TableRow;
+    const TableRow = tmp2(7119).TableRow;
     obj3 = { guild: stateFromStores, style: tmp.guildIcon };
     return closure_4(TableRow, obj2);
   }

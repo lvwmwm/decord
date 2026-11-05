@@ -1,17 +1,17 @@
-// Module ID: 19007
-// Function ID: 19008
+// Module ID: 19038
+// Function ID: 19039
 // Name: GuildTextChannelRow
-// Dependencies: [19, 9976, 21, 11, 18995, 14111, 18998, 2]
+// Dependencies: [19, 9982, 21, 11, 19026, 14124, 19029, 2]
 
-// Module 19007 (GuildTextChannelRow)
+// Module 19038 (GuildTextChannelRow)
 import Fragment from "Fragment" /* 21 */;
-import SearchConstants from "SearchConstants" /* 9976 */;
-import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 18995 */;
+import SearchConstants from "SearchConstants" /* 9982 */;
+import guild_channels_ChannelSubtitle from "guild_channels/ChannelSubtitle" /* 19026 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SearchUtils = tmp(14111);
+const SearchUtils = tmp(14124);
 let closure_4 = SearchConstants.CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = Fragment.jsx;
 const memoResult = react.memo(function GuildTextChannelRow(channel) {

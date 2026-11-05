@@ -1,27 +1,27 @@
-// Module ID: 17958
-// Function ID: 17959
+// Module ID: 17986
+// Function ID: 17987
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1072, 1074, 4987, 6916, 21, 7116, 5761, 1113, 10698, 4974, 1252, 9828, 6919, 17959, 9704, 17147, 7487, 5382, 7859, 17960, 14723, 5171, 5781, 2]
+// Dependencies: [19, 1072, 1074, 4989, 6919, 21, 7119, 5763, 1113, 10704, 4976, 1252, 9834, 6922, 17987, 9710, 17171, 7490, 5384, 7864, 17988, 14736, 5173, 5783, 2]
 // Exports: default
 
-// Module 17958 (BalanceWidgetMenu)
+// Module 17986 (BalanceWidgetMenu)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl3 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import QuestConstants from "QuestConstants" /* 6916 */;
-import QuestTypes from "QuestTypes" /* 6919 */;
-import TableRow2 from "TableRow" /* 7116 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
-import _mod9704 from "module_9704" /* 9704 */;
-import QuestUtils from "QuestUtils" /* 9828 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10698 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5173 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import QuestConstants from "QuestConstants" /* 6919 */;
+import QuestTypes from "QuestTypes" /* 6922 */;
+import TableRow2 from "TableRow" /* 7119 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
+import _mod9710 from "module_9710" /* 9710 */;
+import QuestUtils from "QuestUtils" /* 9834 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10704 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -85,9 +85,9 @@ function BalanceWidgetMenu() {
   let obj5;
   let str;
   let tmp5Result;
-  let obj = str(9704);
+  let obj = str(9710);
   str = obj.useFetchVirtualCurrencyBalance().balance;
-  let obj2 = str(17147);
+  let obj2 = str(17171);
   const orbBalanceEntrypoint = obj2.useOrbBalanceEntrypoint({ location: "MobileBalanceWidgetMenu" });
   const openBalanceWidgetActionSheet = orbBalanceEntrypoint.openBalanceWidgetActionSheet;
   let items = [str, openBalanceWidgetActionSheet];
@@ -137,7 +137,7 @@ function BalanceWidgetMenu() {
   }, items);
   if (isOrbchievementsEnabled) {
     let obj3 = { balance: str, notificationType, onPress: callback };
-    tmp5Result = tmp5(tmp(17960).OrbWalletEntryRow, obj3);
+    tmp5Result = tmp5(tmp(17988).OrbWalletEntryRow, obj3);
   } else {
     let intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;
@@ -165,7 +165,7 @@ let result = size.fileFinishedImporting("modules/virtual_currency/native/Balance
 
 export default function BalanceWidgetMenuWrapper() {
   let tmp5Result;
-  const obj = _mod9704;
+  const obj = _mod9710;
   const balance = obj.useFetchVirtualCurrencyBalance().balance;
   DismissibleContentUnsafeUtils;
   if (null == balance) {

@@ -1,17 +1,17 @@
-// Module ID: 7766
-// Function ID: 7767
+// Module ID: 7771
+// Function ID: 7772
 // Name: MobileTrialUtils
-// Dependencies: [1387, 7767, 5171, 4974, 15453, 2176, 1113, 2]
+// Dependencies: [1387, 7772, 5173, 4976, 15466, 2176, 1113, 2]
 // Exports: useNitroTrialCtaOverride, usePremiumTrialOfferPremiumType, useShouldShowPremiumTrialUserSettingsAvatarBadge
 
-// Module 7766 (MobileTrialUtils)
+// Module 7771 (MobileTrialUtils)
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtils from "PremiumUtils" /* 2176 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7767 */;
-import AndroidTwoWeekTrialsExperiment from "AndroidTwoWeekTrialsExperiment" /* 15453 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5173 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 7772 */;
+import AndroidTwoWeekTrialsExperiment from "AndroidTwoWeekTrialsExperiment" /* 15466 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = PremiumConstants.PremiumSubscriptionSKUToPremiumType;

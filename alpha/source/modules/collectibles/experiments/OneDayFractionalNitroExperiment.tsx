@@ -1,11 +1,11 @@
-// Module ID: 9725
-// Function ID: 9726
+// Module ID: 9731
+// Function ID: 9732
 // Name: OneDayFractionalNitroExperiment
-// Dependencies: [1449, 9726, 2]
+// Dependencies: [1449, 9732, 2]
 // Exports: useOneDayFractionalNitroEnabled
 
-// Module 9725 (OneDayFractionalNitroExperiment)
-import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 9726 */;
+// Module 9731 (OneDayFractionalNitroExperiment)
+import PremiumGroupExperimentDefault from "PremiumGroupExperiment" /* 9732 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

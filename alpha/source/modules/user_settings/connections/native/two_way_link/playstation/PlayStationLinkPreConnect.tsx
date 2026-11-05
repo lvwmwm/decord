@@ -1,15 +1,15 @@
-// Module ID: 14853
-// Function ID: 14854
+// Module ID: 14866
+// Function ID: 14867
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 14850, 21, 5141, 1499, 14854, 9884, 1113, 2]
+// Dependencies: [19, 14863, 21, 5143, 1499, 14867, 9890, 1113, 2]
 // Exports: PlayStationLinkPreConnect
 
-// Module 14853 (PlayStationLinkPreConnect)
+// Module 14866 (PlayStationLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14850 */;
-import _modDef14854 from "module_14854" /* 14854 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14863 */;
+import _modDef14867 from "module_14867" /* 14867 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -34,10 +34,10 @@ export function PlayStationLinkPreConnect(platformType) {
     navigation.push(constants.ERROR, {});
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef14854 };
+    const obj = { uri: _modDef14867 };
     return obj;
   }, []);
-  const TwoWayLinkPreConnect = navigation(9884).TwoWayLinkPreConnect;
+  const TwoWayLinkPreConnect = navigation(9890).TwoWayLinkPreConnect;
   const intl = navigation(1113).intl;
   const intl2 = navigation(1113).intl;
   return <TwoWayLinkPreConnect platformType={platformType} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1113).t["6n+UPR"])} body={intl2.string(navigation(1113).t.JaaqIf)} />;

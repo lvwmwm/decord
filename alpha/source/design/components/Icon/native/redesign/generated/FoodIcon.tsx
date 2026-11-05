@@ -1,14 +1,14 @@
-// Module ID: 10256
-// Function ID: 10257
+// Module ID: 10264
+// Function ID: 10265
 // Name: FoodIcon
-// Dependencies: [19, 21, 575, 5850, 10257, 2]
+// Dependencies: [19, 21, 575, 5853, 10265, 2]
 // Exports: FoodIcon
 
-// Module 10256 (FoodIcon)
+// Module 10264 (FoodIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 10257 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 10265 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

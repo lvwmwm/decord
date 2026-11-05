@@ -1,19 +1,19 @@
-// Module ID: 10200
-// Function ID: 10201
+// Module ID: 10208
+// Function ID: 10209
 // Name: PremiumUpsellSectionDivider
-// Dependencies: [19, 17, 7757, 21, 5141, 575, 10201, 5723, 1092, 8808, 2]
+// Dependencies: [19, 17, 7762, 21, 5143, 575, 10209, 5725, 1092, 8813, 2]
 // Exports: default
 
-// Module 10200 (PremiumUpsellSectionDivider)
+// Module 10208 (PremiumUpsellSectionDivider)
 import nativeDefault from "native" /* 575 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinearGradientDefault from "LinearGradient" /* 5723 */;
-import ColorConstants from "ColorConstants" /* 7757 */;
-import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10201 */;
+import LinearGradientDefault from "LinearGradient" /* 5725 */;
+import ColorConstants from "ColorConstants" /* 7762 */;
+import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 10209 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj;
@@ -92,7 +92,7 @@ export default function PremiumUpsellSectionDivider(arg0) {
     obj5 = { style: tmp.lockGradient, start: ConstantsIOS.HorizontalGradient.START, end: ConstantsIOS.HorizontalGradient.END, colors: useTier0UpsellContent ? tmp9.PREMIUM_TIER_0 : tmp9.PREMIUM_TIER_2_TRI_COLOR, children: metroRequire(LockIcon, obj6) };
     tmp7Result = LinearGradientDefault;
     obj6 = { color: nativeDefault.colors.WHITE, style: tmp.lock };
-    LockIcon = tmp5(8808).LockIcon;
+    LockIcon = tmp5(8813).LockIcon;
     tmp4Result = tmp4(tmp3, obj4);
   }
   items[2] = tmp4Result;

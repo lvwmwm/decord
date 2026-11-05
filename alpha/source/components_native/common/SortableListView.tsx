@@ -1,11 +1,11 @@
-// Module ID: 18720
-// Function ID: 18721
+// Module ID: 18750
+// Function ID: 18751
 // Name: SortableListView
-// Dependencies: [19, 17, 21, 5745, 7430, 2]
+// Dependencies: [19, 17, 21, 5747, 7433, 2]
 
-// Module 18720 (SortableListView)
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5745 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7430 */;
+// Module 18750 (SortableListView)
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5747 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7433 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,9 +1,9 @@
-// Module ID: 7010
-// Function ID: 7011
+// Module ID: 7013
+// Function ID: 7014
 // Name: VoicePanelStore
 // Dependencies: [1254, 1259, 2]
 
-// Module 7010 (VoicePanelStore)
+// Module 7013 (VoicePanelStore)
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 

@@ -1,25 +1,44 @@
 // Module ID: 13136
 // Function ID: 13137
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13136 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
+let items;
 let obj2;
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-let closure_1 = Object.freeze({ type: "WhiteSpace", loc: null, value: " " });
+const Comma = tokenize.TYPE.Comma;
 const obj = {
-  name: "WhiteSpace",
+  name: "SelectorList",
   structure: obj2,
   parse() {
-    this.eat(WhiteSpace);
-    return closure_1;
+    const self = this;
+    const list = this.createList();
+    if (!this.scanner.eof) {
+      list.push(self.Selector());
+      if (self.scanner.tokenType === Comma) {
+        const iter = self.scanner;
+        iter.next();
+        while (!self.scanner.eof) {
+          let arr3 = list.push(self.Selector());
+          if (self.scanner.tokenType !== Comma) {
+            break;
+          }
+        }
+      }
+    }
+    const element = { type: "SelectorList", loc: self.getLocationFromList(list), children: list };
+    return element;
   },
-  generate(value) {
-    this.chunk(value.value);
-  }
+  generate(arg0) {
+    this.children(arg0, function() {
+      this.chunk(",");
+    });
+  },
+  walkContext: "selector"
 };
-obj2 = { value: String };
+obj2 = { children: items };
+items = [["Selector", "Raw"]];
 
 export default obj;

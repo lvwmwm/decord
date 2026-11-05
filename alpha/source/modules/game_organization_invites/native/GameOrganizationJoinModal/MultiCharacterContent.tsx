@@ -1,52 +1,26 @@
-// Module ID: 13426
-// Function ID: 13427
+// Module ID: 13451
+// Function ID: 13452
 // Name: MultiCharacterContent
-// Dependencies: [19, 21, 5141, 7095, 5761, 1113, 2533, 13427, 2]
+// Dependencies: [19, 21, 7098, 13452, 2]
 // Exports: default
 
-// Module 13426 (MultiCharacterContent)
+// Module 13451 (MultiCharacterContent)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import _modDef2533 from "module_2533" /* 2533 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import GameOrganizationCharacterListDefault from "GameOrganizationCharacterList" /* 13427 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7098 */;
+import GameOrganizationCharacterListDefault from "GameOrganizationCharacterList" /* 13452 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-let closure_4 = createStyles.createStyles({ statusText: { textAlign: "center" } });
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/MultiCharacterContent.tsx");
 
-export default function MultiCharacterContent(arg0) {
-  let characters;
-  let hasError;
-  let intl2;
-  let noun;
-  let onSelect;
-  let selectedCharacterId;
-  let tmp5;
-  ({ characters, noun } = arg0);
-  ({ hasError, selectedCharacterId, onSelect } = arg0);
-  const tmp = closure_4();
+export default function MultiCharacterContent(characters) {
+  let tmp7;
+  characters = characters.characters;
   if (null == characters) {
-    let tmp10Result;
-    if (hasError) {
-      const obj2 = { variant: "body-md/normal", color: "text-muted", style: tmp.statusText, children: intl2.string(_modDef2533.Rx9AlK) };
-      const Text2 = tmp11(5761).Text;
-      intl2 = tmp11(1113).intl;
-      tmp10Result = tmp10(Text2, obj2);
-    } else {
-      tmp10Result = tmp10(tmp11(7095).ActivityIndicator, {});
-    }
-    tmp5 = tmp10Result;
-  } else if (0 === characters.length) {
-    const Text = Text_Text.Text;
-    const intl = intl3.intl;
-    const obj4 = { noun };
-    tmp5 = <Text variant="body-md/normal" color="text-muted" style={tmp.statusText}>{intl.formatToPlainString(_modDef2533.cIerRX, obj4)}</Text>;
+    tmp7 = jsx(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
   } else {
-    tmp5 = jsx(GameOrganizationCharacterListDefault, { characters, selectedCharacterId, onSelect, noun });
+    tmp7 = jsx(GameOrganizationCharacterListDefault, { characters, selectedCharacterId: tmp, onSelect: tmp2, noun: tmp3 });
   }
-  return tmp5;
+  return tmp7;
 };

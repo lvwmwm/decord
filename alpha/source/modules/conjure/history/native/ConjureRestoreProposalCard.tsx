@@ -1,16 +1,16 @@
-// Module ID: 12995
-// Function ID: 12996
+// Module ID: 13002
+// Function ID: 13003
 // Name: ConjureRestoreProposalCard
-// Dependencies: [19, 21, 12383, 12334, 6162, 5761, 1113, 3995, 5768, 2]
+// Dependencies: [19, 21, 12390, 12341, 6165, 5763, 1113, 3995, 5770, 2]
 // Exports: default
 
-// Module 12995 (ConjureRestoreProposalCard)
+// Module 13002 (ConjureRestoreProposalCard)
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12334 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12383 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 12341 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12390 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -41,14 +41,14 @@ export default function ConjureRestoreProposalCard(arg0) {
   let tmp3Result = null;
   if (null != relative) {
     const obj4 = { variant: "body-sm/normal", color: "text-muted", children: relative };
-    tmp3Result = tmp3(tmp(5761).Text, obj4);
+    tmp3Result = tmp3(tmp(5763).Text, obj4);
   }
   items1[1] = tmp3Result;
   items[1] = React3(Stack2, { direction: "vertical", spacing: 4, children: items1 });
   let tmp3Result2 = null;
   if (null != onRestore) {
     const obj5 = { text: intl2.string(_modDef3995.H8Jfhu), variant: "secondary", onPress: onRestore };
-    const Button = tmp(5768).Button;
+    const Button = tmp(5770).Button;
     intl2 = tmp(1113).intl;
     tmp3Result2 = tmp3(Button, obj5);
   }

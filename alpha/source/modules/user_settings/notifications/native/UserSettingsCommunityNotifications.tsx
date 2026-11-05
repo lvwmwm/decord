@@ -1,18 +1,18 @@
-// Module ID: 17767
-// Function ID: 17768
+// Module ID: 17795
+// Function ID: 17796
 // Name: UserSettingsCommunityNotifications
-// Dependencies: [19, 11191, 21, 5141, 504, 11, 8317, 6162, 7201, 7505, 1113, 4971, 2]
+// Dependencies: [19, 11199, 21, 5143, 504, 11, 8322, 6165, 7204, 7507, 1113, 4973, 2]
 // Exports: default
 
-// Module 17767 (UserSettingsCommunityNotifications)
+// Module 17795 (UserSettingsCommunityNotifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl3 from "intl" /* 1113 */;
-import TableRowGroup2 from "TableRowGroup" /* 7201 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7505 */;
+import TableRowGroup2 from "TableRowGroup" /* 7204 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7507 */;
 import react from "react" /* 19 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11191 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11199 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -35,7 +35,7 @@ export default function UserSettingsCommunityNotifications() {
   let tmp5 = null;
   if (0 !== keys.length) {
     let obj3 = { children: closure_4(Stack, obj4) };
-    const Form = tmp2(8317).Form;
+    const Form = tmp2(8322).Form;
     obj4 = {
       spacing: 24,
       style: tmp.container,
@@ -75,7 +75,7 @@ export default function UserSettingsCommunityNotifications() {
           return hasOwnProperty(TableRowGroup, obj, item);
         })
     };
-    Stack = tmp2(6162).Stack;
+    Stack = tmp2(6165).Stack;
     tmp5 = closure_4(Form, obj3);
   }
   return tmp5;

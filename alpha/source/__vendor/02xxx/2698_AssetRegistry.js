@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools", scales: [1], hash: "6be1a56cc3dd26b85756eed4eaeaaf55", name: "FamilyCenter.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/parent_tools", scales: [1], hash: "f4e2abde2e1961ce5d2d2d0c03601eed", name: "FamilyCenter.compiled.messages", type: "jsona" });

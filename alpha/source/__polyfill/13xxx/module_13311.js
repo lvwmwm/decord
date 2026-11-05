@@ -1,7 +1,13 @@
 // Module ID: 13311
 // Function ID: 13312
-// Dependencies: []
+// Dependencies: [13277]
+// Exports: addTracingExtensions
 
 // Module 13311
+import _mod13277 from "module_13277" /* 13277 */;
 
-export const DEFAULT_ENVIRONMENT = "production";
+
+export function addTracingExtensions() {
+  const obj = _mod13277;
+  const result = obj.registerSpanErrorInstrumentation();
+}

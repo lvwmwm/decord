@@ -1,28 +1,28 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8589
+// Function ID: 8590
 // Name: SystemMessageUtils
-// Dependencies: [32, 5084, 502, 4990, 5012, 5083, 1385, 1072, 1113, 11, 8585, 8589, 6176, 5786, 8590, 8592, 6573, 6198, 8593, 8594, 7835, 8548, 2]
+// Dependencies: [32, 5086, 502, 4992, 5014, 5085, 1385, 1072, 1113, 11, 8590, 8594, 6179, 5788, 8595, 8597, 6576, 6201, 8598, 8599, 7840, 8553, 2]
 
-// Module 8584 (SystemMessageUtils)
+// Module 8589 (SystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl21 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5786 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6176 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
-import useMessageAuthor from "useMessageAuthor" /* 6573 */;
-import GuildSpaceSystemMessageUtils from "GuildSpaceSystemMessageUtils" /* 8548 */;
-import MarkupParser from "MarkupParser" /* 8585 */;
-import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8589 */;
-import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8590 */;
-import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8592 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8593 */;
-import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8594 */;
+import useChannelName from "useChannelName" /* 5788 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6179 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6201 */;
+import useMessageAuthor from "useMessageAuthor" /* 6576 */;
+import GuildSpaceSystemMessageUtils from "GuildSpaceSystemMessageUtils" /* 8553 */;
+import MarkupParser from "MarkupParser" /* 8590 */;
+import AutomodNotificationEmbedTypeKeys from "AutomodNotificationEmbedTypeKeys" /* 8594 */;
+import GuildRoleSubscriptionSystemMessageUtils from "GuildRoleSubscriptionSystemMessageUtils" /* 8595 */;
+import GuildProductSystemMessageUtils from "GuildProductSystemMessageUtils" /* 8597 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8598 */;
+import PrivateChannelIntegrationSystemMessageUtils from "PrivateChannelIntegrationSystemMessageUtils" /* 8599 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import MessageRecord from "MessageRecord" /* 5084 */;
+import MessageRecord from "MessageRecord" /* 5086 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import RelationshipStore from "RelationshipStore" /* 5083 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import RelationshipStore from "RelationshipStore" /* 5085 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

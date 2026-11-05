@@ -1,22 +1,26 @@
-// Module ID: 11717
-// Function ID: 11718
+// Module ID: 11725
+// Function ID: 11726
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 6840, 5044, 5172, 11718, 6979, 4997, 10935, 5896, 11054, 2123, 7014, 11028, 504, 572, 2]
+// Dependencies: [32, 5, 109, 502, 6843, 5046, 5174, 11035, 11726, 6982, 4999, 10941, 7534, 11036, 5899, 11060, 2123, 7017, 11034, 504, 572, 2]
 
-// Module 11717 (ConjureRichPresenceStore)
+// Module 11725 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 4997 */;
-import ActivityTypes from "ActivityTypes" /* 5896 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7014 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10935 */;
+import ChannelConstants from "ChannelConstants" /* 4999 */;
+import ActivityTypes from "ActivityTypes" /* 5899 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7017 */;
+import conjureServerProject from "conjureServerProject" /* 7534 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10941 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import IdleStore from "IdleStore" /* 6840 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
-import ConjurePagesStore from "ConjurePagesStore" /* 11718 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import IdleStore from "IdleStore" /* 6843 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
+import ConjureChatStore from "ConjureChatStore" /* 11035 */;
+import ConjurePagesStore from "ConjurePagesStore" /* 11726 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,10 +28,12 @@ let _null, c3, c4, ownedProjectsFetchState;
 
 function updateActivity(withGracePeriod) {
   let found;
-  let obj3;
+  let obj4;
+  let obj6;
+  let obj8;
   let timeout;
   let timeout2;
-  const f100489 = () => {
+  const f100658 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -45,7 +51,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f100489, closure_1_10);
+      timeout = setTimeout(f100658, closure_1_14);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -61,18 +67,17 @@ function updateActivity(withGracePeriod) {
       clearTimeout(timeout2);
       timeout2 = null;
     }
-    c11 = null;
-    let flag4 = null != c12;
-    if (flag4) {
-      c12 = null;
-      flag4 = true;
+    c15 = null;
+    let flag5 = null != _null;
+    if (flag5) {
+      _null = null;
+      flag5 = true;
     }
-    return flag4;
+    return flag5;
   } else {
-    let tmp13;
-    let flag;
-    if (null != c11) {
-      if (null == ConjureProjectStore.getProject(c11)) {
+    let tmp11;
+    if (null != c15) {
+      if (null == ConjureProjectStore.getProject(c15)) {
         if (null != timeout) {
           const _clearTimeout5 = clearTimeout;
           clearTimeout(timeout);
@@ -83,72 +88,74 @@ function updateActivity(withGracePeriod) {
           clearTimeout(timeout2);
           timeout2 = null;
         }
-        c11 = null;
-        let flag3 = null != c12;
-        if (flag3) {
-          c12 = null;
-          flag3 = true;
+        c15 = null;
+        let flag4 = null != _null;
+        if (flag4) {
+          _null = null;
+          flag4 = true;
         }
-        return flag3;
+        return flag4;
       }
     }
     const shownProjectId = ConjurePagesStore.getShownProjectId();
     if (null != shownProjectId) {
-      let tmp15 = null;
+      let tmp13 = null;
+      const tmp12 = ConjureProjectStore;
       if (null != ConjureProjectStore.getProject(shownProjectId)) {
-        tmp15 = shownProjectId;
+        tmp13 = shownProjectId;
       }
-      tmp13 = tmp15;
+      tmp11 = tmp13;
+      obj = tmp12;
     } else {
       const guildId = SelectedGuildStore.getGuildId();
-      obj = ConjureProjectStore;
       let globalSelectedProjectId = ConjureProjectStore.getGlobalSelectedProjectId();
       if (globalSelectedProjectId == null) {
         let selectedProjectId = null;
         if (null != guildId) {
           selectedProjectId = null;
           if (SelectedChannelStore.getChannelId() === StaticChannelRoute.CONJURE) {
-            selectedProjectId = obj.getSelectedProjectId(guildId);
+            selectedProjectId = obj11.getSelectedProjectId(guildId);
           }
         }
         globalSelectedProjectId = selectedProjectId;
       }
-      tmp13 = null;
+      tmp11 = null;
       if (null != globalSelectedProjectId) {
-        tmp13 = null;
-        if (null != obj.getProject(globalSelectedProjectId)) {
-          tmp13 = globalSelectedProjectId;
+        tmp11 = null;
+        if (null != ConjureProjectStore.getProject(globalSelectedProjectId)) {
+          tmp11 = globalSelectedProjectId;
         }
       }
+      obj = obj11;
     }
-    if (null == tmp13) {
-      let flag2;
-      if (null != c12) {
+    if (null == tmp11) {
+      let flag3;
+      if (null != _null) {
         if (withGracePeriod) {
-          flag2 = false;
+          flag3 = false;
           if (null == timeout) {
             const _setTimeout2 = setTimeout;
             timeout = setTimeout(() => {
-              c13 = null;
-              if (null != c14) {
+              c17 = null;
+              if (null != c18) {
                 const _clearTimeout = clearTimeout;
-                clearTimeout(c14);
-                c14 = null;
+                clearTimeout(c18);
+                c18 = null;
               }
-              c11 = null;
-              let flag = null != c12;
+              c15 = null;
+              let flag = null != c16;
               if (flag) {
-                c12 = null;
+                c16 = null;
                 flag = true;
               }
               if (flag) {
                 conjureRichPresenceStore.emitChange();
               }
             }, 30000);
-            flag2 = false;
+            flag3 = false;
           }
         }
-        flag = flag2;
+        return flag3;
       }
       if (null != timeout) {
         const _clearTimeout3 = clearTimeout;
@@ -160,11 +167,11 @@ function updateActivity(withGracePeriod) {
         clearTimeout(timeout2);
         timeout2 = null;
       }
-      c11 = null;
-      flag2 = null != c12;
-      if (flag2) {
-        c12 = null;
-        flag2 = true;
+      c15 = null;
+      flag3 = null != _null;
+      if (flag3) {
+        _null = null;
+        flag3 = true;
       }
     } else {
       if (null != timeout) {
@@ -172,29 +179,106 @@ function updateActivity(withGracePeriod) {
         clearTimeout(timeout);
         timeout = null;
       }
-      flag = tmp13 !== c11 || null == c12;
-      if (flag) {
-        c11 = tmp13;
-        let c0;
-        const obj2 = { type: ActivityTypes.ActivityTypes.PLAYING, name: conjurePresenceActivity.CONJURE_PRESENCE_ACTIVITY_NAME, details: found[Math.floor(Math, Math.random(Math) * found.length)], timestamps: obj3 };
-        let prop = conjurePresenceActivity.CONJURE_PRESENCE_ACTIVITY_LINES;
-        found = prop.filter((item) => item !== details);
-        let _Math = Math;
-        let _Math2 = Math;
-        const _Date = Date;
-        c12 = obj2;
-        obj3 = { start: Date.now() };
-        if (null != timeout2) {
-          const _clearTimeout2 = clearTimeout;
-          clearTimeout(timeout2);
-          timeout2 = null;
+      const project = obj.getProject(tmp11);
+      let tmp18 = null;
+      if (null != project) {
+        tmp18 = null;
+        const obj2 = conjureServerProject;
+        const tmp19 = require;
+        if (null != obj2.conjureServerProjectGuildId(project)) {
+          const messages = ConjureChatStore.getMessages(tmp11);
+          const tmp19Result = tmp19(11036);
+          const findOpenTurnResult = tmp19Result.findOpenTurn(messages);
+          tmp18 = null;
+          if (null != findOpenTurnResult) {
+            const substr = messages.slice(0, messages.lastIndexOf(findOpenTurnResult));
+            const findLastResult = substr.findLast((role) => "user" === role.role);
+            let user_id;
+            if (findLastResult != null) {
+              user_id = findLastResult.user_id;
+            }
+            if (user_id == null) {
+              user_id = project.owner_user_id;
+            }
+            let tmp26 = null;
+            if (user_id === AuthenticationStore.getId()) {
+              tmp26 = tmp11;
+            }
+            tmp18 = tmp26;
+          }
         }
-        let _setTimeout = setTimeout;
-        timeout2 = setTimeout(f100489, c10);
-        flag = true;
       }
+      if (tmp11 === c15) {
+        let flag;
+        if (null != _null) {
+          let flag2 = false;
+          if (null != _null) {
+            const party3 = _null.party;
+            let id;
+            if (party3 != null) {
+              id = party3.id;
+            }
+            if (id == null) {
+              id = null;
+            }
+            flag2 = false;
+            if (id !== tmp18) {
+              const party4 = _null.party;
+              const tmp51 = _objectWithoutProperties(_null, closure_2);
+              let tmp52 = tmp51;
+              if (null != tmp18) {
+                const obj3 = { party: obj4 };
+                let merged = Object.assign(tmp51);
+                tmp52 = obj3;
+                obj4 = { id: tmp18 };
+              }
+              _null = tmp52;
+              flag2 = true;
+            }
+          }
+          flag = flag2;
+        }
+        return flag;
+      }
+      c15 = tmp11;
+      const obj5 = { type: ActivityTypes.ActivityTypes.PLAYING, name: conjurePresenceActivity.CONJURE_PRESENCE_ACTIVITY_NAME, details: found[Math.floor(Math, Math.random(Math) * found.length)], timestamps: obj6 };
+      let c0;
+      let prop = conjurePresenceActivity.CONJURE_PRESENCE_ACTIVITY_LINES;
+      found = prop.filter((item) => item !== details);
+      let _Math = Math;
+      let _Math2 = Math;
+      const _Date = Date;
+      _null = obj5;
+      const party = obj5.party;
+      let id1;
+      obj6 = { start: Date.now() };
+      if (party != null) {
+        id1 = party.id;
+      }
+      if (id1 == null) {
+        id1 = null;
+      }
+      if (id1 !== tmp18) {
+        const party2 = _null.party;
+        const tmp36 = _objectWithoutProperties(_null, closure_2);
+        let tmp37 = tmp36;
+        if (null != tmp18) {
+          const obj7 = { party: obj8 };
+          const merged1 = Object.assign(tmp36);
+          tmp37 = obj7;
+          obj8 = { id: tmp18 };
+        }
+        _null = tmp37;
+      }
+      if (null != timeout2) {
+        const _clearTimeout2 = clearTimeout;
+        clearTimeout(timeout2);
+        timeout2 = null;
+      }
+      let _setTimeout = setTimeout;
+      timeout2 = setTimeout(f100658, c14);
+      flag = true;
     }
-    return flag;
   }
 }
 function fetchOwnedProjects() {
@@ -208,9 +292,9 @@ let obj = function _fetchOwnedProjects() {
       const promise = new Promise((fn) => {
         let closure_0 = fn;
         function check() {
-          ownedProjectsFetchState = closure_2_8.getOwnedProjectsFetchState();
+          ownedProjectsFetchState = closure_2_12.getOwnedProjectsFetchState();
           let tmp2 = "success" !== ownedProjectsFetchState;
-          obj = closure_2_8;
+          obj = closure_2_12;
           if (tmp2) {
             tmp2 = "error" !== ownedProjectsFetchState;
           }
@@ -219,9 +303,9 @@ let obj = function _fetchOwnedProjects() {
             fn();
           }
         }
-        obj = closure_8;
-        closure_8.addChangeListener(check);
-        ownedProjectsFetchState = closure_8.getOwnedProjectsFetchState();
+        obj = closure_12;
+        closure_12.addChangeListener(check);
+        ownedProjectsFetchState = closure_12.getOwnedProjectsFetchState();
         let tmp3 = "success" !== ownedProjectsFetchState;
         if (tmp3) {
           tmp3 = "error" !== ownedProjectsFetchState;
@@ -265,7 +349,7 @@ let obj = function _fetchOwnedProjects() {
             if ("success" !== ownedProjectsFetchState.getOwnedProjectsFetchState()) {
               c2 = 1;
               c3 = 1;
-              const obj4 = { value: require("asyncRequire")(paths[10], paths.paths), done: false };
+              const obj4 = { value: require("asyncRequire")(paths[15], paths.paths), done: false };
               return obj4;
             }
           }
@@ -307,7 +391,7 @@ let obj = function _fetchOwnedProjects() {
           return obj;
         }
         const str = "success";
-        if ("success" !== closure_129_8.getOwnedProjectsFetchState()) {
+        if ("success" !== closure_129_12.getOwnedProjectsFetchState()) {
           const _Error = Error;
           const self = this;
           const self2 = this;
@@ -315,7 +399,7 @@ let obj = function _fetchOwnedProjects() {
           throw error;
         } else {
           c3 = 3;
-          const obj9 = { value: closure_129_8.getOwnedProjects(), done: true };
+          const obj9 = { value: closure_129_12.getOwnedProjects(), done: true };
           return obj9;
         }
       } catch (tmp16) {
@@ -345,7 +429,6 @@ obj = function _resumeRunningProjects() {
       try {
         let closure_0;
         let closure_1;
-        let closure_2;
         c4 = 2;
         if (0 === c3) {
           if (arg0 === 1) {
@@ -360,14 +443,14 @@ obj = function _resumeRunningProjects() {
             closure_1 = undefined;
             closure_2 = undefined;
             let ensureConnection;
-            const tmp23 = c15;
+            const tmp23 = c19;
             if (!tmp23) {
-              c15 = true;
+              c19 = true;
               const obj2 = ConjureGuildExperiment;
               const tmp14 = require;
               if (obj2.hasConjureGuildWithoutExposure("conjure_resume")) {
                 c2 = 1;
-                const items = [fetchOwnedProjects(), tmp14(dependencyMap[11])(dependencyMap[13], dependencyMap.paths)];
+                const items = [fetchOwnedProjects(), tmp14(dependencyMap[16])(dependencyMap[18], dependencyMap.paths)];
                 c3 = 2;
                 c4 = 1;
                 const obj5 = { value: all(items), done: false };
@@ -377,7 +460,7 @@ obj = function _resumeRunningProjects() {
           }
         } else if (1 === c3) {
           c2 = 0;
-          c15 = false;
+          c19 = false;
         } else if (arg0 === 1) {
           c4 = 3;
           throw value;
@@ -388,7 +471,7 @@ obj = function _resumeRunningProjects() {
           return obj;
         } else {
           closure_0 = value;
-          closure_1 = closure_129_2(closure_0, 2);
+          closure_1 = closure_129_3(closure_0, 2);
           closure_2 = closure_1[0];
           ensureConnection = closure_1[1].ensureConnection;
           const found = closure_2.filter((running) => true === running.running);
@@ -410,21 +493,23 @@ obj = function _resumeRunningProjects() {
   });
   return obj(...arguments);
 };
+let closure_2 = ["party"];
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;
-let c10 = 300000;
-let c11 = null;
-let c12 = null;
-let c13 = null;
-let c14 = null;
-let c15 = false;
+let c14 = 300000;
+let c15 = null;
+let c16 = null;
+let c17 = null;
+let c18 = null;
+let c19 = false;
 const Store = get_initializedDefault.Store;
 class ConjureRichPresenceStore extends Store {
   initialize() {
-    const items = [IdleStore, SelectedChannelStore, SelectedGuildStore, ConjureProjectStore, ConjurePagesStore];
+    this.waitFor(AuthenticationStore, ConjureChatStore, ConjurePagesStore, ConjureProjectStore, IdleStore, SelectedChannelStore, SelectedGuildStore);
+    const items = [IdleStore, SelectedChannelStore, SelectedGuildStore, ConjureProjectStore, ConjurePagesStore, ConjureChatStore];
     this.syncWith(items, () => updateActivity({ withGracePeriod: true }));
   }
   getActivity() {
-    return c12;
+    return c16;
   }
 }
 const prototype = ConjureRichPresenceStore.prototype;
@@ -441,21 +526,21 @@ obj = {
     return false;
   },
   LOGOUT() {
-    c15 = false;
-    if (null != c13) {
+    c19 = false;
+    if (null != c17) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(c13);
-      c13 = null;
+      clearTimeout(c17);
+      c17 = null;
     }
-    if (null != c14) {
+    if (null != c18) {
       const _clearTimeout2 = clearTimeout;
-      clearTimeout(c14);
-      c14 = null;
+      clearTimeout(c18);
+      c18 = null;
     }
-    c11 = null;
-    let flag = null != c12;
+    c15 = null;
+    let flag = null != c16;
     if (flag) {
-      c12 = null;
+      c16 = null;
       flag = true;
     }
     return flag;

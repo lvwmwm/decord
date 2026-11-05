@@ -1,20 +1,20 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13880
+// Function ID: 13881
 // Name: CheckpointIntroScreen
-// Dependencies: [17, 13657, 21, 5141, 575, 504, 13864, 13869, 13870, 13866, 1113, 3219, 2]
+// Dependencies: [17, 13668, 21, 5143, 575, 504, 13876, 13881, 13882, 13878, 1113, 3219, 2]
 // Exports: default
 
-// Module 13868 (CheckpointIntroScreen)
+// Module 13880 (CheckpointIntroScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3219 from "module_3219" /* 3219 */;
-import CheckpointStore2 from "CheckpointStore" /* 13657 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 13864 */;
-import CheckpointTextDefault from "CheckpointText" /* 13866 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13869 */;
+import CheckpointStore2 from "CheckpointStore" /* 13668 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 13876 */;
+import CheckpointTextDefault from "CheckpointText" /* 13878 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13881 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStore = CheckpointStore2;
@@ -53,7 +53,7 @@ export default function CheckpointIntroScreen() {
   let tmp5Result = !stateFromStores;
   if (tmp5Result) {
     const obj4 = { style: tmp.globe };
-    tmp5Result = tmp5(tmp6(13870), obj4);
+    tmp5Result = tmp5(tmp6(13882), obj4);
   }
   items1[1] = tmp5Result;
   items2 = [metroImportDefault(View, obj3), ];

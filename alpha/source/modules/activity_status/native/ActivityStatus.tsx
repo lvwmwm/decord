@@ -1,18 +1,18 @@
-// Module ID: 10923
-// Function ID: 10924
+// Module ID: 10929
+// Function ID: 10930
 // Name: ActivityStatus
-// Dependencies: [19, 17, 5895, 5083, 1385, 10924, 21, 5141, 504, 10925, 10926, 5896, 10927, 10928, 10933, 10934, 10942, 10944, 10932, 2]
+// Dependencies: [19, 17, 5898, 5085, 1385, 10930, 21, 5143, 504, 10931, 10932, 5899, 10933, 10934, 10939, 10940, 10948, 10950, 10938, 2]
 // Exports: default
 
-// Module 10923 (ActivityStatus)
+// Module 10929 (ActivityStatus)
 import react_native from "react-native" /* 17 */;
-import ActivityStatusConstants from "ActivityStatusConstants" /* 10924 */;
+import ActivityStatusConstants from "ActivityStatusConstants" /* 10930 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5895 */;
-import RelationshipStore from "RelationshipStore" /* 5083 */;
+import PresenceStore from "PresenceStore" /* 5898 */;
+import RelationshipStore from "RelationshipStore" /* 5085 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let type;
@@ -58,8 +58,8 @@ export default function ActivityStatus(userId) {
   const items1 = [PresenceStore];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PresenceStore.getActivities(userId));
-  const tmp6 = stateFromStores1(10925)(userId);
-  const voiceChannel = stateFromStores1(10926)({ userId, guildId }).voiceChannel;
+  const tmp6 = stateFromStores1(10931)(userId);
+  const voiceChannel = stateFromStores1(10932)({ userId, guildId }).voiceChannel;
   const items2 = [stateFromStores1];
   const memo = react.useMemo(() => {
     let found;
@@ -91,8 +91,8 @@ export default function ActivityStatus(userId) {
     }
   }, items2);
   let state;
-  const useGameMentionsAsPlainText = userId(10927).useGameMentionsAsPlainText;
-  userId(10927);
+  const useGameMentionsAsPlainText = userId(10933).useGameMentionsAsPlainText;
+  userId(10933);
   const tmp2 = userId;
   if (memo != null) {
     state = memo.state;
@@ -115,9 +115,9 @@ export default function ActivityStatus(userId) {
     if (null != tmp6) {
       let found;
       const tmp19 = closure_9;
-      const tmp5Result = stateFromStores1(10928);
+      const tmp5Result = stateFromStores1(10934);
       if (stateFromStores1 != null) {
-        found = stateFromStores1.find(tmp5(10933));
+        found = stateFromStores1.find(tmp5(10939));
       }
       const obj3 = { game: found, iconStyle: items4, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
       items4 = [tmp.icon, iconStyle];
@@ -134,13 +134,13 @@ export default function ActivityStatus(userId) {
       if (null != found1) {
         const obj4 = { activity: found1, iconStyle: items5, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
         items5 = [tmp.icon, iconStyle];
-        tmp19Result = closure_9(tmp5(10934), obj4);
+        tmp19Result = closure_9(tmp5(10940), obj4);
       } else {
         tmp19Result = null;
         if (null != voiceChannel) {
           const obj5 = { channel: voiceChannel, iconStyle: items6, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
           items6 = [tmp.icon, iconStyle];
-          tmp19Result = closure_9(tmp5(10942), obj5);
+          tmp19Result = closure_9(tmp5(10948), obj5);
         }
       }
     }
@@ -156,13 +156,13 @@ export default function ActivityStatus(userId) {
         }
         if (tmp26) {
           const obj6 = { emoji: memo.emoji, size: emojiSize, animate, style: tmp.emoji };
-          tmp26 = closure_9(tmp5(10944), obj6);
+          tmp26 = closure_9(tmp5(10950), obj6);
         }
         const items7 = [tmp26, ];
         let tmp28 = null != memo.state;
         if (tmp28) {
           const obj7 = { variant: "body-xs/normal", style: textStyle, maxFontSizeMultiplier, children: gameMentionsAsPlainText };
-          tmp28 = closure_9(tmp5(10932), obj7);
+          tmp28 = closure_9(tmp5(10938), obj7);
         }
         const obj8 = { children: items7 };
         items7[1] = tmp28;
@@ -180,7 +180,7 @@ export default function ActivityStatus(userId) {
     }
     if (tmp32) {
       const obj10 = { variant: "body-xs/normal", style: textStyle, maxFontSizeMultiplier, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DOT_UNICODE };
-      tmp32 = closure_9(tmp5(10932), obj10);
+      tmp32 = closure_9(tmp5(10938), obj10);
     }
     items8[1] = tmp32;
     items8[2] = tmp22;

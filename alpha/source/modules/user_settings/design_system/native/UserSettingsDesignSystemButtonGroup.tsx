@@ -1,20 +1,20 @@
-// Module ID: 18024
-// Function ID: 18025
+// Module ID: 18052
+// Function ID: 18053
 // Name: UserSettingsDesignSystemButtonGroup
-// Dependencies: [19, 17, 21, 5141, 6162, 5761, 6902, 5768, 8168, 7702, 2]
+// Dependencies: [19, 17, 21, 5143, 6165, 5763, 6905, 5770, 8173, 7704, 2]
 // Exports: default
 
-// Module 18024 (UserSettingsDesignSystemButtonGroup)
-import Text_Text from "Text/Text" /* 5761 */;
-import components_Button_Button from "components/Button/Button" /* 5768 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
-import ButtonGroup4 from "ButtonGroup" /* 6902 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7702 */;
-import IconButton4 from "IconButton" /* 8168 */;
+// Module 18052 (UserSettingsDesignSystemButtonGroup)
+import Text_Text from "Text/Text" /* 5763 */;
+import components_Button_Button from "components/Button/Button" /* 5770 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
+import ButtonGroup4 from "ButtonGroup" /* 6905 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7704 */;
+import IconButton4 from "IconButton" /* 8173 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c3;

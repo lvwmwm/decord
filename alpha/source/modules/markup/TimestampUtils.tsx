@@ -1,13 +1,13 @@
-// Module ID: 8741
-// Function ID: 8742
+// Module ID: 8746
+// Function ID: 8747
 // Name: TimestampUtils
-// Dependencies: [4963, 2171, 1089, 2]
+// Dependencies: [4965, 2171, 1089, 2]
 // Exports: formatTimestampMention, parseTimestamp, unparseTimestamp
 
-// Module 8741 (TimestampUtils)
+// Module 8746 (TimestampUtils)
 import DurationsDefault from "Durations" /* 1089 */;
 import _modDef2171 from "module_2171" /* 2171 */;
-import DateUtils from "DateUtils" /* 4963 */;
+import DateUtils from "DateUtils" /* 4965 */;
 import size from "module_2" /* 2 */;
 
 const TIMESTAMP_FORMATS = {

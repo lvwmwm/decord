@@ -1,132 +1,142 @@
 // Module ID: 10663
 // Function ID: 10664
-// Dependencies: [41, 42, 93, 95, 96, 98, 10659, 10510, 10519]
+// Dependencies: [10664, 10666, 10668, 10669, 10670, 10671, 10672, 10673, 10674, 10675, 10676, 10507, 10514, 10516, 10540, 10677, 10552, 10547]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 10663
-import Meridiem from "Meridiem" /* 10510 */;
-import AbstractTimeExpressionParser from "AbstractTimeExpressionParser" /* 10519 */;
-import _mod10659 from "module_10659" /* 10659 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod10540 from "module_10540" /* 10540 */;
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 10547 */;
+import _mod10552 from "module_10552" /* 10552 */;
+import _mod10664 from "module_10664" /* 10664 */;
+import _mod10666 from "module_10666" /* 10666 */;
+import _mod10668 from "module_10668" /* 10668 */;
+import _mod10669 from "module_10669" /* 10669 */;
+import _mod10670 from "module_10670" /* 10670 */;
+import _mod10671 from "module_10671" /* 10671 */;
+import _mod10672 from "module_10672" /* 10672 */;
+import _mod10673 from "module_10673" /* 10673 */;
+import _mod10674 from "module_10674" /* 10674 */;
+import _mod10675 from "module_10675" /* 10675 */;
+import _mod10676 from "module_10676" /* 10676 */;
+import _mod10677 from "module_10677" /* 10677 */;
+import { Chrono } from "module_10507" /* 10507 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+const require = globalThis.__r;
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
+function createConfiguration(flag) {
+  let items;
+  let items1;
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_10552.default(), , , , , , ];
+  new module_10552.default();
+  items[1] = new module_10540.default(true);
+  new module_10540.default(true);
+  items[2] = new module_10664.default();
+  new module_10664.default();
+  items[3] = new module_10666.default();
+  new module_10666.default();
+  items[4] = new module_10675.default();
+  new module_10675.default();
+  items[5] = new module_10669.default(flag);
+  new module_10669.default(flag);
+  items[6] = new module_10670.default();
+  new module_10670.default();
+  items1 = [new module_10672.default(), ];
+  new module_10672.default();
+  items1[1] = new module_10671.default();
+  new module_10671.default();
+  return includeCommonConfiguration(obj, flag);
 }
-class UKTimeExpressionParser {
-  constructor(arg0) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, UKTimeExpressionParser);
-    const items = [arg0];
-    const obj = _getPrototypeOf(UKTimeExpressionParser);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
-    }
-    return tmp3(self, constructResult);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration(false);
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_10673.default();
+  unshift(_default);
+  const parsers1 = tmp.parsers;
+  const unshift2 = parsers1.unshift;
+  const _default1 = new module_10674.default();
+  unshift2(_default1);
+  const parsers2 = tmp.parsers;
+  const unshift3 = parsers2.unshift;
+  const _default2 = new module_10668.default();
+  unshift3(_default2);
+  const parsers3 = tmp.parsers;
+  const unshift4 = parsers3.unshift;
+  const _default3 = new module_10676.default();
+  unshift4(_default3);
+  const parsers4 = tmp.parsers;
+  const unshift5 = parsers4.unshift;
+  const _default4 = new module_10677.default();
+  unshift5(_default4);
+  return tmp;
 }
-_inherits(UKTimeExpressionParser, AbstractTimeExpressionParser.AbstractTimeExpressionParser);
-const entry = {
-  key: "patternFlags",
-  value: function patternFlags() {
-    return _mod10659.REGEX_PARTS.flags;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "primaryPatternLeftBoundary",
-    value: function primaryPatternLeftBoundary() {
-      return "(^|\\s|T|(?:[^\\p{L}\\p{N}_]))";
-    }
-  },
-  {
-    key: "followingPhase",
-    value: function followingPhase() {
-      return "\\s*(?:\\-|\\\u2013|\\~|\\\u301C|\u0434\u043E|\u0456|\u043F\u043E|\\?)\\s*";
-    }
-  },
-  {
-    key: "primaryPrefix",
-    value: function primaryPrefix() {
-      return "(?:(?:\u0432|\u0443|\u043E|\u043E\u0431|\u0437|\u0456\u0437|\u0432\u0456\u0434)\\s*)??";
-    }
-  },
-  {
-    key: "primarySuffix",
-    value: function primarySuffix() {
-      return "(?:\\s*(?:\u0440\u0430\u043D\u043A\u0443|\u0432\u0435\u0447\u043E\u0440\u0430|\u043F\u043E \u043E\u0431\u0456\u0434\u0456|\u043F\u0456\u0441\u043B\u044F \u043E\u0431\u0456\u0434\u0443))?(?!\\/)" + _mod10659.REGEX_PARTS.rightBoundary;
-    }
-  },
-  {
-    key: "extractPrimaryTimeComponents",
-    value: function extractPrimaryTimeComponents(arg0, arg1) {
-      const self = this;
-      const tmp = _get(_getPrototypeOf(UKTimeExpressionParser.prototype), "extractPrimaryTimeComponents", this);
-      let closure_1 = tmp;
-      let fn = tmp;
-      if (typeof tmp === "function") {
-        fn = (items) => closure_1.apply(self, items);
-      }
-      const items = [arg0, arg1];
-      const fnResult = fn(items);
-      if (fnResult) {
-        const first = arg1[0];
-        if (first.endsWith("\u0432\u0435\u0447\u043E\u0440\u0430")) {
-          const value = fnResult.get("hour");
-          if (value >= 6) {
-            if (value < 12) {
-              fnResult.assign("hour", fnResult.get("hour") + 12);
-              fnResult.assign("meridiem", Meridiem.Meridiem.PM);
-            }
-          }
-          if (value < 6) {
-            fnResult.assign("meridiem", Meridiem.Meridiem.AM);
-          }
-        }
-        const first1 = arg1[0];
-        if (first1.endsWith("\u043F\u043E \u043E\u0431\u0456\u0434\u0456")) {
-          fnResult.assign("meridiem", Meridiem.Meridiem.PM);
-          const value2 = fnResult.get("hour");
-          const tmp14 = value2 >= 0 && value2 <= 6;
-          if (tmp14) {
-            fnResult.assign("hour", fnResult.get("hour") + 12);
-          }
-        } else {
-          const first2 = arg1[0];
-        }
-        const first3 = arg1[0];
-        if (first3.endsWith("\u0440\u0430\u043D\u043A\u0443")) {
-          fnResult.assign("meridiem", Meridiem.Meridiem.AM);
-          if (fnResult.get("hour") < 12) {
-            fnResult.assign("hour", fnResult.get("hour"));
-          }
-        }
-      }
-      return fnResult;
-    }
-  }
-];
+const module_10664 = fn(_mod10664);
+const module_10666 = fn(_mod10666);
+const module_10668 = fn(_mod10668);
+const module_10669 = fn(_mod10669);
+const module_10670 = fn(_mod10670);
+const module_10671 = fn(_mod10671);
+const module_10672 = fn(_mod10672);
+const module_10673 = fn(_mod10673);
+const module_10674 = fn(_mod10674);
+const module_10675 = fn(_mod10675);
+const module_10676 = fn(_mod10676);
+const module_10540 = fn(_mod10540);
+const module_10677 = fn(_mod10677);
+const module_10552 = fn(_mod10552);
+const configuration = createConfiguration(false);
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_10673.default();
+unshift(_default);
+let parsers1 = configuration.parsers;
+let unshift2 = parsers1.unshift;
+let _default1 = new module_10674.default();
+unshift2(_default1);
+let parsers2 = configuration.parsers;
+let unshift3 = parsers2.unshift;
+let _default2 = new module_10668.default();
+unshift3(_default2);
+let parsers3 = configuration.parsers;
+let unshift4 = parsers3.unshift;
+let _default3 = new module_10676.default();
+unshift4(_default3);
+let parsers4 = configuration.parsers;
+let unshift5 = parsers4.unshift;
+let _default4 = new module_10677.default();
+unshift5(_default4);
+const chrono = new Chrono(configuration);
+const chrono1 = new require("module_10507").Chrono(createConfiguration(true));
+const Chrono_export = require("module_10507").Chrono;
 
-export default _createClass(UKTimeExpressionParser, items);
+export { createCasualConfiguration };
+export { createConfiguration };
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
+}
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+}
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const casual = chrono;
+export const strict = chrono1;

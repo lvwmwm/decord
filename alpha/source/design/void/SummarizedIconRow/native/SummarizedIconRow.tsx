@@ -1,16 +1,16 @@
-// Module ID: 16226
-// Function ID: 16227
+// Module ID: 16239
+// Function ID: 16240
 // Name: SummarizedIconRow
-// Dependencies: [19, 17, 21, 5141, 575, 5761, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 5763, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 16226 (SummarizedIconRow)
+// Module 16239 (SummarizedIconRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
+import Text_Text from "Text/Text" /* 5763 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

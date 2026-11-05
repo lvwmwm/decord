@@ -1,31 +1,31 @@
-// Module ID: 17597
-// Function ID: 17598
+// Module ID: 17623
+// Function ID: 17624
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5141, 575, 1393, 1113, 3997, 1500, 7462, 1499, 504, 2176, 7487, 1252, 13951, 1407, 5988, 5382, 17598, 2123, 17599, 8879, 8876, 7289, 6581, 16712, 13952, 10084, 13963, 6176, 5761, 17600, 7201, 7116, 2190, 6162, 5768, 9676, 10062, 17645, 10468, 2]
+// Dependencies: [5, 32, 19, 17, 1385, 1072, 21, 5143, 575, 1393, 1113, 3997, 1500, 7465, 1499, 504, 2176, 7490, 17624, 1252, 13964, 1407, 5991, 5384, 17625, 2123, 17626, 8884, 8881, 7292, 6584, 16725, 13965, 10092, 13976, 6179, 5763, 17627, 7204, 7119, 2190, 6165, 5770, 9682, 10070, 17672, 10474, 2]
 // Exports: default
 
-// Module 17597 (CustomTypingIndicatorEditScreen)
+// Module 17623 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import user from "user" /* 1393 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1407 */;
 import Link from "Link" /* 1500 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7462 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10084 */;
-import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13951 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7465 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10092 */;
+import CustomTypingIndicatorUtils from "CustomTypingIndicatorUtils" /* 13964 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import react_mod from "react" /* 19 */;
+import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
-let c3, c4, constants3;
+let c3, c4;
 
 let c10;
 let c9;
@@ -43,9 +43,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   let TrailingText;
   let TrailingText2;
   let _undefined;
-  let c15;
-  let closure_11;
-  let closure_5;
+  let c16;
   let fn;
   let format;
   let intl;
@@ -68,37 +66,40 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   let string2Result;
   let stringResult;
   let tmp29;
-  let tmp2Result2;
+  let tmp2Result4;
   let tmp38Result;
   let tmp7Result4;
   let tmp7Result5;
   mode = mode.mode;
   let analyticsLocations;
+  let first;
   let first1;
-  react = undefined;
-  let first3;
-  let ref;
-  c15 = undefined;
-  let tmp = ref();
+  let onChange;
+  closure_14 = undefined;
+  c16 = undefined;
+  let tmp = closure_14();
+  let tmp2 = mode;
   let tmp3 = analyticsLocations;
   let obj = mode(analyticsLocations[14]);
   const nativeStackNavigation = obj.useNativeStackNavigation();
   let obj2 = mode(analyticsLocations[15]);
-  const items = [first3];
-  const stateFromStores = obj2.useStateFromStores(items, () => first3.getCurrentUser());
+  const items = [onChange];
+  const stateFromStores = obj2.useStateFromStores(items, () => onChange.getCurrentUser());
   let obj3 = nativeStackNavigation(analyticsLocations[16]);
   let result = obj3.canUsePremiumProfileCustomization(stateFromStores);
   const tmp9 = nativeStackNavigation(analyticsLocations[13]);
   analyticsLocations = tmp9(nativeStackNavigation(analyticsLocations[17]).CUSTOM_TYPING_INDICATOR_EDITOR).analyticsLocations;
+  const tmp2Result = tmp2(tmp3[18]);
+  const enabled = tmp2Result.useCustomTypingIndicatorNewPresetsConfig("CustomTypingIndicatorEditScreen").enabled;
   const items1 = [analyticsLocations];
-  const effect = react.useEffect(() => {
+  const effect = first1.useEffect(() => {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { location_stack: analyticsLocations };
-    obj.track(onChange2.TYPING_INDICATOR_EDIT_SCREEN_OPENED, obj2);
+    obj.track(first3.TYPING_INDICATOR_EDIT_SCREEN_OPENED, obj2);
   }, items1);
-  const tmp2Result = mode(tmp3[19]);
-  const first = first1(react.useState(tmp2Result.useCurrentCustomTypingIndicatorConfig(tmp5)), 1)[0];
-  const tmp13 = first1(react.useState(() => {
+  const tmp2Result3 = tmp2(tmp3[20]);
+  first = first(first1.useState(tmp2Result3.useCurrentCustomTypingIndicatorConfig(tmp5)), 1)[0];
+  const tmp13 = first(first1.useState(() => {
     let emojis;
     const obj = CustomTypingIndicatorTypes;
     const tmp3 = first;
@@ -112,26 +113,26 @@ function CustomTypingIndicatorEditScreenContent(mode) {
     return emojis;
   }), 2);
   first1 = tmp13[0];
-  react = tmp13[1];
-  const tmp15 = first1(react.useState(first.typingSuggestion), 2);
+  let closure_6 = tmp13[1];
+  const tmp15 = first(first1.useState(first.typingSuggestion), 2);
   const first2 = tmp15[0];
-  const onChange = tmp15[1];
-  const tmp17 = first1(react.useState(first.animation), 2);
-  first3 = tmp17[0];
+  onChange = tmp15[1];
+  const tmp17 = first(first1.useState(first.animation), 2);
+  const first3 = tmp17[0];
   const onChange2 = tmp17[1];
   const items2 = [first1];
-  const memo = react.useMemo(() => first1.filter((item) => null != item), items2);
-  let tmp19 = memo.length === tmp2(tmp3[20]).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT;
-  constants3 = tmp19;
+  const memo = first1.useMemo(() => first1.filter((item) => null != item), items2);
+  let tmp19 = memo.length === tmp2(tmp3[21]).CUSTOM_TYPING_INDICATOR_EMOJI_COUNT;
+  let closure_12 = tmp19;
   const items3 = [tmp19, memo, first2, first3];
-  const memo1 = react.useMemo(() => ({ emojis: closure_11 ? memo : [], typingSuggestion: first2, animation: first3 }), items3);
-  const tmp21 = nativeStackNavigation(tmp3[21])(memo1, first);
-  let closure_13 = tmp22;
-  const items4 = [first2];
-  const callback = react.useCallback((arg0, arg1) => {
+  const memo1 = first1.useMemo(() => ({ emojis: closure_12 ? memo : [], typingSuggestion: first2, animation: first3 }), items3);
+  const tmp21 = nativeStackNavigation(tmp3[22])(memo1, first);
+  closure_14 = tmp22;
+  const items4 = [first2, enabled];
+  const callback = first1.useCallback((arg0, arg1) => {
     let closure_0 = arg0;
     let closure_1 = arg1;
-    let tmp = closure_5((arr) => arr.map((item, index) => {
+    let tmp = closure_6((arr) => arr.map((item, index) => {
       let tmp;
       if (index === closure_1_0) {
         tmp = closure_1_1;
@@ -142,48 +143,52 @@ function CustomTypingIndicatorEditScreenContent(mode) {
     }));
   }, []);
   const items5 = [memo, first3];
-  const callback1 = react.useCallback(() => {
-    const obj = ActionSheetActionCreatorsDefault;
-    const obj2 = { initialValue: first2, onChange };
-    obj.openLazy(asyncRequire(17598, dependencyMap.paths), "CustomTypingIndicatorTypingSuggestionPickerSheet", obj2);
+  const callback1 = first1.useCallback(() => {
+    let obj2;
+    const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+    const obj = { initialValue: first2, presets: obj2.getCustomTypingIndicatorSuggestionPresets(enabled), onChange };
+    ActionSheetActionCreatorsDefault;
+    const tmp2 = asyncRequire(17625, dependencyMap.paths);
+    obj2 = CustomTypingIndicatorUtils;
+    openLazy(tmp2, "CustomTypingIndicatorTypingSuggestionPickerSheet", obj);
   }, items4);
-  const callback2 = react.useCallback(() => {
+  const callback2 = first1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(17599, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(17626, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items5);
-  ref = react.useRef(null);
-  const items6 = [analyticsLocations];
+  const ref = first1.useRef(null);
+  const items6 = [analyticsLocations, enabled];
   const items7 = [analyticsLocations];
-  const callback3 = react.useCallback(() => {
+  const callback3 = first1.useCallback(() => {
     if (ref.current == null) {
       const obj = CustomTypingIndicatorUtils;
       ref.current = obj.getSurpriseMeEmojiPool();
     }
     const obj2 = CustomTypingIndicatorUtils;
-    closure_5(obj2.pickRandomCustomTypingIndicatorEmojis(ref.current));
+    closure_6(obj2.pickRandomCustomTypingIndicatorEmojis(ref.current));
     const obj3 = CustomTypingIndicatorUtils;
-    onChange(obj3.getRandomCustomTypingIndicatorSuggestion());
+    onChange(obj3.getRandomCustomTypingIndicatorSuggestion(enabled));
     const obj4 = CustomTypingIndicatorUtils;
     onChange2(obj4.getRandomCustomTypingIndicatorAnimation());
     const obj5 = AnalyticsUtilsDefault;
     const obj6 = { location_stack: analyticsLocations };
-    obj5.track(onChange2.TYPING_INDICATOR_STYLE_SURPRISE_ME, obj6);
+    obj5.track(first3.TYPING_INDICATOR_STYLE_SURPRISE_ME, obj6);
   }, items6);
-  const callback4 = react.useCallback(() => {
+  const callback4 = first1.useCallback(() => {
     const ArrayResult = Array(CustomTypingIndicatorTypes.CUSTOM_TYPING_INDICATOR_EMOJI_COUNT);
-    closure_5(ArrayResult.fill(null));
+    closure_6(ArrayResult.fill(null));
     onChange(user.TypingSuggestion.UNSPECIFIED);
     onChange2(user.TypingIndicatorAnimation.UNSPECIFIED);
     const obj = { location_stack: analyticsLocations };
     const obj2 = AnalyticsUtilsDefault;
-    obj2.track(onChange2.TYPING_INDICATOR_STYLE_REMOVED, obj);
+    obj2.track(first3.TYPING_INDICATOR_STYLE_REMOVED, obj);
   }, items7);
-  [tmp29, c15] = first1(react.useState(false), 2);
-  const tmp28 = first1(react.useState(false), 2);
-  let closure_16 = react.useRef(false);
+  [tmp29, c16] = first(first1.useState(false), 2);
+  const tmp28 = first(first1.useState(false), 2);
+  let closure_17 = first1.useRef(false);
   const items8 = [tmp22, memo1, mode, nativeStackNavigation, analyticsLocations];
-  let callback5 = react.useCallback(first(function*(arg0, value) {
+  let callback5 = first1.useCallback(enabled(function*(arg0, value) {
     let closure_0;
     let closure_2;
     let obj4;
@@ -217,20 +222,20 @@ function CustomTypingIndicatorEditScreenContent(mode) {
             v0 = 0;
             mode = undefined;
             firstFieldErrorMessage = undefined;
-            const tmp74 = closure_13;
+            const tmp74 = closure_14;
             if (tmp74) {
               if (!ref.current) {
                 let tmp35 = null;
-                const tmp31 = v0(analyticsLocations[21]);
-                if (!tmp31(memo1, mode(analyticsLocations[20]).EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG)) {
+                const tmp31 = v0(analyticsLocations[22]);
+                if (!tmp31(memo1, mode(analyticsLocations[21]).EMPTY_CUSTOM_TYPING_INDICATOR_CONFIG)) {
                   tmp35 = memo1;
                 }
                 if ("try_it_out" === mode) {
-                  const obj9 = mode(analyticsLocations[26]);
+                  const obj9 = mode(analyticsLocations[27]);
                   const result = obj9.setTryItOutCustomTypingIndicatorStyle(tmp35);
                 } else if ("profile_pending" === tmp36) {
                   const obj3 = { customTypingIndicatorStyle: tmp35 };
-                  const obj7 = mode(analyticsLocations[27]);
+                  const obj7 = mode(analyticsLocations[28]);
                   obj7.setPendingChanges(obj3);
                 } else {
                   ref.current = true;
@@ -239,7 +244,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
                   c3 = 1;
                   c4 = 1;
                   const obj6 = { value: obj4.saveProfileAndAccountChanges(obj5), done: false };
-                  obj4 = mode(analyticsLocations[28]);
+                  obj4 = mode(analyticsLocations[29]);
                   return obj6;
                 }
               }
@@ -256,8 +261,8 @@ function CustomTypingIndicatorEditScreenContent(mode) {
           return obj8;
         } else {
           mode = value;
-          closure_130_16.current = false;
-          closure_130_15(false);
+          closure_130_17.current = false;
+          closure_130_16(false);
           let ok;
           if (mode != null) {
             ok = mode.ok;
@@ -267,10 +272,10 @@ function CustomTypingIndicatorEditScreenContent(mode) {
             if (null != mode) {
               const self = this;
               const self2 = this;
-              const aPIError = new mode(analyticsLocations[29]).APIError(mode);
+              const aPIError = new mode(analyticsLocations[30]).APIError(mode);
               firstFieldErrorMessage = aPIError.getFirstFieldErrorMessage("typing_indicator_style");
             }
-            const tmp19 = mode(analyticsLocations[30]);
+            const tmp19 = mode(analyticsLocations[31]);
             mode = firstFieldErrorMessage;
             const showGenericProfileUpdateFailureToast = tmp19.showGenericProfileUpdateFailureToast;
             if (firstFieldErrorMessage == null) {
@@ -284,11 +289,11 @@ function CustomTypingIndicatorEditScreenContent(mode) {
           }
         }
         const obj12 = { location_stack: closure_130_2 };
-        const track = v0(analyticsLocations[18]).track;
+        const track = v0(analyticsLocations[19]).track;
         const TYPING_INDICATOR_STYLE_APPLIED = constants.TYPING_INDICATOR_STYLE_APPLIED;
-        const tmp51 = v0(analyticsLocations[18]);
-        const obj11 = mode(analyticsLocations[31]);
-        const merged = Object.assign(obj11.getTypingIndicatorStyleAnalytics(closure_130_12));
+        const tmp51 = v0(analyticsLocations[19]);
+        const obj11 = mode(analyticsLocations[32]);
+        const merged = Object.assign(obj11.getTypingIndicatorStyleAnalytics(closure_130_13));
         track(TYPING_INDICATOR_STYLE_APPLIED, obj12);
         if (closure_130_1.isFocused()) {
           closure_130_1.goBack();
@@ -302,13 +307,13 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const items9 = [analyticsLocations];
   let obj4 = { style: tmp.screen, children: items14 };
   const container = tmp.container;
-  const callback6 = react.useCallback(() => {
+  const callback6 = first1.useCallback(() => {
     let obj2;
     const obj = { analyticsLocation: obj2, analyticsLocations };
-    obj2 = { section: memo.SETTINGS_TYPING_INDICATOR };
+    obj2 = { section: onChange2.SETTINGS_TYPING_INDICATOR };
     openPremiumModalDefault(obj);
   }, items9);
-  const tmp34 = first2;
+  const tmp34 = closure_6;
   if (tmp21) {
     obj5 = container;
   } else {
@@ -322,76 +327,76 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   tmp38Result = null != stateFromStores;
   if (tmp38Result) {
     let obj8 = { username: tmp7Result4.getName(null, null, stateFromStores), config: memo1, justifyCenter: true };
-    const tmp7Result = nativeStackNavigation(tmp3[33]);
-    tmp7Result4 = nativeStackNavigation(tmp3[34]);
+    const tmp7Result = nativeStackNavigation(tmp3[34]);
+    tmp7Result4 = nativeStackNavigation(tmp3[35]);
     tmp38Result = tmp38(tmp7Result, obj8);
   }
   items10 = [tmp38(tmp33, obj7), , , ];
   let obj9 = { style: tmp.section, children: items11 };
   let obj10 = { accessibilityRole: "header", variant: "body-sm/semibold", color: "text-default", children: intl.string(tmp7(tmp3[11])["l8CZ7+"]) };
-  const Text = tmp2(tmp3[35]).Text;
+  const Text = tmp2(tmp3[36]).Text;
   intl = tmp2(tmp3[10]).intl;
-  items11 = [tmp38(Text, obj10), tmp38(tmp7(tmp3[36]), { emojis: first1, onChange: callback }), ];
-  const TableRowGroup = tmp2(tmp3[37]).TableRowGroup;
+  items11 = [tmp38(Text, obj10), tmp38(tmp7(tmp3[37]), { emojis: first1, onChange: callback }), ];
+  const TableRowGroup = tmp2(tmp3[38]).TableRowGroup;
   let obj11 = { label: intl2.string(tmp7(tmp3[11]).iVKTbA), arrow: true, disabled: !tmp19, trailing: tmp38(TrailingText, { text: stringResult }), onPress: callback2 };
-  const TableRow = tmp2(tmp3[38]).TableRow;
+  const TableRow = tmp2(tmp3[39]).TableRow;
   intl2 = tmp2(tmp3[10]).intl;
-  TrailingText = tmp2(tmp3[38]).TableRow.TrailingText;
-  if (mode(tmp3[9]).TypingIndicatorAnimation.PULSE === first3) {
+  TrailingText = tmp2(tmp3[39]).TableRow.TrailingText;
+  if (tmp2(tmp3[9]).TypingIndicatorAnimation.PULSE === first3) {
     const intl5 = tmp2(tmp3[10]).intl;
     stringResult = intl5.string(tmp7(tmp3[11])["gyL/ce"]);
-  } else if (mode(tmp3[9]).TypingIndicatorAnimation.RING === first3) {
+  } else if (tmp2(tmp3[9]).TypingIndicatorAnimation.RING === first3) {
     const intl4 = tmp2(tmp3[10]).intl;
     stringResult = intl4.string(tmp7(tmp3[11]).EgekTm);
-  } else if (mode(tmp3[9]).TypingIndicatorAnimation.WAVE === first3) {
+  } else if (tmp2(tmp3[9]).TypingIndicatorAnimation.WAVE === first3) {
     const intl3 = tmp2(tmp3[10]).intl;
     stringResult = intl3.string(tmp7(tmp3[11])["8t5EiI"]);
-  } else if (mode(tmp3[9]).TypingIndicatorAnimation.UNSPECIFIED === first3) {
+  } else if (tmp2(tmp3[9]).TypingIndicatorAnimation.UNSPECIFIED === first3) {
     const intl13 = tmp2(tmp3[10]).intl;
     stringResult = intl13.string(tmp2(tmp3[10]).t.PoWNfe);
   }
   let obj12 = { hasIcons: false, children: tmp38(TableRow, obj11) };
-  items11[2] = memo1(TableRowGroup, obj12);
-  items10[1] = closure_13(onChange, obj9);
+  items11[2] = closure_12(TableRowGroup, obj12);
+  items10[1] = memo1(first2, obj9);
   const obj13 = { style: tmp.section, children: items12 };
   const obj14 = { accessibilityRole: "header", variant: "body-sm/semibold", color: "text-default", children: intl6.string(nativeStackNavigation(tmp3[11]).BGCQqw) };
-  const Text2 = tmp2(tmp3[35]).Text;
+  const Text2 = tmp2(tmp3[36]).Text;
   intl6 = tmp2(tmp3[10]).intl;
   items12 = [tmp38(Text2, obj14), , ];
-  const obj15 = { hasIcons: false, children: memo1(TableRow2, obj16) };
-  const TableRowGroup2 = tmp2(tmp3[37]).TableRowGroup;
-  obj16 = { label: intl7.string(nativeStackNavigation(tmp3[11])["X+ijyw"]), arrow: true, trailing: memo1(TrailingText2, obj17), onPress: callback1 };
-  TableRow2 = tmp2(tmp3[38]).TableRow;
+  const obj15 = { hasIcons: false, children: closure_12(TableRow2, obj16) };
+  const TableRowGroup2 = tmp2(tmp3[38]).TableRowGroup;
+  obj16 = { label: intl7.string(nativeStackNavigation(tmp3[11])["X+ijyw"]), arrow: true, trailing: closure_12(TrailingText2, obj17), onPress: callback1 };
+  TableRow2 = tmp2(tmp3[39]).TableRow;
   intl7 = tmp2(tmp3[10]).intl;
-  obj17 = { text: string(tmp2Result2.getCustomTypingIndicatorSuggestionMessage(first2)) };
-  TrailingText2 = tmp2(tmp3[38]).TableRow.TrailingText;
+  obj17 = { text: string(tmp2Result4.getCustomTypingIndicatorSuggestionMessage(first2)) };
+  TrailingText2 = tmp2(tmp3[39]).TableRow.TrailingText;
   const intl8 = tmp2(tmp3[10]).intl;
   string = intl8.string;
-  tmp2Result2 = mode(tmp3[19]);
-  items12[1] = memo1(TableRowGroup2, obj15);
+  tmp2Result4 = tmp2(tmp3[20]);
+  items12[1] = closure_12(TableRowGroup2, obj15);
   const obj18 = { style: tmp.description, variant: "body-xs/normal", color: "text-muted", includeFontPadding: true, children: format(k6c2yP, obj19) };
-  const Text3 = tmp2(tmp3[35]).Text;
+  const Text3 = tmp2(tmp3[36]).Text;
   const intl9 = tmp2(tmp3[10]).intl;
   format = intl9.format;
-  obj19 = { helpCenterUrl: tmp7Result5.getArticleURL(constants3.CUSTOM_TYPING_INDICATOR) };
+  obj19 = { helpCenterUrl: tmp7Result5.getArticleURL(memo.CUSTOM_TYPING_INDICATOR) };
   k6c2yP = tmp7(tmp3[11]).k6c2yP;
-  tmp7Result5 = nativeStackNavigation(tmp3[39]);
-  items12[2] = memo1(Text3, obj18);
-  items10[2] = closure_13(onChange, obj13);
+  tmp7Result5 = nativeStackNavigation(tmp3[40]);
+  items12[2] = closure_12(Text3, obj18);
+  items10[2] = memo1(first2, obj13);
   const obj20 = { spacing: 8, children: items13 };
-  const Stack = tmp2(tmp3[40]).Stack;
-  const obj21 = { variant: "secondary", size: "lg", icon: memo1(mode(tmp3[42]).DiceIcon, {}), text: intl10.string(nativeStackNavigation(tmp3[11]).q4045h), onPress: callback3 };
-  const Button = tmp2(tmp3[41]).Button;
+  const Stack = tmp2(tmp3[41]).Stack;
+  const obj21 = { variant: "secondary", size: "lg", icon: closure_12(tmp2(tmp3[43]).DiceIcon, {}), text: intl10.string(nativeStackNavigation(tmp3[11]).q4045h), onPress: callback3 };
+  const Button = tmp2(tmp3[42]).Button;
   intl10 = tmp2(tmp3[10]).intl;
   items13 = [tmp38(Button, obj21), ];
-  const obj22 = { variant: "secondary", size: "lg", icon: memo1(mode(tmp3[43]).DenyIcon, {}), text: intl11.string(nativeStackNavigation(tmp3[11])["UnIf+S"]), onPress: callback4 };
-  const Button2 = tmp2(tmp3[41]).Button;
+  const obj22 = { variant: "secondary", size: "lg", icon: closure_12(tmp2(tmp3[44]).DenyIcon, {}), text: intl11.string(nativeStackNavigation(tmp3[11])["UnIf+S"]), onPress: callback4 };
+  const Button2 = tmp2(tmp3[42]).Button;
   intl11 = tmp2(tmp3[10]).intl;
-  items13[1] = memo1(Button2, obj22);
-  items10[3] = closure_13(Stack, obj20);
+  items13[1] = closure_12(Button2, obj22);
+  items10[3] = memo1(Stack, obj20);
   items14 = [tmp32(tmp34, obj6), ];
   const obj23 = { visible: !tmp21, disabled: tmp29, loading: tmp29, text: string2Result, onPress: callback5, renderButton: fn };
-  const tmp7Result6 = nativeStackNavigation(tmp3[44]);
+  const tmp7Result6 = nativeStackNavigation(tmp3[45]);
   const intl12 = tmp2(tmp3[10]).intl;
   const string2 = intl12.string;
   if (!result && "try_it_out" !== mode) {
@@ -408,13 +413,12 @@ function CustomTypingIndicatorEditScreenContent(mode) {
       let onPress;
       let text;
       ({ text, onPress } = arg0);
-      return memo1(nativeStackNavigation(analyticsLocations[45]), { text, onPress });
+      return closure_12(nativeStackNavigation(analyticsLocations[46]), { text, onPress });
     };
   }
-  items14[1] = memo1(tmp7Result6, obj23);
-  return closure_13(onChange, obj4);
+  items14[1] = closure_12(tmp7Result6, obj23);
+  return memo1(first2, obj4);
 }
-let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native);
 ({ AnalyticEvents: c9, AnalyticsSections: c10, HelpdeskArticles: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
@@ -439,7 +443,7 @@ export default function CustomTypingIndicatorEditScreen() {
   ({ analyticsLocations, mode } = params);
   const tmpResult = useAnalyticsLocations;
   const locationStackFromLocationContext = tmpResult.useLocationStackFromLocationContext();
-  const AnalyticsLocationProvider = tmp(7462).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(7465).AnalyticsLocationProvider;
   if (analyticsLocations == null) {
     analyticsLocations = locationStackFromLocationContext;
   }

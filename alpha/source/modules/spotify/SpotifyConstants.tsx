@@ -1,12 +1,12 @@
-// Module ID: 9052
-// Function ID: 9053
+// Module ID: 9057
+// Function ID: 9058
 // Name: SpotifyConstants
-// Dependencies: [1072, 6709, 1377, 2]
+// Dependencies: [1072, 6712, 1377, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 9052 (SpotifyConstants)
+// Module 9057 (SpotifyConstants)
 import Constants from "Constants" /* 1072 */;
-import Platforms from "Platforms" /* 6709 */;
+import Platforms from "Platforms" /* 6712 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

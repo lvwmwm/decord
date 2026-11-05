@@ -1,19 +1,19 @@
-// Module ID: 7133
-// Function ID: 7134
+// Module ID: 7136
+// Function ID: 7137
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 5141, 575, 5761, 1113, 7134, 5768, 5175, 7136, 6879, 7347, 2123, 7350, 7385, 7273, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 5763, 1113, 7137, 5770, 5177, 7139, 6882, 7350, 2123, 7353, 7388, 7276, 2]
 // Exports: default
 
-// Module 7133 (IdentityVerificationField)
+// Module 7136 (IdentityVerificationField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7134 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5177 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7137 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,8 +22,8 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const MobilePhoneIcon = tmp(7273);
-const EnvelopeIcon = tmp(7385);
+const MobilePhoneIcon = tmp(7276);
+const EnvelopeIcon = tmp(7388);
 function BaseIdentityVerificationField(icon) {
   let Button;
   let intl;
@@ -54,7 +54,7 @@ function BaseIdentityVerificationField(icon) {
   } else {
     obj5 = { style: tmp.ctaButton, children: React3(Button, obj6) };
     obj6 = { variant: "primary", size: "sm", grow: true, text: intl.string(intl4.t["13ofGu"]), onPress };
-    Button = tmp7(5768).Button;
+    Button = tmp7(5770).Button;
     intl = tmp7(1113).intl;
   }
   items[2] = React3(View, obj5);

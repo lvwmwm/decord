@@ -1,15 +1,15 @@
-// Module ID: 19342
-// Function ID: 19343
+// Module ID: 19373
+// Function ID: 19374
 // Name: LaunchPadPullTabCache
-// Dependencies: [11725, 510, 1377, 7256, 1493, 2]
+// Dependencies: [11733, 510, 1377, 7259, 1493, 2]
 // Exports: clearLaunchPadPullTabExclusionRect, getLaunchPadPullTabPositionCached, persistLaunchPadPullTabPosition, setLaunchPadPullTabPositionCached
 
-// Module 19342 (LaunchPadPullTabCache)
+// Module 19373 (LaunchPadPullTabCache)
 import Storage2 from "Storage" /* 510 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
-import react_nativeDefault from "react-native" /* 7256 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11725 */;
+import react_nativeDefault from "react-native" /* 7259 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11733 */;
 import size from "module_2" /* 2 */;
 
 let _undefined;

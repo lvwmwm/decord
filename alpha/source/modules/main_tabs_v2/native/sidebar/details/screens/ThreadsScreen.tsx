@@ -1,20 +1,20 @@
-// Module ID: 19064
-// Function ID: 19065
+// Module ID: 19095
+// Function ID: 19096
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 4990, 1072, 1112, 21, 5141, 575, 7583, 5743, 14230, 5890, 19065, 563, 1500, 2]
+// Dependencies: [19, 17, 4992, 1072, 1112, 21, 5143, 575, 7585, 5745, 14243, 5893, 19096, 563, 1500, 2]
 
-// Module 19064 (ThreadsScreen)
+// Module 19095 (ThreadsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5743 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 14230 */;
-import ThreadListDefault from "ThreadList" /* 19065 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5745 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 14243 */;
+import ThreadListDefault from "ThreadList" /* 19096 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import createStyles from "createStyles" /* 5141 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -23,7 +23,7 @@ function ThreadsScreen(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(7583);
+  let obj = channel(7585);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;

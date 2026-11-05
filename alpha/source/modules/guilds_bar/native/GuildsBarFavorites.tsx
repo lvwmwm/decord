@@ -1,21 +1,21 @@
-// Module ID: 18641
-// Function ID: 18642
+// Module ID: 18671
+// Function ID: 18672
 // Name: GuildsBarFavorites
-// Dependencies: [19, 4993, 1072, 21, 18624, 11010, 504, 18642, 18627, 18639, 18449, 1113, 18643, 10241, 575, 2]
+// Dependencies: [19, 4995, 1072, 21, 18654, 11016, 504, 18672, 18657, 18669, 18479, 1113, 18673, 10249, 575, 2]
 
-// Module 18641 (GuildsBarFavorites)
+// Module 18671 (GuildsBarFavorites)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import StarIcon2 from "StarIcon" /* 10241 */;
-import FavoritesHooks from "FavoritesHooks" /* 11010 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18624 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18627 */;
-import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 18642 */;
+import StarIcon2 from "StarIcon" /* 10249 */;
+import FavoritesHooks from "FavoritesHooks" /* 11016 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18654 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18657 */;
+import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 18672 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 4993 */;
+import FavoriteStore from "FavoriteStore" /* 4995 */;
 import size from "module_2" /* 2 */;
 
 const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;

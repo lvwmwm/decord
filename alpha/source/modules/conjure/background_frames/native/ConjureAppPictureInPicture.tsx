@@ -1,26 +1,26 @@
-// Module ID: 19397
-// Function ID: 19398
+// Module ID: 19428
+// Function ID: 19429
 // Name: ConjureAppPictureInPicture
-// Dependencies: [19, 17, 6981, 5012, 1072, 19275, 6982, 11412, 21, 5098, 5141, 575, 19396, 9483, 504, 7098, 5761, 14765, 12147, 8814, 7466, 12022, 19398, 16618, 1652, 14609, 5384, 5428, 1705, 5378, 5771, 1113, 3995, 5207, 12452, 12456, 2]
+// Dependencies: [19, 17, 6984, 5014, 1072, 19306, 6985, 11420, 21, 5100, 5143, 575, 19427, 9490, 504, 7101, 5763, 14778, 12156, 8819, 7469, 12031, 19429, 16631, 1652, 14622, 5386, 5430, 1705, 5380, 5773, 1113, 3995, 5209, 12459, 12463, 2]
 
-// Module 19397 (ConjureAppPictureInPicture)
+// Module 19428 (ConjureAppPictureInPicture)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
-import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9483 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11412 */;
-import conjureFrameSound from "conjureFrameSound" /* 14765 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19275 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19396 */;
-import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19398 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5430 */;
+import getGuildIdForEmbeddedSurfaceDefault from "getGuildIdForEmbeddedSurface" /* 9490 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11420 */;
+import conjureFrameSound from "conjureFrameSound" /* 14778 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19306 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19427 */;
+import conjureAppPictureInPictureActions2 from "conjureAppPictureInPictureActions" /* 19429 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6981 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import FramesConstants from "FramesConstants" /* 6982 */;
+import FramesStore from "FramesStore" /* 6984 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import FramesConstants from "FramesConstants" /* 6985 */;
 import Fragment from "Fragment" /* 21 */;
-import DeviceUtils_mod from "DeviceUtils" /* 5098 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import DeviceUtils_mod from "DeviceUtils" /* 5100 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40,7 +40,7 @@ let tmp;
 let tmp2;
 let unpackModuleId;
 const _mod1705 = tmp(1705);
-const GuildIconDefault = tmp2(7098);
+const GuildIconDefault = tmp2(7101);
 function StaticCard(arg0) {
   let appName;
   let closure_0;
@@ -74,9 +74,9 @@ function SoundBadge(frame) {
   if (obj.showsFrameSoundToggle(frame)) {
     let VoiceNormalIcon;
     if (frame.data.userMuted) {
-      VoiceNormalIcon = tmp2(12147).VoiceXIcon;
+      VoiceNormalIcon = tmp2(12156).VoiceXIcon;
     } else {
-      VoiceNormalIcon = tmp2(8814).VoiceNormalIcon;
+      VoiceNormalIcon = tmp2(8819).VoiceNormalIcon;
     }
     const obj2 = { style: tmp.soundBadge, pointerEvents: "none", children: authStore(VoiceNormalIcon, obj3) };
     obj3 = { size: "xs", color: nativeDefault.colors.ICON_STRONG };

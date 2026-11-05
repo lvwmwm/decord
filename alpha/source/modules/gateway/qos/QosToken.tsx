@@ -1,13 +1,13 @@
 // Module ID: 500
 // Function ID: 501
 // Name: QosToken
-// Dependencies: [501, 3, 16271, 1234, 2]
+// Dependencies: [501, 3, 16284, 1234, 2]
 // Exports: buildQosToken
 
 // Module 500 (QosToken)
 import LoggerDefault from "Logger" /* 3 */;
 import ProtoUtils from "ProtoUtils" /* 1234 */;
-import qos_token from "qos_token" /* 16271 */;
+import qos_token from "qos_token" /* 16284 */;
 import DerivedQosDataStore from "DerivedQosDataStore" /* 501 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ function buildQosTokenFromDerivedData(derivedQosData, isActive) {
   if (null != derivedQosData) {
     try {
       const tmp2Result = ProtoUtils;
-      derived = tmp2Result.b64ToProto(tmp2(16271).DerivedQosData, derivedQosData);
+      derived = tmp2Result.b64ToProto(tmp2(16284).DerivedQosData, derivedQosData);
     } catch (tmp5) {
       const _HermesInternal = HermesInternal;
       logger.warn("Failed to decode derived QOS data: " + tmp5);

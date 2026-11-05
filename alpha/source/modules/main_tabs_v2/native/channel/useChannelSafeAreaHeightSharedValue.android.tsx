@@ -1,16 +1,16 @@
-// Module ID: 11426
-// Function ID: 11427
+// Module ID: 11434
+// Function ID: 11435
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [19, 1627, 5732, 575, 11427, 11432, 11434, 5333, 11435, 1652, 11436, 5771, 11437, 1625, 2]
+// Dependencies: [19, 1627, 5734, 575, 11435, 11440, 11442, 5335, 11443, 1652, 11444, 5773, 11445, 1625, 2]
 // Exports: default, useChannelSafeAreaRestingHeight
 
-// Module 11426 (useChannelSafeAreaHeightSharedValue)
+// Module 11434 (useChannelSafeAreaHeightSharedValue)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useToken from "useToken" /* 5732 */;
-import spring_spring from "spring/spring" /* 5771 */;
-import useChannelDockHeightDefault from "useChannelDockHeight" /* 11427 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11437 */;
+import useToken from "useToken" /* 5734 */;
+import spring_spring from "spring/spring" /* 5773 */;
+import useChannelDockHeightDefault from "useChannelDockHeight" /* 11435 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11445 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -36,24 +36,24 @@ export default function useChannelSafeAreaHeightSharedValue() {
   let tmp19;
   let tmp20;
   let tmp21;
-  const tmp = sharedValue1(11432)();
-  ({ keyboardOpenOrOpening, keyboardOpenedHeight } = sharedValue1(11434)());
-  const tmp2 = sharedValue1(11434)();
+  const tmp = sharedValue1(11440)();
+  ({ keyboardOpenOrOpening, keyboardOpenedHeight } = sharedValue1(11442)());
+  const tmp2 = sharedValue1(11442)();
   let obj = require("useKeyboardType");
   const keyboardTypeSharedValue = obj.useKeyboardTypeSharedValue();
   const obj2 = require("useKeyboardType");
   const keyboardWillOpenSharedValue = obj2.useKeyboardWillOpenSharedValue();
-  const minimum = sharedValue1(11435)().minimum;
+  const minimum = sharedValue1(11443)().minimum;
   const obj3 = require("module_1652");
   const sharedValue = obj3.useSharedValue(minimum);
   let result = sharedValue.set(minimum);
   const obj5 = require("useToken");
   const token = obj5.useToken(sharedValue1(575).modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM);
-  const tmp7 = sharedValue1(11427)();
+  const tmp7 = sharedValue1(11435)();
   _require = tmp7;
   const obj6 = require("module_1652");
   sharedValue1 = obj6.useSharedValue(tmp7);
-  const tmp9 = sharedValue1(11436)();
+  const tmp9 = sharedValue1(11444)();
   dependencyMap = tmp9;
   const items = [tmp7, sharedValue1, tmp9];
   const effect = react.useEffect(() => {

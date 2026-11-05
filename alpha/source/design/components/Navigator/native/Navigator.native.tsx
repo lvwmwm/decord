@@ -1,24 +1,24 @@
-// Module ID: 7306
-// Function ID: 7307
+// Module ID: 7309
+// Function ID: 7310
 // Name: Navigator
-// Dependencies: [32, 19, 17, 21, 5141, 575, 7307, 7139, 5732, 7308, 1627, 1113, 12, 7341, 1500, 6160, 5377, 7346, 7146, 1243, 2]
+// Dependencies: [32, 19, 17, 21, 5143, 575, 7310, 7142, 5734, 7311, 1627, 1113, 12, 7344, 1500, 6163, 5379, 7349, 7149, 1243, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 7306 (Navigator)
+// Module 7309 (Navigator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import SentryInitUtils from "SentryInitUtils" /* 1243 */;
 import Link from "Link" /* 1500 */;
-import BackPressTracking from "BackPressTracking" /* 6160 */;
-import NavigatorHeader from "NavigatorHeader" /* 7139 */;
-import _mod7146 from "module_7146" /* 7146 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7307 */;
-import NavigatorScreen2 from "NavigatorScreen" /* 7341 */;
-import useNavigationTheme from "useNavigationTheme" /* 7346 */;
+import BackPressTracking from "BackPressTracking" /* 6163 */;
+import NavigatorHeader from "NavigatorHeader" /* 7142 */;
+import _mod7149 from "module_7149" /* 7149 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7310 */;
+import NavigatorScreen2 from "NavigatorScreen" /* 7344 */;
+import useNavigationTheme from "useNavigationTheme" /* 7349 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -168,13 +168,13 @@ function NavigationStack(screens) {
           return obj;
         };
       } else {
-        fn2 = tmp3(7308).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp3(7311).CardStyleInterpolators.forHorizontalIOS;
       }
       const tmp8 = disableHeaderAnimation;
       if (tmp8) {
-        fn3 = tmp3(7308).HeaderStyleInterpolators.forNoAnimation;
+        fn3 = tmp3(7311).HeaderStyleInterpolators.forNoAnimation;
       } else if (navigatorShouldCrossfade) {
-        fn3 = tmp3(7308).HeaderStyleInterpolators.forFade;
+        fn3 = tmp3(7311).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           let current;
@@ -248,11 +248,11 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  const tmp5 = navigationContainerRef(5377)();
+  const tmp5 = navigationContainerRef(5379)();
   const obj3 = useNavigationTheme;
   let navigationTheme1 = obj3.useNavigationTheme(tmp5);
   const NavigationIndependentTree = Link.NavigationIndependentTree;
-  const Provider = _mod7146.HeaderBackContext.Provider;
+  const Provider = _mod7149.HeaderBackContext.Provider;
   const NavigationContainer = Link.NavigationContainer;
   if (null != navigationTheme) {
     navigationTheme1 = navigationTheme;

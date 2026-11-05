@@ -1,18 +1,18 @@
-// Module ID: 14023
-// Function ID: 14024
+// Module ID: 14036
+// Function ID: 14037
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 13028, 21, 5141, 13027, 13024, 1113, 14016, 14024, 5732, 575, 5207, 2]
+// Dependencies: [19, 17, 13035, 21, 5143, 13034, 13031, 1113, 14029, 14037, 5734, 575, 5209, 2]
 
-// Module 14023 (ChatInputActionButtonGiftOrThread)
+// Module 14036 (ChatInputActionButtonGiftOrThread)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5732 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13024 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13027 */;
-import ChatInputConstants from "ChatInputConstants" /* 13028 */;
+import useToken from "useToken" /* 5734 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13031 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13034 */;
+import ChatInputConstants from "ChatInputConstants" /* 13035 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, cleanup) {
@@ -33,7 +33,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
       accessible,
       accessibilityLabel: intl.string(onPress(1113).t["4WNcpu"]),
       disabled: !canStartThreads,
-      IconComponent: onPress(14016).ThreadPlusIcon,
+      IconComponent: onPress(14029).ThreadPlusIcon,
       onPress(arg0) {
           return onPress(arg0, ChatInputActionType.THREAD);
         },
@@ -44,7 +44,7 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
     tmpResult = tmp(tmp2Result, obj2);
   } else {
     const obj3 = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmpResult = tmp(tmp2(14024), obj3);
+    tmpResult = tmp(tmp2(14037), obj3);
   }
   return <tmp4 key={arg0} cleanup={arg3} state={arg2}>{tmpResult}</tmp4>;
 }

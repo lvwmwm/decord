@@ -1,17 +1,17 @@
-// Module ID: 17281
-// Function ID: 17282
+// Module ID: 17324
+// Function ID: 17325
 // Name: OrbsArcadeRewardStatusLabel
-// Dependencies: [19, 17, 21, 5141, 17271, 1113, 5761, 8808, 575, 2]
+// Dependencies: [19, 17, 21, 5143, 17295, 1113, 5763, 8813, 575, 2]
 // Exports: default
 
-// Module 17281 (OrbsArcadeRewardStatusLabel)
+// Module 17324 (OrbsArcadeRewardStatusLabel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17271 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17295 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -53,7 +53,7 @@ export default function OrbsArcadeRewardStatusLabel(status) {
   let tmp3Result = null;
   if (status === OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED) {
     const obj3 = { size: "xxs", color: nativeDefault.colors.ICON_MUTED };
-    const LockIcon = tmp4(8808).LockIcon;
+    const LockIcon = tmp4(8813).LockIcon;
     tmp3Result = tmp3(LockIcon, obj3);
   }
   items[1] = tmp3Result;

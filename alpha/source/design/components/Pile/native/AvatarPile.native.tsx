@@ -1,14 +1,14 @@
-// Module ID: 15095
-// Function ID: 15096
+// Module ID: 15108
+// Function ID: 15109
 // Name: AvatarPile
-// Dependencies: [19, 21, 15096, 13645, 13021, 9656, 13646, 2]
+// Dependencies: [19, 21, 15109, 13656, 13028, 9662, 13657, 2]
 // Exports: AvatarPile
 
-// Module 15095 (AvatarPile)
-import ClipView from "ClipView" /* 9656 */;
-import ListUtils from "ListUtils" /* 13021 */;
-import Pile2 from "Pile" /* 13645 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 15096 */;
+// Module 15108 (AvatarPile)
+import ClipView from "ClipView" /* 9662 */;
+import ListUtils from "ListUtils" /* 13028 */;
+import Pile2 from "Pile" /* 13656 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 15109 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp2;
-const PileOverflow = tmp2(13646);
+const PileOverflow = tmp2(13657);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
 const result = size.fileFinishedImporting("design/components/Pile/native/AvatarPile.native.tsx");
 

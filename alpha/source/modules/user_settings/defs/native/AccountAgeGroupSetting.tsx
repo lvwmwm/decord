@@ -1,24 +1,24 @@
-// Module ID: 16862
-// Function ID: 16863
+// Module ID: 16885
+// Function ID: 16886
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 8573, 1072, 21, 5141, 575, 10310, 16863, 16870, 4974, 7116, 11729, 1113, 16871, 16831, 16872, 2]
+// Dependencies: [17, 8578, 1072, 21, 5143, 575, 10318, 16886, 16893, 4976, 7119, 11737, 1113, 16894, 16854, 16895, 2]
 
-// Module 16862 (AccountAgeGroupSetting)
+// Module 16885 (AccountAgeGroupSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import TableRow from "TableRow" /* 7116 */;
-import SettingsConstants from "SettingsConstants" /* 8573 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10310 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16831 */;
-import AgeNoticeLazy from "AgeNoticeLazy" /* 16863 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16870 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import TableRow from "TableRow" /* 7119 */;
+import SettingsConstants from "SettingsConstants" /* 8578 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10318 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 16854 */;
+import AgeNoticeLazy from "AgeNoticeLazy" /* 16886 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16893 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16871 */;
+import createStyles from "createStyles" /* 5143 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16894 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,7 +60,7 @@ let obj3 = {
     return tmp6(tmp7, obj3);
   },
   usePreNavigationAction: createDismissibleBadgePreNavigationAction(dismissible_content.DismissibleContent.TINY_BRONCO_SETTINGS, AgeNoticeLazy.useShouldShowAgeNotice),
-  usePredicate: AgeNoticeSettingsPredicate.useIsTinyBroncoSettingsEnabled,
+  usePredicate: AgeNoticeSettingsPredicate.useIsAgeNoticeSettingsEnabled,
   screen: {
     route: UserSettingsSections.AGE_GROUP,
     getComponent() {

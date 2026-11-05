@@ -1,10 +1,10 @@
-// Module ID: 8355
-// Function ID: 8356
+// Module ID: 8360
+// Function ID: 8361
 // Name: GameEventsOnPlayerExperiment
 // Dependencies: [1449, 2]
 // Exports: isGameEventsOnPlayerEnabled
 
-// Module 8355 (GameEventsOnPlayerExperiment)
+// Module 8360 (GameEventsOnPlayerExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

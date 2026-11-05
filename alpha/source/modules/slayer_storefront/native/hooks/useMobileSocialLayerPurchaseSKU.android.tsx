@@ -1,13 +1,13 @@
-// Module ID: 10859
-// Function ID: 10860
+// Module ID: 10865
+// Function ID: 10866
 // Name: useMobileSocialLayerPurchaseSKU
-// Dependencies: [19, 1072, 10090, 10860, 2]
+// Dependencies: [19, 1072, 10098, 10866, 2]
 // Exports: default
 
-// Module 10859 (useMobileSocialLayerPurchaseSKU)
+// Module 10865 (useMobileSocialLayerPurchaseSKU)
 import Constants from "Constants" /* 1072 */;
-import GPlayActionCreators from "GPlayActionCreators" /* 10090 */;
-import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10860 */;
+import GPlayActionCreators from "GPlayActionCreators" /* 10098 */;
+import useMobilePurchaseSKUDefault from "useMobilePurchaseSKU" /* 10866 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

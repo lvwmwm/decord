@@ -1,16 +1,16 @@
-// Module ID: 11157
-// Function ID: 11158
+// Module ID: 11165
+// Function ID: 11166
 // Name: openConjureHomeScreen
-// Dependencies: [7067, 5323, 9826, 2017, 5382, 7014, 2]
+// Dependencies: [7070, 5325, 9832, 2017, 5384, 7017, 2]
 // Exports: openConjureHomeScreenWhenReady
 
-// Module 11157 (openConjureHomeScreen)
+// Module 11165 (openConjureHomeScreen)
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2017 */;
-import RootNavigationRef from "RootNavigationRef" /* 5323 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7014 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7067 */;
-import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9826 */;
+import RootNavigationRef from "RootNavigationRef" /* 5325 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7017 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7070 */;
+import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9832 */;
 import size from "module_2" /* 2 */;
 
 function openConjureHomeScreen(projectId) {
@@ -69,7 +69,7 @@ export default openConjureHomeScreen;
 export const CONJURE_HOME_LINK_WAIT_MS = 10000;
 export function openConjureHomeScreenWhenReady(projectId) {
   let closure_2;
-  const f127519 = () => {
+  const f127746 = () => {
     openConjureHomeScreen(projectId, { entryPoint: "deep_link" });
   };
   let closure_0 = projectId;
@@ -81,7 +81,7 @@ export function openConjureHomeScreenWhenReady(projectId) {
       const _clearTimeout = clearTimeout;
       clearTimeout(closure_2);
       const obj = RootNavigationRef;
-      const result = obj.runWhenRootNavigationReady(f127519);
+      const result = obj.runWhenRootNavigationReady(f127746);
     }
   }, 10000);
   let tmp = addPostConnectionCallback(() => {
@@ -94,7 +94,7 @@ export function openConjureHomeScreenWhenReady(projectId) {
       const result = obj.hasConjureGuildWithoutExposure(openConjureHomeScreen_str);
       if (result) {
         const obj2 = RootNavigationRef;
-        const result1 = obj2.runWhenRootNavigationReady(f127519);
+        const result1 = obj2.runWhenRootNavigationReady(f127746);
       }
     }
   });

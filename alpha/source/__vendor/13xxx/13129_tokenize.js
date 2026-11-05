@@ -1,44 +1,36 @@
 // Module ID: 13129
 // Function ID: 13130
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13129 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
 let items;
 let obj2;
-const Comma = tokenize.TYPE.Comma;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
 const obj = {
-  name: "SelectorList",
+  name: "Parentheses",
   structure: obj2,
-  parse() {
+  parse(call, arg1) {
     const self = this;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      list.push(self.Selector());
-      if (self.scanner.tokenType === Comma) {
-        const iter = self.scanner;
-        iter.next();
-        while (!self.scanner.eof) {
-          let arr3 = list.push(self.Selector());
-          if (self.scanner.tokenType !== Comma) {
-            break;
-          }
-        }
-      }
+    const tokenStart = this.scanner.tokenStart;
+    this.eat(LeftParenthesis);
+    const callResult = call.call(self, arg1);
+    if (!self.scanner.eof) {
+      self.eat(RightParenthesis);
     }
-    const element = { type: "SelectorList", loc: self.getLocationFromList(list), children: list };
+    const element = { type: "Parentheses", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
     return element;
   },
   generate(arg0) {
-    this.children(arg0, function() {
-      this.chunk(",");
-    });
-  },
-  walkContext: "selector"
+    this.chunk("(");
+    this.children(arg0);
+    this.chunk(")");
+  }
 };
 obj2 = { children: items };
-items = [["Selector", "Raw"]];
+items = [[]];
 
 export default obj;

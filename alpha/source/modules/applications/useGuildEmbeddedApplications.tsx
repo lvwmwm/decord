@@ -1,13 +1,13 @@
-// Module ID: 9185
-// Function ID: 9186
+// Module ID: 9192
+// Function ID: 9193
 // Name: useGuildEmbeddedApplications
-// Dependencies: [5, 19, 2167, 1072, 504, 1089, 1380, 7016, 2]
+// Dependencies: [5, 19, 2167, 1072, 504, 1089, 1380, 7019, 2]
 // Exports: useGuildEmbeddedApplications
 
-// Module 9185 (useGuildEmbeddedApplications)
+// Module 9192 (useGuildEmbeddedApplications)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7016 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7019 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;

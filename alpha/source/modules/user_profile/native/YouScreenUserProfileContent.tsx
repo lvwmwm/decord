@@ -1,49 +1,49 @@
-// Module ID: 19145
-// Function ID: 19146
+// Module ID: 19176
+// Function ID: 19177
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 4982, 6705, 7912, 8895, 7513, 4987, 16690, 21, 9827, 18712, 1377, 8969, 8955, 15156, 15157, 15160, 15190, 5732, 575, 8902, 4974, 15052, 5768, 10410, 7095, 1113, 19146, 19151, 19142, 11641, 19152, 15131, 13949, 7709, 15134, 11602, 15135, 1500, 8898, 11583, 8956, 504, 8941, 8952, 14970, 19153, 15189, 15158, 15203, 15204, 11589, 19154, 15207, 19156, 17958, 15054, 11681, 15210, 19160, 15119, 15215, 15221, 15227, 9125, 1652, 5748, 11585, 9230, 12372, 2]
+// Dependencies: [32, 19, 17, 4984, 6708, 7917, 8900, 7515, 4989, 16703, 21, 9833, 18742, 1377, 8974, 8960, 15169, 15170, 15173, 15203, 5734, 575, 8907, 4976, 15065, 5770, 10416, 7098, 1113, 19177, 19182, 19173, 11649, 19183, 15144, 13962, 7711, 15147, 11610, 15148, 1500, 8903, 11591, 8961, 504, 8946, 8957, 14983, 19184, 15202, 15171, 15216, 15217, 9141, 11597, 19185, 15220, 19187, 17986, 15067, 11689, 15223, 19191, 15132, 15228, 15234, 15240, 9131, 1652, 5750, 11593, 9237, 12379, 2]
 // Exports: default
 
-// Module 19145 (YouScreenUserProfileContent)
+// Module 19176 (YouScreenUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4982 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import Constants from "Constants" /* 7513 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7709 */;
-import Constants2 from "Constants" /* 8895 */;
-import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8955 */;
-import UserProfileAvatarDefault from "UserProfileAvatar" /* 8969 */;
-import Tracking from "Tracking" /* 9827 */;
-import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 11589 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11602 */;
-import BadgeManagementExperiment from "BadgeManagementExperiment" /* 11641 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11681 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13949 */;
-import UserProfileActivityDefault from "UserProfileActivity" /* 15054 */;
-import UserProfileNoteDefault from "UserProfileNote" /* 15119 */;
-import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 15131 */;
-import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 15134 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 15156 */;
-import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 15157 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 15160 */;
-import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 15190 */;
-import UserProfileConnections from "UserProfileConnections" /* 15210 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 15215 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 15221 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 16690 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17958 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 18712 */;
-import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 19152 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 19154 */;
-import CheckpointProfileEntrypointDefault from "CheckpointProfileEntrypoint" /* 19156 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 19160 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4984 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
+import Constants from "Constants" /* 7515 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7711 */;
+import Constants2 from "Constants" /* 8900 */;
+import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8960 */;
+import UserProfileAvatarDefault from "UserProfileAvatar" /* 8974 */;
+import Tracking from "Tracking" /* 9833 */;
+import getRandomCustomStatusPromptDefault from "getRandomCustomStatusPrompt" /* 11597 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 11610 */;
+import BadgeManagementExperiment from "BadgeManagementExperiment" /* 11649 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 11689 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13962 */;
+import UserProfileActivityDefault from "UserProfileActivity" /* 15067 */;
+import UserProfileNoteDefault from "UserProfileNote" /* 15132 */;
+import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 15144 */;
+import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 15147 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 15169 */;
+import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 15170 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 15173 */;
+import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 15203 */;
+import UserProfileConnections from "UserProfileConnections" /* 15223 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 15228 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 15234 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 16703 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17986 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 18742 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 19183 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 19185 */;
+import CheckpointProfileEntrypointDefault from "CheckpointProfileEntrypoint" /* 19187 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 19191 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6705 */;
-import UserProfileStore from "UserProfileStore" /* 7912 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6708 */;
+import UserProfileStore from "UserProfileStore" /* 7917 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -227,7 +227,7 @@ function YouScreenPrimaryInfoSection(navigateToProfileCustomization) {
   const tmp25 = View;
   if (tmp26Result) {
     const obj6 = { targetRef: entryPointRef, userId: id, variantProps: badgeDirectoryNuxCoachmarkVariant.variantProps, visible: tmp22, markAsDismissed: tmp21 };
-    tmp26Result = tmp26(tmp(15135), obj6);
+    tmp26Result = tmp26(tmp(15148), obj6);
   }
   items2[1] = tmp26Result;
   items2[2] = map1(EditSection, { navigateToProfileCustomization, isProfileLoaded, visibleContent: tmp20, markAsDismissed: tmp21 });
@@ -263,15 +263,17 @@ export default function YouScreenUserProfileContent(user) {
   let obj24;
   let obj25;
   let obj8;
+  let onLayout;
   let pageHeights;
   let pronouns;
+  let ref;
   let scrollPosition;
   let scrollViewRef;
   let secondaryColor;
   let str;
   let style;
   let theme;
-  let tmp17;
+  let tmp16;
   let tmp4Result14;
   let wishlistTabIndex;
   user = user.user;
@@ -284,15 +286,14 @@ export default function YouScreenUserProfileContent(user) {
   if (flag === undefined) {
     flag = true;
   }
-  let pageWidth;
-  let closure_21;
+  let num;
   let activeProfileTabSection;
   let setActiveProfileTabSection;
   let restoreActiveIndex;
   let isVisible;
+  let callback2;
   let callback3;
   let callback4;
-  let callback5;
   let segmentedControlState;
   let tmp = navigateToFriends;
   let tmp2 = navigateToPremium;
@@ -324,7 +325,7 @@ export default function YouScreenUserProfileContent(user) {
   let obj6 = initialTab;
   const avatarBackground = userProfileColors.avatarBackground;
   let items2 = [trackUserProfileAction];
-  const ref = initialTab.useRef(null);
+  const ref1 = initialTab.useRef(null);
   const callback = initialTab.useCallback(() => {
     trackUserProfileAction({ action: "PRESS_SET_STATUS" });
     const obj = showYouAccountActionSheet;
@@ -332,10 +333,9 @@ export default function YouScreenUserProfileContent(user) {
   }, items2);
   let obj7 = user(navigateToPremium[47]);
   const enabled = obj7.useVirtualCurrencyMobileEnabled().enabled;
-  let tmp15 = navigateToShop;
-  [obj8, tmp17] = navigateToShop(initialTab.useState(null), 2);
-  let c14 = tmp17;
-  const tmp16 = navigateToShop(initialTab.useState(null), 2);
+  let tmp15 = navigateToShop(initialTab.useState(null), 2);
+  [obj8, tmp16] = tmp15;
+  let c14 = tmp16;
   let obj9 = user(navigateToPremium[48]);
   const shouldShowExpiringTrialOfferCard = obj9.useShouldShowExpiringTrialOfferCard();
   let obj10 = user(navigateToPremium[44]);
@@ -344,12 +344,12 @@ export default function YouScreenUserProfileContent(user) {
   const obj11 = user(navigateToPremium[49]);
   const displayableBoardWidgets = obj11.useDisplayableBoardWidgets(user.id);
   const obj12 = user(navigateToPremium[50]);
-  const tmp20 = displayableBoardWidgets.length > 0 || obj12.useCanConjureCustomWidget("YouScreenUserProfileContent");
-  let closure_17 = tmp20;
+  const tmp19 = displayableBoardWidgets.length > 0 || obj12.useCanConjureCustomWidget("YouScreenUserProfileContent");
+  let closure_17 = tmp19;
   let tmp4Result = tmp4(tmp2[51]);
   const isRecentActivityMobileEnabled = tmp4Result.useIsRecentActivityMobileEnabled("YouScreenUserProfileContent");
   const tmp4Result8 = tmp4(tmp2[52]);
-  const profileTabIndices = tmp4Result8.useProfileTabIndices(tmp20, isRecentActivityMobileEnabled, true);
+  const profileTabIndices = tmp4Result8.useProfileTabIndices(tmp19, isRecentActivityMobileEnabled, true);
   ({ boardTabIndex, activityTabIndex, wishlistTabIndex } = profileTabIndices);
   let MAIN = initialTab;
   if (null != initialTab) {
@@ -360,14 +360,15 @@ export default function YouScreenUserProfileContent(user) {
       MAIN = customStatusActivity.MAIN;
     }
   }
-  const tmp15Result = tmp15(obj6.useState(0), 2);
-  pageWidth = tmp15Result[0];
-  closure_21 = tmp15Result[1];
+  const tmp23 = tmp(tmp2[53])();
+  const width = tmp23.width;
+  num = 0;
+  ({ ref, onLayout } = tmp23);
+  if (undefined !== width) {
+    num = width;
+  }
   const items4 = [trackUserProfileAction, navigation, initialTab];
-  const callback1 = obj6.useCallback((nativeEvent) => {
-    closure_21(nativeEvent.nativeEvent.layout.width);
-  }, []);
-  const callback2 = obj6.useCallback((section) => {
+  const callback1 = obj6.useCallback((section) => {
     const obj = { action: "PRESS_SECTION", section };
     trackUserProfileAction(obj);
     if (section !== initialTab) {
@@ -376,14 +377,14 @@ export default function YouScreenUserProfileContent(user) {
     }
   }, items4);
   const tmp4Result10 = tmp4(tmp2[52]);
-  const profileSectionTabs = tmp4Result10.useProfileSectionTabs({ initialUserProfileSection: MAIN, wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange: callback2 });
+  const profileSectionTabs = tmp4Result10.useProfileSectionTabs({ initialUserProfileSection: MAIN, wishlistTabIndex, boardTabIndex, activityTabIndex, onTabChange: callback1 });
   activeProfileTabSection = profileSectionTabs.activeProfileTabSection;
   setActiveProfileTabSection = profileSectionTabs.setActiveProfileTabSection;
   restoreActiveIndex = profileSectionTabs.restoreActiveIndex;
-  isVisible = tmp29;
-  const items5 = [customStatusActivity, tmp17];
+  isVisible = tmp26;
+  const items5 = [customStatusActivity, tmp16];
   ({ handleTabChange, activeProfileTabSectionIndex } = profileSectionTabs);
-  callback3 = obj6.useCallback(() => {
+  callback2 = obj6.useCallback(() => {
     let tmp2 = null;
     const tmp = c14;
     if (null == customStatusActivity) {
@@ -391,10 +392,10 @@ export default function YouScreenUserProfileContent(user) {
     }
     tmp(tmp2);
   }, items5);
-  const items6 = [callback3];
+  const items6 = [callback2];
   const effect = obj6.useEffect(() => {
     setImmediate(() => {
-      callback3();
+      callback2();
     });
   }, items6);
   let labelResult;
@@ -402,7 +403,7 @@ export default function YouScreenUserProfileContent(user) {
     labelResult = obj8.label();
   }
   const items7 = [containerBackground, containerBorderColor, tmp3, navigateToPremium, shouldShowExpiringTrialOfferCard, navigateToShop, tmp11, enabled, user, tmp6, navigateToFriends];
-  callback4 = obj6.useCallback(() => {
+  callback3 = obj6.useCallback(() => {
     let items1;
     let items2;
     const items = [closure_5.card, ];
@@ -420,7 +421,7 @@ export default function YouScreenUserProfileContent(user) {
     const tmp6 = navigateToPremium;
     if (tmp3Result) {
       const obj4 = { navigateToPremium: tmp6, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(15207), obj4);
+      tmp3Result = tmp3(tmp4(15220), obj4);
     }
     items2[1] = tmp3Result;
     items2[2] = map1(CheckpointProfileEntrypointDefault, {});
@@ -440,8 +441,8 @@ export default function YouScreenUserProfileContent(user) {
     items2[9] = map1(UserProfileNoteDefault, obj10);
     return tmp(tmp2, obj2);
   }, items7);
-  const items8 = [tmp3.profileContent, stateFromStores1, pageWidth, activeProfileTabSection === customStatusActivity.WISHLIST, user.id];
-  callback5 = obj6.useCallback(() => {
+  const items8 = [tmp3.profileContent, stateFromStores1, num, activeProfileTabSection === customStatusActivity.WISHLIST, user.id];
+  callback4 = obj6.useCallback(() => {
     let items;
     let tmp15;
     let tmp4;
@@ -458,8 +459,8 @@ export default function YouScreenUserProfileContent(user) {
       const obj2 = { wishlistId: stateFromStores1, containerWidth: tmp8, isVisible };
       tmp8 = undefined;
       const tmp7 = UserProfileWishlistGridDefault;
-      if (first > 0) {
-        tmp8 = first;
+      if (0 > 0) {
+        tmp8 = num;
       }
       tmp4Result = tmp4(tmp7, obj2);
     }
@@ -467,13 +468,13 @@ export default function YouScreenUserProfileContent(user) {
     const obj3 = { userId: user.id, wishlistId: stateFromStores1, containerWidth: tmp15 };
     tmp15 = undefined;
     const tmp14 = UserProfileWishlistSuggestionsGridDefault;
-    if (first > 0) {
-      tmp15 = first;
+    if (num > 0) {
+      tmp15 = num;
     }
     items[1] = tmp4(tmp14, obj3);
     return tmp(tmp2, obj);
   }, items8);
-  const items9 = [callback4, callback5, tmp20, isRecentActivityMobileEnabled, user, activeProfileTabSection, containerBackground, containerBorderColor];
+  const items9 = [callback3, callback4, tmp19, isRecentActivityMobileEnabled, user, activeProfileTabSection, containerBackground, containerBorderColor];
   const memo = obj6.useMemo(() => {
     let intl;
     let intl2;
@@ -481,7 +482,7 @@ export default function YouScreenUserProfileContent(user) {
     let intl4;
     let obj3;
     let obj5;
-    const obj = { id: "main", label: intl.string(intl5.t.LXw470), page: callback4() };
+    const obj = { id: "main", label: intl.string(intl5.t.LXw470), page: callback3() };
     intl = intl5.intl;
     const items = [obj];
     const tmp3 = closure_17;
@@ -501,16 +502,16 @@ export default function YouScreenUserProfileContent(user) {
       push2(obj4);
     }
     const push3 = items.push;
-    const obj6 = { id: "wishlist", label: intl4.string(intl5.t["7lZ31J"]), page: callback5() };
+    const obj6 = { id: "wishlist", label: intl4.string(intl5.t["7lZ31J"]), page: callback4() };
     intl4 = tmp(1113).intl;
     push3(obj6);
     return items;
   }, items9);
-  const tmp4Result11 = tmp4(tmp2[65]);
+  const tmp4Result11 = tmp4(tmp2[66]);
   const measuredTabItems = tmp4Result11.useMeasuredTabItems(memo);
   ({ items, pageHeights } = measuredTabItems);
-  const tmp4Result12 = tmp4(tmp2[66]);
-  const obj14 = { pageWidth, defaultIndex: activeProfileTabSectionIndex, itemSpacing: tmp(tmp2[21]).space.PX_24, items, onPageChange: handleTabChange };
+  const tmp4Result12 = tmp4(tmp2[67]);
+  const obj14 = { pageWidth: num, defaultIndex: activeProfileTabSectionIndex, itemSpacing: tmp(tmp2[21]).space.PX_24, items, onPageChange: handleTabChange };
   segmentedControlState = tmp4Result12.useSegmentedControlState(obj14);
   const items10 = [segmentedControlState, restoreActiveIndex];
   const layoutEffect = obj6.useLayoutEffect(() => {
@@ -546,18 +547,18 @@ export default function YouScreenUserProfileContent(user) {
     };
   }, items11));
   const obj15 = { style, children: enabled(LayerScope, obj25) };
-  View = tmp(tmp2[67]).View;
+  View = tmp(tmp2[68]).View;
   const obj16 = { style: items12, children: items13 };
   items12 = [tmp3.profileContentWrapper, { paddingTop: 0 }];
   const obj17 = { user, backgroundColor: avatarBackground, statusStyle: { backgroundColor: statusBackground }, animate: flag };
-  LayerScope = tmp4(tmp2[68]).LayerScope;
+  LayerScope = tmp4(tmp2[69]).LayerScope;
   items13 = [enabled(stateFromStores1, obj17), , , ];
-  const obj18 = { ref, customStatusActivity, hasCustomProfileTheme: tmp11, style: items14, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true, placeholderText: labelResult, prompt: obj8 };
+  const obj18 = { ref: ref1, customStatusActivity, hasCustomProfileTheme: tmp11, style: items14, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true, placeholderText: labelResult, prompt: obj8 };
   items14 = [, ];
   ({ customStatusBubble: arr15[0], customStatusBubbleInset: arr15[1] } = tmp3);
-  items13[1] = enabled(tmp(tmp2[69]), obj18);
+  items13[1] = enabled(tmp(tmp2[70]), obj18);
   let isLoaded;
-  const tmp43 = pageWidth;
+  const tmp40 = num;
   if (tmp6 != null) {
     isLoaded = tmp6.isLoaded;
   }
@@ -571,20 +572,20 @@ export default function YouScreenUserProfileContent(user) {
   const formatToPlainString = intl.formatToPlainString;
   const obj21 = { status: tmp4Result14.getStatusLabel(stateFromStores) };
   const prop = tmp4(tmp2[28]).t["er+FRD"];
-  tmp4Result14 = tmp4(tmp2[70]);
+  tmp4Result14 = tmp4(tmp2[71]);
   formatToPlainStringResult = formatToPlainString(prop, obj21);
   intl2 = tmp4(tmp2[28]).intl;
-  items13[2] = enabled(tmp43, obj19);
-  const obj22 = { style: { flex: 1 }, onLayout: callback1, children: items15 };
+  items13[2] = enabled(tmp40, obj19);
+  const obj22 = { style: { flex: 1 }, ref, onLayout, children: items15 };
   const obj23 = { style: tmp3.profileTablist, children: enabled(Tabs, obj24) };
   obj24 = { state: segmentedControlState, variant: str };
   str = undefined;
-  Tabs = tmp4(tmp2[71]).Tabs;
+  Tabs = tmp4(tmp2[72]).Tabs;
   if (tmp11) {
     str = "overlay";
   }
   obj25 = { zIndex: 1, children: c14(closure_5, obj16) };
-  items15 = [enabled(closure_5, obj23), enabled(tmp(tmp2[65]), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
+  items15 = [enabled(closure_5, obj23), enabled(tmp(tmp2[66]), { state: segmentedControlState, pageHeights, scrollPosition, scrollViewRef })];
   items13[3] = c14(closure_5, obj22);
   return enabled(View, obj15);
 };

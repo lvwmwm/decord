@@ -1,19 +1,19 @@
-// Module ID: 18094
-// Function ID: 18095
+// Module ID: 18122
+// Function ID: 18123
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 5141, 575, 671, 5732, 5382, 15265, 2123, 7487, 1113, 7118, 5723, 1092, 1187, 7195, 6162, 5761, 18090, 5768, 10468, 2]
+// Dependencies: [19, 21, 5143, 575, 671, 5734, 5384, 15278, 2123, 7490, 1113, 7121, 5725, 1092, 1187, 7198, 6165, 5763, 18118, 5770, 10474, 2]
 
-// Module 18094 (ShopNitroUpsellBanner)
+// Module 18122 (ShopNitroUpsellBanner)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl5 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5732 */;
-import Card_Card from "Card/Card" /* 7118 */;
-import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 18090 */;
+import useToken from "useToken" /* 5734 */;
+import Card_Card from "Card/Card" /* 7121 */;
+import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 18118 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,8 +24,8 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const LinearGradientDefault = tmp2(5723);
-const NitroUpsellButtonDefault = tmp2(10468);
+const LinearGradientDefault = tmp2(5725);
+const NitroUpsellButtonDefault = tmp2(10474);
 class ShopNitroUpsellBanner {
   constructor(arg0) {
     let XSmallIcon;
@@ -80,16 +80,16 @@ class ShopNitroUpsellBanner {
     const PressableOpacity = tmp5(1187).PressableOpacity;
     intl = tmp5(1113).intl;
     obj6 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    XSmallIcon = tmp5(7195).XSmallIcon;
+    XSmallIcon = tmp5(7198).XSmallIcon;
     items2[1] = React3(PressableOpacity, obj5);
-    const Stack = tmp5(6162).Stack;
+    const Stack = tmp5(6165).Stack;
     const obj7 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: tmp.text, children: intl2.string(intl5.t.WjOclf) };
-    const Text = tmp5(5761).Text;
+    const Text = tmp5(5763).Text;
     intl2 = tmp5(1113).intl;
     const items3 = [React3(Text, obj7), ];
     if (buttonVariant === MobileNitroUpsellInShopFeedExperiment.NitroUpsellBannerButtonVariant.LEARN_MORE) {
       const obj8 = { variant: "primary", size: "sm", text: intl4.string(intl5.t.hvVgAZ), onPress: callback };
-      const Button = tmp5(5768).Button;
+      const Button = tmp5(5770).Button;
       intl4 = tmp5(1113).intl;
       tmp11Result = tmp11(Button, obj8);
     } else {

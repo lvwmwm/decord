@@ -1,30 +1,28 @@
 // Module ID: 13278
 // Function ID: 13279
-// Dependencies: [13272, 13275]
-// Exports: addGlobalUnhandledRejectionInstrumentationHandler
+// Dependencies: [13279, 13282]
+// Exports: addGlobalErrorInstrumentationHandler
 
 // Module 13278
-import _mod13272 from "module_13272" /* 13272 */;
-import _mod13275 from "module_13275" /* 13275 */;
+import _mod13279 from "module_13279" /* 13279 */;
+import _mod13282 from "module_13282" /* 13282 */;
 
-function instrumentUnhandledRejection() {
-  onunhandledrejection = _mod13275.GLOBAL_OBJ.onunhandledrejection;
-  _mod13275.GLOBAL_OBJ.onunhandledrejection = function(arg0) {
-    const obj = _mod13272;
-    obj.triggerHandlers("unhandledrejection", arg0);
-    let applyResult = !onunhandledrejection;
-    if (onunhandledrejection) {
-      applyResult = onunhandledrejection(...arguments);
-    }
+function instrumentError() {
+  onerror = _mod13282.GLOBAL_OBJ.onerror;
+  _mod13282.GLOBAL_OBJ.onerror = function(msg, url, line, column, error) {
+    const obj = { column, error, line, msg, url };
+    const obj2 = _mod13279;
+    obj2.triggerHandlers("error", obj);
+    const applyResult = onerror && onerror(...arguments);
     return applyResult;
   };
-  _mod13275.GLOBAL_OBJ.onunhandledrejection.__SENTRY_INSTRUMENTED__ = true;
+  _mod13282.GLOBAL_OBJ.onerror.__SENTRY_INSTRUMENTED__ = true;
 }
-let onunhandledrejection = null;
+let onerror = null;
 
-export function addGlobalUnhandledRejectionInstrumentationHandler(arg0) {
-  const obj = _mod13272;
-  obj.addHandler("unhandledrejection", arg0);
-  const obj2 = _mod13272;
-  obj2.maybeInstrument("unhandledrejection", instrumentUnhandledRejection);
+export function addGlobalErrorInstrumentationHandler(arg0) {
+  const obj = _mod13279;
+  obj.addHandler("error", arg0);
+  const obj2 = _mod13279;
+  obj2.maybeInstrument("error", instrumentError);
 }

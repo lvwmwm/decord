@@ -1,16 +1,16 @@
-// Module ID: 9776
-// Function ID: 9777
+// Module ID: 9782
+// Function ID: 9783
 // Name: PromotionsStore
-// Dependencies: [1231, 9777, 1385, 9778, 9815, 504, 9816, 572, 2]
+// Dependencies: [1231, 9783, 1385, 9784, 9821, 504, 9822, 572, 2]
 
-// Module 9776 (PromotionsStore)
+// Module 9782 (PromotionsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9816 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9822 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9777 */;
+import PromotionRecord from "PromotionRecord" /* 9783 */;
 import UserStore from "UserStore" /* 1385 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9778 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9784 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

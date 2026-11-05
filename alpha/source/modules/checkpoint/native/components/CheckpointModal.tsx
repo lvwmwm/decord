@@ -1,38 +1,38 @@
-// Module ID: 13661
-// Function ID: 13662
+// Module ID: 13672
+// Function ID: 13673
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 5084, 13657, 6201, 1083, 21, 575, 5382, 13662, 2123, 5141, 13675, 1627, 1493, 13676, 504, 13679, 13680, 6570, 6226, 12147, 8814, 13681, 13682, 13683, 6569, 13685, 9531, 5384, 6879, 2121, 6208, 6222, 13600, 13659, 13655, 5845, 1113, 6246, 5207, 13686, 13860, 13862, 13871, 6231, 6232, 7195, 13905, 13906, 13919, 13687, 13921, 2]
+// Dependencies: [5, 32, 19, 17, 5086, 13668, 6204, 1083, 21, 575, 5384, 13673, 2123, 5143, 13686, 1627, 1493, 13687, 504, 13690, 13691, 6572, 6228, 12156, 8819, 13692, 13693, 13694, 6571, 13696, 9141, 5386, 6882, 2121, 6211, 6225, 13611, 13670, 13666, 5848, 1113, 6248, 5209, 13697, 13872, 13874, 13883, 6233, 6234, 7198, 13917, 13918, 13932, 13698, 13934, 2]
 // Exports: default
 
-// Module 13661 (CheckpointModal)
+// Module 13672 (CheckpointModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import Server from "Server" /* 2121 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import HapticUtils from "HapticUtils" /* 5384 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6208 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6222 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6570 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13600 */;
-import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13675 */;
-import CheckpointFlows from "CheckpointFlows" /* 13676 */;
-import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13680 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13921 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import HapticUtils from "HapticUtils" /* 5386 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6211 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6225 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6572 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13611 */;
+import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13686 */;
+import CheckpointFlows from "CheckpointFlows" /* 13687 */;
+import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13691 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13934 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MessageRecord from "MessageRecord" /* 5084 */;
-import CheckpointStore from "CheckpointStore" /* 13657 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import MessageRecord from "MessageRecord" /* 5086 */;
+import CheckpointStore from "CheckpointStore" /* 13668 */;
+import CheckpointConstants from "CheckpointConstants" /* 6204 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c1, c4, closure_1, importDefault;
+let c1, c4, closure_1, closure_4, closure_5, importDefault;
 
 let CHECKPOINT_CONTROL_SIZE;
 let CHECKPOINT_LOGO_SIZE;
@@ -56,7 +56,6 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   let c9;
   let characterStage;
   let closure_3;
-  let closure_5;
   let clydeLogoImage;
   let clydeLogoStaticImage;
   let first1;
@@ -153,7 +152,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     items = [obj3];
     const tmp2 = new MessageRecord(obj2);
     const tmp3 = ForwardModalUtils;
-    const obj6 = {
+    let obj6 = {
       message: tmp2,
       source: "checkpoint",
       customSendHandler(arg0, arg1, arg2) {
@@ -162,7 +161,6 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     };
     const openForwardModal = tmp3.openForwardModal;
     closure_1 = _asyncToGenerator(async (arg0, arg1, arg2) => {
-      let closure_4;
       closure_0 = arg0;
       let withMessage = arg1;
       let closure_2 = arg2;
@@ -170,27 +168,95 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
       let c8 = 0;
       let c6 = 0;
       const iter = (async (arg0, value, arg2) => {
-        withMessage = withMessage.withMessage;
-        await "flexDirection";
-        closure_2(true);
-        c3 = withMessage;
-        const sendCheckpointCard = closure_0(closure_2[37]).sendCheckpointCard;
-        closure_0(closure_2[37]);
-        const tmp34 = closure_0;
-        if (withMessage == null) {
-          c3 = "";
+        let tmp43;
+        if (c8 === 2) {
+          c8 = 3;
+          throw new TypeError("Generator functions may not be called on executing generators");
+        } else if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c8 = 2;
+            if (0 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                closure_5 = tmp;
+                closure_4 = tmp43;
+                withMessage = undefined;
+                closure_2 = undefined;
+                withMessage = withMessage.withMessage;
+                c7 = 1;
+                c8 = 1;
+                return { value: "flexDirection", done: true };
+              }
+            } else if (1 === c7) {
+              if (arg0 === 1) {
+                c8 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c8 = 3;
+                return { value, done: true };
+              } else {
+                closure_2(true);
+                c6 = 1;
+                c3 = withMessage;
+                const sendCheckpointCard = closure_0(closure_2[37]).sendCheckpointCard;
+                closure_0(closure_2[37]);
+                const tmp34 = closure_0;
+                if (withMessage == null) {
+                  c3 = "";
+                }
+                c7 = 3;
+                c8 = 1;
+                const obj6 = { value: sendCheckpointCard(tmp34, c3, closure_133_0), done: false };
+                return obj6;
+              }
+            } else if (2 === c7) {
+              c6 = 0;
+              closure_2(false);
+              const presentError = closure_0(closure_2[39]).presentError;
+              closure_0(closure_2[39]);
+              const intl = closure_0(closure_2[40]).intl;
+              presentError(intl.string(closure_0(closure_2[40]).t.fEptJP));
+              c8 = 3;
+              return { value: undefined, done: true };
+            } else if (arg0 === 1) {
+              c8 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c6 = 0;
+              c8 = 3;
+              return { value, done: true };
+            } else {
+              obj = closure_0(closure_2[38]);
+              const result = obj.trackCheckpoint2026CardShared(closure_133_0);
+              c6 = 0;
+              const obj2 = closure_0(closure_2[36]);
+              obj2.closeForwardModal();
+              c8 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } catch (tmp42) {
+            tmp43 = c6;
+            if (0 === c6) {
+              c8 = 3;
+              throw tmp42;
+            } else {
+              c7 = 2;
+            }
+          }
         }
-        await sendCheckpointCard(tmp34, c3, closure_133_0);
-        obj = closure_0(closure_2[38]);
-        const result = obj.trackCheckpoint2026CardShared(closure_133_0);
-        const obj2 = closure_0(closure_2[36]);
-        obj2.closeForwardModal();
-        await "HermesInternal";
-        closure_2(false);
-        const presentError = closure_0(closure_2[39]).presentError;
-        closure_0(closure_2[39]);
-        const intl = closure_0(closure_2[40]).intl;
-        presentError(intl.string(closure_0(closure_2[40]).t.fEptJP));
       })();
       iter.next();
       return iter;
@@ -375,7 +441,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
   }
   let tmp42 = result;
   if (tmp42) {
-    const tmp43 = null != first1 || null == stateFromStores2[tmp31];
+    let tmp43 = null != first1 || null == stateFromStores2[tmp31];
     tmp42 = tmp43;
   }
   let obj6 = { theme: handleForward.DARK, children: tmp45(tmp46, obj7) };
@@ -513,7 +579,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     onShare: function handleShare() {
       obj = { character: stateFromStores, stats, onForward: handleForward };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(13662, dependencyMap.paths), "CheckpointShare", obj);
+      obj2.openLazy(asyncRequire(13673, dependencyMap.paths), "CheckpointShare", obj);
     },
     color: tmp22,
     shadowColor,

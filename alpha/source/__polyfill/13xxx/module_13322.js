@@ -1,382 +1,424 @@
 // Module ID: 13322
 // Function ID: 13323
-// Dependencies: [5, 13301, 13323, 13302, 13274, 13285, 13288, 13281, 13311, 13275, 13297]
-// Exports: addEventProcessor, captureCheckIn, captureEvent, captureException, captureMessage, captureSession, close, flush, isEnabled, isInitialized, lastEventId, setContext, setExtra, setExtras, setTag, setTags, setUser, startSession, withMonitor
+// Dependencies: [41, 42, 13291, 13295, 13296, 13286, 13319, 13287, 13297, 13323, 13309, 13281, 13308, 13324, 13310, 13317]
 
 // Module 13322
-import _mod13275 from "module_13275" /* 13275 */;
-import _mod13281 from "module_13281" /* 13281 */;
-import _mod13285 from "module_13285" /* 13285 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13288 */;
-import _mod13297 from "module_13297" /* 13297 */;
-import _mod13301 from "module_13301" /* 13301 */;
-import _mod13302 from "module_13302" /* 13302 */;
+import _mod13286 from "module_13286" /* 13286 */;
+import _mod13287 from "module_13287" /* 13287 */;
+import generatePropagationContext from "generatePropagationContext" /* 13291 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13295 */;
+import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 13296 */;
+import _slicedToArray from "_slicedToArray" /* 13297 */;
+import _mod13308 from "module_13308" /* 13308 */;
+import _mod13309 from "module_13309" /* 13309 */;
+import _mod13310 from "module_13310" /* 13310 */;
+import _mod13319 from "module_13319" /* 13319 */;
 import _mod13323 from "module_13323" /* 13323 */;
-import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
+import _mod13324 from "module_13324" /* 13324 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-const require = globalThis.__r;
-let _require, c1, dependencyMap;
+let data;
 
-let obj = function _flush() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c1 === 2) {
-      c1 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c1 = 2;
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let flushResult;
-          const obj4 = require("module_13301");
-          const client = obj4.getClient();
-          const tmp10 = closure_0;
-          if (client) {
-            flushResult = client.flush(tmp10);
-          } else {
-            if (require("module_13302").DEBUG_BUILD) {
-              const logger = tmp11(tmp12[4]).logger;
-              logger.warn("Cannot flush events. No client defined.");
-            }
-            flushResult = Promise.resolve(false);
-          }
-          c1 = 3;
-          obj = { value: flushResult, done: true };
-          return obj;
-        }
-      } catch (tmp6) {
-        c1 = 3;
-        throw tmp6;
-      }
+function isFullFinishedSpan(start_timestamp) {
+  return start_timestamp.start_timestamp && start_timestamp.timestamp && start_timestamp.span_id && start_timestamp.trace_id;
+}
+class SentrySpan {
+  constructor() {
+    let obj = arg0;
+    if (arg0 === undefined) {
+      obj = {};
     }
-  });
-  return obj(...arguments);
+    const self = this;
+    _classCallCheck(this, SentrySpan);
+    let traceId = obj.traceId;
+    if (!traceId) {
+      const obj2 = generatePropagationContext;
+      traceId = obj2.generateTraceId();
+    }
+    self._traceId = traceId;
+    let spanId = obj.spanId;
+    if (!spanId) {
+      const obj3 = generatePropagationContext;
+      spanId = obj3.generateSpanId();
+    }
+    self._spanId = spanId;
+    let startTimestamp = obj.startTimestamp;
+    if (!startTimestamp) {
+      const obj4 = _browserPerformanceTimeOriginMode;
+      startTimestamp = obj4.timestampInSeconds();
+    }
+    self._startTime = startTimestamp;
+    self._attributes = {};
+    const obj5 = { [closure_2_0(closure_2_1[4]).SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN]: "manual" };
+    const setAttributes = self.setAttributes;
+    obj5[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP] = obj.op;
+    const merged = Object.assign(obj.attributes);
+    setAttributes(obj5);
+    self._name = obj.name;
+    if (obj.parentSpanId) {
+      self._parentSpanId = obj.parentSpanId;
+    }
+    if ("sampled" in obj) {
+      self._sampled = obj.sampled;
+    }
+    if (obj.endTimestamp) {
+      self._endTime = obj.endTimestamp;
+    }
+    self._events = [];
+    self._isStandaloneSpan = obj.isStandalone;
+    if (self._endTime) {
+      self._onSpanEnded();
+    }
+  }
+}
+const entry = {
+  key: "addLink",
+  value: function addLink(arg0) {
+    return this;
+  }
 };
-obj = function _close() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_0 = arg0;
-    if (c1 === 2) {
-      c1 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c1 = 2;
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          let closeResult;
-          const obj4 = require("module_13301");
-          const client = obj4.getClient();
-          const tmp10 = closure_0;
-          if (client) {
-            closeResult = client.close(tmp10);
-          } else {
-            if (require("module_13302").DEBUG_BUILD) {
-              const logger = tmp11(tmp12[4]).logger;
-              logger.warn("Cannot flush events and disable SDK. No client defined.");
-            }
-            closeResult = Promise.resolve(false);
-          }
-          c1 = 3;
-          obj = { value: closeResult, done: true };
-          return obj;
-        }
-      } catch (tmp6) {
-        c1 = 3;
-        throw tmp6;
-      }
+let items = [
+  entry,
+  {
+    key: "addLinks",
+    value: function addLinks(arg0) {
+      return this;
     }
-  });
-  return obj(...arguments);
-};
-function endSession() {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  const obj3 = _mod13301;
-  const currentScope = obj3.getCurrentScope();
-  const tmp3 = currentScope.getSession() || isolationScope.getSession();
-  if (tmp3) {
-    const tmpResult = _mod13297;
-    tmpResult.closeSession(tmp3);
-  }
-  const tmpResult4 = _mod13301;
-  const isolationScope1 = tmpResult4.getIsolationScope();
-  const tmpResult5 = _mod13301;
-  const currentScope1 = tmpResult5.getCurrentScope();
-  const tmpResult6 = _mod13301;
-  const client = tmpResult6.getClient();
-  const tmp5 = currentScope1.getSession() || isolationScope1.getSession();
-  const tmp6 = tmp5 && client;
-  if (tmp6) {
-    client.captureSession(tmp5);
-  }
-  isolationScope.setSession();
-  currentScope.setSession();
-}
-let _asyncToGenerator = _asyncToGenerator_mod;
+  },
+  {
+    key: "recordException",
+    value: function recordException(arg0, arg1) {
 
-export function addEventProcessor(arg0) {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.addEventProcessor(arg0);
-}
-export function captureCheckIn(arg0, arg1) {
-  obj = _mod13301;
-  const currentScope = obj.getCurrentScope();
-  const obj2 = _mod13301;
-  const client = obj2.getClient();
-  if (client) {
-    if (client.captureCheckIn) {
-      return client.captureCheckIn(arg0, arg1, currentScope);
-    } else if (_mod13302.DEBUG_BUILD) {
-      const logger2 = tmp(13274).logger;
-      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
     }
-  } else if (_mod13302.DEBUG_BUILD) {
-    const logger = tmp(13274).logger;
-    logger.warn("Cannot capture check-in. No client defined.");
-  }
-  const tmpResult = _mod13285;
-  return tmpResult.uuid4();
-}
-export function captureEvent(arg0, arg1) {
-  obj = _mod13301;
-  const currentScope = obj.getCurrentScope();
-  return currentScope.captureEvent(arg0, arg1);
-}
-export function captureException(arg0, arg1) {
-  obj = _mod13301;
-  const currentScope = obj.getCurrentScope();
-  const captureException = currentScope.captureException;
-  const obj2 = _mod13323;
-  return captureException(arg0, obj2.parseEventHintOrCaptureContext(arg1));
-}
-export function captureMessage(arg0, captureContext) {
-  let tmp;
-  if (typeof captureContext === "string") {
-    tmp = captureContext;
-  }
-  let tmp2;
-  if (typeof captureContext !== "string") {
-    tmp2 = { captureContext };
-    const obj2 = { captureContext };
-  }
-  obj = _mod13301;
-  const currentScope = obj.getCurrentScope();
-  return currentScope.captureMessage(arg0, tmp, tmp2);
-}
-export function captureSession() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = false;
-  }
-  if (flag) {
-    endSession();
-  } else {
-    obj = _mod13301;
-    const isolationScope = obj.getIsolationScope();
-    const obj3 = _mod13301;
-    const currentScope = obj3.getCurrentScope();
-    const obj5 = _mod13301;
-    const client = obj5.getClient();
-    const tmp3 = currentScope.getSession() || isolationScope.getSession();
-    const tmp4 = tmp3 && client;
-    if (tmp4) {
-      client.captureSession(tmp3);
+  },
+  {
+    key: "spanContext",
+    value: function spanContext() {
+      let _sampled;
+      let tmp;
+      const obj = { spanId: this._spanId, traceId: this._traceId, traceFlags: _sampled ? tmp.TRACE_FLAG_SAMPLED : tmp.TRACE_FLAG_NONE };
+      _sampled = this._sampled;
+      tmp = _mod13286;
+      return obj;
     }
-  }
-}
-export function close(arg0) {
-  return obj(...arguments);
-}
-export { endSession };
-export function flush(arg0) {
-  return obj(...arguments);
-}
-export function isEnabled() {
-  obj = _mod13301;
-  const client = obj.getClient();
-  const transport = client && false !== client.getOptions().enabled && client.getTransport();
-  return transport;
-}
-export function isInitialized() {
-  obj = _mod13301;
-  return obj.getClient();
-}
-export function lastEventId() {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  return isolationScope.lastEventId();
-}
-export function setContext(arg0, arg1) {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setContext(arg0, arg1);
-}
-export function setExtra(arg0, arg1) {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setExtra(arg0, arg1);
-}
-export function setExtras(arg0) {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setExtras(arg0);
-}
-export function setTag(arg0, arg1) {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setTag(arg0, arg1);
-}
-export function setTags(arg0) {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setTags(arg0);
-}
-export function setUser(arg0) {
-  obj = _mod13301;
-  const isolationScope = obj.getIsolationScope();
-  isolationScope.setUser(arg0);
-}
-export function startSession(arg0) {
-  let environment;
-  let release;
-  obj = _mod13301;
-  const client = obj.getClient();
-  const obj3 = _mod13301;
-  const isolationScope = obj3.getIsolationScope();
-  const obj5 = _mod13301;
-  const currentScope = obj5.getCurrentScope();
-  ({ environment, release } = client && client.getOptions() || {});
-  client && client.getOptions() || {};
-  if (undefined === environment) {
-    environment = tmp(13311).DEFAULT_ENVIRONMENT;
-  }
-  const userAgent = (_mod13275.GLOBAL_OBJ.navigator || {}).userAgent;
-  _mod13275.GLOBAL_OBJ.navigator || {};
-  const obj2 = { release, environment, user: currentScope.getUser() || isolationScope.getUser() };
-  const makeSession = _mod13297.makeSession;
-  _mod13297;
-  let tmp7 = userAgent;
-  currentScope.getUser() || isolationScope.getUser();
-  if (tmp7) {
-    tmp7 = { userAgent };
-    const obj4 = { userAgent };
-  }
-  const merged = Object.assign(tmp7);
-  const merged1 = Object.assign(arg0);
-  const session = makeSession(obj2);
-  const session1 = isolationScope.getSession();
-  const tmp12 = session1 && "ok" === session1.status;
-  if (tmp12) {
-    const tmpResult2 = _mod13297;
-    tmpResult2.updateSession(session1, { status: "exited" });
-  }
-  endSession();
-  isolationScope.setSession(session);
-  currentScope.setSession(session);
-  return session;
-}
-export function withMonitor(monitorSlug, arg1, arg2) {
-  let closure_1;
-  _require = monitorSlug;
-  dependencyMap = arg1;
-  function finishCheckIn(status) {
-    let obj2;
-    obj = { monitorSlug, status, checkInId: _asyncToGenerator, duration: obj2.timestampInSeconds() - closure_3 };
-    obj2 = _browserPerformanceTimeOriginMode;
-    const obj3 = _mod13301;
-    const currentScope = obj3.getCurrentScope();
-    const obj4 = _mod13301;
-    const client = obj4.getClient();
-    if (client) {
-      if (client.captureCheckIn) {
-        _asyncToGenerator = client.captureCheckIn(obj, undefined, currentScope);
-      } else if (_mod13302.DEBUG_BUILD) {
-        const logger2 = tmp(13274).logger;
-        logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+  },
+  {
+    key: "setAttribute",
+    value: function setAttribute(arg0, arg1) {
+      const self = this;
+      if (undefined === arg1) {
+        delete self._attributes[tmp];
+      } else {
+        self._attributes[arg0] = arg1;
       }
-    } else if (_mod13302.DEBUG_BUILD) {
-      const logger = tmp(13274).logger;
-      logger.warn("Cannot capture check-in. No client defined.");
+      return self;
     }
-    const tmpResult = _mod13285;
-    tmpResult.uuid4();
-  }
-  obj = { monitorSlug, status: "in_progress" };
-  const tmp = _require;
-  let tmp2 = dependencyMap;
-  let obj2 = require("module_13301");
-  let currentScope = obj2.getCurrentScope();
-  let obj3 = require("module_13301");
-  let client = obj3.getClient();
-  if (client) {
-    let captureCheckInResult;
-    if (client.captureCheckIn) {
-      captureCheckInResult = client.captureCheckIn(obj, arg2, currentScope);
-    } else if (tmp(13302).DEBUG_BUILD) {
-      let logger2 = tmp(13274).logger;
-      logger2.warn("Cannot capture check-in. Client does not support sending check-ins.");
+  },
+  {
+    key: "setAttributes",
+    value: function setAttributes(arg0) {
+      const self = this;
+      let closure_0 = arg0;
+      const keys = Object.keys(arg0);
+      const item = keys.forEach((item) => self.setAttribute(item, closure_0[item]));
+      return this;
     }
-    _asyncToGenerator = captureCheckInResult;
-    let tmpResult = tmp(13288);
-    let closure_3 = tmpResult.timestampInSeconds();
-    const tmpResult3 = tmp(13301);
-    return tmpResult3.withIsolationScope(() => {
-      try {
-        const tmp2 = closure_1();
-        obj = _mod13281;
-        if (obj.isThenable(tmp2)) {
-          const resolved = Promise.resolve(tmp2);
-          resolved.then(() => {
-            finishCheckIn("ok");
-          }, (arg0) => {
-            finishCheckIn("error");
-            throw arg0;
+  },
+  {
+    key: "updateStartTime",
+    value: function updateStartTime(arg0) {
+      const obj = _mod13286;
+      this._startTime = obj.spanTimeInputToSeconds(arg0);
+    }
+  },
+  {
+    key: "setStatus",
+    value: function setStatus(_status) {
+      this._status = _status;
+      return this;
+    }
+  },
+  {
+    key: "updateName",
+    value: function updateName(_name) {
+      this._name = _name;
+      const attr = this.setAttribute(SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE, "custom");
+      return this;
+    }
+  },
+  {
+    key: "end",
+    value: function end(arg0) {
+      const self = this;
+      if (!this._endTime) {
+        const obj = _mod13286;
+        self._endTime = obj.spanTimeInputToSeconds(arg0);
+        const obj2 = _mod13319;
+        obj2.logSpanEnd(self);
+        self._onSpanEnded();
+      }
+    }
+  },
+  {
+    key: "getSpanJSON",
+    value: function getSpanJSON() {
+      let _attributes;
+      let _isStandaloneSpan;
+      let obj2;
+      let obj3;
+      let obj4;
+      let spanId;
+      const self = this;
+      const tmp3 = _mod13287;
+      const obj = { data: this._attributes, description: this._name, op: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_OP], parent_span_id: this._parentSpanId, span_id: this._spanId, start_timestamp: this._startTime, status: obj2.getStatusMessage(this._status), timestamp: null, trace_id: null, origin: _attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_ORIGIN], _metrics_summary: obj3.getMetricSummaryJsonForSpan(this), profile_id: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_PROFILE_ID], exclusive_time: this._attributes[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_EXCLUSIVE_TIME], measurements: obj4.timedEventsToMeasurements(this._events), is_segment: _isStandaloneSpan, segment_id: spanId };
+      const dropUndefinedKeys = tmp3.dropUndefinedKeys;
+      ({ _endTime: obj.timestamp, _traceId: obj.trace_id, _attributes } = this);
+      obj2 = _mod13286;
+      obj3 = _slicedToArray;
+      _isStandaloneSpan = this._isStandaloneSpan;
+      obj4 = _mod13323;
+      if (_isStandaloneSpan) {
+        const tmpResult = _mod13286;
+        _isStandaloneSpan = tmpResult.getRootSpan(self) === self;
+      }
+      spanId = undefined;
+      if (self._isStandaloneSpan) {
+        const tmpResult2 = _mod13286;
+        const rootSpan = tmpResult2.getRootSpan(self);
+        spanId = rootSpan.spanContext().spanId;
+      }
+      return dropUndefinedKeys(obj);
+    }
+  },
+  {
+    key: "isRecording",
+    value: function isRecording() {
+      return !this._endTime && this._sampled;
+    }
+  },
+  {
+    key: "addEvent",
+    value: function addEvent(name, num, arg2) {
+      let obj;
+      let tmpResult2;
+      if (_mod13309.DEBUG_BUILD) {
+        const logger = tmp(13281).logger;
+        logger.log("[Tracing] Adding an event to span:", name);
+      }
+      let isArray = num && typeof num === "number";
+      if (!isArray) {
+        const _Date = Date;
+        isArray = num instanceof Date;
+      }
+      if (!isArray) {
+        const _Array = Array;
+        isArray = Array.isArray(num);
+      }
+      let tmp7 = num;
+      if (!isArray) {
+        let timestampInSecondsResult = arg2;
+        if (!timestampInSecondsResult) {
+          const tmpResult = _browserPerformanceTimeOriginMode;
+          timestampInSecondsResult = tmpResult.timestampInSeconds();
+        }
+        tmp7 = timestampInSecondsResult;
+      }
+      let isArray1 = num && typeof num === "number";
+      if (!isArray1) {
+        const _Date2 = Date;
+        isArray1 = num instanceof Date;
+      }
+      if (!isArray1) {
+        const _Array2 = Array;
+        isArray1 = Array.isArray(num);
+      }
+      if (isArray1) {
+        obj = {};
+      } else {
+        obj = num || {};
+      }
+      const obj2 = { name, time: tmpResult2.spanTimeInputToSeconds(tmp7), attributes: obj };
+      const _events = this._events;
+      tmpResult2 = _mod13286;
+      _events.push(obj2);
+      return this;
+    }
+  },
+  {
+    key: "isStandaloneSpan",
+    value: function isStandaloneSpan() {
+      return this._isStandaloneSpan;
+    }
+  },
+  {
+    key: "_onSpanEnded",
+    value: function _onSpanEnded() {
+      const self = this;
+      const obj = _mod13308;
+      const client = obj.getClient();
+      if (client) {
+        client.emit("spanEnd", self);
+      }
+      if (self._isStandaloneSpan) {
+        if (self._isStandaloneSpan) {
+          if (self._sampled) {
+            const items = [self];
+            const tmpResult = _mod13324;
+            const spanEnvelope = tmpResult.createSpanEnvelope(items, client);
+            const tmpResult5 = _mod13308;
+            const client1 = tmpResult5.getClient();
+            if (client1) {
+              if (spanEnvelope[1]) {
+                if (0 !== spanEnvelope[1].length) {
+                  client1.sendEnvelope(spanEnvelope);
+                }
+              }
+              client1.recordDroppedEvent("before_send", "span");
+            }
+          } else {
+            if (_mod13309.DEBUG_BUILD) {
+              const logger = tmp(13281).logger;
+              logger.log("[Tracing] Discarding standalone span because its trace was not chosen to be sampled.");
+            }
+            if (client) {
+              client.recordDroppedEvent("sample_rate", "span");
+            }
+          }
+        } else {
+          const result = self._convertSpanToTransaction();
+          if (result) {
+            const tmpResult6 = _mod13310;
+            let scope = tmpResult6.getCapturedScopesOnSpan(self).scope;
+            if (!scope) {
+              const tmpResult7 = _mod13308;
+              scope = tmpResult7.getCurrentScope();
+            }
+            scope.captureEvent(result);
+          }
+        }
+      } else {
+        _mod13286;
+      }
+    }
+  },
+  {
+    key: "_convertSpanToTransaction",
+    value: function _convertSpanToTransaction() {
+      let obj3;
+      let obj4;
+      let obj7;
+      let substr;
+      let tmpResult12;
+      let tmpResult14;
+      let tmpResult15;
+      const self = this;
+      let tmp = self;
+      let obj = self(13286);
+      const spanToJSONResult = obj.spanToJSON(this);
+      const tmp4 = spanToJSONResult.start_timestamp && spanToJSONResult.timestamp && spanToJSONResult.span_id && spanToJSONResult.trace_id;
+      if (tmp4) {
+        if (!self._name) {
+          if (tmp(13309).DEBUG_BUILD) {
+            const logger = tmp(13281).logger;
+            logger.warn("Transaction has no name, falling back to `<unlabeled transaction>`.");
+          }
+          self._name = "<unlabeled transaction>";
+        }
+        const tmpResult = tmp(13310);
+        const capturedScopesOnSpan = tmpResult.getCapturedScopesOnSpan(self);
+        const scope = capturedScopesOnSpan.scope;
+        let currentScope = scope;
+        const isolationScope = capturedScopesOnSpan.isolationScope;
+        if (!scope) {
+          const tmpResult9 = tmp(13308);
+          currentScope = tmpResult9.getCurrentScope();
+        }
+        let client = currentScope.getClient();
+        if (!client) {
+          const tmpResult10 = tmp(13308);
+          client = tmpResult10.getClient();
+        }
+        if (true !== self._sampled) {
+          if (tmp(13309).DEBUG_BUILD) {
+            const logger3 = tmp(13281).logger;
+            logger3.log("[Tracing] Discarding transaction because its trace was not chosen to be sampled.");
+          }
+          const tmp20 = client;
+          if (tmp20) {
+            client.recordDroppedEvent("sample_rate", "transaction");
+          }
+        } else {
+          const tmpResult11 = tmp(13286);
+          const spanDescendants = tmpResult11.getSpanDescendants(self);
+          const found = spanDescendants.filter((isStandaloneSpan) => {
+            let tmp = isStandaloneSpan !== self;
+            if (tmp) {
+              tmp = !(isStandaloneSpan instanceof c3 && isStandaloneSpan.isStandaloneSpan());
+              isStandaloneSpan instanceof c3 && isStandaloneSpan.isStandaloneSpan();
+            }
+            return tmp;
           });
-        } else {
-          finishCheckIn("ok");
+          const mapped = found.map((item) => {
+            const obj = self(dependencyMap[5]);
+            return obj.spanToJSON(item);
+          });
+          const found1 = mapped.filter(isFullFinishedSpan);
+          const tmp23 = self._attributes[tmp(undefined, 13296).SEMANTIC_ATTRIBUTE_SENTRY_SOURCE];
+          const _attributes = self._attributes;
+          delete _attributes[tmp(undefined, 13296).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME];
+          const item = found1.forEach((data) => {
+            if (data.data) {
+              data = data.data;
+              delete data[self(undefined, dependencyMap[4]).SEMANTIC_ATTRIBUTE_SENTRY_CUSTOM_SPAN_NAME];
+            }
+          });
+          const obj2 = { contexts: obj3, spans: substr, start_timestamp: null, timestamp: null, transaction: null, type: "transaction", sdkProcessingMetadata: obj4, _metrics_summary: tmpResult15.getMetricSummaryJsonForSpan(self) };
+          obj3 = { trace: tmpResult12.spanToTransactionTraceContext(self) };
+          substr = found1;
+          tmpResult12 = tmp(13286);
+          if (found1.length > 1000) {
+            const sorted = found1.sort((start_timestamp, start_timestamp2) => start_timestamp.start_timestamp - start_timestamp2.start_timestamp);
+            substr = sorted.slice(0, 1000);
+          }
+          ({ _startTime: obj15.start_timestamp, _endTime: obj15.timestamp, _name: obj15.transaction } = self);
+          obj4 = { capturedSpanScope: scope, capturedSpanIsolationScope: isolationScope };
+          const obj5 = { dynamicSamplingContext: tmpResult14.getDynamicSamplingContextFromSpan(self) };
+          const dropUndefinedKeys = tmp(13287).dropUndefinedKeys;
+          tmp(13287);
+          tmpResult14 = tmp(13317);
+          const merged = Object.assign(dropUndefinedKeys(obj5));
+          let tmp11 = tmp23;
+          tmpResult15 = tmp(13297);
+          if (tmp11) {
+            const obj6 = { transaction_info: obj7 };
+            tmp11 = obj6;
+            obj7 = { source: tmp23 };
+          }
+          const merged1 = Object.assign(tmp11);
+          const tmpResult16 = tmp(13323);
+          const result = tmpResult16.timedEventsToMeasurements(self._events);
+          let length = result;
+          if (length) {
+            const _Object = Object;
+            length = Object.keys(result).length;
+          }
+          if (length) {
+            if (tmp(13309).DEBUG_BUILD) {
+              const logger2 = tmp(13281).logger;
+              const _JSON = JSON;
+              logger2.log("[Measurements] Adding measurements to transaction event", JSON.stringify(result, undefined, 2));
+            }
+            obj2.measurements = result;
+          }
+          return obj2;
         }
-        return tmp2;
-      } catch (tmp11) {
-        finishCheckIn("error");
-        throw tmp11;
       }
-    });
-  } else if (tmp(13302).DEBUG_BUILD) {
-    let logger = tmp(13274).logger;
-    logger.warn("Cannot capture check-in. No client defined.");
+    }
   }
-  const tmpResult4 = tmp(13285);
-  captureCheckInResult = tmpResult4.uuid4();
-}
+];
+const _moduleResult = _createClass(SentrySpan, items);
+let c3 = _moduleResult;
+const SentrySpan_export = _moduleResult;
+
+export { SentrySpan_export as SentrySpan };

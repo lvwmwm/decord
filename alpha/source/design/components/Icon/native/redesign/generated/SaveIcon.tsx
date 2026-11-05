@@ -1,14 +1,14 @@
-// Module ID: 13260
-// Function ID: 13261
+// Module ID: 13267
+// Function ID: 13268
 // Name: SaveIcon
-// Dependencies: [19, 21, 575, 5850, 13261, 2]
+// Dependencies: [19, 21, 575, 5853, 13268, 2]
 // Exports: SaveIcon
 
-// Module 13260 (SaveIcon)
+// Module 13267 (SaveIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 13261 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 13268 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

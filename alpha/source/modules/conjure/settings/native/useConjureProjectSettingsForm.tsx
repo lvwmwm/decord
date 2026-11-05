@@ -1,21 +1,21 @@
-// Module ID: 12326
-// Function ID: 12327
+// Module ID: 12333
+// Function ID: 12334
 // Name: useConjureProjectSettingsForm
-// Dependencies: [5, 32, 19, 17, 5047, 1072, 21, 5141, 575, 504, 6980, 5382, 1113, 3995, 7502, 5761, 7457, 9155, 7355, 7201, 7115, 12327, 12315, 7116, 12333, 2]
+// Dependencies: [5, 32, 19, 17, 5049, 1072, 21, 5143, 575, 504, 6983, 5384, 1113, 3995, 7504, 5763, 7460, 9162, 7358, 7204, 7118, 12334, 12322, 7119, 12340, 2]
 // Exports: default
 
-// Module 12326 (useConjureProjectSettingsForm)
+// Module 12333 (useConjureProjectSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 5047 */;
+import GuildRoleStore from "GuildRoleStore" /* 5049 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -228,8 +228,10 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let TableCheckboxRow;
   let TableCheckboxRow2;
   let TableCheckboxRow3;
+  let TableCheckboxRow4;
   let _undefined;
   let c2;
+  let canChangePreviewApp;
   let canSave;
   let checkingAppInGuild;
   let closure_0;
@@ -242,13 +244,15 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let handleRequireHostApprovalChange;
   let handleRoleSelectionChange;
   let handleSmartContextChange;
+  let handleUsesPreviewAppChange;
   let hostApproval;
   let iconURL;
   let intl;
   let intl10;
-  let intl11;
   let intl12;
   let intl13;
+  let intl14;
+  let intl15;
   let intl2;
   let intl3;
   let intl4;
@@ -256,6 +260,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let intl6;
   let intl7;
   let intl8;
+  let intl9;
   let isGuildCollaboration;
   let isPublic;
   let items1;
@@ -265,12 +270,13 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let name;
   let nameChanged;
   let nameError;
-  let obj10;
-  let obj14;
+  let obj12;
   let obj16;
-  let obj41;
+  let obj18;
+  let obj45;
   let obj5;
   let obj7;
+  let obj9;
   let saveError;
   let saving;
   let selectedRoleIds;
@@ -280,6 +286,7 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   let supportsCollaboration;
   let supportsCollaboratorRoles;
   let supportsVisibility;
+  let usesPreviewApp;
   _require = arg1;
   let obj = arg2;
   if (arg2 === undefined) {
@@ -294,12 +301,12 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
   handleRoleSelectionChange = undefined;
   const tmp = closure_12();
   const tmp3 = dependencyMap;
-  const tmp4 = selectedRoleIds(12327)(projectId, arg1);
+  const tmp4 = selectedRoleIds(12334)(projectId, arg1);
   ({ liveReload, isGuildCollaboration, selectedRoleIds } = tmp4);
   ({ supportsVisibility, saving, saveError, experimentalError, handleFlagChange: c2, handleRoleSelectionChange } = tmp4);
   const ensureAppInGuild = tmp4.ensureAppInGuild;
   let tmp5 = saving;
-  ({ iconURL, description, smartContext, hostApproval, name, nameError, nameChanged, isPublic, supportsCollaboration, supportsCollaboratorRoles, checkingAppInGuild, canSave, handleIconChange, handleNameChange, handleDescriptionChange, handleLiveReloadChange, handleSmartContextChange, handleRequireHostApprovalChange, submit } = tmp4);
+  ({ iconURL, description, smartContext, hostApproval, name, nameError, nameChanged, isPublic, usesPreviewApp, canChangePreviewApp, supportsCollaboration, supportsCollaboratorRoles, checkingAppInGuild, canSave, handleIconChange, handleNameChange, handleDescriptionChange, handleUsesPreviewAppChange, handleLiveReloadChange, handleSmartContextChange, handleRequireHostApprovalChange, submit } = tmp4);
   if (!saving) {
     tmp5 = flag;
   }
@@ -396,12 +403,12 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
     intl = require("intl").intl;
     tmp9 = closure_9(Text, obj3);
   }
-  items1 = [tmp9, , , , , , ];
+  items1 = [tmp9, , , , , , , ];
   items1[1] = closure_9(require("ConjureAppIdentity").ConjureAppIdentitySection, { iconURL, onIconChange: handleIconChange, name, nameError, onNameChange: handleNameChange, description, onDescriptionChange: handleDescriptionChange, disabled: tmp5 });
   let tmp12Result = null;
   if (supportsVisibility) {
     let obj4 = { hasIcons: false, children: tmp12(TableCheckboxRow, obj5) };
-    const TableRowGroup = tmp13(7201).TableRowGroup;
+    const TableRowGroup = tmp13(7204).TableRowGroup;
     obj5 = {
       label: intl2.string(tmp2(3995).ujIxRm),
       subLabel: intl3.string(tmp2(3995).gT8zk1),
@@ -411,18 +418,18 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
           return c2(ConjureProjectTypes.ConjureProjectFlags.PUBLIC, arg0);
         }
     };
-    TableCheckboxRow = tmp13(7115).TableCheckboxRow;
+    TableCheckboxRow = tmp13(7118).TableCheckboxRow;
     intl2 = tmp13(1113).intl;
     intl3 = tmp13(1113).intl;
     tmp12Result = tmp12(TableRowGroup, obj4);
   }
   items1[2] = tmp12Result;
-  let tmp12Result6 = null;
+  let tmp12Result7 = null;
   if (supportsVisibility) {
-    tmp12Result6 = null;
+    tmp12Result7 = null;
     if (supportsCollaboration) {
       let obj6 = { hasIcons: false, children: tmp12(TableCheckboxRow2, obj7) };
-      const TableRowGroup2 = tmp13(7201).TableRowGroup;
+      const TableRowGroup2 = tmp13(7204).TableRowGroup;
       obj7 = {
         label: intl4.string(selectedRoleIds(3995).lVvR4E),
         subLabel: intl5.string(selectedRoleIds(3995).SQZGoV),
@@ -432,31 +439,42 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
               return c2(ConjureProjectTypes.ConjureProjectFlags.GUILD_COLLABORATION, arg0);
             }
       };
-      TableCheckboxRow2 = tmp13(7115).TableCheckboxRow;
+      TableCheckboxRow2 = tmp13(7118).TableCheckboxRow;
       intl4 = tmp13(1113).intl;
       intl5 = tmp13(1113).intl;
-      tmp12Result6 = tmp12(TableRowGroup2, obj6);
+      tmp12Result7 = tmp12(TableRowGroup2, obj6);
     }
   }
-  items1[3] = tmp12Result6;
-  let tmp12Result7 = null;
-  if (liveReload.available) {
-    const obj8 = { hasIcons: false, children: closure_9(TableCheckboxRow3, obj10) };
-    const TableRowGroup3 = tmp13(7201).TableRowGroup;
-    obj10 = { label: intl6.string(selectedRoleIds(3995).eEo0ye), subLabel: null, checked: null, disabled: tmp5, onPress: handleLiveReloadChange };
-    TableCheckboxRow3 = tmp13(7115).TableCheckboxRow;
-    intl6 = tmp13(1113).intl;
-    ({ description: obj9.subLabel, checked: obj9.checked } = liveReload);
-    tmp12Result7 = tmp12(TableRowGroup3, obj8);
-  }
-  items1[4] = tmp12Result7;
+  items1[3] = tmp12Result7;
   let tmp12Result8 = null;
-  if (supportsCollaboratorRoles) {
-    const TableRowGroup4 = tmp13(7201).TableRowGroup;
-    const obj11 = { label: intl7.string(selectedRoleIds(3995)["pO3+p5"]), subLabel: intl8.string(selectedRoleIds(3995)["9MdtK9"]), arrow: true, disabled: tmp5, accessibilityHint: stringResult, onPress: callback };
-    const TableRow = tmp13(7116).TableRow;
+  if (canChangePreviewApp) {
+    const obj8 = { hasIcons: false, children: closure_9(TableCheckboxRow3, obj9) };
+    const TableRowGroup3 = tmp13(7204).TableRowGroup;
+    obj9 = { label: intl6.string(selectedRoleIds(3995).DV2hcV), subLabel: intl7.string(selectedRoleIds(3995).yjWIzb), checked: usesPreviewApp, disabled: tmp5, onPress: handleUsesPreviewAppChange };
+    TableCheckboxRow3 = tmp13(7118).TableCheckboxRow;
+    intl6 = tmp13(1113).intl;
     intl7 = tmp13(1113).intl;
+    tmp12Result8 = tmp12(TableRowGroup3, obj8);
+  }
+  items1[4] = tmp12Result8;
+  let tmp12Result9 = null;
+  if (liveReload.available) {
+    const obj10 = { hasIcons: false, children: closure_9(TableCheckboxRow4, obj12) };
+    const TableRowGroup4 = tmp13(7204).TableRowGroup;
+    obj12 = { label: intl8.string(selectedRoleIds(3995).eEo0ye), subLabel: null, checked: null, disabled: tmp5, onPress: handleLiveReloadChange };
+    TableCheckboxRow4 = tmp13(7118).TableCheckboxRow;
     intl8 = tmp13(1113).intl;
+    ({ description: obj11.subLabel, checked: obj11.checked } = liveReload);
+    tmp12Result9 = tmp12(TableRowGroup4, obj10);
+  }
+  items1[5] = tmp12Result9;
+  let tmp12Result10 = null;
+  if (supportsCollaboratorRoles) {
+    const TableRowGroup5 = tmp13(7204).TableRowGroup;
+    const obj13 = { label: intl9.string(selectedRoleIds(3995)["pO3+p5"]), subLabel: intl10.string(selectedRoleIds(3995)["9MdtK9"]), arrow: true, disabled: tmp5, accessibilityHint: stringResult, onPress: callback };
+    const TableRow = tmp13(7119).TableRow;
+    intl9 = tmp13(1113).intl;
+    intl10 = tmp13(1113).intl;
     if (!tmp5) {
       tmp5 = !isGuildCollaboration;
     }
@@ -465,43 +483,43 @@ export default function useConjureProjectSettingsForm(projectId, arg1) {
     }
     stringResult = undefined;
     if (!isGuildCollaboration) {
-      const intl9 = tmp13(1113).intl;
-      stringResult = intl9.string(tmp2(3995).nZw5r9);
+      const intl11 = tmp13(1113).intl;
+      stringResult = intl11.string(tmp2(3995).nZw5r9);
     }
-    const obj12 = { hasIcons: false, children: closure_9(TableRow, obj11) };
-    tmp12Result8 = tmp12(TableRowGroup4, obj12);
+    const obj14 = { hasIcons: false, children: closure_9(TableRow, obj13) };
+    tmp12Result10 = tmp12(TableRowGroup5, obj14);
   }
-  items1[5] = tmp12Result8;
-  let tmp12Result9 = null;
+  items1[6] = tmp12Result10;
+  let tmp12Result11 = null;
   if (null != saveError) {
-    const obj13 = { accessibilityRole: "alert", children: closure_9(require("Text/Text").Text, obj14) };
-    obj14 = { variant: "body-xs/normal", color: "text-feedback-critical", children: saveError };
-    tmp12Result9 = tmp12(tmp8, obj13);
+    const obj15 = { accessibilityRole: "alert", children: closure_9(require("Text/Text").Text, obj16) };
+    obj16 = { variant: "body-xs/normal", color: "text-feedback-critical", children: saveError };
+    tmp12Result11 = tmp12(tmp8, obj15);
   }
-  items1[6] = tmp12Result9;
-  const obj15 = { fields: closure_10(View, obj2), experimentalFields: closure_10(View, obj16), canSave, saving, nameChanged, submit };
-  obj16 = { style: tmp.content, children: items3 };
-  const obj17 = { hasIcons: false, children: items2 };
-  const TableRowGroup5 = tmp13(7201).TableRowGroup;
-  const obj18 = { label: intl10.string(selectedRoleIds(3995)["4liZ45"]), subLabel: intl11.string(selectedRoleIds(3995).I5cl7p), checked: smartContext.checked, disabled: saving, onPress: handleSmartContextChange };
-  const TableCheckboxRow4 = tmp13(7115).TableCheckboxRow;
-  intl10 = tmp13(1113).intl;
-  intl11 = tmp13(1113).intl;
-  items2 = [tmp12(TableCheckboxRow4, obj18), ];
-  const obj19 = { label: intl12.string(selectedRoleIds(3995).mpjaVm), subLabel: intl13.string(selectedRoleIds(3995)["2PxChh"]), checked: hostApproval.checked, disabled: saving, onPress: handleRequireHostApprovalChange };
-  const TableCheckboxRow5 = tmp13(7115).TableCheckboxRow;
+  items1[7] = tmp12Result11;
+  const obj17 = { fields: closure_10(View, obj2), experimentalFields: closure_10(View, obj18), canSave, saving, nameChanged, submit };
+  obj18 = { style: tmp.content, children: items3 };
+  const obj19 = { hasIcons: false, children: items2 };
+  const TableRowGroup6 = tmp13(7204).TableRowGroup;
+  const obj20 = { label: intl12.string(selectedRoleIds(3995)["4liZ45"]), subLabel: intl13.string(selectedRoleIds(3995).I5cl7p), checked: smartContext.checked, disabled: saving, onPress: handleSmartContextChange };
+  const TableCheckboxRow5 = tmp13(7118).TableCheckboxRow;
   intl12 = tmp13(1113).intl;
   intl13 = tmp13(1113).intl;
-  items2[1] = closure_9(TableCheckboxRow5, obj19);
-  items3 = [tmp7(TableRowGroup5, obj17), , ];
-  const obj20 = { projectId };
-  items3[1] = closure_9(require("host_approval/ConjureHostApproval").ConjureAllowedHostsSetting, obj20);
-  let tmp12Result10 = null;
+  items2 = [tmp12(TableCheckboxRow5, obj20), ];
+  const obj21 = { label: intl14.string(selectedRoleIds(3995).mpjaVm), subLabel: intl15.string(selectedRoleIds(3995)["2PxChh"]), checked: hostApproval.checked, disabled: saving, onPress: handleRequireHostApprovalChange };
+  const TableCheckboxRow6 = tmp13(7118).TableCheckboxRow;
+  intl14 = tmp13(1113).intl;
+  intl15 = tmp13(1113).intl;
+  items2[1] = closure_9(TableCheckboxRow6, obj21);
+  items3 = [tmp7(TableRowGroup6, obj19), , ];
+  const obj22 = { projectId };
+  items3[1] = closure_9(require("host_approval/ConjureHostApproval").ConjureAllowedHostsSetting, obj22);
+  let tmp12Result12 = null;
   if (null != experimentalError) {
-    const obj21 = { accessibilityRole: "alert", children: closure_9(require("Text/Text").Text, obj41) };
-    obj41 = { variant: "body-xs/normal", color: "text-feedback-critical", children: experimentalError };
-    tmp12Result10 = tmp12(tmp8, obj21);
+    const obj23 = { accessibilityRole: "alert", children: closure_9(require("Text/Text").Text, obj45) };
+    obj45 = { variant: "body-xs/normal", color: "text-feedback-critical", children: experimentalError };
+    tmp12Result12 = tmp12(tmp8, obj23);
   }
-  items3[2] = tmp12Result10;
-  return obj15;
+  items3[2] = tmp12Result12;
+  return obj17;
 };

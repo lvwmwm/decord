@@ -1,20 +1,20 @@
-// Module ID: 17568
-// Function ID: 17569
+// Module ID: 17594
+// Function ID: 17595
 // Name: SettingsAccessibilityScreen
-// Dependencies: [19, 5142, 4967, 8573, 1072, 21, 1113, 2190, 3059, 7703, 7344, 17569, 1499, 563, 11729, 16835, 2]
+// Dependencies: [19, 5144, 4969, 8578, 1072, 21, 1113, 2190, 3059, 7705, 7347, 17595, 1499, 563, 11737, 16858, 2]
 // Exports: default
 
-// Module 17568 (SettingsAccessibilityScreen)
+// Module 17594 (SettingsAccessibilityScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl15 from "intl" /* 1113 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
 import _modDef3059 from "module_3059" /* 3059 */;
-import SettingsConstants from "SettingsConstants" /* 8573 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
-import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 17569 */;
+import SettingsConstants from "SettingsConstants" /* 8578 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
+import getSettingsOverrideReasonDefault from "getSettingsOverrideReason" /* 17595 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4967 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 4969 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,41 +1,36 @@
-// Module ID: 19846
-// Function ID: 19847
+// Module ID: 19881
+// Function ID: 19882
 // Name: InterestGuildsResource
-// Dependencies: [5, 2]
+// Dependencies: [5, 18715, 2]
 // Exports: interestGuildsKey
 
-// Module 19846 (InterestGuildsResource)
+// Module 19881 (InterestGuildsResource)
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18715 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
-let c4, c5, set;
+let c3, c4, set;
 
-function availableInterestGuilds(degraded) {
-  if (degraded.degraded) {
-    return [];
-  } else {
-    const _Set = Set;
-    const self = this;
-    const self2 = this;
-    set = new Set();
-    const guilds = degraded.guilds;
-    const found = guilds.filter((joined) => {
-      let flag = !joined.joined && !set.has(joined.id);
-      if (flag) {
-        set.add(joined.id);
-        flag = true;
-      }
-      return flag;
-    });
-    return found.slice(0, 15);
-  }
+function availableInterestGuilds(guilds) {
+  set = new Set();
+  guilds = guilds.guilds;
+  const found = guilds.filter((joined) => {
+    let flag = !joined.joined && !set.has(joined.id);
+    if (flag) {
+      set.add(joined.id);
+      flag = true;
+    }
+    return flag;
+  });
+  return found.slice(0, 15);
 }
 let _asyncToGenerator = _asyncToGenerator_mod;
+const MAX_SELECTIONS = InterestGamePickerConstants.MAX_SELECTIONS;
 const result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestGuildsResource.tsx");
 class InterestGuildsResource {
   constructor(fetchGuilds) {
     const obj = Object.create(new.target.prototype);
-    obj.snapshot = { key: "", status: "idle", guilds: [] };
+    obj.snapshot = { key: "", status: "idle", guilds: [], failed: false };
     set = new Set();
     obj.listeners = set;
     obj.disposed = false;
@@ -68,11 +63,12 @@ class InterestGuildsResource {
         const self2 = this;
         set = new Set(items);
         const fromResult = from(set);
-        const substr = fromResult.slice(0, 5);
+        const substr = fromResult.slice(0, MAX_SELECTIONS);
         const sorted = substr.sort();
         const joined = sorted.join(",");
-        const tmp7 = joined !== obj.snapshot.key || flag;
-        if (tmp7) {
+        const tmp6 = MAX_SELECTIONS;
+        const tmp8 = joined !== obj.snapshot.key || flag;
+        if (tmp8) {
           const _Array2 = Array;
           const _Set2 = Set;
           const self4 = this;
@@ -80,17 +76,17 @@ class InterestGuildsResource {
           const self3 = this;
           const set1 = new Set(items);
           const from2Result = from2(set1);
-          obj.gameIds = from2Result.slice(0, 5);
+          obj.gameIds = from2Result.slice(0, tmp6);
           obj.requestId = obj.requestId + 1;
           if ("" !== joined) {
-            const obj2 = { key: joined, status: "loading", guilds: [] };
+            const obj2 = { key: joined, status: "loading", guilds: [], failed: false };
             obj.publish(obj2);
             items = [];
             ({ load, requestId } = obj);
             HermesBuiltin.arraySpread(items, obj.gameIds, 0);
             load(requestId, joined, items);
           } else {
-            const obj3 = { key: joined, status: "idle", guilds: [] };
+            const obj3 = { key: joined, status: "idle", guilds: [], failed: false };
             obj.publish(obj3);
           }
         }
@@ -112,15 +108,14 @@ class InterestGuildsResource {
     const listeners = this.listeners;
     const item = listeners.forEach((fn) => fn());
   }
-  load(arg0, arg1, arg2) {
+  load(arg0, arg1, guilds) {
     _asyncToGenerator = arg0;
     let closure_1 = arg1;
-    let closure_2 = arg2;
     const self = this;
     return (async (arg0, value) => {
       let str;
-      if (c5 === 2) {
-        c5 = 3;
+      if (c4 === 2) {
+        c4 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp3 === 3) {
         if (arg0 === 1) {
@@ -132,65 +127,64 @@ class InterestGuildsResource {
           return { value: "HermesInternal", done: null };
         }
       } else {
-        let c3;
         try {
           let obj;
-          let guilds;
-          c5 = 2;
-          if (0 === c4) {
+          let degraded;
+          c4 = 2;
+          if (0 === c3) {
             if (arg0 === 1) {
-              c5 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
+              c4 = 3;
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              closure_2 = tmp;
+              closure_0 = tmp4;
               obj = undefined;
-              guilds = undefined;
-              c3 = 1;
-              closure_0 = guilds;
-              c4 = 2;
-              c5 = 1;
-              const obj4 = { value: self.fetchGuilds(closure_2), done: false };
+              degraded = undefined;
+              guilds = 1;
+              c3 = 2;
+              c4 = 1;
+              const obj4 = { value: self.fetchGuilds(guilds), done: false };
               return obj4;
             }
           } else {
-            if (1 === c4) {
-              c3 = 0;
-              const obj5 = { key: closure_130_1, guilds: [], status: "unavailable" };
+            if (1 === c3) {
+              guilds = 0;
+              const obj5 = { key: closure_129_1, guilds: [], status: "unavailable", failed: true };
               obj = obj5;
             } else if (arg0 === 1) {
-              c5 = 3;
+              c4 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c3 = 0;
-              c5 = 3;
+              guilds = 0;
+              c4 = 3;
               const obj6 = { value, done: true };
               return obj6;
             } else {
-              guilds = closure_0(value);
-              obj = { key: closure_130_1, guilds, status: str };
+              degraded = value;
+              guilds = guilds(degraded);
+              obj = { key: closure_129_1, guilds, status: str, failed: degraded.degraded };
               str = "unavailable";
               if (guilds.length > 0) {
                 str = "ready";
               }
-              c3 = 0;
+              guilds = 0;
             }
-            const disposed = closure_130_3.disposed || closure_130_0 !== closure_130_3.requestId;
+            const disposed = closure_129_3.disposed || closure_129_0 !== closure_129_3.requestId;
             if (!disposed) {
-              closure_130_3.publish(obj);
+              closure_129_3.publish(obj);
             }
-            c5 = 3;
+            c4 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp28) {
-          if (0 === c3) {
-            c5 = 3;
-            throw tmp28;
+        } catch (tmp29) {
+          if (0 === guilds) {
+            c4 = 3;
+            throw tmp29;
           } else {
-            c4 = 1;
+            c3 = 1;
           }
         }
       }
@@ -202,7 +196,7 @@ const prototype = InterestGuildsResource.prototype;
 export function interestGuildsKey(items) {
   set = new Set(items);
   const fromResult = from(set);
-  const substr = fromResult.slice(0, 5);
+  const substr = fromResult.slice(0, MAX_SELECTIONS);
   const sorted = substr.sort();
   return sorted.join(",");
 }

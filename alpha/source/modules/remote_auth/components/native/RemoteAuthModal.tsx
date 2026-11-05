@@ -1,10 +1,10 @@
-// Module ID: 15931
-// Function ID: 15932
+// Module ID: 15943
+// Function ID: 15944
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1072, 21, 5141, 575, 1627, 7088, 5851, 15930, 5745, 1282, 12, 15932, 5761, 1113, 1187, 6902, 5768, 6879, 15936, 7095, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5143, 575, 1627, 7091, 5854, 15942, 5747, 1282, 12, 15944, 5763, 1113, 1187, 6905, 5770, 6882, 15948, 7098, 2]
 // Exports: default
 
-// Module 15931 (RemoteAuthModal)
+// Module 15943 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,21 +13,21 @@ import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5745 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import components_Button_Button from "components/Button/Button" /* 5768 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
-import ButtonGroup2 from "ButtonGroup" /* 6902 */;
-import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7088 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7095 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15930 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15932 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15936 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5747 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import components_Button_Button from "components/Button/Button" /* 5770 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
+import ButtonGroup2 from "ButtonGroup" /* 6905 */;
+import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7091 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7098 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15942 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 15944 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 15948 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;

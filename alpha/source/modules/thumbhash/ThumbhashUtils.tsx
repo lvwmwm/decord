@@ -1,11 +1,11 @@
-// Module ID: 18845
-// Function ID: 18846
+// Module ID: 18876
+// Function ID: 18877
 // Name: ThumbhashUtils
-// Dependencies: [17413, 2]
+// Dependencies: [17439, 2]
 // Exports: createThumbhashImageFromPlaceholder
 
-// Module 18845 (ThumbhashUtils)
-import _slicedToArray from "_slicedToArray" /* 17413 */;
+// Module 18876 (ThumbhashUtils)
+import _slicedToArray from "_slicedToArray" /* 17439 */;
 import size from "module_2" /* 2 */;
 
 function thumbHashToRGBA(arg0) {

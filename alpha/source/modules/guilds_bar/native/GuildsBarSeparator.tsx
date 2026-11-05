@@ -1,23 +1,23 @@
-// Module ID: 18671
-// Function ID: 18672
+// Module ID: 18701
+// Function ID: 18702
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 5141, 575, 18335, 1652, 5732, 7101, 2]
+// Dependencies: [19, 21, 5143, 575, 18365, 1652, 5734, 7104, 2]
 
-// Module 18671 (GuildsBarSeparator)
+// Module 18701 (GuildsBarSeparator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import useToken from "useToken" /* 5732 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18335 */;
+import useToken from "useToken" /* 5734 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18365 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
 let obj1;
 
 let tmp2;
-const NativeViewDefault = tmp2(7101);
+const NativeViewDefault = tmp2(7104);
 function GuildsBarHomeDrawerSeparator(guildItemSize) {
   let tmp3;
   let tmp4;

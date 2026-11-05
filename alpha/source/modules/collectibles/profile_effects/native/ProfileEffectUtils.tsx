@@ -1,11 +1,11 @@
-// Module ID: 9647
-// Function ID: 9648
+// Module ID: 9653
+// Function ID: 9654
 // Name: ProfileEffectUtils
-// Dependencies: [9648, 2]
+// Dependencies: [9654, 2]
 // Exports: calculateProfileEffectHeight, shouldAnimate
 
-// Module 9647 (ProfileEffectUtils)
-import getAssetWHRatio from "getAssetWHRatio" /* 9648 */;
+// Module 9653 (ProfileEffectUtils)
+import getAssetWHRatio from "getAssetWHRatio" /* 9654 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_effects/native/ProfileEffectUtils.tsx");

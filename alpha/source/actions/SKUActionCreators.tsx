@@ -1,20 +1,20 @@
-// Module ID: 10861
-// Function ID: 10862
+// Module ID: 10867
+// Function ID: 10868
 // Name: SKUActionCreators
-// Dependencies: [5, 9628, 7031, 1072, 572, 6590, 1282, 4962, 9708, 7902, 6581, 4961, 4954, 6670, 6688, 1380, 2]
+// Dependencies: [5, 9634, 7034, 1072, 572, 6593, 1282, 4964, 9714, 7907, 6584, 4963, 4956, 6673, 6691, 1380, 2]
 // Exports: clearPurchaseError, fetchPublicSKU, fetchPublishedSKU, fetchSKU, fetchTestSKUsForApplication, grantChannelBranchEntitlement, orderSKU, previewPurchaseSku, purchaseSKU, resendPaymentVerificationEmail, showPurchaseConfirmationStep, updateSKUPaymentIsGift
 
-// Module 10861 (SKUActionCreators)
+// Module 10867 (SKUActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import BillingUtils from "BillingUtils" /* 4954 */;
-import StoreUtils from "StoreUtils" /* 6590 */;
-import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6688 */;
-import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7902 */;
-import TestModeUtils from "TestModeUtils" /* 9708 */;
+import BillingUtils from "BillingUtils" /* 4956 */;
+import StoreUtils from "StoreUtils" /* 6593 */;
+import PurchaseTokenUtils from "PurchaseTokenUtils" /* 6691 */;
+import ShopVariantsReturnStyle from "ShopVariantsReturnStyle" /* 7907 */;
+import TestModeUtils from "TestModeUtils" /* 9714 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9628 */;
-import SKUStore from "SKUStore" /* 7031 */;
+import StorefrontPromotionOverrideStore from "StorefrontPromotionOverrideStore" /* 9634 */;
+import SKUStore from "SKUStore" /* 7034 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -324,40 +324,97 @@ obj = function _fetchPublishedSKU() {
   return obj(...arguments);
 };
 obj = function _fetchTestSKUsForApplication() {
-  obj = _asyncToGenerator(async function(arg0) {
-    let c4;
-    let c5;
-    let closure_2;
-    let closure_3;
+  obj = _asyncToGenerator(async function(arg0, value) {
     let obj6;
     let closure_0 = arg0;
-    let closure_1 = arg1;
-    let flag = closure_1;
-    if (closure_1 === undefined) {
-      flag = true;
-    }
-    await "flexDirection";
-    const obj11 = closure_131_0(closure_131_2[8]);
-    if (!obj11.isTestModeForApplication(closure_0)) {
-      const tmp12 = flag;
-      if (tmp12) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error("this should only be used in test mode");
-        throw error;
+    let closure_1 = value;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let flag;
+        let body;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_3 = tmp4;
+            let closure_2 = tmp;
+            flag = closure_1;
+            if (closure_1 === undefined) {
+              flag = true;
+            }
+            body = undefined;
+            c4 = 1;
+            c5 = 1;
+            return { value: "flexDirection", done: true };
+          }
+        } else if (1 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            const obj11 = closure_131_0(closure_131_2[8]);
+            if (!obj11.isTestModeForApplication(closure_0)) {
+              const tmp12 = flag;
+              if (tmp12) {
+                const _Error = Error;
+                const self = this;
+                const self2 = this;
+                const error = new Error("this should only be used in test mode");
+                throw error;
+              }
+            }
+            const obj5 = { url: closure_131_7.APPLICATION_SKUS(closure_0), rejectWithError: obj6.rejectWithMigratedError() };
+            const httpGetWithCountryCodeQuery = closure_131_0(closure_131_2[5]).httpGetWithCountryCodeQuery;
+            const tmp20 = closure_131_0(closure_131_2[5]);
+            obj6 = closure_131_0(closure_131_2[6]);
+            c4 = 2;
+            c5 = 1;
+            const obj7 = { value: httpGetWithCountryCodeQuery(obj5), done: false };
+            return obj7;
+          }
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c5 = 3;
+          const obj8 = { value, done: true };
+          return obj8;
+        } else {
+          body = value.body;
+          const obj9 = { type: "SKUS_FETCH_SUCCESS", skus: body };
+          obj = closure_131_1(closure_131_2[4]);
+          obj.dispatch(obj9);
+          c5 = 3;
+          const obj10 = { value: body, done: true };
+          return obj10;
+        }
+      } catch (tmp26) {
+        c5 = 3;
+        throw tmp26;
       }
     }
-    const obj5 = { url: closure_131_7.APPLICATION_SKUS(closure_0), rejectWithError: obj6.rejectWithMigratedError() };
-    const httpGetWithCountryCodeQuery = closure_131_0(closure_131_2[5]).httpGetWithCountryCodeQuery;
-    const tmp20 = closure_131_0(closure_131_2[5]);
-    obj6 = closure_131_0(closure_131_2[6]);
-    await httpGetWithCountryCodeQuery(obj5);
-    const body = arg1.body;
-    const obj9 = { type: "SKUS_FETCH_SUCCESS", skus: body };
-    obj = closure_131_1(closure_131_2[4]);
-    obj.dispatch(obj9);
-    return body;
   });
   return obj(...arguments);
 };
@@ -417,7 +474,7 @@ obj = function _previewPurchaseSku() {
             billingError = undefined;
             apply_wallet_balance = 1;
             previous_total = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === apply_wallet_balance) {
           if (arg0 === 1) {
@@ -724,11 +781,11 @@ obj = function _purchaseSKU() {
         }
       } else {
         try {
-          let closure_15;
           let closure_16;
+          let closure_17;
           let billingError;
           let paymentSource;
-          let closure_12;
+          let closure_13;
           c12 = 2;
           if (0 === c11) {
             if (arg0 === 1) {
@@ -748,8 +805,8 @@ obj = function _purchaseSKU() {
               quantity = undefined;
               body = undefined;
               promotion_id_override = undefined;
-              closure_15 = undefined;
               closure_16 = undefined;
+              closure_17 = undefined;
               billingError = undefined;
               const obj5 = {};
               const merged = Object.assign(closure_2_14);
@@ -757,13 +814,13 @@ obj = function _purchaseSKU() {
               paymentSource = obj5.paymentSource;
               ({ expectedAmount: c3, expectedCurrency: c4, analyticsLoadId: c5, isGift } = obj5);
               ({ giftInfoOptions: c7, loadId } = obj5);
-              ({ countryCode: c9, quantity: c10, applyWalletBalance: c11 } = obj5);
+              ({ countryCode: c9, quantity: c10, applyWalletBalance: c11, expectedPaymentLegs: c12 } = obj5);
               const subscriptionPlanId = obj5.subscriptionPlanId;
               const obj6 = { type: "SKU_PURCHASE_START", applicationId, skuId, isGift, loadId };
               const obj27 = DispatcherDefault;
               obj27.dispatch(obj6);
               const obj29 = TestModeUtils;
-              closure_12 = obj29.isTestModeForApplication(applicationId);
+              closure_13 = obj29.isTestModeForApplication(applicationId);
               country_code = 1;
               obj8 = { gift: isGift, sku_subscription_plan_id: subscriptionPlanId };
               c11 = 2;
@@ -776,16 +833,16 @@ obj = function _purchaseSKU() {
             let prop;
             if (1 === c11) {
               country_code = 0;
-              let closure_18 = closure_10;
-              if (closure_18 instanceof closure_136_0(closure_136_2[10]).BillingError) {
-                billingError = closure_18;
+              let closure_19 = closure_10;
+              if (closure_19 instanceof closure_136_0(closure_136_2[10]).BillingError) {
+                billingError = closure_19;
               } else {
                 const self = this;
                 const self2 = this;
-                billingError = new closure_136_0(closure_136_2[10]).BillingError(closure_18);
+                billingError = new closure_136_0(closure_136_2[10]).BillingError(closure_19);
               }
-              const tmp105 = billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED && billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.AUTHENTICATION_REQUIRED;
-              if (!tmp105) {
+              const tmp110 = billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED && billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.AUTHENTICATION_REQUIRED;
+              if (!tmp110) {
                 prop = skuId;
                 const obj12 = { type: "SKU_PURCHASE_AWAIT_CONFIRMATION", skuId, isGift };
                 const obj16 = closure_136_1(closure_136_2[4]);
@@ -796,9 +853,9 @@ obj = function _purchaseSKU() {
               prop.dispatch(obj13);
               if (billingError.code !== closure_136_0(closure_136_2[11]).ErrorCodes.CONFIRMATION_REQUIRED) {
                 throw billingError;
-              } else if (closure_18.body.payment_id) {
+              } else if (closure_19.body.payment_id) {
                 c12 = 3;
-                const obj14 = { value: obj20.handlePaymentConfirmation(closure_18.body, paymentSource), done: true };
+                const obj14 = { value: obj20.handlePaymentConfirmation(closure_19.body, paymentSource), done: true };
                 obj20 = closure_136_0(closure_136_2[13]);
                 return obj14;
               } else {
@@ -824,7 +881,7 @@ obj = function _purchaseSKU() {
                   if (null != promotion_id_override) {
                     body.promotion_id_override = promotion_id_override;
                   }
-                  const tmp42 = closure_12;
+                  const tmp42 = closure_13;
                   if (tmp42) {
                     body.test_mode = true;
                   } else if (null != paymentSource) {
@@ -854,6 +911,9 @@ obj = function _purchaseSKU() {
                     _false = false;
                   }
                   tmp74.apply_wallet_balance = _false;
+                  if (null != c12) {
+                    body.expected_payment_legs = c12.map((payment_gateway) => ({ payment_gateway: payment_gateway.payment_gateway, amount: payment_gateway.amount }));
+                  }
                   const HTTP = closure_136_0(closure_136_2[6]).HTTP;
                   const request = { url: closure_136_7.STORE_SKU_PURCHASE(skuId), body, context: obj18, oldFormErrors: true, rejectWithError: prop.rejectWithMigratedError() };
                   const post = HTTP.post;
@@ -873,14 +933,14 @@ obj = function _purchaseSKU() {
                   c12 = 3;
                   return { value, done: true };
                 } else {
-                  closure_15 = value;
+                  closure_16 = value;
                   prop = closure_136_7.BILLING_POPUP_BRIDGE_CALLBACK_REDIRECT_PREFIX;
-                  expected_amount = closure_15;
+                  expected_amount = closure_16;
                   const obj7 = closure_136_0(closure_136_2[6]);
                   const aPIBaseURL = obj7.getAPIBaseURL();
                   const type = paymentSource.type;
                   const tmp30 = body;
-                  if (closure_15 == null) {
+                  if (closure_16 == null) {
                     expected_amount = "";
                   }
                   tmp30.return_url = aPIBaseURL + prop(type, expected_amount, "success");
@@ -911,21 +971,21 @@ obj = function _purchaseSKU() {
                 c12 = 3;
                 return { value, done: true };
               } else {
-                closure_16 = value;
-                const obj26 = { type: "SKU_PURCHASE_SUCCESS", skuId, libraryApplications: prop, entitlements: closure_16.body.entitlements, giftCode: closure_16.body.gift_code, loadId };
+                closure_17 = value;
+                const obj26 = { type: "SKU_PURCHASE_SUCCESS", skuId, libraryApplications: prop, entitlements: closure_17.body.entitlements, giftCode: closure_17.body.gift_code, loadId };
                 prop = skuId;
                 const dispatch = closure_136_1(closure_136_2[4]).dispatch;
                 closure_136_1(closure_136_2[4]);
-                if (null != closure_16.body.library_applications) {
-                  const library_applications = closure_16.body.library_applications;
+                if (null != closure_17.body.library_applications) {
+                  const library_applications = closure_17.body.library_applications;
                   prop = library_applications.filter(closure_136_0(closure_136_2[15]).isNotNullish);
                 } else {
                   prop = [];
                 }
                 prop = loadId;
                 dispatch(obj26);
-                obj = { appliedUserDiscounts: closure_16.body.applied_user_discounts, redirectConfirmation: false };
-                const merged2 = Object.assign(closure_16.body);
+                obj = { appliedUserDiscounts: closure_17.body.applied_user_discounts, redirectConfirmation: false };
+                const merged2 = Object.assign(closure_17.body);
                 country_code = 0;
                 c12 = 3;
                 return { value: obj, done: true };
@@ -935,11 +995,11 @@ obj = function _purchaseSKU() {
               }
             }
           }
-        } catch (tmp139) {
-          closure_10 = tmp139;
+        } catch (tmp144) {
+          closure_10 = tmp144;
           if (0 === country_code) {
             c12 = 3;
-            throw tmp139;
+            throw tmp144;
           } else {
             c11 = 1;
           }

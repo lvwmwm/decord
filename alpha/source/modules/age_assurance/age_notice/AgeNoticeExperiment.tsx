@@ -1,10 +1,10 @@
-// Module ID: 6873
-// Function ID: 6874
+// Module ID: 6876
+// Function ID: 6877
 // Name: AgeNoticeExperiment
 // Dependencies: [1449, 2]
-// Exports: isTinyBroncoEnabled, useIsTinyBroncoEnabled
+// Exports: isAgeNoticeEnabled, useIsAgeNoticeEnabled
 
-// Module 6873 (AgeNoticeExperiment)
+// Module 6876 (AgeNoticeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
@@ -12,11 +12,11 @@ let obj = { name: "2026-08-tiny-bronco", kind: "user", defaultConfig: { enabled:
 let closure_0 = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/AgeNoticeExperiment.tsx");
 
-export function useIsTinyBroncoEnabled(location) {
+export function useIsAgeNoticeEnabled(location) {
   const obj = { location };
   return closure_0.useConfig(obj).enabled;
 }
-export function isTinyBroncoEnabled(location) {
+export function isAgeNoticeEnabled(location) {
   const obj = { location };
   return closure_0.getConfig(obj).enabled;
 }

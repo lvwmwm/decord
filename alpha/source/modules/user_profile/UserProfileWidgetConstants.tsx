@@ -1,12 +1,12 @@
-// Module ID: 7915
-// Function ID: 7916
+// Module ID: 7920
+// Function ID: 7921
 // Name: UserProfileWidgetConstants
-// Dependencies: [2167, 7913, 1113, 2]
+// Dependencies: [2167, 7918, 1113, 2]
 // Exports: widgetSupportsComment, widgetSupportsTags
 
-// Module 7915 (UserProfileWidgetConstants)
+// Module 7920 (UserProfileWidgetConstants)
 import intl2 from "intl" /* 1113 */;
-import WidgetType from "WidgetType" /* 7913 */;
+import WidgetType from "WidgetType" /* 7918 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import size from "module_2" /* 2 */;
 

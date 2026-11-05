@@ -1,16 +1,16 @@
-// Module ID: 17043
-// Function ID: 17044
+// Module ID: 17067
+// Function ID: 17068
 // Name: FamilyCenterUsernameHeader
-// Dependencies: [19, 17, 21, 5141, 5195, 5761, 2]
+// Dependencies: [19, 17, 21, 5143, 5197, 5763, 2]
 // Exports: default
 
-// Module 17043 (FamilyCenterUsernameHeader)
+// Module 17067 (FamilyCenterUsernameHeader)
 import react_native from "react-native" /* 17 */;
-import UserUtilsDefault from "UserUtils" /* 5195 */;
-import Text_Text from "Text/Text" /* 5761 */;
+import UserUtilsDefault from "UserUtils" /* 5197 */;
+import Text_Text from "Text/Text" /* 5763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

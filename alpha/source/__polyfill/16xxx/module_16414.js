@@ -1,25 +1,27 @@
 // Module ID: 16414
 // Function ID: 16415
-// Dependencies: [16380, 16401, 16415, 16425, 16426]
+// Dependencies: [16412, 16386]
 
 // Module 16414
-import _mod16380 from "module_16380" /* 16380 */;
-import _mod16401 from "module_16401" /* 16401 */;
-import f2 from "f" /* 16415 */;
-import _mod16425 from "module_16425" /* 16425 */;
-import _mod16426 from "module_16426" /* 16426 */;
+import _mod16386 from "module_16386" /* 16386 */;
+import _mod16412 from "module_16412" /* 16412 */;
 
-function ownKeys(arg0) {
-  const obj = f2;
-  const fResult = obj.f(_mod16425(arg0));
-  const f = _mod16426.f;
-  let tmp2 = fResult;
-  if (f) {
-    tmp2 = closure_2(fResult, f(arg0));
+
+export default function(arg0, arg1) {
+  let tmp3;
+  if (arguments.length < 2) {
+    const tmp7 = _mod16386[arg0];
+    let tmp8;
+    if (_mod16412(tmp7)) {
+      tmp8 = tmp7;
+    }
+    tmp3 = tmp8;
+  } else {
+    tmp3 = _mod16386[arg0];
+    const tmp = require;
+    if (tmp3) {
+      tmp3 = tmp(16386)[arg0][arg1];
+    }
   }
-  return tmp2;
-}
-let closure_2 = _mod16380([].concat);
-_mod16401("Reflect", "ownKeys") || ownKeys;
-
-export default _mod16401("Reflect", "ownKeys") || ownKeys;
+  return tmp3;
+};

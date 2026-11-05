@@ -1,11 +1,11 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8088
+// Function ID: 8089
 // Name: useStateChannelIsLive
-// Dependencies: [4995, 504, 2]
+// Dependencies: [4997, 504, 2]
 // Exports: default
 
-// Module 8083 (useStateChannelIsLive)
-import StageInstanceStore from "StageInstanceStore" /* 4995 */;
+// Module 8088 (useStateChannelIsLive)
+import StageInstanceStore from "StageInstanceStore" /* 4997 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

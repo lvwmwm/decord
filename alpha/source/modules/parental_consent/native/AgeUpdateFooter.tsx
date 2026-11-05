@@ -1,18 +1,18 @@
-// Module ID: 20378
-// Function ID: 20379
+// Module ID: 20413
+// Function ID: 20414
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 5141, 5761, 1113, 2963, 8095, 6864, 2]
+// Dependencies: [19, 21, 5143, 5763, 1113, 2963, 8100, 6867, 2]
 // Exports: default
 
-// Module 20378 (AgeUpdateFooter)
+// Module 20413 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2963 from "module_2963" /* 2963 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6867 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8100 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

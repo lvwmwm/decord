@@ -1,24 +1,24 @@
-// Module ID: 18609
-// Function ID: 18610
+// Module ID: 18639
+// Function ID: 18640
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 18514, 21, 5141, 575, 14614, 5761, 1113, 3577, 8793, 8814, 8784, 6162, 2]
+// Dependencies: [19, 17, 18544, 21, 5143, 575, 14627, 5763, 1113, 3577, 8798, 8819, 8789, 6165, 2]
 // Exports: default
 
-// Module 18609 (FavoritesGuildSidebarHeader)
+// Module 18639 (FavoritesGuildSidebarHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3577 from "module_3577" /* 3577 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
-import ChatIcon2 from "ChatIcon" /* 8784 */;
-import TextIcon2 from "TextIcon" /* 8793 */;
-import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8814 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 14614 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18514 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
+import ChatIcon2 from "ChatIcon" /* 8789 */;
+import TextIcon2 from "TextIcon" /* 8798 */;
+import VoiceNormalIcon2 from "VoiceNormalIcon" /* 8819 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 14627 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18544 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -112,9 +112,9 @@ export default function FavoritesGuildSidebarHeader() {
   }
   items = [tmp7, , ];
   const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.copy, children: items1 };
-  const Stack2 = tmp4(6162).Stack;
+  const Stack2 = tmp4(6165).Stack;
   const obj4 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3577["1n0TGE"]) };
-  const Heading = tmp4(5761).Heading;
+  const Heading = tmp4(5763).Heading;
   intl = tmp4(1113).intl;
   items1 = [metroRequire(Heading, obj4), metroRequire(EmptyBody, {})];
   items[1] = metroImportDefault(Stack2, obj3);

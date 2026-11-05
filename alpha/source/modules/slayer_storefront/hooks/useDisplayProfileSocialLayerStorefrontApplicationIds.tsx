@@ -1,14 +1,14 @@
-// Module ID: 9632
-// Function ID: 9633
+// Module ID: 9638
+// Function ID: 9639
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 7546, 8898, 9633, 504, 7914, 7917, 12, 2]
+// Dependencies: [19, 7548, 8903, 9639, 504, 7919, 7922, 12, 2]
 // Exports: default
 
-// Module 9632 (useDisplayProfileSocialLayerStorefrontApplicationIds)
+// Module 9638 (useDisplayProfileSocialLayerStorefrontApplicationIds)
 import _mod12 from "module_12" /* 12 */;
-import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7914 */;
+import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7919 */;
 import react from "react" /* 19 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7546 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7548 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ export default function useDisplayProfileSocialLayerStorefrontApplicationIds(use
               set.add(applicationIdFromDetectableId);
             }
           });
-        } else if (tmp5 instanceof tmp6(7917).ApplicationWidget) {
+        } else if (tmp5 instanceof tmp6(7922).ApplicationWidget) {
           let applicationIdFromDetectableId = SocialLayerStorefrontStore.getApplicationIdFromDetectableId(tmp5.applicationId);
           if (null != applicationIdFromDetectableId) {
             let addResult = set.add(tmp12);

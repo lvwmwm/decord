@@ -1,14 +1,14 @@
-// Module ID: 14325
-// Function ID: 14326
+// Module ID: 14338
+// Function ID: 14339
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [5012, 5354, 1072, 14294, 504, 5357, 14290, 2]
+// Dependencies: [5014, 5356, 1072, 14307, 504, 5359, 14303, 2]
 // Exports: default
 
-// Module 14325 (useGuildPowerupCardFooterConfig)
+// Module 14338 (useGuildPowerupCardFooterConfig)
 import Constants from "Constants" /* 1072 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14294 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5354 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 14307 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5356 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const useGuildPowerupRollbackEnabledDefault = tmp(14290);
+const useGuildPowerupRollbackEnabledDefault = tmp(14303);
 ({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: closure_4, PowerupActiveStatusType: hasOwnProperty } = GuildPowerupsConstants);
 const GuildFeatures = Constants.GuildFeatures;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupCardFooterConfig.tsx");

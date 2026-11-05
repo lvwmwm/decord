@@ -1,11 +1,11 @@
-// Module ID: 7577
-// Function ID: 7578
+// Module ID: 7579
+// Function ID: 7580
 // Name: useGuildShopPreviewVisible
-// Dependencies: [5073, 1072, 5171, 4974, 563, 7572, 2]
+// Dependencies: [5075, 1072, 5173, 4976, 563, 7574, 2]
 // Exports: useGuildShopPreviewVisible
 
-// Module 7577 (useGuildShopPreviewVisible)
-import PermissionStore from "PermissionStore" /* 5073 */;
+// Module 7579 (useGuildShopPreviewVisible)
+import PermissionStore from "PermissionStore" /* 5075 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -37,8 +37,8 @@ export function useGuildShopPreviewVisible(features) {
     flag = false;
   }
   let id;
-  const useGuildEligibleForGuildProducts = tmp(7572).useGuildEligibleForGuildProducts;
-  tmp(7572);
+  const useGuildEligibleForGuildProducts = tmp(7574).useGuildEligibleForGuildProducts;
+  tmp(7574);
   if (features != null) {
     id = features.id;
   }

@@ -1,15 +1,15 @@
-// Module ID: 16876
-// Function ID: 16877
+// Module ID: 16899
+// Function ID: 16900
 // Name: AccountAgeGroupAssignedAdultSetting
-// Dependencies: [8573, 1072, 11729, 1113, 3223, 16877, 16872, 2]
+// Dependencies: [8578, 1072, 11737, 1113, 3223, 16900, 16895, 2]
 
-// Module 16876 (AccountAgeGroupAssignedAdultSetting)
+// Module 16899 (AccountAgeGroupAssignedAdultSetting)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3223 from "module_3223" /* 3223 */;
-import SettingsConstants from "SettingsConstants" /* 8573 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16877 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
+import SettingsConstants from "SettingsConstants" /* 8578 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16900 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

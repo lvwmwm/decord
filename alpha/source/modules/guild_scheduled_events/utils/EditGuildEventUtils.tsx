@@ -1,14 +1,14 @@
-// Module ID: 9113
-// Function ID: 9114
+// Module ID: 9119
+// Function ID: 9120
 // Name: EditGuildEventUtils
-// Dependencies: [502, 4996, 9114, 9117, 2]
+// Dependencies: [502, 4998, 9120, 9123, 2]
 // Exports: convertToFakeGuildEvent, getInitialGuildEventData, isEditingEvent, isExistingGuildEvent, recurrenceRuleFromServer, recurrenceRuleToServer
 
-// Module 9113 (EditGuildEventUtils)
-import ScheduleUtils from "ScheduleUtils" /* 9114 */;
-import EntityUtils from "EntityUtils" /* 9117 */;
+// Module 9119 (EditGuildEventUtils)
+import ScheduleUtils from "ScheduleUtils" /* 9120 */;
+import EntityUtils from "EntityUtils" /* 9123 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4998 */;
 import size from "module_2" /* 2 */;
 
 let c3;

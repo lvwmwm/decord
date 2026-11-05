@@ -1,20 +1,20 @@
-// Module ID: 15135
-// Function ID: 15136
+// Module ID: 15148
+// Function ID: 15149
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 4987, 21, 5141, 575, 15136, 15140, 15144, 15133, 15148, 15152, 11640, 1113, 11645, 10133, 2]
+// Dependencies: [19, 17, 4989, 21, 5143, 575, 15149, 15153, 15157, 15146, 15161, 15165, 11648, 1113, 11653, 10141, 2]
 // Exports: default
 
-// Module 15135 (BadgeDirectoryNuxCoachmark)
+// Module 15148 (BadgeDirectoryNuxCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 11640 */;
-import GameTimeTier9LargeBadge from "GameTimeTier9LargeBadge" /* 15136 */;
-import StreamingTier10LargeBadge from "StreamingTier10LargeBadge" /* 15140 */;
-import GameDiversityTier8LargeBadge from "GameDiversityTier8LargeBadge" /* 15144 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 11648 */;
+import GameTimeTier9LargeBadge from "GameTimeTier9LargeBadge" /* 15149 */;
+import StreamingTier10LargeBadge from "StreamingTier10LargeBadge" /* 15153 */;
+import GameDiversityTier8LargeBadge from "GameDiversityTier8LargeBadge" /* 15157 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

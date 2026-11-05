@@ -1,25 +1,25 @@
-// Module ID: 14563
-// Function ID: 14564
+// Module ID: 14576
+// Function ID: 14577
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 14541, 21, 5141, 575, 8317, 7098, 5004, 5761, 1113, 1627, 5768, 1187, 1499, 7698, 7356, 14554, 6581, 14549, 7430, 2]
+// Dependencies: [5, 32, 19, 17, 14554, 21, 5143, 575, 8322, 7101, 5006, 5763, 1113, 1627, 5770, 1187, 1499, 7700, 7359, 14567, 6584, 14562, 7433, 2]
 // Exports: default
 
-// Module 14563 (HubEmailConnectionGuildSelect)
+// Module 14576 (HubEmailConnectionGuildSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5004 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import components_Button_Button from "components/Button/Button" /* 5768 */;
-import GuildIconDefault from "GuildIcon" /* 7098 */;
-import _mod8317 from "module_8317" /* 8317 */;
-import HubConstants from "HubConstants" /* 14541 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5006 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import components_Button_Button from "components/Button/Button" /* 5770 */;
+import GuildIconDefault from "GuildIcon" /* 7101 */;
+import _mod8322 from "module_8322" /* 8322 */;
+import HubConstants from "HubConstants" /* 14554 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, navigation;
@@ -43,8 +43,8 @@ class HubEmailConnectionGuildSelectRow {
     guildInfo = guildInfo.guildInfo;
     ({ signup, loading } = guildInfo);
     const tmp = closure_10();
-    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(_mod8317.FormRow.Arrow, {}) };
-    const FormRow = _mod8317.FormRow;
+    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(_mod8322.FormRow.Arrow, {}) };
+    const FormRow = _mod8322.FormRow;
     obj2 = { style: tmp.guildIcon, guild: fromGuildBasic(obj3) };
     obj3 = { features: [] };
     tmp2 = GuildIconDefault;

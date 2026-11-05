@@ -1,13 +1,13 @@
-// Module ID: 9068
-// Function ID: 9069
+// Module ID: 9072
+// Function ID: 9073
 // Name: WaterwheelsDiscoverExperiment
-// Dependencies: [1246, 8703, 502, 1385, 1449, 9067, 504, 2]
+// Dependencies: [1246, 8708, 502, 1385, 1449, 9073, 504, 2]
 // Exports: getWaterwheelsDiscoverEnabled, useWaterwheelsDiscoverEnabled
 
-// Module 9068 (WaterwheelsDiscoverExperiment)
-import ICYMILabFeature from "ICYMILabFeature" /* 9067 */;
+// Module 9072 (WaterwheelsDiscoverExperiment)
+import ICYMILabFeature from "ICYMILabFeature" /* 9073 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import LabFeatureStore from "LabFeatureStore" /* 8703 */;
+import LabFeatureStore from "LabFeatureStore" /* 8708 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
@@ -21,7 +21,7 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/waterwheels/WaterwheelsDiscoverExperiment.tsx");
 
 export const WaterwheelsDiscoverExperiment = apexExperiment;
-export function getWaterwheelsDiscoverEnabled(icymi_store) {
+export function getWaterwheelsDiscoverEnabled(fetchDehydrated) {
   const currentUser = UserStore.getCurrentUser();
   let flag;
   if (currentUser != null) {
@@ -36,7 +36,7 @@ export function getWaterwheelsDiscoverEnabled(icymi_store) {
   }
   let enabled = !value;
   if (enabled) {
-    const obj = { location: icymi_store };
+    const obj = { location: fetchDehydrated };
     enabled = apexExperiment.getConfig(obj).enabled;
   }
   return enabled;

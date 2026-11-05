@@ -1,23 +1,23 @@
-// Module ID: 20083
-// Function ID: 20084
+// Module ID: 20119
+// Function ID: 20120
 // Name: RolePermissionTemplatesActionSheet
-// Dependencies: [19, 17, 1072, 21, 5141, 575, 1252, 5382, 5845, 7457, 1113, 7502, 20061, 6093, 2]
+// Dependencies: [19, 17, 1072, 21, 5143, 575, 1252, 5384, 5848, 7460, 1113, 7504, 20097, 6096, 2]
 // Exports: default
 
-// Module 20083 (RolePermissionTemplatesActionSheet)
+// Module 20119 (RolePermissionTemplatesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import ToastUtils from "ToastUtils" /* 5845 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7457 */;
-import ActionSheet2 from "ActionSheet" /* 7502 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import ToastUtils from "ToastUtils" /* 5848 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6096 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7460 */;
+import ActionSheet2 from "ActionSheet" /* 7504 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

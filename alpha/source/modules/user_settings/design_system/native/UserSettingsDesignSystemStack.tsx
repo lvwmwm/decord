@@ -1,18 +1,18 @@
-// Module ID: 18053
-// Function ID: 18054
+// Module ID: 18081
+// Function ID: 18082
 // Name: UserSettingsDesignSystemStack
-// Dependencies: [19, 17, 21, 5141, 575, 6162, 7118, 5761, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 6165, 7121, 5763, 2]
 // Exports: default
 
-// Module 18053 (UserSettingsDesignSystemStack)
+// Module 18081 (UserSettingsDesignSystemStack)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
-import Card_Card from "Card/Card" /* 7118 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
+import Card_Card from "Card/Card" /* 7121 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c2;

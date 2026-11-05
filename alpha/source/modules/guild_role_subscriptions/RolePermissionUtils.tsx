@@ -1,13 +1,13 @@
-// Module ID: 5064
-// Function ID: 5065
+// Module ID: 5066
+// Function ID: 5067
 // Name: RolePermissionUtils
-// Dependencies: [5048, 1072, 1084, 2]
+// Dependencies: [5050, 1072, 1084, 2]
 // Exports: hasViewChannelPermission, isChannelAccessDeniedBy, isChannelAccessGrantedBy
 
-// Module 5064 (RolePermissionUtils)
+// Module 5066 (RolePermissionUtils)
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5048 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5050 */;
 import size from "module_2" /* 2 */;
 
 const hasPermission = GuildRoleRecord.hasPermission;

@@ -1,11 +1,11 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 10939
+// Function ID: 10940
 // Name: isGameActivity
-// Dependencies: [5896, 2]
+// Dependencies: [5899, 2]
 // Exports: default
 
-// Module 10933 (isGameActivity)
-import ActivityTypes from "ActivityTypes" /* 5896 */;
+// Module 10939 (isGameActivity)
+import ActivityTypes from "ActivityTypes" /* 5899 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isGameActivity.tsx");

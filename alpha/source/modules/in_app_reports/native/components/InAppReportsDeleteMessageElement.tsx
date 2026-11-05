@@ -1,17 +1,17 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15413
+// Function ID: 15414
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 6196, 1072, 21, 504, 5894, 7776, 15396, 1113, 5872, 2]
+// Dependencies: [32, 19, 6199, 1072, 21, 504, 5897, 7781, 15409, 1113, 5875, 2]
 // Exports: default
 
-// Module 15400 (InAppReportsDeleteMessageElement)
+// Module 15413 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5894 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7776 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5897 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7781 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 6196 */;
+import MessageStore from "MessageStore" /* 6199 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -45,7 +45,7 @@ export default function DeleteMessageElement(message) {
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(15396);
+  reportId(15409);
   const intl = message(1113).intl;
   const intl2 = message(1113).intl;
   const intl3 = message(1113).intl;

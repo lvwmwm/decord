@@ -1,17 +1,17 @@
-// Module ID: 13029
-// Function ID: 13030
+// Module ID: 13036
+// Function ID: 13037
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 13028, 1652, 5378, 1705, 5771, 2]
+// Dependencies: [32, 19, 13035, 1652, 5380, 1705, 5773, 2]
 // Exports: default
 
-// Module 13029 (useChatInputFloatingBounce)
+// Module 13036 (useChatInputFloatingBounce)
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5378 */;
-import spring_spring from "spring/spring" /* 5771 */;
+import timing_timing from "timing/timing" /* 5380 */;
+import spring_spring from "spring/spring" /* 5773 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 13028 */;
+import ChatInputConstants from "ChatInputConstants" /* 13035 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, set3;

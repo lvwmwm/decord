@@ -1,13 +1,13 @@
-// Module ID: 5828
-// Function ID: 5829
+// Module ID: 5830
+// Function ID: 5831
 // Name: RegionalFeatureConfigStore
-// Dependencies: [5829, 5833, 504, 572, 2]
+// Dependencies: [5831, 5835, 504, 572, 2]
 
-// Module 5828 (RegionalFeatureConfigStore)
+// Module 5830 (RegionalFeatureConfigStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import RegionalFeatureConfigModels from "RegionalFeatureConfigModels" /* 5833 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5829 */;
+import RegionalFeatureConfigModels from "RegionalFeatureConfigModels" /* 5835 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5831 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -69,6 +69,28 @@ class RegionalFeatureConfigStore extends Store {
     const obj = c4;
     if (c4 != null) {
       flag = obj.shouldCollectAppStoreSignal();
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
+  isMediaTakedownRegulation(arg0) {
+    let flag;
+    const obj = c4;
+    if (c4 != null) {
+      flag = obj.isMediaTakedownRegulation(arg0);
+    }
+    if (flag == null) {
+      flag = false;
+    }
+    return flag;
+  }
+  isAppStoreConsentRevoked(arg0) {
+    let flag;
+    const obj = c4;
+    if (c4 != null) {
+      flag = obj.isAppStoreConsentRevoked(arg0);
     }
     if (flag == null) {
       flag = false;

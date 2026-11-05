@@ -1,10 +1,9 @@
 // Module ID: 13165
 // Function ID: 13166
-// Dependencies: [13096]
+// Dependencies: [13166]
 
 // Module 13165
-import _mod13096 from "module_13096" /* 13096 */;
+import _mod13166 from "module_13166" /* 13166 */;
 
-({ node: _mod13096 });
 
-export default { node: _mod13096 };
+export default _mod13166;

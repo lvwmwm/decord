@@ -1,14 +1,14 @@
-// Module ID: 9735
-// Function ID: 9736
+// Module ID: 9741
+// Function ID: 9742
 // Name: useSimilarGames
-// Dependencies: [2143, 1385, 9603, 9463, 8823, 9522, 9602, 7620, 504, 2]
+// Dependencies: [2143, 1385, 9609, 9470, 8828, 9529, 9608, 7622, 504, 2]
 // Exports: default, isShowableSimilarGame
 
-// Module 9735 (useSimilarGames)
-import useGameProfileObscured from "useGameProfileObscured" /* 8823 */;
-import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 9463 */;
-import useGameArtwork from "useGameArtwork" /* 9522 */;
-import SimilarGamesConstants from "SimilarGamesConstants" /* 9603 */;
+// Module 9741 (useSimilarGames)
+import useGameProfileObscured from "useGameProfileObscured" /* 8828 */;
+import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 9470 */;
+import useGameArtwork from "useGameArtwork" /* 9529 */;
+import SimilarGamesConstants from "SimilarGamesConstants" /* 9609 */;
 import GameStore from "GameStore" /* 2143 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ export default function useSimilarGames(arg0) {
   if (tmp) {
     tmp = !set.has(arg0);
   }
-  let obj = data(9602);
+  let obj = data(9608);
   const similarGameIds = obj.useSimilarGameIds(arg0, tmp);
   ({ data, isLoading, error } = similarGameIds);
   if (!tmp) {
@@ -38,7 +38,7 @@ export default function useSimilarGames(arg0) {
     tmp6 = data;
   }
   data = tmp6;
-  const tmp3Result = data(7620);
+  const tmp3Result = data(7622);
   const games = tmp3Result.useGames(tmp6);
   const items = [GameStore];
   const items1 = [tmp6];

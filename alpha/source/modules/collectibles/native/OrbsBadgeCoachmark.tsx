@@ -1,23 +1,23 @@
-// Module ID: 11636
-// Function ID: 11637
+// Module ID: 11644
+// Function ID: 11645
 // Name: OrbsBadgeCoachmark
-// Dependencies: [19, 17, 21, 5141, 5851, 11637, 1113, 5323, 10133, 2]
+// Dependencies: [19, 17, 21, 5143, 5854, 11645, 1113, 5325, 10141, 2]
 // Exports: default, useOrbsBadgeCoachmark
 
-// Module 11636 (OrbsBadgeCoachmark)
+// Module 11644 (OrbsBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import useCoachmark from "useCoachmark" /* 10133 */;
-import _modDef11637 from "module_11637" /* 11637 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import useCoachmark from "useCoachmark" /* 10141 */;
+import _modDef11645 from "module_11645" /* 11645 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 function OrbsBadgeCoachmarkImg() {
   const tmp = closure_6();
-  const obj3 = { uri: _modDef11637 };
+  const obj3 = { uri: _modDef11645 };
   FastImageDefault;
   return <View style={tmp.coachmarkImageContainer}>{null}</View>;
 }

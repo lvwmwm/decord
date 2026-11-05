@@ -1,22 +1,22 @@
-// Module ID: 16996
-// Function ID: 16997
+// Module ID: 17020
+// Function ID: 17021
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 14461, 21, 6879, 5141, 575, 5722, 14463, 14467, 5846, 1113, 14481, 7139, 7306, 2]
+// Dependencies: [5, 32, 19, 17, 14474, 21, 6882, 5143, 575, 5724, 14476, 14480, 5849, 1113, 14494, 7142, 7309, 2]
 // Exports: default
 
-// Module 16996 (ContactSyncNameUpdateModal)
+// Module 17020 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5722 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
-import Navigator from "Navigator" /* 7306 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14461 */;
+import NavigatorConstants from "NavigatorConstants" /* 5724 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
+import Navigator from "Navigator" /* 7309 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
-import NavigatorHeader_mod from "NavigatorHeader" /* 7139 */;
+import createStyles from "createStyles" /* 5143 */;
+import NavigatorHeader_mod from "NavigatorHeader" /* 7142 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

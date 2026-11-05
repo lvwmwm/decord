@@ -1,10 +1,10 @@
-// Module ID: 6045
-// Function ID: 6046
+// Module ID: 6048
+// Function ID: 6049
 // Name: FrontierTuningExperiment
-// Dependencies: [5998, 1450, 2]
+// Dependencies: [6001, 1450, 2]
 
-// Module 6045 (FrontierTuningExperiment)
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5998 */;
+// Module 6048 (FrontierTuningExperiment)
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6001 */;
 import ApexExperiment from "apex/ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 6863
-// Function ID: 6864
+// Module ID: 6866
+// Function ID: 6867
 // Name: AgeVerificationConstants
-// Dependencies: [6864, 3223, 2]
+// Dependencies: [6867, 3223, 2]
 
-// Module 6863 (AgeVerificationConstants)
+// Module 6866 (AgeVerificationConstants)
 import _modDef3223 from "module_3223" /* 3223 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6867 */;
 import size from "module_2" /* 2 */;
 
 const items = [AgeVerificationAnalyticsUtils.AgeVerificationModalEntryPoint.NSFW_GUILD];

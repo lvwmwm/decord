@@ -1,8 +1,8 @@
-// Module ID: 17066
-// Function ID: 17067
+// Module ID: 17090
+// Function ID: 17091
 // Dependencies: [2]
 
-// Module 17066
+// Module 17090
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WizardHatAndBookSpotIllustration-1x.png.js");

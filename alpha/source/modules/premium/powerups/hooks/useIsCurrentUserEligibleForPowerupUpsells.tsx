@@ -1,18 +1,18 @@
-// Module ID: 18478
-// Function ID: 18479
+// Module ID: 18508
+// Function ID: 18509
 // Name: useIsCurrentUserEligibleForPowerupUpsells
-// Dependencies: [5053, 6907, 1385, 7725, 1387, 2112, 504, 2]
+// Dependencies: [5055, 6910, 1385, 7730, 1387, 2112, 504, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 18478 (useIsCurrentUserEligibleForPowerupUpsells)
+// Module 18508 (useIsCurrentUserEligibleForPowerupUpsells)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import SortedGuildStore from "SortedGuildStore" /* 6907 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import SortedGuildStore from "SortedGuildStore" /* 6910 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7725 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7730 */;
 import size from "module_2" /* 2 */;
 
-const f114957 = (premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription;
+const f115138 = (premiumGuildSubscription) => null != premiumGuildSubscription.premiumGuildSubscription;
 const PremiumTypes = PremiumConstants.PremiumTypes;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useIsCurrentUserEligibleForPowerupUpsells.tsx");
 
@@ -48,7 +48,7 @@ export default function useIsCurrentUserEligibleForPowerupUpsells() {
       const tmpResult = tmp(2112);
       let isPremiumResult = tmpResult.isPremium(stateFromStores, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
-        isPremiumResult = stateFromStoresArray.some(f114957) || stateFromStores1.some((item) => {
+        isPremiumResult = stateFromStoresArray.some(f115138) || stateFromStores1.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -56,7 +56,7 @@ export default function useIsCurrentUserEligibleForPowerupUpsells() {
           }
           return null != premiumSince;
         });
-        stateFromStoresArray.some(f114957) || stateFromStores1.some((item) => {
+        stateFromStoresArray.some(f115138) || stateFromStores1.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -89,7 +89,7 @@ export function getIsCurrentUserEligibleForPowerupUpsells() {
       const obj3 = currentUser(2112);
       let isPremiumResult = obj3.isPremium(currentUser, PremiumTypes.TIER_2);
       if (!isPremiumResult) {
-        isPremiumResult = items.some(f114957) || flattenedGuildIds.some((item) => {
+        isPremiumResult = items.some(f115138) || flattenedGuildIds.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {
@@ -97,7 +97,7 @@ export function getIsCurrentUserEligibleForPowerupUpsells() {
           }
           return null != premiumSince;
         });
-        items.some(f114957) || flattenedGuildIds.some((item) => {
+        items.some(f115138) || flattenedGuildIds.some((item) => {
           const member = GuildMemberStore.getMember(item, currentUser.id);
           let premiumSince;
           if (member != null) {

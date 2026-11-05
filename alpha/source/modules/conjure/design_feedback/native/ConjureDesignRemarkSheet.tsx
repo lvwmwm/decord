@@ -1,19 +1,19 @@
-// Module ID: 12459
-// Function ID: 12460
+// Module ID: 12466
+// Function ID: 12467
 // Name: ConjureDesignRemarkSheet
-// Dependencies: [32, 19, 17, 11028, 21, 5141, 575, 5382, 12417, 7502, 7457, 7389, 1113, 3995, 5768, 2]
+// Dependencies: [32, 19, 17, 11034, 21, 5143, 575, 5384, 12424, 7504, 7460, 7392, 1113, 3995, 5770, 2]
 // Exports: default
 
-// Module 12459 (ConjureDesignRemarkSheet)
+// Module 12466 (ConjureDesignRemarkSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12417 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12424 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

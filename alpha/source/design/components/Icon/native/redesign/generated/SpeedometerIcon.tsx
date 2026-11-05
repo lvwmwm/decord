@@ -1,14 +1,14 @@
-// Module ID: 12124
-// Function ID: 12125
+// Module ID: 12133
+// Function ID: 12134
 // Name: SpeedometerIcon
-// Dependencies: [19, 21, 575, 5850, 12125, 2]
+// Dependencies: [19, 21, 575, 5853, 12134, 2]
 // Exports: SpeedometerIcon
 
-// Module 12124 (SpeedometerIcon)
+// Module 12133 (SpeedometerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 12125 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 12134 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

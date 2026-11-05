@@ -1,14 +1,14 @@
-// Module ID: 18615
-// Function ID: 18616
+// Module ID: 18645
+// Function ID: 18646
 // Name: GuildsBarDnDStore
-// Dependencies: [6907, 1254, 1652, 1259, 1242, 5056, 2]
+// Dependencies: [6910, 1254, 1652, 1259, 1242, 5058, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 18615 (GuildsBarDnDStore)
+// Module 18645 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native from "react-native" /* 1259 */;
-import _slicedToArray from "_slicedToArray" /* 5056 */;
-import SortedGuildStore from "SortedGuildStore" /* 6907 */;
+import _slicedToArray from "_slicedToArray" /* 5058 */;
+import SortedGuildStore from "SortedGuildStore" /* 6910 */;
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
@@ -30,14 +30,14 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "dispatch",
+    overSpecs: "sa",
     dropSpecs: "isArray",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
     dragDropInProgress: obj4.makeMutable(false),
     listInsets: obj5.makeMutable({ start: 0, end: 0 }),
     scrollPosition: obj6.makeMutable(0),
-    windowSize: "<string:3039205575>",
+    windowSize: "PTB",
     setStateShallow(obj) {
       closure_0 = obj;
       const tmp = closure_1();
@@ -77,7 +77,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "useEffect" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "ao" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -108,7 +108,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Array" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "ti" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -149,7 +149,7 @@ export function useItemDragState(guildId, flag) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "dispatch", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "sa", overState: "isArray", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

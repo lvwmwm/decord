@@ -1,11 +1,11 @@
-// Module ID: 6098
-// Function ID: 6099
+// Module ID: 6101
+// Function ID: 6102
 // Name: react-native
-// Dependencies: [6097, 2]
+// Dependencies: [6100, 2]
 // Exports: default
 
-// Module 6098 (react-native)
-import react_nativeDefault from "react-native" /* 6097 */;
+// Module 6101 (react-native)
+import react_nativeDefault from "react-native" /* 6100 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/native/markAccessibilityFocus.tsx");

@@ -1,14 +1,14 @@
 // Module ID: 2191
 // Function ID: 2192
 // Name: LocaleStore
-// Dependencies: [5, 2192, 1231, 4952, 1113, 504, 572, 2]
+// Dependencies: [5, 2192, 1231, 4954, 1113, 504, 572, 2]
 
 // Module 2191 (LocaleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl from "intl" /* 1113 */;
 import IntlLoaderStore from "IntlLoaderStore" /* 2192 */;
-import DiscordNativeDefault from "DiscordNative" /* 4952 */;
+import DiscordNativeDefault from "DiscordNative" /* 4954 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import size from "module_2" /* 2 */;

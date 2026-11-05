@@ -1,9 +1,9 @@
-// Module ID: 8088
-// Function ID: 8089
+// Module ID: 8093
+// Function ID: 8094
 // Name: ForumPlatformUtils
 // Dependencies: [1113, 2]
 
-// Module 8088 (ForumPlatformUtils)
+// Module 8093 (ForumPlatformUtils)
 import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

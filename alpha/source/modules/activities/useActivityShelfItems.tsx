@@ -1,12 +1,12 @@
-// Module ID: 12585
-// Function ID: 12586
+// Module ID: 12592
+// Function ID: 12593
 // Name: useActivityShelfItems
-// Dependencies: [19, 5808, 504, 12586, 12587, 12588, 2]
+// Dependencies: [19, 5810, 504, 12593, 12594, 12595, 2]
 // Exports: default
 
-// Module 12585 (useActivityShelfItems)
+// Module 12592 (useActivityShelfItems)
 import react from "react" /* 19 */;
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5808 */;
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 5810 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -26,11 +26,11 @@ export default function useActivityShelfItems(enableFilter) {
     const obj = { filter: filter.getFilter() };
     return obj;
   }).filter;
-  const obj2 = flag(12586);
+  const obj2 = flag(12593);
   const activityShelfData = obj2.useActivityShelfData(guildId);
-  const tmp2 = filter(12587)(activityShelfData);
+  const tmp2 = filter(12594)(activityShelfData);
   dependencyMap = tmp2;
-  const obj3 = flag(12588);
+  const obj3 = flag(12595);
   const developerActivityShelfItems = obj3.useDeveloperActivityShelfItems();
   const items1 = [developerActivityShelfItems, flag, filter, tmp2];
   return developerActivityShelfItems.useMemo(() => {

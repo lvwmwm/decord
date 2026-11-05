@@ -1,14 +1,14 @@
-// Module ID: 14721
-// Function ID: 14722
+// Module ID: 14734
+// Function ID: 14735
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 1652, 5155, 5771, 1705, 14722, 5761, 2]
+// Dependencies: [32, 19, 21, 1652, 5157, 5773, 1705, 14735, 5763, 2]
 
-// Module 14721 (BalanceCounter)
+// Module 14734 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import react2 from "react" /* 5155 */;
-import spring_spring from "spring/spring" /* 5771 */;
+import react2 from "react" /* 5157 */;
+import spring_spring from "spring/spring" /* 5773 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5761);
+const Text_Text = tmp(5763);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;
@@ -81,7 +81,7 @@ class BalanceCounter {
     const tmp9 = sharedValue(ref2(false), 2);
     let closure_7 = tmp9[1];
     const first = tmp9[0];
-    const tmp11 = closure_7((set, bound, duration) => {
+    const tmp11 = closure_7((set, point2, duration) => {
       let tmp3;
       let tmp4;
       let tmp5;
@@ -107,7 +107,7 @@ class BalanceCounter {
       BalanceCounterTsx1.__closure = items1;
       BalanceCounterTsx1.__workletHash = 2321092596604;
       BalanceCounterTsx1.__initData = tmp3;
-      const result = set(withSpring(bound, obj, "respect-motion-settings", BalanceCounterTsx1));
+      const result = set(withSpring(point2, obj, "respect-motion-settings", BalanceCounterTsx1));
     }, []);
     react = tmp11;
     let items = [value, onValueChange, onValueReached, sharedValue, tmp11, enabled];

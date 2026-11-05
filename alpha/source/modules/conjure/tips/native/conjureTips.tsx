@@ -1,12 +1,12 @@
-// Module ID: 12839
-// Function ID: 12840
+// Module ID: 12846
+// Function ID: 12847
 // Name: conjureTips
-// Dependencies: [12840, 12846, 12847, 2]
+// Dependencies: [12847, 12853, 12854, 2]
 
-// Module 12839 (conjureTips)
-import ConjureBotPermissionsTip from "ConjureBotPermissionsTip" /* 12840 */;
-import ConjureLiveBehindTip from "ConjureLiveBehindTip" /* 12846 */;
-import ConjureIdeasIntroTip from "ConjureIdeasIntroTip" /* 12847 */;
+// Module 12846 (conjureTips)
+import ConjureBotPermissionsTip from "ConjureBotPermissionsTip" /* 12847 */;
+import ConjureLiveBehindTip from "ConjureLiveBehindTip" /* 12853 */;
+import ConjureIdeasIntroTip from "ConjureIdeasIntroTip" /* 12854 */;
 import size from "module_2" /* 2 */;
 
 const items = [ConjureBotPermissionsTip.CONJURE_BOT_PERMISSIONS_TIP, ConjureLiveBehindTip.CONJURE_LIVE_BEHIND_TIP, ConjureIdeasIntroTip.CONJURE_IDEAS_INTRO_TIP];

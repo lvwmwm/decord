@@ -1,17 +1,17 @@
-// Module ID: 10732
-// Function ID: 10733
+// Module ID: 10738
+// Function ID: 10739
 // Name: MediaKeyboardLimitedPickerNotice
-// Dependencies: [19, 17, 21, 5141, 5761, 1113, 5768, 2]
+// Dependencies: [19, 17, 21, 5143, 5763, 1113, 5770, 2]
 // Exports: default
 
-// Module 10732 (MediaKeyboardLimitedPickerNotice)
+// Module 10738 (MediaKeyboardLimitedPickerNotice)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import components_Button_Button from "components/Button/Button" /* 5768 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import components_Button_Button from "components/Button/Button" /* 5770 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

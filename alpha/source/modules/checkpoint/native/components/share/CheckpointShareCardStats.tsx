@@ -1,24 +1,24 @@
-// Module ID: 13670
-// Function ID: 13671
+// Module ID: 13681
+// Function ID: 13682
 // Name: CheckpointShareCardStats
-// Dependencies: [19, 17, 21, 5141, 575, 8283, 5851, 13669, 5761, 9599, 2021, 1411, 12169, 8784, 9908, 9877, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 8288, 5854, 13680, 5763, 9605, 2021, 1411, 12178, 8789, 9914, 9883, 2]
 // Exports: default
 
-// Module 13670 (CheckpointShareCardStats)
+// Module 13681 (CheckpointShareCardStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import react_nativeDefault from "react-native" /* 2021 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import UnknownGameIcon from "UnknownGameIcon" /* 8283 */;
-import ChatIcon from "ChatIcon" /* 8784 */;
-import ReactionIcon from "ReactionIcon" /* 9599 */;
-import GameControllerIcon from "GameControllerIcon" /* 9877 */;
-import ServerIcon from "ServerIcon" /* 9908 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12169 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import UnknownGameIcon from "UnknownGameIcon" /* 8288 */;
+import ChatIcon from "ChatIcon" /* 8789 */;
+import ReactionIcon from "ReactionIcon" /* 9605 */;
+import GameControllerIcon from "GameControllerIcon" /* 9883 */;
+import ServerIcon from "ServerIcon" /* 9914 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12178 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -28,7 +28,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5761);
+const Text_Text = tmp2(5763);
 function StatIcon(size) {
   size = size.size;
   const obj = { size: "custom", color: nativeDefault.colors.BLACK, style: { width: size, height: size } };
@@ -105,9 +105,9 @@ export default function CheckpointShareCardStats(arg0) {
   let rowStyle;
   let stats;
   let style;
+  let tmp13;
   let tmp14;
-  let tmp15;
-  let tmp15Result;
+  let tmp14Result;
   let tmp4Result4;
   let topEmoji;
   let topGame;
@@ -146,63 +146,63 @@ export default function CheckpointShareCardStats(arg0) {
   }
   if (null != guildIconURL) {
     const obj5 = { uri: guildIconURL, size: iconSize };
-    tmp14 = hasOwnProperty(StatImage, obj5);
-    tmp15 = hasOwnProperty;
+    tmp13 = hasOwnProperty(StatImage, obj5);
+    tmp14 = hasOwnProperty;
   } else {
     const obj6 = { style: items, children: hasOwnProperty(Text_Text.Text, obj7) };
     items = [, , ];
-    ({ statImage: arr[0], guildAcronym: arr[1] } = tmp);
+    ({ statImage: arr3[0], guildAcronym: arr3[1] } = tmp);
     size = { width: iconSize, height: iconSize };
     items[2] = size;
     obj7 = { variant: "footnote/normal", color: "text-overlay-dark", allowFontScaling: false, children: topGuildAcronymCharacter };
-    tmp14 = hasOwnProperty(View, obj6);
-    tmp15 = hasOwnProperty;
+    tmp13 = hasOwnProperty(View, obj6);
+    tmp14 = hasOwnProperty;
   }
   if (null == topEmoji) {
     const obj8 = { Icon: UnknownGameIcon.UnknownGameIcon, size: iconSize };
-    tmp15Result = tmp15(StatIcon, obj8);
+    tmp14Result = tmp14(StatIcon, obj8);
   } else if (null != topEmoji.emojiId) {
     const obj9 = { uri: tmp4Result4.getEmojiURL(obj10), size: iconSize };
     obj10 = { id: topEmoji.emojiId, animated: false, size: rounded };
     tmp4Result4 = AvatarUtilsDefault;
-    tmp15Result = tmp15(StatImage, obj9);
+    tmp14Result = tmp14(StatImage, obj9);
   } else {
-    const obj11 = { style: items1, children: tmp15(Text_Text.Text, obj12) };
+    const obj11 = { style: items1, children: tmp14(Text_Text.Text, obj12) };
     items1 = [tmp.statImage, ];
     const size1 = { width: iconSize, height: iconSize };
     items1[1] = size1;
     obj12 = { variant: "body-xs/semibold", style: tmp.unicodeEmoji, allowFontScaling: false, children: topEmoji.emojiName };
-    tmp15Result = tmp15(View, obj11);
+    tmp14Result = tmp14(View, obj11);
   }
   const obj13 = { layout, rowStyle };
   const obj14 = { style, children: items2 };
-  const obj15 = { icon: tmp15(StatIcon, obj16), stat: stats.voice };
+  const obj15 = { icon: tmp14(StatIcon, obj16), stat: stats.voice };
   obj16 = { Icon: MicrophoneIcon.MicrophoneIcon, size: iconSize };
   const merged = Object.assign(obj13);
-  items2 = [tmp15(StatRow, obj15), , , , , , , ];
-  const obj17 = { icon: tmp15(StatIcon, obj18), stat: stats.messages };
+  items2 = [tmp14(StatRow, obj15), , , , , , , ];
+  const obj17 = { icon: tmp14(StatIcon, obj18), stat: stats.messages };
   obj18 = { Icon: ChatIcon.ChatIcon, size: iconSize };
   const merged1 = Object.assign(obj13);
-  items2[1] = tmp15(StatRow, obj17);
-  const obj19 = { icon: tmp15(StatIcon, obj20), stat: stats.topGuildDaysInteracted };
+  items2[1] = tmp14(StatRow, obj17);
+  const obj19 = { icon: tmp14(StatIcon, obj20), stat: stats.topGuildDaysInteracted };
   obj20 = { Icon: ServerIcon.ServerIcon, size: iconSize };
   const merged2 = Object.assign(obj13);
-  items2[2] = tmp15(StatRow, obj19);
-  const obj21 = { icon: tmp14, stat: stats.topGuildName };
+  items2[2] = tmp14(StatRow, obj19);
+  const obj21 = { icon: tmp13, stat: stats.topGuildName };
   const merged3 = Object.assign(obj13);
-  items2[3] = tmp15(StatRow, obj21);
-  const obj22 = { icon: tmp15(StatIcon, { Icon: reactionsIcon, size: iconSize }), stat: stats.reactions };
+  items2[3] = tmp14(StatRow, obj21);
+  const obj22 = { icon: tmp14(StatIcon, { Icon: reactionsIcon, size: iconSize }), stat: stats.reactions };
   const merged4 = Object.assign(obj13);
-  items2[4] = tmp15(StatRow, obj22);
-  const obj23 = { icon: tmp15Result, stat: stats.topEmojiName };
+  items2[4] = tmp14(StatRow, obj22);
+  const obj23 = { icon: tmp14Result, stat: stats.topEmojiName };
   const merged5 = Object.assign(obj13);
-  items2[5] = tmp15(StatRow, obj23);
-  const obj24 = { icon: tmp15(StatIcon, obj25), stat: stats.daysPlayed };
+  items2[5] = tmp14(StatRow, obj23);
+  const obj24 = { icon: tmp14(StatIcon, obj25), stat: stats.daysPlayed };
   obj25 = { Icon: GameControllerIcon.GameControllerIcon, size: iconSize };
   const merged6 = Object.assign(obj13);
-  items2[6] = tmp15(StatRow, obj24);
-  const obj26 = { icon: tmp15(StatImage, { uri: applicationIconURL, size: iconSize }), stat: stats.topGameName };
+  items2[6] = tmp14(StatRow, obj24);
+  const obj26 = { icon: tmp14(StatImage, { uri: applicationIconURL, size: iconSize }), stat: stats.topGameName };
   const merged7 = Object.assign(obj13);
-  items2[7] = tmp15(StatRow, obj26);
+  items2[7] = tmp14(StatRow, obj26);
   return metroRequire(View, obj14);
 };

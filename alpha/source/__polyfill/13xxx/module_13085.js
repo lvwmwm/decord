@@ -1,83 +1,174 @@
 // Module ID: 13085
 // Function ID: 13086
-// Dependencies: [13057]
+// Dependencies: [13056, 13078]
 
 // Module 13085
-import List from "List" /* 13057 */;
+import _mod13056 from "module_13056" /* 13056 */;
 
-function getFirstMatchNode(node) {
-  if ("node" in node) {
-    node = node.node;
-  } else {
-    node = getFirstMatchNode(node.match[0]);
+const require = globalThis.__r;
+let _require, dependencyMap;
+
+function isCommaContextStart(type) {
+  let tmp = null === type;
+  if (!tmp) {
+    let tmp4 = type.type === _mod13056.TYPE.Comma || type.type === tmp2(13056).TYPE.Function || type.type === tmp2(13056).TYPE.LeftParenthesis || type.type === tmp2(13056).TYPE.LeftSquareBracket || type.type === tmp2(13056).TYPE.LeftCurlyBracket;
+    if (!tmp4) {
+      tmp4 = type.type === tmp2(13056).TYPE.Delim && "?" !== type.value;
+      const tmp5 = type.type === tmp2(13056).TYPE.Delim && "?" !== type.value;
+    }
+    tmp = tmp4;
   }
-  return node;
+  return tmp;
 }
-function getLastMatchNode(node) {
-  if ("node" in node) {
-    node = node.node;
-  } else {
-    node = getLastMatchNode(node.match[node.match.length - 1]);
-  }
-  return node;
-}
-let obj = {
-  matchFragments(arg0, value, matched, arg3, arg4) {
-    let closure_0 = arg0;
-    let closure_1 = value;
-    let closure_2 = arg3;
-    let closure_3 = arg4;
-    const items = [];
-    if (null !== matched.matched) {
-      function findFragments(matched) {
-        if (null !== matched.syntax) {
-          if (matched.syntax.type === closure_2) {
-            if (matched.syntax.name === closure_3) {
-              let node;
-              let node2;
-              if ("node" in matched) {
-                node = matched.node;
-              } else if ("node" in matched.match[0]) {
-                node = str.node;
-              } else {
-                node = closure_2(str.match[0]);
-              }
-              if ("node" in matched) {
-                node2 = matched.node;
-              } else if ("node" in matched.match[matched.match.length - 1]) {
-                node2 = str2.node;
-              } else {
-                node2 = closure_3(str2.match[str2.match.length - 1]);
-              }
-              const syntax = node.syntax;
-              syntax.walk(node2, function(arg0, arg1, parent) {
-                if (arg0 === node) {
-                  let iter = arg1;
-                  const self = this;
-                  const self2 = this;
-                  const obj = new List();
-                  obj.appendData(iter.data);
-                  while (iter.data !== node2) {
-                    iter = iter.next;
-                    if (null === iter) {
-                      break;
-                    }
-                  }
-                  const obj2 = { parent, nodes: obj };
-                  items.push(obj2);
-                }
-              });
-            }
-          }
-        }
-        if (Array.isArray(matched.match)) {
-          const match = matched.match;
-          const item = match.forEach(findFragments);
+function internalMatch(arg0, arg1, arg2) {
+  let closure_0;
+  let syntax;
+  _require = arg0;
+  dependencyMap = arg1;
+  let c2 = null;
+  Match = null;
+  c4 = -1;
+  let closure_5 = 0;
+  let prev = { type: 0, syntax: null, token: null, prev: null };
+  while (true) {
+    let tmp = c4;
+    let sum = c4 + 1;
+    c4 = sum;
+    let tmp3 = null;
+    if (sum < arg0.length) {
+      let tmp4 = c4;
+      tmp3 = arg0[c4];
+    }
+    Match = tmp3;
+    let tmp5 = null;
+    let tmp6 = null;
+    let tmp7 = null;
+    let tmp8 = null;
+    if (null === tmp3) {
+      break;
+    } else {
+      let tmp10 = _require;
+      if (tmp3.type === require("module_13056").TYPE.WhiteSpace) {
+        continue;
+      } else {
+        tmp5 = null;
+        tmp6 = null;
+        tmp7 = null;
+        tmp8 = null;
+        if (Match.type !== tmp10(13056).TYPE.Comment) {
+          break;
         }
       }
-      findFragments(matched.matched);
+      continue;
     }
-    return items;
+  }
+}
+let Match = "Match";
+let c4 = 0;
+let obj = {
+  matchAsList(arg0, arg1, arg2) {
+    let obj = arg2;
+    const tmp = internalMatch;
+    if (!arg2) {
+      obj = {};
+    }
+    const str = tmp(arg0, arg1, obj);
+    if (null !== str.match) {
+      let prev = str.match;
+      let tmp3 = null;
+      let tmp4 = null;
+      if (null !== prev) {
+        do {
+          prev.prev = tmp3;
+          tmp3 = prev;
+          tmp4 = prev;
+          prev = prev.prev;
+        } while (null !== tmp2);
+      }
+      let prev2 = tmp4.prev;
+      str.match = [];
+      if (null !== prev2) {
+        do {
+          let type = prev2.type;
+          if (0 !== type) {
+            if (2 !== type) {
+              if (3 !== type) {
+                let match = str.match;
+                let obj2 = { token: prev2.token.value, node: prev2.token.node };
+                let arr = match.push(obj2);
+              }
+            }
+            let match1 = str.match;
+            let obj5 = { type: null, syntax: null };
+            ({ type: obj3.type, syntax: obj3.syntax } = prev2);
+            let arr2 = match1.push(obj5);
+          }
+          prev2 = prev2.prev;
+        } while (null !== prev2);
+      }
+    }
+    return str;
+  },
+  matchAsTree(arr, match, self) {
+    let tmp2;
+    let obj = self;
+    const tmp = internalMatch;
+    if (!self) {
+      obj = {};
+    }
+    const str = tmp(arr, match, obj);
+    if (null === str.match) {
+      return str;
+    } else {
+      let prev = str.match;
+      let obj2 = { syntax: tmp2, match: [] };
+      tmp2 = match.syntax || null;
+      str.match = obj2;
+      const items = [obj2];
+      let tmp3 = null;
+      let tmp4 = null;
+      if (null !== prev) {
+        do {
+          prev.prev = tmp3;
+          tmp3 = prev;
+          tmp4 = prev;
+          prev = prev.prev;
+        } while (null !== tmp5);
+      }
+      let prev2 = tmp4.prev;
+      if (null !== prev2) {
+        do {
+          let tmp10;
+          let type = prev2.type;
+          if (2 === type) {
+            match = obj2.match;
+            let obj3 = { syntax: prev2.syntax, match: [] };
+            arr = match.push(obj3);
+            let arr2 = items.push(obj3);
+            tmp10 = obj3;
+          } else if (3 === type) {
+            let arr3 = items.pop();
+            tmp10 = items[items.length - 1];
+          } else {
+            let match1 = obj2.match;
+            let syntax = prev2.syntax;
+            let push = match1.push;
+            if (!syntax) {
+              syntax = null;
+            }
+            let obj4 = { syntax, token: prev2.token.value, node: prev2.token.node };
+            let arr7 = push(obj4);
+            tmp10 = obj2;
+          }
+          prev2 = prev2.prev;
+          obj2 = tmp10;
+        } while (null !== prev2);
+      }
+      return str;
+    }
+  },
+  getTotalIterationCount() {
+    return c4;
   }
 };
 

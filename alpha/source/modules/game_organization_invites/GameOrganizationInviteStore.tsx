@@ -1,22 +1,21 @@
-// Module ID: 11551
-// Function ID: 11552
+// Module ID: 11559
+// Function ID: 11560
 // Name: GameOrganizationInviteStore
-// Dependencies: [11552, 11553, 11554, 504, 572, 2]
+// Dependencies: [11560, 11561, 11562, 504, 572, 2]
 
-// Module 11551 (GameOrganizationInviteStore)
+// Module 11559 (GameOrganizationInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GameOrganizationModels from "GameOrganizationModels" /* 11553 */;
-import fromServerGameOrganization from "fromServerGameOrganization" /* 11554 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11552 */;
+import GameOrganizationModels from "GameOrganizationModels" /* 11561 */;
+import fromServerGameOrganization from "fromServerGameOrganization" /* 11562 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11560 */;
 import size from "module_2" /* 2 */;
-
-let set;
 
 let c2;
 let c3;
 ({ GameOrganizationCharacterMode: c2, GameOrganizationInviteStates: c3 } = GameOrganizationInviteConstants);
 let map = new Map();
+let set = new Set();
 const Store = get_initializedDefault.Store;
 class GameOrganizationInviteStore extends Store {
   getInvite(arg0) {
@@ -28,6 +27,12 @@ class GameOrganizationInviteStore extends Store {
   }
   getInvites() {
     return map;
+  }
+  isJoinFlowPending(code) {
+    return set.has(code);
+  }
+  getPendingJoinFlowCodes() {
+    return set;
   }
 }
 const prototype = GameOrganizationInviteStore.prototype;
@@ -123,6 +128,24 @@ let obj = {
       set = map.set;
       const merged = Object.assign(value);
       const result = set(code, obj);
+    }
+  },
+  GAME_ORGANIZATION_JOIN_FLOW_PENDING: function handleJoinFlowPending(arg0) {
+    let code;
+    let pending;
+    ({ code, pending } = arg0);
+    if (set.has(code) === pending) {
+      return false;
+    } else {
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
+      set = new Set(set);
+      if (pending) {
+        set.add(code);
+      } else {
+        set.delete(code);
+      }
     }
   }
 };

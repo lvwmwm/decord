@@ -1,9 +1,9 @@
-// Module ID: 10207
-// Function ID: 10208
+// Module ID: 10215
+// Function ID: 10216
 // Name: EmojiPickerRowViewNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 10207 (EmojiPickerRowViewNativeComponent)
+// Module 10215 (EmojiPickerRowViewNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

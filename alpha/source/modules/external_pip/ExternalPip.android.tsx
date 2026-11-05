@@ -1,11 +1,11 @@
-// Module ID: 6008
-// Function ID: 6009
+// Module ID: 6011
+// Function ID: 6012
 // Name: ExternalPip
-// Dependencies: [6009, 6010, 2]
+// Dependencies: [6012, 6013, 2]
 
-// Module 6008 (ExternalPip)
-import getExternalPipTileNativeId from "getExternalPipTileNativeId" /* 6010 */;
-import react_native from "react-native" /* 6009 */;
+// Module 6011 (ExternalPip)
+import getExternalPipTileNativeId from "getExternalPipTileNativeId" /* 6013 */;
+import react_native from "react-native" /* 6012 */;
 import size_mod from "module_2" /* 2 */;
 
 const isSupported = react_native.getConstants().isSupported;

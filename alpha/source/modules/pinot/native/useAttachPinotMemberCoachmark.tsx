@@ -1,17 +1,17 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11528
+// Function ID: 11529
 // Name: useAttachPinotMemberCoachmark
-// Dependencies: [19, 1072, 4987, 21, 11521, 575, 11513, 11523, 1113, 3287, 5761, 7703, 5843, 2190, 10133, 2]
+// Dependencies: [19, 1072, 4989, 21, 11529, 575, 11521, 11531, 1113, 3287, 5763, 7705, 5846, 2190, 10141, 2]
 // Exports: useAttachPinotMemberCoachmark
 
-// Module 11520 (useAttachPinotMemberCoachmark)
+// Module 11528 (useAttachPinotMemberCoachmark)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3287 from "module_3287" /* 3287 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11521 */;
-import PinotAnalytics from "PinotAnalytics" /* 11523 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11529 */;
+import PinotAnalytics from "PinotAnalytics" /* 11531 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -82,7 +82,6 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
         const obj = position(markAsDismissed[7]);
         const obj2 = { noticeType: "member_coachmark", guildId };
         const result = obj.trackPinotNoticeAction(obj2, "learn_more");
-        closure_1_2(constants3.TAKE_ACTION);
         const openURL = visible(markAsDismissed[12]).openURL;
         visible(markAsDismissed[12]);
         const obj3 = visible(markAsDismissed[13]);
@@ -101,7 +100,6 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
         const obj = position(markAsDismissed[7]);
         const obj2 = { noticeType: "member_coachmark", guildId };
         const result = obj.trackPinotNoticeAction(obj2, "open_settings");
-        closure_1_2(constants3.TAKE_ACTION);
         const obj3 = position(markAsDismissed[11]);
         const obj4 = { screen: constants2.DATA_AND_PRIVACY };
         obj3.openUserSettings(obj4);

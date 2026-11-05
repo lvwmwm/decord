@@ -1,37 +1,30 @@
 // Module ID: 5517
 // Function ID: 5518
-// Dependencies: [5499, 5518, 5472, 5520]
-// Exports: useGestureCallbacks
+// Dependencies: [5501, 5518, 5492]
+// Exports: useTapGesture
 
 // Module 5517
-import _mod5499 from "module_5499" /* 5499 */;
-import react from "react" /* 5518 */;
-import useReanimatedEventHandler from "useReanimatedEventHandler" /* 5520 */;
+import ComposedGestureName from "ComposedGestureName" /* 5492 */;
+import _mod5501 from "module_5501" /* 5501 */;
+import _mod5518 from "module_5518" /* 5518 */;
 
-let closure_2 = {};
+function transformTapProps(shouldCancelWhenOutside) {
+  if (undefined === shouldCancelWhenOutside.shouldCancelWhenOutside) {
+    shouldCancelWhenOutside.shouldCancelWhenOutside = true;
+  }
+  return shouldCancelWhenOutside;
+}
+const items = [["maxDistance", "maxDist"], ["maxDuration", "maxDurationMs"], ["maxDelay", "maxDelayMs"]];
+const map = new Map(items);
+let closure_4 = {};
 
-export function useGestureCallbacks(arg0, disableReanimated) {
-  const obj = _mod5499;
-  const memoizedGestureCallbacks = obj.useMemoizedGestureCallbacks(disableReanimated);
-  let reanimatedEventHandler;
-  const obj2 = react;
-  const jsEventHandler = obj2.useGestureEventHandler(arg0, memoizedGestureCallbacks, disableReanimated);
-  if (!disableReanimated.disableReanimated) {
-    let tmp6 = memoizedGestureCallbacks;
-    if (true === disableReanimated.runOnJS) {
-      tmp6 = closure_2;
-    }
-    const Reanimated = tmp(5472).Reanimated;
-    let handler;
-    if (Reanimated != null) {
-      handler = Reanimated.useHandler(tmp6);
-    }
-    const tmpResult = useReanimatedEventHandler;
-    reanimatedEventHandler = tmpResult.useReanimatedEventHandler(arg0, tmp6, handler, disableReanimated.changeEventCalculator, disableReanimated.fillInDefaultValues);
+export function useTapGesture(tmp82Result) {
+  let tmp = tmp82Result;
+  if (tmp82Result === undefined) {
+    tmp = closure_4;
   }
-  let animatedEventHandler;
-  if (disableReanimated.dispatchesAnimatedEvents) {
-    animatedEventHandler = disableReanimated.onUpdate;
-  }
-  return { jsEventHandler, reanimatedEventHandler, animatedEventHandler };
+  const obj = _mod5501;
+  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformTapProps);
+  const obj2 = _mod5518;
+  return obj2.useGesture(ComposedGestureName.SingleGestureName.Tap, clonedAndRemappedConfig);
 }

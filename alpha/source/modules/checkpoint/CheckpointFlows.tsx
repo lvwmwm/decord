@@ -1,12 +1,12 @@
-// Module ID: 13676
-// Function ID: 13677
+// Module ID: 13687
+// Function ID: 13688
 // Name: CheckpointFlows
-// Dependencies: [6570, 6572, 13677, 13678, 2]
+// Dependencies: [6572, 6574, 13688, 13689, 2]
 // Exports: getAdjacentCheckpointRoute, getCheckpointFlow, getCheckpointRoutes
 
-// Module 13676 (CheckpointFlows)
-import CheckpointNavigation from "CheckpointNavigation" /* 6570 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6572 */;
+// Module 13687 (CheckpointFlows)
+import CheckpointNavigation from "CheckpointNavigation" /* 6572 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6574 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -46,10 +46,10 @@ export function getCheckpointFlow(flag) {
 export function getCheckpointRoutes(stats) {
   let prop;
   stats = stats.stats;
-  if (stats.flow === stats(6570).CheckpointFlow.SHARED_DATA) {
-    prop = tmp(13677).CHECKPOINT_SHARED_DATA_FLOW;
+  if (stats.flow === stats(6572).CheckpointFlow.SHARED_DATA) {
+    prop = tmp(13688).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(13678).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(13689).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   return prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
@@ -75,10 +75,10 @@ export function getAdjacentCheckpointRoute(stats) {
   let prop;
   stats = stats.stats;
   ({ flow, currentRoute, direction } = stats);
-  if (flow === stats(6570).CheckpointFlow.SHARED_DATA) {
-    prop = tmp(13677).CHECKPOINT_SHARED_DATA_FLOW;
+  if (flow === stats(6572).CheckpointFlow.SHARED_DATA) {
+    prop = tmp(13688).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(13678).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(13689).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   const found = prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
@@ -97,7 +97,7 @@ export function getAdjacentCheckpointRoute(stats) {
   });
   const index = found.indexOf(currentRoute);
   if (-1 === index) {
-    INTRODUCTION = tmp(6570).CheckpointRoute.INTRODUCTION;
+    INTRODUCTION = tmp(6572).CheckpointRoute.INTRODUCTION;
   } else {
     INTRODUCTION = found[index + direction];
     const tmp5 = null;

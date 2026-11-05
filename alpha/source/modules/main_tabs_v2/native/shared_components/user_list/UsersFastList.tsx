@@ -1,27 +1,27 @@
-// Module ID: 10911
-// Function ID: 10912
+// Module ID: 10917
+// Function ID: 10918
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 10912, 21, 5141, 575, 10913, 7116, 9970, 1652, 5761, 1187, 7121, 10914, 1627, 7354, 10915, 10916, 10976, 10979, 14631, 14632, 7360, 2]
+// Dependencies: [32, 19, 17, 10918, 21, 5143, 575, 10919, 7119, 9976, 1652, 5763, 1187, 7124, 10920, 1627, 7357, 10921, 10922, 10982, 10985, 14644, 14645, 7363, 2]
 // Exports: UsersFastList
 
-// Module 10911 (UsersFastList)
+// Module 10917 (UsersFastList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import TableRow2 from "TableRow" /* 7116 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 9970 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10913 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10914 */;
-import UserRowDefault from "UserRow" /* 10916 */;
-import GroupDMRowDefault from "GroupDMRow" /* 10976 */;
-import ChannelRowDefault from "ChannelRow" /* 10979 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import TableRow2 from "TableRow" /* 7119 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 9976 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10919 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10920 */;
+import UserRowDefault from "UserRow" /* 10922 */;
+import GroupDMRowDefault from "GroupDMRow" /* 10982 */;
+import ChannelRowDefault from "ChannelRow" /* 10985 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 10912 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 10918 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -202,7 +202,7 @@ let closure_16 = react.memo(function UserSectionInner(arg0) {
   const obj5 = { maxFontSizeMultiplier: 2, accessibilityRole: "header", variant: "body-md/medium", color: "text-subtle", style: memo, children: items9 };
   items9 = [title, ];
   let tmp20 = null;
-  const Text = tmp3(5761).Text;
+  const Text = tmp3(5763).Text;
   if (null != badge) {
     const obj6 = { style: tmp.badgeWrapper, children: metroImportDefault(native.Badge, obj7) };
     obj7 = { style: tmp.badge, value: badge };
@@ -219,7 +219,7 @@ let closure_16 = react.memo(function UserSectionInner(arg0) {
   let tmp26 = tmp19Result4;
   if (null != onTitlePress) {
     const obj9 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp19Result4 };
-    tmp26 = metroImportDefault(tmp3(7121).PressableOpacity, obj9);
+    tmp26 = metroImportDefault(tmp3(7124).PressableOpacity, obj9);
   }
   const obj10 = { style: memo1, children: items11 };
   items11 = [tmp26, ];
@@ -227,7 +227,7 @@ let closure_16 = react.memo(function UserSectionInner(arg0) {
   const tmp28 = View;
   if (null != actionTitle) {
     const obj11 = { onPress: action, children: metroImportDefault(Text_Text.Text, obj12) };
-    const PressableOpacity = tmp3(7121).PressableOpacity;
+    const PressableOpacity = tmp3(7124).PressableOpacity;
     obj12 = { variant: "body-sm/semibold", color: "text-brand", children: actionTitle };
     tmp29 = metroImportDefault(PressableOpacity, obj11);
   }

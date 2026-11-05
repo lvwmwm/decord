@@ -1,10 +1,10 @@
-// Module ID: 15505
-// Function ID: 15506
+// Module ID: 15518
+// Function ID: 15519
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 2184, 1072, 2176, 1282, 572, 6581, 38, 6590, 2]
+// Dependencies: [109, 32, 5, 19, 2184, 1072, 2176, 1282, 572, 6584, 38, 6593, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 15505 (PremiumSubscriptionInvoice)
+// Module 15518 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1072 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -91,7 +91,7 @@ let obj = function _createSubscriptionInvoicePreview() {
             value = undefined;
             currency = 1;
             renewal = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === currency) {
           if (arg0 === 1) {
@@ -245,7 +245,7 @@ obj = function _updateSubscriptionInvoicePreview() {
             value = undefined;
             c5 = 1;
             location_stack = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -382,7 +382,7 @@ obj = function _createOneTimePurchaseInvoicePreview() {
               body = undefined;
               quantity = 1;
               apply_wallet_balance = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === quantity) {
             if (arg0 === 1) {
@@ -455,25 +455,85 @@ function getSubscriptionInvoice() {
   return obj(...arguments);
 }
 obj = function _getSubscriptionInvoice() {
-  obj = _asyncToGenerator(async (arg0) => {
+  obj = _asyncToGenerator(async (arg0, value) => {
     let c0;
     let c1;
-    let c3;
-    let c4;
-    let closure_1;
     let closure_0 = arg0;
-    let body = tmp4;
-    ({ subscriptionId: c0, preventFetch: c1 } = closure_0);
-    await "flexDirection";
-    const tmp20 = c1;
-    if (tmp20) {
-      return null;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let body;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp;
+            c0 = undefined;
+            c1 = undefined;
+            ({ subscriptionId: c0, preventFetch: c1 } = closure_0);
+            body = undefined;
+            c3 = 1;
+            c4 = 1;
+            return { value: "flexDirection", done: true };
+          }
+        } else if (1 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            const tmp20 = c1;
+            if (tmp20) {
+              c4 = 3;
+              return { value: null, done: true };
+            } else {
+              const HTTP = closure_130_0(closure_130_2[7]).HTTP;
+              const obj5 = { url: closure_130_12.BILLING_SUBSCRIPTION_INVOICE(c0), oldFormErrors: true, rejectWithError: false };
+              const get = HTTP.get;
+              c3 = 2;
+              c4 = 1;
+              const obj6 = { value: get(obj5), done: false };
+              return obj6;
+            }
+          }
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } else {
+          body = value;
+          c4 = 3;
+          obj = { value: closure_130_11.createInvoiceFromServer(body.body), done: true };
+          return obj;
+        }
+      } catch (tmp15) {
+        c4 = 3;
+        throw tmp15;
+      }
     }
-    const HTTP = closure_130_0(closure_130_2[7]).HTTP;
-    const obj5 = { url: closure_130_12.BILLING_SUBSCRIPTION_INVOICE(c0), oldFormErrors: true, rejectWithError: false };
-    const get = HTTP.get;
-    body = await get(obj5);
-    return closure_130_11.createInvoiceFromServer(body.body);
   });
   return obj(...arguments);
 };

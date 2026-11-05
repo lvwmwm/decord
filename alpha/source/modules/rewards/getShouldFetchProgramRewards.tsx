@@ -1,13 +1,13 @@
-// Module ID: 17155
-// Function ID: 17156
+// Module ID: 17179
+// Function ID: 17180
 // Name: getShouldFetchProgramRewards
-// Dependencies: [15858, 15861, 17156, 2]
+// Dependencies: [15871, 15874, 17180, 2]
 // Exports: shouldFetchProgramRewards
 
-// Module 17155 (getShouldFetchProgramRewards)
-import ProgramRewardsStore2 from "ProgramRewardsStore" /* 15858 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15861 */;
-import shouldAggressivelyFetchNitroRewards from "shouldAggressivelyFetchNitroRewards" /* 17156 */;
+// Module 17179 (getShouldFetchProgramRewards)
+import ProgramRewardsStore2 from "ProgramRewardsStore" /* 15871 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15874 */;
+import shouldAggressivelyFetchNitroRewards from "shouldAggressivelyFetchNitroRewards" /* 17180 */;
 import size from "module_2" /* 2 */;
 
 const ProgramRewardsStore = ProgramRewardsStore2;

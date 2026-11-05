@@ -1,8 +1,8 @@
-// Module ID: 5302
-// Function ID: 5303
+// Module ID: 5304
+// Function ID: 5305
 // Dependencies: [2]
 
-// Module 5302
+// Module 5304
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/OrbsIllustration_Hands.riv.js");

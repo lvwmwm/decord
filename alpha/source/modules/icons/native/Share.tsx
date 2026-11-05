@@ -1,11 +1,11 @@
-// Module ID: 9306
-// Function ID: 9307
+// Module ID: 9313
+// Function ID: 9314
 // Name: Share
-// Dependencies: [1377, 9307, 9308, 2]
+// Dependencies: [1377, 9314, 9315, 2]
 
-// Module 9306 (Share)
-import AssetRegistryDefault from "AssetRegistry" /* 9307 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9308 */;
+// Module 9313 (Share)
+import AssetRegistryDefault from "AssetRegistry" /* 9314 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9315 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 

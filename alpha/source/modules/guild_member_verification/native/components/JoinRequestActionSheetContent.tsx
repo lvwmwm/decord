@@ -1,24 +1,24 @@
-// Module ID: 18935
-// Function ID: 18936
+// Module ID: 18966
+// Function ID: 18967
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 4990, 5397, 7513, 21, 5141, 575, 8955, 8944, 8941, 8952, 8891, 18933, 8960, 8969, 11584, 15126, 15229, 504, 14421, 5174, 5768, 8784, 1113, 5175, 12577, 5761, 7233, 4963, 11, 7476, 6902, 8168, 7134, 10946, 1627, 18936, 2]
+// Dependencies: [19, 17, 4992, 5399, 7515, 21, 5143, 575, 8960, 8949, 8946, 8957, 8896, 18964, 8965, 8974, 11592, 15139, 15242, 504, 14434, 5176, 5770, 8789, 1113, 5177, 12584, 5763, 7236, 4965, 11, 7479, 6905, 8173, 7137, 10952, 1627, 18967, 2]
 
-// Module 18935 (JoinRequestActionSheetContent)
+// Module 18966 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
-import DateUtils from "DateUtils" /* 4963 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5175 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Constants from "Constants" /* 7513 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18933 */;
+import DateUtils from "DateUtils" /* 4965 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5177 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5399 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Constants from "Constants" /* 7515 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8896 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18964 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -50,15 +50,15 @@ function OpenInterviewButton(arg0) {
     const tmp2 = null != interviewChannelId && null != ChannelStore.getChannel(tmp);
     return tmp2;
   }, items1);
-  const obj2 = interviewChannelId(14421);
+  const obj2 = interviewChannelId(14434);
   const joinRequestButtonActions = obj2.useJoinRequestButtonActions(joinRequest, interviewChannelId);
   ({ handleOpenInterview, submitting } = joinRequestButtonActions);
-  const obj3 = interviewChannelId(5174);
+  const obj3 = interviewChannelId(5176);
   if (!obj3.isActionedApplicationStatus(applicationStatus)) {
     const obj4 = { variant: "secondary", size: "md", icon: closure_8(ChatIcon, obj5), text: label, onPress: handleOpenInterview, disabled: submitting };
-    const Button = tmp(5768).Button;
+    const Button = tmp(5770).Button;
     obj5 = { color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "sm" };
-    ChatIcon = tmp(8784).ChatIcon;
+    ChatIcon = tmp(8789).ChatIcon;
     const tmp6 = closure_8;
     if (label == null) {
       const intl = tmp(1113).intl;
@@ -103,11 +103,11 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
   user = user.user;
   ({ displayProfile, joinRequest } = user);
   const tmp = joinRequest;
-  const tmp3 = joinRequest(8955)();
-  const tmp4 = joinRequest(8944)(ACTION_SHEET_MAX_WIDTH);
-  ({ primaryColor, secondaryColor, theme } = joinRequest(8941)({ user, displayProfile }));
-  joinRequest(8941)({ user, displayProfile });
-  let obj = user(8952);
+  const tmp3 = joinRequest(8960)();
+  const tmp4 = joinRequest(8949)(ACTION_SHEET_MAX_WIDTH);
+  ({ primaryColor, secondaryColor, theme } = joinRequest(8946)({ user, displayProfile }));
+  joinRequest(8946)({ user, displayProfile });
+  let obj = user(8957);
   const userProfileColors = obj.useUserProfileColors({ theme, primaryColor, secondaryColor });
   const items = [joinRequest, user.id];
   ({ gradientFallbackBackground, containerBackground, avatarBackground, statusBackground } = userProfileColors);
@@ -116,11 +116,11 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
   if (null != user) {
     const obj2 = { children: items1 };
     const obj3 = { user, displayProfile, bannerHeight: tmp4 };
-    items1 = [closure_8(tmp(8960), obj3), ];
+    items1 = [closure_8(tmp(8965), obj3), ];
     const obj5 = { user, disableStatus: true, backgroundColor: avatarBackground, statusStyle: obj6, onPress: tmp8 };
     const obj4 = { children: items2 };
     obj6 = { backgroundColor: statusBackground };
-    items2 = [closure_8(tmp(8969), obj5), ];
+    items2 = [closure_8(tmp(8974), obj5), ];
     const obj7 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items3, children: closure_9(View, obj9) };
     items3 = [, , ];
     ({ profileContentWrapper: arr4[0], profileContent: arr4[1] } = tmp3);
@@ -129,10 +129,10 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
     obj9 = { style: tmp3.primaryInfo, children: items4 };
     items4 = [, ];
     const obj10 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
-    const tmpResult = tmp(11584);
-    items4[0] = closure_8(tmp6(15126).PrimaryInfo, obj10);
+    const tmpResult = tmp(11592);
+    items4[0] = closure_8(tmp6(15139).PrimaryInfo, obj10);
     const obj11 = { user };
-    items4[1] = closure_8(tmp(15229), obj11);
+    items4[1] = closure_8(tmp(15242), obj11);
     items2[1] = closure_8(tmpResult, obj7);
     items1[1] = closure_9(View, obj4);
     tmp9 = closure_9(closure_10, obj2);
@@ -175,11 +175,11 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
       const obj2 = { style: tmp.statusContainer, children: items1 };
       const obj3 = { style: tmp.statusRow, children: items };
       const obj4 = { size: "lg", color: nativeDefault.colors.STATUS_WARNING };
-      const HourglassIcon = tmp2(12577).HourglassIcon;
+      const HourglassIcon = tmp2(12584).HourglassIcon;
       items = [metroImportAll(HourglassIcon, obj4), ];
       const obj5 = { children: metroImportAll(Text8, obj6) };
       obj6 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl6.string(intl8.t["Vr+7eO"]) };
-      Text8 = tmp2(5761).Text;
+      Text8 = tmp2(5763).Text;
       intl6 = tmp2(1113).intl;
       items[1] = metroImportAll(View, obj5);
       items1 = [React4(View, obj3), ];
@@ -193,10 +193,10 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
     const obj8 = { style: tmp.statusContainer, children: items5 };
     const obj9 = { style: tmp.statusRow, children: items2 };
     const obj10 = { size: "lg", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp2(7233).CircleXIcon;
+    const CircleXIcon = tmp2(7236).CircleXIcon;
     items2 = [metroImportAll(CircleXIcon, obj10), ];
     const obj11 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl3.string(intl8.t.bSZkla) };
-    const Text4 = tmp2(5761).Text;
+    const Text4 = tmp2(5763).Text;
     intl3 = tmp2(1113).intl;
     const items3 = [metroImportAll(Text4, obj11), , ];
     let tmp17Result = null;
@@ -205,7 +205,7 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
       tmp17Result = null;
       if (null != actionedAt) {
         const obj12 = { style: tmp.actionedInfo, children: items4 };
-        const Text5 = tmp2(5761).Text;
+        const Text5 = tmp2(5763).Text;
         const intl4 = tmp2(1113).intl;
         const formatToPlainString2 = intl4.formatToPlainString;
         let username2 = actionedByUser.global_name;
@@ -219,7 +219,7 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
         const obj15 = { style: tmp.dot };
         items4[1] = metroImportAll(View, obj15);
         const obj16 = { variant: "body-sm/normal", color: "text-default", children: dateFormat2(date, "LL") };
-        const Text6 = tmp2(5761).Text;
+        const Text6 = tmp2(5763).Text;
         const _Date2 = Date;
         dateFormat2 = DateUtils.dateFormat;
         DateUtils;
@@ -235,7 +235,7 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
     let tmp19Result = null != rejectionReason;
     if (tmp19Result) {
       const obj17 = { variant: "body-sm/normal", color: "text-default", children: intl5.formatToPlainString(intl8.t.fU5PPM, obj18) };
-      const Text7 = tmp2(5761).Text;
+      const Text7 = tmp2(5763).Text;
       intl5 = tmp2(1113).intl;
       obj18 = { rejectionReason };
       tmp19Result = tmp19(Text7, obj17);
@@ -251,10 +251,10 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
     const obj = { style: tmp.statusContainer, children: items9 };
     const obj21 = { style: tmp.statusRow, children: items6 };
     const obj22 = { size: "lg", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const CircleCheckIcon = tmp2(7476).CircleCheckIcon;
+    const CircleCheckIcon = tmp2(7479).CircleCheckIcon;
     items6 = [metroImportAll(CircleCheckIcon, obj22), ];
     const obj23 = { variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl.string(intl8.t.aURgY2) };
-    const Text = tmp2(5761).Text;
+    const Text = tmp2(5763).Text;
     intl = tmp2(1113).intl;
     const items7 = [metroImportAll(Text, obj23), ];
     let tmp6Result = null;
@@ -263,7 +263,7 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
       tmp6Result = null;
       if (null != actionedAt) {
         const obj24 = { style: tmp.actionedInfo, children: items8 };
-        const Text2 = tmp2(5761).Text;
+        const Text2 = tmp2(5763).Text;
         const intl2 = tmp2(1113).intl;
         const formatToPlainString = intl2.formatToPlainString;
         let username = actionedByUser.global_name;
@@ -277,7 +277,7 @@ let closure_14 = react.memo(function JoinRequestActionSheetApplicationActions(jo
         const obj27 = { style: tmp.dot };
         items8[1] = metroImportAll(View, obj27);
         const obj28 = { variant: "body-sm/normal", color: "text-default", children: dateFormat(date1, "LL") };
-        const Text3 = tmp2(5761).Text;
+        const Text3 = tmp2(5763).Text;
         const _Date = Date;
         dateFormat = DateUtils.dateFormat;
         DateUtils;
@@ -319,29 +319,29 @@ let closure_15 = react.memo(function JoinRequestActionSheetApplicationActions(jo
   const callback = react.useCallback(() => {
     openJoinRequestActionSheetDefault(joinRequest);
   }, items);
-  const obj = joinRequest(14421);
+  const obj = joinRequest(14434);
   const joinRequestButtonActions = obj.useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, callback);
   ({ submitting, approveRequest, rejectRequest, handleOpenInterview } = joinRequestButtonActions);
-  const ButtonGroup = joinRequest(6902).ButtonGroup;
+  const ButtonGroup = joinRequest(6905).ButtonGroup;
   const obj2 = { variant: "primary", icon: closure_8(CheckmarkLargeIcon, obj3), label: intl.string(joinRequest(1113).t.BzjDQJ), onPress: approveRequest, disabled: submitting };
-  const IconButton = joinRequest(8168).IconButton;
+  const IconButton = joinRequest(8173).IconButton;
   obj3 = { color: nativeDefault.colors.WHITE, size: "lg" };
-  CheckmarkLargeIcon = joinRequest(7134).CheckmarkLargeIcon;
+  CheckmarkLargeIcon = joinRequest(7137).CheckmarkLargeIcon;
   intl = joinRequest(1113).intl;
   const children = [closure_8(IconButton, obj2), , ];
   const obj4 = { variant: "destructive", icon: closure_8(XLargeIcon, obj5), label: intl2.string(joinRequest(1113).t.hDtbsz), onPress: rejectRequest, disabled: submitting };
-  const IconButton2 = joinRequest(8168).IconButton;
+  const IconButton2 = joinRequest(8173).IconButton;
   obj5 = { color: nativeDefault.colors.WHITE, size: "lg" };
-  XLargeIcon = joinRequest(10946).XLargeIcon;
+  XLargeIcon = joinRequest(10952).XLargeIcon;
   intl2 = joinRequest(1113).intl;
   children[1] = closure_8(IconButton2, obj4);
   let tmp6Result = null == joinRequest.interviewChannelId;
   const tmp5 = closure_9;
   if (tmp6Result) {
     const obj6 = { variant: "secondary", icon: closure_8(ChatIcon, obj7), label: intl3.string(joinRequest(1113).t.KQeYoC), onPress: handleOpenInterview, disabled: submitting };
-    const IconButton3 = tmp2(8168).IconButton;
+    const IconButton3 = tmp2(8173).IconButton;
     obj7 = { color: nativeDefault.colors.CONTROL_SECONDARY_TEXT_DEFAULT, size: "lg" };
-    ChatIcon = tmp2(8784).ChatIcon;
+    ChatIcon = tmp2(8789).ChatIcon;
     intl3 = tmp2(1113).intl;
     tmp6Result = tmp6(IconButton3, obj6);
   }
@@ -372,7 +372,7 @@ let closure_16 = react.memo(function VerificationFormResponse(arg0) {
     const obj3 = { variant: "body-md/medium", color: "text-default", children: field.label };
     items1 = [metroImportAll(Text_Text.Text, obj3), ];
     const obj4 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const CircleCheckIcon = tmp2(7476).CircleCheckIcon;
+    const CircleCheckIcon = tmp2(7479).CircleCheckIcon;
     items1[1] = metroImportAll(CircleCheckIcon, obj4);
     return tmp11(tmp12, obj2);
   } else if (MemberVerificationTypes.VerificationFormFieldTypes.MULTIPLE_CHOICE === field_type) {
@@ -387,7 +387,7 @@ let closure_16 = react.memo(function VerificationFormResponse(arg0) {
     items3[1] = formResponseMargin1;
     let tmp10 = null;
     const obj6 = { style: items3, children: metroImportAll(Text, obj8) };
-    Text = tmp2(5761).Text;
+    Text = tmp2(5763).Text;
     if (null != field.response) {
       tmp10 = field.choices[field.response];
     }
@@ -495,7 +495,7 @@ const memoResult = react.memo(function JoinRequestActionSheetContent(displayProf
   }, items);
   let obj = { style: { paddingBottom: bottom }, children: items1 };
   items1 = [closure_8(closure_12, { joinRequest, user, displayProfile }), , , , ];
-  if (joinRequest.applicationStatus === joinRequest(5175).GuildJoinRequestApplicationStatuses.SUBMITTED) {
+  if (joinRequest.applicationStatus === joinRequest(5177).GuildJoinRequestApplicationStatuses.SUBMITTED) {
     let tmp8Result = null != joinRequest.interviewChannelId;
     const tmp11 = closure_10;
     if (tmp8Result) {
@@ -523,7 +523,7 @@ const memoResult = react.memo(function JoinRequestActionSheetContent(displayProf
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
   const obj7 = { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId };
-  items1[4] = closure_8(tmp2(18936), obj7);
+  items1[4] = closure_8(tmp2(18967), obj7);
   return closure_9(View, obj);
 });
 size = size_mod;

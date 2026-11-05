@@ -1,14 +1,14 @@
-// Module ID: 11819
-// Function ID: 11820
+// Module ID: 11827
+// Function ID: 11828
 // Name: useCanInviteToLinkedGameOrganization
-// Dependencies: [5053, 5047, 5073, 1072, 11818, 504, 2]
+// Dependencies: [5055, 5049, 5075, 1072, 11826, 504, 2]
 // Exports: canInviteToLinkedGameOrganization, default, hasCanInviteRole
 
-// Module 11819 (useCanInviteToLinkedGameOrganization)
+// Module 11827 (useCanInviteToLinkedGameOrganization)
 import Constants from "Constants" /* 1072 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import GuildRoleStore from "GuildRoleStore" /* 5047 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import GuildRoleStore from "GuildRoleStore" /* 5049 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

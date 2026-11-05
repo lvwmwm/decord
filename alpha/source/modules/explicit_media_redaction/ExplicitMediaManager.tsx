@@ -1,36 +1,36 @@
-// Module ID: 19727
-// Function ID: 19728
+// Module ID: 19762
+// Function ID: 19763
 // Name: ExplicitMediaManager
-// Dependencies: [7906, 502, 6997, 4990, 6196, 5044, 5172, 15829, 7606, 1072, 1082, 8828, 7603, 7607, 7609, 572, 13531, 6675, 6680, 19728, 19729, 11, 6198, 5978, 7423, 2]
+// Dependencies: [7911, 502, 7000, 4992, 6199, 5046, 5174, 15842, 7608, 1072, 1082, 8833, 7605, 7609, 7611, 572, 13542, 6678, 6683, 19763, 19764, 11, 6201, 5981, 7426, 2]
 
-// Module 19727 (ExplicitMediaManager)
+// Module 19762 (ExplicitMediaManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import flattenDefault from "flatten" /* 5978 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6198 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7603 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7606 */;
-import HarmTypeConfiguration from "HarmTypeConfiguration" /* 7607 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7609 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7906 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8828 */;
-import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 13531 */;
-import uniqWithDefault from "uniqWith" /* 19729 */;
+import flattenDefault from "flatten" /* 5981 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 6201 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7605 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7608 */;
+import HarmTypeConfiguration from "HarmTypeConfiguration" /* 7609 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7611 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 7911 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8833 */;
+import ExplicitMediaRedactionActionCreators from "ExplicitMediaRedactionActionCreators" /* 13542 */;
+import uniqWithDefault from "uniqWith" /* 19764 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6997 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import MessageStore from "MessageStore" /* 6196 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
-import ExplicitMediaSearchStore from "ExplicitMediaSearchStore" /* 15829 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7423 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7000 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import MessageStore from "MessageStore" /* 6199 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
+import ExplicitMediaSearchStore from "ExplicitMediaSearchStore" /* 15842 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
 let messageByReference, set;
 
-const f118532 = (channel_id) => {
+const f118732 = (channel_id) => {
   const tmp = obj;
   if (null == obj[channel_id.channel_id]) {
     tmp[channel_id.channel_id] = { numOfAttachments: 0, numOfAttachmentsPendingScan: 0, numOfEmbeds: 0, numOfEmbedsPendingScan: 0 };
@@ -216,7 +216,7 @@ function withoutScheduledTimeout(arg0) {
 }
 function handleUnscannedMessages(found2, isMessageUpdate) {
   let found1;
-  const f118526 = (id) => id.id;
+  const f118726 = (id) => id.id;
   let obj = isMessageUpdate;
   if (isMessageUpdate == null) {
     obj = {};
@@ -305,16 +305,16 @@ function handleUnscannedMessages(found2, isMessageUpdate) {
         if (tmp) {
           const result = obj.sendMultiChannelMessagesForScanning(found);
         } else {
-          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f118526));
+          const result1 = obj.sendMessagesForScanning(found[0].channel_id, found.map(f118726));
         }
       }
     }, 800 * Math.random());
   } else if (0 !== found1.length) {
-    let obj2 = found1(13531);
+    let obj2 = found1(13542);
     if (tmp) {
       let result = obj2.sendMultiChannelMessagesForScanning(found1);
     } else {
-      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f118526));
+      let result1 = obj2.sendMessagesForScanning(found1[0].channel_id, found1.map(f118726));
     }
   }
 }
@@ -355,14 +355,14 @@ function processMessagesFromAction(firstMessages, isMessageUpdate) {
     HermesBuiltin.arraySpread(items, found1, HermesBuiltin.arraySpread(items, found, 0));
     tmp3 = items;
   }
-  const arr4 = obj2(19729)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+  const arr4 = obj2(19764)(tmp3, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
   const found2 = arr4.filter((item) => {
     obj = obj(dependencyMap[12]);
     return obj.hasUnscannedMedia(item);
   });
   let obj = {};
   obj2 = {};
-  const item = arr4.forEach(f118532);
+  const item = arr4.forEach(f118732);
   const obj3 = obj2(11);
   const entries = obj3.entries(obj);
   const item1 = entries.forEach((item) => {
@@ -639,14 +639,14 @@ function maybeScanMessagesForChannelId(channelId) {
       HermesBuiltin.arraySpread(items, found1, HermesBuiltin.arraySpread(items, found, 0));
       tmp4 = items;
     }
-    const arr5 = obj2(19729)(tmp4, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
+    const arr5 = obj2(19764)(tmp4, (id, id2) => id.id === id2.id && id.channel_id === id2.channel_id);
     const found2 = arr5.filter((item) => {
       obj = obj(dependencyMap[12]);
       return obj.hasUnscannedMedia(item);
     });
     let obj = {};
     obj2 = {};
-    const item = arr5.forEach(f118532);
+    const item = arr5.forEach(f118732);
     const obj3 = obj2(11);
     const entries = obj3.entries(obj);
     const item1 = entries.forEach((item) => {

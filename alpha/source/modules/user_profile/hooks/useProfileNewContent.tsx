@@ -1,15 +1,15 @@
-// Module ID: 15196
-// Function ID: 15197
+// Module ID: 15209
+// Function ID: 15210
 // Name: useProfileNewContent
-// Dependencies: [9618, 1385, 7912, 15197, 15198, 504, 7924, 7923, 9617, 2]
+// Dependencies: [9624, 1385, 7917, 15210, 15211, 504, 7929, 7928, 9623, 2]
 // Exports: default
 
-// Module 15196 (useProfileNewContent)
-import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7923 */;
-import ProfileReadStateSection from "ProfileReadStateSection" /* 7924 */;
-import WishlistStore from "WishlistStore" /* 9618 */;
+// Module 15209 (useProfileNewContent)
+import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7928 */;
+import ProfileReadStateSection from "ProfileReadStateSection" /* 7929 */;
+import WishlistStore from "WishlistStore" /* 9624 */;
 import UserStore from "UserStore" /* 1385 */;
-import UserProfileStore from "UserProfileStore" /* 7912 */;
+import UserProfileStore from "UserProfileStore" /* 7917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

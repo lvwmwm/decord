@@ -1,9 +1,9 @@
-// Module ID: 6925
-// Function ID: 6926
+// Module ID: 6928
+// Function ID: 6929
 // Name: DismissibleQuestContentFlags
 // Dependencies: [2]
 
-// Module 6925 (DismissibleQuestContentFlags)
+// Module 6928 (DismissibleQuestContentFlags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/DismissibleQuestContentFlags.tsx");

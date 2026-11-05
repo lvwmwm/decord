@@ -2,19 +2,20 @@
 // Function ID: 5411
 // Name: react
 // Dependencies: [19, 5411]
-// Exports: useBottomSheetModal
+// Exports: useBottomSheetInternal
 
 // Module 5410 (react)
 import react from "react" /* 19 */;
-import BottomSheetContext from "BottomSheetContext" /* 5411 */;
+import react2 from "react" /* 5411 */;
 
 const useContext = react.useContext;
 
-export const useBottomSheetModal = () => {
-  const tmp = useContext(BottomSheetContext.BottomSheetModalContext);
-  if (null === tmp) {
-    throw "'BottomSheetModalContext' cannot be null!";
-  } else {
-    return tmp;
+export function useBottomSheetInternal(arg0) {
+  const tmp = useContext(react2.BottomSheetInternalContext);
+  if (true !== arg0) {
+    if (null === tmp) {
+      throw "'useBottomSheetInternal' cannot be used out of the BottomSheet!";
+    }
   }
-};
+  return tmp;
+}

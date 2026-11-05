@@ -1,13 +1,13 @@
-// Module ID: 11033
-// Function ID: 11034
+// Module ID: 11039
+// Function ID: 11040
 // Name: conjureAgentReaction
-// Dependencies: [5087, 1113, 3995, 2]
+// Dependencies: [5089, 1113, 3995, 2]
 // Exports: agentReactionFromStep, getConjureAgentReactionLabel, sameAgentReaction
 
-// Module 11033 (conjureAgentReaction)
+// Module 11039 (conjureAgentReaction)
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5087 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5089 */;
 import size from "module_2" /* 2 */;
 
 const re3 = /^\d{17,20}$/;

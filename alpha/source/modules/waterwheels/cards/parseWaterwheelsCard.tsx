@@ -1,11 +1,13 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 9078
+// Function ID: 9079
 // Name: parseWaterwheelsCard
-// Dependencies: [109, 12, 9073, 2]
+// Dependencies: [109, 3, 12, 9079, 2]
 // Exports: parseWaterwheelsCard
 
-// Module 9072 (parseWaterwheelsCard)
+// Module 9078 (parseWaterwheelsCard)
+import LoggerDefault from "Logger" /* 3 */;
 import _mod12 from "module_12" /* 12 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9079 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
@@ -14,6 +16,31 @@ let server;
 function isRecord(id) {
   const obj = _mod12;
   return obj.isPlainObject(id);
+}
+function isActionValid(value) {
+  value = value.value;
+  const obj = _mod12;
+  if (obj.isPlainObject(value)) {
+    const type = value.type;
+    if (WaterwheelsCardTypes.WaterwheelsActionType.JOIN_GUILD !== type) {
+      if (WaterwheelsCardTypes.WaterwheelsActionType.OPEN_GUILD !== type) {
+        if (WaterwheelsCardTypes.WaterwheelsActionType.OPEN_GAME === type) {
+          return typeof value.value.game_id === "string";
+        } else if (WaterwheelsCardTypes.WaterwheelsActionType.OPEN_CONNECTION === type) {
+          return typeof value.value.provider === "string";
+        } else if (WaterwheelsCardTypes.WaterwheelsActionType.OPEN_URI === type) {
+          return typeof value.value.url === "string";
+        } else if (WaterwheelsCardTypes.WaterwheelsActionType.OPEN_NUDGE === type) {
+          return "enable_notifications" === value.value.nudge;
+        } else {
+          return false;
+        }
+      }
+    }
+    return typeof value.value.guild_id === "string";
+  } else {
+    return false;
+  }
 }
 function mapLayout(layout) {
   let action_label;
@@ -75,11 +102,14 @@ function mapLayout(layout) {
   }
 }
 function reject(reason) {
+  logger.warn("Rejected Waterwheels card: " + reason);
   return { ok: false, reason };
 }
 let closure_2 = ["image_url", "action_label"];
 let closure_3 = ["header", "items"];
 let closure_5 = ["post", "carousel", "server_row"];
+let tmp2 = new LoggerDefault("WaterwheelsCardParser");
+const logger = tmp2;
 const result = size.fileFinishedImporting("modules/waterwheels/cards/parseWaterwheelsCard.tsx");
 
 export function parseWaterwheelsCard(id) {
@@ -88,8 +118,8 @@ export function parseWaterwheelsCard(id) {
     let tmp = id;
     let tmp2 = isRecord;
     if (isRecord(id)) {
-      if (null != id.id) {
-        if (null != id.type) {
+      if (typeof id.id === "string") {
+        if (typeof id.type === "string") {
           if (tmp2(id.layout)) {
             const _Array = Array;
             if (Array.isArray(id.actions)) {
@@ -102,7 +132,7 @@ export function parseWaterwheelsCard(id) {
                   const tmp2 = dependencyMap;
                   if (isPlainObjectResult) {
                     const _Object = Object;
-                    const values = Object.values(tmp(tmp2[2]).WaterwheelsActionType);
+                    const values = Object.values(tmp(tmp2[3]).WaterwheelsActionType);
                     isPlainObjectResult = values.includes(type.type);
                   }
                   return isPlainObjectResult;
@@ -112,13 +142,18 @@ export function parseWaterwheelsCard(id) {
                       return reject("unknown_eligibility");
                     }
                   }
-                  let obj = { id: null, type: null, layout: mapLayout(id.layout), actions: null, clientEligibility: client_eligibility };
-                  ({ id: obj.id, type: obj.type } = id);
-                  ({ actions: obj.actions, client_eligibility } = id);
-                  if (client_eligibility == null) {
-                    client_eligibility = null;
+                  const actions2 = id.actions;
+                  if (actions2.every(isActionValid)) {
+                    let obj = { id: null, type: null, layout: mapLayout(id.layout), actions: null, clientEligibility: client_eligibility };
+                    ({ id: obj.id, type: obj.type } = id);
+                    ({ actions: obj.actions, client_eligibility } = id);
+                    if (client_eligibility == null) {
+                      client_eligibility = null;
+                    }
+                    return { ok: true, card: obj };
+                  } else {
+                    return reject("invalid_card");
                   }
-                  return { ok: true, card: obj };
                 } else {
                   return reject("unknown_action");
                 }

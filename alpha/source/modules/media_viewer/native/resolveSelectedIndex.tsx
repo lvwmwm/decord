@@ -1,10 +1,10 @@
-// Module ID: 9010
-// Function ID: 9011
+// Module ID: 9015
+// Function ID: 9016
 // Name: resolveSelectedIndex
 // Dependencies: [2]
 // Exports: resolveSelectedIndex
 
-// Module 9010 (resolveSelectedIndex)
+// Module 9015 (resolveSelectedIndex)
 import size from "module_2" /* 2 */;
 
 let tmp2;

@@ -1,15 +1,15 @@
-// Module ID: 10927
-// Function ID: 10928
+// Module ID: 10933
+// Function ID: 10934
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2143, 1385, 6171, 7620, 504, 2155, 8823, 1113, 2]
+// Dependencies: [19, 2143, 1385, 6174, 7622, 504, 2155, 8828, 1113, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 10927 (useGameMentionsAsPlainText)
+// Module 10933 (useGameMentionsAsPlainText)
 import StringUtils from "StringUtils" /* 2155 */;
 import react from "react" /* 19 */;
 import GameStore from "GameStore" /* 2143 */;
 import UserStore from "UserStore" /* 1385 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6171 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6174 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

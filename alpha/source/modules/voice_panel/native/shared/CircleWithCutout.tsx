@@ -1,12 +1,12 @@
-// Module ID: 19595
-// Function ID: 19596
+// Module ID: 19630
+// Function ID: 19631
 // Name: CircleWithCutout
-// Dependencies: [19, 17, 21, 11914, 8171, 2]
+// Dependencies: [19, 17, 21, 11923, 8176, 2]
 
-// Module 19595 (CircleWithCutout)
+// Module 19630 (CircleWithCutout)
 import react_native from "react-native" /* 17 */;
-import inlineStyles from "inlineStyles" /* 8171 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11914 */;
+import inlineStyles from "inlineStyles" /* 8176 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11923 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
@@ -73,16 +73,16 @@ const memoResult = react.memo(function CircleWithCutout(arg0) {
   items[0] = obj4;
   const obj5 = { children: React3(Mask, obj6) };
   const tmp11 = inlineStylesDefault;
-  const Defs = tmp4(8171).Defs;
+  const Defs = tmp4(8176).Defs;
   obj6 = { id: "mask", children: items1 };
-  Mask = tmp4(8171).Mask;
+  Mask = tmp4(8176).Mask;
   items1 = [_false(inlineStyles.Rect, { width: result2, height: result2, fill: "white" }), ];
   const obj7 = { cx: diff, cy: tmp8, r: cutoutRadius * num, fill: "black" };
   items1[1] = _false(inlineStyles.Circle, obj7);
   items2 = [_false(Defs, obj5), ];
   const obj8 = { cx: result, cy: result, r: result, fill, mask: str };
   str = undefined;
-  const Circle = tmp4(8171).Circle;
+  const Circle = tmp4(8176).Circle;
   const tmp10 = React3;
   const tmp12 = _false;
   if (enableCutout) {

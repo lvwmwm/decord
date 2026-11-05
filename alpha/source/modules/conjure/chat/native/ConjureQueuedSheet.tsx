@@ -1,22 +1,22 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 13017
+// Function ID: 13018
 // Name: ConjureQueuedSheet
-// Dependencies: [32, 19, 17, 11029, 21, 5141, 575, 504, 12798, 5382, 7502, 7457, 1113, 3995, 5761, 5768, 2]
+// Dependencies: [32, 19, 17, 11035, 21, 5143, 575, 504, 12805, 5384, 7504, 7460, 1113, 3995, 5763, 5770, 2]
 // Exports: default
 
-// Module 13010 (ConjureQueuedSheet)
+// Module 13017 (ConjureQueuedSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 12798 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 12805 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 11029 */;
+import ConjureChatStore from "ConjureChatStore" /* 11035 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -74,7 +74,7 @@ function ConjureQueuedRow(content) {
     items2 = [React4(metroRequire, obj5), ];
     let tmp19Result = null;
     if (tmp5) {
-      const Button = tmp20(5768).Button;
+      const Button = tmp20(5770).Button;
       const intl = tmp20(1113).intl;
       const string = intl.string;
       const tmp10 = _modDef3995;
@@ -133,9 +133,9 @@ export default function ConjureQueuedSheet(projectId) {
   let tmp7 = null;
   if (0 !== memo.length) {
     const obj2 = { header: closure_8(BottomSheetTitleHeader, obj3), children: closure_8(closure_5, obj4) };
-    const ActionSheet = tmp2(7502).ActionSheet;
+    const ActionSheet = tmp2(7504).ActionSheet;
     obj3 = { title: intl.string(stateFromStores(3995).hzgPbZ) };
-    BottomSheetTitleHeader = tmp2(7457).BottomSheetTitleHeader;
+    BottomSheetTitleHeader = tmp2(7460).BottomSheetTitleHeader;
     intl = tmp2(1113).intl;
     obj4 = {
       style: tmp.scroller,

@@ -1,16 +1,16 @@
-// Module ID: 17305
-// Function ID: 17306
+// Module ID: 17326
+// Function ID: 17327
 // Name: OrbsArcadeRewardUnlockedSheet
-// Dependencies: [19, 17, 17270, 21, 5141, 575, 504, 17277, 17271, 11015, 17306, 1113, 6162, 17300, 17291, 2]
+// Dependencies: [19, 17, 17294, 21, 5143, 575, 504, 17301, 17295, 11021, 17327, 1113, 6165, 17319, 17308, 17304, 2]
 // Exports: default
 
-// Module 17305 (OrbsArcadeRewardUnlockedSheet)
+// Module 17326 (OrbsArcadeRewardUnlockedSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17270 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17294 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -33,12 +33,14 @@ export default function OrbsArcadeRewardUnlockedSheet(gameId) {
   let obj8;
   let ownedRewardSkuIds;
   let string;
+  let surface;
   let t;
   let tmp12;
+  let unlockedRewardIds;
   let v2ld2SU;
   gameId = gameId.gameId;
   let stateFromStores1;
-  const unlockedRewardIds = gameId.unlockedRewardIds;
+  ({ surface, unlockedRewardIds } = gameId);
   const tmp = closure_8();
   let obj = gameId(stateFromStores1[6]);
   const items = [OrbsArcadeStore];
@@ -101,7 +103,7 @@ export default function OrbsArcadeRewardUnlockedSheet(gameId) {
     const obj7 = { style: tmp.chain, children: closure_6(stateFromStores(stateFromStores1[13]), obj8) };
     obj8 = { game: stateFromStores, gameState: stateFromStores1, grantAnimatedOnOpenRewardIds: unlockedRewardIds };
     items6 = [closure_6(View, obj7), ];
-    const obj9 = { game: stateFromStores, sheetKey: "OrbsArcadeRewardUnlockedSheet", primaryAction: CLAIM, secondaryAction: gameId(stateFromStores1[14]).OrbsArcadeSheetSecondaryAction.CLOSE };
+    const obj9 = { game: stateFromStores, sheetKey: "OrbsArcadeRewardUnlockedSheet", location: gameId(stateFromStores1[15]).OrbsArcadeCtaLocation.REWARD_UNLOCKED_SHEET, surface, primaryAction: CLAIM, secondaryAction: gameId(stateFromStores1[14]).OrbsArcadeSheetSecondaryAction.CLOSE };
     CLAIM = null;
     tmp12 = closure_7;
     const tmp15 = stateFromStores(stateFromStores1[14]);

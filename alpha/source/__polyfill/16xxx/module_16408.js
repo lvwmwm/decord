@@ -1,20 +1,20 @@
 // Module ID: 16408
 // Function ID: 16409
-// Dependencies: [16376, 16377, 16409]
+// Dependencies: [16393]
 
 // Module 16408
-import _mod16377 from "module_16377" /* 16377 */;
-import _mod16409 from "module_16409" /* 16409 */;
-import getOwnPropertyDescriptor from "module_16376" /* 16376 */;
+import _mod16393 from "module_16393" /* 16393 */;
 
-const f67976 = () => {
-  const obj = {
-    get() {
-      return 7;
-    }
-  };
-  return 7 !== Object.defineProperty(_mod16409("div"), "a", obj).a;
+let _window = 0;
+let closure_1 = Math.random();
+let closure_2 = _mod16393((1).toString);
+
+export default (arg0) => {
+  let _window;
+  let str = "";
+  if (undefined !== arg0) {
+    str = arg0;
+  }
+  _window = _window + 1;
+  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
 };
-!getOwnPropertyDescriptor && !_mod16377(f67976);
-
-export default !getOwnPropertyDescriptor && !_mod16377(f67976);

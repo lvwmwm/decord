@@ -1,24 +1,24 @@
-// Module ID: 13227
-// Function ID: 13228
+// Module ID: 13234
+// Function ID: 13235
 // Name: conjureHomeProjectState
-// Dependencies: [1231, 6977, 11029, 6979, 11045, 11056, 11057, 504, 11052, 2]
+// Dependencies: [1231, 6980, 11035, 6982, 11051, 11062, 11063, 504, 11058, 2]
 // Exports: conjureHomeProjectShowsDraft, conjureHomeProjectState, conjureProjectLastActivityTime, conjureProjectStatus, hasConjureUnpublishedChanges, useConjureHomeProjectState, useConjureProjectItemState
 
-// Module 13227 (conjureHomeProjectState)
-import ConjurePublishTypes from "ConjurePublishTypes" /* 11052 */;
-import conjureUnread from "conjureUnread" /* 11056 */;
+// Module 13234 (conjureHomeProjectState)
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11058 */;
+import conjureUnread from "conjureUnread" /* 11062 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReadStateStore from "ReadStateStore" /* 6977 */;
-import ConjureChatStore from "ConjureChatStore" /* 11029 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11045 */;
+import ReadStateStore from "ReadStateStore" /* 6980 */;
+import ConjureChatStore from "ConjureChatStore" /* 11035 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 11051 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap;
 
 let tmp3;
-const conjureProjectMute = tmp3(11057);
+const conjureProjectMute = tmp3(11063);
 function readConjureHomeProjectState(id) {
   const isProjectDeletingResult = ConjureProjectStore.isProjectDeleting(id);
   const isThinkingResult = ConjureChatStore.isThinking(id);

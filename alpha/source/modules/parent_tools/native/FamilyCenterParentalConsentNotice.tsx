@@ -1,16 +1,16 @@
-// Module ID: 17024
-// Function ID: 17025
+// Module ID: 17048
+// Function ID: 17049
 // Name: FamilyCenterParentalConsentNotice
-// Dependencies: [19, 21, 5141, 575, 17016, 17017, 5843, 5761, 17025, 1113, 2667, 2]
+// Dependencies: [19, 21, 5143, 575, 17040, 17041, 5846, 5763, 17049, 1113, 2667, 2]
 // Exports: default
 
-// Module 17024 (FamilyCenterParentalConsentNotice)
+// Module 17048 (FamilyCenterParentalConsentNotice)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 17025 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import FamilyCenterInlineWarningNoticeDefault from "FamilyCenterInlineWarningNotice" /* 17049 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

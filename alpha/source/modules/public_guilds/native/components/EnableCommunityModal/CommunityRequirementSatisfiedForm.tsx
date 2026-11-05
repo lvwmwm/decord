@@ -1,12 +1,12 @@
-// Module ID: 20128
-// Function ID: 20129
+// Module ID: 20164
+// Function ID: 20165
 // Name: CommunityRequirementSatisfiedForm
-// Dependencies: [19, 17, 21, 5845, 20118, 7121, 2]
+// Dependencies: [19, 17, 21, 5848, 20154, 7124, 2]
 // Exports: default
 
-// Module 20128 (CommunityRequirementSatisfiedForm)
+// Module 20164 (CommunityRequirementSatisfiedForm)
 import react_native from "react-native" /* 17 */;
-import ToastUtils from "ToastUtils" /* 5845 */;
+import ToastUtils from "ToastUtils" /* 5848 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -22,7 +22,7 @@ export default function CommunityRequirementSatisfiedForm(formSwitchDisabled) {
   formSwitchDisabled = formSwitchDisabled.formSwitchDisabled;
   const children = formSwitchDisabled.children;
   let tmp = formSwitchDisabled;
-  let obj = formSwitchDisabled(20118);
+  let obj = formSwitchDisabled(20154);
   const enableCommunitySharedStyles = obj.useEnableCommunitySharedStyles();
   const obj2 = { style: enableCommunitySharedStyles.communityRequirementSatisfiedFormWrapper, children: items };
   items = [children, ];
@@ -41,7 +41,7 @@ export default function CommunityRequirementSatisfiedForm(formSwitchDisabled) {
           }
         }
     };
-    tmp6 = closure_3(tmp(7121).PressableOpacity, obj3);
+    tmp6 = closure_3(tmp(7124).PressableOpacity, obj3);
   }
   items[1] = tmp6;
   return tmp4(tmp5, obj2);

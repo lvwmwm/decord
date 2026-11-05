@@ -1,16 +1,16 @@
-// Module ID: 18484
-// Function ID: 18485
+// Module ID: 18514
+// Function ID: 18515
 // Name: useGuildPowerupsBoostAction
-// Dependencies: [5, 19, 7725, 5354, 1072, 14330, 7462, 7744, 8606, 8604, 6903, 7726, 2]
+// Dependencies: [5, 19, 7730, 5356, 1072, 14343, 7465, 7749, 8611, 8609, 6906, 7731, 2]
 // Exports: default
 
-// Module 18484 (useGuildPowerupsBoostAction)
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7462 */;
-import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 14330 */;
+// Module 18514 (useGuildPowerupsBoostAction)
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7465 */;
+import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 14343 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7725 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5354 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7730 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5356 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 11795
-// Function ID: 11796
+// Module ID: 11803
+// Function ID: 11804
 // Name: UserSummaryItem
-// Dependencies: [19, 17, 5053, 21, 5141, 575, 1187, 504, 1411, 6176, 1113, 5761, 2]
+// Dependencies: [19, 17, 5055, 21, 5143, 575, 1187, 504, 1411, 6179, 1113, 5763, 2]
 // Exports: default
 
-// Module 11795 (UserSummaryItem)
+// Module 11803 (UserSummaryItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let avatarURL;

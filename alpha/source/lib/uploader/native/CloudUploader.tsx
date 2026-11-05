@@ -1,16 +1,16 @@
-// Module ID: 10386
-// Function ID: 10387
+// Module ID: 10392
+// Function ID: 10393
 // Name: CloudUploader
-// Dependencies: [5, 1072, 5146, 3, 10387, 10388, 1113, 10392, 10393, 8381, 10394, 10395, 8349, 8351, 1441, 12, 2]
+// Dependencies: [5, 1072, 5148, 3, 10393, 10394, 1113, 10398, 10399, 8386, 10400, 10401, 8354, 8356, 1441, 12, 2]
 
-// Module 10386 (CloudUploader)
+// Module 10392 (CloudUploader)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import MessageConstants from "MessageConstants" /* 5146 */;
-import UploadPlatform from "UploadPlatform" /* 8351 */;
+import MessageConstants from "MessageConstants" /* 5148 */;
+import UploadPlatform from "UploadPlatform" /* 8356 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
-import UploaderBase from "UploaderBase" /* 10387 */;
+import UploaderBase from "UploaderBase" /* 10393 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, c4, closure_0, constants, logger, preCompressionSize, set, uri;

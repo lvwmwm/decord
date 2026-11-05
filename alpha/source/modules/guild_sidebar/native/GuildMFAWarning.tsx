@@ -1,23 +1,23 @@
-// Module ID: 18511
-// Function ID: 18512
+// Module ID: 18541
+// Function ID: 18542
 // Name: GuildMFAWarning
-// Dependencies: [5, 19, 1072, 21, 5141, 575, 11232, 2190, 2123, 5843, 7121, 5851, 18512, 5761, 1113, 1187, 2]
+// Dependencies: [5, 19, 1072, 21, 5143, 575, 11240, 2190, 2123, 5846, 7124, 5854, 18542, 5763, 1113, 1187, 2]
 // Exports: default, getScaledGuildMFAWarningHeight
 
-// Module 18511 (GuildMFAWarning)
+// Module 18541 (GuildMFAWarning)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import Pressables from "Pressables" /* 7121 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11232 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18512 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import Pressables from "Pressables" /* 7124 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11240 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18542 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

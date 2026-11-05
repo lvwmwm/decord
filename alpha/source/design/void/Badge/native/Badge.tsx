@@ -1,17 +1,17 @@
-// Module ID: 16253
-// Function ID: 16254
+// Module ID: 16266
+// Function ID: 16267
 // Name: void/Badge/Badge
-// Dependencies: [19, 17, 2191, 1189, 21, 5141, 575, 504, 5761, 2024, 2]
+// Dependencies: [19, 17, 2191, 1189, 21, 5143, 575, 504, 5763, 2024, 2]
 // Exports: MaskedBadge
 
-// Module 16253 (void/Badge/Badge)
+// Module 16266 (void/Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2191 */;
 import BadgeConstants from "BadgeConstants" /* 1189 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;

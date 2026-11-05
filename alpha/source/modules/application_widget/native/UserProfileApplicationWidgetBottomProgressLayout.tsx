@@ -1,17 +1,17 @@
-// Module ID: 12555
-// Function ID: 12556
+// Module ID: 12562
+// Function ID: 12563
 // Name: UserProfileApplicationWidgetBottomProgressLayout
-// Dependencies: [19, 17, 21, 5141, 575, 12463, 5851, 12550, 5761, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 12470, 5854, 12557, 5763, 2]
 // Exports: default
 
-// Module 12555 (UserProfileApplicationWidgetBottomProgressLayout)
+// Module 12562 (UserProfileApplicationWidgetBottomProgressLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import _mod12463 from "module_12463" /* 12463 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import _mod12470 from "module_12470" /* 12470 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -62,27 +62,27 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   if (objective != null) {
     image = objective.fields.image;
   }
-  const items = [_mod12463.ResolvedValueType.MEDIA];
+  const items = [_mod12470.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
-  const obj = _mod12463;
+  const obj = _mod12470;
   const singleStringOrSkeleton = obj.resolveSingleStringOrSkeleton(objective, "name", resolveFieldValue);
-  const obj2 = _mod12463;
+  const obj2 = _mod12470;
   const singleStringOrSkeleton1 = obj2.resolveSingleStringOrSkeleton(objective, "description", resolveFieldValue);
   const progress = bottomConfig.components.progress;
   let current;
   if (progress != null) {
     current = progress.fields.current;
   }
-  const items1 = [_mod12463.ResolvedValueType.NUMBER];
+  const items1 = [_mod12470.ResolvedValueType.NUMBER];
   const iter = resolveFieldValue(current, items1);
   let max;
   if (progress != null) {
     max = progress.fields.max;
   }
-  const items2 = [_mod12463.ResolvedValueType.NUMBER];
+  const items2 = [_mod12470.ResolvedValueType.NUMBER];
   const iter2 = resolveFieldValue(max, items2);
   const obj3 = { style: tmp.root, children: items3 };
-  const tmp3Result = _mod12463;
+  const tmp3Result = _mod12470;
   const progressPercentage = tmp3Result.resolveProgressPercentage(iter, iter2);
   if (null != fieldValue) {
     const obj4 = { source: obj5, style: tmp.image, resizeMode: "contain" };
@@ -91,7 +91,7 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
     tmp15 = React3;
   } else {
     const obj6 = { style: tmp.image };
-    tmp14 = React3(tmp3(12550).ImageSkeleton, obj6);
+    tmp14 = React3(tmp3(12557).ImageSkeleton, obj6);
     tmp15 = React3;
   }
   items3 = [tmp14, ];
@@ -120,33 +120,33 @@ export default function UserProfileApplicationWidgetBottomProgressLayout(arg0) {
   const obj12 = { style: tmp.textLeft, children: items6 };
   if ("value" === singleStringOrSkeleton.status) {
     const obj13 = { variant: "heading-xs/medium", lineClamp: 2, children: singleStringOrSkeleton.text };
-    tmp15Result = tmp15(tmp3(5761).Text, obj13);
+    tmp15Result = tmp15(tmp3(5763).Text, obj13);
   } else {
-    tmp15Result = tmp15(tmp3(12550).TextSkeleton, { variant: "heading-xs/medium" });
+    tmp15Result = tmp15(tmp3(12557).TextSkeleton, { variant: "heading-xs/medium" });
   }
   items6 = [tmp15Result, ];
   if ("value" === singleStringOrSkeleton1.status) {
     const obj14 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 2, children: singleStringOrSkeleton1.text };
-    tmp15Result3 = tmp15(tmp3(5761).Text, obj14);
+    tmp15Result3 = tmp15(tmp3(5763).Text, obj14);
   } else {
-    tmp15Result3 = tmp15(tmp3(12550).TextSkeleton, { variant: "body-xs/medium" });
+    tmp15Result3 = tmp15(tmp3(12557).TextSkeleton, { variant: "body-xs/medium" });
   }
   items6[1] = tmp15Result3;
   items7 = [hasOwnProperty(View, obj12), ];
   if (null != iter) {
     const obj15 = { variant: "body-sm/medium", lineClamp: 1, style: tmp.progressText, children: combined };
-    const Text = tmp3(5761).Text;
+    const Text = tmp3(5763).Text;
     if (null != iter2) {
       const _HermesInternal2 = HermesInternal;
       combined = "" + iter.value + "/" + iter2.value;
     } else {
       const _HermesInternal = HermesInternal;
-      const tmp3Result2 = _mod12463;
+      const tmp3Result2 = _mod12470;
       combined = "" + tmp3Result2.decimalToClampedPercentage(iter.value) + "%";
     }
     tmp15Result4 = tmp15(Text, obj15);
   } else {
-    tmp15Result4 = tmp15(tmp3(12550).TextSkeleton, { variant: "body-sm/medium", widthChars: 4 });
+    tmp15Result4 = tmp15(tmp3(12557).TextSkeleton, { variant: "body-sm/medium", widthChars: 4 });
   }
   items7[1] = tmp15Result4;
   items5[1] = hasOwnProperty(View, obj11);

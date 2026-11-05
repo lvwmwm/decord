@@ -1,9 +1,9 @@
-// Module ID: 8034
-// Function ID: 8035
+// Module ID: 8039
+// Function ID: 8040
 // Name: RobloxSubgamePlatformUtils
-// Dependencies: [5, 8035, 8033, 2]
+// Dependencies: [5, 8040, 8038, 2]
 
-// Module 8034 (RobloxSubgamePlatformUtils)
+// Module 8039 (RobloxSubgamePlatformUtils)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

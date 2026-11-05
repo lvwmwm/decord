@@ -1,28 +1,28 @@
-// Module ID: 10276
-// Function ID: 10277
+// Module ID: 10284
+// Function ID: 10285
 // Name: ReactionEmojiOptionsActionSheet
-// Dependencies: [19, 17, 5142, 6931, 7099, 5172, 1072, 21, 5141, 575, 10236, 4966, 7493, 504, 10122, 1411, 5382, 10235, 5846, 1113, 10239, 10241, 7494, 5845, 8546, 7502, 7436, 5761, 4282, 2190, 7201, 7116, 2]
+// Dependencies: [19, 17, 5144, 6934, 7102, 5174, 1072, 21, 5143, 575, 10244, 4968, 5829, 504, 10130, 1411, 5384, 10243, 5849, 1113, 10247, 10249, 7496, 5848, 8551, 7504, 7439, 5763, 4284, 2190, 7204, 7119, 2]
 // Exports: default
 
-// Module 10276 (ReactionEmojiOptionsActionSheet)
+// Module 10284 (ReactionEmojiOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl7 from "intl" /* 1113 */;
-import ToastUtils from "ToastUtils" /* 5845 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7099 */;
-import ClipboardUtils from "ClipboardUtils" /* 7494 */;
-import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8546 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10235 */;
-import StarOutlineIcon from "StarOutlineIcon" /* 10239 */;
-import StarIcon from "StarIcon" /* 10241 */;
+import ToastUtils from "ToastUtils" /* 5848 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7102 */;
+import ClipboardUtils from "ClipboardUtils" /* 7496 */;
+import ReactionActionCreatorsAll from "ReactionActionCreators" /* 8551 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10243 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10247 */;
+import StarIcon from "StarIcon" /* 10249 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import EmojiStore from "EmojiStore" /* 6931 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import EmojiStore from "EmojiStore" /* 6934 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -57,14 +57,14 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   let intl6;
   let isEmojiPack;
   let items8;
-  let obj11;
+  let obj10;
+  let obj12;
   let obj13;
-  let obj14;
-  let obj19;
+  let obj18;
   let prop;
   let reaction;
-  let tmp10Result2;
-  let tmp33;
+  let tmp28Result;
+  let tmp35;
   channelId = channelId.channelId;
   const messageId = channelId.messageId;
   ({ reaction, canRemoveReactions, isEmojiPack } = channelId);
@@ -86,33 +86,33 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   }
   const DeveloperMode = tmp3(tmp4[11]).DeveloperMode;
   let setting = DeveloperMode.useSetting();
-  let obj = messageId(tmp4[12]);
-  const tidaWebformEnabled = obj.useExperiment({ location: "ReactionEmojiOptionsActionSheet" }, { autoTrackExposure: false }).tidaWebformEnabled;
+  const tmp3Result = channelId(stateFromStores1[12]);
+  const isTidaMediaTakedownRegion = tmp3Result.useIsTidaMediaTakedownRegion();
   const items = [SelectedGuildStore];
-  const tmp3Result = channelId(stateFromStores1[13]);
-  const stateFromStores = tmp3Result.useStateFromStores(items, () => guildId.getGuildId());
+  const tmp3Result5 = channelId(stateFromStores1[13]);
+  const stateFromStores = tmp3Result5.useStateFromStores(items, () => guildId.getGuildId());
   const items1 = [EmojiStore];
   const items2 = [emoji.id];
-  const tmp3Result4 = channelId(stateFromStores1[13]);
-  stateFromStores1 = tmp3Result4.useStateFromStores(items1, () => {
+  const tmp3Result6 = channelId(stateFromStores1[13]);
+  stateFromStores1 = tmp3Result6.useStateFromStores(items1, () => {
     let customEmojiById = null;
     if (null != emoji.id) {
       customEmojiById = EmojiStore.getCustomEmojiById(tmp.id);
     }
     return customEmojiById;
   }, items2);
-  const tmp3Result5 = channelId(stateFromStores1[14]);
-  isFavoriteEmoji = tmp3Result5.useIsFavoriteEmoji(stateFromStores, stateFromStores1);
+  const tmp3Result7 = channelId(stateFromStores1[14]);
+  isFavoriteEmoji = tmp3Result7.useIsFavoriteEmoji(stateFromStores, stateFromStores1);
   const items3 = [callback];
-  const tmp3Result6 = channelId(stateFromStores1[13]);
-  const stateFromStores2 = tmp3Result6.useStateFromStores(items3, () => callback.useReducedMotion);
+  const tmp3Result8 = channelId(stateFromStores1[13]);
+  const stateFromStores2 = tmp3Result8.useStateFromStores(items3, () => callback.useReducedMotion);
   const AnimateEmoji = tmp3(tmp4[11]).AnimateEmoji;
   emojiURL = undefined;
   if (null != emoji.id) {
-    let obj2 = { id: null, animated, size: 96 };
+    let obj = { id: null, animated, size: 96 };
     ({ id: obj6.id, animated } = emoji);
-    const getEmojiURL = tmp10(tmp4[15]).getEmojiURL;
-    messageId(stateFromStores1[15]);
+    const getEmojiURL = messageId(stateFromStores1[15]).getEmojiURL;
+    const tmp18 = messageId(stateFromStores1[15]);
     if (animated == null) {
       animated = false;
     }
@@ -122,9 +122,9 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
     if (animated) {
       animated = tmp15;
     }
-    emojiURL = getEmojiURL(obj2);
+    emojiURL = getEmojiURL(obj);
   }
-  const tmp18 = reaction.burst_count > 0 ? reaction.burst_count : reaction.count;
+  const tmp19 = reaction.burst_count > 0 ? reaction.burst_count : reaction.count;
   callback = isFavoriteEmoji.useCallback(() => {
     const obj = messageId(stateFromStores1[16]);
     obj.hideActionSheet();
@@ -183,65 +183,65 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
   if (str == null) {
     str = "";
   }
-  let obj3 = { children: null };
-  const obj4 = { style: tmp.header, children: null };
-  const obj5 = { style: tmp.reactionPill, children: items8 };
+  let obj2 = { children: null };
+  let obj3 = { style: tmp.header, children: null };
+  const obj4 = { style: tmp.reactionPill, children: items8 };
   const ActionSheet = tmp3(tmp4[25]).ActionSheet;
   items8 = [, ];
-  const obj7 = { src: emojiURL, name: str, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emoji };
-  items8[0] = closure_11(messageId(stateFromStores1[26]), obj7);
-  const obj8 = { variant: "body-lg/semibold", color: "text-default", style: tmp.reactionText, children: tmp18 };
-  items8[1] = closure_11(channelId(stateFromStores1[27]).Text, obj8);
-  const items9 = [closure_12(emojiURL, obj5), ];
+  const obj5 = { src: emojiURL, name: str, textEmojiStyle: tmp.emojiText, fastImageStyle: tmp.emoji };
+  items8[0] = closure_11(messageId(stateFromStores1[26]), obj5);
+  const obj7 = { variant: "body-lg/semibold", color: "text-default", style: tmp.reactionText, children: tmp19 };
+  items8[1] = closure_11(channelId(stateFromStores1[27]).Text, obj7);
+  const items9 = [closure_12(emojiURL, obj4), ];
   const Text = tmp3(tmp4[27]).Text;
-  const obj9 = { variant: "body-lg/semibold", color: "text-default", children: null };
+  const obj8 = { variant: "body-lg/semibold", color: "text-default", children: null };
   if (isEmojiPack) {
     let combined = str;
     if (null != emoji.id) {
       const _HermesInternal2 = HermesInternal;
       combined = ":" + str + ":";
     }
-    obj9.children = combined;
-    items9[1] = closure_11(Text, obj9);
-    obj4.children = items9;
-    const items10 = [tmp24(tmp25, obj4), , ];
-    const obj10 = { variant: "body-md/normal", color: "text-subtle", style: tmp.packDescription, children: format(prop, obj11) };
+    obj8.children = combined;
+    items9[1] = closure_11(Text, obj8);
+    obj3.children = items9;
+    const items10 = [tmp25(emojiURL, obj3), , ];
+    const obj9 = { variant: "body-md/normal", color: "text-subtle", style: tmp.packDescription, children: format(prop, obj10) };
     const Text3 = tmp3(tmp4[27]).Text;
     const intl5 = tmp3(tmp4[19]).intl;
     format = intl5.format;
-    obj11 = { helpdeskArticle: tmp10Result2.getArticleURL(HelpdeskArticles.NITRO_EMOJI_PACKS) };
-    prop = tmp10(tmp4[28])["/jdd/7"];
-    tmp10Result2 = messageId(stateFromStores1[29]);
-    items10[1] = closure_11(Text3, obj10);
+    obj10 = { helpdeskArticle: tmp28Result.getArticleURL(HelpdeskArticles.NITRO_EMOJI_PACKS) };
+    prop = tmp28(tmp4[28])["/jdd/7"];
+    tmp28Result = messageId(stateFromStores1[29]);
+    items10[1] = closure_11(Text3, obj9);
     if (canRemoveReactions) {
-      const obj12 = { hasIcons: false, children: closure_11(TableRow5, obj13) };
+      const obj11 = { hasIcons: false, children: closure_11(TableRow5, obj12) };
       const TableRowGroup2 = tmp3(tmp4[30]).TableRowGroup;
-      obj13 = { label: closure_11(Text4, obj14), onPress: callback4 };
+      obj12 = { label: closure_11(Text4, obj13), onPress: callback4 };
       TableRow5 = tmp3(tmp4[31]).TableRow;
-      obj14 = { variant: "body-md/semibold", color: "text-feedback-critical", children: intl6.string(channelId(stateFromStores1[19]).t["zx/e4P"]) };
+      obj13 = { variant: "body-md/semibold", color: "text-feedback-critical", children: intl6.string(channelId(stateFromStores1[19]).t["zx/e4P"]) };
       Text4 = tmp3(tmp4[27]).Text;
       intl6 = tmp3(tmp4[19]).intl;
-      canRemoveReactions = tmp26(TableRowGroup2, obj12);
+      canRemoveReactions = tmp27(TableRowGroup2, obj11);
     }
     items10[2] = canRemoveReactions;
-    obj3.children = items10;
-    tmp33 = obj3;
+    obj2.children = items10;
+    tmp35 = obj2;
   } else {
     let combined1 = str;
     if (null != emoji.id) {
       const _HermesInternal = HermesInternal;
       combined1 = ":" + str + ":";
     }
-    obj9.children = combined1;
-    items9[1] = closure_11(Text, obj9);
-    obj4.children = items9;
-    const items11 = [tmp24(tmp25, obj4), ];
-    let tmp26Result = tmp2;
+    obj8.children = combined1;
+    items9[1] = closure_11(Text, obj8);
+    obj3.children = items9;
+    const items11 = [tmp25(emojiURL, obj3), ];
+    let tmp27Result = tmp2;
     const TableRowGroup = tmp3(tmp4[30]).TableRowGroup;
     if (null != emoji.id) {
-      tmp26Result = null != stateFromStores1;
+      tmp27Result = null != stateFromStores1;
     }
-    if (tmp26Result) {
+    if (tmp27Result) {
       let stringResult;
       const TableRow = tmp3(tmp4[31]).TableRow;
       let intl = tmp3(tmp4[19]).intl;
@@ -252,20 +252,20 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
       } else {
         stringResult = string(t.nNsr67);
       }
-      const obj15 = { label: stringResult, onPress: callback1 };
-      tmp26Result = tmp26(TableRow, obj15);
+      const obj14 = { label: stringResult, onPress: callback1 };
+      tmp27Result = tmp27(TableRow, obj14);
     }
-    const items12 = [tmp26Result, , , ];
-    let tmp26Result3 = setting && tmp2;
-    if (tmp26Result3) {
-      const obj16 = { label: intl2.string(channelId(stateFromStores1[19]).t.Ap2oVy), onPress: callback2 };
+    const items12 = [tmp27Result, , , ];
+    let tmp27Result3 = setting && tmp2;
+    if (tmp27Result3) {
+      const obj15 = { label: intl2.string(channelId(stateFromStores1[19]).t.Ap2oVy), onPress: callback2 };
       const TableRow2 = tmp3(tmp4[31]).TableRow;
       intl2 = tmp3(tmp4[19]).intl;
-      tmp26Result3 = tmp26(TableRow2, obj16);
+      tmp27Result3 = tmp27(TableRow2, obj15);
     }
-    items12[1] = tmp26Result3;
+    items12[1] = tmp27Result3;
     if (setting) {
-      setting = tidaWebformEnabled;
+      setting = isTidaMediaTakedownRegion;
     }
     if (setting) {
       setting = tmp2;
@@ -274,26 +274,26 @@ export default function ReactionEmojiOptionsActionSheet(channelId) {
       setting = null != emojiURL;
     }
     if (setting) {
-      const obj17 = { label: intl3.string(channelId(stateFromStores1[19]).t.cIoudn), onPress: callback3 };
+      const obj16 = { label: intl3.string(channelId(stateFromStores1[19]).t.cIoudn), onPress: callback3 };
       const TableRow3 = tmp3(tmp4[31]).TableRow;
       intl3 = tmp3(tmp4[19]).intl;
-      setting = tmp26(TableRow3, obj17);
+      setting = tmp27(TableRow3, obj16);
     }
     items12[2] = setting;
-    let tmp26Result4 = canRemoveReactions;
-    if (tmp26Result4) {
-      const obj18 = { label: closure_11(Text2, obj19), onPress: callback4 };
+    let tmp27Result4 = canRemoveReactions;
+    if (tmp27Result4) {
+      const obj17 = { label: closure_11(Text2, obj18), onPress: callback4 };
       const TableRow4 = tmp3(tmp4[31]).TableRow;
-      obj19 = { variant: "body-md/semibold", color: "text-feedback-critical", children: intl4.string(channelId(stateFromStores1[19]).t["zx/e4P"]) };
+      obj18 = { variant: "body-md/semibold", color: "text-feedback-critical", children: intl4.string(channelId(stateFromStores1[19]).t["zx/e4P"]) };
       Text2 = tmp3(tmp4[27]).Text;
       intl4 = tmp3(tmp4[19]).intl;
-      tmp26Result4 = tmp26(TableRow4, obj18);
+      tmp27Result4 = tmp27(TableRow4, obj17);
     }
-    const obj20 = { hasIcons: false, children: items12 };
-    items12[3] = tmp26Result4;
-    items11[1] = closure_12(TableRowGroup, obj20);
-    obj3.children = items11;
-    tmp33 = obj3;
+    const obj19 = { hasIcons: false, children: items12 };
+    items12[3] = tmp27Result4;
+    items11[1] = closure_12(TableRowGroup, obj19);
+    obj2.children = items11;
+    tmp35 = obj2;
   }
-  return closure_12(ActionSheet, tmp33);
+  return closure_12(ActionSheet, tmp35);
 };

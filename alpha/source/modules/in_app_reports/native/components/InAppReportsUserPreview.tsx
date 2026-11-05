@@ -1,19 +1,19 @@
-// Module ID: 15387
-// Function ID: 15388
+// Module ID: 15400
+// Function ID: 15401
 // Name: InAppReportsUserPreview
-// Dependencies: [19, 17, 21, 5141, 575, 5138, 5761, 1113, 1187, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 5140, 5763, 1113, 1187, 2]
 // Exports: default
 
-// Module 15387 (InAppReportsUserPreview)
+// Module 15400 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import ColorUtils from "ColorUtils" /* 5138 */;
-import Text_Text from "Text/Text" /* 5761 */;
+import ColorUtils from "ColorUtils" /* 5140 */;
+import Text_Text from "Text/Text" /* 5763 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -54,7 +54,7 @@ export default function UserPreview(user) {
   const obj6 = { style: tmp.userProfileInfo, children: items3 };
   if (tmp7Result) {
     const obj7 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: user.globalName };
-    tmp7Result = tmp7(tmp2(5761).Text, obj7);
+    tmp7Result = tmp7(tmp2(5763).Text, obj7);
   }
   items3 = [tmp7Result, ];
   const obj8 = { color: "text-default", variant: "body-sm/normal", children: user.username };

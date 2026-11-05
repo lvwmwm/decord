@@ -1,13 +1,13 @@
-// Module ID: 14365
-// Function ID: 14366
+// Module ID: 14378
+// Function ID: 14379
 // Name: useMultiPerkStatusValues
-// Dependencies: [5354, 14294, 1113, 2699, 2]
+// Dependencies: [5356, 14307, 1113, 2699, 2]
 // Exports: default
 
-// Module 14365 (useMultiPerkStatusValues)
+// Module 14378 (useMultiPerkStatusValues)
 import _modDef2699 from "module_2699" /* 2699 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5354 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 14294 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5356 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 14307 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

@@ -1,27 +1,27 @@
-// Module ID: 17222
-// Function ID: 17223
+// Module ID: 17246
+// Function ID: 17247
 // Name: BountyVideoEndAppStorePanel
-// Dependencies: [19, 17, 1192, 5397, 21, 5141, 575, 14879, 5729, 1652, 8002, 5839, 14875, 5428, 1705, 5378, 5381, 5731, 504, 5207, 2]
+// Dependencies: [19, 17, 1192, 5399, 21, 5143, 575, 14892, 5731, 1652, 8007, 5842, 14888, 5430, 1705, 5380, 5383, 5733, 504, 5209, 2]
 // Exports: default
 
-// Module 17222 (BountyVideoEndAppStorePanel)
+// Module 17246 (BountyVideoEndAppStorePanel)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import native from "native" /* 5207 */;
-import timing_timing from "timing/timing" /* 5378 */;
-import timingPresets from "timingPresets" /* 5381 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5428 */;
-import openURLDefault from "openURL" /* 5839 */;
-import AnalyticsActions from "AnalyticsActions" /* 8002 */;
-import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14875 */;
-import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14879 */;
+import native from "native" /* 5209 */;
+import timing_timing from "timing/timing" /* 5380 */;
+import timingPresets from "timingPresets" /* 5383 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5399 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5430 */;
+import openURLDefault from "openURL" /* 5842 */;
+import AnalyticsActions from "AnalyticsActions" /* 8007 */;
+import AppStoreOverlayContent from "AppStoreOverlayContent" /* 14888 */;
+import AppStoreOverlayBody from "AppStoreOverlayBody" /* 14892 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let num, tmp2;

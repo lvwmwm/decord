@@ -1,25 +1,25 @@
-// Module ID: 19103
-// Function ID: 19104
+// Module ID: 19134
+// Function ID: 19135
 // Name: FriendsNavigator
-// Dependencies: [19, 17, 21, 10035, 5141, 575, 9964, 9961, 14389, 1113, 7794, 7306, 19104, 19110, 19113, 19114, 19115, 19126, 19127, 19128, 19130, 19133, 19134, 5318, 1627, 7258, 5098, 5207, 2]
+// Dependencies: [19, 17, 21, 10041, 5143, 575, 9970, 9967, 14402, 1113, 7799, 7309, 19135, 19141, 19144, 19145, 19146, 19157, 19158, 19159, 19161, 19164, 19165, 5320, 1627, 7261, 5100, 5209, 2]
 // Exports: default
 
-// Module 19103 (FriendsNavigator)
+// Module 19134 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import DeviceUtils from "DeviceUtils" /* 5098 */;
-import native from "native" /* 5207 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5318 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7258 */;
-import HeaderShared from "HeaderShared" /* 9961 */;
-import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9964 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14389 */;
+import DeviceUtils from "DeviceUtils" /* 5100 */;
+import native from "native" /* 5209 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5320 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7261 */;
+import HeaderShared from "HeaderShared" /* 9967 */;
+import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9970 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14402 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 10035 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import NativeStackView from "NativeStackView" /* 10041 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

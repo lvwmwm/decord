@@ -3,9 +3,14 @@
 // Dependencies: []
 
 // Module 13156
-const obj = {
-  parse: function selectorList() {
+let obj2;
+const obj = { parse: obj2 };
+obj2 = {
+  prelude() {
     return this.createSingleNodeList(this.SelectorList());
+  },
+  block() {
+    return this.Block(true);
   }
 };
 

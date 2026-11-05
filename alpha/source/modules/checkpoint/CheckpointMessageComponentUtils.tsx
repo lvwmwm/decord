@@ -1,23 +1,23 @@
-// Module ID: 6222
-// Function ID: 6223
+// Module ID: 6225
+// Function ID: 6226
 // Name: checkpoint/CheckpointMessageComponentUtils
-// Dependencies: [6201, 5906, 11, 6223, 6224, 6225, 6226, 6246, 6568, 1113, 3219, 6210, 5087, 6572, 3187, 2021, 2121, 2]
+// Dependencies: [6204, 5909, 11, 6226, 6227, 6228, 6248, 6570, 1113, 3219, 6213, 5089, 6574, 6575, 3187, 2021, 2121, 2]
 // Exports: formatCheckpoint2026PowerLevel, getCharacterLayerUrls, getCheckpoint2026PowerBarUnits, getCheckpointDataFromMessage, getCheckpointLabel, toCheckpointMessageComponentData, transformCheckpoint2026CardComponent, transformCheckpoint2026CardToRowGeneratedComponent
 
-// Module 6222 (checkpoint/CheckpointMessageComponentUtils)
+// Module 6225 (checkpoint/CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl18 from "intl" /* 1113 */;
 import Server from "Server" /* 2121 */;
 import _modDef3187 from "module_3187" /* 3187 */;
 import _modDef3219 from "module_3219" /* 3219 */;
-import TimeUtils from "TimeUtils" /* 5906 */;
-import CheckpointUtils from "CheckpointUtils" /* 6210 */;
-import CheckpointExperiments from "CheckpointExperiments" /* 6223 */;
-import CheckpointCardTypes from "CheckpointCardTypes" /* 6225 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6226 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6246 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6572 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import TimeUtils from "TimeUtils" /* 5909 */;
+import CheckpointUtils from "CheckpointUtils" /* 6213 */;
+import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 6226 */;
+import CheckpointCardTypes from "CheckpointCardTypes" /* 6227 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 6228 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6248 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6574 */;
+import CheckpointConstants from "CheckpointConstants" /* 6204 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,8 +28,6 @@ let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-let tmp;
-const CheckpointCardColorPalette = tmp(6224);
 function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
   let formatToPlainString;
   let formatToPlainStringResult1;
@@ -154,7 +152,7 @@ function transformCheckpoint2026StatsToRowGeneratedComponent(stats) {
     if (null != stats.topEmoji) {
       let result;
       if (null == stats.topEmoji.emojiId) {
-        const tmp4Result = tmp4(5087);
+        const tmp4Result = tmp4(5089);
         result = tmp4Result.convertSurrogateToName(stats.topEmoji.emojiName);
       } else {
         const _HermesInternal = HermesInternal;
@@ -204,62 +202,57 @@ let result = size.fileFinishedImporting("modules/checkpoint/CheckpointMessageCom
 
 export function transformCheckpoint2026CardComponent(checkpoint_data) {
   let NONE;
-  let tmp11;
-  let tmp12;
-  let tmp6;
-  let tmp7;
+  let tmp;
+  let tmp2;
+  let tmp3;
+  let tmp4;
   let tmp8;
-  let tmp3 = null;
-  const obj = CheckpointExperiments;
-  if (obj.getIsCheckpointCardEnabled("transformCheckpoint2026CardComponent")) {
-    let tmp5;
+  let tmp9;
+  if (null != checkpoint_data.character) {
+    const obj = { version: checkpoint_data.version, character: tmp2, stats: tmp3, cardColorPalette: NONE };
+    tmp2 = undefined;
     if (null != checkpoint_data.character) {
-      const obj2 = { version: checkpoint_data.version, character: tmp6, stats: tmp7, cardColorPalette: NONE };
-      tmp6 = undefined;
-      if (null != checkpoint_data.character) {
-        const obj6 = { base: null, shoes: null, outfit: null, face: null, hat: null, wearable: null, aura: null };
-        ({ base: obj3.base, shoes: obj3.shoes, outfit: obj3.outfit, face: obj3.face, hat: obj3.hat, wearable: obj3.wearable, aura: obj3.aura } = checkpoint_data.character);
-        tmp6 = obj6;
-      }
-      tmp7 = undefined;
-      if (null != checkpoint_data.stats) {
-        const stats = checkpoint_data.stats;
-        const obj7 = { totalVoiceMinutes: null, numMessagesSent: null, numEmojisSent: null, totalDaysPlayed: null, topEmoji: tmp8, topGuild: tmp11, topGuildNumDaysInteracted: stats.top_guild_num_days_interacted, topGame: tmp12, powerLevel: null, powerLevelPercentile: null };
-        ({ total_voice_minutes: obj4.totalVoiceMinutes, num_messages_sent: obj4.numMessagesSent, num_emojis_sent: obj4.numEmojisSent, total_days_played: obj4.totalDaysPlayed } = stats);
-        tmp8 = undefined;
-        if (null != stats.top_emoji) {
-          let emoji_id;
-          const obj5 = SnowflakeUtilsDefault;
-          if (obj5.isProbablyAValidSnowflake(stats.top_emoji.emoji_id)) {
-            emoji_id = stats.top_emoji.emoji_id;
-          }
-          tmp8 = { emojiId: emoji_id, emojiName: stats.top_emoji.emoji_name };
-          const obj8 = { emojiId: emoji_id, emojiName: stats.top_emoji.emoji_name };
-        }
-        tmp11 = undefined;
-        if (null != stats.top_guild) {
-          tmp11 = { guildId: stats.top_guild.guild_id, guildName: stats.top_guild.guild_name, guildIcon: stats.top_guild.guild_icon };
-          const obj14 = { guildId: stats.top_guild.guild_id, guildName: stats.top_guild.guild_name, guildIcon: stats.top_guild.guild_icon };
-        }
-        tmp12 = undefined;
-        if (null != stats.top_game) {
-          tmp12 = { applicationId: stats.top_game.application_id, applicationName: stats.top_game.application_name, applicationImageId: stats.top_game.application_image_id };
-          const obj15 = { applicationId: stats.top_game.application_id, applicationName: stats.top_game.application_name, applicationImageId: stats.top_game.application_image_id };
-        }
-        ({ power_level: obj4.powerLevel, power_level_percentile: obj4.powerLevelPercentile } = stats);
-        tmp7 = obj7;
-      }
-      NONE = checkpoint_data.card_color_palette;
-      if (NONE == null) {
-        NONE = CheckpointCardColorPalette.CheckpointCardColorPalette.NONE;
-      }
-      tmp5 = obj2;
-    } else {
-      tmp5 = null;
+      const obj5 = { base: null, shoes: null, outfit: null, face: null, hat: null, wearable: null, aura: null };
+      ({ base: obj2.base, shoes: obj2.shoes, outfit: obj2.outfit, face: obj2.face, hat: obj2.hat, wearable: obj2.wearable, aura: obj2.aura } = checkpoint_data.character);
+      tmp2 = obj5;
     }
-    tmp3 = tmp5;
+    tmp3 = undefined;
+    if (null != checkpoint_data.stats) {
+      const stats = checkpoint_data.stats;
+      const obj6 = { totalVoiceMinutes: null, numMessagesSent: null, numEmojisSent: null, totalDaysPlayed: null, topEmoji: tmp4, topGuild: tmp8, topGuildNumDaysInteracted: stats.top_guild_num_days_interacted, topGame: tmp9, powerLevel: null, powerLevelPercentile: null };
+      ({ total_voice_minutes: obj3.totalVoiceMinutes, num_messages_sent: obj3.numMessagesSent, num_emojis_sent: obj3.numEmojisSent, total_days_played: obj3.totalDaysPlayed } = stats);
+      tmp4 = undefined;
+      if (null != stats.top_emoji) {
+        let emoji_id;
+        const obj4 = SnowflakeUtilsDefault;
+        if (obj4.isProbablyAValidSnowflake(stats.top_emoji.emoji_id)) {
+          emoji_id = stats.top_emoji.emoji_id;
+        }
+        tmp4 = { emojiId: emoji_id, emojiName: stats.top_emoji.emoji_name };
+        const obj7 = { emojiId: emoji_id, emojiName: stats.top_emoji.emoji_name };
+      }
+      tmp8 = undefined;
+      if (null != stats.top_guild) {
+        tmp8 = { guildId: stats.top_guild.guild_id, guildName: stats.top_guild.guild_name, guildIcon: stats.top_guild.guild_icon };
+        const obj12 = { guildId: stats.top_guild.guild_id, guildName: stats.top_guild.guild_name, guildIcon: stats.top_guild.guild_icon };
+      }
+      tmp9 = undefined;
+      if (null != stats.top_game) {
+        tmp9 = { applicationId: stats.top_game.application_id, applicationName: stats.top_game.application_name, applicationImageId: stats.top_game.application_image_id };
+        const obj13 = { applicationId: stats.top_game.application_id, applicationName: stats.top_game.application_name, applicationImageId: stats.top_game.application_image_id };
+      }
+      ({ power_level: obj3.powerLevel, power_level_percentile: obj3.powerLevelPercentile } = stats);
+      tmp3 = obj6;
+    }
+    NONE = checkpoint_data.card_color_palette;
+    if (NONE == null) {
+      NONE = CheckpointCardColorPalette.CheckpointCardColorPalette.NONE;
+    }
+    tmp = obj;
+  } else {
+    tmp = null;
   }
-  return tmp3;
+  return tmp;
 }
 export function toCheckpointMessageComponentData(STATS_ONLY, stateFromStores, stats) {
   let icon;
@@ -432,7 +425,7 @@ export function transformCheckpoint2026CardToRowGeneratedComponent(checkpointDat
     importDefault = tmp3;
     const obj2 = { layerUrls: items, accessibilityLabel: obj4.getCheckpointCharacterAccessibilityLabel(character) };
     items = [];
-    const obj3 = character(items[7]);
+    const obj3 = character(items[6]);
     const characterLayerOrdering = obj3.getCharacterLayerOrdering(character.wearable);
     const item = characterLayerOrdering.forEach((item) => {
       const tmp = CheckpointCharacterTraits.CHECKPOINT_TRAIT_TO_OPTION_ASSETS[item][character[item]];
@@ -447,18 +440,18 @@ export function transformCheckpoint2026CardToRowGeneratedComponent(checkpointDat
       }
     });
     tmp4 = obj2;
-    obj4 = character(items[8]);
+    obj4 = character(items[7]);
   }
   tmp7 = undefined;
   if (null != checkpointData.stats) {
     tmp7 = transformCheckpoint2026StatsToRowGeneratedComponent(checkpointData.stats);
   }
   tmp10 = undefined;
-  const obj5 = character(items[3]);
+  const obj5 = character(items[13]);
   const tmp9 = character;
   if (obj5.getIsCheckpointEnabled("getCheckpointClickable")) {
     const obj6 = { ariaDescription: intl.string(tmp(items[14]).r8GEbK) };
-    intl = tmp9(tmp2[9]).intl;
+    intl = tmp9(tmp2[8]).intl;
     tmp10 = obj6;
   }
   return obj;

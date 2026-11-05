@@ -1,16 +1,16 @@
-// Module ID: 12949
-// Function ID: 12950
+// Module ID: 12956
+// Function ID: 12957
 // Name: conjurePlanCommandText
-// Dependencies: [19, 12950, 5192, 2]
+// Dependencies: [19, 12957, 5194, 2]
 // Exports: conjurePlanCommandPattern, conjurePlanSlashCommandNames, conjurePlanTextMentionsCommand, splitConjurePlanCommandText, useConjurePlanCommandPattern, useConjurePlanSlashCommandNames
 
-// Module 12949 (conjurePlanCommandText)
-import escapeRegExpDefault from "escapeRegExp" /* 5192 */;
+// Module 12956 (conjurePlanCommandText)
+import escapeRegExpDefault from "escapeRegExp" /* 5194 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const f103809 = (name) => name.name;
-const f103810 = (arg0, arg1) => arg1.length - arg0.length;
+const f103978 = (name) => name.name;
+const f103979 = (arg0, arg1) => arg1.length - arg0.length;
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanCommandText.tsx");
 
 export function conjurePlanSlashCommandNames(arr) {
@@ -18,7 +18,7 @@ export function conjurePlanSlashCommandNames(arr) {
     const obj = commands(closure_1_2[1]);
     return "/" === obj.conjurePlanCommandPrefix(item);
   });
-  return found.map(f103809);
+  return found.map(f103978);
 }
 export function useConjurePlanSlashCommandNames(commands) {
   const items = [commands];
@@ -27,7 +27,7 @@ export function useConjurePlanSlashCommandNames(commands) {
       const obj = commands(closure_1_2[1]);
       return "/" === obj.conjurePlanCommandPrefix(item);
     });
-    return found.map(f103809);
+    return found.map(f103978);
   }, items);
 }
 export function conjurePlanCommandPattern(arg0) {
@@ -36,7 +36,7 @@ export function conjurePlanCommandPattern(arg0) {
   } else {
     const items = [];
     HermesBuiltin.arraySpread(items, arg0, 0);
-    const sorted = items.sort(f103810);
+    const sorted = items.sort(f103979);
     const mapped = sorted.map(escapeRegExpDefault);
     const _RegExp = RegExp;
     const _HermesInternal = HermesInternal;
@@ -66,7 +66,7 @@ export function useConjurePlanCommandPattern(commandNames) {
     if (0 !== commandNames.length) {
       const items = [];
       HermesBuiltin.arraySpread(items, commandNames, 0);
-      const sorted = items.sort(f103810);
+      const sorted = items.sort(f103979);
       const mapped = sorted.map(escapeRegExpDefault);
       const _RegExp = RegExp;
       const _HermesInternal = HermesInternal;

@@ -1,23 +1,23 @@
-// Module ID: 18533
-// Function ID: 18534
+// Module ID: 18563
+// Function ID: 18564
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 18534, 5012, 21, 575, 1652, 5723, 5141, 563, 18535, 18536, 5378, 14273, 7487, 1113, 2699, 9137, 5761, 7514, 2]
+// Dependencies: [19, 17, 18564, 5014, 21, 575, 1652, 5725, 5143, 563, 18565, 18566, 5380, 14286, 7490, 1113, 2699, 9144, 5763, 7516, 2]
 // Exports: default
 
-// Module 18533 (GuildPowerupsProgressBar)
+// Module 18563 (GuildPowerupsProgressBar)
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5378 */;
-import LinearGradientDefault from "LinearGradient" /* 5723 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7487 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14273 */;
-import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 18536 */;
+import timing_timing from "timing/timing" /* 5380 */;
+import LinearGradientDefault from "LinearGradient" /* 5725 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 14286 */;
+import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 18566 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 18534 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 18564 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652 from "module_1652" /* 1652 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;

@@ -1,14 +1,14 @@
-// Module ID: 10014
-// Function ID: 10015
+// Module ID: 10020
+// Function ID: 10021
 // Name: PhoneHangUpIcon
-// Dependencies: [19, 21, 575, 5850, 10015, 2]
+// Dependencies: [19, 21, 575, 5853, 10021, 2]
 // Exports: PhoneHangUpIcon
 
-// Module 10014 (PhoneHangUpIcon)
+// Module 10020 (PhoneHangUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5850 */;
-import AssetRegistry from "AssetRegistry" /* 10015 */;
+import BaseIconImage2 from "BaseIconImage" /* 5853 */;
+import AssetRegistry from "AssetRegistry" /* 10021 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

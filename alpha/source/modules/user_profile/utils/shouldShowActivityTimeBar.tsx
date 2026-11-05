@@ -1,11 +1,11 @@
-// Module ID: 15069
-// Function ID: 15070
+// Module ID: 15082
+// Function ID: 15083
 // Name: shouldShowActivityTimeBar
-// Dependencies: [5896, 2]
+// Dependencies: [5899, 2]
 // Exports: default
 
-// Module 15069 (shouldShowActivityTimeBar)
-import ActivityTypes from "ActivityTypes" /* 5896 */;
+// Module 15082 (shouldShowActivityTimeBar)
+import ActivityTypes from "ActivityTypes" /* 5899 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/utils/shouldShowActivityTimeBar.tsx");

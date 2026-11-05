@@ -1,13 +1,13 @@
-// Module ID: 14889
-// Function ID: 14890
+// Module ID: 14902
+// Function ID: 14903
 // Name: IosAttributionEligibility
-// Dependencies: [9865, 1377, 7982, 14890, 2]
+// Dependencies: [9871, 1377, 7987, 14903, 2]
 // Exports: getIosAttributionClickFramework, isCampaignIosAttributionEnabled, isIosAttributionEligible
 
-// Module 14889 (IosAttributionEligibility)
-import QuestDataUtils from "QuestDataUtils" /* 7982 */;
-import apexExperiment from "apexExperiment" /* 9865 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14890 */;
+// Module 14902 (IosAttributionEligibility)
+import QuestDataUtils from "QuestDataUtils" /* 7987 */;
+import apexExperiment from "apexExperiment" /* 9871 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14903 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

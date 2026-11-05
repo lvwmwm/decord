@@ -1,13 +1,13 @@
-// Module ID: 13461
-// Function ID: 13462
+// Module ID: 13472
+// Function ID: 13473
 // Name: socialLayerStorefrontEmbedTap
-// Dependencies: [32, 11753, 11754, 11752, 2]
+// Dependencies: [32, 11761, 11762, 11760, 2]
 // Exports: getSocialLayerStorefrontEmbedTap
 
-// Module 13461 (socialLayerStorefrontEmbedTap)
-import storefrontCodedLink from "storefrontCodedLink" /* 11752 */;
-import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11753 */;
-import SocialLayerStorefrontMobileMultiSkuEmbedExperiment from "SocialLayerStorefrontMobileMultiSkuEmbedExperiment" /* 11754 */;
+// Module 13472 (socialLayerStorefrontEmbedTap)
+import storefrontCodedLink from "storefrontCodedLink" /* 11760 */;
+import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11761 */;
+import SocialLayerStorefrontMobileMultiSkuEmbedExperiment from "SocialLayerStorefrontMobileMultiSkuEmbedExperiment" /* 11762 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,49 +1,43 @@
 // Module ID: 13388
 // Function ID: 13389
-// Dependencies: [13389]
-// Exports: isNodeEnv, loadModule
+// Dependencies: [13308, 13287]
+// Exports: captureFeedback
 
 // Module 13388
-import _mod13389 from "module_13389" /* 13389 */;
+import _mod13287 from "module_13287" /* 13287 */;
+import _mod13308 from "module_13308" /* 13308 */;
 
-function dynamicRequire(require, arg1) {
-  return require.require(arg1);
-}
 
-export { dynamicRequire };
-export function isNodeEnv() {
-  const obj = _mod13389;
-  let tmp2 = !obj.isBrowserBundle();
-  obj.isBrowserBundle();
-  if (tmp2) {
-    const _Object = Object;
-    const _process = process;
-    let num = 0;
-    const call = toString.call;
-    if (typeof process !== "undefined") {
-      num = process;
-    }
-    tmp2 = "[object process]" === call(num);
-  }
-  return tmp2;
-}
-export function loadModule(arg0) {
-  let tmp = arg1;
+export function captureFeedback(arg0) {
+  let associatedEventId;
+  let email;
+  let message;
+  let name;
+  let obj4;
+  let obj6;
+  let source;
+  let tags;
+  let url;
+  let obj = arg1;
   if (arg1 === undefined) {
-    tmp = module;
+    obj = {};
   }
-  let tmp2;
-  try {
-    tmp2 = dynamicRequire(tmp, arg0);
-  } catch (err) {
+  let currentScope = arg2;
+  if (arg2 === undefined) {
+    const obj3 = _mod13308;
+    currentScope = obj3.getCurrentScope();
   }
-  const tmp4 = tmp2;
-  if (!tmp4) {
-    try {
-      const _HermesInternal = HermesInternal;
-      tmp2 = dynamicRequire(tmp, "" + dynamicRequire(tmp, "process").cwd() + "/node_modules/" + arg0);
-    } catch (err) {
-    }
+  const obj2 = { contexts: obj4, type: "feedback", level: "info", tags };
+  obj4 = { feedback: obj6.dropUndefinedKeys({ contact_email: email, name, message, url, source, associated_event_id: associatedEventId }) };
+  ({ message, name, email, url, source, associatedEventId, tags } = arg0);
+  obj6 = _mod13287;
+  let client = currentScope && currentScope.getClient();
+  if (!client) {
+    const tmp3Result = _mod13308;
+    client = tmp3Result.getClient();
   }
-  return tmp2;
+  if (client) {
+    client.emit("beforeSendFeedback", obj2, obj);
+  }
+  return currentScope.captureEvent(obj2, obj);
 }

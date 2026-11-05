@@ -1,14 +1,14 @@
-// Module ID: 19223
-// Function ID: 19224
+// Module ID: 19254
+// Function ID: 19255
 // Name: SearchNavigatorPreviewHeader
-// Dependencies: [19, 17, 21, 5141, 14784, 2]
+// Dependencies: [19, 17, 21, 5143, 14797, 2]
 
-// Module 19223 (SearchNavigatorPreviewHeader)
+// Module 19254 (SearchNavigatorPreviewHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14784 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 14797 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

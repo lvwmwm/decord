@@ -1,22 +1,22 @@
-// Module ID: 13431
-// Function ID: 13432
+// Module ID: 13456
+// Function ID: 13457
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 2533, 5141, 7118, 6162, 5851, 5761, 1493, 10195, 1113, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 575, 2533, 5143, 7121, 6165, 5854, 5763, 1493, 10203, 1113, 1187, 2]
 // Exports: default
 
-// Module 13431 (GameOrganizationBenefitsCarousel)
+// Module 13456 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
 import _modDef2533 from "module_2533" /* 2533 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Card_Card from "Card/Card" /* 7118 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Card_Card from "Card/Card" /* 7121 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,8 +28,8 @@ let obj4;
 let obj5;
 let tmp2;
 let tmp6;
-const FastImageDefault = tmp6(5851);
-const CarouselDefault = tmp2(10195);
+const FastImageDefault = tmp6(5854);
+const CarouselDefault = tmp2(10203);
 function BenefitCard(arg0) {
   let Stack;
   let img;
@@ -53,7 +53,7 @@ function BenefitCard(arg0) {
   items[2] = cardSpacing;
   const obj = { style: items, children: tmp5(Stack, obj2) };
   obj2 = { spacing: nativeDefault.space.PX_24, children: items1 };
-  Stack = tmp3(6162).Stack;
+  Stack = tmp3(6165).Stack;
   tmp5 = metroImportDefault;
   if (null != img) {
     const obj3 = { source: obj4, style: tmp.benefitImage, resizeMode: "cover", accessible: false };

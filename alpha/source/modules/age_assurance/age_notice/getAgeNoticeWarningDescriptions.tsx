@@ -1,14 +1,14 @@
-// Module ID: 6871
-// Function ID: 6872
+// Module ID: 6874
+// Function ID: 6875
 // Name: getAgeNoticeWarningDescriptions
-// Dependencies: [6872, 1113, 6873, 3255, 2]
-// Exports: getTinyBroncoServerDescriptions, getTinyBroncoWarningDescriptions
+// Dependencies: [6875, 1113, 6876, 3255, 2]
+// Exports: getAgeNoticeServerDescriptions, getAgeNoticeWarningDescriptions
 
-// Module 6871 (getAgeNoticeWarningDescriptions)
+// Module 6874 (getAgeNoticeWarningDescriptions)
 import intl6 from "intl" /* 1113 */;
 import _modDef3255 from "module_3255" /* 3255 */;
-import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6873 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6872 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6876 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6875 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -16,7 +16,7 @@ let closure_4;
 ({ AGE_NOTICE_CHANNEL_LOCATION: c3, AGE_NOTICE_SERVER_LOCATION: closure_4 } = AgeNoticeConstants);
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/getAgeNoticeWarningDescriptions.tsx");
 
-export function getTinyBroncoServerDescriptions() {
+export function getAgeNoticeServerDescriptions() {
   let intl;
   let intl2;
   let intl3;
@@ -26,11 +26,11 @@ export function getTinyBroncoServerDescriptions() {
   intl3 = intl6.intl;
   return obj;
 }
-export function getTinyBroncoWarningDescriptions(tmp4Result, guildName) {
+export function getAgeNoticeWarningDescriptions(tmp4Result, guildName) {
   let tmp4 = null;
   const tmp = tmp4Result ? React3 : _false;
   const obj = AgeNoticeExperiment;
-  if (obj.isTinyBroncoEnabled(tmp)) {
+  if (obj.isAgeNoticeEnabled(tmp)) {
     let tmp7;
     const obj2 = { adult: null, teen: null, unverified: null };
     const intl = tmp2(1113).intl;

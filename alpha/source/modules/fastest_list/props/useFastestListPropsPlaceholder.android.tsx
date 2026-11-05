@@ -1,13 +1,13 @@
-// Module ID: 7366
-// Function ID: 7367
+// Module ID: 7369
+// Function ID: 7370
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7367, 5138, 2]
+// Dependencies: [19, 17, 7370, 5140, 2]
 // Exports: default
 
-// Module 7366 (useFastestListPropsPlaceholder)
+// Module 7369 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
-import ColorUtils from "ColorUtils" /* 5138 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7367 */;
+import ColorUtils from "ColorUtils" /* 5140 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7370 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "current", borderTopRightRadius: "ti", borderBottomLeftRadius: "done", borderBottomRightRadius: "T", divider: "r", dividerColor: "isArray", dividerPaddingLeft: "Array", dividerPaddingRight: "ti", placeholderShape: "color", placeholderShapeColor: "messageId", placeholderShapeCount: "Array", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "ti", placeholderShapePaddingVertical: "justifyContent", placeholderFeedBackgroundColor: "h", placeholderFeedColor: "a", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "Array", placeholderFeedLabelSize: "children", placeholderFeedLabelSecondarySize: "keys", placeholderFeedPadding: "x", placeholderFeedShape: "ti", placeholderFeedShapeSize: "add", placeholderType: NONE, width: true, height: true, verticalAlignment: true, horizontalAlignment: true };
+  size = { borderRadius: "Array", borderTopLeftRadius: "ty", borderTopRightRadius: "ao", borderBottomLeftRadius: "add", borderBottomRightRadius: "T", divider: "r", dividerColor: "isArray", dividerPaddingLeft: "Array", dividerPaddingRight: "ao", placeholderShape: "useMemo", placeholderShapeColor: "y", placeholderShapeCount: "r", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "ao", placeholderShapePaddingVertical: "round", placeholderFeedBackgroundColor: "Number", placeholderFeedColor: "a", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "Array", placeholderFeedLabelSize: "id", placeholderFeedLabelSecondarySize: "__packager_asset", placeholderFeedPadding: "x", placeholderFeedShape: "ao", placeholderFeedShapeSize: "to", placeholderType: NONE, width: true, height: true, verticalAlignment: true, horizontalAlignment: true };
   if (null == listFooter) {
     return size;
   } else {

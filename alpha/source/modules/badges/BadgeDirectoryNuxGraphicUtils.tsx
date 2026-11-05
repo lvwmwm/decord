@@ -1,11 +1,11 @@
-// Module ID: 15133
-// Function ID: 15134
+// Module ID: 15146
+// Function ID: 15147
 // Name: BadgeDirectoryNuxGraphicUtils
-// Dependencies: [32, 8896, 2]
+// Dependencies: [32, 8901, 2]
 // Exports: getBadgeDirectoryNuxGraphicIconUrls, getBadgeDirectoryNuxGraphicLayout
 
-// Module 15133 (BadgeDirectoryNuxGraphicUtils)
-import BadgeId from "BadgeId" /* 8896 */;
+// Module 15146 (BadgeDirectoryNuxGraphicUtils)
+import BadgeId from "BadgeId" /* 8901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -33,21 +33,14 @@ export function getBadgeDirectoryNuxGraphicIconUrls(badges) {
         if (-1 === findIndexResult) {
           return 0;
         } else {
-          let prop;
+          let simple_icon_url;
           if (value.tiers[findIndexResult] != null) {
-            prop = tmp3.complex_icon_static_url;
+            simple_icon_url = tmp4.simple_icon_url;
           }
-          if (prop == null) {
-            let simple_icon_url;
-            if (value.tiers[findIndexResult] != null) {
-              simple_icon_url = tmp3.simple_icon_url;
-            }
-            prop = simple_icon_url;
-          }
-          if (null == prop) {
+          if (null == simple_icon_url) {
             return 0;
           } else {
-            const obj = { iconUrl: prop, tierIndex: findIndexResult };
+            const obj = { iconUrl: simple_icon_url, tierIndex: findIndexResult };
             items.push(obj);
           }
         }

@@ -1,27 +1,27 @@
 // Module ID: 16392
 // Function ID: 16393
-// Dependencies: [16377, 16373, 16393]
+// Dependencies: [16393, 16390, 16395]
 
 // Module 16392
-import _mod16373 from "module_16373" /* 16373 */;
-import _mod16377 from "module_16377" /* 16377 */;
+import _mod16390 from "module_16390" /* 16390 */;
+import _mod16393 from "module_16393" /* 16393 */;
+import _mod16395 from "module_16395" /* 16395 */;
 
-const prop = Object.getOwnPropertySymbols && !_mod16377(() => {
-  const SymbolResult = Symbol("symbol detection");
-  const obj = _mod16373;
-  const StringResult = obj.String(SymbolResult);
-  let tmp5 = !StringResult;
-  if (StringResult) {
-    const _Object = Object;
-    const _Symbol = Symbol;
-    tmp5 = !(Object(SymbolResult) instanceof Symbol);
-  }
-  if (!tmp5) {
-    const _Symbol2 = Symbol;
-    tmp5 = !Symbol.sham && tmp2(16393) && tmp2(16393) < 41;
-    const tmp6 = !Symbol.sham && tmp2(16393) && tmp2(16393) < 41;
-  }
-  return tmp5;
-});
+let fn = Object;
+let closure_3 = _mod16393("".split);
+if (_mod16390(() => {
+  const obj = Object("z");
+  return !obj.propertyIsEnumerable(0);
+})) {
+  fn = (arg0) => {
+    let tmp2;
+    if ("String" === _mod16395(arg0)) {
+      tmp2 = closure_3(arg0, "");
+    } else {
+      tmp2 = Object(arg0);
+    }
+    return tmp2;
+  };
+}
 
-export default prop;
+export default fn;

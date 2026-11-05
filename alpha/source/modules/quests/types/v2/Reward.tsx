@@ -1,12 +1,12 @@
-// Module ID: 8000
-// Function ID: 8001
+// Module ID: 8005
+// Function ID: 8006
 // Name: Reward
-// Dependencies: [6919, 7991, 2]
+// Dependencies: [6922, 7996, 2]
 // Exports: questRewardsConfigV2FromServer
 
-// Module 8000 (Reward)
-import QuestTypes from "QuestTypes" /* 6919 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 7991 */;
+// Module 8005 (Reward)
+import QuestTypes from "QuestTypes" /* 6922 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 7996 */;
 import size from "module_2" /* 2 */;
 
 function _rewardRedemptionInstructionsFromServer(redemption_instructions_by_platform) {

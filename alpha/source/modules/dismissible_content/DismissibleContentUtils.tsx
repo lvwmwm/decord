@@ -1,28 +1,28 @@
-// Module ID: 4975
-// Function ID: 4976
+// Module ID: 4977
+// Function ID: 4978
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1231, 4976, 4977, 4982, 4987, 1072, 4981, 4988, 11, 4971, 5193, 504, 4974, 572, 5824, 1252, 4978, 5825, 2]
+// Dependencies: [32, 5, 1231, 4978, 4979, 4984, 4989, 1072, 4983, 4990, 11, 4973, 5195, 504, 4976, 572, 5826, 1252, 4980, 5827, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
-// Module 4975 (DismissibleContentUtils)
+// Module 4977 (DismissibleContentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4971 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import DCFEventStore from "DCFEventStore" /* 4976 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4981 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4988 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5193 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5824 */;
-import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5825 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4973 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import DCFEventStore from "DCFEventStore" /* 4978 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4983 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
+import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4990 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 5195 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5826 */;
+import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5827 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4977 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4982 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4979 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4984 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let c9;
 let metroImportAll;
 let tmp7;
 let unpackModuleId;
-const DismissibleContentFatigueConfig = tmp7(4978);
+const DismissibleContentFatigueConfig = tmp7(4980);
 function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed) {
   let str;
   obj = { lastDismissedVersion: versionedDismissibleContentCurrentVersion, lastDismissedAtMs: str.toString(), lastDismissedObjectId: "0", numTimesDismissed: nextNumTimesDismissed };
@@ -623,7 +623,7 @@ export function isTimeRecurringDismissibleContentDismissed(id, cooldownConfig) {
     }
   }
 }
-export function isTimeRecurringSnowflakeBoundDismissibleContentDismissed(THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, id, cooldownDurationMs) {
+export function isTimeRecurringSnowflakeBoundDismissibleContentDismissed(THIRD_PARTY_OUTBOUND_PROMO_NAGBAR, id, timeRecurringConfig) {
   obj = NewUserDismissibleContentRegistry;
   if (obj.disableNewUserDismissibleContent(THIRD_PARTY_OUTBOUND_PROMO_NAGBAR)) {
     return true;
@@ -654,15 +654,15 @@ export function isTimeRecurringSnowflakeBoundDismissibleContentDismissed(THIRD_P
       }
     }
     let flag = false;
-    if (null != cooldownDurationMs) {
+    if (null != timeRecurringConfig) {
       flag = false;
       if (null != tmp8) {
         const _Date = Date;
-        const sum = tmp8 + cooldownDurationMs.cooldownDurationMs;
+        const sum = tmp8 + timeRecurringConfig.cooldownDurationMs;
         const timestamp = Date.now();
-        let tmp15 = null == cooldownDurationMs.showAfterTimestamp;
+        let tmp15 = null == timeRecurringConfig.showAfterTimestamp;
         if (!tmp15) {
-          tmp15 = timestamp >= cooldownDurationMs.showAfterTimestamp && tmp8 <= cooldownDurationMs.showAfterTimestamp;
+          tmp15 = timestamp >= timeRecurringConfig.showAfterTimestamp && tmp8 <= timeRecurringConfig.showAfterTimestamp;
         }
         flag = timestamp < sum || !tmp15;
       }
@@ -725,10 +725,10 @@ export function UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed(GDM_INVI
     return null != guildDismissedContentState && null != guildDismissedContentState[GDM_INVITE_REMINDER] && null != guildDismissedContentState[GDM_INVITE_REMINDER].lastDismissedObjectId && "0" !== guildDismissedContentState[GDM_INVITE_REMINDER].lastDismissedObjectId;
   }
 }
-export function isDismissibleContentBlockedByOverlay(found1, arg1, arg2) {
+export function isDismissibleContentBlockedByOverlay(content, arg1, arg2) {
   let tmp = arg1;
   if (tmp) {
-    const hasItem = null == arg2 && set.has(found1);
+    const hasItem = null == arg2 && set.has(content);
     tmp = !hasItem;
   }
   return tmp;

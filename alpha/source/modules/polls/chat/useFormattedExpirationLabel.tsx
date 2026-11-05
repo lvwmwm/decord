@@ -1,10 +1,10 @@
-// Module ID: 9596
-// Function ID: 9597
+// Module ID: 9602
+// Function ID: 9603
 // Name: useFormattedExpirationLabel
 // Dependencies: [2171, 1113, 2]
 // Exports: default
 
-// Module 9596 (useFormattedExpirationLabel)
+// Module 9602 (useFormattedExpirationLabel)
 import intl4 from "intl" /* 1113 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import size from "module_2" /* 2 */;

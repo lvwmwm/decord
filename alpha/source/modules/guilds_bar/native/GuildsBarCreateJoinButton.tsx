@@ -1,22 +1,22 @@
-// Module ID: 18693
-// Function ID: 18694
+// Module ID: 18723
+// Function ID: 18724
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5172, 1072, 1387, 21, 5141, 10429, 2123, 14492, 7516, 9935, 7487, 18624, 504, 18639, 1113, 18694, 11678, 575, 2]
+// Dependencies: [5, 19, 17, 5174, 1072, 1387, 21, 5143, 10435, 2123, 14505, 7518, 9941, 7490, 18654, 504, 18669, 1113, 18724, 11686, 575, 2]
 
-// Module 18693 (GuildsBarCreateJoinButton)
+// Module 18723 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 11678 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18624 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 11686 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18654 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

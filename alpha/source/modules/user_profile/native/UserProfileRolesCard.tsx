@@ -1,24 +1,24 @@
-// Module ID: 7490
-// Function ID: 7491
+// Module ID: 7493
+// Function ID: 7494
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 5053, 5047, 1072, 21, 5141, 575, 7491, 4966, 7493, 7494, 5845, 1113, 7492, 7499, 7508, 5761, 7510, 7121, 504, 7511, 7512, 2]
+// Dependencies: [19, 17, 5055, 5049, 1072, 21, 5143, 575, 7494, 4968, 5829, 7496, 5848, 1113, 7495, 7501, 7510, 5763, 7512, 7124, 504, 7513, 7514, 2]
 // Exports: default
 
-// Module 7490 (UserProfileRolesCard)
+// Module 7493 (UserProfileRolesCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import ToastUtils from "ToastUtils" /* 5845 */;
-import ClipboardUtils from "ClipboardUtils" /* 7494 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7508 */;
-import RoleIconDefault from "RoleIcon" /* 7510 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7511 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import ToastUtils from "ToastUtils" /* 5848 */;
+import ClipboardUtils from "ClipboardUtils" /* 7496 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7510 */;
+import RoleIconDefault from "RoleIcon" /* 7512 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7513 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import GuildRoleStore from "GuildRoleStore" /* 5047 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import GuildRoleStore from "GuildRoleStore" /* 5049 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -42,8 +42,9 @@ function RoleDot(color) {
 class RoleItem {
   constructor(role) {
     let intl;
-    let tmp11Result;
-    let tmp14;
+    let tmp11;
+    let tmp12Result;
+    let tmp15;
     let tmp2;
     role = role.role;
     const guildId = role.guildId;
@@ -108,9 +109,9 @@ class RoleItem {
     closure_5 = undefined !== guild_connections;
     const DeveloperMode = tmp4(tmp5[9]).DeveloperMode;
     const setting = DeveloperMode.useSetting();
-    let obj3 = guildId(tmp5[10]);
     let items = [role.id, name];
-    const tidaWebformEnabled = obj3.useExperiment({ location: "RoleItem" }, { autoTrackExposure: false }).tidaWebformEnabled;
+    const tmp4Result = tmp4(tmp5[10]);
+    const isTidaMediaTakedownRegion = tmp4Result.useIsTidaMediaTakedownRegion();
     const items1 = [role, name, roleIconProps];
     const callback = colorString.useCallback(() => {
       const obj = ClipboardUtils;
@@ -118,23 +119,22 @@ class RoleItem {
       const obj2 = ToastUtils;
       obj2.roleIdCopied(name);
     }, items);
-    let tmp11 = closure_9;
     if (setting) {
-      let obj4 = { onPress: callback, onLongPress: tmp14, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint: intl.string(tmp4(tmp5[13]).t.sMsaLg), style: tmp.role, children: renderContent() };
-      tmp14 = undefined;
+      let obj3 = { onPress: callback, onLongPress: tmp15, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint: intl.string(tmp4(tmp5[13]).t.sMsaLg), style: tmp.role, children: renderContent() };
+      tmp15 = undefined;
       const PressableHighlight = tmp4(tmp5[19]).PressableHighlight;
       if (setting) {
-        if (tidaWebformEnabled) {
-          tmp14 = tmp10;
+        if (isTidaMediaTakedownRegion) {
+          tmp15 = tmp11;
         }
       }
       intl = tmp4(tmp5[13]).intl;
-      tmp11Result = tmp11(PressableHighlight, obj4);
+      tmp12Result = tmp12(PressableHighlight, obj3);
     } else {
-      const obj5 = { style: tmp.role, children: renderContent() };
-      tmp11Result = tmp11(roleIconProps, obj5);
+      let obj4 = { style: tmp.role, children: renderContent() };
+      tmp12Result = tmp12(roleIconProps, obj4);
     }
-    return tmp11Result;
+    return tmp12Result;
   }
 }
 function RolesList(guildMemberRoleIds) {
@@ -193,7 +193,7 @@ export default function UserProfileRolesCard(userId) {
   let tmp4 = null;
   if (0 !== roles.length) {
     const obj2 = { title: intl.string(userId(1113).t["LPJmL/"]), style, children: closure_9(RolesList, obj3) };
-    const tmp7 = guildId(7512);
+    const tmp7 = guildId(7514);
     intl = tmp(1113).intl;
     obj3 = { guildId, guildMemberRoleIds: roles };
     tmp4 = closure_9(tmp7, obj2);

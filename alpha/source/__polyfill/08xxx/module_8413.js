@@ -1,10 +1,12 @@
 // Module ID: 8413
 // Function ID: 8414
-// Dependencies: [8414, 8415]
+// Dependencies: [8414, 8415, 8416, 8417]
 
 // Module 8413
 import _mod8414 from "module_8414" /* 8414 */;
 import _mod8415 from "module_8415" /* 8415 */;
+import _mod8416 from "module_8416" /* 8416 */;
+import _mod8417 from "module_8417" /* 8417 */;
 
 let hasOwnProperty;
 
@@ -67,3 +69,5 @@ let tmp3 = self && self.__exportStar || ((obj, arg1) => {
 });
 tmp3(_mod8414, exports);
 tmp3(_mod8415, exports);
+tmp3(_mod8416, exports);
+tmp3(_mod8417, exports);

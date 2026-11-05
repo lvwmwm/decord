@@ -1,13 +1,13 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 11076
+// Function ID: 11077
 // Name: releaseConjurePreviewFrame
-// Dependencies: [1194, 11062, 12289, 11125, 2]
+// Dependencies: [1194, 11068, 11077, 11078, 2]
 // Exports: default
 
-// Module 12288 (releaseConjurePreviewFrame)
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11062 */;
-import leaveFrame from "leaveFrame" /* 11125 */;
-import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 12289 */;
+// Module 11076 (releaseConjurePreviewFrame)
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11068 */;
+import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 11077 */;
+import leaveFrame from "leaveFrame" /* 11078 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 17410
-// Function ID: 17411
+// Module ID: 17436
+// Function ID: 17437
 // Name: QuestDockUnenrolledHeader
-// Dependencies: [19, 17, 1083, 21, 5141, 17347, 17316, 17335, 6919, 8011, 5377, 5148, 17315, 17411, 5761, 1113, 5851, 17415, 17416, 17375, 2]
+// Dependencies: [19, 17, 1083, 21, 5143, 17373, 17342, 17361, 6922, 8016, 5379, 5150, 17341, 17437, 5763, 1113, 5854, 17441, 17442, 17401, 2]
 
-// Module 17410 (QuestDockUnenrolledHeader)
+// Module 17436 (QuestDockUnenrolledHeader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
-import useThemeDefault from "useTheme" /* 5377 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import QuestTypes from "QuestTypes" /* 6919 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8011 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17335 */;
-import QuestGameLogotypeDefault from "QuestGameLogotype" /* 17375 */;
-import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 17411 */;
+import useThemeDefault from "useTheme" /* 5379 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import QuestTypes from "QuestTypes" /* 6922 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8016 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17361 */;
+import QuestGameLogotypeDefault from "QuestGameLogotype" /* 17401 */;
+import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 17437 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -36,11 +36,11 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader() {
   let tmp15;
   let tmp16;
   let tmp7Result4;
-  let obj = questCreative(17347);
+  let obj = questCreative(17373);
   const questDockQuest = obj.useQuestDockQuest();
-  let obj2 = questCreative(17347);
+  let obj2 = questCreative(17373);
   questCreative = obj2.useQuestCreative(questDockQuest);
-  const obj3 = questCreative(17316);
+  const obj3 = questCreative(17342);
   const items = [questCreative];
   const actionSheetPressHandler = obj3.useActionSheetPressHandler(questCreative);
   const callback = react.useCallback(() => {
@@ -50,7 +50,7 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader() {
     obj.showModal(obj2);
   }, items);
   const tmp8 = useThemeDefault();
-  const obj4 = questCreative(5148);
+  const obj4 = questCreative(5150);
   if (obj4.isThemeDark(tmp8)) {
     LIGHT = tmp9.DARK;
     tmp10 = tmp9;
@@ -59,22 +59,22 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader() {
     tmp10 = tmp9;
   }
   const tmp11 = closure_8();
-  const tmpResult = questCreative(17315);
+  const tmpResult = questCreative(17341);
   const questGameLogotypeAssetUrl = tmpResult.useQuestGameLogotypeAssetUrl(questDockQuest);
   const questBarHeroBlurhash = questDockQuest.config.assets.questBarHeroBlurhash;
   const tmp7Result = QuestDockBackgroundBlurHeaderDefault;
   const obj5 = { blurHash: questBarHeroBlurhash, collapsedContent: closure_6(Text, obj6), withPressableDisclosure: true, onDisclosurePress: callback, onSubmenuPress: actionSheetPressHandler, children: tmp15(tmp16, obj7) };
   obj6 = { style: tmp11.getRewardLabel, variant: "body-sm/medium", color: "interactive-text-active", children: intl.string(questCreative(1113).t["3mgEQf"]) };
-  Text = tmp(5761).Text;
+  Text = tmp(5763).Text;
   intl = tmp(1113).intl;
   obj7 = { style: tmp11.primaryContent, children: items1 };
   tmp15 = closure_7;
   tmp16 = View;
   const tmp7Result3 = FastImageDefault;
   if (LIGHT === tmp10.DARK) {
-    tmp7Result4 = tmp7(17415);
+    tmp7Result4 = tmp7(17441);
   } else {
-    tmp7Result4 = tmp7(17416);
+    tmp7Result4 = tmp7(17442);
   }
   items1 = [, ];
   const obj8 = { source: tmp7Result4, resizeMode: "contain", style: tmp11.wreathImage };

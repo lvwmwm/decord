@@ -1,10 +1,10 @@
-// Module ID: 13222
-// Function ID: 13223
+// Module ID: 13229
+// Function ID: 13230
 // Name: conjureAppSlotsLeftLabel
 // Dependencies: [1113, 3995, 2]
 // Exports: conjureAppSlotsLeftLabel
 
-// Module 13222 (conjureAppSlotsLeftLabel)
+// Module 13229 (conjureAppSlotsLeftLabel)
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
 import size from "module_2" /* 2 */;

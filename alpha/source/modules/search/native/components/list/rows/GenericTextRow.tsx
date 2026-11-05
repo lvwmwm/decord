@@ -1,15 +1,15 @@
-// Module ID: 19024
-// Function ID: 19025
+// Module ID: 19055
+// Function ID: 19056
 // Name: GenericTextRow
-// Dependencies: [5, 19, 17, 21, 5141, 5761, 18977, 2]
+// Dependencies: [5, 19, 17, 21, 5143, 5763, 19008, 2]
 
-// Module 19024 (GenericTextRow)
+// Module 19055 (GenericTextRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import SearchListRow2 from "SearchListRow" /* 18977 */;
+import SearchListRow2 from "SearchListRow" /* 19008 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;

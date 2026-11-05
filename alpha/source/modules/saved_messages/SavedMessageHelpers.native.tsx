@@ -1,14 +1,14 @@
-// Module ID: 11346
-// Function ID: 11347
+// Module ID: 11354
+// Function ID: 11355
 // Name: SavedMessageHelpers
-// Dependencies: [5, 10369, 1072, 11347, 11343, 6093, 1113, 11337, 10370, 5846, 5874, 11348, 5150, 2]
+// Dependencies: [5, 10375, 1072, 11355, 11351, 6096, 1113, 11345, 10376, 5849, 5877, 11356, 5152, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 11346 (SavedMessageHelpers)
+// Module 11354 (SavedMessageHelpers)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10369 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 11347 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10375 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 11355 */;
 import size from "module_2" /* 2 */;
 
 let text;
@@ -56,7 +56,7 @@ let obj = function _addOrUpdateSavedMessage() {
               BookmarkIcon = undefined;
               text = 1;
               c4 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === text) {
             if (arg0 === 1) {
@@ -234,7 +234,7 @@ obj = function _removeSavedMessage() {
             ClockIcon = undefined;
             text = 1;
             c4 = 1;
-            return { value: "flexDirection", done: null };
+            return { value: "flexDirection", done: true };
           }
         } else if (1 === tmp4) {
           if (arg0 === 1) {

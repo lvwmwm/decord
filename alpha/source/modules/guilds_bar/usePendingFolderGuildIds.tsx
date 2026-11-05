@@ -1,16 +1,16 @@
-// Module ID: 13438
-// Function ID: 13439
+// Module ID: 13463
+// Function ID: 13464
 // Name: usePendingFolderGuildIds
-// Dependencies: [5173, 5012, 504, 2]
+// Dependencies: [5175, 5014, 504, 2]
 // Exports: default, getPendingFolderGuildIds
 
-// Module 13438 (usePendingFolderGuildIds)
+// Module 13463 (usePendingFolderGuildIds)
 import get_initialized from "get initialized" /* 504 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5173 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5175 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import size from "module_2" /* 2 */;
 
-const f104977 = (item) => null == closure_0[item];
+const f105165 = (item) => null == closure_0[item];
 const result = size.fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
 
 export default function usePendingFolderGuildIds() {
@@ -23,7 +23,7 @@ export default function usePendingFolderGuildIds() {
     [obj, obj2] = items;
     const guildIds = obj.computeGuildIds();
     const guilds = obj2.getGuilds();
-    return guildIds.filter(f104977);
+    return guildIds.filter(f105165);
   });
 };
 export function getPendingFolderGuildIds() {
@@ -37,5 +37,5 @@ export function getPendingFolderGuildIds() {
   [obj, obj2] = tmp;
   const guildIds = obj.computeGuildIds();
   const guilds = obj2.getGuilds();
-  return guildIds.filter(f104977);
+  return guildIds.filter(f105165);
 }

@@ -1,21 +1,21 @@
-// Module ID: 14159
-// Function ID: 14160
+// Module ID: 14172
+// Function ID: 14173
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 5142, 5397, 1388, 21, 5141, 1377, 575, 504, 7121, 7436, 1411, 10122, 1493, 5091, 8567, 10118, 5752, 9599, 2]
+// Dependencies: [19, 17, 5144, 5399, 1388, 21, 5143, 1377, 575, 504, 7124, 7439, 1411, 10130, 1493, 5093, 8572, 10126, 5754, 9605, 2]
 
-// Module 14159 (SelectDoubleTapEmojiRow)
+// Module 14172 (SelectDoubleTapEmojiRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5397 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5752 */;
-import EmojiDefault from "Emoji" /* 7436 */;
-import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10118 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5399 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5754 */;
+import EmojiDefault from "Emoji" /* 7439 */;
+import openEmojiPickerActionSheet2 from "openEmojiPickerActionSheet" /* 10126 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let closure_13 = react.memo(function EmojiButton(emoji) {
   };
   items1 = [tmp.emojiPressable, ];
   let prop;
-  const PressableOpacity = emoji(7121).PressableOpacity;
+  const PressableOpacity = emoji(7124).PressableOpacity;
   if (selected) {
     prop = tmp.selectedEmojiPressable;
   }

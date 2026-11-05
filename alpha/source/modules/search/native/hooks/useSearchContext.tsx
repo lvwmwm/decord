@@ -1,14 +1,14 @@
-// Module ID: 14065
-// Function ID: 14066
+// Module ID: 14078
+// Function ID: 14079
 // Name: useSearchContext
-// Dependencies: [19, 4990, 1072, 38, 563, 2]
+// Dependencies: [19, 4992, 1072, 38, 563, 2]
 // Exports: getChannelDetailsSearchContext, useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext
 
-// Module 14065 (useSearchContext)
+// Module 14078 (useSearchContext)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

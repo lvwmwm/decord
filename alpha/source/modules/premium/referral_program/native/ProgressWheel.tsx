@@ -1,20 +1,20 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15581
+// Function ID: 15582
 // Name: ProgressWheel
-// Dependencies: [19, 17, 21, 5141, 5732, 575, 15551, 5851, 15569, 8171, 15570, 2]
+// Dependencies: [19, 17, 21, 5143, 5734, 575, 15564, 5854, 15582, 8176, 15583, 2]
 // Exports: default
 
-// Module 15568 (ProgressWheel)
+// Module 15581 (ProgressWheel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5732 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import inlineStyles from "inlineStyles" /* 8171 */;
-import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 15551 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15569 */;
+import useToken from "useToken" /* 5734 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import inlineStyles from "inlineStyles" /* 8176 */;
+import useReferralProgramBannerDetails from "useReferralProgramBannerDetails" /* 15564 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15582 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -59,7 +59,7 @@ export default function ProgressWheel(arg0) {
   const tmp13 = React3;
   const tmp4Result4 = FastImageDefault;
   if (altImage == null) {
-    altImage = tmp4(15570);
+    altImage = tmp4(15583);
   }
   const obj6 = { source: { uri: altImage }, style: tmp.progressCircleImage };
   items[2] = tmp13(tmp4Result4, obj6);

@@ -1,10 +1,10 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12273
+// Function ID: 12274
 // Name: KeybindRouterStore
-// Dependencies: [1072, 5177, 5190, 1254, 1259, 2]
+// Dependencies: [1072, 5179, 5192, 1254, 1259, 2]
 
-// Module 12264 (KeybindRouterStore)
-import matchPathCompat from "matchPathCompat" /* 5177 */;
+// Module 12273 (KeybindRouterStore)
+import matchPathCompat from "matchPathCompat" /* 5179 */;
 import Constants from "Constants" /* 1072 */;
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
@@ -28,9 +28,9 @@ function getMatchData(pathname) {
   }
   const obj = { path: CHANNEL(guildIdResult, RouteParam2.channelId({ optional: true }), ":messageId?") };
   CHANNEL = constants.CHANNEL;
-  const RouteParam = tmp(5190).RouteParam;
+  const RouteParam = tmp(5192).RouteParam;
   guildIdResult = RouteParam.guildId();
-  RouteParam2 = tmp(5190).RouteParam;
+  RouteParam2 = tmp(5192).RouteParam;
   const matchPathResult = matchPath(str2, obj);
   const tmp4 = constants;
   if (null != matchPathResult) {
@@ -53,7 +53,7 @@ function getMatchData(pathname) {
     }
     const obj3 = { path: GUILD_BOOSTING_MARKETING(RouteParam3.guildId()) };
     GUILD_BOOSTING_MARKETING = tmp4.GUILD_BOOSTING_MARKETING;
-    RouteParam3 = tmp(5190).RouteParam;
+    RouteParam3 = tmp(5192).RouteParam;
     const matchPath2Result = matchPath2(str, obj3);
     if (null != matchPath2Result) {
       obj5 = { guildId: matchPath2Result.params.guildId, channelId: null };

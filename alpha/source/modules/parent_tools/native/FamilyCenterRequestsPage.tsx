@@ -1,28 +1,28 @@
-// Module ID: 17063
-// Function ID: 17064
+// Module ID: 17087
+// Function ID: 17088
 // Name: FamilyCenterRequestsPage
-// Dependencies: [19, 17, 7856, 11444, 21, 5141, 575, 8510, 8511, 13583, 1113, 2667, 5761, 11486, 7428, 17024, 17064, 17069, 17077, 2]
+// Dependencies: [19, 17, 7861, 11452, 21, 5143, 575, 8515, 8516, 13594, 1113, 2667, 5763, 11494, 7431, 17048, 17088, 17093, 17101, 2]
 // Exports: default
 
-// Module 17063 (FamilyCenterRequestsPage)
+// Module 17087 (FamilyCenterRequestsPage)
 import nativeDefault from "native" /* 575 */;
 import _modDef2667 from "module_2667" /* 2667 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
-import useUserLinks from "useUserLinks" /* 8510 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8511 */;
-import Constants from "Constants" /* 11444 */;
-import useHelpLineVisibility from "useHelpLineVisibility" /* 11486 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 13583 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 17024 */;
-import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 17064 */;
-import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 17069 */;
-import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 17077 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7431 */;
+import useUserLinks from "useUserLinks" /* 8515 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8516 */;
+import Constants from "Constants" /* 11452 */;
+import useHelpLineVisibility from "useHelpLineVisibility" /* 11494 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 13594 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 17048 */;
+import FamilyCenterLinkingBannerDefault from "FamilyCenterLinkingBanner" /* 17088 */;
+import FamilyCenterAcceptedLinksDefault from "FamilyCenterAcceptedLinks" /* 17093 */;
+import FamilyCenterPendingLinksDefault from "FamilyCenterPendingLinks" /* 17101 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7856 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7861 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -75,7 +75,7 @@ function FamilyCenterHelpLineInfo() {
   if (null != formatResult) {
     const obj3 = { style: tmp.container, children: items };
     const obj4 = { style: tmp.supportHeader, variant: "heading-xs/semibold", children: intl3.string(_modDef2667["7/tVhv"]) };
-    const Text = tmp2(5761).Text;
+    const Text = tmp2(5763).Text;
     intl3 = tmp2(1113).intl;
     items = [metroImportAll(Text, obj4), ];
     const obj5 = { variant: "body-xs/medium", color: "text-muted", children: formatResult };

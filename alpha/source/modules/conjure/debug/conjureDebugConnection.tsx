@@ -1,15 +1,15 @@
-// Module ID: 11072
-// Function ID: 11073
+// Module ID: 11081
+// Function ID: 11082
 // Name: conjureDebugConnection
-// Dependencies: [11035, 572, 11053, 11051, 11073, 2]
+// Dependencies: [11041, 572, 11059, 11057, 11082, 2]
 // Exports: forceCompaction, pollConjureDebugInstance, requestConjureDebugGitInfo, requestDebugStatus, restartConjureAgent, restartConjureSandbox
 
-// Module 11072 (conjureDebugConnection)
+// Module 11081 (conjureDebugConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 11051 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11053 */;
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11073 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 11035 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 11057 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11059 */;
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 11082 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 11041 */;
 import size from "module_2" /* 2 */;
 
 let obj4;

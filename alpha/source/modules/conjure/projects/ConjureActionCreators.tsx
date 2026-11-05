@@ -1,31 +1,31 @@
-// Module ID: 11054
-// Function ID: 11055
+// Module ID: 11060
+// Function ID: 11061
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6977, 1385, 11055, 6979, 1072, 6911, 572, 1282, 11056, 5906, 11058, 559, 11053, 11059, 11061, 11064, 11062, 5809, 6980, 7016, 8893, 11070, 2]
+// Dependencies: [109, 5, 6980, 1385, 11061, 6982, 1072, 6914, 572, 1282, 11062, 5909, 11064, 559, 11059, 11065, 11067, 11070, 11068, 5811, 6983, 7019, 11076, 8898, 11079, 2]
 // Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refetchProjectsAfterReconnect, refreshConjureInstallState, refreshPreviewApplication, selectGlobalChatProject, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
 
-// Module 11054 (ConjureActionCreators)
+// Module 11060 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5809 */;
-import ReadStateConstants from "ReadStateConstants" /* 6911 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6980 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7016 */;
-import UserActionCreators from "UserActionCreators" /* 8893 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11053 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11059 */;
-import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 11061 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11062 */;
-import createProxyTicket from "createProxyTicket" /* 11064 */;
-import conjureAppInServer from "conjureAppInServer" /* 11070 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5811 */;
+import ReadStateConstants from "ReadStateConstants" /* 6914 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 7019 */;
+import UserActionCreators from "UserActionCreators" /* 8898 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11059 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11065 */;
+import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 11067 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11068 */;
+import createProxyTicket from "createProxyTicket" /* 11070 */;
+import conjureAppInServer from "conjureAppInServer" /* 11079 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6977 */;
+import ReadStateStore from "ReadStateStore" /* 6980 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11055 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11061 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
 import size from "module_2" /* 2 */;
 
 let c2, c8, closure_14, closure_15, closure_30, closure_37, flags2, resourceIds;
@@ -1068,28 +1068,37 @@ obj = function _refreshPreviewApplication() {
   return obj(...arguments);
 };
 obj = function _updateProjectSettings() {
-  obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_2;
-    let user = arg0;
-    let c4 = 0;
-    let c5 = 0;
-    return (async (arg0, value) => {
-      user = value;
-      value = await patchProject(closure_0, value);
-      const preview_application_id = value.body.preview_application_id;
-      let tmp14 = null == preview_application_id;
-      if (!tmp14) {
-        tmp14 = null == user.name && null == user.icon && null == user.description && !("cover_image" in user);
-        const tmp7 = null == user.name && null == user.icon && null == user.description && !("cover_image" in user);
-      }
-      if (!tmp14) {
-        const promise = closure_131_48(preview_application_id);
-        promise.catch(() => {
+  obj = _asyncToGenerator(async (arg0, arg1) => {
+    let c4;
+    let c5;
+    let prop;
+    let closure_1 = arg1;
+    let value = tmp;
+    let closure_0 = closure_1;
+    project = project.getProject(closure_0);
+    const tmp35 = closure_0;
+    const tmp36 = closure_1;
+    if (project != null) {
+      prop = project.preview_application_id;
+    }
+    value = await patchProject(tmp35, tmp36);
+    const preview_application_id = value.body.preview_application_id;
+    const tmp8 = null != prop && prop !== preview_application_id;
+    if (tmp8) {
+      closure_131_1(closure_131_2[22])(prop);
+    }
+    let tmp17 = null == preview_application_id;
+    if (!tmp17) {
+      const tmp20 = null == closure_0.name && null == closure_0.icon && null == closure_0.description && !("cover_image" in closure_0) && null == closure_0.uses_preview_app;
+      tmp17 = tmp20;
+    }
+    if (!tmp17) {
+      const promise = closure_131_48(preview_application_id);
+      promise.catch(() => {
 
-        });
-      }
-      return value;
-    })();
+      });
+    }
+    return value;
   });
   return obj(...arguments);
 };

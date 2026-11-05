@@ -1,10 +1,10 @@
-// Module ID: 6980
-// Function ID: 6981
+// Module ID: 6983
+// Function ID: 6984
 // Name: ConjureProjectTypes
 // Dependencies: [2]
-// Exports: isPreviewlessProject, isProjectGuildCollaborationEnabled, isProjectPublic, projectSupportsCollaboratorRoles, projectSupportsVisibility, projectUsesAppChannels
+// Exports: isProjectGuildCollaborationEnabled, isProjectPublic, projectSupportsCollaboratorRoles, projectSupportsVisibility, projectUsesAppChannels, usesPreviewApp
 
-// Module 6980 (ConjureProjectTypes)
+// Module 6983 (ConjureProjectTypes)
 import size from "module_2" /* 2 */;
 
 const frozen = Object.freeze({ APP_CHANNEL: 1, VOICE_CHANNEL: 2, PROFILE_WIDGET: 3, AUTOMOD: 4, BOT: 5, APPLICATION_COMMANDS: 6, OVERLAY: 7, ACTIVITY: 8 });
@@ -24,8 +24,8 @@ export function isProjectGuildCollaborationEnabled(stateFromStores) {
   }
   return num & frozen1.GUILD_COLLABORATION;
 }
-export function isPreviewlessProject(project) {
-  return null != project.preview_application_id && project.preview_application_id === project.application_id;
+export function usesPreviewApp(project) {
+  return null == project.preview_application_id || project.preview_application_id !== project.application_id;
 }
 export function isProjectPublic(flags) {
   let num = flags.flags;

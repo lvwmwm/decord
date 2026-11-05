@@ -1,22 +1,22 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15435
+// Function ID: 15436
 // Name: VoiceEmptyState
-// Dependencies: [19, 17, 1072, 21, 5141, 6858, 575, 1627, 1187, 1113, 15423, 15424, 2]
+// Dependencies: [19, 17, 1072, 21, 5143, 6861, 575, 1627, 1187, 1113, 15436, 15437, 2]
 // Exports: default
 
-// Module 15422 (VoiceEmptyState)
+// Module 15435 (VoiceEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15423 */;
-import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 15424 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15436 */;
+import JoinVoiceChannelButtonDefault from "JoinVoiceChannelButton" /* 15437 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
-import TextStyles_mod from "TextStyles" /* 6858 */;
+import createStyles_mod from "createStyles" /* 5143 */;
+import TextStyles_mod from "TextStyles" /* 6861 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

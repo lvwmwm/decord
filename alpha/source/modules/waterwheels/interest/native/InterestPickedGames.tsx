@@ -1,18 +1,18 @@
-// Module ID: 19854
-// Function ID: 19855
+// Module ID: 19888
+// Function ID: 19889
 // Name: InterestPickedGames
-// Dependencies: [19, 17, 21, 575, 5141, 15175, 13645, 1113, 2537, 9656, 5851, 5761, 2]
+// Dependencies: [19, 17, 21, 575, 5143, 15188, 13656, 1113, 2537, 9662, 5854, 5763, 2]
 // Exports: default
 
-// Module 19854 (InterestPickedGames)
+// Module 19888 (InterestPickedGames)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import useGameRecordsDefault from "useGameRecords" /* 15175 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import useGameRecordsDefault from "useGameRecords" /* 15188 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,23 +1,23 @@
-// Module ID: 16865
-// Function ID: 16866
+// Module ID: 16888
+// Function ID: 16889
 // Name: useShowAgeNoticePromoSheet
-// Dependencies: [19, 16864, 4974, 16866, 2]
-// Exports: useIsTinyBroncoEligible, useShowTinyBroncoPromoSheet
+// Dependencies: [19, 16887, 4976, 16889, 2]
+// Exports: useIsAgeNoticeEligible, useShowAgeNoticePromoSheet
 
-// Module 16865 (useShowAgeNoticePromoSheet)
-import dismissible_content from "dismissible_content" /* 4974 */;
-import AgeNoticeVisibility from "AgeNoticeVisibility" /* 16864 */;
-import openAgeNoticePromoSheetDefault from "openAgeNoticePromoSheet" /* 16866 */;
+// Module 16888 (useShowAgeNoticePromoSheet)
+import dismissible_content from "dismissible_content" /* 4976 */;
+import AgeNoticeVisibility from "AgeNoticeVisibility" /* 16887 */;
+import openAgeNoticePromoSheetDefault from "openAgeNoticePromoSheet" /* 16889 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/native/useShowAgeNoticePromoSheet.tsx");
 
-export function useIsTinyBroncoEligible() {
+export function useIsAgeNoticeEligible() {
   const obj = AgeNoticeVisibility;
   return obj.useShouldShowAgeNoticePromo();
 }
-export function useShowTinyBroncoPromoSheet(visibleContent) {
+export function useShowAgeNoticePromoSheet(visibleContent) {
   visibleContent = visibleContent.visibleContent;
   const markAsDismissed = visibleContent.markAsDismissed;
   const ref = react.useRef(false);

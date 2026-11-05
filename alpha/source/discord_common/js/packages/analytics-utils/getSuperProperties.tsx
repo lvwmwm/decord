@@ -103,7 +103,7 @@ function getCachedSuperProperties() {
 }
 function getContextualSuperProperties() {
   let obj2;
-  obj = { client_build_number: parseInt("35420300000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
+  obj = { client_build_number: parseInt("35420400000000", 10), client_event_source: null, has_client_mods: obj2.usesClientMods(), client_launch_id: clientLaunchId.clientLaunchId };
   let buildNumber;
   if (DiscordNative != null) {
     const app = DiscordNative.app;
@@ -276,9 +276,15 @@ if (null != DiscordNative) {
     const metadata = crashReporter.getMetadata();
     obj.window_manager = metadata.wm;
     obj.distro = metadata.distro;
-    obj.runtime_environment = metadata.runtime_environment;
     const tmp13 = obj;
+    obj.runtime_environment = metadata.runtime_environment;
     obj.display_server = metadata.display_server;
+  } else if ("win32" === platform) {
+    let str8 = DiscordNative.os.buildRevision;
+    if (null != str8) {
+      let tmp9 = obj;
+      obj.os_build_revision = str8.toString();
+    }
   }
 }
 let closure_15 = "utm_source utm_medium utm_campaign utm_content utm_term".split(" ");

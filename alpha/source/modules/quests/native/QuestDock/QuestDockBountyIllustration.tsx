@@ -1,25 +1,25 @@
-// Module ID: 17430
-// Function ID: 17431
+// Module ID: 17456
+// Function ID: 17457
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 5142, 6916, 17319, 21, 5141, 17426, 17316, 9651, 17431, 504, 1377, 5851, 5207, 9841, 2]
+// Dependencies: [19, 17, 5144, 6919, 17345, 21, 5143, 17452, 17342, 9657, 17457, 504, 1377, 5854, 5209, 9847, 2]
 
-// Module 17430 (QuestDockBountyIllustration)
+// Module 17456 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import native from "native" /* 5207 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import QuestConstants from "QuestConstants" /* 6916 */;
-import APNGPlayer2 from "APNGPlayer" /* 9651 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9841 */;
-import QuestDockHooks from "QuestDockHooks" /* 17316 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17426 */;
-import _modDef17431 from "module_17431" /* 17431 */;
+import native from "native" /* 5209 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import QuestConstants from "QuestConstants" /* 6919 */;
+import APNGPlayer2 from "APNGPlayer" /* 9657 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9847 */;
+import QuestDockHooks from "QuestDockHooks" /* 17342 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 17452 */;
+import _modDef17457 from "module_17457" /* 17457 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import QuestDockConstants from "QuestDockConstants" /* 17319 */;
-import createStyles from "createStyles" /* 5141 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import QuestDockConstants from "QuestDockConstants" /* 17345 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let current;
@@ -103,7 +103,7 @@ function QuestDock3DOrbsAPNGPlayer(shouldAnimate) {
     }
   }, items);
   const APNGPlayer = APNGPlayer2.APNGPlayer;
-  return <APNGPlayer ref={ref} url={_modDef17431} style={tmp.fill} autoplay={false} />;
+  return <APNGPlayer ref={ref} url={_modDef17457} style={tmp.fill} autoplay={false} />;
 }
 function QuestDock3DOrbsIllustration() {
   let obj5;
@@ -122,7 +122,7 @@ function QuestDock3DOrbsIllustration() {
     tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
   } else {
     const obj4 = { source: obj5, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp7, accessible: false };
-    obj5 = { uri: _modDef17431 };
+    obj5 = { uri: _modDef17457 };
     const tmp5Result = FastImageDefault;
     tmp8Result = tmp8(tmp5Result, obj4);
   }

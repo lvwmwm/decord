@@ -1,28 +1,28 @@
-// Module ID: 18419
-// Function ID: 18420
+// Module ID: 18449
+// Function ID: 18450
 // Name: RedesignCategory
-// Dependencies: [19, 17, 7850, 7422, 6910, 11236, 21, 5141, 1377, 575, 5761, 11673, 7121, 11603, 11779, 10980, 504, 5786, 14613, 18420, 18421, 7418, 1113, 7500, 11780, 7233, 2]
+// Dependencies: [19, 17, 7855, 7425, 6913, 11244, 21, 5143, 1377, 575, 5763, 11681, 7124, 11611, 11787, 10986, 504, 5788, 14626, 18450, 18451, 7421, 1113, 7502, 11788, 7236, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 18419 (RedesignCategory)
+// Module 18449 (RedesignCategory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useChannelNameDefault from "useChannelName" /* 5786 */;
-import CircleXIcon from "CircleXIcon" /* 7233 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7418 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7500 */;
-import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 14613 */;
-import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 18420 */;
-import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 18421 */;
+import useChannelNameDefault from "useChannelName" /* 5788 */;
+import CircleXIcon from "CircleXIcon" /* 7236 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7421 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7502 */;
+import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 14626 */;
+import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 18450 */;
+import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 18451 */;
 import react from "react" /* 19 */;
-import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7850 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7422 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6910 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11236 */;
+import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 7855 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7425 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6913 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 11244 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -74,7 +74,7 @@ function renderCategoryItem(muted) {
   let tmp32Result = name;
   if (typeof name === "string") {
     let str = "text-subtle";
-    const Text = trailingAction(5761).Text;
+    const Text = trailingAction(5763).Text;
     const tmp32 = closure_12;
     if (flag) {
       str = "text-muted";
@@ -92,13 +92,13 @@ function renderCategoryItem(muted) {
     Icon = trailingAction.Icon;
   }
   if (Icon == null) {
-    Icon = trailingAction(11673).PlusMediumIcon;
+    Icon = trailingAction(11681).PlusMediumIcon;
   }
   let tmp10Result = null;
   if (null != trailingAction) {
     const obj4 = { style: styles.endAlignedWrapper, children: closure_12(PressableOpacity, obj5) };
     obj5 = { accessible: !tmp, accessibilityRole: "button", accessibilityLabel: label, onPress: trailingAction.perform, hitSlop, androidRippleConfig, children: closure_12(Icon, obj6) };
-    PressableOpacity = trailingAction(7121).PressableOpacity;
+    PressableOpacity = trailingAction(7124).PressableOpacity;
     label = undefined;
     const tmp11 = View;
     if (!tmp) {
@@ -132,7 +132,7 @@ function renderCategoryItem(muted) {
   if (tmp) {
     const obj10 = { accessibilityRole: "header", accessibilityState, accessibilityActions: tmp31, onAccessibilityAction: handleAccessibilityAction, onPress, onLongPress, style: items, children: tmp18Result };
     tmp31 = undefined;
-    const PressableHighlight = trailingAction(7121).PressableHighlight;
+    const PressableHighlight = trailingAction(7124).PressableHighlight;
     if (items2.length > 0) {
       tmp31 = items2;
     }
@@ -260,13 +260,13 @@ export function CategoryChannel(channel) {
   if (null != tmp10) {
     const obj4 = { variant: "body-xs/medium", color: "text-muted", accessibilityLabel: null, children: null };
     ({ tooltip: obj3.accessibilityLabel, label: obj3.children } = tmp10);
-    tmp13 = closure_12(tmp2(5761).Text, obj4);
+    tmp13 = closure_12(tmp2(5763).Text, obj4);
   }
   const collapsed2 = obj2.collapsed;
   const merged = Object.assign(obj2, Object.assign({ collapsed: 0 }));
   const muted2 = merged.muted;
   const colors = nativeDefault.colors;
-  const obj7 = { icon: closure_12(channel(11603).ChevronSmallDownIcon, { size: "xxs", color: tmp16, style: tmp17 }), accessibilityState: { expanded: !collapsed2 } };
+  const obj7 = { icon: closure_12(channel(11611).ChevronSmallDownIcon, { size: "xxs", color: tmp16, style: tmp17 }), accessibilityState: { expanded: !collapsed2 } };
   tmp16 = muted2 ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
   tmp17 = collapsed2 ? obj2 : obj3;
   const merged1 = Object.assign(merged);
@@ -294,7 +294,7 @@ export function RecentlyActiveCategory(guildId) {
   const merged = Object.assign(obj2, Object.assign({ collapsed: 0 }));
   const muted = merged.muted;
   const colors = stateFromStores(575).colors;
-  obj3 = { icon: closure_12(guildId(11603).ChevronSmallDownIcon, { size: "xxs", color: tmp7, style: tmp8 }), accessibilityState: { expanded: !collapsed } };
+  obj3 = { icon: closure_12(guildId(11611).ChevronSmallDownIcon, { size: "xxs", color: tmp7, style: tmp8 }), accessibilityState: { expanded: !collapsed } };
   tmp7 = muted ? colors.ICON_MUTED : colors.TEXT_SUBTLE;
   tmp8 = collapsed ? obj2 : obj3;
   const merged1 = Object.assign(merged);

@@ -1,17 +1,17 @@
-// Module ID: 12407
-// Function ID: 12408
+// Module ID: 12414
+// Function ID: 12415
 // Name: useConjurePreviewMenu
-// Dependencies: [19, 11047, 12408, 12412, 5845, 504, 12378, 12413, 1113, 3995, 2]
+// Dependencies: [19, 11053, 12415, 12419, 5848, 504, 12385, 12420, 1113, 3995, 2]
 // Exports: default
 
-// Module 12407 (useConjurePreviewMenu)
+// Module 12414 (useConjurePreviewMenu)
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ToastUtils from "ToastUtils" /* 5845 */;
-import conjureExternalConnections from "conjureExternalConnections" /* 12378 */;
-import conjureProjectMenuItems from "conjureProjectMenuItems" /* 12413 */;
+import ToastUtils from "ToastUtils" /* 5848 */;
+import conjureExternalConnections from "conjureExternalConnections" /* 12385 */;
+import conjureProjectMenuItems from "conjureProjectMenuItems" /* 12420 */;
 import react from "react" /* 19 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 11047 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 11053 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/native/useConjurePreviewMenu.tsx");

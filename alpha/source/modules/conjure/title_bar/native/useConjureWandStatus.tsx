@@ -1,15 +1,15 @@
-// Module ID: 14923
-// Function ID: 14924
+// Module ID: 14936
+// Function ID: 14937
 // Name: useConjureWandStatus
-// Dependencies: [6979, 14924, 5729, 11054, 1113, 3995, 2]
+// Dependencies: [6982, 14937, 5731, 11060, 1113, 3995, 2]
 // Exports: default
 
-// Module 14923 (useConjureWandStatus)
+// Module 14936 (useConjureWandStatus)
 import intl5 from "intl" /* 1113 */;
-import useMountEffectDefault from "useMountEffect" /* 5729 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 11054 */;
-import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 14924 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import useMountEffectDefault from "useMountEffect" /* 5731 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 11060 */;
+import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 14937 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/title_bar/native/useConjureWandStatus.tsx");

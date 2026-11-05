@@ -1,19 +1,19 @@
-// Module ID: 17449
-// Function ID: 17450
+// Module ID: 17475
+// Function ID: 17476
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 6703, 5066, 504, 7569, 7100, 17450, 17451, 12759, 1380, 2]
+// Dependencies: [5, 32, 19, 6706, 5068, 504, 7571, 7103, 17476, 17477, 12766, 1380, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 17449 (GuildRoleSubscriptionsHooks)
+// Module 17475 (GuildRoleSubscriptionsHooks)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5066 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7569 */;
-import useRequestDefault from "useRequest" /* 12759 */;
-import subscriptionUtils from "subscriptionUtils" /* 17451 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5068 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7571 */;
+import useRequestDefault from "useRequest" /* 12766 */;
+import subscriptionUtils from "subscriptionUtils" /* 17477 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -588,7 +588,7 @@ export function usePublishSubscriptionListing() {
                 ({ guildId: c0, groupListingId: c1, listingId: c2 } = closure_0);
                 c5 = 1;
                 c6 = 1;
-                return { value: "flexDirection", done: null };
+                return { value: "flexDirection", done: true };
               }
             } else if (1 === c5) {
               if (arg0 === 1) {

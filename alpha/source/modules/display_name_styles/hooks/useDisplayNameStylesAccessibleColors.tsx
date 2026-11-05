@@ -1,12 +1,12 @@
-// Module ID: 10952
-// Function ID: 10953
+// Module ID: 10958
+// Function ID: 10959
 // Name: useDisplayNameStylesAccessibleColors
-// Dependencies: [19, 5142, 504, 1405, 10953, 5138, 671, 2]
+// Dependencies: [19, 5144, 504, 1405, 10959, 5140, 671, 2]
 // Exports: useDisplayNameStylesAccessibleColors
 
-// Module 10952 (useDisplayNameStylesAccessibleColors)
+// Module 10958 (useDisplayNameStylesAccessibleColors)
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/hooks/useDisplayNameStylesAccessibleColors.tsx");

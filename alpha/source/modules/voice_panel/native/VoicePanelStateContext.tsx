@@ -1,18 +1,18 @@
-// Module ID: 11410
-// Function ID: 11411
+// Module ID: 11418
+// Function ID: 11419
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11411, 11409, 11412, 7378, 11413, 1629, 11419, 2]
+// Dependencies: [19, 11419, 11417, 11420, 7381, 11421, 1629, 11427, 2]
 
-// Module 11410 (VoicePanelStateContext)
+// Module 11418 (VoicePanelStateContext)
 import SafeAreaConstants from "SafeAreaConstants" /* 1629 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11412 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11413 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11419 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11419 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11420 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11421 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11427 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11409 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11417 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7378 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7381 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;
@@ -25,7 +25,7 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsConstants);
 const obj = {
   channelId: "context-not-initialized",
-  channelType: "find",
+  channelType: "filter",
   connected: ReanimatedHelperTypes.createFakeSharedValue(false),
   contentDimensions: ReanimatedHelperTypes.createFakeSharedValue({ width: 0, height: 0 }),
   controlsSpecs: ReanimatedHelperTypes.createFakeSharedValue(obj2),
@@ -41,7 +41,7 @@ const obj = {
   dockMinimizeProgress: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockPressProgress: ReanimatedHelperTypes.createFakeSharedValue(0),
   dockPressed: ReanimatedHelperTypes.createFakeSharedValue(false),
-  dismissToPIPGestureRef: { current: "Array" },
+  dismissToPIPGestureRef: { current: "ti" },
   dragScrolling: ReanimatedHelperTypes.createFakeSharedValue(false),
   focused: ReanimatedHelperTypes.createFakeSharedValue(null),
   generateStateLocker() {

@@ -1,21 +1,21 @@
-// Module ID: 12938
-// Function ID: 12939
+// Module ID: 12945
+// Function ID: 12946
 // Name: ConjureTodoList
-// Dependencies: [19, 17, 21, 5141, 575, 1113, 3995, 12822, 12843, 5761, 7130, 12807, 12939, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 1113, 3995, 12829, 12850, 5763, 7133, 12814, 12946, 2]
 // Exports: default
 
-// Module 12938 (ConjureTodoList)
+// Module 12945 (ConjureTodoList)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import ConjureTodoState from "ConjureTodoState" /* 12807 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 12822 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12843 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import ConjureTodoState from "ConjureTodoState" /* 12814 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 12829 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 12850 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -70,7 +70,7 @@ function TodoAgents(agents) {
     const tmp11 = closure_5;
     if (overflow > 0) {
       let obj3 = { variant: "body-xs/medium", color: "text-muted", accessibilityLabel: intl.formatToPlainString(items(3995).SPGdDc, obj4), children: "+" + overflow };
-      const Text = tmp2(5761).Text;
+      const Text = tmp2(5763).Text;
       intl = tmp2(1113).intl;
       const _HermesInternal = HermesInternal;
       obj4 = { count: overflow };
@@ -133,8 +133,8 @@ function TodoMarker(status) {
     const intl5 = intl9.intl;
     stringResult1 = intl5.string(_modDef3995.sPGeWi);
   }
-  obj = { accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(7130).FormCheckbox, { checked: "completed" === status }) };
-  ({ accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(7130).FormCheckbox, { checked: "completed" === status }) });
+  obj = { accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(7133).FormCheckbox, { checked: "completed" === status }) };
+  ({ accessible: true, accessibilityRole: "image", accessibilityLabel: stringResult1, children: metroRequire(tmp21(7133).FormCheckbox, { checked: "completed" === status }) });
 }
 let react = react_mod;
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = react_native);
@@ -195,7 +195,7 @@ export default function ConjureTodoList(announceProgress) {
   const onToggleExpanded = announceProgress.onToggleExpanded;
   let tmp = closure_8();
   dependencyMap = tmp;
-  let obj = agents(12807);
+  let obj = agents(12814);
   ({ completed, total } = obj.todoProgress(todos));
   let items = [agents];
   obj.todoProgress(todos);
@@ -218,10 +218,10 @@ export default function ConjureTodoList(announceProgress) {
   let tmp9 = closure_6;
   let obj2 = { title: intl3.string(flag2(3995).RtzECX), meta: tmp9(ConjureNativeCollapsibleMeta, { accessibilityLiveRegion: str, accessibilityLabel: formatToPlainStringResult1, children: formatToPlainStringResult }), showHeader: total > 0, superseded: flag3, expanded: flag4, onToggleExpanded, showLabel: intl4.string(tmp6(3995).RKyN9q), hideLabel: intl5.string(tmp6(3995).xydHoj), children: closure_7(closure_5, obj3) };
   formatToPlainStringResult1 = intl2.formatToPlainString(flag2(3995)["7tzwKB"], { completed, total });
-  const tmp10 = flag2(12939);
+  const tmp10 = flag2(12946);
   intl3 = tmp2(1113).intl;
   str = "none";
-  ConjureNativeCollapsibleMeta = tmp2(12939).ConjureNativeCollapsibleMeta;
+  ConjureNativeCollapsibleMeta = tmp2(12946).ConjureNativeCollapsibleMeta;
   if (flag) {
     str = "none";
     if (!flag3) {
@@ -275,7 +275,7 @@ export default function ConjureTodoList(announceProgress) {
       let obj4 = { style: tmp.row, children: items2 };
       items2 = [tmp9(TodoMarker, { status: "pending" }), ];
       const obj5 = { variant: "body-sm/normal", color: "text-muted", style: tmp.text, children: provisional };
-      items2[1] = tmp9(agents(5761).Text, obj5);
+      items2[1] = tmp9(agents(5763).Text, obj5);
       tmp11Result = tmp11(tmp12, obj4);
     }
   }

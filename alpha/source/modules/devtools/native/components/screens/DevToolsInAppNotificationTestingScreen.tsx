@@ -1,31 +1,31 @@
-// Module ID: 17993
-// Function ID: 17994
+// Module ID: 18021
+// Function ID: 18022
 // Name: DevToolsInAppNotificationTestingScreen
-// Dependencies: [19, 17, 6972, 4994, 5084, 4990, 5012, 5044, 1385, 1072, 21, 5141, 575, 5846, 11203, 11205, 6696, 11, 1627, 1187, 7201, 7116, 17835, 7125, 2]
+// Dependencies: [19, 17, 6975, 4996, 5086, 4992, 5014, 5046, 1385, 1072, 21, 5143, 575, 5849, 11211, 11213, 6699, 11, 1627, 1187, 7204, 7119, 17863, 7128, 2]
 // Exports: default
 
-// Module 17993 (DevToolsInAppNotificationTestingScreen)
+// Module 18021 (DevToolsInAppNotificationTestingScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ChannelRecord from "ChannelRecord" /* 4994 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
-import StickersTypes from "StickersTypes" /* 6696 */;
-import TableRowGroup2 from "TableRowGroup" /* 7201 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11203 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11205 */;
+import ChannelRecord from "ChannelRecord" /* 4996 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
+import StickersTypes from "StickersTypes" /* 6699 */;
+import TableRowGroup2 from "TableRowGroup" /* 7204 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11211 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11213 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6972 */;
-import MessageRecord from "MessageRecord" /* 5084 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
+import StickersStore from "StickersStore" /* 6975 */;
+import MessageRecord from "MessageRecord" /* 5086 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

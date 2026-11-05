@@ -1,28 +1,28 @@
-// Module ID: 11384
-// Function ID: 11385
+// Module ID: 11392
+// Function ID: 11393
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 4994, 4990, 5071, 5012, 5073, 6907, 1072, 21, 5141, 575, 8882, 5377, 504, 5786, 5729, 5148, 11385, 11386, 5396, 5400, 5851, 7098, 1187, 8744, 5761, 1113, 6162, 7201, 7116, 5382, 9147, 2123, 11387, 8317, 6902, 5768, 11390, 5731, 2]
+// Dependencies: [32, 19, 17, 4996, 4992, 5073, 5014, 5075, 6910, 1072, 21, 5143, 575, 8887, 5379, 504, 5788, 5731, 5150, 11393, 11394, 5398, 5402, 5854, 7101, 1187, 8749, 5763, 1113, 6165, 7204, 7119, 5384, 9154, 2123, 11395, 8322, 6905, 5770, 11398, 5733, 2]
 // Exports: default
 
-// Module 11384 (NewChannelFollower)
+// Module 11392 (NewChannelFollower)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import ChannelRecord from "ChannelRecord" /* 4994 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11387 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11390 */;
+import ChannelRecord from "ChannelRecord" /* 4996 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 5073 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11395 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
-import SortedGuildStore from "SortedGuildStore" /* 6907 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
+import SortedGuildStore from "SortedGuildStore" /* 6910 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,6 +37,7 @@ let map1;
 let obj2;
 let obj3;
 let obj4;
+let obj5;
 function canFollowIntoChannel(channel) {
   channel = channel.channel;
   const hasItem = set.has(channel.type) && PermissionStore.can(constants.MANAGE_WEBHOOKS, channel);
@@ -48,12 +49,13 @@ let closure_9 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;
 ({ AbortCodes: map1, Permissions: closure_14 } = Constants);
 ({ jsx: closure_15, jsxs: closure_16 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 24 }, header: { flex: 1, flexDirection: "row", justifyContent: "center", alignItems: "center", height: 96 }, headerBackground: obj2, headerGuildIcon: { width: 40, marginRight: 16 }, headerChannelContainer: obj3, headerChannel: obj4, headerChannelIcon: { height: 20, width: 20, marginRight: 8, opacity: 0.6 }, ctaHeader: { flex: 1, textAlign: "center", marginBottom: 8 }, ctaSubhead: { flex: 1, textAlign: "center", marginBottom: 8 }, channelIcon: { height: 16, width: 16, opacity: 0.6 } };
+let obj = { container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 24 }, header: { flex: 1, flexDirection: "row", justifyContent: "center", alignItems: "center", height: 96 }, headerBackground: obj2, headerContent: obj3, headerGuildIcon: { width: 40, marginRight: 16 }, headerChannelContainer: obj4, headerChannel: obj5, headerChannelIcon: { height: 20, width: 20, marginRight: 8, opacity: 0.6 }, headerChannelName: { flexShrink: 1 }, ctaHeader: { flex: 1, textAlign: "center", marginBottom: 8 }, ctaSubhead: { flex: 1, textAlign: "center", marginBottom: 8 }, channelIcon: { height: 16, width: 16, opacity: 0.6 } };
 obj2 = { width: undefined, height: 96 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3 = { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 32 };
-obj4 = { flex: 1, flexDirection: "row", minWidth: 160, paddingHorizontal: 8, paddingVertical: 6, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
+obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
+obj4 = { flexShrink: 1, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 32 };
+obj5 = { flex: 1, flexDirection: "row", minWidth: 160, paddingHorizontal: 8, paddingVertical: 6, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
 let closure_17 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/channel_following/native/components/NewChannelFollower.tsx");
 
@@ -71,16 +73,17 @@ export default function NewChannelFollower(targetChannelId) {
   let intl7;
   let intl8;
   let intl9;
+  let items10;
   let items2;
   let items3;
   let items4;
-  let items6;
-  let items8;
+  let items5;
+  let items7;
   let items9;
   let name;
   let obj10;
-  let obj16;
-  let obj19;
+  let obj17;
+  let obj20;
   let sourceChannel;
   let sourceGuild;
   let targetChannel;
@@ -143,19 +146,21 @@ export default function NewChannelFollower(targetChannelId) {
   } else {
     tmp9Result = tmp9(tmp7[20]);
   }
-  const obj4 = { handleDisabled: true, startExpanded: true, scrollable: true, ref: bottomSheetRef, children: items9 };
+  const obj4 = { handleDisabled: true, startExpanded: true, scrollable: true, ref: bottomSheetRef, children: items10 };
   const BottomSheet = tmp6(tmp7[21]).BottomSheet;
   const obj5 = { style: tmp.header, children: items2 };
   const BottomSheetScrollView = tmp6(tmp7[22]).BottomSheetScrollView;
   items2 = [, ];
   const obj6 = { source: tmp9Result, style: tmp.headerBackground };
   items2[0] = closure_15(require("FastImage"), obj6);
-  const obj7 = { style: tmp.header, children: items3 };
+  const obj7 = { style: items3, children: items4 };
   items3 = [, ];
+  ({ header: arr4[0], headerContent: arr4[1] } = tmp);
+  items4 = [, ];
   const obj8 = { style: tmp.headerGuildIcon, guild: sourceGuild };
-  items3[0] = closure_15(require("GuildIcon"), obj8);
+  items4[0] = closure_15(require("GuildIcon"), obj8);
   const obj9 = { style: tmp.headerChannelContainer, children: closure_16(closure_5, obj10) };
-  obj10 = { style: tmp.headerChannel, children: items4 };
+  obj10 = { style: tmp.headerChannel, children: items5 };
   const obj11 = { size: tmp6(tmp7[25]).Icon.Sizes.CUSTOM, source: channelIcon, style: tmp.headerChannelIcon };
   const Icon = tmp6(tmp7[25]).Icon;
   channelIcon = null;
@@ -163,21 +168,23 @@ export default function NewChannelFollower(targetChannelId) {
     const tmp6Result3 = tmp6(tmp7[26]);
     channelIcon = tmp6Result3.getChannelIcon(sourceChannel);
   }
-  items4 = [closure_15(Icon, obj11), closure_15(tmp6(tmp7[27]).Text, { lineClamp: 1, variant: "body-sm/medium", children: tmp13 })];
-  items3[1] = closure_15(closure_5, obj9);
+  items5 = [closure_15(Icon, obj11), ];
+  const obj12 = { style: tmp.headerChannelName, lineClamp: 1, variant: "body-sm/medium", children: tmp13 };
+  items5[1] = closure_15(tmp6(tmp7[27]).Text, obj12);
+  items4[1] = closure_15(closure_5, obj9);
   items2[1] = closure_16(closure_5, obj7);
-  const items5 = [closure_16(closure_5, obj5), ];
-  const obj12 = { style: tmp.container, children: items6 };
-  const obj13 = { style: tmp.ctaHeader, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp6(tmp7[28]).t.mvPFbA) };
+  const items6 = [closure_16(closure_5, obj5), ];
+  const obj13 = { style: tmp.container, children: items7 };
+  const obj14 = { style: tmp.ctaHeader, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(tmp6(tmp7[28]).t.mvPFbA) };
   const Text = tmp6(tmp7[27]).Text;
   intl = tmp6(tmp7[28]).intl;
-  items6 = [closure_15(Text, obj13), , , , , ];
-  const obj14 = { style: tmp.ctaSubhead, variant: "body-sm/medium", color: "text-default", children: intl2.string(tmp6(tmp7[28]).t.kbpkxJ) };
+  items7 = [closure_15(Text, obj14), , , , , ];
+  const obj15 = { style: tmp.ctaSubhead, variant: "body-sm/medium", color: "text-default", children: intl2.string(tmp6(tmp7[28]).t.kbpkxJ) };
   const Text2 = tmp6(tmp7[27]).Text;
   intl2 = tmp6(tmp7[28]).intl;
-  items6[1] = closure_15(Text2, obj14);
+  items7[1] = closure_15(Text2, obj15);
   const Stack = tmp6(tmp7[29]).Stack;
-  const obj15 = { title: intl3.string(tmp6(tmp7[28]).t.xFn72s), hasIcons: true, children: closure_15(TableRow, obj16) };
+  const obj16 = { title: intl3.string(tmp6(tmp7[28]).t.xFn72s), hasIcons: true, children: closure_15(TableRow, obj17) };
   const TableRowGroup = tmp6(tmp7[30]).TableRowGroup;
   intl3 = tmp6(tmp7[28]).intl;
   TableRow = tmp6(tmp7[31]).TableRow;
@@ -187,7 +194,7 @@ export default function NewChannelFollower(targetChannelId) {
     const intl4 = tmp6(tmp7[28]).intl;
     name = intl4.string(tmp6(tmp7[28]).t.XqMe3N);
   }
-  obj16 = {
+  obj17 = {
     label: name,
     icon: tmp20Result,
     arrow: true,
@@ -225,7 +232,7 @@ export default function NewChannelFollower(targetChannelId) {
         },
         hasIcons: false
       };
-      const tmp2 = asyncRequire(9147, dependencyMap.paths);
+      const tmp2 = asyncRequire(9154, dependencyMap.paths);
       intl = intl10.intl;
       const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
       reduce = flattenedGuildIds.reduce;
@@ -236,12 +243,12 @@ export default function NewChannelFollower(targetChannelId) {
   };
   tmp20Result = null;
   if (null != targetGuild) {
-    const obj17 = { guild: targetGuild, size: tmp6(tmp7[24]).GuildIconSizes.XSMALL };
+    const obj18 = { guild: targetGuild, size: tmp6(tmp7[24]).GuildIconSizes.XSMALL };
     const tmp9Result2 = require("GuildIcon");
-    tmp20Result = tmp20(tmp9Result2, obj17);
+    tmp20Result = tmp20(tmp9Result2, obj18);
   }
-  const items7 = [closure_15(TableRowGroup, obj15), ];
-  const obj18 = { title: intl5.string(tmp6(tmp7[28]).t.PDn2fR), hasIcons: true, children: closure_15(TableRow2, obj19) };
+  const items8 = [closure_15(TableRowGroup, obj16), ];
+  const obj19 = { title: intl5.string(tmp6(tmp7[28]).t.PDn2fR), hasIcons: true, children: closure_15(TableRow2, obj20) };
   const TableRowGroup2 = tmp6(tmp7[30]).TableRowGroup;
   intl5 = tmp6(tmp7[28]).intl;
   let stringResult = tmp14;
@@ -250,7 +257,7 @@ export default function NewChannelFollower(targetChannelId) {
     const intl6 = tmp6(tmp7[28]).intl;
     stringResult = intl6.string(tmp6(tmp7[28]).t.XqMe3N);
   }
-  obj19 = {
+  obj20 = {
     label: stringResult,
     disabled: null == targetGuildId,
     icon: tmp20Result3,
@@ -281,28 +288,28 @@ export default function NewChannelFollower(targetChannelId) {
   };
   tmp20Result3 = null;
   if (null != targetChannel) {
-    const obj20 = { size: tmp6(tmp7[25]).Icon.Sizes.CUSTOM, source: tmp6Result4.getChannelIcon(targetChannel), style: tmp.channelIcon };
+    const obj21 = { size: tmp6(tmp7[25]).Icon.Sizes.CUSTOM, source: tmp6Result4.getChannelIcon(targetChannel), style: tmp.channelIcon };
     const Icon2 = tmp6(tmp7[25]).Icon;
     tmp6Result4 = tmp6(tmp7[26]);
-    tmp20Result3 = tmp20(Icon2, obj20);
+    tmp20Result3 = tmp20(Icon2, obj21);
   }
-  const obj21 = { spacing: 16, children: items7 };
-  items7[1] = closure_15(TableRowGroup2, obj18);
-  items6[2] = closure_16(Stack, obj21);
-  const obj22 = { inset: true, children: intl7.string(tmp6(tmp7[28]).t.Z0quyN) };
+  const obj22 = { spacing: 16, children: items8 };
+  items8[1] = closure_15(TableRowGroup2, obj19);
+  items7[2] = closure_16(Stack, obj22);
+  const obj23 = { inset: true, children: intl7.string(tmp6(tmp7[28]).t.Z0quyN) };
   const FormHint = tmp6(tmp7[36]).FormHint;
   intl7 = tmp6(tmp7[28]).intl;
-  items6[3] = closure_15(FormHint, obj22);
+  items7[3] = closure_15(FormHint, obj23);
   let tmp20Result4 = null;
   if (null != tmp5) {
-    const obj23 = { inset: true, children: tmp5 };
-    tmp20Result4 = tmp20(tmp6(tmp7[36]).FormHint, obj23);
+    const obj24 = { inset: true, children: tmp5 };
+    tmp20Result4 = tmp20(tmp6(tmp7[36]).FormHint, obj24);
   }
-  const obj24 = { children: items5 };
-  items6[4] = tmp20Result4;
-  const obj25 = { children: items8 };
+  const obj25 = { children: items6 };
+  items7[4] = tmp20Result4;
+  const obj26 = { children: items9 };
   const ButtonGroup = tmp6(tmp7[37]).ButtonGroup;
-  const obj26 = {
+  const obj27 = {
     text: intl8.string(tmp6(tmp7[28]).t["3aOv+h"]),
     disabled: !(null != targetGuildId && null != targetChannelId),
     loading: first,
@@ -327,13 +334,13 @@ export default function NewChannelFollower(targetChannelId) {
   };
   const Button = tmp6(tmp7[38]).Button;
   intl8 = tmp6(tmp7[28]).intl;
-  items8 = [closure_15(Button, obj26), ];
-  const obj27 = { text: intl9.string(tmp6(tmp7[28]).t["ETE/oC"]), variant: "secondary", onPress: onCancel };
+  items9 = [closure_15(Button, obj27), ];
+  const obj28 = { text: intl9.string(tmp6(tmp7[28]).t["ETE/oC"]), variant: "secondary", onPress: onCancel };
   const Button2 = tmp6(tmp7[38]).Button;
   intl9 = tmp6(tmp7[28]).intl;
-  items8[1] = closure_15(Button2, obj27);
-  items6[5] = closure_16(ButtonGroup, obj25);
-  items5[1] = closure_16(closure_5, obj12);
-  items9 = [closure_16(BottomSheetScrollView, obj24), closure_15(tmp6(tmp7[40]).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
+  items9[1] = closure_15(Button2, obj28);
+  items7[5] = closure_16(ButtonGroup, obj26);
+  items6[1] = closure_16(closure_5, obj13);
+  items10 = [closure_16(BottomSheetScrollView, obj25), closure_15(tmp6(tmp7[40]).ActionSheetHeaderBar, { variant: "floating", onPress: bottomSheetClose })];
   return closure_16(BottomSheet, obj4);
 };

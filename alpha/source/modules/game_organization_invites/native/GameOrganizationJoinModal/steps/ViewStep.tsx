@@ -1,16 +1,16 @@
-// Module ID: 13422
-// Function ID: 13423
+// Module ID: 13448
+// Function ID: 13449
 // Name: ViewStep
-// Dependencies: [32, 19, 11552, 13421, 21, 5141, 1499, 13423, 13418, 13424, 8112, 8113, 6162, 575, 13425, 5761, 1113, 2533, 8802, 13426, 13428, 5768, 2]
+// Dependencies: [32, 19, 11560, 13447, 21, 5143, 1499, 13444, 13441, 13445, 13449, 8118, 6165, 575, 13450, 5763, 1113, 2533, 8807, 13451, 13453, 5770, 2]
 // Exports: ViewStep
 
-// Module 13422 (ViewStep)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11552 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13421 */;
+// Module 13448 (ViewStep)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11560 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 13447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,13 +64,11 @@ export function ViewStep(code) {
   if (tmp7) {
     tmp9 = code;
   }
-  const gameOrganizationCharacterEligibilityFetch = useGameOrganizationCharacterEligibilityFetch(tmp9);
-  const data = gameOrganizationCharacterEligibilityFetch.data;
-  const error = gameOrganizationCharacterEligibilityFetch.error;
-  const tmp11 = found(react.useState(null), 2);
-  selectedCharacterId = tmp11[0];
+  const data = useGameOrganizationCharacterEligibilityFetch(tmp9).data;
+  const tmp10 = found(react.useState(null), 2);
+  selectedCharacterId = tmp10[0];
   found = undefined;
-  const tmp13 = tmp11[1];
+  const tmp12 = tmp10[1];
   if (data != null) {
     found = data.find((id) => id.id === first);
   }
@@ -80,8 +78,8 @@ export function ViewStep(code) {
     ({ organization, application } = tmp5);
     ({ memberCount, maxMembers } = organization);
     const obj2 = { displayNoun: tmp5.displayNoun, lowercase: true };
-    const tmp17 = require("getGameOrganizationDisplayNoun")(obj2);
-    const ModalScreen = tmp2(tmp3[10]).ModalScreen;
+    const tmp16 = require("getGameOrganizationDisplayNoun")(obj2);
+    const tmp4Result = require("GameOrganizationJoinModalScreen");
     const ModalContent = tmp2(tmp3[11]).ModalContent;
     const obj3 = { spacing: require("native").space.PX_48, children: items5 };
     const Stack2 = tmp2(tmp3[12]).Stack;
@@ -94,7 +92,7 @@ export function ViewStep(code) {
     const obj7 = { variant: "heading-xl/semibold", style: tmp.text, children: intl3.formatToPlainString(require("module_2533").gptW7Y, obj8) };
     const Text2 = tmp2(tmp3[15]).Text;
     intl3 = tmp2(tmp3[16]).intl;
-    obj8 = { noun: tmp17, orgName: organization.name };
+    obj8 = { noun: tmp16, orgName: organization.name };
     items[1] = closure_7(Text2, obj7);
     items1 = [closure_8(Stack4, obj5), ];
     const obj9 = { direction: "horizontal", align: "center", justify: "center", spacing: require("native").space.PX_16, children: items3 };
@@ -102,13 +100,13 @@ export function ViewStep(code) {
     const obj10 = { spacing: require("native").space.PX_4, direction: "horizontal", align: "center", style: tmp.inlineStack, children: items2 };
     const Stack6 = tmp2(tmp3[12]).Stack;
     const obj11 = { iconUrl: application.iconUrl, size: 16, borderRadius: require("native").radii.xs };
-    const tmp4Result = require("GameOrganizationIcon");
-    items2 = [closure_7(tmp4Result, obj11), ];
+    const tmp4Result2 = require("GameOrganizationIcon");
+    items2 = [closure_7(tmp4Result2, obj11), ];
     const obj12 = { variant: "heading-sm/medium", children: application.name };
     items2[1] = closure_7(tmp2(tmp3[15]).Text, obj12);
     items3 = [closure_8(Stack6, obj10), ];
-    let tmp18Result = null != memberCount && null != maxMembers;
-    if (tmp18Result) {
+    let tmp17Result = null != memberCount && null != maxMembers;
+    if (tmp17Result) {
       const obj13 = { spacing: require("native").space.PX_4, direction: "horizontal", align: "center", style: tmp.inlineStack, children: items4 };
       const Stack = tmp2(tmp3[12]).Stack;
       const obj14 = { size: "xs", color: require("native").colors.ICON_MUTED };
@@ -119,14 +117,14 @@ export function ViewStep(code) {
       intl = tmp2(tmp3[16]).intl;
       obj16 = { count: memberCount, max: maxMembers };
       items4[1] = closure_7(Text, obj15);
-      tmp18Result = tmp18(Stack, obj13);
+      tmp17Result = tmp17(Stack, obj13);
     }
-    items3[1] = tmp18Result;
+    items3[1] = tmp17Result;
     items1[1] = closure_8(Stack5, obj9);
     items5 = [closure_8(Stack3, obj4), ];
     let tmp19Result = tmp7;
     if (tmp19Result) {
-      const obj17 = { characters: data, hasError: null != error, selectedCharacterId, onSelect: tmp13, noun: tmp17 };
+      const obj17 = { characters: data, selectedCharacterId, onSelect: tmp12, noun: tmp16 };
       tmp19Result = tmp19(tmp4(tmp3[19]), obj17);
     }
     items5[1] = tmp19Result;
@@ -158,6 +156,6 @@ export function ViewStep(code) {
     const obj20 = { children: items6 };
     const obj21 = { children: closure_7(Button, obj19) };
     items6[1] = closure_7(ModalFooter, obj21);
-    return closure_8(ModalScreen, obj20);
+    return closure_8(tmp4Result, obj20);
   }
 }

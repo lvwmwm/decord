@@ -1,21 +1,21 @@
-// Module ID: 15157
-// Function ID: 15158
+// Module ID: 15170
+// Function ID: 15171
 // Name: ConjureCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 5141, 575, 15158, 9826, 5382, 15159, 8319, 12321, 1113, 3995, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 15171, 9832, 5384, 15172, 8324, 12328, 1113, 3995, 2]
 // Exports: default
 
-// Module 15157 (ConjureCustomWidgetAddOption)
+// Module 15170 (ConjureCustomWidgetAddOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
-import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9826 */;
-import MagicWandIcon from "MagicWandIcon" /* 12321 */;
-import ConjureCustomWidget from "ConjureCustomWidget" /* 15158 */;
-import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 15159 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5384 */;
+import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9832 */;
+import MagicWandIcon from "MagicWandIcon" /* 12328 */;
+import ConjureCustomWidget from "ConjureCustomWidget" /* 15171 */;
+import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 15172 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -38,9 +38,9 @@ export default function ConjureCustomWidgetAddOption() {
   let tmp7 = null;
   if (isConjureMobileEnabled) {
     ({ icon: null, label: intl.string(_modDef3995["5WHmVU"]), subLabel: intl2.string(_modDef3995.yI85oV), onPress: tmp6 });
-    const RowButton = tmp2(8319).RowButton;
+    const RowButton = tmp2(8324).RowButton;
     ({ IconComponent: MagicWandIcon.MagicWandIcon, variant: "secondary" });
-    const Icon = tmp2(8319).RowButton.Icon;
+    const Icon = tmp2(8324).RowButton.Icon;
     intl = tmp2(1113).intl;
     intl2 = tmp2(1113).intl;
     tmp7 = <View style={tmp.container}>{null}</View>;

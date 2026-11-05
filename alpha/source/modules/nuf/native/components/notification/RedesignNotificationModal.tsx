@@ -1,22 +1,22 @@
-// Module ID: 18299
-// Function ID: 18300
+// Module ID: 18327
+// Function ID: 18328
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 14191, 14192, 1072, 21, 5141, 575, 14193, 1252, 14194, 14471, 18300, 1113, 2]
+// Dependencies: [19, 17, 14204, 14205, 1072, 21, 5143, 575, 14206, 1252, 14207, 14484, 18328, 1113, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 18299 (RedesignNotificationModal)
+// Module 18327 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14191 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14193 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14194 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 14471 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14204 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14206 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14207 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 14484 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14192 */;
-import createStyles from "createStyles" /* 5141 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14205 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -63,7 +63,7 @@ const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
 let obj = { container: obj2 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: nativeDefault.space.PX_48 };
+obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingTop: nativeDefault.space.PX_48 };
 const authStore = createStyles.createStyles(obj);
 let result = size.fileFinishedImporting("modules/nuf/native/components/notification/RedesignNotificationModal.tsx");
 

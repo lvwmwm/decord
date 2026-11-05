@@ -1,19 +1,19 @@
-// Module ID: 16991
-// Function ID: 16992
+// Module ID: 17015
+// Function ID: 17016
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8573, 7525, 6869, 7526, 6861, 1377, 8095, 6864, 4966, 11729, 1113, 2]
+// Dependencies: [8578, 7527, 6872, 7528, 6864, 1377, 8100, 6867, 4968, 11737, 1113, 2]
 
-// Module 16991 (AndroidViewNsfwDmCommandsSetting)
+// Module 17015 (AndroidViewNsfwDmCommandsSetting)
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6861 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
-import AgeGateUtils from "AgeGateUtils" /* 6869 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7525 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 7526 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8095 */;
-import SettingsConstants from "SettingsConstants" /* 8573 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6864 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6867 */;
+import AgeGateUtils from "AgeGateUtils" /* 6872 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 7527 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 7528 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8100 */;
+import SettingsConstants from "SettingsConstants" /* 8578 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -41,7 +41,7 @@ let obj = {
         const result = showAgeVerificationGetStartedModal(obj2);
       }
     }
-    const ViewNsfwCommands = tmp(4966).ViewNsfwCommands;
+    const ViewNsfwCommands = tmp(4968).ViewNsfwCommands;
     ViewNsfwCommands.updateSetting(arg0);
   },
   usePredicate() {

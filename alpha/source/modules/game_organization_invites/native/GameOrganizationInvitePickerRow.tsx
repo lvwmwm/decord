@@ -1,18 +1,18 @@
-// Module ID: 11844
-// Function ID: 11845
+// Module ID: 11852
+// Function ID: 11853
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 9344, 8019, 21, 5141, 575, 11845, 7116, 5851, 7474, 6162, 8802, 5761, 1113, 2533, 9349, 2]
+// Dependencies: [19, 9351, 8024, 21, 5143, 575, 11853, 7119, 5854, 7477, 6165, 8807, 5763, 1113, 2533, 9356, 2]
 
-// Module 11844 (GameOrganizationInvitePickerRow)
+// Module 11852 (GameOrganizationInvitePickerRow)
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import TableRow2 from "TableRow" /* 7116 */;
-import Constants from "Constants" /* 8019 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9344 */;
-import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 11845 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import TableRow2 from "TableRow" /* 7119 */;
+import Constants from "Constants" /* 8024 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 9351 */;
+import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 11853 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const getGameOrganizationInviteSendStateKeyDefault = getGameOrganizationInviteSendStateKey;
@@ -22,8 +22,8 @@ let metroRequire;
 let size;
 let tmp2;
 const _modDef2533 = tmp2(2533);
-const AssetRegistryDefault = tmp2(7474);
-const InviteButtonDefault = tmp2(9349);
+const AssetRegistryDefault = tmp2(7477);
+const InviteButtonDefault = tmp2(9356);
 let closure_4 = InstantInviteSendStateStore.useInstantInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -75,12 +75,12 @@ const memoResult = react.memo(function GameOrganizationInvitePickerRow(organizat
   if (null != memberCount) {
     if (null != maxMembers) {
       const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_4, align: "center", children: items1 };
-      const Stack = tmp5(6162).Stack;
+      const Stack = tmp5(6165).Stack;
       const obj6 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-      const GroupIcon = tmp5(8802).GroupIcon;
+      const GroupIcon = tmp5(8807).GroupIcon;
       items1 = [metroRequire(GroupIcon, obj6), ];
       const obj7 = { variant: "body-xs/medium", color: "text-muted", children: intl.formatToPlainString(_modDef2533.VuENGl, obj8) };
-      const Text = tmp5(5761).Text;
+      const Text = tmp5(5763).Text;
       intl = tmp5(1113).intl;
       obj8 = { count: memberCount, max: maxMembers };
       items1[1] = metroRequire(Text, obj7);

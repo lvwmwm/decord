@@ -1,21 +1,21 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9320
+// Function ID: 9321
 // Name: InstantInviteQRCodeActionSheet
-// Dependencies: [19, 17, 5012, 1385, 1072, 21, 5141, 575, 7098, 504, 1113, 572, 5845, 7502, 7457, 9314, 5761, 2]
+// Dependencies: [19, 17, 5014, 1385, 1072, 21, 5143, 575, 7101, 504, 1113, 572, 5848, 7504, 7460, 9321, 5763, 2]
 // Exports: default
 
-// Module 9313 (InstantInviteQRCodeActionSheet)
+// Module 9320 (InstantInviteQRCodeActionSheet)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import GuildIconDefault from "GuildIcon" /* 7098 */;
-import components_native_QRCodeDefault from "components_native/QRCode" /* 9314 */;
+import GuildIconDefault from "GuildIcon" /* 7101 */;
+import components_native_QRCodeDefault from "components_native/QRCode" /* 9321 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -88,12 +88,12 @@ export default function InstantInviteQRCodeActionSheet(link) {
       tmp13 = null;
       const obj8 = GuildStore;
       if (null != GuildStore.getGuild(channel2.guild_id)) {
-        const obj4 = { guild: obj8.getGuild(channel2.guild_id), size: tmp6(7098).GuildIconSizes.LARGE };
+        const obj4 = { guild: obj8.getGuild(channel2.guild_id), size: tmp6(7101).GuildIconSizes.LARGE };
         const tmp16 = GuildIconDefault;
         tmp13 = closure_9(tmp16, obj4);
       }
     }
-    presentFriendRequestAcceptedToast = tmp6(5845).presentFriendRequestAcceptedToast;
+    presentFriendRequestAcceptedToast = tmp6(5848).presentFriendRequestAcceptedToast;
     const items1 = [presentFriendRequestAcceptedToast];
     const effect = react.useEffect(() => {
       function handleRelationshipAdd(relationship) {
@@ -109,8 +109,8 @@ export default function InstantInviteQRCodeActionSheet(link) {
         obj.unsubscribe("RELATIONSHIP_ADD", handleRelationshipAdd);
       };
     }, items1);
-    const obj5 = { header: closure_9(tmp6(7457).BottomSheetTitleHeader, obj6), children: closure_10(View, obj7) };
-    const ActionSheet = tmp6(7502).ActionSheet;
+    const obj5 = { header: closure_9(tmp6(7460).BottomSheetTitleHeader, obj6), children: closure_10(View, obj7) };
+    const ActionSheet = tmp6(7504).ActionSheet;
     const obj9 = { text: link, size: 240, style: tmp.code, accessibilityLabel: plainText };
     plainText = undefined;
     obj6 = { title: stringResult };
@@ -132,7 +132,7 @@ export default function InstantInviteQRCodeActionSheet(link) {
     let tmp19Result2 = null != tmp12;
     if (tmp19Result2) {
       const obj13 = { variant: "body-md/normal", children: tmp12.visible };
-      tmp19Result2 = tmp19(tmp6(5761).Text, obj13);
+      tmp19Result2 = tmp19(tmp6(5763).Text, obj13);
     }
     items3[1] = tmp19Result2;
     return closure_9(ActionSheet, obj5);

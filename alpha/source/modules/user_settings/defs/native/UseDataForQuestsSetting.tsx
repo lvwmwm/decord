@@ -1,16 +1,16 @@
-// Module ID: 18147
-// Function ID: 18148
+// Module ID: 18175
+// Function ID: 18176
 // Name: UseDataForQuestsSetting
-// Dependencies: [8573, 18148, 16968, 4966, 11729, 1113, 18149, 2]
+// Dependencies: [8578, 18176, 16991, 4968, 11737, 1113, 18177, 2]
 
-// Module 18147 (UseDataForQuestsSetting)
+// Module 18175 (UseDataForQuestsSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4966 */;
-import SettingsConstants from "SettingsConstants" /* 8573 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16968 */;
-import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 18148 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18149 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11729 */;
+import UserSettings from "UserSettings" /* 4968 */;
+import SettingsConstants from "SettingsConstants" /* 8578 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16991 */;
+import useAdPersonalizationTogglesDisabled from "useAdPersonalizationTogglesDisabled" /* 18176 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18177 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11737 */;
 import size from "module_2" /* 2 */;
 
 function useIsDisabled() {

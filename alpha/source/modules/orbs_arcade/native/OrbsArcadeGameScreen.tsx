@@ -1,26 +1,26 @@
-// Module ID: 19274
-// Function ID: 19275
+// Module ID: 19305
+// Function ID: 19306
 // Name: OrbsArcadeGameScreen
-// Dependencies: [19, 17, 6981, 17270, 1072, 5791, 19275, 6982, 21, 5141, 575, 17277, 17288, 1627, 504, 1500, 12443, 11125, 5207, 12035, 12452, 12456, 19276, 19277, 2]
+// Dependencies: [19, 17, 6984, 17294, 1072, 5793, 19306, 6985, 21, 5143, 575, 17301, 17305, 1627, 504, 1500, 12450, 11078, 17304, 5209, 12044, 12459, 12463, 19307, 19308, 2]
 // Exports: default
 
-// Module 19274 (OrbsArcadeGameScreen)
+// Module 19305 (OrbsArcadeGameScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Link from "Link" /* 1500 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
-import leaveFrame from "leaveFrame" /* 11125 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19275 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5793 */;
+import leaveFrame from "leaveFrame" /* 11078 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19306 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6981 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17270 */;
-import FramesConstants from "FramesConstants" /* 6982 */;
+import FramesStore from "FramesStore" /* 6984 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17294 */;
+import FramesConstants from "FramesConstants" /* 6985 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
-let frame, game, set;
+let set;
 
 let FrameLayoutModes;
 let c10;
@@ -31,7 +31,7 @@ let obj3;
 let rect;
 let unpackModuleId;
 const View = react_native.View;
-const ThemeTypes = Constants.ThemeTypes;
+let ThemeTypes = Constants.ThemeTypes;
 const ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT = ActivityPanelConstants.ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT;
 const DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG = ActivityPanelNativeConstants.DEFAULT_PORTRAIT_SAFE_AREAS_CONFIG;
 ({ getFrameLaunchParams: metroImportAll, isLaunched: c9, FrameLayoutModes } = FramesConstants);
@@ -47,6 +47,7 @@ let closure_13 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/orbs_arcade/native/OrbsArcadeGameScreen.tsx");
 
 export default function OrbsArcadeGameScreen(navigation) {
+  let closure_7;
   let items10;
   let items6;
   let items7;
@@ -55,23 +56,24 @@ export default function OrbsArcadeGameScreen(navigation) {
   let obj4;
   navigation = navigation.navigation;
   const route = navigation.route;
-  let closure_5;
   const params = route.params;
   const frameId = params.frameId;
   const gameId = params.gameId;
   const claimableRewardIdsAtLaunch = params.claimableRewardIdsAtLaunch;
+  const runIdAtLaunch = params.runIdAtLaunch;
+  const surface = params.surface;
   let tmp = closure_13();
   let tmp3 = frameId;
   const rect = route(frameId[13])();
   let obj = navigation(frameId[14]);
-  const items = [closure_5];
+  const items = [runIdAtLaunch];
   const items1 = [frameId];
   const stateFromStores = obj.useStateFromStores(items, () => FramesStore.getFrame(frameId), items1);
-  let tmp6 = null != stateFromStores;
-  closure_5 = tmp6;
-  const items2 = [tmp6, navigation, route.key];
+  ThemeTypes = tmp6;
+  let obj2 = gameId;
+  const items2 = [null != stateFromStores, navigation, route.key];
   const effect = gameId.useEffect(() => {
-    const tmp = closure_5;
+    const tmp = closure_7;
     if (!tmp) {
       const dispatch = navigation.dispatch;
       const obj = { source: route.key };
@@ -91,7 +93,7 @@ export default function OrbsArcadeGameScreen(navigation) {
   tmp8(applicationId);
   const items3 = [frameId, gameId];
   const effect1 = obj2.useEffect(() => () => {
-    frame = frame.getFrame(closure_1_2);
+    const frame = runIdAtLaunch.getFrame(closure_1_2);
     let tmp3 = null != frame;
     const tmp = closure_1_2;
     if (tmp3) {
@@ -107,24 +109,25 @@ export default function OrbsArcadeGameScreen(navigation) {
       obj.leaveFrame(tmp);
     }
   }, items3);
-  const items4 = [navigation, gameId, claimableRewardIdsAtLaunch];
+  const items4 = [navigation, gameId, claimableRewardIdsAtLaunch, runIdAtLaunch, surface];
   const effect2 = obj2.useEffect(() => navigation.addListener("beforeRemove", function() {
+    const obj = navigation(frameId[18]);
+    const result = obj.trackOrbsArcadeGameClosed(gameId, runIdAtLaunch);
     let closure_0 = claimableRewardIdsAtLaunch;
-    const obj = game;
-    game = game.getGame(gameId);
+    const game = surface.getGame(gameId);
+    const obj2 = surface;
+    const tmp5 = closure_1_6;
     if (null != game) {
       const _Set = Set;
-      const obj3 = navigation(frameId[11]);
-      const orbsArcadeClaimableRewards = obj3.getOrbsArcadeClaimableRewards(game.rewards, obj.getGameStateForGame(tmp));
+      const tmpResult = navigation(frameId[11]);
+      const orbsArcadeClaimableRewards = tmpResult.getOrbsArcadeClaimableRewards(game.rewards, obj2.getGameStateForGame(tmp3));
       const mapped = orbsArcadeClaimableRewards.map((id) => id.id);
       const self = this;
       const self2 = this;
       set = new Set(mapped.filter((item) => !closure_0.includes(item)));
-      const tmp5 = navigation;
-      const tmp6 = frameId;
       if (set.size > 0) {
-        const tmp5Result = tmp5(tmp6[12]);
-        const result = tmp5Result.openOrbsArcadeRewardUnlockedSheet(tmp, set);
+        const tmpResult2 = navigation(frameId[12]);
+        const result1 = tmpResult2.openOrbsArcadeRewardUnlockedSheet(tmp3, tmp5, set);
       }
     }
   }), items4);
@@ -133,16 +136,16 @@ export default function OrbsArcadeGameScreen(navigation) {
     const obj = leaveFrame;
     return obj.leaveFrame(frameId);
   }, items5);
-  let obj3 = { theme: ThemeTypes.DARK, children: closure_11(claimableRewardIdsAtLaunch, obj4) };
+  const obj3 = { theme: ThemeTypes.DARK, children: closure_11(claimableRewardIdsAtLaunch, obj4) };
   obj4 = { style: items6, children: items7 };
   items6 = [tmp.container, { paddingTop: rect.top }];
-  const ThemeContextProvider = tmp4(tmp3[18]).ThemeContextProvider;
-  items7 = [closure_10(tmp2(tmp3[19]), { wakeLockKey: "OrbsArcadeGame" }), ];
+  const ThemeContextProvider = tmp4(tmp3[19]).ThemeContextProvider;
+  items7 = [closure_10(tmp2(tmp3[20]), { wakeLockKey: "OrbsArcadeGame" }), ];
   let tmp14Result = null;
   const obj5 = { style: tmp.wrapper, children: items8 };
   if (closure_9(stateFromStores)) {
-    const obj6 = { frameId, level: navigation(tmp3[21]).FrameStackLevel.AboveAppContent, presentation };
-    const tmp2Result = route(tmp3[20]);
+    const obj6 = { frameId, level: navigation(tmp3[22]).FrameStackLevel.AboveAppContent, presentation };
+    const tmp2Result = route(tmp3[21]);
     tmp14Result = tmp14(tmp2Result, obj6);
   }
   items8 = [tmp14Result, ];
@@ -153,9 +156,9 @@ export default function OrbsArcadeGameScreen(navigation) {
     items9[1] = { paddingLeft: route(tmp3[10]).space.PX_8 + rect.left, paddingRight: route(tmp3[10]).space.PX_8 + rect.right };
     const obj8 = { paddingLeft: route(tmp3[10]).space.PX_8 + rect.left, paddingRight: route(tmp3[10]).space.PX_8 + rect.right };
     const obj9 = { gameId, applicationId: stateFromStores.applicationId };
-    items10 = [closure_10(tmp2(tmp3[22]), obj9), ];
+    items10 = [closure_10(tmp2(tmp3[23]), obj9), ];
     const obj10 = { onPress: callback };
-    items10[1] = closure_10(navigation(tmp3[23]).BaseLeaveActivityButton, obj10);
+    items10[1] = closure_10(navigation(tmp3[24]).BaseLeaveActivityButton, obj10);
     tmp15Result = tmp15(tmp16, obj7);
   }
   items8[1] = tmp15Result;

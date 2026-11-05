@@ -1,23 +1,23 @@
-// Module ID: 10010
-// Function ID: 10011
+// Module ID: 10016
+// Function ID: 10017
 // Name: AttachmentUrlUtils
-// Dependencies: [5, 6191, 1072, 1089, 2160, 2159, 1378, 1282, 2]
+// Dependencies: [5, 6194, 1072, 1089, 2160, 2159, 1378, 1282, 2]
 // Exports: getSignedAttachmentExpiration, isAttachmentPathUrl, isExternalProxiedAttachmentUrl, maybeRefreshAttachmentUrl, messageHasExpiredAttachmentUrl, removeSignedUrlParameters
 
-// Module 10010 (AttachmentUrlUtils)
+// Module 10016 (AttachmentUrlUtils)
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import ImageProxyUtils from "ImageProxyUtils" /* 2159 */;
 import UrlHostUtils from "UrlHostUtils" /* 2160 */;
-import AttachmentUrlConstants from "AttachmentUrlConstants" /* 6191 */;
+import AttachmentUrlConstants from "AttachmentUrlConstants" /* 6194 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let hostname;
 
-const f96755 = (arr) => {
+const f96920 = (arr) => {
   hostname = hostname.hostname;
   let flag = true;
   if (hostname !== arr) {
@@ -45,14 +45,14 @@ const f96755 = (arr) => {
   }
   return flag;
 };
-const f96756 = (item) => {
+const f96921 = (item) => {
   pathname = pathname.pathname;
   return pathname.startsWith(item);
 };
 function isRefreshableAttachmentUrl(toURLSafeResult) {
   let closure_0 = toURLSafeResult;
-  let tmp2 = closure_7.some(f96755) || false;
-  closure_7.some(f96755) || false;
+  let tmp2 = closure_7.some(f96920) || false;
+  closure_7.some(f96920) || false;
   if (tmp2) {
     let pathname = toURLSafeResult.pathname;
     let tmp4 = !pathname.startsWith("/external/");
@@ -64,9 +64,9 @@ function isRefreshableAttachmentUrl(toURLSafeResult) {
         const _Array = Array;
         closure_0 = toURLSafeResult;
         const arr = Array.from(ATTACHMENT_PATH_PREFIXES);
-        const someResult = arr.some(f96756);
-        hasItem = (obj.some(f96755) || false) && someResult;
-        (closure_7.some(f96755) || false) && someResult;
+        const someResult = arr.some(f96921);
+        hasItem = (obj.some(f96920) || false) && someResult;
+        (closure_7.some(f96920) || false) && someResult;
       }
       tmp4 = hasItem;
     }
@@ -223,8 +223,8 @@ items[1] = substr;
 function isAttachmentPathUrl(toURLSafeResult) {
   let closure_0 = toURLSafeResult;
   const arr = Array.from(ATTACHMENT_PATH_PREFIXES);
-  const someResult = arr.some(f96756);
-  const tmp2 = (closure_7.some(f96755) || false) && someResult;
+  const someResult = arr.some(f96921);
+  const tmp2 = (closure_7.some(f96920) || false) && someResult;
   return tmp2;
 }
 function getSignedAttachmentExpiration(searchParams) {

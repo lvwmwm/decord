@@ -1,10 +1,10 @@
-// Module ID: 15901
-// Function ID: 15902
+// Module ID: 15913
+// Function ID: 15914
 // Name: getSoundString
 // Dependencies: [2]
 // Exports: default
 
-// Module 15901 (getSoundString)
+// Module 15913 (getSoundString)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/sounds/soundmoji/utils/getSoundString.tsx");

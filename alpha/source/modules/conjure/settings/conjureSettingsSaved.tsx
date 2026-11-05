@@ -1,15 +1,15 @@
-// Module ID: 12338
-// Function ID: 12339
+// Module ID: 12345
+// Function ID: 12346
 // Name: conjureSettingsSaved
-// Dependencies: [11029, 11028, 1113, 3995, 11145, 2]
+// Dependencies: [11035, 11034, 1113, 3995, 11153, 2]
 // Exports: settleProjectSettingsSave
 
-// Module 12338 (conjureSettingsSaved)
+// Module 12345 (conjureSettingsSaved)
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 11145 */;
-import ConjureChatStore from "ConjureChatStore" /* 11029 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 11153 */;
+import ConjureChatStore from "ConjureChatStore" /* 11035 */;
 import size from "module_2" /* 2 */;
 
 const sendUserMessage = ConjureConnectionStore.sendUserMessage;

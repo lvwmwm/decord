@@ -1,30 +1,75 @@
 // Module ID: 13123
 // Function ID: 13124
 // Name: tokenize
-// Dependencies: [13055, 13051]
+// Dependencies: [13062]
 
 // Module 13123 (tokenize)
-import _mod13051 from "module_13051" /* 13051 */;
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
 let obj2;
-const Percentage = tokenize.TYPE.Percentage;
+const Ident = tokenize.TYPE.Ident;
+const Number = tokenize.TYPE.Number;
+const Dimension = tokenize.TYPE.Dimension;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
+const Colon = tokenize.TYPE.Colon;
+const Delim = tokenize.TYPE.Delim;
 let obj = {
-  name: "Percentage",
+  name: "MediaFeature",
   structure: obj2,
   parse() {
+    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const obj = _mod13051;
-    const consumeNumberResult = obj.consumeNumber(this.scanner.source, tokenStart);
-    this.eat(Percentage);
-    const obj2 = { type: "Percentage", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: str.substring(tokenStart, consumeNumberResult) };
-    return obj2;
+    this.eat(LeftParenthesis);
+    const scanner = this.scanner;
+    scanner.skipSC();
+    const scanner2 = this.scanner;
+    const consumeResult = this.consume(Ident);
+    scanner2.skipSC();
+    let tmp7 = null;
+    const tmp3 = Ident;
+    const tmp6 = RightParenthesis;
+    if (this.scanner.tokenType !== RightParenthesis) {
+      let DimensionResult;
+      self.eat(Colon);
+      const scanner4 = self.scanner;
+      scanner4.skipSC();
+      const tokenType = self.scanner.tokenType;
+      if (Number === tokenType) {
+        let RatioResult;
+        if (self.lookupNonWSType(1) === Delim) {
+          RatioResult = self.Ratio();
+        } else {
+          RatioResult = self.Number();
+        }
+        DimensionResult = RatioResult;
+      } else if (Dimension === tokenType) {
+        DimensionResult = self.Dimension();
+      } else if (tmp3 === tokenType) {
+        DimensionResult = self.Identifier();
+      } else {
+        self.error("Number, dimension, ratio or identifier is expected");
+        DimensionResult = null;
+      }
+      const scanner3 = self.scanner;
+      scanner3.skipSC();
+      tmp7 = DimensionResult;
+    }
+    self.eat(tmp6);
+    const obj = { type: "MediaFeature", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, value: tmp7 };
+    return obj;
   },
-  generate(value) {
-    this.chunk(value.value);
-    this.chunk("%");
+  generate(name) {
+    const self = this;
+    this.chunk("(");
+    this.chunk(name.name);
+    if (null !== name.value) {
+      self.chunk(":");
+      self.node(name.value);
+    }
+    self.chunk(")");
   }
 };
-obj2 = { value: String };
+obj2 = { name: String, value: ["Identifier", "Number", "Dimension", "Ratio", null] };
 
 export default obj;

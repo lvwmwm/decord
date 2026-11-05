@@ -1,15 +1,15 @@
-// Module ID: 18616
-// Function ID: 18617
+// Module ID: 18646
+// Function ID: 18647
 // Name: getGuildsBarGuildMenuItems
-// Dependencies: [5, 5012, 1072, 7385, 1113, 16032, 2123, 9353, 7424, 7701, 15978, 2]
+// Dependencies: [5, 5014, 1072, 7388, 1113, 16044, 2123, 9360, 7427, 7703, 15990, 2]
 // Exports: default
 
-// Module 18616 (getGuildsBarGuildMenuItems)
+// Module 18646 (getGuildsBarGuildMenuItems)
 import Constants from "Constants" /* 1072 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7424 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15978 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7427 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15990 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

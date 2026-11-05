@@ -1,20 +1,20 @@
-// Module ID: 14798
-// Function ID: 14799
+// Module ID: 14811
+// Function ID: 14812
 // Name: AppDMOptionsBottomSheet
-// Dependencies: [19, 17, 7412, 1072, 21, 5141, 575, 504, 8891, 5382, 7703, 7468, 5396, 7201, 7116, 1113, 2]
+// Dependencies: [19, 17, 7415, 1072, 21, 5143, 575, 504, 8896, 5384, 7705, 7471, 5398, 7204, 7119, 1113, 2]
 // Exports: default
 
-// Module 14798 (AppDMOptionsBottomSheet)
+// Module 14811 (AppDMOptionsBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import openUserSettings from "openUserSettings" /* 7703 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import openUserSettings from "openUserSettings" /* 7705 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8896 */;
 import react from "react" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7412 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7415 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

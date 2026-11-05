@@ -1,13 +1,13 @@
-// Module ID: 17330
-// Function ID: 17331
+// Module ID: 17356
+// Function ID: 17357
 // Name: QuestDockDismissalToast
-// Dependencies: [5846, 1113, 5869, 2]
+// Dependencies: [5849, 1113, 5872, 2]
 // Exports: displayQuestDismissalToast
 
-// Module 17330 (QuestDockDismissalToast)
+// Module 17356 (QuestDockDismissalToast)
 import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5846 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5869 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5872 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/QuestDockDismissalToast.tsx");

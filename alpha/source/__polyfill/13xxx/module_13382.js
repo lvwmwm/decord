@@ -1,73 +1,109 @@
 // Module ID: 13382
 // Function ID: 13383
-// Dependencies: [13301, 13322, 13347]
-// Exports: getCurrentHub, getCurrentHubShim
+// Dependencies: [32, 13287]
+// Exports: getBucketKey, sanitizeMetricKey, sanitizeTags, sanitizeUnit, serializeMetricBuckets, simpleHash
 
 // Module 13382
-import _mod13301 from "module_13301" /* 13301 */;
-import _mod13322 from "module_13322" /* 13322 */;
-import _mod13347 from "module_13347" /* 13347 */;
+import _mod13287 from "module_13287" /* 13287 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 
-function getCurrentHubShim() {
-  let obj = {
-    bindClient(arg0) {
-      const obj = _mod13301;
-      const currentScope = obj.getCurrentScope();
-      currentScope.setClient(arg0);
-    },
-    withScope: _mod13301.withScope,
-    getClient() {
-      const obj = _mod13301;
-      return obj.getClient();
-    },
-    getScope: _mod13301.getCurrentScope,
-    getIsolationScope: _mod13301.getIsolationScope,
-    captureException(arg0, arg1) {
-      const obj = _mod13301;
-      const currentScope = obj.getCurrentScope();
-      return currentScope.captureException(arg0, arg1);
-    },
-    captureMessage(arg0, arg1, arg2) {
-      const obj = _mod13301;
-      const currentScope = obj.getCurrentScope();
-      return currentScope.captureMessage(arg0, arg1, arg2);
-    },
-    captureEvent: _mod13322.captureEvent,
-    addBreadcrumb: _mod13347.addBreadcrumb,
-    setUser: _mod13322.setUser,
-    setTags: _mod13322.setTags,
-    setTag: _mod13322.setTag,
-    setExtra: _mod13322.setExtra,
-    setExtras: _mod13322.setExtras,
-    setContext: _mod13322.setContext,
-    getIntegration(id) {
-      const obj = _mod13301;
-      const client = obj.getClient();
-      const integrationByName = client && client.getIntegrationByName(id.id) || null;
-      return integrationByName;
-    },
-    startSession: _mod13322.startSession,
-    endSession: _mod13322.endSession,
-    captureSession(arg0) {
-      const tmp3 = arg0;
-      if (tmp3) {
-        const tmpResult = _mod13322;
-        return tmpResult.endSession();
-      } else {
-        const tmpResult3 = _mod13301;
-        const currentScope = tmpResult3.getCurrentScope();
-        const tmpResult4 = _mod13301;
-        const client = tmpResult4.getClient();
-        const session = currentScope.getSession();
-        const tmp5 = client && session;
-        if (tmp5) {
-          client.captureSession(session);
+let hasOwnProperty;
+
+let items = [["\n", "\\n"], ["\r", "\\r"], ["\t", "\\t"], ["\\", "\\\\"], ["|", "\\u{7c}"], [",", "\\u{2c}"]];
+
+export function getBucketKey(metricType, sanitizeMetricKeyResult, sanitizeUnitResult, sanitizeTagsResult) {
+  const obj = _mod13287;
+  const entries1 = entries(obj.dropUndefinedKeys(sanitizeTagsResult));
+  return "" + metricType + sanitizeMetricKeyResult + sanitizeUnitResult + entries1.sort((arg0, arg1) => {
+    const first = arg0[0];
+    return first.localeCompare(arg1[0]);
+  });
+}
+export function sanitizeMetricKey(str) {
+  return str.replace(/[^\w\-.]+/gi, "_");
+}
+export function sanitizeTags(tags) {
+  let obj = {};
+  for (const key10007 in tags) {
+    let tmp5 = key10007;
+    let _Object = Object;
+    hasOwnProperty = Object.prototype.hasOwnProperty;
+    if (!hasOwnProperty.call(tags, key10007)) {
+      continue;
+    } else {
+      let _String = String;
+      let replaced = key10007.replace(/[^\w\-./]+/gi, "");
+      items = [];
+      let tmp3 = items;
+      let arraySpreadResult = HermesBuiltin.arraySpread(items, String(tags[key10007]), 0);
+      obj[replaced] = items.reduce((acc, item) => {
+        function getCharOrReplacement(item) {
+          const obj = closure_1_3[Symbol.iterator]();
+          while (obj !== undefined) {
+            let tmp4 = closure_1_2(tmp2, 2);
+            if (item === tmp4[0]) {
+              obj.return();
+              return tmp5;
+            }
+          }
+          return item;
         }
-      }
+        return acc + getCharOrReplacement(item);
+      }, "");
+      continue;
     }
-  };
+    continue;
+  }
   return obj;
 }
-
-export const getCurrentHub = getCurrentHubShim;
-export { getCurrentHubShim };
+export function sanitizeUnit(none) {
+  return none.replace(/[^\w]+/gi, "_");
+}
+export function serializeMetricBuckets(arg0) {
+  let str = "";
+  const iter = arg0[Symbol.iterator]();
+  const nextResult = iter.next();
+  while (iter !== undefined) {
+    let tmp2 = nextResult;
+    let _Object = Object;
+    let entries = Object.entries(nextResult.tags);
+    let arr2 = entries;
+    let str2 = "";
+    if (entries.length > 0) {
+      let mapped = arr2.map((item) => {
+        let tmp;
+        let tmp2;
+        [tmp, tmp2] = item;
+        return "" + tmp + ":" + tmp2;
+      });
+      let _HermesInternal = HermesInternal;
+      str2 = "|#" + mapped.join(",");
+    }
+    let _HermesInternal2 = HermesInternal;
+    let str3 = "";
+    let str4 = "@";
+    let str5 = ":";
+    let str6 = "|";
+    let str7 = "|T";
+    let str8 = "\n";
+    str = str + "" + tmp2.name + "@" + tmp2.unit + ":" + tmp2.metric + "|" + tmp2.metricType + str2 + "|T" + tmp2.timestamp + "\n";
+    continue;
+  }
+  return str;
+}
+export function simpleHash(item) {
+  let length;
+  let num = 0;
+  let num2 = 0;
+  let num3 = 0;
+  if (0 < item.length) {
+    do {
+      let sum = (num2 << 5) - num2 + item.charCodeAt(num);
+      num2 = sum & sum;
+      num = num + 1;
+      num3 = num2;
+      length = item.length;
+    } while (num < length);
+  }
+  return num3 >>> 0;
+}

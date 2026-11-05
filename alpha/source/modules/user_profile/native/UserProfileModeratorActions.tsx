@@ -1,36 +1,36 @@
-// Module ID: 15116
-// Function ID: 15117
+// Module ID: 15129
+// Function ID: 15130
 // Name: UserProfileModeratorActions
-// Dependencies: [19, 6892, 4990, 5071, 5053, 5012, 5073, 5813, 1072, 5059, 21, 5141, 575, 7116, 8902, 5382, 10926, 504, 7583, 13482, 4998, 13483, 5786, 6183, 6181, 5078, 1113, 12086, 8085, 12088, 8317, 8814, 11388, 2123, 7037, 7701, 6879, 13484, 1398, 14758, 5060, 13504, 13488, 9387, 12169, 9383, 14322, 10014, 5859, 13506, 13217, 13508, 15117, 12569, 8342, 7512, 7201, 2]
+// Dependencies: [19, 6895, 4992, 5073, 5055, 5014, 5075, 5815, 1072, 5061, 21, 5143, 575, 7119, 8907, 5384, 10932, 504, 7585, 13493, 5000, 13494, 5788, 6186, 6184, 5080, 1113, 12095, 8090, 12097, 8322, 8819, 11396, 2123, 7040, 7703, 6882, 13495, 1398, 14771, 5062, 13515, 13499, 9394, 12178, 9390, 14335, 10020, 5862, 13517, 13224, 13519, 15130, 12576, 8347, 7514, 7204, 2]
 // Exports: default
 
-// Module 15116 (UserProfileModeratorActions)
+// Module 15129 (UserProfileModeratorActions)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl18 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1398 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5059 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 5071 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 7037 */;
-import TableRow2 from "TableRow" /* 7116 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 8085 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12569 */;
-import GuildMemberUtils from "GuildMemberUtils" /* 13482 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 13488 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 13506 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 13508 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 5061 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 5073 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 7040 */;
+import TableRow2 from "TableRow" /* 7119 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 8090 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12576 */;
+import GuildMemberUtils from "GuildMemberUtils" /* 13493 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 13499 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 13517 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 13519 */;
 import react from "react" /* 19 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6892 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
-import VoiceStateStore from "VoiceStateStore" /* 5813 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6895 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
+import VoiceStateStore from "VoiceStateStore" /* 5815 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const GuildChannelStore = GuildChannelStore2;
@@ -39,7 +39,7 @@ let closure_12;
 let map1;
 let obj2;
 let tmp;
-const StageChannelPermissions = tmp(4998);
+const StageChannelPermissions = tmp(5000);
 function ModeratorActionRow(isDestructive) {
   let combined;
   let disabled;
@@ -373,7 +373,7 @@ export default function UserProfileModeratorActions(user) {
                 selectedChannel: null
               };
               obj2 = { title: intl.string(intl18.t.r2ptsz) };
-              const tmp3 = asyncRequire(11388, dependencyMap.paths);
+              const tmp3 = asyncRequire(11396, dependencyMap.paths);
               intl = intl18.intl;
               openLazy(tmp3, "ChannelPicker", obj, "stack");
             }
@@ -408,7 +408,7 @@ export default function UserProfileModeratorActions(user) {
             arr.pop();
           }
         };
-        obj.pushLazy(asyncRequire(13484, dependencyMap.paths), obj2);
+        obj.pushLazy(asyncRequire(13495, dependencyMap.paths), obj2);
       }} />);
     }
     const features = stateFromStores.features;

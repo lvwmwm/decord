@@ -1,20 +1,20 @@
-// Module ID: 16564
-// Function ID: 16565
+// Module ID: 16577
+// Function ID: 16578
 // Name: guilds
-// Dependencies: [5008, 5053, 5047, 5012, 6585, 1072, 16548, 9051, 9482, 9479, 12010, 2]
+// Dependencies: [5010, 5055, 5049, 5014, 6588, 1072, 16561, 9056, 9489, 9486, 12019, 2]
 
-// Module 16564 (guilds)
-import GuildRecord from "GuildRecord" /* 5008 */;
-import Constants2 from "Constants" /* 6585 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 9051 */;
-import RPCErrorDefault from "RPCError" /* 9479 */;
-import botScopedAccess from "botScopedAccess" /* 9482 */;
-import RPCHelpers from "RPCHelpers" /* 12010 */;
-import GuildMemberStore from "GuildMemberStore" /* 5053 */;
-import GuildRoleStore from "GuildRoleStore" /* 5047 */;
-import GuildStore from "GuildStore" /* 5012 */;
+// Module 16577 (guilds)
+import GuildRecord from "GuildRecord" /* 5010 */;
+import Constants2 from "Constants" /* 6588 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 9056 */;
+import RPCErrorDefault from "RPCError" /* 9486 */;
+import botScopedAccess from "botScopedAccess" /* 9489 */;
+import RPCHelpers from "RPCHelpers" /* 12019 */;
+import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import GuildRoleStore from "GuildRoleStore" /* 5049 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import Constants from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16548 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16561 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

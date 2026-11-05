@@ -1,20 +1,20 @@
-// Module ID: 19820
-// Function ID: 19821
+// Module ID: 19855
+// Function ID: 19856
 // Name: AddAvatarModalActionCreators
-// Dependencies: [19821, 1072, 1252, 7289, 6093, 1113, 8876, 8878, 6879, 19822, 2123, 14488, 2]
+// Dependencies: [19856, 1072, 1252, 7292, 6096, 1113, 8881, 8883, 6882, 19857, 2123, 14501, 2]
 // Exports: handlePressNext, openAddAvatarModal, showSkipAvatarModal
 
-// Module 19820 (AddAvatarModalActionCreators)
+// Module 19855 (AddAvatarModalActionCreators)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 2123 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6093 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6879 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7289 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8876 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8878 */;
-import NUFActionCreators from "NUFActionCreators" /* 14488 */;
-import AddAvatarModalConstants from "AddAvatarModalConstants" /* 19821 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6096 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7292 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8881 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8883 */;
+import NUFActionCreators from "NUFActionCreators" /* 14501 */;
+import AddAvatarModalConstants from "AddAvatarModalConstants" /* 19856 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -83,5 +83,5 @@ export function showSkipAvatarModal(arg0) {
 }
 export function openAddAvatarModal() {
   const obj = ModalActionCreatorsDefault;
-  obj.pushLazy(asyncRequire(19822, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
+  obj.pushLazy(asyncRequire(19857, dependencyMap.paths), {}, ADD_AVATAR_MODAL_KEY);
 }

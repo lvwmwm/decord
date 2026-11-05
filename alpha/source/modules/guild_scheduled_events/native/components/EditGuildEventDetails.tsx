@@ -1,22 +1,22 @@
-// Module ID: 9227
-// Function ID: 9228
+// Module ID: 9234
+// Function ID: 9235
 // Name: EditGuildEventDetails
-// Dependencies: [32, 19, 6990, 4996, 21, 5141, 2171, 1113, 9114, 5150, 1499, 5761, 5768, 2017, 9113, 9134, 9217, 9136, 2]
+// Dependencies: [32, 19, 6993, 4998, 21, 5143, 2171, 1113, 9120, 5152, 1499, 5763, 5770, 2017, 9119, 9140, 9224, 9143, 2]
 // Exports: default
 
-// Module 9227 (EditGuildEventDetails)
+// Module 9234 (EditGuildEventDetails)
 import intl9 from "intl" /* 1113 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2017 */;
 import _modDef2171 from "module_2171" /* 2171 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4996 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5150 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6990 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9113 */;
-import ScheduleUtils from "ScheduleUtils" /* 9114 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4998 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5152 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6993 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9119 */;
+import ScheduleUtils from "ScheduleUtils" /* 9120 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let current, navigation;
@@ -50,7 +50,7 @@ export default function EditGuildEventDetails(guildEvent) {
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f94810 = () => {
+  const f94977 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef2171(scheduledStartTime), recurrenceRule);
   };
@@ -83,8 +83,8 @@ export default function EditGuildEventDetails(guildEvent) {
     }
     return addResult;
   }, items1);
-  [c6, c7] = recurrenceRule(memo.useState(f94810), 2);
-  const tmp4 = recurrenceRule(memo.useState(f94810), 2);
+  [c6, c7] = recurrenceRule(memo.useState(f94977), 2);
+  const tmp4 = recurrenceRule(memo.useState(f94977), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[6])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {

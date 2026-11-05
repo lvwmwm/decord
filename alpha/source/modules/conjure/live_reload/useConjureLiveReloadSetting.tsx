@@ -1,14 +1,14 @@
-// Module ID: 12328
-// Function ID: 12329
+// Module ID: 12335
+// Function ID: 12336
 // Name: useConjureLiveReloadSetting
-// Dependencies: [32, 19, 11042, 504, 12329, 11076, 12330, 2]
+// Dependencies: [32, 19, 11048, 504, 12336, 11085, 12337, 2]
 // Exports: useConjureLiveReloadSetting
 
-// Module 12328 (useConjureLiveReloadSetting)
-import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 11076 */;
+// Module 12335 (useConjureLiveReloadSetting)
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 11085 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 11042 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 11048 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ export function useConjureLiveReloadSetting(arg0) {
       return tmp;
     }, items2);
     if (tmp16) {
-      tmp16 = !tmp4;
+      tmp16 = tmp4;
     }
     const obj3 = { available: tmp16, checked: flag, description: str, changed: null != stateFromStores && null != flag && flag !== enabled, setChecked: tmp6, save: callback };
     if (flag == null) {

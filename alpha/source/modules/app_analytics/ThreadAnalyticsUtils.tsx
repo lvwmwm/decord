@@ -1,17 +1,17 @@
-// Module ID: 8476
-// Function ID: 8477
+// Module ID: 8481
+// Function ID: 8482
 // Name: ThreadAnalyticsUtils
-// Dependencies: [8347, 7617, 4994, 5073, 1072, 1099, 11, 2]
+// Dependencies: [8352, 7619, 4996, 5075, 1072, 1099, 11, 2]
 // Exports: collectThreadMetadata
 
-// Module 8476 (ThreadAnalyticsUtils)
+// Module 8481 (ThreadAnalyticsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import ChannelRecord from "ChannelRecord" /* 4994 */;
-import ThreadMembersStore from "ThreadMembersStore" /* 8347 */;
-import ThreadMessageStore from "ThreadMessageStore" /* 7617 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import ChannelRecord from "ChannelRecord" /* 4996 */;
+import ThreadMembersStore from "ThreadMembersStore" /* 8352 */;
+import ThreadMessageStore from "ThreadMessageStore" /* 7619 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 const THREAD_CHANNEL_TYPES = ChannelRecord.THREAD_CHANNEL_TYPES;

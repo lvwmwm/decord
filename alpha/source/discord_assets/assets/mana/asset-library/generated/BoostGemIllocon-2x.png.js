@@ -1,8 +1,8 @@
-// Module ID: 14380
-// Function ID: 14381
+// Module ID: 14393
+// Function ID: 14394
 // Dependencies: [2]
 
-// Module 14380
+// Module 14393
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BoostGemIllocon-2x.png.js");

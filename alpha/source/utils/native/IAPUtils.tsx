@@ -1,10 +1,10 @@
-// Module ID: 14677
-// Function ID: 14678
+// Module ID: 14690
+// Function ID: 14691
 // Name: IAPUtils
-// Dependencies: [5, 17, 5764, 5829, 1385, 7737, 1072, 1387, 1377, 14678, 14679, 3, 38, 14698, 7733, 12, 1266, 4954, 504, 14699, 1376, 5098, 14700, 2]
+// Dependencies: [5, 17, 5766, 5831, 1385, 7742, 1072, 1387, 1377, 14691, 14692, 3, 38, 14711, 7738, 12, 1266, 4956, 504, 14712, 1376, 5100, 14713, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
-// Module 14677 (IAPUtils)
+// Module 14690 (IAPUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -12,17 +12,17 @@ import _modDef38 from "module_38" /* 38 */;
 import v1 from "v1" /* 1266 */;
 import react_nativeAll from "react-native" /* 1376 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import DeviceUtils from "DeviceUtils" /* 5098 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5829 */;
-import react_native2 from "react-native" /* 14678 */;
-import _mod14679 from "module_14679" /* 14679 */;
-import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 14698 */;
-import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 14699 */;
-import iapProducts from "iapProducts" /* 14700 */;
+import DeviceUtils from "DeviceUtils" /* 5100 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5831 */;
+import react_native2 from "react-native" /* 14691 */;
+import _mod14692 from "module_14692" /* 14692 */;
+import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 14711 */;
+import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 14712 */;
+import iapProducts from "iapProducts" /* 14713 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5764 */;
+import DevSettingsStore from "DevSettingsStore" /* 5766 */;
 import UserStore from "UserStore" /* 1385 */;
-import IAPStore from "IAPStore" /* 7737 */;
+import IAPStore from "IAPStore" /* 7742 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ let _require, arr4, c4, closure_3, closure_4, closure_5;
 let IOS_BUNDLE_ID;
 let metroImportAll;
 let tmp;
-const ProductIds = tmp(7733);
+const ProductIds = tmp(7738);
 function serializePurchaseResponse(originalTransactionDate) {
   let parsed;
   _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
@@ -98,8 +98,8 @@ let obj = function _makeIAPRequest() {
               } else {
                 c6 = 1;
                 const obj5 = { requestJSONString: tmp45, sku: tmp46, appAccountToken: convertToUUID(currentUser.id), andDangerouslyFinishTransactionAutomaticallyIOS: false, useACOM: tmp47 };
-                const requestPurchase = require("module_14679").requestPurchase;
-                require("module_14679");
+                const requestPurchase = require("module_14692").requestPurchase;
+                require("module_14692");
                 c7 = 2;
                 c8 = 1;
                 const obj6 = { value: requestPurchase(obj5), done: false };
@@ -199,7 +199,7 @@ obj = function _purchaseProduct() {
                 c5 = 1;
                 c6 = 1;
                 const obj5 = { value: obj7.clearTransactionIOS(), done: false };
-                obj7 = require("module_14679");
+                obj7 = require("module_14692");
                 return obj5;
               }
             }
@@ -290,7 +290,7 @@ obj = function _restorePurchases() {
               closure_3 = undefined;
               c7 = 1;
               c8 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === c7) {
             if (arg0 === 1) {
@@ -488,7 +488,7 @@ obj = function _fetchStoreFront() {
               c4 = 2;
               c5 = 1;
               const obj6 = { value: obj4.getStorefront(), done: false };
-              obj4 = require("module_14679");
+              obj4 = require("module_14692");
               return obj6;
             } else {
               c5 = 3;
@@ -547,7 +547,7 @@ let _default = null;
 if (PlatformUtils.isIOS()) {
   _default = react_native2.default;
 }
-let items = [_mod14679.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod14679.ErrorCode.E_UNKNOWN];
+let items = [_mod14692.ErrorCode.E_USER_CANCELLED, StoreKitErrors.PAYMENT_CANCELED, _mod14692.ErrorCode.E_UNKNOWN];
 let set = new Set(items);
 new LoggerDefault("IAPUtils.tsx");
 obj = {

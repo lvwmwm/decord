@@ -1,9 +1,9 @@
-// Module ID: 8089
-// Function ID: 8090
+// Module ID: 8094
+// Function ID: 8095
 // Name: GuildTiVPlatformUtils
 // Dependencies: [1113, 2]
 
-// Module 8089 (GuildTiVPlatformUtils)
+// Module 8094 (GuildTiVPlatformUtils)
 import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

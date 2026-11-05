@@ -1,31 +1,31 @@
-// Module ID: 15356
-// Function ID: 15357
+// Module ID: 15369
+// Function ID: 15370
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [17, 2167, 7912, 9618, 502, 1385, 7031, 8019, 10295, 1387, 8535, 1113, 14391, 7549, 7544, 3865, 15354, 11751, 2176, 7556, 9680, 15355, 9616, 9683, 11753, 2]
+// Dependencies: [17, 2167, 7917, 9624, 502, 1385, 7034, 8024, 10303, 1387, 8540, 1113, 14404, 7551, 7546, 3865, 15367, 11759, 2176, 7558, 9686, 15368, 9622, 9689, 11761, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed
 
-// Module 15356 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 15369 (createSocialLayerStorefrontProductDetailsEmbed)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7544 */;
-import StorefrontUtils from "StorefrontUtils" /* 7549 */;
-import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7556 */;
-import Constants from "Constants" /* 8019 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8535 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10295 */;
-import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11751 */;
-import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11753 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14391 */;
-import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15354 */;
-import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 15355 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7546 */;
+import StorefrontUtils from "StorefrontUtils" /* 7551 */;
+import OrbCheckoutUtils from "OrbCheckoutUtils" /* 7558 */;
+import Constants from "Constants" /* 8024 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8540 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10303 */;
+import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11759 */;
+import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11761 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 14404 */;
+import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 15367 */;
+import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 15368 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import UserProfileStore from "UserProfileStore" /* 7912 */;
-import WishlistStore from "WishlistStore" /* 9618 */;
+import UserProfileStore from "UserProfileStore" /* 7917 */;
+import WishlistStore from "WishlistStore" /* 9624 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
-import SKUStore from "SKUStore" /* 7031 */;
+import SKUStore from "SKUStore" /* 7034 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -112,7 +112,7 @@ export function createSocialLayerStorefrontProductDetailsEmbed(arg0) {
                   firstWishlistId = UserProfileStore.getFirstWishlistId(id);
                 }
                 const hasSkuIdResult = null != firstWishlistId && WishlistStore.hasSkuId(firstWishlistId, value.id);
-                const obj4 = { headerText: name, headerColor: colors.headerColor, titleText: socialLayerStorefrontSkuEmbedDetails.title, titleColor: colors.titleColor, subtitleColor: colors.subtitleColor, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, normalPriceText: socialLayerStorefrontEmbedPrice, orbPriceText: StringResult, orbIconUrl: uri, overlayBadgeBackgroundColor: colors.acceptBlurpleLabelBackgroundColor, overlayBadgeTextColor: tmpResult9.getSocialLayerStorefrontEmbedColors(theme).overlayTextColor, backgroundColor: tmpResult10.getSocialLayerStorefrontEmbedColors(theme).backgroundColor, showWishlistButton: true, wishlistButtonIconUrl: Image.resolveAssetSource(importDefault(hasSkuIdResult ? 9616 : 9683)).uri, wishlistButtonAccessibilityLabel: string2(hasSkuIdResult ? t["19b82d"] : t.Hcgz2S), embedCanBeTapped: true, canBeAccepted: false, type: InviteTypes.GUILD, extendedType: CodedLinkExtendedType.SOCIAL_LAYER_STOREFRONT_EMBED, skuId };
+                const obj4 = { headerText: name, headerColor: colors.headerColor, titleText: socialLayerStorefrontSkuEmbedDetails.title, titleColor: colors.titleColor, subtitleColor: colors.subtitleColor, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, normalPriceText: socialLayerStorefrontEmbedPrice, orbPriceText: StringResult, orbIconUrl: uri, overlayBadgeBackgroundColor: colors.acceptBlurpleLabelBackgroundColor, overlayBadgeTextColor: tmpResult9.getSocialLayerStorefrontEmbedColors(theme).overlayTextColor, backgroundColor: tmpResult10.getSocialLayerStorefrontEmbedColors(theme).backgroundColor, showWishlistButton: true, wishlistButtonIconUrl: Image.resolveAssetSource(importDefault(hasSkuIdResult ? 9622 : 9689)).uri, wishlistButtonAccessibilityLabel: string2(hasSkuIdResult ? t["19b82d"] : t.Hcgz2S), embedCanBeTapped: true, canBeAccepted: false, type: InviteTypes.GUILD, extendedType: CodedLinkExtendedType.SOCIAL_LAYER_STOREFRONT_EMBED, skuId };
                 const merged = Object.assign(baseColors);
                 ({ titleIconUrl: obj14.titleIconUrl, subtitle: obj14.subtitle } = socialLayerStorefrontSkuEmbedDetails);
                 ({ foregroundImageUrl: obj14.foregroundImageUrl, backgroundImageUrl: obj14.backgroundImageUrl, foregroundImageUrl: obj14.thumbnailUrl } = socialLayerStorefrontSkuEmbedDetails);
@@ -123,7 +123,7 @@ export function createSocialLayerStorefrontProductDetailsEmbed(arg0) {
                 }
                 uri = undefined;
                 if (null != orbPriceFromPrices) {
-                  uri = Image.resolveAssetSource(tmp4(9680)).uri;
+                  uri = Image.resolveAssetSource(tmp4(9686)).uri;
                 }
                 ({ badgeText: obj14.overlayBadgeText, badgeIconUrl: obj14.overlayBadgeIconUrl } = socialLayerStorefrontSkuEmbedDetails);
                 tmpResult9 = socialLayerStorefrontEmbedColors;

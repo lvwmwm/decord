@@ -1,23 +1,23 @@
-// Module ID: 18949
-// Function ID: 18950
+// Module ID: 18980
+// Function ID: 18981
 // Name: ConjureFrameUpdateBar
-// Dependencies: [19, 17, 6981, 18945, 21, 5141, 575, 7121, 5761, 1113, 3995, 12421, 11113, 2]
+// Dependencies: [19, 17, 6984, 18976, 21, 5143, 575, 7124, 5763, 1113, 3995, 12428, 11122, 2]
 // Exports: default
 
-// Module 18949 (ConjureFrameUpdateBar)
+// Module 18980 (ConjureFrameUpdateBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Pressables from "Pressables" /* 7121 */;
-import restartFrames from "restartFrames" /* 11113 */;
-import RefreshIcon2 from "RefreshIcon" /* 12421 */;
-import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 18945 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Pressables from "Pressables" /* 7124 */;
+import restartFrames from "restartFrames" /* 11122 */;
+import RefreshIcon2 from "RefreshIcon" /* 12428 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 18976 */;
 import react from "react" /* 19 */;
-import FramesStore from "FramesStore" /* 6981 */;
+import FramesStore from "FramesStore" /* 6984 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

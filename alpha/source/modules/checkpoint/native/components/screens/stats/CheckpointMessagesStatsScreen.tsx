@@ -1,20 +1,20 @@
-// Module ID: 13881
-// Function ID: 13882
+// Module ID: 13893
+// Function ID: 13894
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [17, 13657, 6201, 21, 5141, 575, 504, 6572, 1113, 3219, 3187, 13864, 13871, 13882, 13883, 8784, 13866, 13878, 13879, 13880, 2]
+// Dependencies: [17, 13668, 6204, 21, 5143, 575, 504, 6574, 1113, 3219, 3187, 13876, 13883, 13894, 13895, 8789, 13878, 13890, 13891, 13892, 2]
 // Exports: default
 
-// Module 13881 (CheckpointMessagesStatsScreen)
+// Module 13893 (CheckpointMessagesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6572 */;
-import ChatIcon from "ChatIcon" /* 8784 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13880 */;
-import CheckpointStore from "CheckpointStore" /* 13657 */;
+import CheckpointConstants from "CheckpointConstants" /* 6204 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6574 */;
+import ChatIcon from "ChatIcon" /* 8789 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13892 */;
+import CheckpointStore from "CheckpointStore" /* 13668 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -108,9 +108,9 @@ export default function CheckpointMessagesStatsScreen() {
   }
   const obj4 = { style: tmp.container, children: items2 };
   const obj5 = { style: tmp.imageContainer, children: metroRequire(tmp12Result4, obj6) };
-  obj6 = { animatedUri: tmp12(13882), staticUri: tmp12(13883), style: tmp.image };
-  const tmp12Result = tmp12(13864);
-  tmp12Result4 = tmp12(13871);
+  obj6 = { animatedUri: tmp12(13894), staticUri: tmp12(13895), style: tmp.image };
+  const tmp12Result = tmp12(13876);
+  tmp12Result4 = tmp12(13883);
   items2 = [metroRequire(View, obj5), ];
   const obj8 = { style: tmp.title, children: items3 };
   items3 = [, ];
@@ -118,21 +118,21 @@ export default function CheckpointMessagesStatsScreen() {
   const obj9 = { size: "xs", color: CHECKPOINT_PRIMARY };
   items3[0] = metroRequire(ChatIcon.ChatIcon, obj9);
   const obj10 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp12Result5 = tmp12(13866);
+  const tmp12Result5 = tmp12(13878);
   items3[1] = metroRequire(tmp12Result5, obj10);
   items4 = [metroImportDefault(View, obj8), , ];
   if (roundResult <= 0 && null != stateFromStores1) {
     const obj11 = { value: stateFromStores1 };
-    tmp14Result = tmp14(tmp12(13878), obj11);
+    tmp14Result = tmp14(tmp12(13890), obj11);
   } else {
     const _HermesInternal = HermesInternal;
-    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp12(13879), obj13) };
+    const obj12 = { accessible: true, accessibilityLabel: "" + roundResult + " " + stringResult, style: tmp.number, children: metroRequire(tmp12(13891), obj13) };
     obj13 = { end: roundResult };
     tmp14Result = tmp14(tmp17, obj12);
   }
   items4[1] = tmp14Result;
   const obj14 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatToPlainStringResult1 };
-  const tmp12Result6 = tmp12(13866);
+  const tmp12Result6 = tmp12(13878);
   if (roundResult <= 0 && null != stateFromStores1) {
     const intl5 = tmp2(1113).intl;
     const formatToPlainString = intl5.formatToPlainString;

@@ -1,23 +1,23 @@
-// Module ID: 19584
-// Function ID: 19585
+// Module ID: 19619
+// Function ID: 19620
 // Name: useControlsButtons
-// Dependencies: [19, 2135, 11409, 1072, 21, 19585, 19588, 19594, 19596, 19598, 19600, 19602, 19607, 19491, 1624, 11410, 19608, 504, 1652, 14046, 8982, 2]
+// Dependencies: [19, 2135, 11417, 1072, 21, 19620, 19623, 19629, 19631, 19633, 19635, 19637, 19642, 19526, 1624, 11418, 19643, 504, 1652, 14059, 8987, 2]
 // Exports: default
 
-// Module 19584 (useControlsButtons)
+// Module 19619 (useControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import VoicePanelMicButton from "VoicePanelMicButton" /* 19585 */;
-import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19588 */;
-import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19594 */;
-import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19596 */;
-import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19598 */;
-import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19600 */;
-import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19602 */;
-import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19607 */;
+import VoicePanelMicButton from "VoicePanelMicButton" /* 19620 */;
+import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19623 */;
+import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19629 */;
+import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19631 */;
+import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19633 */;
+import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19635 */;
+import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19637 */;
+import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19642 */;
 import react_mod from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11409 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11417 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

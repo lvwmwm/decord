@@ -1,11 +1,11 @@
-// Module ID: 5170
-// Function ID: 5171
+// Module ID: 5172
+// Function ID: 5173
 // Name: HexagonCampaignExperiment
-// Dependencies: [1449, 5168, 2]
+// Dependencies: [1449, 5170, 2]
 // Exports: getIsHexagonCampaignEnabled, useIsHexagonCampaignEnabled, useIsHexagonCampaignQuestHomeHeaderEnabled, useIsHexagonCampaignQuestHomeRedirectEnabled
 
-// Module 5170 (HexagonCampaignExperiment)
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5168 */;
+// Module 5172 (HexagonCampaignExperiment)
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5170 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

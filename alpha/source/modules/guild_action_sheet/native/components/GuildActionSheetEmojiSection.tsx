@@ -1,26 +1,26 @@
-// Module ID: 16054
-// Function ID: 16055
+// Module ID: 16067
+// Function ID: 16068
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 6931, 1192, 1385, 1072, 21, 5141, 575, 504, 1493, 5732, 2176, 7462, 7487, 5382, 9935, 5148, 16055, 1113, 7121, 1187, 16056, 5384, 5385, 5845, 5851, 7437, 7438, 1411, 2]
+// Dependencies: [32, 19, 17, 6934, 1192, 1385, 1072, 21, 5143, 575, 504, 1493, 5734, 2176, 7465, 7490, 5384, 9941, 5150, 16068, 1113, 7124, 1187, 16069, 5386, 5387, 5848, 5854, 7440, 7441, 1411, 2]
 // Exports: default
 
-// Module 16054 (GuildActionSheetEmojiSection)
+// Module 16067 (GuildActionSheetEmojiSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import HapticUtils from "HapticUtils" /* 5384 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5385 */;
-import ToastUtils from "ToastUtils" /* 5845 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9935 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import HapticUtils from "HapticUtils" /* 5386 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5387 */;
+import ToastUtils from "ToastUtils" /* 5848 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9941 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6931 */;
+import EmojiStore from "EmojiStore" /* 6934 */;
 import ThemeStore_mod from "ThemeStore" /* 1192 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

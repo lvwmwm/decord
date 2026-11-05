@@ -1,12 +1,12 @@
-// Module ID: 8285
-// Function ID: 8286
+// Module ID: 8290
+// Function ID: 8291
 // Name: GoogleWalletVerificationScreen
-// Dependencies: [5, 32, 19, 17, 21, 1499, 6861, 8144, 8109, 6675, 6680, 1113, 3223, 8112, 8113, 6162, 5761, 6902, 5768, 6864, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1499, 6864, 8149, 8114, 6678, 6683, 1113, 3223, 8117, 8118, 6165, 5763, 6905, 5770, 6867, 2]
 // Exports: default
 
-// Module 8285 (GoogleWalletVerificationScreen)
+// Module 8290 (GoogleWalletVerificationScreen)
 import react_native from "react-native" /* 17 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6864 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6867 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -311,7 +311,7 @@ export default function GoogleWalletVerificationScreen(onClose) {
       onPress() {
           const trackAgeVerificationModalClicked = AgeVerificationAnalyticsUtils.trackAgeVerificationModalClicked;
           AgeVerificationAnalyticsUtils;
-          const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_PRIMARY, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.METHOD_SELECT);
+          const result = trackAgeVerificationModalClicked(modalSessionId, AgeVerificationAnalyticsUtils.AgeVerificationModalVersion.EXPRESSIVE_V2, AgeVerificationAnalyticsUtils.AgeVerificationModalCta.METHOD_SELECT);
           callback1();
         }
     };

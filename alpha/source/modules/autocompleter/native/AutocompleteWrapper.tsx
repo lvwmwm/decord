@@ -1,40 +1,40 @@
-// Module ID: 14162
-// Function ID: 14163
+// Module ID: 14175
+// Function ID: 14176
 // Name: AutocompleteWrapper
-// Dependencies: [32, 19, 17, 8486, 6931, 6703, 6972, 1072, 6170, 10403, 6171, 10487, 1388, 21, 8822, 7344, 10498, 5141, 1377, 575, 14163, 1493, 5743, 5722, 504, 5732, 11232, 14170, 14171, 4966, 7200, 10486, 14172, 10402, 7033, 10119, 14173, 7840, 13973, 2121, 7965, 1625, 5894, 9288, 9761, 9289, 14174, 14175, 9935, 8741, 14011, 1652, 14176, 5817, 14183, 5761, 1113, 7430, 8323, 14184, 14185, 2]
+// Dependencies: [32, 19, 17, 8491, 6934, 6706, 6975, 1072, 6173, 10409, 6174, 10493, 1388, 21, 8827, 7347, 10504, 5143, 1377, 575, 14176, 1493, 5745, 5724, 504, 5734, 11240, 14183, 14184, 4968, 7203, 10492, 14185, 10408, 7036, 10127, 14186, 7845, 13986, 2121, 7970, 1625, 5897, 9295, 9767, 9296, 14187, 14188, 9941, 8746, 14024, 1652, 14189, 5819, 14196, 5763, 1113, 7433, 8328, 14197, 14198, 2]
 
-// Module 14162 (AutocompleteWrapper)
+// Module 14175 (AutocompleteWrapper)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import Server from "Server" /* 2121 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5817 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6170 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 7033 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7344 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8822 */;
-import GameSearchSession from "GameSearchSession" /* 9288 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9935 */;
-import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10402 */;
-import AutocompleteOptions from "AutocompleteOptions" /* 10486 */;
-import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10487 */;
-import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10498 */;
-import Autocomplete from "Autocomplete" /* 14163 */;
-import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 14174 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5819 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5897 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6173 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 7036 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7347 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8827 */;
+import GameSearchSession from "GameSearchSession" /* 9295 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9941 */;
+import autocompleter_AutocompleteUtils from "autocompleter/AutocompleteUtils" /* 10408 */;
+import AutocompleteOptions from "AutocompleteOptions" /* 10492 */;
+import channel_text_area_ChannelAutocompleteConstants from "channel_text_area/ChannelAutocompleteConstants" /* 10493 */;
+import TimestampSuggestionUtils from "TimestampSuggestionUtils" /* 10504 */;
+import Autocomplete from "Autocomplete" /* 14176 */;
+import ChannelAutocompleteAnalytics from "ChannelAutocompleteAnalytics" /* 14187 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8486 */;
-import EmojiStore from "EmojiStore" /* 6931 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6703 */;
-import StickersStore from "StickersStore" /* 6972 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8491 */;
+import EmojiStore from "EmojiStore" /* 6934 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
+import StickersStore from "StickersStore" /* 6975 */;
 import Constants from "Constants" /* 1072 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10403 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6171 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10409 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6174 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -56,7 +56,7 @@ let map1;
 let metroRequire;
 let tmp;
 let unpackModuleId;
-const application_commands_ApplicationCommandUtils = tmp(14011);
+const application_commands_ApplicationCommandUtils = tmp(14024);
 function getItemKey(type, arg1) {
   type = type.type;
   if (unpackModuleId.USER === type) {
@@ -165,7 +165,7 @@ class ACWrapper {
     let tmp37;
     let tmp45;
     let tmp92Result4;
-    const f106239 = (arg0) => {
+    const f106415 = (arg0) => {
       closure_0 = arg0;
       if (arg0 > 0) {
         let tmp = commandsDisabled;
@@ -598,7 +598,7 @@ class ACWrapper {
       tmp33[1](autocompleteType);
       let tmp32Result = tmp32(null);
     }
-    const items7 = [first2, obj5.useCallback(f106239, [])];
+    const items7 = [first2, obj5.useCallback(f106415, [])];
     [tmp37, c39] = keyboardType(items7, 2);
     keyboardType(items7, 2);
     const tmp11Result9 = keyboardType(obj5.useState(null), 2);
@@ -609,7 +609,7 @@ class ACWrapper {
       let tmp42 = tmp11Result10[1](autocompleteType);
       tmp11Result9[1](null);
     }
-    const items8 = [first3, obj5.useCallback(f106239, [])];
+    const items8 = [first3, obj5.useCallback(f106415, [])];
     [tmp45, c40] = keyboardType(items8, 2);
     keyboardType(items8, 2);
     const tmp11Result12 = keyboardType(obj5.useState(null), 2);
@@ -621,7 +621,7 @@ class ACWrapper {
       let tmp50 = tmp11Result13[1](autocompleteType);
       tmp48(null);
     }
-    const items9 = [first4, obj5.useCallback(f106239, [])];
+    const items9 = [first4, obj5.useCallback(f106415, [])];
     const tmp11Result14 = keyboardType(items9, 2);
     first5 = tmp11Result14[0];
     closure_42 = tmp11Result14[1];
@@ -967,7 +967,7 @@ class ACWrapper {
           tmp18 = autocompleteResultText;
           tmp19 = tmp13;
           if (null != applicationCommandManager) {
-            const tmp8Result = tmp8(8741);
+            const tmp8Result = tmp8(8746);
             const result = tmp8Result.formatTimestampMention(type.mention);
             tmp18 = autocompleteResultText;
             tmp19 = tmp13;
@@ -1049,7 +1049,7 @@ class ACWrapper {
         if (type.type === unpackModuleId.GAME_MENTION) {
           const getGameSearchSession = GameSearchSession.getGameSearchSession;
           GameSearchSession;
-          const gameSearchSession = getGameSearchSession(tmp2(9761).GameSearchSurface.CHAT_MENTION, tmp2(9289).GameSearchFilterGroup.DEFAULT);
+          const gameSearchSession = getGameSearchSession(tmp2(9767).GameSearchSurface.CHAT_MENTION, tmp2(9296).GameSearchFilterGroup.DEFAULT);
           gameSearchSession.select(type.game.id);
         }
         let num = autocompleteSelectionStart;

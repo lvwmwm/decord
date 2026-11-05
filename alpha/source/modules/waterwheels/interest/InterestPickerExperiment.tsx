@@ -1,10 +1,10 @@
-// Module ID: 18681
-// Function ID: 18682
+// Module ID: 18711
+// Function ID: 18712
 // Name: InterestPickerExperiment
 // Dependencies: [19, 1449, 2]
 // Exports: isInterestPickerExperimentEnabled, useInterestPickerGameList
 
-// Module 18681 (InterestPickerExperiment)
+// Module 18711 (InterestPickerExperiment)
 import react_mod from "react" /* 19 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
@@ -23,9 +23,10 @@ export function isInterestPickerExperimentEnabled(nuf_interest_picker_step) {
     return false;
   }
 }
-export function useInterestPickerGameList(_location) {
-  react = _location;
-  const items = [_location];
+export function useInterestPickerGameList(InterestPickerStep) {
+  let _location;
+  react = InterestPickerStep;
+  const items = [InterestPickerStep];
   return react.useMemo(() => {
     try {
       const obj = { location: _location };

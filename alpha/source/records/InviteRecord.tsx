@@ -1,9 +1,9 @@
-// Module ID: 8341
-// Function ID: 8342
+// Module ID: 8346
+// Function ID: 8347
 // Name: InviteRecord
 // Dependencies: [1400, 1399, 2171, 2]
 
-// Module 8341 (InviteRecord)
+// Module 8346 (InviteRecord)
 import _modDef2171 from "module_2171" /* 2171 */;
 import Record from "Record" /* 1400 */;
 import UserRecord from "UserRecord" /* 1399 */;

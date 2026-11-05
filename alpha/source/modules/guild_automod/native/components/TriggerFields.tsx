@@ -1,17 +1,17 @@
-// Module ID: 19971
-// Function ID: 19972
+// Module ID: 20007
+// Function ID: 20008
 // Name: TriggerFields
-// Dependencies: [19, 21, 19955, 5761, 1113, 19972, 19973, 19977, 19981, 2]
+// Dependencies: [19, 21, 19991, 5763, 1113, 20008, 20009, 20013, 20017, 2]
 // Exports: default
 
-// Module 19971 (TriggerFields)
+// Module 20007 (TriggerFields)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19955 */;
-import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 19972 */;
-import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 19973 */;
-import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 19977 */;
-import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 19981 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19991 */;
+import MentionSpamTriggerFieldsDefault from "MentionSpamTriggerFields" /* 20008 */;
+import DefaultKeywordListTriggerFieldsDefault from "DefaultKeywordListTriggerFields" /* 20009 */;
+import ApplicationTriggerFieldsDefault from "ApplicationTriggerFields" /* 20013 */;
+import KeywordFilterTriggerFieldsDefault from "KeywordFilterTriggerFields" /* 20017 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ export default function TriggerFields(onValidityChange) {
   onValidityChange = onValidityChange.onValidityChange;
   const obj = AutomodRuleUtils;
   if (obj.isRuleMLSpamFilter(rule)) {
-    const Text = tmp(5761).Text;
+    const Text = tmp(5763).Text;
     const intl = tmp(1113).intl;
     tmp3 = <Text variant="body-md/normal" color="text-default">{intl.string(intl2.t["1YgPj/"])}</Text>;
   } else {

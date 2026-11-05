@@ -1,94 +1,121 @@
 // Module ID: 13393
 // Function ID: 13394
-// Dependencies: [377, 41, 42]
+// Dependencies: [13282, 13280, 13281]
+// Exports: supportsDOMError, supportsDOMException, supportsErrorEvent, supportsNativeFetch, supportsReferrerPolicy, supportsReportingObserver
 
 // Module 13393
-import _readOnlyError from "_readOnlyError" /* 377 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod13280 from "module_13280" /* 13280 */;
+import _mod13282 from "module_13282" /* 13282 */;
 
-class LRUMap {
-  constructor(_maxSize) {
-    _classCallCheck(this, LRUMap);
-    this._maxSize = _maxSize;
-    this._cache = new Map();
-    new Map();
+function supportsFetch() {
+  if ("fetch" in _mod13282.GLOBAL_OBJ) {
+    try {
+      const _Headers = Headers;
+      const self = this;
+      const headers = new Headers();
+      const _Request = Request;
+      const self2 = this;
+      const request = new Request("http://www.example.com");
+      const _Response = Response;
+      const self3 = this;
+      const response = new Response();
+      return true;
+    } catch (err) {
+      return false;
+    }
+  } else {
+    return false;
   }
 }
-let items = [, , , , , , ];
-const obj = {
-  key: "size",
-  get() {
-    return this._cache.size;
+function isNativeFunction(arg0) {
+  let isMatch = arg0;
+  if (isMatch) {
+    const obj = /^function\s+\w+\(\)\s+\{\s+\[native code\]\s+\}$/;
+    isMatch = obj.test(arg0.toString());
   }
-};
-items[0] = obj;
-items[1] = {
-  key: "get",
-  value: function get(arg0) {
-    const self = this;
-    const _cache = this._cache;
-    const value = _cache.get(arg0);
-    if (undefined !== value) {
-      const _cache2 = self._cache;
-      _cache2.delete(arg0);
-      const _cache3 = self._cache;
-      const result = _cache3.set(arg0, value);
-      return value;
-    }
-  }
-};
-items[2] = {
-  key: "set",
-  value: function set(arg0, arg1) {
-    let _cache;
-    let _cache2;
-    const self = this;
-    if (this._cache.size >= this._maxSize) {
-      ({ _cache, _cache: _cache2 } = self);
-      const _delete = _cache.delete;
-      const iter = _cache2.keys();
-      _delete(iter.next().value);
-    }
-    const _cache3 = self._cache;
-    const result = _cache3.set(arg0, arg1);
-  }
-};
-items[3] = {
-  key: "remove",
-  value: function remove(arg0) {
-    const _cache = this._cache;
-    const value = _cache.get(arg0);
-    if (value) {
-      const _cache2 = this._cache;
-      _cache2.delete(arg0);
-    }
-    return value;
-  }
-};
-items[4] = {
-  key: "clear",
-  value: function clear() {
-    const _cache = this._cache;
-    _cache.clear();
-  }
-};
-items[5] = {
-  key: "keys",
-  value: function keys() {
-    const _cache = this._cache;
-    return Array.from(_cache.keys());
-  }
-};
-items[6] = {
-  key: "values",
-  value: function values() {
-    const items = [];
-    const _cache = this._cache;
-    const item = _cache.forEach((item) => items.push(item));
-    return items;
-  }
-};
-const LRUMap_export = _createClass(LRUMap, items);
+  return isMatch;
+}
 
-export { LRUMap_export as LRUMap };
+export { isNativeFunction };
+export function supportsDOMError() {
+  try {
+    const self = this;
+    const dOMError = new globalThis.DOMError("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+export function supportsDOMException() {
+  try {
+    const self = this;
+    const dOMException = new globalThis.DOMException("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+export function supportsErrorEvent() {
+  try {
+    const self = this;
+    const errorEvent = new globalThis.ErrorEvent("");
+    return true;
+  } catch (err) {
+    return false;
+  }
+}
+export { supportsFetch };
+export function supportsNativeFetch() {
+  if (typeof globalThis.EdgeRuntime === "string") {
+    return true;
+  } else if (supportsFetch()) {
+    const tmp = isNativeFunction;
+    if (isNativeFunction(_mod13282.GLOBAL_OBJ.fetch)) {
+      return true;
+    } else {
+      let flag2 = false;
+      const _document = tmp2(13282).GLOBAL_OBJ.document;
+      if (_document) {
+        if (typeof _document.createElement === "function") {
+          try {
+            const element = <iframe />;
+            element.hidden = true;
+            const head = _document.head;
+            head.appendChild(element);
+            const _fetch = element.contentWindow && tmp5.contentWindow.fetch;
+            if (_fetch) {
+              flag2 = tmp(tmp5.contentWindow.fetch);
+            }
+            const head2 = _document.head;
+            head2.removeChild(element);
+          } catch (tmp10) {
+            if (_mod13280.DEBUG_BUILD) {
+              const logger = tmp2(13281).logger;
+              logger.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", tmp10);
+            }
+          }
+        }
+      }
+      return flag2;
+    }
+  } else {
+    return false;
+  }
+}
+export function supportsReferrerPolicy() {
+  if (supportsFetch()) {
+    try {
+      const _Request = Request;
+      const self = this;
+      const request = new Request("_", { referrerPolicy: "origin" });
+      return true;
+    } catch (err) {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
+export function supportsReportingObserver() {
+  return "ReportingObserver" in _mod13282.GLOBAL_OBJ;
+}

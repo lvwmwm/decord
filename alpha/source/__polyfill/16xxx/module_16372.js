@@ -1,76 +1,58 @@
 // Module ID: 16372
 // Function ID: 16373
-// Dependencies: [16373, 16374, 16375, 16412, 16413, 16429, 16430]
+// Dependencies: [16289, 16373]
+// Exports: getSupportedCurrencies
 
 // Module 16372
-import _mod16373 from "module_16373" /* 16373 */;
-import _mod16375 from "module_16375" /* 16375 */;
-import isForced from "isForced" /* 16412 */;
+import _mod16289 from "module_16289" /* 16289 */;
+import currencies2 from "currencies" /* 16373 */;
 
-
-export default (dontCallGetSet, obj) => {
-  let _global;
-  let stat;
-  let target;
-  let tmp5;
-  ({ target, global: _global, stat } = dontCallGetSet);
-  const tmp3 = _mod16373;
-  if (_global) {
-    tmp5 = tmp3;
-  } else {
-    let tmp4 = tmp3[target];
-    if (stat) {
-      if (!tmp4) {
-        tmp4 = tmp(16374)(target, {});
+function isSupportedCurrency(arr3, locale) {
+  let str = locale;
+  if (undefined === locale) {
+    str = "en";
+  }
+  try {
+    const obj = { style: "currency", currencyDisplay: "name", currency: arr3 };
+    const memoizedNumberFormat = _mod16289.createMemoizedNumberFormat(str, obj);
+    const str2 = memoizedNumberFormat.format(123);
+    if (str2.substring(0, 3) !== arr3) {
+      if (str2.substring(str2.length - 3) !== arr3) {
+        return true;
       }
-      tmp5 = tmp4;
-    } else {
-      tmp5 = tmp4 && tmp(16373)[target].prototype;
+    }
+    return false;
+  } catch (err) {
+  }
+}
+
+export function getSupportedCurrencies(locale) {
+  let num;
+  const items = [];
+  const currencies = currencies2.currencies;
+  for (let num = 0; num < currencies.length; num = num + 1) {
+    let arr3 = currencies[num];
+    if (3 === arr3.length) {
+      if (isSupportedCurrency(arr3, locale)) {
+        let arr = items.push(arr3);
+      }
+    } else if (5 === arr3.length) {
+      if ("~" === arr3[3]) {
+        let indexOf = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
+        let index = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[2]);
+        let indexOf2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf;
+        let index1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".indexOf(arr3[4]);
+        if (index <= index1) {
+          do {
+            let sum = arr3.substring(0, 2) + "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[index];
+            if (isSupportedCurrency(sum, locale)) {
+              let arr2 = items.push(sum);
+            }
+            index = index + 1;
+          } while (index <= index1);
+        }
+      }
     }
   }
-  if (tmp5) {
-    for (const key10024 in obj) {
-      let tmp8;
-      let tmp22 = obj[key10024];
-      let tmp21 = key10024;
-      if (dontCallGetSet.dontCallGetSet) {
-        obj = _mod16375;
-        let iter = obj.f(tmp5, key10024);
-        let value = iter && iter.value;
-        tmp8 = value;
-      } else {
-        tmp8 = tmp5[key10024];
-      }
-      let tmp11 = require;
-      let sum = key10024;
-      let tmp13 = isForced;
-      if (!_global) {
-        let str4 = "#";
-        if (stat) {
-          str4 = ".";
-        }
-        sum = target + str4 + key10024;
-      }
-      if (!tmp13(sum, dontCallGetSet.forced)) {
-        if (undefined !== tmp8) {
-          if (typeof tmp22 === typeof tmp8) {
-            continue;
-          } else {
-            let tmp23 = tmp11(16413)(tmp22, tmp8);
-          }
-        }
-        continue;
-      }
-      let sham = dontCallGetSet.sham;
-      if (!sham) {
-        let sham2 = tmp8 && tmp8.sham;
-        sham = sham2;
-      }
-      if (sham) {
-        let tmp15 = tmp11(16429)(tmp22, "sham", true);
-      }
-      let tmp20 = tmp11(16430)(tmp5, tmp21, tmp22, dontCallGetSet);
-      continue;
-    }
-  }
-};
+  return items;
+}

@@ -1,9 +1,9 @@
-// Module ID: 13620
-// Function ID: 13621
+// Module ID: 13631
+// Function ID: 13632
 // Name: TabsExperiment
 // Dependencies: [1449, 2]
 
-// Module 13620 (TabsExperiment)
+// Module 13631 (TabsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

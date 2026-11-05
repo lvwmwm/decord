@@ -1,11 +1,11 @@
-// Module ID: 13221
-// Function ID: 13222
+// Module ID: 13228
+// Function ID: 13229
 // Name: useConjureTemplatePrepare
-// Dependencies: [19, 11028, 2]
+// Dependencies: [19, 11034, 2]
 // Exports: default
 
-// Module 13221 (useConjureTemplatePrepare)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11028 */;
+// Module 13228 (useConjureTemplatePrepare)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

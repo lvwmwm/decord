@@ -1,13 +1,13 @@
-// Module ID: 11429
-// Function ID: 11430
+// Module ID: 11437
+// Function ID: 11438
 // Name: VoicePanelDockConstants
-// Dependencies: [11411, 11430, 575, 2]
+// Dependencies: [11419, 11438, 575, 2]
 // Exports: getDockInset, getVoicePanelDockButtonsTop, getVoicePanelDockHeight
 
-// Module 11429 (VoicePanelDockConstants)
+// Module 11437 (VoicePanelDockConstants)
 import nativeDefault from "native" /* 575 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
-import GestureConstants from "GestureConstants" /* 11430 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11419 */;
+import GestureConstants from "GestureConstants" /* 11438 */;
 import size from "module_2" /* 2 */;
 
 let tmp10;
@@ -83,6 +83,7 @@ export function getVoicePanelDockButtonsTop(arg0) {
   return arg0 - diff - 4;
 }
 export const DOCK_GAP = PX_12;
+export const DOCK_FADE_TIMING = { duration: 200 };
 export const DOCK_DRAG_HANDLE_WIDTH = 48;
 export const DOCK_DRAG_HANDLE_TOP = PX_8;
 export const DOCK_PULL_SNAP_DISTANCE = 160;

@@ -1,113 +1,148 @@
 // Module ID: 13098
 // Function ID: 13099
-// Dependencies: [13055, 13099]
+// Dependencies: [13099, 13100, 13101, 13102]
 
 // Module 13098
-import tokenize from "tokenize" /* 13055 */;
-import tokenize2 from "tokenize" /* 13099 */;
+import _mod13100 from "module_13100" /* 13100 */;
+import module_13099_mod from "module_13099" /* 13099 */;
+import module_13101 from "module_13101" /* 13101 */;
+import size_mod from "module_13102" /* 13102 */;
 
-let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.leftCurlyBracketOrSemicolon, true);
-}
-function isDeclarationBlockAtrule() {
-  const scanner = this.scanner;
-  let lookupTypeResult = scanner.lookupType(1);
-  let num = 1;
-  if (lookupTypeResult) {
-    while (lookupTypeResult !== RightCurlyBracket) {
-      if (lookupTypeResult !== LeftCurlyBracket) {
-        if (lookupTypeResult !== AtKeyword) {
-          let sum = num + 1;
-          let scanner2 = this.scanner;
-          lookupTypeResult = scanner2.lookupType(sum);
-          num = sum;
-        }
-      }
-      let flag = false;
-      return false;
-    }
-    return true;
+let module_13099;
+let obj5;
+let size;
+function patchDictionary(descriptors, descriptors1) {
+  const obj = {};
+  for (const key10004 in descriptors) {
+    let syntax = descriptors[key10004].syntax || descriptors[key10004];
+    obj[key10004] = syntax;
+    continue;
   }
-  return false;
-}
-const AtKeyword = tokenize.TYPE.AtKeyword;
-const Semicolon = tokenize.TYPE.Semicolon;
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
-const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
-let obj = {
-  name: "Atrule",
-  structure: obj2,
-  parse() {
-    let AtrulePrelude;
-    let parseWithFallback;
-    let tmp13;
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    this.eat(AtKeyword);
-    const scanner = this.scanner;
-    const str = scanner.substrToCursor(tokenStart + 1);
-    const formatted = str.toLowerCase();
-    const scanner2 = this.scanner;
-    scanner2.skipSC();
-    let tmp7 = null;
-    const tmp4 = false === this.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket && self.scanner.tokenType !== Semicolon;
-    if (tmp4) {
-      let callResult;
-      if (self.parseAtrulePrelude) {
-        ({ AtrulePrelude, parseWithFallback } = self);
-        const element = parseWithFallback(AtrulePrelude.bind(self, str), consumeRaw);
-        callResult = element;
-        const tmp10 = "AtrulePrelude" === element.type && null === element.children.head;
-        if (tmp10) {
-          callResult = null;
+  for (const key10011 in descriptors1) {
+    let syntax3 = descriptors1[key10011].syntax;
+    if (key10011 in descriptors) {
+      if (syntax3) {
+        let syntax2;
+        if (re0.test(descriptors1[key10011].syntax)) {
+          let str2 = descriptors1[key10011].syntax;
+          let text = `${obj[key10011]} `;
+          syntax2 = `${obj[key10011]} ${str2.trim()}`;
+        } else {
+          syntax2 = descriptors1[key10011].syntax;
         }
+        obj[key10011] = syntax2;
+        continue;
       } else {
-        callResult = consumeRaw.call(self, self.scanner.tokenIndex);
+        delete obj[tmp5];
+        continue;
       }
-      const scanner3 = self.scanner;
-      scanner3.skipSC();
-      tmp7 = callResult;
-    }
-    const tokenType = self.scanner.tokenType;
-    if (Semicolon === tokenType) {
-      const iter = self.scanner;
-      iter.next();
-      tmp13 = null;
+      continue;
     } else {
-      tmp13 = null;
-      if (LeftCurlyBracket === tokenType) {
-        const atrule = self.atrule;
-        if (atrule.hasOwnProperty(formatted)) {
-          let callResult1;
-          if (typeof self.atrule[formatted].block === "function") {
-            const block = self.atrule[formatted].block;
-            callResult1 = block.call(self);
-          }
-          tmp13 = callResult1;
+      if (!syntax3) {
+        continue;
+      } else {
+        let str = descriptors1[key10011].syntax;
+        obj[key10011] = str.replace(re0, "");
+        continue;
+      }
+      continue;
+    }
+    continue;
+  }
+  return obj;
+}
+const re0 = /^\s*\|\s*/;
+let obj = { types: patchDictionary(module_13099, _mod13100.syntaxes), atrules: obj5, properties: patchDictionary(size, _mod13100.properties) };
+module_13099 = module_13099_mod;
+const obj2 = Object.create(null);
+for (const key10022 in module_13101) {
+  let tmp23 = module_13101[key10022];
+  let tmp7 = null;
+  if (tmp23.descriptors) {
+    let _Object = Object;
+    let obj3 = Object.create(null);
+    tmp7 = obj3;
+    let keys = Object.keys();
+    if (keys !== undefined) {
+      tmp7 = obj3;
+      let tmp9 = keys[tmp2];
+      while (tmp9 !== undefined) {
+        obj3[tmp9] = tmp23.descriptors[tmp9].syntax;
+        continue;
+      }
+    }
+  }
+  let str = tmp23.syntax;
+  let substr = key10022.substr(1);
+  let str2 = str.trim();
+  let str3 = str2.match(/^@\S+\s+([^;\{]*)/)[1];
+  let trimmed = str3.trim() || null;
+  let obj4 = { prelude: trimmed, descriptors: tmp7 };
+  obj2[substr] = obj4;
+  continue;
+}
+const atrules = _mod13100.atrules;
+obj5 = {};
+for (const key10049 in obj2) {
+  let descriptors1 = atrules[key10049] && atrules[key10049].descriptors || null;
+  if (key10049 in atrules) {
+    if ("prelude" in atrules[key10049]) {
+      let patchDictionaryResult;
+      let obj6 = { prelude: atrules[key10049].prelude, descriptors: patchDictionaryResult };
+      if (obj2[key10049].descriptors) {
+        let descriptors = obj2[key10049].descriptors;
+        if (!descriptors1) {
+          descriptors1 = {};
         }
-        callResult1 = self.Block(isDeclarationBlockAtrule.call(self));
+        patchDictionaryResult = patchDictionary(descriptors, descriptors1);
+      } else {
+        patchDictionaryResult = descriptors1;
+        if (patchDictionaryResult) {
+          let obj7 = {};
+          patchDictionaryResult = obj7;
+          let keys1 = Object.keys();
+          if (keys1 !== undefined) {
+            patchDictionaryResult = obj7;
+            let tmp16 = keys1[tmp];
+            while (tmp16 !== undefined) {
+              obj7[tmp16] = descriptors1[tmp16].syntax;
+              continue;
+            }
+          }
+        }
+      }
+      obj5[key10049] = obj6;
+      continue;
+    }
+  }
+  let prelude = obj2[key10049].prelude || null;
+}
+for (const key10070 in atrules) {
+  if (globalThis.hasOwnProperty.call(obj2, key10070)) {
+    continue;
+  } else {
+    let prelude1 = atrules[key10070].prelude || null;
+    let obj8 = { prelude: prelude1, descriptors: descriptors2 };
+    let descriptors2 = atrules[key10070].descriptors;
+    if (descriptors2) {
+      let descriptors3 = atrules[key10070].descriptors;
+      let obj16 = {};
+      descriptors2 = obj16;
+      let keys2 = Object.keys();
+      if (keys2 !== undefined) {
+        descriptors2 = obj16;
+        let tmp20 = keys2[tmp];
+        while (tmp20 !== undefined) {
+          obj16[tmp20] = descriptors3[tmp20].syntax;
+          continue;
+        }
       }
     }
-    const obj = { type: "Atrule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, prelude: tmp7, block: tmp13 };
-    return obj;
-  },
-  generate(name) {
-    const self = this;
-    this.chunk("@");
-    this.chunk(name.name);
-    if (null !== name.prelude) {
-      self.chunk(" ");
-      self.node(name.prelude);
-    }
-    if (name.block) {
-      self.node(name.block);
-    } else {
-      self.chunk(";");
-    }
-  },
-  walkContext: "atrule"
-};
-obj2 = { name: String, prelude: ["AtrulePrelude", "Raw", null], block: ["Block", null] };
+    obj5[key10070] = obj8;
+    continue;
+  }
+  continue;
+}
+size = size_mod;
 
 export default obj;

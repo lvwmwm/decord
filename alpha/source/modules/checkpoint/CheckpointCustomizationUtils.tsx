@@ -1,19 +1,19 @@
-// Module ID: 6569
-// Function ID: 6570
+// Module ID: 6571
+// Function ID: 6572
 // Name: CheckpointCustomizationUtils
-// Dependencies: [6201, 3219, 1113, 6247, 6570, 6246, 6202, 6248, 6245, 2]
+// Dependencies: [6204, 3219, 1113, 6249, 6572, 6248, 6205, 6250, 6247, 2]
 // Exports: getAssetAccessibilityLabel, getChamferedRectPoints, getCheckpointRouteBlockedTrait, getCustomizationOptionForCharacterStage, getCustomizationOptionName, getIsTraitRarityVisible, getNitroLockedMessage, getTraitOptionShapePoints, isNoneOption, makeTraitRaritySorter
 
-// Module 6569 (CheckpointCustomizationUtils)
+// Module 6571 (CheckpointCustomizationUtils)
 import intl7 from "intl" /* 1113 */;
 import _modDef3219 from "module_3219" /* 3219 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6202 */;
-import CheckpointTraitConfig from "CheckpointTraitConfig" /* 6245 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6246 */;
-import CheckpointTrait from "CheckpointTrait" /* 6247 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6248 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6570 */;
-import CheckpointConstants from "CheckpointConstants" /* 6201 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6205 */;
+import CheckpointTraitConfig from "CheckpointTraitConfig" /* 6247 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6248 */;
+import CheckpointTrait from "CheckpointTrait" /* 6249 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 6250 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6572 */;
+import CheckpointConstants from "CheckpointConstants" /* 6204 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let WEARABLE;
 let WEARABLE2;
 let c3;
 let closure_4;
-const f89668 = (item) => {
+const f89840 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -245,7 +245,7 @@ export function getChamferedRectPoints(width, height, arg2) {
   items1[3] = items4;
   const items5 = [num, height - num];
   items1[4] = items5;
-  const mapped = items1.map(f89668);
+  const mapped = items1.map(f89840);
   return mapped.join(" ");
 }
 export const TRAIT_OPTION_STROKE_WIDTH = 2;
@@ -261,6 +261,6 @@ export function getTraitOptionShapePoints(width, height) {
   items1[3] = items4;
   const items5 = [1, height - 1];
   items1[4] = items5;
-  const mapped = items1.map(f89668);
+  const mapped = items1.map(f89840);
   return mapped.join(" ");
 }

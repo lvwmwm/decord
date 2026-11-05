@@ -1,10 +1,10 @@
-// Module ID: 15381
-// Function ID: 15382
+// Module ID: 15394
+// Function ID: 15395
 // Name: SafetyWarningAgeUtils
 // Dependencies: [2171, 1113, 2]
 // Exports: formatSafetyWarningAge, getDaysAgo
 
-// Module 15381 (SafetyWarningAgeUtils)
+// Module 15394 (SafetyWarningAgeUtils)
 import intl3 from "intl" /* 1113 */;
 import _modDef2171 from "module_2171" /* 2171 */;
 import size from "module_2" /* 2 */;

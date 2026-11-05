@@ -1,16 +1,16 @@
-// Module ID: 17770
-// Function ID: 17771
+// Module ID: 17798
+// Function ID: 17799
 // Name: AppIconsSetting
-// Dependencies: [1072, 16871, 4974, 11729, 1113, 17771, 15573, 17772, 2]
+// Dependencies: [1072, 16894, 4976, 11737, 1113, 17799, 15586, 17800, 2]
 
-// Module 17770 (AppIconsSetting)
+// Module 17798 (AppIconsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4974 */;
-import AppIconUtils from "AppIconUtils" /* 15573 */;
-import SettingsItemAppIconDefault from "SettingsItemAppIcon" /* 17771 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16871 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
+import dismissible_content from "dismissible_content" /* 4976 */;
+import AppIconUtils from "AppIconUtils" /* 15586 */;
+import SettingsItemAppIconDefault from "SettingsItemAppIcon" /* 17799 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16894 */;
+import SettingBuilders from "SettingBuilders" /* 11737 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

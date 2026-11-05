@@ -1,20 +1,20 @@
-// Module ID: 18310
-// Function ID: 18311
+// Module ID: 18339
+// Function ID: 18340
 // Name: useChannelScreensFromNavigation
-// Dependencies: [32, 19, 4990, 5044, 5172, 1072, 4997, 5323, 5322, 5325, 2]
+// Dependencies: [32, 19, 4992, 5046, 5174, 1072, 4999, 5325, 5324, 5327, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 18310 (useChannelScreensFromNavigation)
+// Module 18339 (useChannelScreensFromNavigation)
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4997 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5322 */;
-import RootNavigationRef from "RootNavigationRef" /* 5323 */;
-import useChatLayoutDefault from "useChatLayout" /* 5325 */;
+import ChannelConstants from "ChannelConstants" /* 4999 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5324 */;
+import RootNavigationRef from "RootNavigationRef" /* 5325 */;
+import useChatLayoutDefault from "useChatLayout" /* 5327 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5172 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -64,19 +64,44 @@ function getActiveTabsRoute(coerceTabsRouteResult) {
     }
   }
 }
-function resolveBackgroundScreen(state) {
+function resolveBackgroundScreen(state, arg1) {
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  let flag = obj.includeCoveredGuilds;
+  if (flag === undefined) {
+    flag = false;
+  }
   const first = state.routes[0];
-  const obj = NavigationRouteUtils;
-  const coerceTabsRouteResult = obj.coerceTabsRoute(first);
+  const obj2 = NavigationRouteUtils;
+  const coerceTabsRouteResult = obj2.coerceTabsRoute(first);
   if (null == coerceTabsRouteResult) {
     return [];
   } else {
-    const tmp12 = getActiveTabsRoute(coerceTabsRouteResult);
-    if (null == tmp12) {
+    let tmp6;
+    if (flag) {
+      state = coerceTabsRouteResult.state;
+      let found;
+      if (state != null) {
+        const routes = state.routes;
+        found = routes.find((item) => {
+          const obj = NavigationRouteUtils;
+          return null != obj.coerceGuildsRoute(item);
+        });
+      }
+      if (found == null) {
+        found = getActiveTabsRoute(coerceTabsRouteResult);
+      }
+      tmp6 = found;
+    } else {
+      tmp6 = getActiveTabsRoute(coerceTabsRouteResult);
+    }
+    if (null == tmp6) {
       return [];
     } else {
       const tmp2Result = NavigationRouteUtils;
-      const coerceGuildsRouteResult = tmp2Result.coerceGuildsRoute(tmp12);
+      const coerceGuildsRouteResult = tmp2Result.coerceGuildsRoute(tmp6);
       if (null == coerceGuildsRouteResult) {
         return [];
       } else {
@@ -130,7 +155,7 @@ function resolveChannelScreens(state, isChatLockedOpen) {
     }
   }
   if (isChatLockedOpen.isChatLockedOpen) {
-    const arr2 = resolveBackgroundScreen(state);
+    const arr2 = resolveBackgroundScreen(state, { includeCoveredGuilds: true });
     if (arr2.length > 0) {
       const items1 = [];
       const arraySpreadResult = HermesBuiltin.arraySpread(items1, arr2, 0);

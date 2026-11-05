@@ -1,14 +1,14 @@
-// Module ID: 9886
-// Function ID: 9887
+// Module ID: 9892
+// Function ID: 9893
 // Name: XboxLinkDiscordConsent
-// Dependencies: [19, 9873, 1072, 9887, 21, 1499, 9889, 14393, 2]
+// Dependencies: [19, 9879, 1072, 9893, 21, 1499, 9895, 14406, 2]
 // Exports: default
 
-// Module 9886 (XboxLinkDiscordConsent)
+// Module 9892 (XboxLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 9873 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9887 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 9879 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9893 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -35,6 +35,6 @@ export default function XboxLinkDiscordConsent(arg0) {
   const callback1 = react.useCallback(() => {
     navigation.push(XboxLinkModalScenes.ERROR);
   }, items1);
-  const TwoWayLinkDiscordConsent = navigation(9889).TwoWayLinkDiscordConsent;
-  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(14393).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
+  const TwoWayLinkDiscordConsent = navigation(9895).TwoWayLinkDiscordConsent;
+  return <TwoWayLinkDiscordConsent platformType={PlatformTypes.XBOX} callbackCode={callbackCode} callbackState={callbackState} clientId={navigation(14406).ConsoleOAuthApplications.XBOX_APPLICATION_ID} scopes={XBOX_CLIENT_SCOPES} onNext={callback} onError={callback1} />;
 };

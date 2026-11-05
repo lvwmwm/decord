@@ -1,34 +1,34 @@
-// Module ID: 19439
-// Function ID: 19440
+// Module ID: 19470
+// Function ID: 19471
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 5142, 4989, 6978, 9005, 12045, 11902, 4990, 2135, 5898, 5044, 7010, 11411, 11409, 1072, 5791, 5815, 11412, 21, 19440, 1652, 10267, 1705, 1089, 504, 5846, 1113, 9387, 15114, 19441, 6050, 11923, 19442, 1493, 1627, 19467, 11419, 19468, 11413, 11415, 12, 1266, 1108, 1259, 11433, 13034, 6676, 1252, 2148, 9044, 6986, 19404, 5207, 19469, 5893, 5331, 5894, 7344, 19470, 19471, 14433, 5062, 19472, 19473, 19478, 19479, 19406, 19480, 11410, 5348, 2]
+// Dependencies: [32, 19, 17, 5144, 4991, 6981, 9010, 12054, 11911, 4992, 2135, 5901, 5046, 7013, 11419, 11417, 1072, 5793, 5817, 11420, 21, 19471, 1652, 10275, 1705, 1089, 504, 5849, 1113, 9394, 15127, 19472, 6053, 11932, 19473, 1493, 1627, 19498, 11427, 19499, 11421, 11423, 12, 1266, 1108, 1259, 11441, 13041, 6679, 1252, 2148, 9049, 6989, 19435, 5209, 19500, 5896, 5333, 5897, 7347, 19501, 19502, 14446, 5064, 19503, 19504, 19509, 19510, 19437, 19511, 11418, 5350, 2]
 // Exports: default
 
-// Module 19439 (VoicePanelController)
+// Module 19470 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5062 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5791 */;
-import CallConstants from "CallConstants" /* 5815 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11412 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11923 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19480 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5064 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5793 */;
+import CallConstants from "CallConstants" /* 5817 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11420 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 11932 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19511 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6978 */;
-import AppFreezeStore from "AppFreezeStore" /* 9005 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12045 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11902 */;
-import ChannelStore from "ChannelStore" /* 4990 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6981 */;
+import AppFreezeStore from "AppFreezeStore" /* 9010 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12054 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11911 */;
+import ChannelStore from "ChannelStore" /* 4992 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5898 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5044 */;
-import VoicePanelStore from "VoicePanelStore" /* 7010 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11411 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11409 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5901 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
+import VoicePanelStore from "VoicePanelStore" /* 7013 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11419 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11417 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
 

@@ -1,14 +1,14 @@
-// Module ID: 9548
-// Function ID: 9549
+// Module ID: 9554
+// Function ID: 9555
 // Name: useGameProfileReviewDisplayData
-// Dependencies: [19, 9491, 9538, 2164, 1113, 9539, 2]
+// Dependencies: [19, 9498, 9544, 2164, 1113, 9545, 2]
 // Exports: useGameProfileReviewDisplayData
 
-// Module 9548 (useGameProfileReviewDisplayData)
+// Module 9554 (useGameProfileReviewDisplayData)
 import GameDetectionTypes from "GameDetectionTypes" /* 2164 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 9491 */;
-import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 9538 */;
-import GameProfileReviewUtils from "GameProfileReviewUtils" /* 9539 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9498 */;
+import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 9544 */;
+import GameProfileReviewUtils from "GameProfileReviewUtils" /* 9545 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

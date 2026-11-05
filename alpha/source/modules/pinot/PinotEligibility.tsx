@@ -1,15 +1,15 @@
-// Module ID: 9198
-// Function ID: 9199
+// Module ID: 9205
+// Function ID: 9206
 // Name: PinotEligibility
-// Dependencies: [9181, 1072, 9199, 1093, 5078, 2]
+// Dependencies: [9188, 1072, 9206, 1093, 5080, 2]
 // Exports: everyoneHasAccess, getPinotIneligibleReason, isChannelPinotPromotable, isPinotFeatureEnabled
 
-// Module 9198 (PinotEligibility)
+// Module 9205 (PinotEligibility)
 import Constants from "Constants" /* 1072 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5078 */;
-import PinotTypes from "PinotTypes" /* 9199 */;
-import PinotConstants from "PinotConstants" /* 9181 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5080 */;
+import PinotTypes from "PinotTypes" /* 9206 */;
+import PinotConstants from "PinotConstants" /* 9188 */;
 import size from "module_2" /* 2 */;
 
 let PinotChannelFlags;
@@ -29,7 +29,7 @@ function isChannelPinotPromotableForFeature(id, guild_id, guildFeature) {
           const tmp5 = importAll;
           const tmp7 = Permissions;
           if (canEveryoneRoleResult) {
-            const tmp5Result = tmp5(5078);
+            const tmp5Result = tmp5(5080);
             canEveryoneRoleResult = tmp5Result.canEveryoneRole(tmp7.READ_MESSAGE_HISTORY, guild_id);
           }
           let tmp9 = "not_public";
@@ -74,7 +74,7 @@ export function getPinotIneligibleReason(type) {
       const tmp = importAll;
       const tmp3 = Permissions;
       if (canEveryoneRoleResult) {
-        const tmpResult = tmp(5078);
+        const tmpResult = tmp(5080);
         canEveryoneRoleResult = tmpResult.canEveryoneRole(tmp3.READ_MESSAGE_HISTORY, type);
       }
       let tmp5 = "not_public";

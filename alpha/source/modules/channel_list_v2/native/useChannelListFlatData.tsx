@@ -1,11 +1,11 @@
-// Module ID: 18573
-// Function ID: 18574
+// Module ID: 18603
+// Function ID: 18604
 // Name: useChannelListFlatData
-// Dependencies: [19, 7377, 2]
+// Dependencies: [19, 7380, 2]
 // Exports: default
 
-// Module 18573 (useChannelListFlatData)
-import FastList from "FastList" /* 7377 */;
+// Module 18603 (useChannelListFlatData)
+import FastList from "FastList" /* 7380 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -102,7 +102,7 @@ export default function useChannelListFlatData(getItemSize) {
           let tmp39 = getSectionFooterSize(num);
           sum1 = tmp15;
           if (tmp39 > 0) {
-            let SECTION_FOOTER = tmp36(7377).FastListItemTypes.SECTION_FOOTER;
+            let SECTION_FOOTER = tmp36(7380).FastListItemTypes.SECTION_FOOTER;
             let _HermesInternal6 = HermesInternal;
             let str16 = "";
             let str17 = ":";

@@ -1,11 +1,11 @@
-// Module ID: 6201
-// Function ID: 6202
+// Module ID: 6204
+// Function ID: 6205
 // Name: CheckpointConstants
-// Dependencies: [3219, 6202, 2]
+// Dependencies: [3219, 6205, 2]
 
-// Module 6201 (CheckpointConstants)
+// Module 6204 (CheckpointConstants)
 import _modDef3219 from "module_3219" /* 3219 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6202 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6205 */;
 import size from "module_2" /* 2 */;
 
 const items = [{ list: "gamesByPlayers", label: _modDef3219.b4s18j }, , , , ];
@@ -50,6 +50,8 @@ export const CHECKPOINT_BACKGROUND_GRADIENT = ["#12606D", "#0B1624"];
 export const CHECKPOINT_GLOBAL_GAME_CATEGORIES = items;
 export const CHECKPOINT_NAV_HEIGHT = 64;
 export const CHECKPOINT_CONTROL_SIZE = 48;
+export const CHECKPOINT_CONTENT_MAX_WIDTH = 480;
+export const CHECKPOINT_CONTENT_MAX_HEIGHT = 840;
 export const CHECKPOINT_LOGO_SIZE = 40;
 export const TRAIT_OPTION_WIDTH = 72;
 export const TRAIT_OPTION_HEIGHT = 80;

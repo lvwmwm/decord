@@ -1,9 +1,9 @@
-// Module ID: 6866
-// Function ID: 6867
+// Module ID: 6869
+// Function ID: 6870
 // Name: AgeGatedFeature
 // Dependencies: [2]
 
-// Module 6866 (AgeGatedFeature)
+// Module 6869 (AgeGatedFeature)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/AgeGatedFeature.tsx");

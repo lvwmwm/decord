@@ -1,13 +1,13 @@
 // Module ID: 4455
 // Function ID: 4456
-// Dependencies: [4456, 4457, 4458, 4459, 4460]
+// Dependencies: [2194, 2197, 2198, 2200, 4456]
 
 // Module 4455
-import formatDistance from "formatDistance" /* 4456 */;
-import buildFormatLongFn from "buildFormatLongFn" /* 4457 */;
-import formatRelative from "formatRelative" /* 4458 */;
-import date_mod from "module_4459" /* 4459 */;
-import date_mod2 from "module_4460" /* 4460 */;
+import formatDistance from "formatDistance" /* 2194 */;
+import formatRelative from "formatRelative" /* 2197 */;
+import date_mod from "module_2198" /* 2198 */;
+import date_mod2 from "module_2200" /* 2200 */;
+import buildFormatLongFn from "buildFormatLongFn" /* 4456 */;
 
 let tmp11;
 let tmp3;
@@ -20,31 +20,31 @@ if (!formatDistance) {
 } else {
   tmp3 = formatDistance;
 }
-if (!buildFormatLongFn) {
-  tmp5 = { default: buildFormatLongFn };
-  const obj2 = { default: buildFormatLongFn };
-} else {
-  tmp5 = buildFormatLongFn;
-}
 if (!formatRelative) {
-  tmp7 = { default: formatRelative };
-  const obj3 = { default: formatRelative };
+  tmp5 = { default: formatRelative };
+  const obj2 = { default: formatRelative };
 } else {
-  tmp7 = formatRelative;
+  tmp5 = formatRelative;
 }
 let date = date_mod2;
+if (!date) {
+  tmp7 = { default: date };
+  const obj3 = { default: date };
+} else {
+  tmp7 = date;
+}
+date = date_mod2;
 if (!date) {
   tmp9 = { default: date };
   const obj4 = { default: date };
 } else {
   tmp9 = date;
 }
-date = date_mod2;
-if (!date) {
-  tmp11 = { default: date };
-  const obj5 = { default: date };
+if (!buildFormatLongFn) {
+  tmp11 = { default: buildFormatLongFn };
+  const obj5 = { default: buildFormatLongFn };
 } else {
-  tmp11 = date;
+  tmp11 = buildFormatLongFn;
 }
 
-export default { code: "es", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
+export default { code: "en-GB", formatDistance: tmp3.default, formatLong: tmp11.default, formatRelative: tmp5.default, localize: tmp7.default, match: tmp9.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };

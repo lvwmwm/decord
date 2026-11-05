@@ -1,16 +1,16 @@
-// Module ID: 13568
-// Function ID: 13569
+// Module ID: 13579
+// Function ID: 13580
 // Name: AppealIngestionSpam
-// Dependencies: [19, 17, 21, 5141, 13540, 7428, 1187, 2]
+// Dependencies: [19, 17, 21, 5143, 13551, 7431, 1187, 2]
 // Exports: default
 
-// Module 13568 (AppealIngestionSpam)
+// Module 13579 (AppealIngestionSpam)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7428 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 13540 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7431 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 13551 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

@@ -1,21 +1,21 @@
-// Module ID: 9583
-// Function ID: 9584
+// Module ID: 9589
+// Function ID: 9590
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 2167, 1385, 21, 5141, 575, 7258, 9584, 9585, 7463, 504, 9486, 1113, 5851, 1187, 5761, 5768, 9587, 2]
+// Dependencies: [19, 17, 2167, 1385, 21, 5143, 575, 7261, 9590, 9591, 7466, 504, 9493, 1113, 5854, 1187, 5763, 5770, 9593, 2]
 // Exports: default
 
-// Module 9583 (GameProfileLinkAccount)
+// Module 9589 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7258 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9486 */;
-import GameProfileSection from "GameProfileSection" /* 9584 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9585 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7261 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9493 */;
+import GameProfileSection from "GameProfileSection" /* 9590 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9591 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -105,7 +105,7 @@ let closure_11 = react.memo(function GameProfileLinkAccountSkeleton() {
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(9585), obj13);
+    tmp5Result = tmp5(tmp2(9591), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };

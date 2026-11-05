@@ -1,28 +1,28 @@
-// Module ID: 9362
-// Function ID: 9363
+// Module ID: 9369
+// Function ID: 9370
 // Name: EventDetailRsvpSheet
-// Dependencies: [19, 17, 5895, 1385, 1083, 21, 5141, 575, 6858, 9251, 9363, 5761, 1113, 8317, 5851, 7462, 504, 1187, 9346, 5195, 8891, 9364, 5400, 7095, 7430, 2]
+// Dependencies: [19, 17, 5898, 1385, 1083, 21, 5143, 575, 6861, 9258, 9370, 5763, 1113, 8322, 5854, 7465, 504, 1187, 9353, 5197, 8896, 9371, 5402, 7098, 7433, 2]
 // Exports: default
 
-// Module 9362 (EventDetailRsvpSheet)
+// Module 9369 (EventDetailRsvpSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl2 from "intl" /* 1113 */;
-import BottomSheetModal from "BottomSheetModal" /* 5400 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import _mod8317 from "module_8317" /* 8317 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8891 */;
-import StageSparkleDefault from "StageSparkle" /* 9251 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9363 */;
-import EventDetailTypes from "EventDetailTypes" /* 9364 */;
+import BottomSheetModal from "BottomSheetModal" /* 5402 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import _mod8322 from "module_8322" /* 8322 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8896 */;
+import StageSparkleDefault from "StageSparkle" /* 9258 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9370 */;
+import EventDetailTypes from "EventDetailTypes" /* 9371 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 5895 */;
+import PresenceStore from "PresenceStore" /* 5898 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
-import TextStyles from "TextStyles" /* 6858 */;
+import createStyles_mod from "createStyles" /* 5143 */;
+import TextStyles from "TextStyles" /* 6861 */;
 import size_mod from "module_2" /* 2 */;
 
 let item;
@@ -76,7 +76,7 @@ function RemainingUsersRow(remainingUsersGroup) {
   const tmp = closure_9();
   const obj = { DEPRECATED_style: tmp.userListRow, leading: metroImportDefault(View, obj2), label: intl.formatToPlainString(intl2.t.BdQTfR, obj4) };
   obj2 = { style: tmp.remainingUsersIconContainer, children: metroImportDefault(tmp2, obj3) };
-  const FormRow = _mod8317.FormRow;
+  const FormRow = _mod8322.FormRow;
   obj3 = { source: AssetRegistryDefault, style: tmp.remainingUsersIcon };
   tmp2 = FastImageDefault;
   intl = intl2.intl;
@@ -119,7 +119,7 @@ const memoResult = react.memo(function UserRow(eventUser) {
   let analyticsLocations;
   const guildId = eventUser.guildId;
   const tmp = closure_9();
-  analyticsLocations = analyticsLocations(7462)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7465)().analyticsLocations;
   let obj = eventUser(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(eventUser.user_id));
@@ -141,7 +141,7 @@ const memoResult = react.memo(function UserRow(eventUser) {
     }
   };
   tmp7Result = null;
-  const FormRow = eventUser(8317).FormRow;
+  const FormRow = eventUser(8322).FormRow;
   if (null != stateFromStores) {
     const obj4 = { user: stateFromStores, guildId, isMobileOnline, isVROnline, status, size: eventUser(1187).AvatarSizes.REFRESH_MEDIUM_32, autoStatusCutout: true };
     const Avatar = tmp4(1187).Avatar;
@@ -150,12 +150,12 @@ const memoResult = react.memo(function UserRow(eventUser) {
   const member = eventUser.member;
   obj6 = { user: stateFromStores, nick, usernameStyle: null, nicknameStyle: null };
   nick = undefined;
-  tmp2Result = analyticsLocations(9346);
+  tmp2Result = analyticsLocations(9353);
   if (member != null) {
     nick = member.nick;
   }
   if (nick == null) {
-    const tmp2Result2 = analyticsLocations(5195);
+    const tmp2Result2 = analyticsLocations(5197);
     nick = tmp2Result2.getName(eventUser.user);
   }
   ({ userName: obj5.usernameStyle, userName: obj5.nicknameStyle } = tmp);
@@ -214,7 +214,7 @@ export default function EventDetailRsvpSheet(arg0) {
   }, items);
   if (loading) {
     if (0 === userListItems.length) {
-      let obj2 = { children: closure_7(guildId(7095).ActivityIndicator, obj3) };
+      let obj2 = { children: closure_7(guildId(7098).ActivityIndicator, obj3) };
       obj3 = { style: items1 };
       items1 = [, ];
       class StaticMessageContainer {
@@ -278,7 +278,7 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp8 = closure_7(StaticMessageContainer, obj6);
   } else {
-    let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8317).FormDivider, keyExtractor };
+    let obj = { contentContainerStyle: items4, data: userListItems, renderItem: callback, ItemSeparatorComponent: guildId(8322).FormDivider, keyExtractor };
     items4 = [tmp.userList, ];
     class StaticMessageContainer {
       constructor(children) {
@@ -297,7 +297,7 @@ export default function EventDetailRsvpSheet(arg0) {
     }
     tmp6[0] = safeBottomPadding;
     items4[1] = tmp6;
-    const BottomSheetFlashList = guildId(7430).BottomSheetFlashList;
+    const BottomSheetFlashList = guildId(7433).BottomSheetFlashList;
     tmp8 = closure_7(BottomSheetFlashList, obj);
   }
 };

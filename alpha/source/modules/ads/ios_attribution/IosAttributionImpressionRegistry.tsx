@@ -1,21 +1,21 @@
-// Module ID: 14892
-// Function ID: 14893
+// Module ID: 14905
+// Function ID: 14906
 // Name: IosAttributionImpressionRegistry
-// Dependencies: [5, 14893, 3, 14890, 14894, 14895, 2]
+// Dependencies: [5, 14906, 3, 14903, 14907, 14908, 2]
 // Exports: endImpression, getStoreKitCredential, registerViewThroughImpression
 
-// Module 14892 (IosAttributionImpressionRegistry)
+// Module 14905 (IosAttributionImpressionRegistry)
 import LoggerDefault from "Logger" /* 3 */;
-import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14890 */;
-import IosAttributionFramework from "IosAttributionFramework" /* 14893 */;
-import IosAttributionMetrics from "IosAttributionMetrics" /* 14894 */;
+import IosAttributionNativeModule from "IosAttributionNativeModule" /* 14903 */;
+import IosAttributionFramework from "IosAttributionFramework" /* 14906 */;
+import IosAttributionMetrics from "IosAttributionMetrics" /* 14907 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let impressionToken;
 
 let obj3;
-const f107926 = () => {
+const f108100 = () => {
 
 };
 function isCurrentImpression(arg0, arg1) {
@@ -31,7 +31,7 @@ function endImpressionToken(arg0) {
   if (null != arg0) {
     obj = IosAttributionNativeModule;
     const endImpressionResult = obj.endImpression(arg0);
-    endImpressionResult.catch(f107926);
+    endImpressionResult.catch(f108100);
   }
 }
 let obj = function _startNativeImpression() {
@@ -94,7 +94,7 @@ let obj = function _startNativeImpression() {
               token = undefined;
               signAbort = 1;
               c4 = 1;
-              return { value: "flexDirection", done: null };
+              return { value: "flexDirection", done: true };
             }
           } else if (1 === signAbort) {
             if (arg0 === 1) {
@@ -282,29 +282,83 @@ obj = function _getStoreKitCredential() {
     let impressionId = arg0;
     let c3 = 0;
     let c4 = 0;
-    const iter = (async (arg0) => {
-      let tmp8;
+    const iter = (async (arg0, value) => {
       function getImpressionToken() {
         return closure_1_10(...arguments);
       }
-      impressionToken = tmp4;
-      impressionId = impressionId.impressionId;
-      await "flexDirection";
-      const obj8 = closure_130_0(closure_130_1[3]);
-      const activeIosAttributionFramework = obj8.getActiveIosAttributionFramework();
-      if (null != activeIosAttributionFramework) {
-        if (null != closure_130_3[activeIosAttributionFramework]) {
-          c3 = 2;
-          c4 = 1;
-          const obj5 = { value: getImpressionToken(impressionId), done: false };
-          return obj5;
+      if (c4 === 2) {
+        c4 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          return { value, done: true };
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        try {
+          let activeIosAttributionFramework;
+          c4 = 2;
+          if (0 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              impressionId = undefined;
+              impressionId = impressionId.impressionId;
+              activeIosAttributionFramework = undefined;
+              impressionToken = undefined;
+              c3 = 1;
+              c4 = 1;
+              return { value: "flexDirection", done: true };
+            }
+          } else if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              return { value, done: true };
+            } else {
+              const obj8 = closure_130_0(closure_130_1[3]);
+              activeIosAttributionFramework = obj8.getActiveIosAttributionFramework();
+              if (null != activeIosAttributionFramework) {
+                if (null != closure_130_3[activeIosAttributionFramework]) {
+                  c3 = 2;
+                  c4 = 1;
+                  const obj5 = { value: getImpressionToken(impressionId), done: false };
+                  return obj5;
+                }
+              }
+              c4 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            return { value, done: true };
+          } else {
+            impressionToken = value;
+            let tmp8;
+            if (null != impressionToken) {
+              tmp8 = { impressionToken };
+              obj = { impressionToken };
+            }
+            c4 = 3;
+            return { value: tmp8, done: true };
+          }
+        } catch (tmp18) {
+          c4 = 3;
+          throw tmp18;
         }
       }
-      impressionToken = await "HermesInternal";
-      if (null != impressionToken) {
-        tmp8 = { impressionToken };
-      }
-      return tmp8;
     })();
     iter.next();
     return iter;
@@ -359,7 +413,7 @@ export function endImpression(arg0) {
     if (null != token) {
       const obj2 = IosAttributionNativeModule;
       const endImpressionResult = obj2.endImpression(token);
-      endImpressionResult.catch(f107926);
+      endImpressionResult.catch(f108100);
     }
   }
 }

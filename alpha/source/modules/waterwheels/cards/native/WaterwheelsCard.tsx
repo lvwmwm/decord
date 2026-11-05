@@ -1,21 +1,22 @@
-// Module ID: 18831
-// Function ID: 18832
+// Module ID: 18861
+// Function ID: 18862
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 14191, 1072, 8080, 21, 5141, 575, 504, 5851, 5761, 5768, 9073, 7102, 1113, 7514, 2]
+// Dependencies: [19, 17, 14204, 1072, 8085, 21, 5143, 575, 504, 18862, 5854, 5763, 5770, 9079, 7105, 1113, 7516, 2]
 // Exports: WaterwheelsCard, getWaterwheelsCardEligible, useWaterwheelsCardEligible
 
-// Module 18831 (WaterwheelsCard)
+// Module 18861 (WaterwheelsCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import FastImageDefault from "FastImage" /* 5851 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8080 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9073 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import FastImageDefault from "FastImage" /* 5854 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8085 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9079 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 18862 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14191 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14204 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,6 +39,130 @@ let obj8;
 let obj9;
 let size;
 let size1;
+function WaterwheelsCardContent(card) {
+  let game;
+  let items;
+  let items1;
+  let items2;
+  let items3;
+  let items4;
+  let obj16;
+  let obj3;
+  let obj7;
+  card = card.card;
+  const onAction = card.onAction;
+  let first;
+  function handleAction(arg0) {
+    onAction(arg0, card);
+  }
+  let tmp = closure_11();
+  dependencyMap = tmp;
+  let tmp2 = card;
+  let tmp3 = dependencyMap;
+  let obj = card(504);
+  if (obj.useStateFromStores([], () => {
+    authorizationStatus = authorizationStatus.authorizationStatus;
+    let tmp = "notifications_permission" !== card.clientEligibility;
+    if (!tmp) {
+      tmp = authorizationStatus === constants.UNDETERMINED || authorizationStatus === constants.DENIED;
+    }
+    return tmp;
+  })) {
+    const layout = card.layout;
+    if ("server_row" === layout.type) {
+      let obj2 = { style: tmp.card, children: closure_9(WaterwheelsServerRowRenderer, obj3) };
+      obj3 = { server: layout, onAction: handleAction };
+      return closure_9(closure_5, obj2);
+    } else if ("carousel" === layout.type) {
+      let obj4 = { style: tmp.card, children: items2 };
+      let obj5 = { style: tmp.row, children: items };
+      let tmp10 = null;
+      if (null != layout.header.iconUrl) {
+        let obj6 = { style: tmp.icon, source: obj7 };
+        obj7 = { uri: layout.header.iconUrl };
+        tmp10 = closure_9(onAction(5854), obj6);
+      }
+      items = [tmp10, ];
+      const obj8 = { children: items1 };
+      const obj9 = { variant: "heading-xs/semibold", children: layout.header.title };
+      items1 = [closure_9(tmp2(5763).Heading, obj9), ];
+      const obj10 = { variant: "body-sm/normal", children: layout.header.subtitle };
+      items1[1] = closure_9(tmp2(5763).Text, obj10);
+      items[1] = closure_10(closure_5, obj8);
+      items2 = [tmp8(closure_5, obj5), ];
+      const obj11 = {
+        horizontal: true,
+        contentContainerStyle: tmp.rail,
+        children: items3.map((children) => {
+              let items;
+              let obj4;
+              const obj = { style: game.game, children: items };
+              items = [, , , , ];
+              const obj2 = { variant: "body-xs/medium", children: children.rank };
+              items[0] = React4(Text_Text.Text, obj2);
+              let tmp4Result = null;
+              const tmp = authStore;
+              const tmp2 = hasOwnProperty;
+              const tmp3 = game;
+              if (null != children.coverUrl) {
+                const obj3 = { style: tmp3.hero, source: obj4 };
+                obj4 = { uri: children.coverUrl };
+                tmp4Result = tmp4(FastImageDefault, obj3);
+              }
+              items[1] = tmp4Result;
+              const obj5 = { variant: "heading-sm/semibold", children: children.name };
+              items[2] = React4(Text_Text.Heading, obj5);
+              const obj6 = { variant: "body-sm/normal", children: children.description };
+              items[3] = React4(Text_Text.Text, obj6);
+              let tmp4Result2 = null;
+              if (null != children.server) {
+                const obj7 = { server: children.server, onAction: handleAction };
+                tmp4Result2 = tmp4(WaterwheelsServerRowRenderer, obj7);
+              }
+              items[4] = tmp4Result2;
+              return tmp(tmp2, obj, children.gameId);
+            })
+      };
+      items3 = layout.items;
+      items2[1] = closure_9(first, obj11);
+      return closure_10(closure_5, obj4);
+    } else {
+      first = card.actions[0];
+      const obj12 = { style: tmp.card, children: items4 };
+      const obj13 = { variant: "heading-sm/semibold", children: layout.title };
+      items4 = [closure_9(tmp2(5763).Heading, obj13), , , ];
+      const obj14 = { variant: "body-md/normal", children: layout.body };
+      items4[1] = closure_9(tmp2(5763).Text, obj14);
+      let tmp21Result = null;
+      const tmp19 = closure_10;
+      const tmp20 = closure_5;
+      if (null != layout.imageUrl) {
+        const obj15 = { style: tmp.media, source: obj16 };
+        obj16 = { uri: layout.imageUrl };
+        tmp21Result = tmp21(onAction(5854), obj15);
+      }
+      items4[2] = tmp21Result;
+      let tmp21Result2 = null;
+      if (null != first) {
+        tmp21Result2 = null;
+        if (null != layout.actionLabel) {
+          const obj17 = {
+            text: layout.actionLabel,
+            onPress() {
+                      onAction(first, card);
+                    }
+          };
+          tmp21Result2 = tmp21(tmp2(5770).Button, obj17);
+        }
+      }
+      items4[3] = tmp21Result2;
+      return tmp19(tmp20, obj12);
+    }
+  } else {
+    const tmp4 = null;
+    return null;
+  }
+}
 function WaterwheelsServerRowRenderer(server) {
   let intl;
   let intl2;
@@ -78,7 +203,7 @@ function WaterwheelsServerRowRenderer(server) {
   if (null != server.iconUrl) {
     const obj3 = { style: tmp.icon, source: obj4 };
     obj4 = { uri: server.iconUrl };
-    tmp6 = closure_9(onAction(joined[9]), obj3);
+    tmp6 = closure_9(onAction(joined[10]), obj3);
     tmp5 = closure_9;
   } else {
     tmp5 = closure_9;
@@ -94,7 +219,7 @@ function WaterwheelsServerRowRenderer(server) {
     ({ guildId: obj8.id, name: obj8.name, iconUrl: obj8.icon } = server);
     const tmp11 = onAction;
     const tmp12 = joined;
-    const tmp13 = onAction(joined[13]);
+    const tmp13 = onAction(joined[14]);
     if (server.verified) {
       const items1 = [GuildFeatures.VERIFIED];
       items2 = items1;
@@ -102,12 +227,12 @@ function WaterwheelsServerRowRenderer(server) {
       items2 = [];
     }
     ({ members: obj8.approximate_member_count, online: obj8.approximate_presence_count } = server);
-    const obj10 = { guild: obj9, size: tmp11(tmp12[13]).Sizes.REFRESH_SMALL_16, disableColor: true };
+    const obj10 = { guild: obj9, size: tmp11(tmp12[14]).Sizes.REFRESH_SMALL_16, disableColor: true };
     tmp5Result = tmp5(tmp13, obj10);
   }
   items3 = [tmp5Result, ];
   const obj11 = { variant: "body-md/semibold", lineClamp: 1, children: server.name };
-  items3[1] = tmp5(server(joined[10]).Text, obj11);
+  items3[1] = tmp5(server(joined[11]).Text, obj11);
   items4 = [closure_10(closure_5, obj7), ];
   let tmp2Result = null;
   const obj12 = { style: tmp.serverMeta, children: items6 };
@@ -115,9 +240,9 @@ function WaterwheelsServerRowRenderer(server) {
     const obj13 = { style: tmp.row, children: items5 };
     const obj14 = { style: tmp.dot };
     items5 = [tmp5(closure_5, obj14), ];
-    const obj15 = { variant: "body-xs/medium", children: intl.format(server(joined[14]).t["LC+S+m"], obj16) };
-    const Text = tmp15(tmp16[10]).Text;
-    intl = tmp15(tmp16[14]).intl;
+    const obj15 = { variant: "body-xs/medium", children: intl.format(server(joined[15]).t["LC+S+m"], obj16) };
+    const Text = tmp15(tmp16[11]).Text;
+    intl = tmp15(tmp16[15]).intl;
     obj16 = { membersOnline: server.online };
     items5[1] = tmp5(Text, obj15);
     tmp2Result = tmp2(tmp3, obj13);
@@ -130,9 +255,9 @@ function WaterwheelsServerRowRenderer(server) {
     const obj17 = { style: tmp.row, children: items8 };
     ({ dot: arr8[0], mutedDot: arr8[1] } = tmp);
     items8 = [tmp5(closure_5, obj18), ];
-    const obj19 = { variant: "body-xs/medium", children: intl2.format(server(joined[14]).t.zRl6XR, obj20) };
-    const Text2 = tmp15(tmp16[10]).Text;
-    intl2 = tmp15(tmp16[14]).intl;
+    const obj19 = { variant: "body-xs/medium", children: intl2.format(server(joined[15]).t.zRl6XR, obj20) };
+    const Text2 = tmp15(tmp16[11]).Text;
+    intl2 = tmp15(tmp16[15]).intl;
     obj20 = { count: server.members };
     items8[1] = tmp5(Text2, obj19);
     tmp2Result2 = tmp2(tmp3, obj17);
@@ -143,15 +268,15 @@ function WaterwheelsServerRowRenderer(server) {
   let tmp5Result2 = null;
   if (joined) {
     const obj21 = { size: "md", color: onAction(joined[7]).colors.INTERACTIVE_MUTED };
-    const ChevronSmallRightIcon = tmp15(tmp16[15]).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp15(tmp16[16]).ChevronSmallRightIcon;
     tmp5Result2 = tmp5(ChevronSmallRightIcon, obj21);
   }
   items[2] = tmp5Result2;
   items9 = [closure_10(tmp4, obj2), ];
-  const Button = tmp15(tmp16[11]).Button;
-  const intl3 = tmp15(tmp16[14]).intl;
+  const Button = tmp15(tmp16[12]).Button;
+  const intl3 = tmp15(tmp16[15]).intl;
   const string = intl3.string;
-  const t = tmp15(tmp16[14]).t;
+  const t = tmp15(tmp16[15]).t;
   const obj41 = {
     size: "sm",
     variant: "secondary",
@@ -215,126 +340,10 @@ export function useWaterwheelsCardEligible(arg0) {
   });
 }
 export function WaterwheelsCard(card) {
-  let game;
-  let items;
-  let items1;
-  let items2;
-  let items3;
-  let items4;
-  let obj16;
-  let obj3;
-  let obj7;
-  card = card.card;
-  const onAction = card.onAction;
-  let first;
-  function handleAction(arg0) {
-    onAction(arg0, card);
-  }
-  let tmp = closure_11();
-  dependencyMap = tmp;
-  let tmp2 = card;
-  let tmp3 = dependencyMap;
-  let obj = card(504);
-  if (obj.useStateFromStores([], () => {
-    authorizationStatus = authorizationStatus.authorizationStatus;
-    let tmp = "notifications_permission" !== card.clientEligibility;
-    if (!tmp) {
-      tmp = authorizationStatus === constants.UNDETERMINED || authorizationStatus === constants.DENIED;
-    }
-    return tmp;
-  })) {
-    const layout = card.layout;
-    if ("server_row" === layout.type) {
-      let obj2 = { style: tmp.card, children: closure_9(WaterwheelsServerRowRenderer, obj3) };
-      obj3 = { server: layout, onAction: handleAction };
-      return closure_9(closure_5, obj2);
-    } else if ("carousel" === layout.type) {
-      let obj4 = { style: tmp.card, children: items2 };
-      let obj5 = { style: tmp.row, children: items };
-      let tmp10 = null;
-      if (null != layout.header.iconUrl) {
-        let obj6 = { style: tmp.icon, source: obj7 };
-        obj7 = { uri: layout.header.iconUrl };
-        tmp10 = closure_9(onAction(5851), obj6);
-      }
-      items = [tmp10, ];
-      const obj8 = { children: items1 };
-      const obj9 = { variant: "heading-xs/semibold", children: layout.header.title };
-      items1 = [closure_9(tmp2(5761).Heading, obj9), ];
-      const obj10 = { variant: "body-sm/normal", children: layout.header.subtitle };
-      items1[1] = closure_9(tmp2(5761).Text, obj10);
-      items[1] = closure_10(closure_5, obj8);
-      items2 = [tmp8(closure_5, obj5), ];
-      const obj11 = {
-        horizontal: true,
-        contentContainerStyle: tmp.rail,
-        children: items3.map((children) => {
-              let items;
-              let obj4;
-              const obj = { style: game.game, children: items };
-              items = [, , , , ];
-              const obj2 = { variant: "body-xs/medium", children: children.rank };
-              items[0] = React4(Text_Text.Text, obj2);
-              let tmp4Result = null;
-              const tmp = authStore;
-              const tmp2 = hasOwnProperty;
-              const tmp3 = game;
-              if (null != children.coverUrl) {
-                const obj3 = { style: tmp3.hero, source: obj4 };
-                obj4 = { uri: children.coverUrl };
-                tmp4Result = tmp4(FastImageDefault, obj3);
-              }
-              items[1] = tmp4Result;
-              const obj5 = { variant: "heading-sm/semibold", children: children.name };
-              items[2] = React4(Text_Text.Heading, obj5);
-              const obj6 = { variant: "body-sm/normal", children: children.description };
-              items[3] = React4(Text_Text.Text, obj6);
-              let tmp4Result2 = null;
-              if (null != children.server) {
-                const obj7 = { server: children.server, onAction: handleAction };
-                tmp4Result2 = tmp4(WaterwheelsServerRowRenderer, obj7);
-              }
-              items[4] = tmp4Result2;
-              return tmp(tmp2, obj, children.gameId);
-            })
-      };
-      items3 = layout.items;
-      items2[1] = closure_9(first, obj11);
-      return closure_10(closure_5, obj4);
-    } else {
-      first = card.actions[0];
-      const obj12 = { style: tmp.card, children: items4 };
-      const obj13 = { variant: "heading-sm/semibold", children: layout.title };
-      items4 = [closure_9(tmp2(5761).Heading, obj13), , , ];
-      const obj14 = { variant: "body-md/normal", children: layout.body };
-      items4[1] = closure_9(tmp2(5761).Text, obj14);
-      let tmp21Result = null;
-      const tmp19 = closure_10;
-      const tmp20 = closure_5;
-      if (null != layout.imageUrl) {
-        const obj15 = { style: tmp.media, source: obj16 };
-        obj16 = { uri: layout.imageUrl };
-        tmp21Result = tmp21(onAction(5851), obj15);
-      }
-      items4[2] = tmp21Result;
-      let tmp21Result2 = null;
-      if (null != first) {
-        tmp21Result2 = null;
-        if (null != layout.actionLabel) {
-          const obj17 = {
-            text: layout.actionLabel,
-            onPress() {
-                      onAction(first, card);
-                    }
-          };
-          tmp21Result2 = tmp21(tmp2(5768).Button, obj17);
-        }
-      }
-      items4[3] = tmp21Result2;
-      return tmp19(tmp20, obj12);
-    }
-  } else {
-    const tmp4 = null;
-    return null;
-  }
+  let obj2;
+  const obj = { fallback: null, children: React4(WaterwheelsCardContent, obj2) };
+  obj2 = {};
+  const ErrorBoundary = entry_data_ErrorBoundary.ErrorBoundary;
+  const merged = Object.assign(card);
+  return React4(ErrorBoundary, obj, card.card.id);
 }

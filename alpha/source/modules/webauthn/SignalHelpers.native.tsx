@@ -1,9 +1,9 @@
-// Module ID: 6884
-// Function ID: 6885
+// Module ID: 6887
+// Function ID: 6888
 // Name: SignalHelpers
-// Dependencies: [5, 3, 6885, 6886, 2]
+// Dependencies: [5, 3, 6888, 6889, 2]
 
-// Module 6884 (SignalHelpers)
+// Module 6887 (SignalHelpers)
 import LoggerDefault from "Logger" /* 3 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

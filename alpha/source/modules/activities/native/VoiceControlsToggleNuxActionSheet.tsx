@@ -1,18 +1,18 @@
-// Module ID: 19562
-// Function ID: 19563
+// Module ID: 19597
+// Function ID: 19598
 // Name: VoiceControlsToggleNuxActionSheet
-// Dependencies: [32, 19, 17, 5142, 4987, 21, 5141, 575, 8914, 504, 5396, 9014, 5761, 1113, 5768, 2]
+// Dependencies: [32, 19, 17, 5144, 4989, 21, 5143, 575, 8919, 504, 5398, 9019, 5763, 1113, 5770, 2]
 // Exports: default
 
-// Module 19562 (VoiceControlsToggleNuxActionSheet)
+// Module 19597 (VoiceControlsToggleNuxActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

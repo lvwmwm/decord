@@ -1,71 +1,39 @@
 // Module ID: 5256
 // Function ID: 5257
-// Dependencies: [32, 19, 5238, 5251, 5246]
-// Exports: useRiveColor
+// Dependencies: [32, 5240, 5253]
+// Exports: useRiveBoolean
 
 // Module 5256
-import react from "react" /* 19 */;
-import react2 from "react" /* 5238 */;
-import _mod5251 from "module_5251" /* 5251 */;
+import react from "react" /* 5240 */;
+import _mod5253 from "module_5253" /* 5253 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-let tmp;
-const RiveColor2 = tmp(5246);
-react.useCallback;
-const f34607 = (colorProperty, arg1) => colorProperty.colorProperty(arg1);
+function getBooleanProperty(booleanProperty, arg1) {
+  return booleanProperty.booleanProperty(arg1);
+}
 
-export function useRiveColor(FillColor, instance) {
-  let closure_0;
-  let tmp10;
+export function useRiveBoolean(reducedMotion, instance) {
+  let tmp3;
+  let tmp4;
   let tmp5;
-  let tmp6;
-  let tmp8;
-  const obj = react2;
-  const cResult = obj.c(8);
-  const obj2 = _mod5251;
-  const tmp4 = _slicedToArray(obj2.useRiveProperty(instance, FillColor, f34607), 3);
-  [tmp5, tmp6] = tmp4;
-  require = tmp6;
-  if (cResult[0] !== tmp5) {
-    let fromIntResult;
-    if (undefined !== tmp5) {
-      let RiveColor = RiveColor2.RiveColor;
-      fromIntResult = RiveColor.fromInt(tmp5);
-    }
-    cResult[0] = tmp5;
-    cResult[1] = fromIntResult;
-    tmp8 = fromIntResult;
-  } else {
-    tmp8 = cResult[1];
-  }
-  if (cResult[2] !== tmp6) {
-    const fn = function p(str) {
-      let fromHexStringResult = str;
-      if (typeof str === "string") {
-        const RiveColor = RiveColor2.RiveColor;
-        fromHexStringResult = RiveColor.fromHexString(str);
+  const obj = react;
+  const cResult = obj.c(4);
+  const obj2 = _mod5253;
+  [tmp3, tmp4, tmp5] = obj2.useRiveProperty(instance, reducedMotion, getBooleanProperty);
+  _slicedToArray(obj2.useRiveProperty(instance, reducedMotion, getBooleanProperty), 3);
+  if (cResult[0] === tmp5) {
+    if (cResult[1] === tmp4) {
+      let tmp6;
+      if (cResult[2] === tmp3) {
+        tmp6 = cResult[3];
       }
-      tmp6(fromHexStringResult.toInt());
-    };
-    cResult[2] = tmp6;
-    cResult[3] = fn;
-    tmp10 = fn;
-  } else {
-    tmp10 = cResult[3];
-  }
-  if (cResult[4] === tmp4[2]) {
-    if (cResult[5] === tmp10) {
-      let tmp11;
-      if (cResult[6] === tmp8) {
-        tmp11 = cResult[7];
-      }
-      return tmp11;
+      return tmp6;
     }
   }
-  const obj3 = { value: tmp8, setValue: tmp10, error: tmp4[2] };
-  cResult[4] = tmp4[2];
-  cResult[5] = tmp10;
-  cResult[6] = tmp8;
-  cResult[7] = obj3;
-  tmp11 = obj3;
+  const obj3 = { value: tmp3, setValue: tmp4, error: tmp5 };
+  cResult[0] = tmp5;
+  cResult[1] = tmp4;
+  cResult[2] = tmp3;
+  cResult[3] = obj3;
+  tmp6 = obj3;
 }

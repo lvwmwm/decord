@@ -1,9 +1,9 @@
-// Module ID: 6706
-// Function ID: 6707
+// Module ID: 6709
+// Function ID: 6710
 // Name: SpotifyStore
-// Dependencies: [2142, 502, 6707, 6840, 5895, 6891, 5813, 9052, 1072, 6709, 1089, 3, 4985, 572, 559, 11872, 12, 1252, 558, 15753, 6987, 1380, 504, 8862, 2]
+// Dependencies: [2142, 502, 6710, 6843, 5898, 6894, 5815, 9057, 1072, 6712, 1089, 3, 4987, 572, 559, 11881, 12, 1252, 558, 15766, 6990, 1380, 504, 8867, 2]
 
-// Module 6706 (SpotifyStore)
+// Module 6709 (SpotifyStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,21 +11,21 @@ import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Timers from "Timers" /* 4985 */;
-import useIsSpeaking from "useIsSpeaking" /* 6987 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8862 */;
-import SpotifyActionCreators from "SpotifyActionCreators" /* 11872 */;
-import stopSyncingUserActivityDefault from "stopSyncingUserActivity" /* 15753 */;
+import Timers from "Timers" /* 4987 */;
+import useIsSpeaking from "useIsSpeaking" /* 6990 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8867 */;
+import SpotifyActionCreators from "SpotifyActionCreators" /* 11881 */;
+import stopSyncingUserActivityDefault from "stopSyncingUserActivity" /* 15766 */;
 import RunningGameStore from "RunningGameStore" /* 2142 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6707 */;
-import IdleStore from "IdleStore" /* 6840 */;
-import PresenceStore from "PresenceStore" /* 5895 */;
-import SpeakingStore from "SpeakingStore" /* 6891 */;
-import VoiceStateStore from "VoiceStateStore" /* 5813 */;
-import SpotifyConstants from "SpotifyConstants" /* 9052 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6710 */;
+import IdleStore from "IdleStore" /* 6843 */;
+import PresenceStore from "PresenceStore" /* 5898 */;
+import SpeakingStore from "SpeakingStore" /* 6894 */;
+import VoiceStateStore from "VoiceStateStore" /* 5815 */;
+import SpotifyConstants from "SpotifyConstants" /* 9057 */;
 import Constants from "Constants" /* 1072 */;
-import Platforms from "Platforms" /* 6709 */;
+import Platforms from "Platforms" /* 6712 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,13 +38,13 @@ let closure_17;
 let closure_19;
 let closure_20;
 let map1;
-const f89942 = (is_active) => is_active.is_active;
-const f89943 = (party) => {
+const f90114 = (is_active) => is_active.is_active;
+const f90115 = (party) => {
   const tmp = null != party.party && null != party.party.id && closure_1_14(party.party.id);
   return tmp;
 };
-const f89946 = () => closure_1_35.stop();
-const f89953 = () => {
+const f90118 = () => closure_1_35.stop();
+const f90125 = () => {
   let accessToken;
   let accountId;
   let obj2;
@@ -85,12 +85,12 @@ function upsertAccount(accountId, accessToken) {
       obj._requestedDisconnect = false;
       obj._requestedConnect = false;
       const obj2 = _modDef12;
-      obj.handleDeviceStateChange = obj2.throttle(f89953, closure_29);
+      obj.handleDeviceStateChange = obj2.throttle(f90125, closure_29);
       obj.accountId = accountId;
       obj.accessToken = accessToken;
       const self2 = this;
       const self3 = this;
-      const interval = new obj(4985).Interval();
+      const interval = new obj(4987).Interval();
       obj.pingInterval = interval;
       const self4 = this;
       const self5 = this;
@@ -151,7 +151,7 @@ function activitySync(userId, activity, arg2) {
           continue;
         } else {
           let arr = tmp5[tmp4];
-          let found = arr.find(f89942);
+          let found = arr.find(f90114);
           if (null == found) {
             continue;
           } else {
@@ -260,7 +260,7 @@ function handleUserActivitySyncStop() {
           continue;
         } else {
           let arr = tmp15[tmp14];
-          let found = arr.find(f89942);
+          let found = arr.find(f90114);
           if (null == found) {
             continue;
           } else {
@@ -339,7 +339,7 @@ function autoPause() {
             continue;
           } else {
             let arr = tmp4[tmp3];
-            let found = arr.find(f89942);
+            let found = arr.find(f90114);
             if (null == found) {
               continue;
             } else {
@@ -576,10 +576,10 @@ class SpotifySocket {
     obj._requestedDisconnect = false;
     obj._requestedConnect = false;
     let obj2 = _modDef12;
-    obj.handleDeviceStateChange = obj2.throttle(f89953, closure_29);
+    obj.handleDeviceStateChange = obj2.throttle(f90125, closure_29);
     obj.accountId = accountId;
     obj.accessToken = accessToken;
-    const interval = new obj(4985).Interval();
+    const interval = new obj(4987).Interval();
     obj.pingInterval = interval;
     obj.backoff = new BackoffDefault(undefined, MINUTE);
     const tmp2 = new BackoffDefault(undefined, MINUTE);
@@ -597,7 +597,7 @@ class SpotifySocket {
       self._requestedDisconnect = false;
       self._requestedConnect = true;
       ({ accountId, accessToken } = self);
-      const SpotifyAPI = self(11872).SpotifyAPI;
+      const SpotifyAPI = self(11881).SpotifyAPI;
       const request = { url: constants.PLAYER, query: obj, onlyRetryOnAuthorizationErrors: true };
       const _HermesInternal = HermesInternal;
       const get = SpotifyAPI.get;
@@ -782,7 +782,7 @@ class SpotifyStore extends Store {
                 continue;
               } else {
                 let arr = tmp6[tmp5];
-                let found = arr.find(f89942);
+                let found = arr.find(f90114);
                 if (null == found) {
                   continue;
                 } else {
@@ -800,7 +800,7 @@ class SpotifyStore extends Store {
         flag = false;
         if (null != tmp3) {
           const userId = closure_4.userId;
-          const findActivityResult = closure_10.findActivity(userId, f89943);
+          const findActivityResult = closure_10.findActivity(userId, f90115);
           if (null == findActivityResult) {
             closure_37.start(closure_25, () => {
               const tmp = null != _null2 && _null2.userId === userId;
@@ -850,7 +850,7 @@ class SpotifyStore extends Store {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f89942);
+            let found = arr.find(f90114);
             if (null == found) {
               continue;
             } else {
@@ -909,7 +909,7 @@ class SpotifyStore extends Store {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f89942);
+            let found = arr.find(f90114);
             if (null == found) {
               continue;
             } else {
@@ -964,7 +964,7 @@ class SpotifyStore extends Store {
     if (null == _null) {
       let findActivityResult = null;
       if (null != _null2) {
-        findActivityResult = PresenceStore.findActivity(_null2.userId, f89943);
+        findActivityResult = PresenceStore.findActivity(_null2.userId, f90115);
       }
       return findActivityResult;
     } else {
@@ -1154,7 +1154,7 @@ let obj = {
       if (id === AuthenticationStore.getId()) {
         const result = VoiceStateStore.isCurrentClientInVoiceChannel();
         const obj5 = { userId: id, checkSoundSharing: true };
-        const obj8 = device(6987);
+        const obj8 = device(6990);
         if (result) {
           if (obj8.getIsSpeaking(obj5)) {
             if (null != closure_3) {
@@ -1163,7 +1163,7 @@ let obj = {
             }
           }
         }
-        timeout1.start(100, f89946, false);
+        timeout1.start(100, f90118, false);
       }
       if (null != tmp10) {
         if (!(null != device && null != _null2 && 0 === position && !isPlaying)) {
@@ -1246,7 +1246,7 @@ let obj = {
             continue;
           } else {
             let arr = tmp5[tmp4];
-            let found = arr.find(f89942);
+            let found = arr.find(f90114);
             if (null == found) {
               continue;
             } else {
@@ -1321,7 +1321,7 @@ let obj = {
           }
         }
       }
-      timeout1.start(100, f89946, false);
+      timeout1.start(100, f90118, false);
     }
     return false;
   },
@@ -1342,7 +1342,7 @@ let obj = {
             }
           }
         }
-        timeout1.start(100, f89946, false);
+        timeout1.start(100, f90118, false);
       }
       return acc;
     }, false);

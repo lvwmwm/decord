@@ -1,20 +1,20 @@
-// Module ID: 10117
-// Function ID: 10118
+// Module ID: 10125
+// Function ID: 10126
 // Name: PremiumUpsellTooltipActionSheet
-// Dependencies: [19, 17, 4987, 21, 5141, 575, 5171, 5396, 5851, 1187, 5761, 5768, 5382, 2]
+// Dependencies: [19, 17, 4989, 21, 5143, 575, 5173, 5398, 5854, 1187, 5763, 5770, 5384, 2]
 // Exports: default
 
-// Module 10117 (PremiumUpsellTooltipActionSheet)
+// Module 10125 (PremiumUpsellTooltipActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4987 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5171 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5382 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5396 */;
-import FastImageDefault from "FastImage" /* 5851 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5173 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5398 */;
+import FastImageDefault from "FastImage" /* 5854 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -26,8 +26,8 @@ let size;
 let size1;
 let tmp3;
 const native = tmp3(1187);
-const Text_Text = tmp3(5761);
-const components_Button_Button = tmp3(5768);
+const Text_Text = tmp3(5763);
+const components_Button_Button = tmp3(5770);
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);

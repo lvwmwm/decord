@@ -1,27 +1,27 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12433
+// Function ID: 12434
 // Name: ConjureRemovedItems
-// Dependencies: [19, 17, 21, 5141, 575, 1113, 9347, 8819, 12303, 8787, 6162, 5761, 5208, 7130, 3995, 7201, 7115, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 1113, 9354, 8824, 12310, 8792, 6165, 5763, 5210, 7133, 3995, 7204, 7118, 2]
 // Exports: ConjureRemoveEverythingField, default, formatWithAppTag
 
-// Module 12426 (ConjureRemovedItems)
+// Module 12433 (ConjureRemovedItems)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import react_native from "react-native" /* 5208 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import Stack_Stack from "Stack/Stack" /* 6162 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 7115 */;
-import FormCheckbox from "FormCheckbox" /* 7130 */;
-import TableRowGroup2 from "TableRowGroup" /* 7201 */;
-import FolderIcon from "FolderIcon" /* 8787 */;
-import AppsIcon from "AppsIcon" /* 8819 */;
-import BotTagDefault from "BotTag" /* 9347 */;
-import RobotIcon from "RobotIcon" /* 12303 */;
+import react_native from "react-native" /* 5210 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import Stack_Stack from "Stack/Stack" /* 6165 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 7118 */;
+import FormCheckbox from "FormCheckbox" /* 7133 */;
+import TableRowGroup2 from "TableRowGroup" /* 7204 */;
+import FolderIcon from "FolderIcon" /* 8792 */;
+import AppsIcon from "AppsIcon" /* 8824 */;
+import BotTagDefault from "BotTag" /* 9354 */;
+import RobotIcon from "RobotIcon" /* 12310 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -109,7 +109,7 @@ function OptionalItemRow(arg0) {
   }
   obj3 = { direction: "horizontal", spacing: 8, align: "center", children: items };
   const obj4 = { kind: item.kind };
-  Stack = tmp2(6162).Stack;
+  Stack = tmp2(6165).Stack;
   items = [metroRequire(ItemIcon, obj4), , ];
   const obj5 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.optionalLabel, children: item.label };
   items[1] = metroRequire(Text_Text.Text, obj5);

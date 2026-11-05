@@ -1,28 +1,28 @@
-// Module ID: 20061
-// Function ID: 20062
+// Module ID: 20097
+// Function ID: 20098
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 5142, 5012, 20057, 1072, 21, 5141, 575, 7258, 1493, 5398, 1652, 1252, 5894, 8993, 7121, 5761, 10807, 1187, 11785, 5768, 1113, 2]
+// Dependencies: [32, 19, 17, 5144, 5014, 20093, 1072, 21, 5143, 575, 7261, 1493, 5400, 1652, 1252, 5897, 8998, 7124, 5763, 10813, 1187, 11793, 5770, 1113, 2]
 // Exports: default
 
-// Module 20061 (GuildSettingsRoleTemplate)
+// Module 20097 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5398 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5894 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7258 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11785 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5400 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5897 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7261 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11793 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5142 */;
-import GuildStore from "GuildStore" /* 5012 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20057 */;
+import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import GuildStore from "GuildStore" /* 5014 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20093 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5141 */;
+import createStyles_mod from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let title;
@@ -42,8 +42,8 @@ let tmp11;
 let tmp2;
 let unpackModuleId;
 const _mod1652 = tmp11(1652);
-const _modDef8993 = tmp2(8993);
-const PaginationDefault = tmp2(10807);
+const _modDef8998 = tmp2(8998);
+const PaginationDefault = tmp2(10813);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = react_native);
 ({ PermissionTemplateTypes: c9, PermissionTemplates: c10, DEFAULT_TEMPLATE_TYPE: unpackModuleId } = GuildSettingsRoleConstants);
@@ -172,7 +172,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   const values = Object.values(closure_10);
   let obj3 = { ref, style: tmp.container, children: items5 };
   let obj4 = { style: tmp.sliderContainer, children: items4 };
-  let obj5 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8993, obj6) };
+  let obj5 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef8998, obj6) };
   obj6 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   items4 = [closure_14(ref1, obj5), ];
   let obj7 = {

@@ -1,15 +1,15 @@
-// Module ID: 11104
-// Function ID: 11105
+// Module ID: 11113
+// Function ID: 11114
 // Name: conjurePreviewGameCapture
-// Dependencies: [5, 6979, 11105, 11106, 11107, 1490, 2]
+// Dependencies: [5, 6982, 11114, 11115, 11116, 1490, 2]
 // Exports: hasConjurePreviewGameCapture, readConjurePreviewGameCapture
 
-// Module 11104 (conjurePreviewGameCapture)
-import conjureMediaTickets from "conjureMediaTickets" /* 11107 */;
+// Module 11113 (conjurePreviewGameCapture)
+import conjureMediaTickets from "conjureMediaTickets" /* 11116 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11105 */;
-import ConjureGameCapturesStore from "ConjureGameCapturesStore" /* 11106 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11114 */;
+import ConjureGameCapturesStore from "ConjureGameCapturesStore" /* 11115 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c4, c6;

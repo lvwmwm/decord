@@ -1,29 +1,29 @@
-// Module ID: 16568
-// Function ID: 16569
+// Module ID: 16581
+// Function ID: 16582
 // Name: links
-// Dependencies: [5, 4989, 2167, 6585, 1072, 2147, 1252, 5062, 1377, 16569, 16541, 16570, 5147, 16571, 5839, 9085, 16572, 9479, 16548, 12010, 12007, 7703, 2153, 16573, 16576, 2]
+// Dependencies: [5, 4991, 2167, 6588, 1072, 2147, 1252, 5064, 1377, 16582, 16554, 16583, 5149, 16584, 5842, 9091, 16585, 9486, 16561, 12019, 12016, 7705, 2153, 16586, 16589, 2]
 
-// Module 16568 (links)
+// Module 16581 (links)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5062 */;
-import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5147 */;
-import RPCErrorDefault from "RPCError" /* 9479 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12007 */;
-import RPCHelpers from "RPCHelpers" /* 12010 */;
-import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 16541 */;
-import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 16569 */;
-import internalDeepLinks from "internalDeepLinks" /* 16570 */;
-import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 16571 */;
-import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 16573 */;
-import getFrameChannelIdDefault from "getFrameChannelId" /* 16576 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5064 */;
+import CrossPlatformNativeUtilsDefault from "CrossPlatformNativeUtils" /* 5149 */;
+import RPCErrorDefault from "RPCError" /* 9486 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 12016 */;
+import RPCHelpers from "RPCHelpers" /* 12019 */;
+import validateEmbeddedAppFrame from "validateEmbeddedAppFrame" /* 16554 */;
+import getEmbeddedActivityPopoutWindowKeyDefault from "getEmbeddedActivityPopoutWindowKey" /* 16582 */;
+import internalDeepLinks from "internalDeepLinks" /* 16583 */;
+import fetchIsLinkTrusted2 from "fetchIsLinkTrusted" /* 16584 */;
+import openActivityShareLinkModal2 from "openActivityShareLinkModal" /* 16586 */;
+import getFrameChannelIdDefault from "getFrameChannelId" /* 16589 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4989 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
 import ApplicationStore from "ApplicationStore" /* 2167 */;
-import Constants_mod from "Constants" /* 6585 */;
+import Constants_mod from "Constants" /* 6588 */;
 import Constants_mod2 from "Constants" /* 1072 */;
 import Constants_mod3 from "Constants" /* 2147 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16548 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16561 */;
 import size from "module_2" /* 2 */;
 
 let c2, currentEmbeddedActivity, getApplication;
@@ -39,7 +39,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const openUserSettings = tmp(7703);
+const openUserSettings = tmp(7705);
 function trackExternalLink(application, arg1, arg2) {
   const str = new URL(arg1);
   const tmp = "client.vibeyard.tools" === str.hostname && "/link" === str.pathname;
@@ -424,9 +424,9 @@ let obj4 = {
     ({ custom_id: importDefault, message: dependencyMap, link_id: _asyncToGenerator } = socket.args);
     let tmp2 = dependencyMap;
     let tmp = socket;
-    obj = socket(12010);
+    obj = socket(12019);
     let result = obj.validatePostMessageTransport(socket.transport);
-    let obj2 = socket(12010);
+    let obj2 = socket(12019);
     const validateApplicationResult = obj2.validateApplication(socket.application);
     let c4 = validateApplicationResult;
     if (null == validateApplicationResult) {

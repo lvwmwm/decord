@@ -1,20 +1,20 @@
-// Module ID: 18680
-// Function ID: 18681
+// Module ID: 18710
+// Function ID: 18711
 // Name: useInterestPickerCatalog
-// Dependencies: [19, 18681, 18682, 2]
+// Dependencies: [19, 18711, 18712, 2]
 // Exports: default
 
-// Module 18680 (useInterestPickerCatalog)
-import InterestPickerCatalogs from "InterestPickerCatalogs" /* 18682 */;
+// Module 18710 (useInterestPickerCatalog)
+import InterestPickerCatalogs from "InterestPickerCatalogs" /* 18712 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/waterwheels/interest/native/useInterestPickerCatalog.tsx");
 
-export default function useInterestPickerCatalog(arg0) {
+export default function useInterestPickerCatalog(InterestPickerStep) {
   let interestPickerGameList;
-  let obj = interestPickerGameList(18681);
-  interestPickerGameList = obj.useInterestPickerGameList(arg0);
+  let obj = interestPickerGameList(18711);
+  interestPickerGameList = obj.useInterestPickerGameList(InterestPickerStep);
   const items = [interestPickerGameList];
   return react.useMemo(() => {
     let interestPickerCatalog = null;

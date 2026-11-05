@@ -1,13 +1,13 @@
-// Module ID: 5771
-// Function ID: 5772
+// Module ID: 5773
+// Function ID: 5774
 // Name: spring/spring
-// Dependencies: [5379, 5380, 1652, 2]
+// Dependencies: [5381, 5382, 1652, 2]
 // Exports: withSpring
 
-// Module 5771 (spring/spring)
+// Module 5773 (spring/spring)
 import _mod1652 from "module_1652" /* 1652 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5379 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5380 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5381 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5382 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -26,7 +26,7 @@ let c1;
 let c2;
 let c3;
 [tmp2, tmp3, tmp4, tmp5, tmp6] = items;
-function withSpring(bound, Reanimated3DefaultSpringConfig, arg2, BalanceCounterTsx1) {
+function withSpring(point2, Reanimated3DefaultSpringConfig, arg2, BalanceCounterTsx1) {
   let tmp3;
   let str = arg2;
   if (arg2 === undefined) {
@@ -47,7 +47,7 @@ function withSpring(bound, Reanimated3DefaultSpringConfig, arg2, BalanceCounterT
   } else {
     tmp3 = c1;
   }
-  return _undefined2(bound, tmp3, BalanceCounterTsx1);
+  return _undefined2(point2, tmp3, BalanceCounterTsx1);
 }
 const items1 = [tmp3, tmp4, tmp5, tmp6];
 withSpring.__closure = items1;

@@ -1,23 +1,23 @@
-// Module ID: 10985
-// Function ID: 10986
+// Module ID: 10991
+// Function ID: 10992
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8341, 8340, 1072, 21, 5141, 575, 5729, 1282, 12, 10986, 7345, 1187, 11004, 11005, 1113, 7430, 7139, 1260, 7306, 2]
+// Dependencies: [5, 32, 19, 17, 8346, 8345, 1072, 21, 5143, 575, 5731, 1282, 12, 10992, 7348, 1187, 11010, 11011, 1113, 7433, 7142, 1260, 7309, 2]
 
-// Module 10985 (GroupDMInviteManagementScreen)
+// Module 10991 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import NavigatorHeader from "NavigatorHeader" /* 7139 */;
+import NavigatorHeader from "NavigatorHeader" /* 7142 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InviteRecord from "InviteRecord" /* 8341 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8340 */;
+import InviteRecord from "InviteRecord" /* 8346 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8345 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, dependencyMap, inviter;
@@ -40,7 +40,7 @@ function GroupDMInviteManagement(channelId) {
   const tmp = closure_11();
   [first, dependencyMap] = react.useState([]);
   [first1, closure_3] = react.useState(true);
-  first(5729)(() => {
+  first(5731)(() => {
     function fetchInvites() {
       return obj(...arguments);
     }
@@ -136,15 +136,15 @@ function GroupDMInviteManagement(channelId) {
   }, items);
   const callback = react.useCallback((code) => code.code, []);
   if (first1) {
-    tmp13 = jsx(channelId(7345).SceneLoadingIndicator, {});
+    tmp13 = jsx(channelId(7348).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
     const EmptyState = channelId(1187).EmptyState;
     const intl = channelId(1113).intl;
     const intl2 = channelId(1113).intl;
-    tmp13 = <EmptyState lightSource={tmp5(11004)} darkSource={tmp5(11005)} title={intl.string(channelId(1113).t["+nLJkZ"])} body={intl2.string(channelId(1113).t.F53CAc)} />;
+    tmp13 = <EmptyState lightSource={tmp5(11010)} darkSource={tmp5(11011)} title={intl.string(channelId(1113).t["+nLJkZ"])} body={intl2.string(channelId(1113).t.F53CAc)} />;
   } else {
     const tmp12 = channelId;
-    tmp13 = jsx(channelId(7430).FlashList, { contentContainerStyle: tmp.listContent, data: memo, keyExtractor: callback, renderItem: tmp10 });
+    tmp13 = jsx(channelId(7433).FlashList, { contentContainerStyle: tmp.listContent, data: memo, keyExtractor: callback, renderItem: tmp10 });
   }
   return tmp13;
 }
@@ -178,7 +178,7 @@ const memoResult = react.memo(function GroupDMInviteManagementScreen(channelId) 
     obj3 = NavigatorHeader;
     return obj;
   }, items);
-  return jsx(channelId(7306).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  return jsx(channelId(7309).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 });
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
 

@@ -1,9 +1,17 @@
 // Module ID: 13155
 // Function ID: 13156
-// Dependencies: [13156]
+// Dependencies: []
 
 // Module 13155
-import _mod13156 from "module_13156" /* 13156 */;
+let obj2;
+const obj = { parse: obj2 };
+obj2 = {
+  prelude() {
+    return this.createSingleNodeList(this.MediaQueryList());
+  },
+  block() {
+    return this.Block(false);
+  }
+};
 
-
-export default _mod13156;
+export default obj;

@@ -1,15 +1,15 @@
-// Module ID: 7107
-// Function ID: 7108
+// Module ID: 7110
+// Function ID: 7111
 // Name: FormSeparator
-// Dependencies: [19, 17, 21, 5141, 575, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 2]
 // Exports: default
 
-// Module 7107 (FormSeparator)
+// Module 7110 (FormSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

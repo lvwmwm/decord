@@ -1,14 +1,14 @@
-// Module ID: 12181
-// Function ID: 12182
+// Module ID: 12190
+// Function ID: 12191
 // Name: game_console/GameConsoleAlertUtils
-// Dependencies: [19, 2135, 9887, 1072, 21, 5171, 4974, 1113, 6094, 12182, 9870, 2]
+// Dependencies: [19, 2135, 9893, 1072, 21, 5173, 4976, 1113, 6097, 12191, 9876, 2]
 
-// Module 12181 (game_console/GameConsoleAlertUtils)
+// Module 12190 (game_console/GameConsoleAlertUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6094 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9870 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9887 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6097 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9876 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9893 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2135 */;
 import Constants from "Constants" /* 1072 */;
@@ -89,7 +89,7 @@ let obj = {
     };
     const show = tmp.show;
     ({ body, errorCodeMessage, dismissCallback: actions_AlertActionCreatorsDefault.close });
-    const SelfDismissibleAlertBody = reconnectPlatformType(12182).SelfDismissibleAlertBody;
+    const SelfDismissibleAlertBody = reconnectPlatformType(12191).SelfDismissibleAlertBody;
     show(obj);
   }
 };

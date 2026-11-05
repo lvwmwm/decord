@@ -1,84 +1,132 @@
-// Module ID: 19844
-// Function ID: 19845
+// Module ID: 19879
+// Function ID: 19880
 // Name: InterestPickerFlow
-// Dependencies: [32, 19, 21, 19841, 19845, 19847, 7145, 19849, 18684, 1113, 2537, 2]
+// Dependencies: [32, 19, 1072, 21, 19876, 19880, 18712, 1252, 19882, 18714, 1113, 2537, 2]
 // Exports: default
 
-// Module 19844 (InterestPickerFlow)
+// Module 19879 (InterestPickerFlow)
 import Fragment from "Fragment" /* 21 */;
-import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7145 */;
-import InterestGamePickerDefault from "InterestGamePicker" /* 18684 */;
-import InterestPickerPicksContext from "InterestPickerPicksContext" /* 19841 */;
-import InterestGuildsAPI from "InterestGuildsAPI" /* 19845 */;
-import useInterestGuildJoinsDefault from "useInterestGuildJoins" /* 19847 */;
-import InterestGuildRecommendationsDefault from "InterestGuildRecommendations" /* 19849 */;
+import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
+import InterestPickerCatalogs from "InterestPickerCatalogs" /* 18712 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let tmp;
-const intl3 = tmp(1113);
+const AnalyticEvents = Constants.AnalyticEvents;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestPickerFlow.tsx");
 
-export default function InterestPickerFlow(onComplete) {
-  let closure_4;
-  let first;
+export default function InterestPickerFlow(arm) {
+  let intl;
+  let intl2;
   let tmp13;
-  onComplete = onComplete.onComplete;
-  first = undefined;
-  closure_4 = undefined;
-  let tmp = require;
-  const tmp2 = dependencyMap;
-  const catalog = onComplete.catalog;
-  const obj = InterestPickerPicksContext;
+  arm = arm.arm;
+  const onComplete = arm.onComplete;
+  let getPicks;
+  let first;
+  let tmp = arm;
+  const tmp2 = getPicks;
+  const catalog = arm.catalog;
+  let obj = arm(getPicks[4]);
   const interestPickerPicks = obj.useInterestPickerPicks();
-  const getPicks = interestPickerPicks.getPicks;
+  getPicks = interestPickerPicks.getPicks;
   const setPicks = interestPickerPicks.setPicks;
-  [first, closure_4] = react.useState("picker");
-  const first1 = _slicedToArray(react.useState(InterestGuildsAPI.createInterestGuildsResource), 1)[0];
-  const tmp8 = useInterestGuildJoinsDefault();
-  let closure_6 = react.useRef(false);
-  const items = [first1];
-  const effect = react.useEffect(() => () => first1.dispose(), items);
-  const obj2 = useNavigatorBackPressHandler;
-  obj2.useNavigatorBackPressHandler(() => {
-    let flag = "guilds" === first;
-    if (flag) {
-      closure_4("picker");
-      flag = true;
+  const tmp4 = setPicks(first.useState("picker"), 2);
+  first = tmp4[0];
+  let closure_5 = tmp4[1];
+  const first1 = setPicks(first.useState(arm(getPicks[5]).createInterestGuildsResource), 1)[0];
+  const ref = first.useRef(false);
+  const ref2 = first.useRef(0);
+  const items = [arm];
+  const memo = first.useMemo(() => {
+    const obj = { arm, catalog_version: InterestPickerCatalogs.INTEREST_PICKER_CATALOG_VERSION };
+    return obj;
+  }, items);
+  const items1 = [first, memo];
+  const effect = first.useEffect(() => {
+    if ("picker" === first) {
+      const _Date = Date;
+      ref2.current = Date.now();
+      const obj = AnalyticsUtilsDefault;
+      obj.track(AnalyticEvents.WATERWHEELS_INTEREST_PICKER_EXPOSURE, memo);
     }
-    return flag;
-  });
+  }, items1);
+  const items2 = [first1];
+  const effect1 = first.useEffect(() => () => first1.dispose(), items2);
   if ("guilds" === first) {
-    InterestGuildRecommendationsDefault;
-    tmp13 = <tmp7Result gameIds={getPicks()} resource={first1} joins={tmp8} onBack={function onBack() {
-      return closure_4("picker");
-    }} onComplete={function onComplete() {
-      const tmp = getPicks();
-      if (!ref.current) {
-        tmp2.current = true;
-        setPicks(tmp);
-        first1.dispose();
-        onComplete(tmp, false);
-      }
-    }} />;
+    const obj2 = {
+      analyticsContext: memo,
+      gameIds: getPicks(),
+      resource: first1,
+      onBack() {
+          return closure_5("picker");
+        },
+      onComplete() {
+          const tmp = getPicks();
+          if (!ref.current) {
+            tmp2.current = true;
+            setPicks(tmp);
+            first1.dispose();
+            onComplete(tmp, false);
+          }
+        }
+    };
+    const tmp12 = onComplete(tmp2[8]);
+    tmp13 = first1(tmp12, obj2);
   } else {
-    InterestGamePickerDefault;
-    const intl = intl3.intl;
-    const intl2 = intl3.intl;
-    tmp13 = <tmp7Result2 catalog={catalog} title={intl.string(tmp7(2537)["5MUKTF"])} subtitle={intl2.string(tmp7(2537)["z/57xV"])} minSelection={1} initialSelection={getPicks()} onContinue={function onContinue(arg0) {
-      setPicks(arg0);
-      first1.setPicks(arg0);
-      closure_4("guilds");
-    }} onSkip={function onSkip(arg0) {
-      if (!ref.current) {
-        tmp.current = true;
-        setPicks(arg0);
-        first1.dispose();
-        onComplete(arg0, true);
-      }
-    }} />;
+    const obj3 = {
+      catalog,
+      title: intl.string(onComplete(tmp2[11])["5MUKTF"]),
+      subtitle: intl2.string(onComplete(tmp2[11])["z/57xV"]),
+      minSelection: 1,
+      initialSelection: getPicks(),
+      onGameToggle(game_id, grid_position, selected) {
+          const obj = { game_id, grid_position, selected };
+          const track = AnalyticsUtilsDefault.track;
+          const WATERWHEELS_INTEREST_PICKER_TILE_TOGGLE = AnalyticEvents.WATERWHEELS_INTEREST_PICKER_TILE_TOGGLE;
+          AnalyticsUtilsDefault;
+          const merged = Object.assign(memo);
+          return track(WATERWHEELS_INTEREST_PICKER_TILE_TOGGLE, obj);
+        },
+      onSearch(query_length, result_count) {
+          const obj = { query_length, result_count, no_results: 0 === result_count };
+          const track = AnalyticsUtilsDefault.track;
+          const WATERWHEELS_INTEREST_PICKER_SEARCH = AnalyticEvents.WATERWHEELS_INTEREST_PICKER_SEARCH;
+          AnalyticsUtilsDefault;
+          const merged = Object.assign(memo);
+          return track(WATERWHEELS_INTEREST_PICKER_SEARCH, obj);
+        },
+      onContinue(pick_ids) {
+          const obj = { pick_count: pick_ids.length, pick_ids, duration_ms: Math.max(0, Date.now() - ref2.current) };
+          const track = AnalyticsUtilsDefault.track;
+          const WATERWHEELS_INTEREST_PICKER_CONTINUE = AnalyticEvents.WATERWHEELS_INTEREST_PICKER_CONTINUE;
+          AnalyticsUtilsDefault;
+          const merged = Object.assign(memo);
+          track(WATERWHEELS_INTEREST_PICKER_CONTINUE, obj);
+          setPicks(pick_ids);
+          first1.setPicks(pick_ids);
+          closure_5("guilds");
+        },
+      onSkip(pick_ids) {
+          const obj = { pick_count: pick_ids.length, pick_ids, duration_ms: Math.max(0, Date.now() - ref2.current) };
+          const track = AnalyticsUtilsDefault.track;
+          const WATERWHEELS_INTEREST_PICKER_SKIP = AnalyticEvents.WATERWHEELS_INTEREST_PICKER_SKIP;
+          AnalyticsUtilsDefault;
+          const merged = Object.assign(memo);
+          track(WATERWHEELS_INTEREST_PICKER_SKIP, obj);
+          if (!ref.current) {
+            tmp4.current = true;
+            setPicks(pick_ids);
+            first1.dispose();
+            onComplete(pick_ids, true);
+          }
+        }
+    };
+    const tmp16 = onComplete(tmp2[9]);
+    intl = tmp(tmp2[10]).intl;
+    intl2 = tmp(tmp2[10]).intl;
+    tmp13 = first1(tmp16, obj3);
   }
   return tmp13;
 };

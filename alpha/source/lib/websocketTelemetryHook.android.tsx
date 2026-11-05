@@ -1,10 +1,10 @@
-// Module ID: 20402
-// Function ID: 20403
+// Module ID: 20437
+// Function ID: 20438
 // Name: websocketTelemetryHook
 // Dependencies: [2]
 // Exports: installWebsocketTelemetryHook
 
-// Module 20402 (websocketTelemetryHook)
+// Module 20437 (websocketTelemetryHook)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/websocketTelemetryHook.android.tsx");

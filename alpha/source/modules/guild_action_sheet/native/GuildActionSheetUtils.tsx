@@ -1,12 +1,12 @@
-// Module ID: 16033
-// Function ID: 16034
+// Module ID: 16045
+// Function ID: 16046
 // Name: GuildActionSheetUtils
-// Dependencies: [5073, 1072, 504, 2]
+// Dependencies: [5075, 1072, 504, 2]
 // Exports: useGuildActionSheetPermissions
 
-// Module 16033 (GuildActionSheetUtils)
+// Module 16045 (GuildActionSheetUtils)
 import Constants from "Constants" /* 1072 */;
-import PermissionStore from "PermissionStore" /* 5073 */;
+import PermissionStore from "PermissionStore" /* 5075 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

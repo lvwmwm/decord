@@ -1,17 +1,17 @@
-// Module ID: 13036
-// Function ID: 13037
+// Module ID: 13043
+// Function ID: 13044
 // Name: ConjureMentionSuggestions
-// Dependencies: [19, 21, 5141, 575, 7201, 1113, 3995, 7116, 1187, 5195, 12346, 2]
+// Dependencies: [19, 21, 5143, 575, 7204, 1113, 3995, 7119, 1187, 5197, 12353, 2]
 // Exports: default
 
-// Module 13036 (ConjureMentionSuggestions)
+// Module 13043 (ConjureMentionSuggestions)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3995 from "module_3995" /* 3995 */;
-import TableRowGroup3 from "TableRowGroup" /* 7201 */;
+import TableRowGroup3 from "TableRowGroup" /* 7204 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;

@@ -1,29 +1,32 @@
 // Module ID: 13113
 // Function ID: 13114
 // Name: tokenize
-// Dependencies: [13055]
+// Dependencies: [13062]
 
 // Module 13113 (tokenize)
-import tokenize from "tokenize" /* 13055 */;
+import tokenize from "tokenize" /* 13062 */;
 
 let obj2;
-const Hash = tokenize.TYPE.Hash;
+const Ident = tokenize.TYPE.Ident;
 let obj = {
-  name: "Hash",
+  name: "ClassSelector",
   structure: obj2,
   parse() {
-    let scanner;
-    const tokenStart = this.scanner.tokenStart;
-    this.eat(Hash);
-    const obj = { type: "Hash", loc: this.getLocation(tokenStart, this.scanner.tokenStart), value: scanner.substrToCursor(tokenStart + 1) };
-    scanner = this.scanner;
+    const self = this;
+    const scanner = this.scanner;
+    if (!scanner.isDelim(46)) {
+      self.error("Full stop is expected");
+    }
+    const iter = self.scanner;
+    iter.next();
+    const obj = { type: "ClassSelector", loc: self.getLocation(self.scanner.tokenStart - 1, self.scanner.tokenEnd), name: self.consume(Ident) };
     return obj;
   },
-  generate(value) {
-    this.chunk("#");
-    this.chunk(value.value);
+  generate(name) {
+    this.chunk(".");
+    this.chunk(name.name);
   }
 };
-obj2 = { value: String };
+obj2 = { name: String };
 
 export default obj;

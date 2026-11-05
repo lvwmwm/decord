@@ -1,17 +1,17 @@
-// Module ID: 12352
-// Function ID: 12353
+// Module ID: 12359
+// Function ID: 12360
 // Name: useConjureSettingPickerOptions
-// Dependencies: [19, 5071, 5083, 5196, 1385, 6979, 504, 7559, 12353, 5786, 6176, 2]
+// Dependencies: [19, 5073, 5085, 5198, 1385, 6982, 504, 7561, 12360, 5788, 6179, 2]
 // Exports: conjureSettingPickedIds, default, useConjureSettingsGuildId, withPickCap, withSavedPicks
 
-// Module 12352 (useConjureSettingPickerOptions)
-import ConjureUtils from "ConjureUtils" /* 7559 */;
+// Module 12359 (useConjureSettingPickerOptions)
+import ConjureUtils from "ConjureUtils" /* 7561 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 5071 */;
-import RelationshipStore from "RelationshipStore" /* 5083 */;
-import StreamerModeStore from "StreamerModeStore" /* 5196 */;
+import GuildChannelStore from "GuildChannelStore" /* 5073 */;
+import RelationshipStore from "RelationshipStore" /* 5085 */;
+import StreamerModeStore from "StreamerModeStore" /* 5198 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6979 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,8 +47,8 @@ export default function useConjureSettingPickerOptions(arg0, type) {
   }
   conjureGuildRoles = useConjureGuildRoles(tmp5);
   let tmp8 = null;
-  const useConjureGuildMemberUsers = tmp(12353).useConjureGuildMemberUsers;
-  tmp(12353);
+  const useConjureGuildMemberUsers = tmp(12360).useConjureGuildMemberUsers;
+  tmp(12360);
   if ("user" === type.type) {
     tmp8 = arg0;
   }

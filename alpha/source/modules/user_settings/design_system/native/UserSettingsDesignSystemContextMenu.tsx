@@ -1,27 +1,27 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18068
+// Function ID: 18069
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [19, 17, 21, 14598, 7398, 8565, 11790, 5875, 18041, 18042, 11785, 5141, 575, 12, 10053, 5768, 7118, 5761, 2]
+// Dependencies: [19, 17, 21, 14611, 7401, 8570, 11798, 5878, 18069, 18070, 11793, 5143, 575, 12, 10061, 5770, 7121, 5763, 2]
 // Exports: default
 
-// Module 18040 (UserSettingsDesignSystemContextMenu)
+// Module 18068 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5761 */;
-import components_Button_Button from "components/Button/Button" /* 5768 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5875 */;
-import Card_Card from "Card/Card" /* 7118 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7398 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 8565 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11785 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11790 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14598 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 18041 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 18042 */;
+import Text_Text from "Text/Text" /* 5763 */;
+import components_Button_Button from "components/Button/Button" /* 5770 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5878 */;
+import Card_Card from "Card/Card" /* 7121 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7401 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 8570 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11793 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11798 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14611 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 18069 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 18070 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

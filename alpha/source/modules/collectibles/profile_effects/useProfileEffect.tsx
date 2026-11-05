@@ -1,15 +1,15 @@
-// Module ID: 8940
-// Function ID: 8941
+// Module ID: 8945
+// Function ID: 8946
 // Name: useProfileEffect
-// Dependencies: [19, 7860, 7875, 7866, 504, 7859, 2]
+// Dependencies: [19, 7865, 7880, 7871, 504, 7864, 2]
 // Exports: default
 
-// Module 8940 (useProfileEffect)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7859 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7866 */;
+// Module 8945 (useProfileEffect)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7864 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7871 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7860 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7875 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7865 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7880 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,13 +1,13 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12801
+// Function ID: 12802
 // Name: useConjureIncompleteAppNotice
-// Dependencies: [32, 19, 5012, 12295, 504, 1113, 3995, 2]
+// Dependencies: [32, 19, 5014, 12302, 504, 1113, 3995, 2]
 // Exports: default
 
-// Module 12794 (useConjureIncompleteAppNotice)
+// Module 12801 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5012 */;
+import GuildStore from "GuildStore" /* 5014 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ export default function useConjureIncompleteAppNotice(arg0) {
   _require = arg0;
   const tmp = guildId;
   let tmp2 = dependencyMap;
-  const tmp3 = guildId(12295)(arg0);
+  const tmp3 = guildId(12302)(arg0);
   guildId = undefined;
   if (tmp3 != null) {
     guildId = tmp3.guildId;

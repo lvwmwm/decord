@@ -1,18 +1,18 @@
-// Module ID: 12291
-// Function ID: 12292
+// Module ID: 12298
+// Function ID: 12299
 // Name: ConjureSafetyHoldSheet
-// Dependencies: [19, 17, 21, 5141, 575, 12292, 7502, 7457, 5761, 5768, 1113, 3995, 11136, 5382, 2]
+// Dependencies: [19, 17, 21, 5143, 575, 12299, 7504, 7460, 5763, 5770, 1113, 3995, 11144, 5384, 2]
 // Exports: default
 
-// Module 12291 (ConjureSafetyHoldSheet)
+// Module 12298 (ConjureSafetyHoldSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5382 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 11136 */;
-import useConjureSafetyRecheckDefault from "useConjureSafetyRecheck" /* 12292 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5384 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 11144 */;
+import useConjureSafetyRecheckDefault from "useConjureSafetyRecheck" /* 12299 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5141 */;
+import createStyles from "createStyles" /* 5143 */;
 import size from "module_2" /* 2 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
@@ -35,28 +35,28 @@ function ConjureSafetyHoldSheet(projectId) {
   projectId = projectId.projectId;
   const tmp = closure_8();
   const tmp4 = useConjureSafetyRecheckDefault(projectId);
-  let obj = projectId(12292);
+  let obj = projectId(12299);
   const conjureSafetyRecheckNotice = obj.getConjureSafetyRecheckNotice(tmp4);
-  const obj2 = projectId(12292);
+  const obj2 = projectId(12299);
   const conjureSafetyHoldCopy = obj2.getConjureSafetyHoldCopy(tmp4);
   let status;
   if (tmp4 != null) {
     status = tmp4.status;
   }
-  const obj3 = { header: closure_4(projectId(7457).BottomSheetTitleHeader, obj4), children: tmp10(tmp11, obj5) };
-  const ActionSheet = tmp5(7502).ActionSheet;
+  const obj3 = { header: closure_4(projectId(7460).BottomSheetTitleHeader, obj4), children: tmp10(tmp11, obj5) };
+  const ActionSheet = tmp5(7504).ActionSheet;
   obj5 = { style: tmp.content, children: items };
   items = [, , , ];
   obj4 = { title: conjureSafetyHoldCopy.title };
   const obj6 = { variant: "body-md/normal", color: "text-muted", children: conjureSafetyHoldCopy.body };
-  items[0] = closure_4(projectId(5761).Text, obj6);
+  items[0] = closure_4(projectId(5763).Text, obj6);
   let tmp9Result = null;
   tmp10 = closure_5;
   tmp11 = View;
   if (null != conjureSafetyRecheckNotice) {
     const obj7 = { variant: "body-md/medium", color: closure_7[conjureSafetyRecheckNotice.type], accessibilityRole: str2, accessibilityLiveRegion: "polite", children: conjureSafetyRecheckNotice.message };
     str2 = undefined;
-    const Text = tmp5(5761).Text;
+    const Text = tmp5(5763).Text;
     if ("critical" === conjureSafetyRecheckNotice.type) {
       str2 = "alert";
     }
@@ -74,7 +74,7 @@ function ConjureSafetyHoldSheet(projectId) {
           return obj.requestConjureSafetyRecheck(projectId);
         }
     };
-    const Button = tmp5(5768).Button;
+    const Button = tmp5(5770).Button;
     intl = tmp5(1113).intl;
     status1 = undefined;
     if (tmp4 != null) {
@@ -84,7 +84,7 @@ function ConjureSafetyHoldSheet(projectId) {
   }
   items[2] = tmp9Result2;
   let str4 = "secondary";
-  const Button2 = tmp5(5768).Button;
+  const Button2 = tmp5(5770).Button;
   if ("cleared" === status) {
     str4 = "primary";
   }
