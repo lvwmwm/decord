@@ -448,7 +448,7 @@ export function useCommand(arg0, commandId) {
         }
       }
     }
-    return { command: "flexDirection", application: "createStyles" };
+    return { command: "find", application: "T" };
   }, items);
 }
 export function useCommandsForApplication(arg0, arg1, arg2) {

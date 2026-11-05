@@ -16,7 +16,7 @@ let closure_4;
 let tmp2;
 const KeyboardAwareViewDefault = tmp2(6954);
 ({ jsx: c3, jsxs: closure_4 } = Fragment);
-const hasOwnProperty = { input: "", error: "cix" };
+const hasOwnProperty = { input: "", error: "applicationId" };
 const PureComponent = react.PureComponent;
 class UserSettingsInputAlert extends PureComponent {
   constructor() {

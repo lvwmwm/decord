@@ -60,7 +60,7 @@ obj5 = {
     }
   },
   touchableGetInitialState() {
-    return { touchable: { touchState: "Array", responderID: 0 } };
+    return { touchable: { touchState: "Array", responderID: false } };
   },
   touchableHandleResponderTerminationRequest() {
     return !this.props.rejectResponderTermination;

@@ -338,7 +338,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "Array", message_id: "children", stage_instance_id: "toString", guild_id: "value", guild_scheduled_event_id: "displayName", user_id: "o", email_token: "isArray", application_id: "isArray", entrypoint: "isArray", widget_id: "Date" };
+  let obj2 = { channel_id: "Array", message_id: "children", stage_instance_id: "match", guild_id: "width", guild_scheduled_event_id: "displayName", user_id: "Error", email_token: "isArray", application_id: "isArray", entrypoint: "isArray", widget_id: "Boolean" };
   const tmp = require;
   let tmp2 = dependencyMap;
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {

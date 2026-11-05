@@ -510,7 +510,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
                   intl11 = tmp4(1113).intl;
                   obj16 = obj11;
                 } else if (isInParty) {
-                  const obj12 = { label: intl10.string(tmp4(1113).t.KC26NR), disabled: true, footerLabel: "a" };
+                  const obj12 = { label: intl10.string(tmp4(1113).t.KC26NR), disabled: true, footerLabel: "children" };
                   intl10 = tmp4(1113).intl;
                   obj16 = obj12;
                 } else if (isAskToJoin) {
@@ -643,7 +643,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "flexDirection", ctaButtonIsLoading: "Array", footerLabel: "PX_8", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "__d", maxPartySize: "Error", partyMemberAvatarURIs: "x", partySizeText: -0.0000000000000000000000000000000000000000000000000000000000000000000000000000724056768094727, platformIconKeys: [], coverImageUrl: 0.0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000003082780587462054, detailsText: 20068874678945513000000000000000000000, title: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000034882544519551 };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1113).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "flexDirection", ctaButtonIsLoading: "Array", footerLabel: "PX_8", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "applicationId", maxPartySize: "toString", partyMemberAvatarURIs: "Math", partySizeText: null, platformIconKeys: [], coverImageUrl: null, detailsText: null, title: null };
           intl = tmp4(1113).intl;
           if (contentClassificationVisibility === tmp4(13706).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1113).intl;

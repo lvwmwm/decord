@@ -865,7 +865,7 @@ export function useNavigationBuilder(StackRouter, UNSTABLE_routeNamesChangeBehav
               const Provider2 = react2.NavigationHelpersContext.Provider;
               const NavigationStateListenerProvider = NavigationStateListenerProvider2.NavigationStateListenerProvider;
               const Provider3 = _mod1539.FocusedRouteKeyContext.Provider;
-              return <Provider value="Array">{0}</Provider>;
+              return <Provider value="Array">{false}</Provider>;
             })
       };
       tmp26Result25 = tmp26(1588);

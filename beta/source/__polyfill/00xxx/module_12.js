@@ -297754,7 +297754,7 @@ let fn = () => {
       }
       return obj.apply(self2, arr5);
     }
-    const items7 = [{ name: "wrapper", func: "__d" }];
+    const items7 = [{ name: "wrapper", func: "cix" }];
     __data__[wrapper.name] = items7;
     lodash.prototype.at = fn10Result17;
     function wrapperValue() {

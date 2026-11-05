@@ -150,7 +150,7 @@ function PreviewItem(dragRegion) {
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flexDirection", name: "Array", color: "__d", expanded: null, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "flexDirection", name: "Array", color: "__d", expanded: "justifyContent", children: items };
         items = [tmp2];
         return element;
       }

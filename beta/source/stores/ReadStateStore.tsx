@@ -3723,7 +3723,7 @@ obj = {
     const item = found.forEach((messageId) => {
       messageId = messageId.messageId;
       const value = ReadState.get(messageId.channelId, messageId.readStateType);
-      value.ack({ messageId, local: true, immediate: "HermesInternal", force: "flexDirection", isExplicitUserAction: "isEnabled", trackAnalytics: null });
+      value.ack({ messageId, local: true, immediate: "HermesInternal", force: "flexDirection", isExplicitUserAction: "_checkSession", trackAnalytics: null });
     });
     if (context === closure_42) {
       const push = navigation.push;

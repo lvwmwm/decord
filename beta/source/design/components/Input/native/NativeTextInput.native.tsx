@@ -118,7 +118,7 @@ export const NativeTextInput = function TextInput(ref) {
   }
   const obj3 = { ref: tmp6Result4.mergeRefs(ref1, ref) };
   const tmp6Result3 = ref1(5187);
-  let merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "flexDirection", defaultValue: "createStyles" }));
+  let merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "find", defaultValue: "T" }));
   tmp6Result4 = ref1(5187);
   const tmp16 = closure_10(closure_5, obj3);
   let tmp18Result = tmp16;

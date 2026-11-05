@@ -30,11 +30,11 @@ let closure_7 = createStyles.createStyles((arg0) => {
   const obj = { height: 380, zIndex: 1 };
   const merged = Object.assign(absoluteFillObject.absoluteFillObject);
   const obj2 = { wrapper: obj, cloudsImage: obj3, cloudsImageLight: obj5, gradient: obj6, solidBackground: obj7 };
-  const tmp3 = arg0 ? { top: "fileBytes" } : { bottom: "fileBytes" };
+  const tmp3 = arg0 ? { top: "r" } : { bottom: "r" };
   const merged1 = Object.assign(tmp3);
   obj3 = { width: "100%" };
   const merged2 = Object.assign(tmp.absoluteFillObject);
-  const tmp6 = arg0 ? { top: "fileBytes" } : { bottom: "fileBytes" };
+  const tmp6 = arg0 ? { top: "r" } : { bottom: "r" };
   const merged3 = Object.assign(tmp6);
   if (arg0) {
     obj4 = {};

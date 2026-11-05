@@ -53,7 +53,7 @@ export function useControllerPIPState(channelId) {
   let obj = channelId(layoutManager[15]);
   const sharedValue = useSharedValue(obj.getVoicePanelPIPScaleCached());
   let obj2 = pipAvoidanceSpecs;
-  const ref = pipAvoidanceSpecs.useRef({ id: "diversity", mode: "isArray", width: false, height: null, containerHeight: "transparent", showSecondaryPIP: null, scale: sharedValue });
+  const ref = pipAvoidanceSpecs.useRef({ id: "diversity", mode: "isArray", width: false, height: null, containerHeight: 0, showSecondaryPIP: false, scale: sharedValue });
   let obj3 = channelId(layoutManager[10]);
   const items = [obj7];
   const stateFromStores = obj3.useStateFromStores(items, () => PIPSpeakerStore.getSpeakerId(channelId));

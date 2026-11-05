@@ -151,7 +151,7 @@ export function filterByUserId(id, guildId) {
         if (null != guildId) {
           const tmp10Result = tmp10(572);
           tmp10Result.dispatch({ type: "AUDIT_LOG_FETCH_START" });
-          const obj2 = { userId: id, action: "Array", targetId: "isArray" };
+          const obj2 = { userId: id, action: "r", targetId: "isArray" };
           const promise = makeRequest(guildId, obj2);
           nextPromise = promise.then(f118537, f118538);
         }

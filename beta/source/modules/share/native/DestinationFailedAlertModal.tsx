@@ -61,7 +61,7 @@ function FailedUserRow(user) {
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: items2 };
-    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1187).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: null };
+    const obj4 = { user, guildId: "Boolean", status: tmp13, isMobileOnline: tmp6, isVROnline: tmp7, size: user(1187).AvatarSizes.XSMALL, avatarDecoration: user.avatarDecoration, autoStatusCutout: 32 };
     tmp13 = null;
     const Avatar = tmp2(1187).Avatar;
     const tmp10 = View;

@@ -7,7 +7,7 @@
 // Module 64 (sizesDiffer)
 let size;
 
-let closure_0 = { width: "flexDirection", height: "createStyles" };
+let closure_0 = { width: "find", height: "T" };
 
 export default function sizesDiffer(arg0, arg1) {
   size = arg0 || closure_0;

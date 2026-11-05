@@ -134,7 +134,7 @@ export default function FamilyCenterParentalControlsSettings() {
         setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "flexDirection", headerRight: "createStyles" });
+    stackNavigation.setOptions({ title: "find", headerRight: "T" });
   }, items1);
   const SCREEN_TIME_CONTROLS = FamilyCenterSubPages.SCREEN_TIME_CONTROLS;
   const obj4 = { label: intl.string(stackNavigation(selectedSubPage[14]).t["+o1pDZ"]), id: FamilyCenterSubPages.CONTENT_AND_SOCIAL, page: closure_9(require("FamilyCenterParentalControlsContentAndSocial"), {}) };

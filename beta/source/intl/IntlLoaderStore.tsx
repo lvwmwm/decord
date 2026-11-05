@@ -365,7 +365,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "unicodeVersion",
+    error: "children",
     localeData: _modDef2064,
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
@@ -373,7 +373,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "dispatch", error: "Array" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "children" });
       }
     },
     setLoadingFailed(error, arg1) {

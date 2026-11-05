@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 78 (pointsDiffer)
-let closure_0 = { x: "flexDirection", y: "createStyles" };
+let closure_0 = { x: "find", y: "T" };
 
 export default function pointsDiffer(arg0, arg1) {
   const point = arg0 || closure_0;

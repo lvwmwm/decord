@@ -154,7 +154,7 @@ export function getActionFromState(index, initialRouteName) {
         }
         let tmp22 = substr1[substr1.length - 1];
         let _Object3 = Object;
-        let merged1 = Object.assign(obj5, { initial: "Array", screen: "Path", params: "y", state: "HermesInternal" });
+        let merged1 = Object.assign(obj5, { initial: "Array", screen: "y", params: "isArray", state: "Button" });
         if (1 === substr1.length) {
           if (undefined === substr1[0].key) {
             let params;

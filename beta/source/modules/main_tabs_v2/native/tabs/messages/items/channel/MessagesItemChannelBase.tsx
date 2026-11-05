@@ -97,7 +97,7 @@ const memoResult = react.memo(function MessagesItemChannelBase(channel) {
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "flexDirection", activities: "createStyles" };
+      obj3 = { status: "find", activities: "T" };
     }
     return obj3;
   });

@@ -5261,7 +5261,7 @@ let fn2 = function r() {
     if (tmp2) {
       if ("_listeners" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_listeners", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_listeners", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._listeners = undefined;
       }
@@ -5399,19 +5399,19 @@ let fn3 = function r(pm) {
     if (tmp2) {
       if ("_playbackHeartbeatInterval" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_playbackHeartbeatInterval", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._playbackHeartbeatInterval = undefined;
       }
       if ("_playheadShouldBeProgressing" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_playheadShouldBeProgressing", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._playheadShouldBeProgressing = undefined;
       }
       if ("pm" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "pm", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "pm", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.pm = undefined;
       }
@@ -5538,7 +5538,7 @@ let fn4 = function r(on) {
     if (tmp2) {
       if ("viewErrored" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "viewErrored", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "viewErrored", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.viewErrored = undefined;
       }
@@ -5646,13 +5646,13 @@ let fn5 = function r(pm) {
     if (tmp2) {
       if ("_watchTimeTrackerLastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_watchTimeTrackerLastCheckedTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._watchTimeTrackerLastCheckedTime = undefined;
       }
       if ("pm" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "pm", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "pm", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.pm = undefined;
       }
@@ -5720,31 +5720,31 @@ let fn6 = function r(pm) {
     if (tmp2) {
       if ("_playbackTimeTrackerLastPlayheadPosition" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_playbackTimeTrackerLastPlayheadPosition", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._playbackTimeTrackerLastPlayheadPosition = undefined;
       }
       if ("_lastTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastTime = undefined;
       }
       if ("_isAdPlaying" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_isAdPlaying", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_isAdPlaying", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._isAdPlaying = undefined;
       }
       if ("_callbackUpdatePlaybackTime" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_callbackUpdatePlaybackTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._callbackUpdatePlaybackTime = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "pm", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.pm = undefined;
       }
@@ -5889,7 +5889,7 @@ let fn7 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "pm", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.pm = undefined;
       }
@@ -6058,31 +6058,31 @@ const fn9 = function r(pm) {
     if (tmp2) {
       if ("_lastCheckedTime" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastCheckedTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastCheckedTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastCheckedTime = undefined;
       }
       if ("_lastPlayheadTime" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayheadTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastPlayheadTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastPlayheadTime = undefined;
       }
       if ("_lastPlayheadTimeUpdatedTime" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastPlayheadTimeUpdatedTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastPlayheadTimeUpdatedTime = undefined;
       }
       if ("_rebuffering" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_rebuffering", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_rebuffering", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._rebuffering = undefined;
       }
       if ("pm" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "pm", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "pm", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.pm = undefined;
       }
@@ -6223,7 +6223,7 @@ const fn10 = function r(pm) {
     if (tmp2) {
       if ("pm" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "pm", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "pm", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.pm = undefined;
       }
@@ -6318,31 +6318,31 @@ const fn11 = function r(on) {
     if (tmp2) {
       if ("_lastPlayerHeight" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_lastPlayerHeight", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastPlayerHeight", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastPlayerHeight = undefined;
       }
       if ("_lastPlayerWidth" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_lastPlayerWidth", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastPlayerWidth", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastPlayerWidth = undefined;
       }
       if ("_lastPlayheadPosition" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_lastPlayheadPosition", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastPlayheadPosition", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastPlayheadPosition = undefined;
       }
       if ("_lastSourceHeight" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_lastSourceHeight", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastSourceHeight", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastSourceHeight = undefined;
       }
       if ("_lastSourceWidth" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_lastSourceWidth", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastSourceWidth", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastSourceWidth = undefined;
       }
@@ -6453,7 +6453,7 @@ const fn12 = function r(on) {
     if (tmp2) {
       if ("isSeeking" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "isSeeking", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "isSeeking", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.isSeeking = undefined;
       }
@@ -6578,55 +6578,55 @@ const fn13 = function r(pm) {
     if (tmp2) {
       if ("_adHasPlayed" in self) {
         const _Object = Object;
-        Object.defineProperty(self, "_adHasPlayed", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_adHasPlayed", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._adHasPlayed = undefined;
       }
       if ("_adRequests" in self) {
         const _Object2 = Object;
-        Object.defineProperty(self, "_adRequests", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_adRequests", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._adRequests = undefined;
       }
       if ("_adResponses" in self) {
         const _Object3 = Object;
-        Object.defineProperty(self, "_adResponses", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_adResponses", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._adResponses = undefined;
       }
       if ("_currentAdRequestNumber" in self) {
         const _Object4 = Object;
-        Object.defineProperty(self, "_currentAdRequestNumber", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_currentAdRequestNumber", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._currentAdRequestNumber = undefined;
       }
       if ("_currentAdResponseNumber" in self) {
         const _Object5 = Object;
-        Object.defineProperty(self, "_currentAdResponseNumber", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_currentAdResponseNumber", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._currentAdResponseNumber = undefined;
       }
       if ("_prerollPlayTime" in self) {
         const _Object6 = Object;
-        Object.defineProperty(self, "_prerollPlayTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_prerollPlayTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._prerollPlayTime = undefined;
       }
       if ("_wouldBeNewAdPlay" in self) {
         const _Object7 = Object;
-        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_wouldBeNewAdPlay", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._wouldBeNewAdPlay = undefined;
       }
       if ("isAdBreak" in self) {
         const _Object8 = Object;
-        Object.defineProperty(self, "isAdBreak", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "isAdBreak", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.isAdBreak = undefined;
       }
       if ("pm" in self) {
         const _Object9 = Object;
-        Object.defineProperty(self, "pm", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "pm", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.pm = undefined;
       }
@@ -6931,7 +6931,7 @@ const fn14 = function r(one) {
     if (tmp2) {
       if ("lastWallClockTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "lastWallClockTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "lastWallClockTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self.lastWallClockTime = undefined;
       }
@@ -7768,73 +7768,73 @@ const fn18 = function r(mux, envKey) {
         let str14;
         if ("mux" in self) {
           const _Object = Object;
-          Object.defineProperty(self, "mux", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "mux", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.mux = undefined;
         }
         if ("envKey" in self) {
           const _Object2 = Object;
-          Object.defineProperty(self, "envKey", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "envKey", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.envKey = undefined;
         }
         if ("options" in self) {
           const _Object3 = Object;
-          Object.defineProperty(self, "options", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "options", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.options = undefined;
         }
         if ("eventQueue" in self) {
           const _Object4 = Object;
-          Object.defineProperty(self, "eventQueue", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "eventQueue", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.eventQueue = undefined;
         }
         if ("sampleRate" in self) {
           const _Object5 = Object;
-          Object.defineProperty(self, "sampleRate", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "sampleRate", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.sampleRate = undefined;
         }
         if ("disableCookies" in self) {
           const _Object6 = Object;
-          Object.defineProperty(self, "disableCookies", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "disableCookies", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.disableCookies = undefined;
         }
         if ("respectDoNotTrack" in self) {
           const _Object7 = Object;
-          Object.defineProperty(self, "respectDoNotTrack", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "respectDoNotTrack", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.respectDoNotTrack = undefined;
         }
         if ("previousBeaconData" in self) {
           const _Object8 = Object;
-          Object.defineProperty(self, "previousBeaconData", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "previousBeaconData", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.previousBeaconData = undefined;
         }
         if ("lastEventTime" in self) {
           const _Object9 = Object;
-          Object.defineProperty(self, "lastEventTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "lastEventTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.lastEventTime = undefined;
         }
         if ("rateLimited" in self) {
           const _Object10 = Object;
-          Object.defineProperty(self, "rateLimited", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "rateLimited", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.rateLimited = undefined;
         }
         if ("pageLevelData" in self) {
           const _Object11 = Object;
-          Object.defineProperty(self, "pageLevelData", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "pageLevelData", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.pageLevelData = undefined;
         }
         if ("viewerData" in self) {
           const _Object12 = Object;
-          Object.defineProperty(self, "viewerData", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+          Object.defineProperty(self, "viewerData", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
         } else {
           self.viewerData = undefined;
         }
@@ -8504,7 +8504,7 @@ const fn20 = function r(on) {
     if (tmp2) {
       if ("_lastEventTime" in self) {
         let _Object = Object;
-        Object.defineProperty(self, "_lastEventTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+        Object.defineProperty(self, "_lastEventTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
       } else {
         self._lastEventTime = undefined;
       }
@@ -8802,7 +8802,7 @@ class t {
         } else {
           if ("pageLoadEndTime" in callResult) {
             const _Object = Object;
-            Object.defineProperty(callResult, "pageLoadEndTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+            Object.defineProperty(callResult, "pageLoadEndTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
           } else {
             callResult.pageLoadEndTime = undefined;
           }
@@ -8815,7 +8815,7 @@ class t {
           } else {
             if ("pageLoadInitTime" in callResult) {
               const _Object2 = Object;
-              Object.defineProperty(callResult, "pageLoadInitTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+              Object.defineProperty(callResult, "pageLoadInitTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
             } else {
               callResult.pageLoadInitTime = undefined;
             }
@@ -8828,7 +8828,7 @@ class t {
             } else {
               if ("_destroyed" in callResult) {
                 const _Object3 = Object;
-                Object.defineProperty(callResult, "_destroyed", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                Object.defineProperty(callResult, "_destroyed", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
               } else {
                 callResult._destroyed = undefined;
               }
@@ -8841,7 +8841,7 @@ class t {
               } else {
                 if ("_heartBeatTimeout" in callResult) {
                   const _Object4 = Object;
-                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                  Object.defineProperty(callResult, "_heartBeatTimeout", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                 } else {
                   callResult._heartBeatTimeout = undefined;
                 }
@@ -8854,7 +8854,7 @@ class t {
                 } else {
                   if ("adTracker" in callResult) {
                     const _Object5 = Object;
-                    Object.defineProperty(callResult, "adTracker", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                    Object.defineProperty(callResult, "adTracker", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                   } else {
                     callResult.adTracker = undefined;
                   }
@@ -8867,7 +8867,7 @@ class t {
                   } else {
                     if ("dashjs" in callResult) {
                       const _Object6 = Object;
-                      Object.defineProperty(callResult, "dashjs", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                      Object.defineProperty(callResult, "dashjs", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                     } else {
                       callResult.dashjs = undefined;
                     }
@@ -8880,7 +8880,7 @@ class t {
                     } else {
                       if ("data" in callResult) {
                         const _Object7 = Object;
-                        Object.defineProperty(callResult, "data", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                        Object.defineProperty(callResult, "data", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                       } else {
                         callResult.data = undefined;
                       }
@@ -8893,7 +8893,7 @@ class t {
                       } else {
                         if ("disablePlayheadRebufferTracking" in callResult) {
                           const _Object8 = Object;
-                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                          Object.defineProperty(callResult, "disablePlayheadRebufferTracking", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                         } else {
                           callResult.disablePlayheadRebufferTracking = undefined;
                         }
@@ -8906,7 +8906,7 @@ class t {
                         } else {
                           if ("disableRebufferTracking" in callResult) {
                             const _Object9 = Object;
-                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                            Object.defineProperty(callResult, "disableRebufferTracking", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                           } else {
                             callResult.disableRebufferTracking = undefined;
                           }
@@ -8919,7 +8919,7 @@ class t {
                           } else {
                             if ("errorTracker" in callResult) {
                               const _Object10 = Object;
-                              Object.defineProperty(callResult, "errorTracker", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                              Object.defineProperty(callResult, "errorTracker", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                             } else {
                               callResult.errorTracker = undefined;
                             }
@@ -8932,7 +8932,7 @@ class t {
                             } else {
                               if ("errorTranslator" in callResult) {
                                 const _Object11 = Object;
-                                Object.defineProperty(callResult, "errorTranslator", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                Object.defineProperty(callResult, "errorTranslator", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                               } else {
                                 callResult.errorTranslator = undefined;
                               }
@@ -8945,7 +8945,7 @@ class t {
                               } else {
                                 if ("emitTranslator" in callResult) {
                                   const _Object12 = Object;
-                                  Object.defineProperty(callResult, "emitTranslator", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                  Object.defineProperty(callResult, "emitTranslator", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                 } else {
                                   callResult.emitTranslator = undefined;
                                 }
@@ -8958,7 +8958,7 @@ class t {
                                 } else {
                                   if ("getAdData" in callResult) {
                                     const _Object13 = Object;
-                                    Object.defineProperty(callResult, "getAdData", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                    Object.defineProperty(callResult, "getAdData", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                   } else {
                                     callResult.getAdData = undefined;
                                   }
@@ -8971,7 +8971,7 @@ class t {
                                   } else {
                                     if ("getPlayheadTime" in callResult) {
                                       const _Object14 = Object;
-                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                      Object.defineProperty(callResult, "getPlayheadTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                     } else {
                                       callResult.getPlayheadTime = undefined;
                                     }
@@ -8984,7 +8984,7 @@ class t {
                                     } else {
                                       if ("getStateData" in callResult) {
                                         const _Object15 = Object;
-                                        Object.defineProperty(callResult, "getStateData", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                        Object.defineProperty(callResult, "getStateData", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                       } else {
                                         callResult.getStateData = undefined;
                                       }
@@ -8997,7 +8997,7 @@ class t {
                                       } else {
                                         if ("stateDataTranslator" in callResult) {
                                           const _Object16 = Object;
-                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                          Object.defineProperty(callResult, "stateDataTranslator", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                         } else {
                                           callResult.stateDataTranslator = undefined;
                                         }
@@ -9010,7 +9010,7 @@ class t {
                                         } else {
                                           if ("hlsjs" in callResult) {
                                             const _Object17 = Object;
-                                            Object.defineProperty(callResult, "hlsjs", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                            Object.defineProperty(callResult, "hlsjs", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                           } else {
                                             callResult.hlsjs = undefined;
                                           }
@@ -9023,7 +9023,7 @@ class t {
                                           } else {
                                             if ("id" in callResult) {
                                               const _Object18 = Object;
-                                              Object.defineProperty(callResult, "id", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                              Object.defineProperty(callResult, "id", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                             } else {
                                               callResult.id = undefined;
                                             }
@@ -9036,7 +9036,7 @@ class t {
                                             } else {
                                               if ("longResumeTracker" in callResult) {
                                                 const _Object19 = Object;
-                                                Object.defineProperty(callResult, "longResumeTracker", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                Object.defineProperty(callResult, "longResumeTracker", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                               } else {
                                                 callResult.longResumeTracker = undefined;
                                               }
@@ -9049,7 +9049,7 @@ class t {
                                               } else {
                                                 if ("minimumRebufferDuration" in callResult) {
                                                   const _Object20 = Object;
-                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                  Object.defineProperty(callResult, "minimumRebufferDuration", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                 } else {
                                                   callResult.minimumRebufferDuration = undefined;
                                                 }
@@ -9062,7 +9062,7 @@ class t {
                                                 } else {
                                                   if ("mux" in callResult) {
                                                     const _Object21 = Object;
-                                                    Object.defineProperty(callResult, "mux", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                    Object.defineProperty(callResult, "mux", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                   } else {
                                                     callResult.mux = undefined;
                                                   }
@@ -9075,7 +9075,7 @@ class t {
                                                   } else {
                                                     if ("playbackEventDispatcher" in callResult) {
                                                       const _Object22 = Object;
-                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                      Object.defineProperty(callResult, "playbackEventDispatcher", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                     } else {
                                                       callResult.playbackEventDispatcher = undefined;
                                                     }
@@ -9088,7 +9088,7 @@ class t {
                                                     } else {
                                                       if ("playbackHeartbeat" in callResult) {
                                                         const _Object23 = Object;
-                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                        Object.defineProperty(callResult, "playbackHeartbeat", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                       } else {
                                                         callResult.playbackHeartbeat = undefined;
                                                       }
@@ -9101,7 +9101,7 @@ class t {
                                                       } else {
                                                         if ("playbackHeartbeatTime" in callResult) {
                                                           const _Object24 = Object;
-                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                          Object.defineProperty(callResult, "playbackHeartbeatTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                         } else {
                                                           callResult.playbackHeartbeatTime = undefined;
                                                         }
@@ -9114,7 +9114,7 @@ class t {
                                                         } else {
                                                           if ("playheadTime" in callResult) {
                                                             const _Object25 = Object;
-                                                            Object.defineProperty(callResult, "playheadTime", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                            Object.defineProperty(callResult, "playheadTime", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                           } else {
                                                             callResult.playheadTime = undefined;
                                                           }
@@ -9127,7 +9127,7 @@ class t {
                                                           } else {
                                                             if ("seekingTracker" in callResult) {
                                                               const _Object26 = Object;
-                                                              Object.defineProperty(callResult, "seekingTracker", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                              Object.defineProperty(callResult, "seekingTracker", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                             } else {
                                                               callResult.seekingTracker = undefined;
                                                             }
@@ -9140,7 +9140,7 @@ class t {
                                                             } else {
                                                               if ("sustainedRebufferThreshold" in callResult) {
                                                                 const _Object27 = Object;
-                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                                Object.defineProperty(callResult, "sustainedRebufferThreshold", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                               } else {
                                                                 callResult.sustainedRebufferThreshold = undefined;
                                                               }
@@ -9153,7 +9153,7 @@ class t {
                                                               } else {
                                                                 if ("watchTimeTracker" in callResult) {
                                                                   const _Object28 = Object;
-                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                                  Object.defineProperty(callResult, "watchTimeTracker", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                                 } else {
                                                                   callResult.watchTimeTracker = undefined;
                                                                 }
@@ -9166,7 +9166,7 @@ class t {
                                                                 } else {
                                                                   if ("currentFragmentPDT" in callResult) {
                                                                     const _Object29 = Object;
-                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                                    Object.defineProperty(callResult, "currentFragmentPDT", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                                   } else {
                                                                     callResult.currentFragmentPDT = undefined;
                                                                   }
@@ -9179,7 +9179,7 @@ class t {
                                                                   } else {
                                                                     if ("currentFragmentStart" in callResult) {
                                                                       const _Object30 = Object;
-                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "c", enumerable: "weary", configurable: "weary_face", writable: "pleading_face" });
+                                                                      Object.defineProperty(callResult, "currentFragmentStart", { value: "c", enumerable: "rice_ball", configurable: "rice", writable: "cooked_rice" });
                                                                     } else {
                                                                       callResult.currentFragmentStart = undefined;
                                                                     }

@@ -239,7 +239,7 @@ function useRichImageForActivity(activity, activityApplication) {
   }
   const data = useGame(canonicalGameId).data;
   if (null == activity) {
-    return { largeImage: "flexDirection", smallImage: "createStyles" };
+    return { largeImage: "find", smallImage: "T" };
   } else {
     let large_image;
     if (activity != null) {
