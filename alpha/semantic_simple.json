@@ -77,6 +77,18 @@
         "onyx": "#5865f214",
         "dark": "#5865f214"
     },
+    "BACKGROUND_FEEDBACK_CRITICAL": {
+        "ash": "#620615",
+        "light": "#620615",
+        "onyx": "#620615",
+        "dark": "#620615"
+    },
+    "BACKGROUND_FEEDBACK_INFO": {
+        "ash": "#003064",
+        "light": "#003064",
+        "onyx": "#003064",
+        "dark": "#003064"
+    },
     "BACKGROUND_FEEDBACK_MOD_CRITICAL": {
         "ash": "#d22d3914",
         "light": "#d22d3914",
@@ -106,6 +118,18 @@
         "light": "#d22d39",
         "onyx": "#d22d39",
         "dark": "#d22d39"
+    },
+    "BACKGROUND_FEEDBACK_POSITIVE": {
+        "ash": "#003d19",
+        "light": "#003d19",
+        "onyx": "#003d19",
+        "dark": "#003d19"
+    },
+    "BACKGROUND_FEEDBACK_WARNING": {
+        "ash": "#e09000",
+        "light": "#e09000",
+        "onyx": "#e09000",
+        "dark": "#e09000"
     },
     "BACKGROUND_MOD_MUTED": {
         "ash": "#97979f14",
