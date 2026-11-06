@@ -1,11 +1,12 @@
 // Module ID: 10639
 // Function ID: 10640
-// Dependencies: [41, 42, 93, 95, 98, 10640, 10514, 10518]
+// Dependencies: [41, 42, 93, 95, 98, 10632, 10465, 10466, 10470]
 
 // Module 10639
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10514 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10518 */;
-import REGEX_PARTS from "REGEX_PARTS" /* 10640 */;
+import EmptyDuration from "EmptyDuration" /* 10465 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10466 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10632 from "module_10632" /* 10632 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,60 +28,45 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let closure_6 = "(?:(?:\u043E\u043A\u043E\u043B\u043E|\u043F\u0440\u0438\u043C\u0435\u0440\u043D\u043E)\\s*(?:~\\s*)?)?(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")" + REGEX_PARTS.REGEX_PARTS.rightBoundary;
-class RUTimeUnitWithinFormatParser {
-  constructor() {
+const regExp = new RegExp("(" + _mod10632.TIME_UNITS_PATTERN + ")\\s{0,5}(?:fa|prima|precedente)(?=(?:\\W|$))", "i");
+const regExp1 = new RegExp("(" + _mod10632.TIME_UNITS_PATTERN + ")\\s{0,5}fa(?=(?:\\W|$))", "i");
+class ENTimeUnitAgoFormatParser {
+  constructor(strictMode) {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(RUTimeUnitWithinFormatParser);
+    _classCallCheck(this, ENTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
-    return tmp3(self, constructResult);
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.strictMode = strictMode;
+    return tmp3Result;
   }
 }
-_inherits(RUTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternLeftBoundary",
-  value: function patternLeftBoundary() {
-    return REGEX_PARTS.REGEX_PARTS.leftBoundary;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return this.strictMode ? regExp1 : regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "innerPattern",
-    value: function innerPattern(option) {
-      let _RegExp1;
-      const _RegExp = RegExp;
-      if (option.option.forwardDate) {
-        const self3 = this;
-        const self4 = this;
-        _RegExp1 = new _RegExp(tmp, REGEX_PARTS.REGEX_PARTS.flags);
-      } else {
-        const _HermesInternal = HermesInternal;
-        const combined = "(?:\u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435|\u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0438)\\s*" + tmp;
-        const self = this;
-        const self2 = this;
-        _RegExp1 = new _RegExp(combined, REGEX_PARTS.REGEX_PARTS.flags);
-      }
-      return _RegExp1;
-    }
-  },
-  {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
+      const parseDurationResult = _mod10632.parseDuration(arg1[1]);
+      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
       const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
     }
   }
 ];
 
-export default _createClass(RUTimeUnitWithinFormatParser, items);
+export default _createClass(ENTimeUnitAgoFormatParser, items);

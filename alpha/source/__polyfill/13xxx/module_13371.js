@@ -1,140 +1,253 @@
 // Module ID: 13371
 // Function ID: 13372
-// Dependencies: [13337, 13288, 13326, 13287, 13290, 13309, 13281]
+// Dependencies: [13258]
+// Exports: filenameIsInApp, node, nodeStackLineParser
 
 // Module 13371
-import _mod13287 from "module_13287" /* 13287 */;
-import _mod13288 from "module_13288" /* 13288 */;
-import module_13337 from "module_13337" /* 13337 */;
+import _mod13258 from "module_13258" /* 13258 */;
 
 
-export const extraErrorDataIntegration = module_13337.defineIntegration(() => {
-  let obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
+export function filenameIsInApp(str) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = false;
   }
-  let closure_1;
-  const depth = obj.depth;
-  let num = 3;
-  if (undefined !== depth) {
-    num = depth;
+  if (!flag) {
+    flag = str && !str.startsWith("/") && !str.match(/^[A-Z]:/) && !str.startsWith(".") && !str.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
+    const tmp = str && !str.startsWith("/") && !str.match(/^[A-Z]:/) && !str.startsWith(".") && !str.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
   }
-  const captureErrorCause = obj.captureErrorCause;
-  closure_1 = undefined === captureErrorCause || captureErrorCause;
-  let obj2 = {
-    name: "ExtraErrorData",
-    processEvent(contexts, arg1, getOptions) {
-      function _extractErrorData(originalException, arg1, maxValueLength) {
-        try {
-          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
-          const obj = {};
-          const _Object = Object;
-          const keys = Object.keys(originalException);
-          const iter = keys[Symbol.iterator]();
-          const nextResult = iter.next();
-          while (iter !== undefined) {
-            let tmp8 = nextResult;
-            if (-1 === items.indexOf(nextResult)) {
-              let tmp11 = originalException[tmp8];
-              let tmp12 = tmp11;
-              let tmp15 = num;
-              let tmp17 = closure_1_1;
-              let obj2 = num(closure_1_1[1]);
-              if (!obj2.isError(tmp11)) {
-                let truncateResult;
-                if (typeof tmp12 !== "string") {
-                  truncateResult = tmp11;
-                }
-                obj[tmp8] = truncateResult;
-              }
-              let tmp15Result = tmp15(tmp17[4]);
-              let _HermesInternal = HermesInternal;
-              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
-            }
-            continue;
-          }
-          const tmp23 = arg1 && undefined !== originalException.cause;
-          if (tmp23) {
-            let str1;
-            const obj4 = -1(closure_1_1[1]);
-            if (obj4.isError(originalException.cause)) {
-              str1 = str2.toString();
-            } else {
-              str1 = str2;
-            }
-            obj.cause = str1;
-          }
-          if (typeof originalException.toJSON === "function") {
-            const toJSONResult = originalException.toJSON();
-            const _Object2 = Object;
-            const keys1 = Object.keys(toJSONResult);
-            const tmp48 = toJSONResult;
-            for (const item10067 of keys1) {
-              let str5;
-              let tmp32 = tmp48[item10067];
-              let str3 = tmp32;
-              let obj5 = num(closure_1_1[1]);
-              if (obj5.isError(tmp32)) {
-                str5 = str3.toString();
-              } else {
-                str5 = str3;
-              }
-              obj[item10067] = str5;
-              continue;
-            }
-          }
-          return obj;
-        } catch (tmp40) {
-          const tmp41 = num;
-          const tmp43 = closure_1_1;
-          if (num(closure_1_1[5]).DEBUG_BUILD) {
-            const logger = tmp41(tmp43[6]).logger;
-            logger.error("Unable to extract extra data from the Error object:", tmp40);
-          }
-          return null;
+  const tmp2 = !flag && undefined !== str && !str.includes("node_modules/");
+  return tmp2;
+}
+export function node(arg0) {
+  let closure_0 = arg0;
+  const re1 = /^\s*[-]{4,}$/;
+  const re2 = /at (?:async )?(?:(.+?)\s+\()?(?:(.+):(\d+):(\d+)?|([^)]+))\)?/;
+  return (filename) => {
+    let _parseInt;
+    let _parseInt2;
+    let str10;
+    let str9;
+    let tmp25;
+    let tmp30;
+    const match = filename.match(re2);
+    if (match) {
+      let UNKNOWN_FUNCTION;
+      let tmp3;
+      let tmp4;
+      if (match[1]) {
+        const lastIndexOfResult = match[1].lastIndexOf(".");
+        let diff = lastIndexOfResult;
+        if ("." === match[1][lastIndexOfResult - 1]) {
+          diff = lastIndexOfResult - 1;
         }
-      }
-      const maxValueLength = getOptions.getOptions().maxValueLength;
-      num = 250;
-      const tmp = num;
-      const tmp2 = closure_1;
-      if (undefined !== maxValueLength) {
-        num = maxValueLength;
-      }
-      let obj = arg1;
-      if (arg1 === undefined) {
-        obj = {};
-      }
-      let tmp3 = contexts;
-      if (obj.originalException) {
-        let obj2 = _mod13288;
-        tmp3 = contexts;
-        if (obj2.isError(obj.originalException)) {
-          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
-          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
-          tmp3 = contexts;
-          if (tmp7) {
-            const obj3 = {};
-            let tmp8 = obj3;
-            const merged = Object.assign(contexts.contexts);
-            const normalizer = tmp4(13326);
-            const normalizeResult = normalizer.normalize(tmp7, tmp);
-            const tmp4Result = _mod13288;
-            if (tmp4Result.isPlainObject(normalizeResult)) {
-              const tmp4Result2 = _mod13287;
-              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
-              obj3[tmp6] = normalizeResult;
-            }
-            let obj4 = { contexts: obj3 };
-            let tmp12 = obj4;
-            let tmp13 = contexts;
-            const merged1 = Object.assign(contexts);
-            tmp3 = obj4;
+        let substr2 = arr;
+        let tmp9;
+        let substr3;
+        if (diff > 0) {
+          const substr = arr.slice(0, diff);
+          const substr1 = arr.slice(diff + 1);
+          const index = substr.indexOf(".Module");
+          substr2 = arr;
+          tmp9 = substr1;
+          substr3 = substr;
+          if (index > 0) {
+            substr2 = arr.slice(index + 1);
+            substr3 = substr.slice(0, index);
+            tmp9 = substr1;
           }
         }
+        tmp3 = substr2;
+        tmp4 = tmp9;
       }
-      return tmp3;
+      if (tmp4) {
+        UNKNOWN_FUNCTION = tmp4;
+      }
+      if (undefined === tmp3) {
+        if (!UNKNOWN_FUNCTION) {
+          UNKNOWN_FUNCTION = _mod13258.UNKNOWN_FUNCTION;
+        }
+        let combined = UNKNOWN_FUNCTION;
+        if (tmp13) {
+          const _HermesInternal = HermesInternal;
+          combined = "" + tmp13 + "." + UNKNOWN_FUNCTION;
+        }
+        tmp3 = combined;
+      }
+      if (match[2]) {
+        let str7;
+        const obj2 = match[2];
+        if (obj2.startsWith("file://")) {
+          const arr3 = match[2];
+          str7 = arr3.slice(7);
+        }
+        let match1 = str7;
+        const tmp18 = match[5];
+        if (str7) {
+          match1 = str7.match(/\/[A-Z]:/);
+        }
+        let substr4 = str7;
+        if (match1) {
+          substr4 = str7.slice(1);
+        }
+        let tmp21 = substr4 || !match[5];
+        let tmp22 = "native" === tmp18;
+        if (!tmp21) {
+          tmp21 = tmp22;
+        }
+        if (!tmp21) {
+          substr4 = match[5];
+        }
+        let decodeURIResult;
+        if (substr4) {
+          const _decodeURI = decodeURI;
+          decodeURIResult = decodeURI(substr4);
+        }
+        const obj3 = { filename: decodeURIResult, module: tmp25, function: tmp3, lineno: _parseInt(str9, 10) || undefined, colno: _parseInt2(str10, 10) || undefined, in_app: tmp30 };
+        tmp25 = undefined;
+        if (closure_0) {
+          tmp25 = closure_0(substr4);
+        }
+        str9 = match[3];
+        _parseInt = parseInt;
+        if (!str9) {
+          str9 = "";
+        }
+        str10 = match[4];
+        _parseInt2 = parseInt;
+        _parseInt(str9, 10) || undefined;
+        if (!str10) {
+          str10 = "";
+        }
+        _parseInt2(str10, 10) || undefined;
+        if (!tmp22) {
+          tmp22 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
+          const tmp29 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
+        }
+        tmp30 = !tmp22 && undefined !== str11 && !str11.includes("node_modules/");
+        return obj3;
+      }
+      str7 = match[2];
+    } else if (filename.match(re1)) {
+      return { filename };
     }
   };
-  return obj2;
-});
+}
+export function nodeStackLineParser(arg0) {
+  let closure_0 = arg0;
+  const re1 = /^\s*[-]{4,}$/;
+  const re2 = /at (?:async )?(?:(.+?)\s+\()?(?:(.+):(\d+):(\d+)?|([^)]+))\)?/;
+  const items = [
+    90,
+    (filename) => {
+      let _parseInt;
+      let _parseInt2;
+      let str10;
+      let str9;
+      let tmp25;
+      let tmp30;
+      const match = filename.match(re2);
+      if (match) {
+        let UNKNOWN_FUNCTION;
+        let tmp3;
+        let tmp4;
+        if (match[1]) {
+          const lastIndexOfResult = match[1].lastIndexOf(".");
+          let diff = lastIndexOfResult;
+          if ("." === match[1][lastIndexOfResult - 1]) {
+            diff = lastIndexOfResult - 1;
+          }
+          let substr2 = arr;
+          let tmp9;
+          let substr3;
+          if (diff > 0) {
+            const substr = arr.slice(0, diff);
+            const substr1 = arr.slice(diff + 1);
+            const index = substr.indexOf(".Module");
+            substr2 = arr;
+            tmp9 = substr1;
+            substr3 = substr;
+            if (index > 0) {
+              substr2 = arr.slice(index + 1);
+              substr3 = substr.slice(0, index);
+              tmp9 = substr1;
+            }
+          }
+          tmp3 = substr2;
+          tmp4 = tmp9;
+        }
+        if (tmp4) {
+          UNKNOWN_FUNCTION = tmp4;
+        }
+        if (undefined === tmp3) {
+          if (!UNKNOWN_FUNCTION) {
+            UNKNOWN_FUNCTION = _mod13258.UNKNOWN_FUNCTION;
+          }
+          let combined = UNKNOWN_FUNCTION;
+          if (tmp13) {
+            const _HermesInternal = HermesInternal;
+            combined = "" + tmp13 + "." + UNKNOWN_FUNCTION;
+          }
+          tmp3 = combined;
+        }
+        if (match[2]) {
+          let str7;
+          const obj2 = match[2];
+          if (obj2.startsWith("file://")) {
+            const arr3 = match[2];
+            str7 = arr3.slice(7);
+          }
+          let match1 = str7;
+          const tmp18 = match[5];
+          if (str7) {
+            match1 = str7.match(/\/[A-Z]:/);
+          }
+          let substr4 = str7;
+          if (match1) {
+            substr4 = str7.slice(1);
+          }
+          let tmp21 = substr4 || !match[5];
+          let tmp22 = "native" === tmp18;
+          if (!tmp21) {
+            tmp21 = tmp22;
+          }
+          if (!tmp21) {
+            substr4 = match[5];
+          }
+          let decodeURIResult;
+          if (substr4) {
+            const _decodeURI = decodeURI;
+            decodeURIResult = decodeURI(substr4);
+          }
+          const obj3 = { filename: decodeURIResult, module: tmp25, function: tmp3, lineno: _parseInt(str9, 10) || undefined, colno: _parseInt2(str10, 10) || undefined, in_app: tmp30 };
+          tmp25 = undefined;
+          if (closure_0) {
+            tmp25 = closure_0(substr4);
+          }
+          str9 = match[3];
+          _parseInt = parseInt;
+          if (!str9) {
+            str9 = "";
+          }
+          str10 = match[4];
+          _parseInt2 = parseInt;
+          _parseInt(str9, 10) || undefined;
+          if (!str10) {
+            str10 = "";
+          }
+          _parseInt2(str10, 10) || undefined;
+          if (!tmp22) {
+            tmp22 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
+            const tmp29 = str11 && !str11.startsWith("/") && !str11.match(/^[A-Z]:/) && !str11.startsWith(".") && !str11.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
+          }
+          tmp30 = !tmp22 && undefined !== str11 && !str11.includes("node_modules/");
+          return obj3;
+        }
+        str7 = match[2];
+      } else if (filename.match(re1)) {
+        return { filename };
+      }
+    }
+  ];
+  return items;
+}

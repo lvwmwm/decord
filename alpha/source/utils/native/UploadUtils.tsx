@@ -1,29 +1,29 @@
-// Module ID: 8365
-// Function ID: 8366
+// Module ID: 8311
+// Function ID: 8312
 // Name: utils/UploadUtils
-// Dependencies: [109, 5, 17, 1194, 6039, 1385, 1072, 8085, 3, 8366, 8102, 8357, 8372, 1377, 5848, 1113, 1441, 2176, 8356, 1149, 8373, 8375, 8376, 8361, 5100, 38, 8377, 8378, 8379, 1380, 8380, 8381, 8382, 6210, 8383, 2]
+// Dependencies: [109, 5, 17, 1194, 6059, 1385, 1072, 8031, 3, 8312, 8048, 8302, 8318, 1377, 5866, 1113, 1441, 2171, 8301, 1149, 8319, 8321, 8322, 8307, 5127, 38, 8323, 8324, 8325, 1380, 8326, 8327, 8328, 6230, 8329, 2]
 // Exports: cancelGetFileInfo, getAppDir, getCaptionLabel, getFileFromUploadItem, getFileInfo, getFileSize, getImageCompressionQuality, getImageDimensionsIfMissing, getType, openImagePicker, resolveModeToVideoQualityForFreeUser, resolveModeToVideoQualityForUserWithFeature, shouldResolveToMediaFilePath
 
-// Module 8365 (utils/UploadUtils)
+// Module 8311 (utils/UploadUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import react_nativeDefault from "react-native" /* 1149 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import react_nativeDefault2 from "react-native" /* 1441 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8085 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 8102 */;
-import UploadPlatform from "UploadPlatform" /* 8356 */;
-import FileUtils from "FileUtils" /* 8361 */;
-import ImagePickerDefault from "ImagePicker" /* 8366 */;
-import ImageConversionDecision from "ImageConversionDecision" /* 8373 */;
-import VideoUploadUtils from "VideoUploadUtils" /* 8375 */;
-import UploadLimits from "UploadLimits" /* 8376 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8383 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8031 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 8048 */;
+import UploadPlatform from "UploadPlatform" /* 8301 */;
+import FileUtils from "FileUtils" /* 8307 */;
+import ImagePickerDefault from "ImagePicker" /* 8312 */;
+import ImageConversionDecision from "ImageConversionDecision" /* 8319 */;
+import VideoUploadUtils from "VideoUploadUtils" /* 8321 */;
+import UploadLimits from "UploadLimits" /* 8322 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8329 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UnsyncedUserSettingsStore_mod from "UnsyncedUserSettingsStore" /* 1194 */;
-import NetworkStore from "NetworkStore" /* 6039 */;
+import NetworkStore from "NetworkStore" /* 6059 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size_mod from "module_2" /* 2 */;
@@ -41,8 +41,8 @@ let closure_17;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const DeviceUtils = tmp(5100);
-const UploadUtils = tmp(8357);
+const DeviceUtils = tmp(5127);
+const UploadUtils = tmp(8302);
 function openImagePickerUnhandled() {
   return obj(...arguments);
 }
@@ -1324,7 +1324,7 @@ function convertVideo(videoMetadata) {
               } else {
                 isVideo = null != str3.match(/^assets-library:\/\/.+&ext=(mov|qt)$/i);
                 if (isVideo) {
-                  const obj4 = { uri: require, overrideType: "a" };
+                  const obj4 = { uri: require, overrideType: "Array" };
                   const tmp12Result8 = UploadUtils;
                   isVideo = tmp12Result8.getFile(obj4).isVideo;
                 }
@@ -1350,7 +1350,7 @@ function convertVideo(videoMetadata) {
                 } else {
                   isVideo2 = null != str3.match(/^assets-library:\/\/.+&ext=mp4$/i);
                   if (isVideo2) {
-                    obj6 = { uri: require, overrideType: "a" };
+                    obj6 = { uri: require, overrideType: "Array" };
                     const tmp12Result11 = UploadUtils;
                     isVideo2 = tmp12Result11.getFile(obj6).isVideo;
                   }

@@ -1,12 +1,12 @@
-// Module ID: 5789
-// Function ID: 5790
+// Module ID: 5807
+// Function ID: 5808
 // Name: isAccessibleNonStaticChannelPath
-// Dependencies: [5047, 5790, 2]
+// Dependencies: [5074, 5808, 2]
 // Exports: default
 
-// Module 5789 (isAccessibleNonStaticChannelPath)
-import LinkUtils from "LinkUtils" /* 5790 */;
-import GatedChannelStore from "GatedChannelStore" /* 5047 */;
+// Module 5807 (isAccessibleNonStaticChannelPath)
+import LinkUtils from "LinkUtils" /* 5808 */;
+import GatedChannelStore from "GatedChannelStore" /* 5074 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/links/isAccessibleNonStaticChannelPath.tsx");

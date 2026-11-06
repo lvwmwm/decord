@@ -1,25 +1,25 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 16884
+// Function ID: 16885
 // Name: AgeNoticeAgeGroupHeader
-// Dependencies: [32, 19, 17, 6875, 4989, 21, 5143, 575, 4976, 10318, 3255, 8100, 16886, 7711, 5872, 5763, 1113, 7124, 7198, 16897, 5770, 2]
+// Dependencies: [32, 19, 17, 6817, 5016, 21, 5170, 575, 5003, 10270, 3284, 8046, 16874, 7664, 5890, 5781, 1113, 7068, 7145, 16885, 5788, 2]
 // Exports: AgeNoticeAgeGroupHeader
 
-// Module 16896 (AgeNoticeAgeGroupHeader)
+// Module 16884 (AgeNoticeAgeGroupHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef3255 from "module_3255" /* 3255 */;
-import dismissible_content from "dismissible_content" /* 4976 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6875 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8100 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10318 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16897 */;
+import _modDef3284 from "module_3284" /* 3284 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6817 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8046 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10270 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16885 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,12 +55,12 @@ function AccountStatusNotice(ageGroup) {
       const obj4 = { style: tmp.noticeIcon, children: closure_8(require("CircleInformationIcon").CircleInformationIcon, { size: "xs", color: "text-link" }) };
       items = [closure_8(View, obj4), , ];
       obj5 = { style: tmp.noticeBody, variant: "body-sm/normal", color: "text-default", children: intl.format(obj5[ageGroup], obj6) };
-      const Text = tmp2(5763).Text;
+      const Text = tmp2(5781).Text;
       intl = tmp2(1113).intl;
       obj6 = { handleOnBlogHook: handleOpenBlog };
       items[1] = closure_8(Text, obj5);
       const obj7 = { style: tmp.noticeDismiss, activeOpacity: 0.5, accessibilityRole: "button", accessibilityLabel: intl2.string(require("intl").t.WAI6xu), hitSlop: 12, onPress: tmp8, children: closure_8(require("XSmallIcon").XSmallIcon, { size: "sm", color: "icon-strong" }) };
-      const PressableOpacity = tmp2(7124).PressableOpacity;
+      const PressableOpacity = tmp2(7068).PressableOpacity;
       intl2 = tmp2(1113).intl;
       items[2] = closure_8(PressableOpacity, obj7);
       tmp9 = closure_9(View, obj3);
@@ -79,27 +79,27 @@ function AgeGroupDescription(ageGroup) {
   ageGroup = ageGroup.ageGroup;
   if (useAgeGroupPresentation.AgeGroupState.ADULT === ageGroup) {
     const obj2 = { variant: "body-sm/normal", color: "text-default", children: format3(gi4ulu, obj3) };
-    const Text3 = tmp(5763).Text;
+    const Text3 = tmp(5781).Text;
     const intl3 = tmp(1113).intl;
     format3 = intl3.format;
     obj3 = { handleOnAgeGatedContentHook: useAgeGroupPresentation.handleOpenAgeGatedContentArticle };
-    gi4ulu = _modDef3255.gi4ulu;
+    gi4ulu = _modDef3284.gi4ulu;
     return metroImportAll(Text3, obj2);
   } else if (useAgeGroupPresentation.AgeGroupState.TEEN === ageGroup) {
     const obj4 = { variant: "body-sm/normal", color: "text-default", children: format2(v221iML, obj5) };
-    const Text2 = tmp(5763).Text;
+    const Text2 = tmp(5781).Text;
     const intl2 = tmp(1113).intl;
     format2 = intl2.format;
     obj5 = { handleOnAgeGatedContentHook: useAgeGroupPresentation.handleOpenAgeGatedContentArticle, handleOnConfirmAgeHook: useAgeGroupPresentation.handleShowAgeVerification };
-    v221iML = _modDef3255["221iML"];
+    v221iML = _modDef3284["221iML"];
     return metroImportAll(Text2, obj4);
   } else if (useAgeGroupPresentation.AgeGroupState.UNVERIFIED === ageGroup) {
     const obj = { variant: "body-sm/normal", color: "text-default", children: format(prop, obj6) };
-    const Text = tmp(5763).Text;
+    const Text = tmp(5781).Text;
     const intl = tmp(1113).intl;
     format = intl.format;
     obj6 = { handleOnAgeGatedContentHook: handleOpenUnconfirmedAgeGroupSupportArticle.handleOpenUnconfirmedAgeGroupSupportArticle, handleOnConfirmAgeHook: useAgeGroupPresentation.handleShowAgeVerification };
-    prop = _modDef3255["W0/7DD"];
+    prop = _modDef3284["W0/7DD"];
     return metroImportAll(Text, obj);
   }
 }
@@ -110,13 +110,13 @@ function AgeGroupCallToAction(ageGroup) {
   if (useAgeGroupPresentation.AgeGroupState.ADULT === ageGroup) {
     return null;
   } else if (useAgeGroupPresentation.AgeGroupState.TEEN === ageGroup) {
-    const obj2 = { grow: true, variant: "secondary", size: "md", text: intl2.string(_modDef3255["+7NlgO"]), onPress: useAgeGroupPresentation.handleOpenAgeGatedContentArticle };
-    const Button2 = tmp(5770).Button;
+    const obj2 = { grow: true, variant: "secondary", size: "md", text: intl2.string(_modDef3284["+7NlgO"]), onPress: useAgeGroupPresentation.handleOpenAgeGatedContentArticle };
+    const Button2 = tmp(5788).Button;
     intl2 = tmp(1113).intl;
     return metroImportAll(Button2, obj2);
   } else if (useAgeGroupPresentation.AgeGroupState.UNVERIFIED === ageGroup) {
-    const obj = { grow: true, variant: "secondary", size: "md", text: intl.string(_modDef3255["cI+bc/"]), onPress: useAgeGroupPresentation.handleShowAgeVerification };
-    const Button = tmp(5770).Button;
+    const obj = { grow: true, variant: "secondary", size: "md", text: intl.string(_modDef3284["cI+bc/"]), onPress: useAgeGroupPresentation.handleShowAgeVerification };
+    const Button = tmp(5788).Button;
     intl = tmp(1113).intl;
     return metroImportAll(Button, obj);
   }
@@ -135,13 +135,13 @@ let closure_10 = createStyles(obj);
 let items = [dismissible_content.DismissibleContent.TINY_BRONCO_NOTICE];
 let closure_12 = [];
 let obj5 = {};
-obj5[useAgeGroupPresentation.AgeGroupState.ADULT] = _modDef3255["8TWztV"];
-obj5[useAgeGroupPresentation.AgeGroupState.TEEN] = _modDef3255.qSkhZH;
-obj5[useAgeGroupPresentation.AgeGroupState.UNVERIFIED] = _modDef3255.vGxRDB;
+obj5[useAgeGroupPresentation.AgeGroupState.ADULT] = _modDef3284["8TWztV"];
+obj5[useAgeGroupPresentation.AgeGroupState.TEEN] = _modDef3284.qSkhZH;
+obj5[useAgeGroupPresentation.AgeGroupState.UNVERIFIED] = _modDef3284.vGxRDB;
 let obj6 = {};
-obj6[useAgeGroupPresentation.AgeGroupState.ADULT] = _modDef3255.t5QjmQ;
-obj6[useAgeGroupPresentation.AgeGroupState.TEEN] = _modDef3255["41MDhK"];
-obj6[useAgeGroupPresentation.AgeGroupState.UNVERIFIED] = _modDef3255.m95jW8;
+obj6[useAgeGroupPresentation.AgeGroupState.ADULT] = _modDef3284.t5QjmQ;
+obj6[useAgeGroupPresentation.AgeGroupState.TEEN] = _modDef3284["41MDhK"];
+obj6[useAgeGroupPresentation.AgeGroupState.UNVERIFIED] = _modDef3284.m95jW8;
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/native/AgeNoticeAgeGroupHeader.tsx");
 
 export function AgeNoticeAgeGroupHeader() {

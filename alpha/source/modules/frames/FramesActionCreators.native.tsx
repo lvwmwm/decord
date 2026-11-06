@@ -1,12 +1,12 @@
-// Module ID: 11123
-// Function ID: 11124
+// Module ID: 11076
+// Function ID: 11077
 // Name: FramesActionCreators
-// Dependencies: [5, 5815, 11124, 11125, 5811, 2]
+// Dependencies: [5, 5833, 11077, 11078, 5829, 2]
 
-// Module 11123 (FramesActionCreators)
-import launchFrameAll from "launchFrame" /* 11125 */;
+// Module 11076 (FramesActionCreators)
+import launchFrameAll from "launchFrame" /* 11078 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import VoiceStateStore from "VoiceStateStore" /* 5815 */;
+import VoiceStateStore from "VoiceStateStore" /* 5833 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,17 +1,17 @@
-// Module ID: 14225
-// Function ID: 14226
+// Module ID: 14202
+// Function ID: 14203
 // Name: useChatInputKeyboardOffset
-// Dependencies: [1641, 5748, 5335, 1627, 5734, 575, 1377, 1625, 2]
+// Dependencies: [1641, 5766, 5355, 1627, 5754, 575, 1377, 1625, 2]
 // Exports: default
 
-// Module 14225 (useChatInputKeyboardOffset)
+// Module 14202 (useChatInputKeyboardOffset)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
 import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1641 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 5335 */;
-import useToken from "useToken" /* 5734 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5748 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 5355 */;
+import useToken from "useToken" /* 5754 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5766 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

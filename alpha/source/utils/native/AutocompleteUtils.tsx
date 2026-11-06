@@ -1,9 +1,9 @@
-// Module ID: 7036
-// Function ID: 7037
+// Module ID: 6978
+// Function ID: 6979
 // Name: utils/AutocompleteUtils
 // Dependencies: [1072, 1113, 2]
 
-// Module 7036 (utils/AutocompleteUtils)
+// Module 6978 (utils/AutocompleteUtils)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;

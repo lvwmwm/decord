@@ -1,11 +1,11 @@
-// Module ID: 11972
-// Function ID: 11973
+// Module ID: 11938
+// Function ID: 11939
 // Name: useVideoSpinnerTimer
-// Dependencies: [32, 19, 11973, 2]
+// Dependencies: [32, 19, 11939, 2]
 // Exports: default
 
-// Module 11972 (useVideoSpinnerTimer)
-import VideoSpinnerTimer from "VideoSpinnerTimer" /* 11973 */;
+// Module 11938 (useVideoSpinnerTimer)
+import VideoSpinnerTimer from "VideoSpinnerTimer" /* 11939 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

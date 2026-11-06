@@ -1,16 +1,16 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 10876
+// Function ID: 10877
 // Name: PeopleUtils
-// Dependencies: [5085, 1072, 10925, 7630, 10926, 572, 5197, 2]
+// Dependencies: [5112, 1072, 10877, 7575, 10878, 572, 5224, 2]
 
-// Module 10924 (PeopleUtils)
+// Module 10876 (PeopleUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5197 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7630 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10925 */;
-import AcceptFriendRequestModalActionCreators from "AcceptFriendRequestModalActionCreators" /* 10926 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import UserUtilsDefault from "UserUtils" /* 5224 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7575 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10877 */;
+import AcceptFriendRequestModalActionCreators from "AcceptFriendRequestModalActionCreators" /* 10878 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import size from "module_2" /* 2 */;
 
 let onCancel;

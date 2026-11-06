@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2xvZ2l0ZWNoXzNwcA==", scales: [1], hash: "c81261f1cab5c82ca82a73c159974a95", name: "vi.messages.c81261f1cab5c82ca82a73c159974a95.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/call_of_duty_3pp", scales: [1], hash: "11d34bfaf58dae63618b0f9e7cb2f98a", name: "CallOfDuty3PP.compiled.messages", type: "jsona" });

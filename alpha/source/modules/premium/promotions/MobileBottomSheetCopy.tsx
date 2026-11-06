@@ -1,13 +1,13 @@
-// Module ID: 19364
-// Function ID: 19365
+// Module ID: 19356
+// Function ID: 19357
 // Name: MobileBottomSheetCopy
-// Dependencies: [1113, 17157, 15556, 2]
+// Dependencies: [1113, 17145, 15550, 2]
 // Exports: getMobileBottomSheetCopy
 
-// Module 19364 (MobileBottomSheetCopy)
+// Module 19356 (MobileBottomSheetCopy)
 import intl from "intl" /* 1113 */;
-import PromotionStringUtils from "PromotionStringUtils" /* 15556 */;
-import MarketingStringFormat from "MarketingStringFormat" /* 17157 */;
+import PromotionStringUtils from "PromotionStringUtils" /* 15550 */;
+import MarketingStringFormat from "MarketingStringFormat" /* 17145 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/premium/promotions/MobileBottomSheetCopy.tsx");

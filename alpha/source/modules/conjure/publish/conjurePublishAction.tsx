@@ -1,14 +1,14 @@
-// Module ID: 12304
-// Function ID: 12305
+// Module ID: 12271
+// Function ID: 12272
 // Name: conjurePublishAction
-// Dependencies: [11058, 1113, 3995, 12288, 2]
+// Dependencies: [11010, 1113, 4024, 12255, 2]
 // Exports: resolveConjurePublishAction
 
-// Module 12304 (conjurePublishAction)
+// Module 12271 (conjurePublishAction)
 import intl5 from "intl" /* 1113 */;
-import _modDef3995 from "module_3995" /* 3995 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 11058 */;
-import conjurePreviewModes from "conjurePreviewModes" /* 12288 */;
+import _modDef4024 from "module_4024" /* 4024 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 11010 */;
+import conjurePreviewModes from "conjurePreviewModes" /* 12255 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishAction.tsx");
@@ -78,7 +78,7 @@ export function resolveConjurePublishAction(input) {
     if (false === tmp11) {
       const intl = intl5.intl;
       const format = intl.format;
-      const N4NkyR = _modDef3995.N4NkyR;
+      const N4NkyR = _modDef4024.N4NkyR;
       if (str4 == null) {
         str4 = "";
       }
@@ -121,7 +121,7 @@ export function resolveConjurePublishAction(input) {
         if (false === tmp24) {
           const intl2 = tmp16(1113).intl;
           const format2 = intl2.format;
-          const eHYXFg = _modDef3995.eHYXFg;
+          const eHYXFg = _modDef4024.eHYXFg;
           if (str6 == null) {
             str6 = "";
           }
@@ -147,14 +147,14 @@ export function resolveConjurePublishAction(input) {
       prop2 = integrationStatus.bot_permissions_changed;
     }
     if (true === prop2) {
-      const obj9 = { label: intl4.string(_modDef3995["tUeY/h"]), action: "review_permissions" };
+      const obj9 = { label: intl4.string(_modDef4024["tUeY/h"]), action: "review_permissions" };
       const merged2 = Object.assign(obj7);
       intl4 = tmp16(1113).intl;
       obj10 = obj9;
     }
     return obj10;
   }
-  obj10 = { label: intl3.string(_modDef3995["120EFN"]), action: "publish" };
+  obj10 = { label: intl3.string(_modDef4024["120EFN"]), action: "publish" };
   const merged3 = Object.assign(obj7);
   intl3 = tmp16(1113).intl;
 }

@@ -1,18 +1,18 @@
-// Module ID: 12342
-// Function ID: 12343
+// Module ID: 12307
+// Function ID: 12308
 // Name: ConjureAwaitingUser
-// Dependencies: [19, 5144, 21, 575, 5143, 12341, 504, 1652, 5380, 2]
+// Dependencies: [19, 5171, 21, 575, 5170, 12306, 504, 1652, 5400, 2]
 // Exports: ConjureAwaitingPulseRing
 
-// Module 12342 (ConjureAwaitingUser)
+// Module 12307 (ConjureAwaitingUser)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12341 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import ConjureNativeCardSurface from "ConjureNativeCardSurface" /* 12306 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import createStyles from "createStyles" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let set;

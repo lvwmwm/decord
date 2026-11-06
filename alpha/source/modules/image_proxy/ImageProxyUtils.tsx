@@ -1,13 +1,13 @@
-// Module ID: 2159
-// Function ID: 2160
+// Module ID: 2154
+// Function ID: 2155
 // Name: ImageProxyUtils
-// Dependencies: [2160, 1446, 1378, 2]
+// Dependencies: [2155, 1446, 1378, 2]
 // Exports: getSizedImageAssetURL, isImageProxyURL
 
-// Module 2159 (ImageProxyUtils)
+// Module 2154 (ImageProxyUtils)
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
-import UrlHostUtils from "UrlHostUtils" /* 2160 */;
+import UrlHostUtils from "UrlHostUtils" /* 2155 */;
 import size_mod from "module_2" /* 2 */;
 
 function getSizedImageProxyURL(value, size) {

@@ -32,7 +32,7 @@ const _mod739 = tmp2(739);
 const DEFAULT_TRANSPORT_BUFFER_SIZE = tmp2(742);
 const _INTERNAL_captureLog = tmp2(744);
 const _INTERNAL_captureMetric = tmp2(749);
-const f80050 = (item) => {
+const f80129 = (item) => {
   if (Array.isArray(item)) {
     let num4;
     const first = item[0];
@@ -91,7 +91,7 @@ function estimateMetricSizeInBytes(name) {
     c0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f80050);
+    const item = values.forEach(f80129);
     num3 = c0;
   }
   return num + 8 + num3;
@@ -109,7 +109,7 @@ function estimateLogSizeInBytes(message) {
     closure_0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f80050);
+    const item = values.forEach(f80129);
     num3 = closure_0;
   }
   return num + num3;
@@ -126,12 +126,12 @@ class Client {
   constructor(_options) {
     let envelopeEndpointWithUrlEncodedAuth;
     let recordDroppedEvent;
-    const f80047 = () => {
+    const f80126 = () => {
       sum = 0;
       clearTimeout(closure_3);
       c5 = false;
     };
-    const f80048 = (arg0) => {
+    const f80127 = (arg0) => {
       sum = sum + closure_1(arg0);
       if (sum >= 800000) {
         closure_2(self);
@@ -146,7 +146,7 @@ class Client {
         }
       }
     };
-    const f80049 = () => {
+    const f80128 = () => {
       closure_2(self);
     };
     const self = this;
@@ -208,9 +208,9 @@ class Client {
       let c3;
       c4 = 0;
       c5 = false;
-      self.on("flushLogs", f80047);
-      self.on("afterCaptureLog", f80048);
-      self.on("flush", f80049);
+      self.on("flushLogs", f80126);
+      self.on("afterCaptureLog", f80127);
+      self.on("flush", f80128);
     }
     let flag2 = self._options.enableMetrics;
     if (flag2 == null) {
@@ -230,9 +230,9 @@ class Client {
       closure_3 = undefined;
       let sum = 0;
       c5 = false;
-      self.on("flushMetrics", f80047);
-      self.on("afterCaptureMetric", f80048);
-      self.on("flush", f80049);
+      self.on("flushMetrics", f80126);
+      self.on("afterCaptureMetric", f80127);
+      self.on("flush", f80128);
     }
   }
 }

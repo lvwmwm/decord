@@ -1,14 +1,14 @@
-// Module ID: 8734
-// Function ID: 8735
+// Module ID: 8680
+// Function ID: 8681
 // Name: experiment
-// Dependencies: [32, 1197, 1226, 1227, 8735, 8736, 2]
+// Dependencies: [32, 1197, 1226, 1227, 8681, 8682, 2]
 
-// Module 8734 (experiment)
+// Module 8680 (experiment)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;
-import rules from "rules" /* 8735 */;
-import duration from "duration" /* 8736 */;
+import rules from "rules" /* 8681 */;
+import duration from "duration" /* 8682 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

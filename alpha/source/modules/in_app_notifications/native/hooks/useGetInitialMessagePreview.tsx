@@ -1,12 +1,12 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 11215
+// Function ID: 11216
 // Name: useGetInitialMessagePreview
-// Dependencies: [19, 5086, 5786, 2]
+// Dependencies: [19, 5113, 5804, 2]
 // Exports: useGetInitialMessagePreview
 
-// Module 11260 (useGetInitialMessagePreview)
-import MessageRecord2 from "MessageRecord" /* 5086 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5786 */;
+// Module 11215 (useGetInitialMessagePreview)
+import MessageRecord2 from "MessageRecord" /* 5113 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5804 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

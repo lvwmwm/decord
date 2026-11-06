@@ -1,19 +1,19 @@
-// Module ID: 11067
-// Function ID: 11068
+// Module ID: 11020
+// Function ID: 11021
 // Name: prefetchConjurePreviewFrame
-// Dependencies: [5, 11061, 6982, 6985, 11068, 11070, 6987, 11071, 7019, 2]
+// Dependencies: [5, 11013, 6924, 6927, 11021, 11023, 6929, 11024, 6961, 2]
 // Exports: prefetchConjurePreviewFrame
 
-// Module 11067 (prefetchConjurePreviewFrame)
-import FramesConstants from "FramesConstants" /* 6985 */;
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6987 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7019 */;
-import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11068 */;
-import createProxyTicket from "createProxyTicket" /* 11070 */;
-import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 11071 */;
+// Module 11020 (prefetchConjurePreviewFrame)
+import FramesConstants from "FramesConstants" /* 6927 */;
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6929 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6961 */;
+import conjurePreviewSurface2 from "conjurePreviewSurface" /* 11021 */;
+import createProxyTicket from "createProxyTicket" /* 11023 */;
+import loadEmbeddedAppCSPForLaunchDefault from "loadEmbeddedAppCSPForLaunch" /* 11024 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11061 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11013 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;

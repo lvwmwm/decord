@@ -1,12 +1,12 @@
-// Module ID: 16265
-// Function ID: 16266
+// Module ID: 16262
+// Function ID: 16263
 // Name: Atoms
-// Dependencies: [17, 2, 8339, 5763]
+// Dependencies: [17, 2, 8284, 5781]
 
-// Module 16265 (Atoms)
+// Module 16262 (Atoms)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8339 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import LegacyText_LegacyTextDefault from "LegacyText/LegacyText" /* 8284 */;
 import size from "module_2" /* 2 */;
 
 const TextInput = react_native.TextInput;

@@ -1,13 +1,13 @@
-// Module ID: 2167
-// Function ID: 2168
+// Module ID: 2162
+// Function ID: 2163
 // Name: ApplicationStore
-// Dependencies: [32, 2145, 504, 572, 2]
+// Dependencies: [32, 2140, 504, 572, 2]
 
-// Module 2167 (ApplicationStore)
+// Module 2162 (ApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationRecord from "ApplicationRecord" /* 2145 */;
+import ApplicationRecord from "ApplicationRecord" /* 2140 */;
 import size from "module_2" /* 2 */;
 
 let attachments;

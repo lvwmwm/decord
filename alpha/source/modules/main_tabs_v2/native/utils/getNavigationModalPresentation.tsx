@@ -1,13 +1,13 @@
-// Module ID: 10330
-// Function ID: 10331
+// Module ID: 10282
+// Function ID: 10283
 // Name: getNavigationModalPresentation
-// Dependencies: [1377, 7261, 5100, 9049, 1493, 2]
+// Dependencies: [1377, 7208, 5127, 8995, 1493, 2]
 // Exports: default
 
-// Module 10330 (getNavigationModalPresentation)
-import DeviceUtils from "DeviceUtils" /* 5100 */;
-import useIsWindowLarge from "useIsWindowLarge" /* 7261 */;
-import DeviceOrientation from "DeviceOrientation" /* 9049 */;
+// Module 10282 (getNavigationModalPresentation)
+import DeviceUtils from "DeviceUtils" /* 5127 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 7208 */;
+import DeviceOrientation from "DeviceOrientation" /* 8995 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
 

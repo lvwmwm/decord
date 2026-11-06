@@ -1,17 +1,17 @@
-// Module ID: 15100
-// Function ID: 15101
+// Module ID: 15077
+// Function ID: 15078
 // Name: useCanRequestStreamFromUser
-// Dependencies: [4992, 5055, 5049, 5075, 1072, 504, 12, 5080, 2]
+// Dependencies: [5019, 5082, 5076, 5102, 1072, 504, 12, 5107, 2]
 // Exports: default
 
-// Module 15100 (useCanRequestStreamFromUser)
+// Module 15077 (useCanRequestStreamFromUser)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1072 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5080 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
-import GuildRoleStore from "GuildRoleStore" /* 5049 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildRoleStore from "GuildRoleStore" /* 5076 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

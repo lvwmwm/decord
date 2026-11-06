@@ -1,10 +1,10 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 7989
+// Function ID: 7990
 // Name: _slicedToArray
 // Dependencies: [32, 2]
 // Exports: default
 
-// Module 8035 (_slicedToArray)
+// Module 7989 (_slicedToArray)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ export default function combineFragmentVideoStats(arr) {
   let avg_bitrate;
   let avg_fps;
   let avg_resolution;
-  const f125373 = (acc, duration_aggregation) => {
+  const f125609 = (acc, duration_aggregation) => {
     let num = duration_aggregation[avg_resolution];
     if (num == null) {
       num = 0;
@@ -59,21 +59,21 @@ export default function combineFragmentVideoStats(arr) {
       avg_bitrate = arr[arr.length - 1].avg_bitrate;
     } else {
       const _Math = Math;
-      avg_bitrate = Math.round(arr.reduce(f125373, 0) / reduced);
+      avg_bitrate = Math.round(arr.reduce(f125609, 0) / reduced);
     }
     avg_fps = "avg_fps";
     if (reduced <= 0) {
       avg_fps = arr[arr.length - 1].avg_fps;
     } else {
       const _Math2 = Math;
-      avg_fps = Math.round(arr.reduce(f125373, 0) / reduced);
+      avg_fps = Math.round(arr.reduce(f125609, 0) / reduced);
     }
     avg_resolution = "avg_resolution";
     if (reduced <= 0) {
       avg_resolution = arr[arr.length - 1].avg_resolution;
     } else {
       const _Math3 = Math;
-      avg_resolution = Math.round(arr.reduce(f125373, 0) / reduced);
+      avg_resolution = Math.round(arr.reduce(f125609, 0) / reduced);
     }
     applyResult = undefined;
     if (found.length > 0) {

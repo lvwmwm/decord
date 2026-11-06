@@ -1,11 +1,11 @@
-// Module ID: 9718
-// Function ID: 9719
+// Module ID: 9667
+// Function ID: 9668
 // Name: OrderSigningDeferral
-// Dependencies: [5, 9719, 2]
+// Dependencies: [5, 9668, 2]
 // Exports: getPaymentRedirectContext, performSigningDeferralAction
 
-// Module 9718 (OrderSigningDeferral)
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9719 */;
+// Module 9667 (OrderSigningDeferral)
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9668 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -53,33 +53,30 @@ let obj = function _performSigningDeferralAction() {
             c1 = 3;
             const obj4 = { value, done: true };
             return obj4;
+          } else if (null == closure_0) {
+            const _Error2 = Error;
+            const self3 = this;
+            const self4 = this;
+            const error = new Error("Order signing was deferred without a deferral context");
+            throw error;
           } else {
-            const tmp18 = closure_0;
-            if (null == closure_0) {
-              const _Error2 = Error;
-              const self3 = this;
-              const self4 = this;
-              const error = new Error("Order signing was deferred without a deferral context");
-              throw error;
-            } else {
-              ({ payment_redirect_context, stripe_3ds_context } = tmp18);
-              if (null == payment_redirect_context) {
-                if (null == stripe_3ds_context) {
-                  const _Error = Error;
-                  const self = this;
-                  const self2 = this;
-                  const error1 = new Error("Order signing deferral context has no action the client can complete");
-                  throw error1;
-                } else {
-                  c2 = 1;
-                  c1 = 1;
-                  const obj5 = { value: obj2.authenticateStripePaymentIntent(stripe_3ds_context), done: false };
-                  obj2 = Stripe3DSChallenge;
-                  return obj5;
-                }
+            ({ payment_redirect_context, stripe_3ds_context } = closure_0);
+            if (null == payment_redirect_context) {
+              if (null == stripe_3ds_context) {
+                const _Error = Error;
+                const self = this;
+                const self2 = this;
+                const error1 = new Error("Order signing deferral context has no action the client can complete");
+                throw error1;
               } else {
-                openPaymentRedirect(payment_redirect_context);
+                c2 = 1;
+                c1 = 1;
+                const obj5 = { value: obj2.authenticateStripePaymentIntent(stripe_3ds_context, closure_0.payment_gateway_merchant_account_id), done: false };
+                obj2 = Stripe3DSChallenge;
+                return obj5;
               }
+            } else {
+              openPaymentRedirect(payment_redirect_context);
             }
           }
         } else if (arg0 === 1) {

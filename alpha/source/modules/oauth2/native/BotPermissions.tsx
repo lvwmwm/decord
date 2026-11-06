@@ -1,21 +1,21 @@
-// Module ID: 14845
-// Function ID: 14846
+// Module ID: 14821
+// Function ID: 14822
 // Name: BotPermissions
-// Dependencies: [32, 19, 17, 21, 5143, 575, 5080, 1084, 9908, 14846, 6165, 7198, 5763, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 5107, 1084, 9858, 14822, 6185, 7145, 5781, 1113, 2]
 // Exports: default
 
-// Module 14845 (BotPermissions)
+// Module 14821 (BotPermissions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import Stack_Stack from "Stack/Stack" /* 6165 */;
-import XSmallIcon from "XSmallIcon" /* 7198 */;
-import permissions from "permissions" /* 9908 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import Stack_Stack from "Stack/Stack" /* 6185 */;
+import XSmallIcon from "XSmallIcon" /* 7145 */;
+import permissions from "permissions" /* 9858 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

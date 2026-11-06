@@ -1,15 +1,15 @@
-// Module ID: 10495
-// Function ID: 10496
+// Module ID: 10447
+// Function ID: 10448
 // Name: ApplicationCommandOptionUtils
-// Dependencies: [6173, 38, 10496, 5792, 2121, 2]
+// Dependencies: [6193, 38, 10448, 5810, 2116, 2]
 // Exports: filterEmpty, getBoolean, getChannelId, getInitialValuesFromInteractionOptions, getOptionalBoolean, getOptionalChannelId, getOptionalRoleId, getOptionalString, getOptionalUserId, getRoleId, getUserId, normalizeNumericString
 
-// Module 10495 (ApplicationCommandOptionUtils)
+// Module 10447 (ApplicationCommandOptionUtils)
 import _modDef38 from "module_38" /* 38 */;
-import Server from "Server" /* 2121 */;
-import RegexUtilsDefault from "RegexUtils" /* 5792 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6173 */;
-import numberParts from "numberParts" /* 10496 */;
+import Server from "Server" /* 2116 */;
+import RegexUtilsDefault from "RegexUtils" /* 5810 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6193 */;
+import numberParts from "numberParts" /* 10448 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty, regExp, regExp1;
@@ -364,7 +364,7 @@ export function normalizeNumericString(locale, trimmed) {
     let prop = numberParts.numberParts[locale];
     const tmp8 = require;
     if (prop == null) {
-      prop = tmp8(10496).numberParts["en-US"];
+      prop = tmp8(10448).numberParts["en-US"];
     }
     const _RegExp = RegExp;
     ({ group, decimal } = prop);

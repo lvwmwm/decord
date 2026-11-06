@@ -1,65 +1,41 @@
 // Module ID: 16188
 // Function ID: 16189
-// Dependencies: [41, 42]
+// Dependencies: [16183, 16154]
 
 // Module 16188
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import _mod16154 from "module_16154" /* 16154 */;
 
-let map, map2;
+const require = globalThis.__r;
+let _require, c1, dependencyMap;
 
-class LRUCache {
-  constructor() {
-    _classCallCheck(this, LRUCache);
-    this.max = 1000;
-    this.map = new Map();
-    new Map();
-  }
-}
-const entry = {
-  key: "get",
-  value: function get(arg0) {
-    const self = this;
-    map = this.map;
-    const value = map.get(arg0);
-    let tmp2;
-    if (undefined !== value) {
-      map2 = self.map;
-      map2.delete(arg0);
-      const map3 = self.map;
-      const result = map3.set(arg0, value);
-      tmp2 = value;
-    }
-    return tmp2;
-  }
-};
-const items = [
-  entry,
-  {
-    key: "delete",
-    value: function _delete(arg0) {
-      map = this.map;
-      return map.delete(arg0);
-    }
-  },
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      const self = this;
-      if (!this.delete(arg0)) {
-        if (undefined !== arg1) {
-          if (self.map.size >= self.max) {
-            map = self.map;
-            const iter = map.keys();
-            self.delete(iter.next().value);
-          }
-          map2 = self.map;
-          const result = map2.set(arg0, arg1);
+
+export default function(arr, arg1, arg2) {
+  let closure_0;
+  _require = arg2;
+  dependencyMap = null;
+  let closure_2 = null;
+  let regex = null;
+  try {
+    let tmp = arg1;
+    let self = this;
+    let self2 = this;
+    const tmp6 = new require("module_16183")(arg1, arg2);
+    let tmp7 = tmp6;
+    regex = tmp6;
+    const item = arr.forEach(function(item) {
+      if (regex.test(item)) {
+        const tmp = c1 && 1 !== closure_2.compare(item);
+        if (!tmp) {
+          c1 = item;
+          const self = this;
+          const self2 = this;
+          closure_2 = new _mod16154(c1, closure_0);
+          const tmp7 = new _mod16154(c1, closure_0);
         }
       }
-      return self;
-    }
+    });
+    return dependencyMap;
+  } catch (err) {
+    return null;
   }
-];
-
-export default _createClass(LRUCache, items);
+};

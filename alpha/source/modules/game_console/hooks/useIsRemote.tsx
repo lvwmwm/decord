@@ -1,12 +1,12 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 7539
+// Function ID: 7540
 // Name: useIsRemote
-// Dependencies: [5902, 504, 2]
+// Dependencies: [5921, 504, 2]
 // Exports: default
 
-// Module 7594 (useIsRemote)
+// Module 7539 (useIsRemote)
 import get_initialized from "get initialized" /* 504 */;
-import GameConsoleStore from "GameConsoleStore" /* 5902 */;
+import GameConsoleStore from "GameConsoleStore" /* 5921 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_console/hooks/useIsRemote.tsx");

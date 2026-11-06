@@ -1,50 +1,51 @@
-// Module ID: 19536
-// Function ID: 19537
+// Module ID: 19529
+// Function ID: 19530
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 4991, 6981, 11911, 502, 4992, 2135, 5075, 1385, 5904, 1072, 5817, 9418, 21, 5143, 575, 504, 19537, 5788, 9436, 9398, 7104, 5763, 14964, 1113, 8813, 7, 5849, 19534, 9082, 7119, 7127, 17838, 8495, 7128, 572, 7507, 4968, 6053, 5896, 8344, 12145, 5384, 19538, 2123, 9421, 9441, 19539, 19527, 19476, 11554, 9384, 19540, 7703, 19541, 9390, 19542, 11231, 12125, 11166, 11167, 2]
+// Dependencies: [19, 5018, 6923, 11877, 502, 5019, 2130, 5102, 1385, 5923, 1072, 5835, 9364, 21, 5170, 575, 504, 19530, 5806, 11345, 12068, 9382, 9344, 7048, 5781, 14941, 1113, 8759, 7, 5867, 19527, 9028, 7063, 7071, 17826, 8441, 7072, 572, 7452, 4995, 6073, 5915, 8289, 12114, 5404, 19531, 2118, 9367, 9387, 19532, 19520, 19468, 11516, 9330, 19533, 7656, 19534, 9336, 19535, 11186, 12094, 11121, 11122, 2]
 
-// Module 19536 (VoicePanelSettingsOverview)
+// Module 19529 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
 import intl18 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import CallConstants from "CallConstants" /* 5817 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5896 */;
-import TableRow6 from "TableRow" /* 7119 */;
-import TableRowIcon7 from "TableRowIcon" /* 7127 */;
-import TableRowArrow from "TableRowArrow" /* 7128 */;
-import TableSwitchRow3 from "TableSwitchRow" /* 7507 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8344 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8495 */;
-import LockIcon from "LockIcon" /* 8813 */;
-import showShareActionSheet from "showShareActionSheet" /* 9082 */;
-import FormComponents from "FormComponents" /* 9384 */;
-import useIsSecureFramesVerified from "useIsSecureFramesVerified" /* 9398 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 9418 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9421 */;
-import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9436 */;
-import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12145 */;
-import WrenchIcon from "WrenchIcon" /* 17838 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19534 */;
-import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19537 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import CallConstants from "CallConstants" /* 5835 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5915 */;
+import TableRow6 from "TableRow" /* 7063 */;
+import TableRowIcon7 from "TableRowIcon" /* 7071 */;
+import TableRowArrow from "TableRowArrow" /* 7072 */;
+import TableSwitchRow3 from "TableSwitchRow" /* 7452 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8289 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8441 */;
+import LockIcon from "LockIcon" /* 8759 */;
+import showShareActionSheet from "showShareActionSheet" /* 9028 */;
+import FormComponents from "FormComponents" /* 9330 */;
+import useIsSecureFramesVerified from "useIsSecureFramesVerified" /* 9344 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9364 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9367 */;
+import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9382 */;
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11345 */;
+import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12114 */;
+import WrenchIcon from "WrenchIcon" /* 17826 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19527 */;
+import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19530 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6981 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11911 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11877 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import UserStore from "UserStore" /* 1385 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5904 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5923 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -69,7 +70,7 @@ class VoicePanelSettingsOverviewHeader {
     const tmp = closure_21();
     const items = [SortedVoiceStateStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, () => {
+    let stateFromStores = obj.useStateFromStores(items, () => {
       const voiceStatesForChannelAlt = SortedVoiceStateStore.getVoiceStatesForChannelAlt(channelId, require);
       const substr = voiceStatesForChannelAlt.slice(0, 2);
       const mapped = substr.map((user) => user.user);
@@ -79,42 +80,49 @@ class VoicePanelSettingsOverviewHeader {
     const items2 = [channelId];
     const obj2 = get_initialized;
     const stateFromStores1 = obj2.useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
-    const tmp7 = channelId(5788)(stateFromStores1);
-    const obj3 = useIsSecureFramesUIEnabled;
-    let isSecureFramesUIEnabled = obj3.useIsSecureFramesUIEnabled({ channelId });
-    const obj4 = useIsSecureFramesVerified;
-    let isCallSecureFramesVerified = obj4.useIsCallSecureFramesVerified({ channelId });
-    const obj5 = { style: tmp.headerContainer, children: items4 };
-    const obj6 = { style: tmp.channelTitleWrapper, children: items3 };
+    const tmp7 = channelId(5806)(stateFromStores1);
+    const obj3 = StageChannelUnifiedCallExperiment;
+    const isStageUnifiedCall = obj3.useIsStageUnifiedCall(stateFromStores1, "VoicePanelSettingsOverviewHeader");
+    const tmp9 = channelId(12068)(channelId);
+    const obj4 = useIsSecureFramesUIEnabled;
+    let isSecureFramesUIEnabled = obj4.useIsSecureFramesUIEnabled({ channelId });
+    const obj5 = useIsSecureFramesVerified;
+    let isCallSecureFramesVerified = obj5.useIsCallSecureFramesVerified({ channelId });
+    const obj6 = { style: tmp.headerContainer, children: items4 };
+    const obj7 = { style: tmp.channelTitleWrapper, children: items3 };
     items3 = [, ];
-    const obj7 = { style: tmp.channelTitle, variant: "heading-lg/semibold", lineClamp: 1, accessibilityRole: "header", children: tmp7 };
-    const tmp11 = channelId(7104);
-    const tmp12 = channelId(7104);
-    items3[0] = closure_18(Text_Text.Text, obj7);
+    const obj8 = { style: tmp.channelTitle, variant: "heading-lg/semibold", lineClamp: 1, accessibilityRole: "header", children: tmp7 };
+    const tmp13 = channelId(7048);
+    const tmp14 = channelId(7048);
+    items3[0] = closure_18(Text_Text.Text, obj8);
     const tmp6 = channelId;
     if (isCallSecureFramesVerified) {
-      const obj8 = { style: tmp.secureFramesIcon, size: "xs", accessibilityLabel: intl.string(intl18.t.mR9cf3) };
-      const ShieldLockIcon = tmp2(14964).ShieldLockIcon;
+      const obj9 = { style: tmp.secureFramesIcon, size: "xs", accessibilityLabel: intl.string(intl18.t.mR9cf3) };
+      const ShieldLockIcon = tmp2(14941).ShieldLockIcon;
       intl = tmp2(1113).intl;
-      isCallSecureFramesVerified = tmp13(ShieldLockIcon, obj8);
+      isCallSecureFramesVerified = tmp15(ShieldLockIcon, obj9);
     }
     items3[1] = isCallSecureFramesVerified;
-    items4 = [closure_19(tmp12, obj6), , ];
-    const obj9 = { style: tmp.channelSubtitle, variant: "body-sm/medium", accessibilityRole: "summary", children: stateFromStores };
-    items4[1] = closure_18(Text_Text.Text, obj9);
+    items4 = [closure_19(tmp14, obj7), , ];
+    const obj10 = { style: tmp.channelSubtitle, variant: "body-sm/medium", accessibilityRole: "summary", children: stateFromStores };
+    const Text = tmp2(5781).Text;
+    if (isStageUnifiedCall) {
+      stateFromStores = tmp9;
+    }
+    items4[1] = closure_18(Text, obj10);
     if (isSecureFramesUIEnabled) {
-      const obj10 = { style: tmp.secureFrames, children: items5 };
+      const obj11 = { style: tmp.secureFrames, children: items5 };
       items5 = [, ];
-      const tmp6Result = tmp6(7104);
+      const tmp6Result = tmp6(7048);
       items5[0] = closure_18(LockIcon.LockIcon, { size: "xxs", color: "status-positive" });
-      const obj11 = { variant: "body-xs/medium", color: "status-positive", children: intl2.string(intl18.t["3BogKe"]) };
-      const Text = tmp2(5763).Text;
+      const obj12 = { variant: "body-xs/medium", color: "status-positive", children: intl2.string(intl18.t["3BogKe"]) };
+      const Text2 = tmp2(5781).Text;
       intl2 = tmp2(1113).intl;
-      items5[1] = closure_18(Text, obj11);
-      isSecureFramesUIEnabled = tmp10(tmp6Result, obj10);
+      items5[1] = closure_18(Text2, obj12);
+      isSecureFramesUIEnabled = tmp12(tmp6Result, obj11);
     }
     items4[2] = isSecureFramesUIEnabled;
-    return closure_19(tmp11, obj5);
+    return closure_19(tmp13, obj6);
   }
 }
 function ShareActivityLogsButton() {
@@ -130,7 +138,7 @@ function ShareActivityLogsButton() {
       const obj2 = { text: intl.string(intl18.t["i+9VWy"]) };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
-      intl = tmp(tmp2[24]).intl;
+      intl = tmp(tmp2[26]).intl;
       open("EMBEDDED_ACTIVITIES_SHARE_EMPTY_LOGS_ERROR_MESSAGE", obj2);
     } else {
       const tmpResult = VoicePanelSettingsActionCreators;
@@ -224,7 +232,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   let obj = guildId(stateFromStores[16]);
   let items = [ChannelStore];
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const DeveloperMode = guildId(stateFromStores[37]).DeveloperMode;
+  const DeveloperMode = guildId(stateFromStores[39]).DeveloperMode;
   const setting = DeveloperMode.useSetting();
   let obj2 = guildId(stateFromStores[16]);
   const items1 = [SortedVoiceStateStore];
@@ -263,7 +271,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   const obj4 = guildId(stateFromStores[16]);
   const stateFromStores2 = obj4.useStateFromStores(items4, () => selfDeaf.isSelfDeaf());
   const callback = stateFromStores1.useCallback(() => {
-    const obj = channelId(stateFromStores[38]);
+    const obj = channelId(stateFromStores[40]);
     obj.toggleSelfDeaf();
   }, []);
   const items5 = [stateFromStores4];
@@ -306,7 +314,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   const callback4 = stateFromStores1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { channelId };
-    obj.openLazy(asyncRequire(19538, dependencyMap.paths), closure_17, obj2);
+    obj.openLazy(asyncRequire(19531, dependencyMap.paths), closure_17, obj2);
   }, items10);
   const callback5 = stateFromStores1.useCallback(() => {
     if (null != stateFromStores4) {
@@ -314,34 +322,34 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
       const result = obj.openSecureFramesStreamVerification(tmp, channelId);
     }
   }, items11);
-  const obj7 = guildId(stateFromStores[46]);
+  const obj7 = guildId(stateFromStores[48]);
   const isCallRTCConnectionEmpty = obj7.useIsCallRTCConnectionEmpty();
-  const obj8 = guildId(stateFromStores[46]);
+  const obj8 = guildId(stateFromStores[48]);
   const isStreamRTCConnectionEmpty = obj8.useIsStreamRTCConnectionEmpty(stateFromStores4);
   const items12 = [stateFromStores3];
   const obj9 = guildId(stateFromStores[16]);
   const stateFromStores5 = obj9.useStateFromStores(items12, () => null != stateFromStores3.getCurrentEmbeddedActivity(), []);
   const items13 = [PermissionStore];
   const items14 = [channelId];
-  const tmp18 = channelId(stateFromStores[47])(stateFromStores);
+  const tmp18 = channelId(stateFromStores[49])(stateFromStores);
   const obj10 = guildId(stateFromStores[16]);
   const stateFromStores6 = obj10.useStateFromStores(items13, () => {
     const obj = { channelId };
     return PermissionStore.canWithPartialContext(constants.MANAGE_CHANNELS, obj);
   }, items14);
-  const obj11 = guildId(stateFromStores[48]);
+  const obj11 = guildId(stateFromStores[50]);
   const canInviteMembers = obj11.useCanInviteMembers(channelId);
-  const obj12 = guildId(stateFromStores[49]);
+  const obj12 = guildId(stateFromStores[51]);
   const inviteMembersCallback = obj12.useInviteMembersCallback(channelId);
-  const tmp22 = channelId(stateFromStores[50])(stateFromStores);
-  const obj13 = guildId(stateFromStores[19]);
+  const tmp22 = channelId(stateFromStores[52])(stateFromStores);
+  const obj13 = guildId(stateFromStores[21]);
   let isSecureFramesUIEnabled = obj13.useIsSecureFramesUIEnabled({ channelId });
   const children = [closure_18(VoicePanelSettingsOverviewHeader, { guildId, channelId }), , , , , ];
   let tmp26Result = null;
   const tmp25 = closure_20;
   if (tmp22) {
-    const obj14 = { hasIcons: false, children: closure_18(channelId(tmp2[52]), obj15) };
-    const VoicePanelFormSection = tmp(tmp2[51]).VoicePanelFormSection;
+    const obj14 = { hasIcons: false, children: closure_18(channelId(tmp2[54]), obj15) };
+    const VoicePanelFormSection = tmp(tmp2[53]).VoicePanelFormSection;
     obj15 = { channel: stateFromStores, analyticsSection: constants.CHANNEL_ACTION_SHEET };
     tmp26Result = tmp26(VoicePanelFormSection, obj14);
   }
@@ -349,50 +357,50 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   let tmp26Result7 = stateFromStores6 || tmp18;
   if (tmp26Result7) {
     let tmp26Result6 = stateFromStores6;
-    const VoicePanelFormSection2 = tmp(tmp2[51]).VoicePanelFormSection;
+    const VoicePanelFormSection2 = tmp(tmp2[53]).VoicePanelFormSection;
     if (stateFromStores6) {
-      const obj16 = { onPress: callback2, label: intl.string(tmp(tmp2[24]).t.XPDhcc), subLabel: intl2.string(tmp(tmp2[24]).t.w7ZEot), trailing: closure_18(tmp(tmp2[34]).TableRowArrow, {}) };
-      const TableRow = tmp(tmp2[30]).TableRow;
-      intl = tmp(tmp2[24]).intl;
-      intl2 = tmp(tmp2[24]).intl;
+      const obj16 = { onPress: callback2, label: intl.string(tmp(tmp2[26]).t.XPDhcc), subLabel: intl2.string(tmp(tmp2[26]).t.w7ZEot), trailing: closure_18(tmp(tmp2[36]).TableRowArrow, {}) };
+      const TableRow = tmp(tmp2[32]).TableRow;
+      intl = tmp(tmp2[26]).intl;
+      intl2 = tmp(tmp2[26]).intl;
       tmp26Result6 = tmp26(TableRow, obj16);
     }
     const obj17 = { hasIcons: false, children: tmp26Result6 };
     tmp26Result7 = tmp26(VoicePanelFormSection2, obj17);
   }
   children[2] = tmp26Result7;
-  const VoicePanelFormSection3 = tmp(tmp2[51]).VoicePanelFormSection;
-  const obj18 = { onPress: callback3, icon: closure_18(TableRowIcon, obj19), label: intl3.string(tmp(tmp2[24]).t.dsXapM), subLabel: intl4.string(tmp(tmp2[24]).t["16SG+O"]), trailing: closure_18(tmp(tmp2[34]).TableRowArrow, {}) };
-  const TableRow2 = tmp(tmp2[30]).TableRow;
-  obj19 = { IconComponent: tmp(tmp2[53]).SettingsIcon, source: channelId(tmp2[54]) };
-  TableRowIcon = tmp(tmp2[31]).TableRowIcon;
-  intl3 = tmp(tmp2[24]).intl;
-  intl4 = tmp(tmp2[24]).intl;
+  const VoicePanelFormSection3 = tmp(tmp2[53]).VoicePanelFormSection;
+  const obj18 = { onPress: callback3, icon: closure_18(TableRowIcon, obj19), label: intl3.string(tmp(tmp2[26]).t.dsXapM), subLabel: intl4.string(tmp(tmp2[26]).t["16SG+O"]), trailing: closure_18(tmp(tmp2[36]).TableRowArrow, {}) };
+  const TableRow2 = tmp(tmp2[32]).TableRow;
+  obj19 = { IconComponent: tmp(tmp2[55]).SettingsIcon, source: channelId(tmp2[56]) };
+  TableRowIcon = tmp(tmp2[33]).TableRowIcon;
+  intl3 = tmp(tmp2[26]).intl;
+  intl4 = tmp(tmp2[26]).intl;
   const items16 = [closure_18(TableRow2, obj18), , , , ];
-  const obj20 = { icon: closure_18(TableRowIcon2, obj21), accessibilityHint: intl5.string(tmp(tmp2[24]).t.wjcRFX), value: stateFromStores2, onValueChange: callback, label: intl6.string(tmp(tmp2[24]).t.wjcRFX), subLabel: intl7.string(tmp(tmp2[24]).t.M3VN2U) };
-  const TableSwitchRow = tmp(tmp2[36]).TableSwitchRow;
-  obj21 = { IconComponent: tmp(tmp2[55]).HeadphonesSlashIcon, source: channelId(tmp2[56]) };
-  TableRowIcon2 = tmp(tmp2[31]).TableRowIcon;
-  intl5 = tmp(tmp2[24]).intl;
-  intl6 = tmp(tmp2[24]).intl;
-  intl7 = tmp(tmp2[24]).intl;
+  const obj20 = { icon: closure_18(TableRowIcon2, obj21), accessibilityHint: intl5.string(tmp(tmp2[26]).t.wjcRFX), value: stateFromStores2, onValueChange: callback, label: intl6.string(tmp(tmp2[26]).t.wjcRFX), subLabel: intl7.string(tmp(tmp2[26]).t.M3VN2U) };
+  const TableSwitchRow = tmp(tmp2[38]).TableSwitchRow;
+  obj21 = { IconComponent: tmp(tmp2[57]).HeadphonesSlashIcon, source: channelId(tmp2[58]) };
+  TableRowIcon2 = tmp(tmp2[33]).TableRowIcon;
+  intl5 = tmp(tmp2[26]).intl;
+  intl6 = tmp(tmp2[26]).intl;
+  intl7 = tmp(tmp2[26]).intl;
   items16[1] = closure_18(TableSwitchRow, obj20);
-  const obj22 = { icon: closure_18(TableRowIcon3, obj23), accessibilityHint: intl8.string(tmp(tmp2[24]).t.ZMTRyc), value: stateFromStores3, onValueChange: callback1, label: intl9.string(tmp(tmp2[24]).t.ZMTRyc), subLabel: intl10.string(tmp(tmp2[24]).t.MlpCFS) };
-  const TableSwitchRow2 = tmp(tmp2[36]).TableSwitchRow;
-  obj23 = { IconComponent: tmp(tmp2[57]).VideoIcon, source: channelId(tmp2[58]) };
-  TableRowIcon3 = tmp(tmp2[31]).TableRowIcon;
-  intl8 = tmp(tmp2[24]).intl;
-  intl9 = tmp(tmp2[24]).intl;
-  intl10 = tmp(tmp2[24]).intl;
+  const obj22 = { icon: closure_18(TableRowIcon3, obj23), accessibilityHint: intl8.string(tmp(tmp2[26]).t.ZMTRyc), value: stateFromStores3, onValueChange: callback1, label: intl9.string(tmp(tmp2[26]).t.ZMTRyc), subLabel: intl10.string(tmp(tmp2[26]).t.MlpCFS) };
+  const TableSwitchRow2 = tmp(tmp2[38]).TableSwitchRow;
+  obj23 = { IconComponent: tmp(tmp2[59]).VideoIcon, source: channelId(tmp2[60]) };
+  TableRowIcon3 = tmp(tmp2[33]).TableRowIcon;
+  intl8 = tmp(tmp2[26]).intl;
+  intl9 = tmp(tmp2[26]).intl;
+  intl10 = tmp(tmp2[26]).intl;
   items16[2] = closure_18(TableSwitchRow2, obj22);
   let tmp26Result8 = isSecureFramesUIEnabled && null == stateFromStores4 && !isCallRTCConnectionEmpty;
   if (tmp26Result8) {
-    const obj24 = { onPress: callback4, icon: closure_18(TableRowIcon4, obj25), label: intl11.string(tmp(tmp2[24]).t.cTQI5t), subLabel: intl12.string(tmp(tmp2[24]).t.Etxti2), trailing: closure_18(tmp(tmp2[34]).TableRowArrow, {}) };
-    const TableRow3 = tmp(tmp2[30]).TableRow;
-    obj25 = { IconComponent: tmp(tmp2[25]).LockIcon, source: channelId(tmp2[54]) };
-    TableRowIcon4 = tmp(tmp2[31]).TableRowIcon;
-    intl11 = tmp(tmp2[24]).intl;
-    intl12 = tmp(tmp2[24]).intl;
+    const obj24 = { onPress: callback4, icon: closure_18(TableRowIcon4, obj25), label: intl11.string(tmp(tmp2[26]).t.cTQI5t), subLabel: intl12.string(tmp(tmp2[26]).t.Etxti2), trailing: closure_18(tmp(tmp2[36]).TableRowArrow, {}) };
+    const TableRow3 = tmp(tmp2[32]).TableRow;
+    obj25 = { IconComponent: tmp(tmp2[27]).LockIcon, source: channelId(tmp2[56]) };
+    TableRowIcon4 = tmp(tmp2[33]).TableRowIcon;
+    intl11 = tmp(tmp2[26]).intl;
+    intl12 = tmp(tmp2[26]).intl;
     tmp26Result8 = tmp26(TableRow3, obj24);
   }
   items16[3] = tmp26Result8;
@@ -403,12 +411,12 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
     isSecureFramesUIEnabled = !isStreamRTCConnectionEmpty;
   }
   if (isSecureFramesUIEnabled) {
-    const obj26 = { onPress: callback5, icon: closure_18(TableRowIcon5, obj27), label: intl13.string(tmp(tmp2[24]).t.QogHld), subLabel: intl14.string(tmp(tmp2[24]).t["j5+1ed"]), trailing: closure_18(tmp(tmp2[34]).TableRowArrow, {}) };
-    const TableRow4 = tmp(tmp2[30]).TableRow;
-    obj27 = { IconComponent: tmp(tmp2[25]).LockIcon, source: channelId(tmp2[54]) };
-    TableRowIcon5 = tmp(tmp2[31]).TableRowIcon;
-    intl13 = tmp(tmp2[24]).intl;
-    intl14 = tmp(tmp2[24]).intl;
+    const obj26 = { onPress: callback5, icon: closure_18(TableRowIcon5, obj27), label: intl13.string(tmp(tmp2[26]).t.QogHld), subLabel: intl14.string(tmp(tmp2[26]).t["j5+1ed"]), trailing: closure_18(tmp(tmp2[36]).TableRowArrow, {}) };
+    const TableRow4 = tmp(tmp2[32]).TableRow;
+    obj27 = { IconComponent: tmp(tmp2[27]).LockIcon, source: channelId(tmp2[56]) };
+    TableRowIcon5 = tmp(tmp2[33]).TableRowIcon;
+    intl13 = tmp(tmp2[26]).intl;
+    intl14 = tmp(tmp2[26]).intl;
     isSecureFramesUIEnabled = tmp26(TableRow4, obj26);
   }
   items16[4] = isSecureFramesUIEnabled;
@@ -416,20 +424,20 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   let tmp24Result = stateFromStores1.length > 0 || canInviteMembers;
   if (tmp24Result) {
     const obj28 = { title: "" + formatToPlainString(AWmdd9, obj29), hasIcons: true, children: items17 };
-    const VoicePanelFormSection4 = tmp(tmp2[51]).VoicePanelFormSection;
-    const intl15 = tmp(tmp2[24]).intl;
+    const VoicePanelFormSection4 = tmp(tmp2[53]).VoicePanelFormSection;
+    const intl15 = tmp(tmp2[26]).intl;
     formatToPlainString = intl15.formatToPlainString;
     const _HermesInternal = HermesInternal;
     obj29 = { count: "" + stateFromStores1.length };
-    AWmdd9 = tmp(tmp2[24]).t.AWmdd9;
+    AWmdd9 = tmp(tmp2[26]).t.AWmdd9;
     const _HermesInternal2 = HermesInternal;
     let tmp26Result9 = null;
     if (canInviteMembers) {
-      const obj30 = { onPress: inviteMembersCallback, icon: closure_18(TableRowIcon6, obj31), label: intl16.string(tmp(tmp2[24]).t["f1+QIK"]), trailing: closure_18(tmp(tmp2[34]).TableRowArrow, {}) };
-      const TableRow5 = tmp(tmp2[30]).TableRow;
-      obj31 = { IconComponent: tmp(tmp2[59]).GroupPlusIcon, source: channelId(tmp2[60]) };
-      TableRowIcon6 = tmp(tmp2[31]).TableRowIcon;
-      intl16 = tmp(tmp2[24]).intl;
+      const obj30 = { onPress: inviteMembersCallback, icon: closure_18(TableRowIcon6, obj31), label: intl16.string(tmp(tmp2[26]).t["f1+QIK"]), trailing: closure_18(tmp(tmp2[36]).TableRowArrow, {}) };
+      const TableRow5 = tmp(tmp2[32]).TableRow;
+      obj31 = { IconComponent: tmp(tmp2[61]).GroupPlusIcon, source: channelId(tmp2[62]) };
+      TableRowIcon6 = tmp(tmp2[33]).TableRowIcon;
+      intl16 = tmp(tmp2[26]).intl;
       tmp26Result9 = tmp26(TableRow5, obj30);
     }
     items17 = [
@@ -451,9 +459,9 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   children[4] = tmp24Result;
   let tmp24Result2 = null;
   if (setting) {
-    const obj32 = { title: intl17.string(tmp(tmp2[24]).t.J6rqB7), hasIcons: true, children: items18 };
-    const VoicePanelFormSection5 = tmp(tmp2[51]).VoicePanelFormSection;
-    intl17 = tmp(tmp2[24]).intl;
+    const obj32 = { title: intl17.string(tmp(tmp2[26]).t.J6rqB7), hasIcons: true, children: items18 };
+    const VoicePanelFormSection5 = tmp(tmp2[53]).VoicePanelFormSection;
+    intl17 = tmp(tmp2[26]).intl;
     let tmp26Result10 = null;
     if (stateFromStores5) {
       tmp26Result10 = tmp26(ShareActivityLogsButton, {});

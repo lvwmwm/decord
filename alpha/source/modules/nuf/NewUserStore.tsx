@@ -1,9 +1,9 @@
-// Module ID: 7071
-// Function ID: 7072
+// Module ID: 7013
+// Function ID: 7014
 // Name: NewUserStore
 // Dependencies: [504, 572, 2]
 
-// Module 7071 (NewUserStore)
+// Module 7013 (NewUserStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

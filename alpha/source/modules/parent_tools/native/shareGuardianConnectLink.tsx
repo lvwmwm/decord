@@ -1,14 +1,14 @@
-// Module ID: 17053
-// Function ID: 17054
+// Module ID: 17041
+// Function ID: 17042
 // Name: shareGuardianConnectLink
-// Dependencies: [7861, 9082, 1113, 2667, 2]
+// Dependencies: [7815, 9028, 1113, 2664, 2]
 // Exports: shareGuardianConnectLink
 
-// Module 17053 (shareGuardianConnectLink)
+// Module 17041 (shareGuardianConnectLink)
 import intl2 from "intl" /* 1113 */;
-import _modDef2667 from "module_2667" /* 2667 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7861 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 9082 */;
+import _modDef2664 from "module_2664" /* 2664 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7815 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 9028 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = FamilyCenterConstants.FAMILY_CENTER_REQUEST_QR_CODE_URL;
@@ -21,7 +21,7 @@ export function shareGuardianConnectLink(stateFromStores, linkCode) {
   if (username == null) {
     username = stateFromStores.username;
   }
-  const obj = { message: intl.formatToPlainString(_modDef2667.lVD5Nd, { username, url: tmp }) };
+  const obj = { message: intl.formatToPlainString(_modDef2664.lVD5Nd, { username, url: tmp }) };
   const showShareActionSheet = showShareActionSheet2.showShareActionSheet;
   showShareActionSheet2;
   intl = intl2.intl;

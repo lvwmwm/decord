@@ -1,9 +1,9 @@
-// Module ID: 2125
-// Function ID: 2126
+// Module ID: 2120
+// Function ID: 2121
 // Name: LifecycleManager
 // Dependencies: [2]
 
-// Module 2125 (LifecycleManager)
+// Module 2120 (LifecycleManager)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/LifecycleManager.tsx");

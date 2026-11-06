@@ -1,17 +1,17 @@
-// Module ID: 19177
-// Function ID: 19178
+// Module ID: 19167
+// Function ID: 19168
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1385, 4989, 21, 5143, 504, 2176, 1113, 3059, 10141, 19178, 2]
+// Dependencies: [19, 17, 1385, 5016, 21, 5170, 504, 2171, 1113, 3056, 10092, 19168, 2]
 // Exports: default
 
-// Module 19177 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 19167 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
-import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 19178 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 19168 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -41,11 +41,11 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const items = [UserStore];
   const obj = visible(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = markAsDismissed(2176);
+  const obj2 = markAsDismissed(2171);
   const result = obj2.canUsePremiumProfileCustomization(stateFromStores);
   const intl = visible(1113).intl;
   const string = intl.string;
-  const tmp6 = markAsDismissed(3059);
+  const tmp6 = markAsDismissed(3056);
   const tmp4 = markAsDismissed;
   if (result) {
     stringResult = string(tmp6.h6sykk);
@@ -55,7 +55,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   dependencyMap = stringResult;
   const intl2 = tmp(1113).intl;
   const string2 = intl2.string;
-  const tmp4Result = tmp4(3059);
+  const tmp4Result = tmp4(3056);
   if (result) {
     string2Result = string2(tmp4Result.TyUdka);
   } else {
@@ -77,7 +77,7 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
       return closure_1_7(closure_1_9, {});
     }
   }), items2);
-  const tmpResult = visible(10141);
+  const tmpResult = visible(10092);
   const coachmark = tmpResult.useCoachmark(targetRef, memo);
   return null;
 };

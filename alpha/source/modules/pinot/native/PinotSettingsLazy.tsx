@@ -1,10 +1,10 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18171
+// Function ID: 18172
 // Name: PinotSettingsLazy
-// Dependencies: [2, 18180]
+// Dependencies: [2, 18172]
 
-// Module 18179 (PinotSettingsLazy)
-import PinotMemberSetting from "PinotMemberSetting" /* 18180 */;
+// Module 18171 (PinotSettingsLazy)
+import PinotMemberSetting from "PinotMemberSetting" /* 18172 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/pinot/native/PinotSettingsLazy.tsx");

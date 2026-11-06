@@ -1,16 +1,16 @@
-// Module ID: 9595
-// Function ID: 9596
+// Module ID: 9541
+// Function ID: 9542
 // Name: GameProfileCommunity
-// Dependencies: [19, 21, 9591, 9590, 9596, 9524, 9493, 7664, 9597, 1113, 5006, 2]
+// Dependencies: [19, 21, 9537, 9536, 9542, 9470, 9439, 7617, 9543, 1113, 5033, 2]
 // Exports: default
 
-// Module 9595 (GameProfileCommunity)
+// Module 9541 (GameProfileCommunity)
 import Fragment from "Fragment" /* 21 */;
-import transitionToGuild from "transitionToGuild" /* 7664 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9493 */;
-import GameProfileSection from "GameProfileSection" /* 9590 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9591 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9597 */;
+import transitionToGuild from "transitionToGuild" /* 7617 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9439 */;
+import GameProfileSection from "GameProfileSection" /* 9536 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9537 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9543 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

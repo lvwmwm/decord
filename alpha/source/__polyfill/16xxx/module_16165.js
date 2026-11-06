@@ -1,18 +1,12 @@
 // Module ID: 16165
 // Function ID: 16166
-// Dependencies: [16157]
+// Dependencies: [16154]
 
 // Module 16165
-import _mod16157 from "module_16157" /* 16157 */;
+import _mod16154 from "module_16154" /* 16154 */;
 
 
-export default (str, arg1) => {
-  const tmp = _mod16157;
-  str = str.trim();
-  const tmpResult = tmp(str.replace(/^[=v]+/, ""), arg1);
-  let version = null;
-  if (tmpResult) {
-    version = tmpResult.version;
-  }
-  return version;
+export default (arg0, arg1) => {
+  const tmp = new _mod16154(arg0, arg1);
+  return tmp.minor;
 };

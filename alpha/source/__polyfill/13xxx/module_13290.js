@@ -1,151 +1,42 @@
 // Module ID: 13290
 // Function ID: 13291
-// Dependencies: [13288]
-// Exports: isMatchingPattern, safeJoin, snipLine, stringMatchesSomePattern, truncate
+// Dependencies: [13262]
+// Exports: handleCallbackErrors
 
 // Module 13290
-import _mod13288 from "module_13288" /* 13288 */;
+import _mod13262 from "module_13262" /* 13262 */;
 
 
-export function isMatchingPattern(arr, test) {
-  let flag = arg2;
-  if (arg2 === undefined) {
-    flag = false;
-  }
-  const obj = _mod13288;
-  let isStringResult = obj.isString(arr);
-  if (isStringResult) {
-    let isMatch;
-    const tmpResult = _mod13288;
-    if (tmpResult.isRegExp(test)) {
-      isMatch = test.test(arr);
+export function handleCallbackErrors(fn, fn2) {
+  function maybeHandlePromiseRejection(promise, fn2, fn) {
+    let closure_0 = fn2;
+    let closure_1 = fn;
+    const obj = _mod13262;
+    if (obj.isThenable(promise)) {
+      return promise.then((result) => {
+        closure_1();
+        return result;
+      }, (arg0) => {
+        closure_0(arg0);
+        closure_1();
+        throw arg0;
+      });
     } else {
-      const tmpResult2 = _mod13288;
-      isMatch = tmpResult2.isString(test);
-      if (isMatch) {
-        let hasItem;
-        if (flag) {
-          hasItem = arr === test;
-        } else {
-          hasItem = arr.includes(test);
-        }
-        isMatch = hasItem;
-      }
+      fn();
+      return promise;
     }
-    isStringResult = isMatch;
   }
-  return isStringResult;
-}
-export function safeJoin(arg0, arg1) {
-  if (Array.isArray(arg0)) {
-    const items = [];
-    let num = 0;
-    if (0 < arg0.length) {
-      try {
-        const push = items.push;
-        const obj = _mod13288;
-        if (obj.isVueViewModel(arg0[num])) {
-          push("[VueViewModel]");
-        } else {
-          const _String = String;
-          push(String(arg0[num]));
-        }
-      } catch (err) {
-        items.push("[value cannot be serialized]");
-      }
-      num = num + 1;
-    }
-    return items.join(arg1);
-  } else {
-    return "";
-  }
-}
-export function snipLine(arr, arg1) {
-  if (arr.length <= 150) {
-    return arr;
-  } else {
-    let tmp = arg1;
-    if (arg1 > arr.length) {
-      tmp = length;
-    }
-    const _Math = Math;
-    let num3 = Math.max(tmp - 60, 0);
-    if (num3 < 5) {
-      num3 = 0;
-    }
-    const _Math2 = Math;
-    let bound = Math.min(num3 + 140, length);
-    if (bound > arr.length - 5) {
-      bound = length;
-    }
-    if (bound === arr.length) {
-      const _Math3 = Math;
-      num3 = Math.max(bound - 140, 0);
-    }
-    const substr = arr.slice(num3, bound);
-    let combined = substr;
-    if (num3 > 0) {
-      const _HermesInternal = HermesInternal;
-      combined = "'{snip} " + substr;
-    }
-    let text = combined;
-    if (bound < arr.length) {
-      text = `${tmp6} {snip}`;
-    }
-    return text;
-  }
-}
-export function stringMatchesSomePattern(arg0) {
-  let closure_0 = arg0;
-  let items = arg1;
-  if (arg1 === undefined) {
-    items = [];
-  }
-  let flag = arg2;
+  fn = arg2;
   if (arg2 === undefined) {
-    flag = false;
+    fn = function t() {
+
+    };
   }
-  return items.some((test) => {
-    const obj2 = _mod13288;
-    let isStringResult = obj2.isString(obj);
-    if (isStringResult) {
-      let isMatch;
-      const tmpResult = _mod13288;
-      if (tmpResult.isRegExp(test)) {
-        isMatch = test.test(obj);
-      } else {
-        const tmpResult2 = _mod13288;
-        isMatch = tmpResult2.isString(test);
-        if (isMatch) {
-          let hasItem;
-          if (flag) {
-            hasItem = obj === test;
-          } else {
-            hasItem = obj.includes(test);
-          }
-          isMatch = hasItem;
-        }
-      }
-      isStringResult = isMatch;
-    }
-    return isStringResult;
-  });
-}
-export function truncate(str) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 0;
+  try {
+    return maybeHandlePromiseRejection(fn(), fn2, fn);
+  } catch (tmp2) {
+    fn2(tmp2);
+    fn();
+    throw tmp2;
   }
-  let combined = str;
-  if (typeof str === "string") {
-    combined = str;
-    if (0 !== num) {
-      combined = str;
-      if (str.length > num) {
-        const _HermesInternal = HermesInternal;
-        combined = "" + str.slice(0, num) + "...";
-      }
-    }
-  }
-  return combined;
 }

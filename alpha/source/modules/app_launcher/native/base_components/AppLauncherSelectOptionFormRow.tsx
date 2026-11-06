@@ -1,15 +1,15 @@
-// Module ID: 12734
-// Function ID: 12735
+// Module ID: 12699
+// Function ID: 12700
 // Name: AppLauncherSelectOptionFormRow
-// Dependencies: [19, 21, 5143, 575, 12726, 8322, 5763, 7128, 2]
+// Dependencies: [19, 21, 5170, 575, 12691, 8267, 5781, 7072, 2]
 // Exports: default
 
-// Module 12734 (AppLauncherSelectOptionFormRow)
+// Module 12699 (AppLauncherSelectOptionFormRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
+import Text_Text from "Text/Text" /* 5781 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,7 +35,7 @@ export default function AppLauncherSelectOptionFormRow(arg0) {
   const tmp2 = closure_3();
   const obj = require("useAnimationDelayedAutoFocus");
   const animationDelayedAutoFocus = obj.useAnimationDelayedAutoFocus(autoFocus, onPress);
-  const FormRow = require("module_8322").FormRow;
+  const FormRow = require("module_8267").FormRow;
   let str = "body-md/medium";
   const Text = require("Text/Text").Text;
   if (selected) {

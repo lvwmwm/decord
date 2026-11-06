@@ -1,29 +1,29 @@
-// Module ID: 15441
-// Function ID: 15442
+// Module ID: 15436
+// Function ID: 15437
 // Name: VoiceMemberUser
-// Dependencies: [19, 17, 6196, 1192, 502, 6707, 4992, 5055, 2135, 5898, 1072, 21, 5143, 575, 9387, 6990, 504, 5150, 15442, 15443, 1187, 15444, 15445, 15446, 15447, 11986, 5763, 1113, 8322, 8027, 12244, 5324, 8084, 5384, 7124, 7629, 6179, 7639, 5197, 2]
+// Dependencies: [19, 17, 6216, 1192, 502, 6649, 5019, 5082, 2130, 5917, 1072, 21, 5170, 575, 9333, 6932, 504, 5177, 15437, 15438, 1187, 15439, 15440, 15441, 15442, 11952, 5781, 1113, 8267, 7981, 12213, 5344, 8030, 5404, 7068, 7574, 6199, 7592, 5224, 2]
 
-// Module 15441 (VoiceMemberUser)
+// Module 15436 (VoiceMemberUser)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5197 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5324 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7629 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8027 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8084 */;
+import UserUtilsDefault from "UserUtils" /* 5224 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5344 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7574 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7981 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 8030 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 6196 */;
+import SoundboardStore from "SoundboardStore" /* 6216 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6707 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
-import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import PresenceStore from "PresenceStore" /* 5898 */;
+import CallStore from "CallStore" /* 6649 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import PresenceStore from "PresenceStore" /* 5917 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -77,7 +77,7 @@ function StreamingUserRow(user) {
   const merged = Object.assign(user);
   obj4 = { text: formatResult, style: labelCallScreen };
   labelCallScreen = null;
-  FormSubLabel = tmp3(8322).FormSubLabel;
+  FormSubLabel = tmp3(8267).FormSubLabel;
   const tmp11 = closure_17;
   const tmp8 = closure_13;
   const tmp9 = closure_14;
@@ -90,7 +90,7 @@ function StreamingUserRow(user) {
     let guildId;
     const obj5 = { style: tmp.streamPreview, children: tmp10(tmp17, obj6) };
     const tmp15 = closure_3;
-    tmp17 = channel(12244);
+    tmp17 = channel(12213);
     if (channel != null) {
       guildId = channel.getGuildId();
     }
@@ -142,7 +142,7 @@ function RingButton(channelId) {
         style: isActionSheet ? tmp2.ringingButton : tmp.ringingButton,
         children: closure_12(LegacyText, obj2)
       };
-      const PressableOpacity = channelId(7124).PressableOpacity;
+      const PressableOpacity = channelId(7068).PressableOpacity;
       obj2 = { style: isActionSheet ? tmp2.ringingButtonLabel : tmp.ringingButtonLabel, children: intl.string(channelId(1113).t.bHa9kN) };
       LegacyText = tmp5(1187).LegacyText;
       intl = tmp5(1113).intl;
@@ -174,7 +174,7 @@ function StopRingButton(channelId) {
         style: isActionSheet ? tmp2.ringingButton : tmp.ringingButton,
         children: closure_12(LegacyText, obj2)
       };
-      const PressableOpacity = channelId(7124).PressableOpacity;
+      const PressableOpacity = channelId(7068).PressableOpacity;
       obj2 = { style: isActionSheet ? tmp2.ringingButtonLabel : tmp.ringingButtonLabel, children: intl.string(channelId(1113).t.ygslb0) };
       LegacyText = tmp5(1187).LegacyText;
       intl = tmp5(1113).intl;
@@ -235,16 +235,16 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
   ({ isActionSheet, onPress: dependencyMap } = user);
   const isSpectating = user.isSpectating;
   const merged = Object.assign(user, Object.assign({ user: 0, name: 0, channel: 0, voiceState: 0, withStream: 0, isSpectating: 0, isActionSheet: 0, onPress: 0 }));
-  const withLocalSelfMuteDeaf = user(9387).withLocalSelfMuteDeaf;
-  const tmp4 = user(9387);
-  let obj = user(9387);
+  const withLocalSelfMuteDeaf = user(9333).withLocalSelfMuteDeaf;
+  const tmp4 = user(9333);
+  let obj = user(9333);
   const result = withLocalSelfMuteDeaf(voiceState, obj.useLocalSelfMuteDeaf());
   const tmp5 = closure_15();
   const tmp6 = closure_16();
   const id = AuthenticationStore.getId();
   const obj2 = { userId: user.id };
   const items = [SoundboardStore];
-  const tmp9 = channel(6990)(obj2);
+  const tmp9 = channel(6932)(obj2);
   const obj5 = user(504);
   const stateFromStores = obj5.useStateFromStores(items, () => SoundboardStore.isUserPlayingSounds(user.id));
   const items1 = [ThemeStore];
@@ -330,7 +330,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       const tmp26 = closure_13;
       const tmp27 = id;
       if (isSpectating) {
-        const obj11 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15447), style: tmp22 };
+        const obj11 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15442), style: tmp22 };
         const Icon = tmp2(1187).Icon;
         tmp23Result = tmp23(Icon, obj11);
       }
@@ -338,11 +338,11 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       let tmp23Result5 = null;
       if (tmp17) {
         let tmp8Result;
-        const tmp2Result = user(5150);
+        const tmp2Result = user(5177);
         if (tmp2Result.isThemeDark(stateFromStores1)) {
-          tmp8Result = tmp8(15442);
+          tmp8Result = tmp8(15437);
         } else {
-          tmp8Result = tmp8(15443);
+          tmp8Result = tmp8(15438);
         }
         const obj12 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result, style: tmp5.voiceStatusIconMargin, color: tmp22.tintColor, disableColor: localMute };
         const Icon2 = tmp2(1187).Icon;
@@ -351,7 +351,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       items4[1] = tmp23Result5;
       let tmp23Result6 = null;
       if (tmp16) {
-        const obj13 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15444), style: tmp22 };
+        const obj13 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15439), style: tmp22 };
         const Icon3 = tmp2(1187).Icon;
         tmp23Result6 = tmp23(Icon3, obj13);
       }
@@ -361,10 +361,10 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
         let obj15;
         const Icon4 = tmp2(1187).Icon;
         if (localVideoDisabled) {
-          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15445), style: tmp5.voiceStatusIconMargin, disableColor: true };
-          const obj14 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15445), style: tmp5.voiceStatusIconMargin, disableColor: true };
+          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15440), style: tmp5.voiceStatusIconMargin, disableColor: true };
+          const obj14 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15440), style: tmp5.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15446), style: tmp22 };
+          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15441), style: tmp22 };
         }
         tmp23Result7 = tmp23(Icon4, obj15);
       }
@@ -379,16 +379,16 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
     }
   }
   const obj17 = { disabled: flag5, label: closure_12(Label, obj20), subLabel: stringResult };
-  const FormRow = tmp2(8322).FormRow;
+  const FormRow = tmp2(8267).FormRow;
   const merged1 = Object.assign(merged);
   const merged2 = Object.assign(obj4);
   let tmp36 = name;
-  Label = tmp2(8322).FormRow.Label;
+  Label = tmp2(8267).FormRow.Label;
   if (stateFromStores2) {
     const obj18 = { children: items5 };
     items5 = [name, ];
     const obj19 = { variant: "body-md/semibold", lineClamp: 1, color: "status-positive", children: items6 };
-    const Text = tmp2(5763).Text;
+    const Text = tmp2(5781).Text;
     const intl = tmp2(1113).intl;
     items6 = ["\u00A0", intl.string(user(1113).t["pFO/Ph"])];
     items5[1] = closure_13(Text, obj19);
@@ -401,11 +401,11 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
   }
   if (localVideoAutoDisabled) {
     const obj21 = { style: tmp5.autoDisabledVideo, children: items7 };
-    const obj22 = { source: channel(11986), size: user(1187).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const obj22 = { source: channel(11952), size: user(1187).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const Icon5 = tmp2(1187).Icon;
     items7 = [closure_12(Icon5, obj22), ];
     const obj23 = { variant: "body-xs/medium", color: "text-default", style: tmp5.autoDisabledVideoLabel, children: intl3.string(user(1113).t.m2Hyj0) };
-    const Text2 = tmp2(5763).Text;
+    const Text2 = tmp2(5781).Text;
     intl3 = tmp2(1113).intl;
     items7[1] = closure_12(Text2, obj23);
     stringResult = closure_13(id, obj21);
@@ -442,7 +442,7 @@ const memoResult = react.memo(function DisconnectedUserRow(user) {
     }
     return hasItem;
   }, items1);
-  const obj2 = channel(6179);
+  const obj2 = channel(6199);
   const name = obj2.getName(channel.guild_id, channel.id, user);
   const obj4 = {
     onPress() {
@@ -452,11 +452,11 @@ const memoResult = react.memo(function DisconnectedUserRow(user) {
     leading: closure_12(Avatar, obj6),
     trailing: tmp7Result
   };
-  const obj3 = user(7639);
+  const obj3 = user(7592);
   const canRing = obj3.useCanRing(user);
   obj5 = { text: name, style: labelCallScreen };
   labelCallScreen = null;
-  Label = user(8322).FormRow.Label;
+  Label = user(8267).FormRow.Label;
   if (isActionSheet) {
     labelCallScreen = tmp.labelCallScreen;
   }
@@ -468,7 +468,7 @@ const memoResult = react.memo(function DisconnectedUserRow(user) {
     tmp7Result = tmp7(stateFromStores ? StopRingButton : RingButton, obj7);
   }
   const obj8 = {};
-  const FormRow = tmp2(8322).FormRow;
+  const FormRow = tmp2(8267).FormRow;
   const merged = Object.assign(obj4);
   return closure_12(FormRow, obj8);
 });

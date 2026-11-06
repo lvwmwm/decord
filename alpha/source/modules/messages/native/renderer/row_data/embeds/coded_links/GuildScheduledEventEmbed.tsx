@@ -1,38 +1,38 @@
-// Module ID: 15355
-// Function ID: 15356
+// Module ID: 15349
+// Function ID: 15350
 // Name: GuildScheduledEventEmbed
-// Dependencies: [5, 32, 17, 6993, 5010, 4992, 5014, 5085, 1385, 10303, 4998, 8024, 5891, 8540, 8542, 9133, 9128, 9120, 9363, 1113, 8545, 9313, 8527, 575, 15356, 9123, 5788, 9236, 9117, 15357, 9118, 5006, 9124, 9125, 2]
+// Dependencies: [5, 32, 17, 6935, 5037, 5019, 5041, 5112, 1385, 10255, 5025, 7978, 5910, 8486, 8488, 9079, 9074, 9066, 9309, 1113, 8491, 9259, 8473, 575, 15350, 9069, 5806, 9182, 9063, 15351, 9064, 5033, 9070, 9071, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 15355 (GuildScheduledEventEmbed)
+// Module 15349 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4998 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5006 */;
-import GuildRecord from "GuildRecord" /* 5010 */;
-import useChannelName from "useChannelName" /* 5788 */;
-import Constants from "Constants" /* 8024 */;
-import react_native2 from "react-native" /* 8527 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8540 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8542 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9117 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9118 */;
-import ScheduleUtils from "ScheduleUtils" /* 9120 */;
-import EntityUtils from "EntityUtils" /* 9123 */;
-import useEventSchedule from "useEventSchedule" /* 9128 */;
-import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 9133 */;
-import GuildEventUtils from "GuildEventUtils" /* 9236 */;
-import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 9363 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10303 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15357 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5025 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5033 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import useChannelName from "useChannelName" /* 5806 */;
+import Constants from "Constants" /* 7978 */;
+import react_native2 from "react-native" /* 8473 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8486 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8488 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9063 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9064 */;
+import ScheduleUtils from "ScheduleUtils" /* 9066 */;
+import EntityUtils from "EntityUtils" /* 9069 */;
+import useEventSchedule from "useEventSchedule" /* 9074 */;
+import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 9079 */;
+import GuildEventUtils from "GuildEventUtils" /* 9182 */;
+import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 9309 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10255 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15351 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6993 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6935 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
-import MarkupUtils from "MarkupUtils" /* 5891 */;
+import MarkupUtils from "MarkupUtils" /* 5910 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, closure_1, importDefault;
@@ -113,9 +113,9 @@ function createGuildScheduledEventEmbed(type) {
   const intl = tmp7(1113).intl;
   const stringResult = intl.string(intl5.t.DlcqlU);
   const tmp7Result12 = renderer_EmbedUtils;
-  const assetUriForEmbed1 = tmp7Result12.getAssetUriForEmbed(tmp(8545));
+  const assetUriForEmbed1 = tmp7Result12.getAssetUriForEmbed(tmp(8491));
   const tmp7Result13 = renderer_EmbedUtils;
-  const assetUriForEmbed2 = tmp7Result13.getAssetUriForEmbed(tmp(9313));
+  const assetUriForEmbed2 = tmp7Result13.getAssetUriForEmbed(tmp(9259));
   if (null != guild) {
     if (tmp9) {
       let stringResult1;
@@ -135,7 +135,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(15356));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(15350));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;
@@ -314,7 +314,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
   let obj = GuildScheduledEventStore;
   const guildScheduledEvent = GuildScheduledEventStore.getGuildScheduledEvent(tmp3);
   if (nextRecurrenceIdInEvent == null) {
-    let obj2 = first(9120);
+    let obj2 = first(9066);
     nextRecurrenceIdInEvent = obj2.getNextRecurrenceIdInEvent(guildScheduledEvent);
   }
   if (null != guildScheduledEvent) {
@@ -341,7 +341,7 @@ export function createGuildScheduledEventLinkEmbed(code, theme) {
       return tmp13(obj3);
     }
   }
-  let obj4 = first(9124);
+  let obj4 = first(9070);
   const guardGuildEventFetchResult = obj4.guardGuildEventFetch(first, tmp3, _asyncToGenerator(async function(arg0, value) {
     if (c3 === 2) {
       c3 = 3;

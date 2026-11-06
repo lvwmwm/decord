@@ -1,9 +1,9 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 10999
+// Function ID: 11000
 // Name: ConjureSequencedBuffer
 // Dependencies: [2]
 
-// Module 11047 (ConjureSequencedBuffer)
+// Module 10999 (ConjureSequencedBuffer)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/debug/ConjureSequencedBuffer.tsx");

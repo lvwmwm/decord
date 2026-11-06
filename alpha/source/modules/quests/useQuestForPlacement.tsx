@@ -1,18 +1,18 @@
-// Module ID: 17368
-// Function ID: 17369
+// Module ID: 17357
+// Function ID: 17358
 // Name: useQuestForPlacement
-// Dependencies: [19, 7988, 7991, 1089, 9829, 7010, 9838, 504, 7989, 7997, 6926, 2]
+// Dependencies: [19, 7942, 7945, 1089, 9780, 6952, 9789, 504, 7943, 7951, 6868, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop, useDeliveredCreativeForPlacement
 
-// Module 17368 (useQuestForPlacement)
+// Module 17357 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1089 */;
-import AdCreativeType from "AdCreativeType" /* 6926 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 7010 */;
-import QuestsEligibility from "QuestsEligibility" /* 9829 */;
-import QuestActionCreators from "QuestActionCreators" /* 9838 */;
+import AdCreativeType from "AdCreativeType" /* 6868 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6952 */;
+import QuestsEligibility from "QuestsEligibility" /* 9780 */;
+import QuestActionCreators from "QuestActionCreators" /* 9789 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7988 */;
-import QuestStore from "QuestStore" /* 7991 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7942 */;
+import QuestStore from "QuestStore" /* 7945 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let _require;
 let c3;
 let closure_4;
 let hasOwnProperty;
-const f112621 = () => {
+const f112805 = () => {
   const deliveryAdDecisionByPlacement = AdDeliveryStore.deliveryAdDecisionByPlacement;
   let value = deliveryAdDecisionByPlacement.get(closure_0);
   if (value == null) {
@@ -73,7 +73,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f112621, items1);
+  stateFromStores = obj.useStateFromStores(items, f112805, items1);
   const items2 = [stateFromStores, arg0];
   closure_3(() => {
     let current;
@@ -106,7 +106,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   const items3 = [AdDeliveryStore];
   const items4 = [arg0];
   const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items3, f112621, items4);
+  const stateFromStores1 = obj2.useStateFromStores(items3, f112805, items4);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   require("AdDecisionUtils");
@@ -144,7 +144,7 @@ export function useAdDecisionForPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f112621, items1);
+  return obj.useStateFromStores(items, f112805, items1);
 }
 export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   let stateFromStores;
@@ -153,7 +153,7 @@ export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   const items = [AdDeliveryStore];
   const items1 = [MOBILE_HOME_DOCK_AREA];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f112621, items1);
+  stateFromStores = obj.useStateFromStores(items, f112805, items1);
   const items2 = [stateFromStores, MOBILE_HOME_DOCK_AREA];
   closure_3(() => {
     let current;
@@ -196,7 +196,7 @@ export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BA
   let obj2 = require("get initialized");
   const items2 = [AdDeliveryStore];
   const items3 = [MOBILE_HOME_DOCK_AREA];
-  const stateFromStores1 = obj2.useStateFromStores(items2, f112621, items3);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f112805, items3);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   const tmp3 = QuestStore;

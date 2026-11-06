@@ -1,30 +1,30 @@
-// Module ID: 20030
-// Function ID: 20031
+// Module ID: 20037
+// Function ID: 20038
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1385, 20026, 1072, 21, 5143, 575, 1113, 5197, 20028, 5210, 11003, 7206, 1627, 1499, 7037, 20031, 1187, 12220, 20032, 7205, 7358, 8951, 7433, 5744, 2]
+// Dependencies: [32, 19, 17, 1385, 20033, 1072, 21, 5170, 575, 1113, 5224, 20035, 5230, 10955, 7153, 1627, 1499, 6979, 20038, 1187, 12189, 20039, 7152, 7305, 8897, 7380, 5764, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 20030 (GuildSettingsModalAuditLogFilter)
+// Module 20037 (GuildSettingsModalAuditLogFilter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5197 */;
-import react_native2 from "react-native" /* 5210 */;
-import FormRadio from "FormRadio" /* 7206 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11003 */;
-import AuditLogUtils from "AuditLogUtils" /* 20028 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 20031 */;
+import UserUtilsDefault from "UserUtils" /* 5224 */;
+import react_native2 from "react-native" /* 5230 */;
+import FormRadio from "FormRadio" /* 7153 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10955 */;
+import AuditLogUtils from "AuditLogUtils" /* 20035 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 20038 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 20026 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 20033 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, navigation, set;
+let _require, keyExtractor, navigation, set;
 
 let c10;
 let c9;
@@ -103,7 +103,7 @@ export default function GuildSettingsModalAuditLogFilter(data) {
     return obj;
   }, items);
   const data1 = memo.data;
-  const keyExtractor = memo.keyExtractor;
+  keyExtractor = memo.keyExtractor;
   const items1 = [filterType, navigation];
   const effect = navigation.useEffect(() => {
     let stringResult;

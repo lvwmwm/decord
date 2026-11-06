@@ -1,26 +1,26 @@
-// Module ID: 11482
-// Function ID: 11483
+// Module ID: 11444
+// Function ID: 11445
 // Name: StrangerDangerWarningBanner
-// Dependencies: [19, 5085, 10988, 11452, 1072, 11483, 21, 5143, 575, 504, 11465, 11466, 6882, 5384, 11484, 2123, 1260, 11467, 1113, 11470, 5763, 11486, 2]
+// Dependencies: [19, 5112, 10940, 11414, 1072, 11445, 21, 5170, 575, 504, 11427, 11428, 6824, 5404, 11446, 2118, 1260, 11429, 1113, 11432, 5781, 11448, 2]
 
-// Module 11482 (StrangerDangerWarningBanner)
+// Module 11444 (StrangerDangerWarningBanner)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10988 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11465 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11466 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11483 */;
-import StrangerDangerMoreTipsModalActionItemsDefault from "StrangerDangerMoreTipsModalActionItems" /* 11486 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10940 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11427 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11428 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11445 */;
+import StrangerDangerMoreTipsModalActionItemsDefault from "StrangerDangerMoreTipsModalActionItems" /* 11448 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
-import Constants from "Constants" /* 11452 */;
-import createStyles from "createStyles" /* 5143 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import Constants from "Constants" /* 11414 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -88,7 +88,7 @@ class StrangerDangerWarningBanner {
           },
           impressionName: discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION
         };
-        const tmp2 = asyncRequire(11484, dependencyMap.paths);
+        const tmp2 = asyncRequire(11446, dependencyMap.paths);
         openLazy(tmp2, closure_9, obj);
       };
     }, items5);
@@ -117,7 +117,7 @@ class StrangerDangerWarningBanner {
           actionItems: null
         };
         ModalActionCreatorsDefault;
-        const tmp2 = asyncRequire(11470, dependencyMap.paths);
+        const tmp2 = asyncRequire(11432, dependencyMap.paths);
         intl = intl5.intl;
         arr = metroImportDefault();
         ({ channelId, warningId, senderId, onBlockPressed: callback2(SafetyWarningUtils.CtaEventTypes.USER_MODAL_BLOCK_CONFIRM) });

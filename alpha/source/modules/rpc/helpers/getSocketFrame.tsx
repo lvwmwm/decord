@@ -1,12 +1,12 @@
-// Module ID: 9479
-// Function ID: 9480
+// Module ID: 9425
+// Function ID: 9426
 // Name: getSocketFrame
-// Dependencies: [6984, 9480, 2]
+// Dependencies: [6926, 9426, 2]
 // Exports: default
 
-// Module 9479 (getSocketFrame)
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 9480 */;
-import FramesStore from "FramesStore" /* 6984 */;
+// Module 9425 (getSocketFrame)
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 9426 */;
+import FramesStore from "FramesStore" /* 6926 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/getSocketFrame.tsx");

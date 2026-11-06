@@ -1,9 +1,9 @@
-// Module ID: 8868
-// Function ID: 8869
+// Module ID: 8814
+// Function ID: 8815
 // Name: ApplicationAssetsStore
 // Dependencies: [12, 504, 572, 2]
 
-// Module 8868 (ApplicationAssetsStore)
+// Module 8814 (ApplicationAssetsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

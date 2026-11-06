@@ -1,9 +1,9 @@
-// Module ID: 7550
-// Function ID: 7551
+// Module ID: 7495
+// Function ID: 7496
 // Name: SocialLayerStorefrontTypes
 // Dependencies: [2]
 
-// Module 7550 (SocialLayerStorefrontTypes)
+// Module 7495 (SocialLayerStorefrontTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/slayer_storefront/SocialLayerStorefrontTypes.tsx");

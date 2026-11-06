@@ -1,236 +1,82 @@
 // Module ID: 13326
 // Function ID: 13327
-// Dependencies: [32, 13327, 13287, 13288, 13284]
-// Exports: normalizeUrlToBase
+// Dependencies: [13251, 13254, 13283, 13269, 13282, 13303, 13273, 13274, 13260, 13291, 13268, 13267, 13255]
+// Exports: getTraceData
 
 // Module 13326
-import _mod13284 from "module_13284" /* 13284 */;
-import _mod13287 from "module_13287" /* 13287 */;
-import _mod13288 from "module_13288" /* 13288 */;
-import memoBuilder from "memoBuilder" /* 13327 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod13260 from "module_13260" /* 13260 */;
+import _mod13267 from "module_13267" /* 13267 */;
+import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 13268 */;
+import _mod13273 from "module_13273" /* 13273 */;
+import _mod13274 from "module_13274" /* 13274 */;
+import _mod13282 from "module_13282" /* 13282 */;
+import _mod13291 from "module_13291" /* 13291 */;
+import _mod13303 from "module_13303" /* 13303 */;
+import registerSpanErrorInstrumentation from "module_13251" /* 13251 */;
+import "module_13254";
+import DEBUG_BUILD from "module_13283" /* 13283 */;
+import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13269 */;
 
-let hasOwnProperty;
 
-function normalize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 100;
+export function getTraceData() {
+  let sampled;
+  let spanId;
+  let traceId;
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = Infinity;
-  }
-  try {
-    return visit("", arg0, num, num2);
-  } catch (tmp5) {
-    const _HermesInternal = HermesInternal;
-    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
-    return obj;
-  }
-}
-function visit(arg0, __sentry_skip_normalization__) {
-  function stringifyValue(arg0, _events) {
-    function getConstructorName(_events) {
-      const prototypeOf = Object.getPrototypeOf(_events);
-      let str = "null prototype";
-      if (prototypeOf) {
-        str = prototypeOf.constructor.name;
-      }
-      return str;
-    }
-    try {
-      let str = "domain";
-      if ("domain" === arg0) {
-        if (_events) {
-          if (typeof _events === "object") {
-            if (_events._events) {
-              return "[Domain]";
-            }
-          }
-        }
-      }
-      if ("domainEmitter" === arg0) {
-        return "[DomainEmitter]";
+  const obj2 = _mod13282;
+  const client = obj2.getClient();
+  const obj3 = _mod13303;
+  if (obj3.isEnabled()) {
+    if (client) {
+      const tmpResult = _mod13273;
+      const mainCarrier = tmpResult.getMainCarrier();
+      const tmpResult8 = _mod13274;
+      const asyncContextStrategy = tmpResult8.getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
       } else {
-        if (undefined !== global) {
-          if (_events === global) {
-            return "[Global]";
-          }
+        let spanToTraceHeaderResult;
+        let dynamicSamplingContextFromSpan;
+        let obj5;
+        const tmpResult9 = _mod13282;
+        const currentScope = tmpResult9.getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          const tmpResult10 = _mod13260;
+          span = tmpResult10.getActiveSpan();
         }
-        const _window = window;
-        if (typeof window !== "undefined") {
-          const _window2 = window;
-          if (_events === window) {
-            return "[Window]";
-          }
-        }
-        const _document = document;
-        if (typeof document !== "undefined") {
-          const _document2 = document;
-          if (_events === document) {
-            return "[Document]";
-          }
-        }
-        const obj = _mod13288;
-        if (obj.isVueViewModel(_events)) {
-          return "[VueViewModel]";
+        if (span) {
+          const tmpResult11 = _mod13260;
+          spanToTraceHeaderResult = tmpResult11.spanToTraceHeader(span);
         } else {
-          const tmp4Result = _mod13288;
-          if (tmp4Result.isSyntheticEvent(_events)) {
-            return "[SyntheticEvent]";
-          } else {
-            if (typeof _events === "number") {
-              const _Number = Number;
-              if (!Number.isFinite(_events)) {
-                const _HermesInternal = HermesInternal;
-                return "[" + _events + "]";
-              }
-            }
-            if (typeof _events === "function") {
-              const _HermesInternal4 = HermesInternal;
-              const tmp4Result2 = _mod13284;
-              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
-            } else if (typeof _events === "symbol") {
-              const _String2 = String;
-              const _HermesInternal3 = HermesInternal;
-              return "[" + String(_events) + "]";
-            } else if (typeof _events === "bigint") {
-              const _String = String;
-              const _HermesInternal2 = HermesInternal;
-              return "[BigInt: " + String(_events) + "]";
-            } else {
-              let combined;
-              const _HermesInternal6 = HermesInternal;
-              const obj4 = /^HTML(\w*)Element$/;
-              const tmp9 = getConstructorName(_events);
-              if (obj4.test(tmp9)) {
-                combined = concat(tmp10, "]");
-              } else {
-                combined = concat(tmp10, "]");
-              }
-              return combined;
-            }
-          }
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          const tmpResult12 = _mod13267;
+          spanToTraceHeaderResult = tmpResult12.generateSentryTraceHeader(traceId, spanId, sampled);
         }
-      }
-    } catch (tmp7) {
-      const _HermesInternal5 = HermesInternal;
-      return "**non-serializable** (" + tmp7 + ")";
-    }
-  }
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = Infinity;
-  }
-  let num2 = arg3;
-  if (arg3 === undefined) {
-    num2 = Infinity;
-  }
-  let memoBuilderResult = arg4;
-  if (arg4 === undefined) {
-    let obj = memoBuilder;
-    memoBuilderResult = obj.memoBuilder();
-  }
-  _slicedToArray(memoBuilderResult, 2);
-  if (null != __sentry_skip_normalization__) {
-    const items = ["boolean", "string"];
-    if (!items.includes(typeof __sentry_skip_normalization__)) {
-      if (typeof __sentry_skip_normalization__ === "number") {
-        let _Number = Number;
-      }
-      let tmp9 = arg0;
-      let str = stringifyValue(arg0, __sentry_skip_normalization__);
-      if (str.startsWith("[object ")) {
-        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
-          return __sentry_skip_normalization__;
+        const tmpResult13 = _mod13291;
+        if (span) {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
         } else {
-          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
-            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
-          }
-          if (0 === num) {
-            return str.replace("object ", "");
-          } else if (tmp6(__sentry_skip_normalization__)) {
-            return "[Circular ~]";
-          } else {
-            if (__sentry_skip_normalization__) {
-              if (typeof __sentry_skip_normalization__.toJSON === "function") {
-                try {
-                  const tmp10 = visit;
-                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
-                } catch (err) {
-                }
-              }
-            }
-            const _Array = Array;
-            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
-            const obj2 = _mod13287;
-            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
-            const keys = Object.keys();
-            if (keys !== undefined) {
-              while (keys[tmp] !== undefined) {
-                let _Object = Object;
-                hasOwnProperty = Object.prototype.hasOwnProperty;
-                let tmp28 = tmp21;
-                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
-                  continue;
-                } else {
-                  if (tmp20 >= num2) {
-                    let str4 = "[MaxProperties ~]";
-                    tmp14[tmp21] = "[MaxProperties ~]";
-                    break;
-                  } else {
-                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
-                    let num6 = tmp20 + 1;
-                    continue;
-                  }
-                  break;
-                }
-                break;
-              }
-            }
-            tmp7(__sentry_skip_normalization__);
-            return tmp14;
-          }
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
         }
-      } else {
-        return str;
+        const tmpResult14 = BAGGAGE_HEADER_NAME;
+        const result = tmpResult14.dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(13267).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          obj5 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+        } else {
+          const logger = tmp(13255).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
       }
     }
   }
-  return __sentry_skip_normalization__;
-}
-function normalizeToSize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 3;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = 102400;
-  }
-  let tmp = normalize(arg0, num);
-  const str = encodeURI(JSON.stringify(tmp));
-  if (~(-str.split(/%..|./).length) > num2) {
-    tmp = normalizeToSize(arg0, num - 1, num2);
-  }
-  return tmp;
-}
-
-export { normalize };
-export { normalizeToSize };
-export function normalizeUrlToBase(arg0, str) {
-  let str2 = arg0;
-  str = str.replace(/\\/g, "/");
-  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-  try {
-    const _decodeURI = decodeURI;
-    str2 = decodeURI(arg0);
-  } catch (err) {
-  }
-  const str3 = str2.replace(/\\/g, "/");
-  const replace = str3.replace(/webpack:\/?/g, "").replace;
-  str3.replace(/webpack:\/?/g, "");
-  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
-  return replace(regExp, "app:///");
+  return {};
 }

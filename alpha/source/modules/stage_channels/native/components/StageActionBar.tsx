@@ -1,16 +1,16 @@
-// Module ID: 12119
-// Function ID: 12120
+// Module ID: 12088
+// Function ID: 12089
 // Name: StageActionBar
-// Dependencies: [19, 17, 21, 5143, 6848, 12120, 12061, 11388, 12083, 6850, 12080, 12175, 2]
+// Dependencies: [19, 17, 21, 5170, 6790, 12089, 12027, 11350, 12048, 6792, 12045, 12144, 2]
 
-// Module 12119 (StageActionBar)
+// Module 12088 (StageActionBar)
 import react_native from "react-native" /* 17 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 12080 */;
-import ChannelCallActionBar from "ChannelCallActionBar" /* 12120 */;
-import ChannelCallMicButton from "ChannelCallMicButton" /* 12175 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 12045 */;
+import ChannelCallActionBar from "ChannelCallActionBar" /* 12089 */;
+import ChannelCallMicButton from "ChannelCallMicButton" /* 12144 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,12 +49,12 @@ const memoResult = react.memo(function StageActionBar(channel) {
     const tmp = actionBarPrimaryButton;
     if (actionBarPrimaryButton === ChannelCallActionBar.ActionBarPrimaryButton.END_STREAM) {
       const obj2 = { channel, isSmallSize };
-      tmp4 = hasOwnProperty(tmp2(12120).DisconnectStreamButton, obj2);
+      tmp4 = hasOwnProperty(tmp2(12089).DisconnectStreamButton, obj2);
     } else {
       tmp4 = null;
       if (tmp === ChannelCallActionBar.ActionBarPrimaryButton.END_CALL) {
         const obj = { channel, isSmallSize };
-        tmp4 = hasOwnProperty(tmp2(12080).DisconnectStageButton, obj);
+        tmp4 = hasOwnProperty(tmp2(12045).DisconnectStageButton, obj);
       }
     }
     return tmp4;

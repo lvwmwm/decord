@@ -1,9 +1,9 @@
-// Module ID: 10096
-// Function ID: 10097
+// Module ID: 10047
+// Function ID: 10048
 // Name: ACOMExperiments
 // Dependencies: [1449, 2]
 
-// Module 10096 (ACOMExperiments)
+// Module 10047 (ACOMExperiments)
 import ApexExperiment_mod from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 

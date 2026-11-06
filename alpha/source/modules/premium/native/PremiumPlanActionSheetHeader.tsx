@@ -1,20 +1,20 @@
-// Module ID: 7761
-// Function ID: 7762
+// Module ID: 7715
+// Function ID: 7716
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1387, 7762, 21, 5143, 7763, 7764, 2176, 5725, 1092, 5854, 7765, 7766, 7767, 7768, 10117, 10770, 10122, 2]
+// Dependencies: [19, 17, 1387, 7716, 21, 5170, 7717, 7718, 2171, 5745, 1092, 5872, 7719, 7720, 7721, 7722, 10068, 10722, 10073, 2]
 // Exports: default
 
-// Module 7761 (PremiumPlanActionSheetHeader)
+// Module 7715 (PremiumPlanActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import PremiumUtils from "PremiumUtils" /* 2176 */;
-import LinearGradientDefault from "LinearGradient" /* 5725 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import ColorConstants from "ColorConstants" /* 7762 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import LinearGradientDefault from "LinearGradient" /* 5745 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import ColorConstants from "ColorConstants" /* 7716 */;
 import react from "react" /* 19 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -71,12 +71,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp14 = LinearGradientDefault;
   tmp6Result = PremiumUtils;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp17Result = tmp13(7763);
+    tmp17Result = tmp13(7717);
   } else {
     tmp17Result = null;
     if (TIER_0.TIER_1 !== premiumType) {
       if (TIER_0.TIER_2 === premiumType) {
-        tmp17Result = tmp13(7764);
+        tmp17Result = tmp13(7718);
       }
     }
   }
@@ -85,12 +85,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     const tmp13Result7 = FastImageDefault;
     const tmp17 = metroImportDefault;
     if (TIER_0.TIER_0 === premiumType) {
-      tmp13Result8 = tmp13(7763);
+      tmp13Result8 = tmp13(7717);
     } else {
       tmp13Result8 = null;
       if (TIER_0.TIER_1 !== premiumType) {
         if (TIER_0.TIER_2 === premiumType) {
-          tmp13Result8 = tmp13(7764);
+          tmp13Result8 = tmp13(7718);
         }
       }
     }
@@ -102,33 +102,33 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp13Result9 = FastImageDefault;
   const tmp20 = View;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result10 = tmp13(7765);
+    tmp13Result10 = tmp13(7719);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result10 = tmp13(7766);
+    tmp13Result10 = tmp13(7720);
   } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result10 = tmp13(7767);
+    tmp13Result10 = tmp13(7721);
   }
   items1 = [metroImportDefault(tmp13Result9, { source: tmp13Result10, resizeMode: "contain" }), , ];
   let tmp21Result = null;
   if (tmp2) {
     const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-    tmp21Result = tmp21(tmp6(7768).PremiumPill, obj5);
+    tmp21Result = tmp21(tmp6(7722).PremiumPill, obj5);
   }
   items1[1] = tmp21Result;
   let tmp21Result2 = null;
   if (tmp10) {
     const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-    tmp21Result2 = tmp21(tmp6(7768).PremiumPill, obj6);
+    tmp21Result2 = tmp21(tmp6(7722).PremiumPill, obj6);
   }
   items1[2] = tmp21Result2;
   items[1] = metroImportAll(tmp20, obj4);
   const tmp13Result11 = FastImageDefault;
   if (TIER_0.TIER_0 === premiumType) {
-    tmp13Result12 = tmp13(10117);
+    tmp13Result12 = tmp13(10068);
   } else if (TIER_0.TIER_1 === premiumType) {
-    tmp13Result12 = tmp13(10770);
+    tmp13Result12 = tmp13(10722);
   } else if (TIER_0.TIER_2 === premiumType) {
-    tmp13Result12 = tmp13(10122);
+    tmp13Result12 = tmp13(10073);
   }
   const obj7 = { source: tmp13Result12, style: null, resizeMode: "contain" };
   const items2 = [tmp.imgWumpus, ];

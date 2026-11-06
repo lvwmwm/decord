@@ -1,20 +1,20 @@
-// Module ID: 7254
-// Function ID: 7255
+// Module ID: 7201
+// Function ID: 7202
 // Name: FreeFormTextInput
-// Dependencies: [19, 17, 21, 5143, 575, 7124, 1113, 1187, 7255, 38, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 7068, 1113, 1187, 7202, 38, 2]
 // Exports: default
 
-// Module 7254 (FreeFormTextInput)
+// Module 7201 (FreeFormTextInput)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Pressables from "Pressables" /* 7124 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7255 */;
+import Pressables from "Pressables" /* 7068 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7202 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

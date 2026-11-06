@@ -1,14 +1,14 @@
-// Module ID: 7751
-// Function ID: 7752
+// Module ID: 7705
+// Function ID: 7706
 // Name: PremiumPlanPurchasedStore
-// Dependencies: [5385, 1387, 560, 1259, 7752, 7490, 2]
+// Dependencies: [5405, 1387, 560, 1259, 7706, 7435, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
-// Module 7751 (PremiumPlanPurchasedStore)
+// Module 7705 (PremiumPlanPurchasedStore)
 import react_native from "react-native" /* 1259 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7752 */;
-import ActionSheetStore from "ActionSheetStore" /* 5385 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7435 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 7706 */;
+import ActionSheetStore from "ActionSheetStore" /* 5405 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -114,6 +114,6 @@ export function reset() {
         str = "dismissed";
       }
     }
-    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "id", onPaymentDismiss: "sr" });
+    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "channel", onPaymentDismiss: "ti" });
   });
 }

@@ -1,22 +1,22 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9147
+// Function ID: 9148
 // Name: PinotDiscoverableRow
-// Dependencies: [19, 1072, 21, 7204, 7119, 9202, 1113, 3287, 9187, 2190, 5384, 9154, 2123, 9204, 9208, 9205, 2]
+// Dependencies: [19, 1072, 21, 7151, 7063, 9148, 1113, 3316, 9133, 2185, 5404, 9100, 2118, 9150, 9154, 9151, 2]
 // Exports: PinotCreateChannelDiscoverableRow
 
-// Module 9201 (PinotDiscoverableRow)
+// Module 9147 (PinotDiscoverableRow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import _modDef3287 from "module_3287" /* 3287 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import TableRow2 from "TableRow" /* 7119 */;
-import TableRowGroup2 from "TableRowGroup" /* 7204 */;
-import PinotDiscoverable from "PinotDiscoverable" /* 9187 */;
-import PinotEligibility from "PinotEligibility" /* 9205 */;
-import useIsPinotNewChannelPrivate from "useIsPinotNewChannelPrivate" /* 9208 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import _modDef3316 from "module_3316" /* 3316 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import TableRow2 from "TableRow" /* 7063 */;
+import TableRowGroup2 from "TableRowGroup" /* 7151 */;
+import PinotDiscoverable from "PinotDiscoverable" /* 9133 */;
+import PinotEligibility from "PinotEligibility" /* 9151 */;
+import useIsPinotNewChannelPrivate from "useIsPinotNewChannelPrivate" /* 9154 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ function PinotDiscoverableTableRow(arg0) {
   let value;
   ({ value, description, arrow, disabled, accessible, accessibilityState, onPress } = arg0);
   const TableRowGroup = TableRowGroup2.TableRowGroup;
-  ({ icon: null, label: intl.string(_modDef3287.uneDIi), trailing: null, arrow, disabled, accessible, accessibilityState, onPress });
+  ({ icon: null, label: intl.string(_modDef3316.uneDIi), trailing: null, arrow, disabled, accessible, accessibilityState, onPress });
   const TableRow = TableRow2.TableRow;
   intl = intl3.intl;
   ({ text: intl2.string(PinotDiscoverable.PINOT_DISCOVERABLE_OPTION_LABELS[value]) });
@@ -49,13 +49,13 @@ function PinotDiscoverableSelectRow(value) {
   let intl = intl3.intl;
   const format = intl.format;
   const obj2 = { learnMoreURL: obj3.getArticleURL(HelpdeskArticles.SERVER_WEB_PAGES_ADMIN) };
-  const prop = _modDef3287["o3+MNm"];
+  const prop = _modDef3316["o3+MNm"];
   obj3 = HelpdeskUtilsDefault;
   return <PinotDiscoverableTableRow value={value} description={format(prop, obj2)} arrow={!readOnly} disabled={readOnly} onPress={function handlePress() {
     let intl;
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     let obj = {
-      title: intl.string(_modDef3287["r/o6RM"]),
+      title: intl.string(_modDef3316["r/o6RM"]),
       items: importDefault.map((value) => {
         let intl;
         const obj = { value, label: intl.string(closure_1_0(closure_1_2[8]).PINOT_DISCOVERABLE_OPTION_LABELS[value]) };
@@ -70,7 +70,7 @@ function PinotDiscoverableSelectRow(value) {
       },
       hasIcons: false
     };
-    const tmp2 = asyncRequire(9154, dependencyMap.paths);
+    const tmp2 = asyncRequire(9100, dependencyMap.paths);
     intl = intl3.intl;
     openLazy(tmp2, "PinotDiscoverableSheet", obj);
   }} />;
@@ -81,14 +81,14 @@ function PinotDiscoverableRow(onChange) {
   let isPrivate;
   onChange = onChange.onChange;
   ({ guildId, isPrivate, flags } = onChange);
-  let obj = onChange(9204);
+  let obj = onChange(9150);
   const pinotDiscoverableRowState = obj.usePinotDiscoverableRowState(guildId, flags, isPrivate);
   const kind = pinotDiscoverableRowState.kind;
   if ("hidden" === kind) {
     return null;
   } else if ("private" === kind) {
     const intl = tmp(1113).intl;
-    return <PinotDiscoverableTableRow value={onChange(9187).PinotDiscoverableOption.NONE} description={intl.string(pinotDiscoverableRowState(3287)["MrI+fw"])} accessible accessibilityState={{ disabled: true }} />;
+    return <PinotDiscoverableTableRow value={onChange(9133).PinotDiscoverableOption.NONE} description={intl.string(pinotDiscoverableRowState(3316)["MrI+fw"])} accessible accessibilityState={{ disabled: true }} />;
   } else if ("select" === kind) {
     ({ value: obj2.value, options: obj2.options, readOnly: obj2.readOnly } = pinotDiscoverableRowState);
     return <PinotDiscoverableSelectRow value={null} options={null} readOnly={null} onChange={function onChange(arg0) {

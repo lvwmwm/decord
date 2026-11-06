@@ -1,7 +1,7 @@
 // Module ID: 1411
 // Function ID: 1412
 // Name: AvatarUtils
-// Dependencies: [1072, 1412, 1414, 1377, 1446, 1487, 2023, 2024, 14, 2108, 2110, 2111, 11, 1381, 2]
+// Dependencies: [1072, 1412, 1414, 1377, 1446, 1487, 2023, 2024, 14, 2103, 2105, 2106, 11, 1381, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserAvatarURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
 // Module 1411 (AvatarUtils)
@@ -13,9 +13,9 @@ import utils_AvatarUtils from "utils/AvatarUtils" /* 1414 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
 import _modDef1487 from "module_1487" /* 1487 */;
 import NumberUtils from "NumberUtils" /* 2024 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2108 */;
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 2110 */;
-import AssetRegistryDefault from "AssetRegistry" /* 2111 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2103 */;
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 2105 */;
+import AssetRegistryDefault from "AssetRegistry" /* 2106 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;

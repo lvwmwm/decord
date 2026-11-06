@@ -1,40 +1,40 @@
-// Module ID: 15718
-// Function ID: 15719
+// Module ID: 15712
+// Function ID: 15713
 // Name: GuildBoostingMarketingTierCards
-// Dependencies: [32, 19, 17, 1072, 1387, 21, 9605, 1113, 11233, 14337, 8819, 8815, 10444, 15719, 10103, 5864, 15721, 5143, 575, 15713, 6916, 1652, 5380, 5763, 5379, 5150, 5725, 7124, 8609, 15722, 15724, 5140, 1187, 15726, 15727, 5747, 14369, 2]
+// Dependencies: [32, 19, 17, 1072, 1387, 21, 9551, 1113, 11188, 14314, 8765, 8761, 10396, 15713, 10054, 5882, 15715, 1652, 5745, 5170, 575, 15707, 6858, 5400, 5781, 5399, 5177, 7068, 8555, 15716, 15718, 5167, 1187, 15720, 15721, 14346, 2]
 // Exports: default
 
-// Module 15718 (GuildBoostingMarketingTierCards)
+// Module 15712 (GuildBoostingMarketingTierCards)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import ColorUtils from "ColorUtils" /* 5140 */;
-import shared from "shared" /* 5150 */;
-import useThemeDefault from "useTheme" /* 5379 */;
-import LinearGradientDefault from "LinearGradient" /* 5725 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5747 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import LinkIcon from "LinkIcon" /* 5864 */;
-import LegacyTokens from "LegacyTokens" /* 6916 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8609 */;
-import StageIcon from "StageIcon" /* 8815 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 8819 */;
-import ReactionIcon from "ReactionIcon" /* 9605 */;
-import UploadIcon from "UploadIcon" /* 10103 */;
-import GifIcon from "GifIcon" /* 10444 */;
-import StickerIcon from "StickerIcon" /* 11233 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 14337 */;
-import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 15713 */;
-import ServerGridIcon from "ServerGridIcon" /* 15719 */;
-import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 15721 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15726 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15727 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import shared from "shared" /* 5177 */;
+import useThemeDefault from "useTheme" /* 5399 */;
+import LinearGradientDefault from "LinearGradient" /* 5745 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import LinkIcon from "LinkIcon" /* 5882 */;
+import LegacyTokens from "LegacyTokens" /* 6858 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8555 */;
+import StageIcon from "StageIcon" /* 8761 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 8765 */;
+import ReactionIcon from "ReactionIcon" /* 9551 */;
+import UploadIcon from "UploadIcon" /* 10054 */;
+import GifIcon from "GifIcon" /* 10396 */;
+import StickerIcon from "StickerIcon" /* 11188 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 14314 */;
+import GuildBoostingMarketingProgressBar from "GuildBoostingMarketingProgressBar" /* 15707 */;
+import ServerGridIcon from "ServerGridIcon" /* 15713 */;
+import ServerBoostStreamQualityMarketingExperiment from "ServerBoostStreamQualityMarketingExperiment" /* 15715 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15720 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15721 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import module_1652 from "module_1652" /* 1652 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -132,13 +132,13 @@ function TierFeatures(features) {
   let tmp7;
   let tmp8;
   let tmp9;
-  let tmp = closure_13();
+  let tmp = closure_14();
   _require = tmp;
   features = features.features;
   const isVisible = features.isVisible;
   let tmp2 = dependencyMap;
   let tmp3 = require("module_1652");
-  let items = [closure_14, , , , , ];
+  let items = [closure_15, , , , , ];
   const useAnimatedStyle = tmp3.useAnimatedStyle;
   items[1] = require("module_1652").withDelay;
   items[2] = isVisible;
@@ -233,6 +233,7 @@ function GuildBoostingMarketingTierCard(ref) {
   let items7;
   let items8;
   let items9;
+  let layout;
   let obj15;
   let obj4;
   let obj5;
@@ -244,9 +245,9 @@ function GuildBoostingMarketingTierCard(ref) {
   ref = ref.ref;
   const merged = Object.assign(ref, Object.assign({ ref: 0 }));
   features = undefined;
-  const tmp2 = closure_13();
+  const tmp2 = closure_14();
   ({ guild, features } = merged);
-  ({ isExpanded, tier } = merged);
+  ({ isExpanded, tier, layout } = merged);
   const onCardPress = merged.onCardPress;
   const items = [features];
   const tmp5 = useThemeDefault();
@@ -285,21 +286,18 @@ function GuildBoostingMarketingTierCard(ref) {
     stringResult = string(t.agC5xg);
   }
   const obj2 = { style: tmp2.cardWrapper, ref, children: items6 };
-  const obj3 = { angle: 45, angleCenter: { x: 0.5, y: 0.5 }, colors: items1, locations: [0, 1], style: tmp2.card, useAngle: true, children: React4(View, obj4) };
-  items1 = [, ];
-  const tmp3Result = LinearGradientDefault;
-  items1[0] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE;
-  items1[1] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE;
+  const obj3 = { angle: 45, angleCenter: { x: 0.5, y: 0.5 }, colors: items1, locations: [0, 1], style: tmp2.card, layout, useAngle: true, children: React4(View, obj4) };
+  items1 = [nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE, nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE];
   obj4 = { style: tmp2.pressableWrapper, children: authStore(PressableHighlight, obj5) };
   obj5 = { onPress: onCardPress, style: tmp2.cardContent, accessibilityRole: "button", accessibilityState: { expanded: isExpanded }, accessibilityLabel: stringResult, children: items3 };
   const obj6 = { style: tmp2.cardHeading, children: items2 };
-  PressableHighlight = tmp8(7124).PressableHighlight;
+  PressableHighlight = tmp8(7068).PressableHighlight;
   const obj7 = { color: "text-overlay-light", style: tmp2.cardTierName, variant: "heading-xxl/semibold", children: tmp8Result.getTierName(tier, { useLevels: false }) };
-  const Text = tmp8(5763).Text;
+  const Text = tmp8(5781).Text;
   tmp8Result = GuildBoostingUtils;
   items2 = [React4(Text, obj7), ];
   const obj8 = { color: "text-overlay-light", style: tmp2.cardTierBoostcount, variant: "body-md/medium", children: intl2.format(intl4.t.gDsyB9, obj9) };
-  const Text2 = tmp8(5763).Text;
+  const Text2 = tmp8(5781).Text;
   intl2 = tmp8(1113).intl;
   obj9 = { numSubscriptions: metroRequire[tier] };
   items2[1] = React4(Text2, obj8);
@@ -310,17 +308,19 @@ function GuildBoostingMarketingTierCard(ref) {
   items4[0] = React4(TierFeatures, obj11);
   items4[1] = React4(TierFeatures, { features, isVisible: isExpanded });
   items3[1] = authStore(View, obj10);
-  const obj12 = { style: tmp2.cardFooter, children: items5 };
+  const obj12 = { style: tmp2.cardFooter, layout, children: items5 };
+  View = tmp3(1652).View;
   items5 = [React4(Text_Text.Text, { color: "text-overlay-light", variant: "body-md/semibold", children: stringResult }), ];
+  const tmp15 = LinearGradient;
   if (isExpanded) {
-    ChevronLargeDownIcon = tmp8(15722).ChevronLargeUpIcon;
+    ChevronLargeDownIcon = tmp8(15716).ChevronLargeUpIcon;
   } else {
-    ChevronLargeDownIcon = tmp8(15724).ChevronLargeDownIcon;
+    ChevronLargeDownIcon = tmp8(15718).ChevronLargeDownIcon;
   }
   const obj13 = { color: nativeDefault.colors.WHITE, style: tmp2.cardFooterIcon };
   items5[1] = React4(ChevronLargeDownIcon, obj13);
   items3[2] = authStore(View, obj12);
-  items6 = [React4(tmp3Result, obj3), , ];
+  items6 = [React4(tmp15, obj3), , ];
   let tmp14Result = tmp16;
   if (!tmp14Result) {
     tmp14Result = premiumTier === tier && tier === BoostedGuildTiers.TIER_3;
@@ -329,11 +329,11 @@ function GuildBoostingMarketingTierCard(ref) {
   if (tmp14Result) {
     const obj14 = { angle: 3, angleCenter: { x: 0.5, y: 0.2 }, colors: items7, locations: [0, 1], style: tmp2.cardTierBadge, useAngle: true, children: React4(Text3, obj15) };
     items7 = [, ];
-    const tmp3Result4 = LinearGradientDefault;
+    const tmp3Result = LinearGradientDefault;
     items7[0] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_BLUE;
     items7[1] = nativeDefault.unsafe_rawColors.GUILD_BOOSTING_PURPLE;
     obj15 = { color: "text-overlay-light", style: tmp2.cardTierBadgeCopy, variant: "body-xs/semibold", children: string2Result };
-    Text3 = tmp8(5763).Text;
+    Text3 = tmp8(5781).Text;
     const intl3 = tmp8(1113).intl;
     const string2 = intl3.string;
     const t2 = tmp8(1113).t;
@@ -342,7 +342,7 @@ function GuildBoostingMarketingTierCard(ref) {
     } else {
       string2Result = string2(t2["9JbE3J"]);
     }
-    tmp14Result = tmp14(tmp3Result4, obj14);
+    tmp14Result = tmp14(tmp3Result, obj14);
   }
   items6[1] = tmp14Result;
   let tmp12Result = tier === BoostedGuildTiers.TIER_3;
@@ -351,7 +351,7 @@ function GuildBoostingMarketingTierCard(ref) {
     const obj17 = { colors: items8, start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.5, 1], style: items9 };
     let num = 0;
     items8 = [, , ];
-    const tmp3Result5 = LinearGradientDefault;
+    const tmp3Result3 = LinearGradientDefault;
     const tmp8Result7 = ColorUtils;
     items8[0] = tmp8Result7.hexWithOpacity(tmp10, 0);
     const tmp8Result8 = ColorUtils;
@@ -360,10 +360,10 @@ function GuildBoostingMarketingTierCard(ref) {
     items8[2] = tmp8Result9.hexWithOpacity(tmp10, 0);
     items9 = [, ];
     ({ gradientHighlight: arr10[0], gradientHighlightTop: arr10[1] } = tmp2);
-    items10 = [React4(tmp3Result5, obj17), , , , , ];
+    items10 = [React4(tmp3Result3, obj17), , , , , ];
     const obj18 = { colors: items11, start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, locations: [0, 0.5, 1], style: items12 };
     items11 = [, , ];
-    const tmp3Result6 = LinearGradientDefault;
+    const tmp3Result4 = LinearGradientDefault;
     const tmp8Result10 = ColorUtils;
     items11[0] = tmp8Result10.hexWithOpacity(tmp10, 0);
     const tmp8Result11 = ColorUtils;
@@ -372,7 +372,7 @@ function GuildBoostingMarketingTierCard(ref) {
     items11[2] = tmp8Result12.hexWithOpacity(tmp10, 0);
     items12 = [, ];
     ({ gradientHighlight: arr13[0], gradientHighlightBottom: arr13[1] } = tmp2);
-    items10[1] = React4(tmp3Result6, obj18);
+    items10[1] = React4(tmp3Result4, obj18);
     const obj19 = { source: AssetRegistryDefault, style: items13 };
     const Icon = tmp8(1187).Icon;
     items13 = [, , ];
@@ -660,6 +660,7 @@ items3[9] = { isIncluded: true, IconComponent: ReactionIcon.ReactionIcon, getCop
 items3[10] = { orderCollapsed: 0, isIncluded: true, IconComponent: LinkIcon.LinkIcon, getCopy: getCopy13 };
 items1[2] = obj25;
 ({ orderCollapsed: 0, isIncluded: true, IconComponent: LinkIcon.LinkIcon, getCopy: getCopy13 });
+const LinearGradient = module_1652.createAnimatedComponent(LinearGradientDefault);
 let createStyles = createStyles_mod;
 createStyles = createStyles.createStyles;
 const obj37 = { cardWrapper: { marginRight: 10, width: 290 }, card: { borderRadius: nativeDefault.radii.lg, height: "100%" }, cardContent: { display: "flex", padding: 24, height: "100%" }, pressableWrapper: { borderRadius: nativeDefault.radii.lg, overflow: "hidden", height: "100%" }, cardHeading: { alignItems: "baseline", display: "flex", flexDirection: "row", flexGrow: 0, flexShrink: 0, marginBottom: 16 }, cardTierName: { marginRight: 10 }, cardTierBoostcount: { opacity: 0.7 }, cardFeatures: { flexGrow: 1, flexShrink: 0 }, cardFeaturesInvisible: { position: "absolute", top: 0, left: 0, height: "100%", width: "100%" }, cardFeaturesWrapper: { alignSelf: "stretch", flexGrow: 1, position: "relative" }, cardFeature: { alignItems: "center", display: "flex", flexDirection: "row", marginBottom: 10 }, cardFeatureExcluded: { opacity: 0.5 }, cardFeatureExcludedCopy: { textDecorationLine: "line-through" }, cardFeatureLast: { marginBottom: 0 }, cardsScroller: { flex: 1, marginTop: GuildBoostingMarketingProgressBar.PROGRESS_BAR_SPACING }, cardsScrollerContent: { alignItems: "flex-start", display: "flex", flexDirection: "row", justifyContent: "center", minWidth: "100%", paddingHorizontal: 8, paddingTop: 16, paddingBottom: 20 }, cardFeatureIcon: { height: 24, marginRight: 6, width: 24 }, cardFooter: { display: "flex", flexDirection: "row", marginTop: 24 }, cardFooterIcon: { flexGrow: 0, flexShrink: 0, height: 24, marginLeft: 8, width: 24 }, cardTierBadge: rect, cardTierBadgeCopy: { textTransform: "uppercase" }, sparkleStar: { position: "absolute", tintColor: LegacyTokens.DARK_WHITE_500_LIGHT_GUILD_BOOSTING_PINK }, sparkleStarPointed: { height: 15, width: 18 }, sparkleStarElongated: { height: 45, width: 23 }, sparkleStarPointed1: { top: -7, right: 35 }, sparkleStarPointed2: { top: 20, right: 55 }, sparkleStarPointed3: { bottom: -7, left: 70 }, sparkleStarElongated1: { right: 15, top: 10 }, gradientHighlight: { position: "absolute", height: 1, width: 60 }, gradientHighlightTop: { right: 15, top: 0 }, gradientHighlightBottom: { left: 48, bottom: 0 } };
@@ -668,28 +669,31 @@ const obj37 = { cardWrapper: { marginRight: 10, width: 290 }, card: { borderRadi
 ({ flex: 1, marginTop: GuildBoostingMarketingProgressBar.PROGRESS_BAR_SPACING });
 rect = { borderRadius: nativeDefault.radii.sm, paddingHorizontal: 8, paddingVertical: 4, position: "absolute", top: -16, left: 24 };
 ({ position: "absolute", tintColor: LegacyTokens.DARK_WHITE_500_LIGHT_GUILD_BOOSTING_PINK });
-let closure_13 = createStyles(obj37);
-let closure_14 = { code: "(function GuildBoostingMarketingTierCardsTsx1(){let[withDelay,isVisible,TIER_FEATURE_ANIMATION_DURATION_MS,withTiming,Easing]=this.__closure;return{opacity:withDelay(isVisible?TIER_FEATURE_ANIMATION_DURATION_MS:0,withTiming(isVisible?1:0,{duration:TIER_FEATURE_ANIMATION_DURATION_MS,easing:Easing.inOut(Easing.quad)}))};})" };
-let result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTierCards.tsx");
+let closure_14 = createStyles(obj37);
+let closure_15 = { code: "(function GuildBoostingMarketingTierCardsTsx1(){let[withDelay,isVisible,TIER_FEATURE_ANIMATION_DURATION_MS,withTiming,Easing]=this.__closure;return{opacity:withDelay(isVisible?TIER_FEATURE_ANIMATION_DURATION_MS:0,withTiming(isVisible?1:0,{duration:TIER_FEATURE_ANIMATION_DURATION_MS,easing:Easing.inOut(Easing.quad)}))};})" };
+const result = size.fileFinishedImporting("modules/guild_boosting/native/marketing_redesign/GuildBoostingMarketingTierCards.tsx");
 
 export default function GuildBoostingMarketingTierCards(guild) {
   let TIER_3;
   let arr2;
   let isExpanded;
   let num;
-  const f109483 = (tier) => tier.tier === closure_0;
+  const f109673 = (tier) => tier.tier === closure_0;
   function handleCardPress() {
-    const obj = DeprecatedLayoutAnimation;
-    const result = obj.DeprecatedLayoutAnimation();
-    _slicedToArray((arg0) => !arg0);
+    if (onExpandedChange != null) {
+      tmp();
+    }
+    View((arg0) => !arg0);
   }
-  const tmp = closure_13();
+  const tmp = closure_14();
   guild = guild.guild;
-  const ref = handleCardPress.useRef(null);
-  const tmp3 = _slicedToArray(handleCardPress.useState(false), 2);
-  [dependencyMap, _slicedToArray] = tmp3;
+  const layout = guild.layout;
+  const onExpandedChange = guild.onExpandedChange;
+  const ref = react.useRef(null);
+  const tmp3 = ref(react.useState(false), 2);
+  [react, View] = tmp3;
   const items = [guild.premiumTier];
-  const effect = handleCardPress.useEffect(() => {
+  const effect = react.useEffect(() => {
     let premiumTier = window.setTimeout(() => {
       const current = ref.current;
       if (current != null) {
@@ -697,7 +701,7 @@ export default function GuildBoostingMarketingTierCards(guild) {
         const _Math = Math;
         const scrollToIndex = current.scrollToIndex;
         premiumTier = Math.min(TIER_3.TIER_3, premiumTier.premiumTier + 1);
-        const findIndexResult = items1.findIndex(f109483);
+        const findIndexResult = items1.findIndex(f109673);
         let num3 = 0;
         if (-1 !== findIndexResult) {
           num3 = findIndexResult;
@@ -711,6 +715,7 @@ export default function GuildBoostingMarketingTierCards(guild) {
   }, items);
   let obj = {
     ref,
+    layout,
     itemCount: items1.length,
     cardWidth: 290,
     cardMarginRight: 10,
@@ -719,13 +724,13 @@ export default function GuildBoostingMarketingTierCards(guild) {
     style: tmp.cardsScroller,
     children: arr2.map((features) => {
       const tier = features.tier;
-      const obj = { features: features.features, guild, isExpanded: dependencyMap, onCardPress: handleCardPress, tier };
+      const obj = { features: features.features, guild, isExpanded: react, onCardPress: handleCardPress, tier, layout };
       return React4(GuildBoostingMarketingTierCard, obj, tier);
     })
   };
-  const MarketingCardsScroller = guild(14369).MarketingCardsScroller;
+  const MarketingCardsScroller = guild(onExpandedChange[35]).MarketingCardsScroller;
   let closure_0 = Math.min(BoostedGuildTiers.TIER_3, guild.premiumTier + 1);
-  let findIndexResult = items1.findIndex(f109483);
+  let findIndexResult = items1.findIndex(f109673);
   num = 0;
   arr2 = items1;
   const tmp5 = closure_9;

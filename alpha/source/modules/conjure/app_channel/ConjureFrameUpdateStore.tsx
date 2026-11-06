@@ -1,13 +1,13 @@
-// Module ID: 18976
-// Function ID: 18977
+// Module ID: 18965
+// Function ID: 18966
 // Name: ConjureFrameUpdateStore
-// Dependencies: [6984, 504, 572, 2]
+// Dependencies: [6926, 504, 572, 2]
 // Exports: useConjureFrameUpdateAvailable
 
-// Module 18976 (ConjureFrameUpdateStore)
+// Module 18965 (ConjureFrameUpdateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FramesStore from "FramesStore" /* 6984 */;
+import FramesStore from "FramesStore" /* 6926 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

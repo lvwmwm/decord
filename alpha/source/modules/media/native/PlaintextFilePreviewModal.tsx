@@ -1,24 +1,24 @@
-// Module ID: 11817
-// Function ID: 11818
+// Module ID: 11783
+// Function ID: 11784
 // Name: PlaintextFilePreviewModal
-// Dependencies: [32, 19, 17, 1083, 21, 5143, 575, 6882, 11816, 8857, 11818, 5846, 11820, 5763, 1113, 7098, 7442, 7142, 10061, 7700, 9912, 11679, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5170, 575, 6824, 11782, 8803, 11784, 5864, 11786, 5781, 1113, 7040, 7389, 7089, 10012, 7653, 9862, 11645, 2]
 // Exports: default
 
-// Module 11817 (PlaintextFilePreviewModal)
+// Module 11783 (PlaintextFilePreviewModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7098 */;
-import NavigatorHeader from "NavigatorHeader" /* 7142 */;
-import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11816 */;
-import useDownloadedFile from "useDownloadedFile" /* 11820 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7040 */;
+import NavigatorHeader from "NavigatorHeader" /* 7089 */;
+import openPlaintextFilePreview from "openPlaintextFilePreview" /* 11782 */;
+import useDownloadedFile from "useDownloadedFile" /* 11786 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -43,7 +43,7 @@ function PlaintextFilePreviewContent(arg0) {
   const fileContents = downloadedFile.fileContents;
   if (downloadedFile.hadError) {
     ({ variant: "body-md/normal", color: "text-muted", children: intl.string(intl3.t.fEptJP) });
-    const Text = tmp2(5763).Text;
+    const Text = tmp2(5781).Text;
     intl = tmp2(1113).intl;
     return <metroRequire style={tmp.errorContainer}>{null}</metroRequire>;
   } else if (null == fileContents) {
@@ -109,7 +109,7 @@ export default function PlaintextFilePreviewModal(url) {
     intl = intl3.intl;
     CheckmarkSmallIcon = undefined;
     if (first) {
-      CheckmarkSmallIcon = tmp(7442).CheckmarkSmallIcon;
+      CheckmarkSmallIcon = tmp(7389).CheckmarkSmallIcon;
     }
     const items = [obj, ];
     let obj2 = {
@@ -163,5 +163,5 @@ export default function PlaintextFilePreviewModal(url) {
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  return jsx(url(11679).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
+  return jsx(url(11645).Modal, { screens: memo1, initialRouteName: constants.PREVIEW });
 };

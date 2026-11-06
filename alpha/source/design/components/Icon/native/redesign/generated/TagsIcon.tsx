@@ -1,14 +1,14 @@
-// Module ID: 11332
-// Function ID: 11333
+// Module ID: 11287
+// Function ID: 11288
 // Name: TagsIcon
-// Dependencies: [19, 21, 575, 5853, 11333, 2]
+// Dependencies: [19, 21, 575, 5871, 11288, 2]
 // Exports: TagsIcon
 
-// Module 11332 (TagsIcon)
+// Module 11287 (TagsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 11333 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 11288 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

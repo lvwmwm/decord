@@ -1,21 +1,21 @@
-// Module ID: 14587
-// Function ID: 14588
+// Module ID: 14564
+// Function ID: 14565
 // Name: DiscoverabilityLanding
-// Dependencies: [19, 17, 14473, 1072, 21, 5143, 575, 6861, 1627, 5384, 14588, 2123, 5724, 5854, 14589, 5763, 1113, 8322, 14501, 5770, 2]
+// Dependencies: [19, 17, 14450, 1072, 21, 5170, 575, 6803, 1627, 5404, 14565, 2118, 5744, 5872, 14566, 5781, 1113, 8267, 14478, 5788, 2]
 // Exports: default
 
-// Module 14587 (DiscoverabilityLanding)
+// Module 14564 (DiscoverabilityLanding)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 14473 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 14450 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
-import TextStyles from "TextStyles" /* 6861 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import TextStyles from "TextStyles" /* 6803 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -66,7 +66,7 @@ export default function DiscoverabilityLanding(onNext) {
   react = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { allowPhone, allowEmail };
-    obj.openLazy(asyncRequire(14588, dependencyMap.paths), "Discoverability Landing", obj2);
+    obj.openLazy(asyncRequire(14565, dependencyMap.paths), "Discoverability Landing", obj2);
   }, items);
   let obj = { style: tmp.container, contentContainerStyle: obj2, children: items2 };
   obj2 = { paddingTop: onNext(allowPhone[12]).NAV_BAR_HEIGHT + 32, paddingBottom: bottom + 16 };

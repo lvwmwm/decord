@@ -1,17 +1,17 @@
-// Module ID: 19395
-// Function ID: 19396
+// Module ID: 19387
+// Function ID: 19388
 // Name: useTextChannelPressEvents
-// Dependencies: [19, 4992, 7627, 5893, 11328, 18457, 10986, 2]
+// Dependencies: [19, 5019, 7572, 5912, 11283, 18449, 10938, 2]
 // Exports: useTextChannelPressEvents
 
-// Module 19395 (useTextChannelPressEvents)
-import transitionToChannel from "transitionToChannel" /* 5893 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7627 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10986 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 11328 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 18457 */;
+// Module 19387 (useTextChannelPressEvents)
+import transitionToChannel from "transitionToChannel" /* 5912 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7572 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10938 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 11283 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 18449 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/guild_channels/useTextChannelPressEvents.tsx");

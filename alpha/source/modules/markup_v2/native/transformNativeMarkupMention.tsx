@@ -1,15 +1,15 @@
-// Module ID: 8747
-// Function ID: 8748
+// Module ID: 8693
+// Function ID: 8694
 // Name: transformNativeMarkupMention
-// Dependencies: [8748, 6172, 6170, 6182, 8829, 2]
+// Dependencies: [8694, 6192, 6190, 6202, 8775, 2]
 // Exports: applyChannelMentionIcons, transformNativeMention
 
-// Module 8747 (transformNativeMarkupMention)
-import MarkupTypes from "MarkupTypes" /* 6170 */;
-import MarkupRules from "MarkupRules" /* 6172 */;
-import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6182 */;
-import PlatformMarkupRules from "PlatformMarkupRules" /* 8748 */;
-import StaticMentionRoutes from "StaticMentionRoutes" /* 8829 */;
+// Module 8693 (transformNativeMarkupMention)
+import MarkupTypes from "MarkupTypes" /* 6190 */;
+import MarkupRules from "MarkupRules" /* 6192 */;
+import MarkupChannelMentionRule from "MarkupChannelMentionRule" /* 6202 */;
+import PlatformMarkupRules from "PlatformMarkupRules" /* 8694 */;
+import StaticMentionRoutes from "StaticMentionRoutes" /* 8775 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupMention.tsx");
@@ -37,10 +37,10 @@ export function transformNativeMention(value, allowGameMentions) {
     return hydrateUserMention(obj5, allowGameMentions);
   } else if ("everyone" === type) {
     const obj15 = MarkupRules;
-    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "ao", everyoneOrHere: "props" }, allowGameMentions);
+    return obj15.hydrateUserMention({ fullMatch: "@everyone", id: "add", everyoneOrHere: "<string:1090519490>" }, allowGameMentions);
   } else if ("here" === type) {
     const obj14 = MarkupRules;
-    return obj14.hydrateUserMention({ fullMatch: "@here", id: "ao", everyoneOrHere: "props" }, allowGameMentions);
+    return obj14.hydrateUserMention({ fullMatch: "@here", id: "add", everyoneOrHere: "<string:1358954946>" }, allowGameMentions);
   } else if ("role" === type) {
     const obj13 = MarkupRules;
     const str8 = value.value;

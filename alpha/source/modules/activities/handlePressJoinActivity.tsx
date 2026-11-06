@@ -1,22 +1,22 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 11965
+// Function ID: 11966
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2145, 4992, 5014, 5075, 1385, 5815, 4991, 11996, 11955, 6096, 1113, 7019, 6872, 11926, 11903, 2]
+// Dependencies: [5, 2140, 5019, 5041, 5102, 1385, 5833, 5018, 11962, 11921, 6116, 1113, 6961, 6814, 11892, 11869, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 11999 (handlePressJoinActivity)
+// Module 11965 (handlePressJoinActivity)
 import intl11 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6096 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11955 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11996 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6116 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 11921 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 11962 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2145 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import ApplicationRecord from "ApplicationRecord" /* 2140 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5815 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
+import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
 import size from "module_2" /* 2 */;
 
 let application, currentUser;

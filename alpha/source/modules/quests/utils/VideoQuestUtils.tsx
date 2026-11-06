@@ -1,24 +1,24 @@
-// Module ID: 14909
-// Function ID: 14910
+// Module ID: 14886
+// Function ID: 14887
 // Name: VideoQuestUtils
-// Dependencies: [6039, 7991, 7993, 1072, 7997, 9838, 8013, 1113, 8007, 5324, 2, 14910]
+// Dependencies: [6059, 7945, 7947, 1072, 7951, 9789, 7967, 1113, 7961, 5344, 2, 14887]
 // Exports: computeMaxSeekableTime, formatVideoProgressRatio, getVideoOrientation, getVideoQuestModalKey, getVideoQuestProgressRemainingAccessibilityLabel, handleVideoQuestModalClose, isValidDuration, isVideoQuestProgressing, sendVideoProgress
 
-// Module 14909 (VideoQuestUtils)
+// Module 14886 (VideoQuestUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import QuestExpirationUtils from "QuestExpirationUtils" /* 7997 */;
-import AnalyticsActions from "AnalyticsActions" /* 8007 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8013 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14910 */;
-import NetworkStore from "NetworkStore" /* 6039 */;
-import QuestStore from "QuestStore" /* 7991 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7993 */;
+import QuestExpirationUtils from "QuestExpirationUtils" /* 7951 */;
+import AnalyticsActions from "AnalyticsActions" /* 7961 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7967 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14887 */;
+import NetworkStore from "NetworkStore" /* 6059 */;
+import QuestStore from "QuestStore" /* 7945 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 7947 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const NavigationRouteUtils = tmp(5324);
-const QuestActionCreators = tmp(9838);
+const NavigationRouteUtils = tmp(5344);
+const QuestActionCreators = tmp(9789);
 const AnalyticEvents = Constants.AnalyticEvents;
 const portrait = "portrait";
 const result = size.fileFinishedImporting("modules/quests/utils/VideoQuestUtils.tsx");
@@ -113,8 +113,8 @@ export function formatVideoProgressRatio(maxVideoProgressSeconds, current) {
   }
   return num;
 }
-export function isValidDuration(arg0) {
-  const isFiniteResult = Number.isFinite(arg0) && arg0 > 0;
+export function isValidDuration(scrollLength) {
+  const isFiniteResult = Number.isFinite(scrollLength) && scrollLength > 0;
   return isFiniteResult;
 }
 export function handleVideoQuestModalClose(arg0) {
@@ -169,7 +169,7 @@ export function handleVideoQuestModalClose(arg0) {
         isQuestExpiredResult = null != completedAt1;
       }
       if (!isQuestExpiredResult) {
-        const tmp5Result = tmp5(9838);
+        const tmp5Result = tmp5(9789);
         tmp5Result.updateVideoProgress(quest.id, maxTimestampSec);
       }
     }

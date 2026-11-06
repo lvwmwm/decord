@@ -1,18 +1,18 @@
-// Module ID: 13256
-// Function ID: 13257
+// Module ID: 13230
+// Function ID: 13231
 // Name: ConjureHistoryState
-// Dependencies: [19, 17, 21, 5143, 575, 5763, 1113, 3995, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5781, 1113, 4024, 2]
 // Exports: ConjureHistoryNotice, ConjureHistoryPlaceholder
 
-// Module 13256 (ConjureHistoryState)
+// Module 13230 (ConjureHistoryState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5763 */;
+import _modDef4024 from "module_4024" /* 4024 */;
+import Text_Text from "Text/Text" /* 5781 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,13 +41,13 @@ export function ConjureHistoryPlaceholder(state) {
   const Text = Text_Text.Text;
   if ("failed" === state.state.status) {
     const intl = tmp5(1113).intl;
-    emptyTitle = intl.string(_modDef3995.h1SE6R);
+    emptyTitle = intl.string(_modDef4024.h1SE6R);
   }
   items = [React3(Text, { variant: "body-sm/medium", color: "text-default", children: emptyTitle }), ];
-  const Text2 = tmp5(5763).Text;
+  const Text2 = tmp5(5781).Text;
   if ("failed" === state.state.status) {
     const intl2 = tmp5(1113).intl;
-    emptyBody = intl2.string(_modDef3995["8SErdg"]);
+    emptyBody = intl2.string(_modDef4024["8SErdg"]);
   }
   items[1] = React3(Text2, { variant: "body-xs/normal", color: "text-muted", children: emptyBody });
   return tmp2(tmp3, obj);
@@ -60,14 +60,14 @@ export function ConjureHistoryNotice(state) {
   if (state.hasRows) {
     let tmp2;
     if ("failed" === state.status) {
-      const obj2 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3995.h1SE6R) };
+      const obj2 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef4024.h1SE6R) };
       const Text2 = Text_Text.Text;
       intl2 = intl3.intl;
       tmp2 = React3(Text2, obj2);
     } else {
       tmp2 = null;
       if (state.truncated) {
-        const obj = { variant: "body-xs/normal", color: "text-muted", children: intl.string(_modDef3995.V7Ri8H) };
+        const obj = { variant: "body-xs/normal", color: "text-muted", children: intl.string(_modDef4024.V7Ri8H) };
         const Text = Text_Text.Text;
         intl = intl3.intl;
         tmp2 = React3(Text, obj);

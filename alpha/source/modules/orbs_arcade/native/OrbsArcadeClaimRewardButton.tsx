@@ -1,17 +1,17 @@
-// Module ID: 17309
-// Function ID: 17310
+// Module ID: 17297
+// Function ID: 17298
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 17294, 21, 5849, 1113, 504, 17301, 17300, 17310, 5770, 2]
+// Dependencies: [5, 19, 17282, 21, 5867, 1113, 504, 17289, 17288, 17298, 5788, 2]
 // Exports: default
 
-// Module 17309 (OrbsArcadeClaimRewardButton)
+// Module 17297 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17301 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17289 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17294 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17282 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -138,7 +138,7 @@ export default function OrbsArcadeClaimRewardButton(game) {
     }
   }), items4);
   let obj3 = { grow: true, size, variant: "primary", text: string(WK589K), loading: stateFromStores, onPress: callback };
-  const Button = game(5770).Button;
+  const Button = game(5788).Button;
   const intl = game(1113).intl;
   string = intl.string;
   const tmp6 = jsx;

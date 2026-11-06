@@ -1,28 +1,28 @@
-// Module ID: 11326
-// Function ID: 11327
+// Module ID: 11281
+// Function ID: 11282
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 5143, 575, 11327, 7124, 1113, 5763, 5754, 10083, 11340, 4968, 10282, 1090, 1411, 5087, 7439, 11342, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 11282, 7068, 1113, 5781, 5772, 10034, 11295, 4995, 10234, 1090, 1411, 5114, 7386, 11297, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 11326 (ForumPostReactionButton)
+// Module 11281 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import UserSettings from "UserSettings" /* 4968 */;
-import ReactionUtils from "ReactionUtils" /* 5087 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5754 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import Pressables from "Pressables" /* 7124 */;
-import EmojiDefault from "Emoji" /* 7439 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10083 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 10282 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11327 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 11340 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import ReactionUtils from "ReactionUtils" /* 5114 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5772 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import Pressables from "Pressables" /* 7068 */;
+import EmojiDefault from "Emoji" /* 7386 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10034 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 10234 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11282 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 11295 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp10;
-const AnimatedCounterDefault = tmp10(11342);
+const AnimatedCounterDefault = tmp10(11297);
 class BurstReactionButton {
   constructor(arg0) {
     let accentColor;

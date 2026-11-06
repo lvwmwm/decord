@@ -1,30 +1,30 @@
-// Module ID: 10710
-// Function ID: 10711
+// Module ID: 10662
+// Function ID: 10663
 // Name: ImageCarousel
-// Dependencies: [19, 17, 7846, 8353, 10711, 21, 5143, 575, 1652, 5380, 1187, 5773, 38, 8356, 504, 10712, 1113, 14002, 8964, 5763, 8994, 7242, 7124, 11306, 7255, 1493, 9934, 10714, 8355, 2]
+// Dependencies: [19, 17, 7800, 8298, 10663, 21, 5170, 575, 1652, 5400, 1187, 5791, 38, 8301, 504, 10664, 1113, 13978, 8910, 5781, 8940, 7189, 7068, 11261, 7202, 1493, 9884, 10666, 8300, 2]
 
-// Module 10710 (ImageCarousel)
+// Module 10662 (ImageCarousel)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import useWindowDimensions from "useWindowDimensions" /* 1493 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import spring_spring from "spring/spring" /* 5773 */;
-import Pressables from "Pressables" /* 7124 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7255 */;
-import DraftStore from "DraftStore" /* 7846 */;
-import Upload from "Upload" /* 8355 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9934 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10712 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10714 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11306 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import spring_spring from "spring/spring" /* 5791 */;
+import Pressables from "Pressables" /* 7068 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7202 */;
+import DraftStore from "DraftStore" /* 7800 */;
+import Upload from "Upload" /* 8300 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9884 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 10664 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 10666 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11261 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8353 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 10711 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8298 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 10663 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1652 = _mod1652;
@@ -305,7 +305,7 @@ class ImageCarouselTile {
     items4 = [unpackModuleId(tmp14, size), children];
     items5 = [unpackModuleId(PressableOpacity, obj2), ];
     const obj5 = { accessibilityRole: "button", accessibilityLabel: removeAccessibilityLabel, style: tmp.closeButton, onPress: onRemove, hitSlop: { top: 4, bottom: 4, left: 4, right: 4 }, children: unpackModuleId(View2, obj6) };
-    const PressableOpacity2 = tmp9(7124).PressableOpacity;
+    const PressableOpacity2 = tmp9(7068).PressableOpacity;
     obj6 = { style: items6, children: unpackModuleId(Icon, obj7) };
     items6 = [tmp.closeContainer, tmp8];
     View2 = _modDef1652.View;

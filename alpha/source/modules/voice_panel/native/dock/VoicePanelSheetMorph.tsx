@@ -1,10 +1,10 @@
-// Module ID: 11445
-// Function ID: 11446
+// Module ID: 11407
+// Function ID: 11408
 // Name: VoicePanelSheetMorph
 // Dependencies: [2]
 // Exports: getDockRect, getDockRowOpacity, getSheetMorphFadeProgress, isDockRowTouchable, scaleDockAroundCenter, shrinkDockAroundCenter
 
-// Module 11445 (VoicePanelSheetMorph)
+// Module 11407 (VoicePanelSheetMorph)
 import size_mod from "module_2" /* 2 */;
 
 let tmp10;

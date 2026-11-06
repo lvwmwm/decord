@@ -1,15 +1,13 @@
 // Module ID: 2027
 // Function ID: 2028
 // Name: i18n
-// Dependencies: [2028, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 2065, 568, 2069, 2070, 1348, 2]
+// Dependencies: [2028, 2037, 2038, 2039, 2040, 2041, 2042, 2043, 2044, 2045, 2046, 2047, 2048, 2049, 2050, 2051, 2052, 2053, 2054, 2055, 2056, 2057, 2058, 2059, 2060, 2061, 2062, 2063, 2064, 568, 2065, 1348, 2]
 
 // Module 2027 (i18n)
 import _mod568 from "module_568" /* 568 */;
 import react_native from "react-native" /* 1348 */;
 import _modDef2028 from "module_2028" /* 2028 */;
-import _default2 from "_default2" /* 2065 */;
-import _mod2069 from "module_2069" /* 2069 */;
-import parse from "parse" /* 2070 */;
+import parse from "parse" /* 2065 */;
 import module_2037 from "module_2037" /* 2037 */;
 import module_2038 from "module_2038" /* 2038 */;
 import module_2039 from "module_2039" /* 2039 */;
@@ -44,9 +42,6 @@ let _instance_members_initializer_I18N_;
 
 global.IntlMessageFormat = _modDef2028;
 delete global["IntlMessageFormat"];
-if (typeof Intl === "undefined") {
-  const _module28 = _default2;
-}
 const React2 = "en-US";
 class Provider {
   constructor(_getParsedMessages) {
@@ -149,11 +144,11 @@ _instance_members_initializer_I18N_ = function() {
       return _createProxy(obj3);
     } else {
       try {
-        const obj = self(dependencyMap[32]);
+        const obj = self(dependencyMap[30]);
         return obj.getMessage(_context.messages[arg1] || defaultMessages[arg1], locale);
       } catch (err) {
         if (typeof defaultMessages[arg1] === "string") {
-          const obj2 = self(dependencyMap[32]);
+          const obj2 = self(dependencyMap[30]);
           return obj2.getMessage(defaultMessages[arg1], locale);
         } else {
           return "";
@@ -168,37 +163,33 @@ _instance_members_initializer_I18N_ = function() {
   };
 };
 class I18N extends EventEmitter {
-  constructor(initialLocale) {
+  constructor(getMessages) {
     let getLanguages;
-    let getMessages;
-    let tmp12;
-    const f83747 = (resolveLanguageLoaded) => {
+    let initialLocale;
+    let tmp8;
+    const f83827 = (resolveLanguageLoaded) => {
       obj.resolveLanguageLoaded = resolveLanguageLoaded;
     };
-    initialLocale = initialLocale.initialLocale;
-    ({ getMessages, getLanguages } = initialLocale);
-    const obj = new I18N(tmp5, tmp4, tmp3, tmp2, new.target, this, tmp);
+    ({ initialLocale, getLanguages } = getMessages);
+    getMessages = getMessages.getMessages;
+    const obj = new I18N(tmp4, tmp3, new.target, this, tmp2, tmp, getLanguages);
     _instance_members_initializer_I18N_();
-    obj.initialLanguageLoad = new Promise(f83747);
-    new Promise(f83747);
-    if (Intl.__addLocaleData) {
-      const _Intl = Intl;
-      Intl.__addLocaleData(_mod2069);
-    }
+    obj.initialLanguageLoad = new Promise(f83827);
+    new Promise(f83827);
     obj._languages = getLanguages();
     if (null != window.Proxy) {
       const self2 = this;
-      tmp12 = new ProxyProvider(obj._getParsedMessages);
+      tmp8 = new ProxyProvider(obj._getParsedMessages);
     } else {
       const self = this;
-      tmp12 = new LazyPropertyProvider(obj._getParsedMessages);
+      tmp8 = new LazyPropertyProvider(obj._getParsedMessages);
     }
-    obj._provider = tmp12;
+    obj._provider = tmp8;
     const _provider = obj._provider;
     obj.Messages = _provider.getMessages();
     obj._getMessages = getMessages;
     try {
-      const _Intl2 = Intl;
+      const _Intl = Intl;
       const self3 = this;
       const numberFormat = new Intl.NumberFormat(initialLocale, {});
       const setLocale = obj.setLocale;

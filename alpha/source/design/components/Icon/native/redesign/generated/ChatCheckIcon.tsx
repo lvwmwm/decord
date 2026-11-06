@@ -1,14 +1,14 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17050
+// Function ID: 17051
 // Name: ChatCheckIcon
-// Dependencies: [19, 21, 575, 5853, 17063, 2]
+// Dependencies: [19, 21, 575, 5871, 17051, 2]
 // Exports: ChatCheckIcon
 
-// Module 17062 (ChatCheckIcon)
+// Module 17050 (ChatCheckIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 17063 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 17051 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

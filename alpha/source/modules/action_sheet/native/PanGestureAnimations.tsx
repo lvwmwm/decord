@@ -1,15 +1,15 @@
-// Module ID: 12264
-// Function ID: 12265
+// Module ID: 12231
+// Function ID: 12232
 // Name: PanGestureAnimations
-// Dependencies: [1187, 5773, 5380, 1652, 5430, 2]
+// Dependencies: [1187, 5791, 5400, 1652, 5450, 2]
 // Exports: default
 
-// Module 12264 (PanGestureAnimations)
+// Module 12231 (PanGestureAnimations)
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5430 */;
-import spring_spring from "spring/spring" /* 5773 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
+import spring_spring from "spring/spring" /* 5791 */;
 import size from "module_2" /* 2 */;
 
 let _Math, flag, obj1, obj3, obj5, result1, result2, set, sum, tmp10Result, tmp4Result, tmp9Result, translationX, velocityX;

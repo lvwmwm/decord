@@ -1,12 +1,13 @@
 // Module ID: 10647
 // Function ID: 10648
-// Dependencies: [41, 42, 93, 95, 98, 10532]
+// Dependencies: [41, 42, 93, 95, 98, 10632, 10465, 10466, 10470]
 
 // Module 10647
-import _mod10532 from "module_10532" /* 10532 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10632 from "module_10632" /* 10632 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -25,31 +26,15 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    let tmp2;
-    const tmp = __esModule;
-    if (!tmp) {
-      tmp2 = { default: __esModule };
-      const obj = { default: __esModule };
-    } else {
-      tmp2 = __esModule;
-    }
-    return tmp2;
-  };
-}
-class RUMergeDateTimeRefiner {
+const regExp = new RegExp("(questo|ultimo|passato|prossimo|dopo|questa|ultima|passata|prossima|\\+|-)\\s*(" + _mod10632.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitCasualRelativeFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, RUMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(RUMergeDateTimeRefiner);
+    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -59,14 +44,32 @@ class RUMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(RUMergeDateTimeRefiner, fn(_mod10532).default);
+_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "patternBetween",
-  value: function patternBetween() {
-    const regExp = new RegExp("^\\s*(T|\u0432|,|-)?\\s*$");
+  key: "innerPattern",
+  value: function innerPattern() {
     return regExp;
   }
 };
-const items = [entry];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod10632.parseDuration(arg1[2]);
+      if ("last" !== formatted) {
+        let reverseDurationResult;
+        if ("past" !== formatted) {
+          reverseDurationResult = parseDurationResult;
+        }
+        const ParsingComponents = tmp2(10466).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
+      reverseDurationResult = tmp2(10465).reverseDuration(parseDurationResult);
+    }
+  }
+];
 
-export default _createClass(RUMergeDateTimeRefiner, items);
+export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);

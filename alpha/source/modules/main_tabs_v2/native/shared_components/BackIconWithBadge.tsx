@@ -1,24 +1,21 @@
-// Module ID: 18777
-// Function ID: 18778
+// Module ID: 16832
+// Function ID: 16833
 // Name: BackIconWithBadge
-// Dependencies: [19, 17, 7024, 21, 5143, 575, 504, 18768, 1187, 9662, 1357, 7146, 7198, 10952, 2]
+// Dependencies: [19, 17, 6966, 21, 5170, 575, 504, 16833, 1187, 9611, 1357, 7093, 7145, 10904, 2]
 // Exports: CloseIconWithBadgeOnSide, LeftBackIconWithBadge, SettingsLeftIconWithBadge
 
-// Module 18777 (BackIconWithBadge)
+// Module 16832 (BackIconWithBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7146 */;
-import XSmallIcon from "XSmallIcon" /* 7198 */;
-import ClipView from "ClipView" /* 9662 */;
-import XLargeIcon from "XLargeIcon" /* 10952 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7093 */;
+import XSmallIcon from "XSmallIcon" /* 7145 */;
+import ClipView from "ClipView" /* 9611 */;
+import XLargeIcon from "XLargeIcon" /* 10904 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7024 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6966 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
-
-const require = globalThis.__r;
-let _require;
 
 let metroImportDefault;
 let metroRequire;
@@ -26,80 +23,90 @@ let obj2;
 let tmp4;
 const native = tmp4(1187);
 function IconWithBadge(includeNotificationsCount) {
-  let c0;
-  let items4;
   let items5;
+  let items6;
   let obj3;
   let obj5;
   let obj7;
-  let tmp11;
-  let totalMentionCount;
+  let tmp12;
   let flag = includeNotificationsCount.includeNotificationsCount;
   if (flag === undefined) {
     flag = false;
   }
-  _require = undefined;
+  let flag2 = includeNotificationsCount.hideBadge;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
+  let num;
   let memo;
   const Icon = includeNotificationsCount.Icon;
   const tmp = closure_8();
   const items = [GuildReadStateStore];
-  const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
-  let num = 0;
-  const value = memo(18768)().value;
-  const tmp5 = memo;
-  if (null != stateFromStores) {
-    num = stateFromStores;
+  const items1 = [flag2];
+  const obj = flag2(memo[6]);
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    num = 0;
+    if (!flag2) {
+      num = GuildReadStateStore.getTotalMentionCount();
+    }
+    return num;
+  }, items1);
+  const tmp5 = num;
+  num = 0;
+  if (!flag2) {
+    let num2 = 0;
+    if (null != stateFromStores) {
+      num2 = stateFromStores;
+    }
+    let num3 = 0;
+    if (flag) {
+      num3 = tmp6;
+    }
+    num = num2 + num3;
   }
-  let num2 = 0;
-  if (flag) {
-    num2 = value;
-  }
-  const sum = num + num2;
-  _require = sum;
-  const items1 = [sum];
+  const items2 = [num];
   memo = react.useMemo(() => {
     let BADGE_SIZE;
-    if (c0 < 10) {
+    if (num < 10) {
       BADGE_SIZE = native.BADGE_SIZE;
     } else {
       BADGE_SIZE = native.BADGE_SIZE + 8;
     }
     return BADGE_SIZE;
-  }, items1);
-  const items2 = [sum, memo];
+  }, items2);
+  const items3 = [num, memo];
   const memo1 = react.useMemo(() => {
-    if (0 !== c0) {
+    if (0 !== num) {
       const BADGE_PADDING = native.BADGE_PADDING;
       size = { shape: ClipView.CutoutShape.RoundedRect, x: 12 - BADGE_PADDING, y: 16 - BADGE_PADDING, width: memo + 2 * BADGE_PADDING, height: native.BADGE_SIZE + 2 * BADGE_PADDING, cornerRadius: (native.BADGE_SIZE + 2 * BADGE_PADDING) / 2 };
       return size;
     }
-  }, items2);
+  }, items3);
   size = undefined;
-  const tmp2Result = require("utils/PlatformUtils");
+  const tmp2Result = flag2(memo[10]);
   if (tmp2Result.isAndroid()) {
     size = { height: 40, width: 40, paddingTop: 8, marginRight: -8 };
   }
-  const obj2 = { style: size, children: tmp11(View, obj3) };
-  obj3 = { style: tmp.backIcon, children: items5 };
-  tmp11 = closure_7;
-  const tmp5Result = tmp5(9662);
+  const obj2 = { style: size, children: tmp12(View, obj3) };
+  obj3 = { style: tmp.backIcon, children: items6 };
+  tmp12 = closure_7;
+  const tmp5Result = tmp5(memo[9]);
   if (null != memo1) {
-    const items3 = [memo1];
-    items4 = items3;
+    const items4 = [memo1];
+    items5 = items4;
   } else {
-    items4 = [];
+    items5 = [];
   }
-  const obj4 = { cutouts: items4, children: closure_6(Icon, obj5) };
+  const obj4 = { cutouts: items5, children: closure_6(Icon, obj5) };
   obj5 = { size: "md", style: tmp.backIcon, color: "interactive-text-default" };
-  items5 = [closure_6(tmp5Result, obj4), ];
-  let tmp9Result = null;
-  if (sum > 0) {
-    const obj6 = { style: tmp.badgeWrapper, children: closure_6(require("native").Badge, obj7) };
-    obj7 = { value: sum, maxValue: 99 };
-    tmp9Result = tmp9(tmp10, obj6);
+  items6 = [closure_6(tmp5Result, obj4), ];
+  let tmp10Result = null;
+  if (num > 0) {
+    const obj6 = { style: tmp.badgeWrapper, children: closure_6(flag2(memo[8]).Badge, obj7) };
+    obj7 = { value: num, maxValue: 99 };
+    tmp10Result = tmp10(tmp11, obj6);
   }
-  items5[1] = tmp9Result;
+  items6[1] = tmp10Result;
   return closure_6(View, obj2);
 }
 const View = react_native.View;
@@ -118,8 +125,12 @@ export function SettingsLeftIconWithBadge(navigation) {
   if (flag === undefined) {
     flag = false;
   }
+  let flag2 = navigation.hideBadge;
+  if (flag2 === undefined) {
+    flag2 = false;
+  }
   const items = [navigation];
-  const obj = { includeNotificationsCount: flag, Icon: null };
+  const obj = { includeNotificationsCount: flag, hideBadge: flag2, Icon: null };
   const tmp = metroRequire;
   const tmp2 = IconWithBadge;
   if (react.useMemo(() => navigation.getState().index > 0, items)) {

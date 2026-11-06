@@ -1,12 +1,12 @@
-// Module ID: 12787
-// Function ID: 12788
+// Module ID: 12752
+// Function ID: 12753
 // Name: ErrorBlock
-// Dependencies: [19, 21, 12788, 2]
+// Dependencies: [19, 21, 12753, 2]
 // Exports: default
 
-// Module 12787 (ErrorBlock)
+// Module 12752 (ErrorBlock)
 import Fragment from "Fragment" /* 21 */;
-import MessageBlock from "MessageBlock" /* 12788 */;
+import MessageBlock from "MessageBlock" /* 12753 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

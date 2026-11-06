@@ -1,29 +1,29 @@
-// Module ID: 20114
-// Function ID: 20115
+// Module ID: 20121
+// Function ID: 20122
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 20094, 20096, 20093, 1083, 21, 5143, 575, 5379, 6178, 20115, 1113, 8523, 5398, 7460, 5384, 10072, 5052, 8565, 11382, 5763, 2699, 2]
+// Dependencies: [17, 20101, 20103, 20100, 1083, 21, 5170, 575, 5399, 6198, 20122, 1113, 8469, 5418, 7405, 5404, 10023, 5079, 8511, 11337, 5781, 2696, 2]
 // Exports: default
 
-// Module 20114 (EnhancedRoleColorsSelectStyleModal)
+// Module 20121 (EnhancedRoleColorsSelectStyleModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import intl6 from "intl" /* 1113 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 5052 */;
-import useThemeDefault from "useTheme" /* 5379 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5398 */;
-import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6178 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7460 */;
-import RowGeneratorDefault from "RowGenerator" /* 8523 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8565 */;
-import _modDef11382 from "module_11382" /* 11382 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20093 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 20094 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20096 */;
-import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 20115 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 5079 */;
+import useThemeDefault from "useTheme" /* 5399 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5418 */;
+import useHasEnhancedRoleColors from "useHasEnhancedRoleColors" /* 6198 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7405 */;
+import RowGeneratorDefault from "RowGenerator" /* 8469 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8511 */;
+import _modDef11337 from "module_11337" /* 11337 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 20100 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 20101 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 20103 */;
+import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 20122 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,8 +35,8 @@ let c9;
 let closure_4;
 let tmp;
 let tmp4;
-const _modDef2699 = tmp(2699);
-const Text_Text = tmp4(5763);
+const _modDef2696 = tmp(2696);
+const Text_Text = tmp4(5781);
 ({ Pressable: c3, View: closure_4 } = react_native);
 const RoleColorsStyle = GuildSettingsRolesStore.RoleColorsStyle;
 const HOLOGRAPHIC_ROLE_COLORS = EnhancedRoleColorConstants.HOLOGRAPHIC_ROLE_COLORS;
@@ -147,7 +147,7 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
           const obj2 = enhanced_role_colors_EnhancedRoleColorUtils;
           message.roleColors = obj2.processColorStrings(result);
           message.message.shouldShowRoleOnName = true;
-          message.message.avatarURL = _modDef11382;
+          message.message.avatarURL = _modDef11337;
         }
       };
       items1 = [closure_1_9(require("ChatItem"), obj2), ];
@@ -167,14 +167,14 @@ export default function EnhancedRoleColorsSelectStyleModal(arg0) {
     const intl3 = intl6.intl;
     format = intl3.format;
     obj8 = { magical: closure_9(Text2, obj9) };
-    VpEDJc = _modDef2699.VpEDJc;
-    obj9 = { gradientColors: items1, variant: "body-sm/semibold", children: intl4.string(_modDef2699["+/IHLl"]) };
+    VpEDJc = _modDef2696.VpEDJc;
+    obj9 = { gradientColors: items1, variant: "body-sm/semibold", children: intl4.string(_modDef2696["+/IHLl"]) };
     items1 = [, , ];
     ({ primary_color: arr2[0], secondary_color: arr2[1], tertiary_color: arr2[2] } = HOLOGRAPHIC_ROLE_COLORS);
     Text2 = Text_Text.Text;
     intl4 = intl6.intl;
     items2 = [closure_9(Text, obj7), ];
-    const obj10 = { style: tmp3.upsellText, variant: "body-sm/normal", children: intl5.string(_modDef2699.FJZeZF) };
+    const obj10 = { style: tmp3.upsellText, variant: "body-sm/normal", children: intl5.string(_modDef2696.FJZeZF) };
     const Text3 = Text_Text.Text;
     intl5 = intl6.intl;
     items2[1] = closure_9(Text3, obj10);

@@ -1,16 +1,16 @@
-// Module ID: 9774
-// Function ID: 9775
+// Module ID: 9724
+// Function ID: 9725
 // Name: GameProfileCommunitiesLocaleFilterActionSheet
-// Dependencies: [19, 21, 5143, 575, 1627, 9775, 1113, 7504, 7460, 5402, 7204, 7118, 2]
+// Dependencies: [19, 21, 5170, 575, 1627, 9725, 1113, 7449, 7405, 5422, 7151, 7062, 2]
 // Exports: default
 
-// Module 9774 (GameProfileCommunitiesLocaleFilterActionSheet)
+// Module 9724 (GameProfileCommunitiesLocaleFilterActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useGameProfileCommunitiesLocaleOptionsDefault from "useGameProfileCommunitiesLocaleOptions" /* 9775 */;
+import useGameProfileCommunitiesLocaleOptionsDefault from "useGameProfileCommunitiesLocaleOptions" /* 9725 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

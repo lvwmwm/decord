@@ -1,14 +1,14 @@
-// Module ID: 16827
-// Function ID: 16828
+// Module ID: 15150
+// Function ID: 15151
 // Name: useAddableWidgets
-// Dependencies: [19, 11138, 1385, 7920, 4968, 563, 15180, 16828, 15457, 16829, 7490, 11137, 7922, 16830, 7918, 1380, 12290, 7923, 7925, 7919, 2]
+// Dependencies: [19, 11091, 1385, 7874, 4995, 563, 15144, 15151, 15152, 15153, 7435, 11090, 7876, 15154, 7872, 1380, 12257, 7877, 7879, 7873, 2]
 // Exports: default
 
-// Module 16827 (useAddableWidgets)
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7920 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11137 */;
+// Module 15150 (useAddableWidgets)
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7874 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 11090 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11138 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 11091 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

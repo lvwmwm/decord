@@ -1,16 +1,18 @@
-// Module ID: 7363
-// Function ID: 7364
+// Module ID: 7310
+// Function ID: 7311
 // Name: FastestList
-// Dependencies: [19, 21, 1652, 7364, 5402, 7365, 7366, 7368, 7369, 7371, 7374, 7375, 7379, 2]
+// Dependencies: [19, 21, 1652, 7311, 5422, 7312, 7313, 7315, 7316, 7318, 7321, 7322, 7326, 2]
 // Exports: default
 
-// Module 7363 (FastestList)
-import FastestListNativeComponentDefault from "FastestListNativeComponent" /* 7364 */;
+// Module 7310 (FastestList)
+import FastestListNativeComponentDefault from "FastestListNativeComponent" /* 7311 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1652_mod from "module_1652" /* 1652 */;
-import BottomSheetModal from "BottomSheetModal" /* 5402 */;
+import BottomSheetModal from "BottomSheetModal" /* 5422 */;
 import size from "module_2" /* 2 */;
+
+let keyExtractor;
 
 let closure_4;
 let hasOwnProperty;
@@ -82,7 +84,7 @@ export default function FastestList(ref) {
   }
   ({ keyboardDismissMode, inActionSheet } = merged);
   let tmp4 = undefined !== inActionSheet;
-  const keyExtractor = merged.keyExtractor;
+  keyExtractor = merged.keyExtractor;
   if (tmp4) {
     tmp4 = inActionSheet;
   }

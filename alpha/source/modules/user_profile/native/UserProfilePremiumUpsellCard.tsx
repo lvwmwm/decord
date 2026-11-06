@@ -1,21 +1,21 @@
-// Module ID: 16834
-// Function ID: 16835
+// Module ID: 16819
+// Function ID: 16820
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1072, 21, 7490, 5143, 16751, 5763, 1499, 7301, 1113, 7771, 7465, 10092, 10093, 1627, 2]
+// Dependencies: [19, 1072, 21, 7435, 5170, 16747, 5781, 1499, 7248, 1113, 7725, 7410, 10043, 10044, 1627, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 16834 (UserProfilePremiumUpsellCard)
+// Module 16819 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7301 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7465 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10092 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10093 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16751 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7248 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7410 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7435 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10043 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10044 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16747 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -54,7 +54,7 @@ function GetNitroCard(style) {
   let analyticsLocations;
   let tmp = analyticsLocations;
   style = style.style;
-  let obj = analyticsLocations(7771);
+  let obj = analyticsLocations(7725);
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride("user_profile_premium_upsell_card");
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];

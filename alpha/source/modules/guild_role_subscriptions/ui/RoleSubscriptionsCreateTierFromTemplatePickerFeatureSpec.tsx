@@ -1,13 +1,13 @@
-// Module ID: 15976
-// Function ID: 15977
+// Module ID: 15971
+// Function ID: 15972
 // Name: RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec
-// Dependencies: [5364, 5075, 1072, 1113, 504, 15977, 2]
+// Dependencies: [5384, 5102, 1072, 1113, 504, 15972, 2]
 
-// Module 15976 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
+// Module 15971 (RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import ExperimentStore from "ExperimentStore" /* 5364 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import ExperimentStore from "ExperimentStore" /* 5384 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

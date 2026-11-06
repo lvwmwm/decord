@@ -1,10 +1,10 @@
-// Module ID: 7951
-// Function ID: 7952
+// Module ID: 7905
+// Function ID: 7906
 // Name: maybeDispatchDevOnlyDummyFriendSuggestions
 // Dependencies: [1385, 2]
 // Exports: default
 
-// Module 7951 (maybeDispatchDevOnlyDummyFriendSuggestions)
+// Module 7905 (maybeDispatchDevOnlyDummyFriendSuggestions)
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

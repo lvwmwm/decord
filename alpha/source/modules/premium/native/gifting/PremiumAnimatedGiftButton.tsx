@@ -1,16 +1,16 @@
-// Module ID: 14039
-// Function ID: 14040
+// Module ID: 14015
+// Function ID: 14016
 // Name: PremiumAnimatedGiftButton
-// Dependencies: [19, 5144, 21, 5143, 575, 5734, 504, 1377, 1652, 7124, 5757, 2]
+// Dependencies: [19, 5171, 21, 5170, 575, 5754, 504, 1377, 1652, 7068, 5775, 2]
 // Exports: PremiumAnimatedGiftButton
 
-// Module 14039 (PremiumAnimatedGiftButton)
+// Module 14015 (PremiumAnimatedGiftButton)
 import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import createStyles from "createStyles" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -86,14 +86,14 @@ export function PremiumAnimatedGiftButton(arg0) {
     FadeOut = tmp(1652).FadeOut;
   }
   const items2 = [tmp7.containerRefresh, style, ];
-  const PressableOpacity = tmp(7124).PressableOpacity;
+  const PressableOpacity = tmp(7068).PressableOpacity;
   if (active) {
     active = !disabled;
   }
   if (active) {
     active = activeStyle;
   }
-  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5757), obj8) });
+  ({ style: items2, hitSlop: tmp14, accessibilityRole: "button", accessibilityState: obj7, children: jsx(tmp3(5775), obj8) });
   items2[2] = active;
   tmp14 = undefined;
   if (bound > 0) {

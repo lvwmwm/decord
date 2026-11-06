@@ -1,13 +1,13 @@
-// Module ID: 8671
-// Function ID: 8672
+// Module ID: 8617
+// Function ID: 8618
 // Name: useMaybeFetchReferralsRemaining
-// Dependencies: [19, 1385, 7777, 504, 8672, 8673, 2]
+// Dependencies: [19, 1385, 7731, 504, 8618, 8619, 2]
 // Exports: useMaybeFetchReferralsRemaining
 
-// Module 8671 (useMaybeFetchReferralsRemaining)
+// Module 8617 (useMaybeFetchReferralsRemaining)
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7777 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7731 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -24,10 +24,10 @@ export function useMaybeFetchReferralsRemaining(flag) {
   const items = [UserStore];
   const obj = flag(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj3 = flag(8672);
+  const obj3 = flag(8618);
   const hasDiscountApplied = obj3.useHasDiscountApplied();
   let verified;
-  const obj4 = flag(8673);
+  const obj4 = flag(8619);
   const hasActiveTrial = obj4.useHasActiveTrial();
   if (stateFromStores != null) {
     verified = stateFromStores.verified;

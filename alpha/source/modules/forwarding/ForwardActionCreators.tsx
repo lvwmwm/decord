@@ -1,19 +1,18 @@
-// Module ID: 13622
-// Function ID: 13623
+// Module ID: 13597
+// Function ID: 13598
 // Name: ForwardActionCreators
-// Dependencies: [32, 5, 4992, 5075, 1072, 5148, 9065, 7969, 1095, 7971, 1398, 7781, 13618, 6594, 2]
+// Dependencies: [32, 5, 5019, 5102, 1072, 5175, 9011, 7923, 1095, 7925, 1403, 7735, 13593, 2]
 
-// Module 13622 (ForwardActionCreators)
+// Module 13597 (ForwardActionCreators)
 import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 5148 */;
-import allSettledDefault from "allSettled" /* 6594 */;
+import MessageConstants from "MessageConstants" /* 5175 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import size from "module_2" /* 2 */;
 
-let c2, c3, importDefault;
+let c2, c3;
 
 const MessageFlags = Constants.MessageFlags;
 const MessageSendLocation = MessageConstants.MessageSendLocation;
@@ -172,11 +171,9 @@ let obj = {
     })();
   },
   sendForwards(arg0, arr, arg2) {
-    let closure_1;
     let closure_0 = arg0;
-    importDefault = arg2;
-    const tmp = allSettledDefault;
-    return tmp(arr.map((item) => obj.sendForward(closure_0, item, closure_1)));
+    let closure_1 = arg2;
+    return Promise.allSettled(arr.map((item) => obj.sendForward(closure_0, item, closure_1)));
   }
 };
 let result = size.fileFinishedImporting("modules/forwarding/ForwardActionCreators.tsx");

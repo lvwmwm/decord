@@ -1,14 +1,14 @@
-// Module ID: 9070
-// Function ID: 9071
+// Module ID: 9016
+// Function ID: 9017
 // Name: ICYMIActionCreators
-// Dependencies: [5, 9071, 502, 1385, 1072, 572, 9072, 1282, 1242, 9074, 9075, 4968, 2]
+// Dependencies: [5, 9017, 502, 1385, 1072, 572, 9018, 1282, 1242, 9020, 9021, 4995, 2]
 
-// Module 9070 (ICYMIActionCreators)
+// Module 9016 (ICYMIActionCreators)
 import Constants from "Constants" /* 1072 */;
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 9072 */;
-import ICYMIExperiment from "ICYMIExperiment" /* 9074 */;
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 9018 */;
+import ICYMIExperiment from "ICYMIExperiment" /* 9020 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 9071 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 9017 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore_mod from "UserStore" /* 1385 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
@@ -1218,10 +1218,6 @@ let obj = {
   giveFeedback() {
     const obj = Dispatcher;
     return obj.dispatch({ type: "ICYMI_FEEDBACK_GIVEN" });
-  },
-  clearReadStates() {
-    const obj = Dispatcher;
-    return obj.dispatch({ type: "CLEAR_ICYMI_READ_STATES" });
   },
   addedRecommendedGuild() {
     const obj = Dispatcher;

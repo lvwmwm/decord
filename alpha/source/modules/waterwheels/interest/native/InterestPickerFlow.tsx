@@ -1,14 +1,14 @@
-// Module ID: 19879
-// Function ID: 19880
+// Module ID: 19885
+// Function ID: 19886
 // Name: InterestPickerFlow
-// Dependencies: [32, 19, 1072, 21, 19876, 19880, 18712, 1252, 19882, 18714, 1113, 2537, 2]
+// Dependencies: [32, 19, 1072, 21, 19882, 19886, 18702, 1252, 19888, 18704, 1113, 2534, 2]
 // Exports: default
 
-// Module 19879 (InterestPickerFlow)
+// Module 19885 (InterestPickerFlow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import InterestPickerCatalogs from "InterestPickerCatalogs" /* 18712 */;
+import InterestPickerCatalogs from "InterestPickerCatalogs" /* 18702 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -32,7 +32,7 @@ export default function InterestPickerFlow(arm) {
   const interestPickerPicks = obj.useInterestPickerPicks();
   getPicks = interestPickerPicks.getPicks;
   const setPicks = interestPickerPicks.setPicks;
-  const tmp4 = setPicks(first.useState("picker"), 2);
+  let tmp4 = setPicks(first.useState("picker"), 2);
   first = tmp4[0];
   let closure_5 = tmp4[1];
   const first1 = setPicks(first.useState(arm(getPicks[5]).createInterestGuildsResource), 1)[0];
@@ -65,10 +65,11 @@ export default function InterestPickerFlow(arm) {
       onComplete() {
           const tmp = getPicks();
           if (!ref.current) {
-            tmp2.current = true;
+            tmp3.current = true;
+            const tmp4 = 0 === tmp2;
             setPicks(tmp);
             first1.dispose();
-            onComplete(tmp, false);
+            onComplete(tmp, tmp4);
           }
         }
     };
@@ -115,12 +116,13 @@ export default function InterestPickerFlow(arm) {
           AnalyticsUtilsDefault;
           const merged = Object.assign(memo);
           track(WATERWHEELS_INTEREST_PICKER_SKIP, obj);
-          if (!ref.current) {
-            tmp4.current = true;
-            setPicks(pick_ids);
-            first1.dispose();
-            onComplete(pick_ids, true);
+          setPicks(pick_ids);
+          if (0 === pick_ids.length) {
+            const popular = first1.loadPopular();
+          } else {
+            first1.setPicks(pick_ids);
           }
+          closure_5("guilds");
         }
     };
     const tmp16 = onComplete(tmp2[9]);

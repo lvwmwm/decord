@@ -1,44 +1,43 @@
 // Module ID: 13119
 // Function ID: 13120
 // Name: tokenize
-// Dependencies: [13062]
+// Dependencies: [13027]
 
 // Module 13119 (tokenize)
-import tokenize from "tokenize" /* 13062 */;
+import tokenize from "tokenize" /* 13027 */;
 
-let items;
-let obj2;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-let obj = {
-  name: "Function",
-  structure: obj2,
-  parse(call, arg1) {
-    let callResult;
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const str = this.consumeFunctionName();
-    const formatted = str.toLowerCase();
-    if (arg1.hasOwnProperty(formatted)) {
-      const obj = arg1[formatted];
-      callResult = obj.call(self, arg1);
-    } else {
-      callResult = call.call(self, arg1);
-    }
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
-    }
-    const element = { type: "Function", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: str, children: callResult };
-    return element;
-  },
-  generate(name) {
-    this.chunk(name.name);
-    this.chunk("(");
-    this.children(name);
-    this.chunk(")");
-  },
-  walkContext: "function"
+const String = tokenize.TYPE.String;
+const Ident = tokenize.TYPE.Ident;
+const Url = tokenize.TYPE.Url;
+const Function = tokenize.TYPE.Function;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
+const obj = {
+  parse: {
+    prelude() {
+      const self = this;
+      const list = this.createList();
+      const scanner = this.scanner;
+      scanner.skipSC();
+      const tokenType = this.scanner.tokenType;
+      if (String === tokenType) {
+        list.push(self.String());
+      } else {
+        if (Url !== tokenType) {
+          if (Function !== tokenType) {
+            self.error("String or url() is expected");
+          }
+        }
+        list.push(self.Url());
+      }
+      const tmp7 = self.lookupNonWSType(0) !== Ident && self.lookupNonWSType(0) !== LeftParenthesis;
+      if (!tmp7) {
+        list.push(self.WhiteSpace());
+        list.push(self.MediaQueryList());
+      }
+      return list;
+    },
+    block: null
+  }
 };
-obj2 = { name: String, children: items };
-items = [[]];
 
 export default obj;

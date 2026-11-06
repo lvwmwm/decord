@@ -1,13 +1,13 @@
-// Module ID: 10792
-// Function ID: 10793
+// Module ID: 10744
+// Function ID: 10745
 // Name: useMaybeFetchCollectiblesCategories
-// Dependencies: [5766, 504, 10793, 2]
+// Dependencies: [5784, 504, 10745, 2]
 // Exports: default
 
-// Module 10792 (useMaybeFetchCollectiblesCategories)
+// Module 10744 (useMaybeFetchCollectiblesCategories)
 import get_initialized from "get initialized" /* 504 */;
-import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 10793 */;
-import DevSettingsStore from "DevSettingsStore" /* 5766 */;
+import useMaybeFetchCollectiblesCategoriesShared2 from "useMaybeFetchCollectiblesCategoriesShared" /* 10745 */;
+import DevSettingsStore from "DevSettingsStore" /* 5784 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useMaybeFetchCollectiblesCategories.mobile.tsx");

@@ -1,70 +1,68 @@
-// Module ID: 7099
-// Function ID: 7100
+// Module ID: 7041
+// Function ID: 7042
 // Name: KeyboardAwareView
-// Dependencies: [32, 19, 17, 1495, 21, 2020, 5335, 1625, 5748, 5746, 5747, 2]
+// Dependencies: [32, 19, 17, 1495, 21, 2020, 5355, 1625, 5766, 7042, 1652, 2]
 
-// Module 7099 (KeyboardAwareView)
+// Module 7041 (KeyboardAwareView)
+import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 5746 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
 import size from "module_2" /* 2 */;
 
-let closure_4;
-let hasOwnProperty;
-({ View: closure_4, StyleSheet: hasOwnProperty } = react_native);
+const StyleSheet = react_native.StyleSheet;
 const jsx = Fragment.jsx;
-const memoResult = react.memo(function KeyboardAwareView(style) {
+let closure_8 = { code: "(function KeyboardAwareViewTsx1(){let[styleMarginBottom,animatedKeyboardHeight]=this.__closure;return{marginBottom:styleMarginBottom+animatedKeyboardHeight.get()};})" };
+const memoResult = react.memo(function KeyboardAwareView(keyboardHeightOffset) {
+  let animated;
   let children;
+  let closure_2;
+  let first;
   let pointerEvents;
-  style = style.style;
-  let flag = style.animated;
-  ({ children, pointerEvents } = style);
-  if (flag === undefined) {
-    flag = true;
+  let style;
+  let tmp13;
+  let tmp14;
+  let tmp15;
+  ({ style, animated } = keyboardHeightOffset);
+  ({ children, pointerEvents } = keyboardHeightOffset);
+  if (animated === undefined) {
+    animated = true;
   }
-  let num = style.keyboardHeightOffset;
+  let num = keyboardHeightOffset.keyboardHeightOffset;
   if (num === undefined) {
     num = 0;
   }
-  let marginBottom;
-  let closure_5;
-  let ref;
-  let obj = ref;
-  let tmp = style;
-  let tmp2 = flag;
-  const useRef = ref.useRef;
+  let obj = react;
+  let tmp = num;
+  const useRef = react.useRef;
   let _Math = Math;
-  const obj2 = style(flag[5]);
+  const obj2 = num(2020);
   let systemKeyboardHeight = obj2.getSystemKeyboardHeight();
   if (0 === systemKeyboardHeight) {
-    const tmpResult = tmp(tmp2[6]);
+    const tmpResult = tmp(5355);
     let keyboardType = tmpResult.getKeyboardType();
     let num2 = 0;
-    if (keyboardType !== tmp(tmp2[7]).KeyboardTypes.SYSTEM) {
-      const tmpResult2 = tmp(tmp2[8]);
-      num2 = tmpResult2.getCustomKeyboardHeight();
+    if (keyboardType !== tmp(1625).KeyboardTypes.SYSTEM) {
+      const tmpResult3 = tmp(5766);
+      num2 = tmpResult3.getCustomKeyboardHeight();
     }
     systemKeyboardHeight = num2;
   }
-  ref = useRef(max(0, systemKeyboardHeight + num));
-  const tmp6 = num(obj.useState(ref.current), 2);
-  marginBottom = tmp6[0];
-  closure_5 = tmp6[1];
+  const ref = useRef(max(0, systemKeyboardHeight + num));
+  [first, dependencyMap] = obj.useState(ref.current);
   const items = [num];
   const effect = obj.useEffect(() => subscribeToKeyboardUIStore(function keyboardHeightUpdater() {
     const _Math = Math;
-    const obj = style(flag[5]);
+    const obj = num(closure_2[5]);
     let systemKeyboardHeight = obj.getSystemKeyboardHeight();
-    const tmp = closure_1_2;
+    const tmp = closure_1_0;
     if (0 === systemKeyboardHeight) {
-      const tmp2Result = style(flag[6]);
+      const tmp2Result = num(closure_2[6]);
       const keyboardType = tmp2Result.getKeyboardType();
       num = 0;
-      if (keyboardType !== style(flag[7]).KeyboardTypes.SYSTEM) {
-        const tmp2Result2 = style(flag[8]);
+      if (keyboardType !== num(closure_2[7]).KeyboardTypes.SYSTEM) {
+        const tmp2Result2 = num(closure_2[8]);
         num = tmp2Result2.getCustomKeyboardHeight();
       }
       systemKeyboardHeight = num;
@@ -72,47 +70,39 @@ const memoResult = react.memo(function KeyboardAwareView(style) {
     const maxResult = max(0, systemKeyboardHeight + tmp);
     if (ref.current !== maxResult) {
       ref.current = maxResult;
-      closure_1_5(maxResult);
+      closure_1_2(maxResult);
     }
   }), items);
-  ref = obj.useRef(false);
-  const items1 = [flag, marginBottom];
-  const effect1 = obj.useEffect(() => {
-    if (ref.current) {
-      const obj = useKeyboardDuration;
-      const keyboardDuration = obj.getKeyboardDuration();
-      let tmp5 = flag;
-      const tmp2 = require;
-      if (tmp5) {
-        tmp5 = keyboardDuration > 0;
-      }
-      if (tmp5) {
-        const tmp2Result = tmp2(5747);
-        const result = tmp2Result.DeprecatedLayoutAnimationKeyboard(keyboardDuration);
-      }
-    } else {
-      tmp.current = true;
+  const tmp10 = ref(7042)(first, animated);
+  const flattenResult = StyleSheet.flatten(style);
+  let marginBottom;
+  const tmp9 = ref;
+  if (flattenResult != null) {
+    marginBottom = flattenResult.marginBottom;
+  }
+  let num3 = 0;
+  if (typeof marginBottom === "number") {
+    num3 = marginBottom;
+  }
+  const items1 = [closure_8, num3, tmp10];
+  let c0;
+  let c1;
+  [tmp13, tmp14, tmp15] = items1;
+  const tmpResult4 = tmp(1652);
+  class KeyboardAwareViewTsx1 {
+    constructor() {
+      const obj = { marginBottom: c0 + _undefined.get() };
+      return obj;
     }
-  }, items1);
-  const items2 = [marginBottom, style];
-  return <marginBottom style={obj.useMemo(() => {
-    if (null == style) {
-      return { marginBottom };
-    } else {
-      let obj3;
-      const flattenResult = hasOwnProperty.flatten(tmp);
-      if (typeof flattenResult.marginBottom === "number") {
-        const obj = { marginBottom: flattenResult.marginBottom + marginBottom };
-        const merged = Object.assign(flattenResult);
-        obj3 = obj;
-      } else {
-        obj3 = { marginBottom };
-        const merged1 = Object.assign(flattenResult);
-      }
-      return obj3;
-    }
-  }, items2)} pointerEvents={pointerEvents}>{children}</marginBottom>;
+  }
+  const items2 = [tmp14, tmp15];
+  KeyboardAwareViewTsx1.__closure = items2;
+  KeyboardAwareViewTsx1.__workletHash = 11313678442315;
+  KeyboardAwareViewTsx1.__initData = tmp13;
+  const animatedStyle = tmpResult4.useAnimatedStyle(KeyboardAwareViewTsx1);
+  const items3 = [style, animatedStyle];
+  return jsx(tmp9(1652).View, { style: items3, pointerEvents, children });
 });
-let result = size.fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
+const result = size.fileFinishedImporting("modules/keyboard/native/KeyboardAwareView.tsx");
 
 export default memoResult;

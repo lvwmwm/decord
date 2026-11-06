@@ -1,112 +1,48 @@
 // Module ID: 16447
 // Function ID: 16448
-// Dependencies: [16411, 16386, 16448, 16402, 16449, 16431, 16409, 16442]
+// Dependencies: [16390, 16387, 16386, 16448, 16407, 16436, 16421, 16389, 16416]
 
 // Module 16447
 import _mod16386 from "module_16386" /* 16386 */;
-import _mod16402 from "module_16402" /* 16402 */;
-import _mod16411 from "module_16411" /* 16411 */;
-import _mod16431 from "module_16431" /* 16431 */;
-import _mod16442 from "module_16442" /* 16442 */;
-import _mod16448 from "module_16448" /* 16448 */;
-import _mod16449 from "module_16449" /* 16449 */;
+import _mod16387 from "module_16387" /* 16387 */;
+import _mod16389 from "module_16389" /* 16389 */;
+import _mod16390 from "module_16390" /* 16390 */;
+import _mod16407 from "module_16407" /* 16407 */;
+import _mod16436 from "module_16436" /* 16436 */;
 
-const require = globalThis.__r;
-
-let fn4;
-let fn5;
-let fn6;
-if (!_mod16448) {
-  let fn;
-  let fn2;
-  let fn3;
-  if (!_mod16402.state) {
-    let tmp = _mod16449("state");
-    let closure_6 = tmp;
-    _mod16431[tmp] = true;
-    fn = function t(facade, arg1) {
-      const tmp3 = closure_6;
-      if (require("module_16409")(facade, closure_6)) {
-        const self = this;
-        const self2 = this;
-        const typeError = new tmp(16386).TypeError("Object already initialized");
-        throw typeError;
+let closure_4 = _mod16390([].concat);
+if (!assign) {
+  assign = function assign(arg0, arg1) {
+    let num;
+    const tmp = _mod16407(arg0);
+    const length = arguments.length;
+    const f = _mod16436.f;
+    for (let num = 1; length > num; num = num + 1) {
+      let arr;
+      let num2;
+      let tmp3 = require;
+      let tmp5 = _mod16389(arguments[num]);
+      if (f) {
+        let tmp8 = tmp3(16448)(tmp5);
+        arr = closure_4(tmp8, f(tmp5));
       } else {
-        arg1.facade = facade;
-        _mod16442(facade, tmp3, arg1);
-        return arg1;
+        arr = tmp3(16448)(tmp5);
       }
-    };
-    fn4 = fn;
-    fn2 = function n(arg0) {
-      return require("module_16409")(arg0, closure_6) ? arg0[closure_6] : {};
-    };
-    fn5 = fn2;
-    fn3 = function u(arg0) {
-      return require("module_16409")(arg0, closure_6);
-    };
-    fn6 = fn3;
-  }
-  let obj = {
-    set: fn,
-    get: fn2,
-    has: fn3,
-    enforce(toString) {
-        let tmp2;
-        if (fn6(toString)) {
-          tmp2 = fn5(toString);
-        } else {
-          tmp2 = fn4(toString, {});
+      let length2 = arr.length;
+      for (let num2 = 0; length2 > num2; num2 = num2 + 1) {
+        let tmp9 = arr[num2];
+        let tmp10 = require;
+        let tmp12 = _mod16386;
+        if (tmp12) {
+          tmp12 = !tmp10(16416)(tmp2, tmp5, tmp9);
         }
-        return tmp2;
-      },
-    getterFor(arg0) {
-        let closure_0 = arg0;
-        return (arg0) => {
-          if (_mod16411(arg0)) {
-            const tmp4 = fn5(arg0);
-            if (tmp4.type === closure_0) {
-              return tmp4;
-            }
-          }
-          const typeError = new _mod16386.TypeError("Incompatible receiver, " + closure_0 + " required");
-          throw typeError;
-        };
+        if (!tmp12) {
+          tmp[tmp9] = tmp5[tmp9];
+        }
       }
+    }
+    return tmp;
   };
-  module.exports = obj;
 }
-let state = _mod16402.state;
-if (!state) {
-  const _module = _mod16402;
-  let self = this;
-  let self2 = this;
-  const weakMap = new _mod16386.WeakMap();
-  let tmp4 = weakMap;
-  _module.state = weakMap;
-  state = weakMap;
-}
-({ get: state.get, has: state.has, set: state.set } = state);
-fn4 = function t(facade, arg1) {
-  const obj = state;
-  if (state.has(facade)) {
-    const self = this;
-    const self2 = this;
-    const typeError = new _mod16386.TypeError("Object already initialized");
-    throw typeError;
-  } else {
-    arg1.facade = facade;
-    const result = obj.set(facade, arg1);
-    return arg1;
-  }
-};
-fn5 = function n(arg0) {
-  const tmp = state.get(arg0) || {};
-  return tmp;
-};
-fn6 = function u(arg0) {
-  return state.has(arg0);
-};
-fn3 = fn6;
-fn2 = fn5;
-fn = fn4;
+
+export default assign;

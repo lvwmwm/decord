@@ -1,11 +1,11 @@
-// Module ID: 12419
-// Function ID: 12420
+// Module ID: 12384
+// Function ID: 12385
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 12385, 12384, 9091, 1113, 3995, 2]
+// Dependencies: [5, 32, 19, 12350, 12349, 9037, 1113, 4024, 2]
 // Exports: useConjureConnectActions
 
-// Module 12419 (useConjureConnectActions)
-import conjureExternalConnections from "conjureExternalConnections" /* 12385 */;
+// Module 12384 (useConjureConnectActions)
+import conjureExternalConnections from "conjureExternalConnections" /* 12350 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,16 +1,16 @@
-// Module ID: 9472
-// Function ID: 9473
+// Module ID: 9418
+// Function ID: 9419
 // Name: useResolveGame
-// Dependencies: [19, 7469, 7622, 2]
+// Dependencies: [19, 7414, 7567, 2]
 // Exports: default
 
-// Module 9472 (useResolveGame)
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7469 */;
+// Module 9418 (useResolveGame)
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7414 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const useGame = tmp(7622);
+const useGame = tmp(7567);
 const result = size.fileFinishedImporting("modules/games/hooks/useResolveGame.tsx");
 
 export default function useResolveGame(arg0) {

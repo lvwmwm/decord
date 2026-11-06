@@ -1,16 +1,16 @@
-// Module ID: 12242
-// Function ID: 12243
+// Module ID: 12211
+// Function ID: 12212
 // Name: MediaTile
-// Dependencies: [19, 17, 6981, 5817, 21, 5143, 575, 12233, 1493, 8919, 504, 12243, 1187, 2]
+// Dependencies: [19, 17, 6923, 5835, 21, 5170, 575, 12202, 1493, 8865, 504, 12212, 1187, 2]
 
-// Module 12242 (MediaTile)
+// Module 12211 (MediaTile)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CallConstants from "CallConstants" /* 5817 */;
+import CallConstants from "CallConstants" /* 5835 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6981 */;
-import createStyles from "createStyles" /* 5143 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -25,10 +25,10 @@ const memoResult = react.memo(function MediaTile(channel) {
   const participant = channel.participant;
   size = channel.size;
   const tmp = closure_7();
-  const obj = channel(12233);
+  const obj = channel(12202);
   const speakerTileStyles = obj.useSpeakerTileStyles();
   const width = participant(1493)().width;
-  const obj2 = channel(8919);
+  const obj2 = channel(8865);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   const items = [ChannelRTCStore];
   const items1 = [channel.id, participant.id];
@@ -40,12 +40,12 @@ const memoResult = react.memo(function MediaTile(channel) {
     tmp8 = null;
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
       const items2 = [tmp.container, , ];
-      const tmp2Result = channel(12233);
+      const tmp2Result = channel(12202);
       items2[1] = tmp2Result.getSizeStyle(size, speakerTileStyles);
-      const tmp2Result2 = channel(12233);
+      const tmp2Result2 = channel(12202);
       items2[2] = tmp2Result2.getTileWidthStyle(size, width, isScreenLandscape);
       ({ hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: channel(1187).AvatarSizes.XLARGE, channel, shrinkStreamEmptyState: false, contentStyle: tmp.media });
-      tmp5(12243);
+      tmp5(12212);
       tmp8 = <View style={items2}>{null}</View>;
     }
   }

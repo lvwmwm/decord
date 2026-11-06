@@ -1,10 +1,10 @@
-// Module ID: 13962
-// Function ID: 13963
+// Module ID: 13938
+// Function ID: 13939
 // Name: CustomTypingIndicatorExperiment
 // Dependencies: [1449, 2]
 // Exports: getCustomTypingIndicatorConfig, useCustomTypingIndicatorConfig
 
-// Module 13962 (CustomTypingIndicatorExperiment)
+// Module 13938 (CustomTypingIndicatorExperiment)
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;
 
@@ -13,8 +13,8 @@ const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/custom_typing_indicator/CustomTypingIndicatorExperiment.tsx");
 
 export const CustomTypingIndicatorExperiment = apexExperiment;
-export function useCustomTypingIndicatorConfig(TypingIndicatorInner) {
-  const obj = { location: TypingIndicatorInner };
+export function useCustomTypingIndicatorConfig(MainViewTooltipActionSheets) {
+  const obj = { location: MainViewTooltipActionSheets };
   return apexExperiment.useConfig(obj);
 }
 export function getCustomTypingIndicatorConfig(location) {

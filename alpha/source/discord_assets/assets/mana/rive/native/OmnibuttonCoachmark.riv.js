@@ -1,8 +1,8 @@
-// Module ID: 5302
-// Function ID: 5303
+// Module ID: 5322
+// Function ID: 5323
 // Dependencies: [2]
 
-// Module 5302
+// Module 5322
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/OmnibuttonCoachmark.riv.js");

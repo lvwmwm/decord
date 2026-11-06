@@ -1,11 +1,17 @@
 // Module ID: 16384
 // Function ID: 16385
-// Dependencies: [16385, 16450]
+// Dependencies: [16383]
 
 // Module 16384
-import _mod16450 from "module_16450" /* 16450 */;
-import module_16385 from "module_16385" /* 16385 */;
+import _mod16383 from "module_16383" /* 16383 */;
 
-const obj = { target: "Object", stat: true, arity: 2, forced: Object.assign !== _mod16450 };
-const obj2 = { assign: _mod16450 };
-module_16385(obj, obj2);
+
+export default (arg0, value) => {
+  try {
+    const obj = { value, configurable: true, writable: true };
+    defineProperty(_mod16383, arg0, obj);
+  } catch (err) {
+    _mod16383[arg0] = value;
+  }
+  return value;
+};

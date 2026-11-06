@@ -1,18 +1,18 @@
-// Module ID: 17362
-// Function ID: 17363
+// Module ID: 17351
+// Function ID: 17352
 // Name: QuestDisclosureModal
-// Dependencies: [21, 7700, 8504, 17361, 1113, 7142, 17363, 7309, 2]
+// Dependencies: [21, 7653, 8450, 17350, 1113, 7089, 17352, 7256, 2]
 // Exports: default
 
-// Module 17362 (QuestDisclosureModal)
+// Module 17351 (QuestDisclosureModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 7142 */;
-import Navigator2 from "Navigator" /* 7309 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7700 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8504 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17361 */;
-import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 17363 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7089 */;
+import Navigator2 from "Navigator" /* 7256 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7653 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8450 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17350 */;
+import QuestDisclosureModalInnerDefault from "QuestDisclosureModalInner" /* 17352 */;
 import size from "module_2" /* 2 */;
 
 function CloseButton() {

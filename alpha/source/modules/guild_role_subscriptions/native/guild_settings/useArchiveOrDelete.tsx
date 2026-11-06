@@ -1,13 +1,13 @@
-// Module ID: 20272
-// Function ID: 20273
+// Module ID: 20279
+// Function ID: 20280
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 17475, 17488, 1113, 6097, 1187, 38, 5848, 2]
+// Dependencies: [5, 32, 19, 17464, 17477, 1113, 6117, 1187, 38, 5866, 2]
 // Exports: default
 
-// Module 20272 (useArchiveOrDelete)
+// Module 20279 (useArchiveOrDelete)
 import intl13 from "intl" /* 1113 */;
-import ToastUtilsAll from "ToastUtils" /* 5848 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17488 */;
+import ToastUtilsAll from "ToastUtils" /* 5866 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17477 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

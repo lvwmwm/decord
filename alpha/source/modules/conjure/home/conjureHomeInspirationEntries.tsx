@@ -1,12 +1,12 @@
-// Module ID: 13201
-// Function ID: 13202
+// Module ID: 13166
+// Function ID: 13167
 // Name: conjureHomeInspirationEntries
-// Dependencies: [1113, 3995, 2]
+// Dependencies: [1113, 4024, 2]
 // Exports: conjureHomeCategoryLabel, conjureHomeInspirationEntries
 
-// Module 13201 (conjureHomeInspirationEntries)
+// Module 13166 (conjureHomeInspirationEntries)
 import intl22 from "intl" /* 1113 */;
-import _modDef3995 from "module_3995" /* 3995 */;
+import _modDef4024 from "module_4024" /* 4024 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/home/conjureHomeInspirationEntries.tsx");
@@ -14,22 +14,22 @@ const result = size.fileFinishedImporting("modules/conjure/home/conjureHomeInspi
 export function conjureHomeCategoryLabel(category) {
   if ("games" === category) {
     const intl6 = intl22.intl;
-    return intl6.string(_modDef3995["JU01/4"]);
+    return intl6.string(_modDef4024["JU01/4"]);
   } else if ("apps" === category) {
     const intl5 = intl22.intl;
-    return intl5.string(_modDef3995["bvcT/Q"]);
+    return intl5.string(_modDef4024["bvcT/Q"]);
   } else if ("profile_widget" === category) {
     const intl4 = intl22.intl;
-    return intl4.string(_modDef3995.GUb2zA);
+    return intl4.string(_modDef4024.GUb2zA);
   } else if ("overlay_widget" === category) {
     const intl3 = intl22.intl;
-    return intl3.string(_modDef3995.uVOH1p);
+    return intl3.string(_modDef4024.uVOH1p);
   } else if ("automod" === category) {
     const intl2 = intl22.intl;
-    return intl2.string(_modDef3995["+EKk4D"]);
+    return intl2.string(_modDef4024["+EKk4D"]);
   } else if ("chat_bot" === category) {
     const intl = intl22.intl;
-    return intl.string(_modDef3995.KBHZfO);
+    return intl.string(_modDef4024.KBHZfO);
   }
 }
 export function conjureHomeInspirationEntries() {
@@ -54,37 +54,37 @@ export function conjureHomeInspirationEntries() {
   let intl7;
   let intl8;
   let intl9;
-  const obj = { id: "server-calendar", category: "apps", shortPrompt: intl.string(_modDef3995.qbaf5O), fullPrompt: intl2.string(_modDef3995.vo1ZBs), name: intl3.string(_modDef3995.Zx7B6B), authorAvatarSeed: "1" };
+  const obj = { id: "server-calendar", category: "apps", shortPrompt: intl.string(_modDef4024.qbaf5O), fullPrompt: intl2.string(_modDef4024.vo1ZBs), name: intl3.string(_modDef4024.Zx7B6B), authorAvatarSeed: "1" };
   intl = intl22.intl;
   intl2 = intl22.intl;
   intl3 = intl22.intl;
   const items = [obj, , , , , , ];
-  const obj2 = { id: "cowboy-chat-bot", category: "chat_bot", shortPrompt: intl4.string(_modDef3995.i0y7Ld), fullPrompt: intl5.string(_modDef3995.Hddwvt), name: intl6.string(_modDef3995.dLyihE), authorAvatarSeed: "2" };
+  const obj2 = { id: "cowboy-chat-bot", category: "chat_bot", shortPrompt: intl4.string(_modDef4024.i0y7Ld), fullPrompt: intl5.string(_modDef4024.Hddwvt), name: intl6.string(_modDef4024.dLyihE), authorAvatarSeed: "2" };
   intl4 = intl22.intl;
   intl5 = intl22.intl;
   intl6 = intl22.intl;
   items[1] = obj2;
-  const obj3 = { id: "library-voice-channel", category: "games", shortPrompt: intl7.string(_modDef3995.vYjIS6), fullPrompt: intl8.string(_modDef3995["4pASEG"]), name: intl9.string(_modDef3995.e8Jbz3), authorAvatarSeed: "3" };
+  const obj3 = { id: "library-voice-channel", category: "games", shortPrompt: intl7.string(_modDef4024.vYjIS6), fullPrompt: intl8.string(_modDef4024["4pASEG"]), name: intl9.string(_modDef4024.e8Jbz3), authorAvatarSeed: "3" };
   intl7 = intl22.intl;
   intl8 = intl22.intl;
   intl9 = intl22.intl;
   items[2] = obj3;
-  const obj4 = { id: "flappy-discord", category: "games", shortPrompt: intl10.string(_modDef3995.gtX7tS), fullPrompt: intl11.string(_modDef3995["Sfa50+"]), name: intl12.string(_modDef3995.Tbag5k), authorAvatarSeed: "4" };
+  const obj4 = { id: "flappy-discord", category: "games", shortPrompt: intl10.string(_modDef4024.gtX7tS), fullPrompt: intl11.string(_modDef4024["Sfa50+"]), name: intl12.string(_modDef4024.Tbag5k), authorAvatarSeed: "4" };
   intl10 = intl22.intl;
   intl11 = intl22.intl;
   intl12 = intl22.intl;
   items[3] = obj4;
-  const obj5 = { id: "no-yelling", category: "automod", shortPrompt: intl13.string(_modDef3995.H8fuGK), fullPrompt: intl14.string(_modDef3995.XuiHpi), name: intl15.string(_modDef3995["5XJ55E"]), authorAvatarSeed: "5" };
+  const obj5 = { id: "no-yelling", category: "automod", shortPrompt: intl13.string(_modDef4024.H8fuGK), fullPrompt: intl14.string(_modDef4024.XuiHpi), name: intl15.string(_modDef4024["5XJ55E"]), authorAvatarSeed: "5" };
   intl13 = intl22.intl;
   intl14 = intl22.intl;
   intl15 = intl22.intl;
   items[4] = obj5;
-  const obj6 = { id: "what-should-we-play", category: "apps", shortPrompt: intl16.string(_modDef3995.tZv5cM), fullPrompt: intl17.string(_modDef3995.qd87yI), name: intl18.string(_modDef3995["7KvZ91"]), authorAvatarSeed: "6" };
+  const obj6 = { id: "what-should-we-play", category: "apps", shortPrompt: intl16.string(_modDef4024.tZv5cM), fullPrompt: intl17.string(_modDef4024.qd87yI), name: intl18.string(_modDef4024["7KvZ91"]), authorAvatarSeed: "6" };
   intl16 = intl22.intl;
   intl17 = intl22.intl;
   intl18 = intl22.intl;
   items[5] = obj6;
-  const obj7 = { id: "kd-tracker", category: "overlay_widget", shortPrompt: intl19.string(_modDef3995.tqEROk), fullPrompt: intl20.string(_modDef3995.yym7Yj), name: intl21.string(_modDef3995.vRpB6m), authorAvatarSeed: "7" };
+  const obj7 = { id: "kd-tracker", category: "overlay_widget", shortPrompt: intl19.string(_modDef4024.tqEROk), fullPrompt: intl20.string(_modDef4024.yym7Yj), name: intl21.string(_modDef4024.vRpB6m), authorAvatarSeed: "7" };
   intl19 = intl22.intl;
   intl20 = intl22.intl;
   intl21 = intl22.intl;

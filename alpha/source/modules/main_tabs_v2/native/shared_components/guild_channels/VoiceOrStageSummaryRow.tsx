@@ -1,16 +1,16 @@
-// Module ID: 19027
-// Function ID: 19028
+// Module ID: 19016
+// Function ID: 19017
 // Name: guild_channels/VoiceOrStageSummaryRow
-// Dependencies: [19, 17, 21, 5143, 575, 11235, 5763, 1187, 19028, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 11190, 5781, 1187, 19017, 2]
 
-// Module 19027 (guild_channels/VoiceOrStageSummaryRow)
+// Module 19016 (guild_channels/VoiceOrStageSummaryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5763 */;
+import Text_Text from "Text/Text" /* 5781 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

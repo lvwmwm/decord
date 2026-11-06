@@ -1,37 +1,37 @@
-// Module ID: 9838
-// Function ID: 9839
+// Module ID: 9789
+// Function ID: 9790
 // Name: QuestActionCreators
-// Dependencies: [5, 7988, 9839, 6911, 6039, 6910, 7991, 7993, 6919, 1072, 6922, 1282, 572, 6585, 1113, 7999, 1242, 6885, 1260, 9840, 9843, 6926, 9844, 7987, 8073, 8080, 9845, 7786, 8010, 9846, 5192, 9847, 9848, 9849, 9865, 7989, 9866, 1252, 7964, 9867, 9851, 1089, 9868, 2]
+// Dependencies: [5, 7942, 9790, 6853, 6059, 6852, 7945, 7947, 6861, 1072, 6864, 1282, 572, 6605, 1113, 7953, 1242, 6827, 1260, 9791, 9794, 6868, 9795, 7941, 7582, 7589, 9796, 7740, 7964, 5219, 9797, 9798, 9799, 9815, 7943, 9816, 1252, 7918, 9817, 9801, 1089, 9818, 2]
 // Exports: claimQuestReward, clearQuestAdDecision, completeQuestPreview, dismissProgressTrackingFailureNotice, dismissQuestActivityModal, dismissQuestContent, enrollInQuest, fetchClaimedQuests, fetchCurrentQuests, fetchEarnedQuestToDeliver, fetchQuest, fetchQuestHomeHero, fetchQuestHomeHeroPreview, fetchQuestPreview, fetchQuestRewardCode, fetchQuestToDeliver, fetchVideoTranscript, manualStopConsoleQuest, manuallyStartConsoleQuest, markAdContentSeen, markAdContentUnseen, markQuestDiscovered, overrideQuestForPlacement, questsVisibleMobileMessagesChanged, resetOptimisticProgress, resetQuestDismissibilityStatus, resetQuestPreviewStatus, resetRecentQuestCompletions, selectTaskPlatform, sendHeartbeat, setAutoEnroll, updateOptimisticProgress, updatePrevRestingQuestDockMode, updateQuestDockVisibilityEligibility, updateVideoProgress
 
-// Module 9838 (QuestActionCreators)
+// Module 9789 (QuestActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6885 */;
-import QuestConstants from "QuestConstants" /* 6919 */;
-import QuestTypes from "QuestTypes" /* 6922 */;
-import AdCreativeType from "AdCreativeType" /* 6926 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7786 */;
-import QuestDataUtils from "QuestDataUtils" /* 7987 */;
-import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7993 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9839 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9840 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9843 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9844 */;
-import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9845 */;
-import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9867 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6827 */;
+import QuestConstants from "QuestConstants" /* 6861 */;
+import QuestTypes from "QuestTypes" /* 6864 */;
+import AdCreativeType from "AdCreativeType" /* 6868 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 7740 */;
+import QuestDataUtils from "QuestDataUtils" /* 7941 */;
+import VideoQuestUIStore2 from "VideoQuestUIStore" /* 7947 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9790 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9791 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9794 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9795 */;
+import QuestDecisionRoundtripTrackerDefault from "QuestDecisionRoundtripTracker" /* 9796 */;
+import EarnedDecisionRoundtripTrackerDefault from "EarnedDecisionRoundtripTracker" /* 9817 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 7988 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6911 */;
-import NetworkStore from "NetworkStore" /* 6039 */;
-import SortedGuildStore from "SortedGuildStore" /* 6910 */;
-import QuestStore from "QuestStore" /* 7991 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 7942 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6853 */;
+import NetworkStore from "NetworkStore" /* 6059 */;
+import SortedGuildStore from "SortedGuildStore" /* 6852 */;
+import QuestStore from "QuestStore" /* 7945 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let _null, bounty, content, enabled, noFillAdContentId, playable, quest, stack_trace, text;
+let _null, bounty, content, noFillAdContentId, playable, quest, stack_trace, text;
 
 let closure_14;
 let map1;
@@ -1337,19 +1337,19 @@ obj = function _fetchClaimedQuests() {
 obj = function _fetchQuestToDeliver() {
   obj = _asyncToGenerator(async (placement, caller_source) => {
     let closure_5;
+    let closure_6;
     let c8 = 0;
     let c9 = 0;
     let c7 = 0;
     return (async function(arg0, value) {
       let creative_type;
       let creative_type1;
-      let folderExpanded;
       let obj18;
       let obj25;
       let obj29;
       let obj35;
       let tmp123;
-      let tmp204;
+      let tmp198;
       if (c9 === 2) {
         c9 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -1365,7 +1365,7 @@ obj = function _fetchQuestToDeliver() {
         try {
           let tmp;
           let items;
-          let closure_10;
+          let closure_9;
           let uRLSearchParams;
           let body;
           let obj27;
@@ -1382,10 +1382,10 @@ obj = function _fetchQuestToDeliver() {
               tmp = undefined;
               items = undefined;
               let node;
-              closure_10 = undefined;
+              closure_9 = undefined;
               uRLSearchParams = undefined;
               body = undefined;
-              enabled = undefined;
+              let enabled;
               quest = undefined;
               obj27 = undefined;
               noFillAdContentId = undefined;
@@ -1414,9 +1414,9 @@ obj = function _fetchQuestToDeliver() {
               const result = obj22.recordQuestRequestApiResponse(closure_3, obj8);
               prop = closure_133_13.QUEST_DECISION_ROUNDTRIP_ERROR;
               const obj9 = { reason: _null, api_error: obj25.getAnyErrorMessage(), caller_source };
-              const track2 = closure_133_1(closure_133_2[37]).track;
-              closure_133_1(closure_133_2[37]);
-              const merged = Object.assign(closure_133_1(closure_133_2[38])());
+              const track2 = closure_133_1(closure_133_2[36]).track;
+              closure_133_1(closure_133_2[36]);
+              const merged = Object.assign(closure_133_1(closure_133_2[37])());
               message = undefined;
               if (message != null) {
                 message = message.message;
@@ -1432,9 +1432,9 @@ obj = function _fetchQuestToDeliver() {
               prop = closure_133_1(closure_133_2[12]).dispatch;
               const self5 = this;
               const self6 = this;
-              const obj12 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", error: tmp204, placement };
+              const obj12 = { type: "QUESTS_FETCH_QUEST_TO_DELIVER_FAILURE", error: tmp198, placement };
               closure_133_1(closure_133_2[12]);
-              tmp204 = new closure_133_1(closure_133_2[13])(message);
+              tmp198 = new closure_133_1(closure_133_2[13])(message);
               prop(obj12);
             } else if (2 === c8) {
               if (arg0 === 1) {
@@ -1461,8 +1461,6 @@ obj = function _fetchQuestToDeliver() {
                 return { value, done: true };
               } else {
                 tmp = value;
-                const LessPersonalizedAdsExperiment = closure_133_0(closure_133_2[29]).LessPersonalizedAdsExperiment;
-                enabled = LessPersonalizedAdsExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" });
                 prop = closure_133_5();
                 if (null != prop) {
                   items = prop();
@@ -1471,7 +1469,7 @@ obj = function _fetchQuestToDeliver() {
                 }
                 node = closure_133_8.getGuildsTree();
                 const found = items.filter((item) => {
-                  obj = placement(c2[30]);
+                  obj = placement(c2[29]);
                   if (obj.isPseudoGuildId(item)) {
                     return false;
                   } else {
@@ -1484,11 +1482,7 @@ obj = function _fetchQuestToDeliver() {
                     return isFolderExpandedResult;
                   }
                 });
-                closure_10 = found.slice(0, 50);
-                prop = undefined;
-                if (enabled.enabled) {
-                  prop = closure_10;
-                }
+                closure_9 = found.slice(0, 50);
                 const _URLSearchParams = URLSearchParams;
                 const _String3 = String;
                 const self = this;
@@ -1505,9 +1499,7 @@ obj = function _fetchQuestToDeliver() {
                 if (null != tmp.uuid) {
                   uRLSearchParams.append("client_ad_session_id", tmp.uuid);
                 }
-                if (null != prop) {
-                  const item = prop.forEach((item) => closure_1_12.append("visible_guild_ids", item));
-                }
+                const item = closure_9.forEach((item) => closure_1_10.append("visible_guild_ids", item));
                 const HTTP = closure_133_0(closure_133_2[11]).HTTP;
                 const get = HTTP.get;
                 const _HermesInternal = HermesInternal;
@@ -1530,12 +1522,12 @@ obj = function _fetchQuestToDeliver() {
               enabled = false;
               prop = placement;
               if (placement === closure_133_0(closure_133_2[10]).AdPlacement.MOBILE_HOME_DOCK_AREA) {
-                const BountiesMobileQuestBarExperiment = closure_133_0(closure_133_2[31]).BountiesMobileQuestBarExperiment;
+                const BountiesMobileQuestBarExperiment = closure_133_0(closure_133_2[30]).BountiesMobileQuestBarExperiment;
                 enabled = BountiesMobileQuestBarExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" }).enabled;
               } else {
                 prop = placement;
                 if (placement === closure_133_0(closure_133_2[10]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
-                  const BountiesDesktopQuestBarExperiment = closure_133_0(closure_133_2[32]).BountiesDesktopQuestBarExperiment;
+                  const BountiesDesktopQuestBarExperiment = closure_133_0(closure_133_2[31]).BountiesDesktopQuestBarExperiment;
                   enabled = BountiesDesktopQuestBarExperiment.getConfig({ location: "QuestActionCreators.fetchQuestToDeliver" }).enabled;
                 }
               }
@@ -1559,12 +1551,12 @@ obj = function _fetchQuestToDeliver() {
                   obj27 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.QUEST, questId: quest.id };
                   const obj23 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.QUEST, questId: quest.id };
                 } else if (closure_133_0(closure_133_2[21]).AdCreativeType.BOUNTY === prop) {
-                  const obj3 = closure_133_0(closure_133_2[33]);
+                  const obj3 = closure_133_0(closure_133_2[32]);
                   bounty = obj3.bountyFromServer(prop.creative_content);
                   obj27 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.BOUNTY, bounty };
                   const obj24 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.BOUNTY, bounty };
                 } else if (closure_133_0(closure_133_2[21]).AdCreativeType.PLAYABLE === prop) {
-                  obj = closure_133_0(closure_133_2[34]);
+                  obj = closure_133_0(closure_133_2[33]);
                   playable = obj.playableFromServer(prop.creative_content);
                   obj27 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.PLAYABLE, playable };
                   const obj26 = { type: closure_133_0(closure_133_2[21]).AdCreativeType.PLAYABLE, playable };
@@ -1634,20 +1626,20 @@ obj = function _fetchQuestToDeliver() {
               const recordQuestRequestApiResponse = closure_133_1(closure_133_2[26]).recordQuestRequestApiResponse;
               closure_133_1(closure_133_2[26]);
               const result1 = recordQuestRequestApiResponse(closure_3, obj31);
-              const obj10 = closure_133_0(closure_133_2[35]);
+              const obj10 = closure_133_0(closure_133_2[34]);
               prop = obj10.getDeliveredAdCreativeId(obj27);
               if (null != obj27) {
                 if (null != prop) {
                   prop = placement;
                   if (placement === closure_133_0(closure_133_2[10]).AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA) {
-                    const obj11 = closure_133_1(closure_133_2[36]);
+                    const obj11 = closure_133_1(closure_133_2[35]);
                     obj11.startTracking(prop, obj27.type);
                   }
                   prop = closure_133_13.QUEST_DECISION_RECEIVED;
                   const obj34 = { quest_id: tmp123, ad_content_id: prop, creative_type: obj27.type, caller_source, ad_request_id: String(body.request_id) };
-                  const track = closure_133_1(closure_133_2[37]).track;
-                  closure_133_1(closure_133_2[37]);
-                  const merged1 = Object.assign(closure_133_1(closure_133_2[38])());
+                  const track = closure_133_1(closure_133_2[36]).track;
+                  closure_133_1(closure_133_2[36]);
+                  const merged1 = Object.assign(closure_133_1(closure_133_2[37])());
                   tmp123 = null;
                   if (obj27.type === closure_133_0(closure_133_2[21]).AdCreativeType.QUEST) {
                     tmp123 = prop;
@@ -1664,11 +1656,11 @@ obj = function _fetchQuestToDeliver() {
             c9 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp208) {
-          enabled = tmp208;
+        } catch (tmp202) {
+          const folderExpanded = tmp202;
           if (0 === c7) {
             c9 = 3;
-            throw tmp208;
+            throw tmp202;
           } else {
             c8 = 1;
           }
@@ -1766,7 +1758,7 @@ obj = function _fetchEarnedQuestToDeliver() {
             c7 = 0;
             let closure_11 = closure_6;
             const obj7 = { wasSuccessful: false, fetchedAt: _null };
-            const obj6 = closure_133_1(closure_133_2[39]);
+            const obj6 = closure_133_1(closure_133_2[38]);
             const result = obj6.recordEarnedRequestApiResponse(closure_4, obj7);
             get = closure_133_1(closure_133_2[12]).dispatch;
             const self = this;
@@ -1837,8 +1829,8 @@ obj = function _fetchEarnedQuestToDeliver() {
             get = closure_4;
             const request_id = closure_7.body.request_id;
             _null = request_id;
-            const recordEarnedRequestApiResponse = closure_133_1(closure_133_2[39]).recordEarnedRequestApiResponse;
-            closure_133_1(closure_133_2[39]);
+            const recordEarnedRequestApiResponse = closure_133_1(closure_133_2[38]).recordEarnedRequestApiResponse;
+            closure_133_1(closure_133_2[38]);
             if (request_id == null) {
               _null = null;
             }
@@ -1951,8 +1943,8 @@ obj = function _fetchVideoTranscript() {
           c7 = 3;
           return { value, done: true };
         } else {
-          const obj15 = closure_131_0(closure_131_2[40]);
-          questAsset = obj15.getQuestAsset(user, closure_131_0(closure_131_2[40]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, flag);
+          const obj15 = closure_131_0(closure_131_2[39]);
+          questAsset = obj15.getQuestAsset(user, closure_131_0(closure_131_2[39]).QuestAssetType.VIDEO_PLAYER_TRANSCRIPT, undefined, flag);
           if (null != questAsset) {
             const state = closure_131_10.getState();
             const obj4 = { questId: user.id, fetchStatus: closure_131_11.FETCHING };
@@ -2339,7 +2331,7 @@ obj = function _fetchQuestHomeHero() {
             tmp11 = creative_type === closure_131_0(closure_131_2[21]).AdCreativeType.QUEST_HOME_HERO;
           }
           if (tmp11) {
-            obj = closure_131_0(closure_131_2[42]);
+            obj = closure_131_0(closure_131_2[41]);
             questHomeHero = obj.questHomeHeroFromServer(creative_type);
           }
           dispatch = closure_131_1(closure_131_2[12]).dispatch;
@@ -2542,7 +2534,7 @@ obj = function _fetchQuestHomeHeroPreview() {
           questHomeHero = null;
           const tmp12 = null != creative_type && creative_type.creative_type === closure_132_0(closure_132_2[21]).AdCreativeType.QUEST_HOME_HERO;
           if (tmp12) {
-            obj = closure_132_0(closure_132_2[42]);
+            obj = closure_132_0(closure_132_2[41]);
             questHomeHero = obj.questHomeHeroFromServer(creative_type);
           }
           dispatch = closure_132_1(closure_132_2[12]);

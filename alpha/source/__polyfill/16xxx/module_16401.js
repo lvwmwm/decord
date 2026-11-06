@@ -3,19 +3,16 @@
 // Dependencies: [16402]
 
 // Module 16401
-import _mod16402 from "module_16402" /* 16402 */;
+import prop_mod from "module_16402" /* 16402 */;
 
+let prop = prop_mod;
+if (prop) {
+  const _Symbol = Symbol;
+  prop = !Symbol.sham;
+}
+if (prop) {
+  const _Symbol2 = Symbol;
+  prop = typeof Symbol.iterator === "symbol";
+}
 
-export default (arg0, arg1) => {
-  let tmp3 = _mod16402[arg0];
-  if (!tmp3) {
-    let obj = arg1;
-    const tmpResult = _mod16402;
-    if (!arg1) {
-      obj = {};
-    }
-    tmpResult[arg0] = obj;
-    tmp3 = obj;
-  }
-  return tmp3;
-};
+export default prop;

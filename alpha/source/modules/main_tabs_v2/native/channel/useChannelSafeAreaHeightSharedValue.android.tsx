@@ -1,28 +1,28 @@
-// Module ID: 11434
-// Function ID: 11435
+// Module ID: 11396
+// Function ID: 11397
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [19, 1627, 5734, 575, 11435, 11440, 11442, 5335, 11443, 1652, 11444, 5773, 11445, 1625, 2]
+// Dependencies: [19, 1627, 5754, 575, 11397, 11402, 11404, 5355, 11405, 1652, 11406, 11401, 5791, 11407, 1625, 2]
 // Exports: default, useChannelSafeAreaRestingHeight
 
-// Module 11434 (useChannelSafeAreaHeightSharedValue)
+// Module 11396 (useChannelSafeAreaHeightSharedValue)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useToken from "useToken" /* 5734 */;
-import spring_spring from "spring/spring" /* 5773 */;
-import useChannelDockHeightDefault from "useChannelDockHeight" /* 11435 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11445 */;
+import useToken from "useToken" /* 5754 */;
+import spring_spring from "spring/spring" /* 5791 */;
+import useChannelDockHeightDefault from "useChannelDockHeight" /* 11397 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11407 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, set;
+let _require, set;
 
 let closure_4 = { code: "(function useChannelSafeAreaHeightSharedValueAndroidTsx1(){let[dockHeightValue,chatInputSpaceBottom,keyboardOpenOrOpening,keyboardWillOpenSharedValue,keyboardOpenedHeight,insets,keyboardTypeSharedValue,KeyboardTypes,customKeyboardSheetHeightSV]=this.__closure;const dockSpace=dockHeightValue.get();function resolveBottom(bottom){return Math.max(bottom,chatInputSpaceBottom,dockSpace);}if(keyboardOpenOrOpening.get()||keyboardWillOpenSharedValue.get()){const systemKeyboardHeight=keyboardOpenedHeight.get();if(systemKeyboardHeight<=0){return resolveBottom(insets.get().bottom);}return systemKeyboardHeight;}if(keyboardTypeSharedValue.get()===KeyboardTypes.SYSTEM){return resolveBottom(insets.get().bottom);}return customKeyboardSheetHeightSV.get();})" };
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/useChannelSafeAreaHeightSharedValue.android.tsx");
 
 export default function useChannelSafeAreaHeightSharedValue() {
   let closure_0;
-  let closure_2;
+  let isChannelFullyOpen;
   let keyboardOpenOrOpening;
   let keyboardOpenedHeight;
   let sharedValue1;
@@ -36,30 +36,30 @@ export default function useChannelSafeAreaHeightSharedValue() {
   let tmp19;
   let tmp20;
   let tmp21;
-  const tmp = sharedValue1(11440)();
-  ({ keyboardOpenOrOpening, keyboardOpenedHeight } = sharedValue1(11442)());
-  const tmp2 = sharedValue1(11442)();
+  const tmp = sharedValue1(isChannelFullyOpen[5])();
+  ({ keyboardOpenOrOpening, keyboardOpenedHeight } = sharedValue1(isChannelFullyOpen[6])());
+  const tmp2 = sharedValue1(isChannelFullyOpen[6])();
   let obj = require("useKeyboardType");
   const keyboardTypeSharedValue = obj.useKeyboardTypeSharedValue();
   const obj2 = require("useKeyboardType");
   const keyboardWillOpenSharedValue = obj2.useKeyboardWillOpenSharedValue();
-  const minimum = sharedValue1(11443)().minimum;
+  const minimum = sharedValue1(isChannelFullyOpen[8])().minimum;
   const obj3 = require("module_1652");
   const sharedValue = obj3.useSharedValue(minimum);
   let result = sharedValue.set(minimum);
   const obj5 = require("useToken");
-  const token = obj5.useToken(sharedValue1(575).modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM);
-  const tmp7 = sharedValue1(11435)();
+  const token = obj5.useToken(sharedValue1(isChannelFullyOpen[3]).modules.mobile.CHAT_INPUT_FLOATING_OFFSET_MINIMUM);
+  const tmp7 = sharedValue1(isChannelFullyOpen[4])();
   _require = tmp7;
   const obj6 = require("module_1652");
   sharedValue1 = obj6.useSharedValue(tmp7);
-  const tmp9 = sharedValue1(11444)();
-  dependencyMap = tmp9;
-  const items = [tmp7, sharedValue1, tmp9];
+  const obj7 = require("useIsChannelFullyOpen");
+  isChannelFullyOpen = obj7.getIsChannelFullyOpen(react.useContext(sharedValue1(isChannelFullyOpen[11])));
+  const items = [tmp7, sharedValue1, isChannelFullyOpen];
   const effect = react.useEffect(() => {
     let withSpringResult;
     set = sharedValue1.set;
-    if (closure_2) {
+    if (isChannelFullyOpen) {
       const obj = spring_spring;
       withSpringResult = obj.withSpring(closure_0, VoicePanelSheetMorph.DOCK_SPACE_SPRING_CONFIG);
     } else {

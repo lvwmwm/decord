@@ -1,10 +1,11 @@
 // Module ID: 10613
 // Function ID: 10614
-// Dependencies: [41, 42, 93, 95, 98, 10605, 10513, 10514, 10518]
+// Dependencies: [41, 42, 93, 95, 98, 10468, 10469, 10470]
 
 // Module 10613
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10518 */;
-import _mod10605 from "module_10605" /* 10605 */;
+import Meridiem from "Meridiem" /* 10468 */;
+import assignSimilarDate from "assignSimilarDate" /* 10469 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,13 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(dit|deze|vorig|afgelopen|(?:aan)?komend|over|\\+|-)e?\\s*(" + _mod10605.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-class NLTimeUnitCasualRelativeFormatParser {
+class ESCasualTimeParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLTimeUnitCasualRelativeFormatParser);
-    const obj = _getPrototypeOf(NLTimeUnitCasualRelativeFormatParser);
+    _classCallCheck(this, ESCasualTimeParser);
+    const obj = _getPrototypeOf(ESCasualTimeParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,32 +44,49 @@ class NLTimeUnitCasualRelativeFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ESCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return regExp;
+    return /(?:esta\s*)?(mañana|tarde|medianoche|mediodia|mediodía|noche)(?=\W|$)/i;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
+    value: function innerExtract(refDate, arg1) {
+      refDate = refDate.refDate;
+      const parsingComponents = refDate.createParsingComponents();
       const str = arg1[1];
       const formatted = str.toLowerCase();
-      const parseDurationResult = _mod10605.parseDuration(arg1[2]);
-      if ("vorig" !== formatted) {
-        let reverseDurationResult;
-        if ("afgelopen" !== formatted) {
-          reverseDurationResult = parseDurationResult;
-        }
-        const ParsingComponents = tmp2(10514).ParsingComponents;
-        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      if ("tarde" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 15);
+      } else if ("noche" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.PM);
+        parsingComponents.imply("hour", 22);
+      } else if ("ma\u00F1ana" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 6);
+      } else if ("medianoche" === formatted) {
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date(refDate.getTime());
+        date.setDate(date.getDate() + 1);
+        assignSimilarDate.assignSimilarDate(parsingComponents, date);
+        assignSimilarDate.implySimilarTime(parsingComponents, date);
+        parsingComponents.imply("hour", 0);
+        parsingComponents.imply("minute", 0);
+        parsingComponents.imply("second", 0);
+      } else if ("mediodia" === formatted) {
+        parsingComponents.imply("meridiem", Meridiem.Meridiem.AM);
+        parsingComponents.imply("hour", 12);
       }
-      reverseDurationResult = tmp2(10513).reverseDuration(parseDurationResult);
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(NLTimeUnitCasualRelativeFormatParser, items);
+export default _createClass(ESCasualTimeParser, items);

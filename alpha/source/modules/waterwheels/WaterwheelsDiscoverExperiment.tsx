@@ -1,13 +1,13 @@
-// Module ID: 9072
-// Function ID: 9073
+// Module ID: 9018
+// Function ID: 9019
 // Name: WaterwheelsDiscoverExperiment
-// Dependencies: [1246, 8708, 502, 1385, 1449, 9073, 504, 2]
+// Dependencies: [1246, 8654, 502, 1385, 1449, 9019, 504, 2]
 // Exports: getWaterwheelsDiscoverEnabled, useWaterwheelsDiscoverEnabled
 
-// Module 9072 (WaterwheelsDiscoverExperiment)
-import ICYMILabFeature from "ICYMILabFeature" /* 9073 */;
+// Module 9018 (WaterwheelsDiscoverExperiment)
+import ICYMILabFeature from "ICYMILabFeature" /* 9019 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import LabFeatureStore from "LabFeatureStore" /* 8708 */;
+import LabFeatureStore from "LabFeatureStore" /* 8654 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;

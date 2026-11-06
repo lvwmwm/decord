@@ -1,18 +1,18 @@
 // Module ID: 16435
 // Function ID: 16436
-// Dependencies: [16436]
+// Dependencies: [16408]
 
 // Module 16435
-import _mod16436 from "module_16436" /* 16436 */;
+import _mod16408 from "module_16408" /* 16408 */;
 
 
-export default (arg0) => {
-  let num = 0;
-  {
-    num = 0;
-    if (0 !== +arg0) {
-      num = _mod16436(tmp);
-    }
+export default function(arg0) {
+  if (_mod16408(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp3 = new TypeError(String(arg0) + " is not an object");
+    throw tmp3;
   }
-  return num;
 };

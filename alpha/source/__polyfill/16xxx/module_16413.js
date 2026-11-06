@@ -1,21 +1,17 @@
 // Module ID: 16413
 // Function ID: 16414
-// Dependencies: [16404, 16414, 16412, 16415]
+// Dependencies: [16394, 16414]
 
 // Module 16413
-import _mod16404 from "module_16404" /* 16404 */;
-import _mod16412 from "module_16412" /* 16412 */;
-import _mod16414 from "module_16414" /* 16414 */;
+import _mod16394 from "module_16394" /* 16394 */;
 
-let tmp;
-const _mod16415 = tmp(16415);
+let tmp2;
+const _mod16414 = tmp2(16414);
 
-export default _mod16404 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
-  const tmp3 = _mod16414("Symbol");
-  let tmpResultResult = _mod16412(tmp3);
-  if (tmpResultResult) {
-    const tmpResult = _mod16415;
-    tmpResultResult = tmpResult(tmp3.prototype, Object(arg0));
+export default (arg0, arg1) => {
+  let tmp4;
+  if (!_mod16394(arg0[arg1])) {
+    tmp4 = _mod16414(tmp);
   }
-  return tmpResultResult;
-});
+  return tmp4;
+};

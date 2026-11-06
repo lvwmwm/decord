@@ -1,14 +1,14 @@
-// Module ID: 9688
-// Function ID: 9689
+// Module ID: 9637
+// Function ID: 9638
 // Name: HeartOutlineIcon
-// Dependencies: [19, 21, 575, 5853, 9689, 2]
+// Dependencies: [19, 21, 575, 5871, 9638, 2]
 // Exports: HeartOutlineIcon
 
-// Module 9688 (HeartOutlineIcon)
+// Module 9637 (HeartOutlineIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 9689 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 9638 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

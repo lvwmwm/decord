@@ -1,10 +1,10 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16126
+// Function ID: 16127
 // Name: useFocusRefOnNavigation
-// Dependencies: [19, 1500, 7347, 2]
+// Dependencies: [19, 1500, 7294, 2]
 // Exports: default
 
-// Module 16131 (useFocusRefOnNavigation)
+// Module 16126 (useFocusRefOnNavigation)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

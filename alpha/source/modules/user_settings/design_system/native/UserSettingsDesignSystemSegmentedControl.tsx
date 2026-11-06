@@ -1,18 +1,18 @@
-// Module ID: 18064
-// Function ID: 18065
+// Module ID: 18052
+// Function ID: 18053
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5143, 575, 5763, 9141, 9131, 6165, 9366, 14424, 5770, 5152, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 5781, 9087, 9077, 6185, 9312, 14401, 5788, 5179, 2]
 // Exports: default
 
-// Module 18064 (UserSettingsDesignSystemSegmentedControl)
+// Module 18052 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 575 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5152 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9141 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9087 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -74,15 +74,15 @@ export default function UserSettingsDesignSystemSegmentedControl() {
     }
     return items;
   }, items);
-  let obj = first(9131);
+  let obj = first(9077);
   const segmentedControlState = obj.useSegmentedControlState({ items: memo, pageWidth: num, defaultIndex: 1 });
   let obj2 = { children: closure_8(closure_5, obj3) };
   obj3 = { style: tmp5.container, ref, onLayout, children: closure_7(Stack, obj4) };
   obj4 = { spacing: 24, children: items1 };
-  Stack = first(6165).Stack;
-  items1 = [closure_8(first(9366).SegmentedControl, { state: segmentedControlState }), closure_8(first(14424).SegmentedControlPages, { state: segmentedControlState }), ];
+  Stack = first(6185).Stack;
+  items1 = [closure_8(first(9312).SegmentedControl, { state: segmentedControlState }), closure_8(first(14401).SegmentedControlPages, { state: segmentedControlState }), ];
   const obj5 = { spacing: 8, direction: "horizontal", children: items2 };
-  const Stack2 = first(6165).Stack;
+  const Stack2 = first(6185).Stack;
   items2 = [, ];
   const obj6 = {
     text: "Add Tab",
@@ -96,7 +96,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
       AccessibilityAnnouncer.announce("Tab added, " + sum + " tabs", "polite");
     }
   };
-  items2[0] = closure_8(first(5770).Button, obj6);
+  items2[0] = closure_8(first(5788).Button, obj6);
   const obj7 = {
     text: "Remove Tab",
     variant: "destructive",
@@ -109,7 +109,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
       AccessibilityAnnouncer.announce("Tab removed, " + diff + " tabs", "polite");
     }
   };
-  items2[1] = closure_8(first(5770).Button, obj7);
+  items2[1] = closure_8(first(5788).Button, obj7);
   items1[2] = closure_7(Stack2, obj5);
   return closure_8(closure_6, obj2);
 };

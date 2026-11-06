@@ -1,12 +1,12 @@
-// Module ID: 14610
-// Function ID: 14611
+// Module ID: 14587
+// Function ID: 14588
 // Name: getApplicationIdsForGame
-// Dependencies: [2167, 2143, 504, 2]
+// Dependencies: [2162, 2138, 504, 2]
 // Exports: default, useApplicationIdsForGame
 
-// Module 14610 (getApplicationIdsForGame)
-import ApplicationStore from "ApplicationStore" /* 2167 */;
-import GameStore from "GameStore" /* 2143 */;
+// Module 14587 (getApplicationIdsForGame)
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import GameStore from "GameStore" /* 2138 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

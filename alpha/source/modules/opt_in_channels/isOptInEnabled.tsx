@@ -1,13 +1,13 @@
-// Module ID: 7023
-// Function ID: 7024
+// Module ID: 6965
+// Function ID: 6966
 // Name: isOptInEnabled
-// Dependencies: [5014, 5075, 6913, 1385, 1072, 504, 2]
+// Dependencies: [5041, 5102, 6855, 1385, 1072, 504, 2]
 // Exports: isOptInEnabledForGuild, useOptInEnabledForGuild, useShouldShowOnboardingAdminUpsellForGuild
 
-// Module 7023 (isOptInEnabled)
-import GuildStore from "GuildStore" /* 5014 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6913 */;
+// Module 6965 (isOptInEnabled)
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6855 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

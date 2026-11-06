@@ -1,21 +1,21 @@
-// Module ID: 18335
-// Function ID: 18336
+// Module ID: 18327
+// Function ID: 18328
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 5143, 575, 5320, 9978, 18336, 5734, 5209, 10920, 18337, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5340, 9929, 18328, 5754, 5229, 10872, 18329, 2]
 
-// Module 18335 (MainTabs)
+// Module 18327 (MainTabs)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5209 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5320 */;
-import useToken from "useToken" /* 5734 */;
-import useActiveTheme from "useActiveTheme" /* 9978 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10920 */;
-import useAppFrameDefault from "useAppFrame" /* 18336 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18337 */;
+import native from "native" /* 5229 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5340 */;
+import useToken from "useToken" /* 5754 */;
+import useActiveTheme from "useActiveTheme" /* 9929 */;
+import ThemedGradientDefault from "ThemedGradient" /* 10872 */;
+import useAppFrameDefault from "useAppFrame" /* 18328 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 18329 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -61,7 +61,7 @@ const memoResult = react.memo(function MainTabs() {
   if (left > 0) {
     tmp8Result = null;
     if (null == styles.container) {
-      tmp8Result = tmp8(tmp(10920), { absolute: true, mix: true });
+      tmp8Result = tmp8(tmp(10872), { absolute: true, mix: true });
     }
   } else {
     tmp8Result = null;

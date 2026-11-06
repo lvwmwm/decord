@@ -1,19 +1,19 @@
-// Module ID: 13916
-// Function ID: 13917
+// Module ID: 13892
+// Function ID: 13893
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 13881, 5143, 13698, 6228, 6570, 13675, 2]
+// Dependencies: [19, 17, 21, 575, 13856, 5170, 13673, 6248, 6590, 13650, 2]
 // Exports: default
 
-// Module 13916 (CheckpointRecapCard)
+// Module 13892 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6570 */;
-import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 13675 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 13698 */;
+import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6590 */;
+import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 13650 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 13673 */;
 import react from "react" /* 19 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 13881 */;
-import createStyles from "createStyles" /* 5143 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 13856 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -46,10 +46,10 @@ export default function CheckpointRecapCard(character) {
     const _Math2 = Math;
     num = Math.min(Math.max(maxHeight / 268, 0.75), 1);
   }
-  const obj2 = character(6228);
+  const obj2 = character(6248);
   const characterCardColorPalette = obj2.getCharacterCardColorPalette(character);
   const items = [character];
-  const obj3 = character(6228);
+  const obj3 = character(6248);
   const primaryBackgroundColor = obj3.getCardColors(characterCardColorPalette).primaryBackgroundColor;
   const memo = obj.useMemo(() => {
     let checkpointCharacterAccessibilityLabel = null;

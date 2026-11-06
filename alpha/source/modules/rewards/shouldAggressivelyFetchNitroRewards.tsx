@@ -1,14 +1,14 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17168
+// Function ID: 17169
 // Name: shouldAggressivelyFetchNitroRewards
-// Dependencies: [7917, 1385, 15874, 15872, 2176, 2]
+// Dependencies: [7871, 1385, 15868, 15866, 2171, 2]
 // Exports: shouldAggressivelyFetchNitroRewards
 
-// Module 17180 (shouldAggressivelyFetchNitroRewards)
-import PremiumUtils from "PremiumUtils" /* 2176 */;
-import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15872 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15874 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
+// Module 17168 (shouldAggressivelyFetchNitroRewards)
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import ProgramRewardsUtils from "ProgramRewardsUtils" /* 15866 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 15868 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

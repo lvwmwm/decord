@@ -1,10 +1,10 @@
-// Module ID: 10421
-// Function ID: 10422
+// Module ID: 10373
+// Function ID: 10374
 // Name: react-native
 // Dependencies: [17, 2]
 // Exports: dismissKeyboard
 
-// Module 10421 (react-native)
+// Module 10373 (react-native)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

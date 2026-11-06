@@ -1,16 +1,16 @@
-// Module ID: 8526
-// Function ID: 8527
+// Module ID: 8472
+// Function ID: 8473
 // Name: BlockedGroup
-// Dependencies: [8524, 1083, 12, 5150, 575, 5140, 8527, 2]
+// Dependencies: [8470, 1083, 12, 5177, 575, 5167, 8473, 2]
 // Exports: generateBlockedGroupRowData
 
-// Module 8526 (BlockedGroup)
+// Module 8472 (BlockedGroup)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import ColorUtils from "ColorUtils" /* 5140 */;
-import shared from "shared" /* 5150 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8524 */;
-import react_native from "react-native" /* 8527 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import shared from "shared" /* 5177 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8470 */;
+import react_native from "react-native" /* 8473 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 

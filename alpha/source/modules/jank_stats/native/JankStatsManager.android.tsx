@@ -1,14 +1,14 @@
-// Module ID: 19829
-// Function ID: 19830
+// Module ID: 19835
+// Function ID: 19836
 // Name: JankStatsManager
-// Dependencies: [1072, 7426, 19830, 1252, 7799, 2]
+// Dependencies: [1072, 7373, 19836, 1252, 7753, 2]
 
-// Module 19829 (JankStatsManager)
+// Module 19835 (JankStatsManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7799 */;
-import react_nativeDefault from "react-native" /* 19830 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 7753 */;
+import react_nativeDefault from "react-native" /* 19836 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
 import size from "module_2" /* 2 */;
 
 let c3;

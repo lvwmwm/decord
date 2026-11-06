@@ -1,17 +1,17 @@
-// Module ID: 13459
-// Function ID: 13460
+// Module ID: 13434
+// Function ID: 13435
 // Name: ModalStepIndicator
-// Dependencies: [19, 17, 21, 5143, 575, 1652, 5734, 5773, 1113, 2204, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 1652, 5754, 5791, 1113, 2199, 2]
 // Exports: ModalStepIndicator
 
-// Module 13459 (ModalStepIndicator)
+// Module 13434 (ModalStepIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef2204 from "module_2204" /* 2204 */;
-import spring_spring from "spring/spring" /* 5773 */;
+import _modDef2199 from "module_2199" /* 2199 */;
+import spring_spring from "spring/spring" /* 5791 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -49,10 +49,10 @@ function StepPill(isActive) {
     num2 = 1;
   }
   sharedValue = useSharedValue(num2);
-  const tmp6Result = isActive(5734);
+  const tmp6Result = isActive(5754);
   const token = tmp6Result.useToken(TEXT_BRAND);
   let items = [isActive, sharedValue];
-  const tmp6Result3 = isActive(5734);
+  const tmp6Result3 = isActive(5754);
   const token1 = tmp6Result3.useToken(BACKGROUND_MOD_STRONG);
   const effect = react.useEffect(() => {
     let num = 0;
@@ -132,7 +132,7 @@ export function ModalStepIndicator(arg0) {
     } else {
       const intl = intl2.intl;
       const range = { min: 1, max: totalSteps, now: currentStep + 1 };
-      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2204.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
+      return <View accessible accessibilityRole="progressbar" accessibilityLabel={intl.string(_modDef2199.KUwsC0)} accessibilityValue={range} importantForAccessibility="yes" style={tmp.container}>{items}</View>;
     }
   }
 }

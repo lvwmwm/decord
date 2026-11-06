@@ -1,18 +1,18 @@
-// Module ID: 18635
-// Function ID: 18636
+// Module ID: 18625
+// Function ID: 18626
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 18636, 7946, 4992, 18544, 13617, 18638, 504, 9303, 14629, 13628, 9299, 9287, 2]
+// Dependencies: [19, 18626, 7900, 5019, 18534, 13592, 18628, 504, 9249, 14606, 13603, 9245, 9233, 2]
 // Exports: default
 
-// Module 18635 (useFavoritesGuildSuggestionCandidates)
-import _mod9287 from "module_9287" /* 9287 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9299 */;
-import ShareConstants from "ShareConstants" /* 13617 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18544 */;
+// Module 18625 (useFavoritesGuildSuggestionCandidates)
+import _mod9233 from "module_9233" /* 9233 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9245 */;
+import ShareConstants from "ShareConstants" /* 13592 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18534 */;
 import react from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18636 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7946 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18626 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7900 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -154,7 +154,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod9287.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod9233.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

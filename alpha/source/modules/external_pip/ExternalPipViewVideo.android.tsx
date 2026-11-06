@@ -1,23 +1,23 @@
-// Module ID: 19417
-// Function ID: 19418
+// Module ID: 19409
+// Function ID: 19410
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 4992, 1385, 21, 5143, 575, 5872, 5763, 1113, 504, 6991, 19418, 5725, 1187, 6026, 6011, 5734, 19419, 11979, 19420, 2]
+// Dependencies: [32, 19, 17, 5019, 1385, 21, 5170, 575, 5890, 5781, 1113, 504, 6933, 19410, 5745, 1187, 6046, 6030, 5754, 19411, 11945, 19412, 2]
 
-// Module 19417 (ExternalPipViewVideo)
+// Module 19409 (ExternalPipViewVideo)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5872 */;
-import ExternalPipDefault from "ExternalPip" /* 6011 */;
-import VideoActionCreators from "VideoActionCreators" /* 19419 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19420 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5890 */;
+import ExternalPipDefault from "ExternalPip" /* 6030 */;
+import VideoActionCreators from "VideoActionCreators" /* 19411 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19412 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -73,11 +73,11 @@ function ExternalPipViewVideoUser(userId) {
     }
     return guild_id;
   });
-  const obj4 = userId(6991);
+  const obj4 = userId(6933);
   const avatarDecoration = obj4.useAvatarDecoration(stateFromStores, stateFromStores1);
   const obj2 = { userId, guildId: stateFromStores1, avatarURI: avatarURL, location: "ExternalPipViewVideo-native" };
   avatarURL = undefined;
-  const tmp7 = channelId(19418);
+  const tmp7 = channelId(19410);
   const tmp6 = channelId;
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(stateFromStores1, 80, false);
@@ -99,7 +99,7 @@ function ExternalPipViewVideoUser(userId) {
   const tmp11 = closure_7;
   if (null != gradientStops) {
     const obj6 = { colors: gradientStops, start, end, style: StyleSheet.absoluteFill, pointerEvents: "none" };
-    tmp12 = closure_11(tmp6(5725), obj6);
+    tmp12 = closure_11(tmp6(5745), obj6);
   }
   items3 = [tmp12, ];
   let tmp17 = null;
@@ -121,7 +121,7 @@ function ExternalPipViewVideoStream(streamId) {
   let video;
   streamId = streamId.streamId;
   const userId = streamId.userId;
-  let obj = streamId(6026);
+  let obj = streamId(6046);
   let c1 = 300;
   first = undefined;
   closure_3 = undefined;
@@ -165,7 +165,7 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = { opacity: num };
     return items;
   }, items3);
-  const obj2 = streamId(5734);
+  const obj2 = streamId(5754);
   const token = obj2.useToken(first(575).colors.TEXT_FEEDBACK_INFO);
   const value = closure_8.get();
   _slicedToArray = value;
@@ -180,7 +180,7 @@ function ExternalPipViewVideoStream(streamId) {
       obj.updateVideoSize(tmp, size, 1);
     }
   }, items4);
-  const children = [closure_11(first(11979), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(11945), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp16Result = null;
   const tmp14 = closure_12;
   const tmp15 = closure_13;

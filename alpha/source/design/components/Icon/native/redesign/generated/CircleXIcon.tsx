@@ -1,15 +1,15 @@
-// Module ID: 7236
-// Function ID: 7237
+// Module ID: 7183
+// Function ID: 7184
 // Name: CircleXIcon
-// Dependencies: [19, 17, 21, 575, 5853, 7237, 7238, 2]
+// Dependencies: [19, 17, 21, 575, 5871, 7184, 7185, 2]
 // Exports: CircleXIcon
 
-// Module 7236 (CircleXIcon)
+// Module 7183 (CircleXIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage3 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 7237 */;
-import AssetRegistry2 from "AssetRegistry" /* 7238 */;
+import BaseIconImage3 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 7184 */;
+import AssetRegistry2 from "AssetRegistry" /* 7185 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

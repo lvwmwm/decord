@@ -1,14 +1,14 @@
-// Module ID: 8805
-// Function ID: 8806
+// Module ID: 8751
+// Function ID: 8752
 // Name: ImageIcon
-// Dependencies: [19, 21, 575, 5853, 8773, 2]
+// Dependencies: [19, 21, 575, 5871, 8719, 2]
 // Exports: ImageIcon
 
-// Module 8805 (ImageIcon)
+// Module 8751 (ImageIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 8773 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 8719 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

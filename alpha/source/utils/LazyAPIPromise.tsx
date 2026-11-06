@@ -1,10 +1,10 @@
-// Module ID: 9130
-// Function ID: 9131
+// Module ID: 9076
+// Function ID: 9077
 // Name: LazyAPIPromise
-// Dependencies: [5, 32, 19, 6584, 2]
+// Dependencies: [5, 32, 19, 6604, 2]
 // Exports: default
 
-// Module 9130 (LazyAPIPromise)
+// Module 9076 (LazyAPIPromise)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

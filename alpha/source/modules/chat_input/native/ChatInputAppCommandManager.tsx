@@ -1,21 +1,21 @@
-// Module ID: 14200
-// Function ID: 14201
+// Module ID: 14177
+// Function ID: 14178
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 8490, 8491, 2143, 8826, 1385, 6174, 5143, 575, 13023, 12, 7622, 504, 8828, 12661, 13986, 10500, 2121, 14201, 2]
+// Dependencies: [32, 19, 8436, 8437, 2138, 8772, 1385, 6194, 5170, 575, 12988, 12, 7567, 504, 8774, 12626, 13962, 10452, 2116, 14178, 2]
 
-// Module 14200 (ChatInputAppCommandManager)
+// Module 14177 (ChatInputAppCommandManager)
 import nativeDefault from "native" /* 575 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 13986 */;
-import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 14201 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 13962 */;
+import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 14178 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8490 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8491 */;
-import GameStore from "GameStore" /* 2143 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8826 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8436 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8437 */;
+import GameStore from "GameStore" /* 2138 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8772 */;
 import UserStore from "UserStore" /* 1385 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6174 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6194 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let gameById, map, set;

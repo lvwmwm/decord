@@ -1,13 +1,13 @@
-// Module ID: 11792
-// Function ID: 11793
+// Module ID: 11758
+// Function ID: 11759
 // Name: useGetOrFetchApplicationBatched
-// Dependencies: [19, 2167, 4987, 12, 7019, 504, 2]
+// Dependencies: [19, 2162, 5014, 12, 6961, 504, 2]
 // Exports: useGetOrFetchApplicationBatched, useRequestApplication
 
-// Module 11792 (useGetOrFetchApplicationBatched)
-import Timers from "Timers" /* 4987 */;
+// Module 11758 (useGetOrFetchApplicationBatched)
+import Timers from "Timers" /* 5014 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2167 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

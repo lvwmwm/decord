@@ -1,15 +1,15 @@
-// Module ID: 19743
-// Function ID: 19744
+// Module ID: 19749
+// Function ID: 19750
 // Name: CustomStatusManager
-// Dependencies: [6708, 1072, 4987, 7426, 4968, 11208, 4973, 1227, 11207, 2]
+// Dependencies: [6650, 1072, 5014, 7373, 4995, 11163, 5000, 1227, 11162, 2]
 
-// Module 19743 (CustomStatusManager)
-import UserSettings from "UserSettings" /* 4968 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4973 */;
-import Timers from "Timers" /* 4987 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 6708 */;
+// Module 19749 (CustomStatusManager)
+import UserSettings from "UserSettings" /* 4995 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
+import Timers from "Timers" /* 5014 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6650 */;
 import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

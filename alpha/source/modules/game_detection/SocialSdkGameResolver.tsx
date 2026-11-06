@@ -1,11 +1,11 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 11695
+// Function ID: 11696
 // Name: SocialSdkGameResolver
-// Dependencies: [2161, 2]
+// Dependencies: [2156, 2]
 // Exports: withProcessIdentity
 
-// Module 11729 (SocialSdkGameResolver)
-import DetectableGameStore from "DetectableGameStore" /* 2161 */;
+// Module 11695 (SocialSdkGameResolver)
+import DetectableGameStore from "DetectableGameStore" /* 2156 */;
 import size from "module_2" /* 2 */;
 
 let map;

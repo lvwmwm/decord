@@ -1,18 +1,18 @@
-// Module ID: 20413
-// Function ID: 20414
+// Module ID: 20421
+// Function ID: 20422
 // Name: AgeUpdateFooter
-// Dependencies: [19, 21, 5143, 5763, 1113, 2963, 8100, 6867, 2]
+// Dependencies: [19, 21, 5170, 5781, 1113, 2960, 8046, 6809, 2]
 // Exports: default
 
-// Module 20413 (AgeUpdateFooter)
+// Module 20421 (AgeUpdateFooter)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef2963 from "module_2963" /* 2963 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6867 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8100 */;
+import _modDef2960 from "module_2960" /* 2960 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6809 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8046 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -30,5 +30,5 @@ export default function AgeUpdateFooter() {
       return obj.showAgeVerificationGetStartedModal(obj2);
     }
   };
-  return <Text variant="body-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2963.ifObbX, obj2)}</Text>;
+  return <Text variant="body-md/medium" color="text-muted" style={closure_4().text}>{intl.format(_modDef2960.ifObbX, obj2)}</Text>;
 };

@@ -1,20 +1,20 @@
-// Module ID: 13898
-// Function ID: 13899
+// Module ID: 13873
+// Function ID: 13874
 // Name: CheckpointGuildStats
-// Dependencies: [17, 6204, 21, 5143, 575, 1113, 3187, 12178, 13878, 8789, 2]
+// Dependencies: [17, 6224, 21, 5170, 575, 1113, 3216, 12147, 13853, 8735, 2]
 // Exports: default
 
-// Module 13898 (CheckpointGuildStats)
+// Module 13873 (CheckpointGuildStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import _modDef3187 from "module_3187" /* 3187 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
-import ChatIcon from "ChatIcon" /* 8789 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12178 */;
-import CheckpointTextDefault from "CheckpointText" /* 13878 */;
+import _modDef3216 from "module_3216" /* 3216 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
+import ChatIcon from "ChatIcon" /* 8735 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12147 */;
+import CheckpointTextDefault from "CheckpointText" /* 13853 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -43,10 +43,10 @@ export default function CheckpointGuildStats(arg0) {
   const rounded = Math.round(numVoiceMinutes);
   const rounded1 = Math.round(numMessagesSent);
   const intl = intl3.intl;
-  const formatToPlainStringResult = intl.formatToPlainString(_modDef3187.UZbUtl, { numMinutes: rounded });
+  const formatToPlainStringResult = intl.formatToPlainString(_modDef3216.UZbUtl, { numMinutes: rounded });
   const intl2 = intl3.intl;
   const obj = { style: tmp.stats, children: items1 };
-  const stringResult = intl2.string(_modDef3187.wWKySP);
+  const stringResult = intl2.string(_modDef3216.wWKySP);
   const obj2 = { accessible: true, accessibilityLabel: "" + rounded + " " + formatToPlainStringResult.toLocaleLowerCase(), style: tmp.stat, children: items };
   items = [, ];
   const obj3 = { size: "xs", color: CHECKPOINT_PRIMARY };

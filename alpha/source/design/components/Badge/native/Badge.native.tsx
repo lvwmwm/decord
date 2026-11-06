@@ -1,19 +1,19 @@
-// Module ID: 7445
-// Function ID: 7446
+// Module ID: 7075
+// Function ID: 7076
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1113, 575, 5143, 5734, 5725, 7446, 5763, 2]
-// Exports: Badge
+// Dependencies: [17, 21, 1113, 575, 5170, 5754, 5745, 7076, 5781, 2]
+// Exports: Badge, getBadgeText
 
-// Module 7445 (Badge/Badge)
+// Module 7075 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import LinearGradientDefault from "LinearGradient" /* 5725 */;
-import useToken from "useToken" /* 5734 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import BadgeShared from "BadgeShared" /* 7446 */;
+import LinearGradientDefault from "LinearGradient" /* 5745 */;
+import useToken from "useToken" /* 5754 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import BadgeShared from "BadgeShared" /* 7076 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -131,6 +131,23 @@ let closure_7 = createStyles.createStyles((variant) => {
 });
 const result = size.fileFinishedImporting("design/components/Badge/native/Badge.native.tsx");
 
+export function getBadgeText(type) {
+  if ("new" === type) {
+    const intl4 = intl5.intl;
+    return intl4.string(intl5.t.y2b7CA);
+  } else if ("beta" === type) {
+    const intl3 = intl5.intl;
+    return intl3.string(intl5.t.oW0eUd);
+  } else if ("early_access" === type) {
+    const intl2 = intl5.intl;
+    return intl2.string(intl5.t.EYxi0o);
+  } else if ("free_trial" === type) {
+    const intl = intl5.intl;
+    return intl.string(intl5.t.IBYG5U);
+  } else {
+    return type.text;
+  }
+}
 export function Badge(icon) {
   let items;
   let text;

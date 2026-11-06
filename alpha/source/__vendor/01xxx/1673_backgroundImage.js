@@ -274,8 +274,8 @@ pnpm_backgroundImageTs10.__workletHash = 14915841106540;
 pnpm_backgroundImageTs10.__initData = tmp15;
 const items13 = [{ code: "(function pnpm_backgroundImageTs11(position){let[isPercentage]=this.__closure;return Number.isFinite(position)||isPercentage(position);})" }, _mod1674.isPercentage];
 [tmp19, tmp20] = items13;
-function pnpm_backgroundImageTs11(arg0) {
-  const isFiniteResult = Number.isFinite(arg0) || _undefined(arg0);
+function pnpm_backgroundImageTs11(scrollLength) {
+  const isFiniteResult = Number.isFinite(scrollLength) || _undefined(scrollLength);
   return isFiniteResult;
 }
 const items14 = [tmp20];

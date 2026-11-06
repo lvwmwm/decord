@@ -1,14 +1,14 @@
-// Module ID: 8825
-// Function ID: 8826
+// Module ID: 8771
+// Function ID: 8772
 // Name: useGameMentionData
-// Dependencies: [2143, 8826, 1385, 8828, 504, 558, 2]
+// Dependencies: [2138, 8772, 1385, 8774, 504, 558, 2]
 // Exports: getGameMentionData, useGameMentionData
 
-// Module 8825 (useGameMentionData)
+// Module 8771 (useGameMentionData)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import useGameProfileObscured from "useGameProfileObscured" /* 8828 */;
-import GameStore from "GameStore" /* 2143 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8826 */;
+import useGameProfileObscured from "useGameProfileObscured" /* 8774 */;
+import GameStore from "GameStore" /* 2138 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8772 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

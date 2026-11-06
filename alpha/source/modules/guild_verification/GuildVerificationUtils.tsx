@@ -1,14 +1,14 @@
-// Module ID: 14973
-// Function ID: 14974
+// Module ID: 14950
+// Function ID: 14951
 // Name: GuildVerificationUtils
-// Dependencies: [5175, 1072, 5177, 7045, 7082, 2]
+// Dependencies: [5202, 1072, 5204, 6987, 7024, 2]
 // Exports: inviteGuildHasPendingMemberDisabledVerification, openVerificationModalOrTransitionToApplication
 
-// Module 14973 (GuildVerificationUtils)
+// Module 14950 (GuildVerificationUtils)
 import Constants from "Constants" /* 1072 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5177 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7082 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5175 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 5204 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7024 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5202 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;
@@ -35,7 +35,7 @@ export function openVerificationModalOrTransitionToApplication(id) {
   if (null != request) {
     const tmp2 = require;
     if (request.applicationStatus !== MemberVerificationTypes.GuildJoinRequestApplicationStatuses.STARTED) {
-      const tmp2Result = tmp2(7045);
+      const tmp2Result = tmp2(6987);
       const result = tmp2Result.transitionToMemberVerification(id);
     }
   }

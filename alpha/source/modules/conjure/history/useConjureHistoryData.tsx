@@ -1,58 +1,63 @@
-// Module ID: 12400
-// Function ID: 12401
+// Module ID: 12365
+// Function ID: 12366
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 12388, 12401, 12390, 2]
+// Dependencies: [32, 19, 12353, 12301, 12366, 12355, 2]
 // Exports: default, useHistoryLoad
 
-// Module 12400 (useConjureHistoryData)
-import conjureHistoryRequests from "conjureHistoryRequests" /* 12388 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12390 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12401 */;
+// Module 12365 (useConjureHistoryData)
+import conjureHistoryRequests from "conjureHistoryRequests" /* 12353 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 12355 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 12366 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let c0, map, set;
+const require = globalThis.__r;
+let c0, importDefault, map, set;
 
-const f102160 = () => {
+const f102319 = () => {
   _undefined2(null);
   _undefined((arg0) => arg0 + 1);
 };
-let closure_4 = [];
+let closure_5 = [];
 let result = size.fileFinishedImporting("modules/conjure/history/useConjureHistoryData.tsx");
 
-export default function useConjureHistoryData(arg0, arg1) {
+export default function useConjureHistoryData(arg0) {
   let c1;
   let c2;
+  let hasItem;
   let obj3;
-  let tmp13;
-  let tmp15;
-  let tmp21;
-  let tmp23;
-  let tmp29;
-  let tmp31;
-  let tmp7;
+  let obj4;
+  let tmp14;
+  let tmp16;
+  let tmp22;
+  let tmp24;
+  let tmp30;
+  let tmp32;
+  let tmp8;
   let closure_0 = arg0;
-  let obj = obj3;
-  let items = [arg1];
-  const memo = obj3.useMemo(() => {
+  let tmp = require("useUsesPreviewApp")(arg0);
+  let obj = obj4;
+  let items = [tmp];
+  const memo = obj4.useMemo(() => {
     const obj = ConjureRestorePanelOp;
     return obj.restorePanelEnvironments(closure_1);
   }, items);
-  const hasItem = memo.includes("preview");
+  hasItem = memo.includes("preview");
   const items1 = [arg0];
-  const callback = obj3.useCallback(() => {
+  const callback = obj4.useCallback(() => {
     const obj = conjureHistoryRequests;
     return obj.fetchVersionHistory(closure_0);
   }, items1);
   c2 = undefined;
-  let tmp4 = hasItem(obj3.useState(0), 2);
-  let closure_1 = tmp4[1];
-  const first = tmp4[0];
-  [tmp7, c2] = hasItem(obj3.useState(null), 2);
+  let tmp4 = obj3;
+  let tmp5 = obj3(obj4.useState(0), 2);
+  importDefault = tmp5[1];
+  const first = tmp5[0];
+  [tmp8, c2] = obj3(obj4.useState(null), 2);
   const items2 = [callback, first];
-  const tmp6 = hasItem(obj3.useState(null), 2);
-  const effect = obj3.useEffect(() => {
+  const tmp7 = obj3(obj4.useState(null), 2);
+  const effect = obj4.useEffect(() => {
     callback6 = false;
     const promise = callback6();
     promise.then((data) => {
@@ -75,12 +80,12 @@ export default function useConjureHistoryData(arg0, arg1) {
       c0 = true;
     };
   }, items2);
-  const callback1 = obj3.useCallback(f102160, []);
-  if (null != tmp7) {
-    if (tmp7.load === callback) {
-      let state = tmp7.state;
+  const callback1 = obj4.useCallback(f102319, []);
+  if (null != tmp8) {
+    if (tmp8.load === callback) {
+      let state = tmp8.state;
     }
-    let obj2 = { state: { status: "loading" }, retry: callback1, refresh: tmp10 };
+    let obj2 = { state: { status: "loading" }, retry: callback1, refresh: tmp11 };
     const items3 = [arg0];
     const callback2 = obj.useCallback(() => {
       const items = [, ];
@@ -98,11 +103,11 @@ export default function useConjureHistoryData(arg0, arg1) {
     }, items3);
     c1 = undefined;
     c2 = undefined;
-    [tmp13, c1] = hasItem(obj.useState(0), 2);
-    hasItem(obj.useState(0), 2);
-    [tmp15, c2] = hasItem(obj.useState(null), 2);
-    const items4 = [callback2, tmp13];
-    hasItem(obj.useState(null), 2);
+    [tmp14, c1] = tmp4(obj.useState(0), 2);
+    tmp4(obj.useState(0), 2);
+    [tmp16, c2] = tmp4(obj.useState(null), 2);
+    const items4 = [callback2, tmp14];
+    tmp4(obj.useState(null), 2);
     const effect1 = obj.useEffect(() => {
       callback6 = false;
       const promise = callback6();
@@ -126,13 +131,13 @@ export default function useConjureHistoryData(arg0, arg1) {
         c0 = true;
       };
     }, items4);
-    const callback3 = obj.useCallback(f102160, []);
-    if (null != tmp15) {
+    const callback3 = obj.useCallback(f102319, []);
+    if (null != tmp16) {
       let state1;
-      if (tmp15.load === callback2) {
-        state1 = tmp15.state;
+      if (tmp16.load === callback2) {
+        state1 = tmp16.state;
       }
-      obj3 = { state: state1, retry: callback3, refresh: tmp18 };
+      obj3 = { state: state1, retry: callback3, refresh: tmp19 };
       const items5 = [arg0, hasItem];
       const callback4 = obj.useCallback(() => {
         let databaseRestorePoints;
@@ -141,17 +146,17 @@ export default function useConjureHistoryData(arg0, arg1) {
           const obj = conjureHistoryRequests;
           databaseRestorePoints = obj.fetchDatabaseRestorePoints(closure_0, "preview");
         } else {
-          databaseRestorePoints = Promise.resolve(closure_4);
+          databaseRestorePoints = Promise.resolve(closure_5);
         }
         return databaseRestorePoints;
       }, items5);
       c1 = undefined;
       c2 = undefined;
-      [tmp21, c1] = hasItem(obj.useState(0), 2);
-      hasItem(obj.useState(0), 2);
-      [tmp23, c2] = hasItem(obj.useState(null), 2);
-      const items6 = [callback4, tmp21];
-      hasItem(obj.useState(null), 2);
+      [tmp22, c1] = tmp4(obj.useState(0), 2);
+      tmp4(obj.useState(0), 2);
+      [tmp24, c2] = tmp4(obj.useState(null), 2);
+      const items6 = [callback4, tmp22];
+      tmp4(obj.useState(null), 2);
       const effect2 = obj.useEffect(() => {
         callback6 = false;
         const promise = callback6();
@@ -175,13 +180,13 @@ export default function useConjureHistoryData(arg0, arg1) {
           c0 = true;
         };
       }, items6);
-      const callback5 = obj.useCallback(f102160, []);
-      if (null != tmp23) {
+      const callback5 = obj.useCallback(f102319, []);
+      if (null != tmp24) {
         let state4;
-        if (tmp23.load === callback4) {
-          state4 = tmp23.state;
+        if (tmp24.load === callback4) {
+          state4 = tmp24.state;
         }
-        let obj4 = { state: state4, retry: callback5, refresh: tmp26 };
+        obj4 = { state: state4, retry: callback5, refresh: tmp27 };
         const items7 = [arg0, hasItem];
         let callback6 = obj.useCallback(() => {
           let databaseRestoreWindow;
@@ -196,11 +201,11 @@ export default function useConjureHistoryData(arg0, arg1) {
         }, items7);
         c1 = undefined;
         c2 = undefined;
-        [tmp29, c1] = hasItem(obj.useState(0), 2);
-        hasItem(obj.useState(0), 2);
-        [tmp31, c2] = hasItem(obj.useState(null), 2);
-        const items8 = [callback6, tmp29];
-        hasItem(obj.useState(null), 2);
+        [tmp30, c1] = tmp4(obj.useState(0), 2);
+        tmp4(obj.useState(0), 2);
+        [tmp32, c2] = tmp4(obj.useState(null), 2);
+        const items8 = [callback6, tmp30];
+        tmp4(obj.useState(null), 2);
         const effect3 = obj.useEffect(() => {
           callback6 = false;
           const promise = callback6();
@@ -224,13 +229,13 @@ export default function useConjureHistoryData(arg0, arg1) {
             c0 = true;
           };
         }, items8);
-        const callback7 = obj.useCallback(f102160, []);
-        if (null != tmp31) {
+        const callback7 = obj.useCallback(f102319, []);
+        if (null != tmp32) {
           let state5;
-          if (tmp31.load === callback6) {
-            state5 = tmp31.state;
+          if (tmp32.load === callback6) {
+            state5 = tmp32.state;
           }
-          const obj5 = { state: state5, retry: callback7, refresh: tmp34 };
+          const obj5 = { state: state5, retry: callback7, refresh: tmp35 };
           const refresh = obj3.refresh;
           const refresh2 = obj4.refresh;
           const refresh3 = obj5.refresh;
@@ -289,7 +294,7 @@ export default function useConjureHistoryData(arg0, arg1) {
             sharedDatabase: !hasItem,
             versions: obj2,
             databases: mapped,
-            previewBackups: "loaded" === state3.status ? state3.data : obj4,
+            previewBackups: "loaded" === state3.status ? state3.data : obj5,
             previewBackupsLoading: "loading" === state3.status,
             refreshAllBackups: callback8,
             versionTitles: obj.useMemo(() => {
@@ -349,7 +354,7 @@ export function useHistoryLoad(callback) {
       c0 = true;
     };
   }, items);
-  callback = react.useCallback(f102160, []);
+  callback = react.useCallback(f102319, []);
   if (null != tmp4) {
     if (tmp4.load === callback) {
       const state = tmp4.state;

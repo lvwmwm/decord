@@ -1,25 +1,25 @@
-// Module ID: 16815
-// Function ID: 16816
+// Module ID: 16811
+// Function ID: 16812
 // Name: TryItOutEditableTileBannerImageButton
-// Dependencies: [19, 17, 5144, 8877, 7917, 21, 1090, 575, 504, 4968, 8903, 16816, 16817, 1113, 16807, 5854, 1411, 2]
+// Dependencies: [19, 17, 5171, 8823, 7871, 21, 1090, 575, 504, 4995, 8849, 16812, 16813, 1113, 16803, 5872, 1411, 2]
 // Exports: default
 
-// Module 16815 (TryItOutEditableTileBannerImageButton)
+// Module 16811 (TryItOutEditableTileBannerImageButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtils from "AvatarUtils" /* 1411 */;
-import UserSettings from "UserSettings" /* 4968 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import useDisplayProfileDefault from "useDisplayProfile" /* 8903 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 16807 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 16817 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import useDisplayProfileDefault from "useDisplayProfile" /* 8849 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 16803 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 16813 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8877 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8823 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
 import ColorUtils from "utils/ColorUtils" /* 1090 */;
 import size from "module_2" /* 2 */;
 
@@ -57,7 +57,7 @@ function EditableTileBannerImageButtonBase(bannerChange) {
   if (primaryColor == null) {
     primaryColor = closure_9;
   }
-  const hex = tmp5(16816)(primaryColor).hex;
+  const hex = tmp5(16812)(primaryColor).hex;
   UserProfileEditableTileBaseDefault;
   const intl = tmp(1113).intl;
   const tmpResult = UserProfileEditingAccessibilityUtils;

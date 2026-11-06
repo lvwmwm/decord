@@ -1,15 +1,15 @@
-// Module ID: 8675
-// Function ID: 8676
+// Module ID: 8621
+// Function ID: 8622
 // Name: useDiscountOffer
-// Dependencies: [32, 19, 1385, 7775, 1387, 504, 2176, 4987, 2]
+// Dependencies: [32, 19, 1385, 7729, 1387, 504, 2171, 5014, 2]
 // Exports: default
 
-// Module 8675 (useDiscountOffer)
+// Module 8621 (useDiscountOffer)
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import UserOfferStore from "UserOfferStore" /* 7775 */;
+import UserOfferStore from "UserOfferStore" /* 7729 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ export default function useDiscountOffer(arg0, arg1) {
   const items2 = [first, stateFromStores];
   const hasItem = CHURN_DISCOUNT_IDS.includes(arg0);
   const effect = obj3.useEffect(function() {
-    const f137963 = () => {
+    const f137473 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired()) {
@@ -73,7 +73,7 @@ export default function useDiscountOffer(arg0, arg1) {
         }
         const obj2 = timeout;
         if (timeout != null) {
-          obj2.start(num, f137963);
+          obj2.start(num, f137473);
         }
       }
     };
@@ -98,7 +98,7 @@ export default function useDiscountOffer(arg0, arg1) {
           let time = expiresAt.getTime();
           num = time - Date.now();
         }
-        timeout.start(num, f137963);
+        timeout.start(num, f137473);
       }
       return () => timeout.stop();
     }

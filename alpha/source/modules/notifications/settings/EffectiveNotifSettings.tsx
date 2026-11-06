@@ -1,11 +1,11 @@
-// Module ID: 15817
-// Function ID: 15818
+// Module ID: 15811
+// Function ID: 15812
 // Name: EffectiveNotifSettings
-// Dependencies: [32, 15818, 2]
+// Dependencies: [32, 15812, 2]
 // Exports: legacySourceFingerprint, parseEffectiveNotifSettings
 
-// Module 15817 (EffectiveNotifSettings)
-import _mod15818 from "module_15818" /* 15818 */;
+// Module 15811 (EffectiveNotifSettings)
+import _mod15812 from "module_15812" /* 15812 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -22,36 +22,36 @@ let z2;
 let z3;
 let z4;
 let z5;
-const z = _mod15818.z;
+const z = _mod15812.z;
 const object = z.object;
 const obj = { value: z2.boolean(), source: z3.enum(["legacy_proto", "legacy_default", "declarative", "declarative_sibling", "declarative_retired"]), explicit: z4.boolean(), inherited: z5.boolean(), setting_id: intResult.positive(), source_setting_id: positiveResult.nullable(), legacy_path: stringResult.regex(/^[a-z][a-z_]*\.[a-z][a-z_]*$/) };
-z2 = _mod15818.z;
-z3 = _mod15818.z;
-z4 = _mod15818.z;
-z5 = _mod15818.z;
-const z6 = _mod15818.z;
+z2 = _mod15812.z;
+z3 = _mod15812.z;
+z4 = _mod15812.z;
+z5 = _mod15812.z;
+const z6 = _mod15812.z;
 const numberResult = z6.number();
 intResult = numberResult.int();
-const z7 = _mod15818.z;
+const z7 = _mod15812.z;
 const numberResult1 = z7.number();
 const intResult1 = numberResult1.int();
 positiveResult = intResult1.positive();
-const z8 = _mod15818.z;
+const z8 = _mod15812.z;
 stringResult = z8.string();
 const objectResult = object(obj);
-const z9 = _mod15818.z;
+const z9 = _mod15812.z;
 const object2 = z9.object;
 const obj2 = { contract_version: z10.literal(1), account_id: z11.string(), arm: z12.literal("treatment"), legacy_data_version: intResult2.nonnegative(), declarative_data_version: intResult3.nonnegative(), preferences: objectResult2.strip() };
-z10 = _mod15818.z;
-z11 = _mod15818.z;
-z12 = _mod15818.z;
-const z13 = _mod15818.z;
+z10 = _mod15812.z;
+z11 = _mod15812.z;
+z12 = _mod15812.z;
+const z13 = _mod15812.z;
 const numberResult2 = z13.number();
 intResult2 = numberResult2.int();
-const z14 = _mod15818.z;
+const z14 = _mod15812.z;
 const numberResult3 = z14.number();
 intResult3 = numberResult3.int();
-const z15 = _mod15818.z;
+const z15 = _mod15812.z;
 objectResult2 = z15.object({ go_live: objectResult, voice_channel_activity: objectResult, friends_gaming: objectResult, custom_status_update: objectResult, friend_online: objectResult, profile_updates: objectResult, server_trending: objectResult });
 let closure_1 = object2(obj2);
 const result = size.fileFinishedImporting("modules/notifications/settings/EffectiveNotifSettings.tsx");

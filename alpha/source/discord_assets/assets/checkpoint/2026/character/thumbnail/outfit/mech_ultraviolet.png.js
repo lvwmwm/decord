@@ -1,8 +1,8 @@
-// Module ID: 6433
-// Function ID: 6434
+// Module ID: 6453
+// Function ID: 6454
 // Dependencies: [2]
 
-// Module 6433
+// Module 6453
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/mech_ultraviolet.png.js");

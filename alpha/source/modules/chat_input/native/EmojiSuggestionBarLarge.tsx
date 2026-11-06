@@ -1,20 +1,20 @@
-// Module ID: 14220
-// Function ID: 14221
+// Module ID: 14197
+// Function ID: 14198
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [19, 17, 10129, 21, 5143, 575, 9141, 14221, 1652, 10212, 10236, 5209, 2]
+// Dependencies: [19, 17, 10080, 21, 5170, 575, 9087, 14198, 1652, 10164, 10188, 5229, 2]
 // Exports: EmojiSuggestionBarLarge
 
-// Module 14220 (EmojiSuggestionBarLarge)
+// Module 14197 (EmojiSuggestionBarLarge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5209 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9141 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10129 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 10212 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14221 */;
+import native from "native" /* 5229 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9087 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10080 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 10164 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14198 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
@@ -103,7 +103,7 @@ function EmojiSuggestionBarLargeAnimated(arg0) {
         if (locked) {
           openEmojiActionSheet = dependencyMap;
         } else {
-          openEmojiActionSheet = tmp8(10236).openEmojiActionSheet;
+          openEmojiActionSheet = tmp8(10188).openEmojiActionSheet;
         }
         const tmp8Result = EmojiSuggestionBarUtils;
         return tmp7(EmojiEntranceAnimation, obj2, tmp8Result.getEmojiEntranceKey(tmp, index));

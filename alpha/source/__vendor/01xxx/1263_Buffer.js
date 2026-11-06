@@ -515,29 +515,29 @@ class Buffer {
   lastIndexOf(arg0, arg1, arg2) {
     return bidirectionalIndexOf(this, arg0, arg1, arg2, false);
   }
-  write(arg0, str, arg2, arg3) {
+  write(arg0, scrollLength, scrollLength2, arg3) {
     let length;
     let num2;
     let str2;
     const self = this;
-    if (undefined === str) {
+    if (undefined === scrollLength) {
       length = self.length;
       str2 = "utf8";
       num2 = 0;
     } else {
-      if (undefined === arg2) {
-        if (typeof str === "string") {
+      if (undefined === scrollLength) {
+        if (typeof scrollLength === "string") {
           length = self.length;
           num2 = 0;
-          str2 = str;
+          str2 = scrollLength;
         }
       }
       const _isFinite = isFinite;
-      if (isFinite(str)) {
+      if (isFinite(scrollLength)) {
         const _isFinite2 = isFinite;
-        str2 = arg2;
+        str2 = scrollLength;
         num2 = tmp4;
-        if (isFinite(arg2)) {
+        if (isFinite(scrollLength)) {
           str2 = arg3;
           length = tmp5;
           num2 = tmp4;

@@ -1,13 +1,13 @@
-// Module ID: 19627
-// Function ID: 19628
+// Module ID: 19631
+// Function ID: 19632
 // Name: VoicePanelMaxCapacityAlert
-// Dependencies: [19, 4992, 21, 563, 6102, 6102, 19625, 1113, 2]
+// Dependencies: [19, 5019, 21, 563, 6122, 6122, 19629, 1113, 2]
 // Exports: default
 
-// Module 19627 (VoicePanelMaxCapacityAlert)
+// Module 19631 (VoicePanelMaxCapacityAlert)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -30,13 +30,13 @@ export default function VoicePanelMaxCapacityAlert(channelId) {
     }
     return num;
   }, items1);
-  const obj2 = channelId(6102);
+  const obj2 = channelId(6122);
   const dismissModalCallback = obj2.useDismissModalCallback();
-  const AlertModal = channelId(6102).AlertModal;
+  const AlertModal = channelId(6122).AlertModal;
   const intl = channelId(1113).intl;
   const intl2 = channelId(1113).intl;
   ({ variant: "secondary", text: intl3.string(channelId(1113).t["NX+WJN"]), onPress: dismissModalCallback });
-  const AlertActionButton = channelId(6102).AlertActionButton;
+  const AlertActionButton = channelId(6122).AlertActionButton;
   intl3 = channelId(1113).intl;
   return <AlertModal header={null} title={intl.string(channelId(1113).t.hHbsQj)} content={intl2.formatToPlainString(channelId(1113).t["387SQH"], { count: stateFromStores })} actions={null} />;
 };

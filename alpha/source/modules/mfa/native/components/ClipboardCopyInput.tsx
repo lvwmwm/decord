@@ -1,17 +1,17 @@
-// Module ID: 17959
-// Function ID: 17960
+// Module ID: 17947
+// Function ID: 17948
 // Name: ClipboardCopyInput
-// Dependencies: [5, 19, 17, 2122, 1072, 21, 5143, 504, 7280, 7347, 7496, 7226, 2]
+// Dependencies: [5, 19, 17, 2117, 1072, 21, 5170, 504, 7227, 7294, 7441, 7173, 2]
 // Exports: default
 
-// Module 17959 (ClipboardCopyInput)
+// Module 17947 (ClipboardCopyInput)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 2122 */;
-import createStyles from "createStyles" /* 5143 */;
+import AppStateStore from "AppStateStore" /* 2117 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

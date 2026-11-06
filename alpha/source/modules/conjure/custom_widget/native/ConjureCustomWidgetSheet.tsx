@@ -1,19 +1,19 @@
-// Module ID: 15172
-// Function ID: 15173
+// Module ID: 15161
+// Function ID: 15162
 // Name: ConjureCustomWidgetSheet
-// Dependencies: [5, 32, 19, 17, 11034, 21, 5143, 575, 7561, 1113, 3995, 11060, 15171, 11165, 11064, 7504, 7460, 7392, 5770, 2]
+// Dependencies: [5, 32, 19, 17, 10986, 21, 5170, 575, 7506, 1113, 4024, 11012, 15160, 11118, 11016, 7449, 7405, 7339, 5788, 2]
 // Exports: default
 
-// Module 15172 (ConjureCustomWidgetSheet)
+// Module 15161 (ConjureCustomWidgetSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3995 from "module_3995" /* 3995 */;
+import _modDef4024 from "module_4024" /* 4024 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10986 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap;
@@ -165,12 +165,12 @@ export default function ConjureCustomWidgetSheet() {
         }
         c5 = 3;
         return { value: "HermesInternal", done: null };
-      } catch (tmp54) {
-        dependencyMap = tmp54;
+      } catch (tmp55) {
+        dependencyMap = tmp55;
         if (0 === c3) {
           c5 = 3;
-          throw tmp54;
-        } else if (1 === tmp56) {
+          throw tmp55;
+        } else if (1 === tmp57) {
           c4 = 1;
         } else {
           c4 = 2;
@@ -179,21 +179,21 @@ export default function ConjureCustomWidgetSheet() {
     }
   }), items);
   let obj = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: closure_9(BottomSheetTitleHeader, obj2), children: tmp15(tmp16, obj3) };
-  const ActionSheet = value(7504).ActionSheet;
-  obj2 = { title: intl.string(_modDef3995.yI85oV) };
-  BottomSheetTitleHeader = value(7460).BottomSheetTitleHeader;
+  const ActionSheet = value(7449).ActionSheet;
+  obj2 = { title: intl.string(_modDef4024.yI85oV) };
+  BottomSheetTitleHeader = value(7405).BottomSheetTitleHeader;
   intl = value(1113).intl;
   obj3 = { style: tmp.body, children: items1 };
-  let obj4 = { label: intl2.string(_modDef3995["09BSx3"]), placeholder: intl3.string(_modDef3995.K7zdCZ), description: intl4.string(_modDef3995.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15171).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
-  const TextArea = value(7392).TextArea;
+  let obj4 = { label: intl2.string(_modDef4024["09BSx3"]), placeholder: intl3.string(_modDef4024.K7zdCZ), description: intl4.string(_modDef4024.SKwzvJ), errorMessage: tmp5, value, onChange: callback, maxLength: tmp12(15160).CONJURE_CUSTOM_WIDGET_PROMPT_MAX_LENGTH, disabled: tmp7 };
+  const TextArea = value(7339).TextArea;
   intl2 = value(1113).intl;
   intl3 = value(1113).intl;
   intl4 = value(1113).intl;
   tmp15 = closure_10;
   tmp16 = View;
   items1 = [tmp11(TextArea, obj4), ];
-  let obj5 = { variant: "primary", text: intl5.string(_modDef3995.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
-  const Button = tmp12(5770).Button;
+  let obj5 = { variant: "primary", text: intl5.string(_modDef4024.MDZXiK), onPress: callback1, loading: tmp7, disabled: null == memo };
+  const Button = tmp12(5788).Button;
   intl5 = tmp12(1113).intl;
   items1[1] = closure_9(Button, obj5);
   return closure_9(ActionSheet, obj);

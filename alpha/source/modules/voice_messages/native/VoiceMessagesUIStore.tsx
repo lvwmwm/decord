@@ -1,14 +1,14 @@
-// Module ID: 13956
-// Function ID: 13957
+// Module ID: 13932
+// Function ID: 13933
 // Name: VoiceMessagesUIStore
-// Dependencies: [13957, 560, 1652, 1259, 5773, 5774, 2]
+// Dependencies: [13933, 560, 1652, 1259, 5791, 5792, 2]
 // Exports: addVoiceMessageWave, hideVoiceMessagesTooltip, resetVoiceMessageState, setIsUsingHoldGesture, setIsVoiceMessageButtonMounted, setSavedVoiceMessageUploadData, setShowRecordingOverlay, setVoiceMessageAnimationState, setVoiceMessageRecordingId, setVoiceMessageRecordingState, setVoiceMessageStartTimeMillis, showVoiceMessagesTooltip
 
-// Module 13956 (VoiceMessagesUIStore)
+// Module 13932 (VoiceMessagesUIStore)
 import react_native from "react-native" /* 1259 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5773 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13957 */;
+import spring_spring from "spring/spring" /* 5791 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13933 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c3;
 let obj = module_560.create(() => {
   let items;
   let obj2;
-  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "flexDirection", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "PX_8", showVoiceMessagesTooltip: "TYPING_START_LOCAL", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: "col", isUsingHoldGesture: null };
+  obj = { voiceMessageAnimationState: obj2.makeMutable(items), recordingStatus: null, recordingId: null, currWaveHeight: "flexDirection", showRecordingOverlay: "Array", startTimeMillis: 0, waveform: [], waveformVersion: "PX_8", showVoiceMessagesTooltip: "TYPING_STOP_LOCAL", savedVoiceMessageUploadData: null, isVoiceMessageButtonMounted: "Array", isUsingHoldGesture: "handleSendApplicationCommand" };
   items = [, ];
   ({ SENDING: arr[0], SENDING: arr[1] } = React2);
   obj2 = _mod1652;
@@ -80,9 +80,9 @@ export function addVoiceMessageWave(arg0) {
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
     set = currWaveHeight.set;
-    obj = waveformVersion(5773);
+    obj = waveformVersion(5791);
     const result = arg0 / closure_3;
-    const result1 = set(obj.withSpring(result, waveformVersion(5774).Reanimated3DefaultSpringConfig));
+    const result1 = set(obj.withSpring(result, waveformVersion(5792).Reanimated3DefaultSpringConfig));
   }
   const items = [arg0, waveformVersion];
   waveform.push(items);
@@ -110,13 +110,13 @@ export function resetVoiceMessageState() {
   let state;
   obj = react_native;
   obj.batchUpdates(() => {
-    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "sa", savedVoiceMessageUploadData: "isArray" });
+    state.setState({ waveform: [], waveformVersion: 0, showRecordingOverlay: false, startTimeMillis: "description", savedVoiceMessageUploadData: "isArray" });
   });
   const currWaveHeight = obj.getState().currWaveHeight;
   if (null != currWaveHeight) {
     set = currWaveHeight.set;
     const tmpResult = spring_spring;
-    const result = set(tmpResult.withSpring(0, tmp(5774).Reanimated3DefaultSpringConfig));
+    const result = set(tmpResult.withSpring(0, tmp(5792).Reanimated3DefaultSpringConfig));
   }
 }
 export function setSavedVoiceMessageUploadData(savedVoiceMessageUploadData) {

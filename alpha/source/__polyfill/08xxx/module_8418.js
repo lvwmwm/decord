@@ -1,69 +1,116 @@
 // Module ID: 8418
 // Function ID: 8419
-// Dependencies: [8419, 8420]
+// Dependencies: [8387, 8377, 8370]
 
 // Module 8418
-import _mod8419 from "module_8419" /* 8419 */;
-import _mod8420 from "module_8420" /* 8420 */;
+import _mod8370 from "module_8370" /* 8370 */;
+import PNG_CHUNK_TYPE_SIZE from "PNG_CHUNK_TYPE_SIZE" /* 8377 */;
+import _modDef8387 from "module_8387" /* 8387 */;
 
-let hasOwnProperty;
 
-const self = this;
-let tmp = this && self.__createBinding;
-if (!tmp) {
-  let tmp2 = globalThis;
-  let _Object = Object;
-  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+export default {
+  read(byteLength, arg1) {
+    let combined;
+    let combined1;
+    let combined2;
+    let combined3;
+    let combined4;
+    let items;
+    let num;
+    let str7;
+    const obj = {};
+    for (let num = 0; num < arg1.length; num = num + 1) {
+      let tmp = importDefault;
+      let obj2 = _modDef8387;
+      let tmp3 = require;
+      let longAt = obj2.getLongAt(byteLength, arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_LENGTH_OFFSET);
+      let tmp5 = _mod8370;
+      let getStringFromDataView = tmp5.getStringFromDataView;
+      let sum = arg1[num] + PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_OFFSET;
+      let stringFromDataView = getStringFromDataView(byteLength, sum, PNG_CHUNK_TYPE_SIZE.PNG_CHUNK_TYPE_SIZE);
+      if (stringFromDataView === PNG_CHUNK_TYPE_SIZE.TYPE_PHYS) {
+        let tmp23 = arg1[num];
+        let tmp24 = 4 <= longAt && tmp23 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 4 <= byteLength.byteLength;
+        let tmp25;
+        if (tmp24) {
+          let tmpResult = tmp(8387);
+          let longAt1 = tmpResult.getLongAt(byteLength, tmp23 + tmp3(8377).PNG_CHUNK_DATA_OFFSET);
+          let obj3 = { value: longAt1, description: "" + longAt1 };
+          tmp25 = obj3;
+        }
+        obj["Pixels Per Unit X"] = tmp25;
+        let tmp27 = arg1[num];
+        let tmp28 = 8 <= longAt && tmp27 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 4 + 4 <= byteLength.byteLength;
+        let tmp29;
+        if (tmp28) {
+          let tmpResult9 = tmp(8387);
+          let longAt2 = tmpResult9.getLongAt(byteLength, tmp27 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 4);
+          let obj4 = { value: longAt2, description: "" + longAt2 };
+          tmp29 = obj4;
+        }
+        obj["Pixels Per Unit Y"] = tmp29;
+        let tmp31 = arg1[num];
+        let tmp32 = 9 <= longAt && tmp31 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 8 + 1 <= byteLength.byteLength;
+        let tmp33;
+        if (tmp32) {
+          let tmpResult10 = tmp(8387);
+          let byteAt = tmpResult10.getByteAt(byteLength, tmp31 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 8);
+          let obj5 = { value: byteAt, description: str7 };
+          str7 = "Unknown";
+          if (1 === byteAt) {
+            str7 = "meters";
+          }
+          tmp33 = obj5;
+        }
+        obj["Pixel Units"] = tmp33;
+      } else if (stringFromDataView === tmp3(8377).TYPE_TIME) {
+        let tmp35 = arg1[num];
+        let tmp9 = 7 <= longAt && tmp35 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 7 <= byteLength.byteLength;
+        let tmp10;
+        if (tmp9) {
+          let tmpResult11 = tmp(8387);
+          let shortAt = tmpResult11.getShortAt(byteLength, tmp35 + tmp3(8377).PNG_CHUNK_DATA_OFFSET);
+          let tmpResult12 = tmp(8387);
+          let byteAt1 = tmpResult12.getByteAt(byteLength, tmp35 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 2);
+          let tmpResult13 = tmp(8387);
+          let byteAt2 = tmpResult13.getByteAt(byteLength, tmp35 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 3);
+          let tmpResult14 = tmp(8387);
+          let byteAt3 = tmpResult14.getByteAt(byteLength, tmp35 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 4);
+          let tmpResult15 = tmp(8387);
+          let byteAt4 = tmpResult15.getByteAt(byteLength, tmp35 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 5);
+          let tmpResult16 = tmp(8387);
+          let byteAt5 = tmpResult16.getByteAt(byteLength, tmp35 + tmp3(8377).PNG_CHUNK_DATA_OFFSET + 6);
+          let obj6 = { value: items, description: "" + combined + "-" + combined1 + "-" + combined2 + " " + combined3 + ":" + combined4 + ":" + "" + "0".repeat(2 - ("" + byteAt5).length) + byteAt5 };
+          items = [shortAt, byteAt1, byteAt2, byteAt3, byteAt4, byteAt5];
+          let repeat = "0".repeat;
+          let _HermesInternal = HermesInternal;
+          combined = "" + "0".repeat(4 - ("" + shortAt).length) + shortAt;
+          let repeat2 = "0".repeat;
+          let _HermesInternal2 = HermesInternal;
+          let repeat3 = "0".repeat;
+          combined1 = "" + "0".repeat(2 - ("" + byteAt1).length) + byteAt1;
+          let _HermesInternal3 = HermesInternal;
+          let repeat4 = "0".repeat;
+          combined2 = "" + "0".repeat(2 - ("" + byteAt2).length) + byteAt2;
+          let _HermesInternal4 = HermesInternal;
+          let repeat5 = "0".repeat;
+          combined3 = "" + "0".repeat(2 - ("" + byteAt3).length) + byteAt3;
+          let _HermesInternal5 = HermesInternal;
+          let repeat6 = "0".repeat;
+          combined4 = "" + "0".repeat(2 - ("" + byteAt4).length) + byteAt4;
+          let _HermesInternal6 = HermesInternal;
+          let _HermesInternal7 = HermesInternal;
+          let str = "";
+          let str2 = "-";
+          let str3 = "-";
+          let str4 = " ";
+          let str5 = ":";
+          let str6 = ":";
+          tmp10 = obj6;
+        }
+        obj["Modify Date"] = tmp10;
       }
-      tmp3 = !tmp4;
     }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let closure_0 = tmp;
-let tmp3 = self && self.__exportStar || ((obj, arg1) => {
-  for (const key10007 in obj) {
-    let callResult = "default" === key10007;
-    if (!callResult) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      callResult = hasOwnProperty.call(arg1, key10007);
-    }
-    if (callResult) {
-      continue;
-    } else {
-      let tmp3 = closure_0(arg1, obj, key10007);
-      continue;
-    }
-    continue;
+    return obj;
   }
-});
-tmp3(_mod8419, exports);
-tmp3(_mod8420, exports);
+};

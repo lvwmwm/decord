@@ -1,10 +1,10 @@
-// Module ID: 7897
-// Function ID: 7898
+// Module ID: 7851
+// Function ID: 7852
 // Name: FeedBlockRecord
-// Dependencies: [5825, 2]
+// Dependencies: [5843, 2]
 
-// Module 7897 (FeedBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 5825 */;
+// Module 7851 (FeedBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 5843 */;
 import size from "module_2" /* 2 */;
 
 class FeedBlockRecord {

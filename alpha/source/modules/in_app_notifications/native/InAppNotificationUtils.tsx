@@ -1,17 +1,17 @@
-// Module ID: 11211
-// Function ID: 11212
+// Module ID: 11166
+// Function ID: 11167
 // Name: InAppNotificationUtils
-// Dependencies: [19, 11212, 1072, 12, 1266, 1357, 1089, 5786, 5897, 2]
+// Dependencies: [19, 11167, 1072, 12, 1266, 1357, 1089, 5804, 5916, 2]
 // Exports: extractMetadataFromNotification, generateInAppNotificationId, getMessagePreviewTextVariant, getNotificationDuration, isReactionMilestoneNotification, trackDismissed, useHasPreviewableMedia
 
-// Module 11211 (InAppNotificationUtils)
+// Module 11166 (InAppNotificationUtils)
 import _mod12 from "module_12" /* 12 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import v1 from "v1" /* 1266 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5786 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5897 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11212 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5804 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5916 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11167 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -77,7 +77,9 @@ export function getNotificationDuration(ALERT) {
               } else {
                 if (metroImportDefault.MESSAGE_REMINDER !== ALERT) {
                   if (metroImportDefault.RESTRICTED_HOURS_WARNING !== ALERT) {
-                    if (metroImportDefault.RESTRICTED_SCHEDULE_UPDATED === ALERT) {
+                    if (metroImportDefault.STAGE_SPEAK_INVITE === ALERT) {
+                      return 15 * DurationsDefault.Millis.SECOND;
+                    } else if (metroImportDefault.RESTRICTED_SCHEDULE_UPDATED === ALERT) {
                       return 7 * DurationsDefault.Millis.SECOND;
                     }
                   }
@@ -95,7 +97,7 @@ export function getNotificationDuration(ALERT) {
 export function useHasPreviewableMedia(message) {
   const items = [message];
   return react.useMemo(() => {
-    const f99783 = (type) => type.type === constants.GIFV;
+    const f99899 = (type) => type.type === constants.GIFV;
     let hasFlagResult = message.hasFlag(constants.IS_VOICE_MESSAGE);
     if (!hasFlagResult) {
       hasFlagResult = tmp.attachments.length > 0;
@@ -104,7 +106,7 @@ export function useHasPreviewableMedia(message) {
       let everyResult = tmp.embeds.length > 0;
       if (everyResult) {
         let embeds = tmp.embeds;
-        everyResult = embeds.every(f99783);
+        everyResult = embeds.every(f99899);
       }
       hasFlagResult = everyResult;
     }
@@ -122,7 +124,7 @@ export function useHasPreviewableMedia(message) {
             let everyResult = message.embeds.length > 0;
             if (everyResult) {
               const embeds = message.embeds;
-              everyResult = embeds.every(f99783);
+              everyResult = embeds.every(f99899);
             }
             hasFlagResult = everyResult;
           }
@@ -141,72 +143,75 @@ export function extractMetadataFromNotification(notification) {
   let id6;
   const type = notification.type;
   if (metroImportDefault.MESSAGE !== type) {
-    let tmp2;
     let channelId;
     let tmp4;
+    let tmp2;
     if (metroImportDefault.REACTION !== type) {
-      if (metroImportDefault.ALERT === type) {
-        const guild = notification.guild;
-        let id;
-        if (guild != null) {
-          id = guild.id;
-        }
-        if (id == null) {
-          const channel3 = notification.channel;
-          let guild_id;
-          if (channel3 != null) {
-            guild_id = channel3.guild_id;
+      if (metroImportDefault.ALERT !== type) {
+        if (metroImportDefault.STAGE_SPEAK_INVITE !== type) {
+          if (metroImportDefault.FORUM_THREAD_CREATED === type) {
+            const thread = notification.thread;
+            let guild_id;
+            if (thread != null) {
+              guild_id = thread.guild_id;
+            }
+            const thread2 = notification.thread;
+            let id;
+            if (thread2 != null) {
+              id = thread2.id;
+            }
+            channelId = id;
+            tmp4 = guild_id;
+          } else if (metroImportDefault.MESSAGE_FAILED_TO_SEND === type) {
+            channelId = notification.channelId;
+          } else if (metroImportDefault.MESSAGE_REMINDER === type) {
+            const channel9 = notification.channel;
+            let guild_id1;
+            if (channel9 != null) {
+              guild_id1 = channel9.guild_id;
+            }
+            const channel = notification.channel;
+            let id1;
+            if (channel != null) {
+              id1 = channel.id;
+            }
+            const channel2 = notification.channel;
+            let type1;
+            if (channel2 != null) {
+              type1 = channel2.type;
+            }
+            tmp2 = type1;
+            channelId = id1;
+            tmp4 = guild_id1;
           }
-          id = guild_id;
         }
-        const channel4 = notification.channel;
-        let id1;
-        if (channel4 != null) {
-          id1 = channel4.id;
-        }
-        const channel5 = notification.channel;
-        let type1;
-        if (channel5 != null) {
-          type1 = channel5.type;
-        }
-        tmp2 = type1;
-        channelId = id1;
-        tmp4 = id;
-      } else if (metroImportDefault.FORUM_THREAD_CREATED === type) {
-        const thread = notification.thread;
-        let guild_id1;
-        if (thread != null) {
-          guild_id1 = thread.guild_id;
-        }
-        const thread2 = notification.thread;
-        let id2;
-        if (thread2 != null) {
-          id2 = thread2.id;
-        }
-        channelId = id2;
-        tmp4 = guild_id1;
-      } else if (metroImportDefault.MESSAGE_FAILED_TO_SEND === type) {
-        channelId = notification.channelId;
-      } else if (metroImportDefault.MESSAGE_REMINDER === type) {
-        const channel9 = notification.channel;
-        let guild_id2;
-        if (channel9 != null) {
-          guild_id2 = channel9.guild_id;
-        }
-        const channel = notification.channel;
-        let id3;
-        if (channel != null) {
-          id3 = channel.id;
-        }
-        const channel2 = notification.channel;
-        let type2;
-        if (channel2 != null) {
-          type2 = channel2.type;
-        }
-        tmp2 = type2;
-        channelId = id3;
-        tmp4 = guild_id2;
       }
+      const guild = notification.guild;
+      let id2;
+      if (guild != null) {
+        id2 = guild.id;
+      }
+      if (id2 == null) {
+        const channel3 = notification.channel;
+        let guild_id2;
+        if (channel3 != null) {
+          guild_id2 = channel3.guild_id;
+        }
+        id2 = guild_id2;
+      }
+      const channel4 = notification.channel;
+      let id3;
+      if (channel4 != null) {
+        id3 = channel4.id;
+      }
+      const channel5 = notification.channel;
+      let type2;
+      if (channel5 != null) {
+        type2 = channel5.type;
+      }
+      tmp2 = type2;
+      channelId = id3;
+      tmp4 = id2;
     }
     return { guildId: tmp4, channelId, messageId: id6, channelType: tmp2 };
   }

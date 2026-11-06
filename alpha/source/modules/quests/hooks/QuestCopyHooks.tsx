@@ -1,35 +1,34 @@
-// Module ID: 14921
-// Function ID: 14922
+// Module ID: 14898
+// Function ID: 14899
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2191, 1385, 6919, 1072, 1387, 1113, 9856, 8013, 8011, 2190, 14922, 2112, 504, 9837, 14923, 9469, 9493, 6922, 9861, 2024, 11997, 14910, 9875, 8016, 8015, 2]
-// Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePremiumExtendableCopy, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription
+// Dependencies: [5, 32, 19, 2186, 1385, 6861, 1072, 1387, 1113, 9806, 7967, 7965, 2185, 14899, 2107, 504, 9788, 14900, 9415, 9439, 6864, 9811, 2024, 11963, 14887, 9825, 7970, 7969, 2]
+// Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription
 
-// Module 14921 (QuestCopyHooks)
+// Module 14898 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import NumberUtils from "NumberUtils" /* 2024 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import QuestTypes from "QuestTypes" /* 6922 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8013 */;
-import QuestType from "QuestType" /* 8015 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9469 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9837 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9856 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9861 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11997 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14923 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import QuestTypes from "QuestTypes" /* 6864 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7967 */;
+import QuestType from "QuestType" /* 7969 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9415 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9788 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9806 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9811 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 11963 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 14900 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import UserStore from "UserStore" /* 1385 */;
-import QuestConstants from "QuestConstants" /* 6919 */;
+import QuestConstants from "QuestConstants" /* 6861 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, c1, c2;
+let c1, c2;
 
 let c10;
 let c9;
@@ -37,9 +36,9 @@ let metroImportAll;
 let tmp;
 let tmp2;
 const intl13 = tmp(1113);
-const utils_QuestUtils = tmp(8011);
-const GameProfileAnalyticUtils = tmp2(9493);
-const SponsoredQuestUtils = tmp(14922);
+const utils_QuestUtils = tmp(7965);
+const GameProfileAnalyticUtils = tmp2(9439);
+const SponsoredQuestUtils = tmp(14899);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -816,7 +815,7 @@ export function usePrimaryCtaCopy(arg0) {
     }
     PLAY = constants.PLAY;
   }, items);
-  const tmp4 = quest(9837);
+  const tmp4 = quest(9788);
   if (constants3.PLAY === memo) {
     const features2 = quest.config.features;
     let hasItem = features2.includes(constants2.MOBILE_ACTIVITY_QUEST);
@@ -842,7 +841,7 @@ export function usePrimaryCtaCopy(arg0) {
         const intl6 = tmp2(1113).intl;
         return intl6.string(quest(1113).t["+qoymD"]);
       } else {
-        let tmp2Result = tmp2(8011);
+        let tmp2Result = tmp2(7965);
         if (tmp2Result.canLaunchActivity(quest)) {
           const intl5 = tmp2(1113).intl;
           const string2 = intl5.string;
@@ -857,10 +856,10 @@ export function usePrimaryCtaCopy(arg0) {
     const intl3 = tmp2(1113).intl;
     return intl3.string(quest(1113).t.l7E81v);
   } else if (constants3.WATCH_VIDEO === memo) {
-    const tmp2Result3 = quest(14910);
+    const tmp2Result3 = quest(14887);
     return tmp2Result3.getVideoQuestWatchCtaText(tmp5);
   } else if (constants3.IN_GAME === memo) {
-    let tmp2Result4 = tmp2(8011);
+    let tmp2Result4 = tmp2(7965);
     if (tmp2Result4.canLaunchActivity(quest)) {
       let stringResult;
       const features = quest.config.features;
@@ -892,30 +891,6 @@ export function usePrimaryCtaCopy(arg0) {
     stringResult = intl.string(tmp2(1113).t.l7E81v);
   }
 }
-export function usePremiumExtendableCopy(arg0) {
-  let closure_0;
-  _require = arg0;
-  const items = [arg0];
-  [][0] = arg0;
-  const memo = react.useMemo(() => {
-    const obj = QuestRewardUtils;
-    return obj.isCollectibleQuestRewardPremiumExtendable(closure_0);
-  }, items);
-  let tmp3 = null;
-  if (memo) {
-    let stringResult;
-    const intl = require("intl").intl;
-    const string = intl.string;
-    const t = require("intl").t;
-    if (tmp2) {
-      stringResult = string(t["hh7Rb/"]);
-    } else {
-      stringResult = string(t.GYGb3A);
-    }
-    tmp3 = stringResult;
-  }
-  return tmp3;
-}
 export function getRewardCodeRedemptionInstructions(arg0) {
   let quest;
   let rewardCode;
@@ -928,7 +903,7 @@ export function getRewardCodeRedemptionInstructions(arg0) {
     platform = rewardCode.platform;
   }
   if (platform == null) {
-    platform = tmp(6922).QuestRewardCodePlatforms.CROSS_PLATFORM;
+    platform = tmp(6864).QuestRewardCodePlatforms.CROSS_PLATFORM;
   }
   let rewardCodeQuestReward = null;
   if (result) {
@@ -1079,6 +1054,6 @@ export function useModalCtaConfig(quest) {
     }
     return subtitle;
   }, items);
-  obj2 = quest(9861);
+  obj2 = quest(9811);
   return obj;
 }

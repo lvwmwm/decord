@@ -1,46 +1,65 @@
 // Module ID: 13306
 // Function ID: 13307
-// Dependencies: []
+// Dependencies: [13279, 13283, 13255, 13262]
+// Exports: notifyEventProcessors
 
 // Module 13306
-let hasOwnProperty;
+const require = globalThis.__r;
+let _require, closure_3, dependencyMap;
 
-function merge(arg0, obj) {
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = 2;
-  }
-  const tmp = obj;
-  if (tmp) {
-    if (typeof obj === "object") {
-      if (num > 0) {
-        const tmp9 = arg0;
-        if (tmp9) {
-          if (obj) {
-            const _Object = Object;
-            if (0 === Object.keys(obj).length) {
-              return arg0;
-            }
-          }
+
+export function notifyEventProcessors(arg0, arg1, arg2) {
+  let closure_0;
+  let closure_1;
+  let num;
+  const f105076 = function(fn, arg1) {
+    closure_0 = fn;
+    let tmp3 = closure_0[closure_3];
+    let tmp4 = closure_1;
+    if (null !== closure_1) {
+      if (typeof tmp3 === "function") {
+        let obj = {};
+        let tmp13 = obj;
+        let tmp14 = tmp4;
+        let merged = Object.assign(tmp4);
+        let tmp16 = closure_2;
+        let tmp3Result = tmp3(obj, closure_2);
+        let tmp17 = closure_0;
+        let tmp18 = closure_1;
+        let tmp5 = closure_0(closure_1[1]).DEBUG_BUILD && tmp3.id && null === tmp3Result;
+        if (tmp5) {
+          let logger = tmp17(tmp18[2]).logger;
+          let tmp6 = globalThis;
+          let _HermesInternal = HermesInternal;
+          let str = "\" dropped event";
+          let str2 = "Event processor \"";
+          let logResult = logger.log("Event processor \"" + tmp3.id + "\" dropped event");
         }
-        obj = {};
-        const merged = Object.assign(arg0);
-        for (const key10016 in obj) {
-          let _Object2 = Object;
-          hasOwnProperty = Object.prototype.hasOwnProperty;
-          if (!hasOwnProperty.call(obj, key10016)) {
-            continue;
-          } else {
-            obj[key10016] = merge(obj[key10016], obj[key10016], num - 1);
-            continue;
-          }
-          continue;
+        let tmp8 = arg1;
+        let tmp17Result = tmp17(tmp18[3]);
+        if (tmp17Result.isThenable(tmp3Result)) {
+          let nextPromise = tmp3Result.then(f129755);
+          let nextPromise1 = nextPromise.then(null, arg1);
+        } else {
+          let num = 1;
+          closure_0 = tmp;
+          closure_1 = tmp3Result;
+          closure_2 = tmp16;
+          closure_3 = tmp2 + 1;
+          let self = this;
+          let self2 = this;
+          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f105076);
+          let tmp9 = syncPromise;
+          let nextPromise2 = syncPromise.then(fn);
+          let nextPromise3 = nextPromise2.then(null, arg1);
         }
-        return obj;
       }
     }
-  }
-  return obj;
+    let tmp12 = fn(tmp4);
+  };
+  _require = arg0;
+  dependencyMap = arg1;
+  let closure_2 = arg2;
+  const syncPromise = new require("module_13279").SyncPromise(f105076);
+  return syncPromise;
 }
-
-export { merge };

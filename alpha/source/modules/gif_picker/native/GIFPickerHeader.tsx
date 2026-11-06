@@ -1,21 +1,21 @@
-// Module ID: 10437
-// Function ID: 10438
+// Module ID: 10389
+// Function ID: 10390
 // Name: GIFPickerHeader
-// Dependencies: [32, 19, 17, 1072, 21, 5143, 575, 10431, 7247, 1652, 5380, 5383, 8173, 7360, 1113, 7358, 10429, 7124, 10438, 5763, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5170, 575, 10383, 7194, 1652, 5400, 5403, 8119, 7307, 1113, 7305, 10381, 7068, 10390, 5781, 2]
 
-// Module 10437 (GIFPickerHeader)
+// Module 10389 (GIFPickerHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import InputTypes from "InputTypes" /* 7247 */;
-import GifProvider from "GifProvider" /* 10429 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10431 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import InputTypes from "InputTypes" /* 7194 */;
+import GifProvider from "GifProvider" /* 10381 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 10383 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const timingPresets = tmp2(5383);
+const timingPresets = tmp2(5403);
 function FavoritesSearch(onQueryChange) {
   let IconButton;
   let accessibilityElementsHidden;
@@ -193,21 +193,21 @@ const memoResult = react.memo(function GIFPickerHeader(arg0) {
   const obj = { style: tmp.container, children: tmp13Result };
   if (categoryType === GIFPickerResultTypes.SEARCH) {
     const obj2 = { size: "md", onChange: onQueryChange, placeholder: tmp5, onClear: onQueryClear, ref: searchInputRef, round: true };
-    tmp13Result = tmp6(tmp2(7358).SearchBar, obj2);
+    tmp13Result = tmp6(tmp2(7305).SearchBar, obj2);
   } else {
     let stringResult;
     const obj3 = { style: tmp.headerContainer, children: items1 };
     const obj4 = { style: tmp.header, accessibilityRole: "button", onPress: onQueryClear, accessibilityLabel: formatToPlainString(UTypEu, obj5), children: items };
-    const PressableOpacity = tmp2(7124).PressableOpacity;
+    const PressableOpacity = tmp2(7068).PressableOpacity;
     const intl4 = tmp2(1113).intl;
     formatToPlainString = intl4.formatToPlainString;
     obj5 = { destination: intl5.string(intl6.t.ffgJrs) };
     UTypEu = tmp2(1113).t.UTypEu;
     intl5 = tmp2(1113).intl;
     const obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const ChevronLargeLeftIcon = tmp2(10438).ChevronLargeLeftIcon;
+    const ChevronLargeLeftIcon = tmp2(10390).ChevronLargeLeftIcon;
     items = [metroImportDefault(ChevronLargeLeftIcon, obj6), ];
-    const Text = tmp2(5763).Text;
+    const Text = tmp2(5781).Text;
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {
       const intl3 = tmp2(1113).intl;
       stringResult = intl3.string(tmp2(1113).t.TsWCdW);

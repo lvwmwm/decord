@@ -1,28 +1,28 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 13876
+// Function ID: 13877
 // Name: CheckpointTopServerStatsScreen
-// Dependencies: [17, 13668, 6204, 21, 5143, 575, 504, 6574, 1113, 3219, 13876, 13899, 7101, 5763, 13898, 9914, 13878, 13891, 13892, 2]
+// Dependencies: [17, 13643, 6224, 21, 5170, 575, 504, 6594, 1113, 3248, 13851, 13874, 7045, 5781, 13873, 9864, 13853, 13866, 13867, 2]
 // Exports: default
 
-// Module 13901 (CheckpointTopServerStatsScreen)
+// Module 13876 (CheckpointTopServerStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3219 from "module_3219" /* 3219 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6574 */;
-import GuildIcon from "GuildIcon" /* 7101 */;
-import ServerIcon from "ServerIcon" /* 9914 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 13876 */;
-import CheckpointTextDefault from "CheckpointText" /* 13878 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13891 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13892 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 13898 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 13899 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
+import _modDef3248 from "module_3248" /* 3248 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6594 */;
+import GuildIcon from "GuildIcon" /* 7045 */;
+import ServerIcon from "ServerIcon" /* 9864 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 13851 */;
+import CheckpointTextDefault from "CheckpointText" /* 13853 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 13866 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 13867 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 13873 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 13874 */;
+import CheckpointStore from "CheckpointStore" /* 13643 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -96,12 +96,12 @@ export default function CheckpointTopServerStatsScreen() {
   }
   const checkpointTopPercent = getCheckpointTopPercent(prop);
   const intl = tmp2(1113).intl;
-  const stringResult = intl.string(_modDef3219["M+a+t1"]);
+  const stringResult = intl.string(_modDef3248["M+a+t1"]);
   let formatToPlainStringResult;
   if (null != checkpointTopPercent) {
     const intl2 = tmp2(1113).intl;
     const obj2 = { numDays: roundResult, percent: checkpointTopPercent };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp9(3219).BRQODX, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp9(3248).BRQODX, obj2);
   }
   const obj4 = { style: tmp.spotlightContainer, children: tmp13Result };
   tmp13Result = null != stateFromStores;
@@ -156,11 +156,11 @@ export default function CheckpointTopServerStatsScreen() {
           return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
         }
     };
-    formatResult = intl4.format(tmp9(3219).sIDTV1, obj17);
+    formatResult = intl4.format(tmp9(3248).sIDTV1, obj17);
   } else {
     const intl3 = tmp2(1113).intl;
     const obj18 = { numDays: roundResult };
-    formatResult = intl3.format(tmp9(3219).nLCUQ4, obj18);
+    formatResult = intl3.format(tmp9(3248).nLCUQ4, obj18);
   }
   const obj19 = { children: metroImportDefault(View, obj3) };
   items6[2] = metroRequire(tmp9Result8, obj16);

@@ -1,12 +1,12 @@
-// Module ID: 15175
-// Function ID: 15176
+// Module ID: 15184
+// Function ID: 15185
 // Name: UserProfileGameWidgetTagMetadata
-// Dependencies: [12575, 1113, 2]
+// Dependencies: [12540, 1113, 2]
 // Exports: buildWidgetGameTagMetadata, clearWidgetGameTagSection, toggleWidgetGameTag
 
-// Module 15175 (UserProfileGameWidgetTagMetadata)
+// Module 15184 (UserProfileGameWidgetTagMetadata)
 import intl2 from "intl" /* 1113 */;
-import WidgetGameTag from "WidgetGameTag" /* 12575 */;
+import WidgetGameTag from "WidgetGameTag" /* 12540 */;
 import size from "module_2" /* 2 */;
 
 let items;

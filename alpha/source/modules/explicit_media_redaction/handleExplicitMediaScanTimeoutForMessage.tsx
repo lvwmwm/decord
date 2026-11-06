@@ -1,13 +1,13 @@
-// Module ID: 7916
-// Function ID: 7917
+// Module ID: 7870
+// Function ID: 7871
 // Name: handleExplicitMediaScanTimeoutForMessage
-// Dependencies: [7608, 12, 7615, 2]
+// Dependencies: [7553, 12, 7560, 2]
 // Exports: handleExplicitMediaScanTimeoutForMessage
 
-// Module 7916 (handleExplicitMediaScanTimeoutForMessage)
+// Module 7870 (handleExplicitMediaScanTimeoutForMessage)
 import _mod12 from "module_12" /* 12 */;
-import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7608 */;
-import findComponentMediaDefault from "findComponentMedia" /* 7615 */;
+import ExplicitMediaRedactionConstants from "ExplicitMediaRedactionConstants" /* 7553 */;
+import findComponentMediaDefault from "findComponentMedia" /* 7560 */;
 import size from "module_2" /* 2 */;
 
 function failOverComponentMedia(components) {
@@ -33,12 +33,12 @@ const FAILOVER_SCAN_VERSION = ExplicitMediaRedactionConstants.FAILOVER_SCAN_VERS
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/handleExplicitMediaScanTimeoutForMessage.tsx");
 
 export function handleExplicitMediaScanTimeoutForMessage(message) {
-  const f92604 = (item) => {
+  const f92714 = (item) => {
     const obj = { content_scan_version: -1 };
     const merged = Object.assign(item);
     return obj;
   };
-  const f92605 = (components) => {
+  const f92715 = (components) => {
     if (null == components.components) {
       const obj2 = { contentScanVersion: -1 };
       const merged = Object.assign(components);
@@ -54,8 +54,8 @@ export function handleExplicitMediaScanTimeoutForMessage(message) {
   };
   let attachments = message.attachments;
   let embeds = message.embeds;
-  const attachments1 = attachments.map(f92604);
-  const embeds1 = embeds.map(f92605);
+  const attachments1 = attachments.map(f92714);
+  const embeds1 = embeds.map(f92715);
   let obj = _mod12;
   const components = obj.cloneDeep(message.components);
   const tmp4 = failOverComponentMedia(components);
@@ -68,8 +68,8 @@ export function handleExplicitMediaScanTimeoutForMessage(message) {
         message = message.message;
         const attachments = message.attachments;
         const embeds = message.embeds;
-        const mapped = attachments.map(f92604);
-        const mapped1 = embeds.map(f92605);
+        const mapped = attachments.map(f92714);
+        const mapped1 = embeds.map(f92715);
         let obj = _mod12;
         let cloneDeepResult = obj.cloneDeep(message.components);
         failOverComponentMedia(cloneDeepResult);

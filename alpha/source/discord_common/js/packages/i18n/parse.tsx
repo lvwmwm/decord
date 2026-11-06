@@ -1,19 +1,19 @@
-// Module ID: 2070
-// Function ID: 2071
+// Module ID: 2065
+// Function ID: 2066
 // Name: parse
-// Dependencies: [32, 2071, 2028, 2072, 2073, 2074, 2]
+// Dependencies: [32, 2066, 2028, 2067, 2068, 2069, 2]
 // Exports: getMessage, setUpdateRules
 
-// Module 2070 (parse)
+// Module 2065 (parse)
 import _modDef2028 from "module_2028" /* 2028 */;
-import _modDef2072 from "module_2072" /* 2072 */;
-import markdownRules from "markdownRules" /* 2073 */;
-import updateRules from "updateRules" /* 2074 */;
+import _modDef2067 from "module_2067" /* 2067 */;
+import markdownRules from "markdownRules" /* 2068 */;
+import updateRules from "updateRules" /* 2069 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Constants from "Constants" /* 2071 */;
+import Constants from "Constants" /* 2066 */;
 import size from "module_2" /* 2 */;
 
-let f122891, f122892;
+let f123120, f123121;
 
 let c9;
 let metroImportAll;
@@ -42,7 +42,7 @@ class FormattedMessage {
       [first, tmp4] = self.getContext(arg0);
       const intlMessage2 = self.intlMessage;
       const formatResult = intlMessage2.format(first);
-      if (typeof f122891 === "function") {
+      if (typeof f123120 === "function") {
         const hasItem = formatResult.includes("\n\n");
         let text = formatResult;
         const tmp7 = !hasItem;
@@ -65,7 +65,7 @@ class FormattedMessage {
     let first;
     let tmp3;
     [first, tmp3] = this.getContext(arg0);
-    if (typeof f122892 === "function") {
+    if (typeof f123121 === "function") {
       const obj = { inline: false, context: first, unsafeContext: tmp3 };
       return closure_132_0(tmp4 + "\n\n", obj);
     } else {
@@ -110,13 +110,13 @@ const result = size.fileFinishedImporting("../discord_common/js/packages/i18n/pa
 export { FormattedMessage };
 export function setUpdateRules(fn) {
   const rules = markdownRules.rules;
-  const obj = _modDef2072;
+  const obj = _modDef2067;
   obj.parserFor(fn(rules));
-  const reactFor = _modDef2072.reactFor;
-  _modDef2072;
-  const obj2 = _modDef2072;
+  const reactFor = _modDef2067.reactFor;
+  _modDef2067;
+  const obj2 = _modDef2067;
   let closure_1 = reactFor(obj2.ruleOutput(rules, "react"));
-  f122891 = (arr, context, unsafeContext) => {
+  f123120 = (arr, context, unsafeContext) => {
     const hasItem = arr.includes("\n\n");
     let text = arr;
     const tmp2 = !hasItem;
@@ -129,9 +129,9 @@ export function setUpdateRules(fn) {
     return closure_1(closure_0(text, obj));
   };
   const rules2 = markdownRules.rules;
-  const obj3 = _modDef2072;
+  const obj3 = _modDef2067;
   let closure_0 = obj3.parserFor(rules2);
-  f122892 = (arg0, context, unsafeContext) => {
+  f123121 = (arg0, context, unsafeContext) => {
     const obj = { inline: false, context, unsafeContext };
     return closure_0(arg0 + "\n\n", obj);
   };
@@ -141,16 +141,16 @@ export function getMessage(str, arg1) {
     return "";
   } else {
     let tmp5;
-    if (null == f122891) {
+    if (null == f123120) {
       const _default = updateRules.default;
       const rules = markdownRules.rules;
-      let obj = _modDef2072;
+      let obj = _modDef2067;
       obj.parserFor(_default(rules));
-      const reactFor = _modDef2072.reactFor;
-      _modDef2072;
-      const obj2 = _modDef2072;
+      const reactFor = _modDef2067.reactFor;
+      _modDef2067;
+      const obj2 = _modDef2067;
       let closure_1 = reactFor(obj2.ruleOutput(rules, "react"));
-      f122891 = (arr, context, unsafeContext) => {
+      f123120 = (arr, context, unsafeContext) => {
         const hasItem = arr.includes("\n\n");
         let text = arr;
         const tmp2 = !hasItem;
@@ -163,9 +163,9 @@ export function getMessage(str, arg1) {
         return closure_1(closure_0(text, obj));
       };
       const rules2 = markdownRules.rules;
-      const obj3 = _modDef2072;
+      const obj3 = _modDef2067;
       let closure_0 = obj3.parserFor(rules2);
-      f122892 = (arg0, context, unsafeContext) => {
+      f123121 = (arg0, context, unsafeContext) => {
         const obj = { inline: false, context, unsafeContext };
         return closure_0(arg0 + "\n\n", obj);
       };

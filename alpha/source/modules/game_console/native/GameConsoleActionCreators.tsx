@@ -1,11 +1,11 @@
-// Module ID: 12187
-// Function ID: 12188
+// Module ID: 12156
+// Function ID: 12157
 // Name: game_console/GameConsoleActionCreators
-// Dependencies: [5, 12188, 6096, 1113, 2]
+// Dependencies: [5, 12157, 6116, 1113, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 12187 (game_console/GameConsoleActionCreators)
-import transferToPlayStation from "transferToPlayStation" /* 12188 */;
+// Module 12156 (game_console/GameConsoleActionCreators)
+import transferToPlayStation from "transferToPlayStation" /* 12157 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

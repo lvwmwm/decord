@@ -1,20 +1,20 @@
-// Module ID: 19519
-// Function ID: 19520
+// Module ID: 19511
+// Function ID: 19512
 // Name: VoicePanelDockStatusDisplay
-// Dependencies: [32, 19, 17, 19518, 11437, 21, 5763, 5143, 1652, 1113, 4125, 5380, 5773, 19520, 5209, 1705, 11418, 2]
+// Dependencies: [32, 19, 17, 19510, 11399, 21, 5781, 5170, 1652, 1113, 3184, 5400, 5791, 19512, 5229, 1705, 11380, 2]
 
-// Module 19519 (VoicePanelDockStatusDisplay)
+// Module 19511 (VoicePanelDockStatusDisplay)
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import spring_spring from "spring/spring" /* 5773 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import spring_spring from "spring/spring" /* 5791 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19518 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11437 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19510 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11399 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,13 +59,13 @@ function StatusText(status) {
     if ("speaker" !== kind) {
       if ("joined" === kind) {
         const intl3 = require("intl").intl;
-        stringResult = intl3.string(sharedValue(4125).f9Cdb5);
+        stringResult = intl3.string(sharedValue(3184).f9Cdb5);
       } else if ("left" === kind) {
         const intl2 = require("intl").intl;
-        stringResult = intl2.string(sharedValue(4125).aZoM2c);
+        stringResult = intl2.string(sharedValue(3184).aZoM2c);
       } else if ("streaming" === kind) {
         const intl = require("intl").intl;
-        stringResult = intl.string(sharedValue(4125).syN59i);
+        stringResult = intl.string(sharedValue(3184).syN59i);
       }
     }
   }
@@ -88,13 +88,13 @@ function StatusText(status) {
     if ("speaker" !== kind2) {
       if ("joined" === kind2) {
         const intl6 = require("intl").intl;
-        stringResult1 = intl6.string(sharedValue(4125).f9Cdb5);
+        stringResult1 = intl6.string(sharedValue(3184).f9Cdb5);
       } else if ("left" === kind2) {
         const intl5 = require("intl").intl;
-        stringResult1 = intl5.string(sharedValue(4125).aZoM2c);
+        stringResult1 = intl5.string(sharedValue(3184).aZoM2c);
       } else if ("streaming" === kind2) {
         const intl4 = require("intl").intl;
-        stringResult1 = intl4.string(sharedValue(4125).syN59i);
+        stringResult1 = intl4.string(sharedValue(3184).syN59i);
       }
     }
   }
@@ -170,10 +170,10 @@ function StatusText(status) {
   const tmp44 = sharedValue;
   if (null != status.userId) {
     const obj3 = { userId: status.userId, dimmed: "left" === status.kind };
-    tmp46 = closure_8(tmp27(19520).DockUserTitle, obj3);
+    tmp46 = closure_8(tmp27(19512).DockUserTitle, obj3);
     tmp47 = closure_8;
   } else {
-    tmp46 = closure_8(tmp27(19520).DockChannelTitle, {});
+    tmp46 = closure_8(tmp27(19512).DockChannelTitle, {});
     tmp47 = closure_8;
   }
   items5 = [tmp46, ];
@@ -183,7 +183,7 @@ function StatusText(status) {
     items6 = [tmp.subtext, animatedStyle1];
     const View2 = tmp44(1652).View;
     let str4 = "text-voice-connected";
-    Text = tmp27(5763).Text;
+    Text = tmp27(5781).Text;
     if ("left" === kind2) {
       str4 = "text-muted";
     }
@@ -577,7 +577,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let onExited;
   let tmp11;
   let userId;
-  const f118108 = () => {
+  const f118287 = () => {
     let items;
     if ("channel" === obj2.kind) {
       items = [];
@@ -612,8 +612,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp7 = _slicedToArray(obj.useState(() => ({ status: obj2, enter: null })), 2);
   first = tmp7[0];
-  [arr, tmp11] = obj.useState(f118108);
-  _slicedToArray(obj.useState(f118108), 2);
+  [arr, tmp11] = obj.useState(f118287);
+  _slicedToArray(obj.useState(f118287), 2);
   const tmp12 = _slicedToArray(obj.useState(() => {
     map = new Map();
     return map;

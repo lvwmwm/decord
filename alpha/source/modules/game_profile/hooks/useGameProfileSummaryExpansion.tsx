@@ -1,11 +1,11 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9502
+// Function ID: 9503
 // Name: useGameProfileSummaryExpansion
-// Dependencies: [32, 19, 9493, 2]
+// Dependencies: [32, 19, 9439, 2]
 // Exports: useGameProfileSummaryExpansion
 
-// Module 9556 (useGameProfileSummaryExpansion)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9493 */;
+// Module 9502 (useGameProfileSummaryExpansion)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9439 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

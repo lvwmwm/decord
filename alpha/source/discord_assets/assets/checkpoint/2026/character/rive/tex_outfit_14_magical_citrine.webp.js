@@ -1,8 +1,8 @@
-// Module ID: 13831
-// Function ID: 13832
+// Module ID: 13806
+// Function ID: 13807
 // Dependencies: [2]
 
-// Module 13831
+// Module 13806
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_14_magical_citrine.webp.js");

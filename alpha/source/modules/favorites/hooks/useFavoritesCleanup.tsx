@@ -1,14 +1,14 @@
-// Module ID: 18484
-// Function ID: 18485
+// Module ID: 18474
+// Function ID: 18475
 // Name: useFavoritesCleanup
-// Dependencies: [5, 32, 19, 4995, 504, 11015, 2]
+// Dependencies: [5, 32, 19, 5022, 504, 10967, 2]
 // Exports: default
 
-// Module 18484 (useFavoritesCleanup)
+// Module 18474 (useFavoritesCleanup)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 4995 */;
+import FavoriteStore from "FavoriteStore" /* 5022 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

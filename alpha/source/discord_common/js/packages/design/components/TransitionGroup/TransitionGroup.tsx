@@ -1,10 +1,10 @@
-// Module ID: 5214
-// Function ID: 5215
+// Module ID: 5234
+// Function ID: 5235
 // Name: TransitionGroup/TransitionGroup
 // Dependencies: [32, 19, 21, 2]
 // Exports: TransitionItem
 
-// Module 5214 (TransitionGroup/TransitionGroup)
+// Module 5234 (TransitionGroup/TransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

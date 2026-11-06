@@ -1,10 +1,10 @@
-// Module ID: 13440
-// Function ID: 13441
+// Module ID: 13415
+// Function ID: 13416
 // Name: withGameOrganizationJoinFlowPending
 // Dependencies: [5, 572, 2]
 // Exports: default
 
-// Module 13440 (withGameOrganizationJoinFlowPending)
+// Module 13415 (withGameOrganizationJoinFlowPending)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

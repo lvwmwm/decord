@@ -1,8 +1,8 @@
-// Module ID: 6380
-// Function ID: 6381
+// Module ID: 6400
+// Function ID: 6401
 // Dependencies: [2]
 
-// Module 6380
+// Module 6400
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/cowpoke_onyx.png.js");

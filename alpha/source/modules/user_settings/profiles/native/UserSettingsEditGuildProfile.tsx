@@ -1,51 +1,55 @@
-// Module ID: 16835
-// Function ID: 16836
+// Module ID: 16820
+// Function ID: 16821
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8877, 1385, 21, 5143, 575, 7465, 7490, 504, 16836, 11717, 8904, 16838, 7119, 7101, 11604, 5384, 16840, 2123, 16841, 2]
+// Dependencies: [19, 17, 8823, 1385, 21, 5170, 575, 7410, 7435, 504, 16821, 11683, 8850, 16823, 7063, 7045, 11566, 5404, 16825, 2118, 16826, 2]
 // Exports: default
 
-// Module 16835 (UserSettingsEditGuildProfile)
+// Module 16820 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 575 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8904 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11604 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11717 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8850 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11566 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11683 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8877 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8823 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
 
 let StyleSheet;
+let c9;
 let closure_4;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let react = react_mod;
 ({ View: closure_4, StyleSheet } = react_native);
-({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
+({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { guildSelector: obj2 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.none, borderTopWidth: StyleSheet.hairlineWidth, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" };
-let closure_9 = createStyles.createStyles(obj);
+let closure_10 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/profiles/native/UserSettingsEditGuildProfile.tsx");
 
-export default function UserSettingsEditGuildProfile(showGuildSelector) {
+export default function UserSettingsEditGuildProfile(arg0) {
   let TableRow;
   let c2;
   let c3;
   let currentUser;
+  let header;
   let items3;
+  let items4;
   let obj4;
   let obj5;
   let onReset;
   let onSave;
+  let showGuildSelector;
   let tmp2Result;
-  let flag = showGuildSelector.showGuildSelector;
-  if (flag === undefined) {
-    flag = true;
+  ({ header, showGuildSelector } = arg0);
+  if (showGuildSelector === undefined) {
+    showGuildSelector = true;
   }
   let stateFromStores;
   let guild;
@@ -57,13 +61,13 @@ export default function UserSettingsEditGuildProfile(showGuildSelector) {
     obj.setCurrentGuild(guild.id);
   }
   let tmp2 = guild;
-  let tmp = closure_9();
-  const tmp4 = guild(7465);
-  const analyticsLocations = tmp4(guild(7490).USER_SETTINGS_GUILD_PROFILE).analyticsLocations;
+  let tmp = closure_10();
+  const tmp4 = guild(7410);
+  const analyticsLocations = tmp4(guild(7435).USER_SETTINGS_GUILD_PROFILE).analyticsLocations;
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp7 = guild(16836)();
+  const tmp7 = guild(16821)();
   guild = tmp7.guild;
   ({ resetPending: c2, handleSubmit: c3 } = tmp7);
   let obj2 = stateFromStores(504);
@@ -111,24 +115,26 @@ export default function UserSettingsEditGuildProfile(showGuildSelector) {
               let tmp = maybeShowUnsavedChangesAlertDefault(obj);
             }
       };
-      TableRow = tmp5(7119).TableRow;
-      obj5 = { guild, size: stateFromStores(7101).GuildIconSizes.XSMALL };
+      TableRow = tmp5(7063).TableRow;
+      obj5 = { guild, size: stateFromStores(7045).GuildIconSizes.XSMALL };
       const obj6 = { value: analyticsLocations, children: items3 };
-      tmp2Result = tmp2(7101);
+      tmp2Result = tmp2(7045);
       const tmp14 = closure_7(hasUnsavedChanges, obj3);
-      const AnalyticsLocationProvider = tmp5(7465).AnalyticsLocationProvider;
+      const AnalyticsLocationProvider = tmp5(7410).AnalyticsLocationProvider;
       const tmp11 = closure_7;
-      const tmp15 = closure_8;
-      if (flag) {
-        flag = tmp14;
+      const tmp15 = closure_9;
+      if (showGuildSelector) {
+        showGuildSelector = tmp14;
       }
-      items3 = [flag, ];
+      items3 = [showGuildSelector, ];
       const _HermesInternal = HermesInternal;
-      const obj7 = { currentUser: stateFromStores };
-      const tmp2Result2 = tmp2(16841);
+      const obj7 = { currentUser: stateFromStores, header };
+      const tmp2Result2 = tmp2(16826);
       items3[1] = tmp11(tmp2Result2, obj7, "" + stateFromStores.id + "-" + guild.id);
       return tmp15(AnalyticsLocationProvider, obj6);
     }
   }
-  return closure_7(tmp2(16838), {});
+  const obj8 = { children: items4 };
+  items4 = [header, closure_7(tmp2(16823), {})];
+  return closure_9(closure_8, obj8);
 };

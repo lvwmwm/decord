@@ -1,13 +1,13 @@
-// Module ID: 19564
-// Function ID: 19565
+// Module ID: 19557
+// Function ID: 19558
 // Name: useTapGestures
-// Dependencies: [19, 11418, 5430, 1705, 5386, 2]
+// Dependencies: [19, 11380, 5450, 1705, 5406, 2]
 // Exports: default
 
-// Module 19564 (useTapGestures)
+// Module 19557 (useTapGestures)
 import _mod1705 from "module_1705" /* 1705 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5430 */;
+import HapticUtils from "HapticUtils" /* 5406 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ export default function useTapGestures(onSingleTap) {
   let closure_3;
   let isFocusedVideoZoomed;
   let current = onSingleTap;
-  isFocusedVideoZoomed = react.useContext(isFocusedVideoZoomed(11418)).isFocusedVideoZoomed;
+  isFocusedVideoZoomed = react.useContext(isFocusedVideoZoomed(11380)).isFocusedVideoZoomed;
   dependencyMap = react.useRef(onSingleTap);
   const tmp = null != onSingleTap.onSingleTap;
   react = tmp;
@@ -113,7 +113,7 @@ export default function useTapGestures(onSingleTap) {
     useTapGesturesTsx2.__workletHash = 11156632838205;
     useTapGesturesTsx2.__initData = tmp9;
     const onStartResult = onStart(useTapGesturesTsx2);
-    const Gesture3 = tmp(5430).Gesture;
+    const Gesture3 = tmp(5450).Gesture;
     let tmp14 = tmp4;
     const enabled2 = Gesture3.Tap().enabled;
     Gesture3.Tap();
@@ -137,7 +137,7 @@ export default function useTapGestures(onSingleTap) {
     useTapGesturesTsx3.__workletHash = 9691651382035;
     useTapGesturesTsx3.__initData = tmp16;
     const onStart2Result = onStart2(useTapGesturesTsx3);
-    const Gesture4 = tmp(5430).Gesture;
+    const Gesture4 = tmp(5450).Gesture;
     const enabled3 = Gesture4.LongPress().enabled;
     Gesture4.LongPress();
     if (tmp4) {

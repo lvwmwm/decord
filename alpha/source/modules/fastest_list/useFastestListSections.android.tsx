@@ -1,20 +1,22 @@
-// Module ID: 7371
-// Function ID: 7372
+// Module ID: 7318
+// Function ID: 7319
 // Name: useFastestListSections
-// Dependencies: [19, 5751, 7372, 7373, 2]
+// Dependencies: [19, 5769, 7319, 7320, 2]
 // Exports: default
 
-// Module 7371 (useFastestListSections)
-import FastestListItemTypeDefault from "FastestListItemType" /* 7372 */;
+// Module 7318 (useFastestListSections)
+import FastestListItemTypeDefault from "FastestListItemType" /* 7319 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
+
+let keyExtractor;
 
 const result = size.fileFinishedImporting("modules/fastest_list/useFastestListSections.android.tsx");
 
 export default function useFastestListSections(fastestListId) {
   fastestListId = fastestListId.fastestListId;
   const itemSize = fastestListId.itemSize;
-  const keyExtractor = fastestListId.keyExtractor;
+  keyExtractor = fastestListId.keyExtractor;
   let num = fastestListId.listFooterSize;
   if (num === undefined) {
     num = 0;

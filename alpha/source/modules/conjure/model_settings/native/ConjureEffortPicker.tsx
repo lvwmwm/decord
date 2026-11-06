@@ -1,18 +1,18 @@
-// Module ID: 12375
-// Function ID: 12376
+// Module ID: 12340
+// Function ID: 12341
 // Name: ConjureEffortPicker
-// Dependencies: [32, 19, 17, 21, 1113, 3995, 12376, 6165, 575, 7202, 12378, 7205, 7204, 7119, 12377, 7507, 7504, 7460, 2]
+// Dependencies: [32, 19, 17, 21, 1113, 4024, 12341, 6185, 575, 7149, 12343, 7152, 7151, 7063, 12342, 7452, 7449, 7405, 2]
 // Exports: ConjureEffortPickerSheet
 
-// Module 12375 (ConjureEffortPicker)
+// Module 12340 (ConjureEffortPicker)
 import react_native from "react-native" /* 17 */;
 import intl7 from "intl" /* 1113 */;
-import _modDef3995 from "module_3995" /* 3995 */;
-import TableRadioRow2 from "TableRadioRow" /* 7205 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7460 */;
-import ActionSheet2 from "ActionSheet" /* 7504 */;
-import ConjureEffortTiers from "ConjureEffortTiers" /* 12376 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 12377 */;
+import _modDef4024 from "module_4024" /* 4024 */;
+import TableRadioRow2 from "TableRadioRow" /* 7152 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7405 */;
+import ActionSheet2 from "ActionSheet" /* 7449 */;
+import ConjureEffortTiers from "ConjureEffortTiers" /* 12341 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 12342 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -55,17 +55,17 @@ class ConjureEffortPicker {
     const callback = react.useCallback(() => _undefined((arg0) => !arg0), []);
     let intl = settings(1113).intl;
     let tmp6 = disabled;
-    const stringResult = intl.string(disabled(3995).aBPQxX);
+    const stringResult = intl.string(disabled(4024).aBPQxX);
     const intl2 = settings(1113).intl;
-    const stringResult1 = intl2.string(disabled(3995)["59TDiR"]);
+    const stringResult1 = intl2.string(disabled(4024)["59TDiR"]);
     const intl3 = settings(1113).intl;
-    const stringResult2 = intl3.string(disabled(3995).fpdVCO);
-    let obj = settings(12376);
+    const stringResult2 = intl3.string(disabled(4024).fpdVCO);
+    let obj = settings(12341);
     const conjureCanPickModelResult = obj.conjureCanPickModel(choices);
-    let obj2 = settings(12376);
+    let obj2 = settings(12341);
     const conjureTierModelResult = obj2.conjureTierModel(settings, tiers, settings.tier);
     let obj3 = { direction: "vertical", spacing: disabled(575).space.PX_16, children: items };
-    const Stack = settings(6165).Stack;
+    const Stack = settings(6185).Stack;
     const obj4 = {
       hasIcons: false,
       value: settings.tier,
@@ -99,7 +99,7 @@ class ConjureEffortPicker {
           result = tmp2Result.conjureTierDescription(value);
         } else {
           const intl = tmp2(1113).intl;
-          result = intl.string(_modDef3995["17yEQw"]);
+          result = intl.string(_modDef4024["17yEQw"]);
         }
         tmp6 = disabled;
         if (!tmp6) {
@@ -110,18 +110,18 @@ class ConjureEffortPicker {
       })
     };
     tmp14 = undefined;
-    const TableRadioGroup = settings(7202).TableRadioGroup;
+    const TableRadioGroup = settings(7149).TableRadioGroup;
     if (!hideTitle) {
       tmp14 = stringResult;
     }
-    CONJURE_MODEL_TIERS = tmp4(12378).CONJURE_MODEL_TIERS;
+    CONJURE_MODEL_TIERS = tmp4(12343).CONJURE_MODEL_TIERS;
     items = [closure_6(TableRadioGroup, obj4), , ];
     let tmp13Result = null;
     if (conjureCanPickModelResult) {
       const obj5 = { hasIcons: false, children: closure_6(TableRow, obj6) };
-      const TableRowGroup = tmp4(7204).TableRowGroup;
-      obj6 = { label: intl4.string(tmp6(3995).YLHRzA), arrow: !tmp2, accessibilityState: obj7, onPress: callback };
-      TableRow = tmp4(7119).TableRow;
+      const TableRowGroup = tmp4(7151).TableRowGroup;
+      obj6 = { label: intl4.string(tmp6(4024).YLHRzA), arrow: !tmp2, accessibilityState: obj7, onPress: callback };
+      TableRow = tmp4(7063).TableRow;
       intl4 = tmp4(1113).intl;
       obj7 = { expanded: tmp2 };
       tmp13Result = tmp13(TableRowGroup, obj5);
@@ -151,12 +151,12 @@ class ConjureEffortPicker {
                   })
           };
           main = choices.main;
-          const TableRadioGroup2 = tmp4(7202).TableRadioGroup;
+          const TableRadioGroup2 = tmp4(7149).TableRadioGroup;
           tmp13Result3 = tmp13(TableRadioGroup2, obj8);
         }
         const items1 = [tmp13Result3, , ];
         let str = settings.thinking;
-        const TableRadioGroup3 = tmp4(7202).TableRadioGroup;
+        const TableRadioGroup3 = tmp4(7149).TableRadioGroup;
         if (str == null) {
           let thinking;
           if (tiers != null) {
@@ -194,13 +194,13 @@ class ConjureEffortPicker {
         thinking1 = choices.thinking;
         items1[1] = closure_6(TableRadioGroup3, obj9);
         let tmp13Result4 = null;
-        const tmp4Result = settings(12376);
+        const tmp4Result = settings(12341);
         if (tmp4Result.conjureCeilingSupportsFast(settings, tiers, choices.main)) {
           const obj10 = { hasIcons: false, children: closure_6(TableSwitchRow, obj11) };
-          const TableRowGroup2 = tmp4(7204).TableRowGroup;
+          const TableRowGroup2 = tmp4(7151).TableRowGroup;
           obj11 = {
-            label: intl5.string(tmp6(3995)["5AblQX"]),
-            subLabel: intl6.string(tmp6(3995).QnUV8M),
+            label: intl5.string(tmp6(4024)["5AblQX"]),
+            subLabel: intl6.string(tmp6(4024).QnUV8M),
             value: true === settings.fast,
             disabled,
             onValueChange(fast) {
@@ -210,7 +210,7 @@ class ConjureEffortPicker {
                     dependencyMap(obj2.conjureNormalizeFast(obj));
                   }
           };
-          TableSwitchRow = tmp4(7507).TableSwitchRow;
+          TableSwitchRow = tmp4(7452).TableSwitchRow;
           intl5 = tmp4(1113).intl;
           intl6 = tmp4(1113).intl;
           tmp13Result4 = tmp13(TableRowGroup2, obj10);
@@ -251,7 +251,7 @@ export function ConjureEffortPickerSheet(onChange) {
   }, items);
   const obj = { header: metroRequire(BottomSheetTitleHeader, obj2), children: metroRequire(View, obj3) };
   const ActionSheet = ActionSheet2.ActionSheet;
-  obj2 = { title: intl.string(_modDef3995.aBPQxX) };
+  obj2 = { title: intl.string(_modDef4024.aBPQxX) };
   BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
   intl = intl7.intl;
   obj3 = { children: metroRequire(ConjureEffortPicker, { settings: first, tiers, choices, disabled: false, onChange: callback, hideTitle: true }) };

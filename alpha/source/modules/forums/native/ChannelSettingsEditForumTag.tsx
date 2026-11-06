@@ -1,23 +1,23 @@
-// Module ID: 19249
-// Function ID: 19250
+// Module ID: 19241
+// Function ID: 19242
 // Name: ChannelSettingsEditForumTag
-// Dependencies: [32, 19, 17, 6934, 4992, 1388, 21, 5143, 575, 1499, 504, 5763, 1113, 10025, 7700, 6165, 7204, 7119, 7124, 10126, 7439, 1411, 9605, 1187, 7236, 7507, 6097, 2]
+// Dependencies: [32, 19, 17, 6876, 5019, 1388, 21, 5170, 575, 1499, 504, 5781, 1113, 9976, 7653, 6185, 7151, 7063, 7068, 10077, 7386, 1411, 9551, 1187, 7183, 7452, 6117, 2]
 // Exports: default
 
-// Module 19249 (ChannelSettingsEditForumTag)
+// Module 19241 (ChannelSettingsEditForumTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6097 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 10025 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10126 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6117 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 9976 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 10077 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6934 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import EmojiStore from "EmojiStore" /* 6876 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
@@ -269,14 +269,14 @@ export default function ChannelSettingsEditForumTag(channelId) {
       };
       setOptions(obj);
     } else {
-      setOptions({ headerRight: "ti" });
+      setOptions({ headerRight: "r" });
     }
   }, items5);
   const obj5 = { style: tmp.container, children: null };
   const obj6 = { spacing: 24, style: tmp.sections, children: null };
-  const Stack = tmp3(6165).Stack;
-  const TableRowGroup = tmp3(7204).TableRowGroup;
-  const TableRow = tmp3(7119).TableRow;
+  const Stack = tmp3(6185).Stack;
+  const TableRowGroup = tmp3(7151).TableRowGroup;
+  const TableRow = tmp3(7063).TableRow;
   const obj7 = {
     style: tmp.emojiIconWrapper,
     accessibilityRole: "button",
@@ -312,9 +312,9 @@ export default function ChannelSettingsEditForumTag(channelId) {
                   closure_6(null);
                   closure_8("");
                 },
-          children: closure_10(channelId(7236).CircleXIcon, { size: "xs" })
+          children: closure_10(channelId(7183).CircleXIcon, { size: "xs" })
         };
-        const PressableOpacity = tmp3(7124).PressableOpacity;
+        const PressableOpacity = tmp3(7068).PressableOpacity;
         tmp27Result = tmp27(PressableOpacity, obj12);
       } else {
         tmp27Result = null;
@@ -324,11 +324,11 @@ export default function ChannelSettingsEditForumTag(channelId) {
       items6 = [closure_10(TableRowGroup, obj14), ];
       const obj15 = { style: tmp.hint, children: closure_10(Text, obj16) };
       obj16 = { variant: "body-sm/medium", color: "text-muted", children: intl2.string(channelId(1113).t["3v8kZH"]) };
-      Text = tmp3(5763).Text;
+      Text = tmp3(5781).Text;
       intl2 = tmp3(1113).intl;
       items6[1] = closure_10(emoji, obj15);
       const items7 = [channel(emoji, obj13), , ];
-      const TableRowGroup2 = tmp3(7204).TableRowGroup;
+      const TableRowGroup2 = tmp3(7151).TableRowGroup;
       const obj17 = {
         label: intl3.string(channelId(1113).t["rMH+rt"]),
         value: flag,
@@ -345,7 +345,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
               tmp(tmp2);
             }
       };
-      const TableSwitchRow = tmp3(7507).TableSwitchRow;
+      const TableSwitchRow = tmp3(7452).TableSwitchRow;
       intl3 = tmp3(1113).intl;
       if (flag == null) {
         flag = false;
@@ -355,7 +355,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
       let tmp27Result3 = null;
       if (!tmp2) {
         const obj19 = { hasIcons: false, children: closure_10(TableRow2, obj20) };
-        const TableRowGroup3 = tmp3(7204).TableRowGroup;
+        const TableRowGroup3 = tmp3(7151).TableRowGroup;
         obj20 = {
           variant: "danger",
           label: intl4.string(channelId(1113).t.huYSMr),
@@ -388,7 +388,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
                   show(obj);
                 }
         };
-        TableRow2 = tmp3(7119).TableRow;
+        TableRow2 = tmp3(7063).TableRow;
         intl4 = tmp3(1113).intl;
         tmp27Result3 = tmp27(TableRowGroup3, obj19);
       }
@@ -401,7 +401,7 @@ export default function ChannelSettingsEditForumTag(channelId) {
     ({ textEmoji: obj9.textEmojiStyle, imageEmoji: obj9.fastImageStyle } = tmp);
     emojiURL = undefined;
     const tmp31 = tag;
-    const tmp32 = tag(7439);
+    const tmp32 = tag(7386);
     if (null != stateFromStores) {
       const obj22 = { id: null, animated: null, size };
       ({ id: obj11.id, animated: obj11.animated } = stateFromStores);
@@ -417,5 +417,5 @@ export default function ChannelSettingsEditForumTag(channelId) {
     }
     tmp27Result4 = tmp27(tmp32, obj21);
   }
-  tmp27Result4 = tmp27(tmp3(9605).ReactionIcon, {});
+  tmp27Result4 = tmp27(tmp3(9551).ReactionIcon, {});
 };

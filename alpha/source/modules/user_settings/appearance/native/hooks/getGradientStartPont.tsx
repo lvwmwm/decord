@@ -1,10 +1,10 @@
-// Module ID: 17565
-// Function ID: 17566
+// Module ID: 17554
+// Function ID: 17555
 // Name: getGradientStartPont
 // Dependencies: [2]
 // Exports: default
 
-// Module 17565 (getGradientStartPont)
+// Module 17554 (getGradientStartPont)
 import size from "module_2" /* 2 */;
 
 let tmp2;

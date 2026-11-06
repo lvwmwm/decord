@@ -1,32 +1,32 @@
-// Module ID: 11577
-// Function ID: 11578
+// Module ID: 11539
+// Function ID: 11540
 // Name: GiftCodeRedeemStart
-// Dependencies: [32, 19, 17, 11567, 1385, 7034, 1072, 21, 6582, 7546, 1113, 6694, 2116, 5143, 575, 1499, 504, 5197, 11578, 11579, 7469, 11583, 7877, 8888, 7466, 11584, 7465, 7490, 1252, 10854, 7659, 7431, 5763, 5854, 11585, 11586, 11587, 7473, 9646, 1187, 11589, 11703, 11704, 11705, 5770, 11576, 6882, 9593, 11570, 2]
+// Dependencies: [32, 19, 17, 11529, 1385, 6976, 1072, 21, 6602, 7491, 1113, 6636, 2111, 5170, 575, 1499, 504, 5224, 11540, 11541, 7414, 11545, 7831, 8834, 7411, 11546, 7410, 7435, 1252, 10806, 7612, 7378, 5781, 5872, 11547, 11548, 11549, 7418, 9595, 1187, 11551, 11669, 11670, 11671, 5788, 11538, 6824, 9539, 11532, 2]
 // Exports: default
 
-// Module 11577 (GiftCodeRedeemStart)
+// Module 11539 (GiftCodeRedeemStart)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import UserUtilsDefault from "UserUtils" /* 5197 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6582 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7546 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 7659 */;
-import actions_GiftCodeActionCreatorsDefault from "actions/GiftCodeActionCreators" /* 11570 */;
-import GiftCodeRedeemModal from "GiftCodeRedeemModal" /* 11576 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11589 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11703 */;
-import NameplatePreview from "NameplatePreview" /* 11704 */;
-import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11705 */;
+import UserUtilsDefault from "UserUtils" /* 5224 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6602 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7491 */;
+import SoundboardActionCreators from "SoundboardActionCreators" /* 7612 */;
+import actions_GiftCodeActionCreatorsDefault from "actions/GiftCodeActionCreators" /* 11532 */;
+import GiftCodeRedeemModal from "GiftCodeRedeemModal" /* 11538 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 11551 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 11669 */;
+import NameplatePreview from "NameplatePreview" /* 11670 */;
+import GiftBoxAnimationDefault from "GiftBoxAnimation" /* 11671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GiftCodeStore from "GiftCodeStore" /* 11567 */;
+import GiftCodeStore from "GiftCodeStore" /* 11529 */;
 import UserStore from "UserStore" /* 1385 */;
-import SKUStore from "SKUStore" /* 7034 */;
+import SKUStore from "SKUStore" /* 6976 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -39,7 +39,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const SocialLayerStorefrontActionCreators = tmp(10854);
+const SocialLayerStorefrontActionCreators = tmp(10806);
 ({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet } = react_native);
 ({ AnalyticEvents: c10, GiftCodeModalStates: unpackModuleId } = Constants);
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
@@ -83,59 +83,59 @@ export default function GiftCodeRedeemStart(giftCode) {
   let tmp32Result3;
   let tmp32Result4;
   let type;
-  const f100434 = () => {
+  const f100565 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t.JUV1tL, obj);
   };
-  const f100435 = () => {
+  const f100566 = () => {
     const intl = giftCode(soundId[10]).intl;
     return intl.string(giftCode(soundId[10]).t.iJ8823);
   };
-  const f100436 = () => {
+  const f100567 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t.SKduyh, obj);
   };
-  const f100437 = () => {
+  const f100568 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t["1w42T2"], obj);
   };
-  const f100438 = () => {
+  const f100569 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t.vFiQlU, obj);
   };
-  const f100439 = () => {
+  const f100570 = () => {
     const intl = giftCode(soundId[10]).intl;
     const obj = { sender: str };
     return intl.formatToPlainString(giftCode(soundId[10]).t["UH/EQL"], obj);
   };
-  const f100440 = () => {
+  const f100571 = () => {
     const intl = giftCode(soundId[10]).intl;
     return intl.string(giftCode(soundId[10]).t["2ZO6CC"]);
   };
-  const f100441 = () => {
+  const f100572 = () => {
     const intl = giftCode(soundId[10]).intl;
     return intl.string(giftCode(soundId[10]).t["2NxdjX"]);
   };
-  const f100442 = () => {
+  const f100573 = () => {
     const intl = giftCode(soundId[10]).intl;
     return intl.string(giftCode(soundId[10]).t.v7F232);
   };
-  const f127963 = (avatarDecoration) => {
+  const f128202 = (avatarDecoration) => {
     let getAvatarSource;
     const obj = { source: getAvatarSource(null, true, native.AVATAR_SIZE_MAP[native.AvatarSizes.GIFT_START]), avatarDecoration, size: native.AvatarSizes.GIFT_START, animate: true };
     const Avatar = native.Avatar;
     getAvatarSource = user.getAvatarSource;
     return authStore2(Avatar, obj);
   };
-  const f127964 = (profileEffect) => {
+  const f128203 = (profileEffect) => {
     const obj = { user, profileEffect };
     return authStore2(ProfileEffectUserPreviewDefault, obj);
   };
-  const f127965 = (profileFrame) => {
+  const f128204 = (profileFrame) => {
     const obj = { user, profileFrame };
     return authStore2(ProfileFrameUserPreviewDefault, obj);
   };
@@ -494,14 +494,14 @@ export default function GiftCodeRedeemStart(giftCode) {
     const obj30 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION };
     const _with11 = match.with;
     const obj31 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT };
-    const _with12 = _with11(obj30, f127963).with;
-    _with11(obj30, f127963);
+    const _with12 = _with11(obj30, f128202).with;
+    _with11(obj30, f128202);
     const obj32 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME };
-    const _with13 = _with12(obj31, f127964).with;
-    _with12(obj31, f127964);
+    const _with13 = _with12(obj31, f128203).with;
+    _with12(obj31, f128203);
     const obj33 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE };
-    const _with14 = _with13(obj32, f127965).with;
-    _with13(obj32, f127965);
+    const _with14 = _with13(obj32, f128204).with;
+    _with13(obj32, f128204);
     _with14Result = _with14(obj33, (nameplate) => {
       let obj2;
       const items = [hasOwnProperty.nameplateContainer, ];
@@ -528,36 +528,36 @@ export default function GiftCodeRedeemStart(giftCode) {
     const _with = match1.with;
     P = tmp2(tmp3[11]).P;
     const obj36 = { isBundle: true, sender: tmp2(tmp3[11]).P.nullish };
-    const _with2 = _with(obj35, f100434).with;
-    _with(obj35, f100434);
+    const _with2 = _with(obj35, f100565).with;
+    _with(obj35, f100565);
     const obj37 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION, sender: P2.not(tmp2(tmp3[11]).P.nullish) };
-    const _with3 = _with2(obj36, f100435).with;
-    _with2(obj36, f100435);
+    const _with3 = _with2(obj36, f100566).with;
+    _with2(obj36, f100566);
     P2 = tmp2(tmp3[11]).P;
     const obj38 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT, sender: P3.not(tmp2(tmp3[11]).P.nullish) };
-    const _with4 = _with3(obj37, f100436).with;
-    _with3(obj37, f100436);
+    const _with4 = _with3(obj37, f100567).with;
+    _with3(obj37, f100567);
     P3 = tmp2(tmp3[11]).P;
     const obj39 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE, sender: P4.not(tmp2(tmp3[11]).P.nullish) };
-    const _with5 = _with4(obj38, f100437).with;
-    _with4(obj38, f100437);
+    const _with5 = _with4(obj38, f100568).with;
+    _with4(obj38, f100568);
     P4 = tmp2(tmp3[11]).P;
     const obj40 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME, sender: P5.not(tmp2(tmp3[11]).P.nullish) };
-    const _with6 = _with5(obj39, f100438).with;
-    _with5(obj39, f100438);
+    const _with6 = _with5(obj39, f100569).with;
+    _with5(obj39, f100569);
     P5 = tmp2(tmp3[11]).P;
     const obj41 = { type: tmp2(tmp3[12]).CollectiblesItemType.AVATAR_DECORATION, sender: tmp2(tmp3[11]).P.nullish };
-    const _with7 = _with6(obj40, f100439).with;
-    _with6(obj40, f100439);
+    const _with7 = _with6(obj40, f100570).with;
+    _with6(obj40, f100570);
     const obj42 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_EFFECT, sender: tmp2(tmp3[11]).P.nullish };
-    const _with8 = _with7(obj41, f100440).with;
-    _with7(obj41, f100440);
+    const _with8 = _with7(obj41, f100571).with;
+    _with7(obj41, f100571);
     const obj43 = { type: tmp2(tmp3[12]).CollectiblesItemType.NAMEPLATE, sender: tmp2(tmp3[11]).P.nullish };
-    const _with9 = _with8(obj42, f100441).with;
-    _with8(obj42, f100441);
+    const _with9 = _with8(obj42, f100572).with;
+    _with8(obj42, f100572);
     const obj44 = { type: tmp2(tmp3[12]).CollectiblesItemType.PROFILE_FRAME, sender: tmp2(tmp3[11]).P.nullish };
-    const _with10 = _with9(obj43, f100442).with;
-    _with9(obj43, f100442);
+    const _with10 = _with9(obj43, f100573).with;
+    _with9(obj43, f100573);
     const _with10Result = _with10(obj44, () => {
       const intl = giftCode(soundId[10]).intl;
       return intl.string(giftCode(soundId[10]).t["1+tgC0"]);

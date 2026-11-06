@@ -1,12 +1,12 @@
-// Module ID: 7249
-// Function ID: 7250
+// Module ID: 7196
+// Function ID: 7197
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1495, 1072, 21, 7250, 5731, 5400, 7251, 5209, 5313, 2]
+// Dependencies: [19, 17, 1495, 1072, 21, 7197, 5751, 5420, 7198, 5229, 5333, 2]
 // Exports: NativeTextInput, useKeyboardBlurring
 
-// Module 7249 (NativeTextInput)
+// Module 7196 (NativeTextInput)
 import Constants from "Constants" /* 1072 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7251 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7198 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
@@ -81,7 +81,7 @@ export const NativeTextInput = function TextInput(ref) {
       setNativeProps(obj);
     }
   }, items1);
-  let obj = ref1(5731);
+  let obj = ref1(5751);
   const mountLayoutEffect = obj.useMountLayoutEffect(() => {
     const current = ref1.current;
     if (current != null) {
@@ -89,7 +89,7 @@ export const NativeTextInput = function TextInput(ref) {
       current.setNativeProps(obj);
     }
   });
-  const obj2 = ref1(5400);
+  const obj2 = ref1(5420);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   const items2 = [ref1];
   const items3 = [isScreenReaderEnabled];
@@ -111,15 +111,15 @@ export const NativeTextInput = function TextInput(ref) {
     }
     return obj;
   }, items3);
-  ref1(5209);
+  ref1(5229);
   if (null == iter.keyboardAppearance) {
-    const tmp6Result = ref1(5313);
+    const tmp6Result = ref1(5333);
     iter.keyboardAppearance = tmp6Result.isThemeDark(tmp12) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   }
   const obj3 = { ref: tmp6Result4.mergeRefs(ref1, ref) };
-  const tmp6Result3 = ref1(5313);
-  let merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "Path", defaultValue: "count" }));
-  tmp6Result4 = ref1(5313);
+  const tmp6Result3 = ref1(5333);
+  let merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "Array", defaultValue: "channel" }));
+  tmp6Result4 = ref1(5333);
   const tmp16 = closure_10(closure_5, obj3);
   let tmp18Result = tmp16;
   const tmp14 = closure_10;

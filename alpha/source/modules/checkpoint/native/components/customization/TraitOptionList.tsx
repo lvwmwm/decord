@@ -1,23 +1,23 @@
-// Module ID: 13922
-// Function ID: 13923
+// Module ID: 13898
+// Function ID: 13899
 // Name: TraitOptionList
-// Dependencies: [32, 19, 17, 5144, 6204, 21, 575, 5143, 13923, 8176, 6571, 504, 5400, 1652, 5751, 1493, 5380, 1705, 5386, 2]
+// Dependencies: [32, 19, 17, 5171, 6224, 21, 575, 5170, 13899, 8122, 6591, 504, 5420, 1652, 5769, 1493, 5400, 1705, 5406, 2]
 // Exports: default
 
-// Module 13922 (TraitOptionList)
+// Module 13898 (TraitOptionList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6571 */;
-import inlineStyles from "inlineStyles" /* 8176 */;
-import TraitOptionItem from "TraitOptionItem" /* 13923 */;
+import HapticUtils from "HapticUtils" /* 5406 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6591 */;
+import inlineStyles from "inlineStyles" /* 8122 */;
+import TraitOptionItem from "TraitOptionItem" /* 13899 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -93,7 +93,7 @@ export default function TraitOptionList(size) {
   let obj = size(504);
   let items = [onIntroStep];
   let closure_8 = obj.useStateFromStores(items, () => onIntroStep.useReducedMotion);
-  let obj2 = size(5400);
+  let obj2 = size(5420);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   let obj3 = size(1652);
   const animatedRef = obj3.useAnimatedRef();
@@ -101,14 +101,14 @@ export default function TraitOptionList(size) {
   closure_12 = react.useRef(null);
   let bound = Math.max(options.findIndex((optionId) => optionId.optionId === dependencyMap), 0);
   let tmp7 = options;
-  let tmp8 = options(5751);
+  let tmp8 = options(5769);
   if (introStartIndex > 0) {
     bound = introStartIndex;
   }
   const tmp8Result = tmp8(bound);
   [tmp11, c13] = disabled(obj4.useState(tmp7(1493)().width), 2);
   const tmp10 = disabled(obj4.useState(tmp7(1493)().width), 2);
-  const width = tmp2(13923).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
+  const width = tmp2(13899).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
   const sum = width + animatedRef;
   c14 = sum;
   const bound1 = Math.max(ref, tmp11 - ref - width);
@@ -347,7 +347,7 @@ export default function TraitOptionList(size) {
       return closure_8(tmp2, obj, traitOption.optionId);
     })
   };
-  tmp2Result4 = tmp2(6571);
+  tmp2Result4 = tmp2(6591);
   const children = [closure_8(ScrollView, obj5), ];
   let tmp27Result = !isScreenReaderEnabled;
   if (tmp27Result) {

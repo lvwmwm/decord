@@ -1,11 +1,17 @@
 // Module ID: 16395
 // Function ID: 16396
-// Dependencies: [16393]
+// Dependencies: [16396, 16410]
 
 // Module 16395
-import _mod16393 from "module_16393" /* 16393 */;
+import _mod16396 from "module_16396" /* 16396 */;
+import _mod16410 from "module_16410" /* 16410 */;
 
-let closure_0 = _mod16393({}.toString);
-let closure_1 = _mod16393("".slice);
 
-export default (arg0) => closure_1(closure_0(arg0), 8, -1);
+export default (arg0) => {
+  const tmp = _mod16396(arg0, "string");
+  let text = tmp;
+  if (!_mod16410(tmp)) {
+    text = `${tmp}`;
+  }
+  return text;
+};

@@ -1,22 +1,22 @@
-// Module ID: 19779
-// Function ID: 19780
+// Module ID: 19785
+// Function ID: 19786
 // Name: VoiceFeedbackActionSheet
-// Dependencies: [19, 1072, 10344, 21, 1252, 1113, 2931, 10347, 19773, 19780, 19774, 5384, 19775, 2123, 5848, 2]
+// Dependencies: [19, 1072, 10296, 21, 1252, 1113, 2928, 10299, 19779, 19786, 19780, 5404, 19781, 2118, 5866, 2]
 // Exports: default
 
-// Module 19779 (VoiceFeedbackActionSheet)
+// Module 19785 (VoiceFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants2 from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import _modDef2931 from "module_2931" /* 2931 */;
-import ToastUtils from "ToastUtils" /* 5848 */;
-import FeedbackUtils from "FeedbackUtils" /* 10347 */;
-import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 19773 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 19774 */;
-import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 19780 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import _modDef2928 from "module_2928" /* 2928 */;
+import ToastUtils from "ToastUtils" /* 5866 */;
+import FeedbackUtils from "FeedbackUtils" /* 10299 */;
+import FeedbackActionSheetV2Default from "FeedbackActionSheetV2" /* 19779 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 19780 */;
+import trackVoiceFeedbackDefault from "trackVoiceFeedback" /* 19786 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 10344 */;
+import Constants from "Constants" /* 10296 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -59,35 +59,35 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
   const intl = analyticsData(1113).intl;
   const stringResult = intl.string(analyticsData(1113).t.Ss6tlb);
   const intl2 = analyticsData(1113).intl;
-  let obj = { value: constants3.CONNECTION, label: intl3.string(_modDef2931.FVhMw6), problemsHeader: intl4.string(analyticsData(1113).t.FJmoxF), problemOptions: obj2.getConnectionFeedbackOptions(), freeformConfig: obj3 };
+  let obj = { value: constants3.CONNECTION, label: intl3.string(_modDef2928.FVhMw6), problemsHeader: intl4.string(analyticsData(1113).t.FJmoxF), problemOptions: obj2.getConnectionFeedbackOptions(), freeformConfig: obj3 };
   const stringResult1 = intl2.string(analyticsData(1113).t.tLi4cR);
   intl3 = analyticsData(1113).intl;
   intl4 = analyticsData(1113).intl;
-  obj2 = analyticsData(10347);
+  obj2 = analyticsData(10299);
   obj3 = { value: constants2.FREEFORM, label: intl5.string(analyticsData(1113).t.emlT91) };
   intl5 = analyticsData(1113).intl;
-  let obj4 = { value: constants3.AUDIO, label: intl6.string(_modDef2931.PL2l6A), problemsHeader: intl7.string(analyticsData(1113).t.FJmoxF), problemOptions: obj5.getAudioFeedbackOptions({ isMobile: true }), freeformConfig: obj6 };
+  let obj4 = { value: constants3.AUDIO, label: intl6.string(_modDef2928.PL2l6A), problemsHeader: intl7.string(analyticsData(1113).t.FJmoxF), problemOptions: obj5.getAudioFeedbackOptions({ isMobile: true }), freeformConfig: obj6 };
   intl6 = analyticsData(1113).intl;
   intl7 = analyticsData(1113).intl;
-  obj5 = analyticsData(10347);
+  obj5 = analyticsData(10299);
   obj6 = { value: constants.FREEFORM, label: intl8.string(analyticsData(1113).t.emlT91) };
   intl8 = analyticsData(1113).intl;
-  let obj7 = { value: constants3.VIDEO, label: intl9.string(_modDef2931["0WFzPh"]), problemsHeader: intl10.string(analyticsData(1113).t.FJmoxF), problemOptions: obj8.getVideoFeedbackOptions(), freeformConfig: obj9 };
+  let obj7 = { value: constants3.VIDEO, label: intl9.string(_modDef2928["0WFzPh"]), problemsHeader: intl10.string(analyticsData(1113).t.FJmoxF), problemOptions: obj8.getVideoFeedbackOptions(), freeformConfig: obj9 };
   intl9 = analyticsData(1113).intl;
   intl10 = analyticsData(1113).intl;
-  obj8 = analyticsData(10347);
+  obj8 = analyticsData(10299);
   obj9 = { value: constants6.FREEFORM, label: intl11.string(analyticsData(1113).t.emlT91) };
   intl11 = analyticsData(1113).intl;
-  const obj10 = { value: constants3.PEOPLE, label: intl12.string(_modDef2931.Moa3W9), problemsHeader: intl13.string(analyticsData(1113).t.FJmoxF), problemOptions: obj11.getPeopleFeedbackOptions(), freeformConfig: obj12 };
+  const obj10 = { value: constants3.PEOPLE, label: intl12.string(_modDef2928.Moa3W9), problemsHeader: intl13.string(analyticsData(1113).t.FJmoxF), problemOptions: obj11.getPeopleFeedbackOptions(), freeformConfig: obj12 };
   intl12 = analyticsData(1113).intl;
   intl13 = analyticsData(1113).intl;
-  obj11 = analyticsData(10347);
+  obj11 = analyticsData(10299);
   obj12 = { value: constants5.FREEFORM, label: intl14.string(analyticsData(1113).t.emlT91) };
   intl14 = analyticsData(1113).intl;
   FeedbackActionSheetV2Default;
   const intl15 = analyticsData(1113).intl;
   const items = [obj, obj4, obj7, obj10];
-  return <tmp3 headerLabel={stringResult} showHeaderCloseButton ratingBody={stringResult1} categoriesHeader={intl15.string(_modDef2931.tq8598)} optionsTree={items} trackOpen={trackOpen} trackReport={function trackReport(dontShowAgain) {
+  return <tmp3 headerLabel={stringResult} showHeaderCloseButton ratingBody={stringResult1} categoriesHeader={intl15.string(_modDef2928.tq8598)} optionsTree={items} trackOpen={trackOpen} trackReport={function trackReport(dontShowAgain) {
     let category;
     let feedback;
     let rating;
@@ -129,8 +129,8 @@ export default function VoiceFeedbackActionSheet(analyticsData) {
         if (obj3.shouldShowLogUploadForCategory(rating, category, reason)) {
           const obj7 = { mediaSessionId: null, rtcConnectionId: null };
           ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp7);
-          const tmp20Result = tmp20(5384);
-          tmp20Result.openLazy(asyncRequire(19775, dependencyMap.paths), "UploadLogs", obj7);
+          const tmp20Result = tmp20(5404);
+          tmp20Result.openLazy(asyncRequire(19781, dependencyMap.paths), "UploadLogs", obj7);
         }
       }
       const obj4 = ToastUtils;

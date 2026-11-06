@@ -1,91 +1,158 @@
 // Module ID: 13298
 // Function ID: 13299
-// Dependencies: []
-// Exports: getSpanStatusFromHttpCode, setHttpStatus
+// Dependencies: [13254, 13255, 13299, 13302, 13291, 13260]
+// Exports: createEventEnvelope, createSessionEnvelope, createSpanEnvelope
 
 // Module 13298
+import _mod13260 from "module_13260" /* 13260 */;
+import _mod13299 from "module_13299" /* 13299 */;
+import _mod13302 from "module_13302" /* 13302 */;
+import DEBUG_BUILD from "module_13254" /* 13254 */;
+import CONSOLE_LEVELS from "module_13255" /* 13255 */;
 
-export const SPAN_STATUS_ERROR = 2;
-export const SPAN_STATUS_OK = 1;
-export const SPAN_STATUS_UNSET = 0;
-export function getSpanStatusFromHttpCode(arg0) {
-  if (arg0 < 400) {
-    if (arg0 >= 100) {
-      return { code: 1 };
+const require = globalThis.__r;
+let _require, integrations;
+
+
+export function createEventEnvelope(type, arg1, sdk, arg3) {
+  const obj = _mod13299;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(sdk);
+  let str = "event";
+  const tmp2 = type;
+  if (type.type) {
+    str = "event";
+    if ("replay_event" !== type.type) {
+      str = type.type;
     }
   }
-  if (arg0 >= 400) {
-    if (arg0 < 500) {
-      if (401 === arg0) {
-        return { code: 2, message: "unauthenticated" };
-      } else if (403 === arg0) {
-        return { code: 2, message: "permission_denied" };
-      } else if (404 === arg0) {
-        return { code: 2, message: "not_found" };
-      } else if (409 === arg0) {
-        return { code: 2, message: "already_exists" };
-      } else if (413 === arg0) {
-        return { code: 2, message: "failed_precondition" };
-      } else if (429 === arg0) {
-        return { code: 2, message: "resource_exhausted" };
-      } else {
-        return 499 === arg0 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
-      }
+  if (sdk && sdk.sdk) {
+    type.sdk = type.sdk || {};
+    let name = type.sdk.name;
+    sdk = type.sdk;
+    if (!name) {
+      name = tmp6.name;
     }
-  }
-  if (arg0 >= 500) {
-    if (arg0 < 600) {
-      if (501 === arg0) {
-        return { code: 2, message: "unimplemented" };
-      } else if (503 === arg0) {
-        return { code: 2, message: "unavailable" };
-      } else {
-        return 504 === arg0 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
-      }
+    sdk.name = name;
+    let version = type.sdk.version;
+    const sdk2 = type.sdk;
+    if (!version) {
+      version = tmp6.version;
     }
+    sdk2.version = version;
+    integrations = type.sdk.integrations;
+    const sdk3 = type.sdk;
+    if (!integrations) {
+      integrations = [];
+    }
+    const items = [];
+    const arraySpreadResult = HermesBuiltin.arraySpread(items, integrations, 0);
+    const tmp10 = (sdk && sdk.sdk).integrations || [];
+    HermesBuiltin.arraySpread(items, tmp10, arraySpreadResult);
+    sdk3.integrations = items;
+    let packages = type.sdk.packages;
+    const sdk4 = type.sdk;
+    if (!packages) {
+      packages = [];
+    }
+    const items1 = [];
+    const arraySpreadResult5 = HermesBuiltin.arraySpread(items1, packages, 0);
+    const tmp18 = (sdk && sdk.sdk).packages || [];
+    HermesBuiltin.arraySpread(items1, tmp18, arraySpreadResult5);
+    sdk4.packages = items1;
   }
-  return { code: 2, message: "unknown_error" };
+  const tmp3Result = _mod13299;
+  const eventEnvelopeHeaders = tmp3Result.createEventEnvelopeHeaders(type, sdkMetadataForEnvelopeHeader, arg3, arg1);
+  delete tmp2["sdkProcessingMetadata"];
+  const items2 = [{ type: str }, type];
+  const items3 = [items2];
+  const tmp3Result2 = _mod13299;
+  return tmp3Result2.createEnvelope(eventEnvelopeHeaders, items3);
 }
-export function setHttpStatus(setAttribute, arg1) {
-  let obj;
-  const attr = setAttribute.setAttribute("http.response.status_code", arg1);
-  if (arg1 < 400) {
-    if (arg1 >= 100) {
-      obj = { code: 1 };
-    }
-    if ("unknown_error" !== obj.message) {
-      setAttribute.setStatus(obj);
-    }
+export function createSessionEnvelope(toJSON, arg1, arg2, arg3) {
+  let date;
+  let items1;
+  let tmpResult;
+  const obj = _mod13299;
+  const sdkMetadataForEnvelopeHeader = obj.getSdkMetadataForEnvelopeHeader(arg2);
+  const obj2 = { sent_at: date.toISOString() };
+  let tmp4 = sdkMetadataForEnvelopeHeader;
+  date = new Date();
+  if (tmp4) {
+    tmp4 = { sdk: sdkMetadataForEnvelopeHeader };
+    const obj3 = { sdk: sdkMetadataForEnvelopeHeader };
   }
-  if (arg1 >= 400) {
-    if (arg1 < 500) {
-      if (401 === arg1) {
-        obj = { code: 2, message: "unauthenticated" };
-      } else if (403 === arg1) {
-        obj = { code: 2, message: "permission_denied" };
-      } else if (404 === arg1) {
-        obj = { code: 2, message: "not_found" };
-      } else if (409 === arg1) {
-        obj = { code: 2, message: "already_exists" };
-      } else if (413 === arg1) {
-        obj = { code: 2, message: "failed_precondition" };
-      } else if (429 === arg1) {
-        obj = { code: 2, message: "resource_exhausted" };
-      } else {
-        obj = 499 === arg1 ? { code: 2, message: "cancelled" } : { code: 2, message: "invalid_argument" };
-      }
-    }
+  const merged = Object.assign(tmp4);
+  let tmp6 = arg3 && arg1;
+  if (tmp6) {
+    const obj4 = { dsn: tmpResult.dsnToString(arg1) };
+    tmp6 = obj4;
+    tmpResult = _mod13302;
   }
-  if (arg1 >= 500) {
-    if (arg1 < 600) {
-      if (501 === arg1) {
-        obj = { code: 2, message: "unimplemented" };
-      } else if (503 === arg1) {
-        obj = { code: 2, message: "unavailable" };
-      } else {
-        obj = 504 === arg1 ? { code: 2, message: "deadline_exceeded" } : { code: 2, message: "internal_error" };
-      }
-    }
+  const merged1 = Object.assign(tmp6);
+  if ("aggregates" in toJSON) {
+    const items = [{ type: "sessions" }, toJSON];
+    items1 = items;
+  } else {
+    items1 = [{ type: "session" }, toJSON.toJSON()];
   }
-  obj = { code: 2, message: "unknown_error" };
+  const items2 = [items1];
+  const tmpResult2 = _mod13299;
+  return tmpResult2.createEnvelope(obj2, items2);
+}
+export function createSpanEnvelope(arg0, getDsn) {
+  let closure_0;
+  let date;
+  let tmp2Result;
+  function dscHasRequiredProps(dynamicSamplingContextFromSpan) {
+    return dynamicSamplingContextFromSpan.trace_id && dynamicSamplingContextFromSpan.public_key;
+  }
+  let tmp = _require;
+  let tmp3 = dependencyMap;
+  let obj = require("module_13291");
+  const dynamicSamplingContextFromSpan = obj.getDynamicSamplingContextFromSpan(arg0[0]);
+  const tmp6 = getDsn && getDsn.getDsn();
+  const obj2 = { sent_at: date.toISOString() };
+  const tmp7 = getDsn && getDsn.getOptions().tunnel;
+  date = new Date();
+  let tmp8 = dscHasRequiredProps(dynamicSamplingContextFromSpan);
+  const tmp2 = _require;
+  if (tmp8) {
+    tmp8 = { trace: dynamicSamplingContextFromSpan };
+    const obj3 = { trace: dynamicSamplingContextFromSpan };
+  }
+  const merged = Object.assign(tmp8);
+  let tmp10 = tmp7 && tmp6;
+  if (tmp10) {
+    const obj4 = { dsn: tmp2Result.dsnToString(tmp6) };
+    tmp10 = obj4;
+    tmp2Result = tmp2(13302);
+  }
+  const merged1 = Object.assign(tmp10);
+  const tmp14 = getDsn && getDsn.getOptions().beforeSendSpan;
+  _require = tmp14;
+  const items = [];
+  const tmp15 = tmp14 ? ((arg0) => {
+    const obj = _mod13260;
+    const tmp3 = closure_0(obj.spanToJSON(arg0));
+    if (!tmp3) {
+      const tmpResult = _mod13260;
+      tmpResult.showSpanDropWarning();
+    }
+    return tmp3;
+  }) : ((arg0) => {
+    const obj = closure_0(dependencyMap[5]);
+    return obj.spanToJSON(arg0);
+  });
+  const iter = arg0[Symbol.iterator]();
+  while (iter !== undefined) {
+    let tmp15Result = tmp15(iter.next());
+    if (tmp15Result) {
+      let push = items.push;
+      let obj7 = require("module_13299");
+      let arr = push(obj7.createSpanEnvelopeItem(tmp17));
+    }
+    continue;
+  }
+  const obj8 = require("module_13299");
+  return obj8.createEnvelope(obj2, items);
 }

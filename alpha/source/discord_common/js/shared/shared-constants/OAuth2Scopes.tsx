@@ -1,9 +1,9 @@
-// Module ID: 9056
-// Function ID: 9057
+// Module ID: 9002
+// Function ID: 9003
 // Name: OAuth2Scopes
 // Dependencies: [2]
 
-// Module 9056 (OAuth2Scopes)
+// Module 9002 (OAuth2Scopes)
 import size from "module_2" /* 2 */;
 
 let obj2;

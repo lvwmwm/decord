@@ -1,23 +1,23 @@
-// Module ID: 19515
-// Function ID: 19516
+// Module ID: 19507
+// Function ID: 19508
 // Name: VoicePanelDockSheet
-// Dependencies: [19, 17, 11419, 11437, 21, 11445, 5734, 575, 5140, 1652, 11418, 19516, 2]
+// Dependencies: [19, 17, 11381, 11399, 21, 11407, 5754, 575, 5167, 1652, 11380, 19508, 2]
 // Exports: VoicePanelContentWithDock, getDockSheetShadowOpacity, getDockSheetShape, getDockSheetSurfaceStyle, getDockSheetTransform, useDockSheetSurfaceFills
 
-// Module 19515 (VoicePanelDockSheet)
+// Module 19507 (VoicePanelDockSheet)
 import react_native from "react-native" /* 17 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import ColorUtils from "ColorUtils" /* 5140 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11418 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11445 */;
-import VoicePanelDockDefault from "VoicePanelDock" /* 19516 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11380 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11407 */;
+import VoicePanelDockDefault from "VoicePanelDock" /* 19508 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11419 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11437 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11381 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11399 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 
-let _Math, diff, max, opacity, tmp3, value;
+let diff, max, opacity, tmp3, value;
 
 let DOCK_PRESS_EXTENSION;
 let DOCK_SETTLE_PROGRESS;
@@ -50,30 +50,34 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const DEFAULT_BORDER_RADIUS = VoicePanelConstants.DEFAULT_BORDER_RADIUS;
 ({ DOCK_SETTLE_PROGRESS, DOCK_PRESS_EXTENSION } = VoicePanelDockConstants);
 ({ jsx: metroRequire, Fragment: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let items = [{ code: "(function getDockSheetTransform_VoicePanelDockSheetTsx1({connected:connected,progress:progress,wrapperDimensions:wrapperDimensions,dockHeight:dockHeight,dockJoinMorphOrigin:dockJoinMorphOrigin,dockEntryProgress:dockEntryProgress,sheetExitProgress:sheetExitProgress,dockPressProgress:dockPressProgress}){let[getDockRect,shrinkDockAroundCenter,scaleDockAroundCenter,DOCK_PRESS_EXTENSION]=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight,drawerX:drawerX,drawerY:drawerY}=wrapperDimensions;if(!connected&&progress<=0||drawerWidth<=0||drawerHeight<=0){return null;}const fullRect={x:drawerX,y:drawerY,width:drawerWidth,height:drawerHeight};const restRect=getDockRect(fullRect,dockHeight);const origin=dockJoinMorphOrigin!=null?{...dockJoinMorphOrigin,height:drawerHeight*(dockJoinMorphOrigin.width/drawerWidth)}:fullRect;const geometry=shrinkDockAroundCenter(progress,origin,restRect);const{translateX:translateX,translateY:translateY,scale:scale}=scaleDockAroundCenter(geometry,drawerWidth,drawerHeight);const onScreenHeight=dockHeight+(drawerHeight-dockHeight)*(1-progress);const offscreen=(1-dockEntryProgress+sheetExitProgress)*onScreenHeight;const pressExtension=dockPressProgress*DOCK_PRESS_EXTENSION;return{translateX:translateX,translateY:translateY+offscreen-pressExtension,scale:scale};})" }, VoicePanelSheetMorph.getDockRect, VoicePanelSheetMorph.shrinkDockAroundCenter, VoicePanelSheetMorph.scaleDockAroundCenter, DOCK_PRESS_EXTENSION];
+let items = [{ code: "(function getDockSheetTransform_VoicePanelDockSheetTsx1({connected:connected,progress:progress,wrapperDimensions:wrapperDimensions,dockHeight:dockHeight,dockBottom:dockBottom,dockJoinMorphOrigin:dockJoinMorphOrigin,dockEntryProgress:dockEntryProgress,sheetExitProgress:sheetExitProgress,dockPressProgress:dockPressProgress}){let[getDockRect,shrinkDockAroundCenter,scaleDockAroundCenter,DOCK_PRESS_EXTENSION]=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight,drawerX:drawerX,drawerY:drawerY}=wrapperDimensions;if(!connected&&progress<=0||drawerWidth<=0||drawerHeight<=0){return null;}const fullRect={x:drawerX,y:drawerY,width:drawerWidth,height:drawerHeight};const restRect={...getDockRect(fullRect,dockHeight),y:drawerY+Math.max(Math.max(dockBottom-drawerY,drawerHeight)-dockHeight,0)};const origin=dockJoinMorphOrigin!=null?{...dockJoinMorphOrigin,height:drawerHeight*(dockJoinMorphOrigin.width/drawerWidth)}:fullRect;const geometry=shrinkDockAroundCenter(progress,origin,restRect);const{translateX:translateX,translateY:translateY,scale:scale}=scaleDockAroundCenter(geometry,drawerWidth,drawerHeight);const onScreenHeight=dockHeight+(drawerHeight-dockHeight)*(1-progress);const offscreen=(1-dockEntryProgress+sheetExitProgress)*onScreenHeight;const pressExtension=dockPressProgress*DOCK_PRESS_EXTENSION;return{translateX:translateX,translateY:translateY+offscreen-pressExtension,scale:scale};})" }, VoicePanelSheetMorph.getDockRect, VoicePanelSheetMorph.shrinkDockAroundCenter, VoicePanelSheetMorph.scaleDockAroundCenter, DOCK_PRESS_EXTENSION];
 [tmp5, tmp6, tmp7, tmp8, tmp9] = items;
 function getDockSheetTransform(connected) {
   let dockHeight;
   let dockJoinMorphOrigin;
   let drawerHeight;
   let drawerWidth;
+  let drawerY;
   let progress;
   let wrapperDimensions;
   ({ progress, wrapperDimensions, dockHeight, dockJoinMorphOrigin } = connected);
-  ({ drawerWidth, drawerHeight } = wrapperDimensions);
+  ({ drawerWidth, drawerHeight, drawerY } = wrapperDimensions);
   if (connected.connected) {
     if (drawerWidth > 0) {
       if (drawerHeight > 0) {
-        size = { x: tmp4, y: tmp5, width: drawerWidth, height: drawerHeight };
+        size = { x: tmp5, y: drawerY, width: drawerWidth, height: drawerHeight };
+        const obj2 = { y: drawerY + Math.max(Math.max(tmp - drawerY, drawerHeight) - dockHeight, 0) };
+        const merged = Object.assign(_undefined(size, dockHeight));
+        const _Math = Math;
+        const _Math2 = Math;
         let tmp9 = size;
-        const tmp15 = _undefined(size, dockHeight);
         if (null != dockJoinMorphOrigin) {
           const obj = { height: drawerHeight * (dockJoinMorphOrigin.width / drawerWidth) };
-          const merged = Object.assign(dockJoinMorphOrigin);
+          const merged1 = Object.assign(dockJoinMorphOrigin);
           tmp9 = obj;
         }
-        const tmp12 = _undefined3(_undefined2(progress, tmp9, tmp15), drawerWidth, drawerHeight);
-        return { translateX: tmp12.translateX, translateY: tmp12.translateY + (1 - tmp + tmp2) * (dockHeight + (drawerHeight - dockHeight) * (1 - progress)) - tmp3 * c3, scale: tmp12.scale };
+        const tmp12 = _undefined3(_undefined2(progress, tmp9, obj2), drawerWidth, drawerHeight);
+        return { translateX: tmp12.translateX, translateY: tmp12.translateY + (1 - tmp2 + tmp3) * (dockHeight + (drawerHeight - dockHeight) * (1 - progress)) - tmp4 * c3, scale: tmp12.scale };
       }
     }
   }
@@ -81,7 +85,7 @@ function getDockSheetTransform(connected) {
 }
 let items1 = [tmp6, tmp7, tmp8, tmp9];
 getDockSheetTransform.__closure = items1;
-getDockSheetTransform.__workletHash = 685261852504;
+getDockSheetTransform.__workletHash = 3423331622410;
 getDockSheetTransform.__initData = tmp5;
 let items2 = [{ code: "(function getDockSheetShape_VoicePanelDockSheetTsx2({connected:connected,dockJoinMorphOrigin:dockJoinMorphOrigin,sheetMorphProgress:sheetMorphProgress,wrapperDimensions:wrapperDimensions}){let[DEFAULT_BORDER_RADIUS,interpolate,Extrapolation]=this.__closure;const{drawerWidth:drawerWidth,drawerHeight:drawerHeight}=wrapperDimensions;const startRadius=dockJoinMorphOrigin!=null&&dockJoinMorphOrigin.width>0?DEFAULT_BORDER_RADIUS*(drawerWidth/dockJoinMorphOrigin.width):0;const topRadius=connected?interpolate(sheetMorphProgress,[0,1],[DEFAULT_BORDER_RADIUS,startRadius],Extrapolation.CLAMP):DEFAULT_BORDER_RADIUS;const bottomRadius=connected?0:DEFAULT_BORDER_RADIUS;return{width:drawerWidth,height:drawerHeight,borderTopLeftRadius:topRadius,borderTopRightRadius:topRadius,borderBottomLeftRadius:bottomRadius,borderBottomRightRadius:bottomRadius};})" }, DEFAULT_BORDER_RADIUS, _mod1652.interpolate, _mod1652.Extrapolation];
 [tmp10, tmp11, tmp12, tmp13] = items2;

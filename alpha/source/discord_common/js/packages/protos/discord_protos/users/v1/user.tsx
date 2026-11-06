@@ -1,13 +1,13 @@
-// Module ID: 1393
-// Function ID: 1394
+// Module ID: 1398
+// Function ID: 1399
 // Name: user
-// Dependencies: [32, 1197, 1227, 1394, 1226, 2]
+// Dependencies: [32, 1197, 1227, 1399, 1226, 2]
 
-// Module 1393 (user)
+// Module 1398 (user)
 import _mod1197 from "module_1197" /* 1197 */;
 import timestamp from "timestamp" /* 1226 */;
 import wrappers from "wrappers" /* 1227 */;
-import safety_state from "safety_state" /* 1394 */;
+import safety_state from "safety_state" /* 1399 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -1187,7 +1187,7 @@ class TypingIndicatorEmoji$Type extends MessageType8 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { emoji: { oneofKind: "ti" }, animated: false };
+    obj = { emoji: { oneofKind: "r" }, animated: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -2068,7 +2068,7 @@ class Badge$Type extends MessageType16 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { badge: { oneofKind: "ti" } };
+    obj = { badge: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
@@ -3184,7 +3184,7 @@ const items19 = [
   { no: 6, name: "updated_at", kind: "message", T: T37 }
 ];
 let tmp28 = new "binaryReadMap3"("discord_protos.users.v1.LinkedUser", items19, tmp6, tmp5, "create", "internalBinaryRead", tmp4, "internalBinaryWrite", tmp3, undefined, require, dependencyMap, DayOfWeek, obj2, obj3, obj4, obj5, obj6, obj7, obj8, obj9, obj10, obj11, obj12, obj13, obj14, obj15);
-const authStore7 = tmp28;
+const keyExtractor = tmp28;
 const MessageType22 = _mod1197.MessageType;
 class RateLimitData$Type extends MessageType22 {
   constructor() {
@@ -3917,7 +3917,7 @@ class PerkConfig$Type extends MessageType29 {
     return tmp2;
   }
   create(partialSettings) {
-    obj = { source: [], kind: { oneofKind: "ti" } };
+    obj = { source: [], kind: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);

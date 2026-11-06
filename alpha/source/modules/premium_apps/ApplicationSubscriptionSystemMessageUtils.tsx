@@ -1,10 +1,10 @@
-// Module ID: 8598
-// Function ID: 8599
+// Module ID: 8544
+// Function ID: 8545
 // Name: ApplicationSubscriptionSystemMessageUtils
 // Dependencies: [1113, 2]
 // Exports: getApplicationSubscriptionSystemMessageASTContent
 
-// Module 8598 (ApplicationSubscriptionSystemMessageUtils)
+// Module 8544 (ApplicationSubscriptionSystemMessageUtils)
 import intl3 from "intl" /* 1113 */;
 import size from "module_2" /* 2 */;
 

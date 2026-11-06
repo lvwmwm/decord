@@ -1,14 +1,14 @@
-// Module ID: 11663
-// Function ID: 11664
+// Module ID: 11625
+// Function ID: 11626
 // Name: useShowBadgeProgress
-// Dependencies: [6880, 1072, 504, 11657, 2]
+// Dependencies: [6822, 1072, 504, 11619, 2]
 // Exports: default
 
-// Module 11663 (useShowBadgeProgress)
+// Module 11625 (useShowBadgeProgress)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import BadgeUtils from "BadgeUtils" /* 11657 */;
-import ConsentStore from "ConsentStore" /* 6880 */;
+import BadgeUtils from "BadgeUtils" /* 11619 */;
+import ConsentStore from "ConsentStore" /* 6822 */;
 import size from "module_2" /* 2 */;
 
 const Consents = Constants.Consents;

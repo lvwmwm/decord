@@ -1,13 +1,13 @@
-// Module ID: 2128
-// Function ID: 2129
+// Module ID: 2123
+// Function ID: 2124
 // Name: BaseTelemetryExportChannel
-// Dependencies: [5, 2129, 3, 510, 2]
+// Dependencies: [5, 2124, 3, 510, 2]
 
-// Module 2128 (BaseTelemetryExportChannel)
+// Module 2123 (BaseTelemetryExportChannel)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2129 */;
+import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2124 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, c3;

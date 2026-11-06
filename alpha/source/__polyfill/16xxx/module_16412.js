@@ -1,18 +1,9 @@
 // Module ID: 16412
 // Function ID: 16413
-// Dependencies: []
+// Dependencies: [16390]
 
 // Module 16412
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
-  }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+import _mod16390 from "module_16390" /* 16390 */;
+
+
+export default _mod16390({}.isPrototypeOf);

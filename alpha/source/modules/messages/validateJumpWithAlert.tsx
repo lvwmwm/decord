@@ -1,17 +1,17 @@
-// Module ID: 11359
-// Function ID: 11360
+// Module ID: 11314
+// Function ID: 11315
 // Name: validateJumpWithAlert
-// Dependencies: [4992, 5075, 5085, 1072, 6096, 1113, 7831, 2]
+// Dependencies: [5019, 5102, 5112, 1072, 6116, 1113, 7785, 2]
 // Exports: default
 
-// Module 11359 (validateJumpWithAlert)
+// Module 11314 (validateJumpWithAlert)
 import Constants from "Constants" /* 1072 */;
 import intl14 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6096 */;
-import isSpam from "isSpam" /* 7831 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6116 */;
+import isSpam from "isSpam" /* 7785 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

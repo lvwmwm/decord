@@ -1,10 +1,10 @@
-// Module ID: 18602
-// Function ID: 18603
+// Module ID: 18592
+// Function ID: 18593
 // Name: ChannelListLegendList
-// Dependencies: [19, 21, 18603, 1652, 1705, 7380, 14646, 2]
+// Dependencies: [19, 21, 18593, 1652, 1705, 7327, 14623, 2]
 
-// Module 18602 (ChannelListLegendList)
-import FastList from "FastList" /* 7380 */;
+// Module 18592 (ChannelListLegendList)
+import FastList from "FastList" /* 7327 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ let hasOwnProperty;
 let metroRequire;
 ({ Fragment: closure_4, jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let closure_7 = [];
-let closure_8 = { item: "sa", positionPercentage: false };
+let closure_8 = { item: "description", positionPercentage: false };
 let closure_9 = { zIndex: 5 };
 let closure_10 = { code: "(function ChannelListLegendListTsx1(event){let[scrollPosValue,onScrollWorklet,onScroll,scheduleOnRN]=this.__closure;scrollPosValue.set(event.contentOffset.y);onScrollWorklet(event.contentOffset.y,event.contentSize.height,event.layoutMeasurement.height);if(onScroll!=null){scheduleOnRN(onScroll);}})" };
 const memoResult = react.memo(function ChannelListLegendList(listViewportHeight) {

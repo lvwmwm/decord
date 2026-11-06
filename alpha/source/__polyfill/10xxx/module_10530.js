@@ -1,75 +1,91 @@
 // Module ID: 10530
 // Function ID: 10531
-// Dependencies: [41, 42]
+// Dependencies: [41, 42, 93, 95, 98, 10525, 10463, 10465, 10466, 10470]
 
 // Module 10530
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10463 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10525 from "module_10525" /* 10525 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-class Filter {
-  constructor() {
-    _classCallCheck(this, Filter);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
+class FRTimeUnitAgoFormatParser {
+  constructor() {
+    let constructResult;
     const self = this;
-    let closure_0 = arg0;
-    return arr.filter((item) => self.isValid(closure_0, item));
+    _classCallCheck(this, FRTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(FRTimeUnitAgoFormatParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    const NUMBER_PATTERN = _mod10525.NUMBER_PATTERN;
+    const regExp = new RegExp("(?:les?|la|l'|du|des?)\\s*(" + NUMBER_PATTERN + ")?(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?\\s*(" + repeatedTimeunitPattern.matchAnyPattern(_mod10525.TIME_UNIT_DICTIONARY) + ")(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?", "i");
+    return regExp;
   }
 };
-let items = [entry];
-class MergingRefiner {
-  constructor() {
-    _classCallCheck(this, MergingRefiner);
-  }
-}
-const entry1 = {
-  key: "refine",
-  value: function refine(text, arg1) {
-    const self = this;
-    if (arg1.length < 2) {
-      return arg1;
-    } else {
-      const items = [];
-      let first = arg1[0];
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
       let num = 1;
-      let num2 = 1;
-      let tmp20 = first;
-      if (1 < arg1.length) {
-        do {
-          let tmp11;
-          let tmp = arg1[num];
-          let str = text.text;
-          let substr = str.substring(first.index + first.text.length, tmp.index);
-          if (self.shouldMergeResults(substr, first, tmp, text)) {
-            let closure_1 = tmp;
-            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
-            let debugResult = text.debug(() => {
-              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
-            });
-            tmp11 = mergeResultsResult;
-          } else {
-            let arr = items.push(first);
-            tmp11 = tmp;
-          }
-          num = num2 + 1;
-          first = tmp11;
-          tmp20 = tmp11;
-          num2 = num;
-        } while (num < arg1.length);
+      if (arg1[1]) {
+        num = _mod10525.parseNumberPattern(arg1[1]);
       }
-      if (null != tmp20) {
-        items.push(tmp20);
+      const obj = {};
+      obj[_mod10525.TIME_UNIT_DICTIONARY[arg1[3].toLowerCase(arg1[3])]] = num;
+      const str2 = arg1[2] || arg1[4] || "";
+      const formatted = str2.toLowerCase();
+      if (formatted) {
+        const obj2 = /derni[eè]re?s?/;
+        let isMatch = obj2.test(formatted);
+        if (!isMatch) {
+          const obj3 = /pass[ée]e?s?/;
+          isMatch = obj3.test(formatted);
+        }
+        if (!isMatch) {
+          const obj4 = /pr[ée]c[ée]dents?/;
+          isMatch = obj4.test(formatted);
+        }
+        let reverseDurationResult = obj;
+        if (isMatch) {
+          reverseDurationResult = tmp3(10465).reverseDuration(obj);
+        }
+        const ParsingComponents = tmp3(10466).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
       }
-      return items;
     }
   }
-};
-const items1 = [entry1];
-const Filter_export = _createClass(Filter, items);
-const MergingRefiner_export = _createClass(MergingRefiner, items1);
+];
 
-export { Filter_export as Filter };
-export { MergingRefiner_export as MergingRefiner };
+export default _createClass(FRTimeUnitAgoFormatParser, items);

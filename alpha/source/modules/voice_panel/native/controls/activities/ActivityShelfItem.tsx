@@ -1,33 +1,33 @@
-// Module ID: 19578
-// Function ID: 19579
+// Module ID: 19572
+// Function ID: 19573
 // Name: ActivityShelfItem
-// Dependencies: [19, 1072, 1191, 21, 5143, 575, 5140, 12696, 12610, 7104, 19576, 2021, 5819, 12048, 9714, 7124, 5209, 19575, 12639, 1187, 19579, 19577, 6179, 14616, 5763, 12702, 1113, 2]
+// Dependencies: [19, 1072, 1191, 21, 5170, 575, 5167, 12661, 12575, 7048, 19570, 2021, 5837, 12014, 9663, 7068, 5229, 19569, 12604, 1187, 19573, 19571, 6199, 14593, 5781, 12667, 1113, 2]
 // Exports: default
 
-// Module 19578 (ActivityShelfItem)
+// Module 19572 (ActivityShelfItem)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import react_nativeDefault from "react-native" /* 2021 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5819 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6179 */;
-import NativeViewDefault from "NativeView" /* 7104 */;
-import TestModeUtils from "TestModeUtils" /* 9714 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12048 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 12610 */;
-import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12696 */;
-import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 12702 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14616 */;
-import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 19575 */;
-import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 19576 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19577 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19579 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5837 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6199 */;
+import NativeViewDefault from "NativeView" /* 7048 */;
+import TestModeUtils from "TestModeUtils" /* 9663 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12014 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 12575 */;
+import useLaunchingActivityButtonStateDefault from "useLaunchingActivityButtonState" /* 12661 */;
+import getItemSubtitleForMaxPlayers from "getItemSubtitleForMaxPlayers" /* 12667 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14593 */;
+import ActivityShelfItemBackgroundDefault from "ActivityShelfItemBackground" /* 19569 */;
+import ActivityShelfItemSummaryDefault from "ActivityShelfItemSummary" /* 19570 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19571 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19573 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
-import ColorUtils_mod from "ColorUtils" /* 5140 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import ColorUtils_mod from "ColorUtils" /* 5167 */;
 import size_mod from "module_2" /* 2 */;
 
 const useActivityShelfItemDefault = useActivityShelfItem;
@@ -59,12 +59,12 @@ function ActivityActionOverlay(arg0) {
       return null;
     }
   }
-  let tmp8 = action === tmp4(12610).ActivityAction.LEAVE;
+  let tmp8 = action === tmp4(12575).ActivityAction.LEAVE;
   const tmp6 = metroImportAll;
   const tmp7 = metroImportDefault;
   if (tmp8) {
     const obj = { style: tmp3.ongoingActivityJoinedContainer };
-    tmp8 = metroRequire(tmp(7104), obj);
+    tmp8 = metroRequire(tmp(7048), obj);
   }
   const items = [tmp8, ];
   let id1;
@@ -190,10 +190,10 @@ export default function ActivityShelfItem(arg0) {
   const tmp8Result = TestModeUtils;
   const isTestModeForApplication = tmp8Result.useIsTestModeForApplication(activityItem.application.id);
   const obj3 = { activeOpacity: 0.7, onPress: onActivityItemSelected2, disabled: activityAction === useActivityShelfItem.ActivityAction.LEAVE, androidRippleConfig: ANDROID_FOREGROUND_RIPPLE, style: items1, children: items4 };
-  const PressableOpacity = tmp8(7124).PressableOpacity;
+  const PressableOpacity = tmp8(7068).PressableOpacity;
   items1 = [tmp.container, { width, height }];
   const obj4 = { theme: ThemeTypes.DARK, children: items3 };
-  const ThemeContextProvider = tmp8(5209).ThemeContextProvider;
+  const ThemeContextProvider = tmp8(5229).ThemeContextProvider;
   const obj5 = { style: tmp.imageOuterContainer, children: items2 };
   const obj6 = { accessibilityLabel: activityItem.application.name, imageBackground: tmp10, aspectRatio: width / height };
   const tmp3Result = NativeViewDefault;
@@ -208,7 +208,7 @@ export default function ActivityShelfItem(arg0) {
   let tmp15Result = null;
   if (tmp11) {
     const obj8 = { labelType };
-    tmp15Result = tmp15(tmp3(12639), obj8);
+    tmp15Result = tmp15(tmp3(12604), obj8);
   }
   items3[1] = tmp15Result;
   let tmp15Result3 = null;
@@ -224,7 +224,7 @@ export default function ActivityShelfItem(arg0) {
   }
   items3[2] = tmp15Result3;
   items4 = [metroImportAll(ThemeContextProvider, obj4), ];
-  let tmp15Result4 = activityAction === tmp8(12610).ActivityAction.START;
+  let tmp15Result4 = activityAction === tmp8(12575).ActivityAction.START;
   if (tmp15Result4) {
     const obj11 = { action: activityAction, channelId: id1, guildId: guildId1, activityItem };
     id1 = undefined;

@@ -1,8 +1,8 @@
-// Module ID: 6495
-// Function ID: 6496
+// Module ID: 6515
+// Function ID: 6516
 // Dependencies: [2]
 
-// Module 6495
+// Module 6515
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/hat/headband.png.js");

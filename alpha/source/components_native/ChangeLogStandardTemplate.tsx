@@ -1,24 +1,24 @@
-// Module ID: 8711
-// Function ID: 8712
+// Module ID: 8657
+// Function ID: 8658
 // Name: ChangeLogStandardTemplate
-// Dependencies: [19, 17, 2191, 1072, 21, 5143, 575, 1187, 563, 8712, 1252, 5846, 2072, 8714, 5891, 7431, 8173, 8722, 1113, 4955, 8724, 8726, 2]
+// Dependencies: [19, 17, 2186, 1072, 21, 5170, 575, 1187, 563, 8658, 1252, 5864, 2067, 8660, 5910, 7378, 8119, 8668, 1113, 4982, 8670, 8672, 2]
 // Exports: changelogRules, getRenderChangelog
 
-// Module 8711 (ChangeLogStandardTemplate)
+// Module 8657 (ChangeLogStandardTemplate)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _mod2072 from "module_2072" /* 2072 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4955 */;
-import LinkingDefault from "Linking" /* 5846 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5891 */;
-import ChangeLogUtilsDefault from "ChangeLogUtils" /* 8714 */;
+import _mod2067 from "module_2067" /* 2067 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4982 */;
+import LinkingDefault from "Linking" /* 5864 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5910 */;
+import ChangeLogUtilsDefault from "ChangeLogUtils" /* 8660 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let video;
@@ -43,7 +43,7 @@ const Link = (arg0) => {
 };
 function LHeading(className) {
   let items;
-  const f125809 = (item) => {
+  const f126039 = (item) => {
     let obj;
     if ("marginTop" === item) {
       obj = { marginTop: 10 };
@@ -68,7 +68,7 @@ function LHeading(className) {
   const tmp2 = unpackModuleId;
   if (null != className.className) {
     const parts = str.split(" ");
-    const mapped = parts.map(f125809);
+    const mapped = parts.map(f126039);
     combined = mapped.concat(tmp5);
   }
   items = [authStore(LegacyText, { accessibilityRole: "header", style: combined, children }), ];
@@ -76,7 +76,7 @@ function LHeading(className) {
   let combined1;
   if (null != className.className) {
     const parts1 = str.split(" ");
-    const mapped1 = parts1.map(f125809);
+    const mapped1 = parts1.map(f126039);
     combined1 = mapped1.concat(tmp7);
   }
   items[1] = authStore(React3, { style: combined1 });
@@ -92,7 +92,7 @@ function LinkInner(target) {
   let obj = target(563);
   const items = [LocaleStore];
   const stateFromStores = obj.useStateFromStores(items, () => locale.locale);
-  let obj2 = target(8712);
+  let obj2 = target(8658);
   const changelog = obj2.useChangelog(changelogId, stateFromStores).changelog;
   const obj3 = {
     accessibilityRole: "link",
@@ -121,9 +121,9 @@ function LinkInner(target) {
       }
       const obj = { change_log_id: "" + date + ":" + num, cta_type: "inline_link", target };
       track(CHANGE_LOG_CTA_CLICKED, obj);
-      const openURL = tmp(5846).openURL;
+      const openURL = tmp(5864).openURL;
       LinkingDefault;
-      const obj2 = _mod2072;
+      const obj2 = _mod2067;
       openURL(obj2.sanitizeUrl(target));
     },
     children
@@ -205,47 +205,47 @@ const memoResult1 = react.memo((video) => {
   items1[1] = reactParserFor(defaultRules)(changeLog.body, false);
   items2 = [closure_11(tmp4, obj2), ];
   const obj6 = { bottom: true, style: tmp.footer, children: items3 };
-  const SafeAreaPaddingView = onScroll(7431).SafeAreaPaddingView;
+  const SafeAreaPaddingView = onScroll(7378).SafeAreaPaddingView;
   const obj7 = {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8722).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(8668).XNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl.string(onScroll(1113).t["/lXfom"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(getLocalizedLinkDefault(constants.TWITTER));
     }
   };
-  const IconButton = onScroll(8173).IconButton;
+  const IconButton = onScroll(8119).IconButton;
   intl = onScroll(1113).intl;
   items3 = [closure_10(IconButton, obj7), , ];
   const obj8 = {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8724).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(8670).FacebookNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl2.string(onScroll(1113).t["h0or/l"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(constants2.FACEBOOK_URL);
     }
   };
-  const IconButton2 = onScroll(8173).IconButton;
+  const IconButton2 = onScroll(8119).IconButton;
   intl2 = onScroll(1113).intl;
   items3[1] = closure_10(IconButton2, obj8);
   const obj9 = {
     size: "sm",
     variant: "tertiary",
     accessibilityRole: "link",
-    icon: closure_10(onScroll(8726).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
+    icon: closure_10(onScroll(8672).InstagramNeutralIcon, { size: "sm", color: "interactive-icon-default" }),
     accessibilityLabel: intl3.string(onScroll(1113).t["5uVPyf"]),
     onPress() {
       const obj = LinkingDefault;
       obj.openURL(constants2.INSTAGRAM_URL);
     }
   };
-  const IconButton3 = onScroll(8173).IconButton;
+  const IconButton3 = onScroll(8119).IconButton;
   intl3 = onScroll(1113).intl;
   items3[2] = closure_10(IconButton3, obj9);
   items2[1] = closure_11(SafeAreaPaddingView, obj6);

@@ -1,38 +1,78 @@
-// Module ID: 17620
-// Function ID: 17621
+// Module ID: 17609
+// Function ID: 17610
 // Name: TypingIndicatorSetting
-// Dependencies: [1072, 16894, 4976, 11737, 1113, 3997, 17621, 13962, 17623, 2]
+// Dependencies: [19, 1072, 21, 17610, 16882, 5003, 16881, 5000, 11703, 1113, 4026, 17611, 13938, 17613, 2]
 
-// Module 17620 (TypingIndicatorSetting)
+// Module 17609 (TypingIndicatorSetting)
+import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef3997 from "module_3997" /* 3997 */;
-import dismissible_content from "dismissible_content" /* 4976 */;
-import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13962 */;
-import ChatDotsIcon from "ChatDotsIcon" /* 17621 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16894 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
+import _modDef4026 from "module_4026" /* 4026 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5000 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import CustomTypingIndicatorExperiment from "CustomTypingIndicatorExperiment" /* 13938 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16881 */;
+import CustomTypingIndicatorNewPresetsExperiment from "CustomTypingIndicatorNewPresetsExperiment" /* 17610 */;
+import ChatDotsIcon from "ChatDotsIcon" /* 17611 */;
+import react from "react" /* 19 */;
+import DismissibleBadgeUtils_mod from "DismissibleBadgeUtils" /* 16882 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let dependencyMap;
 
-let usePreNavigationAction;
-let useTrailing;
 const UserSettingsSections = Constants.UserSettingsSections;
-const dismissibleBadgeRouteProps = DismissibleBadgeUtils.createDismissibleBadgeRouteProps(dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE);
-({ useTrailing, usePreNavigationAction } = dismissibleBadgeRouteProps);
+const jsx = Fragment.jsx;
+const TypingIndicatorSetting = "TypingIndicatorSetting";
+let DismissibleBadgeUtils = DismissibleBadgeUtils_mod;
+let closure_6 = DismissibleBadgeUtils.createDismissibleBadgePreNavigationAction(dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE, function useCanShowLaunchBadge() {
+  const obj = CustomTypingIndicatorNewPresetsExperiment;
+  return !obj.useCustomTypingIndicatorNewPresetsConfig(TypingIndicatorSetting).enabled;
+});
+DismissibleBadgeUtils = DismissibleBadgeUtils_mod;
+let closure_7 = DismissibleBadgeUtils.createDismissibleBadgePreNavigationAction(dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_PRESETS_SETTINGS_BADGE, function useCanShowNewPresetsBadge() {
+  const obj = CustomTypingIndicatorNewPresetsExperiment;
+  return obj.useCustomTypingIndicatorNewPresetsConfig(TypingIndicatorSetting).enabled;
+});
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3997["pT+BVM"]);
+    return intl.string(_modDef4026["pT+BVM"]);
   },
   parent: null,
   IconComponent: ChatDotsIcon.ChatDotsIcon,
-  useTrailing,
-  usePreNavigationAction,
+  useTrailing() {
+    const obj = CustomTypingIndicatorNewPresetsExperiment;
+    const enabled = obj.useCustomTypingIndicatorNewPresetsConfig(TypingIndicatorSetting).enabled;
+    DismissiblePremiumNewBadgeDefault;
+    const DismissibleContent = dismissible_content.DismissibleContent;
+    return <tmp2 dismissibleContent={enabled ? DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_PRESETS_SETTINGS_BADGE : DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE} newPremiumStyle />;
+  },
+  usePreNavigationAction() {
+    let closure_2;
+    let enabled;
+    let obj = enabled(17610);
+    enabled = obj.useCustomTypingIndicatorNewPresetsConfig(TypingIndicatorSetting).enabled;
+    const tmp = closure_6();
+    let closure_1 = tmp;
+    const tmp2 = closure_7();
+    dependencyMap = tmp2;
+    const items = [enabled, tmp, tmp2];
+    return react.useCallback(() => {
+      closure_1();
+      closure_2();
+      const tmp3 = enabled;
+      if (tmp3) {
+        const obj = UserSettingsProtoActionCreators;
+        obj.addDismissedContent(dismissible_content.DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE);
+      }
+      return true;
+    }, items);
+  },
   usePredicate() {
     const obj = CustomTypingIndicatorExperiment;
-    return "settings" === obj.useCustomTypingIndicatorConfig("TypingIndicatorSetting").entryPoint;
+    return "settings" === obj.useCustomTypingIndicatorConfig(TypingIndicatorSetting).entryPoint;
   },
   screen: {
     route: UserSettingsSections.TYPING_INDICATOR,

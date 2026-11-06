@@ -1,14 +1,14 @@
-// Module ID: 11181
-// Function ID: 11182
+// Module ID: 11136
+// Function ID: 11137
 // Name: BellSlashIcon
-// Dependencies: [19, 21, 575, 5853, 11182, 2]
+// Dependencies: [19, 21, 575, 5871, 11137, 2]
 // Exports: BellSlashIcon
 
-// Module 11181 (BellSlashIcon)
+// Module 11136 (BellSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 11182 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 11137 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

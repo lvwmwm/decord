@@ -1,28 +1,33 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 13954
+// Function ID: 13955
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 2122, 1072, 21, 5143, 5157, 13979, 1652, 504, 1393, 5380, 7439, 1411, 2]
+// Dependencies: [32, 19, 2117, 1072, 21, 5170, 5184, 13955, 1652, 504, 1398, 5400, 7386, 1411, 2]
 // Exports: default
 
-// Module 13978 (CustomTypingIndicatorAnimatedEmoji)
+// Module 13954 (CustomTypingIndicatorAnimatedEmoji)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import user from "user" /* 1393 */;
+import user from "user" /* 1398 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5380 */;
+import timing_timing from "timing/timing" /* 5400 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 2122 */;
-import createStyles from "createStyles" /* 5143 */;
-import size from "module_2" /* 2 */;
+import AppStateStore from "AppStateStore" /* 2117 */;
+import createStyles from "createStyles" /* 5170 */;
+import size_mod from "module_2" /* 2 */;
 
 let set, set2, set3;
 
 const AppStates = Constants.AppStates;
 const jsx = Fragment.jsx;
 let c8 = 320;
-let closure_9 = createStyles.createStyles((fontSize) => ({ textEmoji: { fontSize }, imageEmoji: { width: fontSize, height: fontSize } }));
+let closure_9 = createStyles.createStyles((width) => {
+  const obj = { emojiContainer: { width, height: width, alignItems: "center", justifyContent: "center" }, textEmoji: size, imageEmoji: { width, height: width } };
+  size = { width: 18 * width / 14, height: 18 * width / 14, textAlign: "center", fontSize: 12 * width / 14, lineHeight: 18 * width / 14 };
+  return obj;
+});
 let closure_10 = { code: "(function CustomTypingIndicatorAnimatedEmojiTsx1(){let[angle,scale,ringRadius,translateY]=this.__closure;const currentAngle=angle.get();return{transform:[{scale:scale.get()},{translateX:-ringRadius*Math.sin(currentAngle)},{translateY:translateY.get()+ringRadius*(Math.cos(currentAngle)-1)}]};})" };
+let size = size_mod;
 let result = size.fileFinishedImporting("modules/custom_typing_indicator/native/CustomTypingIndicatorAnimatedEmoji.tsx");
 
 export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
@@ -32,6 +37,7 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
   let emojiURL;
   let index;
   let obj3;
+  let str;
   let tmp14;
   let tmp15;
   let tmp16;
@@ -186,7 +192,8 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
   const animatedStyle = tmp2Result8.useAnimatedStyle(CustomTypingIndicatorAnimatedEmojiTsx1);
   let obj2 = { style: animatedStyle, children: sharedValue(tmp7Result, obj3, emojisKey) };
   const View = tmp7(tmp3[8]).View;
-  let str = "\u{1F615}";
+  obj3 = { style: tmp.emojiContainer, name: str, src: emojiURL, fastImageStyle: null, textEmojiStyle: null, onError: callback };
+  str = "\u{1F615}";
   tmp7Result = tmp7(tmp3[12]);
   if (first !== name) {
     let str2 = "";
@@ -195,7 +202,6 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
     }
     str = str2;
   }
-  obj3 = { name: str, src: emojiURL, fastImageStyle: null, textEmojiStyle: null, onError: callback };
   emojiURL = undefined;
   if (first !== name) {
     if (null != emoji.id) {

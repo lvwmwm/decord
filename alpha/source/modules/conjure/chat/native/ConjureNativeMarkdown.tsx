@@ -1,19 +1,19 @@
-// Module ID: 12406
-// Function ID: 12407
+// Module ID: 12371
+// Function ID: 12372
 // Name: ConjureNativeMarkdown
-// Dependencies: [19, 17, 21, 575, 5143, 12407, 5763, 12347, 12408, 2]
+// Dependencies: [19, 17, 21, 575, 5170, 12372, 5781, 12312, 12373, 2]
 // Exports: ConjureRevealedMarkdown
 
-// Module 12406 (ConjureNativeMarkdown)
+// Module 12371 (ConjureNativeMarkdown)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import conjureMarkup from "conjureMarkup" /* 12347 */;
-import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12407 */;
-import useConjureRevealedText from "useConjureRevealedText" /* 12408 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import conjureMarkup from "conjureMarkup" /* 12312 */;
+import ConjureMarkdownBlocks from "ConjureMarkdownBlocks" /* 12372 */;
+import useConjureRevealedText from "useConjureRevealedText" /* 12373 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

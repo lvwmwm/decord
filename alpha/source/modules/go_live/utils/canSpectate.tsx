@@ -1,11 +1,11 @@
-// Module ID: 6893
-// Function ID: 6894
+// Module ID: 6835
+// Function ID: 6836
 // Name: canSpectate
-// Dependencies: [5905, 2]
+// Dependencies: [5924, 2]
 // Exports: default
 
-// Module 6893 (canSpectate)
-import Constants from "Constants" /* 5905 */;
+// Module 6835 (canSpectate)
+import Constants from "Constants" /* 5924 */;
 import size from "module_2" /* 2 */;
 
 const Features = Constants.Features;

@@ -2145,7 +2145,7 @@ class VideoFilterBackgroundBlur$Type extends MessageType12 {
 const prototype12 = VideoFilterBackgroundBlur$Type.prototype;
 const items9 = [{ no: 1, name: "use_blur", kind: "scalar", T: 8 }];
 let tmp19 = new "binaryReadMap12"("discord_protos.discord_users.v1.VideoFilterBackgroundBlur", items9, tmp6, tmp5, "create", tmp4, "internalBinaryRead", "internalBinaryWrite", "binaryReadMap1", undefined, tmp, require, dependencyMap, InboxTab);
-const authStore7 = tmp19;
+const keyExtractor = tmp19;
 const MessageType13 = _mod1197.MessageType;
 class VoiceAndVideoSettings$Type extends MessageType13 {
   constructor() {
@@ -2171,7 +2171,7 @@ class VoiceAndVideoSettings$Type extends MessageType13 {
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { videoBackgroundFilterDesktop: { oneofKind: "ti" } };
+    const obj = { videoBackgroundFilterDesktop: { oneofKind: "r" } };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
     _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);

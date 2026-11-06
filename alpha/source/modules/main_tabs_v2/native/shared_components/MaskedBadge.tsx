@@ -1,16 +1,16 @@
-// Module ID: 9972
-// Function ID: 9973
+// Module ID: 9923
+// Function ID: 9924
 // Name: MaskedBadge
-// Dependencies: [19, 21, 5143, 575, 1187, 9973, 2]
+// Dependencies: [19, 21, 5170, 575, 1187, 9924, 2]
 // Exports: default
 
-// Module 9972 (MaskedBadge)
+// Module 9923 (MaskedBadge)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import shared_components_BadgeDefault from "shared_components/Badge" /* 9973 */;
+import shared_components_BadgeDefault from "shared_components/Badge" /* 9924 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

@@ -1,17 +1,17 @@
-// Module ID: 14365
-// Function ID: 14366
+// Module ID: 14342
+// Function ID: 14343
 // Name: GuildPowerupsWarning
-// Dependencies: [19, 17, 21, 5143, 575, 14366, 7230, 5763, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 14343, 7177, 5781, 2]
 // Exports: default
 
-// Module 14365 (GuildPowerupsWarning)
+// Module 14342 (GuildPowerupsWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import useGuildPowerupsWarningConfigDefault from "useGuildPowerupsWarningConfig" /* 14366 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import useGuildPowerupsWarningConfigDefault from "useGuildPowerupsWarningConfig" /* 14343 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

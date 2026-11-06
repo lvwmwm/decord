@@ -1,33 +1,30 @@
-// Module ID: 16822
-// Function ID: 16823
+// Module ID: 15156
+// Function ID: 15157
 // Name: UserProfileWidgetAddActionSheet
-// Dependencies: [32, 19, 17, 502, 8900, 21, 5143, 575, 5763, 1113, 1627, 504, 12571, 8908, 5384, 5402, 16823, 16826, 16831, 9131, 7504, 7460, 12379, 14424, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 5781, 1113, 1627, 15155, 5422, 15146, 15157, 15158, 9077, 7449, 7405, 12344, 14401, 2]
 // Exports: default
 
-// Module 16822 (UserProfileWidgetAddActionSheet)
+// Module 15156 (UserProfileWidgetAddActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import Constants from "Constants" /* 8900 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8908 */;
-import WidgetUtils from "WidgetUtils" /* 12571 */;
-import useStableAddableWidgetsDefault from "useStableAddableWidgets" /* 16826 */;
-import UserProfileAddableWidgetCategories from "UserProfileAddableWidgetCategories" /* 16831 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import UserProfileWidgetOptionAddButtonDefault from "UserProfileWidgetOptionAddButton" /* 15146 */;
+import useAddProfileWidgetDefault from "useAddProfileWidget" /* 15155 */;
+import useStableAddableWidgetsDefault from "useStableAddableWidgets" /* 15157 */;
+import UserProfileAddableWidgetCategories from "UserProfileAddableWidgetCategories" /* 15158 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let importDefault;
+let _require, importDefault;
 
-let c9;
-let metroImportAll;
+let metroImportDefault;
+let metroRequire;
 let obj2;
 let obj3;
 let obj4;
@@ -36,77 +33,58 @@ function WidgetCategoryEmptyState(tabName) {
   let intl;
   let obj2;
   tabName = tabName.tabName;
-  const tmp = closure_10();
-  const obj = { style: tmp.emptyState, children: metroImportAll(Text, obj2) };
+  const tmp = closure_8();
+  const obj = { style: tmp.emptyState, children: metroRequire(Text, obj2) };
   obj2 = { variant: "body-md/medium", color: "text-subtle", style: tmp.emptyStateText, children: intl.formatToPlainString(intl4.t.mcdIFp, { tabName }) };
   Text = Text_Text.Text;
   intl = intl4.intl;
-  return metroImportAll(View, obj);
+  return metroRequire(View, obj);
 }
 function WidgetOptionsPage(widgets) {
-  let closure_1;
-  let id;
-  let items2;
-  let tmp6;
+  let closure_0;
+  let items;
+  let tmp5;
   widgets = widgets.widgets;
-  let stateFromStores;
   const tabName = widgets.tabName;
-  let tmp = closure_10();
+  let tmp = closure_8();
   const bottom = useSafeAreaInsetsDefault().bottom;
-  let obj = stateFromStores(504);
-  const items = [AuthenticationStore];
-  const tmp3 = stateFromStores;
-  stateFromStores = obj.useStateFromStores(items, () => id.getId());
-  const items1 = [stateFromStores];
-  importDefault = react.useCallback((getProfileEditAnalyticsOptions) => {
-    const obj = WidgetUtils;
-    obj.addWidgetToPending(getProfileEditAnalyticsOptions);
-    const trackUserProfileEditAction = UserProfileAnalyticsUtils.trackUserProfileEditAction;
-    const obj2 = { userId: stateFromStores, action: constants.WIDGET_ADDED };
-    UserProfileAnalyticsUtils;
-    const merged = Object.assign(getProfileEditAnalyticsOptions.getProfileEditAnalyticsOptions());
-    const result = trackUserProfileEditAction(obj2);
-    const obj3 = ActionSheetActionCreatorsDefault;
-    obj3.hideActionSheet();
-  }, items1);
+  _require = useAddProfileWidgetDefault();
   if (0 === widgets.length) {
-    let obj2 = { tabName };
-    tmp6 = closure_8(WidgetCategoryEmptyState, obj2);
+    const obj2 = { tabName };
+    tmp5 = closure_6(WidgetCategoryEmptyState, obj2);
   } else {
-    let obj3 = {
-      contentContainerStyle: items2,
+    let obj = {
+      contentContainerStyle: items,
       children: widgets.map((widget) => {
-          let closure_0 = widget;
           const obj = {
             widget,
             onPress() {
-              return closure_1(widget);
+              return widget(widget);
             },
-            padding: closure_1(dependencyMap[7]).space.PX_12
+            padding: nativeDefault.space.PX_12
           };
-          const tmp = closure_1(dependencyMap[16]);
-          return closure_1_8(tmp, obj, widget.getUniqueKey());
+          const tmp = UserProfileWidgetOptionAddButtonDefault;
+          return closure_1_6(tmp, obj, widget.getUniqueKey());
         })
     };
-    items2 = [tmp.list, ];
-    const obj4 = { paddingBottom: bottom };
-    items2[1] = obj4;
-    const BottomSheetScrollView = tmp3(5402).BottomSheetScrollView;
-    tmp6 = closure_8(BottomSheetScrollView, obj3);
+    items = [tmp.list, ];
+    const obj3 = { paddingBottom: bottom };
+    items[1] = obj3;
+    const BottomSheetScrollView = require("BottomSheetModal").BottomSheetScrollView;
+    tmp5 = closure_6(BottomSheetScrollView, obj);
   }
-  return tmp6;
+  return tmp5;
 }
 const View = react_native.View;
-let closure_7 = Constants.TrackUserProfileEditActions;
-({ jsx: metroImportAll, jsxs: c9 } = Fragment);
+({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, list: obj3, emptyState: obj4, emptyStateText: { textAlign: "center" } };
 obj2 = { flex: 1, gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { gap: nativeDefault.space.PX_12 };
 obj4 = { paddingVertical: nativeDefault.space.PX_24, paddingHorizontal: nativeDefault.space.PX_16 };
-let closure_10 = createStyles(obj);
-let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetAddActionSheet.tsx");
+let closure_8 = createStyles(obj);
+const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetAddActionSheet.tsx");
 
 export default function UserProfileWidgetAddActionSheet() {
   let BottomSheetTitleHeader;
@@ -120,7 +98,7 @@ export default function UserProfileWidgetAddActionSheet() {
   let items2;
   let obj5;
   let obj6;
-  const tmp = closure_10();
+  const tmp = closure_8();
   [first, _require] = react.useState(0);
   const tmp4 = useStableAddableWidgetsDefault();
   importDefault = tmp4;
@@ -137,23 +115,23 @@ export default function UserProfileWidgetAddActionSheet() {
   let obj = { pageWidth: first, items: items1 };
   const useSegmentedControlState = require("SegmentedControlState").useSegmentedControlState;
   const tmp8 = require("SegmentedControlState");
-  items1 = [{ id: "interests", label: stringResult, page: closure_8(WidgetOptionsPage, { widgets: interestsWidgets, tabName: stringResult }) }, ];
-  ({ id: "interests", label: stringResult, page: closure_8(WidgetOptionsPage, { widgets: interestsWidgets, tabName: stringResult }) });
-  items1[1] = { id: "gameStats", label: stringResult1, page: closure_8(WidgetOptionsPage, { widgets: applicationWidgets, tabName: stringResult1 }) };
-  ({ id: "gameStats", label: stringResult1, page: closure_8(WidgetOptionsPage, { widgets: applicationWidgets, tabName: stringResult1 }) });
+  items1 = [{ id: "interests", label: stringResult, page: closure_6(WidgetOptionsPage, { widgets: interestsWidgets, tabName: stringResult }) }, ];
+  ({ id: "interests", label: stringResult, page: closure_6(WidgetOptionsPage, { widgets: interestsWidgets, tabName: stringResult }) });
+  items1[1] = { id: "gameStats", label: stringResult1, page: closure_6(WidgetOptionsPage, { widgets: applicationWidgets, tabName: stringResult1 }) };
+  ({ id: "gameStats", label: stringResult1, page: closure_6(WidgetOptionsPage, { widgets: applicationWidgets, tabName: stringResult1 }) });
   const segmentedControlState = useSegmentedControlState(obj);
   const callback = react.useCallback((nativeEvent) => {
     closure_0(nativeEvent.nativeEvent.layout.width);
   }, []);
-  const obj4 = { header: closure_8(BottomSheetTitleHeader, obj5), scrollable: true, startExpanded: true, children: closure_9(View, obj6) };
+  const obj4 = { header: closure_6(BottomSheetTitleHeader, obj5), scrollable: true, startExpanded: true, children: closure_7(View, obj6) };
   const ActionSheet = require("ActionSheet").ActionSheet;
   obj5 = { title: intl3.string(require("intl").t["grUgR+"]) };
   BottomSheetTitleHeader = require("BottomSheetTitleHeader").BottomSheetTitleHeader;
   intl3 = require("intl").intl;
   obj6 = { style: tmp.container, onLayout: callback, children: items2 };
   items2 = [, ];
-  const obj7 = { children: closure_8(require("Tabs").Tabs, { state: segmentedControlState }) };
-  items2[0] = closure_8(View, obj7);
-  items2[1] = closure_8(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState });
-  return closure_8(ActionSheet, obj4);
+  const obj7 = { children: closure_6(require("Tabs").Tabs, { state: segmentedControlState }) };
+  items2[0] = closure_6(View, obj7);
+  items2[1] = closure_6(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState });
+  return closure_6(ActionSheet, obj4);
 };

@@ -1,16 +1,16 @@
-// Module ID: 9713
-// Function ID: 9714
+// Module ID: 9662
+// Function ID: 9663
 // Name: VirtualCurrencyActionCreators
-// Dependencies: [5, 7034, 1072, 3, 572, 1282, 6584, 9714, 1242, 2]
+// Dependencies: [5, 6976, 1072, 3, 572, 1282, 6604, 9663, 1242, 2]
 // Exports: fetchVirtualCurrencyTotalRedeemed, redeemVirtualCurrencyForSKU, setBalancePillOverlay
 
-// Module 9713 (VirtualCurrencyActionCreators)
+// Module 9662 (VirtualCurrencyActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 7034 */;
+import SKUStore from "SKUStore" /* 6976 */;
 import size from "module_2" /* 2 */;
 
 let applicationId, checkout_session_id, closure_2;

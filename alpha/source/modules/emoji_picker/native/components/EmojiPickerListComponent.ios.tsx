@@ -1,16 +1,17 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10181
+// Function ID: 10182
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 10129, 21, 10205, 10218, 10230, 10226, 7433, 2]
+// Dependencies: [19, 10080, 21, 10157, 10170, 10182, 10178, 7380, 2]
 // Exports: default
 
-// Module 10229 (EmojiPickerListComponent)
+// Module 10181 (EmojiPickerListComponent)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10129 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 10080 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
+let keyExtractor;
 
 let closure_4;
 let hasOwnProperty;
@@ -35,7 +36,7 @@ export default function EmojiPickerListComponent(paddingTop) {
   const items = [paddingTop, paddingBottom];
   const contentContainerStyle = paddingBottom.useMemo(() => ({ paddingTop, paddingBottom }), items);
   const getItemType = paddingBottom.useCallback((type) => type.type, []);
-  const keyExtractor = paddingBottom.useCallback((type, arg1) => "" + type.type + "-" + arg1, []);
+  keyExtractor = paddingBottom.useCallback((type, arg1) => "" + type.type + "-" + arg1, []);
   const overrideItemLayout = paddingBottom.useCallback((arg0, type) => {
     type = type.type;
     if (require("useEmojiPickerData").EmojiPickerItemType.PLACEHOLDER === type) {

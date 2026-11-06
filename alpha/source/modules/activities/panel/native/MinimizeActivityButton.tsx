@@ -1,15 +1,15 @@
-// Module ID: 19452
-// Function ID: 19453
+// Module ID: 19444
+// Function ID: 19445
 // Name: MinimizeActivityButton
-// Dependencies: [19, 17, 5793, 21, 5143, 5770, 11612, 1113, 8173, 2]
+// Dependencies: [19, 17, 5811, 21, 5170, 5788, 11574, 1113, 8119, 2]
 
-// Module 19452 (MinimizeActivityButton)
+// Module 19444 (MinimizeActivityButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5793 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11612 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5811 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11574 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -29,13 +29,13 @@ const memoResult = react.memo(function MinimizeActivityButton(arg0) {
     let tmp3;
     if ("" !== activityName) {
       ({ icon: AssetRegistryDefault, accessibilityLabel: intl2.string(setMode(1113).t.brPQ5U), onPress: callback, text: activityName, size: "sm", variant: "secondary-overlay", maxFontSizeMultiplier: 1, shrink: true });
-      const Button = setMode(5770).Button;
+      const Button = setMode(5788).Button;
       intl2 = setMode(1113).intl;
       tmp3 = <View style={tmp2.buttonParent}>{null}</View>;
     }
     return tmp3;
   }
-  const IconButton = setMode(8173).IconButton;
+  const IconButton = setMode(8119).IconButton;
   const intl = setMode(1113).intl;
   tmp3 = <IconButton icon={AssetRegistryDefault} accessibilityLabel={intl.string(setMode(1113).t.brPQ5U)} onPress={callback} size="sm" variant="secondary-overlay" maxFontSizeMultiplier={1} />;
 });

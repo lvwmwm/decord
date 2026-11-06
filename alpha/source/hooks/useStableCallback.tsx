@@ -1,10 +1,10 @@
-// Module ID: 7280
-// Function ID: 7281
+// Module ID: 7227
+// Function ID: 7228
 // Name: useStableCallback
-// Dependencies: [2, 7281]
+// Dependencies: [2, 7228]
 
-// Module 7280 (useStableCallback)
-import reactDefault from "react" /* 7281 */;
+// Module 7227 (useStableCallback)
+import reactDefault from "react" /* 7228 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("hooks/useStableCallback.tsx");

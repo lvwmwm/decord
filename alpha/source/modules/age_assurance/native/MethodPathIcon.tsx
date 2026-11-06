@@ -1,16 +1,16 @@
-// Module ID: 8175
-// Function ID: 8176
+// Module ID: 8121
+// Function ID: 8122
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 5143, 575, 5734, 8176, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5754, 8122, 2]
 // Exports: default
 
-// Module 8175 (MethodPathIcon)
+// Module 8121 (MethodPathIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import inlineStyles from "inlineStyles" /* 8176 */;
+import inlineStyles from "inlineStyles" /* 8122 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

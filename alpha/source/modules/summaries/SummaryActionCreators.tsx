@@ -1,24 +1,24 @@
-// Module ID: 10369
-// Function ID: 10370
+// Module ID: 10321
+// Function ID: 10322
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 6706, 4992, 10308, 1072, 1089, 572, 1282, 6584, 12, 10310, 563, 2]
+// Dependencies: [5, 19, 6648, 5019, 10260, 1072, 1089, 572, 1282, 6604, 12, 10262, 563, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 10369 (SummaryActionCreators)
+// Module 10321 (SummaryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import SummaryStore from "SummaryStore" /* 10308 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6648 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import SummaryStore from "SummaryStore" /* 10260 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
 
-const f97564 = () => connected.isConnected();
+const f97677 = () => connected.isConnected();
 function fetchSummary() {
   return obj(...arguments);
 }
@@ -503,7 +503,7 @@ function useChannelSummaries(channelIds) {
   let memo;
   obj = channelIds(memo[12]);
   const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f97564);
+  const stateFromStores = obj.useStateFromStores(items, f97677);
   const items1 = [channelIds];
   memo = react.useMemo(() => channelIds.join(","), items1);
   const items2 = [memo, stateFromStores];
@@ -717,7 +717,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
   let memo;
   const items1 = [GatewayConnectionStore];
   obj = items(memo[12]);
-  const stateFromStores = obj.useStateFromStores(items1, f97564);
+  const stateFromStores = obj.useStateFromStores(items1, f97677);
   const items2 = [items];
   memo = react.useMemo(() => channelIds.join(","), items2);
   const items3 = [memo, stateFromStores];

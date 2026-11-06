@@ -1,17 +1,17 @@
-// Module ID: 15954
-// Function ID: 15955
+// Module ID: 15949
+// Function ID: 15950
 // Name: BuildOverrideModal
-// Dependencies: [19, 17, 11558, 21, 5143, 575, 5379, 5150, 15955, 15956, 504, 13433, 2171, 7431, 5854, 5763, 1113, 5770, 6882, 2]
+// Dependencies: [19, 17, 11520, 21, 5170, 575, 5399, 5177, 15950, 15951, 504, 13407, 2166, 7378, 5872, 5781, 1113, 5788, 6824, 2]
 // Exports: default
 
-// Module 15954 (BuildOverrideModal)
+// Module 15949 (BuildOverrideModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13433 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13407 */;
 import react from "react" /* 19 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11558 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11520 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -53,12 +53,12 @@ export default function BuildOverrideModal(overrideUrl) {
   }
   let stateFromStores;
   const tmp = closure_8();
-  const tmp4 = stateFromStores(5379)();
-  const obj = str(5150);
+  const tmp4 = stateFromStores(5399)();
+  const obj = str(5177);
   if (obj.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(15955);
+    tmp2Result = tmp2(15950);
   } else {
-    tmp2Result = tmp2(15956);
+    tmp2Result = tmp2(15951);
   }
   const items = [BuildOverrideStore];
   const items1 = [str];
@@ -69,44 +69,44 @@ export default function BuildOverrideModal(overrideUrl) {
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp9 = targetBuildOverride[str(undefined, 13433).DEVICE_FIELD];
+      const tmp9 = targetBuildOverride[str(undefined, 13407).DEVICE_FIELD];
       if (tmp9 != null) {
         id = tmp9.id;
       }
     }
   }
-  const duration = stateFromStores(2171).duration;
-  stateFromStores(2171);
+  const duration = stateFromStores(2166).duration;
+  stateFromStores(2166);
   let expiresAt;
-  const diff = stateFromStores(2171)().diff;
-  stateFromStores(2171)();
+  const diff = stateFromStores(2166)().diff;
+  stateFromStores(2166)();
   if (override != null) {
     expiresAt = override.expiresAt;
   }
   const rect = { top: true, bottom: true, style: tmp.container, children: items4 };
   const durationResult = duration(diff(expiresAt));
   const obj2 = { style: tmp.content, children: items2 };
-  const obj3 = { style: tmp.imageWrapper, children: closure_5(stateFromStores(5854), { source: tmp2Result }) };
+  const obj3 = { style: tmp.imageWrapper, children: closure_5(stateFromStores(5872), { source: tmp2Result }) };
   const humanizeResult = durationResult.humanize();
-  const SafeAreaPaddingView = tmp5(7431).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp5(7378).SafeAreaPaddingView;
   items2 = [closure_5(View, obj3), , ];
   const obj4 = { style: tmp.text, variant: "body-md/medium", children: intl.string(str(1113).t["6ILkNN"]) };
-  const Text = tmp5(5763).Text;
+  const Text = tmp5(5781).Text;
   intl = tmp5(1113).intl;
   items2[1] = closure_5(Text, obj4);
   if (null != id) {
     const obj5 = { children: items3 };
     const obj6 = { style: tmp.buildOverrideName, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: id };
-    items3 = [closure_5(str(5763).Text, obj6), ];
+    items3 = [closure_5(str(5781).Text, obj6), ];
     const obj7 = { style: tmp.buildOverrideExpiration, variant: "body-md/medium", color: "text-default", children: intl3.format(str(1113).t.lOsPpu, obj8) };
-    const Text3 = tmp5(5763).Text;
+    const Text3 = tmp5(5781).Text;
     intl3 = tmp5(1113).intl;
     obj8 = { expirationDuration: humanizeResult };
     items3[1] = closure_5(Text3, obj7);
     tmp16Result = tmp14(closure_6, obj5);
   } else {
     const obj9 = { style: tmp.buildOverrideInvalid, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(str(1113).t["cz+sue"]) };
-    const Text2 = tmp5(5763).Text;
+    const Text2 = tmp5(5781).Text;
     intl2 = tmp5(1113).intl;
     tmp16Result = tmp16(Text2, obj9);
   }
@@ -129,7 +129,7 @@ export default function BuildOverrideModal(overrideUrl) {
           const result = setBuildOverrideFromLink(str);
         }
     };
-    Button2 = tmp5(5770).Button;
+    Button2 = tmp5(5788).Button;
     intl5 = tmp5(1113).intl;
     items5 = [closure_5(View, obj12), ];
     const obj14 = {
@@ -141,7 +141,7 @@ export default function BuildOverrideModal(overrideUrl) {
           return arr.pop();
         }
     };
-    const Button3 = tmp5(5770).Button;
+    const Button3 = tmp5(5788).Button;
     intl6 = tmp5(1113).intl;
     items5[1] = closure_5(Button3, obj14);
     tmp14Result2 = tmp14(closure_6, obj11);
@@ -154,7 +154,7 @@ export default function BuildOverrideModal(overrideUrl) {
           return arr.pop();
         }
     };
-    const Button = tmp5(5770).Button;
+    const Button = tmp5(5788).Button;
     intl4 = tmp5(1113).intl;
     tmp14Result2 = tmp16(Button, obj15);
   }

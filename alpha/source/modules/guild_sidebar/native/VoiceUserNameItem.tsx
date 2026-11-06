@@ -1,20 +1,20 @@
-// Module ID: 18467
-// Function ID: 18468
+// Module ID: 18459
+// Function ID: 18460
 // Name: VoiceUserNameItem
-// Dependencies: [32, 19, 17, 21, 5143, 6577, 9442, 5763, 5197, 1113, 18468, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 6597, 9388, 5781, 5224, 1113, 18460, 2]
 // Exports: default
 
-// Module 18467 (VoiceUserNameItem)
+// Module 18459 (VoiceUserNameItem)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5197 */;
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6577 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9442 */;
-import VoiceGuildTagDefault from "VoiceGuildTag" /* 18468 */;
+import UserUtilsDefault from "UserUtils" /* 5224 */;
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6597 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9388 */;
+import VoiceGuildTagDefault from "VoiceGuildTag" /* 18460 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -83,7 +83,7 @@ export default function VoiceUserNameItem(arg0) {
   items[1] = measuringTag;
   const obj4 = { variant, color, lineClamp: 1, onLayout: callback1, style: tmp20, children: items1 };
   tmp20 = null != displayNameStylesFont;
-  const Text = tmp5(5763).Text;
+  const Text = tmp5(5781).Text;
   if (tmp20) {
     tmp20 = { fontFamily: displayNameStylesFont };
     const obj5 = { fontFamily: displayNameStylesFont };
@@ -99,7 +99,7 @@ export default function VoiceUserNameItem(arg0) {
   items1 = [nick, ];
   if (isGuest) {
     const obj6 = { variant: "body-sm/normal", lineClamp: 1, color: "status-positive", children: items2 };
-    const Text2 = tmp5(5763).Text;
+    const Text2 = tmp5(5781).Text;
     const intl = tmp5(1113).intl;
     items2 = ["\u00A0", intl.string(intl2.t["pFO/Ph"])];
     isGuest = tmp18(Text2, obj6);

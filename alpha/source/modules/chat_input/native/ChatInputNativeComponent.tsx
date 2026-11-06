@@ -1,21 +1,21 @@
-// Module ID: 13037
-// Function ID: 13038
+// Module ID: 13002
+// Function ID: 13003
 // Name: chat_input/ChatInputNativeComponent
-// Dependencies: [19, 5167, 21, 5143, 575, 1113, 5379, 5150, 5140, 1377, 13038, 13042, 13025, 2]
+// Dependencies: [19, 5194, 21, 5170, 575, 1113, 5399, 5177, 5167, 1377, 13003, 13007, 12990, 2]
 
-// Module 13037 (chat_input/ChatInputNativeComponent)
+// Module 13002 (chat_input/ChatInputNativeComponent)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ColorUtils from "ColorUtils" /* 5140 */;
-import shared from "shared" /* 5150 */;
-import useTheme from "useTheme" /* 5379 */;
-import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 13025 */;
-import MobileMarkdownFormatMenuExperiment from "MobileMarkdownFormatMenuExperiment" /* 13042 */;
+import ColorUtils from "ColorUtils" /* 5167 */;
+import shared from "shared" /* 5177 */;
+import useTheme from "useTheme" /* 5399 */;
+import ChatInputNativeComponent2 from "ChatInputNativeComponent" /* 12990 */;
+import MobileMarkdownFormatMenuExperiment from "MobileMarkdownFormatMenuExperiment" /* 13007 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5167 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5194 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -89,7 +89,7 @@ class ChatInputNativeComponent {
     if (isThemeDarkResult) {
       num2 = 1;
     }
-    const tmp14 = tmp10(13038)(onMaxHeightChanged);
+    const tmp14 = tmp10(13003)(onMaxHeightChanged);
     const tmp4Result6 = MobileMarkdownFormatMenuExperiment;
     const isMobileMarkdownFormatMenuEnabled = tmp4Result6.useIsMobileMarkdownFormatMenuEnabled("ChatInputNativeComponent");
     const obj3 = { accessible, accessibilityLabel: tmp12, children: tmp13, editable, showFormatMenu: isMobileMarkdownFormatMenuEnabled, keyboardAppearance: num2, keyboardType: "default", markAsSpoilerTitle, maxHeight, onBeginFocus, onEndBlur, onChangeContentSize, onSelectionOrTextChange, onTextFlushed, onPasteImage, onPasteCommand, onTapAction, onRequestSend, placeholder, placeholderColor: color2, ref, selectionColor: hexWithOpacityResult, setNoExtractUI, shouldShowCursor, style, textColor: color, verticalInset };

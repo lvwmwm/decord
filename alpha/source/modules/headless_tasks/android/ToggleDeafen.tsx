@@ -1,13 +1,13 @@
-// Module ID: 20473
-// Function ID: 20474
+// Module ID: 20481
+// Function ID: 20482
 // Name: ToggleDeafen
-// Dependencies: [4992, 20470, 12209, 12176, 2]
+// Dependencies: [5019, 20478, 12178, 12145, 2]
 
-// Module 20473 (ToggleDeafen)
-import VoiceActionUtils from "VoiceActionUtils" /* 12176 */;
-import useDeafStates from "useDeafStates" /* 12209 */;
-import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20470 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+// Module 20481 (ToggleDeafen)
+import VoiceActionUtils from "VoiceActionUtils" /* 12145 */;
+import useDeafStates from "useDeafStates" /* 12178 */;
+import HeadlessTaskUtilsDefault from "HeadlessTaskUtils" /* 20478 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/headless_tasks/android/ToggleDeafen.tsx");

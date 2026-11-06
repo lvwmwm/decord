@@ -1,22 +1,22 @@
-// Module ID: 17241
-// Function ID: 17242
+// Module ID: 17229
+// Function ID: 17230
 // Name: BountiesScrollRecapFooter
-// Dependencies: [19, 17, 5144, 21, 5143, 575, 1377, 1113, 5763, 9685, 504, 5275, 2]
+// Dependencies: [19, 17, 5171, 21, 5170, 575, 1377, 1113, 5781, 9634, 504, 5295, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 17241 (BountiesScrollRecapFooter)
+// Module 17229 (BountiesScrollRecapFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5275 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import OrbsIcon from "OrbsIcon" /* 9685 */;
+import BountiesScrollGradientRive2 from "BountiesScrollGradientRive" /* 5295 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import OrbsIcon from "OrbsIcon" /* 9634 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

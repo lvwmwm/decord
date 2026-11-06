@@ -1,13 +1,13 @@
-// Module ID: 14890
-// Function ID: 14891
+// Module ID: 14867
+// Function ID: 14868
 // Name: openAppStoreOverlayBottomSheet
-// Dependencies: [1072, 5384, 14891, 2123, 8007, 1108, 14887, 2]
+// Dependencies: [1072, 5404, 14868, 2118, 7961, 1108, 14863, 2]
 // Exports: openAppStoreOverlayBottomSheet
 
-// Module 14890 (openAppStoreOverlayBottomSheet)
+// Module 14867 (openAppStoreOverlayBottomSheet)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import AnalyticsActions from "AnalyticsActions" /* 8007 */;
-import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14887 */;
+import AnalyticsActions from "AnalyticsActions" /* 7961 */;
+import AppStoreOverlayTelemetryManager from "AppStoreOverlayTelemetryManager" /* 14863 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 10314
-// Function ID: 10315
+// Module ID: 10266
+// Function ID: 10267
 // Name: handleNSFWGuildInvite
-// Dependencies: [5010, 5014, 1072, 6875, 1377, 10315, 5829, 6876, 10316, 2]
+// Dependencies: [5037, 5041, 1072, 6817, 1377, 10267, 5847, 6818, 10268, 2]
 // Exports: handleNSFWGuildInvite, isNSFWInvite
 
-// Module 10314 (handleNSFWGuildInvite)
+// Module 10266 (handleNSFWGuildInvite)
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import GuildRecord from "GuildRecord" /* 5010 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5829 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6875 */;
-import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6876 */;
-import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10315 */;
-import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10316 */;
-import GuildStore from "GuildStore" /* 5014 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5847 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6817 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6818 */;
+import NsfwGateGuildAlert from "NsfwGateGuildAlert" /* 10267 */;
+import NsfwServerInviteWarningAlert from "NsfwServerInviteWarningAlert" /* 10268 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const isGuildLurker = GuildRecord.isGuildLurker;

@@ -1,16 +1,16 @@
-// Module ID: 15518
-// Function ID: 15519
+// Module ID: 15512
+// Function ID: 15513
 // Name: PremiumSubscriptionInvoice
-// Dependencies: [109, 32, 5, 19, 2184, 1072, 2176, 1282, 572, 6584, 38, 6593, 2]
+// Dependencies: [109, 32, 5, 19, 2179, 1072, 2171, 1282, 572, 6604, 38, 6613, 2]
 // Exports: getItemUnitPriceWithDiscount, useFetchGenericInvoicePreview, useFetchSubscriptionGiftInvoicePreview, useFetchSubscriptionInvoicePreview, useGetSubscriptionInvoice
 
-// Module 15518 (PremiumSubscriptionInvoice)
+// Module 15512 (PremiumSubscriptionInvoice)
 import Constants from "Constants" /* 1072 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import InvoiceRecord from "InvoiceRecord" /* 2184 */;
+import InvoiceRecord from "InvoiceRecord" /* 2179 */;
 import size from "module_2" /* 2 */;
 
 let apply_wallet_balance, payment_source_id, planId, sku_subscription_plan_id;

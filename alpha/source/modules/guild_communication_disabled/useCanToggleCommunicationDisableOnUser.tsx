@@ -1,15 +1,15 @@
-// Module ID: 13494
-// Function ID: 13495
+// Module ID: 13469
+// Function ID: 13470
 // Name: useCanToggleCommunicationDisableOnUser
-// Dependencies: [5010, 5014, 5075, 1385, 1072, 5080, 504, 2]
+// Dependencies: [5037, 5041, 5102, 1385, 1072, 5107, 504, 2]
 // Exports: default
 
-// Module 13494 (useCanToggleCommunicationDisableOnUser)
+// Module 13469 (useCanToggleCommunicationDisableOnUser)
 import Constants from "Constants" /* 1072 */;
-import GuildRecord from "GuildRecord" /* 5010 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5080 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

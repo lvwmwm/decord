@@ -1,16 +1,16 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 14838
+// Function ID: 14839
 // Name: PlayStationLinkModal
-// Dependencies: [19, 14863, 21, 7700, 8504, 14861, 1113, 14864, 9887, 14866, 14868, 14870, 14871, 9886, 14860, 7309, 2]
+// Dependencies: [19, 14839, 21, 7653, 8450, 14837, 1113, 14840, 9837, 14842, 14844, 14846, 14847, 9836, 14836, 7256, 2]
 // Exports: default
 
-// Module 14862 (PlayStationLinkModal)
+// Module 14838 (PlayStationLinkModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 7700 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8504 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14861 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14863 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7653 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8450 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 14837 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 14839 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 export default function PlayStationLinkModal(platformType) {
   platformType = platformType.platformType;
   const locationStack = platformType.locationStack;
-  let obj = platformType(9886);
+  let obj = platformType(9836);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [platformType, twoWayLinkStyles];
   const memo = react.useMemo(() => {
@@ -101,9 +101,9 @@ export default function PlayStationLinkModal(platformType) {
       }
     };
   }, items);
-  const obj2 = platformType(14860);
+  const obj2 = platformType(14836);
   const accountLinkStepTracking = obj2.useAccountLinkStepTracking(platformType, locationStack);
-  const Navigator = platformType(7309).Navigator;
+  const Navigator = platformType(7256).Navigator;
   const intl = platformType(1113).intl;
   return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={constants.LANDING} headerBackTitle={intl.string(platformType(1113).t["13/7kX"])} />;
 };

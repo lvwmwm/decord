@@ -1,17 +1,17 @@
-// Module ID: 19943
-// Function ID: 19944
+// Module ID: 19950
+// Function ID: 19951
 // Name: SubscriptionManager
-// Dependencies: [5, 1385, 2177, 2181, 7724, 1387, 7426, 2112, 6673, 7727, 2]
+// Dependencies: [5, 1385, 2172, 2176, 7677, 1387, 7373, 2107, 6614, 7680, 2]
 
-// Module 19943 (SubscriptionManager)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
+// Module 19950 (SubscriptionManager)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1385 */;
-import BillingInfoStore from "BillingInfoStore" /* 2177 */;
-import SubscriptionStore from "SubscriptionStore" /* 2181 */;
-import EntitlementStore from "EntitlementStore" /* 7724 */;
+import BillingInfoStore from "BillingInfoStore" /* 2172 */;
+import SubscriptionStore from "SubscriptionStore" /* 2176 */;
+import EntitlementStore from "EntitlementStore" /* 7677 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, currentUser, isFetchingMostRecentSubscription;

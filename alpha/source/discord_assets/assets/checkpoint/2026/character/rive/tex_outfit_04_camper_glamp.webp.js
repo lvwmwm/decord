@@ -1,8 +1,8 @@
-// Module ID: 13781
-// Function ID: 13782
+// Module ID: 13756
+// Function ID: 13757
 // Dependencies: [2]
 
-// Module 13781
+// Module 13756
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_04_camper_glamp.webp.js");

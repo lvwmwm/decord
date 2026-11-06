@@ -1,12 +1,14 @@
-// Module ID: 17171
-// Function ID: 17172
+// Module ID: 17159
+// Function ID: 17160
 // Name: useOrbBalanceEntrypoint
-// Dependencies: [5, 19, 17172, 5384, 17173, 2123, 14737, 14983, 17189, 17175, 2]
-// Exports: useOrbBalanceEntrypoint
+// Dependencies: [5, 19, 17160, 5404, 17161, 2118, 14714, 14960, 17177, 17163, 2]
+// Exports: openBalanceWidgetActionSheet, useIsOrbWalletEntrypointEnabled, useOrbBalanceEntrypoint
 
-// Module 17171 (useOrbBalanceEntrypoint)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import OrbWalletConstants from "OrbWalletConstants" /* 17172 */;
+// Module 17159 (useOrbBalanceEntrypoint)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14960 */;
+import OrbWalletConstants from "OrbWalletConstants" /* 17160 */;
+import OrbchievementsExperiment from "OrbchievementsExperiment" /* 17177 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -17,6 +19,96 @@ let _require, c0, c1;
 let closure_5 = OrbWalletConstants.ORB_WALLET_ACTION_SHEET_KEY;
 const result = size.fileFinishedImporting("modules/virtual_currency/native/useOrbBalanceEntrypoint.tsx");
 
+export function openBalanceWidgetActionSheet(isOrbWalletEntrypointEnabled, arg1) {
+  let closure_0 = isOrbWalletEntrypointEnabled;
+  const openLazy = ActionSheetActionCreatorsDefault.openLazy;
+  let str = "BalanceWidgetActionSheet";
+  ActionSheetActionCreatorsDefault;
+  const tmp2 = _asyncToGenerator(async (arg0, value) => {
+    let v3;
+    if (c0 === 2) {
+      c0 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c0 = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            const tmp13 = c0(closure_1_2[5]);
+            if (closure_0) {
+              c1 = 2;
+              c0 = 1;
+              const obj4 = { value: tmp13(closure_1_2[4], closure_1_2.paths), done: false };
+              return obj4;
+            } else {
+              c1 = 1;
+              c0 = 1;
+              const obj5 = { value: tmp13(closure_1_2[6], closure_1_2.paths), done: false };
+              return obj5;
+            }
+          }
+        } else {
+          let _default;
+          if (1 === tmp3) {
+            if (arg0 === 1) {
+              c0 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c0 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
+            } else {
+              _default = value.default;
+            }
+          } else if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            _default = value.default;
+          }
+          c0 = 3;
+          const obj7 = { value: _default, done: true };
+          return obj7;
+        }
+      } catch (tmp6) {
+        c0 = 3;
+        throw tmp6;
+      }
+    }
+  });
+  if (isOrbWalletEntrypointEnabled) {
+    str = closure_5;
+  }
+  openLazy(tmp2, str, arg1);
+}
+export function useIsOrbWalletEntrypointEnabled(location) {
+  const _location = location.location;
+  const obj = useVirtualCurrencyMobileEnabled;
+  const enabled = obj.useVirtualCurrencyMobileEnabled().enabled;
+  const obj2 = OrbchievementsExperiment;
+  const tmp = obj2.useIsOrbchievementsMobileEnabled({ location: _location }) && enabled;
+  return tmp;
+}
 export function useOrbBalanceEntrypoint(location) {
   let closure_0;
   let hasUnreadUpdate;
@@ -30,7 +122,7 @@ export function useOrbBalanceEntrypoint(location) {
   let obj2 = require("OrbchievementsExperiment");
   const tmp3 = obj2.useIsOrbchievementsMobileEnabled({ location: _location }) && enabled;
   _require = tmp3;
-  const tmpResult = tmp(17175);
+  const tmpResult = tmp(17163);
   const orbChallengeUnreadState = tmpResult.useOrbChallengeUnreadState({ enabled: tmp3 });
   const items = [tmp3];
   ({ hasUnreadUpdate, notificationType } = orbChallengeUnreadState);

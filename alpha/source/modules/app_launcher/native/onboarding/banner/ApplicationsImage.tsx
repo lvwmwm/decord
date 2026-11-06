@@ -1,17 +1,17 @@
-// Module ID: 12603
-// Function ID: 12604
+// Module ID: 12568
+// Function ID: 12569
 // Name: ApplicationsImage
-// Dependencies: [19, 17, 21, 5143, 575, 12604, 5854, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 12569, 5872, 2]
 // Exports: default
 
-// Module 12603 (ApplicationsImage)
+// Module 12568 (ApplicationsImage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12604 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12569 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

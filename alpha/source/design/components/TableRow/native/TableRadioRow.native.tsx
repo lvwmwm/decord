@@ -1,15 +1,15 @@
-// Module ID: 7205
-// Function ID: 7206
+// Module ID: 7152
+// Function ID: 7153
 // Name: TableRadioRow
-// Dependencies: [19, 21, 7202, 5313, 5210, 7119, 7206, 2]
+// Dependencies: [19, 21, 7149, 5230, 7063, 7077, 7153, 2]
 // Exports: TableRadioRow
 
-// Module 7205 (TableRadioRow)
+// Module 7152 (TableRadioRow)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 5210 */;
-import native from "native" /* 5313 */;
-import TableRadioGroup from "TableRadioGroup" /* 7202 */;
-import FormRadio from "FormRadio" /* 7206 */;
+import react_native from "react-native" /* 5230 */;
+import TableRowBadge from "TableRowBadge" /* 7077 */;
+import TableRadioGroup from "TableRadioGroup" /* 7149 */;
+import FormRadio from "FormRadio" /* 7153 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,38 +19,32 @@ const result = size.fileFinishedImporting("design/components/TableRow/native/Tab
 export function TableRadioRow(value) {
   let accessibilityRole;
   let accessibilityState;
+  let badge;
   let closure_129_1;
   let disabled;
   let label;
   let legacyCompat_selected;
   let subLabel;
   value = value.value;
-  ({ label, subLabel, disabled } = value);
+  ({ label, subLabel, badge, disabled } = value);
   if (disabled === undefined) {
     disabled = false;
   }
   ({ legacyCompat_selected, legacyCompat_onPress: closure_129_1 } = value);
   const accessibilityHint = value.accessibilityHint;
-  const merged = Object.assign(value, Object.assign({ value: 0, label: 0, subLabel: 0, disabled: 0, accessibilityHint: 0, legacyCompat_selected: 0, legacyCompat_onPress: 0 }));
+  const merged = Object.assign(value, Object.assign({ value: 0, label: 0, subLabel: 0, badge: 0, disabled: 0, accessibilityHint: 0, legacyCompat_selected: 0, legacyCompat_onPress: 0 }));
   const context = react.useContext(TableRadioGroup.TableRadioGroupContext);
   const onSelect = context.onSelect;
   if (legacyCompat_selected == null) {
     legacyCompat_selected = context.selectedValue === value;
   }
-  const tmp2Result = native;
-  const nodeText = tmp2Result.getNodeText(label);
-  const tmp2Result3 = native;
-  const nodeText1 = tmp2Result3.getNodeText(subLabel);
-  const tmp2Result4 = react_native;
-  const radioA11yNative = tmp2Result4.useRadioA11yNative({ selected: legacyCompat_selected, disabled });
+  const tmp2Result = react_native;
+  const radioA11yNative = tmp2Result.useRadioA11yNative({ selected: legacyCompat_selected, disabled });
   ({ accessibilityRole, accessibilityState } = radioA11yNative);
-  const TableRow = tmp2(7119).TableRow;
+  const TableRow = tmp2(7063).TableRow;
   const merged1 = Object.assign(merged);
-  let str = nodeText1;
-  if (nodeText1 == null) {
-    str = "";
-  }
-  return <TableRow arrow={false} label={label} subLabel={subLabel} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={"" + nodeText + ", " + str} accessibilityHint={accessibilityHint} onPress={function handleOnPress(arg0) {
+  const tmp2Result2 = TableRowBadge;
+  return <TableRow arrow={false} label={label} subLabel={subLabel} badge={badge} disabled={disabled} accessibilityState={accessibilityState} accessible accessibilityRole={accessibilityRole} accessibilityLabel={tmp2Result2.getTableRowAccessibilityLabel(label, subLabel, badge)} accessibilityHint={accessibilityHint} onPress={function handleOnPress(arg0) {
     if (closure_1_1 != null) {
       tmp(arg0);
     }

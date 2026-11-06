@@ -1,17 +1,19 @@
 // Module ID: 10627
 // Function ID: 10628
-// Dependencies: [41, 42, 93, 95, 98, 10626, 10513, 10518]
+// Dependencies: [41, 42, 93, 95, 98, 10463, 10617, 10490, 10619]
 
 // Module 10627
-import EmptyDuration from "EmptyDuration" /* 10513 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10518 */;
-import _mod10626 from "module_10626" /* 10626 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10463 */;
+import _mod10617 from "module_10617" /* 10617 */;
+import _mod10619 from "module_10619" /* 10619 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp2;
+const _mod10490 = tmp2(10490);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -27,14 +29,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const keys = Object.keys(_mod10626.NUMBER);
-const regExp = new RegExp("(\\d+|[" + keys.join("") + "]+|\u534A|\u5E7E)(?:\\s*)(?:\u500B)?(\u79D2(?:\u9418)?|\u5206\u9418|\u5C0F\u6642|\u9418|\u65E5|\u5929|\u661F\u671F|\u79AE\u62DC|\u6708|\u5E74)(?:(?:\u4E4B|\u904E)?\u5F8C|(?:\u4E4B)?\u5167)", "i");
-class ZHHantDeadlineFormatParser {
+class UKWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantDeadlineFormatParser);
-    const obj = _getPrototypeOf(ZHHantDeadlineFormatParser);
+    _classCallCheck(this, UKWeekdayParser);
+    const obj = _getPrototypeOf(UKWeekdayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -46,85 +46,55 @@ class ZHHantDeadlineFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantDeadlineFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(UKWeekdayParser, _mod10619.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    return regExp;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:\u0443\\s*?)?(?:(\u0446\u0435\u0439|\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E|\u043C\u0438\u043D\u0443\u043B\u0438\u0439|\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u0456\u0439|\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u044C\u043E\u0433\u043E|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod10617.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*(\u043D\u0430|\u0443|\u0432)\\s*(\u0446\u044C\u043E\u043C\u0443|\u043C\u0438\u043D\u0443\u043B\u043E\u043C\u0443|\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u043C\u0443)\\s*\u0442\u0438\u0436\u043D\u0456)?";
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      let num = parseInt(index[1]);
-      if (isNaN(num)) {
-        num = _mod10626.zhStringToNumber(index[1]);
+    value: function innerExtract(reference, arg1) {
+      let str = arg1[1];
+      const obj = arg1[2];
+      const toLocaleLowerCaseResult = obj.toLocaleLowerCase();
+      const tmp4 = _mod10617.WEEKDAY_DICTIONARY[toLocaleLowerCaseResult];
+      if (!str) {
+        str = arg1[3];
       }
-      if (isNaN(num)) {
-        num = 3;
-        if ("\u5E7E" !== index[1]) {
-          num = 0.5;
-          if ("\u534A" !== index[1]) {
-            return null;
-          }
-        }
+      if (!str) {
+        str = "";
       }
-      const obj = {};
-      if (index[2][0].match(/[日天星禮月年]/)) {
-        if ("\u65E5" != index[2][0]) {
-          if ("\u5929" != index[2][0]) {
-            if ("\u661F" != index[2][0]) {
-              if ("\u79AE" != index[2][0]) {
-                if ("\u6708" == index[2][0]) {
-                  obj.month = num;
-                } else if ("\u5E74" == index[2][0]) {
-                  obj.year = num;
+      const toLocaleLowerCaseResult1 = str.toLocaleLowerCase();
+      let str2 = "last";
+      if ("\u043C\u0438\u043D\u0443\u043B\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
+        str2 = "last";
+        if ("\u043C\u0438\u043D\u0443\u043B\u0438\u0439" != toLocaleLowerCaseResult1) {
+          str2 = "last";
+          if ("\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u0456\u0439" != toLocaleLowerCaseResult1) {
+            str2 = "last";
+            if ("\u043F\u043E\u043F\u0435\u0440\u0435\u0434\u043D\u044C\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
+              str2 = "next";
+              if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u043E\u0433\u043E" != toLocaleLowerCaseResult1) {
+                str2 = "next";
+                if ("\u043D\u0430\u0441\u0442\u0443\u043F\u043D\u0438\u0439" != toLocaleLowerCaseResult1) {
+                  str2 = null;
+                  const tmp6 = "\u0446\u0435\u0439" != toLocaleLowerCaseResult1 && "\u0446\u044C\u043E\u0433\u043E" != toLocaleLowerCaseResult1 && "\u0446\u044C\u043E\u043C\u0443" != toLocaleLowerCaseResult1;
+                  if (!tmp6) {
+                    str2 = "this";
+                  }
                 }
               }
             }
-            obj.week = num;
-          }
-          const addDurationResult = EmptyDuration.addDuration(createParsingResult.refDate, obj);
-          const start7 = parsingResult.start;
-          start7.assign("year", addDurationResult.getFullYear());
-          const start8 = parsingResult.start;
-          start8.assign("month", addDurationResult.getMonth() + 1);
-          const start9 = parsingResult.start;
-          start9.assign("day", addDurationResult.getDate());
-          return parsingResult;
-        }
-        obj.day = num;
-      } else {
-        if ("\u79D2" == index[2][0]) {
-          obj.second = num;
-        } else if ("\u5206" == index[2][0]) {
-          obj.minute = num;
-        } else {
-          const tmp6 = "\u5C0F" != str3 && "\u9418" != str3;
-          if (!tmp6) {
-            obj.hour = num;
           }
         }
-        const addDurationResult1 = EmptyDuration.addDuration(createParsingResult.refDate, obj);
-        const start = parsingResult.start;
-        start.imply("year", addDurationResult1.getFullYear());
-        const start2 = parsingResult.start;
-        start2.imply("month", addDurationResult1.getMonth() + 1);
-        const start3 = parsingResult.start;
-        start3.imply("day", addDurationResult1.getDate());
-        const start4 = parsingResult.start;
-        start4.assign("hour", addDurationResult1.getHours());
-        const start5 = parsingResult.start;
-        start5.assign("minute", addDurationResult1.getMinutes());
-        const start6 = parsingResult.start;
-        start6.assign("second", addDurationResult1.getSeconds());
-        return parsingResult;
       }
+      return _mod10490.createParsingComponentsAtWeekday(reference.reference, tmp4, str2);
     }
   }
 ];
 
-export default _createClass(ZHHantDeadlineFormatParser, items);
+export default _createClass(UKWeekdayParser, items);

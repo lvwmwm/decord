@@ -1,9 +1,9 @@
-// Module ID: 5820
-// Function ID: 5821
+// Module ID: 5838
+// Function ID: 5839
 // Name: CollectiblesMarketingsStore
 // Dependencies: [504, 572, 2]
 
-// Module 5820 (CollectiblesMarketingsStore)
+// Module 5838 (CollectiblesMarketingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

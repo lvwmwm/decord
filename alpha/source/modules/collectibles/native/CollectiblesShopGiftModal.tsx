@@ -1,25 +1,25 @@
-// Module ID: 14653
-// Function ID: 14654
+// Module ID: 14630
+// Function ID: 14631
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 7865, 1072, 1083, 21, 10096, 1377, 2188, 14654, 14652, 10873, 10860, 10877, 14655, 14658, 10796, 8914, 8901, 504, 7465, 7490, 2155, 7864, 10876, 1113, 2]
+// Dependencies: [19, 7819, 1072, 1083, 21, 10047, 1377, 2183, 14631, 14629, 10825, 10812, 10829, 14632, 14635, 10748, 8860, 8847, 504, 7410, 7435, 2150, 7818, 10828, 1113, 2]
 // Exports: default
 
-// Module 14653 (CollectiblesShopGiftModal)
+// Module 14630 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;
-import StringUtils from "StringUtils" /* 2155 */;
-import BadgeId from "BadgeId" /* 8901 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8914 */;
-import openGiftModal from "openGiftModal" /* 14652 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14655 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14658 */;
+import StringUtils from "StringUtils" /* 2150 */;
+import BadgeId from "BadgeId" /* 8847 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8860 */;
+import openGiftModal from "openGiftModal" /* 14629 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 14632 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 14635 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7865 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7819 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesActionCreators = tmp(7864);
+const CollectiblesActionCreators = tmp(7818);
 function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;

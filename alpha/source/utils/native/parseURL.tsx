@@ -1,10 +1,10 @@
-// Module ID: 5882
-// Function ID: 5883
+// Module ID: 5901
+// Function ID: 5902
 // Name: parseURL
-// Dependencies: [32, 1072, 1074, 5791, 5883, 5884, 1487, 2072, 1381, 5885, 5889, 14983, 6582, 15927, 1378, 5790, 11, 9898, 7734, 1624, 1377, 9427, 1252, 1265, 15928, 2]
+// Dependencies: [32, 1072, 1074, 5809, 5902, 5903, 1487, 2067, 1381, 5904, 5908, 14960, 6602, 15922, 1378, 5808, 11, 9848, 7688, 1624, 1377, 9373, 1252, 1265, 15923, 2]
 // Exports: default
 
-// Module 5882 (parseURL)
+// Module 5901 (parseURL)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
@@ -12,23 +12,23 @@ import URLUtilsDefault from "URLUtils" /* 1378 */;
 import urlParseDefault from "urlParse" /* 1381 */;
 import _modDef1487 from "module_1487" /* 1487 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
-import _modDef2072 from "module_2072" /* 2072 */;
-import LinkUtils from "LinkUtils" /* 5790 */;
-import ConversationConstants from "ConversationConstants" /* 5791 */;
-import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5883 */;
-import findCodedLinks from "findCodedLinks" /* 5885 */;
-import CodedLink from "CodedLink" /* 5889 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6582 */;
-import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7734 */;
-import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9427 */;
-import Authorize from "Authorize" /* 9898 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14983 */;
-import QRLoginUtils from "QRLoginUtils" /* 15927 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 15928 */;
+import _modDef2067 from "module_2067" /* 2067 */;
+import LinkUtils from "LinkUtils" /* 5808 */;
+import ConversationConstants from "ConversationConstants" /* 5809 */;
+import MobileNativeUpdateConstants from "MobileNativeUpdateConstants" /* 5902 */;
+import findCodedLinks from "findCodedLinks" /* 5904 */;
+import CodedLink from "CodedLink" /* 5908 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6602 */;
+import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 7688 */;
+import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 9373 */;
+import Authorize from "Authorize" /* 9848 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14960 */;
+import QRLoginUtils from "QRLoginUtils" /* 15922 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 15923 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import PaymentConstants from "PaymentConstants" /* 5884 */;
+import PaymentConstants from "PaymentConstants" /* 5903 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -134,7 +134,7 @@ export default function parseURL(arg0) {
   if (arg1 === undefined) {
     flag = false;
   }
-  let obj = _modDef2072;
+  let obj = _modDef2067;
   const sanitizeUrlResult = obj.sanitizeUrl(arg0);
   if (null == sanitizeUrlResult) {
     const obj3 = { payload: obj4 };
@@ -204,10 +204,14 @@ export default function parseURL(arg0) {
                                         FEATURED_PAGE = constants3.FEATURED_PAGE;
                                       } else if (CodedLink.CodedLinkType.GAME_SERVER_SHARE !== type) {
                                         if (CodedLink.CodedLinkType.GAME_ORGANIZATION_INVITE !== type) {
-                                          if (CodedLink.CodedLinkType.USER_PROFILE !== type) {
-                                            const _Error2 = Error;
-                                            const _HermesInternal = HermesInternal;
-                                            throw Error("Unknown coded link type: " + findCodedLinkResult.type);
+                                          if (CodedLink.CodedLinkType.CONJURE_PROJECT !== type) {
+                                            if (CodedLink.CodedLinkType.USER_PROFILE !== type) {
+                                              if (CodedLink.CodedLinkType.USER_WISHLIST !== type) {
+                                                const _Error2 = Error;
+                                                const _HermesInternal = HermesInternal;
+                                                throw Error("Unknown coded link type: " + findCodedLinkResult.type);
+                                              }
+                                            }
                                           }
                                         }
                                       }

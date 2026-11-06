@@ -1,12 +1,12 @@
-// Module ID: 12410
-// Function ID: 12411
+// Module ID: 12375
+// Function ID: 12376
 // Name: conjurePageVisibility
-// Dependencies: [2122, 1072, 2]
+// Dependencies: [2117, 1072, 2]
 // Exports: isPageHidden, subscribePageVisibility
 
-// Module 12410 (conjurePageVisibility)
+// Module 12375 (conjurePageVisibility)
 import Constants from "Constants" /* 1072 */;
-import AppStateStore_mod from "AppStateStore" /* 2122 */;
+import AppStateStore_mod from "AppStateStore" /* 2117 */;
 import size from "module_2" /* 2 */;
 
 let AppStateStore = AppStateStore_mod;

@@ -1,18 +1,18 @@
-// Module ID: 11588
-// Function ID: 11589
+// Module ID: 11550
+// Function ID: 11551
 // Name: InfoBox
-// Dependencies: [19, 17, 21, 5143, 575, 5872, 7230, 5763, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5890, 7177, 5781, 2]
 // Exports: default
 
-// Module 11588 (InfoBox)
+// Module 11550 (InfoBox)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import CircleInformationIcon2 from "CircleInformationIcon" /* 5872 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7230 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import CircleInformationIcon2 from "CircleInformationIcon" /* 5890 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7177 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

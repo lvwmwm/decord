@@ -1,14 +1,14 @@
-// Module ID: 11657
-// Function ID: 11658
+// Module ID: 11619
+// Function ID: 11620
 // Name: BadgeUtils
-// Dependencies: [8900, 8901, 1113, 8910, 2155, 2]
-// Exports: findTier, getAlwaysVisibleCopy, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
+// Dependencies: [8846, 8847, 1113, 8856, 2150, 2]
+// Exports: findTier, getAlwaysVisibleCopy, getBadgeUnlockLabel, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 11657 (BadgeUtils)
+// Module 11619 (BadgeUtils)
 import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 8900 */;
-import BadgeId from "BadgeId" /* 8901 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8910 */;
+import Constants from "Constants" /* 8846 */;
+import BadgeId from "BadgeId" /* 8847 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8856 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -129,7 +129,7 @@ export function getProfileBadgeLabel(description, info_label) {
     const obj = BadgeIdResolution;
     const tmp = require;
     if (!obj.isLegacyBadgeId(info_label.badge_id)) {
-      tmp(2155);
+      tmp(2150);
     }
     return info_label;
   }
@@ -186,14 +186,31 @@ export function getLegacyIconUrlByBadgeId(badges) {
   }
   return map;
 }
-export function findTier(viewerBadge, next_tier) {
+export function findTier(badge, next_tier) {
   let closure_0 = next_tier;
   let found;
   if (null != next_tier) {
-    const tiers = viewerBadge.tiers;
-    found = tiers.find((key) => key.key === next_tier);
+    const tiers = badge.tiers;
+    found = tiers.find((key) => key.key === closure_0);
   }
   return found;
+}
+export function getBadgeUnlockLabel(badge, previousTierKey) {
+  let K3TdAp;
+  const intl = intl2.intl;
+  let closure_0 = previousTierKey;
+  let found;
+  const string = intl.string;
+  if (null != previousTierKey) {
+    const tiers = badge.tiers;
+    found = tiers.find((key) => key.key === closure_0);
+  }
+  if (null != found) {
+    K3TdAp = tmp(1113).t.K3TdAp;
+  } else {
+    K3TdAp = tmp(1113).t["4oIsxf"];
+  }
+  return string(K3TdAp);
 }
 export function getTierRowSubtitle(tier) {
   tier = tier.tier;

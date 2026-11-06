@@ -1,24 +1,24 @@
-// Module ID: 12469
-// Function ID: 12470
+// Module ID: 12434
+// Function ID: 12435
 // Name: UserProfileApplicationWidgetTopHeroLayout
-// Dependencies: [32, 19, 17, 1072, 7515, 21, 5143, 575, 12470, 8960, 12556, 12557, 7182, 5725, 5854, 2]
+// Dependencies: [32, 19, 17, 1072, 7460, 21, 5170, 575, 12435, 8906, 12521, 12522, 7129, 5745, 5872, 2]
 // Exports: default
 
-// Module 12469 (UserProfileApplicationWidgetTopHeroLayout)
+// Module 12434 (UserProfileApplicationWidgetTopHeroLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5725 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import _modDef7182 from "module_7182" /* 7182 */;
-import Constants2 from "Constants" /* 7515 */;
-import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8960 */;
-import _mod12470 from "module_12470" /* 12470 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12556 */;
+import LinearGradientDefault from "LinearGradient" /* 5745 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import _modDef7129 from "module_7129" /* 7129 */;
+import Constants2 from "Constants" /* 7460 */;
+import UserProfileSharedStyles from "UserProfileSharedStyles" /* 8906 */;
+import _mod12435 from "module_12435" /* 12435 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 12521 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -63,20 +63,20 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   const tmp = closure_10();
   [tmp3, c0] = react.useState(null);
   _slicedToArray(react.useState(null), 2);
-  const obj = _mod12470;
+  const obj = _mod12435;
   const textComponentValues = obj.resolveTextComponentValues(topConfig.components.title, resolveFieldValue, numberFormat, true);
-  const obj2 = _mod12470;
+  const obj2 = _mod12435;
   const textComponentValues1 = obj2.resolveTextComponentValues(topConfig.components.subtitle_1, resolveFieldValue, numberFormat);
-  const obj3 = _mod12470;
+  const obj3 = _mod12435;
   const textComponentValues2 = obj3.resolveTextComponentValues(topConfig.components.subtitle_2, resolveFieldValue, numberFormat);
   const hero_image = topConfig.components.hero_image;
   let image;
-  const obj4 = _mod12470;
+  const obj4 = _mod12435;
   const textComponentValues3 = obj4.resolveTextComponentValues(topConfig.components.subtitle_3, resolveFieldValue, numberFormat);
   if (hero_image != null) {
     image = hero_image.fields.image;
   }
-  const items = [_mod12470.ResolvedValueType.MEDIA];
+  const items = [_mod12435.ResolvedValueType.MEDIA];
   const fieldValue = resolveFieldValue(image, items);
   const obj5 = { style: tmp.root, children: items1 };
   items1 = [header, , ];
@@ -90,7 +90,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
   tmp15Result = null == fieldValue || null == tmp3;
   if (tmp15Result) {
     const obj9 = { style: tmp.heroImageSkeleton };
-    tmp15Result = tmp15(tmp4(12557).ImageSkeleton, obj9);
+    tmp15Result = tmp15(tmp4(12522).ImageSkeleton, obj9);
   }
   items3[1] = metroImportDefault(View, obj8);
   items1[1] = metroImportAll(View, obj6);
@@ -118,7 +118,7 @@ export default function UserProfileApplicationWidgetTopHeroLayout(header) {
       const obj14 = { start: null, end: null, colors, style: tmp.heroImageFadeGradient };
       ({ START: obj16.start, END: obj16.end } = HorizontalGradient);
       items5 = [, ];
-      const tmp21 = _modDef7182;
+      const tmp21 = _modDef7129;
       items5[0] = metroImportDefault(LinearGradientDefault, obj14);
       const obj15 = { style: tmp.heroImageMaskRemainder };
       items5[1] = metroImportDefault(View, obj15);

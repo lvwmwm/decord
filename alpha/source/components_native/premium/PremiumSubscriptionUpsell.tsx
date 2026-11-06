@@ -1,31 +1,31 @@
-// Module ID: 15668
-// Function ID: 15669
+// Module ID: 15662
+// Function ID: 15663
 // Name: PremiumSubscriptionUpsell
-// Dependencies: [19, 17, 2191, 1385, 1072, 7762, 1387, 21, 5143, 575, 7137, 1113, 2024, 504, 2176, 5725, 1092, 5763, 5854, 15669, 15670, 10123, 5770, 2]
+// Dependencies: [19, 17, 2186, 1385, 1072, 7716, 1387, 21, 5170, 575, 7084, 1113, 2024, 504, 2171, 5745, 1092, 5781, 5872, 15663, 15664, 10074, 5788, 2]
 // Exports: default
 
-// Module 15668 (PremiumSubscriptionUpsell)
+// Module 15662 (PremiumSubscriptionUpsell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl7 from "intl" /* 1113 */;
 import NumberUtils from "NumberUtils" /* 2024 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
-import LinearGradientDefault from "LinearGradient" /* 5725 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7137 */;
-import ColorConstants from "ColorConstants" /* 7762 */;
-import PremiumFeatureListDefault from "PremiumFeatureList" /* 10123 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15669 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 15670 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
+import LinearGradientDefault from "LinearGradient" /* 5745 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7084 */;
+import ColorConstants from "ColorConstants" /* 7716 */;
+import PremiumFeatureListDefault from "PremiumFeatureList" /* 10074 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15663 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15664 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import UserStore from "UserStore" /* 1385 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -97,18 +97,18 @@ export default function PremiumSubscriptionUpsell(arg0) {
     if (tmp5Result5.isPremium(stateFromStores)) {
       const obj5 = { children: items2 };
       const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl2.string(intl7.t.YYfHlx) };
-      const Text2 = tmp2(5763).Text;
+      const Text2 = tmp2(5781).Text;
       intl2 = tmp2(1113).intl;
       items2 = [React4(Text2, obj6), ];
       const obj7 = { style: tmp.subtitle, variant: "body-md/semibold", color: "text-overlay-light", children: intl3.format(intl7.t.Af0zEZ, obj8) };
-      const Text3 = tmp2(5763).Text;
+      const Text3 = tmp2(5781).Text;
       intl3 = tmp2(1113).intl;
       obj8 = { numFreeGuildSubscriptions: metroImportDefault };
       items2[1] = React4(Text3, obj7);
       tmp7Result1 = tmp9(authStore, obj5);
     } else {
       const obj9 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "text-overlay-light", children: intl.string(intl7.t["qUl+K4"]) };
-      const Text = tmp2(5763).Text;
+      const Text = tmp2(5781).Text;
       intl = tmp2(1113).intl;
       tmp7Result1 = tmp7(Text, obj9);
     }
@@ -138,7 +138,7 @@ export default function PremiumSubscriptionUpsell(arg0) {
     items3[1] = unpackModuleId(_false, obj10);
     const obj19 = { style: tmp.upsellButton, children: React4(Button, obj20) };
     obj20 = { variant: "experimental_premium-secondary", text: intl6.string(intl7.t.fJOECn), onPress: onLearnMorePremium };
-    Button = tmp2(5770).Button;
+    Button = tmp2(5788).Button;
     intl6 = tmp2(1113).intl;
     items3[2] = React4(_false, obj19);
     tmp7Result = tmp7(tmp8, obj3);

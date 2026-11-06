@@ -1,10 +1,10 @@
-// Module ID: 11860
-// Function ID: 11861
+// Module ID: 11826
+// Function ID: 11827
 // Name: groupInvitableGameOrganizationsByApplication
 // Dependencies: [2]
 // Exports: default
 
-// Module 11860 (groupInvitableGameOrganizationsByApplication)
+// Module 11826 (groupInvitableGameOrganizationsByApplication)
 import size from "module_2" /* 2 */;
 
 let map;

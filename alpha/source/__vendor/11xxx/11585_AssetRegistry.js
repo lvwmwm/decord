@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 380, height: 242, scales: [1], hash: "20a937ca7af234a5d3bd2269cf0e9463", name: "confetti", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 59.666666666666664, height: 59.666666666666664, scales: [3], hash: "98f28dd3128f04f38057757d2f825a42", name: "asset_gold_badge_small", type: "png" });

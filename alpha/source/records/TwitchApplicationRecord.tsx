@@ -1,12 +1,12 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 15890
+// Function ID: 15891
 // Name: TwitchApplicationRecord
-// Dependencies: [2145, 1113, 6712, 2]
+// Dependencies: [2140, 1113, 6654, 2]
 
-// Module 15896 (TwitchApplicationRecord)
+// Module 15890 (TwitchApplicationRecord)
 import intl2 from "intl" /* 1113 */;
-import PlatformsDefault from "Platforms" /* 6712 */;
-import ApplicationRecord from "ApplicationRecord" /* 2145 */;
+import PlatformsDefault from "Platforms" /* 6654 */;
+import ApplicationRecord from "ApplicationRecord" /* 2140 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "twitch:";

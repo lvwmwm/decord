@@ -1,17 +1,17 @@
-// Module ID: 18874
-// Function ID: 18875
+// Module ID: 18862
+// Function ID: 18863
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 1072, 21, 9077, 5828, 8525, 5786, 5379, 5143, 575, 4968, 8523, 10072, 8856, 1113, 2]
+// Dependencies: [19, 1072, 21, 9023, 5846, 8471, 5804, 5399, 5170, 575, 4995, 8469, 10023, 8802, 1113, 2]
 
-// Module 18874 (ICYMIMessageRowPreview)
+// Module 18862 (ICYMIMessageRowPreview)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4968 */;
-import createStyles from "createStyles" /* 5143 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5828 */;
-import RowGeneratorDefault from "RowGenerator" /* 8523 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8856 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import createStyles from "createStyles" /* 5170 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5846 */;
+import RowGeneratorDefault from "RowGenerator" /* 8469 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8802 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
   if (str === undefined) {
     str = "none";
   }
-  let tmp = messageOptions(5379)();
+  let tmp = messageOptions(5399)();
   let obj = createStyles;
   const obj2 = { seeMoreLabelColor: messageOptions(575).colors.TEXT_DEFAULT };
   dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);
@@ -65,7 +65,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(10072), obj3);
+  return setting2(messageOptions(10023), obj3);
 }
 const MessageEmbedTypes = Constants.MessageEmbedTypes;
 const jsx = Fragment.jsx;
@@ -162,10 +162,10 @@ const memoResult2 = react.memo(function MessageRowPreview(message) {
     }
     return obj;
   }, items);
-  const tmp3 = merged(5786)(message);
+  const tmp3 = merged(5804)(message);
   const merged1 = Object.assign(memo);
   const obj2 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp3, renderEmbeds: tmp3, inlineEmbedMedia: tmp3 };
-  const merged2 = Object.assign(message(8525).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(8471).DEFAULT_OPTIONS);
   const merged3 = Object.assign(messageOptions);
   return <ICYMIMessageRowPreview messageOptions={obj2} seeMoreLabel="..." />;
 });

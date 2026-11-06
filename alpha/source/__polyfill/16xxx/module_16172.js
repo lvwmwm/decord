@@ -1,14 +1,12 @@
 // Module ID: 16172
 // Function ID: 16173
-// Dependencies: [16158]
+// Dependencies: [16171]
 
 // Module 16172
-import _mod16158 from "module_16158" /* 16158 */;
+import _mod16171 from "module_16171" /* 16171 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const compare = new _mod16158(arg0, arg2).compare;
-  new _mod16158(arg0, arg2);
-  const tmp2 = new _mod16158(arg1, arg2);
-  return compare(tmp2);
+export default (arr, arg1) => {
+  let closure_0 = arg1;
+  return arr.sort((arg0, arg1) => _mod16171(arg0, arg1, closure_0));
 };

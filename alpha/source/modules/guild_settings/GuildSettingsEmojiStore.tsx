@@ -1,14 +1,14 @@
-// Module ID: 20047
-// Function ID: 20048
+// Module ID: 20054
+// Function ID: 20055
 // Name: GuildSettingsEmojiStore
-// Dependencies: [20048, 5174, 1453, 1089, 504, 572, 2]
+// Dependencies: [20055, 5201, 1453, 1089, 504, 572, 2]
 
-// Module 20047 (GuildSettingsEmojiStore)
+// Module 20054 (GuildSettingsEmojiStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import EmojiRecord from "EmojiRecord" /* 20048 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
+import EmojiRecord from "EmojiRecord" /* 20055 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
 import LRUCache from "LRUCache" /* 1453 */;
 import size from "module_2" /* 2 */;
 

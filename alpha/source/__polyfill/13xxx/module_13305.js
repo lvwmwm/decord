@@ -1,202 +1,201 @@
 // Module ID: 13305
 // Function ID: 13306
-// Dependencies: [41, 42, 13288]
-// Exports: rejectedSyncPromise, resolvedSyncPromise
+// Dependencies: [13280, 13261, 13260, 13291]
+// Exports: applyScopeDataToEvent, mergeAndOverwriteScopeData, mergeScopeData
 
 // Module 13305
-import _mod13288 from "module_13288" /* 13288 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod13260 from "module_13260" /* 13260 */;
+import _mod13261 from "module_13261" /* 13261 */;
+import _mod13280 from "module_13280" /* 13280 */;
+import _mod13291 from "module_13291" /* 13291 */;
 
-let c3;
 
-let obj = { PENDING: 0, RESOLVED: 1, REJECTED: 2 };
-obj[0] = "PENDING";
-obj[1] = "RESOLVED";
-obj[2] = "REJECTED";
-class SyncPromise {
-  constructor(fn) {
-    const self = this;
-    _classCallCheck(this, SyncPromise);
-    const __init = SyncPromise.prototype.__init;
-    __init.call(self);
-    const __init2 = tmp.prototype.__init2;
-    __init2.call(self);
-    const __init3 = tmp.prototype.__init3;
-    __init3.call(self);
-    const __init4 = tmp.prototype.__init4;
-    __init4.call(self);
-    self._state = obj.PENDING;
-    self._handlers = [];
-    try {
-      fn(self._resolve, self._reject);
-    } catch (tmp5) {
-      self._reject(tmp5);
+export function applyScopeDataToEvent(extra, arg1) {
+  let breadcrumbs;
+  let contexts;
+  let fingerprint;
+  let items1;
+  let level;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let tmpResult10;
+  let tmpResult9;
+  let transactionName;
+  let user;
+  ({ fingerprint, span, breadcrumbs, sdkProcessingMetadata, level, transactionName } = arg1);
+  ({ extra, tags, user, contexts } = arg1);
+  const obj = _mod13261;
+  const dropUndefinedKeysResult = obj.dropUndefinedKeys(extra);
+  let length = dropUndefinedKeysResult;
+  if (length) {
+    const _Object = Object;
+    length = Object.keys(dropUndefinedKeysResult).length;
+  }
+  const tmp5 = extra;
+  if (length) {
+    const obj2 = {};
+    const merged = Object.assign(dropUndefinedKeysResult);
+    const merged1 = Object.assign(extra.extra);
+    extra.extra = obj2;
+  }
+  const tmpResult = _mod13261;
+  const dropUndefinedKeysResult1 = tmpResult.dropUndefinedKeys(tags);
+  let length2 = dropUndefinedKeysResult1;
+  if (length2) {
+    const _Object2 = Object;
+    length2 = Object.keys(dropUndefinedKeysResult1).length;
+  }
+  if (length2) {
+    const obj3 = {};
+    const merged2 = Object.assign(dropUndefinedKeysResult1);
+    const merged3 = Object.assign(extra.tags);
+    extra.tags = obj3;
+  }
+  const tmpResult7 = _mod13261;
+  const dropUndefinedKeysResult2 = tmpResult7.dropUndefinedKeys(user);
+  let length3 = dropUndefinedKeysResult2;
+  if (length3) {
+    const _Object3 = Object;
+    length3 = Object.keys(dropUndefinedKeysResult2).length;
+  }
+  if (length3) {
+    const obj4 = {};
+    const merged4 = Object.assign(dropUndefinedKeysResult2);
+    const merged5 = Object.assign(extra.user);
+    extra.user = obj4;
+  }
+  const tmpResult8 = _mod13261;
+  const dropUndefinedKeysResult3 = tmpResult8.dropUndefinedKeys(contexts);
+  let length4 = dropUndefinedKeysResult3;
+  if (length4) {
+    const _Object4 = Object;
+    length4 = Object.keys(dropUndefinedKeysResult3).length;
+  }
+  if (length4) {
+    const obj5 = {};
+    const merged6 = Object.assign(dropUndefinedKeysResult3);
+    const merged7 = Object.assign(extra.contexts);
+    extra.contexts = obj5;
+  }
+  if (level) {
+    extra.level = level;
+  }
+  const tmp32 = transactionName && "transaction" !== extra.type;
+  if (tmp32) {
+    extra.transaction = transactionName;
+  }
+  if (span) {
+    const obj6 = { trace: tmpResult9.spanToTraceContext(span) };
+    tmpResult9 = _mod13260;
+    const merged8 = Object.assign(extra.contexts);
+    extra.contexts = obj6;
+    const obj7 = { dynamicSamplingContext: tmpResult10.getDynamicSamplingContextFromSpan(span) };
+    tmpResult10 = _mod13291;
+    const merged9 = Object.assign(extra.sdkProcessingMetadata);
+    extra.sdkProcessingMetadata = obj7;
+    const tmpResult11 = _mod13260;
+    const rootSpan = tmpResult11.getRootSpan(span);
+    const tmpResult12 = _mod13260;
+    const description = tmpResult12.spanToJSON(rootSpan).description;
+    const tmp38 = description && !extra.transaction && "transaction" === extra.type;
+    if (tmp38) {
+      extra.transaction = description;
     }
   }
+  if (extra.fingerprint) {
+    let items;
+    const _Array = Array;
+    const fingerprint2 = extra.fingerprint;
+    if (Array.isArray(extra.fingerprint)) {
+      items = fingerprint2;
+    } else {
+      items = [fingerprint2];
+    }
+    items1 = items;
+  } else {
+    items1 = [];
+  }
+  extra.fingerprint = items1;
+  if (fingerprint) {
+    const fingerprint3 = extra.fingerprint;
+    extra.fingerprint = fingerprint3.concat(fingerprint);
+  }
+  const tmp40 = extra.fingerprint && !extra.fingerprint.length;
+  if (tmp40) {
+    delete tmp5["fingerprint"];
+  }
+  const items2 = [...breadcrumbs];
+  let tmp42;
+  if (items2.length) {
+    tmp42 = items2;
+  }
+  extra.breadcrumbs = tmp42;
+  const obj8 = {};
+  const merged10 = Object.assign(extra.sdkProcessingMetadata);
+  const merged11 = Object.assign(sdkProcessingMetadata);
+  extra.sdkProcessingMetadata = obj8;
 }
-const entry = {
-  key: "then",
-  value: function then(arg0, arg1) {
-    const self = this;
-    let closure_1 = arg0;
-    let closure_0 = arg1;
-    obj = Object.create(SyncPromise.prototype);
-    SyncPromise((arg0, arg1) => {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      const _handlers = self._handlers;
-      const items = [
-        false,
-        (arg0) => {
-          if (closure_1) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_0(arg0);
-          }
-        },
-        (arg0) => {
-          if (closure_0) {
-            try {
-              closure_0(tmp(arg0));
-            } catch (tmp6) {
-              closure_1(tmp6);
-            }
-          } else {
-            closure_1(arg0);
-          }
-        }
-      ];
-      _handlers.push(items);
-      self._executeHandlers();
-    });
-    return obj;
-  }
-};
-let items = [
-  entry,
-  {
-    key: "catch",
-    value: function _catch(arg0) {
-      return this.then((result) => result, arg0);
-    }
-  },
-  {
-    key: "finally",
-    value: function _finally(arg0) {
-      const self = this;
-      let closure_0 = arg0;
-      obj = Object.create(SyncPromise.prototype);
-      SyncPromise((arg0, arg1) => {
-        let closure_1;
-        closure_0 = arg0;
-        const nextPromise = arg1.then((result) => {
-          c3 = false;
-          let closure_1_2 = result;
-          if (closure_0) {
-            tmp();
-          }
-        }, (arg0) => {
-          c3 = true;
-          let closure_1_2 = arg0;
-          if (closure_0) {
-            tmp();
-          }
-        });
-        return nextPromise.then(() => {
-          const tmp = c3;
-          if (tmp) {
-            closure_1(closure_1_2);
-          } else {
-            closure_0(closure_1_2);
-          }
-        });
-      });
-      return obj;
-    }
-  },
-  {
-    key: "__init",
-    value: function __init() {
-      const self = this;
-      this._resolve = (arg0) => {
-        self._setResult(obj.RESOLVED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init2",
-    value: function __init2() {
-      const self = this;
-      this._reject = (arg0) => {
-        self._setResult(obj.REJECTED, arg0);
-      };
-    }
-  },
-  {
-    key: "__init3",
-    value: function __init3() {
-      const self = this;
-      this._setResult = (_state, _value) => {
-        if (self._state === self.PENDING) {
-          const obj2 = _mod13288;
-          if (obj2.isThenable(_value)) {
-            _value.then(self._resolve, self._reject);
-          } else {
-            self._state = _state;
-            self._value = _value;
-            self._executeHandlers();
-          }
-        }
-      };
-    }
-  },
-  {
-    key: "__init4",
-    value: function __init4() {
-      const self = this;
-      this._executeHandlers = () => {
-        let _state;
-        if (self._state !== obj.PENDING) {
-          const _handlers = tmp._handlers;
-          const substr = _handlers.slice();
-          self._handlers = [];
-          const item = substr.forEach((item) => {
-            if (!item[0]) {
-              const tmp2 = constants;
-              if (_state._state === constants.RESOLVED) {
-                item[1](_state._value);
-              }
-              if (_state._state === tmp2.REJECTED) {
-                item[2](_state._value);
-              }
-              item[0] = true;
-            }
-          });
-        }
-      };
-    }
-  }
-];
-const _moduleResult = _createClass(SyncPromise, items);
-const SyncPromise_export = _moduleResult;
-
-export { SyncPromise_export as SyncPromise };
-export function rejectedSyncPromise(arg0) {
-  let closure_0 = arg0;
-  const tmp = new _moduleResult((arg0, fn) => {
-    fn(closure_0);
-  });
-  return tmp;
+export function mergeAndOverwriteScopeData(arg0, arg1, arg2) {
+  const obj = _mod13280;
+  arg0[arg1] = obj.merge(arg0[arg1], arg2, 1);
 }
-export function resolvedSyncPromise(arg0) {
-  let closure_0 = arg0;
-  const tmp = new _moduleResult((fn) => {
-    fn(closure_0);
-  });
-  return tmp;
+export function mergeScopeData(extra, arg1) {
+  let attachments;
+  let breadcrumbs;
+  let contexts;
+  let eventProcessors;
+  let fingerprint;
+  let level;
+  let propagationContext;
+  let sdkProcessingMetadata;
+  let span;
+  let tags;
+  let transactionName;
+  let user;
+  ({ level, breadcrumbs, fingerprint, eventProcessors, attachments, propagationContext, transactionName, span } = arg1);
+  ({ extra, tags, user, contexts, sdkProcessingMetadata } = arg1);
+  const obj = _mod13280;
+  extra.extra = obj.merge(extra.extra, extra, 1);
+  const obj2 = _mod13280;
+  extra.tags = obj2.merge(extra.tags, tags, 1);
+  const obj3 = _mod13280;
+  extra.user = obj3.merge(extra.user, user, 1);
+  const obj4 = _mod13280;
+  extra.contexts = obj4.merge(extra.contexts, contexts, 1);
+  const obj5 = _mod13280;
+  extra.sdkProcessingMetadata = obj5.merge(extra.sdkProcessingMetadata, sdkProcessingMetadata, 2);
+  if (level) {
+    extra.level = level;
+  }
+  if (transactionName) {
+    extra.transactionName = transactionName;
+  }
+  if (span) {
+    extra.span = span;
+  }
+  if (breadcrumbs.length) {
+    const items = [];
+    HermesBuiltin.arraySpread(items, breadcrumbs, HermesBuiltin.arraySpread(items, extra.breadcrumbs, 0));
+    extra.breadcrumbs = items;
+  }
+  if (fingerprint.length) {
+    const items1 = [];
+    HermesBuiltin.arraySpread(items1, fingerprint, HermesBuiltin.arraySpread(items1, extra.fingerprint, 0));
+    extra.fingerprint = items1;
+  }
+  if (eventProcessors.length) {
+    const items2 = [];
+    HermesBuiltin.arraySpread(items2, eventProcessors, HermesBuiltin.arraySpread(items2, extra.eventProcessors, 0));
+    extra.eventProcessors = items2;
+  }
+  if (attachments.length) {
+    const items3 = [];
+    HermesBuiltin.arraySpread(items3, attachments, HermesBuiltin.arraySpread(items3, extra.attachments, 0));
+    extra.attachments = items3;
+  }
+  const obj6 = {};
+  const merged = Object.assign(extra.propagationContext);
+  const merged1 = Object.assign(propagationContext);
+  extra.propagationContext = obj6;
 }

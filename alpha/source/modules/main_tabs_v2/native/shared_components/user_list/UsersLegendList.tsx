@@ -1,17 +1,19 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14622
+// Function ID: 14623
 // Name: UsersLegendList
-// Dependencies: [32, 19, 17, 21, 5143, 5402, 1652, 1705, 1493, 7372, 14646, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 5422, 1652, 1705, 1493, 7319, 14623, 2]
 
-// Module 14645 (UsersLegendList)
+// Module 14622 (UsersLegendList)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import BottomSheetModal from "BottomSheetModal" /* 5402 */;
-import FastestListItemTypeDefault from "FastestListItemType" /* 7372 */;
+import BottomSheetModal from "BottomSheetModal" /* 5422 */;
+import FastestListItemTypeDefault from "FastestListItemType" /* 7319 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
+
+let keyExtractor;
 
 function renderBottomSheetScrollComponent(children) {
   children = children.children;
@@ -47,7 +49,7 @@ const memoResult = react.memo(function UsersLegendList(insetStart) {
     num2 = 0;
   }
   const itemSize = insetStart.itemSize;
-  const keyExtractor = insetStart.keyExtractor;
+  keyExtractor = insetStart.keyExtractor;
   ({ listHeaderSize, onContentLengthChange } = insetStart);
   const renderItem = insetStart.renderItem;
   const renderListHeader = insetStart.renderListHeader;

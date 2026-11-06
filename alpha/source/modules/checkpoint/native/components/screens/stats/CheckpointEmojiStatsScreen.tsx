@@ -1,19 +1,19 @@
-// Module ID: 13902
-// Function ID: 13903
+// Module ID: 13877
+// Function ID: 13878
 // Name: CheckpointEmojiStatsScreen
-// Dependencies: [32, 19, 17, 5144, 13668, 6204, 21, 5143, 575, 1377, 504, 6574, 13692, 13693, 1113, 3187, 3219, 13903, 13677, 13876, 13905, 13878, 13890, 13891, 13892, 1411, 1342, 13906, 7439, 2]
+// Dependencies: [32, 19, 17, 5171, 13643, 6224, 21, 5170, 575, 1377, 504, 6594, 13667, 13668, 1113, 3216, 3248, 13878, 13652, 13851, 13880, 13853, 13865, 13866, 13867, 1411, 1342, 13881, 7386, 2]
 // Exports: default
 
-// Module 13902 (CheckpointEmojiStatsScreen)
+// Module 13877 (CheckpointEmojiStatsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import CheckpointStore from "CheckpointStore" /* 13643 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1377 */;
 import size from "module_2" /* 2 */;
 
@@ -134,7 +134,7 @@ export default function CheckpointEmojiStatsScreen() {
   }
   [emoji, _slicedToArray] = react.useState(tmp12 ? closure_11 : emojis[0]);
   const tmp16 = require("useCheckpointSound");
-  react = tmp16(require("module_13693"));
+  react = tmp16(require("module_13668"));
   let intl = tmp2(tmp3[14]).intl;
   const string = intl.string;
   if (tmp12) {

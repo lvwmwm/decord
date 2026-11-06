@@ -1,14 +1,14 @@
-// Module ID: 5140
-// Function ID: 5141
+// Module ID: 5167
+// Function ID: 5168
 // Name: ColorUtils
-// Dependencies: [32, 671, 1113, 3, 5141, 2]
+// Dependencies: [32, 671, 1113, 3, 5168, 2]
 // Exports: findColorByHsv, getAccessibleForegroundColor, getColorLightnessAdjusted, getComplimentaryPaletteForColor, getSaturatedColorHex, hexOpacityToRgba, hexToColorName, hexToRgb, hexToRgbArray, hexToRgba, hexToRgbaString, hexWithOpacity, hslToString, interpolateColor, mixColors, rgbToHex, rgbToHsl, rgbaToHex
 
-// Module 5140 (ColorUtils)
+// Module 5167 (ColorUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl2 from "intl" /* 1113 */;
-import utils_ColorDefault from "utils/Color" /* 5141 */;
+import utils_ColorDefault from "utils/Color" /* 5168 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -52,15 +52,15 @@ function rgbToHslObject(arg0, arg1, arg2) {
   result6 = 100 * result4;
   return obj;
 }
-function hslToHex(sum2, sum, sum1) {
+function hslToHex(hue, sum, sum1) {
   const result = sum1 / 100;
   const result1 = sum * Math.min(result, 1 - result) / 100;
-  const result2 = sum2 / 30 % 12;
-  const result3 = (8 + sum2 / 30) % 12;
+  const result2 = hue / 30 % 12;
+  const result3 = (8 + hue / 30) % 12;
   const str = Math.round(255 * (result - result1 * Math.max(Math.min(result2 - 3, 9 - result2, 1), -1)));
   const str1 = str.toString(16);
   const padStartResult = str1.padStart(2, "0");
-  const result4 = (4 + sum2 / 30) % 12;
+  const result4 = (4 + hue / 30) % 12;
   const str2 = Math.round(255 * (result - result1 * Math.max(Math.min(result3 - 3, 9 - result3, 1), -1)));
   const str4 = str2.toString(16);
   const padStartResult1 = str4.padStart(2, "0");

@@ -1,15 +1,15 @@
-// Module ID: 19274
-// Function ID: 19275
+// Module ID: 19266
+// Function ID: 19267
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 5143, 7101, 19275, 1113, 14426, 5763, 7124, 2]
+// Dependencies: [19, 17, 21, 5170, 7045, 19267, 1113, 14403, 5781, 7068, 2]
 // Exports: default
 
-// Module 19274 (MessageRequestMutualServers)
+// Module 19266 (MessageRequestMutualServers)
 import react_native from "react-native" /* 17 */;
-import GuildIconDefault from "GuildIcon" /* 7101 */;
+import GuildIconDefault from "GuildIcon" /* 7045 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -31,7 +31,7 @@ export default function MessageRequestMutualServers(textVariant) {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(7101).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(7045).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -39,7 +39,7 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  let obj = iconSize(19275);
+  let obj = iconSize(19267);
   const mutualGuildsForMessageRequests = obj.useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
@@ -64,13 +64,13 @@ export default function MessageRequestMutualServers(textVariant) {
           return React3(GuildIconDefault, obj, guild.id);
         })
     };
-    const GuildIconPile = tmp4(14426).GuildIconPile;
+    const GuildIconPile = tmp4(14403).GuildIconPile;
     tmp9 = closure_4(GuildIconPile, obj4);
   }
   items1 = [tmp9, ];
   const obj5 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: combined };
   combined = formatResult;
-  const Text = tmp4(5763).Text;
+  const Text = tmp4(5781).Text;
   if (null != suffix) {
     const _HermesInternal = HermesInternal;
     combined = "" + formatResult + " \u00B7 " + suffix;
@@ -82,7 +82,7 @@ export default function MessageRequestMutualServers(textVariant) {
     tmp11Result = tmp7Result;
     if (mutualGuildsForMessageRequests.length > 0) {
       const obj6 = { accessibilityRole: "button", onPress, children: tmp7Result };
-      tmp11Result = tmp11(tmp4(7124).PressableOpacity, obj6);
+      tmp11Result = tmp11(tmp4(7068).PressableOpacity, obj6);
     }
   }
   return tmp11Result;

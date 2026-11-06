@@ -1,15 +1,15 @@
-// Module ID: 6212
-// Function ID: 6213
+// Module ID: 6232
+// Function ID: 6233
 // Name: CheckpointMessageComponentUtils
-// Dependencies: [11, 1113, 6213, 1357, 5089, 2]
+// Dependencies: [11, 1113, 6233, 1357, 5116, 2]
 // Exports: transformCheckpoint2025CardComponent, transformCheckpoint2025CardToRowGeneratedComponent
 
-// Module 6212 (CheckpointMessageComponentUtils)
+// Module 6232 (CheckpointMessageComponentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import intl from "intl" /* 1113 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5089 */;
-import CheckpointUtils from "CheckpointUtils" /* 6213 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
+import CheckpointUtils from "CheckpointUtils" /* 6233 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/checkpoint/2025/CheckpointMessageComponentUtils.tsx");

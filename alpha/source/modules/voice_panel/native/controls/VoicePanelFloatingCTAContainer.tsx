@@ -1,32 +1,38 @@
-// Module ID: 19614
-// Function ID: 19615
+// Module ID: 19618
+// Function ID: 19619
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 4992, 11419, 11422, 1083, 21, 12747, 575, 5143, 6165, 8324, 5209, 11418, 19477, 7712, 563, 19473, 19615, 1652, 14059, 12636, 5773, 10704, 2]
+// Dependencies: [32, 19, 5019, 11381, 11384, 1083, 21, 12712, 575, 5170, 6185, 8269, 5229, 11380, 19469, 7665, 563, 19465, 19619, 1652, 14036, 12601, 5791, 10656, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 19614 (VoicePanelFloatingCTAContainer)
+// Module 19618 (VoicePanelFloatingCTAContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import native from "native" /* 5209 */;
-import Stack_Stack from "Stack/Stack" /* 6165 */;
-import RowButton2 from "RowButton" /* 8324 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11419 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11422 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12747 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19473 */;
+import native from "native" /* 5229 */;
+import Stack_Stack from "Stack/Stack" /* 6185 */;
+import RowButton2 from "RowButton" /* 8269 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11381 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11384 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12712 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19465 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import createStyles from "createStyles" /* 5143 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let rect;
-function FloatingCTA(trailing) {
-  trailing = trailing.trailing;
-  const merged = Object.assign(trailing, Object.assign({ trailing: 0 }));
+function FloatingCTA(arg0) {
+  let onPress;
+  let trailing;
+  ({ trailing, onPress } = arg0);
+  const merged = Object.assign(arg0, Object.assign({ trailing: 0, onPress: 0 }));
   const Stack = Stack_Stack.Stack;
+  let tmp3 = null == trailing;
   const RowButton = RowButton2.RowButton;
+  if (tmp3) {
+    tmp3 = null != onPress;
+  }
   const merged1 = Object.assign(merged);
   return <Stack>{null}</Stack>;
 }
@@ -43,7 +49,6 @@ class VoicePanelFloatingCTAContainer {
     let mode;
     let safeArea;
     let state;
-    let tmp12;
     let tmp13;
     let tmp14;
     let tmp15;
@@ -57,7 +62,8 @@ class VoicePanelFloatingCTAContainer {
     let tmp23;
     let tmp24;
     let tmp25;
-    let tmp27Result;
+    let tmp26;
+    let tmp28Result;
     let windowDimensions;
     wrapperSpecs = wrapperSpecs.wrapperSpecs;
     let dismissableContent;
@@ -81,7 +87,9 @@ class VoicePanelFloatingCTAContainer {
       return obj.getDismissableCTAProps(obj2);
     }, items1);
     let obj3 = channelId(stateFromStores[17]);
-    const floatingCTAProps = obj3.useFloatingCTAProps(stateFromStores);
+    const stageCTAProps = obj3.useStageCTAProps(stateFromStores);
+    const obj4 = channelId(stateFromStores[17]);
+    const floatingCTAProps = obj4.useFloatingCTAProps(stateFromStores);
     ({ hiddenProps, hiddenStyles } = dismissableContent(stateFromStores[18])(mode, wrapperSpecs, { state, cleanUp }));
     dismissableContent(stateFromStores[18])(mode, wrapperSpecs, { state, cleanUp });
     const items2 = [closure_12, , , , , , , , , , , , , ];
@@ -113,7 +121,7 @@ class VoicePanelFloatingCTAContainer {
     let c10;
     let c11;
     let c12;
-    [tmp12, tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25] = items2;
+    [tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26] = items2;
     class VoicePanelFloatingCTAContainerTsx1 {
       constructor() {
         let items;
@@ -144,31 +152,35 @@ class VoicePanelFloatingCTAContainer {
         return obj3;
       }
     }
-    const items3 = [tmp13, tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25];
+    const items3 = [tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20, tmp21, tmp22, tmp23, tmp24, tmp25, tmp26];
     VoicePanelFloatingCTAContainerTsx1.__closure = items3;
     VoicePanelFloatingCTAContainerTsx1.__workletHash = 6234134411441;
-    VoicePanelFloatingCTAContainerTsx1.__initData = tmp12;
+    VoicePanelFloatingCTAContainerTsx1.__initData = tmp13;
     const animatedStyle = useAnimatedStyle(VoicePanelFloatingCTAContainerTsx1);
     const items4 = [tmp.container, animatedStyle, hiddenStyles];
     const View = tmp2(tmp3[19]).View;
-    if (null != memo) {
-      const obj5 = {
+    if (null != stageCTAProps) {
+      const obj6 = {};
+      let merged = Object.assign(stageCTAProps);
+      tmp28Result = tmp28(FloatingCTA, obj6);
+    } else if (null != memo) {
+      const obj7 = {
         contentTypes: tmp5,
         children() {
             const merged = Object.assign(memo);
             return <FloatingCTA />;
           }
       };
-      tmp27Result = tmp27(tmp2(tmp3[23]), obj5);
+      tmp28Result = tmp28(tmp2(tmp3[23]), obj7);
     } else {
-      tmp27Result = null;
+      tmp28Result = null;
       if (null != floatingCTAProps) {
-        const obj6 = {};
-        let merged = Object.assign(floatingCTAProps);
-        tmp27Result = tmp27(FloatingCTA, obj6);
+        const obj8 = {};
+        const merged1 = Object.assign(floatingCTAProps);
+        tmp28Result = tmp28(FloatingCTA, obj8);
       }
     }
-    return <View style={items4} animatedProps={hiddenProps}>{tmp27Result}</View>;
+    return <View style={items4} animatedProps={hiddenProps}>{tmp28Result}</View>;
   }
 }
 const UI_SHOW_HIDE_PHYSICS = VoicePanelConstants.UI_SHOW_HIDE_PHYSICS;

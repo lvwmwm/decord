@@ -1,15 +1,15 @@
-// Module ID: 18878
-// Function ID: 18879
+// Module ID: 18866
+// Function ID: 18867
 // Name: ContentInventoryEntryRow
-// Dependencies: [19, 5085, 21, 504, 8860, 18879, 18886, 2]
+// Dependencies: [19, 5112, 21, 504, 8806, 18867, 18874, 2]
 // Exports: default
 
-// Module 18878 (ContentInventoryEntryRow)
+// Module 18866 (ContentInventoryEntryRow)
 import Fragment from "Fragment" /* 21 */;
-import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 18879 */;
-import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 18886 */;
+import GamingLikeEntryRowDefault from "GamingLikeEntryRow" /* 18867 */;
+import CustomStatusEntryRowDefault from "CustomStatusEntryRow" /* 18874 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -28,9 +28,9 @@ export default function ContentInventoryEntryRow(content) {
     return null;
   } else {
     const content_type = content.content_type;
-    if (content(8860).ContentInventoryEntryType.TOP_GAME !== content_type) {
-      if (content(8860).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
-        if (content(8860).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
+    if (content(8806).ContentInventoryEntryType.TOP_GAME !== content_type) {
+      if (content(8806).ContentInventoryEntryType.PLAYED_GAME !== content_type) {
+        if (content(8806).ContentInventoryEntryType.CUSTOM_STATUS === content_type) {
           const obj2 = { content, renderForScreenshot: flag, visible: flag2 };
           const tmp4 = jsx;
           const tmp6 = CustomStatusEntryRowDefault;

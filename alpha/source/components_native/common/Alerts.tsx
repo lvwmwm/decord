@@ -1,24 +1,24 @@
-// Module ID: 19316
-// Function ID: 19317
+// Module ID: 19308
+// Function ID: 19309
 // Name: Alerts
-// Dependencies: [19, 17, 5144, 15898, 16486, 8074, 10321, 21, 19317, 19318, 19322, 19323, 5143, 575, 504, 1652, 5209, 5380, 1705, 5773, 5774, 6097, 6160, 6155, 7099, 6103, 558, 2]
+// Dependencies: [19, 17, 5171, 15892, 16483, 7583, 10273, 21, 19309, 19310, 19314, 19315, 5170, 575, 504, 1652, 5229, 5400, 1705, 5791, 5792, 6117, 6180, 6175, 7041, 6123, 558, 2]
 
-// Module 19316 (Alerts)
+// Module 19308 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5209 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6097 */;
-import OverlayViewDefault from "OverlayView" /* 6103 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19317 */;
+import native from "native" /* 5229 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6117 */;
+import OverlayViewDefault from "OverlayView" /* 6123 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19309 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15898 */;
-import PermissionVADStore from "PermissionVADStore" /* 16486 */;
-import SurveyStore from "SurveyStore" /* 8074 */;
-import AlertStore from "AlertStore" /* 10321 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15892 */;
+import PermissionVADStore from "PermissionVADStore" /* 16483 */;
+import SurveyStore from "SurveyStore" /* 7583 */;
+import AlertStore from "AlertStore" /* 10273 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "Array", renderKey: "id", props: "concat" });
+let closure_23 = Object.freeze({ renderAlert: "enabled", renderKey: "Array", props: "isArray" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -336,7 +336,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "Array", renderKey: "id", props: "concat" };
+        return { renderAlert: "enabled", renderKey: "Array", props: "isArray" };
       }
     }
   });

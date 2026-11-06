@@ -1,56 +1,28 @@
 // Module ID: 13323
 // Function ID: 13324
-// Dependencies: [13286, 13309, 13281, 13296]
-// Exports: setMeasurement, timedEventsToMeasurements
+// Dependencies: []
+// Exports: isSentryRequestUrl
 
 // Module 13323
-import _mod13286 from "module_13286" /* 13286 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 13296 */;
-import _mod13309 from "module_13309" /* 13309 */;
 
-
-export function setMeasurement(arg0, arg1, arg2) {
-  let activeSpan = arg3;
-  if (arg3 === undefined) {
-    const obj = _mod13286;
-    activeSpan = obj.getActiveSpan();
-  }
-  let rootSpan = activeSpan;
-  if (rootSpan) {
-    const obj3 = _mod13286;
-    rootSpan = obj3.getRootSpan(activeSpan);
-  }
-  if (rootSpan) {
-    if (_mod13309.DEBUG_BUILD) {
-      const logger = tmp9(13281).logger;
-      const _HermesInternal = HermesInternal;
-      logger.log("[Measurement] Setting measurement on root span: " + arg0 + " = " + arg1 + " " + arg2);
+export function isSentryRequestUrl(arr, getDsn) {
+  const tmp = getDsn && getDsn.getDsn();
+  arr = getDsn && getDsn.getOptions().tunnel;
+  let tmp2 = tmp && arr.includes(tmp.host);
+  if (!tmp2) {
+    let flag = false;
+    if (arr) {
+      let substr = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr = arr.slice(0, -1);
+      }
+      let substr1 = arr;
+      if ("/" === arr[arr.length - 1]) {
+        substr1 = arr.slice(0, -1);
+      }
+      flag = substr === substr1;
     }
-    const obj2 = {};
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE] = arg1;
-    obj2[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT] = arg2;
-    rootSpan.addEvent(arg0, obj2);
+    tmp2 = flag;
   }
-}
-export function timedEventsToMeasurements(arr) {
-  let tmp = arr;
-  if (tmp) {
-    if (0 !== arr.length) {
-      let obj = {};
-      const item = arr.forEach((attributes) => {
-        const tmp = attributes.attributes || {};
-        const tmp2 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_UNIT];
-        const tmp3 = tmp[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_MEASUREMENT_VALUE];
-        let tmp4 = typeof tmp2 === "string";
-        if (typeof tmp2 === "string") {
-          tmp4 = typeof tmp3 === "number";
-        }
-        if (tmp4) {
-          obj = { value: tmp3, unit: tmp2 };
-          obj[attributes.name] = obj;
-        }
-      });
-      return obj;
-    }
-  }
+  return tmp2;
 }

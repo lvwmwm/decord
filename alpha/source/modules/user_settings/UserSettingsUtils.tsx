@@ -92,7 +92,7 @@ export function mutateUserGuildSettings(guilds, arg1, fn) {
   }
   return fn(guilds.guilds[tmp3]);
 }
-export function mutateUserGuildSettingsInternal(guilds, arg1, f87586) {
+export function mutateUserGuildSettingsInternal(guilds, arg1, f87688) {
   let tmp = arg1;
   const tmp2 = null != arg1 && "null" !== tmp;
   if (!tmp2) {
@@ -103,7 +103,7 @@ export function mutateUserGuildSettingsInternal(guilds, arg1, f87586) {
     const GuildSettings = preloaded_user_settings.GuildSettings;
     guilds[tmp] = GuildSettings.create();
   }
-  return f87586(guilds.guilds[tmp]);
+  return f87688(guilds.guilds[tmp]);
 }
 export function mutateUserChannelSettings(guilds, arg1, id, fn) {
   if (null == guilds.guilds) {
@@ -128,13 +128,13 @@ export function mutateUserChannelSettings(guilds, arg1, id, fn) {
   }
   return fn(guilds.guilds[tmp3].channels[id]);
 }
-export function mutateUserChannelSettingsInternal(channels, arg1, f87586) {
+export function mutateUserChannelSettingsInternal(channels, arg1, f87688) {
   if (!(arg1 in channels.channels)) {
     channels = channels.channels;
     const ChannelSettings = preloaded_user_settings.ChannelSettings;
     channels[arg1] = ChannelSettings.create();
   }
-  return f87586(channels.channels[arg1]);
+  return f87688(channels.channels[arg1]);
 }
 export function runMigrations(proto, arg1) {
   if (null == proto.versions) {

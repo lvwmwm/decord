@@ -1,34 +1,34 @@
-// Module ID: 13672
-// Function ID: 13673
+// Module ID: 13647
+// Function ID: 13648
 // Name: CheckpointModal
-// Dependencies: [5, 32, 19, 17, 5086, 13668, 6204, 1083, 21, 575, 5384, 13673, 2123, 5143, 13686, 1627, 1493, 13687, 504, 13690, 13691, 6572, 6228, 12156, 8819, 13692, 13693, 13694, 6571, 13696, 9141, 5386, 6882, 2121, 6211, 6225, 13611, 13670, 13666, 5848, 1113, 6248, 5209, 13697, 13872, 13874, 13883, 6233, 6234, 7198, 13917, 13918, 13932, 13698, 13934, 2]
+// Dependencies: [5, 32, 19, 17, 5113, 13643, 6224, 1083, 21, 575, 5404, 13648, 2118, 5170, 13661, 1627, 1493, 13662, 504, 13665, 13666, 6592, 6248, 12125, 8765, 13667, 13668, 13669, 6591, 13671, 9087, 5406, 6824, 2116, 6231, 6245, 13586, 13645, 13641, 5866, 1113, 6268, 5229, 13672, 13847, 13849, 13858, 6253, 6254, 7145, 13893, 13894, 13908, 13673, 13910, 2]
 // Exports: default
 
-// Module 13672 (CheckpointModal)
+// Module 13647 (CheckpointModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
-import Server from "Server" /* 2121 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6211 */;
-import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6225 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6572 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 13611 */;
-import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13686 */;
-import CheckpointFlows from "CheckpointFlows" /* 13687 */;
-import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13691 */;
-import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13934 */;
+import Server from "Server" /* 2116 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import HapticUtils from "HapticUtils" /* 5406 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6231 */;
+import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 6245 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6592 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 13586 */;
+import CheckpointHeaderButton from "CheckpointHeaderButton" /* 13661 */;
+import CheckpointFlows from "CheckpointFlows" /* 13662 */;
+import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 13666 */;
+import useCheckpointPreloaderDefault from "useCheckpointPreloader" /* 13910 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MessageRecord from "MessageRecord" /* 5086 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
+import MessageRecord from "MessageRecord" /* 5113 */;
+import CheckpointStore from "CheckpointStore" /* 13643 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -579,7 +579,7 @@ function CheckpointModal(didPlayerShareDataWithDiscord) {
     onShare: function handleShare() {
       obj = { character: stateFromStores, stats, onForward: handleForward };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(13673, dependencyMap.paths), "CheckpointShare", obj);
+      obj2.openLazy(asyncRequire(13648, dependencyMap.paths), "CheckpointShare", obj);
     },
     color: tmp22,
     shadowColor,

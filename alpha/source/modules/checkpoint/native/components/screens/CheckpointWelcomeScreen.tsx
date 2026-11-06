@@ -1,24 +1,24 @@
-// Module ID: 13875
-// Function ID: 13876
+// Module ID: 13850
+// Function ID: 13851
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1385, 21, 5143, 575, 1493, 504, 5197, 13876, 13877, 1113, 3187, 3219, 13879, 2]
+// Dependencies: [17, 1385, 21, 5170, 575, 1493, 504, 5224, 13851, 13852, 1113, 3216, 3248, 13854, 2]
 // Exports: default
 
-// Module 13875 (CheckpointWelcomeScreen)
+// Module 13850 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1493 */;
-import _modDef3187 from "module_3187" /* 3187 */;
-import _modDef3219 from "module_3219" /* 3219 */;
-import UserUtils from "UserUtils" /* 5197 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 13876 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 13877 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 13879 */;
+import _modDef3216 from "module_3216" /* 3216 */;
+import _modDef3248 from "module_3248" /* 3248 */;
+import UserUtils from "UserUtils" /* 5224 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 13851 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 13852 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 13854 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const TextWritingAnimationDefault = TextWritingAnimation;
@@ -56,7 +56,7 @@ export default function CheckpointWelcomeScreen() {
   const obj3 = { children: hasOwnProperty(View, obj4) };
   obj4 = { style: tmp.container, children: metroRequire(View, obj5) };
   obj5 = { style: tmp.content, children: items3 };
-  const obj6 = { isStepHeading: true, style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3187["CdU/PF"]), delay: 100, variant: "display-lg" };
+  const obj6 = { isStepHeading: true, style: items1, textStyle: tmp.titleText, text: intl.string(_modDef3216["CdU/PF"]), delay: 100, variant: "display-lg" };
   items1 = [tmp.title, ];
   const obj7 = { transform: items2 };
   items2 = [{ scale: bound }];
@@ -65,7 +65,7 @@ export default function CheckpointWelcomeScreen() {
   const tmp6 = TextWritingAnimationDefault;
   intl = intl3.intl;
   items3 = [hasOwnProperty(tmp6, obj6), , ];
-  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3219.xhZ23b, { username: name }), delay: 100 + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+  const obj8 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3248.xhZ23b, { username: name }), delay: 100 + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
   const tmp7 = TextWritingAnimationDefault;
   intl2 = intl3.intl;
   items3[1] = hasOwnProperty(tmp7, obj8);

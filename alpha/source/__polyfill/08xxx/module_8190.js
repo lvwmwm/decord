@@ -1,107 +1,11 @@
 // Module ID: 8190
 // Function ID: 8191
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8184, 8191, 8198, 8199, 8200]
+// Dependencies: [65]
 
 // Module 8190
-import Fragment from "Fragment" /* 21 */;
-import extractProps from "extractProps" /* 8191 */;
-import extractText from "extractText" /* 8198 */;
-import multiplyMatricesDefault from "multiplyMatrices" /* 8200 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import react from "react" /* 19 */;
+import module_65 from "module_65" /* 65 */;
 
-const extractPropsDefault = extractProps;
-let root;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGFilter", validAttributes: { name: true, x: true, y: true, height: true, width: true, filterUnits: true, primitiveUnits: true } };
 
-let tmp4;
-const _modDef8199 = tmp4(8199);
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-const jsx = Fragment.jsx;
-class G {
-  constructor() {
-    let constructResult;
-    const self = this;
-    const items = [...arguments];
-    let closure_0;
-    let tmp = _classCallCheck(this, G);
-    const items1 = [...items];
-    const obj = _getPrototypeOf(G);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items1, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items1);
-    }
-    const tmp3Result = tmp3(self, constructResult);
-    closure_0 = tmp3Result;
-    tmp3Result.setNativeProps = (matrix) => {
-      const tmp = !matrix.matrix && closure_2_1(closure_2_2[7])(matrix);
-      if (tmp) {
-        matrix.matrix = tmp;
-      }
-      root = root.root;
-      if (root != null) {
-        root.setNativeProps(matrix);
-      }
-    };
-    return tmp3Result;
-  }
-}
-_inherits(G, multiplyMatricesDefault);
-const entry = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const props = this.props;
-    const obj = extractProps;
-    const propsAndStylesResult = obj.propsAndStyles(props);
-    const tmp5 = extractPropsDefault(propsAndStylesResult, this);
-    const obj2 = extractText;
-    const extractFontResult = obj2.extractFont(propsAndStylesResult);
-    if (typeof hasProps === "function") {
-      const keys = Object.keys();
-      if (keys !== undefined) {
-        let flag = true;
-        if (flag) {
-          tmp5.font = extractFontResult;
-        }
-        _modDef8199;
-        const merged = Object.assign(tmp5);
-        return <tmp4Result ref={function ref(arg0) {
-          return self.refMethod(arg0);
-        }}>{props.children}</tmp4Result>;
-      }
-      flag = false;
-    } else {
-      throw new TypeError("Trying to call a non-function");
-    }
-  }
-};
-let items = [entry];
-const importDefaultResultResult = _createClass(G, items);
-importDefaultResultResult.displayName = "G";
-function hasProps(arg0) {
-
-}
-
-export default importDefaultResultResult;
+export default module_65.get("RNSVGFilter", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

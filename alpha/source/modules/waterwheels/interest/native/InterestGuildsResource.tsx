@@ -1,11 +1,11 @@
-// Module ID: 19881
-// Function ID: 19882
+// Module ID: 19887
+// Function ID: 19888
 // Name: InterestGuildsResource
-// Dependencies: [5, 18715, 2]
+// Dependencies: [5, 18705, 2]
 // Exports: interestGuildsKey
 
-// Module 19881 (InterestGuildsResource)
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18715 */;
+// Module 19887 (InterestGuildsResource)
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18705 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,8 +31,7 @@ class InterestGuildsResource {
   constructor(fetchGuilds) {
     const obj = Object.create(new.target.prototype);
     obj.snapshot = { key: "", status: "idle", guilds: [], failed: false };
-    set = new Set();
-    obj.listeners = set;
+    obj.listeners = new Set();
     obj.disposed = false;
     obj.requestId = 0;
     obj.gameIds = [];
@@ -49,54 +48,63 @@ class InterestGuildsResource {
         return listeners.delete(closure_0);
       };
     };
-    obj.setPicks = function setPicks(items) {
-      let load;
-      let requestId;
-      let flag = arg1;
-      if (arg1 === undefined) {
+    obj.setPicks = function setPicks(gameIds, flag) {
+      if (flag === undefined) {
         flag = false;
       }
-      if (!obj.disposed) {
+      obj.updatePicks(gameIds, flag, false);
+    };
+    obj.loadPopular = function loadPopular() {
+      return obj.updatePicks([], false, true);
+    };
+    obj.retry = function retry() {
+      return obj.updatePicks(obj.gameIds, true, "popular" === obj.snapshot.key);
+    };
+    obj.fetchGuilds = fetchGuilds;
+    new Set();
+    return obj;
+  }
+  updatePicks(gameIds, flag, arg2) {
+    let load;
+    let requestId;
+    const self = this;
+    if (!this.disposed) {
+      let str = "popular";
+      if (!arg2) {
         const _Array = Array;
         const _Set = Set;
-        const self = this;
         const self2 = this;
-        set = new Set(items);
+        const self3 = this;
+        set = new Set(gameIds);
         const fromResult = from(set);
         const substr = fromResult.slice(0, MAX_SELECTIONS);
         const sorted = substr.sort();
-        const joined = sorted.join(",");
-        const tmp6 = MAX_SELECTIONS;
-        const tmp8 = joined !== obj.snapshot.key || flag;
-        if (tmp8) {
-          const _Array2 = Array;
-          const _Set2 = Set;
-          const self4 = this;
-          const from2 = Array.from;
-          const self3 = this;
-          const set1 = new Set(items);
-          const from2Result = from2(set1);
-          obj.gameIds = from2Result.slice(0, tmp6);
-          obj.requestId = obj.requestId + 1;
-          if ("" !== joined) {
-            const obj2 = { key: joined, status: "loading", guilds: [], failed: false };
-            obj.publish(obj2);
-            items = [];
-            ({ load, requestId } = obj);
-            HermesBuiltin.arraySpread(items, obj.gameIds, 0);
-            load(requestId, joined, items);
-          } else {
-            const obj3 = { key: joined, status: "idle", guilds: [], failed: false };
-            obj.publish(obj3);
-          }
+        str = sorted.join(",");
+      }
+      const tmp8 = str !== self.snapshot.key || flag;
+      if (tmp8) {
+        const _Array2 = Array;
+        const _Set2 = Set;
+        const self5 = this;
+        const from2 = Array.from;
+        const self4 = this;
+        const set1 = new Set(gameIds);
+        const from2Result = from2(set1);
+        self.gameIds = from2Result.slice(0, MAX_SELECTIONS);
+        self.requestId = self.requestId + 1;
+        if ("" !== str) {
+          const obj = { key: str, status: "loading", guilds: [], failed: false };
+          self.publish(obj);
+          const items = [];
+          ({ load, requestId } = self);
+          HermesBuiltin.arraySpread(items, self.gameIds, 0);
+          load(requestId, str, items);
+        } else {
+          const obj2 = { key: str, status: "idle", guilds: [], failed: false };
+          self.publish(obj2);
         }
       }
-    };
-    obj.retry = function retry() {
-      return obj.setPicks(obj.gameIds, true);
-    };
-    obj.fetchGuilds = fetchGuilds;
-    return obj;
+    }
   }
   dispose() {
     this.disposed = true;

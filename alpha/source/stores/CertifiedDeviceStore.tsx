@@ -1,17 +1,17 @@
-// Module ID: 6057
-// Function ID: 6058
+// Module ID: 6077
+// Function ID: 6078
 // Name: CertifiedDeviceStore
-// Dependencies: [5905, 510, 504, 12, 572, 2]
+// Dependencies: [5924, 510, 504, 12, 572, 2]
 
-// Module 6057 (CertifiedDeviceStore)
+// Module 6077 (CertifiedDeviceStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 5905 */;
+import Constants from "Constants" /* 5924 */;
 import size from "module_2" /* 2 */;
 
-const f89608 = (id) => {
+const f89710 = (id) => {
   closure_1_6[id.id] = id;
   return id;
 };
@@ -43,7 +43,7 @@ class CertifiedDeviceStore extends Store {
           });
         }
         tmp2[arg1] = arr;
-        const item2 = arr.forEach(f89608);
+        const item2 = arr.forEach(f89710);
       });
     }
   }
@@ -127,7 +127,7 @@ const obj = {
       });
     }
     closure_5[applicationId] = devices;
-    const item1 = devices.forEach(f89608);
+    const item1 = devices.forEach(f89710);
     const Storage = Storage2.Storage;
     const result = Storage.set(CertifiedDeviceStore_str, tmp);
     closure_7 = closure_7 + 1;

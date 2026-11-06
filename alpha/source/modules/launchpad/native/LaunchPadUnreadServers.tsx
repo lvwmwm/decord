@@ -1,22 +1,22 @@
-// Module ID: 19380
-// Function ID: 19381
+// Module ID: 19372
+// Function ID: 19373
 // Name: LaunchPadUnreadServers
-// Dependencies: [19, 17, 4992, 6980, 1385, 1072, 21, 5143, 575, 7664, 19381, 504, 1187, 10983, 5854, 15111, 7627, 5893, 9972, 18449, 1493, 19386, 1113, 7380, 2]
+// Dependencies: [19, 17, 5019, 6922, 1385, 1072, 21, 5170, 575, 7617, 19373, 504, 1187, 10935, 5872, 15088, 7572, 5912, 9923, 18441, 1493, 19378, 1113, 7327, 2]
 
-// Module 19380 (LaunchPadUnreadServers)
+// Module 19372 (LaunchPadUnreadServers)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import transitionToChannel from "transitionToChannel" /* 5893 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7627 */;
-import transitionToGuild from "transitionToGuild" /* 7664 */;
-import isGuildSelectableDefault from "isGuildSelectable" /* 19386 */;
+import transitionToChannel from "transitionToChannel" /* 5912 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7572 */;
+import transitionToGuild from "transitionToGuild" /* 7617 */;
+import isGuildSelectableDefault from "isGuildSelectable" /* 19378 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import ReadStateStore from "ReadStateStore" /* 6980 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import ReadStateStore from "ReadStateStore" /* 6922 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -55,7 +55,7 @@ let closure_13 = react.memo(function GuildItemInner(guildId) {
   const callback = react.useCallback(() => {
     onGuildSelect(guildId);
   }, items);
-  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(19381), obj2) };
+  let obj = { style: tmp.guildWrapper, children: closure_10(onGuildSelect(19373), obj2) };
   const callback1 = react.useCallback(() => {
     const obj = transitionToGuild;
     obj.transitionToGuild(guildId);

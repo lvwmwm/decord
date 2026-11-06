@@ -1,19 +1,19 @@
-// Module ID: 12316
-// Function ID: 12317
+// Module ID: 12283
+// Function ID: 12284
 // Name: useConjurePublishPanel
-// Dependencies: [5, 32, 19, 5014, 5075, 6982, 1072, 6983, 3995, 1113, 12317, 12318, 12320, 11058, 12321, 504, 9183, 11060, 2]
+// Dependencies: [5, 32, 19, 5041, 5102, 6924, 1072, 6925, 4024, 1113, 12284, 12285, 12287, 11010, 12288, 504, 9129, 11012, 2]
 // Exports: conjurePublishComponents, default
 
-// Module 12316 (useConjurePublishPanel)
-import _modDef3995 from "module_3995" /* 3995 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9183 */;
+// Module 12283 (useConjurePublishPanel)
+import _modDef4024 from "module_4024" /* 4024 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6925 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9129 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore_mod from "GuildStore" /* 5014 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import GuildStore_mod from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -22,7 +22,7 @@ let _require, c1, c4, closure_2, importDefault;
 
 let c10;
 let c9;
-const f101902 = (item) => {
+const f102061 = (item) => {
   let intl;
   let tmp;
   let tmp2;
@@ -35,17 +35,17 @@ let _slicedToArray = _slicedToArray_mod;
 let GuildStore = GuildStore_mod;
 const isProjectOwner = ConjureProjectStore.isProjectOwner;
 ({ ChannelTypes: c9, Permissions: c10 } = Constants);
-let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef3995.UnoAgo];
+let items = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4024.UnoAgo];
 let items1 = [items, , , , ];
-let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef3995["I88/iG"]];
+let items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4024["I88/iG"]];
 items1[1] = items2;
-let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef3995.skjf5I];
+let items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4024.skjf5I];
 items1[2] = items3;
-let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef3995.gXY1x1];
+let items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4024.gXY1x1];
 items1[3] = items4;
-const items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef3995.Q9ruoM];
+const items5 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4024.Q9ruoM];
 items1[4] = items5;
-let obj = { screen_capture: _modDef3995["8/7kE7"], connect_user_to_voice: _modDef3995.uvDWXa };
+let obj = { screen_capture: _modDef4024["8/7kE7"], connect_user_to_voice: _modDef4024.uvDWXa };
 let result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishPanel.tsx");
 
 export default function useConjurePublishPanel(id, guildId) {
@@ -242,7 +242,7 @@ export default function useConjurePublishPanel(id, guildId) {
     initialChannelNames: arr4,
     channels,
     appChannelsPrivate: tmp25,
-    components: found.map(f101902),
+    components: found.map(f102061),
     devicePermissions: items4,
     note: stringResult,
     sharing: tmp27,
@@ -323,6 +323,6 @@ export function conjurePublishComponents(arg0) {
     [tmp] = item;
     return items.includes(tmp);
   });
-  return found.map(f101902);
+  return found.map(f102061);
 }
 export const CONJURE_PUBLISH_PERMISSION_LABELS = obj;

@@ -1,12 +1,12 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 18037
+// Function ID: 18038
 // Name: DesignSystemsLegacyButtonSetting
-// Dependencies: [8578, 1072, 11737, 18050, 2]
+// Dependencies: [8524, 1072, 11703, 18038, 2]
 
-// Module 18049 (DesignSystemsLegacyButtonSetting)
+// Module 18037 (DesignSystemsLegacyButtonSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 8578 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
+import SettingsConstants from "SettingsConstants" /* 8524 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

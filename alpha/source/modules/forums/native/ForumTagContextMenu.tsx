@@ -1,13 +1,13 @@
-// Module ID: 10707
-// Function ID: 10708
+// Module ID: 10659
+// Function ID: 10660
 // Name: ForumTagContextMenu
-// Dependencies: [21, 4968, 1113, 10708, 7496, 5848, 10061, 2]
+// Dependencies: [21, 4995, 1113, 10660, 7441, 5866, 10012, 2]
 // Exports: default
 
-// Module 10707 (ForumTagContextMenu)
+// Module 10659 (ForumTagContextMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5848 */;
-import ClipboardUtils from "ClipboardUtils" /* 7496 */;
+import ToastUtils from "ToastUtils" /* 5866 */;
+import ClipboardUtils from "ClipboardUtils" /* 7441 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -17,10 +17,10 @@ export default function ForumTagContextMenu(tagId) {
   let intl;
   tagId = tagId.tagId;
   const children = tagId.children;
-  const DeveloperMode = tagId(4968).DeveloperMode;
+  const DeveloperMode = tagId(4995).DeveloperMode;
   let obj = {
     label: intl.string(tagId(1113).t["8VG6IY"]),
-    IconComponent: tagId(10708).IdIcon,
+    IconComponent: tagId(10660).IdIcon,
     action() {
       const obj = ClipboardUtils;
       obj.copy(tagId);
@@ -31,5 +31,5 @@ export default function ForumTagContextMenu(tagId) {
   const enabled = DeveloperMode.useSetting();
   intl = tagId(1113).intl;
   const items = [obj];
-  return jsx(tagId(10061).ContextMenu, { triggerOnLongPress: true, items, enabled, children });
+  return jsx(tagId(10012).ContextMenu, { triggerOnLongPress: true, items, enabled, children });
 };

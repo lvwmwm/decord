@@ -1,12 +1,12 @@
-// Module ID: 11069
-// Function ID: 11070
+// Module ID: 11022
+// Function ID: 11023
 // Name: conjurePreviewFrameSurfaces
-// Dependencies: [5811, 6983, 2]
+// Dependencies: [5829, 6925, 2]
 // Exports: declaresPreviewFrame, previewFrameLaunchType, previewFrameSurfaceOptions, resolvePreviewFrameSurface
 
-// Module 11069 (conjurePreviewFrameSurfaces)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5811 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
+// Module 11022 (conjurePreviewFrameSurfaces)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5829 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6925 */;
 import size from "module_2" /* 2 */;
 
 let obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, declaredBy: ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL };

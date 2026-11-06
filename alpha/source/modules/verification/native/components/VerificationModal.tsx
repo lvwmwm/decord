@@ -1,21 +1,21 @@
-// Module ID: 19958
-// Function ID: 19959
+// Module ID: 19965
+// Function ID: 19966
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 19959, 4986, 1385, 1072, 21, 5143, 1187, 19960, 1113, 5770, 1500, 1260, 7142, 7700, 9252, 7501, 6878, 19964, 7214, 7223, 7220, 7290, 7352, 7353, 7215, 19965, 7385, 7303, 504, 5384, 5333, 7309, 2]
+// Dependencies: [5, 19, 17, 19966, 5013, 1385, 1072, 21, 5170, 1187, 19967, 1113, 5788, 1500, 1260, 7089, 7653, 9198, 7446, 6820, 19971, 7161, 7170, 7167, 7237, 7299, 7300, 7162, 19972, 7332, 7250, 504, 5404, 5353, 7256, 2]
 // Exports: default
 
-// Module 19958 (VerificationModal)
+// Module 19965 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1500 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 19959 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4986 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 19966 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 5013 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -48,9 +48,9 @@ function PhoneThenEmailInterstitial(navigation) {
       dispatch(StackActions.push(ENTER_EMAIL));
     }
   });
-  const Button = navigation(5770).Button;
+  const Button = navigation(5788).Button;
   intl3 = navigation(1113).intl;
-  return <EmptyState Illustration={navigation(19960).VerifyPhone} title={intl.string(navigation(1113).t.KLnLIP)} body={intl2.string(navigation(1113).t.XGbCq3)}>{null}</EmptyState>;
+  return <EmptyState Illustration={navigation(19967).VerifyPhone} title={intl.string(navigation(1113).t.KLnLIP)} body={intl2.string(navigation(1113).t.XGbCq3)}>{null}</EmptyState>;
 }
 const View = react_native.View;
 ({ UserRequiredActions: c9, VerificationModalScenes: c10 } = Constants);
@@ -82,7 +82,7 @@ export default function VerificationModal() {
     const obj2 = stateFromStores(dependencyMap[33]);
     obj2.dismissKeyboard();
   }, []);
-  const Navigator = stateFromStores(7309).Navigator;
+  const Navigator = stateFromStores(7256).Navigator;
   let intl = stateFromStores(1113).intl;
   return <Navigator screens={react.useMemo(() => {
     let obj10;

@@ -1,12 +1,12 @@
-// Module ID: 17868
-// Function ID: 17869
+// Module ID: 17856
+// Function ID: 17857
 // Name: GeneratedTestUsersStore
-// Dependencies: [1399, 504, 572, 2]
+// Dependencies: [1404, 504, 572, 2]
 
-// Module 17868 (GeneratedTestUsersStore)
+// Module 17856 (GeneratedTestUsersStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import UserRecord from "UserRecord" /* 1399 */;
+import UserRecord from "UserRecord" /* 1404 */;
 import size from "module_2" /* 2 */;
 
 let map1, set;

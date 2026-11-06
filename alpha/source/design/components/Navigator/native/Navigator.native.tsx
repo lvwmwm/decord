@@ -1,24 +1,25 @@
-// Module ID: 7309
-// Function ID: 7310
+// Module ID: 7256
+// Function ID: 7257
 // Name: Navigator
-// Dependencies: [32, 19, 17, 21, 5143, 575, 7310, 7142, 5734, 7311, 1627, 1113, 12, 7344, 1500, 6163, 5379, 7349, 7149, 1243, 2]
+// Dependencies: [32, 19, 17, 21, 5170, 575, 7257, 7089, 5754, 7258, 1627, 5781, 1113, 12, 7291, 1500, 6183, 5399, 7296, 7096, 1243, 2]
 // Exports: Navigator, useAccessibilityNativeStackOptions, useNavigatorScreens
 
-// Module 7309 (Navigator)
+// Module 7256 (Navigator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import SentryInitUtils from "SentryInitUtils" /* 1243 */;
 import Link from "Link" /* 1500 */;
-import BackPressTracking from "BackPressTracking" /* 6163 */;
-import NavigatorHeader from "NavigatorHeader" /* 7142 */;
-import _mod7149 from "module_7149" /* 7149 */;
-import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7310 */;
-import NavigatorScreen2 from "NavigatorScreen" /* 7344 */;
-import useNavigationTheme from "useNavigationTheme" /* 7349 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import BackPressTracking from "BackPressTracking" /* 6183 */;
+import NavigatorHeader from "NavigatorHeader" /* 7089 */;
+import _mod7096 from "module_7096" /* 7096 */;
+import useNavigatorShouldCrossfade from "useNavigatorShouldCrossfade" /* 7257 */;
+import NavigatorScreen2 from "NavigatorScreen" /* 7291 */;
+import useNavigationTheme from "useNavigationTheme" /* 7296 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -53,13 +54,15 @@ function NavigationStack(screens) {
   const disableHeaderAnimation = screens.disableHeaderAnimation;
   ({ initialRouteName, detachInactiveScreens } = screens);
   const tmp = cardShadowEnabled();
-  let closure_18 = tmp;
+  const navbar = tmp;
   let obj = screens(onDidFocus[7]);
   const styles = obj.useStyles();
-  let obj2 = screens(onDidFocus[8]);
-  const token = obj2.useToken(onWillFocus(onDidFocus[5]).colors.NAVIGATOR_HEADER_TINT);
-  const obj3 = screens(onDidFocus[6]);
-  const navigatorShouldCrossfade = obj3.useNavigatorShouldCrossfade();
+  let obj2 = screens(onDidFocus[7]);
+  const navigatorHeaderSize = obj2.useNavigatorHeaderSize();
+  const obj3 = screens(onDidFocus[8]);
+  const token = obj3.useToken(onWillFocus(onDidFocus[5]).colors.ICON_DEFAULT);
+  const obj4 = screens(onDidFocus[6]);
+  const navigatorShouldCrossfade = obj4.useNavigatorShouldCrossfade();
   const first = gestureResponseDistance(gestureDirection.useState(() => {
     const obj = screens(onDidFocus[9]);
     return obj.createStackNavigator();
@@ -83,27 +86,28 @@ function NavigationStack(screens) {
       }
     };
   }, items);
-  let items1 = [navigatorShouldCrossfade, , , , , , , , , , , , , , , , , , , , , ];
+  let items1 = [navigatorShouldCrossfade, , , , , , , , , , , , , , , , , , , , , , ];
   ({ navbar: arr2[1], headerLeftContainerStyle: arr2[2], headerRightContainerStyle: arr2[3] } = tmp);
   items1[4] = headerStyle;
-  items1[5] = token;
-  ({ headerTitle: arr2[6], headerBackTitleStyle: arr2[7] } = styles);
-  items1[8] = headerTitleContainerStyle;
-  items1[9] = headerLeftContainerStyle;
-  items1[10] = headerRightContainerStyle;
-  items1[11] = hideTitle;
-  items1[12] = gestureDirection;
-  items1[13] = gestureResponseDistance;
-  items1[14] = cardOverlayEnabled;
-  items1[15] = cardShadowEnabled;
-  items1[16] = cardStyle;
-  items1[17] = headerBackTitle;
-  items1[18] = headerTitleAlign;
-  items1[19] = headerStatusBarHeight;
-  items1[20] = top;
-  items1[21] = disableHeaderAnimation;
+  items1[5] = navigatorHeaderSize;
+  items1[6] = token;
+  ({ headerTitle: arr2[7], headerBackTitleStyle: arr2[8] } = styles);
+  items1[9] = headerTitleContainerStyle;
+  items1[10] = headerLeftContainerStyle;
+  items1[11] = headerRightContainerStyle;
+  items1[12] = hideTitle;
+  items1[13] = gestureDirection;
+  items1[14] = gestureResponseDistance;
+  items1[15] = cardOverlayEnabled;
+  items1[16] = cardShadowEnabled;
+  items1[17] = cardStyle;
+  items1[18] = headerBackTitle;
+  items1[19] = headerTitleAlign;
+  items1[20] = headerStatusBarHeight;
+  items1[21] = top;
+  items1[22] = disableHeaderAnimation;
   const Navigator = first.Navigator;
-  const obj4 = {
+  const obj5 = {
     detachInactiveScreens,
     initialRouteName,
     screenOptions: gestureDirection.useCallback((navigation) => {
@@ -114,9 +118,10 @@ function NavigationStack(screens) {
       let items1;
       let items2;
       let items3;
+      let items4;
       let str2;
       let tmp5;
-      let tmp7;
+      let tmp9;
       navigation = navigation.navigation;
       const state = navigation.getState();
       let routes;
@@ -130,33 +135,42 @@ function NavigationStack(screens) {
       if (navigatorShouldCrossfade) {
         str = "screen";
       }
-      let obj = { headerMode: str, headerStyle: items, headerTintColor: token, headerTitleStyle: styles.headerTitle, headerBackTitleStyle: styles.headerBackTitleStyle, headerTitleAllowFontScaling: false, headerBackImage: NavigatorHeader.renderBackImage, headerBackButtonDisplayMode: "minimal", headerTitleContainerStyle: items1, headerLeftContainerStyle: items2, headerRightContainerStyle: items3, headerTitle: fn, gestureDirection, gestureResponseDistance, cardOverlayEnabled, cardShadowEnabled, cardStyle, headerBackTitle: tmp5, headerTitleAlign: str2, headerStatusBarHeight: tmp7, cardStyleInterpolator: fn2, headerStyleInterpolator: fn3 };
-      items = [closure_18.navbar, headerStyle];
-      items1 = [{ maxWidth: "60%", alignItems: "center" }, headerTitleContainerStyle];
-      items2 = [closure_18.headerLeftContainerStyle, headerLeftContainerStyle];
-      items3 = [closure_18.headerRightContainerStyle, headerRightContainerStyle];
+      let obj = { headerMode: str, headerStyle: items, headerTintColor: token, headerTitleStyle: items1, headerBackTitleStyle: styles.headerBackTitleStyle, headerTitleAllowFontScaling: false, headerBackImage: NavigatorHeader.renderBackImage, headerBackButtonDisplayMode: "minimal", headerTitleContainerStyle: items2, headerLeftContainerStyle: items3, headerRightContainerStyle: items4, headerTitle: fn, gestureDirection, gestureResponseDistance, cardOverlayEnabled, cardShadowEnabled, cardStyle, headerBackTitle: tmp9, headerTitleAlign: str2, headerStatusBarHeight: tmp5, cardStyleInterpolator: fn2, headerStyleInterpolator: fn3 };
+      items = [navbar.navbar, , ];
+      tmp5 = headerStatusBarHeight;
+      let tmp6 = headerStatusBarHeight;
+      const height = navigatorHeaderSize.height;
+      const tmp4 = navigatorHeaderSize;
+      if (null == headerStatusBarHeight) {
+        tmp6 = top;
+      }
+      items[1] = { height: height + tmp6 };
+      items[2] = headerStyle;
+      items1 = [styles.headerTitle, Text_Text.TextStyleSheet[tmp4.titleVariant]];
+      items2 = [{ maxWidth: "60%", alignItems: "center" }, headerTitleContainerStyle];
+      items3 = [navbar.headerLeftContainerStyle, headerLeftContainerStyle];
+      items4 = [navbar.headerRightContainerStyle, headerRightContainerStyle];
       fn = undefined;
       if (hideTitle) {
         fn = () => {
 
         };
       }
-      tmp5 = headerBackTitle;
+      tmp9 = headerBackTitle;
       if (headerBackTitle == null) {
         let stringResult;
         if (1 === routes.length) {
-          const intl = tmp3(1113).intl;
-          stringResult = intl.string(tmp3(1113).t["13/7kX"]);
+          const intl = tmp7(1113).intl;
+          stringResult = intl.string(tmp7(1113).t["13/7kX"]);
         }
-        tmp5 = stringResult;
+        tmp9 = stringResult;
       }
       str2 = headerTitleAlign;
       if (headerTitleAlign == null) {
         str2 = "center";
       }
-      tmp7 = headerStatusBarHeight;
-      if (null == headerStatusBarHeight) {
-        tmp7 = top;
+      if (null == tmp5) {
+        tmp5 = top;
       }
       if (navigatorShouldCrossfade) {
         fn2 = (current) => {
@@ -168,13 +182,13 @@ function NavigationStack(screens) {
           return obj;
         };
       } else {
-        fn2 = tmp3(7311).CardStyleInterpolators.forHorizontalIOS;
+        fn2 = tmp7(7258).CardStyleInterpolators.forHorizontalIOS;
       }
-      const tmp8 = disableHeaderAnimation;
-      if (tmp8) {
-        fn3 = tmp3(7311).HeaderStyleInterpolators.forNoAnimation;
+      const tmp11 = disableHeaderAnimation;
+      if (tmp11) {
+        fn3 = tmp7(7258).HeaderStyleInterpolators.forNoAnimation;
       } else if (navigatorShouldCrossfade) {
-        fn3 = tmp3(7311).HeaderStyleInterpolators.forFade;
+        fn3 = tmp7(7258).HeaderStyleInterpolators.forFade;
       } else {
         fn3 = (arg0) => {
           let current;
@@ -224,9 +238,9 @@ function NavigationStack(screens) {
       return cardOverlayEnabled(first.Screen, obj2, name);
     })
   };
-  const obj5 = onWillFocus(onDidFocus[12]);
-  keys = obj5.keys(screens);
-  return cardOverlayEnabled(Navigator, obj4);
+  const obj6 = onWillFocus(onDidFocus[13]);
+  keys = obj6.keys(screens);
+  return cardOverlayEnabled(Navigator, obj5);
 }
 function WrappedNavigationStack(arg0) {
   let initialRouteName;
@@ -248,11 +262,11 @@ function WrappedNavigationStack(arg0) {
     }
     return tmp2;
   }), 1)[0];
-  const tmp5 = navigationContainerRef(5379)();
+  const tmp5 = navigationContainerRef(5399)();
   const obj3 = useNavigationTheme;
   let navigationTheme1 = obj3.useNavigationTheme(tmp5);
   const NavigationIndependentTree = Link.NavigationIndependentTree;
-  const Provider = _mod7149.HeaderBackContext.Provider;
+  const Provider = _mod7096.HeaderBackContext.Provider;
   const NavigationContainer = Link.NavigationContainer;
   if (null != navigationTheme) {
     navigationTheme1 = navigationTheme;

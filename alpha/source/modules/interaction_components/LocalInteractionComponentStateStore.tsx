@@ -1,12 +1,12 @@
-// Module ID: 8843
-// Function ID: 8844
+// Module ID: 8789
+// Function ID: 8790
 // Name: LocalInteractionComponentStateStore
-// Dependencies: [8844, 504, 572, 2]
+// Dependencies: [8790, 504, 572, 2]
 
-// Module 8843 (LocalInteractionComponentStateStore)
+// Module 8789 (LocalInteractionComponentStateStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LimitedMapDefault from "LimitedMap" /* 8844 */;
+import LimitedMapDefault from "LimitedMap" /* 8790 */;
 import size from "module_2" /* 2 */;
 
 let map;

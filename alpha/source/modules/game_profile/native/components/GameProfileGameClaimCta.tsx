@@ -1,10 +1,10 @@
-// Module ID: 9764
-// Function ID: 9765
+// Module ID: 9714
+// Function ID: 9715
 // Name: GameProfileGameClaimCta
-// Dependencies: [5, 19, 1072, 21, 9493, 7645, 7649, 2121, 5770, 1113, 2]
+// Dependencies: [5, 19, 1072, 21, 9439, 7598, 7602, 2116, 5788, 1113, 2]
 // Exports: default
 
-// Module 9764 (GameProfileGameClaimCta)
+// Module 9714 (GameProfileGameClaimCta)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -79,7 +79,7 @@ export default function GameProfileGameClaimCta(trackAction) {
   }
   if (someResult == null) {
     const tmp4 = jsx;
-    const Button = trackAction(5770).Button;
+    const Button = trackAction(5788).Button;
     const intl = trackAction(1113).intl;
     tmp3 = <Button variant="secondary" size="md" text={intl.string(trackAction(1113).t["mqg+to"])} onPress={callback} />;
   } else {

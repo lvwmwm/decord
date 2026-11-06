@@ -1,13 +1,13 @@
-// Module ID: 14324
-// Function ID: 14325
+// Module ID: 14301
+// Function ID: 14302
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 5356, 1113, 2699, 2]
+// Dependencies: [19, 5376, 1113, 2696, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 14324 (useCalculatePowerupCardStatus)
+// Module 14301 (useCalculatePowerupCardStatus)
 import intl4 from "intl" /* 1113 */;
-import _modDef2699 from "module_2699" /* 2699 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5356 */;
+import _modDef2696 from "module_2696" /* 2696 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5376 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ export function useCalculatePowerupCardStatus(powerup, arg1, arg2) {
         const formatToPlainString = intl2.formatToPlainString;
         const sourcePowerup = tmp.sourcePowerup;
         let title;
-        const WRRYUT = _modDef2699.WRRYUT;
+        const WRRYUT = _modDef2696.WRRYUT;
         if (sourcePowerup != null) {
           title = sourcePowerup.title;
         }
@@ -55,7 +55,7 @@ export function useCalculatePowerupCardStatus(powerup, arg1, arg2) {
         tmp5 = obj4;
         obj5 = { perkName: title };
       } else if (sourceEntitlement.type !== tmp4.INACTIVE) {
-        const obj = { type: "active", statusText: intl.string(_modDef2699.FFLkmx) };
+        const obj = { type: "active", statusText: intl.string(_modDef2696.FFLkmx) };
         intl = intl4.intl;
         tmp5 = obj;
       }

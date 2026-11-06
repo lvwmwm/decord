@@ -1,8 +1,8 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 15139
+// Function ID: 15140
 // Dependencies: [2]
 
-// Module 15159
+// Module 15139
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameDiversityTier8LargeBadge-2x.png.js");

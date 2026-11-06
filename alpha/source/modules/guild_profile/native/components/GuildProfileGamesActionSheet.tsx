@@ -1,19 +1,19 @@
-// Module ID: 14953
-// Function ID: 14954
+// Module ID: 14930
+// Function ID: 14931
 // Name: GuildProfileGamesActionSheet
-// Dependencies: [19, 17, 21, 9469, 9493, 7119, 14948, 5143, 14952, 8887, 1113, 5384, 9448, 2123, 5398, 5402, 7204, 2]
+// Dependencies: [19, 17, 21, 9415, 9439, 7063, 14925, 5170, 14929, 8833, 1113, 5404, 9394, 2118, 5418, 5422, 7151, 2]
 // Exports: default
 
-// Module 14953 (GuildProfileGamesActionSheet)
+// Module 14930 (GuildProfileGamesActionSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import TableRow2 from "TableRow" /* 7119 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9469 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9493 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import TableRow2 from "TableRow" /* 7063 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9415 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9439 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 function GuildProfileGameRow(game) {
@@ -43,9 +43,9 @@ export default function GuildProfileGamesActionSheet(profile) {
   const id = profile.id;
   const gameActivity = profile.gameActivity;
   const tmp = closure_7();
-  let obj = id(14952);
+  let obj = id(14929);
   const allGuildProfileGames = obj.useAllGuildProfileGames(profile);
-  const obj2 = id(8887);
+  const obj2 = id(8833);
   const bottomSheetRef = obj2.useBottomSheetRef().bottomSheetRef;
   const name = profile.name;
   const intl = id(1113).intl;
@@ -56,12 +56,12 @@ export default function GuildProfileGamesActionSheet(profile) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { guildId: id };
-    const tmp2 = asyncRequire(9448, dependencyMap.paths);
+    const tmp2 = asyncRequire(9394, dependencyMap.paths);
     openLazy(tmp2, "GuildProfileActionSheet:" + id, obj);
   }, items);
-  const BottomSheet = id(5398).BottomSheet;
-  const BottomSheetScrollView = id(5402).BottomSheetScrollView;
+  const BottomSheet = id(5418).BottomSheet;
+  const BottomSheetScrollView = id(5422).BottomSheetScrollView;
   ({ title: str1, hasIcons: true, children: allGuildProfileGames.map((game) => <GuildProfileGameRow key={arg0.id} game={arg0} activityLevel={gameActivity[arg0.id]} />) });
-  const TableRowGroup = id(7204).TableRowGroup;
+  const TableRowGroup = id(7151).TableRowGroup;
   return <BottomSheet ref={bottomSheetRef} scrollable onDismiss={callback} startHeight={300}>{null}</BottomSheet>;
 };

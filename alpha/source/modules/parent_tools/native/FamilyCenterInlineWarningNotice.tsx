@@ -1,17 +1,17 @@
-// Module ID: 17049
-// Function ID: 17050
+// Module ID: 17037
+// Function ID: 17038
 // Name: FamilyCenterInlineWarningNotice
-// Dependencies: [19, 17, 21, 5143, 575, 8171, 5763, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 8117, 5781, 2]
 // Exports: default
 
-// Module 17049 (FamilyCenterInlineWarningNotice)
+// Module 17037 (FamilyCenterInlineWarningNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import WarningIcon2 from "WarningIcon" /* 8171 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import WarningIcon2 from "WarningIcon" /* 8117 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

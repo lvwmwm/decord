@@ -1,88 +1,68 @@
 // Module ID: 10532
 // Function ID: 10533
-// Dependencies: [41, 42, 93, 95, 98, 10533, 10530]
+// Dependencies: [41, 42, 10533, 10464]
 
 // Module 10532
-import _mod10530 from "module_10530" /* 10530 */;
-import mergeDateTimeComponent from "mergeDateTimeComponent" /* 10533 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10464 */;
+import NUMBER from "NUMBER" /* 10533 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class AbstractMergeDateTimeRefiner {
+const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
+class JPStandardParser {
   constructor() {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, AbstractMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(AbstractMergeDateTimeRefiner);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
+    _classCallCheck(this, JPStandardParser);
   }
 }
-_inherits(AbstractMergeDateTimeRefiner, _mod10530.MergingRefiner);
 const entry = {
-  key: "shouldMergeResults",
-  value: function shouldMergeResults(str, start, start2) {
-    start = start.start;
-    let isOnlyDateResult = start.isOnlyDate();
-    if (isOnlyDateResult) {
-      start2 = start2.start;
-      isOnlyDateResult = start2.isOnlyTime();
-    }
-    if (!isOnlyDateResult) {
-      const start3 = start2.start;
-      let isOnlyDateResult1 = start3.isOnlyDate();
-      if (isOnlyDateResult1) {
-        const start4 = start.start;
-        isOnlyDateResult1 = start4.isOnlyTime();
-      }
-      isOnlyDateResult = isOnlyDateResult1;
-    }
-    if (isOnlyDateResult) {
-      const self = this;
-      isOnlyDateResult = null != str.match(this.patternBetween());
-    }
-    return isOnlyDateResult;
+  key: "pattern",
+  value: function pattern() {
+    return re3;
   }
 };
 const items = [
   entry,
   {
-    key: "mergeResults",
-    value: function mergeResults(arg0, start, text) {
-      start = start.start;
-      const isOnlyDateResult = start.isOnlyDate();
-      const mergeDateTimeResult = mergeDateTimeComponent.mergeDateTimeResult;
-      const tmp2 = isOnlyDateResult ? mergeDateTimeResult(start, text) : mergeDateTimeResult(text, start);
-      tmp2.index = start.index;
-      tmp2.text = start.text + arg0 + text.text;
-      return tmp2;
+    key: "extract",
+    value: function extract(createParsingComponents, arg1) {
+      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
+      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
+      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
+      let match = arg1[1];
+      if (match) {
+        const str = arg1[1];
+        match = str.match("\u540C|\u4ECA|\u672C");
+      }
+      if (match) {
+        const reference = createParsingComponents.reference;
+        const assign = parsingComponents.assign;
+        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
+        assign("year", dateWithAdjustedTimezone.getFullYear());
+      }
+      if (arg1[2]) {
+        let sum;
+        let num = 1;
+        if ("\u5143" != arg1[4]) {
+          const _parseInt = parseInt;
+          num = parseInt(tmp(10533).toHankaku(tmp8));
+        }
+        if ("\u4EE4\u548C" == arg1[3]) {
+          sum = num + 2018;
+        } else if ("\u5E73\u6210" == arg1[3]) {
+          sum = num + 1988;
+        } else {
+          sum = num;
+          if ("\u662D\u548C" == arg1[3]) {
+            sum = num + 1925;
+          }
+        }
+        parsingComponents.assign("year", sum);
+      } else {
+        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
+      }
+      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(AbstractMergeDateTimeRefiner, items);
+export default _createClass(JPStandardParser, items);

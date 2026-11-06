@@ -1,21 +1,21 @@
-// Module ID: 8331
-// Function ID: 8332
+// Module ID: 8276
+// Function ID: 8277
 // Name: FormSection
-// Dependencies: [19, 17, 1191, 21, 5143, 575, 7203, 7448, 8328, 7204, 8332, 1377, 2]
+// Dependencies: [19, 17, 1191, 21, 5170, 575, 7150, 7393, 8273, 7151, 8277, 1377, 2]
 // Exports: default
 
-// Module 8331 (FormSection)
+// Module 8276 (FormSection)
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import RedesignCompat from "RedesignCompat" /* 7203 */;
-import FormRowDefault from "FormRow" /* 7448 */;
-import FormDividerDefault from "FormDivider" /* 8328 */;
-import FormTitleDefault from "FormTitle" /* 8332 */;
+import RedesignCompat from "RedesignCompat" /* 7150 */;
+import FormRowDefault from "FormRow" /* 7393 */;
+import FormDividerDefault from "FormDivider" /* 8273 */;
+import FormTitleDefault from "FormTitle" /* 8277 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -86,7 +86,7 @@ export default function FormSection(arg0) {
     const obj2 = { style: { marginBottom: 24 }, children: items };
     const obj3 = { style: { paddingHorizontal: 12 }, children: metroRequire(TableRowGroup, obj4) };
     obj4 = { title, hasIcons, hasTrailingText: flag, children: found };
-    TableRowGroup = tmp3(7204).TableRowGroup;
+    TableRowGroup = tmp3(7151).TableRowGroup;
     const tmp18 = metroImportDefault;
     if (hasIcons == null) {
       hasIcons = tmp17;

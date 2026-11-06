@@ -1,21 +1,21 @@
-// Module ID: 18373
-// Function ID: 18374
+// Module ID: 18365
+// Function ID: 18366
 // Name: MessagesItemChannel
-// Dependencies: [32, 19, 4992, 21, 11240, 575, 18374, 504, 18383, 7433, 14647, 2]
+// Dependencies: [32, 19, 5019, 21, 11195, 575, 18366, 504, 18375, 7380, 14624, 2]
 // Exports: getMessagesItemChannelSizes
 
-// Module 18373 (MessagesItemChannel)
+// Module 18365 (MessagesItemChannel)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7433 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11240 */;
-import LegendList from "LegendList" /* 14647 */;
-import MessagesItemChannelBase from "MessagesItemChannelBase" /* 18374 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18383 */;
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7380 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11195 */;
+import LegendList from "LegendList" /* 14624 */;
+import MessagesItemChannelBase from "MessagesItemChannelBase" /* 18366 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18375 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemChannelBaseDefault = MessagesItemChannelBase;

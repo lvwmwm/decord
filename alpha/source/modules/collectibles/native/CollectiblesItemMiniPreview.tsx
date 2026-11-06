@@ -1,27 +1,27 @@
-// Module ID: 15267
-// Function ID: 15268
+// Module ID: 15261
+// Function ID: 15262
 // Name: CollectiblesItemMiniPreview
-// Dependencies: [19, 17, 7870, 2114, 7871, 7872, 8940, 9647, 21, 575, 5143, 9659, 9671, 5854, 9672, 9650, 2113, 9667, 2]
+// Dependencies: [19, 17, 7824, 2109, 7825, 7826, 8886, 9596, 21, 575, 5170, 9608, 9620, 5872, 9621, 9599, 2108, 9616, 2]
 
-// Module 15267 (CollectiblesItemMiniPreview)
+// Module 15261 (CollectiblesItemMiniPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import utils from "utils" /* 2113 */;
-import NameplateRecord from "NameplateRecord" /* 2114 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7870 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7871 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7872 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8940 */;
-import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9647 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9650 */;
-import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9659 */;
-import NameplateDefault from "Nameplate" /* 9667 */;
-import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9671 */;
-import _modDef9672 from "module_9672" /* 9672 */;
+import utils from "utils" /* 2108 */;
+import NameplateRecord from "NameplateRecord" /* 2109 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7824 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7825 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7826 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8886 */;
+import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9596 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9599 */;
+import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 9608 */;
+import NameplateDefault from "Nameplate" /* 9616 */;
+import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9620 */;
+import _modDef9621 from "module_9621" /* 9621 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function CollectiblesItemMiniPreview(arg0) {
     const obj7 = { style: items, children: authStore(View, obj8) };
     obj8 = { style: tmp.profileEffect, accessible: false, importantForAccessibility: "no", children: items1 };
     const obj9 = { source: obj10, style: tmp.sampleProfile, resizeMode: "cover" };
-    obj10 = { uri: _modDef9672 };
+    obj10 = { uri: _modDef9621 };
     const tmp17 = FastImageDefault;
     items1 = [React4(tmp17, obj9), ];
     const obj11 = { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true };

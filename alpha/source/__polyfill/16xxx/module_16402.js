@@ -1,24 +1,27 @@
 // Module ID: 16402
 // Function ID: 16403
-// Dependencies: [16386, 16387, 16403]
+// Dependencies: [16387, 16383, 16403]
 
 // Module 16402
-import _mod16386 from "module_16386" /* 16386 */;
+import _mod16383 from "module_16383" /* 16383 */;
 import _mod16387 from "module_16387" /* 16387 */;
-import _mod16403 from "module_16403" /* 16403 */;
 
-const prop = _mod16386["__core-js_shared__"] || _mod16387("__core-js_shared__", {});
-let versions = prop.versions;
-if (!versions) {
-  const items = [];
-  prop.versions = items;
-  versions = items;
-}
-const push = versions.push;
-let str2 = "global";
-if (_mod16403) {
-  str2 = "pure";
-}
-push({ version: "3.41.0", mode: str2, copyright: "\u00A9 2014-2025 Denis Pushkarev (zloirock.ru)", license: "https://github.com/zloirock/core-js/blob/v3.41.0/LICENSE", source: "https://github.com/zloirock/core-js" });
+const prop = Object.getOwnPropertySymbols && !_mod16387(() => {
+  const SymbolResult = Symbol("symbol detection");
+  const obj = _mod16383;
+  const StringResult = obj.String(SymbolResult);
+  let tmp5 = !StringResult;
+  if (StringResult) {
+    const _Object = Object;
+    const _Symbol = Symbol;
+    tmp5 = !(Object(SymbolResult) instanceof Symbol);
+  }
+  if (!tmp5) {
+    const _Symbol2 = Symbol;
+    tmp5 = !Symbol.sham && tmp2(16403) && tmp2(16403) < 41;
+    const tmp6 = !Symbol.sham && tmp2(16403) && tmp2(16403) < 41;
+  }
+  return tmp5;
+});
 
 export default prop;

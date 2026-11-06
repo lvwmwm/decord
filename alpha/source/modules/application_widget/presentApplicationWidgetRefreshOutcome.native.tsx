@@ -1,14 +1,14 @@
-// Module ID: 12417
-// Function ID: 12418
+// Module ID: 12382
+// Function ID: 12383
 // Name: presentApplicationWidgetRefreshOutcome
-// Dependencies: [12418, 5849, 11278, 5848, 2]
+// Dependencies: [12383, 5867, 11233, 5866, 2]
 // Exports: default
 
-// Module 12417 (presentApplicationWidgetRefreshOutcome)
-import ToastUtils from "ToastUtils" /* 5848 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
-import RetryIcon from "RetryIcon" /* 11278 */;
-import applicationWidgetRefreshOutcomeDefault from "applicationWidgetRefreshOutcome" /* 12418 */;
+// Module 12382 (presentApplicationWidgetRefreshOutcome)
+import ToastUtils from "ToastUtils" /* 5866 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
+import RetryIcon from "RetryIcon" /* 11233 */;
+import applicationWidgetRefreshOutcomeDefault from "applicationWidgetRefreshOutcome" /* 12383 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_widget/presentApplicationWidgetRefreshOutcome.native.tsx");
@@ -18,7 +18,7 @@ export default function presentApplicationWidgetRefreshOutcome(arg0) {
   const text = tmp3.text;
   if (tmp3.ok) {
     const obj2 = { text, icon: RetryIcon.RetryIcon };
-    const open = tmp(5849).open;
+    const open = tmp(5867).open;
     ToastActionCreatorsDefault;
     open("APPLICATION_WIDGET_REFRESH", obj2);
   } else {

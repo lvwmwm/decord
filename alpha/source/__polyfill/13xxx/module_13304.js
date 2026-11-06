@@ -1,150 +1,325 @@
 // Module ID: 13304
 // Function ID: 13305
-// Dependencies: [13280, 13281, 13305, 13295, 13292, 13287]
-// Exports: closeSession, makeSession
+// Dependencies: [13266, 13269, 13282, 13305, 13306, 13292, 13264, 13307, 13300, 13276]
+// Exports: parseEventHintOrCaptureContext, prepareEvent
 
 // Module 13304
-import _mod13287 from "module_13287" /* 13287 */;
+import _mod13264 from "module_13264" /* 13264 */;
+import _mod13276 from "module_13276" /* 13276 */;
 import _mod13292 from "module_13292" /* 13292 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13295 */;
-import _mod13305 from "module_13305" /* 13305 */;
-import DEBUG_BUILD from "module_13280" /* 13280 */;
-import CONSOLE_LEVELS from "module_13281" /* 13281 */;
+import _mod13300 from "module_13300" /* 13300 */;
+import _mod13307 from "module_13307" /* 13307 */;
 
-function updateSession(ipAddress) {
-  let obj = arg1;
-  if (arg1 === undefined) {
-    obj = {};
+let breadcrumbs, data, filename, integrations;
+
+function applyClientOptions(environment, environment2) {
+  let dist;
+  let maxValueLength;
+  let release;
+  ({ release, dist, maxValueLength } = environment2);
+  let num = 250;
+  environment = environment2.environment;
+  if (undefined !== maxValueLength) {
+    num = maxValueLength;
   }
-  if (obj.user) {
-    const tmp = !ipAddress.ipAddress && obj.user.ip_address;
-    if (tmp) {
-      ipAddress.ipAddress = obj.user.ip_address;
-    }
-    const tmp2 = ipAddress.did || obj.did;
-    if (!tmp2) {
-      ipAddress.did = obj.user.id || obj.user.email || obj.user.username;
-    }
+  const DEFAULT_ENVIRONMENT = environment.environment || environment || _mod13292.DEFAULT_ENVIRONMENT;
+  environment.environment = DEFAULT_ENVIRONMENT;
+  const tmp3 = !environment.release && release;
+  if (tmp3) {
+    environment.release = release;
   }
-  let timestamp = obj.timestamp;
-  if (!timestamp) {
-    const obj2 = _browserPerformanceTimeOriginMode;
-    timestamp = obj2.timestampInSeconds();
+  const tmp4 = !environment.dist && dist;
+  if (tmp4) {
+    environment.dist = dist;
   }
-  ipAddress.timestamp = timestamp;
-  if (obj.abnormal_mechanism) {
-    ipAddress.abnormal_mechanism = obj.abnormal_mechanism;
+  if (environment.message) {
+    const obj = _mod13264;
+    environment.message = obj.truncate(environment.message, num);
   }
-  if (obj.ignoreDuration) {
-    ipAddress.ignoreDuration = obj.ignoreDuration;
-  }
-  if (obj.sid) {
-    let sid;
-    if (32 === obj.sid.length) {
-      sid = obj.sid;
-    } else {
-      const obj3 = _mod13292;
-      sid = obj3.uuid4();
-    }
-    ipAddress.sid = sid;
-  }
-  if (undefined !== obj.init) {
-    ipAddress.init = obj.init;
-  }
-  const tmp7 = !ipAddress.did && obj.did;
+  const tmp7 = environment.exception && environment.exception.values && environment.exception.values[0] && (environment.exception && environment.exception.values && environment.exception.values[0]).value;
   if (tmp7) {
-    const _HermesInternal = HermesInternal;
-    ipAddress.did = "" + obj.did;
+    const obj2 = _mod13264;
+    (environment.exception && environment.exception.values && environment.exception.values[0]).value = obj2.truncate((environment.exception && environment.exception.values && environment.exception.values[0]).value, num);
   }
-  if (typeof obj.started === "number") {
-    ipAddress.started = obj.started;
-  }
-  if (ipAddress.ignoreDuration) {
-    ipAddress.duration = undefined;
-  } else if (typeof obj.duration === "number") {
-    ipAddress.duration = obj.duration;
-  } else {
-    const diff = ipAddress.timestamp - ipAddress.started;
-    let num2 = 0;
-    if (diff >= 0) {
-      num2 = diff;
-    }
-    ipAddress.duration = num2;
-  }
-  if (obj.release) {
-    ipAddress.release = obj.release;
-  }
-  if (obj.environment) {
-    ipAddress.environment = obj.environment;
-  }
-  const tmp9 = !ipAddress.ipAddress && obj.ipAddress;
-  if (tmp9) {
-    ipAddress.ipAddress = obj.ipAddress;
-  }
-  const tmp10 = !ipAddress.userAgent && obj.userAgent;
+  const request = environment.request;
+  const tmp10 = request && request.url;
   if (tmp10) {
-    ipAddress.userAgent = obj.userAgent;
-  }
-  if (typeof obj.errors === "number") {
-    ipAddress.errors = obj.errors;
-  }
-  if (obj.status) {
-    ipAddress.status = obj.status;
+    const obj3 = _mod13264;
+    request.url = obj3.truncate(request.url, num);
   }
 }
-_mod13305;
+function applyDebugIds(exception, arg1) {
+  const obj = _mod13307;
+  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((filename) => {
+        filename = closure_1_0 && filename.filename;
+        if (filename) {
+          filename.debug_id = closure_1_0[filename.filename];
+        }
+      });
+    });
+  } catch (err) {
+  }
+}
+function applyDebugMeta(exception) {
+  const obj = {};
+  try {
+    const values = exception.exception.values;
+    let item = values.forEach((stacktrace) => {
+      const frames = stacktrace.stacktrace.frames;
+      const item = frames.forEach((debug_id) => {
+        if (debug_id.debug_id) {
+          if (debug_id.abs_path) {
+            obj[debug_id.abs_path] = debug_id.debug_id;
+          } else if (debug_id.filename) {
+            obj[debug_id.filename] = debug_id.debug_id;
+          }
+          delete tmp["debug_id"];
+        }
+      });
+    });
+  } catch (err) {
+  }
+  if (0 !== Object.keys(obj).length) {
+    exception.debug_meta = exception.debug_meta || {};
+    let images = exception.debug_meta.images;
+    const debug_meta = exception.debug_meta;
+    if (!images) {
+      images = [];
+    }
+    debug_meta.images = images;
+    images = exception.debug_meta.images;
+    const _Object = Object;
+    const entries = Object.entries(obj);
+    const item1 = entries.forEach((item) => {
+      let tmp;
+      let tmp2;
+      [tmp, tmp2] = item;
+      images.push({ type: "sourcemap", code_file: tmp, debug_id: tmp2 });
+    });
+  }
+}
+let closure_5 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "requestSession", "propagationContext"];
 
-export function closeSession(status, status2) {
-  let obj;
-  const tmp = status2;
-  if (tmp) {
-    obj = { status: status2 };
-    const obj2 = { status: status2 };
+export { applyClientOptions };
+export { applyDebugIds };
+export { applyDebugMeta };
+export function parseEventHintOrCaptureContext(captureContext) {
+  if (captureContext) {
+    let tmp5;
+    const tmp3 = captureContext instanceof _mod13276.Scope || typeof captureContext === "function";
+    if (tmp3) {
+      tmp5 = { captureContext };
+      const obj = { captureContext };
+    } else {
+      const _Object = Object;
+      const keys = Object.keys(captureContext);
+      tmp5 = captureContext;
+    }
+    return tmp5;
+  }
+}
+export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, getScopeData) {
+  let timestamp;
+  let uuid4Result;
+  normalizeDepth = normalizeDepth.normalizeDepth;
+  let num = 3;
+  if (undefined !== normalizeDepth) {
+    num = normalizeDepth;
+  }
+  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
+  let num2 = 1000;
+  if (undefined !== normalizeMaxBreadth) {
+    num2 = normalizeMaxBreadth;
+  }
+  let obj = { event_id: uuid4Result, timestamp };
+  let merged = Object.assign(event_id);
+  uuid4Result = event_id.event_id || event_id2.event_id;
+  if (!uuid4Result) {
+    const tmp4 = num;
+    let tmp5 = num2;
+    let obj2 = num(num2[0]);
+    uuid4Result = obj2.uuid4();
+  }
+  timestamp = event_id.timestamp;
+  if (!timestamp) {
+    let obj3 = num(num2[1]);
+    timestamp = obj3.dateTimestampInSeconds();
+  }
+  integrations = event_id2.integrations;
+  if (!integrations) {
+    const integrations1 = normalizeDepth.integrations;
+    integrations = integrations1.map((name) => name.name);
+  }
+  applyClientOptions(obj, normalizeDepth);
+  if (integrations.length > 0) {
+    obj.sdk = obj.sdk || {};
+    let integrations2 = obj.sdk.integrations;
+    const sdk = obj.sdk;
+    if (!integrations2) {
+      integrations2 = [];
+    }
+    const items = [];
+    HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
+    sdk.integrations = items;
+  }
+  const tmp14 = emit;
+  if (tmp14) {
+    emit.emit("applyFrameMetadata", event_id);
+  }
+  if (undefined === event_id.type) {
+    applyDebugIds(obj, normalizeDepth.stackParser);
+  }
+  const captureContext = event_id2.captureContext;
+  let obj4 = clone;
+  if (captureContext) {
+    let cloneResult;
+    if (clone) {
+      cloneResult = clone.clone();
+    } else {
+      const self = this;
+      const self2 = this;
+      cloneResult = new num(num2[9]).Scope();
+    }
+    cloneResult.update(captureContext);
+    obj4 = cloneResult;
+  }
+  if (event_id2.mechanism) {
+    const obj6 = num(num2[0]);
+    const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
+  }
+  if (emit) {
+    let eventProcessors = emit.getEventProcessors();
   } else {
-    obj = {};
-    if ("ok" === status.status) {
-      obj = { status: "exited" };
-    }
+    eventProcessors = [];
   }
-  updateSession(status, obj);
-}
-export function makeSession(arg0) {
-  let obj2;
-  let obj3;
-  let obj = obj2(13295);
-  const timestampInSecondsResult = obj.timestampInSeconds();
-  obj2 = {
-    sid: obj3.uuid4(),
-    init: true,
-    timestamp: timestampInSecondsResult,
-    started: timestampInSecondsResult,
-    duration: 0,
-    status: "ok",
-    errors: 0,
-    ignoreDuration: false,
-    toJSON() {
-      let combined;
-      let date;
-      let date1;
-      const tmp2 = _mod13287;
-      const obj = { sid: "" + obj2.sid, init: obj2.init, started: date.toISOString(), timestamp: date1.toISOString(), status: null, errors: null, did: combined, duration: null, abnormal_mechanism: null, attrs: { release: obj2.release, environment: obj2.environment, ip_address: obj2.ipAddress, user_agent: obj2.userAgent } };
-      const dropUndefinedKeys = tmp2.dropUndefinedKeys;
-      date = new Date(1000 * obj2.started);
-      ({ status: obj.status, errors: obj.errors } = obj2);
-      date1 = new Date(1000 * obj2.timestamp);
-      if (typeof obj2.did === "number") {
-        const _HermesInternal = HermesInternal;
-        combined = "" + tmp.did;
+  const obj7 = num(num2[2]);
+  const globalScope = obj7.getGlobalScope();
+  const scopeData = globalScope.getScopeData();
+  if (getScopeData) {
+    const scopeData1 = getScopeData.getScopeData();
+    const tmp24Result = num(num2[3]);
+    tmp24Result.mergeScopeData(scopeData, scopeData1);
+  }
+  if (obj4) {
+    const scopeData2 = obj4.getScopeData();
+    const tmp24Result4 = num(num2[3]);
+    tmp24Result4.mergeScopeData(scopeData, scopeData2);
+  }
+  let tmp31 = event_id2.attachments || [];
+  const items1 = [...scopeData.attachments];
+  if (items1.length) {
+    event_id2.attachments = items1;
+  }
+  const tmp24Result5 = num(num2[3]);
+  const result1 = tmp24Result5.applyScopeDataToEvent(obj, scopeData);
+  const items2 = [...scopeData.eventProcessors];
+  const tmp24Result6 = num(num2[4]);
+  const result2 = tmp24Result6.notifyEventProcessors(items2, obj, event_id2);
+  return result2.then((breadcrumbs) => {
+    let breadcrumbs1;
+    let normalizer;
+    let normalizer2;
+    let normalizer3;
+    const tmp = breadcrumbs;
+    if (tmp) {
+      applyDebugMeta(breadcrumbs);
+    }
+    let tmp5 = breadcrumbs;
+    if (typeof num === "number") {
+      num2 = 0;
+      tmp5 = breadcrumbs;
+      if (num > 0) {
+        let closure_0 = tmp4;
+        let closure_1 = num2;
+        let tmp31 = null;
+        if (breadcrumbs) {
+          let obj = {};
+          let merged = Object.assign(breadcrumbs);
+          breadcrumbs = breadcrumbs.breadcrumbs;
+          if (breadcrumbs) {
+            let obj2 = {
+              breadcrumbs: breadcrumbs1.map((data) => {
+                        let normalizer;
+                        const obj = {};
+                        const merged = Object.assign(data);
+                        data = data.data;
+                        if (data) {
+                          const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                          normalizer = num(num2[8]);
+                          data = obj2;
+                        }
+                        const merged1 = Object.assign(data);
+                        return obj;
+                      })
+            };
+            breadcrumbs1 = breadcrumbs.breadcrumbs;
+            breadcrumbs = obj2;
+          }
+          let merged1 = Object.assign(breadcrumbs);
+          let user = breadcrumbs.user;
+          if (user) {
+            const obj3 = { user: normalizer.normalize(breadcrumbs.user, num, num2) };
+            normalizer = _mod13300;
+            user = obj3;
+          }
+          const merged2 = Object.assign(user);
+          let contexts = breadcrumbs.contexts;
+          if (contexts) {
+            const obj4 = { contexts: normalizer2.normalize(breadcrumbs.contexts, num, num2) };
+            normalizer2 = _mod13300;
+            contexts = obj4;
+          }
+          const merged3 = Object.assign(contexts);
+          let extra = breadcrumbs.extra;
+          if (extra) {
+            const obj5 = { extra: normalizer3.normalize(breadcrumbs.extra, num, num2) };
+            normalizer3 = _mod13300;
+            extra = obj5;
+          }
+          const merged4 = Object.assign(extra);
+          const tmp27 = breadcrumbs.contexts && breadcrumbs.contexts.trace && obj.contexts;
+          if (tmp27) {
+            obj.contexts.trace = breadcrumbs.contexts.trace;
+            if (breadcrumbs.contexts.trace.data) {
+              const trace = obj.contexts.trace;
+              const normalizer4 = _mod13300;
+              trace.data = normalizer4.normalize(breadcrumbs.contexts.trace.data, num, num2);
+            }
+          }
+          if (breadcrumbs.spans) {
+            const spans = breadcrumbs.spans;
+            obj.spans = spans.map((data) => {
+              let normalizer;
+              const obj = {};
+              const merged = Object.assign(data);
+              data = data.data;
+              if (data) {
+                const obj2 = { data: normalizer.normalize(data.data, closure_0, closure_1) };
+                normalizer = num(num2[8]);
+                data = obj2;
+              }
+              const merged1 = Object.assign(data);
+              return obj;
+            });
+          }
+          tmp31 = obj;
+          const tmp30 = breadcrumbs.contexts && breadcrumbs.contexts.flags && obj.contexts;
+          if (tmp30) {
+            const contexts2 = obj.contexts;
+            const normalizer5 = _mod13300;
+            num = 3;
+            contexts2.flags = normalizer5.normalize(breadcrumbs.contexts.flags, 3, num2);
+            tmp31 = obj;
+          }
+        }
+        tmp5 = tmp31;
       }
-      ({ duration: obj.duration, abnormal_mechanism: obj.abnormal_mechanism } = obj2);
-      return dropUndefinedKeys(obj);
     }
-  };
-  obj3 = obj2(13292);
-  if (arg0) {
-    let tmp2 = updateSession;
-    updateSession(obj2, arg0);
-  }
-  return obj2;
+    return tmp5;
+  });
 }
-export { updateSession };

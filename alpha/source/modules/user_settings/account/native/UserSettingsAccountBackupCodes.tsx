@@ -1,19 +1,19 @@
-// Module ID: 16945
-// Function ID: 16946
+// Module ID: 16933
+// Function ID: 16934
 // Name: UserSettingsAccountBackupCodes
-// Dependencies: [19, 17, 15893, 21, 5143, 575, 7496, 5848, 7119, 7442, 1113, 5734, 504, 16935, 6165, 5763, 7204, 2]
+// Dependencies: [19, 17, 15887, 21, 5170, 575, 7441, 5866, 7063, 7389, 1113, 5754, 504, 16923, 6185, 5781, 7151, 2]
 // Exports: default
 
-// Module 16945 (UserSettingsAccountBackupCodes)
+// Module 16933 (UserSettingsAccountBackupCodes)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5848 */;
-import ClipboardUtils from "ClipboardUtils" /* 7496 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 16935 */;
+import ToastUtils from "ToastUtils" /* 5866 */;
+import ClipboardUtils from "ClipboardUtils" /* 7441 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 16923 */;
 import react from "react" /* 19 */;
-import MFAStore from "MFAStore" /* 15893 */;
+import MFAStore from "MFAStore" /* 15887 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -31,7 +31,7 @@ function CodeRow(code) {
     const result = obj2.presentCopiedToClipboard();
   }, items);
   let tmp5;
-  const TableRow = code(7119).TableRow;
+  const TableRow = code(7063).TableRow;
   const tmp3 = code;
   if (!showCheckMark) {
     tmp5 = callback;
@@ -40,7 +40,7 @@ function CodeRow(code) {
   tmp2Result = null;
   if (showCheckMark) {
     let obj2 = { color: nativeDefault.colors.TEXT_BRAND };
-    const CheckmarkSmallIcon = tmp3(7442).CheckmarkSmallIcon;
+    const CheckmarkSmallIcon = tmp3(7389).CheckmarkSmallIcon;
     tmp2Result = tmp2(CheckmarkSmallIcon, obj2);
   }
   return closure_6(TableRow, obj);
@@ -71,7 +71,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     headerLabel = intl.format(stateFromStores(1113).t.OhmvYt, {});
   }
   stateFromStores = undefined;
-  let obj = stateFromStores(5734);
+  let obj = stateFromStores(5754);
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const items = [MFAStore];
   const tmp6 = closure_8();
@@ -98,7 +98,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
     obj.clearBackupCodes();
   }, []);
   const obj3 = { spacing: nativeDefault.space.PX_24, style: { paddingHorizontal: token, paddingTop: nativeDefault.space.PX_16 }, children: items2 };
-  const Stack = stateFromStores(6165).Stack;
+  const Stack = stateFromStores(6185).Stack;
   items2 = [, , , ];
   ({ paddingHorizontal: token, paddingTop: nativeDefault.space.PX_16 });
   items2[0] = headerLabel.map((children, index) => {
@@ -117,7 +117,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
           return closure_1_6(CodeRow, obj, index);
         })
     };
-    const TableRowGroup = tmp3(7204).TableRowGroup;
+    const TableRowGroup = tmp3(7151).TableRowGroup;
     intl2 = tmp3(1113).intl;
     tmp10Result = tmp10(TableRowGroup, obj5);
   }
@@ -132,7 +132,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
           return closure_1_6(CodeRow, obj, index);
         })
     };
-    const TableRowGroup2 = tmp3(7204).TableRowGroup;
+    const TableRowGroup2 = tmp3(7151).TableRowGroup;
     intl3 = tmp3(1113).intl;
     tmp10Result3 = tmp10(TableRowGroup2, obj6);
   }
@@ -140,7 +140,7 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
   let tmp10Result4 = null !== onGenerate;
   if (tmp10Result4) {
     const obj7 = { hasIcons: false, children: closure_6(TableRow, obj8) };
-    const TableRowGroup3 = tmp3(7204).TableRowGroup;
+    const TableRowGroup3 = tmp3(7151).TableRowGroup;
     obj8 = {
       label: closure_6(Text, obj9),
       onPress() {
@@ -149,9 +149,9 @@ export default function UserSettingsAccountBackupCodes(headerLabel) {
           const result = obj.confirmViewBackupCodes(verificationKey, true);
         }
     };
-    TableRow = tmp3(7119).TableRow;
+    TableRow = tmp3(7063).TableRow;
     obj9 = { variant: "body-md/semibold", style: tmp6.generateCode, children: intl4.string(stateFromStores(1113).t.RIThUu) };
-    Text = tmp3(5763).Text;
+    Text = tmp3(5781).Text;
     intl4 = tmp3(1113).intl;
     tmp10Result4 = tmp10(TableRowGroup3, obj7);
   }

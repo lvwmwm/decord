@@ -1,11 +1,11 @@
-// Module ID: 12423
-// Function ID: 12424
+// Module ID: 12388
+// Function ID: 12389
 // Name: conjureDesignFeedbackStore
-// Dependencies: [19, 12424, 2]
+// Dependencies: [19, 12389, 2]
 // Exports: addConjureDesignAnnotation, canEditConjureDesignAnnotation, enterConjureDesignFeedback, exitConjureDesignFeedback, getConjureDesignFeedback, pauseConjureDesignFeedback, relocateConjureDesignAnnotations, removeConjureDesignAnnotation, setConjureDesignFeedbackContext, updateConjureDesignAnnotation, useConjureDesignFeedback
 
-// Module 12423 (conjureDesignFeedbackStore)
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12424 */;
+// Module 12388 (conjureDesignFeedbackStore)
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 12389 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

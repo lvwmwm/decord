@@ -1,34 +1,34 @@
-// Module ID: 11060
-// Function ID: 11061
+// Module ID: 11012
+// Function ID: 11013
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6980, 1385, 11061, 6982, 1072, 6914, 572, 1282, 11062, 5909, 11064, 559, 11059, 11065, 11067, 11070, 11068, 5811, 6983, 7019, 11076, 8898, 11079, 2]
+// Dependencies: [109, 5, 6922, 1385, 11013, 6924, 1072, 6856, 572, 1282, 11014, 5928, 11016, 559, 11017, 11011, 11018, 11020, 11023, 11021, 5829, 6925, 6961, 11029, 8844, 11032, 2]
 // Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, isConjureProjectUnavailable, loadMissingConjureProjects, prefetchProject, refetchProjectsAfterReconnect, refreshConjureInstallState, refreshPreviewApplication, selectGlobalChatProject, setGuildHints, setSelectedProjectForGuild, takePrefetchedRead, updateProjectSettings
 
-// Module 11060 (ConjureActionCreators)
+// Module 11012 (ConjureActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5811 */;
-import ReadStateConstants from "ReadStateConstants" /* 6914 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7019 */;
-import UserActionCreators from "UserActionCreators" /* 8898 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 11059 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11065 */;
-import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 11067 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11068 */;
-import createProxyTicket from "createProxyTicket" /* 11070 */;
-import conjureAppInServer from "conjureAppInServer" /* 11079 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5829 */;
+import ReadStateConstants from "ReadStateConstants" /* 6856 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6925 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6961 */;
+import UserActionCreators from "UserActionCreators" /* 8844 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 11011 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 11018 */;
+import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 11020 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11021 */;
+import createProxyTicket from "createProxyTicket" /* 11023 */;
+import conjureAppInServer from "conjureAppInServer" /* 11032 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6980 */;
+import ReadStateStore from "ReadStateStore" /* 6922 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11061 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 11013 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
 import size from "module_2" /* 2 */;
 
-let c2, c8, closure_14, closure_15, closure_30, closure_37, flags2, resourceIds;
+let c2, c8, closure_14, closure_15, closure_30, flags2, resourceIds;
 
 function updateIntegrationStatus(projectId, integrationStatus) {
   obj = DispatcherDefault;
@@ -610,102 +610,91 @@ obj = function _drainMissingProjects() {
   });
   return obj(...arguments);
 };
-obj = function _fetchProjectLimit() {
+obj = function _requestProjectLimit() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    if (c5 === 2) {
-      c5 = 3;
+    let currentUser;
+    let closure_0 = arg0;
+    if (c6 === 2) {
+      c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
+        const obj3 = { value, done: true };
+        return obj3;
       } else {
         return { value: "HermesInternal", done: null };
       }
     } else {
-      let c3;
+      let c4;
       try {
-        let closure_0;
         let max_projects;
-        c5 = 2;
-        if (0 === c4) {
+        let failureCode;
+        c6 = 2;
+        if (0 === c5) {
           if (arg0 === 1) {
-            c5 = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
+            c6 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
-            let closure_2 = tmp;
             let closure_1 = tmp4;
-            closure_0 = undefined;
-            max_projects = undefined;
-            currentUser = currentUser.getCurrentUser();
-            let id;
-            if (currentUser != null) {
-              id = currentUser.id;
-            }
-            let c0 = id;
-            if (id == null) {
-              c0 = null;
-            }
-            closure_0 = c0;
-            if (null != c0) {
-              if (closure_37 !== c0) {
-                if (!ConjureProjectStore.hasFetchedProjectLimit()) {
-                  closure_37 = tmp16;
-                  max_projects = null;
-                  c3 = 1;
-                  const HTTP = HTTPUtils.HTTP;
-                  const obj4 = { url: constants.CONJURE_PROJECT_LIMIT, rejectWithError: true };
-                  c4 = 2;
-                  c5 = 1;
-                  const obj5 = { value: HTTP.get(obj4), done: false };
-                  return obj5;
-                }
-              }
-            }
+            max_projects = null;
+            failureCode = null;
+            c4 = 1;
+            const HTTP = HTTPUtils.HTTP;
+            const obj5 = { url: constants.CONJURE_PROJECT_LIMIT, rejectWithError: true };
+            c5 = 2;
+            c6 = 1;
+            const obj6 = { value: HTTP.get(obj5), done: false };
+            return obj6;
           }
         } else {
-          if (1 === c4) {
-            c3 = 0;
+          if (1 === c5) {
+            c4 = 0;
+            failureCode = closure_130_1(closure_130_2[14])(closure_3);
           } else if (arg0 === 1) {
-            c5 = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c3 = 0;
-            c5 = 3;
+            c4 = 0;
+            c6 = 3;
             obj = { value, done: true };
             return obj;
           } else {
             max_projects = value.body.max_projects;
-            c3 = 0;
+            c4 = 0;
           }
-          if (c37 === closure_0) {
-            c37 = null;
+          let userId;
+          if (userId != null) {
+            userId = userId.userId;
           }
-          const currentUser1 = currentUser.getCurrentUser();
-          let id1;
-          if (currentUser1 != null) {
-            id1 = currentUser1.id;
+          if (userId === closure_0) {
+            userId = null;
           }
-          if (id1 === closure_0) {
-            const obj7 = { type: "CONJURE_PROJECT_LIMIT_FETCH_SETTLE", maxProjects: max_projects };
-            const obj6 = closure_130_1(closure_130_2[8]);
-            obj6.dispatch(obj7);
+          currentUser = currentUser.getCurrentUser();
+          let id;
+          if (currentUser != null) {
+            id = currentUser.id;
           }
+          if (id === closure_0) {
+            const obj7 = { type: "CONJURE_PROJECT_LIMIT_FETCH_SETTLE", maxProjects: max_projects, failureCode };
+            const obj2 = closure_130_1(closure_130_2[8]);
+            obj2.dispatch(obj7);
+          }
+          c6 = 3;
+          return { value: "HermesInternal", done: null };
         }
-        c5 = 3;
-        return { value: "HermesInternal", done: null };
-      } catch (tmp21) {
-        if (0 === c3) {
-          c5 = 3;
-          throw tmp21;
+      } catch (tmp34) {
+        closure_3 = tmp34;
+        if (0 === c4) {
+          c6 = 3;
+          throw tmp34;
         } else {
-          c4 = 1;
+          c5 = 1;
         }
       }
     }
@@ -902,7 +891,7 @@ obj = function _postProject() {
           } else {
             body = value.body;
             if (null != body.ws_ticket) {
-              obj = closure_131_0(closure_131_2[15]);
+              obj = closure_131_0(closure_131_2[16]);
               const result1 = obj.rememberCreatedProjectTicket(body.id, body.ws_ticket);
             }
             c5 = 0;
@@ -1085,7 +1074,7 @@ obj = function _updateProjectSettings() {
     const preview_application_id = value.body.preview_application_id;
     const tmp8 = null != prop && prop !== preview_application_id;
     if (tmp8) {
-      closure_131_1(closure_131_2[22])(prop);
+      closure_131_1(closure_131_2[23])(prop);
     }
     let tmp17 = null == preview_application_id;
     if (!tmp17) {
@@ -1260,13 +1249,12 @@ let c15 = null;
 let c16 = false;
 let tmp2 = new BackoffDefault(30000, 300000);
 let closure_24 = tmp2;
-obj = null;
 let set = new Set();
 const set1 = new Set();
 const set2 = new Set();
 let c29 = false;
 let c30 = null;
-let c37 = null;
+obj = null;
 const map = new Map();
 let result = size.fileFinishedImporting("modules/conjure/projects/ConjureActionCreators.tsx");
 
@@ -1322,6 +1310,8 @@ export function refetchProjectsAfterReconnect() {
     listProjects();
   }
 }
+export { currentSession };
+export { isCurrentSession };
 export function isConjureProjectUnavailable(projectId) {
   const hasItem = set1.has(projectId) && null == ConjureProjectStore.getProject(projectId);
   return hasItem;
@@ -1360,7 +1350,33 @@ export function fetchMissingConjureProjectNow() {
   return obj(...arguments);
 }
 export function fetchProjectLimit() {
-  return obj(...arguments);
+  function requestProjectLimit() {
+    return obj(...arguments);
+  }
+  const currentUser = UserStore.getCurrentUser();
+  let id;
+  if (currentUser != null) {
+    id = currentUser.id;
+  }
+  if (id == null) {
+    id = null;
+  }
+  if (null != id) {
+    if (!ConjureProjectStore.hasFetchedProjectLimit()) {
+      let userId;
+      if (obj != null) {
+        userId = obj.userId;
+      }
+      if (userId === id) {
+        return obj.settled;
+      } else {
+        const tmp5 = requestProjectLimit(id);
+        obj = { userId: id, settled: tmp5 };
+        return tmp5;
+      }
+    }
+  }
+  return Promise.resolve();
 }
 export function prefetchProject(projectId) {
   obj = conjureProjectSockets;

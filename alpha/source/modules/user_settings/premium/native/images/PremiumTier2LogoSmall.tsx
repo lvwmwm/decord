@@ -1,14 +1,14 @@
-// Module ID: 15609
-// Function ID: 15610
+// Module ID: 15603
+// Function ID: 15604
 // Name: PremiumTier2LogoSmall
-// Dependencies: [19, 21, 5734, 575, 8176, 2]
+// Dependencies: [19, 21, 5754, 575, 8122, 2]
 // Exports: default
 
-// Module 15609 (PremiumTier2LogoSmall)
+// Module 15603 (PremiumTier2LogoSmall)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5734 */;
-import inlineStylesDefault from "inlineStyles" /* 8176 */;
+import useToken from "useToken" /* 5754 */;
+import inlineStylesDefault from "inlineStyles" /* 8122 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

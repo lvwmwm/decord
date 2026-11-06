@@ -1,84 +1,42 @@
 // Module ID: 13333
 // Function ID: 13334
-// Dependencies: [13282]
-// Exports: getDebugImagesForResources
+// Dependencies: [13311, 13299, 13334]
 
 // Module 13333
-const require = globalThis.__r;
-let _require, obj;
+import _mod13334 from "module_13334" /* 13334 */;
+import module_13311 from "module_13311" /* 13311 */;
 
-function getFilenameToDebugIdMap(arg0) {
-  let _sentryDebugIds;
-  let closure_0;
-  let length;
-  let reduced;
-  _require = arg0;
-  _sentryDebugIds = require("module_13282").GLOBAL_OBJ._sentryDebugIds;
-  if (_sentryDebugIds) {
-    let tmp = globalThis;
-    const _Object = Object;
-    const keys = Object.keys(_sentryDebugIds);
-    const tmp2 = reduced;
-    if (tmp2) {
-      return reduced;
-    }
-    reduced = keys.reduce((acc, item) => {
-      let tmp7;
-      let tmp9;
-      let tmp = obj;
-      if (!tmp) {
-        obj = {};
-        tmp = obj;
-      }
-      if (tmp[item]) {
-        acc[tmp[item][0]] = tmp[item][1];
-      } else {
-        const arr = closure_0(item);
-        let diff = arr.length - 1;
-        if (0 <= diff) {
-          while (true) {
-            let tmp5 = arr[diff];
-            tmp7 = tmp5 && tmp5.filename;
-            tmp9 = _sentryDebugIds[item];
-            if (tmp7) {
-              if (tmp9) {
-                break;
-              }
+
+export const moduleMetadataIntegration = module_13311.defineIntegration(() => {
+  let obj = {
+    name: "ModuleMetadata",
+    setup(on) {
+      const options = on;
+      on.on("beforeEnvelope", (arg0) => {
+        let obj = options(closure_1_1[1]);
+        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+          if ("event" === arg1) {
+            const _Array = Array;
+            let tmp3;
+            if (Array.isArray(arg0)) {
+              tmp3 = arg0[1];
             }
-            diff = diff - 1;
+            if (tmp3) {
+              const obj = options(closure_1_1[2]);
+              const result = obj.stripMetadataFromStackFrames(tmp3);
+              arg0[1] = tmp3;
+            }
           }
-          acc[tmp7] = tmp9;
-          const items = [tmp7, tmp9];
-          obj[item] = items;
+        });
+      });
+      on.on("applyFrameMetadata", (type) => {
+        if (!type.type) {
+          const stackParser = options.getOptions().stackParser;
+          const obj = _mod13334;
+          const result = obj.addMetadataToStackFrames(stackParser, type);
         }
-      }
-      return acc;
-    }, {});
-  } else {
-    return {};
-  }
-}
-
-export function getDebugImagesForResources(arg0, arg1) {
-  const tmp = getFilenameToDebugIdMap(arg0);
-  const items = [];
-  if (tmp) {
-    const iter = arg1[Symbol.iterator]();
-    let nextResult = iter.next();
-    while (iter !== undefined) {
-      let tmp7 = nextResult;
-      if (tmp7) {
-        nextResult = tmp[tmp7];
-      }
-      if (nextResult) {
-        obj = { type: "sourcemap", code_file: tmp7, debug_id: tmp[tmp7] };
-        let arr = items.push(obj);
-      }
-      continue;
+      });
     }
-    return items;
-  } else {
-    return items;
-  }
-}
-export { getFilenameToDebugIdMap };
+  };
+  return obj;
+});

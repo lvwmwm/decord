@@ -1,19 +1,19 @@
-// Module ID: 11412
-// Function ID: 11413
+// Module ID: 11374
+// Function ID: 11375
 // Name: NsfwGateChat
-// Dependencies: [19, 17, 21, 5143, 575, 5854, 11413, 5763, 1113, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5872, 11375, 5781, 1113, 2]
 // Exports: default
 
-// Module 11412 (NsfwGateChat)
+// Module 11374 (NsfwGateChat)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11413 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11375 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

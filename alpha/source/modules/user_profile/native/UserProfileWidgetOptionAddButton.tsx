@@ -1,17 +1,17 @@
-// Module ID: 16823
-// Function ID: 16824
+// Module ID: 15146
+// Function ID: 15147
 // Name: UserProfileWidgetOptionAddButton
-// Dependencies: [19, 17, 21, 575, 5143, 15181, 5854, 16824, 11686, 5763, 2]
+// Dependencies: [19, 17, 21, 575, 5170, 15147, 5872, 15148, 11652, 5781, 2]
 // Exports: default
 
-// Module 16823 (UserProfileWidgetOptionAddButton)
+// Module 15146 (UserProfileWidgetOptionAddButton)
 import nativeDefault from "native" /* 575 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15181 */;
-import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 16824 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 15147 */;
+import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 15148 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -19,13 +19,13 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-let obj2;
 let obj3;
 let obj4;
 let obj5;
 let obj6;
+let obj7;
 let tmp2;
-const FastImageDefault = tmp2(5854);
+const FastImageDefault = tmp2(5872);
 function PlaceholderCover(arg0) {
   let gameId;
   let items;
@@ -96,19 +96,19 @@ function PlaceholderDetailsCard(variant) {
 }
 ({ Pressable: c3, StyleSheet, View: closure_4 } = react_native);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = { default: 4, compact: 3 };
+const NUMBER_OF_COLUMNS_BY_VARIANT = { default: 4, compact: 3 };
 const PX_8 = nativeDefault.space.PX_8;
 let createStyles = createStyles_mod;
-let obj = { button: obj2, coverRow: { flexDirection: "row", justifyContent: "space-between" }, cover: obj3, coverImage: obj4, detailsCard: { flexDirection: "row", alignItems: "center" }, textColumn: { flex: 1, flexDirection: "column", justifyContent: "center", gap: PX_8 }, textBar: obj5, overlay: obj6 };
-obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, borderRadius: nativeDefault.radii.md, overflow: "hidden", alignSelf: "stretch" };
+let obj2 = { button: obj3, coverRow: { flexDirection: "row", justifyContent: "space-between" }, cover: obj4, coverImage: obj5, detailsCard: { flexDirection: "row", alignItems: "center" }, textColumn: { flex: 1, flexDirection: "column", justifyContent: "center", gap: PX_8 }, textBar: obj6, overlay: obj7 };
+obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, borderRadius: nativeDefault.radii.md, overflow: "hidden", alignSelf: "stretch" };
 createStyles = createStyles.createStyles;
-obj3 = { aspectRatio: 0.75, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, overflow: "hidden" };
-obj4 = { opacity: 0.2 };
+obj4 = { aspectRatio: 0.75, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, overflow: "hidden" };
+obj5 = { opacity: 0.2 };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj5 = { height: 12, borderRadius: 6, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
-obj6 = { alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8 };
+obj6 = { height: 12, borderRadius: 6, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
+obj7 = { alignItems: "center", justifyContent: "center", gap: nativeDefault.space.PX_8 };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
-let closure_8 = createStyles(obj);
+let closure_8 = createStyles(obj2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetOptionAddButton.tsx");
 
 export default function UserProfileWidgetOptionAddButton(onPress) {
@@ -175,12 +175,14 @@ export default function UserProfileWidgetOptionAddButton(onPress) {
   items = [tmp9, ];
   const obj6 = { style: tmp3.overlay, children: items1 };
   const obj7 = { size: "md", color: nativeDefault.colors.TEXT_DEFAULT };
-  const CirclePlusIcon = tmp6(11686).CirclePlusIcon;
+  const CirclePlusIcon = tmp6(11652).CirclePlusIcon;
   items1 = [hasOwnProperty(CirclePlusIcon, obj7), ];
   const obj8 = { variant: "body-md/medium", color: "text-strong", children: tmp6Result.getAddWidgetTitle(widget) };
-  const Text = tmp6(5763).Text;
+  const Text = tmp6(5781).Text;
   tmp6Result = AddWidgetButtonConfig;
   items1[1] = hasOwnProperty(Text, obj8);
   items[1] = metroRequire(React3, obj6);
   return metroRequire(tmp5, obj);
 };
+export { NUMBER_OF_COLUMNS_BY_VARIANT };
+export const GRID_GAP_TO_COVER_RATIO = 0.1;

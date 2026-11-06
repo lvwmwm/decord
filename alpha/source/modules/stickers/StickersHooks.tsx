@@ -1,32 +1,32 @@
-// Module ID: 10450
-// Function ID: 10451
+// Module ID: 10402
+// Function ID: 10403
 // Name: StickersHooks
-// Dependencies: [5, 32, 19, 5014, 5174, 6910, 1385, 6974, 6975, 1072, 504, 10451, 4968, 6698, 9172, 6699, 8609, 1113, 5080, 10433, 7658, 2]
+// Dependencies: [5, 32, 19, 5041, 5201, 6852, 1385, 6916, 6917, 1072, 504, 10403, 4995, 6640, 9118, 6641, 8555, 1113, 5107, 10385, 7611, 2]
 // Exports: useFavoriteStickerIds, useFavoriteStickers, useFetchStickerPack, useFetchStickerPacks, useFilteredStickerPackCategories, useHasSendableSticker, useLatestFrecentStickerIds, useLatestFrecentStickers, useShouldAnimateSticker, useStickerForRenderableSticker, useStickersGrid
 
-// Module 10450 (StickersHooks)
+// Module 10402 (StickersHooks)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4968 */;
-import StickersUtils from "StickersUtils" /* 6698 */;
-import StickersTypes from "StickersTypes" /* 6699 */;
-import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10433 */;
-import StickersActionCreators from "StickersActionCreators" /* 10451 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import StickersUtils from "StickersUtils" /* 6640 */;
+import StickersTypes from "StickersTypes" /* 6641 */;
+import FrecencyUserSettingsHooks from "FrecencyUserSettingsHooks" /* 10385 */;
+import StickersActionCreators from "StickersActionCreators" /* 10403 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
-import SortedGuildStore from "SortedGuildStore" /* 6910 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
+import SortedGuildStore from "SortedGuildStore" /* 6852 */;
 import UserStore from "UserStore" /* 1385 */;
-import StickersPersistedStore from "StickersPersistedStore" /* 6974 */;
-import StickersStore from "StickersStore" /* 6975 */;
+import StickersPersistedStore from "StickersPersistedStore" /* 6916 */;
+import StickersStore from "StickersStore" /* 6917 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, dependencyMap, flattenedGuildIds, rowCount, rowIndex, visibleRowIndex;
 
-const f97772 = () => {
+const f97885 = () => {
   const obj = pack_id(dependencyMap[11]);
   const stickerPacks = obj.fetchStickerPacks();
 };
@@ -208,7 +208,7 @@ let result = size.fileFinishedImporting("modules/stickers/StickersHooks.tsx");
 
 export function useFetchStickerPack(pack_id) {
   _require = pack_id;
-  const effect = react.useEffect(f97772, []);
+  const effect = react.useEffect(f97885, []);
   let obj = require("get initialized");
   const items = [StickersStore];
   const stateFromStores = obj.useStateFromStores(items, () => StickersStore.hasLoadedStickerPacks);
@@ -394,7 +394,7 @@ export function useHasSendableSticker() {
   return true;
 }
 export function useFetchStickerPacks() {
-  const effect = react.useEffect(f97772, []);
+  const effect = react.useEffect(f97885, []);
 }
 export function useFavoriteStickerIds() {
   const obj = FrecencyUserSettingsHooks;
@@ -410,7 +410,7 @@ export function useFavoriteStickerIds() {
 }
 export function useFavoriteStickers() {
   let stickerIds;
-  const obj = stickerIds(10433);
+  const obj = stickerIds(10385);
   const favoriteStickers = obj.useFrecencySettings().favoriteStickers;
   const tmp = stickerIds;
   stickerIds = undefined;
@@ -470,7 +470,7 @@ export function useLatestFrecentStickerIds() {
 }
 export function useLatestFrecentStickers() {
   let keys1;
-  const obj = keys1(10433);
+  const obj = keys1(10385);
   const frecencySettings = obj.useFrecencySettings();
   const tmp = keys1;
   keys1 = closure_13;
@@ -529,7 +529,7 @@ export function useStickerForRenderableSticker(renderableSticker, arg1) {
   let obj3 = require("StickersUtils");
   let isGuildStickerResult = obj3.isGuildSticker(renderableSticker);
   if (!isGuildStickerResult) {
-    const tmpResult = tmp(6698);
+    const tmpResult = tmp(6640);
     isGuildStickerResult = tmpResult.isStandardSticker(renderableSticker);
   }
   obj4 = { hasFetched: tmp7, isReturnable: isGuildStickerResult, renderableSticker, shouldFetch: first, stickersStoreDefinition: stateFromStores };

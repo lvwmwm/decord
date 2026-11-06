@@ -1,11 +1,11 @@
-// Module ID: 9668
-// Function ID: 9669
+// Module ID: 9617
+// Function ID: 9618
 // Name: NameplateUtils
-// Dependencies: [2110, 2]
+// Dependencies: [2105, 2]
 // Exports: getNameplateAssets
 
-// Module 9668 (NameplateUtils)
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 2110 */;
+// Module 9617 (NameplateUtils)
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 2105 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/native/NameplateUtils.tsx");

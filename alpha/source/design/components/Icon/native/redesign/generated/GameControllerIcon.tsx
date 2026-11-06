@@ -1,14 +1,14 @@
-// Module ID: 9883
-// Function ID: 9884
+// Module ID: 9833
+// Function ID: 9834
 // Name: GameControllerIcon
-// Dependencies: [19, 21, 575, 5853, 8866, 2]
+// Dependencies: [19, 21, 575, 5871, 8812, 2]
 // Exports: GameControllerIcon
 
-// Module 9883 (GameControllerIcon)
+// Module 9833 (GameControllerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 8866 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 8812 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

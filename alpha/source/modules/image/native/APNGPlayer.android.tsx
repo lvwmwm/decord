@@ -1,10 +1,10 @@
-// Module ID: 9657
-// Function ID: 9658
+// Module ID: 9606
+// Function ID: 9607
 // Name: APNGPlayer
-// Dependencies: [19, 21, 9658, 2]
+// Dependencies: [19, 21, 9607, 2]
 // Exports: APNGPlayer, useAPNGPlayerControls
 
-// Module 9657 (APNGPlayer)
+// Module 9606 (APNGPlayer)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ export function APNGPlayer(onLoad) {
       }
     }
   }));
-  ref1(9658);
+  ref1(9607);
   const merged1 = Object.assign(merged);
   return <tmp5 ref={ref1} onLoad={callback} />;
 }

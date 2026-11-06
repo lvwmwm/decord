@@ -1,12 +1,12 @@
-// Module ID: 11643
-// Function ID: 11644
+// Module ID: 11605
+// Function ID: 11606
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [7917, 1385, 504, 7926, 2]
+// Dependencies: [7871, 1385, 504, 7880, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 11643 (useTieredTenureBadgeForUser)
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7926 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
+// Module 11605 (useTieredTenureBadgeForUser)
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7880 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

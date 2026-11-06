@@ -1,16 +1,16 @@
-// Module ID: 8317
-// Function ID: 8318
+// Module ID: 8262
+// Function ID: 8263
 // Name: ManualReviewActionCreators
-// Dependencies: [5, 502, 1072, 7632, 1089, 1282, 572, 8114, 8100, 7638, 2]
+// Dependencies: [5, 502, 1072, 7577, 1089, 1282, 572, 8060, 8046, 7591, 2]
 // Exports: handleManualReviewCta, invalidateAgeVerificationCaches, invalidateManualReviewCache
 
-// Module 8317 (ManualReviewActionCreators)
+// Module 8262 (ManualReviewActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import Constants2 from "Constants" /* 7632 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8114 */;
+import Constants2 from "Constants" /* 7577 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 8060 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -74,13 +74,13 @@ obj = function _handleManualReviewCta() {
             throw value;
           } else if (arg0 === 2) {
             c5 = 3;
-            const obj7 = { value, done: true };
-            return obj7;
+            const obj6 = { value, done: true };
+            return obj6;
           } else {
             let closure_1 = tmp;
             closure_0 = undefined;
-            const tmp56 = c11;
-            if (!tmp56) {
+            const tmp57 = c11;
+            if (!tmp57) {
               c11 = true;
               c3 = 2;
               closure_0 = closure_2_12;
@@ -90,33 +90,34 @@ obj = function _handleManualReviewCta() {
                 tmp19 = Date.now() - closure_2_13 >= MINUTE;
               }
               if (tmp19) {
-                let tmp47;
-                const obj8 = SafetyHubUtils;
-                if (obj8.isCurrentUserSuspended()) {
-                  tmp47 = requestManualReviewSuspendedUser();
+                let tmp48;
+                const obj9 = SafetyHubUtils;
+                if (obj9.isCurrentUserSuspended()) {
+                  tmp48 = requestManualReviewSuspendedUser();
                 } else {
-                  tmp47 = requestManualReview();
+                  tmp48 = requestManualReview();
                 }
                 c4 = 3;
                 c5 = 1;
-                const obj9 = { value: tmp47, done: false };
-                return obj9;
+                const obj8 = { value: tmp48, done: false };
+                return obj8;
               } else if (closure_0.status === constants2.SUBMITTED) {
-                const obj6 = closure_129_1(closure_129_2[8]);
-                const result = obj6.showManualReviewPendingModal();
+                const obj7 = closure_129_1(closure_129_2[8]);
+                const result = obj7.showManualReviewPendingModal();
                 c3 = 0;
                 c11 = false;
                 c5 = 3;
                 const obj10 = { value: undefined, done: true };
                 return obj10;
               } else if (closure_0.status === constants2.DECIDED_TEEN) {
+                const obj11 = { teenAgeRange: closure_0.teen_age_range, decidedPassed: true === closure_0.decided_passed };
                 const obj4 = closure_129_1(closure_129_2[8]);
-                const result1 = obj4.showManualReviewDecidedTeenModal(closure_0.teen_age_range);
+                const result1 = obj4.showManualReviewDecidedTeenModal(obj11);
                 c3 = 0;
                 c11 = false;
                 c5 = 3;
-                const obj11 = { value: undefined, done: true };
-                return obj11;
+                const obj12 = { value: undefined, done: true };
+                return obj12;
               } else {
                 const obj3 = closure_129_1(closure_129_2[8]);
                 const result2 = obj3.showManualReviewWebview(closure_0.verification_webview_url, () => {
@@ -159,12 +160,12 @@ obj = function _handleManualReviewCta() {
         }
         c3 = 0;
         c11 = false;
-      } catch (tmp48) {
-        closure_2 = tmp48;
+      } catch (tmp49) {
+        closure_2 = tmp49;
         if (0 === c3) {
           c5 = 3;
-          throw tmp48;
-        } else if (1 === tmp50) {
+          throw tmp49;
+        } else if (1 === tmp51) {
           c4 = 1;
         } else {
           c4 = 2;

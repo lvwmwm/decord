@@ -1,13 +1,13 @@
-// Module ID: 19979
-// Function ID: 19980
+// Module ID: 19986
+// Function ID: 19987
 // Name: ServerHubAnalytics
-// Dependencies: [1072, 19980, 1252, 2]
+// Dependencies: [1072, 19987, 1252, 2]
 // Exports: trackServerHubEditCanceled, trackServerHubEditSaved, trackServerHubEditStarted, trackServerHubEditWidgetAdded, trackServerHubEditWidgetDeleted, trackServerHubEditWidgetMoved, trackServerHubToggleSetting, trackServerHubVisit, trackServerHubWidgetEditClicked
 
-// Module 19979 (ServerHubAnalytics)
+// Module 19986 (ServerHubAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import editorUtils from "editorUtils" /* 19980 */;
+import editorUtils from "editorUtils" /* 19987 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

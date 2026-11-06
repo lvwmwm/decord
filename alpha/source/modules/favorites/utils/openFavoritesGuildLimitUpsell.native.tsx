@@ -1,12 +1,12 @@
-// Module ID: 11018
-// Function ID: 11019
+// Module ID: 10970
+// Function ID: 10971
 // Name: openFavoritesGuildLimitUpsell
-// Dependencies: [5384, 11019, 2123, 2]
+// Dependencies: [5404, 10971, 2118, 2]
 // Exports: default
 
-// Module 11018 (openFavoritesGuildLimitUpsell)
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+// Module 10970 (openFavoritesGuildLimitUpsell)
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
 import size from "module_2" /* 2 */;
 
 const FavoritesGuildUpsellSheet = "FavoritesGuildUpsellSheet";
@@ -15,6 +15,6 @@ const result = size.fileFinishedImporting("modules/favorites/utils/openFavorites
 export default function openFavoritesGuildLimitUpsell(limit) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { limit };
-  obj.openLazy(asyncRequire(11019, dependencyMap.paths), FavoritesGuildUpsellSheet, obj2);
+  obj.openLazy(asyncRequire(10971, dependencyMap.paths), FavoritesGuildUpsellSheet, obj2);
 };
 export const FAVORITES_UPSELL_SHEET_KEY = "FavoritesGuildUpsellSheet";

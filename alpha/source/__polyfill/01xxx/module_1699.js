@@ -17,7 +17,7 @@ let closure_5 = _classPrivateFieldKeyDefault("reanimatedModuleProxy");
 class NativeReanimatedModule {
   constructor() {
     _classCallCheck(this, NativeReanimatedModule);
-    Object.defineProperty(this, closure_5, { writable: true, value: "Boolean" });
+    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
     global._REANIMATED_VERSION_JS = jsVersion.jsVersion;
     if (react_native.ReanimatedTurboModule) {
       const _globalThis = globalThis;

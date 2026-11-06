@@ -1,10 +1,10 @@
-// Module ID: 10405
-// Function ID: 10406
+// Module ID: 10357
+// Function ID: 10358
 // Name: useFocusHandlers
 // Dependencies: [32, 19, 2]
 // Exports: useFocusHandlers
 
-// Module 10405 (useFocusHandlers)
+// Module 10357 (useFocusHandlers)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

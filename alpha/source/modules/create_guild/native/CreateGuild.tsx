@@ -1,18 +1,18 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14090
+// Function ID: 14091
 // Name: CreateGuild
-// Dependencies: [19, 17, 1385, 1072, 21, 5143, 575, 5400, 6159, 6165, 5763, 1113, 13425, 7226, 7507, 5770, 7256, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5170, 575, 5420, 6179, 6185, 5781, 1113, 13399, 7173, 7452, 5788, 7203, 2]
 // Exports: default
 
-// Module 14113 (CreateGuild)
+// Module 14090 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import react_native2 from "react-native" /* 6159 */;
+import react_native2 from "react-native" /* 6179 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -60,7 +60,7 @@ export default function CreateGuild(arg0) {
     isStaffResult = currentUser.isStaff();
   }
   const tmp3 = !isStaffResult;
-  let obj2 = isScreenReaderEnabled(5400);
+  let obj2 = isScreenReaderEnabled(5420);
   isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   ref = react.useRef(null);
   const items = [isScreenReaderEnabled];
@@ -73,9 +73,9 @@ export default function CreateGuild(arg0) {
     }
   }, items);
   let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: tmp11(Stack, { children: items1 }) };
-  Stack = isScreenReaderEnabled(6165).Stack;
+  Stack = isScreenReaderEnabled(6185).Stack;
   const obj3 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: customTitle };
-  const Text = isScreenReaderEnabled(5763).Text;
+  const Text = isScreenReaderEnabled(5781).Text;
   const tmp10 = ScrollView;
   tmp11 = closure_8;
   if (customTitle == null) {
@@ -84,16 +84,16 @@ export default function CreateGuild(arg0) {
   }
   items1 = [closure_7(Text, obj3), , , , , , , ];
   const obj4 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: customDescription };
-  const Text2 = tmp4(5763).Text;
+  const Text2 = tmp4(5781).Text;
   if (customDescription == null) {
     const intl2 = tmp4(1113).intl;
     customDescription = intl2.string(tmp4(1113).t["/k/L/j"]);
   }
   items1[1] = closure_7(Text2, obj4);
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
-  items1[2] = closure_7(ref(13425), obj5);
+  items1[2] = closure_7(ref(13399), obj5);
   const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1113).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
-  const TextInput = tmp4(7226).TextInput;
+  const TextInput = tmp4(7173).TextInput;
   intl3 = tmp4(1113).intl;
   firstFieldErrorMessage = undefined;
   const tmp12 = ref;
@@ -107,18 +107,18 @@ export default function CreateGuild(arg0) {
   items1[3] = closure_7(TextInput, obj6);
   if (tmp9Result) {
     const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1113).t.edQ5va) };
-    const TableSwitchRow = tmp4(7507).TableSwitchRow;
+    const TableSwitchRow = tmp4(7452).TableSwitchRow;
     intl4 = tmp4(1113).intl;
     tmp9Result = tmp9(TableSwitchRow, obj7);
   }
   items1[4] = tmp9Result;
   const obj8 = { style: tmp.hint, variant: "body-xs/medium", color: "text-muted", children: intl5.format(isScreenReaderEnabled(1113).t["2bprXx"], obj9) };
-  const Text3 = tmp4(5763).Text;
+  const Text3 = tmp4(5781).Text;
   intl5 = tmp4(1113).intl;
   obj9 = { guidelinesURL: MarketingURLs.GUIDELINES };
   items1[5] = closure_7(Text3, obj8);
   const obj10 = { disabled: "" === guild.name, size: "md", grow: true, text: customButtonLabel, onPress: onCreate, loading: submitting };
-  const Button = tmp4(5770).Button;
+  const Button = tmp4(5788).Button;
   if (customButtonLabel == null) {
     const intl6 = tmp4(1113).intl;
     customButtonLabel = intl6.string(tmp4(1113).t["O0p/lS"]);
@@ -143,7 +143,7 @@ export default function CreateGuild(arg0) {
       tmp9Result2 = null;
       if ("" !== message1) {
         let message2;
-        const tmp12Result = tmp12(7256);
+        const tmp12Result = tmp12(7203);
         if (error != null) {
           message2 = error.message;
         }

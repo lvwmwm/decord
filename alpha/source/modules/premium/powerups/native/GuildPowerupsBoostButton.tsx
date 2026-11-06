@@ -1,16 +1,16 @@
-// Module ID: 14392
-// Function ID: 14393
+// Module ID: 14369
+// Function ID: 14370
 // Name: GuildPowerupsBoostButton
-// Dependencies: [19, 5014, 1385, 7730, 1072, 21, 504, 7723, 1393, 6906, 7729, 2]
+// Dependencies: [19, 5041, 1385, 7684, 1072, 21, 504, 7676, 1398, 6848, 7683, 2]
 // Exports: GuildPowerupsBoostButton
 
-// Module 14392 (GuildPowerupsBoostButton)
+// Module 14369 (GuildPowerupsBoostButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5014 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7730 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 7684 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsSections = Constants.AnalyticsSections;
@@ -29,7 +29,7 @@ export function GuildPowerupsBoostButton(guildId) {
   const items1 = [GuildBoostSlotStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => boostSlots.boostSlots);
   const items2 = [UserStore];
-  const tmp6 = stateFromStores1(7723)({ forceFetch: true });
+  const tmp6 = stateFromStores1(7676)({ forceFetch: true });
   const obj3 = guildId(504);
   const stateFromStores2 = obj3.useStateFromStores(items2, () => currentUser.getCurrentUser());
   const tmp = guildId;
@@ -37,7 +37,7 @@ export function GuildPowerupsBoostButton(guildId) {
   if (null != stateFromStores2) {
     UNSPECIFIED = stateFromStores2.premiumGroupRole;
   } else {
-    UNSPECIFIED = tmp(1393).PremiumSubscriptionGroupRole.UNSPECIFIED;
+    UNSPECIFIED = tmp(1398).PremiumSubscriptionGroupRole.UNSPECIFIED;
   }
   const items3 = [stateFromStores1];
   const memo = react.useMemo(() => {
@@ -46,7 +46,7 @@ export function GuildPowerupsBoostButton(guildId) {
   }, items3);
   let tmp10 = null;
   if (null != stateFromStores) {
-    tmp10 = jsx(tmp5(7729), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
+    tmp10 = jsx(tmp5(7683), { guild: stateFromStores, previousGuildSubscriptionSlot: memo, analyticsSection: AnalyticsSections.GUILD_POWERUPS_OVERVIEW_SIDEBAR, fractionalPremiumState: tmp6.fractionalState, onAvailableSlotPress: tmp9, premiumGroupRole: UNSPECIFIED });
   }
   return tmp10;
 }

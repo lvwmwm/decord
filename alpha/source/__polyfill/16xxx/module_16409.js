@@ -1,14 +1,18 @@
 // Module ID: 16409
 // Function ID: 16410
-// Dependencies: [16393, 16410]
+// Dependencies: []
 
 // Module 16409
-import _mod16393 from "module_16393" /* 16393 */;
-import _mod16410 from "module_16410" /* 16410 */;
-
-let closure_2 = _mod16393({}.hasOwnProperty);
-const tmp = Object.hasOwn || (function hasOwn(arg0, arg1) {
-  return closure_2(_mod16410(arg0), arg1);
-});
-
-export default tmp;
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
+}
+if (undefined === all) {
+  let fn;
+  if (undefined !== all) {
+    fn = (fn) => typeof fn === "function" || fn === all;
+  }
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

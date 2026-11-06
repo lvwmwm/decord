@@ -1,34 +1,33 @@
-// Module ID: 18714
-// Function ID: 18715
+// Module ID: 18704
+// Function ID: 18705
 // Name: InterestGamePicker
-// Dependencies: [32, 19, 17, 5144, 2143, 18715, 21, 5143, 575, 5796, 1652, 1113, 2537, 5380, 5383, 18716, 18719, 5734, 1627, 18720, 9141, 504, 7250, 9293, 9767, 9296, 8827, 15188, 5152, 5386, 5849, 7622, 7431, 5763, 9967, 7358, 18721, 5770, 18722, 8173, 13684, 2]
+// Dependencies: [32, 19, 17, 5171, 2138, 18705, 21, 5170, 575, 5814, 1652, 1113, 2534, 5400, 5403, 18706, 18709, 5754, 1627, 18710, 9087, 504, 7197, 9239, 9717, 9242, 8773, 15167, 5179, 7227, 5406, 5867, 7567, 7378, 5781, 9918, 7305, 18711, 5788, 18712, 8119, 13659, 2]
 // Exports: default
 
-// Module 18714 (InterestGamePicker)
+// Module 18704 (InterestGamePicker)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
-import _mod1652 from "module_1652" /* 1652 */;
-import _modDef2537 from "module_2537" /* 2537 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5152 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
-import useGame2 from "useGame" /* 7622 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8827 */;
-import InterestTileEdgeDefault from "InterestTileEdge" /* 18719 */;
-import InterestGhostDefault from "InterestGhost" /* 18721 */;
+import _modDef2534 from "module_2534" /* 2534 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5179 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import HapticUtils from "HapticUtils" /* 5406 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
+import useGame2 from "useGame" /* 7567 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8773 */;
+import InterestTileEdgeDefault from "InterestTileEdge" /* 18709 */;
+import InterestGhostDefault from "InterestGhost" /* 18711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import GameStore from "GameStore" /* 2143 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18715 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import GameStore from "GameStore" /* 2138 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 18705 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let current, map, results, set;
+let map, results, set;
 
 let closure_12;
 let closure_14;
@@ -49,8 +48,40 @@ let metroImportDefault;
 let metroRequire;
 let tmp2;
 let unpackModuleId;
-const timingPresets = tmp2(5383);
-function StaticInterestGameTile(game) {
+const timingPresets = tmp2(5403);
+({ Keyboard: hasOwnProperty, PixelRatio: metroRequire, Pressable: metroImportDefault, View: metroImportAll } = react_native);
+({ FOOTER_BORDER_WIDTH: unpackModuleId, GRID_COLUMNS: closure_12, GRID_GAP: map1, MAX_SELECTIONS: closure_14, MIN_SELECTIONS: closure_15, SCREEN_HORIZONTAL_PADDING: closure_16, GRID_SELECTED_BORDER_WIDTH: closure_17, GRID_SELECTED_GAP_WIDTH: closure_18, TILE_ASPECT_RATIO: closure_19, TRAY_ENTER_MS: closure_20, TRAY_EXIT_MS: closure_21 } = InterestGamePickerConstants);
+({ jsx: closure_22, jsxs: closure_23, Fragment: closure_24 } = Fragment);
+let closure_25 = createStyles.createStyles((borderRadius) => {
+  let obj10;
+  let obj16;
+  let obj8;
+  let rect;
+  const obj = { screen: { flex: 1 }, body: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, header: { height: nativeDefault.space.PX_64, paddingHorizontal, paddingVertical: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, skip: { color: nativeDefault.colors.TEXT_BRAND }, content: { flexGrow: 1 }, empty: { flex: 1, alignItems: "center", paddingTop: nativeDefault.space.PX_40, paddingHorizontal, gap: nativeDefault.space.PX_4 }, intro: { flexShrink: 0, alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16 }, subtitle: { textAlign: "center" }, search: { flexShrink: 0, paddingHorizontal, paddingTop: 0, paddingBottom: nativeDefault.space.PX_12, borderBottomWidth: 1, borderBottomColor: "transparent", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, searchElevation: obj8, searchEdge: rect, navTitle: { flex: 1, alignSelf: "stretch", justifyContent: "center" }, searchTitle: { position: "absolute", inset: 0, alignItems: "center", justifyContent: "center" }, navActions: { minWidth: nativeDefault.space.PX_64, alignItems: "flex-end" }, grid: obj10, tileWrapper: { borderRadius }, selectedGlow: { shadowColor: nativeDefault.colors.BACKGROUND_BRAND, shadowOffset: { width: 0, height: 2 }, shadowRadius: 33, shadowOpacity: 0.2, elevation: 8 }, tile: { flex: 1, overflow: "hidden", borderRadius, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, selected: { position: "absolute", inset: 0, borderWidth: inset, borderRadius, borderColor: nativeDefault.colors.BACKGROUND_BRAND }, selectedInner: { position: "absolute", inset, borderWidth, borderRadius: Math.max(0, borderRadius - inset), borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, status: { alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal, paddingTop: nativeDefault.space.PX_40 }, footerPosition: { position: "absolute", bottom: 0, left: 0, right: 0 }, footer: obj16, footerContent: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_16 }, footerActions: { flexShrink: 0, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 } };
+  ({ flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
+  ({ height: nativeDefault.space.PX_64, paddingHorizontal, paddingVertical: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" });
+  ({ color: nativeDefault.colors.TEXT_BRAND });
+  ({ flex: 1, alignItems: "center", paddingTop: nativeDefault.space.PX_40, paddingHorizontal, gap: nativeDefault.space.PX_4 });
+  ({ flexShrink: 0, alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_16 });
+  ({ flexShrink: 0, paddingHorizontal, paddingTop: 0, paddingBottom: nativeDefault.space.PX_12, borderBottomWidth: 1, borderBottomColor: "transparent", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
+  obj8 = {};
+  const merged = Object.assign(nativeDefault.shadows.SHADOW_HIGH);
+  rect = { position: "absolute", bottom: -1, left: 0, right: 0, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_MUTED };
+  obj10 = { flexDirection: "row", flexWrap: "wrap", gap: map1, paddingHorizontal, paddingTop: 0 };
+  ({ minWidth: nativeDefault.space.PX_64, alignItems: "flex-end" });
+  ({ shadowColor: nativeDefault.colors.BACKGROUND_BRAND, shadowOffset: { width: 0, height: 2 }, shadowRadius: 33, shadowOpacity: 0.2, elevation: 8 });
+  ({ flex: 1, overflow: "hidden", borderRadius, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
+  ({ position: "absolute", inset: 0, borderWidth: inset, borderRadius, borderColor: nativeDefault.colors.BACKGROUND_BRAND });
+  ({ position: "absolute", inset, borderWidth, borderRadius: Math.max(0, borderRadius - inset), borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
+  ({ alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal, paddingTop: nativeDefault.space.PX_40 });
+  obj16 = { borderTopWidth: unpackModuleId, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal, paddingTop: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+  const merged1 = Object.assign(nativeDefault.shadows.SHADOW_TOP_HIGH);
+  ({ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_16 });
+  ({ flexShrink: 0, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 });
+  return obj;
+});
+let closure_26 = { code: "(function InterestGamePickerTsx1(){let[selected,depth]=this.__closure;return{opacity:selected?0:1-Math.min(1,Math.max(0,depth.get())/0.2)};})" };
+let closure_27 = react.memo(function StaticInterestGameTile(game) {
   let formatToPlainStringResult;
   let items2;
   let items3;
@@ -114,14 +145,14 @@ function StaticInterestGameTile(game) {
   };
   formatToPlainStringResult = undefined;
   const animatedStyle = obj2.useAnimatedStyle(InterestGamePickerTsx1);
-  const tmp9 = closure_6;
+  const tmp9 = closure_7;
   if (unavailable) {
     const intl = tmp(tmp2[11]).intl;
     const obj4 = { count: max, max };
-    formatToPlainStringResult = intl.formatToPlainString(require("module_2537").v9v0uY, obj4);
+    formatToPlainStringResult = intl.formatToPlainString(require("module_2534").v9v0uY, obj4);
   }
   items2 = [styles.tileWrapper, selected && styles.selectedGlow, ];
-  size = { width, height: width / closure_19 };
+  size = { width, height: closure_6.roundToNearestPixel(width / closure_19) };
   items2[2] = size;
   obj5 = { style: styles.screen, children: items4 };
   const obj6 = { style: styles.tile, children: items3 };
@@ -137,37 +168,12 @@ function StaticInterestGameTile(game) {
   }
   items4[1] = selected;
   return closure_22(tmp9, obj3);
-}
-({ Keyboard: hasOwnProperty, Pressable: metroRequire, ScrollView: metroImportDefault, View: metroImportAll } = react_native);
-({ FOOTER_BORDER_WIDTH: unpackModuleId, GRID_COLUMNS: closure_12, GRID_GAP: map1, MAX_SELECTIONS: closure_14, MIN_SELECTIONS: closure_15, SCREEN_HORIZONTAL_PADDING: closure_16, SELECTED_BORDER_WIDTH: closure_17, SELECTED_GAP_WIDTH: closure_18, TILE_ASPECT_RATIO: closure_19, TRAY_ENTER_MS: closure_20, TRAY_EXIT_MS: closure_21 } = InterestGamePickerConstants);
-({ jsx: closure_22, jsxs: closure_23, Fragment: closure_24 } = Fragment);
-let closure_25 = createStyles.createStyles((borderRadius) => {
-  let obj15;
-  const obj = { screen: { flex: 1 }, body: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, header: { height: nativeDefault.space.PX_64, paddingHorizontal, paddingVertical: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, skip: { color: nativeDefault.colors.TEXT_BRAND }, content: { flexGrow: 1 }, empty: { flex: 1, alignItems: "center", paddingTop: nativeDefault.space.PX_40, paddingHorizontal, gap: nativeDefault.space.PX_4 }, intro: { flexShrink: 0, alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_8 }, subtitle: { textAlign: "center" }, search: { flexShrink: 0, paddingHorizontal, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, navTitle: { flex: 1, alignSelf: "stretch", justifyContent: "center" }, searchTitle: { position: "absolute", inset: 0, alignItems: "center", justifyContent: "center" }, navActions: { minWidth: nativeDefault.space.PX_64, alignItems: "flex-end" }, grid: { flexDirection: "row", flexWrap: "wrap", gap: map1, paddingHorizontal, paddingTop: nativeDefault.space.PX_8 }, tileWrapper: { borderRadius }, selectedGlow: { shadowColor: nativeDefault.colors.BACKGROUND_BRAND, shadowOffset: { width: 0, height: 2 }, shadowRadius: 33, shadowOpacity: 0.2, elevation: 8 }, tile: { flex: 1, aspectRatio, overflow: "hidden", borderRadius, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, selected: { position: "absolute", inset: -borderWidth - borderWidth2, borderWidth, borderRadius: borderRadius + borderWidth + borderWidth2, borderColor: nativeDefault.colors.BACKGROUND_BRAND }, selectedInner: { position: "absolute", inset: -borderWidth2, borderWidth: borderWidth2, borderRadius: borderRadius + borderWidth2, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, status: { alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal, paddingTop: nativeDefault.space.PX_40 }, footerPosition: { position: "absolute", bottom: 0, left: 0, right: 0 }, footer: obj15, footerContent: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_16 }, footerActions: { flexShrink: 0, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 } };
-  ({ flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
-  ({ height: nativeDefault.space.PX_64, paddingHorizontal, paddingVertical: nativeDefault.space.PX_4, flexDirection: "row", alignItems: "center", justifyContent: "space-between" });
-  ({ color: nativeDefault.colors.TEXT_BRAND });
-  ({ flex: 1, alignItems: "center", paddingTop: nativeDefault.space.PX_40, paddingHorizontal, gap: nativeDefault.space.PX_4 });
-  ({ flexShrink: 0, alignItems: "center", gap: nativeDefault.space.PX_4, paddingHorizontal, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_8 });
-  ({ flexShrink: 0, paddingHorizontal, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
-  ({ minWidth: nativeDefault.space.PX_64, alignItems: "flex-end" });
-  ({ flexDirection: "row", flexWrap: "wrap", gap: map1, paddingHorizontal, paddingTop: nativeDefault.space.PX_8 });
-  ({ shadowColor: nativeDefault.colors.BACKGROUND_BRAND, shadowOffset: { width: 0, height: 2 }, shadowRadius: 33, shadowOpacity: 0.2, elevation: 8 });
-  ({ flex: 1, aspectRatio, overflow: "hidden", borderRadius, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
-  ({ position: "absolute", inset: -borderWidth - borderWidth2, borderWidth, borderRadius: borderRadius + borderWidth + borderWidth2, borderColor: nativeDefault.colors.BACKGROUND_BRAND });
-  ({ position: "absolute", inset: -borderWidth2, borderWidth: borderWidth2, borderRadius: borderRadius + borderWidth2, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST });
-  ({ alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal, paddingTop: nativeDefault.space.PX_40 });
-  obj15 = { borderTopWidth: unpackModuleId, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal, paddingTop: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-  const merged = Object.assign(nativeDefault.shadows.SHADOW_TOP_HIGH);
-  ({ flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_16 });
-  ({ flexShrink: 0, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 });
-  return obj;
 });
-let closure_26 = { code: "(function InterestGamePickerTsx1(){let[selected,depth]=this.__closure;return{opacity:selected?0:1-Math.min(1,Math.max(0,depth.get())/0.2)};})" };
 let closure_28 = { code: "(function InterestGamePickerTsx2(){let[searchProgress]=this.__closure;return{opacity:1-searchProgress.get()};})" };
 let closure_29 = { code: "(function InterestGamePickerTsx3(){let[searchProgress]=this.__closure;return{opacity:searchProgress.get()};})" };
-let closure_30 = { code: "(function InterestGamePickerTsx4(){let[nextScale]=this.__closure;return{transform:[{scale:nextScale.get()}]};})" };
-let closure_31 = { code: "(function InterestGamePickerTsx5(){let[reduceMotion,trayProgress,footerHeight,tokens]=this.__closure;return{opacity:reduceMotion?trayProgress.get():1,transform:[{translateY:reduceMotion?0:(1-trayProgress.get())*(footerHeight>0?footerHeight:tokens.space.PX_128)}]};})" };
+let closure_30 = { code: "(function InterestGamePickerTsx4(){let[interestHeaderElevation,scrollY,searchCollapseOffset,styles]=this.__closure;var _styles$searchElevati,_styles$searchElevati2;const progress=interestHeaderElevation(scrollY.get(),searchCollapseOffset);return{shadowOpacity:((_styles$searchElevati=styles.searchElevation.shadowOpacity)!==null&&_styles$searchElevati!==void 0?_styles$searchElevati:0)*progress,elevation:((_styles$searchElevati2=styles.searchElevation.elevation)!==null&&_styles$searchElevati2!==void 0?_styles$searchElevati2:0)*progress};})" };
+let closure_31 = { code: "(function InterestGamePickerTsx5(){let[interestHeaderElevation,scrollY,searchCollapseOffset]=this.__closure;return{opacity:interestHeaderElevation(scrollY.get(),searchCollapseOffset)};})" };
+let closure_32 = { code: "(function InterestGamePickerTsx6(){let[reduceMotion,trayProgress,footerHeight,tokens]=this.__closure;return{opacity:reduceMotion?trayProgress.get():1,transform:[{translateY:reduceMotion?0:(1-trayProgress.get())*(footerHeight>0?footerHeight:tokens.space.PX_128)}]};})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestGamePicker.tsx");
 
@@ -175,8 +181,8 @@ export default function InterestGamePicker(catalog) {
   let ArrowLargeRightIcon;
   let HeaderTextButton;
   let IconButton;
-  let SearchBar;
   let Text;
+  let View3;
   let _undefined;
   let _undefined2;
   let _undefined3;
@@ -209,20 +215,26 @@ export default function InterestGamePicker(catalog) {
   let items46;
   let items47;
   let items48;
+  let items49;
+  let items50;
+  let items51;
+  let items52;
+  let items53;
   let minSelection;
-  let obj12;
-  let obj21;
-  let obj34;
-  let obj36;
-  let obj40;
-  let obj42;
-  let obj43;
+  let obj13;
+  let obj22;
+  let obj39;
+  let obj41;
+  let obj45;
+  let obj47;
+  let obj48;
   let onLayout;
+  let radius;
   let ref;
   let str;
   let str3;
   let str4;
-  let sum;
+  let sum1;
   let title;
   let tmp12;
   let tmp17;
@@ -230,20 +242,27 @@ export default function InterestGamePicker(catalog) {
   let tmp20;
   let tmp21;
   let tmp24;
+  let tmp27;
+  let tmp28;
+  let tmp29;
   let tmp30;
   let tmp31;
-  let tmp64;
-  let tmp65;
-  let tmp66;
-  let tmp67;
-  let tmp68;
+  let tmp34;
+  let tmp35;
+  let tmp36;
+  let tmp37;
+  let tmp75;
+  let tmp76;
+  let tmp77;
+  let tmp78;
+  let tmp79;
   let tmp8;
-  let tmp84;
-  const f115621 = (item, index) => item !== first2[index];
-  const f115636 = (game) => {
+  let tmp93;
+  const f115812 = (item, index) => item !== first2[index];
+  const f115826 = (game) => {
     const hasItem = first.includes(game.id);
-    const obj = { game, width: rounded, selected: hasItem, unavailable: !hasItem && memo6.length >= authStore3, styles, radius: token, onPress };
-    return authStore6(StaticInterestGameTile, obj, game.id);
+    const obj = { game, width, selected: hasItem, unavailable: !hasItem && memo6.length >= authStore3, styles, radius, onPress };
+    return authStore6(closure_27, obj, game.id);
   };
   catalog = catalog.catalog;
   ({ title, minSelection } = catalog);
@@ -259,49 +278,50 @@ export default function InterestGamePicker(catalog) {
   }
   const onGameToggle = catalog.onGameToggle;
   const onSearch = catalog.onSearch;
+  let c6;
   c8 = undefined;
   c15 = undefined;
   let scrollY;
   let ref1;
   ref = undefined;
-  let sharedValue1;
   let stateFromStores;
+  let c21;
   let ref2;
-  let rounded;
-  let ref3;
   let bound;
   results = undefined;
   let error;
   let onSelect;
-  closure_30 = undefined;
-  closure_31 = undefined;
+  closure_28 = undefined;
+  closure_29 = undefined;
   let memo;
   let memo2;
   let memo4;
-  let memo3;
-  let closure_36;
+  let arr22;
+  let closure_34;
   let memo5;
   let memo6;
   let length;
-  let closure_40;
   let first2;
-  let closure_42;
-  let sharedValue2;
+  let closure_39;
+  let sharedValue1;
+  let ref3;
+  let result1;
   let ref4;
-  let c45;
   let ref5;
-  let ref6;
-  let callback;
+  let closure_45;
   let onPress;
+  let obj = c6;
   let tmp = catalog;
   let tmp2 = onSkip;
-  let obj = catalog(onSkip[17]);
+  const roundToNearestPixel = c6.roundToNearestPixel;
+  let obj2 = catalog(onSkip[17]);
   const tmp3 = onContinue;
-  const token = obj.useToken(onContinue(onSkip[8]).modules.mobile.INPUT_FIELD_RADIUS_LG);
-  const tmp5 = bound(token);
+  const roundToNearestPixelResult = roundToNearestPixel(obj2.useToken(onContinue(onSkip[8]).modules.mobile.INPUT_FIELD_RADIUS_LG));
+  c6 = roundToNearestPixelResult;
+  const tmp5 = error(roundToNearestPixelResult);
   const styles = tmp5;
   const bottom = onContinue(onSkip[18])().bottom;
-  let obj2 = onGameToggle;
+  let obj3 = onGameToggle;
   const tmp7 = initialSelection(onGameToggle.useState(0), 2);
   [tmp8, c8] = tmp7;
   const tmp9 = initialSelection(onGameToggle.useState(() => {
@@ -313,12 +333,12 @@ export default function InterestGamePicker(catalog) {
   let closure_10 = tmp9[1];
   [str, tmp12] = initialSelection(onGameToggle.useState(""), 2);
   let c11 = tmp12;
-  const tmp11 = initialSelection(onGameToggle.useState(""), 2);
+  initialSelection(onGameToggle.useState(""), 2);
   const tmp13 = initialSelection(onGameToggle.useState(false), 2);
   const first1 = tmp13[0];
   let closure_13 = tmp13[1];
-  let obj3 = catalog(onSkip[10]);
-  const sharedValue = obj3.useSharedValue(0);
+  let obj4 = catalog(onSkip[10]);
+  const sharedValue = obj4.useSharedValue(0);
   let items = [first1, sharedValue];
   const effect = onGameToggle.useEffect(() => {
     let num = 0;
@@ -330,10 +350,10 @@ export default function InterestGamePicker(catalog) {
     }
     const result = set(withTiming(num, timingPresets.timingFast));
   }, items);
-  let obj4 = catalog(onSkip[10]);
-  let items1 = [onSelect, sharedValue];
+  let items1 = [closure_28, sharedValue];
   let c0;
   [tmp17, tmp18] = items1;
+  const obj5 = catalog(onSkip[10]);
   class InterestGamePickerTsx2 {
     constructor() {
       const obj = { opacity: 1 - _undefined.get() };
@@ -344,8 +364,8 @@ export default function InterestGamePicker(catalog) {
   InterestGamePickerTsx2.__closure = items2;
   InterestGamePickerTsx2.__workletHash = 19591722165;
   InterestGamePickerTsx2.__initData = tmp17;
-  const animatedStyle = obj4.useAnimatedStyle(InterestGamePickerTsx2);
-  const items3 = [memo, sharedValue];
+  const animatedStyle = obj5.useAnimatedStyle(InterestGamePickerTsx2);
+  const items3 = [closure_29, sharedValue];
   c0 = undefined;
   [tmp20, tmp21] = items3;
   const tmpResult = tmp(tmp2[10]);
@@ -360,51 +380,94 @@ export default function InterestGamePicker(catalog) {
   InterestGamePickerTsx3.__workletHash = 1075419286504;
   InterestGamePickerTsx3.__initData = tmp20;
   const animatedStyle1 = tmpResult.useAnimatedStyle(InterestGamePickerTsx3);
-  [tmp24, c15] = initialSelection(obj2.useState(0), 2);
-  initialSelection(obj2.useState(0), 2);
+  [tmp24, c15] = initialSelection(obj3.useState(0), 2);
+  initialSelection(obj3.useState(0), 2);
   const tmpResult11 = tmp(tmp2[19]);
   const interestScrollHeader = tmpResult11.useInterestScrollHeader();
   scrollY = interestScrollHeader.scrollY;
-  const onScroll = interestScrollHeader.onScroll;
-  ref1 = obj2.useRef(null);
-  ref2 = obj2.useRef(null);
-  const tmp28 = tmp3(tmp2[20])();
-  const width = tmp28.width;
   let num = 0;
-  ({ ref, onLayout } = tmp28);
-  if (undefined !== width) {
-    num = width;
+  const onScroll = interestScrollHeader.onScroll;
+  if (!first1) {
+    num = tmp24;
   }
-  ref = obj2.useRef(null);
-  let num2 = 1;
-  const tmpResult12 = tmp(tmp2[10]);
-  sharedValue1 = tmpResult12.useSharedValue(1);
-  const items5 = [closure_30, sharedValue1];
+  const items5 = [memo, , , , ];
+  const useAnimatedStyle = tmp(tmp2[10]).useAnimatedStyle;
+  tmp(tmp2[10]);
+  items5[1] = tmp(tmp2[19]).interestHeaderElevation;
+  items5[2] = scrollY;
+  items5[3] = num;
+  items5[4] = tmp5;
   c0 = undefined;
-  [tmp30, tmp31] = items5;
-  const tmpResult13 = tmp(tmp2[10]);
+  let c1;
+  let c2;
+  let c3;
+  [tmp27, tmp28, tmp29, tmp30, tmp31] = items5;
   class InterestGamePickerTsx4 {
     constructor() {
-      let items;
-      const obj = { transform: items };
-      items = [{ scale: _undefined.get() }];
-      ({ scale: _undefined.get() });
+      let num2;
+      const tmp = _undefined(_undefined2.get(), c2);
+      let num = _undefined3.searchElevation.shadowOpacity;
+      const tmp2 = _undefined3;
+      if (num == null) {
+        num = 0;
+      }
+      const obj = { shadowOpacity: num * tmp, elevation: num2 * tmp };
+      num2 = tmp2.searchElevation.elevation;
+      if (num2 == null) {
+        num2 = 0;
+      }
       return obj;
     }
   }
-  const items6 = [tmp31];
+  const items6 = [tmp28, tmp29, tmp30, tmp31];
   InterestGamePickerTsx4.__closure = items6;
-  InterestGamePickerTsx4.__workletHash = 10706204519288;
-  InterestGamePickerTsx4.__initData = tmp30;
-  const animatedStyle2 = tmpResult13.useAnimatedStyle(InterestGamePickerTsx4);
-  const items7 = [first];
+  InterestGamePickerTsx4.__workletHash = 16996483244969;
+  InterestGamePickerTsx4.__initData = tmp27;
+  const animatedStyle2 = useAnimatedStyle(InterestGamePickerTsx4);
+  const items7 = [memo2, , , ];
+  const useAnimatedStyle2 = tmp(tmp2[10]).useAnimatedStyle;
+  tmp(tmp2[10]);
+  items7[1] = tmp(tmp2[19]).interestHeaderElevation;
+  items7[2] = scrollY;
+  items7[3] = num;
+  c0 = undefined;
+  c1 = undefined;
+  c2 = undefined;
+  [tmp34, tmp35, tmp36, tmp37] = items7;
+  class InterestGamePickerTsx5 {
+    constructor() {
+      const obj = { opacity: _undefined(_undefined2.get(), c2) };
+      return obj;
+    }
+  }
+  const items8 = [tmp35, tmp36, tmp37];
+  InterestGamePickerTsx5.__closure = items8;
+  InterestGamePickerTsx5.__workletHash = 98767186851;
+  InterestGamePickerTsx5.__initData = tmp34;
+  const animatedStyle21 = useAnimatedStyle2(InterestGamePickerTsx5);
+  ref1 = obj3.useRef(null);
+  ref2 = obj3.useRef(null);
+  const tmp41 = tmp3(tmp2[20])();
+  const width = tmp41.width;
+  let num2 = 0;
+  ({ ref, onLayout } = tmp41);
+  if (undefined !== width) {
+    num2 = width;
+  }
+  ref = obj3.useRef(null);
+  const items9 = [first];
   const tmpResult14 = tmp(tmp2[21]);
-  stateFromStores = tmpResult14.useStateFromStores(items7, () => first.useReducedMotion);
-  const tmp34 = tmp3(tmp2[22])();
-  ref2 = obj2.useRef(false);
-  rounded = Math.floor((num - 2 * scrollY - closure_13 * (first1 - num2)) / first1);
-  ref3 = obj2.useRef(false);
-  const tmp35 = first1;
+  stateFromStores = tmpResult14.useStateFromStores(items9, () => first.useReducedMotion);
+  const tmp43 = tmp3(tmp2[22])();
+  let num3 = 1;
+  let result = (num2 - 2 * scrollY - closure_13 * (first1 - 1)) / first1;
+  const roundToNearestPixel2 = obj.roundToNearestPixel;
+  const rounded = Math.floor(result * obj.get());
+  const roundToNearestPixel2Result = roundToNearestPixel2(rounded / obj.get());
+  c21 = roundToNearestPixel2Result;
+  const sum = closure_13 + (result - roundToNearestPixel2Result) * first1 / (first1 - 1);
+  ref2 = obj3.useRef(false);
+  const tmp44 = first1;
   if (Number.isFinite(minSelection)) {
     const _Math = Math;
     const _Math2 = Math;
@@ -413,60 +476,61 @@ export default function InterestGamePicker(catalog) {
     bound = c15;
   }
   const tmpResult15 = tmp(tmp2[23]);
-  const obj5 = { surface: tmp(tmp2[24]).GameSearchSurface.INTEREST_PICKER, filterGroup: tmp(tmp2[25]).GameSearchFilterGroup.DEFAULT };
-  const debouncedGameAutocomplete = tmpResult15.useDebouncedGameAutocomplete(str, obj5);
+  const obj6 = { surface: tmp(tmp2[24]).GameSearchSurface.INTEREST_PICKER, filterGroup: tmp(tmp2[25]).GameSearchFilterGroup.DEFAULT };
+  const debouncedGameAutocomplete = tmpResult15.useDebouncedGameAutocomplete(str, obj6);
   results = debouncedGameAutocomplete.results;
   error = debouncedGameAutocomplete.error;
   onSelect = debouncedGameAutocomplete.onSelect;
-  const items8 = [results];
+  const items10 = [results];
   const isLoading = debouncedGameAutocomplete.isLoading;
-  memo = obj2.useMemo(() => {
+  memo = obj3.useMemo(() => {
     let items = results;
     if (results == null) {
       items = [];
     }
     const found = items.filter(GameAutocompleteUtils.isGameAutocompleteResultAllowedInGameWidgets);
     return found.map((id) => id.id);
-  }, items8);
-  const tmp42 = str.trim().length > 0;
-  const items9 = [memo, catalog, first];
-  const memo1 = obj2.useMemo(() => {
+  }, items10);
+  const tmp54 = str.trim().length > 0;
+  const items11 = [memo, catalog, first];
+  const memo1 = obj3.useMemo(() => {
     const items = [...first];
     set = new Set(items);
     return from(set);
-  }, items9);
-  const tmp44 = tmp3(tmp2[27])(memo1);
-  closure_30 = tmp44;
-  closure_31 = tmp45;
-  let tmp46 = catalog;
-  if (tmp42 && null == error) {
-    tmp46 = memo;
+  }, items11);
+  const tmp56 = tmp3(tmp2[27])(memo1);
+  closure_28 = tmp56;
+  closure_29 = tmp57;
+  let tmp58 = catalog;
+  if (tmp54 && null == error) {
+    tmp58 = memo;
   }
-  memo = tmp46;
-  const items10 = [closure_10];
-  const items11 = [tmp46];
+  memo = tmp58;
+  const items12 = [closure_10];
+  const items13 = [tmp58];
   const tmpResult16 = tmp(tmp2[21]);
-  const stateFromStores1 = tmpResult16.useStateFromStores(items10, () => {
+  const stateFromStores1 = tmpResult16.useStateFromStores(items12, () => {
     let game;
     return memo.some((item) => {
       const tmp = null == game.getGame(item) && !game.hasNoData(item) && !game.didFetchingFail(item);
       return tmp;
     });
-  }, items11);
-  const items12 = [closure_10];
-  const items13 = [catalog];
+  }, items13);
+  const items14 = [closure_10];
+  const items15 = [catalog];
   const tmpResult17 = tmp(tmp2[21]);
-  let stateFromStores2 = tmpResult17.useStateFromStores(items12, () => catalog.some((item) => closure_1_10.didFetchingFail(item)), items13);
-  const items14 = [tmp44];
-  memo2 = obj2.useMemo(() => {
-    map = new Map(closure_30.map((id) => {
+  let stateFromStores2 = tmpResult17.useStateFromStores(items14, () => catalog.some((item) => closure_1_10.didFetchingFail(item)), items15);
+  const items16 = [tmp56];
+  memo2 = obj3.useMemo(() => {
+    map = new Map(closure_28.map((id) => {
       const items = [id.id, id];
       return items;
     }));
     return map;
-  }, items14);
-  const items15 = [catalog, memo2];
-  memo3 = obj2.useMemo(() => {
+  }, items16);
+  const items17 = [catalog, memo2];
+  const items18 = [memo, memo2];
+  const memo3 = obj3.useMemo(() => {
     let closure_0 = memo2;
     return catalog.flatMap((item) => {
       const value = closure_0.get(item);
@@ -480,9 +544,8 @@ export default function InterestGamePicker(catalog) {
       }
       items = [];
     });
-  }, items15);
-  const items16 = [memo, memo2];
-  memo4 = obj2.useMemo(() => {
+  }, items17);
+  memo4 = obj3.useMemo(() => {
     let closure_0 = memo2;
     return memo.flatMap((item) => {
       const value = closure_0.get(item);
@@ -496,15 +559,16 @@ export default function InterestGamePicker(catalog) {
       }
       items = [];
     });
-  }, items16);
-  if (tmp42 && null == error) {
-    memo3 = memo4;
+  }, items18);
+  arr22 = memo3;
+  if (tmp54 && null == error) {
+    arr22 = memo4;
   }
-  closure_36 = tmp50;
-  let tmp81Result3 = tmp42 && !tmp50 && null == error && 0 === memo3.length;
-  let tmp81Result4 = !tmp42 && !tmp50 && 0 === memo3.length;
-  const items17 = [memo2, first];
-  memo5 = obj2.useMemo(() => first.flatMap((item) => {
+  closure_34 = tmp63;
+  let tmp90Result3 = tmp54 && !tmp63 && null == error && 0 === arr22.length;
+  let tmp90Result4 = !tmp54 && !tmp63 && 0 === arr22.length;
+  const items19 = [memo2, first];
+  memo5 = obj3.useMemo(() => first.flatMap((item) => {
     const value = closure_0.get(item);
     if (null != value) {
       let items;
@@ -515,37 +579,35 @@ export default function InterestGamePicker(catalog) {
       return items;
     }
     items = [];
-  }), items17);
-  const items18 = [memo5];
-  memo6 = obj2.useMemo(() => memo5.map((id) => id.id), items18);
+  }), items19);
+  const items20 = [memo5];
+  memo6 = obj3.useMemo(() => memo5.map((id) => id.id), items20);
   length = memo6.length;
-  closure_40 = tmp55;
-  const tmp53 = memo6.length >= bound;
-  const tmp6Result2 = initialSelection(obj2.useState(memo5), 2);
+  const tmp66 = memo6.length >= bound;
+  const tmp6Result2 = initialSelection(obj3.useState(memo5), 2);
   first2 = tmp6Result2[0];
-  let tmp58 = memo5.length > 0;
-  const tmp54 = sharedValue;
-  const tmp57 = tmp6Result2[1];
-  if (tmp58) {
-    tmp58 = memo5.length !== first2.length || memo5.some(f115621);
-    memo5.length !== first2.length || memo5.some(f115621);
+  let tmp69 = memo5.length > 0;
+  const tmp68 = tmp6Result2[1];
+  if (tmp69) {
+    tmp69 = memo5.length !== first2.length || memo5.some(f115812);
+    memo5.length !== first2.length || memo5.some(f115812);
   }
-  if (tmp58) {
-    tmp57(memo5);
+  if (tmp69) {
+    tmp68(memo5);
   }
-  closure_42 = tmp61;
+  closure_39 = tmp72;
   const tmpResult18 = tmp(tmp2[10]);
-  sharedValue2 = tmpResult18.useSharedValue(0);
-  const items19 = [closure_31, stateFromStores, sharedValue2, tmp8, ];
-  const useAnimatedStyle = tmp(tmp2[10]).useAnimatedStyle;
+  sharedValue1 = tmpResult18.useSharedValue(0);
+  const items21 = [memo4, stateFromStores, sharedValue1, tmp8, ];
+  const useAnimatedStyle3 = tmp(tmp2[10]).useAnimatedStyle;
   tmp(tmp2[10]);
-  items19[4] = tmp3(tmp2[8]);
+  items21[4] = tmp3(tmp2[8]);
   c0 = undefined;
-  let c1;
-  let c2;
-  let c3;
-  [tmp64, tmp65, tmp66, tmp67, tmp68] = items19;
-  class InterestGamePickerTsx5 {
+  c1 = undefined;
+  c2 = undefined;
+  c3 = undefined;
+  [tmp75, tmp76, tmp77, tmp78, tmp79] = items21;
+  class InterestGamePickerTsx6 {
     constructor() {
       let items;
       let num = 1;
@@ -566,18 +628,18 @@ export default function InterestGamePicker(catalog) {
       return obj;
     }
   }
-  const items20 = [tmp65, tmp66, tmp67, tmp68];
-  InterestGamePickerTsx5.__closure = items20;
-  InterestGamePickerTsx5.__workletHash = 7730800331799;
-  InterestGamePickerTsx5.__initData = tmp64;
-  const items21 = [sharedValue2, length > 0 && !tmp34, stateFromStores];
-  const animatedStyle3 = useAnimatedStyle(InterestGamePickerTsx5);
-  const effect1 = obj2.useEffect(() => {
+  const items22 = [tmp76, tmp77, tmp78, tmp79];
+  InterestGamePickerTsx6.__closure = items22;
+  InterestGamePickerTsx6.__workletHash = 9712426308148;
+  InterestGamePickerTsx6.__initData = tmp75;
+  const items23 = [sharedValue1, length > 0 && !tmp43, stateFromStores];
+  const animatedStyle3 = useAnimatedStyle3(InterestGamePickerTsx6);
+  const effect1 = obj3.useEffect(() => {
     let num = 0;
-    set = sharedValue2.set;
+    set = sharedValue1.set;
     const withTiming = timing_timing.withTiming;
     timing_timing;
-    if (closure_42) {
+    if (closure_39) {
       num = 1;
     }
     let num2 = 100;
@@ -589,62 +651,44 @@ export default function InterestGamePicker(catalog) {
       str = "animate-always";
     }
     const result = set(withTiming(num, { duration: num2 }, str));
-  }, items21);
-  const items22 = [length >= sharedValue, sharedValue1, stateFromStores];
-  const effect2 = obj2.useEffect(() => {
-    const tmp = closure_40 && !ref2.current;
-    if (tmp) {
-      ref2.current = true;
-      const tmp4 = stateFromStores;
-      if (!tmp4) {
-        set = sharedValue1.set;
-        const withSequence = _mod1652.withSequence;
-        _mod1652;
-        const obj = timing_timing;
-        const withTimingResult = obj.withTiming(1.06, { duration: 180 });
-        const obj2 = timing_timing;
-        const result = set(withSequence(withTimingResult, obj2.withTiming(1, { duration: 180 })));
-      }
-    }
-  }, items22);
-  ref4 = obj2.useRef(length);
-  const items23 = [length];
-  const effect3 = obj2.useEffect(() => {
-    if (ref4.current !== length) {
-      ref4.current = length;
+  }, items23);
+  ref3 = obj3.useRef(length);
+  const items24 = [length];
+  const effect2 = obj3.useEffect(() => {
+    if (ref3.current !== length) {
+      ref3.current = length;
       const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
       const intl = intl13.intl;
       const obj = { count: length, max };
-      announce(intl.formatToPlainString(_modDef2537.v9v0uY, obj));
+      announce(intl.formatToPlainString(_modDef2534.v9v0uY, obj));
     }
-  }, items23);
+  }, items24);
   const tmpResult20 = tmp(tmp2[26]);
-  let result = tmpResult20.normalizeGameAutocompleteQuery(str);
-  c45 = result;
-  ref5 = obj2.useRef(null);
-  const items24 = [result, tmp42 && isLoading || stateFromStores1, error, results, memo4.length, onSearch];
-  const effect4 = obj2.useEffect(() => {
-    if (null != current) {
-      const tmp2 = closure_36 || null != error || null == results || ref5.current === arr;
+  result1 = tmpResult20.normalizeGameAutocompleteQuery(str);
+  ref4 = obj3.useRef(null);
+  const items25 = [result1, tmp54 && isLoading || stateFromStores1, error, results, memo4.length, onSearch];
+  const effect3 = obj3.useEffect(() => {
+    if (null != result1) {
+      const tmp2 = closure_34 || null != error || null == results || ref4.current === arr;
       if (!tmp2) {
-        ref5.current = current;
+        ref4.current = result1;
         if (onSearch != null) {
-          tmp7(current.length, memo4.length);
+          tmp7(result1.length, memo4.length);
         }
       }
     } else {
-      ref5.current = null;
+      ref4.current = null;
     }
-  }, items24);
-  ref6 = obj2.useRef(first);
-  const items25 = [onGameToggle, memo3];
-  callback = obj2.useCallback((arg0) => {
+  }, items25);
+  ref5 = obj3.useRef(first);
+  const items26 = [onGameToggle, arr22];
+  closure_45 = obj3.useCallback((arg0) => {
     let closure_0 = arg0;
-    if (!ref3.current) {
-      current = ref6.current;
+    if (!ref2.current) {
+      const current = ref5.current;
       const hasItem = current.includes(arg0);
-      const tmp2 = ref6;
+      const tmp2 = ref5;
       if (hasItem) {
         let found;
         if (hasItem) {
@@ -655,7 +699,7 @@ export default function InterestGamePicker(catalog) {
         }
         tmp2.current = found;
         closure_10(found);
-        const findIndexResult = memo3.findIndex((id) => id.id === closure_0);
+        const findIndexResult = arr22.findIndex((id) => id.id === closure_0);
         if (onGameToggle != null) {
           let tmp14 = null;
           if (-1 !== findIndexResult) {
@@ -665,19 +709,18 @@ export default function InterestGamePicker(catalog) {
         }
       }
     }
-  }, items25);
-  const items26 = [length >= sharedValue, first, tmp42 && null == error, callback, onSelect];
-  onPress = obj2.useCallback((arg0) => {
+  }, items26);
+  onPress = tmp3(tmp2[29])((arg0) => {
     hasOwnProperty.dismiss();
-    const tmp2 = closure_40;
-    if (tmp2) {
-      if (!first.includes(arg0)) {
+    const current = ref5.current;
+    if (current.length >= authStore3) {
+      if (!current.includes(arg0)) {
         const _Date = Date;
         const timestamp = Date.now();
         ref.current = timestamp;
         const intl = intl13.intl;
-        const obj = { count: max, max };
-        const formatToPlainStringResult = intl.formatToPlainString(_modDef2537.v9v0uY, obj);
+        const obj = { count: authStore3, max: authStore3 };
+        const formatToPlainStringResult = intl.formatToPlainString(_modDef2534.v9v0uY, obj);
         const obj2 = HapticUtils;
         const result = obj2.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
         const obj4 = { text: formatToPlainStringResult };
@@ -687,17 +730,17 @@ export default function InterestGamePicker(catalog) {
         AccessibilityAnnouncer.announce(formatToPlainStringResult);
       }
     }
-    const tmp16 = closure_31;
-    if (tmp16) {
+    const tmp14 = closure_29;
+    if (tmp14) {
       onSelect(arg0);
     }
-    callback(arg0);
-  }, items26);
+    closure_45(arg0);
+  });
   const items27 = [bound, onContinue, memo6];
   const items28 = [onSkip, memo6];
-  const callback1 = obj2.useCallback(() => {
-    current = ref3.current;
-    const tmp = ref3;
+  const callback = obj3.useCallback(() => {
+    let current = ref2.current;
+    const tmp = ref2;
     if (!current) {
       current = memo6.length < bound;
     }
@@ -707,15 +750,15 @@ export default function InterestGamePicker(catalog) {
     }
   }, items27);
   const items29 = [ref2, scrollY];
-  const callback2 = obj2.useCallback(() => {
-    if (!ref3.current) {
+  const callback1 = obj3.useCallback(() => {
+    if (!ref2.current) {
       tmp.current = true;
       onSkip(memo6);
     }
   }, items28);
   const items30 = [ref2, scrollY];
-  const callback3 = obj2.useCallback(() => {
-    current = ref1.current;
+  const callback2 = obj3.useCallback(() => {
+    const current = ref1.current;
     if (current != null) {
       current.blur();
     }
@@ -728,8 +771,8 @@ export default function InterestGamePicker(catalog) {
     const result = scrollY.set(0);
   }, items29);
   const items31 = [catalog];
-  const callback4 = obj2.useCallback(() => {
-    current = ref1.current;
+  const callback3 = obj3.useCallback(() => {
+    const current = ref1.current;
     const tmp = ref1;
     if (current != null) {
       current.setText("");
@@ -746,9 +789,9 @@ export default function InterestGamePicker(catalog) {
     }
     const result = scrollY.set(0);
   }, items30);
-  const obj6 = { style: tmp5.screen, children: items44 };
-  const obj7 = { ref, onLayout, style: tmp5.body, children: items36 };
-  const callback5 = obj2.useCallback(() => {
+  const obj7 = { style: tmp5.screen, children: items49 };
+  const obj8 = { ref, onLayout, style: tmp5.body, children: items36 };
+  const callback4 = obj3.useCallback(() => {
     const useGame = useGame2.useGame;
     let items = [
       ...catalog.map((item) => {
@@ -758,73 +801,73 @@ export default function InterestGamePicker(catalog) {
     ];
     useGame.fetchMany.apply(items);
   }, items31);
-  const obj8 = { style: tmp5.header, children: items35 };
-  const obj9 = { style: tmp5.navTitle, collapsable: false, children: items33 };
-  const SafeAreaPaddingView = tmp(tmp2[32]).SafeAreaPaddingView;
-  const obj10 = { style: items32, children: ref2(tmp(tmp2[19]).InterestCompactTitle, { title, scrollY, collapseOffset: tmp24 }) };
+  const obj10 = { style: tmp5.navTitle, collapsable: false, children: items33 };
+  const obj9 = { style: tmp5.header, children: items35 };
+  const SafeAreaPaddingView = tmp(tmp2[33]).SafeAreaPaddingView;
+  const obj11 = { style: items32, children: ref2(tmp(tmp2[19]).InterestCompactTitle, { title, scrollY, collapseOffset: tmp24 }) };
   items32 = [tmp5.screen, animatedStyle];
   const View = tmp3(tmp2[10]).View;
-  items33 = [ref2(View, obj10), ];
+  items33 = [ref2(View, obj11), ];
   let str2 = "no-hide-descendants";
-  const obj11 = { pointerEvents: "none", accessibilityElementsHidden: !first1, importantForAccessibility: str3, style: items34, children: ref2(Text, obj12) };
+  const obj12 = { pointerEvents: "none", accessibilityElementsHidden: !first1, importantForAccessibility: str3, style: items34, children: ref2(Text, obj13) };
   str3 = "no-hide-descendants";
   const View2 = tmp3(tmp2[10]).View;
   if (first1) {
     str3 = "auto";
   }
   items34 = [tmp5.searchTitle, animatedStyle1];
-  obj12 = { variant: "body-md/semibold", lineClamp: 1, children: intl.string(tmp3(tmp2[12])["8Xenq+"]) };
-  Text = tmp(tmp2[33]).Text;
+  obj13 = { variant: "body-md/semibold", lineClamp: 1, children: intl.string(tmp3(tmp2[12])["8Xenq+"]) };
+  Text = tmp(tmp2[34]).Text;
   intl = tmp(tmp2[11]).intl;
-  items33[1] = ref2(View2, obj11);
-  items35 = [rounded(c8, obj9), ];
-  const obj14 = { label: null, labelStyle: null, onPress: null };
-  const obj13 = { style: tmp5.navActions, children: ref2(HeaderTextButton, tmp84) };
-  HeaderTextButton = tmp(tmp2[34]).HeaderTextButton;
+  items33[1] = ref2(View2, obj12);
+  items35 = [bound(c8, obj10), ];
+  const obj15 = { label: null, labelStyle: null, onPress: null };
+  const obj14 = { style: tmp5.navActions, children: ref2(HeaderTextButton, tmp93) };
+  HeaderTextButton = tmp(tmp2[35]).HeaderTextButton;
   const intl2 = tmp(tmp2[11]).intl;
   const string = intl2.string;
   const t = tmp(tmp2[11]).t;
   if (first1) {
-    obj14.label = string(t["ETE/oC"]);
-    obj14.labelStyle = tmp5.skip;
-    obj14.onPress = callback4;
-    tmp84 = obj14;
+    obj15.label = string(t["ETE/oC"]);
+    obj15.labelStyle = tmp5.skip;
+    obj15.onPress = callback3;
+    tmp93 = obj15;
   } else {
-    obj14.label = string(t["5Wxrcd"]);
-    obj14.labelStyle = tmp5.skip;
-    obj14.onPress = callback2;
-    tmp84 = obj14;
+    obj15.label = string(t["5Wxrcd"]);
+    obj15.labelStyle = tmp5.skip;
+    obj15.onPress = callback1;
+    tmp93 = obj15;
   }
-  const obj15 = { top: true, children: rounded(c8, obj8) };
-  items35[1] = ref2(c8, obj13);
-  items36 = [ref2(SafeAreaPaddingView, obj15), ];
-  const obj16 = { ref: ref2, stickyHeaderIndices: items37, onScroll, scrollEventThrottle: 16, contentInsetAdjustmentBehavior: "never", style: tmp5.screen, contentContainerStyle: items38, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", automaticallyAdjustKeyboardInsets: false, children: items40 };
-  const tmp85 = styles;
+  const obj16 = { top: true, children: bound(c8, obj9) };
+  items35[1] = ref2(c8, obj14);
+  items36 = [ref2(SafeAreaPaddingView, obj16), ];
+  const obj17 = { ref: ref2, stickyHeaderIndices: items37, onScroll, scrollEventThrottle: 16, contentInsetAdjustmentBehavior: "never", style: tmp5.screen, contentContainerStyle: items38, keyboardDismissMode: "on-drag", keyboardShouldPersistTaps: "handled", automaticallyAdjustKeyboardInsets: false, children: items40 };
+  const ScrollView = tmp3(tmp2[10]).ScrollView;
   if (first1) {
-    num2 = 0;
+    num3 = 0;
   }
-  items37 = [num2];
+  items37 = [num3];
   items38 = [tmp5.content, ];
-  if (tmp34) {
-    let num4 = 0;
-    if (!tmp81Result3) {
-      num4 = tmp3(tmp2[8]).space.PX_16;
+  if (tmp43) {
+    let num5 = 0;
+    if (!tmp90Result3) {
+      num5 = tmp3(tmp2[8]).space.PX_16;
     }
-    sum = num4;
+    sum1 = num5;
   } else {
-    sum = bottom;
+    sum1 = bottom;
     if (0 !== length) {
-      let num3 = 0;
-      if (!tmp81Result3) {
-        num3 = tmp3(tmp2[8]).space.PX_32;
+      let num4 = 0;
+      if (!tmp90Result3) {
+        num4 = tmp3(tmp2[8]).space.PX_32;
       }
-      sum = tmp8 + num3;
+      sum1 = tmp8 + num4;
     }
   }
-  items38[1] = { paddingBottom: sum };
-  let tmp81Result = !first1;
-  if (tmp81Result) {
-    const obj17 = {
+  items38[1] = { paddingBottom: sum1 };
+  let tmp90Result = !first1;
+  if (tmp90Result) {
+    const obj18 = {
       style: tmp5.intro,
       collapsable: false,
       onLayout(nativeEvent) {
@@ -832,155 +875,170 @@ export default function InterestGamePicker(catalog) {
         },
       children: items39
     };
-    const obj18 = { variant: "heading-xl/semibold", color: "text-strong", children: title };
-    items39 = [ref2(tmp(tmp2[33]).Heading, obj18), ];
-    const obj19 = { style: tmp5.subtitle, variant: "body-sm/normal", color: "text-default", children: subtitle };
-    items39[1] = ref2(tmp(tmp2[33]).Text, obj19);
-    tmp81Result = tmp81(tmp82, obj17);
+    const obj19 = { variant: "heading-xl/semibold", color: "text-strong", children: title };
+    items39 = [ref2(tmp(tmp2[34]).Heading, obj19), ];
+    const obj20 = { style: tmp5.subtitle, variant: "body-sm/normal", color: "text-default", children: subtitle };
+    items39[1] = ref2(tmp(tmp2[34]).Text, obj20);
+    tmp90Result = tmp90(tmp91, obj18);
   }
-  items40 = [tmp81Result, , ];
-  const obj20 = { style: tmp5.search, children: ref2(SearchBar, obj21) };
-  obj21 = {
+  items40 = [tmp90Result, , ];
+  const obj21 = { children: bound(View3, obj22) };
+  obj22 = { style: items41, children: items43 };
+  items41 = [, , ];
+  ({ search: arr48[0], searchElevation: arr48[1] } = tmp5);
+  items41[2] = animatedStyle2;
+  View3 = tmp3(tmp2[10]).View;
+  const obj23 = { pointerEvents: "none", style: items42 };
+  items42 = [tmp5.searchEdge, animatedStyle21];
+  items43 = [ref2(tmp3(tmp2[10]).View, obj23), ];
+  const obj24 = {
     ref: ref1,
     grow: false,
     accessibilityLabel: intl3.string(tmp3(tmp2[12])["8Xenq+"]),
     onChange: tmp12,
     onFocus() {
       closure_13(true);
-      current = ref2.current;
+      const current = ref2.current;
       if (current != null) {
         current.scrollTo({ y: 0, animated: false });
       }
+      const result = scrollY.set(0);
     },
-    onSubmitEditing: callback3,
+    onSubmitEditing: callback2,
     placeholder: intl4.string(tmp3(tmp2[12])["8Xenq+"])
   };
-  SearchBar = tmp(tmp2[35]).SearchBar;
+  const SearchBar = tmp(tmp2[36]).SearchBar;
   intl3 = tmp(tmp2[11]).intl;
   intl4 = tmp(tmp2[11]).intl;
-  items40[1] = ref2(c8, obj20);
-  let tmp83Result = tmp50;
-  const obj22 = { style: tmp5.content, children: items41 };
-  if (tmp83Result) {
-    const obj23 = { style: tmp5.grid, accessible: true, accessibilityLabel: intl5.string(tmp(tmp2[11]).t.ZTNur7), accessibilityState: { busy: true }, children: arr };
+  items43[1] = ref2(SearchBar, obj24);
+  items40[1] = ref2(c8, obj21);
+  let tmp92Result = tmp63;
+  const obj25 = { style: tmp5.content, children: items45 };
+  if (tmp92Result) {
+    const obj26 = { style: items44, accessible: true, accessibilityLabel: intl5.string(tmp(tmp2[11]).t.ZTNur7), accessibilityState: { busy: true }, children: arr };
+    items44 = [tmp5.grid, ];
+    const obj27 = { columnGap: sum };
+    items44[1] = obj27;
     intl5 = tmp(tmp2[11]).intl;
-    arr = rounded > 0;
+    arr = roundToNearestPixel2Result > 0;
     if (arr) {
       const _Array = Array;
-      const obj24 = { length: 4 * tmp35 };
-      arr = Array.from(obj24, (arg0, arg1) => {
+      const obj28 = { length: 4 * tmp44 };
+      arr = Array.from(obj28, (arg0, arg1) => {
         let items;
         let items1;
         const obj = { style: size, children: items1 };
-        size = { width: rounded, height: rounded / closure_19 };
+        size = { width, height: metroRequire.roundToNearestPixel(width / closure_19) };
         const obj2 = { style: items };
         items = [, ];
         ({ screen: arr[0], tileWrapper: arr[1] } = styles);
         items1 = [authStore6(InterestGhostDefault, obj2), ];
-        const obj3 = { radius: token };
+        const obj3 = { radius };
         items1[1] = authStore6(InterestTileEdgeDefault, obj3);
         return sidebars(metroImportAll, obj, arg1);
       });
     }
-    tmp83Result = tmp83(tmp82, obj23);
+    tmp92Result = tmp92(tmp91, obj26);
   }
-  items41 = [tmp83Result, , , ];
-  if (tmp81Result3) {
-    const obj25 = { style: tmp5.empty, children: items42 };
-    const obj26 = { variant: "body-sm/semibold", color: "text-muted", style: tmp5.subtitle, children: intl6.string(tmp3(tmp2[12]).w5cRz0) };
-    const Heading = tmp(tmp2[33]).Heading;
+  items45 = [tmp92Result, , , ];
+  if (tmp90Result3) {
+    const obj29 = { style: tmp5.empty, children: items46 };
+    const obj30 = { variant: "body-sm/semibold", color: "text-muted", style: tmp5.subtitle, children: intl6.string(tmp3(tmp2[12]).w5cRz0) };
+    const Heading = tmp(tmp2[34]).Heading;
     intl6 = tmp(tmp2[11]).intl;
-    items42 = [ref2(Heading, obj26), ];
-    const obj27 = { variant: "body-sm/semibold", color: "text-muted", style: tmp5.subtitle, children: intl7.string(tmp3(tmp2[12]).Khsqzs) };
-    const Text2 = tmp(tmp2[33]).Text;
+    items46 = [ref2(Heading, obj30), ];
+    const obj31 = { variant: "body-sm/semibold", color: "text-muted", style: tmp5.subtitle, children: intl7.string(tmp3(tmp2[12]).Khsqzs) };
+    const Text2 = tmp(tmp2[34]).Text;
     intl7 = tmp(tmp2[11]).intl;
-    items42[1] = ref2(Text2, obj27);
-    tmp81Result3 = tmp81(tmp82, obj25);
+    items46[1] = ref2(Text2, obj31);
+    tmp90Result3 = tmp90(tmp91, obj29);
   }
-  items41[1] = tmp81Result3;
-  if (tmp81Result4) {
-    const obj28 = { style: tmp5.status, children: items43 };
-    const Text3 = tmp(tmp2[33]).Text;
+  items45[1] = tmp90Result3;
+  if (tmp90Result4) {
+    const obj32 = { style: tmp5.status, children: items47 };
+    const Text3 = tmp(tmp2[34]).Text;
     const intl8 = tmp(tmp2[11]).intl;
     const string2 = intl8.string;
     const tmp3Result = tmp3(tmp2[12]);
-    const obj29 = { variant: "body-md/semibold", color: "text-strong", children: string2(stateFromStores2 ? tmp3Result["+np3yH"] : tmp3Result.V7UsE0) };
-    items43 = [ref2(Text3, obj29), , ];
-    const Text4 = tmp(tmp2[33]).Text;
+    const obj33 = { variant: "body-md/semibold", color: "text-strong", children: string2(stateFromStores2 ? tmp3Result["+np3yH"] : tmp3Result.V7UsE0) };
+    items47 = [ref2(Text3, obj33), , ];
+    const Text4 = tmp(tmp2[34]).Text;
     const intl9 = tmp(tmp2[11]).intl;
     const string3 = intl9.string;
     const tmp3Result2 = tmp3(tmp2[12]);
-    const obj30 = { variant: "body-sm/normal", color: "text-muted", children: string3(stateFromStores2 ? tmp3Result2.CjS26n : tmp3Result2.qx4Gb6) };
-    items43[1] = ref2(Text4, obj30);
+    const obj34 = { variant: "body-sm/normal", color: "text-muted", children: string3(stateFromStores2 ? tmp3Result2.CjS26n : tmp3Result2.qx4Gb6) };
+    items47[1] = ref2(Text4, obj34);
     if (stateFromStores2) {
-      const obj31 = { onPress: callback5, size: "sm", text: intl10.string(tmp3(tmp2[12]).uGhymA), variant: "secondary" };
-      const Button = tmp(tmp2[37]).Button;
+      const obj35 = { onPress: callback4, size: "sm", text: intl10.string(tmp3(tmp2[12]).uGhymA), variant: "secondary" };
+      const Button = tmp(tmp2[38]).Button;
       intl10 = tmp(tmp2[11]).intl;
-      stateFromStores2 = tmp83(Button, obj31);
+      stateFromStores2 = tmp92(Button, obj35);
     }
-    items43[2] = stateFromStores2;
-    tmp81Result4 = tmp81(tmp82, obj28);
+    items47[2] = stateFromStores2;
+    tmp90Result4 = tmp90(tmp91, obj32);
   }
-  items41[2] = tmp81Result4;
-  let tmp83Result3 = !tmp50 && memo3.length > 0;
-  if (tmp83Result3) {
-    const obj32 = { style: tmp5.grid, children: rounded > 0 && memo3.map(f115636) };
-    rounded > 0 && memo3.map(f115636);
-    tmp83Result3 = tmp83(tmp82, obj32);
+  items45[2] = tmp90Result4;
+  let tmp92Result3 = !tmp63 && arr22.length > 0;
+  if (tmp92Result3) {
+    const obj36 = { style: items48, children: roundToNearestPixel2Result > 0 && arr22.map(f115826) };
+    items48 = [tmp5.grid, ];
+    const obj37 = { columnGap: sum };
+    items48[1] = obj37;
+    roundToNearestPixel2Result > 0 && arr22.map(f115826);
+    tmp92Result3 = tmp92(tmp91, obj36);
   }
-  items41[3] = tmp83Result3;
-  items40[2] = rounded(c8, obj22);
-  items36[1] = rounded(tmp85, obj16);
-  items44 = [rounded(c8, obj7), ];
-  const obj33 = { accessibilityElementsHidden: !(length > 0 && !tmp34), importantForAccessibility: str2, pointerEvents: str4, style: items45, children: ref2(c8, obj34) };
-  const View3 = tmp3(tmp2[10]).View;
-  if (length > 0 && !tmp34) {
+  items45[3] = tmp92Result3;
+  items40[2] = bound(c8, obj25);
+  items36[1] = bound(ScrollView, obj17);
+  items49 = [bound(c8, obj8), ];
+  const obj38 = { accessibilityElementsHidden: !(length > 0 && !tmp43), importantForAccessibility: str2, pointerEvents: str4, style: items50, children: ref2(c8, obj39) };
+  const View4 = tmp3(tmp2[10]).View;
+  if (length > 0 && !tmp43) {
     str2 = "auto";
   }
   str4 = "none";
-  if (length > 0 && !tmp34) {
+  if (length > 0 && !tmp43) {
     str4 = "auto";
   }
-  items45 = [tmp5.footerPosition, animatedStyle3];
-  obj34 = {
+  items50 = [tmp5.footerPosition, animatedStyle3];
+  obj39 = {
     onLayout(nativeEvent) {
       return _undefined(nativeEvent.nativeEvent.layout.height);
     },
-    style: items46,
-    children: rounded(c8, obj36)
+    style: items51,
+    children: bound(c8, obj41)
   };
-  items46 = [tmp5.footer, { paddingBottom: Math.max(bottom, tmp3(tmp2[8]).space.PX_16) }];
-  obj36 = { style: tmp5.footerContent, children: items47 };
-  items47 = [, ];
+  items51 = [tmp5.footer, { paddingBottom: Math.max(bottom, tmp3(tmp2[8]).space.PX_16) }];
+  obj41 = { style: tmp5.footerContent, children: items52 };
+  items52 = [, ];
   ({ paddingBottom: Math.max(bottom, tmp3(tmp2[8]).space.PX_16) });
-  const obj37 = {
+  const obj42 = {
     games: first2,
-    coverWidth: rounded,
+    coverWidth: roundToNearestPixel2Result,
     reduceMotion: stateFromStores,
     onRemove(arg0) {
-      callback(arg0);
+      closure_45(arg0);
     }
   };
-  items47[0] = ref2(tmp3(tmp2[38]), obj37);
-  let tmp83Result4 = first2.length > 0;
-  const obj38 = { style: tmp5.footerActions, children: items48 };
-  if (tmp83Result4) {
-    const obj39 = { variant: "body-sm/medium", color: "text-default", children: intl11.format(tmp3(tmp2[12]).v9v0uY, obj40) };
-    const Text5 = tmp(tmp2[33]).Text;
+  items52[0] = ref2(tmp3(tmp2[39]), obj42);
+  let tmp92Result4 = first2.length >= 7;
+  const obj43 = { style: tmp5.footerActions, children: items53 };
+  if (tmp92Result4) {
+    const obj44 = { variant: "body-sm/medium", color: "text-default", children: intl11.format(tmp3(tmp2[12]).v9v0uY, obj45) };
+    const Text5 = tmp(tmp2[34]).Text;
     intl11 = tmp(tmp2[11]).intl;
-    obj40 = { count: first2.length, max: tmp54 };
-    tmp83Result4 = tmp83(Text5, obj39);
+    obj45 = { count: first2.length, max: sharedValue };
+    tmp92Result4 = tmp92(Text5, obj44);
   }
-  items48 = [tmp83Result4, ];
-  const obj41 = { style: animatedStyle2, children: ref2(IconButton, obj42) };
-  const View4 = tmp3(tmp2[10]).View;
-  obj42 = { accessibilityLabel: intl12.string(tmp(tmp2[11]).t["3PatSz"]), disabled: !tmp53, icon: ref2(ArrowLargeRightIcon, obj43), onPress: callback1, size: "lg", variant: "primary" };
-  IconButton = tmp(tmp2[39]).IconButton;
+  items53 = [tmp92Result4, ];
+  const obj46 = { children: ref2(IconButton, obj47) };
+  obj47 = { accessibilityLabel: intl12.string(tmp(tmp2[11]).t["3PatSz"]), disabled: !tmp66, icon: ref2(ArrowLargeRightIcon, obj48), onPress: callback, size: "lg", variant: "primary" };
+  IconButton = tmp(tmp2[40]).IconButton;
   intl12 = tmp(tmp2[11]).intl;
-  obj43 = { color: tmp3(tmp2[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  ArrowLargeRightIcon = tmp(tmp2[40]).ArrowLargeRightIcon;
-  items48[1] = ref2(View4, obj41);
-  items47[1] = rounded(c8, obj38);
-  items44[1] = ref2(View3, obj33);
-  return rounded(c8, obj6);
+  obj48 = { color: tmp3(tmp2[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT };
+  ArrowLargeRightIcon = tmp(tmp2[41]).ArrowLargeRightIcon;
+  items53[1] = ref2(c8, obj46);
+  items52[1] = bound(c8, obj43);
+  items49[1] = ref2(View4, obj38);
+  return bound(c8, obj7);
 };

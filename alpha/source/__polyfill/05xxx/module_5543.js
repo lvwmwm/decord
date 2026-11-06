@@ -1,16 +1,32 @@
 // Module ID: 5543
 // Function ID: 5544
-// Dependencies: [5544, 5516]
+// Dependencies: [5494]
+// Exports: createLastUpdateEventMap
 
 // Module 5543
-import _mod5516 from "module_5516" /* 5516 */;
-import _mod5544 from "module_5544" /* 5544 */;
+import reanimatedWrapper from "reanimatedWrapper" /* 5494 */;
 
-for (const key10013 in _mod5544) {
-  exports[key10013] = _mod5544[key10013];
-  continue;
-}
-for (const key10017 in _mod5516) {
-  exports[key10017] = _mod5516[key10017];
-  continue;
+let map;
+
+
+export function createLastUpdateEventMap() {
+  const Worklets = reanimatedWrapper.Worklets;
+  let createShareable1;
+  if (Worklets != null) {
+    createShareable1 = Worklets.createShareable;
+  }
+  if (undefined !== createShareable1) {
+    if (undefined !== reanimatedWrapper.Worklets.UIRuntimeId) {
+      if (undefined !== reanimatedWrapper.Reanimated) {
+        const Worklets2 = tmp(5494).Worklets;
+        const createShareable = Worklets2.createShareable;
+        const _Map = Map;
+        const self = this;
+        const self2 = this;
+        const UIRuntimeId = tmp(5494).Worklets.UIRuntimeId;
+        map = new Map();
+        return createShareable(UIRuntimeId, map);
+      }
+    }
+  }
 }

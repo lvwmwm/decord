@@ -4,11 +4,11 @@
 
 // Module 1489
 
-export default (arg0, arg1, arg2, arg3) => {
+export default (scrollLength, arg1, arg2, scrollLength2) => {
   let _undefined;
   let str11;
-  let tmp = arg0;
-  let c0 = arg0;
+  let tmp = scrollLength;
+  let c0 = scrollLength;
   let str = arg1;
   let str2 = arg2;
   if (!arg1) {
@@ -105,25 +105,25 @@ export default (arg0, arg1, arg2, arg3) => {
   } else {
     let str9 = "";
     str11 = "";
-    if (arg3) {
+    if (scrollLength) {
       const str3 = "string";
-      let tmp4 = arg3;
+      let tmp4 = scrollLength;
       let _encodeURIComponent = encodeURIComponent;
-      if ("string" !== typeof arg3) {
+      if ("string" !== typeof scrollLength) {
         let str4 = "boolean";
-        if ("boolean" === typeof arg3) {
+        if ("boolean" === typeof scrollLength) {
           let str6 = "false";
-          if (arg3) {
+          if (scrollLength) {
             str6 = "true";
           }
           tmp4 = str6;
         } else {
           let str5 = "number";
-          if ("number" === typeof arg3) {
+          if ("number" === typeof scrollLength) {
             let _isFinite = isFinite;
             let tmp5 = str9;
-            if (isFinite(arg3)) {
-              tmp5 = arg3;
+            if (isFinite(scrollLength)) {
+              tmp5 = scrollLength;
             }
             tmp4 = tmp5;
           } else {

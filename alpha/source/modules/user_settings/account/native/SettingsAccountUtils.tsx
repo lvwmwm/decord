@@ -1,10 +1,10 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 16841
+// Function ID: 16842
 // Name: SettingsAccountUtils
 // Dependencies: [502, 1385, 563, 2]
 // Exports: useIs2FAEnabled, useIsTOTPEnabled, useIsUserVerified
 
-// Module 16853 (SettingsAccountUtils)
+// Module 16841 (SettingsAccountUtils)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;

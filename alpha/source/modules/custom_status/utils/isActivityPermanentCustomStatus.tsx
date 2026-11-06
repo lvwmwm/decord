@@ -1,11 +1,11 @@
-// Module ID: 18409
-// Function ID: 18410
+// Module ID: 18401
+// Function ID: 18402
 // Name: isActivityPermanentCustomStatus
-// Dependencies: [5899, 2]
+// Dependencies: [5918, 2]
 // Exports: isActivityPermanentCustomStatus
 
-// Module 18409 (isActivityPermanentCustomStatus)
-import ActivityTypes from "ActivityTypes" /* 5899 */;
+// Module 18401 (isActivityPermanentCustomStatus)
+import ActivityTypes from "ActivityTypes" /* 5918 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/custom_status/utils/isActivityPermanentCustomStatus.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 17681
-// Function ID: 17682
+// Module ID: 17670
+// Function ID: 17671
 // Name: SyncProfileColorsSetting
-// Dependencies: [5144, 8578, 504, 11737, 1113, 16528, 2]
+// Dependencies: [5171, 8524, 504, 11703, 1113, 16525, 2]
 
-// Module 17681 (SyncProfileColorsSetting)
+// Module 17670 (SyncProfileColorsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8578 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16528 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
+import SettingsConstants from "SettingsConstants" /* 8524 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16525 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

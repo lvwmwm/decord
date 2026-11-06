@@ -1,14 +1,14 @@
-// Module ID: 16929
-// Function ID: 16930
+// Module ID: 16917
+// Function ID: 16918
 // Name: TwoFASetupModalHeader
-// Dependencies: [19, 17, 21, 5143, 575, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 2]
 
-// Module 16929 (TwoFASetupModalHeader)
+// Module 16917 (TwoFASetupModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;

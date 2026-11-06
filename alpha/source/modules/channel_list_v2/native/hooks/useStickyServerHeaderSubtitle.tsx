@@ -1,12 +1,12 @@
-// Module ID: 18477
-// Function ID: 18478
+// Module ID: 18467
+// Function ID: 18468
 // Name: useStickyServerHeaderSubtitle
-// Dependencies: [5368, 1072, 504, 2]
+// Dependencies: [5388, 1072, 504, 2]
 // Exports: default
 
-// Module 18477 (useStickyServerHeaderSubtitle)
+// Module 18467 (useStickyServerHeaderSubtitle)
 import Constants from "Constants" /* 1072 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5368 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

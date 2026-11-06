@@ -1,10 +1,10 @@
-// Module ID: 8359
-// Function ID: 8360
+// Module ID: 8305
+// Function ID: 8306
 // Name: ClipsConstants
 // Dependencies: [1089, 3, 2]
 // Exports: CLIP_NAME_TEMPLATE, getClipCropAspectRatio, getClipCropBounds, getDefaultImageTrackWidthFraction, snapTrackRotationDeg
 
-// Module 8359 (ClipsConstants)
+// Module 8305 (ClipsConstants)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import size from "module_2" /* 2 */;
@@ -42,10 +42,8 @@ export const DEFAULT_SAVE_SCREENSHOT_KEYBIND = "f12";
 export const CLIPS_TOAST_DURATION = result2;
 export const ClipsLogger = tmp5;
 export const CURRENT_CLIP_METADATA_VERSION = 6;
-export const CLIPS_HARDWARE_CLASSIFICATION_VERSION = 2;
+export const CLIPS_HARDWARE_CLASSIFICATION_VERSION = 3;
 export const CLIPS_DEFAULT_SETTINGS_VERSION = 1;
-export const WINDOWS_HARDWARE_MINIMUM_GPU_REGEX = /(NVIDIA GeForce GTX (98|10|16).*|Radeon RX 5(500|600|).*|Radeon RX5.*)/;
-export const WINDOWS_HARDWARE_AUTO_ENABLE_GPU_REGEX = /(NVIDIA GeForce (RTX (20|30|40|50).*))|(.*Radeon RX (57|58|59|6|7|9).*)/;
 export const MIN_CLIP_DURATION_SECONDS = 0.1;
 export const CLIPS_EDIT_MODAL_KEY = "clips-edit";
 export const CLIPS_GALLERY_MODAL_KEY = "clips-gallery";

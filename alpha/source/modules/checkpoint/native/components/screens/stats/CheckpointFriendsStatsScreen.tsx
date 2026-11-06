@@ -1,33 +1,33 @@
-// Module ID: 13911
-// Function ID: 13912
+// Module ID: 13887
+// Function ID: 13888
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5144, 1385, 13668, 6204, 21, 1357, 5143, 575, 1411, 504, 13912, 13913, 13876, 5197, 6572, 5285, 13878, 1113, 3219, 3187, 5852, 13897, 8789, 13881, 12178, 13914, 13670, 5848, 1187, 13666, 10742, 7490, 13597, 5866, 2]
+// Dependencies: [5, 32, 19, 17, 5171, 1385, 13643, 6224, 21, 1357, 5170, 575, 1411, 504, 13888, 13889, 13851, 5224, 6592, 5305, 13853, 1113, 3248, 3216, 5870, 13872, 8735, 13856, 12147, 13890, 13645, 5866, 1187, 13641, 10694, 7435, 13572, 5884, 2]
 // Exports: default
 
-// Module 13911 (CheckpointFriendsStatsScreen)
+// Module 13887 (CheckpointFriendsStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
-import _modDef3187 from "module_3187" /* 3187 */;
-import FriendsIcon from "FriendsIcon" /* 5852 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
-import ChatIcon from "ChatIcon" /* 8789 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10742 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 12178 */;
-import Tracking from "Tracking" /* 13666 */;
-import CheckpointTextDefault from "CheckpointText" /* 13878 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13881 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13897 */;
+import _modDef3216 from "module_3216" /* 3216 */;
+import FriendsIcon from "FriendsIcon" /* 5870 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7435 */;
+import ChatIcon from "ChatIcon" /* 8735 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10694 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 12147 */;
+import Tracking from "Tracking" /* 13641 */;
+import CheckpointTextDefault from "CheckpointText" /* 13853 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 13856 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 13872 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import UserStore from "UserStore" /* 1385 */;
-import CheckpointStore from "CheckpointStore" /* 13668 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
+import CheckpointStore from "CheckpointStore" /* 13643 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ function FriendsHeader(title) {
   const obj5 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp2 = CheckpointTextDefault;
   const intl = intl6.intl;
-  stringResult = intl.string(_modDef3187.ZQakPR);
+  stringResult = intl.string(_modDef3216.ZQakPR);
   items[1] = map1(tmp2, obj5);
   items1 = [authStore3(metroImportDefault, obj3), ];
   const obj6 = { children: title.toLocaleUpperCase() };
@@ -84,10 +84,10 @@ function SidekickStats(sidekick) {
   const rounded = Math.round(sidekick.numMessagesSent);
   const rounded1 = Math.round(sidekick.numVoiceMinutes);
   const intl = intl6.intl;
-  const stringResult = intl.string(_modDef3187.wWKySP);
+  const stringResult = intl.string(_modDef3216.wWKySP);
   const intl2 = intl6.intl;
   const obj = { style: tmp.stats, children: items1 };
-  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3187.UZbUtl, { numMinutes: rounded1 });
+  const formatToPlainStringResult = intl2.formatToPlainString(_modDef3216.UZbUtl, { numMinutes: rounded1 });
   const obj2 = { accessible: true, accessibilityLabel: "" + rounded + " " + stringResult.toLocaleLowerCase(), style: tmp.stat, children: items };
   items = [, ];
   const obj3 = { size: "md", color: CHECKPOINT_PRIMARY };
@@ -220,7 +220,7 @@ function SidekickMessageInput(user) {
   [tmp7, c4] = _slicedToArray(react.useState(false), 2);
   let tmp10 = null != value;
   const tmp6 = _slicedToArray(react.useState(false), 2);
-  const tmp9 = value(13914)(user.id);
+  const tmp9 = value(13890)(user.id);
   if (tmp10) {
     tmp10 = value.length > 0;
   }
@@ -267,7 +267,7 @@ function SidekickMessageInput(user) {
         },
       accessibilityRole: "button",
       accessibilityLabel: intl2.string(tmp15(1113).t.Ve9Ge6),
-      children: tmp14(tmp15(13597).GiftIcon, obj6)
+      children: tmp14(tmp15(13572).GiftIcon, obj6)
     };
     intl2 = tmp15(1113).intl;
     obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
@@ -281,7 +281,7 @@ function SidekickMessageInput(user) {
       accessibilityRole: "button",
       accessibilityLabel: intl3.string(user(1113).t.oeb1vg),
       accessibilityState: obj8,
-      children: closure_13(user(5866).SendMessageIcon, obj9)
+      children: closure_13(user(5884).SendMessageIcon, obj9)
     };
     disabled = undefined;
     const tmp19 = obj;

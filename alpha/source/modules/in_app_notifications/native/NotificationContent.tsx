@@ -1,16 +1,16 @@
-// Module ID: 11272
-// Function ID: 11273
+// Module ID: 11227
+// Function ID: 11228
 // Name: NotificationContent
-// Dependencies: [19, 17, 21, 5143, 575, 11273, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 11228, 2]
 // Exports: default
 
-// Module 11272 (NotificationContent)
+// Module 11227 (NotificationContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import MessageNotificationHeader from "MessageNotificationHeader" /* 11273 */;
+import MessageNotificationHeader from "MessageNotificationHeader" /* 11228 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const MessageNotificationHeaderDefault = MessageNotificationHeader;

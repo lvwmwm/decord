@@ -1,11 +1,11 @@
-// Module ID: 8831
-// Function ID: 8832
+// Module ID: 8777
+// Function ID: 8778
 // Name: ChannelLinkUrls
-// Dependencies: [32, 5790, 2]
+// Dependencies: [32, 5808, 2]
 // Exports: parseChannelLinkUrl
 
-// Module 8831 (ChannelLinkUrls)
-import LinkUtils from "LinkUtils" /* 5790 */;
+// Module 8777 (ChannelLinkUrls)
+import LinkUtils from "LinkUtils" /* 5808 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -17,9 +17,9 @@ export function parseChannelLinkUrl(url) {
   const match = MEDIA_POST_URL_RE.exec(url);
   if (null != match) {
     const tmp6 = _slicedToArray(match, 5);
-    return { guildId: tmp6[1], channelId: tmp6[3], messageId: tmp6[4], parentChannelId: tmp6[2], conversationId: "filter" };
+    return { guildId: tmp6[1], channelId: tmp6[3], messageId: tmp6[4], parentChannelId: tmp6[2], conversationId: "fileBytes" };
   } else {
-    const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = tmp(5790).CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE;
+    const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = tmp(5808).CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE;
     const match1 = CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE.exec(url);
     if (null == match1) {
       return null;

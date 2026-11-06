@@ -1,18 +1,18 @@
-// Module ID: 13924
-// Function ID: 13925
+// Module ID: 13900
+// Function ID: 13901
 // Name: TraitOptionDetails
-// Dependencies: [19, 17, 21, 5143, 575, 6250, 1113, 3219, 5763, 10092, 7490, 6571, 13925, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 6270, 1113, 3248, 5781, 10043, 7435, 6591, 13901, 2]
 // Exports: default
 
-// Module 13924 (TraitOptionDetails)
+// Module 13900 (TraitOptionDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3219 from "module_3219" /* 3219 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import RarityBadgeDefault from "RarityBadge" /* 13925 */;
+import _modDef3248 from "module_3248" /* 3248 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import RarityBadgeDefault from "RarityBadge" /* 13901 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -53,7 +53,7 @@ function AssetDescription(asset) {
               return React3(Text_Text.Text, obj, arg1);
             }
       };
-      formatResult = intl.format(_modDef3219["3Wq/bk"], obj);
+      formatResult = intl.format(_modDef3248["3Wq/bk"], obj);
     } else {
       const tmp2Result = require("CheckpointCustomizationUtils");
       formatResult = tmp2Result.getPlaintextAssetDescription(asset);

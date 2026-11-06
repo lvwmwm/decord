@@ -1,23 +1,23 @@
-// Module ID: 19717
-// Function ID: 19718
+// Module ID: 19723
+// Function ID: 19724
 // Name: AudioSessionModeManager
-// Dependencies: [17, 4991, 6895, 6852, 502, 4992, 2135, 5046, 5815, 2122, 1072, 1377, 19718, 7426, 2]
+// Dependencies: [17, 5018, 6837, 6794, 502, 5019, 2130, 5073, 5833, 2117, 1072, 1377, 19724, 7373, 2]
 
-// Module 19717 (AudioSessionModeManager)
+// Module 19723 (AudioSessionModeManager)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
-import VoicePermissionManager from "VoicePermissionManager" /* 19718 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6895 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6852 */;
+import VoicePermissionManager from "VoicePermissionManager" /* 19724 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6837 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6794 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
-import VoiceStateStore from "VoiceStateStore" /* 5815 */;
-import AppStateStore from "AppStateStore" /* 2122 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import AppStateStore from "AppStateStore" /* 2117 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
 import size from "module_2" /* 2 */;
 
 let map;

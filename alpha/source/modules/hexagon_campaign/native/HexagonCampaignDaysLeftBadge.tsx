@@ -1,21 +1,21 @@
-// Module ID: 16746
-// Function ID: 16747
+// Module ID: 16742
+// Function ID: 16743
 // Name: HexagonCampaignDaysLeftBadge
-// Dependencies: [19, 17, 1385, 5168, 21, 1089, 5143, 575, 504, 5170, 7769, 5209, 5150, 5763, 5877, 1113, 4414, 2]
+// Dependencies: [19, 17, 1385, 5195, 21, 1089, 5170, 575, 504, 5197, 7723, 5229, 5177, 5781, 5895, 1113, 4441, 2]
 // Exports: default, useHexagonCampaignDaysLeft
 
-// Module 16746 (HexagonCampaignDaysLeftBadge)
+// Module 16742 (HexagonCampaignDaysLeftBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1089 */;
-import shared from "shared" /* 5150 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5168 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5170 */;
-import native from "native" /* 5209 */;
+import shared from "shared" /* 5177 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5197 */;
+import native from "native" /* 5229 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,8 +28,8 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5763);
-const f111309 = () => {
+const Text_Text = tmp2(5781);
+const f111500 = () => {
   currentUser = currentUser.getCurrentUser();
   let premiumType;
   if (currentUser != null) {
@@ -107,7 +107,7 @@ export default function HexagonCampaignDaysLeftBadge(perk) {
   const variant = perk.variant;
   let obj = perk(504);
   let items = [UserStore];
-  const stateFromStores = obj.useStateFromStores(items, f111309);
+  const stateFromStores = obj.useStateFromStores(items, f111500);
   const items1 = [perk, stateFromStores];
   const memo = react.useMemo(() => {
     let hexagonCampaignPerkCutoffMs;
@@ -126,7 +126,7 @@ export default function HexagonCampaignDaysLeftBadge(perk) {
     }
     return hexagonCampaignPerkCutoffMs;
   }, items1);
-  const tmp6 = stateFromStores(7769)(memo, closure_8);
+  const tmp6 = stateFromStores(7723)(memo, closure_8);
   let num = 0;
   const days = tmp6.days;
   let _Math = Math;
@@ -141,7 +141,7 @@ export default function HexagonCampaignDaysLeftBadge(perk) {
       const obj = { size: "xxs", color };
       return closure_1_6(perk(dependencyMap[14]).ClockIcon, obj);
     },
-    text: intl.formatToPlainString(tmp5(4414)["noGK/D"], { days: maxResult })
+    text: intl.formatToPlainString(tmp5(4441)["noGK/D"], { days: maxResult })
   };
   maxResult = max(days + num, 1);
   intl = tmp(1113).intl;
@@ -152,7 +152,7 @@ export function useHexagonCampaignDaysLeft(arg0) {
   _require = arg0;
   const items = [UserStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f111309);
+  const stateFromStores = obj.useStateFromStores(items, f111500);
   const items1 = [arg0, stateFromStores];
   const memo = react.useMemo(() => {
     let hexagonCampaignPerkCutoffMs;
@@ -171,7 +171,7 @@ export function useHexagonCampaignDaysLeft(arg0) {
     }
     return hexagonCampaignPerkCutoffMs;
   }, items1);
-  const tmp3 = stateFromStores(7769)(memo, closure_8);
+  const tmp3 = stateFromStores(7723)(memo, closure_8);
   let num = 0;
   const days = tmp3.days;
   const _Math = Math;

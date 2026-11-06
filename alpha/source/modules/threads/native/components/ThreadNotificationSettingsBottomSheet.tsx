@@ -1,13 +1,13 @@
-// Module ID: 11337
-// Function ID: 11338
+// Module ID: 11292
+// Function ID: 11293
 // Name: ThreadNotificationSettingsBottomSheet
-// Dependencies: [1112, 21, 7030, 7504, 7460, 1113, 7202, 8347, 7205, 2]
+// Dependencies: [1112, 21, 6972, 7449, 7405, 1113, 7149, 8292, 7152, 2]
 // Exports: default
 
-// Module 11337 (ThreadNotificationSettingsBottomSheet)
+// Module 11292 (ThreadNotificationSettingsBottomSheet)
 import Fragment from "Fragment" /* 21 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8347 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8292 */;
 import size from "module_2" /* 2 */;
 
 let setting;
@@ -21,11 +21,11 @@ export default function ThreadNotificationsBottomSheet(channel) {
   let intl;
   let intl2;
   channel = channel.channel;
-  let obj = channel(7030);
+  let obj = channel(6972);
   const threadNotificationSetting = obj.useThreadNotificationSetting(channel);
-  const ActionSheet = channel(7504).ActionSheet;
+  const ActionSheet = channel(7449).ActionSheet;
   ({ title: intl.string(channel(1113).t.h850Ss) });
-  const BottomSheetTitleHeader = channel(7460).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = channel(7405).BottomSheetTitleHeader;
   intl = channel(1113).intl;
   ({
     hasIcons: false,
@@ -42,7 +42,7 @@ export default function ThreadNotificationsBottomSheet(channel) {
       return jsx(channel(dependencyMap[8]).TableRadioRow, { value: setting, label }, "" + setting);
     })
   });
-  const TableRadioGroup = channel(7202).TableRadioGroup;
+  const TableRadioGroup = channel(7149).TableRadioGroup;
   intl2 = channel(1113).intl;
   arr = closure_3();
   return <ActionSheet header={null}>{null}</ActionSheet>;

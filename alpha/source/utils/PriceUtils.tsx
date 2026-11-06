@@ -1,16 +1,16 @@
-// Module ID: 7555
-// Function ID: 7556
+// Module ID: 7500
+// Function ID: 7501
 // Name: PriceUtils
-// Dependencies: [2191, 1387, 1083, 1377, 7556, 1113, 2]
+// Dependencies: [2186, 1387, 1083, 1377, 7501, 1113, 2]
 // Exports: formatDualPriceForBG, formatPercent, formatPrice, formatRate, maybeShortenPrice, shortenAndFormatPrice
 
-// Module 7555 (PriceUtils)
+// Module 7500 (PriceUtils)
 import Constants from "Constants" /* 1083 */;
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import utils_PriceUtils from "utils/PriceUtils" /* 7556 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
+import utils_PriceUtils from "utils/PriceUtils" /* 7501 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import size from "module_2" /* 2 */;
 
 function formatSingleCurrencyPrice(result, BGN, localeOverride) {

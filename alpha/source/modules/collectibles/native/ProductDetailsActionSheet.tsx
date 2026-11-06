@@ -1,30 +1,30 @@
-// Module ID: 8894
-// Function ID: 8895
+// Module ID: 8840
+// Function ID: 8841
 // Name: ProductDetailsActionSheet
-// Dependencies: [32, 19, 17, 7865, 1074, 1072, 1083, 21, 3, 5143, 575, 5776, 5209, 5150, 1113, 7242, 2116, 8895, 8896, 8893, 7876, 10096, 15256, 15257, 7465, 7490, 15258, 15259, 9615, 6166, 1260, 1252, 504, 15260, 9679, 9682, 7877, 9684, 9685, 15261, 15264, 5402, 9687, 9722, 15265, 15275, 15285, 1187, 15286, 15301, 5398, 9736, 10790, 9704, 10097, 8951, 5770, 15304, 8891, 2]
+// Dependencies: [32, 19, 17, 7819, 1074, 1072, 1083, 21, 3, 5170, 575, 5794, 5229, 5177, 1113, 7189, 2111, 8841, 8842, 8839, 7830, 10047, 15250, 15251, 7410, 7435, 15252, 15253, 9561, 6186, 1260, 1252, 504, 15254, 9628, 9631, 7831, 9633, 9634, 15255, 15258, 5422, 9636, 9671, 15259, 15269, 15279, 1187, 15280, 15295, 5418, 9685, 10742, 9653, 10048, 8897, 5788, 15298, 8837, 2]
 // Exports: default
 
-// Module 8894 (ProductDetailsActionSheet)
+// Module 8840 (ProductDetailsActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5398 */;
-import ButtonConstants from "ButtonConstants" /* 5776 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7876 */;
-import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 8891 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9615 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9704 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5418 */;
+import ButtonConstants from "ButtonConstants" /* 5794 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7830 */;
+import ShopStandalonePdpMobileExperiment from "ShopStandalonePdpMobileExperiment" /* 8837 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9561 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9653 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7865 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7819 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
-import native_mod from "native" /* 5209 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import native_mod from "native" /* 5229 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -56,9 +56,9 @@ function PreviewProfileTrigger(handlePreviewPress) {
   const onTrackPress = handlePreviewPress.onTrackPress;
   const tmp = closure_19();
   dependencyMap = tmp;
-  const obj = handlePreviewPress(5209);
+  const obj = handlePreviewPress(5229);
   const theme = obj.useThemeContext().theme;
-  const obj2 = handlePreviewPress(5150);
+  const obj2 = handlePreviewPress(5177);
   const isThemeLightResult = obj2.isThemeLight(theme);
   let closure_3 = theme === ThemeTypes.ONYX;
   react = isThemeLightResult ? tmp.previewProfileButtonLight : tmp.previewProfileButtonDark;
@@ -84,7 +84,7 @@ function PreviewProfileTrigger(handlePreviewPress) {
   };
   intl = tmp2(1113).intl;
   obj4 = { size: "md", color: onTrackPress(575).colors.INTERACTIVE_ICON_DEFAULT };
-  EyeIcon = tmp2(7242).EyeIcon;
+  EyeIcon = tmp2(7189).EyeIcon;
   return closure_14(closure_7, obj3);
 }
 function ProductDetailsActionSheetContent(product) {
@@ -117,7 +117,7 @@ function ProductDetailsActionSheetContent(product) {
   let tmp55;
   let tmp57;
   let type;
-  const f94218 = () => {
+  const f94314 = () => {
     let tmp;
     if (closure_6) {
       const first = require.items[0];
@@ -258,8 +258,8 @@ function ProductDetailsActionSheetContent(product) {
   }, items3);
   const tmp39 = product.type === require("CollectiblesItemType").CollectiblesItemType.BUNDLE;
   closure_6 = tmp39;
-  [type, c7] = selectedProduct(obj2.useState(f94218), 2);
-  selectedProduct(obj2.useState(f94218), 2);
+  [type, c7] = selectedProduct(obj2.useState(f94314), 2);
+  selectedProduct(obj2.useState(f94314), 2);
   const tmp41 = c5((type) => {
     _undefined(type);
     _undefined2(type.type);
@@ -463,12 +463,12 @@ function ManagedProductDetailsActionSheetInner(skuId) {
   let ref1;
   const tmp = skuId;
   ({ analyticsLocations, stageCollectibleChangeForEditProfile } = skuId);
-  let obj = skuId(9736);
+  let obj = skuId(9685);
   const collectiblesShopProduct = obj.useCollectiblesShopProduct(skuId, { needsCategory: false, seedCategoryStore: true });
   const product = collectiblesShopProduct.product;
   dependencyMap = product;
   ({ state, retry } = collectiblesShopProduct);
-  const obj2 = skuId(10790);
+  const obj2 = skuId(10742);
   const getOrFetchPurchases = obj2.useGetOrFetchPurchases();
   let items = [product];
   ({ hasPreviouslyFetched, fetchPurchasesError } = getOrFetchPurchases);
@@ -483,7 +483,7 @@ function ManagedProductDetailsActionSheetInner(skuId) {
     }
     return googleSkuIds;
   }, items);
-  const obj4 = initialVariantIndex(10097);
+  const obj4 = initialVariantIndex(10048);
   set = obj4.useLoadedGoogleSkuIds(obj3);
   const everyResult = obj3.every((item) => set.has(item));
   const ref = ref1.useRef(null);
@@ -520,22 +520,22 @@ function ManagedProductDetailsActionSheetInner(skuId) {
           ref,
           children: tmp11
         };
-        return tmp10(tmp(5398).BottomSheet, obj6);
+        return tmp10(tmp(5418).BottomSheet, obj6);
       }
     }
   }
   if ("error" === state) {
-    const obj7 = { Illustration: tmp(8951).NoResults, body: intl.string(tmp(1113).t.eAn6z2), children: closure_14(Button, obj8) };
+    const obj7 = { Illustration: tmp(8897).NoResults, body: intl.string(tmp(1113).t.eAn6z2), children: closure_14(Button, obj8) };
     const EmptyState = tmp(1187).EmptyState;
     intl = tmp(1113).intl;
     obj8 = { text: intl2.string(tmp(1113).t["+hivLW"]), onPress: retry };
-    Button = tmp(5770).Button;
+    Button = tmp(5788).Button;
     intl2 = tmp(1113).intl;
     tmp11 = closure_14(EmptyState, obj7);
     tmp10 = closure_14;
   } else {
     tmp10 = closure_14;
-    tmp11 = closure_14(tmp5(15304), {});
+    tmp11 = closure_14(tmp5(15298), {});
   }
 }
 function ProductDetailsActionSheetWithOrderCTX(skuId) {

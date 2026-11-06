@@ -1,16 +1,16 @@
-// Module ID: 20330
-// Function ID: 20331
+// Module ID: 20337
+// Function ID: 20338
 // Name: useInviteAssignableRoles
-// Dependencies: [19, 5050, 5049, 5075, 1385, 1072, 504, 5080, 2]
+// Dependencies: [19, 5077, 5076, 5102, 1385, 1072, 504, 5107, 2]
 // Exports: default
 
-// Module 20330 (useInviteAssignableRoles)
+// Module 20337 (useInviteAssignableRoles)
 import Constants from "Constants" /* 1072 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 5050 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5080 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 5077 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
 import react from "react" /* 19 */;
-import GuildRoleStore from "GuildRoleStore" /* 5049 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import GuildRoleStore from "GuildRoleStore" /* 5076 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

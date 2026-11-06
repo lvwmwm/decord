@@ -1,15 +1,15 @@
-// Module ID: 10940
-// Function ID: 10941
+// Module ID: 10892
+// Function ID: 10893
 // Name: PresenceActivityStatus
-// Dependencies: [19, 21, 8028, 10941, 9883, 8824, 5899, 10942, 10936, 10943, 10935, 10938, 2]
+// Dependencies: [19, 21, 7982, 10893, 9833, 8770, 5918, 10894, 10888, 10895, 10887, 10890, 2]
 // Exports: default
 
-// Module 10940 (PresenceActivityStatus)
-import ActivityTypes from "ActivityTypes" /* 5899 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8028 */;
-import AppsIcon from "AppsIcon" /* 8824 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10941 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10943 */;
+// Module 10892 (PresenceActivityStatus)
+import ActivityTypes from "ActivityTypes" /* 5918 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7982 */;
+import AppsIcon from "AppsIcon" /* 8770 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10893 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 10895 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -46,19 +46,19 @@ export default function PresenceActivityStatus(hideText) {
     const obj = conjurePresenceActivity;
     if (!obj.isConjurePresenceActivity(activity)) {
       if (activity.type === ActivityTypes.ActivityTypes.PLAYING) {
-        GameControllerIcon = tmp3(9883).GameControllerIcon;
+        GameControllerIcon = tmp3(9833).GameControllerIcon;
       } else if (activity.type === ActivityTypes.ActivityTypes.LISTENING) {
-        GameControllerIcon = tmp3(10942).MusicIcon;
+        GameControllerIcon = tmp3(10894).MusicIcon;
       } else {
         if (activity.type !== ActivityTypes.ActivityTypes.WATCHING) {
           if (activity.type !== ActivityTypes.ActivityTypes.STREAMING) {
             GameControllerIcon = null;
             if (activity.type === ActivityTypes.ActivityTypes.COMPETING) {
-              GameControllerIcon = tmp3(9883).GameControllerIcon;
+              GameControllerIcon = tmp3(9833).GameControllerIcon;
             }
           }
         }
-        GameControllerIcon = tmp3(10936).TvIcon;
+        GameControllerIcon = tmp3(10888).TvIcon;
       }
     }
     let tmp7 = !hideIcon;
@@ -69,13 +69,13 @@ export default function PresenceActivityStatus(hideText) {
     }
     if (tmp7) {
       const obj2 = { icon: GameControllerIcon, style: iconStyle };
-      tmp7 = _false(tmp(10935), obj2);
+      tmp7 = _false(tmp(10887), obj2);
     }
     const items = [tmp7, ];
     let tmp10 = !flag;
     if (tmp10) {
       const obj3 = { style: textStyle, maxFontSizeMultiplier, children: text };
-      tmp10 = _false(tmp(10938), obj3);
+      tmp10 = _false(tmp(10890), obj3);
     }
     const obj4 = { children: items };
     items[1] = tmp10;

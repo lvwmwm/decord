@@ -1,18 +1,18 @@
-// Module ID: 11654
-// Function ID: 11655
+// Module ID: 11616
+// Function ID: 11617
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1385, 21, 5143, 5724, 575, 504, 1113, 7142, 11653, 11655, 7309, 11679, 2]
+// Dependencies: [19, 1385, 21, 5170, 5744, 575, 504, 1113, 7089, 11615, 11617, 7256, 11645, 2]
 // Exports: default
 
-// Module 11654 (BadgeDirectoryScreen)
+// Module 11616 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5724 */;
-import NavigatorHeader from "NavigatorHeader" /* 7142 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11653 */;
+import NavigatorConstants from "NavigatorConstants" /* 5744 */;
+import NavigatorHeader from "NavigatorHeader" /* 7089 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 11615 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, dependencyMap;
@@ -89,14 +89,14 @@ export default function BadgeDirectoryScreen(targetUserId) {
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(11653);
+      const tmp2Result = targetUserId(11615);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
-        tmp9Result = tmp9(tmp2(7309).Navigator, obj4);
+        tmp9Result = tmp9(tmp2(7256).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(11679).Modal, obj5);
+        tmp9Result = tmp9(tmp2(11645).Modal, obj5);
       }
       return tmp9Result;
     }

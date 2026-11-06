@@ -1,9 +1,9 @@
-// Module ID: 16531
-// Function ID: 16532
+// Module ID: 16528
+// Function ID: 16529
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 6706, 4996, 502, 4992, 2135, 5901, 5085, 5046, 1385, 5815, 5904, 1072, 5905, 3, 16532, 572, 16533, 1252, 5897, 7490, 6844, 11, 7629, 6053, 10396, 1266, 16534, 5788, 7627, 1377, 2125, 2]
+// Dependencies: [5, 32, 17, 6648, 5023, 502, 5019, 2130, 5920, 5112, 5073, 1385, 5833, 5923, 1072, 5924, 3, 16529, 572, 16530, 1252, 5916, 7435, 6786, 11, 7574, 6073, 10348, 1266, 16531, 5806, 7572, 1377, 2120, 2]
 
-// Module 16531 (SystemTelecomManager)
+// Module 16528 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -11,33 +11,33 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import v1 from "v1" /* 1266 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import ChannelRecord from "ChannelRecord" /* 4996 */;
-import useChannelName from "useChannelName" /* 5788 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5897 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6053 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6844 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7627 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7629 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10396 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16533 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 16534 */;
+import ChannelRecord from "ChannelRecord" /* 5023 */;
+import useChannelName from "useChannelName" /* 5806 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5916 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 6073 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6786 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7435 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7572 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7574 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 10348 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16530 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 16531 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6648 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5901 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5815 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5904 */;
+import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5923 */;
 import Constants_mod from "Constants" /* 1072 */;
-import Constants_mod2 from "Constants" /* 5905 */;
-import react_native2 from "react-native" /* 16532 */;
-import LifecycleManager from "LifecycleManager" /* 2125 */;
+import Constants_mod2 from "Constants" /* 5924 */;
+import react_native2 from "react-native" /* 16529 */;
+import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5;

@@ -1,17 +1,17 @@
-// Module ID: 20150
-// Function ID: 20151
+// Module ID: 20157
+// Function ID: 20158
 // Name: EnableCommunityModalActionCreators
-// Dependencies: [9227, 8649, 9226, 6882, 20151, 2123, 2]
+// Dependencies: [9173, 8595, 9172, 6824, 20158, 2118, 2]
 
-// Module 20150 (EnableCommunityModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2123 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8649 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9226 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9227 */;
+// Module 20157 (EnableCommunityModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2118 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 8595 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9172 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9173 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ModalActionCreatorsDefault = tmp(6882);
+const ModalActionCreatorsDefault = tmp(6824);
 const CREATE_NEW_CHANNEL_VALUE = PublicGuildsConstants.CREATE_NEW_CHANNEL_VALUE;
 const ENABLED_COMMUNITY_MODAL_KEY = "ENABLED_COMMUNITY_MODAL_KEY";
 let obj = {
@@ -29,7 +29,7 @@ let obj = {
     }
     updateGuild({ rulesChannelId });
     const tmpResult = ModalActionCreatorsDefault;
-    tmpResult.pushLazy(asyncRequire(20151, tmp2.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
+    tmpResult.pushLazy(asyncRequire(20158, tmp2.paths), undefined, ENABLED_COMMUNITY_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

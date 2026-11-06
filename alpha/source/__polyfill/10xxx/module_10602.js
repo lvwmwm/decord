@@ -1,19 +1,19 @@
 // Module ID: 10602
 // Function ID: 10603
-// Dependencies: [41, 42, 93, 95, 98, 10535, 10518]
+// Dependencies: [41, 42, 93, 95, 98, 10463, 10592, 10490, 10594]
 
 // Module 10602
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10518 */;
-import now2 from "now" /* 10535 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10463 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 10592 */;
+import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10594 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import map from "_possibleConstructorReturn" /* 93 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let hasOwnProperty;
-
-let self = this;
+let tmp2;
+const _mod10490 = tmp2(10490);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -29,109 +29,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (!self2) {
-  let tmp3 = globalThis;
-  let _Object = Object;
-  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
-    function get() {
-      return __esModule[closure_1];
-    }
-    let closure_0 = __esModule;
-    let closure_1 = arg2;
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
-    let tmp3 = ownPropertyDescriptor;
-    if (tmp3) {
-      let tmp4;
-      if ("get" in ownPropertyDescriptor) {
-        tmp4 = !__esModule.__esModule;
-      } else {
-        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
-      }
-      tmp3 = !tmp4;
-    }
-    if (!tmp3) {
-      ownPropertyDescriptor = { enumerable: true, get };
-      const obj = { enumerable: true, get };
-    }
-    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
-  }) : ((arg0, arg1, arg2, arg3) => {
-    let tmp = arg3;
-    if (undefined === arg3) {
-      tmp = arg2;
-    }
-    arg0[tmp] = arg1[arg2];
-  });
-}
-let tmp4 = self && self.__setModuleDefault;
-if (!tmp4) {
-  let tmp5 = globalThis;
-  const _Object2 = Object;
-  tmp4 = Object.create ? ((arg0, value) => {
-    const obj = { enumerable: true, value };
-    Object.defineProperty(arg0, "default", obj);
-  }) : ((arg0, arg1) => {
-    arg0.default = arg1;
-  });
-}
-let closure_6 = tmp4;
-let fn = self && self.__importStar;
-if (!fn) {
-  fn = function o(arg0) {
-    fn = Object.getOwnPropertyNames || ((obj) => {
-      const items = [];
-      for (const key10005 in obj) {
-        let _Object = Object;
-        hasOwnProperty = Object.prototype.hasOwnProperty;
-        if (!hasOwnProperty.call(obj, key10005)) {
-          continue;
-        } else {
-          items[items.length] = key10005;
-          continue;
-        }
-        continue;
-      }
-      return items;
-    });
-    return fn(arg0);
-  };
-  fn = (__esModule) => {
-    const tmp = __esModule;
-    if (tmp) {
-      if (__esModule.__esModule) {
-        return __esModule;
-      }
-    }
-    const obj = {};
-    if (null != __esModule) {
-      let num;
-      const arr = fn(__esModule);
-      for (let num = 0; num < arr.length; num = num + 1) {
-        if ("default" !== arr[num]) {
-          let tmp5 = self2(obj, __esModule, arr[num]);
-        }
-      }
-    }
-    closure_6(obj, __esModule);
-    return obj;
-  };
-}
-const now = fn(now2);
-class NLCasualDateParser {
+class RUWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLCasualDateParser);
-    const obj = _getPrototypeOf(NLCasualDateParser);
+    _classCallCheck(this, RUWeekdayParser);
+    const obj = _getPrototypeOf(RUWeekdayParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
+    const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
       constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
@@ -141,38 +46,58 @@ class NLCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(RUWeekdayParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return /(nu|vandaag|morgen|morgend|gisteren)(?=\W|$)/i;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(?:(?:,|\\(|\uFF08)\\s*)?(?:\u0432\\s*?)?(?:(\u044D\u0442\u0443|\u044D\u0442\u043E\u0442|\u043F\u0440\u043E\u0448\u043B\u044B\u0439|\u043F\u0440\u043E\u0448\u043B\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(REGEX_PARTS.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:,|\\)|\uFF09))?(?:\\s*\u043D\u0430\\s*(\u044D\u0442\u043E\u0439|\u043F\u0440\u043E\u0448\u043B\u043E\u0439|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439)\\s*\u043D\u0435\u0434\u0435\u043B\u0435)?";
   }
 };
-let items = [
+const items = [
   entry,
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const str = arg1[0];
+      const str = arg1[2];
       const formatted = str.toLowerCase();
-      if ("nu" === formatted) {
-        return now.now(reference.reference);
-      } else if ("vandaag" === formatted) {
-        return now.today(reference.reference);
-      } else {
-        if ("morgen" !== formatted) {
-          if ("morgend" !== formatted) {
-            if ("gisteren" === formatted) {
-              return now.yesterday(reference.reference);
-            } else {
-              return tmp2;
+      let str2 = arg1[1];
+      const tmp4 = REGEX_PARTS.WEEKDAY_DICTIONARY[formatted];
+      if (!str2) {
+        str2 = arg1[3];
+      }
+      if (!str2) {
+        str2 = "";
+      }
+      const formatted1 = str2.toLowerCase();
+      let str3 = "last";
+      if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0439" != formatted1) {
+        str3 = "last";
+        if ("\u043F\u0440\u043E\u0448\u043B\u0443\u044E" != formatted1) {
+          str3 = "last";
+          if ("\u043F\u0440\u043E\u0448\u043B\u043E\u0439" != formatted1) {
+            str3 = "next";
+            if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439" != formatted1) {
+              str3 = "next";
+              if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0443\u044E" != formatted1) {
+                str3 = "next";
+                if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0439" != formatted1) {
+                  str3 = "next";
+                  if ("\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0435\u0433\u043E" != formatted1) {
+                    str3 = null;
+                    const tmp6 = "\u044D\u0442\u043E\u0442" != formatted1 && "\u044D\u0442\u0443" != formatted1 && "\u044D\u0442\u043E\u0439" != formatted1;
+                    if (!tmp6) {
+                      str3 = "this";
+                    }
+                  }
+                }
+              }
             }
           }
         }
-        return now.tomorrow(reference.reference);
       }
+      return _mod10490.createParsingComponentsAtWeekday(reference.reference, tmp4, str3);
     }
   }
 ];
 
-export default _createClass(NLCasualDateParser, items);
+export default _createClass(RUWeekdayParser, items);

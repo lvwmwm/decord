@@ -1,8 +1,8 @@
-// Module ID: 6351
-// Function ID: 6352
+// Module ID: 6371
+// Function ID: 6372
 // Dependencies: [2]
 
-// Module 6351
+// Module 6371
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/outfit/traveler_moss.png.js");

@@ -1,27 +1,27 @@
-// Module ID: 13874
-// Function ID: 13875
+// Module ID: 13849
+// Function ID: 13850
 // Name: CheckpointOverlay
-// Dependencies: [6204, 21, 6572, 13875, 13880, 13886, 12178, 1113, 3219, 13887, 8789, 13893, 9914, 3187, 13896, 13901, 13677, 13902, 9883, 13907, 13908, 13911, 13915, 2]
+// Dependencies: [6224, 21, 6592, 13850, 13855, 13861, 12147, 1113, 3248, 13862, 8735, 13868, 9864, 3216, 13871, 13876, 13652, 13877, 9833, 13882, 13884, 13887, 13891, 2]
 // Exports: default
 
-// Module 13874 (CheckpointOverlay)
+// Module 13849 (CheckpointOverlay)
 import Fragment from "Fragment" /* 21 */;
-import _modDef3187 from "module_3187" /* 3187 */;
-import _modDef3219 from "module_3219" /* 3219 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
-import CheckpointNavigation from "CheckpointNavigation" /* 6572 */;
-import CheckpointWelcomeScreenDefault from "CheckpointWelcomeScreen" /* 13875 */;
-import CheckpointIntroScreenDefault from "CheckpointIntroScreen" /* 13880 */;
-import CheckpointStatsIntroScreenDefault from "CheckpointStatsIntroScreen" /* 13886 */;
-import CheckpointVoiceStatsScreenDefault from "CheckpointVoiceStatsScreen" /* 13887 */;
-import CheckpointMessagesStatsScreenDefault from "CheckpointMessagesStatsScreen" /* 13893 */;
-import CheckpointServersStatsScreenDefault from "CheckpointServersStatsScreen" /* 13896 */;
-import CheckpointTopServerStatsScreenDefault from "CheckpointTopServerStatsScreen" /* 13901 */;
-import CheckpointEmojiStatsScreenDefault from "CheckpointEmojiStatsScreen" /* 13902 */;
-import CheckpointGamesStatsScreenDefault from "CheckpointGamesStatsScreen" /* 13907 */;
-import CheckpointGameTimeStatsScreenDefault from "CheckpointGameTimeStatsScreen" /* 13908 */;
-import CheckpointFriendsStatsScreenDefault from "CheckpointFriendsStatsScreen" /* 13911 */;
-import CheckpointSummaryStatsScreenDefault from "CheckpointSummaryStatsScreen" /* 13915 */;
+import _modDef3216 from "module_3216" /* 3216 */;
+import _modDef3248 from "module_3248" /* 3248 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
+import CheckpointNavigation from "CheckpointNavigation" /* 6592 */;
+import CheckpointWelcomeScreenDefault from "CheckpointWelcomeScreen" /* 13850 */;
+import CheckpointIntroScreenDefault from "CheckpointIntroScreen" /* 13855 */;
+import CheckpointStatsIntroScreenDefault from "CheckpointStatsIntroScreen" /* 13861 */;
+import CheckpointVoiceStatsScreenDefault from "CheckpointVoiceStatsScreen" /* 13862 */;
+import CheckpointMessagesStatsScreenDefault from "CheckpointMessagesStatsScreen" /* 13868 */;
+import CheckpointServersStatsScreenDefault from "CheckpointServersStatsScreen" /* 13871 */;
+import CheckpointTopServerStatsScreenDefault from "CheckpointTopServerStatsScreen" /* 13876 */;
+import CheckpointEmojiStatsScreenDefault from "CheckpointEmojiStatsScreen" /* 13877 */;
+import CheckpointGamesStatsScreenDefault from "CheckpointGamesStatsScreen" /* 13882 */;
+import CheckpointGameTimeStatsScreenDefault from "CheckpointGameTimeStatsScreen" /* 13884 */;
+import CheckpointFriendsStatsScreenDefault from "CheckpointFriendsStatsScreen" /* 13887 */;
+import CheckpointSummaryStatsScreenDefault from "CheckpointSummaryStatsScreen" /* 13891 */;
 import size from "module_2" /* 2 */;
 
 const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
@@ -44,21 +44,21 @@ export default function CheckpointOverlay(route) {
       CheckpointStatsIntroScreenDefault;
       const intl9 = tmp(1113).intl;
       const intl10 = tmp(1113).intl;
-      return <tmp40 icon={null} title={intl9.string(_modDef3219["/7XYsa"])} description={intl10.string(_modDef3219["X8/G/o"])} />;
+      return <tmp40 icon={null} title={intl9.string(_modDef3248["/7XYsa"])} description={intl10.string(_modDef3248["X8/G/o"])} />;
     } else if (CheckpointNavigation.CheckpointStatsScreen.VOICE === statsScreen) {
       return jsx(CheckpointVoiceStatsScreenDefault, {});
     } else if (CheckpointNavigation.CheckpointStatsScreen.MESSAGES_INTRO === statsScreen) {
       CheckpointStatsIntroScreenDefault;
       const intl7 = tmp(1113).intl;
       const intl8 = tmp(1113).intl;
-      return <tmp34 icon={null} title={intl7.string(_modDef3219["2BuyVC"])} description={intl8.string(_modDef3219["kF+Y3a"])} />;
+      return <tmp34 icon={null} title={intl7.string(_modDef3248["2BuyVC"])} description={intl8.string(_modDef3248["kF+Y3a"])} />;
     } else if (CheckpointNavigation.CheckpointStatsScreen.MESSAGES === statsScreen) {
       return jsx(CheckpointMessagesStatsScreenDefault, {});
     } else if (CheckpointNavigation.CheckpointStatsScreen.SERVERS_INTRO === statsScreen) {
       CheckpointStatsIntroScreenDefault;
       const intl5 = tmp(1113).intl;
       const intl6 = tmp(1113).intl;
-      return <tmp28 icon={null} title={intl5.string(_modDef3187.F0fkrh)} description={intl6.string(_modDef3219.Xg82Gy)} />;
+      return <tmp28 icon={null} title={intl5.string(_modDef3216.F0fkrh)} description={intl6.string(_modDef3248.Xg82Gy)} />;
     } else if (CheckpointNavigation.CheckpointStatsScreen.SERVERS === statsScreen) {
       return jsx(CheckpointServersStatsScreenDefault, {});
     } else if (CheckpointNavigation.CheckpointStatsScreen.TOP_SERVER === statsScreen) {
@@ -67,14 +67,14 @@ export default function CheckpointOverlay(route) {
       CheckpointStatsIntroScreenDefault;
       const intl3 = tmp(1113).intl;
       const intl4 = tmp(1113).intl;
-      return <tmp20 icon={null} title={intl3.string(_modDef3219.ZTDCIv)} description={intl4.string(_modDef3219.y8Sr8J)} />;
+      return <tmp20 icon={null} title={intl3.string(_modDef3248.ZTDCIv)} description={intl4.string(_modDef3248.y8Sr8J)} />;
     } else if (CheckpointNavigation.CheckpointStatsScreen.EMOJI === statsScreen) {
       return jsx(CheckpointEmojiStatsScreenDefault, {});
     } else if (CheckpointNavigation.CheckpointStatsScreen.GAMES_INTRO === statsScreen) {
       CheckpointStatsIntroScreenDefault;
       const intl = tmp(1113).intl;
       const intl2 = tmp(1113).intl;
-      return <tmp14 icon={null} title={intl.string(_modDef3219.HM2fjf)} description={intl2.string(_modDef3219.LQiFqJ)} />;
+      return <tmp14 icon={null} title={intl.string(_modDef3248.HM2fjf)} description={intl2.string(_modDef3248.LQiFqJ)} />;
     } else if (CheckpointNavigation.CheckpointStatsScreen.GAMES === statsScreen) {
       return jsx(CheckpointGamesStatsScreenDefault, {});
     } else if (CheckpointNavigation.CheckpointStatsScreen.GAME_TIME === statsScreen) {

@@ -1,24 +1,24 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14052
+// Function ID: 14053
 // Name: NewBadge
-// Dependencies: [19, 17, 21, 5143, 1377, 575, 5150, 9977, 5379, 5763, 1113, 2]
+// Dependencies: [19, 17, 21, 5170, 1377, 575, 5177, 9928, 5399, 5781, 1113, 2]
 // Exports: default
 
-// Module 14075 (NewBadge)
+// Module 14052 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useThemeDefault from "useTheme" /* 5379 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9977 */;
+import useThemeDefault from "useTheme" /* 5399 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9928 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const shared = tmp(5150);
+const shared = tmp(5177);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let closure_5 = createStyles.createStyles((arg0, arg1) => {

@@ -1,9 +1,9 @@
-// Module ID: 9471
-// Function ID: 9472
+// Module ID: 9417
+// Function ID: 9418
 // Name: GameFlags
 // Dependencies: [2]
 
-// Module 9471 (GameFlags)
+// Module 9417 (GameFlags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/GameFlags.tsx");

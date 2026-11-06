@@ -1,18 +1,18 @@
-// Module ID: 17026
-// Function ID: 17027
+// Module ID: 17014
+// Function ID: 17015
 // Name: ActivityPrivacyUpsellUtils
-// Dependencies: [7033, 5368, 5014, 6910, 1196, 7305, 1113, 4968, 2]
+// Dependencies: [6975, 5388, 5041, 6852, 1196, 7252, 1113, 4995, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 17026 (ActivityPrivacyUpsellUtils)
+// Module 17014 (ActivityPrivacyUpsellUtils)
 import intl5 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4968 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7305 */;
-import FrecencyStore from "FrecencyStore" /* 7033 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5368 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import SortedGuildStore from "SortedGuildStore" /* 6910 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7252 */;
+import FrecencyStore from "FrecencyStore" /* 6975 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5388 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import SortedGuildStore from "SortedGuildStore" /* 6852 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -55,7 +55,7 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
           const tmp = obj;
           EXPANDING = obj.EXPANDING;
         }
-        const tmp8Result = tmp8(7305);
+        const tmp8Result = tmp8(7252);
         dependencyMap = tmp8Result.getSanitizedActivityRestrictedGuilds();
         const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
         if (setting !== tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
@@ -356,7 +356,7 @@ export function applyBulkGuildRestrictionChange(direction, affectedGuildIds) {
     const self2 = this;
     const self3 = this;
     const set1 = new Set(items);
-    const ActivityRestrictedGuilds2 = tmp(4968).ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds2 = tmp(4995).ActivityRestrictedGuilds;
     const items1 = [];
     const updateSetting = ActivityRestrictedGuilds2.updateSetting;
     HermesBuiltin.arraySpread(items1, set1, 0);
@@ -365,7 +365,7 @@ export function applyBulkGuildRestrictionChange(direction, affectedGuildIds) {
     const items2 = [];
     HermesBuiltin.arraySpread(items2, sanitizedActivityRestrictedGuilds, 0);
     const found = items2.filter((item) => !set.has(item));
-    const ActivityRestrictedGuilds = tmp(4968).ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = tmp(4995).ActivityRestrictedGuilds;
     ActivityRestrictedGuilds.updateSetting(found);
   }
 }

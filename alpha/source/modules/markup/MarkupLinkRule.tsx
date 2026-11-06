@@ -1,17 +1,17 @@
-// Module ID: 6175
-// Function ID: 6176
+// Module ID: 6195
+// Function ID: 6196
 // Name: MarkupLinkRule
-// Dependencies: [32, 1453, 6176, 6170, 1380, 5885, 1378, 6177, 2072, 12, 2]
+// Dependencies: [32, 1453, 6196, 6190, 1380, 5904, 1378, 6197, 2067, 12, 2]
 
-// Module 6175 (MarkupLinkRule)
+// Module 6195 (MarkupLinkRule)
 import _modDef12 from "module_12" /* 12 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import LRUCacheDefault from "LRUCache" /* 1453 */;
-import _modDef2072 from "module_2072" /* 2072 */;
-import findCodedLinks from "findCodedLinks" /* 5885 */;
-import MarkupTypes from "MarkupTypes" /* 6170 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6176 */;
-import _modDef6177 from "module_6177" /* 6177 */;
+import _modDef2067 from "module_2067" /* 2067 */;
+import findCodedLinks from "findCodedLinks" /* 5904 */;
+import MarkupTypes from "MarkupTypes" /* 6190 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6196 */;
+import _modDef6197 from "module_6197" /* 6197 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -66,28 +66,28 @@ function getRawText(content) {
     let type = nextResult.type;
     let tmp3 = require;
     if (MarkupTypes.AST_KEY.TEXT !== type) {
-      if (tmp3(6170).AST_KEY.INLINE_CODE !== type) {
-        if (tmp3(6170).AST_KEY.CUSTOM_EMOJI === type) {
+      if (tmp3(6190).AST_KEY.INLINE_CODE !== type) {
+        if (tmp3(6190).AST_KEY.CUSTOM_EMOJI === type) {
           str = `${tmp2.name}`;
-        } else if (tmp3(6170).AST_KEY.EMOJI === type) {
+        } else if (tmp3(6190).AST_KEY.EMOJI === type) {
           str = `${tmp2.name}${tmp2.surrogate}`;
-        } else if (tmp3(6170).AST_KEY.LINE_BREAK === type) {
+        } else if (tmp3(6190).AST_KEY.LINE_BREAK === type) {
           str = `${tmp2.name}${tmp2.surrogate}
   `;
         } else {
-          if (tmp3(6170).AST_KEY.STRONG !== type) {
-            if (tmp3(6170).AST_KEY.ITALICS !== type) {
-              if (tmp3(6170).AST_KEY.UNDERLINE !== type) {
-                if (tmp3(6170).AST_KEY.STRIKETHROUGH !== type) {
-                  if (tmp3(6170).AST_KEY.SPOILER !== type) {
-                    if (tmp3(6170).AST_KEY.TIMESTAMP === type) {
+          if (tmp3(6190).AST_KEY.STRONG !== type) {
+            if (tmp3(6190).AST_KEY.ITALICS !== type) {
+              if (tmp3(6190).AST_KEY.UNDERLINE !== type) {
+                if (tmp3(6190).AST_KEY.STRIKETHROUGH !== type) {
+                  if (tmp3(6190).AST_KEY.SPOILER !== type) {
+                    if (tmp3(6190).AST_KEY.TIMESTAMP === type) {
                       str = `${tmp2.name}${tmp2.surrogate}
   <timestamp>`;
                     } else {
-                      if (tmp3(6170).AST_KEY.BLOCK_QUOTE !== type) {
-                        if (tmp3(6170).AST_KEY.LIST !== type) {
-                          if (tmp3(6170).AST_KEY.HEADING !== type) {
-                            if (tmp3(6170).AST_KEY.SUBTEXT !== type) {
+                      if (tmp3(6190).AST_KEY.BLOCK_QUOTE !== type) {
+                        if (tmp3(6190).AST_KEY.LIST !== type) {
+                          if (tmp3(6190).AST_KEY.HEADING !== type) {
+                            if (tmp3(6190).AST_KEY.SUBTEXT !== type) {
                               let tmp3Result = tmp3(1380);
                               let assertNeverResult = tmp3Result.assertNever(tmp2.type);
                             }
@@ -179,7 +179,7 @@ function punycodeLink(assetURL) {
           const error1 = new Error("no hostname");
           throw error1;
         }
-        const obj = _modDef6177;
+        const obj = _modDef6197;
         const str6 = uRL.hostname;
         uRL.hostname = obj.toASCII(str6.toLowerCase());
         uRL.username = "";
@@ -260,7 +260,7 @@ let obj = {
           }
           return null;
         }
-        const str2 = _modDef2072.defaultRules.link;
+        const str2 = _modDef2067.defaultRules.link;
         return str2.match(arr, allowLinks, arg2);
       }
     } else {
@@ -322,7 +322,7 @@ let obj = {
       const trimmed = str3.trim();
       if (0 !== str2.trim().length) {
         if (0 !== trimmed.length) {
-          const obj29 = _modDef2072;
+          const obj29 = _modDef2067;
           const tmp60 = punycodeLink(obj29.unescapeUrl(tmp5));
           if (null != tmp60) {
             const obj30 = findCodedLinks;
@@ -376,7 +376,7 @@ let obj = {
                         const tmp58Result = _modDef12;
                         const pickResult = tmp58Result.pick(rules.rules, tmp29);
                         const obj23 = { content: tmp58Result2.parserFor(pickResult)(value3.whitespaceSanitized, obj13), target: tmp60.target, title: value4.whitespaceSanitized };
-                        tmp58Result2 = _modDef2072;
+                        tmp58Result2 = _modDef2067;
                         return obj23;
                       }
                     }
@@ -396,7 +396,7 @@ let obj = {
     }
   }
 };
-let merged = Object.assign(_modDef2072.defaultRules.link);
+let merged = Object.assign(_modDef2067.defaultRules.link);
 let result = size.fileFinishedImporting("modules/markup/MarkupLinkRule.tsx");
 
 export default obj;

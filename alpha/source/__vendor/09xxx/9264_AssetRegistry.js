@@ -1,0 +1,10 @@
+// Module ID: 9264
+// Function ID: 9265
+// Name: AssetRegistry
+// Dependencies: [1119]
+
+// Module 9264 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1119 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/settings", width: 24, height: 24, scales: [2, 3], hash: "4a465b7b889dd2efb6716569375c3825", name: "ic_qr_code_24px", type: "png" });

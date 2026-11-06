@@ -1,83 +1,140 @@
 // Module ID: 13345
 // Function ID: 13346
-// Dependencies: [13305, 13338]
-// Exports: makePromiseBuffer
+// Dependencies: [13311, 13262, 13300, 13261, 13264, 13283, 13255]
 
 // Module 13345
-import _mod13305 from "module_13305" /* 13305 */;
+import _mod13261 from "module_13261" /* 13261 */;
+import _mod13262 from "module_13262" /* 13262 */;
+import module_13311 from "module_13311" /* 13311 */;
 
-let diff;
 
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
-        }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod13305;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
+export const extraErrorDataIntegration = module_13311.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
+  }
+  let closure_1;
+  const depth = obj.depth;
+  let num = 3;
+  if (undefined !== depth) {
+    num = depth;
+  }
+  const captureErrorCause = obj.captureErrorCause;
+  closure_1 = undefined === captureErrorCause || captureErrorCause;
+  let obj2 = {
+    name: "ExtraErrorData",
+    processEvent(contexts, arg1, getOptions) {
+      function _extractErrorData(originalException, arg1, maxValueLength) {
+        try {
+          const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
+          const obj = {};
+          const _Object = Object;
+          const keys = Object.keys(originalException);
+          const iter = keys[Symbol.iterator]();
+          const nextResult = iter.next();
+          while (iter !== undefined) {
+            let tmp8 = nextResult;
+            if (-1 === items.indexOf(nextResult)) {
+              let tmp11 = originalException[tmp8];
+              let tmp12 = tmp11;
+              let tmp15 = num;
+              let tmp17 = closure_1_1;
+              let obj2 = num(closure_1_1[1]);
+              if (!obj2.isError(tmp11)) {
+                let truncateResult;
+                if (typeof tmp12 !== "string") {
+                  truncateResult = tmp11;
+                }
+                obj[tmp8] = truncateResult;
               }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
+              let tmp15Result = tmp15(tmp17[4]);
+              let _HermesInternal = HermesInternal;
+              truncateResult = tmp15Result.truncate("" + tmp12, maxValueLength);
+            }
+            continue;
+          }
+          const tmp23 = arg1 && undefined !== originalException.cause;
+          if (tmp23) {
+            let str1;
+            const obj4 = -1(closure_1_1[1]);
+            if (obj4.isError(originalException.cause)) {
+              str1 = str2.toString();
+            } else {
+              str1 = str2;
+            }
+            obj.cause = str1;
+          }
+          if (typeof originalException.toJSON === "function") {
+            const toJSONResult = originalException.toJSON();
+            const _Object2 = Object;
+            const keys1 = Object.keys(toJSONResult);
+            const tmp48 = toJSONResult;
+            for (const item10067 of keys1) {
+              let str5;
+              let tmp32 = tmp48[item10067];
+              let str3 = tmp32;
+              let obj5 = num(closure_1_1[1]);
+              if (obj5.isError(tmp32)) {
+                str5 = str3.toString();
+              } else {
+                str5 = str3;
+              }
+              obj[item10067] = str5;
+              continue;
+            }
+          }
+          return obj;
+        } catch (tmp40) {
+          const tmp41 = num;
+          const tmp43 = closure_1_1;
+          if (num(closure_1_1[5]).DEBUG_BUILD) {
+            const logger = tmp41(tmp43[6]).logger;
+            logger.error("Unable to extract extra data from the Error object:", tmp40);
+          }
+          return null;
         }
-      });
-      return syncPromise;
+      }
+      const maxValueLength = getOptions.getOptions().maxValueLength;
+      num = 250;
+      const tmp = num;
+      const tmp2 = closure_1;
+      if (undefined !== maxValueLength) {
+        num = maxValueLength;
+      }
+      let obj = arg1;
+      if (arg1 === undefined) {
+        obj = {};
+      }
+      let tmp3 = contexts;
+      if (obj.originalException) {
+        let obj2 = _mod13262;
+        tmp3 = contexts;
+        if (obj2.isError(obj.originalException)) {
+          const tmp6 = obj.originalException.name || obj.originalException.constructor.name;
+          const tmp7 = _extractErrorData(obj.originalException, tmp2, num);
+          tmp3 = contexts;
+          if (tmp7) {
+            const obj3 = {};
+            let tmp8 = obj3;
+            const merged = Object.assign(contexts.contexts);
+            const normalizer = tmp4(13300);
+            const normalizeResult = normalizer.normalize(tmp7, tmp);
+            const tmp4Result = _mod13262;
+            if (tmp4Result.isPlainObject(normalizeResult)) {
+              const tmp4Result2 = _mod13261;
+              const result = tmp4Result2.addNonEnumerableProperty(normalizeResult, "__sentry_skip_normalization__", true);
+              obj3[tmp6] = normalizeResult;
+            }
+            let obj4 = { contexts: obj3 };
+            let tmp12 = obj4;
+            let tmp13 = contexts;
+            const merged1 = Object.assign(contexts);
+            tmp3 = obj4;
+          }
+        }
+      }
+      return tmp3;
     }
   };
-  return obj;
-}
+  return obj2;
+});

@@ -1,12 +1,12 @@
-// Module ID: 15104
-// Function ID: 15105
+// Module ID: 15081
+// Function ID: 15082
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1089, 8864, 4987, 2]
+// Dependencies: [32, 19, 1089, 8810, 5014, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 15104 (useActivityTimer)
+// Module 15081 (useActivityTimer)
 import DurationsDefault from "Durations" /* 1089 */;
-import utils from "utils" /* 8864 */;
+import utils from "utils" /* 8810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ export default function useActivityTimer(start) {
   let first;
   importDefault = undefined;
   const end = start.end;
-  const interval = new first(4987).Interval();
+  const interval = new first(5014).Interval();
   first = _slicedToArray(closure_5(interval), 1)[0];
   [first1, importDefault] = closure_5(() => Date.now());
   const items = [first];
@@ -40,13 +40,13 @@ export default function useActivityTimer(start) {
   const obj = { elapsed: bound, duration: result, percentage: Math.max(Math.min(bound / result, 1), 0) };
   return obj;
 };
-export function formatTime(arg0) {
+export function formatTime(result1) {
   let combined;
-  const rounded = Math.floor(arg0);
+  const rounded = Math.floor(result1);
   const result = rounded % DurationsDefault.Seconds.MINUTE;
-  const rounded1 = Math.floor(arg0 / DurationsDefault.Seconds.MINUTE);
-  const result1 = rounded1 % DurationsDefault.Seconds.MINUTE;
-  const rounded2 = Math.floor(arg0 / DurationsDefault.Seconds.HOUR);
+  const rounded1 = Math.floor(result1 / DurationsDefault.Seconds.MINUTE);
+  result1 = rounded1 % DurationsDefault.Seconds.MINUTE;
+  const rounded2 = Math.floor(result1 / DurationsDefault.Seconds.HOUR);
   if (0 === rounded2) {
     const _String4 = String;
     const _String5 = String;
@@ -69,12 +69,12 @@ export function formatTime(arg0) {
   }
   return combined;
 }
-export function formatTimeForA11yLabel(arg0) {
-  const rounded = Math.floor(arg0);
+export function formatTimeForA11yLabel(result1) {
+  const rounded = Math.floor(result1);
   const seconds = rounded % DurationsDefault.Seconds.MINUTE;
-  const rounded1 = Math.floor(arg0 / DurationsDefault.Seconds.MINUTE);
+  const rounded1 = Math.floor(result1 / DurationsDefault.Seconds.MINUTE);
   const minutes = rounded1 % DurationsDefault.Seconds.MINUTE;
-  const hours = Math.floor(arg0 / DurationsDefault.Seconds.HOUR);
+  const hours = Math.floor(result1 / DurationsDefault.Seconds.HOUR);
   const obj = utils;
   return obj.formatTimestampToA11yLabel({ hours, minutes, seconds });
 }

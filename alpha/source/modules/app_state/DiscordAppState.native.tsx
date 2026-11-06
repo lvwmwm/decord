@@ -1,11 +1,11 @@
-// Module ID: 7010
-// Function ID: 7011
+// Module ID: 6952
+// Function ID: 6953
 // Name: DiscordAppState
-// Dependencies: [2122, 504, 2]
+// Dependencies: [2117, 504, 2]
 
-// Module 7010 (DiscordAppState)
+// Module 6952 (DiscordAppState)
 import get_initialized from "get initialized" /* 504 */;
-import AppStateStore from "AppStateStore" /* 2122 */;
+import AppStateStore from "AppStateStore" /* 2117 */;
 import size from "module_2" /* 2 */;
 
 let obj = {

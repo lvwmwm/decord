@@ -1,23 +1,23 @@
-// Module ID: 15207
-// Function ID: 15208
+// Module ID: 15201
+// Function ID: 15202
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1072, 21, 1113, 5143, 575, 5763, 6179, 12, 7627, 5384, 5770, 7705, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 1113, 5170, 575, 5781, 6199, 12, 7572, 5404, 5788, 7658, 2]
 
-// Module 15207 (UserProfileActivityEmptyStates)
+// Module 15201 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import components_Button_Button from "components/Button/Button" /* 5770 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7627 */;
-import openUserSettings from "openUserSettings" /* 7705 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import components_Button_Button from "components/Button/Button" /* 5788 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7572 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -130,7 +130,7 @@ const memoResult = react.memo(function UserProfileActivityEmptyOtherUser(user) {
   let name;
   ({ guildId, channelId } = user);
   let tmp = closure_10();
-  let obj = name(6179);
+  let obj = name(6199);
   name = obj.getName(guildId, channelId, user);
   const intl = user(1113).intl;
   items = [user.id];
@@ -157,7 +157,7 @@ const memoResult = react.memo(function UserProfileActivityEmptyOtherUser(user) {
     obj3.hideAllActionSheets();
   }, items);
   obj4 = { size: "sm", variant: "secondary", text: intl2.string(user(1113).t["g33r/P"]), onPress: callback };
-  Button = user(5770).Button;
+  Button = user(5788).Button;
   intl2 = user(1113).intl;
   return closure_7(EmptyState, obj2);
 });

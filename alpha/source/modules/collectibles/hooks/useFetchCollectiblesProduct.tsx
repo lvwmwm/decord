@@ -1,16 +1,16 @@
-// Module ID: 11583
-// Function ID: 11584
+// Module ID: 11545
+// Function ID: 11546
 // Name: useFetchCollectiblesProduct
-// Dependencies: [32, 19, 7034, 7865, 1072, 563, 2116, 7864, 2]
+// Dependencies: [32, 19, 6976, 7819, 1072, 563, 2111, 7818, 2]
 // Exports: useFetchCollectiblesProduct
 
-// Module 11583 (useFetchCollectiblesProduct)
+// Module 11545 (useFetchCollectiblesProduct)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7864 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7818 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import SKUStore from "SKUStore" /* 7034 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7865 */;
+import SKUStore from "SKUStore" /* 6976 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7819 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ export function useFetchCollectiblesProduct(skuId, includeBundles) {
     if (product != null) {
       type = product.type;
     }
-    tmp10 = type === tmp(2116).CollectiblesItemType.BUNDLE;
+    tmp10 = type === tmp(2111).CollectiblesItemType.BUNDLE;
   }
   if (tmp10) {
     tmp10 = 0 === product.items.length;

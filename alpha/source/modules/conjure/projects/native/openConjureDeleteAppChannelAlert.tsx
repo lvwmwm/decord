@@ -1,11 +1,11 @@
-// Module ID: 19199
-// Function ID: 19200
+// Module ID: 19191
+// Function ID: 19192
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 13510, 13512, 1113, 3995, 6102, 12433, 6165, 5763, 6098, 2]
+// Dependencies: [5, 32, 19, 21, 13485, 13487, 1113, 4024, 6122, 12398, 6185, 5781, 6118, 2]
 // Exports: default
 
-// Module 19199 (openConjureDeleteAppChannelAlert)
-import useAlertStore from "useAlertStore" /* 6098 */;
+// Module 19191 (openConjureDeleteAppChannelAlert)
+import useAlertStore from "useAlertStore" /* 6118 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -128,7 +128,7 @@ function ConjureDeleteAppChannelAlert(arg0) {
   const tmp6 = tmp4[1];
   [tmp8, c5] = checked(react.useState(null), 2);
   const tmp7 = checked(react.useState(null), 2);
-  let obj2 = { title: intl.string(tmp(tmp2[6]).t["8D8Rsb"]), content: tmpResult2.formatWithAppTag(require("module_3995")["HmNT/r"], conjureServerApp.targetAppName), extraContent: tmp11Result, actions: closure_7(closure_8, obj6) };
+  let obj2 = { title: intl.string(tmp(tmp2[6]).t["8D8Rsb"]), content: tmpResult2.formatWithAppTag(require("module_4024")["HmNT/r"], conjureServerApp.targetAppName), extraContent: tmp11Result, actions: closure_7(closure_8, obj6) };
   const AlertModal = tmp(tmp2[8]).AlertModal;
   intl = tmp(tmp2[6]).intl;
   tmpResult2 = tmp(tmp2[9]);

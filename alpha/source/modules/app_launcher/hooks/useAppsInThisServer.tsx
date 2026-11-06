@@ -1,13 +1,13 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 12641
+// Function ID: 12642
 // Name: useAppsInThisServer
-// Dependencies: [19, 9918, 1385, 6173, 504, 10500, 2121, 9926, 12675, 12, 10502, 2]
+// Dependencies: [19, 9868, 1385, 6193, 504, 10452, 2116, 9876, 12640, 12, 10454, 2]
 // Exports: default
 
-// Module 12676 (useAppsInThisServer)
+// Module 12641 (useAppsInThisServer)
 import _modDef12 from "module_12" /* 12 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6173 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9918 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6193 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9868 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

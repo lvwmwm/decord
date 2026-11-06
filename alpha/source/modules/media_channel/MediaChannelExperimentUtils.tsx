@@ -1,10 +1,10 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 9125
+// Function ID: 9126
 // Name: MediaChannelExperimentUtils
 // Dependencies: [1072, 2]
 // Exports: useGuildEligibleForMediaChannels
 
-// Module 9179 (MediaChannelExperimentUtils)
+// Module 9125 (MediaChannelExperimentUtils)
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

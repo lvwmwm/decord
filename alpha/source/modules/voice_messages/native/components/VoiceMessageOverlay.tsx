@@ -1,9 +1,9 @@
-// Module ID: 14447
-// Function ID: 14448
+// Module ID: 14424
+// Function ID: 14425
 // Name: VoiceMessageOverlay
-// Dependencies: [32, 19, 17, 5144, 4992, 13956, 13957, 1072, 13035, 21, 1652, 1187, 5763, 12, 8176, 5143, 575, 6916, 504, 5734, 7103, 1113, 5380, 1705, 8786, 11331, 14448, 5745, 14202, 5400, 6159, 1108, 13534, 12044, 14050, 14449, 8173, 5876, 14045, 13031, 5866, 12178, 2]
+// Dependencies: [32, 19, 17, 5171, 5019, 13932, 13933, 1072, 13000, 21, 1652, 1187, 5781, 12, 8122, 5170, 575, 6858, 504, 5754, 7047, 1113, 5400, 1705, 8732, 11286, 7042, 14425, 5765, 14179, 5420, 6179, 1108, 13509, 12010, 14027, 14426, 8119, 5894, 14022, 12996, 5884, 12147, 2]
 
-// Module 14447 (VoiceMessageOverlay)
+// Module 14424 (VoiceMessageOverlay)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -11,24 +11,25 @@ import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl7 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5400 */;
-import useToken from "useToken" /* 5734 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import LegacyTokens from "LegacyTokens" /* 6916 */;
-import useRefValueDefault from "useRefValue" /* 7103 */;
-import inlineStyles from "inlineStyles" /* 8176 */;
-import ChatInputConstants from "ChatInputConstants" /* 13035 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13956 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 13957 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14448 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5420 */;
+import useToken from "useToken" /* 5754 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import LegacyTokens from "LegacyTokens" /* 6858 */;
+import useKeyboardAnimatedValueDefault from "useKeyboardAnimatedValue" /* 7042 */;
+import useRefValueDefault from "useRefValue" /* 7047 */;
+import inlineStyles from "inlineStyles" /* 8122 */;
+import ChatInputConstants from "ChatInputConstants" /* 13000 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 13932 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 13933 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14425 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +42,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp;
-const react_native = tmp(6159);
+const react_native = tmp(6179);
 function useDerivedColors(voiceMessageAnimationState, token, RED_400, token2, token3) {
   let _undefined;
   let _undefined2;
@@ -181,12 +182,12 @@ function LockPill(voiceMessageAnimationState) {
   let tmp65;
   let tmp66;
   let tmp67;
-  let tmp70;
   let tmp71;
   let tmp72;
   let tmp73;
   let tmp74;
   let tmp75;
+  let tmp76;
   let tmp8;
   let tmp9;
   voiceMessageAnimationState = voiceMessageAnimationState.voiceMessageAnimationState;
@@ -409,27 +410,28 @@ function LockPill(voiceMessageAnimationState) {
   VoiceMessageOverlayTsx13.__workletHash = 15177392803931;
   VoiceMessageOverlayTsx13.__initData = tmp64;
   const animatedStyle4 = useAnimatedStyle4(VoiceMessageOverlayTsx13);
-  const items16 = [closure_38, initialAnimation, safeAreaBottom, CHAT_INPUT_HEIGHT, 32, 8];
-  const tmp15Result = importDefault(tmp3 ? 8786 : 11331);
+  const tmp15Result = importDefault(tmp3 ? 8732 : 11286);
+  const items16 = [closure_38, initialAnimation, useKeyboardAnimatedValueDefault(safeAreaBottom), CHAT_INPUT_HEIGHT, 32, 8];
+  const tmp70 = useKeyboardAnimatedValueDefault(safeAreaBottom);
   const tmp5Result22 = require("module_1652");
   _require = undefined;
   importDefault = undefined;
   dependencyMap = undefined;
   _slicedToArray = undefined;
   c4 = undefined;
-  [tmp70, tmp71, tmp72, tmp73, tmp74, tmp75] = items16;
+  [tmp71, tmp72, tmp73, tmp74, tmp75, tmp76] = items16;
   class VoiceMessageOverlayTsx16 {
     constructor() {
       obj = { opacity: closure_0.get(), bottom: null };
-      sum = closure_1 + closure_2 + (closure_3 - closure_4);
+      sum = closure_1.get() + closure_2 + (closure_3 - closure_4);
       obj.bottom = sum + closure_4 * closure_0.get();
       return obj;
     }
   }
-  const items17 = [tmp71, tmp72, tmp73, tmp74, tmp75];
+  const items17 = [tmp72, tmp73, tmp74, tmp75, tmp76];
   VoiceMessageOverlayTsx16.__closure = items17;
-  VoiceMessageOverlayTsx16.__workletHash = 30731874865;
-  VoiceMessageOverlayTsx16.__initData = tmp70;
+  VoiceMessageOverlayTsx16.__workletHash = 5009342521000;
+  VoiceMessageOverlayTsx16.__initData = tmp71;
   const animatedStyle1 = tmp5Result22.useAnimatedStyle(VoiceMessageOverlayTsx16);
   let obj = { style: items18, children: closure_14(View2, obj2) };
   items18 = [tmp.lockParentContainer, animatedStyle, animatedStyle1];
@@ -502,17 +504,17 @@ const memoResult = react.memo(function VoiceMessageEllipse(arg0) {
   let tmp7;
   let useReducedMotion;
   let voiceMessageAnimationState;
-  const f107019 = (currWaveHeight) => currWaveHeight.currWaveHeight;
+  const f107188 = (currWaveHeight) => currWaveHeight.currWaveHeight;
   ({ radius, voiceMessageAnimationState } = arg0);
   ({ opacity, height, offsetThreshold } = arg0);
   let obj = get_initialized;
   items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion, []);
-  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f107019)];
+  const items1 = [closure_21, stateFromStores, useVoiceMessagesUIStore(f107188)];
   let c0;
   let c1;
   [tmp5, tmp6, tmp7] = items1;
-  const tmp4 = useVoiceMessagesUIStore(f107019);
+  const tmp4 = useVoiceMessagesUIStore(f107188);
   const obj2 = _mod1652;
   class VoiceMessageOverlayTsx1 {
     constructor() {
@@ -594,7 +596,7 @@ const memoResult = react.memo(function VoiceMessageEllipse(arg0) {
   const tmp26 = closure_18();
   const View = module_1652.View;
   obj4 = { children: map1(tmp26, { animatedProps, opacity }) };
-  Svg = tmp(8176).Svg;
+  Svg = tmp(8122).Svg;
   return map1(View, obj3);
 });
 let closure_26 = react.memo(function VoiceMessagePrompt(voiceMessageState) {
@@ -705,10 +707,10 @@ let closure_34 = { code: "(function VoiceMessageOverlayTsx12(){let[interpolate,t
 let closure_35 = { code: "(function VoiceMessageOverlayTsx13(){let[interpolate,timing,VOICE_MESSAGE_ANIMATION_STATES]=this.__closure;return{opacity:interpolate(timing.get(),VOICE_MESSAGE_ANIMATION_STATES,[1,1,0,0])};})" };
 let closure_36 = { code: "(function VoiceMessageOverlayTsx14(){let[voiceMessageAnimationState,VoiceMessageAnimationState]=this.__closure;return voiceMessageAnimationState.get()[1]===VoiceMessageAnimationState.LOCKED||voiceMessageAnimationState.get()[1]===VoiceMessageAnimationState.LOCKING;})" };
 let closure_37 = { code: "(function VoiceMessageOverlayTsx15(result,previous){let[scheduleOnRN,setLocked]=this.__closure;if(result!==previous){scheduleOnRN(setLocked,result);}})" };
-let closure_38 = { code: "(function VoiceMessageOverlayTsx16(){let[initialAnimation,safeAreaBottom,CHAT_INPUT_HEIGHT,LOCK_PILL_BOTTOM_OFFSET,INITIAL_SHIFT]=this.__closure;return{opacity:initialAnimation.get(),bottom:safeAreaBottom+CHAT_INPUT_HEIGHT+(LOCK_PILL_BOTTOM_OFFSET-INITIAL_SHIFT)+INITIAL_SHIFT*initialAnimation.get()};})" };
+let closure_38 = { code: "(function VoiceMessageOverlayTsx16(){let[initialAnimation,animatedSafeAreaBottom,CHAT_INPUT_HEIGHT,LOCK_PILL_BOTTOM_OFFSET,INITIAL_SHIFT]=this.__closure;return{opacity:initialAnimation.get(),bottom:animatedSafeAreaBottom.get()+CHAT_INPUT_HEIGHT+(LOCK_PILL_BOTTOM_OFFSET-INITIAL_SHIFT)+INITIAL_SHIFT*initialAnimation.get()};})" };
 let closure_40 = { code: "(function VoiceMessageOverlayTsx17(){let[voiceMessageAnimationState]=this.__closure;return voiceMessageAnimationState.get()[1];})" };
 let closure_41 = { code: "(function VoiceMessageOverlayTsx18(state,previous){let[scheduleOnRN,setVoiceMessageState]=this.__closure;if(state!==previous){scheduleOnRN(setVoiceMessageState,state);}})" };
-let closure_42 = { code: "(function VoiceMessageOverlayTsx19(){let[initialAnimation]=this.__closure;return{opacity:initialAnimation.get()};})" };
+let closure_42 = { code: "(function VoiceMessageOverlayTsx19(){let[initialAnimation,animatedInsetsBottom]=this.__closure;return{opacity:initialAnimation.get(),bottom:animatedInsetsBottom.get()};})" };
 let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   let IconButton;
   let exiting;
@@ -717,29 +719,31 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   let items13;
   let obj10;
   let str;
-  let tmp15;
   let tmp16;
-  let tmp18;
+  let tmp17;
   let tmp19;
   let tmp20;
   let tmp21;
   let tmp22;
-  let tmp27;
+  let tmp23;
   let tmp28;
-  let tmp37;
+  let tmp29;
+  let tmp30;
+  let tmp39;
   let voiceMessageAnimationState;
   channelId = channelId.channelId;
   ({ voiceMessageAnimationState, exiting } = channelId);
   let ref;
   let tmp = channelId;
-  let obj = channelId(5734);
+  let obj = channelId(5754);
   const token = obj.useToken(ref(575).modules.mobile.CHAT_INPUT_FLOATING_INLINE_FULL_GRADIENT_HEIGHT);
   const tmp5 = closure_19();
-  const bottom = ref(5745)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets.bottom;
-  let obj2 = channelId(14202);
+  const bottom = ref(5765)({ includeCustomKeyboardHeight: true, includeKeyboardHeight: true }).insets.bottom;
+  const tmp6 = ref(7042)(bottom);
+  let obj2 = channelId(14179);
   const keyboardOpenPaddingStyle = obj2.useKeyboardOpenPaddingStyle();
-  const tmp7 = useVoiceMessagesUIStore((startTimeMillis) => null != startTimeMillis.startTimeMillis);
-  _require = tmp7;
+  const tmp8 = useVoiceMessagesUIStore((startTimeMillis) => null != startTimeMillis.startTimeMillis);
+  _require = tmp8;
   const obj3 = channelId(1652);
   const sharedValue = obj3.useSharedValue(0);
   let closure_3 = react.useRef(performance.now());
@@ -765,7 +769,7 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
   }, items1);
   const obj5 = channelId(1652);
   const sharedValue1 = obj5.useSharedValue(0);
-  const items2 = [sharedValue, sharedValue1, tmp7];
+  const items2 = [sharedValue, sharedValue1, tmp8];
   const effect2 = react.useEffect(() => {
     const tmp = closure_0;
     if (tmp) {
@@ -784,28 +788,28 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
       }
     }
   }, items2);
-  [tmp15, tmp16] = react.useState(VoiceMessageAnimationState.SENDING);
+  [tmp16, tmp17] = react.useState(VoiceMessageAnimationState.SENDING);
   _slicedToArray(react.useState(VoiceMessageAnimationState.SENDING), 2);
   const items3 = [closure_40, voiceMessageAnimationState];
   let c0;
-  [tmp18, tmp19] = items3;
-  const tmp17 = channelId(1652);
+  [tmp19, tmp20] = items3;
+  const tmp18 = channelId(1652);
   class VoiceMessageOverlayTsx17 {
     constructor() {
       return _undefined.get()[1];
     }
   }
-  const items4 = [tmp19];
+  const items4 = [tmp20];
   VoiceMessageOverlayTsx17.__closure = items4;
   VoiceMessageOverlayTsx17.__workletHash = 13417586896774;
-  VoiceMessageOverlayTsx17.__initData = tmp18;
+  VoiceMessageOverlayTsx17.__initData = tmp19;
   const items5 = [closure_41, , ];
-  const useAnimatedReaction = tmp17.useAnimatedReaction;
+  const useAnimatedReaction = tmp18.useAnimatedReaction;
   items5[1] = tmp(1705).scheduleOnRN;
-  items5[2] = tmp16;
+  items5[2] = tmp17;
   c0 = undefined;
   let c1;
-  [tmp20, tmp21, tmp22] = items5;
+  [tmp21, tmp22, tmp23] = items5;
   class VoiceMessageOverlayTsx18 {
     constructor(arg0, arg1) {
       if (arg0 !== arg1) {
@@ -813,10 +817,10 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
       }
     }
   }
-  const items6 = [tmp21, tmp22];
+  const items6 = [tmp22, tmp23];
   VoiceMessageOverlayTsx18.__closure = items6;
   VoiceMessageOverlayTsx18.__workletHash = 8966188609438;
-  VoiceMessageOverlayTsx18.__initData = tmp20;
+  VoiceMessageOverlayTsx18.__initData = tmp21;
   const animatedReaction = useAnimatedReaction(VoiceMessageOverlayTsx17, VoiceMessageOverlayTsx18);
   ref = obj4.useRef(null);
   const effect3 = obj4.useEffect(() => {
@@ -832,10 +836,10 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
     let closure_0 = closure_1_6.addEventListener("change", function endAudioRecordingOnAppInactive(event) {
       const tmp = "inactive" !== event && "background" !== event;
       if (!tmp) {
-        const ComponentDispatch = channelId(dependencyMap[31]).ComponentDispatch;
+        const ComponentDispatch = channelId(dependencyMap[32]).ComponentDispatch;
         const dispatchKeyed = ComponentDispatch.dispatchKeyed;
         const VOICE_MESSAGE_SEND = constants.VOICE_MESSAGE_SEND;
-        const obj = { isCancelling: true, cancelReason: channelId(dependencyMap[32]).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
+        const obj = { isCancelling: true, cancelReason: channelId(dependencyMap[33]).VoiceMessageRecordingResult.CANCELLED_ON_BACKGROUND };
         dispatchKeyed(VOICE_MESSAGE_SEND, closure_0, obj);
       }
     });
@@ -844,40 +848,41 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
     };
   }, items7);
   let tmpResult = tmp(1652);
-  const items8 = [closure_42, sharedValue];
+  const items8 = [closure_42, sharedValue, tmp6];
   c0 = undefined;
-  [tmp27, tmp28] = items8;
+  c1 = undefined;
+  [tmp28, tmp29, tmp30] = items8;
   class VoiceMessageOverlayTsx19 {
     constructor() {
-      const obj = { opacity: _undefined.get() };
+      const obj = { opacity: _undefined.get(), bottom: _undefined2.get() };
       return obj;
     }
   }
-  const items9 = [tmp28];
+  const items9 = [tmp29, tmp30];
   VoiceMessageOverlayTsx19.__closure = items9;
-  VoiceMessageOverlayTsx19.__workletHash = 16656285026938;
-  VoiceMessageOverlayTsx19.__initData = tmp27;
+  VoiceMessageOverlayTsx19.__workletHash = 1566219795574;
+  VoiceMessageOverlayTsx19.__initData = tmp28;
   const animatedStyle = tmpResult.useAnimatedStyle(VoiceMessageOverlayTsx19);
-  const tmpResult2 = tmp(12044);
+  const tmpResult2 = tmp(12010);
   const wakeLock = tmpResult2.useWakeLock("VoiceMessageOverlay");
   const obj6 = { style: items10, children: null };
-  items10 = [tmp5.contentContainer, { bottom }, animatedStyle, ];
+  items10 = [tmp5.contentContainer, animatedStyle, ];
   const items11 = [tmp5.contentContainerFloating, keyboardOpenPaddingStyle];
-  items10[3] = items11;
+  items10[2] = items11;
   const View = tmp3(1652).View;
-  const items12 = [closure_13(tmp(14050).ChatInputScrimGradient, { gradientHeight: token, inline: true }), closure_13(closure_26, { initialAnimation: sharedValue, recordingAnimation: sharedValue1, voiceMessageState: tmp15, exiting }), ];
+  const items12 = [closure_13(tmp(14027).ChatInputScrimGradient, { gradientHeight: token, inline: true }), closure_13(closure_26, { initialAnimation: sharedValue, recordingAnimation: sharedValue1, voiceMessageState: tmp16, exiting }), ];
   const obj7 = { style: tmp5.innerContainer, children: null };
   const obj8 = { style: tmp5.voiceChatContainer, children: null };
-  const obj9 = { isRecording: tmp7, initialAnimation: sharedValue, leftAccessory: closure_13(IconButton, obj10), rightAccessory: null };
-  const tmp3Result = tmp3(14449);
+  const obj9 = { isRecording: tmp8, initialAnimation: sharedValue, leftAccessory: closure_13(IconButton, obj10), rightAccessory: null };
+  const tmp3Result = tmp3(14426);
   obj10 = {
-    icon: ref(5876),
+    icon: ref(5894),
     variant: str,
     size: "sm",
     maxFontSizeMultiplier: 2,
     accessibilityLabel: intl.string(tmp(1113).t.RdK9sV),
     onPressIn() {
-      const obj = channelId(dependencyMap[38]);
+      const obj = channelId(dependencyMap[39]);
       return obj.triggerHaptic();
     },
     onPress() {
@@ -885,24 +890,24 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
       ComponentDispatch.dispatchKeyed(ComponentActionsKeyed.VOICE_MESSAGE_SEND, channelId, { isCancelling: true });
     }
   };
-  IconButton = tmp(8173).IconButton;
+  IconButton = tmp(8119).IconButton;
   str = "tertiary";
-  const tmp32 = closure_15;
-  if (tmp15 === VoiceMessageAnimationState.CANCELLING) {
+  const tmp34 = closure_15;
+  if (tmp16 === VoiceMessageAnimationState.CANCELLING) {
     str = "destructive";
   }
   intl = tmp(1113).intl;
-  const obj11 = { ref, active: tmp37, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null };
-  tmp37 = tmp15 === tmp13.SENDING;
-  const tmp3Result2 = ref(13031);
-  if (!tmp37) {
-    tmp37 = tmp15 === tmp13.LOCKED;
+  const obj11 = { ref, active: tmp39, style: null, activeStyle: null, activeIconStyle: null, IconComponent: null, accessibilityLabel: null, onPress: null };
+  tmp39 = tmp16 === tmp14.SENDING;
+  const tmp3Result2 = ref(12996);
+  if (!tmp39) {
+    tmp39 = tmp16 === tmp14.LOCKED;
   }
   ({ floatingSendButton: obj13.style, floatingSendButtonActive: obj13.activeStyle, floatingSendButtonIconActive: obj13.activeIconStyle } = tmp5);
-  if (!tmp7) {
+  if (!tmp8) {
     let SendMessageIcon;
     if (!exiting) {
-      SendMessageIcon = tmp(12178).MicrophoneIcon;
+      SendMessageIcon = tmp(12147).MicrophoneIcon;
     }
     const obj12 = { children: items13 };
     obj11.IconComponent = SendMessageIcon;
@@ -920,9 +925,9 @@ let closure_43 = react.memo(function VoiceMessageOverlay(channelId) {
     items13 = [closure_14(View, obj6), ];
     const obj14 = { safeAreaBottom: bottom, initialAnimation: sharedValue, voiceMessageAnimationState };
     items13[1] = closure_13(LockPill, obj14);
-    return closure_14(tmp32, obj12);
+    return closure_14(tmp34, obj12);
   }
-  SendMessageIcon = tmp(5866).SendMessageIcon;
+  SendMessageIcon = tmp(5884).SendMessageIcon;
 });
 const memoResult1 = react.memo(function VoiceMessageOverlayGuard(channelId) {
   let closure_2;

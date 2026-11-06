@@ -1,10 +1,10 @@
-// Module ID: 7902
-// Function ID: 7903
+// Module ID: 7856
+// Function ID: 7857
 // Name: SocialLayerStorefrontPromotionalBannerBlockRecord
-// Dependencies: [5825, 2]
+// Dependencies: [5843, 2]
 
-// Module 7902 (SocialLayerStorefrontPromotionalBannerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 5825 */;
+// Module 7856 (SocialLayerStorefrontPromotionalBannerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 5843 */;
 import size from "module_2" /* 2 */;
 
 class SocialLayerStorefrontPromotionalBannerBlockRecord {

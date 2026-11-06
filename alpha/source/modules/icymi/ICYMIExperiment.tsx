@@ -1,13 +1,13 @@
-// Module ID: 9074
-// Function ID: 9075
+// Module ID: 9020
+// Function ID: 9021
 // Name: ICYMIExperiment
-// Dependencies: [1246, 8708, 502, 1385, 504, 9073, 9072, 2]
+// Dependencies: [1246, 8654, 502, 1385, 504, 9019, 9018, 2]
 // Exports: getICYMIEnabled, icymiEnabled, useICYMIEnabled
 
-// Module 9074 (ICYMIExperiment)
-import ICYMILabFeature from "ICYMILabFeature" /* 9073 */;
+// Module 9020 (ICYMIExperiment)
+import ICYMILabFeature from "ICYMILabFeature" /* 9019 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import LabFeatureStore from "LabFeatureStore" /* 8708 */;
+import LabFeatureStore from "LabFeatureStore" /* 8654 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp;
-const WaterwheelsDiscoverExperiment = tmp(9072);
+const WaterwheelsDiscoverExperiment = tmp(9018);
 const result = size.fileFinishedImporting("modules/icymi/ICYMIExperiment.tsx");
 
 export const ICYMI_LAB_FEATURE = ICYMILabFeature.ICYMI_LAB_FEATURE;

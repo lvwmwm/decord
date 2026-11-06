@@ -1,32 +1,32 @@
-// Module ID: 16643
-// Function ID: 16644
+// Module ID: 16640
+// Function ID: 16641
 // Name: MobileVoiceOverlayLifecycleManager
-// Dependencies: [4992, 5073, 5014, 2135, 5075, 5901, 5085, 6894, 1385, 5815, 12147, 1072, 16644, 16645, 16646, 16647, 8504, 15442, 16648, 16649, 8342, 1113, 16650, 12160, 10395, 5788, 6917, 1252, 5897, 2125, 2]
+// Dependencies: [5019, 5100, 5041, 2130, 5102, 5920, 5112, 6836, 1385, 5833, 12116, 1072, 16641, 16642, 16643, 16644, 8450, 15437, 16645, 16646, 8287, 1113, 16647, 12129, 10347, 5806, 6859, 1252, 5916, 2120, 2]
 
-// Module 16643 (MobileVoiceOverlayLifecycleManager)
+// Module 16640 (MobileVoiceOverlayLifecycleManager)
 import intl12 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildChannelStore from "GuildChannelStore" /* 5073 */;
-import useChannelName from "useChannelName" /* 5788 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5897 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6917 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10395 */;
-import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 12160 */;
-import react_nativeDefault from "react-native" /* 16650 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5901 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
-import SpeakingStore from "SpeakingStore" /* 6894 */;
+import GuildChannelStore from "GuildChannelStore" /* 5100 */;
+import useChannelName from "useChannelName" /* 5806 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5916 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6859 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 10347 */;
+import MobileVoiceOverlayActionCreatorsDefault from "MobileVoiceOverlayActionCreators" /* 12129 */;
+import react_nativeDefault from "react-native" /* 16647 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
+import SpeakingStore from "SpeakingStore" /* 6836 */;
 import UserStore from "UserStore" /* 1385 */;
-import VoiceStateStore from "VoiceStateStore" /* 5815 */;
-import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 12147 */;
+import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import MobileVoiceOverlayStore from "MobileVoiceOverlayStore" /* 12116 */;
 import Constants from "Constants" /* 1072 */;
 import "AssetRegistry";
-import AssetRegistry from "AssetRegistry" /* 8342 */;
-import LifecycleManager from "LifecycleManager" /* 2125 */;
+import AssetRegistry from "AssetRegistry" /* 8287 */;
+import LifecycleManager from "LifecycleManager" /* 2120 */;
 import size from "module_2" /* 2 */;
 
 let _changeCallbacks, guildId, record, speaking, user;

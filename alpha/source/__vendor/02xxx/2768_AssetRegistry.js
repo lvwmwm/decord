@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "9828da678219fed549e6986d671ca2e3", name: "DiscordAnniversary.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2ZpbGVfdXBsb2Fk", scales: [1], hash: "19b6e2f16e4e4fa647b6e5a13c5bea10", name: "cs.messages.19b6e2f16e4e4fa647b6e5a13c5bea10.compiled.messages", type: "jsona" });

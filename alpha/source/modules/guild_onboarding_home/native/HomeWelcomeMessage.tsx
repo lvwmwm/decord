@@ -1,19 +1,19 @@
-// Module ID: 18946
-// Function ID: 18947
+// Module ID: 18935
+// Function ID: 18936
 // Name: HomeWelcomeMessage
-// Dependencies: [19, 17, 5014, 1385, 7540, 21, 5143, 575, 563, 8903, 8946, 7624, 8904, 5197, 5209, 1090, 8975, 1187, 11592, 5763, 6179, 9212, 2]
+// Dependencies: [19, 17, 5041, 1385, 7485, 21, 5170, 575, 563, 8849, 8892, 7569, 8850, 5224, 5229, 1090, 8921, 1187, 11554, 5781, 6199, 9158, 2]
 // Exports: default
 
-// Module 18946 (HomeWelcomeMessage)
+// Module 18935 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8904 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8850 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5014 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import UserStore from "UserStore" /* 1385 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7540 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7485 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;

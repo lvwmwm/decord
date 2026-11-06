@@ -1,11 +1,10 @@
-// Module ID: 18750
-// Function ID: 18751
+// Module ID: 18740
+// Function ID: 18741
 // Name: SortableListView
-// Dependencies: [19, 17, 21, 5747, 7433, 2]
+// Dependencies: [19, 17, 21, 7380, 2]
 
-// Module 18750 (SortableListView)
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5747 */;
-import defaultMVCPConfig from "defaultMVCPConfig" /* 7433 */;
+// Module 18740 (SortableListView)
+import defaultMVCPConfig from "defaultMVCPConfig" /* 7380 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -329,10 +328,8 @@ class SortableListView extends Component {
         sum = maxResult + 1;
       }
       if (sum !== obj.state.hoverIndex) {
-        const obj2 = closure_0(state[3]);
-        const result = obj2.DeprecatedLayoutAnimation();
-        const obj3 = { hovering: true, hoverIndex: sum };
-        obj.setState(obj3);
+        const obj2 = { hovering: true, hoverIndex: sum };
+        obj.setState(obj2);
       }
     };
     tmp22.cancel = function cancel() {
@@ -413,11 +410,9 @@ class SortableListView extends Component {
             active.wrapperLayout = obj;
             const pan = active.state.pan;
             pan.setValue({ x: 0, y: 0 });
-            const obj2 = active(state[3]);
-            const result = obj2.DeprecatedLayoutAnimation();
             active.moveY = active.layout.pageY;
-            const obj3 = { active, hovering: true, hoverIndex: active.rowData.index };
-            active.setState(obj3, active.scrollAnimation);
+            const obj2 = { active, hovering: true, hoverIndex: active.rowData.index };
+            active.setState(obj2, active.scrollAnimation);
           });
         }
       }
@@ -464,37 +459,35 @@ class SortableListView extends Component {
         }
         if (null == state.state.active) {
           if (state.state.hovering) {
-            const obj3 = { hovering: false, hoverIndex };
-            state.setState(obj3);
+            const obj2 = { hovering: false, hoverIndex };
+            state.setState(obj2);
           }
           state.moveY = null;
         } else {
           const index = obj.state.active.rowData.index;
           if (false === state.state.hovering) {
-            const obj4 = { active: null, hoverIndex };
-            return state.setState(obj4);
+            const obj3 = { active: null, hoverIndex };
+            return state.setState(obj3);
           } else {
             hoverIndex = obj.state.hoverIndex;
             let diff = hoverIndex;
             if (hoverIndex > index) {
               diff = hoverIndex - 1;
             }
-            const obj2 = DeprecatedLayoutAnimation;
-            const result = obj2.DeprecatedLayoutAnimation({ duration: 0 });
             const props2 = obj.props;
             const onRowMoved = props2.onRowMoved;
             if (onRowMoved != null) {
-              const obj5 = { row: state.state.active.rowData, from: index, to: diff };
-              onRowMoved(obj5);
+              const obj4 = { row: state.state.active.rowData, from: index, to: diff };
+              onRowMoved(obj4);
             }
-            const obj6 = { active: null, hovering: false, hoverIndex };
-            state.setState(obj6);
+            const obj5 = { active: null, hovering: false, hoverIndex };
+            state.setState(obj5);
             const _Math = Math;
-            const bound = Math.max(0, obj.scrollContainerHeight - obj.listLayout.height + tmp15);
+            const bound = Math.max(0, obj.scrollContainerHeight - obj.listLayout.height + tmp12);
             if (state.scrollValue > bound) {
               const scrollResponder = obj.scrollResponder;
-              const obj7 = { y: bound };
-              scrollResponder.scrollTo(obj7);
+              const obj6 = { y: bound };
+              scrollResponder.scrollTo(obj6);
             }
           }
         }
@@ -538,7 +531,6 @@ class SortableListView extends Component {
     let index;
     let items;
     let items1;
-    let keyExtractor;
     let keyboardShouldPersistTaps;
     let scrollEnabled;
     let scrollEventThrottle;
@@ -582,6 +574,6 @@ Object.defineProperty(SortableListView.prototype, "scrollResponder", {
 });
 SortableListView.defaultProps = { disableSorting: false };
 let size = size_mod;
-let result = size.fileFinishedImporting("components_native/common/SortableListView.tsx");
+const result = size.fileFinishedImporting("components_native/common/SortableListView.tsx");
 
 export default SortableListView;

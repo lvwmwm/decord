@@ -1,14 +1,14 @@
-// Module ID: 14010
-// Function ID: 14011
+// Module ID: 13986
+// Function ID: 13987
 // Name: ForumPostTitle
-// Dependencies: [19, 21, 5143, 1357, 5763, 2]
+// Dependencies: [19, 21, 5170, 1357, 5781, 2]
 // Exports: default
 
-// Module 14010 (ForumPostTitle)
+// Module 13986 (ForumPostTitle)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5763 */;
+import Text_Text from "Text/Text" /* 5781 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import size from "module_2" /* 2 */;
 

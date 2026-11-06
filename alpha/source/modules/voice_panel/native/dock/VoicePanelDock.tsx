@@ -1,20 +1,20 @@
-// Module ID: 19516
-// Function ID: 19517
+// Module ID: 19508
+// Function ID: 19509
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 11419, 11437, 11438, 21, 5143, 575, 1627, 19517, 11418, 1652, 11445, 1705, 6011, 5386, 11423, 5430, 5380, 1113, 19519, 19523, 2]
+// Dependencies: [19, 17, 11381, 11399, 11400, 21, 5170, 575, 1627, 19509, 11380, 1652, 11407, 1705, 6030, 5406, 11385, 5450, 5400, 1113, 19511, 19515, 2]
 
-// Module 19516 (VoicePanelDock)
+// Module 19508 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5430 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11419 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11423 */;
+import HapticUtils from "HapticUtils" /* 5406 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5450 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11381 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11385 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11437 */;
-import GestureConstants from "GestureConstants" /* 11438 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11399 */;
+import GestureConstants from "GestureConstants" /* 11400 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let _Math3, absolute, bound, first, max, maxResult, num, result1, result2, result3, set, set2, set2Result, tmp16;
@@ -42,8 +42,8 @@ let size;
 let tmp;
 let unpackModuleId;
 const _mod1705 = tmp(1705);
-const timing_timing = tmp(5380);
-const VoicePanelSheetMorph = tmp(11445);
+const timing_timing = tmp(5400);
+const VoicePanelSheetMorph = tmp(11407);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ DOCK_EXPAND_GESTURE_CANCEL_DISTANCE: metroImportDefault, DOCK_PULL_SNAP_DISTANCE: metroImportAll, DOCK_PULL_SNAP_GIVE: c9, DOCK_TAP_MAX_MOVEMENT: c10, getDockInset: unpackModuleId, DOCK_DRAG_HANDLE_TOP, DOCK_DRAG_HANDLE_WIDTH, DOCK_GAP, DOCK_PADDING_TOP, DOCK_ROW_HEIGHT } = VoicePanelDockConstants);

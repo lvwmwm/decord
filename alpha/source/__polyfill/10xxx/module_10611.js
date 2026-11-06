@@ -1,11 +1,12 @@
 // Module ID: 10611
 // Function ID: 10612
-// Dependencies: [41, 42, 93, 95, 98, 10511, 10605, 10518]
+// Dependencies: [41, 42, 93, 95, 98, 10463, 10607, 10464, 10470]
 
 // Module 10611
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10511 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10518 */;
-import _mod10605 from "module_10605" /* 10605 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 10463 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 10464 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10607 from "module_10607" /* 10607 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,13 +28,14 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("([0-9]{4})[\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod10605.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
-class NLCasualYearMonthDayParser {
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod10607.MONTH_DICTIONARY);
+const regExp = new RegExp("([0-9]{1,2})(?:\u00BA|\u00AA|\u00B0)?(?:\\s*(?:desde|de|\\-|\\\u2013|ao?|\\s)\\s*([0-9]{1,2})(?:\u00BA|\u00AA|\u00B0)?)?\\s*(?:de)?\\s*(?:-|/|\\s*(?:de|,)?\\s*)(" + matchAnyPatternResult + ")(?:\\s*(?:de|,)?\\s*(" + _mod10607.YEAR_PATTERN + "))?(?=\\W|$)", "i");
+class ESMonthNameLittleEndianParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLCasualYearMonthDayParser);
-    const obj = _getPrototypeOf(NLCasualYearMonthDayParser);
+    _classCallCheck(this, ESMonthNameLittleEndianParser);
+    const obj = _getPrototypeOf(ESMonthNameLittleEndianParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,7 +47,7 @@ class NLCasualYearMonthDayParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLCasualYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ESMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
@@ -56,27 +58,37 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(arg0, arg1) {
-      let parsed;
-      let parsed1;
-      if (arg1[3]) {
-        const _parseInt = parseInt;
-        parsed = parseInt(arg1[3]);
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp4 = _mod10607.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
+      const parsed = parseInt(index[1]);
+      if (parsed > 31) {
+        index.index = index.index + index[1].length;
+        return null;
       } else {
-        parsed = _mod10605.MONTH_DICTIONARY[str.toLowerCase(str)];
-      }
-      if (parsed >= 1) {
-        if (parsed <= 12) {
-          const _parseInt2 = parseInt;
-          const _parseInt3 = parseInt;
-          const date = { day: parseInt(arg1[4]), month: parsed, year: parsed1 };
-          parsed1 = parseInt(arg1[1]);
-          return date;
+        const start4 = parsingResult.start;
+        start4.assign("month", tmp4);
+        const start5 = parsingResult.start;
+        start5.assign("day", parsed);
+        if (index[4]) {
+          const start2 = parsingResult.start;
+          start2.assign("year", _mod10607.parseYear(index[4]));
+        } else {
+          const start = parsingResult.start;
+          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
         }
+        if (index[2]) {
+          const _parseInt = parseInt;
+          const start3 = parsingResult.start;
+          const parsed1 = parseInt(index[2]);
+          parsingResult.end = start3.clone();
+          const end = parsingResult.end;
+          end.assign("day", parsed1);
+        }
+        return parsingResult;
       }
-      return null;
     }
   }
 ];
 
-export default _createClass(NLCasualYearMonthDayParser, items);
+export default _createClass(ESMonthNameLittleEndianParser, items);

@@ -1,11 +1,11 @@
-// Module ID: 15217
-// Function ID: 15218
+// Module ID: 15211
+// Function ID: 15212
 // Name: useProfileSectionTabs
-// Dependencies: [32, 19, 8900, 2]
+// Dependencies: [32, 19, 8846, 2]
 // Exports: getProfileTabSectionIndex, useProfileSectionTabs, useProfileTabIndices
 
-// Module 15217 (useProfileSectionTabs)
-import Constants from "Constants" /* 8900 */;
+// Module 15211 (useProfileSectionTabs)
+import Constants from "Constants" /* 8846 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -15,12 +15,12 @@ let activeIndex;
 const UserProfileSections = Constants.UserProfileSections;
 const result = size.fileFinishedImporting("modules/user_profile/hooks/native/useProfileSectionTabs.tsx");
 
-export function useProfileTabIndices(arg0, isRecentActivityMobileEnabled, arg2) {
+export function useProfileTabIndices(isMobileWidgetEditingEnabled, isRecentActivityMobileEnabled, arg2) {
   let tmp2;
   let num = -1;
   let num2 = 1;
   let num3 = -1;
-  if (arg0) {
+  if (isMobileWidgetEditingEnabled) {
     num2 = 2;
     num3 = 1;
   }

@@ -1,13 +1,13 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15028
+// Function ID: 15029
 // Name: ShopThisLookAnalyticsUtils
-// Dependencies: [1072, 2116, 1252, 2]
+// Dependencies: [1072, 2111, 1252, 2]
 // Exports: trackShopThisLookMenuAction, trackShopThisLookRowAction
 
-// Module 15051 (ShopThisLookAnalyticsUtils)
+// Module 15028 (ShopThisLookAnalyticsUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

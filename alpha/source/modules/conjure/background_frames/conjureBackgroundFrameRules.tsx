@@ -1,20 +1,20 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16624
+// Function ID: 16625
 // Name: conjureBackgroundFrameRules
-// Dependencies: [4991, 6984, 1194, 16628, 11114, 6985, 11077, 16553, 5811, 11068, 2]
+// Dependencies: [5018, 6926, 1194, 16625, 11067, 6927, 11030, 16550, 5829, 11021, 2]
 // Exports: isBuilderPreviewFrame, shouldRunInBackgroundOnRelease
 
-// Module 16627 (conjureBackgroundFrameRules)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5811 */;
-import FramesConstants from "FramesConstants" /* 6985 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11068 */;
-import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 11077 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 16553 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
-import FramesStore from "FramesStore" /* 6984 */;
+// Module 16624 (conjureBackgroundFrameRules)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5829 */;
+import FramesConstants from "FramesConstants" /* 6927 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11021 */;
+import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 11030 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 16550 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import FramesStore from "FramesStore" /* 6926 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 16628 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11114 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 16625 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 11067 */;
 import size from "module_2" /* 2 */;
 
 const FrameIntent = FramesConstants.FrameIntent;
@@ -37,7 +37,7 @@ export function shouldRunInBackgroundOnRelease(frame) {
     let tmp11 = frame.surface.type === EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL;
     const tmp10 = require;
     if (tmp11) {
-      const tmp10Result = tmp10(11068);
+      const tmp10Result = tmp10(11021);
       tmp11 = !tmp10Result.isConjurePreviewSurface(frame.surface);
     }
     let isAppVisibleResult = !tmp11;

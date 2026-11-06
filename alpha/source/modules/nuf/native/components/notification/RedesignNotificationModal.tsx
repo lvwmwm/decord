@@ -1,22 +1,22 @@
-// Module ID: 18327
-// Function ID: 18328
+// Module ID: 18319
+// Function ID: 18320
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 14204, 14205, 1072, 21, 5143, 575, 14206, 1252, 14207, 14484, 18328, 1113, 2]
+// Dependencies: [19, 17, 14181, 14182, 1072, 21, 5170, 575, 14183, 1252, 14184, 14461, 18320, 1113, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 18327 (RedesignNotificationModal)
+// Module 18319 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14204 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14206 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14207 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 14484 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14181 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14183 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 14184 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 14461 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14205 */;
-import createStyles from "createStyles" /* 5143 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14182 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

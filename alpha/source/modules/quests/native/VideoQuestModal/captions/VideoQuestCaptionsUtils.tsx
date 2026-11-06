@@ -1,10 +1,10 @@
-// Module ID: 17398
-// Function ID: 17399
+// Module ID: 17387
+// Function ID: 17388
 // Name: VideoQuestCaptionsUtils
 // Dependencies: [2]
 // Exports: findActiveCaption
 
-// Module 17398 (VideoQuestCaptionsUtils)
+// Module 17387 (VideoQuestCaptionsUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/captions/VideoQuestCaptionsUtils.tsx");

@@ -1,16 +1,16 @@
-// Module ID: 8867
-// Function ID: 8868
+// Module ID: 8813
+// Function ID: 8814
 // Name: ApplicationAssetUtils
-// Dependencies: [32, 5, 8868, 1072, 38, 3, 1282, 572, 1446, 2]
+// Dependencies: [32, 5, 8814, 1072, 38, 3, 1282, 572, 1446, 2]
 // Exports: getAssetFromImageURL, getAssetIds, getAssetImage
 
-// Module 8867 (ApplicationAssetUtils)
+// Module 8813 (ApplicationAssetUtils)
 import _modDef38 from "module_38" /* 38 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8868 */;
+import ApplicationAssetsStore from "ApplicationAssetsStore" /* 8814 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ let PlatformTypes;
 let metroRequire;
 let tmp;
 const LoggerDefault = tmp(3);
-const f94168 = (item) => {
+const f94264 = (item) => {
   let startsWithResult;
   if (item != null) {
     startsWithResult = item.startsWith("http:");
@@ -183,7 +183,7 @@ obj = function _resolveExternalAssets() {
 };
 function updateUrlAssetIds(arr, arg1) {
   let num = 0;
-  if (arr.filter(f94168).length > 0) {
+  if (arr.filter(f94264).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;
@@ -522,7 +522,7 @@ export { fetchAssetIds };
 export function getAssetIds(id, arr) {
   const items = [];
   let num = 0;
-  if (arr.filter(f94168).length > 0) {
+  if (arr.filter(f94264).length > 0) {
     let num3 = 0;
     let num4 = 0;
     num = 0;

@@ -1,24 +1,24 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12847
+// Function ID: 12848
 // Name: conjureSettingsAsks
-// Dependencies: [32, 19, 4992, 11035, 11053, 11036, 12843, 12816, 504, 12883, 2]
+// Dependencies: [32, 19, 5019, 10987, 11005, 10988, 12808, 12781, 504, 12848, 2]
 // Exports: conjureSettingsRequestDone, hasOtherOpenSetupAsk, useConjureSettingsAsk, useSavedSettingsRequests
 
-// Module 12882 (conjureSettingsAsks)
-import conjureChatTurns from "conjureChatTurns" /* 11036 */;
-import conjureSettingsRequest from "conjureSettingsRequest" /* 12843 */;
-import conjureSettingsSummary from "conjureSettingsSummary" /* 12883 */;
+// Module 12847 (conjureSettingsAsks)
+import conjureChatTurns from "conjureChatTurns" /* 10988 */;
+import conjureSettingsRequest from "conjureSettingsRequest" /* 12808 */;
+import conjureSettingsSummary from "conjureSettingsSummary" /* 12848 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import ConjureChatStore from "ConjureChatStore" /* 11035 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 11053 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import ConjureChatStore from "ConjureChatStore" /* 10987 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 11005 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, channel, dependencyMap, set2;
 
-const f103886 = () => set;
+const f104046 = () => set;
 function subscribe(arg0) {
   let closure_0 = arg0;
   set1.add(arg0);
@@ -102,7 +102,7 @@ let result = size.fileFinishedImporting("modules/conjure/settings/conjureSetting
 
 export { markSettingsRequestSaved };
 export function useSavedSettingsRequests() {
-  return react.useSyncExternalStore(subscribe, f103886);
+  return react.useSyncExternalStore(subscribe, f104046);
 }
 export { supersededSettingsRequests };
 export function conjureSettingsRequestDone(settingsRequest, settings, arg2) {
@@ -115,7 +115,7 @@ export function conjureSettingsRequestDone(settingsRequest, settings, arg2) {
       const tmp5 = require;
       if (tmp7) {
         const obj2 = { keys: result };
-        const tmp5Result = tmp5(12843);
+        const tmp5Result = tmp5(12808);
         tmp7 = !tmp5Result.conjureSettingsRequestBlocks(obj2, settings);
       }
       return tmp7;
@@ -159,7 +159,7 @@ export function hasOtherOpenSetupAsk(arr, arg1, secrets, arg3) {
               const tmp13 = require;
               if (tmp15) {
                 const obj3 = { keys: result };
-                const tmp13Result = tmp13(12843);
+                const tmp13Result = tmp13(12808);
                 tmp15 = !tmp13Result.conjureSettingsRequestBlocks(obj3, tmp11);
               }
               flag = tmp15;
@@ -191,7 +191,7 @@ export function useConjureSettingsAsk(projectId, request, askId) {
   dependencyMap = request;
   _slicedToArray = askId;
   let obj = react;
-  const syncExternalStore = react.useSyncExternalStore(subscribe, f103886);
+  const syncExternalStore = react.useSyncExternalStore(subscribe, f104046);
   let tmp = _slicedToArray(react.useState(false), 2);
   [tmp2, react] = tmp;
   if (null != askId) {
@@ -212,7 +212,7 @@ export function useConjureSettingsAsk(projectId, request, askId) {
           const tmp4 = require;
           if (tmp6) {
             const obj2 = { keys: result };
-            const tmp4Result = tmp4(12843);
+            const tmp4Result = tmp4(12808);
             tmp6 = !tmp4Result.conjureSettingsRequestBlocks(obj2, settings);
           }
           flag = tmp6;

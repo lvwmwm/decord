@@ -1,19 +1,19 @@
-// Module ID: 16846
-// Function ID: 16847
+// Module ID: 16834
+// Function ID: 16835
 // Name: ProfileCustomizationProfileSelector
-// Dependencies: [19, 17, 16847, 21, 5143, 575, 7204, 7119, 1113, 7101, 10869, 11611, 6101, 5384, 16848, 2123, 2]
+// Dependencies: [19, 17, 16835, 21, 5170, 575, 7151, 7063, 1113, 7045, 10821, 11573, 6121, 5404, 16836, 2118, 2]
 // Exports: default
 
-// Module 16846 (ProfileCustomizationProfileSelector)
+// Module 16834 (ProfileCustomizationProfileSelector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import react_nativeDefault from "react-native" /* 6101 */;
-import GuildIconDefault from "GuildIcon" /* 7101 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 16847 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import react_nativeDefault from "react-native" /* 6121 */;
+import GuildIconDefault from "GuildIcon" /* 7045 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 16835 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -39,9 +39,9 @@ export default function ProfileCustomizationProfileSelector(guild) {
   guild = guild.guild;
   ({ onBeforeOpen: importDefault, onSelectMainProfile: dependencyMap, onSelectGuild: View } = guild);
   let obj = { style: closure_6().container, children: tmp(TableRowGroup, obj5) };
-  TableRowGroup = guild(7204).TableRowGroup;
+  TableRowGroup = guild(7151).TableRowGroup;
   let name;
-  const TableRow = guild(7119).TableRow;
+  const TableRow = guild(7063).TableRow;
   const tmp2 = View;
   if (guild != null) {
     name = guild.name;
@@ -75,19 +75,19 @@ export default function ProfileCustomizationProfileSelector(guild) {
     }
   };
   if (null != guild) {
-    const obj3 = { guild, size: guild(7101).GuildIconSizes.XSMALL };
+    const obj3 = { guild, size: guild(7045).GuildIconSizes.XSMALL };
     const tmp10 = GuildIconDefault;
     tmpResult = tmp(tmp10, obj3);
     tmp8 = importDefault;
   } else {
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    const ClydeIcon = tmp3(10869).ClydeIcon;
+    const ClydeIcon = tmp3(10821).ClydeIcon;
     tmpResult = tmp(ClydeIcon, obj4);
     tmp8 = importDefault;
   }
   obj5 = { hasIcons: true, children: jsx(TableRow, obj2) };
   obj6 = { size: "sm", color: tmp8(575).colors.ICON_SUBTLE };
-  ChevronSmallDownIcon = tmp3(11611).ChevronSmallDownIcon;
+  ChevronSmallDownIcon = tmp3(11573).ChevronSmallDownIcon;
   intl2 = tmp3(1113).intl;
   return jsx(tmp2, obj);
 };

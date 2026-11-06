@@ -1,9 +1,9 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 14850
+// Function ID: 14851
 // Name: CrunchyrollLinkConstants
 // Dependencies: [2]
 
-// Module 14874 (CrunchyrollLinkConstants)
+// Module 14850 (CrunchyrollLinkConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkConstants.tsx");

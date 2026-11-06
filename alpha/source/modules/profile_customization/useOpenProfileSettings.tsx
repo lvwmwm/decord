@@ -1,21 +1,21 @@
-// Module ID: 11715
-// Function ID: 11716
+// Module ID: 11681
+// Function ID: 11682
 // Name: useOpenProfileSettings
-// Dependencies: [19, 1385, 11656, 1072, 1082, 8877, 11716, 11717, 7705, 2]
+// Dependencies: [19, 1385, 11618, 1072, 1082, 8823, 11682, 11683, 7658, 2]
 // Exports: default
 
-// Module 11715 (useOpenProfileSettings)
+// Module 11681 (useOpenProfileSettings)
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import openUserSettings from "openUserSettings" /* 7705 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11717 */;
+import openUserSettings from "openUserSettings" /* 7658 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 11683 */;
 import UserStore from "UserStore" /* 1385 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11656 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8877 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 11618 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8823 */;
 import size from "module_2" /* 2 */;
 
-const useCallback = react.useCallback;
+react.useCallback;
 const UserSettingsSections = Constants.UserSettingsSections;
 let closure_5 = UserSettingsConstants.ProfileCustomizationSubsection;
 const result = size.fileFinishedImporting("modules/profile_customization/useOpenProfileSettings.tsx");
@@ -27,11 +27,13 @@ export default function useOpenProfileSettings() {
   }
   const guild = obj.guild;
   const scrollPosition = obj.scrollPosition;
+  const initialTab = obj.initialTab;
   const analyticsLocations = obj.analyticsLocations;
   let obj2 = guild(scrollPosition[6]);
-  const items = [guild, scrollPosition, analyticsLocations, obj2.useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
-  return useCallback(() => {
+  const items = [guild, scrollPosition, initialTab, analyticsLocations, obj2.useIsEligibleForUserProfileWYSIWYGEditing("useOpenProfileSettings")];
+  return initialTab(() => {
     let USER_PROFILE;
+    let obj4;
     if (null != guild) {
       const obj = GuildIdentityActionCreators;
       const guildIdentitySettings = obj.initGuildIdentitySettings(tmp.id);
@@ -44,7 +46,8 @@ export default function useOpenProfileSettings() {
     }
     const obj2 = { subsection: USER_PROFILE, scrollPosition };
     setState(obj2);
-    const obj3 = { screen: UserSettingsSections.PROFILE_CUSTOMIZATION };
+    const obj3 = { screen: UserSettingsSections.PROFILE_CUSTOMIZATION, params: obj4 };
+    obj4 = { initialTab };
     openUserSettings.openUserSettings(obj3);
   }, items);
 };

@@ -1,12 +1,12 @@
-// Module ID: 10966
-// Function ID: 10967
+// Module ID: 10918
+// Function ID: 10919
 // Name: useActiveLeaderboardWinnerData
-// Dependencies: [5055, 1089, 504, 2]
+// Dependencies: [5082, 1089, 504, 2]
 // Exports: default, getActiveLeaderboardLeaderData, getActiveLeaderboardWinnerData, useActiveLeaderboardLeaderData, useHasActiveLeaderboardBadge
 
-// Module 10966 (useActiveLeaderboardWinnerData)
+// Module 10918 (useActiveLeaderboardWinnerData)
 import DurationsDefault from "Durations" /* 1089 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

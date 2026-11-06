@@ -1,21 +1,21 @@
-// Module ID: 14935
-// Function ID: 14936
+// Module ID: 14912
+// Function ID: 14913
 // Name: ConjureYouScreenButton
-// Dependencies: [19, 21, 5143, 575, 14936, 1500, 14938, 12328, 14941, 14939, 1113, 3995, 13232, 2]
+// Dependencies: [19, 21, 5170, 575, 14913, 1500, 14915, 11119, 14918, 14916, 1113, 4024, 13197, 2]
 
-// Module 14935 (ConjureYouScreenButton)
+// Module 14912 (ConjureYouScreenButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Link from "Link" /* 1500 */;
-import _modDef3995 from "module_3995" /* 3995 */;
-import MagicWandIcon from "MagicWandIcon" /* 12328 */;
-import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 13232 */;
-import useConjureWandStatusDefault from "useConjureWandStatus" /* 14936 */;
-import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14938 */;
-import getIconSize from "getIconSize" /* 14939 */;
-import ConjureWorkingWandDefault from "ConjureWorkingWand" /* 14941 */;
+import _modDef4024 from "module_4024" /* 4024 */;
+import MagicWandIcon from "MagicWandIcon" /* 11119 */;
+import openConjureProjectsSheetDefault from "openConjureProjectsSheet" /* 13197 */;
+import useConjureWandStatusDefault from "useConjureWandStatus" /* 14913 */;
+import YouScreenNavIconDefault from "YouScreenNavIcon" /* 14915 */;
+import getIconSize from "getIconSize" /* 14916 */;
+import ConjureWorkingWandDefault from "ConjureWorkingWand" /* 14918 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -40,7 +40,7 @@ const memoResult = react.memo(function ConjureYouScreenButton() {
     tmp7Result = tmp7(tmp2Result, obj3);
   }
   const intl = tmp5(1113).intl;
-  return <tmp8 IconComponent={MagicWandIcon.MagicWandIcon} icon={tmp7Result} accessibilityLabel={accessibilityLabel} label={intl.string(_modDef3995.uk6jhJ)} onPress={openConjureProjectsSheetDefault} showRedDot={hasBadge} dotStyle={tmp.dot} />;
+  return <tmp8 IconComponent={MagicWandIcon.MagicWandIcon} icon={tmp7Result} accessibilityLabel={accessibilityLabel} label={intl.string(_modDef4024.uk6jhJ)} onPress={openConjureProjectsSheetDefault} showRedDot={hasBadge} dotStyle={tmp.dot} />;
 });
 const result = size.fileFinishedImporting("modules/conjure/title_bar/native/ConjureYouScreenButton.tsx");
 

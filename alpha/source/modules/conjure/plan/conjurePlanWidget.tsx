@@ -1,17 +1,17 @@
-// Module ID: 12958
-// Function ID: 12959
+// Module ID: 12923
+// Function ID: 12924
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2191, 6982, 12470, 12959, 12960, 12290, 12352, 504, 2]
+// Dependencies: [32, 19, 2186, 6924, 12435, 12924, 12925, 12257, 12317, 504, 2]
 // Exports: useConjurePlanWidget
 
-// Module 12958 (conjurePlanWidget)
-import _mod12470 from "module_12470" /* 12470 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 12959 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12960 */;
+// Module 12923 (conjurePlanWidget)
+import _mod12435 from "module_12435" /* 12435 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 12924 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 12925 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6982 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6924 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -119,19 +119,19 @@ function sampleValues(surfaces, sample_data, arg2) {
       let _String = String;
       let tmp13 = arg2[String(undefined, tmp8)];
       if (null != tmp13) {
-        let obj3 = { type: _mod12470.ResolvedValueType.MEDIA, media: size };
+        let obj3 = { type: _mod12435.ResolvedValueType.MEDIA, media: size };
         size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod12470.ResolvedValueType.NUMBER, value: tmp8 };
+        let obj4 = { type: _mod12435.ResolvedValueType.NUMBER, value: tmp8 };
         let tmp10 = dependencyMap;
         let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod12470.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod12435.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }

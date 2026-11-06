@@ -1,22 +1,22 @@
-// Module ID: 17458
-// Function ID: 17459
+// Module ID: 17447
+// Function ID: 17448
 // Name: QuestDockBountyBody
-// Dependencies: [19, 6919, 21, 17427, 17373, 17342, 17349, 9873, 1113, 14910, 8013, 9840, 9843, 6926, 8016, 6922, 17192, 17194, 9875, 17445, 9863, 17459, 8173, 15419, 2]
+// Dependencies: [19, 6861, 21, 17416, 17362, 17331, 17338, 9823, 1113, 14887, 7967, 9791, 9794, 6868, 7970, 6864, 17180, 17182, 9825, 17434, 9813, 17448, 8119, 15414, 2]
 
-// Module 17458 (QuestDockBountyBody)
+// Module 17447 (QuestDockBountyBody)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import QuestConstants from "QuestConstants" /* 6919 */;
-import QuestTypes from "QuestTypes" /* 6922 */;
-import AdCreativeType from "AdCreativeType" /* 6926 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8013 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8016 */;
-import captureAdUserAction from "captureAdUserAction" /* 9840 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9843 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9875 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14910 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17192 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 17194 */;
+import QuestConstants from "QuestConstants" /* 6861 */;
+import QuestTypes from "QuestTypes" /* 6864 */;
+import AdCreativeType from "AdCreativeType" /* 6868 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7967 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 7970 */;
+import captureAdUserAction from "captureAdUserAction" /* 9791 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9794 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9825 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 14887 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 17180 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 17182 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

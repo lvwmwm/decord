@@ -1,25 +1,25 @@
-// Module ID: 18400
-// Function ID: 18401
+// Module ID: 18392
+// Function ID: 18393
 // Name: MessagesLegendList
-// Dependencies: [19, 21, 18401, 18373, 18440, 18441, 18384, 18383, 18387, 18402, 18439, 18442, 14646, 2]
+// Dependencies: [19, 21, 18393, 18365, 18432, 18433, 18376, 18375, 18379, 18394, 18431, 18434, 14623, 2]
 
-// Module 18400 (MessagesLegendList)
+// Module 18392 (MessagesLegendList)
 import Fragment from "Fragment" /* 21 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 18373 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18383 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18384 */;
-import useMessagesData from "useMessagesData" /* 18387 */;
-import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 18402 */;
-import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 18439 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 18440 */;
-import MessagesItemSuggestedFriendsHeader from "MessagesItemSuggestedFriendsHeader" /* 18441 */;
-import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 18442 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 18365 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18375 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18376 */;
+import useMessagesData from "useMessagesData" /* 18379 */;
+import MessagesItemHappeningNowDefault from "MessagesItemHappeningNow" /* 18394 */;
+import MessagesItemEmptyStateDefault from "MessagesItemEmptyState" /* 18431 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 18432 */;
+import MessagesItemSuggestedFriendsHeader from "MessagesItemSuggestedFriendsHeader" /* 18433 */;
+import MessagesItemAddFriendsWidgetDefault from "MessagesItemAddFriendsWidget" /* 18434 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const MessagesItemSeparatorDefault = MessagesItemSeparator;
 const MessagesItemSuggestedFriendsHeaderDefault = MessagesItemSuggestedFriendsHeader;
-let item;
+let item, keyExtractor;
 
 const jsx = Fragment.jsx;
 const memoResult = react.memo(function MessagesLegendList(listItemHeight) {
@@ -107,7 +107,7 @@ const memoResult = react.memo(function MessagesLegendList(listItemHeight) {
     return estimatedItemSize;
   }, items2);
   const items4 = [renderHeader, listRefHappeningNow];
-  const keyExtractor = listLeft.useCallback((kind) => {
+  keyExtractor = listLeft.useCallback((kind) => {
     kind = kind.kind;
     if ("favorite" === kind) {
       const _HermesInternal4 = HermesInternal;

@@ -1,22 +1,22 @@
-// Module ID: 10365
-// Function ID: 10366
+// Module ID: 10317
+// Function ID: 10318
 // Name: FeedbackActionSheet
-// Dependencies: [32, 19, 17, 10344, 21, 5143, 575, 5384, 6870, 12, 10347, 5731, 6882, 10366, 2123, 1627, 5398, 7460, 7505, 5402, 5763, 10348, 7204, 7119, 7118, 1113, 2]
+// Dependencies: [32, 19, 17, 10296, 21, 5170, 575, 5404, 6812, 12, 10299, 5751, 6824, 10318, 2118, 1627, 5418, 7405, 7450, 5422, 5781, 10300, 7151, 7063, 7062, 1113, 2]
 // Exports: default
 
-// Module 10365 (FeedbackActionSheet)
+// Module 10317 (FeedbackActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
-import Constants from "Constants" /* 10344 */;
-import FeedbackUtils from "FeedbackUtils" /* 10347 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import Constants from "Constants" /* 10296 */;
+import FeedbackUtils from "FeedbackUtils" /* 10299 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let onPress;
@@ -128,7 +128,7 @@ export default function FeedbackActionSheet(feedbackReasons) {
       tmp16 = undefined;
       obj3 = { rating, reason, dontShowAgain: first1 };
       ModalActionCreatorsDefault;
-      const tmp11 = asyncRequire(10366, dependencyMap.paths);
+      const tmp11 = asyncRequire(10318, dependencyMap.paths);
       if (View != null) {
         tmp16 = View(reason);
       }

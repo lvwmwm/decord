@@ -1,13 +1,13 @@
-// Module ID: 11647
-// Function ID: 11648
+// Module ID: 11609
+// Function ID: 11610
 // Name: BadgeCatalogIcon
-// Dependencies: [32, 19, 17, 21, 5854, 11648, 2]
+// Dependencies: [32, 19, 17, 21, 5872, 11610, 2]
 // Exports: default
 
-// Module 11647 (BadgeCatalogIcon)
+// Module 11609 (BadgeCatalogIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 11648 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 11610 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 17654
-// Function ID: 17655
+// Module ID: 17643
+// Function ID: 17644
 // Name: EmojiSkullIcon
-// Dependencies: [19, 21, 575, 5853, 17655, 2]
+// Dependencies: [19, 21, 575, 5871, 17644, 2]
 // Exports: EmojiSkullIcon
 
-// Module 17654 (EmojiSkullIcon)
+// Module 17643 (EmojiSkullIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 17655 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 17644 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

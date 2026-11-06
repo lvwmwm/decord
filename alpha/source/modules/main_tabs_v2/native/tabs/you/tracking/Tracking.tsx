@@ -1,10 +1,10 @@
-// Module ID: 9833
-// Function ID: 9834
+// Module ID: 9784
+// Function ID: 9785
 // Name: Tracking
 // Dependencies: [1072, 1252, 2]
 // Exports: trackYouTabAvatarPress, trackYouTabCustomStatusPress, trackYouTabEditProfilePress, trackYouTabNitroIconPress, trackYouTabSettingsIconPress
 
-// Module 9833 (Tracking)
+// Module 9784 (Tracking)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import size from "module_2" /* 2 */;

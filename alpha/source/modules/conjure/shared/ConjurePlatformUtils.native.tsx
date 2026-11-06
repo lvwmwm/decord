@@ -1,29 +1,29 @@
-// Module ID: 11090
-// Function ID: 11091
+// Module ID: 11043
+// Function ID: 11044
 // Name: ConjurePlatformUtils
-// Dependencies: [5, 5385, 2122, 6982, 6985, 11091, 9056, 5787, 1084, 5384, 11092, 2123, 11097, 11102, 11068, 11107, 8124, 11108, 11110, 11111, 11112, 11121, 11122, 2]
+// Dependencies: [5, 5405, 2117, 6924, 6927, 11044, 9002, 5805, 1084, 5404, 11045, 2118, 11050, 11055, 11021, 11060, 8070, 11061, 11063, 11064, 11065, 11074, 11075, 2]
 // Exports: inspectConjurePreviewPoint, setConjurePreviewFrameVisibility
 
-// Module 11090 (ConjurePlatformUtils)
+// Module 11043 (ConjurePlatformUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5787 */;
-import FramesConstants from "FramesConstants" /* 6985 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 9056 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 11068 */;
-import Constants from "Constants" /* 11091 */;
-import ApplicationUtils from "ApplicationUtils" /* 11097 */;
-import PushNotificationDefault from "PushNotification" /* 11102 */;
-import conjurePreviewCall from "conjurePreviewCall" /* 11107 */;
-import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 11112 */;
-import restartFrames from "restartFrames" /* 11122 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5805 */;
+import FramesConstants from "FramesConstants" /* 6927 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 9002 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 11021 */;
+import Constants from "Constants" /* 11044 */;
+import ApplicationUtils from "ApplicationUtils" /* 11050 */;
+import PushNotificationDefault from "PushNotification" /* 11055 */;
+import conjurePreviewCall from "conjurePreviewCall" /* 11060 */;
+import conjurePreviewNativeSurfaces from "conjurePreviewNativeSurfaces" /* 11065 */;
+import restartFrames from "restartFrames" /* 11075 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5385 */;
-import AppStateStore from "AppStateStore" /* 2122 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
-import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11111 */;
-import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 11121 */;
+import ActionSheetStore from "ActionSheetStore" /* 5405 */;
+import AppStateStore from "AppStateStore" /* 2117 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
+import conjurePreviewControlLease from "conjurePreviewControlLease" /* 11064 */;
+import conjurePreviewOperationSurfaces from "conjurePreviewOperationSurfaces" /* 11074 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -234,7 +234,7 @@ function callNativePreviewFrame(iframeId, arg1, arg2, arg3) {
           }
           c2 = null;
         } else {
-          const tmp4Result = tmp4(11107);
+          const tmp4Result = tmp4(11060);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
             cleanup();
             closure_0(parsed);
@@ -328,7 +328,7 @@ let obj = function _relayPreviewCapture() {
                   c8 = 3;
                   return { value: { status: "unavailable" }, done: true };
                 } else if (null == onAccepted) {
-                  obj10 = { uploadToken: "ti" };
+                  obj10 = { uploadToken: "r" };
                 } else {
                   c7 = 2;
                   c8 = 1;
@@ -787,7 +787,7 @@ let result = conjurePreviewControlLease.subscribeConjureControlReleased(function
             }
             c2 = null;
           } else {
-            const tmp4Result = tmp4(11107);
+            const tmp4Result = tmp4(11060);
             if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
               cleanup();
               closure_0(parsed);
@@ -814,7 +814,7 @@ let closure_22 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
   }
   let tmp3 = null;
   if (null != prop) {
-    const obj2 = iframeId(11068);
+    const obj2 = iframeId(11021);
     const conjureBuilderPreviewFrame = obj2.getConjureBuilderPreviewFrame(prop);
     let tmp7 = null;
     if (null != conjureBuilderPreviewFrame) {
@@ -842,7 +842,7 @@ let closure_22 = conjurePreviewOperationSurfaces.createPreviewOperationSurfaces(
     }
     let tmp12 = null;
     if (null != prop1) {
-      const obj5 = iframeId(11068);
+      const obj5 = iframeId(11021);
       const conjureBuilderPreviewFrame1 = obj5.getConjureBuilderPreviewFrame(prop1);
       iframeId = null;
       if (isLaunched(conjureBuilderPreviewFrame1)) {
@@ -922,7 +922,7 @@ obj = {
     if (ActionSheetStore.isOpen()) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       const obj2 = { sheetKey: ConjureAppInstallSheet, disableHapticOnOpen: true };
-      const tmp17 = asyncRequire(11092, tmp7.paths);
+      const tmp17 = asyncRequire(11045, tmp7.paths);
       const merged = Object.assign(obj);
       openLazyResult = openLazy(tmp17, ConjureAppInstallSheet, obj2, "stack");
     } else {
@@ -1059,7 +1059,7 @@ obj = {
               }
               c2 = null;
             } else {
-              const tmp4Result = tmp4(11107);
+              const tmp4Result = tmp4(11060);
               if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
                 cleanup();
                 closure_0(parsed);
@@ -1163,7 +1163,7 @@ export function setConjurePreviewFrameVisibility(iframeId, visible) {
           }
           c2 = null;
         } else {
-          const tmp4Result = tmp4(11107);
+          const tmp4Result = tmp4(11060);
           if (tmp4Result.isResultEnvelope(parsed, tmp7.results, tmp8.id)) {
             cleanup();
             closure_0(parsed);

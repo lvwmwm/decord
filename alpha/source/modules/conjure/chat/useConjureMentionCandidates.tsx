@@ -1,20 +1,20 @@
-// Module ID: 13026
-// Function ID: 13027
+// Module ID: 12991
+// Function ID: 12992
 // Name: useConjureMentionCandidates
-// Dependencies: [19, 502, 5055, 5014, 1385, 6982, 1072, 504, 13027, 6983, 7039, 12862, 11, 5080, 2]
+// Dependencies: [19, 502, 5082, 5041, 1385, 6924, 1072, 504, 12992, 6925, 6981, 12827, 11, 5107, 2]
 // Exports: default
 
-// Module 13026 (useConjureMentionCandidates)
+// Module 12991 (useConjureMentionCandidates)
 import Constants from "Constants" /* 1072 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5080 */;
-import GuildUtilsDefault from "GuildUtils" /* 7039 */;
-import conjureMentions from "conjureMentions" /* 12862 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
+import GuildUtilsDefault from "GuildUtils" /* 6981 */;
+import conjureMentions from "conjureMentions" /* 12827 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
-import GuildStore from "GuildStore" /* 5014 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import UserStore from "UserStore" /* 1385 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

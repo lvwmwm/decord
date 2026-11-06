@@ -1,18 +1,18 @@
-// Module ID: 18230
-// Function ID: 18231
+// Module ID: 18222
+// Function ID: 18223
 // Name: ActivityPrivacyDefaultSharingSetting
-// Dependencies: [19, 8578, 1196, 1113, 4968, 17026, 5384, 18231, 2123, 11737, 2]
+// Dependencies: [19, 8524, 1196, 1113, 4995, 17014, 5404, 18223, 2118, 11703, 2]
 
-// Module 18230 (ActivityPrivacyDefaultSharingSetting)
+// Module 18222 (ActivityPrivacyDefaultSharingSetting)
 import intl6 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import UserSettings from "UserSettings" /* 4968 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import SettingsConstants from "SettingsConstants" /* 8578 */;
-import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17026 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import SettingsConstants from "SettingsConstants" /* 8524 */;
+import ActivityPrivacyUpsellUtils from "ActivityPrivacyUpsellUtils" /* 17014 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -62,7 +62,7 @@ let obj = {
       const obj2 = { direction: null, affectedGuildIds: null, settingName: activityRestrictionSettingName };
       ({ direction: obj4.direction, affectedGuildIds: obj4.affectedGuildIds } = affectedGuilds);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(18231, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
+      obj3.openLazy(asyncRequire(18223, tmp3.paths), "ActivityPrivacyUpsellActionSheet", obj2);
     }
   }
 };

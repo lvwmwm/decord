@@ -1,17 +1,17 @@
-// Module ID: 19303
-// Function ID: 19304
+// Module ID: 19295
+// Function ID: 19296
 // Name: ConjureHomeScreen
-// Dependencies: [32, 19, 17, 6706, 21, 5143, 575, 1500, 12824, 504, 12279, 12277, 5763, 1113, 3995, 5770, 2]
+// Dependencies: [32, 19, 17, 6648, 21, 5170, 575, 1500, 12789, 504, 12246, 12244, 5781, 1113, 4024, 5788, 2]
 // Exports: default
 
-// Module 19303 (ConjureHomeScreen)
+// Module 19295 (ConjureHomeScreen)
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6648 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c9;

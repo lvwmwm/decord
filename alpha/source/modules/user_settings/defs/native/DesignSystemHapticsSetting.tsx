@@ -1,12 +1,12 @@
-// Module ID: 18097
-// Function ID: 18098
+// Module ID: 18085
+// Function ID: 18086
 // Name: DesignSystemHapticsSetting
-// Dependencies: [8578, 1072, 11737, 18098, 2]
+// Dependencies: [8524, 1072, 11703, 18086, 2]
 
-// Module 18097 (DesignSystemHapticsSetting)
+// Module 18085 (DesignSystemHapticsSetting)
 import Constants from "Constants" /* 1072 */;
-import SettingsConstants from "SettingsConstants" /* 8578 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
+import SettingsConstants from "SettingsConstants" /* 8524 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

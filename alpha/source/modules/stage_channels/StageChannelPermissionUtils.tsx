@@ -1,20 +1,20 @@
-// Module ID: 6848
-// Function ID: 6849
+// Module ID: 6790
+// Function ID: 6791
 // Name: StageChannelPermissionUtils
-// Dependencies: [5076, 5010, 502, 4992, 5014, 5075, 4997, 1072, 1084, 5080, 5000, 504, 2]
-// Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanUpdateStageChannelModerators
+// Dependencies: [5103, 5037, 502, 5019, 5041, 5102, 5024, 1072, 1084, 5107, 5027, 504, 2]
+// Exports: canLurkerListen, createModeratorOverwrite, createOrUpdateModeratorOverwrite, isEmptyOverwrite, removeModeratorOverwrite, useCanCreateStageChannelByGuild, useCanModerateRequestToSpeak, useCanToggleRequestToSpeak, useCanUpdateStageChannelModerators
 
-// Module 6848 (StageChannelPermissionUtils)
+// Module 6790 (StageChannelPermissionUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 5000 */;
-import GuildRecord from "GuildRecord" /* 5010 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5080 */;
-import LurkingStore from "LurkingStore" /* 5076 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 5027 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import PermissionUtilsAll from "PermissionUtils" /* 5107 */;
+import LurkingStore from "LurkingStore" /* 5103 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
-import StageInstanceStore from "StageInstanceStore" /* 4997 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
+import StageInstanceStore from "StageInstanceStore" /* 5024 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ export function createModeratorOverwrite(id, MEMBER, arg2) {
     deny = tmp.deny;
   }
   if (deny == null) {
-    deny = tmp2(5080).NONE;
+    deny = tmp2(5107).NONE;
   }
   combine = BigFlagUtilsAll.combine;
   allow = undefined;
@@ -55,7 +55,7 @@ export function createModeratorOverwrite(id, MEMBER, arg2) {
     allow = tmp.allow;
   }
   if (allow == null) {
-    allow = tmp2(5080).NONE;
+    allow = tmp2(5107).NONE;
   }
   return obj;
 }
@@ -72,7 +72,7 @@ export function createOrUpdateModeratorOverwrite(id, type, deny) {
     deny = deny.deny;
   }
   if (deny == null) {
-    deny = tmp(5080).NONE;
+    deny = tmp(5107).NONE;
   }
   combine = BigFlagUtilsAll.combine;
   allow = undefined;
@@ -82,7 +82,7 @@ export function createOrUpdateModeratorOverwrite(id, type, deny) {
     allow = deny.allow;
   }
   if (allow == null) {
-    allow = tmp(5080).NONE;
+    allow = tmp(5107).NONE;
   }
   return obj;
 }
@@ -121,7 +121,7 @@ export function isEmptyOverwrite(arg0) {
   let equalsResult = obj.equals(allow, PermissionUtilsAll.NONE);
   if (equalsResult) {
     const tmpResult = BigFlagUtilsAll;
-    equalsResult = tmpResult.equals(deny, tmp(5080).NONE);
+    equalsResult = tmpResult.equals(deny, tmp(5107).NONE);
   }
   return equalsResult;
 }
@@ -169,6 +169,16 @@ export function useCanUpdateStageChannelModerators(id) {
       canResult1 = obj2.can(StageChannelPermissions.UPDATE_STAGE_CHANNEL_MODERATOR_PERMISSIONS, channel);
     }
     return canResult1;
+  }, items1);
+}
+export function useCanToggleRequestToSpeak(channel) {
+  _require = channel;
+  const items = [PermissionStore];
+  const items1 = [channel];
+  const obj = require("get initialized");
+  return obj.useStateFromStores(items, () => {
+    const tmp3 = PermissionStore.can(unpackModuleId.MANAGE_CHANNELS, channel) || PermissionStore.can(unpackModuleId.MANAGE_ROLES, channel);
+    return tmp3;
   }, items1);
 }
 export function useCanModerateRequestToSpeak(id) {

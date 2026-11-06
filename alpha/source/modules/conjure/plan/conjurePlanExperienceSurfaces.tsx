@@ -1,14 +1,14 @@
-// Module ID: 12949
-// Function ID: 12950
+// Module ID: 12914
+// Function ID: 12915
 // Name: conjurePlanExperienceSurfaces
-// Dependencies: [1113, 3995, 6983, 12950, 2]
+// Dependencies: [1113, 4024, 6925, 12915, 2]
 // Exports: conjurePlanDesignExperienceId, conjurePlanExperiencePlacement
 
-// Module 12949 (conjurePlanExperienceSurfaces)
+// Module 12914 (conjurePlanExperienceSurfaces)
 import intl2 from "intl" /* 1113 */;
-import _modDef3995 from "module_3995" /* 3995 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 12950 */;
+import _modDef4024 from "module_4024" /* 4024 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6925 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 12915 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanExperienceSurfaces.tsx");
@@ -21,7 +21,7 @@ export function conjurePlanExperiencePlacement(proposal, experience) {
     return null;
   } else {
     const intl = intl2.intl;
-    let closure_0 = intl.string(_modDef3995["6/3tGY"]);
+    let closure_0 = intl.string(_modDef4024["6/3tGY"]);
     let items = [];
     const surfaces3 = experience.surfaces;
     if (surfaces3.includes(ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL)) {

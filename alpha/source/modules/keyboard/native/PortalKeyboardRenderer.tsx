@@ -1,16 +1,16 @@
-// Module ID: 12586
-// Function ID: 12587
+// Module ID: 12551
+// Function ID: 12552
 // Name: PortalKeyboardRenderer
-// Dependencies: [19, 1495, 21, 5209, 5335, 1625, 1377, 12587, 5336, 5325, 7538, 7011, 1497, 5339, 10226, 2]
+// Dependencies: [19, 1495, 21, 5229, 5355, 1625, 1377, 12552, 5356, 5345, 7483, 6953, 1497, 5359, 10178, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 12586 (PortalKeyboardRenderer)
+// Module 12551 (PortalKeyboardRenderer)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import native from "native" /* 5209 */;
-import useKeyboardType from "useKeyboardType" /* 5335 */;
-import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 5336 */;
-import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 12587 */;
+import native from "native" /* 5229 */;
+import useKeyboardType from "useKeyboardType" /* 5355 */;
+import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 5356 */;
+import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 12552 */;
 import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;
 import size from "module_2" /* 2 */;
@@ -114,9 +114,9 @@ export function PortalKeyboardRenderer(portal) {
   }, []);
   const tmp5 = id;
   let tmp6 = dependencyMap;
-  let PortalKeyboardUIStore = id(5336).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = id(5356).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = id(5336).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = id(5356).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("renderers");
   const tmp8 = 0 === field1.length || field1[field1.length - 1] === id;
   dependencyMap = tmp8;
@@ -133,13 +133,13 @@ export function PortalKeyboardRenderer(portal) {
     }
     tmp3 = closure_6;
   }, items1);
-  const tmp11 = jsx(tmp5(5209).TransitionGroup, { items: memo, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
+  const tmp11 = jsx(tmp5(5229).TransitionGroup, { items: memo, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
   if (flag) {
     const obj3 = { children: tmp11 };
-    tmp10Result = tmp10(tmp5(5339).PortalKeyboard, obj3);
+    tmp10Result = tmp10(tmp5(5359).PortalKeyboard, obj3);
   } else {
     const obj4 = { value: true, children: tmp11 };
-    tmp10Result = tmp10(tmp5(10226).PortalKeyboardInModalContext.Provider, obj4);
+    tmp10Result = tmp10(tmp5(10178).PortalKeyboardInModalContext.Provider, obj4);
   }
   return tmp10Result;
 }

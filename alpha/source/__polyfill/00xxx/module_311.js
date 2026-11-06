@@ -19,7 +19,7 @@ import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
 
 const require = globalThis.__r;
-let importDefault;
+let importDefault, keyExtractor;
 
 function _isNativeReflectConstruct() {
   try {
@@ -107,7 +107,7 @@ class FlatList {
       if (num == null) {
         num = 1;
       }
-      let keyExtractor = tmp.props.keyExtractor;
+      keyExtractor = tmp.props.keyExtractor;
       if (keyExtractor == null) {
         keyExtractor = closure_2_1(closure_2_3[9]).keyExtractor;
       }
@@ -375,7 +375,7 @@ let items = [
       if (num == null) {
         num = 1;
       }
-      let keyExtractor = this.props.keyExtractor;
+      keyExtractor = this.props.keyExtractor;
       if (keyExtractor == null) {
         keyExtractor = require("get VirtualizedList").keyExtractor;
       }

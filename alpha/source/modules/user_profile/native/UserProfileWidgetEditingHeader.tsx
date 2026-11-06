@@ -1,20 +1,20 @@
-// Module ID: 16821
-// Function ID: 16822
+// Module ID: 16817
+// Function ID: 16818
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 502, 8900, 21, 5143, 575, 504, 5763, 1113, 5770, 9728, 8908, 5384, 16822, 2123, 8173, 12707, 2]
+// Dependencies: [19, 17, 502, 8846, 21, 5170, 575, 504, 5781, 1113, 5788, 9677, 8854, 5404, 15156, 2118, 8119, 12672, 2]
 // Exports: default
 
-// Module 16821 (UserProfileWidgetEditingHeader)
+// Module 16817 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import Constants from "Constants" /* 8900 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8908 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import Constants from "Constants" /* 8846 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8854 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -61,7 +61,7 @@ export default function UserProfileWidgetEditingHeader() {
       const obj2 = { userId, action: constants.PRESS_ADD_WIDGET };
       const result = obj.trackUserProfileEditAction(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(16822, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
+      obj3.openLazy(asyncRequire(15156, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
     }
   };
   const Button = require("components/Button/Button").Button;

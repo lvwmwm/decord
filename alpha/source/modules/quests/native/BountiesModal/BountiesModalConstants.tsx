@@ -1,10 +1,10 @@
-// Module ID: 17196
-// Function ID: 17197
+// Module ID: 17184
+// Function ID: 17185
 // Name: BountiesModalConstants
 // Dependencies: [2]
 // Exports: getBountyVideoEndAppStoreSheetHeight, getBountyVideoEndPeekClipHeight, getBountyVideoEndPeekScale, getBountyVideoEndPeekTargetScale
 
-// Module 17196 (BountiesModalConstants)
+// Module 17184 (BountiesModalConstants)
 import size from "module_2" /* 2 */;
 
 let tmp2;

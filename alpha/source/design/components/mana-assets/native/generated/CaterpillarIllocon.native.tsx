@@ -1,27 +1,27 @@
-// Module ID: 12917
-// Function ID: 12918
+// Module ID: 12882
+// Function ID: 12883
 // Name: CaterpillarIllocon
-// Dependencies: [19, 21, 12918, 12919, 12920, 7213, 5854, 2]
+// Dependencies: [19, 21, 12883, 12884, 12885, 7160, 5872, 2]
 // Exports: CaterpillarIllocon
 
-// Module 12917 (CaterpillarIllocon)
+// Module 12882 (CaterpillarIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import react_native from "react-native" /* 7213 */;
-import _modDef12918 from "module_12918" /* 12918 */;
-import _modDef12919 from "module_12919" /* 12919 */;
-import _modDef12920 from "module_12920" /* 12920 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import react_native from "react-native" /* 7160 */;
+import _modDef12883 from "module_12883" /* 12883 */;
+import _modDef12884 from "module_12884" /* 12884 */;
+import _modDef12885 from "module_12885" /* 12885 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12918 };
+let obj2 = { uri: _modDef12883 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef12919 };
-({ uri: _modDef12919 });
-obj[3] = { uri: _modDef12920 };
-({ uri: _modDef12920 });
+obj[2] = { uri: _modDef12884 };
+({ uri: _modDef12884 });
+obj[3] = { uri: _modDef12885 };
+({ uri: _modDef12885 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/CaterpillarIllocon.native.tsx");
 
@@ -43,6 +43,6 @@ export function CaterpillarIllocon(size) {
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(7213);
+  obj2 = num(7160);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 }

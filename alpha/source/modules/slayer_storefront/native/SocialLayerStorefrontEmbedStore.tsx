@@ -1,18 +1,18 @@
-// Module ID: 11758
-// Function ID: 11759
+// Module ID: 11724
+// Function ID: 11725
 // Name: SocialLayerStorefrontEmbedStore
-// Dependencies: [32, 7917, 9624, 502, 7034, 11759, 558, 504, 572, 2]
+// Dependencies: [32, 7871, 9573, 502, 6976, 11725, 558, 504, 572, 2]
 
-// Module 11758 (SocialLayerStorefrontEmbedStore)
+// Module 11724 (SocialLayerStorefrontEmbedStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11759 */;
+import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11725 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
-import WishlistStore from "WishlistStore" /* 9624 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
+import WishlistStore from "WishlistStore" /* 9573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SKUStore from "SKUStore" /* 7034 */;
+import SKUStore from "SKUStore" /* 6976 */;
 import size from "module_2" /* 2 */;
 
 let c9, closure_10, closure_9, diff1, set;

@@ -1,17 +1,17 @@
-// Module ID: 19594
-// Function ID: 19595
+// Module ID: 19590
+// Function ID: 19591
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 6981, 11419, 11417, 5817, 21, 11418, 1259, 1377, 551, 1652, 10275, 1705, 11408, 11909, 2]
+// Dependencies: [32, 19, 6923, 11381, 11379, 5835, 21, 11380, 1259, 1377, 551, 1652, 10227, 1705, 11370, 11875, 2]
 
-// Module 19594 (VoicePanelSystemUIManager)
+// Module 19590 (VoicePanelSystemUIManager)
 import react_native from "react-native" /* 1259 */;
-import CallConstants from "CallConstants" /* 5817 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11417 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11418 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11419 */;
+import CallConstants from "CallConstants" /* 5835 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11379 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11380 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11381 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6981 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -22,8 +22,8 @@ let c10;
 let c9;
 let tmp;
 let unpackModuleId;
-const StatusBarDefault = tmp(11408);
-const HomeIndicatorDefault = tmp(11909);
+const StatusBarDefault = tmp(11370);
+const HomeIndicatorDefault = tmp(11875);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const ParticipantTypes = CallConstants.ParticipantTypes;
@@ -189,7 +189,7 @@ const memoResult = react.memo(function VoicePanelSystemUIManager() {
   VoicePanelSystemUIManagerTsx1.__initData = tmp16;
   const items4 = [closure_13, , , ];
   const useAnimatedReaction = tmp15.useAnimatedReaction;
-  items4[1] = tmp14(10275).cheapWorkletShallowEqual;
+  items4[1] = tmp14(10227).cheapWorkletShallowEqual;
   items4[2] = tmp14(1705).scheduleOnRN;
   items4[3] = handleStateChange;
   c0 = undefined;

@@ -1,20 +1,20 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 18331
+// Function ID: 18332
 // Name: useChannelScreensFromNavigation
-// Dependencies: [32, 19, 4992, 5046, 5174, 1072, 4999, 5325, 5324, 5327, 2]
+// Dependencies: [32, 19, 5019, 5073, 5201, 1072, 5026, 5345, 5344, 5347, 2]
 // Exports: default, isActiveTabsGuilds
 
-// Module 18339 (useChannelScreensFromNavigation)
+// Module 18331 (useChannelScreensFromNavigation)
 import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4999 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5324 */;
-import RootNavigationRef from "RootNavigationRef" /* 5325 */;
-import useChatLayoutDefault from "useChatLayout" /* 5327 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5344 */;
+import RootNavigationRef from "RootNavigationRef" /* 5345 */;
+import useChatLayoutDefault from "useChatLayout" /* 5347 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

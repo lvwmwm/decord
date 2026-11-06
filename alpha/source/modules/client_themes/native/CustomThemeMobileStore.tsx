@@ -1,7 +1,7 @@
 // Module ID: 1238
 // Function ID: 1239
 // Name: CustomThemeMobileStore
-// Dependencies: [1193, 1192, 1194, 1231, 1082, 1239, 5207, 1196, 572, 504, 2]
+// Dependencies: [1193, 1192, 1194, 1231, 1082, 1239, 5227, 1196, 572, 504, 2]
 
 // Module 1238 (CustomThemeMobileStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -9,7 +9,7 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 5207 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 5227 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
@@ -98,7 +98,7 @@ class CustomThemeMobileStore extends PersistedStore {
       obj = { theme, customTheme: prop };
       const obj2 = { theme, customTheme: prop };
     } else {
-      obj = { theme: "Path", customTheme: "count" };
+      obj = { theme: "Array", customTheme: "channel" };
     }
     return obj;
   }

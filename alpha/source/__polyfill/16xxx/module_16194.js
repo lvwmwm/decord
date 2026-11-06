@@ -1,18 +1,13 @@
 // Module ID: 16194
 // Function ID: 16195
-// Dependencies: [16187]
+// Dependencies: [16183]
 
 // Module 16194
-import _mod16187 from "module_16187" /* 16187 */;
+import _mod16183 from "module_16183" /* 16183 */;
 
 
-export default function(arg0, arg1) {
-  try {
-    const self = this;
-    const self2 = this;
-    const str = new _mod16187(arg0, arg1).range || "*";
-    return str;
-  } catch (err) {
-    return null;
-  }
+export default (arg0, arg1, arg2) => {
+  const obj = new _mod16183(arg0, arg2);
+  const tmp = new _mod16183(arg1, arg2);
+  return obj.intersects(tmp, arg2);
 };

@@ -1,15 +1,15 @@
-// Module ID: 11848
-// Function ID: 11849
+// Module ID: 11814
+// Function ID: 11815
 // Name: AppChannelPermissionUtils
-// Dependencies: [2167, 1072, 7562, 1084, 5082, 2]
+// Dependencies: [2162, 1072, 7507, 1084, 5109, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission, useAppChannelBotUserId
 
-// Module 11848 (AppChannelPermissionUtils)
+// Module 11814 (AppChannelPermissionUtils)
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 5082 */;
-import useAppChannelApplication from "useAppChannelApplication" /* 7562 */;
-import ApplicationStore from "ApplicationStore" /* 2167 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 5109 */;
+import useAppChannelApplication from "useAppChannelApplication" /* 7507 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

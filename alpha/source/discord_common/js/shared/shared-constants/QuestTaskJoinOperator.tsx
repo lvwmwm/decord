@@ -1,9 +1,9 @@
-// Module ID: 8004
-// Function ID: 8005
+// Module ID: 7958
+// Function ID: 7959
 // Name: QuestTaskJoinOperator
 // Dependencies: [2]
 
-// Module 8004 (QuestTaskJoinOperator)
+// Module 7958 (QuestTaskJoinOperator)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestTaskJoinOperator.tsx");

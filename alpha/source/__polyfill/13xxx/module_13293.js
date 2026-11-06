@@ -1,85 +1,98 @@
 // Module ID: 13293
 // Function ID: 13294
-// Dependencies: [13294, 13291]
-// Exports: extractTraceparentData, generateSentryTraceHeader, propagationContextFromHeaders
+// Dependencies: [13283, 13260, 13255]
+// Exports: logSpanEnd, logSpanStart
 
 // Module 13293
-import generatePropagationContext from "generatePropagationContext" /* 13291 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 13294 */;
+import _mod13260 from "module_13260" /* 13260 */;
+import _mod13283 from "module_13283" /* 13283 */;
 
-const regExp = new RegExp("^[ \\t]*([0-9a-f]{32})?-?([0-9a-f]{16})?-?([01])?[ \\t]*$");
 
-export const TRACEPARENT_REGEXP = regExp;
-export function extractTraceparentData(str) {
-  const tmp = str;
-  if (tmp) {
-    const match = str.match(regExp);
-    if (match) {
-      let flag = true;
-      if ("1" !== match[3]) {
-        if ("0" === match[3]) {
-          flag = false;
-        }
-      }
-      return { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
+export function logSpanEnd(spanContext) {
+  if (_mod13283.DEBUG_BUILD) {
+    const tmpResult = _mod13260;
+    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
+    const description = spanToJSONResult.description;
+    let str = "< unknown name >";
+    if (undefined !== description) {
+      str = description;
     }
+    const op = spanToJSONResult.op;
+    let str2 = "< unknown op >";
+    if (undefined !== op) {
+      str2 = op;
+    }
+    const spanId = spanContext.spanContext().spanId;
+    let str3 = "";
+    const tmpResult2 = _mod13260;
+    if (tmpResult2.getRootSpan(spanContext) === spanContext) {
+      str3 = "root ";
+    }
+    const _HermesInternal = HermesInternal;
+    const combined = "[Tracing] Finishing \"" + str2 + "\" " + str3 + "span \"" + str + "\" with ID " + spanId;
+    const logger = tmp(13255).logger;
+    logger.log(combined);
   }
 }
-export function generateSentryTraceHeader() {
-  let traceId = arg0;
-  if (arg0 === undefined) {
-    const obj = generatePropagationContext;
-    traceId = obj.generateTraceId();
-  }
-  let spanId = arg1;
-  if (arg1 === undefined) {
-    const obj2 = generatePropagationContext;
-    spanId = obj2.generateSpanId();
-  }
-  let str = "";
-  if (undefined !== arg2) {
-    let str2 = "-0";
-    if (arg2) {
-      str2 = "-1";
+export function logSpanStart(spanContext) {
+  let description2;
+  let op2;
+  if (_mod13283.DEBUG_BUILD) {
+    const tmpResult = _mod13260;
+    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
+    const description = spanToJSONResult.description;
+    let str = "< unknown name >";
+    if (undefined !== description) {
+      str = description;
     }
-    str = str2;
-  }
-  return "" + traceId + "-" + spanId + str;
-}
-export function propagationContextFromHeaders(str, arg1) {
-  let parentSampled;
-  let tmp4Result;
-  let tmp4Result3;
-  let tmp4Result4;
-  let tmp;
-  if (str) {
-    const match = str.match(regExp);
-    if (match) {
-      let flag = true;
-      if ("1" !== match[3]) {
-        if ("0" === match[3]) {
-          flag = false;
-        }
+    const op = spanToJSONResult.op;
+    let str2 = "< unknown op >";
+    if (undefined !== op) {
+      str2 = op;
+    }
+    const parent_span_id = spanToJSONResult.parent_span_id;
+    const spanId = spanContext.spanContext().spanId;
+    const tmpResult4 = _mod13260;
+    const spanIsSampledResult = tmpResult4.spanIsSampled(spanContext);
+    const tmpResult5 = _mod13260;
+    const rootSpan = tmpResult5.getRootSpan(spanContext);
+    let str3 = "unsampled";
+    if (spanIsSampledResult) {
+      str3 = "sampled";
+    }
+    let str5 = "";
+    if (rootSpan === spanContext) {
+      str5 = "root ";
+    }
+    const _HermesInternal = HermesInternal;
+    const _HermesInternal2 = HermesInternal;
+    const combined = "[Tracing] Starting " + str3 + " " + str5 + "span";
+    const items = ["op: " + str2, , ];
+    const _HermesInternal3 = HermesInternal;
+    items[1] = "name: " + str;
+    const _HermesInternal4 = HermesInternal;
+    items[2] = "ID: " + spanId;
+    if (parent_span_id) {
+      const _HermesInternal5 = HermesInternal;
+      items.push("parent ID: " + parent_span_id);
+    }
+    if (rootSpan !== spanContext) {
+      const tmpResult6 = _mod13260;
+      ({ op: op2, description: description2 } = tmpResult6.spanToJSON(rootSpan));
+      const _HermesInternal6 = HermesInternal;
+      tmpResult6.spanToJSON(rootSpan);
+      items.push("root ID: " + rootSpan.spanContext().spanId);
+      if (op2) {
+        const _HermesInternal7 = HermesInternal;
+        items.push("root op: " + op2);
       }
-      tmp = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
-      const obj = { traceId: match[1], parentSampled: flag, parentSpanId: match[2] };
-    }
-  }
-  const obj2 = BAGGAGE_HEADER_NAME;
-  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
-  if (tmp) {
-    if (tmp.traceId) {
-      const obj3 = { traceId: null, parentSpanId: null, spanId: tmp4Result.generateSpanId(), sampled: parentSampled, dsc: result };
-      ({ traceId: obj7.traceId, parentSpanId: obj7.parentSpanId, parentSampled } = tmp);
-      tmp4Result = generatePropagationContext;
-      if (!result) {
-        result = {};
+      if (description2) {
+        const _HermesInternal8 = HermesInternal;
+        items.push("root description: " + description2);
       }
-      return obj3;
     }
+    const logger = tmp(13255).logger;
+    const _HermesInternal9 = HermesInternal;
+    logger.log("" + combined + "\n  " + items.join("\n  "));
   }
-  const obj4 = { traceId: tmp4Result3.generateTraceId(), spanId: tmp4Result4.generateSpanId() };
-  tmp4Result3 = generatePropagationContext;
-  tmp4Result4 = generatePropagationContext;
-  return obj4;
 }

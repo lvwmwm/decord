@@ -1,18 +1,18 @@
-// Module ID: 19302
-// Function ID: 19303
+// Module ID: 19294
+// Function ID: 19295
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 2191, 8578, 21, 1113, 1380, 17754, 2176, 504, 9826, 11737, 16859, 2]
+// Dependencies: [19, 2186, 8524, 21, 1113, 1380, 17743, 2171, 504, 9777, 11703, 16847, 2]
 // Exports: default
 
-// Module 19302 (SettingsOverviewScreen)
+// Module 19294 (SettingsOverviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl8 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import SettingsConstants from "SettingsConstants" /* 8578 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17754 */;
+import SettingsConstants from "SettingsConstants" /* 8524 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17743 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

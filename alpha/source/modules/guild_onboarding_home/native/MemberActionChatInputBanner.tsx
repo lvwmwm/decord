@@ -1,9 +1,9 @@
-// Module ID: 14066
-// Function ID: 14067
+// Module ID: 14043
+// Function ID: 14044
 // Name: MemberActionChatInputBanner
-// Dependencies: [32, 19, 17, 5144, 6934, 4992, 5055, 1072, 1388, 21, 5143, 575, 563, 5788, 5763, 1113, 1187, 13431, 5854, 1411, 5089, 14067, 7541, 1652, 5380, 14068, 7124, 1099, 14065, 7539, 2]
+// Dependencies: [32, 19, 17, 5171, 6876, 5019, 5082, 1072, 1388, 21, 5170, 575, 563, 5806, 5781, 1113, 1187, 13405, 5872, 1411, 5116, 14044, 7486, 1652, 5400, 14045, 7068, 1099, 14042, 7484, 2]
 
-// Module 14066 (MemberActionChatInputBanner)
+// Module 14043 (MemberActionChatInputBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -11,23 +11,23 @@ import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5089 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import useChannelNameDefault from "useChannelName" /* 5788 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import Pressables from "Pressables" /* 7124 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13431 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14065 */;
-import MemberActionUtils from "MemberActionUtils" /* 14067 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14068 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import useChannelNameDefault from "useChannelName" /* 5806 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import Pressables from "Pressables" /* 7068 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13405 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14042 */;
+import MemberActionUtils from "MemberActionUtils" /* 14044 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14045 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import EmojiStore from "EmojiStore" /* 6934 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import EmojiStore from "EmojiStore" /* 6876 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ let obj3;
 let size;
 let size1;
 let tmp;
-const GuildOnboardingHomeTypes = tmp(7541);
+const GuildOnboardingHomeTypes = tmp(7486);
 function ActionChannelInfo(action) {
   let MkzlDL;
   let format;
@@ -55,7 +55,7 @@ function ActionChannelInfo(action) {
   const obj = action(563);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(action.channelId));
   const tmp4 = useChannelNameDefault(stateFromStores, true);
-  const Text = action(5763).Text;
+  const Text = action(5781).Text;
   const tmp5 = closure_12;
   if (null == stateFromStores) {
     const obj2 = { variant: "footnote/normal", color: "text-default", children: format(MkzlDL, obj3) };
@@ -121,7 +121,7 @@ function ChannelActionEmoji(emoji) {
       const tmp5Result6 = UnicodeEmojisDefault;
       if (null != getByName(tmp5Result6.convertSurrogateToName(name, false))) {
         const obj6 = { style: tmp.textEmoji, variant: "heading-lg/medium", children: name };
-        tmp2Result = tmp2(tmp3(5763).Text, obj6);
+        tmp2Result = tmp2(tmp3(5781).Text, obj6);
       }
     }
   }
@@ -431,7 +431,7 @@ let closure_18 = { code: "(function MemberActionChatInputBannerTsx1(){let[useRed
 let closure_19 = { code: "(function MemberActionChatInputBannerTsx2(){let[useReducedMotion,nextHeight,withDelay,isViewAction,completed,withTiming,DECELERATED_EASING]=this.__closure;if(useReducedMotion){return{height:nextHeight.get()};}return{height:withDelay(!isViewAction&&completed?1200:0,withTiming(nextHeight.get(),{duration:400,easing:DECELERATED_EASING}))};})" };
 const memoResult = react.memo(function MemberActionChatInputBannerGuarded(channel) {
   channel = channel.channel;
-  const obj = channel(7539);
+  const obj = channel(7484);
   const canSeeOnboardingHome = obj.useCanSeeOnboardingHome(channel.guild_id);
   const items = [GuildMemberStore];
   const obj2 = channel(563);
@@ -444,7 +444,7 @@ const memoResult = react.memo(function MemberActionChatInputBannerGuarded(channe
     return true === isPending;
   });
   let tmp3 = null;
-  const obj3 = channel(14067);
+  const obj3 = channel(14044);
   if (!obj3.useAllActionsCompleted(channel.guild_id)) {
     tmp3 = null;
     if (!stateFromStores) {

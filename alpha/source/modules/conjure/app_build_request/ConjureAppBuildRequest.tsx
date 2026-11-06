@@ -1,19 +1,19 @@
-// Module ID: 12822
-// Function ID: 12823
+// Module ID: 12787
+// Function ID: 12788
 // Name: ConjureAppBuildRequest
-// Dependencies: [32, 19, 6982, 1113, 3995, 12823, 12811, 10499, 12825, 2]
+// Dependencies: [32, 19, 6924, 1113, 4024, 12788, 12776, 10451, 12790, 2]
 // Exports: appBuildRequestSentToast, useConjureAppBuildRequestForm
 
-// Module 12822 (ConjureAppBuildRequest)
+// Module 12787 (ConjureAppBuildRequest)
 import intl2 from "intl" /* 1113 */;
-import _modDef3995 from "module_3995" /* 3995 */;
-import createNonce from "createNonce" /* 10499 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12811 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12823 */;
-import conjureSendToProject from "conjureSendToProject" /* 12825 */;
+import _modDef4024 from "module_4024" /* 4024 */;
+import createNonce from "createNonce" /* 10451 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 12776 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 12788 */;
+import conjureSendToProject from "conjureSendToProject" /* 12790 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
 import size from "module_2" /* 2 */;
 
 let content, dependencyMap, importDefault, set;
@@ -29,7 +29,7 @@ export function appBuildRequestSentToast(arr) {
   const intl = intl2.intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { names: mapped.join(", ") };
-  const RZO35O = _modDef3995.RZO35O;
+  const RZO35O = _modDef4024.RZO35O;
   mapped = arr.map((name) => name.name);
   return formatToPlainString(RZO35O, obj);
 }

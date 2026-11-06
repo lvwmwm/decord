@@ -1,10 +1,10 @@
-// Module ID: 8498
-// Function ID: 8499
+// Module ID: 8444
+// Function ID: 8445
 // Name: MenuTypes
-// Dependencies: [2, 5836]
+// Dependencies: [2, 5854]
 
-// Module 8498 (MenuTypes)
-import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5836 */;
+// Module 8444 (MenuTypes)
+import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5854 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/in_app_reports/MenuTypes.tsx");

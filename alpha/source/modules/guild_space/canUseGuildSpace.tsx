@@ -1,13 +1,13 @@
-// Module ID: 7544
-// Function ID: 7545
+// Module ID: 7489
+// Function ID: 7490
 // Name: canUseGuildSpace
-// Dependencies: [5014, 5075, 1072, 504, 7545, 2]
+// Dependencies: [5041, 5102, 1072, 504, 7490, 2]
 // Exports: canUseGuildSpace, isGuildSpaceAdmin, useCanUseGuildSpace, useIsGuildSpaceAdmin
 
-// Module 7544 (canUseGuildSpace)
+// Module 7489 (canUseGuildSpace)
 import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import PermissionStore from "PermissionStore" /* 5075 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PermissionStore from "PermissionStore" /* 5102 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

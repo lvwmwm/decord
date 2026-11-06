@@ -1,15 +1,15 @@
-// Module ID: 5170
-// Function ID: 5171
+// Module ID: 5197
+// Function ID: 5198
 // Name: HexagonCampaignUtils
-// Dependencies: [5168, 2112, 1405, 1404, 1391, 1393, 2]
-// Exports: getHexagonCampaignPerkAvailability, getHexagonCampaignPerkCutoffMs, getHexagonCampaignRestoredDisplayNameStyles, hasHexagonCampaignDisplayNameFont, hasPerkOnlyFromHexagonCampaign, isEnrolledInHexagonCampaign, isHexagonCampaignClientThemePreset, isHexagonCampaignDisplayNameStyle, isHexagonCampaignOver, isHexagonCampaignPerkExpired, isHexagonCampaignPerkPremiumOnly, isHexagonCampaignTakeoverOver
+// Dependencies: [5195, 2107, 1396, 1395, 1391, 1398, 2]
+// Exports: getHexagonCampaignPerkAvailability, getHexagonCampaignPerkCutoffMs, getHexagonCampaignRestoredDisplayNameStyles, hasHexagonCampaignDisplayNameFont, isEnrolledInHexagonCampaign, isHexagonCampaignClientThemePreset, isHexagonCampaignDisplayNameStyle, isHexagonCampaignOver, isHexagonCampaignPerkExpired, isHexagonCampaignPerkPremiumOnly, isHexagonCampaignTakeoverOver
 
-// Module 5170 (HexagonCampaignUtils)
+// Module 5197 (HexagonCampaignUtils)
 import PerksStateUtils from "PerksStateUtils" /* 1391 */;
-import DisplayNameFont from "DisplayNameFont" /* 1404 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1405 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5168 */;
+import DisplayNameFont from "DisplayNameFont" /* 1395 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1396 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5195 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -21,7 +21,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const user = tmp(1393);
+const user = tmp(1398);
 ({ HEXAGON_CAMPAIGN_CLIENT_THEME_PRESET_IDS: c2, HEXAGON_CAMPAIGN_DISPLAY_NAME_FONT: c3, HEXAGON_CAMPAIGN_END_AT_MS: closure_4, HEXAGON_CAMPAIGN_NON_PREMIUM_CUTOFF_AT_MS: hasOwnProperty, HEXAGON_CAMPAIGN_PERK_MINIMUM_PREMIUM_TYPE: metroRequire, HEXAGON_CAMPAIGN_PERK_TO_PERK: metroImportDefault, HEXAGON_CAMPAIGN_PREMIUM_CUTOFF_AT_MS: metroImportAll, HexagonCampaignPerkAvailability: c9 } = HexagonCampaignConstants);
 const result = size.fileFinishedImporting("modules/hexagon_campaign/HexagonCampaignUtils.tsx");
 
@@ -121,7 +121,7 @@ export function getHexagonCampaignRestoredDisplayNameStyles(canUsePremiumProfile
       const tmp5 = require;
       if (obj.fontId === DisplayNameFont.DisplayNameFont.DEFAULT) {
         let tmp7;
-        if (obj.effectId === tmp5(1405).DisplayNameEffect.SOLID) {
+        if (obj.effectId === tmp5(1396).DisplayNameEffect.SOLID) {
           tmp7 = null;
         }
         return tmp7;
@@ -180,15 +180,4 @@ export function isEnrolledInHexagonCampaign(currentUser, CLIENT_THEME) {
   const perkSource = getPerkSource(perks, metroImportDefault[CLIENT_THEME]);
   const hasItem = null != perkSource && perkSource.includes(user.PerkSource.SOURCE_HEXAGON_CAMPAIGN);
   return hasItem;
-}
-export function hasPerkOnlyFromHexagonCampaign(currentUser, APP_ICON) {
-  let perks;
-  const getPerkSource = PerksStateUtils.getPerkSource;
-  PerksStateUtils;
-  if (currentUser != null) {
-    perks = currentUser.perks;
-  }
-  const perkSource = getPerkSource(perks, metroImportDefault[APP_ICON]);
-  const everyResult = null != perkSource && perkSource.length > 0 && perkSource.every((item) => item === user.PerkSource.SOURCE_HEXAGON_CAMPAIGN);
-  return everyResult;
 }

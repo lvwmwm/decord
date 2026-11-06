@@ -1,9 +1,9 @@
-// Module ID: 7013
-// Function ID: 7014
+// Module ID: 6955
+// Function ID: 6956
 // Name: VoicePanelStore
 // Dependencies: [1254, 1259, 2]
 
-// Module 7013 (VoicePanelStore)
+// Module 6955 (VoicePanelStore)
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
@@ -168,9 +168,9 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
         });
       });
     },
-    isChannelOpen(arg0) {
+    isChannelOpen(id) {
       const voicePanelsOpened = closure_1().voicePanelsOpened;
-      return voicePanelsOpened.has(arg0);
+      return voicePanelsOpened.has(id);
     },
     setChannelPanelPIP(channelId, arg1) {
       closure_1 = arg1;

@@ -1,12 +1,12 @@
-// Module ID: 17748
-// Function ID: 17749
+// Module ID: 17737
+// Function ID: 17738
 // Name: AndroidNotificationSettingsStore
-// Dependencies: [5, 1254, 1377, 11102, 1259, 5058, 2]
+// Dependencies: [5, 1254, 1377, 11055, 1259, 5085, 2]
 // Exports: initializeAndroidNotificationSettingsStore, setAndroidMessageNotificationsEnabled, setAndroidNotificationLightsEnabled, setAndroidNotificationSoundsEnabled, setAndroidNotificationVibrationsEnabled, useAndroidMessageNotificationsEnabled, useAndroidNotificationLightsEnabled, useAndroidNotificationSoundsEnabled, useAndroidNotificationVibrationsEnabled
 
-// Module 17748 (AndroidNotificationSettingsStore)
-import _slicedToArray from "_slicedToArray" /* 5058 */;
-import PushNotificationDefault from "PushNotification" /* 11102 */;
+// Module 17737 (AndroidNotificationSettingsStore)
+import _slicedToArray from "_slicedToArray" /* 5085 */;
+import PushNotificationDefault from "PushNotification" /* 11055 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
@@ -145,7 +145,7 @@ let obj = function _initializeAndroidNotificationSettingsStore() {
   });
   return obj(...arguments);
 };
-let closure_4 = module_1254.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "Path", isSoundsEnabled: "apply", isNotifyEveryTime: "sr" }));
+let closure_4 = module_1254.createWithEqualityFn(() => ({ isLightsEnabled: "Array", isVibrationsEnabled: "Path", isSoundsEnabled: "channel", isNotifyEveryTime: "location" }));
 let result = size.fileFinishedImporting("modules/user_settings/notifications/native/stores/AndroidNotificationSettingsStore.tsx");
 
 export function initializeAndroidNotificationSettingsStore() {

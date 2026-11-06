@@ -1,22 +1,22 @@
-// Module ID: 17801
-// Function ID: 17802
+// Module ID: 17790
+// Function ID: 17791
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1385, 10167, 21, 5143, 10168, 7204, 1113, 17802, 15586, 504, 2112, 17803, 2]
+// Dependencies: [32, 19, 17, 1385, 10118, 21, 5170, 10119, 7151, 1113, 17791, 15580, 504, 2107, 17792, 2]
 // Exports: default
 
-// Module 17801 (AppIconRows)
+// Module 17790 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2112 */;
-import AppIconConstants from "AppIconConstants" /* 10167 */;
-import AppIconUtils from "AppIconUtils" /* 15586 */;
-import AppIconRowDefault from "AppIconRow" /* 17802 */;
-import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 17803 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2107 */;
+import AppIconConstants from "AppIconConstants" /* 10118 */;
+import AppIconUtils from "AppIconUtils" /* 15580 */;
+import AppIconRowDefault from "AppIconRow" /* 17791 */;
+import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 17792 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const react = react2;
@@ -27,7 +27,7 @@ let c9;
 let tmp2;
 let unpackModuleId;
 const intl4 = tmp2(1113);
-const AppIconTypes = tmp2(10168);
+const AppIconTypes = tmp2(10119);
 function BackwardsCompatibleAppIconRows(arg0) {
   let TableRowGroup;
   let _undefined;
@@ -66,7 +66,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(7204).TableRowGroup;
+    TableRowGroup = merged(7151).TableRowGroup;
     intl = merged(1113).intl;
     return closure_9(View, obj);
   }

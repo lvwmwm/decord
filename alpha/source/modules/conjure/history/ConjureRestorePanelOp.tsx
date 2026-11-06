@@ -1,15 +1,15 @@
-// Module ID: 12401
-// Function ID: 12402
+// Module ID: 12366
+// Function ID: 12367
 // Name: ConjureRestorePanelOp
 // Dependencies: [2]
 // Exports: restorePanelEnvironments
 
-// Module 12401 (ConjureRestorePanelOp)
+// Module 12366 (ConjureRestorePanelOp)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/history/ConjureRestorePanelOp.tsx");
 
 export const RESTORE_WINDOW_DAYS = 30;
 export function restorePanelEnvironments(arg0) {
-  return "user" === arg0 ? ["stable"] : ["stable", "preview"];
+  return arg0 ? ["stable", "preview"] : ["stable"];
 }

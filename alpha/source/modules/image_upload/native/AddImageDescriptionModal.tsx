@@ -1,21 +1,21 @@
-// Module ID: 14748
-// Function ID: 14749
+// Module ID: 14725
+// Function ID: 14726
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 7846, 8353, 14749, 21, 5143, 575, 504, 1493, 1499, 5745, 11602, 9967, 1113, 9934, 14747, 7392, 10329, 2]
+// Dependencies: [32, 19, 17, 7800, 8298, 14726, 21, 5170, 575, 504, 1493, 1499, 5765, 11564, 9918, 1113, 9884, 14724, 7339, 10281, 2]
 // Exports: default
 
-// Module 14748 (AddImageDescriptionModal)
+// Module 14725 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import DraftStore from "DraftStore" /* 7846 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10329 */;
-import AttachmentConstants from "AttachmentConstants" /* 14749 */;
+import DraftStore from "DraftStore" /* 7800 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10281 */;
+import AttachmentConstants from "AttachmentConstants" /* 14726 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8353 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8298 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let ChannelMessage, navigation;

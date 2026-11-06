@@ -1,11 +1,11 @@
-// Module ID: 9983
-// Function ID: 9984
+// Module ID: 9934
+// Function ID: 9935
 // Name: useChannelChatUnread
-// Dependencies: [6980, 504, 2]
+// Dependencies: [6922, 504, 2]
 // Exports: useChannelChatUnread
 
-// Module 9983 (useChannelChatUnread)
-import ReadStateStore from "ReadStateStore" /* 6980 */;
+// Module 9934 (useChannelChatUnread)
+import ReadStateStore from "ReadStateStore" /* 6922 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

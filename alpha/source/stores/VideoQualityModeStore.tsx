@@ -1,9 +1,9 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16140
+// Function ID: 16141
 // Name: VideoQualityModeStore
 // Dependencies: [1072, 504, 572, 2]
 
-// Module 16144 (VideoQualityModeStore)
+// Module 16140 (VideoQualityModeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,19 +1,20 @@
-// Module ID: 18336
-// Function ID: 18337
+// Module ID: 18328
+// Function ID: 18329
 // Name: useAppFrame
-// Dependencies: [17, 5143, 575, 1627, 5327, 2]
+// Dependencies: [17, 5170, 575, 1627, 5347, 5127, 2]
 // Exports: default
 
-// Module 18336 (useAppFrame)
+// Module 18328 (useAppFrame)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useChatLayoutDefault from "useChatLayout" /* 5327 */;
-import createStyles from "createStyles" /* 5143 */;
+import DeviceUtils from "DeviceUtils" /* 5127 */;
+import useChatLayoutDefault from "useChatLayout" /* 5347 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;
-let closure_3 = createStyles.createStyles((marginTop) => {
+let closure_4 = createStyles.createStyles((marginTop) => {
   let num;
   let obj4;
   const obj = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, paddingTop: num };
@@ -31,6 +32,12 @@ let closure_3 = createStyles.createStyles((marginTop) => {
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/useAppFrame.tsx");
 
 export default function useAppFrame() {
+  let body;
+  let border;
+  let container;
+  let content;
+  let obj5;
+  let topBorder;
   let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
@@ -40,13 +47,25 @@ export default function useAppFrame() {
     flag = true;
   }
   const rect = useSafeAreaInsetsDefault();
-  const isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
-  closure_3(rect.top);
-  const obj2 = { insets: rect, styles: null };
+  let isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
+  ({ container, content, body, border, topBorder } = closure_4(rect.top));
+  closure_4(rect.top);
   if (flag) {
-    if (isChatLockedOpen) {
-      obj2.styles = {};
-      return obj2;
+    if (!isChatLockedOpen) {
+      const obj2 = DeviceUtils;
+      isChatLockedOpen = obj2.isDuo();
     }
+    flag = isChatLockedOpen;
   }
+  if (flag) {
+    flag = rect.right > 0;
+  }
+  const obj3 = { insets: rect, hasFrame: flag, styles: obj5 };
+  if (flag) {
+    obj5 = { container, content, body, border, topBorder };
+    const obj4 = { container, content, body, border, topBorder };
+  } else {
+    obj5 = {};
+  }
+  return obj3;
 };

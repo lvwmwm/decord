@@ -1,8 +1,8 @@
-// Module ID: 5294
-// Function ID: 5295
+// Module ID: 5314
+// Function ID: 5315
 // Dependencies: [2]
 
-// Module 5294
+// Module 5314
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/rive/native/ExpressiveButton.riv.js");

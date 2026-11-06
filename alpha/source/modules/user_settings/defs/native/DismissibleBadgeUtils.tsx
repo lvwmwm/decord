@@ -1,13 +1,13 @@
-// Module ID: 16894
-// Function ID: 16895
+// Module ID: 16882
+// Function ID: 16883
 // Name: DismissibleBadgeUtils
-// Dependencies: [32, 19, 4989, 21, 7711, 16893, 2]
+// Dependencies: [32, 19, 5016, 21, 7664, 16881, 2]
 // Exports: createDismissibleBadgePreNavigationAction, createDismissibleBadgeRouteProps
 
-// Module 16894 (DismissibleBadgeUtils)
+// Module 16882 (DismissibleBadgeUtils)
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16893 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16881 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,8 +20,8 @@ const jsx = Fragment.jsx;
 let closure_7 = [];
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/DismissibleBadgeUtils.tsx");
 
-export function createDismissibleBadgePreNavigationAction(TINY_BRONCO_SETTINGS, useShouldShowAgeNotice) {
-  let closure_0 = TINY_BRONCO_SETTINGS;
+export function createDismissibleBadgePreNavigationAction(CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE, useShouldShowAgeNotice) {
+  let closure_0 = CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE;
   let tmp = useShouldShowAgeNotice;
   if (useShouldShowAgeNotice === undefined) {
     tmp = useAlwaysShow;

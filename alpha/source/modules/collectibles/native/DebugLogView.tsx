@@ -1,18 +1,18 @@
-// Module ID: 18160
-// Function ID: 18161
+// Module ID: 18152
+// Function ID: 18153
 // Name: DebugLogView
-// Dependencies: [19, 17, 5766, 7879, 21, 5143, 575, 504, 5763, 2]
+// Dependencies: [19, 17, 5784, 7833, 21, 5170, 575, 504, 5781, 2]
 // Exports: default
 
-// Module 18160 (DebugLogView)
+// Module 18152 (DebugLogView)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
+import Text_Text from "Text/Text" /* 5781 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5766 */;
-import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7879 */;
+import DevSettingsStore from "DevSettingsStore" /* 5784 */;
+import CollectiblesDebugStore from "CollectiblesDebugStore" /* 7833 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -64,7 +64,7 @@ export default function DebugLogView() {
       const obj2 = { style: tmp.debugLogContainer, children: items4 };
       const obj3 = { style: tmp.debugLogHeader, children: items3 };
       obj5 = { color: "#ffffff" };
-      const Text = tmp2(5763).Text;
+      const Text = tmp2(5781).Text;
       const merged = Object.assign(tmp.debugLogText);
       items2 = ["Debug Log (", arr.length, " entries)"];
       items3 = [closure_9(Text, obj4), ];
@@ -73,7 +73,7 @@ export default function DebugLogView() {
               closure_1();
             },
         style: tmp.clearButton,
-        children: closure_10(arr(5763).Text, obj7)
+        children: closure_10(arr(5781).Text, obj7)
       };
       obj7 = { variant: "body-xs/semibold", style: tmp.clearButtonText, children: "Clear" };
       items3[1] = closure_10(closure_5, obj6);

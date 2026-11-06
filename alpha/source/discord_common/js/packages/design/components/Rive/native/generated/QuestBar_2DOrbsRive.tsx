@@ -1,13 +1,13 @@
-// Module ID: 5305
-// Function ID: 5306
+// Module ID: 5325
+// Function ID: 5326
 // Name: QuestBar_2DOrbsRive
-// Dependencies: [109, 19, 21, 5217, 5306, 5270, 2]
+// Dependencies: [109, 19, 21, 5237, 5326, 5290, 2]
 // Exports: QuestBar_2DOrbsRive
 
-// Module 5305 (QuestBar_2DOrbsRive)
+// Module 5325 (QuestBar_2DOrbsRive)
 import Fragment from "Fragment" /* 21 */;
-import BaseRive2 from "BaseRive" /* 5217 */;
-import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5270 */;
+import BaseRive2 from "BaseRive" /* 5237 */;
+import RiveErrorBoundary2 from "RiveErrorBoundary" /* 5290 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

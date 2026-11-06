@@ -74,7 +74,7 @@ export function useAnimatedStyle(pnpm_indexTsx1, items2, arg2, arg3) {
   if (!tmp3.current) {
     let tmp9Result = tmp9(1839);
     const initialUpdaterRunResult = tmp9Result.initialUpdaterRun(pnpm_indexTsx1);
-    const obj3 = { initial: obj4, remoteState: tmp9Result4.makeShareable(obj5), viewDescriptors: tmp9Result5.makeViewDescriptorsSet(), styleUpdaterContainer: { current: "ti" } };
+    const obj3 = { initial: obj4, remoteState: tmp9Result4.makeShareable(obj5), viewDescriptors: tmp9Result5.makeViewDescriptorsSet(), styleUpdaterContainer: { current: "r" } };
     obj4 = { value: initialUpdaterRunResult, updater: pnpm_indexTsx1 };
     obj5 = { last: initialUpdaterRunResult, animations: {}, isAnimationCancelled: false, isAnimationRunning: false };
     tmp9Result4 = tmp9(1705);

@@ -1,20 +1,20 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 10955
+// Function ID: 10956
 // Name: DetailedGuildIdentityUserRow
-// Dependencies: [19, 17, 1385, 21, 5143, 575, 6179, 5197, 9353, 1187, 504, 8322, 7119, 2]
+// Dependencies: [19, 17, 1385, 21, 5170, 575, 6199, 5224, 9299, 1187, 504, 8267, 7063, 2]
 
-// Module 11003 (DetailedGuildIdentityUserRow)
+// Module 10955 (DetailedGuildIdentityUserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5197 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6179 */;
-import DiscordTagDefault from "DiscordTag" /* 9353 */;
+import UserUtilsDefault from "UserUtils" /* 5224 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6199 */;
+import DiscordTagDefault from "DiscordTag" /* 9299 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -98,7 +98,7 @@ const memoResult1 = react.memo(function DetailedGuildIdentityUserRow(arrow) {
     let tmp4Result;
     if (deprecatedFormRow) {
       const obj2 = { accessibilityLabel, disabled, leading, label: closure_5(closure_8, obj4), onPress, subLabel, trailing, accessibilityRole, accessibilityState };
-      const FormRow = tmp(8322).FormRow;
+      const FormRow = tmp(8267).FormRow;
       if (leading == null) {
         const obj3 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
         const Avatar2 = tmp(1187).Avatar;
@@ -109,7 +109,7 @@ const memoResult1 = react.memo(function DetailedGuildIdentityUserRow(arrow) {
     } else {
       const obj5 = { accessibilityLabel, arrow, disabled, end, icon: tmp4Result2, label: closure_5(closure_8, obj7), onPress, start, subLabel, trailing, accessibilityRole, accessibilityState };
       tmp4Result2 = leading;
-      const TableRow = tmp(7119).TableRow;
+      const TableRow = tmp(7063).TableRow;
       if (leading == null) {
         const obj6 = { source: stateFromStores.getAvatarSource(guildId), size: native.AvatarSizes.SMALL };
         const Avatar = tmp(1187).Avatar;

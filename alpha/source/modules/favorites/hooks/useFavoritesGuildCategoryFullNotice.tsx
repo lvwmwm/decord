@@ -1,17 +1,17 @@
-// Module ID: 18450
-// Function ID: 18451
+// Module ID: 18442
+// Function ID: 18443
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [4995, 5005, 1072, 504, 11016, 5017, 1113, 3577, 2]
+// Dependencies: [5022, 5032, 1072, 504, 10968, 5044, 1113, 3606, 2]
 // Exports: default
 
-// Module 18450 (useFavoritesGuildCategoryFullNotice)
+// Module 18442 (useFavoritesGuildCategoryFullNotice)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
-import _modDef3577 from "module_3577" /* 3577 */;
-import FavoritesConstants from "FavoritesConstants" /* 5005 */;
-import FavoritesUtils from "FavoritesUtils" /* 5017 */;
-import FavoritesHooks from "FavoritesHooks" /* 11016 */;
-import FavoriteStore from "FavoriteStore" /* 4995 */;
+import _modDef3606 from "module_3606" /* 3606 */;
+import FavoritesConstants from "FavoritesConstants" /* 5032 */;
+import FavoritesUtils from "FavoritesUtils" /* 5044 */;
+import FavoritesHooks from "FavoritesHooks" /* 10968 */;
+import FavoriteStore from "FavoriteStore" /* 5022 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = FavoritesConstants.FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
@@ -41,7 +41,7 @@ export default function useFavoritesGuildCategoryFullNotice(getGuildId, str) {
             const formatted = str.toLowerCase();
             tmp6 = null;
             if (formatted === closure_4.toLowerCase()) {
-              const obj2 = { label: intl.string(_modDef3577.WsUrMD), tooltip: intl2.string(_modDef3577.dW9Kov) };
+              const obj2 = { label: intl.string(_modDef3606.WsUrMD), tooltip: intl2.string(_modDef3606.dW9Kov) };
               intl = tmp(1113).intl;
               intl2 = tmp(1113).intl;
               tmp6 = obj2;

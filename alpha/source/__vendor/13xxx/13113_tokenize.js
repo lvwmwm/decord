@@ -1,32 +1,78 @@
 // Module ID: 13113
 // Function ID: 13114
 // Name: tokenize
-// Dependencies: [13062]
+// Dependencies: [13027]
 
 // Module 13113 (tokenize)
-import tokenize from "tokenize" /* 13062 */;
+import tokenize from "tokenize" /* 13027 */;
 
-let obj2;
+const Delim = tokenize.TYPE.Delim;
 const Ident = tokenize.TYPE.Ident;
-let obj = {
-  name: "ClassSelector",
-  structure: obj2,
-  parse() {
+const Dimension = tokenize.TYPE.Dimension;
+const Percentage = tokenize.TYPE.Percentage;
+const Number = tokenize.TYPE.Number;
+const Hash = tokenize.TYPE.Hash;
+const Colon = tokenize.TYPE.Colon;
+const LeftSquareBracket = tokenize.TYPE.LeftSquareBracket;
+const obj = {
+  getNode(arg0) {
     const self = this;
-    const scanner = this.scanner;
-    if (!scanner.isDelim(46)) {
-      self.error("Full stop is expected");
+    const tokenType = this.scanner.tokenType;
+    if (LeftSquareBracket === tokenType) {
+      return self.AttributeSelector();
+    } else if (Hash === tokenType) {
+      return self.IdSelector();
+    } else if (Colon === tokenType) {
+      let result;
+      const scanner = self.scanner;
+      if (scanner.lookupType(1) === tmp6) {
+        result = self.PseudoElementSelector();
+      } else {
+        result = self.PseudoClassSelector();
+      }
+      return result;
+    } else if (Ident === tokenType) {
+      return self.TypeSelector();
+    } else {
+      if (Number !== tokenType) {
+        if (Percentage !== tokenType) {
+          if (Dimension === tokenType) {
+            const source = self.scanner.source;
+            if (46 === source.charCodeAt(self.scanner.tokenStart)) {
+              self.error("Identifier is expected", self.scanner.tokenStart + 1);
+            }
+          } else if (Delim === tokenType) {
+            const source2 = self.scanner.source;
+            const charCodeAtResult = source2.charCodeAt(self.scanner.tokenStart);
+            if (43 !== charCodeAtResult) {
+              if (62 !== charCodeAtResult) {
+                if (126 !== charCodeAtResult) {
+                  if (47 === charCodeAtResult) {
+                    return self.Combinator();
+                  } else if (46 === charCodeAtResult) {
+                    return self.ClassSelector();
+                  } else {
+                    if (42 !== charCodeAtResult) {
+                      if (124 !== charCodeAtResult) {
+                        if (35 === charCodeAtResult) {
+                          return self.IdSelector();
+                        }
+                      }
+                    }
+                    return self.TypeSelector();
+                  }
+                }
+              }
+            }
+            arg0.space = null;
+            arg0.ignoreWSAfter = true;
+            return self.Combinator();
+          }
+        }
+      }
+      return self.Percentage();
     }
-    const iter = self.scanner;
-    iter.next();
-    const obj = { type: "ClassSelector", loc: self.getLocation(self.scanner.tokenStart - 1, self.scanner.tokenEnd), name: self.consume(Ident) };
-    return obj;
-  },
-  generate(name) {
-    this.chunk(".");
-    this.chunk(name.name);
   }
 };
-obj2 = { name: String };
 
 export default obj;

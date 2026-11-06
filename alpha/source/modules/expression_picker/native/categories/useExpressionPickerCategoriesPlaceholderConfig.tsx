@@ -1,15 +1,15 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10224
+// Function ID: 10225
 // Name: useExpressionPickerCategoriesPlaceholderConfig
-// Dependencies: [19, 1072, 5143, 575, 7370, 2]
+// Dependencies: [19, 1072, 5170, 575, 7317, 2]
 // Exports: default
 
-// Module 10272 (useExpressionPickerCategoriesPlaceholderConfig)
+// Module 10224 (useExpressionPickerCategoriesPlaceholderConfig)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7370 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7317 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const CATEGORY_ICON_SIZE = Constants.CATEGORY_ICON_SIZE;

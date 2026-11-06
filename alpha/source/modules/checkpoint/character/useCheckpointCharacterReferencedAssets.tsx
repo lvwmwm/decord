@@ -1,13 +1,13 @@
-// Module ID: 13867
-// Function ID: 13868
+// Module ID: 13842
+// Function ID: 13843
 // Name: useCheckpointCharacterReferencedAssets
-// Dependencies: [19, 1357, 13700, 13699, 13866, 13868, 2]
+// Dependencies: [19, 1357, 13675, 13674, 13841, 13843, 2]
 // Exports: useCheckpointCharacterReferencedAssets
 
-// Module 13867 (useCheckpointCharacterReferencedAssets)
+// Module 13842 (useCheckpointCharacterReferencedAssets)
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13699 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13700 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 13674 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 13675 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export function useCheckpointCharacterReferencedAssets(arg0) {
   let requestedDataBinding;
   let textureScale;
   let visibleDataBinding;
-  const f105739 = () => {
+  const f105907 = () => {
     const obj = { faceID: faceID2, headwearID: headwearID2, shoesID: shoesID2, wearableID: wearableID2 };
     let closure_2 = device2;
     set = new Set();
@@ -77,8 +77,8 @@ export function useCheckpointCharacterReferencedAssets(arg0) {
   let chapterID2 = requestedDataBinding.chapterID;
   const device2 = requestedDataBinding.device;
   const items1 = [faceID2, headwearID2, shoesID2, wearableID2, chapterID2, device2];
-  const memo = react.useMemo(f105739, items);
-  const memo1 = react.useMemo(f105739, items1);
+  const memo = react.useMemo(f105907, items);
+  const memo1 = react.useMemo(f105907, items1);
   let obj = textureScale(checkpointCharacterLoadedTextureNames[5]);
   checkpointCharacterLoadedTextureNames = obj.useCheckpointCharacterLoadedTextureNames({ visibleTextureNames: memo, requestedTextureNames: memo1 });
   const items2 = [checkpointCharacterLoadedTextureNames, textureScale];

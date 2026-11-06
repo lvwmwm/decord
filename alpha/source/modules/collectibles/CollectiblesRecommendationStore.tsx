@@ -1,9 +1,9 @@
-// Module ID: 15307
-// Function ID: 15308
+// Module ID: 15301
+// Function ID: 15302
 // Name: CollectiblesRecommendationStore
 // Dependencies: [1089, 504, 572, 2]
 
-// Module 15307 (CollectiblesRecommendationStore)
+// Module 15301 (CollectiblesRecommendationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;

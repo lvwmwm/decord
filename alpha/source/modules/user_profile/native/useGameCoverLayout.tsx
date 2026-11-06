@@ -1,12 +1,12 @@
-// Module ID: 15192
-// Function ID: 15193
+// Module ID: 15171
+// Function ID: 15172
 // Name: useGameCoverLayout
-// Dependencies: [575, 9141, 2]
+// Dependencies: [575, 9087, 2]
 // Exports: default
 
-// Module 15192 (useGameCoverLayout)
+// Module 15171 (useGameCoverLayout)
 import nativeDefault from "native" /* 575 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9141 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 9087 */;
 import size from "module_2" /* 2 */;
 
 const PX_16 = nativeDefault.space.PX_16;

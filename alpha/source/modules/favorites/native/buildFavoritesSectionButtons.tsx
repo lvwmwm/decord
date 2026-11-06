@@ -1,11 +1,11 @@
-// Module ID: 11029
-// Function ID: 11030
+// Module ID: 10981
+// Function ID: 10982
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 11015, 2123, 1113, 3577, 10249, 10247, 2]
+// Dependencies: [5, 10967, 2118, 1113, 3606, 10201, 10199, 2]
 // Exports: default
 
-// Module 11029 (buildFavoritesSectionButtons)
-import _modDef3577 from "module_3577" /* 3577 */;
+// Module 10981 (buildFavoritesSectionButtons)
+import _modDef3606 from "module_3606" /* 3606 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -134,8 +134,8 @@ export default function buildFavoritesSectionButtons(channelId) {
     let tmp3;
     if (channelId.isChannelInFavorites) {
       const obj2 = {
-        label: intl2.string(_modDef3577.TN4nAX),
-        IconComponent: channelId(10249).StarIcon,
+        label: intl2.string(_modDef3606.TN4nAX),
+        IconComponent: channelId(10201).StarIcon,
         isDestructive: true,
         onPress() {
               function removeChannelFromFavorites() {
@@ -150,8 +150,8 @@ export default function buildFavoritesSectionButtons(channelId) {
       tmp3 = null;
       if (!tmp) {
         obj = {
-          label: intl.string(_modDef3577.G9fGlP),
-          IconComponent: channelId(10247).StarOutlineIcon,
+          label: intl.string(_modDef3606.G9fGlP),
+          IconComponent: channelId(10199).StarOutlineIcon,
           onPress() {
                   function addChannelToFavorites() {
                     return closure_1_4(...arguments);

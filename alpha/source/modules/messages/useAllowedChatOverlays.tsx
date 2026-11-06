@@ -1,17 +1,17 @@
-// Module ID: 11555
-// Function ID: 11556
+// Module ID: 11517
+// Function ID: 11518
 // Name: useAllowedChatOverlays
-// Dependencies: [4991, 4992, 11553, 5793, 563, 5064, 5814, 2]
+// Dependencies: [5018, 5019, 11515, 5811, 563, 5091, 5832, 2]
 // Exports: default
 
-// Module 11555 (useAllowedChatOverlays)
+// Module 11517 (useAllowedChatOverlays)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5064 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5793 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5814 */;
-import ChatOverlayConstants from "ChatOverlayConstants" /* 11553 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5091 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5811 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5832 */;
+import ChatOverlayConstants from "ChatOverlayConstants" /* 11515 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import size from "module_2" /* 2 */;
 
 let items;

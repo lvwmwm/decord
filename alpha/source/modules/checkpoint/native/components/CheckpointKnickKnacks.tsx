@@ -1,16 +1,16 @@
-// Module ID: 13879
-// Function ID: 13880
+// Module ID: 13854
+// Function ID: 13855
 // Name: CheckpointKnickKnacks
-// Dependencies: [19, 17, 5144, 6204, 21, 5143, 504, 1377, 5215, 2]
+// Dependencies: [19, 17, 5171, 6224, 21, 5170, 504, 1377, 5235, 2]
 // Exports: default
 
-// Module 13879 (CheckpointKnickKnacks)
+// Module 13854 (CheckpointKnickKnacks)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
-import createStyles from "createStyles" /* 5143 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

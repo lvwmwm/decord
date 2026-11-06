@@ -1,13 +1,13 @@
-// Module ID: 7711
-// Function ID: 7712
+// Module ID: 7664
+// Function ID: 7665
 // Name: useSelectedDismissibleContent
-// Dependencies: [32, 7712, 7717, 7714, 2]
+// Dependencies: [32, 7665, 7670, 7667, 2]
 // Exports: useSelectedDismissibleContent, useSelectedScopedDismissibleContent, useSelectedSingleUseGuildDismissibleContent, useSelectedSnowflakeBoundDismissibleContent, useSelectedSnowflakeBoundGuildDismissibleContent, useSelectedTimeRecurringDismissibleContent, useSelectedTimeRecurringGuildDismissibleContent, useSelectedTimeRecurringSnowflakeBoundDismissibleContent, useSelectedVersionedDismissibleContent
 
-// Module 7711 (useSelectedDismissibleContent)
-import useGetDismissibleContent from "useGetDismissibleContent" /* 7712 */;
-import DismissibleContentScope from "DismissibleContentScope" /* 7714 */;
-import useSelectedDismissibleContentShared2 from "useSelectedDismissibleContentShared" /* 7717 */;
+// Module 7664 (useSelectedDismissibleContent)
+import useGetDismissibleContent from "useGetDismissibleContent" /* 7665 */;
+import DismissibleContentScope from "DismissibleContentScope" /* 7667 */;
+import useSelectedDismissibleContentShared2 from "useSelectedDismissibleContentShared" /* 7670 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -130,7 +130,7 @@ export function useSelectedTimeRecurringDismissibleContent(prop, timeRecurringCo
   const items = [tmp2, tmp3];
   return items;
 }
-export function useSelectedSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName, bypassAutoDismiss) {
+export function useSelectedSnowflakeBoundDismissibleContent(contentType, newSnowflakeId, groupName, bypassAutoDismiss) {
   let tmp2;
   let tmp3;
   let flag = bypassAutoDismiss;
@@ -138,8 +138,8 @@ export function useSelectedSnowflakeBoundDismissibleContent(prop, newSnowflakeId
     flag = false;
   }
   const obj = useGetDismissibleContent;
-  [tmp2, tmp3] = obj.useGetSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName);
-  _slicedToArray(obj.useGetSnowflakeBoundDismissibleContent(prop, newSnowflakeId, groupName), 2);
+  [tmp2, tmp3] = obj.useGetSnowflakeBoundDismissibleContent(contentType, newSnowflakeId, groupName);
+  _slicedToArray(obj.useGetSnowflakeBoundDismissibleContent(contentType, newSnowflakeId, groupName), 2);
   const obj2 = useSelectedDismissibleContentShared2;
   const selectedDismissibleContentShared = obj2.useSelectedDismissibleContentShared(tmp2, tmp3, flag);
   const items = [tmp2, tmp3];

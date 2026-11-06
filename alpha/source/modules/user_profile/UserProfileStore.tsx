@@ -1,26 +1,26 @@
-// Module ID: 7917
-// Function ID: 7918
+// Module ID: 7871
+// Function ID: 7872
 // Name: UserProfileStore
-// Dependencies: [2191, 1399, 502, 5014, 1071, 5898, 6910, 1072, 7918, 12, 7919, 7922, 7923, 7925, 1380, 4987, 2116, 2109, 7926, 1113, 7927, 6712, 7928, 510, 2]
+// Dependencies: [2186, 1404, 502, 5041, 1071, 5917, 6852, 1072, 7872, 12, 7873, 7876, 7877, 7879, 1380, 5014, 2111, 2104, 7880, 1113, 7881, 6654, 7882, 510, 2]
 
-// Module 7917 (UserProfileStore)
+// Module 7871 (UserProfileStore)
 import _modDef12 from "module_12" /* 12 */;
 import Storage2 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
-import Timers from "Timers" /* 4987 */;
-import WidgetType from "WidgetType" /* 7918 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7926 */;
-import parseUserProfileCollectiblesDefault from "parseUserProfileCollectibles" /* 7927 */;
-import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7928 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
-import UserRecord from "UserRecord" /* 1399 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
+import Timers from "Timers" /* 5014 */;
+import WidgetType from "WidgetType" /* 7872 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7880 */;
+import parseUserProfileCollectiblesDefault from "parseUserProfileCollectibles" /* 7881 */;
+import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7882 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import UserRecord from "UserRecord" /* 1404 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 5014 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import PresenceStore from "PresenceStore" /* 5898 */;
-import SortedGuildStore from "SortedGuildStore" /* 6910 */;
+import PresenceStore from "PresenceStore" /* 5917 */;
+import SortedGuildStore from "SortedGuildStore" /* 6852 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,15 +28,15 @@ let _require, c24, set2, set3;
 
 let tmp;
 const GlobalUtils = tmp(1380);
-const UserProfileGameWidgetTypes = tmp(7919);
-const UserProfileApplicationWidgetTypes = tmp(7922);
-const UserProfilePersonalWidget2 = tmp(7923);
-const UserProfileClipsGalleryWidgetTypes = tmp(7925);
-const f92612 = (user) => {
+const UserProfileGameWidgetTypes = tmp(7873);
+const UserProfileApplicationWidgetTypes = tmp(7876);
+const UserProfilePersonalWidget2 = tmp(7877);
+const UserProfileClipsGalleryWidgetTypes = tmp(7879);
+const f92722 = (user) => {
   const str = user.user.username;
   return str.toLowerCase();
 };
-const f92618 = (id) => id.id;
+const f92728 = (id) => id.id;
 function createUserWidgetFromServer(data) {
   let mapped;
   let str;
@@ -122,21 +122,21 @@ function createUserWidgetFromSnapshot(type) {
             const self5 = this;
             const self6 = this;
             const obj2 = { id: id3, applicationId };
-            const applicationWidget = new tmp(7922).ApplicationWidget(obj2);
+            const applicationWidget = new tmp(7876).ApplicationWidget(obj2);
             return applicationWidget;
           } else if (WidgetType.WidgetType.PERSONAL === type) {
             ({ id: id2, header, sections } = type);
             const self3 = this;
             const self4 = this;
             const obj3 = { id: id2, header, sections };
-            const userProfilePersonalWidget = new tmp(7923).UserProfilePersonalWidget(obj3);
+            const userProfilePersonalWidget = new tmp(7877).UserProfilePersonalWidget(obj3);
             return userProfilePersonalWidget;
           } else if (WidgetType.WidgetType.CLIPS_GALLERY === type) {
             ({ id, clips } = type);
             const self = this;
             const self2 = this;
             obj = { id, clips };
-            const clipsGalleryWidget = new tmp(7925).ClipsGalleryWidget(obj);
+            const clipsGalleryWidget = new tmp(7879).ClipsGalleryWidget(obj);
             return clipsGalleryWidget;
           } else {
             const type2 = type.type;
@@ -147,7 +147,7 @@ function createUserWidgetFromSnapshot(type) {
   }
   ({ id: id4, type: type3, games } = type);
   const obj4 = { id: id4, type: type3, games };
-  const baseGameWidget = new tmp(7919).BaseGameWidget(obj4);
+  const baseGameWidget = new tmp(7873).BaseGameWidget(obj4);
   return baseGameWidget;
 }
 function checkUserProfileCollectiblesExpiration(id, guild_id) {
@@ -296,7 +296,7 @@ function handleMutualFriendsFetchSuccess(userId) {
     new UserRecord(obj2);
     return obj;
   });
-  const iter = mapped.sortBy(f92612);
+  const iter = mapped.sortBy(f92722);
   const result = set(userId, iter.value());
   const result1 = map4.set(userId.userId, userId.mutualFriends.length);
 }
@@ -381,7 +381,7 @@ function handleProfileFetch(arg0) {
       new UserRecord(obj2);
       return obj;
     });
-    const iter = mapped.sortBy(f92612);
+    const iter = mapped.sortBy(f92722);
     set3(id3, iter.value());
     const result3 = map4.set(userProfile.user.id, userProfile.mutual_friends.length);
   }
@@ -448,7 +448,7 @@ function handleProfileFetch(arg0) {
       const _Set = Set;
       const self7 = this;
       const self8 = this;
-      new Set(mapped1.map(f92618));
+      new Set(mapped1.map(f92728));
       let found1;
       if (c24 != null) {
         const badges1 = tmp61.badges;
@@ -612,8 +612,8 @@ function handleProfileFetchFailure(arg0) {
   let value4 = map1.get(userId);
   obj = map1;
   if (value4 == null) {
-    value4 = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "children" };
-    const obj2 = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "children" };
+    value4 = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "channelId" };
+    const obj2 = { connectedAccounts: [], applicationRoleConnections: [], premiumSince: null, premiumGuildSince: null, application: null, legacyUsername: null, userId, banner: null, accentColor: null, bio: "", pronouns: "", premiumType: null, fetchStartedAt: 0, fetchEndedAt: 0, fetchError: "channelId" };
   }
   const timestamp = Date.now();
   value4.fetchStartedAt = fetchStartedAt;
@@ -747,7 +747,7 @@ function handlePinBadgesToProfile(badges) {
       let found;
       const self = this;
       const self2 = this;
-      const set1 = new Set(badges.map(f92618));
+      const set1 = new Set(badges.map(f92728));
       if (obj != null) {
         const badges1 = tmp3.badges;
         found = badges1.filter((id) => !set1.has(id.id));
@@ -981,13 +981,13 @@ class UserProfileStore extends MobileCacheSnapshotStore {
       return first;
     }
   }
-  getWishlistSettings(id, wishlistId) {
+  getWishlistSettings(id, firstWishlistId) {
     const value = map1.get(id);
     let tmp2;
     if (value != null) {
       const wishlistSettings = value.wishlistSettings;
       if (wishlistSettings != null) {
-        tmp2 = wishlistSettings[wishlistId];
+        tmp2 = wishlistSettings[firstWishlistId];
       }
     }
     if (tmp2 == null) {
@@ -995,8 +995,8 @@ class UserProfileStore extends MobileCacheSnapshotStore {
     }
     return tmp2;
   }
-  getProfileReadState(ownerId) {
-    const value = map1.get(ownerId);
+  getProfileReadState(id) {
+    const value = map1.get(id);
     let profileReadState;
     if (value != null) {
       profileReadState = value.profileReadState;

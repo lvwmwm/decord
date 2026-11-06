@@ -1,22 +1,22 @@
-// Module ID: 17050
-// Function ID: 17051
+// Module ID: 17038
+// Function ID: 17039
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5143, 8515, 8516, 17051, 575, 13594, 1113, 2667, 5854, 17058, 17059, 5763, 2]
+// Dependencies: [19, 17, 21, 5170, 8461, 8462, 17039, 575, 13569, 1113, 2664, 5872, 17046, 17047, 5781, 2]
 // Exports: default
 
-// Module 17050 (FamilyCenterActivityBanner)
+// Module 17038 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
-import _modDef2667 from "module_2667" /* 2667 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import useUserLinks from "useUserLinks" /* 8515 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8516 */;
-import useAgeSpecificText3 from "useAgeSpecificText" /* 13594 */;
+import _modDef2664 from "module_2664" /* 2664 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import useUserLinks from "useUserLinks" /* 8461 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8462 */;
+import useAgeSpecificText3 from "useAgeSpecificText" /* 13569 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const FamilyCenterBannerButton = tmp2(17051);
+const FamilyCenterBannerButton = tmp2(17039);
 function FamilyCenterActivityBannerButton() {
   let tmp2Result;
   const tmp = closure_6();
@@ -67,17 +67,17 @@ export default function FamilyCenterActivityBanner() {
   const useAgeSpecificText = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl = intl5.intl;
-  const stringResult = intl.string(_modDef2667["T7GyW+"]);
+  const stringResult = intl.string(_modDef2664["T7GyW+"]);
   const intl2 = intl5.intl;
-  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2667.goKE2b));
+  const ageSpecificText = useAgeSpecificText(stringResult, intl2.string(_modDef2664.goKE2b));
   const useAgeSpecificText2 = useAgeSpecificText3.useAgeSpecificText;
   useAgeSpecificText3;
   const intl3 = intl5.intl;
-  const formatResult = intl3.format(_modDef2667.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
+  const formatResult = intl3.format(_modDef2664.MXjDSv, { articleLink: "https://support.discord.com/hc/articles/14155060633623" });
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
-  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2667.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  const obj3 = { source: importDefault(tmp3 ? 17058 : 17059), style: tmp4.art };
+  const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2664.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
+  const obj3 = { source: importDefault(tmp3 ? 17046 : 17047), style: tmp4.art };
   const tmp16 = FastImageDefault;
   items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

@@ -1,11 +1,11 @@
-// Module ID: 9289
-// Function ID: 9290
+// Module ID: 9235
+// Function ID: 9236
 // Name: LinkRecord
-// Dependencies: [1400, 1072, 2]
+// Dependencies: [1405, 1072, 2]
 
-// Module 9289 (LinkRecord)
+// Module 9235 (LinkRecord)
 import Constants from "Constants" /* 1072 */;
-import Record from "Record" /* 1400 */;
+import Record from "Record" /* 1405 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

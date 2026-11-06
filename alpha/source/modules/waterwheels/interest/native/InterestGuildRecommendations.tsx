@@ -1,31 +1,31 @@
-// Module ID: 19882
-// Function ID: 19883
+// Module ID: 19888
+// Function ID: 19889
 // Name: InterestGuildRecommendations
-// Dependencies: [32, 19, 17, 4994, 1072, 21, 7142, 5143, 575, 5763, 1113, 18721, 5734, 1411, 7124, 2537, 5384, 19883, 9662, 7101, 6165, 9459, 5006, 7516, 19886, 504, 18720, 1252, 7148, 19887, 7431, 9967, 19888, 5770, 2]
+// Dependencies: [32, 19, 17, 5021, 1072, 21, 7089, 5170, 575, 5781, 1113, 18711, 5754, 1411, 7068, 2534, 5404, 19889, 9611, 7045, 6185, 9405, 5033, 7461, 19892, 504, 18710, 1252, 7095, 19893, 7378, 9918, 1652, 19894, 5788, 2]
 // Exports: default
 
-// Module 19882 (InterestGuildRecommendations)
+// Module 19888 (InterestGuildRecommendations)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import _modDef2537 from "module_2537" /* 2537 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import GuildIconDefault from "GuildIcon" /* 7101 */;
-import GuildBadgeV2Default from "GuildBadgeV2" /* 9459 */;
-import ClipViewDefault from "ClipView" /* 9662 */;
-import InterestGhostDefault from "InterestGhost" /* 18721 */;
-import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 19883 */;
-import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 19886 */;
-import InterestGuildActions from "InterestGuildActions" /* 19887 */;
+import _modDef2534 from "module_2534" /* 2534 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import GuildIconDefault from "GuildIcon" /* 7045 */;
+import GuildBadgeV2Default from "GuildBadgeV2" /* 9405 */;
+import ClipViewDefault from "ClipView" /* 9611 */;
+import InterestGhostDefault from "InterestGhost" /* 18711 */;
+import InterestGuildProfileSheetDefault from "InterestGuildProfileSheet" /* 19889 */;
+import InterestGuildJoinButtonDefault from "InterestGuildJoinButton" /* 19892 */;
+import InterestGuildActions from "InterestGuildActions" /* 19893 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4994 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 5021 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import NavigatorHeader from "NavigatorHeader" /* 7142 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import NavigatorHeader from "NavigatorHeader" /* 7089 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,10 +33,8 @@ let _require, set;
 
 let c10;
 let c9;
-let closure_12;
-let hasOwnProperty;
 let metroImportAll;
-let metroRequire;
+let metroImportDefault;
 let obj10;
 let obj11;
 let obj12;
@@ -66,8 +64,8 @@ function InterestGuildSkeleton() {
   let closure_0;
   let intl;
   let obj2;
-  _require = closure_14();
-  let obj = { accessible: true, accessibilityLabel: intl.string(require("intl").t.ZTNur7), accessibilityState: { busy: true }, children: closure_10(closure_6, obj2) };
+  _require = closure_13();
+  let obj = { accessible: true, accessibilityLabel: intl.string(require("intl").t.ZTNur7), accessibilityState: { busy: true }, children: closure_9(View, obj2) };
   intl = require("intl").intl;
   obj2 = {
     accessibilityElementsHidden: true,
@@ -90,37 +88,37 @@ function InterestGuildSkeleton() {
       const obj = { style: closure_0.row, children: items5 };
       const obj2 = { style: closure_0.rowHeader, children: items4 };
       const obj4 = { style: closure_0.skeletonIcon };
-      items[0] = authStore(InterestGhostDefault, obj4);
+      items[0] = React4(InterestGhostDefault, obj4);
       const obj5 = { style: closure_0.details, children: items2 };
-      const obj6 = { style: closure_0.skeletonNameFrame, children: authStore(InterestGhostDefault, { style: items1 }) };
+      const obj6 = { style: closure_0.skeletonNameFrame, children: React4(InterestGhostDefault, { style: items1 }) };
       items1 = [closure_0.skeletonLine, arg1 % 2 === 0 ? closure_0.skeletonName : closure_0.skeletonShortName];
-      items2 = [authStore(metroRequire, obj6), ];
-      const obj7 = { style: closure_0.skeletonCountFrame, children: authStore(InterestGhostDefault, obj8) };
+      items2 = [React4(View, obj6), ];
+      const obj7 = { style: closure_0.skeletonCountFrame, children: React4(InterestGhostDefault, obj8) };
       obj8 = { style: items3 };
       items3 = [, ];
       ({ skeletonLine: arr4[0], skeletonCount: arr4[1] } = closure_0);
-      items2[1] = authStore(metroRequire, obj7);
-      items[1] = unpackModuleId(metroRequire, obj5);
-      items4 = [unpackModuleId(metroRequire, obj3), ];
+      items2[1] = React4(View, obj7);
+      items[1] = authStore(View, obj5);
+      items4 = [authStore(View, obj3), ];
       const obj9 = { style: closure_0.skeletonButton };
-      items4[1] = authStore(InterestGhostDefault, obj9);
-      items5 = [unpackModuleId(metroRequire, obj2), ];
+      items4[1] = React4(InterestGhostDefault, obj9);
+      items5 = [authStore(View, obj2), ];
       const obj10 = { children: items7 };
-      const obj11 = { style: closure_0.skeletonDescriptionFrame, children: authStore(InterestGhostDefault, obj12) };
+      const obj11 = { style: closure_0.skeletonDescriptionFrame, children: React4(InterestGhostDefault, obj12) };
       obj12 = { style: items6 };
       items6 = [, ];
       ({ skeletonLine: arr7[0], skeletonDescription: arr7[1] } = closure_0);
-      items7 = [authStore(metroRequire, obj11), ];
-      const obj13 = { style: closure_0.skeletonDescriptionFrame, children: authStore(InterestGhostDefault, obj14) };
+      items7 = [React4(View, obj11), ];
+      const obj13 = { style: closure_0.skeletonDescriptionFrame, children: React4(InterestGhostDefault, obj14) };
       obj14 = { style: items8 };
       items8 = [, ];
       ({ skeletonLine: arr9[0], skeletonShortDescription: arr9[1] } = closure_0);
-      items7[1] = authStore(metroRequire, obj13);
-      items5[1] = unpackModuleId(metroRequire, obj10);
-      return unpackModuleId(metroRequire, obj, arg1);
+      items7[1] = React4(View, obj13);
+      items5[1] = authStore(View, obj10);
+      return authStore(View, obj, arg1);
     })
   };
-  return closure_10(closure_6, obj);
+  return closure_9(View, obj);
 }
 function ProgressiveGuildRows(arg0) {
   let c3;
@@ -148,16 +146,16 @@ function ProgressiveGuildRows(arg0) {
   let obj = {
     children: substr.map((guild, rowPosition) => {
       const obj = { guild, rowPosition, onJoinTapped: require, onProfileOpened: importDefault, onJoinResult: dependencyMap };
-      return authStore(closure_16, obj, guild.id);
+      return React4(closure_15, obj, guild.id);
     })
   };
   substr = guilds.slice(0, tmp2);
-  return closure_10(closure_12, obj);
+  return closure_9(closure_11, obj);
 }
 let _slicedToArray = _slicedToArray_mod;
-({ ScrollView: hasOwnProperty, View: metroRequire } = react_native);
-({ AnalyticEvents: metroImportAll, GuildFeatures: c9 } = Constants);
-({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+const View = react_native.View;
+({ AnalyticEvents: metroImportDefault, GuildFeatures: metroImportAll } = Constants);
+({ jsx: c9, jsxs: c10, Fragment: unpackModuleId } = Fragment);
 const headerBackButton = NavigatorHeader.getHeaderBackButton();
 let createStyles = createStyles_mod;
 let obj = { screen: obj2, header: obj3, content: obj4, intro: obj5, completion: obj6, guildIcon: size, guildIconImage: obj7, centered: { textAlign: "center" }, row: obj8, joinSpace: obj9, joinTarget: rect, rowHeader: obj10, profile: obj11, details: { flex: 1, minWidth: 0 }, name: obj12, nameText: { flexShrink: 1 }, badge: size1, online: obj13, dot: size2, empty: obj14, skeletonIcon: size3, skeletonNameFrame: obj15, skeletonCountFrame: obj16, skeletonDescriptionFrame: obj17, skeletonLine: obj18, skeletonName: { width: "72%" }, skeletonShortName: { width: "56%" }, skeletonCount: size4, skeletonDescription: { width: "96%" }, skeletonShortDescription: { width: "78%" }, skeletonButton: size5 };
@@ -186,8 +184,8 @@ obj17 = { height: Text_Text.TextStyleSheet["body-sm/normal"].lineHeight, justify
 obj18 = { height: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.round };
 size4 = { width: "40%", height: nativeDefault.space.PX_8 };
 size5 = { width: nativeDefault.space.PX_64 + nativeDefault.space.PX_8, height: nativeDefault.space.PX_32, borderRadius: nativeDefault.modules.button.BORDER_RADIUS };
-let closure_14 = createStyles(obj);
-let closure_16 = react.memo(function InterestGuildRow(guild) {
+let closure_13 = createStyles(obj);
+let closure_15 = react.memo(function InterestGuildRow(guild) {
   let constructFromPartialGuildRecord;
   let intl;
   let intl2;
@@ -206,11 +204,11 @@ let closure_16 = react.memo(function InterestGuildRow(guild) {
   let tmp12;
   guild = guild.guild;
   ({ rowPosition: importDefault, onJoinTapped: dependencyMap, onProfileOpened: _slicedToArray, onJoinResult: react } = guild);
-  const tmp = closure_14();
+  const tmp = closure_13();
   let tmp2 = guild;
-  let obj = guild(5734);
+  let obj = guild(5754);
   const token = obj.useToken(nativeDefault.modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
-  let obj2 = guild(5734);
+  let obj2 = guild(5754);
   const token1 = obj2.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   const obj3 = AvatarUtilsDefault;
   const obj4 = { id: guild.id, icon: guild.icon, size: 40 };
@@ -218,7 +216,7 @@ let closure_16 = react.memo(function InterestGuildRow(guild) {
   const obj5 = {
     accessibilityRole: "button",
     accessibilityLabel: guild.name,
-    accessibilityHint: intl.string(_modDef2537.nkweXX),
+    accessibilityHint: intl.string(_modDef2534.nkweXX),
     onPress: function openProfile() {
       let user;
       _slicedToArray(guild.id, importDefault);
@@ -240,24 +238,24 @@ let closure_16 = react.memo(function InterestGuildRow(guild) {
     style: tmp.row,
     children: items6
   };
-  const PressableHighlight = guild(7124).PressableHighlight;
+  const PressableHighlight = guild(7068).PressableHighlight;
   intl = guild(1113).intl;
   const obj6 = { style: tmp.rowHeader, children: items5 };
   const obj7 = { style: tmp.profile, children: items1 };
-  const obj8 = { style: items, children: closure_10(tmp12, obj10) };
+  const obj8 = { style: items, children: closure_9(tmp12, obj10) };
   items = [tmp.guildIcon, ];
   const obj9 = { borderRadius: token * nativeDefault.space.PX_40 / token1 };
   items[1] = obj9;
   const tmp11 = ClipViewDefault;
-  obj10 = { icon: guildIconURL, value: guild.name, size: guild(7101).GuildIconSizes.NORMAL, selected: false, style: tmp.guildIconImage };
+  obj10 = { icon: guildIconURL, value: guild.name, size: guild(7045).GuildIconSizes.NORMAL, selected: false, style: tmp.guildIconImage };
   tmp12 = GuildIconDefault;
-  items1 = [closure_10(tmp11, obj8), ];
+  items1 = [closure_9(tmp11, obj8), ];
   const obj11 = { style: tmp.details, spacing: nativeDefault.space.PX_0, children: items3 };
-  const Stack = guild(6165).Stack;
+  const Stack = guild(6185).Stack;
   const obj12 = { style: tmp.name, children: items2 };
   items2 = [, , ];
   const obj13 = { style: tmp.nameText, variant: "body-md/semibold", color: "text-strong", lineClamp: 1, children: guild.name };
-  items2[0] = closure_10(guild(5763).Text, obj13);
+  items2[0] = closure_9(guild(5781).Text, obj13);
   const features = guild.features;
   let hasItem = features.includes(constants2.VERIFIED);
   const tmp13 = constants2;
@@ -273,38 +271,38 @@ let closure_16 = react.memo(function InterestGuildRow(guild) {
     const self = this;
     const self2 = this;
     const tmp4Result = GuildBadgeV2Default;
-    constructFromPartialGuildRecord = tmp2(5006).constructFromPartialGuildRecord;
-    tmp2(5006);
+    constructFromPartialGuildRecord = tmp2(5033).constructFromPartialGuildRecord;
+    tmp2(5033);
     set = new Set(guild.features);
     hasItem = tmp10(tmp4Result, obj14);
   }
   items2[1] = hasItem;
-  items2[2] = closure_10(tmp2(7516).ChevronSmallRightIcon, { size: "xxs", accessible: false });
-  items3 = [closure_11(closure_6, obj12), ];
+  items2[2] = closure_9(tmp2(7461).ChevronSmallRightIcon, { size: "xxs", accessible: false });
+  items3 = [closure_10(View, obj12), ];
   const obj17 = { style: tmp.online, children: items4 };
   items4 = [, ];
   const obj18 = { style: tmp.dot };
-  items4[0] = closure_10(closure_6, obj18);
+  items4[0] = closure_9(View, obj18);
   const obj19 = { variant: "body-xs/medium", color: "text-muted", children: intl2.format(tmp2(1113).t["LC+S+m"], obj20) };
-  const Text = tmp2(5763).Text;
+  const Text = tmp2(5781).Text;
   intl2 = tmp2(1113).intl;
   obj20 = { membersOnline: guild.approximate_presence_count };
-  items4[1] = closure_10(Text, obj19);
-  items3[1] = closure_11(closure_6, obj17);
-  items1[1] = closure_11(Stack, obj11);
-  items5 = [closure_11(closure_6, obj7), ];
+  items4[1] = closure_9(Text, obj19);
+  items3[1] = closure_10(View, obj17);
+  items1[1] = closure_10(Stack, obj11);
+  items5 = [closure_10(View, obj7), ];
   const obj21 = { style: tmp.joinSpace };
-  items5[1] = closure_10(closure_6, obj21);
-  items6 = [closure_11(closure_6, obj6), ];
+  items5[1] = closure_9(View, obj21);
+  items6 = [closure_10(View, obj6), ];
   let tmp10Result = null != guild.description && "" !== guild.description;
   if (tmp10Result) {
     const obj22 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: guild.description };
-    tmp10Result = tmp10(tmp2(5763).Text, obj22);
+    tmp10Result = tmp10(tmp2(5781).Text, obj22);
   }
   const obj23 = { children: items7 };
   items6[1] = tmp10Result;
-  items7 = [closure_11(PressableHighlight, obj5), ];
-  const obj24 = { style: tmp.joinTarget, children: closure_10(InterestGuildJoinButtonDefault, obj45) };
+  items7 = [closure_10(PressableHighlight, obj5), ];
+  const obj24 = { style: tmp.joinTarget, children: closure_9(InterestGuildJoinButtonDefault, obj45) };
   obj45 = {
     guildId: guild.id,
     guildName: guild.name,
@@ -315,8 +313,8 @@ let closure_16 = react.memo(function InterestGuildRow(guild) {
       return react(guild.id, arg0);
     }
   };
-  items7[1] = closure_10(closure_6, obj24);
-  return closure_11(closure_6, obj23);
+  items7[1] = closure_9(View, obj24);
+  return closure_10(View, obj23);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestGuildRecommendations.tsx");
@@ -341,13 +339,13 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const gameIds = analyticsContext.gameIds;
   const resource = analyticsContext.resource;
   ({ onBack: _slicedToArray, onComplete: react } = analyticsContext);
-  let ref2;
-  let tmp = closure_14();
+  let ref;
+  let tmp = closure_13();
   let obj = react;
   const syncExternalStore = react.useSyncExternalStore(resource.subscribe, resource.getSnapshot);
   let tmp3 = analyticsContext;
   let obj2 = analyticsContext(resource[25]);
-  let items = [ref2];
+  let items = [ref];
   const items1 = [syncExternalStore.guilds];
   const stateFromStores = obj2.useStateFromStores(items, () => {
     let member;
@@ -357,11 +355,11 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const obj3 = analyticsContext(resource[26]);
   const interestScrollHeader = obj3.useInterestScrollHeader();
   ({ scrollY, onScroll } = interestScrollHeader);
-  const ref = react.useRef(0);
+  ref = react.useRef(0);
   const effect = react.useEffect(() => {
     ref.current = Date.now();
   }, []);
-  ref2 = react.useRef(false);
+  const ref2 = react.useRef(false);
   const ref3 = react.useRef(null);
   let str = "error";
   if (!syncExternalStore.failed) {
@@ -378,7 +376,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const items2 = [analyticsContext, gameIds.length, syncExternalStore, str];
   function handleBack() {
     const obj = AnalyticsUtilsDefault;
-    obj.track(metroImportAll.WATERWHEELS_INTEREST_SERVERS_BACK, analyticsContext);
+    obj.track(metroImportDefault.WATERWHEELS_INTEREST_SERVERS_BACK, analyticsContext);
     _slicedToArray();
   }
   const effect1 = obj.useEffect(() => {
@@ -391,7 +389,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
       ref3.current = syncExternalStore;
       const obj = { pick_count: gameIds.length, recommendation_count: syncExternalStore.guilds.length, load_state: tmp };
       const track = AnalyticsUtilsDefault.track;
-      const WATERWHEELS_INTEREST_SERVERS_VIEWED = metroImportAll.WATERWHEELS_INTEREST_SERVERS_VIEWED;
+      const WATERWHEELS_INTEREST_SERVERS_VIEWED = metroImportDefault.WATERWHEELS_INTEREST_SERVERS_VIEWED;
       AnalyticsUtilsDefault;
       const merged = Object.assign(analyticsContext);
       track(WATERWHEELS_INTEREST_SERVERS_VIEWED, obj);
@@ -400,7 +398,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const tmp3Result = tmp3(resource[28]);
   tmp3Result.useNavigatorBackPressHandler(() => {
     const obj = AnalyticsUtilsDefault;
-    obj.track(metroImportAll.WATERWHEELS_INTEREST_SERVERS_BACK, analyticsContext);
+    obj.track(metroImportDefault.WATERWHEELS_INTEREST_SERVERS_BACK, analyticsContext);
     _slicedToArray();
     return true;
   });
@@ -410,7 +408,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
     let items;
     const obj = { guild_id, row_position, pick_ids: items, source };
     const track = AnalyticsUtilsDefault.track;
-    const WATERWHEELS_INTEREST_SERVERS_JOIN_TAPPED = metroImportAll.WATERWHEELS_INTEREST_SERVERS_JOIN_TAPPED;
+    const WATERWHEELS_INTEREST_SERVERS_JOIN_TAPPED = metroImportDefault.WATERWHEELS_INTEREST_SERVERS_JOIN_TAPPED;
     AnalyticsUtilsDefault;
     const merged = Object.assign(analyticsContext);
     items = [...gameIds];
@@ -420,7 +418,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const callback1 = obj.useCallback((guild_id, row_position) => {
     const obj = { guild_id, row_position };
     const track = AnalyticsUtilsDefault.track;
-    const WATERWHEELS_INTEREST_SERVERS_PROFILE_OPENED = metroImportAll.WATERWHEELS_INTEREST_SERVERS_PROFILE_OPENED;
+    const WATERWHEELS_INTEREST_SERVERS_PROFILE_OPENED = metroImportDefault.WATERWHEELS_INTEREST_SERVERS_PROFILE_OPENED;
     AnalyticsUtilsDefault;
     const merged = Object.assign(analyticsContext);
     track(WATERWHEELS_INTEREST_SERVERS_PROFILE_OPENED, obj);
@@ -430,7 +428,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
     let tmp3;
     const obj = { guild_id, success: tmp3, result };
     const track = AnalyticsUtilsDefault.track;
-    const WATERWHEELS_INTEREST_SERVERS_JOIN_RESULT = metroImportAll.WATERWHEELS_INTEREST_SERVERS_JOIN_RESULT;
+    const WATERWHEELS_INTEREST_SERVERS_JOIN_RESULT = metroImportDefault.WATERWHEELS_INTEREST_SERVERS_JOIN_RESULT;
     AnalyticsUtilsDefault;
     const merged = Object.assign(analyticsContext);
     tmp3 = null;
@@ -443,11 +441,11 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const obj6 = { accessibilityLabel: intl.string(tmp3(resource[10]).t["13/7kX"]), onPress: handleBack };
   const SafeAreaPaddingView = tmp3(tmp4[30]).SafeAreaPaddingView;
   intl = tmp3(tmp4[10]).intl;
-  items6 = [closure_10(closure_13, obj6), , ];
+  items6 = [str(closure_12, obj6), , ];
   const obj7 = { title: intl2.string(gameIds(resource[15])["mdhU/Q"]), scrollY };
   const InterestCompactTitle = tmp3(tmp4[26]).InterestCompactTitle;
   intl2 = tmp3(tmp4[10]).intl;
-  items6[1] = closure_10(InterestCompactTitle, obj7);
+  items6[1] = str(InterestCompactTitle, obj7);
   const HeaderTextButton = tmp3(tmp4[31]).HeaderTextButton;
   const intl3 = tmp3(tmp4[10]).intl;
   const string = intl3.string;
@@ -463,7 +461,7 @@ export default function InterestGuildRecommendations(analyticsContext) {
       const mapped = found.map((id) => id.id);
       const obj = { joined_count: mapped.length, joined_guild_ids: mapped, pending_join_count: obj2.getInterestGuildJoinsInFlight().length, recommendations_loading: tmp11, recommendations_failed: syncExternalStore.failed, duration_ms: Math.max(0, Date.now() - ref.current) };
       const track = AnalyticsUtilsDefault.track;
-      const WATERWHEELS_INTEREST_SERVERS_COMPLETE = metroImportAll.WATERWHEELS_INTEREST_SERVERS_COMPLETE;
+      const WATERWHEELS_INTEREST_SERVERS_COMPLETE = metroImportDefault.WATERWHEELS_INTEREST_SERVERS_COMPLETE;
       AnalyticsUtilsDefault;
       const merged = Object.assign(analyticsContext);
       const _Math = Math;
@@ -474,12 +472,13 @@ export default function InterestGuildRecommendations(analyticsContext) {
       react();
     }
   }
-  const obj8 = { top: true, children: closure_11(ref, obj5) };
+  const obj8 = { top: true, children: closure_10(syncExternalStore, obj5) };
   const obj9 = { label: string(stateFromStores ? t.i4jeWR : t["5Wxrcd"]), labelStyle: tmp.completion, onPress: handleComplete };
-  items6[2] = closure_10(HeaderTextButton, obj9);
+  items6[2] = str(HeaderTextButton, obj9);
   items7 = [tmp15(SafeAreaPaddingView, obj8), ];
   const obj10 = { contentContainerStyle: tmp.content, onScroll, scrollEventThrottle: 16, children: items9 };
   const obj11 = { style: tmp.intro, children: items8 };
+  const ScrollView = tmp16(tmp4[32]).ScrollView;
   const obj12 = { variant: "heading-xl/semibold", color: "text-strong", children: intl4.string(gameIds(resource[15]).TQdfcH) };
   const Heading = tmp3(tmp4[9]).Heading;
   intl4 = tmp3(tmp4[10]).intl;
@@ -487,52 +486,57 @@ export default function InterestGuildRecommendations(analyticsContext) {
   const obj13 = { variant: "body-sm/normal", color: "text-default", style: tmp.centered, children: intl5.string(gameIds(resource[15])["G++b7J"]) };
   const Text = tmp3(tmp4[9]).Text;
   intl5 = tmp3(tmp4[10]).intl;
-  items8[1] = closure_10(Text, obj13);
-  items9 = [tmp13(tmp14, obj11), tmp15(tmp16(tmp4[32]), { gameIds }), , , ];
-  let tmp15Result = syncExternalStore.guilds.length > 0;
-  const tmp17 = syncExternalStore;
+  items8[1] = str(Text, obj13);
+  items9 = [tmp13(tmp14, obj11), , , , ];
+  let tmp15Result = gameIds.length > 0;
   if (tmp15Result) {
-    const obj14 = { guilds: syncExternalStore.guilds, onJoinTapped: callback, onProfileOpened: callback1, onJoinResult: callback2 };
-    tmp15Result = tmp15(ProgressiveGuildRows, obj14, syncExternalStore.key);
+    const obj14 = { gameIds };
+    tmp15Result = tmp15(tmp16(tmp4[33]), obj14);
   }
-  items9[2] = tmp15Result;
-  items9[3] = 0 === syncExternalStore.guilds.length && "loading" === syncExternalStore.status && closure_10(InterestGuildSkeleton, {});
+  items9[1] = tmp15Result;
+  let tmp15Result3 = syncExternalStore.guilds.length > 0;
+  if (tmp15Result3) {
+    const obj15 = { guilds: syncExternalStore.guilds, onJoinTapped: callback, onProfileOpened: callback1, onJoinResult: callback2 };
+    tmp15Result3 = tmp15(ProgressiveGuildRows, obj15, syncExternalStore.key);
+  }
+  items9[2] = tmp15Result3;
+  items9[3] = 0 === syncExternalStore.guilds.length && "loading" === syncExternalStore.status && str(InterestGuildSkeleton, {});
   let tmp13Result = 0 === syncExternalStore.guilds.length && "loading" !== syncExternalStore.status;
-  const tmp15Result2 = 0 === syncExternalStore.guilds.length && "loading" === syncExternalStore.status && closure_10(InterestGuildSkeleton, {});
+  const tmp15Result4 = 0 === syncExternalStore.guilds.length && "loading" === syncExternalStore.status && str(InterestGuildSkeleton, {});
   if (tmp13Result) {
-    const obj15 = { style: tmp.empty, children: items10 };
-    const obj16 = { variant: "heading-sm/semibold", color: "text-strong", children: intl6.string(gameIds(resource[15]).rtXXRe) };
+    const obj16 = { style: tmp.empty, children: items10 };
+    const obj17 = { variant: "heading-sm/semibold", color: "text-strong", children: intl6.string(gameIds(resource[15]).rtXXRe) };
     const Heading2 = tmp3(tmp4[9]).Heading;
     intl6 = tmp3(tmp4[10]).intl;
-    items10 = [tmp15(Heading2, obj16), , , ];
-    const obj17 = { variant: "body-sm/normal", color: "text-muted", style: tmp.centered, children: intl7.string(gameIds(resource[15]).A3YsGV) };
+    items10 = [tmp15(Heading2, obj17), , , ];
+    const obj18 = { variant: "body-sm/normal", color: "text-muted", style: tmp.centered, children: intl7.string(gameIds(resource[15]).A3YsGV) };
     const Text2 = tmp3(tmp4[9]).Text;
     intl7 = tmp3(tmp4[10]).intl;
-    items10[1] = closure_10(Text2, obj17);
-    const obj18 = {
+    items10[1] = str(Text2, obj18);
+    const obj19 = {
       variant: "secondary",
       size: "sm",
       text: intl8.string(gameIds(resource[15]).uGhymA),
       onPress: function handleRetry() {
           const obj = { load_state: str };
           const track = AnalyticsUtilsDefault.track;
-          const WATERWHEELS_INTEREST_SERVERS_RETRY = metroImportAll.WATERWHEELS_INTEREST_SERVERS_RETRY;
+          const WATERWHEELS_INTEREST_SERVERS_RETRY = metroImportDefault.WATERWHEELS_INTEREST_SERVERS_RETRY;
           AnalyticsUtilsDefault;
           const merged = Object.assign(analyticsContext);
           track(WATERWHEELS_INTEREST_SERVERS_RETRY, obj);
           resource.retry();
         }
     };
-    const Button = tmp3(tmp4[33]).Button;
+    const Button = tmp3(tmp4[34]).Button;
     intl8 = tmp3(tmp4[10]).intl;
-    items10[2] = closure_10(Button, obj18);
-    const obj19 = { label: intl9.string(tmp3(resource[10]).t.i4jeWR), labelStyle: tmp.completion, onPress: handleComplete };
+    items10[2] = str(Button, obj19);
+    const obj20 = { label: intl9.string(tmp3(resource[10]).t.i4jeWR), labelStyle: tmp.completion, onPress: handleComplete };
     const HeaderTextButton2 = tmp3(tmp4[31]).HeaderTextButton;
     intl9 = tmp3(tmp4[10]).intl;
-    items10[3] = closure_10(HeaderTextButton2, obj19);
-    tmp13Result = tmp13(tmp14, obj15);
+    items10[3] = str(HeaderTextButton2, obj20);
+    tmp13Result = tmp13(tmp14, obj16);
   }
   items9[4] = tmp13Result;
-  items7[1] = closure_11(tmp17, obj10);
-  return closure_11(ref, obj4);
+  items7[1] = closure_10(ScrollView, obj10);
+  return closure_10(syncExternalStore, obj4);
 };

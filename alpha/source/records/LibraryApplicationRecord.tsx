@@ -1,14 +1,14 @@
-// Module ID: 2166
-// Function ID: 2167
+// Module ID: 2161
+// Function ID: 2162
 // Name: LibraryApplicationRecord
-// Dependencies: [1400, 2167, 2168, 1072, 2171, 1398, 2]
+// Dependencies: [1405, 2162, 2163, 1072, 2166, 1403, 2]
 
-// Module 2166 (LibraryApplicationRecord)
-import FlagUtilsAll from "FlagUtils" /* 1398 */;
-import _modDef2171 from "module_2171" /* 2171 */;
-import Record from "Record" /* 1400 */;
-import ApplicationStore from "ApplicationStore" /* 2167 */;
-import EntitlementRecord from "EntitlementRecord" /* 2168 */;
+// Module 2161 (LibraryApplicationRecord)
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import _modDef2166 from "module_2166" /* 2166 */;
+import Record from "Record" /* 1405 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import EntitlementRecord from "EntitlementRecord" /* 2163 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ class LibraryApplicationRecord extends Record {
     obj2 = { id: id.sku.id, type: id.sku.type, premium: id.sku.premium, preorderReleaseAt: entitlementsResult, preorderApproximateReleaseDate: prop };
     entitlementsResult = null;
     if (null != id.sku.preorder_release_at) {
-      entitlements = _modDef2171;
+      entitlements = _modDef2166;
       entitlementsResult = entitlements(id.sku.preorder_release_at);
     }
     prop = null;

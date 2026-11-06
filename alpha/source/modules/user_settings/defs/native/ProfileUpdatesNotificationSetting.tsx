@@ -1,14 +1,14 @@
-// Module ID: 17781
-// Function ID: 17782
+// Module ID: 17770
+// Function ID: 17771
 // Name: ProfileUpdatesNotificationSetting
-// Dependencies: [8578, 11737, 1113, 4968, 17782, 2]
+// Dependencies: [8524, 11703, 1113, 4995, 17771, 2]
 
-// Module 17781 (ProfileUpdatesNotificationSetting)
+// Module 17770 (ProfileUpdatesNotificationSetting)
 import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4968 */;
-import SettingsConstants from "SettingsConstants" /* 8578 */;
-import ProfileUpdatesNotificationUtils from "ProfileUpdatesNotificationUtils" /* 17782 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import SettingsConstants from "SettingsConstants" /* 8524 */;
+import ProfileUpdatesNotificationUtils from "ProfileUpdatesNotificationUtils" /* 17771 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

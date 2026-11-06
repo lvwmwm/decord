@@ -1,10 +1,10 @@
-// Module ID: 5737
-// Function ID: 5738
+// Module ID: 5757
+// Function ID: 5758
 // Name: VisualEffectViewAnimated
-// Dependencies: [1652, 5738, 2]
+// Dependencies: [1652, 5758, 2]
 
-// Module 5737 (VisualEffectViewAnimated)
-import VisualEffectViewDefault from "VisualEffectView" /* 5738 */;
+// Module 5757 (VisualEffectViewAnimated)
+import VisualEffectViewDefault from "VisualEffectView" /* 5758 */;
 import module_1652 from "module_1652" /* 1652 */;
 import size from "module_2" /* 2 */;
 

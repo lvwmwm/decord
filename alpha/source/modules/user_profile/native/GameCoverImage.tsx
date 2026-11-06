@@ -1,15 +1,15 @@
-// Module ID: 15182
-// Function ID: 15183
+// Module ID: 15177
+// Function ID: 15178
 // Name: GameCoverImage
-// Dependencies: [19, 17, 21, 5143, 575, 9528, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 9474, 2]
 
-// Module 15182 (GameCoverImage)
+// Module 15177 (GameCoverImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import GameCoverArt from "GameCoverArt" /* 9528 */;
+import GameCoverArt from "GameCoverArt" /* 9474 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

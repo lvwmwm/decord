@@ -1,25 +1,26 @@
-// Module ID: 7142
-// Function ID: 7143
+// Module ID: 7089
+// Function ID: 7090
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1072, 21, 5143, 575, 5763, 7143, 7146, 1500, 7148, 1113, 7149, 7198, 1377, 1627, 5724, 2]
-// Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage
+// Dependencies: [5, 19, 17, 1072, 21, 5170, 575, 5781, 5796, 7090, 7093, 1500, 7095, 1113, 7096, 7145, 1377, 1627, 5744, 2]
+// Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage, useNavigatorHeaderSize
 
-// Module 7142 (NavigatorHeader)
+// Module 7089 (NavigatorHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import NavigatorConstants from "NavigatorConstants" /* 5724 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7143 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7146 */;
-import _mod7149 from "module_7149" /* 7149 */;
-import XSmallIcon from "XSmallIcon" /* 7198 */;
+import NavigatorConstants from "NavigatorConstants" /* 5744 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import useFontScale from "useFontScale" /* 5796 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 7090 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7093 */;
+import _mod7096 from "module_7096" /* 7096 */;
+import XSmallIcon from "XSmallIcon" /* 7145 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,7 +59,7 @@ function CloseButton(onPress) {
     fn();
     return true;
   });
-  const intl = tmp2(tmp3[12]).intl;
+  const intl = tmp2(tmp3[13]).intl;
   const stringResult = intl.string(require("intl").t.cpT0Cq);
   const obj2 = {
     onPress,
@@ -72,14 +73,14 @@ function CloseButton(onPress) {
     },
     accessibilityLabel: stringResult
   };
-  const HeaderBackButton = tmp2(tmp3[13]).HeaderBackButton;
+  const HeaderBackButton = tmp2(tmp3[14]).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_6(HeaderBackButton, obj2);
 }
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(7148);
+  const obj = onPress(7095);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -93,7 +94,7 @@ function CustomHeaderBackButton(onPress) {
       return closure_1_6(HeaderBackImage, {});
     }
   };
-  const HeaderBackButton = onPress(7149).HeaderBackButton;
+  const HeaderBackButton = onPress(7096).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_6(HeaderBackButton, obj2);
 }
@@ -114,7 +115,7 @@ function HeaderTextButton(text) {
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod7149.HeaderBackButton;
+  const HeaderBackButton = _mod7096.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;
@@ -128,47 +129,72 @@ function HeaderTextButton(text) {
 const Fonts = Constants.Fonts;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { fauxHeaderWrapper: obj2, headerTitle: obj3, headerBackTitleStyle: obj4, navigatorHeaderTitleContainer: { flexDirection: "row", justifyContent: "center", alignItems: "center" }, navigatorHeaderContainer: { flexDirection: "column", justifyContent: "center", alignItems: "center" }, navigatorHeaderSubtitle: { marginTop: -2 }, headerButtonIcon: size, submittingIndicator: size1 };
+let obj = { fauxHeaderWrapper: obj2, headerTitle: obj3, headerBackTitleStyle: obj4, navigatorHeaderTitleContainer: { flexDirection: "row", justifyContent: "center", alignItems: "center" }, navigatorHeaderContainer: { flexDirection: "column", justifyContent: "center", alignItems: "center" }, navigatorHeaderSubtitle: { marginTop: 2 }, headerButtonIcon: size, submittingIndicator: size1 };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
 createStyles = createStyles.createStyles;
-obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+obj3 = { color: nativeDefault.colors.TEXT_STRONG };
 let merged = Object.assign(Text_Text.TextStyleSheet["heading-md/semibold"]);
 obj4 = { fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 16, letterSpacing: 0, lineHeight: 20, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
-size = { width: 24, height: 24, tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
+size = { width: 24, height: 24, tintColor: nativeDefault.colors.ICON_DEFAULT };
 size1 = { width: 22, height: 22, color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 const styles = createStyles(obj);
+let closure_9 = { height: 54, titleVariant: "heading-sm/semibold", subtitleVariant: "body-xs/normal" };
+let closure_10 = { height: 58, titleVariant: "heading-md/semibold", subtitleVariant: "body-sm/normal" };
+let closure_11 = { height: 62, titleVariant: "heading-lg/semibold", subtitleVariant: "body-md/normal" };
 size = size_mod;
 const result = size.fileFinishedImporting("design/components/Navigator/native/NavigatorHeader.native.tsx");
 
 export const useStyles = styles;
+export function useNavigatorHeaderSize() {
+  let tmp2;
+  const obj = useFontScale;
+  const fontScale = obj.useFontScale();
+  if (fontScale < 1) {
+    tmp2 = closure_9;
+  } else {
+    tmp2 = fontScale > 1 ? closure_11 : closure_10;
+  }
+  return tmp2;
+}
 export function NavigatorHeader(subtitle) {
   let icon;
   let items;
   let items1;
+  let subtitleVariant;
   let title;
+  let titleVariant;
+  let tmp6;
   subtitle = subtitle.subtitle;
   ({ title, icon } = subtitle);
   const tmp = styles();
-  const obj2 = { style: tmp.navigatorHeaderTitleContainer, children: items };
-  items = [icon, ];
-  const obj = { style: tmp.navigatorHeaderContainer, children: items1 };
   const tmp3 = HeaderDebugOverlayDefault("js-stack");
-  items[1] = metroRequire(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: title });
-  items1 = [metroImportDefault(React3, obj2), , ];
-  let tmp6Result = null != subtitle;
-  const tmp4 = metroImportDefault;
-  const tmp5 = React3;
-  const tmp6 = metroRequire;
-  if (tmp6Result) {
-    tmp6Result = "" !== subtitle;
+  const obj = useFontScale;
+  const fontScale = obj.useFontScale();
+  if (fontScale < 1) {
+    tmp6 = closure_9;
+  } else {
+    tmp6 = fontScale > 1 ? closure_11 : closure_10;
   }
-  if (tmp6Result) {
-    const obj3 = { lineClamp: 1, style: tmp.navigatorHeaderSubtitle, variant: "body-xs/medium", color: "text-muted", children: subtitle };
-    tmp6Result = tmp6(Text_Text.Text, obj3);
+  const obj3 = { style: tmp.navigatorHeaderTitleContainer, children: items };
+  items = [icon, ];
+  const obj2 = { style: tmp.navigatorHeaderContainer, children: items1 };
+  ({ titleVariant, subtitleVariant } = tmp6);
+  items[1] = metroRequire(Text_Text.Text, { accessibilityRole: "header", "aria-level": "1", lineClamp: 1, allowFontScaling: false, variant: titleVariant, color: "text-strong", children: title });
+  items1 = [metroImportDefault(React3, obj3), , ];
+  let tmp9Result = null != subtitle;
+  const tmp7 = metroImportDefault;
+  const tmp8 = React3;
+  const tmp9 = metroRequire;
+  if (tmp9Result) {
+    tmp9Result = "" !== subtitle;
   }
-  items1[1] = tmp6Result;
+  if (tmp9Result) {
+    const obj4 = { lineClamp: 1, allowFontScaling: false, style: tmp.navigatorHeaderSubtitle, variant: subtitleVariant, color: "text-subtle", children: subtitle };
+    tmp9Result = tmp9(tmp4(5781).Text, obj4);
+  }
+  items1[1] = tmp9Result;
   items1[2] = tmp3;
-  return tmp4(tmp5, obj);
+  return tmp7(tmp8, obj2);
 }
 export { HeaderBackImage };
 export function renderBackImage() {

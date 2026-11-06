@@ -1,13 +1,13 @@
-// Module ID: 16867
-// Function ID: 16868
+// Module ID: 16855
+// Function ID: 16856
 // Name: useAutoScrollToSetting
-// Dependencies: [19, 16860, 11738, 16698, 16862, 1499, 2]
+// Dependencies: [19, 16848, 11704, 16695, 16850, 1499, 2]
 // Exports: useAutoScrollToSearchResultSetting
 
-// Module 16867 (useAutoScrollToSetting)
-import SettingRendererConstants from "SettingRendererConstants" /* 11738 */;
+// Module 16855 (useAutoScrollToSetting)
+import SettingRendererConstants from "SettingRendererConstants" /* 11704 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16860 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16848 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,8 +31,8 @@ export function useAutoScrollToSearchResultSetting(ref, memo, scrollTarget) {
   let flag = false;
   if (null != current) {
     flag = false;
-    if (tmp(16698).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
-      const tmpResult = tmp(16862);
+    if (tmp(16695).SETTING_RENDERER_CONFIG[current].type !== current.ROUTE) {
+      const tmpResult = tmp(16850);
       let initialScrollIndex = tmpResult.getInitialScrollIndex(current, memo);
       flag = 0 !== initialScrollIndex && 1 !== initialScrollIndex;
       const tmp7 = 0 !== initialScrollIndex && 1 !== initialScrollIndex;

@@ -1,9 +1,9 @@
-// Module ID: 11726
-// Function ID: 11727
+// Module ID: 11692
+// Function ID: 11693
 // Name: ConjurePagesStore
 // Dependencies: [504, 572, 2]
 
-// Module 11726 (ConjurePagesStore)
+// Module 11692 (ConjurePagesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 15711
-// Function ID: 15712
+// Module ID: 15705
+// Function ID: 15706
 // Name: GuildBoostingMarketingWave
-// Dependencies: [19, 21, 5734, 575, 8176, 2]
+// Dependencies: [19, 21, 5754, 575, 8122, 2]
 // Exports: default
 
-// Module 15711 (GuildBoostingMarketingWave)
+// Module 15705 (GuildBoostingMarketingWave)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5734 */;
-import inlineStyles from "inlineStyles" /* 8176 */;
+import useToken from "useToken" /* 5754 */;
+import inlineStyles from "inlineStyles" /* 8122 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

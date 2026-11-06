@@ -1,20 +1,20 @@
-// Module ID: 13257
-// Function ID: 13258
+// Module ID: 13231
+// Function ID: 13232
 // Name: ConjureDebugPrimitives
-// Dependencies: [19, 17, 21, 5143, 575, 5763, 1113, 3995, 13255, 5770, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5781, 1113, 4024, 13229, 5788, 2]
 // Exports: DebugMeter, DebugNote, DebugSection, DebugSnapshotToolbar, DebugStatRow
 
-// Module 13257 (ConjureDebugPrimitives)
+// Module 13231 (ConjureDebugPrimitives)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
-import _modDef3995 from "module_3995" /* 3995 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import components_Button_Button from "components/Button/Button" /* 5770 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 13255 */;
+import _modDef4024 from "module_4024" /* 4024 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import components_Button_Button from "components/Button/Button" /* 5788 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 13229 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -63,7 +63,7 @@ export function DebugSnapshotToolbar(onRefresh) {
   if ("loading" === fetchState) {
     tmp4Result = tmp4(_false, { size: "small" });
   } else if ("failed" === fetchState) {
-    const obj3 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef3995.ZVByPX) };
+    const obj3 = { variant: "body-xs/normal", color: "text-feedback-critical", children: intl2.string(_modDef4024.ZVByPX) };
     const Text2 = Text_Text.Text;
     intl2 = intl4.intl;
     tmp4Result = tmp4(Text2, obj3);
@@ -75,13 +75,13 @@ export function DebugSnapshotToolbar(onRefresh) {
       const intl = intl4.intl;
       formatToPlainString = intl.formatToPlainString;
       obj6 = { time: obj5.formatObservedAt(generatedAt) };
-      INVO50 = _modDef3995.INVO50;
+      INVO50 = _modDef4024.INVO50;
       obj5 = ConjureDebugFormat;
       tmp4Result = tmp4(Text, obj4);
     }
   }
   items = [hasOwnProperty(React3, obj2), ];
-  const obj7 = { variant: "secondary", size: "sm", text: intl3.string(_modDef3995.oKEgiu), onPress: onRefresh };
+  const obj7 = { variant: "secondary", size: "sm", text: intl3.string(_modDef4024.oKEgiu), onPress: onRefresh };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
   items[1] = hasOwnProperty(Button, obj7);

@@ -1,58 +1,202 @@
 // Module ID: 13279
 // Function ID: 13280
-// Dependencies: [13280, 13281, 13284]
-// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
+// Dependencies: [41, 42, 13262]
+// Exports: rejectedSyncPromise, resolvedSyncPromise
 
 // Module 13279
-import _mod13280 from "module_13280" /* 13280 */;
-import _mod13284 from "module_13284" /* 13284 */;
+import _mod13262 from "module_13262" /* 13262 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
-let closure_2 = {};
-let closure_3 = {};
+let c3;
 
-export function addHandler(arg0, arg1) {
-  const tmp2 = closure_2[arg0] || [];
-  closure_2[arg0] = tmp2;
-  const arr = closure_2[arg0];
-  arr.push(arg1);
-}
-export function maybeInstrument(arg0, fn) {
-  if (!closure_3[arg0]) {
-    tmp[arg0] = true;
+let obj = { PENDING: 0, RESOLVED: 1, REJECTED: 2 };
+obj[0] = "PENDING";
+obj[1] = "RESOLVED";
+obj[2] = "REJECTED";
+class SyncPromise {
+  constructor(fn) {
+    const self = this;
+    _classCallCheck(this, SyncPromise);
+    const __init = SyncPromise.prototype.__init;
+    __init.call(self);
+    const __init2 = tmp.prototype.__init2;
+    __init2.call(self);
+    const __init3 = tmp.prototype.__init3;
+    __init3.call(self);
+    const __init4 = tmp.prototype.__init4;
+    __init4.call(self);
+    self._state = obj.PENDING;
+    self._handlers = [];
     try {
-      fn();
-    } catch (tmp4) {
-      const tmp5 = require;
-      if (_mod13280.DEBUG_BUILD) {
-        const logger = tmp5(13281).logger;
-        const _HermesInternal = HermesInternal;
-        logger.error("Error while instrumenting " + arg0, tmp4);
-      }
+      fn(self._resolve, self._reject);
+    } catch (tmp5) {
+      self._reject(tmp5);
     }
   }
 }
-export function resetInstrumentationHandlers() {
-  const keys = Object.keys(closure_2);
-  const item = keys.forEach((item) => {
-    closure_1_2[item] = undefined;
-  });
-}
-export function triggerHandlers(arg0, arg1) {
-  if (arg0 && closure_2[arg0]) {
-    const iter = (arg0 && closure_2[arg0])[Symbol.iterator]();
-    const nextResult = iter.next();
-    if (iter !== undefined) {
-      try {
-        nextResult(arg1);
-      } catch (tmp11) {
-        if (_mod13280.DEBUG_BUILD) {
-          const logger = tmp12(13281).logger;
-          const error = logger.error;
-          const _HermesInternal = HermesInternal;
-          const tmp12Result = _mod13284;
-          error("Error while triggering instrumentation handler.\nType: " + arg0 + "\nName: " + tmp12Result.getFunctionName(nextResult) + "\nError:", tmp11);
+const entry = {
+  key: "then",
+  value: function then(arg0, arg1) {
+    const self = this;
+    let closure_1 = arg0;
+    let closure_0 = arg1;
+    obj = Object.create(SyncPromise.prototype);
+    SyncPromise((arg0, arg1) => {
+      closure_0 = arg0;
+      closure_1 = arg1;
+      const _handlers = self._handlers;
+      const items = [
+        false,
+        (arg0) => {
+          if (closure_1) {
+            try {
+              closure_0(tmp(arg0));
+            } catch (tmp6) {
+              closure_1(tmp6);
+            }
+          } else {
+            closure_0(arg0);
+          }
+        },
+        (arg0) => {
+          if (closure_0) {
+            try {
+              closure_0(tmp(arg0));
+            } catch (tmp6) {
+              closure_1(tmp6);
+            }
+          } else {
+            closure_1(arg0);
+          }
         }
-      }
+      ];
+      _handlers.push(items);
+      self._executeHandlers();
+    });
+    return obj;
+  }
+};
+let items = [
+  entry,
+  {
+    key: "catch",
+    value: function _catch(arg0) {
+      return this.then((result) => result, arg0);
+    }
+  },
+  {
+    key: "finally",
+    value: function _finally(arg0) {
+      const self = this;
+      let closure_0 = arg0;
+      obj = Object.create(SyncPromise.prototype);
+      SyncPromise((arg0, arg1) => {
+        let closure_1;
+        closure_0 = arg0;
+        const nextPromise = arg1.then((result) => {
+          c3 = false;
+          let closure_1_2 = result;
+          if (closure_0) {
+            tmp();
+          }
+        }, (arg0) => {
+          c3 = true;
+          let closure_1_2 = arg0;
+          if (closure_0) {
+            tmp();
+          }
+        });
+        return nextPromise.then(() => {
+          const tmp = c3;
+          if (tmp) {
+            closure_1(closure_1_2);
+          } else {
+            closure_0(closure_1_2);
+          }
+        });
+      });
+      return obj;
+    }
+  },
+  {
+    key: "__init",
+    value: function __init() {
+      const self = this;
+      this._resolve = (arg0) => {
+        self._setResult(obj.RESOLVED, arg0);
+      };
+    }
+  },
+  {
+    key: "__init2",
+    value: function __init2() {
+      const self = this;
+      this._reject = (arg0) => {
+        self._setResult(obj.REJECTED, arg0);
+      };
+    }
+  },
+  {
+    key: "__init3",
+    value: function __init3() {
+      const self = this;
+      this._setResult = (_state, _value) => {
+        if (self._state === self.PENDING) {
+          const obj2 = _mod13262;
+          if (obj2.isThenable(_value)) {
+            _value.then(self._resolve, self._reject);
+          } else {
+            self._state = _state;
+            self._value = _value;
+            self._executeHandlers();
+          }
+        }
+      };
+    }
+  },
+  {
+    key: "__init4",
+    value: function __init4() {
+      const self = this;
+      this._executeHandlers = () => {
+        let _state;
+        if (self._state !== obj.PENDING) {
+          const _handlers = tmp._handlers;
+          const substr = _handlers.slice();
+          self._handlers = [];
+          const item = substr.forEach((item) => {
+            if (!item[0]) {
+              const tmp2 = constants;
+              if (_state._state === constants.RESOLVED) {
+                item[1](_state._value);
+              }
+              if (_state._state === tmp2.REJECTED) {
+                item[2](_state._value);
+              }
+              item[0] = true;
+            }
+          });
+        }
+      };
     }
   }
+];
+const _moduleResult = _createClass(SyncPromise, items);
+const SyncPromise_export = _moduleResult;
+
+export { SyncPromise_export as SyncPromise };
+export function rejectedSyncPromise(arg0) {
+  let closure_0 = arg0;
+  const tmp = new _moduleResult((arg0, fn) => {
+    fn(closure_0);
+  });
+  return tmp;
+}
+export function resolvedSyncPromise(arg0) {
+  let closure_0 = arg0;
+  const tmp = new _moduleResult((fn) => {
+    fn(closure_0);
+  });
+  return tmp;
 }

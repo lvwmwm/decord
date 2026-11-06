@@ -1,22 +1,22 @@
-// Module ID: 11470
-// Function ID: 11471
+// Module ID: 11432
+// Function ID: 11433
 // Name: MoreTipsModal
-// Dependencies: [19, 17, 10988, 1072, 21, 5143, 575, 11471, 5763, 1113, 11476, 7700, 6882, 8504, 1187, 1627, 563, 11465, 6678, 6683, 7309, 2]
+// Dependencies: [19, 17, 10940, 1072, 21, 5170, 575, 11433, 5781, 1113, 11438, 7653, 6824, 8450, 1187, 1627, 563, 11427, 6619, 6624, 7256, 2]
 // Exports: default
 
-// Module 11470 (MoreTipsModal)
+// Module 11432 (MoreTipsModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6678 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11465 */;
-import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11471 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6619 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11427 */;
+import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11433 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10988 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10940 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -29,8 +29,8 @@ let obj4;
 let obj5;
 let tmp;
 let tmp6;
-const MetricEvents = tmp(6683);
-const WasThisHelpfulSectionDefault = tmp6(11476);
+const MetricEvents = tmp(6624);
+const WasThisHelpfulSectionDefault = tmp6(11438);
 function MoreTipsModalScreen(learnMore) {
   let actionItems;
   let channelId;

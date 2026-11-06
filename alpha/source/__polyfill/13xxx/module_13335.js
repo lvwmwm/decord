@@ -1,132 +1,123 @@
 // Module ID: 13335
 // Function ID: 13336
-// Dependencies: [13328]
-// Exports: getEnvelopeEndpointWithUrlEncodedAuth, getReportDialogEndpoint
+// Dependencies: [32, 109, 13336, 13311]
 
 // Module 13335
-import _mod13328 from "module_13328" /* 13328 */;
+import DEFAULT_USER_INCLUDES from "DEFAULT_USER_INCLUDES" /* 13336 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import module_13311 from "module_13311" /* 13311 */;
 
+let closure_4 = ["ip", "user"];
+let obj = { include: { cookies: true, data: true, headers: true, ip: false, query_string: true, url: true, user: { id: true, username: true, email: true } }, transactionNamingScheme: "methodPath" };
 
-export function getEnvelopeEndpointWithUrlEncodedAuth(protocol, arg1, name) {
-  let combined1 = arg1;
-  if (!combined1) {
-    let str2 = "";
-    if (protocol.protocol) {
-      const _HermesInternal = HermesInternal;
-      str2 = "" + protocol.protocol + ":";
-    }
-    let str4 = "";
-    if (protocol.port) {
-      const _HermesInternal2 = HermesInternal;
-      str4 = ":" + protocol.port;
-    }
-    const host = protocol.host;
-    let str6 = "";
-    if (protocol.path) {
-      const _HermesInternal3 = HermesInternal;
-      str6 = "/" + protocol.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const obj = { sentry_version: "7" };
-    const combined = "" + "" + str2 + "//" + host + str4 + str6 + "/api/" + protocol.projectId + "/envelope/";
-    if (protocol.publicKey) {
-      obj.sentry_key = protocol.publicKey;
-    }
-    const tmp12 = name;
-    if (tmp12) {
-      const _HermesInternal6 = HermesInternal;
-      obj.sentry_client = "" + name.name + "/" + name.version;
-    }
-    const _URLSearchParams = URLSearchParams;
-    const self = this;
-    const self2 = this;
-    const _HermesInternal7 = HermesInternal;
-    const str13 = new URLSearchParams(obj);
-    combined1 = "" + combined + "?" + str13.toString();
+export const requestDataIntegration = module_13311.defineIntegration(() => {
+  obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-  return combined1;
-}
-export function getReportDialogEndpoint(arg0, user) {
-  const obj = _mod13328;
-  const url = obj.makeDsn(arg0);
-  if (url) {
-    let str = "";
-    if (url.protocol) {
-      const _HermesInternal = HermesInternal;
-      str = "" + url.protocol + ":";
+  let obj2 = {};
+  let tmp = obj;
+  const merged = Object.assign(obj);
+  const merged1 = Object.assign(obj);
+  let obj3 = {};
+  const merged2 = Object.assign(obj.include);
+  const merged3 = Object.assign(obj.include);
+  if (obj.include) {
+    let user;
+    if (typeof obj.include.user === "boolean") {
+      user = obj.include.user;
     }
-    let str3 = "";
-    if (url.port) {
-      const _HermesInternal2 = HermesInternal;
-      str3 = ":" + url.port;
-    }
-    const host = url.host;
-    let str5 = "";
-    if (url.path) {
-      const _HermesInternal3 = HermesInternal;
-      str5 = "/" + url.path;
-    }
-    const _HermesInternal4 = HermesInternal;
-    const _HermesInternal5 = HermesInternal;
-    const combined = "" + "" + str + "//" + host + str3 + str5 + "/api/" + "embed/error-page/";
-    const _HermesInternal6 = HermesInternal;
-    const tmp2Result = _mod13328;
-    let combined1 = "dsn=" + tmp2Result.dsnToString(url);
-    let tmp16 = combined1;
-    const keys = Object.keys();
-    if (keys !== undefined) {
-      tmp16 = combined1;
-      while (keys[tmp] !== undefined) {
-        if ("dsn" === tmp19) {
-          continue;
-        } else {
-          combined1 = tmp18;
-          if ("onClose" === tmp19) {
-            continue;
-          } else {
-            if ("user" === tmp19) {
-              user = user.user;
-              combined1 = tmp18;
-              if (!user) {
-                continue;
-              } else {
-                let sum = tmp18;
-                if (user.name) {
-                  let _encodeURIComponent3 = encodeURIComponent;
-                  let _HermesInternal8 = HermesInternal;
-                  sum = tmp18 + "&name=" + encodeURIComponent(user.name);
-                }
-                combined1 = sum;
-                if (!user.email) {
-                  continue;
-                } else {
-                  let _encodeURIComponent4 = encodeURIComponent;
-                  let _HermesInternal9 = HermesInternal;
-                  combined1 = sum + "&email=" + encodeURIComponent(user.email);
-                  continue;
-                }
-                continue;
+    obj3.user = user;
+    obj2.include = obj3;
+    return {
+      name: "RequestData",
+      processEvent(sdkProcessingMetadata) {
+          let normalizedRequest;
+          let request;
+          function convertReqDataIntegrationOptsToAddReqDataOpts(include) {
+            let tmp15;
+            include = include.include;
+            const user = include.user;
+            const transactionNamingScheme = include.transactionNamingScheme;
+            const ip = include.ip;
+            const items = ["method"];
+            const entries = Object.entries(closure_1_3(include, closure_1_4));
+            const tmp2 = entries[Symbol.iterator]();
+            while (tmp2 !== undefined) {
+              let tmp5 = closure_1_2(tmp3, 2);
+              let first = tmp5[0];
+              if (tmp5[1]) {
+                let arr = items.push(first);
               }
               continue;
-            } else {
-              let _encodeURIComponent = encodeURIComponent;
-              let _encodeURIComponent2 = encodeURIComponent;
-              let encodeURIComponentResult = encodeURIComponent(tmp19);
-              let _HermesInternal7 = HermesInternal;
-              combined1 = tmp18 + "&" + encodeURIComponentResult + "=" + encodeURIComponent(user[tmp19]);
-              continue;
             }
-            continue;
+            let flag = true;
+            if (undefined !== user) {
+              flag = user;
+              if (typeof user !== "boolean") {
+                const items1 = [];
+                const _Object = Object;
+                const entries1 = Object.entries(user);
+                flag = items1;
+                for (const item10032 of entries1) {
+                  let tmp11 = closure_1_2(item10032, 2);
+                  let first1 = tmp11[0];
+                  if (tmp11[1]) {
+                    let arr2 = items1.push(first1);
+                  }
+                  continue;
+                }
+              }
+            }
+            const include2 = { ip, user: flag, request: tmp15, transaction: transactionNamingScheme };
+            tmp15 = undefined;
+            if (0 !== items.length) {
+              tmp15 = items;
+            }
+            return { include: include2 };
           }
-          continue;
+          let prop = sdkProcessingMetadata.sdkProcessingMetadata;
+          if (undefined === prop) {
+            prop = {};
+          }
+          ({ request, normalizedRequest } = prop);
+          const tmp = convertReqDataIntegrationOptsToAddReqDataOpts(obj2);
+          if (normalizedRequest) {
+            let tmp5;
+            if (request) {
+              let ip = request.ip;
+              if (!ip) {
+                ip = request.socket && request.socket.remoteAddress;
+              }
+              tmp5 = ip;
+            }
+            let user;
+            if (request) {
+              user = request.user;
+            }
+            const obj3 = DEFAULT_USER_INCLUDES;
+            obj = { ipAddress: tmp5, user };
+            let tmp10 = obj3;
+            let tmp11 = sdkProcessingMetadata;
+            let tmp13 = obj;
+            const result = obj3.addNormalizedRequestDataToEvent(sdkProcessingMetadata, normalizedRequest, obj, tmp);
+            return sdkProcessingMetadata;
+          } else {
+            let result1 = sdkProcessingMetadata;
+            if (request) {
+              const tmp3 = require;
+              let tmp4 = dependencyMap;
+              obj2 = DEFAULT_USER_INCLUDES;
+              result1 = obj2.addRequestDataToEvent(sdkProcessingMetadata, request, tmp);
+            }
+            return result1;
+          }
         }
-        continue;
-      }
-    }
-    const _HermesInternal10 = HermesInternal;
-    return "" + combined + "?" + tmp16;
-  } else {
-    return "";
+    };
   }
-}
+  user = {};
+  const merged4 = Object.assign(tmp.include.user);
+  let tmp7 = obj.include || {};
+  const merged5 = Object.assign(tmp7.user);
+});

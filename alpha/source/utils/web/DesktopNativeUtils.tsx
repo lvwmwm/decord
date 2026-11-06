@@ -1,17 +1,17 @@
-// Module ID: 7077
-// Function ID: 7078
+// Module ID: 7019
+// Function ID: 7020
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1072, 38, 5375, 1377, 510, 7078, 7079, 4, 7080, 7081, 1378, 1282, 5906, 2]
+// Dependencies: [32, 5, 1072, 38, 5395, 1377, 510, 7020, 7021, 4, 7022, 7023, 1378, 1282, 5925, 2]
 
-// Module 7077 (DesktopNativeUtils)
+// Module 7019 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
 import Constants from "Constants" /* 1072 */;
-import flow_Client from "flow/Client" /* 5375 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5906 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 7078 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 7079 */;
-import IPCEvents from "IPCEvents" /* 7080 */;
+import flow_Client from "flow/Client" /* 5395 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5925 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 7020 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 7021 */;
+import IPCEvents from "IPCEvents" /* 7022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(7081);
+const FileExtensionUtils = tmp2(7023);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -487,6 +487,13 @@ let obj2 = {
     const setProcessObserverCollectExecutableFingerprint = discordUtils.setProcessObserverCollectExecutableFingerprint;
     if (setProcessObserverCollectExecutableFingerprint != null) {
       const result = setProcessObserverCollectExecutableFingerprint(arg0);
+    }
+  },
+  setProcessObserverSteamSkuDetection(arg0) {
+    const discordUtils = this.getDiscordUtils();
+    const setProcessObserverSteamSkuDetection = discordUtils.setProcessObserverSteamSkuDetection;
+    if (setProcessObserverSteamSkuDetection != null) {
+      const result = setProcessObserverSteamSkuDetection(arg0);
     }
   },
   getExecutableFingerprintForProcess(arg0) {
@@ -1037,7 +1044,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(7081);
+        const tmpResult = tmp(7023);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;

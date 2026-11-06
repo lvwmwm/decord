@@ -1,11 +1,11 @@
-// Module ID: 14244
-// Function ID: 14245
+// Module ID: 14221
+// Function ID: 14222
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1385, 21, 1499, 14245, 504, 14246, 5849, 1113, 5893, 14252, 2]
+// Dependencies: [5, 19, 1385, 21, 1499, 14222, 504, 14223, 5867, 1113, 5912, 14229, 2]
 
-// Module 14244 (ChatInputGuardMessageRequest)
+// Module 14221 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14252 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14229 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -145,12 +145,12 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   const tmp2 = dependencyMap;
   obj = channel(1499);
   importDefault = obj.useNavigation();
-  let obj2 = channel(14245);
+  let obj2 = channel(14222);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(14246);
+  let obj4 = channel(14223);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {

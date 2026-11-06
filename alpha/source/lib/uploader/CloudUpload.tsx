@@ -1,24 +1,24 @@
-// Module ID: 8354
-// Function ID: 8355
+// Module ID: 8299
+// Function ID: 8300
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 5766, 1194, 6039, 1072, 3, 1282, 8355, 8356, 8363, 1089, 559, 7293, 12, 1477, 8365, 8384, 7294, 8385, 8386, 8390, 1242, 8364, 8357, 8391, 8392, 2123, 8477, 1252, 2]
+// Dependencies: [109, 5, 32, 5784, 1194, 6059, 1072, 3, 1282, 8300, 8301, 8309, 1089, 559, 7240, 12, 1477, 8311, 8330, 7241, 8331, 8332, 8336, 1242, 8310, 8302, 8337, 8338, 2118, 8423, 1252, 2]
 
-// Module 8354 (CloudUpload)
+// Module 8299 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import InlineUploaderDefault from "InlineUploader" /* 7293 */;
-import UploadPlatform from "UploadPlatform" /* 8356 */;
+import InlineUploaderDefault from "InlineUploader" /* 7240 */;
+import UploadPlatform from "UploadPlatform" /* 8301 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 5766 */;
+import DevSettingsStore from "DevSettingsStore" /* 5784 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import NetworkStore from "NetworkStore" /* 6039 */;
+import NetworkStore from "NetworkStore" /* 6059 */;
 import Constants from "Constants" /* 1072 */;
-import Upload from "Upload" /* 8355 */;
+import Upload from "Upload" /* 8300 */;
 import size_mod from "module_2" /* 2 */;
 
 let c0, c5, c8, closure_6, createAttachmentURL;
@@ -233,13 +233,13 @@ class CloudUpload extends Upload {
         if (typeof obj.origin === "string") {
           origin = obj.origin;
         } else {
-          origin = tmp11(8355).UploadOrigin[obj.origin];
+          origin = tmp11(8300).UploadOrigin[obj.origin];
         }
         uploadAnalytics.origin = origin;
       }
       const self3 = this;
       const self4 = this;
-      const defaultHttpClient = new tmp11(8363).DefaultHttpClient();
+      const defaultHttpClient = new tmp11(8309).DefaultHttpClient();
       obj._uploadHttpClient = defaultHttpClient;
       obj._libdiscoreEnabled = false;
       return obj;

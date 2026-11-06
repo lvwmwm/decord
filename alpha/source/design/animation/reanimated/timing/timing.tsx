@@ -1,13 +1,13 @@
-// Module ID: 5380
-// Function ID: 5381
+// Module ID: 5400
+// Function ID: 5401
 // Name: timing/timing
-// Dependencies: [5381, 5382, 1652, 2]
+// Dependencies: [5401, 5402, 1652, 2]
 // Exports: withTiming
 
-// Module 5380 (timing/timing)
+// Module 5400 (timing/timing)
 import _mod1652 from "module_1652" /* 1652 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5381 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5382 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5401 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5402 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -26,7 +26,7 @@ let c1;
 let c2;
 let c3;
 [tmp2, tmp3, tmp4, tmp5, tmp6] = items;
-function withTiming(c9, timingStandard, arg2, ChatInputActionButtonTransitionItemTsx1) {
+function withTiming(c9, timingStandard, arg2, BadgeUnlockAnimationTsx5) {
   let tmp3;
   let str = arg2;
   if (arg2 === undefined) {
@@ -47,7 +47,7 @@ function withTiming(c9, timingStandard, arg2, ChatInputActionButtonTransitionIte
   } else {
     tmp3 = c1;
   }
-  return _undefined2(c9, tmp3, ChatInputActionButtonTransitionItemTsx1);
+  return _undefined2(c9, tmp3, BadgeUnlockAnimationTsx5);
 }
 const items1 = [tmp3, tmp4, tmp5, tmp6];
 withTiming.__closure = items1;

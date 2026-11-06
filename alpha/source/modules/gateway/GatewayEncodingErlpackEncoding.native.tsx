@@ -1,10 +1,10 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 15766
+// Function ID: 15767
 // Name: GatewayEncodingErlpackEncoding
 // Dependencies: [2]
 // Exports: getErlpackEncoding
 
-// Module 15772 (GatewayEncodingErlpackEncoding)
+// Module 15766 (GatewayEncodingErlpackEncoding)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gateway/GatewayEncodingErlpackEncoding.native.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 14758
-// Function ID: 14759
+// Module ID: 14735
+// Function ID: 14736
 // Name: LongPressMessageChatItemPreview
-// Dependencies: [21, 5143, 575, 8523, 10072, 2]
+// Dependencies: [21, 5170, 575, 8469, 10023, 2]
 // Exports: default
 
-// Module 14758 (LongPressMessageChatItemPreview)
+// Module 14735 (LongPressMessageChatItemPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RowGeneratorDefault from "RowGenerator" /* 8523 */;
-import ChatItemDefault from "ChatItem" /* 10072 */;
-import createStyles from "createStyles" /* 5143 */;
+import RowGeneratorDefault from "RowGenerator" /* 8469 */;
+import ChatItemDefault from "ChatItem" /* 10023 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

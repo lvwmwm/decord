@@ -1,23 +1,23 @@
-// Module ID: 19371
-// Function ID: 19372
+// Module ID: 19363
+// Function ID: 19364
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 11733, 21, 5143, 11734, 19372, 8987, 19374, 13040, 1652, 5773, 5330, 18343, 5430, 19375, 2]
+// Dependencies: [19, 17, 11699, 21, 5170, 11700, 19364, 8933, 19366, 13005, 1652, 5791, 5350, 18335, 5450, 19367, 2]
 // Exports: default
 
-// Module 19371 (LaunchPadContainer)
+// Module 19363 (LaunchPadContainer)
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5773 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8987 */;
-import useLaunchPadTypeDefault from "useLaunchPadType" /* 11734 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13040 */;
-import useLaunchPadStateDefault from "useLaunchPadState" /* 19372 */;
-import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19374 */;
-import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19375 */;
+import spring_spring from "spring/spring" /* 5791 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8933 */;
+import useLaunchPadTypeDefault from "useLaunchPadType" /* 11700 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 13005 */;
+import useLaunchPadStateDefault from "useLaunchPadState" /* 19364 */;
+import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19366 */;
+import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19367 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11733 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11699 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let diff, obj1, onWindowHeightChangeResult, tmp2, value;
@@ -152,13 +152,13 @@ export default function LaunchPadContainer(children) {
   LaunchPadContainerTsx3.__workletHash = 13015105508497;
   LaunchPadContainerTsx3.__initData = tmp16;
   const animatedStyle = useAnimatedStyle(LaunchPadContainerTsx3);
-  const MobileHomeDrawerExperiment = tmp9(5330).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = tmp9(5350).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guilds" }).enableHome;
   let obj2 = { value: gestureRef, children: metroRequire(GestureDetector, obj3) };
-  const Provider = tmp2(18343).Provider;
+  const Provider = tmp2(18335).Provider;
   obj3 = { gesture, children: tmp24(tmp25, obj4) };
   obj4 = { style: tmp.wrapper, children: items7 };
-  GestureDetector = tmp9(5430).GestureDetector;
+  GestureDetector = tmp9(5450).GestureDetector;
   const obj5 = { style: items6, pointerEvents: str2, accessibilityElementsHidden: tmp6, importantForAccessibility: str, children };
   items6 = [tmp.container, animatedStyle];
   str = "auto";

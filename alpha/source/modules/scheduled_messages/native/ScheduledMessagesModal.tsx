@@ -1,10 +1,10 @@
-// Module ID: 9965
-// Function ID: 9966
+// Module ID: 9916
+// Function ID: 9917
 // Name: ScheduledMessagesModal
-// Dependencies: [32, 19, 17, 9966, 1072, 1387, 9951, 21, 7490, 5143, 575, 1627, 1113, 1652, 5773, 5774, 7149, 9967, 1377, 7142, 6882, 14817, 504, 14818, 9963, 7098, 14820, 7433, 7465, 9941, 1092, 10217, 2176, 14821, 2]
+// Dependencies: [32, 19, 17, 9917, 1072, 1387, 9901, 21, 7435, 5170, 575, 1627, 1113, 1652, 5791, 5792, 7096, 9918, 1377, 7089, 6824, 14794, 504, 14795, 9914, 7040, 14797, 7380, 7410, 9891, 1092, 10169, 2171, 14798, 2]
 // Exports: default
 
-// Module 9965 (ScheduledMessagesModal)
+// Module 9916 (ScheduledMessagesModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,22 +12,22 @@ import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import PremiumUtils from "PremiumUtils" /* 2176 */;
-import spring_spring from "spring/spring" /* 5773 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7465 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9941 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9951 */;
-import HeaderShared from "HeaderShared" /* 9967 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10217 */;
-import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 14817 */;
-import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 14818 */;
-import NitroLimitUpsellBarDefault from "NitroLimitUpsellBar" /* 14821 */;
+import PremiumUtils from "PremiumUtils" /* 2171 */;
+import spring_spring from "spring/spring" /* 5791 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7410 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7435 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 9891 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 9901 */;
+import HeaderShared from "HeaderShared" /* 9918 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10169 */;
+import ScheduledMessageActionCreators from "ScheduledMessageActionCreators" /* 14794 */;
+import ScheduledMessageCardDefault from "ScheduledMessageCard" /* 14795 */;
+import NitroLimitUpsellBarDefault from "NitroLimitUpsellBar" /* 14798 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ScheduledMessageStore from "ScheduledMessageStore" /* 9966 */;
+import ScheduledMessageStore from "ScheduledMessageStore" /* 9917 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let _require, item, set;
@@ -42,9 +42,9 @@ let tmp2;
 let tmp4;
 let unpackModuleId;
 const PlatformUtils = tmp4(1377);
-const springPresets = tmp2(5774);
-const NavigatorHeader = tmp4(7142);
-const _mod7149 = tmp4(7149);
+const springPresets = tmp2(5792);
+const NavigatorHeader = tmp4(7089);
+const _mod7096 = tmp4(7096);
 function keyExtractor(scheduledMessageId) {
   return scheduledMessageId.scheduledMessageId;
 }
@@ -91,7 +91,7 @@ function ScheduledMessagesPage(handleScroll) {
     return authStore(tmp, obj);
   }, items4);
   const obj4 = require("ScheduledMessageUtils");
-  const scheduledMessagesLimit = obj4.useScheduledMessagesLimit("ScheduledMessagesMobileModal");
+  const scheduledMessagesLimit = obj4.useScheduledMessagesLimit();
   const limit = scheduledMessagesLimit.limit;
   let tmp12 = limit > 0;
   const isUpgradable = scheduledMessagesLimit.isUpgradable;
@@ -230,11 +230,11 @@ export default function ScheduledMessagesModal() {
     },
     headerTitleAlign: "center",
     headerStatusBarHeight: num + tmp2(575).space.PX_8,
-    headerLeft: tmp4Result2.getHeaderCloseButton(tmp2(6882).pop),
+    headerLeft: tmp4Result2.getHeaderCloseButton(tmp2(6824).pop),
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = _mod7149.Header;
+  const Header = _mod7096.Header;
   num = 0;
   const tmp11 = closure_11;
   const tmp12 = View;

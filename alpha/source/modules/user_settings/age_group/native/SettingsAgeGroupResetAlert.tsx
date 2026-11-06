@@ -1,10 +1,10 @@
-// Module ID: 16904
-// Function ID: 16905
+// Module ID: 16892
+// Function ID: 16893
 // Name: SettingsAgeGroupResetAlert
-// Dependencies: [5, 21, 1499, 6871, 6098, 5848, 1113, 6102, 3223, 6102, 2]
+// Dependencies: [5, 21, 1499, 6813, 6118, 5866, 1113, 6122, 3252, 6122, 2]
 // Exports: default
 
-// Module 16904 (SettingsAgeGroupResetAlert)
+// Module 16892 (SettingsAgeGroupResetAlert)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -103,7 +103,7 @@ export default function SettingsAgeGroupResetAlert() {
   };
   obj = require("useNavigation");
   _require = obj.useNavigation();
-  let obj2 = { title: intl.string(obj(3223)["bD//cU"]), content: intl2.string(obj(3223).FbTAmI), actions: closure_5(AlertActions, obj3) };
+  let obj2 = { title: intl.string(obj(3252)["bD//cU"]), content: intl2.string(obj(3252).FbTAmI), actions: closure_5(AlertActions, obj3) };
   const AlertModal = require("AlertModal").AlertModal;
   intl = require("intl").intl;
   intl2 = require("intl").intl;
@@ -114,7 +114,7 @@ export default function SettingsAgeGroupResetAlert() {
     onPress: function handleConfirm() {
       return obj(...arguments);
     },
-    text: intl3.string(obj(3223).V822Mp)
+    text: intl3.string(obj(3252).V822Mp)
   };
   const AlertActionButton = require("AlertModal").AlertActionButton;
   intl3 = require("intl").intl;

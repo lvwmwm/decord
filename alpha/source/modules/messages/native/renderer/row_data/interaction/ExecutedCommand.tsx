@@ -1,24 +1,24 @@
-// Module ID: 15330
-// Function ID: 15331
+// Module ID: 15324
+// Function ID: 15325
 // Name: ExecutedCommand
-// Dependencies: [17, 1399, 4992, 1385, 1072, 1414, 1411, 6576, 10337, 575, 7845, 6208, 8565, 8567, 9112, 1113, 9917, 2]
+// Dependencies: [17, 1404, 5019, 1385, 1072, 1414, 1411, 6596, 10289, 575, 7799, 6228, 8511, 8513, 9058, 1113, 9867, 2]
 // Exports: createExecutedCommand
 
-// Module 15330 (ExecutedCommand)
+// Module 15324 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import InteractionTypes from "InteractionTypes" /* 6208 */;
-import useMessageAuthor from "useMessageAuthor" /* 6576 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7845 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8565 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8567 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9112 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 9917 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10337 */;
-import UserRecord from "UserRecord" /* 1399 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
+import InteractionTypes from "InteractionTypes" /* 6228 */;
+import useMessageAuthor from "useMessageAuthor" /* 6596 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7799 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8511 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8513 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 9058 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 9867 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10289 */;
+import UserRecord from "UserRecord" /* 1404 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 

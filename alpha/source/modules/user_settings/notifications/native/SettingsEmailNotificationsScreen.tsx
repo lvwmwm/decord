@@ -1,15 +1,15 @@
-// Module ID: 17761
-// Function ID: 17762
+// Module ID: 17750
+// Function ID: 17751
 // Name: SettingsEmailNotificationsScreen
-// Dependencies: [19, 15884, 8578, 21, 17762, 16541, 17765, 11737, 1113, 5731, 16858, 2]
+// Dependencies: [19, 15878, 8524, 21, 17751, 16538, 17754, 11703, 1113, 5751, 16846, 2]
 
-// Module 17761 (SettingsEmailNotificationsScreen)
+// Module 17750 (SettingsEmailNotificationsScreen)
 import Fragment from "Fragment" /* 21 */;
-import SettingsConstants from "SettingsConstants" /* 8578 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
-import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17762 */;
+import SettingsConstants from "SettingsConstants" /* 8524 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
+import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 17751 */;
 import react from "react" /* 19 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 15884 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15878 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -31,9 +31,9 @@ items1 = [, , , , ];
 const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
   let enabled;
   let isDeclarativeSettingsUIAvailable;
-  obj = isDeclarativeSettingsUIAvailable(16541);
+  obj = isDeclarativeSettingsUIAvailable(16538);
   isDeclarativeSettingsUIAvailable = obj.useIsDeclarativeSettingsUIAvailable("SettingsEmailNotificationsScreen");
-  obj2 = enabled(17765);
+  obj2 = enabled(17754);
   enabled = obj2.useConfig({ location: "SettingsEmailNotificationsScreen" }).enabled;
   let items = [isDeclarativeSettingsUIAvailable, enabled];
   const node = react.useMemo(() => {
@@ -56,8 +56,8 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
     items[1] = obj3;
     return createList(obj2);
   }, items);
-  enabled(5731)(initializeEmailSettings);
-  return jsx(enabled(16858), { node });
+  enabled(5751)(initializeEmailSettings);
+  return jsx(enabled(16846), { node });
 });
 const result = size.fileFinishedImporting("modules/user_settings/notifications/native/SettingsEmailNotificationsScreen.tsx");
 

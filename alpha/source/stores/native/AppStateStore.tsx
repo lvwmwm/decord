@@ -1,14 +1,14 @@
-// Module ID: 2122
-// Function ID: 2123
+// Module ID: 2117
+// Function ID: 2118
 // Name: AppStateStore
-// Dependencies: [17, 1072, 504, 1252, 2123, 572, 2]
+// Dependencies: [17, 1072, 504, 1252, 2118, 572, 2]
 
-// Module 2122 (AppStateStore)
+// Module 2117 (AppStateStore)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
 import size from "module_2" /* 2 */;
 
 const AppState = react_native.AppState;

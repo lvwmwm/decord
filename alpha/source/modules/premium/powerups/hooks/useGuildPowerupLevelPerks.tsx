@@ -1,15 +1,15 @@
-// Module ID: 14331
-// Function ID: 14332
+// Module ID: 14308
+// Function ID: 14309
 // Name: useGuildPowerupLevelPerks
-// Dependencies: [19, 1387, 5356, 1113, 2699, 1380, 2]
+// Dependencies: [19, 1387, 5376, 1113, 2696, 1380, 2]
 // Exports: default
 
-// Module 14331 (useGuildPowerupLevelPerks)
+// Module 14308 (useGuildPowerupLevelPerks)
 import intl4 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import _modDef2699 from "module_2699" /* 2699 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5356 */;
+import _modDef2696 from "module_2696" /* 2696 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5376 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -39,7 +39,7 @@ export default function useGuildPowerupLevelPerks(arg0) {
     const tmp = includeEmojis;
     if (tmp) {
       const push = items.push;
-      const obj = { perkIcon: PerkIcons.EMOJI, description: intl.formatToPlainString(_modDef2699["NXvV0+"], obj2) };
+      const obj = { perkIcon: PerkIcons.EMOJI, description: intl.formatToPlainString(_modDef2696["NXvV0+"], obj2) };
       intl = intl4.intl;
       obj2 = { totalEmojis: closure_0.features.total_emoji_slots, additionalEmojis: closure_0.features.additional_emoji_slots };
       push(obj);
@@ -47,7 +47,7 @@ export default function useGuildPowerupLevelPerks(arg0) {
     const tmp8 = includeStickers;
     if (tmp8) {
       const push2 = items.push;
-      const obj3 = { perkIcon: PerkIcons.STICKER, description: intl2.formatToPlainString(_modDef2699.ZEvvPz, obj4) };
+      const obj3 = { perkIcon: PerkIcons.STICKER, description: intl2.formatToPlainString(_modDef2696.ZEvvPz, obj4) };
       intl2 = intl4.intl;
       obj4 = { totalStickers: closure_0.features.total_sticker_slots, additionalStickers: closure_0.features.additional_sticker_slots };
       push2(obj3);
@@ -55,7 +55,7 @@ export default function useGuildPowerupLevelPerks(arg0) {
     const tmp15 = includeSoundboards;
     if (tmp15) {
       const push3 = items.push;
-      const obj5 = { perkIcon: PerkIcons.SOUNDBOARD, description: intl3.formatToPlainString(_modDef2699["s9u/E7"], obj6) };
+      const obj5 = { perkIcon: PerkIcons.SOUNDBOARD, description: intl3.formatToPlainString(_modDef2696["s9u/E7"], obj6) };
       intl3 = intl4.intl;
       obj6 = { totalSoundboards: closure_0.features.total_sound_slots, additionalSoundboards: closure_0.features.additional_sound_slots };
       push3(obj5);

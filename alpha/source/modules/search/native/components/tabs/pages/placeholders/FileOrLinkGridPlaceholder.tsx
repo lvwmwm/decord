@@ -1,14 +1,14 @@
-// Module ID: 19041
-// Function ID: 19042
+// Module ID: 19030
+// Function ID: 19031
 // Name: FileOrLinkGridPlaceholder
-// Dependencies: [19, 21, 19017, 5778, 1652, 19042, 2]
+// Dependencies: [19, 21, 19006, 5796, 1652, 19031, 2]
 // Exports: default
 
-// Module 19041 (FileOrLinkGridPlaceholder)
+// Module 19030 (FileOrLinkGridPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import _modDef1652 from "module_1652" /* 1652 */;
-import useFontScale from "useFontScale" /* 5778 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 19017 */;
+import useFontScale from "useFontScale" /* 5796 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 19006 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

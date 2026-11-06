@@ -1,14 +1,14 @@
-// Module ID: 12092
-// Function ID: 12093
+// Module ID: 12057
+// Function ID: 12058
 // Name: shouldShowEndStageModal
-// Dependencies: [502, 6851, 6895, 4997, 6897, 2]
+// Dependencies: [502, 6793, 6837, 5024, 6839, 2]
 // Exports: default
 
-// Module 12092 (shouldShowEndStageModal)
+// Module 12057 (shouldShowEndStageModal)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6851 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6895 */;
-import StageInstanceStore from "StageInstanceStore" /* 4997 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6793 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6837 */;
+import StageInstanceStore from "StageInstanceStore" /* 5024 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

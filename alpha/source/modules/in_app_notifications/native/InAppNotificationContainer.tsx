@@ -1,32 +1,33 @@
-// Module ID: 11226
-// Function ID: 11227
+// Module ID: 11181
+// Function ID: 11182
 // Name: InAppNotificationContainer
-// Dependencies: [32, 19, 17, 10388, 11212, 1072, 21, 1652, 5143, 11227, 11277, 11280, 11281, 11324, 11325, 11344, 11383, 11386, 1357, 11387, 11211, 504, 5731, 5380, 1705, 1252, 5430, 5773, 1187, 7431, 11261, 2]
+// Dependencies: [32, 19, 17, 10340, 11167, 1072, 21, 1652, 5170, 11182, 11232, 11235, 11236, 11279, 11280, 11299, 11338, 11341, 11342, 1357, 11349, 11166, 504, 5751, 5400, 1705, 1252, 5450, 5791, 1187, 7378, 11216, 2]
 // Exports: default
 
-// Module 11226 (InAppNotificationContainer)
+// Module 11181 (InAppNotificationContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11211 */;
-import MessageNotificationDefault from "MessageNotification" /* 11227 */;
-import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11277 */;
-import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11280 */;
-import BugReporterNotification from "BugReporterNotification" /* 11281 */;
-import AlertNotificationDefault from "AlertNotification" /* 11324 */;
-import ReactionNotificationDefault from "ReactionNotification" /* 11325 */;
-import ReminderNotificationDefault from "ReminderNotification" /* 11344 */;
-import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11383 */;
-import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11386 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11166 */;
+import MessageNotificationDefault from "MessageNotification" /* 11182 */;
+import MessageFailedToSendNotificationDefault from "MessageFailedToSendNotification" /* 11232 */;
+import ForumThreadCreatedNotificationDefault from "ForumThreadCreatedNotification" /* 11235 */;
+import BugReporterNotification from "BugReporterNotification" /* 11236 */;
+import AlertNotificationDefault from "AlertNotification" /* 11279 */;
+import ReactionNotificationDefault from "ReactionNotification" /* 11280 */;
+import ReminderNotificationDefault from "ReminderNotification" /* 11299 */;
+import RestrictedHoursWarningNotificationDefault from "RestrictedHoursWarningNotification" /* 11338 */;
+import MessageRequestNotificationDefault from "MessageRequestNotification" /* 11341 */;
+import StageSpeakInviteNotificationDefault from "StageSpeakInviteNotification" /* 11342 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 10388 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11212 */;
+import NativeMenuStore from "NativeMenuStore" /* 10340 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11167 */;
 import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -62,6 +63,8 @@ function NotificationWrapper(notification) {
       if (constants.RESTRICTED_SCHEDULE_UPDATED !== type) {
         if (constants.MESSAGE_REQUEST === type) {
           return jsx(MessageRequestNotificationDefault, { notification });
+        } else if (constants.STAGE_SPEAK_INVITE === type) {
+          return jsx(StageSpeakInviteNotificationDefault, { notification });
         } else {
           return null;
         }
@@ -138,10 +141,10 @@ export default function InAppNotificationContainer(notification) {
   let tmp = closure_16();
   const tmp2 = notification;
   let tmp3 = channelId;
-  obj = notification(channelId[18]);
+  obj = notification(channelId[19]);
   let isIOSResult = obj.isIOS();
   if (isIOSResult) {
-    const tmp2Result = tmp2(tmp3[19]);
+    const tmp2Result = tmp2(tmp3[20]);
     isIOSResult = tmp2Result.shouldEnableYYTextReplacement({ location: "InAppNotificationContainer" });
   }
   let items = [notification];
@@ -169,7 +172,7 @@ export default function InAppNotificationContainer(notification) {
   first1 = tmp12[0];
   let items1 = [sharedValue1];
   const items2 = [notification, guildId, channelId, messageId];
-  const tmp2Result11 = tmp2(tmp3[21]);
+  const tmp2Result11 = tmp2(tmp3[22]);
   const stateFromStores = tmp2Result11.useStateFromStores(items1, () => sharedValue1.isOpen());
   handleDismissNotification = channelType.useCallback((dismissReason) => {
     if (null != dismissReason) {
@@ -183,7 +186,7 @@ export default function InAppNotificationContainer(notification) {
     }
   }, items2);
   const tmp17 = guildId;
-  guildId(tmp3[22])(() => {
+  guildId(tmp3[23])(() => {
     let tmp4;
     let tmp5;
     let tmp6;
@@ -221,11 +224,11 @@ export default function InAppNotificationContainer(notification) {
       obj.track(map1.IN_APP_NOTIFICATION_SHOWN, obj2);
     }
   }, items3);
-  const Gesture = tmp2(tmp3[26]).Gesture;
+  const Gesture = tmp2(tmp3[27]).Gesture;
   const items4 = [closure_19, sharedValue2, sharedValue, sharedValue1, , ];
   const onBegin = Gesture.Pan().onBegin;
   Gesture.Pan();
-  items4[4] = tmp2(tmp3[24]).scheduleOnRN;
+  items4[4] = tmp2(tmp3[25]).scheduleOnRN;
   items4[5] = tmp12[1];
   let c0;
   let c1;
@@ -264,14 +267,14 @@ export default function InAppNotificationContainer(notification) {
   const items8 = [closure_22, sharedValue1, first1, closure_9, sharedValue, , , , , , , , ];
   const onEnd = onBeginResult.onUpdate(InAppNotificationContainerTsx3).onEnd;
   onBeginResult.onUpdate(InAppNotificationContainerTsx3);
-  items8[5] = tmp2(tmp3[23]).withTiming;
+  items8[5] = tmp2(tmp3[24]).withTiming;
   items8[6] = handleDismissNotification;
   items8[7] = sharedValue3;
   items8[8] = closure_21;
-  items8[9] = tmp2(tmp3[24]).scheduleOnRN;
+  items8[9] = tmp2(tmp3[25]).scheduleOnRN;
   items8[10] = handleDismissNotification;
   items8[11] = tmp12[1];
-  items8[12] = tmp2(tmp3[27]).withSpring;
+  items8[12] = tmp2(tmp3[28]).withSpring;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -339,7 +342,7 @@ export default function InAppNotificationContainer(notification) {
   const items10 = [closure_23, , ];
   const onFinalize = onEnd(InAppNotificationContainerTsx5).onFinalize;
   onEnd(InAppNotificationContainerTsx5);
-  items10[1] = tmp2(tmp3[24]).scheduleOnRN;
+  items10[1] = tmp2(tmp3[25]).scheduleOnRN;
   items10[2] = tmp12[1];
   c0 = undefined;
   c1 = undefined;
@@ -398,15 +401,15 @@ export default function InAppNotificationContainer(notification) {
   const items14 = [handleDismissNotification, initialized, sharedValue, sharedValue1, first1];
   const animatedStyle = useAnimatedStyle(InAppNotificationContainerTsx7);
   const memo1 = obj3.useMemo(() => ({ notificationGestureY: sharedValue, velocityY: sharedValue1, initialized, handleDismissNotification, panning: first1 }), items14);
-  const OverlayView = tmp2(tmp3[28]).OverlayView;
+  const OverlayView = tmp2(tmp3[29]).OverlayView;
   const rect = { top: true, bottom: true, left: true, right: true, style: tmp.safeAreaContainer, pointerEvents: "box-none", importantForAccessibility: str, children: null };
   str = undefined;
-  const SafeAreaPaddingView = tmp2(tmp3[29]).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(tmp3[30]).SafeAreaPaddingView;
   if (stateFromStores) {
     str = "no-hide-descendants";
   }
-  const Provider = tmp2(tmp3[30]).InAppNotificationContext.Provider;
-  const GestureDetector = tmp2(tmp3[26]).GestureDetector;
+  const Provider = tmp2(tmp3[31]).InAppNotificationContext.Provider;
+  const GestureDetector = tmp2(tmp3[27]).GestureDetector;
   const items15 = [tmp.animatedContainer, animatedStyle];
   const View = tmp17(tmp3[7]).View;
   return <OverlayView style={sharedValue.absoluteFill} pointerEvents="box-none">{null}</OverlayView>;

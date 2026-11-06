@@ -1,50 +1,103 @@
 // Module ID: 10619
 // Function ID: 10620
-// Dependencies: []
-// Exports: zhStringToNumber, zhStringToYear
+// Dependencies: [41, 42, 93, 95, 98, 10617, 10470]
 
 // Module 10619
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10617 from "module_10617" /* 10617 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-export function zhStringToNumber(arg0) {
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < arg0.length) {
-    do {
-      let sum;
-      let tmp = arg0[num];
-      if ("\u5341" === tmp) {
-        let result;
-        if (0 === num2) {
-          result = exports.NUMBER[tmp];
-        } else {
-          result = num2 * exports.NUMBER[tmp];
-        }
-        sum = result;
-      } else {
-        sum = num2 + exports.NUMBER[tmp];
-      }
-      num = num + 1;
-      num2 = sum;
-      num3 = sum;
-    } while (num < arg0.length);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  return num3;
 }
-export function zhStringToYear(arg0) {
-  let length;
-  let num = 0;
-  let str = "";
-  let str2 = "";
-  if (0 < arg0.length) {
-    do {
-      str = `${exports.NUMBER[arg0[num]]}`;
-      num = num + 1;
-      str2 = str;
-      length = arg0.length;
-    } while (num < length);
+class AbstractParserWithLeftBoundaryChecking {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractParserWithLeftBoundaryChecking);
+    const obj = _getPrototypeOf(AbstractParserWithLeftBoundaryChecking);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
-  return parseInt(str2);
 }
-export const NUMBER = { "\u96f6": 0, "\u3007": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e24": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6, "\u4e03": 7, "\u516b": 8, "\u4e5d": 9, "\u5341": 10 };
-export const WEEKDAY_OFFSET = { "\u5929": 0, "\u65e5": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6 };
+_inherits(AbstractParserWithLeftBoundaryChecking, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return _mod10617.REGEX_PARTS.leftBoundary;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerPattern",
+    value: function innerPattern(arg0) {
+      const innerPatternStringResult = this.innerPatternString(arg0);
+      const regExp = new RegExp(innerPatternStringResult, _mod10617.REGEX_PARTS.flags);
+      return regExp;
+    }
+  },
+  {
+    key: "innerPatternHasChange",
+    value: function innerPatternHasChange(arg0, arg1) {
+      return false;
+    }
+  }
+];
+const _moduleResult = _createClass(AbstractParserWithLeftBoundaryChecking, items);
+class AbstractParserWithLeftRightBoundaryChecking {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, AbstractParserWithLeftRightBoundaryChecking);
+    const obj = _getPrototypeOf(AbstractParserWithLeftRightBoundaryChecking);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(AbstractParserWithLeftRightBoundaryChecking, _moduleResult);
+const entry1 = {
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    const innerPatternStringResult = this.innerPatternString(arg0);
+    const combined = "" + innerPatternStringResult + _mod10617.REGEX_PARTS.rightBoundary;
+    const regExp = new RegExp(combined, _mod10617.REGEX_PARTS.flags);
+    return regExp;
+  }
+};
+const items1 = [entry1];
+const AbstractParserWithLeftBoundaryChecking_export = _moduleResult;
+const AbstractParserWithLeftRightBoundaryChecking_export = _createClass(AbstractParserWithLeftRightBoundaryChecking, items1);
+
+export { AbstractParserWithLeftBoundaryChecking_export as AbstractParserWithLeftBoundaryChecking };
+export { AbstractParserWithLeftRightBoundaryChecking_export as AbstractParserWithLeftRightBoundaryChecking };

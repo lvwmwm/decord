@@ -1,15 +1,15 @@
-// Module ID: 10059
-// Function ID: 10060
+// Module ID: 10010
+// Function ID: 10011
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 7070, 7915, 5791, 6184, 10034, 5790, 11, 10060, 2]
+// Dependencies: [5, 7012, 7869, 5809, 6204, 9985, 5808, 11, 10011, 2]
 // Exports: consumeConversationFocusParam, getConversationPermalink
 
-// Module 10059 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5791 */;
-import ChannelUtils from "ChannelUtils" /* 6184 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7070 */;
+// Module 10010 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5809 */;
+import ChannelUtils from "ChannelUtils" /* 6204 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7012 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7915 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7869 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;

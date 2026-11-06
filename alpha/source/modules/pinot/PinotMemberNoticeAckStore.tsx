@@ -1,9 +1,9 @@
-// Module ID: 11519
-// Function ID: 11520
+// Module ID: 11481
+// Function ID: 11482
 // Name: PinotMemberNoticeAckStore
 // Dependencies: [504, 572, 2]
 
-// Module 11519 (PinotMemberNoticeAckStore)
+// Module 11481 (PinotMemberNoticeAckStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

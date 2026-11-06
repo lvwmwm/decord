@@ -1,10 +1,10 @@
-// Module ID: 18126
-// Function ID: 18127
+// Module ID: 18120
+// Function ID: 18121
 // Name: CollectiblesCoachmarkScrollDismissContext
 // Dependencies: [19, 1083, 21, 2]
 // Exports: CollectiblesCoachmarkScrollDismissProvider, useCollectiblesCoachmarkScrollDismissContext
 
-// Module 18126 (CollectiblesCoachmarkScrollDismissContext)
+// Module 18120 (CollectiblesCoachmarkScrollDismissContext)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
 import react from "react" /* 19 */;
@@ -16,7 +16,7 @@ const obj = {
   registerDismiss() {
     return NOOP;
   },
-  handleDismissCoachmarkOnScroll: "a"
+  handleDismissCoachmarkOnScroll: "Array"
 };
 const redux = react.createContext(obj);
 const result = size.fileFinishedImporting("modules/collectibles/native/CollectiblesCoachmarkScrollDismissContext.tsx");

@@ -1,22 +1,22 @@
-// Module ID: 19479
-// Function ID: 19480
+// Module ID: 19471
+// Function ID: 19472
 // Name: SoundboardSoundPicker
-// Dependencies: [32, 19, 17, 19480, 5901, 1385, 6198, 19481, 1072, 21, 5143, 575, 1652, 563, 19482, 7666, 5745, 7465, 7490, 6166, 1260, 1377, 10153, 5398, 5340, 5763, 1113, 7358, 19486, 19496, 19497, 2]
+// Dependencies: [32, 19, 17, 19472, 5920, 1385, 6218, 19473, 1072, 21, 5170, 575, 1652, 563, 19474, 7619, 5765, 7410, 7435, 6186, 1260, 1377, 10104, 5418, 5360, 5781, 1113, 7305, 19478, 19488, 19489, 2]
 
-// Module 19479 (SoundboardSoundPicker)
+// Module 19471 (SoundboardSoundPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import SoundboardConstants from "SoundboardConstants" /* 6198 */;
-import searchSounds from "searchSounds" /* 7666 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19481 */;
+import SoundboardConstants from "SoundboardConstants" /* 6218 */;
+import searchSounds from "searchSounds" /* 7619 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19473 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ExpressionPickerStore from "ExpressionPickerStore" /* 19480 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5901 */;
+import ExpressionPickerStore from "ExpressionPickerStore" /* 19472 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -57,10 +57,14 @@ const memoResult = react.memo(function SoundboardSoundPicker(channel) {
   let tmp4;
   channel = channel.channel;
   const initialScrollLocation = channel.initialScrollLocation;
+  let flag = channel.startExpanded;
+  const analyticsSource = channel.analyticsSource;
+  if (flag === undefined) {
+    flag = true;
+  }
   let stateFromStores;
   availableSounds = undefined;
   c5 = undefined;
-  const analyticsSource = channel.analyticsSource;
   let tmp = closure_14();
   [tmp3, tmp4] = stateFromStores(availableSounds.useState(0), 2);
   const tmp2 = stateFromStores(availableSounds.useState(0), 2);
@@ -126,7 +130,7 @@ const memoResult = react.memo(function SoundboardSoundPicker(channel) {
     isIOSResult = closure_12(tmp11(tmp7[22]), obj12);
   }
   items4 = [isIOSResult, ];
-  const obj13 = { animatedIndex: sharedValue1, scrollable: true, startExpanded: true, onExpand: callback1, footer: tmp27, children: items6 };
+  const obj13 = { animatedIndex: sharedValue1, scrollable: true, startExpanded: flag, onExpand: callback1, footer: tmp27, children: items6 };
   const BottomSheet = tmp6(tmp7[23]).BottomSheet;
   tmp27 = undefined;
   const tmp6Result = channel(ref[21]);

@@ -1,303 +1,86 @@
 // Module ID: 13340
 // Function ID: 13341
-// Dependencies: [32, 41, 42, 93, 95, 96, 98, 13280, 13295, 13277, 13341, 13305, 13308, 13309, 13281, 13334, 13292, 13342, 13303, 13286, 13317, 13336]
+// Dependencies: [13255, 13256, 13341, 13282, 13311, 13342, 13266, 13264, 13303]
 
 // Module 13340
-import _mod13277 from "module_13277" /* 13277 */;
-import _mod13286 from "module_13286" /* 13286 */;
-import _mod13292 from "module_13292" /* 13292 */;
-import _mod13303 from "module_13303" /* 13303 */;
-import _mod13305 from "module_13305" /* 13305 */;
-import _mod13308 from "module_13308" /* 13308 */;
-import _mod13309 from "module_13309" /* 13309 */;
-import _mod13317 from "module_13317" /* 13317 */;
-import BaseClient from "BaseClient" /* 13336 */;
-import eventFromMessage2 from "eventFromMessage" /* 13341 */;
+import _mod13282 from "module_13282" /* 13282 */;
 import _mod13342 from "module_13342" /* 13342 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
-import _inherits from "_inherits" /* 98 */;
-import DEBUG_BUILD from "module_13280" /* 13280 */;
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13295 */;
+import module_13311 from "module_13311" /* 13311 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
+export const captureConsoleIntegration = module_13311.defineIntegration(() => {
+  let obj = arg0;
+  if (arg0 === undefined) {
+    obj = {};
   }
-}
-class ServerRuntimeClient {
-  constructor(arg0) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, ServerRuntimeClient);
-    const obj = _mod13277;
-    const result = obj.registerSpanErrorInstrumentation();
-    const items = [arg0];
-    const obj2 = _getPrototypeOf(ServerRuntimeClient);
-    const tmp3 = _getPrototypeOf;
-    const tmp4 = _possibleConstructorReturn;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj2, items, tmp3(self).constructor);
-    } else {
-      constructResult = obj2.apply(self, items);
-    }
-    return tmp4(self, constructResult);
+  let handled;
+  let CONSOLE_LEVELS = obj.levels;
+  if (!CONSOLE_LEVELS) {
+    let tmp = CONSOLE_LEVELS;
+    let tmp2 = handled;
+    CONSOLE_LEVELS = CONSOLE_LEVELS(handled[0]).CONSOLE_LEVELS;
   }
-}
-_inherits(ServerRuntimeClient, BaseClient.BaseClient);
-const entry = {
-  key: "eventFromException",
-  value: function eventFromException(arg0, arg1) {
-    const obj = eventFromMessage2;
-    const result = obj.eventFromUnknownInput(this, this._options.stackParser, arg0, arg1);
-    result.level = "error";
-    const obj2 = _mod13305;
-    return obj2.resolvedSyncPromise(result);
-  }
-};
-let items = [
-  entry,
-  {
-    key: "eventFromMessage",
-    value: function eventFromMessage(arg0) {
-      let str = arg1;
-      if (arg1 === undefined) {
-        str = "info";
-      }
-      const resolvedSyncPromise = _mod13305.resolvedSyncPromise;
-      const obj = eventFromMessage2;
-      return resolvedSyncPromise(obj.eventFromMessage(this._options.stackParser, arg0, str, arg2, this._options.attachStacktrace));
-    }
-  },
-  {
-    key: "captureException",
-    value: function captureException(arg0, arg1, arg2) {
-      const self = this;
-      if (this._options.autoSessionTracking) {
-        if (self._sessionFlusher) {
-          const obj = _mod13308;
-          const isolationScope = obj.getIsolationScope();
-          const requestSession = isolationScope.getRequestSession();
-          const tmp4 = requestSession && "ok" === requestSession.status;
-          if (tmp4) {
-            requestSession.status = "errored";
+  handled = obj.handled;
+  let obj2 = {
+    name: "CaptureConsole",
+    setup(arg0) {
+      let closure_0 = arg0;
+      const tmp2 = handled;
+      const tmp = CONSOLE_LEVELS;
+      if ("console" in CONSOLE_LEVELS(handled[1]).GLOBAL_OBJ) {
+        let tmpResult = tmp(tmp2[2]);
+        let result = tmpResult.addConsoleInstrumentationHandler((arg0) => {
+          let args;
+          let level;
+          let obj3;
+          let tmpResult;
+          ({ args, level } = arg0);
+          let obj = _mod13282;
+          let hasItem = obj.getClient() === closure_0;
+          if (hasItem) {
+            let tmp4 = CONSOLE_LEVELS;
+            hasItem = CONSOLE_LEVELS.includes(level);
           }
-        }
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "captureException", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0, arg1, arg2];
-      return fn(items);
-    }
-  },
-  {
-    key: "captureEvent",
-    value: function captureEvent(type, arg1, arg2) {
-      const self = this;
-      if (this._options.autoSessionTracking) {
-        if (self._sessionFlusher) {
-          const tmp = type.type || "exception";
-          if ("exception" === tmp) {
-            if (type.exception) {
-              if (type.exception.values) {
-                if (type.exception.values.length > 0) {
-                  const obj = _mod13308;
-                  const isolationScope = obj.getIsolationScope();
-                  const requestSession = isolationScope.getRequestSession();
-                  const tmp5 = requestSession && "ok" === requestSession.status;
-                  if (tmp5) {
-                    requestSession.status = "errored";
-                  }
+          if (hasItem) {
+            let closure_2 = handled;
+            let obj2 = { level: tmpResult.severityLevelFromString(level), extra: obj3 };
+            obj3 = { arguments: args };
+            tmpResult = _mod13342;
+            const tmpResult2 = _mod13282;
+            tmpResult2.withScope((addEventProcessor) => {
+              addEventProcessor.addEventProcessor((arg0) => {
+                arg0.logger = "console";
+                const obj = args(level[6]);
+                obj2 = { handled, type: "console" };
+                const result = obj.addExceptionMechanism(arg0, obj2);
+                return arg0;
+              });
+              if ("assert" !== level) {
+                const found = args.find((item) => item instanceof Error);
+                const tmp12 = args;
+                if (found) {
+                  const tmp14Result = closure_2_0(closure_2_1[8]);
+                  tmp14Result.captureException(found, obj2);
+                } else {
+                  const tmp14Result2 = closure_2_0(closure_2_1[7]);
+                  const safeJoinResult = tmp14Result2.safeJoin(tmp12, " ");
+                  const obj4 = closure_2_0(closure_2_1[8]);
+                  obj4.captureMessage(safeJoinResult, obj2);
                 }
+              } else if (!args[0]) {
+                let obj = closure_2_0(closure_2_1[7]);
+                const _HermesInternal = HermesInternal;
+                const tmp4 = obj.safeJoin(args.slice(1), " ") || "console.assert";
+                const combined = "Assertion failed: " + tmp4;
+                addEventProcessor.setExtra("arguments", args.slice(1));
+                obj2 = closure_2_0(closure_2_1[8]);
+                obj2.captureMessage(combined, obj2);
               }
-            }
+            });
           }
-        }
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "captureEvent", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [type, arg1, arg2];
-      return fn(items);
-    }
-  },
-  {
-    key: "close",
-    value: function close(arg0) {
-      const self = this;
-      if (this._sessionFlusher) {
-        const _sessionFlusher = self._sessionFlusher;
-        _sessionFlusher.close();
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "close", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [arg0];
-      return fn(items);
-    }
-  },
-  {
-    key: "initSessionFlusher",
-    value: function initSessionFlusher() {
-      const self = this;
-      const release = this._options.release;
-      if (release) {
-        const self2 = this;
-        const self3 = this;
-        const obj = { release, environment: tmp };
-        const sessionFlusher = new tmp2(13334).SessionFlusher(self, obj);
-        self._sessionFlusher = sessionFlusher;
-      } else if (_mod13309.DEBUG_BUILD) {
-        const logger = tmp2(13281).logger;
-        logger.warn("Cannot initialize an instance of SessionFlusher if no release is provided!");
+        });
       }
     }
-  },
-  {
-    key: "captureCheckIn",
-    value: function captureCheckIn(checkInId, arg1, arg2) {
-      let tmp10;
-      let tmp9;
-      if ("checkInId" in checkInId) {
-        if (checkInId.checkInId) {
-          checkInId = checkInId.checkInId;
-        }
-        const self = this;
-        if (this._isEnabled()) {
-          const options = self.getOptions();
-          const tunnel = options.tunnel;
-          const obj4 = { check_in_id: checkInId, monitor_slug: null, status: null, release: null, environment: null };
-          ({ monitorSlug: obj2.monitor_slug, status: obj2.status } = checkInId);
-          ({ release: obj2.release, environment: obj2.environment } = options);
-          if ("duration" in checkInId) {
-            obj4.duration = checkInId.duration;
-          }
-          const tmp5 = arg1;
-          if (tmp5) {
-            const obj7 = { schedule: null, checkin_margin: null, max_runtime: null, timezone: null, failure_issue_threshold: null, recovery_threshold: null };
-            ({ schedule: obj3.schedule, checkinMargin: obj3.checkin_margin, maxRuntime: obj3.max_runtime, timezone: obj3.timezone, failureIssueThreshold: obj3.failure_issue_threshold, recoveryThreshold: obj3.recovery_threshold } = arg1);
-            obj4.monitor_config = obj7;
-          }
-          [tmp9, tmp10] = self._getTraceInfoFromScope(arg2);
-          _slicedToArray(self._getTraceInfoFromScope(arg2), 2);
-          if (tmp10) {
-            const obj8 = { trace: tmp10 };
-            obj4.contexts = obj8;
-          }
-          const createCheckInEnvelope = _mod13342.createCheckInEnvelope;
-          const sdkMetadata = self.getSdkMetadata();
-          const checkInEnvelope = createCheckInEnvelope(obj4, tmp9, sdkMetadata, tunnel, self.getDsn());
-          const tmp11 = require;
-          if (_mod13309.DEBUG_BUILD) {
-            const logger2 = tmp11(13281).logger;
-            logger2.info("Sending checkin:", checkInId.monitorSlug, checkInId.status);
-          }
-          self.sendEnvelope(checkInEnvelope);
-          return checkInId;
-        } else {
-          const tmp = require;
-          if (_mod13309.DEBUG_BUILD) {
-            const logger = tmp(13281).logger;
-            logger.warn("SDK not enabled, will not capture checkin.");
-          }
-          return checkInId;
-        }
-      }
-      const obj = _mod13292;
-      checkInId = obj.uuid4();
-    }
-  },
-  {
-    key: "_captureRequestSession",
-    value: function _captureRequestSession() {
-      if (this._sessionFlusher) {
-        const _sessionFlusher = this._sessionFlusher;
-        const result = _sessionFlusher.incrementSessionStatusCount();
-      } else {
-        const tmp = require;
-        if (_mod13309.DEBUG_BUILD) {
-          const logger = tmp(13281).logger;
-          logger.warn("Discarded request mode session because autoSessionTracking option was disabled");
-        }
-      }
-    }
-  },
-  {
-    key: "_prepareEvent",
-    value: function _prepareEvent(platform, arg1, arg2, arg3) {
-      let tmp3;
-      const self = this;
-      if (this._options.platform) {
-        platform.platform = platform.platform || self._options.platform;
-      }
-      if (self._options.runtime) {
-        const obj = { runtime: tmp3.runtime || self._options.runtime };
-        const merged = Object.assign(platform.contexts);
-        tmp3 = platform.contexts || {};
-        platform.contexts = obj;
-      }
-      if (self._options.serverName) {
-        platform.server_name = platform.server_name || self._options.serverName;
-      }
-      let fn = _get(_getPrototypeOf(ServerRuntimeClient.prototype), "_prepareEvent", self);
-      if (typeof fn === "function") {
-        fn = (items) => fn.apply(self, items);
-      }
-      const items = [platform, arg1, arg2, arg3];
-      return fn(items);
-    }
-  },
-  {
-    key: "_getTraceInfoFromScope",
-    value: function _getTraceInfoFromScope(arg0) {
-      const tmp = arg0;
-      if (tmp) {
-        let spanToTraceContextResult;
-        let dynamicSamplingContextFromSpan;
-        const obj = _mod13303;
-        const _getSpanForScopeResult = obj._getSpanForScope(arg0);
-        if (_getSpanForScopeResult) {
-          const tmp2Result = _mod13286;
-          spanToTraceContextResult = tmp2Result.spanToTraceContext(_getSpanForScopeResult);
-        } else {
-          const tmp2Result3 = _mod13308;
-          spanToTraceContextResult = tmp2Result3.getTraceContextFromScope(arg0);
-        }
-        const tmp2Result4 = _mod13317;
-        if (_getSpanForScopeResult) {
-          dynamicSamplingContextFromSpan = tmp2Result4.getDynamicSamplingContextFromSpan(_getSpanForScopeResult);
-        } else {
-          const self = this;
-          dynamicSamplingContextFromSpan = tmp2Result4.getDynamicSamplingContextFromScope(this, arg0);
-        }
-        const items = [dynamicSamplingContextFromSpan, spanToTraceContextResult];
-        return items;
-      } else {
-        const items1 = [undefined, undefined];
-        return items1;
-      }
-    }
-  }
-];
-const ServerRuntimeClient_export = _createClass(ServerRuntimeClient, items);
-
-export { ServerRuntimeClient_export as ServerRuntimeClient };
+  };
+  return obj2;
+});

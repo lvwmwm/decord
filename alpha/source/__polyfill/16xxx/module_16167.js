@@ -1,60 +1,19 @@
 // Module ID: 16167
 // Function ID: 16168
-// Dependencies: [16157]
+// Dependencies: [16153]
 
 // Module 16167
-import _mod16157 from "module_16157" /* 16157 */;
+import _mod16153 from "module_16153" /* 16153 */;
 
 
 export default (arg0, arg1) => {
-  const obj = _mod16157(arg0, null, true);
-  const tmp = _mod16157(arg1, null, true);
-  const compareResult = obj.compare(tmp);
-  if (0 === compareResult) {
-    return null;
-  } else {
-    let str5;
-    let tmp3 = tmp;
-    if (compareResult > 0) {
-      tmp3 = obj;
+  const tmp = _mod16153(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
     }
-    let tmp4 = obj;
-    if (compareResult > 0) {
-      tmp4 = tmp;
-    }
-    if (tmp4.prerelease.length) {
-      if (!tmp3.prerelease.length) {
-        let str;
-        if (tmp4.patch) {
-          let str2 = "patch";
-          if (!tmp3.patch) {
-            let str3 = "major";
-            if (tmp3.minor) {
-              str3 = "minor";
-            }
-            str2 = str3;
-          }
-          str = str2;
-        } else {
-          str = "major";
-        }
-        return str;
-      }
-    }
-    let str4 = "";
-    if (tmp3.prerelease.length) {
-      str4 = "pre";
-    }
-    if (obj.major !== tmp.major) {
-      str5 = `${str4}major`;
-    } else if (obj.minor !== tmp.minor) {
-      str5 = `${str4}minor`;
-    } else {
-      str5 = "prerelease";
-      if (obj.patch !== tmp.patch) {
-        str5 = `${str4}patch`;
-      }
-    }
-    return str5;
   }
+  return prerelease;
 };

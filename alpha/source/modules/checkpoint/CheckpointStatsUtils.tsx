@@ -1,14 +1,14 @@
-// Module ID: 6574
-// Function ID: 6575
+// Module ID: 6594
+// Function ID: 6595
 // Name: CheckpointStatsUtils
-// Dependencies: [1399, 2155, 1113, 5006, 11, 2]
+// Dependencies: [1404, 2150, 1113, 5033, 11, 2]
 // Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointOdysseyCopies, getCheckpointTopPercent, getGuildAcronymCharacter, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 6574 (CheckpointStatsUtils)
+// Module 6594 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import StringUtils from "StringUtils" /* 2155 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5006 */;
-import UserRecord from "UserRecord" /* 1399 */;
+import StringUtils from "StringUtils" /* 2150 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 5033 */;
+import UserRecord from "UserRecord" /* 1404 */;
 import size from "module_2" /* 2 */;
 
 let game, guild;
@@ -308,7 +308,6 @@ export function globalStatsFromServer(global_stats) {
   let obj4;
   let prop;
   let prop1;
-  let prop2;
   ({ emojis, games } = global_stats);
   let obj = { voice: { peakHourUtc: global_stats.voice.peak_hour_utc }, messages: { numWordsSent: global_stats.messages.num_words_sent }, guilds: obj2, emojis: obj3, games: obj4 };
   obj2 = {
@@ -374,25 +373,11 @@ export function globalStatsFromServer(global_stats) {
       obj2 = SnowflakeUtilsDefault;
       return obj;
     }),
-    gamesByCoplayUsers: prop2.map((game) => {
-      let banner_hash;
-      let cover_image_hash;
-      let icon_hash;
-      let obj2;
-      game = game.game;
-      const obj = { id: obj2.cast(game.id), name: null, iconHash: icon_hash, bannerHash: banner_hash, coverImageHash: cover_image_hash };
-      ({ name: obj.name, icon_hash } = game);
-      banner_hash = game.banner_hash;
-      cover_image_hash = game.cover_image_hash;
-      obj2 = SnowflakeUtilsDefault;
-      return obj;
-    }),
     numUsersPlayedEveryDay: games.num_users_played_every_day
   };
   games_by_players = games.games_by_players;
   new_games_by_players = games.new_games_by_players;
   prop = games.indie_games_by_players;
   prop1 = games.games_by_stream_watch_minutes;
-  prop2 = games.games_by_coplay_users;
   return obj;
 }

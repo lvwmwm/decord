@@ -1,10 +1,10 @@
-// Module ID: 5936
-// Function ID: 5937
+// Module ID: 5955
+// Function ID: 5956
 // Name: pollConnectionStats
-// Dependencies: [5, 5935, 5937, 2]
+// Dependencies: [5, 5954, 5956, 2]
 // Exports: default
 
-// Module 5936 (pollConnectionStats)
+// Module 5955 (pollConnectionStats)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

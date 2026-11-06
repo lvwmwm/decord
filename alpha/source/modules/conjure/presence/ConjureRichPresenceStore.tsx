@@ -1,26 +1,26 @@
-// Module ID: 11725
-// Function ID: 11726
+// Module ID: 11691
+// Function ID: 11692
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 109, 502, 6843, 5046, 5174, 11035, 11726, 6982, 4999, 10941, 7534, 11036, 5899, 11060, 2123, 7017, 11034, 504, 572, 2]
+// Dependencies: [32, 5, 109, 502, 6785, 5073, 5201, 10987, 11692, 6924, 5026, 10893, 7479, 10988, 5918, 11012, 2118, 6959, 10986, 504, 572, 2]
 
-// Module 11725 (ConjureRichPresenceStore)
+// Module 11691 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 4999 */;
-import ActivityTypes from "ActivityTypes" /* 5899 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7017 */;
-import conjureServerProject from "conjureServerProject" /* 7534 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10941 */;
+import ChannelConstants from "ChannelConstants" /* 5026 */;
+import ActivityTypes from "ActivityTypes" /* 5918 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6959 */;
+import conjureServerProject from "conjureServerProject" /* 7479 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10893 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IdleStore from "IdleStore" /* 6843 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
-import ConjureChatStore from "ConjureChatStore" /* 11035 */;
-import ConjurePagesStore from "ConjurePagesStore" /* 11726 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+import IdleStore from "IdleStore" /* 6785 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
+import ConjureChatStore from "ConjureChatStore" /* 10987 */;
+import ConjurePagesStore from "ConjurePagesStore" /* 11692 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ function updateActivity(withGracePeriod) {
   let obj8;
   let timeout;
   let timeout2;
-  const f100658 = () => {
+  const f100816 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -51,7 +51,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f100658, closure_1_14);
+      timeout = setTimeout(f100816, closure_1_14);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -187,7 +187,7 @@ function updateActivity(withGracePeriod) {
         const tmp19 = require;
         if (null != obj2.conjureServerProjectGuildId(project)) {
           const messages = ConjureChatStore.getMessages(tmp11);
-          const tmp19Result = tmp19(11036);
+          const tmp19Result = tmp19(10988);
           const findOpenTurnResult = tmp19Result.findOpenTurn(messages);
           tmp18 = null;
           if (null != findOpenTurnResult) {
@@ -276,7 +276,7 @@ function updateActivity(withGracePeriod) {
         timeout2 = null;
       }
       let _setTimeout = setTimeout;
-      timeout2 = setTimeout(f100658, c14);
+      timeout2 = setTimeout(f100816, c14);
       flag = true;
     }
   }

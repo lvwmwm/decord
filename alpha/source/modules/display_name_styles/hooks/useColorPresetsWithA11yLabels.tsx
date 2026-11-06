@@ -1,11 +1,11 @@
-// Module ID: 17609
-// Function ID: 17610
+// Module ID: 17598
+// Function ID: 17599
 // Name: useColorPresetsWithA11yLabels
-// Dependencies: [19, 1402, 1113, 3059, 1090, 2]
+// Dependencies: [19, 1393, 1113, 3056, 1090, 2]
 // Exports: default
 
-// Module 17609 (useColorPresetsWithA11yLabels)
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1402 */;
+// Module 17598 (useColorPresetsWithA11yLabels)
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1393 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

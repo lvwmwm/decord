@@ -1,17 +1,17 @@
-// Module ID: 13588
-// Function ID: 13589
+// Module ID: 13563
+// Function ID: 13564
 // Name: FamilyCenterNativeUtils
-// Dependencies: [11564, 7861, 1072, 1252, 7862, 6882, 13589, 2123, 2]
+// Dependencies: [11526, 7815, 1072, 1252, 7816, 6824, 13564, 2118, 2]
 // Exports: handleFamilyCenterQRCodeScan, resumeFamilyCenterConnection
 
-// Module 13588 (FamilyCenterNativeUtils)
+// Module 13563 (FamilyCenterNativeUtils)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7862 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11564 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 7861 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7816 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 11526 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 7815 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -34,7 +34,7 @@ export function handleFamilyCenterQRCodeScan(pathname, FamilyCenterQRCodeScan) {
     obj3.setPendingConnection(match[1], match[2]);
     const obj5 = { userId: match[1], linkCode: match[2] };
     const obj4 = ModalActionCreatorsDefault;
-    obj4.pushLazy(asyncRequire(13589, dependencyMap.paths), obj5, c7);
+    obj4.pushLazy(asyncRequire(13564, dependencyMap.paths), obj5, c7);
   }
 }
 export function resumeFamilyCenterConnection() {
@@ -46,7 +46,7 @@ export function resumeFamilyCenterConnection() {
     const obj4 = { userId: null, linkCode: null };
     ({ teenId: obj3.userId, linkCode: obj3.linkCode } = pendingConnection);
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(13589, dependencyMap.paths), obj4, c7);
+    obj2.pushLazy(asyncRequire(13564, dependencyMap.paths), obj4, c7);
     flag = true;
   }
   return flag;

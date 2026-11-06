@@ -1,24 +1,24 @@
-// Module ID: 9967
-// Function ID: 9968
+// Module ID: 9918
+// Function ID: 9919
 // Name: HeaderShared
-// Dependencies: [19, 17, 9968, 21, 5143, 575, 5734, 7143, 5763, 7124, 1377, 9969, 9974, 1627, 1500, 9976, 5747, 558, 9979, 14797, 1187, 2]
+// Dependencies: [19, 17, 9919, 21, 5170, 575, 5754, 7090, 5781, 7068, 1377, 9920, 9925, 1627, 1500, 9927, 558, 9930, 14774, 1187, 2]
 // Exports: HeaderIconButton, getDefaultChannelStackHeaderProps, getDefaultStackHeaderProps, getRenderBackImage, getRenderHeaderTextButton, getRenderModalBackImage, getRenderModalCloseImage, renderHeader
 
-// Module 9967 (HeaderShared)
+// Module 9918 (HeaderShared)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
-import useToken2 from "useToken" /* 5734 */;
-import Pressables from "Pressables" /* 7124 */;
-import react_native from "react-native" /* 9968 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9974 */;
-import ChannelActionsDefault from "ChannelActions" /* 9979 */;
-import ChannelHeaderDefault from "ChannelHeader" /* 14797 */;
+import useToken2 from "useToken" /* 5754 */;
+import Pressables from "Pressables" /* 7068 */;
+import react_native from "react-native" /* 9919 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 9925 */;
+import ChannelActionsDefault from "ChannelActions" /* 9930 */;
+import ChannelHeaderDefault from "ChannelHeader" /* 14774 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp2;
-const Text_Text = tmp2(5763);
+const Text_Text = tmp2(5781);
 class GenericHeaderTitle {
   constructor(subtitleColor) {
     let children;
@@ -78,7 +78,7 @@ class GenericHeaderTitle {
     }
     const tmp6 = closure_8();
     closure_5 = tmp6;
-    const tmp7 = tmp5(7143)("os-drawn");
+    const tmp7 = tmp5(7090)("os-drawn");
     if (null == subtitle) {
       let renderTitleContainerResult;
       if (null == tmp7) {
@@ -231,28 +231,23 @@ const memoResult = react.memo(function HeaderInner(route) {
     items[3] = style;
     return items;
   }, items);
-  const obj3 = gradientTop;
   if (typeof headerTitle === "string") {
     tmp6 = renderGenericTitle;
   } else {
     tmp6 = headerTitle;
   }
-  const tmp7 = tmp2(num[7])("custom-drawn");
-  const layoutEffect = obj3.useLayoutEffect(() => {
-    const obj = style(num[16]);
-    return obj.DeprecatedLayoutAnimation({ duration: 0 });
-  });
   let title;
-  const obj4 = { style: memo, children: items1 };
-  const tmp10 = closure_4;
-  const tmp9 = closure_7;
+  const obj3 = { style: memo, children: items1 };
+  const tmp7 = tmp2(num[7])("custom-drawn");
+  const tmp8 = closure_7;
+  const tmp9 = closure_4;
   if (back != null) {
     title = back.title;
   }
   items1 = [, , , ];
-  const obj5 = { label: title, canGoBack: navigation.isFocused() && navigation.canGoBack(), tintColor: text };
+  const obj4 = { label: title, canGoBack: navigation.isFocused() && navigation.canGoBack(), tintColor: text };
   navigation.isFocused() && navigation.canGoBack();
-  items1[0] = fn(obj5);
+  items1[0] = fn(obj4);
   if (typeof headerTitle !== "string") {
     let name = options.title;
     if (name == null) {
@@ -263,13 +258,13 @@ const memoResult = react.memo(function HeaderInner(route) {
   items1[1] = tmp6({ children: headerTitle, tintColor: text });
   let headerRightResult;
   if (headerRight != null) {
-    const obj6 = { canGoBack: navigation.isFocused() && navigation.canGoBack(), tintColor: text };
+    const obj5 = { canGoBack: navigation.isFocused() && navigation.canGoBack(), tintColor: text };
     navigation.isFocused() && navigation.canGoBack();
-    headerRightResult = headerRight(obj6);
+    headerRightResult = headerRight(obj5);
   }
   items1[2] = headerRightResult;
   items1[3] = tmp7;
-  return tmp9(tmp10, obj4);
+  return tmp8(tmp9, obj3);
 }, (back, back2) => {
   let tmpResultResult = shallowEqualDefault(back, back2, ["back"]);
   if (tmpResultResult) {

@@ -1,17 +1,17 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 12616
+// Function ID: 12617
 // Name: SearchBarBottomBorder
-// Dependencies: [19, 21, 5143, 575, 1652, 5773, 5774, 2]
+// Dependencies: [19, 21, 5170, 575, 1652, 5791, 5792, 2]
 // Exports: usePinnedSearchBarBottomBorder
 
-// Module 12651 (SearchBarBottomBorder)
+// Module 12616 (SearchBarBottomBorder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import spring_spring from "spring/spring" /* 5773 */;
-import springPresets from "springPresets" /* 5774 */;
+import spring_spring from "spring/spring" /* 5791 */;
+import springPresets from "springPresets" /* 5792 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

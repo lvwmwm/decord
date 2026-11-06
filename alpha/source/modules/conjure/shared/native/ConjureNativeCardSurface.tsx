@@ -1,15 +1,15 @@
-// Module ID: 12341
-// Function ID: 12342
+// Module ID: 12306
+// Function ID: 12307
 // Name: ConjureNativeCardSurface
-// Dependencies: [19, 21, 5143, 575, 7121, 2]
+// Dependencies: [19, 21, 5170, 575, 7065, 2]
 // Exports: default
 
-// Module 12341 (ConjureNativeCardSurface)
+// Module 12306 (ConjureNativeCardSurface)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Card_Card from "Card/Card" /* 7121 */;
+import Card_Card from "Card/Card" /* 7065 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

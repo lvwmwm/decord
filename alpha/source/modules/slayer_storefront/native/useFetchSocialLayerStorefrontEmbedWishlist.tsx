@@ -1,16 +1,16 @@
-// Module ID: 11763
-// Function ID: 11764
+// Module ID: 11729
+// Function ID: 11730
 // Name: useFetchSocialLayerStorefrontEmbedWishlist
-// Dependencies: [19, 7917, 9624, 502, 1385, 504, 8904, 9631, 9630, 2]
+// Dependencies: [19, 7871, 9573, 502, 1385, 504, 8850, 9580, 9579, 2]
 // Exports: useFetchSocialLayerStorefrontEmbedWishlist
 
-// Module 11763 (useFetchSocialLayerStorefrontEmbedWishlist)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8904 */;
-import WishlistFetchSource from "WishlistFetchSource" /* 9630 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9631 */;
+// Module 11729 (useFetchSocialLayerStorefrontEmbedWishlist)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8850 */;
+import WishlistFetchSource from "WishlistFetchSource" /* 9579 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9580 */;
 import react from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
-import WishlistStore from "WishlistStore" /* 9624 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
+import WishlistStore from "WishlistStore" /* 9573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let closure_8 = { user: "a", profile: "flexDirection", wishlistId: "count", wishlist: "CHANNEL_RTC_UPDATE_CHAT_OPEN", updatedAt: null, storedUpdatedAt: null, fetching: -45, error: null };
+let closure_8 = { user: "a", profile: "flexDirection", wishlistId: "container", wishlist: "chorro", updatedAt: "chorro de agua", storedUpdatedAt: "c\u00F3mic", fetching: "c\u00F3mics", error: "emoci\u00F3n" };
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/useFetchSocialLayerStorefrontEmbedWishlist.tsx");
 
 export function useFetchSocialLayerStorefrontEmbedWishlist(arg0) {

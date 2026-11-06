@@ -1,17 +1,17 @@
-// Module ID: 7563
-// Function ID: 7564
+// Module ID: 7508
+// Function ID: 7509
 // Name: safeTransitionTo
-// Dependencies: [5, 5014, 1072, 5790, 7564, 1099, 7565, 6097, 1113, 7599, 2801, 7644, 7650, 2]
+// Dependencies: [5, 5041, 1072, 5808, 7509, 1099, 7510, 6117, 1113, 7544, 2798, 7597, 7603, 2]
 // Exports: default
 
-// Module 7563 (safeTransitionTo)
+// Module 7508 (safeTransitionTo)
 import Constants from "Constants" /* 1072 */;
 import router_utils from "router_utils" /* 1099 */;
-import LinkUtils from "LinkUtils" /* 5790 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7564 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7565 */;
+import LinkUtils from "LinkUtils" /* 5808 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7509 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7510 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 5014 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -166,7 +166,7 @@ let obj = function _safeTransitionTo() {
         const maybePerformRoleSubscriptionUpsellRedirect = closure_132_1(closure_132_2[11]).maybePerformRoleSubscriptionUpsellRedirect;
         const tmp68 = closure_132_1(closure_132_2[11]);
         if (c2 == null) {
-          closure_2 = { guildId: "ti" };
+          closure_2 = { guildId: "r" };
         }
         c5 = 2;
         c6 = 1;

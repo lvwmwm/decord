@@ -1,13 +1,13 @@
-// Module ID: 8037
-// Function ID: 8038
+// Module ID: 7991
+// Function ID: 7992
 // Name: RobloxSubgameUtils
-// Dependencies: [5, 1072, 8038, 12, 8039, 5842, 2]
+// Dependencies: [5, 1072, 7992, 12, 7993, 5860, 2]
 // Exports: convertMapToRobloxSubgameInfo, getSubgameMetadata, hasRunningGameChanged, hasSubgameInfoChanged, isRobloxSubgame, keyForRobloxGame, maybeAddAdditionalGameMetadata, maybeTransformRobloxSubgameToRoblox, openRobloxURLWithRootPlaceId
 
-// Module 8037 (RobloxSubgameUtils)
+// Module 7991 (RobloxSubgameUtils)
 import _modDef12 from "module_12" /* 12 */;
-import RobloxSubgameTypes from "RobloxSubgameTypes" /* 8038 */;
-import RobloxSubgamePlatformUtilsDefault from "RobloxSubgamePlatformUtils" /* 8039 */;
+import RobloxSubgameTypes from "RobloxSubgameTypes" /* 7992 */;
+import RobloxSubgamePlatformUtilsDefault from "RobloxSubgamePlatformUtils" /* 7993 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -186,7 +186,7 @@ export function getSubgameMetadata(currentGameForAnalytics) {
       const tmp2 = require;
       if (null != currentGameForAnalytics.gameMetadata[RobloxSubgameTypes.RobloxMetadataKeys.PLACE_ID]) {
         const _JSON = JSON;
-        obj = { placeId: currentGameForAnalytics.gameMetadata[tmp2(undefined, 8038).RobloxMetadataKeys.PLACE_ID] };
+        obj = { placeId: currentGameForAnalytics.gameMetadata[tmp2(undefined, 7992).RobloxMetadataKeys.PLACE_ID] };
         json = stringify(obj);
       }
     }
@@ -223,7 +223,7 @@ export function maybeTransformRobloxSubgameToRoblox(distributor) {
     tmp2 = distributor;
     const tmp3 = require;
     if (distributor.id !== RobloxSubgameTypes.ROBLOX_APPLICATION_ID) {
-      obj = { id: tmp3(8038).ROBLOX_APPLICATION_ID, name: React3[tmp.ROBLOX] };
+      obj = { id: tmp3(7992).ROBLOX_APPLICATION_ID, name: React3[tmp.ROBLOX] };
       const merged = Object.assign(distributor);
       tmp2 = obj;
     }

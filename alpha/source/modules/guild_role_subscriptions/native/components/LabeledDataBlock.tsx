@@ -1,16 +1,16 @@
-// Module ID: 17483
-// Function ID: 17484
+// Module ID: 17472
+// Function ID: 17473
 // Name: LabeledDataBlock
-// Dependencies: [19, 17, 21, 5143, 575, 5763, 7124, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 5781, 7068, 2]
 // Exports: default
 
-// Module 17483 (LabeledDataBlock)
+// Module 17472 (LabeledDataBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
+import Text_Text from "Text/Text" /* 5781 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -44,7 +44,7 @@ export default function LabeledDataBlock(arg0) {
   let tmp4Result = null != icon;
   if (tmp4Result) {
     const obj4 = { accessibilityRole: "button", onPress: onPressIcon, children: _false(icon, { size: "sm" }) };
-    const PressableOpacity = tmp5(7124).PressableOpacity;
+    const PressableOpacity = tmp5(7068).PressableOpacity;
     tmp4Result = tmp4(PressableOpacity, obj4);
   }
   items1[1] = tmp4Result;
@@ -52,7 +52,7 @@ export default function LabeledDataBlock(arg0) {
   let tmp4Result2 = children;
   if (typeof children === "string") {
     const obj5 = { variant: "heading-xl/medium", color: "mobile-text-heading-primary", children };
-    tmp4Result2 = tmp4(tmp5(5763).Text, obj5);
+    tmp4Result2 = tmp4(tmp5(5781).Text, obj5);
   }
   items2[1] = tmp4Result2;
   return React3(View, obj);

@@ -331,7 +331,7 @@ function gramSchmidtAlgorithm(arg0) {
   let tmp3;
   let tmp4;
   let tmp5;
-  const f122620 = (item) => closure_1_2(item, 1 / Math.sqrt(_undefined3(item, item)));
+  const f122849 = (item) => closure_1_2(item, 1 / Math.sqrt(_undefined3(item, item)));
   [tmp2, tmp3, tmp4, tmp5] = arg0;
   _slicedToArray(arg0, 4);
   const tmp6 = _undefined(tmp3, _undefined2(tmp2, tmp3));
@@ -341,7 +341,7 @@ function gramSchmidtAlgorithm(arg0) {
   const tmp9 = _undefined(tmp5, _undefined2(tmp2, tmp5));
   const tmp10 = _undefined(tmp9, _undefined2(tmp6, tmp5));
   items[3] = _undefined(tmp10, _undefined2(tmp8, tmp5));
-  [tmp12, tmp13, tmp14, tmp15] = items.map(f122620);
+  [tmp12, tmp13, tmp14, tmp15] = items.map(f122849);
   const items1 = [tmp12[0], tmp13[0], tmp14[0], tmp15[0]];
   const items2 = [items1, , , ];
   const items3 = [tmp12[1], tmp13[1], tmp14[1], tmp15[1]];
@@ -351,7 +351,7 @@ function gramSchmidtAlgorithm(arg0) {
   const items5 = [tmp12[3], tmp13[3], tmp14[3], tmp15[3]];
   items2[3] = items5;
   const items6 = [, , , ];
-  _slicedToArray(items.map(f122620), 4);
+  _slicedToArray(items.map(f122849), 4);
   items6[0] = _undefined3(tmp12, tmp2);
   items6[1] = _undefined3(tmp12, tmp3);
   items6[2] = _undefined3(tmp12, tmp4);

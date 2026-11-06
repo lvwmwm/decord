@@ -1,12 +1,12 @@
-// Module ID: 12883
-// Function ID: 12884
+// Module ID: 12848
+// Function ID: 12849
 // Name: conjureSettingsSummary
-// Dependencies: [1113, 3995, 12843, 2]
+// Dependencies: [1113, 4024, 12808, 2]
 // Exports: conjureConnectedKeysSummary, conjureSettingsSummary
 
-// Module 12883 (conjureSettingsSummary)
+// Module 12848 (conjureSettingsSummary)
 import intl7 from "intl" /* 1113 */;
-import _modDef3995 from "module_3995" /* 3995 */;
+import _modDef4024 from "module_4024" /* 4024 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ export function conjureSettingsSummary(settingsRequest, settings, arg2) {
       formatToPlainString = intl.formatToPlainString;
       const _Array = Array;
       obj2 = { label: found.label, value: stringResult };
-      prop = _modDef3995["Z+FC3j"];
+      prop = _modDef4024["Z+FC3j"];
       if (Array.isArray("secret" === found.type || tmp.values[key])) {
         const _String2 = String;
         mapped = arr2.map(String);
@@ -48,15 +48,15 @@ export function conjureSettingsSummary(settingsRequest, settings, arg2) {
       const type = found.type;
       if ("secret" === type) {
         const intl6 = tmp3(1113).intl;
-        stringResult = intl6.string(tmp5(3995).CJq1rY);
+        stringResult = intl6.string(tmp5(4024).CJq1rY);
       } else if ("checkbox" === type) {
         let nXtpn3;
         const intl5 = tmp3(1113).intl;
         const string = intl5.string;
         if (true === ("secret" === found.type || tmp.values[key])) {
-          nXtpn3 = tmp5(3995).nXtpn3;
+          nXtpn3 = tmp5(4024).nXtpn3;
         } else {
-          nXtpn3 = tmp5(3995)["0vfaMW"];
+          nXtpn3 = tmp5(4024)["0vfaMW"];
         }
         stringResult = string(nXtpn3);
       } else if ("select" === type) {
@@ -94,10 +94,10 @@ export function conjureSettingsSummary(settingsRequest, settings, arg2) {
         let stringResult1;
         if (0 === mapped.length) {
           const intl4 = tmp3(1113).intl;
-          stringResult1 = intl4.string(tmp5(3995).nEv677);
+          stringResult1 = intl4.string(tmp5(4024).nEv677);
         } else {
           const intl3 = tmp3(1113).intl;
-          stringResult1 = intl3.string(tmp5(3995).Fw9G9A);
+          stringResult1 = intl3.string(tmp5(4024).Fw9G9A);
         }
         stringResult = stringResult1;
       } else {
@@ -107,7 +107,7 @@ export function conjureSettingsSummary(settingsRequest, settings, arg2) {
           }
         }
         const intl2 = tmp3(1113).intl;
-        stringResult = intl2.string(tmp5(3995).Fw9G9A);
+        stringResult = intl2.string(tmp5(4024).Fw9G9A);
       }
       const items = [obj];
       return items;
@@ -119,8 +119,8 @@ export function conjureConnectedKeysSummary(arr) {
     let intl2;
     const intl = require("intl").intl;
     const formatToPlainString = intl.formatToPlainString;
-    const obj = { label, value: intl2.string(_modDef3995.CJq1rY) };
-    const prop = _modDef3995["Z+FC3j"];
+    const obj = { label, value: intl2.string(_modDef4024.CJq1rY) };
+    const prop = _modDef4024["Z+FC3j"];
     intl2 = require("intl").intl;
     return formatToPlainString(prop, obj);
   });

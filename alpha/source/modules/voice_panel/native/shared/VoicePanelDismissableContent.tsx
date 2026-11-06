@@ -1,23 +1,23 @@
-// Module ID: 19596
-// Function ID: 19597
+// Module ID: 19592
+// Function ID: 19593
 // Name: VoicePanelDismissableContent
-// Dependencies: [32, 19, 6981, 11419, 5817, 21, 19597, 2123, 11418, 1652, 1705, 4976, 10704, 10705, 2]
+// Dependencies: [32, 19, 6923, 11381, 5835, 21, 19593, 2118, 11380, 1652, 1705, 5003, 10656, 10657, 2]
 
-// Module 19596 (VoicePanelDismissableContent)
+// Module 19592 (VoicePanelDismissableContent)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import CallConstants from "CallConstants" /* 5817 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11418 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11419 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import CallConstants from "CallConstants" /* 5835 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11380 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11381 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6981 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6923 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const SelectedDismissibleContentDefault = tmp(10704);
+const SelectedDismissibleContentDefault = tmp(10656);
 function VoiceControlsNuxActionSheetImporter() {
-  return asyncRequire(19597, dependencyMap.paths);
+  return asyncRequire(19593, dependencyMap.paths);
 }
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const isActivityParticipant = CallConstants.isActivityParticipant;
@@ -93,7 +93,7 @@ const memoResult = react.memo(function VoicePanelDismissibleContent() {
   VoicePanelDismissableContentTsx2.__initData = tmp13;
   const animatedReaction = useAnimatedReaction(VoicePanelDismissableContentTsx1, VoicePanelDismissableContentTsx2);
   if (first) {
-    const items5 = [channelId(4976).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
+    const items5 = [channelId(5003).DismissibleContent.ACTIVITIES_MOBILE_PIP_FAB_NUX];
     items6 = items5;
   } else {
     items6 = [];

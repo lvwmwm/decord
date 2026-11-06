@@ -1,35 +1,131 @@
-// Module ID: 19619
-// Function ID: 19620
+// Module ID: 19623
+// Function ID: 19624
 // Name: useControlsButtons
-// Dependencies: [19, 2135, 11417, 1072, 21, 19620, 19623, 19629, 19631, 19633, 19635, 19637, 19642, 19526, 1624, 11418, 19643, 504, 1652, 14059, 8987, 2]
+// Dependencies: [19, 5019, 2130, 11379, 1072, 21, 19624, 19627, 19633, 19635, 19636, 19638, 19639, 19644, 19645, 19646, 19648, 19519, 1624, 11380, 19649, 504, 11345, 11350, 6792, 1652, 14036, 8933, 2]
 // Exports: default
 
-// Module 19619 (useControlsButtons)
+// Module 19623 (useControlsButtons)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import VoicePanelMicButton from "VoicePanelMicButton" /* 19620 */;
-import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19623 */;
-import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19629 */;
-import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19631 */;
-import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19633 */;
-import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19635 */;
-import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19637 */;
-import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19642 */;
-import react_mod from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11417 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1624 */;
+import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19519 */;
+import VoicePanelMicButton from "VoicePanelMicButton" /* 19624 */;
+import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19627 */;
+import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19633 */;
+import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19635 */;
+import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19636 */;
+import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19638 */;
+import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19639 */;
+import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19644 */;
+import VoicePanelRaiseHandButtonDefault from "VoicePanelRaiseHandButton" /* 19645 */;
+import VoicePanelStageAudienceButtonDefault from "VoicePanelStageAudienceButton" /* 19646 */;
+import VoicePanelLeaveStageButtonDefault from "VoicePanelLeaveStageButton" /* 19648 */;
+import react from "react" /* 19 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11379 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require;
+let closure_1, constants, importDefault;
 
-let hasOwnProperty;
+let metroImportDefault;
 let metroRequire;
-let react = react_mod;
-({ CONTROLS_BUTTON_SIZE_LARGE: hasOwnProperty, CONTROLS_BUTTON_SIZE_NORMAL: metroRequire } = VoicePanelControlsConstants);
+function getButtons(arg0, stateFromStores, treatment, memo) {
+  let arr2;
+  let tmp3;
+  if (arg0) {
+    if (null != memo) {
+      let tmp19;
+      let isSpeaker = memo.isSpeaker;
+      const items = [];
+      if (isSpeaker) {
+        if (memo.isStageVideoEnabled) {
+          const obj2 = { type: "icon-normal", key: "connected-video", render: redux.video };
+          items.push(obj2);
+        }
+        if (!stateFromStores) {
+          const obj3 = { type: "icon-normal", key: "connected-mic", render: redux.micConnected };
+          items.push(obj3);
+        }
+        const obj4 = { type: "icon-normal", key: "connected-leave-stage", render: redux.leaveStage };
+        items.push(obj4);
+        tmp19 = redux;
+      } else {
+        tmp19 = redux;
+        const obj5 = { type: "icon-normal", key: "connected-raise-hand", render: redux.raiseHand };
+        items.push(obj5);
+        const obj6 = { type: "icon-normal", key: "connected-chat", render: redux.chat };
+        items.push(obj6);
+      }
+      if (isSpeaker) {
+        isSpeaker = stateFromStores;
+      }
+      if (isSpeaker) {
+        const obj7 = { type: "icon-large", key: "connected-ptt", render: tmp19.ptt };
+        items.push(obj7);
+      }
+      const obj8 = { type: "icon-normal", key: "connected-stage-audience", render: tmp19.stageAudience };
+      items.push(obj8);
+      const obj9 = { type: "icon-normal", key: "connected-disconnect", render: tmp19.disconnectCancel };
+      items.push(obj9);
+      tmp3 = tmp19;
+      arr2 = items;
+    }
+    const obj20 = MetaQuestUtils;
+    if (obj20.isMetaQuest()) {
+      const obj10 = { type: "icon-normal", key: "drawer-toggle", render: tmp3.drawerToggle };
+      arr2.push(obj10);
+    }
+    return arr2;
+  }
+  const items1 = [];
+  const push = items1.push;
+  if (arg0) {
+    const obj11 = { type: "icon-normal", key: "connected-video", render: redux.video };
+    push(obj11);
+    if (!stateFromStores) {
+      const obj12 = { type: "icon-normal", key: "connected-mic", render: redux.micConnected };
+      items1.push(obj12);
+    }
+    const tmp11 = require;
+    if (treatment === MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT) {
+      const obj13 = { type: "icon-normal", key: "connected-screenshare", render: redux.screenshare };
+      items1.push(obj13);
+    } else {
+      const obj14 = { type: "icon-normal", key: "connected-chat", render: redux.chat };
+      items1.push(obj14);
+    }
+    if (stateFromStores) {
+      const obj15 = { type: "icon-large", key: "connected-ptt", render: redux.ptt };
+      items1.push(obj15);
+    }
+    if (treatment === tmp11(19519).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
+      const obj16 = { type: "icon-normal", key: "connected-screenshare", render: redux.screenshare };
+      items1.push(obj16);
+    } else {
+      const obj17 = { type: "icon-normal", key: "connected-soundboard", render: redux.soundboard };
+      items1.push(obj17);
+    }
+    const obj18 = { type: "icon-normal", key: "connected-disconnect", render: redux.disconnectCancel };
+    items1.push(obj18);
+    tmp3 = tmp7;
+    arr2 = items1;
+  } else {
+    tmp3 = redux;
+    const obj = { type: "icon-normal", key: "disconnected-mute", render: redux.mic };
+    push(obj);
+    const obj19 = { type: "label", key: "disconnected-connect", render: redux.connect };
+    items1.push(obj19);
+    const obj21 = { type: "icon-normal", key: "disconnected-chat", render: redux.chat };
+    items1.push(obj21);
+    arr2 = items1;
+  }
+}
+({ CONTROLS_BUTTON_SIZE_LARGE: metroRequire, CONTROLS_BUTTON_SIZE_NORMAL: metroImportDefault } = VoicePanelControlsConstants);
 const InputModes = Constants.InputModes;
 const jsx = Fragment.jsx;
-let closure_9 = {
+const redux = {
   mic(arg0, arg1) {
     const MicButton = VoicePanelMicButton.MicButton;
     const merged = Object.assign(arg1);
@@ -79,123 +175,109 @@ let closure_9 = {
     VoicePanelDrawerToggleButtonDefault;
     const merged = Object.assign(arg1);
     return <tmp key={arg0} />;
+  },
+  raiseHand(arg0, arg1) {
+    VoicePanelRaiseHandButtonDefault;
+    const merged = Object.assign(arg1);
+    return <tmp key={arg0} />;
+  },
+  stageAudience(arg0, arg1) {
+    VoicePanelStageAudienceButtonDefault;
+    const merged = Object.assign(arg1);
+    return <tmp key={arg0} />;
+  },
+  leaveStage(arg0, arg1) {
+    VoicePanelLeaveStageButtonDefault;
+    const merged = Object.assign(arg1);
+    return <tmp key={arg0} />;
   }
 };
-let closure_10 = { code: "(function useControlsButtonsTsx1(){let[getControlsDefaultWidth,windowDimensions,safeArea]=this.__closure;return getControlsDefaultWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right);})" };
+let closure_12 = { code: "(function useControlsButtonsTsx1(){let[getControlsDefaultWidth,windowDimensions,safeArea]=this.__closure;return getControlsDefaultWidth(windowDimensions.get().width,safeArea.get().left,safeArea.get().right);})" };
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/useControlsButtons.tsx");
 
 export default function useControlsButtons() {
-  let channelId;
-  let closure_0;
-  let closure_3;
-  let mode;
+  let isSpeaker;
+  let isStageUnifiedCall;
   let safeArea;
   let stateFromStores;
-  let tmp10;
-  let tmp7;
-  let tmp8;
-  let tmp9;
+  let tmp15;
+  let tmp16;
+  let tmp17;
+  let tmp18;
   let treatment;
   let windowDimensions;
-  let obj = react;
-  let tmp = treatment;
-  let tmp2 = stateFromStores;
-  const context = react.useContext(treatment(stateFromStores[15]));
-  ({ channelId, windowDimensions, safeArea } = context);
-  const tmp4 = treatment(stateFromStores[16])(channelId);
-  _require = tmp4;
-  let obj2 = treatment(stateFromStores[13]);
+  let obj = stateFromStores;
+  const tmp2 = treatment;
+  let tmp = importDefault;
+  const context = stateFromStores.useContext(require("VoicePanelStateContext"));
+  const channelId = context.channelId;
+  ({ windowDimensions, safeArea } = context);
+  const tmp4 = require("useShowConnectedControls")(channelId);
+  importDefault = tmp4;
+  const obj2 = require("MobileGoLiveEntrypointExperiment");
   treatment = obj2.useConfig({ location: "VoicePanelControlButtons" }).treatment;
-  let obj3 = require("get initialized");
-  let items = [MediaEngineStore];
-  stateFromStores = obj3.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK);
-  const items1 = [closure_10, , , ];
-  const useDerivedValue = require("module_1652").useDerivedValue;
-  const tmp6 = require("module_1652");
-  items1[1] = require("VoicePanelControlsUtils").getControlsDefaultWidth;
-  items1[2] = windowDimensions;
-  items1[3] = safeArea;
+  const items = [isSpeaker];
+  const obj3 = channelId(treatment[21]);
+  stateFromStores = obj3.useStateFromStores(items, () => isSpeaker.getMode() === constants.PUSH_TO_TALK);
+  const items1 = [isStageUnifiedCall];
+  const items2 = [channelId];
+  const obj4 = channelId(treatment[21]);
+  const stateFromStores1 = obj4.useStateFromStores(items1, () => ChannelStore.getChannel(channelId), items2);
+  const obj5 = channelId(treatment[22]);
+  isStageUnifiedCall = obj5.useIsStageUnifiedCall(stateFromStores1, "VoicePanelControlButtons");
+  let tmp9 = require("useCanSpeakInChannel")(channelId);
+  isSpeaker = tmp9;
+  let tmp10 = channelId(treatment[24]);
+  let guild_id;
+  const useIsStageVideoEnabled = tmp10.useIsStageVideoEnabled;
+  if (stateFromStores1 != null) {
+    guild_id = stateFromStores1.guild_id;
+  }
+  const isStageVideoEnabled = useIsStageVideoEnabled(guild_id);
+  const items3 = [isStageUnifiedCall, tmp9, isStageVideoEnabled];
+  const memo = obj.useMemo(() => {
+    let tmp = null;
+    if (isStageUnifiedCall) {
+      tmp = { isSpeaker, isStageVideoEnabled };
+      const obj = { isSpeaker, isStageVideoEnabled };
+    }
+    return tmp;
+  }, items3);
+  const items4 = [closure_12, , , ];
+  const useDerivedValue = tmp5(tmp2[25]).useDerivedValue;
+  channelId(tmp2[25]);
+  items4[1] = channelId(tmp2[26]).getControlsDefaultWidth;
+  items4[2] = windowDimensions;
+  items4[3] = safeArea;
   let c0;
   let c1;
   let c2;
-  [tmp7, tmp8, tmp9, tmp10] = items1;
+  [tmp15, tmp16, tmp17, tmp18] = items4;
   function useControlsButtonsTsx1() {
     const width = _undefined2.get().width;
     return _undefined(width, _undefined3.get().left, _undefined3.get().right);
   }
-  const items2 = [tmp8, tmp9, tmp10];
-  useControlsButtonsTsx1.__closure = items2;
+  const items5 = [tmp16, tmp17, tmp18];
+  useControlsButtonsTsx1.__closure = items5;
   useControlsButtonsTsx1.__workletHash = 5736026634823;
-  useControlsButtonsTsx1.__initData = tmp7;
+  useControlsButtonsTsx1.__initData = tmp15;
   const derivedValue = useDerivedValue(useControlsButtonsTsx1);
-  let tmp12 = tmp(tmp2[20])(derivedValue);
-  react = tmp12;
-  const items3 = [tmp4, stateFromStores, tmp12, treatment];
+  const tmp20 = tmp(tmp2[27])(derivedValue);
+  constants = tmp20;
+  const items6 = [tmp4, stateFromStores, tmp20, treatment, memo];
   return obj.useMemo(() => {
-    let redux;
-    function getButtons(arg0, stateFromStores, treatment) {
-      let tmp2;
-      const items = [];
-      const push = items.push;
-      const tmp = arg0;
-      if (tmp) {
-        const obj2 = { type: "icon-normal", key: "connected-video", render: redux.video };
-        push(obj2);
-        if (!stateFromStores) {
-          const obj3 = { type: "icon-normal", key: "connected-mic", render: redux.micConnected };
-          items.push(obj3);
-        }
-        const tmp11 = closure_1_0;
-        const tmp12 = stateFromStores;
-        if (treatment === closure_1_0(stateFromStores[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT) {
-          const obj4 = { type: "icon-normal", key: "connected-screenshare", render: redux.screenshare };
-          items.push(obj4);
-        } else {
-          const obj5 = { type: "icon-normal", key: "connected-chat", render: redux.chat };
-          items.push(obj5);
-        }
-        if (stateFromStores) {
-          const obj6 = { type: "icon-large", key: "connected-ptt", render: redux.ptt };
-          items.push(obj6);
-        }
-        if (treatment === tmp11(tmp12[13]).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
-          const obj7 = { type: "icon-normal", key: "connected-screenshare", render: redux.screenshare };
-          items.push(obj7);
-        } else {
-          const obj8 = { type: "icon-normal", key: "connected-soundboard", render: redux.soundboard };
-          items.push(obj8);
-        }
-        const obj9 = { type: "icon-normal", key: "connected-disconnect", render: redux.disconnectCancel };
-        items.push(obj9);
-        tmp2 = tmp7;
-      } else {
-        tmp2 = redux;
-        const obj = { type: "icon-normal", key: "disconnected-mute", render: redux.mic };
-        push(obj);
-        const obj10 = { type: "label", key: "disconnected-connect", render: redux.connect };
-        items.push(obj10);
-        const obj11 = { type: "icon-normal", key: "disconnected-chat", render: redux.chat };
-        items.push(obj11);
-      }
-      const obj12 = closure_1_0(stateFromStores[14]);
-      if (obj12.isMetaQuest()) {
-        const obj13 = { type: "icon-normal", key: "drawer-toggle", render: tmp2.drawerToggle };
-        items.push(obj13);
-      }
-      return items;
-    }
     let c0 = false;
-    let closure_1 = 0;
-    const arr = getButtons(closure_0, stateFromStores, treatment);
+    closure_1 = 0;
+    const arr = getButtons(closure_1, stateFromStores, treatment, memo);
     const mapped = arr.map((type) => {
       let num2;
       if ("label" === type.type) {
         c0 = true;
       }
-      let tmp = closure_2_6;
+      let tmp = memo;
       if ("icon-large" === type.type) {
         closure_1 = closure_1 + 1;
-        tmp = closure_2_5;
+        tmp = isStageVideoEnabled;
       }
       const obj = { height: tmp, width: num2, x: 0, y: 0 };
       const merged = Object.assign(type);
@@ -207,10 +289,9 @@ export default function useControlsButtons() {
     });
     let num = 16;
     if (!c0) {
-      let tmp = closure_3;
-      let tmp2 = closure_1;
+      let tmp = constants;
       let num2 = 1;
-      num = (closure_3 - closure_1 * hasOwnProperty - (mapped.length - closure_1) * metroRequire - 32) / (mapped.length - 1);
+      num = (constants - closure_1 * metroRequire - (mapped.length - closure_1) * metroImportDefault - 32) / (mapped.length - 1);
     }
     let num4 = 16;
     const iter = mapped[Symbol.iterator]();
@@ -220,15 +301,14 @@ export default function useControlsButtons() {
       let width = nextResult.width;
       let tmp8 = width;
       if (-1 === width) {
-        let diff = closure_3 - (32 + (mapped.length - 1) * metroRequire + (mapped.length - 1) * num);
+        let diff = constants - (32 + (mapped.length - 1) * metroImportDefault + (mapped.length - 1) * num);
         tmp8 = diff;
-        let tmp12 = nextResult;
         tmp7.width = diff;
       }
-      tmp7.x = num4 - closure_3 / 2 + tmp8 / 2;
+      tmp7.x = num4 - constants / 2 + tmp8 / 2;
       num4 = num4 + (tmp8 + num);
       continue;
     }
     return mapped;
-  }, items3);
+  }, items6);
 };

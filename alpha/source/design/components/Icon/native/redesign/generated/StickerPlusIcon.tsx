@@ -1,14 +1,14 @@
-// Module ID: 20066
-// Function ID: 20067
+// Module ID: 20073
+// Function ID: 20074
 // Name: StickerPlusIcon
-// Dependencies: [19, 21, 575, 5853, 20067, 2]
+// Dependencies: [19, 21, 575, 5871, 20074, 2]
 // Exports: StickerPlusIcon
 
-// Module 20066 (StickerPlusIcon)
+// Module 20073 (StickerPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 20067 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 20074 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

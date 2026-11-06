@@ -1,10 +1,10 @@
-// Module ID: 10874
-// Function ID: 10875
+// Module ID: 10826
+// Function ID: 10827
 // Name: useSubscriptionSelection
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 10874 (useSubscriptionSelection)
+// Module 10826 (useSubscriptionSelection)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
-// Module ID: 15276
-// Function ID: 15277
+// Module ID: 15270
+// Function ID: 15271
 // Name: useProductDescription
-// Dependencies: [19, 1113, 2116, 2]
+// Dependencies: [19, 1113, 2111, 2]
 // Exports: useProductDescription
 
-// Module 15276 (useProductDescription)
+// Module 15270 (useProductDescription)
 import react from "react" /* 19 */;
 import intl7 from "intl" /* 1113 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2116 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2111 */;
 import size from "module_2" /* 2 */;
 
 function getBundleDescription(bundledProducts, flag) {
@@ -41,12 +41,12 @@ function getBundleDescription(bundledProducts, flag) {
         let intl2 = tmp6(1113).intl;
         let obj3 = { itemName: tmp4.name };
         let push2Result = push2(intl2.formatToPlainString(tmp6(1113).t.Ntv9Jt, obj3));
-      } else if (tmp6(2116).CollectiblesItemType.PROFILE_EFFECT === type) {
+      } else if (tmp6(2111).CollectiblesItemType.PROFILE_EFFECT === type) {
         let push = items.push;
         let intl = tmp6(1113).intl;
         let obj = { itemName: tmp4.name };
         let arr = push(intl.formatToPlainString(tmp6(1113).t["3Y8q7a"], obj));
-      } else if (tmp6(2116).CollectiblesItemType.NAMEPLATE === type) {
+      } else if (tmp6(2111).CollectiblesItemType.NAMEPLATE === type) {
         let push3 = items.push;
         let intl6 = tmp6(1113).intl;
         let obj4 = { itemName: tmp4.name };

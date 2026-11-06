@@ -1,14 +1,14 @@
-// Module ID: 18183
-// Function ID: 18184
+// Module ID: 18175
+// Function ID: 18176
 // Name: ManageSponsoredContentSetting
-// Dependencies: [8578, 1072, 11737, 1113, 2236, 18184, 2]
+// Dependencies: [8524, 1072, 11703, 1113, 2231, 18176, 2]
 
-// Module 18183 (ManageSponsoredContentSetting)
+// Module 18175 (ManageSponsoredContentSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import _modDef2236 from "module_2236" /* 2236 */;
-import SettingsConstants from "SettingsConstants" /* 8578 */;
-import SettingBuilders from "SettingBuilders" /* 11737 */;
+import _modDef2231 from "module_2231" /* 2231 */;
+import SettingsConstants from "SettingsConstants" /* 8524 */;
+import SettingBuilders from "SettingBuilders" /* 11703 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const UserSettingsSections = Constants.UserSettingsSections;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2236.yyhs9L);
+    return intl.string(_modDef2231.yyhs9L);
   },
   parent: MobileUserSettings.SPONSORED_CONTENT_PREFERENCES,
   screen: {

@@ -1,8 +1,8 @@
-// Module ID: 6328
-// Function ID: 6329
+// Module ID: 6348
+// Function ID: 6349
 // Dependencies: [2]
 
-// Module 6328
+// Module 6348
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/outfit/jester.png.js");

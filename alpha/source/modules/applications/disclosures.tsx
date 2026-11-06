@@ -1,14 +1,14 @@
-// Module ID: 9901
-// Function ID: 9902
+// Module ID: 9851
+// Function ID: 9852
 // Name: disclosures
-// Dependencies: [5, 1072, 1282, 9902, 1113, 2]
+// Dependencies: [5, 1072, 1282, 9852, 1113, 2]
 // Exports: ackDisclosures, getDisclosures, getTextForDisclosure
 
-// Module 9901 (disclosures)
+// Module 9851 (disclosures)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import applications from "applications" /* 9902 */;
+import applications from "applications" /* 9852 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

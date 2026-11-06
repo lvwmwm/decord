@@ -1,13 +1,13 @@
-// Module ID: 17202
-// Function ID: 17203
+// Module ID: 17190
+// Function ID: 17191
 // Name: useBountiesRecapOrbCount
-// Dependencies: [32, 19, 1652, 17201, 1705, 2]
+// Dependencies: [32, 19, 1652, 17189, 1705, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 17202 (useBountiesRecapOrbCount)
+// Module 17190 (useBountiesRecapOrbCount)
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import useBountiesRecapScroll from "useBountiesRecapScroll" /* 17201 */;
+import useBountiesRecapScroll from "useBountiesRecapScroll" /* 17189 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -15,14 +15,14 @@ import size from "module_2" /* 2 */;
 let tmp2;
 let items = [{ code: "(function getRecapOrbCountFromPullProgress_useBountiesRecapOrbCountTsx1(progress,targetOrbAmount){if(targetOrbAmount<=0||!Number.isFinite(targetOrbAmount)){return 0;}const clampedProgress=Math.min(1,Math.max(0,progress));return Math.round(clampedProgress*targetOrbAmount);})" }];
 [tmp2] = items;
-function getRecapOrbCountFromPullProgress(arg0, arg1) {
-  if (arg1 > 0) {
+function getRecapOrbCountFromPullProgress(arg0, scrollLength) {
+  if (scrollLength > 0) {
     const _Number = Number;
-    if (Number.isFinite(arg1)) {
+    if (Number.isFinite(scrollLength)) {
       const _Math = Math;
       const _Math2 = Math;
       const _Math3 = Math;
-      return Math.round(Math.min(1, Math.max(0, arg0)) * arg1);
+      return Math.round(Math.min(1, Math.max(0, arg0)) * scrollLength);
     }
   }
   return 0;

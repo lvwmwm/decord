@@ -1,22 +1,22 @@
-// Module ID: 9272
-// Function ID: 9273
+// Module ID: 9218
+// Function ID: 9219
 // Name: InstantInviteUtils
-// Dependencies: [4991, 4992, 5055, 6980, 5085, 1385, 7537, 1072, 6917, 8025, 9273, 1113, 2]
+// Dependencies: [5018, 5019, 5082, 6922, 5112, 1385, 7482, 1072, 6859, 7979, 9219, 1113, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 9272 (InstantInviteUtils)
+// Module 9218 (InstantInviteUtils)
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6917 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 8025 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9273 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
-import ReadStateStore from "ReadStateStore" /* 6980 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6859 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7979 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 9219 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import ReadStateStore from "ReadStateStore" /* 6922 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7537 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7482 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -370,9 +370,9 @@ export function generateRowsForQuery(arg0) {
       _require = undefined;
       importDefault = undefined;
       ({ rows: c0, counts: c1, query: query5, inviteTargetType: inviteTargetType2 } = obj10);
-      if (inviteTargetType2 === tmp39(8025).InviteTargetTypes.EMBEDDED_APPLICATION) {
+      if (inviteTargetType2 === tmp39(7979).InviteTargetTypes.EMBEDDED_APPLICATION) {
         let obj2 = AutocompleteUtilsDefault;
-        const obj12 = { query: query5, limit: 3, guildId: "id" };
+        const obj12 = { query: query5, limit: 3, guildId: "channel" };
         const queryChannelsResult = obj2.queryChannels(obj12);
         let item = queryChannelsResult.forEach((record) => {
           obj = { type: obj.CHANNEL, item: record.record, isSuggested: false, score: record.score };

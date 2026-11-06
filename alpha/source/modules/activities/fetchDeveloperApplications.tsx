@@ -1,15 +1,15 @@
-// Module ID: 11130
-// Function ID: 11131
+// Module ID: 11083
+// Function ID: 11084
 // Name: fetchDeveloperApplications
-// Dependencies: [5, 2145, 1072, 572, 1282, 2]
+// Dependencies: [5, 2140, 1072, 572, 1282, 2]
 // Exports: fetchDeveloperApplications
 
-// Module 11130 (fetchDeveloperApplications)
+// Module 11083 (fetchDeveloperApplications)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationRecord from "ApplicationRecord" /* 2145 */;
+import ApplicationRecord from "ApplicationRecord" /* 2140 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;

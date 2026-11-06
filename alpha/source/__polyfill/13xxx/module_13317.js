@@ -1,123 +1,39 @@
 // Module ID: 13317
 // Function ID: 13318
-// Dependencies: [13287, 13318, 13308, 13286, 13294, 13296, 13313]
-// Exports: freezeDscOnSpan, getDynamicSamplingContextFromClient, getDynamicSamplingContextFromScope, spanToBaggageHeader
+// Dependencies: [13283, 13255, 13282]
+// Exports: initAndBind, setCurrentClient
 
 // Module 13317
-import _mod13286 from "module_13286" /* 13286 */;
-import _mod13287 from "module_13287" /* 13287 */;
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 13294 */;
-import SEMANTIC_ATTRIBUTE_CACHE_HIT from "SEMANTIC_ATTRIBUTE_CACHE_HIT" /* 13296 */;
-import _mod13308 from "module_13308" /* 13308 */;
-import _mod13313 from "module_13313" /* 13313 */;
+import _mod13255 from "module_13255" /* 13255 */;
+import _mod13282 from "module_13282" /* 13282 */;
+import _mod13283 from "module_13283" /* 13283 */;
 
-let tmp3;
-const _mod13318 = tmp3(13318);
-function getDynamicSamplingContextFromSpan(spanContext) {
-  const obj = _mod13308;
-  const client = obj.getClient();
-  if (client) {
-    const tmpResult = _mod13286;
-    const rootSpan = tmpResult.getRootSpan(spanContext);
-    if (rootSpan[_frozenDsc]) {
-      return rootSpan[_frozenDsc];
+
+export function initAndBind(arg0, debug) {
+  if (true === debug.debug) {
+    const DEBUG_BUILD = _mod13283.DEBUG_BUILD;
+    const obj = _mod13255;
+    if (DEBUG_BUILD) {
+      const logger = obj.logger;
+      logger.enable();
     } else {
-      const traceState = rootSpan.spanContext().traceState;
-      const value = traceState && traceState.get("sentry.dsc");
-      let result = value;
-      if (result) {
-        const tmpResult6 = BAGGAGE_HEADER_NAME;
-        result = tmpResult6.baggageHeaderToDynamicSamplingContext(value);
-      }
-      if (result) {
-        return result;
-      } else {
-        const traceId = spanContext.spanContext().traceId;
-        const options = client.getOptions();
-        const publicKey = (client.getDsn() || {}).publicKey;
-        client.getDsn() || {};
-        let DEFAULT_ENVIRONMENT = options.environment;
-        const dropUndefinedKeys = _mod13287.dropUndefinedKeys;
-        _mod13287;
-        if (!DEFAULT_ENVIRONMENT) {
-          DEFAULT_ENVIRONMENT = tmp(13318).DEFAULT_ENVIRONMENT;
-        }
-        const obj2 = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
-        const dropUndefinedKeysResult = dropUndefinedKeys(obj2);
-        client.emit("createDsc", dropUndefinedKeysResult);
-        const tmpResult8 = _mod13286;
-        const spanToJSONResult = tmpResult8.spanToJSON(rootSpan);
-        const tmp14 = spanToJSONResult.data || {};
-        const tmp15 = tmp14[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SAMPLE_RATE];
-        if (null != tmp15) {
-          const _HermesInternal = HermesInternal;
-          dropUndefinedKeysResult.sample_rate = "" + tmp15;
-        }
-        const description = spanToJSONResult.description;
-        const tmp18 = "url" !== tmp14[SEMANTIC_ATTRIBUTE_CACHE_HIT.SEMANTIC_ATTRIBUTE_SENTRY_SOURCE] && description;
-        if (tmp18) {
-          dropUndefinedKeysResult.transaction = description;
-        }
-        const tmpResult9 = _mod13313;
-        if (tmpResult9.hasTracingEnabled()) {
-          const _String = String;
-          const tmpResult10 = _mod13286;
-          dropUndefinedKeysResult.sampled = String(tmpResult10.spanIsSampled(rootSpan));
-        }
-        client.emit("createDsc", dropUndefinedKeysResult, rootSpan);
-        return dropUndefinedKeysResult;
-      }
+      obj.consoleSandbox(() => {
+        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
+      });
     }
-  } else {
-    return {};
   }
+  const obj2 = _mod13282;
+  const currentScope = obj2.getCurrentScope();
+  currentScope.update(debug.initialScope);
+  const obj4 = new arg0(debug);
+  const obj5 = _mod13282;
+  const currentScope1 = obj5.getCurrentScope();
+  currentScope1.setClient(obj4);
+  obj4.init();
+  return obj4;
 }
-const _frozenDsc = "_frozenDsc";
-
-export function freezeDscOnSpan(arg0, arg1) {
-  const obj = _mod13287;
-  const result = obj.addNonEnumerableProperty(arg0, _frozenDsc, arg1);
-}
-export function getDynamicSamplingContextFromClient(trace_id, getOptions) {
-  const options = getOptions.getOptions();
-  const publicKey = (getOptions.getDsn() || {}).publicKey;
-  getOptions.getDsn() || {};
-  let DEFAULT_ENVIRONMENT = options.environment;
-  const dropUndefinedKeys = _mod13287.dropUndefinedKeys;
-  _mod13287;
-  if (!DEFAULT_ENVIRONMENT) {
-    DEFAULT_ENVIRONMENT = _mod13318.DEFAULT_ENVIRONMENT;
-  }
-  const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id };
-  const dropUndefinedKeysResult = dropUndefinedKeys(obj);
-  getOptions.emit("createDsc", dropUndefinedKeysResult);
-  return dropUndefinedKeysResult;
-}
-export function getDynamicSamplingContextFromScope(getOptions, getPropagationContext) {
-  const propagationContext = getPropagationContext.getPropagationContext();
-  let dsc = propagationContext.dsc;
-  if (!dsc) {
-    const traceId = propagationContext.traceId;
-    const options = getOptions.getOptions();
-    const publicKey = (getOptions.getDsn() || {}).publicKey;
-    getOptions.getDsn() || {};
-    let DEFAULT_ENVIRONMENT = options.environment;
-    const dropUndefinedKeys = _mod13287.dropUndefinedKeys;
-    _mod13287;
-    const tmp5 = require;
-    if (!DEFAULT_ENVIRONMENT) {
-      DEFAULT_ENVIRONMENT = tmp5(13318).DEFAULT_ENVIRONMENT;
-    }
-    const obj = { environment: DEFAULT_ENVIRONMENT, release: options.release, public_key: publicKey, trace_id: traceId };
-    const dropUndefinedKeysResult = dropUndefinedKeys(obj);
-    getOptions.emit("createDsc", dropUndefinedKeysResult);
-    dsc = dropUndefinedKeysResult;
-  }
-  return dsc;
-}
-export { getDynamicSamplingContextFromSpan };
-export function spanToBaggageHeader(arg0) {
-  const tmp = getDynamicSamplingContextFromSpan(arg0);
-  const obj = BAGGAGE_HEADER_NAME;
-  return obj.dynamicSamplingContextToSentryBaggageHeader(tmp);
+export function setCurrentClient(arg0) {
+  const obj = _mod13282;
+  const currentScope = obj.getCurrentScope();
+  currentScope.setClient(arg0);
 }

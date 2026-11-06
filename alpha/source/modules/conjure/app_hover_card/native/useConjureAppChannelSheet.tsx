@@ -1,21 +1,21 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14617
+// Function ID: 14618
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 17, 6982, 21, 5143, 575, 11536, 5854, 1411, 7562, 504, 14641, 1113, 3995, 5197, 2]
+// Dependencies: [19, 17, 6924, 21, 5170, 575, 11498, 5872, 1411, 7507, 504, 14618, 1113, 4024, 5224, 2]
 // Exports: default
 
-// Module 14640 (useConjureAppChannelSheet)
+// Module 14617 (useConjureAppChannelSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import _modDef3995 from "module_3995" /* 3995 */;
-import UserUtils from "UserUtils" /* 5197 */;
-import FastImageDefault from "FastImage" /* 5854 */;
+import _modDef4024 from "module_4024" /* 4024 */;
+import UserUtils from "UserUtils" /* 5224 */;
+import FastImageDefault from "FastImage" /* 5872 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
-import createStyles from "createStyles" /* 5143 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -99,7 +99,7 @@ export default function useConjureAppChannelSheet(guild_id, arg1) {
         const intl = intl2.intl;
         const formatToPlainString = intl.formatToPlainString;
         const obj3 = { name: obj4.getName(tmp5) };
-        const prop = _modDef3995["6/x9LD"];
+        const prop = _modDef4024["6/x9LD"];
         obj4 = UserUtils;
         formatToPlainStringResult = formatToPlainString(prop, obj3);
       }

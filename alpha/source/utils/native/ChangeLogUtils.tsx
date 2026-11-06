@@ -1,18 +1,18 @@
-// Module ID: 8715
-// Function ID: 8716
+// Module ID: 8661
+// Function ID: 8662
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 5143, 575, 6916, 6169, 5763, 8716, 8717, 8718, 2]
+// Dependencies: [19, 17, 21, 5170, 575, 6858, 6189, 5781, 8662, 8663, 8664, 2]
 
-// Module 8715 (utils/ChangeLogUtils)
+// Module 8661 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import LegacyTokens from "LegacyTokens" /* 6916 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8718 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import LegacyTokens from "LegacyTokens" /* 6858 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8664 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5143 */;
-import CustomMarkup from "CustomMarkup" /* 6169 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import CustomMarkup from "CustomMarkup" /* 6189 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let closure_4, item, length;
 let obj2;
 let obj3;
 let tmp2;
-const MarkupRulesUtils = tmp2(8717);
+const MarkupRulesUtils = tmp2(8663);
 function ChangeLogLink(arg0) {
   let node;
   let output;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5763).Text;
+    Paragraph = output(5781).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8716);
+  const obj = output(8662);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8716);
+    const tmp5Result = tmp5(8662);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;
@@ -172,10 +172,11 @@ obj3 = { borderLeftWidth: 2, paddingLeft: 8, marginBottom: 10, borderLeftColor: 
 ({ fontSize: 14, lineHeight: 18, marginBottom: 8, color: nativeDefault.colors.TEXT_MUTED });
 let closure_6 = createStyles(obj);
 const obj5 = {
-  link(dependencyMap) {
+  link(inlineStoreParams) {
+    const styling = inlineStoreParams;
     return {
       react(node, output, state) {
-        return <ChangeLogLink key={arg2.key} accessibilityRole="link" node={arg0} output={arg1} state={arg2} styling={dependencyMap} />;
+        return <ChangeLogLink key={arg2.key} accessibilityRole="link" node={arg0} output={arg1} state={arg2} styling={styling} />;
       }
     };
   },

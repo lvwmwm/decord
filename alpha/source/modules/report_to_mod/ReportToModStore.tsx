@@ -1,12 +1,12 @@
-// Module ID: 10374
-// Function ID: 10375
+// Module ID: 10326
+// Function ID: 10327
 // Name: ReportToModStore
-// Dependencies: [5174, 504, 572, 2]
+// Dependencies: [5201, 504, 572, 2]
 
-// Module 10374 (ReportToModStore)
+// Module 10326 (ReportToModStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
 import size from "module_2" /* 2 */;
 
 let map, set;

@@ -1,11 +1,11 @@
-// Module ID: 15027
-// Function ID: 15028
+// Module ID: 15004
+// Function ID: 15005
 // Name: getMediaViewerStateForScreen
-// Dependencies: [8985, 2]
+// Dependencies: [8931, 2]
 // Exports: default
 
-// Module 15027 (getMediaViewerStateForScreen)
-import MediaSourceUtil from "MediaSourceUtil" /* 8985 */;
+// Module 15004 (getMediaViewerStateForScreen)
+import MediaSourceUtil from "MediaSourceUtil" /* 8931 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;

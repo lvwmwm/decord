@@ -1,23 +1,22 @@
-// Module ID: 6593
-// Function ID: 6594
+// Module ID: 6613
+// Function ID: 6614
 // Name: StoreUtils
-// Dependencies: [5, 502, 2177, 2178, 2181, 1072, 6594, 6090, 6008, 1446, 6673, 5909, 1282, 1377, 1113, 2]
+// Dependencies: [5, 502, 2172, 2173, 2176, 1072, 6110, 6027, 1446, 6614, 5928, 1282, 1377, 1113, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 6593 (StoreUtils)
+// Module 6613 (StoreUtils)
 import intl4 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1446 */;
-import BrowserUtils from "BrowserUtils" /* 6008 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6090 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6673 */;
+import BrowserUtils from "BrowserUtils" /* 6027 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 6110 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6614 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 2177 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 2178 */;
-import SubscriptionStore from "SubscriptionStore" /* 2181 */;
+import BillingInfoStore from "BillingInfoStore" /* 2172 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 2173 */;
+import SubscriptionStore from "SubscriptionStore" /* 2176 */;
 import Constants from "Constants" /* 1072 */;
-import allSettled_mod from "allSettled" /* 6594 */;
 import size from "module_2" /* 2 */;
 
 let c1, c6, c7;
@@ -59,7 +58,7 @@ let obj = function _waitForSubscriptionsToBeFetched() {
                   c1 = 2;
                   c2 = 1;
                   const obj6 = { value: obj5.sleep(50), done: false };
-                  obj5 = closure_128_0(closure_128_1[11]);
+                  obj5 = closure_128_0(closure_128_1[10]);
                   return obj6;
                 }
               } else {
@@ -248,7 +247,7 @@ obj = function _httpGetWithCountryCodeQuery() {
               obj6.query = obj7;
             }
           }
-          const HTTP = closure_133_0(closure_133_1[12]).HTTP;
+          const HTTP = closure_133_0(closure_133_1[11]).HTTP;
           c7 = 3;
           const obj8 = { value: HTTP.get(obj6), done: true };
           return obj8;
@@ -262,17 +261,15 @@ obj = function _httpGetWithCountryCodeQuery() {
   return obj(...arguments);
 };
 ({ Endpoints: metroImportDefault, OperatingSystems: metroImportAll } = Constants);
-let allSettled = allSettled_mod;
-allSettled = allSettled.shim();
-let tmp4 = !shared_PlatformUtils.isMobile && !shared_PlatformUtils.isTablet;
-if (tmp4) {
+let tmp3 = !shared_PlatformUtils.isMobile && !shared_PlatformUtils.isTablet;
+if (tmp3) {
   const _module1 = BrowserUtils;
-  tmp4 = -1 !== _module1.getChromeVersion();
+  tmp3 = -1 !== _module1.getChromeVersion();
 }
-let closure_9 = tmp4;
+let closure_9 = tmp3;
 const result = size.fileFinishedImporting("utils/StoreUtils.tsx");
 
-export const SUPPORTS_WEBP = tmp4;
+export const SUPPORTS_WEBP = tmp3;
 export function getAssetURL(arg0, mimeType, arg2, mp4) {
   let combined;
   let str = mp4;

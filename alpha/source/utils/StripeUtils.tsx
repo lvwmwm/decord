@@ -1,42 +1,175 @@
-// Module ID: 6688
-// Function ID: 6689
+// Module ID: 6629
+// Function ID: 6630
 // Name: StripeUtils
-// Dependencies: [5, 32, 2191, 1072, 3, 6689, 1282, 504, 2]
+// Dependencies: [5, 32, 2186, 1072, 3, 6630, 1242, 6631, 1282, 504, 2]
 // Exports: authenticatePaymentIntentForPaymentId, getStripeClientMode, getStripeElementLocale, parseBillingAddressInfoToStripeBillingDetails, parseStripePaymentMethod, useStripeLocale, validateExpiry
 
-// Module 6688 (StripeUtils)
+// Module 6629 (StripeUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initialized from "get initialized" /* 504 */;
-import HTTPUtils from "HTTPUtils" /* 1282 */;
-import _mod6689 from "module_6689" /* 6689 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
-let c5, c6, locale;
+const require = globalThis.__r;
+let _require, c6, locale;
 
 let metroImportDefault;
 let metroRequire;
-function getStripe() {
-  let resolved;
-  if (null != React2) {
-    resolved = Promise.resolve(React2);
-  } else {
-    obj = _mod6689;
-    const stripe = obj.loadStripe(metroImportDefault.STRIPE.KEY);
-    resolved = stripe.then((result) => {
-      let closure_1_2 = result;
-      return result;
-    });
+function getStripe(payment_gateway_merchant_account_id) {
+  function resolveStripePublishableKey(payment_gateway_merchant_account_id) {
+    let obj3;
+    let tmp = null;
+    if (null != payment_gateway_merchant_account_id) {
+      let tmp4;
+      const KEYS_BY_MERCHANT_ACCOUNT_ID = closure_0(dependencyMap[5]).StripePaymentSettings.KEYS_BY_MERCHANT_ACCOUNT_ID;
+      if (KEYS_BY_MERCHANT_ACCOUNT_ID != null) {
+        tmp4 = KEYS_BY_MERCHANT_ACCOUNT_ID[payment_gateway_merchant_account_id];
+      }
+      tmp = tmp4;
+    }
+    if (typeof payment_gateway_merchant_account_id === "string") {
+      if ("" !== payment_gateway_merchant_account_id) {
+        if (typeof tmp !== "string") {
+          const obj4 = set;
+          if (!set.has(payment_gateway_merchant_account_id)) {
+            obj4.add(payment_gateway_merchant_account_id);
+            try {
+              const obj2 = { tags: obj3 };
+              const _window = window;
+              obj3 = { app_context: "billing", billing_context: "stripe_publishable_key", payment_gateway_merchant_account_id, build_environment: window.GLOBAL_ENV.PROJECT_ENV };
+              obj = closure_1(dependencyMap[6]);
+              obj.captureMessage("Stripe publishable key missing for merchant account", obj2, "warning");
+            } catch (err) {
+            }
+          }
+        }
+      }
+    }
+    if (typeof tmp !== "string") {
+      let str3 = constants.STRIPE.KEY;
+      if (str3 == null) {
+        str3 = "";
+      }
+      tmp = str3;
+    }
+    return tmp;
   }
-  return resolved;
+  let tmp = resolveStripePublishableKey(payment_gateway_merchant_account_id);
+  _require = tmp;
+  obj = map;
+  let value = map.get(tmp);
+  if (null != value) {
+    return value;
+  } else {
+    const tmp3 = _require;
+    let tmp4 = dependencyMap;
+    let obj2 = require("module_6631");
+    let closure_1 = obj2.loadStripe(tmp);
+    const tmp6 = (async (arg0, value) => {
+      if (c5 === 2) {
+        c5 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp3 === 3) {
+        if (arg0 === 1) {
+          throw value;
+        } else if (arg0 === 2) {
+          const obj2 = { value, done: true };
+          return obj2;
+        } else {
+          return { value: "HermesInternal", done: null };
+        }
+      } else {
+        let c3;
+        try {
+          c5 = 2;
+          if (0 === c4) {
+            if (arg0 === 1) {
+              c5 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c5 = 3;
+              const obj3 = { value, done: true };
+              return obj3;
+            } else {
+              value = tmp;
+              closure_0 = tmp4;
+              c3 = 1;
+              c4 = 2;
+              c5 = 1;
+              const obj4 = { value, done: false };
+              return obj4;
+            }
+          } else if (1 === c4) {
+            c3 = 0;
+            closure_0 = closure_2;
+            set.delete(closure_129_0);
+            throw closure_0;
+          } else if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c3 = 0;
+            c5 = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else {
+            c3 = 0;
+            c5 = 3;
+            obj = { value, done: true };
+            return obj;
+          }
+        } catch (tmp13) {
+          closure_2 = tmp13;
+          if (0 === c3) {
+            c5 = 3;
+            throw tmp13;
+          } else {
+            c4 = 1;
+          }
+        }
+      }
+    })();
+    const result = obj.set(tmp, tmp6);
+    return tmp6;
+  }
 }
-let obj = function _authenticatePaymentIntentForPaymentId() {
+function fetchStripePaymentIntentInfo() {
+  return obj(...arguments);
+}
+let obj = function _fetchStripePaymentIntentInfo() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let c4;
+    let c5;
+    let closure_3;
+    let merchantAccountId;
+    let paymentMethodId;
+    let closure_0 = arg0;
+    const HTTP = require("HTTPUtils").HTTP;
+    const obj4 = { url: metroRequire.BILLING_STRIPE_PAYMENT_INTENTS(closure_0), oldFormErrors: true, rejectWithError: true };
+    const get = HTTP.get;
+    await get(obj4);
+    const body = arg1.body;
+    const obj7 = { clientSecret: body.stripe_payment_intent_client_secret, paymentMethodId, merchantAccountId };
+    const stripe_payment_intent_payment_method_id = body.stripe_payment_intent_payment_method_id;
+    paymentMethodId = stripe_payment_intent_payment_method_id;
+    if (stripe_payment_intent_payment_method_id == null) {
+      paymentMethodId = null;
+    }
+    const payment_gateway_merchant_account_id = body.payment_gateway_merchant_account_id;
+    merchantAccountId = payment_gateway_merchant_account_id;
+    if (payment_gateway_merchant_account_id == null) {
+      merchantAccountId = null;
+    }
+    return obj7;
+  });
+  return obj(...arguments);
+};
+obj = function _authenticatePaymentIntentForPaymentId() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let closure_2;
-    let message;
+    let closure_3;
     let closure_0 = arg0;
     if (c6 === 2) {
       c6 = 3;
@@ -51,12 +184,14 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
         return { value: "HermesInternal", done: null };
       }
     } else {
+      let tmp48;
       let c4;
       try {
-        let closure_1;
-        let tmp;
+        let clientSecret;
+        let merchantAccountId;
+        let closure_4;
         let paymentIntent;
-        let closure_5;
+        let closure_7;
         let error;
         c6 = 2;
         if (0 === c5) {
@@ -68,27 +203,28 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
+            let closure_2 = tmp;
+            let closure_1 = tmp4;
             closure_0 = undefined;
-            closure_1 = undefined;
-            tmp = undefined;
+            clientSecret = undefined;
+            merchantAccountId = undefined;
+            tmp48 = undefined;
+            closure_4 = undefined;
             paymentIntent = undefined;
-            closure_5 = undefined;
+            closure_7 = undefined;
             error = undefined;
             c4 = 1;
-            const HTTP = HTTPUtils.HTTP;
-            const obj4 = { url: metroRequire.BILLING_STRIPE_PAYMENT_INTENTS(closure_0), oldFormErrors: true, rejectWithError: false };
-            const get = HTTP.get;
             c5 = 2;
             c6 = 1;
-            const obj5 = { value: get(obj4), done: false };
-            return obj5;
+            const obj4 = { value: fetchStripePaymentIntentInfo(closure_0), done: false };
+            return obj4;
           }
         } else if (1 === c5) {
           c4 = 0;
-          const obj6 = { error: message.message };
+          const obj5 = { error: tmp48.message };
           c6 = 3;
-          const obj7 = { value: obj6, done: true };
-          return obj7;
+          const obj6 = { value: obj5, done: true };
+          return obj6;
         } else if (2 === c5) {
           if (arg0 === 1) {
             c6 = 3;
@@ -96,14 +232,16 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
           } else if (arg0 === 2) {
             c4 = 0;
             c6 = 3;
-            const obj8 = { value, done: true };
-            return obj8;
+            const obj7 = { value, done: true };
+            return obj7;
           } else {
-            closure_0 = value.body.stripe_payment_intent_client_secret;
+            closure_0 = value;
+            clientSecret = closure_0.clientSecret;
+            merchantAccountId = closure_0.merchantAccountId;
             c5 = 3;
             c6 = 1;
-            const obj9 = { value: closure_130_10(), done: false };
-            return obj9;
+            const obj8 = { value: closure_130_12(merchantAccountId), done: false };
+            return obj8;
           }
         } else if (3 === c5) {
           if (arg0 === 1) {
@@ -112,20 +250,20 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
           } else if (arg0 === 2) {
             c4 = 0;
             c6 = 3;
-            const obj10 = { value, done: true };
-            return obj10;
+            const obj9 = { value, done: true };
+            return obj9;
           } else {
-            closure_1 = value;
-            if (null == closure_1) {
+            tmp48 = value;
+            if (null == tmp48) {
               c4 = 0;
               c6 = 3;
-              const obj11 = { value: { error: "unable to load stripe" }, done: true };
-              return obj11;
+              const obj10 = { value: { error: "unable to load stripe" }, done: true };
+              return obj10;
             } else {
               c5 = 4;
               c6 = 1;
-              const obj12 = { value: closure_1.retrievePaymentIntent(closure_0), done: false };
-              return obj12;
+              const obj11 = { value: tmp48.retrievePaymentIntent(clientSecret), done: false };
+              return obj11;
             }
           }
         } else if (4 === c5) {
@@ -135,55 +273,55 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
           } else if (arg0 === 2) {
             c4 = 0;
             c6 = 3;
-            const obj13 = { value, done: true };
-            return obj13;
+            const obj12 = { value, done: true };
+            return obj12;
           } else {
-            tmp = value;
-            error = tmp.error;
-            paymentIntent = tmp.paymentIntent;
+            closure_4 = value;
+            error = closure_4.error;
+            paymentIntent = closure_4.paymentIntent;
             if (null != error) {
-              const obj14 = { error: error.message };
+              const obj13 = { error: error.message };
               c4 = 0;
               c6 = 3;
-              const obj15 = { value: obj14, done: true };
-              return obj15;
+              const obj14 = { value: obj13, done: true };
+              return obj14;
             } else if (null == paymentIntent) {
               c4 = 0;
               c6 = 3;
-              const obj16 = { value: { error: "payment intent does not exist" }, done: true };
-              return obj16;
+              const obj15 = { value: { error: "payment intent does not exist" }, done: true };
+              return obj15;
             } else {
-              closure_5 = {};
-              const tmp11 = paymentIntent.status === closure_130_9.REQUIRES_PAYMENT_METHOD && null != paymentIntent.last_payment_error && null != paymentIntent.last_payment_error.payment_method;
+              closure_7 = {};
+              const tmp11 = paymentIntent.status === closure_130_11.REQUIRES_PAYMENT_METHOD && null != paymentIntent.last_payment_error && null != paymentIntent.last_payment_error.payment_method;
               if (tmp11) {
-                closure_5.payment_method = paymentIntent.last_payment_error.payment_method.id;
+                closure_7.payment_method = paymentIntent.last_payment_error.payment_method.id;
               }
               const status = paymentIntent.status;
-              if (closure_130_9.REQUIRES_PAYMENT_METHOD !== status) {
-                if (closure_130_9.REQUIRES_CONFIRMATION !== status) {
-                  if (closure_130_9.REQUIRES_ACTION !== status) {
-                    if (closure_130_9.SUCCEEDED !== status) {
-                      if (closure_130_9.PROCESSING !== status) {
-                        const CANCELED = closure_130_9.CANCELED;
-                        const obj17 = { error: "Invalid Payment Intent status: " + paymentIntent.status };
+              if (closure_130_11.REQUIRES_PAYMENT_METHOD !== status) {
+                if (closure_130_11.REQUIRES_CONFIRMATION !== status) {
+                  if (closure_130_11.REQUIRES_ACTION !== status) {
+                    if (closure_130_11.SUCCEEDED !== status) {
+                      if (closure_130_11.PROCESSING !== status) {
+                        const CANCELED = closure_130_11.CANCELED;
+                        const obj16 = { error: "Invalid Payment Intent status: " + paymentIntent.status };
                         const _HermesInternal = HermesInternal;
                         c4 = 0;
                         c6 = 3;
-                        const obj18 = { value: obj17, done: true };
-                        return obj18;
+                        const obj17 = { value: obj16, done: true };
+                        return obj17;
                       }
                     }
                     c4 = 0;
                     c6 = 3;
-                    const obj19 = { value: {}, done: true };
-                    return obj19;
+                    const obj18 = { value: {}, done: true };
+                    return obj18;
                   }
                 }
               }
               c5 = 5;
               c6 = 1;
-              const obj20 = { value: closure_1.confirmCardPayment(closure_0, closure_5), done: false };
-              return obj20;
+              const obj19 = { value: tmp48.confirmCardPayment(clientSecret, closure_7), done: false };
+              return obj19;
             }
           }
         } else if (arg0 === 1) {
@@ -192,26 +330,25 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
         } else if (arg0 === 2) {
           c4 = 0;
           c6 = 3;
-          const obj21 = { value, done: true };
-          return obj21;
+          const obj20 = { value, done: true };
+          return obj20;
         } else {
           error = value.error;
           if (null != error) {
-            const obj22 = { error: error.message };
-            value = obj22;
+            const obj21 = { error: error.message };
+            obj = obj21;
           } else {
-            value = {};
+            obj = {};
           }
           c4 = 0;
           c6 = 3;
-          const obj23 = { value, done: true };
-          return obj23;
+          const obj22 = { value: obj, done: true };
+          return obj22;
         }
-      } catch (tmp43) {
-        message = tmp43;
+      } catch (tmp48) {
         if (0 === c4) {
           c6 = 3;
-          throw tmp43;
+          throw tmp48;
         } else {
           c5 = 1;
         }
@@ -223,9 +360,11 @@ let obj = function _authenticatePaymentIntentForPaymentId() {
 ({ Endpoints: metroRequire, PaymentSettings: metroImportDefault } = Constants);
 let tmp3 = new LoggerDefault("StripeUtils");
 const logger = tmp3;
-let closure_9 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
-let closure_12 = { "en-US": "en", "zh-CN": "zh", "sv-SE": "sv" };
-const result = size.fileFinishedImporting("utils/StripeUtils.tsx");
+const map = new Map();
+const set = new Set();
+let closure_11 = { REQUIRES_PAYMENT_METHOD: "requires_payment_method", REQUIRES_CONFIRMATION: "requires_confirmation", REQUIRES_ACTION: "requires_action", PROCESSING: "processing", CANCELED: "canceled", SUCCEEDED: "succeeded" };
+let closure_16 = { "en-US": "en", "zh-CN": "zh", "sv-SE": "sv" };
+let result = size.fileFinishedImporting("utils/StripeUtils.tsx");
 
 export function validateExpiry(arg0) {
   let tmp4;
@@ -315,6 +454,7 @@ export function validateExpiry(arg0) {
   }
 }
 export { getStripe };
+export { fetchStripePaymentIntentInfo };
 export function getStripeClientMode() {
   let str2;
   if (null == metroImportDefault.STRIPE.KEY) {
@@ -351,7 +491,7 @@ export function parseStripePaymentMethod(billing_details) {
   if (str == null) {
     str = "";
   }
-  const billingAddressInfo = { name: str, line1: str2, line2: str3, city: str4, state: str5, country: str6, postalCode: str7 };
+  obj = { name: str, line1: str2, line2: str3, city: str4, state: str5, country: str6, postalCode: str7 };
   str2 = address.line1;
   if (str2 == null) {
     str2 = "";
@@ -376,7 +516,7 @@ export function parseStripePaymentMethod(billing_details) {
   if (str7 == null) {
     str7 = "";
   }
-  return { token: billing_details.id, billingAddressInfo };
+  return { token: billing_details.id, billingAddressInfo: obj };
 }
 export function parseBillingAddressInfoToStripeBillingDetails(name) {
   return { name: name.name, address: { line1: name.line1, line2: name.line2, city: name.city, state: name.state, postal_code: name.postalCode, country: name.country } };
@@ -385,7 +525,7 @@ export function authenticatePaymentIntentForPaymentId() {
   return obj(...arguments);
 }
 export function getStripeElementLocale(arg0) {
-  let tmp = closure_12[arg0];
+  let tmp = closure_16[arg0];
   if (tmp == null) {
     tmp = arg0;
   }
@@ -396,7 +536,7 @@ export function useStripeLocale() {
   obj = get_initialized;
   return obj.useStateFromStores(items, () => {
     locale = locale.locale;
-    let tmp = closure_1_12[locale];
+    let tmp = closure_1_16[locale];
     if (tmp == null) {
       tmp = locale;
     }

@@ -1,24 +1,24 @@
-// Module ID: 9288
-// Function ID: 9289
+// Module ID: 9234
+// Function ID: 9235
 // Name: Autocompleter
-// Dependencies: [7586, 9289, 5073, 5085, 1385, 7035, 6917, 9290, 4973, 7039, 9292, 9296, 2155, 5885, 5889, 2072, 1378, 12, 7038, 2]
+// Dependencies: [7531, 9235, 5100, 5112, 1385, 6977, 6859, 9236, 5000, 6981, 9238, 9242, 2150, 5904, 5908, 2067, 1378, 12, 6980, 2]
 
-// Module 9288 (Autocompleter)
+// Module 9234 (Autocompleter)
 import _modDef12 from "module_12" /* 12 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import _modDef2072 from "module_2072" /* 2072 */;
-import StringUtils from "StringUtils" /* 2155 */;
-import GuildChannelStore from "GuildChannelStore" /* 5073 */;
-import findCodedLinks from "findCodedLinks" /* 5885 */;
-import CodedLink from "CodedLink" /* 5889 */;
-import AutocompleteUtils from "AutocompleteUtils" /* 6917 */;
-import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 7035 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 7038 */;
-import GuildUtilsDefault from "GuildUtils" /* 7039 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9290 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7586 */;
-import LinkRecord from "LinkRecord" /* 9289 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import _modDef2067 from "module_2067" /* 2067 */;
+import StringUtils from "StringUtils" /* 2150 */;
+import GuildChannelStore from "GuildChannelStore" /* 5100 */;
+import findCodedLinks from "findCodedLinks" /* 5904 */;
+import CodedLink from "CodedLink" /* 5908 */;
+import AutocompleteUtils from "AutocompleteUtils" /* 6859 */;
+import autocompleter_AutocompleterConstants from "autocompleter/AutocompleterConstants" /* 6977 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 6980 */;
+import GuildUtilsDefault from "GuildUtils" /* 6981 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9236 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 7531 */;
+import LinkRecord from "LinkRecord" /* 9235 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
@@ -589,7 +589,7 @@ class Autocompleter {
         tmp3Result = AutocompleteUtils;
         return items;
       } else {
-        const obj8 = _modDef2072;
+        const obj8 = _modDef2067;
         const sanitizeUrlResult = obj8.sanitizeUrl(query);
         try {
           const _URL = URL;

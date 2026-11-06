@@ -1,10 +1,10 @@
-// Module ID: 19378
-// Function ID: 19379
+// Module ID: 19370
+// Function ID: 19371
 // Name: useLaunchPadPullTabMinimized
-// Dependencies: [19, 17, 1652, 12067, 2]
+// Dependencies: [19, 17, 1652, 11344, 2]
 // Exports: default
 
-// Module 19378 (useLaunchPadPullTabMinimized)
+// Module 19370 (useLaunchPadPullTabMinimized)
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ export default function useLaunchPadPullTabMinimized(arg0) {
   let tmp7;
   let tmp8;
   ({ launchPadSharedState, launchPadPullTabState } = arg0);
-  let obj = sharedValue(12067);
+  let obj = sharedValue(11344);
   sharedValue = undefined;
   const isVoicePanelFullscreen = obj.useIsVoicePanelFullscreen();
   const obj2 = sharedValue(1652);

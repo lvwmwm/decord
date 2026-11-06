@@ -1,13 +1,14 @@
-// Module ID: 20333
-// Function ID: 20334
+// Module ID: 20340
+// Function ID: 20341
 // Name: VoicePanelManager
-// Dependencies: [4992, 5901, 7013, 7426, 2]
+// Dependencies: [5019, 5920, 6955, 11345, 7373, 2]
 
-// Module 20333 (VoicePanelManager)
-import ChannelStore from "ChannelStore" /* 4992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5901 */;
-import VoicePanelStore from "VoicePanelStore" /* 7013 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7426 */;
+// Module 20340 (VoicePanelManager)
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11345 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
+import VoicePanelStore from "VoicePanelStore" /* 6955 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7373 */;
 import size from "module_2" /* 2 */;
 
 class VoicePanelManager extends AutomaticLifecycleManager {
@@ -24,12 +25,14 @@ class VoicePanelManager extends AutomaticLifecycleManager {
             isGuildStageVoiceResult = channel.isGuildStageVoice();
           }
           if (isGuildStageVoiceResult) {
-            state.closeChannel(channelId);
-          } else {
-            const channels = state.channels;
-            if (!channels.has(channelId)) {
-              state.openChannel(channelId);
+            const obj = StageChannelUnifiedCallExperiment;
+            if (!obj.isStageUnifiedCall(channel, "VoicePanelManager")) {
+              state.closeChannel(channelId);
             }
+          }
+          const channels = state.channels;
+          if (!channels.has(channelId)) {
+            state.openChannel(channelId);
           }
         }
       },
@@ -43,12 +46,14 @@ class VoicePanelManager extends AutomaticLifecycleManager {
             isGuildStageVoiceResult = channel.isGuildStageVoice();
           }
           if (isGuildStageVoiceResult) {
-            state.closeChannel(channelId);
-          } else {
-            const channels = state.channels;
-            if (!channels.has(channelId)) {
-              state.openChannel(channelId);
+            const obj = StageChannelUnifiedCallExperiment;
+            if (!obj.isStageUnifiedCall(channel, "VoicePanelManager")) {
+              state.closeChannel(channelId);
             }
+          }
+          const channels = state.channels;
+          if (!channels.has(channelId)) {
+            state.openChannel(channelId);
           }
         }
       }

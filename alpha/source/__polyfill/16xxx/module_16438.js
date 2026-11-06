@@ -1,18 +1,14 @@
 // Module ID: 16438
 // Function ID: 16439
-// Dependencies: [16411]
+// Dependencies: [16386, 16387]
 
 // Module 16438
-import _mod16411 from "module_16411" /* 16411 */;
+import _mod16386 from "module_16386" /* 16386 */;
+import _mod16387 from "module_16387" /* 16387 */;
 
+const f68126 = () => 42 !== Object.defineProperty(() => {
 
-export default function(arg0) {
-  if (_mod16411(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
-};
+}, "prototype", { value: 42, writable: false }).prototype;
+_mod16386 && _mod16387(f68126);
+
+export default _mod16386 && _mod16387(f68126);

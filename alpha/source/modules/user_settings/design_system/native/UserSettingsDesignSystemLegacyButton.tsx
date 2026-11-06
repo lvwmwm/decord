@@ -1,20 +1,20 @@
-// Module ID: 18050
-// Function ID: 18051
+// Module ID: 18038
+// Function ID: 18039
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [19, 17, 21, 1187, 5763, 5770, 5143, 575, 6165, 8322, 2]
+// Dependencies: [19, 17, 21, 1187, 5781, 5788, 5170, 575, 6185, 8267, 2]
 // Exports: default
 
-// Module 18050 (UserSettingsDesignSystemLegacyButton)
+// Module 18038 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import components_Button_Button from "components/Button/Button" /* 5770 */;
-import Stack_Stack from "Stack/Stack" /* 6165 */;
-import _mod8322 from "module_8322" /* 8322 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import components_Button_Button from "components/Button/Button" /* 5788 */;
+import Stack_Stack from "Stack/Stack" /* 6185 */;
+import _mod8267 from "module_8267" /* 8267 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -43,7 +43,7 @@ function ComparisonRow(entry) {
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(5763).Text;
+  const Text = tmp4(5781).Text;
   if (hasItem) {
     str = "text-default";
   }
@@ -326,7 +326,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
         return closure_1_5(closure_1_8, obj, index);
       })
     };
-    const FormSection = _mod8322.FormSection;
+    const FormSection = _mod8267.FormSection;
     return closure_1_5(FormSection, obj, "cmp-" + tmp);
   });
   const obj4 = { spacing: 4, style: tmp.header, children: items2 };
@@ -345,7 +345,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
         return closure_1_5(closure_1_9, obj, index);
       })
     };
-    const FormSection = _mod8322.FormSection;
+    const FormSection = _mod8267.FormSection;
     return closure_1_5(FormSection, obj, tmp);
   });
   return React3(React2, obj2);

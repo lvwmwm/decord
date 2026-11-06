@@ -1,26 +1,26 @@
-// Module ID: 18674
-// Function ID: 18675
+// Module ID: 18664
+// Function ID: 18665
 // Name: GuildsBarGuild
-// Dependencies: [19, 5010, 6912, 7024, 5014, 5174, 6910, 18645, 18642, 1072, 21, 5143, 575, 5734, 18654, 18365, 18368, 18675, 504, 7101, 18686, 18687, 6096, 1113, 1252, 18669, 18693, 18646, 18694, 1652, 5773, 5854, 18697, 2]
+// Dependencies: [19, 5037, 6854, 6966, 5041, 5201, 6852, 18635, 18632, 1072, 21, 5170, 575, 5754, 18644, 18357, 18360, 18665, 504, 7045, 18676, 18677, 6116, 1113, 1252, 18659, 18683, 18636, 18684, 1652, 5791, 5872, 18687, 2]
 
-// Module 18674 (GuildsBarGuild)
+// Module 18664 (GuildsBarGuild)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
-import GuildIcon from "GuildIcon" /* 7101 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18642 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18645 */;
-import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18646 */;
-import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 18694 */;
+import GuildIcon from "GuildIcon" /* 7045 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18632 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18635 */;
+import getGuildsBarGuildMenuItemsDefault from "getGuildsBarGuildMenuItems" /* 18636 */;
+import getGuildsBarGuildAccessibilityActionsDefault from "getGuildsBarGuildAccessibilityActions" /* 18684 */;
 import react_mod from "react" /* 19 */;
-import GuildRecord from "GuildRecord" /* 5010 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6912 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7024 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5174 */;
-import SortedGuildStore from "SortedGuildStore" /* 6910 */;
+import GuildRecord from "GuildRecord" /* 5037 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6854 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6966 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 5201 */;
+import SortedGuildStore from "SortedGuildStore" /* 6852 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let guildIds, set;

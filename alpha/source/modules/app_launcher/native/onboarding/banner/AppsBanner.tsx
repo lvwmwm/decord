@@ -1,13 +1,13 @@
-// Module ID: 12616
-// Function ID: 12617
+// Module ID: 12581
+// Function ID: 12582
 // Name: AppsBanner
-// Dependencies: [19, 21, 12614, 1113, 2]
+// Dependencies: [19, 21, 12579, 1113, 2]
 // Exports: default
 
-// Module 12616 (AppsBanner)
+// Module 12581 (AppsBanner)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
-import BannerBaseDefault from "BannerBase" /* 12614 */;
+import BannerBaseDefault from "BannerBase" /* 12579 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 13479
-// Function ID: 13480
+// Module ID: 13454
+// Function ID: 13455
 // Name: MessageGameIconActionSheet
-// Dependencies: [19, 17, 2167, 1072, 21, 5143, 1377, 575, 504, 5398, 1187, 5763, 1113, 2190, 2]
+// Dependencies: [19, 17, 2162, 1072, 21, 5170, 1377, 575, 504, 5418, 1187, 5781, 1113, 2185, 2]
 // Exports: default
 
-// Module 13479 (MessageGameIconActionSheet)
+// Module 13454 (MessageGameIconActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2167 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -51,7 +51,7 @@ export default function MessageGameIconActionSheet(applicationId) {
   if (null != stateFromStores) {
     const obj2 = { style: tmp.contentWrapper, children: closure_7(View, obj3) };
     obj3 = { style: tmp.gameDescriptionWrapperOuter, children: items1 };
-    const BottomSheet = tmp2(5398).BottomSheet;
+    const BottomSheet = tmp2(5418).BottomSheet;
     let str;
     const obj4 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
     const Icon = tmp2(1187).Icon;
@@ -66,9 +66,9 @@ export default function MessageGameIconActionSheet(applicationId) {
     items1 = [closure_6(Icon, obj4), ];
     const obj7 = { style: tmp.gameDescriptionWrapper, children: items2 };
     const obj8 = { style: tmp.timestamp, variant: "body-xs/medium", color: "text-muted", children: messageTimestamp };
-    items2 = [closure_6(applicationId(5763).Text, obj8), ];
+    items2 = [closure_6(applicationId(5781).Text, obj8), ];
     const obj9 = { variant: "body-sm/medium", children: items3 };
-    const Text = tmp2(5763).Text;
+    const Text = tmp2(5781).Text;
     const intl = tmp2(1113).intl;
     const obj10 = { applicationName: stateFromStores.name };
     items3 = [intl.format(applicationId(1113).t.J3s8JP, obj10), " ", ];

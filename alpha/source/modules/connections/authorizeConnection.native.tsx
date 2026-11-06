@@ -1,14 +1,14 @@
-// Module ID: 9876
-// Function ID: 9877
+// Module ID: 9826
+// Function ID: 9827
 // Name: authorizeConnection
-// Dependencies: [7488, 1072, 572, 5384, 9877, 14861, 14872, 6882, 14883, 2123, 6712, 14885, 9091, 5846, 7486, 2]
+// Dependencies: [7433, 1072, 572, 5404, 9827, 14837, 14848, 6824, 14859, 2118, 6654, 14861, 9037, 5864, 7431, 2]
 // Exports: default
 
-// Module 9876 (authorizeConnection)
+// Module 9826 (authorizeConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import LinkingDefault from "Linking" /* 5846 */;
-import Constants2 from "Constants" /* 7488 */;
+import LinkingDefault from "Linking" /* 5864 */;
+import Constants2 from "Constants" /* 7433 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = Constants2.GUILD_ROLE_CONNECTION_APPLICATION_CONNECTION_TYPE;
@@ -38,10 +38,10 @@ export default function authorizeConnection(overrideUrl) {
     _location = "mobile";
   }
   if (platformType === tmp.XBOX) {
-    const obj15 = overrideUrl(5384);
+    const obj15 = overrideUrl(5404);
     obj15.hideActionSheet();
     const items = [_location];
-    const obj16 = overrideUrl(9877);
+    const obj16 = overrideUrl(9827);
     obj16.showModal(items);
     const tmp23 = overrideUrl;
     if (null != onClose) {
@@ -53,10 +53,10 @@ export default function authorizeConnection(overrideUrl) {
     if (platformType !== tmp.PLAYSTATION) {
       if (platformType !== tmp.PLAYSTATION_STAGING) {
         if (platformType === tmp.CRUNCHYROLL) {
-          const obj11 = overrideUrl(5384);
+          const obj11 = overrideUrl(5404);
           obj11.hideActionSheet();
           const items1 = [_location];
-          const obj12 = overrideUrl(14872);
+          const obj12 = overrideUrl(14848);
           obj12.showModal(items1);
           const tmp15 = overrideUrl;
           if (null != onClose) {
@@ -65,12 +65,12 @@ export default function authorizeConnection(overrideUrl) {
             const subscription1 = tmp15Result.subscribe("MODAL_POP", handleModalClose4);
           }
         } else if (platformType === tmp.DOMAIN) {
-          const obj8 = overrideUrl(5384);
+          const obj8 = overrideUrl(5404);
           obj8.hideActionSheet();
           let obj = { locationStack: items2 };
           items2 = [_location];
-          const obj9 = overrideUrl(6882);
-          obj9.pushLazy(onClose(2123)(14883, dependencyMap.paths), obj);
+          const obj9 = overrideUrl(6824);
+          obj9.pushLazy(onClose(2118)(14859, dependencyMap.paths), obj);
           const tmp10 = overrideUrl;
           if (null != onClose) {
             const handleModalClose3 = handleModalClose6;
@@ -78,7 +78,7 @@ export default function authorizeConnection(overrideUrl) {
             const subscription2 = tmp10Result.subscribe("MODAL_POP", handleModalClose3);
           }
         } else {
-          const obj18 = overrideUrl(6712);
+          const obj18 = overrideUrl(6654);
           const value = obj18.get(platformType);
           let isFederated;
           const tmp29 = dependencyMap;
@@ -86,11 +86,11 @@ export default function authorizeConnection(overrideUrl) {
             isFederated = value.isFederated;
           }
           if (true === isFederated) {
-            const tmp28Result = overrideUrl(5384);
+            const tmp28Result = overrideUrl(5404);
             tmp28Result.hideActionSheet();
             const obj2 = { platformType, location: _location, successRedirect };
-            const tmp28Result4 = overrideUrl(6882);
-            tmp28Result4.pushLazy(onClose(2123)(14885, tmp29.paths), obj2);
+            const tmp28Result4 = overrideUrl(6824);
+            tmp28Result4.pushLazy(onClose(2118)(14861, tmp29.paths), obj2);
             if (null != onClose) {
               const handleModalClose2 = handleModalClose6;
               const tmp28Result5 = overrideUrl(572);
@@ -107,12 +107,12 @@ export default function authorizeConnection(overrideUrl) {
                                   obj.openURL(overrideUrl);
                                 }
                 };
-                const obj3 = onClose(9091);
+                const obj3 = onClose(9037);
                 obj3.handleClick(obj4);
               }
             }
             const obj5 = { location: _location, successRedirect };
-            const tmp28Result6 = overrideUrl(7486);
+            const tmp28Result6 = overrideUrl(7431);
             const authorizeResult = tmp28Result6.authorize(platformType, obj5);
             authorizeResult.then((body) => {
               const url = body.body.url;
@@ -125,10 +125,10 @@ export default function authorizeConnection(overrideUrl) {
         }
       }
     }
-    const obj13 = overrideUrl(5384);
+    const obj13 = overrideUrl(5404);
     obj13.hideActionSheet();
     const items3 = [_location];
-    const obj14 = overrideUrl(14861);
+    const obj14 = overrideUrl(14837);
     obj14.showModal(items3, platformType);
     const tmp19 = overrideUrl;
     if (null != onClose) {

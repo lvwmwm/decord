@@ -1,21 +1,21 @@
-// Module ID: 8946
-// Function ID: 8947
+// Module ID: 8892
+// Function ID: 8893
 // Name: useProfileTheme
-// Dependencies: [32, 5144, 8947, 1072, 5379, 504, 574, 8861, 1090, 8948, 5150, 2]
+// Dependencies: [32, 5171, 8893, 1072, 5399, 504, 574, 8807, 1090, 8894, 5177, 2]
 // Exports: default
 
-// Module 8946 (useProfileTheme)
+// Module 8892 (useProfileTheme)
 import get_initialized from "get initialized" /* 504 */;
 import shims from "shims" /* 574 */;
 import Constants from "Constants" /* 1072 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import shared from "shared" /* 5150 */;
-import useThemeDefault from "useTheme" /* 5379 */;
-import useAvatarColor from "useAvatarColor" /* 8861 */;
-import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 8947 */;
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8948 */;
+import shared from "shared" /* 5177 */;
+import useThemeDefault from "useTheme" /* 5399 */;
+import useAvatarColor from "useAvatarColor" /* 8807 */;
+import useProfileThemeOverrideStore from "useProfileThemeOverrideStore" /* 8893 */;
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8894 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import size from "module_2" /* 2 */;
 
 const useEffectiveThemeOverride = useProfileThemeOverrideStore.useEffectiveThemeOverride;

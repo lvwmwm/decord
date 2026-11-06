@@ -1,14 +1,14 @@
-// Module ID: 10062
-// Function ID: 10063
+// Module ID: 10013
+// Function ID: 10014
 // Name: ContextMenuState
-// Dependencies: [19, 560, 1259, 1705, 5386, 1652, 2]
-// Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState, useActiveContextMenu, useContextMenuState
+// Dependencies: [19, 560, 1259, 1705, 5406, 1652, 2]
+// Exports: hideContextMenu, resetContextMenuState, showContextMenu, updateContextMenuState, useActiveContextMenu, useContextMenuState, useIsContextMenuActive
 
-// Module 10062 (ContextMenuState)
+// Module 10013 (ContextMenuState)
 import react_native from "react-native" /* 1259 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
+import HapticUtils from "HapticUtils" /* 5406 */;
 import react from "react" /* 19 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -103,6 +103,17 @@ export function hideContextMenu() {
 }
 export function useActiveContextMenu() {
   return obj((menu) => menu.menu);
+}
+export function useIsContextMenuActive(contextMenuState) {
+  let closure_0 = contextMenuState;
+  return obj((menu) => {
+    menu = menu.menu;
+    let state;
+    if (menu != null) {
+      state = menu.state;
+    }
+    return state === closure_0;
+  });
 }
 export { updateContextMenuState };
 export function useContextMenuState() {

@@ -1,16 +1,16 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 11901
+// Function ID: 11902
 // Name: tryLaunchAsFrame
-// Dependencies: [2167, 6985, 11893, 5811, 11936, 11123, 2]
+// Dependencies: [2162, 6927, 11859, 5829, 11902, 11076, 2]
 // Exports: tryLaunchAsFrame
 
-// Module 11935 (tryLaunchAsFrame)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5811 */;
-import FramesConstants from "FramesConstants" /* 6985 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 11123 */;
-import getFrameSurfaces from "getFrameSurfaces" /* 11893 */;
-import openFrameInAppChannelDefault from "openFrameInAppChannel" /* 11936 */;
-import ApplicationStore from "ApplicationStore" /* 2167 */;
+// Module 11901 (tryLaunchAsFrame)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5829 */;
+import FramesConstants from "FramesConstants" /* 6927 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 11076 */;
+import getFrameSurfaces from "getFrameSurfaces" /* 11859 */;
+import openFrameInAppChannelDefault from "openFrameInAppChannel" /* 11902 */;
+import ApplicationStore from "ApplicationStore" /* 2162 */;
 import size from "module_2" /* 2 */;
 
 const MAIN_SURFACE = FramesConstants.MAIN_SURFACE;

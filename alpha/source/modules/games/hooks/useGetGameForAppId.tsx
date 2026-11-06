@@ -1,21 +1,21 @@
-// Module ID: 9445
-// Function ID: 9446
+// Module ID: 9391
+// Function ID: 9392
 // Name: useGetGameForAppId
-// Dependencies: [19, 2143, 7469, 7622, 1380, 504, 2]
+// Dependencies: [19, 2138, 7414, 7567, 1380, 504, 2]
 // Exports: default, useGetGameResultsForAppIds, useGetGamesForAppIds
 
-// Module 9445 (useGetGameForAppId)
+// Module 9391 (useGetGameForAppId)
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7469 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7414 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2143 */;
+import GameStore from "GameStore" /* 2138 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const useGame = tmp(7622);
+const useGame = tmp(7567);
 const result = size.fileFinishedImporting("modules/games/hooks/useGetGameForAppId.tsx");
 
 export default function useGetGameForAppId(applicationId) {
@@ -87,7 +87,7 @@ export function useGetGameResultsForAppIds(arg0) {
 export function useGetGamesForAppIds(stateFromStoresArray) {
   let closure_0;
   let memo;
-  const tmp = memo(7469)(stateFromStoresArray);
+  const tmp = memo(7414)(stateFromStoresArray);
   _require = tmp;
   const items = [tmp];
   memo = react.useMemo(() => {

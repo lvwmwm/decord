@@ -1,10 +1,10 @@
-// Module ID: 20406
-// Function ID: 20407
+// Module ID: 20414
+// Function ID: 20415
 // Name: VerifyEmailScreen
-// Dependencies: [5, 32, 19, 21, 20401, 20402, 20396, 5849, 1113, 2963, 20405, 6165, 575, 5763, 7226, 20407, 2]
+// Dependencies: [5, 32, 19, 21, 20409, 20410, 20404, 5867, 1113, 2960, 20413, 6185, 575, 5781, 7173, 20415, 2]
 // Exports: default
 
-// Module 20406 (VerifyEmailScreen)
+// Module 20414 (VerifyEmailScreen)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -139,19 +139,19 @@ export default function _default() {
       callback();
     }
   }, items2);
-  let obj3 = { title: intl.string(require("module_2963")["Qm6K/s"]), action: intl2.string(require("module_2963").wq2RDq), onAction, submitting: first1, children: tmp15(Stack, obj4) };
+  let obj3 = { title: intl.string(require("module_2960")["Qm6K/s"]), action: intl2.string(require("module_2960").wq2RDq), onAction, submitting: first1, children: tmp15(Stack, obj4) };
   const tmp14 = require("SafetyFlowTaskScreen");
   intl = onTaskComplete(value[8]).intl;
   intl2 = onTaskComplete(value[8]).intl;
   obj4 = { spacing: require("native").space.PX_16, children: items3 };
   Stack = onTaskComplete(value[11]).Stack;
-  let obj5 = { variant: "body-sm/medium", color: "text-subtle", children: intl3.string(require("module_2963").aveKoG) };
+  let obj5 = { variant: "body-sm/medium", color: "text-subtle", children: intl3.string(require("module_2960").aveKoG) };
   const Text = onTaskComplete(value[13]).Text;
   intl3 = onTaskComplete(value[8]).intl;
   items3 = [onAction(Text, obj5), ];
   let obj6 = { spacing: require("native").space.PX_8, children: items4 };
   const Stack2 = onTaskComplete(value[11]).Stack;
-  const obj7 = { placeholder: intl4.string(require("module_2963").d9Ykjr), maxLength: 6, returnKeyType: "done", value, onChange: tmp4 };
+  const obj7 = { placeholder: intl4.string(require("module_2960").d9Ykjr), maxLength: 6, returnKeyType: "done", value, onChange: tmp4 };
   const TextInput = onTaskComplete(value[14]).TextInput;
   intl4 = onTaskComplete(value[8]).intl;
   items4 = [onAction(TextInput, obj7), ];

@@ -1,13 +1,13 @@
-// Module ID: 12263
-// Function ID: 12264
+// Module ID: 12230
+// Function ID: 12231
 // Name: ThemeContextProvider/RootThemeContextProvider
-// Dependencies: [19, 1083, 21, 5209, 2]
+// Dependencies: [19, 1083, 21, 5229, 2]
 // Exports: DisableCustomTheme, RootThemeContextProvider
 
-// Module 12263 (ThemeContextProvider/RootThemeContextProvider)
+// Module 12230 (ThemeContextProvider/RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
-import native from "native" /* 5209 */;
+import native from "native" /* 5229 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -69,7 +69,7 @@ export function RootThemeContextProvider(theme) {
 }
 export function DisableCustomTheme(children) {
   let themeContext;
-  let obj = themeContext(5209);
+  let obj = themeContext(5229);
   themeContext = obj.useThemeContext();
   const items = [themeContext];
   const memo = react.useMemo(() => {
@@ -79,5 +79,5 @@ export function DisableCustomTheme(children) {
     const merged = Object.assign(themeContext);
     return createThemedContext(obj);
   }, items);
-  return jsx(themeContext(5209).ThemeContext.Provider, { value: memo, children: children.children });
+  return jsx(themeContext(5229).ThemeContext.Provider, { value: memo, children: children.children });
 }

@@ -191,12 +191,12 @@ const items = [
   },
   {
     key: "float",
-    value: function float(NumberResult) {
+    value: function float(scrollLength) {
       const obj = assert;
-      obj.assertFloat32(NumberResult);
+      obj.assertFloat32(scrollLength);
       const uint8Array = new Uint8Array(4);
       const dataView = new DataView(uint8Array.buffer);
-      dataView.setFloat32(0, NumberResult, true);
+      dataView.setFloat32(0, scrollLength, true);
       return this.raw(uint8Array);
     }
   },

@@ -1,13 +1,13 @@
-// Module ID: 19050
-// Function ID: 19051
+// Module ID: 19039
+// Function ID: 19040
 // Name: SearchResultLinkPreviewMarkup
-// Dependencies: [6171, 6172, 19051, 8590, 2]
+// Dependencies: [6191, 6192, 19040, 8536, 2]
 
-// Module 19050 (SearchResultLinkPreviewMarkup)
-import MarkupRulesDefault from "MarkupRules" /* 6172 */;
-import combineMarkupRules from "combineMarkupRules" /* 6171 */;
-import MarkupSearchResultLinkPreviewReactRules from "MarkupSearchResultLinkPreviewReactRules" /* 19051 */;
-import MarkupParser from "MarkupParser" /* 8590 */;
+// Module 19039 (SearchResultLinkPreviewMarkup)
+import MarkupRulesDefault from "MarkupRules" /* 6192 */;
+import combineMarkupRules from "combineMarkupRules" /* 6191 */;
+import MarkupSearchResultLinkPreviewReactRules from "MarkupSearchResultLinkPreviewReactRules" /* 19040 */;
+import MarkupParser from "MarkupParser" /* 8536 */;
 import size from "module_2" /* 2 */;
 
 const items = [MarkupRulesDefault.NATIVE_SEARCH_RESULT_LINK_RULES, ];

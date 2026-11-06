@@ -1,56 +1,63 @@
 // Module ID: 13338
 // Function ID: 13339
-// Dependencies: [42, 41, 93, 95, 98, 158]
+// Dependencies: []
+// Exports: getClientIPAddress
 
 // Module 13338
-import _createClass from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import map from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
+const items = ["X-Client-IP", "X-Forwarded-For", "Fly-Client-IP", "CF-Connecting-IP", "Fastly-Client-Ip", "True-Client-Ip", "X-Real-IP", "X-Cluster-Client-IP", "X-Forwarded", "Forwarded-For", "Forwarded", "X-Vercel-Forwarded-For"];
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class SentryError {
-  constructor(message) {
-    let constructResult;
-    let str = arg1;
-    if (arg1 === undefined) {
-      str = "warn";
+export function getClientIPAddress(arg0) {
+  let closure_0 = arg0;
+  let mapped = items.map((item) => {
+    let mapped;
+    function parseForwardedHeader(str) {
+      if (str) {
+        const parts = str.split(";");
+        const iter = parts[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let arr = nextResult;
+          if (nextResult.startsWith("for=")) {
+            let substr = arr.slice(4);
+            iter.return();
+            return substr;
+          }
+        }
+        return null;
+      } else {
+        return null;
+      }
     }
-    const self = this;
-    _classCallCheck(this, SentryError);
-    const items = [message];
-    const obj = _getPrototypeOf(SentryError);
-    const tmp2 = _getPrototypeOf;
-    const tmp3 = map;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    let str = obj;
+    if (Array.isArray(closure_0[item])) {
+      str = obj.join(";");
+    }
+    if ("Forwarded" === item) {
+      mapped = parseForwardedHeader(str);
     } else {
-      constructResult = obj.apply(self, items);
+      mapped = str;
+      if (mapped) {
+        let parts = str.split(",");
+        mapped = parts.map((item) => item.trim());
+      }
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.message = message;
-    tmp3Result.logLevel = str;
-    return tmp3Result;
-  }
+    return mapped;
+  });
+  const reduced = mapped.reduce((arr, item) => {
+    let combined = arr;
+    if (item) {
+      combined = arr.concat(item);
+    }
+    return combined;
+  }, []);
+  const tmp = reduced.find((item) => {
+    let isMatch = null !== item;
+    if (isMatch) {
+      const obj = /(?:^(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}$)|(?:^(?:(?:[a-fA-F\d]{1,4}:){7}(?:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){6}(?:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|:[a-fA-F\d]{1,4}|:)|(?:[a-fA-F\d]{1,4}:){5}(?::(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,2}|:)|(?:[a-fA-F\d]{1,4}:){4}(?:(?::[a-fA-F\d]{1,4}){0,1}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,3}|:)|(?:[a-fA-F\d]{1,4}:){3}(?:(?::[a-fA-F\d]{1,4}){0,2}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,4}|:)|(?:[a-fA-F\d]{1,4}:){2}(?:(?::[a-fA-F\d]{1,4}){0,3}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,5}|:)|(?:[a-fA-F\d]{1,4}:){1}(?:(?::[a-fA-F\d]{1,4}){0,4}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,6}|:)|(?::(?:(?::[a-fA-F\d]{1,4}){0,5}:(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)(?:\\.(?:25[0-5]|2[0-4]\d|1\d\d|[1-9]\d|\d)){3}|(?::[a-fA-F\d]{1,4}){1,7}|:)))(?:%[0-9a-zA-Z]{1,})?$)/;
+      isMatch = obj.test(item);
+    }
+    return isMatch;
+  }) || null;
+  return tmp;
 }
-_inherits(SentryError, _wrapNativeSuper(Error));
-const SentryError_export = _createClass(SentryError);
-
-export { SentryError_export as SentryError };
+export const ipHeaderNames = items;

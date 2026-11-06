@@ -1,9 +1,9 @@
-// Module ID: 11089
-// Function ID: 11090
+// Module ID: 11042
+// Function ID: 11043
 // Name: ConjurePreviewPauseStore
 // Dependencies: [504, 572, 2]
 
-// Module 11089 (ConjurePreviewPauseStore)
+// Module 11042 (ConjurePreviewPauseStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

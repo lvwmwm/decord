@@ -1,35 +1,35 @@
-// Module ID: 6989
-// Function ID: 6990
+// Module ID: 6931
+// Function ID: 6932
 // Name: ChannelRTCParticipants
-// Dependencies: [4991, 6984, 6196, 6895, 6852, 502, 6707, 4992, 2135, 6894, 1385, 6988, 5815, 5817, 1072, 6985, 5905, 6900, 5070, 6990, 12, 5794, 5795, 5899, 6179, 6991, 6855, 2]
+// Dependencies: [5018, 6926, 6216, 6837, 6794, 502, 6649, 5019, 2130, 6836, 1385, 6930, 5833, 5835, 1072, 6927, 5924, 6842, 5097, 6932, 12, 5812, 5813, 5918, 6199, 6933, 6797, 2]
 // Exports: activityParticipantIdToApplicationId, areParticipantsEqual, getEmbeddedActivityParticipantId, getFrameParticipantId
 
-// Module 6989 (ChannelRTCParticipants)
+// Module 6931 (ChannelRTCParticipants)
 import _mod12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1072 */;
-import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 5794 */;
-import ContentClassificationReference from "ContentClassificationReference" /* 5795 */;
-import ActivityTypes from "ActivityTypes" /* 5899 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6179 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6855 */;
-import getParticipantUserKeyDefault from "getParticipantUserKey" /* 6900 */;
-import useIsSpeaking from "useIsSpeaking" /* 6990 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4991 */;
-import FramesStore from "FramesStore" /* 6984 */;
-import SoundboardStore from "SoundboardStore" /* 6196 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6895 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6852 */;
+import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 5812 */;
+import ContentClassificationReference from "ContentClassificationReference" /* 5813 */;
+import ActivityTypes from "ActivityTypes" /* 5918 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 6199 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6797 */;
+import getParticipantUserKeyDefault from "getParticipantUserKey" /* 6842 */;
+import useIsSpeaking from "useIsSpeaking" /* 6932 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5018 */;
+import FramesStore from "FramesStore" /* 6926 */;
+import SoundboardStore from "SoundboardStore" /* 6216 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6837 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6794 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6707 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import SpeakingStore from "SpeakingStore" /* 6894 */;
+import CallStore from "CallStore" /* 6649 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import SpeakingStore from "SpeakingStore" /* 6836 */;
 import UserStore from "UserStore" /* 1385 */;
-import VideoStreamStore from "VideoStreamStore" /* 6988 */;
-import VoiceStateStore from "VoiceStateStore" /* 5815 */;
-import CallConstants from "CallConstants" /* 5817 */;
-import FramesConstants from "FramesConstants" /* 6985 */;
-import Constants from "Constants" /* 5905 */;
+import VideoStreamStore from "VideoStreamStore" /* 6930 */;
+import VoiceStateStore from "VoiceStateStore" /* 5833 */;
+import CallConstants from "CallConstants" /* 5835 */;
+import FramesConstants from "FramesConstants" /* 6927 */;
+import Constants from "Constants" /* 5924 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -95,7 +95,7 @@ class ChannelRTCParticipants {
     new Set();
     obj.stageSpeakerIds = new Set();
     new Set();
-    const secondaryIndexMap = new obj(5070).SecondaryIndexMap((type) => {
+    const secondaryIndexMap = new obj(5097).SecondaryIndexMap((type) => {
       const items = [];
       const tmp2 = type.type === constants.USER && type.speaking;
       if (tmp2) {
@@ -441,7 +441,7 @@ class ChannelRTCParticipants {
         }
         obj4 = NicknameUtilsDefault;
         poppedOutParticipants = self.poppedOutParticipants;
-        tmp8Result = tmp8(6991);
+        tmp8Result = tmp8(6933);
         items.push(obj);
       }
       let streamForUser = ApplicationStreamingStore.getStreamForUser(userId, guildId);

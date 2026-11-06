@@ -1,25 +1,25 @@
-// Module ID: 9639
-// Function ID: 9640
+// Module ID: 9588
+// Function ID: 9589
 // Name: SocialLayerStorefrontEligibilityHooks
-// Dependencies: [19, 9640, 2142, 7917, 5014, 5898, 7548, 504, 9058, 9641, 2]
+// Dependencies: [19, 9589, 2137, 7871, 5041, 5917, 7493, 504, 9004, 9590, 2]
 // Exports: useAreUsersInSocialLayerStorefrontMutualGuildsApplicationIds, useAreUsersPlayingStorefrontEnabledGames, useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds, useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds, useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds, useIsCurrentUserPlayingSocialLayerStorefrontGames, useUsersPlayedSocialLayerStorefrontGamesInOutboxApplicationIds, useUsersPlayingStorefrontEnabledGamesApplicationIds
 
-// Module 9639 (SocialLayerStorefrontEligibilityHooks)
+// Module 9588 (SocialLayerStorefrontEligibilityHooks)
 import get_initialized from "get initialized" /* 504 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 9058 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 9004 */;
 import react from "react" /* 19 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9640 */;
-import RunningGameStore from "RunningGameStore" /* 2142 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import PresenceStore from "PresenceStore" /* 5898 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7548 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9589 */;
+import RunningGameStore from "RunningGameStore" /* 2137 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PresenceStore from "PresenceStore" /* 5917 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 7493 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, gamesSeen;
 
-const f95851 = () => {
+const f95960 = () => {
   const items = [];
   const runningGames = RunningGameStore.getRunningGames();
   const iter = runningGames[Symbol.iterator]();
@@ -205,12 +205,12 @@ export function useCurrentUserPlayedSocialLayerStorefrontGamesApplicationIds() {
 export function useCurrentUserPlayingSocialLayerStorefrontGamesApplicationIds() {
   const items = [RunningGameStore, SocialLayerStorefrontStore];
   const obj = get_initialized;
-  return obj.useStateFromStoresArray(items, f95851, []);
+  return obj.useStateFromStoresArray(items, f95960, []);
 }
 export function useIsCurrentUserPlayingSocialLayerStorefrontGames() {
   let items = [RunningGameStore, SocialLayerStorefrontStore];
   const obj = get_initialized;
-  return obj.useStateFromStoresArray(items, f95851, []).length > 0;
+  return obj.useStateFromStoresArray(items, f95960, []).length > 0;
 }
 export function useIsCurrentUserInSocialLayerStorefrontGuildsApplicationIds() {
   let guildIds;

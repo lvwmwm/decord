@@ -1,8 +1,8 @@
-// Module ID: 13969
-// Function ID: 13970
+// Module ID: 13945
+// Function ID: 13946
 // Dependencies: [2]
 
-// Module 13969
+// Module 13945
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiAngryExample-1x.png.js");

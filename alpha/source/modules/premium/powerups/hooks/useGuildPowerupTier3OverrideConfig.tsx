@@ -1,13 +1,13 @@
-// Module ID: 14361
-// Function ID: 14362
+// Module ID: 14338
+// Function ID: 14339
 // Name: useGuildPowerupTier3OverrideConfig
-// Dependencies: [5014, 1072, 504, 1113, 2699, 2]
+// Dependencies: [5041, 1072, 504, 1113, 2696, 2]
 // Exports: default
 
-// Module 14361 (useGuildPowerupTier3OverrideConfig)
+// Module 14338 (useGuildPowerupTier3OverrideConfig)
 import Constants from "Constants" /* 1072 */;
-import _modDef2699 from "module_2699" /* 2699 */;
-import GuildStore from "GuildStore" /* 5014 */;
+import _modDef2696 from "module_2696" /* 2696 */;
+import GuildStore from "GuildStore" /* 5041 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ export default function useGuildPowerupTier3OverrideConfig(arg0) {
     }
     return true === hasItem;
   })) {
-    const obj2 = { shouldShow: true, text: intl.string(_modDef2699.l9n4QZ) };
+    const obj2 = { shouldShow: true, text: intl.string(_modDef2696.l9n4QZ) };
     intl = tmp(1113).intl;
     obj3 = obj2;
   } else {

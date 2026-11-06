@@ -1,13 +1,13 @@
-// Module ID: 8512
-// Function ID: 8513
+// Module ID: 8458
+// Function ID: 8459
 // Name: IarSettingsUpsellsConfigScFiltersSexualMedia
-// Dependencies: [7612, 1196, 1113, 8498, 2]
+// Dependencies: [7557, 1196, 1113, 8444, 2]
 
-// Module 8512 (IarSettingsUpsellsConfigScFiltersSexualMedia)
+// Module 8458 (IarSettingsUpsellsConfigScFiltersSexualMedia)
 import intl2 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7612 */;
-import MenuTypes from "MenuTypes" /* 8498 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7557 */;
+import MenuTypes from "MenuTypes" /* 8444 */;
 import size from "module_2" /* 2 */;
 
 let items;

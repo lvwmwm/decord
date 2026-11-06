@@ -1,19 +1,19 @@
-// Module ID: 20409
-// Function ID: 20410
+// Module ID: 20417
+// Function ID: 20418
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1385, 1072, 21, 5143, 1266, 20402, 504, 8310, 20396, 2121, 6867, 20405, 8119, 1113, 2963, 3223, 8100, 2190, 16132, 6878, 5763, 8312, 2]
+// Dependencies: [19, 17, 1385, 1072, 21, 5170, 1266, 20410, 504, 8256, 20404, 2116, 6809, 20413, 8065, 1113, 2960, 3252, 8046, 2185, 16127, 6820, 5781, 8258, 2]
 // Exports: default
 
-// Module 20409 (AgeVerificationScreen)
+// Module 20417 (AgeVerificationScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
-import Server from "Server" /* 2121 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6867 */;
-import types from "types" /* 20396 */;
+import Server from "Server" /* 2116 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6809 */;
+import types from "types" /* 20404 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const Pressable = react_native.Pressable;

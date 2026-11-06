@@ -1,17 +1,17 @@
-// Module ID: 16528
-// Function ID: 16529
+// Module ID: 16525
+// Function ID: 16526
 // Name: AccessibilityActionCreators
-// Dependencies: [5144, 1072, 4971, 1082, 572, 1252, 6070, 2]
+// Dependencies: [5171, 1072, 4998, 1082, 572, 1252, 6090, 2]
 // Exports: disableKeyboardMode, enableKeyboardMode, forcedColorsModalSeen, keyboardNavigationExplainerModalSeen, resetToDefault, setAlwaysShowLinkDecorations, setChatBarSettings, setContrast, setContrastMode, setDisplayNameStylesEnabled, setEnableCustomCursor, setFontSize, setHDRDynamicRange, setLowContrastMode, setMessageGroupSpacing, setMinToastDuration, setOfficialMessageStyle, setPrefersReducedMotion, setRoleStyle, setSaturation, setSwitchIconsEnabled, setSyncForcedColors, setYouBarAnimations, setZoom, systemColorPreferencesChanged, systemPrefersContrastChanged, systemPrefersCrossfadesChanged, systemPrefersReducedMotionChanged, toggleColorblindMode, toggleDesaturateUserColors, toggleSubmitButton, toggleSyncProfileThemeWithUserTheme
 
-// Module 16528 (AccessibilityActionCreators)
+// Module 16525 (AccessibilityActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import StickersConstants from "StickersConstants" /* 4971 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6070 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import StickersConstants from "StickersConstants" /* 4998 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 6090 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

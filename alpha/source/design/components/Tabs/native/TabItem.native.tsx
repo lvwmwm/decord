@@ -1,18 +1,18 @@
-// Module ID: 12380
-// Function ID: 12381
+// Module ID: 12345
+// Function ID: 12346
 // Name: TabItem
-// Dependencies: [19, 17, 21, 1652, 5143, 575, 5773, 5763, 1705, 12381, 1377, 1113, 9644, 2]
+// Dependencies: [19, 17, 21, 1652, 5170, 575, 5791, 5781, 1705, 12346, 1377, 1113, 9593, 2]
 // Exports: TabItem
 
-// Module 12380 (TabItem)
+// Module 12345 (TabItem)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import _mod1705 from "module_1705" /* 1705 */;
-import spring_spring from "spring/spring" /* 5773 */;
+import spring_spring from "spring/spring" /* 5791 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const module_1652 = _mod1652;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5763);
+const Text_Text = tmp2(5781);
 function useAnimatedTextStyle(arg0) {
   let activeIndex;
   let index;
@@ -218,14 +218,14 @@ export function TabItem(arg0) {
   items2[1] = { flexGrow: num };
   const merged1 = Object.assign(merged);
   formatToPlainStringResult = undefined;
-  tmp3Result = index(12381);
+  tmp3Result = index(12346);
   const tmp3Result2 = index(1377);
   if (tmp3Result2.isAndroid()) {
     const intl = tmp3(1113).intl;
     const obj3 = { position: index + 1, tabCount: itemCount };
     formatToPlainStringResult = intl.formatToPlainString(tmp3(1113).t["4EsQA1"], obj3);
   }
-  items3 = [closure_5(index(5763).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
+  items3 = [closure_5(index(5781).Text, { animated: true, variant: "body-sm/semibold", style: tmp9, lineClamp: 1, children: label }), , ];
   let tmp14Result = null;
   if (null != count) {
     const obj4 = { count, index, activeIndex, pressed, variant };
@@ -234,7 +234,7 @@ export function TabItem(arg0) {
   items3[1] = tmp14Result;
   let tmp14Result2 = null;
   if (null != indicatorDot) {
-    const obj5 = { style: tmp2.indicatorDot, children: closure_5(index(9644).IndicatorDot, {}) };
+    const obj5 = { style: tmp2.indicatorDot, children: closure_5(index(9593).IndicatorDot, {}) };
     tmp14Result2 = tmp14(closure_4, obj5);
   }
   items3[2] = tmp14Result2;

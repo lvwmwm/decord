@@ -1,12 +1,12 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12336
+// Function ID: 12337
 // Name: ConjureLinkedAppsTab
-// Dependencies: [19, 21, 6102, 1113, 3995, 5384, 12372, 6165, 575, 7204, 7119, 12367, 5763, 2]
+// Dependencies: [19, 21, 6122, 1113, 4024, 5404, 12337, 6185, 575, 7151, 7063, 12332, 5781, 2]
 // Exports: default
 
-// Module 12371 (ConjureLinkedAppsTab)
+// Module 12336 (ConjureLinkedAppsTab)
 import nativeDefault from "native" /* 575 */;
-import _modDef3995 from "module_3995" /* 3995 */;
+import _modDef4024 from "module_4024" /* 4024 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -41,7 +41,7 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   let obj = { spacing: nativeDefault.space.PX_8, children: items };
   const Stack = require("Stack/Stack").Stack;
   let obj2 = {
-    description: intl.string(_modDef3995["6c2rjv"]),
+    description: intl.string(_modDef4024["6c2rjv"]),
     hasIcons: false,
     children: callers.map((build) => {
       let TrailingText;
@@ -110,8 +110,8 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   let tmp5Result = null;
   const tmp5 = closure_3;
   if (failed) {
-    let obj3 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: intl2.string(_modDef3995.dIEOrl) };
-    const Text = tmp2(5763).Text;
+    let obj3 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", accessibilityLiveRegion: "assertive", children: intl2.string(_modDef4024.dIEOrl) };
+    const Text = tmp2(5781).Text;
     intl2 = tmp2(1113).intl;
     tmp5Result = tmp5(Text, obj3);
   }

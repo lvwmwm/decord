@@ -1,11 +1,10 @@
 // Module ID: 10577
 // Function ID: 10578
-// Dependencies: [41, 42, 93, 95, 98, 10573, 10514, 10518]
+// Dependencies: [41, 42, 93, 95, 98, 10578, 10470]
 
 // Module 10577
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10514 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10518 */;
-import _mod10573 from "module_10573" /* 10573 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10578 from "module_10578" /* 10578 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FRTimeUnitWithinFormatParser {
+class ZHHantDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, FRTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(FRTimeUnitWithinFormatParser);
+    _classCallCheck(this, ZHHantDateParser);
+    const obj = _getPrototypeOf(ZHHantDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,11 +43,18 @@ class FRTimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FRTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ZHHantDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    const regExp = new RegExp("(?:dans|en|pour|pendant|de)\\s*(" + _mod10573.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+    const keys = Object.keys(_mod10578.NUMBER);
+    const text = `(\\d{2,4}|[${obj.join("")}`;
+    const keys1 = Object.keys(_mod10578.NUMBER);
+    const text1 = `${`(\\d{2,4}|[${obj.join("")}`}]{4}|[${obj2.join("")}`;
+    const keys2 = Object.keys(_mod10578.NUMBER);
+    const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
+    const keys3 = Object.keys(_mod10578.NUMBER);
+    const regExp = new RegExp(text2 + "]{1,2})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,2})?(?:\\s*)(?:\u65E5|\u865F)?");
     return regExp;
   }
 };
@@ -56,12 +62,47 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10573.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const parsed = parseInt(index[2]);
+      let zhStringToNumberResult = parsed;
+      if (isNaN(parsed)) {
+        zhStringToNumberResult = _mod10578.zhStringToNumber(index[2]);
+      }
+      const start = parsingResult.start;
+      start.assign("month", zhStringToNumberResult);
+      if (index[3]) {
+        const _parseInt = parseInt;
+        const parsed1 = parseInt(index[3]);
+        const _isNaN = isNaN;
+        let zhStringToNumberResult1 = parsed1;
+        if (isNaN(parsed1)) {
+          zhStringToNumberResult1 = _mod10578.zhStringToNumber(index[3]);
+        }
+        const start3 = parsingResult.start;
+        start3.assign("day", zhStringToNumberResult1);
+      } else {
+        const start2 = parsingResult.start;
+        const refDate = createParsingResult.refDate;
+        start2.imply("day", refDate.getDate());
+      }
+      if (index[1]) {
+        const _parseInt2 = parseInt;
+        let parsed2 = parseInt(index[1]);
+        const _isNaN2 = isNaN;
+        if (isNaN(parsed2)) {
+          parsed2 = _mod10578.zhStringToYear(index[1]);
+        }
+        const start5 = parsingResult.start;
+        start5.assign("year", parsed2);
+      } else {
+        const start4 = parsingResult.start;
+        const refDate2 = createParsingResult.refDate;
+        start4.imply("year", refDate2.getFullYear());
+      }
+      return parsingResult;
     }
   }
 ];
 
-export default _createClass(FRTimeUnitWithinFormatParser, items);
+export default _createClass(ZHHantDateParser, items);

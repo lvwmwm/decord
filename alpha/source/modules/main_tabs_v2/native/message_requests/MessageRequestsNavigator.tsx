@@ -1,37 +1,31 @@
-// Module ID: 19268
-// Function ID: 19269
+// Module ID: 19260
+// Function ID: 19261
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 17, 21, 10041, 5143, 575, 7309, 7799, 1627, 9967, 1113, 10330, 19269, 19288, 19289, 2]
+// Dependencies: [19, 21, 9992, 5170, 575, 7256, 7753, 19155, 9918, 1113, 10282, 19261, 19280, 19281, 2]
 // Exports: default
 
-// Module 19268 (MessageRequestsNavigator)
-import react_native from "react-native" /* 17 */;
+// Module 19260 (MessageRequestsNavigator)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import HeaderShared from "HeaderShared" /* 9967 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10330 */;
+import HeaderShared from "HeaderShared" /* 9918 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10282 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 19155 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 10041 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import NativeStackView from "NativeStackView" /* 9992 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
+let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj2;
-let obj3;
-const View = react_native.View;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let closure_7 = NativeStackView.createNativeStackNavigator();
-let createStyles = createStyles_mod;
-let obj = { container: obj2, header: obj3 };
-obj2 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-createStyles = createStyles.createStyles;
-obj3 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
-let closure_8 = createStyles(obj);
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let closure_6 = NativeStackView.createNativeStackNavigator();
+let obj = { header: obj2 };
+obj2 = { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" };
+let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/message_requests/MessageRequestsNavigator.tsx");
 
 export default function MessageRequestsNavigator() {
@@ -43,22 +37,18 @@ export default function MessageRequestsNavigator() {
   let intl2;
   let intl3;
   let items;
-  let items1;
   let obj3;
   let obj5;
   let obj7;
   let obj9;
-  const tmp = closure_8();
-  _require = tmp;
+  _require = closure_7();
   let obj = require("Navigator");
   importDefault = obj.useAccessibilityNativeStackOptions();
   const layoutEffect = react.useLayoutEffect(() => {
-    const obj = closure_0(dependencyMap[7]);
+    const obj = closure_0(dependencyMap[6]);
     return obj.trackAppUIViewed();
   }, []);
-  const rect = useSafeAreaInsetsDefault();
-  let obj2 = { style: items, children: closure_6(Navigator, obj3) };
-  items = [tmp.container, { paddingLeft: rect.left, paddingRight: rect.right }];
+  let obj2 = { children: closure_5(Navigator, obj3) };
   obj3 = {
     screenOptions(navigation) {
       let obj2;
@@ -69,9 +59,9 @@ export default function MessageRequestsNavigator() {
           children = children.children;
           const merged = Object.assign(children, Object.assign({ children: 0 }));
           const obj = { title: children };
-          const GenericHeaderTitle = closure_1_0(closure_1_2[9]).GenericHeaderTitle;
+          const GenericHeaderTitle = closure_1_0(closure_1_2[8]).GenericHeaderTitle;
           const merged1 = Object.assign(merged);
-          return closure_1_5(GenericHeaderTitle, obj);
+          return closure_1_4(GenericHeaderTitle, obj);
         },
         headerTitleAlign: "center",
         headerLeft: obj2.getRenderModalCloseImage(navigation)
@@ -81,43 +71,44 @@ export default function MessageRequestsNavigator() {
       let merged = Object.assign(closure_1);
       return obj;
     },
-    children: items1
+    children: items
   };
   const obj4 = {
     name: "root",
     options: obj5,
     getComponent() {
-      return closure_0(dependencyMap[12]).default;
+      return closure_0(dependencyMap[11]).default;
     }
   };
-  ({ Navigator, Screen } = closure_7);
+  ({ Navigator, Screen } = closure_6);
   obj5 = { title: intl.string(require("intl").t.e7GWjQ) };
+  const tmp2 = AppFrameContainerDefault;
   intl = require("intl").intl;
   let merged = Object.assign(getNavigationModalPresentationDefault());
-  items1 = [closure_5(Screen, obj4), , ];
+  items = [closure_4(Screen, obj4), , ];
   const obj6 = {
     name: "spam",
     options: obj7,
     getComponent() {
-      return closure_0(dependencyMap[13]).default;
+      return closure_0(dependencyMap[12]).default;
     }
   };
-  const Screen2 = closure_7.Screen;
+  const Screen2 = closure_6.Screen;
   obj7 = { title: intl2.string(require("intl").t.ulKXHp) };
   intl2 = require("intl").intl;
   let merged1 = Object.assign(getNavigationModalPresentationDefault());
-  items1[1] = closure_5(Screen2, obj6);
+  items[1] = closure_4(Screen2, obj6);
   const obj8 = {
     name: "preview",
     options: obj9,
     getComponent() {
-      return closure_0(dependencyMap[14]).default;
+      return closure_0(dependencyMap[13]).default;
     }
   };
-  const Screen3 = closure_7.Screen;
+  const Screen3 = closure_6.Screen;
   obj9 = { title: intl3.string(require("intl").t.iilwGH) };
   intl3 = require("intl").intl;
   const merged2 = Object.assign(getNavigationModalPresentationDefault());
-  items1[2] = closure_5(Screen3, obj8);
-  return closure_5(View, obj2);
+  items[2] = closure_4(Screen3, obj8);
+  return closure_4(tmp2, obj2);
 };

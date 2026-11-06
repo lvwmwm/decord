@@ -1,14 +1,14 @@
-// Module ID: 8804
-// Function ID: 8805
+// Module ID: 8750
+// Function ID: 8751
 // Name: ForumLockIcon
-// Dependencies: [19, 21, 575, 5853, 8784, 2]
+// Dependencies: [19, 21, 575, 5871, 8730, 2]
 // Exports: ForumLockIcon
 
-// Module 8804 (ForumLockIcon)
+// Module 8750 (ForumLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 8784 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 8730 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

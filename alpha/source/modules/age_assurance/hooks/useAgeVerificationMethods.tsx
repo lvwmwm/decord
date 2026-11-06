@@ -1,19 +1,19 @@
-// Module ID: 8310
-// Function ID: 8311
+// Module ID: 8256
+// Function ID: 8257
 // Name: useAgeVerificationMethods
-// Dependencies: [5, 32, 19, 6865, 6866, 504, 8164, 6867, 8149, 6678, 6683, 8311, 8113, 1113, 2]
+// Dependencies: [5, 32, 19, 6807, 6808, 504, 8110, 6809, 8095, 6619, 6624, 8257, 8059, 1113, 2]
 // Exports: default
 
-// Module 8310 (useAgeVerificationMethods)
+// Module 8256 (useAgeVerificationMethods)
 import intl3 from "intl" /* 1113 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6678 */;
-import MetricEvents from "MetricEvents" /* 6683 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8113 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6619 */;
+import MetricEvents from "MetricEvents" /* 6624 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8059 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 6865 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6866 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 6807 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6808 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, id;
@@ -60,7 +60,7 @@ export default function useAgeVerificationMethods(onGoogleWalletSelect) {
         const tmp6 = require;
         const tmp9 = closure_4;
         if (result) {
-          const tmp6Result = tmp6(8311);
+          const tmp6Result = tmp6(8257);
           result = tmp6Result.isGoogleWalletEnabled("age_verification_methods");
         }
         tmp9(result);

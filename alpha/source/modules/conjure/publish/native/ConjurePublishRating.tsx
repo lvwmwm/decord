@@ -1,24 +1,24 @@
-// Module ID: 12998
-// Function ID: 12999
+// Module ID: 12963
+// Function ID: 12964
 // Name: ConjurePublishRating
-// Dependencies: [32, 19, 17, 5144, 21, 5143, 575, 1652, 5380, 5773, 5774, 10249, 10247, 7124, 12999, 504, 12457, 5763, 5384, 13000, 2123, 13000, 1113, 3995, 2]
+// Dependencies: [32, 19, 17, 5171, 21, 5170, 575, 1652, 5400, 5791, 5792, 10201, 10199, 7068, 12964, 504, 12422, 5781, 5404, 12965, 2118, 12965, 1113, 4024, 2]
 // Exports: default
 
-// Module 12998 (ConjurePublishRating)
+// Module 12963 (ConjurePublishRating)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import spring_spring from "spring/spring" /* 5773 */;
-import springPresets from "springPresets" /* 5774 */;
-import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 13000 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import spring_spring from "spring/spring" /* 5791 */;
+import springPresets from "springPresets" /* 5792 */;
+import ConjureRatingFeedbackSheet from "ConjureRatingFeedbackSheet" /* 12965 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -86,13 +86,13 @@ function Star(rating) {
   ConjurePublishRatingTsx1.__initData = tmp7;
   const animatedStyle = obj2.useAnimatedStyle(ConjurePublishRatingTsx1);
   if (tmp2) {
-    StarOutlineIcon = tmp3(10249).StarIcon;
+    StarOutlineIcon = tmp3(10201).StarIcon;
   } else {
-    StarOutlineIcon = tmp3(10247).StarOutlineIcon;
+    StarOutlineIcon = tmp3(10199).StarOutlineIcon;
   }
   const obj3 = { style: tmp.star, accessibilityRole: "button", accessibilityLabel: tmp3Result.conjurePublishRatingOptionLabel(rating), disabled: null != picked, hitSlop: reducedMotion(575).space.PX_8, onPress, children: closure_7(View, obj4) };
-  const PressableOpacity = tmp3(7124).PressableOpacity;
-  tmp3Result = rating(12999);
+  const PressableOpacity = tmp3(7068).PressableOpacity;
+  tmp3Result = rating(12964);
   obj4 = { style: animatedStyle, children: closure_7(StarOutlineIcon, obj5) };
   View = reducedMotion(1652).View;
   const colors = reducedMotion(575).colors;
@@ -191,7 +191,7 @@ export default function ConjurePublishRating(arg0) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             ActionSheetActionCreatorsDefault;
             const obj = { rating: tmp2 };
-            const tmp7 = asyncRequire(13000, dependencyMap.paths);
+            const tmp7 = asyncRequire(12965, dependencyMap.paths);
             openLazy(tmp7, ConjureRatingFeedbackSheet.CONJURE_RATING_FEEDBACK_SHEET_KEY, obj);
           }
         }

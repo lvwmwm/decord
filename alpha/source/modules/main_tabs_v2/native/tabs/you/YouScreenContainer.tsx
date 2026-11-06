@@ -1,19 +1,20 @@
-// Module ID: 19166
-// Function ID: 19167
+// Module ID: 19156
+// Function ID: 19157
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 11711, 21, 5143, 575, 1627, 18356, 1493, 5327, 19167, 1357, 2]
+// Dependencies: [19, 17, 11677, 21, 5170, 575, 1627, 18348, 1493, 5347, 5127, 19155, 19157, 1357, 2]
 
-// Module 19166 (YouScreenContainer)
+// Module 19156 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import useChatLayoutDefault from "useChatLayout" /* 5327 */;
-import MainTabsConstants from "MainTabsConstants" /* 11711 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18356 */;
+import DeviceUtils from "DeviceUtils" /* 5127 */;
+import MainTabsConstants from "MainTabsConstants" /* 11677 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18348 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 19155 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -44,34 +45,40 @@ const memoResult = react.memo(function YouScreenContainer(route) {
     }
   }
   const width = tmp2(1493)().width;
-  if (useChatLayoutDefault().isChatBesideChannelList) {
+  const isChatBesideChannelList = tmp2(5347)().isChatBesideChannelList;
+  const tmp4Result = DeviceUtils;
+  if (tmp4Result.isDuo()) {
+    const obj2 = { children: null };
+    const tmp2Result = AppFrameContainerDefault;
+    tmp6Result = tmp6(tmp2Result, obj2);
+  } else if (isChatBesideChannelList) {
     const items = [tmp.container, ];
     let tmp9;
-    const tmp4Result = utils_PlatformUtils;
-    if (tmp4Result.isAndroid()) {
-      const obj2 = { paddingTop: top };
+    const tmp4Result3 = utils_PlatformUtils;
+    if (tmp4Result3.isAndroid()) {
+      const obj4 = { paddingTop: top };
       const merged = Object.assign(tmp.androidContainer);
-      tmp9 = obj2;
+      tmp9 = obj4;
     }
-    const obj3 = { style: items, children: tmp6Result };
+    const obj5 = { style: items, children: tmp6Result2 };
     items[1] = tmp9;
-    const tmp4Result2 = utils_PlatformUtils;
-    if (tmp4Result2.isAndroid()) {
-      const obj4 = { style: items1, children: null };
+    const tmp4Result4 = utils_PlatformUtils;
+    if (tmp4Result4.isAndroid()) {
+      const obj6 = { style: items1, children: null };
       items1 = [tmp.wrapper, ];
-      const obj5 = { maxWidth: 0.6 * width };
-      items1[1] = obj5;
-      tmp6Result = tmp6(tmp8, obj4);
+      const obj7 = { maxWidth: 0.6 * width };
+      items1[1] = obj7;
+      tmp6Result2 = tmp6(tmp8, obj6);
     } else {
-      const obj7 = { initialTab };
-      tmp6Result = tmp6(tmp2(19167), obj7);
+      const obj9 = { initialTab };
+      tmp6Result2 = tmp6(tmp2(19157), obj9);
     }
-    tmp6Result2 = tmp6(tmp8, obj3);
+    tmp6Result = tmp6(tmp8, obj5);
   } else {
-    const obj8 = { initialTab };
-    tmp6Result2 = tmp6(tmp2(19167), obj8);
+    const obj10 = { initialTab };
+    tmp6Result = tmp6(tmp2(19157), obj10);
   }
-  return tmp6Result2;
+  return tmp6Result;
 });
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreenContainer.tsx");
 

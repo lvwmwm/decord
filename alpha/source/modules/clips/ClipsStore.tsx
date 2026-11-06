@@ -1,23 +1,23 @@
-// Module ID: 2141
-// Function ID: 2142
+// Module ID: 2136
+// Function ID: 2137
 // Name: ClipsStore
-// Dependencies: [5, 2142, 502, 8359, 1072, 6001, 16137, 4954, 16138, 1398, 16139, 16141, 16142, 504, 572, 2]
+// Dependencies: [5, 2137, 502, 8305, 1072, 6020, 16133, 4981, 16134, 1403, 16135, 16137, 16138, 504, 572, 2]
 
-// Module 2141 (ClipsStore)
+// Module 2136 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FlagUtils from "FlagUtils" /* 1398 */;
-import DiscordNativeDefault from "DiscordNative" /* 4954 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16137 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 16139 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16141 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16142 */;
+import FlagUtils from "FlagUtils" /* 1403 */;
+import DiscordNativeDefault from "DiscordNative" /* 4981 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 16133 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 16135 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 16137 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 16138 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2142 */;
+import RunningGameStore from "RunningGameStore" /* 2137 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8359 */;
+import ClipsConstants from "ClipsConstants" /* 8305 */;
 import Constants from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6001 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 6020 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2;
@@ -306,8 +306,8 @@ const map = new Map();
 map1 = new Map();
 const map2 = new Map();
 let closure_35 = [];
-obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flexDirection", showPovClipsInGallery: true };
-let obj2 = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationForDecoupled: null, hardwareClassificationVersion: 0, clipsDefaultSettingsState: ClipsDefaultSettingsUtils.INITIAL_CLIPS_DEFAULT_SETTINGS_STATE, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
+obj = { clipsEnabled: false, storageLocation: "default", clipsQuality: { resolution: ApplicationStreamResolutions.RESOLUTION_1080, frameRate: ApplicationStreamFPS.FPS_60, bitratePercent: DEFAULT_CLIPS_BITRATE_PERCENT }, clipsLength: ClipsLengthSettings.SECONDS_30, remindersEnabled: true, decoupledClipsEnabled: false, maxAutoClips: 20, clipSignals: { enableDistributedSignals: true, enableGameSignals: true }, debugTooltipsEnabled: false, enableAutoclipping: "flexDirection", showPovClipsInGallery: "nested-text" };
+let obj2 = { clipsSettings: obj, hardwareClassification: null, hardwareClassificationVersion: 0, clipsDefaultSettingsState: ClipsDefaultSettingsUtils.INITIAL_CLIPS_DEFAULT_SETTINGS_STATE, hasAutoEnabledClipsForHardware: false, newClipIds: [], hasClips: false, hasTakenDecoupledClip: false, clipsEducationState: { dismissedAt: null, numberOfGamesLaunchedSinceDismissal: 0, numberOfTimesDismissed: 0 } };
 obj = obj2;
 const DeviceSettingsStore = get_initializedDefault.DeviceSettingsStore;
 class ClipsStoreClass extends DeviceSettingsStore {
@@ -381,9 +381,6 @@ class ClipsStoreClass extends DeviceSettingsStore {
   }
   getHardwareClassification() {
     return obj.hardwareClassification;
-  }
-  getHardwareClassificationForDecoupled() {
-    return obj.hardwareClassificationForDecoupled;
   }
   getHardwareClassificationVersion() {
     return obj.hardwareClassificationVersion;
@@ -510,16 +507,7 @@ let items = [
     const merged1 = Object.assign(clipsSettings.clipsSettings);
     return obj;
   },
-  (hardwareClassificationForDecoupled) => {
-    let prop;
-    obj = { hardwareClassificationForDecoupled: prop };
-    const merged = Object.assign(hardwareClassificationForDecoupled);
-    prop = hardwareClassificationForDecoupled.hardwareClassificationForDecoupled;
-    if (prop == null) {
-      prop = null;
-    }
-    return obj;
-  },
+  (arg0) => arg0,
   (arg0) => arg0,
   (newClipIds) => {
     obj = { newClipIds, newClipIDs: undefined };
@@ -663,6 +651,21 @@ let items = [
     INITIAL_CLIPS_DEFAULT_SETTINGS_STATE = clipsDefaultSettingsState.clipsDefaultSettingsState;
     if (INITIAL_CLIPS_DEFAULT_SETTINGS_STATE == null) {
       INITIAL_CLIPS_DEFAULT_SETTINGS_STATE = ClipsDefaultSettingsUtils.INITIAL_CLIPS_DEFAULT_SETTINGS_STATE;
+    }
+    return obj;
+  },
+  (hardwareClassification) => {
+    let tmp2;
+    hardwareClassification = hardwareClassification.hardwareClassification;
+    obj = { hasAutoEnabledClipsForHardware: tmp2 };
+    const merged = Object.assign(hardwareClassification);
+    tmp2 = hardwareClassification === unpackModuleId.MEETS_AUTO_ENABLE;
+    if (!tmp2) {
+      let tmp3 = hardwareClassification === unpackModuleId.MEETS_MINIMUM;
+      if (tmp3) {
+        tmp3 = hardwareClassification.hasClips || hardwareClassification.hasTakenDecoupledClip;
+      }
+      tmp2 = tmp3;
     }
     return obj;
   }
@@ -860,24 +863,28 @@ let obj3 = {
     let defaultState;
     let obj4;
     ({ classification, decision } = arg0);
-    const hardwareClassification = obj.hardwareClassification;
+    let MEETS_AUTO_ENABLE = obj.hardwareClassification;
     obj.hardwareClassificationVersion = metroRequire;
     obj.hardwareClassification = classification;
-    obj.hardwareClassificationForDecoupled = classification;
-    if (null == decision) {
-      const tmp3 = obj.clipsDefaultSettingsState.clipsEnabledSource === map1.UNSET && classification === unpackModuleId.MEETS_AUTO_ENABLE && hardwareClassification !== unpackModuleId.MEETS_AUTO_ENABLE;
-      if (tmp3) {
-        obj.clipsSettings.clipsEnabled = true;
+    const tmp = obj.clipsDefaultSettingsState.clipsEnabledSource === map1.UNSET && classification === unpackModuleId.MEETS_AUTO_ENABLE && !obj.hasAutoEnabledClipsForHardware;
+    const tmp4 = tmp && !obj.clipsSettings.clipsEnabled;
+    if (tmp) {
+      obj = { clipsEnabled: true, clipsSettings: obj, hasAutoEnabledClipsForHardware: true };
+      const merged = Object.assign(obj.clipsSettings);
+    }
+    if (null != decision) {
+      const obj2 = { defaultState: obj.clipsDefaultSettingsState, clipsEnabled: obj.clipsSettings.clipsEnabled, decision, previousHardwareClassification: MEETS_AUTO_ENABLE };
+      const applyClipsDefaultSettingsDecision = ClipsDefaultSettingsUtils.applyClipsDefaultSettingsDecision;
+      ClipsDefaultSettingsUtils;
+      if (tmp4) {
+        MEETS_AUTO_ENABLE = unpackModuleId.MEETS_AUTO_ENABLE;
       }
-    } else {
-      obj = ClipsDefaultSettingsUtils;
-      const obj2 = { defaultState: obj.clipsDefaultSettingsState, clipsEnabled: obj.clipsSettings.clipsEnabled, decision, previousHardwareClassification: hardwareClassification };
-      const result = obj.applyClipsDefaultSettingsDecision(obj2);
+      const result = applyClipsDefaultSettingsDecision(obj2);
       const obj3 = { clipsSettings: obj4, clipsDefaultSettingsState: defaultState };
       ({ clipsEnabled, defaultState } = result);
-      const merged = Object.assign(obj);
+      const merged1 = Object.assign(obj);
       obj4 = { clipsEnabled };
-      const merged1 = Object.assign(obj.clipsSettings);
+      const merged2 = Object.assign(obj.clipsSettings);
       obj = obj3;
     }
   },

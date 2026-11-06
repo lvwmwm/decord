@@ -1,12 +1,12 @@
-// Module ID: 19163
-// Function ID: 19164
+// Module ID: 19152
+// Function ID: 19153
 // Name: getPendingRelationshipIds
-// Dependencies: [5085, 1072, 2]
+// Dependencies: [5112, 1072, 2]
 // Exports: getPendingRelationshipIds
 
-// Module 19163 (getPendingRelationshipIds)
+// Module 19152 (getPendingRelationshipIds)
 import Constants from "Constants" /* 1072 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import size from "module_2" /* 2 */;
 
 function filterFromPending(arg0) {

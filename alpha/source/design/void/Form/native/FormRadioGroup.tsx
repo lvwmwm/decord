@@ -1,13 +1,13 @@
-// Module ID: 8337
-// Function ID: 8338
+// Module ID: 8282
+// Function ID: 8283
 // Name: FormRadioGroup
-// Dependencies: [19, 17, 21, 7203, 7202, 8331, 2]
+// Dependencies: [19, 17, 21, 7150, 7149, 8276, 2]
 // Exports: default
 
-// Module 8337 (FormRadioGroup)
+// Module 8282 (FormRadioGroup)
 import react_native from "react-native" /* 17 */;
-import RedesignCompat from "RedesignCompat" /* 7203 */;
-import FormSectionDefault from "FormSection" /* 8331 */;
+import RedesignCompat from "RedesignCompat" /* 7150 */;
+import FormSectionDefault from "FormSection" /* 8276 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const TableRadioGroup = tmp2(7202);
+const TableRadioGroup = tmp2(7149);
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const result = size.fileFinishedImporting("design/void/Form/native/FormRadioGroup.tsx");

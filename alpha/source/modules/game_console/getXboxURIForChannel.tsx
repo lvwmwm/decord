@@ -1,17 +1,17 @@
-// Module ID: 12198
-// Function ID: 12199
+// Module ID: 12167
+// Function ID: 12168
 // Name: getXboxURIForChannel
-// Dependencies: [5014, 2135, 5085, 1385, 9893, 1072, 5788, 1113, 1282, 2]
+// Dependencies: [5041, 2130, 5112, 1385, 9843, 1072, 5806, 1113, 1282, 2]
 // Exports: default
 
-// Module 12198 (getXboxURIForChannel)
+// Module 12167 (getXboxURIForChannel)
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import useChannelName from "useChannelName" /* 5788 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import MediaEngineStore from "MediaEngineStore" /* 2135 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import useChannelName from "useChannelName" /* 5806 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import MediaEngineStore from "MediaEngineStore" /* 2130 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 9893 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 9843 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

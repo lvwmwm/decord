@@ -1,10 +1,10 @@
-// Module ID: 15523
-// Function ID: 15524
+// Module ID: 15517
+// Function ID: 15518
 // Name: BillingInformation
-// Dependencies: [5, 1072, 15515, 2176, 1357, 1113, 14690, 2]
+// Dependencies: [5, 1072, 15509, 2171, 1357, 1113, 14667, 2]
 // Exports: useBillingInformationNative
 
-// Module 15523 (BillingInformation)
+// Module 15517 (BillingInformation)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -36,7 +36,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
   if (null == subscriptionPeriodStart) {
     return null;
   } else {
-    const tmp2Result = tmp2(2176);
+    const tmp2Result = tmp2(2171);
     const billingInformationString = tmp2Result.getBillingInformationString(subscription, subscriptionPeriodStart, tmp, flag, fractionalPremiumInfo);
     let formatResult = billingInformationString;
     const tmp2Result2 = tmp2(1357);

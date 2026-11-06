@@ -1,25 +1,25 @@
-// Module ID: 18927
-// Function ID: 18928
+// Module ID: 18916
+// Function ID: 18917
 // Name: Elements
-// Dependencies: [32, 19, 17, 2180, 21, 5143, 575, 5763, 1113, 7124, 1187, 18928, 10097, 17488, 563, 10100, 7555, 2]
+// Dependencies: [32, 19, 17, 2175, 21, 5170, 575, 5781, 1113, 7068, 1187, 18917, 10048, 17477, 563, 10051, 7500, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 18927 (Elements)
+// Module 18916 (Elements)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import Pressables from "Pressables" /* 7124 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 10097 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10100 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17488 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18928 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import Pressables from "Pressables" /* 7068 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 10048 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10051 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17477 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18917 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2180 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2175 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -149,7 +149,7 @@ export function useFormattedSubscriptionPlan(listingId) {
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7555);
+    const tmp3Result = tmp3(7500);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

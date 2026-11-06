@@ -1,25 +1,25 @@
-// Module ID: 6196
-// Function ID: 6197
+// Module ID: 6216
+// Function ID: 6217
 // Name: SoundboardStore
-// Dependencies: [32, 1231, 5901, 1385, 6197, 6198, 1072, 1082, 5917, 2171, 12, 4968, 1252, 6061, 11, 504, 572, 2]
+// Dependencies: [32, 1231, 5920, 1385, 6217, 6218, 1072, 1082, 5936, 2166, 12, 4995, 1252, 6081, 11, 504, 572, 2]
 
-// Module 6196 (SoundboardStore)
+// Module 6216 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import _modDef2171 from "module_2171" /* 2171 */;
-import UserSettings from "UserSettings" /* 4968 */;
-import FrecencyDefault from "Frecency" /* 5917 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6061 */;
+import _modDef2166 from "module_2166" /* 2166 */;
+import UserSettings from "UserSettings" /* 4995 */;
+import FrecencyDefault from "Frecency" /* 5936 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6081 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5901 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
 import UserStore from "UserStore" /* 1385 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6197 */;
-import SoundboardConstants from "SoundboardConstants" /* 6198 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 6217 */;
+import SoundboardConstants from "SoundboardConstants" /* 6218 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -108,7 +108,7 @@ let obj2 = {
     return 100;
   },
   computeWeight(arg0) {
-    const obj = _modDef2171();
+    const obj = _modDef2166();
     if (arg0 > obj.diff(closure_21, "days")) {
       return 0;
     } else {
@@ -490,7 +490,7 @@ const obj3 = {
     const guildId = topSoundsMetadata.guildId;
     const obj = { soundIds: topSoundsMetadata.map((soundId) => soundId.soundId), topSoundsTTL: addResult.valueOf() };
     set = map1.set;
-    const obj2 = _modDef2171();
+    const obj2 = _modDef2166();
     addResult = obj2.add(1, "days");
     const result = set(guildId, obj);
   }

@@ -1,10 +1,10 @@
-// Module ID: 19425
-// Function ID: 19426
+// Module ID: 19417
+// Function ID: 19418
 // Name: useScreenNameSharedValue
-// Dependencies: [19, 5325, 1652, 2]
+// Dependencies: [19, 5345, 1652, 2]
 // Exports: default
 
-// Module 19425 (useScreenNameSharedValue)
+// Module 19417 (useScreenNameSharedValue)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ let result = size.fileFinishedImporting("modules/panels/morphable/native/useScre
 export default function useScreenNameSharedValue() {
   let sharedValue;
   let tmp3;
-  let obj = sharedValue(5325);
+  let obj = sharedValue(5345);
   let rootNavigationRef = obj.getRootNavigationRef();
   let isReadyResult;
   const useSharedValue = sharedValue(1652).useSharedValue;

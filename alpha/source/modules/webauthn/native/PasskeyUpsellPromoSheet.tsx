@@ -1,16 +1,16 @@
-// Module ID: 17964
-// Function ID: 17965
+// Module ID: 17952
+// Function ID: 17953
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1072, 4989, 21, 5854, 17965, 11021, 1113, 1377, 17966, 6905, 5770, 17963, 7265, 7705, 2]
+// Dependencies: [19, 1072, 5016, 21, 5872, 17953, 10973, 1113, 1377, 17954, 6847, 5788, 17951, 7212, 7658, 2]
 // Exports: default
 
-// Module 17964 (PasskeyUpsellPromoSheet)
+// Module 17952 (PasskeyUpsellPromoSheet)
 import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7265 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 17963 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 17966 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7212 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 17951 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 17954 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ export default function PasswordlessUpsellPromoSheet() {
     stringResult = string(t.d6uxJy);
   }
   obj4 = { children: items };
-  ButtonGroup = tmp4(6905).ButtonGroup;
+  ButtonGroup = tmp4(6847).ButtonGroup;
   const obj5 = {
     size: "lg",
     onPress: function registerPasskey() {
@@ -99,7 +99,7 @@ export default function PasswordlessUpsellPromoSheet() {
     },
     text: intl3.string(require("intl").t.NIFmCJ)
   };
-  const Button = tmp4(5770).Button;
+  const Button = tmp4(5788).Button;
   intl3 = tmp4(1113).intl;
   items = [tmp(Button, obj5), ];
   const obj6 = {
@@ -113,7 +113,7 @@ export default function PasswordlessUpsellPromoSheet() {
     },
     text: intl4.string(require("intl").t["7J6/nG"])
   };
-  const Button2 = tmp4(5770).Button;
+  const Button2 = tmp4(5788).Button;
   intl4 = tmp4(1113).intl;
   items[1] = tmp(Button2, obj6);
   return tmp(PromoSheet, obj2);

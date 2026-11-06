@@ -1,20 +1,20 @@
-// Module ID: 13038
-// Function ID: 13039
+// Module ID: 13003
+// Function ID: 13004
 // Name: useChatInputMaxHeight
-// Dependencies: [32, 19, 1495, 13035, 2020, 5748, 5335, 1625, 1493, 13039, 13040, 13041, 5380, 5383, 1652, 2]
+// Dependencies: [32, 19, 1495, 13000, 2020, 5766, 5355, 1625, 1493, 13004, 13005, 13006, 5400, 5403, 1652, 2]
 // Exports: default, getChatInputHeightAnimationTiming, getChatInputHeightAnimationTimingWorklet, getChatInputMaxHeightWorklet, getChatInputMinHeight
 
-// Module 13038 (useChatInputMaxHeight)
+// Module 13003 (useChatInputMaxHeight)
 import KeyboardTypes from "KeyboardTypes" /* 1625 */;
 import _mod1652 from "module_1652" /* 1652 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2020 */;
-import useKeyboardType from "useKeyboardType" /* 5335 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import timingPresets from "timingPresets" /* 5383 */;
-import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5748 */;
-import ChatInputConstants from "ChatInputConstants" /* 13035 */;
-import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 13039 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 13040 */;
+import useKeyboardType from "useKeyboardType" /* 5355 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import timingPresets from "timingPresets" /* 5403 */;
+import useCustomKeyboardHeight from "useCustomKeyboardHeight" /* 5766 */;
+import ChatInputConstants from "ChatInputConstants" /* 13000 */;
+import useKeyboardStateSharedValue from "useKeyboardStateSharedValue" /* 13004 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 13005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1495 */;

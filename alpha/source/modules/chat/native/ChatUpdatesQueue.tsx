@@ -1,9 +1,9 @@
-// Module ID: 11745
-// Function ID: 11746
+// Module ID: 11711
+// Function ID: 11712
 // Name: ChatUpdatesQueue
 // Dependencies: [17, 2]
 
-// Module 11745 (ChatUpdatesQueue)
+// Module 11711 (ChatUpdatesQueue)
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 7905
-// Function ID: 7906
+// Module ID: 7859
+// Function ID: 7860
 // Name: LayerActionCreators
 // Dependencies: [572, 2]
 // Exports: popAllLayers, popLayer, pushLayer
 
-// Module 7905 (LayerActionCreators)
+// Module 7859 (LayerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

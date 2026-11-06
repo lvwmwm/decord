@@ -1,10 +1,10 @@
-// Module ID: 10243
-// Function ID: 10244
+// Module ID: 10195
+// Function ID: 10196
 // Name: EmojiActionCreators
-// Dependencies: [5, 6934, 5094, 6706, 6912, 1072, 1082, 4973, 1227, 572, 1282, 7293, 5150, 1113, 6585, 5089, 1380, 6939, 12, 6096, 2]
+// Dependencies: [5, 6876, 5121, 6648, 6854, 1072, 1082, 5000, 1227, 572, 1282, 7240, 5177, 1113, 6605, 5116, 1380, 6881, 12, 6116, 2]
 // Exports: deleteEmoji, favoriteEmoji, fetchEmoji, setDiversityColor, unfavoriteEmoji, updateEmoji, uploadEmoji
 
-// Module 10243 (EmojiActionCreators)
+// Module 10195 (EmojiActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,15 +12,15 @@ import intl3 from "intl" /* 1113 */;
 import wrappers from "wrappers" /* 1227 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5089 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6096 */;
-import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 6939 */;
-import InlineUploaderDefault from "InlineUploader" /* 7293 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 5116 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 6116 */;
+import dedupeEmojisByNameOrIdDefault from "dedupeEmojisByNameOrId" /* 6881 */;
+import InlineUploaderDefault from "InlineUploader" /* 7240 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmojiStore from "EmojiStore" /* 6934 */;
-import EmojiPackStore from "EmojiPackStore" /* 5094 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6706 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6912 */;
+import EmojiStore from "EmojiStore" /* 6876 */;
+import EmojiPackStore from "EmojiPackStore" /* 5121 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6648 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6854 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ let _require, c5, c6, closure_3, customEmojiById, emojis;
 
 let c10;
 let c9;
-const f97329 = (item) => {
+const f97442 = (item) => {
   customEmojiById = customEmojiById.getCustomEmojiById(item);
   if (customEmojiById == null) {
     customEmojiById = emoji.getEmoji(item);
@@ -253,7 +253,7 @@ export function favoriteEmoji(customEmojiFromJoinedGuild) {
   }
   name = tmp;
   if (null != tmp) {
-    const FrecencyUserSettingsActionCreators = name(4973).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = name(5000).FrecencyUserSettingsActionCreators;
     FrecencyUserSettingsActionCreators.updateAsync("favoriteEmojis", async (emojis) => {
       let flag;
       let intl;
@@ -264,7 +264,7 @@ export function favoriteEmoji(customEmojiFromJoinedGuild) {
       if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
         tmp2 = emojis1;
         if (GatewayConnectionStore.isConnected()) {
-          const mapped = emojis1.map(f97329);
+          const mapped = emojis1.map(f97442);
           const found = mapped.filter(GlobalUtils.isNotNullish);
           const items = [];
           obj = dedupeEmojisByNameOrIdDefault(found);
@@ -276,7 +276,7 @@ export function favoriteEmoji(customEmojiFromJoinedGuild) {
       const obj2 = _modDef12;
       if (obj2.size(emojis.emojis) >= React4) {
         const obj3 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj4) };
-        const show = tmp10(6096).show;
+        const show = tmp10(6116).show;
         AlertActionCreatorsDefault;
         intl = intl3.intl;
         intl2 = intl3.intl;
@@ -319,7 +319,7 @@ export function unfavoriteEmoji(customEmojiFromJoinedGuild) {
   }
   name = tmp;
   if (null != tmp) {
-    const FrecencyUserSettingsActionCreators = name(4973).FrecencyUserSettingsActionCreators;
+    const FrecencyUserSettingsActionCreators = name(5000).FrecencyUserSettingsActionCreators;
     FrecencyUserSettingsActionCreators.updateAsync("favoriteEmojis", async (emojis) => {
       let emoji;
       const emojis1 = emojis.emojis;
@@ -327,7 +327,7 @@ export function unfavoriteEmoji(customEmojiFromJoinedGuild) {
       if (GuildAvailabilityStore.totalUnavailableGuilds <= 0) {
         tmp2 = emojis1;
         if (GatewayConnectionStore.isConnected()) {
-          const mapped = emojis1.map(f97329);
+          const mapped = emojis1.map(f97442);
           const found = mapped.filter(GlobalUtils.isNotNullish);
           obj = dedupeEmojisByNameOrIdDefault(found);
           const items = [];

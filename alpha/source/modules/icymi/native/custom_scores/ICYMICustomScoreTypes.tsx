@@ -1,9 +1,9 @@
-// Module ID: 18839
-// Function ID: 18840
+// Module ID: 18827
+// Function ID: 18828
 // Name: ICYMICustomScoreTypes
 // Dependencies: [2]
 
-// Module 18839 (ICYMICustomScoreTypes)
+// Module 18827 (ICYMICustomScoreTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/native/custom_scores/ICYMICustomScoreTypes.tsx");

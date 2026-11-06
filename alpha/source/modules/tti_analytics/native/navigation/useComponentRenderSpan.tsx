@@ -1,14 +1,14 @@
-// Module ID: 18915
-// Function ID: 18916
+// Module ID: 18904
+// Function ID: 18905
 // Name: useComponentRenderSpan
-// Dependencies: [19, 3, 13561, 13565, 13562, 18916, 2]
+// Dependencies: [19, 3, 13536, 13540, 13537, 18905, 2]
 // Exports: useNavigationTTIRegionMeasurement
 
-// Module 18915 (useComponentRenderSpan)
+// Module 18904 (useComponentRenderSpan)
 import LoggerDefault from "Logger" /* 3 */;
-import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13562 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 13565 */;
-import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 18916 */;
+import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13537 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 13540 */;
+import NavigationTTIRegionDebugState from "NavigationTTIRegionDebugState" /* 18905 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -54,15 +54,15 @@ export function useNavigationTTIRegionMeasurement(exclude, name) {
   const ref5 = str.useRef(str);
   const ref6 = str.useRef(false);
   const items = [name, exclude];
-  const callback = str.useCallback((traceId, endMonotonicMs, arg2, arg3, measurementSource) => {
-    let isFiniteResult = arg2 > 0 && arg3 > 0;
+  const callback = str.useCallback((traceId, endMonotonicMs, scrollLength, scrollLength2, measurementSource) => {
+    let isFiniteResult = scrollLength > 0 && scrollLength > 0;
     if (isFiniteResult) {
       const _Number = Number;
-      isFiniteResult = Number.isFinite(arg2);
+      isFiniteResult = Number.isFinite(scrollLength);
     }
     if (isFiniteResult) {
       const _Number2 = Number;
-      isFiniteResult = Number.isFinite(arg3);
+      isFiniteResult = Number.isFinite(scrollLength);
     }
     if (isFiniteResult) {
       const current = ref3.current;

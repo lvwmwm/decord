@@ -1,29 +1,29 @@
-// Module ID: 19873
-// Function ID: 19874
+// Module ID: 19879
+// Function ID: 19880
 // Name: NewUserUtils
-// Dependencies: [5, 18284, 6710, 1385, 14205, 1072, 14474, 8085, 18332, 14476, 1377, 8108, 18333, 14206, 1242, 18711, 9270, 572, 1500, 14479, 6882, 19872, 1099, 14585, 2]
+// Dependencies: [5, 18276, 6652, 1385, 14182, 1072, 14451, 8031, 18324, 14453, 1377, 8054, 18325, 14183, 1242, 18701, 9216, 572, 1500, 14456, 6824, 19878, 1099, 14562, 2]
 // Exports: continueToNextStep, getKeyForOnboardingStep
 
-// Module 19873 (NewUserUtils)
+// Module 19879 (NewUserUtils)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import router_utils from "router_utils" /* 1099 */;
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import Link from "Link" /* 1500 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8085 */;
-import react_nativeDefault from "react-native" /* 8108 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9270 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14474 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14479 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14585 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18332 */;
-import InterestPickerExperiment from "InterestPickerExperiment" /* 18711 */;
-import NewUserModalTypes from "NewUserModalTypes" /* 19872 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8031 */;
+import react_nativeDefault from "react-native" /* 8054 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9216 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14451 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 14456 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 14562 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18324 */;
+import InterestPickerExperiment from "InterestPickerExperiment" /* 18701 */;
+import NewUserModalTypes from "NewUserModalTypes" /* 19878 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 18284 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6710 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 18276 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6652 */;
 import UserStore from "UserStore" /* 1385 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14205 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14182 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -490,18 +490,6 @@ let items = [
   obj2,
   obj3,
   {
-    key: "interest-picker",
-    shouldShowStep() {
-      const shouldShowGuardianConnect = ParentalConsentStore.getShouldShowGuardianConnect();
-      let result = !shouldShowGuardianConnect;
-      if (result) {
-        obj = InterestPickerExperiment;
-        result = obj.isInterestPickerExperimentEnabled("nuf_interest_picker_step");
-      }
-      return result;
-    }
-  },
-  {
     key: "discoverability",
     shouldShowStep() {
       obj = MobileOnboardingFrictionExperimentDefault;
@@ -513,6 +501,18 @@ let items = [
     key: "connect-guardian",
     shouldShowStep() {
       return ParentalConsentStore.getShouldShowGuardianConnect();
+    }
+  },
+  {
+    key: "interest-picker",
+    shouldShowStep() {
+      const shouldShowGuardianConnect = ParentalConsentStore.getShouldShowGuardianConnect();
+      let result = !shouldShowGuardianConnect;
+      if (result) {
+        obj = InterestPickerExperiment;
+        result = obj.isInterestPickerExperimentEnabled("nuf_interest_picker_step");
+      }
+      return result;
     }
   },
 

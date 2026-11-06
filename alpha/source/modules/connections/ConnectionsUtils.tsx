@@ -1,19 +1,19 @@
-// Module ID: 7487
-// Function ID: 7488
+// Module ID: 7432
+// Function ID: 7433
 // Name: ConnectionsUtils
-// Dependencies: [5049, 5014, 7488, 1072, 1378, 38, 1113, 12, 7489, 2]
+// Dependencies: [5076, 5041, 7433, 1072, 1378, 38, 1113, 12, 7434, 2]
 // Exports: getCallbackParamsFromURL, getConnectionsCheckText, getCreatedAtDate, getVisibleConnectionsRole, isVerifiedRolesChannelVisible
 
-// Module 7487 (ConnectionsUtils)
+// Module 7432 (ConnectionsUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants2 from "Constants" /* 1072 */;
 import intl29 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1378 */;
-import getConnectionsRolesDefault from "getConnectionsRoles" /* 7489 */;
-import GuildRoleStore from "GuildRoleStore" /* 5049 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import Constants from "Constants" /* 7488 */;
+import getConnectionsRolesDefault from "getConnectionsRoles" /* 7434 */;
+import GuildRoleStore from "GuildRoleStore" /* 5076 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import Constants from "Constants" /* 7433 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

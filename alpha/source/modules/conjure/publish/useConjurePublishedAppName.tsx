@@ -1,12 +1,12 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 12843
+// Function ID: 12844
 // Name: useConjurePublishedAppName
-// Dependencies: [2167, 6982, 504, 2]
+// Dependencies: [2162, 6924, 504, 2]
 // Exports: default
 
-// Module 12878 (useConjurePublishedAppName)
-import ApplicationStore from "ApplicationStore" /* 2167 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6982 */;
+// Module 12843 (useConjurePublishedAppName)
+import ApplicationStore from "ApplicationStore" /* 2162 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6924 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

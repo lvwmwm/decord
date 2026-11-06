@@ -1,16 +1,16 @@
-// Module ID: 9236
-// Function ID: 9237
+// Module ID: 9182
+// Function ID: 9183
 // Name: GuildEventUtils
-// Dependencies: [9123, 9158, 8749, 9159, 2]
+// Dependencies: [9069, 9104, 8695, 9105, 2]
 // Exports: getEventLocationIconComponent, getEventLocationIconSource
 
-// Module 9236 (GuildEventUtils)
-import EntityUtils from "EntityUtils" /* 9123 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9158 */;
+// Module 9182 (GuildEventUtils)
+import EntityUtils from "EntityUtils" /* 9069 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9104 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const utils_ChannelUtils = tmp(8749);
+const utils_ChannelUtils = tmp(8695);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/GuildEventUtils.tsx");
 
 export function getEventLocationIconSource(event, channel, stateFromStores2) {
@@ -37,7 +37,7 @@ export function getEventLocationIconComponent(event, channel, stateFromStores1) 
   let LocationIcon;
   const obj = EntityUtils;
   if (null != obj.getLocationFromEvent(event)) {
-    LocationIcon = tmp(9159).LocationIcon;
+    LocationIcon = tmp(9105).LocationIcon;
   } else {
     LocationIcon = null;
     if (null != channel) {

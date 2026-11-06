@@ -1,17 +1,17 @@
-// Module ID: 14572
-// Function ID: 14573
+// Module ID: 14549
+// Function ID: 14550
 // Name: HubEmailConnectionDescriptionActionsheet
-// Dependencies: [19, 21, 5143, 5398, 7460, 1113, 5763, 2]
+// Dependencies: [19, 21, 5170, 5418, 7405, 1113, 5781, 2]
 // Exports: default
 
-// Module 14572 (HubEmailConnectionDescriptionActionsheet)
+// Module 14549 (HubEmailConnectionDescriptionActionsheet)
 import intl4 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5398 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7460 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5418 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7405 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c2;

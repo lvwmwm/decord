@@ -1,10 +1,10 @@
-// Module ID: 7980
-// Function ID: 7981
+// Module ID: 7934
+// Function ID: 7935
 // Name: activityBookmarkUtils
 // Dependencies: [1378, 2]
 // Exports: extractActivityBookmarkParams, getLinkChannelId
 
-// Module 7980 (activityBookmarkUtils)
+// Module 7934 (activityBookmarkUtils)
 import URLUtilsDefault from "URLUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 

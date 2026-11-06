@@ -1,13 +1,13 @@
-// Module ID: 18717
-// Function ID: 18718
+// Module ID: 18707
+// Function ID: 18708
 // Name: useInterestCoverColor
-// Dependencies: [5, 32, 19, 5150, 1453, 671, 1490, 2]
+// Dependencies: [5, 32, 19, 5177, 1453, 671, 1490, 2]
 // Exports: coverArtColor, default
 
-// Module 18717 (useInterestCoverColor)
+// Module 18707 (useInterestCoverColor)
 import _modDef671 from "module_671" /* 671 */;
 import LRUCacheDefault from "LRUCache" /* 1453 */;
-import shared from "shared" /* 5150 */;
+import shared from "shared" /* 5177 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

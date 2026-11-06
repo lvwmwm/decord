@@ -1,21 +1,22 @@
-// Module ID: 8501
-// Function ID: 8502
+// Module ID: 8447
+// Function ID: 8448
 // Name: in_app_reports/ReportUtils
-// Dependencies: [5, 19, 5766, 1072, 7632, 1282, 8500, 7638, 572, 8498, 38, 5897, 2]
+// Dependencies: [5, 19, 5784, 1072, 7577, 1282, 8446, 7582, 7589, 7591, 572, 8444, 38, 5916, 2]
 // Exports: areRequiredElementsUnfilled, fetchUrfCapabilities, getDsaExperiment, getModeratorReportEndpointSafely, getReportMenuForModeratorReport, getUnauthenticatedReportMenu, sendUnauthenticatedReportPincode, showInAppReportsFeedbackModal, submitHeadlessReport, submitReport, submitReportSecondLook, submitUnauthenticatedReport, trackCloseReportModalAnalytics, useTrackSettingsUpsellsAction, verifyUnauthenticatedReport
 
-// Module 8501 (in_app_reports/ReportUtils)
+// Module 8447 (in_app_reports/ReportUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5897 */;
-import Constants2 from "Constants" /* 7632 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7638 */;
-import MenuTypes from "MenuTypes" /* 8498 */;
-import ReportMenuType from "ReportMenuType" /* 8500 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5916 */;
+import Constants2 from "Constants" /* 7577 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 7582 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 7591 */;
+import MenuTypes from "MenuTypes" /* 8444 */;
+import ReportMenuType from "ReportMenuType" /* 8446 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5766 */;
+import DevSettingsStore from "DevSettingsStore" /* 5784 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 
@@ -241,7 +242,7 @@ obj = function _fetchUrfCapabilities() {
     const media_takedown_regulation = body.media_takedown_regulation;
     const obj7 = { capabilities, media_takedown_regulation: tmp6 };
     tmp6 = null;
-    const obj8 = closure_129_0(closure_129_2[9]);
+    const obj8 = closure_129_0(closure_129_2[11]);
     if (obj8.isMediaTakedownRegulation(media_takedown_regulation)) {
       tmp6 = media_takedown_regulation;
     }
@@ -338,7 +339,7 @@ function genSubmitData(version, name, arr, email_token) {
   if (str == null) {
     str = "en";
   }
-  let obj2 = { channel_id: "indexOf", message_id: "id", stage_instance_id: "onPress", guild_id: "nm", guild_scheduled_event_id: "id", user_id: "constructor", email_token: "ind", application_id: "size", entrypoint: "id", widget_id: "code" };
+  let obj2 = { channel_id: "Array", message_id: "channel", stage_instance_id: "hd", guild_id: "", guild_scheduled_event_id: "HermesInternal", user_id: "ip", email_token: "Error", application_id: "isArray", entrypoint: "isArray", widget_id: "isArray" };
   const tmp = require;
   let tmp2 = dependencyMap;
   if (name.name !== MenuTypes.ReportNames.MESSAGE) {
@@ -446,10 +447,11 @@ export function submitReport(language, name, arr) {
   if (DevSettingsStore.get("iar_skip_api_report_submit")) {
     resolved = Promise.resolve();
   } else {
+    let nextPromise;
     let tmp = language;
     let tmp2 = name;
     const tmp4 = obj4;
-    const REPORT_TO_MOD = obj4(8500).ReportMenuTypeSets.REPORT_TO_MOD;
+    const REPORT_TO_MOD = obj4(8446).ReportMenuTypeSets.REPORT_TO_MOD;
     if (REPORT_TO_MOD.has(name.name)) {
       let str2 = language.language;
       obj = {
@@ -490,27 +492,27 @@ export function submitReport(language, name, arr) {
       if (str2 == null) {
         str2 = "en";
       }
-      let tmp15 = null;
-      if (name.name === tmp4(8498).ModeratorReportNames.MESSAGE) {
-        let obj2 = { channel_id: "Array", message_id: "id", guild_id: "concat" };
+      let tmp14 = null;
+      if (name.name === tmp4(8444).ModeratorReportNames.MESSAGE) {
+        let obj2 = { channel_id: "enabled", message_id: "Array", guild_id: "isArray" };
         obj4 = { name: name.name, channel_id, message_id: id };
         ({ channel_id, id } = name.record);
         let merged = Object.assign(obj);
         let merged1 = Object.assign(obj2);
-        tmp15 = obj4;
+        tmp14 = obj4;
       }
-      obj4 = tmp15;
+      obj4 = tmp14;
       const HTTP2 = tmp4(1282).HTTP;
       const post2 = HTTP2.post;
-      const tmp23 = _modDef38;
-      const REPORT_TO_MOD2 = tmp4(8500).ReportMenuTypeSets.REPORT_TO_MOD;
+      const tmp22 = _modDef38;
+      const REPORT_TO_MOD2 = tmp4(8446).ReportMenuTypeSets.REPORT_TO_MOD;
       const _HermesInternal2 = HermesInternal;
       const hasItem = REPORT_TO_MOD2.has(name.name);
-      tmp23(hasItem, "Invalid report type " + name.name);
-      if (name.name === tmp4(8498).ModeratorReportNames.MESSAGE) {
-        const request = { url: closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id), body: tmp15, rejectWithError: false };
+      tmp22(hasItem, "Invalid report type " + name.name);
+      if (name.name === tmp4(8444).ModeratorReportNames.MESSAGE) {
+        const request = { url: closure_7.SUBMIT_MODERATOR_MESSAGE_REPORT(name.record.channel_id, name.record.id), body: tmp14, rejectWithError: false };
         const post2Result = post2(request);
-        resolved = post2Result.then((result) => {
+        nextPromise = post2Result.then((result) => {
           obj = SafetyToastsActionCreatorsDefault;
           obj.showSuccessToast(SafetyToastType.REPORT_TO_MOD_SUCCESS);
           let channel_id;
@@ -550,12 +552,17 @@ export function submitReport(language, name, arr) {
       SUBMIT_REPORT_MENU = closure_7.SUBMIT_REPORT_MENU;
       let _Object = Object;
       const tmp8 = _modDef38;
-      const values = Object.values(tmp4(8498).ReportNames);
+      const values = Object.values(tmp4(8444).ReportNames);
       const _HermesInternal = HermesInternal;
       const hasItem1 = values.includes(name);
       tmp8(hasItem1, "Invalid report type " + name.name);
-      resolved = post(request1);
+      nextPromise = post(request1);
     }
+    resolved = nextPromise.then((result) => {
+      obj = QualtricsActionCreatorsDefault;
+      obj.fireSurveyAction(obj4(dependencyMap[8]).SurveyActionTypes.REPORT_SUBMITTED);
+      return result;
+    });
   }
   return resolved;
 }

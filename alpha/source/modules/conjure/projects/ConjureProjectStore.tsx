@@ -1,19 +1,19 @@
-// Module ID: 6982
-// Function ID: 6983
+// Module ID: 6924
+// Function ID: 6925
 // Name: ConjureProjectStore
-// Dependencies: [32, 1385, 6983, 504, 572, 2]
+// Dependencies: [32, 1385, 6925, 504, 572, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 6982 (ConjureProjectStore)
+// Module 6924 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6983 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6925 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;
 
-function isProjectOwner(item10010) {
-  const owner_user_id = item10010.owner_user_id;
+function isProjectOwner(project) {
+  const owner_user_id = project.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -36,6 +36,7 @@ let closure_16 = 0;
 let c17 = false;
 let maxProjects = null;
 let c19 = false;
+let failureCode = null;
 let obj = null;
 const set4 = new Set();
 const map4 = new Map();
@@ -66,8 +67,8 @@ class ConjureProjectStore extends Store {
     const arr = Array.from(set2);
     return arr.filter((item) => !set.has(item));
   }
-  isProjectRunning(arg0) {
-    return set3.has(arg0);
+  isProjectRunning(id) {
+    return set3.has(id);
   }
   hasFetchedOwnedProjects() {
     return c17;
@@ -86,6 +87,9 @@ class ConjureProjectStore extends Store {
   }
   hasFetchedProjectLimit() {
     return c19;
+  }
+  getProjectLimitFailureCode() {
+    return failureCode;
   }
   getProject(arg0) {
     let value = map.get(arg0);
@@ -242,6 +246,7 @@ obj = {
     success = "unattempted";
     maxProjects = null;
     c19 = false;
+    failureCode = null;
   },
   CONJURE_PROJECTS_FETCH_START: function handleProjectsFetchStart(guildId) {
     guildId = guildId.guildId;
@@ -414,6 +419,7 @@ obj = {
   CONJURE_PROJECT_LIMIT_FETCH_SETTLE: function handleProjectLimitFetchSettle(maxProjects) {
     maxProjects = maxProjects.maxProjects;
     c19 = true;
+    failureCode = maxProjects.failureCode;
   },
   CONJURE_PROJECT_CREATE_SUCCESS: function handleProjectCreateSuccess(project) {
     project = project.project;
@@ -523,8 +529,8 @@ export function canPublishProject(project) {
   }
   return tmp3;
 }
-export function canRemixProject(project) {
-  const owner_user_id = project.owner_user_id;
+export function canRemixProject(owner_user_id) {
+  owner_user_id = owner_user_id.owner_user_id;
   const currentUser = UserStore.getCurrentUser();
   let id;
   if (currentUser != null) {
@@ -533,12 +539,12 @@ export function canRemixProject(project) {
   let isProjectPublicResult = owner_user_id === id;
   if (!isProjectPublicResult) {
     obj = ConjureProjectTypes;
-    isProjectPublicResult = obj.isProjectGuildCollaborationEnabled(project) && null != project.guild_id;
-    obj.isProjectGuildCollaborationEnabled(project) && null != project.guild_id;
+    isProjectPublicResult = obj.isProjectGuildCollaborationEnabled(owner_user_id) && null != owner_user_id.guild_id;
+    obj.isProjectGuildCollaborationEnabled(owner_user_id) && null != owner_user_id.guild_id;
   }
   if (!isProjectPublicResult) {
     const obj2 = ConjureProjectTypes;
-    isProjectPublicResult = obj2.isProjectPublic(project);
+    isProjectPublicResult = obj2.isProjectPublic(owner_user_id);
   }
   return isProjectPublicResult;
 }

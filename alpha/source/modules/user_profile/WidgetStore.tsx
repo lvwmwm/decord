@@ -1,16 +1,16 @@
-// Module ID: 12572
-// Function ID: 12573
+// Module ID: 12537
+// Function ID: 12538
 // Name: WidgetStore
-// Dependencies: [32, 1385, 7917, 504, 1380, 12, 572, 2]
+// Dependencies: [32, 1385, 7871, 504, 1380, 12, 572, 2]
 
-// Module 12572 (WidgetStore)
+// Module 12537 (WidgetStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1385 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, uniqueKey;
@@ -70,6 +70,13 @@ class WidgetStore extends Store {
     let changedWidgets = this.getSaveablePendingWidgets();
     if (null != changedWidgets) {
       if (null != _null2) {
+        function widgetKey(id) {
+          id = id.id;
+          if (id == null) {
+            id = id.getUniqueKey();
+          }
+          return id;
+        }
         const _Map = Map;
         const self = this;
         const self2 = this;
@@ -77,17 +84,33 @@ class WidgetStore extends Store {
         const self3 = this;
         const self4 = this;
         map = new Map(_null2.map((id) => {
-          const items = [id.id, id];
-          return items;
+          if (typeof widgetKey === "function") {
+            id = id.id;
+            if (id == null) {
+              id = id.getUniqueKey();
+            }
+            const items = [id, id];
+            return items;
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
         }));
         map1 = new Map(changedWidgets.map((id) => {
-          const items = [id.id, id];
-          return items;
+          if (typeof widgetKey === "function") {
+            id = id.id;
+            if (id == null) {
+              id = id.getUniqueKey();
+            }
+            const items = [id, id];
+            return items;
+          } else {
+            throw new TypeError("Trying to call a non-function");
+          }
         }));
         let items = [];
         const items1 = [];
-        const tmp33 = map1[Symbol.iterator]();
-        while (tmp33 !== undefined) {
+        const tmp41 = map1[Symbol.iterator]();
+        while (tmp41 !== undefined) {
           let tmp5 = _slicedToArray(tmp2, 2);
           let obj = tmp5[1];
           let value = map.get(tmp5[0]);
@@ -100,42 +123,30 @@ class WidgetStore extends Store {
           }
           continue;
         }
-        for (const item10029 of tmp30) {
-          let tmp16 = _slicedToArray(item10029, 2);
+        for (const item10032 of tmp38) {
+          let tmp16 = _slicedToArray(item10032, 2);
           let tmp17 = tmp16[1];
           if (!map1.has(tmp16[0])) {
             let arr2 = items1.push(tmp17);
           }
           continue;
         }
-        let num = 0;
         let flag = false;
-        if (0 < changedWidgets.length) {
-          while (true) {
-            let tmp20 = changedWidgets[num];
-            let id;
-            if (tmp20 != null) {
-              id = tmp20.id;
-            }
-            let tmp24 = _null2[num];
-            let id1;
-            if (tmp24 != null) {
-              id1 = tmp24.id;
-            }
-            flag = true;
-            if (id !== id1) {
-              break;
-            } else {
-              let sum = num + 1;
-              num = sum;
-              flag = false;
-              if (sum >= changedWidgets.length) {
-                break;
-              }
-            }
+        const entries = changedWidgets.entries();
+        const obj2 = entries[Symbol.iterator]();
+        while (obj2 !== undefined) {
+          let tmp26 = _slicedToArray(tmp23, 2);
+          let tmp27 = tmp26[1];
+          let tmp29 = _null2[tmp26[0]];
+          if (null != tmp29) {
+            let widgetKeyResult = widgetKey(tmp27);
+            let obj3 = { changedWidgets: items, removedWidgets: items1, hasOrderChanges: flag };
+            return obj3;
           }
+          flag = true;
+          obj2.return();
+          break;
         }
-        return { changedWidgets: items, removedWidgets: items1, hasOrderChanges: flag };
       }
     }
     if (changedWidgets == null) {

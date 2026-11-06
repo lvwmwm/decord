@@ -1,14 +1,14 @@
-// Module ID: 13477
-// Function ID: 13478
+// Module ID: 13452
+// Function ID: 13453
 // Name: MedalIcon
-// Dependencies: [19, 21, 575, 5853, 13478, 2]
+// Dependencies: [19, 21, 575, 5871, 13453, 2]
 // Exports: MedalIcon
 
-// Module 13477 (MedalIcon)
+// Module 13452 (MedalIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 13478 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 13453 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

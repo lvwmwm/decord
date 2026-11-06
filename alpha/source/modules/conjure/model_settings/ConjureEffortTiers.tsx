@@ -1,13 +1,13 @@
-// Module ID: 12376
-// Function ID: 12377
+// Module ID: 12341
+// Function ID: 12342
 // Name: ConjureEffortTiers
-// Dependencies: [109, 12377, 1113, 3995, 12378, 2]
+// Dependencies: [109, 12342, 1113, 4024, 12343, 2]
 // Exports: conjureCanPickModel, conjureCeilingSupportsFast, conjureNormalizeFast, conjurePickTierModel, conjureTierAvailable, conjureTierDescription, conjureTierLabel, conjureTierModel, conjureTierStopLabel, conjureWithTier
 
-// Module 12376 (ConjureEffortTiers)
-import _modDef3995 from "module_3995" /* 3995 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 12377 */;
-import ConjureModelSettingsTypes from "ConjureModelSettingsTypes" /* 12378 */;
+// Module 12341 (ConjureEffortTiers)
+import _modDef4024 from "module_4024" /* 4024 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 12342 */;
+import ConjureModelSettingsTypes from "ConjureModelSettingsTypes" /* 12343 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let tmp2;
 const intl3 = tmp2(1113);
 let closure_3 = ["thinking"];
 let closure_4 = ["fast"];
-let obj = { simple: _modDef3995.Mqb8mc, balanced: _modDef3995.zCZfA6, complex: _modDef3995["8l2atm"] };
+let obj = { simple: _modDef4024.Mqb8mc, balanced: _modDef4024.zCZfA6, complex: _modDef4024["8l2atm"] };
 const CONJURE_MODEL_TIERS = ConjureModelSettingsTypes.CONJURE_MODEL_TIERS;
 const flatMapResult = CONJURE_MODEL_TIERS.flatMap((item, index) => {
   let items;
@@ -143,7 +143,7 @@ export function conjureTierStopLabel(value) {
   if ("complex" === value) {
     const intl2 = tmp(1113).intl;
     const _HermesInternal = HermesInternal;
-    combined = "" + stringResult + ", " + intl2.string(_modDef3995["17yEQw"]);
+    combined = "" + stringResult + ", " + intl2.string(_modDef4024["17yEQw"]);
   }
   return combined;
 }

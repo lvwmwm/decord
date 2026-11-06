@@ -1,14 +1,14 @@
-// Module ID: 19478
-// Function ID: 19479
+// Module ID: 19470
+// Function ID: 19471
 // Name: soundboard/SoundboardActionCreators
-// Dependencies: [1072, 5384, 19479, 2123, 1108, 2]
+// Dependencies: [1072, 5404, 19471, 2118, 1108, 2]
 // Exports: openSoundboardSoundPickerActionSheet, showSoundboardSoundPickerActionSheet
 
-// Module 19478 (soundboard/SoundboardActionCreators)
+// Module 19470 (soundboard/SoundboardActionCreators)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
 import size from "module_2" /* 2 */;
 
 const ComponentActions = Constants.ComponentActions;
@@ -18,9 +18,10 @@ export function openSoundboardSoundPickerActionSheet(arg0) {
   let analyticsSource;
   let channel;
   let initialScrollLocation;
-  ({ channel, analyticsSource, initialScrollLocation } = arg0);
+  let startExpanded;
+  ({ channel, analyticsSource, initialScrollLocation, startExpanded } = arg0);
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(19479, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel, analyticsSource, initialScrollLocation });
+  obj.openLazy(asyncRequire(19471, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel, analyticsSource, initialScrollLocation, startExpanded });
 }
 export function showSoundboardSoundPickerActionSheet(arg0) {
   let analyticsSource;
@@ -28,11 +29,13 @@ export function showSoundboardSoundPickerActionSheet(arg0) {
   let channel;
   let channel2;
   let initialScrollLocation;
-  ({ channel, analyticsSource } = arg0);
+  let startExpanded;
+  let startExpanded2;
+  ({ channel, analyticsSource, startExpanded } = arg0);
   const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
   ComponentDispatch.dispatch(ComponentActions.TOGGLE_CALL_CONTROL_DRAWER);
-  const obj = { channel, analyticsSource };
-  ({ channel: channel2, analyticsSource: analyticsSource2, initialScrollLocation } = obj);
+  const obj = { channel, analyticsSource, startExpanded };
+  ({ channel: channel2, analyticsSource: analyticsSource2, initialScrollLocation, startExpanded: startExpanded2 } = obj);
   const obj2 = ActionSheetActionCreatorsDefault;
-  obj2.openLazy(asyncRequire(19479, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel: channel2, analyticsSource: analyticsSource2, initialScrollLocation });
+  obj2.openLazy(asyncRequire(19471, dependencyMap.paths), "SoundboardSoundPickerActionSheet", { channel: channel2, analyticsSource: analyticsSource2, initialScrollLocation, startExpanded: startExpanded2 });
 }

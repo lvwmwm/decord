@@ -1,26 +1,26 @@
-// Module ID: 10408
-// Function ID: 10409
+// Module ID: 10360
+// Function ID: 10361
 // Name: autocompleter/AutocompleteUtils
-// Dependencies: [19, 17, 4996, 5073, 5085, 1385, 1072, 10409, 6174, 21, 5143, 575, 5788, 8746, 6917, 5197, 8328, 2]
+// Dependencies: [19, 17, 5023, 5100, 5112, 1385, 1072, 10361, 6194, 21, 5170, 575, 5806, 8692, 6859, 5224, 8273, 2]
 // Exports: findAutoInsertOnSpaceToken, findWordStart, getAutocompleteResultText, getItemLayout, getItemSeparator, getMentionTextWithUser, getPrefix, getQuery, isSingleLineRun, isSpaceJustTypedAtCaret, isUnbrokenRun, isWhitespaceSeparatingBoundary
 
-// Module 10408 (autocompleter/AutocompleteUtils)
+// Module 10360 (autocompleter/AutocompleteUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelRecord from "ChannelRecord" /* 4996 */;
-import useChannelName from "useChannelName" /* 5788 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6917 */;
-import FormDividerDefault from "FormDivider" /* 8328 */;
-import TimestampUtils from "TimestampUtils" /* 8746 */;
+import ChannelRecord from "ChannelRecord" /* 5023 */;
+import useChannelName from "useChannelName" /* 5806 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6859 */;
+import FormDividerDefault from "FormDivider" /* 8273 */;
+import TimestampUtils from "TimestampUtils" /* 8692 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 5073 */;
-import RelationshipStore from "RelationshipStore" /* 5085 */;
+import GuildChannelStore from "GuildChannelStore" /* 5100 */;
+import RelationshipStore from "RelationshipStore" /* 5112 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
-import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10409 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6174 */;
-import createStyles from "createStyles" /* 5143 */;
+import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 10361 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6194 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -33,7 +33,7 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let unpackModuleId;
-const UserUtilsDefault = tmp(5197);
+const UserUtilsDefault = tmp(5224);
 function AutocompleteFormDivider() {
   return jsx(FormDividerDefault, { style: closure_17().itemDivider });
 }
@@ -80,7 +80,7 @@ export function getAutocompleteResultText(type, channel, set) {
       combined = "" + tmp37 + user.tag;
     } else {
       const _HermesInternal8 = HermesInternal;
-      const tmp35Result = tmp35(5197);
+      const tmp35Result = tmp35(5224);
       combined = "" + tmp37 + tmp35Result.getUserTag(user);
     }
     return combined;

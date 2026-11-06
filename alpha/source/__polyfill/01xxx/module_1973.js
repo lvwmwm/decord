@@ -16,7 +16,7 @@ let inputHandlers, keyboardHandlers;
 
 let c2;
 let c3;
-const f83687 = () => {
+const f83767 = () => {
   let KeyboardController = KeyboardController2.KeyboardController;
   KeyboardController.setInputMode(AndroidSoftInputModes.AndroidSoftInputModes.SOFT_INPUT_ADJUST_RESIZE);
   return () => {
@@ -77,7 +77,7 @@ function useGenericKeyboardHandler(ChannelListLegendListTsx1, items2) {
 }
 ({ useEffect: c2, useLayoutEffect: c3 } = react);
 function useResizeMode() {
-  React2(f83687, []);
+  React2(f83767, []);
 }
 let closure_5 = { code: "(function pnpm_indexTs1(event){let[handler]=this.__closure;if(event.eventName.endsWith(\"onKeyboardMoveStart\")){var _handler$onStart,_handler;(_handler$onStart=(_handler=handler).onStart)===null||_handler$onStart===void 0||_handler$onStart.call(_handler,event);}if(event.eventName.endsWith(\"onKeyboardMove\")){var _handler$onMove,_handler2;(_handler$onMove=(_handler2=handler).onMove)===null||_handler$onMove===void 0||_handler$onMove.call(_handler2,event);}if(event.eventName.endsWith(\"onKeyboardMoveEnd\")){var _handler$onEnd,_handler3;(_handler$onEnd=(_handler3=handler).onEnd)===null||_handler$onEnd===void 0||_handler$onEnd.call(_handler3,event);}if(event.eventName.endsWith(\"onKeyboardMoveInteractive\")){var _handler$onInteractiv,_handler4;(_handler$onInteractiv=(_handler4=handler).onInteractive)===null||_handler$onInteractiv===void 0||_handler$onInteractiv.call(_handler4,event);}})" };
 let closure_7 = { code: "(function pnpm_indexTs2(event){let[handler]=this.__closure;if(event.eventName.endsWith(\"onFocusedInputTextChanged\")){var _handler$onChangeText,_handler;(_handler$onChangeText=(_handler=handler).onChangeText)===null||_handler$onChangeText===void 0||_handler$onChangeText.call(_handler,event);}if(event.eventName.endsWith(\"onFocusedInputSelectionChanged\")){var _handler$onSelectionC,_handler2;(_handler$onSelectionC=(_handler2=handler).onSelectionChange)===null||_handler$onSelectionC===void 0||_handler$onSelectionC.call(_handler2,event);}})" };
@@ -93,7 +93,7 @@ for (const key10025 in _mod1976) {
 export { useResizeMode };
 export const useKeyboardAnimation = () => {
   if (typeof useResizeMode === "function") {
-    React2(f83687, []);
+    React2(f83767, []);
     const obj = _mod1972;
     return obj.useKeyboardContext().animated;
   } else {
@@ -102,7 +102,7 @@ export const useKeyboardAnimation = () => {
 };
 export const useReanimatedKeyboardAnimation = () => {
   if (typeof useResizeMode === "function") {
-    React2(f83687, []);
+    React2(f83767, []);
     const obj = _mod1972;
     return obj.useKeyboardContext().reanimated;
   } else {
@@ -112,7 +112,7 @@ export const useReanimatedKeyboardAnimation = () => {
 export { useGenericKeyboardHandler };
 export function useKeyboardHandler(ChannelListLegendListTsx1, items2) {
   if (typeof useResizeMode === "function") {
-    React2(f83687, []);
+    React2(f83767, []);
     useGenericKeyboardHandler(ChannelListLegendListTsx1, items2);
   } else {
     throw new TypeError("Trying to call a non-function");

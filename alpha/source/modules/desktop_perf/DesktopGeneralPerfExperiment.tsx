@@ -1,10 +1,10 @@
-// Module ID: 6020
-// Function ID: 6021
+// Module ID: 6039
+// Function ID: 6040
 // Name: DesktopGeneralPerfExperiment
 // Dependencies: [1449, 1377, 2]
 // Exports: getDesktopGeneralPerfExperimentConfig, getIsQuestRingVisibleStepsEnabled
 
-// Module 6020 (DesktopGeneralPerfExperiment)
+// Module 6039 (DesktopGeneralPerfExperiment)
 import PlatformUtils from "PlatformUtils" /* 1377 */;
 import ApexExperiment from "ApexExperiment" /* 1449 */;
 import size from "module_2" /* 2 */;

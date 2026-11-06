@@ -1,15 +1,15 @@
-// Module ID: 15145
-// Function ID: 15146
+// Module ID: 15122
+// Function ID: 15123
 // Name: useBadgeDirectoryNuxPopoverVariant
-// Dependencies: [32, 19, 8909, 504, 559, 1089, 8914, 11657, 15146, 2]
+// Dependencies: [32, 19, 8855, 504, 559, 1089, 8860, 11619, 15123, 2]
 // Exports: useBadgeDirectoryNuxPopoverVariant
 
-// Module 15145 (useBadgeDirectoryNuxPopoverVariant)
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8914 */;
-import BadgeDirectoryNuxGraphicUtils from "BadgeDirectoryNuxGraphicUtils" /* 15146 */;
+// Module 15122 (useBadgeDirectoryNuxPopoverVariant)
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8860 */;
+import BadgeDirectoryNuxGraphicUtils from "BadgeDirectoryNuxGraphicUtils" /* 15123 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8909 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8855 */;
 import size from "module_2" /* 2 */;
 
 function useBadgeDirectoryNuxPopoverState(fetchCatalog) {

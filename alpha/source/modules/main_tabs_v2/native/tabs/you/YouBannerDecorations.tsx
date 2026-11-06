@@ -1,28 +1,28 @@
-// Module ID: 9780
-// Function ID: 9781
+// Module ID: 9730
+// Function ID: 9731
 // Name: YouBannerDecorations
-// Dependencies: [19, 17, 2192, 1385, 4989, 1387, 21, 1357, 575, 5143, 9781, 7774, 5173, 4976, 1113, 504, 8903, 8946, 8957, 5150, 671, 2176, 9826, 9827, 9829, 9830, 9833, 9834, 6922, 14935, 14938, 14943, 14945, 9681, 7703, 14940, 5725, 2]
+// Dependencies: [19, 17, 2187, 1385, 5016, 1387, 21, 1357, 575, 5170, 9731, 7728, 5200, 5003, 1113, 504, 8849, 8892, 8903, 5177, 671, 2171, 9777, 9778, 9780, 9781, 9784, 9785, 6864, 14912, 14915, 14920, 14922, 9630, 7656, 14917, 5745, 2]
 // Exports: getFloatingNavBottomMargin, useHasSettingsBadge
 
-// Module 9780 (YouBannerDecorations)
+// Module 9730 (YouBannerDecorations)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1357 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2192 */;
-import dismissible_content from "dismissible_content" /* 4976 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5173 */;
-import QuestTypes from "QuestTypes" /* 6922 */;
-import useTrialOffer from "useTrialOffer" /* 7774 */;
-import PromotionsHooks from "PromotionsHooks" /* 9781 */;
-import Tracking from "Tracking" /* 9833 */;
-import QuestUtils from "QuestUtils" /* 9834 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2187 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5200 */;
+import QuestTypes from "QuestTypes" /* 6864 */;
+import useTrialOffer from "useTrialOffer" /* 7728 */;
+import PromotionsHooks from "PromotionsHooks" /* 9731 */;
+import Tracking from "Tracking" /* 9784 */;
+import QuestUtils from "QuestUtils" /* 9785 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -182,11 +182,11 @@ const memoResult = react.memo(function YouBannerDecorations(navigateToSettings) 
     let tmp5 = currentUser;
     if (tmp5) {
       const tmpResult = DismissibleContentUnsafeUtils;
-      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(4976).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      tmp5 = !tmpResult.UNSAFE_isDismissibleContentDismissed(tmp(5003).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
     if (tmp5) {
       const tmpResult2 = DismissibleContentUnsafeUtils;
-      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(4976).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
+      const result1 = tmpResult2.UNSAFE_markDismissibleContentAsDismissed(tmp(5003).DismissibleContent.TRIAL_FOR_ALL_2026_SETTINGS_BADGE);
     }
   }, items2);
   const items4 = [showBadge, dismissBadge];

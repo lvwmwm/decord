@@ -1,30 +1,30 @@
-// Module ID: 17331
-// Function ID: 17332
+// Module ID: 17319
+// Function ID: 17320
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 2191, 17294, 21, 575, 5143, 5776, 504, 13656, 9662, 5763, 1113, 17301, 17312, 17324, 17295, 9695, 7769, 17332, 17317, 17323, 671, 17304, 17305, 5725, 14149, 2]
+// Dependencies: [19, 17, 2186, 17282, 21, 575, 5170, 5794, 504, 13631, 9611, 5781, 1113, 17289, 17300, 17312, 17283, 9644, 7723, 17320, 17305, 17311, 671, 17292, 17293, 5745, 14126, 2]
 // Exports: default
 
-// Module 17331 (OrbsArcadeRewardShelf)
+// Module 17319 (OrbsArcadeRewardShelf)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import ButtonConstants from "ButtonConstants" /* 5776 */;
-import useCountdownDefault from "useCountdown" /* 7769 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17295 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17301 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17304 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17305 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17312 */;
-import OrbsArcadeWindowUtils from "OrbsArcadeWindowUtils" /* 17317 */;
-import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 17324 */;
-import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 17332 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import ButtonConstants from "ButtonConstants" /* 5794 */;
+import useCountdownDefault from "useCountdown" /* 7723 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17283 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17289 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17292 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17293 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17300 */;
+import OrbsArcadeWindowUtils from "OrbsArcadeWindowUtils" /* 17305 */;
+import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 17312 */;
+import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 17320 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17294 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17282 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -40,7 +40,7 @@ let obj4;
 let size;
 let tmp2;
 let unpackModuleId;
-const NitroCoinSpotIllustration = tmp2(9695);
+const NitroCoinSpotIllustration = tmp2(9644);
 function OrbsArcadeClaimableRewardsShelfContent(rewards) {
   let intl;
   let items2;
@@ -59,7 +59,7 @@ function OrbsArcadeClaimableRewardsShelfContent(rewards) {
   const obj2 = { children: items2 };
   const obj3 = {
     "aria-label": memo,
-    shape: rewards(9662).CutoutShape.Circle,
+    shape: rewards(9611).CutoutShape.Circle,
     size: v50,
     gap: 2,
     depthX: 0.28,
@@ -68,13 +68,13 @@ function OrbsArcadeClaimableRewardsShelfContent(rewards) {
       return closure_1_9(OrbsArcadePileReward, obj, reward.id);
     })
   };
-  const Pile = rewards(13656).Pile;
+  const Pile = rewards(13631).Pile;
   items2 = [closure_9(Pile, obj3), ];
   const obj4 = { style: tmp.rewardShelfCopy, children: items3 };
   const obj5 = { variant: "heading-xs/semibold", color: "text-default", children: intl.string(rewards(1113).t.DCCcdz) };
-  const Text = rewards(5763).Text;
+  const Text = rewards(5781).Text;
   intl = rewards(1113).intl;
-  items3 = [closure_9(Text, obj5), closure_9(rewards(5763).Text, { variant: "heading-xs/semibold", color: "text-subtle", lineClamp: 2, children: memo })];
+  items3 = [closure_9(Text, obj5), closure_9(rewards(5781).Text, { variant: "heading-xs/semibold", color: "text-subtle", lineClamp: 2, children: memo })];
   items2[1] = closure_10(closure_6, obj4);
   return closure_10(closure_11, obj2);
 }
@@ -154,7 +154,7 @@ function OrbsArcadeAllRewardsClaimedShelfContent(windowEndsAt) {
   const tmp9 = React4;
   if (null != windowEndsAt) {
     const obj6 = { variant: "body-xs/medium", color: "text-muted", children: formatToPlainString(fkzORZ, obj7) };
-    const Text2 = tmp11(5763).Text;
+    const Text2 = tmp11(5781).Text;
     const intl2 = tmp11(1113).intl;
     formatToPlainString = intl2.formatToPlainString;
     obj7 = { duration: tmp11Result.formatOrbsArcadeTimeUntil(tmp3Result) };

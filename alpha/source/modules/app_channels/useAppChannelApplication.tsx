@@ -1,12 +1,12 @@
-// Module ID: 7562
-// Function ID: 7563
+// Module ID: 7507
+// Function ID: 7508
 // Name: useAppChannelApplication
-// Dependencies: [1072, 7019, 2]
+// Dependencies: [1072, 6961, 2]
 // Exports: useAppChannelApplication
 
-// Module 7562 (useAppChannelApplication)
+// Module 7507 (useAppChannelApplication)
 import Constants from "Constants" /* 1072 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7019 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6961 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

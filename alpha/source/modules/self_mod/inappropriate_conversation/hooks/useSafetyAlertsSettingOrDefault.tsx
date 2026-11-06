@@ -1,13 +1,13 @@
-// Module ID: 11460
-// Function ID: 11461
+// Module ID: 11422
+// Function ID: 11423
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1231, 1385, 504, 8514, 11461, 2]
+// Dependencies: [1231, 1385, 504, 8460, 11423, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 11460 (useSafetyAlertsSettingOrDefault)
+// Module 11422 (useSafetyAlertsSettingOrDefault)
 import get_initialized from "get initialized" /* 504 */;
-import useUserIsTeen from "useUserIsTeen" /* 8514 */;
-import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11461 */;
+import useUserIsTeen from "useUserIsTeen" /* 8460 */;
+import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11423 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import UserStore from "UserStore" /* 1385 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 9388
-// Function ID: 9389
+// Module ID: 9334
+// Function ID: 9335
 // Name: HeadphonesDenyIcon
-// Dependencies: [19, 21, 575, 5853, 9389, 2]
+// Dependencies: [19, 21, 575, 5871, 9335, 2]
 // Exports: HeadphonesDenyIcon
 
-// Module 9388 (HeadphonesDenyIcon)
+// Module 9334 (HeadphonesDenyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 9389 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 9335 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

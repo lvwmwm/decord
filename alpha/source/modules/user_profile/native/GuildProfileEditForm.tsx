@@ -1,33 +1,33 @@
-// Module ID: 16841
-// Function ID: 16842
+// Module ID: 16826
+// Function ID: 16827
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 5055, 7917, 1072, 1387, 21, 2176, 7465, 7490, 16718, 5384, 16706, 2123, 8883, 1113, 8881, 16717, 16717, 9941, 16727, 16721, 5745, 16811, 16751, 575, 5763, 8960, 8879, 7250, 11602, 16836, 504, 8903, 11591, 8961, 8886, 16045, 16842, 8946, 8957, 5209, 16843, 11592, 11593, 11610, 16730, 5197, 16731, 16753, 16757, 16758, 16762, 16766, 10092, 10093, 2]
+// Dependencies: [109, 19, 17, 5082, 7871, 1072, 1387, 21, 2171, 7410, 7435, 16715, 5404, 16703, 2118, 8829, 1113, 8827, 16714, 16714, 9891, 16723, 16717, 5765, 16807, 16747, 575, 5781, 8906, 8825, 7197, 11564, 16821, 504, 8849, 11553, 8907, 8832, 16040, 16827, 8892, 8903, 5229, 16828, 11554, 11555, 11572, 16726, 5224, 16727, 16749, 16753, 16754, 16758, 16762, 10043, 10044, 2]
 // Exports: default
 
-// Module 16841 (GuildProfileEditForm)
+// Module 16826 (GuildProfileEditForm)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import asyncRequire from "asyncRequire" /* 2123 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2176 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7465 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7490 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8881 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8883 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9941 */;
-import openPremiumModalDefault from "openPremiumModal" /* 10092 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10093 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16718 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16721 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16727 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16751 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16811 */;
+import asyncRequire from "asyncRequire" /* 2118 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2171 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7410 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7435 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8827 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8829 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9891 */;
+import openPremiumModalDefault from "openPremiumModal" /* 10043 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10044 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16715 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16717 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16723 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16747 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16807 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(7465).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(7410).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -102,7 +102,7 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(16706, dependencyMap.paths);
+        const tmp14 = asyncRequire(16703, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
@@ -158,7 +158,7 @@ function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
     const tmp3Result2 = UserProfileUpsellCardDefault;
     intl = tmp(1113).intl;
     obj5 = { variant: "body-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5763).Text;
+    Text = tmp(5781).Text;
     intl2 = tmp(1113).intl;
     tmp6Result = tmp6(tmp3Result2, obj3);
   }
@@ -170,7 +170,8 @@ let closure_3 = ["nick", "bio", "guild_tag"];
 ({ DISPLAY_NAME_MAX_LENGTH: closure_12, PRONOUNS_MAX_LENGTH: map1, UpsellTypes: closure_14, AnalyticsPages } = Constants);
 const PremiumUpsellTypes = PremiumConstants.PremiumUpsellTypes;
 ({ jsx: closure_16, jsxs: closure_17 } = Fragment);
-let closure_18 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
+let closure_18 = [1];
+let closure_19 = { page: AnalyticsPages.USER_SETTINGS, section: AnalyticsSections.SETTINGS_CUSTOMIZE_PROFILE };
 let result = size.fileFinishedImporting("modules/user_profile/native/GuildProfileEditForm.tsx");
 
 export default function GuildProfileEditForm(currentUser) {
@@ -222,14 +223,17 @@ export default function GuildProfileEditForm(currentUser) {
   let pendingThemeColors;
   let primaryColor;
   let secondaryColor;
+  let str6;
   let theme;
-  let tmp39;
-  let tmp44;
-  let tmp45;
-  let tmp53;
+  let tmp38;
+  let tmp42;
+  let tmp46;
+  let tmp47;
+  let tmp55;
   let tmpResult10;
   let tmpResult14;
   currentUser = currentUser.currentUser;
+  const header = currentUser.header;
   let guild;
   let analyticsLocations;
   let tmp = guild;
@@ -305,10 +309,10 @@ export default function GuildProfileEditForm(currentUser) {
   if (stateFromStores1 != null) {
     themeColors = stateFromStores1.themeColors;
   }
-  let tmp60Result8 = !result;
+  let tmp62Result8 = !result;
   const canResetThemeColorsResult = canResetThemeColors(pendingThemeColors, themeColors);
   if (!result) {
-    tmp60Result8 = !tmp7;
+    tmp62Result8 = !tmp7;
   }
   const tmp5Result9 = currentUser(analyticsLocations[24]);
   const floatingUpsellHeight = tmp5Result9.useFloatingUpsellHeight();
@@ -363,7 +367,7 @@ export default function GuildProfileEditForm(currentUser) {
   let num = 0;
   ({ gradientFallbackBackground, avatarBackground } = userProfileColors);
   const bottom = insets.bottom;
-  if (tmp60Result8) {
+  if (tmp62Result8) {
     num = height;
   }
   const sum = bottom + num;
@@ -392,65 +396,73 @@ export default function GuildProfileEditForm(currentUser) {
     items4 = [tmp4.container, ];
     const obj13 = { backgroundColor: gradientSecondaryBackground };
     items4[1] = obj13;
-    const obj14 = { ref, children: items5 };
-    const obj15 = { style: tmp4.bounceOffset };
+    const obj14 = { ref, stickyHeaderIndices: tmp38, stickyHeaderHiddenOnScroll: null != header, keyboardShouldPersistTaps: str6, children: items5 };
+    tmp38 = undefined;
     const ThemeContextProvider = tmp5(tmp2[42]).ThemeContextProvider;
-    items5 = [closure_16(closure_7, obj15), ];
+    const tmp65 = closure_6;
+    if (null != header) {
+      tmp38 = closure_18;
+    }
+    str6 = undefined;
+    if (null != header) {
+      str6 = "handled";
+    }
+    const obj15 = { style: tmp4.bounceOffset };
+    items5 = [closure_16(closure_7, obj15), header, ];
     const obj16 = { style: obj17, children: items6 };
     obj17 = { backgroundColor: gradientSecondaryBackground };
     const obj18 = { user: currentUser, displayProfile: tmp16Result, guildId: guild.id, guildMember: stateFromStores, guildMemberProfile: stateFromStores1, pendingAvatarSrc, pendingBanner, pendingThemeColors, disabled: isDisabled };
     items6 = [closure_16(EditGuildProfileBanner, obj18), ];
-    let tmp60Result = null;
-    const tmp63 = closure_6;
+    let tmp62Result = null;
     if (null != guild) {
       const obj19 = { style: items7, children: closure_16(tmpResult10, obj20) };
       items7 = [, , , ];
-      ({ avatarBackground: arr5[0], avatarPosition: arr5[1] } = tmp3);
+      ({ avatarBackground: arr7[0], avatarPosition: arr7[1] } = tmp3);
       items7[2] = tmp4.avatarContainer;
       items7[3] = obj10;
-      obj20 = { userId: currentUser.id, disabled: tmp39, disableStatus: false, guildId: id2, statusStyle: obj10 };
-      tmp39 = isDisabled;
+      obj20 = { userId: currentUser.id, disabled: tmp42, disableStatus: false, guildId: id2, statusStyle: obj10 };
+      tmp42 = isDisabled;
       tmpResult10 = tmp(analyticsLocations[43]);
       if (!isDisabled) {
-        tmp39 = !result;
+        tmp42 = !result;
       }
       id2 = undefined;
       if (guild != null) {
         id2 = guild.id;
       }
-      tmp60Result = tmp60(tmp62, obj19);
+      tmp62Result = tmp62(tmp64, obj19);
     }
-    const items8 = [tmp60Result, ];
-    const obj22 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items9, children: items10 };
+    const items8 = [tmp62Result, ];
+    const obj21 = { fallbackBackground: gradientFallbackBackground, primaryColor, secondaryColor, containerStyle: items9, children: items10 };
     items9 = [, , ];
-    ({ profileContentWrapper: arr7[0], profileContent: arr7[1] } = tmp3);
-    const obj23 = { paddingTop: 0, paddingBottom: sum1 };
-    items9[2] = obj23;
-    const obj24 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null, editEnabled: true };
-    ({ customStatusBubble: obj21.style, emojiOnlyCustomStatusBubble: obj21.emojiOnlyStyle } = tmp3);
+    ({ profileContentWrapper: arr9[0], profileContent: arr9[1] } = tmp3);
+    const obj22 = { paddingTop: 0, paddingBottom: sum1 };
+    items9[2] = obj22;
+    const obj23 = { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: null, emojiOnlyStyle: null, editEnabled: true };
+    ({ customStatusBubble: obj25.style, emojiOnlyCustomStatusBubble: obj25.emojiOnlyStyle } = tmp3);
     items10 = [, , ];
     const tmpResult11 = tmp(analyticsLocations[44]);
-    items10[0] = closure_16(tmp(analyticsLocations[45]), obj24);
-    const obj25 = { user: currentUser, displayName: tmp44, pronouns: tmp45, badges: tmp20, badgeContainerBackground: containerBackground, displayNameAccessibilityRole: "header", guildId: guild.id, pendingDisplayNameStyles };
-    tmp44 = pendingNickname;
+    items10[0] = closure_16(tmp(analyticsLocations[45]), obj23);
+    const obj24 = { user: currentUser, displayName: tmp46, pronouns: tmp47, badges: tmp20, badgeContainerBackground: containerBackground, displayNameAccessibilityRole: "header", guildId: guild.id, pendingDisplayNameStyles };
+    tmp46 = pendingNickname;
     const tmpResult12 = tmp(analyticsLocations[46]);
     if (pendingNickname == null) {
-      tmp44 = str;
+      tmp46 = str;
     }
-    tmp45 = str3;
+    tmp47 = str3;
     if ("" !== pendingPronouns) {
-      tmp45 = pendingPronouns;
+      tmp47 = pendingPronouns;
     }
-    items10[1] = closure_16(tmpResult12, obj25);
-    let tmp61Result = null;
+    items10[1] = closure_16(tmpResult12, obj24);
+    let tmp63Result = null;
     if (null != guild) {
       const obj26 = { style: items11, children: items12 };
       items11 = [tmp4.formContainer, ];
       const obj27 = { backgroundColor: containerBackground, paddingBottom: 20 };
       items11[1] = obj27;
-      let tmp47 = null;
+      let tmp49 = null;
       if (null == first2) {
-        tmp47 = null;
+        tmp49 = null;
         if (null == first) {
           if (null == first3) {
             const _Object = Object;
@@ -461,19 +473,19 @@ export default function GuildProfileEditForm(currentUser) {
             }
             first3 = stringResult;
           }
-          let tmp60Result5 = null;
+          let tmp62Result5 = null;
           if (null != first3) {
-            tmp60Result5 = null;
+            tmp62Result5 = null;
             if ("" !== first3) {
               const obj28 = { style: tmp4.errorContainer, children: closure_16(currentUser(analyticsLocations[27]).Text, obj29) };
               obj29 = { variant: "body-sm/semibold", color: "text-feedback-critical", children: first3 };
-              tmp60Result5 = tmp60(tmp62, obj28);
+              tmp62Result5 = tmp62(tmp64, obj28);
             }
           }
-          tmp47 = tmp60Result5;
+          tmp49 = tmp62Result5;
         }
       }
-      items12 = [tmp47, , , , , , , , , ];
+      items12 = [tmp49, , , , , , , , , ];
       const obj30 = {
         inputRef: ref1,
         label: intl2.string(currentUser(analyticsLocations[16]).t.me1lRk),
@@ -487,25 +499,25 @@ export default function GuildProfileEditForm(currentUser) {
             },
         placeholder: tmpResult14.getName(currentUser),
         maxLength,
-        disabled: tmp53
+        disabled: tmp55
       };
       const tmpResult13 = tmp(analyticsLocations[47]);
       intl2 = tmp5(tmp2[16]).intl;
       if (pendingNickname == null) {
         pendingNickname = str;
       }
-      tmp53 = !canEditNickname;
+      tmp55 = !canEditNickname;
       tmpResult14 = tmp(analyticsLocations[48]);
       if (canEditNickname) {
-        tmp53 = isDisabled;
+        tmp55 = isDisabled;
       }
       items12[1] = closure_16(tmpResult13, obj30);
-      let tmp60Result6 = result;
-      if (tmp60Result6) {
+      let tmp62Result6 = result;
+      if (tmp62Result6) {
         const obj31 = { user: currentUser, guildId: guild.id };
-        tmp60Result6 = tmp60(tmp(tmp2[49]), obj31);
+        tmp62Result6 = tmp62(tmp(tmp2[49]), obj31);
       }
-      items12[2] = tmp60Result6;
+      items12[2] = tmp62Result6;
       const obj32 = {
         inputRef: ref2,
         label: intl3.string(currentUser(analyticsLocations[16]).t["+T3RI/"]),
@@ -528,7 +540,7 @@ export default function GuildProfileEditForm(currentUser) {
       intl3 = tmp5(tmp2[16]).intl;
       intl4 = tmp5(tmp2[16]).intl;
       items12[3] = closure_16(tmpResult15, obj32);
-      let tmp60Result7 = null;
+      let tmp62Result7 = null;
       if (result) {
         const obj33 = {
           inputRef: ref3,
@@ -553,9 +565,9 @@ export default function GuildProfileEditForm(currentUser) {
         if (pendingBio == null) {
           pendingBio = str4;
         }
-        tmp60Result7 = tmp60(tmpResult16, obj33);
+        tmp62Result7 = tmp62(tmpResult16, obj33);
       }
-      items12[4] = tmp60Result7;
+      items12[4] = tmp62Result7;
       const obj34 = {
         pendingAvatarSrc,
         pendingThemeColors,
@@ -577,29 +589,29 @@ export default function GuildProfileEditForm(currentUser) {
       items12[8] = closure_16(tmp(analyticsLocations[53]), obj37);
       const obj38 = { user: currentUser, pendingNameplate, guildId: guild.id };
       items12[9] = closure_16(tmp(analyticsLocations[54]), obj38);
-      tmp61Result = tmp61(tmp62, obj26);
+      tmp63Result = tmp63(tmp64, obj26);
     }
     const obj39 = { children: items8 };
-    items10[2] = tmp61Result;
-    items8[1] = closure_17(tmpResult11, obj22);
+    items10[2] = tmp63Result;
+    items8[1] = closure_17(tmpResult11, obj21);
     items6[1] = closure_17(closure_7, obj39);
-    items5[1] = closure_17(closure_7, obj16);
-    items13 = [closure_17(tmp63, obj14), ];
-    if (tmp60Result8) {
+    items5[2] = closure_17(closure_7, obj16);
+    items13 = [closure_17(tmp65, obj14), ];
+    if (tmp62Result8) {
       const obj40 = {
         onButtonPress: function handleUpsellPress() {
               let obj2;
               const obj = { analyticsLocation: obj2, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
               obj2 = { object: constants.BUTTON_CTA };
               const tmp = openPremiumModalDefault;
-              const merged = Object.assign(closure_18);
+              const merged = Object.assign(closure_19);
               tmp(obj);
             },
         onLayout
       };
-      tmp60Result8 = tmp60(GuildProfileTryItOutUpsellExperimentWrapper, obj40);
+      tmp62Result8 = tmp62(GuildProfileTryItOutUpsellExperimentWrapper, obj40);
     }
-    items13[1] = tmp60Result8;
+    items13[1] = tmp62Result8;
     return closure_16(ThemeContextProvider, obj11);
   }
 };

@@ -1,13 +1,13 @@
-// Module ID: 8576
-// Function ID: 8577
+// Module ID: 8522
+// Function ID: 8523
 // Name: DoubleTapErrorToast
-// Dependencies: [1388, 1113, 5849, 2]
+// Dependencies: [1388, 1113, 5867, 2]
 // Exports: showDoubleTapErrorToast
 
-// Module 8576 (DoubleTapErrorToast)
+// Module 8522 (DoubleTapErrorToast)
 import intl4 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1388 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
 import size from "module_2" /* 2 */;
 
 const EmojiDisabledReasons = EmojiConstants.EmojiDisabledReasons;

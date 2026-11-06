@@ -1,30 +1,48 @@
 // Module ID: 13339
 // Function ID: 13340
-// Dependencies: [13295, 13325]
-// Exports: createClientReportEnvelope
+// Dependencies: []
+// Exports: parseCookie
 
 // Module 13339
-import _browserPerformanceTimeOriginMode from "_browserPerformanceTimeOriginMode" /* 13295 */;
-import _mod13325 from "module_13325" /* 13325 */;
 
-
-export function createClientReportEnvelope(discarded_events, dsn, arg2) {
-  let obj3;
-  let result = arg2;
-  const items = [{ type: "client_report" }, ];
-  if (!arg2) {
-    const obj = _browserPerformanceTimeOriginMode;
-    result = obj.dateTimestampInSeconds();
+export function parseCookie(arr) {
+  const obj = {};
+  let num = 0;
+  if (0 < arr.length) {
+    const index = arr.indexOf("=", num);
+    if (-1 !== index) {
+      let length = arr.indexOf(";", num);
+      if (-1 === length) {
+        length = arr.length;
+      } else {
+        let sum;
+        if (length < index) {
+          sum = arr.lastIndexOf(";", index - 1) + 1;
+        }
+        num = sum;
+      }
+      const str = arr.slice(num, index);
+      const trimmed = str.trim();
+      if (undefined === obj[trimmed]) {
+        const str2 = arr.slice(index + 1, length);
+        const trimmed1 = str2.trim();
+        let substr = trimmed1;
+        if (34 === trimmed1.charCodeAt(0)) {
+          substr = trimmed1.slice(1, -1);
+        }
+        try {
+          let decodeURIComponentResult = substr;
+          if (-1 !== substr.indexOf("%")) {
+            const _decodeURIComponent = decodeURIComponent;
+            decodeURIComponentResult = decodeURIComponent(substr);
+          }
+          obj[trimmed] = decodeURIComponentResult;
+        } catch (err) {
+          obj[trimmed] = substr;
+        }
+      }
+      sum = length + 1;
+    }
   }
-  items[1] = { timestamp: result, discarded_events };
-  const createEnvelope = _mod13325.createEnvelope;
-  _mod13325;
-  if (dsn) {
-    obj3 = { dsn };
-    const obj2 = { dsn };
-  } else {
-    obj3 = {};
-  }
-  const items1 = [items];
-  return createEnvelope(obj3, items1);
+  return obj;
 }

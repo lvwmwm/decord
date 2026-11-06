@@ -1,15 +1,15 @@
-// Module ID: 17306
-// Function ID: 17307
+// Module ID: 17294
+// Function ID: 17295
 // Name: OrbsArcadeHowToPlaySheet
-// Dependencies: [19, 17294, 21, 504, 11021, 17307, 1113, 17308, 17304, 2]
+// Dependencies: [19, 17282, 21, 504, 10973, 17295, 1113, 17296, 17292, 2]
 // Exports: default
 
-// Module 17306 (OrbsArcadeHowToPlaySheet)
+// Module 17294 (OrbsArcadeHowToPlaySheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17307 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17308 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17295 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17296 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17294 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17282 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -27,7 +27,7 @@ export default function OrbsArcadeHowToPlaySheet(gameId) {
   let tmp5Result2 = null;
   if (null != stateFromStores) {
     let tmp5Result;
-    const PromoSheet = tmp(11021).PromoSheet;
+    const PromoSheet = tmp(10973).PromoSheet;
     if (null != stateFromStores.asset) {
       const obj2 = { asset: stateFromStores.asset };
       tmp5Result = tmp5(OrbsArcadeGameGraphicDefault, obj2);
@@ -38,7 +38,7 @@ export default function OrbsArcadeHowToPlaySheet(gameId) {
     if (str == null) {
       str = "";
     }
-    ({ game: stateFromStores, sheetKey: "OrbsArcadeHowToPlaySheet", location: gameId(17304).OrbsArcadeCtaLocation.HOW_TO_PLAY_SHEET, surface, secondaryAction: gameId(17308).OrbsArcadeSheetSecondaryAction.CLOSE, direction: "vertical" });
+    ({ game: stateFromStores, sheetKey: "OrbsArcadeHowToPlaySheet", location: gameId(17292).OrbsArcadeCtaLocation.HOW_TO_PLAY_SHEET, surface, secondaryAction: gameId(17296).OrbsArcadeSheetSecondaryAction.CLOSE, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
     tmp5Result2 = tmp5(PromoSheet, obj3);
   }

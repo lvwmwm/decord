@@ -1,10 +1,10 @@
-// Module ID: 14266
-// Function ID: 14267
+// Module ID: 14243
+// Function ID: 14244
 // Name: useCommunicationDisabledCountdownCleanup
-// Dependencies: [19, 7769, 14267, 2]
+// Dependencies: [19, 7723, 14244, 2]
 // Exports: useCommunicationDisabledCountdownCleanup
 
-// Module 14266 (useCommunicationDisabledCountdownCleanup)
+// Module 14243 (useCommunicationDisabledCountdownCleanup)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

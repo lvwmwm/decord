@@ -1,22 +1,22 @@
-// Module ID: 18432
-// Function ID: 18433
+// Module ID: 18424
+// Function ID: 18425
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2191, 1385, 17559, 1072, 21, 5143, 575, 1187, 9662, 504, 7624, 9120, 9116, 1252, 9113, 1411, 9358, 17560, 8807, 5763, 2024, 5854, 1113, 2]
+// Dependencies: [19, 17, 2186, 1385, 17548, 1072, 21, 5170, 575, 1187, 9611, 504, 7569, 9066, 9062, 1252, 9059, 1411, 9304, 17549, 8753, 5781, 2024, 5872, 1113, 2]
 
-// Module 18432 (HappeningNowCardEvent)
+// Module 18424 (HappeningNowCardEvent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9113 */;
-import ClipView from "ClipView" /* 9662 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9059 */;
+import ClipView from "ClipView" /* 9611 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import UserStore from "UserStore" /* 1385 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17559 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17548 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let HAPPENING_NOW_EVENT_BANNER_WIDTH;

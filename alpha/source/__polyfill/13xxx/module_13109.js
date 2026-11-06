@@ -1,88 +1,39 @@
 // Module ID: 13109
 // Function ID: 13110
-// Dependencies: [13062, 13106]
+// Dependencies: [13110, 13117, 13123, 13068]
 
 // Module 13109
-import tokenize from "tokenize" /* 13062 */;
-import tokenize2 from "tokenize" /* 13106 */;
+import _mod13068 from "module_13068" /* 13068 */;
+import _mod13110 from "module_13110" /* 13110 */;
+import _mod13117 from "module_13117" /* 13117 */;
+import _mod13123 from "module_13123" /* 13123 */;
 
-let items;
 let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, null, true);
-}
-function consumeRule() {
-  return this.parseWithFallback(this.Rule, consumeRaw);
-}
-function consumeRawDeclaration(arg0) {
-  return this.Raw(arg0, tokenize2.mode.semicolonIncluded, true);
-}
-function consumeDeclaration() {
-  const self = this;
-  if (this.scanner.tokenType === Semicolon) {
-    return consumeRawDeclaration.call(self, self.scanner.tokenIndex);
-  } else {
-    const parseWithFallbackResult = self.parseWithFallback(self.Declaration, consumeRawDeclaration);
-    if (self.scanner.tokenType === tmp) {
-      const iter = self.scanner;
-      iter.next();
+const obj = { parseContext: obj2, scope: _mod13110, atrule: _mod13117, pseudo: _mod13123, node: _mod13068 };
+obj2 = {
+  default: "StyleSheet",
+  stylesheet: "StyleSheet",
+  atrule: "Atrule",
+  atrulePrelude(atrule) {
+    let StringResult = null;
+    const AtrulePrelude = this.AtrulePrelude;
+    if (atrule.atrule) {
+      const _String = String;
+      StringResult = String(atrule.atrule);
     }
-    return parseWithFallbackResult;
-  }
-}
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const Semicolon = tokenize.TYPE.Semicolon;
-const AtKeyword = tokenize.TYPE.AtKeyword;
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
-const RightCurlyBracket = tokenize.TYPE.RightCurlyBracket;
-let obj = {
-  name: "Block",
-  structure: obj2,
-  parse(arg0) {
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const obj = arg0 ? consumeDeclaration : consumeRule;
-    const list = this.createList();
-    this.eat(LeftCurlyBracket);
-    if (!this.scanner.eof) {
-      const tokenType = self.scanner.tokenType;
-      while (RightCurlyBracket !== tokenType) {
-        if (WhiteSpace !== tokenType) {
-          if (Comment !== tokenType) {
-            if (AtKeyword === tokenType) {
-              let arr = list.push(self.parseWithFallback(self.Atrule, consumeRaw));
-            } else {
-              let arr3 = list.push(obj.call(self));
-            }
-          }
-          if (self.scanner.eof) {
-            break;
-          }
-        }
-        let iter = self.scanner;
-        let nextResult = iter.next();
-      }
-    }
-    if (!self.scanner.eof) {
-      self.eat(RightCurlyBracket);
-    }
-    const element = { type: "Block", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
-    return element;
+    return AtrulePrelude(StringResult);
   },
-  generate(arg0) {
-    this.chunk("{");
-    this.children(arg0, function(type) {
-      if ("Declaration" === type.type) {
-        const self = this;
-        this.chunk(";");
-      }
-    });
-    this.chunk("}");
+  mediaQueryList: "MediaQueryList",
+  mediaQuery: "MediaQuery",
+  rule: "Rule",
+  selectorList: "SelectorList",
+  selector: "Selector",
+  block() {
+    return this.Block(true);
   },
-  walkContext: "block"
+  declarationList: "DeclarationList",
+  declaration: "Declaration",
+  value: "Value"
 };
-obj2 = { children: items };
-items = [["Atrule", "Rule", "Declaration"]];
 
 export default obj;

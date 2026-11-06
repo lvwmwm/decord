@@ -1,26 +1,26 @@
-// Module ID: 8842
-// Function ID: 8843
+// Module ID: 8788
+// Function ID: 8789
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 8535, 5076, 4992, 5055, 6846, 1385, 8843, 21, 2121, 6211, 6209, 6208, 504, 8580, 7585, 8845, 8846, 572, 5731, 6203, 2]
+// Dependencies: [32, 19, 8481, 5103, 5019, 5082, 6788, 1385, 8789, 21, 2116, 6231, 6229, 6228, 504, 8526, 7530, 8791, 8792, 572, 5751, 6223, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 8842 (ComponentStateContext)
+// Module 8788 (ComponentStateContext)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Server from "Server" /* 2121 */;
-import useMountEffectDefault from "useMountEffect" /* 5731 */;
-import InteractionTypes from "InteractionTypes" /* 6208 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6211 */;
-import InteractionUtils from "InteractionUtils" /* 8846 */;
+import Server from "Server" /* 2116 */;
+import useMountEffectDefault from "useMountEffect" /* 5751 */;
+import InteractionTypes from "InteractionTypes" /* 6228 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 6231 */;
+import InteractionUtils from "InteractionUtils" /* 8792 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InteractionStore from "InteractionStore" /* 8535 */;
-import LurkingStore from "LurkingStore" /* 5076 */;
-import ChannelStore from "ChannelStore" /* 4992 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6846 */;
+import InteractionStore from "InteractionStore" /* 8481 */;
+import LurkingStore from "LurkingStore" /* 5103 */;
+import ChannelStore from "ChannelStore" /* 5019 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6788 */;
 import UserStore from "UserStore" /* 1385 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8843 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8789 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ function isInteractionComponent(type) {
           if (Server.ComponentType.MENTIONABLE_SELECT !== type) {
             if (Server.ComponentType.CHANNEL_SELECT !== type) {
               if (Server.ComponentType.ACTION_ROW !== type) {
-                const TEXT_INPUT = tmp(2121).ComponentType.TEXT_INPUT;
+                const TEXT_INPUT = tmp(2116).ComponentType.TEXT_INPUT;
               }
               return false;
             }
@@ -55,23 +55,23 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   }
   let DISABLED = InteractionComponentTypes.ActionComponentState.NORMAL;
   let DISABLED2 = DISABLED;
-  const tmp3 = null != interaction && interaction.state !== tmp(6209).InteractionState.FAILED;
+  const tmp3 = null != interaction && interaction.state !== tmp(6229).InteractionState.FAILED;
   if (tmp3) {
     if (interaction.data.interactionType === InteractionTypes.InteractionTypes.MESSAGE_COMPONENT) {
       if (interaction.data.componentId === id.id) {
-        DISABLED = tmp(6211).ActionComponentState.LOADING;
+        DISABLED = tmp(6231).ActionComponentState.LOADING;
       }
       DISABLED2 = DISABLED;
     }
     if (isInteractionComponent(id)) {
-      DISABLED = tmp(6211).ActionComponentState.DISABLED;
+      DISABLED = tmp(6231).ActionComponentState.DISABLED;
     }
   }
   if (flag) {
     flag = isInteractionComponent(id);
   }
   if (flag) {
-    DISABLED2 = tmp(6211).ActionComponentState.DISABLED;
+    DISABLED2 = tmp(6231).ActionComponentState.DISABLED;
   }
   return DISABLED2;
 }
@@ -132,16 +132,16 @@ function useShouldDisableInteractiveComponents(channel_id) {
     return flag;
   });
   let guild_id;
-  const useCurrentUserCommunicationDisabled = channel(8580).useCurrentUserCommunicationDisabled;
-  channel(8580);
+  const useCurrentUserCommunicationDisabled = channel(8526).useCurrentUserCommunicationDisabled;
+  channel(8526);
   if (channel != null) {
     guild_id = channel.guild_id;
   }
   const tmp8 = _slicedToArray(useCurrentUserCommunicationDisabled(guild_id), 2)[1];
-  const tmpResult = tmp(7585);
+  const tmpResult = tmp(7530);
   const isThreadModerator = tmpResult.useIsThreadModerator(channel);
   let tmp11 = !stateFromStores;
-  const tmpResult2 = tmp(7585);
+  const tmpResult2 = tmp(7530);
   const canUnarchiveThread = tmpResult2.useCanUnarchiveThread(channel);
   if (stateFromStores) {
     tmp11 = stateFromStores1;
@@ -365,7 +365,7 @@ function useComponentStateForModal(customId, id, arg2) {
   if (stateFromStores == null) {
     stateFromStores = null;
   }
-  const obj3 = { state: stateFromStores, executeStateUpdate: callback1, isDisabled: false, visualState: tmp(6211).ActionComponentState.NORMAL, error: tmp8 };
+  const obj3 = { state: stateFromStores, executeStateUpdate: callback1, isDisabled: false, visualState: tmp(6231).ActionComponentState.NORMAL, error: tmp8 };
   return obj3;
 }
 const jsx = Fragment.jsx;

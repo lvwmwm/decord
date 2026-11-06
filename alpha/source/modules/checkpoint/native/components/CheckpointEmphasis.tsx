@@ -1,22 +1,22 @@
-// Module ID: 13892
-// Function ID: 13893
+// Module ID: 13867
+// Function ID: 13868
 // Name: CheckpointEmphasis
-// Dependencies: [19, 17, 6204, 21, 1357, 6571, 5143, 575, 5778, 11240, 8176, 5763, 2]
+// Dependencies: [19, 17, 6224, 21, 1357, 6591, 5170, 575, 5796, 11195, 8122, 5781, 2]
 // Exports: default
 
-// Module 13892 (CheckpointEmphasis)
+// Module 13867 (CheckpointEmphasis)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import useFontScale from "useFontScale" /* 5778 */;
-import CheckpointConstants from "CheckpointConstants" /* 6204 */;
-import inlineStyles from "inlineStyles" /* 8176 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11240 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import useFontScale from "useFontScale" /* 5796 */;
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
+import inlineStyles from "inlineStyles" /* 8122 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 11195 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1357 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6571 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6591 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;

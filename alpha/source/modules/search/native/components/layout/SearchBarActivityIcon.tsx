@@ -1,19 +1,19 @@
-// Module ID: 18994
-// Function ID: 18995
+// Module ID: 18983
+// Function ID: 18984
 // Name: SearchBarActivityIcon
-// Dependencies: [19, 17, 7001, 14131, 9982, 21, 5143, 575, 563, 14124, 1652, 5380, 7359, 1377, 2]
+// Dependencies: [19, 17, 6943, 14108, 9933, 21, 5170, 575, 563, 14101, 1652, 5400, 7306, 1377, 2]
 
-// Module 18994 (SearchBarActivityIcon)
+// Module 18983 (SearchBarActivityIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import SearchConstants from "SearchConstants" /* 9982 */;
-import SearchUtils from "SearchUtils" /* 14124 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import SearchConstants from "SearchConstants" /* 9933 */;
+import SearchUtils from "SearchUtils" /* 14101 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 7001 */;
-import SearchQueryStore from "SearchQueryStore" /* 14131 */;
+import SearchMessageStore from "SearchMessageStore" /* 6943 */;
+import SearchQueryStore from "SearchQueryStore" /* 14108 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let c10;

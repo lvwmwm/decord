@@ -1,21 +1,21 @@
-// Module ID: 14193
-// Function ID: 14194
+// Module ID: 14170
+// Function ID: 14171
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 5055, 14190, 21, 5143, 575, 504, 14024, 5854, 7124, 1113, 5386, 5387, 7433, 2]
+// Dependencies: [19, 17, 5082, 14167, 21, 5170, 575, 504, 14000, 5872, 7068, 1113, 5406, 5407, 7380, 2]
 // Exports: default
 
-// Module 14193 (ApplicationCommandsCategories)
+// Module 14170 (ApplicationCommandsCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5387 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14024 */;
+import HapticUtils from "HapticUtils" /* 5406 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5407 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14000 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5055 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 14190 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import GuildMemberStore from "GuildMemberStore" /* 5082 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 14167 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let nativeEvent;
@@ -64,7 +64,7 @@ let closure_9 = react.memo(function CategoryItem(section) {
     return obj.getApplicationCommandsIconSource(section, stateFromStores);
   }, items1);
   null != memo && jsx(FastImageDefault, { style: tmp.categoryImage, source: memo });
-  const PressableOpacity = tmp2(7124).PressableOpacity;
+  const PressableOpacity = tmp2(7068).PressableOpacity;
   const intl = tmp2(1113).intl;
   const formatToPlainString = intl.formatToPlainString;
   const t = tmp2(1113).t;

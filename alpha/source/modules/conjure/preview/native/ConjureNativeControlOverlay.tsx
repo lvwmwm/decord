@@ -1,21 +1,21 @@
-// Module ID: 12451
-// Function ID: 12452
+// Module ID: 12416
+// Function ID: 12417
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 5144, 21, 5143, 575, 12452, 11111, 504, 1652, 5773, 5774, 5380, 1113, 3995, 12453, 12457, 5763, 5770, 2]
+// Dependencies: [19, 17, 5171, 21, 5170, 575, 12417, 11064, 504, 1652, 5791, 5792, 5400, 1113, 4024, 12418, 12422, 5781, 5788, 2]
 // Exports: default
 
-// Module 12451 (ConjureNativeControlOverlay)
+// Module 12416 (ConjureNativeControlOverlay)
 import nativeDefault from "native" /* 575 */;
 import _mod1652 from "module_1652" /* 1652 */;
-import timing_timing from "timing/timing" /* 5380 */;
-import spring_spring from "spring/spring" /* 5773 */;
-import springPresets from "springPresets" /* 5774 */;
-import useConjureControlBar from "useConjureControlBar" /* 12452 */;
+import timing_timing from "timing/timing" /* 5400 */;
+import spring_spring from "spring/spring" /* 5791 */;
+import springPresets from "springPresets" /* 5792 */;
+import useConjureControlBar from "useConjureControlBar" /* 12417 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5144 */;
+import AccessibilityStore from "AccessibilityStore" /* 5171 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set, set2;
@@ -89,12 +89,12 @@ export default function ConjureNativeControlOverlay(arg0) {
   ({ active, children } = arg0);
   let tmp = closure_9();
   let tmp2 = conjureControlPhase;
-  let obj = conjureControlPhase(12452);
+  let obj = conjureControlPhase(12417);
   conjureControlPhase = obj.useConjureControlPhase(active);
-  let obj2 = conjureControlPhase(12452);
+  let obj2 = conjureControlPhase(12417);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj3 = conjureControlPhase(11111);
+  const obj3 = conjureControlPhase(11064);
   const conjureControlTuning = obj3.useConjureControlTuning(projectId);
   let items = [sharedValue2];
   const obj4 = conjureControlPhase(504);
@@ -223,7 +223,7 @@ export default function ConjureNativeControlOverlay(arg0) {
   const animatedStyle2 = tmp2Result10.useAnimatedStyle(ConjureNativeControlOverlayTsx3);
   const intl = tmp2(1113).intl;
   const string = intl.string;
-  const tmp26 = stateFromStores(3995);
+  const tmp26 = stateFromStores(4024);
   if (tmp8) {
     let prop;
     let tmp30;
@@ -261,20 +261,20 @@ export default function ConjureNativeControlOverlay(arg0) {
       items10 = [tmp.bar, animatedStyle1];
       View2 = tmp28(1652).View;
       if (tmp8) {
-        tmp44Result = tmp44(tmp2(12453).AILoader, { size: 12, color: "text-overlay-light" });
+        tmp44Result = tmp44(tmp2(12418).AILoader, { size: 12, color: "text-overlay-light" });
       } else {
         const obj8 = { size: "sm", color: tmp28(575).colors.TEXT_OVERLAY_LIGHT };
-        const SparklesIcon = tmp2(12457).SparklesIcon;
+        const SparklesIcon = tmp2(12422).SparklesIcon;
         tmp44Result = tmp44(SparklesIcon, obj8);
       }
       items11 = [tmp44Result, , ];
       const obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", lineClamp: 1, style: tmp.title, accessibilityLabel: combined, children: stringResult };
       combined = stringResult;
-      const Text = tmp2(5763).Text;
+      const Text = tmp2(5781).Text;
       if (tmp8) {
         const intl2 = tmp2(1113).intl;
         const _HermesInternal = HermesInternal;
-        combined = "" + stringResult + ". " + intl2.string(tmp28(3995).fg1sor);
+        combined = "" + stringResult + ". " + intl2.string(tmp28(4024).fg1sor);
       }
       items11[1] = closure_6(Text, obj9);
       let tmp44Result3 = null;
@@ -282,8 +282,8 @@ export default function ConjureNativeControlOverlay(arg0) {
         tmp44Result3 = null;
         if (null != stop) {
           const obj10 = { style: tmp.actions, children: closure_6(Button, obj11) };
-          obj11 = { variant: "primary-overlay", size: "sm", text: intl3.string(tmp28(3995).oU59sU), loading: stopping, onPress: stop };
-          Button = tmp2(5770).Button;
+          obj11 = { variant: "primary-overlay", size: "sm", text: intl3.string(tmp28(4024).oU59sU), loading: stopping, onPress: stop };
+          Button = tmp2(5788).Button;
           intl3 = tmp2(1113).intl;
           tmp44Result3 = tmp44(tmp33, obj10);
         }

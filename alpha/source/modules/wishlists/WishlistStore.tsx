@@ -1,14 +1,14 @@
-// Module ID: 9624
-// Function ID: 9625
+// Module ID: 9573
+// Function ID: 9574
 // Name: WishlistStore
-// Dependencies: [9625, 1242, 7917, 504, 572, 2]
+// Dependencies: [9574, 1242, 7871, 504, 572, 2]
 
-// Module 9624 (WishlistStore)
+// Module 9573 (WishlistStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import UserProfileStore from "UserProfileStore" /* 7917 */;
-import WishlistRecord_mod from "WishlistRecord" /* 9625 */;
+import UserProfileStore from "UserProfileStore" /* 7871 */;
+import WishlistRecord_mod from "WishlistRecord" /* 9574 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -56,8 +56,8 @@ class WishlistStore extends Store {
   getError(arg0) {
     return this.get(arg0).error;
   }
-  getUpdatedAt(wishlistId) {
-    return this.get(wishlistId).updatedAt;
+  getUpdatedAt(firstWishlistId) {
+    return this.get(firstWishlistId).updatedAt;
   }
   getLastFetchedAt(arg0) {
     return this.get(arg0).lastFetchedAt;

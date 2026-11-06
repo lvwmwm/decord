@@ -1,20 +1,20 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 9775
+// Function ID: 9776
 // Name: PromotionsActionCreators
-// Dependencies: [5, 2191, 1385, 9782, 1387, 1072, 572, 9825, 1282, 7727, 4973, 1227, 9823, 2]
+// Dependencies: [5, 2186, 1385, 9732, 1387, 1072, 572, 9776, 1282, 7680, 5000, 1227, 9774, 2]
 // Exports: addClaimedOutboundPromotionCode, clearActivePromotions, dismissOutboundPromotionNotice, fetchClaimedOutboundPromotionCodes, maybeFetchActivePromotions
 
-// Module 9824 (PromotionsActionCreators)
+// Module 9775 (PromotionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import wrappers from "wrappers" /* 1227 */;
 import HTTPUtils from "HTTPUtils" /* 1282 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9825 */;
+import MarketingComponentPlatform from "MarketingComponentPlatform" /* 9776 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2191 */;
+import LocaleStore from "LocaleStore" /* 2186 */;
 import UserStore from "UserStore" /* 1385 */;
-import PromotionsStore from "PromotionsStore" /* 9782 */;
+import PromotionsStore from "PromotionsStore" /* 9732 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5, c6;
@@ -146,12 +146,12 @@ function dismissOutboundPromotionNotice() {
   obj.dispatch({ type: "OUTBOUND_PROMOTION_NOTICE_DISMISS" });
   const lastDismissedOutboundPromotionStartDate = PromotionsStore.lastDismissedOutboundPromotionStartDate;
   if (null != lastDismissedOutboundPromotionStartDate) {
-    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(4973).PreloadedUserSettingsActionCreators;
+    const PreloadedUserSettingsActionCreators = lastDismissedOutboundPromotionStartDate(5000).PreloadedUserSettingsActionCreators;
     PreloadedUserSettingsActionCreators.updateAsync("userContent", async (arg0) => {
       const StringValue = wrappers.StringValue;
       obj = { value: lastDismissedOutboundPromotionStartDate };
       arg0.lastDismissedOutboundPromotionStartDate = StringValue.create(obj);
-    }, lastDismissedOutboundPromotionStartDate(4973).UserSettingsDelay.INFREQUENT_USER_ACTION);
+    }, lastDismissedOutboundPromotionStartDate(5000).UserSettingsDelay.INFREQUENT_USER_ACTION);
   }
 }
 function fetchClaimedOutboundPromotionCodes() {

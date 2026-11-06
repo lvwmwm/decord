@@ -1,12 +1,12 @@
-// Module ID: 16038
-// Function ID: 16039
+// Module ID: 16033
+// Function ID: 16034
 // Name: GuildBadgeButterfly
-// Dependencies: [19, 21, 16001, 8176, 2]
+// Dependencies: [19, 21, 15996, 8122, 2]
 // Exports: GuildBadgeButterfly
 
-// Module 16038 (GuildBadgeButterfly)
-import inlineStyles from "inlineStyles" /* 8176 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16001 */;
+// Module 16033 (GuildBadgeButterfly)
+import inlineStyles from "inlineStyles" /* 8122 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15996 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

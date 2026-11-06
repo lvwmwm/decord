@@ -1,68 +1,75 @@
-// Module ID: 13935
-// Function ID: 13936
+// Module ID: 13911
+// Function ID: 13912
 // Name: useMaybeFetchCheckpointData
-// Dependencies: [19, 13668, 504, 13670, 7623, 2]
+// Dependencies: [19, 13643, 6224, 504, 6594, 13645, 7568, 2]
 // Exports: useMaybeFetchCheckpointData
 
-// Module 13935 (useMaybeFetchCheckpointData)
-import GameActionCreators from "GameActionCreators" /* 7623 */;
-import CheckpointStore2 from "CheckpointStore" /* 13668 */;
+// Module 13911 (useMaybeFetchCheckpointData)
+import CheckpointConstants from "CheckpointConstants" /* 6224 */;
+import GameActionCreators from "GameActionCreators" /* 7568 */;
+import CheckpointStore2 from "CheckpointStore" /* 13643 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStore = CheckpointStore2;
-let dependencyMap;
 
-let c2;
-let c3;
-({ useEffect: c2, useMemo: c3 } = react);
 const CheckpointFetchStates = CheckpointStore2.CheckpointFetchStates;
+let closure_5 = CheckpointConstants.CHECKPOINT_GLOBAL_GAME_CATEGORIES;
 const result = size.fileFinishedImporting("modules/checkpoint/useMaybeFetchCheckpointData.tsx");
 
 export function useMaybeFetchCheckpointData() {
-  let closure_1;
-  let stateFromStores1;
-  let obj = stateFromStores1(504);
-  const items = [CheckpointStore];
+  let stateFromStoresArray;
+  let obj = stateFromStoresArray(504);
+  let items = [CheckpointStore];
   const stateFromStores = obj.useStateFromStores(items, () => CheckpointStore.fetchState);
   const items1 = [CheckpointStore];
-  const obj2 = stateFromStores1(504);
-  stateFromStores1 = obj2.useStateFromStores(items1, () => {
-    const stats = CheckpointStore.stats;
-    let tmp;
+  const obj2 = stateFromStoresArray(504);
+  stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
+    let globalStats;
+    let stats;
+    ({ stats, globalStats } = CheckpointStore);
+    let games1;
+    if (globalStats != null) {
+      games1 = globalStats.games;
+    }
+    const obj = stateFromStoresArray(dependencyMap[4]);
+    if (!obj.hasCheckpointGames(stats)) {
+      if (null != games1) {
+        const items = [];
+        const item = closure_1_5.forEach((item) => {
+          const first = games1[item.list][0];
+          if (null != first) {
+            items.push(first.id);
+          }
+        });
+        return items;
+      }
+    }
+    let mapped;
     if (stats != null) {
       const games = stats.games;
       if (games != null) {
-        tmp = games.games;
+        const arr3 = games.games;
+        mapped = arr3.map((game) => game.game.id);
       }
-    }
-    return tmp;
-  });
-  const items2 = [stateFromStores1];
-  const tmp3 = closure_3(() => {
-    let mapped;
-    const arr = stateFromStores1;
-    if (stateFromStores1 != null) {
-      mapped = arr.map((game) => game.game.id);
     }
     if (mapped == null) {
       mapped = [];
     }
     return mapped;
-  }, items2);
-  dependencyMap = tmp3;
-  closure_2(() => {
+  });
+  const effect = react.useEffect(() => {
     const fetchState = CheckpointStore.fetchState;
     const tmp = fetchState !== constants.INIT && fetchState !== constants.ERROR;
     if (!tmp) {
-      const obj = stateFromStores1(closure_1[3]);
+      const obj = stateFromStoresArray(dependencyMap[5]);
       const checkpointData = obj.fetchCheckpointData();
     }
   }, []);
-  const items3 = [tmp3];
-  closure_2(() => {
+  const items2 = [stateFromStoresArray];
+  const effect1 = react.useEffect(() => {
     const obj = GameActionCreators;
-    const gamesWithSupplementalData = obj.fetchGamesWithSupplementalData(closure_1);
-  }, items3);
+    const gamesWithSupplementalData = obj.fetchGamesWithSupplementalData(stateFromStoresArray);
+  }, items2);
   return stateFromStores;
 }

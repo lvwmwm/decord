@@ -1,18 +1,18 @@
-// Module ID: 10943
-// Function ID: 10944
+// Module ID: 10895
+// Function ID: 10896
 // Name: getActivityStatusText
-// Dependencies: [5899, 10944, 8028, 10941, 10945, 1113, 10946, 10947, 9061, 2]
+// Dependencies: [5918, 10896, 7982, 10893, 10897, 1113, 10898, 10899, 9007, 2]
 // Exports: default
 
-// Module 10943 (getActivityStatusText)
+// Module 10895 (getActivityStatusText)
 import intl9 from "intl" /* 1113 */;
-import ActivityTypes from "ActivityTypes" /* 5899 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8028 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 9061 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 10941 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 10944 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10946 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10947 */;
+import ActivityTypes from "ActivityTypes" /* 5918 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7982 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 9007 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 10893 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 10896 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 10898 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 10899 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activity_status/getActivityStatusText.tsx");
@@ -210,6 +210,6 @@ export default function getActivityStatusText(name) {
       obj17 = {};
     }
   }
-  const text = tmp20(10945)(tmp2);
+  const text = tmp20(10897)(tmp2);
   return { text, tooltip: text };
 };

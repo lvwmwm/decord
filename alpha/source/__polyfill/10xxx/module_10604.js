@@ -1,11 +1,10 @@
 // Module ID: 10604
 // Function ID: 10605
-// Dependencies: [41, 42, 93, 95, 98, 10605, 10514, 10518]
+// Dependencies: [41, 42, 93, 95, 98, 10592, 10465, 10466, 10594]
 
 // Module 10604
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 10514 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10518 */;
-import _mod10605 from "module_10605" /* 10605 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 10592 */;
+import AbstractParserWithLeftBoundaryChecking from "AbstractParserWithLeftBoundaryChecking" /* 10594 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,12 +26,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class NLTimeUnitWithinFormatParser {
+class RUTimeUnitCasualRelativeFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(NLTimeUnitWithinFormatParser);
+    _classCallCheck(this, RUTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(RUTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -44,12 +43,11 @@ class NLTimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(RUTimeUnitCasualRelativeFormatParser, AbstractParserWithLeftBoundaryChecking.AbstractParserWithLeftRightBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const regExp = new RegExp("(?:binnen|in|binnen de|voor)\\s*(" + _mod10605.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-    return regExp;
+  key: "innerPatternString",
+  value: function innerPatternString(arg0) {
+    return "(\u044D\u0442\u0438|\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435|\u043F\u0440\u043E\u0448\u043B\u044B\u0435|\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435|\u043F\u043E\u0441\u043B\u0435|\u0441\u043F\u0443\u0441\u0442\u044F|\u0447\u0435\u0440\u0435\u0437|\\+|-)\\s*(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")";
   }
 };
 const items = [
@@ -57,11 +55,20 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod10605.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[2]);
+      if ("\u043F\u043E\u0441\u043B\u0435\u0434\u043D\u0438\u0435" !== formatted) {
+        let reverseDurationResult;
+        if ("\u043F\u0440\u043E\u0448\u043B\u044B\u0435" !== formatted) {
+          reverseDurationResult = parseDurationResult;
+        }
+        const ParsingComponents = tmp2(10466).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
+      reverseDurationResult = tmp2(10465).reverseDuration(parseDurationResult);
     }
   }
 ];
 
-export default _createClass(NLTimeUnitWithinFormatParser, items);
+export default _createClass(RUTimeUnitCasualRelativeFormatParser, items);

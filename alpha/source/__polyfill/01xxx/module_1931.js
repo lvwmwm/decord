@@ -4,13 +4,13 @@
 // Exports: cloneWorklet
 
 // Module 1931
-const f83409 = () => {
+const f83489 = () => {
 
 };
 function worklet(arg0) {
   let fn = arg0;
   if (arg0 == null) {
-    fn = f83409;
+    fn = f83489;
   }
   fn.__workletHash = Math.random();
   return fn;
@@ -19,7 +19,7 @@ function worklet(arg0) {
 export { worklet };
 export const cloneWorklet = (__workletHash) => {
   if (typeof worklet === "function") {
-    const fn = f83409;
+    const fn = f83489;
     const _Math = Math;
     fn.__workletHash = Math.random();
     fn.__workletHash = __workletHash.__workletHash;

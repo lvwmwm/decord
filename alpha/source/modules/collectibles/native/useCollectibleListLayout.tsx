@@ -1,10 +1,10 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15306
+// Function ID: 15307
 // Name: useCollectibleListLayout
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 15312 (useCollectibleListLayout)
+// Module 15306 (useCollectibleListLayout)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

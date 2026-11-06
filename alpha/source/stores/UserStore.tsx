@@ -1,24 +1,24 @@
 // Module ID: 1385
 // Function ID: 1386
 // Name: UserStore
-// Dependencies: [1386, 1399, 502, 1071, 1072, 1387, 1401, 1396, 2108, 2109, 1402, 1407, 1408, 1409, 1398, 12, 2120, 2121, 1380, 2]
+// Dependencies: [1386, 1404, 502, 1071, 1072, 1387, 1406, 1401, 2103, 2104, 1393, 1407, 1408, 1409, 1403, 12, 2115, 2116, 1380, 2]
 
 // Module 1385 (UserStore)
 import _mod12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1387 */;
-import UserStoreUtils from "UserStoreUtils" /* 1396 */;
-import FlagUtilsAll from "FlagUtils" /* 1398 */;
-import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1401 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1402 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1393 */;
+import UserStoreUtils from "UserStoreUtils" /* 1401 */;
+import FlagUtilsAll from "FlagUtils" /* 1403 */;
+import PrimaryGuildUtils from "PrimaryGuildUtils" /* 1406 */;
 import CustomTypingIndicatorTypes from "CustomTypingIndicatorTypes" /* 1407 */;
 import PremiumStateUtils from "PremiumStateUtils" /* 1408 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2108 */;
-import mappers from "mappers" /* 2109 */;
-import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 2120 */;
-import Server from "Server" /* 2121 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2103 */;
+import mappers from "mappers" /* 2104 */;
+import isActivityParticipantValidGuildMemberDefault from "isActivityParticipantValidGuildMember" /* 2115 */;
+import Server from "Server" /* 2116 */;
 import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1386 */;
-import UserRecord from "UserRecord" /* 1399 */;
+import UserRecord from "UserRecord" /* 1404 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
 import Constants from "Constants" /* 1072 */;
@@ -56,7 +56,7 @@ function mergeUserPrimaryGuild(id, primary_guild) {
     if (tmp8) {
       let flag = null == tmp2.primaryGuild || null != primary_guild.primary_guild;
       if (flag) {
-        const tmp5Result = tmp5(1401);
+        const tmp5Result = tmp5(1406);
         obj[id].primaryGuild = tmp5Result.ensureUserPrimaryGuild(primary_guild.primary_guild);
         tmp[obj[id].id] = obj[id];
         closure_12 = closure_12 + 1;
@@ -260,7 +260,7 @@ function mergeUser(user, arg1) {
           const obj5 = PrimaryGuildUtils;
           const tmp18 = require;
           if (obj5.isUserPrimaryGuildEqual(obj[user.id].primaryGuild, user.primary_guild) !== true) {
-            const tmp18Result = tmp18(1401);
+            const tmp18Result = tmp18(1406);
             user.primary_guild = tmp18Result.ensureUserPrimaryGuild(user.primary_guild);
           }
         }
@@ -761,7 +761,7 @@ function handleIncomingMessage(message) {
       if (flag) {
         id = obj2.getId();
         set = tmp6.set;
-        const tmp2Result = tmp2(1398);
+        const tmp2Result = tmp2(1403);
         tmp5[id] = set("flags", tmp2Result.setFlag(tmp6.flags, metroImportDefault.HAS_UNREAD_URGENT_MESSAGES, true));
         flag = true;
       }

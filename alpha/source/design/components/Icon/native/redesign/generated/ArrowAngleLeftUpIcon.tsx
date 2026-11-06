@@ -1,14 +1,14 @@
-// Module ID: 12973
-// Function ID: 12974
+// Module ID: 12938
+// Function ID: 12939
 // Name: ArrowAngleLeftUpIcon
-// Dependencies: [19, 21, 575, 5853, 12974, 2]
+// Dependencies: [19, 21, 575, 5871, 12939, 2]
 // Exports: ArrowAngleLeftUpIcon
 
-// Module 12973 (ArrowAngleLeftUpIcon)
+// Module 12938 (ArrowAngleLeftUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 12974 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 12939 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

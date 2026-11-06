@@ -1,20 +1,20 @@
-// Module ID: 18895
-// Function ID: 18896
+// Module ID: 18883
+// Function ID: 18884
 // Name: useWaterwheelsActions
-// Dependencies: [5, 19, 5014, 14204, 1072, 8085, 5849, 9079, 7663, 1113, 2537, 9091, 9876, 7044, 8109, 14213, 7040, 2]
+// Dependencies: [5, 19, 5041, 14181, 1072, 8031, 5867, 9025, 7616, 1113, 2534, 9037, 9826, 6986, 8055, 14190, 6982, 2]
 // Exports: useWaterwheelsActions
 
-// Module 18895 (useWaterwheelsActions)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5849 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 7040 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 8085 */;
-import react_nativeDefault from "react-native" /* 8109 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9079 */;
-import NotificationUtilsDefault from "NotificationUtils" /* 14213 */;
+// Module 18883 (useWaterwheelsActions)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5867 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6982 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 8031 */;
+import react_nativeDefault from "react-native" /* 8055 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9025 */;
+import NotificationUtilsDefault from "NotificationUtils" /* 14190 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5014 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14204 */;
+import GuildStore from "GuildStore" /* 5041 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14181 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 14315
-// Function ID: 14316
+// Module ID: 14292
+// Function ID: 14293
 // Name: useGuildPowerupsNewBadge
-// Dependencies: [32, 19, 5355, 5356, 4989, 4976, 504, 14310, 7711, 4977, 2]
+// Dependencies: [32, 19, 5375, 5376, 5016, 5003, 504, 14287, 7664, 5004, 2]
 // Exports: default, useAutoDismissGuildPowerupsNewBadge
 
-// Module 14315 (useGuildPowerupsNewBadge)
-import dismissible_content from "dismissible_content" /* 4976 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4977 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5356 */;
-import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 14310 */;
+// Module 14292 (useGuildPowerupsNewBadge)
+import dismissible_content from "dismissible_content" /* 5003 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 5004 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5376 */;
+import useGuildPowerupNewPerkMarketingVersionDefault from "useGuildPowerupNewPerkMarketingVersion" /* 14287 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5355 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 5375 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, importDefault;
 
-const f106847 = () => stateForGuild.getStateForGuild(closure_0);
+const f107017 = () => stateForGuild.getStateForGuild(closure_0);
 const constants = GuildPowerupsConstants.GuildPowerupNewPerkMarketingVersion;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let closure_8 = dismissible_content.DismissibleContent.GUILD_POWERUP_NEW_PERK_AVAILABLE_BADGE;
@@ -36,7 +36,7 @@ export default function useGuildPowerupsNewBadge(arg0) {
   let tmp2 = dependencyMap;
   const items = [GuildPowerupsStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f106847);
+  const stateFromStores = obj.useStateFromStores(items, f107017);
   const tmp4 = useGuildPowerupNewPerkMarketingVersionDefault;
   const tmp4Result = tmp4(arg0, stateFromStores);
   let num = 0;
@@ -44,7 +44,7 @@ export default function useGuildPowerupsNewBadge(arg0) {
     num = tmp4Result;
   }
   let tmp7 = null;
-  const useSelectedVersionedDismissibleContent = tmp(7711).useSelectedVersionedDismissibleContent;
+  const useSelectedVersionedDismissibleContent = tmp(7664).useSelectedVersionedDismissibleContent;
   require("useSelectedDismissibleContent");
   if (num > 0) {
     tmp7 = null;
@@ -77,8 +77,8 @@ export function useAutoDismissGuildPowerupsNewBadge(guildId) {
   _require = guildId;
   let obj = require("get initialized");
   const items = [GuildPowerupsStore];
-  const stateFromStores = obj.useStateFromStores(items, f106847);
-  const tmp2 = num(14310);
+  const stateFromStores = obj.useStateFromStores(items, f107017);
+  const tmp2 = num(14287);
   const tmp2Result = tmp2(guildId, stateFromStores);
   num = 0;
   if (tmp2Result >= constants.GUILD_THEME) {

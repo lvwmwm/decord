@@ -1,11 +1,11 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6112
+// Function ID: 6113
 // Name: ThermalUtils
-// Dependencies: [17, 6093, 1377, 5100, 560, 1259, 2]
+// Dependencies: [17, 6113, 1377, 5127, 560, 1259, 2]
 
-// Module 6092 (ThermalUtils)
+// Module 6112 (ThermalUtils)
 import react_native from "react-native" /* 17 */;
-import react_nativeDefault from "react-native" /* 6093 */;
+import react_nativeDefault from "react-native" /* 6113 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -36,7 +36,7 @@ let closure_4 = module_560.create((arg0) => {
     const thermalState = obj3.getThermalState();
     rawThermalState = thermalState;
   } else {
-    tmp2(5100);
+    tmp2(5127);
   }
   return { rawThermalState };
 });

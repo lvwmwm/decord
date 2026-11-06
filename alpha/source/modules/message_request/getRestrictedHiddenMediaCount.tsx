@@ -1,15 +1,15 @@
-// Module ID: 19295
-// Function ID: 19296
+// Module ID: 19287
+// Function ID: 19288
 // Name: getRestrictedHiddenMediaCount
-// Dependencies: [8558, 6698, 2]
+// Dependencies: [8504, 6640, 2]
 // Exports: default
 
-// Module 19295 (getRestrictedHiddenMediaCount)
-import formatMessageForwards from "formatMessageForwards" /* 8558 */;
+// Module 19287 (getRestrictedHiddenMediaCount)
+import formatMessageForwards from "formatMessageForwards" /* 8504 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const StickersUtils = tmp(6698);
+const StickersUtils = tmp(6640);
 let result = size.fileFinishedImporting("modules/message_request/getRestrictedHiddenMediaCount.tsx");
 
 export default function getRestrictedHiddenMediaCount(message) {

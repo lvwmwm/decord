@@ -1,28 +1,28 @@
-// Module ID: 14556
-// Function ID: 14557
+// Module ID: 14533
+// Function ID: 14534
 // Name: InviteError
-// Dependencies: [19, 17, 1072, 21, 5143, 575, 5150, 5379, 14557, 14558, 14559, 1113, 5854, 5763, 5770, 1411, 1187, 14560, 7101, 2190, 2]
+// Dependencies: [19, 17, 1072, 21, 5170, 575, 5177, 5399, 14534, 14535, 14536, 1113, 5872, 5781, 5788, 1411, 1187, 14537, 7045, 2185, 2]
 // Exports: default
 
-// Module 14556 (InviteError)
+// Module 14533 (InviteError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1411 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2190 */;
-import shared from "shared" /* 5150 */;
-import useThemeDefault from "useTheme" /* 5379 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import components_Button_Button from "components/Button/Button" /* 5770 */;
-import FastImageDefault from "FastImage" /* 5854 */;
-import GuildIcon from "GuildIcon" /* 7101 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 14559 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14560 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2185 */;
+import shared from "shared" /* 5177 */;
+import useThemeDefault from "useTheme" /* 5399 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import components_Button_Button from "components/Button/Button" /* 5788 */;
+import FastImageDefault from "FastImage" /* 5872 */;
+import GuildIcon from "GuildIcon" /* 7045 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 14536 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14537 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -46,7 +46,7 @@ function InviteErrorBase(invite) {
   const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 14557 : 14558);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 14534 : 14535);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -71,7 +71,7 @@ function InviteErrorBase(invite) {
   items[0] = metroImportDefault(FastImageDefault, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(5763).Text;
+  const Text = tmp2(5781).Text;
   const tmp10 = React4;
   const tmp11 = metroImportAll;
   if (descriptiveInviteError != null) {
@@ -89,7 +89,7 @@ function InviteErrorBase(invite) {
   const obj5 = { style: tmp.expiredBody, variant: "body-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportDefault(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5770).Button;
+  const Button = tmp2(5788).Button;
   intl4 = tmp2(1113).intl;
   items[3] = metroImportDefault(Button, obj6);
   return tmp10(tmp11, obj4);

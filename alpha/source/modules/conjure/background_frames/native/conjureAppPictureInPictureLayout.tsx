@@ -1,12 +1,12 @@
-// Module ID: 19427
-// Function ID: 19428
+// Module ID: 19419
+// Function ID: 19420
 // Name: conjureAppPictureInPictureLayout
-// Dependencies: [11420, 2148, 2]
+// Dependencies: [11382, 2143, 2]
 // Exports: clampToBounds, getCloseTargetCenter, getPictureInPictureBounds, getPictureInPictureSize, getPictureInPictureWindowSize, getSnappedPosition, getStackOffsets, getStackedPosition, isOverCloseTarget
 
-// Module 19427 (conjureAppPictureInPictureLayout)
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2148 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11420 */;
+// Module 19419 (conjureAppPictureInPictureLayout)
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2143 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11382 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp10;

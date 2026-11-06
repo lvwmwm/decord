@@ -1,14 +1,14 @@
-// Module ID: 11354
-// Function ID: 11355
+// Module ID: 11309
+// Function ID: 11310
 // Name: SavedMessageHelpers
-// Dependencies: [5, 10375, 1072, 11355, 11351, 6096, 1113, 11345, 10376, 5849, 5877, 11356, 5152, 2]
+// Dependencies: [5, 10327, 1072, 11310, 11306, 6116, 1113, 11300, 10328, 5867, 5895, 11311, 5179, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 11354 (SavedMessageHelpers)
+// Module 11309 (SavedMessageHelpers)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 10375 */;
-import SavedMessagesConstants from "SavedMessagesConstants" /* 11355 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 10327 */;
+import SavedMessagesConstants from "SavedMessagesConstants" /* 11310 */;
 import size from "module_2" /* 2 */;
 
 let text;

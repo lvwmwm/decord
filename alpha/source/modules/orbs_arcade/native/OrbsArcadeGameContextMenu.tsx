@@ -1,15 +1,15 @@
-// Module ID: 17337
-// Function ID: 17338
+// Module ID: 17325
+// Function ID: 17326
 // Name: OrbsArcadeGameContextMenu
-// Dependencies: [5, 19, 1385, 21, 17300, 5849, 1113, 504, 14741, 17304, 17305, 12428, 10061, 8173, 9359, 2]
+// Dependencies: [5, 19, 1385, 21, 17288, 5867, 1113, 504, 14718, 17292, 17293, 12393, 10012, 8119, 9305, 2]
 // Exports: default
 
-// Module 17337 (OrbsArcadeGameContextMenu)
+// Module 17325 (OrbsArcadeGameContextMenu)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
-import RefreshIcon from "RefreshIcon" /* 12428 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 14741 */;
-import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17300 */;
+import RefreshIcon from "RefreshIcon" /* 12393 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 14718 */;
+import OrbsArcadeActionCreators from "OrbsArcadeActionCreators" /* 17288 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1385 */;
@@ -147,7 +147,7 @@ export default function OrbsArcadeGameContextMenu(game) {
     const items = [obj];
     return items;
   }, items2);
-  const ContextMenu = game(10061).ContextMenu;
+  const ContextMenu = game(10012).ContextMenu;
   const tmp4 = jsx;
   if (stateFromStores) {
     const items3 = [memo, memo1];

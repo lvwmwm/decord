@@ -1,14 +1,14 @@
-// Module ID: 12452
-// Function ID: 12453
+// Module ID: 12417
+// Function ID: 12418
 // Name: useConjureControlBar
-// Dependencies: [32, 19, 11035, 11034, 504, 2]
+// Dependencies: [32, 19, 10987, 10986, 504, 2]
 // Exports: useConjureControlPhase, useConjureControlStop
 
-// Module 12452 (useConjureControlBar)
-import ConjureConnectionStore from "ConjureConnectionStore" /* 11034 */;
+// Module 12417 (useConjureControlBar)
+import ConjureConnectionStore from "ConjureConnectionStore" /* 10986 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureChatStore from "ConjureChatStore" /* 11035 */;
+import ConjureChatStore from "ConjureChatStore" /* 10987 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

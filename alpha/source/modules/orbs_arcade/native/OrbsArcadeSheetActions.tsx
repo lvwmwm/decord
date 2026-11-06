@@ -1,18 +1,18 @@
-// Module ID: 17308
-// Function ID: 17309
+// Module ID: 17296
+// Function ID: 17297
 // Name: OrbsArcadeSheetActions
-// Dependencies: [19, 17294, 21, 5143, 1113, 5384, 17305, 504, 17301, 6905, 17309, 17313, 5770, 2]
+// Dependencies: [19, 17282, 21, 5170, 1113, 5404, 17293, 504, 17289, 6847, 17297, 17301, 5788, 2]
 // Exports: default
 
-// Module 17308 (OrbsArcadeSheetActions)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17301 */;
-import OrbsArcadeClaimRewardButtonDefault from "OrbsArcadeClaimRewardButton" /* 17309 */;
-import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 17313 */;
+// Module 17296 (OrbsArcadeSheetActions)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17289 */;
+import OrbsArcadeClaimRewardButtonDefault from "OrbsArcadeClaimRewardButton" /* 17297 */;
+import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 17301 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17294 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17282 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -95,7 +95,7 @@ export default function OrbsArcadeSheetActions(game) {
       if (null != tmp7) {
         const obj5 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
         ({ text: obj6.text, onPress: obj6.onPress } = tmp7);
-        tmp19 = closure_4(tmp10(5770).Button, obj5);
+        tmp19 = closure_4(tmp10(5788).Button, obj5);
       }
       items3[1] = tmp19;
       obj4.children = items3;

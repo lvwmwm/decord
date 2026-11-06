@@ -1,68 +1,137 @@
 // Module ID: 10580
 // Function ID: 10581
-// Dependencies: [41, 42, 10581, 10512]
+// Dependencies: [41, 42, 93, 95, 98, 10578, 10470]
 
 // Module 10580
-import findMostLikelyADYear from "findMostLikelyADYear" /* 10512 */;
-import NUMBER from "NUMBER" /* 10581 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10470 */;
+import _mod10578 from "module_10578" /* 10578 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const re3 = /(?:(?:([同今本])|((昭和|平成|令和)?([0-9０-９]{1,4}|元)))年\s*)?([0-9０-９]{1,2})月\s*([0-9０-９]{1,2})日/i;
-class JPStandardParser {
-  constructor() {
-    _classCallCheck(this, JPStandardParser);
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+const keys = Object.keys(_mod10578.WEEKDAY_OFFSET);
+const regExp = new RegExp("(?<prefix>\u4E0A|\u4ECA|\u4E0B|\u9019|\u5462)(?:\u500B)?(?:\u661F\u671F|\u79AE\u62DC|\u9031)(?<weekday>" + keys.join("|") + ")");
+class ZHHantRelationWeekdayParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ZHHantRelationWeekdayParser);
+    const obj = _getPrototypeOf(ZHHantRelationWeekdayParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ZHHantRelationWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "pattern",
-  value: function pattern() {
-    return re3;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
-    key: "extract",
-    value: function extract(createParsingComponents, arg1) {
-      const parsed = parseInt(NUMBER.toHankaku(arg1[5]));
-      const parsed1 = parseInt(NUMBER.toHankaku(arg1[6]));
-      const parsingComponents = createParsingComponents.createParsingComponents({ day: parsed1, month: parsed });
-      let match = arg1[1];
-      if (match) {
-        const str = arg1[1];
-        match = str.match("\u540C|\u4ECA|\u672C");
-      }
-      if (match) {
-        const reference = createParsingComponents.reference;
-        const assign = parsingComponents.assign;
-        const dateWithAdjustedTimezone = reference.getDateWithAdjustedTimezone();
-        assign("year", dateWithAdjustedTimezone.getFullYear());
-      }
-      if (arg1[2]) {
-        let sum;
-        let num = 1;
-        if ("\u5143" != arg1[4]) {
-          const _parseInt = parseInt;
-          num = parseInt(tmp(10581).toHankaku(tmp8));
-        }
-        if ("\u4EE4\u548C" == arg1[3]) {
-          sum = num + 2018;
-        } else if ("\u5E73\u6210" == arg1[3]) {
-          sum = num + 1988;
-        } else {
-          sum = num;
-          if ("\u662D\u548C" == arg1[3]) {
-            sum = num + 1925;
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const tmp2 = _mod10578.WEEKDAY_OFFSET[index.groups.weekday];
+      if (undefined === tmp2) {
+        return null;
+      } else {
+        const prefix = index.groups.prefix;
+        let str2 = "last";
+        if ("\u4E0A" != prefix) {
+          str2 = "next";
+          if ("\u4E0B" != prefix) {
+            str2 = null;
+            const tmp3 = "\u4ECA" != prefix && "\u9019" != prefix && "\u5462" != prefix;
+            if (!tmp3) {
+              str2 = "this";
+            }
           }
         }
-        parsingComponents.assign("year", sum);
-      } else {
-        parsingComponents.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingComponents.refDate, parsed1, parsed));
+        const _Date = Date;
+        const refDate = createParsingResult.refDate;
+        const self = this;
+        const self2 = this;
+        const date = new Date(refDate.getTime());
+        const day = date.getDay();
+        if ("last" != str2) {
+          let flag;
+          if ("past" != str2) {
+            if ("next" == str2) {
+              date.setDate(date.getDate() + (tmp2 + 7 - day));
+              flag = true;
+            } else if ("this" == str2) {
+              date.setDate(date.getDate() + (tmp2 - day));
+              flag = false;
+            } else {
+              const diff = tmp2 - day;
+              const _Math3 = Math;
+              const _Math4 = Math;
+              const absolute = Math.abs(diff - 7);
+              let diff1 = diff;
+              if (absolute < Math.abs(diff)) {
+                diff1 = diff - 7;
+              }
+              const _Math = Math;
+              const _Math2 = Math;
+              const absolute1 = Math.abs(diff1 + 7);
+              let sum = diff1;
+              if (absolute1 < Math.abs(diff1)) {
+                sum = diff1 + 7;
+              }
+              date.setDate(date.getDate() + sum);
+              flag = false;
+            }
+          }
+          const start = parsingResult.start;
+          start.assign("weekday", tmp2);
+          const start2 = parsingResult.start;
+          if (flag) {
+            start2.assign("day", date.getDate());
+            const start5 = parsingResult.start;
+            start5.assign("month", date.getMonth() + 1);
+            const start6 = parsingResult.start;
+            start6.assign("year", date.getFullYear());
+          } else {
+            start2.imply("day", date.getDate());
+            const start3 = parsingResult.start;
+            start3.imply("month", date.getMonth() + 1);
+            const start4 = parsingResult.start;
+            start4.imply("year", date.getFullYear());
+          }
+          return parsingResult;
+        }
+        date.setDate(date.getDate() + (tmp2 - 7 - day));
+        flag = true;
       }
-      return parsingComponents;
     }
   }
 ];
 
-export default _createClass(JPStandardParser, items);
+export default _createClass(ZHHantRelationWeekdayParser, items);

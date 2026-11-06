@@ -1,34 +1,29 @@
-// Module ID: 14673
-// Function ID: 14674
+// Module ID: 14650
+// Function ID: 14651
 // Name: GiftBadgePostPurchase
-// Dependencies: [19, 17, 8909, 14674, 4989, 21, 5143, 575, 1627, 6882, 5325, 5770, 13597, 1113, 2763, 14675, 5763, 10801, 5386, 5387, 10803, 14676, 5173, 4976, 504, 8901, 2]
+// Dependencies: [19, 17, 8855, 14651, 5016, 21, 5170, 575, 1627, 6824, 5345, 5788, 13572, 1113, 2760, 14652, 5781, 10753, 11614, 504, 8847, 5406, 5407, 8860, 10755, 14653, 5200, 5003, 2]
 // Exports: default
 
-// Module 14673 (GiftBadgePostPurchase)
+// Module 14650 (GiftBadgePostPurchase)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import _modDef2763 from "module_2763" /* 2763 */;
-import dismissible_content from "dismissible_content" /* 4976 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4989 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5173 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5387 */;
-import Text_Text from "Text/Text" /* 5763 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
-import BadgeId from "BadgeId" /* 8901 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10801 */;
-import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14675 */;
-import GiftingBadgeLevelUpProgressDefault from "GiftingBadgeLevelUpProgress" /* 14676 */;
+import _modDef2760 from "module_2760" /* 2760 */;
+import dismissible_content from "dismissible_content" /* 5003 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 5016 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5200 */;
+import Text_Text from "Text/Text" /* 5781 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import BadgeId from "BadgeId" /* 8847 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8860 */;
+import GiftingBadgeProgressDefault from "GiftingBadgeProgress" /* 14652 */;
 import react from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8909 */;
-import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14674 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8855 */;
+import GiftingBadgeConstants from "GiftingBadgeConstants" /* 14651 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5143 */;
+import createStyles from "createStyles" /* 5170 */;
 import size from "module_2" /* 2 */;
-
-let badgeById;
 
 let c10;
 let metroImportAll;
@@ -59,14 +54,14 @@ function PostPurchaseFooter(onSendGift) {
       rootNavigationRef.navigate("you");
     }
   }, []);
-  const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2763.g86YiI), onPress: callback };
-  const Button = onSendGift(5770).Button;
+  const obj2 = { grow: true, variant: "primary", icon: closure_10(GiftIcon, obj3), text: intl.string(_modDef2760.g86YiI), onPress: callback };
+  const Button = onSendGift(5788).Button;
   obj3 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = onSendGift(13597).GiftIcon;
+  GiftIcon = onSendGift(13572).GiftIcon;
   intl = onSendGift(1113).intl;
   items1 = [closure_10(Button, obj2), ];
-  const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2763["sa/cfM"]), onPress: callback1 };
-  const Button2 = onSendGift(5770).Button;
+  const obj4 = { grow: true, variant: "secondary", text: intl2.string(_modDef2760["sa/cfM"]), onPress: callback1 };
+  const Button2 = onSendGift(5788).Button;
   intl2 = onSendGift(1113).intl;
   items1[1] = closure_10(Button2, obj4);
   return closure_11(View, obj);
@@ -99,77 +94,109 @@ function InProgressScreen(arg0) {
   items2 = [unpackModuleId(View, obj2), authStore(PostPurchaseFooter, { onSendGift })];
   return unpackModuleId(View, obj);
 }
-function LevelUpScreen(arg0) {
+function LevelUpScreen(newTier) {
   let currentTier;
   let format;
   let format2;
   let giftsToNextTier;
-  let items;
-  let items1;
-  let items2;
   let items3;
+  let items4;
+  let items5;
+  let items6;
   let k8MmO8;
-  let newTier;
   let nextTier;
-  let obj11;
+  let obj13;
   let onSendGift;
   let simulatedProgress;
   let str;
   let str2;
-  let tmp9Result;
+  let tmp12Result;
   let v6QVlxw;
-  ({ newTier, nextTier, giftsToNextTier } = arg0);
-  ({ simulatedProgress, currentTier, onSendGift } = arg0);
-  const tmp3 = closure_12(useSafeAreaInsetsDefault().bottom);
-  let obj = GiftingBadgesUtils;
+  newTier = newTier.newTier;
+  ({ nextTier, giftsToNextTier } = newTier);
+  let isBadgeUnreadStateEnabled;
+  let stateFromStores;
+  let tmp = isBadgeUnreadStateEnabled;
+  let tmp2 = stateFromStores;
+  ({ simulatedProgress, currentTier, onSendGift } = newTier);
+  const tmp3 = closure_12(isBadgeUnreadStateEnabled(stateFromStores[8])().bottom);
+  let obj = newTier(stateFromStores[17]);
   const giftingBadgeTierIconUrl = obj.getGiftingBadgeTierIconUrl(newTier);
+  const obj2 = newTier(stateFromStores[18]);
+  isBadgeUnreadStateEnabled = obj2.useIsBadgeUnreadStateEnabled({ location: "GiftBadgePostPurchase" });
+  const items = [BadgeDirectoryStore];
+  const items1 = [isBadgeUnreadStateEnabled, newTier.key];
+  const obj3 = newTier(stateFromStores[19]);
+  stateFromStores = obj3.useStateFromStores(items, () => {
+    const badgeById = BadgeDirectoryStore.getBadgeById(BadgeId.BadgeId.GIFTING);
+    let tmp2 = isBadgeUnreadStateEnabled;
+    if (tmp2) {
+      let has_updates;
+      if (badgeById != null) {
+        has_updates = badgeById.has_updates;
+      }
+      tmp2 = true === has_updates;
+    }
+    if (tmp2) {
+      tmp2 = badgeById.current_tier === newTier.key;
+    }
+    return tmp2;
+  }, items1);
   const effect = react.useEffect(() => {
-    const obj = HapticUtils;
-    const result = obj.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_HEAVY);
+    const obj = newTier(stateFromStores[21]);
+    const result = obj.triggerHapticFeedback(isBadgeUnreadStateEnabled(stateFromStores[22]).IMPACT_HEAVY);
   }, []);
-  const obj4 = { style: tmp3.levelUpIconWrapper, children: tmp9Result };
-  tmp9Result = null != giftingBadgeTierIconUrl;
-  const obj2 = { style: tmp3.screenContainer, children: items3 };
-  const obj3 = { style: tmp3.content, children: items };
-  if (tmp9Result) {
-    const obj5 = { icon: giftingBadgeTierIconUrl, size: 140 };
-    tmp9Result = tmp9(tmp(10803), obj5);
+  const items2 = [stateFromStores];
+  const effect1 = react.useEffect(() => {
+    const tmp = stateFromStores;
+    if (tmp) {
+      const obj = BadgeDirectoryActionCreators;
+      obj.ackBadge(BadgeId.BadgeId.GIFTING);
+    }
+  }, items2);
+  const obj6 = { style: tmp3.levelUpIconWrapper, children: tmp12Result };
+  tmp12Result = null != giftingBadgeTierIconUrl;
+  const obj4 = { style: tmp3.screenContainer, children: items6 };
+  const obj5 = { style: tmp3.content, children: items3 };
+  if (tmp12Result) {
+    const obj7 = { icon: giftingBadgeTierIconUrl, size: 140 };
+    tmp12Result = tmp12(tmp(tmp2[24]), obj7);
   }
-  items = [authStore(View, obj4), ];
-  const obj6 = { style: tmp3.levelUpBody, children: items1 };
-  items1 = [, ];
-  const obj7 = { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress };
-  items1[0] = authStore(GiftingBadgeLevelUpProgressDefault, obj7);
-  const obj8 = { style: tmp3.messageSection, children: items2 };
-  const obj9 = { variant: "heading-xxl/semibold", style: tmp3.centerText, children: format(k8MmO8, { tierName: str }) };
-  const Text = tmp4(5763).Text;
-  const intl = tmp4(1113).intl;
+  items3 = [closure_10(View, obj6), ];
+  const obj8 = { style: tmp3.levelUpBody, children: items4 };
+  items4 = [, ];
+  const obj9 = { progress: simulatedProgress, currentTier, newTier, style: tmp3.levelUpProgress };
+  items4[0] = closure_10(tmp(tmp2[25]), obj9);
+  const obj10 = { style: tmp3.messageSection, children: items5 };
+  const obj11 = { variant: "heading-xxl/semibold", style: tmp3.centerText, children: format(k8MmO8, { tierName: str }) };
+  const Text = tmp4(tmp2[16]).Text;
+  const intl = tmp4(tmp2[13]).intl;
   format = intl.format;
   str = newTier.name;
-  k8MmO8 = tmp(2763).k8MmO8;
+  k8MmO8 = tmp(tmp2[14]).k8MmO8;
   if (str == null) {
     str = "";
   }
-  items2 = [authStore(Text, obj9), ];
-  let tmp9Result2 = null != nextTier && null != giftsToNextTier && giftsToNextTier > 0;
-  if (tmp9Result2) {
-    const obj10 = { variant: "body-md/normal", color: "text-subtle", style: tmp3.centerText, children: format2(v6QVlxw, obj11) };
-    const Text2 = tmp4(5763).Text;
-    const intl2 = tmp4(1113).intl;
+  items5 = [closure_10(Text, obj11), ];
+  let tmp12Result2 = null != nextTier && null != giftsToNextTier && giftsToNextTier > 0;
+  if (tmp12Result2) {
+    const obj12 = { variant: "body-md/normal", color: "text-subtle", style: tmp3.centerText, children: format2(v6QVlxw, obj13) };
+    const Text2 = tmp4(tmp2[16]).Text;
+    const intl2 = tmp4(tmp2[13]).intl;
     format2 = intl2.format;
-    obj11 = { count: giftsToNextTier, nextTierName: str2 };
+    obj13 = { count: giftsToNextTier, nextTierName: str2 };
     str2 = nextTier.name;
-    v6QVlxw = tmp(2763)["6QVlxw"];
+    v6QVlxw = tmp(tmp2[14])["6QVlxw"];
     if (str2 == null) {
       str2 = "";
     }
-    tmp9Result2 = tmp9(Text2, obj10);
+    tmp12Result2 = tmp12(Text2, obj12);
   }
-  items2[1] = tmp9Result2;
-  items1[1] = unpackModuleId(View, obj8);
-  items[1] = unpackModuleId(View, obj6);
-  items3 = [unpackModuleId(View, obj3), authStore(PostPurchaseFooter, { onSendGift })];
-  return unpackModuleId(View, obj2);
+  items5[1] = tmp12Result2;
+  items4[1] = closure_11(View, obj10);
+  items3[1] = closure_11(View, obj8);
+  items6 = [closure_11(View, obj5), closure_10(PostPurchaseFooter, { onSendGift })];
+  return closure_11(View, obj4);
 }
 const View = react_native.View;
 ({ getRemainingGiftsToNextTier: metroRequire, getTierForProgress: metroImportDefault, getNextTierForProgress: metroImportAll } = GiftingBadgeConstants);
@@ -247,14 +274,14 @@ export default function GiftBadgePostPurchase(arg0) {
       const intl2 = tmp2(1113).intl;
       const formatToPlainString2 = intl2.formatToPlainString;
       let str2;
-      const KjdBPz = _modDef2763.KjdBPz;
+      const KjdBPz = _modDef2760.KjdBPz;
       if (tmp8 != null) {
         str2 = tmp8.name;
       }
       if (str2 == null) {
         str2 = "";
       }
-      const obj3 = { title: formatToPlainString2(KjdBPz, obj4), description: intl3.string(_modDef2763.oqDrEM), progressBarTitle: intl4.string(_modDef2763["Ka5s+Q"]), progress: sum, currentTier: tmp18, nextTier: tmp19, onSendGift };
+      const obj3 = { title: formatToPlainString2(KjdBPz, obj4), description: intl3.string(_modDef2760.oqDrEM), progressBarTitle: intl4.string(_modDef2760["Ka5s+Q"]), progress: sum, currentTier: tmp18, nextTier: tmp19, onSendGift };
       obj4 = { nextTier: str2 };
       intl3 = tmp2(1113).intl;
       intl4 = tmp2(1113).intl;
@@ -262,7 +289,7 @@ export default function GiftBadgePostPurchase(arg0) {
       tmp18 = tmp26;
       tmp19 = tmp8;
     } else {
-      obj5 = { title: intl5.string(_modDef2763["/rBQud"]), description: intl6.string(_modDef2763.DDQMlx), progressBarTitle: str, progress: sum, currentTier: tmp15, nextTier: tmp16, onSendGift };
+      obj5 = { title: intl5.string(_modDef2760["/rBQud"]), description: intl6.string(_modDef2760.DDQMlx), progressBarTitle: str, progress: sum, currentTier: tmp15, nextTier: tmp16, onSendGift };
       intl5 = tmp2(1113).intl;
       intl6 = tmp2(1113).intl;
       let name;
@@ -275,7 +302,7 @@ export default function GiftBadgePostPurchase(arg0) {
         const intl = tmp2(1113).intl;
         const formatToPlainString = intl.formatToPlainString;
         let name1;
-        const bwyQt8 = tmp27(2763).bwyQt8;
+        const bwyQt8 = tmp27(2760).bwyQt8;
         if (tmp24 != null) {
           name1 = tmp24.name;
         }

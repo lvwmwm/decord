@@ -1,18 +1,50 @@
 // Module ID: 6133
 // Function ID: 6134
-// Dependencies: [17, 26, 106, 65]
+// Dependencies: [19, 17, 6129]
+// Exports: useTabsHost
 
 // Module 6133
 import react_native from "react-native" /* 17 */;
-import _mod26 from "module_26" /* 26 */;
-import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import RNSLog2 from "RNSLog" /* 6129 */;
+import react_mod from "react" /* 19 */;
 
-let obj2;
-const codegenNativeComponent = react_native.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenStackHeaderConfig", directEventTypes: { topAttached: { registrationName: "onAttached" }, topDetached: { registrationName: "onDetached" }, topPressHeaderBarButtonItem: { registrationName: "onPressHeaderBarButtonItem" }, topPressHeaderBarButtonMenuItem: { registrationName: "onPressHeaderBarButtonMenuItem" } }, validAttributes: obj2 };
-obj2 = { backgroundColor: _mod26.colorAttribute, backTitle: true, backTitleFontFamily: true, backTitleFontSize: true, backTitleVisible: true, color: _mod26.colorAttribute, direction: true, hidden: true, hideShadow: true, largeTitle: true, largeTitleFontFamily: true, largeTitleFontSize: true, largeTitleFontWeight: true, largeTitleBackgroundColor: _mod26.colorAttribute, largeTitleHideShadow: true, largeTitleColor: _mod26.colorAttribute, translucent: true, title: true, titleFontFamily: true, titleFontSize: true, titleFontWeight: true, titleColor: _mod26.colorAttribute, disableBackButtonMenu: true, backButtonDisplayMode: true, hideBackButton: true, backButtonInCustomView: true, blurEffect: true, topInsetEnabled: true, headerLeftBarButtonItems: true, headerRightBarButtonItems: true, synchronousShadowStateUpdatesEnabled: true, userInterfaceStyle: true, consumeTopInset: true, consumeLeftInset: true, consumeRightInset: true, consumeBottomInset: true, legacyTopInsetBehavior: true };
-const merged = Object.assign(DynamicallyInjectedByGestureHandler.ConditionallyIgnoredEventHandlers({ onAttached: true, onDetached: true, onPressHeaderBarButtonItem: true, onPressHeaderBarButtonMenuItem: true }));
+let react = react_mod;
+const findNodeHandle = react_native.findNodeHandle;
 
-export default module_65.get("RNSScreenStackHeaderConfig", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export function useTabsHost(arg0) {
+  let items;
+  let onTabSelected;
+  let ref;
+  let ref2;
+  ({ componentNodeRef: require, onTabSelected } = arg0);
+  react = undefined;
+  react = react.useRef(-1);
+  const effect = react.useEffect(() => {
+    if (null != require.current) {
+      let num2 = findNodeHandle(tmp.current);
+      const tmp3 = ref2;
+      if (num2 == null) {
+        num2 = -1;
+      }
+      tmp3.current = num2;
+    } else {
+      ref2.current = -1;
+    }
+  }, []);
+  const obj = {
+    onTabSelected: react.useCallback((nativeEvent) => {
+      const RNSLog = RNSLog2.RNSLog;
+      let num = ref2.current;
+      const log = RNSLog.log;
+      if (num == null) {
+        num = -1;
+      }
+      log("TabsHost [" + num + "] onTabSelected: " + JSON.stringify(nativeEvent.nativeEvent));
+      if (onTabSelected != null) {
+        onTabSelected(nativeEvent);
+      }
+    }, items)
+  };
+  items = [onTabSelected];
+  return obj;
+}

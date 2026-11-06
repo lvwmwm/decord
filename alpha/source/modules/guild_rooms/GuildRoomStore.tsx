@@ -1,16 +1,16 @@
-// Module ID: 8051
-// Function ID: 8052
+// Module ID: 8005
+// Function ID: 8006
 // Name: GuildRoomStore
-// Dependencies: [109, 502, 5901, 5046, 8052, 504, 572, 2]
+// Dependencies: [109, 502, 5920, 5073, 8006, 504, 572, 2]
 
-// Module 8051 (GuildRoomStore)
+// Module 8005 (GuildRoomStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRoomTypes from "GuildRoomTypes" /* 8052 */;
+import GuildRoomTypes from "GuildRoomTypes" /* 8006 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5901 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5046 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5920 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 5073 */;
 import size from "module_2" /* 2 */;
 
 let set;

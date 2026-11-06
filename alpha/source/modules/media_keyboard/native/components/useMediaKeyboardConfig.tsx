@@ -1,13 +1,13 @@
-// Module ID: 12759
-// Function ID: 12760
+// Module ID: 12724
+// Function ID: 12725
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1623, 1072, 8549, 12760, 7585, 9112, 10714, 2121, 2]
+// Dependencies: [19, 1623, 1072, 8495, 12725, 7530, 9058, 10666, 2116, 2]
 // Exports: default
 
-// Module 12759 (useMediaKeyboardConfig)
+// Module 12724 (useMediaKeyboardConfig)
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1623 */;
-import Server from "Server" /* 2121 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 12760 */;
+import Server from "Server" /* 2116 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 12725 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -30,12 +30,12 @@ export default function useMediaKeyboardConfig(arg0) {
   MediaKeyboardTarget = undefined;
   let mediaKeyboardDraftType;
   const tmp = context.target === MediaKeyboardTarget.COMMAND;
-  let obj = context(8549);
+  let obj = context(8495);
   const tmp4 = obj.useCanPostPollsInChannel(channel) && !tmp;
   importDefault = tmp4;
   const tmp5 = useUploadDisabledDefault(channel);
   dependencyMap = tmp5;
-  const tmp2Result = context(7585);
+  const tmp2Result = context(7530);
   let canStartThread = tmp2Result.useCanStartThread(channel);
   if (canStartThread) {
     const GUILD_THREADS_ONLY = mediaKeyboardDraftType.GUILD_THREADS_ONLY;
@@ -47,10 +47,10 @@ export default function useMediaKeyboardConfig(arg0) {
   if (canStartThread) {
     canStartThread = !tmp;
   }
-  const tmp2Result3 = context(9112);
+  const tmp2Result3 = context(9058);
   const tmp8 = tmp2Result3.useIsAppLauncherEnabled(channel.id) && !tmp;
   MediaKeyboardTarget = tmp8;
-  const tmp2Result4 = context(10714);
+  const tmp2Result4 = context(10666);
   mediaKeyboardDraftType = tmp2Result4.getMediaKeyboardDraftType(context.target);
   let items = [context, tmp4, tmp5, mediaKeyboardDraftType, canStartThread, tmp8];
   return canStartThread.useMemo(function() {

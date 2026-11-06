@@ -1,102 +1,112 @@
 // Module ID: 16444
 // Function ID: 16445
-// Dependencies: [16445, 16393, 16389, 16390, 16409, 16446, 16447, 16412]
+// Dependencies: [16408, 16383, 16445, 16399, 16446, 16428, 16406, 16439]
 
 // Module 16444
-import _mod16389 from "module_16389" /* 16389 */;
-import _mod16390 from "module_16390" /* 16390 */;
-import _mod16393 from "module_16393" /* 16393 */;
-import _mod16409 from "module_16409" /* 16409 */;
-import _mod16412 from "module_16412" /* 16412 */;
+import _mod16383 from "module_16383" /* 16383 */;
+import _mod16399 from "module_16399" /* 16399 */;
+import _mod16408 from "module_16408" /* 16408 */;
+import _mod16428 from "module_16428" /* 16428 */;
+import _mod16439 from "module_16439" /* 16439 */;
+import _mod16445 from "module_16445" /* 16445 */;
 import _mod16446 from "module_16446" /* 16446 */;
-import _mod16447 from "module_16447" /* 16447 */;
-import prop from "module_16445" /* 16445 */;
 
-let closure_5 = _mod16393("".slice);
-let closure_6 = _mod16393("".replace);
-let closure_7 = _mod16393([].join);
-let tmp = _mod16389 && !_mod16390(() => 8 !== defineProperty(() => {
+const require = globalThis.__r;
 
-}, "length", { value: 8 }).length);
-let closure_8 = tmp;
-const str = String(String);
-let closure_9 = str.split("String");
-const fn = (toString, toString2, arg2) => {
-  let text = toString2;
-  const tmp = String;
-  if ("Symbol(" === closure_5(String(toString2), 0, 7)) {
-    text = `${"[" + closure_6(tmp(toString2), /^Symbol\(([^)]*)\).*$/, "$1")}]`;
-  }
-  let text1 = text;
-  const tmp4 = arg2 && arg2.getter;
-  if (tmp4) {
-    text1 = `get ${tmp2}`;
-  }
-  let text2 = text1;
-  const tmp6 = arg2 && arg2.setter;
-  if (tmp6) {
-    text2 = `set ${tmp5}`;
-  }
-  const tmp10 = _mod16409(toString, "name");
-  let tmp11 = !tmp10;
-  if (tmp10) {
-    tmp11 = _mod16446.CONFIGURABLE && toString.name !== text2;
-    _mod16446.CONFIGURABLE && toString.name !== text2;
-  }
-  if (tmp11) {
-    if (_mod16389) {
-      const obj = { value: text2, configurable: true };
-      defineProperty(toString, "name", obj);
-    } else {
-      toString.name = text2;
-    }
-  }
-  const tmp15 = closure_8 && arg2 && tmp8(16409)(arg2, "arity") && toString.length !== arg2.arity;
-  if (tmp15) {
-    const obj2 = { value: arg2.arity };
-    defineProperty(toString, "length", obj2);
-  }
-  try {
-    if (arg2) {
-      if (_mod16409(arg2, "constructor")) {
-        if (arg2.constructor) {
-          if (_mod16389) {
-            defineProperty(toString, "prototype", { writable: false });
-          }
-        }
+let fn4;
+let fn5;
+let fn6;
+if (!_mod16445) {
+  let fn;
+  let fn2;
+  let fn3;
+  if (!_mod16399.state) {
+    let tmp = _mod16446("state");
+    let closure_6 = tmp;
+    _mod16428[tmp] = true;
+    fn = function t(facade, arg1) {
+      const tmp3 = closure_6;
+      if (require("module_16406")(facade, closure_6)) {
+        const self = this;
+        const self2 = this;
+        const typeError = new tmp(16383).TypeError("Object already initialized");
+        throw typeError;
+      } else {
+        arg1.facade = facade;
+        _mod16439(facade, tmp3, arg1);
+        return arg1;
       }
-    }
-    if (toString.prototype) {
-      toString.prototype = undefined;
-    }
-  } catch (err) {
+    };
+    fn4 = fn;
+    fn2 = function n(arg0) {
+      return require("module_16406")(arg0, closure_6) ? arg0[closure_6] : {};
+    };
+    fn5 = fn2;
+    fn3 = function u(arg0) {
+      return require("module_16406")(arg0, closure_6);
+    };
+    fn6 = fn3;
   }
-  const tmp8Result = _mod16447;
-  const enforceResult = tmp8Result.enforce(toString);
-  if (!_mod16409(enforceResult, "source")) {
-    let str10 = "";
-    const tmp21 = closure_7;
-    const tmp22 = closure_9;
-    if (typeof text2 === "string") {
-      str10 = text2;
-    }
-    enforceResult.source = tmp21(tmp22, str10);
-  }
-  return toString;
-};
-function toString() {
-  const self = this;
-  let source = _mod16412(this);
-  if (source) {
-    const tmpResult = _mod16447;
-    source = tmpResult.get(self).source;
-  }
-  if (!source) {
-    source = prop(self);
-  }
-  return source;
+  let obj = {
+    set: fn,
+    get: fn2,
+    has: fn3,
+    enforce(toString) {
+        let tmp2;
+        if (fn6(toString)) {
+          tmp2 = fn5(toString);
+        } else {
+          tmp2 = fn4(toString, {});
+        }
+        return tmp2;
+      },
+    getterFor(arg0) {
+        let closure_0 = arg0;
+        return (arg0) => {
+          if (_mod16408(arg0)) {
+            const tmp4 = fn5(arg0);
+            if (tmp4.type === closure_0) {
+              return tmp4;
+            }
+          }
+          const typeError = new _mod16383.TypeError("Incompatible receiver, " + closure_0 + " required");
+          throw typeError;
+        };
+      }
+  };
+  module.exports = obj;
 }
-fn(toString, "toString");
-prototype.toString = toString;
-
-export default fn;
+let state = _mod16399.state;
+if (!state) {
+  const _module = _mod16399;
+  let self = this;
+  let self2 = this;
+  const weakMap = new _mod16383.WeakMap();
+  let tmp4 = weakMap;
+  _module.state = weakMap;
+  state = weakMap;
+}
+({ get: state.get, has: state.has, set: state.set } = state);
+fn4 = function t(facade, arg1) {
+  const obj = state;
+  if (state.has(facade)) {
+    const self = this;
+    const self2 = this;
+    const typeError = new _mod16383.TypeError("Object already initialized");
+    throw typeError;
+  } else {
+    arg1.facade = facade;
+    const result = obj.set(facade, arg1);
+    return arg1;
+  }
+};
+fn5 = function n(arg0) {
+  const tmp = state.get(arg0) || {};
+  return tmp;
+};
+fn6 = function u(arg0) {
+  return state.has(arg0);
+};
+fn3 = fn6;
+fn2 = fn5;
+fn = fn4;

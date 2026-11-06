@@ -1,14 +1,14 @@
-// Module ID: 12156
-// Function ID: 12157
+// Module ID: 12125
+// Function ID: 12126
 // Name: VoiceXIcon
-// Dependencies: [19, 21, 575, 5853, 12157, 2]
+// Dependencies: [19, 21, 575, 5871, 12126, 2]
 // Exports: VoiceXIcon
 
-// Module 12156 (VoiceXIcon)
+// Module 12125 (VoiceXIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5853 */;
-import AssetRegistry from "AssetRegistry" /* 12157 */;
+import BaseIconImage2 from "BaseIconImage" /* 5871 */;
+import AssetRegistry from "AssetRegistry" /* 12126 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

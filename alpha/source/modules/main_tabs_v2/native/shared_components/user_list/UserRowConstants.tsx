@@ -1,9 +1,9 @@
-// Module ID: 10911
-// Function ID: 10912
+// Module ID: 10863
+// Function ID: 10864
 // Name: UserRowConstants
 // Dependencies: [2]
 
-// Module 10911 (UserRowConstants)
+// Module 10863 (UserRowConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/UserRowConstants.tsx");

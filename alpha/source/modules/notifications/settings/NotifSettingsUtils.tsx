@@ -1,21 +1,21 @@
-// Module ID: 15813
-// Function ID: 15814
+// Module ID: 15807
+// Function ID: 15808
 // Name: settings/NotifSettingsUtils
-// Dependencies: [1231, 502, 15814, 1233, 15815, 504, 15828, 2]
+// Dependencies: [1231, 502, 15808, 1233, 15809, 504, 15822, 2]
 // Exports: b64ToDeclarativeSettingsProto, getNotifSettingToggleValue, useNotifSettingRadioValue, useNotifSettingToggleValue, useNotifSettingValue
 
-// Module 15813 (settings/NotifSettingsUtils)
+// Module 15807 (settings/NotifSettingsUtils)
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1233 */;
-import notification_settings from "notification_settings" /* 15815 */;
+import notification_settings from "notification_settings" /* 15809 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15814 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 15808 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f109604 = () => NotifSettingsProtoStore.getSetting(closure_0);
+const f109794 = () => NotifSettingsProtoStore.getSetting(closure_0);
 const result = size.fileFinishedImporting("modules/notifications/settings/NotifSettingsUtils.tsx");
 
 export function b64ToDeclarativeSettingsProto(declarative_settings_proto) {
@@ -28,7 +28,7 @@ export function useNotifSettingValue(arg0) {
   const items = [NotifSettingsProtoStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f109604, items1);
+  return obj.useStateFromStores(items, f109794, items1);
 }
 export function getNotifSettingToggleValue(arg0, result) {
   const tmp = result;
@@ -99,7 +99,7 @@ export function useNotifSettingRadioValue(arg0) {
   const items = [NotifSettingsProtoStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f109604, items1);
+  const stateFromStores = obj.useStateFromStores(items, f109794, items1);
   let num;
   if (stateFromStores != null) {
     num = stateFromStores.radio;

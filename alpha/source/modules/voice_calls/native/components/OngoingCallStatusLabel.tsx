@@ -1,15 +1,15 @@
-// Module ID: 15451
-// Function ID: 15452
+// Module ID: 15446
+// Function ID: 15447
 // Name: OngoingCallStatusLabel
-// Dependencies: [19, 502, 6707, 5815, 21, 504, 1113, 15450, 1187, 2]
+// Dependencies: [19, 502, 6649, 5833, 21, 504, 1113, 15445, 1187, 2]
 // Exports: default
 
-// Module 15451 (OngoingCallStatusLabel)
+// Module 15446 (OngoingCallStatusLabel)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 6707 */;
-import VoiceStateStore from "VoiceStateStore" /* 5815 */;
+import CallStore from "CallStore" /* 6649 */;
+import VoiceStateStore from "VoiceStateStore" /* 5833 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

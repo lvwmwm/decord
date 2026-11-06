@@ -1,24 +1,24 @@
-// Module ID: 17606
-// Function ID: 17607
+// Module ID: 17595
+// Function ID: 17596
 // Name: DisplayNameStylesEffectPickerSheet
-// Dependencies: [32, 19, 17, 1403, 21, 5143, 575, 8887, 17602, 5386, 5384, 5398, 17604, 1113, 3059, 5770, 6165, 10959, 10956, 10957, 2]
+// Dependencies: [32, 19, 17, 1394, 21, 5170, 575, 8833, 17591, 5406, 5404, 5418, 17593, 1113, 3056, 5788, 6185, 10911, 10908, 10909, 2]
 // Exports: default
 
-// Module 17606 (DisplayNameStylesEffectPickerSheet)
+// Module 17595 (DisplayNameStylesEffectPickerSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1403 */;
-import _modDef3059 from "module_3059" /* 3059 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5384 */;
-import HapticUtils from "HapticUtils" /* 5386 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10956 */;
-import types from "types" /* 10957 */;
-import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10959 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1394 */;
+import _modDef3056 from "module_3056" /* 3056 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5404 */;
+import HapticUtils from "HapticUtils" /* 5406 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10908 */;
+import types from "types" /* 10909 */;
+import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 10911 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
+import createStyles_mod from "createStyles" /* 5170 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -47,7 +47,7 @@ function EffectTile(arg0) {
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[effectId];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef3059.OpWJ3f;
+    OpWJ3f = _modDef3056.OpWJ3f;
   }
   const stringResult = string(OpWJ3f);
   const items = [tmp.effectCard, ];
@@ -113,9 +113,9 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let closure_7;
   let tmp = closure_10();
   let tmp3 = dependencyMap;
-  let obj = userId(8887);
+  let obj = userId(8833);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
-  let obj2 = userId(17602);
+  let obj2 = userId(17591);
   const displayNameStylesNewEffects = obj2.useDisplayNameStylesNewEffects(closure_7);
   ({ dotEffectIds: c2, dismissEffectDot: c3 } = displayNameStylesNewEffects);
   [first, closure_5] = first.useState(selectedEffectId);
@@ -128,12 +128,12 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
   let tmp9 = null;
   if (null != userId) {
     const obj3 = { ref: bottomSheetRef, header: closure_8(tmp12, obj4), children: closure_8(closure_5, obj6) };
-    const BottomSheet = tmp2(5398).BottomSheet;
-    obj4 = { title: intl.string(onSelectEffect(3059).RVtMxT), trailing: closure_8(Button, obj5) };
-    tmp12 = onSelectEffect(17604);
+    const BottomSheet = tmp2(5418).BottomSheet;
+    obj4 = { title: intl.string(onSelectEffect(3056).RVtMxT), trailing: closure_8(Button, obj5) };
+    tmp12 = onSelectEffect(17593);
     intl = tmp2(1113).intl;
     obj5 = { text: intl2.string(userId(1113).t.XqMe3N), onPress: tmp8, variant: "primary", size: "sm" };
-    Button = tmp2(5770).Button;
+    Button = tmp2(5788).Button;
     intl2 = tmp2(1113).intl;
     obj6 = { style: tmp.container, children: closure_8(closure_5, obj7) };
     obj7 = { style: tmp.contentContainer, children: closure_8(Stack, obj8) };
@@ -159,7 +159,7 @@ export default function DisplayNameStylesEffectPickerSheet(userId) {
           return closure_1_8(EffectTile, obj, effectId);
         })
     };
-    Stack = tmp2(6165).Stack;
+    Stack = tmp2(6185).Stack;
     tmp9 = closure_8(BottomSheet, obj3);
   }
   return tmp9;

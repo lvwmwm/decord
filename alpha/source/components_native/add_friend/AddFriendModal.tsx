@@ -1,26 +1,26 @@
-// Module ID: 15932
-// Function ID: 15933
+// Module ID: 15927
+// Function ID: 15928
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1385, 1072, 14474, 21, 5143, 6861, 575, 14476, 5731, 1252, 1377, 1502, 6882, 5197, 1113, 9082, 7700, 15933, 7142, 5763, 15934, 15935, 1627, 7309, 2]
+// Dependencies: [32, 19, 17, 1385, 1072, 14451, 21, 5170, 6803, 575, 14453, 5751, 1252, 1377, 1502, 6824, 5224, 1113, 9028, 7653, 15928, 7089, 5781, 15929, 15930, 1627, 7256, 2]
 // Exports: default
 
-// Module 15932 (AddFriendModal)
+// Module 15927 (AddFriendModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1627 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6882 */;
-import NavigatorHeader from "NavigatorHeader" /* 7142 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14474 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14476 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6824 */;
+import NavigatorHeader from "NavigatorHeader" /* 7089 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 14451 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 14453 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1385 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5143 */;
-import TextStyles from "TextStyles" /* 6861 */;
+import createStyles_mod from "createStyles" /* 5170 */;
+import TextStyles from "TextStyles" /* 6803 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

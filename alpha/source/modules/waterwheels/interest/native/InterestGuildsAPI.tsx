@@ -1,10 +1,10 @@
-// Module ID: 19880
-// Function ID: 19881
+// Module ID: 19886
+// Function ID: 19887
 // Name: InterestGuildsAPI
-// Dependencies: [5, 19881, 1282, 2]
+// Dependencies: [5, 19887, 1282, 2]
 // Exports: createInterestGuildsResource
 
-// Module 19880 (InterestGuildsAPI)
+// Module 19886 (InterestGuildsAPI)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ export function createInterestGuildsResource() {
       let obj4;
       let obj8;
       const HTTP = game_ids(c1[2]).HTTP;
-      const request = { url, query: obj4, retries: 0, timeout: 5000, rejectWithError: obj8.rejectWithMigratedError() };
+      const request = { url, query: obj4, retries: 0, timeout: 10000, rejectWithError: obj8.rejectWithMigratedError() };
       const get = HTTP.get;
       obj4 = { game_ids };
       obj8 = game_ids(c1[2]);

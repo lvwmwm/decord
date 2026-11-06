@@ -1,9 +1,9 @@
-// Module ID: 15088
-// Function ID: 15089
+// Module ID: 15065
+// Function ID: 15066
 // Name: TrendingType
 // Dependencies: [2]
 
-// Module 15088 (TrendingType)
+// Module 15065 (TrendingType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/TrendingType.tsx");
