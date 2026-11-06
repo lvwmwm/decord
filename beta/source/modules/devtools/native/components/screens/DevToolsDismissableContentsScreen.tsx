@@ -1,10 +1,10 @@
-// Module ID: 17616
-// Function ID: 17617
+// Module ID: 17611
+// Function ID: 17612
 // Name: DevToolsDismissableContentsScreen
-// Dependencies: [32, 19, 17, 4850, 21, 5014, 575, 4847, 17617, 7369, 7060, 5690, 6975, 4844, 5738, 6984, 17618, 7218, 5624, 10034, 6899, 1625, 11902, 504, 7294, 2]
+// Dependencies: [32, 19, 17, 4850, 21, 5014, 575, 4847, 17612, 7369, 7060, 5690, 6975, 4844, 5738, 6984, 17613, 7218, 5624, 10034, 6899, 1625, 11902, 504, 7294, 2]
 // Exports: default
 
-// Module 17616 (DevToolsDismissableContentsScreen)
+// Module 17611 (DevToolsDismissableContentsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
@@ -20,8 +20,8 @@ import TableRowGroup3 from "TableRowGroup" /* 7060 */;
 import SearchBar from "SearchBar" /* 7218 */;
 import TableSwitchRow3 from "TableSwitchRow" /* 7369 */;
 import SearchEmpty from "SearchEmpty" /* 10034 */;
-import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17617 */;
-import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 17618 */;
+import toggleDismissibleContentDismissStateDefault from "toggleDismissibleContentDismissState" /* 17612 */;
+import DoubleCheckmarkIcon from "DoubleCheckmarkIcon" /* 17613 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4850 */;
@@ -130,7 +130,7 @@ export default function DevToolsDismissableContentsScreen() {
   let items4;
   let obj4;
   let tmp5;
-  const f112502 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
+  const f112493 = (localeCompare, arg1) => localeCompare.localeCompare(arg1);
   let tmp = callback1();
   let tmp2 = useSafeAreaInsetsDefault();
   const ref = initialSearchQuery.useRef(null);
@@ -173,7 +173,7 @@ export default function DevToolsDismissableContentsScreen() {
       }
       continue;
     }
-    const sorted = items.sort(f112502);
+    const sorted = items.sort(f112493);
     return items;
   });
   let items = [closure_6];
@@ -219,7 +219,7 @@ export default function DevToolsDismissableContentsScreen() {
       }
       continue;
     }
-    const sorted = items.sort(f112502);
+    const sorted = items.sort(f112493);
     tmp2(items);
     callback();
   }, items1);

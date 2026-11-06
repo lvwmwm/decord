@@ -1,10 +1,10 @@
-// Module ID: 15962
-// Function ID: 15963
+// Module ID: 15957
+// Function ID: 15958
 // Name: VoiceGatewayProtocolVersionExperiment
 // Dependencies: [1447, 2]
 // Exports: getVoiceGatewayProtocolVersion
 
-// Module 15962 (VoiceGatewayProtocolVersionExperiment)
+// Module 15957 (VoiceGatewayProtocolVersionExperiment)
 import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 

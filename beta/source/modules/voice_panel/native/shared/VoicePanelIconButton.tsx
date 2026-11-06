@@ -1,9 +1,9 @@
-// Module ID: 19150
-// Function ID: 19151
+// Module ID: 19145
+// Function ID: 19146
 // Name: VoicePanelIconButton
 // Dependencies: [19, 21, 7241, 8028, 2]
 
-// Module 19150 (VoicePanelIconButton)
+// Module 19145 (VoicePanelIconButton)
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7241 */;
 import IconButton2 from "IconButton" /* 8028 */;

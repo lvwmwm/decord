@@ -1,10 +1,10 @@
-// Module ID: 19875
-// Function ID: 19876
+// Module ID: 19870
+// Function ID: 19871
 // Name: Placeholder
 // Dependencies: [19, 17, 21, 5014, 2]
 // Exports: default
 
-// Module 19875 (Placeholder)
+// Module 19870 (Placeholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 16516
-// Function ID: 16517
+// Module ID: 16511
+// Function ID: 16512
 // Name: UserPrimaryGuildListBottomSheet
 // Dependencies: [32, 19, 17, 8393, 21, 5014, 1375, 575, 8736, 5082, 6975, 5258, 1113, 6957, 9295, 7062, 14731, 12, 5023, 14734, 7351, 7366, 7321, 5634, 7218, 5272, 5624, 7294, 8177, 2]
 // Exports: default
 
-// Module 16516 (UserPrimaryGuildListBottomSheet)
+// Module 16511 (UserPrimaryGuildListBottomSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;

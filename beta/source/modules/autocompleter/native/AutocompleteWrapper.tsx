@@ -165,7 +165,7 @@ class ACWrapper {
     let tmp37;
     let tmp45;
     let tmp92Result4;
-    const f105363 = (arg0) => {
+    const f105356 = (arg0) => {
       closure_0 = arg0;
       if (arg0 > 0) {
         let tmp = commandsDisabled;
@@ -598,7 +598,7 @@ class ACWrapper {
       tmp33[1](autocompleteType);
       let tmp32Result = tmp32(null);
     }
-    const items7 = [first2, obj5.useCallback(f105363, [])];
+    const items7 = [first2, obj5.useCallback(f105356, [])];
     [tmp37, c39] = keyboardType(items7, 2);
     keyboardType(items7, 2);
     const tmp11Result9 = keyboardType(obj5.useState(null), 2);
@@ -609,7 +609,7 @@ class ACWrapper {
       let tmp42 = tmp11Result10[1](autocompleteType);
       tmp11Result9[1](null);
     }
-    const items8 = [first3, obj5.useCallback(f105363, [])];
+    const items8 = [first3, obj5.useCallback(f105356, [])];
     [tmp45, c40] = keyboardType(items8, 2);
     keyboardType(items8, 2);
     const tmp11Result12 = keyboardType(obj5.useState(null), 2);
@@ -621,7 +621,7 @@ class ACWrapper {
       let tmp50 = tmp11Result13[1](autocompleteType);
       tmp48(null);
     }
-    const items9 = [first4, obj5.useCallback(f105363, [])];
+    const items9 = [first4, obj5.useCallback(f105356, [])];
     const tmp11Result14 = keyboardType(items9, 2);
     first5 = tmp11Result14[0];
     closure_42 = tmp11Result14[1];

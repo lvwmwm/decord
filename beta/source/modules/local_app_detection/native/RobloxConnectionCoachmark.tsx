@@ -1,10 +1,10 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 19021
+// Function ID: 19022
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 6572, 1383, 15603, 1072, 4860, 21, 5014, 575, 5080, 1625, 5258, 5272, 7321, 7367, 6027, 5624, 1113, 5634, 14588, 9720, 7563, 5036, 6574, 1409, 1187, 8031, 504, 15604, 7347, 5044, 4847, 2]
+// Dependencies: [32, 19, 17, 6572, 1383, 15598, 1072, 4860, 21, 5014, 575, 5080, 1625, 5258, 5272, 7321, 7367, 6027, 5624, 1113, 5634, 14588, 9720, 7563, 5036, 6574, 1409, 1187, 8031, 504, 15599, 7347, 5044, 4847, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 19026 (RobloxConnectionCoachmark)
+// Module 19021 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -24,7 +24,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6572 */;
 import UserStore from "UserStore" /* 1383 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15603 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 15598 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -102,7 +102,7 @@ function UserIcon() {
   const obj3 = { style: tmp.avatarInnerBorder };
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
   items1 = [map1(View, obj3), ];
-  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "Array" };
+  const obj4 = { size: native.AvatarSizes.NORMAL, user: stateFromStores, guildId: "applicationId" };
   const Avatar = native.Avatar;
   items1[1] = map1(Avatar, obj4);
   return authStore3(View, obj2);

@@ -1,13 +1,13 @@
-// Module ID: 14971
-// Function ID: 14972
+// Module ID: 14966
+// Function ID: 14967
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 7777, 7778, 7774, 14972, 2]
+// Dependencies: [19, 7777, 7778, 7774, 14967, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 14971 (useDisplayableBoardWidgets)
+// Module 14966 (useDisplayableBoardWidgets)
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 7774 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7777 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 14972 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 14967 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

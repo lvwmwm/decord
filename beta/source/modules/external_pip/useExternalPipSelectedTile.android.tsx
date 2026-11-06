@@ -1,14 +1,14 @@
-// Module ID: 19201
-// Function ID: 19202
+// Module ID: 19196
+// Function ID: 19197
 // Name: useExternalPipSelectedTile
-// Dependencies: [19, 6843, 15632, 5764, 19115, 19113, 5874, 504, 2]
+// Dependencies: [19, 6843, 15627, 5764, 19110, 19108, 5874, 504, 2]
 // Exports: default
 
-// Module 19201 (useExternalPipSelectedTile)
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19115 */;
+// Module 19196 (useExternalPipSelectedTile)
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19110 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
-import PIPSpeakerStore from "PIPSpeakerStore" /* 15632 */;
+import PIPSpeakerStore from "PIPSpeakerStore" /* 15627 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import size_mod from "module_2" /* 2 */;
 

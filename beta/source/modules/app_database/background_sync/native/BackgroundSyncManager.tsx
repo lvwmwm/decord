@@ -1,10 +1,10 @@
-// Module ID: 19410
-// Function ID: 19411
+// Module ID: 19405
+// Function ID: 19406
 // Name: BackgroundSyncManager
-// Dependencies: [502, 1383, 7287, 19411, 2]
+// Dependencies: [502, 1383, 7287, 19406, 2]
 
-// Module 19410 (BackgroundSyncManager)
-import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 19411 */;
+// Module 19405 (BackgroundSyncManager)
+import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 19406 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1383 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;

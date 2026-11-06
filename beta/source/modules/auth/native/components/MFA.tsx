@@ -1,10 +1,10 @@
-// Module ID: 18019
-// Function ID: 18020
+// Module ID: 18014
+// Function ID: 18015
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 1497, 7111, 504, 6740, 17670, 1376, 575, 2]
+// Dependencies: [19, 502, 21, 12, 1497, 7111, 504, 6740, 17665, 1376, 575, 2]
 // Exports: default
 
-// Module 18019 (components/MFA)
+// Module 18014 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6740 */;
@@ -61,7 +61,7 @@ export default function ConnectedMFA() {
   }, items2);
   const obj3 = { mfaChallenge: stateFromStores, finish: callback, handleOnClose: callback1, ignoreKeyboard: inContainer, containerStyle: tmp9, headerStatusBarHeight: num, headerLeftContainerStyle: tmp10, headerRightContainerStyle: tmp12 };
   tmp9 = undefined;
-  const MFAModal = tmp(17670).MFAModal;
+  const MFAModal = tmp(17665).MFAModal;
   const tmp8 = jsx;
   if (inContainer) {
     tmp9 = closure_7;

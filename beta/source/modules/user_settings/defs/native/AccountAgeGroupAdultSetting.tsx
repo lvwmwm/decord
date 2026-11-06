@@ -1,14 +1,14 @@
-// Module ID: 16628
-// Function ID: 16629
+// Module ID: 16623
+// Function ID: 16624
 // Name: AccountAgeGroupAdultSetting
-// Dependencies: [8432, 6726, 5693, 16584, 11540, 1113, 2]
+// Dependencies: [8432, 6726, 5693, 16579, 11540, 1113, 2]
 
-// Module 16628 (AccountAgeGroupAdultSetting)
+// Module 16623 (AccountAgeGroupAdultSetting)
 import intl2 from "intl" /* 1113 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16584 */;
+import TinyBroncoSettingsPredicate from "TinyBroncoSettingsPredicate" /* 16579 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 18578
-// Function ID: 18579
+// Module ID: 18573
+// Function ID: 18574
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4863, 1072, 10727, 5019, 21, 5014, 575, 8984, 1113, 18579, 5712, 5607, 13405, 13418, 5634, 6744, 13384, 1379, 7824, 7636, 1625, 1491, 1375, 13394, 13395, 2]
+// Dependencies: [32, 5, 19, 17, 4863, 1072, 10727, 5019, 21, 5014, 575, 8984, 1113, 18574, 5712, 5607, 13405, 13418, 5634, 6744, 13384, 1379, 7824, 7636, 1625, 1491, 1375, 13394, 13395, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 18578 (ICYMIShareModal)
+// Module 18573 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

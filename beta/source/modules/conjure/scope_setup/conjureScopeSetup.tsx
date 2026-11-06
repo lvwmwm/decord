@@ -27,7 +27,7 @@ let c10;
 let c9;
 let metroImportAll;
 let metroImportDefault;
-const f102570 = function*(arg0, value) {
+const f102563 = function*(arg0, value) {
   if (c5 === 2) {
     c5 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -474,7 +474,7 @@ export function settleConjureInstallScope(arg0, arg1, arg2) {
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f102570)();
+    value = tmp2(f102563)();
   }
   const result = obj.set(combined, value);
   return value;
@@ -550,7 +550,7 @@ export function switchConjureInstallScope(arg0, id, arg2, arg3) {
   let value = map.get(combined);
   const tmp2 = _asyncToGenerator;
   if (value == null) {
-    value = tmp2(f102570)();
+    value = tmp2(f102563)();
   }
   const result = obj.set(combined, value);
   return value;

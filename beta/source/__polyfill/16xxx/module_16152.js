@@ -1,9 +1,9 @@
 // Module ID: 16152
 // Function ID: 16153
-// Dependencies: [16138]
+// Dependencies: [16130]
 
 // Module 16152
-import _mod16138 from "module_16138" /* 16138 */;
+import _mod16130 from "module_16130" /* 16130 */;
 
 
-export default (arg0) => Object(_mod16138(arg0));
+export default _mod16130({}.isPrototypeOf);

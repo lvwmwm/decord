@@ -1,10 +1,10 @@
-// Module ID: 20003
-// Function ID: 20004
+// Module ID: 19998
+// Function ID: 19999
 // Name: GuildRoleSubscriptionTierTemplateUtils
 // Dependencies: [1093, 8650, 8670, 8668, 8658, 8657, 8665, 2]
 // Exports: getPrivateChannelIconComponent
 
-// Module 20003 (GuildRoleSubscriptionTierTemplateUtils)
+// Module 19998 (GuildRoleSubscriptionTierTemplateUtils)
 import ChannelTypes from "ChannelTypes" /* 1093 */;
 import TextLockIcon from "TextLockIcon" /* 8650 */;
 import ImageLockIcon from "ImageLockIcon" /* 8657 */;

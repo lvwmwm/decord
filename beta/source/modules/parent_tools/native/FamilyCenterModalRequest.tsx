@@ -63,7 +63,7 @@ let size;
 let size1;
 let size2;
 let unpackModuleId;
-const f104435 = () => {
+const f104428 = () => {
   currentUser = currentUser.getCurrentUser();
   let prop;
   if (currentUser != null) {
@@ -501,7 +501,7 @@ function FamilyCenterConfirmAgeScreen(teenIdentity) {
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [UserStore];
-  const stateFromStores = obj2.useStateFromStores(items, f104435);
+  const stateFromStores = obj2.useStateFromStores(items, f104428);
   const tmp7 = stateFromStores(6732)(stateFromStores);
   dependencyMap = tmp7;
   const items1 = [stateFromStores, tmp7, navigation];
@@ -638,7 +638,7 @@ function FamilyCenterPrereqMustBeAdultScreen() {
   navigation = obj.useNavigation();
   let obj2 = navigation(563);
   const items = [UserStore];
-  const stateFromStores = obj2.useStateFromStores(items, f104435);
+  const stateFromStores = obj2.useStateFromStores(items, f104428);
   const tmp3 = stateFromStores(6732)(stateFromStores);
   dependencyMap = tmp3;
   const items1 = [stateFromStores, tmp3, navigation];

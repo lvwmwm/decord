@@ -1,15 +1,15 @@
-// Module ID: 14973
-// Function ID: 14974
+// Module ID: 14968
+// Function ID: 14969
 // Name: UserProfileActivityTab
-// Dependencies: [19, 17, 1072, 21, 5014, 575, 5624, 1113, 8940, 2061, 14974, 14977, 14842, 14978, 2]
+// Dependencies: [19, 17, 1072, 21, 5014, 575, 5624, 1113, 8940, 2061, 14969, 14972, 14842, 14973, 2]
 // Exports: default
 
-// Module 14973 (UserProfileActivityTab)
+// Module 14968 (UserProfileActivityTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5624 */;
-import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 14978 */;
+import UserProfileRecentActivityCardDefault from "UserProfileRecentActivityCard" /* 14973 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -129,8 +129,8 @@ export default function UserProfileActivityTab(user) {
   ({ currentUser, guildId, cardStyle } = user);
   const channelId = user.channelId;
   let obj = { userId: user.id, currentUserId: currentUser.id, guildId };
-  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(14974)(obj));
-  cardStyle(14974)(obj);
+  ({ recent, isCurrentUser, hasCurrentActivity, hasRecentActivity } = cardStyle(14969)(obj));
+  cardStyle(14969)(obj);
   const tmp = cardStyle;
   if (!hasCurrentActivity) {
     let tmp10Result;
@@ -138,7 +138,7 @@ export default function UserProfileActivityTab(user) {
       if (tmp4) {
         tmp10Result = tmp5(UserProfileActivityTabSkeleton, {});
       } else {
-        const tmp7 = user(14977);
+        const tmp7 = user(14972);
         if (isCurrentUser) {
           tmp10Result = tmp5(tmp7.UserProfileActivityEmptyCurrentUser, {});
         } else {

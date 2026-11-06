@@ -1,10 +1,10 @@
-// Module ID: 15155
-// Function ID: 15156
+// Module ID: 15150
+// Function ID: 15151
 // Name: CtaButton
 // Dependencies: [7464, 13350, 6726, 1113, 13352, 3192, 2]
 // Exports: createCtaButtons
 
-// Module 15155 (CtaButton)
+// Module 15150 (CtaButton)
 import intl5 from "intl" /* 1113 */;
 import _modDef3192 from "module_3192" /* 3192 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;

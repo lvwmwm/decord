@@ -1,10 +1,10 @@
-// Module ID: 18913
-// Function ID: 18914
+// Module ID: 18908
+// Function ID: 18909
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 4921, 4863, 4920, 4885, 4956, 1383, 1072, 21, 5014, 575, 5958, 1113, 5652, 4951, 11646, 9033, 8199, 12, 7060, 6975, 12219, 1497, 11484, 10233, 17305, 504, 1992, 10819, 18914, 5609, 9812, 7485, 2]
+// Dependencies: [32, 5, 19, 17, 4921, 4863, 4920, 4885, 4956, 1383, 1072, 21, 5014, 575, 5958, 1113, 5652, 4951, 11646, 9033, 8199, 12, 7060, 6975, 12219, 1497, 11484, 10233, 17300, 504, 1992, 10819, 18909, 5609, 9812, 7485, 2]
 // Exports: default
 
-// Module 18913 (ChannelSettingsPermissionsOverview)
+// Module 18908 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,8 +17,8 @@ import TableRow3 from "TableRow" /* 6975 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7485 */;
 import RoleLabel from "RoleLabel" /* 10233 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10819 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 17305 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 18914 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 17300 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 18909 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -249,7 +249,7 @@ function RoleRow(onDelete) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(17305).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(17300).CircleMinusIcon;
       intl = tmp3(1113).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }

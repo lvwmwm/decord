@@ -1,17 +1,17 @@
-// Module ID: 18600
-// Function ID: 18601
+// Module ID: 18595
+// Function ID: 18596
 // Name: PostCallDisconnectNudge
-// Dependencies: [32, 19, 4917, 5679, 13973, 13974, 21, 18599, 1113, 17477, 13975, 504, 7569, 4847, 13976, 5258, 18600, 1994, 2]
+// Dependencies: [32, 19, 4917, 5679, 13973, 13974, 21, 18594, 1113, 17472, 13975, 504, 7569, 4847, 13976, 5258, 18595, 1994, 2]
 // Exports: default, usePostCallDisconnectNudge
 
-// Module 18600 (PostCallDisconnectNudge)
+// Module 18595 (PostCallDisconnectNudge)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13973 */;
 import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13976 */;
-import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 18599 */;
+import NotificationNudgeBottomSheetDefault from "NotificationNudgeBottomSheet" /* 18594 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
@@ -50,7 +50,7 @@ export function usePostCallDisconnectNudge() {
   let stateFromStores;
   let stateFromStores1;
   let tmp = dependencyMap;
-  let obj = stateFromStores1(17477);
+  let obj = stateFromStores1(17472);
   const inHoldout = obj.useConfig({ location: "usePostCallDisconnectNudge" }).inHoldout;
   let tmp2 = stateFromStores;
   let obj2 = stateFromStores(13975);
@@ -101,7 +101,7 @@ export function usePostCallDisconnectNudge() {
       const result = obj.setPushPermissionReactivationSeen(PermissionPromptType.CALL_DISCONNECT_BOTTOM_SHEET);
       const obj3 = { markAsDismissed };
       const obj2 = ActionSheetActionCreatorsDefault;
-      obj2.openLazy(asyncRequire(18600, dependencyMap.paths), c11, obj3);
+      obj2.openLazy(asyncRequire(18595, dependencyMap.paths), c11, obj3);
     }
   }, items3);
 }

@@ -1,28 +1,28 @@
-// Module ID: 18161
-// Function ID: 18162
+// Module ID: 18156
+// Function ID: 18157
 // Name: RedesignChannelList
-// Dependencies: [32, 19, 17, 5015, 7705, 18074, 4885, 4917, 5767, 1072, 7713, 21, 1500, 5198, 11505, 18162, 18163, 18190, 18239, 18240, 17076, 18080, 18241, 18191, 18243, 7714, 504, 6885, 18244, 18248, 7707, 18249, 12411, 18058, 17077, 11563, 5611, 18108, 18304, 18316, 18319, 18321, 18323, 18072, 18324, 9676, 18326, 18330, 18343, 4888, 18348, 9972, 18356, 13335, 2]
+// Dependencies: [32, 19, 17, 5015, 7705, 18069, 4885, 4917, 5767, 1072, 7713, 21, 1500, 5198, 11505, 18157, 18158, 18185, 18234, 18235, 17071, 18075, 18236, 18186, 18238, 7714, 504, 6885, 18239, 18243, 7707, 18244, 12411, 18053, 17072, 11563, 5611, 18103, 18299, 18311, 18314, 18316, 18318, 18067, 18319, 9676, 18321, 18325, 18338, 4888, 18343, 9972, 18351, 13335, 2]
 
-// Module 18161 (RedesignChannelList)
+// Module 18156 (RedesignChannelList)
 import react_native from "react-native" /* 17 */;
 import ChannelListState from "ChannelListState" /* 7707 */;
 import GuildSidebarConstants from "GuildSidebarConstants" /* 7713 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
-import GuildsRenderExperiment2 from "GuildsRenderExperiment" /* 18072 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18080 */;
-import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 18191 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 18240 */;
-import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 18241 */;
-import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 18249 */;
-import useShouldRenderChannelList from "useShouldRenderChannelList" /* 18323 */;
-import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 18330 */;
-import GuildsEmptyDefault from "GuildsEmpty" /* 18343 */;
-import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 18356 */;
+import GuildsRenderExperiment2 from "GuildsRenderExperiment" /* 18067 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18075 */;
+import RedesignGuildHeaderDefault from "RedesignGuildHeader" /* 18186 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 18235 */;
+import ChannelsUnreadBarsDefault from "ChannelsUnreadBars" /* 18236 */;
+import renderRedesignChannelListItem from "renderRedesignChannelListItem" /* 18244 */;
+import useShouldRenderChannelList from "useShouldRenderChannelList" /* 18318 */;
+import GuildUpsellChannelListDefault from "GuildUpsellChannelList" /* 18325 */;
+import GuildsEmptyDefault from "GuildsEmpty" /* 18338 */;
+import NsfwGateGuildSidebarDefault from "NsfwGateGuildSidebar" /* 18351 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import ChannelListStore from "ChannelListStore" /* 7705 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 18074 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 18069 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
@@ -64,7 +64,7 @@ function GuildChannelsList(shouldRender) {
   const merged = Object.assign(shouldRender, Object.assign({ shouldRender: 0 }));
   let found;
   dependencyMap = undefined;
-  const arr = found(18324)(merged.guild);
+  const arr = found(18319)(merged.guild);
   const hasItem = arr.includes(ChannelListGuildActionRow.GUILD_CONJURE);
   merged(9676);
   found = arr;
@@ -75,8 +75,8 @@ function GuildChannelsList(shouldRender) {
       found = arr.filter((item) => item !== constants.GUILD_CONJURE);
     }
   }
-  ({ rows: c2, gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication } = found(18326)(merged.guild));
-  found(18326)(merged.guild);
+  ({ rows: c2, gameClaimMarkAsDismissed, applicationAccountLinkMarkAsDismissed, startApplicationAccountLinkAuthorization, accountLinkApplication } = found(18321)(merged.guild));
+  found(18321)(merged.guild);
   const items = [ChannelListStore];
   const tmp5Result = tmp5(504);
   const stateFromStoresObject = tmp5Result.useStateFromStoresObject(items, () => {
@@ -111,7 +111,7 @@ function ChannelsWrapper(selectedGuildId) {
         const tmp2Result = selectedGuildId(4888);
         if (tmp2Result.isFavoritesGuildId(selectedGuildId)) {
           const obj4 = { guild: stateFromStores, selectedChannelId, selectedVoiceChannelId: stateFromStores1 };
-          const _default = selectedGuildId(18348).default;
+          const _default = selectedGuildId(18343).default;
           const merged1 = Object.assign(merged);
           return closure_15(_default, obj4);
         } else {

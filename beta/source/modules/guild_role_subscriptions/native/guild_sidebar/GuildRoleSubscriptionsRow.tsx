@@ -1,10 +1,10 @@
-// Module ID: 18265
-// Function ID: 18266
+// Module ID: 18260
+// Function ID: 18261
 // Name: GuildRoleSubscriptionsRow
-// Dependencies: [19, 1072, 4870, 11046, 21, 5014, 575, 1099, 5258, 18266, 1994, 13937, 1113, 14392, 2]
+// Dependencies: [19, 1072, 4870, 11046, 21, 5014, 575, 1099, 5258, 18261, 1994, 13937, 1113, 14392, 2]
 // Exports: default
 
-// Module 18265 (GuildRoleSubscriptionsRow)
+// Module 18260 (GuildRoleSubscriptionsRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -55,7 +55,7 @@ export default function GuildRoleSubscriptionsRow(selected) {
         obj.hideActionSheet(closure_1_1);
       }
     };
-    obj.openLazy(asyncRequire(18266, dependencyMap.paths), c1, obj2);
+    obj.openLazy(asyncRequire(18261, dependencyMap.paths), c1, obj2);
   }, items1);
   const ChannelModes = id(13937).ChannelModes;
   if (selected) {

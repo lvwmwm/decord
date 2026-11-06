@@ -1,9 +1,9 @@
-// Module ID: 18092
-// Function ID: 18093
+// Module ID: 18087
+// Function ID: 18088
 // Name: MessagesItemChannelAvatar
 // Dependencies: [19, 5015, 502, 5761, 13729, 1383, 11046, 21, 5014, 575, 1187, 504, 10799, 2]
 
-// Module 18092 (MessagesItemChannelAvatar)
+// Module 18087 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10799 */;

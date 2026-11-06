@@ -1,10 +1,10 @@
-// Module ID: 18885
-// Function ID: 18886
+// Module ID: 18880
+// Function ID: 18881
 // Name: UserProfileYourFriendsCard
 // Dependencies: [32, 19, 17, 7801, 4956, 1383, 1072, 21, 1187, 5014, 504, 14920, 9151, 12, 1379, 6975, 5624, 1113, 2]
 // Exports: default
 
-// Module 18885 (UserProfileYourFriendsCard)
+// Module 18880 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -172,12 +172,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f140441 = (role) => "user" === role.role;
+        const f140432 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = closure_3_8.getMessages(closure_0);
           const obj = closure_3_8;
-          if (messages.some(f140441)) {
+          if (messages.some(f140432)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -192,7 +192,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f140441)) {
+        if (messages.some(f140432)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);

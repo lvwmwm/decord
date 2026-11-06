@@ -1,14 +1,14 @@
-// Module ID: 16655
-// Function ID: 16656
+// Module ID: 16650
+// Function ID: 16651
 // Name: AccountEnable2faSetting
-// Dependencies: [1383, 8432, 16583, 16656, 5958, 1113, 11540, 2]
+// Dependencies: [1383, 8432, 16578, 16651, 5958, 1113, 11540, 2]
 
-// Module 16655 (AccountEnable2faSetting)
+// Module 16650 (AccountEnable2faSetting)
 import intl3 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import SettingsAccountUtils from "SettingsAccountUtils" /* 16583 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16656 */;
+import SettingsAccountUtils from "SettingsAccountUtils" /* 16578 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16651 */;
 import UserStore from "UserStore" /* 1383 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;

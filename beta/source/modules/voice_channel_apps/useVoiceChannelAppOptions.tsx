@@ -1,10 +1,10 @@
-// Module ID: 18899
-// Function ID: 18900
+// Module ID: 18894
+// Function ID: 18895
 // Name: useVoiceChannelAppOptions
-// Dependencies: [32, 19, 6844, 1409, 7419, 2024, 5675, 10875, 504, 7330, 6881, 18900, 2]
+// Dependencies: [32, 19, 6844, 1409, 7419, 2024, 5675, 10875, 504, 7330, 6881, 18895, 2]
 // Exports: useVoiceChannelAppSettingOptions, voiceChannelAppIdsToFetch, voiceChannelAppRows
 
-// Module 18899 (useVoiceChannelAppOptions)
+// Module 18894 (useVoiceChannelAppOptions)
 import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
 import ConjureUtils from "ConjureUtils" /* 7419 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, map, name, set;
 
-const f116097 = (application_id) => application_id.application_id;
+const f116088 = (application_id) => application_id.application_id;
 function voiceChannelAppCandidates(arg0, arg1, arg2) {
   map = new Map();
   const items = [...arg1];
@@ -52,7 +52,7 @@ export function voiceChannelAppIdsToFetch(arr, arg1) {
     const obj = closure_2_0(stateFromStoresArray1[5]);
     return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
   });
-  return found.map(f116097);
+  return found.map(f116088);
 }
 export function useVoiceChannelAppSettingOptions(guildId, application_id) {
   let closure_129_6;
@@ -100,7 +100,7 @@ export function useVoiceChannelAppSettingOptions(guildId, application_id) {
       const obj = closure_2_0(stateFromStoresArray1[5]);
       return !obj.supportsEmbeddedSurface(tmp, closure_2_0(stateFromStoresArray1[6]).EmbeddedSurfaceType.VOICE_CHANNEL);
     });
-    return found.map(f116097);
+    return found.map(f116088);
   }, items6);
   const items7 = [memo2];
   const effect1 = getOrFetchApplication.useEffect(() => {
@@ -153,8 +153,8 @@ export function useVoiceChannelAppSettingOptions(guildId, application_id) {
   }
   let obj5 = { hasRows: memo3.length > 0, loadFailed: tmp20, fetchPhase: str };
   tmp20 = "error" === stateFromStores;
-  const voiceChannelAppListState = tmp2(18900).voiceChannelAppListState;
-  tmp2(18900);
+  const voiceChannelAppListState = tmp2(18895).voiceChannelAppListState;
+  tmp2(18895);
   if (!tmp20) {
     tmp20 = first;
   }

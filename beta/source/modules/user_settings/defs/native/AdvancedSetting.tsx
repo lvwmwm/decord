@@ -1,9 +1,9 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 17520
+// Function ID: 17521
 // Name: AdvancedSetting
-// Dependencies: [1072, 11540, 1113, 7561, 17526, 2]
+// Dependencies: [1072, 11540, 1113, 7561, 17521, 2]
 
-// Module 17525 (AdvancedSetting)
+// Module 17520 (AdvancedSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsIcon from "SettingsIcon" /* 7561 */;

@@ -21,7 +21,7 @@ let set;
 
 let PlatformTypes;
 let metroImportDefault;
-const f91312 = () => currentUser.getCurrentUser();
+const f91305 = () => currentUser.getCurrentUser();
 ({ ACTIVITY_PLATFORM_TYPES: metroImportDefault, PlatformTypes } = Constants);
 const KeyboardKeysUpdated = KeyboardConstants.KeyboardKeysUpdated;
 let closure_10 = { [PlatformTypes.INSTAGRAM]: ["1036753656588017764"] };
@@ -49,7 +49,7 @@ export function usePlatformAllowed(forUserProfile) {
   let allowPlayStationStaging;
   const items = [UserStore];
   const obj = forUserProfile(allowPlayStationStaging[7]);
-  let closure_1 = obj.useStateFromStores(items, f91312);
+  let closure_1 = obj.useStateFromStores(items, f91305);
   const PlayStationVoiceExperiment = forUserProfile(allowPlayStationStaging[8]).PlayStationVoiceExperiment;
   allowPlayStationStaging = PlayStationVoiceExperiment.useConfig({ location: "f2f7ef_1" }).allowPlayStationStaging;
   return (dependencyMap) => {
@@ -87,7 +87,7 @@ export function usePlatforms() {
   let c0 = false;
   const items1 = [UserStore];
   const obj2 = stateFromStores(memo[7]);
-  let closure_1 = obj2.useStateFromStores(items1, f91312);
+  let closure_1 = obj2.useStateFromStores(items1, f91305);
   const PlayStationVoiceExperiment = stateFromStores(memo[8]).PlayStationVoiceExperiment;
   const allowPlayStationStaging = PlayStationVoiceExperiment.useConfig({ location: "f2f7ef_1" }).allowPlayStationStaging;
   const fn = (dependencyMap) => {
@@ -154,7 +154,7 @@ export function useEmptyStatePlatforms() {
   let c0 = false;
   const obj = fn(504);
   let items = [UserStore];
-  let closure_1 = obj.useStateFromStores(items, f91312);
+  let closure_1 = obj.useStateFromStores(items, f91305);
   const PlayStationVoiceExperiment = fn(7685).PlayStationVoiceExperiment;
   const allowPlayStationStaging = PlayStationVoiceExperiment.useConfig({ location: "f2f7ef_1" }).allowPlayStationStaging;
   fn = (dependencyMap) => {

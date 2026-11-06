@@ -1,10 +1,10 @@
-// Module ID: 19173
-// Function ID: 19174
+// Module ID: 19168
+// Function ID: 19169
 // Name: ExpressionPickerStore
 // Dependencies: [1228, 6029, 1254, 5212, 1259, 2]
 // Exports: closeExpressionPicker, openExpressionPicker, setExpressionPickerView, setSearchQuery, setShowEmojiPacks, toggleExpressionPicker, toggleMultiExpressionPicker
 
-// Module 19173 (ExpressionPickerStore)
+// Module 19168 (ExpressionPickerStore)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
 import uniqueIdDefault from "uniqueId" /* 6029 */;
 import module_1254_mod from "module_1254" /* 1254 */;
@@ -190,7 +190,7 @@ export function setExpressionPickerView(activeView) {
   _require = activeView;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "displayName" };
+    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "children" };
     return withEqualityFnResult.setState(obj);
   });
 }

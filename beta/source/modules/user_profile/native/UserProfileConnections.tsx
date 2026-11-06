@@ -1,10 +1,10 @@
-// Module ID: 14993
-// Function ID: 14994
+// Module ID: 14988
+// Function ID: 14989
 // Name: UserProfileConnections
-// Dependencies: [19, 17, 2062, 5069, 7377, 1072, 7349, 21, 1187, 5014, 575, 11605, 5596, 5021, 11610, 11611, 8761, 7348, 6574, 1409, 8940, 5760, 5709, 5260, 7358, 5711, 1113, 5624, 6975, 5716, 8161, 5080, 504, 14994, 7376, 7060, 14997, 2]
+// Dependencies: [19, 17, 2062, 5069, 7377, 1072, 7349, 21, 1187, 5014, 575, 11605, 5596, 5021, 11610, 11611, 8761, 7348, 6574, 1409, 8940, 5760, 5709, 5260, 7358, 5711, 1113, 5624, 6975, 5716, 8161, 5080, 504, 14989, 7376, 7060, 14992, 2]
 // Exports: UserProfileAccountConnectionsCard, UserProfileApplicationRoleConnectionsCard
 
-// Module 14993 (UserProfileConnections)
+// Module 14988 (UserProfileConnections)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -21,7 +21,7 @@ import MaskedLinkUtils from "MaskedLinkUtils" /* 8940 */;
 import ConnectionMetadataVanityItems from "ConnectionMetadataVanityItems" /* 11605 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11610 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11611 */;
-import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 14997 */;
+import useUserProfileApplicationRoleConnectionsDefault from "useUserProfileApplicationRoleConnections" /* 14992 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2062 */;
 import StreamerModeStore from "StreamerModeStore" /* 5069 */;
@@ -468,8 +468,8 @@ export function UserProfileAccountConnectionsCard(userId) {
   const items1 = [StreamerModeStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items1, () => StreamerModeStore.hidePersonalInformation);
-  ({ connections, appIdentities } = theme(14994)(userId));
-  theme(14994)(userId);
+  ({ connections, appIdentities } = theme(14989)(userId));
+  theme(14989)(userId);
   const tmp6 = theme;
   if (!stateFromStores) {
     const items2 = [];

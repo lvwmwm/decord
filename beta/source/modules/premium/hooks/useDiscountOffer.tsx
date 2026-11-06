@@ -52,7 +52,7 @@ export default function useDiscountOffer(arg0, arg1) {
   const items2 = [first, stateFromStores];
   const hasItem = CHURN_DISCOUNT_IDS.includes(arg0);
   const effect = obj3.useEffect(function() {
-    const f135715 = () => {
+    const f135706 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired()) {
@@ -73,7 +73,7 @@ export default function useDiscountOffer(arg0, arg1) {
         }
         const obj2 = timeout;
         if (timeout != null) {
-          obj2.start(num, f135715);
+          obj2.start(num, f135706);
         }
       }
     };
@@ -98,7 +98,7 @@ export default function useDiscountOffer(arg0, arg1) {
           let time = expiresAt.getTime();
           num = time - Date.now();
         }
-        timeout.start(num, f135715);
+        timeout.start(num, f135706);
       }
       return () => timeout.stop();
     }

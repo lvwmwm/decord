@@ -1,14 +1,14 @@
-// Module ID: 19413
-// Function ID: 19414
+// Module ID: 19408
+// Function ID: 19409
 // Name: CallIdleManager
-// Dependencies: [4862, 4863, 5679, 5767, 19414, 7636, 1113, 6706, 7287, 4858, 2]
+// Dependencies: [4862, 4863, 5679, 5767, 19409, 7636, 1113, 6706, 7287, 4858, 2]
 
-// Module 19413 (CallIdleManager)
+// Module 19408 (CallIdleManager)
 import intl2 from "intl" /* 1113 */;
 import Timers from "Timers" /* 4858 */;
 import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6706 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 7636 */;
-import CampInDmExperiment from "CampInDmExperiment" /* 19414 */;
+import CampInDmExperiment from "CampInDmExperiment" /* 19409 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import VoiceStateStore from "VoiceStateStore" /* 5679 */;

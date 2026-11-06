@@ -1,10 +1,10 @@
-// Module ID: 19754
-// Function ID: 19755
+// Module ID: 19749
+// Function ID: 19750
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 9046, 4885, 9075, 1072, 8393, 21, 5014, 575, 1497, 9077, 504, 9047, 8736, 9048, 9074, 5711, 1113, 14055, 5233, 6998, 7558, 1498, 5959, 1187, 7208, 14736, 5624, 7060, 7369, 6975, 6027, 15743, 8177, 15740, 19755, 2]
+// Dependencies: [5, 32, 19, 17, 9046, 4885, 9075, 1072, 8393, 21, 5014, 575, 1497, 9077, 504, 9047, 8736, 9048, 9074, 5711, 1113, 14055, 5233, 6998, 7558, 1498, 5959, 1187, 7208, 14736, 5624, 7060, 7369, 6975, 6027, 15738, 8177, 15735, 19750, 2]
 // Exports: default
 
-// Module 19754 (GuildSettingsModalServerTag)
+// Module 19749 (GuildSettingsModalServerTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -426,7 +426,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           if (tmp33Result) {
             size = { badge: null, primaryTintColor: badgeColorPrimary, secondaryTintColor: badgeColorSecondary, width: null, height: null };
             ({ badge: obj15.badge, badgeColorPrimary } = stateFromStores1);
-            const GuildBadge = tmp2(15743).GuildBadge;
+            const GuildBadge = tmp2(15738).GuildBadge;
             badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             ({ SIZE_16: obj15.width, SIZE_16: obj15.height } = closure_12);
             tmp33Result = tmp33(GuildBadge, size);
@@ -452,12 +452,12 @@ export default function GuildSettingsModalServerTag(guildId) {
           items14[2] = closure_13(Text2, obj18);
           const obj19 = { guildId, tag: null, badge: null, primaryColor: null, secondaryColor: null, isDirty: result1 };
           ({ tag: obj21.tag, badge: obj21.badge, badgeColorPrimary: obj21.primaryColor, badgeColorSecondary: obj21.secondaryColor } = stateFromStores1);
-          items14[3] = closure_13(navigation(15740), obj19);
+          items14[3] = closure_13(navigation(15735), obj19);
           obj16.children = items14;
           tmp41 = obj16;
         } else {
           const obj20 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp33(tmp40(19755), obj20), tmp32Result2];
+          const items15 = [tmp33(tmp40(19750), obj20), tmp32Result2];
           obj16.children = items15;
           tmp41 = obj16;
         }

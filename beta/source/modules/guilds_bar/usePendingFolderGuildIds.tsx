@@ -10,7 +10,7 @@ import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5046 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import size from "module_2" /* 2 */;
 
-const f104049 = (item) => null == closure_0[item];
+const f104042 = (item) => null == closure_0[item];
 const result = size.fileFinishedImporting("modules/guilds_bar/usePendingFolderGuildIds.tsx");
 
 export default function usePendingFolderGuildIds() {
@@ -23,7 +23,7 @@ export default function usePendingFolderGuildIds() {
     [obj, obj2] = items;
     const guildIds = obj.computeGuildIds();
     const guilds = obj2.getGuilds();
-    return guildIds.filter(f104049);
+    return guildIds.filter(f104042);
   });
 };
 export function getPendingFolderGuildIds() {
@@ -37,5 +37,5 @@ export function getPendingFolderGuildIds() {
   [obj, obj2] = tmp;
   const guildIds = obj.computeGuildIds();
   const guilds = obj2.getGuilds();
-  return guildIds.filter(f104049);
+  return guildIds.filter(f104042);
 }

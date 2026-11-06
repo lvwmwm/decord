@@ -1,7 +1,7 @@
 // Module ID: 14916
 // Function ID: 14917
 // Name: UserProfileContent
-// Dependencies: [32, 19, 17, 8763, 9471, 4885, 4956, 1383, 8731, 7772, 8754, 7377, 1072, 5273, 4860, 21, 14917, 8814, 504, 5258, 11410, 1994, 11400, 11396, 8761, 7326, 7488, 5068, 8028, 14918, 1113, 14195, 14919, 5723, 8815, 14921, 7569, 4847, 14924, 6041, 7358, 5711, 11413, 14925, 11518, 14840, 5634, 10232, 575, 10928, 14946, 14947, 14950, 14973, 8803, 8816, 1625, 14979, 14920, 14983, 14984, 7482, 11411, 8740, 11453, 8768, 14985, 8800, 8811, 9470, 14971, 14948, 14986, 14987, 14988, 14989, 14202, 14990, 14842, 14992, 11492, 7354, 14904, 14993, 14907, 14998, 15004, 15010, 8980, 8828, 5095, 15011, 8817, 14812, 5611, 15012, 15013, 15018, 15019, 14980, 12170, 15023, 2]
+// Dependencies: [32, 19, 17, 8763, 9471, 4885, 4956, 1383, 8731, 7772, 8754, 7377, 1072, 5273, 4860, 21, 14917, 8814, 504, 5258, 11410, 1994, 11400, 11396, 8761, 7326, 7488, 5068, 8028, 14918, 1113, 14195, 14919, 5723, 8815, 14921, 7569, 4847, 14924, 6041, 7358, 5711, 11413, 14925, 11518, 14840, 5634, 10232, 575, 10928, 14941, 14942, 14945, 14968, 8803, 8816, 1625, 14974, 14920, 14978, 14979, 7482, 11411, 8740, 11453, 8768, 14980, 8800, 8811, 9470, 14966, 14943, 14981, 14982, 14983, 14984, 14202, 14985, 14842, 14987, 11492, 7354, 14904, 14988, 14907, 14993, 14999, 15005, 8980, 8828, 5095, 15006, 8817, 14812, 5611, 15007, 15008, 15013, 15014, 14975, 12170, 15018, 2]
 
 // Module 14916 (UserProfileContent)
 import react_native from "react-native" /* 17 */;
@@ -23,15 +23,15 @@ import UserProfileAlertUtils from "UserProfileAlertUtils" /* 14195 */;
 import ProvisionalAccountExplainer from "ProvisionalAccountExplainer" /* 14202 */;
 import UserProfileActivityDefault from "UserProfileActivity" /* 14842 */;
 import WishlistUtils from "WishlistUtils" /* 14917 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14950 */;
-import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 14973 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14985 */;
-import UserProfilePrivateInfoBannerDefault from "UserProfilePrivateInfoBanner" /* 14989 */;
-import UserProfileDismissibleUpsellsDefault from "UserProfileDismissibleUpsells" /* 14990 */;
-import UserProfileConnections from "UserProfileConnections" /* 14993 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 14998 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 15004 */;
-import UserProfileIncomingFriendRequestDefault from "UserProfileIncomingFriendRequest" /* 15013 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14945 */;
+import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 14968 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14980 */;
+import UserProfilePrivateInfoBannerDefault from "UserProfilePrivateInfoBanner" /* 14984 */;
+import UserProfileDismissibleUpsellsDefault from "UserProfileDismissibleUpsells" /* 14985 */;
+import UserProfileConnections from "UserProfileConnections" /* 14988 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 14993 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 14999 */;
+import UserProfileIncomingFriendRequestDefault from "UserProfileIncomingFriendRequest" /* 15008 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8763 */;
@@ -372,11 +372,11 @@ function UserProfileWidgetsBoardContainer(isCurrentUser) {
   const tmp4 = closure_21;
   const tmp5 = View;
   if (isCurrentUser) {
-    tmp6 = closure_19(tmp(14946), {});
+    tmp6 = closure_19(tmp(14941), {});
   }
   items1 = [tmp6, , ];
   if (isCurrentUser) {
-    isCurrentUser = closure_19(tmp(14947), {});
+    isCurrentUser = closure_19(tmp(14942), {});
   }
   items1[1] = isCurrentUser;
   items1[2] = closure_19(UserProfileWidgetsBoardDefault, { userId, isVisible, cardStyle: items });
@@ -742,7 +742,7 @@ const memoResult = react.memo(function UserProfileContent(user) {
         let tmp18Result = userProfileGameFriendApplicationIds.length > 0;
         if (tmp18Result) {
           const obj7 = { userId: user.id, applicationIds: tmp22 };
-          tmp18Result = tmp18(tmp19(14992), obj7);
+          tmp18Result = tmp18(tmp19(14987), obj7);
         }
         items2[4] = tmp18Result;
         const obj9 = { userId: user.id, displayProfile, pendingBio: tmp26 };

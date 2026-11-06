@@ -1,9 +1,9 @@
-// Module ID: 19247
-// Function ID: 19248
+// Module ID: 19242
+// Function ID: 19243
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 6058, 6714, 5764, 6756, 11223, 11221, 19115, 11226, 1072, 5681, 11224, 21, 5095, 5624, 5587, 1187, 5014, 575, 504, 7901, 6717, 6960, 1113, 5634, 11222, 11758, 5789, 14894, 11760, 11757, 19248, 11767, 19111, 14872, 5254, 5637, 9522, 19249, 5717, 7241, 5596, 19251, 12411, 10089, 5080, 7326, 19204, 19218, 19114, 19252, 19253, 8750, 5303, 5876, 19254, 11225, 19255, 19256, 19257, 19258, 19259, 19269, 2]
+// Dependencies: [32, 19, 17, 6058, 6714, 5764, 6756, 11223, 11221, 19110, 11226, 1072, 5681, 11224, 21, 5095, 5624, 5587, 1187, 5014, 575, 504, 7901, 6717, 6960, 1113, 5634, 11222, 11758, 5789, 14894, 11760, 11757, 19243, 11767, 19106, 14872, 5254, 5637, 9522, 19244, 5717, 7241, 5596, 19246, 12411, 10089, 5080, 7326, 19199, 19213, 19109, 19247, 19248, 8750, 5303, 5876, 19249, 11225, 19250, 19251, 19252, 19253, 19254, 19264, 2]
 
-// Module 19247 (VoicePanelCard)
+// Module 19242 (VoicePanelCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 1187 */;
@@ -21,11 +21,11 @@ import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 *
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11226 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19114 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19115 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19249 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 19251 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 19252 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19109 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19110 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19244 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 19246 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 19247 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,10 +1,10 @@
-// Module ID: 18672
-// Function ID: 18673
+// Module ID: 18667
+// Function ID: 18668
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6847, 10927, 18673, 18674, 6881, 2024, 5672, 2]
+// Dependencies: [32, 5, 19, 6847, 10927, 18668, 18669, 6881, 2024, 5672, 2]
 // Exports: default
 
-// Module 18672 (useFrameLifecycle)
+// Module 18667 (useFrameLifecycle)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

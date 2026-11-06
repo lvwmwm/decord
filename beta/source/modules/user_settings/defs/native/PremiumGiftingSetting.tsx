@@ -1,9 +1,9 @@
-// Module ID: 16896
-// Function ID: 16897
+// Module ID: 16891
+// Function ID: 16892
 // Name: PremiumGiftingSetting
-// Dependencies: [19, 1072, 21, 7602, 11374, 9625, 1187, 11540, 1113, 13365, 2059, 15445, 2]
+// Dependencies: [19, 1072, 21, 7602, 11374, 9625, 1187, 11540, 1113, 13365, 2059, 15440, 2]
 
-// Module 16896 (PremiumGiftingSetting)
+// Module 16891 (PremiumGiftingSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;

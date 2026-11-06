@@ -1,9 +1,9 @@
-// Module ID: 19337
-// Function ID: 19338
+// Module ID: 19332
+// Function ID: 19333
 // Name: VoicePanelVoiceControls
-// Dependencies: [19, 17, 4863, 11221, 21, 5014, 575, 5095, 11222, 19332, 11748, 4839, 19215, 11943, 15206, 6027, 7060, 19338, 1113, 11955, 504, 12432, 5274, 5303, 1622, 6960, 7292, 13830, 2]
+// Dependencies: [19, 17, 4863, 11221, 21, 5014, 575, 5095, 11222, 19327, 11748, 4839, 19210, 11943, 15201, 6027, 7060, 19333, 1113, 11955, 504, 12432, 5274, 5303, 1622, 6960, 7292, 13830, 2]
 
-// Module 19337 (VoicePanelVoiceControls)
+// Module 19332 (VoicePanelVoiceControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -16,10 +16,10 @@ import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
 import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 11748 */;
 import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 11943 */;
 import UserSettingsVoiceProcessing from "UserSettingsVoiceProcessing" /* 11955 */;
-import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 15206 */;
-import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19215 */;
-import useShowConnectedControlsDefault from "useShowConnectedControls" /* 19332 */;
-import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 19338 */;
+import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 15201 */;
+import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19210 */;
+import useShowConnectedControlsDefault from "useShowConnectedControls" /* 19327 */;
+import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 19333 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import Fragment from "Fragment" /* 21 */;
@@ -75,13 +75,13 @@ let closure_10 = react.memo(function ListItems(arg0) {
     const items = [hasOwnProperty(VoicePanelVoiceControlsButtons.ActivitiesButton, obj4), ];
     if (MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT === treatment) {
       const obj5 = { openTab };
-      tmp9Result = tmp9(tmp3(19338).ChatButton, obj5);
+      tmp9Result = tmp9(tmp3(19333).ChatButton, obj5);
     } else if (MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD === treatment) {
       const obj6 = { channel };
-      tmp9Result = tmp9(tmp3(19338).SoundboardButton, obj6);
+      tmp9Result = tmp9(tmp3(19333).SoundboardButton, obj6);
     } else {
       const obj7 = { channel };
-      tmp9Result = tmp9(tmp3(19338).ScreenshareButton, obj7);
+      tmp9Result = tmp9(tmp3(19333).ScreenshareButton, obj7);
     }
     const obj8 = { hasIcons: true, children: items };
     items[1] = tmp9Result;
@@ -89,7 +89,7 @@ let closure_10 = react.memo(function ListItems(arg0) {
   }
   const children = [tmp7Result, hasOwnProperty(VoicePanelVoiceControlsButtons.GameConsoles, { channel, connected: tmp2 }), , , , , ];
   if (nonContextualStreamOutputPresent) {
-    nonContextualStreamOutputPresent = tmp11(tmp3(19338).StreamVolumeItem, {});
+    nonContextualStreamOutputPresent = tmp11(tmp3(19333).StreamVolumeItem, {});
   }
   children[2] = nonContextualStreamOutputPresent;
   const obj9 = { title: intl.string(intl3.t.dsXapM), hasIcons: true, children: items2 };
@@ -99,7 +99,7 @@ let closure_10 = react.memo(function ListItems(arg0) {
   let tmp11Result = tmp2;
   if (tmp11Result) {
     const obj10 = { channel, connected: tmp2 };
-    tmp11Result = tmp11(tmp3(19338).InviteButton, obj10);
+    tmp11Result = tmp11(tmp3(19333).InviteButton, obj10);
   }
   items2[4] = tmp11Result;
   children[3] = metroRequire(TableRowGroup2, obj9);
@@ -111,7 +111,7 @@ let closure_10 = react.memo(function ListItems(arg0) {
   let tmp11Result2 = null != tmp6;
   if (tmp11Result2) {
     const obj12 = { stream: tmp6 };
-    tmp11Result2 = tmp11(tmp3(19338).ReportStreamIssueButton, obj12);
+    tmp11Result2 = tmp11(tmp3(19333).ReportStreamIssueButton, obj12);
   }
   items3[1] = tmp11Result2;
   children[5] = metroRequire(TableRowGroup3, { hasIcons: true, children: items3 });

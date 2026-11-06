@@ -1,10 +1,10 @@
-// Module ID: 15175
-// Function ID: 15176
+// Module ID: 15170
+// Function ID: 15171
 // Name: InAppReportsExternalLinkElement
-// Dependencies: [17, 21, 5014, 575, 7148, 5624, 1113, 8179, 6983, 15176, 5709, 2]
+// Dependencies: [17, 21, 5014, 575, 7148, 5624, 1113, 8179, 6983, 15171, 5709, 2]
 // Exports: default
 
-// Module 15175 (InAppReportsExternalLinkElement)
+// Module 15170 (InAppReportsExternalLinkElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -36,7 +36,7 @@ function ExternalLinkItem(data) {
       accessibilityRole: "link"
     };
     const RowButton = url(8179).RowButton;
-    obj2 = { IconComponent: url(15176).LinkExternalMediumIcon };
+    obj2 = { IconComponent: url(15171).LinkExternalMediumIcon };
     TableRowIcon = url(6983).TableRowIcon;
     tmp3 = closure_4(RowButton, obj);
   }

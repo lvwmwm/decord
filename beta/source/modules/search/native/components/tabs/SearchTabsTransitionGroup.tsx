@@ -1,10 +1,10 @@
-// Module ID: 18800
-// Function ID: 18801
+// Module ID: 18795
+// Function ID: 18796
 // Name: SearchTabsTransitionGroup
 // Dependencies: [19, 21, 4839, 12170, 5095, 5080, 5637, 5638, 13998, 2]
 // Exports: default
 
-// Module 18800 (SearchTabsTransitionGroup)
+// Module 18795 (SearchTabsTransitionGroup)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 5080 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;

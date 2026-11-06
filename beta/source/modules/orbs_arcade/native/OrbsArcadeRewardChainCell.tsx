@@ -1,10 +1,10 @@
-// Module ID: 17054
-// Function ID: 17055
+// Module ID: 17049
+// Function ID: 17050
 // Name: OrbsArcadeRewardChainCell
-// Dependencies: [32, 19, 17, 5015, 21, 5014, 575, 5095, 504, 5254, 5021, 5596, 17024, 671, 5587, 17055, 9542, 17033, 7340, 5618, 17056, 2]
+// Dependencies: [32, 19, 17, 5015, 21, 5014, 575, 5095, 504, 5254, 5021, 5596, 17019, 671, 5587, 17050, 9542, 17028, 7340, 5618, 17051, 2]
 // Exports: default, useOrbsArcadeRewardChainRowStyle, useOrbsArcadeRewardChainTimeline
 
-// Module 17054 (OrbsArcadeRewardChainCell)
+// Module 17049 (OrbsArcadeRewardChainCell)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;

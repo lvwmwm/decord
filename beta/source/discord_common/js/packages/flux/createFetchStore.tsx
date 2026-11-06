@@ -72,7 +72,7 @@ export function createFetchStore(ApplicationStore, arg1) {
   let closure_5;
   let getUseStoreState;
   let retryConfig;
-  const f120388 = () => {
+  const f120379 = () => {
     obj = { isLoading: false, error: null, backoff: closure_1_7(), lastSuccessAt: null, failureLockedUntil: null };
     return obj;
   };
@@ -101,7 +101,7 @@ export function createFetchStore(ApplicationStore, arg1) {
       obj = map;
       if (null == value) {
         const obj2 = module_560;
-        const obj3 = obj2.create(f120388);
+        const obj3 = obj2.create(f120379);
         const result = obj.set(arg0, obj3);
         value = obj3;
       }
@@ -377,7 +377,7 @@ export function createFetchStore(ApplicationStore, arg1) {
       const obj2 = map;
       if (null == value) {
         const obj3 = ApplicationStore(dependencyMap[5]);
-        const obj7 = obj3.create(f120388);
+        const obj7 = obj3.create(f120379);
         const result1 = obj2.set(tmp10, obj7);
         value = obj7;
       }
@@ -483,7 +483,7 @@ export function createFetchStore(ApplicationStore, arg1) {
           const obj2 = closure_1_11;
           if (null == value) {
             const obj3 = closure_0(c2[5]);
-            const obj4 = obj3.create(f120388);
+            const obj4 = obj3.create(f120379);
             const result = obj2.set(tmp, obj4);
             value = obj4;
           }
@@ -512,7 +512,7 @@ export function createFetchStore(ApplicationStore, arg1) {
           value = closure_1_11.get(tmp);
           if (null == value) {
             const obj3 = closure_0(c2[5]);
-            const obj2 = obj3.create(f120388);
+            const obj2 = obj3.create(f120379);
             const result = obj.set(tmp, obj2);
             value = obj2;
           }

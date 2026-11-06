@@ -1,10 +1,10 @@
-// Module ID: 17661
-// Function ID: 17662
+// Module ID: 17656
+// Function ID: 17657
 // Name: DevToolsProfilingScreen
-// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 11096, 6027, 7060, 6975, 5624, 17662, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5014, 575, 11096, 6027, 7060, 6975, 5624, 17657, 2]
 // Exports: default
 
-// Module 17661 (DevToolsProfilingScreen)
+// Module 17656 (DevToolsProfilingScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5624 */;
@@ -12,7 +12,7 @@ import Stack_Stack from "Stack/Stack" /* 6027 */;
 import TableRow2 from "TableRow" /* 6975 */;
 import TableRowGroup3 from "TableRowGroup" /* 7060 */;
 import ComponentProfiler from "ComponentProfiler" /* 11096 */;
-import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 17662 */;
+import DevToolsProfilingUseStateFromStores from "DevToolsProfilingUseStateFromStores" /* 17657 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,13 +1,18 @@
 // Module ID: 16133
 // Function ID: 16134
-// Dependencies: [16134, 16138]
+// Dependencies: [16134]
 
 // Module 16133
 import _mod16134 from "module_16134" /* 16134 */;
-import _mod16138 from "module_16138" /* 16138 */;
 
 
-export default (arg0) => {
-  const tmp = _mod16134;
-  return tmp(_mod16138(arg0));
+export default function(arg0) {
+  if (_mod16134(arg0)) {
+    const self = this;
+    const self2 = this;
+    const tmp2 = new TypeError("Can't call method on " + arg0);
+    throw tmp2;
+  } else {
+    return arg0;
+  }
 };

@@ -1,16 +1,16 @@
-// Module ID: 15180
-// Function ID: 15181
+// Module ID: 15175
+// Function ID: 15176
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 5767, 21, 5014, 7326, 7351, 504, 5198, 7939, 15181, 15182, 7366, 15189, 15192, 15193, 5600, 15196, 2]
+// Dependencies: [19, 17, 5767, 21, 5014, 7326, 7351, 504, 5198, 7939, 15176, 15177, 7366, 15184, 15187, 15188, 5600, 15191, 2]
 // Exports: default
 
-// Module 15180 (VoiceActionSheet)
+// Module 15175 (VoiceActionSheet)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5198 */;
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 7939 */;
-import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 15181 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 15182 */;
+import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 15176 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 15177 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5767 */;
@@ -25,10 +25,10 @@ let metroRequire;
 let obj2;
 let tmp2;
 const VisualEffectViewDefault = tmp2(5600);
-const NUFVoiceChannelsTemplateDefault = tmp2(15189);
-const GuildEventVoiceBannerDefault = tmp2(15192);
-const VoiceEmptyStateDefault = tmp2(15193);
-const VoiceMemberListDefault = tmp2(15196);
+const NUFVoiceChannelsTemplateDefault = tmp2(15184);
+const GuildEventVoiceBannerDefault = tmp2(15187);
+const VoiceEmptyStateDefault = tmp2(15188);
+const VoiceMemberListDefault = tmp2(15191);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;

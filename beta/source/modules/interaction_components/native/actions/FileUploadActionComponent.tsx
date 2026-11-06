@@ -1,10 +1,10 @@
-// Module ID: 19501
-// Function ID: 19502
+// Module ID: 19496
+// Function ID: 19497
 // Name: FileUploadActionComponent
-// Dependencies: [5, 19, 17, 4863, 7701, 1072, 21, 5014, 6451, 6975, 12225, 1113, 6065, 7340, 11111, 8028, 7054, 8696, 38, 504, 12490, 8231, 8216, 19502, 1992, 5958, 8220, 13759, 9778, 10531, 1888, 10530, 8218, 6027, 575, 7060, 2]
+// Dependencies: [5, 19, 17, 4863, 7701, 1072, 21, 5014, 6451, 6975, 12225, 1113, 6065, 7340, 11111, 8028, 7054, 8696, 38, 504, 12490, 8231, 8216, 19497, 1992, 5958, 8220, 13759, 9778, 10531, 1888, 10530, 8218, 6027, 575, 7060, 2]
 // Exports: default
 
-// Module 19501 (FileUploadActionComponent)
+// Module 19496 (FileUploadActionComponent)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;

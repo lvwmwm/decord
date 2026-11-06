@@ -1,10 +1,10 @@
-// Module ID: 15195
-// Function ID: 15196
+// Module ID: 15190
+// Function ID: 15191
 // Name: JoinVoiceChannelButton
 // Dependencies: [19, 17, 4946, 1072, 21, 5014, 11909, 504, 1113, 1888, 6706, 5634, 2]
 // Exports: default
 
-// Module 15195 (JoinVoiceChannelButton)
+// Module 15190 (JoinVoiceChannelButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

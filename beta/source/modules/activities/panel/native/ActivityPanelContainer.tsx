@@ -1,12 +1,12 @@
-// Module ID: 19125
-// Function ID: 19126
+// Module ID: 19120
+// Function ID: 19121
 // Name: ActivityPanelContainer
-// Dependencies: [19, 21, 19126, 19127, 19132, 2]
+// Dependencies: [19, 21, 19121, 19122, 19127, 2]
 
-// Module 19125 (ActivityPanelContainer)
+// Module 19120 (ActivityPanelContainer)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelUtils from "ActivityPanelUtils" /* 19126 */;
-import ActivityPanelControllerDefault from "ActivityPanelController" /* 19127 */;
+import ActivityPanelUtils from "ActivityPanelUtils" /* 19121 */;
+import ActivityPanelControllerDefault from "ActivityPanelController" /* 19122 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

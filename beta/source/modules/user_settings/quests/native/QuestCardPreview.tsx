@@ -1,16 +1,16 @@
-// Module ID: 17147
-// Function ID: 17148
+// Module ID: 17142
+// Function ID: 17143
 // Name: QuestCardPreview
-// Dependencies: [21, 14699, 6784, 17148, 1113, 17067, 575, 2]
+// Dependencies: [21, 14699, 6784, 17143, 1113, 17062, 575, 2]
 // Exports: QuestCardPreview
 
-// Module 17147 (QuestCardPreview)
+// Module 17142 (QuestCardPreview)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import QuestTypes from "QuestTypes" /* 6784 */;
-import QuestCard2 from "QuestCard" /* 17067 */;
-import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 17148 */;
+import QuestCard2 from "QuestCard" /* 17062 */;
+import MobileQuestPreviewContainerDefault from "MobileQuestPreviewContainer" /* 17143 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

@@ -1,10 +1,10 @@
-// Module ID: 19067
-// Function ID: 19068
+// Module ID: 19062
+// Function ID: 19063
 // Name: useLaunchPadGesture
 // Dependencies: [19, 11536, 5198, 1625, 5303, 1375, 12814, 11227, 5095, 5260, 2]
 // Exports: default
 
-// Module 19067 (useLaunchPadGesture)
+// Module 19062 (useLaunchPadGesture)
 import PlatformUtils from "PlatformUtils" /* 1375 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;

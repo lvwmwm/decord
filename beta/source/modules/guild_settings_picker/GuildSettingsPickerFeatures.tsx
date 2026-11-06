@@ -1,14 +1,14 @@
-// Module ID: 15718
-// Function ID: 15719
+// Module ID: 15713
+// Function ID: 15714
 // Name: GuildSettingsPickerFeatures
-// Dependencies: [32, 19, 4946, 15719, 15720, 1113, 504, 2]
+// Dependencies: [32, 19, 4946, 15714, 15715, 1113, 504, 2]
 // Exports: useGuildSettingsPickerFeature
 
-// Module 15718 (GuildSettingsPickerFeatures)
+// Module 15713 (GuildSettingsPickerFeatures)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
-import RoleSubscriptionsOnboardingGuildPickerFeatureSpecDefault from "RoleSubscriptionsOnboardingGuildPickerFeatureSpec" /* 15719 */;
-import RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpecDefault from "RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec" /* 15720 */;
+import RoleSubscriptionsOnboardingGuildPickerFeatureSpecDefault from "RoleSubscriptionsOnboardingGuildPickerFeatureSpec" /* 15714 */;
+import RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpecDefault from "RoleSubscriptionsCreateTierFromTemplatePickerFeatureSpec" /* 15715 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4946 */;

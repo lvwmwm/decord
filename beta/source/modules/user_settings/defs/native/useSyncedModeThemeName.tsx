@@ -1,10 +1,10 @@
-// Module ID: 17297
-// Function ID: 17298
+// Module ID: 17292
+// Function ID: 17293
 // Name: useSyncedModeThemeName
 // Dependencies: [1192, 1240, 504, 1239, 1113, 2772, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 17297 (useSyncedModeThemeName)
+// Module 17292 (useSyncedModeThemeName)
 import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
 import _modDef2772 from "module_2772" /* 2772 */;

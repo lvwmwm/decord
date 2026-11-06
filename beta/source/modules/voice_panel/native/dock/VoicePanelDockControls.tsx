@@ -1,9 +1,9 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 19207
+// Function ID: 19208
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4863, 6875, 11241, 21, 5014, 575, 504, 11970, 7526, 5596, 5260, 8028, 1113, 9240, 11971, 6706, 9836, 11222, 19211, 2]
+// Dependencies: [19, 17, 4863, 6875, 11241, 21, 5014, 575, 504, 11970, 7526, 5596, 5260, 8028, 1113, 9240, 11971, 6706, 9836, 11222, 19206, 2]
 
-// Module 19212 (VoicePanelDockControls)
+// Module 19207 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5260 */;
@@ -12,7 +12,7 @@ import AssetRegistryDefault from "AssetRegistry" /* 9836 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11222 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11241 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 11970 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 19211 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 19206 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import VoicePanelStore from "VoicePanelStore" /* 6875 */;

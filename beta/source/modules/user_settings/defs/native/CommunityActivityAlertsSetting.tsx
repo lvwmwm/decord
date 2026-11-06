@@ -1,9 +1,9 @@
-// Module ID: 17515
-// Function ID: 17516
+// Module ID: 17510
+// Function ID: 17511
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [11010, 8432, 1072, 504, 1113, 11540, 17516, 2]
+// Dependencies: [11010, 8432, 1072, 504, 1113, 11540, 17511, 2]
 
-// Module 17515 (CommunityActivityAlertsSetting)
+// Module 17510 (CommunityActivityAlertsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;

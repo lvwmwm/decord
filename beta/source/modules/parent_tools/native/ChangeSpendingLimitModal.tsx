@@ -1,10 +1,10 @@
-// Module ID: 16811
-// Function ID: 16812
+// Module ID: 16806
+// Function ID: 16807
 // Name: ChangeSpendingLimitModal
-// Dependencies: [5, 19, 17, 21, 5014, 575, 8026, 5624, 1113, 2538, 16812, 5712, 6744, 5711, 7413, 7972, 7973, 6027, 7082, 13208, 6767, 5634, 6998, 11482, 2]
+// Dependencies: [5, 19, 17, 21, 5014, 575, 8026, 5624, 1113, 2538, 16807, 5712, 6744, 5711, 7413, 7972, 7973, 6027, 7082, 13208, 6767, 5634, 6998, 11482, 2]
 // Exports: default
 
-// Module 16811 (ChangeSpendingLimitModal)
+// Module 16806 (ChangeSpendingLimitModal)
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import NavigatorHeader from "NavigatorHeader" /* 6998 */;

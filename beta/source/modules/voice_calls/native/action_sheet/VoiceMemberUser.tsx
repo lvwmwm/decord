@@ -1,9 +1,9 @@
-// Module ID: 15199
-// Function ID: 15200
+// Module ID: 15194
+// Function ID: 15195
 // Name: VoiceMemberUser
-// Dependencies: [19, 17, 6058, 1192, 502, 6569, 4863, 4926, 2006, 5761, 1072, 21, 5014, 575, 9235, 6852, 504, 5021, 15200, 15201, 1187, 15202, 15203, 15204, 15205, 11780, 5624, 1113, 8177, 7882, 12038, 5198, 7939, 5258, 6980, 7487, 6041, 7497, 5068, 2]
+// Dependencies: [19, 17, 6058, 1192, 502, 6569, 4863, 4926, 2006, 5761, 1072, 21, 5014, 575, 9235, 6852, 504, 5021, 15195, 15196, 1187, 15197, 15198, 15199, 15200, 11780, 5624, 1113, 8177, 7882, 12038, 5198, 7939, 5258, 6980, 7487, 6041, 7497, 5068, 2]
 
-// Module 15199 (VoiceMemberUser)
+// Module 15194 (VoiceMemberUser)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import UserUtilsDefault from "UserUtils" /* 5068 */;
@@ -330,7 +330,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       const tmp26 = closure_13;
       const tmp27 = id;
       if (isSpectating) {
-        const obj11 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15205), style: tmp22 };
+        const obj11 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15200), style: tmp22 };
         const Icon = tmp2(1187).Icon;
         tmp23Result = tmp23(Icon, obj11);
       }
@@ -340,9 +340,9 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
         let tmp8Result;
         const tmp2Result = user(5021);
         if (tmp2Result.isThemeDark(stateFromStores1)) {
-          tmp8Result = tmp8(15200);
+          tmp8Result = tmp8(15195);
         } else {
-          tmp8Result = tmp8(15201);
+          tmp8Result = tmp8(15196);
         }
         const obj12 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result, style: tmp5.voiceStatusIconMargin, color: tmp22.tintColor, disableColor: localMute };
         const Icon2 = tmp2(1187).Icon;
@@ -351,7 +351,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       items4[1] = tmp23Result5;
       let tmp23Result6 = null;
       if (tmp16) {
-        const obj13 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15202), style: tmp22 };
+        const obj13 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15197), style: tmp22 };
         const Icon3 = tmp2(1187).Icon;
         tmp23Result6 = tmp23(Icon3, obj13);
       }
@@ -361,10 +361,10 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
         let obj15;
         const Icon4 = tmp2(1187).Icon;
         if (localVideoDisabled) {
-          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15203), style: tmp5.voiceStatusIconMargin, disableColor: true };
-          const obj14 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15203), style: tmp5.voiceStatusIconMargin, disableColor: true };
+          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15198), style: tmp5.voiceStatusIconMargin, disableColor: true };
+          const obj14 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15198), style: tmp5.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15204), style: tmp22 };
+          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(15199), style: tmp22 };
         }
         tmp23Result7 = tmp23(Icon4, obj15);
       }

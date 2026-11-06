@@ -1,10 +1,10 @@
-// Module ID: 14990
-// Function ID: 14991
+// Module ID: 14985
+// Function ID: 14986
 // Name: UserProfileDismissibleUpsells
-// Dependencies: [19, 17, 1383, 8754, 7617, 4860, 21, 5014, 575, 14991, 8761, 504, 2047, 10520, 4847, 1187, 5624, 1113, 6980, 7054, 5634, 9528, 12468, 2]
+// Dependencies: [19, 17, 1383, 8754, 7617, 4860, 21, 5014, 575, 14986, 8761, 504, 2047, 10520, 4847, 1187, 5624, 1113, 6980, 7054, 5634, 9528, 12468, 2]
 // Exports: default
 
-// Module 14990 (UserProfileDismissibleUpsells)
+// Module 14985 (UserProfileDismissibleUpsells)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;

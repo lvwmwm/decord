@@ -1,10 +1,10 @@
-// Module ID: 19755
-// Function ID: 19756
+// Module ID: 19750
+// Function ID: 19751
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 5229, 1072, 21, 5014, 575, 504, 5233, 14094, 14064, 5080, 5587, 6027, 14097, 5624, 1113, 5634, 18280, 2]
+// Dependencies: [19, 17, 5229, 1072, 21, 5014, 575, 504, 5233, 14094, 14064, 5080, 5587, 6027, 14097, 5624, 1113, 5634, 18275, 2]
 // Exports: default
 
-// Module 19755 (GuildSettingsServerTagUpsellCard)
+// Module 19750 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Powerups from "Powerups" /* 5233 */;
@@ -103,7 +103,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   intl2 = tmp2(1113).intl;
   items6[1] = closure_7(Text2, obj12);
   items5[1] = closure_8(Stack2, obj10);
-  const obj13 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1113).t.kMRDWs), icon: closure_7(tmp2(18280).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
+  const obj13 = { variant: "primary", size: "lg", text: intl3.string(tmp2(1113).t.kMRDWs), icon: closure_7(tmp2(18275).BoostTier2Icon, { color: "white" }), iconPosition: "start", onPress: onUnlockPress };
   const Button = tmp2(5634).Button;
   intl3 = tmp2(1113).intl;
   items5[2] = closure_7(Button, obj13);

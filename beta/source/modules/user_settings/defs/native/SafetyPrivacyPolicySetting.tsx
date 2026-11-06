@@ -1,9 +1,9 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17913
+// Function ID: 17914
 // Name: SafetyPrivacyPolicySetting
 // Dependencies: [8432, 1072, 5709, 11540, 1113, 2]
 
-// Module 17918 (SafetyPrivacyPolicySetting)
+// Module 17913 (SafetyPrivacyPolicySetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import LinkingDefault from "Linking" /* 5709 */;

@@ -1,15 +1,15 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 17514
+// Function ID: 17515
 // Name: AppIconsSetting
-// Dependencies: [1072, 16624, 4847, 11540, 1113, 17520, 15344, 17521, 2]
+// Dependencies: [1072, 16619, 4847, 11540, 1113, 17515, 15339, 17516, 2]
 
-// Module 17519 (AppIconsSetting)
+// Module 17514 (AppIconsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import dismissible_content from "dismissible_content" /* 4847 */;
-import AppIconUtils from "AppIconUtils" /* 15344 */;
-import SettingsItemAppIconDefault from "SettingsItemAppIcon" /* 17520 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16624 */;
+import AppIconUtils from "AppIconUtils" /* 15339 */;
+import SettingsItemAppIconDefault from "SettingsItemAppIcon" /* 17515 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16619 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

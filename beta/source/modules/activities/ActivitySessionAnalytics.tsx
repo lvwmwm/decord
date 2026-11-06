@@ -1,10 +1,10 @@
-// Module ID: 16310
-// Function ID: 16311
+// Module ID: 16305
+// Function ID: 16306
 // Name: ActivitySessionAnalytics
-// Dependencies: [5, 2038, 6843, 7846, 4863, 5764, 1383, 16311, 4862, 1072, 5682, 1375, 11733, 6883, 14687, 6540, 11734, 1266, 11741, 5954, 1252, 9767, 6545, 10932, 2]
+// Dependencies: [5, 2038, 6843, 7846, 4863, 5764, 1383, 16306, 4862, 1072, 5682, 1375, 11733, 6883, 14687, 6540, 11734, 1266, 11741, 5954, 1252, 9767, 6545, 10932, 2]
 // Exports: getActiveAnalyticsSessionIDs, getShelfItemTrackingProperties, trackFrameSessionEnd, trackFrameSessionStart, trackFrameSessionStartFailed
 
-// Module 16310 (ActivitySessionAnalytics)
+// Module 16305 (ActivitySessionAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import v1 from "v1" /* 1266 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
@@ -23,7 +23,7 @@ import QuestStore from "QuestStore" /* 7846 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import UserStore from "UserStore" /* 1383 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 16311 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 16306 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -34,7 +34,7 @@ let closure_12;
 let map1;
 let tmp2;
 const QuestMatchingUtils = tmp2(14687);
-const f109673 = (userStatus) => {
+const f109664 = (userStatus) => {
   userStatus = userStatus.userStatus;
   let enrolledAt;
   if (userStatus != null) {
@@ -90,7 +90,7 @@ function maybeEmitFrameSessionMetricsForQuest(applicationId, name) {
     if (eligibleQuestsForApplicationId.length > 0) {
       const _HermesInternal2 = HermesInternal;
       const items = ["application_id:" + applicationId];
-      const found = eligibleQuestsForApplicationId.find(f109673);
+      const found = eligibleQuestsForApplicationId.find(f109664);
       let id;
       if (found != null) {
         id = found.id;
@@ -388,7 +388,7 @@ export function trackFrameSessionStart(applicationId, analyticsContext) {
         if (eligibleQuestsForApplicationId.length > 0) {
           const _HermesInternal2 = HermesInternal;
           const items2 = ["application_id:" + applicationId];
-          const found = eligibleQuestsForApplicationId.find(f109673);
+          const found = eligibleQuestsForApplicationId.find(f109664);
           let id;
           if (found != null) {
             id = found.id;

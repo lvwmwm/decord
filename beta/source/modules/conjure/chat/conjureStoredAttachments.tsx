@@ -14,10 +14,10 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f100899 = () => {
+const f100892 = () => {
 
 };
-const f100900 = () => set.delete(projectId);
+const f100893 = () => set.delete(projectId);
 let closure_5 = [];
 const set = new Set();
 let result = size.fileFinishedImporting("modules/conjure/chat/conjureStoredAttachments.tsx");
@@ -37,8 +37,8 @@ export function fetchConjureStoredAttachments(projectId) {
       attachmentId(closure_2_2[3]);
       dispatch(obj);
     });
-    const catchPromise = nextPromise.catch(f100899);
-    catchPromise.finally(f100900);
+    const catchPromise = nextPromise.catch(f100892);
+    catchPromise.finally(f100893);
   }
 }
 export function useConjureStoredAttachments(projectId) {
@@ -82,8 +82,8 @@ export function useConjureStoredAttachment(context, attachmentId) {
           attachmentId(closure_2_2[3]);
           dispatch(obj);
         });
-        const catchPromise = nextPromise.catch(f100899);
-        catchPromise.finally(f100900);
+        const catchPromise = nextPromise.catch(f100892);
+        catchPromise.finally(f100893);
       }
     }
   }, items2);

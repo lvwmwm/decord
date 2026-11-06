@@ -1,14 +1,14 @@
 // Module ID: 2013
 // Function ID: 2014
 // Name: RunningGameStore
-// Dependencies: [2014, 2032, 2036, 15877, 504, 11532, 572, 2]
+// Dependencies: [2014, 2032, 2036, 15872, 504, 11532, 572, 2]
 // Exports: gameKey, getRawOverlayGameStatus, isDetectionEnabled, maybeTransformSubgame, transformForGameSettings
 
 // Module 2013 (RunningGameStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import SocialSdkGameResolver from "SocialSdkGameResolver" /* 11532 */;
-import OverlayTypes from "OverlayTypes" /* 15877 */;
+import OverlayTypes from "OverlayTypes" /* 15872 */;
 import GameStore from "GameStore" /* 2014 */;
 import DetectableGameStore from "DetectableGameStore" /* 2032 */;
 import LibraryApplicationStore from "LibraryApplicationStore" /* 2036 */;

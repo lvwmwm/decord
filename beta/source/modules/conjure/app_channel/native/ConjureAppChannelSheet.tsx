@@ -92,7 +92,7 @@ function ConjureAppChannelSheetContent(channel) {
   let string;
   let t;
   let tmp22Result;
-  const f106962 = () => {
+  const f106955 = () => {
     let fn = null;
     if (null != report) {
       fn = () => {
@@ -143,19 +143,19 @@ function ConjureAppChannelSheetContent(channel) {
   }, items4);
   const reload = appChannelAppActions.reload;
   const items5 = [reload];
-  const memo = react.useMemo(f106962, items5);
+  const memo = react.useMemo(f106955, items5);
   const close = appChannelAppActions.close;
   const items6 = [close];
-  const memo1 = react.useMemo(f106962, items6);
+  const memo1 = react.useMemo(f106955, items6);
   const appInfo = appChannelAppActions.appInfo;
   const items7 = [appInfo];
-  const memo2 = react.useMemo(f106962, items7);
+  const memo2 = react.useMemo(f106955, items7);
   const devicePermissions = appChannelAppActions.devicePermissions;
   const items8 = [devicePermissions];
-  const memo3 = react.useMemo(f106962, items8);
+  const memo3 = react.useMemo(f106955, items8);
   const report = appChannelAppActions.report;
   const items9 = [report];
-  const memo4 = react.useMemo(f106962, items9);
+  const memo4 = react.useMemo(f106955, items9);
   const items10 = [guild_id, remixProject];
   const items11 = [tmp7];
   const callback = react.useCallback(() => {

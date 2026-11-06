@@ -1,10 +1,10 @@
-// Module ID: 18962
-// Function ID: 18963
+// Module ID: 18957
+// Function ID: 18958
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 17, 21, 9856, 5014, 575, 7169, 7654, 1625, 9812, 1113, 10144, 18963, 18982, 18983, 2]
+// Dependencies: [19, 17, 21, 9856, 5014, 575, 7169, 7654, 1625, 9812, 1113, 10144, 18958, 18977, 18978, 2]
 // Exports: default
 
-// Module 18962 (MessageRequestsNavigator)
+// Module 18957 (MessageRequestsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;

@@ -1,10 +1,10 @@
-// Module ID: 16749
-// Function ID: 16750
+// Module ID: 16744
+// Function ID: 16745
 // Name: ContactSyncNameUpdateModal
 // Dependencies: [5, 32, 19, 17, 14249, 21, 6744, 5014, 575, 5586, 14251, 14255, 5712, 1113, 14269, 6998, 7169, 2]
 // Exports: default
 
-// Module 16749 (ContactSyncNameUpdateModal)
+// Module 16744 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

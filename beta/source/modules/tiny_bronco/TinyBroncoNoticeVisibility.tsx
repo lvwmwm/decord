@@ -1,10 +1,10 @@
-// Module ID: 16617
-// Function ID: 16618
+// Module ID: 16612
+// Function ID: 16613
 // Name: TinyBroncoNoticeVisibility
 // Dependencies: [1383, 1992, 5693, 6731, 504, 2]
 // Exports: shouldShowAgeNotice, useShouldShowAgeNotice, useShouldShowAgeNoticePromo
 
-// Module 16617 (TinyBroncoNoticeVisibility)
+// Module 16612 (TinyBroncoNoticeVisibility)
 import get_initialized from "get initialized" /* 504 */;
 import Server from "Server" /* 1992 */;
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5693 */;

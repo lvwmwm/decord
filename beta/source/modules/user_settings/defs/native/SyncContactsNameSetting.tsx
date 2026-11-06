@@ -1,9 +1,9 @@
-// Module ID: 16750
-// Function ID: 16751
+// Module ID: 16745
+// Function ID: 16746
 // Name: SyncContactsNameSetting
-// Dependencies: [8432, 1072, 1252, 6744, 16749, 1994, 14251, 11540, 1113, 2]
+// Dependencies: [8432, 1072, 1252, 6744, 16744, 1994, 14251, 11540, 1113, 2]
 
-// Module 16750 (SyncContactsNameSetting)
+// Module 16745 (SyncContactsNameSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -26,7 +26,7 @@ let obj = {
     const obj = AnalyticsUtilsDefault;
     obj.track(AnalyticEvents.OPEN_MODAL, { type: "Change Name", location: { page: "User Settings" } });
     const obj2 = ModalActionCreatorsDefault;
-    obj2.pushLazy(asyncRequire(16749, dependencyMap.paths), "Contact Sync Name Update Modal");
+    obj2.pushLazy(asyncRequire(16744, dependencyMap.paths), "Contact Sync Name Update Modal");
   },
   withArrow: true,
   usePredicate: function useHasContactSyncAccount() {

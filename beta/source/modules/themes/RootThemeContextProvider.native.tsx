@@ -1,10 +1,10 @@
-// Module ID: 16428
-// Function ID: 16429
+// Module ID: 16423
+// Function ID: 16424
 // Name: RootThemeContextProvider
-// Dependencies: [19, 5015, 1192, 1083, 21, 504, 5194, 7149, 16429, 5080, 12057, 5628, 2]
+// Dependencies: [19, 5015, 1192, 1083, 21, 504, 5194, 7149, 16424, 5080, 12057, 5628, 2]
 // Exports: RootThemeContextProvider
 
-// Module 16428 (RootThemeContextProvider)
+// Module 16423 (RootThemeContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1083 */;
 import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5194 */;
@@ -32,7 +32,7 @@ export function RootThemeContextProvider(children) {
   const obj2 = manaTypeConsolidationExperiment(7149);
   manaTypeConsolidationExperiment = obj2.useManaTypeConsolidationExperiment("RootThemeContextProvider");
   const items1 = [manaTypeConsolidationExperiment];
-  const obj3 = manaTypeConsolidationExperiment(16429);
+  const obj3 = manaTypeConsolidationExperiment(16424);
   const plainTextExperiment = obj3.usePlainTextExperiment("RootThemeContextProvider");
   let num = 0;
   const memo = react.useMemo(() => {

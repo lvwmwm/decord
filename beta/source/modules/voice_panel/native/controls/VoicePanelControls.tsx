@@ -1,9 +1,9 @@
-// Module ID: 19295
-// Function ID: 19296
+// Module ID: 19290
+// Function ID: 19291
 // Name: VoicePanelControls
-// Dependencies: [32, 19, 17, 6843, 11223, 11226, 11221, 1072, 21, 5014, 575, 1622, 19296, 8992, 11222, 5095, 19206, 5596, 5303, 19297, 11229, 13828, 5260, 5274, 12814, 10089, 19298, 19166, 19299, 5080, 19303, 19305, 6959, 19308, 5637, 7241, 19151, 19332, 19181, 1259, 19333, 19334, 1108, 1625, 1491, 12411, 11249, 19304, 12432, 19335, 19284, 19307, 19336, 2]
+// Dependencies: [32, 19, 17, 6843, 11223, 11226, 11221, 1072, 21, 5014, 575, 1622, 19291, 8992, 11222, 5095, 19201, 5596, 5303, 19292, 11229, 13828, 5260, 5274, 12814, 10089, 19293, 19161, 19294, 5080, 19298, 19300, 6959, 19303, 5637, 7241, 19146, 19327, 19176, 1259, 19328, 19329, 1108, 1625, 1491, 12411, 11249, 19299, 12432, 19330, 19279, 19302, 19331, 2]
 
-// Module 19295 (VoicePanelControls)
+// Module 19290 (VoicePanelControls)
 import nativeDefault from "native" /* 575 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import native from "native" /* 5080 */;
@@ -12,13 +12,13 @@ import spring from "spring" /* 5637 */;
 import native2 from "native" /* 8992 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11249 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19166 */;
-import useControlsLockDefault from "useControlsLock" /* 19206 */;
-import useDrawerToggleDefault from "useDrawerToggle" /* 19296 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19297 */;
-import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19299 */;
-import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19303 */;
-import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19305 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19161 */;
+import useControlsLockDefault from "useControlsLock" /* 19201 */;
+import useDrawerToggleDefault from "useDrawerToggle" /* 19291 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19292 */;
+import useConsoleConnectingInfoDefault from "useConsoleConnectingInfo" /* 19294 */;
+import VoicePanelFloatingCTAContainer from "VoicePanelFloatingCTAContainer" /* 19298 */;
+import VoicePanelConsoleStatus from "VoicePanelConsoleStatus" /* 19300 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

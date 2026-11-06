@@ -1,10 +1,10 @@
-// Module ID: 19748
-// Function ID: 19749
+// Module ID: 19743
+// Function ID: 19744
 // Name: GuildSettingsStickerCreate
-// Dependencies: [5, 32, 19, 17, 6796, 6837, 1072, 1386, 4842, 21, 5014, 575, 5607, 11405, 5612, 4960, 8220, 19749, 10267, 6560, 5624, 1113, 6451, 2061, 5634, 6027, 6980, 10282, 19750, 9939, 7300, 1409, 9452, 7082, 7253, 2]
+// Dependencies: [5, 32, 19, 17, 6796, 6837, 1072, 1386, 4842, 21, 5014, 575, 5607, 11405, 5612, 4960, 8220, 19744, 10267, 6560, 5624, 1113, 6451, 2061, 5634, 6027, 6980, 10282, 19745, 9939, 7300, 1409, 9452, 7082, 7253, 2]
 // Exports: default
 
-// Module 19748 (GuildSettingsStickerCreate)
+// Module 19743 (GuildSettingsStickerCreate)
 import nativeDefault from "native" /* 575 */;
 import StickersConstants from "StickersConstants" /* 4842 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 4960 */;
@@ -563,7 +563,7 @@ export default function GuildSettingsStickerCreate(stickerId) {
     obj19 = { uri };
     tmp32Result = tmp32(c6, obj18);
   } else {
-    tmp32Result = tmp32(tmp31(19750).StickerPlusIcon, { size: "lg" });
+    tmp32Result = tmp32(tmp31(19745).StickerPlusIcon, { size: "lg" });
   }
   items4[1] = onPressEmoji(PressableHighlight, obj16);
   const obj20 = { variant: "text-sm/semibold", color: "text-subtle", style: tmp.stickerPreviewLabel, children: intl7.string(stickerId(1113).t["3BQmiC"]) };

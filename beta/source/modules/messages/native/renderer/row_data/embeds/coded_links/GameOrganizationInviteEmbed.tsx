@@ -1,10 +1,10 @@
-// Module ID: 15130
-// Function ID: 15131
+// Module ID: 15125
+// Function ID: 15126
 // Name: GameOrganizationInviteEmbed
 // Dependencies: [11363, 10117, 11364, 7879, 1113, 2404, 8394, 13204, 8381, 575, 5011, 13195, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 15130 (GameOrganizationInviteEmbed)
+// Module 15125 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import _modDef2404 from "module_2404" /* 2404 */;

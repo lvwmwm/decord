@@ -1,9 +1,9 @@
-// Module ID: 19583
-// Function ID: 19584
+// Module ID: 19578
+// Function ID: 19579
 // Name: NotificationsManager
-// Dependencies: [5, 4948, 502, 4863, 6775, 13973, 1072, 7940, 13974, 5258, 19584, 1994, 1260, 2042, 7963, 13976, 11015, 1252, 1375, 7287, 17477, 1092, 2]
+// Dependencies: [5, 4948, 502, 4863, 6775, 13973, 1072, 7940, 13974, 5258, 19579, 1994, 1260, 2042, 7963, 13976, 11015, 1252, 1375, 7287, 17472, 1092, 2]
 
-// Module 19583 (NotificationsManager)
+// Module 19578 (NotificationsManager)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1260 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
 import _modDef2042 from "module_2042" /* 2042 */;
@@ -180,7 +180,7 @@ function showPrompt(arg0, arg1, arg2) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj2 = { impressionName: discord_common_AnalyticsUtils.ImpressionNames.PUSH_NOTIFICATION_REACTIVATION_PROMPT, impressionProperties: { action_location: location }, location };
     ActionSheetActionCreatorsDefault;
-    const tmp3 = asyncRequire(19584, dependencyMap.paths);
+    const tmp3 = asyncRequire(19579, dependencyMap.paths);
     openLazy(tmp3, authStore3, obj2);
   }, arg2);
 }

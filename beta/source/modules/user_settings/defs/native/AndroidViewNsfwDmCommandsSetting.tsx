@@ -1,9 +1,9 @@
-// Module ID: 16744
-// Function ID: 16745
+// Module ID: 16739
+// Function ID: 16740
 // Name: AndroidViewNsfwDmCommandsSetting
 // Dependencies: [8432, 7389, 6734, 7390, 6726, 1375, 7955, 6729, 4839, 11540, 1113, 2]
 
-// Module 16744 (AndroidViewNsfwDmCommandsSetting)
+// Module 16739 (AndroidViewNsfwDmCommandsSetting)
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6726 */;

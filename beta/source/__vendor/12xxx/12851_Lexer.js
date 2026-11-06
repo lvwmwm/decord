@@ -525,7 +525,7 @@ Lexer.prototype = {
   },
   validate() {
     let tmp9;
-    const f127731 = (type) => {
+    const f127722 = (type) => {
       if ("Type" === type.type) {
         let properties;
         let tmp;
@@ -547,7 +547,7 @@ Lexer.prototype = {
           } else {
             obj[name] = false;
             if (null !== properties[type.name].syntax) {
-              found(found1[12])(properties[type.name].syntax, f127731, globalThis);
+              found(found1[12])(properties[type.name].syntax, f127722, globalThis);
             }
           }
           hasOwnPropertyResult = !tmp6;
@@ -572,7 +572,7 @@ Lexer.prototype = {
           continue;
         } else {
           let tmp = found;
-          let tmp3 = found(found1[12])(tmp11.syntax, f127731, globalThis);
+          let tmp3 = found(found1[12])(tmp11.syntax, f127722, globalThis);
           continue;
         }
         continue;
@@ -589,7 +589,7 @@ Lexer.prototype = {
           continue;
         } else {
           let tmp6 = found1;
-          let tmp7 = found(found1[12])(tmp13.syntax, f127731, globalThis);
+          let tmp7 = found(found1[12])(tmp13.syntax, f127722, globalThis);
           continue;
         }
         continue;

@@ -13,11 +13,11 @@ const result = size.fileFinishedImporting("modules/pinot/PinotDraft.tsx");
 
 export function draftFromFeature(enabled) {
   let found;
-  const f99161 = (channelId) => channelId.channelId;
+  const f99154 = (channelId) => channelId.channelId;
   const channels = enabled.channels;
-  const obj = { enabled: enabled.enabled, includedChannelIds: new Set(found.map(f99161)) };
+  const obj = { enabled: enabled.enabled, includedChannelIds: new Set(found.map(f99154)) };
   found = channels.filter((included) => included.included);
-  new Set(found.map(f99161));
+  new Set(found.map(f99154));
   return obj;
 }
 export function isDraftDirty(enabled, enabled2) {

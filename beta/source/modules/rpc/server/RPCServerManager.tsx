@@ -1,9 +1,9 @@
-// Module ID: 16290
-// Function ID: 16291
+// Module ID: 16285
+// Function ID: 16286
 // Name: RPCServerManager
-// Dependencies: [32, 7846, 4863, 4926, 4885, 2006, 5761, 5764, 4956, 4917, 1383, 5679, 6450, 1072, 6847, 11694, 5768, 1375, 572, 1252, 16291, 504, 1379, 11814, 16297, 11815, 9326, 7508, 16298, 16300, 9331, 11813, 7868, 2]
+// Dependencies: [32, 7846, 4863, 4926, 4885, 2006, 5761, 5764, 4956, 4917, 1383, 5679, 6450, 1072, 6847, 11694, 5768, 1375, 572, 1252, 16286, 504, 1379, 11814, 16292, 11815, 9326, 7508, 16293, 16295, 9331, 11813, 7868, 2]
 
-// Module 16290 (RPCServerManager)
+// Module 16285 (RPCServerManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
@@ -18,9 +18,9 @@ import Constants4 from "Constants" /* 11694 */;
 import RPCHelpers from "RPCHelpers" /* 11813 */;
 import transformMessage from "transformMessage" /* 11814 */;
 import getRemoteIconURLDefault from "getRemoteIconURL" /* 11815 */;
-import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16291 */;
-import useThermalState from "useThermalState" /* 16298 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16300 */;
+import ConjureVoiceSessionCoordinatorDefault from "ConjureVoiceSessionCoordinator" /* 16286 */;
+import useThermalState from "useThermalState" /* 16293 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import QuestStore from "QuestStore" /* 7846 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

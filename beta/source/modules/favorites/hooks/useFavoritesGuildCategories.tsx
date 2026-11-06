@@ -1,10 +1,10 @@
-// Module ID: 18201
-// Function ID: 18202
+// Module ID: 18196
+// Function ID: 18197
 // Name: useFavoritesGuildCategories
 // Dependencies: [4866, 504, 10832, 2]
 // Exports: default
 
-// Module 18201 (useFavoritesGuildCategories)
+// Module 18196 (useFavoritesGuildCategories)
 import get_initialized from "get initialized" /* 504 */;
 import FavoritesHooks from "FavoritesHooks" /* 10832 */;
 import FavoriteStore from "FavoriteStore" /* 4866 */;

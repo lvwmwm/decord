@@ -1,10 +1,10 @@
-// Module ID: 15051
-// Function ID: 15052
+// Module ID: 15046
+// Function ID: 15047
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7735, 1074, 1072, 11514, 1385, 21, 5014, 575, 8028, 13365, 5258, 14427, 1113, 15049, 9574, 9537, 1497, 7326, 6744, 15052, 1994, 7719, 15057, 1075, 15058, 14495, 9532, 5624, 5635, 1987, 8749, 504, 11417, 2047, 7732, 7731, 9553, 9910, 8745, 11513, 15060, 15061, 1625, 5634, 15062, 1242, 1375, 6541, 5959, 2]
+// Dependencies: [32, 19, 17, 7735, 1074, 1072, 11514, 1385, 21, 5014, 575, 8028, 13365, 5258, 14427, 1113, 15044, 9574, 9537, 1497, 7326, 6744, 15047, 1994, 7719, 15052, 1075, 15053, 14495, 9532, 5624, 5635, 1987, 8749, 504, 11417, 2047, 7732, 7731, 9553, 9910, 8745, 11513, 15055, 15056, 1625, 5634, 15057, 1242, 1375, 6541, 5959, 2]
 // Exports: default
 
-// Module 15051 (ProductDetailsActionSheetPurchaseSection)
+// Module 15046 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -109,7 +109,7 @@ function VCButton(balance) {
   const tmp = closure_17();
   react = tmp;
   const tmp2 = balance;
-  let obj = balance(15049);
+  let obj = balance(15044);
   const virtualCurrencyData = obj.useVirtualCurrencyData(product, flag);
   ({ price, canAfford } = virtualCurrencyData);
   let obj2 = balance(9574);
@@ -189,7 +189,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(15052, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(15047, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;

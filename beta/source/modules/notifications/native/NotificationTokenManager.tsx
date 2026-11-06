@@ -1,9 +1,9 @@
-// Module ID: 16275
-// Function ID: 16276
+// Module ID: 16270
+// Function ID: 16271
 // Name: NotificationTokenManager
-// Dependencies: [17, 1246, 13977, 15526, 502, 16276, 1072, 1996, 572, 10914, 16279, 1242, 1113, 2868, 1375, 16280, 1252, 13976, 2]
+// Dependencies: [17, 1246, 13977, 15521, 502, 16271, 1072, 1996, 572, 10914, 16274, 1242, 1113, 2868, 1375, 16275, 1252, 13976, 2]
 
-// Module 16275 (NotificationTokenManager)
+// Module 16270 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,12 +14,12 @@ import PlatformUtils from "PlatformUtils" /* 1375 */;
 import _modDef2868 from "module_2868" /* 2868 */;
 import PushNotificationDefault from "PushNotification" /* 10914 */;
 import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13976 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16276 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 16279 */;
-import react_nativeDefault from "react-native" /* 16280 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16271 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 16274 */;
+import react_nativeDefault from "react-native" /* 16275 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
 import MultiAccountStore from "MultiAccountStore" /* 13977 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15526 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 15521 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import LifecycleManager from "LifecycleManager" /* 1996 */;
 import size from "module_2" /* 2 */;

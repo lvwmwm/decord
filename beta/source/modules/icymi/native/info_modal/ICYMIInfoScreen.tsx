@@ -1,10 +1,10 @@
-// Module ID: 18546
-// Function ID: 18547
+// Module ID: 18541
+// Function ID: 18542
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1083, 21, 5014, 575, 5586, 1625, 5253, 1497, 16232, 18547, 6744, 9812, 9820, 1113, 5717, 18549, 18550, 18551, 18552, 5624, 9758, 14859, 7340, 5258, 18553, 1994, 5634, 2]
+// Dependencies: [32, 5, 19, 17, 1083, 21, 5014, 575, 5586, 1625, 5253, 1497, 16227, 18542, 6744, 9812, 9820, 1113, 5717, 18544, 18545, 18546, 18547, 5624, 9758, 14859, 7340, 5258, 18548, 1994, 5634, 2]
 // Exports: default
 
-// Module 18546 (ICYMIInfoScreen)
+// Module 18541 (ICYMIInfoScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import NavigatorConstants from "NavigatorConstants" /* 5586 */;
@@ -181,7 +181,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   let obj4 = { style: items4, children: items5 };
   items4 = [tmp.container, { marginBottom: bottom }];
   let obj5 = { source: obj6, style: tmp.bgImage };
-  obj6 = { uri: navigation(18549) };
+  obj6 = { uri: navigation(18544) };
   const tmp17 = navigation(5717);
   items5 = [closure_9(tmp17, obj5), ];
   const obj7 = { style: items6, children: items8 };
@@ -192,14 +192,14 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   const tmp16 = closure_7;
   const tmp18 = navigation(5717);
   if (tmp5 === ThemeTypes.LIGHT) {
-    tmp2Result = tmp2(18550);
+    tmp2Result = tmp2(18545);
   } else {
-    tmp2Result = tmp2(18551);
+    tmp2Result = tmp2(18546);
   }
   items7 = [, , , ];
   const obj10 = { source: { uri: tmp2Result }, style: tmp.headerImg };
   items7[0] = closure_9(tmp18, obj10);
-  const obj11 = { source: navigation(18552), style: tmp.flashIcon };
+  const obj11 = { source: navigation(18547), style: tmp.flashIcon };
   const tmp2Result2 = navigation(5717);
   items7[1] = closure_9(tmp2Result2, obj11);
   const obj12 = { variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: intl2.string(extendedOnboarding(1113).t["jnXV/V"]) };

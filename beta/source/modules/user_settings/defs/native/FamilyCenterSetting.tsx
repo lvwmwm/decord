@@ -1,17 +1,17 @@
-// Module ID: 16768
-// Function ID: 16769
+// Module ID: 16763
+// Function ID: 16764
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1072, 21, 16769, 16770, 8026, 575, 1113, 2538, 11540, 8661, 16773, 2]
+// Dependencies: [19, 1072, 21, 16764, 16765, 8026, 575, 1113, 2538, 11540, 8661, 16768, 2]
 
-// Module 16768 (FamilyCenterSetting)
+// Module 16763 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef2538 from "module_2538" /* 2538 */;
 import GroupIcon from "GroupIcon" /* 8661 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 16769 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 16770 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 16764 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 16765 */;
 import react from "react" /* 19 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;

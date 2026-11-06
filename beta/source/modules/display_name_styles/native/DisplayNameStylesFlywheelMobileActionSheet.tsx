@@ -1,17 +1,17 @@
-// Module ID: 19032
-// Function ID: 19033
+// Module ID: 19027
+// Function ID: 19028
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1383, 1072, 4860, 21, 5028, 5021, 5253, 7148, 504, 2047, 16469, 1113, 2932, 5044, 4847, 16550, 7563, 7207, 5272, 7292, 5595, 19033, 1375, 5717, 19037, 9504, 5624, 5634, 5014, 575, 2]
+// Dependencies: [19, 17, 1383, 1072, 4860, 21, 5028, 5021, 5253, 7148, 504, 2047, 16464, 1113, 2932, 5044, 4847, 16545, 7563, 7207, 5272, 7292, 5595, 19028, 1375, 5717, 19032, 9504, 5624, 5634, 5014, 575, 2]
 // Exports: default
 
-// Module 19032 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 19027 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import dismissible_content from "dismissible_content" /* 4847 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5044 */;
 import openUserSettings from "openUserSettings" /* 7563 */;
-import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 16550 */;
+import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 16545 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1383 */;
 import Constants from "Constants" /* 1072 */;
@@ -73,7 +73,7 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   const obj5 = ref(2047);
   let result = obj5.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const obj6 = markAsDismissed(16469);
+  const obj6 = markAsDismissed(16464);
   enabled2 = obj6.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   const intl = markAsDismissed(1113).intl;
   const string = intl.string;
@@ -137,19 +137,19 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   };
   items4[0] = closure_9(tmp2(5595).ActionSheetHeaderBar, obj9);
   const obj10 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp15(tmp2(19033).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp15(tmp2(19028).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp19 = !enabled;
-  enabled && tmp15(tmp2(19033).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && tmp15(tmp2(19028).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp19) {
     let tmp15Result;
     const tmp2Result = tmp2(1375);
     if (tmp2Result.isIOS()) {
       const obj11 = { source: obj12, style: tmp6.image, resizeMode: "contain", enableAnimation: !enabled };
-      obj12 = { uri: ref(19037) };
+      obj12 = { uri: ref(19032) };
       const tmp4Result = ref(5717);
       tmp15Result = tmp15(tmp4Result, obj11);
     } else {
-      const obj13 = { url: ref(19037), style: tmp6.image, autoplay: true };
+      const obj13 = { url: ref(19032), style: tmp6.image, autoplay: true };
       const APNGPlayer = tmp2(9504).APNGPlayer;
       tmp15Result = tmp15(APNGPlayer, obj13);
     }

@@ -33,21 +33,14 @@ export function getBadgeDirectoryNuxGraphicIconUrls(badges) {
         if (-1 === findIndexResult) {
           return 0;
         } else {
-          let prop;
+          let simple_icon_url;
           if (value.tiers[findIndexResult] != null) {
-            prop = tmp3.complex_icon_static_url;
+            simple_icon_url = tmp4.simple_icon_url;
           }
-          if (prop == null) {
-            let simple_icon_url;
-            if (value.tiers[findIndexResult] != null) {
-              simple_icon_url = tmp3.simple_icon_url;
-            }
-            prop = simple_icon_url;
-          }
-          if (null == prop) {
+          if (null == simple_icon_url) {
             return 0;
           } else {
-            const obj = { iconUrl: prop, tierIndex: findIndexResult };
+            const obj = { iconUrl: simple_icon_url, tierIndex: findIndexResult };
             items.push(obj);
           }
         }

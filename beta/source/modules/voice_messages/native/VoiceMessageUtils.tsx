@@ -36,7 +36,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f105007 = (item) => Math.min(item, closure_1_13);
+const f105000 = (item) => Math.min(item, closure_1_13);
 let obj = function _startAudioRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -159,7 +159,7 @@ function stopAndGetAudioRecording() {
   if (mapped.length > closure_16) {
     arr3 = downsampleWaveformDefault(mapped, tmp5);
   }
-  const mapped1 = arr3.map(f105007);
+  const mapped1 = arr3.map(f105000);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped1);
@@ -327,7 +327,7 @@ export function generateBase64EncodedWaveform(arg0) {
   if (arg0.length > authStore4) {
     arr = downsampleWaveformDefault(arg0, tmp);
   }
-  const mapped = arr.map(f105007);
+  const mapped = arr.map(f105000);
   const fromByteArray = byteLengthDefault.fromByteArray;
   byteLengthDefault;
   const uint8Array = new Uint8Array(mapped);

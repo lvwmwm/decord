@@ -28,7 +28,7 @@ let c10;
 let c9;
 let metroImportAll;
 let unpackModuleId;
-const f92826 = (rawName) => "poll_question_text" === rawName.rawName;
+const f92819 = (rawName) => "poll_question_text" === rawName.rawName;
 function getSampleOfVoterUsernamesForAnswer(message, id) {
   let blockedOrIgnored;
   let channel;
@@ -122,7 +122,7 @@ const result = size.fileFinishedImporting("modules/polls/PollsUtils.tsx");
 
 export function generateEmptyPollAnswer() {
   let obj2;
-  const obj = { text: "Array", image: "isArray", localCreationAnswerId: obj2.v4() };
+  const obj = { text: "Array", image: "applicationId", localCreationAnswerId: obj2.v4() };
   obj2 = v1;
   return obj;
 }
@@ -277,7 +277,7 @@ export function getPollResultsReplyPreview(message) {
   if (first != null) {
     const fields = first.fields;
     if (fields != null) {
-      const found = fields.find(f92826);
+      const found = fields.find(f92819);
       if (found != null) {
         str = found.rawValue;
       }
@@ -304,7 +304,7 @@ export function getPollResultsReplyPreviewMobile(message5) {
     if (first != null) {
       const fields = first.fields;
       if (fields != null) {
-        const found = fields.find(f92826);
+        const found = fields.find(f92819);
         if (found != null) {
           str = found.rawValue;
         }

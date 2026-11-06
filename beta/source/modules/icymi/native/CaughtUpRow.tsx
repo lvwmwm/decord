@@ -1,10 +1,10 @@
-// Module ID: 18589
-// Function ID: 18590
+// Module ID: 18584
+// Function ID: 18585
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 5095, 5624, 18528, 575, 8924, 18547, 18543, 5199, 5254, 5596, 14861, 1113, 5634, 18567, 5587, 1092, 671, 2]
+// Dependencies: [5, 32, 19, 17, 21, 5095, 5624, 18523, 575, 8924, 18542, 18538, 5199, 5254, 5596, 14861, 1113, 5634, 18562, 5587, 1092, 671, 2]
 // Exports: default
 
-// Module 18589 (CaughtUpRow)
+// Module 18584 (CaughtUpRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport2 from "ReanimatedRexport" /* 5095 */;
@@ -14,7 +14,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18528 */;
+import createICYMIStyles from "createICYMIStyles" /* 18523 */;
 import size from "module_2" /* 2 */;
 
 const ReanimatedRexport = ReanimatedRexport2;
@@ -275,7 +275,7 @@ export default function ExploreServersRow(visible) {
   intl4 = visible(1113).intl;
   items6[1] = closure_7(Button2, obj18);
   items5[1] = closure_8(View, obj16);
-  items7 = [closure_8(View, obj10), closure_7(visible(18567).Separator, {}), ];
+  items7 = [closure_8(View, obj10), closure_7(visible(18562).Separator, {}), ];
   const obj19 = { style: tmp.gradient, start: visible(1092).VerticalGradient.START, end: visible(1092).VerticalGradient.END, colors: items8, pointerEvents: "none" };
   const tmp12 = sharedValue(5587);
   items8 = [, ];

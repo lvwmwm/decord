@@ -32,7 +32,7 @@ export function guildPowerupsResetNotifications() {
 }
 export function fetchPowerupCatalogForGuild(guildId, arg1) {
   let obj3;
-  let obj4;
+  let obj6;
   let sorted;
   _require = guildId;
   if (true === arg1) {
@@ -61,11 +61,11 @@ export function fetchPowerupCatalogForGuild(guildId, arg1) {
     });
     dispatch(obj2);
   } else {
-    const request = { url: Endpoints.STORE_PUBLISHED_LISTINGS_SKUS, query: obj4, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
-    obj4 = { application_id, guild_id: guildId };
+    const request = { url: Endpoints.STORE_PUBLISHED_LISTINGS_SKUS, query: obj3, oldFormErrors: true, rejectWithError: obj6.rejectWithMigratedError() };
+    obj3 = { application_id, guild_id: guildId };
     const httpGetWithCountryCodeQuery = require("StoreUtils").httpGetWithCountryCodeQuery;
     require("StoreUtils");
-    obj3 = require("HTTPUtils");
+    obj6 = require("HTTPUtils");
     const result = httpGetWithCountryCodeQuery(request);
     return result.then((body) => {
       let allPowerups;

@@ -1,15 +1,15 @@
-// Module ID: 18359
-// Function ID: 18360
+// Module ID: 18354
+// Function ID: 18355
 // Name: GuildsBar
-// Dependencies: [19, 21, 5014, 1375, 5874, 18360, 18368, 18240, 11563, 5303, 6960, 7240, 18432, 2]
+// Dependencies: [19, 21, 5014, 1375, 5874, 18355, 18363, 18235, 11563, 5303, 6960, 7240, 18427, 2]
 
-// Module 18359 (GuildsBar)
+// Module 18354 (GuildsBar)
 import NativeViewDefault from "NativeView" /* 6960 */;
 import FastListDefault from "FastList" /* 7240 */;
 import StartupProfilerDefault from "StartupProfiler" /* 11563 */;
-import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 18240 */;
-import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 18360 */;
-import useGuildsBarPropsDefault from "useGuildsBarProps" /* 18368 */;
+import registerSidebarVisibilityMethods from "registerSidebarVisibilityMethods" /* 18235 */;
+import useGuildsBarGestureDefault from "useGuildsBarGesture" /* 18355 */;
+import useGuildsBarPropsDefault from "useGuildsBarProps" /* 18363 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 let closure_4;
 let hasOwnProperty;
 let tmp2;
-const GuildsBarDragPreviewDefault = tmp2(18432);
+const GuildsBarDragPreviewDefault = tmp2(18427);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles({ wrapper: { position: "relative", overflow: "visible", flex: 1 } });
 const memoResult = react.memo(function GuildsBar(enableHome) {

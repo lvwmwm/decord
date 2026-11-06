@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/app_launcher/hooks/useCommand
 export function getCommandContext(type) {
   let obj;
   if ("contextless" === type.type) {
-    obj = { channel: "find", guild: "T" };
+    obj = { channel: "marginTop", guild: "cix" };
   } else {
     obj = { channel: type.channel, guild: GuildStore.getGuild(type.channel.guild_id) };
   }
@@ -27,7 +27,7 @@ export function useCommandContext(context) {
   return react.useMemo(() => {
     let obj;
     if ("contextless" === context.type) {
-      obj = { channel: "find", guild: "T" };
+      obj = { channel: "marginTop", guild: "cix" };
     } else {
       obj = { channel: context.channel, guild: GuildStore.getGuild(context.channel.guild_id) };
     }

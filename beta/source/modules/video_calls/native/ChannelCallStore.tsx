@@ -27,7 +27,7 @@ let _require, dependencyMap, importDefault;
 let VoiceCallOverlayType;
 let VoiceChatDrawerState;
 let obj2;
-const f98589 = () => {
+const f98582 = () => {
   const obj = require("react-native");
   obj.batchUpdates(() => state.setState({ focus: false }));
 };
@@ -73,13 +73,13 @@ export function toggleFocus() {
 }
 export function resetFocusTimer() {
   timeout.stop();
-  timeout.start(5000, f98589);
+  timeout.start(5000, f98582);
 }
 export function resetFocus() {
   let state;
   if (obj3.getState().focus) {
     timeout.stop();
-    timeout.start(5000, f98589);
+    timeout.start(5000, f98582);
   } else {
     let obj = react_native;
     obj.batchUpdates(() => state.setState({ focus: true }));

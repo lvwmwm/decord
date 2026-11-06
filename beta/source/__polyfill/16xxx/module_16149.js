@@ -1,15 +1,18 @@
 // Module ID: 16149
 // Function ID: 16150
-// Dependencies: [16128]
+// Dependencies: []
 
 // Module 16149
-import _mod16128 from "module_16128" /* 16128 */;
-
-const tmp = _mod16128.navigator && _mod16128.navigator.userAgent;
-let str = "";
-if (tmp) {
-  const _String = String;
-  str = String(tmp);
+let all = typeof document === "object";
+if (typeof document === "object") {
+  const _document = document;
+  all = document.all;
 }
-
-export default str;
+if (undefined === all) {
+  let fn;
+  if (undefined !== all) {
+    fn = (fn) => typeof fn === "function" || fn === all;
+  }
+  module.exports = fn;
+}
+fn = (fn) => typeof fn === "function";

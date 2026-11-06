@@ -1,10 +1,10 @@
-// Module ID: 16567
-// Function ID: 16568
+// Module ID: 16562
+// Function ID: 16563
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8731, 1383, 21, 5014, 575, 16463, 5080, 7326, 7351, 504, 16568, 11520, 8758, 16570, 6975, 6957, 11407, 5258, 16572, 1994, 16573, 12057, 2]
+// Dependencies: [19, 17, 8731, 1383, 21, 5014, 575, 16458, 5080, 7326, 7351, 504, 16563, 11520, 8758, 16565, 6975, 6957, 11407, 5258, 16567, 1994, 16568, 12057, 2]
 // Exports: default
 
-// Module 16567 (UserSettingsEditGuildProfile)
+// Module 16562 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 575 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
 import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 11407 */;
@@ -51,7 +51,7 @@ export default function UserSettingsEditGuildProfile() {
   }
   let tmp2 = guild;
   let tmp = closure_10();
-  const context = react.useContext(guild(16463));
+  const context = react.useContext(guild(16458));
   let obj = stateFromStores(5080);
   const theme = obj.useThemeContext().theme;
   const tmp6 = guild(7326);
@@ -59,7 +59,7 @@ export default function UserSettingsEditGuildProfile() {
   let obj2 = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let tmp8 = guild(16568)();
+  let tmp8 = guild(16563)();
   guild = tmp8.guild;
   ({ resetPending: dependencyMap, handleSubmit: react } = tmp8);
   let obj3 = stateFromStores(504);
@@ -120,7 +120,7 @@ export default function UserSettingsEditGuildProfile() {
       items3 = [tmp10, ];
       const obj8 = { currentUser: stateFromStores, stickyHeader: tmp14Result };
       tmp14Result = undefined;
-      const tmp2Result2 = tmp2(16573);
+      const tmp2Result2 = tmp2(16568);
       if (null != context) {
         const obj9 = { theme, children: closure_7(stateFromStores(12057).DisableCustomTheme, obj10) };
         const ThemeContextProvider = tmp5(5080).ThemeContextProvider;
@@ -133,6 +133,6 @@ export default function UserSettingsEditGuildProfile() {
     }
   }
   const obj11 = { children: items4 };
-  items4 = [closure_7(tmp5(16463).ProfileCustomizationHeaderSpacer, {}), closure_7(tmp2(16570), {})];
+  items4 = [closure_7(tmp5(16458).ProfileCustomizationHeaderSpacer, {}), closure_7(tmp2(16565), {})];
   return closure_9(closure_8, obj11);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15158
-// Function ID: 15159
+// Module ID: 15153
+// Function ID: 15154
 // Name: InAppReportsUserPreview
 // Dependencies: [19, 17, 21, 5014, 575, 7148, 5011, 5624, 1113, 1187, 2]
 // Exports: default
 
-// Module 15158 (InAppReportsUserPreview)
+// Module 15153 (InAppReportsUserPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -64,7 +64,7 @@ export default function UserPreview(user) {
   items1 = [_false(Text, obj4), ];
   const obj5 = { style: items2, children: items3 };
   items2 = [tmp.userContainer, { borderColor: hexWithOpacityResult }];
-  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "Array" };
+  const obj6 = { size: native.AvatarSizes.LARGE_48, user, guildId: "applicationId" };
   const Avatar = tmp2(1187).Avatar;
   items3 = [_false(Avatar, obj6), ];
   let tmp8Result = null != user.globalName;

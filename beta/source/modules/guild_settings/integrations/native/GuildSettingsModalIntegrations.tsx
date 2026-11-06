@@ -1,10 +1,10 @@
-// Module ID: 19729
-// Function ID: 19730
+// Module ID: 19724
+// Function ID: 19725
 // Name: GuildSettingsModalIntegrations
-// Dependencies: [19, 4946, 9075, 1072, 21, 5014, 575, 5596, 1497, 504, 5253, 19658, 8177, 6027, 7060, 6975, 1113, 18809, 18927, 12219, 6574, 5717, 1409, 5021, 5606, 2]
+// Dependencies: [19, 4946, 9075, 1072, 21, 5014, 575, 5596, 1497, 504, 5253, 19653, 8177, 6027, 7060, 6975, 1113, 18804, 18922, 12219, 6574, 5717, 1409, 5021, 5606, 2]
 // Exports: default
 
-// Module 19729 (GuildSettingsModalIntegrations)
+// Module 19724 (GuildSettingsModalIntegrations)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import PermissionStore from "PermissionStore" /* 4946 */;

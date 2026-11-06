@@ -1,9 +1,9 @@
-// Module ID: 16612
-// Function ID: 16613
+// Module ID: 16607
+// Function ID: 16608
 // Name: AccountDisplayNameSetting
-// Dependencies: [1383, 8432, 1072, 504, 11540, 1113, 16440, 2]
+// Dependencies: [1383, 8432, 1072, 504, 11540, 1113, 16435, 2]
 
-// Module 16612 (AccountDisplayNameSetting)
+// Module 16607 (AccountDisplayNameSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;

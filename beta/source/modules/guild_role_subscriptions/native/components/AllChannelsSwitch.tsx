@@ -1,18 +1,18 @@
-// Module ID: 19978
-// Function ID: 19979
+// Module ID: 19973
+// Function ID: 19974
 // Name: AllChannelsSwitch
-// Dependencies: [19, 17, 17217, 21, 7058, 7061, 6975, 19979, 1113, 19980, 2]
+// Dependencies: [19, 17, 17212, 21, 7058, 7061, 6975, 19974, 1113, 19975, 2]
 // Exports: default
 
-// Module 19978 (AllChannelsSwitch)
+// Module 19973 (AllChannelsSwitch)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
 import TableRow from "TableRow" /* 6975 */;
 import TableRadioGroup2 from "TableRadioGroup" /* 7058 */;
 import TableRadioRow3 from "TableRadioRow" /* 7061 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17217 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19979 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19980 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17212 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19974 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 19975 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

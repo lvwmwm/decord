@@ -1,23 +1,23 @@
-// Module ID: 19370
-// Function ID: 19371
+// Module ID: 19365
+// Function ID: 19366
 // Name: CaptchaModal
-// Dependencies: [19, 17, 17989, 17990, 21, 5014, 7111, 1498, 19371, 5272, 6027, 19372, 5624, 1113, 5634, 6538, 19376, 17997, 2]
+// Dependencies: [19, 17, 17984, 17985, 21, 5014, 7111, 1498, 19366, 5272, 6027, 19367, 5624, 1113, 5634, 6538, 19371, 17992, 2]
 // Exports: default
 
-// Module 19370 (CaptchaModal)
+// Module 19365 (CaptchaModal)
 import intl4 from "intl" /* 1113 */;
 import Link from "Link" /* 1498 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import Stack_Stack from "Stack/Stack" /* 6027 */;
 import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6538 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17989 */;
-import RegistrationUtils from "RegistrationUtils" /* 17997 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 19372 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 19376 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17984 */;
+import RegistrationUtils from "RegistrationUtils" /* 17992 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 19367 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 19371 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationConstants from "RegistrationConstants" /* 17990 */;
+import RegistrationConstants from "RegistrationConstants" /* 17985 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -78,7 +78,7 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  let closure_9 = onReject(19371)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(19366)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);

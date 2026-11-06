@@ -1,10 +1,10 @@
-// Module ID: 18867
-// Function ID: 18868
+// Module ID: 18862
+// Function ID: 18863
 // Name: CustomTypingIndicatorProfileCoachmark
 // Dependencies: [19, 17, 1072, 4860, 21, 5014, 575, 1113, 3870, 7326, 7351, 7563, 9954, 13737, 1391, 13740, 13741, 2]
 // Exports: default
 
-// Module 18867 (CustomTypingIndicatorProfileCoachmark)
+// Module 18862 (CustomTypingIndicatorProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

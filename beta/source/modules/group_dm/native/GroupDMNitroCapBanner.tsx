@@ -1,14 +1,14 @@
-// Module ID: 18776
-// Function ID: 18777
+// Module ID: 18771
+// Function ID: 18772
 // Name: GroupDMNitroCapBanner
-// Dependencies: [19, 17, 21, 5014, 575, 5596, 15306, 5587, 9528, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 5596, 15301, 5587, 9528, 2]
 // Exports: default
 
-// Module 18776 (GroupDMNitroCapBanner)
+// Module 18771 (GroupDMNitroCapBanner)
 import nativeDefault from "native" /* 575 */;
 import LinearGradientDefault from "LinearGradient" /* 5587 */;
 import useToken from "useToken" /* 5596 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 15306 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 15301 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

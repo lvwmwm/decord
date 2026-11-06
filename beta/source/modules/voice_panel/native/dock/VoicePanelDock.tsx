@@ -1,9 +1,9 @@
-// Module ID: 19209
-// Function ID: 19210
+// Module ID: 19204
+// Function ID: 19205
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 11223, 11241, 11242, 21, 5014, 575, 1625, 11222, 5095, 11249, 5874, 5260, 11227, 5303, 5254, 7241, 1113, 19210, 19212, 2]
+// Dependencies: [19, 17, 11223, 11241, 11242, 21, 5014, 575, 1625, 11222, 5095, 11249, 5874, 5260, 11227, 5303, 5254, 7241, 1113, 19205, 19207, 2]
 
-// Module 19209 (VoicePanelDock)
+// Module 19204 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import timing from "timing" /* 5254 */;

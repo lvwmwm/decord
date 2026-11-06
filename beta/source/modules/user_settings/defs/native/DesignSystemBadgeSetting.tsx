@@ -1,9 +1,9 @@
-// Module ID: 17811
-// Function ID: 17812
+// Module ID: 17806
+// Function ID: 17807
 // Name: DesignSystemBadgeSetting
-// Dependencies: [8432, 1072, 11540, 17812, 2]
+// Dependencies: [8432, 1072, 11540, 17807, 2]
 
-// Module 17811 (DesignSystemBadgeSetting)
+// Module 17806 (DesignSystemBadgeSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;

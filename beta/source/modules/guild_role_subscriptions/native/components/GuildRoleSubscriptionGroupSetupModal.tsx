@@ -1,19 +1,19 @@
-// Module ID: 19990
-// Function ID: 19991
+// Module ID: 19985
+// Function ID: 19986
 // Name: GuildRoleSubscriptionGroupSetupModal
-// Dependencies: [32, 5, 19, 19949, 17196, 1072, 21, 17203, 17216, 5711, 1113, 1260, 5760, 19960, 19945, 19961, 2]
+// Dependencies: [32, 5, 19, 19944, 17191, 1072, 21, 17198, 17211, 5711, 1113, 1260, 5760, 19955, 19940, 19956, 2]
 
-// Module 19990 (GuildRoleSubscriptionGroupSetupModal)
+// Module 19985 (GuildRoleSubscriptionGroupSetupModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import ToastUtils from "ToastUtils" /* 5711 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5760 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17216 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 19949 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17211 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19944 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17196 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17191 */;
 import size from "module_2" /* 2 */;
 
 let c4, c6, constants, dependencyMap, importAll, state;
@@ -244,9 +244,9 @@ class GuildRoleSubscriptionGroupSetupModal {
     const tmp3 = merged;
     const tmp4 = dependencyMap;
     const tmp2 = _slicedToArray(editStateId.useState(), 2);
-    let obj2 = merged(17203);
+    let obj2 = merged(17198);
     _slicedToArray = obj2.useCreateSubscriptionGroupListing().createSubscriptionGroupListing;
-    let obj3 = merged(17203);
+    let obj3 = merged(17198);
     const updateSubscriptionsSettings = obj3.useUpdateSubscriptionsSettings();
     ({ updateSubscriptionsSettings: c5, error } = updateSubscriptionsSettings);
     [editStateId, closure_7] = editStateId.useState(editStateId);
@@ -293,9 +293,9 @@ class GuildRoleSubscriptionGroupSetupModal {
       obj.trackWithMetadata(AnalyticEvents.GUILD_ROLE_SUBSCRIPTION_SETUP_MODAL_CLOSED, obj2);
     }, items1);
     let obj5 = { guildId, editStateId, groupListingId: null, children: memo(RoleSubscriptionSettingsDisabledContextProvider, obj6) };
-    const EditStateContextProvider = tmp3(19960).EditStateContextProvider;
+    const EditStateContextProvider = tmp3(19955).EditStateContextProvider;
     obj6 = { guildId, children: memo(tmp13, obj7) };
-    RoleSubscriptionSettingsDisabledContextProvider = tmp3(19945).RoleSubscriptionSettingsDisabledContextProvider;
+    RoleSubscriptionSettingsDisabledContextProvider = tmp3(19940).RoleSubscriptionSettingsDisabledContextProvider;
     obj7 = {
       modalKey: error,
       onDone: function handleCreateGroupAndTier() {
@@ -305,7 +305,7 @@ class GuildRoleSubscriptionGroupSetupModal {
       onClose: callback,
       stepScreenPropsMap: memo1
     };
-    tmp13 = guildId(19961);
+    tmp13 = guildId(19956);
     const merged1 = Object.assign(merged);
     return memo(EditStateContextProvider, obj5);
   }

@@ -42,7 +42,7 @@ export default function useSortedSectionCommands(sectionId) {
   }, items);
   const items1 = [memo];
   const memo1 = react.useMemo(() => {
-    const f136903 = (command) => command.command;
+    const f136894 = (command) => command.command;
     if (memo.length <= 1) {
       return { popularSortedCommands: memo, canSort: false };
     } else {
@@ -72,8 +72,8 @@ export default function useSortedSectionCommands(sectionId) {
             return 1;
           }
         });
-        obj = { popularSortedCommands: mapped.map(f136903), canSort: true };
-        const obj3 = { popularSortedCommands: mapped.map(f136903), canSort: true };
+        obj = { popularSortedCommands: mapped.map(f136894), canSort: true };
+        const obj3 = { popularSortedCommands: mapped.map(f136894), canSort: true };
       } else {
         obj = { popularSortedCommands: memo, canSort: false };
       }

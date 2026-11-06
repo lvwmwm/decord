@@ -1,10 +1,10 @@
-// Module ID: 19708
-// Function ID: 19709
+// Module ID: 19703
+// Function ID: 19704
 // Name: ExemptChannelsActionSheet
-// Dependencies: [19, 7280, 4885, 4956, 1383, 21, 504, 7281, 5652, 8603, 6975, 19707, 1113, 2]
+// Dependencies: [19, 7280, 4885, 4956, 1383, 21, 504, 7281, 5652, 8603, 6975, 19702, 1113, 2]
 // Exports: default
 
-// Module 19708 (ExemptChannelsActionSheet)
+// Module 19703 (ExemptChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8603 */;
 import react from "react" /* 19 */;
@@ -64,7 +64,7 @@ export default function ExemptChannelsActionSheet(guildId) {
     }
     return tmp4;
   }, items5);
-  stateFromStores(19707);
+  stateFromStores(19702);
   const intl = guildId(1113).intl;
   const intl2 = guildId(1113).intl;
   return <tmp5 title={intl.string(guildId(1113).t.OGiMXJ)} searchPlaceholder={intl2.string(guildId(1113).t.vephiL)} listId="automod-exempt-channels" items={memo} initialSelected={exemptChannels} getId={getChannelOptionId} getSearchText={getChannelOptionName} renderLabel={getChannelOptionName} renderIcon={callback} onSave={onSave} />;

@@ -1,10 +1,10 @@
-// Module ID: 18707
-// Function ID: 18708
+// Module ID: 18702
+// Function ID: 18703
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 7770, 4863, 13900, 9827, 18708, 9826, 1072, 4870, 13886, 13911, 1377, 5711, 1113, 8940, 5709, 1497, 13998, 18709, 13889, 9849, 9867, 1108, 6753, 8833, 7485, 5756, 7939, 1994, 6734, 14745, 6045, 8632, 6944, 1099, 13907, 2]
+// Dependencies: [5, 19, 7770, 4863, 13900, 9827, 18703, 9826, 1072, 4870, 13886, 13911, 1377, 5711, 1113, 8940, 5709, 1497, 13998, 18704, 13889, 9849, 9867, 1108, 6753, 8833, 7485, 5756, 7939, 1994, 6734, 14745, 6045, 8632, 6944, 1099, 13907, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 18707 (useOnPressSearchItem)
+// Module 18702 (useOnPressSearchItem)
 import intl2 from "intl" /* 1113 */;
 import URLUtilsDefault from "URLUtils" /* 1377 */;
 import ChannelConstants from "ChannelConstants" /* 4870 */;
@@ -15,7 +15,7 @@ import TrackingConstants from "TrackingConstants" /* 9826 */;
 import SearchPlatformUtils from "SearchPlatformUtils" /* 13886 */;
 import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 13907 */;
 import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13911 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18708 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18703 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConversationPreviewStore from "ConversationPreviewStore" /* 7770 */;

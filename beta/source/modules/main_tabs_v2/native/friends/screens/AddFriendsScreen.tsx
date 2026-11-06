@@ -1,10 +1,10 @@
-// Module ID: 18840
-// Function ID: 18841
+// Module ID: 18835
+// Function ID: 18836
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 7800, 4956, 1383, 14271, 1072, 14249, 21, 5014, 575, 14247, 8946, 5711, 1113, 9129, 14251, 1375, 7326, 7351, 7217, 18841, 5593, 1252, 8750, 563, 12, 5068, 18103, 7330, 10736, 9159, 6953, 10733, 6975, 5715, 8662, 18842, 18843, 18845, 18846, 2]
+// Dependencies: [32, 5, 19, 17, 7800, 4956, 1383, 14271, 1072, 14249, 21, 5014, 575, 14247, 8946, 5711, 1113, 9129, 14251, 1375, 7326, 7351, 7217, 18836, 5593, 1252, 8750, 563, 12, 5068, 18098, 7330, 10736, 9159, 6953, 10733, 6975, 5715, 8662, 18837, 18838, 18840, 18841, 2]
 // Exports: default
 
-// Module 18840 (AddFriendsScreen)
+// Module 18835 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -13,8 +13,8 @@ import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14247 */;
 import ContactSyncConstants from "ContactSyncConstants" /* 14249 */;
 import FriendsScreenConstants from "FriendsScreenConstants" /* 14271 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 18843 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18845 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 18838 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18840 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -134,12 +134,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f115847 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f115838 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f115847);
-    const tmp2 = arr.length === arg1.length && arr.every(f115847);
+    tmp = arr.length === arg1.length && arr.every(f115838);
+    const tmp2 = arr.length === arg1.length && arr.every(f115838);
   }
   return tmp;
 }

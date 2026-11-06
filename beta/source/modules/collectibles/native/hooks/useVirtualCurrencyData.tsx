@@ -1,10 +1,10 @@
-// Module ID: 15049
-// Function ID: 15050
+// Module ID: 15044
+// Function ID: 15045
 // Name: useVirtualCurrencyData
 // Dependencies: [19, 7731, 9553, 2]
 // Exports: useVirtualCurrencyData
 
-// Module 15049 (useVirtualCurrencyData)
+// Module 15044 (useVirtualCurrencyData)
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7731 */;
 import _mod9553 from "module_9553" /* 9553 */;
 import react from "react" /* 19 */;

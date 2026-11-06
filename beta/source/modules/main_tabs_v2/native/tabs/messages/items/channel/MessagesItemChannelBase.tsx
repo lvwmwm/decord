@@ -1,9 +1,9 @@
-// Module ID: 18089
-// Function ID: 18090
+// Module ID: 18084
+// Function ID: 18085
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5761, 6842, 4956, 4917, 6775, 1383, 21, 5014, 575, 504, 18090, 8789, 1375, 7485, 5756, 10802, 6980, 9085, 9514, 18091, 5692, 9510, 18092, 8831, 18093, 5762, 2]
+// Dependencies: [19, 17, 5761, 6842, 4956, 4917, 6775, 1383, 21, 5014, 575, 504, 18085, 8789, 1375, 7485, 5756, 10802, 6980, 9085, 9514, 18086, 5692, 9510, 18087, 8831, 18088, 5762, 2]
 
-// Module 18089 (MessagesItemChannelBase)
+// Module 18084 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
@@ -97,7 +97,7 @@ const memoResult = react.memo(function MessagesItemChannelBase(channel) {
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "find", activities: "T" };
+      obj3 = { status: "marginTop", activities: "cix" };
     }
     return obj3;
   });

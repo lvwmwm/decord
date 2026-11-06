@@ -1,10 +1,10 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17805
+// Function ID: 17806
 // Name: UserSettingsDesignSystemTagGroup
 // Dependencies: [19, 17, 21, 5014, 575, 5596, 6027, 5624, 6977, 12185, 2]
 // Exports: default
 
-// Module 17810 (UserSettingsDesignSystemTagGroup)
+// Module 17805 (UserSettingsDesignSystemTagGroup)
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5596 */;
 import Text_Text from "Text/Text" /* 5624 */;

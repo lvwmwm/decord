@@ -1,10 +1,10 @@
-// Module ID: 16563
-// Function ID: 16564
+// Module ID: 16558
+// Function ID: 16559
 // Name: UserProfileWidgetEditingHeader
 // Dependencies: [19, 17, 21, 5014, 575, 5624, 1113, 5634, 9572, 8028, 12482, 2]
 // Exports: default
 
-// Module 16563 (UserProfileWidgetEditingHeader)
+// Module 16558 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;

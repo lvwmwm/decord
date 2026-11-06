@@ -1,10 +1,10 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17728
+// Function ID: 17729
 // Name: DevToolsActionSheetsScreen
-// Dependencies: [32, 19, 17, 21, 5014, 575, 14759, 11617, 6744, 17734, 1994, 5258, 5272, 7321, 7060, 6975, 8026, 6993, 6027, 6977, 5624, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 14759, 11617, 6744, 17729, 1994, 5258, 5272, 7321, 7060, 6975, 8026, 6993, 6027, 6977, 5624, 2]
 // Exports: default
 
-// Module 17733 (DevToolsActionSheetsScreen)
+// Module 17728 (DevToolsActionSheetsScreen)
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
@@ -116,7 +116,7 @@ let items = [
     description: "Shows safety warning for inappropriate conversations",
     show() {
       const obj = ModalActionCreatorsDefault;
-      return obj.pushLazy(asyncRequire(17734, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
+      return obj.pushLazy(asyncRequire(17729, dependencyMap.paths), { warningId: "test-warning-123", warningType: "inappropriate_conversation", senderId: "123456789", channelId: "987654321" }, "INAPPROPRIATE_CONVERSATION_TAKEOVER_MODAL");
     }
   }
 ];

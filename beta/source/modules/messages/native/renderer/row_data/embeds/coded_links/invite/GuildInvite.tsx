@@ -1,10 +1,10 @@
-// Module ID: 15113
-// Function ID: 15114
+// Module ID: 15108
+// Function ID: 15109
 // Name: GuildInvite
-// Dependencies: [17, 4881, 6714, 4863, 4926, 4885, 5749, 4956, 1383, 10117, 1072, 7879, 8394, 1113, 8381, 575, 5068, 5021, 13235, 13236, 4877, 2061, 8396, 14335, 14334, 10119, 10118, 7880, 15114, 1396, 8959, 1409, 1892, 8603, 9310, 5652, 2]
+// Dependencies: [17, 4881, 6714, 4863, 4926, 4885, 5749, 4956, 1383, 10117, 1072, 7879, 8394, 1113, 8381, 575, 5068, 5021, 13235, 13236, 4877, 2061, 8396, 14335, 14334, 10119, 10118, 7880, 15109, 1396, 8959, 1409, 1892, 8603, 9310, 5652, 2]
 // Exports: createDisabledGuildInvite, createErroredGuildInvite, createExpiredGuildInvite, createGuildInvite, createResolvingGuildInvite
 
-// Module 15113 (GuildInvite)
+// Module 15108 (GuildInvite)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
@@ -28,7 +28,7 @@ import CodedLinksConstants from "CodedLinksConstants" /* 10117 */;
 import GuestUtilsDefault from "GuestUtils" /* 10119 */;
 import InviteErrorUtils from "InviteErrorUtils" /* 14334 */;
 import AssetRegistryDefault from "AssetRegistry" /* 14335 */;
-import getHeaderTextForInvite2 from "getHeaderTextForInvite" /* 15114 */;
+import getHeaderTextForInvite2 from "getHeaderTextForInvite" /* 15109 */;
 import GuildRecord from "GuildRecord" /* 4881 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

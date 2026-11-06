@@ -1,9 +1,9 @@
-// Module ID: 18451
-// Function ID: 18452
+// Module ID: 18446
+// Function ID: 18447
 // Name: SortableListView
 // Dependencies: [19, 17, 21, 5609, 7294, 2]
 
-// Module 18451 (SortableListView)
+// Module 18446 (SortableListView)
 import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5609 */;
 import defaultMVCPConfig from "defaultMVCPConfig" /* 7294 */;
 import react from "react" /* 19 */;

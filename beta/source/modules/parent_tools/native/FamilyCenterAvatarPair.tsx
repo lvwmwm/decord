@@ -1,10 +1,10 @@
-// Module ID: 16828
-// Function ID: 16829
+// Module ID: 16823
+// Function ID: 16824
 // Name: FamilyCenterAvatarPair
 // Dependencies: [19, 17, 1383, 21, 5014, 575, 563, 1187, 2]
 // Exports: default
 
-// Module 16828 (FamilyCenterAvatarPair)
+// Module 16823 (FamilyCenterAvatarPair)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;

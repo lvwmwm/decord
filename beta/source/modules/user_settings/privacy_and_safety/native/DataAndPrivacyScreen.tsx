@@ -1,10 +1,10 @@
-// Module ID: 17907
-// Function ID: 17908
+// Module ID: 17902
+// Function ID: 17903
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6742, 8432, 1072, 21, 17899, 1113, 2061, 9265, 1497, 16759, 16762, 11540, 16717, 16588, 2]
+// Dependencies: [19, 6742, 8432, 1072, 21, 17894, 1113, 2061, 9265, 1497, 16754, 16757, 11540, 16712, 16583, 2]
 // Exports: default
 
-// Module 17907 (DataAndPrivacyScreen)
+// Module 17902 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SecureFramesUtils from "SecureFramesUtils" /* 9265 */;
@@ -62,7 +62,7 @@ export default function DataAndPrivacySettings() {
   let stackNavigation;
   let obj = stackNavigation(1497);
   stackNavigation = obj.useStackNavigation();
-  let obj2 = stackNavigation(17899);
+  let obj2 = stackNavigation(17894);
   const pinotDataPrivacySections = obj2.usePinotDataPrivacySections();
   let obj3 = { settings: items, subLabel: format(prop, obj4) };
   items = [MobileUserSettings.USE_DATA_TO_IMPROVE_DISCORD];
@@ -170,8 +170,8 @@ export default function DataAndPrivacySettings() {
     HermesBuiltin.arraySpread(items, items3, tmp3 + 1);
     return createList(obj);
   }, items8);
-  const obj22 = { screen: stackNavigation(16717).SettingsScreen.DATA_AND_PRIVACY };
-  const tmp13 = items1(16717);
-  items9 = [closure_8(tmp13, obj22), closure_8(items1(16588), { node: memo })];
+  const obj22 = { screen: stackNavigation(16712).SettingsScreen.DATA_AND_PRIVACY };
+  const tmp13 = items1(16712);
+  items9 = [closure_8(tmp13, obj22), closure_8(items1(16583), { node: memo })];
   return closure_10(closure_9, obj21);
 };

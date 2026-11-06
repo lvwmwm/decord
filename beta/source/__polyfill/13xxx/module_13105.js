@@ -12,7 +12,7 @@ export function notifyEventProcessors(arg0, arg1, arg2) {
   let closure_0;
   let closure_1;
   let num;
-  const f103808 = function(fn, arg1) {
+  const f103801 = function(fn, arg1) {
     closure_0 = fn;
     let tmp3 = closure_0[closure_3];
     let tmp4 = closure_1;
@@ -38,7 +38,7 @@ export function notifyEventProcessors(arg0, arg1, arg2) {
         let tmp8 = arg1;
         let tmp17Result = tmp17(tmp18[3]);
         if (tmp17Result.isThenable(tmp3Result)) {
-          let nextPromise = tmp3Result.then(f127869);
+          let nextPromise = tmp3Result.then(f127860);
           let nextPromise1 = nextPromise.then(null, arg1);
         } else {
           let num = 1;
@@ -48,7 +48,7 @@ export function notifyEventProcessors(arg0, arg1, arg2) {
           closure_3 = tmp2 + 1;
           let self = this;
           let self2 = this;
-          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f103808);
+          let syncPromise = new tmp17(tmp18[0]).SyncPromise(f103801);
           let tmp9 = syncPromise;
           let nextPromise2 = syncPromise.then(fn);
           let nextPromise3 = nextPromise2.then(null, arg1);
@@ -60,6 +60,6 @@ export function notifyEventProcessors(arg0, arg1, arg2) {
   _require = arg0;
   dependencyMap = arg1;
   let closure_2 = arg2;
-  const syncPromise = new require("module_13078").SyncPromise(f103808);
+  const syncPromise = new require("module_13078").SyncPromise(f103801);
   return syncPromise;
 }

@@ -1,10 +1,10 @@
-// Module ID: 16827
-// Function ID: 16828
+// Module ID: 16822
+// Function ID: 16823
 // Name: FamilyCenterModalDisconnect
-// Dependencies: [32, 19, 17, 21, 5014, 575, 6744, 5068, 8369, 5711, 1113, 13359, 13362, 2538, 7972, 7973, 16828, 8359, 5624, 16778, 6027, 14621, 13208, 6767, 5634, 6998, 11482, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 6744, 5068, 8369, 5711, 1113, 13359, 13362, 2538, 7972, 7973, 16823, 8359, 5624, 16773, 6027, 14621, 13208, 6767, 5634, 6998, 11482, 2]
 // Exports: default
 
-// Module 16827 (FamilyCenterModalDisconnect)
+// Module 16822 (FamilyCenterModalDisconnect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import ToastUtils from "ToastUtils" /* 5711 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import NavigatorHeader from "NavigatorHeader" /* 6998 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8359 */;
-import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 16828 */;
+import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 16823 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -138,7 +138,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   let tmp33Result = requiresParentalConsent;
   if (tmp33Result) {
     const obj8 = { style: tmp.warning, text: ageSpecificText2 };
-    tmp33Result = tmp33(tmp3(16778), obj8);
+    tmp33Result = tmp33(tmp3(16773), obj8);
   }
   const obj9 = { children: items4 };
   items4[1] = tmp33Result;

@@ -255,8 +255,8 @@ export default function ConjureStandaloneScreen(guildId) {
       tmp4 = { key: num, projectId, entryPoint };
       const obj2 = { key: num, projectId, entryPoint };
     } else if (null != projectId) {
-      tmp4 = { key: projectId, projectId, entryPoint: "Array" };
-      const obj = { key: projectId, projectId, entryPoint: "Array" };
+      tmp4 = { key: projectId, projectId, entryPoint: "applicationId" };
+      const obj = { key: projectId, projectId, entryPoint: "applicationId" };
     }
     return tmp4;
   }, items11);

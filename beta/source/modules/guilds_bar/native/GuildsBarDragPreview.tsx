@@ -1,18 +1,18 @@
-// Module ID: 18432
-// Function ID: 18433
+// Module ID: 18427
+// Function ID: 18428
 // Name: GuildsBarDragPreview
-// Dependencies: [19, 6772, 18361, 18358, 21, 5014, 18080, 5095, 5637, 7241, 5080, 5596, 575, 18369, 18390, 4929, 2]
+// Dependencies: [19, 6772, 18356, 18353, 21, 5014, 18075, 5095, 5637, 7241, 5080, 5596, 575, 18364, 18385, 4929, 2]
 
-// Module 18432 (GuildsBarDragPreview)
+// Module 18427 (GuildsBarDragPreview)
 import Fragment from "Fragment" /* 21 */;
 import _slicedToArray from "_slicedToArray" /* 4929 */;
 import native from "native" /* 5080 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import spring from "spring" /* 5637 */;
 import SortedGuildStore from "SortedGuildStore" /* 6772 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18358 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18353 */;
 import react_mod from "react" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18361 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18356 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
 

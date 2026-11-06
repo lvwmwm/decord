@@ -1,9 +1,9 @@
-// Module ID: 19319
-// Function ID: 19320
+// Module ID: 19314
+// Function ID: 19315
 // Name: CircleWithCutout
 // Dependencies: [19, 17, 21, 11717, 8031, 2]
 
-// Module 19319 (CircleWithCutout)
+// Module 19314 (CircleWithCutout)
 import react_native from "react-native" /* 17 */;
 import inlineStyles from "inlineStyles" /* 8031 */;
 import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 11717 */;

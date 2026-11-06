@@ -1,13 +1,13 @@
-// Module ID: 19157
-// Function ID: 19158
+// Module ID: 19152
+// Function ID: 19153
 // Name: FramePanelPIPView
-// Dependencies: [19, 6846, 6847, 19000, 21, 504, 19133, 19155, 12250, 12254, 2]
+// Dependencies: [19, 6846, 6847, 18995, 21, 504, 19128, 19150, 12250, 12254, 2]
 
-// Module 19157 (FramePanelPIPView)
+// Module 19152 (FramePanelPIPView)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19000 */;
-import ActivityPanelPIPView from "ActivityPanelPIPView" /* 19133 */;
-import FramePanelStateContextDefault from "FramePanelStateContext" /* 19155 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18995 */;
+import ActivityPanelPIPView from "ActivityPanelPIPView" /* 19128 */;
+import FramePanelStateContextDefault from "FramePanelStateContext" /* 19150 */;
 import react_mod from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6846 */;
 import FramesConstants from "FramesConstants" /* 6847 */;

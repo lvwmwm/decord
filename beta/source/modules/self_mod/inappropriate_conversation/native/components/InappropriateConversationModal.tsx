@@ -1,10 +1,10 @@
-// Module ID: 17734
-// Function ID: 17735
+// Module ID: 17729
+// Function ID: 17730
 // Name: InappropriateConversationModal
-// Dependencies: [32, 19, 17, 1383, 11256, 21, 5014, 575, 504, 5068, 1497, 7065, 5624, 1113, 5634, 11269, 17735, 11275, 17736, 6998, 11299, 6744, 11270, 7169, 2]
+// Dependencies: [32, 19, 17, 1383, 11256, 21, 5014, 575, 504, 5068, 1497, 7065, 5624, 1113, 5634, 11269, 17730, 11275, 17731, 6998, 11299, 6744, 11270, 7169, 2]
 // Exports: default
 
-// Module 17734 (InappropriateConversationModal)
+// Module 17729 (InappropriateConversationModal)
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,7 +18,7 @@ import TrafficConeSpotIllustration from "TrafficConeSpotIllustration" /* 7065 */
 import SafetyWarningUtils from "SafetyWarningUtils" /* 11269 */;
 import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11270 */;
 import SafetyTipsSectionDefault from "SafetyTipsSection" /* 11275 */;
-import TakeActionScreenDefault from "TakeActionScreen" /* 17735 */;
+import TakeActionScreenDefault from "TakeActionScreen" /* 17730 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1383 */;
@@ -160,7 +160,7 @@ function CrisisTextLineScreen(trackAnalyticsEvent) {
   trackAnalyticsEvent = trackAnalyticsEvent.trackAnalyticsEvent;
   const tmp = closure_15();
   const obj = { style: tmp.container, children: items };
-  items = [closure_13(trackAnalyticsEvent(17736).SafetyChatSpotIllustration, {}), , ];
+  items = [closure_13(trackAnalyticsEvent(17731).SafetyChatSpotIllustration, {}), , ];
   const obj2 = { style: tmp.warningText, children: items1 };
   const obj3 = { variant: "heading-xl/semibold", style: tmp.takeoverHeader, accessibilityRole: "header", children: intl.string(trackAnalyticsEvent(1113).t.NUMAsF) };
   const Text = trackAnalyticsEvent(5624).Text;

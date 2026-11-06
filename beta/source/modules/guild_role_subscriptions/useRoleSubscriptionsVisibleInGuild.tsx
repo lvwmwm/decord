@@ -16,7 +16,7 @@ const require = globalThis.__r;
 const useHasRoleSubscriptionInGuildDefault = useHasRoleSubscriptionInGuild;
 let _require;
 
-const f90614 = () => {
+const f90607 = () => {
   const items = [GuildStore, ImpersonateStore];
   return computeCanEveryoneInGuildSeeRoleSubscriptions(id, items);
 };
@@ -64,7 +64,7 @@ export function useRoleSubscriptionsVisibleInGuild(id1) {
   const items1 = [id1];
   const tmp = useHasRoleSubscriptionInGuildDefault(id1);
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f90614, items1);
+  let stateFromStores = obj.useStateFromStores(items, f90607, items1);
   const obj2 = require("CreatorMonetizationRestrictionsHooks");
   let tmp3 = !obj2.useShouldHideGuildPurchaseEntryPoints(id1).shouldHideGuildPurchaseEntryPoints;
   if (tmp3) {
@@ -81,7 +81,7 @@ export function useShowRoleSubscriptionsInChannelList(id) {
   const items1 = [id];
   const tmp2 = useHasRoleSubscriptionInGuildDefault(id);
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f90614, items1);
+  let stateFromStores = obj.useStateFromStores(items, f90607, items1);
   const obj2 = require("CreatorMonetizationRestrictionsHooks");
   let tmp5 = !obj2.useShouldHideGuildPurchaseEntryPoints(id).shouldHideGuildPurchaseEntryPoints;
   const tmp3 = _require;

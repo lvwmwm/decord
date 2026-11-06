@@ -1,9 +1,9 @@
-// Module ID: 17145
-// Function ID: 17146
+// Module ID: 17140
+// Function ID: 17141
 // Name: QuestPreviewToolSetting
-// Dependencies: [1072, 11540, 1113, 9681, 14718, 17146, 2]
+// Dependencies: [1072, 11540, 1113, 9681, 14718, 17141, 2]
 
-// Module 17145 (QuestPreviewToolSetting)
+// Module 17140 (QuestPreviewToolSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 9681 */;

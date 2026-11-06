@@ -1,14 +1,14 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17073
+// Function ID: 17074
 // Name: useConnectionBannerHeight
-// Dependencies: [15577, 17075, 15578, 504, 2]
+// Dependencies: [15572, 17070, 15573, 504, 2]
 // Exports: useConnectionBannerHeight
 
-// Module 17078 (useConnectionBannerHeight)
+// Module 17073 (useConnectionBannerHeight)
 import get_initialized from "get initialized" /* 504 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 15577 */;
-import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 15578 */;
-import YouBarConstants from "YouBarConstants" /* 17075 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 15572 */;
+import ConnectionIndicatorExperimentDefault from "ConnectionIndicatorExperiment" /* 15573 */;
+import YouBarConstants from "YouBarConstants" /* 17070 */;
 import size from "module_2" /* 2 */;
 
 const ConnectivityIndicatorStateStore = ConnectivityIndicatorStateStore2;

@@ -1,10 +1,10 @@
-// Module ID: 19584
-// Function ID: 19585
+// Module ID: 19579
+// Function ID: 19580
 // Name: NotificationReactivationActionSheet
-// Dependencies: [19, 17, 13974, 1072, 21, 5014, 575, 1252, 13975, 5258, 5272, 5717, 19585, 5624, 1113, 6767, 5634, 2]
+// Dependencies: [19, 17, 13974, 1072, 21, 5014, 575, 1252, 13975, 5258, 5272, 5717, 19580, 5624, 1113, 6767, 5634, 2]
 // Exports: default
 
-// Module 19584 (NotificationReactivationActionSheet)
+// Module 19579 (NotificationReactivationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258
 import FastImageDefault from "FastImage" /* 5717 */;
 import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13974 */;
 import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13975 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19585 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19580 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -63,7 +63,7 @@ export default function NotificationReactivationActionSheet(location) {
   const callback1 = react.useCallback(() => {
     const SKIP_STEP = EventActionType.SKIP_STEP;
     const obj = AnalyticsUtilsDefault;
-    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "Array" };
+    const obj2 = { action_type: SKIP_STEP, action_location: _location, permission_granted: "applicationId" };
     obj.track(AnalyticEvents.NOTIFICATION_PERMISSION_PREPROMPT_ACKED, obj2);
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideActionSheet();

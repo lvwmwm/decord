@@ -124,7 +124,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
       let busy;
       let closure_3;
       let error;
-      const f136970 = (arg0) => {
+      const f136961 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
@@ -245,7 +245,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f136970);
+                    closure_1_8(f136961);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -308,7 +308,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f136970);
+                  closure_1_8(f136961);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

@@ -1,10 +1,10 @@
-// Module ID: 16748
-// Function ID: 16749
+// Module ID: 16743
+// Function ID: 16744
 // Name: ContactSyncSettings
-// Dependencies: [5, 19, 1383, 14250, 1072, 21, 14251, 5712, 1113, 14255, 1252, 14247, 504, 4839, 1396, 8177, 6744, 16749, 1994, 2]
+// Dependencies: [5, 19, 1383, 14250, 1072, 21, 14251, 5712, 1113, 14255, 1252, 14247, 504, 4839, 1396, 8177, 6744, 16744, 1994, 2]
 // Exports: default, handleSyncContacts
 
-// Module 16748 (ContactSyncSettings)
+// Module 16743 (ContactSyncSettings)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14247 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 14251 */;

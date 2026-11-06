@@ -1,10 +1,10 @@
-// Module ID: 16961
-// Function ID: 16962
+// Module ID: 16956
+// Function ID: 16957
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 5257, 5014, 575, 5095, 5254, 5587, 16962, 5624, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 5257, 5014, 575, 5095, 5254, 5587, 16957, 5624, 1113, 2]
 // Exports: default
 
-// Module 16961 (BountiesScrollIndicatorOverlay)
+// Module 16956 (BountiesScrollIndicatorOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
@@ -71,7 +71,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   let items = [enabled];
   const effect = obj.useEffect(() => {
     let timeout;
-    const f139679 = () => {
+    const f139670 = () => {
       isEndCardVisible(closure_0);
       closure_0 = !closure_0;
       let num = 5000;
@@ -79,13 +79,13 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
       if (closure_0) {
         num = closure_2_9;
       }
-      enabled = _setTimeout(f139679, num);
+      enabled = _setTimeout(f139670, num);
     };
     const tmp = timeout;
     if (tmp) {
       let c0 = false;
       let _setTimeout = setTimeout;
-      timeout = setTimeout(f139679, closure_1_9);
+      timeout = setTimeout(f139670, closure_1_9);
       return () => clearTimeout(closure_0);
     }
   }, items);
@@ -195,7 +195,7 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
   const items5 = [animatedStyle, animatedStyle2];
   items4[1] = items5;
   const View3 = isEndCardVisible(5095).View;
-  items6 = [closure_6(isEndCardVisible(16962), { visible: enabled && first, isFadingInContent: first1 }), ];
+  items6 = [closure_6(isEndCardVisible(16957), { visible: enabled && first, isFadingInContent: first1 }), ];
   const obj12 = { variant: "text-sm/semibold", color: "text-default", style: tmp.scrollIndicatorText, children: intl.string(enabled(1113).t.eafsh4) };
   const Text = enabled(5624).Text;
   intl = enabled(1113).intl;

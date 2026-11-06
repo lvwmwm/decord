@@ -1,10 +1,10 @@
-// Module ID: 19213
-// Function ID: 19214
+// Module ID: 19208
+// Function ID: 19209
 // Name: useControlsHoverGesture
 // Dependencies: [19, 11223, 11221, 11222, 5095, 5303, 2]
 // Exports: default
 
-// Module 19213 (useControlsHoverGesture)
+// Module 19208 (useControlsHoverGesture)
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5303 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;

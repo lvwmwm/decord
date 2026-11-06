@@ -1,10 +1,10 @@
-// Module ID: 16856
-// Function ID: 16857
+// Module ID: 16851
+// Function ID: 16852
 // Name: UserSettingsAuthedApps
 // Dependencies: [19, 17, 7276, 1072, 21, 5014, 575, 9746, 9050, 14623, 5735, 504, 1498, 7332, 5624, 1113, 1497, 6975, 9041, 7161, 7165, 2]
 // Exports: AuthorizedAppRow, AuthorizedAppsEmpty, AuthorizedAppsHeader, DisclosureIcon, useAuthorizedApps
 
-// Module 16856 (UserSettingsAuthedApps)
+// Module 16851 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5624 */;

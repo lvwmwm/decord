@@ -1,10 +1,10 @@
-// Module ID: 18654
-// Function ID: 18655
+// Module ID: 18649
+// Function ID: 18650
 // Name: showMembersManagementActionSheet
-// Dependencies: [1383, 1113, 5258, 18655, 1994, 7439, 18656, 7363, 2]
+// Dependencies: [1383, 1113, 5258, 18650, 1994, 7439, 18651, 7363, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 18654 (showMembersManagementActionSheet)
+// Module 18649 (showMembersManagementActionSheet)
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import UserStore from "UserStore" /* 1383 */;
@@ -25,7 +25,7 @@ export default function showMembersManagementActionSheet(guild) {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guild, selectedRoleId: importDefault, onFilterRoleId: dependencyMap };
-      obj.openLazy(asyncRequire(18655, dependencyMap.paths), "MembersFilter", obj2);
+      obj.openLazy(asyncRequire(18650, dependencyMap.paths), "MembersFilter", obj2);
     }
   };
   intl = guild(1113).intl;
@@ -40,7 +40,7 @@ export default function showMembersManagementActionSheet(guild) {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild };
-          obj.openLazy(asyncRequire(18656, dependencyMap.paths), "MembersPrune", obj2);
+          obj.openLazy(asyncRequire(18651, dependencyMap.paths), "MembersPrune", obj2);
         },
       isDestructive: true
     };
@@ -64,7 +64,7 @@ export function getMembersManagementActions(guild) {
     action() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guild, selectedRoleId: importDefault, onFilterRoleId: dependencyMap };
-      obj.openLazy(asyncRequire(18655, dependencyMap.paths), "MembersFilter", obj2);
+      obj.openLazy(asyncRequire(18650, dependencyMap.paths), "MembersFilter", obj2);
     }
   };
   intl = guild(1113).intl;
@@ -79,7 +79,7 @@ export function getMembersManagementActions(guild) {
       action() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild };
-          obj.openLazy(asyncRequire(18656, dependencyMap.paths), "MembersPrune", obj2);
+          obj.openLazy(asyncRequire(18651, dependencyMap.paths), "MembersPrune", obj2);
         },
       variant: "destructive"
     };

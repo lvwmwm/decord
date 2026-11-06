@@ -1,17 +1,17 @@
-// Module ID: 20100
-// Function ID: 20101
+// Module ID: 20095
+// Function ID: 20096
 // Name: PendingRequestList
-// Dependencies: [19, 17, 1383, 21, 5014, 575, 1187, 504, 20098, 20101, 1409, 5624, 1113, 2836, 6980, 2538, 9285, 16829, 16781, 5712, 6027, 20102, 14767, 16786, 2]
+// Dependencies: [19, 17, 1383, 21, 5014, 575, 1187, 504, 20093, 20096, 1409, 5624, 1113, 2836, 6980, 2538, 9285, 16824, 16776, 5712, 6027, 20097, 14767, 16781, 2]
 // Exports: default
 
-// Module 20100 (PendingRequestList)
+// Module 20095 (PendingRequestList)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1409 */;
 import _modDef2538 from "module_2538" /* 2538 */;
 import _modDef2836 from "module_2836" /* 2836 */;
-import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 16781 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16829 */;
+import useRefreshLinkCodeOnExpiryDefault from "useRefreshLinkCodeOnExpiry" /* 16776 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16824 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1383 */;
@@ -99,11 +99,11 @@ class PendingRequestRow {
     if (avatar == null) {
       avatar = request.parent_avatar;
     }
-    const tmp2Result = request(20098);
+    const tmp2Result = request(20093);
     const pendingRequestResolution = tmp2Result.usePendingRequestResolution(request.parent_id);
     ({ isConnected, isResolved } = pendingRequestResolution);
     const obj2 = { style: tmp.row, children: items1 };
-    const tmp2Result2 = request(20101);
+    const tmp2Result2 = request(20096);
     const result = tmp2Result2.formatPendingRequestSentText(request.created_at);
     const obj3 = { avatarStyle: tmp.avatar, source: obj6.getUserAvatarSource(obj4), disablePlaceholder: true };
     const Avatar = tmp2(1187).Avatar;

@@ -1,13 +1,13 @@
-// Module ID: 18481
-// Function ID: 18482
+// Module ID: 18476
+// Function ID: 18477
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 6887, 1072, 21, 504, 18482, 5258, 11150, 9808, 9807, 7563, 7366, 7321, 1113, 7368, 8662, 13986, 9208, 18483, 11161, 10192, 5740, 12560, 7561, 2]
+// Dependencies: [19, 6887, 1072, 21, 504, 18477, 5258, 11150, 9808, 9807, 7563, 7366, 7321, 1113, 7368, 8662, 13986, 9208, 18478, 11161, 10192, 5740, 12560, 7561, 2]
 // Exports: default
 
-// Module 18481 (NotificationCenterActionSheet)
+// Module 18476 (NotificationCenterActionSheet)
 import Constants from "Constants" /* 1072 */;
 import SavedMessagesTypes from "SavedMessagesTypes" /* 10192 */;
-import MentionActionCreatorsDefault from "MentionActionCreators" /* 18482 */;
+import MentionActionCreatorsDefault from "MentionActionCreators" /* 18477 */;
 import react_mod from "react" /* 19 */;
 import RecentMentionsStore from "RecentMentionsStore" /* 6887 */;
 import Fragment from "Fragment" /* 21 */;
@@ -119,7 +119,7 @@ export default function NotificationCenterActionSheet() {
   const ActionSheetSwitchRow2 = roleFilter(7368).ActionSheetSwitchRow;
   intl3 = roleFilter(1113).intl;
   intl4 = roleFilter(1113).intl;
-  obj9 = { IconComponent: roleFilter(9208).BellIcon, source: everyoneFilter(18483) };
+  obj9 = { IconComponent: roleFilter(9208).BellIcon, source: everyoneFilter(18478) };
   Icon2 = roleFilter(7368).ActionSheetRow.Icon;
   items2[1] = closure_6(ActionSheetSwitchRow2, obj8);
   items3 = [closure_7(Group, obj5), ];

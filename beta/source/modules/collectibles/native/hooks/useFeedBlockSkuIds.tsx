@@ -1,12 +1,12 @@
-// Module ID: 17834
-// Function ID: 17835
+// Module ID: 17829
+// Function ID: 17830
 // Name: useFeedBlockSkuIds
-// Dependencies: [19, 6742, 1072, 504, 17835, 2]
+// Dependencies: [19, 6742, 1072, 504, 17830, 2]
 // Exports: default
 
-// Module 17834 (useFeedBlockSkuIds)
+// Module 17829 (useFeedBlockSkuIds)
 import Constants from "Constants" /* 1072 */;
-import ShopHomeSortType from "ShopHomeSortType" /* 17835 */;
+import ShopHomeSortType from "ShopHomeSortType" /* 17830 */;
 import react from "react" /* 19 */;
 import ConsentStore from "ConsentStore" /* 6742 */;
 import size from "module_2" /* 2 */;

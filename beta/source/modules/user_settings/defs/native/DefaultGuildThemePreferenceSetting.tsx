@@ -1,9 +1,9 @@
-// Module ID: 17303
-// Function ID: 17304
+// Module ID: 17298
+// Function ID: 17299
 // Name: DefaultGuildThemePreferenceSetting
 // Dependencies: [19, 8432, 4839, 1113, 1196, 11540, 5234, 2]
 
-// Module 17303 (DefaultGuildThemePreferenceSetting)
+// Module 17298 (DefaultGuildThemePreferenceSetting)
 import intl3 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import UserSettings from "UserSettings" /* 4839 */;

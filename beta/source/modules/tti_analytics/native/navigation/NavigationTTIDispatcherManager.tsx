@@ -1,11 +1,11 @@
-// Module ID: 20078
-// Function ID: 20079
+// Module ID: 20073
+// Function ID: 20074
 // Name: NavigationTTIDispatcherManager
-// Dependencies: [4863, 6061, 4917, 18605, 13330, 13720, 7287, 2]
+// Dependencies: [4863, 6061, 4917, 18600, 13330, 13720, 7287, 2]
 
-// Module 20078 (NavigationTTIDispatcherManager)
+// Module 20073 (NavigationTTIDispatcherManager)
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 13330 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 18605 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 18600 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import MessageStore from "MessageStore" /* 6061 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;

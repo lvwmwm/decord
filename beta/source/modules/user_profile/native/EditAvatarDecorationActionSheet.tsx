@@ -1,7 +1,7 @@
 // Module ID: 8729
 // Function ID: 8730
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 7735, 7725, 4926, 1072, 21, 5014, 8730, 8740, 8741, 7326, 7351, 1252, 8742, 5080, 5272, 7321, 1113, 8743, 10604, 504, 15067, 15072, 8737, 15073, 15078, 15079, 8744, 8829, 1187, 15080, 2]
+// Dependencies: [32, 19, 17, 7735, 7725, 4926, 1072, 21, 5014, 8730, 8740, 8741, 7326, 7351, 1252, 8742, 5080, 5272, 7321, 1113, 8743, 10604, 504, 15062, 15067, 8737, 15068, 15073, 15074, 8744, 8829, 1187, 15075, 2]
 // Exports: default
 
 // Module 8729 (EditAvatarDecorationActionSheet)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7725 */;
 import useShopProductItems from "useShopProductItems" /* 8742 */;
-import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 15073 */;
+import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 15068 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7735 */;
@@ -169,7 +169,7 @@ function AvatarDecorationSectionPreview(previewSkuId) {
   }
   const obj3 = { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo, size: tmp10(1187).AvatarSizes.EDIT_AVATAR_DECORATION };
   const tmp2Result = purchase(8829);
-  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(15080), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
+  items1 = [closure_10(tmp2Result, obj3), closure_10(purchase(15075), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   return tmp6(tmp7, obj);
 }
 const View = react_native.View;

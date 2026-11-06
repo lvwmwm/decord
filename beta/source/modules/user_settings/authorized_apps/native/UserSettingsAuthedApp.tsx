@@ -1,10 +1,10 @@
-// Module ID: 16854
-// Function ID: 16855
+// Module ID: 16849
+// Function ID: 16850
 // Name: UserSettingsAuthedApp
 // Dependencies: [19, 17, 4862, 7276, 4863, 4956, 6775, 2062, 1072, 10137, 11287, 21, 5014, 575, 5735, 5624, 1497, 1498, 1113, 7332, 10931, 9748, 504, 14173, 1409, 5960, 14172, 5258, 11288, 1994, 1260, 7488, 7496, 7161, 7165, 8940, 5199, 7288, 7283, 11, 12384, 11494, 7060, 7369, 2139, 6975, 2]
 // Exports: default, handleDeleteApp
 
-// Module 16854 (UserSettingsAuthedApp)
+// Module 16849 (UserSettingsAuthedApp)
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1113 */;
 import Link from "Link" /* 1498 */;

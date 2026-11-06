@@ -1,10 +1,10 @@
-// Module ID: 19202
-// Function ID: 19203
+// Module ID: 19197
+// Function ID: 19198
 // Name: usePanelOpenState
 // Dependencies: [32, 19, 6875, 11223, 1072, 5095, 1108, 12066, 5050, 5063, 12059, 10928, 2]
 // Exports: default
 
-// Module 19202 (usePanelOpenState)
+// Module 19197 (usePanelOpenState)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;

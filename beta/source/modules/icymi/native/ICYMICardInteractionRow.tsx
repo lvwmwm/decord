@@ -1,10 +1,10 @@
-// Module ID: 18575
-// Function ID: 18576
+// Module ID: 18570
+// Function ID: 18571
 // Name: ICYMICardInteractionRow
-// Dependencies: [32, 19, 17, 7477, 4863, 6708, 4946, 1072, 1386, 21, 4958, 8405, 5014, 575, 1375, 5011, 504, 7485, 7636, 9939, 6980, 1113, 9452, 5624, 10096, 1090, 4839, 1409, 9894, 5717, 10766, 11147, 13391, 12748, 18567, 8643, 5615, 8429, 10193, 8924, 13379, 10201, 5596, 5587, 671, 7378, 2]
+// Dependencies: [32, 19, 17, 7477, 4863, 6708, 4946, 1072, 1386, 21, 4958, 8405, 5014, 575, 1375, 5011, 504, 7485, 7636, 9939, 6980, 1113, 9452, 5624, 10096, 1090, 4839, 1409, 9894, 5717, 10766, 11147, 13391, 12748, 18562, 8643, 5615, 8429, 10193, 8924, 13379, 10201, 5596, 5587, 671, 7378, 2]
 // Exports: default, onAddReaction, useThread
 
-// Module 18575 (ICYMICardInteractionRow)
+// Module 18570 (ICYMICardInteractionRow)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
@@ -22,7 +22,7 @@ import PendingReplyActionCreators from "PendingReplyActionCreators" /* 10201 */;
 import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12748 */;
 import ForwardModalUtils from "ForwardModalUtils" /* 13379 */;
 import ForwardingIconDefault from "ForwardingIcon" /* 13391 */;
-import ICYMIShared from "ICYMIShared" /* 18567 */;
+import ICYMIShared from "ICYMIShared" /* 18562 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

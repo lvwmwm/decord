@@ -1,9 +1,9 @@
-// Module ID: 19772
-// Function ID: 19773
+// Module ID: 19767
+// Function ID: 19768
 // Name: GuildSettingsModalRolesStore
 // Dependencies: [4920, 4885, 1072, 13980, 5021, 1113, 1084, 504, 572, 2]
 
-// Module 19772 (GuildSettingsModalRolesStore)
+// Module 19767 (GuildSettingsModalRolesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
@@ -17,12 +17,12 @@ import size from "module_2" /* 2 */;
 
 let _null2;
 
-const f118714 = (id) => id.id;
+const f118705 = (id) => id.id;
 function handleGuildRoleCreateOrUpdate(arg0) {
   const tmp2 = c8;
   if (tmp2) {
     const sortedRoles = GuildRoleStore.getSortedRoles(tmp);
-    let c9 = sortedRoles.map(f118714);
+    let c9 = sortedRoles.map(f118705);
   }
 }
 const FormStates = Constants.FormStates;
@@ -106,7 +106,7 @@ let obj = {
     guildId = guildId.guildId;
     c8 = true;
     const sortedRoles = GuildRoleStore.getSortedRoles(guildId);
-    let c9 = sortedRoles.map(f118714);
+    let c9 = sortedRoles.map(f118705);
     const guild = GuildStore.getGuild(guildId);
     clearTimeout(closure_15);
   },

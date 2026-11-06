@@ -1,9 +1,9 @@
-// Module ID: 20021
-// Function ID: 20022
+// Module ID: 20016
+// Function ID: 20017
 // Name: AutoclipsExperiment
 // Dependencies: [1447, 2]
 
-// Module 20021 (AutoclipsExperiment)
+// Module 20016 (AutoclipsExperiment)
 import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 

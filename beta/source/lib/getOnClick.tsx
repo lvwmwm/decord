@@ -322,7 +322,7 @@ export default function getOnClick(assetURL) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "find", skuId: "T" };
+            result = { applicationId: "marginTop", skuId: "cix" };
           }
         }
         ({ applicationId, skuId } = result);

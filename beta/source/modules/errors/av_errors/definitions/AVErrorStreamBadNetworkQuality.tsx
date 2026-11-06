@@ -1,13 +1,13 @@
-// Module ID: 20058
-// Function ID: 20059
+// Module ID: 20053
+// Function ID: 20054
 // Name: AVErrorStreamBadNetworkQuality
-// Dependencies: [7885, 1072, 5947, 20051, 1379, 2]
+// Dependencies: [7885, 1072, 5947, 20046, 1379, 2]
 
-// Module 20058 (AVErrorStreamBadNetworkQuality)
+// Module 20053 (AVErrorStreamBadNetworkQuality)
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1379 */;
 import AVError from "AVError" /* 5947 */;
-import AVErrorContext from "AVErrorContext" /* 20051 */;
+import AVErrorContext from "AVErrorContext" /* 20046 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 7885 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 18883
-// Function ID: 18884
+// Module ID: 18878
+// Function ID: 18879
 // Name: CheckpointTestingOptions
-// Dependencies: [5, 13450, 18884, 1113, 3094, 13434, 13451, 2]
+// Dependencies: [5, 13450, 18879, 1113, 3094, 13434, 13451, 2]
 
-// Module 18883 (CheckpointTestingOptions)
+// Module 18878 (CheckpointTestingOptions)
 import _modDef3094 from "module_3094" /* 3094 */;
 import CheckpointActionCreators from "CheckpointActionCreators" /* 13450 */;
 import CheckpointMockData from "CheckpointMockData" /* 13451 */;
@@ -12,7 +12,7 @@ import size from "module_2" /* 2 */;
 
 let c2;
 
-const f115986 = async (arg0, value) => {
+const f115977 = async (arg0, value) => {
   let closure_0;
   let intl2;
   let v1;
@@ -82,7 +82,7 @@ function action() {
 const yLZjcu = _modDef3094.yLZjcu;
 let c1;
 let obj = { id: "open", label: yLZjcu, description: "Array", action };
-_asyncToGenerator(f115986);
+_asyncToGenerator(f115977);
 const items = [obj, , , , ];
 let obj2 = {
   id: "reset",
@@ -156,19 +156,19 @@ const kPBZ5M = _modDef3094.kPBZ5M;
 const cf0nfD = _modDef3094.cf0nfD;
 const DEFAULT = CheckpointMockData.CheckpointMockStats.DEFAULT;
 let obj3 = { id: "open-fake-data", label: kPBZ5M, description: cf0nfD, action };
-_asyncToGenerator(f115986);
+_asyncToGenerator(f115977);
 items[2] = obj3;
 const UwiUbM = _modDef3094.UwiUbM;
 let prop = _modDef3094["+5dICr"];
 const NO_PERSONAL_DATA = CheckpointMockData.CheckpointMockStats.NO_PERSONAL_DATA;
 let obj4 = { id: "open-global-stats", label: UwiUbM, description: prop, action };
-_asyncToGenerator(f115986);
+_asyncToGenerator(f115977);
 items[3] = obj4;
 const BYW9oX = _modDef3094.BYW9oX;
 const NffC17 = _modDef3094.NffC17;
 let ZERO_DATA = CheckpointMockData.CheckpointMockStats.ZERO_DATA;
 let obj5 = { id: "open-zero-stats", label: BYW9oX, description: NffC17, action };
-let closure_2 = _asyncToGenerator(f115986);
+let closure_2 = _asyncToGenerator(f115977);
 items[4] = obj5;
 let result = size.fileFinishedImporting("modules/checkpoint/testing/CheckpointTestingOptions.tsx");
 

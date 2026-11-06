@@ -1,17 +1,17 @@
-// Module ID: 19196
-// Function ID: 19197
+// Module ID: 19191
+// Function ID: 19192
 // Name: usePIPAvoidanceSpecs
-// Dependencies: [11223, 11221, 11224, 5095, 12075, 19118, 5596, 575, 10089, 19005, 19119, 11229, 11227, 2]
+// Dependencies: [11223, 11221, 11224, 5095, 12075, 19113, 5596, 575, 10089, 19000, 19114, 11229, 11227, 2]
 // Exports: default
 
-// Module 19196 (usePIPAvoidanceSpecs)
+// Module 19191 (usePIPAvoidanceSpecs)
 import cheapWorkletShallowEqual2 from "cheapWorkletShallowEqual" /* 10089 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11223 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;
-import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 19005 */;
-import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 19119 */;
+import getPIPBottomOffsetForPIPModeDefault from "getPIPBottomOffsetForPIPMode" /* 19000 */;
+import getAdjustedBottomOffsetsDefault from "getAdjustedBottomOffsets" /* 19114 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;

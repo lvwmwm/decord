@@ -1,10 +1,10 @@
-// Module ID: 16442
-// Function ID: 16443
+// Module ID: 16437
+// Function ID: 16438
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 8763, 11459, 7377, 1072, 5039, 1082, 16443, 21, 7160, 16444, 2047, 7326, 7351, 16445, 8737, 16458, 1113, 16461, 8814, 16462, 8733, 7101, 5095, 16463, 5607, 575, 11405, 16464, 10604, 13301, 8757, 11394, 13731, 8740, 8815, 11453, 504, 8768, 14985, 5042, 16469, 8800, 8811, 16459, 8803, 16470, 16471, 5624, 16472, 8735, 16473, 16486, 16489, 16495, 8738, 16499, 16500, 16504, 16508, 16513, 16514, 16517, 16518, 16550, 5080, 8810, 16554, 11396, 11413, 16561, 16562, 16565, 16566, 2]
+// Dependencies: [19, 17, 8763, 11459, 7377, 1072, 5039, 1082, 16438, 21, 7160, 16439, 2047, 7326, 7351, 16440, 8737, 16453, 1113, 16456, 8814, 16457, 8733, 7101, 5095, 16458, 5607, 575, 11405, 16459, 10604, 13301, 8757, 11394, 13731, 8740, 8815, 11453, 504, 8768, 14980, 5042, 16464, 8800, 8811, 16454, 8803, 16465, 16466, 5624, 16467, 8735, 16468, 16481, 16484, 16490, 8738, 16494, 16495, 16499, 16503, 16508, 16509, 16512, 16513, 16545, 5080, 8810, 16549, 11396, 11413, 16556, 16557, 16560, 16561, 2]
 // Exports: default
 
-// Module 16442 (UserProfileEditForm)
+// Module 16437 (UserProfileEditForm)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2047 */;
@@ -14,11 +14,11 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import Constants2 from "Constants" /* 7377 */;
 import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8737 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8768 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14985 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 16443 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16444 */;
-import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 16445 */;
-import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 16461 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14980 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 16438 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16439 */;
+import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 16440 */;
+import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 16456 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8763 */;
@@ -40,7 +40,7 @@ let closure_4;
 let hasOwnProperty;
 let tmp2;
 let unpackModuleId;
-const UserProfileEditBannerButtonDefault = tmp2(16458);
+const UserProfileEditBannerButtonDefault = tmp2(16453);
 function EditUserProfileBanner(arg0) {
   let banner;
   let disabled;
@@ -677,7 +677,7 @@ const FLOATING_UPSELL_HEIGHT = Constants2.FLOATING_UPSELL_HEIGHT;
 let closure_13 = UserSettingsConstants.ProfileCustomizationScrollPositions;
 const constants2 = UserProfileEditConstants.UserProfileEditAutoFocusElement;
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = Fragment);
-let obj = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: AssetRegistryDefault, staticImageUri: AssetRegistryDefault, description: "", originalAsset: "applicationId" };
+let obj = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: AssetRegistryDefault, staticImageUri: AssetRegistryDefault, description: "", originalAsset: "cix" };
 const __initData = { code: "function UserProfileEditFormTsx1(){const{isScrolledAboveTryItOutSection,isBoardTabOnScreen}=this.__closure;return isScrolledAboveTryItOutSection.get()&&!isBoardTabOnScreen.get();}" };
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 

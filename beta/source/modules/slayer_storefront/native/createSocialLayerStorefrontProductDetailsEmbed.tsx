@@ -132,11 +132,11 @@ export function useFetchSocialLayerStorefrontProductDetailsEmbedApplications(sta
   const items2 = [memo];
   const obj = require("get initialized");
   const stateFromStoresArray = obj.useStateFromStoresArray(items1, () => {
-    const f126594 = (applicationId) => applicationId.applicationId;
+    const f126585 = (applicationId) => applicationId.applicationId;
     const mapped = memo.map((item) => closure_1_5.get(item));
     const found = mapped.filter(GlobalUtils.isNotNullish);
-    const items = [...new Set(found.map(f126594))];
-    new Set(found.map(f126594));
+    const items = [...new Set(found.map(f126585))];
+    new Set(found.map(f126585));
     return items;
   }, items2);
   let tmp3 = memo(7330)(stateFromStoresArray);

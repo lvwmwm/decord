@@ -1,10 +1,10 @@
-// Module ID: 18835
-// Function ID: 18836
+// Module ID: 18830
+// Function ID: 18831
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 4867, 4863, 4956, 7395, 10727, 1072, 21, 5095, 5624, 5014, 575, 1375, 7485, 7396, 572, 504, 1252, 18836, 5254, 18837, 9812, 1113, 11214, 12361, 7326, 7351, 5607, 5593, 11630, 11628, 11627, 9824, 1099, 11631, 5711, 10978, 10977, 5722, 5721, 13403, 5634, 13916, 18775, 2]
+// Dependencies: [5, 32, 19, 17, 4867, 4863, 4956, 7395, 10727, 1072, 21, 5095, 5624, 5014, 575, 1375, 7485, 7396, 572, 504, 1252, 18831, 5254, 18832, 9812, 1113, 11214, 12361, 7326, 7351, 5607, 5593, 11630, 11628, 11627, 9824, 1099, 11631, 5711, 10978, 10977, 5722, 5721, 13403, 5634, 13916, 18770, 2]
 // Exports: default
 
-// Module 18835 (NewMessageScreen)
+// Module 18830 (NewMessageScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1099 */;
@@ -26,7 +26,7 @@ import GroupPlusIcon from "GroupPlusIcon" /* 10977 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10978 */;
 import ChatViewDefault from "ChatView" /* 11214 */;
 import NoResultsDefault from "NoResults" /* 13403 */;
-import useOnMessageSendDefault from "useOnMessageSend" /* 18836 */;
+import useOnMessageSendDefault from "useOnMessageSend" /* 18831 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -57,7 +57,7 @@ let tmp2;
 const getGroupDMRecipientLimitDefault = tmp2(11628);
 const GroupDMNitroCapExperimentDefault = tmp2(11630);
 const NewMessageUserListDefault = tmp2(13916);
-const GroupDMNitroUpsellBannerDefault = tmp2(18775);
+const GroupDMNitroUpsellBannerDefault = tmp2(18770);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
   if (recipients.length !== arr.length) {
@@ -225,7 +225,7 @@ function Header(recipientLimit) {
   if (usePersonLimitCopy) {
     let num2 = 1;
     const obj2 = { title, memberCount: numInGroup + 1, recipientLimit };
-    return closure_17(recipientLimit(18837), obj2);
+    return closure_17(recipientLimit(18832), obj2);
   } else {
     let num = 0;
     const obj3 = { style: tmp.header, children: items1 };

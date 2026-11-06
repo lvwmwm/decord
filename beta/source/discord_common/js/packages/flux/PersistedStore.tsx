@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 let closure_3 = ["_state", "_version"];
 const Store = Store2.Store;
-let closure_6 = { _state: "find", _version: "T" };
+let closure_6 = { _state: "marginTop", _version: "cix" };
 let c7 = null;
 class PersistedStore extends Store {
   constructor(arg0, arg1, arg2) {

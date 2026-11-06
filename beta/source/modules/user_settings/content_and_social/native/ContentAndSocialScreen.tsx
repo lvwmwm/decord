@@ -1,10 +1,10 @@
-// Module ID: 17909
-// Function ID: 17910
+// Module ID: 17904
+// Function ID: 17905
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8432, 1072, 21, 5014, 575, 1113, 2061, 17910, 16719, 14251, 17915, 7472, 11540, 16717, 16588, 17916, 5624, 2]
+// Dependencies: [32, 19, 17, 8432, 1072, 21, 5014, 575, 1113, 2061, 17905, 16714, 14251, 17910, 7472, 11540, 16712, 16583, 17911, 5624, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
-// Module 17909 (ContentAndSocialScreen)
+// Module 17904 (ContentAndSocialScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl16 from "intl" /* 1113 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5624 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import ContactSyncUtils from "ContactSyncUtils" /* 14251 */;
-import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 17910 */;
-import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 17916 */;
+import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 17905 */;
+import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 17911 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -42,7 +42,7 @@ let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/ContentAndSocialScreen.tsx");
 
 export default function ContentAndSocialSettings(route) {
-  const f113251 = () => {
+  const f113242 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -62,9 +62,9 @@ export default function ContentAndSocialSettings(route) {
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f113251), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f113242), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f113251), 2);
+  _slicedToArray(react.useState(f113242), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };
@@ -189,7 +189,7 @@ export function DiscordPermissionsPage() {
     tmp16 = undefined;
     if (allServersOptionSelected) {
       if (tmp9) {
-        tmp16 = React4(tmp3(16719).MessageRequestsNotice, {});
+        tmp16 = React4(tmp3(16714).MessageRequestsNotice, {});
       }
     }
     items8[4] = obj15;
@@ -278,7 +278,7 @@ export function ConnectedGamesPage() {
     tmp7 = unpackModuleId(metroRequire, obj3);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React4(tmp2(16588), obj);
+    tmp7 = React4(tmp2(16583), obj);
   }
   return tmp7;
 }

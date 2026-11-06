@@ -1,10 +1,10 @@
-// Module ID: 15159
-// Function ID: 15160
+// Module ID: 15154
+// Function ID: 15155
 // Name: InAppReportsWidgetPreviewElement
-// Dependencies: [19, 17, 21, 5014, 575, 7148, 8814, 7778, 14967, 7774, 14950, 5624, 1113, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7148, 8814, 7778, 14962, 7774, 14945, 5624, 1113, 2]
 // Exports: default
 
-// Module 15159 (InAppReportsWidgetPreviewElement)
+// Module 15154 (InAppReportsWidgetPreviewElement)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -21,7 +21,7 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp5;
-const UserProfilePersonalWidgetCardDefault = tmp5(14967);
+const UserProfilePersonalWidgetCardDefault = tmp5(14962);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, title: { lineHeight: 16, marginBottom: 8 }, card: obj2 };
@@ -54,7 +54,7 @@ export default function WidgetPreview(arg0) {
       if (widget.games.length > 0) {
         const obj3 = { userId, widget, disableInteraction: true, cardStyle: items1 };
         items1 = [tmp6.card, tmp.card];
-        tmp7 = React3(tmp2(14950).WidgetSection, obj3);
+        tmp7 = React3(tmp2(14945).WidgetSection, obj3);
       }
     }
   }

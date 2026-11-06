@@ -1,10 +1,10 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15305
+// Function ID: 15306
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 5014, 575, 7326, 15311, 6028, 1260, 10609, 15314, 5717, 5624, 5709, 10290, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 7326, 15306, 6028, 1260, 10609, 15309, 5717, 5624, 5709, 10290, 2]
 // Exports: default
 
-// Module 15310 (MarketingPageBannerTile)
+// Module 15305 (MarketingPageBannerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import LinkingDefault from "Linking" /* 5709 */;
@@ -58,7 +58,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(15311).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(15306).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
@@ -75,9 +75,9 @@ export default function MarketingPageBannerTile(bannerFields) {
   const tmp2Result = useTrackImpressionDefault;
   ({ component_type: helpArticleLinkProps(10609).MarketingComponentType.MARKETING_PAGE_BANNER, component_id: componentId, promotion_id: promotionId });
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(15314);
+  const tmp4Result = helpArticleLinkProps(15309);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(15314);
+  const tmp4Result2 = helpArticleLinkProps(15309);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj4 = { style: items, children: closure_5(View, obj5) };
   items = [tmp.container, style];

@@ -1,12 +1,12 @@
-// Module ID: 17959
-// Function ID: 17960
+// Module ID: 17954
+// Function ID: 17955
 // Name: MobileNotifSettingsRendererConfig
-// Dependencies: [17482, 17960, 17973, 2]
+// Dependencies: [17477, 17955, 17968, 2]
 
-// Module 17959 (MobileNotifSettingsRendererConfig)
-import MobileNotifSettings from "MobileNotifSettings" /* 17482 */;
-import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 17960 */;
-import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 17973 */;
+// Module 17954 (MobileNotifSettingsRendererConfig)
+import MobileNotifSettings from "MobileNotifSettings" /* 17477 */;
+import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 17955 */;
+import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 17968 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

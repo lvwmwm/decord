@@ -1,10 +1,10 @@
-// Module ID: 18881
-// Function ID: 18882
+// Module ID: 18876
+// Function ID: 18877
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [21, 13450, 13434, 5258, 18882, 1994, 6088, 6975, 1113, 3092, 13416, 2]
+// Dependencies: [21, 13450, 13434, 5258, 18877, 1994, 6088, 6975, 1113, 3092, 13416, 2]
 // Exports: default
 
-// Module 18881 (CheckpointProfileEntrypoint)
+// Module 18876 (CheckpointProfileEntrypoint)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
@@ -25,7 +25,7 @@ function handlePress() {
 }
 function handleLongPress() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(18882, dependencyMap.paths), "CheckpointTestingActionSheet");
+  obj.openLazy(asyncRequire(18877, dependencyMap.paths), "CheckpointTestingActionSheet");
 }
 function CheckpointProfileEntrypointRow() {
   let intl;

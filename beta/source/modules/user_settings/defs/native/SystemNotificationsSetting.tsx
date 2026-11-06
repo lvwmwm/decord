@@ -1,9 +1,9 @@
-// Module ID: 17483
-// Function ID: 17484
+// Module ID: 17478
+// Function ID: 17479
 // Name: SystemNotificationsSetting
 // Dependencies: [5, 8432, 1072, 7940, 13974, 7963, 13982, 1252, 10914, 11540, 1113, 2]
 
-// Module 17483 (SystemNotificationsSetting)
+// Module 17478 (SystemNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 7940 */;

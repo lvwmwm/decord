@@ -1,7 +1,7 @@
 // Module ID: 7636
 // Function ID: 7637
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 6568, 6917, 7637, 7638, 7820, 7822, 7766, 6837, 6714, 502, 4863, 7823, 4885, 5749, 6061, 4946, 5761, 6842, 7830, 1383, 1072, 7832, 7501, 5019, 17, 3, 5748, 7833, 5752, 7836, 7837, 5760, 7842, 6786, 7862, 1252, 5750, 7878, 7882, 6444, 7884, 1113, 2061, 8212, 572, 10319, 6556, 10315, 8687, 1282, 6063, 7396, 9, 7667, 6563, 11, 4892, 4912, 7656, 6566, 15216, 10210, 9129, 15217, 2047, 7826, 1396, 7441, 8403, 15218, 8384, 11681, 15222, 9782, 14592, 14598, 6918, 1089, 8387, 1992, 8202, 5021, 10611, 5958, 2]
+// Dependencies: [32, 5, 6568, 6917, 7637, 7638, 7820, 7822, 7766, 6837, 6714, 502, 4863, 7823, 4885, 5749, 6061, 4946, 5761, 6842, 7830, 1383, 1072, 7832, 7501, 5019, 17, 3, 5748, 7833, 5752, 7836, 7837, 5760, 7842, 6786, 7862, 1252, 5750, 7878, 7882, 6444, 7884, 1113, 2061, 8212, 572, 10319, 6556, 10315, 8687, 1282, 6063, 7396, 9, 7667, 6563, 11, 4892, 4912, 7656, 6566, 15211, 10210, 9129, 15212, 2047, 7826, 1396, 7441, 8403, 15213, 8384, 11681, 15217, 9782, 14592, 14598, 6918, 1089, 8387, 1992, 8202, 5021, 10611, 5958, 2]
 
 // Module 7636 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
@@ -29,7 +29,7 @@ import getInviteURLDefault from "getInviteURL" /* 9129 */;
 import createNonce from "createNonce" /* 10315 */;
 import createMessage from "createMessage" /* 10319 */;
 import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 10611 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15217 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 15212 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6568 */;
@@ -445,7 +445,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f91180 = () => {
+    const f91173 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -469,8 +469,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f91180));
-      withResult1.otherwise(f91180);
+      ({ message, messageName } = withResult1.otherwise(f91173));
+      withResult1.otherwise(f91173);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -2667,9 +2667,9 @@ let obj17 = {
         const obj = id(c3[46]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f139082);
+        dispatchResult.then(f139073);
       }
-      const f139082 = () => {
+      const f139073 = () => {
         const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[43]).intl;
@@ -2730,7 +2730,7 @@ let obj17 = {
               const obj = id(c3[46]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f139082);
+              dispatchResult.then(f139073);
             });
           }
           c3 = 3;

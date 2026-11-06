@@ -1,10 +1,10 @@
-// Module ID: 18864
-// Function ID: 18865
+// Module ID: 18859
+// Function ID: 18860
 // Name: useReferralProgramCoachmark
-// Dependencies: [32, 19, 17, 1072, 4860, 21, 5014, 5717, 18865, 5044, 4847, 8524, 7569, 1113, 575, 7563, 2]
+// Dependencies: [32, 19, 17, 1072, 4860, 21, 5014, 5717, 18860, 5044, 4847, 8524, 7569, 1113, 575, 7563, 2]
 // Exports: useReferralProgramCoachmark
 
-// Module 18864 (useReferralProgramCoachmark)
+// Module 18859 (useReferralProgramCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import FastImageDefault from "FastImage" /* 5717 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18865 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18860 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;

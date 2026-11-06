@@ -21,7 +21,7 @@ import size from "module_2" /* 2 */;
 
 let c1, c2, c3, closure_3, closure_4;
 
-const f105501 = () => state.authorizationStatus;
+const f105494 = () => state.authorizationStatus;
 let obj = function _requestPushNotificationPermission() {
   obj = _asyncToGenerator(async (arg0, action_location, arg2) => {
     let closure_0 = arg0;
@@ -284,7 +284,7 @@ export function useCanSeePushNotificationNudge() {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f105501);
+  const stateFromStores = obj2.useStateFromStores(items, f105494);
   [tmp4, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {
@@ -319,7 +319,7 @@ export function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f105501);
+  const stateFromStores = obj2.useStateFromStores(items, f105494);
   [tmp7, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {

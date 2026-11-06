@@ -1,10 +1,10 @@
-// Module ID: 18142
-// Function ID: 18143
+// Module ID: 18137
+// Function ID: 18138
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2062, 14885, 21, 5014, 575, 1187, 5095, 563, 5637, 9509, 5624, 1895, 18143, 2]
+// Dependencies: [32, 19, 17, 2062, 14885, 21, 5014, 575, 1187, 5095, 563, 5637, 9509, 5624, 1895, 18138, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 18142 (HappeningNowAvatarStack)
+// Module 18137 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

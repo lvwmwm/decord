@@ -1,9 +1,9 @@
-// Module ID: 17414
-// Function ID: 17415
+// Module ID: 17409
+// Function ID: 17410
 // Name: AnimateStickersSetting
 // Dependencies: [19, 8432, 4842, 4839, 1113, 11540, 2]
 
-// Module 17414 (AnimateStickersSetting)
+// Module 17409 (AnimateStickersSetting)
 import intl4 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4839 */;
 import StickersConstants from "StickersConstants" /* 4842 */;

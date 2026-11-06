@@ -1,9 +1,9 @@
-// Module ID: 16579
-// Function ID: 16580
+// Module ID: 16574
+// Function ID: 16575
 // Name: AccountSetting
-// Dependencies: [1072, 11540, 1113, 10805, 16580, 2]
+// Dependencies: [1072, 11540, 1113, 10805, 16575, 2]
 
-// Module 16579 (AccountSetting)
+// Module 16574 (AccountSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import UserCircleIcon from "UserCircleIcon" /* 10805 */;

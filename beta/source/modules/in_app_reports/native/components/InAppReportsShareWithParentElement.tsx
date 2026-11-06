@@ -1,13 +1,13 @@
-// Module ID: 15168
-// Function ID: 15169
+// Module ID: 15163
+// Function ID: 15164
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 7717, 5711, 1113, 7496, 15167, 14767, 2]
+// Dependencies: [32, 19, 21, 7717, 5711, 1113, 7496, 15162, 14767, 2]
 // Exports: default
 
-// Module 15168 (InAppReportsShareWithParentElement)
+// Module 15163 (InAppReportsShareWithParentElement)
 import Fragment from "Fragment" /* 21 */;
 import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7717 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15167 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 15162 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

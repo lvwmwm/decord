@@ -1,10 +1,10 @@
-// Module ID: 19099
-// Function ID: 19100
+// Module ID: 19094
+// Function ID: 19095
 // Name: FrameView
-// Dependencies: [32, 19, 6844, 6847, 21, 6881, 504, 572, 10938, 19100, 11794, 19101, 5959, 1113, 6848, 19102, 11809, 12252, 11840, 2]
+// Dependencies: [32, 19, 6844, 6847, 21, 6881, 504, 572, 10938, 19095, 11794, 19096, 5959, 1113, 6848, 19097, 11809, 12252, 11840, 2]
 // Exports: default
 
-// Module 19099 (FrameView)
+// Module 19094 (FrameView)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 
 import FramesConstants from "FramesConstants" /* 6847 */;
 import leaveFrame from "leaveFrame" /* 10938 */;
 import FramePoolManagerDefault from "FramePoolManager" /* 12252 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 19100 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 19095 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6844 */;

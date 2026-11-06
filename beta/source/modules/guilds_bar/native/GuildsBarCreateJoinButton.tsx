@@ -1,9 +1,9 @@
-// Module ID: 18424
-// Function ID: 18425
+// Module ID: 18419
+// Function ID: 18420
 // Name: GuildsBarCreateJoinButton
-// Dependencies: [5, 19, 17, 5045, 1072, 1385, 21, 5014, 10251, 1994, 14280, 7380, 9785, 7351, 18370, 504, 18385, 1113, 18425, 11489, 575, 2]
+// Dependencies: [5, 19, 17, 5045, 1072, 1385, 21, 5014, 10251, 1994, 14280, 7380, 9785, 7351, 18365, 504, 18380, 1113, 18420, 11489, 575, 2]
 
-// Module 18424 (GuildsBarCreateJoinButton)
+// Module 18419 (GuildsBarCreateJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1385 */;
 import CirclePlusIcon2 from "CirclePlusIcon" /* 11489 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18370 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18365 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;

@@ -117,7 +117,7 @@ export function convertRouteToNavigation(pathname) {
                   }
                   const tmp23 = null != channelId && true !== navigationReplace;
                   if (tmp23) {
-                    const obj9 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "Array" };
+                    const obj9 = { channelId, guildId, messageId, replaceChannelAndFixRoot: "a" };
                     const tmpResult25 = NavigationRouteUtils;
                     tmpResult25.navigateToChannel(obj9);
                   }

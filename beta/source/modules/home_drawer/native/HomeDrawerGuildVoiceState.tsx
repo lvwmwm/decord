@@ -1,10 +1,10 @@
-// Module ID: 18394
-// Function ID: 18395
+// Module ID: 18389
+// Function ID: 18390
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4944, 4956, 6775, 5767, 1072, 21, 5014, 575, 14883, 1187, 5624, 1113, 12042, 5717, 5587, 18393, 504, 12, 15601, 2]
+// Dependencies: [19, 17, 4944, 4956, 6775, 5767, 1072, 21, 5014, 575, 14883, 1187, 5624, 1113, 12042, 5717, 5587, 18388, 504, 12, 15596, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 18394 (HomeDrawerGuildVoiceState)
+// Module 18389 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;

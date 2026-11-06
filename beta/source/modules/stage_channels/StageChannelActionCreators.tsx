@@ -32,7 +32,7 @@ let metroImportAll;
 let metroImportDefault;
 let tmp2;
 const ChannelActionCreatorsDefault = tmp2(7485);
-const f91945 = (error) => {
+const f91938 = (error) => {
   if (error.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
     obj = SafetyToastsActionCreatorsDefault;
     obj.showFailedToast(constants2.GENERIC_ERROR);
@@ -346,7 +346,7 @@ export function setUserSuppress(channel, id, suppress) {
   obj = { suppress, channel_id: channel.id };
   obj3 = HTTPUtils;
   const patchResult = patch(request);
-  return patchResult.catch(f91945);
+  return patchResult.catch(f91938);
 }
 export function moveUserToAudience(user, voiceChannel) {
   let constants2;
@@ -366,7 +366,7 @@ export function moveUserToAudience(user, voiceChannel) {
       obj = { suppress: true, channel_id: voiceChannel.id };
       obj3 = HTTPUtils;
       const patchResult = patch(request);
-      patchResult.catch(f91945);
+      patchResult.catch(f91938);
       const HTTP2 = HTTPUtils.HTTP;
       const request1 = { url: React4.UPDATE_VOICE_STATE(guildId, user.id), body: obj2, rejectWithError: obj6.rejectWithMigratedError() };
       const patch2 = HTTP2.patch;

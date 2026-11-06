@@ -1,10 +1,10 @@
-// Module ID: 18200
-// Function ID: 18201
+// Module ID: 18195
+// Function ID: 18196
 // Name: useFavoritesCleanup
-// Dependencies: [5, 32, 19, 4863, 4946, 6842, 4866, 18201, 504, 10844, 10831, 2]
+// Dependencies: [5, 32, 19, 4863, 4946, 6842, 4866, 18196, 504, 10844, 10831, 2]
 // Exports: default
 
-// Module 18200 (useFavoritesCleanup)
+// Module 18195 (useFavoritesCleanup)
 import FavoritesCleanup from "FavoritesCleanup" /* 10844 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

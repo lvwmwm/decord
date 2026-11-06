@@ -1,10 +1,10 @@
-// Module ID: 18372
-// Function ID: 18373
+// Module ID: 18367
+// Function ID: 18368
 // Name: useHomeDrawerToggleAccessibilityAction
 // Dependencies: [19, 1113, 5198, 5023, 2]
 // Exports: default
 
-// Module 18372 (useHomeDrawerToggleAccessibilityAction)
+// Module 18367 (useHomeDrawerToggleAccessibilityAction)
 import intl2 from "intl" /* 1113 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

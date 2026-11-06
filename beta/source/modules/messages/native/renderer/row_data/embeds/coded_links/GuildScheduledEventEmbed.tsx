@@ -1,10 +1,10 @@
-// Module ID: 15117
-// Function ID: 15118
+// Module ID: 15112
+// Function ID: 15113
 // Name: GuildScheduledEventEmbed
-// Dependencies: [5, 32, 17, 6855, 4881, 4863, 4885, 4956, 1383, 10117, 4869, 7879, 5754, 8394, 8396, 8982, 8977, 8969, 9211, 1113, 8399, 9161, 8381, 575, 15118, 8972, 5652, 9084, 8966, 15119, 8967, 4877, 8973, 8974, 2]
+// Dependencies: [5, 32, 17, 6855, 4881, 4863, 4885, 4956, 1383, 10117, 4869, 7879, 5754, 8394, 8396, 8982, 8977, 8969, 9211, 1113, 8399, 9161, 8381, 575, 15113, 8972, 5652, 9084, 8966, 15114, 8967, 4877, 8973, 8974, 2]
 // Exports: createGuildScheduledEventInviteEmbed, createGuildScheduledEventLinkEmbed
 
-// Module 15117 (GuildScheduledEventEmbed)
+// Module 15112 (GuildScheduledEventEmbed)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4869 */;
@@ -24,7 +24,7 @@ import useCanInviteForGuildEvent from "useCanInviteForGuildEvent" /* 8982 */;
 import GuildEventUtils from "GuildEventUtils" /* 9084 */;
 import GuildScheduledEventHeaderUtils from "GuildScheduledEventHeaderUtils" /* 9211 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10117 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15119 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15114 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GuildScheduledEventStore_mod from "GuildScheduledEventStore" /* 6855 */;
@@ -135,7 +135,7 @@ function createGuildScheduledEventEmbed(type) {
     } else if (result1) {
       acceptLabelActiveBackgroundColor = colors.backgroundColor;
       const tmp7Result14 = renderer_EmbedUtils;
-      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(15118));
+      assetUriForEmbed3 = tmp7Result14.getAssetUriForEmbed(tmp(15113));
       acceptLabelGreenColor = colors.acceptLabelDisabledTextColor;
       tmp22 = assetUriForEmbed2;
       stringResult2 = stringResult;

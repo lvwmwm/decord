@@ -308,7 +308,7 @@ export function NativeGiftContextProvider(basePurchaseAnalytics) {
     let closure_10 = tmp5;
     setCustomGiftMessage = tmp9;
     let closure_12 = tmp26;
-    let obj6 = { orderId: "a", planId: -3107209422843131000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000, planSelection: obj7, giftInfo: 0.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000197556224931321 };
+    let obj6 = { orderId: "a", planId: "function pnpm_createBottomSheetScrollableComponentTsx1(){const{preserveScrollMomentum,SCROLLABLE_DECELERATION_RATE_MAPPER,animatedScrollableState,showsVerticalScrollIndicator,SCROLLABLE_STATE}=this.__closure;return{...(preserveScrollMomentum?{}:{decelerationRate:SCROLLABLE_DECELERATION_RATE_MAPPER[animatedScrollableState.value]}),showsVerticalScrollIndicator:showsVerticalScrollIndicator?animatedScrollableState.value===SCROLLABLE_STATE.UNLOCKED:showsVerticalScrollIndicator};}", planSelection: obj7, giftInfo: "focusHook" };
     obj7 = { premiumType, planInterval: first1 };
     constants = obj.useRef(obj6);
     let closure_14 = obj.useRef(false);

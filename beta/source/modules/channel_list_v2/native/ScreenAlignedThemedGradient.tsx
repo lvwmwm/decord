@@ -1,10 +1,10 @@
-// Module ID: 18109
-// Function ID: 18110
+// Module ID: 18104
+// Function ID: 18105
 // Name: ScreenAlignedThemedGradient
-// Dependencies: [17, 21, 5014, 12411, 9823, 10736, 18080, 1491, 5095, 2]
+// Dependencies: [17, 21, 5014, 12411, 9823, 10736, 18075, 1491, 5095, 2]
 // Exports: ScreenAlignedThemedGradientSliding, default
 
-// Module 18109 (ScreenAlignedThemedGradient)
+// Module 18104 (ScreenAlignedThemedGradient)
 import Fragment from "Fragment" /* 21 */;
 import useActiveTheme from "useActiveTheme" /* 9823 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10736 */;

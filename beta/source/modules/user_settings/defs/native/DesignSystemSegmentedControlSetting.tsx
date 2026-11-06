@@ -1,9 +1,9 @@
-// Module ID: 17784
-// Function ID: 17785
+// Module ID: 17779
+// Function ID: 17780
 // Name: DesignSystemSegmentedControlSetting
-// Dependencies: [8432, 1072, 11540, 17785, 2]
+// Dependencies: [8432, 1072, 11540, 17780, 2]
 
-// Module 17784 (DesignSystemSegmentedControlSetting)
+// Module 17779 (DesignSystemSegmentedControlSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;

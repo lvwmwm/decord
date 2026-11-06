@@ -1,10 +1,10 @@
-// Module ID: 19149
-// Function ID: 19150
+// Module ID: 19144
+// Function ID: 19145
 // Name: QuestProgressBottomSheet
-// Dependencies: [5, 19, 17, 6846, 7846, 6781, 5657, 21, 5014, 575, 504, 14699, 6784, 8028, 9207, 1113, 8773, 7330, 7868, 11842, 9681, 14696, 17101, 10927, 5258, 9678, 8931, 9705, 5272, 5717, 5587, 1092, 14692, 9164, 17129, 6027, 5624, 5634, 17096, 2]
+// Dependencies: [5, 19, 17, 6846, 7846, 6781, 5657, 21, 5014, 575, 504, 14699, 6784, 8028, 9207, 1113, 8773, 7330, 7868, 11842, 9681, 14696, 17096, 10927, 5258, 9678, 8931, 9705, 5272, 5717, 5587, 1092, 14692, 9164, 17124, 6027, 5624, 5634, 17091, 2]
 // Exports: default
 
-// Module 19149 (QuestProgressBottomSheet)
+// Module 19144 (QuestProgressBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
@@ -100,7 +100,7 @@ function QuestProgressBottomSheet(quest) {
   }
   const tmpResult5 = tmp(9681);
   const isQuestAccessSuspended = tmpResult5.useIsQuestAccessSuspended();
-  const tmpResult6 = tmp(17101);
+  const tmpResult6 = tmp(17096);
   let obj5 = { quest, questContent: tmp(6784).QuestContent.RUNNING_ACTIVITY, sourceQuestContent: tmp(6784).QuestContent.RUNNING_ACTIVITY };
   const questRewardClaimHandler = tmpResult6.useQuestRewardClaimHandler(obj5);
   ({ isClaiming, claim } = questRewardClaimHandler);
@@ -222,7 +222,7 @@ function QuestProgressBottomSheet(quest) {
   intl2 = tmp(1113).intl;
   items5 = [closure_11(IconButton, obj12), ];
   const obj13 = { quest, showShareLink: true, location: tmp12.QUEST_ACTIVITY_BOTTOM_SHEET, sourceQuestContent: tmp(6784).QuestContent.RUNNING_ACTIVITY, children: contextMenuButton };
-  const tmp7Result5 = claim(17129);
+  const tmp7Result5 = claim(17124);
   items5[1] = closure_11(tmp7Result5, obj13);
   items3[3] = closure_12(closure_5, obj11);
   const items6 = [closure_12(closure_5, obj6), ];
@@ -259,7 +259,7 @@ function QuestProgressBottomSheet(quest) {
   tmp7Result6 = undefined;
   if (isQuestAccessSuspended) {
     if (tmp15) {
-      tmp7Result6 = tmp7(17096);
+      tmp7Result6 = tmp7(17091);
     }
   }
   const obj19 = { handleDisabled: true, startExpanded: true, children: items6 };

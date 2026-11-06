@@ -1,9 +1,9 @@
-// Module ID: 19348
-// Function ID: 19349
+// Module ID: 19343
+// Function ID: 19344
 // Name: VoicePanelControlsAppLauncher
 // Dependencies: [19, 4863, 11221, 1072, 21, 5014, 9821, 11222, 8841, 504, 38, 13828, 1108, 11501, 11502, 5095, 12409, 13829, 1113, 2]
 
-// Module 19348 (VoicePanelControlsAppLauncher)
+// Module 19343 (VoicePanelControlsAppLauncher)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import react_mod from "react" /* 19 */;

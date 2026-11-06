@@ -1,10 +1,10 @@
-// Module ID: 18984
-// Function ID: 18985
+// Module ID: 18979
+// Function ID: 18980
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 4863, 6061, 1383, 21, 5014, 575, 1625, 504, 14178, 18985, 18987, 14206, 14013, 2]
+// Dependencies: [32, 19, 17, 4863, 6061, 1383, 21, 5014, 575, 1625, 504, 14178, 18980, 18982, 14206, 14013, 2]
 // Exports: default
 
-// Module 18984 (RestrictedMessageRequestPreview)
+// Module 18979 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 575 */;
 import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 14178 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -153,9 +153,9 @@ export default function RestrictedMessageRequestPreview(channelId) {
       }
       items8[1] = scrollContentEmpty;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items9 = [closure_10(tmp2(18985), obj6), , ];
+      items9 = [closure_10(tmp2(18980), obj6), , ];
       const obj7 = { channelId };
-      items9[1] = closure_10(ref(18987), obj7);
+      items9[1] = closure_10(ref(18982), obj7);
       let tmp19Result = null;
       if (isEmpty) {
         const obj8 = { style: tmp.emptyChat };

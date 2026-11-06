@@ -264,7 +264,7 @@ const result = size.fileFinishedImporting("modules/premium/gifting/native/GiftIn
 
 export default function GiftIntentGifModal(arg0) {
   let onDismiss;
-  const f104099 = () => {
+  const f104092 = () => {
     let channelId;
     let giftIntentType;
     let intl;
@@ -293,7 +293,7 @@ export default function GiftIntentGifModal(arg0) {
       onDismiss();
     }
   }, items);
-  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f104099) };
-  require("react")(f104099);
+  obj = { initialRouteName: constants.GIFT_INTENT_GIF, screens: require("react")(f104092) };
+  require("react")(f104092);
   return closure_10(require("Navigator").Navigator, obj);
 };

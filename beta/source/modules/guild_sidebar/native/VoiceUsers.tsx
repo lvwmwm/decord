@@ -1,10 +1,10 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18174
+// Function ID: 18175
 // Name: VoiceUsers
-// Dependencies: [19, 17, 4926, 21, 5014, 575, 11049, 9822, 9235, 504, 18180, 11047, 1113, 14104, 5624, 18184, 7482, 18187, 2]
+// Dependencies: [19, 17, 4926, 21, 5014, 575, 11049, 9822, 9235, 504, 18175, 11047, 1113, 14104, 5624, 18179, 7482, 18182, 2]
 // Exports: default, getAudienceItemHeight
 
-// Module 18179 (VoiceUsers)
+// Module 18174 (VoiceUsers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -106,7 +106,7 @@ let closure_12 = react.memo(function VoiceStateUserItem(voiceState) {
   }
   const obj3 = { style: userCollapsedOverlap, children: closure_6(tmpResult, obj6, user.id) };
   obj6 = { user, member, mute: null, deaf: null, selfVideo: null, selfMute: null, selfDeaf: null, suppress: null, collapsed, sessionId: result.sessionId, channel, isGuest };
-  tmpResult = tmp(18180);
+  tmpResult = tmp(18175);
   if (member == null) {
     member = storeMember;
   }

@@ -1,9 +1,9 @@
-// Module ID: 17816
-// Function ID: 17817
+// Module ID: 17811
+// Function ID: 17812
 // Name: DesignSystemFormPrimitivesSetting
-// Dependencies: [8432, 1072, 11540, 17817, 2]
+// Dependencies: [8432, 1072, 11540, 17812, 2]
 
-// Module 17816 (DesignSystemFormPrimitivesSetting)
+// Module 17811 (DesignSystemFormPrimitivesSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;

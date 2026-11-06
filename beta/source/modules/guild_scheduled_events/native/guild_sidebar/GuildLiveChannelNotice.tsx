@@ -1,10 +1,10 @@
-// Module ID: 18248
-// Function ID: 18249
+// Module ID: 18243
+// Function ID: 18244
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 6713, 4868, 6714, 4946, 5767, 4869, 1083, 21, 575, 1187, 5754, 11056, 8571, 11047, 1375, 5640, 5014, 5624, 14104, 11049, 6734, 1888, 7939, 7950, 5253, 9822, 5634, 5021, 5652, 504, 1113, 8603, 9115, 8972, 9007, 8962, 6765, 6759, 6712, 9090, 8669, 18247, 10802, 6977, 2]
+// Dependencies: [19, 17, 6713, 4868, 6714, 4946, 5767, 4869, 1083, 21, 575, 1187, 5754, 11056, 8571, 11047, 1375, 5640, 5014, 5624, 14104, 11049, 6734, 1888, 7939, 7950, 5253, 9822, 5634, 5021, 5652, 504, 1113, 8603, 9115, 8972, 9007, 8962, 6765, 6759, 6712, 9090, 8669, 18242, 10802, 6977, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 18248 (GuildLiveChannelNotice)
+// Module 18243 (GuildLiveChannelNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -448,7 +448,7 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
   const style = guild.style;
   const tmp2 = activeEventOrStageInstanceChannel;
   const tmp = closure_29();
-  let obj = activeEventOrStageInstanceChannel(18247);
+  let obj = activeEventOrStageInstanceChannel(18242);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
   let obj2 = activeEventOrStageInstanceChannel(9090);
   const guildActiveEvent = obj2.useGuildActiveEvent(guild.id);

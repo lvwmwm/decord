@@ -1,9 +1,9 @@
-// Module ID: 18449
-// Function ID: 18450
+// Module ID: 18444
+// Function ID: 18445
 // Name: ManageAccountsModal
-// Dependencies: [32, 5, 19, 17, 502, 5069, 1383, 13977, 13978, 18450, 1072, 21, 9856, 5014, 575, 504, 1187, 5959, 1113, 13981, 6980, 17305, 17994, 5095, 5254, 6732, 1252, 7292, 18451, 17995, 13987, 18452, 6987, 8177, 11489, 7169, 9812, 10144, 18020, 6740, 7108, 18019, 2]
+// Dependencies: [32, 5, 19, 17, 502, 5069, 1383, 13977, 13978, 18445, 1072, 21, 9856, 5014, 575, 504, 1187, 5959, 1113, 13981, 6980, 17300, 17989, 5095, 5254, 6732, 1252, 7292, 18446, 17990, 13987, 18447, 6987, 8177, 11489, 7169, 9812, 10144, 18015, 6740, 7108, 18014, 2]
 
-// Module 18449 (ManageAccountsModal)
+// Module 18444 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import HeaderShared from "HeaderShared" /* 9812 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10144 */;
 import MultiAccountStore from "MultiAccountStore" /* 13977 */;
 import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13981 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 18450 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 18445 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -153,7 +153,7 @@ function RemoveMultiAccountUserButton(user) {
     const PressableOpacity = tmp(6980).PressableOpacity;
     intl = tmp(1113).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(17305).CircleMinusIcon;
+    CircleMinusIcon = tmp(17300).CircleMinusIcon;
     return closure_18(PressableOpacity, obj3);
   }
 }

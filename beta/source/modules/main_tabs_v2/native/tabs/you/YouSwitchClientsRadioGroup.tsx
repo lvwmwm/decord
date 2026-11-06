@@ -1,14 +1,14 @@
-// Module ID: 18454
-// Function ID: 18455
+// Module ID: 18449
+// Function ID: 18450
 // Name: YouSwitchClientsRadioGroup
-// Dependencies: [32, 19, 21, 18455, 18456, 5258, 7058, 7061, 10685, 2]
+// Dependencies: [32, 19, 21, 18450, 18451, 5258, 7058, 7061, 10685, 2]
 // Exports: default
 
-// Module 18454 (YouSwitchClientsRadioGroup)
+// Module 18449 (YouSwitchClientsRadioGroup)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
-import DiscordVariants from "DiscordVariants" /* 18455 */;
-import DiscordVariantTypes from "DiscordVariantTypes" /* 18456 */;
+import DiscordVariants from "DiscordVariants" /* 18450 */;
+import DiscordVariantTypes from "DiscordVariantTypes" /* 18451 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

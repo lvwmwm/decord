@@ -1,10 +1,10 @@
-// Module ID: 18476
-// Function ID: 18477
+// Module ID: 18471
+// Function ID: 18472
 // Name: Notifications
-// Dependencies: [19, 17, 11514, 4860, 21, 5014, 575, 5199, 7112, 18477, 7292, 6980, 1113, 18478, 5624, 18479, 10192, 18480, 7326, 7351, 7654, 7004, 5611, 18484, 18485, 13335, 5194, 1625, 18071, 10736, 5080, 2]
+// Dependencies: [19, 17, 11514, 4860, 21, 5014, 575, 5199, 7112, 18472, 7292, 6980, 1113, 18473, 5624, 18474, 10192, 18475, 7326, 7351, 7654, 7004, 5611, 18479, 18480, 13335, 5194, 1625, 18066, 10736, 5080, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 18476 (Notifications)
+// Module 18471 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
@@ -20,12 +20,12 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10736 */;
 import MainTabsConstants from "MainTabsConstants" /* 11514 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 13335 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18071 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18477 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18479 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18480 */;
-import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18484 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 18485 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18066 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18472 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18474 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18475 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18479 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 18480 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;

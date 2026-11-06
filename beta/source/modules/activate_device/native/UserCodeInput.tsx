@@ -1,18 +1,18 @@
-// Module ID: 15709
-// Function ID: 15710
+// Module ID: 15704
+// Function ID: 15705
 // Name: UserCodeInput
-// Dependencies: [32, 19, 17, 15710, 21, 5014, 15711, 15712, 5624, 1113, 7082, 5634, 2]
+// Dependencies: [32, 19, 17, 15705, 21, 5014, 15706, 15707, 5624, 1113, 7082, 5634, 2]
 // Exports: UserCodeInput
 
-// Module 15709 (UserCodeInput)
+// Module 15704 (UserCodeInput)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import components_Button_Button from "components/Button/Button" /* 5634 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7082 */;
-import OAuthConstants2 from "OAuthConstants" /* 15710 */;
-import useUserCodeSubmit from "useUserCodeSubmit" /* 15711 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15712 */;
+import OAuthConstants2 from "OAuthConstants" /* 15705 */;
+import useUserCodeSubmit from "useUserCodeSubmit" /* 15706 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15707 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

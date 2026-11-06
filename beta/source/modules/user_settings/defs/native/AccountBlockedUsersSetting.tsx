@@ -1,9 +1,9 @@
-// Module ID: 16701
-// Function ID: 16702
+// Module ID: 16696
+// Function ID: 16697
 // Name: AccountBlockedUsersSetting
-// Dependencies: [4956, 8432, 1072, 504, 1113, 11540, 9883, 16702, 2]
+// Dependencies: [4956, 8432, 1072, 504, 1113, 11540, 9883, 16697, 2]
 
-// Module 16701 (AccountBlockedUsersSetting)
+// Module 16696 (AccountBlockedUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;

@@ -1,28 +1,19 @@
 // Module ID: 15908
 // Function ID: 15909
-// Dependencies: [15900]
+// Dependencies: [15894]
 
 // Module 15908
-import _mod15900 from "module_15900" /* 15900 */;
+import _mod15894 from "module_15894" /* 15894 */;
 
 
-export default function(version, pre, major2, arg3, arg4) {
-  let tmp = arg4;
-  let tmp2 = arg3;
-  if (typeof major2 === "string") {
-    tmp = arg3;
-    tmp2 = major2;
-  }
-  try {
-    const tmp7 = _mod15900;
-    if (version instanceof _mod15900) {
-      version = version.version;
+export default (arg0, arg1) => {
+  const tmp = _mod15894(arg0, arg1);
+  let prerelease = null;
+  if (tmp) {
+    prerelease = null;
+    if (tmp.prerelease.length) {
+      prerelease = tmp.prerelease;
     }
-    const self = this;
-    const self2 = this;
-    const tmp72 = new tmp7(version, major2);
-    return tmp72.inc(pre, tmp2, tmp).version;
-  } catch (err) {
-    return null;
   }
+  return prerelease;
 };

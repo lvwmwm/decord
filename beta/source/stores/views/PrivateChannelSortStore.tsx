@@ -84,7 +84,7 @@ const secondaryIndexMap = new SecondaryIndexMap.SecondaryIndexMap(function index
 let values = [];
 let values2 = [];
 let closure_18 = [];
-const f41656 = () => {
+const f41651 = () => {
 
 };
 const Store = get_initializedDefault.Store;
@@ -95,7 +95,7 @@ class PrivateChannelSortStore extends Store {
     this.syncWith(items, handleConnectionOpen);
   }
   getPrivateChannelIds() {
-    if (typeof f41656 === "function") {
+    if (typeof f41651 === "function") {
       values = secondaryIndexMap.values(constants.FAVORITE);
       values2 = secondaryIndexMap.values(constants.DEFAULT);
       const tmp4 = values === values && values2 === values2;

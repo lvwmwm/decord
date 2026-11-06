@@ -1,10 +1,10 @@
-// Module ID: 16689
-// Function ID: 16690
+// Module ID: 16684
+// Function ID: 16685
 // Name: useAnnounceError
 // Dependencies: [19, 5023, 2]
 // Exports: useAnnounceError
 
-// Module 16689 (useAnnounceError)
+// Module 16684 (useAnnounceError)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5023 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

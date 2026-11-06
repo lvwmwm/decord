@@ -1,10 +1,10 @@
-// Module ID: 18828
-// Function ID: 18829
+// Module ID: 18823
+// Function ID: 18824
 // Name: FriendsNavigator
-// Dependencies: [19, 17, 21, 9856, 5014, 575, 9815, 9812, 14171, 1113, 7654, 7169, 18829, 18835, 18838, 18839, 18840, 18851, 18852, 18853, 18855, 18858, 18859, 5194, 1625, 7112, 4971, 5080, 2]
+// Dependencies: [19, 17, 21, 9856, 5014, 575, 9815, 9812, 14171, 1113, 7654, 7169, 18824, 18830, 18833, 18834, 18835, 18846, 18847, 18848, 18850, 18853, 18854, 5194, 1625, 7112, 4971, 5080, 2]
 // Exports: default
 
-// Module 18828 (FriendsNavigator)
+// Module 18823 (FriendsNavigator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;

@@ -1,10 +1,10 @@
-// Module ID: 15790
-// Function ID: 15791
+// Module ID: 15785
+// Function ID: 15786
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [32, 19, 17, 9199, 4885, 9133, 1083, 21, 5014, 575, 9120, 9128, 504, 11651, 9150, 11658, 11661, 1113, 2404, 7366, 6027, 5624, 7218, 15791, 2]
+// Dependencies: [32, 19, 17, 9199, 4885, 9133, 1083, 21, 5014, 575, 9120, 9128, 504, 11651, 9150, 11658, 11661, 1113, 2404, 7366, 6027, 5624, 7218, 15786, 2]
 // Exports: default
 
-// Module 15790 (GameOrganizationInviteActionSheet)
+// Module 15785 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -185,7 +185,7 @@ export default function GameOrganizationInviteActionSheet(guildId) {
     tmp17Result = tmp17(Loading, {});
   } else {
     const obj8 = { users: stateFromStoresArray, getSendState: callback1, onInvite: callback2 };
-    tmp17Result = tmp17(tmp15(15791), obj8);
+    tmp17Result = tmp17(tmp15(15786), obj8);
   }
   return closure_10(ActionSheet, obj2);
 };

@@ -1,10 +1,10 @@
-// Module ID: 15028
-// Function ID: 15029
+// Module ID: 15023
+// Function ID: 15024
 // Name: DynamicBadgeTooltip
 // Dependencies: [32, 19, 21, 1113, 9955, 6980, 2]
 // Exports: DynamicBadgeTooltip
 
-// Module 15028 (DynamicBadgeTooltip)
+// Module 15023 (DynamicBadgeTooltip)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import Pressables from "Pressables" /* 6980 */;

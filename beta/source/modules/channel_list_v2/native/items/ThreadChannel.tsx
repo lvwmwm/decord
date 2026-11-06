@@ -1,10 +1,10 @@
-// Module ID: 18171
-// Function ID: 18172
+// Module ID: 18166
+// Function ID: 18167
 // Name: ThreadChannel
-// Dependencies: [19, 17, 4948, 4863, 4946, 6842, 4917, 1383, 5679, 5767, 11046, 1072, 6776, 1112, 21, 5014, 575, 8031, 5642, 504, 13842, 5756, 11133, 18172, 18174, 9085, 18177, 1187, 18179, 18188, 6046, 2]
+// Dependencies: [19, 17, 4948, 4863, 4946, 6842, 4917, 1383, 5679, 5767, 11046, 1072, 6776, 1112, 21, 5014, 575, 8031, 5642, 504, 13842, 5756, 11133, 18167, 18169, 9085, 18172, 1187, 18174, 18183, 6046, 2]
 // Exports: default
 
-// Module 18171 (ThreadChannel)
+// Module 18166 (ThreadChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -13,7 +13,7 @@ import transitionToChannel from "transitionToChannel" /* 5756 */;
 import ReadStateConstants from "ReadStateConstants" /* 6776 */;
 import inlineStyles from "inlineStyles" /* 8031 */;
 import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 11133 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 18172 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 18167 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4948 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

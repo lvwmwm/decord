@@ -1,17 +1,17 @@
-// Module ID: 18160
-// Function ID: 18161
+// Module ID: 18155
+// Function ID: 18156
 // Name: MessagesFastestList
-// Dependencies: [19, 21, 5014, 575, 18102, 18088, 18155, 18099, 18098, 18156, 18117, 18154, 18157, 7232, 7230, 7223, 2]
+// Dependencies: [19, 21, 5014, 575, 18097, 18083, 18150, 18094, 18093, 18151, 18112, 18149, 18152, 7232, 7230, 7223, 2]
 
-// Module 18160 (MessagesFastestList)
+// Module 18155 (MessagesFastestList)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7230 */;
 import FastestListItemTypeDefault from "FastestListItemType" /* 7232 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 18088 */;
-import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18098 */;
-import useMessagesData from "useMessagesData" /* 18102 */;
-import MessagesItemSeparator from "MessagesItemSeparator" /* 18155 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 18083 */;
+import MessagesItemPlaceholderDefault from "MessagesItemPlaceholder" /* 18093 */;
+import useMessagesData from "useMessagesData" /* 18097 */;
+import MessagesItemSeparator from "MessagesItemSeparator" /* 18150 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -78,7 +78,7 @@ const memoResult = react.memo(function MessagesFastestList(listItemSizes) {
       return jsx(MessagesItemSeparatorDefault, {});
     } else if (useMessagesData.MessagesDataSections.SuggestedFriends === arg0) {
       const obj4 = { suggestedFriend: friendSuggestions[row], onAddFriendSuggestions: setAddedFriendSuggestions };
-      const MessagesItemSuggestedFriendFast = tmp(18099).MessagesItemSuggestedFriendFast;
+      const MessagesItemSuggestedFriendFast = tmp(18094).MessagesItemSuggestedFriendFast;
       const merged = Object.assign(obj4);
       return <MessagesItemSuggestedFriendFast height={listItemSuggestedFriendHeight} />;
     } else if (useMessagesData.MessagesDataSections.Placeholders === arg0) {
@@ -195,7 +195,7 @@ const memoResult = react.memo(function MessagesFastestList(listItemSizes) {
           const tmp5 = require;
           if (useMessagesData.MessagesDataSections.FavoriteChannels === arg1) {
             return channelFavorites[arg2].channelId;
-          } else if (tmp5(18102).MessagesDataSections.Channels === arg1) {
+          } else if (tmp5(18097).MessagesDataSections.Channels === arg1) {
             return channels[arg2].channelId;
           }
         }

@@ -58,7 +58,7 @@ export function useGuildAutomodProfileQuarantineErrors(id) {
     if (id == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "find", bio: "T" };
+    const obj = { nick: "marginTop", bio: "cix" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

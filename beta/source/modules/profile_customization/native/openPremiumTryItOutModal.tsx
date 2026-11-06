@@ -1,10 +1,10 @@
-// Module ID: 16550
-// Function ID: 16551
+// Module ID: 16545
+// Function ID: 16546
 // Name: openPremiumTryItOutModal
-// Dependencies: [1383, 8754, 8762, 6744, 16551, 1994, 2]
+// Dependencies: [1383, 8754, 8762, 6744, 16546, 1994, 2]
 // Exports: openPremiumTryItOutModal
 
-// Module 16550 (openPremiumTryItOutModal)
+// Module 16545 (openPremiumTryItOutModal)
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import Constants from "Constants" /* 8754 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8762 */;
@@ -29,5 +29,5 @@ export function openPremiumTryItOutModal(avatar) {
   const result = trackUserProfileEditAction(obj);
   const obj2 = ModalActionCreatorsDefault;
   const obj3 = { initialTarget: avatar };
-  obj2.pushLazy(asyncRequire(16551, tmp2.paths), obj3, undefined, { presentation: "fullScreenModal", fullScreenGestureEnabled: true });
+  obj2.pushLazy(asyncRequire(16546, tmp2.paths), obj3, undefined, { presentation: "fullScreenModal", fullScreenGestureEnabled: true });
 }

@@ -1,10 +1,10 @@
-// Module ID: 16806
-// Function ID: 16807
+// Module ID: 16801
+// Function ID: 16802
 // Name: FamilyCenterActivityPurchaseRowUtils
 // Dependencies: [7725, 7726, 1385, 1987, 1113, 2538, 1409, 2]
 // Exports: getAvatarDecorationPreviewUrl, getProfileEffectPreviewUrl, getPurchaseDisplayInfo, isGuildBoostSubscription
 
-// Module 16806 (FamilyCenterActivityPurchaseRowUtils)
+// Module 16801 (FamilyCenterActivityPurchaseRowUtils)
 import AvatarUtils from "AvatarUtils" /* 1409 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1987 */;
 import _modDef2538 from "module_2538" /* 2538 */;

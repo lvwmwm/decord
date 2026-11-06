@@ -1,9 +1,9 @@
-// Module ID: 20147
-// Function ID: 20148
+// Module ID: 20142
+// Function ID: 20143
 // Name: DispatcherBridge
 // Dependencies: [5627, 6797, 6838, 14909, 502, 4920, 4885, 1072, 3, 4891, 4889, 1252, 572, 1993, 1242, 2]
 
-// Module 20147 (DispatcherBridge)
+// Module 20142 (DispatcherBridge)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1072 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;

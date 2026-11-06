@@ -1,9 +1,9 @@
-// Module ID: 17794
-// Function ID: 17795
+// Module ID: 17789
+// Function ID: 17790
 // Name: DesignSystemsTextInputSetting
-// Dependencies: [8432, 1072, 11540, 17795, 2]
+// Dependencies: [8432, 1072, 11540, 17790, 2]
 
-// Module 17794 (DesignSystemsTextInputSetting)
+// Module 17789 (DesignSystemsTextInputSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;

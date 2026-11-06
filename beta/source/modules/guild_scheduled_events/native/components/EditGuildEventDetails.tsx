@@ -50,7 +50,7 @@ export default function EditGuildEventDetails(guildEvent) {
   let name;
   let scheduledStartTime;
   let tmp12;
-  const f93982 = () => {
+  const f93975 = () => {
     const obj = ScheduleUtils;
     return obj.recurrenceRuleToOption(_modDef2042(scheduledStartTime), recurrenceRule);
   };
@@ -80,8 +80,8 @@ export default function EditGuildEventDetails(guildEvent) {
     }
     return addResult;
   }, items1);
-  [c7, c8] = recurrenceRule(memo.useState(f93982), 2);
-  const tmp4 = recurrenceRule(memo.useState(f93982), 2);
+  [c7, c8] = recurrenceRule(memo.useState(f93975), 2);
+  const tmp4 = recurrenceRule(memo.useState(f93975), 2);
   const memo2 = memo.useMemo(() => onChange(scheduledEndTime[7])(), []);
   const items2 = [memo];
   const memo3 = memo.useMemo(() => {

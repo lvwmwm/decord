@@ -1,10 +1,10 @@
-// Module ID: 17821
-// Function ID: 17822
+// Module ID: 17816
+// Function ID: 17817
 // Name: UserSettingsDesignSystemAILoader
 // Dependencies: [19, 17, 21, 5014, 5624, 6027, 6977, 12244, 2]
 // Exports: default
 
-// Module 17821 (UserSettingsDesignSystemAILoader)
+// Module 17816 (UserSettingsDesignSystemAILoader)
 import Text_Text from "Text/Text" /* 5624 */;
 import Stack_Stack from "Stack/Stack" /* 6027 */;
 import Card_Card from "Card/Card" /* 6977 */;

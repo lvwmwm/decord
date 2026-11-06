@@ -1,10 +1,10 @@
-// Module ID: 16573
-// Function ID: 16574
+// Module ID: 16568
+// Function ID: 16569
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 4926, 7772, 1072, 1385, 21, 2047, 7326, 7351, 16458, 5258, 16446, 1994, 8737, 1113, 8735, 16457, 16457, 9785, 16469, 16462, 5607, 16553, 16493, 575, 5624, 8814, 8733, 7101, 16463, 11405, 16568, 504, 8757, 11394, 8815, 8740, 15789, 16574, 8800, 8811, 5080, 16575, 11395, 11396, 11413, 16472, 5068, 16473, 16495, 16499, 16500, 16504, 16508, 9905, 9906, 2]
+// Dependencies: [109, 19, 17, 4926, 7772, 1072, 1385, 21, 2047, 7326, 7351, 16453, 5258, 16441, 1994, 8737, 1113, 8735, 16452, 16452, 9785, 16464, 16457, 5607, 16548, 16488, 575, 5624, 8814, 8733, 7101, 16458, 11405, 16563, 504, 8757, 11394, 8815, 8740, 15784, 16569, 8800, 8811, 5080, 16570, 11395, 11396, 11413, 16467, 5068, 16468, 16490, 16494, 16495, 16499, 16503, 9905, 9906, 2]
 // Exports: default
 
-// Module 16573 (GuildProfileEditForm)
+// Module 16568 (GuildProfileEditForm)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1385 */;
@@ -18,11 +18,11 @@ import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8737 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 9785 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9905 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9906 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16458 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16462 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16469 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16493 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16553 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 16453 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 16457 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 16464 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 16488 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 16548 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -102,7 +102,7 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(16446, dependencyMap.paths);
+        const tmp14 = asyncRequire(16441, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;

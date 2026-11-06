@@ -1,9 +1,9 @@
-// Module ID: 18811
-// Function ID: 18812
+// Module ID: 18806
+// Function ID: 18807
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4947, 4948, 4863, 6775, 9825, 10137, 1072, 9826, 21, 5014, 13928, 575, 5596, 504, 1497, 8028, 1113, 10993, 8399, 13847, 13907, 6734, 7220, 10802, 8199, 7562, 18812, 5080, 5095, 5254, 18685, 5257, 11647, 6980, 7002, 2]
+// Dependencies: [19, 17, 4947, 4948, 4863, 6775, 9825, 10137, 1072, 9826, 21, 5014, 13928, 575, 5596, 504, 1497, 8028, 1113, 10993, 8399, 13847, 13907, 6734, 7220, 10802, 8199, 7562, 18807, 5080, 5095, 5254, 18680, 5257, 11647, 6980, 7002, 2]
 
-// Module 18811 (ChannelDetailsNavigationBar)
+// Module 18806 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -188,7 +188,7 @@ function SearchBar(cleanUp) {
   fn.__workletHash = 1270940013897;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  const obj3 = { style: items, children: closure_15(cleanUp(18685), obj4) };
+  const obj3 = { style: items, children: closure_15(cleanUp(18680), obj4) };
   items = [tmp.searchHeader, animatedStyle];
   View = cleanUp(5095).View;
   obj4 = { ref, channelId: channel.id, guildId: channel.guild_id, showBackButton: true };

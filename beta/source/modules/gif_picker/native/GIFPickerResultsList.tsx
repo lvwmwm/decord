@@ -48,7 +48,7 @@ export default function GIFPickerResultsList(columnWidth) {
   let selectedGifSrc;
   let tmp12;
   let tmp6;
-  const f125797 = () => {
+  const f125788 = () => {
     set = new Set();
     return set;
   };
@@ -76,8 +76,8 @@ export default function GIFPickerResultsList(columnWidth) {
     }
     return src;
   }, []);
-  [tmp6, c0] = callback(react.useState(f125797), 2);
-  const tmp5 = callback(react.useState(f125797), 2);
+  [tmp6, c0] = callback(react.useState(f125788), 2);
+  const tmp5 = callback(react.useState(f125788), 2);
   react = tmp6;
   const items1 = [tmp6, selectedGifSrc];
   const callback2 = react.useCallback((changed) => {

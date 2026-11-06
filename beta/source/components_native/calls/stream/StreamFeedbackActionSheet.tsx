@@ -1,18 +1,18 @@
-// Module ID: 19460
-// Function ID: 19461
+// Module ID: 19455
+// Function ID: 19456
 // Name: StreamFeedbackActionSheet
-// Dependencies: [19, 502, 1072, 10158, 21, 7882, 504, 1113, 2804, 10161, 19461, 1252, 19346, 19462, 5258, 19463, 1994, 5711, 2]
+// Dependencies: [19, 502, 1072, 10158, 21, 7882, 504, 1113, 2804, 10161, 19456, 1252, 19341, 19457, 5258, 19458, 1994, 5711, 2]
 // Exports: default
 
-// Module 19460 (StreamFeedbackActionSheet)
+// Module 19455 (StreamFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants2 from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ToastUtils from "ToastUtils" /* 5711 */;
 import FeedbackUtils from "FeedbackUtils" /* 10161 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 19346 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 19462 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 19341 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 19457 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Constants from "Constants" /* 10158 */;
@@ -140,7 +140,7 @@ export default function StreamFeedbackActionSheet(stream) {
             const obj7 = { mediaSessionId: null, rtcConnectionId: null };
             ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp9);
             const tmp22Result = tmp22(5258);
-            tmp22Result.openLazy(asyncRequire(19463, dependencyMap.paths), "UploadLogs", obj7);
+            tmp22Result.openLazy(asyncRequire(19458, dependencyMap.paths), "UploadLogs", obj7);
           }
         }
         const obj4 = ToastUtils;
@@ -148,7 +148,7 @@ export default function StreamFeedbackActionSheet(stream) {
       }
     }
   };
-  const tmp10Result = tmp10(19461);
+  const tmp10Result = tmp10(19456);
   const tmp11 = jsx;
   if (stateFromStores) {
     stringResult2 = stringResult1;

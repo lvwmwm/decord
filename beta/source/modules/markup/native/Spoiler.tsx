@@ -127,7 +127,7 @@ class Spoiler extends PureComponent {
       const Children1 = tmp4.Children;
       let mapped = Children1.map(children, (type) => {
         let validElement;
-        const f98700 = (props) => {
+        const f98693 = (props) => {
           let Children;
           let cloneElement;
           let items;
@@ -139,7 +139,7 @@ class Spoiler extends PureComponent {
             if (Array.isArray(style)) {
               flattenResult = closure_2_5.flatten(style);
             }
-            const obj = { children: Children.map(props.props.children, f98700), style: items, onPress: "Array" };
+            const obj = { children: Children.map(props.props.children, f98693), style: items, onPress: "applicationId" };
             ({ Children, cloneElement } = tmp);
             items = [flattenResult, spoiler.spoiler];
             return cloneElement(props, obj);
@@ -175,7 +175,7 @@ class Spoiler extends PureComponent {
             mapped = type;
             if (!revealed) {
               const Children = tmp.Children;
-              mapped = Children.map(type, f98700);
+              mapped = Children.map(type, f98693);
             }
           }
           tmp10 = mapped;

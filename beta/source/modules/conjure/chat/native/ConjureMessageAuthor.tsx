@@ -126,7 +126,7 @@ export function ConjureUserAvatar(size) {
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1113).t.iXAna6), children: closure_5(messageAuthorUser(1187).Avatar, obj3) };
     const PressableOpacity = tmp3(6980).PressableOpacity;
     intl = tmp3(1113).intl;
-    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "Array" };
+    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "applicationId" };
     tmp7 = closure_5(PressableOpacity, obj2);
   }
   return tmp7;

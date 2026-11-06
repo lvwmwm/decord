@@ -1,9 +1,9 @@
-// Module ID: 14957
-// Function ID: 14958
+// Module ID: 14952
+// Function ID: 14953
 // Name: GameCoverImage
 // Dependencies: [19, 17, 21, 5014, 575, 9375, 2]
 
-// Module 14957 (GameCoverImage)
+// Module 14952 (GameCoverImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

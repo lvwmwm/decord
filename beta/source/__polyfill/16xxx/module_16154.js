@@ -1,18 +1,20 @@
 // Module ID: 16154
 // Function ID: 16155
-// Dependencies: []
+// Dependencies: [16149, 16155]
 
 // Module 16154
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
-}
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
+import _mod16149 from "module_16149" /* 16149 */;
+
+let tmp;
+const _mod16155 = tmp(16155);
+
+export default function(arg0) {
+  if (_mod16149(arg0)) {
+    return arg0;
+  } else {
+    const self = this;
+    const self2 = this;
+    const tmp4 = new TypeError(_mod16155(arg0) + " is not a function");
+    throw tmp4;
   }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+};

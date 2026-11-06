@@ -75,7 +75,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let tmp4Result6;
   let tmp7Result4;
   let v1Ie87p;
-  const f104229 = () => ({ kicking: false, kickError: false });
+  const f104222 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -131,9 +131,9 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   closure_8 = tmp18[1];
   const first1 = tmp18[0];
   ref = obj.useRef("");
-  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f104229), 2);
+  [tmp21, c10] = stateFromStores(stateFromStores1.useState(f104222), 2);
   const items4 = [stateFromStores, onKick, stateFromStores1];
-  stateFromStores(stateFromStores1.useState(f104229), 2);
+  stateFromStores(stateFromStores1.useState(f104222), 2);
   closure_11 = obj.useCallback(() => {
     const tmp2 = null != stateFromStores && null != stateFromStores1;
     if (tmp2) {

@@ -1,10 +1,10 @@
-// Module ID: 18827
-// Function ID: 18828
+// Module ID: 18822
+// Function ID: 18823
 // Name: getGamePlatform
 // Dependencies: [5762, 14852, 9738, 2]
 // Exports: default
 
-// Module 18827 (getGamePlatform)
+// Module 18822 (getGamePlatform)
 import ActivityTypes from "ActivityTypes" /* 5762 */;
 import isOnXboxDefault from "isOnXbox" /* 14852 */;
 import size from "module_2" /* 2 */;

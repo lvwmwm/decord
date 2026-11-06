@@ -1,18 +1,18 @@
-// Module ID: 16562
-// Function ID: 16563
+// Module ID: 16557
+// Function ID: 16558
 // Name: UserProfileEditFormTabs
-// Dependencies: [32, 19, 17, 7377, 21, 5014, 575, 16561, 8814, 14972, 5207, 1113, 16563, 14950, 16564, 15010, 8980, 5095, 12170, 2]
+// Dependencies: [32, 19, 17, 7377, 21, 5014, 575, 16556, 8814, 14967, 5207, 1113, 16558, 14945, 16559, 15005, 8980, 5095, 12170, 2]
 
-// Module 16562 (UserProfileEditFormTabs)
+// Module 16557 (UserProfileEditFormTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import ChatInputUtils from "ChatInputUtils" /* 5207 */;
 import Constants from "Constants" /* 7377 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14950 */;
-import reactDefault from "react" /* 16561 */;
-import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 16563 */;
-import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 16564 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14945 */;
+import reactDefault from "react" /* 16556 */;
+import UserProfileWidgetEditingHeaderDefault from "UserProfileWidgetEditingHeader" /* 16558 */;
+import UserProfileWidgetsEmptyStateDefault from "UserProfileWidgetsEmptyState" /* 16559 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

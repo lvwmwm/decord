@@ -1,10 +1,10 @@
-// Module ID: 15019
-// Function ID: 15020
+// Module ID: 15014
+// Function ID: 15015
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 4956, 1072, 21, 5014, 575, 5634, 7326, 8761, 14920, 504, 5068, 15020, 5721, 1113, 14195, 7488, 11504, 5258, 6744, 7485, 15022, 8028, 8643, 9833, 14570, 2]
+// Dependencies: [19, 17, 4956, 1072, 21, 5014, 575, 5634, 7326, 8761, 14920, 504, 5068, 15015, 5721, 1113, 14195, 7488, 11504, 5258, 6744, 7485, 15017, 8028, 8643, 9833, 14570, 2]
 // Exports: default
 
-// Module 15019 (UserProfileContactButtons)
+// Module 15014 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -90,7 +90,7 @@ function FriendRequestButton(user) {
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(15020).UserClockIcon;
+          UserPlusIcon = tmp3(15015).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(5721).UserPlusIcon;
         }

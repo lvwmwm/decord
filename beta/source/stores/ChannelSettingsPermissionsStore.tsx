@@ -1,9 +1,9 @@
-// Module ID: 18910
-// Function ID: 18911
+// Module ID: 18905
+// Function ID: 18906
 // Name: ChannelSettingsPermissionsStore
 // Dependencies: [2038, 8200, 4863, 1072, 7947, 510, 4951, 11646, 12, 504, 572, 2]
 
-// Module 18910 (ChannelSettingsPermissionsStore)
+// Module 18905 (ChannelSettingsPermissionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;

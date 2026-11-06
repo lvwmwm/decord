@@ -1,15 +1,15 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17052
+// Function ID: 17053
 // Name: OrbsArcadeInfoSheet
-// Dependencies: [19, 17023, 21, 504, 10837, 17043, 1113, 17044, 2]
+// Dependencies: [19, 17018, 21, 504, 10837, 17038, 1113, 17039, 2]
 // Exports: default
 
-// Module 17057 (OrbsArcadeInfoSheet)
+// Module 17052 (OrbsArcadeInfoSheet)
 import Fragment from "Fragment" /* 21 */;
-import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17043 */;
-import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17044 */;
+import OrbsArcadeGameGraphicDefault from "OrbsArcadeGameGraphic" /* 17038 */;
+import OrbsArcadeSheetActionsDefault from "OrbsArcadeSheetActions" /* 17039 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17023 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17018 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -33,7 +33,7 @@ export default function OrbsArcadeInfoSheet(gameId) {
     }
     const intl = tmp(1113).intl;
     const intl2 = tmp(1113).intl;
-    ({ game: stateFromStores, sheetKey: "OrbsArcadeInfoSheet", secondaryAction: gameId(17044).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
+    ({ game: stateFromStores, sheetKey: "OrbsArcadeInfoSheet", secondaryAction: gameId(17039).OrbsArcadeSheetSecondaryAction.HOW_TO_PLAY, direction: "vertical" });
     OrbsArcadeSheetActionsDefault;
     return <PromoSheet gradientColor="blue" illustration={tmp8Result} title={intl.string(gameId(1113).t["3AT3DL"])} description={intl2.string(gameId(1113).t.GSj8gp)} actions={null} />;
   }

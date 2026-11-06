@@ -1,7 +1,7 @@
 // Module ID: 14925
 // Function ID: 14926
 // Name: BadgeDirectoryNuxCoachmark
-// Dependencies: [19, 17, 4860, 21, 5014, 575, 14926, 14930, 14934, 14923, 14938, 14942, 11452, 1113, 11456, 9954, 2]
+// Dependencies: [19, 17, 4860, 21, 5014, 575, 11452, 14926, 14927, 14928, 14923, 14929, 14933, 14937, 1113, 11456, 9954, 2]
 // Exports: default
 
 // Module 14925 (BadgeDirectoryNuxCoachmark)
@@ -9,9 +9,9 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
 import BadgeArtImageDefault from "BadgeArtImage" /* 11452 */;
-import GameTimeTier9LargeBadge from "GameTimeTier9LargeBadge" /* 14926 */;
-import StreamingTier10LargeBadge from "StreamingTier10LargeBadge" /* 14930 */;
-import GameDiversityTier8LargeBadge from "GameDiversityTier8LargeBadge" /* 14934 */;
+import _modDef14926 from "module_14926" /* 14926 */;
+import _modDef14927 from "module_14927" /* 14927 */;
+import _modDef14928 from "module_14928" /* 14928 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -29,18 +29,24 @@ function NoProgressGraphic() {
   let items1;
   const obj = { style: items, children: items1 };
   items = [, ];
-  ({ graphicRow: arr[0], noProgressGraphicRow: arr[1] } = closure_9());
-  items1 = [, , ];
+  ({ graphicRow: arr[0], badgeGraphicRow: arr[1] } = closure_9());
+  const obj2 = { url: _modDef14926, height: 44 };
   closure_9();
-  items1[0] = metroRequire(GameTimeTier9LargeBadge.GameTimeTier9LargeBadge, { width: 40, height: 40 });
-  items1[1] = metroRequire(StreamingTier10LargeBadge.StreamingTier10LargeBadge, { width: 50, height: 50 });
-  items1[2] = metroRequire(GameDiversityTier8LargeBadge.GameDiversityTier8LargeBadge, { width: 40, height: 40 });
+  const tmp2 = BadgeArtImageDefault;
+  items1 = [metroRequire(tmp2, obj2), , ];
+  const obj3 = { url: _modDef14927, height: 72 };
+  const tmp3 = BadgeArtImageDefault;
+  items1[1] = metroRequire(tmp3, obj3);
+  const obj4 = { url: _modDef14928, height: 44 };
+  const tmp4 = BadgeArtImageDefault;
+  items1[2] = metroRequire(tmp4, obj4);
   return metroImportDefault(View, obj);
 }
 function ProgressGraphic(badgeIconUrls) {
   let closure_0;
   let iconUrls;
   let items;
+  let items1;
   _require = undefined;
   badgeIconUrls = badgeIconUrls.badgeIconUrls;
   const tmp = closure_9();
@@ -53,12 +59,14 @@ function ProgressGraphic(badgeIconUrls) {
   } else {
     _require = closure_8[badgeDirectoryNuxGraphicLayout.type];
     const obj3 = {
-      style: tmp.graphicRow,
+      style: items1,
       children: iconUrls.map((url, index) => {
           const obj = { url, height: closure_0[index] };
           return metroRequire(BadgeArtImageDefault, obj, url);
         })
     };
+    items1 = [, ];
+    ({ graphicRow: arr[0], badgeGraphicRow: arr[1] } = tmp);
     iconUrls = badgeDirectoryNuxGraphicLayout.iconUrls;
     return closure_6(View, obj3);
   }
@@ -66,12 +74,12 @@ function ProgressGraphic(badgeIconUrls) {
 const View = react_native.View;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = { single: [60], pair: [48, 48], trio: [42, 60, 42] };
+let closure_8 = { single: [80], pair: [80, 80], trio: [44, 72, 44] };
 let createStyles = createStyles_mod;
-let obj = { graphicRow: obj2, noProgressGraphicRow: obj3 };
+let obj = { graphicRow: obj2, badgeGraphicRow: obj3 };
 obj2 = { flexDirection: "row", alignItems: "center", justifyContent: "center", height: 60, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj3 = { gap: nativeDefault.space.PX_12 };
+obj3 = { height: "auto", gap: nativeDefault.space.PX_0 };
 let closure_9 = createStyles(obj);
 let result = size.fileFinishedImporting("modules/badges/native/BadgeDirectoryNuxCoachmark.tsx");
 
@@ -88,9 +96,9 @@ export default function BadgeDirectoryNuxCoachmark(userId) {
     let stringResult;
     const targetUserId = tmp2;
     const tmp = variantProps;
-    const intl = userId(visible[13]).intl;
+    const intl = userId(visible[14]).intl;
     const string = intl.string;
-    const t = userId(visible[13]).t;
+    const t = userId(visible[14]).t;
     if ("progress" === variantProps.variant) {
       stringResult = string(t.uwDBSq);
     } else {
@@ -114,26 +122,26 @@ export default function BadgeDirectoryNuxCoachmark(userId) {
       onDismiss() {
         return markAsDismissed(constants.USER_DISMISS);
       },
-      buttonLabel: intl3.string(userId(visible[13]).t.pHo9tZ),
+      buttonLabel: intl3.string(userId(visible[14]).t.pHo9tZ),
       buttonVariant: "primary",
       onButtonPress() {
         markAsDismissed(constants.TAKE_ACTION);
-        const obj = userId(visible[14]);
+        const obj = userId(visible[15]);
         const obj2 = { targetUserId };
         const result = obj.openBadgeDirectoryScreen(obj2);
       }
     };
-    const intl2 = userId(visible[13]).intl;
+    const intl2 = userId(visible[14]).intl;
     if ("progress" === variantProps.variant) {
       let obj2 = { count: tmp.newBadgeCount };
-      formatToPlainStringResult = intl2.formatToPlainString(userId(visible[13]).t.Mk5nzZ, obj2);
+      formatToPlainStringResult = intl2.formatToPlainString(userId(visible[14]).t.Mk5nzZ, obj2);
     } else {
-      formatToPlainStringResult = intl2.string(userId(visible[13]).t["2Rb7tE"]);
+      formatToPlainStringResult = intl2.string(userId(visible[14]).t["2Rb7tE"]);
     }
-    intl3 = userId(visible[13]).intl;
+    intl3 = userId(visible[14]).intl;
     return obj;
   }, items);
-  let obj = userId(visible[15]);
+  let obj = userId(visible[16]);
   const coachmark = obj.useCoachmark(targetRef, memo);
   return null;
 };

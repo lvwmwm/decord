@@ -60,7 +60,7 @@ export default function ConjureMentionSuggestions(arg0) {
                 }
               };
               const TableRow = require("TableRow").TableRow;
-              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "Array" };
+              obj2 = { user: user.user, size: require("native").AvatarSizes.XSMALL, guildId: "applicationId" };
               Avatar = require("native").Avatar;
               obj3 = require("UserUtils");
               return closure_1_3(TableRow, obj, user.user.id);

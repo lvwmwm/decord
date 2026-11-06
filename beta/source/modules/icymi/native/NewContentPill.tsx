@@ -1,10 +1,10 @@
-// Module ID: 18595
-// Function ID: 18596
+// Module ID: 18590
+// Function ID: 18591
 // Name: NewContentPill
 // Dependencies: [32, 19, 17, 4885, 8906, 21, 5014, 575, 9509, 6957, 504, 5253, 8919, 8923, 5095, 5637, 1500, 6980, 13044, 5624, 1113, 5021, 2]
 // Exports: default
 
-// Module 18595 (NewContentPill)
+// Module 18590 (NewContentPill)
 import nativeDefault from "native" /* 575 */;
 import spring from "spring" /* 5637 */;
 import GuildIcon from "GuildIcon" /* 6957 */;

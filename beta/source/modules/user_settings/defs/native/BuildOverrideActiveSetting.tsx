@@ -1,16 +1,16 @@
-// Module ID: 17759
-// Function ID: 17760
+// Module ID: 17754
+// Function ID: 17755
 // Name: BuildOverrideActiveSetting
-// Dependencies: [19, 11362, 21, 16435, 504, 13192, 16746, 6027, 17757, 1113, 2141, 5634, 11540, 12219, 2]
+// Dependencies: [19, 11362, 21, 16430, 504, 13192, 16741, 6027, 17752, 1113, 2141, 5634, 11540, 12219, 2]
 
-// Module 17759 (BuildOverrideActiveSetting)
+// Module 17754 (BuildOverrideActiveSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2141 from "module_2141" /* 2141 */;
 import RefreshIcon from "RefreshIcon" /* 12219 */;
 import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 13192 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 16435 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16746 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 16430 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16741 */;
 import react from "react" /* 19 */;
 import BuildOverrideStore from "BuildOverrideStore" /* 11362 */;
 import Fragment from "Fragment" /* 21 */;
@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
-const f112922 = () => {
+const f112913 = () => {
   const overrides = currentBuildOverride.getCurrentBuildOverride().overrides;
   let tmp;
   if (overrides != null) {
@@ -45,14 +45,14 @@ let obj = {
     let intl3;
     const items = [BuildOverrideStore];
     const obj = get_initialized;
-    const stateFromStores = obj.useStateFromStores(items, f112922);
+    const stateFromStores = obj.useStateFromStores(items, f112913);
     const obj2 = useIsStaffOrDeveloperSettingPredicate;
     const staffOrDeveloperSettingPredicate = obj2.useStaffOrDeveloperSettingPredicate();
     let tmp6Result;
     if (null != stateFromStores) {
       const Stack = tmp(6027).Stack;
       const obj3 = { label: "" + intl.string(_modDef2141.d11XdP) + " ", value: stateFromStores.id };
-      const DevToolsContentSubLabel = tmp(17757).DevToolsContentSubLabel;
+      const DevToolsContentSubLabel = tmp(17752).DevToolsContentSubLabel;
       intl = tmp(1113).intl;
       const _HermesInternal = HermesInternal;
       const items1 = [React3(DevToolsContentSubLabel, obj3), , ];
@@ -80,7 +80,7 @@ let obj = {
     let currentBuildOverride;
     const items = [BuildOverrideStore];
     const obj = get_initialized;
-    return null != obj.useStateFromStores(items, f112922);
+    return null != obj.useStateFromStores(items, f112913);
   }
 };
 const createStaticResult = SettingBuilders.createStatic(obj);

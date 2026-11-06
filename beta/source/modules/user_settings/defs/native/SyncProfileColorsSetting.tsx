@@ -1,13 +1,13 @@
-// Module ID: 17409
-// Function ID: 17410
+// Module ID: 17404
+// Function ID: 17405
 // Name: SyncProfileColorsSetting
-// Dependencies: [5015, 8432, 504, 11540, 1113, 16270, 2]
+// Dependencies: [5015, 8432, 504, 11540, 1113, 16265, 2]
 
-// Module 17409 (SyncProfileColorsSetting)
+// Module 17404 (SyncProfileColorsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16270 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16265 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;

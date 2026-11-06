@@ -1,9 +1,9 @@
-// Module ID: 17807
-// Function ID: 17808
+// Module ID: 17802
+// Function ID: 17803
 // Name: DesignSystemPileSetting
-// Dependencies: [8432, 1072, 11540, 17808, 2]
+// Dependencies: [8432, 1072, 11540, 17803, 2]
 
-// Module 17807 (DesignSystemPileSetting)
+// Module 17802 (DesignSystemPileSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;

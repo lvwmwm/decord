@@ -1,10 +1,10 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16496
+// Function ID: 16497
 // Name: EditProfileEffectActionSheet
-// Dependencies: [32, 19, 17, 7735, 7726, 1072, 21, 5014, 575, 8757, 8741, 7326, 7351, 1252, 8742, 8738, 8735, 5272, 7321, 1113, 8743, 10604, 504, 16502, 15072, 8737, 8758, 16503, 15078, 15079, 8744, 11392, 5587, 2]
+// Dependencies: [32, 19, 17, 7735, 7726, 1072, 21, 5014, 575, 8757, 8741, 7326, 7351, 1252, 8742, 8738, 8735, 5272, 7321, 1113, 8743, 10604, 504, 16497, 15067, 8737, 8758, 16498, 15073, 15074, 8744, 11392, 5587, 2]
 // Exports: default
 
-// Module 16501 (EditProfileEffectActionSheet)
+// Module 16496 (EditProfileEffectActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -14,7 +14,7 @@ import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators
 import UserProfileActionCreators from "UserProfileActionCreators" /* 8738 */;
 import useShopProductItems from "useShopProductItems" /* 8742 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
-import EditProfileEffectSection from "EditProfileEffectSection" /* 16503 */;
+import EditProfileEffectSection from "EditProfileEffectSection" /* 16498 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

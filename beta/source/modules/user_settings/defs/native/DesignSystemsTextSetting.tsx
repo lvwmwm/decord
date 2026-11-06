@@ -1,9 +1,9 @@
-// Module ID: 17763
-// Function ID: 17764
+// Module ID: 17758
+// Function ID: 17759
 // Name: DesignSystemsTextSetting
-// Dependencies: [8432, 1072, 11540, 17764, 2]
+// Dependencies: [8432, 1072, 11540, 17759, 2]
 
-// Module 17763 (DesignSystemsTextSetting)
+// Module 17758 (DesignSystemsTextSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;

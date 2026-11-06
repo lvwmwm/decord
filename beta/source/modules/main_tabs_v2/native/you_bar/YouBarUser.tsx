@@ -1,15 +1,15 @@
-// Module ID: 18459
-// Function ID: 18460
+// Module ID: 18454
+// Function ID: 18455
 // Name: YouBarUser
-// Dependencies: [19, 17, 1383, 17075, 21, 5014, 575, 504, 5095, 5637, 5068, 18460, 18461, 18462, 2]
+// Dependencies: [19, 17, 1383, 17070, 21, 5014, 575, 504, 5095, 5637, 5068, 18455, 18456, 18457, 2]
 
-// Module 18459 (YouBarUser)
+// Module 18454 (YouBarUser)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import spring from "spring" /* 5637 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1383 */;
-import YouBarConstants from "YouBarConstants" /* 17075 */;
+import YouBarConstants from "YouBarConstants" /* 17070 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
@@ -78,8 +78,8 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
     if (null != name) {
       obj3 = { style: tmp.youButton, children: items2 };
       const obj5 = { isLargeAvatar: !isCondensed, onPress: onAvatarPress };
-      items2 = [closure_9(sharedValue(18461), obj5), ];
-      const obj6 = { style: items3, children: closure_9(sharedValue(18462), obj7) };
+      items2 = [closure_9(sharedValue(18456), obj5), ];
+      const obj6 = { style: items3, children: closure_9(sharedValue(18457), obj7) };
       items3 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
       const View2 = tmp9(5095).View;
       obj7 = { userId: stateFromStores.id, username: name };
@@ -88,7 +88,7 @@ const memoResult = react.memo(function YouBarUser(isCondensed) {
     return tmp11(View, obj3);
   }
   const obj8 = { style: tmp.youButton, children: items4 };
-  items4 = [closure_9(sharedValue(18460), { isLarge: !isCondensed }), ];
+  items4 = [closure_9(sharedValue(18455), { isLarge: !isCondensed }), ];
   const obj9 = { style: items5, children: closure_9(View, obj10) };
   items5 = [tmp.userText, animatedStyle, { flexShrink: 1 }];
   obj10 = { style: tmp.placeholder };

@@ -1,18 +1,18 @@
-// Module ID: 15052
-// Function ID: 15053
+// Module ID: 15047
+// Function ID: 15048
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1072, 1083, 21, 15053, 11386, 6027, 15055, 15056, 9688, 10677, 1252, 6744, 7972, 7973, 13208, 38, 1266, 1113, 6998, 11482, 2]
+// Dependencies: [19, 1072, 1083, 21, 15048, 11386, 6027, 15050, 15051, 9688, 10677, 1252, 6744, 7972, 7973, 13208, 38, 1266, 1113, 6998, 11482, 2]
 // Exports: default
 
-// Module 15052 (OrbCheckoutModal)
+// Module 15047 (OrbCheckoutModal)
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
 import Stack_Stack from "Stack/Stack" /* 6027 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
 import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9688 */;
 import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11386 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15053 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 15055 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15048 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 15050 */;
 import "react";
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
@@ -44,10 +44,10 @@ function OrbCheckoutModalContent(orbBalance) {
   const tmp5 = authStore2;
   if (tmp6) {
     const obj3 = { error: orbRedemptionError.message };
-    tmp6 = unpackModuleId(tmp(15055).OrbCheckoutErrorCard, obj3);
+    tmp6 = unpackModuleId(tmp(15050).OrbCheckoutErrorCard, obj3);
   }
   const items = [tmp6, , ];
-  const OrbCheckoutOrderSummary = tmp(15055).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(15050).OrbCheckoutOrderSummary;
   if (product == null) {
     product = null;
   }
@@ -78,17 +78,17 @@ function OrbCheckoutModalScreen(startTime) {
   let ref;
   let tmp = onRedeemVirtualCurrency;
   let tmp2 = dependencyMap;
-  let obj = onRedeemVirtualCurrency(15053);
+  let obj = onRedeemVirtualCurrency(15048);
   const orbCheckoutModalContext = obj.useOrbCheckoutModalContext();
   onRedeemVirtualCurrency = orbCheckoutModalContext.onRedeemVirtualCurrency;
   const orbRedemptionError = orbCheckoutModalContext.orbRedemptionError;
-  let obj2 = onRedeemVirtualCurrency(15053);
+  let obj2 = onRedeemVirtualCurrency(15048);
   const orbCheckoutModalContext1 = obj2.useOrbCheckoutModalContext();
   const skuId = orbCheckoutModalContext1.skuId;
   const loadId = orbCheckoutModalContext1.loadId;
   const analyticsLocations = orbCheckoutModalContext1.analyticsLocations;
   const orbProductContext = orbCheckoutModalContext1.orbProductContext;
-  let obj3 = onRedeemVirtualCurrency(15056);
+  let obj3 = onRedeemVirtualCurrency(15051);
   const virtualCurrencyBalance = obj3.useVirtualCurrencyBalance();
   const items = [loadId, skuId, analyticsLocations, orbProductContext, virtualCurrencyBalance];
   const tmp6 = closure_7(() => {
@@ -156,7 +156,7 @@ function OrbCheckoutModalScreen(startTime) {
     }
   }, items1);
   dependencyMap = tmp8;
-  let obj4 = onRedeemVirtualCurrency(15056);
+  let obj4 = onRedeemVirtualCurrency(15051);
   const virtualCurrencyBalance1 = obj4.useVirtualCurrencyBalance();
   const tmp10 = ref(virtualCurrencyBalance1);
   ref = tmp10;

@@ -1,9 +1,9 @@
-// Module ID: 20164
-// Function ID: 20165
+// Module ID: 20159
+// Function ID: 20160
 // Name: GenerateInvite
-// Dependencies: [17, 20156, 8946, 9129, 2]
+// Dependencies: [17, 20151, 8946, 9129, 2]
 
-// Module 20164 (GenerateInvite)
+// Module 20159 (GenerateInvite)
 import react_native from "react-native" /* 17 */;
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8946 */;
 import size from "module_2" /* 2 */;

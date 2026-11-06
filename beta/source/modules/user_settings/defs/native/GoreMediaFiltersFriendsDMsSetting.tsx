@@ -1,16 +1,16 @@
-// Module ID: 16735
-// Function ID: 16736
+// Module ID: 16730
+// Function ID: 16731
 // Name: GoreMediaFiltersFriendsDMsSetting
-// Dependencies: [8432, 16729, 8687, 7472, 16730, 1113, 11540, 16732, 2]
+// Dependencies: [8432, 16724, 8687, 7472, 16725, 1113, 11540, 16727, 2]
 
-// Module 16735 (GoreMediaFiltersFriendsDMsSetting)
+// Module 16730 (GoreMediaFiltersFriendsDMsSetting)
 import intl4 from "intl" /* 1113 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 7472 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8687 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16729 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16730 */;
-import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16732 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16724 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16725 */;
+import useSensitiveMediaSettingDisabled from "useSensitiveMediaSettingDisabled" /* 16727 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

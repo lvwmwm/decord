@@ -1,10 +1,10 @@
-// Module ID: 19983
-// Function ID: 19984
+// Module ID: 19978
+// Function ID: 19979
 // Name: GuildPremiumRoleSubscribeButton
 // Dependencies: [19, 21, 5014, 9975, 1113, 2]
 // Exports: GuildPremiumRoleSubscribeButton
 
-// Module 19983 (GuildPremiumRoleSubscribeButton)
+// Module 19978 (GuildPremiumRoleSubscribeButton)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import CreatorRevenueButton2 from "CreatorRevenueButton" /* 9975 */;

@@ -1,15 +1,15 @@
-// Module ID: 17530
-// Function ID: 17531
+// Module ID: 17525
+// Function ID: 17526
 // Name: IcymiTabSetting
-// Dependencies: [8432, 8564, 8925, 8924, 17531, 11540, 1113, 2]
+// Dependencies: [8432, 8564, 8925, 8924, 17526, 11540, 1113, 2]
 
-// Module 17530 (IcymiTabSetting)
+// Module 17525 (IcymiTabSetting)
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import useLabFeatureDefault from "useLabFeature" /* 8564 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8924 */;
 import ICYMIExperiment from "ICYMIExperiment" /* 8925 */;
-import LabFeatureActions from "LabFeatureActions" /* 17531 */;
+import LabFeatureActions from "LabFeatureActions" /* 17526 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

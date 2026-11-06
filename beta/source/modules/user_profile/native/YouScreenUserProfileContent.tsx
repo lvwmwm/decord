@@ -1,10 +1,10 @@
-// Module ID: 18870
-// Function ID: 18871
+// Module ID: 18865
+// Function ID: 18866
 // Name: YouScreenUserProfileContent
-// Dependencies: [32, 19, 17, 4855, 6570, 7772, 8754, 7377, 4860, 16443, 21, 9677, 18443, 1375, 8828, 8814, 14946, 14947, 14950, 14973, 5596, 575, 8761, 4847, 14840, 5634, 10232, 6953, 1113, 18871, 18876, 18867, 11453, 18877, 14921, 13731, 7569, 14924, 11413, 14925, 1498, 8757, 11394, 8815, 504, 8800, 8811, 14758, 18878, 14971, 14948, 14986, 14987, 11400, 18879, 14990, 18881, 17707, 14842, 11492, 14993, 18885, 14907, 14998, 15004, 15010, 8980, 5095, 5611, 11396, 9085, 12170, 2]
+// Dependencies: [32, 19, 17, 4855, 6570, 7772, 8754, 7377, 4860, 16438, 21, 9677, 18438, 1375, 8828, 8814, 14941, 14942, 14945, 14968, 5596, 575, 8761, 4847, 14840, 5634, 10232, 6953, 1113, 18866, 18871, 18862, 11453, 18872, 14921, 13731, 7569, 14924, 11413, 14925, 1498, 8757, 11394, 8815, 504, 8800, 8811, 14758, 18873, 14966, 14943, 14981, 14982, 11400, 18874, 14985, 18876, 17702, 14842, 11492, 14988, 18880, 14907, 14993, 14999, 15005, 8980, 5095, 5611, 11396, 9085, 12170, 2]
 // Exports: default
 
-// Module 18870 (YouScreenUserProfileContent)
+// Module 18865 (YouScreenUserProfileContent)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1375 */;
@@ -26,20 +26,20 @@ import UserProfileActivityDefault from "UserProfileActivity" /* 14842 */;
 import UserProfileNoteDefault from "UserProfileNote" /* 14907 */;
 import useBadgeDirectoryNuxCoachmarkVariant from "useBadgeDirectoryNuxCoachmarkVariant" /* 14921 */;
 import useBadgeDirectoryNuxEntryPoint from "useBadgeDirectoryNuxEntryPoint" /* 14924 */;
-import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 14946 */;
-import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 14947 */;
-import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14950 */;
-import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 14973 */;
-import UserProfileConnections from "UserProfileConnections" /* 14993 */;
-import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 14998 */;
-import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 15004 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 16443 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17707 */;
-import showYouAccountActionSheet from "showYouAccountActionSheet" /* 18443 */;
-import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 18877 */;
-import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 18879 */;
-import CheckpointProfileEntrypointDefault from "CheckpointProfileEntrypoint" /* 18881 */;
-import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 18885 */;
+import UserProfileWidgetsBoardEditNoticeDefault from "UserProfileWidgetsBoardEditNotice" /* 14941 */;
+import ConjureCustomWidgetAddOptionDefault from "ConjureCustomWidgetAddOption" /* 14942 */;
+import UserProfileWidgetsBoardDefault from "UserProfileWidgetsBoard" /* 14945 */;
+import UserProfileActivityTabDefault from "UserProfileActivityTab" /* 14968 */;
+import UserProfileConnections from "UserProfileConnections" /* 14988 */;
+import UserProfileWishlistGrid from "UserProfileWishlistGrid" /* 14993 */;
+import UserProfileWishlistSuggestionsGridDefault from "UserProfileWishlistSuggestionsGrid" /* 14999 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 16438 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 17702 */;
+import showYouAccountActionSheet from "showYouAccountActionSheet" /* 18438 */;
+import useOwnsAnyBadgeDefault from "useOwnsAnyBadge" /* 18872 */;
+import YouExpiringTrialOfferCardDefault from "YouExpiringTrialOfferCard" /* 18874 */;
+import CheckpointProfileEntrypointDefault from "CheckpointProfileEntrypoint" /* 18876 */;
+import UserProfileYourFriendsCardDefault from "UserProfileYourFriendsCard" /* 18880 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6570 */;
@@ -421,7 +421,7 @@ export default function YouScreenUserProfileContent(user) {
     const tmp6 = navigateToPremium;
     if (tmp3Result) {
       const obj4 = { navigateToPremium: tmp6, navigateToShop, hasCustomProfileTheme };
-      tmp3Result = tmp3(tmp4(14990), obj4);
+      tmp3Result = tmp3(tmp4(14985), obj4);
     }
     items2[1] = tmp3Result;
     items2[2] = map1(CheckpointProfileEntrypointDefault, {});

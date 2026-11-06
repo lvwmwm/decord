@@ -1,9 +1,9 @@
-// Module ID: 15643
-// Function ID: 15644
+// Module ID: 15638
+// Function ID: 15639
 // Name: PremiumPromoStore
 // Dependencies: [502, 4956, 1089, 11, 504, 572, 2]
 
-// Module 15643 (PremiumPromoStore)
+// Module 15638 (PremiumPromoStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

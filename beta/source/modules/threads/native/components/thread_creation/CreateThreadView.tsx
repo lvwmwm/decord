@@ -1,9 +1,9 @@
-// Module ID: 18667
-// Function ID: 18668
+// Module ID: 18662
+// Function ID: 18663
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 7701, 7830, 1072, 21, 5014, 575, 9776, 8343, 7326, 7351, 1625, 5607, 10736, 8645, 18668, 7369, 1113, 18670, 13749, 13723, 14218, 11251, 1498, 1252, 5760, 5206, 1099, 10207, 18669, 5207, 2]
+// Dependencies: [5, 32, 19, 17, 7701, 7830, 1072, 21, 5014, 575, 9776, 8343, 7326, 7351, 1625, 5607, 10736, 8645, 18663, 7369, 1113, 18665, 13749, 13723, 14218, 11251, 1498, 1252, 5760, 5206, 1099, 10207, 18664, 5207, 2]
 
-// Module 18667 (CreateThreadView)
+// Module 18662 (CreateThreadView)
 import nativeDefault from "native" /* 575 */;
 import DraftStore from "DraftStore" /* 7701 */;
 import SlowmodeStore from "SlowmodeStore" /* 7830 */;
@@ -268,7 +268,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
   obj9 = { style: tmp.options, children: items7 };
   let obj10 = { style: tmp.optionsInner, children: items6 };
   const obj11 = { style: tmp.threadIconContainer, children: closure_13(tmp2(8645).ThreadIcon, { size: "lg" }) };
-  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(18668), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
+  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(18663), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
   let tmp23Result = null;
   const tmp25 = closure_7;
   if (!isForumLikeChannelResult) {
@@ -309,7 +309,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
     const obj15 = { style: tmp.border };
     items8 = [tmp23(tmp24, obj15), ];
     const obj16 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items8[1] = closure_13(threadSettingsDraft(18670).ThreadCreationStarterMessage, obj16);
+    items8[1] = closure_13(threadSettingsDraft(18665).ThreadCreationStarterMessage, obj16);
     tmp22Result = tmp22(tmp24, obj14);
   }
   items7[1] = tmp22Result;

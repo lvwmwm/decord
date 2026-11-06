@@ -1,13 +1,13 @@
-// Module ID: 17948
-// Function ID: 17949
+// Module ID: 17943
+// Function ID: 17944
 // Name: ParentalControlsUseDataForQuests3PSetting
-// Dependencies: [7715, 8432, 8371, 16722, 11540, 1113, 2]
+// Dependencies: [7715, 8432, 8371, 16717, 11540, 1113, 2]
 
-// Module 17948 (ParentalControlsUseDataForQuests3PSetting)
+// Module 17943 (ParentalControlsUseDataForQuests3PSetting)
 import intl2 from "intl" /* 1113 */;
 import useSelectedTeen from "useSelectedTeen" /* 8371 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16722 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16717 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;

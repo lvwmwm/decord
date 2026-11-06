@@ -1,10 +1,10 @@
-// Module ID: 16396
-// Function ID: 16397
+// Module ID: 16391
+// Function ID: 16392
 // Name: isPostMessageDisconnect
 // Dependencies: [6450, 2]
 // Exports: default
 
-// Module 16396 (isPostMessageDisconnect)
+// Module 16391 (isPostMessageDisconnect)
 import Constants from "Constants" /* 6450 */;
 import size from "module_2" /* 2 */;
 

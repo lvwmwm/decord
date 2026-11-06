@@ -1,14 +1,14 @@
-// Module ID: 18074
-// Function ID: 18075
+// Module ID: 18069
+// Function ID: 18070
 // Name: HomeDrawerStore
-// Dependencies: [1072, 1254, 5095, 5254, 18075, 4929, 2]
+// Dependencies: [1072, 1254, 5095, 5254, 18070, 4929, 2]
 // Exports: computeMaxX
 
-// Module 18074 (HomeDrawerStore)
+// Module 18069 (HomeDrawerStore)
 import Constants from "Constants" /* 1072 */;
 import _slicedToArray from "_slicedToArray" /* 4929 */;
 import timing from "timing" /* 5254 */;
-import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18075 */;
+import HomeDrawerAnimations from "HomeDrawerAnimations" /* 18070 */;
 import module_1254 from "module_1254" /* 1254 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ const withEqualityFn = module_1254.createWithEqualityFn((arg0, arg1) => {
         set3(withTiming(num, HomeDrawerAnimations.HOME_DRAWER_SETTLE_TIMING, "animate-always"));
         set = snapX.set;
         const tmp9Result = timing;
-        const result1 = set(tmp9Result.withTiming(0, tmp9(18075).HOME_DRAWER_SETTLE_TIMING, "animate-always"));
+        const result1 = set(tmp9Result.withTiming(0, tmp9(18070).HOME_DRAWER_SETTLE_TIMING, "animate-always"));
         const obj = { active: false };
         set2 = gestureState.set;
         const merged = Object.assign(gestureState.get());

@@ -1,9 +1,9 @@
-// Module ID: 18462
-// Function ID: 18463
+// Module ID: 18457
+// Function ID: 18458
 // Name: YouBarName
-// Dependencies: [19, 17, 6714, 4863, 4946, 5761, 4956, 6570, 5679, 21, 5014, 575, 10772, 9295, 11414, 504, 11394, 10749, 5762, 10747, 10748, 18463, 10745, 10766, 5624, 5068, 2]
+// Dependencies: [19, 17, 6714, 4863, 4946, 5761, 4956, 6570, 5679, 21, 5014, 575, 10772, 9295, 11414, 504, 11394, 10749, 5762, 10747, 10748, 18458, 10745, 10766, 5624, 5068, 2]
 
-// Module 18462 (YouBarName)
+// Module 18457 (YouBarName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildTagDefault from "GuildTag" /* 9295 */;
@@ -11,7 +11,7 @@ import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" 
 import useUserVoiceActivity from "useUserVoiceActivity" /* 10748 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10772 */;
 import ChevronSmallDownIcon from "ChevronSmallDownIcon" /* 11414 */;
-import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 18463 */;
+import shouldShowActivityStatusDefault from "shouldShowActivityStatus" /* 18458 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6714 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

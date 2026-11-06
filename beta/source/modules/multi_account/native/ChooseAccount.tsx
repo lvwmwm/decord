@@ -1,10 +1,10 @@
-// Module ID: 17993
-// Function ID: 17994
+// Module ID: 17988
+// Function ID: 17989
 // Name: ChooseAccount
-// Dependencies: [5, 19, 17, 13977, 13978, 1072, 21, 5014, 575, 1497, 17994, 1252, 13981, 5959, 1113, 1187, 5258, 7363, 7139, 5624, 15687, 17995, 6980, 9100, 8177, 17996, 2]
+// Dependencies: [5, 19, 17, 13977, 13978, 1072, 21, 5014, 575, 1497, 17989, 1252, 13981, 5959, 1113, 1187, 5258, 7363, 7139, 5624, 15682, 17990, 6980, 9100, 8177, 17991, 2]
 // Exports: default
 
-// Module 17993 (ChooseAccount)
+// Module 17988 (ChooseAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -145,7 +145,7 @@ export default function ChooseAccount() {
   _require = obj.useNavigation();
   let obj2 = require("useMultiAccount");
   const multiAccountUsers = obj2.useMultiAccountUsers().multiAccountUsers;
-  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), backgroundImageSource: multiAccountUsers(15687), backgroundImageCover: true, contentStyle: tmp.container, children: closure_12(View, obj5) };
+  let obj3 = { headerText: intl.string(require("intl").t.bVbB63), subHeader: closure_11(Text, obj4), backgroundImageSource: multiAccountUsers(15682), backgroundImageCover: true, contentStyle: tmp.container, children: closure_12(View, obj5) };
   let tmp2 = multiAccountUsers(7139);
   intl = require("intl").intl;
   obj4 = { variant: "text-sm/medium", color: "text-default", children: intl2.string(require("intl").t["0M5fN7"]) };
@@ -250,7 +250,7 @@ export default function ChooseAccount() {
     }
   };
   const FormRow = require("module_8177").FormRow;
-  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(17996) };
+  obj7 = { themedColor: multiAccountUsers(575).colors.TEXT_LINK, size: require("native").Icon.Sizes.SMALL_20, source: multiAccountUsers(17991) };
   Icon = require("module_8177").FormRow.Icon;
   intl3 = require("intl").intl;
   items[1] = closure_11(FormRow, obj6);

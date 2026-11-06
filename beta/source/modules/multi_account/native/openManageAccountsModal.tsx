@@ -1,10 +1,10 @@
-// Module ID: 18448
-// Function ID: 18449
+// Module ID: 18443
+// Function ID: 18444
 // Name: openManageAccountsModal
-// Dependencies: [13978, 5258, 6744, 18449, 1994, 2]
+// Dependencies: [13978, 5258, 6744, 18444, 1994, 2]
 // Exports: default
 
-// Module 18448 (openManageAccountsModal)
+// Module 18443 (openManageAccountsModal)
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
@@ -19,5 +19,5 @@ export default function openManageAccountsModal(initialRouteName) {
   obj.hideActionSheet();
   const obj2 = ModalActionCreatorsDefault;
   const obj3 = { initialRouteName };
-  obj2.pushLazy(asyncRequire(18449, dependencyMap.paths), obj3, SWITCH_ACCOUNTS_MODAL_KEY);
+  obj2.pushLazy(asyncRequire(18444, dependencyMap.paths), obj3, SWITCH_ACCOUNTS_MODAL_KEY);
 };

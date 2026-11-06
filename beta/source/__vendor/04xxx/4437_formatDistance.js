@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 4437 (formatDistance)
-const f85787 = (arg0, addSuffix) => {
+const f85780 = (arg0, addSuffix) => {
   let one;
   const tmp = addSuffix;
   if (tmp) {
@@ -161,8 +161,8 @@ const f85787 = (arg0, addSuffix) => {
   one = str.replace("{{count}}", String(arg0));
 };
 const obj = {
-  lessThanXSeconds: f85787,
-  xSeconds: f85787,
+  lessThanXSeconds: f85780,
+  xSeconds: f85780,
   halfAMinute: function halfAtMinute(arg0, addSuffix) {
     let str = "\u043F\u0456\u0432\u0445\u0432\u0438\u043B\u0438\u043D\u0438";
     if (addSuffix) {
@@ -180,19 +180,19 @@ const obj = {
     }
     return str;
   },
-  lessThanXMinutes: f85787,
-  xMinutes: f85787,
-  aboutXHours: f85787,
-  xHours: f85787,
-  xDays: f85787,
-  aboutXWeeks: f85787,
-  xWeeks: f85787,
-  aboutXMonths: f85787,
-  xMonths: f85787,
-  aboutXYears: f85787,
-  xYears: f85787,
-  overXYears: f85787,
-  almostXYears: f85787
+  lessThanXMinutes: f85780,
+  xMinutes: f85780,
+  aboutXHours: f85780,
+  xHours: f85780,
+  xDays: f85780,
+  aboutXWeeks: f85780,
+  xWeeks: f85780,
+  aboutXMonths: f85780,
+  xMonths: f85780,
+  aboutXYears: f85780,
+  xYears: f85780,
+  overXYears: f85780,
+  almostXYears: f85780
 };
 let closure_0 = { regular: { one: "\u043C\u0435\u043D\u0448\u0435 \u0441\u0435\u043A\u0443\u043D\u0434\u0438", singularNominative: "\u043C\u0435\u043D\u0448\u0435 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0438", singularGenitive: "\u043C\u0435\u043D\u0448\u0435 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434", pluralGenitive: "\u043C\u0435\u043D\u0448\u0435 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434" }, future: { one: "\u043C\u0435\u043D\u0448\u0435, \u043D\u0456\u0436 \u0437\u0430 \u0441\u0435\u043A\u0443\u043D\u0434\u0443", singularNominative: "\u043C\u0435\u043D\u0448\u0435, \u043D\u0456\u0436 \u0437\u0430 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0443", singularGenitive: "\u043C\u0435\u043D\u0448\u0435, \u043D\u0456\u0436 \u0437\u0430 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0438", pluralGenitive: "\u043C\u0435\u043D\u0448\u0435, \u043D\u0456\u0436 \u0437\u0430 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434" } };
 closure_0 = { regular: { singularNominative: "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0430", singularGenitive: "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0438", pluralGenitive: "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434" }, past: { singularNominative: "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0443 \u0442\u043E\u043C\u0443", singularGenitive: "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0438 \u0442\u043E\u043C\u0443", pluralGenitive: "{{count}} \u0441\u0435\u043A\u0443\u043D\u0434 \u0442\u043E\u043C\u0443" }, future: { singularNominative: "\u0437\u0430 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0443", singularGenitive: "\u0437\u0430 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434\u0438", pluralGenitive: "\u0437\u0430 {{count}} \u0441\u0435\u043A\u0443\u043D\u0434" } };

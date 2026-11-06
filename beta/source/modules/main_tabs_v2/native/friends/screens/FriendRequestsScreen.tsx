@@ -1,10 +1,10 @@
-// Module ID: 18855
-// Function ID: 18856
+// Module ID: 18850
+// Function ID: 18851
 // Name: FriendRequestsScreen
-// Dependencies: [32, 19, 17, 6858, 4956, 1383, 10727, 1072, 10743, 21, 5014, 575, 18856, 1994, 5960, 563, 6859, 4839, 18488, 6860, 11, 7326, 7351, 1252, 14920, 7330, 18857, 1342, 8750, 1113, 1497, 7060, 6975, 5624, 8980, 10736, 9214, 6980, 13403, 17091, 10733, 2]
+// Dependencies: [32, 19, 17, 6858, 4956, 1383, 10727, 1072, 10743, 21, 5014, 575, 18851, 1994, 5960, 563, 6859, 4839, 18483, 6860, 11, 7326, 7351, 1252, 14920, 7330, 18852, 1342, 8750, 1113, 1497, 7060, 6975, 5624, 8980, 10736, 9214, 6980, 13403, 17086, 10733, 2]
 // Exports: default
 
-// Module 18855 (FriendRequestsScreen)
+// Module 18850 (FriendRequestsScreen)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import useAlertStore from "useAlertStore" /* 5960 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8750 */;
 import UserRowConstants from "UserRowConstants" /* 10727 */;
 import Constants2 from "Constants" /* 10743 */;
-import getPendingRelationshipIds from "getPendingRelationshipIds" /* 18857 */;
+import getPendingRelationshipIds from "getPendingRelationshipIds" /* 18852 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6858 */;
@@ -395,7 +395,7 @@ export default function FriendRequestsScreen() {
       const intl4 = tmp5(1113).intl;
       stringResult = intl4.string(tmp5(1113).t["yvzX/Z"]);
     }
-    obj17 = { title: stringResult, illustration: tmp5(17091).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
+    obj17 = { title: stringResult, illustration: tmp5(17086).WumpusCouchSpotIllustration, disableBackgroundOverlay: true };
     tmp34Result2 = tmp34(tmp35, obj16);
   } else {
     const UsersFastList = tmp5(10733).UsersFastList;

@@ -1,21 +1,21 @@
-// Module ID: 17222
-// Function ID: 17223
+// Module ID: 17217
+// Function ID: 17218
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 4863, 4939, 17217, 17223, 1072, 4870, 6456, 563, 1396, 572, 9030, 7434, 15721, 2]
+// Dependencies: [5, 19, 4863, 4939, 17212, 17218, 1072, 4870, 6456, 563, 1396, 572, 9030, 7434, 15716, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 17222 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 17217 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import FlagUtilsAll from "FlagUtils" /* 1396 */;
 import ChannelConstants from "ChannelConstants" /* 4870 */;
 import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7434 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17217 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17212 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4939 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17223 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17218 */;
 import allSettled_mod from "allSettled" /* 6456 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(15721);
+const GuildRoleSubscriptionsExperimentUtils = tmp(15716);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;

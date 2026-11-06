@@ -1,9 +1,9 @@
-// Module ID: 18685
-// Function ID: 18686
+// Module ID: 18680
+// Function ID: 18681
 // Name: ChannelDetailsSearchBar
-// Dependencies: [19, 13900, 9825, 10137, 21, 5014, 13928, 13847, 13907, 13911, 18686, 6980, 1113, 10254, 2]
+// Dependencies: [19, 13900, 9825, 10137, 21, 5014, 13928, 13847, 13907, 13911, 18681, 6980, 1113, 10254, 2]
 
-// Module 18685 (ChannelDetailsSearchBar)
+// Module 18680 (ChannelDetailsSearchBar)
 import Fragment from "Fragment" /* 21 */;
 import ChannelDetailsStore from "ChannelDetailsStore" /* 9825 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10137 */;

@@ -1,16 +1,16 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 16877
+// Function ID: 16878
 // Name: PremiumSetting
-// Dependencies: [19, 1383, 2052, 1072, 21, 2047, 1113, 7602, 11374, 16883, 11540, 9528, 16887, 2]
+// Dependencies: [19, 1383, 2052, 1072, 21, 2047, 1113, 7602, 11374, 16878, 11540, 9528, 16882, 2]
 
-// Module 16882 (PremiumSetting)
+// Module 16877 (PremiumSetting)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import PremiumUtils from "PremiumUtils" /* 2047 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 7602 */;
 import NitroWheelIcon from "NitroWheelIcon" /* 9528 */;
-import PremiumTabBadgeDefault from "PremiumTabBadge" /* 16883 */;
+import PremiumTabBadgeDefault from "PremiumTabBadge" /* 16878 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1383 */;
 import SubscriptionStore from "SubscriptionStore" /* 2052 */;

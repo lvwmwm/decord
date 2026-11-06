@@ -1,10 +1,10 @@
-// Module ID: 18231
-// Function ID: 18232
+// Module ID: 18226
+// Function ID: 18227
 // Name: useGuildPowerupsCoachmark
-// Dependencies: [19, 5015, 4885, 5230, 1072, 4860, 1083, 21, 5014, 575, 504, 5253, 8468, 14087, 14071, 18232, 14055, 14095, 1113, 2570, 14097, 18233, 14094, 5233, 18229, 18234, 18235, 14125, 18236, 9954, 2]
+// Dependencies: [19, 5015, 4885, 5230, 1072, 4860, 1083, 21, 5014, 575, 504, 5253, 8468, 14087, 14071, 18227, 14055, 14095, 1113, 2570, 14097, 18228, 14094, 5233, 18224, 18229, 18230, 14125, 18231, 9954, 2]
 // Exports: default
 
-// Module 18231 (useGuildPowerupsCoachmark)
+// Module 18226 (useGuildPowerupsCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1083 */;
@@ -29,8 +29,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const _modDef18229 = tmp2(18229);
-const _modDef18233 = tmp2(18233);
+const _modDef18224 = tmp2(18224);
+const _modDef18228 = tmp2(18228);
 let react = react_mod;
 ({ GUILD_TAG_BADGE_PACKS_WAVE_ONE_SKU_ID_SET: metroRequire, GUILD_TAG_BADGE_PACKS_WAVE_TWO_SKU_ID_SET: metroImportDefault, GuildPowerupType: metroImportAll } = GuildPowerupsConstants);
 ({ AnalyticsPages: c9, AnalyticsSections: c10 } = Constants);
@@ -229,7 +229,7 @@ export default function useGuildPowerupsCoachmark(targetRef, arg1, type) {
                     const tmp = jsx;
                     const tmp4 = GuildPowerupsImageDefault;
                     if (powerups.length > 1) {
-                      str = _modDef18233;
+                      str = _modDef18228;
                     } else {
                       const obj = useGetGuildPowerupBannerImage;
                       str = obj.getGuildPowerupBannerImage(arr[0], stateFromStores1, true);
@@ -299,7 +299,7 @@ export default function useGuildPowerupsCoachmark(targetRef, arg1, type) {
                     const tmp = jsx;
                     const tmp5 = stateFromStores1;
                     if (guildPowerupBannerImage == null) {
-                      guildPowerupBannerImage = _modDef18229;
+                      guildPowerupBannerImage = _modDef18224;
                     }
                     const obj2 = { imageUrl: guildPowerupBannerImage, isAnimated: !tmp5, style: items };
                     items = [, ];

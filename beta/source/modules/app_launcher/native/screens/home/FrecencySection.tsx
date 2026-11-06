@@ -73,7 +73,7 @@ function FrecentActivityOneClickCTA(context) {
   let onActivityItemSelected;
   let tmp6;
   let tmp7;
-  const f101876 = () => {
+  const f101869 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -93,8 +93,8 @@ function FrecentActivityOneClickCTA(context) {
   let id = react.useId();
   let items = [EmbeddedActivitiesStore];
   const obj3 = context(handleActivityItemSelected[14]);
-  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f101876);
-  _slicedToArray(obj3.useStateFromStoresArray(items, f101876), 2);
+  [tmp6, tmp7] = obj3.useStateFromStoresArray(items, f101869);
+  _slicedToArray(obj3.useStateFromStoresArray(items, f101869), 2);
   let isLaunching = null != tmp7;
   const obj4 = context(handleActivityItemSelected[30]);
   const obj5 = { context, applicationId: app.applicationId };

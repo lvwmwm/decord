@@ -1,9 +1,9 @@
-// Module ID: 17190
-// Function ID: 17191
+// Module ID: 17185
+// Function ID: 17186
 // Name: QuestDockPlayableBody
-// Dependencies: [19, 6781, 21, 17154, 17100, 17069, 17076, 9717, 7326, 9684, 9687, 6788, 7871, 6784, 11693, 9719, 17172, 9707, 17187, 1113, 8028, 15177, 2]
+// Dependencies: [19, 6781, 21, 17149, 17095, 17064, 17071, 9717, 7326, 9684, 9687, 6788, 7871, 6784, 11693, 9719, 17167, 9707, 17182, 1113, 8028, 15172, 2]
 
-// Module 17190 (QuestDockPlayableBody)
+// Module 17185 (QuestDockPlayableBody)
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 6781 */;
 import QuestTypes from "QuestTypes" /* 6784 */;

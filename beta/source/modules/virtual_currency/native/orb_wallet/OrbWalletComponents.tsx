@@ -1,10 +1,10 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 16901
+// Function ID: 16902
 // Name: OrbWalletComponents
-// Dependencies: [19, 17, 1072, 1385, 6781, 21, 5014, 575, 9528, 5624, 16907, 16911, 4440, 1113, 2172, 16903, 7351, 11417, 5717, 16912, 14509, 6953, 16913, 8025, 5258, 9678, 6784, 5705, 2061, 9553, 5634, 14719, 12469, 9378, 2]
+// Dependencies: [19, 17, 1072, 1385, 6781, 21, 5014, 575, 9528, 5624, 16902, 16906, 4440, 1113, 2172, 16898, 7351, 11417, 5717, 16907, 14509, 6953, 16908, 8025, 5258, 9678, 6784, 5705, 2061, 9553, 5634, 14719, 12469, 9378, 2]
 // Exports: OrbBalanceHeader, OrbChallengesCard, OrbWalletFooter
 
-// Module 16906 (OrbWalletComponents)
+// Module 16901 (OrbWalletComponents)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1385 */;
@@ -26,10 +26,10 @@ import QuestUtils from "QuestUtils" /* 9678 */;
 import useIsPremiumSubscriber from "useIsPremiumSubscriber" /* 11417 */;
 import AssetRegistryDefault from "AssetRegistry" /* 12469 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 14719 */;
-import OrbWalletUtils from "OrbWalletUtils" /* 16903 */;
-import useNitroProgramReward from "useNitroProgramReward" /* 16907 */;
-import ProgramRewardsActionCreatorsDefault from "ProgramRewardsActionCreators" /* 16911 */;
-import _modDef16912 from "module_16912" /* 16912 */;
+import OrbWalletUtils from "OrbWalletUtils" /* 16898 */;
+import useNitroProgramReward from "useNitroProgramReward" /* 16902 */;
+import ProgramRewardsActionCreatorsDefault from "ProgramRewardsActionCreators" /* 16906 */;
+import _modDef16907 from "module_16907" /* 16907 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
@@ -179,7 +179,7 @@ export function OrbBalanceHeader(orbBalance) {
   const obj = { style: tmp.header, children: items };
   const obj2 = { style: tmp.headerAssetSlot, importantForAccessibility: "no-hide-descendants", children: authStore(tmp7, obj3) };
   obj3 = { source: obj4, style: tmp.headerAsset, resizeMode: "contain" };
-  obj4 = { uri: _modDef16912 };
+  obj4 = { uri: _modDef16907 };
   tmp7 = FastImageDefault;
   items = [authStore(hasOwnProperty, obj2), ];
   const obj5 = { style: tmp.headerContent, children: items1 };

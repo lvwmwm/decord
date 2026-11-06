@@ -1,14 +1,14 @@
-// Module ID: 17404
-// Function ID: 17405
+// Module ID: 17399
+// Function ID: 17400
 // Name: ShowLinkDecorationsSetting
-// Dependencies: [5015, 8432, 504, 16270, 11540, 1113, 2]
+// Dependencies: [5015, 8432, 504, 16265, 11540, 1113, 2]
 // Exports: onShowLinkDecorationsValueChange, useShowLinkDecorationsSettingValue
 
-// Module 17404 (ShowLinkDecorationsSetting)
+// Module 17399 (ShowLinkDecorationsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16270 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16265 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;

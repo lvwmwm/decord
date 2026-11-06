@@ -1,9 +1,9 @@
-// Module ID: 17977
-// Function ID: 17978
+// Module ID: 17972
+// Function ID: 17973
 // Name: VEVOO
-// Dependencies: [19, 17, 5627, 573, 21, 5014, 575, 5095, 5637, 5638, 8177, 17978, 17980, 17981, 10767, 7054, 504, 17702, 2]
+// Dependencies: [19, 17, 5627, 573, 21, 5014, 575, 5095, 5637, 5638, 8177, 17973, 17975, 17976, 10767, 7054, 504, 17697, 2]
 
-// Module 17977 (VEVOO)
+// Module 17972 (VEVOO)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 573 */;

@@ -1,16 +1,12 @@
 // Module ID: 15906
 // Function ID: 15907
-// Dependencies: [15899]
+// Dependencies: [15895]
 
 // Module 15906
-import _mod15899 from "module_15899" /* 15899 */;
+import _mod15895 from "module_15895" /* 15895 */;
 
 
 export default (arg0, arg1) => {
-  const tmp = _mod15899(arg0, arg1);
-  let version = null;
-  if (tmp) {
-    version = tmp.version;
-  }
-  return version;
+  const tmp = new _mod15895(arg0, arg1);
+  return tmp.minor;
 };

@@ -1,9 +1,9 @@
-// Module ID: 19742
-// Function ID: 19743
+// Module ID: 19737
+// Function ID: 19738
 // Name: GuildSettingsModalStickers
-// Dependencies: [19, 17, 4885, 4946, 1383, 1072, 4842, 21, 1113, 19743, 9920, 15412, 5014, 575, 1625, 504, 9020, 19745, 7208, 8463, 5624, 6451, 5634, 19746, 8177, 6027, 7060, 6975, 8667, 10282, 1187, 6041, 6984, 19752, 2]
+// Dependencies: [19, 17, 4885, 4946, 1383, 1072, 4842, 21, 1113, 19738, 9920, 15407, 5014, 575, 1625, 504, 9020, 19740, 7208, 8463, 5624, 6451, 5634, 19741, 8177, 6027, 7060, 6975, 8667, 10282, 1187, 6041, 6984, 19747, 2]
 
-// Module 19742 (GuildSettingsModalStickers)
+// Module 19737 (GuildSettingsModalStickers)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import StickersConstants from "StickersConstants" /* 4842 */;
@@ -11,9 +11,9 @@ import TableRow2 from "TableRow" /* 6975 */;
 import TableRowGroup2 from "TableRowGroup" /* 7060 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 8463 */;
 import BoostGemIcon from "BoostGemIcon" /* 9920 */;
-import BoostTier3Icon from "BoostTier3Icon" /* 15412 */;
-import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19743 */;
-import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19746 */;
+import BoostTier3Icon from "BoostTier3Icon" /* 15407 */;
+import BoostGemOutlineIcon from "BoostGemOutlineIcon" /* 19738 */;
+import showGuildSettingsStickerCreateModalDefault from "showGuildSettingsStickerCreateModal" /* 19741 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildStore from "GuildStore" /* 4885 */;
@@ -44,7 +44,7 @@ const LockIcon = tmp2(8667);
 const GuildFeatures = Constants.GuildFeatures;
 const MAX_STICKER_FILE_SIZE = StickersConstants.MAX_STICKER_FILE_SIZE;
 ({ jsx: closure_12, jsxs: map1 } = Fragment);
-let obj = { tier: BoostedGuildTiers.NONE, title: intl.string(intl5.t.tfVXhP), IconComponent: "Array" };
+let obj = { tier: BoostedGuildTiers.NONE, title: intl.string(intl5.t.tfVXhP), IconComponent: "applicationId" };
 intl = intl5.intl;
 let items = [obj, , , ];
 let obj2 = { tier: BoostedGuildTiers.TIER_1, title: intl2.string(intl5.t.nzXtaS), IconComponent: BoostGemOutlineIcon.BoostGemOutlineIcon };

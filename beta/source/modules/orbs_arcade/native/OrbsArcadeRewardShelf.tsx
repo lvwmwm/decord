@@ -1,27 +1,27 @@
-// Module ID: 17032
-// Function ID: 17033
+// Module ID: 17027
+// Function ID: 17028
 // Name: OrbsArcadeRewardShelf
-// Dependencies: [19, 17, 2062, 17023, 21, 575, 5014, 5640, 504, 13424, 9509, 5624, 1113, 17030, 17033, 17034, 17024, 9542, 7624, 17035, 17039, 17040, 671, 17041, 5587, 13918, 2]
+// Dependencies: [19, 17, 2062, 17018, 21, 575, 5014, 5640, 504, 13424, 9509, 5624, 1113, 17025, 17028, 17029, 17019, 9542, 7624, 17030, 17034, 17035, 671, 17036, 5587, 13918, 2]
 // Exports: default
 
-// Module 17032 (OrbsArcadeRewardShelf)
+// Module 17027 (OrbsArcadeRewardShelf)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl4 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import ButtonConstants from "ButtonConstants" /* 5640 */;
 import useCountdownDefault from "useCountdown" /* 7624 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17024 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17030 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17033 */;
-import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 17034 */;
-import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 17035 */;
-import OrbsArcadeWindowUtils from "OrbsArcadeWindowUtils" /* 17039 */;
-import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17041 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17019 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17025 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17028 */;
+import OrbsArcadeRewardStatusLabelDefault from "OrbsArcadeRewardStatusLabel" /* 17029 */;
+import ChestLogoSpotIllustration from "ChestLogoSpotIllustration" /* 17030 */;
+import OrbsArcadeWindowUtils from "OrbsArcadeWindowUtils" /* 17034 */;
+import openOrbsArcadeSheets from "openOrbsArcadeSheets" /* 17036 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2062 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17023 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17018 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 18232
-// Function ID: 18233
+// Module ID: 18227
+// Function ID: 18228
 // Name: useGuildPowerupsBoostAction
 // Dependencies: [5, 19, 7585, 5230, 1072, 14112, 7326, 7604, 8465, 8463, 6768, 7586, 2]
 // Exports: default
 
-// Module 18232 (useGuildPowerupsBoostAction)
+// Module 18227 (useGuildPowerupsBoostAction)
 import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7326 */;
 import useGuildBoostPurchaseHandlerDefault from "useGuildBoostPurchaseHandler" /* 14112 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;

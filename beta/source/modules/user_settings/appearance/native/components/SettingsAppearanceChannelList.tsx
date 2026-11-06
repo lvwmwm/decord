@@ -1,17 +1,17 @@
-// Module ID: 17282
-// Function ID: 17283
+// Module ID: 17277
+// Function ID: 17278
 // Name: SettingsAppearanceChannelList
-// Dependencies: [19, 17, 21, 5014, 575, 17283, 17284, 17285, 5095, 1113, 17291, 7294, 17294, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 17278, 17279, 17280, 5095, 1113, 17286, 7294, 17289, 2]
 // Exports: default
 
-// Module 17282 (SettingsAppearanceChannelList)
+// Module 17277 (SettingsAppearanceChannelList)
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexportDefault from "ReanimatedRexport" /* 5095 */;
-import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 17283 */;
-import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 17284 */;
-import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 17285 */;
-import SettingsAppearanceGradientBackgroundDefault from "SettingsAppearanceGradientBackground" /* 17291 */;
-import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 17294 */;
+import SettingsAppearanceChannelRowItemDefault from "SettingsAppearanceChannelRowItem" /* 17278 */;
+import SettingsAppearanceMessagesHeaderItemDefault from "SettingsAppearanceMessagesHeaderItem" /* 17279 */;
+import SettingsAppearanceActivityCardsItemDefault from "SettingsAppearanceActivityCardsItem" /* 17280 */;
+import SettingsAppearanceGradientBackgroundDefault from "SettingsAppearanceGradientBackground" /* 17286 */;
+import SettingsAppearanceChannelListPreviewNitroUpsellDefault from "SettingsAppearanceChannelListPreviewNitroUpsell" /* 17289 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

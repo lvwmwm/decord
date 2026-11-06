@@ -33,7 +33,7 @@ export default function ExpandableList(onExpand) {
   let obj14;
   let showsExpandCTAOverride;
   let title;
-  const f127322 = (fn, index) => {
+  const f127313 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
@@ -143,7 +143,7 @@ export default function ExpandableList(onExpand) {
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f127322)
+    children: memo.map(f127313)
   };
   View = tmp4(5095).View;
   const tmp16 = bound;
@@ -161,7 +161,7 @@ export default function ExpandableList(onExpand) {
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f127322)
+      children: memo1.map(f127313)
     };
     tmp17Result = tmp17(tmp18, obj9);
   }

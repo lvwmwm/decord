@@ -1,9 +1,9 @@
-// Module ID: 19205
-// Function ID: 19206
+// Module ID: 19200
+// Function ID: 19201
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 6843, 8864, 6875, 11223, 11221, 5681, 11224, 21, 3, 5637, 5014, 575, 5095, 1622, 11222, 1625, 5303, 10089, 11227, 19206, 19207, 5260, 11249, 19114, 5596, 11229, 11858, 19204, 19191, 12411, 5874, 19208, 6541, 19211, 7241, 7326, 7351, 1259, 19213, 5611, 19214, 19246, 19276, 19280, 19283, 19284, 10928, 19285, 19287, 19295, 2]
+// Dependencies: [32, 19, 17, 6843, 8864, 6875, 11223, 11221, 5681, 11224, 21, 3, 5637, 5014, 575, 5095, 1622, 11222, 1625, 5303, 10089, 11227, 19201, 19202, 5260, 11249, 19109, 5596, 11229, 11858, 19199, 19186, 12411, 5874, 19203, 6541, 19206, 7241, 7326, 7351, 1259, 19208, 5611, 19209, 19241, 19271, 19275, 19278, 19279, 10928, 19280, 19282, 19290, 2]
 
-// Module 19205 (VoicePanelUI)
+// Module 19200 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
@@ -21,14 +21,14 @@ import MorphablePanelConstants from "MorphablePanelConstants" /* 11224 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11227 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11229 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
-import PanelSizeUtils from "PanelSizeUtils" /* 19191 */;
-import useControlsLockDefault from "useControlsLock" /* 19206 */;
-import VoicePanelDockSheet from "VoicePanelDockSheet" /* 19208 */;
-import useControlsHoverGestureDefault from "useControlsHoverGesture" /* 19213 */;
-import VoicePanelHeaderDefault from "VoicePanelHeader" /* 19214 */;
-import VoicePanelCardViewDefault from "VoicePanelCardView" /* 19246 */;
-import VoicePanelPreJoinContentDefault from "VoicePanelPreJoinContent" /* 19276 */;
-import VoicePanelVoiceChannelAppDefault from "VoicePanelVoiceChannelApp" /* 19280 */;
+import PanelSizeUtils from "PanelSizeUtils" /* 19186 */;
+import useControlsLockDefault from "useControlsLock" /* 19201 */;
+import VoicePanelDockSheet from "VoicePanelDockSheet" /* 19203 */;
+import useControlsHoverGestureDefault from "useControlsHoverGesture" /* 19208 */;
+import VoicePanelHeaderDefault from "VoicePanelHeader" /* 19209 */;
+import VoicePanelCardViewDefault from "VoicePanelCardView" /* 19241 */;
+import VoicePanelPreJoinContentDefault from "VoicePanelPreJoinContent" /* 19271 */;
+import VoicePanelVoiceChannelAppDefault from "VoicePanelVoiceChannelApp" /* 19275 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -62,11 +62,11 @@ let obj8;
 let obj9;
 let tmp2;
 const closeVoicePanelsDefault = tmp2(10928);
-const VoicePanelSystemUIManagerDefault = tmp2(19283);
-const VoicePanelAccessibilityViewDefault = tmp2(19284);
-const VoicePanelDismissableContentDefault = tmp2(19285);
-const VoicePanelPIPDefault = tmp2(19287);
-const VoicePanelControlsDefault = tmp2(19295);
+const VoicePanelSystemUIManagerDefault = tmp2(19278);
+const VoicePanelAccessibilityViewDefault = tmp2(19279);
+const VoicePanelDismissableContentDefault = tmp2(19280);
+const VoicePanelPIPDefault = tmp2(19282);
+const VoicePanelControlsDefault = tmp2(19290);
 function NOOP() {
 
 }
@@ -96,7 +96,7 @@ function AnimatedWrapper(wrapperOffset) {
   const isDockEnabled = context.isDockEnabled;
   const handleDockSheetLayout = context.handleDockSheetLayout;
   let tmp4 = closure_33();
-  const tmp5 = height(19211);
+  const tmp5 = height(19206);
   connected = undefined;
   let animatedStyle;
   let dockSheetSurfaceFills;
@@ -133,7 +133,7 @@ function AnimatedWrapper(wrapperOffset) {
   fn.__workletHash = 3576504626753;
   fn.__initData = __initData15;
   const derivedValue = obj3.useDerivedValue(fn);
-  obj4 = wrapperOffset(19204);
+  obj4 = wrapperOffset(19199);
   const pIPState = obj4.usePIPState();
   let obj5 = wrapperOffset(5095);
   const fn2 = function c() {
@@ -208,7 +208,7 @@ function AnimatedWrapper(wrapperOffset) {
       }
     }
   };
-  let obj6 = { cheapWorkletShallowEqual: wrapperOffset(10089).cheapWorkletShallowEqual, VoicePanelModes: preJoinContentSize, isDockEnabled: isDockEnabled2, wrapperDimensions, updateSharedValueIfChanged: height(11227), wrapperOffset, getMaxPanelWidth: wrapperOffset(19191).getMaxPanelWidth, getPanelX: wrapperOffset(19191).getPanelX, roundToNearestPixel: height(12411), windowDimensions };
+  let obj6 = { cheapWorkletShallowEqual: wrapperOffset(10089).cheapWorkletShallowEqual, VoicePanelModes: preJoinContentSize, isDockEnabled: isDockEnabled2, wrapperDimensions, updateSharedValueIfChanged: height(11227), wrapperOffset, getMaxPanelWidth: wrapperOffset(19186).getMaxPanelWidth, getPanelX: wrapperOffset(19186).getPanelX, roundToNearestPixel: height(12411), windowDimensions };
   fn3.__closure = obj6;
   fn3.__workletHash = 2786627914150;
   fn3.__initData = __initData17;
@@ -340,12 +340,12 @@ function AnimatedWrapper(wrapperOffset) {
       return obj11;
     }
   }
-  let obj8 = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: preJoinContentSize, runOnJS: wrapperOffset(5095).runOnJS, updateSourceTrackingView: height(5874).updateSourceTrackingView, isDockEnabled: isDockEnabled2, getDockSheetTransform: wrapperOffset(19208).getDockSheetTransform, isDockConnected, dockMinimizeProgress, dockHeight, dockJoinMorphOrigin, dockEntryProgress, sheetExitProgress, dockPressProgress, withSpring: wrapperOffset(5637).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: sheetExitProgress, DRAWER_SIZE_PHYSICS: obj4 };
+  let obj8 = { useReducedMotion, wrapperDimensions, wrapperOffset, connected, mode, VoicePanelModes: preJoinContentSize, runOnJS: wrapperOffset(5095).runOnJS, updateSourceTrackingView: height(5874).updateSourceTrackingView, isDockEnabled: isDockEnabled2, getDockSheetTransform: wrapperOffset(19203).getDockSheetTransform, isDockConnected, dockMinimizeProgress, dockHeight, dockJoinMorphOrigin, dockEntryProgress, sheetExitProgress, dockPressProgress, withSpring: wrapperOffset(5637).withSpring, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: sheetExitProgress, DRAWER_SIZE_PHYSICS: obj4 };
   R.__closure = obj8;
   R.__workletHash = 1655956175061;
   R.__initData = __initData18;
   animatedStyle = obj7.useAnimatedStyle(R);
-  let obj9 = wrapperOffset(19208);
+  let obj9 = wrapperOffset(19203);
   dockSheetSurfaceFills = obj9.useDockSheetSurfaceFills();
   let obj10 = wrapperOffset(5095);
   class J {
@@ -368,7 +368,7 @@ function AnimatedWrapper(wrapperOffset) {
       return dockSheetSurfaceStyle;
     }
   }
-  let obj11 = { isDockEnabled: isDockEnabled2, getDockSheetSurfaceStyle: wrapperOffset(19208).getDockSheetSurfaceStyle, isDockConnected, dockPressProgress, dockJoinMorphOrigin, mode, dockMinimizeProgress, wrapperDimensions, dockSurfaceFills: dockSheetSurfaceFills, VoicePanelModes: preJoinContentSize };
+  let obj11 = { isDockEnabled: isDockEnabled2, getDockSheetSurfaceStyle: wrapperOffset(19203).getDockSheetSurfaceStyle, isDockConnected, dockPressProgress, dockJoinMorphOrigin, mode, dockMinimizeProgress, wrapperDimensions, dockSurfaceFills: dockSheetSurfaceFills, VoicePanelModes: preJoinContentSize };
   J.__closure = obj11;
   J.__workletHash = 14748671783030;
   J.__initData = __initData20;
@@ -417,10 +417,10 @@ function AnimatedWrapper(wrapperOffset) {
       }
     }
   }
-  U.__closure = { isDockEnabled: isDockEnabled2, getDockSheetShape: wrapperOffset(19208).getDockSheetShape, isDockConnected, dockJoinMorphOrigin, dockMinimizeProgress, wrapperDimensions, getDockSheetShadowOpacity: wrapperOffset(19208).getDockSheetShadowOpacity, dockPressProgress, computeBorderRadii, mode, connected, withSpring: wrapperOffset(5637).withSpring, BORDER_RADIUS_PHYSICS: isDockConnected, styles: tmp8 };
+  U.__closure = { isDockEnabled: isDockEnabled2, getDockSheetShape: wrapperOffset(19203).getDockSheetShape, isDockConnected, dockJoinMorphOrigin, dockMinimizeProgress, wrapperDimensions, getDockSheetShadowOpacity: wrapperOffset(19203).getDockSheetShadowOpacity, dockPressProgress, computeBorderRadii, mode, connected, withSpring: wrapperOffset(5637).withSpring, BORDER_RADIUS_PHYSICS: isDockConnected, styles: tmp8 };
   U.__workletHash = 13910949523845;
   U.__initData = __initData21;
-  ({ isDockEnabled: isDockEnabled2, getDockSheetShape: wrapperOffset(19208).getDockSheetShape, isDockConnected, dockJoinMorphOrigin, dockMinimizeProgress, wrapperDimensions, getDockSheetShadowOpacity: wrapperOffset(19208).getDockSheetShadowOpacity, dockPressProgress, computeBorderRadii, mode, connected, withSpring: wrapperOffset(5637).withSpring, BORDER_RADIUS_PHYSICS: isDockConnected, styles: tmp8 });
+  ({ isDockEnabled: isDockEnabled2, getDockSheetShape: wrapperOffset(19203).getDockSheetShape, isDockConnected, dockJoinMorphOrigin, dockMinimizeProgress, wrapperDimensions, getDockSheetShadowOpacity: wrapperOffset(19203).getDockSheetShadowOpacity, dockPressProgress, computeBorderRadii, mode, connected, withSpring: wrapperOffset(5637).withSpring, BORDER_RADIUS_PHYSICS: isDockConnected, styles: tmp8 });
   animatedStyle2 = obj12.useAnimatedStyle(U);
   if (!wrapperOffset(6541).isStable) {
     const tmp6Result = wrapperOffset(5095);
@@ -1489,7 +1489,7 @@ const memoResult = react.memo(function VoicePanelUI() {
     const tmp47 = AnimatedWrapper;
     if (isDockEnabled) {
       const obj34 = { children: tmp41 };
-      tmp38Result = tmp38(tmp14(19208).VoicePanelContentWithDock, obj34);
+      tmp38Result = tmp38(tmp14(19203).VoicePanelContentWithDock, obj34);
     }
     obj35 = { children: items8 };
     items9[1] = closure_21(tmp47, obj33);

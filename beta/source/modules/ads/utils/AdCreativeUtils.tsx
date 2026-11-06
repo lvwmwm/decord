@@ -1,10 +1,10 @@
-// Module ID: 17079
-// Function ID: 17080
+// Module ID: 17074
+// Function ID: 17075
 // Name: AdCreativeUtils
 // Dependencies: [6788, 2]
 // Exports: getCreativeAnalyticsParams, getQuestDockAdCreativeId, getQuestDockQuest
 
-// Module 17079 (AdCreativeUtils)
+// Module 17074 (AdCreativeUtils)
 import AdCreativeType from "AdCreativeType" /* 6788 */;
 import size from "module_2" /* 2 */;
 

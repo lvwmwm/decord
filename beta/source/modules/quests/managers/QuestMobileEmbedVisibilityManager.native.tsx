@@ -1,9 +1,9 @@
-// Module ID: 20033
-// Function ID: 20034
+// Module ID: 20028
+// Function ID: 20029
 // Name: QuestMobileEmbedVisibilityManager
 // Dependencies: [32, 5259, 6843, 9825, 6875, 4867, 4863, 4917, 10135, 1993, 7846, 9686, 1072, 7853, 7287, 1451, 5752, 6784, 6788, 14700, 6873, 5198, 1092, 1093, 5960, 7871, 5199, 2]
 
-// Module 20033 (QuestMobileEmbedVisibilityManager)
+// Module 20028 (QuestMobileEmbedVisibilityManager)
 import Constants from "Constants" /* 1072 */;
 import ConstantsIOS from "ConstantsIOS" /* 1092 */;
 import ChannelTypes from "ChannelTypes" /* 1093 */;

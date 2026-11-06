@@ -1,10 +1,10 @@
-// Module ID: 14984
-// Function ID: 14985
+// Module ID: 14979
+// Function ID: 14980
 // Name: useUserProfileGameFriendApplicationIds
 // Dependencies: [19, 4956, 1383, 504, 14920, 2]
 // Exports: useUserProfileGameFriendApplicationIds
 
-// Module 14984 (useUserProfileGameFriendApplicationIds)
+// Module 14979 (useUserProfileGameFriendApplicationIds)
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;
 import UserStore from "UserStore" /* 1383 */;

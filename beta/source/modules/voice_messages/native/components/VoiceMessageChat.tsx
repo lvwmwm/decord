@@ -172,7 +172,7 @@ function Duration(animationValue) {
   const items2 = [first1];
   const effect1 = first1.useEffect(() => {
     let closure_0;
-    const f137257 = (arg0) => !arg0;
+    const f137248 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -184,10 +184,10 @@ function Duration(animationValue) {
           num = num2;
         }
         function flash() {
-          closure_7(f137257);
+          closure_7(f137248);
           const timeout = setTimeout(flash, num);
         }
-        closure_7(f137257);
+        closure_7(f137248);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {

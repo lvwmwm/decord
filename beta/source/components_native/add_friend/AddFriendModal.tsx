@@ -1,10 +1,10 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15672
+// Function ID: 15673
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1383, 1072, 14249, 21, 5014, 6723, 575, 14251, 5593, 1252, 1375, 1500, 6744, 5068, 1113, 8931, 7558, 15678, 6998, 5624, 15679, 15680, 1625, 7169, 2]
+// Dependencies: [32, 19, 17, 1383, 1072, 14249, 21, 5014, 6723, 575, 14251, 5593, 1252, 1375, 1500, 6744, 5068, 1113, 8931, 7558, 15673, 6998, 5624, 15674, 15675, 1625, 7169, 2]
 // Exports: default
 
-// Module 15677 (AddFriendModal)
+// Module 15672 (AddFriendModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;

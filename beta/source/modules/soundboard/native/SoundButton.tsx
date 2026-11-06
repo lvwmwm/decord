@@ -1,16 +1,16 @@
-// Module ID: 19180
-// Function ID: 19181
+// Module ID: 19175
+// Function ID: 19176
 // Name: SoundButton
-// Dependencies: [19, 17, 19174, 21, 5095, 5014, 575, 1375, 6980, 5637, 7300, 13429, 19181, 19182, 7326, 7351, 19184, 19171, 19186, 5624, 8667, 2]
+// Dependencies: [19, 17, 19169, 21, 5095, 5014, 575, 1375, 6980, 5637, 7300, 13429, 19176, 19177, 7326, 7351, 19179, 19166, 19181, 5624, 8667, 2]
 
-// Module 19180 (SoundButton)
+// Module 19175 (SoundButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Pressables from "Pressables" /* 6980 */;
 import EmojiDefault from "Emoji" /* 7300 */;
 import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 13429 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19174 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19186 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19169 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 19181 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;

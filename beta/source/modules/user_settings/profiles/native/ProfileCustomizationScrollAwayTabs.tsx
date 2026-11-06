@@ -1,10 +1,10 @@
-// Module ID: 16578
-// Function ID: 16579
+// Module ID: 16573
+// Function ID: 16574
 // Name: ProfileCustomizationScrollAwayTabs
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5596, 5095, 1375, 5303, 16463, 12170, 14192, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5596, 5095, 1375, 5303, 16458, 12170, 14192, 2]
 // Exports: default
 
-// Module 16578 (ProfileCustomizationScrollAwayTabs)
+// Module 16573 (ProfileCustomizationScrollAwayTabs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

@@ -1,9 +1,9 @@
-// Module ID: 17671
-// Function ID: 17672
+// Module ID: 17666
+// Function ID: 17667
 // Name: MfaStepsTypes
 // Dependencies: [2]
 
-// Module 17671 (MfaStepsTypes)
+// Module 17666 (MfaStepsTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/mfa/native/MfaStepsTypes.tsx");

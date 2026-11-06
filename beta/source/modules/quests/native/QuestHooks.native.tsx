@@ -1,10 +1,10 @@
-// Module ID: 17068
-// Function ID: 17069
+// Module ID: 17063
+// Function ID: 17064
 // Name: QuestHooks
-// Dependencies: [5, 19, 5259, 2038, 7845, 7846, 6781, 6546, 1083, 17069, 17095, 6784, 6873, 5198, 504, 6788, 17079, 7112, 7842, 9681, 9673, 9695, 7868, 7326, 11727, 7866, 11791, 6881, 11693, 2]
+// Dependencies: [5, 19, 5259, 2038, 7845, 7846, 6781, 6546, 1083, 17064, 17090, 6784, 6873, 5198, 504, 6788, 17074, 7112, 7842, 9681, 9673, 9695, 7868, 7326, 11727, 7866, 11791, 6881, 11693, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 17068 (QuestHooks)
+// Module 17063 (QuestHooks)
 import Constants from "Constants" /* 1083 */;
 import CaptchaConstants from "CaptchaConstants" /* 6546 */;
 import QuestTypes from "QuestTypes" /* 6784 */;
@@ -12,8 +12,8 @@ import AdCreativeType from "AdCreativeType" /* 6788 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6881 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 7868 */;
 import AssetUtils from "AssetUtils" /* 9695 */;
-import QuestDockHooks from "QuestDockHooks" /* 17069 */;
-import useQuestForPlacement from "useQuestForPlacement" /* 17095 */;
+import QuestDockHooks from "QuestDockHooks" /* 17064 */;
+import useQuestForPlacement from "useQuestForPlacement" /* 17090 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5259 */;
@@ -60,7 +60,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   const isQuestExpired = tmpResult6.useIsQuestExpired(questDockQuest);
   const tmpResult7 = tmp(9673);
   let isEligibleForQuests = tmpResult7.getIsEligibleForQuests();
-  const tmpResult8 = tmp(17079);
+  const tmpResult8 = tmp(17074);
   questDockAdCreativeId = tmpResult8.getQuestDockAdCreativeId(mobileQuestDock);
   const items1 = [tmp5];
   const items2 = [questDockAdCreativeId];

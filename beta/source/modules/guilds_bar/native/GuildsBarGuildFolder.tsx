@@ -1,9 +1,9 @@
-// Module ID: 18369
-// Function ID: 18370
+// Module ID: 18364
+// Function ID: 18365
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5015, 6886, 4885, 5045, 6772, 18361, 18366, 18358, 21, 5014, 575, 5596, 504, 6957, 5637, 5011, 1090, 7241, 5095, 5080, 5717, 8606, 18370, 18373, 12802, 18380, 5260, 6902, 6960, 18363, 18381, 2]
+// Dependencies: [19, 5015, 6886, 4885, 5045, 6772, 18356, 18361, 18353, 21, 5014, 575, 5596, 504, 6957, 5637, 5011, 1090, 7241, 5095, 5080, 5717, 8606, 18365, 18368, 12802, 18375, 5260, 6902, 6960, 18358, 18376, 2]
 
-// Module 18369 (GuildsBarGuildFolder)
+// Module 18364 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
@@ -16,15 +16,15 @@ import SortedGuildStore2 from "SortedGuildStore" /* 6772 */;
 import NativeViewDefault from "NativeView" /* 6960 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8606 */;
 import ListUtils from "ListUtils" /* 12802 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18363 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 18358 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6886 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18361 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18366 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18358 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18356 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 18361 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 18353 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;

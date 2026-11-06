@@ -1,9 +1,9 @@
-// Module ID: 17237
-// Function ID: 17238
+// Module ID: 17232
+// Function ID: 17233
 // Name: VoiceSetting
-// Dependencies: [2006, 1072, 504, 1113, 11540, 11972, 17238, 2]
+// Dependencies: [2006, 1072, 504, 1113, 11540, 11972, 17233, 2]
 
-// Module 17237 (VoiceSetting)
+// Module 17232 (VoiceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl3 from "intl" /* 1113 */;
 import MicrophoneIcon from "MicrophoneIcon" /* 11972 */;

@@ -1,10 +1,10 @@
-// Module ID: 17080
-// Function ID: 17081
+// Module ID: 17075
+// Function ID: 17076
 // Name: QuestDockContextMenuActionSheet
-// Dependencies: [5, 19, 6781, 1072, 21, 17079, 14690, 6788, 9705, 1113, 6784, 7871, 9684, 9687, 7368, 15176, 8177, 9719, 5258, 7366, 7866, 17081, 9678, 7054, 9682, 17083, 14691, 9681, 9378, 17084, 12177, 17086, 7137, 7563, 5731, 7358, 14516, 17088, 2]
+// Dependencies: [5, 19, 6781, 1072, 21, 17074, 14690, 6788, 9705, 1113, 6784, 7871, 9684, 9687, 7368, 15171, 8177, 9719, 5258, 7366, 7866, 17076, 9678, 7054, 9682, 17078, 14691, 9681, 9378, 17079, 12177, 17081, 7137, 7563, 5731, 7358, 14516, 17083, 2]
 // Exports: default
 
-// Module 17080 (QuestDockContextMenuActionSheet)
+// Module 17075 (QuestDockContextMenuActionSheet)
 import Constants from "Constants" /* 1072 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5258 */;
 import QuestConstants from "QuestConstants" /* 6781 */;
@@ -19,7 +19,7 @@ import captureAdUserAction2 from "captureAdUserAction" /* 9684 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9687 */;
 import QuestCopyUtils from "QuestCopyUtils" /* 9705 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9719 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17088 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17083 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -113,7 +113,7 @@ function QuestDockPreviewTools(quest) {
     }
   };
   const ActionSheetRow2 = quest(7368).ActionSheetRow;
-  obj7 = { IconComponent: quest(17084).RedoIcon };
+  obj7 = { IconComponent: quest(17079).RedoIcon };
   Icon2 = quest(7368).ActionSheetRow.Icon;
   obj8 = { text: intl3.string(quest(1113).t.cKSLr4) };
   FormLabel2 = quest(8177).FormLabel;
@@ -145,7 +145,7 @@ function QuestDockPreviewTools(quest) {
     }
   };
   const ActionSheetRow4 = quest(7368).ActionSheetRow;
-  obj13 = { IconComponent: quest(17086).UnsendIcon };
+  obj13 = { IconComponent: quest(17081).UnsendIcon };
   Icon4 = quest(7368).ActionSheetRow.Icon;
   obj14 = { text: intl5.string(quest(1113).t.JF6W66) };
   FormLabel4 = quest(8177).FormLabel;

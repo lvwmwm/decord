@@ -1,10 +1,10 @@
-// Module ID: 18278
-// Function ID: 18279
+// Module ID: 18273
+// Function ID: 18274
 // Name: ChannelBadge
 // Dependencies: [19, 17, 2062, 21, 5014, 563, 13013, 13844, 5624, 1895, 2]
 // Exports: default
 
-// Module 18278 (ChannelBadge)
+// Module 18273 (ChannelBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;

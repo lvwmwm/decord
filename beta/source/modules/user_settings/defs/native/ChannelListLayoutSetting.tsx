@@ -1,10 +1,10 @@
-// Module ID: 17529
-// Function ID: 17530
+// Module ID: 17524
+// Function ID: 17525
 // Name: ChannelListLayoutSetting
 // Dependencies: [8432, 4839, 1113, 5692, 11540, 2]
 // Exports: useChannelListLayoutPredicate
 
-// Module 17529 (ChannelListLayoutSetting)
+// Module 17524 (ChannelListLayoutSetting)
 import intl3 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4839 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5692 */;

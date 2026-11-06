@@ -1,10 +1,10 @@
-// Module ID: 19309
-// Function ID: 19310
+// Module ID: 19304
+// Function ID: 19305
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 5765, 4919, 502, 4863, 2006, 4946, 1383, 5679, 21, 3, 5014, 504, 7526, 11970, 12003, 11222, 5095, 19206, 5260, 11211, 5303, 19310, 19311, 1113, 11972, 5624, 9240, 11971, 2]
+// Dependencies: [32, 19, 5765, 4919, 502, 4863, 2006, 4946, 1383, 5679, 21, 3, 5014, 504, 7526, 11970, 12003, 11222, 5095, 19201, 5260, 11211, 5303, 19305, 19306, 1113, 11972, 5624, 9240, 11971, 2]
 // Exports: MicButton, PTTButton
 
-// Module 19309 (VoicePanelMicButton)
+// Module 19304 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import HapticUtils from "HapticUtils" /* 5260 */;

@@ -1,10 +1,10 @@
-// Module ID: 17766
-// Function ID: 17767
+// Module ID: 17761
+// Function ID: 17762
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1072, 1240, 21, 17767, 5634, 17768, 8028, 7562, 9195, 15855, 8399, 12782, 10993, 12783, 9243, 5014, 575, 1497, 5258, 17769, 1994, 6027, 5624, 10549, 9185, 9191, 9193, 9192, 9190, 9189, 6767, 5080, 1090, 5587, 6977, 10736, 8999, 2]
+// Dependencies: [32, 19, 17, 1072, 1240, 21, 17762, 5634, 17763, 8028, 7562, 9195, 15850, 8399, 12782, 10993, 12783, 9243, 5014, 575, 1497, 5258, 17764, 1994, 6027, 5624, 10549, 9185, 9191, 9193, 9192, 9190, 9189, 6767, 5080, 1090, 5587, 6977, 10736, 8999, 2]
 // Exports: default
 
-// Module 17766 (UserSettingsDesignSystemButton)
+// Module 17761 (UserSettingsDesignSystemButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import LinearGradientDefault from "LinearGradient" /* 5587 */;
@@ -23,8 +23,8 @@ import AssetRegistryDefault10 from "AssetRegistry" /* 10549 */;
 import AssetRegistryDefault11 from "AssetRegistry" /* 10993 */;
 import ToggleIconButton2 from "ToggleIconButton" /* 12782 */;
 import useToggleButtonProps from "useToggleButtonProps" /* 12783 */;
-import ToggleButton2 from "ToggleButton" /* 15855 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17767 */;
+import ToggleButton2 from "ToggleButton" /* 15850 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17762 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -49,7 +49,7 @@ let obj5;
 let tmp;
 let unpackModuleId;
 const AssetRegistryDefault = tmp(7562);
-const AssetRegistryDefault12 = tmp(17768);
+const AssetRegistryDefault12 = tmp(17763);
 function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;

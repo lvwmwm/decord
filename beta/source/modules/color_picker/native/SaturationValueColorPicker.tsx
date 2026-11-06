@@ -1,15 +1,15 @@
-// Module ID: 16454
-// Function ID: 16455
+// Module ID: 16449
+// Function ID: 16450
 // Name: SaturationValueColorPicker
-// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 16452, 5587, 5303, 2]
+// Dependencies: [32, 19, 17, 21, 5014, 575, 5095, 16447, 5587, 5303, 2]
 // Exports: default
 
-// Module 16454 (SaturationValueColorPicker)
+// Module 16449 (SaturationValueColorPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ReanimatedRexport from "ReanimatedRexport" /* 5095 */;
 import LinearGradientDefault from "LinearGradient" /* 5587 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 16452 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 16447 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ function ColorBox(hue) {
       return obj.hslToRgbWorklet(obj2);
     }
   }
-  let obj = { hslToRgbWorklet: hue(16452).hslToRgbWorklet, hue };
+  let obj = { hslToRgbWorklet: hue(16447).hslToRgbWorklet, hue };
   const useAnimatedReaction = tmp5.useAnimatedReaction;
   S.__closure = obj;
   S.__workletHash = 8814597686728;
@@ -143,7 +143,7 @@ export default function SaturationValueColorPicker(hue) {
     }
   };
   const tmp8 = hue(5303);
-  size = { saturation, normalizeValue: hue(16452).normalizeValue, width: colorBoxWidth, value, height: first1, onPanUpdate, runOnJS: hue(5095).runOnJS };
+  size = { saturation, normalizeValue: hue(16447).normalizeValue, width: colorBoxWidth, value, height: first1, onPanUpdate, runOnJS: hue(5095).runOnJS };
   const usePanGesture = tmp8.usePanGesture;
   fn.__closure = size;
   fn.__workletHash = 1039948278130;
@@ -162,7 +162,7 @@ export default function SaturationValueColorPicker(hue) {
       tmpResult.runOnJS(tmp5)();
     }
   };
-  const size1 = { saturation, normalizeValue: hue(16452).normalizeValue, width: colorBoxWidth, value, height: first1, onPanUpdate, runOnJS: hue(5095).runOnJS };
+  const size1 = { saturation, normalizeValue: hue(16447).normalizeValue, width: colorBoxWidth, value, height: first1, onPanUpdate, runOnJS: hue(5095).runOnJS };
   fn2.__closure = size1;
   fn2.__workletHash = 3656850328181;
   fn2.__initData = __initData4;
@@ -193,7 +193,7 @@ export default function SaturationValueColorPicker(hue) {
     ({ translateY: first1 * (1 - dependencyMap.get()) });
     return obj4;
   };
-  let obj3 = { hsvToRgbWorklet: hue(16452).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth, colorBoxHeight: first1 };
+  let obj3 = { hsvToRgbWorklet: hue(16447).hsvToRgbWorklet, hue, saturation, value, colorBoxWidth, colorBoxHeight: first1 };
   fn4.__closure = obj3;
   fn4.__workletHash = 15029576157619;
   fn4.__initData = __initData6;

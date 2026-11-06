@@ -1,9 +1,9 @@
-// Module ID: 18098
-// Function ID: 18099
+// Module ID: 18093
+// Function ID: 18094
 // Name: MessagesItemPlaceholder
 // Dependencies: [19, 21, 9128, 2]
 
-// Module 18098 (MessagesItemPlaceholder)
+// Module 18093 (MessagesItemPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 9128 */;
 import react from "react" /* 19 */;

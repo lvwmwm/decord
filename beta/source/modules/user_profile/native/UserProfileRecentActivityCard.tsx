@@ -1,10 +1,10 @@
-// Module ID: 14978
-// Function ID: 14979
+// Module ID: 14973
+// Function ID: 14974
 // Name: UserProfileRecentActivityCard
 // Dependencies: [19, 17, 21, 14858, 8718, 14863, 5014, 575, 8912, 5080, 8143, 5021, 5717, 1409, 2026, 5624, 14845, 7326, 7351, 14870, 14871, 9316, 9340, 6980, 1113, 2]
 // Exports: default
 
-// Module 14978 (UserProfileRecentActivityCard)
+// Module 14973 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1409 */;

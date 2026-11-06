@@ -1,10 +1,10 @@
-// Module ID: 18958
-// Function ID: 18959
+// Module ID: 18953
+// Function ID: 18954
 // Name: ContextMenuCommandItem
 // Dependencies: [19, 17, 21, 5014, 575, 6975, 12, 1113, 13793, 5717, 1992, 5729, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
-// Module 18958 (ContextMenuCommandItem)
+// Module 18953 (ContextMenuCommandItem)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

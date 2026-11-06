@@ -1,16 +1,16 @@
-// Module ID: 18195
-// Function ID: 18196
+// Module ID: 18190
+// Function ID: 18191
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 4866, 21, 18196, 18197, 18198, 504, 7366, 7321, 1113, 7368, 8645, 3450, 5738, 6744, 18199, 1994, 12482, 18203, 7135, 2]
+// Dependencies: [19, 4866, 21, 18191, 18192, 18193, 504, 7366, 7321, 1113, 7368, 8645, 3450, 5738, 6744, 18194, 1994, 12482, 18198, 7135, 2]
 // Exports: default
 
-// Module 18195 (FavoritesGuildActionSheet)
+// Module 18190 (FavoritesGuildActionSheet)
 import asyncRequire from "asyncRequire" /* 1994 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6744 */;
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 18196 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 18197 */;
-import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 18198 */;
-import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 18203 */;
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 18191 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 18192 */;
+import useFavoritesGuildAutoAddedThreadsActionDefault from "useFavoritesGuildAutoAddedThreadsAction" /* 18193 */;
+import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 18198 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4866 */;
 import Fragment from "Fragment" /* 21 */;
@@ -79,7 +79,7 @@ export default function FavoritesGuildActionSheet(onClose) {
       onPress() {
           onClose();
           const obj = ModalActionCreatorsDefault;
-          obj.pushLazy(asyncRequire(18199, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
+          obj.pushLazy(asyncRequire(18194, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
         }
     };
     const ActionSheetRow = tmp6(7368).ActionSheetRow;

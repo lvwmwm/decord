@@ -13,12 +13,12 @@ class peg$SyntaxError {
   }
   static buildMessage(arg0, str) {
     let length;
-    const f124370 = (str) => {
+    const f124361 = (str) => {
       str = str.charCodeAt(0);
       const str2 = str.toString(16);
       return "\\x0" + str2.toUpperCase();
     };
-    const f124371 = (str) => {
+    const f124362 = (str) => {
       str = str.charCodeAt(0);
       const str2 = str.toString(16);
       return "\\x" + str2.toUpperCase();
@@ -32,16 +32,16 @@ class peg$SyntaxError {
         const str5 = str4.replace(/\t/g, "\\t");
         const str6 = str5.replace(/\n/g, "\\n");
         const str7 = str6.replace(/\r/g, "\\r");
-        const str8 = str7.replace(/[\x00-\x0F]/g, f124370);
-        return "\"" + str8.replace(/[\x10-\x1F\x7F-\x9F]/g, f124371) + "\"";
+        const str8 = str7.replace(/[\x00-\x0F]/g, f124361);
+        return "\"" + str8.replace(/[\x10-\x1F\x7F-\x9F]/g, f124362) + "\"";
       },
       class: (parts) => {
-        const f124372 = (str) => {
+        const f124363 = (str) => {
           str = str.charCodeAt(0);
           const str2 = str.toString(16);
           return "\\x0" + str2.toUpperCase();
         };
-        const f124373 = (str) => {
+        const f124364 = (str) => {
           str = str.charCodeAt(0);
           const str2 = str.toString(16);
           return "\\x" + str2.toUpperCase();
@@ -65,9 +65,9 @@ class peg$SyntaxError {
               let str20 = str19.replace(/\t/g, "\\t");
               let str21 = str20.replace(/\n/g, "\\n");
               let str22 = str21.replace(/\r/g, "\\r");
-              let str23 = str22.replace(/[\x00-\x0F]/g, f124372);
+              let str23 = str22.replace(/[\x00-\x0F]/g, f124363);
               let str24 = parts.parts[num][1];
-              let text = `${str23.replace(/[\x10-\x1F\x7F-\x9F]/g, f124373)}-`;
+              let text = `${str23.replace(/[\x10-\x1F\x7F-\x9F]/g, f124364)}-`;
               let str25 = str24.replace(/\\/g, "\\\\");
               let str26 = str25.replace(/\]/g, "\\]");
               let str27 = str26.replace(/\^/g, "\\^");
@@ -76,8 +76,8 @@ class peg$SyntaxError {
               let str30 = str29.replace(/\t/g, "\\t");
               let str31 = str30.replace(/\n/g, "\\n");
               let str32 = str31.replace(/\r/g, "\\r");
-              let str33 = str32.replace(/[\x00-\x0F]/g, f124372);
-              text1 = `${str23.replace(/[\x10-\x1F\x7F-\x9F]/g, f124373)}-${str33.replace(/[\x10-\x1F\x7F-\x9F]/g, f124373)}`;
+              let str33 = str32.replace(/[\x00-\x0F]/g, f124363);
+              text1 = `${str23.replace(/[\x10-\x1F\x7F-\x9F]/g, f124364)}-${str33.replace(/[\x10-\x1F\x7F-\x9F]/g, f124364)}`;
             } else {
               let str5 = str4.replace(/\\/g, "\\\\");
               let str6 = str5.replace(/\]/g, "\\]");
@@ -87,8 +87,8 @@ class peg$SyntaxError {
               let str10 = str9.replace(/\t/g, "\\t");
               let str11 = str10.replace(/\n/g, "\\n");
               let str12 = str11.replace(/\r/g, "\\r");
-              let str13 = str12.replace(/[\x00-\x0F]/g, f124372);
-              text1 = str13.replace(/[\x10-\x1F\x7F-\x9F]/g, f124373);
+              let str13 = str12.replace(/[\x00-\x0F]/g, f124363);
+              text1 = str13.replace(/[\x10-\x1F\x7F-\x9F]/g, f124364);
             }
             str2 = str2 + text1;
             num = num + 1;
@@ -165,9 +165,9 @@ class peg$SyntaxError {
       let str14 = str12.replace(/\n/g, "\\n");
       let str15 = "\\r";
       let str16 = str14.replace(/\r/g, "\\r");
-      let str17 = str16.replace(/[\x00-\x0F]/g, f124370);
+      let str17 = str16.replace(/[\x00-\x0F]/g, f124361);
       let str18 = "\"";
-      str4 = `${"\"" + str17.replace(/[\x10-\x1F\x7F-\x9F]/g, f124371)}"`;
+      str4 = `${"\"" + str17.replace(/[\x10-\x1F\x7F-\x9F]/g, f124362)}"`;
     }
     return text + " but " + str4 + " found.";
   }

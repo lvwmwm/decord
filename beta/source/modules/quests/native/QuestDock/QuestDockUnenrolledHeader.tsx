@@ -1,18 +1,18 @@
-// Module ID: 17163
-// Function ID: 17164
+// Module ID: 17158
+// Function ID: 17159
 // Name: QuestDockUnenrolledHeader
-// Dependencies: [19, 17, 1083, 21, 5014, 17100, 17069, 17088, 6784, 7871, 5253, 5021, 17068, 17164, 5624, 1113, 5717, 17168, 17169, 17128, 2]
+// Dependencies: [19, 17, 1083, 21, 5014, 17095, 17064, 17083, 6784, 7871, 5253, 5021, 17063, 17159, 5624, 1113, 5717, 17163, 17164, 17123, 2]
 
-// Module 17163 (QuestDockUnenrolledHeader)
+// Module 17158 (QuestDockUnenrolledHeader)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
 import useThemeDefault from "useTheme" /* 5253 */;
 import FastImageDefault from "FastImage" /* 5717 */;
 import QuestTypes from "QuestTypes" /* 6784 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 7871 */;
-import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17088 */;
-import QuestGameLogotypeDefault from "QuestGameLogotype" /* 17128 */;
-import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 17164 */;
+import QuestDisclosureModalActionCreatorsDefault from "QuestDisclosureModalActionCreators" /* 17083 */;
+import QuestGameLogotypeDefault from "QuestGameLogotype" /* 17123 */;
+import QuestDockBackgroundBlurHeaderDefault from "QuestDockBackgroundBlurHeader" /* 17159 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5014 */;
@@ -36,11 +36,11 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader() {
   let tmp15;
   let tmp16;
   let tmp7Result4;
-  let obj = questCreative(17100);
+  let obj = questCreative(17095);
   const questDockQuest = obj.useQuestDockQuest();
-  let obj2 = questCreative(17100);
+  let obj2 = questCreative(17095);
   questCreative = obj2.useQuestCreative(questDockQuest);
-  const obj3 = questCreative(17069);
+  const obj3 = questCreative(17064);
   const items = [questCreative];
   const actionSheetPressHandler = obj3.useActionSheetPressHandler(questCreative);
   const callback = react.useCallback(() => {
@@ -59,7 +59,7 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader() {
     tmp10 = tmp9;
   }
   const tmp11 = closure_8();
-  const tmpResult = questCreative(17068);
+  const tmpResult = questCreative(17063);
   const questGameLogotypeAssetUrl = tmpResult.useQuestGameLogotypeAssetUrl(questDockQuest);
   const questBarHeroBlurhash = questDockQuest.config.assets.questBarHeroBlurhash;
   const tmp7Result = QuestDockBackgroundBlurHeaderDefault;
@@ -72,9 +72,9 @@ const memoResult = react.memo(function QuestDockUnenrolledHeader() {
   tmp16 = View;
   const tmp7Result3 = FastImageDefault;
   if (LIGHT === tmp10.DARK) {
-    tmp7Result4 = tmp7(17168);
+    tmp7Result4 = tmp7(17163);
   } else {
-    tmp7Result4 = tmp7(17169);
+    tmp7Result4 = tmp7(17164);
   }
   items1 = [, ];
   const obj8 = { source: tmp7Result4, resizeMode: "contain", style: tmp11.wreathImage };

@@ -1,7 +1,7 @@
 // Module ID: 5755
 // Function ID: 5756
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 5015, 4863, 4920, 1072, 4870, 1083, 21, 5624, 5014, 575, 5756, 5654, 5199, 6744, 8750, 5958, 1113, 7358, 5711, 6957, 1187, 1377, 8940, 5709, 10126, 10181, 8571, 504, 5011, 8419, 5258, 11620, 1994, 11, 4839, 5717, 11593, 15663, 15665, 5727, 11576, 15667, 11498, 6032, 11055, 6034, 1375, 8603, 15668, 11057, 2]
+// Dependencies: [19, 17, 5015, 4863, 4920, 1072, 4870, 1083, 21, 5624, 5014, 575, 5756, 5654, 5199, 6744, 8750, 5958, 1113, 7358, 5711, 6957, 1187, 1377, 8940, 5709, 10126, 10181, 8571, 504, 5011, 8419, 5258, 11620, 1994, 11, 4839, 5717, 11593, 15658, 15660, 5727, 11576, 15662, 11498, 6032, 11055, 6034, 1375, 8603, 15663, 11057, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5755 (MarkupReactRules)
@@ -33,7 +33,7 @@ import SpoilerDefault from "Spoiler" /* 11055 */;
 import TimestampDefault from "Timestamp" /* 11057 */;
 import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 11498 */;
 import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 11576 */;
-import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 15668 */;
+import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 15663 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
@@ -590,7 +590,7 @@ function MarkupStaticRouteLink(state) {
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_16();
-  let SignPostIcon = state(15663).SignPostIcon;
+  let SignPostIcon = state(15658).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -601,7 +601,7 @@ function MarkupStaticRouteLink(state) {
           }
         }
       }
-      SignPostIcon = tmp2(15665).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(15660).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -675,7 +675,7 @@ function MarkupStaticRouteLink(state) {
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(15663).SignPostIcon;
+  SignPostIcon = tmp2(15658).SignPostIcon;
 }
 function MarkupAttachmentLink(state) {
   let SMALL;
@@ -701,7 +701,7 @@ function MarkupAttachmentLink(state) {
     str2 = "text-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15667), size: SMALL };
+  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15662), size: SMALL };
   const ThemedIcon = tmp3(1187).ThemedIcon;
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {

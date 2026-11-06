@@ -25,7 +25,7 @@ let closure_14;
 let closure_15;
 let metroImportDefault;
 let metroRequire;
-const f105692 = () => {
+const f105685 = () => {
   let systemChannelId;
   const getChannel = ChannelStore.getChannel;
   if (guild != null) {
@@ -33,8 +33,8 @@ const f105692 = () => {
   }
   return getChannel(systemChannelId);
 };
-const f105695 = () => LayerStore.hasLayers();
-const f105696 = () => {
+const f105688 = () => LayerStore.hasLayers();
+const f105689 = () => {
   id = undefined;
   getGuild = getGuild.getGuild;
   if (id != null) {
@@ -42,7 +42,7 @@ const f105696 = () => {
   }
   return getGuild(id);
 };
-const f105697 = () => id.getId();
+const f105690 = () => id.getId();
 let GuildChannelStore = GuildChannelStore_mod;
 ({ GUILD_SELECTABLE_CHANNELS_KEY: metroRequire, GUILD_VOCAL_CHANNELS_KEY: metroImportDefault } = GuildChannelStore);
 GuildChannelStore = GuildChannelStore_mod;
@@ -103,7 +103,7 @@ export function useGuildPopulated(guild) {
   _require = guild;
   const items = [ChannelStore];
   const obj = require("get initialized");
-  let closure_1 = obj.useStateFromStores(items, f105692);
+  let closure_1 = obj.useStateFromStores(items, f105685);
   const items1 = [MessageStore];
   const obj2 = require("get initialized");
   stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
@@ -137,10 +137,10 @@ export function useGuildPersonalized(guild) {
   _require = guild;
   const items = [LayerStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f105695);
+  const stateFromStores = obj.useStateFromStores(items, f105688);
   const items1 = [GuildStore];
   const obj2 = require("get initialized");
-  const stateFromStores1 = obj2.useStateFromStores(items1, f105696);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f105689);
   let icon;
   if (stateFromStores1 != null) {
     icon = stateFromStores1.icon;
@@ -151,7 +151,7 @@ export function useChannelsMessaged(items3) {
   _require = items3;
   const items = [AuthenticationStore];
   const obj = require("get initialized");
-  let closure_1 = obj.useStateFromStores(items, f105697);
+  let closure_1 = obj.useStateFromStores(items, f105690);
   const items1 = [MessageStore];
   const obj2 = require("get initialized");
   return obj2.useStateFromStores(items1, () => {
@@ -192,7 +192,7 @@ export function useGuildMessaged(arg0) {
   }, items1);
   const items2 = [AuthenticationStore];
   const obj2 = require("get initialized");
-  let closure_1 = obj2.useStateFromStores(items2, f105697);
+  let closure_1 = obj2.useStateFromStores(items2, f105690);
   const items3 = [MessageStore];
   const obj3 = require("get initialized");
   return obj3.useStateFromStores(items3, () => {
@@ -276,7 +276,7 @@ export function useCompletedStates(guild) {
   let tmp2 = stateFromStoresArray;
   let obj2 = require("get initialized");
   let items = [ChannelStore];
-  obj2.useStateFromStores(items, f105692);
+  obj2.useStateFromStores(items, f105685);
   const items1 = [MessageStore];
   const obj3 = require("get initialized");
   stateFromStoresArray = obj3.useStateFromStoresArray(items1, () => {
@@ -315,16 +315,16 @@ export function useCompletedStates(guild) {
   }, items5);
   const items6 = [AuthenticationStore];
   const obj6 = require("get initialized");
-  let closure_1 = obj6.useStateFromStores(items6, f105697);
+  let closure_1 = obj6.useStateFromStores(items6, f105690);
   items7 = [MessageStore];
   obj7 = require("get initialized");
   _require = guild;
   const items8 = [LayerStore];
   const obj8 = require("get initialized");
-  stateFromStores1 = obj8.useStateFromStores(items8, f105695);
+  stateFromStores1 = obj8.useStateFromStores(items8, f105688);
   const items9 = [GuildStore];
   const obj9 = require("get initialized");
-  const stateFromStores2 = obj9.useStateFromStores(items9, f105696);
+  const stateFromStores2 = obj9.useStateFromStores(items9, f105689);
   icon = undefined;
   if (stateFromStores2 != null) {
     icon = stateFromStores2.icon;

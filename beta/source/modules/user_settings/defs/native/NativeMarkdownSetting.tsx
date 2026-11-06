@@ -1,14 +1,14 @@
-// Module ID: 17532
-// Function ID: 17533
+// Module ID: 17527
+// Function ID: 17528
 // Name: NativeMarkdownSetting
-// Dependencies: [8432, 8564, 8561, 17531, 11540, 1113, 2]
+// Dependencies: [8432, 8564, 8561, 17526, 11540, 1113, 2]
 
-// Module 17532 (NativeMarkdownSetting)
+// Module 17527 (NativeMarkdownSetting)
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 8561 */;
 import useLabFeatureDefault from "useLabFeature" /* 8564 */;
-import LabFeatureActions from "LabFeatureActions" /* 17531 */;
+import LabFeatureActions from "LabFeatureActions" /* 17526 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

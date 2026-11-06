@@ -1,10 +1,10 @@
-// Module ID: 16002
-// Function ID: 16003
+// Module ID: 15997
+// Function ID: 15998
 // Name: Spacer
 // Dependencies: [19, 17, 21, 12, 2]
 // Exports: default
 
-// Module 16002 (Spacer)
+// Module 15997 (Spacer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

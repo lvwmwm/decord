@@ -1,10 +1,10 @@
-// Module ID: 15041
-// Function ID: 15042
+// Module ID: 15036
+// Function ID: 15037
 // Name: InlinePriceTag
-// Dependencies: [19, 17, 7597, 1074, 1072, 21, 5014, 575, 5624, 1987, 7731, 7732, 9532, 1113, 671, 5596, 5258, 15042, 1994, 7351, 5587, 1375, 9528, 7378, 8749, 2047, 15047, 9574, 15048, 9551, 15049, 504, 9565, 9566, 2]
+// Dependencies: [19, 17, 7597, 1074, 1072, 21, 5014, 575, 5624, 1987, 7731, 7732, 9532, 1113, 671, 5596, 5258, 15037, 1994, 7351, 5587, 1375, 9528, 7378, 8749, 2047, 15042, 9574, 15043, 9551, 15044, 504, 9565, 9566, 2]
 // Exports: default
 
-// Module 15041 (InlinePriceTag)
+// Module 15036 (InlinePriceTag)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -27,9 +27,9 @@ import OrbsIcon from "OrbsIcon" /* 9532 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9551 */;
 import CollectiblesShopPricePlaceholder from "CollectiblesShopPricePlaceholder" /* 9565 */;
 import useProductDisableState from "useProductDisableState" /* 9574 */;
-import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15047 */;
-import MobileNitroUpsellInShopPdpExperimentDefault from "MobileNitroUpsellInShopPdpExperiment" /* 15048 */;
-import useVirtualCurrencyData from "useVirtualCurrencyData" /* 15049 */;
+import useOpenNitroSubscribeActionSheetDefault from "useOpenNitroSubscribeActionSheet" /* 15042 */;
+import MobileNitroUpsellInShopPdpExperimentDefault from "MobileNitroUpsellInShopPdpExperiment" /* 15043 */;
+import useVirtualCurrencyData from "useVirtualCurrencyData" /* 15044 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import IAPStore from "IAPStore" /* 7597 */;
@@ -200,7 +200,7 @@ function ExpressiveNitroUpsell(arg0) {
       const tmp4 = dependencyMap;
       if (tmp4) {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-        const tmp11 = asyncRequire(15042, dependencyMap.paths);
+        const tmp11 = asyncRequire(15037, dependencyMap.paths);
         const obj = { analyticsLocations: items, title: intl.string(intl3.t.XcOMLu), description: intl2.string(intl3.t.JhE8nA) };
         items = [AnalyticsLocationDefault.COLLECTIBLES_SHOP_DETAILS_MODAL];
         intl = intl3.intl;

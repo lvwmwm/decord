@@ -1,10 +1,10 @@
-// Module ID: 16926
-// Function ID: 16927
+// Module ID: 16921
+// Function ID: 16922
 // Name: BountiesScrollPromptFooter
-// Dependencies: [19, 17, 5015, 6781, 21, 5014, 575, 5254, 5257, 504, 1625, 5095, 5149, 16927, 16928, 9960, 2]
+// Dependencies: [19, 17, 5015, 6781, 21, 5014, 575, 5254, 5257, 504, 1625, 5095, 5149, 16922, 16923, 9960, 2]
 // Exports: default
 
-// Module 16926 (BountiesScrollPromptFooter)
+// Module 16921 (BountiesScrollPromptFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,8 +14,8 @@ import timing from "timing" /* 5254 */;
 import timingPresets from "timingPresets" /* 5257 */;
 import QuestConstants from "QuestConstants" /* 6781 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9960 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16927 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16928 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16922 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16923 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import Fragment from "Fragment" /* 21 */;

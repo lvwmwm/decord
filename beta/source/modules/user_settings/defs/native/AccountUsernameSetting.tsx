@@ -1,9 +1,9 @@
-// Module ID: 16604
-// Function ID: 16605
+// Module ID: 16599
+// Function ID: 16600
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1383, 8432, 1072, 21, 504, 5068, 13301, 5624, 11540, 1113, 16605, 2]
+// Dependencies: [19, 1383, 8432, 1072, 21, 504, 5068, 13301, 5624, 11540, 1113, 16600, 2]
 
-// Module 16604 (AccountUsernameSetting)
+// Module 16599 (AccountUsernameSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,10 +1,10 @@
-// Module ID: 18320
-// Function ID: 18321
+// Module ID: 18315
+// Function ID: 18316
 // Name: useChannelListFlatData
 // Dependencies: [19, 7240, 2]
 // Exports: default
 
-// Module 18320 (useChannelListFlatData)
+// Module 18315 (useChannelListFlatData)
 import FastList from "FastList" /* 7240 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

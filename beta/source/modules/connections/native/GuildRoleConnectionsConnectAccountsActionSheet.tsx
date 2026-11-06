@@ -340,7 +340,7 @@ function IdentityConnectionsCheckGroup(eligibilityState) {
     items2[2] = prop1;
     let tmp15Result = null;
     if (null != memo) {
-      const obj8 = { style: tmp.appIcon, user: memo, size: tmp2(tmp3[21]).AvatarSizes.XSMALL, guildId: "Array" };
+      const obj8 = { style: tmp.appIcon, user: memo, size: tmp2(tmp3[21]).AvatarSizes.XSMALL, guildId: "a" };
       const Avatar = tmp2(tmp3[21]).Avatar;
       tmp15Result = tmp15(Avatar, obj8);
     }
@@ -654,7 +654,7 @@ function ConnectionsChecks(eligibilityStatesGroups) {
       items1[1] = tmp22Result6;
       let tmp22Result7 = null;
       if (null != tmp11) {
-        const obj13 = { style: closure_5.appIcon, user: tmp11, size: eligibilityStatesGroups(tmp6[21]).AvatarSizes.XSMALL, guildId: "Array" };
+        const obj13 = { style: closure_5.appIcon, user: tmp11, size: eligibilityStatesGroups(tmp6[21]).AvatarSizes.XSMALL, guildId: "a" };
         const Avatar = tmp13(tmp6[21]).Avatar;
         tmp22Result7 = tmp22(Avatar, obj13);
       }
@@ -939,7 +939,7 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     let tmp4;
     let tmp58;
     let tmp9;
-    const f99846 = () => {
+    const f99839 = () => {
       let tmp3;
       let tmp2 = null;
       if (null != initialAttemptedPlatformType) {
@@ -1046,8 +1046,8 @@ class GuildRoleConnectionsConnectAccountsActionSheet {
     const stateFromStores2 = obj3.useStateFromStores(items2, () => first2.getId());
     [first2, closure_13] = react.useState(null);
     [first3, closure_15] = react.useState(null);
-    [tmp27, c16] = react.useState(f99846);
-    _slicedToArray(react.useState(f99846), 2);
+    [tmp27, c16] = react.useState(f99839);
+    _slicedToArray(react.useState(f99839), 2);
     [arr6, c17] = react.useState(null);
     _slicedToArray(react.useState(null), 2);
     const tmp30 = role(initialAttemptedPlatformType[17])();

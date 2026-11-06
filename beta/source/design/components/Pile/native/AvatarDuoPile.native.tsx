@@ -1,10 +1,10 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15869
+// Function ID: 15870
 // Name: AvatarDuoPile
 // Dependencies: [19, 21, 13424, 12802, 9509, 12, 14884, 2]
 // Exports: AvatarDuoPile
 
-// Module 15874 (AvatarDuoPile)
+// Module 15869 (AvatarDuoPile)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import ClipView from "ClipView" /* 9509 */;

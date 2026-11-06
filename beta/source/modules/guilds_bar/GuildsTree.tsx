@@ -198,7 +198,7 @@ class GuildsTree {
   }
   sortedGuildNodes() {
     let items1;
-    const f123432 = (type) => {
+    const f123423 = (type) => {
       let items1;
       if (type.type === constants.GUILD) {
         const items = [type];
@@ -207,7 +207,7 @@ class GuildsTree {
         items1 = [];
       } else {
         const children = type.children;
-        const mapped = children.map(f123432);
+        const mapped = children.map(f123423);
         items1 = mapped.flat();
       }
       return items1;
@@ -220,7 +220,7 @@ class GuildsTree {
       items1 = [];
     } else {
       let children = root.children;
-      let mapped = children.map(f123432);
+      let mapped = children.map(f123423);
       items1 = mapped.flat();
     }
     return items1;

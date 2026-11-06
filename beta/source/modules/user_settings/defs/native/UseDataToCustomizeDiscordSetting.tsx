@@ -1,18 +1,18 @@
-// Module ID: 16761
-// Function ID: 16762
+// Module ID: 16756
+// Function ID: 16757
 // Name: UseDataToCustomizeDiscordSetting
-// Dependencies: [6742, 8432, 1072, 16721, 504, 5958, 1113, 6030, 16759, 16760, 11540, 2]
+// Dependencies: [6742, 8432, 1072, 16716, 504, 5958, 1113, 6030, 16754, 16755, 11540, 2]
 
-// Module 16761 (UseDataToCustomizeDiscordSetting)
+// Module 16756 (UseDataToCustomizeDiscordSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5958 */;
 import AlertDefault from "Alert" /* 6030 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16721 */;
-import ConsentActionCreators from "ConsentActionCreators" /* 16759 */;
-import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16760 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16716 */;
+import ConsentActionCreators from "ConsentActionCreators" /* 16754 */;
+import showDataPrivacyRateLimitAlert from "showDataPrivacyRateLimitAlert" /* 16755 */;
 import ConsentStore from "ConsentStore" /* 6742 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;

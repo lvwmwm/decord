@@ -1,10 +1,10 @@
-// Module ID: 18360
-// Function ID: 18361
+// Module ID: 18355
+// Function ID: 18356
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 4885, 6772, 18361, 18358, 5095, 551, 5260, 5021, 12, 1242, 1113, 7240, 18080, 5596, 575, 4929, 12411, 1259, 6902, 5932, 9875, 1375, 1625, 5274, 18362, 18363, 9875, 17076, 5303, 2]
+// Dependencies: [5, 19, 17, 4885, 6772, 18356, 18353, 5095, 551, 5260, 5021, 12, 1242, 1113, 7240, 18075, 5596, 575, 4929, 12411, 1259, 6902, 5932, 9875, 1375, 1625, 5274, 18357, 18358, 9875, 17071, 5303, 2]
 // Exports: default
 
-// Module 18360 (useGuildsBarGesture)
+// Module 18355 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -20,8 +20,8 @@ import roundToNearestPixelDefault from "roundToNearestPixel" /* 12411 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18361 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 18358 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 18356 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 18353 */;
 import "ReanimatedRexport";
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
 import debounce from "debounce" /* 551 */;
@@ -688,7 +688,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "find", overSpecs: "T" });
+    setStateShallow({ dragSpecs: "marginTop", overSpecs: "cix" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };

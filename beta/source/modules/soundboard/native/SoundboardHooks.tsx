@@ -1,16 +1,16 @@
-// Module ID: 19181
-// Function ID: 19182
+// Module ID: 19176
+// Function ID: 19177
 // Name: SoundboardHooks
-// Dependencies: [5, 19, 5015, 1192, 19174, 5272, 504, 5021, 4844, 7517, 2]
+// Dependencies: [5, 19, 5015, 1192, 19169, 5272, 504, 5021, 4844, 7517, 2]
 // Exports: useMaybeFetchSoundboardSounds, useSoundButtonStyleConfig
 
-// Module 19181 (SoundboardHooks)
+// Module 19176 (SoundboardHooks)
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5272 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19174 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 19169 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;

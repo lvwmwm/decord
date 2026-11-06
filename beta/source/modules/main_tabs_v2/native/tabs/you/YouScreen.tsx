@@ -1,10 +1,10 @@
-// Module ID: 18861
-// Function ID: 18862
+// Module ID: 18856
+// Function ID: 18857
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 7772, 2062, 16590, 6886, 1383, 18444, 1072, 1074, 4860, 7377, 21, 5095, 8818, 5014, 1376, 575, 671, 5199, 563, 1113, 6980, 18478, 8803, 6028, 1260, 8757, 1625, 8800, 5253, 8816, 5201, 1491, 4839, 1498, 18862, 1409, 8820, 7112, 9624, 8761, 8773, 8774, 8786, 7351, 8797, 4847, 7569, 5717, 18863, 13731, 5611, 18866, 18867, 5080, 18868, 8793, 8780, 8810, 1090, 10548, 9497, 18870, 13335, 8758, 9470, 7563, 7719, 11397, 7654, 2]
+// Dependencies: [32, 19, 17, 7772, 2062, 16585, 6886, 1383, 18439, 1072, 1074, 4860, 7377, 21, 5095, 8818, 5014, 1376, 575, 671, 5199, 563, 1113, 6980, 18473, 8803, 6028, 1260, 8757, 1625, 8800, 5253, 8816, 5201, 1491, 4839, 1498, 18857, 1409, 8820, 7112, 9624, 8761, 8773, 8774, 8786, 7351, 8797, 4847, 7569, 5717, 18858, 13731, 5611, 18861, 18862, 5080, 18863, 8793, 8780, 8810, 1090, 10548, 9497, 18865, 13335, 8758, 9470, 7563, 7719, 11397, 7654, 2]
 // Exports: default
 
-// Module 18861 (YouScreen)
+// Module 18856 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -18,16 +18,16 @@ import Constants2 from "Constants" /* 7377 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8758 */;
 import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8818 */;
 import YouBannerDecorations from "YouBannerDecorations" /* 9624 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 18478 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 18473 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileStore from "UserProfileStore" /* 7772 */;
 import LocaleStore from "LocaleStore" /* 2062 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 16590 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 16585 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6886 */;
 import UserStore from "UserStore" /* 1383 */;
-import YouConstants from "YouConstants" /* 18444 */;
+import YouConstants from "YouConstants" /* 18439 */;
 import Fragment from "Fragment" /* 21 */;
 import ReanimatedRexport_mod from "ReanimatedRexport" /* 5095 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -202,7 +202,7 @@ function UnconnectedYouScreen(arg0) {
   const setting = GifAutoPlay.getSetting();
   const tmp12Result = navigateToSettings(1498);
   const isFocused = tmp12Result.useIsFocused();
-  const tmp12Result14 = navigateToSettings(18862);
+  const tmp12Result14 = navigateToSettings(18857);
   const tmp28 = !isFocused && !tmp12Result14.useIsProfileModalTransitioning();
   const ref1 = obj.useRef(Date.now());
   const ref2 = obj.useRef(undefined);
@@ -335,7 +335,7 @@ function UnconnectedYouScreen(arg0) {
       }, items4);
       let tmp63 = null != memo2;
       const obj11 = { disabled: tmp63 };
-      const tmp12Result22 = navigateToSettings(18863);
+      const tmp12Result22 = navigateToSettings(18858);
       youSettingsCoachmark = tmp12Result22.useYouSettingsCoachmark(obj11);
       let tmp65 = null != youSettingsCoachmark;
       const tmp12Result23 = navigateToSettings(13731);
@@ -365,12 +365,12 @@ function UnconnectedYouScreen(arg0) {
                   if (tmp63) {
                     const obj12 = { buttonRef: ref4, markAsDismissed: tmpResult4[1], visible: null != tmpResult4[0], title: null, description: null, avatarSrc: null, decorationAsset: null, renderImgComponent: null, navigateToShop: callback1 };
                     ({ title: obj24.title, description: obj24.description, avatarSrc: obj24.avatarSrc, decorationAsset: obj24.decorationAsset, renderImgComponent: obj24.renderImgComponent } = memo2);
-                    tmp63 = closure_20(tmp5(18866), obj12);
+                    tmp63 = closure_20(tmp5(18861), obj12);
                   }
                   const items6 = [tmp63, , ];
                   if (tmp65) {
                     const obj13 = { buttonRef: ref5 };
-                    const tmp5Result9 = navigateToShop(18863);
+                    const tmp5Result9 = navigateToShop(18858);
                     const merged = Object.assign(youSettingsCoachmark.props);
                     tmp65 = closure_20(tmp5Result9, obj13);
                   }
@@ -378,7 +378,7 @@ function UnconnectedYouScreen(arg0) {
                   let tmp80 = tmp69;
                   if (tmp80) {
                     const obj14 = { targetRef: ref5, visible: tmp69, markAsDismissed: tmpResult5[1], position: "top" };
-                    tmp80 = closure_20(tmp5(18867), obj14);
+                    tmp80 = closure_20(tmp5(18862), obj14);
                   }
                   const obj15 = { zIndex: 1, children: items6 };
                   items6[2] = tmp80;
@@ -431,7 +431,7 @@ function UnconnectedYouScreen(arg0) {
               obj19 = { style: items9, nativeID, children: items10 };
               items9 = [tmp10.container, tmp50];
               let tmp84Result = null != tmp5Result1Result;
-              tmp5Result10 = navigateToShop(18868);
+              tmp5Result10 = navigateToShop(18863);
               if (tmp84Result) {
                 const obj20 = { frame: tmp5Result1Result, profileThemeType: UserProfileThemeTypes.YOU_SCREEN, frameOrder: navigateToSettings(8780).ProfileFrameLayerOrder.BACK, containerWidth: bound };
                 const tmp5Result11 = navigateToShop(8793);
@@ -526,7 +526,7 @@ function UnconnectedYouScreen(arg0) {
               items18[1] = tmp89Result2;
               const obj38 = { user, userTheme: tmp15, scrollViewRef: ref, scrollPosition: sharedValue, style: items21, navigateToProfileCustomization, navigateToCustomStatus, navigateToFriends, navigateToPremium, navigateToShop, initialTab, animateAvatar: !tmp28 };
               items21 = [tmp10.content, contentAnimatedStyle];
-              items18[2] = closure_20(navigateToShop(18870), obj38);
+              items18[2] = closure_20(navigateToShop(18865), obj38);
               items18[3] = closure_20(navigateToSettings(13335).TTIFirstContentfulPaint, { label: "you_screen" });
               items10[2] = closure_21(tmp95, obj22);
               let tmp84Result9 = null != tmp5Result1Result;

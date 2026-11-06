@@ -1,9 +1,9 @@
-// Module ID: 16752
-// Function ID: 16753
+// Module ID: 16747
+// Function ID: 16748
 // Name: DiscoveryByEmailSetting
 // Dependencies: [8432, 1072, 1113, 4839, 1396, 14255, 11540, 2]
 
-// Module 16752 (DiscoveryByEmailSetting)
+// Module 16747 (DiscoveryByEmailSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1396 */;

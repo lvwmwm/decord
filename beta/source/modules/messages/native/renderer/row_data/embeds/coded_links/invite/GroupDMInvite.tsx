@@ -1,10 +1,10 @@
-// Module ID: 15115
-// Function ID: 15116
+// Module ID: 15110
+// Function ID: 15111
 // Name: GroupDMInvite
 // Dependencies: [4863, 4956, 1383, 7879, 8394, 10118, 1113, 14886, 1412, 5652, 2]
 // Exports: createGroupDMInvite
 
-// Module 15115 (GroupDMInvite)
+// Module 15110 (GroupDMInvite)
 import intl7 from "intl" /* 1113 */;
 import Constants from "Constants" /* 7879 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8394 */;

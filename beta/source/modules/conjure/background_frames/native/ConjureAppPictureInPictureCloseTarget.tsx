@@ -1,14 +1,14 @@
-// Module ID: 19123
-// Function ID: 19124
+// Module ID: 19118
+// Function ID: 19119
 // Name: ConjureAppPictureInPictureCloseTarget
-// Dependencies: [19, 21, 5014, 19120, 575, 5095, 5254, 5637, 11884, 2]
+// Dependencies: [19, 21, 5014, 19115, 575, 5095, 5254, 5637, 11884, 2]
 // Exports: default
 
-// Module 19123 (ConjureAppPictureInPictureCloseTarget)
+// Module 19118 (ConjureAppPictureInPictureCloseTarget)
 import nativeDefault from "native" /* 575 */;
 import timing from "timing" /* 5254 */;
 import spring from "spring" /* 5637 */;
-import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19120 */;
+import conjureAppPictureInPictureLayout from "conjureAppPictureInPictureLayout" /* 19115 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -66,10 +66,10 @@ export default function ConjureAppPictureInPictureCloseTarget(hovered) {
     ({ translateX: closure_2 - conjureAppPictureInPictureLayout.CLOSE_TARGET_SIZE / 2 });
     const withSpring = spring.withSpring;
     spring;
-    const diff = closure_3 - tmp(19120).CLOSE_TARGET_SIZE / 2;
+    const diff = closure_3 - tmp(19115).CLOSE_TARGET_SIZE / 2;
     let num2 = 0;
     if (!obj.get()) {
-      num2 = tmp(19120).CLOSE_TARGET_SIZE;
+      num2 = tmp(19115).CLOSE_TARGET_SIZE;
     }
     items[1] = { translateY: withSpring(diff + num2, SPRING) };
     ({ translateY: withSpring(diff + num2, SPRING) });
@@ -83,7 +83,7 @@ export default function ConjureAppPictureInPictureCloseTarget(hovered) {
     ({ scale: withSpring2(num3, SPRING) });
     return obj2;
   };
-  const point = { withTiming: shown(5254).withTiming, shown, FADE, x, CLOSE_TARGET_SIZE: shown(19120).CLOSE_TARGET_SIZE, withSpring: shown(5637).withSpring, y, SPRING, hovered, HOVERED_SCALE: 1.3 };
+  const point = { withTiming: shown(5254).withTiming, shown, FADE, x, CLOSE_TARGET_SIZE: shown(19115).CLOSE_TARGET_SIZE, withSpring: shown(5637).withSpring, y, SPRING, hovered, HOVERED_SCALE: 1.3 };
   fn.__closure = point;
   fn.__workletHash = 15134050536622;
   fn.__initData = __initData;

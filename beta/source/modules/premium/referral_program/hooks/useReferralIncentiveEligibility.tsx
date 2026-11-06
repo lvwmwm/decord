@@ -1,13 +1,13 @@
-// Module ID: 15326
-// Function ID: 15327
+// Module ID: 15321
+// Function ID: 15322
 // Name: useReferralIncentiveEligibility
-// Dependencies: [2052, 8524, 15323, 504, 2]
+// Dependencies: [2052, 8524, 15318, 504, 2]
 // Exports: useReferralIncentiveEligibility
 
-// Module 15326 (useReferralIncentiveEligibility)
+// Module 15321 (useReferralIncentiveEligibility)
 import get_initialized from "get initialized" /* 504 */;
 import useIsEligibleSenderForReferralProgram from "useIsEligibleSenderForReferralProgram" /* 8524 */;
-import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15323 */;
+import PremiumReferralIncentivesExperiment from "PremiumReferralIncentivesExperiment" /* 15318 */;
 import SubscriptionStore from "SubscriptionStore" /* 2052 */;
 import size from "module_2" /* 2 */;
 
@@ -33,9 +33,9 @@ export function useReferralIncentiveEligibility(preventFetch) {
   let tmp8 = true === isEligibleSenderForReferralProgram;
   const tmp6 = null != stateFromStores && !stateFromStores.isPurchasedExternally;
   const tmp7 = null != stateFromStores && stateFromStores.hasPremiumNitroMonthly;
-  let isEligibleForIncentive = tmp8 && referralRewardType === tmp(15323).ReferralRewardType.ORBS;
+  let isEligibleForIncentive = tmp8 && referralRewardType === tmp(15318).ReferralRewardType.ORBS;
   if (tmp8) {
-    tmp8 = referralRewardType === tmp(15323).ReferralRewardType.DISCOUNT;
+    tmp8 = referralRewardType === tmp(15318).ReferralRewardType.DISCOUNT;
   }
   if (tmp8) {
     tmp8 = tmp6;

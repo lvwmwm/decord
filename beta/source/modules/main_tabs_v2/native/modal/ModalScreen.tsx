@@ -1,10 +1,10 @@
-// Module ID: 18960
-// Function ID: 18961
+// Module ID: 18955
+// Function ID: 18956
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1072, 21, 5014, 575, 6744, 6028, 1260, 7654, 1625, 7112, 4971, 18961, 16433, 1375, 12361, 2]
+// Dependencies: [109, 19, 17, 1072, 21, 5014, 575, 6744, 6028, 1260, 7654, 1625, 7112, 4971, 18956, 16428, 1375, 12361, 2]
 // Exports: default
 
-// Module 18960 (modal/ModalScreen)
+// Module 18955 (modal/ModalScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
@@ -101,7 +101,7 @@ export default function Modal(route) {
     isIpadOSResult = "modal" === presentation;
   }
   if (!isIpadOSResult) {
-    const tmp7Result3 = modal(18961);
+    const tmp7Result3 = modal(18956);
     isIpadOSResult = tmp7Result3.shouldExcludeSafeAreaForModalKey(modal.key);
   }
   const items = [absoluteFillObject.absoluteFillObject, ];
@@ -120,7 +120,7 @@ export default function Modal(route) {
   } else {
     pop = NOOP;
   }
-  SafeAreaProvider = tmp7(16433).SafeAreaProvider;
+  SafeAreaProvider = tmp7(16428).SafeAreaProvider;
   const createElement = obj2.createElement;
   const modal2 = modal.modal;
   const merged = Object.assign(tmp2);

@@ -1,11 +1,11 @@
-// Module ID: 16635
-// Function ID: 16636
+// Module ID: 16630
+// Function ID: 16631
 // Name: AgeGroupConfirmAccountStatusSetting
-// Dependencies: [8432, 11540, 16630, 2]
+// Dependencies: [8432, 11540, 16625, 2]
 
-// Module 16635 (AgeGroupConfirmAccountStatusSetting)
+// Module 16630 (AgeGroupConfirmAccountStatusSetting)
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16630 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16625 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

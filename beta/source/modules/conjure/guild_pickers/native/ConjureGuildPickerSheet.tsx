@@ -29,7 +29,7 @@ export default function ConjureGuildPickerSheet(guildId) {
   let channelFilter;
   let str;
   let title;
-  const f127006 = (id) => ({ id: id.value, label: id.label });
+  const f126997 = (id) => ({ id: id.value, label: id.label });
   guildId = guildId.guildId;
   const type = guildId.type;
   const maxPicks = guildId.maxPicks;
@@ -132,7 +132,7 @@ export default function ConjureGuildPickerSheet(guildId) {
         } else {
           items = [value];
         }
-        onSubmit(items.map(f127006));
+        onSubmit(items.map(f126997));
         obj = ActionSheetActionCreatorsDefault;
         obj.hideActionSheet();
       } else if (hasItem) {
@@ -144,7 +144,7 @@ export default function ConjureGuildPickerSheet(guildId) {
       }
     },
     submitSelection() {
-      onSubmit(first.map(f127006));
+      onSubmit(first.map(f126997));
       obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
     },

@@ -1,10 +1,10 @@
-// Module ID: 15462
-// Function ID: 15463
+// Module ID: 15457
+// Function ID: 15458
 // Name: ChevronSmallUpIcon
 // Dependencies: [19, 21, 575, 5716, 14223, 2]
 // Exports: ChevronSmallUpIcon
 
-// Module 15462 (ChevronSmallUpIcon)
+// Module 15457 (ChevronSmallUpIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5716 */;

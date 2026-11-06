@@ -1,9 +1,9 @@
-// Module ID: 17481
-// Function ID: 17482
+// Module ID: 17476
+// Function ID: 17477
 // Name: InAppNotificationsSetting
-// Dependencies: [8432, 1072, 4839, 11018, 1113, 2868, 1252, 11540, 16281, 17482, 2]
+// Dependencies: [8432, 1072, 4839, 11018, 1113, 2868, 1252, 11540, 16276, 17477, 2]
 
-// Module 17481 (InAppNotificationsSetting)
+// Module 17476 (InAppNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -11,8 +11,8 @@ import _modDef2868 from "module_2868" /* 2868 */;
 import UserSettings from "UserSettings" /* 4839 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import FocusModeUtils from "FocusModeUtils" /* 11018 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16281 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 17482 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16276 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 17477 */;
 import SettingBuilders_mod from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 18985
-// Function ID: 18986
+// Module ID: 18980
+// Function ID: 18981
 // Name: RestrictedMessagePreviewHeader
-// Dependencies: [19, 17, 14016, 21, 5014, 575, 7326, 5068, 8750, 7358, 5711, 5258, 14179, 1994, 8762, 7522, 6744, 6980, 1113, 1187, 5624, 18968, 6957, 18986, 2]
+// Dependencies: [19, 17, 14016, 21, 5014, 575, 7326, 5068, 8750, 7358, 5711, 5258, 14179, 1994, 8762, 7522, 6744, 6980, 1113, 1187, 5624, 18963, 6957, 18981, 2]
 // Exports: default
 
-// Module 18985 (RestrictedMessagePreviewHeader)
+// Module 18980 (RestrictedMessagePreviewHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 1994 */;

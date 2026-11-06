@@ -1,10 +1,10 @@
-// Module ID: 17865
-// Function ID: 17866
+// Module ID: 17860
+// Function ID: 17861
 // Name: useCardLayout
 // Dependencies: [32, 19, 9459, 1491, 2]
 // Exports: useCardLayout
 
-// Module 17865 (useCardLayout)
+// Module 17860 (useCardLayout)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ export function useCardLayout() {
   let ref;
   let result4;
   let tmp3;
-  const f113178 = () => {
+  const f113169 = () => {
     const obj = ref(dependencyMap[3]);
     return obj.getWindowDimensions().width;
   };
@@ -34,8 +34,8 @@ export function useCardLayout() {
     }
     tmp.current = nativeScrollRef;
   }, []);
-  [tmp3, dependencyMap] = _slicedToArray(react.useState(f113178), 2);
-  const tmp2 = _slicedToArray(react.useState(f113178), 2);
+  [tmp3, dependencyMap] = _slicedToArray(react.useState(f113169), 2);
+  const tmp2 = _slicedToArray(react.useState(f113169), 2);
   const layoutEffect = react.useLayoutEffect(() => {
     const current = ref.current;
     if (current != null) {

@@ -1,10 +1,10 @@
-// Module ID: 17507
-// Function ID: 17508
+// Module ID: 17502
+// Function ID: 17503
 // Name: UpcomingServerEventExperiment
 // Dependencies: [1447, 2]
 // Exports: isEligibleForUpcomingServerEventNotifications, useUpcomingServerEventExperiment
 
-// Module 17507 (UpcomingServerEventExperiment)
+// Module 17502 (UpcomingServerEventExperiment)
 import ApexExperiment from "ApexExperiment" /* 1447 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 18254
-// Function ID: 18255
+// Module ID: 18249
+// Function ID: 18250
 // Name: AccountLinkBanner
 // Dependencies: [19, 17, 1383, 4860, 21, 575, 7334, 11047, 5640, 5014, 563, 7326, 7351, 6977, 6980, 7054, 1187, 5624, 1113, 5634, 9440, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 18254 (AccountLinkBanner)
+// Module 18249 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 4860 */;
@@ -77,7 +77,7 @@ function AccountLinkLargeBanner(arg0) {
     const obj9 = { style: tmp.ellipsisDot };
     items3[2] = closure_6(View, obj9);
     items2[1] = closure_7(View, obj6);
-    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "Array" };
+    const obj10 = { user: stateFromStores, size: require("native").AvatarSizes.LARGE_48, guildId: "applicationId" };
     const Avatar = tmp2(tmp3[16]).Avatar;
     items2[2] = closure_6(Avatar, obj10);
     items1[1] = closure_7(View, obj4);

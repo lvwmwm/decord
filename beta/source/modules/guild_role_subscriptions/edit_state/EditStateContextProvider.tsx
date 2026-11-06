@@ -1,10 +1,10 @@
-// Module ID: 19960
-// Function ID: 19961
+// Module ID: 19955
+// Function ID: 19956
 // Name: EditStateContextProvider
 // Dependencies: [19, 21, 2]
 // Exports: EditStateContextProvider, useEditStateContext
 
-// Module 19960 (EditStateContextProvider)
+// Module 19955 (EditStateContextProvider)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

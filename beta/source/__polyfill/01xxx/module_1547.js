@@ -17,7 +17,7 @@ export function getActionFromState(index, initialRouteName) {
   let reduced;
   let routes;
   let substr;
-  const f81654 = (acc, item) => {
+  const f81647 = (acc, item) => {
     let reduced;
     let tmp;
     let tmp2;
@@ -32,7 +32,7 @@ export function getActionFromState(index, initialRouteName) {
             if (typeof createNormalizedConfigs === "function") {
               const _Object = Object;
               const entries = Object.entries(tmp5);
-              reduced = entries.reduce(f81654, {});
+              reduced = entries.reduce(f81647, {});
             } else {
               throw new TypeError("Trying to call a non-function");
             }
@@ -63,7 +63,7 @@ export function getActionFromState(index, initialRouteName) {
               if (typeof createNormalizedConfigs === "function") {
                 let _Object = Object;
                 let entries = Object.entries(tmp5);
-                reduced = entries.reduce(f81654, {});
+                reduced = entries.reduce(f81647, {});
               } else {
                 throw new TypeError("Trying to call a non-function");
               }
@@ -154,7 +154,7 @@ export function getActionFromState(index, initialRouteName) {
         }
         let tmp22 = substr1[substr1.length - 1];
         let _Object3 = Object;
-        let merged1 = Object.assign(obj5, { initial: "Array", screen: "y", params: "isArray", state: "Button" });
+        let merged1 = Object.assign(obj5, { initial: "Array", screen: "t", params: "isArray", state: "Button" });
         if (1 === substr1.length) {
           if (undefined === substr1[0].key) {
             let params;

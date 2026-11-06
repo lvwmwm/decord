@@ -120,7 +120,7 @@ export function findOneChild(arg0, arr) {
 }
 export { findOne };
 export function existsOne(arg0, arg1) {
-  const f94745 = (children) => {
+  const f94738 = (children) => {
     let isTagResult = DomHandler.isTag(children);
     if (isTagResult) {
       isTagResult = closure_0(children);
@@ -135,7 +135,7 @@ export function existsOne(arg0, arg1) {
           const items = [children];
           obj = items;
         }
-        hasChildrenResult = obj.some(f94745);
+        hasChildrenResult = obj.some(f94738);
       }
       isTagResult = hasChildrenResult;
     }
@@ -147,7 +147,7 @@ export function existsOne(arg0, arg1) {
     let items = [arg1];
     obj = items;
   }
-  return obj.some(f94745);
+  return obj.some(f94738);
 }
 export function findAll(fn, arg1) {
   const items = [];

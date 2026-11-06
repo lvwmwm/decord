@@ -1,12 +1,12 @@
-// Module ID: 16279
-// Function ID: 16280
+// Module ID: 16274
+// Function ID: 16275
 // Name: NotifSettingsUtils
-// Dependencies: [16276, 1113, 16280, 16281, 1242, 2]
+// Dependencies: [16271, 1113, 16275, 16276, 1242, 2]
 
-// Module 16279 (NotifSettingsUtils)
+// Module 16274 (NotifSettingsUtils)
 import intl2 from "intl" /* 1113 */;
-import react_nativeDefault from "react-native" /* 16280 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16276 */;
+import react_nativeDefault from "react-native" /* 16275 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16271 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, notifType;
@@ -135,7 +135,7 @@ function buildChannelsAndMapping() {
       return map;
     }
   }
-  const obj = map(16281);
+  const obj = map(16276);
   const assignedNotifSettingsAndMappings = obj.getAssignedNotifSettingsAndMappings();
   ({ categories, settings, mappings } = assignedNotifSettingsAndMappings);
   const obj2 = computeInheritedImportances(mappings);

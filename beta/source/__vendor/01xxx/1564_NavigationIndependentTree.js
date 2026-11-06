@@ -20,5 +20,5 @@ export function NavigationIndependentTree(children) {
   const Provider2 = react2.NavigationContext.Provider;
   const Provider3 = react3.NavigationFocusedRouteStateContext.Provider;
   const Provider4 = _mod1539.IsFocusedContext.Provider;
-  return <Provider value="Array">{false}</Provider>;
+  return <Provider value="Array">{0}</Provider>;
 }

@@ -1,9 +1,9 @@
-// Module ID: 19010
-// Function ID: 19011
+// Module ID: 19005
+// Function ID: 19006
 // Name: Alerts
-// Dependencies: [19, 17, 5015, 15642, 16228, 7929, 10135, 21, 19011, 19012, 19016, 19017, 5014, 575, 504, 5095, 5080, 5254, 5637, 5638, 5959, 6022, 6017, 6954, 5965, 558, 2]
+// Dependencies: [19, 17, 5015, 15637, 16223, 7929, 10135, 21, 19006, 19007, 19011, 19012, 5014, 575, 504, 5095, 5080, 5254, 5637, 5638, 5959, 6022, 6017, 6954, 5965, 558, 2]
 
-// Module 19010 (Alerts)
+// Module 19005 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 5080 */;
@@ -13,12 +13,12 @@ import spring from "spring" /* 5637 */;
 import springPresets from "springPresets" /* 5638 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5959 */;
 import OverlayViewDefault from "OverlayView" /* 5965 */;
-import ModalRegistryDefault from "ModalRegistry" /* 19011 */;
+import ModalRegistryDefault from "ModalRegistry" /* 19006 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15642 */;
-import PermissionVADStore from "PermissionVADStore" /* 16228 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15637 */;
+import PermissionVADStore from "PermissionVADStore" /* 16223 */;
 import SurveyStore from "SurveyStore" /* 7929 */;
 import AlertStore from "AlertStore" /* 10135 */;
 import Fragment from "Fragment" /* 21 */;
@@ -231,7 +231,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return authStore2(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "a", renderKey: "isArray", props: "isArray" });
+let closure_23 = Object.freeze({ renderAlert: "dispatch", renderKey: "isArray", props: "isArray" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -267,7 +267,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "a", renderKey: "isArray", props: "isArray" };
+        return { renderAlert: "dispatch", renderKey: "isArray", props: "isArray" };
       }
     }
   });

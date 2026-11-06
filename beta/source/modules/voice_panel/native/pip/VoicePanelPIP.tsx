@@ -1,9 +1,9 @@
-// Module ID: 19287
-// Function ID: 19288
+// Module ID: 19282
+// Function ID: 19283
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 4862, 6846, 6875, 11223, 11221, 19115, 5657, 6847, 21, 5014, 11222, 19204, 11231, 5095, 19114, 11227, 5637, 5303, 19207, 5874, 19198, 504, 4935, 10927, 11726, 8841, 1113, 7241, 19288, 6960, 19292, 19293, 5080, 2]
+// Dependencies: [19, 17, 4862, 6846, 6875, 11223, 11221, 19110, 5657, 6847, 21, 5014, 11222, 19199, 11231, 5095, 19109, 11227, 5637, 5303, 19202, 5874, 19193, 504, 4935, 10927, 11726, 8841, 1113, 7241, 19283, 6960, 19287, 19288, 5080, 2]
 
-// Module 19287 (VoicePanelPIP)
+// Module 19282 (VoicePanelPIP)
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 5080 */;
 import spring from "spring" /* 5637 */;
@@ -12,9 +12,9 @@ import FramesConstants from "FramesConstants" /* 6847 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10927 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11221 */;
 import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 11726 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19114 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19115 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19204 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 19109 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19110 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 19199 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
@@ -587,13 +587,13 @@ function VoicePanelPIP() {
       targetWidth = originX.targetWidth;
     } else {
       const tmpResult = spring;
-      targetWidth = tmpResult.withSpring(originX.targetWidth, tmp(19114).PIP_LAYOUT_PHYSICS);
+      targetWidth = tmpResult.withSpring(originX.targetWidth, tmp(19109).PIP_LAYOUT_PHYSICS);
     }
     if (active) {
       targetHeight = originX.targetHeight;
     } else {
       const tmpResult2 = spring;
-      targetHeight = tmpResult2.withSpring(originX.targetHeight, tmp(19114).PIP_LAYOUT_PHYSICS);
+      targetHeight = tmpResult2.withSpring(originX.targetHeight, tmp(19109).PIP_LAYOUT_PHYSICS);
     }
     return { animations: size, initialValues: { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight } };
   };
@@ -738,7 +738,7 @@ let closure_37 = react.memo(function PIPWrapper(transitionState) {
   transitionState = transitionState.transitionState;
   const transitionCleanUp = transitionState.transitionCleanUp;
   const pipHandoff = react.useContext(transitionCleanUp(11222)).pipHandoff;
-  const obj = transitionState(19204);
+  const obj = transitionState(19199);
   const mode = obj.usePIPState().mode;
   const obj2 = transitionState(11231);
   const pIPCardsSettled = obj2.usePIPCardsSettled(pipHandoff);

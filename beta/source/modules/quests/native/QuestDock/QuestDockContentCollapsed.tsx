@@ -1,14 +1,14 @@
-// Module ID: 17158
-// Function ID: 17159
+// Module ID: 17153
+// Function ID: 17154
 // Name: QuestDockContentCollapsed
-// Dependencies: [19, 17, 6781, 17072, 21, 5014, 17073, 5095, 5637, 7241, 2]
+// Dependencies: [19, 17, 6781, 17067, 21, 5014, 17068, 5095, 5637, 7241, 2]
 
-// Module 17158 (QuestDockContentCollapsed)
+// Module 17153 (QuestDockContentCollapsed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import spring from "spring" /* 5637 */;
 import QuestConstants from "QuestConstants" /* 6781 */;
-import QuestDockConstants from "QuestDockConstants" /* 17072 */;
+import QuestDockConstants from "QuestDockConstants" /* 17067 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
   }
   hideOnExpand = tmp;
   const tmp2 = closure_7();
-  const activeQuestDockMode = react.useContext(hideOnExpand(17073).QuestDockGestureContext).activeQuestDockMode;
+  const activeQuestDockMode = react.useContext(hideOnExpand(17068).QuestDockGestureContext).activeQuestDockMode;
   let obj = hideOnExpand(5095);
   const fn = function l() {
     const withSpring = spring.withSpring;

@@ -1,13 +1,13 @@
-// Module ID: 18168
-// Function ID: 18169
+// Module ID: 18163
+// Function ID: 18164
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 4866, 21, 5652, 14401, 4839, 7366, 7321, 7368, 10828, 1113, 7561, 18169, 10524, 7358, 5711, 504, 2]
+// Dependencies: [19, 4866, 21, 5652, 14401, 4839, 7366, 7321, 7368, 10828, 1113, 7561, 18164, 10524, 7358, 5711, 504, 2]
 // Exports: default
 
-// Module 18168 (FavoritesGuildCategoryActionSheet)
+// Module 18163 (FavoritesGuildCategoryActionSheet)
 import ToastUtils from "ToastUtils" /* 5711 */;
 import ClipboardUtils from "ClipboardUtils" /* 7358 */;
-import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 18169 */;
+import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 18164 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 4866 */;
 import Fragment from "Fragment" /* 21 */;

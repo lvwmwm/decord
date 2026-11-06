@@ -1,10 +1,10 @@
-// Module ID: 16648
-// Function ID: 16649
+// Module ID: 16643
+// Function ID: 16644
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 7994, 7970, 1072, 21, 5014, 575, 9109, 8026, 5624, 1113, 15462, 11414, 7969, 11, 16649, 7971, 6744, 13311, 1994, 13315, 504, 1252, 13313, 2]
+// Dependencies: [32, 19, 17, 7994, 7970, 1072, 21, 5014, 575, 9109, 8026, 5624, 1113, 15457, 11414, 7969, 11, 16644, 7971, 6744, 13311, 1994, 13315, 504, 1252, 13313, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 16648 (SafetyHubViolationsContainer)
+// Module 16643 (SafetyHubViolationsContainer)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -94,7 +94,7 @@ function SafetyHubViolationsHeader(count) {
   items1[1] = unpackModuleId(Text2, { variant: "text-xxs/normal", color: "text-muted", children: stringResult });
   items[1] = authStore2(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(15462).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(15457).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp7(11414).ChevronSmallDownIcon;
   }
@@ -255,7 +255,7 @@ class SafetyHubViolationsContainer {
     let obj11;
     let obj9;
     let status;
-    const f110407 = (classification) => {
+    const f110398 = (classification) => {
       const obj = { classification };
       return closure_1_11(ClassificationDetail, obj, classification.id);
     };
@@ -305,9 +305,9 @@ class SafetyHubViolationsContainer {
     items3[0] = closure_11(SafetyHubViolationsHeader, obj4);
     if (opened) {
       const obj5 = { style: tmp.separator };
-      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f110407), , , ];
+      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f110398), , , ];
       let tmp11Result = memo.length < classifications.length;
-      memo.length > 0 && memo.map(f110407);
+      memo.length > 0 && memo.map(f110398);
       if (tmp11Result) {
         const obj6 = { children: items5 };
         const obj7 = { style: tmp.separator };

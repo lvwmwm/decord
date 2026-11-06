@@ -1,11 +1,11 @@
-// Module ID: 15232
-// Function ID: 15233
+// Module ID: 15227
+// Function ID: 15228
 // Name: ErrorUtils
-// Dependencies: [15233, 2]
+// Dependencies: [15228, 2]
 // Exports: getUnderlyingIOSError, serializeError
 
-// Module 15232 (ErrorUtils)
-import _mod15233 from "module_15233" /* 15233 */;
+// Module 15227 (ErrorUtils)
+import _mod15228 from "module_15228" /* 15228 */;
 import size from "module_2" /* 2 */;
 
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
@@ -43,6 +43,6 @@ export function serializeError(arg0) {
     const self4 = this;
     error1 = new Error(String(error));
   }
-  const obj = _mod15233;
+  const obj = _mod15228;
   return stringify(obj.normalizeToSize(error1));
 }

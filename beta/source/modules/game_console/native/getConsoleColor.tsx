@@ -1,10 +1,10 @@
-// Module ID: 19302
-// Function ID: 19303
+// Module ID: 19297
+// Function ID: 19298
 // Name: getConsoleColor
 // Dependencies: [1072, 575, 2]
 // Exports: default
 
-// Module 19302 (getConsoleColor)
+// Module 19297 (getConsoleColor)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

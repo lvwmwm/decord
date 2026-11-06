@@ -1,16 +1,16 @@
-// Module ID: 19110
-// Function ID: 19111
+// Module ID: 19105
+// Function ID: 19106
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 4863, 1383, 21, 5014, 575, 5735, 5624, 1113, 504, 6853, 19111, 5587, 1187, 5888, 5874, 5596, 19112, 11773, 19113, 2]
+// Dependencies: [32, 19, 17, 4863, 1383, 21, 5014, 575, 5735, 5624, 1113, 504, 6853, 19106, 5587, 1187, 5888, 5874, 5596, 19107, 11773, 19108, 2]
 
-// Module 19110 (ExternalPipViewVideo)
+// Module 19105 (ExternalPipViewVideo)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5735 */;
 import ExternalPipDefault from "ExternalPip" /* 5874 */;
-import VideoActionCreators from "VideoActionCreators" /* 19112 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19113 */;
+import VideoActionCreators from "VideoActionCreators" /* 19107 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19108 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -77,7 +77,7 @@ function ExternalPipViewVideoUser(userId) {
   const avatarDecoration = obj4.useAvatarDecoration(stateFromStores, stateFromStores1);
   const obj2 = { userId, guildId: stateFromStores1, avatarURI: avatarURL, location: "ExternalPipViewVideo-native" };
   avatarURL = undefined;
-  const tmp7 = channelId(19111);
+  const tmp7 = channelId(19106);
   const tmp6 = channelId;
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(stateFromStores1, 80, false);

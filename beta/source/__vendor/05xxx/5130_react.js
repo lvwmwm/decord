@@ -13,7 +13,7 @@ let map;
 let deps = Symbol("UNINITIALIZED");
 
 export function useDisposableMemo(fn2, _temp, items, current2) {
-  const obj = { value: "r", deps, pendingDisposal: 12873 };
+  const obj = { value: "r", deps, pendingDisposal: null };
   const tmp2 = React(obj);
   const _window = tmp2;
   const obj2 = React(_temp);

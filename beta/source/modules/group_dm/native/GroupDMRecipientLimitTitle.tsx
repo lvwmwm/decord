@@ -1,10 +1,10 @@
-// Module ID: 18837
-// Function ID: 18838
+// Module ID: 18832
+// Function ID: 18833
 // Name: GroupDMRecipientLimitTitle
 // Dependencies: [19, 17, 1072, 21, 5014, 575, 1375, 11627, 5596, 1113, 5624, 9528, 12523, 2]
 // Exports: default
 
-// Module 18837 (GroupDMRecipientLimitTitle)
+// Module 18832 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;

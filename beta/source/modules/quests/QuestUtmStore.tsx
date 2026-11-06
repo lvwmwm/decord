@@ -12,8 +12,8 @@ let obj = module_560.create((arg0) => {
   obj = {
     utmSourceCurrent: "r",
     utmMediumCurrent: "__closure",
-    utmCampaignCurrent: "onPress",
-    utmContentCurrent: "ks",
+    utmCampaignCurrent: "paddingHorizontal",
+    utmContentCurrent: "t",
     setUtmCurrentContext(utmSourceCurrent) {
       obj = { utmSourceCurrent: utmSourceCurrent.utmSourceCurrent, utmMediumCurrent: utmSourceCurrent.utmMediumCurrent, utmCampaignCurrent: utmSourceCurrent.utmCampaignCurrent, utmContentCurrent: utmSourceCurrent.utmContentCurrent };
       return state(obj);

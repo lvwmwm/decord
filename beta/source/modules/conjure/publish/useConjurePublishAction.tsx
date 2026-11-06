@@ -31,7 +31,7 @@ let _require, c11, c12, c4, closure_4, closure_6, intent;
 
 let closure_12;
 let unpackModuleId;
-const f100771 = () => {
+const f100764 = () => {
 
 };
 function approvalPending(projectId) {
@@ -456,7 +456,7 @@ obj = function _startPublish() {
                       tmp(closure_1_2[24]);
                       const tmpResult3 = tmp(closure_1_2[13]);
                       const profile = fetchProfile(tmpResult3.conjureProductionBotUserId(closure_4), { withMutualGuilds: true });
-                      profile.catch(f100771);
+                      profile.catch(f100764);
                     }
                     const tmpResult4 = tmp(closure_1_2[22]);
                     result = tmpResult4.refreshPublishedProject(projectId, { isPreview: false });
@@ -794,13 +794,13 @@ obj = function _continuePublish() {
                   set.add(closure_0);
                   c10 = 1;
                   const requestConsent = platform.requestConsent;
-                  let f136801 = requestConsent;
+                  let f136792 = requestConsent;
                   if (requestConsent == null) {
-                    f136801 = (arg0) => closure_2_19(arg0, closure_1_4);
+                    f136792 = (arg0) => closure_2_19(arg0, closure_1_4);
                   }
                   c11 = 3;
                   c12 = 1;
-                  const obj5 = { value: f136801(closure_0), done: false };
+                  const obj5 = { value: f136792(closure_0), done: false };
                   return obj5;
                 }
               }
@@ -1196,7 +1196,7 @@ export default function useConjurePublishAction(arg0, arg1) {
       UserActionCreators;
       const obj2 = conjureAppInServer;
       const profile = fetchProfile(obj2.conjureProductionBotUserId(tmp), { withMutualGuilds: true });
-      profile.catch(f100771);
+      profile.catch(f100764);
     }
   }, items3);
   let application_id;

@@ -1,9 +1,9 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 17574
+// Function ID: 17575
 // Name: DevToolsScreens
-// Dependencies: [19, 21, 6913, 17580, 12219, 17581, 17584, 13239, 9853, 17586, 17587, 12125, 17588, 12225, 17614, 17253, 17615, 17616, 17620, 9620, 17623, 5733, 17658, 11641, 17661, 9378, 17666, 12123, 17667, 13366, 17694, 10232, 17718, 17344, 17720, 12105, 17722, 12468, 17729, 17730, 17732, 17594, 17733, 5727, 17740, 11927, 17741, 17742, 17743, 2]
+// Dependencies: [19, 21, 6913, 17575, 12219, 17576, 17579, 13239, 9853, 17581, 17582, 12125, 17583, 12225, 17609, 17248, 17610, 17611, 17615, 9620, 17618, 5733, 17653, 11641, 17656, 9378, 17661, 12123, 17662, 13366, 17689, 10232, 17713, 17339, 17715, 12105, 17717, 12468, 17724, 17725, 17727, 17589, 17728, 5727, 17735, 11927, 17736, 17737, 17738, 2]
 
-// Module 17579 (DevToolsScreens)
+// Module 17574 (DevToolsScreens)
 import Fragment from "Fragment" /* 21 */;
 import LinkIcon from "LinkIcon" /* 5727 */;
 import DownloadIcon from "DownloadIcon" /* 5733 */;
@@ -22,36 +22,36 @@ import FileUpIcon from "FileUpIcon" /* 12225 */;
 import ShopIcon from "ShopIcon" /* 12468 */;
 import DevToolsExperimentsScreen from "DevToolsExperimentsScreen" /* 13239 */;
 import PiggyBankIcon from "PiggyBankIcon" /* 13366 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 17253 */;
-import EyeDropperIcon from "EyeDropperIcon" /* 17344 */;
-import DevToolsAnalyticsScreen from "DevToolsAnalyticsScreen" /* 17580 */;
-import DevToolsBuildOverrideScreen from "DevToolsBuildOverrideScreen" /* 17581 */;
-import BeakerIcon from "BeakerIcon" /* 17584 */;
-import DevToolsLoggingFlagsScreen from "DevToolsLoggingFlagsScreen" /* 17586 */;
-import DevToolsLocalMessageCache from "DevToolsLocalMessageCache" /* 17587 */;
-import DevToolsGeneratedTestUsersScreen from "DevToolsGeneratedTestUsersScreen" /* 17588 */;
-import CompassIcon from "CompassIcon" /* 17594 */;
-import DevToolsDataStorageScreen from "DevToolsDataStorageScreen" /* 17614 */;
-import UserSettingsDesignSystemsScreen from "UserSettingsDesignSystemsScreen" /* 17615 */;
-import DevToolsDismissableContentsScreen from "DevToolsDismissableContentsScreen" /* 17616 */;
-import GameCommunityUpsellDevTools from "GameCommunityUpsellDevTools" /* 17620 */;
-import IntlTestingSettingsPage from "IntlTestingSettingsPage" /* 17623 */;
-import DevToolsOTATestScreen from "DevToolsOTATestScreen" /* 17658 */;
-import DevToolsProfilingScreen from "DevToolsProfilingScreen" /* 17661 */;
-import DevToolsBountyQaScreen from "DevToolsBountyQaScreen" /* 17666 */;
-import DevToolsQuickActionsScreen from "DevToolsQuickActionsScreen" /* 17667 */;
-import DevToolsRevenuePlaygroundScreen from "DevToolsRevenuePlaygroundScreen" /* 17694 */;
-import UserSettingsSurveyChangelogOverride from "UserSettingsSurveyChangelogOverride" /* 17718 */;
-import DevToolsTogglesScreen from "DevToolsTogglesScreen" /* 17720 */;
-import DevToolsComponentsTestingScreen from "DevToolsComponentsTestingScreen" /* 17722 */;
-import DevToolsShopScreen from "DevToolsShopScreen" /* 17729 */;
-import CollectiblesTool from "CollectiblesTool" /* 17730 */;
-import SlayerStorefrontDevTools from "SlayerStorefrontDevTools" /* 17732 */;
-import DevToolsActionSheetsScreen from "DevToolsActionSheetsScreen" /* 17733 */;
-import DevToolsAccountLinkingScreen from "DevToolsAccountLinkingScreen" /* 17740 */;
-import DevToolsPerformanceTestingScreen from "DevToolsPerformanceTestingScreen" /* 17741 */;
-import DevToolsInAppNotificationTestingScreen from "DevToolsInAppNotificationTestingScreen" /* 17742 */;
-import DevToolsDisplayNameEffectsBenchmarkScreen from "DevToolsDisplayNameEffectsBenchmarkScreen" /* 17743 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 17248 */;
+import EyeDropperIcon from "EyeDropperIcon" /* 17339 */;
+import DevToolsAnalyticsScreen from "DevToolsAnalyticsScreen" /* 17575 */;
+import DevToolsBuildOverrideScreen from "DevToolsBuildOverrideScreen" /* 17576 */;
+import BeakerIcon from "BeakerIcon" /* 17579 */;
+import DevToolsLoggingFlagsScreen from "DevToolsLoggingFlagsScreen" /* 17581 */;
+import DevToolsLocalMessageCache from "DevToolsLocalMessageCache" /* 17582 */;
+import DevToolsGeneratedTestUsersScreen from "DevToolsGeneratedTestUsersScreen" /* 17583 */;
+import CompassIcon from "CompassIcon" /* 17589 */;
+import DevToolsDataStorageScreen from "DevToolsDataStorageScreen" /* 17609 */;
+import UserSettingsDesignSystemsScreen from "UserSettingsDesignSystemsScreen" /* 17610 */;
+import DevToolsDismissableContentsScreen from "DevToolsDismissableContentsScreen" /* 17611 */;
+import GameCommunityUpsellDevTools from "GameCommunityUpsellDevTools" /* 17615 */;
+import IntlTestingSettingsPage from "IntlTestingSettingsPage" /* 17618 */;
+import DevToolsOTATestScreen from "DevToolsOTATestScreen" /* 17653 */;
+import DevToolsProfilingScreen from "DevToolsProfilingScreen" /* 17656 */;
+import DevToolsBountyQaScreen from "DevToolsBountyQaScreen" /* 17661 */;
+import DevToolsQuickActionsScreen from "DevToolsQuickActionsScreen" /* 17662 */;
+import DevToolsRevenuePlaygroundScreen from "DevToolsRevenuePlaygroundScreen" /* 17689 */;
+import UserSettingsSurveyChangelogOverride from "UserSettingsSurveyChangelogOverride" /* 17713 */;
+import DevToolsTogglesScreen from "DevToolsTogglesScreen" /* 17715 */;
+import DevToolsComponentsTestingScreen from "DevToolsComponentsTestingScreen" /* 17717 */;
+import DevToolsShopScreen from "DevToolsShopScreen" /* 17724 */;
+import CollectiblesTool from "CollectiblesTool" /* 17725 */;
+import SlayerStorefrontDevTools from "SlayerStorefrontDevTools" /* 17727 */;
+import DevToolsActionSheetsScreen from "DevToolsActionSheetsScreen" /* 17728 */;
+import DevToolsAccountLinkingScreen from "DevToolsAccountLinkingScreen" /* 17735 */;
+import DevToolsPerformanceTestingScreen from "DevToolsPerformanceTestingScreen" /* 17736 */;
+import DevToolsInAppNotificationTestingScreen from "DevToolsInAppNotificationTestingScreen" /* 17737 */;
+import DevToolsDisplayNameEffectsBenchmarkScreen from "DevToolsDisplayNameEffectsBenchmarkScreen" /* 17738 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

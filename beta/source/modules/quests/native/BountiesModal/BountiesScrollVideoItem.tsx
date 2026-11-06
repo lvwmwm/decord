@@ -1,10 +1,10 @@
-// Module ID: 16932
-// Function ID: 16933
+// Module ID: 16927
+// Function ID: 16928
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9555, 7845, 6781, 21, 16933, 504, 16934, 14691, 16939, 16941, 16942, 16937, 16945, 14699, 6788, 6786, 16966, 2]
+// Dependencies: [5, 32, 19, 17, 9555, 7845, 6781, 21, 16928, 504, 16929, 14691, 16934, 16936, 16937, 16932, 16940, 14699, 6788, 6786, 16961, 2]
 // Exports: BountiesScrollVideoItem
 
-// Module 16932 (BountiesScrollVideoItem)
+// Module 16927 (BountiesScrollVideoItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 6781 */;
@@ -58,7 +58,7 @@ function BountiesScrollVideoItemInner(bounty) {
   let tmp23;
   let tmp7;
   let tmp8;
-  const f110962 = () => {
+  const f110953 = () => {
     let currentBalance = null;
     if (isActive) {
       currentBalance = VirtualCurrencyStore.getCurrentBalance();
@@ -136,9 +136,9 @@ function BountiesScrollVideoItemInner(bounty) {
   }, items2);
   [tmp19, tmp20] = isActive(obj.useState(isActive), 2);
   isActive(obj.useState(isActive), 2);
-  [tmp22, tmp23] = isActive(obj.useState(f110962), 2);
+  [tmp22, tmp23] = isActive(obj.useState(f110953), 2);
   VirtualCurrencyStore = tmp23;
-  isActive(obj.useState(f110962), 2);
+  isActive(obj.useState(f110953), 2);
   const first = tmp5(obj.useState(0), 2)[0];
   isActive(obj.useState(0), 2);
   const tmp12 = flushProgress;

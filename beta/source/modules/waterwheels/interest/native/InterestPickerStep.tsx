@@ -1,13 +1,13 @@
-// Module ID: 19569
-// Function ID: 19570
+// Module ID: 19564
+// Function ID: 19565
 // Name: InterestPickerStep
-// Dependencies: [19, 21, 19564, 19567, 19570, 1242, 19571, 1113, 2408, 2]
+// Dependencies: [19, 21, 19559, 19562, 19565, 1242, 19566, 1113, 2408, 2]
 // Exports: default
 
-// Module 19569 (InterestPickerStep)
+// Module 19564 (InterestPickerStep)
 import Fragment from "Fragment" /* 21 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import InterestPickerCatalogs from "InterestPickerCatalogs" /* 19570 */;
+import InterestPickerCatalogs from "InterestPickerCatalogs" /* 19565 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

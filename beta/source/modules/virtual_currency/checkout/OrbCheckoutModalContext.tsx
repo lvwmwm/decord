@@ -1,12 +1,12 @@
-// Module ID: 15053
-// Function ID: 15054
+// Module ID: 15048
+// Function ID: 15049
 // Name: OrbCheckoutModalContext
-// Dependencies: [19, 21, 1266, 15054, 2]
+// Dependencies: [19, 21, 1266, 15049, 2]
 // Exports: OrbCheckoutModalContextProvider, useOrbCheckoutModalContext, useOrbCheckoutModalContextProvider
 
-// Module 15053 (OrbCheckoutModalContext)
+// Module 15048 (OrbCheckoutModalContext)
 import Fragment from "Fragment" /* 21 */;
-import OrbCheckoutHooks from "OrbCheckoutHooks" /* 15054 */;
+import OrbCheckoutHooks from "OrbCheckoutHooks" /* 15049 */;
 import react from "react" /* 19 */;
 import v1_mod from "v1" /* 1266 */;
 import size from "module_2" /* 2 */;

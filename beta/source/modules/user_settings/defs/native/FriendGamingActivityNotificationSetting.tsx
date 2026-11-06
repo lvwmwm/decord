@@ -1,13 +1,13 @@
-// Module ID: 17500
-// Function ID: 17501
+// Module ID: 17495
+// Function ID: 17496
 // Name: FriendGamingActivityNotificationSetting
-// Dependencies: [8432, 11540, 1113, 4839, 17501, 2]
+// Dependencies: [8432, 11540, 1113, 4839, 17496, 2]
 
-// Module 17500 (FriendGamingActivityNotificationSetting)
+// Module 17495 (FriendGamingActivityNotificationSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4839 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 17501 */;
+import FriendGamingActivityNotificationUtils from "FriendGamingActivityNotificationUtils" /* 17496 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

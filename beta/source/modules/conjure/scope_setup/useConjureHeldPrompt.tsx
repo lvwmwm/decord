@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, project;
 
-const f102564 = () => {
+const f102557 = () => {
   project = project.getProject(closure_0);
   let install_scope_setup;
   if (project != null) {
@@ -31,7 +31,7 @@ export function useConjureScopeSetupPending(projectId) {
   const items = [ConjureProjectStore];
   const items1 = [projectId];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f102564, items1);
+  return obj.useStateFromStores(items, f102557, items1);
 }
 export function useConjureHeldPrompt(projectId) {
   let closure_1;
@@ -40,7 +40,7 @@ export function useConjureHeldPrompt(projectId) {
   let obj = require("get initialized");
   const items = [ConjureProjectStore];
   const items1 = [projectId];
-  const stateFromStores = obj.useStateFromStores(items, f102564, items1);
+  const stateFromStores = obj.useStateFromStores(items, f102557, items1);
   const items2 = [ConjureProjectStore];
   const items3 = [projectId];
   const obj2 = require("get initialized");

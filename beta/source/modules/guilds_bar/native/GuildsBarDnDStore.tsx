@@ -1,10 +1,10 @@
-// Module ID: 18361
-// Function ID: 18362
+// Module ID: 18356
+// Function ID: 18357
 // Name: GuildsBarDnDStore
 // Dependencies: [6772, 1254, 5095, 1259, 1242, 4929, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 18361 (GuildsBarDnDStore)
+// Module 18356 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native from "react-native" /* 1259 */;
 import _slicedToArray from "_slicedToArray" /* 4929 */;

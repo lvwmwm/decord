@@ -1,10 +1,10 @@
-// Module ID: 19502
-// Function ID: 19503
+// Module ID: 19497
+// Function ID: 19498
 // Name: useFileUploadComponentState
 // Dependencies: [19, 7701, 8208, 8696, 38, 1992, 2]
 // Exports: useFileUploadComponentState
 
-// Module 19502 (useFileUploadComponentState)
+// Module 19497 (useFileUploadComponentState)
 import Server from "Server" /* 1992 */;
 import DraftStore from "DraftStore" /* 7701 */;
 import react from "react" /* 19 */;

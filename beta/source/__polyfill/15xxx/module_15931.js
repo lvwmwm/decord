@@ -1,18 +1,18 @@
 // Module ID: 15931
 // Function ID: 15932
-// Dependencies: [15929]
+// Dependencies: [15924]
 
 // Module 15931
-import _mod15929 from "module_15929" /* 15929 */;
+import _mod15924 from "module_15924" /* 15924 */;
 
 
-export default function(arg0, arg1, arg2) {
+export default function(arg0, arg1) {
   try {
     const self = this;
     const self2 = this;
-    const tmp5 = new _mod15929(arg1, arg2);
-    return tmp5.test(arg0);
+    const str = new _mod15924(arg0, arg1).range || "*";
+    return str;
   } catch (err) {
-    return false;
+    return null;
   }
 };

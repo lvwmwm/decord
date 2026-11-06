@@ -1,9 +1,9 @@
-// Module ID: 17527
-// Function ID: 17528
+// Module ID: 17522
+// Function ID: 17523
 // Name: DeveloperModeSetting
 // Dependencies: [8432, 11540, 1113, 4839, 2]
 
-// Module 17527 (DeveloperModeSetting)
+// Module 17522 (DeveloperModeSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4839 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;

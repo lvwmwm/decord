@@ -1,9 +1,9 @@
-// Module ID: 18435
-// Function ID: 18436
+// Module ID: 18430
+// Function ID: 18431
 // Name: YouBar
-// Dependencies: [5, 19, 17, 5038, 5045, 1383, 17075, 1072, 4860, 21, 5014, 575, 17068, 14221, 11240, 11249, 11557, 17074, 17078, 5095, 5637, 8925, 9674, 18436, 16616, 504, 8789, 18442, 5199, 5260, 1379, 12, 18443, 1994, 5198, 11505, 7522, 4847, 1113, 7563, 11243, 5303, 1187, 18457, 18458, 18459, 18464, 18466, 18468, 5080, 18470, 18471, 2]
+// Dependencies: [5, 19, 17, 5038, 5045, 1383, 17070, 1072, 4860, 21, 5014, 575, 17063, 14221, 11240, 11249, 11557, 17069, 17073, 5095, 5637, 8925, 9674, 18431, 16611, 504, 8789, 18437, 5199, 5260, 1379, 12, 18438, 1994, 5198, 11505, 7522, 4847, 1113, 7563, 11243, 5303, 1187, 18452, 18453, 18454, 18459, 18461, 18463, 5080, 18465, 18466, 2]
 
-// Module 18435 (YouBar)
+// Module 18430 (YouBar)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -20,15 +20,15 @@ import spring from "spring" /* 5637 */;
 import transitionToGuild from "transitionToGuild" /* 7522 */;
 import openUserSettings from "openUserSettings" /* 7563 */;
 import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 11505 */;
-import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18470 */;
-import ConnectionBannerDefault from "ConnectionBanner" /* 18471 */;
+import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18465 */;
+import ConnectionBannerDefault from "ConnectionBanner" /* 18466 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5038 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import UserStore from "UserStore" /* 1383 */;
-import YouBarConstants from "YouBarConstants" /* 17075 */;
+import YouBarConstants from "YouBarConstants" /* 17070 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;

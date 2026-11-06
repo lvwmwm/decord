@@ -114,11 +114,11 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let tmp13;
   let tmp14;
   let user;
-  const f96389 = () => {
+  const f96382 = () => {
     const items = [SavedMessagesStore.isMessageReminder(channel.id, message.id), SavedMessagesStore.isMessageBookmarked(channel.id, message.id)];
     return items;
   };
-  const f96390 = (flags) => {
+  const f96383 = (flags) => {
     let tmp = null == flags.flags;
     if (!tmp) {
       const obj = analyticsLocation(analyticsLocation[26]);
@@ -170,8 +170,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const guild = GuildStore.getGuild(channel.guild_id);
   let obj4 = require("get initialized");
   const items2 = [actionSheetSource];
-  [tmp13, tmp14] = message(obj4.useStateFromStoresArray(items2, f96389), 2);
-  const tmp12 = message(obj4.useStateFromStoresArray(items2, f96389), 2);
+  [tmp13, tmp14] = message(obj4.useStateFromStoresArray(items2, f96382), 2);
+  const tmp12 = message(obj4.useStateFromStoresArray(items2, f96382), 2);
   let obj5 = require("ThreadHooks");
   const isNonModInLockedThread = obj5.useIsNonModInLockedThread(channel);
   let id1;
@@ -256,8 +256,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const attachments1 = message.attachments;
   let tmp50 = message.author.id === id3;
   if (tmp50) {
-    tmp50 = attachments1.filter(f96390).length > 1 || "" !== message.content;
-    const tmp51 = attachments1.filter(f96390).length > 1 || "" !== message.content;
+    tmp50 = attachments1.filter(f96383).length > 1 || "" !== message.content;
+    const tmp51 = attachments1.filter(f96383).length > 1 || "" !== message.content;
   }
   const items3 = [selectedMedia];
   const tmp8Result20 = tmp8(tmp3[18]);

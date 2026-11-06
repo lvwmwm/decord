@@ -1,9 +1,9 @@
-// Module ID: 16897
-// Function ID: 16898
+// Module ID: 16892
+// Function ID: 16893
 // Name: QuestHomeSetting
-// Dependencies: [1072, 11540, 1113, 9673, 14718, 16898, 7866, 6786, 2]
+// Dependencies: [1072, 11540, 1113, 9673, 14718, 16893, 7866, 6786, 2]
 
-// Module 16897 (QuestHomeSetting)
+// Module 16892 (QuestHomeSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import QuestContent from "QuestContent" /* 6786 */;

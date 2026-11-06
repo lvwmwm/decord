@@ -1,9 +1,9 @@
-// Module ID: 17788
-// Function ID: 17789
+// Module ID: 17783
+// Function ID: 17784
 // Name: DesignSystemsContextMenuSetting
-// Dependencies: [8432, 1072, 11540, 17789, 2]
+// Dependencies: [8432, 1072, 11540, 17784, 2]
 
-// Module 17788 (DesignSystemsContextMenuSetting)
+// Module 17783 (DesignSystemsContextMenuSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;

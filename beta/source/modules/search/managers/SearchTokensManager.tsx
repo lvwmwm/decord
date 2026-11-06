@@ -1,9 +1,9 @@
-// Module ID: 19613
-// Function ID: 19614
+// Module ID: 19608
+// Function ID: 19609
 // Name: SearchTokensManager
 // Dependencies: [2063, 7287, 13893, 2]
 
-// Module 19613 (SearchTokensManager)
+// Module 19608 (SearchTokensManager)
 import IntlLoaderStore from "IntlLoaderStore" /* 2063 */;
 import SearchUtils from "SearchUtils" /* 13893 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7287 */;

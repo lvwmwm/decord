@@ -1,16 +1,16 @@
-// Module ID: 17407
-// Function ID: 17408
+// Module ID: 17402
+// Function ID: 17403
 // Name: ReduceSaturationSetting
-// Dependencies: [19, 5015, 8432, 21, 16270, 17305, 11489, 11540, 1113, 1187, 2]
+// Dependencies: [19, 5015, 8432, 21, 16265, 17300, 11489, 11540, 1113, 1187, 2]
 
-// Module 17407 (ReduceSaturationSetting)
+// Module 17402 (ReduceSaturationSetting)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import CirclePlusIcon from "CirclePlusIcon" /* 11489 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16270 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 17305 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16265 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 17300 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;

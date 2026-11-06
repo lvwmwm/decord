@@ -1,10 +1,10 @@
-// Module ID: 18726
-// Function ID: 18727
+// Module ID: 18721
+// Function ID: 18722
 // Name: renderChannelItem
-// Dependencies: [19, 17, 4885, 4956, 1383, 6776, 21, 9085, 1113, 5014, 575, 18727, 504, 6957, 12526, 6860, 18728, 10799, 18730, 5652, 2]
+// Dependencies: [19, 17, 4885, 4956, 1383, 6776, 21, 9085, 1113, 5014, 575, 18722, 504, 6957, 12526, 6860, 18723, 10799, 18725, 5652, 2]
 // Exports: default, getChannelAccessibilityProps
 
-// Module 18726 (renderChannelItem)
+// Module 18721 (renderChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -13,9 +13,9 @@ import ReadStateConstants from "ReadStateConstants" /* 6776 */;
 import NotificationCenterUtils from "NotificationCenterUtils" /* 6860 */;
 import GuildIconDefault from "GuildIcon" /* 6957 */;
 import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9085 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 18727 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 18728 */;
-import renderChannelContentDefault from "renderChannelContent" /* 18730 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18722 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18723 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18725 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4885 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;

@@ -1,10 +1,10 @@
-// Module ID: 17994
-// Function ID: 17995
+// Module ID: 17989
+// Function ID: 17990
 // Name: useMultiAccount
 // Dependencies: [19, 1383, 13977, 504, 13981, 2]
 // Exports: useMultiAccountUsers
 
-// Module 17994 (useMultiAccount)
+// Module 17989 (useMultiAccount)
 import get_initialized from "get initialized" /* 504 */;
 import MultiAccountStore2 from "MultiAccountStore" /* 13977 */;
 import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13981 */;

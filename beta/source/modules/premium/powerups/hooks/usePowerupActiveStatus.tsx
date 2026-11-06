@@ -19,8 +19,8 @@ let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f105788 = () => GuildStore.getGuild(closure_0);
-const f105789 = () => GuildPowerupsStore.getStateForGuild(closure_0);
+const f105781 = () => GuildStore.getGuild(closure_0);
+const f105782 = () => GuildPowerupsStore.getStateForGuild(closure_0);
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_4, PowerupActiveStatusType: hasOwnProperty, POWERUPS_INCLUDED_IN_LEVEL: metroRequire, BOOSTING_TIER_TO_LEVEL_SKU_ID: metroImportDefault } = GuildPowerupsConstants);
 const GuildFeatures = Constants.GuildFeatures;
 let closure_9 = GameServerConstants.GAME_SERVER_POWERUP_SKU_ID;
@@ -41,10 +41,10 @@ export default function usePowerupActiveStatus(arg0, arg1) {
   _require = arg0;
   let obj = require("get initialized");
   const items1 = [unlockedPowerups];
-  stateFromStores = obj.useStateFromStores(items1, f105788);
+  stateFromStores = obj.useStateFromStores(items1, f105781);
   let obj2 = require("get initialized");
   const items2 = [flag];
-  unlockedPowerups = obj2.useStateFromStores(items2, f105789);
+  unlockedPowerups = obj2.useStateFromStores(items2, f105782);
   flag = undefined;
   if (stateFromStores != null) {
     let features = stateFromStores.features;
@@ -157,10 +157,10 @@ export function usePowerupsActiveStatuses(guildId, powerups) {
   _require = guildId;
   const items = [closure_2];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f105788);
+  stateFromStores = obj.useStateFromStores(items, f105781);
   const items1 = [flag];
   const obj2 = require("get initialized");
-  closure_2 = obj2.useStateFromStores(items1, f105789);
+  closure_2 = obj2.useStateFromStores(items1, f105782);
   flag = undefined;
   if (stateFromStores != null) {
     const features = stateFromStores.features;

@@ -1,10 +1,10 @@
-// Module ID: 18085
-// Function ID: 18086
+// Module ID: 18080
+// Function ID: 18081
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1072, 21, 575, 12522, 11047, 5640, 5014, 5095, 5637, 18080, 5199, 13886, 6999, 8028, 10828, 1113, 5624, 7220, 18086, 5634, 5722, 2]
+// Dependencies: [19, 17, 1072, 21, 575, 12522, 11047, 5640, 5014, 5095, 5637, 18075, 5199, 13886, 6999, 8028, 10828, 1113, 5624, 7220, 18081, 5634, 5722, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 18085 (MessagesHeader)
+// Module 18080 (MessagesHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import spring from "spring" /* 5637 */;
@@ -81,7 +81,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   fn.__workletHash = 17233409273245;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
-  let obj3 = height(18080);
+  let obj3 = height(18075);
   const isHomeDrawerEnabled = obj3.useIsHomeDrawerEnabled();
   const callback = react.useCallback(() => {
     const obj = height(headerPanel[12]);
@@ -142,7 +142,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   const obj9 = { onPress: callback2, variant: "secondary", size: "sm", icon: scrollPosition(7220), accessibilityLabel: intl3.string(height(1113).t["5h0QOP"]) };
   const IconButton2 = tmp3(8028).IconButton;
   intl3 = tmp3(1113).intl;
-  items2 = [closure_6(IconButton2, obj9), closure_6(scrollPosition(18086), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
+  items2 = [closure_6(IconButton2, obj9), closure_6(scrollPosition(18081), { noMargin: true, onPress: callback, alternateVariant: true }), , ];
   const obj10 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: scrollPosition(5722), onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1113).t.zIJnA6) };
   const Button = tmp3(5634).Button;
   intl4 = tmp3(1113).intl;

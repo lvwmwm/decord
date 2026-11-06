@@ -1,9 +1,9 @@
-// Module ID: 19070
-// Function ID: 19071
+// Module ID: 19065
+// Function ID: 19066
 // Name: LaunchPadPullTab
-// Dependencies: [19, 17, 11536, 12809, 21, 5014, 575, 12075, 5095, 12814, 19071, 5637, 1113, 19006, 15665, 2]
+// Dependencies: [19, 17, 11536, 12809, 21, 5014, 575, 12075, 5095, 12814, 19066, 5637, 1113, 19001, 15660, 2]
 
-// Module 19070 (LaunchPadPullTab)
+// Module 19065 (LaunchPadPullTab)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

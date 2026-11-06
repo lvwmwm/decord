@@ -17,7 +17,7 @@ import WideBannerBlockRecord2 from "WideBannerBlockRecord" /* 7758 */;
 import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7721 */;
 import size from "module_2" /* 2 */;
 
-const f91571 = (type) => {
+const f91564 = (type) => {
   type = type.type;
   if (ShopBlockType.ShopBlockType.HERO === type) {
     return HeroBlockRecord.fromServer(type);
@@ -39,8 +39,8 @@ const f91571 = (type) => {
     return closure_1_6.fromServer(type);
   }
 };
-const f91572 = (item) => undefined !== item;
-const f91573 = (item) => CollectiblesCategoryRecord.fromServer(item);
+const f91565 = (item) => undefined !== item;
+const f91566 = (item) => CollectiblesCategoryRecord.fromServer(item);
 const CountdownTimerBlockRecord = CountdownTimerBlockRecord2.CountdownTimerBlockRecord;
 const FeaturedBlockRecord = FeaturedBlockRecord2.FeaturedBlockRecord;
 const FeedBlockRecord = FeedBlockRecord2.FeedBlockRecord;
@@ -54,20 +54,20 @@ class CollectiblesShopHomeRecord {
   constructor(shop_blocks) {
     const obj = Object.create(new.target.prototype);
     shop_blocks = shop_blocks.shop_blocks;
-    const mapped = shop_blocks.map(f91571);
-    obj.shopBlocks = mapped.filter(f91572);
+    const mapped = shop_blocks.map(f91564);
+    obj.shopBlocks = mapped.filter(f91565);
     const categories = shop_blocks.categories;
-    obj.categories = categories.map(f91573);
+    obj.categories = categories.map(f91566);
     return obj;
   }
   static fromServer(shop_blocks) {
     if (typeof CollectiblesShopHomeRecord === "function") {
       const obj = Object.create(tmp.prototype);
       shop_blocks = shop_blocks.shop_blocks;
-      const mapped = shop_blocks.map(f91571);
-      obj.shopBlocks = mapped.filter(f91572);
+      const mapped = shop_blocks.map(f91564);
+      obj.shopBlocks = mapped.filter(f91565);
       const categories = shop_blocks.categories;
-      obj.categories = categories.map(f91573);
+      obj.categories = categories.map(f91566);
       return obj;
     } else {
       throw new TypeError("Trying to call a non-function");

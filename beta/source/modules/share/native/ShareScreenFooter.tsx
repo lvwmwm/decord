@@ -1,10 +1,10 @@
-// Module ID: 15732
-// Function ID: 15733
+// Module ID: 15727
+// Function ID: 15728
 // Name: ShareScreenFooter
 // Dependencies: [19, 21, 13405, 13406, 5634, 13418, 2]
 // Exports: default
 
-// Module 15732 (ShareScreenFooter)
+// Module 15727 (ShareScreenFooter)
 import Fragment from "Fragment" /* 21 */;
 import components_Button_Button from "components/Button/Button" /* 5634 */;
 import useShareChatInputActions from "useShareChatInputActions" /* 13405 */;

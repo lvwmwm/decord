@@ -1,18 +1,18 @@
-// Module ID: 16734
-// Function ID: 16735
+// Module ID: 16729
+// Function ID: 16730
 // Name: ExplicitMediaFiltersGuildsSetting
-// Dependencies: [8432, 8368, 16721, 16729, 8687, 7470, 1113, 16730, 1196, 11540, 2]
+// Dependencies: [8432, 8368, 16716, 16724, 8687, 7470, 1113, 16725, 1196, 11540, 2]
 
-// Module 16734 (ExplicitMediaFiltersGuildsSetting)
+// Module 16729 (ExplicitMediaFiltersGuildsSetting)
 import intl4 from "intl" /* 1113 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 7470 */;
 import useUserIsTeen from "useUserIsTeen" /* 8368 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8687 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16721 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16729 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16730 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16716 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16724 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16725 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;
 

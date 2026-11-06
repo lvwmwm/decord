@@ -1,10 +1,10 @@
-// Module ID: 19038
-// Function ID: 19039
+// Module ID: 19033
+// Function ID: 19034
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8763, 4860, 21, 5014, 575, 10616, 5258, 5199, 5272, 10619, 5624, 1113, 2634, 5634, 10558, 7351, 5717, 19039, 13365, 504, 8755, 2]
+// Dependencies: [19, 17, 8763, 4860, 21, 5014, 575, 10616, 5258, 5199, 5272, 10619, 5624, 1113, 2634, 5634, 10558, 7351, 5717, 19034, 13365, 504, 8755, 2]
 // Exports: default
 
-// Module 19038 (GiftingBadgesCoachmarkActionSheet)
+// Module 19033 (GiftingBadgesCoachmarkActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,7 +17,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7351 */;
 import BadgeId from "BadgeId" /* 8755 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 10558 */;
 import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10619 */;
-import _modDef19039 from "module_19039" /* 19039 */;
+import _modDef19034 from "module_19034" /* 19034 */;
 import react from "react" /* 19 */;
 import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8763 */;
 import Fragment from "Fragment" /* 21 */;
@@ -149,7 +149,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   const obj3 = { style: tmp.graphicContainer, children: closure_7(tmp4, obj4) };
   BottomSheet = markAsDismissed(5272).BottomSheet;
   obj4 = { source: obj5, style: tmp.newBadgeImage };
-  obj5 = { uri: _modDef19039 };
+  obj5 = { uri: _modDef19034 };
   tmp4 = FastImageDefault;
   items2 = [closure_7(View, obj3), , ];
   const obj6 = { style: tmp.textContainer, children: items3 };

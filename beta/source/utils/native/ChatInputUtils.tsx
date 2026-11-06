@@ -13,7 +13,7 @@ import useKeyboardType from "useKeyboardType" /* 5209 */;
 import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 5210 */;
 import size from "module_2" /* 2 */;
 
-const f87115 = (item) => {
+const f87108 = (item) => {
   let tmp = typeof item === "number";
   if (typeof item === "number") {
     const obj = ScreenIndexFrozen;
@@ -40,7 +40,7 @@ function getHighestIndexForScreenIndexMap(map1) {
             if (!obj.has("conjure-preview")) {
               const _Array = Array;
               const arr = Array.from(obj.keys());
-              const found = arr.filter(f87115);
+              const found = arr.filter(f87108);
               if (0 !== found.length) {
                 const _Math = Math;
                 const items = [];
@@ -165,7 +165,7 @@ export function getHighestActiveScreenIndex() {
     } else {
       const _Array = Array;
       const arr = Array.from(obj.keys());
-      const found = arr.filter(f87115);
+      const found = arr.filter(f87108);
       if (0 !== found.length) {
         const _Math = Math;
         const items = [];

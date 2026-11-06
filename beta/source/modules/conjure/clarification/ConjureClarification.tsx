@@ -21,7 +21,7 @@ let items1;
 let items2;
 let items3;
 let items4;
-const f102592 = (answer) => {
+const f102585 = (answer) => {
   let tmp = null != answer.answer;
   if (tmp) {
     const str = answer.answer.text;
@@ -29,7 +29,7 @@ const f102592 = (answer) => {
   }
   return tmp;
 };
-const f102593 = (answer) => {
+const f102586 = (answer) => {
   const sum = answer.index + 1;
   const str = answer.answer.text;
   return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
@@ -155,8 +155,8 @@ export function formatClarificationAnswers(questions, arg1) {
   let closure_0 = arg1;
   questions = questions.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f102592);
-  const mapped1 = found.map(f102593);
+  const found = mapped.filter(f102585);
+  const mapped1 = found.map(f102586);
   return mapped1.join("\n");
 }
 export function toggleClarificationOption(options, arr, id) {
@@ -228,7 +228,7 @@ export function clarificationEntities(project, items, arg2, arg3) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f102603(id);
+    tmp = f102596(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -285,7 +285,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
   let closure_0 = stateFromStores1;
   const items = [stateFromStores1.id];
   let channel = "channel";
-  const f102603 = () => {
+  const f102596 = () => {
     obj = channel(dependencyMap[6]);
     return obj.computeChannelName(channel, user, RelationshipStore);
   };
@@ -296,7 +296,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f102603(id);
+    tmp = f102596(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -505,8 +505,8 @@ export function submitClarificationAnswers(projectId, clarification, arg2, first
   _require = arg2;
   let questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f102592);
-  const mapped1 = found.map(f102593);
+  const found = mapped.filter(f102585);
+  const mapped1 = found.map(f102586);
   const joined = mapped1.join("\n");
   if ("" !== joined) {
     let tmp2 = projectId;

@@ -1,10 +1,10 @@
-// Module ID: 18577
-// Function ID: 18578
+// Module ID: 18572
+// Function ID: 18573
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1383, 21, 14858, 8718, 14863, 18528, 575, 504, 6439, 9290, 7330, 8716, 9316, 9340, 8714, 18578, 1994, 8924, 13381, 18580, 1113, 18582, 5624, 5068, 6860, 11, 671, 6980, 5717, 18583, 2]
+// Dependencies: [19, 17, 1383, 21, 14858, 8718, 14863, 18523, 575, 504, 6439, 9290, 7330, 8716, 9316, 9340, 8714, 18573, 1994, 8924, 13381, 18575, 1113, 18577, 5624, 5068, 6860, 11, 671, 6980, 5717, 18578, 2]
 // Exports: default
 
-// Module 18577 (GamingLikeEntryRow)
+// Module 18572 (GamingLikeEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 1994 */;
@@ -16,7 +16,7 @@ import TrendingType from "TrendingType" /* 14863 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1383 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18528 */;
+import createICYMIStyles from "createICYMIStyles" /* 18523 */;
 import size_mod from "module_2" /* 2 */;
 
 let Badge, GameShareModal;
@@ -165,7 +165,7 @@ export default function GamingLikeEntryRow(content) {
   }, items2);
   const items3 = [content];
   const callback1 = react.useCallback(() => {
-    const promise = asyncRequire(18578, dependencyMap.paths);
+    const promise = asyncRequire(18573, dependencyMap.paths);
     promise.then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {

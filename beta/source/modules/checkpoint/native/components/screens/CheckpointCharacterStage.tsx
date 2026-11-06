@@ -35,7 +35,7 @@ export default function CheckpointCharacterStage(stage) {
   let tmp18;
   let tmp19;
   let tmp6Result;
-  const f104630 = () => {
+  const f104623 = () => {
     const obj = stage(width[6]);
     const obj2 = { faceID: faceID2, headwearID: headwearID2, shoesID: shoesID2, wearableID: wearableID2 };
     return obj.getCheckpointCharacterVisibleTextureNames(obj2, chapterID2, device2);
@@ -95,8 +95,8 @@ export default function CheckpointCharacterStage(stage) {
   items3[3] = wearableID2;
   items3[4] = chapterID2;
   items3[5] = device2;
-  const memo1 = obj.useMemo(f104630, items2);
-  const memo2 = obj.useMemo(f104630, items3);
+  const memo1 = obj.useMemo(f104623, items2);
+  const memo2 = obj.useMemo(f104623, items3);
   const obj3 = stage(width[13]);
   checkpointCharacterLoadedTextureNames = obj3.useCheckpointCharacterLoadedTextureNames({ visibleTextureNames: memo2, requestedTextureNames: memo1 });
   const items4 = [checkpointCharacterLoadedTextureNames, tmp5];

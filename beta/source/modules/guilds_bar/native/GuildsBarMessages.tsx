@@ -1,17 +1,17 @@
-// Module ID: 18384
-// Function ID: 18385
+// Module ID: 18379
+// Function ID: 18380
 // Name: GuildsBarMessages
-// Dependencies: [19, 5045, 1072, 21, 18385, 18370, 504, 18373, 575, 1113, 18386, 8643, 2]
+// Dependencies: [19, 5045, 1072, 21, 18380, 18365, 504, 18368, 575, 1113, 18381, 8643, 2]
 
-// Module 18384 (GuildsBarMessages)
+// Module 18379 (GuildsBarMessages)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18370 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18373 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18385 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 18365 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 18368 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 18380 */;
 import react from "react" /* 19 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5045 */;
 import size from "module_2" /* 2 */;

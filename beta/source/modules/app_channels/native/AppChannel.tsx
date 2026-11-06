@@ -1,10 +1,10 @@
-// Module ID: 18671
-// Function ID: 18672
+// Module ID: 18666
+// Function ID: 18667
 // Name: AppChannel
-// Dependencies: [19, 17, 21, 5014, 575, 1891, 5607, 12240, 18672, 16366, 12239, 12241, 7419, 5756, 12250, 12254, 18675, 18678, 1113, 6881, 5717, 1409, 11340, 5634, 5675, 18679, 9829, 6878, 18680, 11215, 2]
+// Dependencies: [19, 17, 21, 5014, 575, 1891, 5607, 12240, 18667, 16361, 12239, 12241, 7419, 5756, 12250, 12254, 18670, 18673, 1113, 6881, 5717, 1409, 11340, 5634, 5675, 18674, 9829, 6878, 18675, 11215, 2]
 // Exports: default
 
-// Module 18671 (AppChannel)
+// Module 18666 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -18,9 +18,9 @@ import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9829 
 import useChannelContentGate from "useChannelContentGate" /* 11215 */;
 import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11340 */;
 import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 12240 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 18678 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 18679 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18680 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 18673 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 18674 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18675 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5014 */;
@@ -232,7 +232,7 @@ export default function ConnectedAppChannel(channel) {
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(18678).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(18673).FrameSurfaceExplanation;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     result = hasOwnProperty(FrameSurfaceExplanation, obj2);

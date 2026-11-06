@@ -1,10 +1,10 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15067
+// Function ID: 15068
 // Name: useShouldPinCollectiblesEditPreview
 // Dependencies: [1491, 1625, 5586, 2]
 // Exports: useShouldPinCollectiblesEditPreview
 
-// Module 15072 (useShouldPinCollectiblesEditPreview)
+// Module 15067 (useShouldPinCollectiblesEditPreview)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1491 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1625 */;
 import NavigatorConstants from "NavigatorConstants" /* 5586 */;

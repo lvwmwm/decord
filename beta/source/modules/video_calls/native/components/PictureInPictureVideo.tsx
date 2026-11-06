@@ -227,11 +227,11 @@ let closure_22 = react.memo(function ActivityPictureInPictureVideo(arg0) {
   let tmp5;
   let tmp6;
   let tmp9;
-  const f100130 = () => {
+  const f100123 = () => {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
-  const f126783 = () => {
+  const f126774 = () => {
     const items = [ChannelRTCStore.getParticipants(id), ChannelRTCStore.getVideoParticipants(id), ChannelRTCStore.getParticipantsVersion(id)];
     return items;
   };
@@ -242,16 +242,16 @@ let closure_22 = react.memo(function ActivityPictureInPictureVideo(arg0) {
   const obj = id(leadingEdgeDebounce[20]);
   id = channel.id;
   leadingEdgeDebounce = undefined;
-  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f100130);
-  _slicedToArray(obj.useStateFromStoresArray(items, f100130), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f100123);
+  _slicedToArray(obj.useStateFromStoresArray(items, f100123), 2);
   const items1 = [ChannelCallLifecycleStore];
   const obj2 = id(leadingEdgeDebounce[20]);
   const stateFromStores = obj2.useStateFromStores(items1, () => ChannelCallLifecycleStore.isReactingToThermalState());
   const items2 = [ChannelRTCStore];
   const items3 = [id];
   const obj3 = id(leadingEdgeDebounce[20]);
-  [arr5, tmp9] = obj3.useStateFromStores(items2, f126783, items3, areParticipantsEqual);
-  _slicedToArray(obj3.useStateFromStores(items2, f126783, items3, areParticipantsEqual), 2);
+  [arr5, tmp9] = obj3.useStateFromStores(items2, f126774, items3, areParticipantsEqual);
+  _slicedToArray(obj3.useStateFromStores(items2, f126774, items3, areParticipantsEqual), 2);
   const items4 = [SpeakingStore];
   const items5 = [selfParticipant];
   const obj4 = id(leadingEdgeDebounce[20]);

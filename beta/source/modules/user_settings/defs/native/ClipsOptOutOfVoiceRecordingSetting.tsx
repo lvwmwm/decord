@@ -1,9 +1,9 @@
-// Module ID: 16877
-// Function ID: 16878
+// Module ID: 16872
+// Function ID: 16873
 // Name: ClipsOptOutOfVoiceRecordingSetting
 // Dependencies: [5, 8432, 4839, 572, 11540, 1113, 2]
 
-// Module 16877 (ClipsOptOutOfVoiceRecordingSetting)
+// Module 16872 (ClipsOptOutOfVoiceRecordingSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 4839 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;

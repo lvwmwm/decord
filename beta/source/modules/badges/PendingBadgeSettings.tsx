@@ -1,10 +1,10 @@
-// Module ID: 14985
-// Function ID: 14986
+// Module ID: 14980
+// Function ID: 14981
 // Name: PendingBadgeSettings
 // Dependencies: [32, 1383, 8763, 11460, 572, 8764, 2]
 // Exports: applyPendingBadgeSettings, getPendingProfileBadges, hasPendingBadgeSettings, moveBadgeInDisplayOrder, resetPendingBadgeSettings, setPendingBadgeDisplayOrder, setPendingBadgeHiddenBadges, setPendingBadgeVisibility
 
-// Module 14985 (PendingBadgeSettings)
+// Module 14980 (PendingBadgeSettings)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import BadgeIdResolution from "BadgeIdResolution" /* 8764 */;
 import BadgeUtils from "BadgeUtils" /* 11460 */;
@@ -245,7 +245,7 @@ export function setPendingBadgeVisibility(badgeId) {
 }
 export function resetPendingBadgeSettings() {
   const obj = DispatcherDefault;
-  obj.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "children", pendingBadgeHiddenBadges: "Boolean" });
+  obj.dispatch({ type: "USER_PROFILE_SETTINGS_SET_PENDING_CHANGES", pendingBadgeDisplayOrder: "children", pendingBadgeHiddenBadges: "Array" });
 }
 export function hasPendingBadgeSettings(pendingBadgeDisplayOrder) {
   return undefined !== pendingBadgeDisplayOrder.pendingBadgeDisplayOrder || undefined !== pendingBadgeDisplayOrder.pendingBadgeHiddenBadges;

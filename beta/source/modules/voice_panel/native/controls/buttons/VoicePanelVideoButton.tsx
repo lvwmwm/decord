@@ -1,10 +1,10 @@
-// Module ID: 19322
-// Function ID: 19323
+// Module ID: 19317
+// Function ID: 19318
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 11705, 4863, 4885, 2006, 4946, 5768, 21, 11222, 19310, 504, 6724, 14568, 5960, 14571, 1113, 19323, 9221, 11724, 19311, 14590, 5153, 11040, 14902, 2]
+// Dependencies: [19, 17, 11705, 4863, 4885, 2006, 4946, 5768, 21, 11222, 19305, 504, 6724, 14568, 5960, 14571, 1113, 19318, 9221, 11724, 19306, 14590, 5153, 11040, 14902, 2]
 // Exports: default
 
-// Module 19322 (VoicePanelVideoButton)
+// Module 19317 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import StreamPermissionUtils from "StreamPermissionUtils" /* 6724 */;
 import CallsUtils from "CallsUtils" /* 9221 */;
 import openIgnoreThermalStateAlert from "openIgnoreThermalStateAlert" /* 11724 */;
 import VoicePanelVideoGuardErrorAlert from "VoicePanelVideoGuardErrorAlert" /* 14571 */;
-import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 19323 */;
+import VoicePanelNoVideoPermissionsAlert from "VoicePanelNoVideoPermissionsAlert" /* 19318 */;
 import react from "react" /* 19 */;
 import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 11705 */;
 import ChannelStore from "ChannelStore" /* 4863 */;

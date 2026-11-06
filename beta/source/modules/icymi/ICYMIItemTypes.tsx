@@ -1,9 +1,9 @@
-// Module ID: 18532
-// Function ID: 18533
+// Module ID: 18527
+// Function ID: 18528
 // Name: ICYMIItemTypes
 // Dependencies: [2]
 
-// Module 18532 (ICYMIItemTypes)
+// Module 18527 (ICYMIItemTypes)
 import size from "module_2" /* 2 */;
 
 const set = new Set(["end", "loading", "bottomLoading", "icymiHeader", "recommendedGuilds"]);

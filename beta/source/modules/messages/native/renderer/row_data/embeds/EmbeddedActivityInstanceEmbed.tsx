@@ -1,10 +1,10 @@
-// Module ID: 15131
-// Function ID: 15132
+// Module ID: 15126
+// Function ID: 15127
 // Name: EmbeddedActivityInstanceEmbed
-// Dependencies: [4862, 2038, 502, 4863, 5761, 1383, 10117, 13706, 1113, 13707, 15121, 15132, 13708, 13709, 6881, 12462, 2]
+// Dependencies: [4862, 2038, 502, 4863, 5761, 1383, 10117, 13706, 1113, 13707, 15116, 15127, 13708, 13709, 6881, 12462, 2]
 // Exports: createActivityInstanceEmbed
 
-// Module 15131 (EmbeddedActivityInstanceEmbed)
+// Module 15126 (EmbeddedActivityInstanceEmbed)
 import intl10 from "intl" /* 1113 */;
 import ApplicationActionCreators from "ApplicationActionCreators" /* 6881 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 10117 */;
@@ -13,8 +13,8 @@ import ContentClassificationVisibility from "ContentClassificationVisibility" /*
 import CodedLinksTypes from "CodedLinksTypes" /* 13707 */;
 import getPlayInContext from "getPlayInContext" /* 13708 */;
 import nativeAppMessageEmbedUtil from "nativeAppMessageEmbedUtil" /* 13709 */;
-import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15121 */;
-import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15132 */;
+import useEmbeddedActivityParticipantAvatarUris from "useEmbeddedActivityParticipantAvatarUris" /* 15116 */;
+import EmbeddedApplicationInstanceUtils from "EmbeddedApplicationInstanceUtils" /* 15127 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import ApplicationStore from "ApplicationStore" /* 2038 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,18 +1,18 @@
-// Module ID: 16966
-// Function ID: 16967
+// Module ID: 16961
+// Function ID: 16962
 // Name: BountiesScrollEndCard
-// Dependencies: [19, 17, 5015, 6781, 21, 5014, 575, 5254, 5257, 5095, 5587, 16967, 16969, 16927, 504, 16928, 9960, 2]
+// Dependencies: [19, 17, 5015, 6781, 21, 5014, 575, 5254, 5257, 5095, 5587, 16962, 16964, 16922, 504, 16923, 9960, 2]
 // Exports: default
 
-// Module 16966 (BountiesScrollEndCard)
+// Module 16961 (BountiesScrollEndCard)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import timing from "timing" /* 5254 */;
 import timingPresets from "timingPresets" /* 5257 */;
 import QuestConstants from "QuestConstants" /* 6781 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 9960 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16927 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16928 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16922 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16923 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5015 */;
@@ -77,8 +77,8 @@ function BountiesScrollEndCardContent(isScrollingInBoundsSharedValue) {
   const View2 = isScrollingInBoundsSharedValue(5095).View;
   items3 = [, ];
   const obj7 = { bounty, sourceQuestContent, disabled: !isActive };
-  items3[0] = closure_8(isScrollingInBoundsSharedValue(16967), obj7);
-  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(16969), obj9) };
+  items3[0] = closure_8(isScrollingInBoundsSharedValue(16962), obj7);
+  const obj8 = { style: tmp.endedCtaButtonsContainer, pointerEvents: "box-none", children: closure_8(isScrollingInBoundsSharedValue(16964), obj9) };
   obj9 = {
     bounty,
     visible,

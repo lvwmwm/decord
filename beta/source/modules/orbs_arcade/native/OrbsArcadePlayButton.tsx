@@ -1,18 +1,18 @@
-// Module ID: 17048
-// Function ID: 17049
+// Module ID: 17043
+// Function ID: 17044
 // Name: OrbsArcadePlayButton
-// Dependencies: [19, 17, 9679, 17023, 21, 5014, 1113, 9532, 575, 5624, 5640, 7326, 17049, 504, 17050, 5258, 17051, 17030, 5634, 17039, 5635, 2]
+// Dependencies: [19, 17, 9679, 17018, 21, 5014, 1113, 9532, 575, 5624, 5640, 7326, 17044, 504, 17045, 5258, 17046, 17025, 5634, 17034, 5635, 2]
 // Exports: default
 
-// Module 17048 (OrbsArcadePlayButton)
+// Module 17043 (OrbsArcadePlayButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5624 */;
 import ButtonConstants from "ButtonConstants" /* 5640 */;
-import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 17051 */;
+import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 17046 */;
 import react from "react" /* 19 */;
 import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9679 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17023 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17018 */;
 import createStyles from "createStyles" /* 5014 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -68,14 +68,14 @@ export default function OrbsArcadePlayButton(game) {
   }
   let analyticsLocations;
   analyticsLocations = analyticsLocations(7326)().analyticsLocations;
-  const tmp4 = analyticsLocations(17049)(game);
+  const tmp4 = analyticsLocations(17044)(game);
   const text = tmp4.text;
   ({ isPaidPlay, canAffordPlay } = tmp4);
   let obj = game(504);
   const items = [OrbsArcadeStore];
   const items1 = [game.id];
   const stateFromStores = obj.useStateFromStores(items, () => OrbsArcadeStore.getGameStateForGame(game.id), items1);
-  const tmp7 = analyticsLocations(17050)(game, stateFromStores);
+  const tmp7 = analyticsLocations(17045)(game, stateFromStores);
   const items2 = [OrbsArcadeStore];
   const items3 = [game.id];
   const obj2 = game(504);
@@ -88,20 +88,20 @@ export default function OrbsArcadePlayButton(game) {
   }, []);
   const callback1 = react.useCallback(() => launchOrbsArcadeGameDefault(game, analyticsLocations), items4);
   if (null != stateFromStores) {
-    const tmp5Result = game(17030);
+    const tmp5Result = game(17025);
     if (tmp5Result.mustClaimOrbsArcadeRewardsToPlay(stateFromStores)) {
       const Button2 = tmp5(5634).Button;
       const intl3 = tmp5(1113).intl;
       const formatToPlainString2 = intl3.formatToPlainString;
       const obj4 = { count: tmp5Result3.getOrbsArcadeClaimableRewards(game.rewards, stateFromStores).length };
       const v18ToNc = tmp5(1113).t["18ToNc"];
-      tmp19Result1 = <Button2 grow size={DEFAULT_BUTTON_SIZE} variant="primary" text={formatToPlainString2(v18ToNc, obj4)} disabled onPress="children" />;
-      tmp5Result3 = game(17030);
+      tmp19Result1 = <Button2 grow size={DEFAULT_BUTTON_SIZE} variant="primary" text={formatToPlainString2(v18ToNc, obj4)} disabled onPress="Array" />;
+      tmp5Result3 = game(17025);
     }
     return tmp19Result1;
   }
   if (null != tmp7) {
-    const obj5 = { grow: true, size: DEFAULT_BUTTON_SIZE, variant: "primary", text: formatToPlainStringResult, disabled: true, onPress: "children" };
+    const obj5 = { grow: true, size: DEFAULT_BUTTON_SIZE, variant: "primary", text: formatToPlainStringResult, disabled: true, onPress: "Array" };
     const Button = tmp5(5634).Button;
     const tmp14 = jsx;
     if (null != tmp7.timeUntilNextRound) {
@@ -109,7 +109,7 @@ export default function OrbsArcadePlayButton(game) {
       const formatToPlainString = intl2.formatToPlainString;
       const obj6 = { duration: tmp5Result4.formatOrbsArcadeTimeUntil(tmp7.timeUntilNextRound) };
       const prop = tmp5(1113).t["Uk+BE3"];
-      tmp5Result4 = game(17039);
+      tmp5Result4 = game(17034);
       formatToPlainStringResult = formatToPlainString(prop, obj6);
     } else {
       const intl = tmp5(1113).intl;

@@ -1,10 +1,10 @@
-// Module ID: 14956
-// Function ID: 14957
+// Module ID: 14951
+// Function ID: 14952
 // Name: useGameNameAndCoverImage
 // Dependencies: [7480, 1113, 2]
 // Exports: default
 
-// Module 14956 (useGameNameAndCoverImage)
+// Module 14951 (useGameNameAndCoverImage)
 import useGame from "useGame" /* 7480 */;
 import size from "module_2" /* 2 */;
 

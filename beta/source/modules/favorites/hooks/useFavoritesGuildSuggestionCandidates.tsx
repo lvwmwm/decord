@@ -1,16 +1,16 @@
-// Module ID: 18351
-// Function ID: 18352
+// Module ID: 18346
+// Function ID: 18347
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 18352, 7801, 4863, 18262, 13385, 18354, 504, 9151, 14404, 13396, 9147, 9135, 2]
+// Dependencies: [19, 18347, 7801, 4863, 18257, 13385, 18349, 504, 9151, 14404, 13396, 9147, 9135, 2]
 // Exports: default
 
-// Module 18351 (useFavoritesGuildSuggestionCandidates)
+// Module 18346 (useFavoritesGuildSuggestionCandidates)
 import _mod9135 from "module_9135" /* 9135 */;
 import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9147 */;
 import ShareConstants from "ShareConstants" /* 13385 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18262 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 18257 */;
 import react from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18352 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 18347 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7801 */;
 import ChannelStore from "ChannelStore" /* 4863 */;
 import size from "module_2" /* 2 */;

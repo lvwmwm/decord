@@ -1,9 +1,9 @@
-// Module ID: 16393
-// Function ID: 16394
+// Module ID: 16388
+// Function ID: 16389
 // Name: EmbeddedActivitiesManager
-// Dependencies: [5, 2038, 6843, 4867, 502, 4863, 5764, 4917, 1383, 16311, 4862, 1072, 16310, 1282, 4935, 11741, 5954, 1252, 10927, 11727, 11729, 11733, 5759, 1266, 2026, 9767, 1996, 1108, 572, 5678, 5672, 10932, 10937, 6881, 11720, 1113, 11791, 11722, 11793, 11693, 6070, 7351, 2]
+// Dependencies: [5, 2038, 6843, 4867, 502, 4863, 5764, 4917, 1383, 16306, 4862, 1072, 16305, 1282, 4935, 11741, 5954, 1252, 10927, 11727, 11729, 11733, 5759, 1266, 2026, 9767, 1996, 1108, 572, 5678, 5672, 10932, 10937, 6881, 11720, 1113, 11791, 11722, 11793, 11693, 6070, 7351, 2]
 
-// Module 16393 (EmbeddedActivitiesManager)
+// Module 16388 (EmbeddedActivitiesManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1252 */;
@@ -22,7 +22,7 @@ import canLaunchContextlessFrame from "canLaunchContextlessFrame" /* 11727 */;
 import tryLaunchAsFrame from "tryLaunchAsFrame" /* 11729 */;
 import pendingFrameLaunch from "pendingFrameLaunch" /* 11733 */;
 import getShelfItemDataDefault from "getShelfItemData" /* 11741 */;
-import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16310 */;
+import ActivitySessionAnalytics from "ActivitySessionAnalytics" /* 16305 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2038 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6843 */;
@@ -31,7 +31,7 @@ import ChannelStore from "ChannelStore" /* 4863 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5764 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4917 */;
 import UserStore from "UserStore" /* 1383 */;
-import ActivityShelfStore from "ActivityShelfStore" /* 16311 */;
+import ActivityShelfStore from "ActivityShelfStore" /* 16306 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4862 */;
 import Constants from "Constants" /* 1072 */;
 import LifecycleManager from "LifecycleManager" /* 1996 */;

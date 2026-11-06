@@ -1,10 +1,10 @@
-// Module ID: 18202
-// Function ID: 18203
+// Module ID: 18197
+// Function ID: 18198
 // Name: useFavoritesCleanupActivity
 // Dependencies: [32, 19, 6842, 504, 6894, 1113, 3450, 1089, 2]
 // Exports: default
 
-// Module 18202 (useFavoritesCleanupActivity)
+// Module 18197 (useFavoritesCleanupActivity)
 import DurationsDefault from "Durations" /* 1089 */;
 import _modDef3450 from "module_3450" /* 3450 */;
 import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6894 */;

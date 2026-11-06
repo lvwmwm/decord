@@ -1,10 +1,10 @@
-// Module ID: 17707
-// Function ID: 17708
+// Module ID: 17702
+// Function ID: 17703
 // Name: BalanceWidgetMenu
-// Dependencies: [19, 1072, 1074, 4860, 6781, 21, 6975, 5624, 1113, 10520, 4847, 1252, 9678, 6784, 17708, 9553, 16900, 7351, 5258, 7719, 17709, 14511, 5044, 5647, 2]
+// Dependencies: [19, 1072, 1074, 4860, 6781, 21, 6975, 5624, 1113, 10520, 4847, 1252, 9678, 6784, 17703, 9553, 16895, 7351, 5258, 7719, 17704, 14511, 5044, 5647, 2]
 // Exports: default
 
-// Module 17707 (BalanceWidgetMenu)
+// Module 17702 (BalanceWidgetMenu)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import intl3 from "intl" /* 1113 */;
@@ -87,7 +87,7 @@ function BalanceWidgetMenu() {
   let tmp5Result;
   let obj = str(9553);
   str = obj.useFetchVirtualCurrencyBalance().balance;
-  let obj2 = str(16900);
+  let obj2 = str(16895);
   const orbBalanceEntrypoint = obj2.useOrbBalanceEntrypoint({ location: "MobileBalanceWidgetMenu" });
   const openBalanceWidgetActionSheet = orbBalanceEntrypoint.openBalanceWidgetActionSheet;
   let items = [str, openBalanceWidgetActionSheet];
@@ -137,7 +137,7 @@ function BalanceWidgetMenu() {
   }, items);
   if (isOrbchievementsEnabled) {
     let obj3 = { balance: str, notificationType, onPress: callback };
-    tmp5Result = tmp5(tmp(17709).OrbWalletEntryRow, obj3);
+    tmp5Result = tmp5(tmp(17704).OrbWalletEntryRow, obj3);
   } else {
     let intl = tmp(1113).intl;
     const formatToPlainString = intl.formatToPlainString;

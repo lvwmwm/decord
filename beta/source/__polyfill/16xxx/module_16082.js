@@ -1,23 +1,25 @@
 // Module ID: 16082
 // Function ID: 16083
-// Dependencies: [16072, 16075]
-// Exports: LookupSupportedLocales
+// Dependencies: [1159]
+// Exports: isMissingLocaleDataError
 
 // Module 16082
-import _mod16072 from "module_16072" /* 16072 */;
-import BestAvailableLocale from "BestAvailableLocale" /* 16075 */;
+import module_1159 from "module_1159" /* 1159 */;
 
-
-export function LookupSupportedLocales(arg0, arg1) {
-  let num;
-  const items = [];
-  for (let num = 0; num < arg1.length; num = num + 1) {
-    let str = arg1[num];
-    let replaced = str.replace(_mod16072.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
-    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
-    if (BestAvailableLocaleResult) {
-      let arr = items.push(BestAvailableLocaleResult);
-    }
+module_1159.__extends(function MissingLocaleDataError() {
+  const self = this;
+  let applyResult = null !== Error;
+  const obj = Error;
+  if (applyResult) {
+    applyResult = obj(...arguments);
   }
-  return items;
+  if (!applyResult) {
+    applyResult = self;
+  }
+  applyResult.type = "MISSING_LOCALE_DATA";
+  return applyResult;
+}, Error);
+
+export function isMissingLocaleDataError(type) {
+  return "MISSING_LOCALE_DATA" === type.type;
 }

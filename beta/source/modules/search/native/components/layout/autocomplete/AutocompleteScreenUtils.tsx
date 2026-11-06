@@ -1,10 +1,10 @@
-// Module ID: 18808
-// Function ID: 18809
+// Module ID: 18803
+// Function ID: 18804
 // Name: AutocompleteScreenUtils
-// Dependencies: [4926, 4956, 1383, 13900, 9827, 1072, 1113, 13391, 5727, 14623, 10533, 10535, 11040, 8659, 14102, 11042, 12125, 12105, 18809, 13893, 5068, 2]
+// Dependencies: [4926, 4956, 1383, 13900, 9827, 1072, 1113, 13391, 5727, 14623, 10533, 10535, 11040, 8659, 14102, 11042, 12125, 12105, 18804, 13893, 5068, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 18808 (AutocompleteScreenUtils)
+// Module 18803 (AutocompleteScreenUtils)
 import Constants from "Constants" /* 1072 */;
 import intl10 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5068 */;
@@ -21,7 +21,7 @@ import ForwardingIconDefault from "ForwardingIcon" /* 13391 */;
 import SearchUtils from "SearchUtils" /* 13893 */;
 import SoundboardIcon from "SoundboardIcon" /* 14102 */;
 import EmbedIcon from "EmbedIcon" /* 14623 */;
-import WebhookIcon from "WebhookIcon" /* 18809 */;
+import WebhookIcon from "WebhookIcon" /* 18804 */;
 import GuildMemberStore from "GuildMemberStore" /* 4926 */;
 import RelationshipStore from "RelationshipStore" /* 4956 */;
 import UserStore from "UserStore" /* 1383 */;

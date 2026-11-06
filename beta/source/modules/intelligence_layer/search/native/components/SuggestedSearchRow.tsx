@@ -1,9 +1,9 @@
-// Module ID: 18701
-// Function ID: 18702
+// Module ID: 18696
+// Function ID: 18697
 // Name: SuggestedSearchRow
-// Dependencies: [19, 17, 13888, 21, 5014, 575, 13910, 13908, 13911, 13886, 13927, 5624, 18702, 7219, 2]
+// Dependencies: [19, 17, 13888, 21, 5014, 575, 13910, 13908, 13911, 13886, 13927, 5624, 18697, 7219, 2]
 
-// Module 18701 (SuggestedSearchRow)
+// Module 18696 (SuggestedSearchRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

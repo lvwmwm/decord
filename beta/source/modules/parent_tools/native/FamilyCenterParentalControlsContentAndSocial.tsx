@@ -1,10 +1,10 @@
-// Module ID: 16837
-// Function ID: 16838
+// Module ID: 16832
+// Function ID: 16833
 // Name: FamilyCenterParentalControlsContentAndSocial
-// Dependencies: [19, 17, 1072, 8432, 21, 11540, 1113, 2061, 16588, 2]
+// Dependencies: [19, 17, 1072, 8432, 21, 11540, 1113, 2061, 16583, 2]
 // Exports: default
 
-// Module 16837 (FamilyCenterParentalControlsContentAndSocial)
+// Module 16832 (FamilyCenterParentalControlsContentAndSocial)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

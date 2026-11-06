@@ -1,10 +1,10 @@
-// Module ID: 16779
-// Function ID: 16780
+// Module ID: 16774
+// Function ID: 16775
 // Name: FamilyCenterActivityBanner
-// Dependencies: [19, 17, 21, 5014, 8369, 8370, 16780, 575, 13362, 1113, 2538, 5717, 16787, 16788, 5624, 2]
+// Dependencies: [19, 17, 21, 5014, 8369, 8370, 16775, 575, 13362, 1113, 2538, 5717, 16782, 16783, 5624, 2]
 // Exports: default
 
-// Module 16779 (FamilyCenterActivityBanner)
+// Module 16774 (FamilyCenterActivityBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const FamilyCenterBannerButton = tmp2(16780);
+const FamilyCenterBannerButton = tmp2(16775);
 function FamilyCenterActivityBannerButton() {
   let tmp2Result;
   const tmp = closure_6();
@@ -77,7 +77,7 @@ export default function FamilyCenterActivityBanner() {
   const intl4 = intl5.intl;
   const obj2 = { style: tmp4.container, children: items };
   const ageSpecificText2 = useAgeSpecificText2(formatResult, intl4.format(_modDef2538.EMCf6j, { articleLink: "https://support.discord.com/hc/articles/14155043715735" }));
-  const obj3 = { source: importDefault(tmp3 ? 16787 : 16788), style: tmp4.art };
+  const obj3 = { source: importDefault(tmp3 ? 16782 : 16783), style: tmp4.art };
   const tmp16 = FastImageDefault;
   items = [React3(tmp16, obj3), , , ];
   const obj4 = { style: tmp4.header, variant: "heading-lg/semibold", children: ageSpecificText };

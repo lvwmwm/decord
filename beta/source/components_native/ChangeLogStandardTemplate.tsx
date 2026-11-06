@@ -43,7 +43,7 @@ const Link = (arg0) => {
 };
 function LHeading(className) {
   let items;
-  const f124682 = (item) => {
+  const f124673 = (item) => {
     let obj;
     if ("marginTop" === item) {
       obj = { marginTop: 10 };
@@ -68,7 +68,7 @@ function LHeading(className) {
   const tmp2 = unpackModuleId;
   if (null != className.className) {
     const parts = str.split(" ");
-    const mapped = parts.map(f124682);
+    const mapped = parts.map(f124673);
     combined = mapped.concat(tmp5);
   }
   items = [authStore(LegacyText, { accessibilityRole: "header", style: combined, children }), ];
@@ -76,7 +76,7 @@ function LHeading(className) {
   let combined1;
   if (null != className.className) {
     const parts1 = str.split(" ");
-    const mapped1 = parts1.map(f124682);
+    const mapped1 = parts1.map(f124673);
     combined1 = mapped1.concat(tmp7);
   }
   items[1] = authStore(React3, { style: combined1 });

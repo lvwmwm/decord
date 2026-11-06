@@ -1,14 +1,14 @@
-// Module ID: 17945
-// Function ID: 17946
+// Module ID: 17940
+// Function ID: 17941
 // Name: ParentalControlsUseDataToImproveDiscordSetting
-// Dependencies: [7715, 8432, 1072, 7717, 16721, 11540, 1113, 2]
+// Dependencies: [7715, 8432, 1072, 7717, 16716, 11540, 1113, 2]
 
-// Module 17945 (ParentalControlsUseDataToImproveDiscordSetting)
+// Module 17940 (ParentalControlsUseDataToImproveDiscordSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7717 */;
 import SettingsConstants from "SettingsConstants" /* 8432 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16721 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16716 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 7715 */;
 import SettingBuilders from "SettingBuilders" /* 11540 */;
 import size from "module_2" /* 2 */;

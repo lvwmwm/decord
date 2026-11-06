@@ -1,10 +1,10 @@
-// Module ID: 18196
-// Function ID: 18197
+// Module ID: 18191
+// Function ID: 18192
 // Name: useFavoritesGuildHideAction
 // Dependencies: [19, 5045, 1072, 10831, 4888, 1099, 1113, 3450, 2]
 // Exports: default
 
-// Module 18196 (useFavoritesGuildHideAction)
+// Module 18191 (useFavoritesGuildHideAction)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef3450 from "module_3450" /* 3450 */;
