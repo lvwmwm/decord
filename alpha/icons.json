@@ -8189,6 +8189,13 @@
         "width": 24,
         "height": 24
     },
+    "StageModeratorIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/StageModeratorIcon.png",
+        "hash": "95d7e93c2793e11c61d9325838069af2",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "stamp-wave": {
         "file": "app/modules/guild_onboarding/native/images/stamp-wave.png",
         "hash": "5048f3c6d8b18fc7809b7e99f1c62a70",
