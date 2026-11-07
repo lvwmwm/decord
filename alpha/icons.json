@@ -6999,6 +6999,13 @@
         "width": 24,
         "height": 24
     },
+    "MobilePhoneXIcon": {
+        "file": "app/design/components/Icon/native/redesign/generated/images/MobilePhoneXIcon.png",
+        "hash": "7130af78aa8ba064d8c79243ff2e60a2",
+        "scales": [],
+        "width": 24,
+        "height": 24
+    },
     "ModerationIcon": {
         "file": "app/design/components/Icon/native/redesign/generated/images/ModerationIcon.png",
         "hash": "44367cf78a4a6bf3f05d89256b2c8ccd",
